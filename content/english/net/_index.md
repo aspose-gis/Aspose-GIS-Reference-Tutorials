@@ -24,4 +24,3 @@ is_root: true
 
 ### [Map Rendering](./map-rendering/)
 
-### [Spatial Reference System Management](./spatial-reference-system-management/)
