@@ -27,12 +27,13 @@ using Aspose.GIS.Examples.CSharp;
 using FontStyle = Aspose.Gis.Rendering.Labelings.FontStyle;
 ```
 Now, let's break down each example into multiple steps in a step-by-step guide format.
-## Example 1: Points Labeling
-1. Set the path to your documents directory:
+##  Points Labeling
+
+### Step 1: Set the path to your documents directory:
 ```csharp
 string dataDir = "Your Document Directory";
 ```
-2. Create a map with a simple marker symbol:
+### Step 2: Create a map with a simple marker symbol:
 ```csharp
 using (var map = new Map(500, 200))
 {
@@ -49,9 +50,11 @@ using (var map = new Map(500, 200))
     map.Render(dataDir + "points_labeling_out.svg", Renderers.Svg);
 }
 ```
-## Example 2: Points Labeling Styled
-1. Follow steps 1 and 2 from the previous example.
-2. Customize the labeling style:
+## Points Labeling Styled
+
+Follow steps 1 and 2 from the previous example.
+
+### Step 1: Customize the labeling style:
 ```csharp
 var labeling = new SimpleLabeling(labelAttribute: "name")
 {
@@ -62,9 +65,10 @@ var labeling = new SimpleLabeling(labelAttribute: "name")
 };
 // Rest of the steps remain the same
 ```
-## Example 3: Points Labeling Placed
-1. Follow steps 1 and 2 from the first example.
-2. Customize the label placement:
+## Points Labeling Placed
+
+Follow steps 1 and 2 from the first example.
+### Step 2: Customize the label placement:
 ```csharp
 var labeling = new SimpleLabeling(labelAttribute: "name")
 {
@@ -80,9 +84,11 @@ var labeling = new SimpleLabeling(labelAttribute: "name")
 };
 // Rest of the steps remain the same
 ```
-## Example 4: Points Labeling Feature Based
-1. Follow steps 1 and 2 from the first example.
-2. Implement feature-based labeling:
+## Points Labeling Feature Based
+
+Follow steps 1 and 2 from the first example.
+
+### Step 1: Implement feature-based labeling:
 ```csharp
 var pointLabeling = new SimpleLabeling("name")
 {
