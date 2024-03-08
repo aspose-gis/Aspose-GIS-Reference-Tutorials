@@ -18,9 +18,9 @@ A basic understanding of .NET development using C# is necessary to follow along 
 
 ## Import Namespaces
 Before you can begin using Aspose.GIS for .NET to calculate distances between geometries, you need to import the required namespaces into your C# project. Follow these steps to import the necessary namespaces:
-## Step 1: Open Your C# Project
+## Open Your C# Project
 Navigate to your C# project in your preferred Integrated Development Environment (IDE), such as Visual Studio.
-## Step 2: Add Namespace References
+## Add Namespace References
 In your C# file where you intend to perform the distance calculations, add the following namespace references at the beginning of the file:
 ```csharp
 using Aspose.Gis.Geometries;
