@@ -2,7 +2,7 @@
 title: Create MultiPoint Geometry with Aspose.GIS for .NET
 linktitle: Create MultiPoint Geometry
 second_title: Aspose.GIS .NET API
-description: Master Aspose.GIS for .NET: Learn to create multi-point geometries effortlessly. Comprehensive tutorial for developers.
+description: Master Aspose.GIS for .NET - Learn to create multi-point geometries effortlessly. Comprehensive tutorial for developers.
 type: docs
 weight: 14
 url: /net/geometry-creation/create-multipoint-geometry/
