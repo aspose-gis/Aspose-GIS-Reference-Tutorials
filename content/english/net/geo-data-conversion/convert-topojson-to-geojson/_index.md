@@ -35,7 +35,7 @@ Define the paths for the input TopoJSON file and the output GeoJSON file.
 var sampleTopoJsonPath = "Your Document Directory" + "sample.topojson";
 var outputFilePath = "Your Document Directory" + "convertedSample_out.geojson";
 ```
-## Step 1: Perform Conversion Utilize the `VectorLayer.Convert` method to convert TopoJSON to GeoJSON.
+## Step 2: Perform Conversion Utilize the `VectorLayer.Convert` method to convert TopoJSON to GeoJSON.
 ```csharp
 VectorLayer.Convert(sampleTopoJsonPath, Drivers.TopoJson, outputFilePath, Drivers.GeoJson);
 ```
