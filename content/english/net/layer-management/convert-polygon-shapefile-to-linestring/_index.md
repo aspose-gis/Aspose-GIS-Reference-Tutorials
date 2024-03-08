@@ -66,7 +66,7 @@ destination.Add(destinationFeature);
 In this step, each Polygon feature is converted to a Linestring, and the resulting Linestring feature is written to the destination Shapefile.
 ## Conclusion
 By following these steps, you can easily convert a Polygon Shapefile to a Linestring using Aspose.GIS for .NET. This process opens up new possibilities for data analysis and visualization in GIS applications.
----
+
 ## FAQs
 ### Is Aspose.GIS compatible with all versions of .NET?
 Yes, Aspose.GIS supports various versions of .NET, ensuring compatibility with your development environment.
