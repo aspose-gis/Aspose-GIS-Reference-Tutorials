@@ -2,7 +2,7 @@
 title: Write GeoJSON to Stream
 linktitle: Write GeoJSON to Stream
 second_title: Aspose.GIS .NET API
-description: Explore the power of Aspose.GIS for .NET! Write GeoJSON to stream effortlessly. Download now for seamless geospatial integration. #Aspose #GIS
+description: Explore the power of Aspose.GIS for .NET! Write GeoJSON to stream effortlessly. Download now for seamless geospatial integration.
 type: docs
 weight: 25
 url: /net/layer-data-operations/write-geojson-to-stream/

@@ -2,7 +2,7 @@
 title: Set Layer Spatial Reference System
 linktitle: Set Layer Spatial Reference System
 second_title: Aspose.GIS .NET API
-description: Master setting Layer Spatial Reference System with Aspose.GIS for .NET. Elevate your GIS projects with this step-by-step tutorial. #Aspose #GIS
+description: Master setting Layer Spatial Reference System with Aspose.GIS for .NET. Elevate your GIS projects with this step-by-step tutorial.
 type: docs
 weight: 19
 url: /net/layer-data-operations/set-layer-spatial-reference-system/

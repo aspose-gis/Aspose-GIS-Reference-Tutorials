@@ -2,7 +2,7 @@
 title: Set Tolerances for File GDB Layer
 linktitle: Set Tolerances for File GDB Layer
 second_title: Aspose.GIS .NET API
-description: Explore Aspose.GIS for .NET and master geospatial data manipulation. Set tolerances effortlessly with step-by-step guidance. Enhance your .NET applications now!
+description: Explore Aspose.GIS for .NET and master geospatial data manipulation. Set tolerances effortlessly with step-by-step guidance. Enhance your .NET applications.
 type: docs
 weight: 22
 url: /net/layer-data-operations/set-tolerances-for-file-gdb-layer/

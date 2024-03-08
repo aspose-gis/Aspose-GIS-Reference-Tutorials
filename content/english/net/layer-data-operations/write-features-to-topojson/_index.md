@@ -2,7 +2,7 @@
 title: Write Features to TopoJSON
 linktitle: Write Features to TopoJSON
 second_title: Aspose.GIS .NET API
-description: Master writing TopoJSON features with Aspose.GIS for .NET. Follow our step-by-step tutorial. Elevate your GIS applications! #Aspose #GIS
+description: Master writing TopoJSON features with Aspose.GIS for .NET. Follow our step-by-step tutorial. Elevate your GIS applications.
 type: docs
 weight: 24
 url: /net/layer-data-operations/write-features-to-topojson/
