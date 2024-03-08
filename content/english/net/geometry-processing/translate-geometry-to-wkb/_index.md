@@ -29,13 +29,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 ```
-
-## Step 1: Define the Geometry
-First, we need to define a geometry object. In this example, we'll create a LineString geometry with specified coordinates.
-## Step 2: Convert Geometry to WKB
-Next, we'll convert the geometry object to Well-Known Binary (WKB) format using the `AsBinary()` method provided by Aspose.GIS for .NET.
-## Step 3: Write WKB to File
-Finally, we'll write the generated WKB data to a file. We'll use the `File.WriteAllBytes()` method to accomplish this task.
 ## Step 1: Define the Geometry
 ```csharp
 IGeometry geometry = Geometry.FromText("LINESTRING (1.2 3.4, 5.6 7.8)");
