@@ -60,8 +60,7 @@ using (var map = new Map(500, 500))
 ```
 ## Conclusion
 Congratulations! You've successfully learned how to render various raster formats using Aspose.GIS for .NET. With these skills, you can take your spatial data visualization projects to new heights. Experiment with different datasets and colorizers to create visually stunning maps.
-## Frequently Asked Questions
- (FAQs)
+## FAQ's
 ### Q: Can I use Aspose.GIS for .NET with other GIS libraries?
 A: Aspose.GIS is designed to work independently, but you can integrate it with other libraries if needed.
 ### Q: Is there a free trial available for Aspose.GIS for .NET?
