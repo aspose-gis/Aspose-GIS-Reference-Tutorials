@@ -27,7 +27,7 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 Now, let's break down each example into a series of easy-to-follow steps.
-## Example 1: Get Feature Attribute Value (Default)
+## Get Feature Attribute Value (Default)
 ### Step 1: Set up the Environment
 Begin by defining the path to your documents directory:
 ```csharp
@@ -57,7 +57,7 @@ Retrieve attribute values with various scenarios:
     Console.WriteLine($"'{nullValue}' vs '{defValue1}' vs '{defValue2}'");
 }
 ```
-## Example 2: Setting Default Values
+## Setting Default Values
 ### Step 1: Create Another GeoJson Layer
 Repeat the process with a different GeoJson layer and a double attribute:
 ```csharp
