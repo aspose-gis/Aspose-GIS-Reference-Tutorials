@@ -11,7 +11,7 @@ url: /net/layer-management/convert-polygon-shapefile-to-linestring/
 If you're working with geographic information systems (GIS) in .NET, Aspose.GIS is a powerful library that can simplify your tasks. In this tutorial, we'll guide you through the process of converting a Polygon Shapefile to a Linestring using Aspose.GIS. This can be particularly useful when you need to extract linear features from polygonal data for various applications such as route planning or network analysis.
 ## Prerequisites
 Before we dive into the tutorial, make sure you have the following in place:
-- Aspose.GIS Library: Download and install the Aspose.GIS library from the [official website](https://releases.aspose.com/gis/net/).
+- Aspose.GIS Library: Download and install the Aspose.GIS library from the [website](https://releases.aspose.com/gis/net/).
 - Shapefile Data: Have a Polygon Shapefile ready for conversion. If you don't have one, you can find sample data or create your own.
 - Development Environment: Set up your .NET development environment with the necessary tools.
 ## Import Namespaces
@@ -73,7 +73,7 @@ Yes, Aspose.GIS supports various versions of .NET, ensuring compatibility with y
 ### Can I use Aspose.GIS for commercial projects?
 Yes, you can. To use Aspose.GIS in commercial projects, consider purchasing a license [here](https://purchase.aspose.com/buy).
 ### Are there any examples or documentation available?
-Yes, you can find comprehensive documentation and examples on the [official documentation page](https://reference.aspose.com/gis/net/).
+Yes, you can find comprehensive documentation and examples on the [documentation page](https://reference.aspose.com/gis/net/).
 ### Is there a trial version available?
 Yes, you can explore Aspose.GIS with a free trial by visiting [this link](https://releases.aspose.com/).
 ### Where can I seek help or support?

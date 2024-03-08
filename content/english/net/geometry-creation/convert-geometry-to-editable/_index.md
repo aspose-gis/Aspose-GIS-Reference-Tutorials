@@ -14,7 +14,7 @@ Before diving into this tutorial, ensure you have the following prerequisites in
 ### .NET Environment Setup
 Ensure you have the .NET framework installed on your system. You can download it from the [website](https://dotnet.microsoft.com/download).
 ### Aspose.GIS Installation
-To utilize Aspose.GIS for .NET, you need to have it installed. If you haven't done so already, download the toolkit from the [official releases page](https://releases.aspose.com/gis/net/) and follow the installation instructions.
+To utilize Aspose.GIS for .NET, you need to have it installed. If you haven't done so already, download the toolkit from the [releases page](https://releases.aspose.com/gis/net/) and follow the installation instructions.
 ### Basic Knowledge of C#
 Familiarize yourself with C# programming language fundamentals as this tutorial involves coding in C#.
 

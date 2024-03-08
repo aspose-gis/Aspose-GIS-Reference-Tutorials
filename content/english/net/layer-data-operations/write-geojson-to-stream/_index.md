@@ -75,7 +75,7 @@ Yes, Aspose.GIS for .NET is compatible with both Windows and Linux systems.
 ### Is there a free trial available?
 Absolutely! You can explore a free trial [here](https://releases.aspose.com/).
 ### Where can I find detailed documentation?
-Check out the official documentation [here](https://reference.aspose.com/gis/net/).
+Check out the documentation [here](https://reference.aspose.com/gis/net/).
 ### How can I get temporary licensing?
 Temporary licenses are available [here](https://purchase.aspose.com/temporary-license/).
 ### Need assistance or have more questions?

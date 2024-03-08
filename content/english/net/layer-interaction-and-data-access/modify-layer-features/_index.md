@@ -11,7 +11,7 @@ url: /net/layer-interaction-and-data-access/modify-layer-features/
 Welcome to this comprehensive guide on modifying layer features using Aspose.GIS for .NET! If you're looking to enhance your geospatial applications and manipulate shapefile data effortlessly, you're in the right place. In this tutorial, we'll delve into the process of modifying layer features using the powerful Aspose.GIS library, providing you with detailed steps and insights.
 ## Prerequisites
 Before we dive into the tutorial, ensure you have the following prerequisites in place:
-- Aspose.GIS for .NET Library: Download and install the library from the [official Aspose.GIS for .NET download page](https://releases.aspose.com/gis/net/).
+- Aspose.GIS for .NET Library: Download and install the library from the [Aspose.GIS for .NET download page](https://releases.aspose.com/gis/net/).
 - .NET Development Environment: Make sure you have a working .NET development environment set up on your machine.
 - Sample Shapefile: Prepare a sample shapefile that you'll use for demonstration purposes.
 ## Import Namespaces
@@ -70,5 +70,5 @@ Absolutely! Aspose.GIS seamlessly integrates with other .NET libraries, providin
 Yes, you can explore the capabilities of Aspose.GIS by downloading the [free trial version](https://releases.aspose.com/).
 ### How can I get support for Aspose.GIS?
 Visit the [Aspose.GIS support forum](https://forum.aspose.com/c/gis/33) for assistance and community support.
-### Where can I find the official documentation for Aspose.GIS?
-The official Aspose.GIS documentation is available [here](https://reference.aspose.com/gis/net/).
+### Where can I find the documentation for Aspose.GIS?
+The Aspose.GIS documentation is available [here](https://reference.aspose.com/gis/net/).

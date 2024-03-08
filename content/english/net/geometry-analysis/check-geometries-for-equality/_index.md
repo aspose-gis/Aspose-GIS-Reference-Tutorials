@@ -12,7 +12,7 @@ Aspose.GIS for .NET is a powerful library that enables developers to work with g
 ## Prerequisites
 Before diving into using Aspose.GIS for .NET, ensure you have the following prerequisites in place:
 ### .NET Framework Installed
-Ensure you have the .NET Framework installed on your system. You can download it from the official Microsoft website.
+Ensure you have the .NET Framework installed on your system. You can download it from the Microsoft website.
 ### Aspose.GIS for .NET Library
 Download and install the Aspose.GIS for .NET library from the [download page](https://releases.aspose.com/gis/net/). Follow the installation instructions provided in the documentation.
 ### Development Environment

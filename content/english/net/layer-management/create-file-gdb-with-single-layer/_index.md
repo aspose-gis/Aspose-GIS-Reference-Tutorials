@@ -11,7 +11,7 @@ url: /net/layer-management/create-file-gdb-with-single-layer/
 Are you ready to elevate your geospatial applications with robust file geodatabases and layers? Look no further than Aspose.GIS for .NET. In this tutorial, we'll walk you through the process of creating a File Geodatabase (GDB) with a single layer using Aspose.GIS for .NET. Harness the power of spatial data management and visualization in your .NET applications effortlessly.
 ## Prerequisites
 Before diving into the tutorial, ensure you have the following prerequisites in place:
-1. Aspose.GIS for .NET: Make sure you have the Aspose.GIS library installed. You can download it from the [official Aspose.GIS for .NET download page](https://releases.aspose.com/gis/net/).
+1. Aspose.GIS for .NET: Make sure you have the Aspose.GIS library installed. You can download it from the [Aspose.GIS for .NET download page](https://releases.aspose.com/gis/net/).
 2. Development Environment: Set up a working .NET development environment on your machine.
 3. Document Directory: Choose or create a directory on your system where you'll store your geospatial data files.
 ## Import Namespaces
@@ -65,7 +65,7 @@ Yes, Aspose.GIS for .NET can be seamlessly integrated into your existing .NET pr
 ### Is there a trial version available for Aspose.GIS for .NET?
 Yes, you can explore the features of Aspose.GIS for .NET by downloading the [free trial version](https://releases.aspose.com/).
 ### Where can I find detailed documentation for Aspose.GIS for .NET?
-Refer to the [official documentation](https://reference.aspose.com/gis/net/) for comprehensive information on Aspose.GIS for .NET.
+Refer to the [documentation](https://reference.aspose.com/gis/net/) for comprehensive information on Aspose.GIS for .NET.
 ### How can I get support for Aspose.GIS for .NET?
 Visit the [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) for community support and assistance.
 ### Are temporary licenses available for Aspose.GIS for .NET?

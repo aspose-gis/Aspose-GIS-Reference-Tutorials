@@ -61,7 +61,7 @@ Yes, Aspose.GIS is designed for seamless integration with various GIS libraries,
 ### Is there a trial version available?
 Yes, you can access the free trial version [here](https://releases.aspose.com/) to explore Aspose.GIS features before making a purchase.
 ### Where can I find comprehensive documentation?
-The official documentation is available [here](https://reference.aspose.com/gis/net/), offering detailed insights into Aspose.GIS functionalities.
+The documentation is available [here](https://reference.aspose.com/gis/net/), offering detailed insights into Aspose.GIS functionalities.
 ### How can I get temporary licensing?
 Obtain a temporary license [here](https://purchase.aspose.com/temporary-license/) for short-term development or evaluation purposes.
 ### What support options are available?

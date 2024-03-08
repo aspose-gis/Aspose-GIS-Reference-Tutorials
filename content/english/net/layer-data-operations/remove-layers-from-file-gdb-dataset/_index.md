@@ -11,7 +11,7 @@ url: /net/layer-data-operations/remove-layers-from-file-gdb-dataset/
 Unlock the full potential of Geographic Information Systems (GIS) with Aspose.GIS for .NET, a powerful toolkit designed to simplify spatial data manipulation and visualization. Whether you're a seasoned developer or a GIS enthusiast, this tutorial will guide you through the process of removing layers from a File Geodatabase (GDB) dataset using Aspose.GIS for .NET.
 ## Prerequisites
 Before diving into the tutorial, make sure you have the following prerequisites in place:
-- Aspose.GIS for .NET: Download and install the library from the [official website](https://releases.aspose.com/gis/net/).
+- Aspose.GIS for .NET: Download and install the library from the [website](https://releases.aspose.com/gis/net/).
 - .NET Framework: Ensure that you have a working .NET development environment.
 - Document Directory: Choose a directory to store your GIS data.
 ## Import Namespaces
@@ -59,7 +59,7 @@ dataset.RemoveLayer("layer1");
 Console.WriteLine(dataset.LayersCount); // 1
 ```
 ## Conclusion
-Congratulations! You've successfully learned how to manipulate layers in a File GDB dataset using Aspose.GIS for .NET. This tutorial is just the tip of the iceberg; explore the [official documentation](https://reference.aspose.com/gis/net/) for more advanced features and functionalities.
+Congratulations! You've successfully learned how to manipulate layers in a File GDB dataset using Aspose.GIS for .NET. This tutorial is just the tip of the iceberg; explore the [documentation](https://reference.aspose.com/gis/net/) for more advanced features and functionalities.
 ## FAQs
 ### Can I use Aspose.GIS for .NET with other GIS tools?
 Yes, Aspose.GIS supports interoperability with various GIS formats, allowing seamless integration with other tools.

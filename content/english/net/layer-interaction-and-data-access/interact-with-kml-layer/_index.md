@@ -11,7 +11,7 @@ url: /net/layer-interaction-and-data-access/interact-with-kml-layer/
 In the ever-evolving landscape of software development, harnessing the potential of geospatial data is becoming increasingly crucial. Aspose.GIS for .NET emerges as a formidable ally, offering a robust set of tools and functionalities to interact seamlessly with geospatial data in the .NET environment. In this tutorial, we will delve into the intricacies of using Aspose.GIS to interact with KML layers, unlocking the possibilities of geospatial data manipulation.
 ## Prerequisites
 Before we embark on this journey, ensure you have the following prerequisites in place:
-- Aspose.GIS for .NET: Download and install the library from the official [Aspose.GIS for .NET download page](https://releases.aspose.com/gis/net/).
+- Aspose.GIS for .NET: Download and install the library from the [Aspose.GIS for .NET download page](https://releases.aspose.com/gis/net/).
 - Development Environment: Set up a suitable development environment, such as Visual Studio, to integrate Aspose.GIS seamlessly into your .NET projects.
 Now, let's dive into the tutorial.
 ## Import Namespaces

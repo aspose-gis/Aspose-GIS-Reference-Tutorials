@@ -68,7 +68,7 @@ layer.Add(thirdFeature);
 }
 ```
 ## Conclusion
-Congratulations! You've successfully created a new shapefile using Aspose.GIS for .NET. This tutorial covered the basics of setting up your project, defining attributes, and adding features. As you explore further, refer to the [official documentation](https://reference.aspose.com/gis/net/) for advanced features and functionalities.
+Congratulations! You've successfully created a new shapefile using Aspose.GIS for .NET. This tutorial covered the basics of setting up your project, defining attributes, and adding features. As you explore further, refer to the [documentation](https://reference.aspose.com/gis/net/) for advanced features and functionalities.
 ## Frequently Asked Questions
 ### Q: Can I use Aspose.GIS with other programming languages?
 Aspose.GIS primarily supports .NET, but there are versions available for Java as well.

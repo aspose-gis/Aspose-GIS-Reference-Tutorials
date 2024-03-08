@@ -11,7 +11,7 @@ url: /net/layer-data-operations/set-tolerances-for-file-gdb-layer/
 Welcome to the world of geospatial data manipulation using Aspose.GIS for .NET! If you're eager to enhance your skills in handling geographic information in your .NET applications, you're in the right place. In this comprehensive guide, we will delve into the intricate details of setting tolerances for a File Geodatabase (GDB) layer, providing you with practical insights and step-by-step instructions.
 ## Prerequisites
 Before we dive into the tutorial, ensure you have the following prerequisites in place:
-- Aspose.GIS for .NET Library: Download and install the Aspose.GIS library from the [official download link](https://releases.aspose.com/gis/net/). If you haven't acquired it yet, you can explore the library further in the [documentation](https://reference.aspose.com/gis/net/).
+- Aspose.GIS for .NET Library: Download and install the Aspose.GIS library from the [download link](https://releases.aspose.com/gis/net/). If you haven't acquired it yet, you can explore the library further in the [documentation](https://reference.aspose.com/gis/net/).
 - Development Environment: Set up your .NET development environment, including Visual Studio or any other preferred IDE.
 Now that you have the essentials ready, let's start by importing the necessary namespaces.
 ## Import Namespaces
@@ -68,4 +68,4 @@ Visit the [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) to connect with 
 ### Do I need a temporary license for testing purposes?
 Yes, you can obtain a [temporary license](https://purchase.aspose.com/temporary-license/) for testing and evaluation.
 ### Where can I purchase the Aspose.GIS for .NET license?
-You can purchase the license from the official [buy page](https://purchase.aspose.com/buy).
+You can purchase the license from the [buy page](https://purchase.aspose.com/buy).

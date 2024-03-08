@@ -11,7 +11,7 @@ url: /net/layer-data-operations/specify-attribute-value-length/
 Welcome to the world of Aspose.GIS for .NET – your gateway to powerful and efficient geospatial development! This comprehensive tutorial will guide you through the fundamental steps of using Aspose.GIS to manage geospatial data effortlessly in your .NET applications. Whether you're a seasoned developer or a newcomer to geospatial programming, this guide is designed to provide you with a solid foundation and practical insights.
 ## Prerequisites
 Before diving into the tutorial, ensure you have the following prerequisites in place:
-- Aspose.GIS for .NET Library: Download and install the Aspose.GIS for .NET library from the [official download link](https://releases.aspose.com/gis/net/).
+- Aspose.GIS for .NET Library: Download and install the Aspose.GIS for .NET library from the [download link](https://releases.aspose.com/gis/net/).
 - Development Environment: Set up your preferred .NET development environment, such as Visual Studio.
 - Document Directory: Specify the directory where your geospatial documents will be stored.
 ## Import Namespaces
@@ -49,7 +49,7 @@ layer.Add(feature);
 ```
 Congratulations! You've successfully specified the attribute value length using Aspose.GIS for .NET.
 ## Conclusion
-This tutorial provided a glimpse into the powerful capabilities of Aspose.GIS for .NET, allowing you to seamlessly work with geospatial data in your applications. Experiment with different features, explore the [official documentation](https://reference.aspose.com/gis/net/), and unlock the full potential of geospatial development with Aspose.GIS.
+This tutorial provided a glimpse into the powerful capabilities of Aspose.GIS for .NET, allowing you to seamlessly work with geospatial data in your applications. Experiment with different features, explore the [documentation](https://reference.aspose.com/gis/net/), and unlock the full potential of geospatial development with Aspose.GIS.
 ## Frequently Asked Questions
 ### Q: How can I obtain a temporary license for Aspose.GIS for .NET?
 A: You can acquire a temporary license [here](https://purchase.aspose.com/temporary-license/).
@@ -59,5 +59,5 @@ A: Visit the [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) for community
 A: Yes, explore the [free trial](https://releases.aspose.com/) to experience the capabilities firsthand.
 ### Q: How do I purchase a license for Aspose.GIS for .NET?
 A: Purchase your license [here](https://purchase.aspose.com/buy).
-### Q: Where can I access the official documentation for Aspose.GIS for .NET?
-A: Refer to the [official documentation](https://reference.aspose.com/gis/net/) for comprehensive guidance.
+### Q: Where can I access the documentation for Aspose.GIS for .NET?
+A: Refer to the [documentation](https://reference.aspose.com/gis/net/) for comprehensive guidance.

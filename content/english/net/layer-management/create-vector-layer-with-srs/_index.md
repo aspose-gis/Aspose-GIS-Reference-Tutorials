@@ -89,4 +89,4 @@ You can find a helpful community at the [Aspose.GIS forum](https://forum.aspose.
 ### Is there a free trial available?
 Yes, you can explore the features of Aspose.GIS by obtaining a free trial [here](https://releases.aspose.com/).
 ### How can I purchase a license for Aspose.GIS?
-To purchase a license, visit the [official purchase page](https://purchase.aspose.com/buy).
+To purchase a license, visit the [purchase page](https://purchase.aspose.com/buy).

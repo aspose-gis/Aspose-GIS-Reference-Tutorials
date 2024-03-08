@@ -13,7 +13,7 @@ Welcome to the world of Aspose.GIS for .NET, a powerful library that empowers .N
 Before we dive into the tutorial, make sure you have the following prerequisites in place:
 - A basic understanding of .NET development.
 - Visual Studio installed on your machine.
-- Aspose.GIS for .NET library, which you can download from the official [download link](https://releases.aspose.com/gis/net/).
+- Aspose.GIS for .NET library, which you can download from the [download link](https://releases.aspose.com/gis/net/).
 - Familiarity with GIS concepts and terminology.
 ## Import Namespaces
 To kickstart your project, ensure that you import the necessary namespaces. This step is crucial for accessing the functionality provided by Aspose.GIS for .NET. Include the following namespaces in your code:
@@ -73,7 +73,7 @@ Congratulations! You've successfully learned how to use Aspose.GIS for .NET to r
 ### Q: Is Aspose.GIS suitable for both beginners and experienced developers?
 A: Absolutely! Aspose.GIS caters to developers of all skill levels, providing an intuitive API for GIS data manipulation.
 ### Q: Can I use Aspose.GIS in my commercial projects?
-A: Yes, Aspose.GIS is a commercial product. You can find licensing details on the official [purchase page](https://purchase.aspose.com/buy).
+A: Yes, Aspose.GIS is a commercial product. You can find licensing details on the [purchase page](https://purchase.aspose.com/buy).
 ### Q: Are temporary licenses available for testing purposes?
 A: Yes, you can obtain a temporary license for testing from [here](https://purchase.aspose.com/temporary-license/).
 ### Q: Where can I find community support for Aspose.GIS?

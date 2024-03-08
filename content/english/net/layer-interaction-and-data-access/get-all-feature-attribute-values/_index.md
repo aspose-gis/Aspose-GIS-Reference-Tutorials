@@ -11,7 +11,7 @@ url: /net/layer-interaction-and-data-access/get-all-feature-attribute-values/
 Welcome to the world of geospatial development with Aspose.GIS for .NET! This powerful library empowers developers to seamlessly integrate GIS functionalities into their .NET applications, making spatial data processing a breeze. In this comprehensive tutorial, we'll explore one fundamental aspect - retrieving attribute values from features. Let's dive in!
 ## Prerequisites
 Before we embark on this exciting journey, ensure you have the following prerequisites in place:
-- Aspose.GIS for .NET: Download and install the library from the official [Aspose.GIS for .NET download page](https://releases.aspose.com/gis/net/).
+- Aspose.GIS for .NET: Download and install the library from the [Aspose.GIS for .NET download page](https://releases.aspose.com/gis/net/).
 - Development Environment: Set up a .NET development environment, such as Visual Studio.
 - Shapefile: Have a sample Shapefile (e.g., "InputShapeFile.shp") ready in your document directory.
 ## Import Namespaces
@@ -79,7 +79,7 @@ Yes, Aspose.GIS is fully compatible with .NET Core, allowing you to build cross-
 ### Can I work with different GIS file formats using Aspose.GIS?
 Absolutely! Aspose.GIS supports various formats, including Shapefile, GeoJSON, and more.
 ### Is there a community forum for Aspose.GIS support?
-Yes, you can find assistance and engage with the Aspose.GIS community on the [official support forum](https://forum.aspose.com/c/gis/33).
+Yes, you can find assistance and engage with the Aspose.GIS community on the [support forum](https://forum.aspose.com/c/gis/33).
 ### How can I obtain a temporary license for Aspose.GIS?
 You can acquire a temporary license for testing purposes [here](https://purchase.aspose.com/temporary-license/).
 ### Where can I find detailed documentation for Aspose.GIS?

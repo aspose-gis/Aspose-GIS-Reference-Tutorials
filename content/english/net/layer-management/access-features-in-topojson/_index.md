@@ -58,7 +58,7 @@ Console.WriteLine(builder.ToString());
 Congratulations! You've successfully accessed features in TopoJSON using Aspose.GIS for .NET. This tutorial covered the basic steps to get you started, but there's much more you can explore with the library.
 ## FAQs
 ### Q: Where can I find more documentation?
-Visit the [official Aspose.GIS for .NET documentation](https://reference.aspose.com/gis/net/).
+Visit the [Aspose.GIS for .NET documentation](https://reference.aspose.com/gis/net/).
 ### Q: How can I download Aspose.GIS for .NET?
 Download the library [here](https://releases.aspose.com/gis/net/).
 ### Q: Where can I get support for Aspose.GIS?

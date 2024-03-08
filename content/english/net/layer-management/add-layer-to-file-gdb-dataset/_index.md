@@ -11,7 +11,7 @@ url: /net/layer-management/add-layer-to-file-gdb-dataset/
 Are you ready to enhance your GIS capabilities using Aspose.GIS for .NET? In this step-by-step guide, we'll walk you through the process of adding a layer to a File Geodatabase (GDB) dataset. Aspose.GIS for .NET provides powerful features to manipulate geographic information, and with this tutorial, you'll be able to seamlessly integrate additional layers into your datasets.
 ## Prerequisites
 Before diving into the tutorial, ensure you have the following prerequisites in place:
-- Aspose.GIS for .NET Library: Download and install the library from the official [Aspose.GIS for .NET Documentation](https://reference.aspose.com/gis/net/).
+- Aspose.GIS for .NET Library: Download and install the library from the [Aspose.GIS for .NET Documentation](https://reference.aspose.com/gis/net/).
 - Document Directory: Create a dedicated document directory on your machine to store and manage GIS-related files.
 ## Import Namespaces
 In your .NET project, make sure to import the necessary namespaces to access Aspose.GIS functionalities. Use the following code snippet:

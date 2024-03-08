@@ -11,7 +11,7 @@ url: /net/layer-management/create-new-file-gdb-dataset/
 In the realm of geospatial development, Aspose.GIS for .NET stands out as a powerful toolkit for managing and manipulating Geographic Information System (GIS) data. Whether you're a seasoned developer or just starting your journey into GIS, this tutorial will walk you through the process of creating a new File Geodatabase (GDB) dataset using Aspose.GIS for .NET.
 ## Prerequisites
 Before diving into the tutorial, ensure you have the following prerequisites in place:
-- Aspose.GIS for .NET: Make sure you have the Aspose.GIS for .NET library installed. You can download it from the official [Aspose.GIS for .NET download page](https://releases.aspose.com/gis/net/).
+- Aspose.GIS for .NET: Make sure you have the Aspose.GIS for .NET library installed. You can download it from the [Aspose.GIS for .NET download page](https://releases.aspose.com/gis/net/).
 - Development Environment: Set up your development environment with a compatible IDE, such as Visual Studio, and have a basic understanding of .NET programming.
 - Document Directory: Replace "Your Document Directory" in the code snippet with the appropriate path where you want to store your GDB dataset.
 - Familiarity with C#: This tutorial assumes you are familiar with C# programming language.
@@ -83,4 +83,4 @@ Visit the [Temporary License](https://purchase.aspose.com/temporary-license/) pa
 ### Q: Are there additional examples and documentation available?
 Explore the [Aspose.GIS documentation](https://reference.aspose.com/gis/net/) for more examples and detailed information.
 ### Q: Where can I purchase Aspose.GIS for .NET?
-You can purchase Aspose.GIS for .NET on the [official purchase page](https://purchase.aspose.com/buy).
+You can purchase Aspose.GIS for .NET on the [purchase page](https://purchase.aspose.com/buy).

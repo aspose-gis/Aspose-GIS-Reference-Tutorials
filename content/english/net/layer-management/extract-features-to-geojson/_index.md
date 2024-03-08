@@ -11,7 +11,7 @@ url: /net/layer-management/extract-features-to-geojson/
 Welcome to our step-by-step tutorial on extracting features to GeoJSON using Aspose.GIS for .NET! Whether you're a seasoned developer or just starting your journey in GIS programming, this guide will walk you through the process, ensuring you harness the full power of Aspose.GIS for .NET.
 ## Prerequisites
 Before we dive into the tutorial, make sure you have the following prerequisites:
-- Aspose.GIS for .NET: Ensure that you have the library installed. If not, you can download it from the [official Aspose.GIS for .NET page](https://releases.aspose.com/gis/net/).
+- Aspose.GIS for .NET: Ensure that you have the library installed. If not, you can download it from the [Aspose.GIS for .NET page](https://releases.aspose.com/gis/net/).
 - Shapefile Data: Have a Shapefile ready for input. If you need sample data, you can find it in the [Aspose.GIS documentation](https://reference.aspose.com/gis/net/).
 - .NET Environment: Set up a .NET environment to run the provided code.
 - Document Directory: Define the path to your document directory in the code snippet.
@@ -78,7 +78,7 @@ Congratulations! You've successfully extracted features to GeoJSON using Aspose.
 In this tutorial, we explored the process of extracting features to GeoJSON using Aspose.GIS for .NET. This powerful library opens up a world of possibilities for GIS development. Experiment with different datasets and functionalities to unlock the full potential of Aspose.GIS.
 ## FAQs
 ### Q: Where can I find more documentation?
-Visit the [official Aspose.GIS documentation](https://reference.aspose.com/gis/net/) for in-depth information.
+Visit the [Aspose.GIS documentation](https://reference.aspose.com/gis/net/) for in-depth information.
 ### Q: How can I get a temporary license?
 You can obtain a temporary license [here](https://purchase.aspose.com/temporary-license/).
 ### Q: Where can I seek support?
