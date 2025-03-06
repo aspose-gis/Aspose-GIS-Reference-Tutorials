@@ -3,10 +3,16 @@ title: สร้างเลเยอร์เวกเตอร์ด้วย 
 linktitle: สร้างเลเยอร์เวกเตอร์ด้วย SRS
 second_title: Aspose.GIS .NET API
 description: สำรวจ Aspose.GIS สำหรับ .NET - กุญแจสำคัญในการบูรณาการ GIS อย่างราบรื่น สร้างเลเยอร์เวกเตอร์ได้อย่างง่ายดายด้วยระบบอ้างอิงเชิงพื้นที่ที่ระบุ ดาวน์โหลดเดี๋ยวนี้!
-type: docs
 weight: 13
 url: /th/net/layer-management/create-vector-layer-with-srs/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# สร้างเลเยอร์เวกเตอร์ด้วย SRS
+
 ## การแนะนำ
 Aspose.GIS สำหรับ .NET เป็นไลบรารีที่มีประสิทธิภาพซึ่งช่วยให้นักพัฒนาสามารถทำงานกับข้อมูลระบบสารสนเทศทางภูมิศาสตร์ (GIS) ได้อย่างราบรื่นในแอปพลิเคชัน .NET ในบทช่วยสอนนี้ เราจะเน้นที่การสร้างเลเยอร์เวกเตอร์ด้วยระบบอ้างอิงเชิงพื้นที่ (SRS) เมื่อสิ้นสุดคู่มือนี้ คุณจะสามารถรวมความสามารถ GIS เข้ากับโครงการ .NET ของคุณได้อย่างง่ายดาย
 ## ข้อกำหนดเบื้องต้น
@@ -90,3 +96,9 @@ using (var layer = Drivers.Shapefile.OpenLayer(dataDir + "filepath_out.shp"))
  ใช่ คุณสามารถสำรวจคุณสมบัติของ Aspose.GIS ได้โดยการทดลองใช้ฟรี[ที่นี่](https://releases.aspose.com/).
 ### ฉันจะซื้อใบอนุญาตสำหรับ Aspose.GIS ได้อย่างไร
  หากต้องการซื้อใบอนุญาต โปรดไปที่[หน้าซื้อ](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

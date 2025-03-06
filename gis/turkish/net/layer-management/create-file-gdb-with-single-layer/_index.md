@@ -3,10 +3,16 @@ title: Tek Katmanlı Dosya GDB Oluşturun
 linktitle: Tek Katmanlı Dosya GDB Oluşturun
 second_title: Aspose.GIS .NET API'si
 description: Aspose.GIS ile .NET'te coğrafi veri yönetiminin potansiyelini ortaya çıkarın. Dosya Coğrafi Veritabanlarını ve katmanlarını adım adım nasıl oluşturacağınızı öğrenin. Şimdi İndirin!
-type: docs
 weight: 11
 url: /tr/net/layer-management/create-file-gdb-with-single-layer/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Tek Katmanlı Dosya GDB Oluşturun
+
 ## giriiş
 Jeo-uzamsal uygulamalarınızı sağlam dosya coğrafi veritabanları ve katmanlarıyla yükseltmeye hazır mısınız? Aspose.GIS for .NET'ten başka bir yere bakmayın. Bu eğitimde, Aspose.GIS for .NET'i kullanarak tek katmanlı bir Dosya Geodatabase'i (GDB) oluşturma sürecinde size yol göstereceğiz. .NET uygulamalarınızda uzamsal veri yönetimi ve görselleştirmenin gücünden zahmetsizce yararlanın.
 ## Önkoşullar
@@ -70,3 +76,9 @@ Evet, Aspose.GIS for .NET mevcut .NET projelerinize sorunsuz bir şekilde entegr
  Ziyaret edin[Aspose.GIS forumu](https://forum.aspose.com/c/gis/33) Toplumsal destek ve yardım için.
 ### Aspose.GIS for .NET için geçici lisanslar mevcut mu?
  Evet, alabilirsiniz[geçici lisans](https://purchase.aspose.com/temporary-license/) Aspose.GIS for .NET için.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

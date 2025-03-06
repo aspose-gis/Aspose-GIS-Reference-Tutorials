@@ -3,10 +3,16 @@ title: Eşitlik Açısından Geometrileri Kontrol Edin
 linktitle: Eşitlik Açısından Geometrileri Kontrol Edin
 second_title: Aspose.GIS .NET API'si
 description: Bu kapsamlı eğitimle .NET uygulamalarınızda geometrilerin eşitliğini kontrol etmek için Aspose.GIS for .NET'i nasıl kullanacağınızı öğrenin.
-type: docs
 weight: 10
 url: /tr/net/geometry-analysis/check-geometries-for-equality/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Eşitlik Açısından Geometrileri Kontrol Edin
+
 ## giriiş
 Aspose.GIS for .NET, geliştiricilerin .NET uygulamalarında coğrafi verilerle verimli bir şekilde çalışmasına olanak tanıyan güçlü bir kütüphanedir. İster haritalama uygulamaları, mekansal analiz araçları oluşturuyor olun, ister coğrafi mekansal işlevselliği mevcut yazılıma entegre ediyor olun, Aspose.GIS işinizi tamamlamak için ihtiyacınız olan araçları sağlar.
 ## Önkoşullar
@@ -73,3 +79,9 @@ Evet, Aspose.GIS for .NET, .NET Core ve .NET Standard dahil olmak üzere çeşit
  Aspose.GIS topluluk forumundan destek alabilirsiniz[Burada](https://forum.aspose.com/c/gis/33).
 ### Aspose.GIS for .NET için geçici bir lisans satın alabilir miyim?
  Evet, geçici lisansı şu adresten satın alabilirsiniz:[satın alma sayfası](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Lấy điểm trên bề mặt hình học
 linktitle: Lấy điểm trên bề mặt hình học
 second_title: API Aspose.GIS .NET
 description: Tìm hiểu cách làm việc với dữ liệu không gian địa lý một cách hiệu quả bằng Aspose.GIS cho .NET. Bao gồm hướng dẫn từng bước và câu hỏi thường gặp.
-type: docs
 weight: 25
 url: /vi/net/geometry-analysis/get-point-on-geometry-surface/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Lấy điểm trên bề mặt hình học
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách sử dụng Aspose.GIS cho .NET để làm việc với các hình học và truy xuất các điểm trên bề mặt của chúng. Aspose.GIS là một thư viện mạnh mẽ cung cấp nhiều chức năng khác nhau để xử lý, thao tác và trực quan hóa dữ liệu không gian địa lý trong các ứng dụng .NET.
 ## Điều kiện tiên quyết
@@ -66,3 +72,9 @@ Có, Aspose.GIS hỗ trợ nhiều khung .NET khác nhau, bao gồm .NET Framewo
  Có, bạn có thể nhận giấy phép tạm thời cho Aspose.GIS từ[đây](https://purchase.aspose.com/temporary-license/).
 ### Tôi có thể mua Aspose.GIS ở đâu?
  Bạn có thể mua Aspose.GIS từ trang mua hàng[đây](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

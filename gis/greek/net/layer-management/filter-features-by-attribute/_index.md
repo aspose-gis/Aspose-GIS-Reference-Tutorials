@@ -3,10 +3,16 @@ title: Φιλτράρισμα χαρακτηριστικών κατά χαρακ
 linktitle: Φιλτράρισμα χαρακτηριστικών κατά χαρακτηριστικό
 second_title: Aspose.GIS .NET API
 description: Εξερευνήστε τη δύναμη του Aspose.GIS για .NET στον χειρισμό χωρικών δεδομένων. Φιλτράρετε τις λειτουργίες χωρίς κόπο, βελτιώνετε τις εφαρμογές GIS και ενισχύετε την παραγωγικότητα.
-type: docs
 weight: 21
 url: /el/net/layer-management/filter-features-by-attribute/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Φιλτράρισμα χαρακτηριστικών κατά χαρακτηριστικό
+
 ## Εισαγωγή
 Στον δυναμικό κόσμο των Συστημάτων Γεωγραφικών Πληροφοριών (GIS), το Aspose.GIS για .NET ξεχωρίζει ως ένα ισχυρό εργαλείο που δίνει τη δυνατότητα στους προγραμματιστές να χειρίζονται και να αναλύουν χωρικά δεδομένα απρόσκοπτα. Είτε είστε έμπειρος επαγγελματίας GIS είτε ένας περίεργος προγραμματιστής που θέλει να εξερευνήσει τις δυνατότητες, αυτό το σεμινάριο θα σας καθοδηγήσει στα βασικά βήματα χρήσης του Aspose.GIS σε περιβάλλον .NET.
 ## Προαπαιτούμενα
@@ -57,3 +63,9 @@ foreach (Feature feature in layer.WhereGreater("dob", new DateTime(1982, 1, 1, 0
  Λάβετε προσωρινή άδεια[εδώ](https://purchase.aspose.com/temporary-license/).
 ### Υπάρχει διαθέσιμος οδηγός βήμα προς βήμα για άλλες δυνατότητες του Aspose.GIS;
  Ναι, μπορείτε να βρείτε περισσότερα σεμινάρια και τεκμηρίωση για το[Αναφορά Aspose.GIS](https://reference.aspose.com/gis/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

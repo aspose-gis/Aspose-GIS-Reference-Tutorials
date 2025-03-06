@@ -3,10 +3,16 @@ title: Aspose.GIS를 사용하여 기하학의 기하학 계산
 linktitle: 기하학의 기하학 개수
 second_title: Aspose.GIS .NET API
 description: .NET용 Aspose.GIS를 사용하여 기하학의 기하학을 계산하는 방법을 알아보세요. 개발자를 위한 코드 예제가 포함된 단계별 튜토리얼입니다.
-type: docs
 weight: 23
 url: /ko/net/geometry-creation/count-geometries-in-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS를 사용하여 기하학의 기하학 계산
+
 ## 소개
 Aspose.GIS for .NET은 지리공간 기능을 .NET 애플리케이션에 통합하려는 개발자를 위한 강력한 도구입니다. 매핑 소프트웨어, 위치 기반 서비스 또는 공간 분석 도구를 구축하든 Aspose.GIS는 귀하의 요구 사항을 충족하는 포괄적인 기능 세트를 제공합니다. 이 튜토리얼에서는 .NET용 Aspose.GIS를 사용하여 기하학 내의 기하학을 계산하는 방법을 살펴보겠습니다.
 ## 전제조건
@@ -70,3 +76,9 @@ Console.WriteLine(geometriesCount); // 2
  예, 다음에서 무료 평가판을 다운로드할 수 있습니다.[웹사이트](https://releases.aspose.com/).
 ### .NET용 Aspose.GIS에 대한 지원은 어디서 찾을 수 있나요?
  다음에서 지원을 찾을 수 있습니다.[Aspose.GIS 포럼](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

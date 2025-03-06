@@ -3,10 +3,16 @@ title: Удалить слои из набора данных файла GDB
 linktitle: Удалить слои из набора данных файла GDB
 second_title: API Aspose.GIS .NET
 description: Исследуйте ГИС с помощью Aspose.GIS для .NET! Научитесь шаг за шагом удалять слои из наборов данных File GDB. Загрузите сейчас и получите беспрепятственное использование пространственных данных.
-type: docs
 weight: 17
 url: /ru/net/layer-data-operations/remove-layers-from-file-gdb-dataset/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Удалить слои из набора данных файла GDB
+
 ## Введение
 Раскройте весь потенциал географических информационных систем (ГИС) с помощью Aspose.GIS для .NET, мощного набора инструментов, предназначенного для упрощения манипулирования и визуализации пространственных данных. Независимо от того, являетесь ли вы опытным разработчиком или энтузиастом ГИС, это руководство проведет вас через процесс удаления слоев из набора данных файловой базы геоданных (GDB) с помощью Aspose.GIS for .NET.
 ## Предварительные условия
@@ -71,3 +77,9 @@ Console.WriteLine(dataset.LayersCount); // 1
  Да, временную лицензию можно приобрести.[здесь](https://purchase.aspose.com/temporary-license/).
 ### Существуют ли образцы наборов данных для практики?
 Изучите документацию Aspose.GIS, чтобы найти образцы наборов данных и дополнительные ресурсы.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

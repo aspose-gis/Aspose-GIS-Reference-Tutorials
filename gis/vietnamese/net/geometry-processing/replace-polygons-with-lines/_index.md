@@ -3,10 +3,16 @@ title: Chuyển đổi đa giác thành đường thẳng với Aspose.GIS cho .
 linktitle: Thay thế đa giác bằng đường
 second_title: API Aspose.GIS .NET
 description: Tìm hiểu cách thay thế đa giác bằng các đường bằng Aspose.GIS cho .NET. Nâng cao kỹ năng thao tác dữ liệu GIS của bạn một cách dễ dàng.
-type: docs
 weight: 16
 url: /vi/net/geometry-processing/replace-polygons-with-lines/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Chuyển đổi đa giác thành đường thẳng với Aspose.GIS cho .NET
+
 ## Giới thiệu
 Trong thế giới phát triển Hệ thống thông tin địa lý (GIS), Aspose.GIS cho .NET nổi bật như một bộ công cụ mạnh mẽ để làm việc với dữ liệu không gian. Cho dù bạn là nhà phát triển dày dạn kinh nghiệm hay mới bắt đầu hành trình lập trình GIS, Aspose.GIS cho .NET đều cung cấp một bộ chức năng toàn diện để thao tác và phân tích dữ liệu địa lý một cách hiệu quả.
 ## Điều kiện tiên quyết
@@ -54,3 +60,9 @@ Có, Aspose.GIS for .NET hỗ trợ đọc và ghi các định dạng GIS khác
  Có, bạn có thể lấy giấy phép tạm thời từ[đây](https://purchase.aspose.com/temporary-license/).
 ### Aspose.GIS cho .NET có phù hợp cho cả người mới bắt đầu và nhà phát triển có kinh nghiệm không?
 Chắc chắn rồi, Aspose.GIS for .NET phục vụ các nhà phát triển ở mọi cấp độ, cung cấp tài liệu và hỗ trợ toàn diện.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

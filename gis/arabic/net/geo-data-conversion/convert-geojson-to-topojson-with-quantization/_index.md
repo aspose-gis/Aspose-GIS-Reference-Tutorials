@@ -3,10 +3,16 @@ title: تحويل GeoJSON إلى TopoJSON مع التكميم
 linktitle: تحويل GeoJSON إلى TopoJSON مع التكميم
 second_title: Aspose.GIS .NET API
 description: تعرف على كيفية تحويل GeoJSON إلى TopoJSON بكفاءة من خلال التكميم باستخدام Aspose.GIS for .NET، مما يؤدي إلى تحسين حجم الملف ودقته.
-type: docs
 weight: 14
 url: /ar/net/geo-data-conversion/convert-geojson-to-topojson-with-quantization/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# تحويل GeoJSON إلى TopoJSON مع التكميم
+
 ## مقدمة
 في مجال نظم المعلومات الجغرافية (GIS)، يعد تحويل تنسيقات البيانات ضرورة شائعة، خاصة عند التحسين لحالات استخدام محددة. يقدم TopoJSON، المعروف بصغر حجمه وكفاءته في تمثيل البيانات الجغرافية، تنسيقًا قيمًا لمثل هذه الأغراض. يوفر Aspose.GIS for .NET أدوات قوية لتسهيل هذا التحويل بسلاسة.
 ## المتطلبات الأساسية
@@ -61,3 +67,9 @@ VectorLayer.Convert(SampleGeoJsonPath, Drivers.GeoJson, outputFilePath, Drivers.
  نعم، يمكنك استكشاف وظائف Aspose.GIS for .NET من خلال النسخة التجريبية المجانية المتاحة[هنا](https://releases.aspose.com/).
 ### أين يمكنني طلب المساعدة أو المشاركة في المناقشات المتعلقة بـ Aspose.GIS for .NET؟
  يمكنك الانضمام إلى منتدى مجتمع Aspose.GIS للحصول على الدعم والمناقشات[هنا](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

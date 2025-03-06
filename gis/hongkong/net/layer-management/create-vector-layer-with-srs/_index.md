@@ -3,10 +3,16 @@ title: 使用 SRS 建立向量圖層
 linktitle: 使用 SRS 建立向量圖層
 second_title: Aspose.GIS .NET API
 description: 探索 Aspose.GIS for .NET - 無縫 GIS 整合的關鍵。使用指定的空間參考系統輕鬆建立向量圖層。現在下載！
-type: docs
 weight: 13
 url: /zh-hant/net/layer-management/create-vector-layer-with-srs/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 SRS 建立向量圖層
+
 ## 介紹
 Aspose.GIS for .NET 是一個功能強大的程式庫，可讓開發人員在 .NET 應用程式中無縫地處理地理資訊系統 (GIS) 資料。在本教程中，我們將重點放在使用空間參考系統 (SRS) 建立向量圖層。閱讀本指南後，您將能夠輕鬆地將 GIS 功能整合到您的 .NET 專案中。
 ## 先決條件
@@ -90,3 +96,9 @@ using (var layer = Drivers.Shapefile.OpenLayer(dataDir + "filepath_out.shp"))
 是的，您可以透過免費試用來探索 Aspose.GIS 的功能[這裡](https://releases.aspose.com/).
 ### 如何購買 Aspose.GIS 許可證？
 要購買許可證，請訪問[購買頁面](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: إتقان تعديل ميزة الطبقة
 linktitle: تعديل ميزات الطبقة
 second_title: Aspose.GIS .NET API
 description: استكشف Aspose.GIS for .NET وأتقن فن تعديل ميزات الطبقة في ملفات الأشكال دون عناء. عزز تطبيقاتك الجغرافية المكانية بدقة وسهولة.
-type: docs
 weight: 23
 url: /ar/net/layer-interaction-and-data-access/modify-layer-features/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# إتقان تعديل ميزة الطبقة
+
 ## مقدمة
 مرحبًا بك في هذا الدليل الشامل حول تعديل ميزات الطبقة باستخدام Aspose.GIS for .NET! إذا كنت تتطلع إلى تحسين تطبيقاتك الجغرافية المكانية ومعالجة بيانات ملفات الأشكال بسهولة، فأنت في المكان الصحيح. في هذا البرنامج التعليمي، سنتعمق في عملية تعديل ميزات الطبقة باستخدام مكتبة Aspose.GIS القوية، مما يوفر لك خطوات ورؤى تفصيلية.
 ## المتطلبات الأساسية
@@ -72,3 +78,9 @@ using (var result = VectorLayer.Create(resultPath, Drivers.Shapefile, source.Spa
  قم بزيارة[منتدى دعم Aspose.GIS](https://forum.aspose.com/c/gis/33)للمساعدة والدعم المجتمعي.
 ### أين يمكنني العثور على الوثائق الخاصة بـ Aspose.GIS؟
  وثائق Aspose.GIS متاحة[هنا](https://reference.aspose.com/gis/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: แปลเรขาคณิตจาก WKT โดยใช้ Aspose.
 linktitle: แปลเรขาคณิตจาก WKT
 second_title: Aspose.GIS .NET API
 description: เรียนรู้วิธีการแปลเรขาคณิตจาก Well-Known Text โดยใช้ Aspose.GIS สำหรับ .NET บทช่วยสอนทีละขั้นตอนเพื่อการบูรณาการอย่างราบรื่น
-type: docs
 weight: 21
 url: /th/net/geometry-processing/translate-geometry-from-wkt/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# แปลเรขาคณิตจาก WKT โดยใช้ Aspose.GIS ใน .NET
+
 ## การแนะนำ
 ในบทช่วยสอนนี้ เราจะเจาะลึกกระบวนการแปลเรขาคณิตจาก Well-Known Text (WKT) โดยใช้ Aspose.GIS สำหรับ .NET Aspose.GIS เป็น .NET API อันทรงพลังที่ช่วยให้นักพัฒนาทำงานกับข้อมูลเชิงพื้นที่ได้อย่างง่ายดาย ไม่ว่าคุณจะเป็นนักพัฒนาที่มีประสบการณ์หรือเพิ่งเริ่มต้นด้วยการเขียนโปรแกรมเชิงพื้นที่ บทช่วยสอนนี้จะแนะนำคุณตลอดกระบวนการทีละขั้นตอน
 ## ข้อกำหนดเบื้องต้น
@@ -48,3 +54,9 @@ Console.WriteLine(line.Count); // เอาท์พุต: 3
  คุณสามารถค้นหาเอกสาร[ที่นี่](https://reference.aspose.com/gis/net/).
 ### ฉันจะรับการสนับสนุน Aspose.GIS สำหรับ .NET ได้อย่างไร
  คุณสามารถรับการสนับสนุนจากฟอรัม Aspose.GIS[ที่นี่](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: ファイル GDB レイヤーの許容値を設定する
 linktitle: ファイル GDB レイヤーの許容値を設定する
 second_title: Aspose.GIS .NET API
 description: Aspose.GIS for .NET を探索し、地理空間データの操作をマスターします。ステップバイステップのガイダンスに従って、許容値を簡単に設定できます。 .NET アプリケーションを強化します。
-type: docs
 weight: 22
 url: /ja/net/layer-data-operations/set-tolerances-for-file-gdb-layer/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# ファイル GDB レイヤーの許容値を設定する
+
 ## 導入
 Aspose.GIS for .NET を使用した地理空間データ操作の世界へようこそ! .NET アプリケーションで地理情報を処理するスキルを向上させたいと考えている場合は、ここが正しい場所です。この包括的なガイドでは、ファイル ジオデータベース (GDB) レイヤーの許容値設定の複雑な詳細を掘り下げ、実践的な洞察と段階的な手順を提供します。
 ## 前提条件
@@ -69,3 +75,9 @@ using (var layer = dataset.CreateLayer("layer_name", options))
 はい、入手できます[仮免許](https://purchase.aspose.com/temporary-license/)テストと評価用。
 ### Aspose.GIS for .NET ライセンスはどこで購入できますか?
 ライセンスは次から購入できます。[購入ページ](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

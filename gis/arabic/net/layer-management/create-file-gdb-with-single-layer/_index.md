@@ -3,10 +3,16 @@ title: قم بإنشاء ملف GDB بطبقة واحدة
 linktitle: قم بإنشاء ملف GDB بطبقة واحدة
 second_title: Aspose.GIS .NET API
 description: أطلق العنان لإمكانات إدارة البيانات الجغرافية المكانية في .NET باستخدام Aspose.GIS. تعرف على كيفية إنشاء قواعد بيانات جغرافية ملفية وطبقات خطوة بخطوة. التحميل الان!
-type: docs
 weight: 11
 url: /ar/net/layer-management/create-file-gdb-with-single-layer/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# قم بإنشاء ملف GDB بطبقة واحدة
+
 ## مقدمة
 هل أنت مستعد للارتقاء بتطبيقاتك الجغرافية المكانية باستخدام قواعد بيانات جغرافية وطبقات ملفات قوية؟ لا تنظر إلى أبعد من Aspose.GIS لـ .NET. في هذا البرنامج التعليمي، سنرشدك خلال عملية إنشاء قاعدة بيانات جغرافية ملفية (GDB) بطبقة واحدة باستخدام Aspose.GIS for .NET. استفد من قوة إدارة البيانات المكانية وتصورها في تطبيقات .NET الخاصة بك دون عناء.
 ## المتطلبات الأساسية
@@ -70,3 +76,9 @@ using (var layer = dataset.OpenLayer("layer"))
  قم بزيارة[منتدى Aspose.GIS](https://forum.aspose.com/c/gis/33) لدعم المجتمع ومساعدته.
 ### هل التراخيص المؤقتة متاحة لـ Aspose.GIS لـ .NET؟
  نعم يمكنك الحصول على[ترخيص مؤقت](https://purchase.aspose.com/temporary-license/) لـ Aspose.GIS لـ .NET.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

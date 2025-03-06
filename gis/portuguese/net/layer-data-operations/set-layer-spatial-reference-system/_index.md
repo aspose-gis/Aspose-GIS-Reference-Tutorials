@@ -3,10 +3,16 @@ title: Definir sistema de referência espacial de camada
 linktitle: Definir sistema de referência espacial de camada
 second_title: API Aspose.GIS .NET
 description: Configuração mestre do sistema de referência espacial de camadas com Aspose.GIS para .NET. Eleve seus projetos GIS com este tutorial passo a passo.
-type: docs
 weight: 19
 url: /pt/net/layer-data-operations/set-layer-spatial-reference-system/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Definir sistema de referência espacial de camada
+
 ## Introdução
 No vasto cenário dos Sistemas de Informação Geográfica (GIS), o Aspose.GIS for .NET se destaca como uma ferramenta robusta e versátil para desenvolvedores. Este tutorial irá guiá-lo através do processo de configuração do Sistema de Referência Espacial de Camadas usando Aspose.GIS for .NET. Quer você seja um desenvolvedor experiente ou um novato no desenvolvimento de GIS, este guia passo a passo o ajudará a aproveitar o poder do Aspose.GIS para aprimorar seus recursos de manipulação de dados espaciais.
 ## Pré-requisitos
@@ -72,3 +78,9 @@ Absolutamente! Aspose.GIS é versátil e pode ser utilizado em aplicativos deskt
  Certamente! Você pode baixar uma versão de teste gratuita[aqui](https://releases.aspose.com/).
 ### Onde posso procurar suporte para consultas relacionadas ao Aspose.GIS?
  Para qualquer suporte ou dúvida, visite o[Fórum Aspose.GIS](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

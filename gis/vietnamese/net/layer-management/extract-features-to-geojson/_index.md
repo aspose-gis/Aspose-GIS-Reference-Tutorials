@@ -3,10 +3,16 @@ title: Trích xuất các tính năng cho GeoJSON
 linktitle: Trích xuất các tính năng cho GeoJSON
 second_title: API Aspose.GIS .NET
 description: Khám phá hướng dẫn từng bước về cách sử dụng Aspose.GIS cho .NET để trích xuất các tính năng cho GeoJSON. Khai thác sức mạnh của GIS một cách dễ dàng! #Aspose #GIS
-type: docs
 weight: 23
 url: /vi/net/layer-management/extract-features-to-geojson/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Trích xuất các tính năng cho GeoJSON
+
 ## Giới thiệu
 Chào mừng bạn đến với hướng dẫn từng bước của chúng tôi về cách trích xuất các tính năng sang GeoJSON bằng Aspose.GIS cho .NET! Cho dù bạn là một nhà phát triển dày dạn kinh nghiệm hay mới bắt đầu hành trình lập trình GIS, hướng dẫn này sẽ hướng dẫn bạn qua quy trình, đảm bảo bạn khai thác toàn bộ sức mạnh của Aspose.GIS cho .NET.
 ## Điều kiện tiên quyết
@@ -87,3 +93,9 @@ Trong hướng dẫn này, chúng tôi đã khám phá quy trình trích xuất 
  Có, bạn có thể tìm thấy bản dùng thử miễn phí[đây](https://releases.aspose.com/).
 ### Câu hỏi: Tôi có thể mua Aspose.GIS cho .NET ở đâu?
  Bạn có thể mua sản phẩm[đây](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

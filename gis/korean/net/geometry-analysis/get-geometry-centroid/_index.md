@@ -3,10 +3,16 @@ title: Aspose.GIS를 사용하여 형상 중심 가져오기
 linktitle: 형상 중심 가져오기
 second_title: Aspose.GIS .NET API
 description: 이 포괄적인 내용을 통해 Aspose.GIS for .NET을 기하학 중심에 활용하는 방법을 알아보세요. 공간 분석을 .NET 애플리케이션에 원활하게 통합하세요.
-type: docs
 weight: 19
 url: /ko/net/geometry-analysis/get-geometry-centroid/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS를 사용하여 형상 중심 가져오기
+
 ## 소개
 GIS(지리 정보 시스템) 개발 영역에서 .NET용 Aspose.GIS는 공간 데이터를 처리하기 위한 강력하고 다양한 도구로 돋보입니다. 개발자는 이 기능을 활용하여 .NET 애플리케이션 내에서 지리적 데이터를 효율적으로 조작하고 분석할 수 있습니다. 이 튜토리얼은 공간 분석의 기본 작업인 기하학의 중심을 얻기 위해 Aspose.GIS for .NET을 활용하는 과정을 안내하는 것을 목표로 합니다.
 ## 전제조건
@@ -70,3 +76,9 @@ Console.WriteLine("{0:F} {1:F}", centroid.X, centroid.Y); // 출력: 3.33 2.58
  예, .NET용 Aspose.GIS에 대한 포괄적인 문서는 다음에서 제공됩니다.[문서 페이지](https://reference.aspose.com/gis/net/), 사용법과 기능에 대한 자세한 통찰력을 제공합니다.
 ### Q: Aspose.GIS for .NET과 관련하여 도움을 구하거나 커뮤니티에 참여하려면 어떻게 해야 합니까?
  문의사항, 지원 또는 커뮤니티 참여가 필요한 경우 Aspose.GIS 전용 포럼을 방문하세요.[여기](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

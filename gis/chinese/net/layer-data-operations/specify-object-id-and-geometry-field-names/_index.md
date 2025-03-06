@@ -3,10 +3,16 @@ title: 指定对象 ID 和几何字段名称
 linktitle: 指定对象 ID 和几何字段名称
 second_title: Aspose.GIS .NET API
 description: 使用 Aspose.GIS for .NET 探索 GIS 魔力！轻松管理地理空间数据。立即下载并释放空间智能的力量。
-type: docs
 weight: 20
 url: /zh/net/layer-data-operations/specify-object-id-and-geometry-field-names/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 指定对象 ID 和几何字段名称
+
 ## 介绍
 使用 Aspose.GIS for .NET 踏上地理信息系统 (GIS) 领域的旅程，为开发人员和爱好者打开了一个充满可能性的世界。这个强大的库使您能够轻松处理地理空间数据。在本教程中，我们将指导您完成指定对象 ID 和几何字段名称的过程，为您的 GIS 工作奠定基础。
 ## 先决条件
@@ -74,3 +80,9 @@ using (var layer = dataset.OpenLayer("layer_name"))
 答：Aspose.GIS for .NET 支持各种空间参考系统，为不同的地理数据集提供了灵活性。
 ### 问：我可以在哪里寻求帮助或讨论与 Aspose.GIS 相关的问题？
 答：访问 Aspose.GIS 论坛[这里](https://forum.aspose.com/c/gis/33)以寻求支持和讨论。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

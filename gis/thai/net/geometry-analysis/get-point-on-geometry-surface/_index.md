@@ -3,10 +3,16 @@ title: รับจุดบนพื้นผิวเรขาคณิต
 linktitle: รับจุดบนพื้นผิวเรขาคณิต
 second_title: Aspose.GIS .NET API
 description: เรียนรู้วิธีทำงานกับข้อมูลเชิงพื้นที่อย่างมีประสิทธิภาพโดยใช้ Aspose.GIS สำหรับ .NET รวมคำแนะนำทีละขั้นตอนและคำถามที่พบบ่อย
-type: docs
 weight: 25
 url: /th/net/geometry-analysis/get-point-on-geometry-surface/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# รับจุดบนพื้นผิวเรขาคณิต
+
 ## การแนะนำ
 ในบทช่วยสอนนี้ เราจะสำรวจวิธีใช้ Aspose.GIS สำหรับ .NET เพื่อทำงานกับรูปทรงเรขาคณิตและรับคะแนนบนพื้นผิว Aspose.GIS เป็นไลบรารีที่มีประสิทธิภาพซึ่งมีฟังก์ชันต่างๆ สำหรับการประมวลผลข้อมูลเชิงพื้นที่ การจัดการ และการแสดงภาพในแอปพลิเคชัน .NET
 ## ข้อกำหนดเบื้องต้น
@@ -66,3 +72,9 @@ Console.WriteLine(polygon.SpatiallyContains(pointOnSurface)); // จริง
  ใช่ คุณสามารถขอรับใบอนุญาตชั่วคราวสำหรับ Aspose.GIS ได้จาก[ที่นี่](https://purchase.aspose.com/temporary-license/).
 ### ฉันจะซื้อ Aspose.GIS ได้ที่ไหน
  คุณสามารถซื้อ Aspose.GIS ได้จากหน้าการซื้อ[ที่นี่](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

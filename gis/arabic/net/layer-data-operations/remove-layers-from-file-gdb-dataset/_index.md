@@ -3,10 +3,16 @@ title: قم بإزالة الطبقات من مجموعة بيانات ملف GD
 linktitle: قم بإزالة الطبقات من مجموعة بيانات ملف GDB
 second_title: Aspose.GIS .NET API
 description: استكشف نظم المعلومات الجغرافية باستخدام Aspose.GIS لـ .NET! تعرف على كيفية إزالة الطبقات من مجموعات بيانات File GDB خطوة بخطوة. قم بالتنزيل الآن للاستمتاع بتجربة بيانات مكانية سلسة.
-type: docs
 weight: 17
 url: /ar/net/layer-data-operations/remove-layers-from-file-gdb-dataset/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# قم بإزالة الطبقات من مجموعة بيانات ملف GDB
+
 ## مقدمة
 أطلق العنان للإمكانات الكاملة لأنظمة المعلومات الجغرافية (GIS) باستخدام Aspose.GIS for .NET، وهي مجموعة أدوات قوية مصممة لتبسيط معالجة البيانات المكانية وتصورها. سواء كنت مطورًا متمرسًا أو متحمسًا لنظم المعلومات الجغرافية، سيرشدك هذا البرنامج التعليمي خلال عملية إزالة الطبقات من مجموعة بيانات قاعدة البيانات الجغرافية للملفات (GDB) باستخدام Aspose.GIS for .NET.
 ## المتطلبات الأساسية
@@ -71,3 +77,9 @@ Console.WriteLine(dataset.LayersCount); // 1
  نعم، يمكن شراء ترخيص مؤقت[هنا](https://purchase.aspose.com/temporary-license/).
 ### هل هناك أي مجموعات بيانات عينة متاحة للممارسة؟
 استكشف وثائق Aspose.GIS للتعرف على مجموعات البيانات النموذجية والموارد الإضافية.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

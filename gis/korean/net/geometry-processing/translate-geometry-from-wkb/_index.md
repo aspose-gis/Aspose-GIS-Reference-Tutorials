@@ -3,10 +3,16 @@ title: .NET용 Aspose.GIS를 사용하여 WKB에서 형상 변환
 linktitle: WKB에서 형상 변환
 second_title: Aspose.GIS .NET API
 description: .NET용 Aspose.GIS를 사용하여 .NET에서 지리 정보로 작업하는 방법을 알아보세요. 단계별 지침을 통해 WKB 형식의 형상을 쉽게 변환할 수 있습니다.
-type: docs
 weight: 20
 url: /ko/net/geometry-processing/translate-geometry-from-wkb/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# .NET용 Aspose.GIS를 사용하여 WKB에서 형상 변환
+
 ## 소개
 .NET 개발 영역에서는 지리 정보를 처리하는 것이 일반적인 요구 사항입니다. 매핑 애플리케이션, 공간 분석, 데이터 시각화 등 지리 데이터 작업을 위한 강력한 도구를 갖추는 것이 중요합니다. 이것이 .NET용 Aspose.GIS가 작동하는 곳입니다. Aspose.GIS for .NET은 다양한 지리공간 형식으로 작업하고 공간 작업을 효율적으로 수행할 수 있는 포괄적인 기능을 제공하는 강력한 라이브러리입니다.
 ## 전제조건
@@ -61,3 +67,9 @@ Aspose.GIS for .NET은 .NET 애플리케이션에서 지리공간 데이터 작�
 포럼을 통해 .NET용 Aspose.GIS에 대한 지원을 받을 수 있습니다.[여기](https://forum.aspose.com/c/gis/33) 또는 Aspose 지원팀에 직접 문의하세요.
 ### 상업용 프로젝트에서 .NET용 Aspose.GIS를 사용할 수 있나요?
 예, 적합한 라이선스를 구입하면 상업용 프로젝트에서 .NET용 Aspose.GIS를 사용할 수 있습니다.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

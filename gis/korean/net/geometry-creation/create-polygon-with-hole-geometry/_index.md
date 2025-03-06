@@ -3,10 +3,16 @@ title: Aspose.GIS를 사용하여 구멍 형상으로 다각형 만들기
 linktitle: 구멍 형상을 사용하여 다각형 생성
 second_title: Aspose.GIS .NET API
 description: .NET용 Aspose.GIS를 사용하여 구멍 형상으로 다각형을 만드는 방법을 알아보세요. 코드 예제가 포함된 단계별 튜토리얼입니다.
-type: docs
 weight: 13
 url: /ko/net/geometry-creation/create-polygon-with-hole-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS를 사용하여 구멍 형상으로 다각형 만들기
+
 ## 소개
 이 튜토리얼에서는 Aspose.GIS for .NET을 사용하여 구멍 형상이 있는 다각형을 생성하는 과정을 안내합니다. Aspose.GIS는 개발자가 .NET 애플리케이션에서 지리공간 데이터로 작업할 수 있도록 하는 강력한 라이브러리입니다. 
 ## 전제조건
@@ -66,3 +72,9 @@ Aspose.GIS는 개발자가 지리공간 데이터로 작업하여 다양한 지�
  Aspose.GIS에 대한 지원은 다음에서 찾을 수 있습니다.[Aspose.GIS 포럼](https://forum.aspose.com/c/gis/33).
 ### 5. Aspose.GIS에 대한 임시 라이선스를 어떻게 얻을 수 있나요?
  Aspose.GIS에 대한 임시 라이선스는 다음에서 얻을 수 있습니다.[여기](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

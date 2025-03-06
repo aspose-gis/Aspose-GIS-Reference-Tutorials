@@ -3,10 +3,16 @@ title: Überprüfen Sie Geometrien auf Gleichheit
 linktitle: Überprüfen Sie Geometrien auf Gleichheit
 second_title: Aspose.GIS .NET-API
 description: Erfahren Sie in diesem umfassenden Tutorial, wie Sie mit Aspose.GIS für .NET Geometrien in Ihren .NET-Anwendungen auf Gleichheit prüfen.
-type: docs
 weight: 10
 url: /de/net/geometry-analysis/check-geometries-for-equality/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Überprüfen Sie Geometrien auf Gleichheit
+
 ## Einführung
 Aspose.GIS für .NET ist eine leistungsstarke Bibliothek, die es Entwicklern ermöglicht, effizient mit Geodaten in ihren .NET-Anwendungen zu arbeiten. Ganz gleich, ob Sie Kartierungsanwendungen oder räumliche Analysetools erstellen oder Geodatenfunktionen in bestehende Software integrieren, Aspose.GIS bietet die Tools, die Sie für die Erledigung Ihrer Aufgabe benötigen.
 ## Voraussetzungen
@@ -73,3 +79,9 @@ Ja, Aspose.GIS für .NET ist mit verschiedenen .NET-Frameworks kompatibel, einsc
  Unterstützung erhalten Sie im Aspose.GIS-Community-Forum[Hier](https://forum.aspose.com/c/gis/33).
 ### Kann ich eine temporäre Lizenz für Aspose.GIS für .NET erwerben?
  Ja, Sie können eine temporäre Lizenz bei erwerben[Kaufseite](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

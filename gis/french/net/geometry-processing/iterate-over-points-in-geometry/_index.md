@@ -3,10 +3,16 @@ title: Itérer sur des points en géométrie
 linktitle: Itérer sur des points en géométrie
 second_title: API Aspose.GIS .NET
 description: Explorez Aspose.GIS pour .NET, une boîte à outils puissante pour une intégration transparente des fonctionnalités géospatiales dans vos applications .NET.
-type: docs
 weight: 11
 url: /fr/net/geometry-processing/iterate-over-points-in-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Itérer sur des points en géométrie
+
 ## Introduction
 
 Dans le domaine du développement de systèmes d'information géographique (SIG), Aspose.GIS pour .NET se distingue comme une boîte à outils robuste permettant aux développeurs d'intégrer de manière transparente des fonctionnalités géospatiales dans leurs applications .NET. Cet article sert de guide étape par étape pour exploiter la puissance d'Aspose.GIS pour .NET, en se concentrant sur l'itération sur les points de la géométrie. À la fin de ce didacticiel, vous naviguerez habilement dans le processus et disposerez des connaissances essentielles pour mettre en œuvre cette fonctionnalité sans effort.
@@ -83,3 +89,9 @@ R : Oui, Aspose.GIS pour .NET offre une extensibilité grâce au développement 
 ### Q5 : une assistance technique est-elle disponible pour les utilisateurs d'Aspose.GIS ?
 
 R : Absolument, les utilisateurs d'Aspose.GIS peuvent accéder à un support technique dédié via des forums, garantissant une assistance rapide pour toute question ou problème rencontré lors du développement.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Analyse géométrique
 linktitle: Analyse géométrique
 second_title: API Aspose.GIS .NET
 description: Libérez le potentiel d’Aspose.GIS .NET avec des didacticiels complets sur l’analyse géométrique. Maîtrisez la gestion des données spatiales sans effort pour un développement SIG robuste.
-type: docs
 weight: 22
 url: /fr/net/geometry-analysis/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Analyse géométrique
+
 ## Introduction
 
 L'analyse géospatiale fait un pas en avant avec Aspose.GIS pour .NET, offrant une boîte à outils polyvalente pour une intégration transparente des fonctionnalités spatiales dans vos applications .NET. Dans cette série de didacticiels, nous explorerons différents aspects de l'analyse géométrique, vous permettant d'exploiter tout le potentiel des données géospatiales. Entrons dans les détails :
@@ -89,3 +95,9 @@ Découvrez la puissance d'Aspose.GIS pour .NET. Apprenez à gérer efficacement 
 Découvrez comment calculer la longueur géométrique dans .NET à l'aide d'Aspose.GIS pour une gestion efficace des données spatiales. Guide étape par étape avec des exemples de code.
 ### [Obtenir un point sur une surface géométrique](./get-point-on-geometry-surface/)
 Apprenez à travailler efficacement avec des données géospatiales à l'aide d'Aspose.GIS pour .NET. Guide étape par étape et FAQ inclus.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

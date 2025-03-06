@@ -3,10 +3,16 @@ title: Разблокирование функций TopoJSON с помощью 
 linktitle: Функции доступа в TopoJSON
 second_title: API Aspose.GIS .NET
 description: Изучите Aspose.GIS for .NET и шаг за шагом научитесь получать доступ к функциям TopoJSON. Погрузитесь в документацию и без труда раскройте геопространственные возможности.
-type: docs
 weight: 15
 url: /ru/net/layer-management/access-features-in-topojson/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Разблокирование функций TopoJSON с помощью Aspose.GIS for .NET
+
 ## Введение
 Aspose.GIS for .NET — это мощная библиотека, которая позволяет разработчикам легко работать с геопространственными данными. В этом уроке мы углубимся в доступ к функциям TopoJSON с помощью Aspose.GIS для .NET. TopoJSON — это формат, который компактно и эффективно представляет географические объекты.
 ## Предварительные условия
@@ -67,3 +73,9 @@ Console.WriteLine(builder.ToString());
 Да, вы можете получить доступ к бесплатной пробной версии[здесь](https://releases.aspose.com/).
 ### Вопрос: Как приобрести лицензию?
  Купить лицензию[здесь](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

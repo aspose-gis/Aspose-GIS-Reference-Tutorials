@@ -3,10 +3,16 @@ title: التكرار على الأشكال الهندسية في المجموع
 linktitle: التكرار على الأشكال الهندسية في المجموعة
 second_title: Aspose.GIS .NET API
 description: تعرف على كيفية استخدام Aspose.GIS for .NET لمعالجة البيانات الجغرافية المكانية بسلاسة داخل تطبيقات .NET الخاصة بك.
-type: docs
 weight: 10
 url: /ar/net/geometry-processing/iterate-over-geometries-in-collection/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# التكرار على الأشكال الهندسية في المجموعة
+
 ## مقدمة
 في مجال معالجة البيانات الجغرافية المكانية وتحليلها، يظهر Aspose.GIS for .NET كمجموعة أدوات قوية، تمكن المطورين من معالجة المعلومات الجغرافية وتصورها ومعالجتها بسلاسة داخل تطبيقات .NET. تعتبر هذه المقالة بمثابة دليل شامل للاستفادة من Aspose.GIS for .NET بشكل فعال، لتلبية احتياجات المطورين المبتدئين والمتمرسين على حد سواء.
 ## المتطلبات الأساسية
@@ -81,3 +87,9 @@ foreach (Geometry geometry in geometryCollection)
 ج: في الواقع، توفر وثائق Aspose.GIS عينة شاملة من المشاريع لتسهيل عملية التعلم والتطوير لديك.
 ### س: هل يمكنني توسيع وظائف Aspose.GIS لـ .NET؟
 ج: بالتأكيد، يمكنك توسيع وظائف Aspose.GIS for .NET من خلال دمج الوحدات النمطية المخصصة والاستفادة من ميزات القابلية للتوسعة المتوفرة.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

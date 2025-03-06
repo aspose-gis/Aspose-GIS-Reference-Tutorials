@@ -3,10 +3,16 @@ title: 양자화를 사용하여 GeoJSON을 TopoJSON으로 변환
 linktitle: 양자화를 사용하여 GeoJSON을 TopoJSON으로 변환
 second_title: Aspose.GIS .NET API
 description: .NET용 Aspose.GIS를 사용하여 파일 크기와 정밀도를 최적화하는 양자화를 통해 GeoJSON을 TopoJSON으로 효율적으로 변환하는 방법을 알아보세요.
-type: docs
 weight: 14
 url: /ko/net/geo-data-conversion/convert-geojson-to-topojson-with-quantization/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 양자화를 사용하여 GeoJSON을 TopoJSON으로 변환
+
 ## 소개
 지리 정보 시스템(GIS) 영역에서는 특히 특정 사용 사례에 맞게 최적화할 때 데이터 형식을 변환하는 것이 일반적으로 필요합니다. 지리적 데이터를 간결하고 효율적으로 표현하는 것으로 알려진 TopoJSON은 이러한 목적에 유용한 형식을 제공합니다. .NET용 Aspose.GIS는 이러한 변환을 원활하게 촉진하는 강력한 도구를 제공합니다.
 ## 전제조건
@@ -61,3 +67,9 @@ VectorLayer.Convert(SampleGeoJsonPath, Drivers.GeoJson, outputFilePath, Drivers.
  예, 무료 평가판을 통해 .NET용 Aspose.GIS의 기능을 탐색할 수 있습니다.[여기](https://releases.aspose.com/).
 ### Aspose.GIS for .NET과 관련된 도움을 구하거나 토론에 참여할 수 있는 곳은 어디입니까?
  지원과 토론을 위해 Aspose.GIS 커뮤니티 포럼에 참여할 수 있습니다.[여기](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

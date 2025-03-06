@@ -3,10 +3,16 @@ title: Interakcja warstw i dostęp do danych
 linktitle: Interakcja warstw i dostęp do danych
 second_title: Aspose.GIS .NET API
 description: Odblokuj potencjał Aspose.GIS dla .NET dzięki naszym samouczkom dotyczącym interakcji warstw i dostępu do danych. Przeglądaj rozwój geoprzestrzenny i płynnie manipuluj obiektami.
-type: docs
 weight: 25
 url: /pl/net/layer-interaction-and-data-access/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Interakcja warstw i dostęp do danych
+
 ## Wstęp
 
 Aspose.GIS dla .NET stoi na czele rozwoju geoprzestrzennego, oferując kompleksowy zestaw narzędzi do bezproblemowej integracji danych GIS. W tej serii samouczków zagłębiamy się w zawiłości interakcji warstw i dostępu do danych, odblokowując pełny potencjał tej potężnej biblioteki.
@@ -49,3 +55,9 @@ Poznaj Aspose.GIS dla .NET i bezproblemowo wchodź w interakcję z warstwami GPX
 Odkryj moc manipulacji danymi geoprzestrzennymi w .NET z Aspose.GIS. Przewodnik krok po kroku dotyczący interakcji z warstwami KML. 
 ### [Modyfikuj elementy warstwy](./modify-layer-features/)
 Poznaj Aspose.GIS dla .NET i opanuj sztukę łatwego modyfikowania funkcji warstw w plikach kształtu. Ulepsz swoje aplikacje geoprzestrzenne z precyzją i łatwością.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

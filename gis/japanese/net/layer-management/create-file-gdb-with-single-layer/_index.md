@@ -3,10 +3,16 @@ title: 単一レイヤーのファイル GDB を作成する
 linktitle: 単一レイヤーのファイル GDB を作成する
 second_title: Aspose.GIS .NET API
 description: Aspose.GIS を使用して、.NET での地理空間データ管理の可能性を解き放ちます。ファイル ジオデータベースとレイヤーを作成する方法を段階的に学習します。ダウンロード中！
-type: docs
 weight: 11
 url: /ja/net/layer-management/create-file-gdb-with-single-layer/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 単一レイヤーのファイル GDB を作成する
+
 ## 導入
 堅牢なファイル ジオデータベースとレイヤーを使用して地理空間アプリケーションを強化する準備はできていますか? Aspose.GIS for .NET 以外に探す必要はありません。このチュートリアルでは、Aspose.GIS for .NET を使用して単一レイヤーのファイル ジオデータベース (GDB) を作成するプロセスを説明します。 .NET アプリケーションで空間データの管理と視覚化の機能を簡単に活用できます。
 ## 前提条件
@@ -70,3 +76,9 @@ using (var layer = dataset.OpenLayer("layer"))
 訪問[Aspose.GIS フォーラム](https://forum.aspose.com/c/gis/33)コミュニティのサポートと支援のために。
 ### Aspose.GIS for .NET の一時ライセンスは利用できますか?
 はい、入手できます[仮免許](https://purchase.aspose.com/temporary-license/) Aspose.GIS for .NET の場合。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

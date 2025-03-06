@@ -3,10 +3,16 @@ title: GIS Mastery – Adjon hozzá rétegeket a GDB-hez az Aspose.GIS for .NET 
 linktitle: Réteg hozzáadása a fájlhoz GDB adatkészlet
 second_title: Aspose.GIS .NET API
 description: Fedezze fel a GIS erejét az Aspose.GIS for .NET segítségével! Ebben a lépésenkénti oktatóanyagban megtudhatja, hogyan adhat hozzá rétegeket a File GDB adatkészletekhez. #földrajzi adatok #Aspose #GIS
-type: docs
 weight: 16
 url: /hu/net/layer-management/add-layer-to-file-gdb-dataset/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# GIS Mastery – Adjon hozzá rétegeket a GDB-hez az Aspose.GIS for .NET segítségével
+
 ## Bevezetés
 Készen áll a térinformatikai képességek fejlesztésére az Aspose.GIS for .NET használatával? Ebben a lépésenkénti útmutatóban végigvezetjük a réteg hozzáadásának folyamatán a File Geodatabase (GDB) adatkészlethez. Az Aspose.GIS for .NET hatékony funkciókat kínál a földrajzi információk manipulálásához, és ezzel az oktatóanyaggal zökkenőmentesen integrálhat további rétegeket az adatkészletekbe.
 ## Előfeltételek
@@ -75,3 +81,9 @@ Az Aspose.GIS for .NET a térbeli referenciarendszerek széles skáláját támo
  Teljesen! Csatlakozzon a beszélgetésekhez, és ossza meg tapasztalatait a[Aspose.GIS fórum](https://forum.aspose.com/c/gis/33).
 ### K: Hol találom az Aspose.GIS for .NET részletes dokumentációját?
  Tekintse meg az átfogó dokumentációt[itt](https://reference.aspose.com/gis/net/) az Aspose.GIS for .NET-hez kapcsolódó részletes információkért.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

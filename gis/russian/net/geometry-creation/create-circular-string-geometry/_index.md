@@ -3,10 +3,16 @@ title: Создайте геометрию круглой струны с пом
 linktitle: Создайте геометрию круглой струны
 second_title: API Aspose.GIS .NET
 description: Раскройте возможности разработки ГИС с помощью Aspose.GIS для .NET. Создавайте, анализируйте и визуализируйте пространственные данные без особых усилий.
-type: docs
 weight: 20
 url: /ru/net/geometry-creation/create-circular-string-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Создайте геометрию круглой струны с помощью Aspose.GIS для .NET
+
 ## Введение
 В сфере разработки географических информационных систем (ГИС) Aspose.GIS for .NET выступает в качестве мощного инструмента, предлагающего разработчикам надежную среду для легкой работы с пространственными данными. Используя возможности Aspose.GIS, разработчики могут с легкостью манипулировать, анализировать и визуализировать географические данные, что дает им возможность создавать сложные ГИС-приложения.
 ## Предварительные условия
@@ -80,3 +86,9 @@ layer.Add(feature);
  Да, вы можете посетить форум Aspose.GIS.[здесь](https://forum.aspose.com/c/gis/33) искать поддержку и взаимодействовать с сообществом.
 ### Могу ли я получить временную лицензию для оценки Aspose.GIS для .NET?
  Конечно! Вы можете получить временную лицензию для ознакомительных целей на сайте[здесь](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

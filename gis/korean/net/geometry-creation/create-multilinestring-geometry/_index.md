@@ -3,10 +3,16 @@ title: .NET용 Aspose.GIS를 사용하여 MultiLineString 기하학 생성
 linktitle: MultiLineString 형상 생성
 second_title: Aspose.GIS .NET API
 description: 지리공간 데이터를 효율적으로 관리하는 데 있어 Aspose.GIS for .NET의 강력한 기능을 살펴보세요. 원활한 경험을 위해 지금 다운로드하세요.
-type: docs
 weight: 15
 url: /ko/net/geometry-creation/create-multilinestring-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# .NET용 Aspose.GIS를 사용하여 MultiLineString 기하학 생성
+
 ## 소개
 .NET용 Aspose.GIS는 개발자가 .NET 애플리케이션 내에서 지리공간 데이터를 원활하게 사용할 수 있게 해주는 강력한 라이브러리입니다. 매핑 애플리케이션을 구축하든, 지리공간 분석을 수행하든, 위치 기반 기능을 소프트웨어에 통합하든 Aspose.GIS는 공간 데이터를 효율적으로 처리하는 데 필요한 도구를 제공합니다.
 ## 전제조건
@@ -64,3 +70,9 @@ multiLineString.Add(secondLine);
 테스트용으로 평가판을 사용할 수 있지만 추가 기능이 필요하거나 전체 기능을 평가해야 하는 경우 다음에서 임시 라이센스를 얻을 수 있습니다.[buy.aspose.com](https://purchase.aspose.com/temporary-license/).
 ### Aspose.GIS for .NET은 데스크탑과 웹 애플리케이션 모두에 적합합니까?
 예, .NET용 Aspose.GIS는 데스크톱, 웹, 서버측 애플리케이션을 포함한 다양한 애플리케이션에서 사용할 수 있어 다양한 개발 시나리오에 걸쳐 다양성을 제공합니다.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

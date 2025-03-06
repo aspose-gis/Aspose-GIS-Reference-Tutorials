@@ -3,10 +3,16 @@ title: Ubah Poligon menjadi Garis dengan Aspose.GIS untuk .NET
 linktitle: Ganti Poligon dengan Garis
 second_title: Aspose.GIS .NET API
 description: Pelajari cara mengganti poligon dengan garis menggunakan Aspose.GIS untuk .NET. Tingkatkan keterampilan manipulasi data GIS Anda dengan mudah.
-type: docs
 weight: 16
 url: /id/net/geometry-processing/replace-polygons-with-lines/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Ubah Poligon menjadi Garis dengan Aspose.GIS untuk .NET
+
 ## Perkenalan
 Dalam dunia pengembangan Sistem Informasi Geografis (GIS), Aspose.GIS untuk .NET menonjol sebagai perangkat yang ampuh untuk bekerja dengan data spasial. Baik Anda seorang pengembang berpengalaman atau baru memulai perjalanan Anda dalam pemrograman GIS, Aspose.GIS untuk .NET menawarkan serangkaian fungsi komprehensif untuk memanipulasi dan menganalisis data geografis secara efisien.
 ## Prasyarat
@@ -54,3 +60,9 @@ Ya, Aspose.GIS untuk .NET mendukung membaca dan menulis berbagai format GIS sepe
  Ya, Anda dapat memperoleh lisensi sementara dari[Di Sini](https://purchase.aspose.com/temporary-license/).
 ### Apakah Aspose.GIS untuk .NET cocok untuk pemula dan pengembang berpengalaman?
 Tentu saja, Aspose.GIS untuk .NET melayani pengembang dari semua tingkatan, menawarkan dokumentasi dan dukungan yang komprehensif.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

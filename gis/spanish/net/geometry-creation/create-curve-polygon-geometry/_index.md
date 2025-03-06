@@ -3,10 +3,16 @@ title: Cree geometría de polígono curvo con Aspose.GIS para .NET
 linktitle: Crear geometría de polígono de curva
 second_title: Aspose.GIS API .NET
 description: Aprenda a crear eficientemente geometría de polígonos curvos utilizando Aspose.GIS para .NET. Siga nuestra guía paso a paso para integrarse perfectamente en sus aplicaciones SIG.
-type: docs
 weight: 18
 url: /es/net/geometry-creation/create-curve-polygon-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Cree geometría de polígono curvo con Aspose.GIS para .NET
+
 ## Introducción
 En el ámbito del desarrollo de sistemas de información geográfica (SIG), Aspose.GIS para .NET se destaca como una poderosa herramienta para crear, editar y manipular datos espaciales. Este tutorial tiene como objetivo guiarlo a través del proceso de creación de una geometría de polígono curvo utilizando Aspose.GIS para .NET. Al final de este tutorial, estará equipado con el conocimiento para construir eficientemente geometrías complejas para sus aplicaciones SIG.
 ## Requisitos previos
@@ -108,3 +114,9 @@ Sí, Aspose.GIS para .NET proporciona una amplia gama de funcionalidades de aná
  Sí, puedes unirte al foro de la comunidad Aspose.GIS[aquí](https://forum.aspose.com/c/gis/33) para interactuar con otros usuarios, hacer preguntas y compartir sus experiencias.
 ### ¿Puedo probar Aspose.GIS para .NET antes de comprarlo?
  ¡Por supuesto! Puede aprovechar una prueba gratuita de Aspose.GIS para .NET desde el[página de lanzamientos](https://releases.aspose.com/)permitiéndole explorar sus características antes de realizar una compra.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

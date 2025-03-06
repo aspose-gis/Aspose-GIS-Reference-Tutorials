@@ -3,10 +3,16 @@ title: Überprüfen Sie berührende Geometrien
 linktitle: Überprüfen Sie berührende Geometrien
 second_title: Aspose.GIS .NET-API
 description: Nutzen Sie die Möglichkeiten der Geodatenverarbeitung mit Aspose.GIS für .NET. Integrieren Sie mit diesem vielseitigen Toolkit räumliche Funktionalitäten nahtlos in Ihre Anwendungen.
-type: docs
 weight: 13
 url: /de/net/geometry-analysis/check-geometries-touching/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Überprüfen Sie berührende Geometrien
+
 ## Einführung
 Im Bereich der geografischen Informationssysteme (GIS) zeichnet sich Aspose.GIS für .NET als leistungsstarkes Tool für Entwickler aus, die räumliche Funktionalitäten nahtlos in ihre Anwendungen integrieren möchten. Mit seinen robusten Funktionen und der benutzerfreundlichen Oberfläche ermöglicht Aspose.GIS Entwicklern die mühelose Arbeit mit räumlichen Daten, sei es beim Analysieren, Visualisieren oder Bearbeiten von Geometrien.
 ## Voraussetzungen
@@ -64,3 +70,9 @@ Aspose.GIS unterstützt verschiedene .NET-Frameworks, darunter .NET Framework, .
 Aspose.GIS erhält regelmäßig Updates und Verbesserungen, um die Kompatibilität mit den neuesten Technologien sicherzustellen und alle gemeldeten Probleme zu beheben.
 ### Kann ich eine temporäre Lizenz für Aspose.GIS erhalten?
  Ja, Sie können eine temporäre Lizenz erhalten von[Hier](https://purchase.aspose.com/temporary-license/) um die Fähigkeiten von Aspose.GIS in Ihrer Entwicklungsumgebung zu bewerten.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

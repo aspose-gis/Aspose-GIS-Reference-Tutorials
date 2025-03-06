@@ -3,10 +3,16 @@ title: Buat Poligon dengan Geometri Lubang menggunakan Aspose.GIS
 linktitle: Buat Poligon dengan Geometri Lubang
 second_title: Aspose.GIS .NET API
 description: Pelajari cara membuat poligon dengan geometri lubang menggunakan Aspose.GIS untuk .NET. Tutorial langkah demi langkah dengan contoh kode.
-type: docs
 weight: 13
 url: /id/net/geometry-creation/create-polygon-with-hole-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Buat Poligon dengan Geometri Lubang menggunakan Aspose.GIS
+
 ## Perkenalan
 Dalam tutorial ini, kita akan memandu proses pembuatan poligon dengan geometri lubang menggunakan Aspose.GIS untuk .NET. Aspose.GIS adalah perpustakaan canggih yang memungkinkan pengembang bekerja dengan data geospasial dalam aplikasi .NET mereka. 
 ## Prasyarat
@@ -66,3 +72,9 @@ Aspose.GIS adalah perpustakaan .NET yang memungkinkan pengembang bekerja dengan 
  Anda dapat menemukan dukungan untuk Aspose.GIS di[Forum Aspose.GIS](https://forum.aspose.com/c/gis/33).
 ### 5. Bagaimana cara mendapatkan lisensi sementara untuk Aspose.GIS?
  Anda dapat memperoleh lisensi sementara untuk Aspose.GIS dari[Di Sini](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

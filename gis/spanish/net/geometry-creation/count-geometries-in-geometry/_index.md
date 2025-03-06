@@ -3,10 +3,16 @@ title: Contar geometrías en geometría con Aspose.GIS
 linktitle: Contar geometrías en geometría
 second_title: Aspose.GIS API .NET
 description: Aprenda a contar geometrías en una geometría usando Aspose.GIS para .NET. Tutorial paso a paso con ejemplos de código para desarrolladores.
-type: docs
 weight: 23
 url: /es/net/geometry-creation/count-geometries-in-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Contar geometrías en geometría con Aspose.GIS
+
 ## Introducción
 Aspose.GIS para .NET es una poderosa herramienta para desarrolladores que buscan incorporar funcionalidad geoespacial en sus aplicaciones .NET. Ya sea que esté creando software de mapeo, servicios basados en ubicación o herramientas de análisis espacial, Aspose.GIS proporciona un conjunto integral de funciones para satisfacer sus necesidades. En este tutorial, exploraremos cómo contar geometrías dentro de una geometría usando Aspose.GIS para .NET.
 ## Requisitos previos
@@ -70,3 +76,9 @@ Sí, Aspose.GIS para .NET admite una amplia gama de formatos de archivos SIG, in
  Sí, puedes descargar una prueba gratuita desde[sitio web](https://releases.aspose.com/).
 ### ¿Dónde puedo encontrar soporte para Aspose.GIS para .NET?
  Puedes encontrar soporte en el[Foro Aspose.GIS](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: تقليل دقة الهندسة باستخدام Aspose.GIS في .NET
 linktitle: تقليل الدقة الهندسية
 second_title: Aspose.GIS .NET API
 description: تعرف على كيفية تقليل الدقة الهندسية بكفاءة في تطبيقات .NET GIS باستخدام Aspose.GIS لتحسين الأداء وتحسين الذاكرة.
-type: docs
 weight: 15
 url: /ar/net/geometry-processing/reduce-geometry-precision/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# تقليل دقة الهندسة باستخدام Aspose.GIS في .NET
+
 ## مقدمة
 في هذا البرنامج التعليمي، سوف نستكشف كيفية تقليل الدقة الهندسية باستخدام Aspose.GIS for .NET. يعد تقليل الدقة الهندسية أمرًا بالغ الأهمية لتحسين استخدام الذاكرة وتحسين الأداء عند التعامل مع مجموعات البيانات الكبيرة في تطبيقات نظم المعلومات الجغرافية. سنقوم بتقسيم كل مثال إلى خطوات متعددة لتوفير دليل شامل.
 ## المتطلبات الأساسية
@@ -81,3 +87,9 @@ Console.WriteLine("{0}, {1}", line[1].X, line[1].Y);
 نعم، يمكن أن يؤدي تقليل الدقة الهندسية إلى تحسينات كبيرة في الأداء، خاصة عند العمل مع مجموعات كبيرة من البيانات أو إجراء عمليات مكانية.
 ### أين يمكنني الحصول على الدعم لـ Aspose.GIS لـ .NET؟
  يمكنك الحصول على الدعم لـ Aspose.GIS for .NET من خلال زيارة الموقع[منتدى Aspose.GIS](https://forum.aspose.com/c/gis/33) أو الوصول إلى الوثائق المتاحة[هنا](https://reference.aspose.com/gis/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Tetapkan Toleransi Linearisasi menggunakan Aspose.GIS untuk .NET
 linktitle: Tetapkan Toleransi Linearisasi
 second_title: Aspose.GIS .NET API
 description: Kuasai Aspose.GIS untuk .NET untuk menangani data geospasial dengan mudah. Ikuti tutorial langkah demi langkah ini dan dapatkan potensi penuh pengembangan GIS di .NET.
-type: docs
 weight: 17
 url: /id/net/geometry-processing/set-linearization-tolerance/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Tetapkan Toleransi Linearisasi menggunakan Aspose.GIS untuk .NET
+
 ## Perkenalan
 Dalam dunia pengembangan Sistem Informasi Geografis (GIS), Aspose.GIS untuk .NET menonjol sebagai perangkat canggih untuk menangani data spasial dengan mudah dan efisien. Baik Anda seorang pengembang GIS berpengalaman atau baru memulai, menguasai Aspose.GIS dapat meningkatkan kemampuan Anda secara signifikan untuk bekerja dengan data geospasial di lingkungan .NET.
 ## Prasyarat
@@ -84,3 +90,9 @@ Ya, Aspose.GIS untuk .NET mendukung berbagai format data GIS, termasuk GeoJSON, 
 Ya, Anda dapat mengunduh Aspose.GIS versi uji coba gratis untuk .NET dari situs web Aspose.
 ### Di mana saya bisa mendapatkan dukungan Aspose.GIS untuk .NET?
 Anda bisa mendapatkan dukungan untuk Aspose.GIS untuk .NET dari forum Aspose. Kunjungi tautan dukungan yang disediakan di bagian sumber daya di bawah.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

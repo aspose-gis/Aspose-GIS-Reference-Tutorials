@@ -3,10 +3,16 @@ title: Periksa Geometri Meliputi Yang Lain
 linktitle: Periksa Geometri Meliputi Yang Lain
 second_title: Aspose.GIS .NET API
 description: Pelajari cara memanfaatkan Aspose.GIS untuk .NET agar dapat bekerja secara efisien dengan data geografis, menganalisis informasi spasial, dan mengintegrasikan fitur pemetaan ke dalam aplikasi .NET Anda.
-type: docs
 weight: 15
 url: /id/net/geometry-analysis/check-geometry-covers-another/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Periksa Geometri Meliputi Yang Lain
+
 ## Perkenalan
 Aspose.GIS untuk .NET adalah perpustakaan canggih yang menyediakan alat bagi pengembang untuk bekerja secara efisien dengan data geografis dalam aplikasi .NET mereka. Baik Anda membuat aplikasi pemetaan, menganalisis data spasial, atau mengintegrasikan fitur geografis ke dalam perangkat lunak Anda, Aspose.GIS menawarkan serangkaian fungsi komprehensif untuk menyederhanakan proses pengembangan Anda.
 ## Prasyarat
@@ -74,3 +80,9 @@ Ya, Aspose.GIS untuk .NET mendukung berbagai format GIS termasuk Shapefile, GeoJ
 Aspose.GIS untuk .NET adalah perpustakaan berpemilik yang dikembangkan oleh Aspose, sehingga kontribusi dari pengembang eksternal tidak diterima. Namun, Anda dapat memberikan masukan dan saran untuk perbaikan perpustakaan.
 ### Seberapa sering pembaruan dirilis untuk Aspose.GIS untuk .NET?
  Pembaruan Aspose.GIS untuk .NET dirilis secara berkala untuk memperkenalkan fitur baru, penyempurnaan, dan perbaikan bug. Periksalah[situs web](https://releases.aspose.com/gis/net/) untuk rilis terbaru.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

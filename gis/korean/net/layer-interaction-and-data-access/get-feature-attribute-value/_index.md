@@ -3,10 +3,16 @@ title: 기능 속성 값 가져오기
 linktitle: 기능 속성 값 가져오기
 second_title: Aspose.GIS .NET API
 description: 원활한 GIS 데이터 통합을 위한 최고의 도구인 .NET용 Aspose.GIS를 살펴보세요. 지금 무료 평가판을 다운로드하세요! #Aspose #GIS #.NET
-type: docs
 weight: 12
 url: /ko/net/layer-interaction-and-data-access/get-feature-attribute-value/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 기능 속성 값 가져오기
+
 ## 소개
 .NET 개발자가 GIS(지리 정보 시스템) 데이터를 원활하게 사용할 수 있도록 지원하는 강력한 라이브러리인 .NET용 Aspose.GIS의 세계에 오신 것을 환영합니다. 숙련된 개발자이든 이제 막 GIS를 시작하는 개발자이든 이 튜토리얼은 .NET용 Aspose.GIS를 사용하여 기능 속성 값을 검색하는 프로세스를 안내합니다.
 ## 전제조건
@@ -80,3 +86,9 @@ for (int i = 0; i < layer.Count; i++)
  A: 다음 주제에 대한 토론에 참여하세요.[Aspose.GIS 포럼](https://forum.aspose.com/c/gis/33) 도움을 구하고 다른 사용자와 연결합니다.
 ### Q: Aspose.GIS의 무료 평가판이 있습니까?
  답: 물론이죠! 다음에서 무료 평가판을 다운로드하여 Aspose.GIS의 기능을 탐색할 수 있습니다.[여기](https://releases.aspose.com/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

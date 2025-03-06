@@ -3,10 +3,16 @@ title: Converti GeoJSON in TopoJSON con nome oggetto specifico
 linktitle: Converti GeoJSON in TopoJSON con nome oggetto specifico
 second_title: API Aspose.GIS .NET
 description: Scopri come convertire GeoJSON in TopoJSON con un nome oggetto specifico utilizzando Aspose.GIS per .NET. Questo tutorial fornisce una guida passo passo per una manipolazione efficiente dei dati geografici.
-type: docs
 weight: 12
 url: /it/net/geo-data-conversion/convert-geojson-to-topojson-with-specific-object-name/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Converti GeoJSON in TopoJSON con nome oggetto specifico
+
 ## introduzione
 Aspose.GIS per .NET è un potente strumento per lavorare con dati geografici nelle applicazioni .NET. Che tu stia sviluppando un'applicazione di mappatura, analizzando dati spaziali o manipolando file geojson, Aspose.GIS fornisce un set completo di funzionalità per semplificare il flusso di lavoro.
 ## Prerequisiti
@@ -67,3 +73,9 @@ Sì, puoi ottenere una prova gratuita da[Qui](https://releases.aspose.com/).
  È possibile acquistare una licenza da[Qui](https://purchase.aspose.com/buy).
 ### Ho bisogno di una licenza temporanea per la valutazione?
  Sì, puoi ottenere una licenza temporanea da[Qui](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

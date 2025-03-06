@@ -3,10 +3,16 @@ title: 获取特征属性值
 linktitle: 获取特征属性值
 second_title: Aspose.GIS .NET API
 description: 探索 Aspose.GIS for .NET – 无缝 GIS 数据集成的终极工具。立即下载免费试用版！ #Aspose #GIS #.NET
-type: docs
 weight: 12
 url: /zh/net/layer-interaction-and-data-access/get-feature-attribute-value/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 获取特征属性值
+
 ## 介绍
 欢迎来到 Aspose.GIS for .NET 的世界，这是一个功能强大的库，使 .NET 开发人员能够无缝地处理地理信息系统 (GIS) 数据。无论您是经验丰富的开发人员还是刚刚开始 GIS 之旅，本教程都将指导您完成使用 Aspose.GIS for .NET 检索要素属性值的过程。
 ## 先决条件
@@ -80,3 +86,9 @@ for (int i = 0; i < layer.Count; i++)
 答：加入讨论[Aspose.GIS论坛](https://forum.aspose.com/c/gis/33)寻求帮助并与其他用户联系。
 ### 问：Aspose.GIS 有免费试用版吗？
 答：当然可以！您可以通过下载免费试用版来探索 Aspose.GIS 的功能[这里](https://releases.aspose.com/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

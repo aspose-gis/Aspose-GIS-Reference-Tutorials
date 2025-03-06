@@ -3,10 +3,16 @@ title: Crie geometria poligonal com Aspose.GIS para .NET
 linktitle: Criar geometria poligonal
 second_title: API Aspose.GIS .NET
 description: Aprenda como criar geometria poligonal usando Aspose.GIS for .NET. Tutorial passo a passo para desenvolvedores .NET.
-type: docs
 weight: 12
 url: /pt/net/geometry-creation/create-polygon-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Crie geometria poligonal com Aspose.GIS para .NET
+
 ## Introdução
 No mundo do desenvolvimento de software, os sistemas de informação geográfica (GIS) desempenham um papel vital na análise e visualização de dados espaciais. Aspose.GIS for .NET é uma biblioteca poderosa que fornece aos desenvolvedores as ferramentas necessárias para trabalhar com dados GIS de forma eficiente. Neste tutorial, exploraremos como usar Aspose.GIS for .NET para criar geometria poligonal, uma tarefa essencial em muitos aplicativos GIS.
 ## Pré-requisitos
@@ -66,3 +72,9 @@ Sim, Aspose.GIS for .NET suporta vários formatos de arquivo GIS, como Shapefile
  Sim, você pode baixar uma avaliação gratuita do Aspose.GIS for .NET em[aqui](https://releases.aspose.com/).
 ### Onde posso obter suporte para Aspose.GIS for .NET?
  Você pode obter suporte para Aspose.GIS for .NET no site[Fórum Aspose.GIS](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

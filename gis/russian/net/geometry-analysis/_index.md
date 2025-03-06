@@ -3,10 +3,16 @@ title: Анализ геометрии
 linktitle: Анализ геометрии
 second_title: API Aspose.GIS .NET
 description: Раскройте потенциал Aspose.GIS .NET с помощью подробных руководств по анализу геометрии. Освойте обработку пространственных данных без особых усилий для надежной разработки ГИС.
-type: docs
 weight: 22
 url: /ru/net/geometry-analysis/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Анализ геометрии
+
 ## Введение
 
 Геопространственный анализ делает шаг вперед с Aspose.GIS для .NET, предлагая универсальный набор инструментов для плавной интеграции пространственных функций в ваши .NET-приложения. В этой серии руководств мы рассмотрим различные аспекты анализа геометрии, что позволит вам использовать весь потенциал геопространственных данных. Давайте углубимся в детали:
@@ -89,3 +95,9 @@ url: /ru/net/geometry-analysis/
 Узнайте, как рассчитать длину геометрии в .NET с помощью Aspose.GIS для эффективной обработки пространственных данных. Пошаговое руководство с примерами кода.
 ### [Получить точку на геометрической поверхности](./get-point-on-geometry-surface/)
 Узнайте, как эффективно работать с геопространственными данными с помощью Aspose.GIS for .NET. Включены пошаговое руководство и часто задаваемые вопросы.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

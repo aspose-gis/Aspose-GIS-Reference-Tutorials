@@ -3,10 +3,16 @@ title: إتقان التحليل الجغرافي المكاني مع Aspose.GIS
 linktitle: تحقق من تداخل الأشكال الهندسية
 second_title: Aspose.GIS .NET API
 description: استكشف التحليل الجغرافي المكاني باستخدام Aspose.GIS for .NET. تعرف على كيفية التحقق من تداخل الأشكال الهندسية من خلال إرشادات خطوة بخطوة.
-type: docs
 weight: 12
 url: /ar/net/geometry-analysis/check-geometries-overlap/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# إتقان التحليل الجغرافي المكاني مع Aspose.GIS
+
 ## مقدمة
 
 في مجال التحليل الجغرافي المكاني، يبرز Aspose.GIS for .NET كأداة قوية للمطورين وعلماء البيانات على حدٍ سواء. إن تكامله السلس مع إطار عمل .NET يمكّن المستخدمين من التعمق في البيانات المكانية وإجراء تحليلات معقدة والحصول على رؤى لا تقدر بثمن. سيرشدك هذا البرنامج التعليمي خلال عملية التحقق من تداخل الأشكال الهندسية باستخدام Aspose.GIS for .NET، مع توفير إرشادات خطوة بخطوة والمتطلبات الأساسية والأمثلة التفصيلية.
@@ -101,3 +107,9 @@ Console.WriteLine(geometry1.Overlaps(geometry3)); // الإخراج: صحيح
 ### س5: أين يمكنني طلب الدعم لـ Aspose.GIS for .NET؟
 
 ج5: للحصول على أي مساعدة أو استفسارات، قم بزيارة منتدى Aspose.GIS[هنا](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

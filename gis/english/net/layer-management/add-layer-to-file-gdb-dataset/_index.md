@@ -3,10 +3,16 @@ title: GIS Mastery - Add Layers to GDB with Aspose.GIS for .NET
 linktitle: Add Layer to File GDB Dataset
 second_title: Aspose.GIS .NET API
 description: Unlock the power of GIS with Aspose.GIS for .NET! Learn how to add layers to File GDB datasets in this step-by-step tutorial. #geographic data #Aspose #GIS
-type: docs
 weight: 16
 url: /net/layer-management/add-layer-to-file-gdb-dataset/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# GIS Mastery - Add Layers to GDB with Aspose.GIS for .NET
+
 ## Introduction
 Are you ready to enhance your GIS capabilities using Aspose.GIS for .NET? In this step-by-step guide, we'll walk you through the process of adding a layer to a File Geodatabase (GDB) dataset. Aspose.GIS for .NET provides powerful features to manipulate geographic information, and with this tutorial, you'll be able to seamlessly integrate additional layers into your datasets.
 ## Prerequisites
@@ -75,3 +81,10 @@ Aspose.GIS for .NET supports a wide range of spatial reference systems, providin
 Absolutely! Join the discussions and share your experiences on the [Aspose.GIS forum](https://forum.aspose.com/c/gis/33).
 ### Q: Where can I find detailed documentation for Aspose.GIS for .NET?
 Explore the comprehensive documentation [here](https://reference.aspose.com/gis/net/) for in-depth information on Aspose.GIS for .NET.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

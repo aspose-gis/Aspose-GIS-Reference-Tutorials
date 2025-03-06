@@ -3,10 +3,16 @@ title: Aspose.GIS kullanarak Delik Geometrili Çokgen Oluşturma
 linktitle: Delik Geometrisiyle Çokgen Oluşturma
 second_title: Aspose.GIS .NET API'si
 description: Aspose.GIS for .NET'i kullanarak delik geometrili çokgen oluşturmayı öğrenin. Kod örnekleriyle adım adım eğitim.
-type: docs
 weight: 13
 url: /tr/net/geometry-creation/create-polygon-with-hole-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS kullanarak Delik Geometrili Çokgen Oluşturma
+
 ## giriiş
 Bu eğitimde Aspose.GIS for .NET'i kullanarak delik geometrili bir çokgen oluşturma sürecini anlatacağız. Aspose.GIS, geliştiricilerin .NET uygulamalarında coğrafi verilerle çalışmasına olanak tanıyan güçlü bir kütüphanedir. 
 ## Önkoşullar
@@ -66,3 +72,9 @@ Aspose.GIS, geliştiricilerin jeo-uzamsal verilerle çalışmasına, çeşitli c
  Aspose.GIS desteğini şu adreste bulabilirsiniz:[Aspose.GIS forumu](https://forum.aspose.com/c/gis/33).
 ### 5. Aspose.GIS için nasıl geçici lisans alabilirim?
  Aspose.GIS için geçici bir lisansı şu adresten alabilirsiniz:[Burada](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Nhận loại hình học với Aspose.GIS cho .NET
 linktitle: Nhận loại hình học
 second_title: API Aspose.GIS .NET
 description: Khám phá sức mạnh của Aspose.GIS cho .NET. Tìm hiểu cách xử lý dữ liệu không gian hiệu quả trong các dự án .NET của bạn với hướng dẫn toàn diện này.
-type: docs
 weight: 23
 url: /vi/net/geometry-analysis/get-geometry-type/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Nhận loại hình học với Aspose.GIS cho .NET
+
 ## Giới thiệu
 Trong lĩnh vực phát triển .NET, Aspose.GIS đóng vai trò là công cụ mạnh mẽ để xử lý thông tin địa lý. Các chức năng phong phú của nó khiến nó trở thành lựa chọn phù hợp cho các nhà phát triển làm việc với dữ liệu không gian. Trong hướng dẫn này, chúng tôi sẽ đi sâu vào những kiến thức cơ bản về Aspose.GIS cho .NET, chia nhỏ các khái niệm chính và cung cấp hướng dẫn từng bước để giúp bạn bắt đầu một cách dễ dàng.
 ## Điều kiện tiên quyết
@@ -63,3 +69,9 @@ Có, Aspose.GIS hỗ trợ nhiều phiên bản .NET khác nhau, đảm bảo kh
  Để biết các tùy chọn cấp phép tạm thời, hãy truy cập[giấy phép tạm thời](https://purchase.aspose.com/temporary-license/) trang.
 ### Tôi có thể mua Aspose.GIS cho dự án của mình ở đâu?
  Bạn có thể mua Aspose.GIS từ trang mua hàng[đây](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Aspose.GIS ile Çoklu Çokgen Geometri Oluşturun
 linktitle: Çok Çokgen Geometri Oluşturun
 second_title: Aspose.GIS .NET API'si
 description: Aspose.GIS for .NET'i kullanarak MultiPolygon geometrisini nasıl oluşturacağınızı öğrenin. Yeni başlayanlar için adım adım kılavuz. Ücretsiz deneme mevcut.
-type: docs
 weight: 16
 url: /tr/net/geometry-creation/create-multipolygon-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS ile Çoklu Çokgen Geometri Oluşturun
+
 ## giriiş
 Coğrafi Bilgi Sistemleri (GIS) geliştirme dünyasında Aspose.GIS for .NET, jeouzaysal verileri oluşturmak, düzenlemek ve analiz etmek için güçlü bir araç olarak öne çıkıyor. İster deneyimli bir geliştirici olun ister yeni başlıyor olun, Aspose.GIS'te uzmanlaşmak projeleriniz için bir olasılıklar dünyasının kapılarını açabilir.
 ## Önkoşullar
@@ -66,3 +72,9 @@ Kesinlikle! Aspose.GIS, her düzeydeki geliştiricinin başlangıç yapmasına y
  Evet, adresinden geçici lisans alabilirsiniz.[Burada](https://purchase.aspose.com/temporary-license/) değerlendirme amaçlı.
 ### Aspose.GIS'i doğrudan satın alabilir miyim?
  Evet, Aspose.GIS'i web sitesinden satın alabilirsiniz.[Burada](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

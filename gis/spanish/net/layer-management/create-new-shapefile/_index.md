@@ -3,10 +3,16 @@ title: Crear nuevo archivo de forma
 linktitle: Crear nuevo archivo de forma
 second_title: Aspose.GIS API .NET
 description: Aprenda a crear un nuevo archivo de forma usando Aspose.GIS para .NET. Siga nuestra guía paso a paso y libere el poder de la manipulación de datos espaciales.
-type: docs
 weight: 12
 url: /es/net/layer-management/create-new-shapefile/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Crear nuevo archivo de forma
+
 ## Introducción
 Si está profundizando en el desarrollo de sistemas de información geográfica (SIG) con .NET, Aspose.GIS es su solución preferida. Esta poderosa biblioteca permite a los desarrolladores trabajar sin problemas con datos espaciales y, en este tutorial, lo guiaremos a través del proceso de creación de un nuevo archivo de forma usando Aspose.GIS para .NET.
 ## Requisitos previos
@@ -80,3 +86,9 @@ Aspose.GIS admite principalmente .NET, pero también hay versiones disponibles p
  Obtenga su licencia temporal[aquí](https://purchase.aspose.com/temporary-license/).
 ### P: ¿Dónde puedo comprar Aspose.GIS para .NET?
  Puedes comprar la biblioteca.[aquí](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

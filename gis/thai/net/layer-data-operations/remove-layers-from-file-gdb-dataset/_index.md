@@ -3,10 +3,16 @@ title: ลบเลเยอร์ออกจากชุดข้อมูล 
 linktitle: ลบเลเยอร์ออกจากชุดข้อมูล GDB ของไฟล์
 second_title: Aspose.GIS .NET API
 description: สำรวจ GIS ด้วย Aspose.GIS สำหรับ .NET! เรียนรู้วิธีลบเลเยอร์ออกจากชุดข้อมูล File GDB ทีละขั้นตอน ดาวน์โหลดตอนนี้เพื่อรับประสบการณ์ข้อมูลเชิงพื้นที่ที่ราบรื่น
-type: docs
 weight: 17
 url: /th/net/layer-data-operations/remove-layers-from-file-gdb-dataset/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# ลบเลเยอร์ออกจากชุดข้อมูล GDB ของไฟล์
+
 ## การแนะนำ
 ปลดล็อกศักยภาพสูงสุดของระบบสารสนเทศทางภูมิศาสตร์ (GIS) ด้วย Aspose.GIS สำหรับ .NET ซึ่งเป็นชุดเครื่องมืออันทรงพลังที่ออกแบบมาเพื่อลดความซับซ้อนในการจัดการข้อมูลเชิงพื้นที่และการแสดงภาพ ไม่ว่าคุณจะเป็นนักพัฒนาที่มีประสบการณ์หรือผู้ที่สนใจ GIS บทช่วยสอนนี้จะแนะนำคุณตลอดกระบวนการลบเลเยอร์ออกจากชุดข้อมูล File Geodatabase (GDB) โดยใช้ Aspose.GIS สำหรับ .NET
 ## ข้อกำหนดเบื้องต้น
@@ -71,3 +77,9 @@ Console.WriteLine(dataset.LayersCount); // 1
  ใช่ คุณสามารถซื้อใบอนุญาตชั่วคราวได้[ที่นี่](https://purchase.aspose.com/temporary-license/).
 ### มีชุดข้อมูลตัวอย่างสำหรับการปฏิบัติหรือไม่?
 สำรวจเอกสารประกอบ Aspose.GIS สำหรับชุดข้อมูลตัวอย่างและแหล่งข้อมูลเพิ่มเติม
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

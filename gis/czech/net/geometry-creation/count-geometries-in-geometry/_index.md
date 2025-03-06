@@ -3,10 +3,16 @@ title: Počítání geometrií v geometrii s Aspose.GIS
 linktitle: Počítání geometrií v geometrii
 second_title: Aspose.GIS .NET API
 description: Naučte se počítat geometrie v geometrii pomocí Aspose.GIS pro .NET. Výukový program krok za krokem s příklady kódu pro vývojáře.
-type: docs
 weight: 23
 url: /cs/net/geometry-creation/count-geometries-in-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Počítání geometrií v geometrii s Aspose.GIS
+
 ## Úvod
 Aspose.GIS for .NET je výkonný nástroj pro vývojáře, kteří chtějí začlenit geoprostorové funkce do svých aplikací .NET. Ať už vytváříte mapový software, služby založené na poloze nebo nástroje pro prostorovou analýzu, Aspose.GIS poskytuje komplexní sadu funkcí, které splní vaše potřeby. V tomto tutoriálu prozkoumáme, jak počítat geometrie v geometrii pomocí Aspose.GIS pro .NET.
 ## Předpoklady
@@ -70,3 +76,9 @@ Ano, Aspose.GIS for .NET podporuje širokou škálu formátů souborů GIS včet
  Ano, můžete si stáhnout bezplatnou zkušební verzi z[webová stránka](https://releases.aspose.com/).
 ### Kde najdu podporu pro Aspose.GIS pro .NET?
  Podporu najdete na[Fórum Aspose.GIS](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

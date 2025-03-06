@@ -3,10 +3,16 @@ title: Đặt hệ thống tham chiếu không gian lớp
 linktitle: Đặt hệ thống tham chiếu không gian lớp
 second_title: API Aspose.GIS .NET
 description: Cài đặt chính Hệ thống tham chiếu không gian lớp với Aspose.GIS cho .NET. Nâng cao các dự án GIS của bạn với hướng dẫn từng bước này.
-type: docs
 weight: 19
 url: /vi/net/layer-data-operations/set-layer-spatial-reference-system/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Đặt hệ thống tham chiếu không gian lớp
+
 ## Giới thiệu
 Trong bối cảnh rộng lớn của Hệ thống thông tin địa lý (GIS), Aspose.GIS cho .NET nổi bật như một công cụ mạnh mẽ và linh hoạt dành cho các nhà phát triển. Hướng dẫn này sẽ hướng dẫn bạn quy trình thiết lập Hệ thống tham chiếu không gian lớp bằng Aspose.GIS cho .NET. Cho dù bạn là nhà phát triển dày dạn kinh nghiệm hay người mới bắt đầu phát triển GIS, hướng dẫn từng bước này sẽ giúp bạn khai thác sức mạnh của Aspose.GIS để nâng cao khả năng xử lý dữ liệu không gian của bạn.
 ## Điều kiện tiên quyết
@@ -72,3 +78,9 @@ Tuyệt đối! Aspose.GIS rất linh hoạt và có thể được sử dụng 
  Chắc chắn! Bạn có thể tải xuống phiên bản dùng thử miễn phí[đây](https://releases.aspose.com/).
 ### Tôi có thể tìm kiếm hỗ trợ cho các truy vấn liên quan đến Aspose.GIS ở đâu?
  Đối với bất kỳ hỗ trợ hoặc thắc mắc nào, hãy truy cập[Diễn đàn Aspose.GIS](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

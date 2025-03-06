@@ -3,10 +3,16 @@ title: Lecture de GeoJSON à partir de Stream avec Aspose.GIS pour .NET
 linktitle: Lire GeoJSON à partir du flux
 second_title: API Aspose.GIS .NET
 description: Découvrez comment lire GeoJSON à partir d'un flux à l'aide d'Aspose.GIS pour .NET. Suivez notre guide étape par étape pour une intégration transparente de la géospatiale dans vos applications.
-type: docs
 weight: 14
 url: /fr/net/layer-data-operations/read-geojson-from-stream/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Lecture de GeoJSON à partir de Stream avec Aspose.GIS pour .NET
+
 ## Introduction
 Bienvenue dans notre guide étape par étape sur l'utilisation d'Aspose.GIS pour .NET pour lire GeoJSON à partir d'un flux. Aspose.GIS est une API puissante qui fournit des fonctionnalités géospatiales aux applications .NET, vous permettant de travailler de manière transparente avec différents formats SIG. Dans ce didacticiel, nous vous guiderons tout au long du processus de lecture des données GeoJSON à partir d'un flux à l'aide d'Aspose.GIS, en décomposant chaque étape pour plus de clarté et de facilité de compréhension.
 ## Conditions préalables
@@ -56,3 +62,9 @@ Oui, Aspose.GIS prend en charge divers formats SIG tels que GeoJSON, Shapefile, 
  Vous pouvez obtenir de l'aide pour Aspose.GIS sur les forums Aspose[ici](https://forum.aspose.com/c/gis/33).
 ### Ai-je besoin d’une licence temporaire pour utiliser Aspose.GIS ?
  Vous pouvez obtenir une licence temporaire pour Aspose.GIS auprès de[ici](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

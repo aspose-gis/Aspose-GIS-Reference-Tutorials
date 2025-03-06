@@ -3,10 +3,16 @@ title: 使用 SRS 创建矢量图层
 linktitle: 使用 SRS 创建矢量图层
 second_title: Aspose.GIS .NET API
 description: 探索 Aspose.GIS for .NET - 无缝 GIS 集成的关键。使用指定的空间参考系统轻松创建矢量图层。现在下载！
-type: docs
 weight: 13
 url: /zh/net/layer-management/create-vector-layer-with-srs/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 SRS 创建矢量图层
+
 ## 介绍
 Aspose.GIS for .NET 是一个功能强大的库，使开发人员能够在 .NET 应用程序中无缝地处理地理信息系统 (GIS) 数据。在本教程中，我们将重点介绍使用空间参考系统 (SRS) 创建矢量图层。读完本指南后，您将能够轻松地将 GIS 功能集成到您的 .NET 项目中。
 ## 先决条件
@@ -90,3 +96,9 @@ using (var layer = Drivers.Shapefile.OpenLayer(dataDir + "filepath_out.shp"))
 是的，您可以通过免费试用来探索 Aspose.GIS 的功能[这里](https://releases.aspose.com/).
 ### 如何购买 Aspose.GIS 许可证？
 要购买许可证，请访问[购买页面](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

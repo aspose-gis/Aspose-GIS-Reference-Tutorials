@@ -3,10 +3,16 @@ title: إنشاء هندسة متعددة النقاط باستخدام Aspose.G
 linktitle: إنشاء هندسة متعددة النقاط
 second_title: Aspose.GIS .NET API
 description: Master Aspose.GIS for .NET - تعلم كيفية إنشاء أشكال هندسية متعددة النقاط دون عناء. برنامج تعليمي شامل للمطورين.
-type: docs
 weight: 14
 url: /ar/net/geometry-creation/create-multipoint-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# إنشاء هندسة متعددة النقاط باستخدام Aspose.GIS لـ .NET
+
 ## مقدمة
 
 في عالم نظم المعلومات الجغرافية (GIS)، يبرز Aspose.GIS for .NET كأداة قوية للمطورين. إن ميزاته القوية ومرونته تجعله الخيار الأفضل للعمل مع البيانات المكانية في تطبيقات .NET. في هذا البرنامج التعليمي، سنتعمق في أساسيات Aspose.GIS for .NET، مع التركيز بشكل خاص على إنشاء أشكال هندسية متعددة النقاط. سواء كنت مطورًا متمرسًا أو بدأت للتو، سيرشدك هذا الدليل خلال كل خطوة، مما يسهل عليك فهمه وتنفيذه.
@@ -82,3 +88,9 @@ multipoint.Add(new Point(3, 4));
 
 ### س: هل يمكنني شراء ترخيص مؤقت للمشاريع قصيرة المدى؟
 ج: نعم، يمكنك الحصول على ترخيص مؤقت لاحتياجات مشروعك المحددة.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

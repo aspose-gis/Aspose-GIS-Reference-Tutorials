@@ -3,10 +3,16 @@ title: 取得所有特徵屬性值
 linktitle: 取得所有特徵屬性值
 second_title: Aspose.GIS .NET API
 description: 使用 Aspose.GIS for .NET 探索地理空間開發！無縫檢索要素屬性值。立即下載，體驗空間程式設計冒險。
-type: docs
 weight: 15
 url: /zh-hant/net/layer-interaction-and-data-access/get-all-feature-attribute-values/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 取得所有特徵屬性值
+
 ## 介紹
 歡迎來到 Aspose.GIS for .NET 的地理空間開發世界！這個強大的程式庫使開發人員能夠將 GIS 功能無縫整合到他們的 .NET 應用程式中，使空間資料處理變得輕而易舉。在這個綜合教程中，我們將探討一個基本面向 - 從特徵中檢索屬性值。讓我們深入了解吧！
 ## 先決條件
@@ -84,3 +90,9 @@ foreach (var feature in layer)
 您可以獲得用於測試目的的臨時許可證[這裡](https://purchase.aspose.com/temporary-license/).
 ### 在哪裡可以找到 Aspose.GIS 的詳細文件？
 提供全面的文檔[這裡](https://reference.aspose.com/gis/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: حساب الطول الهندسي في .NET باستخدام Aspose.GIS
 linktitle: الحصول على الطول الهندسي
 second_title: Aspose.GIS .NET API
 description: تعرف على كيفية حساب الطول الهندسي في .NET باستخدام Aspose.GIS لمعالجة البيانات المكانية بكفاءة. دليل خطوة بخطوة مع أمثلة التعليمات البرمجية.
-type: docs
 weight: 24
 url: /ar/net/geometry-analysis/get-geometry-length/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# حساب الطول الهندسي في .NET باستخدام Aspose.GIS
+
 ## مقدمة
 في مجال تطوير .NET، يقف Aspose.GIS كمجموعة أدوات قوية توفر وظائف قوية للتعامل مع أنظمة المعلومات الجغرافية (GIS). سواء كنت مطورًا متمرسًا أو مجرد دخول إلى عالم برمجة نظم المعلومات الجغرافية، يوفر Aspose.GIS for .NET مجموعة شاملة من الأدوات للعمل مع البيانات المكانية بكفاءة. في هذا البرنامج التعليمي، سنتعمق في إحدى المهام الأساسية في تطوير نظم المعلومات الجغرافية - حساب الطول الهندسي. سنستكشف خطوة بخطوة كيفية تحقيق ذلك باستخدام Aspose.GIS for .NET، وتقسيم العملية إلى أجزاء يمكن التحكم فيها لسهولة الفهم.
 ## المتطلبات الأساسية
@@ -74,3 +80,9 @@ Console.WriteLine("{0:F}", rectangle.GetLength()); // الإخراج: 4.00
  ج: يمكنك الحصول على ترخيص مؤقت من[هنا](https://purchase.aspose.com/temporary-license/).
 ### س: هل يمكنني تخصيص تنسيق الإخراج لحسابات الطول الهندسي؟
 ج: نعم، يوفر Aspose.GIS for .NET خيارات تنسيق متنوعة لتخصيص تنسيق الإخراج وفقًا لمتطلباتك.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

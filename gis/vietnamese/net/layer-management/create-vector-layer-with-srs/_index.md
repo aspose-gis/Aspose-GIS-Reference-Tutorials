@@ -3,10 +3,16 @@ title: Tạo lớp Vector với SRS
 linktitle: Tạo lớp Vector với SRS
 second_title: API Aspose.GIS .NET
 description: Khám phá Aspose.GIS cho .NET - chìa khóa để bạn tích hợp GIS liền mạch. Tạo các lớp vectơ dễ dàng với các hệ quy chiếu không gian được chỉ định. Tải ngay!
-type: docs
 weight: 13
 url: /vi/net/layer-management/create-vector-layer-with-srs/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Tạo lớp Vector với SRS
+
 ## Giới thiệu
 Aspose.GIS for .NET là một thư viện mạnh mẽ cho phép các nhà phát triển làm việc liền mạch với dữ liệu hệ thống thông tin địa lý (GIS) trong các ứng dụng .NET. Trong hướng dẫn này, chúng ta sẽ tập trung vào việc tạo một lớp vectơ bằng hệ quy chiếu không gian (SRS). Đến cuối hướng dẫn này, bạn sẽ có thể dễ dàng tích hợp các khả năng của GIS vào các dự án .NET của mình.
 ## Điều kiện tiên quyết
@@ -90,3 +96,9 @@ Tuyệt đối! Aspose.GIS for .NET rất linh hoạt và có thể được s�
  Có, bạn có thể khám phá các tính năng của Aspose.GIS bằng cách dùng thử miễn phí[đây](https://releases.aspose.com/).
 ### Làm cách nào tôi có thể mua giấy phép cho Aspose.GIS?
  Để mua giấy phép, hãy truy cập[trang mua hàng](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

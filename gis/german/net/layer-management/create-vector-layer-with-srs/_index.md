@@ -3,10 +3,16 @@ title: Erstellen Sie eine Vektorebene mit SRS
 linktitle: Erstellen Sie eine Vektorebene mit SRS
 second_title: Aspose.GIS .NET-API
 description: Entdecken Sie Aspose.GIS für .NET – Ihr Schlüssel zur nahtlosen GIS-Integration. Erstellen Sie mühelos Vektorebenen mit festgelegten räumlichen Bezugssystemen. Jetzt downloaden!
-type: docs
 weight: 13
 url: /de/net/layer-management/create-vector-layer-with-srs/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Erstellen Sie eine Vektorebene mit SRS
+
 ## Einführung
 Aspose.GIS für .NET ist eine leistungsstarke Bibliothek, die Entwicklern die nahtlose Arbeit mit Geoinformationssystemdaten (GIS) in .NET-Anwendungen ermöglicht. In diesem Tutorial konzentrieren wir uns auf die Erstellung einer Vektorebene mit einem räumlichen Bezugssystem (SRS). Am Ende dieses Leitfadens werden Sie in der Lage sein, GIS-Funktionen mühelos in Ihre .NET-Projekte zu integrieren.
 ## Voraussetzungen
@@ -90,3 +96,9 @@ Absolut! Aspose.GIS für .NET ist vielseitig und kann in Webanwendungen, Desktop
  Ja, Sie können die Funktionen von Aspose.GIS erkunden, indem Sie eine kostenlose Testversion erhalten[Hier](https://releases.aspose.com/).
 ### Wie kann ich eine Lizenz für Aspose.GIS erwerben?
  Um eine Lizenz zu erwerben, besuchen Sie die[Kaufseite](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

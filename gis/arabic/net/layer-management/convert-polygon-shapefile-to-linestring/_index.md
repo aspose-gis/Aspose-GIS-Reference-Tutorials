@@ -3,10 +3,16 @@ title: تحويل ملف الشكل المضلع إلى Linestring
 linktitle: تحويل ملف الشكل المضلع إلى Linestring
 second_title: Aspose.GIS .NET API
 description: اكتشف قوة Aspose.GIS لـ .NET وقم بتحويل ملفات الأشكال المضلعة إلى Linestrings بسهولة. تعزيز تطوير نظم المعلومات الجغرافية الخاصة بك اليوم!
-type: docs
 weight: 18
 url: /ar/net/layer-management/convert-polygon-shapefile-to-linestring/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# تحويل ملف الشكل المضلع إلى Linestring
+
 ## مقدمة
 إذا كنت تعمل مع أنظمة المعلومات الجغرافية (GIS) في .NET، فإن Aspose.GIS هي مكتبة قوية يمكنها تبسيط مهامك. في هذا البرنامج التعليمي، سنرشدك خلال عملية تحويل ملف شكل مضلع إلى سلسلة خطوط باستخدام Aspose.GIS. يمكن أن يكون هذا مفيدًا بشكل خاص عندما تحتاج إلى استخراج الميزات الخطية من البيانات متعددة الأضلاع لتطبيقات متنوعة مثل تخطيط المسار أو تحليل الشبكة.
 ## المتطلبات الأساسية
@@ -78,3 +84,9 @@ destination.Add(destinationFeature);
  نعم، يمكنك استكشاف Aspose.GIS مع نسخة تجريبية مجانية من خلال زيارة الموقع[هذا الرابط](https://releases.aspose.com/).
 ### أين يمكنني طلب المساعدة أو الدعم؟
  قم بزيارة[منتدى Aspose.GIS](https://forum.aspose.com/c/gis/33) لأي مساعدة أو استفسارات متعلقة بالدعم.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

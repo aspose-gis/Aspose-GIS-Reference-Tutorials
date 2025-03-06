@@ -3,10 +3,16 @@ title: Spécifier la variante WKT lors de la traduction à l'aide d'Aspose.GIS
 linktitle: Spécifier la variante WKT lors de la traduction
 second_title: API Aspose.GIS .NET
 description: Découvrez comment spécifier des variantes WKT dans Aspose.GIS pour .NET afin de contrôler efficacement le format et la précision de la représentation des données spatiales.
-type: docs
 weight: 19
 url: /fr/net/geometry-processing/specify-wkt-variant-on-translation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Spécifier la variante WKT lors de la traduction à l'aide d'Aspose.GIS
+
 ## Introduction
 Aspose.GIS pour .NET est une bibliothèque puissante qui permet aux développeurs de travailler sans effort avec les données du système d'information géographique (SIG) dans leurs applications .NET. L'une des fonctionnalités essentielles fournies par Aspose.GIS est la possibilité de spécifier la variante Well-Known Text (WKT) lors de la traduction, permettant aux utilisateurs de contrôler le format et la précision des représentations de données spatiales. Dans ce didacticiel, nous explorerons comment spécifier les variantes WKT étape par étape à l'aide d'Aspose.GIS pour .NET.
 ## Conditions préalables
@@ -66,3 +72,9 @@ Oui, Aspose.GIS prend en charge un large éventail de formats de données spatia
  Oui, vous pouvez télécharger une version d'essai gratuite d'Aspose.GIS à partir de[ici](https://releases.aspose.com/).
 ### Où puis-je obtenir de l'aide ou du support pour Aspose.GIS ?
  Vous pouvez publier vos requêtes ou demander de l'aide à la communauté Aspose.GIS à l'adresse[forum](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

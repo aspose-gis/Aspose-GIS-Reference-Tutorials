@@ -3,10 +3,16 @@ title: 几何创建
 linktitle: 几何创建
 second_title: Aspose.GIS .NET API
 description: 使用 Aspose.GIS for .NET 释放地理空间数据操作的潜力。深入了解我们的教程，涵盖几何创建、转换和分析。
-type: docs
 weight: 21
 url: /zh/net/geometry-creation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 几何创建
+
 
 ## 介绍
 
@@ -105,3 +111,9 @@ url: /zh/net/geometry-creation/
 了解如何利用 Aspose.GIS for .NET 轻松操作地理数据。提供综合教程。
 ### [使用 Aspose.GIS 进行坐标转换](./convert-coordinates/)
 了解如何使用 Aspose.GIS for .NET 转换坐标。提供分步指南、先决条件和常见问题解答。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

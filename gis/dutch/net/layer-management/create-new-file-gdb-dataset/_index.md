@@ -3,10 +3,16 @@ title: Maak een nieuw bestand GDB-gegevensset
 linktitle: Maak een nieuw bestand GDB-gegevensset
 second_title: Aspose.GIS .NET-API
 description: Verken Aspose.GIS voor .NET om moeiteloos GIS-datasets te maken en te beheren. Download nu voor naadloze geospatiale ontwikkeling. #Aspose #GIS
-type: docs
 weight: 10
 url: /nl/net/layer-management/create-new-file-gdb-dataset/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Maak een nieuw bestand GDB-gegevensset
+
 ## Invoering
 Op het gebied van georuimtelijke ontwikkeling onderscheidt Aspose.GIS voor .NET zich als een krachtige toolkit voor het beheren en manipuleren van gegevens uit het Geografisch Informatiesysteem (GIS). Of u nu een doorgewinterde ontwikkelaar bent of net begint aan uw reis naar GIS, deze tutorial leidt u door het proces van het maken van een nieuwe File Geodatabase (GDB)-gegevensset met behulp van Aspose.GIS voor .NET.
 ## Vereisten
@@ -84,3 +90,9 @@ Aspose.GIS voor .NET is een zelfstandige toolkit; U kunt het echter integreren m
  Ontdek de[Aspose.GIS-documentatie](https://reference.aspose.com/gis/net/) voor meer voorbeelden en gedetailleerde informatie.
 ### Vraag: Waar kan ik Aspose.GIS voor .NET kopen?
  U kunt Aspose.GIS voor .NET aanschaffen op de website[aankooppagina](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

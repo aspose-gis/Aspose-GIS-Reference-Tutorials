@@ -3,10 +3,16 @@ title: Crie geometria multiponto com Aspose.GIS para .NET
 linktitle: Criar geometria multiponto
 second_title: API Aspose.GIS .NET
 description: Domine Aspose.GIS for .NET - Aprenda a criar geometrias multiponto sem esforço. Tutorial abrangente para desenvolvedores.
-type: docs
 weight: 14
 url: /pt/net/geometry-creation/create-multipoint-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Crie geometria multiponto com Aspose.GIS para .NET
+
 ## Introdução
 
 No mundo dos Sistemas de Informação Geográfica (GIS), o Aspose.GIS for .NET se destaca como uma ferramenta poderosa para desenvolvedores. Seus recursos robustos e flexibilidade o tornam a melhor escolha para trabalhar com dados espaciais em aplicativos .NET. Neste tutorial, nos aprofundaremos nos fundamentos do Aspose.GIS for .NET, focando especificamente na criação de geometrias multiponto. Quer você seja um desenvolvedor experiente ou esteja apenas começando, este guia orientará você em cada etapa, facilitando a compreensão e a implementação.
@@ -82,3 +88,9 @@ R: Absolutamente! Aspose.GIS for .NET suporta vários formatos de dados espaciai
 
 ### P: Posso adquirir uma licença temporária para projetos de curto prazo?
 R: Sim, você pode adquirir uma licença temporária para as necessidades específicas do seu projeto.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

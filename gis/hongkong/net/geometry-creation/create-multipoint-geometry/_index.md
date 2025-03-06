@@ -3,10 +3,16 @@ title: 使用 Aspose.GIS for .NET 建立多點幾何
 linktitle: 建立多點幾何體
 second_title: Aspose.GIS .NET API
 description: 掌握 Aspose.GIS for .NET - 學習輕鬆建立多點幾何圖形。開發人員的綜合教程。
-type: docs
 weight: 14
 url: /zh-hant/net/geometry-creation/create-multipoint-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.GIS for .NET 建立多點幾何
+
 ## 介紹
 
 在地理資訊系統 (GIS) 領域，Aspose.GIS for .NET 成為開發人員的強大工具。其強大的功能和靈活性使其成為在 .NET 應用程式中處理空間資料的首選。在本教程中，我們將深入研究 Aspose.GIS for .NET 的基礎知識，特別關注創建多點幾何圖形。無論您是經驗豐富的開發人員還是剛起步，本指南都將引導您完成每個步驟，使其易於掌握和實施。
@@ -82,3 +88,9 @@ multipoint.Add(new Point(3, 4));
 
 ### Q：我可以為短期專案購買臨時許可證嗎？
 答：是的，您可以根據您的特定專案需求取得臨時許可證。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

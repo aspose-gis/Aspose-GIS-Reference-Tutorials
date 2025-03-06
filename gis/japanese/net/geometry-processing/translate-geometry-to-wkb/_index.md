@@ -3,10 +3,16 @@ title: Aspose.GIS for .NET を使用したジオメトリの WKB 形式への変
 linktitle: ジオメトリを WKB に変換
 second_title: Aspose.GIS .NET API
 description: シームレスな空間データ処理のために Aspose.GIS を使用して、.NET アプリケーションでジオメトリを Well-Known Binary (WKB) 形式に変換する方法を学びます。
-type: docs
 weight: 22
 url: /ja/net/geometry-processing/translate-geometry-to-wkb/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS for .NET を使用したジオメトリの WKB 形式への変換
+
 ## 導入
 地理情報システム (GIS) の世界では、開発者は空間データを効率的に処理するという課題に直面することがよくあります。 Aspose.GIS for .NET は、この課題に対する包括的なソリューションを提供し、.NET アプリケーション内で空間データをシームレスに操作するための強力なツールを開発者に提供します。このチュートリアルでは、GIS 開発の基本的なタスクの 1 つである、Aspose.GIS for .NET を使用したジオメトリの Well-Known Binary (WKB) 形式への変換について詳しく説明します。
 ## 前提条件
@@ -58,3 +64,9 @@ Well-Known Binary (WKB) は、GIS アプリケーションで使用されるジ�
 はい、Aspose.GIS for .NET コミュニティ フォーラムに参加できます。[ここ](https://forum.aspose.com/c/gis/33)他のユーザーとつながり、質問し、知識を共有するため。
 ### 購入する前に Aspose.GIS for .NET を試すことはできますか?
 はい、Aspose.GIS for .NET の無料試用版を次からダウンロードできます。[ここ](https://releases.aspose.com/)その機能と機能を探索します。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

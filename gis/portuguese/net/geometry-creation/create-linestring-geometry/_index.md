@@ -3,10 +3,16 @@ title: Tratamento de dados geoespaciais com Aspose.GIS para .NET
 linktitle: Criar geometria LineString
 second_title: API Aspose.GIS .NET
 description: Aprenda como trabalhar com dados geoespaciais em aplicativos .NET usando Aspose.GIS for .NET. Crie, analise e visualize mapas sem esforço.
-type: docs
 weight: 11
 url: /pt/net/geometry-creation/create-linestring-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Tratamento de dados geoespaciais com Aspose.GIS para .NET
+
 ## Introdução
 Aspose.GIS for .NET é uma biblioteca poderosa que permite aos desenvolvedores trabalhar perfeitamente com dados geoespaciais em seus aplicativos .NET. Esteja você construindo um aplicativo de mapeamento, analisando dados espaciais ou integrando serviços baseados em localização, o Aspose.GIS fornece as ferramentas necessárias para gerenciar informações geográficas com eficiência.
 ## Pré-requisitos
@@ -54,3 +60,9 @@ Sim, Aspose.GIS suporta uma ampla variedade de formatos de dados espaciais, incl
 Aspose.GIS lança atualizações regularmente para melhorar o desempenho, adicionar novos recursos e corrigir quaisquer problemas relatados.
 ### P: Existe um fórum da comunidade onde posso obter ajuda com o Aspose.GIS?
  Sim, você pode visitar o fórum Aspose.GIS para obter suporte da comunidade e se conectar com outros usuários:[Fórum Aspose.GIS](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Phân tích hình học
 linktitle: Phân tích hình học
 second_title: API Aspose.GIS .NET
 description: Khai phá tiềm năng của Aspose.GIS .NET bằng các hướng dẫn toàn diện về phân tích hình học. Nắm vững khả năng xử lý dữ liệu không gian một cách dễ dàng để phát triển GIS mạnh mẽ.
-type: docs
 weight: 22
 url: /vi/net/geometry-analysis/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Phân tích hình học
+
 ## Giới thiệu
 
 Phân tích không gian địa lý có một bước tiến nhảy vọt với Aspose.GIS cho .NET, cung cấp bộ công cụ linh hoạt để tích hợp liền mạch các chức năng không gian vào các ứng dụng .NET của bạn. Trong loạt hướng dẫn này, chúng ta sẽ khám phá các khía cạnh khác nhau của phân tích hình học, giúp bạn khai thác toàn bộ tiềm năng của dữ liệu không gian địa lý. Hãy đi sâu vào chi tiết:
@@ -89,3 +95,9 @@ Khám phá sức mạnh của Aspose.GIS cho .NET. Tìm hiểu cách xử lý d�
 Tìm hiểu cách tính độ dài hình học trong .NET bằng Aspose.GIS để xử lý dữ liệu không gian hiệu quả. Hướng dẫn từng bước với các ví dụ về mã.
 ### [Lấy điểm trên bề mặt hình học](./get-point-on-geometry-surface/)
 Tìm hiểu cách làm việc với dữ liệu không gian địa lý một cách hiệu quả bằng Aspose.GIS cho .NET. Bao gồm hướng dẫn từng bước và câu hỏi thường gặp.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

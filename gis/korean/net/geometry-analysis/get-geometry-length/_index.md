@@ -3,10 +3,16 @@ title: Aspose.GIS를 사용하여 .NET에서 형상 길이 계산
 linktitle: 기하학 길이 얻기
 second_title: Aspose.GIS .NET API
 description: 효율적인 공간 데이터 처리를 위해 Aspose.GIS를 사용하여 .NET에서 형상 길이를 계산하는 방법을 알아보세요. 코드 예제가 포함된 단계별 가이드입니다.
-type: docs
 weight: 24
 url: /ko/net/geometry-analysis/get-geometry-length/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS를 사용하여 .NET에서 형상 길이 계산
+
 ## 소개
 .NET 개발 영역에서 Aspose.GIS는 지리 정보 시스템(GIS) 처리를 위한 강력한 기능을 제공하는 강력한 툴킷으로 우뚝 서 있습니다. 숙련된 개발자이거나 GIS 프로그래밍의 세계에 입문한 경우에도 Aspose.GIS for .NET은 공간 데이터를 효율적으로 작업할 수 있는 포괄적인 도구 세트를 제공합니다. 이 튜토리얼에서는 GIS 개발의 기본 작업 중 하나인 기하학 길이 계산에 대해 자세히 살펴보겠습니다. .NET용 Aspose.GIS를 사용하여 이를 달성하는 방법을 단계별로 살펴보고 쉽게 이해할 수 있도록 프로세스를 관리 가능한 단위로 나누어 보겠습니다.
 ## 전제조건
@@ -74,3 +80,9 @@ A: .NET용 Aspose.GIS는 .NET Framework 4.6.1 이상 버전과 호환됩니다.
  A: 다음에서 임시 라이센스를 취득할 수 있습니다.[여기](https://purchase.aspose.com/temporary-license/).
 ### Q: 형상 길이 계산을 위한 출력 형식을 사용자 정의할 수 있습니까?
 A: 예, Aspose.GIS for .NET은 요구 사항에 따라 출력 형식을 사용자 정의할 수 있는 다양한 형식 지정 옵션을 제공합니다.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

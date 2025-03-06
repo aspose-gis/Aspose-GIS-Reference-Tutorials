@@ -3,10 +3,16 @@ title: फ़ीचर विशेषता मान प्राप्त क
 linktitle: फ़ीचर विशेषता मान प्राप्त करें
 second_title: Aspose.GIS .NET एपीआई
 description: .NET के लिए Aspose.GIS का अन्वेषण करें - निर्बाध GIS डेटा एकीकरण के लिए अंतिम उपकरण। अभी अपने मुफ़्त ट्रायल को डाउनलोड करें! #मान लीजिए #GIS #.NET
-type: docs
 weight: 12
 url: /hi/net/layer-interaction-and-data-access/get-feature-attribute-value/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# फ़ीचर विशेषता मान प्राप्त करें
+
 ## परिचय
 .NET के लिए Aspose.GIS की दुनिया में आपका स्वागत है, एक शक्तिशाली लाइब्रेरी जो .NET डेवलपर्स को भौगोलिक सूचना प्रणाली (GIS) डेटा के साथ निर्बाध रूप से काम करने के लिए सशक्त बनाती है। चाहे आप एक अनुभवी डेवलपर हों या जीआईएस में अपनी यात्रा शुरू कर रहे हों, यह ट्यूटोरियल आपको .NET के लिए Aspose.GIS का उपयोग करके फीचर विशेषता मान पुनर्प्राप्त करने की प्रक्रिया में मार्गदर्शन करेगा।
 ## आवश्यक शर्तें
@@ -80,3 +86,9 @@ for (int i = 0; i < layer.Count; i++)
  उत्तर: इस पर चर्चा में शामिल हों[Aspose.GIS फोरम](https://forum.aspose.com/c/gis/33) सहायता मांगने और अन्य उपयोगकर्ताओं से जुड़ने के लिए।
 ### प्रश्न: क्या Aspose.GIS का कोई निःशुल्क परीक्षण संस्करण है?
  उत्तर: निश्चित रूप से! आप नि:शुल्क परीक्षण डाउनलोड करके Aspose.GIS की विशेषताओं का पता लगा सकते हैं[यहाँ](https://releases.aspose.com/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

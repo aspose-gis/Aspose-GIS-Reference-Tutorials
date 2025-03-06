@@ -3,10 +3,16 @@ title: Konwertuj plik kształtu wielokąta na ciąg liniowy
 linktitle: Konwertuj plik kształtu wielokąta na ciąg liniowy
 second_title: Aspose.GIS .NET API
 description: Odkryj moc Aspose.GIS dla .NET i bez wysiłku konwertuj pliki kształtów wielokątnych na ciągi liniowe. Przyspiesz rozwój swojego GIS już dziś!
-type: docs
 weight: 18
 url: /pl/net/layer-management/convert-polygon-shapefile-to-linestring/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Konwertuj plik kształtu wielokąta na ciąg liniowy
+
 ## Wstęp
 Jeśli pracujesz z systemami informacji geograficznej (GIS) w .NET, Aspose.GIS to potężna biblioteka, która może uprościć Twoje zadania. W tym samouczku przeprowadzimy Cię przez proces konwersji pliku kształtu wielokąta na ciąg liniowy za pomocą Aspose.GIS. Może to być szczególnie przydatne, gdy trzeba wyodrębnić cechy liniowe z danych wielokątnych do różnych zastosowań, takich jak planowanie tras lub analiza sieci.
 ## Warunki wstępne
@@ -78,3 +84,9 @@ Tak, Aspose.GIS obsługuje różne wersje .NET, zapewniając kompatybilność z 
  Tak, możesz eksplorować Aspose.GIS w ramach bezpłatnej wersji próbnej, odwiedzając stronę[ten link](https://releases.aspose.com/).
 ### Gdzie mogę szukać pomocy lub wsparcia?
  Odwiedzić[Forum Aspose.GIS](https://forum.aspose.com/c/gis/33) w przypadku jakichkolwiek pytań związanych z pomocą lub wsparciem.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

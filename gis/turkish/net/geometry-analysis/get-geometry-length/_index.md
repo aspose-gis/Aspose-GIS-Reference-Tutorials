@@ -3,10 +3,16 @@ title: Aspose.GIS ile .NET'te Geometri Uzunluğunu Hesaplayın
 linktitle: Geometri Uzunluğunu Al
 second_title: Aspose.GIS .NET API'si
 description: Verimli mekansal veri işleme için Aspose.GIS'i kullanarak .NET'te geometri uzunluğunu nasıl hesaplayacağınızı öğrenin. Kod örnekleri içeren adım adım kılavuz.
-type: docs
 weight: 24
 url: /tr/net/geometry-analysis/get-geometry-length/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS ile .NET'te Geometri Uzunluğunu Hesaplayın
+
 ## giriiş
 .NET geliştirme alanında Aspose.GIS, coğrafi bilgi sistemlerinin (GIS) yönetimi için güçlü işlevler sunan sağlam bir araç seti olarak öne çıkıyor. İster deneyimli bir geliştirici olun ister GIS programlama dünyasına yeni adım atın, Aspose.GIS for .NET mekansal verilerle verimli bir şekilde çalışmak için kapsamlı bir araç seti sunar. Bu derste, CBS geliştirmedeki temel görevlerden biri olan geometri uzunluğunu hesaplamayı ele alacağız. Bunu Aspose.GIS for .NET kullanarak nasıl başaracağımızı adım adım inceleyeceğiz ve kolay anlaşılması için süreci yönetilebilir parçalara ayıracağız.
 ## Önkoşullar
@@ -74,3 +80,9 @@ C: Aspose.GIS for .NET, .NET Framework 4.6.1 veya sonraki sürümlerle uyumludur
  C: Şu adresten geçici bir lisans alabilirsiniz:[Burada](https://purchase.aspose.com/temporary-license/).
 ### S: Geometri uzunluğu hesaplamaları için çıktı formatını özelleştirebilir miyim?
 C: Evet, Aspose.GIS for .NET, çıktı formatını ihtiyaçlarınıza göre özelleştirmeniz için çeşitli formatlama seçenekleri sunar.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

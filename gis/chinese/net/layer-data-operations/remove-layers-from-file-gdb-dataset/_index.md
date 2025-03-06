@@ -3,10 +3,16 @@ title: 从文件 GDB 数据集中删除图层
 linktitle: 从文件 GDB 数据集中删除图层
 second_title: Aspose.GIS .NET API
 description: 使用 Aspose.GIS for .NET 探索 GIS！了解逐步从文件 GDB 数据集中删除图层。立即下载以获得无缝的空间数据体验。
-type: docs
 weight: 17
 url: /zh/net/layer-data-operations/remove-layers-from-file-gdb-dataset/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 从文件 GDB 数据集中删除图层
+
 ## 介绍
 使用 Aspose.GIS for .NET 释放地理信息系统 (GIS) 的全部潜力，Aspose.GIS for .NET 是一个强大的工具包，旨在简化空间数据操作和可视化。无论您是经验丰富的开发人员还是 GIS 爱好者，本教程都将指导您完成使用 Aspose.GIS for .NET 从文件地理数据库 (GDB) 数据集中删除图层的过程。
 ## 先决条件
@@ -71,3 +77,9 @@ Console.WriteLine(dataset.LayersCount); //1
 是的，可以购买临时许可证[这里](https://purchase.aspose.com/temporary-license/).
 ### 有没有可供练习的示例数据集？
 浏览 Aspose.GIS 文档以获取示例数据集和其他资源。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: การจัดการเลเยอร์
 linktitle: การจัดการเลเยอร์
 second_title: Aspose.GIS .NET API
 description: ปลดล็อกศักยภาพของการพัฒนาเชิงพื้นที่ด้วย Aspose.GIS สำหรับบทช่วยสอน .NET สร้าง จัดการ และจัดการชุดข้อมูล GIS ได้อย่างง่ายดาย
-type: docs
 weight: 24
 url: /th/net/layer-management/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# การจัดการเลเยอร์
+
 ## การแนะนำ
 
 Aspose.GIS สำหรับ .NET ช่วยให้นักพัฒนาสามารถเจาะลึกโลกแห่งการพัฒนาเชิงพื้นที่ที่น่าตื่นเต้น ในรายการบทช่วยสอนที่ครอบคลุมนี้ เราจะสำรวจบทช่วยสอนการจัดการเลเยอร์ต่างๆ ที่จะแนะนำคุณผ่านการปลดล็อคศักยภาพสูงสุดของ Aspose.GIS สำหรับ .NET ตั้งแต่การสร้างชุดข้อมูล File GDB ใหม่ไปจนถึงการจัดการข้อมูลเชิงพื้นที่ บทช่วยสอนเหล่านี้ครอบคลุมทั้งหมด
@@ -68,3 +74,9 @@ Aspose.GIS สำหรับ .NET คือกุญแจสำคัญใน
 สำรวจพลังของ Aspose.GIS สำหรับ .NET ในการจัดการข้อมูลเชิงพื้นที่ กรองคุณสมบัติได้อย่างง่ายดาย ปรับปรุงแอปพลิเคชัน GIS และเพิ่มประสิทธิภาพการทำงาน
 ### [แยกคุณสมบัติไปยัง GeoJSON](./extract-features-to-geojson/)
 สำรวจคำแนะนำทีละขั้นตอนเกี่ยวกับการใช้ Aspose.GIS สำหรับ .NET เพื่อแยกคุณสมบัติต่างๆ ให้กับ GeoJSON ควบคุมพลังของ GIS ได้อย่างง่ายดาย! 
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: حدد معرف الكائن وأسماء الحقول الهندسية
 linktitle: حدد معرف الكائن وأسماء الحقول الهندسية
 second_title: Aspose.GIS .NET API
 description: اكتشف سحر نظم المعلومات الجغرافية باستخدام Aspose.GIS لـ .NET! إدارة البيانات الجغرافية المكانية دون عناء. قم بالتنزيل الآن وأطلق العنان لقوة الذكاء المكاني.
-type: docs
 weight: 20
 url: /ar/net/layer-data-operations/specify-object-id-and-geometry-field-names/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# حدد معرف الكائن وأسماء الحقول الهندسية
+
 ## مقدمة
 الشروع في رحلة إلى عالم نظم المعلومات الجغرافية (GIS) باستخدام Aspose.GIS for .NET يفتح عالمًا من الإمكانيات للمطورين والمتحمسين على حدٍ سواء. تمكّنك هذه المكتبة القوية من التعامل مع البيانات الجغرافية المكانية دون عناء. في هذا البرنامج التعليمي، سنرشدك خلال عملية تحديد معرف الكائن وأسماء الحقول الهندسية، ووضع الأساس لمساعيك في نظم المعلومات الجغرافية.
 ## المتطلبات الأساسية
@@ -74,3 +80,9 @@ using (var layer = dataset.OpenLayer("layer_name"))
 ج: يدعم Aspose.GIS for .NET العديد من أنظمة الإسناد المكاني، مما يوفر المرونة لمجموعات البيانات الجغرافية المختلفة.
 ### س: أين يمكنني طلب المساعدة أو مناقشة الاستفسارات المتعلقة بـ Aspose.GIS؟
  ج: قم بزيارة منتدى Aspose.GIS[هنا](https://forum.aspose.com/c/gis/33) للدعم والمناقشات.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

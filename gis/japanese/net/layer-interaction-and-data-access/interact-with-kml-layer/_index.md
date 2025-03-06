@@ -3,10 +3,16 @@ title: 地理空間データの相互作用をマスターする
 linktitle: KML レイヤーと対話する
 second_title: Aspose.GIS .NET API
 description: Aspose.GIS を使用して、.NET での地理空間データ操作の威力を探ってください。 KML レイヤーを操作するためのステップバイステップのガイド。今すぐ無料トライアルをダウンロードしてください!
-type: docs
 weight: 17
 url: /ja/net/layer-interaction-and-data-access/interact-with-kml-layer/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 地理空間データの相互作用をマスターする
+
 ## 導入
 進化し続けるソフトウェア開発の状況において、地理空間データの可能性を活用することがますます重要になっています。 Aspose.GIS for .NET は強力な同盟国として登場し、.NET 環境で地理空間データとシームレスに対話するための強力なツールと機能のセットを提供します。このチュートリアルでは、Aspose.GIS を使用して KML レイヤーと対話し、地理空間データ操作の可能性を解き放つ複雑な機能を詳しく説明します。
 ## 前提条件
@@ -81,3 +87,9 @@ layer.Add(feature2);
 訪問[Aspose.GIS フォーラム](https://forum.aspose.com/c/gis/33)コミュニティサポートを利用するか、プレミアムサポートオプションを検討してください[ここ](https://purchase.aspose.com/buy).
 ### Aspose.GIS の一時ライセンスは利用できますか?
 はい、一時ライセンスを取得できます[ここ](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

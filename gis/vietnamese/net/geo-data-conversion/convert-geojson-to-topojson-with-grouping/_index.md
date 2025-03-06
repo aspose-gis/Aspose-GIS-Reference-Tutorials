@@ -3,10 +3,16 @@ title: Chuyển đổi GeoJSON sang TopoJSON bằng cách nhóm
 linktitle: Chuyển đổi GeoJSON sang TopoJSON bằng cách nhóm
 second_title: API Aspose.GIS .NET
 description: Tìm hiểu cách chuyển đổi GeoJSON sang TopoJSON bằng cách nhóm bằng Aspose.GIS cho .NET trong hướng dẫn toàn diện này.
-type: docs
 weight: 13
 url: /vi/net/geo-data-conversion/convert-geojson-to-topojson-with-grouping/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Chuyển đổi GeoJSON sang TopoJSON bằng cách nhóm
+
 ## Giới thiệu
 
 Chào mừng bạn đến với hướng dẫn từng bước của chúng tôi về cách sử dụng Aspose.GIS cho .NET để chuyển đổi GeoJSON sang TopoJSON bằng cách nhóm. Aspose.GIS là một API .NET mạnh mẽ cho phép các nhà phát triển làm việc liền mạch với dữ liệu địa lý. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn quy trình chuyển đổi tệp GeoJSON sang TopoJSON trong khi nhóm các tính năng dựa trên các thuộc tính được chỉ định.
@@ -93,3 +99,9 @@ Trả lời: Có, Aspose.GIS cung cấp hỗ trợ cho các định dạng dữ 
 
 ### Câu hỏi 5: Tôi có thể nhận hỗ trợ cho Aspose.GIS ở đâu?
  Trả lời: Bạn có thể nhận hỗ trợ từ diễn đàn cộng đồng Aspose.GIS[đây](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

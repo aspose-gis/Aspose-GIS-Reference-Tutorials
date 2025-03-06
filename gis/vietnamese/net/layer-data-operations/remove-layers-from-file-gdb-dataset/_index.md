@@ -3,10 +3,16 @@ title: Xóa các lớp khỏi tập dữ liệu GDB của tệp
 linktitle: Xóa các lớp khỏi tập dữ liệu GDB của tệp
 second_title: API Aspose.GIS .NET
 description: Khám phá GIS với Aspose.GIS cho .NET! Tìm hiểu cách xóa từng lớp khỏi bộ dữ liệu File GDB. Tải xuống ngay để có trải nghiệm dữ liệu không gian liền mạch.
-type: docs
 weight: 17
 url: /vi/net/layer-data-operations/remove-layers-from-file-gdb-dataset/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Xóa các lớp khỏi tập dữ liệu GDB của tệp
+
 ## Giới thiệu
 Khai phá toàn bộ tiềm năng của Hệ thống thông tin địa lý (GIS) với Aspose.GIS cho .NET, một bộ công cụ mạnh mẽ được thiết kế để đơn giản hóa thao tác và trực quan hóa dữ liệu không gian. Cho dù bạn là nhà phát triển dày dạn kinh nghiệm hay người đam mê GIS, hướng dẫn này sẽ hướng dẫn bạn quy trình xóa lớp khỏi tập dữ liệu Cơ sở dữ liệu địa lý tệp (GDB) bằng Aspose.GIS cho .NET.
 ## Điều kiện tiên quyết
@@ -71,3 +77,9 @@ Có, Aspose.GIS hỗ trợ khả năng tương tác với nhiều định dạng
  Có, có thể mua giấy phép tạm thời[đây](https://purchase.aspose.com/temporary-license/).
 ### Có bộ dữ liệu mẫu nào có sẵn để thực hành không?
 Khám phá tài liệu Aspose.GIS để biết các tập dữ liệu mẫu và các tài nguyên bổ sung.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

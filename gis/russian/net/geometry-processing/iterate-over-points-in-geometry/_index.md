@@ -3,10 +3,16 @@ title: Перебор точек в геометрии
 linktitle: Перебор точек в геометрии
 second_title: API Aspose.GIS .NET
 description: Изучите Aspose.GIS for .NET, мощный набор инструментов для плавной интеграции геопространственных функций в ваши .NET-приложения.
-type: docs
 weight: 11
 url: /ru/net/geometry-processing/iterate-over-points-in-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Перебор точек в геометрии
+
 ## Введение
 
 В области разработки географических информационных систем (ГИС) Aspose.GIS for .NET выделяется как надежный набор инструментов, позволяющий разработчикам легко интегрировать геопространственные функции в свои .NET-приложения. Эта статья представляет собой пошаговое руководство по использованию возможностей Aspose.GIS для .NET с упором на перебор точек в геометрии. К концу этого руководства вы сможете умело ориентироваться в этом процессе и обладать необходимыми знаниями для легкой реализации этой функции.
@@ -83,3 +89,9 @@ foreach (IPoint point in line)
 ### В5: Доступна ли техническая поддержка для пользователей Aspose.GIS?
 
 О: Конечно, пользователи Aspose.GIS могут получить доступ к специализированной технической поддержке через форумы, обеспечивая оперативную помощь по любым вопросам или проблемам, возникающим во время разработки.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

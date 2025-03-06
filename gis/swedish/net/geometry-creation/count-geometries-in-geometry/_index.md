@@ -3,10 +3,16 @@ title: Räkna geometrier i geometri med Aspose.GIS
 linktitle: Räkna geometrier i geometri
 second_title: Aspose.GIS .NET API
 description: Lär dig hur man räknar geometrier i en geometri med Aspose.GIS för .NET. Steg-för-steg handledning med kodexempel för utvecklare.
-type: docs
 weight: 23
 url: /sv/net/geometry-creation/count-geometries-in-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Räkna geometrier i geometri med Aspose.GIS
+
 ## Introduktion
 Aspose.GIS för .NET är ett kraftfullt verktyg för utvecklare som vill införliva geospatial funktionalitet i sina .NET-applikationer. Oavsett om du bygger kartprogram, platsbaserade tjänster eller rumsliga analysverktyg, tillhandahåller Aspose.GIS en omfattande uppsättning funktioner för att möta dina behov. I den här handledningen kommer vi att utforska hur man räknar geometrier inom en geometri med Aspose.GIS för .NET.
 ## Förutsättningar
@@ -70,3 +76,9 @@ Ja, Aspose.GIS för .NET stöder ett brett utbud av GIS-filformat inklusive SHP,
  Ja, du kan ladda ner en gratis testversion från[hemsida](https://releases.aspose.com/).
 ### Var kan jag hitta support för Aspose.GIS för .NET?
  Du kan hitta support på[Aspose.GIS forum](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

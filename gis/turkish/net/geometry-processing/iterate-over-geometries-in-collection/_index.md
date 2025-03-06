@@ -3,10 +3,16 @@ title: Koleksiyondaki Geometrileri Yineleyin
 linktitle: Koleksiyondaki Geometrileri Yineleyin
 second_title: Aspose.GIS .NET API'si
 description: .NET uygulamalarınızda coğrafi verileri sorunsuz bir şekilde yönetmek için Aspose.GIS for .NET'i nasıl kullanacağınızı öğrenin.
-type: docs
 weight: 10
 url: /tr/net/geometry-processing/iterate-over-geometries-in-collection/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Koleksiyondaki Geometrileri Yineleyin
+
 ## giriiş
 Jeo-uzamsal veri işleme ve analiz alanında Aspose.GIS for .NET, geliştiricilerin .NET uygulamaları içinde coğrafi bilgileri sorunsuz bir şekilde işlemesine, görselleştirmesine ve işlemesine olanak tanıyan güçlü bir araç seti olarak ortaya çıkıyor. Bu makale, Aspose.GIS for .NET'ten etkili bir şekilde yararlanmak için hem acemi hem de deneyimli geliştiricilere yönelik kapsamlı bir kılavuz görevi görmektedir.
 ## Önkoşullar
@@ -81,3 +87,9 @@ C: Evet, Aspose.GIS for .NET, .NET Core ve .NET Framework dahil olmak üzere çe
 C: Aslında Aspose.GIS belgeleri öğrenme ve geliştirme sürecinizi kolaylaştıracak kapsamlı örnek projeler sunuyor.
 ### S: Aspose.GIS for .NET'in işlevlerini genişletebilir miyim?
 C: Kesinlikle, özel modülleri entegre ederek ve sağlanan genişletilebilirlik özelliklerinden yararlanarak Aspose.GIS for .NET'in işlevlerini genişletebilirsiniz.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

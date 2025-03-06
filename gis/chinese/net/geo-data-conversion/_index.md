@@ -3,10 +3,16 @@ title: 地理数据转换
 linktitle: 地理数据转换
 second_title: Aspose.GIS .NET API
 description: 使用 Aspose.GIS for .NET 教程探索无缝地理数据转换。了解将 GeoJSON 转换为 TopoJSON、将 Shapefile 转换为 GeoJSON 等。
-type: docs
 weight: 20
 url: /zh/net/geo-data-conversion/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 地理数据转换
+
 ## 介绍
 
 欢迎来到使用 Aspose.GIS for .NET 轻松进行地理数据转换教程的世界。在本综合指南中，我们将深入研究各种技术来提高地理信息系统 (GIS) 数据处理效率。
@@ -45,3 +51,9 @@ url: /zh/net/geo-data-conversion/
 了解如何使用 Aspose.GIS 在 .NET 中轻松将 Shapefile 转换为 GeoJSON。请遵循我们的分步指南，实现无缝数据互操作。
 ### [将 TopoJSON 转换为 GeoJSON](./convert-topojson-to-geojson/)
 了解如何使用 Aspose.GIS for .NET 将 TopoJSON 无缝转换为 GeoJSON。按照我们的分步教程进行高效的地理数据处理。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

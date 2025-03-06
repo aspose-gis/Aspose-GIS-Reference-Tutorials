@@ -3,10 +3,16 @@ title: Dominando a rotulagem de recursos com Aspose.GIS para .NET
 linktitle: Rotular recursos no mapa
 second_title: API Aspose.GIS .NET
 description: Explore o Aspose.GIS for .NET e domine a arte da rotulagem de recursos em mapas. Aprimore suas visualizações geoespaciais sem esforço. #Aspose #GIS
-type: docs
 weight: 11
 url: /pt/net/map-rendering/label-features-on-map/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Dominando a rotulagem de recursos com Aspose.GIS para .NET
+
 ## Introdução
 No mundo da visualização de dados geoespaciais, rotular recursos em um mapa desempenha um papel crucial na transmissão eficaz de informações. Aspose.GIS for .NET fornece um kit de ferramentas poderoso para conseguir isso perfeitamente. Neste tutorial, exploraremos vários métodos de rotulagem de pontos em um mapa usando Aspose.GIS, aprimorando as visualizações do seu mapa com rótulos informativos.
 ## Pré-requisitos
@@ -126,3 +132,9 @@ Aspose.GIS é otimizado para desempenho, mas considere usar configurações base
 Sim, você pode ajustar o posicionamento da etiqueta usando opções como rotação, pontos de ancoragem e deslocamentos.
 ### Posso automatizar a geração de etiquetas em um processo em lote?
 Com certeza, você pode integrar Aspose.GIS em seus fluxos de trabalho automatizados para geração de etiquetas em lote.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: ترجمة الهندسة إلى تنسيق WKB باستخدام Aspose.G
 linktitle: ترجمة الهندسة إلى WKB
 second_title: Aspose.GIS .NET API
 description: تعرف على كيفية ترجمة الأشكال الهندسية إلى تنسيق Well-Known Binary (WKB) في تطبيقات .NET باستخدام Aspose.GIS للتعامل السلس مع البيانات المكانية.
-type: docs
 weight: 22
 url: /ar/net/geometry-processing/translate-geometry-to-wkb/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# ترجمة الهندسة إلى تنسيق WKB باستخدام Aspose.GIS لـ .NET
+
 ## مقدمة
 في عالم نظم المعلومات الجغرافية (GIS)، غالبًا ما يواجه المطورون التحدي المتمثل في التعامل بكفاءة مع البيانات المكانية. يقدم Aspose.GIS for .NET حلاً شاملاً لهذا التحدي، حيث يوفر للمطورين أدوات قوية للعمل مع البيانات المكانية بسلاسة داخل تطبيقات .NET الخاصة بهم. في هذا البرنامج التعليمي، سوف نتعمق في إحدى المهام الأساسية في تطوير نظم المعلومات الجغرافية: ترجمة الهندسة إلى تنسيق ثنائي معروف (WKB) باستخدام Aspose.GIS for .NET.
 ## المتطلبات الأساسية
@@ -58,3 +64,9 @@ File.WriteAllBytes(Path.Combine("Your Document Directory", "WkbFile.wkb"), wkb);
  نعم، يمكنك الانضمام إلى منتدى مجتمع Aspose.GIS for .NET[هنا](https://forum.aspose.com/c/gis/33) للتواصل مع المستخدمين الآخرين وطرح الأسئلة ومشاركة المعرفة.
 ### هل يمكنني تجربة Aspose.GIS for .NET قبل الشراء؟
  نعم، يمكنك تنزيل نسخة تجريبية مجانية من Aspose.GIS for .NET من[هنا](https://releases.aspose.com/) للتعرف على مميزاته وإمكانياته.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Yeni Şekil Dosyası Oluştur
 linktitle: Yeni Şekil Dosyası Oluştur
 second_title: Aspose.GIS .NET API'si
 description: Aspose.GIS for .NET kullanarak yeni bir şekil dosyasının nasıl oluşturulacağını öğrenin. Adım adım kılavuzumuzu takip edin ve mekansal veri manipülasyonunun gücünün kilidini açın.
-type: docs
 weight: 12
 url: /tr/net/layer-management/create-new-shapefile/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Yeni Şekil Dosyası Oluştur
+
 ## giriiş
 .NET ile coğrafi bilgi sistemleri (GIS) geliştirmeye çalışıyorsanız Aspose.GIS sizin çözümünüzdür. Bu güçlü kitaplık, geliştiricilerin konumsal verilerle sorunsuz bir şekilde çalışmasını sağlar ve bu eğitimde Aspose.GIS for .NET'i kullanarak yeni bir şekil dosyası oluşturma sürecinde size rehberlik edeceğiz.
 ## Önkoşullar
@@ -80,3 +86,9 @@ Aspose.GIS öncelikle .NET'i destekler ancak Java için de versiyonlar mevcuttur
  Geçici lisansınızı alın[Burada](https://purchase.aspose.com/temporary-license/).
 ### S: Aspose.GIS for .NET'i nereden satın alabilirim?
  Kütüphaneyi satın alabilirsiniz[Burada](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

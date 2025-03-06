@@ -3,10 +3,16 @@ title: 使用 Aspose.GIS for .NET 取得幾何類型
 linktitle: 取得幾何類型
 second_title: Aspose.GIS .NET API
 description: 探索 Aspose.GIS for .NET 的強大功能。透過這個綜合教程，了解如何在 .NET 專案中有效處理空間資料。
-type: docs
 weight: 23
 url: /zh-hant/net/geometry-analysis/get-geometry-type/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.GIS for .NET 取得幾何類型
+
 ## 介紹
 在.NET 開發領域，Aspose.GIS 是處理地理資訊的強大工具。其豐富的功能使其成為處理空間資料的開發人員的首選。在本教程中，我們將深入研究 Aspose.GIS for .NET 的基礎知識，分解關鍵概念並提供逐步指導以幫助您輕鬆入門。
 ## 先決條件
@@ -63,3 +69,9 @@ Console.WriteLine(geometryType); //觀點
 有關臨時許可選項，請訪問[臨時執照](https://purchase.aspose.com/temporary-license/)頁。
 ### 我可以在哪裡為我的專案購買 Aspose.GIS？
 您可以從購買頁面購買Aspose.GIS[這裡](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

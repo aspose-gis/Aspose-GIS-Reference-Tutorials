@@ -3,10 +3,16 @@ title: Calculer la distance entre les géométries avec Aspose.GIS
 linktitle: Calculer la distance entre les géométries
 second_title: API Aspose.GIS .NET
 description: Découvrez comment calculer les distances entre les géométries dans .NET à l'aide d'Aspose.GIS. Guide étape par étape avec des exemples de code. Améliorez vos applications géospatiales.
-type: docs
 weight: 21
 url: /fr/net/geometry-analysis/calculate-distance-between-geometries/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Calculer la distance entre les géométries avec Aspose.GIS
+
 ## Introduction
 Dans le domaine de la programmation géospatiale, la capacité de calculer les distances entre différentes géométries est primordiale. Qu'il s'agisse de polygones, de lignes ou de points, connaître la distance qui les sépare peut s'avérer crucial pour diverses applications, de la cartographie à la planification logistique. Aspose.GIS pour .NET fournit des outils puissants pour effectuer de tels calculs avec facilité et précision.
 ## Conditions préalables
@@ -84,3 +90,9 @@ Oui, vous pouvez travailler avec des géométries 2D et 3D à l'aide d'Aspose.GI
 Aspose.GIS pour .NET offre une interopérabilité avec d'autres bibliothèques SIG, vous permettant d'exploiter des fonctionnalités supplémentaires.
 ### Un support technique est-il disponible pour les utilisateurs d'Aspose.GIS pour .NET ?
  Oui, les utilisateurs d'Aspose.GIS pour .NET peuvent accéder au support technique via Aspose.[forums](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Aspose.GIS for .NET ile GeoJSON'u Akıştan Okumak
 linktitle: Akıştan GeoJSON'u okuyun
 second_title: Aspose.GIS .NET API'si
 description: Aspose.GIS for .NET kullanarak GeoJSON'u bir akıştan nasıl okuyacağınızı öğrenin. Jeouzamsalın uygulamalarınıza kusursuz entegrasyonu için adım adım kılavuzumuzu izleyin.
-type: docs
 weight: 14
 url: /tr/net/layer-data-operations/read-geojson-from-stream/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS for .NET ile GeoJSON'u Akıştan Okumak
+
 ## giriiş
 Bir akıştan GeoJSON'u okumak için Aspose.GIS for .NET kullanımına ilişkin adım adım kılavuzumuza hoş geldiniz. Aspose.GIS, .NET uygulamalarına coğrafi özellikler sağlayan, çeşitli GIS formatlarıyla sorunsuz bir şekilde çalışmanıza olanak tanıyan güçlü bir API'dir. Bu eğitimde, Aspose.GIS kullanarak bir akıştan GeoJSON verilerini okuma sürecinde size yol göstereceğiz ve netlik ve anlama kolaylığı için her adımı parçalara ayıracağız.
 ## Önkoşullar
@@ -56,3 +62,9 @@ Evet, Aspose.GIS, GeoJSON, Shapefile, KML ve daha fazlası gibi çeşitli GIS fo
  Aspose forumlarından Aspose.GIS için destek alabilirsiniz[Burada](https://forum.aspose.com/c/gis/33).
 ### Aspose.GIS'i kullanmak için geçici bir lisansa ihtiyacım var mı?
  Aspose.GIS için geçici bir lisansı şu adresten alabilirsiniz:[Burada](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

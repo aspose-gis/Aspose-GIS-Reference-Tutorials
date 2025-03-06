@@ -3,10 +3,16 @@ title: シェープファイルを GeoJSON に変換する
 linktitle: シェープファイルを GeoJSON に変換する
 second_title: Aspose.GIS .NET API
 description: Aspose.GIS を使用して、.NET で Shapefile を GeoJSON に簡単に変換する方法を学びます。シームレスなデータ相互運用性については、ステップバイステップのガイドに従ってください。
-type: docs
 weight: 15
 url: /ja/net/geo-data-conversion/convert-shapefile-to-geojson/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# シェープファイルを GeoJSON に変換する
+
 ## 導入
 地理情報システム (GIS) の領域では、シームレスな統合と分析のためにデータの相互運用性が重要です。一般的なタスクの 1 つは、広く使用されている地理空間ベクトル データ形式であるシェープファイルを、地理空間データ交換用の軽量形式である GeoJSON に変換することです。このチュートリアルでは、Aspose.GIS for .NET ライブラリを使用して、Shapefile を GeoJSON に簡単に変換するプロセスを説明します。
 ## 前提条件
@@ -58,3 +64,9 @@ Aspose.GIS for .NET は、.NET Framework 4.5 以降のバージョンをサポ�
 はい、Aspose.GIS for .NET は、要件に応じて変換プロセスをカスタマイズするための広範なオプションを提供します。
 ### Aspose.GIS for .NET の試用版はありますか?
 はい、Aspose.GIS for .NET の無料試用版を次のサイトから利用できます。[Webサイト](https://releases.aspose.com/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

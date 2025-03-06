@@ -3,10 +3,16 @@ title: Skapa ny fil GDB Dataset
 linktitle: Skapa ny fil GDB Dataset
 second_title: Aspose.GIS .NET API
 description: Utforska Aspose.GIS för .NET för att enkelt skapa och hantera GIS-datauppsättningar. Ladda ner nu för sömlös geospatial utveckling. #Aspose #GIS
-type: docs
 weight: 10
 url: /sv/net/layer-management/create-new-file-gdb-dataset/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Skapa ny fil GDB Dataset
+
 ## Introduktion
 Inom området för geospatial utveckling framstår Aspose.GIS för .NET som en kraftfull verktygslåda för att hantera och manipulera Geographic Information System (GIS) data. Oavsett om du är en erfaren utvecklare eller precis har börjat din resa till GIS, kommer den här handledningen att leda dig genom processen att skapa en ny File Geodatabase (GDB) dataset med Aspose.GIS för .NET.
 ## Förutsättningar
@@ -84,3 +90,9 @@ Aspose.GIS för .NET är en fristående verktygslåda; Du kan dock integrera den
  Utforska[Aspose.GIS-dokumentation](https://reference.aspose.com/gis/net/) för fler exempel och detaljerad information.
 ### F: Var kan jag köpa Aspose.GIS för .NET?
  Du kan köpa Aspose.GIS för .NET på[köpsidan](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: 將 TopoJSON 轉換為 GeoJSON
 linktitle: 將 TopoJSON 轉換為 GeoJSON
 second_title: Aspose.GIS .NET API
 description: 了解如何使用 Aspose.GIS for .NET 將 TopoJSON 無縫轉換為 GeoJSON。按照我們的分步教程進行高效率的地理資料處理。
-type: docs
 weight: 16
 url: /zh-hant/net/geo-data-conversion/convert-topojson-to-geojson/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 將 TopoJSON 轉換為 GeoJSON
+
 ## 介紹
 在本教程中，我們將深入研究使用 Aspose.GIS for .NET 從 TopoJSON 到 GeoJSON 的轉換過程。 Aspose.GIS 是一個功能強大的 API，旨在促進 .NET 應用程式中的地理資訊處理。 TopoJSON 和 GeoJSON 是廣泛使用的表示地理資料的格式，並且能夠在它們之間進行轉換對於各種 GIS 應用程式至關重要。
 ## 先決條件
@@ -53,3 +59,9 @@ VectorLayer.Convert(sampleTopoJsonPath, Drivers.TopoJson, outputFilePath, Driver
 是的，您可以從以下網站獲得免費試用[阿斯普斯網站](https://releases.aspose.com/).
 ### 如何取得 Aspose.GIS 的臨時許可證？
 您可以從以下機構獲得臨時許可證[Aspose購買頁面](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

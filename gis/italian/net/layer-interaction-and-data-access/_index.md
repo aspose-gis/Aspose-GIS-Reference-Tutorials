@@ -3,10 +3,16 @@ title: Interazione tra livelli e accesso ai dati
 linktitle: Interazione tra livelli e accesso ai dati
 second_title: API Aspose.GIS .NET
 description: Sblocca il potenziale di Aspose.GIS per .NET con i nostri tutorial sull'interazione dei livelli e sull'accesso ai dati. Esplora lo sviluppo geospaziale e manipola facilmente le funzionalità.
-type: docs
 weight: 25
 url: /it/net/layer-interaction-and-data-access/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Interazione tra livelli e accesso ai dati
+
 ## introduzione
 
 Aspose.GIS per .NET è in prima linea nello sviluppo geospaziale, offrendo una suite completa di strumenti per una perfetta integrazione dei dati GIS. In questa serie di tutorial, approfondiamo le complessità dell'interazione dei livelli e dell'accesso ai dati, sbloccando tutto il potenziale di questa potente libreria.
@@ -49,3 +55,9 @@ Esplora Aspose.GIS per .NET e interagisci facilmente con i livelli GPX. Scarica 
 Esplora la potenza della manipolazione dei dati geospaziali in .NET con Aspose.GIS. Guida passo passo per interagire con i livelli KML. 
 ### [Modifica le caratteristiche del livello](./modify-layer-features/)
 Esplora Aspose.GIS per .NET e padroneggia l'arte di modificare facilmente le funzionalità dei livelli negli shapefile. Potenzia le tue applicazioni geospaziali con precisione e facilità.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

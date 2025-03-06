@@ -3,10 +3,16 @@ title: Crea file GDB con livello singolo
 linktitle: Crea file GDB con livello singolo
 second_title: API Aspose.GIS .NET
 description: Sblocca il potenziale della gestione dei dati geospaziali in .NET con Aspose.GIS. Scopri come creare geodatabase di file e layer passo dopo passo. Scarica ora!
-type: docs
 weight: 11
 url: /it/net/layer-management/create-file-gdb-with-single-layer/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Crea file GDB con livello singolo
+
 ## introduzione
 Sei pronto a migliorare le tue applicazioni geospaziali con geodatabase e layer di file robusti? Non cercare oltre Aspose.GIS per .NET. In questo tutorial ti guideremo attraverso il processo di creazione di un file geodatabase (GDB) con un singolo livello utilizzando Aspose.GIS per .NET. Sfrutta facilmente la potenza della gestione e della visualizzazione dei dati spaziali nelle tue applicazioni .NET.
 ## Prerequisiti
@@ -70,3 +76,9 @@ Sì, Aspose.GIS per .NET può essere perfettamente integrato nei tuoi progetti .
  Visitare il[Forum Aspose.GIS](https://forum.aspose.com/c/gis/33) per il sostegno e l'assistenza della comunità.
 ### Sono disponibili licenze temporanee per Aspose.GIS per .NET?
  Sì, puoi ottenere un[licenza temporanea](https://purchase.aspose.com/temporary-license/) per Aspose.GIS per .NET.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Comprobar que la geometría contiene otra
 linktitle: Comprobar que la geometría contiene otra
 second_title: Aspose.GIS API .NET
 description: Explore Aspose.GIS para .NET, una biblioteca sólida para una integración perfecta de datos geoespaciales en sus aplicaciones .NET.
-type: docs
 weight: 14
 url: /es/net/geometry-analysis/check-geometry-contains-another/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Comprobar que la geometría contiene otra
+
 ## Introducción
 Aspose.GIS para .NET es una poderosa biblioteca que permite a los desarrolladores trabajar con datos geoespaciales sin problemas dentro de sus aplicaciones .NET. Ya sea que esté creando una aplicación de mapas, realizando análisis geoespaciales o integrando funciones basadas en la ubicación en su software, Aspose.GIS simplifica el proceso al proporcionar API intuitivas y una funcionalidad sólida.
 ## Requisitos previos
@@ -85,3 +91,9 @@ R: Aspose.GIS publica actualizaciones periódicamente para mejorar el rendimient
 R: Sí, puedes unirte al foro de la comunidad Aspose.GIS[aquí](https://forum.aspose.com/c/gis/33) para conectarse con otros usuarios, hacer preguntas y compartir sus experiencias.
 ### P5: ¿Puedo probar Aspose.GIS antes de comprarlo?
  R: Ciertamente, puedes explorar Aspose.GIS descargando la versión de prueba gratuita desde[aquí](https://releases.aspose.com/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

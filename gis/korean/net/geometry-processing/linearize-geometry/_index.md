@@ -3,10 +3,16 @@ title: 형상 선형화
 linktitle: 형상 선형화
 second_title: Aspose.GIS .NET API
 description: .NET용 Aspose.GIS를 사용하여 지리공간 데이터로 효율적으로 작업하고, 공간 분석을 수행하고, .NET 애플리케이션 내에서 지리를 조작하는 방법을 알아보세요.
-type: docs
 weight: 14
 url: /ko/net/geometry-processing/linearize-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 형상 선형화
+
 ## 소개
 .NET용 Aspose.GIS는 개발자가 .NET 애플리케이션 내에서 지리공간 데이터를 효율적으로 사용할 수 있게 해주는 강력한 라이브러리입니다. 매핑 애플리케이션을 구축하든, 공간 분석을 수행하든, 지리 데이터를 조작하든 Aspose.GIS는 작업을 완료하는 데 필요한 도구를 제공합니다.
 ## 전제조건
@@ -83,3 +89,9 @@ layer.Add(feature);
  예, 다음에서 무료 평가판을 다운로드할 수 있습니다.[Aspose 웹 사이트](https://releases.aspose.com/).
 ### Q: Aspose.GIS에 대한 도움말과 지원은 어디서 찾을 수 있나요?
  당신은 방문 할 수 있습니다[Aspose.GIS 포럼](https://forum.aspose.com/c/gis/33) 커뮤니티 및 Aspose 지원 직원의 도움을 받으십시오.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

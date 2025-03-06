@@ -3,10 +3,16 @@ title: Baca Fitur dari File Geodatabase Di Aspose.GIS
 linktitle: Baca Fitur dari File Geodatabase
 second_title: Aspose.GIS .NET API
 description: Jelajahi kekuatan Aspose.GIS untuk .NET, perpustakaan komprehensif untuk data geospasial dalam aplikasi .NET. Membaca, menulis, dan menganalisis data geospasial dengan mudah.
-type: docs
 weight: 15
 url: /id/net/layer-data-operations/read-features-from-file-geodatabase/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Baca Fitur dari File Geodatabase Di Aspose.GIS
+
 ## Perkenalan
 Dalam bidang pengembangan Sistem Informasi Geografis (GIS), Aspose.GIS untuk .NET merupakan perangkat yang tangguh, menawarkan serangkaian fungsi komprehensif untuk memanipulasi data geospasial dengan efisiensi maksimal. Memanfaatkan kekuatan Aspose.GIS, pengembang dapat dengan mudah mengintegrasikan kemampuan GIS ke dalam aplikasi .NET mereka, memungkinkan mereka membaca, menulis, dan menganalisis data geospasial dengan mudah.
 ## Prasyarat
@@ -82,3 +88,9 @@ Tentu saja, Aspose.GIS mendukung beragam format data geospasial, memungkinkan pe
  Ya, Anda dapat mengunjungi[Forum Aspose.GIS](https://forum.aspose.com/c/gis/33) untuk berinteraksi dengan masyarakat dan mendapatkan dukungan dari para ahli.
 ### Bisakah saya mencoba Aspose.GIS untuk .NET sebelum melakukan pembelian?
  Tentu saja, Anda dapat memanfaatkan uji coba gratis Aspose.GIS untuk .NET dari[halaman rilis](https://releases.aspose.com/), memungkinkan Anda menjelajahi fitur-fiturnya sebelum melakukan pembelian.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

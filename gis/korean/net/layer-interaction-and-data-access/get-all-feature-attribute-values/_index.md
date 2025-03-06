@@ -3,10 +3,16 @@ title: 모든 기능 속성 값 가져오기
 linktitle: 모든 기능 속성 값 가져오기
 second_title: Aspose.GIS .NET API
 description: .NET용 Aspose.GIS를 사용하여 지리공간 개발을 살펴보세요! 기능 속성 값을 원활하게 검색합니다. 지금 다운로드하여 공간 코딩 모험을 즐겨보세요.
-type: docs
 weight: 15
 url: /ko/net/layer-interaction-and-data-access/get-all-feature-attribute-values/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 모든 기능 속성 값 가져오기
+
 ## 소개
 .NET용 Aspose.GIS를 사용하여 지리공간 개발의 세계에 오신 것을 환영합니다! 이 강력한 라이브러리를 통해 개발자는 GIS 기능을 .NET 애플리케이션에 원활하게 통합하여 공간 데이터 처리를 쉽게 할 수 있습니다. 이 포괄적인 튜토리얼에서는 하나의 기본적인 측면, 즉 기능에서 속성 값을 검색하는 방법을 살펴보겠습니다. 뛰어들어보자!
 ## 전제조건
@@ -84,3 +90,9 @@ foreach (var feature in layer)
  테스트 목적으로 임시 라이선스를 취득할 수 있습니다.[여기](https://purchase.aspose.com/temporary-license/).
 ### Aspose.GIS에 대한 자세한 문서는 어디서 찾을 수 있나요?
  포괄적인 문서를 사용할 수 있습니다.[여기](https://reference.aspose.com/gis/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

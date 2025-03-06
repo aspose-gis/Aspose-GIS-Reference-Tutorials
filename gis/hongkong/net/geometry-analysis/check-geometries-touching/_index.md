@@ -3,10 +3,16 @@ title: 檢查幾何接觸
 linktitle: 檢查幾何接觸
 second_title: Aspose.GIS .NET API
 description: 使用 Aspose.GIS for .NET 釋放空間資料處理的強大功能。使用這個多功能工具包將空間功能無縫整合到您的應用程式中。
-type: docs
 weight: 13
 url: /zh-hant/net/geometry-analysis/check-geometries-touching/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 檢查幾何接觸
+
 ## 介紹
 在地理資訊系統 (GIS) 領域，Aspose.GIS for .NET 對於希望將空間功能無縫整合到其應用程式中的開發人員來說是一個強大的工具。憑藉其強大的功能和用戶友好的介面，Aspose.GIS 使開發人員能夠輕鬆處理空間數據，無論是分析、視覺化還是操作幾何圖形。
 ## 先決條件
@@ -64,3 +70,9 @@ Aspose.GIS支援各種.NET框架，包括.NET Framework、.NET Core和.NET Stand
 Aspose.GIS 定期接收更新和增強功能，以確保與最新技術的兼容性並解決任何報告的問題。
 ### 我可以獲得 Aspose.GIS 的臨時許可證嗎？
 是的，您可以從以下地址獲得臨時許可證[這裡](https://purchase.aspose.com/temporary-license/)評估 Aspose.GIS 在您的開發環境中的功能。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

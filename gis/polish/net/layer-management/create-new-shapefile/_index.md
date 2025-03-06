@@ -3,10 +3,16 @@ title: Utwórz nowy plik kształtu
 linktitle: Utwórz nowy plik kształtu
 second_title: Aspose.GIS .NET API
 description: Dowiedz się, jak utworzyć nowy plik kształtu przy użyciu Aspose.GIS dla .NET. Postępuj zgodnie z naszym przewodnikiem krok po kroku i odblokuj moc manipulacji danymi przestrzennymi.
-type: docs
 weight: 12
 url: /pl/net/layer-management/create-new-shapefile/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Utwórz nowy plik kształtu
+
 ## Wstęp
 Jeśli zagłębiasz się w rozwój systemów informacji geograficznej (GIS) za pomocą .NET, Aspose.GIS jest rozwiązaniem dla Ciebie. Ta potężna biblioteka umożliwia programistom bezproblemową pracę z danymi przestrzennymi, a w tym samouczku poprowadzimy Cię przez proces tworzenia nowego pliku kształtu przy użyciu Aspose.GIS dla .NET.
 ## Warunki wstępne
@@ -80,3 +86,9 @@ Aspose.GIS obsługuje przede wszystkim .NET, ale dostępne są również wersje 
  Zdobądź tymczasową licencję[Tutaj](https://purchase.aspose.com/temporary-license/).
 ### P: Gdzie mogę kupić Aspose.GIS dla .NET?
  Można kupić bibliotekę[Tutaj](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

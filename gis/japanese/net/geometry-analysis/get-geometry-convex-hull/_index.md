@@ -3,10 +3,16 @@ title: Aspose.GIS for .NET を使用して凸包を計算する
 linktitle: ジオメトリの凸包を取得
 second_title: Aspose.GIS .NET API
 description: Aspose.GIS を使用して .NET でジオメトリの凸包を計算する方法を学びます。コード例と FAQ を含む包括的なチュートリアル。
-type: docs
 weight: 20
 url: /ja/net/geometry-analysis/get-geometry-convex-hull/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS for .NET を使用して凸包を計算する
+
 ## 導入
 Aspose.GIS for .NET は、.NET アプリケーションで地理情報システム (GIS) を操作するための幅広い機能を提供する強力なライブラリです。マッピング アプリケーションの構築、空間データの分析、地理空間操作の実行のいずれの場合でも、Aspose.GIS は直感的な API と包括的な機能セットによりプロセスを簡素化します。
 ## 前提条件
@@ -79,3 +85,9 @@ for (int i = 0; i < ring.Count; ++i)
  Aspose.GIS の一時ライセンスは、指定された機関を通じて取得できます。[一時ライセンスのリンク](https://purchase.aspose.com/temporary-license/)、試用期間または短期プロジェクト中に中断することなく使用できるようになります。
 ### Q: Aspose.GIS に関連する支援を求めたり、ディスカッションに参加したりするにはどこに行けばよいですか?
 サポート、ガイダンス、コミュニティの交流については、Aspose.GIS フォーラムにアクセスしてください。[ここ](https://forum.aspose.com/c/gis/33)、他の開発者と交流したり、質問したり、洞察を共有したりできます。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

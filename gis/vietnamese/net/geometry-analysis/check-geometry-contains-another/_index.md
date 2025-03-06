@@ -3,10 +3,16 @@ title: Kiểm tra hình học có chứa hình khác
 linktitle: Kiểm tra hình học có chứa hình khác
 second_title: API Aspose.GIS .NET
 description: Khám phá Aspose.GIS cho .NET một thư viện mạnh mẽ để tích hợp dữ liệu không gian địa lý liền mạch trong các ứng dụng .NET của bạn.
-type: docs
 weight: 14
 url: /vi/net/geometry-analysis/check-geometry-contains-another/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Kiểm tra hình học có chứa hình khác
+
 ## Giới thiệu
 Aspose.GIS for .NET là một thư viện mạnh mẽ cho phép các nhà phát triển làm việc với dữ liệu không gian địa lý một cách liền mạch trong các ứng dụng .NET của họ. Cho dù bạn đang xây dựng một ứng dụng bản đồ, thực hiện phân tích không gian địa lý hay tích hợp các tính năng dựa trên vị trí vào phần mềm của mình, Aspose.GIS đều đơn giản hóa quy trình bằng cách cung cấp các API trực quan và chức năng mạnh mẽ.
 ## Điều kiện tiên quyết
@@ -85,3 +91,9 @@ Trả lời: Aspose.GIS thường xuyên phát hành các bản cập nhật đ�
 Trả lời: Có, bạn có thể tham gia diễn đàn cộng đồng Aspose.GIS[đây](https://forum.aspose.com/c/gis/33) để kết nối với những người dùng khác, đặt câu hỏi và chia sẻ trải nghiệm của bạn.
 ### Câu hỏi 5: Tôi có thể dùng thử Aspose.GIS trước khi mua không?
  Trả lời: Chắc chắn, bạn có thể khám phá Aspose.GIS bằng cách tải xuống bản dùng thử miễn phí từ[đây](https://releases.aspose.com/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

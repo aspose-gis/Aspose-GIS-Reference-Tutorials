@@ -3,10 +3,16 @@ title: Υπολογίστε την απόσταση μεταξύ γεωμετρ�
 linktitle: Υπολογίστε την απόσταση μεταξύ γεωμετριών
 second_title: Aspose.GIS .NET API
 description: Μάθετε πώς να υπολογίζετε αποστάσεις μεταξύ γεωμετριών στο .NET χρησιμοποιώντας το Aspose.GIS. Οδηγός βήμα προς βήμα με παραδείγματα κώδικα. Βελτιώστε τις γεωχωρικές εφαρμογές σας.
-type: docs
 weight: 21
 url: /el/net/geometry-analysis/calculate-distance-between-geometries/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Υπολογίστε την απόσταση μεταξύ γεωμετριών με το Aspose.GIS
+
 ## Εισαγωγή
 Στη σφαίρα του γεωχωρικού προγραμματισμού, η δυνατότητα υπολογισμού αποστάσεων μεταξύ διαφορετικών γεωμετριών είναι πρωταρχικής σημασίας. Είτε έχετε να κάνετε με πολύγωνα, γραμμές ή σημεία, η γνώση της απόστασης μεταξύ τους μπορεί να είναι κρίσιμη για διάφορες εφαρμογές, από τη χαρτογράφηση έως τον προγραμματισμό logistics. Το Aspose.GIS για .NET παρέχει ισχυρά εργαλεία για την εκτέλεση τέτοιων υπολογισμών με ευκολία και ακρίβεια.
 ## Προαπαιτούμενα
@@ -84,3 +90,9 @@ Console.WriteLine(distance.ToString("F")); // 0,63
 Το Aspose.GIS για .NET παρέχει διαλειτουργικότητα με άλλες βιβλιοθήκες GIS, επιτρέποντάς σας να αξιοποιήσετε πρόσθετες λειτουργίες.
 ### Είναι διαθέσιμη τεχνική υποστήριξη για το Aspose.GIS για χρήστες .NET;
  Ναι, οι χρήστες του Aspose.GIS για .NET μπορούν να έχουν πρόσβαση σε τεχνική υποστήριξη μέσω του Aspose[φόρουμ](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

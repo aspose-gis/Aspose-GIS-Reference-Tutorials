@@ -3,10 +3,16 @@ title: Eliminar capas del conjunto de datos File GDB
 linktitle: Eliminar capas del conjunto de datos File GDB
 second_title: Aspose.GIS API .NET
 description: ¡Explore SIG con Aspose.GIS para .NET! Aprenda a eliminar capas de conjuntos de datos de File GDB paso a paso. Descárguelo ahora para disfrutar de una experiencia de datos espaciales perfecta.
-type: docs
 weight: 17
 url: /es/net/layer-data-operations/remove-layers-from-file-gdb-dataset/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Eliminar capas del conjunto de datos File GDB
+
 ## Introducción
 Libere todo el potencial de los sistemas de información geográfica (SIG) con Aspose.GIS para .NET, un potente conjunto de herramientas diseñado para simplificar la manipulación y visualización de datos espaciales. Ya sea que sea un desarrollador experimentado o un entusiasta de los SIG, este tutorial lo guiará a través del proceso de eliminación de capas de un conjunto de datos de geodatabase de archivos (GDB) utilizando Aspose.GIS para .NET.
 ## Requisitos previos
@@ -71,3 +77,9 @@ Sí, Aspose.GIS admite la interoperabilidad con varios formatos SIG, lo que perm
  Sí, se puede comprar una licencia temporal.[aquí](https://purchase.aspose.com/temporary-license/).
 ### ¿Hay conjuntos de datos de muestra disponibles para la práctica?
 Explore la documentación de Aspose.GIS para obtener conjuntos de datos de muestra y recursos adicionales.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Geometride Tekrarlanan Noktalar
 linktitle: Geometride Tekrarlanan Noktalar
 second_title: Aspose.GIS .NET API'si
 description: Jeo-uzaysal işlevlerin .NET uygulamalarınıza kusursuz entegrasyonu için güçlü bir araç seti olan Aspose.GIS for .NET'i keşfedin.
-type: docs
 weight: 11
 url: /tr/net/geometry-processing/iterate-over-points-in-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Geometride Tekrarlanan Noktalar
+
 ## giriiş
 
 Coğrafi Bilgi Sistemleri (GIS) geliştirme alanında, Aspose.GIS for .NET, geliştiricilerin coğrafi mekansal işlevleri .NET uygulamalarına sorunsuz bir şekilde entegre etmelerine olanak sağlayan güçlü bir araç seti olarak öne çıkıyor. Bu makale, geometrideki noktalar üzerinde yinelemeye odaklanarak Aspose.GIS for .NET'in gücünden yararlanmaya yönelik adım adım bir kılavuz görevi görmektedir. Bu eğitimin sonunda, bu işlevselliği zahmetsizce uygulamak için gerekli bilgilerle donatılmış olarak süreç boyunca ustaca gezineceksiniz.
@@ -83,3 +89,9 @@ C: Evet, Aspose.GIS for .NET, özel geliştirme yoluyla genişletilebilirlik sun
 ### S5: Aspose.GIS kullanıcıları için teknik destek mevcut mu?
 
 C: Aspose.GIS kullanıcıları kesinlikle forumlar aracılığıyla özel teknik desteğe erişebilir ve geliştirme sırasında karşılaşılan herhangi bir soru veya sorun için anında yardım sağlayabilirler.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Crie uma camada vetorial com SRS
 linktitle: Crie uma camada vetorial com SRS
 second_title: API Aspose.GIS .NET
 description: Explore o Aspose.GIS for .NET - sua chave para integração perfeita com GIS. Crie camadas vetoriais sem esforço com sistemas de referência espacial especificados. Baixe Agora!
-type: docs
 weight: 13
 url: /pt/net/layer-management/create-vector-layer-with-srs/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Crie uma camada vetorial com SRS
+
 ## Introdução
 Aspose.GIS for .NET é uma biblioteca poderosa que permite aos desenvolvedores trabalhar com dados de sistemas de informações geográficas (GIS) perfeitamente em aplicativos .NET. Neste tutorial, focaremos na criação de uma camada vetorial com um sistema de referência espacial (SRS). Ao final deste guia, você será capaz de integrar facilmente recursos GIS em seus projetos .NET.
 ## Pré-requisitos
@@ -90,3 +96,9 @@ Absolutamente! Aspose.GIS for .NET é versátil e pode ser usado em aplicativos 
  Sim, você pode explorar os recursos do Aspose.GIS obtendo uma avaliação gratuita[aqui](https://releases.aspose.com/).
 ### Como posso adquirir uma licença para Aspose.GIS?
  Para adquirir uma licença, visite o[página de compra](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

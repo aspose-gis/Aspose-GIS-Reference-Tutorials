@@ -3,10 +3,16 @@ title: Aspose.GIS の OpenStreetMap XML からフィーチャを読み取る
 linktitle: OpenStreetMap XML からフィーチャを読み取る
 second_title: Aspose.GIS .NET API
 description: Aspose.GIS for .NET を使用して OpenStreetMap XML からフィーチャを読み取る方法を学びます。コード例を含むステップバイステップのチュートリアル。
-type: docs
 weight: 13
 url: /ja/net/layer-data-operations/read-features-from-openstreetmap-xml/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS の OpenStreetMap XML からフィーチャを読み取る
+
 ## 導入
 Aspose.GIS for .NET は、開発者が .NET アプリケーションで地理情報システム (GIS) データを操作できるようにする強力なライブラリです。マッピング アプリケーションの構築、空間データの分析、ソフトウェアへの GIS 機能の統合のいずれの場合でも、Aspose.GIS は開発プロセスを合理化するための幅広い機能を提供します。
 このチュートリアルでは、Aspose.GIS for .NET を使用して OpenStreetMap XML からフィーチャを読み取る方法を検討します。各ステップを管理しやすい単位に分割して、専門知識のレベルに関係なく簡単に進められるようにします。
@@ -75,3 +81,9 @@ foreach (Feature feature in layer)
 訪問できます。[Aspose.GIS フォーラム](https://forum.aspose.com/c/gis/33)サポートを求めたり、他のユーザーや開発者とつながったりするために。
 ### Aspose.GIS for .NET の一時ライセンスを取得できますか?
 はい、次のサイトから一時ライセンスをリクエストできます。[一時ライセンスのページ](https://purchase.aspose.com/temporary-license/)テストと評価の目的で。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

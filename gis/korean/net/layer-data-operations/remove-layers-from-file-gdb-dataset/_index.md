@@ -3,10 +3,16 @@ title: 파일 GDB 데이터세트에서 레이어 제거
 linktitle: 파일 GDB 데이터세트에서 레이어 제거
 second_title: Aspose.GIS .NET API
 description: .NET용 Aspose.GIS로 GIS를 탐색해보세요! File GDB 데이터세트에서 레이어를 단계별로 제거하는 방법을 알아보세요. 원활한 공간 데이터 경험을 위해 지금 다운로드하세요.
-type: docs
 weight: 17
 url: /ko/net/layer-data-operations/remove-layers-from-file-gdb-dataset/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 파일 GDB 데이터세트에서 레이어 제거
+
 ## 소개
 공간 데이터 조작 및 시각화를 단순화하도록 설계된 강력한 툴킷인 Aspose.GIS for .NET을 사용하여 지리 정보 시스템(GIS)의 잠재력을 최대한 활용하세요. 숙련된 개발자이든 GIS 매니아이든 관계없이 이 튜토리얼은 .NET용 Aspose.GIS를 사용하여 파일 지리 데이터베이스(GDB) 데이터세트에서 레이어를 제거하는 과정을 안내합니다.
 ## 전제조건
@@ -71,3 +77,9 @@ Console.WriteLine(dataset.LayersCount); // 1
  예, 임시 라이센스를 구매할 수 있습니다[여기](https://purchase.aspose.com/temporary-license/).
 ### 실습에 사용할 수 있는 샘플 데이터세트가 있나요?
 샘플 데이터세트와 추가 리소스에 대해서는 Aspose.GIS 문서를 살펴보세요.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

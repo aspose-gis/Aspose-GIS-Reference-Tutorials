@@ -3,10 +3,16 @@ title: Periksa Geometri untuk Kesetaraan
 linktitle: Periksa Geometri untuk Kesetaraan
 second_title: Aspose.GIS .NET API
 description: Pelajari cara menggunakan Aspose.GIS untuk .NET guna memeriksa geometri untuk kesetaraan dalam aplikasi .NET Anda dengan tutorial komprehensif ini.
-type: docs
 weight: 10
 url: /id/net/geometry-analysis/check-geometries-for-equality/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Periksa Geometri untuk Kesetaraan
+
 ## Perkenalan
 Aspose.GIS untuk .NET adalah perpustakaan canggih yang memungkinkan pengembang bekerja dengan data geospasial secara efisien dalam aplikasi .NET mereka. Baik Anda membuat aplikasi pemetaan, alat analisis spasial, atau mengintegrasikan fungsi geospasial ke dalam perangkat lunak yang ada, Aspose.GIS menyediakan alat yang Anda perlukan untuk menyelesaikan pekerjaan.
 ## Prasyarat
@@ -73,3 +79,9 @@ Ya, Aspose.GIS untuk .NET kompatibel dengan berbagai kerangka .NET, termasuk .NE
  Anda bisa mendapatkan dukungan dari forum komunitas Aspose.GIS[Di Sini](https://forum.aspose.com/c/gis/33).
 ### Bisakah saya membeli lisensi sementara Aspose.GIS untuk .NET?
  Ya, Anda dapat membeli lisensi sementara dari[halaman pembelian](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

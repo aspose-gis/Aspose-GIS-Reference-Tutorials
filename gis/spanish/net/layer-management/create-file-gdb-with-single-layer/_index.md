@@ -3,10 +3,16 @@ title: Crear archivo GDB con una sola capa
 linktitle: Crear archivo GDB con una sola capa
 second_title: Aspose.GIS API .NET
 description: Libere el potencial de la gestión de datos geoespaciales en .NET con Aspose.GIS. Aprenda a crear Geodatabases de Archivos y capas paso a paso. ¡Descargar ahora!
-type: docs
 weight: 11
 url: /es/net/layer-management/create-file-gdb-with-single-layer/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Crear archivo GDB con una sola capa
+
 ## Introducción
 ¿Está listo para mejorar sus aplicaciones geoespaciales con capas y geodatabases de archivos sólidas? No busque más, Aspose.GIS para .NET. En este tutorial, lo guiaremos a través del proceso de creación de una geodatabase de archivos (GDB) con una sola capa usando Aspose.GIS para .NET. Aproveche el poder de la gestión y visualización de datos espaciales en sus aplicaciones .NET sin esfuerzo.
 ## Requisitos previos
@@ -70,3 +76,9 @@ Sí, Aspose.GIS para .NET se puede integrar perfectamente en sus proyectos .NET 
  Visita el[Foro Aspose.GIS](https://forum.aspose.com/c/gis/33) para el apoyo y asistencia de la comunidad.
 ### ¿Hay licencias temporales disponibles para Aspose.GIS para .NET?
  Sí, puedes obtener un[licencia temporal](https://purchase.aspose.com/temporary-license/) para Aspose.GIS para .NET.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

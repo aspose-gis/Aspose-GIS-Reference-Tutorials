@@ -3,10 +3,16 @@ title: تفاعل الطبقة والوصول إلى البيانات
 linktitle: تفاعل الطبقة والوصول إلى البيانات
 second_title: Aspose.GIS .NET API
 description: أطلق العنان لإمكانيات Aspose.GIS لـ .NET من خلال البرامج التعليمية الخاصة بتفاعل الطبقات والوصول إلى البيانات. استكشف التطوير الجغرافي المكاني وتعامل مع الميزات بسلاسة.
-type: docs
 weight: 25
 url: /ar/net/layer-interaction-and-data-access/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# تفاعل الطبقة والوصول إلى البيانات
+
 ## مقدمة
 
 يقف Aspose.GIS for .NET في طليعة التطوير الجغرافي المكاني، حيث يقدم مجموعة شاملة من الأدوات للتكامل السلس لبيانات GIS. في هذه السلسلة من البرامج التعليمية، نتعمق في تعقيدات تفاعل الطبقات والوصول إلى البيانات، مما يفتح الإمكانات الكاملة لهذه المكتبة القوية.
@@ -49,3 +55,9 @@ url: /ar/net/layer-interaction-and-data-access/
 اكتشف قوة معالجة البيانات الجغرافية المكانية في .NET باستخدام Aspose.GIS. دليل خطوة بخطوة للتفاعل مع طبقات KML. 
 ### [تعديل ميزات الطبقة](./modify-layer-features/)
 استكشف Aspose.GIS for .NET وأتقن فن تعديل ميزات الطبقة في ملفات الأشكال دون عناء. عزز تطبيقاتك الجغرافية المكانية بدقة وسهولة.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

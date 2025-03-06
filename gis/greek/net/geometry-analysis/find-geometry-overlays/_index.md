@@ -3,10 +3,16 @@ title: Κατακτήστε τις επικαλύψεις γεωμετρίας �
 linktitle: Βρείτε επικαλύψεις γεωμετρίας
 second_title: Aspose.GIS .NET API
 description: Μάθετε πώς να εκτελείτε λειτουργίες γεωμετρικής επικάλυψης χρησιμοποιώντας το Aspose.GIS για .NET. Κύρια πράξεις τομής, ένωσης, διαφοράς και συμμετρικής διαφοράς.
-type: docs
 weight: 16
 url: /el/net/geometry-analysis/find-geometry-overlays/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Κατακτήστε τις επικαλύψεις γεωμετρίας με το Aspose.GIS για .NET
+
 ## Εισαγωγή
 Στον τομέα των Γεωγραφικών Συστημάτων Πληροφοριών (GIS), οι λειτουργίες επικάλυψης είναι θεμελιώδεις για τη χωρική ανάλυση. Επιτρέπουν τη σύγκριση και τον συνδυασμό διαφορετικών χωρικών συνόλων δεδομένων για την εξαγωγή πολύτιμων πληροφοριών. Το Aspose.GIS για .NET παρέχει ισχυρές λειτουργίες για την αποτελεσματική εκτέλεση γεωμετρικών επικαλύψεων. Σε αυτό το σεμινάριο, θα εμβαθύνουμε σε διάφορες λειτουργίες επικάλυψης, όπως Διασταύρωση, Ένωση, Διαφορά και Συμμετρική Διαφορά χρησιμοποιώντας το Aspose.GIS για .NET.
 ## Προαπαιτούμενα
@@ -108,3 +114,9 @@ PrintRing(((IPolygon)multiPolygon[1]).ExteriorRing);
  Ναι, διατίθενται προσωρινές άδειες για σκοπούς δοκιμής και αξιολόγησης. Μπορείτε να τα προμηθευτείτε από[εδώ](https://purchase.aspose.com/temporary-license/).
 ### Ε: Μπορώ να αγοράσω απευθείας το Aspose.GIS για .NET;
  Ναι, μπορείτε να αγοράσετε το Aspose.GIS για .NET από τον ιστότοπο[εδώ](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

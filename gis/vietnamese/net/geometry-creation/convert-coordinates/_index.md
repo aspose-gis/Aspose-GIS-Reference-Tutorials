@@ -3,10 +3,16 @@ title: Chuyển đổi tọa độ với Aspose.GIS
 linktitle: Chuyển đổi tọa độ
 second_title: API Aspose.GIS .NET
 description: Tìm hiểu cách chuyển đổi tọa độ bằng Aspose.GIS cho .NET. Hướng dẫn từng bước, điều kiện tiên quyết và Câu hỏi thường gặp được cung cấp.
-type: docs
 weight: 25
 url: /vi/net/geometry-creation/convert-coordinates/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Chuyển đổi tọa độ với Aspose.GIS
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ đi sâu vào thế giới hệ thống thông tin địa lý (GIS) bằng cách sử dụng thư viện Aspose.GIS mạnh mẽ cho .NET. Aspose.GIS là bộ công cụ toàn diện cho phép các nhà phát triển làm việc với dữ liệu không gian một cách dễ dàng. Cho dù bạn là nhà phát triển dày dạn kinh nghiệm hay mới bắt đầu, hướng dẫn này sẽ hướng dẫn bạn quy trình sử dụng Aspose.GIS để chuyển đổi tọa độ một cách hiệu quả.
 ## Điều kiện tiên quyết
@@ -66,3 +72,9 @@ Aspose.GIS chủ yếu nhắm đến các nhà phát triển .NET, nhưng nó cu
  Có, giấy phép tạm thời có thể được lấy từ[trang giấy phép tạm thời](https://purchase.aspose.com/temporary-license/).
 ### Tôi có thể mua Aspose.GIS ở đâu?
  Bạn có thể mua Aspose.GIS từ[trang mua hàng](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

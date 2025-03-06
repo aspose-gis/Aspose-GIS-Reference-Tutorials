@@ -3,10 +3,16 @@ title: Buat Kumpulan Data GDB File Baru
 linktitle: Buat Kumpulan Data GDB File Baru
 second_title: Aspose.GIS .NET API
 description: Jelajahi Aspose.GIS untuk .NET untuk membuat dan mengelola kumpulan data GIS dengan mudah. Unduh sekarang untuk pengembangan geospasial yang lancar. #Asumsikan #GIS
-type: docs
 weight: 10
 url: /id/net/layer-management/create-new-file-gdb-dataset/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Buat Kumpulan Data GDB File Baru
+
 ## Perkenalan
 Dalam bidang pengembangan geospasial, Aspose.GIS untuk .NET menonjol sebagai perangkat yang ampuh untuk mengelola dan memanipulasi data Sistem Informasi Geografis (GIS). Baik Anda seorang pengembang berpengalaman atau baru memulai perjalanan Anda ke GIS, tutorial ini akan memandu Anda melalui proses pembuatan kumpulan data File Geodatabase (GDB) baru menggunakan Aspose.GIS untuk .NET.
 ## Prasyarat
@@ -84,3 +90,9 @@ Aspose.GIS untuk .NET adalah perangkat mandiri; namun, Anda dapat mengintegrasik
  Jelajahi[Dokumentasi Aspose.GIS](https://reference.aspose.com/gis/net/) untuk lebih banyak contoh dan informasi rinci.
 ### T: Di mana saya bisa membeli Aspose.GIS untuk .NET?
  Anda dapat membeli Aspose.GIS untuk .NET di[halaman pembelian](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

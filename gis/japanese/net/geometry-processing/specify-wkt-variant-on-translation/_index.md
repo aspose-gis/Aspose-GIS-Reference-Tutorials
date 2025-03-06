@@ -3,10 +3,16 @@ title: Aspose.GIS を使用して翻訳時に WKT バリアントを指定する
 linktitle: 翻訳時に WKT バリアントを指定する
 second_title: Aspose.GIS .NET API
 description: Aspose.GIS for .NET で WKT バリアントを指定して、空間データ表現の形式と精度を効果的に制御する方法を学びます。
-type: docs
 weight: 19
 url: /ja/net/geometry-processing/specify-wkt-variant-on-translation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS を使用して翻訳時に WKT バリアントを指定する
+
 ## 導入
 Aspose.GIS for .NET は、開発者が .NET アプリケーションで地理情報システム (GIS) データを簡単に操作できるようにする強力なライブラリです。 Aspose.GIS が提供する重要な機能の 1 つは、翻訳中に Well-Known Text (WKT) バリアントを指定する機能であり、ユーザーが空間データ表現の形式と精度を制御できるようになります。このチュートリアルでは、Aspose.GIS for .NET を使用して WKT バリアントを指定する方法を段階的に説明します。
 ## 前提条件
@@ -66,3 +72,9 @@ Console.WriteLine("Flat3: " + point.AsText(WktVariant.Iso, NumericFormat.Flat(3)
 はい、Aspose.GIS の無料試用版を次のサイトからダウンロードできます。[ここ](https://releases.aspose.com/).
 ### Aspose.GIS のヘルプやサポートはどこで入手できますか?
 クエリを投稿したり、Aspose.GIS コミュニティから支援を求めることができます。[フォーラム](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

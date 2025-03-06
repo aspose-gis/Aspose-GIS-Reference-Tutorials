@@ -3,10 +3,16 @@ title: اقرأ الميزات من OpenStreetMap XML في Aspose.GIS
 linktitle: قراءة الميزات من OpenStreetMap XML
 second_title: Aspose.GIS .NET API
 description: تعرف على كيفية قراءة الميزات من OpenStreetMap XML باستخدام Aspose.GIS لـ .NET. برنامج تعليمي خطوة بخطوة مع أمثلة التعليمات البرمجية.
-type: docs
 weight: 13
 url: /ar/net/layer-data-operations/read-features-from-openstreetmap-xml/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# اقرأ الميزات من OpenStreetMap XML في Aspose.GIS
+
 ## مقدمة
 Aspose.GIS for .NET هي مكتبة قوية تتيح للمطورين العمل مع بيانات نظام المعلومات الجغرافية (GIS) في تطبيقات .NET الخاصة بهم. سواء كنت تقوم بإنشاء تطبيق رسم خرائط، أو تحليل البيانات المكانية، أو دمج وظائف نظم المعلومات الجغرافية في برنامجك، فإن Aspose.GIS يوفر مجموعة واسعة من الميزات لتبسيط عملية التطوير الخاصة بك.
 في هذا البرنامج التعليمي، سوف نستكشف كيفية قراءة الميزات من OpenStreetMap XML باستخدام Aspose.GIS for .NET. سنقوم بتقسيم كل خطوة إلى أجزاء يمكن التحكم فيها، مما يضمن أنه يمكنك المتابعة بسهولة بغض النظر عن مستوى خبرتك.
@@ -75,3 +81,9 @@ foreach (Feature feature in layer)
  يمكنك زيارة[منتدى Aspose.GIS](https://forum.aspose.com/c/gis/33) للحصول على المساعدة والتواصل مع المستخدمين والمطورين الآخرين.
 ### هل يمكنني الحصول على ترخيص مؤقت لـ Aspose.GIS for .NET؟
  نعم يمكنك طلب ترخيص مؤقت من[صفحة الترخيص المؤقتة](https://purchase.aspose.com/temporary-license/) لأغراض الاختبار والتقييم.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

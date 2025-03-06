@@ -3,10 +3,16 @@ title: Geben Sie Objekt-ID und Geometriefeldnamen an
 linktitle: Geben Sie Objekt-ID und Geometriefeldnamen an
 second_title: Aspose.GIS .NET-API
 description: Entdecken Sie die GIS-Magie mit Aspose.GIS für .NET! Verwalten Sie Geodaten mühelos. Laden Sie es jetzt herunter und entfesseln Sie die Kraft der räumlichen Intelligenz.
-type: docs
 weight: 20
 url: /de/net/layer-data-operations/specify-object-id-and-geometry-field-names/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Geben Sie Objekt-ID und Geometriefeldnamen an
+
 ## Einführung
 Wenn Sie sich mit Aspose.GIS für .NET auf eine Reise in die Welt der geografischen Informationssysteme (GIS) begeben, eröffnen sich Entwicklern und Enthusiasten gleichermaßen eine Welt voller Möglichkeiten. Diese leistungsstarke Bibliothek ermöglicht Ihnen den mühelosen Umgang mit Geodaten. In diesem Tutorial führen wir Sie durch den Prozess der Angabe von Objekt-ID- und Geometriefeldnamen und legen so den Grundstein für Ihre GIS-Bemühungen.
 ## Voraussetzungen
@@ -74,3 +80,9 @@ A: Ja, Aspose.GIS für .NET eignet sich sowohl für Desktop- als auch für Weban
 A: Aspose.GIS für .NET unterstützt verschiedene Raumbezugssysteme und bietet so Flexibilität für verschiedene geografische Datensätze.
 ### F: Wo kann ich Hilfe suchen oder Aspose.GIS-bezogene Fragen besprechen?
  A: Besuchen Sie das Aspose.GIS-Forum[Hier](https://forum.aspose.com/c/gis/33) für Unterstützung und Diskussionen.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

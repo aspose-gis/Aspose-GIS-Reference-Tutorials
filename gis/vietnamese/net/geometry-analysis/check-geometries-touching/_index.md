@@ -3,10 +3,16 @@ title: Kiểm tra hình học chạm
 linktitle: Kiểm tra hình học chạm
 second_title: API Aspose.GIS .NET
 description: Khai phá sức mạnh của việc xử lý dữ liệu không gian với Aspose.GIS cho .NET. Tích hợp liền mạch các chức năng không gian vào ứng dụng của bạn bằng bộ công cụ đa năng này.
-type: docs
 weight: 13
 url: /vi/net/geometry-analysis/check-geometries-touching/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Kiểm tra hình học chạm
+
 ## Giới thiệu
 Trong lĩnh vực Hệ thống thông tin địa lý (GIS), Aspose.GIS cho .NET nổi bật như một công cụ mạnh mẽ dành cho các nhà phát triển muốn kết hợp các chức năng không gian vào ứng dụng của họ một cách liền mạch. Với các tính năng mạnh mẽ và giao diện thân thiện với người dùng, Aspose.GIS trao quyền cho các nhà phát triển làm việc với dữ liệu không gian một cách dễ dàng, cho dù đó là phân tích, trực quan hóa hay thao tác hình học.
 ## Điều kiện tiên quyết
@@ -64,3 +70,9 @@ Aspose.GIS hỗ trợ nhiều khung .NET khác nhau, bao gồm .NET Framework, .
 Aspose.GIS thường xuyên nhận được các bản cập nhật và cải tiến để đảm bảo khả năng tương thích với các công nghệ mới nhất và giải quyết mọi vấn đề được báo cáo.
 ### Tôi có thể xin giấy phép tạm thời cho Aspose.GIS không?
  Có, bạn có thể xin giấy phép tạm thời từ[đây](https://purchase.aspose.com/temporary-license/) để đánh giá khả năng của Aspose.GIS trong môi trường phát triển của bạn.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

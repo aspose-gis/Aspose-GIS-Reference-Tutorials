@@ -3,10 +3,16 @@ title: Specificeer WKT-variant op vertaling met Aspose.GIS
 linktitle: Geef WKT-variant op vertaling op
 second_title: Aspose.GIS .NET-API
 description: Leer hoe u WKT-varianten kunt specificeren in Aspose.GIS voor .NET om het formaat en de precisie van de ruimtelijke gegevensrepresentatie effectief te beheren.
-type: docs
 weight: 19
 url: /nl/net/geometry-processing/specify-wkt-variant-on-translation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Specificeer WKT-variant op vertaling met Aspose.GIS
+
 ## Invoering
 Aspose.GIS voor .NET is een krachtige bibliotheek waarmee ontwikkelaars moeiteloos met GIS-gegevens (geografisch informatiesysteem) kunnen werken in hun .NET-toepassingen. Een van de essentiële kenmerken van Aspose.GIS is de mogelijkheid om tijdens de vertaling de variant Well-Known Text (WKT) te specificeren, waardoor gebruikers het formaat en de precisie van representaties van ruimtelijke gegevens kunnen bepalen. In deze tutorial onderzoeken we stap voor stap hoe u WKT-varianten kunt specificeren met behulp van Aspose.GIS voor .NET.
 ## Vereisten
@@ -66,3 +72,9 @@ Ja, Aspose.GIS ondersteunt een breed scala aan indelingen voor ruimtelijke gegev
  Ja, u kunt een gratis proefversie van Aspose.GIS downloaden van[hier](https://releases.aspose.com/).
 ### Waar kan ik hulp of ondersteuning krijgen voor Aspose.GIS?
  U kunt uw vragen posten of hulp zoeken bij de Aspose.GIS-gemeenschap op de[forum](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

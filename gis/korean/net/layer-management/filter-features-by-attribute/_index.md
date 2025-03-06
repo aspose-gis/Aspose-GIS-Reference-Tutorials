@@ -3,10 +3,16 @@ title: 속성별로 기능 필터링
 linktitle: 속성별로 기능 필터링
 second_title: Aspose.GIS .NET API
 description: 공간 데이터 조작에서 .NET용 Aspose.GIS의 강력한 기능을 살펴보세요. 기능을 손쉽게 필터링하고, GIS 애플리케이션을 강화하고, 생산성을 높이세요.
-type: docs
 weight: 21
 url: /ko/net/layer-management/filter-features-by-attribute/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 속성별로 기능 필터링
+
 ## 소개
 GIS(지리 정보 시스템)의 역동적인 세계에서 .NET용 Aspose.GIS는 개발자가 공간 데이터를 원활하게 조작하고 분석할 수 있도록 지원하는 강력한 도구로 돋보입니다. 노련한 GIS 전문가이든 가능성을 탐구하고자 하는 호기심 많은 개발자이든 이 튜토리얼은 .NET 환경에서 Aspose.GIS를 사용하는 필수 단계를 안내합니다.
 ## 전제조건
@@ -57,3 +63,9 @@ foreach (Feature feature in layer.WhereGreater("dob", new DateTime(1982, 1, 1, 0
  임시 라이센스 취득[여기](https://purchase.aspose.com/temporary-license/).
 ### 다른 Aspose.GIS 기능에 사용할 수 있는 단계별 튜토리얼이 있나요?
  예, 다음에서 더 많은 튜토리얼과 문서를 찾을 수 있습니다.[Aspose.GIS 참조](https://reference.aspose.com/gis/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

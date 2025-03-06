@@ -3,10 +3,16 @@ title: Usuń warstwy ze zbioru danych pliku GDB
 linktitle: Usuń warstwy ze zbioru danych pliku GDB
 second_title: Aspose.GIS .NET API
 description: Eksploruj GIS z Aspose.GIS dla .NET! Dowiedz się, jak krok po kroku usuwać warstwy ze zbiorów danych File GDB. Pobierz teraz, aby bezproblemowo korzystać z danych przestrzennych.
-type: docs
 weight: 17
 url: /pl/net/layer-data-operations/remove-layers-from-file-gdb-dataset/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Usuń warstwy ze zbioru danych pliku GDB
+
 ## Wstęp
 Odblokuj pełny potencjał systemów informacji geograficznej (GIS) dzięki Aspose.GIS dla .NET, potężnemu zestawowi narzędzi zaprojektowanemu w celu uproszczenia manipulacji i wizualizacji danych przestrzennych. Niezależnie od tego, czy jesteś doświadczonym programistą, czy entuzjastą GIS, ten samouczek poprowadzi Cię przez proces usuwania warstw ze zbioru danych Geobazy Plikowej (GDB) przy użyciu Aspose.GIS dla .NET.
 ## Warunki wstępne
@@ -71,3 +77,9 @@ Tak, Aspose.GIS obsługuje interoperacyjność z różnymi formatami GIS, umożl
  Tak, można kupić licencję tymczasową[Tutaj](https://purchase.aspose.com/temporary-license/).
 ### Czy są dostępne przykładowe zbiory danych do wykorzystania w praktyce?
 Zapoznaj się z dokumentacją Aspose.GIS, aby zapoznać się z przykładowymi zbiorami danych i dodatkowymi zasobami.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

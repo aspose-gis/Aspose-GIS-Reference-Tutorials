@@ -3,10 +3,16 @@ title: Aspose.GIS for .NET を使用してポリゴンをラインに変換す�
 linktitle: 多角形を線に置き換える
 second_title: Aspose.GIS .NET API
 description: Aspose.GIS for .NET を使用してポリゴンをラインに置き換える方法を学びます。 GIS データ操作スキルを簡単に向上させます。
-type: docs
 weight: 16
 url: /ja/net/geometry-processing/replace-polygons-with-lines/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS for .NET を使用してポリゴンをラインに変換する
+
 ## 導入
 地理情報システム (GIS) 開発の世界では、Aspose.GIS for .NET は空間データを操作するための強力なツールセットとして際立っています。経験豊富な開発者であっても、GIS プログラミングを始めたばかりであっても、Aspose.GIS for .NET は地理データを効率的に操作および分析するための包括的な機能セットを提供します。
 ## 前提条件
@@ -54,3 +60,9 @@ Aspose.GIS for .NET は、ポリゴンを線に置き換える機能など、空
 はい、次から一時ライセンスを取得できます。[ここ](https://purchase.aspose.com/temporary-license/).
 ### Aspose.GIS for .NET は初心者と経験豊富な開発者の両方に適していますか?
 もちろん、Aspose.GIS for .NET はあらゆるレベルの開発者に対応し、包括的なドキュメントとサポートを提供します。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

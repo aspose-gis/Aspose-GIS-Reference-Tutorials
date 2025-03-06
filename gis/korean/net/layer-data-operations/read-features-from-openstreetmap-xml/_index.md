@@ -3,10 +3,16 @@ title: Aspose.GIS의 OpenStreetMap XML에서 기능 읽기
 linktitle: OpenStreetMap XML에서 기능 읽기
 second_title: Aspose.GIS .NET API
 description: .NET용 Aspose.GIS를 사용하여 OpenStreetMap XML의 기능을 읽는 방법을 알아보세요. 코드 예제가 포함된 단계별 튜토리얼입니다.
-type: docs
 weight: 13
 url: /ko/net/layer-data-operations/read-features-from-openstreetmap-xml/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS의 OpenStreetMap XML에서 기능 읽기
+
 ## 소개
 Aspose.GIS for .NET은 개발자가 .NET 애플리케이션에서 GIS(지리 정보 시스템) 데이터로 작업할 수 있는 강력한 라이브러리입니다. 매핑 애플리케이션을 구축하든, 공간 데이터를 분석하든, GIS 기능을 소프트웨어에 통합하든 Aspose.GIS는 개발 프로세스를 간소화할 수 있는 광범위한 기능을 제공합니다.
 이 튜토리얼에서는 .NET용 Aspose.GIS를 사용하여 OpenStreetMap XML에서 기능을 읽는 방법을 살펴보겠습니다. 각 단계를 관리 가능한 단위로 나누어 귀하의 전문 지식 수준에 관계없이 쉽게 따라갈 수 있도록 하겠습니다.
@@ -75,3 +81,9 @@ foreach (Feature feature in layer)
  당신은 방문 할 수 있습니다[Aspose.GIS 포럼](https://forum.aspose.com/c/gis/33) 도움을 받고 다른 사용자 및 개발자와 연결하기 위해.
 ### .NET용 Aspose.GIS의 임시 라이선스를 얻을 수 있나요?
  예, 임시 라이센스를 요청할 수 있습니다.[임시 라이센스 페이지](https://purchase.aspose.com/temporary-license/) 테스트 및 평가 목적으로.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

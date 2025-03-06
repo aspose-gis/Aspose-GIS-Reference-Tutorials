@@ -3,10 +3,16 @@ title: Aspose.GIS for .NET ile Dışbükey Gövdeyi Hesaplayın
 linktitle: Geometri Dışbükey Gövde Alın
 second_title: Aspose.GIS .NET API'si
 description: Aspose.GIS'i kullanarak .NET'te bir geometrinin dışbükey gövdesini nasıl hesaplayacağınızı öğrenin. Kod örnekleri ve SSS içeren kapsamlı eğitim.
-type: docs
 weight: 20
 url: /tr/net/geometry-analysis/get-geometry-convex-hull/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS for .NET ile Dışbükey Gövdeyi Hesaplayın
+
 ## giriiş
 Aspose.GIS for .NET, .NET uygulamalarında coğrafi bilgi sistemleri (GIS) ile çalışmak için geniş bir işlevsellik yelpazesi sunan güçlü bir kütüphanedir. İster haritalama uygulamaları oluşturuyor olun, ister mekansal verileri analiz ediyor, ister jeouzaysal operasyonlar gerçekleştiriyor olun, Aspose.GIS, sezgisel API'si ve kapsamlı özellik seti ile süreci basitleştirir.
 ## Önkoşullar
@@ -79,3 +85,9 @@ Kesinlikle Aspose.GIS, şekil dosyaları, GeoJSON, KML ve daha fazlası dahil ol
  Aspose.GIS için geçici lisanslar belirlenen adresten edinilebilir.[geçici lisans bağlantısı](https://purchase.aspose.com/temporary-license/)Deneme sürelerinde veya kısa süreli projelerde kesintisiz kullanıma olanak sağlar.
 ### S: Aspose.GIS ile ilgili nereden yardım alabilirim veya tartışmalara katılabilirim?
 Destek, rehberlik ve topluluk etkileşimi için Aspose.GIS forumunu ziyaret edin[Burada](https://forum.aspose.com/c/gis/33), diğer geliştiricilerle iletişim kurabileceğiniz, sorular sorabileceğiniz ve içgörüleri paylaşabileceğiniz yer.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

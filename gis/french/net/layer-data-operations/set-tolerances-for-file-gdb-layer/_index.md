@@ -3,10 +3,16 @@ title: Définir les tolérances pour la couche fichier GDB
 linktitle: Définir les tolérances pour la couche fichier GDB
 second_title: API Aspose.GIS .NET
 description: Explorez Aspose.GIS pour .NET et maîtrisez la manipulation des données géospatiales. Définissez les tolérances sans effort grâce à des conseils étape par étape. Améliorez vos applications .NET.
-type: docs
 weight: 22
 url: /fr/net/layer-data-operations/set-tolerances-for-file-gdb-layer/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Définir les tolérances pour la couche fichier GDB
+
 ## Introduction
 Bienvenue dans le monde de la manipulation de données géospatiales à l'aide d'Aspose.GIS pour .NET ! Si vous souhaitez améliorer vos compétences dans la gestion des informations géographiques dans vos applications .NET, vous êtes au bon endroit. Dans ce guide complet, nous approfondirons les détails complexes de la définition des tolérances pour une couche de géodatabase fichier (GDB), en vous fournissant des informations pratiques et des instructions étape par étape.
 ## Conditions préalables
@@ -69,3 +75,9 @@ Oui, Aspose.GIS prend en charge l'interopérabilité, vous permettant de l'inté
  Oui, vous pouvez obtenir un[permis temporaire](https://purchase.aspose.com/temporary-license/) pour les tests et l'évaluation.
 ### Où puis-je acheter la licence Aspose.GIS pour .NET ?
  Vous pouvez acheter la licence auprès du[page d'achat](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Maak een vectorlaag met SRS
 linktitle: Maak een vectorlaag met SRS
 second_title: Aspose.GIS .NET-API
 description: Ontdek Aspose.GIS voor .NET - uw sleutel tot naadloze GIS-integratie. Creëer moeiteloos vectorlagen met gespecificeerde ruimtelijke referentiesystemen. Download nu!
-type: docs
 weight: 13
 url: /nl/net/layer-management/create-vector-layer-with-srs/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Maak een vectorlaag met SRS
+
 ## Invoering
 Aspose.GIS voor .NET is een krachtige bibliotheek waarmee ontwikkelaars naadloos kunnen werken met GIS-gegevens (geografisch informatiesysteem) in .NET-toepassingen. In deze zelfstudie concentreren we ons op het maken van een vectorlaag met een ruimtelijk referentiesysteem (SRS). Aan het einde van deze handleiding kunt u moeiteloos GIS-mogelijkheden integreren in uw .NET-projecten.
 ## Vereisten
@@ -90,3 +96,9 @@ Absoluut! Aspose.GIS voor .NET is veelzijdig en kan worden gebruikt in webapplic
  Ja, u kunt de functies van Aspose.GIS verkennen door een gratis proefperiode aan te vragen[hier](https://releases.aspose.com/).
 ### Hoe kan ik een licentie voor Aspose.GIS aanschaffen?
  Als u een licentie wilt kopen, gaat u naar de[aankooppagina](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

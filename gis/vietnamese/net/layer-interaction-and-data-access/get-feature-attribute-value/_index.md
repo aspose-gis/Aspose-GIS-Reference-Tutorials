@@ -3,10 +3,16 @@ title: Nhận giá trị thuộc tính tính năng
 linktitle: Nhận giá trị thuộc tính tính năng
 second_title: API Aspose.GIS .NET
 description: Khám phá Aspose.GIS cho .NET - công cụ tối ưu để tích hợp dữ liệu GIS liền mạch. Tải về dùng thử ngay! #Aspose #GIS #.NET
-type: docs
 weight: 12
 url: /vi/net/layer-interaction-and-data-access/get-feature-attribute-value/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Nhận giá trị thuộc tính tính năng
+
 ## Giới thiệu
 Chào mừng bạn đến với thế giới của Aspose.GIS cho .NET, một thư viện mạnh mẽ hỗ trợ các nhà phát triển .NET làm việc liền mạch với dữ liệu hệ thống thông tin địa lý (GIS). Cho dù bạn là nhà phát triển dày dạn kinh nghiệm hay mới bắt đầu hành trình vào GIS, hướng dẫn này sẽ hướng dẫn bạn quy trình truy xuất các giá trị thuộc tính đối tượng bằng Aspose.GIS cho .NET.
 ## Điều kiện tiên quyết
@@ -80,3 +86,9 @@ Chúc mừng! Bạn đã học thành công cách sử dụng Aspose.GIS cho .NE
  A: Tham gia thảo luận về[Diễn đàn Aspose.GIS](https://forum.aspose.com/c/gis/33) để tìm kiếm sự giúp đỡ và kết nối với những người dùng khác.
 ### Câu hỏi: Có phiên bản dùng thử miễn phí của Aspose.GIS không?
  Đ: Chắc chắn rồi! Bạn có thể khám phá các tính năng của Aspose.GIS bằng cách tải xuống bản dùng thử miễn phí từ[đây](https://releases.aspose.com/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

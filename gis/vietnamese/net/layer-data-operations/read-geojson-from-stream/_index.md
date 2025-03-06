@@ -3,10 +3,16 @@ title: Đọc GeoJSON từ Luồng bằng Aspose.GIS cho .NET
 linktitle: Đọc GeoJSON từ luồng
 second_title: API Aspose.GIS .NET
 description: Tìm hiểu cách đọc GeoJSON từ luồng bằng Aspose.GIS cho .NET. Hãy làm theo hướng dẫn từng bước của chúng tôi để tích hợp liền mạch không gian địa lý vào ứng dụng của bạn.
-type: docs
 weight: 14
 url: /vi/net/layer-data-operations/read-geojson-from-stream/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Đọc GeoJSON từ Luồng bằng Aspose.GIS cho .NET
+
 ## Giới thiệu
 Chào mừng bạn đến với hướng dẫn từng bước của chúng tôi về cách sử dụng Aspose.GIS cho .NET để đọc GeoJSON từ một luồng. Aspose.GIS là một API mạnh mẽ cung cấp khả năng không gian địa lý cho các ứng dụng .NET, cho phép bạn làm việc liền mạch với nhiều định dạng GIS khác nhau. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn quy trình đọc dữ liệu GeoJSON từ luồng bằng Aspose.GIS, chia nhỏ từng bước để rõ ràng và dễ hiểu.
 ## Điều kiện tiên quyết
@@ -56,3 +62,9 @@ Có, Aspose.GIS hỗ trợ nhiều định dạng GIS khác nhau như GeoJSON, S
  Bạn có thể nhận hỗ trợ cho Aspose.GIS trên diễn đàn Aspose[đây](https://forum.aspose.com/c/gis/33).
 ### Tôi có cần giấy phép tạm thời để sử dụng Aspose.GIS không?
  Bạn có thể nhận được giấy phép tạm thời cho Aspose.GIS từ[đây](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

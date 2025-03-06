@@ -3,10 +3,16 @@ title: Geef object-ID en geometrieveldnamen op
 linktitle: Geef object-ID en geometrieveldnamen op
 second_title: Aspose.GIS .NET-API
 description: Ontdek GIS-magie met Aspose.GIS voor .NET! Beheer georuimtelijke gegevens moeiteloos. Download nu en ontketen de kracht van ruimtelijke intelligentie.
-type: docs
 weight: 20
 url: /nl/net/layer-data-operations/specify-object-id-and-geometry-field-names/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Geef object-ID en geometrieveldnamen op
+
 ## Invoering
 Als je op reis gaat naar het rijk van geografische informatiesystemen (GIS) met behulp van Aspose.GIS voor .NET, gaat er een wereld van mogelijkheden open voor zowel ontwikkelaars als enthousiastelingen. Met deze krachtige bibliotheek kunt u moeiteloos georuimtelijke gegevens verwerken. In deze zelfstudie leiden we u door het proces van het opgeven van object-ID- en geometrieveldnamen, waarmee we de basis leggen voor uw GIS-inspanningen.
 ## Vereisten
@@ -74,3 +80,9 @@ A: Ja, Aspose.GIS voor .NET is geschikt voor zowel desktop- als webapplicaties e
 A: Aspose.GIS voor .NET ondersteunt verschillende ruimtelijke referentiesystemen, waardoor flexibiliteit wordt geboden voor verschillende geografische datasets.
 ### Vraag: Waar kan ik hulp zoeken of Aspose.GIS-gerelateerde vragen bespreken?
  A: Bezoek het Aspose.GIS-forum[hier](https://forum.aspose.com/c/gis/33) voor ondersteuning en discussies.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

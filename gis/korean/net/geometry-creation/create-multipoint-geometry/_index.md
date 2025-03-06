@@ -3,10 +3,16 @@ title: .NET용 Aspose.GIS를 사용하여 다중점 형상 생성
 linktitle: 다중점 형상 생성
 second_title: Aspose.GIS .NET API
 description: .NET용 Aspose.GIS 마스터 - 다중 지점 형상을 손쉽게 생성하는 방법을 알아보세요. 개발자를 위한 종합 튜토리얼입니다.
-type: docs
 weight: 14
 url: /ko/net/geometry-creation/create-multipoint-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# .NET용 Aspose.GIS를 사용하여 다중점 형상 생성
+
 ## 소개
 
 GIS(지리 정보 시스템) 세계에서 .NET용 Aspose.GIS는 개발자를 위한 강력한 도구로 돋보입니다. 강력한 기능과 유연성으로 인해 .NET 애플리케이션에서 공간 데이터 작업을 위한 최고의 선택입니다. 이 튜토리얼에서는 특히 다중 지점 형상 생성에 중점을 두고 .NET용 Aspose.GIS의 기본 사항을 자세히 살펴보겠습니다. 숙련된 개발자이든 이제 막 시작하는 개발자이든 이 가이드는 각 단계를 안내하여 쉽게 이해하고 구현할 수 있도록 도와줍니다.
@@ -82,3 +88,9 @@ A: 예, .NET용 Aspose.GIS는 .NET Framework 4.0 이상 버전과 호환됩니�
 
 ### Q: 단기 프로젝트를 위해 임시 라이선스를 구매할 수 있나요?
 A: 예, 특정 프로젝트 요구 사항에 맞는 임시 라이센스를 취득할 수 있습니다.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Подсчитайте точки в геометрии с помощью
 linktitle: Подсчет точек в геометрии
 second_title: API Aspose.GIS .NET
 description: Узнайте, как использовать Aspose.GIS для .NET для легкого манипулирования географическими данными. Доступны комплексные учебные пособия.
-type: docs
 weight: 24
 url: /ru/net/geometry-creation/count-points-in-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Подсчитайте точки в геометрии с помощью Aspose.GIS для .NET
+
 ## Введение
 В сфере разработки географических информационных систем (ГИС) Aspose.GIS for .NET выделяется как мощный набор инструментов для манипулирования и обработки географических данных. Независимо от того, являетесь ли вы опытным разработчиком или просто погружаетесь в мир ГИС-программирования, освоение Aspose.GIS может открыть множество возможностей в ваших проектах.
 ## Предварительные условия
@@ -71,3 +77,9 @@ Console.WriteLine(pointsCount);  // 2
  Вы можете посетить[Форум Aspose.GIS](https://forum.aspose.com/c/gis/33) чтобы обратиться за поддержкой или задать вопросы сообществу Aspose.
 ### Доступна ли бесплатная пробная версия Aspose.GIS для .NET?
  Да, вы можете воспользоваться бесплатной пробной версией на сайте[Страница релизов Aspose.GIS](https://releases.aspose.com/) оценить его возможности перед покупкой.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

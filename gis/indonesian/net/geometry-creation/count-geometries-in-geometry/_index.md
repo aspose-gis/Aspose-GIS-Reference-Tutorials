@@ -3,10 +3,16 @@ title: Hitung Geometri dalam Geometri dengan Aspose.GIS
 linktitle: Hitung Geometri dalam Geometri
 second_title: Aspose.GIS .NET API
 description: Pelajari cara menghitung geometri dalam geometri menggunakan Aspose.GIS untuk .NET. Tutorial langkah demi langkah dengan contoh kode untuk pengembang.
-type: docs
 weight: 23
 url: /id/net/geometry-creation/count-geometries-in-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Hitung Geometri dalam Geometri dengan Aspose.GIS
+
 ## Perkenalan
 Aspose.GIS untuk .NET adalah alat yang ampuh bagi pengembang yang ingin menggabungkan fungsionalitas geospasial ke dalam aplikasi .NET mereka. Baik Anda membuat perangkat lunak pemetaan, layanan berbasis lokasi, atau alat analisis spasial, Aspose.GIS menyediakan serangkaian fitur lengkap untuk memenuhi kebutuhan Anda. Dalam tutorial ini, kita akan mempelajari cara menghitung geometri dalam geometri menggunakan Aspose.GIS untuk .NET.
 ## Prasyarat
@@ -70,3 +76,9 @@ Ya, Aspose.GIS untuk .NET mendukung berbagai format file GIS termasuk SHP, KML, 
  Ya, Anda dapat mengunduh uji coba gratis dari[situs web](https://releases.aspose.com/).
 ### Di mana saya dapat menemukan dukungan untuk Aspose.GIS untuk .NET?
  Anda dapat menemukan dukungan di[Forum Aspose.GIS](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

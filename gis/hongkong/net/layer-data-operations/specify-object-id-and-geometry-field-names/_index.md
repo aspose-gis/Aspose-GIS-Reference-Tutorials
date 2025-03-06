@@ -3,10 +3,16 @@ title: 指定物件 ID 和幾何欄位名稱
 linktitle: 指定物件 ID 和幾何欄位名稱
 second_title: Aspose.GIS .NET API
 description: 使用 Aspose.GIS for .NET 探索 GIS 魔力！輕鬆管理地理空間資料。立即下載並釋放空間智慧的力量。
-type: docs
 weight: 20
 url: /zh-hant/net/layer-data-operations/specify-object-id-and-geometry-field-names/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 指定物件 ID 和幾何欄位名稱
+
 ## 介紹
 使用 Aspose.GIS for .NET 踏上地理資訊系統 (GIS) 領域的旅程，為開發人員和愛好者開啟了一個充滿可能性的世界。這個強大的程式庫使您能夠輕鬆處理地理空間資料。在本教程中，我們將引導您完成指定物件 ID 和幾何欄位名稱的過程，為您的 GIS 工作奠定基礎。
 ## 先決條件
@@ -74,3 +80,9 @@ using (var layer = dataset.OpenLayer("layer_name"))
 答：Aspose.GIS for .NET 支援各種空間參考系統，為不同的地理資料集提供了彈性。
 ### Q：我可以在哪裡尋求協助或討論與 Aspose.GIS 相關的問題？
 答：請造訪 Aspose.GIS 論壇[這裡](https://forum.aspose.com/c/gis/33)以尋求支持和討論。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

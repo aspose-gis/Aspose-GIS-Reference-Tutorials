@@ -3,10 +3,16 @@ title: Räkna poäng i geometri med Aspose.GIS för .NET
 linktitle: Räkna poäng i geometri
 second_title: Aspose.GIS .NET API
 description: Lär dig hur du använder Aspose.GIS för .NET för att enkelt manipulera geografiska data. Omfattande tutorials tillgängliga.
-type: docs
 weight: 24
 url: /sv/net/geometry-creation/count-points-in-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Räkna poäng i geometri med Aspose.GIS för .NET
+
 ## Introduktion
 Inom området för utveckling av geografiska informationssystem (GIS) utmärker sig Aspose.GIS för .NET som en kraftfull verktygsuppsättning för att manipulera och bearbeta geografiska data. Oavsett om du är en erfaren utvecklare eller bara fördjupar dig i en värld av GIS-programmering, kan behärskning av Aspose.GIS öppna upp en myriad av möjligheter i dina projekt.
 ## Förutsättningar
@@ -71,3 +77,9 @@ Absolut! Du kan hitta detaljerad dokumentation för Aspose.GIS för .NET på[dok
  Du kan besöka[Aspose.GIS forum](https://forum.aspose.com/c/gis/33) att söka stöd eller ställa frågor från Aspose-gemenskapen.
 ### Finns det en gratis testversion tillgänglig för Aspose.GIS för .NET?
  Ja, du kan utnyttja den kostnadsfria provperioden från[Aspose.GIS släpper sida](https://releases.aspose.com/) för att utvärdera dess funktioner innan du gör ett köp.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

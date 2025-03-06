@@ -3,10 +3,16 @@ title: Låser upp TopoJSON-funktioner med Aspose.GIS för .NET
 linktitle: Få åtkomst till funktioner i TopoJSON
 second_title: Aspose.GIS .NET API
 description: Utforska Aspose.GIS för .NET och lär dig hur du får tillgång till TopoJSON-funktionerna steg för steg. Dyk ner i dokumentation och släpp loss geospatiala möjligheter utan ansträngning.
-type: docs
 weight: 15
 url: /sv/net/layer-management/access-features-in-topojson/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Låser upp TopoJSON-funktioner med Aspose.GIS för .NET
+
 ## Introduktion
 Aspose.GIS för .NET är ett kraftfullt bibliotek som gör det möjligt för utvecklare att arbeta med geospatial data utan ansträngning. I den här handledningen kommer vi att fördjupa oss i att komma åt funktioner i TopoJSON med Aspose.GIS för .NET. TopoJSON är ett format som representerar geografiska egenskaper på ett kompakt och effektivt sätt.
 ## Förutsättningar
@@ -67,3 +73,9 @@ Grattis! Du har lyckats komma åt funktioner i TopoJSON med Aspose.GIS för .NET
 Ja, du kan få tillgång till en gratis provperiod[här](https://releases.aspose.com/).
 ### F: Hur köper jag en licens?
  Köp en licens[här](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

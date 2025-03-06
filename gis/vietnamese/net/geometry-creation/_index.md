@@ -3,10 +3,16 @@ title: Sáng tạo hình học
 linktitle: Sáng tạo hình học
 second_title: API Aspose.GIS .NET
 description: Mở khóa tiềm năng thao tác dữ liệu không gian địa lý với Aspose.GIS cho .NET. Đi sâu vào các hướng dẫn của chúng tôi, bao gồm việc tạo, chuyển đổi và phân tích hình học.
-type: docs
 weight: 21
 url: /vi/net/geometry-creation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Sáng tạo hình học
+
 
 ## Giới thiệu
 
@@ -105,3 +111,9 @@ Tìm hiểu cách đếm hình học trong hình học bằng Aspose.GIS cho .NE
 Tìm hiểu cách sử dụng Aspose.GIS cho .NET để thao tác dữ liệu địa lý một cách dễ dàng. Hướng dẫn toàn diện có sẵn.
 ### [Chuyển đổi tọa độ với Aspose.GIS](./convert-coordinates/)
 Tìm hiểu cách chuyển đổi tọa độ bằng Aspose.GIS cho .NET. Hướng dẫn từng bước, điều kiện tiên quyết và Câu hỏi thường gặp được cung cấp.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Maak een bestands-GDB met één laag
 linktitle: Maak een bestands-GDB met één laag
 second_title: Aspose.GIS .NET-API
 description: Ontgrendel het potentieel van georuimtelijk gegevensbeheer in .NET met Aspose.GIS. Leer stap voor stap hoe u bestandsgeodatabases en lagen kunt maken. Download nu!
-type: docs
 weight: 11
 url: /nl/net/layer-management/create-file-gdb-with-single-layer/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Maak een bestands-GDB met één laag
+
 ## Invoering
 Bent u klaar om uw georuimtelijke toepassingen naar een hoger niveau te tillen met robuuste bestandsgeodatabases en -lagen? Zoek niet verder dan Aspose.GIS voor .NET. In deze zelfstudie leiden we u door het proces van het maken van een File Geodatabase (GDB) met een enkele laag met behulp van Aspose.GIS voor .NET. Benut moeiteloos de kracht van ruimtelijk gegevensbeheer en visualisatie in uw .NET-applicaties.
 ## Vereisten
@@ -70,3 +76,9 @@ Ja, Aspose.GIS voor .NET kan naadloos worden geïntegreerd in uw bestaande .NET-
  Bezoek de[Aspose.GIS-forum](https://forum.aspose.com/c/gis/33) voor steun en hulp van de gemeenschap.
 ### Zijn er tijdelijke licenties beschikbaar voor Aspose.GIS voor .NET?
  Ja, u kunt een[tijdelijke licentie](https://purchase.aspose.com/temporary-license/) voor Aspose.GIS voor .NET.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

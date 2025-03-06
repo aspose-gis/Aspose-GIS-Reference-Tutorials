@@ -3,10 +3,16 @@ title: Obtenir la valeur de l'attribut de fonctionnalité
 linktitle: Obtenir la valeur de l'attribut de fonctionnalité
 second_title: API Aspose.GIS .NET
 description: Explorez Aspose.GIS pour .NET – l'outil ultime pour une intégration transparente des données SIG. Téléchargez votre essai gratuit maintenant ! #Aspose #SIG #.NET
-type: docs
 weight: 12
 url: /fr/net/layer-interaction-and-data-access/get-feature-attribute-value/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Obtenir la valeur de l'attribut de fonctionnalité
+
 ## Introduction
 Bienvenue dans le monde d'Aspose.GIS pour .NET, une bibliothèque puissante qui permet aux développeurs .NET de travailler de manière transparente avec les données du système d'information géographique (SIG). Que vous soyez un développeur chevronné ou que vous commenciez tout juste votre parcours dans le SIG, ce didacticiel vous guidera tout au long du processus de récupération des valeurs d'attributs d'entités à l'aide d'Aspose.GIS pour .NET.
 ## Conditions préalables
@@ -80,3 +86,9 @@ R : Absolument ! Aspose.GIS s'adresse aux développeurs de tous niveaux, en four
  R : Rejoignez la discussion sur le[Forum Aspose.GIS](https://forum.aspose.com/c/gis/33) pour demander de l'aide et se connecter avec d'autres utilisateurs.
 ### Q : Existe-t-il une version d'essai gratuite d'Aspose.GIS ?
  R : Certainement ! Vous pouvez explorer les fonctionnalités d'Aspose.GIS en téléchargeant l'essai gratuit depuis[ici](https://releases.aspose.com/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

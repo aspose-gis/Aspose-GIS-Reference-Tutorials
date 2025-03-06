@@ -3,10 +3,16 @@ title: Master Geospatial Analysis with Aspose.GIS
 linktitle: Check Geometries Overlap
 second_title: Aspose.GIS .NET API
 description: Explore geospatial analysis with Aspose.GIS for .NET. Learn how to check geometries overlap with step-by-step guidance.
-type: docs
 weight: 12
 url: /net/geometry-analysis/check-geometries-overlap/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Master Geospatial Analysis with Aspose.GIS
+
 ## Introduction
 
 In the realm of geospatial analysis, Aspose.GIS for .NET stands out as a powerful tool for developers and data scientists alike. Its seamless integration with the .NET framework empowers users to delve deep into spatial data, performing intricate analyses and gaining invaluable insights. This tutorial will guide you through the process of checking geometries overlap using Aspose.GIS for .NET, providing step-by-step instructions, essential prerequisites, and detailed examples.
@@ -101,3 +107,10 @@ A4: You can obtain temporary licenses for Aspose.GIS for .NET from [here](https:
 ### Q5: Where can I seek support for Aspose.GIS for .NET?
 
 A5: For any assistance or queries, visit the Aspose.GIS forum [here](https://forum.aspose.com/c/gis/33).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

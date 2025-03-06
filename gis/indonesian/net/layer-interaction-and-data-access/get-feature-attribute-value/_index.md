@@ -3,10 +3,16 @@ title: Dapatkan Nilai Atribut Fitur
 linktitle: Dapatkan Nilai Atribut Fitur
 second_title: Aspose.GIS .NET API
 description: Jelajahi Aspose.GIS untuk .NET – alat terbaik untuk integrasi data GIS yang lancar. Unduh uji coba gratis Anda sekarang! #Asumsikan #GIS #.NET
-type: docs
 weight: 12
 url: /id/net/layer-interaction-and-data-access/get-feature-attribute-value/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Dapatkan Nilai Atribut Fitur
+
 ## Perkenalan
 Selamat datang di dunia Aspose.GIS untuk .NET, perpustakaan canggih yang memberdayakan pengembang .NET untuk bekerja secara lancar dengan data sistem informasi geografis (GIS). Baik Anda seorang pengembang berpengalaman atau baru memulai perjalanan Anda ke GIS, tutorial ini akan memandu Anda melalui proses mengambil nilai atribut fitur menggunakan Aspose.GIS untuk .NET.
 ## Prasyarat
@@ -80,3 +86,9 @@ J: Tentu saja! Aspose.GIS melayani pengembang dari semua tingkat keahlian, menye
  A: Bergabunglah dalam diskusi di[Forum Aspose.GIS](https://forum.aspose.com/c/gis/33) untuk mencari bantuan dan terhubung dengan pengguna lain.
 ### T: Apakah ada versi uji coba gratis Aspose.GIS?
  J: Tentu saja! Anda dapat menjelajahi fitur Aspose.GIS dengan mengunduh uji coba gratis dari[Di Sini](https://releases.aspose.com/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

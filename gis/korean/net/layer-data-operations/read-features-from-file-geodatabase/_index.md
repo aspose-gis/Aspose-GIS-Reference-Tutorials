@@ -3,10 +3,16 @@ title: Aspose.GIS의 파일 지리 데이터베이스에서 기능 읽기
 linktitle: 파일 지리 데이터베이스에서 기능 읽기
 second_title: Aspose.GIS .NET API
 description: .NET 애플리케이션의 지리공간 데이터를 위한 포괄적인 라이브러리인 Aspose.GIS for .NET의 강력한 기능을 살펴보세요. 지리공간 데이터를 쉽게 읽고, 쓰고, 분석할 수 있습니다.
-type: docs
 weight: 15
 url: /ko/net/layer-data-operations/read-features-from-file-geodatabase/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS의 파일 지리 데이터베이스에서 기능 읽기
+
 ## 소개
 지리 정보 시스템(GIS) 개발 영역에서 .NET용 Aspose.GIS는 지리 공간 데이터를 최대한 효율적으로 조작할 수 있는 포괄적인 기능 제품군을 제공하는 강력한 도구 세트입니다. Aspose.GIS의 강력한 기능을 활용하여 개발자는 GIS 기능을 .NET 애플리케이션에 원활하게 통합하여 지리공간 데이터를 쉽게 읽고, 쓰고, 분석할 수 있습니다.
 ## 전제조건
@@ -82,3 +88,9 @@ Aspose.GIS for .NET은 다른 GIS 플랫폼과의 상호 운용성을 제공하�
  네, 방문하실 수 있습니다[Aspose.GIS 포럼](https://forum.aspose.com/c/gis/33) 커뮤니티와 소통하고 전문가의 지원을 받으세요.
 ### 구매하기 전에 .NET용 Aspose.GIS를 사용해 볼 수 있나요?
  물론 다음 사이트에서 .NET용 Aspose.GIS 무료 평가판을 이용할 수 있습니다.[릴리스 페이지](https://releases.aspose.com/), 구매를 결정하기 전에 기능을 탐색할 수 있습니다.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

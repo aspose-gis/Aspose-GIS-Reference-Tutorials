@@ -3,10 +3,16 @@ title: Calculer la longueur de la géométrie dans .NET avec Aspose.GIS
 linktitle: Obtenir la longueur de la géométrie
 second_title: API Aspose.GIS .NET
 description: Découvrez comment calculer la longueur géométrique dans .NET à l'aide d'Aspose.GIS pour une gestion efficace des données spatiales. Guide étape par étape avec des exemples de code.
-type: docs
 weight: 24
 url: /fr/net/geometry-analysis/get-geometry-length/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Calculer la longueur de la géométrie dans .NET avec Aspose.GIS
+
 ## Introduction
 Dans le domaine du développement .NET, Aspose.GIS se présente comme une boîte à outils robuste offrant des fonctionnalités puissantes pour la gestion des systèmes d'information géographique (SIG). Que vous soyez un développeur chevronné ou que vous débutiez simplement dans le monde de la programmation SIG, Aspose.GIS pour .NET fournit un ensemble complet d'outils pour travailler efficacement avec les données spatiales. Dans ce didacticiel, nous aborderons l'une des tâches fondamentales du développement de SIG : le calcul de la longueur de la géométrie. Nous explorerons étape par étape comment y parvenir à l'aide d'Aspose.GIS pour .NET, en décomposant le processus en morceaux gérables pour une compréhension facile.
 ## Conditions préalables
@@ -74,3 +80,9 @@ R : Aspose.GIS pour .NET est compatible avec .NET Framework 4.6.1 ou versions u
  R : Vous pouvez acquérir une licence temporaire auprès de[ici](https://purchase.aspose.com/temporary-license/).
 ### Q : Puis-je personnaliser le format de sortie pour les calculs de longueur géométrique ?
 R : Oui, Aspose.GIS pour .NET propose diverses options de formatage pour personnaliser le format de sortie selon vos besoins.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

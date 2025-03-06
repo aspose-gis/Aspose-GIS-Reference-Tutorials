@@ -3,10 +3,16 @@ title: Aspose.GIS for .NET を使用して MultiLineString ジオメトリを作
 linktitle: マルチラインストリングジオメトリの作成
 second_title: Aspose.GIS .NET API
 description: 地理空間データを効率的に管理する際の Aspose.GIS for .NET の機能を試してください。今すぐダウンロードしてシームレスなエクスペリエンスを手に入れましょう。
-type: docs
 weight: 15
 url: /ja/net/geometry-creation/create-multilinestring-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS for .NET を使用して MultiLineString ジオメトリを作成する
+
 ## 導入
 Aspose.GIS for .NET は、開発者が .NET アプリケーション内で地理空間データをシームレスに操作できるようにする強力なライブラリです。マッピング アプリケーションの構築、地理空間分析の実行、ソフトウェアへの位置ベースの機能の統合のいずれの場合でも、Aspose.GIS は空間データを効率的に処理するために必要なツールを提供します。
 ## 前提条件
@@ -64,3 +70,9 @@ multiLineString.Add(secondLine);
 試用版はテスト用に利用できますが、追加機能が必要な場合、または完全な機能を評価する必要がある場合は、次のサイトから一時ライセンスを取得できます。[購入.aspose.com](https://purchase.aspose.com/temporary-license/).
 ### Aspose.GIS for .NET はデスクトップ アプリケーションと Web アプリケーションの両方に適していますか?
 はい。Aspose.GIS for .NET は、デスクトップ、Web、サーバーサイド アプリケーションなどのさまざまなアプリケーションで使用でき、さまざまな開発シナリオにわたって多用途性を提供します。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

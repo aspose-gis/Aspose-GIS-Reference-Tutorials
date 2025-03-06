@@ -3,10 +3,16 @@ title: Créer un fichier GDB avec une seule couche
 linktitle: Créer un fichier GDB avec une seule couche
 second_title: API Aspose.GIS .NET
 description: Libérez le potentiel de la gestion des données géospatiales dans .NET avec Aspose.GIS. Découvrez comment créer des géodatabases fichier et des couches étape par étape. Télécharger maintenant!
-type: docs
 weight: 11
 url: /fr/net/layer-management/create-file-gdb-with-single-layer/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Créer un fichier GDB avec une seule couche
+
 ## Introduction
 Êtes-vous prêt à élever vos applications géospatiales avec des géodatabases et des couches de fichiers robustes ? Ne cherchez pas plus loin que Aspose.GIS pour .NET. Dans ce didacticiel, nous vous guiderons tout au long du processus de création d'une géodatabase fichier (GDB) avec une seule couche à l'aide d'Aspose.GIS pour .NET. Exploitez sans effort la puissance de la gestion et de la visualisation des données spatiales dans vos applications .NET.
 ## Conditions préalables
@@ -70,3 +76,9 @@ Oui, Aspose.GIS pour .NET peut être intégré de manière transparente à vos p
  Visiter le[Forum Aspose.GIS](https://forum.aspose.com/c/gis/33) pour le soutien et l’assistance de la communauté.
 ### Des licences temporaires sont-elles disponibles pour Aspose.GIS pour .NET ?
  Oui, vous pouvez obtenir un[permis temporaire](https://purchase.aspose.com/temporary-license/) pour Aspose.GIS pour .NET.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

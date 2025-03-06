@@ -3,10 +3,16 @@ title: إنشاء مجموعة هندسية باستخدام Aspose.GIS لـ .NE
 linktitle: إنشاء مجموعة الهندسة
 second_title: Aspose.GIS .NET API
 description: أطلق العنان لقوة معالجة البيانات الجغرافية المكانية باستخدام Aspose.GIS for .NET. يمكنك إنشاء البيانات المستندة إلى الموقع وتصورها وتحليلها بسلاسة في تطبيقات .NET الخاصة بك.
-type: docs
 weight: 21
 url: /ar/net/geometry-creation/create-geometry-collection/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# إنشاء مجموعة هندسية باستخدام Aspose.GIS لـ .NET
+
 
 ## مقدمة
 
@@ -109,3 +115,9 @@ geometryCollection.Add(line);
 ### س: هل يوجد مجتمع أو منتدى يمكنني من خلاله طلب المساعدة والتواصل مع مستخدمي Aspose.GIS الآخرين؟
 
  ج: بالتأكيد! توجه إلى[منتدى Aspose.GIS](https://forum.aspose.com/c/gis/33) لطرح الأسئلة ومشاركة المعرفة والتواصل مع زملائك المطورين في مجتمع Aspose.GIS.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

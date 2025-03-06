@@ -3,10 +3,16 @@ title: Dapatkan Area Geometri dengan Aspose.GIS
 linktitle: Dapatkan Area Geometri
 second_title: Aspose.GIS .NET API
 description: Buka kekuatan sistem informasi geografis di .NET dengan Aspose.GIS. Lakukan operasi spasial dengan mudah.
-type: docs
 weight: 18
 url: /id/net/geometry-analysis/get-geometry-area/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Dapatkan Area Geometri dengan Aspose.GIS
+
 ## Perkenalan
 Dalam dunia sistem informasi geografis (GIS) dan pemrosesan data spasial, Aspose.GIS untuk .NET menonjol sebagai alat yang tangguh dan serbaguna bagi pengembang. Dengan serangkaian fitur yang kaya dan API yang intuitif, Aspose.GIS memberdayakan pengembang untuk bekerja dengan berbagai format data geografis, melakukan operasi spasial, dan memanipulasi geometri dengan mudah dalam aplikasi .NET.
 ## Prasyarat
@@ -72,3 +78,9 @@ Ya, Aspose.GIS untuk .NET kompatibel dengan berbagai kerangka .NET, termasuk .NE
  Ya, lisensi sementara tersedia untuk Aspose.GIS untuk .NET. Anda dapat memperolehnya dari[halaman pembelian](https://purchase.aspose.com/temporary-license/).
 ### Apakah Aspose.GIS untuk .NET mendukung berbagai format data geografis?
 Tentu saja, Aspose.GIS untuk .NET mendukung berbagai format data geografis, memastikan kompatibilitas dan fleksibilitas dalam penanganan data.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: GIS-beheersing - Voeg lagen toe aan GDB met Aspose.GIS voor .NET
 linktitle: Laag toevoegen aan bestand GDB-gegevensset
 second_title: Aspose.GIS .NET-API
 description: Ontgrendel de kracht van GIS met Aspose.GIS voor .NET! Leer in deze stapsgewijze zelfstudie hoe u lagen kunt toevoegen aan File GDB-gegevenssets. #geografische gegevens #Aspose #GIS
-type: docs
 weight: 16
 url: /nl/net/layer-management/add-layer-to-file-gdb-dataset/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# GIS-beheersing - Voeg lagen toe aan GDB met Aspose.GIS voor .NET
+
 ## Invoering
 Bent u klaar om uw GIS-mogelijkheden te verbeteren met Aspose.GIS voor .NET? In deze stapsgewijze handleiding leiden we u door het proces van het toevoegen van een laag aan een File Geodatabase (GDB)-gegevensset. Aspose.GIS voor .NET biedt krachtige functies voor het manipuleren van geografische informatie, en met deze tutorial kunt u naadloos extra lagen in uw datasets integreren.
 ## Vereisten
@@ -75,3 +81,9 @@ Aspose.GIS voor .NET ondersteunt een breed scala aan ruimtelijke referentiesyste
  Absoluut! Neem deel aan de discussies en deel uw ervaringen op de[Aspose.GIS-forum](https://forum.aspose.com/c/gis/33).
 ### Vraag: Waar kan ik gedetailleerde documentatie vinden voor Aspose.GIS voor .NET?
  Ontdek de uitgebreide documentatie[hier](https://reference.aspose.com/gis/net/) voor diepgaande informatie over Aspose.GIS voor .NET.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

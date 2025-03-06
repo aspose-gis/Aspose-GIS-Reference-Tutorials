@@ -3,10 +3,16 @@ title: Dominando a modificação de recursos de camada
 linktitle: Modificar recursos de camada
 second_title: API Aspose.GIS .NET
 description: Explore o Aspose.GIS for .NET e domine a arte de modificar recursos de camada em shapefiles sem esforço. Aumente suas aplicações geoespaciais com precisão e facilidade.
-type: docs
 weight: 23
 url: /pt/net/layer-interaction-and-data-access/modify-layer-features/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Dominando a modificação de recursos de camada
+
 ## Introdução
 Bem-vindo a este guia completo sobre modificação de recursos de camada usando Aspose.GIS for .NET! Se você deseja aprimorar seus aplicativos geoespaciais e manipular dados de shapefiles sem esforço, você está no lugar certo. Neste tutorial, nos aprofundaremos no processo de modificação de recursos de camada usando a poderosa biblioteca Aspose.GIS, fornecendo etapas e insights detalhados.
 ## Pré-requisitos
@@ -72,3 +78,9 @@ Absolutamente! Aspose.GIS integra-se perfeitamente com outras bibliotecas .NET, 
  Visite a[Fórum de suporte Aspose.GIS](https://forum.aspose.com/c/gis/33)para assistência e apoio comunitário.
 ### Onde posso encontrar a documentação do Aspose.GIS?
  A documentação do Aspose.GIS está disponível[aqui](https://reference.aspose.com/gis/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

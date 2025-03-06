@@ -3,10 +3,16 @@ title: التحقق من الأشكال الهندسية للمساواة
 linktitle: التحقق من الأشكال الهندسية للمساواة
 second_title: Aspose.GIS .NET API
 description: تعرف على كيفية استخدام Aspose.GIS for .NET للتحقق من الأشكال الهندسية للمساواة في تطبيقات .NET الخاصة بك من خلال هذا البرنامج التعليمي الشامل.
-type: docs
 weight: 10
 url: /ar/net/geometry-analysis/check-geometries-for-equality/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# التحقق من الأشكال الهندسية للمساواة
+
 ## مقدمة
 Aspose.GIS for .NET هي مكتبة قوية تمكن المطورين من العمل مع البيانات الجغرافية المكانية بكفاءة في تطبيقات .NET الخاصة بهم. سواء كنت تقوم بإنشاء تطبيقات رسم الخرائط، أو أدوات التحليل المكاني، أو دمج الوظائف الجغرافية المكانية في البرامج الموجودة، فإن Aspose.GIS يوفر الأدوات التي تحتاجها لإنجاز المهمة.
 ## المتطلبات الأساسية
@@ -73,3 +79,9 @@ Console.WriteLine(geometry1.SpatiallyEquals(geometry2)); // خطأ شنيع
  يمكنك الحصول على الدعم من منتدى مجتمع Aspose.GIS[هنا](https://forum.aspose.com/c/gis/33).
 ### هل يمكنني شراء ترخيص مؤقت لـ Aspose.GIS لـ .NET؟
  نعم، يمكنك شراء ترخيص مؤقت من[صفحة الشراء](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

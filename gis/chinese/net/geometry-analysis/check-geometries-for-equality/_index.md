@@ -3,10 +3,16 @@ title: 检查几何形状是否相等
 linktitle: 检查几何形状是否相等
 second_title: Aspose.GIS .NET API
 description: 通过这个综合教程，了解如何使用 Aspose.GIS for .NET 检查 .NET 应用程序中的几何图形是否相等。
-type: docs
 weight: 10
 url: /zh/net/geometry-analysis/check-geometries-for-equality/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 检查几何形状是否相等
+
 ## 介绍
 Aspose.GIS for .NET 是一个功能强大的库，使开发人员能够在其 .NET 应用程序中高效地处理地理空间数据。无论您是构建地图应用程序、空间分析工具，还是将地理空间功能集成到现有软件中，Aspose.GIS 都能提供完成工作所需的工具。
 ## 先决条件
@@ -73,3 +79,9 @@ Console.WriteLine(geometry1.SpatiallyEquals(geometry2)); //错误的
 您可以从 Aspose.GIS 社区论坛获得支持[这里](https://forum.aspose.com/c/gis/33).
 ### 我可以购买 Aspose.GIS for .NET 的临时许可证吗？
 是的，您可以从[购买页面](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

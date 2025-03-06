@@ -3,10 +3,16 @@ title: Hapus Lapisan dari Kumpulan Data File GDB
 linktitle: Hapus Lapisan dari Kumpulan Data File GDB
 second_title: Aspose.GIS .NET API
 description: Jelajahi GIS dengan Aspose.GIS untuk .NET! Pelajari cara menghapus lapisan dari kumpulan data File GDB langkah demi langkah. Unduh sekarang untuk pengalaman data spasial yang lancar.
-type: docs
 weight: 17
 url: /id/net/layer-data-operations/remove-layers-from-file-gdb-dataset/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Hapus Lapisan dari Kumpulan Data File GDB
+
 ## Perkenalan
 Buka potensi penuh Sistem Informasi Geografis (GIS) dengan Aspose.GIS untuk .NET, perangkat canggih yang dirancang untuk menyederhanakan manipulasi dan visualisasi data spasial. Baik Anda seorang pengembang berpengalaman atau penggemar GIS, tutorial ini akan memandu Anda melalui proses menghapus lapisan dari kumpulan data File Geodatabase (GDB) menggunakan Aspose.GIS untuk .NET.
 ## Prasyarat
@@ -71,3 +77,9 @@ Ya, Aspose.GIS mendukung interoperabilitas dengan berbagai format GIS, memungkin
  Ya, lisensi sementara dapat dibeli[Di Sini](https://purchase.aspose.com/temporary-license/).
 ### Apakah ada contoh kumpulan data yang tersedia untuk praktik?
 Jelajahi dokumentasi Aspose.GIS untuk contoh kumpulan data dan sumber daya tambahan.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Освоение наложений геометрии с помощью 
 linktitle: Найдите наложения геометрии
 second_title: API Aspose.GIS .NET
 description: Узнайте, как выполнять операции наложения геометрических фигур с помощью Aspose.GIS для .NET. Освойте операции пересечения, объединения, разности и симметричной разности.
-type: docs
 weight: 16
 url: /ru/net/geometry-analysis/find-geometry-overlays/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Освоение наложений геометрии с помощью Aspose.GIS for .NET
+
 ## Введение
 В сфере географических информационных систем (ГИС) операции наложения имеют основополагающее значение для пространственного анализа. Они позволяют сравнивать и комбинировать различные наборы пространственных данных для получения ценной информации. Aspose.GIS for .NET предоставляет надежные функциональные возможности для эффективного выполнения геометрических наложений. В этом уроке мы углубимся в различные операции наложения, такие как пересечение, объединение, разница и симметричная разница, с использованием Aspose.GIS для .NET.
 ## Предварительные условия
@@ -108,3 +114,9 @@ PrintRing(((IPolygon)multiPolygon[1]).ExteriorRing);
  Да, временные лицензии доступны для тестирования и оценки. Вы можете получить их от[здесь](https://purchase.aspose.com/temporary-license/).
 ### Вопрос: Могу ли я купить Aspose.GIS для .NET напрямую?
  Да, вы можете приобрести Aspose.GIS для .NET на веб-сайте.[здесь](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

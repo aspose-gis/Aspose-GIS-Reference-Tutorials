@@ -3,10 +3,16 @@ title: Controleer geometrieën op gelijkheid
 linktitle: Controleer geometrieën op gelijkheid
 second_title: Aspose.GIS .NET-API
 description: Leer hoe u Aspose.GIS voor .NET kunt gebruiken om geometrieën op gelijkheid in uw .NET-toepassingen te controleren met deze uitgebreide tutorial.
-type: docs
 weight: 10
 url: /nl/net/geometry-analysis/check-geometries-for-equality/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Controleer geometrieën op gelijkheid
+
 ## Invoering
 Aspose.GIS voor .NET is een krachtige bibliotheek waarmee ontwikkelaars efficiënt met georuimtelijke gegevens kunnen werken in hun .NET-toepassingen. Of u nu kaartapplicaties, tools voor ruimtelijke analyse bouwt of geospatiale functionaliteit in bestaande software integreert, Aspose.GIS biedt de tools die u nodig hebt om de klus te klaren.
 ## Vereisten
@@ -73,3 +79,9 @@ Ja, Aspose.GIS voor .NET is compatibel met verschillende .NET-frameworks, waaron
  U kunt ondersteuning krijgen van het Aspose.GIS-communityforum[hier](https://forum.aspose.com/c/gis/33).
 ### Kan ik een tijdelijke licentie kopen voor Aspose.GIS voor .NET?
  Ja, u kunt een tijdelijke licentie aanschaffen bij de[aankooppagina](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

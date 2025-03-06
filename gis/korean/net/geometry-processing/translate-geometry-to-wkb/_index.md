@@ -3,10 +3,16 @@ title: .NET용 Aspose.GIS를 사용하여 형상을 WKB 형식으로 변환
 linktitle: 기하학을 WKB로 변환
 second_title: Aspose.GIS .NET API
 description: 원활한 공간 데이터 처리를 위해 Aspose.GIS를 사용하여 .NET 애플리케이션에서 기하학을 WKB(Well-Known Binary) 형식으로 변환하는 방법을 알아보세요.
-type: docs
 weight: 22
 url: /ko/net/geometry-processing/translate-geometry-to-wkb/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# .NET용 Aspose.GIS를 사용하여 형상을 WKB 형식으로 변환
+
 ## 소개
 GIS(지리 정보 시스템) 세계에서 개발자는 공간 데이터를 효율적으로 처리해야 하는 과제에 직면하는 경우가 많습니다. .NET용 Aspose.GIS는 개발자에게 .NET 애플리케이션 내에서 공간 데이터를 원활하게 사용할 수 있는 강력한 도구를 제공하여 이러한 과제에 대한 포괄적인 솔루션을 제공합니다. 이 튜토리얼에서는 GIS 개발의 기본 작업 중 하나인 Aspose.GIS for .NET을 사용하여 기하학을 WKB(Well-Known Binary) 형식으로 변환하는 작업을 자세히 살펴보겠습니다.
 ## 전제조건
@@ -58,3 +64,9 @@ WKB(Well-Known Binary)는 GIS 애플리케이션에 사용되는 기하학 데�
  예, Aspose.GIS for .NET 커뮤니티 포럼에 참여할 수 있습니다.[여기](https://forum.aspose.com/c/gis/33) 다른 사용자와 연결하고, 질문하고, 지식을 공유합니다.
 ### 구매하기 전에 .NET용 Aspose.GIS를 사용해 볼 수 있나요?
  예, 다음에서 .NET용 Aspose.GIS 무료 평가판을 다운로드할 수 있습니다.[여기](https://releases.aspose.com/) 기능과 기능을 살펴보겠습니다.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

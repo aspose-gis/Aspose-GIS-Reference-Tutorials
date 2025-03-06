@@ -3,10 +3,16 @@ title: قراءة معرف الكائن من طبقة ملف GDB في Aspose.GIS
 linktitle: قراءة معرف الكائن من طبقة ملف GDB
 second_title: Aspose.GIS .NET API
 description: تعرف على كيفية استخدام Aspose.GIS for .NET للتعامل مع معالجة البيانات الجغرافية المكانية بكفاءة. تتوفر دروس شاملة وإرشادات الخبراء.
-type: docs
 weight: 16
 url: /ar/net/layer-data-operations/read-object-id-from-file-gdb-layer/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# قراءة معرف الكائن من طبقة ملف GDB في Aspose.GIS
+
 ## مقدمة
 مرحبًا بك في دليلنا الشامل حول إتقان Aspose.GIS لـ .NET! Aspose.GIS هي مكتبة قوية مصممة للتعامل مع مهام معالجة البيانات الجغرافية المكانية وتصورها بكفاءة ضمن إطار عمل .NET. سواء كنت مطورًا متمرسًا أو بدأت رحلتك للتو في البرمجة الجغرافية المكانية، فسيرشدك هذا البرنامج التعليمي إلى كل ما تحتاج إلى معرفته لتسخير الإمكانات الكاملة لـ Aspose.GIS.
 ## المتطلبات الأساسية
@@ -74,3 +80,9 @@ Console.WriteLine(feature.GetValue<int>("OBJECTID"));
 نعم، يمكنك الحصول على ترخيص مؤقت من موقع Aspose لأغراض الاختبار والتقييم.
 ### أين يمكنني العثور على وثائق شاملة لـ Aspose.GIS for .NET؟
  يمكنك الرجوع إلى[توثيق](https://reference.aspose.com/gis/net/) للحصول على معلومات تفصيلية حول استخدام واجهات برمجة تطبيقات Aspose.GIS وميزاتها.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

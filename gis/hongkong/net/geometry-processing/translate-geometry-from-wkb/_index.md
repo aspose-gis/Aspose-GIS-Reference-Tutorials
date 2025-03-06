@@ -3,10 +3,16 @@ title: 使用 Aspose.GIS for .NET 從 WKB 轉換幾何圖形
 linktitle: 從 WKB 翻譯幾何
 second_title: Aspose.GIS .NET API
 description: 了解如何使用 Aspose.GIS for .NET 在 .NET 中處理地理資訊。透過逐步指導，輕鬆轉換 WKB 格式的幾何圖形。
-type: docs
 weight: 20
 url: /zh-hant/net/geometry-processing/translate-geometry-from-wkb/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.GIS for .NET 從 WKB 轉換幾何圖形
+
 ## 介紹
 在 .NET 開發領域，處理地理資訊是常見的需求。無論是地圖應用程式、空間分析還是資料視覺化，擁有強大的地理資料處理工具都至關重要。這就是 Aspose.GIS for .NET 發揮作用的地方。 Aspose.GIS for .NET 是一個功能強大的函式庫，提供全面的功能來處理各種地理空間格式並有效地執行空間操作。
 ## 先決條件
@@ -61,3 +67,9 @@ Aspose.GIS for .NET 提供了一套全面的工具，可在 .NET 應用程式中
 您可以透過論壇獲得 Aspose.GIS for .NET 支持[這裡](https://forum.aspose.com/c/gis/33)或直接聯絡 Aspose 支援。
 ### 我可以在商業專案中使用 Aspose.GIS for .NET 嗎？
 是的，您可以透過購買合適的許可證在商業專案中使用 Aspose.GIS for .NET。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

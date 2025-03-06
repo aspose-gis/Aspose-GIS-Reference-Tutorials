@@ -3,10 +3,16 @@ title: Linéariser une géométrie
 linktitle: Linéariser une géométrie
 second_title: API Aspose.GIS .NET
 description: Découvrez comment utiliser Aspose.GIS pour .NET pour travailler efficacement avec des données géospatiales, effectuer des analyses spatiales et manipuler des données géographiques dans vos applications .NET.
-type: docs
 weight: 14
 url: /fr/net/geometry-processing/linearize-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Linéariser une géométrie
+
 ## Introduction
 Aspose.GIS pour .NET est une bibliothèque puissante qui permet aux développeurs de travailler efficacement avec des données géospatiales au sein d'applications .NET. Que vous créiez une application cartographique, effectuiez une analyse spatiale ou manipuliez des données géographiques, Aspose.GIS fournit les outils dont vous avez besoin pour accomplir votre travail.
 ## Conditions préalables
@@ -83,3 +89,9 @@ Oui, Aspose.GIS fournit une large gamme d'opérations spatiales et de capacités
  Oui, vous pouvez télécharger un essai gratuit à partir du[Site Aspose](https://releases.aspose.com/).
 ### Q : Où puis-je trouver de l'aide et du support pour Aspose.GIS ?
  Vous pouvez visiter le[Forum Aspose.GIS](https://forum.aspose.com/c/gis/33) pour l’aide de la communauté et du personnel de soutien d’Aspose.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

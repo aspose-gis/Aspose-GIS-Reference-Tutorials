@@ -3,10 +3,16 @@ title: Beheers georuimtelijke analyse met Aspose.GIS
 linktitle: Controleer de overlapping van geometrieën
 second_title: Aspose.GIS .NET-API
 description: Verken georuimtelijke analyse met Aspose.GIS voor .NET. Leer hoe u de overlap van geometrieën kunt controleren met stapsgewijze begeleiding.
-type: docs
 weight: 12
 url: /nl/net/geometry-analysis/check-geometries-overlap/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Beheers georuimtelijke analyse met Aspose.GIS
+
 ## Invoering
 
 Op het gebied van georuimtelijke analyse onderscheidt Aspose.GIS voor .NET zich als een krachtig hulpmiddel voor zowel ontwikkelaars als datawetenschappers. Dankzij de naadloze integratie met het .NET-framework kunnen gebruikers diep in ruimtelijke gegevens duiken, ingewikkelde analyses uitvoeren en waardevolle inzichten verkrijgen. Deze tutorial leidt u door het proces van het controleren van de overlap van geometrieën met behulp van Aspose.GIS voor .NET, met stapsgewijze instructies, essentiële vereisten en gedetailleerde voorbeelden.
@@ -101,3 +107,9 @@ A1: Ja, Aspose.GIS voor .NET kan naadloos worden geïntegreerd met andere .NET-b
 ### V5: Waar kan ik ondersteuning zoeken voor Aspose.GIS voor .NET?
 
 A5: Bezoek voor hulp of vragen het Aspose.GIS-forum[hier](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

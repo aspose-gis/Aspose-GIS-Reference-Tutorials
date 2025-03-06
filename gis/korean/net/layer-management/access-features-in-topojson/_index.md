@@ -3,10 +3,16 @@ title: .NET용 Aspose.GIS를 사용하여 TopoJSON 기능 잠금 해제
 linktitle: TopoJSON의 기능에 액세스
 second_title: Aspose.GIS .NET API
 description: .NET용 Aspose.GIS를 살펴보고 TopoJSON 기능에 단계별로 액세스하는 방법을 알아보세요. 문서를 자세히 살펴보고 지리공간 기능을 손쉽게 활용해 보세요.
-type: docs
 weight: 15
 url: /ko/net/layer-management/access-features-in-topojson/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# .NET용 Aspose.GIS를 사용하여 TopoJSON 기능 잠금 해제
+
 ## 소개
 .NET용 Aspose.GIS는 개발자가 지리공간 데이터를 쉽게 사용할 수 있게 해주는 강력한 라이브러리입니다. 이 튜토리얼에서는 .NET용 Aspose.GIS를 사용하여 TopoJSON의 기능에 액세스하는 방법을 살펴보겠습니다. TopoJSON은 지리적 특징을 간결하고 효율적인 방식으로 표현하는 형식입니다.
 ## 전제조건
@@ -67,3 +73,9 @@ Console.WriteLine(builder.ToString());
 예, 무료 평가판에 액세스할 수 있습니다[여기](https://releases.aspose.com/).
 ### Q: 라이센스를 구매하려면 어떻게 해야 합니까?
  라이센스 구매[여기](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

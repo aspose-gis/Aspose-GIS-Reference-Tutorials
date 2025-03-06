@@ -3,10 +3,16 @@ title: Aspose.GIS for .NET ile Geometri Kesişmelerini Kontrol Edin
 linktitle: Geometrilerin Kesişimini Kontrol Edin
 second_title: Aspose.GIS .NET API'si
 description: Aspose.GIS for .NET'i kullanarak adım adım rehberlikle geometrilerin kesişimini nasıl kontrol edeceğinizi öğrenin. CBS gelişiminizi zahmetsizce geliştirin.
-type: docs
 weight: 11
 url: /tr/net/geometry-analysis/check-geometries-intersection/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS for .NET ile Geometri Kesişmelerini Kontrol Edin
+
 ## giriiş
 Coğrafi bilgi sistemleri (GIS) alanında Aspose.GIS for .NET, geliştiricilerin gelişmiş mekansal işlevleri uygulamalarına sorunsuz bir şekilde entegre etmelerine olanak tanıyan güçlü bir araç seti olarak öne çıkıyor. İster deneyimli bir geliştirici olun ister GIS geliştirmeye yeni başlıyor olun, bu makale Aspose.GIS for .NET'ten yararlanarak geometrilerin kesişimini etkili bir şekilde kontrol etmek için kapsamlı bir kılavuz olarak hizmet edecektir.
 ## Önkoşullar
@@ -76,3 +82,9 @@ Evet, Aspose.GIS for .NET, .NET Core ve .NET Framework dahil olmak üzere çeşi
  Evet, adresinden geçici lisans alabilirsiniz.[Burada](https://purchase.aspose.com/temporary-license/).
 ### Aspose.GIS for .NET'in lisanslı sürümünü nereden satın alabilirim?
  Aspose.GIS for .NET'in lisanslı sürümünü şu adresten satın alabilirsiniz:[Burada](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

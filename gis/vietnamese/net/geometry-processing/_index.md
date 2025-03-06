@@ -3,10 +3,16 @@ title: Xử lý hình học
 linktitle: Xử lý hình học
 second_title: API Aspose.GIS .NET
 description: Nắm vững Aspose.GIS cho .NET với các hướng dẫn toàn diện của chúng tôi. Tìm hiểu cách xử lý hình học chính xác, phân tích không gian và thao tác dữ liệu để phát triển GIS tối ưu.
-type: docs
 weight: 23
 url: /vi/net/geometry-processing/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Xử lý hình học
+
 ## Giới thiệu
 
 Khai phá toàn bộ tiềm năng của Aspose.GIS cho .NET bằng các hướng dẫn chuyên sâu của chúng tôi về xử lý hình học. Cho dù bạn đang lặp lại hình học, điểm hay quản lý độ chính xác, hướng dẫn từng bước của chúng tôi sẽ đảm bảo tích hợp liền mạch vào các ứng dụng .NET của bạn.
@@ -81,3 +87,9 @@ Tìm hiểu cách dịch hình học từ Văn bản nổi tiếng bằng Aspose
 Tìm hiểu cách dịch hình học sang định dạng Nhị phân nổi tiếng (WKB) trong các ứng dụng .NET bằng Aspose.GIS để xử lý dữ liệu không gian liền mạch.
 ### [Chuyển đổi hình học sang định dạng WKT bằng Aspose.GIS cho .NET](./translate-geometry-to-wkt/)
 Tìm hiểu cách dịch hình học không gian sang định dạng Văn bản nổi tiếng (WKT) bằng Aspose.GIS cho .NET. Tăng cường kỹ năng phát triển GIS của bạn.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Buat Geometri MultiPoligon dengan Aspose.GIS
 linktitle: Buat Geometri MultiPoligon
 second_title: Aspose.GIS .NET API
 description: Pelajari cara membuat geometri MultiPolygon menggunakan Aspose.GIS untuk .NET. Panduan langkah demi langkah untuk pemula. Uji coba gratis tersedia.
-type: docs
 weight: 16
 url: /id/net/geometry-creation/create-multipolygon-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Buat Geometri MultiPoligon dengan Aspose.GIS
+
 ## Perkenalan
 Dalam dunia pengembangan Sistem Informasi Geografis (GIS), Aspose.GIS untuk .NET menonjol sebagai alat yang ampuh untuk membuat, mengedit, dan menganalisis data geospasial. Baik Anda seorang pengembang berpengalaman atau baru memulai, menguasai Aspose.GIS dapat membuka banyak kemungkinan untuk proyek Anda.
 ## Prasyarat
@@ -66,3 +72,9 @@ Sangat! Aspose.GIS menawarkan dokumentasi dan tutorial komprehensif untuk memban
  Ya, Anda bisa mendapatkan lisensi sementara dari[Di Sini](https://purchase.aspose.com/temporary-license/) untuk tujuan evaluasi.
 ### Bisakah saya membeli Aspose.GIS secara langsung?
  Ya, Anda dapat membeli Aspose.GIS dari situs web[Di Sini](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

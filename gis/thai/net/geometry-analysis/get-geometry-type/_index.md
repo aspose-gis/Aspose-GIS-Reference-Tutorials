@@ -3,10 +3,16 @@ title: รับประเภทเรขาคณิตด้วย Aspose.GI
 linktitle: รับประเภทเรขาคณิต
 second_title: Aspose.GIS .NET API
 description: ค้นพบพลังของ Aspose.GIS สำหรับ .NET เรียนรู้วิธีจัดการข้อมูลเชิงพื้นที่อย่างมีประสิทธิภาพในโครงการ .NET ของคุณด้วยบทช่วยสอนที่ครอบคลุมนี้
-type: docs
 weight: 23
 url: /th/net/geometry-analysis/get-geometry-type/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# รับประเภทเรขาคณิตด้วย Aspose.GIS สำหรับ .NET
+
 ## การแนะนำ
 ในขอบเขตของการพัฒนา .NET นั้น Aspose.GIS ทำหน้าที่เป็นเครื่องมืออันทรงพลังในการจัดการข้อมูลทางภูมิศาสตร์ ฟังก์ชันการทำงานที่หลากหลายทำให้เป็นตัวเลือกที่เหมาะสำหรับนักพัฒนาที่ทำงานกับข้อมูลเชิงพื้นที่ ในบทช่วยสอนนี้ เราจะเจาะลึกข้อมูลพื้นฐานของ Aspose.GIS สำหรับ .NET โดยแจกแจงแนวคิดหลักๆ และให้คำแนะนำทีละขั้นตอนเพื่อช่วยให้คุณเริ่มต้นได้อย่างง่ายดาย
 ## ข้อกำหนดเบื้องต้น
@@ -63,3 +69,9 @@ Console.WriteLine(geometryType); // จุด
  สำหรับตัวเลือกใบอนุญาตชั่วคราว โปรดไปที่[ใบอนุญาตชั่วคราว](https://purchase.aspose.com/temporary-license/) หน้าหนังสือ.
 ### ฉันจะซื้อ Aspose.GIS สำหรับโครงการของฉันได้ที่ไหน
  คุณสามารถซื้อ Aspose.GIS ได้จากหน้าการซื้อ[ที่นี่](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

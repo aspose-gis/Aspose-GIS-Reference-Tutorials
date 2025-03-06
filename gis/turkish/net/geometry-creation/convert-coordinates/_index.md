@@ -3,10 +3,16 @@ title: Aspose.GIS ile Dönüşümü Koordine Et
 linktitle: Koordinatları Dönüştür
 second_title: Aspose.GIS .NET API'si
 description: Aspose.GIS for .NET ile koordinatları nasıl dönüştüreceğinizi öğrenin. Adım adım kılavuz, ön koşullar ve SSS sağlanmıştır.
-type: docs
 weight: 25
 url: /tr/net/geometry-creation/convert-coordinates/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS ile Dönüşümü Koordine Et
+
 ## giriiş
 Bu derste, .NET için güçlü Aspose.GIS kütüphanesini kullanarak coğrafi bilgi sistemleri (GIS) dünyasını derinlemesine inceleyeceğiz. Aspose.GIS, geliştiricilerin konumsal verilerle zahmetsizce çalışmasını sağlayan kapsamlı bir araç setidir. İster deneyimli bir geliştirici olun ister yeni başlıyor olun, bu eğitim size koordinatları etkili bir şekilde dönüştürmek için Aspose.GIS'i kullanma sürecinde rehberlik edecektir.
 ## Önkoşullar
@@ -66,3 +72,9 @@ Aspose.GIS öncelikle .NET geliştiricilerini hedefler ancak Aspose.GIS for Java
  Evet, geçici lisanslar şu adresten alınabilir:[geçici lisans sayfası](https://purchase.aspose.com/temporary-license/).
 ### Aspose.GIS'i nereden satın alabilirim?
  Aspose.GIS'i şu adresten satın alabilirsiniz:[satın alma sayfası](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

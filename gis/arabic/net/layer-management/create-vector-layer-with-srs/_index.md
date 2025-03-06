@@ -3,10 +3,16 @@ title: إنشاء طبقة متجهة باستخدام SRS
 linktitle: إنشاء طبقة متجهة باستخدام SRS
 second_title: Aspose.GIS .NET API
 description: استكشف Aspose.GIS for .NET - مفتاحك للتكامل السلس لنظم المعلومات الجغرافية. قم بإنشاء طبقات متجهة دون عناء باستخدام أنظمة الإسناد المكاني المحددة. التحميل الان!
-type: docs
 weight: 13
 url: /ar/net/layer-management/create-vector-layer-with-srs/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# إنشاء طبقة متجهة باستخدام SRS
+
 ## مقدمة
 Aspose.GIS for .NET هي مكتبة قوية تمكن المطورين من العمل مع بيانات نظام المعلومات الجغرافية (GIS) بسلاسة في تطبيقات .NET. في هذا البرنامج التعليمي، سنركز على إنشاء طبقة متجهة باستخدام نظام الإسناد المكاني (SRS). بحلول نهاية هذا الدليل، ستكون قادرًا على دمج إمكانات نظم المعلومات الجغرافية بسهولة في مشاريع .NET الخاصة بك.
 ## المتطلبات الأساسية
@@ -90,3 +96,9 @@ using (var layer = Drivers.Shapefile.OpenLayer(dataDir + "filepath_out.shp"))
  نعم، يمكنك استكشاف ميزات Aspose.GIS من خلال الحصول على نسخة تجريبية مجانية[هنا](https://releases.aspose.com/).
 ### كيف يمكنني شراء ترخيص Aspose.GIS؟
  لشراء ترخيص، قم بزيارة[صفحة الشراء](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

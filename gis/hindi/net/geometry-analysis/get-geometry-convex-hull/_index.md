@@ -3,10 +3,16 @@ title: .NET के लिए Aspose.GIS के साथ उत्तल हल 
 linktitle: ज्यामिति उत्तल पतवार प्राप्त करें
 second_title: Aspose.GIS .NET एपीआई
 description: Aspose.GIS का उपयोग करके .NET में ज्यामिति के उत्तल हुल की गणना करना सीखें। कोड उदाहरणों और अक्सर पूछे जाने वाले प्रश्नों के साथ व्यापक ट्यूटोरियल।
-type: docs
 weight: 20
 url: /hi/net/geometry-analysis/get-geometry-convex-hull/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# .NET के लिए Aspose.GIS के साथ उत्तल हल की गणना करें
+
 ## परिचय
 .NET के लिए Aspose.GIS एक शक्तिशाली लाइब्रेरी है जो .NET अनुप्रयोगों में भौगोलिक सूचना प्रणाली (GIS) के साथ काम करने के लिए कार्यात्मकताओं की एक विस्तृत श्रृंखला प्रदान करती है। चाहे आप मैपिंग एप्लिकेशन बना रहे हों, स्थानिक डेटा का विश्लेषण कर रहे हों, या भू-स्थानिक संचालन कर रहे हों, Aspose.GIS अपने सहज एपीआई और व्यापक फीचर सेट के साथ प्रक्रिया को सरल बनाता है।
 ## आवश्यक शर्तें
@@ -79,3 +85,9 @@ for (int i = 0; i < ring.Count; ++i)
  Aspose.GIS के लिए अस्थायी लाइसेंस नामित के माध्यम से प्राप्त किए जा सकते हैं[अस्थायी लाइसेंस लिंक](https://purchase.aspose.com/temporary-license/), परीक्षण अवधि या अल्पकालिक परियोजनाओं के दौरान निर्बाध उपयोग को सक्षम करना।
 ### प्रश्न: मैं कहां से सहायता मांग सकता हूं या Aspose.GIS से संबंधित चर्चाओं में भाग ले सकता हूं?
 समर्थन, मार्गदर्शन और सामुदायिक सहभागिता के लिए Aspose.GIS फोरम पर जाएँ[यहाँ](https://forum.aspose.com/c/gis/33), जहां आप साथी डेवलपर्स के साथ जुड़ सकते हैं, प्रश्न पूछ सकते हैं और अंतर्दृष्टि साझा कर सकते हैं।
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

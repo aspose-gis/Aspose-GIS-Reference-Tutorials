@@ -3,10 +3,16 @@ title: Καθορίστε το μήκος τιμής χαρακτηριστικ�
 linktitle: Καθορίστε το μήκος τιμής χαρακτηριστικού
 second_title: Aspose.GIS .NET API
 description: Εξερευνήστε τη γεωχωρική ανάπτυξη με το Aspose.GIS για .NET. Διαχειριστείτε και χειριστείτε χωρίς κόπο χωρικά δεδομένα στις εφαρμογές σας .NET.
-type: docs
 weight: 18
 url: /el/net/layer-data-operations/specify-attribute-value-length/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Καθορίστε το μήκος τιμής χαρακτηριστικού
+
 ## Εισαγωγή
 Καλώς ήρθατε στον κόσμο του Aspose.GIS για .NET – η πύλη σας για ισχυρή και αποτελεσματική γεωχωρική ανάπτυξη! Αυτό το περιεκτικό σεμινάριο θα σας καθοδηγήσει στα θεμελιώδη βήματα της χρήσης του Aspose.GIS για τη διαχείριση γεωχωρικών δεδομένων χωρίς κόπο στις εφαρμογές σας .NET. Είτε είστε έμπειρος προγραμματιστής είτε αρχάριος στον γεωχωρικό προγραμματισμό, αυτός ο οδηγός έχει σχεδιαστεί για να σας παρέχει γερές βάσεις και πρακτικές γνώσεις.
 ## Προαπαιτούμενα
@@ -61,3 +67,9 @@ layer.Add(feature);
  Α: Αγοράστε την άδειά σας[εδώ](https://purchase.aspose.com/buy).
 ### Ε: Πού μπορώ να έχω πρόσβαση στην τεκμηρίωση για το Aspose.GIS για .NET;
  Α: Ανατρέξτε στο[τεκμηρίωση](https://reference.aspose.com/gis/net/) για ολοκληρωμένη καθοδήγηση.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

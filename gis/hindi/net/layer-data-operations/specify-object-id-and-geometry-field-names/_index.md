@@ -3,10 +3,16 @@ title: ऑब्जेक्ट आईडी और ज्यामिति फ
 linktitle: ऑब्जेक्ट आईडी और ज्यामिति फ़ील्ड नाम निर्दिष्ट करें
 second_title: Aspose.GIS .NET एपीआई
 description: .NET के लिए Aspose.GIS के साथ GIS जादू का अन्वेषण करें! भू-स्थानिक डेटा को सहजता से प्रबंधित करें। अभी डाउनलोड करें और स्थानिक बुद्धिमत्ता की शक्ति का लाभ उठाएं।
-type: docs
 weight: 20
 url: /hi/net/layer-data-operations/specify-object-id-and-geometry-field-names/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# ऑब्जेक्ट आईडी और ज्यामिति फ़ील्ड नाम निर्दिष्ट करें
+
 ## परिचय
 .NET के लिए Aspose.GIS का उपयोग करके भौगोलिक सूचना प्रणाली (GIS) के क्षेत्र में यात्रा शुरू करने से डेवलपर्स और उत्साही लोगों के लिए समान रूप से संभावनाओं की दुनिया खुल जाती है। यह शक्तिशाली लाइब्रेरी आपको भू-स्थानिक डेटा को सहजता से संभालने में सक्षम बनाती है। इस ट्यूटोरियल में, हम आपके जीआईएस प्रयासों की नींव रखते हुए, ऑब्जेक्ट आईडी और ज्योमेट्री फ़ील्ड नामों को निर्दिष्ट करने की प्रक्रिया में आपका मार्गदर्शन करेंगे।
 ## आवश्यक शर्तें
@@ -74,3 +80,9 @@ using (var layer = dataset.OpenLayer("layer_name"))
 उत्तर: .NET के लिए Aspose.GIS विभिन्न स्थानिक संदर्भ प्रणालियों का समर्थन करता है, जो विभिन्न भौगोलिक डेटासेट के लिए लचीलापन प्रदान करता है।
 ### प्रश्न: मैं कहां से सहायता मांग सकता हूं या Aspose.GIS से संबंधित प्रश्नों पर चर्चा कर सकता हूं?
  उत्तर: Aspose.GIS फोरम पर जाएँ[यहाँ](https://forum.aspose.com/c/gis/33) समर्थन और चर्चा के लिए.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

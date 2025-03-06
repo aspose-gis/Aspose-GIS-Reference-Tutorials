@@ -3,10 +3,16 @@ title: حساب الأشكال الهندسية في الهندسة باستخد
 linktitle: عد الأشكال الهندسية في الهندسة
 second_title: Aspose.GIS .NET API
 description: تعرف على كيفية حساب الأشكال الهندسية في الشكل الهندسي باستخدام Aspose.GIS for .NET. برنامج تعليمي خطوة بخطوة مع أمثلة التعليمات البرمجية للمطورين.
-type: docs
 weight: 23
 url: /ar/net/geometry-creation/count-geometries-in-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# حساب الأشكال الهندسية في الهندسة باستخدام Aspose.GIS
+
 ## مقدمة
 يعد Aspose.GIS for .NET أداة قوية للمطورين الذين يسعون إلى دمج الوظائف الجغرافية المكانية في تطبيقات .NET الخاصة بهم. سواء كنت تقوم بإنشاء برامج رسم خرائط، أو خدمات تعتمد على الموقع، أو أدوات التحليلات المكانية، فإن Aspose.GIS يوفر مجموعة شاملة من الميزات لتلبية احتياجاتك. في هذا البرنامج التعليمي، سوف نستكشف كيفية حساب الأشكال الهندسية داخل الشكل الهندسي باستخدام Aspose.GIS for .NET.
 ## المتطلبات الأساسية
@@ -70,3 +76,9 @@ Console.WriteLine(geometriesCount); // 2
  نعم، يمكنك تنزيل نسخة تجريبية مجانية من[موقع إلكتروني](https://releases.aspose.com/).
 ### أين يمكنني العثور على دعم لـ Aspose.GIS لـ .NET؟
  يمكنك العثور على الدعم على[منتدى Aspose.GIS](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

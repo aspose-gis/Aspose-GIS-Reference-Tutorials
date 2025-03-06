@@ -3,10 +3,16 @@ title: जियोजसन को टोपोजसन में बदले
 linktitle: जियोजसन को टोपोजसन में बदलें
 second_title: Aspose.GIS .NET एपीआई
 description: .NET लाइब्रेरी के लिए Aspose.GIS का उपयोग करके जियोजसन फ़ाइलों को टॉपोजॉन प्रारूप में सहजता से परिवर्तित करने का तरीका जानें। अपनी जीआईएस डेटा प्रोसेसिंग दक्षता बढ़ाएँ।
-type: docs
 weight: 11
 url: /hi/net/geo-data-conversion/convert-geojson-to-topojson/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# जियोजसन को टोपोजसन में बदलें
+
 ## परिचय
 भौगोलिक सूचना प्रणाली (जीआईएस) के दायरे में, डेटा इंटरचेंज प्रारूप विभिन्न प्रणालियों के बीच डेटा विनिमय और अंतरसंचालनीयता को सुविधाजनक बनाने में महत्वपूर्ण भूमिका निभाते हैं। ऐसे दो लोकप्रिय प्रारूप हैं जियोजसन और टोपोजसन। जियोजसन, भौगोलिक डेटा संरचनाओं को एन्कोड करने के लिए एक हल्का प्रारूप, और टोपोजसन, जियोजसन का एक विस्तार, भौगोलिक डेटा के अधिक कुशल भंडारण और प्रसारण के लिए टोपोलॉजी एन्कोडिंग प्रदान करता है। इस ट्यूटोरियल में, हम .NET लाइब्रेरी के लिए Aspose.GIS का उपयोग करके जियोJSON को TopoJSON में परिवर्तित करने के बारे में विस्तार से जानेंगे।
 ## आवश्यक शर्तें
@@ -51,3 +57,9 @@ VectorLayer.Convert(sampleGeoJsonPath, Drivers.GeoJson, outputFilePath, Drivers.
  आप Aspose.GIS सामुदायिक मंच से समर्थन प्राप्त कर सकते हैं[यहाँ](https://forum.aspose.com/c/gis/33).
 ### क्या मैं व्यावसायिक परियोजनाओं के लिए .NET के लिए Aspose.GIS का उपयोग कर सकता हूँ?
  हां, आप यहां से लाइसेंस खरीद सकते हैं[इस लिंक](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

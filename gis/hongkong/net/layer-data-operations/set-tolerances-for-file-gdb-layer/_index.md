@@ -3,10 +3,16 @@ title: 設定檔案 GDB 層的容差
 linktitle: 設定檔案 GDB 層的容差
 second_title: Aspose.GIS .NET API
 description: 探索 Aspose.GIS for .NET 並掌握地理空間資料操作。透過逐步指導輕鬆設定公差。增強您的 .NET 應用程式。
-type: docs
 weight: 22
 url: /zh-hant/net/layer-data-operations/set-tolerances-for-file-gdb-layer/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 設定檔案 GDB 層的容差
+
 ## 介紹
 歡迎來到使用 Aspose.GIS for .NET 進行地理空間資料操作的世界！如果您渴望提高在 .NET 應用程式中處理地理資訊的技能，那麼您來對地方了。在本綜合指南中，我們將深入研究文件地理資料庫 (GDB) 圖層設定容差的複雜細節，為您提供實用見解和逐步說明。
 ## 先決條件
@@ -69,3 +75,9 @@ using (var layer = dataset.CreateLayer("layer_name", options))
 是的，您可以獲得[臨時執照](https://purchase.aspose.com/temporary-license/)用於測試和評估。
 ### 在哪裡可以購買 Aspose.GIS for .NET 授權？
 您可以從以下位置購買許可證[購買頁面](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

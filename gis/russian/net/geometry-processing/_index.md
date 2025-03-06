@@ -3,10 +3,16 @@ title: Обработка геометрии
 linktitle: Обработка геометрии
 second_title: API Aspose.GIS .NET
 description: Освойте Aspose.GIS для .NET с помощью наших подробных руководств. Изучите точную обработку геометрии, пространственный анализ и манипулирование данными для оптимальной разработки ГИС.
-type: docs
 weight: 23
 url: /ru/net/geometry-processing/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Обработка геометрии
+
 ## Введение
 
 Раскройте весь потенциал Aspose.GIS для .NET с помощью наших подробных руководств по обработке геометрии. Независимо от того, выполняете ли вы итерацию по геометрии, точкам или управляете точностью, наши пошаговые руководства обеспечат плавную интеграцию с вашими .NET-приложениями.
@@ -81,3 +87,9 @@ url: /ru/net/geometry-processing/
 Узнайте, как преобразовать геометрию в формат Well-Known Binary (WKB) в приложениях .NET с помощью Aspose.GIS для плавной обработки пространственных данных.
 ### [Преобразование геометрии в формат WKT с помощью Aspose.GIS для .NET](./translate-geometry-to-wkt/)
 Узнайте, как перевести пространственную геометрию в формат Well-Known Text (WKT) с помощью Aspose.GIS для .NET. Повысьте свои навыки разработки ГИС.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

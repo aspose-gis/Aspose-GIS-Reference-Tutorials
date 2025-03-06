@@ -3,10 +3,16 @@ title: 取得特徵屬性值
 linktitle: 取得特徵屬性值
 second_title: Aspose.GIS .NET API
 description: 探索 Aspose.GIS for .NET – 無縫 GIS 資料整合的終極工具。立即下載免費試用版！ #Aspose #GIS #.NET
-type: docs
 weight: 12
 url: /zh-hant/net/layer-interaction-and-data-access/get-feature-attribute-value/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 取得特徵屬性值
+
 ## 介紹
 歡迎來到 Aspose.GIS for .NET 的世界，這是一個功能強大的程式庫，使 .NET 開發人員能夠無縫地處理地理資訊系統 (GIS) 資料。無論您是經驗豐富的開發人員還是剛開始 GIS 之旅，本教學都將引導您完成使用 Aspose.GIS for .NET 擷取要素屬性值的流程。
 ## 先決條件
@@ -80,3 +86,9 @@ for (int i = 0; i < layer.Count; i++)
 答：加入討論[Aspose.GIS論壇](https://forum.aspose.com/c/gis/33)尋求協助並與其他用戶聯繫。
 ### Q：Aspose.GIS 有免費試用版嗎？
 答：當然可以！您可以透過下載免費試用版來探索 Aspose.GIS 的功能[這裡](https://releases.aspose.com/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

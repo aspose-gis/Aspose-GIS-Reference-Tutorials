@@ -3,10 +3,16 @@ title: GeoJSON からファイル GDB への変換をわかりやすく解説
 linktitle: GeoJSON レイヤーをファイル GDB に変換
 second_title: Aspose.GIS .NET API
 description: Aspose.GIS for .NET で地理空間の驚異を解き放ちましょう! GeoJSON レイヤーをファイル ジオデータベースに簡単に変換します。やってみよう！ #アスポーズ #GIS
-type: docs
 weight: 17
 url: /ja/net/layer-management/convert-geojson-layer-to-file-gdb/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# GeoJSON からファイル GDB への変換をわかりやすく解説
+
 ## 導入
 地理情報システム (GIS) の動的な領域では、異なる形式間でデータをシームレスに変換する機能が重要です。 Aspose.GIS for .NET は強力な味方として登場し、地理空間データを簡単に処理するための包括的なツール スイートを提供します。このチュートリアルでは、Aspose.GIS for .NET を使用して GeoJSON レイヤーをファイル ジオデータベース (ファイル GDB) に変換するプロセスを詳しく説明します。
 ## 前提条件
@@ -88,3 +94,9 @@ using (var geoJsonLayer = VectorLayer.Open(geoJsonPath, Drivers.GeoJson))
  Aspose.GIS にアクセスします。[フォーラム](https://forum.aspose.com/c/gis/33)専用のサポートを提供します。
 ### Aspose.GIS の一時ライセンスを取得できますか?
 はい、一時ライセンスを確保できます[ここ](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

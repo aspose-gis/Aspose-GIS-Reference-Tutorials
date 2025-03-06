@@ -3,10 +3,16 @@ title: Đặt dung sai tuyến tính hóa bằng Aspose.GIS cho .NET
 linktitle: Đặt dung sai tuyến tính hóa
 second_title: API Aspose.GIS .NET
 description: Làm chủ Aspose.GIS cho .NET để xử lý dữ liệu không gian địa lý một cách dễ dàng. Hãy làm theo hướng dẫn từng bước này và khám phá toàn bộ tiềm năng phát triển GIS trong .NET.
-type: docs
 weight: 17
 url: /vi/net/geometry-processing/set-linearization-tolerance/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Đặt dung sai tuyến tính hóa bằng Aspose.GIS cho .NET
+
 ## Giới thiệu
 Trong thế giới phát triển Hệ thống thông tin địa lý (GIS), Aspose.GIS cho .NET nổi bật như một bộ công cụ mạnh mẽ để xử lý dữ liệu không gian một cách dễ dàng và hiệu quả. Cho dù bạn là nhà phát triển GIS dày dạn kinh nghiệm hay mới bắt đầu, việc thành thạo Aspose.GIS có thể nâng cao đáng kể khả năng làm việc với dữ liệu không gian địa lý trong môi trường .NET của bạn.
 ## Điều kiện tiên quyết
@@ -84,3 +90,9 @@ Có, Aspose.GIS cho .NET hỗ trợ nhiều định dạng dữ liệu GIS, bao 
 Có, bạn có thể tải xuống phiên bản dùng thử miễn phí của Aspose.GIS cho .NET từ trang web Aspose.
 ### Tôi có thể nhận hỗ trợ cho Aspose.GIS cho .NET ở đâu?
 Bạn có thể nhận hỗ trợ về Aspose.GIS cho .NET từ diễn đàn Aspose. Truy cập liên kết hỗ trợ được cung cấp trong phần tài nguyên bên dưới.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

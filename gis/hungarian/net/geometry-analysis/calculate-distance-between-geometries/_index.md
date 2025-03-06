@@ -3,10 +3,16 @@ title: Számítsa ki a geometriák közötti távolságot az Aspose.GIS segíts�
 linktitle: Számítsa ki a geometriák közötti távolságot
 second_title: Aspose.GIS .NET API
 description: Ismerje meg, hogyan számíthatja ki a geometriák közötti távolságokat .NET-ben az Aspose.GIS segítségével. Útmutató lépésről lépésre kódpéldákkal. Javítsa térinformatikai alkalmazásait.
-type: docs
 weight: 21
 url: /hu/net/geometry-analysis/calculate-distance-between-geometries/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Számítsa ki a geometriák közötti távolságot az Aspose.GIS segítségével
+
 ## Bevezetés
 térinformatikai programozás területén a különböző geometriák közötti távolság kiszámításának képessége a legfontosabb. Legyen szó sokszögekről, vonalakról vagy pontokról, a köztük lévő távolság ismerete kulcsfontosságú lehet a különböző alkalmazásokban, a térképezéstől a logisztikai tervezésig. Az Aspose.GIS for .NET hatékony eszközöket biztosít az ilyen számítások egyszerű és pontos elvégzéséhez.
 ## Előfeltételek
@@ -84,3 +90,9 @@ Igen, az Aspose.GIS for .NET használatával 2D és 3D geometriákkal is dolgozh
 Az Aspose.GIS for .NET interoperabilitást biztosít más GIS könyvtárakkal, lehetővé téve további funkciók kihasználását.
 ### Rendelkezésre áll technikai támogatás az Aspose.GIS-hez a .NET felhasználók számára?
  Igen, az Aspose.GIS for .NET felhasználói hozzáférhetnek a technikai támogatáshoz az Aspose-n keresztül[fórumok](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

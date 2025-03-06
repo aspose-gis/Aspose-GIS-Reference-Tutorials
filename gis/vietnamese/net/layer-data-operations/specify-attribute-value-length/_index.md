@@ -3,10 +3,16 @@ title: Chỉ định độ dài giá trị thuộc tính
 linktitle: Chỉ định độ dài giá trị thuộc tính
 second_title: API Aspose.GIS .NET
 description: Khám phá sự phát triển không gian địa lý với Aspose.GIS cho .NET. Dễ dàng quản lý và thao tác dữ liệu không gian trong các ứng dụng .NET của bạn.
-type: docs
 weight: 18
 url: /vi/net/layer-data-operations/specify-attribute-value-length/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Chỉ định độ dài giá trị thuộc tính
+
 ## Giới thiệu
 Chào mừng bạn đến với thế giới của Aspose.GIS cho .NET - cửa ngõ cho sự phát triển không gian địa lý mạnh mẽ và hiệu quả! Hướng dẫn toàn diện này sẽ hướng dẫn bạn các bước cơ bản khi sử dụng Aspose.GIS để quản lý dữ liệu không gian địa lý một cách dễ dàng trong các ứng dụng .NET của bạn. Cho dù bạn là nhà phát triển dày dạn kinh nghiệm hay người mới làm quen với lập trình không gian địa lý, hướng dẫn này được thiết kế để cung cấp cho bạn nền tảng vững chắc và những hiểu biết thực tế.
 ## Điều kiện tiên quyết
@@ -61,3 +67,9 @@ Chúc mừng! Bạn đã chỉ định thành công độ dài giá trị thuộ
  A: Mua giấy phép của bạn[đây](https://purchase.aspose.com/buy).
 ### Câu hỏi: Tôi có thể truy cập tài liệu về Aspose.GIS cho .NET ở đâu?
  Đáp: Hãy tham khảo[tài liệu](https://reference.aspose.com/gis/net/) để được hướng dẫn toàn diện.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

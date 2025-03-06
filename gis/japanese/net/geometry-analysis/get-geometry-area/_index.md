@@ -3,10 +3,16 @@ title: Aspose.GIS でジオメトリ領域を取得する
 linktitle: ジオメトリ領域の取得
 second_title: Aspose.GIS .NET API
 description: Aspose.GIS を使用して、.NET の地理情報システムの力を解き放ちます。空間操作を簡単に実行できます。
-type: docs
 weight: 18
 url: /ja/net/geometry-analysis/get-geometry-area/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS でジオメトリ領域を取得する
+
 ## 導入
 地理情報システム (GIS) と空間データ処理の世界では、Aspose.GIS for .NET は開発者にとって堅牢で多用途のツールとして際立っています。 Aspose.GIS の豊富な機能セットと直観的な API により、開発者はさまざまな地理データ形式を操作し、空間操作を実行し、.NET アプリケーション内でジオメトリを簡単に操作できるようになります。
 ## 前提条件
@@ -72,3 +78,9 @@ Aspose.GIS for .NET でサポートを見つけたり、コミュニティに参
 はい、Aspose.GIS for .NET の一時ライセンスを利用できます。から入手できます。[購入ページ](https://purchase.aspose.com/temporary-license/).
 ### Aspose.GIS for .NET はさまざまな地理データ形式をサポートしていますか?
 もちろん、Aspose.GIS for .NET は幅広い地理データ形式をサポートしており、データ処理の互換性と柔軟性を確保しています。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

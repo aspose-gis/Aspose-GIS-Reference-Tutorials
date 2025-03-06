@@ -3,10 +3,16 @@ title: Đặt dung sai cho lớp GDB của tệp
 linktitle: Đặt dung sai cho lớp GDB của tệp
 second_title: API Aspose.GIS .NET
 description: Khám phá Aspose.GIS cho .NET và làm chủ thao tác dữ liệu không gian địa lý. Đặt dung sai dễ dàng với hướng dẫn từng bước. Nâng cao các ứng dụng .NET của bạn.
-type: docs
 weight: 22
 url: /vi/net/layer-data-operations/set-tolerances-for-file-gdb-layer/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Đặt dung sai cho lớp GDB của tệp
+
 ## Giới thiệu
 Chào mừng bạn đến với thế giới thao tác dữ liệu không gian địa lý bằng Aspose.GIS cho .NET! Nếu bạn mong muốn nâng cao kỹ năng xử lý thông tin địa lý trong các ứng dụng .NET của mình thì bạn đã đến đúng nơi. Trong hướng dẫn toàn diện này, chúng tôi sẽ đi sâu vào các chi tiết phức tạp về cách thiết lập dung sai cho lớp Cơ sở dữ liệu địa lý tệp (GDB), cung cấp cho bạn thông tin chi tiết thực tế và hướng dẫn từng bước.
 ## Điều kiện tiên quyết
@@ -69,3 +75,9 @@ Có, Aspose.GIS hỗ trợ khả năng tương tác, cho phép bạn tích hợp
  Có, bạn có thể nhận được một[giấy phép tạm thời](https://purchase.aspose.com/temporary-license/) để kiểm tra và đánh giá.
 ### Tôi có thể mua giấy phép Aspose.GIS cho .NET ở đâu?
  Bạn có thể mua giấy phép từ[trang mua](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

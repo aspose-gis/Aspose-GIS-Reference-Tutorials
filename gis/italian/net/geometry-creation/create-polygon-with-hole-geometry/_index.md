@@ -3,10 +3,16 @@ title: Crea un poligono con la geometria del foro utilizzando Aspose.GIS
 linktitle: Crea un poligono con la geometria del foro
 second_title: API Aspose.GIS .NET
 description: Scopri come creare un poligono con la geometria del foro utilizzando Aspose.GIS per .NET. Tutorial passo passo con esempi di codice.
-type: docs
 weight: 13
 url: /it/net/geometry-creation/create-polygon-with-hole-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Crea un poligono con la geometria del foro utilizzando Aspose.GIS
+
 ## introduzione
 In questo tutorial, esamineremo il processo di creazione di un poligono con una geometria del foro utilizzando Aspose.GIS per .NET. Aspose.GIS è una potente libreria che consente agli sviluppatori di lavorare con dati geospaziali nelle loro applicazioni .NET. 
 ## Prerequisiti
@@ -66,3 +72,9 @@ Aspose.GIS è una libreria .NET che consente agli sviluppatori di lavorare con d
  Puoi trovare supporto per Aspose.GIS su[Forum Aspose.GIS](https://forum.aspose.com/c/gis/33).
 ### 5. Come posso ottenere una licenza temporanea per Aspose.GIS?
  È possibile ottenere una licenza temporanea per Aspose.GIS da[Qui](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

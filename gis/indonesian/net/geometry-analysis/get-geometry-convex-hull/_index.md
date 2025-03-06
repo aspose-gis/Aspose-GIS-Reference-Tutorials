@@ -3,10 +3,16 @@ title: Hitung Convex Hull dengan Aspose.GIS untuk .NET
 linktitle: Dapatkan Geometri Convex Hull
 second_title: Aspose.GIS .NET API
 description: Pelajari cara menghitung lambung cembung suatu geometri di .NET menggunakan Aspose.GIS. Tutorial komprehensif dengan contoh kode dan FAQ.
-type: docs
 weight: 20
 url: /id/net/geometry-analysis/get-geometry-convex-hull/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Hitung Convex Hull dengan Aspose.GIS untuk .NET
+
 ## Perkenalan
 Aspose.GIS untuk .NET adalah perpustakaan canggih yang menyediakan berbagai fungsi untuk bekerja dengan sistem informasi geografis (GIS) dalam aplikasi .NET. Baik Anda membuat aplikasi pemetaan, menganalisis data spasial, atau melakukan operasi geospasial, Aspose.GIS menyederhanakan proses dengan API intuitif dan rangkaian fitur komprehensif.
 ## Prasyarat
@@ -79,3 +85,9 @@ Tentu saja, Aspose.GIS mendukung berbagai format geospasial, termasuk shapefile,
  Lisensi sementara untuk Aspose.GIS dapat diperoleh melalui yang ditunjuk[tautan lisensi sementara](https://purchase.aspose.com/temporary-license/), memungkinkan penggunaan tanpa gangguan selama masa percobaan atau proyek jangka pendek.
 ### T: Di mana saya bisa mencari bantuan atau berpartisipasi dalam diskusi terkait Aspose.GIS?
 Untuk dukungan, bimbingan, dan interaksi komunitas, kunjungi forum Aspose.GIS[Di Sini](https://forum.aspose.com/c/gis/33), tempat Anda dapat berinteraksi dengan sesama pengembang, mengajukan pertanyaan, dan berbagi wawasan.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: 层交互和数据访问
 linktitle: 层交互和数据访问
 second_title: Aspose.GIS .NET API
 description: 通过我们的图层交互和数据访问教程释放 Aspose.GIS for .NET 的潜力。探索地理空间开发并无缝操作要素。
-type: docs
 weight: 25
 url: /zh/net/layer-interaction-and-data-access/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 层交互和数据访问
+
 ## 介绍
 
 Aspose.GIS for .NET 处于地理空间开发的最前沿，为无缝 GIS 数据集成提供了一套全面的工具。在本系列教程中，我们深入研究层交互和数据访问的复杂性，释放这个强大库的全部潜力。
@@ -49,3 +55,9 @@ Aspose.GIS for .NET 处于地理空间开发的最前沿，为无缝 GIS 数据�
 使用 Aspose.GIS 探索 .NET 中地理空间数据操作的强大功能。与 KML 图层交互的分步指南。 
 ### [修改图层特征](./modify-layer-features/)
 探索 Aspose.GIS for .NET 并轻松掌握修改 shapefile 中图层特征的艺术。精确、轻松地提升您的地理空间应用程序。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

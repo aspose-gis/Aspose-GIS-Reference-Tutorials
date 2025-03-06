@@ -3,10 +3,16 @@ title: Aspose.GIS を使用してジオメトリ内のジオメトリを数え�
 linktitle: ジオメトリ内のジオメトリを数える
 second_title: Aspose.GIS .NET API
 description: Aspose.GIS for .NET を使用して、ジオメトリ内のジオメトリをカウントする方法を学習します。開発者向けのコード例を含むステップバイステップのチュートリアル。
-type: docs
 weight: 23
 url: /ja/net/geometry-creation/count-geometries-in-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS を使用してジオメトリ内のジオメトリを数える
+
 ## 導入
 Aspose.GIS for .NET は、.NET アプリケーションに地理空間機能を組み込もうとしている開発者にとって強力なツールです。地図作成ソフトウェア、位置ベースのサービス、空間分析ツールのいずれを構築している場合でも、Aspose.GIS はニーズを満たす包括的な機能セットを提供します。このチュートリアルでは、Aspose.GIS for .NET を使用してジオメトリ内のジオメトリをカウントする方法を検討します。
 ## 前提条件
@@ -70,3 +76,9 @@ Console.WriteLine(geometriesCount); // 2
 はい、次のサイトから無料試用版をダウンロードできます。[Webサイト](https://releases.aspose.com/).
 ### Aspose.GIS for .NET のサポートはどこで見つけられますか?
 サポートは次のサイトで見つけることができます。[Aspose.GIS フォーラム](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

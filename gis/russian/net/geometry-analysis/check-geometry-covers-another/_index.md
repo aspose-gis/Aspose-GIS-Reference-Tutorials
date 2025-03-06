@@ -3,10 +3,16 @@ title: Проверьте, что геометрия охватывает дру
 linktitle: Проверьте, что геометрия охватывает другое
 second_title: API Aspose.GIS .NET
 description: Узнайте, как использовать Aspose.GIS для .NET для эффективной работы с географическими данными, анализа пространственной информации и интеграции картографических функций в ваши .NET-приложения.
-type: docs
 weight: 15
 url: /ru/net/geometry-analysis/check-geometry-covers-another/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Проверьте, что геометрия охватывает другое
+
 ## Введение
 Aspose.GIS for .NET — это мощная библиотека, предоставляющая разработчикам инструменты для эффективной работы с географическими данными в их .NET-приложениях. Независимо от того, создаете ли вы картографическое приложение, анализируете пространственные данные или интегрируете географические объекты в свое программное обеспечение, Aspose.GIS предлагает полный набор функций для оптимизации процесса разработки.
 ## Предварительные условия
@@ -74,3 +80,9 @@ Console.WriteLine(point.CoveredBy(line)); // Истинный
 Aspose.GIS for .NET — это собственная библиотека, разработанная Aspose, поэтому вклад сторонних разработчиков не принимается. Однако вы можете оставить отзыв и предложения по улучшению библиотеки.
 ### Как часто выходят обновления Aspose.GIS for .NET?
  Обновления Aspose.GIS for .NET выпускаются регулярно и содержат новые функции, улучшения и исправления ошибок. Проверить[Веб-сайт](https://releases.aspose.com/gis/net/) для последних выпусков.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

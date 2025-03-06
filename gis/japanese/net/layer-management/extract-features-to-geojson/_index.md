@@ -3,10 +3,16 @@ title: 特徴を GeoJSON に抽出する
 linktitle: 特徴を GeoJSON に抽出する
 second_title: Aspose.GIS .NET API
 description: Aspose.GIS for .NET を使用してフィーチャを GeoJSON に抽出するためのステップバイステップ ガイドをご覧ください。 GIS のパワーを簡単に活用しましょう。 #アスポーズ #GIS
-type: docs
 weight: 23
 url: /ja/net/layer-management/extract-features-to-geojson/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 特徴を GeoJSON に抽出する
+
 ## 導入
 Aspose.GIS for .NET を使用して地物を GeoJSON に抽出するステップバイステップのチュートリアルへようこそ。経験豊富な開発者であっても、GIS プログラミングを始めたばかりであっても、このガイドではプロセスを順を追って説明し、Aspose.GIS for .NET の機能を最大限に活用できるようにします。
 ## 前提条件
@@ -87,3 +93,9 @@ outputLayer.Add(outputFeature);
 はい、無料トライアルを見つけることができます[ここ](https://releases.aspose.com/).
 ### Q: Aspose.GIS for .NET はどこで購入できますか?
 製品を購入できます[ここ](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

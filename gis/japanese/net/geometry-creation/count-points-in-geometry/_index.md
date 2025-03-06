@@ -3,10 +3,16 @@ title: Aspose.GIS for .NET を使用してジオメトリ内のポイントを�
 linktitle: ジオメトリ内の点を数える
 second_title: Aspose.GIS .NET API
 description: Aspose.GIS for .NET を利用して地理データを簡単に操作する方法を学びます。包括的なチュートリアルが利用可能です。
-type: docs
 weight: 24
 url: /ja/net/geometry-creation/count-points-in-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS for .NET を使用してジオメトリ内のポイントをカウントする
+
 ## 導入
 地理情報システム (GIS) 開発の分野では、Aspose.GIS for .NET は地理データを操作および処理するための強力なツールセットとして際立っています。経験豊富な開発者であっても、GIS プログラミングの世界を深く掘り下げているだけであっても、Aspose.GIS をマスターすると、プロジェクトに無数の可能性が広がります。
 ## 前提条件
@@ -71,3 +77,9 @@ Aspose.GIS for .NET をマスターすると、.NET アプリケーション内�
 訪問できます。[Aspose.GIS フォーラム](https://forum.aspose.com/c/gis/33) Aspose コミュニティからサポートを求めたり、質問したりすることができます。
 ### Aspose.GIS for .NET に利用できる無料トライアルはありますか?
 はい、以下から無料トライアルを利用できます。[Aspose.GIS リリース ページ](https://releases.aspose.com/)購入する前にその機能を評価してください。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

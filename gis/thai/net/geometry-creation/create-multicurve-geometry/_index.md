@@ -3,10 +3,16 @@ title: สร้างเรขาคณิต MultiCurve ด้วย Aspose.GI
 linktitle: สร้างเรขาคณิต MultiCurve
 second_title: Aspose.GIS .NET API
 description: เรียนรู้วิธีสร้างเรขาคณิต MultiCurve ใน .NET ด้วย Aspose.GIS เพื่อการนำเสนอและการวิเคราะห์ข้อมูลเชิงพื้นที่อย่างมีประสิทธิภาพ
-type: docs
 weight: 17
 url: /th/net/geometry-creation/create-multicurve-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# สร้างเรขาคณิต MultiCurve ด้วย Aspose.GIS สำหรับ .NET
+
 ## การแนะนำ
 ในขอบเขตของการพัฒนาระบบสารสนเทศภูมิศาสตร์ (GIS) โดยใช้ .NET นั้น Aspose.GIS มีความโดดเด่นในฐานะชุดเครื่องมืออันทรงพลัง ไม่ว่าคุณจะเป็นนักพัฒนาที่มีประสบการณ์หรือเพิ่งก้าวเข้าสู่โลก GIS Aspose.GIS สำหรับ .NET มอบชุดฟังก์ชันการทำงานที่ครอบคลุมเพื่อทำงานกับข้อมูลเชิงพื้นที่อย่างมีประสิทธิภาพ บทความนี้ทำหน้าที่เป็นคำแนะนำทีละขั้นตอนเพื่อควบคุมคุณลักษณะอย่างใดอย่างหนึ่ง: การสร้างเรขาคณิต MultiCurve
 ## ข้อกำหนดเบื้องต้น
@@ -82,3 +88,9 @@ layer.Add(feature);
 ใช่ คุณสามารถดาวน์โหลด Aspose.GIS สำหรับ .NET เวอร์ชันทดลองใช้ฟรีได้จาก[เว็บไซต์ Aspose.GIS](https://releases.aspose.com/gis/net/) เพื่อสำรวจคุณสมบัติต่างๆ ก่อนตัดสินใจซื้อ
 ### ฉันจะรับความช่วยเหลือได้อย่างไรหากฉันประสบปัญหาขณะใช้ Aspose.GIS สำหรับ .NET
 คุณสามารถขอความช่วยเหลือได้จากฟอรัมชุมชน Aspose.GIS หรือเข้าถึงแหล่งข้อมูลสนับสนุนที่ Aspose มอบให้
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

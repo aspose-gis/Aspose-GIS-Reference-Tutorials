@@ -3,10 +3,16 @@ title: Číst ID objektu ze souboru vrstvy GDB v Aspose.GIS
 linktitle: Číst ID objektu z vrstvy File GDB
 second_title: Aspose.GIS .NET API
 description: Naučte se používat Aspose.GIS pro .NET k efektivnímu zpracování geoprostorových dat. K dispozici jsou komplexní konzultace a odborné vedení.
-type: docs
 weight: 16
 url: /cs/net/layer-data-operations/read-object-id-from-file-gdb-layer/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Číst ID objektu ze souboru vrstvy GDB v Aspose.GIS
+
 ## Úvod
 Vítejte v našem komplexním průvodci pro zvládnutí Aspose.GIS pro .NET! Aspose.GIS je výkonná knihovna navržená pro efektivní zpracování geoprostorových dat a úlohy vizualizace v rámci .NET. Ať už jste zkušený vývojář nebo teprve začínáte svou cestu v geoprostorovém programování, tento tutoriál vás provede vším, co potřebujete vědět, abyste mohli využít plný potenciál Aspose.GIS.
 ## Předpoklady
@@ -74,3 +80,9 @@ Pokud narazíte na nějaké problémy nebo máte dotazy ohledně Aspose.GIS, mů
 Ano, z webu Aspose můžete získat dočasnou licenci pro účely testování a hodnocení.
 ### Kde najdu komplexní dokumentaci k Aspose.GIS pro .NET?
  Můžete odkazovat na[dokumentace](https://reference.aspose.com/gis/net/) pro podrobné informace o používání Aspose.GIS API a funkcí.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

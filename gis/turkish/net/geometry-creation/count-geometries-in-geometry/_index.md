@@ -3,10 +3,16 @@ title: Aspose.GIS ile Geometride Geometrileri Sayma
 linktitle: Geometride Geometrileri Sayma
 second_title: Aspose.GIS .NET API'si
 description: Aspose.GIS for .NET kullanarak bir geometrideki geometrileri nasıl sayacağınızı öğrenin. Geliştiriciler için kod örnekleri içeren adım adım eğitim.
-type: docs
 weight: 23
 url: /tr/net/geometry-creation/count-geometries-in-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS ile Geometride Geometrileri Sayma
+
 ## giriiş
 Aspose.GIS for .NET, jeouzaysal işlevselliği .NET uygulamalarına dahil etmek isteyen geliştiriciler için güçlü bir araçtır. Haritalama yazılımı, konum tabanlı hizmetler veya mekansal analiz araçları oluşturuyor olsanız da, Aspose.GIS ihtiyaçlarınızı karşılayacak kapsamlı özellikler sunar. Bu derste Aspose.GIS for .NET kullanarak bir geometri içindeki geometrilerin nasıl sayılacağını inceleyeceğiz.
 ## Önkoşullar
@@ -70,3 +76,9 @@ Evet, Aspose.GIS for .NET, SHP, KML ve GeoJSON dahil çok çeşitli GIS dosya fo
  Evet, ücretsiz deneme sürümünü şuradan indirebilirsiniz:[İnternet sitesi](https://releases.aspose.com/).
 ### Aspose.GIS for .NET desteğini nerede bulabilirim?
  Şu adreste destek bulabilirsiniz:[Aspose.GIS forumu](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

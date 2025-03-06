@@ -3,10 +3,16 @@ title: Interaction des couches et accès aux données
 linktitle: Interaction des couches et accès aux données
 second_title: API Aspose.GIS .NET
 description: Libérez le potentiel d'Aspose.GIS pour .NET avec nos didacticiels sur l'interaction des couches et l'accès aux données. Explorez le développement géospatial et manipulez les fonctionnalités de manière transparente.
-type: docs
 weight: 25
 url: /fr/net/layer-interaction-and-data-access/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Interaction des couches et accès aux données
+
 ## Introduction
 
 Aspose.GIS for .NET est à la pointe du développement géospatial, offrant une suite complète d'outils pour une intégration transparente des données SIG. Dans cette série de didacticiels, nous approfondissons les subtilités de l'interaction entre les couches et de l'accès aux données, libérant ainsi tout le potentiel de cette puissante bibliothèque.
@@ -49,3 +55,9 @@ Explorez Aspose.GIS pour .NET et interagissez sans effort avec les couches GPX. 
 Explorez la puissance de la manipulation des données géospatiales dans .NET avec Aspose.GIS. Guide étape par étape pour interagir avec les couches KML. 
 ### [Modifier les entités de couche](./modify-layer-features/)
 Explorez Aspose.GIS pour .NET et maîtrisez l'art de modifier sans effort les fonctionnalités des couches dans les fichiers de formes. Boostez vos applications géospatiales avec précision et facilité.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

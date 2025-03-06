@@ -3,10 +3,16 @@ title: オブジェクト ID とジオメトリ フィールド名の指定
 linktitle: オブジェクト ID とジオメトリ フィールド名の指定
 second_title: Aspose.GIS .NET API
 description: Aspose.GIS for .NET で GIS の魔法を体験してください!地理空間データを簡単に管理します。今すぐダウンロードして、空間インテリジェンスのパワーを解放してください。
-type: docs
 weight: 20
 url: /ja/net/layer-data-operations/specify-object-id-and-geometry-field-names/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# オブジェクト ID とジオメトリ フィールド名の指定
+
 ## 導入
 Aspose.GIS for .NET を使用して地理情報システム (GIS) の領域への旅に乗り出すと、開発者と愛好家にとって同様に可能性の世界が開かれます。この強力なライブラリにより、地理空間データを簡単に処理できるようになります。このチュートリアルでは、オブジェクト ID とジオメトリ フィールド名を指定するプロセスをガイドし、GIS 作業の基礎を築きます。
 ## 前提条件
@@ -74,3 +80,9 @@ A: はい、Aspose.GIS for .NET はデスクトップ アプリケーション�
 A: Aspose.GIS for .NET はさまざまな空間参照系をサポートし、さまざまな地理データセットに柔軟性を提供します。
 ### Q: Aspose.GIS 関連の質問については、どこに相談したり、相談したりできますか?
  A: Aspose.GIS フォーラムにアクセスしてください。[ここ](https://forum.aspose.com/c/gis/33)サポートとディスカッションのため。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

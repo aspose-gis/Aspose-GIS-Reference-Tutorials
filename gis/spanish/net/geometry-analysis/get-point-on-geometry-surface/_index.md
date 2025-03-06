@@ -3,10 +3,16 @@ title: Obtener punto en la superficie de geometría
 linktitle: Obtener punto en la superficie de geometría
 second_title: Aspose.GIS API .NET
 description: Aprenda a trabajar con datos geoespaciales de manera eficiente utilizando Aspose.GIS para .NET. Guía paso a paso y preguntas frecuentes incluidas.
-type: docs
 weight: 25
 url: /es/net/geometry-analysis/get-point-on-geometry-surface/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Obtener punto en la superficie de geometría
+
 ## Introducción
 En este tutorial, exploraremos cómo usar Aspose.GIS para .NET para trabajar con geometrías y recuperar puntos en sus superficies. Aspose.GIS es una poderosa biblioteca que proporciona varias funcionalidades para el procesamiento, manipulación y visualización de datos geoespaciales en aplicaciones .NET.
 ## Requisitos previos
@@ -66,3 +72,9 @@ Sí, Aspose.GIS admite varios marcos .NET, incluidos .NET Framework, .NET Core y
  Sí, puede obtener licencias temporales para Aspose.GIS desde[aquí](https://purchase.aspose.com/temporary-license/).
 ### ¿Dónde puedo comprar Aspose.GIS?
  Puedes comprar Aspose.GIS desde la página de compra.[aquí](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

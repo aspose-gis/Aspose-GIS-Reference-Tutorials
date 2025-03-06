@@ -3,10 +3,16 @@ title: Criar novo conjunto de dados GDB de arquivo
 linktitle: Criar novo conjunto de dados GDB de arquivo
 second_title: API Aspose.GIS .NET
 description: Explore o Aspose.GIS for .NET para criar e gerenciar conjuntos de dados GIS sem esforço. Baixe agora para um desenvolvimento geoespacial perfeito. #Aspose #GIS
-type: docs
 weight: 10
 url: /pt/net/layer-management/create-new-file-gdb-dataset/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Criar novo conjunto de dados GDB de arquivo
+
 ## Introdução
 No domínio do desenvolvimento geoespacial, Aspose.GIS for .NET se destaca como um poderoso kit de ferramentas para gerenciar e manipular dados de Sistemas de Informação Geográfica (GIS). Quer você seja um desenvolvedor experiente ou esteja apenas começando sua jornada no GIS, este tutorial irá orientá-lo no processo de criação de um novo conjunto de dados File Geodatabase (GDB) usando Aspose.GIS for .NET.
 ## Pré-requisitos
@@ -84,3 +90,9 @@ Aspose.GIS for .NET é um kit de ferramentas independente; no entanto, você pod
  Explore o[Documentação Aspose.GIS](https://reference.aspose.com/gis/net/) para mais exemplos e informações detalhadas.
 ### P: Onde posso comprar o Aspose.GIS para .NET?
  Você pode adquirir o Aspose.GIS for .NET no site[página de compra](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

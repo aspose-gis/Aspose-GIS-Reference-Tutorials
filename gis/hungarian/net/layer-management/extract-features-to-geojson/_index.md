@@ -3,10 +3,16 @@ title: Funkciók kibontása a GeoJSON-ba
 linktitle: Funkciók kibontása a GeoJSON-ba
 second_title: Aspose.GIS .NET API
 description: Tekintse meg az Aspose.GIS for .NET használatáról szóló részletes útmutatót a funkciók GeoJSON-ba való kinyeréséhez. Használja ki könnyedén a GIS erejét! #Aspose #GIS
-type: docs
 weight: 23
 url: /hu/net/layer-management/extract-features-to-geojson/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Funkciók kibontása a GeoJSON-ba
+
 ## Bevezetés
 Üdvözöljük lépésről lépésre bemutató oktatóanyagunkban, amely a GeoJSON-ból az Aspose.GIS for .NET-hez való funkcióinak kinyerésével foglalkozik! Akár tapasztalt fejlesztő, akár csak most kezdi a térinformatikai programozást, ez az útmutató végigvezeti a folyamaton, és biztosítja, hogy az Aspose.GIS for .NET teljes erejét kihasználja.
 ## Előfeltételek
@@ -87,3 +93,9 @@ Ebben az oktatóanyagban a funkciók GeoJSON-ba való kinyerésének folyamatát
  Igen, megtalálja az ingyenes próbaverziót[itt](https://releases.aspose.com/).
 ### K: Hol vásárolhatom meg az Aspose.GIS-t .NET-hez?
  Megvásárolhatja a terméket[itt](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: 지오메트리가 동일한지 확인하세요.
 linktitle: 지오메트리가 동일한지 확인하세요.
 second_title: Aspose.GIS .NET API
 description: 이 포괄적인 튜토리얼을 통해 .NET용 Aspose.GIS를 사용하여 .NET 애플리케이션에서 형상의 동일성을 확인하는 방법을 알아보세요.
-type: docs
 weight: 10
 url: /ko/net/geometry-analysis/check-geometries-for-equality/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 지오메트리가 동일한지 확인하세요.
+
 ## 소개
 .NET용 Aspose.GIS는 개발자가 .NET 애플리케이션에서 지리공간 데이터를 효율적으로 사용할 수 있게 해주는 강력한 라이브러리입니다. 매핑 애플리케이션, 공간 분석 도구를 구축하거나 지리공간 기능을 기존 소프트웨어에 통합하는 경우 Aspose.GIS는 작업을 완료하는 데 필요한 도구를 제공합니다.
 ## 전제조건
@@ -73,3 +79,9 @@ Console.WriteLine(geometry1.SpatiallyEquals(geometry2)); // 거짓
  Aspose.GIS 커뮤니티 포럼에서 지원을 받을 수 있습니다.[여기](https://forum.aspose.com/c/gis/33).
 ### .NET용 Aspose.GIS의 임시 라이선스를 구입할 수 있나요?
  예, 다음 사이트에서 임시 라이센스를 구입할 수 있습니다.[구매 페이지](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

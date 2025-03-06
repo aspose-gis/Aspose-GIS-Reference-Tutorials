@@ -3,10 +3,16 @@ title: Vytvořte mnohoúhelník s geometrií díry pomocí Aspose.GIS
 linktitle: Vytvořte mnohoúhelník s geometrií díry
 second_title: Aspose.GIS .NET API
 description: Naučte se, jak vytvořit polygon s geometrií díry pomocí Aspose.GIS pro .NET. Výukový program krok za krokem s příklady kódu.
-type: docs
 weight: 13
 url: /cs/net/geometry-creation/create-polygon-with-hole-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Vytvořte mnohoúhelník s geometrií díry pomocí Aspose.GIS
+
 ## Úvod
 V tomto tutoriálu si projdeme procesem vytváření mnohoúhelníku s geometrií díry pomocí Aspose.GIS pro .NET. Aspose.GIS je výkonná knihovna, která umožňuje vývojářům pracovat s geoprostorovými daty v jejich aplikacích .NET. 
 ## Předpoklady
@@ -66,3 +72,9 @@ Aspose.GIS je knihovna .NET, která umožňuje vývojářům pracovat s geoprost
  Podporu pro Aspose.GIS najdete na[Fórum Aspose.GIS](https://forum.aspose.com/c/gis/33).
 ### 5. Jak mohu získat dočasnou licenci pro Aspose.GIS?
  Dočasnou licenci pro Aspose.GIS můžete získat od[tady](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Создайте геометрию MultiLineString с помощью Asp
 linktitle: Создать геометрию MultiLineString
 second_title: API Aspose.GIS .NET
 description: Изучите возможности Aspose.GIS for .NET для эффективного управления геопространственными данными. Загрузите сейчас и получите беспрепятственный опыт.
-type: docs
 weight: 15
 url: /ru/net/geometry-creation/create-multilinestring-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Создайте геометрию MultiLineString с помощью Aspose.GIS для .NET
+
 ## Введение
 Aspose.GIS for .NET — это мощная библиотека, которая позволяет разработчикам беспрепятственно работать с геопространственными данными в своих .NET-приложениях. Независимо от того, создаете ли вы картографическое приложение, выполняете геопространственный анализ или интегрируете функции определения местоположения в свое программное обеспечение, Aspose.GIS предоставляет инструменты, необходимые для эффективной обработки пространственных данных.
 ## Предварительные условия
@@ -64,3 +70,9 @@ multiLineString.Add(secondLine);
 Хотя пробная версия доступна для тестирования, если вам требуются дополнительные функции или необходимо оценить полную функциональность, вы можете получить временную лицензию на сайте[Purchase.aspose.com](https://purchase.aspose.com/temporary-license/).
 ### Подходит ли Aspose.GIS for .NET как для настольных, так и для веб-приложений?
 Да, Aspose.GIS for .NET можно использовать в различных приложениях, включая настольные, веб-приложения и серверные приложения, обеспечивая универсальность в различных сценариях разработки.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

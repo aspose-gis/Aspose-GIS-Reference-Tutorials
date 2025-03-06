@@ -3,10 +3,16 @@ title: Tetapkan Toleransi untuk Lapisan File GDB
 linktitle: Tetapkan Toleransi untuk Lapisan File GDB
 second_title: Aspose.GIS .NET API
 description: Jelajahi Aspose.GIS untuk .NET dan kuasai manipulasi data geospasial. Tetapkan toleransi dengan mudah dengan panduan langkah demi langkah. Tingkatkan aplikasi .NET Anda.
-type: docs
 weight: 22
 url: /id/net/layer-data-operations/set-tolerances-for-file-gdb-layer/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Tetapkan Toleransi untuk Lapisan File GDB
+
 ## Perkenalan
 Selamat datang di dunia manipulasi data geospasial menggunakan Aspose.GIS untuk .NET! Jika Anda ingin meningkatkan keterampilan Anda dalam menangani informasi geografis di aplikasi .NET, Anda berada di tempat yang tepat. Dalam panduan komprehensif ini, kami akan mempelajari detail rumit dalam menetapkan toleransi untuk lapisan File Geodatabase (GDB), sehingga memberi Anda wawasan praktis dan petunjuk langkah demi langkah.
 ## Prasyarat
@@ -69,3 +75,9 @@ Ya, Aspose.GIS mendukung interoperabilitas, memungkinkan Anda mengintegrasikanny
  Ya, Anda bisa mendapatkan a[izin sementara](https://purchase.aspose.com/temporary-license/) untuk pengujian dan evaluasi.
 ### Di mana saya dapat membeli lisensi Aspose.GIS untuk .NET?
  Anda dapat membeli lisensi dari[halaman beli](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

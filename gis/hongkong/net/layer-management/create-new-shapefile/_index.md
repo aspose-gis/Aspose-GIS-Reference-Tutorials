@@ -3,10 +3,16 @@ title: 建立新的形狀文件
 linktitle: 建立新的形狀文件
 second_title: Aspose.GIS .NET API
 description: 了解如何使用 Aspose.GIS for .NET 建立新的 shapefile。遵循我們的逐步指南並釋放空間資料操作的力量。
-type: docs
 weight: 12
 url: /zh-hant/net/layer-management/create-new-shapefile/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 建立新的形狀文件
+
 ## 介紹
 如果您正在研究使用 .NET 進行地理資訊系統 (GIS) 開發，Aspose.GIS 是您的首選解決方案。這個強大的函式庫使開發人員能夠無縫地處理空間數據，在本教程中，我們將引導您完成使用 Aspose.GIS for .NET 建立新 shapefile 的過程。
 ## 先決條件
@@ -80,3 +86,9 @@ Aspose.GIS 主要支援 .NET，但也有適用於 Java 的版本。
 取得您的臨時許可證[這裡](https://purchase.aspose.com/temporary-license/).
 ### Q：哪裡可以購買 Aspose.GIS for .NET？
 你可以購買圖書館[這裡](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

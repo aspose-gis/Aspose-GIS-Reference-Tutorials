@@ -3,10 +3,16 @@ title: Zadejte ID objektu a názvy geometrických polí
 linktitle: Zadejte ID objektu a názvy geometrických polí
 second_title: Aspose.GIS .NET API
 description: Prozkoumejte kouzlo GIS s Aspose.GIS pro .NET! Spravujte geoprostorová data bez námahy. Stáhněte si nyní a uvolněte sílu prostorové inteligence.
-type: docs
 weight: 20
 url: /cs/net/layer-data-operations/specify-object-id-and-geometry-field-names/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Zadejte ID objektu a názvy geometrických polí
+
 ## Úvod
 Vydání se na cestu do říše geografických informačních systémů (GIS) pomocí Aspose.GIS for .NET otevírá svět možností pro vývojáře i nadšence. Tato výkonná knihovna vám umožňuje bez námahy zpracovávat geoprostorová data. V tomto tutoriálu vás provedeme procesem zadávání názvů polí ID objektu a geometrie, čímž položíme základ pro vaše úsilí v oblasti GIS.
 ## Předpoklady
@@ -74,3 +80,9 @@ Odpověď: Ano, Aspose.GIS for .NET je vhodný pro desktopové i webové aplikac
 Odpověď: Aspose.GIS for .NET podporuje různé prostorové referenční systémy a poskytuje flexibilitu pro různé geografické datové sady.
 ### Otázka: Kde mohu vyhledat pomoc nebo prodiskutovat dotazy týkající se Aspose.GIS?
  Odpověď: Navštivte fórum Aspose.GIS[tady](https://forum.aspose.com/c/gis/33) za podporu a diskuze.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

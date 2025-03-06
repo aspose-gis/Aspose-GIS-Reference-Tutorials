@@ -3,10 +3,16 @@ title: Aspose.GIS에서 GML의 기능 읽기
 linktitle: GML의 기능 읽기
 second_title: Aspose.GIS .NET API
 description: .NET용 Aspose.GIS를 사용하여 GML 파일에서 기능을 읽는 방법을 알아보세요. GIS 개발자를 위한 포괄적인 튜토리얼입니다.
-type: docs
 weight: 10
 url: /ko/net/layer-data-operations/read-features-from-gml/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS에서 GML의 기능 읽기
+
 ## 소개
 
 강력한 .NET용 Aspose.GIS 라이브러리를 사용하여 지리 정보 시스템(GIS)의 세계를 탐구할 준비가 되셨습니까? 숙련된 개발자이든 이제 막 GIS 프로그래밍 여정을 시작하는 사람이든 이 튜토리얼은 GML(Geography Markup Language) 파일의 기능을 읽는 과정을 단계별로 안내합니다. .NET용 Aspose.GIS는 지리공간 데이터를 손쉽게 조작할 수 있는 포괄적인 도구 및 API 세트를 제공하여 GIS 애플리케이션의 잠재력을 최대한 활용할 수 있도록 해줍니다.
@@ -113,3 +119,9 @@ A: 예, Aspose.GIS는 다목적이며 .NET 프레임워크를 사용하여 개�
 ### Q: Aspose.GIS 사용자에게 기술 지원이 제공됩니까?
 
  A: 예, Aspose는 포럼을 통해 전담 기술 지원을 제공합니다.[링크]( https://forum.aspose.com/c/gis/33)에서 사용자는 도움을 구하고, 문제를 보고하고, 커뮤니티에 참여할 수 있습니다.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

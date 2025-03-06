@@ -3,10 +3,16 @@ title: Obtenha o valor do atributo do recurso
 linktitle: Obtenha o valor do atributo do recurso
 second_title: API Aspose.GIS .NET
 description: Explore Aspose.GIS for .NET – a ferramenta definitiva para integração perfeita de dados GIS. Baixe o seu teste gratuito agora! #Aspose #GIS #.NET
-type: docs
 weight: 12
 url: /pt/net/layer-interaction-and-data-access/get-feature-attribute-value/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Obtenha o valor do atributo do recurso
+
 ## Introdução
 Bem-vindo ao mundo do Aspose.GIS for .NET, uma biblioteca poderosa que capacita os desenvolvedores .NET a trabalhar perfeitamente com dados do sistema de informações geográficas (GIS). Quer você seja um desenvolvedor experiente ou esteja apenas começando sua jornada no GIS, este tutorial irá guiá-lo através do processo de recuperação de valores de atributos de recursos usando Aspose.GIS for .NET.
 ## Pré-requisitos
@@ -80,3 +86,9 @@ R: Absolutamente! Aspose.GIS atende desenvolvedores de todos os níveis de habil
  R: Participe da discussão sobre o[Fórum Aspose.GIS](https://forum.aspose.com/c/gis/33) para procurar ajuda e se conectar com outros usuários.
 ### P: Existe uma versão de avaliação gratuita do Aspose.GIS?
  R: Certamente! Você pode explorar os recursos do Aspose.GIS baixando a versão de avaliação gratuita em[aqui](https://releases.aspose.com/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Aspose.GIS में OpenStreetMap XML की विशेषताएं
 linktitle: OpenStreetMap XML से सुविधाएँ पढ़ें
 second_title: Aspose.GIS .NET एपीआई
 description: .NET के लिए Aspose.GIS का उपयोग करके OpenStreetMap XML से सुविधाओं को पढ़ने का तरीका जानें। कोड उदाहरणों के साथ चरण-दर-चरण ट्यूटोरियल।
-type: docs
 weight: 13
 url: /hi/net/layer-data-operations/read-features-from-openstreetmap-xml/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS में OpenStreetMap XML की विशेषताएं पढ़ें
+
 ## परिचय
 .NET के लिए Aspose.GIS एक शक्तिशाली लाइब्रेरी है जो डेवलपर्स को उनके .NET अनुप्रयोगों में भौगोलिक सूचना प्रणाली (GIS) डेटा के साथ काम करने की अनुमति देती है। चाहे आप मैपिंग एप्लिकेशन बना रहे हों, स्थानिक डेटा का विश्लेषण कर रहे हों, या अपने सॉफ़्टवेयर में जीआईएस कार्यक्षमता को एकीकृत कर रहे हों, Aspose.GIS आपकी विकास प्रक्रिया को सुव्यवस्थित करने के लिए सुविधाओं की एक विस्तृत श्रृंखला प्रदान करता है।
 इस ट्यूटोरियल में, हम जानेंगे कि .NET के लिए Aspose.GIS का उपयोग करके OpenStreetMap XML की सुविधाओं को कैसे पढ़ा जाए। हम प्रत्येक चरण को प्रबंधनीय भागों में विभाजित करेंगे, यह सुनिश्चित करते हुए कि आप अपनी विशेषज्ञता के स्तर की परवाह किए बिना आसानी से अनुसरण कर सकते हैं।
@@ -75,3 +81,9 @@ foreach (Feature feature in layer)
  आप विजिट कर सकते हैं[Aspose.GIS फोरम](https://forum.aspose.com/c/gis/33) सहायता के लिए और अन्य उपयोगकर्ताओं और डेवलपर्स से जुड़ने के लिए।
 ### क्या मैं .NET के लिए Aspose.GIS का अस्थायी लाइसेंस प्राप्त कर सकता हूँ?
  हाँ, आप से अस्थायी लाइसेंस का अनुरोध कर सकते हैं[अस्थायी लाइसेंस पृष्ठ](https://purchase.aspose.com/temporary-license/) परीक्षण और मूल्यांकन उद्देश्यों के लिए।
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: 형상 버퍼 생성
 linktitle: 형상 버퍼 생성
 second_title: Aspose.GIS .NET API
 description: .NET용 Aspose.GIS를 사용하여 지리공간 프로그래밍의 강력한 기능을 활용해 보세요. 공간 분석, 데이터 시각화 등을 쉽게 수행하세요.
-type: docs
 weight: 22
 url: /ko/net/geometry-analysis/create-geometry-buffer/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 형상 버퍼 생성
+
 ## 소개
 지리공간 프로그래밍 영역에서 .NET용 Aspose.GIS는 강력한 도구로 돋보입니다. 강력한 기능과 직관적인 인터페이스를 통해 개발자는 지리적 데이터를 효율적으로 처리하고, 공간 분석을 수행하고, 놀라운 시각화를 생성할 수 있습니다. 이 포괄적인 튜토리얼에서는 Aspose.GIS for .NET의 필수 측면을 자세히 살펴보고 주요 기능을 분석하고 초보자와 숙련된 개발자 모두를 위한 단계별 지침을 제공합니다.
 ## 전제조건
@@ -94,3 +100,9 @@ Aspose.GIS for .NET은 광범위한 데이터에서도 성능을 보장하는 �
 예, Aspose.GIS for .NET은 다양한 공간 참조 시스템을 지원하므로 개발자는 다양한 소스의 지리 데이터를 원활하게 사용할 수 있습니다.
 ### .NET용 Aspose.GIS에 대한 기술 지원이 제공됩니까?
  예, Aspose.GIS 커뮤니티 포럼에서 기술 지원 및 도움을 구할 수 있습니다.[https://forum.aspose.com/c/gis/33](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

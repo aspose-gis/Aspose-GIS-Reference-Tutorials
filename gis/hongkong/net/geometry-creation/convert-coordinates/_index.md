@@ -3,10 +3,16 @@ title: 使用 Aspose.GIS 進行座標轉換
 linktitle: 轉換座標
 second_title: Aspose.GIS .NET API
 description: 了解如何使用 Aspose.GIS for .NET 轉換座標。提供逐步指南、先決條件和常見問題。
-type: docs
 weight: 25
 url: /zh-hant/net/geometry-creation/convert-coordinates/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.GIS 進行座標轉換
+
 ## 介紹
 在本教程中，我們將使用強大的 .NET 版 Aspose.GIS 函式庫深入研究地理資訊系統 (GIS) 的世界。 Aspose.GIS 是一個綜合工具包，使開發人員能夠輕鬆處理空間資料。無論您是經驗豐富的開發人員還是新手，本教學都將引導您完成利用 Aspose.GIS 有效轉換座標的過程。
 ## 先決條件
@@ -66,3 +72,9 @@ Aspose.GIS 主要針對 .NET 開發人員，但它透過 Aspose.GIS for Java 提
 是的，可以從以下機構獲得臨時許可證[臨時許可證頁面](https://purchase.aspose.com/temporary-license/).
 ### 哪裡可以購買 Aspose.GIS？
 您可以從以下位置購買 Aspose.GIS[購買頁面](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

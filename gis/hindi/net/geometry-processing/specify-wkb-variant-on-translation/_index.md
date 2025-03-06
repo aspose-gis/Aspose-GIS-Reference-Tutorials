@@ -3,10 +3,16 @@ title: .NET के लिए Aspose.GIS में अनुवाद पर WKB 
 linktitle: अनुवाद पर WKB संस्करण निर्दिष्ट करें
 second_title: Aspose.GIS .NET एपीआई
 description: इस व्यापक गाइड के साथ सीखें कि .NET के लिए Aspose.GIS में WKB वेरिएंट को आसानी से कैसे निर्दिष्ट किया जाए। अपने जीआईएस विकास कौशल को बढ़ावा दें।
-type: docs
 weight: 18
 url: /hi/net/geometry-processing/specify-wkb-variant-on-translation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# .NET के लिए Aspose.GIS में अनुवाद पर WKB वैरिएंट निर्दिष्ट करें
+
 ## परिचय
 भौगोलिक सूचना प्रणाली (जीआईएस) विकास के क्षेत्र में, .NET के लिए Aspose.GIS एक शक्तिशाली टूलसेट के रूप में सामने आता है। इसकी बहुमुखी प्रतिभा और दक्षता इसे जीआईएस कार्यात्मकताओं को अपने .NET अनुप्रयोगों में निर्बाध रूप से एकीकृत करने का लक्ष्य रखने वाले डेवलपर्स के लिए एक पसंदीदा विकल्प बनाती है। यह आलेख .NET के लिए Aspose.GIS का लाभ उठाने के लिए एक व्यापक मार्गदर्शिका के रूप में कार्य करता है, विशेष रूप से अनुवाद प्रक्रियाओं के दौरान WKB (वेल-ज्ञात बाइनरी) वेरिएंट को निर्दिष्ट करने पर ध्यान केंद्रित करता है।
 ## आवश्यक शर्तें
@@ -62,3 +68,9 @@ File.WriteAllBytes(Path.Combine("Your Document Directory", "EWkbFile.ewkb"), wkb
  पर जाकर आप अस्थायी लाइसेंस प्राप्त कर सकते हैं[अस्थायी लाइसेंस पृष्ठ](https://purchase.aspose.com/temporary-license/) और दिए गए निर्देशों का पालन करें।
 ### मैं .NET के लिए Aspose.GIS का लाइसेंस कहां से खरीद सकता हूं?
  आप खरीद पृष्ठ से .NET के लिए Aspose.GIS का लाइसेंस खरीद सकते हैं[इस लिंक](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

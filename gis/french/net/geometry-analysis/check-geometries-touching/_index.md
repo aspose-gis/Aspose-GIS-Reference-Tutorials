@@ -3,10 +3,16 @@ title: Vérifier les géométries en touchant
 linktitle: Vérifier les géométries en touchant
 second_title: API Aspose.GIS .NET
 description: Libérez la puissance de la gestion des données spatiales avec Aspose.GIS pour .NET. Intégrez de manière transparente des fonctionnalités spatiales dans vos applications avec cette boîte à outils polyvalente.
-type: docs
 weight: 13
 url: /fr/net/geometry-analysis/check-geometries-touching/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Vérifier les géométries en touchant
+
 ## Introduction
 Dans le domaine des systèmes d'information géographique (SIG), Aspose.GIS pour .NET se distingue comme un outil puissant pour les développeurs cherchant à intégrer de manière transparente des fonctionnalités spatiales dans leurs applications. Grâce à ses fonctionnalités robustes et son interface conviviale, Aspose.GIS permet aux développeurs de travailler avec des données spatiales sans effort, qu'il s'agisse d'analyser, de visualiser ou de manipuler des géométries.
 ## Conditions préalables
@@ -64,3 +70,9 @@ Aspose.GIS prend en charge divers frameworks .NET, notamment .NET Framework, .NE
 Aspose.GIS reçoit régulièrement des mises à jour et des améliorations pour garantir la compatibilité avec les dernières technologies et résoudre tout problème signalé.
 ### Puis-je obtenir une licence temporaire pour Aspose.GIS ?
  Oui, vous pouvez obtenir une licence temporaire auprès de[ici](https://purchase.aspose.com/temporary-license/) pour évaluer les capacités d'Aspose.GIS dans votre environnement de développement.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

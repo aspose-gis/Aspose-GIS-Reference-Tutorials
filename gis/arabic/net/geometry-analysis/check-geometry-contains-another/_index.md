@@ -3,10 +3,16 @@ title: التحقق من الهندسة يحتوي على آخر
 linktitle: التحقق من الهندسة يحتوي على آخر
 second_title: Aspose.GIS .NET API
 description: استكشف Aspose.GIS for .NET، وهي مكتبة قوية للتكامل السلس للبيانات الجغرافية المكانية في تطبيقات .NET الخاصة بك.
-type: docs
 weight: 14
 url: /ar/net/geometry-analysis/check-geometry-contains-another/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# التحقق من الهندسة يحتوي على آخر
+
 ## مقدمة
 Aspose.GIS for .NET هي مكتبة قوية تمكن المطورين من العمل مع البيانات الجغرافية المكانية بسلاسة داخل تطبيقات .NET الخاصة بهم. سواء كنت تقوم بإنشاء تطبيق رسم خرائط، أو إجراء تحليل جغرافي مكاني، أو دمج الميزات المستندة إلى الموقع في برنامجك، فإن Aspose.GIS يبسط العملية من خلال توفير واجهات برمجة التطبيقات البديهية والوظائف القوية.
 ## المتطلبات الأساسية
@@ -85,3 +91,9 @@ Console.WriteLine(geometry3.Within(geometry1)); // حقيقي
 ج: نعم، يمكنك الانضمام إلى منتدى مجتمع Aspose.GIS[هنا](https://forum.aspose.com/c/gis/33) للتواصل مع المستخدمين الآخرين وطرح الأسئلة ومشاركة تجاربك.
 ### س5: هل يمكنني تجربة Aspose.GIS قبل الشراء؟
  ج: بالتأكيد، يمكنك استكشاف Aspose.GIS عن طريق تنزيل النسخة التجريبية المجانية من[هنا](https://releases.aspose.com/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Aspose.GIS का उपयोग करके अनुवाद पर 
 linktitle: अनुवाद पर WKT संस्करण निर्दिष्ट करें
 second_title: Aspose.GIS .NET एपीआई
 description: स्थानिक डेटा प्रतिनिधित्व प्रारूप और परिशुद्धता को प्रभावी ढंग से नियंत्रित करने के लिए .NET के लिए Aspose.GIS में WKT वेरिएंट निर्दिष्ट करना सीखें।
-type: docs
 weight: 19
 url: /hi/net/geometry-processing/specify-wkt-variant-on-translation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS का उपयोग करके अनुवाद पर WKT वेरिएंट निर्दिष्ट करें
+
 ## परिचय
 .NET के लिए Aspose.GIS एक शक्तिशाली लाइब्रेरी है जो डेवलपर्स को उनके .NET अनुप्रयोगों में भौगोलिक सूचना प्रणाली (GIS) डेटा के साथ सहजता से काम करने की अनुमति देती है। Aspose.GIS द्वारा प्रदान की गई आवश्यक सुविधाओं में से एक अनुवाद के दौरान सुप्रसिद्ध पाठ (WKT) संस्करण को निर्दिष्ट करने की क्षमता है, जो उपयोगकर्ताओं को स्थानिक डेटा प्रतिनिधित्व के प्रारूप और सटीकता को नियंत्रित करने में सक्षम बनाता है। इस ट्यूटोरियल में, हम यह पता लगाएंगे कि .NET के लिए Aspose.GIS का उपयोग करके चरण दर चरण WKT वेरिएंट को कैसे निर्दिष्ट किया जाए।
 ## आवश्यक शर्तें
@@ -66,3 +72,9 @@ Console.WriteLine("Flat3: " + point.AsText(WktVariant.Iso, NumericFormat.Flat(3)
  हां, आप Aspose.GIS का निःशुल्क परीक्षण संस्करण यहां से डाउनलोड कर सकते हैं[यहाँ](https://releases.aspose.com/).
 ### मुझे Aspose.GIS के लिए सहायता या समर्थन कहां से मिल सकता है?
  आप अपने प्रश्न यहां पोस्ट कर सकते हैं या Aspose.GIS समुदाय से सहायता मांग सकते हैं[मंच](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

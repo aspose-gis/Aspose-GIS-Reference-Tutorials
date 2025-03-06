@@ -3,10 +3,16 @@ title: 使用 Aspose.GIS 创建多多边形几何体
 linktitle: 创建多多边形几何体
 second_title: Aspose.GIS .NET API
 description: 了解如何使用 Aspose.GIS for .NET 创建 MultiPolygon 几何体。初学者的分步指南。可以免费试用。
-type: docs
 weight: 16
 url: /zh/net/geometry-creation/create-multipolygon-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.GIS 创建多多边形几何体
+
 ## 介绍
 在地理信息系统 (GIS) 开发领域，Aspose.GIS for .NET 作为创建、编辑和分析地理空间数据的强大工具脱颖而出。无论您是经验丰富的开发人员还是刚刚起步，掌握 Aspose.GIS 都可以为您的项目打开一个充满可能性的世界。
 ## 先决条件
@@ -66,3 +72,9 @@ multiPolygon.Add(secondPolygon);
 是的，您可以从以下地址获得临时许可证[这里](https://purchase.aspose.com/temporary-license/)出于评估目的。
 ### 我可以直接购买Aspose.GIS吗？
 是的，您可以从网站购买Aspose.GIS[这里](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

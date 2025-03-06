@@ -3,10 +3,16 @@ title: Aspose.GIS for .NET を使用してジオメトリ タイプを取得す�
 linktitle: ジオメトリタイプの取得
 second_title: Aspose.GIS .NET API
 description: Aspose.GIS for .NET の威力を実感してください。この包括的なチュートリアルで、.NET プロジェクトで空間データを効率的に処理する方法を学びましょう。
-type: docs
 weight: 23
 url: /ja/net/geometry-analysis/get-geometry-type/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS for .NET を使用してジオメトリ タイプを取得する
+
 ## 導入
 .NET 開発の分野では、Aspose.GIS は地理情報を処理するための強力なツールとして機能します。その豊富な機能により、空間データを扱う開発者にとって頼りになる選択肢となります。このチュートリアルでは、Aspose.GIS for .NET の基本を詳しく説明し、主要な概念を詳しく説明し、簡単に開始できるように段階的なガイダンスを提供します。
 ## 前提条件
@@ -63,3 +69,9 @@ Console.WriteLine(geometryType); //ポイント
 一時的なライセンスのオプションについては、次のサイトを参照してください。[仮免許](https://purchase.aspose.com/temporary-license/)ページ。
 ### 自分のプロジェクト用の Aspose.GIS はどこで購入できますか?
  Aspose.GIS は購入ページから購入できます[ここ](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

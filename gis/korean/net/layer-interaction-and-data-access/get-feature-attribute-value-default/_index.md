@@ -3,10 +3,16 @@ title: 기능 속성 값 가져오기(기본값)
 linktitle: 기능 속성 값 가져오기(기본값)
 second_title: Aspose.GIS .NET API
 description: .NET용 Aspose.GIS의 강력한 기능을 활용해 보세요! 이 단계별 가이드를 통해 지형지물 속성 값을 손쉽게 검색하고 조작하세요. 지금 평가판을 다운로드하세요!
-type: docs
 weight: 14
 url: /ko/net/layer-interaction-and-data-access/get-feature-attribute-value-default/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 기능 속성 값 가져오기(기본값)
+
 ## 소개
 .NET용 Aspose.GIS의 세계에 오신 것을 환영합니다! 이 포괄적인 가이드에서는 Aspose.GIS의 강력한 기능을 사용하여 지형지물 속성 값을 검색하는 복잡한 과정을 자세히 살펴보겠습니다. 숙련된 개발자이든 이제 막 시작하는 개발자이든 이 튜토리얼은 단계별 연습을 제공하여 이 놀라운 도구의 잠재력을 최대한 활용할 수 있도록 보장합니다.
 ## 전제조건
@@ -97,3 +103,9 @@ using (var layer = Drivers.GeoJson.CreateLayer(dataDir + "data2_out.json"))
  예, 무료 평가판을 통해 Aspose.GIS를 탐색할 수 있습니다. 다운로드 해[여기](https://releases.aspose.com/).
 ### 테스트 목적으로 임시 라이센스를 얻으려면 어떻게 해야 합니까?
  임시 라이센스를 얻으려면 다음을 방문하세요.[여기](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

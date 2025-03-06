@@ -3,10 +3,16 @@ title: إنشاء مضلع بهندسة الفتحات باستخدام Aspose.G
 linktitle: إنشاء مضلع بهندسة الثقب
 second_title: Aspose.GIS .NET API
 description: تعرف على كيفية إنشاء مضلع بهندسة الفتحات باستخدام Aspose.GIS for .NET. برنامج تعليمي خطوة بخطوة مع أمثلة التعليمات البرمجية.
-type: docs
 weight: 13
 url: /ar/net/geometry-creation/create-polygon-with-hole-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# إنشاء مضلع بهندسة الفتحات باستخدام Aspose.GIS
+
 ## مقدمة
 في هذا البرنامج التعليمي، سنتعرف على عملية إنشاء مضلع بهندسة ثقب باستخدام Aspose.GIS for .NET. Aspose.GIS هي مكتبة قوية تمكن المطورين من العمل مع البيانات الجغرافية المكانية في تطبيقات .NET الخاصة بهم. 
 ## المتطلبات الأساسية
@@ -66,3 +72,9 @@ Aspose.GIS هي مكتبة .NET تمكن المطورين من العمل مع �
  يمكنك العثور على دعم لـ Aspose.GIS على الموقع[منتدى Aspose.GIS](https://forum.aspose.com/c/gis/33).
 ### 5. كيف يمكنني الحصول على ترخيص مؤقت لـ Aspose.GIS؟
  يمكنك الحصول على ترخيص مؤقت لـ Aspose.GIS من[هنا](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

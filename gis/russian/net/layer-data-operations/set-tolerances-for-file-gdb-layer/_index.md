@@ -3,10 +3,16 @@ title: Установите допуски для слоя файловой ба
 linktitle: Установите допуски для слоя файловой базы данных GDB
 second_title: API Aspose.GIS .NET
 description: Изучите Aspose.GIS for .NET и освойте манипулирование геопространственными данными. Легко устанавливайте допуски с помощью пошаговых инструкций. Улучшите свои приложения .NET.
-type: docs
 weight: 22
 url: /ru/net/layer-data-operations/set-tolerances-for-file-gdb-layer/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Установите допуски для слоя файловой базы данных GDB
+
 ## Введение
 Добро пожаловать в мир манипулирования геопространственными данными с помощью Aspose.GIS for .NET! Если вы хотите улучшить свои навыки обработки географической информации в своих приложениях .NET, вы попали по адресу. В этом подробном руководстве мы углубимся в сложные детали настройки допусков для слоя файловой базы геоданных (GDB), предоставив вам практические идеи и пошаговые инструкции.
 ## Предварительные условия
@@ -69,3 +75,9 @@ using (var layer = dataset.CreateLayer("layer_name", options))
  Да, вы можете получить[временная лицензия](https://purchase.aspose.com/temporary-license/) для тестирования и оценки.
 ### Где я могу приобрести лицензию Aspose.GIS for .NET?
  Вы можете приобрести лицензию на сайте[страница покупки](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

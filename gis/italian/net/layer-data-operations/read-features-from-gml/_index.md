@@ -3,10 +3,16 @@ title: Leggi le funzionalità da GML in Aspose.GIS
 linktitle: Leggi le funzionalità da GML
 second_title: API Aspose.GIS .NET
 description: Scopri come leggere le funzionalità dai file GML utilizzando Aspose.GIS per .NET. Un tutorial completo per gli sviluppatori GIS.
-type: docs
 weight: 10
 url: /it/net/layer-data-operations/read-features-from-gml/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Leggi le funzionalità da GML in Aspose.GIS
+
 ## introduzione
 
 Sei pronto ad addentrarti nel mondo dei sistemi informativi geografici (GIS) utilizzando la potente libreria Aspose.GIS per .NET? Che tu sia uno sviluppatore esperto o che tu abbia appena iniziato il tuo viaggio nella programmazione GIS, questo tutorial ti guiderà passo dopo passo attraverso il processo di lettura delle funzionalità dai file GML (Geography Markup Language). Aspose.GIS per .NET fornisce un set completo di strumenti e API per manipolare i dati geospaziali senza sforzo, consentendoti di sbloccare tutto il potenziale delle tue applicazioni GIS.
@@ -113,3 +119,9 @@ R: Certamente! Aspose.GIS offre robuste funzionalità di interrogazione spaziale
 ### D: Il supporto tecnico è disponibile per gli utenti Aspose.GIS?
 
  R: Sì, Aspose fornisce supporto tecnico dedicato attraverso il proprio forum[collegamento]( https://forum.aspose.com/c/gis/33), dove gli utenti possono chiedere assistenza, segnalare problemi e interagire con la community.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

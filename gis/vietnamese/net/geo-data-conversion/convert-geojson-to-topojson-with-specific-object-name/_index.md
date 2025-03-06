@@ -3,10 +3,16 @@ title: Chuyển đổi GeoJSON sang TopoJSON với tên đối tượng cụ th�
 linktitle: Chuyển đổi GeoJSON sang TopoJSON với tên đối tượng cụ thể
 second_title: API Aspose.GIS .NET
 description: Tìm hiểu cách chuyển đổi GeoJSON sang TopoJSON bằng tên đối tượng cụ thể bằng Aspose.GIS cho .NET. Hướng dẫn này cung cấp hướng dẫn từng bước để thao tác dữ liệu địa lý hiệu quả.
-type: docs
 weight: 12
 url: /vi/net/geo-data-conversion/convert-geojson-to-topojson-with-specific-object-name/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Chuyển đổi GeoJSON sang TopoJSON với tên đối tượng cụ thể
+
 ## Giới thiệu
 Aspose.GIS for .NET là một công cụ mạnh mẽ để làm việc với dữ liệu địa lý trong các ứng dụng .NET. Cho dù bạn đang phát triển ứng dụng bản đồ, phân tích dữ liệu không gian hay thao tác với các tệp Geojson, Aspose.GIS đều cung cấp một bộ tính năng toàn diện để hợp lý hóa quy trình làm việc của bạn.
 ## Điều kiện tiên quyết
@@ -67,3 +73,9 @@ Có, bạn có thể dùng thử miễn phí từ[đây](https://releases.aspose
  Bạn có thể mua giấy phép từ[đây](https://purchase.aspose.com/buy).
 ### Tôi có cần giấy phép tạm thời để đánh giá không?
  Có, bạn có thể nhận được giấy phép tạm thời từ[đây](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

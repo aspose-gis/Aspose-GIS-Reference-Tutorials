@@ -3,10 +3,16 @@ title: Supprimer des couches de l'ensemble de données du fichier GDB
 linktitle: Supprimer des couches de l'ensemble de données du fichier GDB
 second_title: API Aspose.GIS .NET
 description: Explorez le SIG avec Aspose.GIS pour .NET ! Apprenez à supprimer des couches des ensembles de données File GDB étape par étape. Téléchargez-le maintenant pour une expérience de données spatiales fluide.
-type: docs
 weight: 17
 url: /fr/net/layer-data-operations/remove-layers-from-file-gdb-dataset/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Supprimer des couches de l'ensemble de données du fichier GDB
+
 ## Introduction
 Libérez tout le potentiel des systèmes d'information géographique (SIG) avec Aspose.GIS pour .NET, une boîte à outils puissante conçue pour simplifier la manipulation et la visualisation des données spatiales. Que vous soyez un développeur chevronné ou un passionné des SIG, ce didacticiel vous guidera tout au long du processus de suppression de couches d'un jeu de données de géodatabase fichier (GDB) à l'aide d'Aspose.GIS pour .NET.
 ## Conditions préalables
@@ -71,3 +77,9 @@ Oui, Aspose.GIS prend en charge l'interopérabilité avec différents formats SI
  Oui, une licence temporaire peut être achetée[ici](https://purchase.aspose.com/temporary-license/).
 ### Existe-t-il des exemples d’ensembles de données disponibles pour la pratique ?
 Explorez la documentation Aspose.GIS pour obtenir des exemples d'ensembles de données et des ressources supplémentaires.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

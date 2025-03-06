@@ -1,12 +1,17 @@
 ---
 title: Tutoriels complets et exemples d'Aspose.GIS pour .NET
 linktitle: Tutoriels Aspose.GIS pour .NET
-type: docs
 weight: 10
 url: /fr/net/
 description: Découvrez la puissance d'Aspose.GIS pour .NET à travers des didacticiels complets. Maîtrisez la conversion GeoData, la création de géométries, l’analyse, la gestion des couches, et bien plus encore.
-is_root: true
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Tutoriels complets et exemples d'Aspose.GIS pour .NET
+
 
 ## Introduction
 
@@ -94,3 +99,10 @@ Libérez le potentiel d'Aspose.GIS pour .NET avec nos didacticiels sur l'interac
 Découvrez des didacticiels complets sur les opérations de données de couche à l'aide d'Aspose.GIS pour .NET. Apprenez à lire, manipuler et visualiser des données géospatiales.
 ### [Rendu de carte](./map-rendering/)
 Libérez le potentiel de la visualisation des données géospatiales avec Aspose.GIS pour .NET. Importez sans effort SLD, étiquetez les fonctionnalités et créez des cartes époustouflantes. Explorez maintenant !
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Buat Shapefile Baru
 linktitle: Buat Shapefile Baru
 second_title: Aspose.GIS .NET API
 description: Pelajari cara membuat shapefile baru menggunakan Aspose.GIS untuk .NET. Ikuti panduan langkah demi langkah kami dan temukan kekuatan manipulasi data spasial.
-type: docs
 weight: 12
 url: /id/net/layer-management/create-new-shapefile/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Buat Shapefile Baru
+
 ## Perkenalan
 Jika Anda mempelajari pengembangan sistem informasi geografis (GIS) dengan .NET, Aspose.GIS adalah solusi tepat Anda. Pustaka canggih ini memberdayakan pengembang untuk bekerja secara lancar dengan data spasial, dan dalam tutorial ini, kami akan memandu Anda melalui proses pembuatan shapefile baru menggunakan Aspose.GIS untuk .NET.
 ## Prasyarat
@@ -80,3 +86,9 @@ Aspose.GIS pada dasarnya mendukung .NET, tetapi ada juga versi yang tersedia unt
  Dapatkan lisensi sementara Anda[Di Sini](https://purchase.aspose.com/temporary-license/).
 ### T: Di mana saya bisa membeli Aspose.GIS untuk .NET?
  Anda dapat membeli perpustakaan[Di Sini](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

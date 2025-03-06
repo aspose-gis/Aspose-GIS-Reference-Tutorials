@@ -3,10 +3,16 @@ title: Maîtrise SIG - Ajouter des couches à GDB avec Aspose.GIS pour .NET
 linktitle: Ajouter une couche au fichier de l'ensemble de données GDB
 second_title: API Aspose.GIS .NET
 description: Libérez la puissance du SIG avec Aspose.GIS pour .NET ! Découvrez comment ajouter des couches aux ensembles de données File GDB dans ce didacticiel étape par étape. #données géographiques #Aspose #SIG
-type: docs
 weight: 16
 url: /fr/net/layer-management/add-layer-to-file-gdb-dataset/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Maîtrise SIG - Ajouter des couches à GDB avec Aspose.GIS pour .NET
+
 ## Introduction
 Êtes-vous prêt à améliorer vos capacités SIG à l'aide d'Aspose.GIS pour .NET ? Dans ce guide étape par étape, nous vous guiderons tout au long du processus d'ajout d'une couche à un jeu de données de géodatabase fichier (GDB). Aspose.GIS pour .NET fournit des fonctionnalités puissantes pour manipuler les informations géographiques, et avec ce didacticiel, vous pourrez intégrer de manière transparente des couches supplémentaires dans vos ensembles de données.
 ## Conditions préalables
@@ -75,3 +81,9 @@ Aspose.GIS pour .NET prend en charge un large éventail de systèmes de référe
  Absolument! Rejoignez les discussions et partagez vos expériences sur le[Forum Aspose.GIS](https://forum.aspose.com/c/gis/33).
 ### Q : Où puis-je trouver une documentation détaillée pour Aspose.GIS pour .NET ?
  Explorez la documentation complète[ici](https://reference.aspose.com/gis/net/) pour des informations détaillées sur Aspose.GIS pour .NET.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

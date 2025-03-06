@@ -3,10 +3,16 @@ title: Aspose.GIS for .NET ile TopoJSON Özelliklerinin Kilidini Açma
 linktitle: TopoJSON'daki Özelliklere Erişim
 second_title: Aspose.GIS .NET API'si
 description: Aspose.GIS for .NET'i keşfedin ve TopoJSON özelliklerine adım adım erişmeyi öğrenin. Dokümantasyona dalın ve jeouzaysal yetenekleri zahmetsizce ortaya çıkarın.
-type: docs
 weight: 15
 url: /tr/net/layer-management/access-features-in-topojson/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS for .NET ile TopoJSON Özelliklerinin Kilidini Açma
+
 ## giriiş
 Aspose.GIS for .NET, geliştiricilerin coğrafi verilerle zahmetsizce çalışmasını sağlayan güçlü bir kütüphanedir. Bu eğitimde Aspose.GIS for .NET'i kullanarak TopoJSON'daki özelliklere erişmeyi inceleyeceğiz. TopoJSON, coğrafi özellikleri kompakt ve verimli bir şekilde temsil eden bir formattır.
 ## Önkoşullar
@@ -67,3 +73,9 @@ Tebrikler! Aspose.GIS for .NET'i kullanarak TopoJSON'daki özelliklere başarıy
 Evet, ücretsiz deneme sürümüne erişebilirsiniz[Burada](https://releases.aspose.com/).
 ### S: Lisansı nasıl satın alabilirim?
  Lisans satın alın[Burada](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

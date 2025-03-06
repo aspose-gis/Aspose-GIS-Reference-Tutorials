@@ -3,10 +3,16 @@ title: Creëer MultiPolygon-geometrie met Aspose.GIS
 linktitle: Creëer MultiPolygon-geometrie
 second_title: Aspose.GIS .NET-API
 description: Leer hoe u MultiPolygon-geometrie kunt maken met Aspose.GIS voor .NET. Stap-voor-stap handleiding voor beginners. Gratis proefversie beschikbaar.
-type: docs
 weight: 16
 url: /nl/net/geometry-creation/create-multipolygon-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Creëer MultiPolygon-geometrie met Aspose.GIS
+
 ## Invoering
 In de wereld van de ontwikkeling van geografische informatiesystemen (GIS) onderscheidt Aspose.GIS voor .NET zich als een krachtig hulpmiddel voor het creëren, bewerken en analyseren van georuimtelijke gegevens. Of u nu een doorgewinterde ontwikkelaar bent of net begint, het beheersen van Aspose.GIS kan een wereld aan mogelijkheden voor uw projecten openen.
 ## Vereisten
@@ -66,3 +72,9 @@ Absoluut! Aspose.GIS biedt uitgebreide documentatie en tutorials om ontwikkelaar
  Ja, u kunt een tijdelijke licentie verkrijgen via[hier](https://purchase.aspose.com/temporary-license/) voor evaluatiedoeleinden.
 ### Kan ik Aspose.GIS rechtstreeks aanschaffen?
  Ja, u kunt Aspose.GIS kopen via de website[hier](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

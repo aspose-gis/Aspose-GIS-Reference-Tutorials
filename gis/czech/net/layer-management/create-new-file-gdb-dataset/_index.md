@@ -3,10 +3,16 @@ title: Vytvořte nový soubor GDB Dataset
 linktitle: Vytvořte nový soubor GDB Dataset
 second_title: Aspose.GIS .NET API
 description: Prozkoumejte Aspose.GIS for .NET, abyste mohli snadno vytvářet a spravovat datové sady GIS. Stáhněte si nyní pro bezproblémový geoprostorový rozvoj. #State #GIS
-type: docs
 weight: 10
 url: /cs/net/layer-management/create-new-file-gdb-dataset/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Vytvořte nový soubor GDB Dataset
+
 ## Úvod
 oblasti geoprostorového vývoje vyniká Aspose.GIS for .NET jako výkonná sada nástrojů pro správu a manipulaci s daty geografického informačního systému (GIS). Ať už jste zkušený vývojář nebo teprve začínáte svou cestu do GIS, tento tutoriál vás provede procesem vytváření nové datové sady File Geodatabase (GDB) pomocí Aspose.GIS for .NET.
 ## Předpoklady
@@ -84,3 +90,9 @@ Aspose.GIS for .NET je samostatná sada nástrojů; můžete jej však integrova
  Prozkoumat[Dokumentace Aspose.GIS](https://reference.aspose.com/gis/net/) pro další příklady a podrobné informace.
 ### Otázka: Kde mohu zakoupit Aspose.GIS pro .NET?
  Aspose.GIS pro .NET můžete zakoupit na[nákupní stránku](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

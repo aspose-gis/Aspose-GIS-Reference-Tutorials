@@ -3,10 +3,16 @@ title: Fitur Pangkas Lapisan
 linktitle: Fitur Pangkas Lapisan
 second_title: Aspose.GIS .NET API
 description: Buka keajaiban geospasial dengan Aspose.GIS untuk .NET! Pangkas fitur lapisan dengan mudah. Unduh uji coba gratis Anda sekarang. #Asumsikan #GIS #geospasial
-type: docs
 weight: 19
 url: /id/net/layer-management/crop-layer-features/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Fitur Pangkas Lapisan
+
 ## Perkenalan
 Dalam bidang pemrosesan data geospasial yang luas, Aspose.GIS untuk .NET muncul sebagai alat yang ampuh, menawarkan pengalaman yang lancar kepada pengembang dalam menangani informasi geografis. Tutorial ini akan memandu Anda melalui proses pemotongan fitur lapisan menggunakan Aspose.GIS, memungkinkan Anda menyesuaikan data geospasial untuk memenuhi kebutuhan spesifik.
 ## Prasyarat
@@ -62,3 +68,9 @@ Aspose.GIS untuk .NET membuka banyak kemungkinan bagi pengembang yang bekerja de
  A: Ya, Anda dapat mengunduh uji coba gratis[Di Sini](https://releases.aspose.com/).
 ### T: Di mana saya bisa membeli Aspose.GIS untuk .NET?
  A: Anda dapat membeli perpustakaan[Di Sini](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

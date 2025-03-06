@@ -3,10 +3,16 @@ title: 与 GPX 层交互
 linktitle: 与 GPX 层交互
 second_title: Aspose.GIS .NET API
 description: 探索 Aspose.GIS for .NET 并轻松与 GPX 图层交互。下载该库，尝试免费试用，并提升您的地理空间应用程序！
-type: docs
 weight: 16
 url: /zh/net/layer-interaction-and-data-access/interact-with-gpx-layer/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 与 GPX 层交互
+
 ## 介绍
 您准备好将您的地理空间应用程序提升到一个新的水平吗？ Aspose.GIS for .NET 提供了一套强大的工具来无缝处理地理信息系统 (GIS) 数据。在本教程中，我们将指导您完成使用 Aspose.GIS for .NET 与 GPX（GPS 交换格式）图层交互的过程。无论您是经验丰富的开发人员还是刚刚开始使用 GIS，本分步指南都将帮助您利用这个强大库的功能。
 ## 先决条件
@@ -78,3 +84,9 @@ using (var layer = Drivers.Gpx.OpenLayer(dataDir + "schiehallion.gpx"))
 是的，您可以获得临时许可证[这里](https://purchase.aspose.com/temporary-license/).
 ### 如何购买 Aspose.GIS for .NET？
 你可以购买Aspose.GIS[这里](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

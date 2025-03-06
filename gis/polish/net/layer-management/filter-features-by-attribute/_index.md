@@ -3,10 +3,16 @@ title: Filtruj funkcje według atrybutu
 linktitle: Filtruj funkcje według atrybutu
 second_title: Aspose.GIS .NET API
 description: Poznaj moc Aspose.GIS dla .NET w manipulacji danymi przestrzennymi. Filtruj funkcje bez wysiłku, ulepszaj aplikacje GIS i zwiększaj produktywność.
-type: docs
 weight: 21
 url: /pl/net/layer-management/filter-features-by-attribute/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Filtruj funkcje według atrybutu
+
 ## Wstęp
 dynamicznym świecie systemów informacji geograficznej (GIS) Aspose.GIS dla .NET wyróżnia się jako potężne narzędzie, które umożliwia programistom płynne manipulowanie i analizowanie danych przestrzennych. Niezależnie od tego, czy jesteś doświadczonym profesjonalistą GIS, czy ciekawym programistą chcącym odkrywać możliwości, ten samouczek poprowadzi Cię przez podstawowe kroki korzystania z Aspose.GIS w środowisku .NET.
 ## Warunki wstępne
@@ -57,3 +63,9 @@ Aspose.GIS dla .NET upraszcza manipulację i analizę danych przestrzennych, co 
  Uzyskaj tymczasową licencję[Tutaj](https://purchase.aspose.com/temporary-license/).
 ### Czy dostępny jest samouczek krok po kroku dotyczący innych funkcji Aspose.GIS?
  Tak, więcej samouczków i dokumentacji można znaleźć na stronie[Odniesienie do Aspose.GIS](https://reference.aspose.com/gis/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

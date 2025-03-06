@@ -3,10 +3,16 @@ title: Tính chiều dài hình học trong .NET với Aspose.GIS
 linktitle: Nhận chiều dài hình học
 second_title: API Aspose.GIS .NET
 description: Tìm hiểu cách tính độ dài hình học trong .NET bằng Aspose.GIS để xử lý dữ liệu không gian hiệu quả. Hướng dẫn từng bước với các ví dụ về mã.
-type: docs
 weight: 24
 url: /vi/net/geometry-analysis/get-geometry-length/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Tính chiều dài hình học trong .NET với Aspose.GIS
+
 ## Giới thiệu
 Trong lĩnh vực phát triển .NET, Aspose.GIS nổi bật như một bộ công cụ mạnh mẽ cung cấp các chức năng mạnh mẽ để xử lý các hệ thống thông tin địa lý (GIS). Cho dù bạn là nhà phát triển dày dạn kinh nghiệm hay mới bước chân vào thế giới lập trình GIS, Aspose.GIS cho .NET cung cấp một bộ công cụ toàn diện để làm việc với dữ liệu không gian một cách hiệu quả. Trong hướng dẫn này, chúng ta sẽ đi sâu vào một trong những nhiệm vụ cơ bản trong phát triển GIS - tính toán chiều dài hình học. Chúng ta sẽ khám phá từng bước cách đạt được điều này bằng cách sử dụng Aspose.GIS cho .NET, chia quy trình thành các phần có thể quản lý được để dễ hiểu.
 ## Điều kiện tiên quyết
@@ -74,3 +80,9 @@ Trả lời: Aspose.GIS cho .NET tương thích với .NET Framework 4.6.1 hoặ
  Đáp: Bạn có thể xin giấy phép tạm thời từ[đây](https://purchase.aspose.com/temporary-license/).
 ### Câu hỏi: Tôi có thể tùy chỉnh định dạng đầu ra để tính toán chiều dài hình học không?
 Trả lời: Có, Aspose.GIS for .NET cung cấp nhiều tùy chọn định dạng khác nhau để tùy chỉnh định dạng đầu ra theo yêu cầu của bạn.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

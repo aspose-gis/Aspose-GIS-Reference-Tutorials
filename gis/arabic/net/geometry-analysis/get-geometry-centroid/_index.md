@@ -3,10 +3,16 @@ title: احصل على الهندسة المركزية باستخدام Aspose.G
 linktitle: احصل على الهندسة المركزية
 second_title: Aspose.GIS .NET API
 description: تعرف على كيفية الاستفادة من Aspose.GIS for .NET في هندسة النقط الوسطى من خلال هذا الكتاب الشامل. قم بدمج التحليل المكاني بسلاسة في تطبيقات .NET الخاصة بك.
-type: docs
 weight: 19
 url: /ar/net/geometry-analysis/get-geometry-centroid/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# احصل على الهندسة المركزية باستخدام Aspose.GIS
+
 ## مقدمة
 في مجال تطوير نظم المعلومات الجغرافية (GIS)، يبرز Aspose.GIS for .NET كأداة قوية ومتعددة الاستخدامات للتعامل مع البيانات المكانية. ومن خلال تسخير قوتها، يمكن للمطورين معالجة البيانات الجغرافية وتحليلها بكفاءة داخل تطبيقات .NET الخاصة بهم. يهدف هذا البرنامج التعليمي إلى إرشادك خلال عملية استخدام Aspose.GIS for .NET للحصول على النقطه الوسطى للهندسة، وهي عملية أساسية في التحليل المكاني.
 ## المتطلبات الأساسية
@@ -70,3 +76,9 @@ Console.WriteLine("{0:F} {1:F}", centroid.X, centroid.Y); // الإخراج: 3.3
  نعم، الوثائق الشاملة لـ Aspose.GIS for .NET متاحة على الموقع[صفحة التوثيق](https://reference.aspose.com/gis/net/)، وتقديم رؤى تفصيلية حول استخدامه ووظائفه.
 ### س: كيف يمكنني طلب المساعدة أو التواصل مع المجتمع فيما يتعلق بـ Aspose.GIS for .NET؟
  لأية استفسارات أو دعم أو مشاركة مجتمعية، يمكنك زيارة منتدى Aspose.GIS المخصص[هنا](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: .NET용 Aspose.GIS를 사용하여 형상 오버레이 마스터링
 linktitle: 기하학 오버레이 찾기
 second_title: Aspose.GIS .NET API
 description: .NET용 Aspose.GIS를 사용하여 기하학적 오버레이 작업을 수행하는 방법을 알아보세요. 마스터 교차, 합집합, 차이 및 대칭 차이 연산.
-type: docs
 weight: 16
 url: /ko/net/geometry-analysis/find-geometry-overlays/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# .NET용 Aspose.GIS를 사용하여 형상 오버레이 마스터링
+
 ## 소개
 GIS(지리정보시스템) 영역에서 오버레이 작업은 공간 분석의 기본입니다. 이를 통해 다양한 공간 데이터 세트를 비교하고 결합하여 귀중한 통찰력을 얻을 수 있습니다. .NET용 Aspose.GIS는 기하학적 오버레이를 효율적으로 수행하기 위한 강력한 기능을 제공합니다. 이 튜토리얼에서는 Aspose.GIS for .NET을 사용하여 Intersection, Union, Difference 및 Symmetric Difference와 같은 다양한 오버레이 작업을 살펴보겠습니다.
 ## 전제조건
@@ -108,3 +114,9 @@ PrintRing(((IPolygon)multiPolygon[1]).ExteriorRing);
  예, 테스트 및 평가 목적으로 임시 라이선스를 사용할 수 있습니다. 당신은 그것을 얻을 수 있습니다[여기](https://purchase.aspose.com/temporary-license/).
 ### Q: .NET용 Aspose.GIS를 직접 구입할 수 있나요?
  예, 웹사이트에서 .NET용 Aspose.GIS를 구입할 수 있습니다[여기](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

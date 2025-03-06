@@ -3,10 +3,16 @@ title: Criação de geometria
 linktitle: Criação de geometria
 second_title: API Aspose.GIS .NET
 description: Desbloqueie o potencial da manipulação de dados geoespaciais com Aspose.GIS for .NET. Mergulhe em nossos tutoriais, abrangendo criação, conversão e análise de geometria.
-type: docs
 weight: 21
 url: /pt/net/geometry-creation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Criação de geometria
+
 
 ## Introdução
 
@@ -105,3 +111,9 @@ Aprenda como contar geometrias em uma geometria usando Aspose.GIS for .NET. Tuto
 Aprenda como utilizar Aspose.GIS for .NET para manipular dados geográficos sem esforço. Tutoriais abrangentes disponíveis.
 ### [Coordenar conversão com Aspose.GIS](./convert-coordinates/)
 Aprenda como converter coordenadas com Aspose.GIS for .NET. Guia passo a passo, pré-requisitos e perguntas frequentes fornecidas.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

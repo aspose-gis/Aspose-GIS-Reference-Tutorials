@@ -3,10 +3,16 @@ title: Functielabeling beheersen met Aspose.GIS voor .NET
 linktitle: Label functies op kaart
 second_title: Aspose.GIS .NET-API
 description: Verken Aspose.GIS voor .NET en beheers de kunst van het labelen van objecten op kaarten. Verbeter uw geospatiale visualisaties moeiteloos. #Aspose #GIS
-type: docs
 weight: 11
 url: /nl/net/map-rendering/label-features-on-map/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Functielabeling beheersen met Aspose.GIS voor .NET
+
 ## Invoering
 In de wereld van geospatiale datavisualisatie speelt het labelen van kenmerken op een kaart een cruciale rol bij het effectief overbrengen van informatie. Aspose.GIS voor .NET biedt een krachtige toolkit om dit naadloos te bereiken. In deze zelfstudie verkennen we verschillende methoden voor het labelen van punten op een kaart met behulp van Aspose.GIS, waardoor uw kaartvisualisaties worden verbeterd met informatieve labels.
 ## Vereisten
@@ -126,3 +132,9 @@ Aspose.GIS is geoptimaliseerd voor prestaties, maar overweeg het gebruik van op 
 Ja, u kunt de plaatsing van labels nauwkeurig afstemmen met behulp van opties zoals rotatie, ankerpunten en offsets.
 ### Kan ik het genereren van labels in een batchproces automatiseren?
 Absoluut, u kunt Aspose.GIS integreren in uw geautomatiseerde workflows voor het genereren van batchlabels.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

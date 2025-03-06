@@ -3,10 +3,16 @@ title: Odczytaj identyfikator obiektu z warstwy pliku GDB w Aspose.GIS
 linktitle: Odczytaj identyfikator obiektu z warstwy pliku GDB
 second_title: Aspose.GIS .NET API
 description: Dowiedz się, jak wykorzystać Aspose.GIS dla .NET do wydajnego przetwarzania danych geoprzestrzennych. Dostępne są obszerne samouczki i wskazówki ekspertów.
-type: docs
 weight: 16
 url: /pl/net/layer-data-operations/read-object-id-from-file-gdb-layer/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Odczytaj identyfikator obiektu z warstwy pliku GDB w Aspose.GIS
+
 ## Wstęp
 Witamy w naszym obszernym przewodniku na temat opanowania Aspose.GIS dla .NET! Aspose.GIS to potężna biblioteka zaprojektowana do wydajnej obsługi zadań przetwarzania i wizualizacji danych geoprzestrzennych w środowisku .NET. Niezależnie od tego, czy jesteś doświadczonym programistą, czy dopiero zaczynasz swoją przygodę z programowaniem geoprzestrzennym, ten samouczek przeprowadzi Cię przez wszystko, co musisz wiedzieć, aby wykorzystać pełny potencjał Aspose.GIS.
 ## Warunki wstępne
@@ -74,3 +80,9 @@ Jeśli napotkasz jakiekolwiek problemy lub masz pytania dotyczące Aspose.GIS, m
 Tak, możesz uzyskać tymczasową licencję ze strony Aspose do celów testowania i oceny.
 ### Gdzie mogę znaleźć obszerną dokumentację Aspose.GIS dla .NET?
  Możesz odwołać się do[dokumentacja](https://reference.aspose.com/gis/net/) aby uzyskać szczegółowe informacje na temat korzystania z interfejsów API i funkcji Aspose.GIS.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

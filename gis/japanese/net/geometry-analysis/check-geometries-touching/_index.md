@@ -3,10 +3,16 @@ title: 接触しているジオメトリをチェックする
 linktitle: 接触しているジオメトリをチェックする
 second_title: Aspose.GIS .NET API
 description: Aspose.GIS for .NET を使用して空間データ処理の能力を解放します。この多用途ツールキットを使用して、空間機能をアプリケーションにシームレスに統合します。
-type: docs
 weight: 13
 url: /ja/net/geometry-analysis/check-geometries-touching/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 接触しているジオメトリをチェックする
+
 ## 導入
 地理情報システム (GIS) の分野では、Aspose.GIS for .NET は、空間機能をアプリケーションにシームレスに組み込むことを目指す開発者にとって強力なツールとして際立っています。 Aspose.GIS は、その堅牢な機能とユーザーフレンドリーなインターフェイスにより、開発者がジオメトリの分析、視覚化、操作など、空間データを簡単に操作できるようにします。
 ## 前提条件
@@ -64,3 +70,9 @@ Aspose.GIS は、.NET Framework、.NET Core、.NET Standard などのさまざ�
 Aspose.GIS は、最新のテクノロジーとの互換性を確保し、報告された問題に対処するために、定期的に更新と機能強化を受け取ります。
 ### Aspose.GIS の一時ライセンスを取得できますか?
 はい、次から一時ライセンスを取得できます。[ここ](https://purchase.aspose.com/temporary-license/)開発環境における Aspose.GIS の機能を評価します。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Zkontrolujte geometrie pro rovnost
 linktitle: Zkontrolujte geometrie pro rovnost
 second_title: Aspose.GIS .NET API
 description: Naučte se, jak používat Aspose.GIS pro .NET ke kontrole rovnosti geometrií ve vašich aplikacích .NET pomocí tohoto komplexního kurzu.
-type: docs
 weight: 10
 url: /cs/net/geometry-analysis/check-geometries-for-equality/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Zkontrolujte geometrie pro rovnost
+
 ## Úvod
 Aspose.GIS for .NET je výkonná knihovna, která umožňuje vývojářům efektivně pracovat s geoprostorovými daty v jejich aplikacích .NET. Ať už vytváříte mapové aplikace, nástroje pro prostorovou analýzu nebo integrujete geoprostorové funkce do stávajícího softwaru, Aspose.GIS poskytuje nástroje, které potřebujete k dokončení své práce.
 ## Předpoklady
@@ -73,3 +79,9 @@ Ano, Aspose.GIS for .NET je kompatibilní s různými .NET frameworky, včetně 
  Podporu můžete získat na fóru komunity Aspose.GIS[tady](https://forum.aspose.com/c/gis/33).
 ### Mohu si zakoupit dočasnou licenci pro Aspose.GIS pro .NET?
  Ano, můžete si zakoupit dočasnou licenci od[nákupní stránku](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

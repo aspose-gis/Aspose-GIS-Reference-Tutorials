@@ -3,10 +3,16 @@ title: Fordítsa le a geometriát a WKT-ból az Aspose.GIS segítségével .NET-
 linktitle: Geometry fordítása a WKT-ból
 second_title: Aspose.GIS .NET API
 description: Ismerje meg, hogyan fordíthat le geometriát jól ismert szövegből az Aspose.GIS for .NET használatával. Lépésről lépésre bemutató oktatóanyag a zökkenőmentes integrációhoz.
-type: docs
 weight: 21
 url: /hu/net/geometry-processing/translate-geometry-from-wkt/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Fordítsa le a geometriát a WKT-ból az Aspose.GIS segítségével .NET-ben
+
 ## Bevezetés
 Ebben az oktatóanyagban a geometria jól ismert szövegből (WKT) való fordításának folyamatába fogunk az Aspose.GIS for .NET használatával. Az Aspose.GIS egy hatékony .NET API, amely lehetővé teszi a fejlesztők számára, hogy könnyedén dolgozzanak térinformatikai adatokkal. Akár tapasztalt fejlesztő, akár csak most kezdi a térinformatikai programozást, ez az oktatóanyag lépésről lépésre végigvezeti a folyamaton.
 ## Előfeltételek
@@ -48,3 +54,9 @@ Igen, ingyenes próbaverziót kaphat a webhelyen[itt](https://releases.aspose.co
  A dokumentációt megtalálod[itt](https://reference.aspose.com/gis/net/).
 ### Hogyan kaphatok támogatást az Aspose.GIS for .NET számára?
  Támogatást az Aspose.GIS fórumon kaphat[itt](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

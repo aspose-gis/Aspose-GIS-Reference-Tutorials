@@ -3,10 +3,16 @@ title: Преобразуйте полигоны в линии с помощью
 linktitle: Замените многоугольники линиями
 second_title: API Aspose.GIS .NET
 description: Узнайте, как заменить полигоны линиями с помощью Aspose.GIS для .NET. Совершенствуйте свои навыки манипулирования данными ГИС без особых усилий.
-type: docs
 weight: 16
 url: /ru/net/geometry-processing/replace-polygons-with-lines/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Преобразуйте полигоны в линии с помощью Aspose.GIS для .NET
+
 ## Введение
 В мире разработки географических информационных систем (ГИС) Aspose.GIS for .NET выделяется как мощный набор инструментов для работы с пространственными данными. Независимо от того, являетесь ли вы опытным разработчиком или только начинаете свой путь в программировании ГИС, Aspose.GIS for .NET предлагает полный набор функций для эффективного манипулирования и анализа географических данных.
 ## Предварительные условия
@@ -54,3 +60,9 @@ Aspose.GIS for .NET предлагает мощные функциональны
  Да, вы можете приобрести временную лицензию у[здесь](https://purchase.aspose.com/temporary-license/).
 ### Подходит ли Aspose.GIS for .NET как новичкам, так и опытным разработчикам?
 Безусловно, Aspose.GIS for .NET обслуживает разработчиков всех уровней, предлагая исчерпывающую документацию и поддержку.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

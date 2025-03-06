@@ -3,10 +3,16 @@ title: Tạo tệp GDB với một lớp
 linktitle: Tạo tệp GDB với một lớp
 second_title: API Aspose.GIS .NET
 description: Mở khóa tiềm năng quản lý dữ liệu không gian địa lý trong .NET với Aspose.GIS. Tìm hiểu cách tạo Cơ sở dữ liệu địa lý tệp và các lớp theo từng bước. Tải ngay!
-type: docs
 weight: 11
 url: /vi/net/layer-management/create-file-gdb-with-single-layer/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Tạo tệp GDB với một lớp
+
 ## Giới thiệu
 Bạn đã sẵn sàng nâng cao các ứng dụng không gian địa lý của mình bằng các cơ sở dữ liệu và lớp tệp địa lý mạnh mẽ chưa? Không cần tìm đâu xa ngoài Aspose.GIS cho .NET. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn quy trình tạo Cơ sở dữ liệu địa lý tệp (GDB) với một lớp duy nhất bằng cách sử dụng Aspose.GIS cho .NET. Khai thác sức mạnh của việc quản lý và trực quan hóa dữ liệu không gian trong các ứng dụng .NET của bạn một cách dễ dàng.
 ## Điều kiện tiên quyết
@@ -70,3 +76,9 @@ Có, Aspose.GIS cho .NET có thể được tích hợp liền mạch vào các 
  Tham quan[Diễn đàn Aspose.GIS](https://forum.aspose.com/c/gis/33) để được cộng đồng hỗ trợ và giúp đỡ.
 ### Giấy phép tạm thời có sẵn cho Aspose.GIS cho .NET không?
  Có, bạn có thể nhận được một[giấy phép tạm thời](https://purchase.aspose.com/temporary-license/) cho Aspose.GIS cho .NET.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

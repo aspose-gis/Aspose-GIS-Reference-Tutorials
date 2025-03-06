@@ -3,10 +3,16 @@ title: Tworzenie geometrii
 linktitle: Tworzenie geometrii
 second_title: Aspose.GIS .NET API
 description: Odblokuj potencjał manipulacji danymi geoprzestrzennymi za pomocą Aspose.GIS dla .NET. Zapoznaj się z naszymi samouczkami dotyczącymi tworzenia, konwersji i analizy geometrii.
-type: docs
 weight: 21
 url: /pl/net/geometry-creation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Tworzenie geometrii
+
 
 ## Wstęp
 
@@ -105,3 +111,9 @@ Dowiedz się, jak liczyć geometrie w geometrii przy użyciu Aspose.GIS dla .NET
 Dowiedz się, jak wykorzystać Aspose.GIS dla .NET do łatwego manipulowania danymi geograficznymi. Dostępne kompleksowe samouczki.
 ### [Konwersja współrzędnych za pomocą Aspose.GIS](./convert-coordinates/)
 Dowiedz się, jak konwertować współrzędne za pomocą Aspose.GIS dla .NET. Podano przewodnik krok po kroku, wymagania wstępne i często zadawane pytania.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

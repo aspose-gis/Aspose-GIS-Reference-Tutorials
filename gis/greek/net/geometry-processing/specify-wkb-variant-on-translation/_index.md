@@ -3,10 +3,16 @@ title: Καθορίστε την παραλλαγή WKB στη μετάφρασ�
 linktitle: Καθορίστε την παραλλαγή WKB στη μετάφραση
 second_title: Aspose.GIS .NET API
 description: Μάθετε πώς να καθορίζετε παραλλαγές WKB στο Aspose.GIS για .NET χωρίς κόπο με αυτόν τον περιεκτικό οδηγό. Ενισχύστε τις δεξιότητές σας στην ανάπτυξη GIS.
-type: docs
 weight: 18
 url: /el/net/geometry-processing/specify-wkb-variant-on-translation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Καθορίστε την παραλλαγή WKB στη μετάφραση στο Aspose.GIS για .NET
+
 ## Εισαγωγή
 Στον τομέα της ανάπτυξης Συστημάτων Γεωγραφικών Πληροφοριών (GIS), το Aspose.GIS για .NET ξεχωρίζει ως ένα ισχυρό σύνολο εργαλείων. Η ευελιξία και η αποτελεσματικότητά του το καθιστούν ιδανική επιλογή για προγραμματιστές που στοχεύουν να ενσωματώσουν απρόσκοπτα τις λειτουργίες GIS στις εφαρμογές τους .NET. Αυτό το άρθρο χρησιμεύει ως ένας περιεκτικός οδηγός για τη μόχλευση του Aspose.GIS για .NET, εστιάζοντας ειδικά στον καθορισμό παραλλαγών WKB (Καλά Γνωστό Δυαδικό) κατά τις διαδικασίες μετάφρασης.
 ## Προαπαιτούμενα
@@ -62,3 +68,9 @@ File.WriteAllBytes(Path.Combine("Your Document Directory", "EWkbFile.ewkb"), wkb
  Μπορείτε να αποκτήσετε μια προσωρινή άδεια μεταβαίνοντας στο[σελίδα προσωρινής άδειας](https://purchase.aspose.com/temporary-license/) και ακολουθώντας τις παρεχόμενες οδηγίες.
 ### Πού μπορώ να αγοράσω άδεια χρήσης για το Aspose.GIS για .NET;
  Μπορείτε να αγοράσετε μια άδεια χρήσης για το Aspose.GIS για .NET από τη σελίδα αγοράς στη διεύθυνση[αυτός ο σύνδεσμος](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

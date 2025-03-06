@@ -3,10 +3,16 @@ title: Kontrola geometrie obsahuje další
 linktitle: Kontrola geometrie obsahuje další
 second_title: Aspose.GIS .NET API
 description: Prozkoumejte Aspose.GIS for .NET, robustní knihovnu pro bezproblémovou integraci geoprostorových dat ve vašich aplikacích .NET.
-type: docs
 weight: 14
 url: /cs/net/geometry-analysis/check-geometry-contains-another/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Kontrola geometrie obsahuje další
+
 ## Úvod
 Aspose.GIS for .NET je výkonná knihovna, která umožňuje vývojářům bezproblémově pracovat s geoprostorovými daty v rámci jejich aplikací .NET. Ať už vytváříte mapovou aplikaci, provádíte geoprostorovou analýzu nebo integrujete funkce založené na poloze do vašeho softwaru, Aspose.GIS zjednodušuje proces tím, že poskytuje intuitivní rozhraní API a robustní funkce.
 ## Předpoklady
@@ -85,3 +91,9 @@ Odpověď: Aspose.GIS pravidelně vydává aktualizace za účelem zlepšení v�
 Odpověď: Ano, můžete se připojit ke komunitnímu fóru Aspose.GIS[tady](https://forum.aspose.com/c/gis/33) spojit se s ostatními uživateli, klást otázky a sdílet své zkušenosti.
 ### Q5: Mohu vyzkoušet Aspose.GIS před nákupem?
  Odpověď: Jistě, můžete prozkoumat Aspose.GIS stažením bezplatné zkušební verze z[tady](https://releases.aspose.com/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

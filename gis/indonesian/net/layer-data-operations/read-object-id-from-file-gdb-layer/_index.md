@@ -3,10 +3,16 @@ title: Baca ID Objek dari File Lapisan GDB Di Aspose.GIS
 linktitle: Baca ID Objek dari File Lapisan GDB
 second_title: Aspose.GIS .NET API
 description: Pelajari cara memanfaatkan Aspose.GIS untuk .NET guna menangani pemrosesan data geospasial secara efisien. Tersedia tutorial komprehensif dan bimbingan ahli.
-type: docs
 weight: 16
 url: /id/net/layer-data-operations/read-object-id-from-file-gdb-layer/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Baca ID Objek dari File Lapisan GDB Di Aspose.GIS
+
 ## Perkenalan
 Selamat datang di panduan komprehensif kami tentang penguasaan Aspose.GIS untuk .NET! Aspose.GIS adalah perpustakaan canggih yang dirancang untuk menangani tugas pemrosesan dan visualisasi data geospasial secara efisien dalam kerangka .NET. Baik Anda seorang pengembang berpengalaman atau baru memulai perjalanan Anda dalam pemrograman geospasial, tutorial ini akan memandu Anda melalui semua yang perlu Anda ketahui untuk memanfaatkan potensi penuh Aspose.GIS.
 ## Prasyarat
@@ -74,3 +80,9 @@ Jika Anda mengalami masalah atau memiliki pertanyaan tentang Aspose.GIS, Anda da
 Ya, Anda bisa mendapatkan lisensi sementara dari situs Aspose untuk tujuan pengujian dan evaluasi.
 ### Di mana saya dapat menemukan dokumentasi komprehensif untuk Aspose.GIS untuk .NET?
  Anda dapat merujuk ke[dokumentasi](https://reference.aspose.com/gis/net/) untuk informasi mendetail tentang penggunaan API dan fitur Aspose.GIS.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

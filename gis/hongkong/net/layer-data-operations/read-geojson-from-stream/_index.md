@@ -3,10 +3,16 @@ title: 使用 Aspose.GIS for .NET 從流中讀取 GeoJSON
 linktitle: 從流中讀取 GeoJSON
 second_title: Aspose.GIS .NET API
 description: 了解如何使用 Aspose.GIS for .NET 從流中讀取 GeoJSON。請按照我們的逐步指南將地理空間無縫整合到您的應用程式中。
-type: docs
 weight: 14
 url: /zh-hant/net/layer-data-operations/read-geojson-from-stream/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.GIS for .NET 從流中讀取 GeoJSON
+
 ## 介紹
 歡迎閱讀我們使用 Aspose.GIS for .NET 從流中讀取 GeoJSON 的逐步指南。 Aspose.GIS 是一個強大的 API，可為 .NET 應用程式提供地理空間功能，讓您能夠無縫地使用各種 GIS 格式。在本教程中，我們將引導您完成使用 Aspose.GIS 從流中讀取 GeoJSON 資料的過程，並分解每個步驟以使其清晰易懂。
 ## 先決條件
@@ -56,3 +62,9 @@ using (var layer = VectorLayer.Open(AbstractPath.FromStream(memoryStream), Drive
 您可以在 Aspose 論壇上獲得對 Aspose.GIS 的支持[這裡](https://forum.aspose.com/c/gis/33).
 ### 我需要臨時許可證才能使用 Aspose.GIS 嗎？
 您可以從以下位置取得 Aspose.GIS 的臨時許可證[這裡](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

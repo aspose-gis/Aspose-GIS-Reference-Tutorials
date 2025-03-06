@@ -3,10 +3,16 @@ title: حساب المسافة بين الأشكال الهندسية باستخ
 linktitle: حساب المسافة بين الأشكال الهندسية
 second_title: Aspose.GIS .NET API
 description: تعرف على كيفية حساب المسافات بين الأشكال الهندسية في .NET باستخدام Aspose.GIS. دليل خطوة بخطوة مع أمثلة التعليمات البرمجية. تعزيز التطبيقات الجغرافية المكانية الخاصة بك.
-type: docs
 weight: 21
 url: /ar/net/geometry-analysis/calculate-distance-between-geometries/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# حساب المسافة بين الأشكال الهندسية باستخدام Aspose.GIS
+
 ## مقدمة
 في عالم البرمجة الجغرافية المكانية، تعد القدرة على حساب المسافات بين الأشكال الهندسية المختلفة أمرًا بالغ الأهمية. سواء كنت تتعامل مع مضلعات أو خطوط أو نقاط، فإن معرفة المسافة بينها يمكن أن يكون أمرًا بالغ الأهمية لمختلف التطبيقات، بدءًا من رسم الخرائط وحتى التخطيط اللوجستي. يوفر Aspose.GIS for .NET أدوات قوية لإجراء مثل هذه الحسابات بسهولة ودقة.
 ## المتطلبات الأساسية
@@ -84,3 +90,9 @@ Console.WriteLine(distance.ToString("F")); // 0.63
 يوفر Aspose.GIS for .NET إمكانية التشغيل التفاعلي مع مكتبات GIS الأخرى، مما يسمح لك بالاستفادة من الوظائف الإضافية.
 ### هل يتوفر الدعم الفني لـ Aspose.GIS لمستخدمي .NET؟
  نعم، يمكن لمستخدمي Aspose.GIS for .NET الوصول إلى الدعم الفني من خلال Aspose[المنتديات](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

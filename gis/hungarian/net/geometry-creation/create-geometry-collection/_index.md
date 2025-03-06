@@ -3,10 +3,16 @@ title: Geometry Collection létrehozása az Aspose.GIS for .NET segítségével
 linktitle: Geometria gyűjtemény létrehozása
 second_title: Aspose.GIS .NET API
 description: Fedezze fel a térinformatikai adatok manipulálásának erejét az Aspose.GIS for .NET segítségével. Zökkenőmentesen hozhat létre, vizualizálhat és elemezhet helyalapú adatokat .NET-alkalmazásaiban.
-type: docs
 weight: 21
 url: /hu/net/geometry-creation/create-geometry-collection/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Geometry Collection létrehozása az Aspose.GIS for .NET segítségével
+
 
 ## Bevezetés
 
@@ -109,3 +115,9 @@ V: Igen, az Aspose.GIS robusztus vizualizációs képességeket kínál, amelyek
 ### K: Van olyan közösség vagy fórum, ahol segítséget kérhetek, és kapcsolatba léphetek más Aspose.GIS-felhasználókkal?
 
  V: Abszolút! Irány a[Aspose.GIS fórum](https://forum.aspose.com/c/gis/33) kérdéseket feltenni, tudást megosztani, és kapcsolatba lépni más fejlesztőkkel az Aspose.GIS közösségben.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

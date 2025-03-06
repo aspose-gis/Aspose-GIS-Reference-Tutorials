@@ -3,10 +3,16 @@ title: Получить значение атрибута функции
 linktitle: Получить значение атрибута функции
 second_title: API Aspose.GIS .NET
 description: Изучите Aspose.GIS for .NET — идеальный инструмент для плавной интеграции данных ГИС. Загрузите бесплатную пробную версию прямо сейчас! #Aspose #ГИС #.NET
-type: docs
 weight: 12
 url: /ru/net/layer-interaction-and-data-access/get-feature-attribute-value/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Получить значение атрибута функции
+
 ## Введение
 Добро пожаловать в мир Aspose.GIS для .NET, мощной библиотеки, которая позволяет .NET-разработчикам беспрепятственно работать с данными географической информационной системы (ГИС). Независимо от того, являетесь ли вы опытным разработчиком или только начинаете свой путь в ГИС, это руководство проведет вас через процесс получения значений атрибутов объектов с помощью Aspose.GIS для .NET.
 ## Предварительные условия
@@ -80,3 +86,9 @@ for (int i = 0; i < layer.Count; i++)
  A: Присоединяйтесь к обсуждению[Форум Aspose.GIS](https://forum.aspose.com/c/gis/33) обращаться за помощью и общаться с другими пользователями.
 ### Вопрос: Существует ли бесплатная пробная версия Aspose.GIS?
  А: Конечно! Вы можете изучить возможности Aspose.GIS, загрузив бесплатную пробную версию с сайта[здесь](https://releases.aspose.com/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

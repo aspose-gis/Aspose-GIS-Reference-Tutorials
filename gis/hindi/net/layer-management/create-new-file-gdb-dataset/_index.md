@@ -3,10 +3,16 @@ title: नई फ़ाइल GDB डेटासेट बनाएं
 linktitle: नई फ़ाइल GDB डेटासेट बनाएं
 second_title: Aspose.GIS .NET एपीआई
 description: आसानी से जीआईएस डेटासेट बनाने और प्रबंधित करने के लिए .NET के लिए Aspose.GIS का अन्वेषण करें। निर्बाध भू-स्थानिक विकास के लिए अभी डाउनलोड करें। #मान लीजिए #जीआईएस
-type: docs
 weight: 10
 url: /hi/net/layer-management/create-new-file-gdb-dataset/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# नई फ़ाइल GDB डेटासेट बनाएं
+
 ## परिचय
 भू-स्थानिक विकास के क्षेत्र में, .NET के लिए Aspose.GIS भौगोलिक सूचना प्रणाली (GIS) डेटा के प्रबंधन और हेरफेर के लिए एक शक्तिशाली टूलकिट के रूप में सामने आता है। चाहे आप एक अनुभवी डेवलपर हों या जीआईएस में अपनी यात्रा शुरू कर रहे हों, यह ट्यूटोरियल आपको .NET के लिए Aspose.GIS का उपयोग करके एक नई फ़ाइल जियोडेटाबेस (GDB) डेटासेट बनाने की प्रक्रिया से परिचित कराएगा।
 ## आवश्यक शर्तें
@@ -84,3 +90,9 @@ Console.WriteLine(dataset.LayersCount); // आउटपुट: 2
  पता लगाएं[Aspose.GIS दस्तावेज़ीकरण](https://reference.aspose.com/gis/net/) अधिक उदाहरणों और विस्तृत जानकारी के लिए।
 ### प्रश्न: मैं .NET के लिए Aspose.GIS कहां से खरीद सकता हूं?
  आप .NET के लिए Aspose.GIS खरीद सकते हैं[खरीद पृष्ठ](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

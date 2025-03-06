@@ -3,10 +3,16 @@ title: Создайте геометрию MultiCurve с помощью Aspose.G
 linktitle: Создать геометрию с несколькими кривыми
 second_title: API Aspose.GIS .NET
 description: Узнайте, как создавать геометрию MultiCurve в .NET с помощью Aspose.GIS для эффективного представления и анализа пространственных данных.
-type: docs
 weight: 17
 url: /ru/net/geometry-creation/create-multicurve-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Создайте геометрию MultiCurve с помощью Aspose.GIS для .NET
+
 ## Введение
 В области разработки географических информационных систем (ГИС) с использованием .NET Aspose.GIS выделяется как мощный набор инструментов. Являетесь ли вы опытным разработчиком или только начинаете работать в мире ГИС, Aspose.GIS for .NET предоставляет полный набор функций для эффективной работы с пространственными данными. Эта статья представляет собой пошаговое руководство по использованию одной из его функций: создания геометрии MultiCurve.
 ## Предварительные условия
@@ -82,3 +88,9 @@ layer.Add(feature);
 Да, вы можете загрузить бесплатную пробную версию Aspose.GIS для .NET с сайта[Веб-сайт Aspose.GIS](https://releases.aspose.com/gis/net/) чтобы изучить его возможности перед покупкой.
 ### Как я могу получить помощь, если у меня возникнут проблемы при использовании Aspose.GIS for .NET?
 Вы можете обратиться за помощью на форумы сообщества Aspose.GIS или получить доступ к ресурсам поддержки, предоставляемым Aspose.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

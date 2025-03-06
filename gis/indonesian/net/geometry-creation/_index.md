@@ -3,10 +3,16 @@ title: Penciptaan Geometri
 linktitle: Penciptaan Geometri
 second_title: Aspose.GIS .NET API
 description: Buka potensi manipulasi data geospasial dengan Aspose.GIS untuk .NET. Selami tutorial kami, yang mencakup pembuatan geometri, konversi, dan analisis.
-type: docs
 weight: 21
 url: /id/net/geometry-creation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Penciptaan Geometri
+
 
 ## Perkenalan
 
@@ -105,3 +111,9 @@ Pelajari cara menghitung geometri dalam geometri menggunakan Aspose.GIS untuk .N
 Pelajari cara memanfaatkan Aspose.GIS untuk .NET untuk memanipulasi data geografis dengan mudah. Tersedia tutorial komprehensif.
 ### [Koordinasikan Konversi dengan Aspose.GIS](./convert-coordinates/)
 Pelajari cara mengonversi koordinat dengan Aspose.GIS untuk .NET. Panduan langkah demi langkah, prasyarat, dan FAQ disediakan.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

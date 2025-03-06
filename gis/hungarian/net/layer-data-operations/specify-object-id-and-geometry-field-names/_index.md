@@ -3,10 +3,16 @@ title: Adja meg az objektumazonosítót és a geometria mezőneveket
 linktitle: Adja meg az objektumazonosítót és a geometria mezőneveket
 second_title: Aspose.GIS .NET API
 description: Fedezze fel a GIS varázslatot az Aspose.GIS for .NET segítségével! A térinformatikai adatok könnyed kezelése. Töltse le most, és engedje szabadjára a térbeli intelligencia erejét.
-type: docs
 weight: 20
 url: /hu/net/layer-data-operations/specify-object-id-and-geometry-field-names/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Adja meg az objektumazonosítót és a geometria mezőneveket
+
 ## Bevezetés
 Az Aspose.GIS for .NET használatával utazás a földrajzi információs rendszerek (GIS) birodalmába, lehetőségek világát nyitja meg a fejlesztők és a rajongók számára egyaránt. Ez a hatékony könyvtár lehetővé teszi a térinformatikai adatok könnyed kezelését. Ebben az oktatóanyagban végigvezetjük Önt az objektumazonosító és geometriai mezőnevek megadásának folyamatán, ezzel megalapozva térinformatikai törekvéseit.
 ## Előfeltételek
@@ -74,3 +80,9 @@ V: Igen, az Aspose.GIS for .NET alkalmas asztali és webes alkalmazásokhoz is, 
 V: Az Aspose.GIS for .NET különféle térbeli referenciarendszereket támogat, rugalmasságot biztosítva a különböző földrajzi adatkészletekhez.
 ### K: Hol kérhetek segítséget vagy vitathatom meg az Aspose.GIS-hez kapcsolódó lekérdezéseket?
  V: Látogassa meg az Aspose.GIS fórumot[itt](https://forum.aspose.com/c/gis/33) támogatásért és megbeszélésekért.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

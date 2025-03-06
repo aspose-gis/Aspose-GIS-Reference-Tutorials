@@ -3,10 +3,16 @@ title: Kiểm tra hình học bao gồm cái khác
 linktitle: Kiểm tra hình học bao gồm cái khác
 second_title: API Aspose.GIS .NET
 description: Tìm hiểu cách sử dụng Aspose.GIS cho .NET để làm việc hiệu quả với dữ liệu địa lý, phân tích thông tin không gian và tích hợp các tính năng ánh xạ vào các ứng dụng .NET của bạn.
-type: docs
 weight: 15
 url: /vi/net/geometry-analysis/check-geometry-covers-another/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Kiểm tra hình học bao gồm cái khác
+
 ## Giới thiệu
 Aspose.GIS for .NET là một thư viện mạnh mẽ cung cấp cho các nhà phát triển các công cụ để làm việc hiệu quả với dữ liệu địa lý trong các ứng dụng .NET của họ. Cho dù bạn đang xây dựng một ứng dụng bản đồ, phân tích dữ liệu không gian hay tích hợp các đặc điểm địa lý vào phần mềm của mình, Aspose.GIS đều cung cấp một bộ chức năng toàn diện để hợp lý hóa quy trình phát triển của bạn.
 ## Điều kiện tiên quyết
@@ -74,3 +80,9 @@ Có, Aspose.GIS cho .NET hỗ trợ nhiều định dạng GIS bao gồm Shapefi
 Aspose.GIS cho .NET là thư viện độc quyền được phát triển bởi Aspose, vì vậy những đóng góp từ các nhà phát triển bên ngoài không được chấp nhận. Tuy nhiên, bạn có thể cung cấp phản hồi và đề xuất để cải thiện thư viện.
 ### Tần suất các bản cập nhật được phát hành cho Aspose.GIS cho .NET là bao nhiêu?
  Các bản cập nhật cho Aspose.GIS cho .NET được phát hành thường xuyên để giới thiệu các tính năng, cải tiến mới và sửa lỗi. Kiểm tra[trang mạng](https://releases.aspose.com/gis/net/) cho các phiên bản mới nhất.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

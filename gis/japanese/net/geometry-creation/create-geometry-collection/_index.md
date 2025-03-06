@@ -3,10 +3,16 @@ title: Aspose.GIS for .NET を使用してジオメトリ コレクションを�
 linktitle: ジオメトリ コレクションの作成
 second_title: Aspose.GIS .NET API
 description: Aspose.GIS for .NET を使用して地理空間データ操作の能力を解放します。 .NET アプリケーションで位置ベースのデータをシームレスに作成、視覚化、分析します。
-type: docs
 weight: 21
 url: /ja/net/geometry-creation/create-geometry-collection/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS for .NET を使用してジオメトリ コレクションを作成する
+
 
 ## 導入
 
@@ -109,3 +115,9 @@ A: はい、Aspose.GIS は堅牢な視覚化機能を提供しており、これ
 ### Q: 助けを求めたり、他の Aspose.GIS ユーザーとつながることができるコミュニティまたはフォーラムはありますか?
 
  A: もちろんです！に向かってください。[Aspose.GIS フォーラム](https://forum.aspose.com/c/gis/33) Aspose.GIS コミュニティで質問したり、知識を共有したり、他の開発者とつながったりすることができます。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

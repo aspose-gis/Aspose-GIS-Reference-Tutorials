@@ -3,10 +3,16 @@ title: Filtrování funkcí podle atributu
 linktitle: Filtrování funkcí podle atributu
 second_title: Aspose.GIS .NET API
 description: Prozkoumejte sílu Aspose.GIS pro .NET při manipulaci s prostorovými daty. Filtrujte funkce bez námahy, vylepšujte GIS aplikace a zvyšte produktivitu.
-type: docs
 weight: 21
 url: /cs/net/layer-management/filter-features-by-attribute/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Filtrování funkcí podle atributu
+
 ## Úvod
 dynamickém světě geografických informačních systémů (GIS) vyniká Aspose.GIS for .NET jako výkonný nástroj, který umožňuje vývojářům bezproblémově manipulovat a analyzovat prostorová data. Ať už jste zkušený GIS profesionál nebo zvědavý vývojář toužící prozkoumat možnosti, tento tutoriál vás provede základními kroky používání Aspose.GIS v prostředí .NET.
 ## Předpoklady
@@ -57,3 +63,9 @@ Aspose.GIS for .NET zjednodušuje manipulaci a analýzu prostorových dat, což 
  Získejte dočasnou licenci[tady](https://purchase.aspose.com/temporary-license/).
 ### Je k dispozici návod krok za krokem pro další funkce Aspose.GIS?
  Ano, další návody a dokumentaci najdete na[Odkaz Aspose.GIS](https://reference.aspose.com/gis/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

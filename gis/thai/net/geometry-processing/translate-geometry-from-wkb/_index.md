@@ -3,10 +3,16 @@ title: แปลเรขาคณิตจาก WKB โดยใช้ Aspose.
 linktitle: แปลเรขาคณิตจาก WKB
 second_title: Aspose.GIS .NET API
 description: เรียนรู้วิธีทำงานกับข้อมูลทางภูมิศาสตร์ใน .NET โดยใช้ Aspose.GIS สำหรับ .NET แปลเรขาคณิตจากรูปแบบ WKB ได้อย่างง่ายดายพร้อมคำแนะนำทีละขั้นตอน
-type: docs
 weight: 20
 url: /th/net/geometry-processing/translate-geometry-from-wkb/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# แปลเรขาคณิตจาก WKB โดยใช้ Aspose.GIS สำหรับ .NET
+
 ## การแนะนำ
 ในด้านการพัฒนา .NET การจัดการข้อมูลทางภูมิศาสตร์ถือเป็นข้อกำหนดทั่วไป ไม่ว่าจะเป็นการใช้งานด้านการทำแผนที่ การวิเคราะห์เชิงพื้นที่ หรือการแสดงข้อมูลเป็นภาพ การมีเครื่องมือที่มีประสิทธิภาพในการทำงานกับข้อมูลทางภูมิศาสตร์ถือเป็นสิ่งสำคัญ นี่คือจุดที่ Aspose.GIS สำหรับ .NET เข้ามามีบทบาท Aspose.GIS สำหรับ .NET เป็นไลบรารีที่มีประสิทธิภาพซึ่งมีฟังก์ชันการทำงานที่ครอบคลุมเพื่อทำงานกับรูปแบบภูมิสารสนเทศที่หลากหลาย และดำเนินการเชิงพื้นที่ได้อย่างมีประสิทธิภาพ
 ## ข้อกำหนดเบื้องต้น
@@ -61,3 +67,9 @@ Aspose.GIS สำหรับ .NET นำเสนอชุดเครื่อ
 คุณสามารถรับการสนับสนุนสำหรับ Aspose.GIS สำหรับ .NET ผ่านทางฟอรัม[ที่นี่](https://forum.aspose.com/c/gis/33) หรือติดต่อฝ่ายสนับสนุน Aspose โดยตรง
 ### ฉันสามารถใช้ Aspose.GIS สำหรับ .NET ในโครงการเชิงพาณิชย์ได้หรือไม่
 ได้ คุณสามารถใช้ Aspose.GIS สำหรับ .NET ในโครงการเชิงพาณิชย์ได้โดยการซื้อใบอนุญาตที่เหมาะสม
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

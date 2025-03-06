@@ -3,10 +3,16 @@ title: Nesne Kimliğini ve Geometri Alan Adlarını Belirleyin
 linktitle: Nesne Kimliğini ve Geometri Alan Adlarını Belirleyin
 second_title: Aspose.GIS .NET API'si
 description: Aspose.GIS for .NET ile GIS büyüsünü keşfedin! Jeo-uzamsal verileri zahmetsizce yönetin. Hemen indirin ve mekansal zekanın gücünü açığa çıkarın.
-type: docs
 weight: 20
 url: /tr/net/layer-data-operations/specify-object-id-and-geometry-field-names/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Nesne Kimliğini ve Geometri Alan Adlarını Belirleyin
+
 ## giriiş
 Aspose.GIS for .NET'i kullanarak Coğrafi Bilgi Sistemleri (GIS) alanına doğru bir yolculuğa çıkmak, hem geliştiriciler hem de meraklılar için bir fırsatlar dünyasının kapılarını açıyor. Bu güçlü kitaplık, coğrafi verileri zahmetsizce işlemenizi sağlar. Bu eğitimde, Nesne Kimliği ve Geometri alan adlarını belirleme sürecinde size rehberlik ederek GIS çalışmalarınızın temelini atacağız.
 ## Önkoşullar
@@ -74,3 +80,9 @@ C: Evet, Aspose.GIS for .NET hem masaüstü hem de web uygulamaları için uygun
 C: Aspose.GIS for .NET, çeşitli mekansal referans sistemlerini destekleyerek farklı coğrafi veri kümeleri için esneklik sağlar.
 ### S: Nereden yardım isteyebilirim veya Aspose.GIS ile ilgili soruları tartışabilirim?
  C: Aspose.GIS forumunu ziyaret edin[Burada](https://forum.aspose.com/c/gis/33) Destek ve tartışmalar için.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

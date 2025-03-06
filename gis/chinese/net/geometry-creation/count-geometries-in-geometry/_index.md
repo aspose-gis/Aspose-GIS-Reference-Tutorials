@@ -3,10 +3,16 @@ title: 使用 Aspose.GIS 计算几何图形
 linktitle: 计算几何中的几何
 second_title: Aspose.GIS .NET API
 description: 了解如何使用 Aspose.GIS for .NET 计算几何图形中的几何图形。为开发人员提供带有代码示例的分步教程。
-type: docs
 weight: 23
 url: /zh/net/geometry-creation/count-geometries-in-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.GIS 计算几何图形
+
 ## 介绍
 Aspose.GIS for .NET 对于寻求将地理空间功能合并到 .NET 应用程序中的开发人员来说是一个强大的工具。无论您是构建地图软件、基于位置的服务还是空间分析工具，Aspose.GIS 都提供了一套全面的功能来满足您的需求。在本教程中，我们将探索如何使用 Aspose.GIS for .NET 对几何体中的几何体进行计数。
 ## 先决条件
@@ -70,3 +76,9 @@ Console.WriteLine(geometriesCount); // 2
 是的，您可以从以下位置下载免费试用版：[网站](https://releases.aspose.com/).
 ### 在哪里可以找到对 Aspose.GIS for .NET 的支持？
 您可以在以下位置找到支持[Aspose.GIS论坛](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

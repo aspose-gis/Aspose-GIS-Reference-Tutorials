@@ -3,10 +3,16 @@ title: Mở khóa các tính năng của TopoJSON bằng Aspose.GIS cho .NET
 linktitle: Truy cập các tính năng trong TopoJSON
 second_title: API Aspose.GIS .NET
 description: Khám phá Aspose.GIS cho .NET và tìm hiểu cách truy cập các tính năng của TopoJSON theo từng bước. Đi sâu vào tài liệu và tận dụng khả năng không gian địa lý một cách dễ dàng.
-type: docs
 weight: 15
 url: /vi/net/layer-management/access-features-in-topojson/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Mở khóa các tính năng của TopoJSON bằng Aspose.GIS cho .NET
+
 ## Giới thiệu
 Aspose.GIS for .NET là một thư viện mạnh mẽ cho phép các nhà phát triển làm việc với dữ liệu không gian địa lý một cách dễ dàng. Trong hướng dẫn này, chúng ta sẽ đi sâu vào việc truy cập các tính năng trong TopoJSON bằng Aspose.GIS cho .NET. TopoJSON là một định dạng thể hiện các đặc điểm địa lý một cách nhỏ gọn và hiệu quả.
 ## Điều kiện tiên quyết
@@ -67,3 +73,9 @@ Chúc mừng! Bạn đã truy cập thành công các tính năng trong TopoJSON
 Có, bạn có thể truy cập bản dùng thử miễn phí[đây](https://releases.aspose.com/).
 ### Hỏi: Làm cách nào để mua giấy phép?
  Mua giấy phép[đây](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

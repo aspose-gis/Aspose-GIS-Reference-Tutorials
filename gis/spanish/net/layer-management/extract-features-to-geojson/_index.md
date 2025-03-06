@@ -3,10 +3,16 @@ title: Extraer características a GeoJSON
 linktitle: Extraer características a GeoJSON
 second_title: Aspose.GIS API .NET
 description: Explore la guía paso a paso sobre el uso de Aspose.GIS para .NET para extraer funciones a GeoJSON. ¡Aproveche el poder de SIG con facilidad! #Aspose #SIG
-type: docs
 weight: 23
 url: /es/net/layer-management/extract-features-to-geojson/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Extraer características a GeoJSON
+
 ## Introducción
 ¡Bienvenido a nuestro tutorial paso a paso sobre cómo extraer funciones a GeoJSON usando Aspose.GIS para .NET! Si es un desarrollador experimentado o recién comienza su viaje en la programación SIG, esta guía lo guiará a través del proceso, asegurándose de que aproveche todo el poder de Aspose.GIS para .NET.
 ## Requisitos previos
@@ -87,3 +93,9 @@ En este tutorial, exploramos el proceso de extracción de funciones a GeoJSON us
  Sí, puedes encontrar la prueba gratuita.[aquí](https://releases.aspose.com/).
 ### P: ¿Dónde puedo comprar Aspose.GIS para .NET?
  Puedes comprar el producto.[aquí](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

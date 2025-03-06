@@ -3,10 +3,16 @@ title: Erstellen Sie Polygongeometrie mit Aspose.GIS für .NET
 linktitle: Erstellen Sie eine Polygongeometrie
 second_title: Aspose.GIS .NET-API
 description: Erfahren Sie, wie Sie mit Aspose.GIS für .NET Polygongeometrie erstellen. Schritt-für-Schritt-Anleitung für .NET-Entwickler.
-type: docs
 weight: 12
 url: /de/net/geometry-creation/create-polygon-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Erstellen Sie Polygongeometrie mit Aspose.GIS für .NET
+
 ## Einführung
 In der Welt der Softwareentwicklung spielen geografische Informationssysteme (GIS) eine wichtige Rolle bei der Analyse und Visualisierung räumlicher Daten. Aspose.GIS für .NET ist eine leistungsstarke Bibliothek, die Entwicklern die Tools zur Verfügung stellt, die sie für die effiziente Arbeit mit GIS-Daten benötigen. In diesem Tutorial erfahren Sie, wie Sie mit Aspose.GIS für .NET Polygongeometrie erstellen, eine wesentliche Aufgabe in vielen GIS-Anwendungen.
 ## Voraussetzungen
@@ -66,3 +72,9 @@ Ja, Aspose.GIS für .NET unterstützt verschiedene GIS-Dateiformate wie Shapefil
  Ja, Sie können eine kostenlose Testversion von Aspose.GIS für .NET herunterladen unter[Hier](https://releases.aspose.com/).
 ### Wo erhalte ich Unterstützung für Aspose.GIS für .NET?
  Unterstützung für Aspose.GIS für .NET erhalten Sie von der[Aspose.GIS-Forum](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

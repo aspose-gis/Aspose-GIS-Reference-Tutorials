@@ -3,10 +3,16 @@ title: SLD(스타일 레이어 설명자) 가져오기
 linktitle: SLD(스타일 레이어 설명자) 가져오기
 second_title: Aspose.GIS .NET API
 description: .NET용 Aspose.GIS를 사용하여 GIS 개발 수준을 높이세요. 스타일 레이어 설명자(SLD)를 손쉽게 가져옵니다. 지금 사용자 정의 가능성을 살펴보세요!
-type: docs
 weight: 10
 url: /ko/net/map-rendering/import-styled-layer-descriptor/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# SLD(스타일 레이어 설명자) 가져오기
+
 ## 소개
 .NET을 사용하여 지리 정보 시스템(GIS) 개발에 뛰어들고 있다면 Aspose.GIS는 원활한 통합과 효율적인 공간 데이터 조작을 위한 최고의 도구입니다. 이 단계별 가이드에서는 GIS 개발의 중요한 측면 중 하나인 Aspose.GIS for .NET을 사용하여 SLD(Styled Layer Descriptor) 가져오기에 중점을 둘 것입니다. 이 기술을 사용하면 미리 정의된 스타일을 적용하여 지리 데이터의 시각적 표현을 향상시킬 수 있습니다.
 ## 전제조건
@@ -66,3 +72,9 @@ using (var map = new Map(500, 320))
  임시 라이센스 취득[여기](https://purchase.aspose.com/temporary-license/) 단기 개발 또는 평가 목적으로.
 ### 어떤 지원 옵션을 사용할 수 있나요?
  Aspose.GIS 커뮤니티에 가입하세요.[법정](https://forum.aspose.com/c/gis/33) 도움을 구하고, 경험을 공유하고, 다른 개발자와 연결합니다.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

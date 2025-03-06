@@ -3,10 +3,16 @@ title: Tính năng của lớp cắt
 linktitle: Tính năng của lớp cắt
 second_title: API Aspose.GIS .NET
 description: Mở khóa phép thuật không gian địa lý với Aspose.GIS cho .NET! Các tính năng của lớp cắt dễ dàng. Tải về dùng thử ngay. #Aspose #GIS #geospatial
-type: docs
 weight: 19
 url: /vi/net/layer-management/crop-layer-features/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Tính năng của lớp cắt
+
 ## Giới thiệu
 Trong lĩnh vực xử lý dữ liệu không gian địa lý rộng lớn, Aspose.GIS cho .NET nổi lên như một công cụ mạnh mẽ, mang đến cho các nhà phát triển trải nghiệm liền mạch trong việc xử lý thông tin địa lý. Hướng dẫn này sẽ hướng dẫn bạn quy trình cắt xén các tính năng của lớp bằng Aspose.GIS, cho phép bạn điều chỉnh dữ liệu không gian địa lý của mình để đáp ứng các yêu cầu cụ thể.
 ## Điều kiện tiên quyết
@@ -62,3 +68,9 @@ Aspose.GIS cho .NET mở ra nhiều khả năng cho các nhà phát triển làm
  Trả lời: Có, bạn có thể tải xuống bản dùng thử miễn phí[đây](https://releases.aspose.com/).
 ### Câu hỏi: Tôi có thể mua Aspose.GIS cho .NET ở đâu?
  A: Bạn có thể mua thư viện[đây](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

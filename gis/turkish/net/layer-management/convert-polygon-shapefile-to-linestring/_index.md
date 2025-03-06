@@ -3,10 +3,16 @@ title: Poligon Şekil Dosyasını Linestring'e Dönüştür
 linktitle: Poligon Şekil Dosyasını Linestring'e Dönüştür
 second_title: Aspose.GIS .NET API'si
 description: Aspose.GIS for .NET'in gücünü keşfedin ve Poligon Şekil dosyalarını zahmetsizce Çizgi Dizilerine dönüştürün. CBS gelişiminizi bugün artırın!
-type: docs
 weight: 18
 url: /tr/net/layer-management/convert-polygon-shapefile-to-linestring/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Poligon Şekil Dosyasını Linestring'e Dönüştür
+
 ## giriiş
 .NET'te coğrafi bilgi sistemleri (GIS) ile çalışıyorsanız Aspose.GIS, görevlerinizi kolaylaştırabilecek güçlü bir kütüphanedir. Bu eğitimde, Aspose.GIS kullanarak bir Poligon Şekil dosyasını Linestring'e dönüştürme sürecinde size rehberlik edeceğiz. Bu, rota planlama veya ağ analizi gibi çeşitli uygulamalar için çokgen verilerden doğrusal özellikler çıkarmanız gerektiğinde özellikle yararlı olabilir.
 ## Önkoşullar
@@ -78,3 +84,9 @@ Evet, Aspose.GIS, .NET'in çeşitli sürümlerini destekleyerek geliştirme orta
  Evet, Aspose.GIS'i ziyaret ederek ücretsiz deneme sürümüyle keşfedebilirsiniz.[bu bağlantı](https://releases.aspose.com/).
 ### Nereden yardım veya destek alabilirim?
  Ziyaret edin[Aspose.GIS forumu](https://forum.aspose.com/c/gis/33) Yardım veya destekle ilgili sorularınız için.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

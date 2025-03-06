@@ -3,10 +3,16 @@ title: تصفية الميزات حسب السمة
 linktitle: تصفية الميزات حسب السمة
 second_title: Aspose.GIS .NET API
 description: اكتشف قوة Aspose.GIS for .NET في معالجة البيانات المكانية. يمكنك تصفية الميزات دون عناء، وتحسين تطبيقات نظم المعلومات الجغرافية، وزيادة الإنتاجية.
-type: docs
 weight: 21
 url: /ar/net/layer-management/filter-features-by-attribute/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# تصفية الميزات حسب السمة
+
 ## مقدمة
 في العالم الديناميكي لأنظمة المعلومات الجغرافية (GIS)، يبرز Aspose.GIS for .NET كأداة قوية تمكن المطورين من معالجة البيانات المكانية وتحليلها بسلاسة. سواء كنت محترفًا متمرسًا في نظم المعلومات الجغرافية أو مطورًا فضوليًا حريصًا على استكشاف الإمكانيات، فإن هذا البرنامج التعليمي سيرشدك خلال الخطوات الأساسية لاستخدام Aspose.GIS في بيئة .NET.
 ## المتطلبات الأساسية
@@ -57,3 +63,9 @@ foreach (Feature feature in layer.WhereGreater("dob", new DateTime(1982, 1, 1, 0
  الحصول على ترخيص مؤقت[هنا](https://purchase.aspose.com/temporary-license/).
 ### هل يتوفر برنامج تعليمي خطوة بخطوة لميزات Aspose.GIS الأخرى؟
  نعم، يمكنك العثور على المزيد من البرامج التعليمية والوثائق على[مرجع Aspose.GIS](https://reference.aspose.com/gis/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

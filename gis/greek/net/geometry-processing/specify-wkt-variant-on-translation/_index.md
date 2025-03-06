@@ -3,10 +3,16 @@ title: Καθορίστε την παραλλαγή WKT στη μετάφρασ�
 linktitle: Καθορίστε την παραλλαγή WKT στη μετάφραση
 second_title: Aspose.GIS .NET API
 description: Μάθετε πώς να προσδιορίζετε παραλλαγές WKT στο Aspose.GIS για .NET για να ελέγχετε αποτελεσματικά τη μορφή και την ακρίβεια αναπαράστασης χωρικών δεδομένων.
-type: docs
 weight: 19
 url: /el/net/geometry-processing/specify-wkt-variant-on-translation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Καθορίστε την παραλλαγή WKT στη μετάφραση χρησιμοποιώντας το Aspose.GIS
+
 ## Εισαγωγή
 Το Aspose.GIS για .NET είναι μια ισχυρή βιβλιοθήκη που επιτρέπει στους προγραμματιστές να εργάζονται με δεδομένα συστήματος γεωγραφικών πληροφοριών (GIS) στις εφαρμογές τους .NET χωρίς κόπο. Ένα από τα βασικά χαρακτηριστικά που παρέχει το Aspose.GIS είναι η δυνατότητα καθορισμού της παραλλαγής Γνωστό Κείμενο (WKT) κατά τη μετάφραση, επιτρέποντας στους χρήστες να ελέγχουν τη μορφή και την ακρίβεια των αναπαραστάσεων χωρικών δεδομένων. Σε αυτό το σεμινάριο, θα διερευνήσουμε πώς να καθορίσετε παραλλαγές WKT βήμα προς βήμα χρησιμοποιώντας το Aspose.GIS για .NET.
 ## Προαπαιτούμενα
@@ -66,3 +72,9 @@ Console.WriteLine("Flat3: " + point.AsText(WktVariant.Iso, NumericFormat.Flat(3)
  Ναι, μπορείτε να κάνετε λήψη μιας δωρεάν δοκιμαστικής έκδοσης του Aspose.GIS από[εδώ](https://releases.aspose.com/).
 ### Πού μπορώ να λάβω βοήθεια ή υποστήριξη για το Aspose.GIS;
  Μπορείτε να δημοσιεύσετε τα ερωτήματά σας ή να ζητήσετε βοήθεια από την κοινότητα Aspose.GIS στη διεύθυνση[δικαστήριο](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

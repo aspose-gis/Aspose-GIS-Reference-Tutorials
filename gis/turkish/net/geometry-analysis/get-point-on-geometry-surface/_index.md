@@ -3,10 +3,16 @@ title: Geometri Yüzeyinde Nokta Alma
 linktitle: Geometri Yüzeyinde Nokta Alma
 second_title: Aspose.GIS .NET API'si
 description: Aspose.GIS for .NET'i kullanarak coğrafi verilerle verimli bir şekilde nasıl çalışacağınızı öğrenin. Adım adım kılavuz ve SSS'ler dahildir.
-type: docs
 weight: 25
 url: /tr/net/geometry-analysis/get-point-on-geometry-surface/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Geometri Yüzeyinde Nokta Alma
+
 ## giriiş
 Bu derste, geometrilerle çalışmak ve yüzeylerindeki noktaları almak için Aspose.GIS for .NET'i nasıl kullanabileceğimizi keşfedeceğiz. Aspose.GIS, .NET uygulamalarında coğrafi veri işleme, manipülasyon ve görselleştirme için çeşitli işlevler sağlayan güçlü bir kütüphanedir.
 ## Önkoşullar
@@ -66,3 +72,9 @@ Evet, Aspose.GIS, .NET Framework, .NET Core ve .NET Standard dahil olmak üzere 
  Evet, Aspose.GIS için geçici lisansları şu adresten alabilirsiniz:[Burada](https://purchase.aspose.com/temporary-license/).
 ### Aspose.GIS'i nereden satın alabilirim?
  Aspose.GIS'i satın alma sayfasından satın alabilirsiniz.[Burada](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

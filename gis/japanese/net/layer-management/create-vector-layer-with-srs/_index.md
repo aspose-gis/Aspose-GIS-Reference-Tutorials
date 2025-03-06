@@ -3,10 +3,16 @@ title: SRSでベクターレイヤーを作成
 linktitle: SRSでベクターレイヤーを作成
 second_title: Aspose.GIS .NET API
 description: シームレスな GIS 統合の鍵となる Aspose.GIS for .NET を探索してください。指定された空間参照系を使用してベクター レイヤーを簡単に作成します。ダウンロード中！
-type: docs
 weight: 13
 url: /ja/net/layer-management/create-vector-layer-with-srs/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# SRSでベクターレイヤーを作成
+
 ## 導入
 Aspose.GIS for .NET は、開発者が .NET アプリケーションで地理情報システム (GIS) データをシームレスに操作できるようにする強力なライブラリです。このチュートリアルでは、空間参照システム (SRS) を使用したベクター レイヤーの作成に焦点を当てます。このガイドを終えると、GIS 機能を .NET プロジェクトに簡単に統合できるようになります。
 ## 前提条件
@@ -90,3 +96,9 @@ Aspose.GIS のおかげで、GIS 機能を .NET アプリケーションに統�
 はい、無料トライアルを入手して、Aspose.GIS の機能を探索できます。[ここ](https://releases.aspose.com/).
 ### Aspose.GIS のライセンスを購入するにはどうすればよいですか?
 ライセンスを購入するには、次のサイトにアクセスしてください。[購入ページ](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

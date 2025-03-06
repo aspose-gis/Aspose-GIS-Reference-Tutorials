@@ -3,10 +3,16 @@ title: Chỉ định ID đối tượng và tên trường hình học
 linktitle: Chỉ định ID đối tượng và tên trường hình học
 second_title: API Aspose.GIS .NET
 description: Khám phá điều kỳ diệu của GIS với Aspose.GIS cho .NET! Quản lý dữ liệu không gian địa lý một cách dễ dàng. Hãy tải xuống ngay và giải phóng sức mạnh của trí tuệ không gian.
-type: docs
 weight: 20
 url: /vi/net/layer-data-operations/specify-object-id-and-geometry-field-names/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Chỉ định ID đối tượng và tên trường hình học
+
 ## Giới thiệu
 Bắt tay vào cuộc hành trình vào lĩnh vực Hệ thống thông tin địa lý (GIS) bằng cách sử dụng Aspose.GIS cho .NET sẽ mở ra một thế giới khả năng cho các nhà phát triển cũng như những người đam mê. Thư viện mạnh mẽ này cho phép bạn xử lý dữ liệu không gian địa lý một cách dễ dàng. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn quy trình chỉ định tên trường ID đối tượng và Hình học, đặt nền tảng cho những nỗ lực về GIS của bạn.
 ## Điều kiện tiên quyết
@@ -74,3 +80,9 @@ Trả lời: Có, Aspose.GIS cho .NET phù hợp cho cả ứng dụng máy tín
 Trả lời: Aspose.GIS cho .NET hỗ trợ các hệ thống tham chiếu không gian khác nhau, mang lại sự linh hoạt cho các bộ dữ liệu địa lý khác nhau.
 ### Câu hỏi: Tôi có thể tìm kiếm trợ giúp hoặc thảo luận các truy vấn liên quan đến Aspose.GIS ở đâu?
  Trả lời: Truy cập diễn đàn Aspose.GIS[đây](https://forum.aspose.com/c/gis/33) để được hỗ trợ và thảo luận.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

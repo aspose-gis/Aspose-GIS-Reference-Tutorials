@@ -3,10 +3,16 @@ title: .NET で Aspose.GIS を使用してジオメトリの精度を下げる
 linktitle: ジオメトリの精度を下げる
 second_title: Aspose.GIS .NET API
 description: Aspose.GIS を使用して、パフォーマンスとメモリの最適化を向上させ、.NET GIS アプリケーションでジオメトリの精度を効率的に下げる方法を学びます。
-type: docs
 weight: 15
 url: /ja/net/geometry-processing/reduce-geometry-precision/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# .NET で Aspose.GIS を使用してジオメトリの精度を下げる
+
 ## 導入
 このチュートリアルでは、Aspose.GIS for .NET を使用してジオメトリの精度を下げる方法を検討します。ジオメトリの精度を下げることは、GIS アプリケーションで大規模なデータセットを扱う際のメモリ使用量を最適化し、パフォーマンスを向上させるために非常に重要です。包括的なガイドを提供するために、各例を複数のステップに分けて説明します。
 ## 前提条件
@@ -81,3 +87,9 @@ Console.WriteLine("{0}, {1}", line[1].X, line[1].Y);
 はい、ジオメトリの精度を下げると、特に大規模なデータセットを操作する場合や空間操作を実行する場合に、大幅なパフォーマンスの向上につながる可能性があります。
 ### Aspose.GIS for .NET のサポートはどこで入手できますか?
  Aspose.GIS for .NET のサポートを受けるには、次のサイトにアクセスしてください。[Aspose.GIS フォーラム](https://forum.aspose.com/c/gis/33)または利用可能なドキュメントにアクセスする[ここ](https://reference.aspose.com/gis/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

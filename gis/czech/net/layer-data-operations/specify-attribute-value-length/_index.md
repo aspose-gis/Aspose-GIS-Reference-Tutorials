@@ -3,10 +3,16 @@ title: Zadejte délku hodnoty atributu
 linktitle: Zadejte délku hodnoty atributu
 second_title: Aspose.GIS .NET API
 description: Prozkoumejte geoprostorový vývoj s Aspose.GIS pro .NET. Bez námahy spravujte a manipulujte s prostorovými daty ve svých aplikacích .NET.
-type: docs
 weight: 18
 url: /cs/net/layer-data-operations/specify-attribute-value-length/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Zadejte délku hodnoty atributu
+
 ## Úvod
 Vítejte ve světě Aspose.GIS pro .NET – vaší brány k výkonnému a efektivnímu geoprostorovému vývoji! Tento obsáhlý tutoriál vás provede základními kroky používání Aspose.GIS ke snadné správě geoprostorových dat ve vašich aplikacích .NET. Ať už jste zkušený vývojář nebo nováček v geoprostorovém programování, tato příručka je navržena tak, aby vám poskytla pevný základ a praktické poznatky.
 ## Předpoklady
@@ -61,3 +67,9 @@ Gratulujeme! Úspěšně jste zadali délku hodnoty atributu pomocí Aspose.GIS 
  A: Kupte si licenci[tady](https://purchase.aspose.com/buy).
 ### Otázka: Kde mohu získat přístup k dokumentaci Aspose.GIS pro .NET?
  A: Viz[dokumentace](https://reference.aspose.com/gis/net/) za komplexní návod.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

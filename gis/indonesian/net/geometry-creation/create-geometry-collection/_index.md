@@ -3,10 +3,16 @@ title: Buat Koleksi Geometri dengan Aspose.GIS untuk .NET
 linktitle: Buat Koleksi Geometri
 second_title: Aspose.GIS .NET API
 description: Buka kekuatan manipulasi data geospasial dengan Aspose.GIS untuk .NET. Buat, visualisasikan, dan analisis data berbasis lokasi dengan lancar di aplikasi .NET Anda.
-type: docs
 weight: 21
 url: /id/net/geometry-creation/create-geometry-collection/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Buat Koleksi Geometri dengan Aspose.GIS untuk .NET
+
 
 ## Perkenalan
 
@@ -109,3 +115,9 @@ J: Ya, Aspose.GIS menawarkan kemampuan visualisasi yang kuat, memungkinkan Anda 
 ### T: Apakah ada komunitas atau forum di mana saya dapat mencari bantuan dan terhubung dengan pengguna Aspose.GIS lainnya?
 
  J: Tentu saja! Pergilah ke[Forum Aspose.GIS](https://forum.aspose.com/c/gis/33) untuk bertanya, berbagi pengetahuan, dan terhubung dengan sesama pengembang di komunitas Aspose.GIS.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

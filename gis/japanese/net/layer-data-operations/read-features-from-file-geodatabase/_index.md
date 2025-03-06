@@ -3,10 +3,16 @@ title: Aspose.GIS のファイル ジオデータベースからフィーチャ�
 linktitle: ファイル ジオデータベースからフィーチャを読み取る
 second_title: Aspose.GIS .NET API
 description: .NET アプリケーションの地理空間データの包括的なライブラリである Aspose.GIS for .NET の機能を試してください。地理空間データを簡単に読み取り、書き込み、分析できます。
-type: docs
 weight: 15
 url: /ja/net/layer-data-operations/read-features-from-file-geodatabase/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS のファイル ジオデータベースからフィーチャを読み取る
+
 ## 導入
 地理情報システム (GIS) 開発の分野では、Aspose.GIS for .NET は強力なツールセットとして機能し、地理空間データを最大限の効率で操作するための包括的な機能スイートを提供します。 Aspose.GIS の機能を利用することで、開発者は GIS 機能を .NET アプリケーションにシームレスに統合し、地理空間データの読み取り、書き込み、分析を簡単に行うことができます。
 ## 前提条件
@@ -82,3 +88,9 @@ Aspose.GIS for .NET は他の GIS プラットフォームとの相互運用性�
 はい、次の場所にアクセスできます。[Aspose.GIS フォーラム](https://forum.aspose.com/c/gis/33)コミュニティと交流し、専門家からサポートを受けることができます。
 ### 購入する前に Aspose.GIS for .NET を試すことはできますか?
 確かに、Aspose.GIS for .NET の無料トライアルを次のサイトから利用できます。[リリースページ](https://releases.aspose.com/)を使用すると、購入を決定する前にその機能を調べることができます。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

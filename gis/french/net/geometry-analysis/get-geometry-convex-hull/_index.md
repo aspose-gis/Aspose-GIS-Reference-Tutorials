@@ -3,10 +3,16 @@ title: Calculer une coque convexe avec Aspose.GIS pour .NET
 linktitle: Obtenir la géométrie de la coque convexe
 second_title: API Aspose.GIS .NET
 description: Apprenez à calculer l'enveloppe convexe d'une géométrie dans .NET à l'aide d'Aspose.GIS. Tutoriel complet avec des exemples de code et des FAQ.
-type: docs
 weight: 20
 url: /fr/net/geometry-analysis/get-geometry-convex-hull/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Calculer une coque convexe avec Aspose.GIS pour .NET
+
 ## Introduction
 Aspose.GIS pour .NET est une bibliothèque puissante qui offre un large éventail de fonctionnalités pour travailler avec des systèmes d'information géographique (SIG) dans les applications .NET. Que vous créiez des applications cartographiques, analysiez des données spatiales ou effectuiez des opérations géospatiales, Aspose.GIS simplifie le processus grâce à son API intuitive et à son ensemble complet de fonctionnalités.
 ## Conditions préalables
@@ -79,3 +85,9 @@ Absolument, Aspose.GIS prend en charge un large éventail de formats géospatiau
  Des licences temporaires pour Aspose.GIS peuvent être acquises auprès du[lien de licence temporaire](https://purchase.aspose.com/temporary-license/), permettant une utilisation ininterrompue pendant les périodes d'essai ou les projets à court terme.
 ### Q : Où puis-je demander de l'aide ou participer à des discussions liées à Aspose.GIS ?
 Pour obtenir de l'aide, des conseils et une interaction avec la communauté, visitez le forum Aspose.GIS[ici](https://forum.aspose.com/c/gis/33), où vous pouvez interagir avec d'autres développeurs, poser des questions et partager des informations.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

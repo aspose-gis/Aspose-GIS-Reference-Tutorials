@@ -3,10 +3,16 @@ title: Lineariseer een geometrie
 linktitle: Lineariseer een geometrie
 second_title: Aspose.GIS .NET-API
 description: Leer hoe u Aspose.GIS voor .NET kunt gebruiken om efficiënt met georuimtelijke gegevens te werken, ruimtelijke analyses uit te voeren en geografische gegevens binnen uw .NET-toepassingen te manipuleren.
-type: docs
 weight: 14
 url: /nl/net/geometry-processing/linearize-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Lineariseer een geometrie
+
 ## Invoering
 Aspose.GIS voor .NET is een krachtige bibliotheek waarmee ontwikkelaars efficiënt met georuimtelijke gegevens kunnen werken binnen .NET-toepassingen. Of u nu een kaarttoepassing bouwt, ruimtelijke analyses uitvoert of geografische gegevens manipuleert, Aspose.GIS biedt de hulpmiddelen die u nodig hebt om de klus te klaren.
 ## Vereisten
@@ -83,3 +89,9 @@ Ja, Aspose.GIS biedt een breed scala aan ruimtelijke bewerkingen en analysemogel
  Ja, u kunt een gratis proefversie downloaden van de[Aspose-website](https://releases.aspose.com/).
 ### Vraag: Waar kan ik hulp en ondersteuning vinden voor Aspose.GIS?
  U kunt een bezoek brengen aan de[Aspose.GIS-forum](https://forum.aspose.com/c/gis/33) voor hulp van de gemeenschap en het ondersteunend personeel van Aspose.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

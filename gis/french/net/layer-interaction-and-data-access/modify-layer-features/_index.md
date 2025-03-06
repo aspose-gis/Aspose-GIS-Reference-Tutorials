@@ -3,10 +3,16 @@ title: Maîtriser la modification des fonctionnalités de la couche
 linktitle: Modifier les entités de couche
 second_title: API Aspose.GIS .NET
 description: Explorez Aspose.GIS pour .NET et maîtrisez l'art de modifier sans effort les fonctionnalités des couches dans les fichiers de formes. Boostez vos applications géospatiales avec précision et facilité.
-type: docs
 weight: 23
 url: /fr/net/layer-interaction-and-data-access/modify-layer-features/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Maîtriser la modification des fonctionnalités de la couche
+
 ## Introduction
 Bienvenue dans ce guide complet sur la modification des fonctionnalités des couches à l'aide d'Aspose.GIS pour .NET ! Si vous souhaitez améliorer vos applications géospatiales et manipuler les données de fichiers de formes sans effort, vous êtes au bon endroit. Dans ce didacticiel, nous aborderons le processus de modification des entités de couche à l'aide de la puissante bibliothèque Aspose.GIS, en vous fournissant des étapes et des informations détaillées.
 ## Conditions préalables
@@ -72,3 +78,9 @@ Absolument! Aspose.GIS s'intègre de manière transparente à d'autres biblioth�
  Visiter le[Forum d'assistance Aspose.GIS](https://forum.aspose.com/c/gis/33)pour obtenir de l’aide et du soutien communautaire.
 ### Où puis-je trouver la documentation pour Aspose.GIS ?
  La documentation Aspose.GIS est disponible[ici](https://reference.aspose.com/gis/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Comprobar Geometrías Tocándose
 linktitle: Comprobar Geometrías Tocándose
 second_title: Aspose.GIS API .NET
 description: Libere el poder del manejo de datos espaciales con Aspose.GIS para .NET. Integre perfectamente funcionalidades espaciales en sus aplicaciones con este versátil conjunto de herramientas.
-type: docs
 weight: 13
 url: /es/net/geometry-analysis/check-geometries-touching/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Comprobar Geometrías Tocándose
+
 ## Introducción
 En el ámbito de los Sistemas de Información Geográfica (SIG), Aspose.GIS para .NET se destaca como una herramienta poderosa para los desarrolladores que buscan incorporar funcionalidades espaciales en sus aplicaciones sin problemas. Con sus sólidas funciones y su interfaz fácil de usar, Aspose.GIS permite a los desarrolladores trabajar con datos espaciales sin esfuerzo, ya sea analizando, visualizando o manipulando geometrías.
 ## Requisitos previos
@@ -64,3 +70,9 @@ Aspose.GIS admite varios marcos .NET, incluidos .NET Framework, .NET Core y .NET
 Aspose.GIS recibe periódicamente actualizaciones y mejoras para garantizar la compatibilidad con las últimas tecnologías y solucionar cualquier problema informado.
 ### ¿Puedo obtener una licencia temporal para Aspose.GIS?
  Sí, puede obtener una licencia temporal de[aquí](https://purchase.aspose.com/temporary-license/) para evaluar las capacidades de Aspose.GIS en su entorno de desarrollo.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

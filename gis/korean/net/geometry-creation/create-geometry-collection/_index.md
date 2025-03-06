@@ -3,10 +3,16 @@ title: .NET용 Aspose.GIS를 사용하여 형상 컬렉션 생성
 linktitle: 기하학 컬렉션 생성
 second_title: Aspose.GIS .NET API
 description: .NET용 Aspose.GIS를 사용하여 지리공간 데이터 조작의 힘을 활용하세요. .NET 애플리케이션에서 위치 기반 데이터를 원활하게 생성, 시각화 및 분석합니다.
-type: docs
 weight: 21
 url: /ko/net/geometry-creation/create-geometry-collection/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# .NET용 Aspose.GIS를 사용하여 형상 컬렉션 생성
+
 
 ## 소개
 
@@ -109,3 +115,9 @@ A: 예, Aspose.GIS는 강력한 시각화 기능을 제공하므로 멋진 지�
 ### Q: 도움을 구하고 다른 Aspose.GIS 사용자와 연결할 수 있는 커뮤니티나 포럼이 있습니까?
 
  답: 물론이죠! 다음으로 향하세요.[Aspose.GIS 포럼](https://forum.aspose.com/c/gis/33) Aspose.GIS 커뮤니티에서 질문하고, 지식을 공유하고, 동료 개발자와 연결하세요.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

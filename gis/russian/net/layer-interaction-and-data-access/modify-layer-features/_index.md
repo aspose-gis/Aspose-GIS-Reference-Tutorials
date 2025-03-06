@@ -3,10 +3,16 @@ title: Освоение модификации объектов слоя
 linktitle: Изменить объекты слоя
 second_title: API Aspose.GIS .NET
 description: Изучите Aspose.GIS for .NET и овладейте искусством изменения объектов слоев в шейп-файлах без особых усилий. Повысьте эффективность своих геопространственных приложений с легкостью и точностью.
-type: docs
 weight: 23
 url: /ru/net/layer-interaction-and-data-access/modify-layer-features/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Освоение модификации объектов слоя
+
 ## Введение
 Добро пожаловать в это подробное руководство по изменению объектов слоев с помощью Aspose.GIS for .NET! Если вы хотите улучшить свои геопространственные приложения и легко манипулировать данными шейп-файлов, вы попали по адресу. В этом уроке мы углубимся в процесс изменения объектов слоя с помощью мощной библиотеки Aspose.GIS, предоставив вам подробные инструкции и информацию.
 ## Предварительные условия
@@ -72,3 +78,9 @@ using (var result = VectorLayer.Create(resultPath, Drivers.Shapefile, source.Spa
  Посетить[Форум поддержки Aspose.GIS](https://forum.aspose.com/c/gis/33)за помощь и поддержку общества.
 ### Где я могу найти документацию для Aspose.GIS?
  Документация Aspose.GIS доступна.[здесь](https://reference.aspose.com/gis/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

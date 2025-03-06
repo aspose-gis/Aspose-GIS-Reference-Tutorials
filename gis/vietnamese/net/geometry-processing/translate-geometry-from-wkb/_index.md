@@ -3,10 +3,16 @@ title: Dịch hình học từ WKB bằng Aspose.GIS cho .NET
 linktitle: Dịch hình học từ WKB
 second_title: API Aspose.GIS .NET
 description: Tìm hiểu cách làm việc với thông tin địa lý trong .NET bằng Aspose.GIS cho .NET. Dịch hình học từ định dạng WKB một cách dễ dàng với hướng dẫn từng bước.
-type: docs
 weight: 20
 url: /vi/net/geometry-processing/translate-geometry-from-wkb/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Dịch hình học từ WKB bằng Aspose.GIS cho .NET
+
 ## Giới thiệu
 Trong lĩnh vực phát triển .NET, việc xử lý thông tin địa lý là một yêu cầu chung. Cho dù đó là ứng dụng bản đồ, phân tích không gian hay trực quan hóa dữ liệu, việc có các công cụ mạnh mẽ để làm việc với dữ liệu địa lý là rất quan trọng. Đây là lúc Aspose.GIS cho .NET phát huy tác dụng. Aspose.GIS for .NET là một thư viện mạnh mẽ cung cấp chức năng toàn diện để làm việc với nhiều định dạng không gian địa lý khác nhau và thực hiện các hoạt động không gian một cách hiệu quả.
 ## Điều kiện tiên quyết
@@ -61,3 +67,9 @@ Có, Aspose.GIS cho .NET hỗ trợ nhiều định dạng không gian địa l�
 Bạn có thể nhận hỗ trợ về Aspose.GIS cho .NET thông qua diễn đàn[đây](https://forum.aspose.com/c/gis/33) hoặc bằng cách liên hệ trực tiếp với bộ phận hỗ trợ của Aspose.
 ### Tôi có thể sử dụng Aspose.GIS cho .NET trong các dự án thương mại không?
 Có, bạn có thể sử dụng Aspose.GIS cho .NET trong các dự án thương mại bằng cách mua giấy phép phù hợp.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

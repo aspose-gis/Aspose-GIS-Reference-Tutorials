@@ -3,10 +3,16 @@ title: Đọc các tính năng từ OpenStreetMap XML trong Aspose.GIS
 linktitle: Đọc các tính năng từ OpenStreetMap XML
 second_title: API Aspose.GIS .NET
 description: Tìm hiểu cách đọc các tính năng từ OpenStreetMap XML bằng Aspose.GIS cho .NET. Hướng dẫn từng bước với các ví dụ về mã.
-type: docs
 weight: 13
 url: /vi/net/layer-data-operations/read-features-from-openstreetmap-xml/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Đọc các tính năng từ OpenStreetMap XML trong Aspose.GIS
+
 ## Giới thiệu
 Aspose.GIS for .NET là một thư viện mạnh mẽ cho phép các nhà phát triển làm việc với dữ liệu hệ thống thông tin địa lý (GIS) trong các ứng dụng .NET của họ. Cho dù bạn đang xây dựng một ứng dụng bản đồ, phân tích dữ liệu không gian hay tích hợp chức năng GIS vào phần mềm của mình, Aspose.GIS đều cung cấp nhiều tính năng để hợp lý hóa quy trình phát triển của bạn.
 Trong hướng dẫn này, chúng ta sẽ khám phá cách đọc các tính năng từ OpenStreetMap XML bằng Aspose.GIS cho .NET. Chúng tôi sẽ chia từng bước thành các phần có thể quản lý được, đảm bảo rằng bạn có thể dễ dàng làm theo bất kể trình độ chuyên môn của bạn như thế nào.
@@ -75,3 +81,9 @@ Có, bạn có thể mua giấy phép để Aspose.GIS sử dụng nó trong cá
  Bạn có thể ghé thăm[Diễn đàn Aspose.GIS](https://forum.aspose.com/c/gis/33) để được hỗ trợ và kết nối với những người dùng và nhà phát triển khác.
 ### Tôi có thể xin giấy phép tạm thời cho Aspose.GIS cho .NET không?
  Có, bạn có thể yêu cầu giấy phép tạm thời từ[trang giấy phép tạm thời](https://purchase.aspose.com/temporary-license/) nhằm mục đích kiểm tra và đánh giá.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

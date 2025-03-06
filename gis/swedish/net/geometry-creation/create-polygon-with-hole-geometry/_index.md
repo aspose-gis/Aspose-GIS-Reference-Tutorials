@@ -3,10 +3,16 @@ title: Skapa polygon med hålgeometri med Aspose.GIS
 linktitle: Skapa polygon med hålgeometri
 second_title: Aspose.GIS .NET API
 description: Lär dig hur du skapar polygon med hålgeometri med Aspose.GIS för .NET. Steg-för-steg handledning med kodexempel.
-type: docs
 weight: 13
 url: /sv/net/geometry-creation/create-polygon-with-hole-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Skapa polygon med hålgeometri med Aspose.GIS
+
 ## Introduktion
 I den här handledningen går vi igenom processen att skapa en polygon med en hålgeometri med Aspose.GIS för .NET. Aspose.GIS är ett kraftfullt bibliotek som gör det möjligt för utvecklare att arbeta med geospatial data i sina .NET-applikationer. 
 ## Förutsättningar
@@ -66,3 +72,9 @@ Aspose.GIS är ett .NET-bibliotek som gör det möjligt för utvecklare att arbe
  Du kan hitta support för Aspose.GIS på[Aspose.GIS forum](https://forum.aspose.com/c/gis/33).
 ### 5. Hur kan jag få en tillfällig licens för Aspose.GIS?
  Du kan få en tillfällig licens för Aspose.GIS från[här](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: 在 Aspose.GIS for .NET 中指定轉換時的 WKB 變體
 linktitle: 指定翻譯時的 WKB 變體
 second_title: Aspose.GIS .NET API
 description: 透過這份綜合指南，了解如何在 Aspose.GIS for .NET 中輕鬆指定 WKB 變體。提升您的 GIS 開發技能。
-type: docs
 weight: 18
 url: /zh-hant/net/geometry-processing/specify-wkb-variant-on-translation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 在 Aspose.GIS for .NET 中指定轉換時的 WKB 變體
+
 ## 介紹
 在地理資訊系統 (GIS) 開發領域，Aspose.GIS for .NET 作為強大的工具集脫穎而出。它的多功能性和效率使其成為旨在將 GIS 功能無縫整合到其 .NET 應用程式中的開發人員的首選。本文作為利用 Aspose.GIS for .NET 的綜合指南，特別關注在翻譯過程中指定 WKB（眾所周知的二進位）變體。
 ## 先決條件
@@ -62,3 +68,9 @@ Aspose.GIS for .NET 旨在與各種版本的 .NET 相容，確保開發人員的
 您可以透過訪問獲得臨時許可證[臨時許可證頁面](https://purchase.aspose.com/temporary-license/)並按照提供的說明進行操作。
 ### 在哪裡可以購買 Aspose.GIS for .NET 的授權？
 您可以從購買頁面購買 Aspose.GIS for .NET 的授權：[這個連結](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

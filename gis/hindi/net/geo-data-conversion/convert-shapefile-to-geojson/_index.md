@@ -3,10 +3,16 @@ title: शेपफाइल को जियोजसन में बदले
 linktitle: शेपफाइल को जियोजसन में बदलें
 second_title: Aspose.GIS .NET एपीआई
 description: Aspose.GIS का उपयोग करके .NET में शेपफाइल को आसानी से जियोजसन में बदलने का तरीका जानें। निर्बाध डेटा इंटरऑपरेबिलिटी के लिए हमारी चरण-दर-चरण मार्गदर्शिका का पालन करें।
-type: docs
 weight: 15
 url: /hi/net/geo-data-conversion/convert-shapefile-to-geojson/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# शेपफाइल को जियोजसन में बदलें
+
 ## परिचय
 भौगोलिक सूचना प्रणाली (जीआईएस) के क्षेत्र में, निर्बाध एकीकरण और विश्लेषण के लिए डेटा इंटरऑपरेबिलिटी महत्वपूर्ण है। एक सामान्य कार्य शेपफाइल्स, एक व्यापक रूप से उपयोग किए जाने वाले भू-स्थानिक वेक्टर डेटा प्रारूप, को जियोजसन में परिवर्तित करना है, जो भू-स्थानिक डेटा इंटरचेंज के लिए एक हल्का प्रारूप है। यह ट्यूटोरियल आपको .NET लाइब्रेरी के लिए Aspose.GIS का उपयोग करके आसानी से शेपफाइल को जियोजसन में परिवर्तित करने की प्रक्रिया में मार्गदर्शन करेगा।
 ## आवश्यक शर्तें
@@ -58,3 +64,9 @@ VectorLayer.Convert(shapefilePath, Drivers.Shapefile, jsonPath, Drivers.GeoJson)
 हाँ, .NET के लिए Aspose.GIS आपकी आवश्यकताओं के अनुसार रूपांतरण प्रक्रिया को अनुकूलित करने के लिए व्यापक विकल्प प्रदान करता है।
 ### क्या .NET के लिए Aspose.GIS का कोई परीक्षण संस्करण उपलब्ध है?
  हाँ, आप .NET के लिए Aspose.GIS के निःशुल्क परीक्षण संस्करण का लाभ उठा सकते हैं[वेबसाइट](https://releases.aspose.com/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

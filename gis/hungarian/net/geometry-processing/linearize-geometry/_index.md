@@ -3,10 +3,16 @@ title: Geometria linearizálása
 linktitle: Geometria linearizálása
 second_title: Aspose.GIS .NET API
 description: Ismerje meg, hogyan használhatja az Aspose.GIS for .NET-et a térinformatikai adatok hatékony kezeléséhez, a térbeli elemzések elvégzéséhez és a földrajzi adatok manipulálásához a .NET-alkalmazásokon belül.
-type: docs
 weight: 14
 url: /hu/net/geometry-processing/linearize-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Geometria linearizálása
+
 ## Bevezetés
 Az Aspose.GIS for .NET egy hatékony könyvtár, amely lehetővé teszi a fejlesztők számára, hogy hatékonyan dolgozzanak térinformatikai adatokkal .NET-alkalmazásokon belül. Akár térképalkalmazást épít, akár térbeli elemzést végez, akár földrajzi adatokat kezel, az Aspose.GIS biztosítja a munka elvégzéséhez szükséges eszközöket.
 ## Előfeltételek
@@ -83,3 +89,9 @@ Igen, az Aspose.GIS a térbeli műveletek és elemzési lehetőségek széles sk
  Igen, letölthet egy ingyenes próbaverziót a webhelyről[Aspose honlapja](https://releases.aspose.com/).
 ### K: Hol találok segítséget és támogatást az Aspose.GIS-hez?
  Meglátogathatja a[Aspose.GIS fórum](https://forum.aspose.com/c/gis/33) a közösség és az Aspose támogató személyzet segítségéért.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: คุณสมบัติครอบตัดเลเยอร์
 linktitle: คุณสมบัติครอบตัดเลเยอร์
 second_title: Aspose.GIS .NET API
 description: ปลดล็อกความมหัศจรรย์เชิงพื้นที่ด้วย Aspose.GIS สำหรับ .NET! คุณสมบัติเลเยอร์ครอบตัดได้อย่างง่ายดาย ดาวน์โหลดรุ่นทดลองใช้ฟรีของคุณทันที #Aspose #GIS #ภูมิสารสนเทศ
-type: docs
 weight: 19
 url: /th/net/layer-management/crop-layer-features/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# คุณสมบัติครอบตัดเลเยอร์
+
 ## การแนะนำ
 ในขอบเขตอันกว้างใหญ่ของการประมวลผลข้อมูลเชิงพื้นที่ Aspose.GIS สำหรับ .NET กลายเป็นเครื่องมืออันทรงพลัง ช่วยให้นักพัฒนาได้รับประสบการณ์ที่ราบรื่นในการจัดการข้อมูลทางภูมิศาสตร์ บทช่วยสอนนี้จะแนะนำคุณตลอดกระบวนการฟีเจอร์เลเยอร์การครอบตัดโดยใช้ Aspose.GIS ซึ่งช่วยให้คุณปรับแต่งข้อมูลเชิงพื้นที่ให้ตรงตามข้อกำหนดเฉพาะได้
 ## ข้อกำหนดเบื้องต้น
@@ -62,3 +68,9 @@ Aspose.GIS สำหรับ .NET เปิดขอบเขตความเ
  ตอบ: ได้ คุณสามารถดาวน์โหลดรุ่นทดลองใช้ฟรีได้[ที่นี่](https://releases.aspose.com/).
 ### ถาม: ฉันจะซื้อ Aspose.GIS สำหรับ .NET ได้ที่ไหน
  ตอบ: คุณสามารถซื้อห้องสมุดได้[ที่นี่](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

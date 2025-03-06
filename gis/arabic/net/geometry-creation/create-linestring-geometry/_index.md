@@ -3,10 +3,16 @@ title: التعامل مع البيانات الجغرافية المكانية 
 linktitle: إنشاء هندسة LineString
 second_title: Aspose.GIS .NET API
 description: تعرف على كيفية التعامل مع البيانات الجغرافية المكانية في تطبيقات .NET باستخدام Aspose.GIS لـ .NET. قم بإنشاء الخرائط وتحليلها وتصورها بسهولة.
-type: docs
 weight: 11
 url: /ar/net/geometry-creation/create-linestring-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# التعامل مع البيانات الجغرافية المكانية باستخدام Aspose.GIS لـ .NET
+
 ## مقدمة
 Aspose.GIS for .NET هي مكتبة قوية تمكن المطورين من العمل مع البيانات الجغرافية المكانية في تطبيقات .NET الخاصة بهم بسلاسة. سواء كنت تقوم بإنشاء تطبيق رسم خرائط، أو تحليل البيانات المكانية، أو دمج الخدمات المستندة إلى الموقع، فإن Aspose.GIS يوفر الأدوات التي تحتاجها لإدارة المعلومات الجغرافية بكفاءة.
 ## المتطلبات الأساسية
@@ -54,3 +60,9 @@ line.AddPoint(-98.65, 12.65);
 يقوم Aspose.GIS بإصدار تحديثات بانتظام لتحسين الأداء وإضافة ميزات جديدة وإصلاح أي مشكلات تم الإبلاغ عنها.
 ### س: هل يوجد منتدى مجتمعي حيث يمكنني الحصول على المساعدة فيما يتعلق بـ Aspose.GIS؟
  نعم، يمكنك زيارة منتدى Aspose.GIS للحصول على دعم المجتمع والتواصل مع المستخدمين الآخرين:[منتدى Aspose.GIS](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

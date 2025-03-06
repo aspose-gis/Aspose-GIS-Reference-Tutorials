@@ -3,10 +3,16 @@ title: Traduire la géométrie de WKT à l'aide d'Aspose.GIS dans .NET
 linktitle: Traduire la géométrie à partir de WKT
 second_title: API Aspose.GIS .NET
 description: Apprenez à traduire la géométrie à partir d'un texte connu à l'aide d'Aspose.GIS pour .NET. Un tutoriel étape par étape pour une intégration transparente.
-type: docs
 weight: 21
 url: /fr/net/geometry-processing/translate-geometry-from-wkt/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Traduire la géométrie de WKT à l'aide d'Aspose.GIS dans .NET
+
 ## Introduction
 Dans ce didacticiel, nous approfondirons le processus de traduction de la géométrie à partir de texte bien connu (WKT) à l'aide d'Aspose.GIS pour .NET. Aspose.GIS est une puissante API .NET qui permet aux développeurs de travailler sans effort avec des données géospatiales. Que vous soyez un développeur chevronné ou que vous débutiez tout juste dans la programmation géospatiale, ce didacticiel vous guidera étape par étape tout au long du processus.
 ## Conditions préalables
@@ -48,3 +54,9 @@ Oui, vous pouvez bénéficier d'un essai gratuit auprès de[ici](https://release
  Vous pouvez trouver la documentation[ici](https://reference.aspose.com/gis/net/).
 ### Comment puis-je obtenir de l'assistance pour Aspose.GIS pour .NET ?
  Vous pouvez obtenir de l'aide sur le forum Aspose.GIS[ici](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

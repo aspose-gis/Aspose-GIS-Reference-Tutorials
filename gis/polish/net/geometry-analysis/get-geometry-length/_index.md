@@ -3,10 +3,16 @@ title: Oblicz długość geometrii w .NET za pomocą Aspose.GIS
 linktitle: Uzyskaj długość geometrii
 second_title: Aspose.GIS .NET API
 description: Dowiedz się, jak obliczyć długość geometrii w .NET przy użyciu Aspose.GIS w celu wydajnej obsługi danych przestrzennych. Przewodnik krok po kroku z przykładami kodu.
-type: docs
 weight: 24
 url: /pl/net/geometry-analysis/get-geometry-length/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Oblicz długość geometrii w .NET za pomocą Aspose.GIS
+
 ## Wstęp
 dziedzinie rozwoju .NET Aspose.GIS wyróżnia się jako solidny zestaw narzędzi oferujący potężne funkcjonalności do obsługi systemów informacji geograficznej (GIS). Niezależnie od tego, czy jesteś doświadczonym programistą, czy dopiero wkraczasz w świat programowania GIS, Aspose.GIS dla .NET zapewnia kompleksowy zestaw narzędzi do wydajnej pracy z danymi przestrzennymi. W tym samouczku zagłębimy się w jedno z podstawowych zadań w tworzeniu GIS - obliczanie długości geometrii. Zbadamy krok po kroku, jak to osiągnąć za pomocą Aspose.GIS dla .NET, dzieląc proces na łatwe do zarządzania fragmenty dla łatwego zrozumienia.
 ## Warunki wstępne
@@ -74,3 +80,9 @@ Odp.: Aspose.GIS dla .NET jest kompatybilny z .NET Framework 4.6.1 lub nowszymi 
  Odpowiedź: Możesz nabyć licencję tymczasową od[Tutaj](https://purchase.aspose.com/temporary-license/).
 ### P: Czy mogę dostosować format wyjściowy do obliczeń długości geometrii?
 Odp.: Tak, Aspose.GIS dla .NET zapewnia różne opcje formatowania, aby dostosować format wyjściowy zgodnie z własnymi wymaganiami.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

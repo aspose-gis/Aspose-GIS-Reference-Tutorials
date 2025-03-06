@@ -3,10 +3,16 @@ title: Olvassa el az OpenStreetMap XML szolgáltatásait az Aspose.GIS-ben
 linktitle: Funkciók olvasása az OpenStreetMap XML-ből
 second_title: Aspose.GIS .NET API
 description: Ismerje meg, hogyan olvassa el az OpenStreetMap XML-ben található funkciókat az Aspose.GIS for .NET használatával. Lépésről lépésre bemutató oktatóprogram kódpéldákkal.
-type: docs
 weight: 13
 url: /hu/net/layer-data-operations/read-features-from-openstreetmap-xml/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Olvassa el az OpenStreetMap XML szolgáltatásait az Aspose.GIS-ben
+
 ## Bevezetés
 Az Aspose.GIS for .NET egy hatékony könyvtár, amely lehetővé teszi a fejlesztők számára, hogy .NET-alkalmazásaikban a földrajzi információs rendszer (GIS) adataival dolgozzanak. Akár térképalkalmazást épít, akár téradatokat elemez, akár GIS-funkciókat integrál szoftverébe, az Aspose.GIS funkciók széles skáláját kínálja a fejlesztési folyamat egyszerűsítésére.
 Ebben az oktatóanyagban azt fogjuk megvizsgálni, hogyan olvassunk be funkciókat az OpenStreetMap XML-ből az Aspose.GIS for .NET használatával. Minden lépést kezelhető darabokra bontunk, így biztosítva, hogy szakértelmétől függetlenül könnyedén követhesse a lépést.
@@ -75,3 +81,9 @@ Igen, megvásárolhat licencet az Aspose.GIS számára, hogy kereskedelmi projek
  Meglátogathatja a[Aspose.GIS fórum](https://forum.aspose.com/c/gis/33) segítségért, valamint hogy kapcsolatba léphessen más felhasználókkal és fejlesztőkkel.
 ### Kaphatok ideiglenes licencet az Aspose.GIS for .NET számára?
  Igen, kérhet ideiglenes engedélyt a[ideiglenes licenc oldal](https://purchase.aspose.com/temporary-license/) tesztelési és értékelési célokra.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

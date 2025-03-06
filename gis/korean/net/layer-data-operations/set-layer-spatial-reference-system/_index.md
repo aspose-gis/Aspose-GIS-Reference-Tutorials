@@ -3,10 +3,16 @@ title: 레이어 공간 참조 시스템 설정
 linktitle: 레이어 공간 참조 시스템 설정
 second_title: Aspose.GIS .NET API
 description: .NET용 Aspose.GIS를 사용한 마스터 설정 레이어 공간 참조 시스템. 이 단계별 튜토리얼을 통해 GIS 프로젝트를 향상하세요.
-type: docs
 weight: 19
 url: /ko/net/layer-data-operations/set-layer-spatial-reference-system/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 레이어 공간 참조 시스템 설정
+
 ## 소개
 GIS(지리 정보 시스템)의 광범위한 환경에서 .NET용 Aspose.GIS는 개발자를 위한 강력하고 다양한 도구로 돋보입니다. 이 튜토리얼은 Aspose.GIS for .NET을 사용하여 레이어 공간 참조 시스템을 설정하는 과정을 안내합니다. 숙련된 개발자이든 GIS 개발 초보자이든 관계없이 이 단계별 가이드는 Aspose.GIS의 강력한 기능을 활용하여 공간 데이터 처리 기능을 향상시키는 데 도움이 될 것입니다.
 ## 전제조건
@@ -72,3 +78,9 @@ using (VectorLayer layer = VectorLayer.Open(path, Drivers.Shapefile))
  틀림없이! 무료 평가판을 다운로드할 수 있습니다[여기](https://releases.aspose.com/).
 ### Aspose.GIS 관련 쿼리에 대한 지원은 어디서 구할 수 있나요?
  지원이나 문의사항이 있는 경우 다음을 방문하세요.[Aspose.GIS 포럼](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

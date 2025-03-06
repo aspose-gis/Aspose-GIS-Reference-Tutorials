@@ -3,10 +3,16 @@ title: .NET용 Aspose.GIS를 사용하여 선형화 허용 오차 설정
 linktitle: 선형화 공차 설정
 second_title: Aspose.GIS .NET API
 description: .NET용 Aspose.GIS를 마스터하면 지리공간 데이터를 손쉽게 처리할 수 있습니다. 이 단계별 튜토리얼을 따라 .NET에서 GIS 개발의 잠재력을 최대한 활용해 보세요.
-type: docs
 weight: 17
 url: /ko/net/geometry-processing/set-linearization-tolerance/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# .NET용 Aspose.GIS를 사용하여 선형화 허용 오차 설정
+
 ## 소개
 GIS(지리 정보 시스템) 개발 분야에서 .NET용 Aspose.GIS는 공간 데이터를 쉽고 효율적으로 처리하기 위한 강력한 도구 세트로 돋보입니다. 노련한 GIS 개발자이든 이제 막 시작하는 개발자이든 Aspose.GIS를 마스터하면 .NET 환경에서 지리공간 데이터 작업 능력을 크게 향상시킬 수 있습니다.
 ## 전제조건
@@ -84,3 +90,9 @@ layer.Add(feature);
 예, Aspose 웹사이트에서 .NET용 Aspose.GIS 무료 평가판을 다운로드할 수 있습니다.
 ### .NET용 Aspose.GIS에 대한 지원은 어디서 받을 수 있나요?
 Aspose 포럼에서 .NET용 Aspose.GIS에 대한 지원을 받을 수 있습니다. 아래 리소스 섹션에 제공된 지원 링크를 방문하세요.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

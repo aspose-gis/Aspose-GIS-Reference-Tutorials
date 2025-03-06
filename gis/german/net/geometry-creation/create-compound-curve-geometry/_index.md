@@ -3,10 +3,16 @@ title: Erstellen Sie eine zusammengesetzte Kurvengeometrie mit Aspose.GIS in .NE
 linktitle: Erstellen Sie eine zusammengesetzte Kurvengeometrie
 second_title: Aspose.GIS .NET-API
 description: Erfahren Sie, wie Sie mit Aspose.GIS zusammengesetzte Kurvengeometrien in .NET für eine nahtlose Geodatenverarbeitung erstellen.
-type: docs
 weight: 19
 url: /de/net/geometry-creation/create-compound-curve-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Erstellen Sie eine zusammengesetzte Kurvengeometrie mit Aspose.GIS in .NET
+
 ## Einführung
 In der Welt der .NET-Entwicklung ist Aspose.GIS ein leistungsstarkes Tool, das eine Fülle von Funktionalitäten für die Arbeit mit Geodaten bietet. Unabhängig davon, ob Sie Anwendungen für Kartierung, standortbasierte Dienste oder geografische Analysen entwickeln, bietet Aspose.GIS die notwendigen Tools, um Ihren Entwicklungsprozess zu optimieren.
 ## Voraussetzungen
@@ -94,3 +100,9 @@ Ja, Aspose.GIS kann sowohl in Desktop- als auch in Webanwendungen verwendet werd
 Ja, Aspose.GIS bietet eine Reihe räumlicher Analysefunktionen, einschließlich Entfernungsberechnung, geometrischer Operationen und räumlicher Abfragen.
 ### Gibt es ein Community-Forum oder einen Support-Kanal für Aspose.GIS-Benutzer?
  Ja, Sie können die besuchen[Aspose.GIS-Forum](https://forum.aspose.com/c/gis/33) um Fragen zu stellen, Ideen auszutauschen und Unterstützung von der Community und dem Support-Team zu suchen.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

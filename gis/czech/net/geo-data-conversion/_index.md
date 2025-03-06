@@ -3,10 +3,16 @@ title: Konverze geodat
 linktitle: Konverze geodat
 second_title: Aspose.GIS .NET API
 description: Objevte bezproblémovou konverzi GeoData pomocí výukových programů Aspose.GIS pro .NET. Naučte se převádět GeoJSON na TopoJSON, Shapefile na GeoJSON a další.
-type: docs
 weight: 20
 url: /cs/net/geo-data-conversion/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Konverze geodat
+
 ## Úvod
 
 Vítejte ve světě jednoduchých výukových programů pro konverzi GeoData s Aspose.GIS pro .NET. V tomto obsáhlém průvodci se ponoříme do různých technik pro zvýšení efektivity zpracování dat vašeho geografického informačního systému (GIS).
@@ -45,3 +51,9 @@ Naučte se, jak efektivně převést GeoJSON na TopoJSON pomocí kvantizace pomo
 Naučte se, jak bez námahy převést Shapefile na GeoJSON v .NET pomocí Aspose.GIS. Postupujte podle našeho podrobného průvodce pro bezproblémovou interoperabilitu dat.
 ### [Převést TopoJSON na GeoJSON](./convert-topojson-to-geojson/)
 Naučte se, jak plynule převést TopoJSON na GeoJSON pomocí Aspose.GIS pro .NET. Postupujte podle našeho podrobného návodu pro efektivní zpracování geografických dat.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

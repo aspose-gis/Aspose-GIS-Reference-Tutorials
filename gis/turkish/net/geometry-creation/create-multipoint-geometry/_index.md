@@ -3,10 +3,16 @@ title: Aspose.GIS for .NET ile Çok Noktalı Geometri Oluşturun
 linktitle: Çok Noktalı Geometri Oluşturun
 second_title: Aspose.GIS .NET API'si
 description: Aspose.GIS for .NET konusunda uzmanlaşın - Çok noktalı geometrileri zahmetsizce oluşturmayı öğrenin. Geliştiriciler için kapsamlı eğitim.
-type: docs
 weight: 14
 url: /tr/net/geometry-creation/create-multipoint-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS for .NET ile Çok Noktalı Geometri Oluşturun
+
 ## giriiş
 
 Coğrafi Bilgi Sistemleri (GIS) dünyasında Aspose.GIS for .NET, geliştiriciler için güçlü bir araç olarak öne çıkıyor. Sağlam özellikleri ve esnekliği, onu .NET uygulamalarında mekansal verilerle çalışmak için en iyi seçim haline getiriyor. Bu derste Aspose.GIS for .NET'in temellerini inceleyeceğiz ve özellikle çok noktalı geometriler oluşturmaya odaklanacağız. İster deneyimli bir geliştirici olun, ister yeni başlıyor olun, bu kılavuz size her adımda yol göstererek kavramayı ve uygulamayı kolaylaştıracaktır.
@@ -82,3 +88,9 @@ C: Kesinlikle! Aspose.GIS for .NET, çokgenler, çizgiler ve daha fazlasını i�
 
 ### S: Kısa vadeli projeler için geçici lisans satın alabilir miyim?
 C: Evet, özel proje ihtiyaçlarınız için geçici bir lisans alabilirsiniz.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

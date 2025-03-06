@@ -3,10 +3,16 @@ title: .NET용 Aspose.GIS를 사용하여 볼록 껍질 계산
 linktitle: 형상 볼록 껍질 가져오기
 second_title: Aspose.GIS .NET API
 description: Aspose.GIS를 사용하여 .NET에서 형상의 볼록 껍질을 계산하는 방법을 알아보세요. 코드 예제와 FAQ가 포함된 종합 튜토리얼입니다.
-type: docs
 weight: 20
 url: /ko/net/geometry-analysis/get-geometry-convex-hull/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# .NET용 Aspose.GIS를 사용하여 볼록 껍질 계산
+
 ## 소개
 Aspose.GIS for .NET은 .NET 애플리케이션에서 지리 정보 시스템(GIS) 작업을 위한 광범위한 기능을 제공하는 강력한 라이브러리입니다. 매핑 애플리케이션을 구축하든, 공간 데이터를 분석하든, 지리공간 작업을 수행하든 Aspose.GIS는 직관적인 API와 포괄적인 기능 세트를 통해 프로세스를 단순화합니다.
 ## 전제조건
@@ -79,3 +85,9 @@ for (int i = 0; i < ring.Count; ++i)
  Aspose.GIS의 임시 라이센스는 지정된 기관을 통해 취득할 수 있습니다.[임시 라이센스 링크](https://purchase.aspose.com/temporary-license/), 시험 기간이나 단기 프로젝트 중에 중단 없이 사용할 수 있습니다.
 ### Q: Aspose.GIS와 관련된 도움을 구하거나 토론에 참여할 수 있는 곳은 어디입니까?
 지원, 지침 및 커뮤니티 상호 작용을 보려면 Aspose.GIS 포럼을 방문하세요.[여기](https://forum.aspose.com/c/gis/33)에서 동료 개발자와 소통하고, 질문하고, 통찰력을 공유할 수 있습니다.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

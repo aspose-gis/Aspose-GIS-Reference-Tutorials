@@ -3,10 +3,16 @@ title: Chuyển đổi dữ liệu địa lý
 linktitle: Chuyển đổi dữ liệu địa lý
 second_title: API Aspose.GIS .NET
 description: Khám phá chuyển đổi GeoData liền mạch với hướng dẫn Aspose.GIS cho .NET. Tìm hiểu cách chuyển đổi GeoJSON sang TopoJSON, Shapefile sang GeoJSON, v.v.
-type: docs
 weight: 20
 url: /vi/net/geo-data-conversion/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Chuyển đổi dữ liệu địa lý
+
 ## Giới thiệu
 
 Chào mừng bạn đến với thế giới hướng dẫn chuyển đổi GeoData dễ dàng với Aspose.GIS cho .NET. Trong hướng dẫn toàn diện này, chúng tôi sẽ đi sâu vào các kỹ thuật khác nhau để nâng cao hiệu quả xử lý dữ liệu Hệ thống thông tin địa lý (GIS) của bạn.
@@ -45,3 +51,9 @@ Tìm hiểu cách chuyển đổi GeoJSON sang TopoJSON một cách hiệu quả
 Tìm hiểu cách dễ dàng chuyển đổi Shapefile sang GeoJSON trong .NET bằng Aspose.GIS. Hãy làm theo hướng dẫn từng bước của chúng tôi để có khả năng tương tác dữ liệu liền mạch.
 ### [Chuyển đổi TopoJSON sang GeoJSON](./convert-topojson-to-geojson/)
 Tìm hiểu cách chuyển đổi liền mạch TopoJSON sang GeoJSON bằng Aspose.GIS cho .NET. Hãy làm theo hướng dẫn từng bước của chúng tôi để xử lý dữ liệu địa lý hiệu quả.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Vytvořte vektorovou vrstvu pomocí SRS
 linktitle: Vytvořte vektorovou vrstvu pomocí SRS
 second_title: Aspose.GIS .NET API
 description: Prozkoumejte Aspose.GIS for .NET – váš klíč k bezproblémové integraci GIS. Vytvářejte vektorové vrstvy bez námahy pomocí specifikovaných prostorových referenčních systémů. Stáhnout teď!
-type: docs
 weight: 13
 url: /cs/net/layer-management/create-vector-layer-with-srs/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Vytvořte vektorovou vrstvu pomocí SRS
+
 ## Úvod
 Aspose.GIS for .NET je výkonná knihovna, která umožňuje vývojářům bezproblémově pracovat s daty geografického informačního systému (GIS) v aplikacích .NET. V tomto tutoriálu se zaměříme na vytvoření vektorové vrstvy s prostorovým referenčním systémem (SRS). Na konci této příručky budete schopni bez námahy integrovat funkce GIS do svých projektů .NET.
 ## Předpoklady
@@ -90,3 +96,9 @@ Absolutně! Aspose.GIS for .NET je všestranný a lze jej použít ve webových 
  Ano, můžete prozkoumat funkce Aspose.GIS získáním bezplatné zkušební verze[tady](https://releases.aspose.com/).
 ### Jak si mohu zakoupit licenci pro Aspose.GIS?
  Chcete-li zakoupit licenci, navštivte stránku[nákupní stránku](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Geometrie creatie
 linktitle: Geometrie creatie
 second_title: Aspose.GIS .NET-API
 description: Ontgrendel het potentieel van georuimtelijke gegevensmanipulatie met Aspose.GIS voor .NET. Duik in onze tutorials over het maken, converteren en analyseren van geometrieën.
-type: docs
 weight: 21
 url: /nl/net/geometry-creation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Geometrie creatie
+
 
 ## Invoering
 
@@ -105,3 +111,9 @@ Leer hoe u geometrieën in een geometrie kunt tellen met Aspose.GIS voor .NET. S
 Leer hoe u Aspose.GIS voor .NET kunt gebruiken om moeiteloos geografische gegevens te manipuleren. Uitgebreide tutorials beschikbaar.
 ### [Coördineer de conversie met Aspose.GIS](./convert-coordinates/)
 Leer hoe u coördinaten converteert met Aspose.GIS voor .NET. Stapsgewijze handleiding, vereisten en veelgestelde vragen worden verstrekt.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

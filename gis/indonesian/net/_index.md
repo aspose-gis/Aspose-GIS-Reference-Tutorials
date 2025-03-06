@@ -1,12 +1,17 @@
 ---
 title: Tutorial Komprehensif dan Contoh Aspose.GIS untuk .NET
 linktitle: Aspose.GIS untuk Tutorial .NET
-type: docs
 weight: 10
 url: /id/net/
 description: Temukan kecanggihan Aspose.GIS untuk .NET melalui tutorial komprehensif. Konversi Master GeoData, pembuatan geometri, analisis, manajemen lapisan, dan banyak lagi.
-is_root: true
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Tutorial Komprehensif dan Contoh Aspose.GIS untuk .NET
+
 
 ## Perkenalan
 
@@ -94,3 +99,10 @@ Buka potensi Aspose.GIS untuk .NET dengan Tutorial Interaksi Lapisan & Akses Dat
 Temukan tutorial komprehensif tentang operasi data lapisan menggunakan Aspose.GIS untuk .NET. Belajar membaca, memanipulasi, dan memvisualisasikan data geospasial.
 ### [Rendering Peta](./map-rendering/)
 Buka potensi visualisasi data geospasial dengan Aspose.GIS untuk .NET. Impor SLD dengan mudah, beri label fitur, dan render peta menakjubkan. Jelajahi sekarang!
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

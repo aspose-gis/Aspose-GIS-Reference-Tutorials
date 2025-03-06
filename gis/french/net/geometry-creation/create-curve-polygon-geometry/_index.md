@@ -3,10 +3,16 @@ title: Créer une géométrie de polygone courbe avec Aspose.GIS pour .NET
 linktitle: Créer une géométrie de polygone courbe
 second_title: API Aspose.GIS .NET
 description: Apprenez à créer efficacement une géométrie de polygone courbe à l'aide d'Aspose.GIS pour .NET. Suivez notre guide étape par étape pour une intégration transparente dans vos applications SIG.
-type: docs
 weight: 18
 url: /fr/net/geometry-creation/create-curve-polygon-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Créer une géométrie de polygone courbe avec Aspose.GIS pour .NET
+
 ## Introduction
 Dans le domaine du développement de systèmes d'information géographique (SIG), Aspose.GIS pour .NET se distingue comme un outil puissant pour créer, éditer et manipuler des données spatiales. Ce didacticiel vise à vous guider tout au long du processus de création d'une géométrie de polygone courbe à l'aide d'Aspose.GIS pour .NET. À la fin de ce didacticiel, vous disposerez des connaissances nécessaires pour construire efficacement des géométries complexes pour vos applications SIG.
 ## Conditions préalables
@@ -108,3 +114,9 @@ Oui, Aspose.GIS pour .NET fournit un large éventail de fonctionnalités d'analy
  Oui, vous pouvez rejoindre le forum de la communauté Aspose.GIS[ici](https://forum.aspose.com/c/gis/33) pour interagir avec d'autres utilisateurs, poser des questions et partager vos expériences.
 ### Puis-je essayer Aspose.GIS pour .NET avant d'acheter ?
  Bien sûr! Vous pouvez bénéficier d'un essai gratuit d'Aspose.GIS pour .NET à partir du[page des versions](https://releases.aspose.com/)vous permettant d'explorer ses fonctionnalités avant de faire un achat.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

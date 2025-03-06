@@ -3,10 +3,16 @@ title: Aspose.GIS के साथ ज्यामिति के बीच क
 linktitle: ज्यामितियों के बीच की दूरी की गणना करें
 second_title: Aspose.GIS .NET एपीआई
 description: Aspose.GIS का उपयोग करके .NET में ज्यामिति के बीच की दूरी की गणना करना सीखें। कोड उदाहरणों के साथ चरण-दर-चरण मार्गदर्शिका। अपने भू-स्थानिक अनुप्रयोगों को बढ़ाएँ।
-type: docs
 weight: 21
 url: /hi/net/geometry-analysis/calculate-distance-between-geometries/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS के साथ ज्यामिति के बीच की दूरी की गणना करें
+
 ## परिचय
 भू-स्थानिक प्रोग्रामिंग के क्षेत्र में, विभिन्न ज्यामितियों के बीच दूरियों की गणना करने की क्षमता सर्वोपरि है। चाहे आप बहुभुजों, रेखाओं या बिंदुओं के साथ काम कर रहे हों, उनके बीच की दूरी जानना मैपिंग से लेकर लॉजिस्टिक्स योजना तक विभिन्न अनुप्रयोगों के लिए महत्वपूर्ण हो सकता है। .NET के लिए Aspose.GIS ऐसी गणनाओं को आसानी और सटीकता से करने के लिए शक्तिशाली उपकरण प्रदान करता है।
 ## आवश्यक शर्तें
@@ -84,3 +90,9 @@ Console.WriteLine(distance.ToString("F")); // 0.63
 .NET के लिए Aspose.GIS अन्य GIS लाइब्रेरीज़ के साथ इंटरऑपरेबिलिटी प्रदान करता है, जिससे आप अतिरिक्त कार्यक्षमताओं का लाभ उठा सकते हैं।
 ### क्या .NET उपयोगकर्ताओं के लिए Aspose.GIS के लिए तकनीकी सहायता उपलब्ध है?
  हां, .NET के लिए Aspose.GIS के उपयोगकर्ता Aspose के माध्यम से तकनीकी सहायता तक पहुंच सकते हैं[मंचों](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

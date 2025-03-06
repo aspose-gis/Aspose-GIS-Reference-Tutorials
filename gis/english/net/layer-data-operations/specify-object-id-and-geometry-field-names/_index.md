@@ -3,10 +3,16 @@ title: Specify Object ID and Geometry Field Names
 linktitle: Specify Object ID and Geometry Field Names
 second_title: Aspose.GIS .NET API
 description: Explore GIS magic with Aspose.GIS for .NET! Manage geospatial data effortlessly. Download now and unleash the power of spatial intelligence.
-type: docs
 weight: 20
 url: /net/layer-data-operations/specify-object-id-and-geometry-field-names/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Specify Object ID and Geometry Field Names
+
 ## Introduction
 Embarking on a journey into the realm of Geographic Information Systems (GIS) using Aspose.GIS for .NET opens up a world of possibilities for developers and enthusiasts alike. This powerful library empowers you to handle geospatial data effortlessly. In this tutorial, we'll guide you through the process of specifying Object ID and Geometry field names, laying the foundation for your GIS endeavors.
 ## Prerequisites
@@ -74,3 +80,10 @@ A: You can get a temporary license [here](https://purchase.aspose.com/temporary-
 A: Aspose.GIS for .NET supports various spatial reference systems, providing flexibility for different geographic datasets.
 ### Q: Where can I seek help or discuss Aspose.GIS-related queries?
 A: Visit the Aspose.GIS forum [here](https://forum.aspose.com/c/gis/33) for support and discussions.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

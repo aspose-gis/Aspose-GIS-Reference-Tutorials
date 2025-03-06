@@ -3,10 +3,16 @@ title: Get Point on Geometry Surface
 linktitle: Get Point on Geometry Surface
 second_title: Aspose.GIS .NET API
 description: Ismerje meg, hogyan dolgozhat hatékonyan térinformatikai adatokkal az Aspose.GIS for .NET használatával. Lépésről lépésre útmutató és GYIK mellékelve.
-type: docs
 weight: 25
 url: /hu/net/geometry-analysis/get-point-on-geometry-surface/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Get Point on Geometry Surface
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan használható az Aspose.GIS for .NET geometriákkal való munkavégzéshez és a felületükön lévő pontok lekéréséhez. Az Aspose.GIS egy hatékony könyvtár, amely különféle funkciókat biztosít a térinformatikai adatok feldolgozásához, manipulálásához és megjelenítéséhez .NET alkalmazásokban.
 ## Előfeltételek
@@ -66,3 +72,9 @@ Igen, az Aspose.GIS különféle .NET-keretrendszereket támogat, beleértve a .
  Igen, az Aspose.GIS-hez ideiglenes licenceket szerezhet be innen[itt](https://purchase.aspose.com/temporary-license/).
 ### Hol vásárolhatom meg az Aspose.GIS-t?
  Az Aspose.GIS-t a vásárlási oldalon vásárolhatja meg[itt](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

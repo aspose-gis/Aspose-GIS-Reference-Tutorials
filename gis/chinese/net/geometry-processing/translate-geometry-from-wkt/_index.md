@@ -3,10 +3,16 @@ title: 使用 .NET 中的 Aspose.GIS 转换 WKT 中的几何图形
 linktitle: 从 WKT 转换几何图形
 second_title: Aspose.GIS .NET API
 description: 了解如何使用 Aspose.GIS for .NET 从众所周知的文本转换几何图形。无缝集成的分步教程。
-type: docs
 weight: 21
 url: /zh/net/geometry-processing/translate-geometry-from-wkt/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 .NET 中的 Aspose.GIS 转换 WKT 中的几何图形
+
 ## 介绍
 在本教程中，我们将深入研究使用 Aspose.GIS for .NET 从众所周知的文本 (WKT) 转换几何图形的过程。 Aspose.GIS 是一个功能强大的 .NET API，允许开发人员轻松处理地理空间数据。无论您是经验丰富的开发人员还是刚刚开始地理空间编程，本教程都将逐步指导您完成整个过程。
 ## 先决条件
@@ -48,3 +54,9 @@ Console.WriteLine(line.Count); //输出：3
 你可以找到文档[这里](https://reference.aspose.com/gis/net/).
 ### 如何获得 Aspose.GIS for .NET 支持？
 您可以从 Aspose.GIS 论坛获得支持[这里](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

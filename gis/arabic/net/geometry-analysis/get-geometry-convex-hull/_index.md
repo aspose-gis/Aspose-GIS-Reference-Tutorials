@@ -3,10 +3,16 @@ title: حساب الهيكل المحدب باستخدام Aspose.GIS لـ .NET
 linktitle: احصل على بدن محدب هندسيًا
 second_title: Aspose.GIS .NET API
 description: تعرف على كيفية حساب الهيكل المحدب للهندسة في .NET باستخدام Aspose.GIS. برنامج تعليمي شامل مع أمثلة التعليمات البرمجية والأسئلة الشائعة.
-type: docs
 weight: 20
 url: /ar/net/geometry-analysis/get-geometry-convex-hull/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# حساب الهيكل المحدب باستخدام Aspose.GIS لـ .NET
+
 ## مقدمة
 Aspose.GIS for .NET هي مكتبة قوية توفر نطاقًا واسعًا من الوظائف للعمل مع أنظمة المعلومات الجغرافية (GIS) في تطبيقات .NET. سواء كنت تقوم بإنشاء تطبيقات رسم الخرائط، أو تحليل البيانات المكانية، أو إجراء عمليات جغرافية مكانية، فإن Aspose.GIS يبسط العملية من خلال واجهة برمجة التطبيقات البديهية ومجموعة الميزات الشاملة.
 ## المتطلبات الأساسية
@@ -79,3 +85,9 @@ for (int i = 0; i < ring.Count; ++i)
  يمكن الحصول على التراخيص المؤقتة لـ Aspose.GIS من خلال الجهة المعينة[رابط الترخيص المؤقت](https://purchase.aspose.com/temporary-license/)، مما يتيح الاستخدام دون انقطاع خلال الفترات التجريبية أو المشاريع قصيرة المدى.
 ### س: أين يمكنني طلب المساعدة أو المشاركة في المناقشات المتعلقة بـ Aspose.GIS؟
 للحصول على الدعم والتوجيه والتفاعل المجتمعي، قم بزيارة منتدى Aspose.GIS[هنا](https://forum.aspose.com/c/gis/33)، حيث يمكنك التفاعل مع زملائك من المطورين وطرح الأسئلة ومشاركة الأفكار.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

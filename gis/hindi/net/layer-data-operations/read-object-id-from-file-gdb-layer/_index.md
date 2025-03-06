@@ -3,10 +3,16 @@ title: Aspose.GIS में फ़ाइल GDB लेयर से ऑब्ज
 linktitle: फ़ाइल GDB परत से ऑब्जेक्ट आईडी पढ़ें
 second_title: Aspose.GIS .NET एपीआई
 description: भू-स्थानिक डेटा प्रोसेसिंग को कुशलतापूर्वक संभालने के लिए .NET के लिए Aspose.GIS का उपयोग करना सीखें। व्यापक ट्यूटोरियल और विशेषज्ञ मार्गदर्शन उपलब्ध है।
-type: docs
 weight: 16
 url: /hi/net/layer-data-operations/read-object-id-from-file-gdb-layer/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS में फ़ाइल GDB लेयर से ऑब्जेक्ट आईडी पढ़ें
+
 ## परिचय
 .NET के लिए Aspose.GIS में महारत हासिल करने पर हमारी व्यापक मार्गदर्शिका में आपका स्वागत है! Aspose.GIS एक शक्तिशाली लाइब्रेरी है जिसे .NET ढांचे के भीतर भू-स्थानिक डेटा प्रोसेसिंग और विज़ुअलाइज़ेशन कार्यों को कुशलतापूर्वक संभालने के लिए डिज़ाइन किया गया है। चाहे आप एक अनुभवी डेवलपर हों या भू-स्थानिक प्रोग्रामिंग में अपनी यात्रा शुरू कर रहे हों, यह ट्यूटोरियल आपको Aspose.GIS की पूरी क्षमता का उपयोग करने के लिए आवश्यक हर चीज़ से परिचित कराएगा।
 ## आवश्यक शर्तें
@@ -74,3 +80,9 @@ Console.WriteLine(feature.GetValue<int>("OBJECTID"));
 हाँ, आप परीक्षण और मूल्यांकन उद्देश्यों के लिए Aspose वेबसाइट से एक अस्थायी लाइसेंस प्राप्त कर सकते हैं।
 ### मुझे .NET के लिए Aspose.GIS के लिए व्यापक दस्तावेज़ कहाँ मिल सकते हैं?
  आप इसका उल्लेख कर सकते हैं[प्रलेखन](https://reference.aspose.com/gis/net/) Aspose.GIS API और सुविधाओं के उपयोग के बारे में विस्तृत जानकारी के लिए।
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

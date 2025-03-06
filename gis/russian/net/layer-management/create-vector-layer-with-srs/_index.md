@@ -3,10 +3,16 @@ title: Создайте векторный слой с помощью SRS
 linktitle: Создайте векторный слой с помощью SRS
 second_title: API Aspose.GIS .NET
 description: Изучите Aspose.GIS for .NET — ваш ключ к плавной интеграции с ГИС. Легко создавайте векторные слои с помощью заданных систем пространственной привязки. Скачать сейчас!
-type: docs
 weight: 13
 url: /ru/net/layer-management/create-vector-layer-with-srs/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Создайте векторный слой с помощью SRS
+
 ## Введение
 Aspose.GIS for .NET — это мощная библиотека, которая позволяет разработчикам беспрепятственно работать с данными географической информационной системы (ГИС) в приложениях .NET. В этом уроке мы сосредоточимся на создании векторного слоя с системой пространственной привязки (SRS). К концу этого руководства вы сможете легко интегрировать возможности ГИС в свои проекты .NET.
 ## Предварительные условия
@@ -90,3 +96,9 @@ using (var layer = Drivers.Shapefile.OpenLayer(dataDir + "filepath_out.shp"))
  Да, вы можете изучить возможности Aspose.GIS, получив бесплатную пробную версию.[здесь](https://releases.aspose.com/).
 ### Как я могу приобрести лицензию на Aspose.GIS?
  Чтобы приобрести лицензию, посетите сайт[страница покупки](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Buat File GDB dengan Lapisan Tunggal
 linktitle: Buat File GDB dengan Lapisan Tunggal
 second_title: Aspose.GIS .NET API
 description: Buka potensi pengelolaan data geospasial di .NET dengan Aspose.GIS. Pelajari cara membuat File Geodatabase dan lapisan langkah demi langkah. Unduh sekarang!
-type: docs
 weight: 11
 url: /id/net/layer-management/create-file-gdb-with-single-layer/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Buat File GDB dengan Lapisan Tunggal
+
 ## Perkenalan
 Apakah Anda siap untuk meningkatkan aplikasi geospasial Anda dengan geodatabase dan lapisan file yang kuat? Kunjungi Aspose.GIS untuk .NET. Dalam tutorial ini, kami akan memandu Anda melalui proses pembuatan File Geodatabase (GDB) dengan satu lapisan menggunakan Aspose.GIS untuk .NET. Manfaatkan kekuatan manajemen dan visualisasi data spasial dalam aplikasi .NET Anda dengan mudah.
 ## Prasyarat
@@ -70,3 +76,9 @@ Ya, Aspose.GIS untuk .NET dapat diintegrasikan dengan lancar ke dalam proyek .NE
  Mengunjungi[Forum Aspose.GIS](https://forum.aspose.com/c/gis/33) untuk dukungan dan bantuan masyarakat.
 ### Apakah lisensi sementara tersedia untuk Aspose.GIS untuk .NET?
  Ya, Anda bisa mendapatkan a[izin sementara](https://purchase.aspose.com/temporary-license/) untuk Aspose.GIS untuk .NET.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

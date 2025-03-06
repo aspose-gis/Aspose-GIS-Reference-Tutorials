@@ -3,10 +3,16 @@ title: Aspose.GIS for .NET ile Geometri Tipini Alın
 linktitle: Geometri Türünü Al
 second_title: Aspose.GIS .NET API'si
 description: Aspose.GIS for .NET'in gücünü keşfedin. Bu kapsamlı eğitimle .NET projelerinizde uzamsal verileri verimli bir şekilde nasıl kullanacağınızı öğrenin.
-type: docs
 weight: 23
 url: /tr/net/geometry-analysis/get-geometry-type/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS for .NET ile Geometri Tipini Alın
+
 ## giriiş
 .NET geliştirme alanında Aspose.GIS, coğrafi bilgilerin işlenmesi için güçlü bir araç olarak hizmet vermektedir. Zengin işlevleri, onu mekansal verilerle çalışan geliştiricilerin tercihi haline getiriyor. Bu eğitimde Aspose.GIS for .NET'in temellerini inceleyeceğiz, temel kavramları ayrıntılı olarak ele alacağız ve kolaylıkla başlamanıza yardımcı olacak adım adım rehberlik sunacağız.
 ## Önkoşullar
@@ -63,3 +69,9 @@ Evet, Aspose.GIS, .NET'in çeşitli sürümlerini destekleyerek farklı ortamlar
  Geçici lisanslama seçenekleri için şu adresi ziyaret edin:[geçici lisans](https://purchase.aspose.com/temporary-license/) sayfa.
 ### Projem için Aspose.GIS'i nereden satın alabilirim?
  Aspose.GIS'i satın alma sayfasından satın alabilirsiniz.[Burada](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

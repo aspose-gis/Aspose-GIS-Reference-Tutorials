@@ -3,10 +3,16 @@ title: SRS ile Vektör Katmanı Oluşturun
 linktitle: SRS ile Vektör Katmanı Oluşturun
 second_title: Aspose.GIS .NET API'si
 description: Kusursuz GIS entegrasyonunun anahtarı olan Aspose.GIS for .NET'i keşfedin. Belirtilen uzamsal referans sistemleriyle vektör katmanlarını zahmetsizce oluşturun. Şimdi İndirin!
-type: docs
 weight: 13
 url: /tr/net/layer-management/create-vector-layer-with-srs/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# SRS ile Vektör Katmanı Oluşturun
+
 ## giriiş
 Aspose.GIS for .NET, geliştiricilerin .NET uygulamalarında coğrafi bilgi sistemi (GIS) verileriyle sorunsuz bir şekilde çalışmasına olanak tanıyan güçlü bir kütüphanedir. Bu derste, uzaysal referans sistemi (SRS) ile bir vektör katmanı oluşturmaya odaklanacağız. Bu kılavuzun sonunda, GIS yeteneklerini .NET projelerinize zahmetsizce entegre edebileceksiniz.
 ## Önkoşullar
@@ -90,3 +96,9 @@ Kesinlikle! Aspose.GIS for .NET çok yönlüdür ve web uygulamalarında, masaü
  Evet, ücretsiz deneme sürümünü edinerek Aspose.GIS'in özelliklerini keşfedebilirsiniz[Burada](https://releases.aspose.com/).
 ### Aspose.GIS lisansını nasıl satın alabilirim?
  Lisans satın almak için şu adresi ziyaret edin:[satın alma sayfası](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

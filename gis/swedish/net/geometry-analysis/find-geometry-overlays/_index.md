@@ -3,10 +3,16 @@ title: Bemästra geometriöverlägg med Aspose.GIS för .NET
 linktitle: Hitta geometriöverlägg
 second_title: Aspose.GIS .NET API
 description: Lär dig hur du utför geometriska överlagringsoperationer med Aspose.GIS för .NET. Mästarkorsning, förening, skillnad och symmetriska skillnadsoperationer.
-type: docs
 weight: 16
 url: /sv/net/geometry-analysis/find-geometry-overlays/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Bemästra geometriöverlägg med Aspose.GIS för .NET
+
 ## Introduktion
 Inom området för geografiska informationssystem (GIS) är överlagringsoperationer grundläggande för rumslig analys. De möjliggör jämförelse och kombination av olika rumsliga datamängder för att få värdefulla insikter. Aspose.GIS för .NET tillhandahåller robusta funktioner för att utföra geometriska överlagringar effektivt. I den här handledningen kommer vi att fördjupa oss i olika överlagringsoperationer som Intersection, Union, Difference och Symmetric Difference med Aspose.GIS för .NET.
 ## Förutsättningar
@@ -108,3 +114,9 @@ Ja, Aspose.GIS för .NET kan användas i både kommersiella och icke-kommersiell
  Ja, tillfälliga licenser är tillgängliga för test- och utvärderingssyften. Du kan få dem från[här](https://purchase.aspose.com/temporary-license/).
 ### F: Kan jag köpa Aspose.GIS för .NET direkt?
  Ja, du kan köpa Aspose.GIS för .NET från webbplatsen[här](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

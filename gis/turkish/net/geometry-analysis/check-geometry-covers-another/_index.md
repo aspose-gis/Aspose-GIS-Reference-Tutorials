@@ -3,10 +3,16 @@ title: Geometrinin Diğerini Kapsadığını Kontrol Edin
 linktitle: Geometrinin Diğerini Kapsadığını Kontrol Edin
 second_title: Aspose.GIS .NET API'si
 description: Coğrafi verilerle verimli bir şekilde çalışmak, konumsal bilgileri analiz etmek ve haritalama özelliklerini .NET uygulamalarınıza entegre etmek için Aspose.GIS for .NET'i nasıl kullanacağınızı öğrenin.
-type: docs
 weight: 15
 url: /tr/net/geometry-analysis/check-geometry-covers-another/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Geometrinin Diğerini Kapsadığını Kontrol Edin
+
 ## giriiş
 Aspose.GIS for .NET, geliştiricilere .NET uygulamalarında coğrafi verilerle verimli bir şekilde çalışabilmeleri için araçlar sağlayan güçlü bir kütüphanedir. İster bir haritalama uygulaması oluşturuyor olun, ister konumsal verileri analiz ediyor olun, ister coğrafi özellikleri yazılımınıza entegre ediyor olun, Aspose.GIS, geliştirme sürecinizi kolaylaştırmak için kapsamlı bir dizi işlevsellik sunar.
 ## Önkoşullar
@@ -74,3 +80,9 @@ Evet, Aspose.GIS for .NET, Shapefile, GeoJSON, KML ve daha fazlasını içeren �
 Aspose.GIS for .NET, Aspose tarafından geliştirilen özel bir kütüphanedir, dolayısıyla harici geliştiricilerin katkıları kabul edilmez. Ancak kütüphaneyi geliştirmek için geri bildirim ve önerilerde bulunabilirsiniz.
 ### Aspose.GIS for .NET için güncellemeler ne sıklıkta yayınlanıyor?
  Aspose.GIS for .NET'e yönelik güncellemeler, yeni özellikler, geliştirmeler ve hata düzeltmeleri sunmak üzere düzenli olarak yayınlanmaktadır. Kontrol edin[İnternet sitesi](https://releases.aspose.com/gis/net/) En son sürümler için.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

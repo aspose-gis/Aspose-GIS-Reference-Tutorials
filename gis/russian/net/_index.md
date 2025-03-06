@@ -1,12 +1,17 @@
 ---
 title: Комплексные руководства и примеры Aspose.GIS для .NET
 linktitle: Учебные пособия по Aspose.GIS для .NET
-type: docs
 weight: 10
 url: /ru/net/
 description: Откройте для себя возможности Aspose.GIS for .NET с помощью подробных руководств. Освойте преобразование GeoData, создание геометрии, анализ, управление слоями и многое другое.
-is_root: true
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Комплексные руководства и примеры Aspose.GIS для .NET
+
 
 ## Введение
 
@@ -94,3 +99,10 @@ is_root: true
 Откройте для себя подробные руководства по работе с данными слоев с помощью Aspose.GIS for .NET. Научитесь читать, манипулировать и визуализировать геопространственные данные.
 ### [Рендеринг карты](./map-rendering/)
 Раскройте потенциал визуализации геопространственных данных с помощью Aspose.GIS для .NET. Легко импортируйте SLD, маркируйте объекты и создавайте потрясающие карты. Исследуйте сейчас!
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Geef WKB-variant op vertaling op in Aspose.GIS voor .NET
 linktitle: Geef WKB-variant op vertaling op
 second_title: Aspose.GIS .NET-API
 description: Leer moeiteloos WKB-varianten specificeren in Aspose.GIS voor .NET met deze uitgebreide handleiding. Vergroot uw GIS-ontwikkelingsvaardigheden.
-type: docs
 weight: 18
 url: /nl/net/geometry-processing/specify-wkb-variant-on-translation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Geef WKB-variant op vertaling op in Aspose.GIS voor .NET
+
 ## Invoering
 Op het gebied van de ontwikkeling van geografische informatiesystemen (GIS) onderscheidt Aspose.GIS voor .NET zich als een krachtige toolset. De veelzijdigheid en efficiëntie maken het een favoriete keuze voor ontwikkelaars die GIS-functionaliteiten naadloos in hun .NET-applicaties willen integreren. Dit artikel dient als een uitgebreide handleiding voor het gebruik van Aspose.GIS voor .NET, waarbij de nadruk specifiek ligt op het specificeren van WKB-varianten (Well-Known Binary) tijdens vertaalprocessen.
 ## Vereisten
@@ -62,3 +68,9 @@ Aspose.GIS voor .NET is ontworpen om compatibel te zijn met verschillende versie
  U kunt een tijdelijke licentie verkrijgen door naar de website te gaan[tijdelijke licentiepagina](https://purchase.aspose.com/temporary-license/) en volg de meegeleverde instructies.
 ### Waar kan ik een licentie kopen voor Aspose.GIS voor .NET?
  U kunt een licentie voor Aspose.GIS voor .NET aanschaffen via de aankooppagina op[deze link](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Укажите длину значения атрибута
 linktitle: Укажите длину значения атрибута
 second_title: API Aspose.GIS .NET
 description: Изучите геопространственные разработки с помощью Aspose.GIS для .NET. Легко управляйте пространственными данными и манипулируйте ими в своих приложениях .NET.
-type: docs
 weight: 18
 url: /ru/net/layer-data-operations/specify-attribute-value-length/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Укажите длину значения атрибута
+
 ## Введение
 Добро пожаловать в мир Aspose.GIS для .NET – ваш путь к мощным и эффективным геопространственным разработкам! Это подробное руководство проведет вас через основные этапы использования Aspose.GIS для простого управления геопространственными данными в ваших .NET-приложениях. Независимо от того, являетесь ли вы опытным разработчиком или новичком в геопространственном программировании, это руководство призвано предоставить вам прочную основу и практические идеи.
 ## Предварительные условия
@@ -61,3 +67,9 @@ layer.Add(feature);
  О: Купите лицензию[здесь](https://purchase.aspose.com/buy).
 ### Вопрос: Где я могу получить доступ к документации по Aspose.GIS for .NET?
  О: Обратитесь к[документация](https://reference.aspose.com/gis/net/) для всестороннего руководства.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

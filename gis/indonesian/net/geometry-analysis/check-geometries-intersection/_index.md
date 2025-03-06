@@ -3,10 +3,16 @@ title: Periksa Persimpangan Geometri dengan Aspose.GIS untuk .NET
 linktitle: Periksa Persimpangan Geometri
 second_title: Aspose.GIS .NET API
 description: Pelajari cara memeriksa persimpangan geometri menggunakan Aspose.GIS untuk .NET dengan panduan langkah demi langkah. Tingkatkan pengembangan GIS Anda dengan mudah.
-type: docs
 weight: 11
 url: /id/net/geometry-analysis/check-geometries-intersection/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Periksa Persimpangan Geometri dengan Aspose.GIS untuk .NET
+
 ## Perkenalan
 Di bidang sistem informasi geografis (GIS), Aspose.GIS untuk .NET menonjol sebagai perangkat canggih yang memberdayakan pengembang untuk mengintegrasikan fungsi spasial tingkat lanjut ke dalam aplikasi mereka dengan lancar. Baik Anda seorang pengembang berpengalaman atau baru saja terjun ke dalam pengembangan GIS, artikel ini akan menjadi panduan komprehensif Anda dalam memanfaatkan Aspose.GIS untuk .NET untuk memeriksa persimpangan geometri secara efektif.
 ## Prasyarat
@@ -76,3 +82,9 @@ Ya, Aspose.GIS untuk .NET kompatibel dengan berbagai kerangka .NET, termasuk .NE
  Ya, Anda bisa mendapatkan lisensi sementara dari[Di Sini](https://purchase.aspose.com/temporary-license/).
 ### Di mana saya dapat membeli versi berlisensi Aspose.GIS untuk .NET?
  Anda dapat membeli versi berlisensi Aspose.GIS untuk .NET dari[Di Sini](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

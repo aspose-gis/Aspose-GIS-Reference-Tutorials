@@ -3,10 +3,16 @@ title: Vypočítejte konvexní plášť s Aspose.GIS pro .NET
 linktitle: Získejte Geometry Convex Hull
 second_title: Aspose.GIS .NET API
 description: Naučte se, jak vypočítat konvexní plášť geometrie v .NET pomocí Aspose.GIS. Komplexní výukový program s příklady kódu a často kladenými dotazy.
-type: docs
 weight: 20
 url: /cs/net/geometry-analysis/get-geometry-convex-hull/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Vypočítejte konvexní plášť s Aspose.GIS pro .NET
+
 ## Úvod
 Aspose.GIS for .NET je výkonná knihovna, která poskytuje širokou škálu funkcí pro práci s geografickými informačními systémy (GIS) v aplikacích .NET. Ať už vytváříte mapové aplikace, analyzujete prostorová data nebo provádíte geoprostorové operace, Aspose.GIS zjednodušuje proces pomocí intuitivního API a komplexní sady funkcí.
 ## Předpoklady
@@ -79,3 +85,9 @@ Aspose.GIS rozhodně podporuje širokou škálu geoprostorových formátů, vče
  Dočasné licence pro Aspose.GIS lze získat prostřednictvím určených[dočasný licenční odkaz](https://purchase.aspose.com/temporary-license/), umožňující nepřetržité používání během zkušebních období nebo krátkodobých projektů.
 ### Otázka: Kde mohu vyhledat pomoc nebo se zúčastnit diskusí týkajících se Aspose.GIS?
 Pro podporu, vedení a interakci s komunitou navštivte fórum Aspose.GIS[tady](https://forum.aspose.com/c/gis/33), kde můžete komunikovat s ostatními vývojáři, klást otázky a sdílet postřehy.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

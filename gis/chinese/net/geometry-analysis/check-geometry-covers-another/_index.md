@@ -3,10 +3,16 @@ title: 检查几何覆盖另一个
 linktitle: 检查几何覆盖另一个
 second_title: Aspose.GIS .NET API
 description: 了解如何利用 Aspose.GIS for .NET 高效处理地理数据、分析空间信息以及将地图功能集成到您的 .NET 应用程序中。
-type: docs
 weight: 15
 url: /zh/net/geometry-analysis/check-geometry-covers-another/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 检查几何覆盖另一个
+
 ## 介绍
 Aspose.GIS for .NET 是一个功能强大的库，为开发人员提供了在其 .NET 应用程序中高效处理地理数据的工具。无论您是构建地图应用程序、分析空间数据，还是将地理特征集成到您的软件中，Aspose.GIS 都提供了一套全面的功能来简化您的开发过程。
 ## 先决条件
@@ -74,3 +80,9 @@ Console.WriteLine(point.CoveredBy(line)); //真的
 Aspose.GIS for .NET 是 Aspose 开发的专有库，因此不接受外部开发人员的贡献。但是，您可以提供反馈和建议来改进库。
 ### Aspose.GIS for .NET 的更新频率是多少？
  Aspose.GIS for .NET 的更新会定期发布，以引入新功能、增强功能和错误修复。检查[网站](https://releases.aspose.com/gis/net/)了解最新版本。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

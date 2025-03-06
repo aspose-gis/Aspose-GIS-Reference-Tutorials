@@ -3,10 +3,16 @@ title: 다른 형상 커버 확인
 linktitle: 다른 형상 커버 확인
 second_title: Aspose.GIS .NET API
 description: Aspose.GIS for .NET을 활용하여 지리적 데이터로 효율적으로 작업하고, 공간 정보를 분석하고, 매핑 기능을 .NET 애플리케이션에 통합하는 방법을 알아보세요.
-type: docs
 weight: 15
 url: /ko/net/geometry-analysis/check-geometry-covers-another/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 다른 형상 커버 확인
+
 ## 소개
 .NET용 Aspose.GIS는 개발자에게 .NET 애플리케이션 내에서 지리적 데이터를 효율적으로 작업할 수 있는 도구를 제공하는 강력한 라이브러리입니다. 매핑 애플리케이션을 구축하든, 공간 데이터를 분석하든, 지리적 특징을 소프트웨어에 통합하든 Aspose.GIS는 개발 프로세스를 간소화할 수 있는 포괄적인 기능 세트를 제공합니다.
 ## 전제조건
@@ -74,3 +80,9 @@ Console.WriteLine(point.CoveredBy(line)); // 진실
 .NET용 Aspose.GIS는 Aspose가 개발한 독점 라이브러리이므로 외부 개발자의 기여는 허용되지 않습니다. 그러나 라이브러리 개선을 위한 피드백과 제안을 제공할 수 있습니다.
 ### .NET용 Aspose.GIS에 대한 업데이트는 얼마나 자주 출시됩니까?
  .NET용 Aspose.GIS 업데이트는 정기적으로 릴리스되어 새로운 기능, 개선 사항 및 버그 수정을 소개합니다. 을 체크 해봐[웹사이트](https://releases.aspose.com/gis/net/) 최신 릴리스의 경우.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

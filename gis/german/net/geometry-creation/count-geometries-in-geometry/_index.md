@@ -3,10 +3,16 @@ title: Zählen Sie Geometrien in der Geometrie mit Aspose.GIS
 linktitle: Zählen Sie Geometrien in der Geometrie
 second_title: Aspose.GIS .NET-API
 description: Erfahren Sie, wie Sie mit Aspose.GIS für .NET Geometrien in einer Geometrie zählen. Schritt-für-Schritt-Anleitung mit Codebeispielen für Entwickler.
-type: docs
 weight: 23
 url: /de/net/geometry-creation/count-geometries-in-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Zählen Sie Geometrien in der Geometrie mit Aspose.GIS
+
 ## Einführung
 Aspose.GIS für .NET ist ein leistungsstarkes Tool für Entwickler, die Geodatenfunktionen in ihre .NET-Anwendungen integrieren möchten. Unabhängig davon, ob Sie Kartierungssoftware, standortbasierte Dienste oder räumliche Analysetools erstellen, bietet Aspose.GIS einen umfassenden Satz an Funktionen, die Ihren Anforderungen gerecht werden. In diesem Tutorial erfahren Sie, wie Sie mit Aspose.GIS für .NET Geometrien innerhalb einer Geometrie zählen.
 ## Voraussetzungen
@@ -70,3 +76,9 @@ Ja, Aspose.GIS für .NET unterstützt eine Vielzahl von GIS-Dateiformaten, einsc
  Ja, Sie können eine kostenlose Testversion herunterladen[Webseite](https://releases.aspose.com/).
 ### Wo finde ich Unterstützung für Aspose.GIS für .NET?
  Unterstützung finden Sie auf der[Aspose.GIS-Forum](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

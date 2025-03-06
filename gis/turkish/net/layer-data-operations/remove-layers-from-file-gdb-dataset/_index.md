@@ -3,10 +3,16 @@ title: Katmanları Dosya GDB Veri Kümesinden Kaldırma
 linktitle: Katmanları Dosya GDB Veri Kümesinden Kaldırma
 second_title: Aspose.GIS .NET API'si
 description: Aspose.GIS for .NET ile GIS'i keşfedin! Dosya GDB veri kümelerinden katmanları adım adım kaldırmayı öğrenin. Sorunsuz bir mekansal veri deneyimi için hemen indirin.
-type: docs
 weight: 17
 url: /tr/net/layer-data-operations/remove-layers-from-file-gdb-dataset/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Katmanları Dosya GDB Veri Kümesinden Kaldırma
+
 ## giriiş
 Mekansal veri manipülasyonunu ve görselleştirmesini basitleştirmek için tasarlanmış güçlü bir araç seti olan Aspose.GIS for .NET ile Coğrafi Bilgi Sistemlerinin (GIS) tüm potansiyelini ortaya çıkarın. İster deneyimli bir geliştirici olun ister bir GIS meraklısı olun, bu eğitim Aspose.GIS for .NET'i kullanarak Dosya Geodatabase (GDB) veri kümesinden katmanları kaldırma sürecinde size rehberlik edecektir.
 ## Önkoşullar
@@ -71,3 +77,9 @@ Evet, Aspose.GIS çeşitli GIS formatlarıyla birlikte çalışabilirliği deste
  Evet, geçici lisans satın alınabilir[Burada](https://purchase.aspose.com/temporary-license/).
 ### Uygulama için herhangi bir örnek veri seti var mı?
 Örnek veri kümeleri ve ek kaynaklar için Aspose.GIS belgelerini inceleyin.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

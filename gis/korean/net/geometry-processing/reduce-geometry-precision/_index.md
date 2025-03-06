@@ -3,10 +3,16 @@ title: .NET에서 Aspose.GIS를 사용하여 형상 정밀도 줄이기
 linktitle: 형상 정밀도 감소
 second_title: Aspose.GIS .NET API
 description: 향상된 성능과 메모리 최적화를 위해 Aspose.GIS를 사용하여 .NET GIS 애플리케이션에서 형상 정밀도를 효율적으로 줄이는 방법을 알아보세요.
-type: docs
 weight: 15
 url: /ko/net/geometry-processing/reduce-geometry-precision/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# .NET에서 Aspose.GIS를 사용하여 형상 정밀도 줄이기
+
 ## 소개
 이 튜토리얼에서는 .NET용 Aspose.GIS를 사용하여 형상 정밀도를 줄이는 방법을 살펴보겠습니다. GIS 애플리케이션에서 대규모 데이터 세트를 처리할 때 메모리 사용을 최적화하고 성능을 향상하려면 형상 정밀도 감소가 중요합니다. 포괄적인 가이드를 제공하기 위해 각 예를 여러 단계로 분류하겠습니다.
 ## 전제조건
@@ -81,3 +87,9 @@ Console.WriteLine("{0}, {1}", line[1].X, line[1].Y);
 예, 기하학 정밀도를 줄이면 특히 대규모 데이터 세트로 작업하거나 공간 작업을 수행할 때 성능이 크게 향상될 수 있습니다.
 ### .NET용 Aspose.GIS에 대한 지원은 어디서 받을 수 있나요?
  다음을 방문하여 .NET용 Aspose.GIS에 대한 지원을 받을 수 있습니다.[Aspose.GIS 포럼](https://forum.aspose.com/c/gis/33) 또는 사용 가능한 문서에 액세스[여기](https://reference.aspose.com/gis/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

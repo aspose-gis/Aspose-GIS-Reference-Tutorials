@@ -3,10 +3,16 @@ title: Erstellen Sie mit Aspose.GIS ein Polygon mit Lochgeometrie
 linktitle: Erstellen Sie ein Polygon mit Lochgeometrie
 second_title: Aspose.GIS .NET-API
 description: Erfahren Sie, wie Sie mit Aspose.GIS für .NET Polygone mit Lochgeometrie erstellen. Schritt-für-Schritt-Anleitung mit Codebeispielen.
-type: docs
 weight: 13
 url: /de/net/geometry-creation/create-polygon-with-hole-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Erstellen Sie mit Aspose.GIS ein Polygon mit Lochgeometrie
+
 ## Einführung
 In diesem Tutorial führen wir den Prozess der Erstellung eines Polygons mit Lochgeometrie mithilfe von Aspose.GIS für .NET durch. Aspose.GIS ist eine leistungsstarke Bibliothek, die es Entwicklern ermöglicht, in ihren .NET-Anwendungen mit Geodaten zu arbeiten. 
 ## Voraussetzungen
@@ -66,3 +72,9 @@ Aspose.GIS ist eine .NET-Bibliothek, die es Entwicklern ermöglicht, mit Geodate
  Unterstützung für Aspose.GIS finden Sie auf der[Aspose.GIS-Forum](https://forum.aspose.com/c/gis/33).
 ### 5. Wie kann ich eine temporäre Lizenz für Aspose.GIS erhalten?
  Eine temporäre Lizenz für Aspose.GIS erhalten Sie bei[Hier](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

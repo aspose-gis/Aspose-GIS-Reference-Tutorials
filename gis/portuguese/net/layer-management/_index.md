@@ -3,10 +3,16 @@ title: Gerenciamento de camadas
 linktitle: Gerenciamento de camadas
 second_title: API Aspose.GIS .NET
 description: Desbloqueie o potencial do desenvolvimento geoespacial com os tutoriais do Aspose.GIS for .NET. Crie, gerencie e manipule facilmente conjuntos de dados GIS.
-type: docs
 weight: 24
 url: /pt/net/layer-management/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Gerenciamento de camadas
+
 ## Introdução
 
 Aspose.GIS for .NET capacita os desenvolvedores a mergulhar no emocionante mundo do desenvolvimento geoespacial. Nesta lista abrangente de tutoriais, exploramos vários tutoriais de gerenciamento de camadas que o orientam no desbloqueio de todo o potencial do Aspose.GIS para .NET. Desde a criação de novos conjuntos de dados do File GDB até a manipulação de dados espaciais, estes tutoriais cobrem tudo.
@@ -68,3 +74,9 @@ Desbloqueie a magia geoespacial com Aspose.GIS for .NET! A camada de corte apres
 Explore o poder do Aspose.GIS for .NET na manipulação de dados espaciais. Filtre recursos sem esforço, aprimore aplicativos GIS e aumente a produtividade.
 ### [Extraia recursos para GeoJSON](./extract-features-to-geojson/)
 Explore o guia passo a passo sobre como usar Aspose.GIS for .NET para extrair recursos para GeoJSON. Aproveite o poder do GIS com facilidade! 
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

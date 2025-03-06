@@ -3,10 +3,16 @@ title: Aspose.GIS의 파일 GDB 레이어에서 개체 ID를 읽습니다.
 linktitle: 파일 GDB 계층에서 객체 ID 읽기
 second_title: Aspose.GIS .NET API
 description: 지리공간 데이터 처리를 효율적으로 처리하기 위해 .NET용 Aspose.GIS를 활용하는 방법을 알아보세요. 포괄적인 튜토리얼과 전문가의 안내가 제공됩니다.
-type: docs
 weight: 16
 url: /ko/net/layer-data-operations/read-object-id-from-file-gdb-layer/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS의 파일 GDB 레이어에서 개체 ID를 읽습니다.
+
 ## 소개
 .NET용 Aspose.GIS 마스터링에 대한 종합 가이드에 오신 것을 환영합니다! Aspose.GIS는 .NET 프레임워크 내에서 지리공간 데이터 처리 및 시각화 작업을 효율적으로 처리하도록 설계된 강력한 라이브러리입니다. 숙련된 개발자이거나 지리 공간 프로그래밍의 여정을 막 시작하는 사람이든 이 튜토리얼은 Aspose.GIS의 잠재력을 최대한 활용하기 위해 알아야 할 모든 것을 안내합니다.
 ## 전제조건
@@ -74,3 +80,9 @@ Aspose.GIS에 대해 문제가 발생하거나 질문이 있는 경우 다음을
 예, 테스트 및 평가 목적으로 Aspose 웹사이트에서 임시 라이선스를 얻을 수 있습니다.
 ### .NET용 Aspose.GIS에 대한 포괄적인 문서는 어디에서 찾을 수 있습니까?
  당신은[선적 서류 비치](https://reference.aspose.com/gis/net/) Aspose.GIS API 및 기능 사용에 대한 자세한 내용은
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Gestione dei livelli
 linktitle: Gestione dei livelli
 second_title: API Aspose.GIS .NET
 description: Sblocca il potenziale dello sviluppo geospaziale con i tutorial Aspose.GIS per .NET. Crea, gestisci e manipola facilmente set di dati GIS.
-type: docs
 weight: 24
 url: /it/net/layer-management/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Gestione dei livelli
+
 ## introduzione
 
 Aspose.GIS per .NET consente agli sviluppatori di approfondire l'entusiasmante mondo dello sviluppo geospaziale. In questo elenco completo di tutorial, esploriamo vari tutorial sulla gestione dei livelli che ti guidano attraverso lo sblocco di tutto il potenziale di Aspose.GIS per .NET. Dalla creazione di nuovi set di dati GDB di file alla manipolazione dei dati spaziali, questi tutorial coprono tutto.
@@ -68,3 +74,9 @@ Sblocca la magia geospaziale con Aspose.GIS per .NET! Ritaglia le funzionalità 
 Esplora la potenza di Aspose.GIS per .NET nella manipolazione dei dati spaziali. Filtra le funzionalità senza sforzo, migliora le applicazioni GIS e aumenta la produttività.
 ### [Estrai funzionalità in GeoJSON](./extract-features-to-geojson/)
 Esplora la guida passo passo sull'utilizzo di Aspose.GIS per .NET per estrarre funzionalità in GeoJSON. Sfrutta la potenza del GIS con facilità! 
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

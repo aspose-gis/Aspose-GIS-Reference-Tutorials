@@ -3,10 +3,16 @@ title: Periksa Geometri Berisi Yang Lain
 linktitle: Periksa Geometri Berisi Yang Lain
 second_title: Aspose.GIS .NET API
 description: Jelajahi Aspose.GIS untuk .NET, perpustakaan tangguh untuk integrasi data geospasial yang lancar dalam aplikasi .NET Anda.
-type: docs
 weight: 14
 url: /id/net/geometry-analysis/check-geometry-contains-another/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Periksa Geometri Berisi Yang Lain
+
 ## Perkenalan
 Aspose.GIS untuk .NET adalah perpustakaan canggih yang memungkinkan pengembang bekerja dengan data geospasial secara lancar dalam aplikasi .NET mereka. Baik Anda sedang membangun aplikasi pemetaan, melakukan analisis geospasial, atau mengintegrasikan fitur berbasis lokasi ke dalam perangkat lunak Anda, Aspose.GIS menyederhanakan proses dengan menyediakan API intuitif dan fungsionalitas yang kuat.
 ## Prasyarat
@@ -85,3 +91,9 @@ J: Aspose.GIS secara rutin merilis pembaruan untuk meningkatkan kinerja, menamba
 A: Ya, Anda dapat bergabung di forum komunitas Aspose.GIS[Di Sini](https://forum.aspose.com/c/gis/33) untuk terhubung dengan pengguna lain, mengajukan pertanyaan, dan berbagi pengalaman Anda.
 ### Q5: Dapatkah saya mencoba Aspose.GIS sebelum membeli?
  A: Tentu saja, Anda dapat menjelajahi Aspose.GIS dengan mengunduh uji coba gratisnya[Di Sini](https://releases.aspose.com/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

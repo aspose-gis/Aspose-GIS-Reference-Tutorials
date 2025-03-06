@@ -3,10 +3,16 @@ title: รับค่าคุณสมบัติคุณลักษณะ
 linktitle: รับค่าคุณสมบัติคุณลักษณะ
 second_title: Aspose.GIS .NET API
 description: สำรวจ Aspose.GIS สำหรับ .NET – สุดยอดเครื่องมือสำหรับการบูรณาการข้อมูล GIS ได้อย่างราบรื่น ดาวน์โหลดทดลองใช้ฟรีตอนนี้! #Aspose #GIS #.NET
-type: docs
 weight: 12
 url: /th/net/layer-interaction-and-data-access/get-feature-attribute-value/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# รับค่าคุณสมบัติคุณลักษณะ
+
 ## การแนะนำ
 ยินดีต้อนรับสู่โลกของ Aspose.GIS สำหรับ .NET ไลบรารีอันทรงพลังที่ช่วยให้นักพัฒนา .NET สามารถทำงานกับข้อมูลระบบสารสนเทศทางภูมิศาสตร์ (GIS) ได้อย่างราบรื่น ไม่ว่าคุณจะเป็นนักพัฒนาที่มีประสบการณ์หรือเพิ่งเริ่มต้นการเดินทางสู่ GIS บทช่วยสอนนี้จะแนะนำคุณตลอดกระบวนการดึงค่าคุณลักษณะของคุณลักษณะโดยใช้ Aspose.GIS สำหรับ .NET
 ## ข้อกำหนดเบื้องต้น
@@ -80,3 +86,9 @@ for (int i = 0; i < layer.Count; i++)
  ตอบ: เข้าร่วมการสนทนาเกี่ยวกับ[ฟอรัม Aspose.GIS](https://forum.aspose.com/c/gis/33) เพื่อขอความช่วยเหลือและเชื่อมต่อกับผู้ใช้รายอื่น
 ### ถาม: Aspose.GIS มีเวอร์ชันทดลองใช้ฟรีหรือไม่
  ตอบ: แน่นอน! คุณสามารถสำรวจคุณสมบัติของ Aspose.GIS ได้โดยดาวน์โหลดรุ่นทดลองใช้ฟรีจาก[ที่นี่](https://releases.aspose.com/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

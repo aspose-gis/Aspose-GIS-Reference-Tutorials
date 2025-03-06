@@ -3,10 +3,16 @@ title: 設定圖層空間參考系統
 linktitle: 設定圖層空間參考系統
 second_title: Aspose.GIS .NET API
 description: 使用 Aspose.GIS for .NET 掌握圖層空間參考系統設定。透過此逐步教程提升您的 GIS 專案。
-type: docs
 weight: 19
 url: /zh-hant/net/layer-data-operations/set-layer-spatial-reference-system/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 設定圖層空間參考系統
+
 ## 介紹
 在廣闊的地理資訊系統 (GIS) 領域中，Aspose.GIS for .NET 作為開發人員的強大且多功能的工具脫穎而出。本教學將引導您完成使用 Aspose.GIS for .NET 設定圖層空間參考系統的流程。無論您是經驗豐富的開發人員還是 GIS 開發新手，本逐步指南都將協助您利用 Aspose.GIS 的強大功能來增強您的空間資料處理能力。
 ## 先決條件
@@ -72,3 +78,9 @@ using (VectorLayer layer = VectorLayer.Open(path, Drivers.Shapefile))
 當然！您可以下載免費試用版[這裡](https://releases.aspose.com/).
 ### 我可以在哪裡尋求 Aspose.GIS 相關查詢的支援？
 如需任何支援或疑問，請訪問[Aspose.GIS論壇](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

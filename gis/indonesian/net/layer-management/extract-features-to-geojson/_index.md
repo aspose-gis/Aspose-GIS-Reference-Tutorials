@@ -3,10 +3,16 @@ title: Ekstrak Fitur ke GeoJSON
 linktitle: Ekstrak Fitur ke GeoJSON
 second_title: Aspose.GIS .NET API
 description: Jelajahi panduan langkah demi langkah tentang penggunaan Aspose.GIS untuk .NET guna mengekstrak fitur ke GeoJSON. Manfaatkan kekuatan GIS dengan mudah! #Asumsikan #GIS
-type: docs
 weight: 23
 url: /id/net/layer-management/extract-features-to-geojson/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Ekstrak Fitur ke GeoJSON
+
 ## Perkenalan
 Selamat datang di tutorial langkah demi langkah kami tentang mengekstraksi fitur ke GeoJSON menggunakan Aspose.GIS untuk .NET! Baik Anda seorang pengembang berpengalaman atau baru memulai perjalanan Anda dalam pemrograman GIS, panduan ini akan memandu Anda melalui prosesnya, memastikan Anda memanfaatkan kekuatan penuh Aspose.GIS untuk .NET.
 ## Prasyarat
@@ -87,3 +93,9 @@ Dalam tutorial ini, kami menjelajahi proses mengekstraksi fitur ke GeoJSON mengg
  Ya, Anda dapat menemukan uji coba gratis[Di Sini](https://releases.aspose.com/).
 ### T: Di mana saya bisa membeli Aspose.GIS untuk .NET?
  Anda dapat membeli produknya[Di Sini](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

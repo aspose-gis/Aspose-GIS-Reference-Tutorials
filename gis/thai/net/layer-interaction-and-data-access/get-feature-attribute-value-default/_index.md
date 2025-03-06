@@ -3,10 +3,16 @@ title: รับค่าคุณสมบัติคุณสมบัติ 
 linktitle: รับค่าคุณสมบัติคุณสมบัติ (ค่าเริ่มต้น)
 second_title: Aspose.GIS .NET API
 description: ปลดล็อกพลังของ Aspose.GIS สำหรับ .NET! ดึงข้อมูลและจัดการค่าคุณลักษณะคุณลักษณะได้อย่างง่ายดายด้วยคำแนะนำทีละขั้นตอนนี้ ดาวน์โหลดรุ่นทดลองใช้ของคุณทันที!
-type: docs
 weight: 14
 url: /th/net/layer-interaction-and-data-access/get-feature-attribute-value-default/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# รับค่าคุณสมบัติคุณสมบัติ (ค่าเริ่มต้น)
+
 ## การแนะนำ
 ยินดีต้อนรับสู่โลกของ Aspose.GIS สำหรับ .NET! ในคู่มือที่ครอบคลุมนี้ เราจะเจาะลึกถึงความซับซ้อนของการเรียกค่าคุณลักษณะคุณลักษณะโดยใช้ความสามารถอันทรงพลังของ Aspose.GIS ไม่ว่าคุณจะเป็นนักพัฒนาที่มีประสบการณ์หรือเพิ่งเริ่มต้น บทช่วยสอนนี้จะให้คำแนะนำแบบทีละขั้นตอน เพื่อให้แน่ใจว่าคุณจะสามารถใช้ประโยชน์จากเครื่องมือที่น่าทึ่งนี้ได้อย่างเต็มศักยภาพ
 ## ข้อกำหนดเบื้องต้น
@@ -97,3 +103,9 @@ using (var layer = Drivers.GeoJson.CreateLayer(dataDir + "data2_out.json"))
  ใช่ คุณสามารถสำรวจ Aspose.GIS ได้ด้วยการทดลองใช้ฟรี ดาวน์โหลดได้[ที่นี่](https://releases.aspose.com/).
 ### ฉันจะขอรับใบอนุญาตชั่วคราวเพื่อการทดสอบได้อย่างไร
  สำหรับใบอนุญาตชั่วคราว โปรดไปที่[ที่นี่](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

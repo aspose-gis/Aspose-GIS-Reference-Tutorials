@@ -3,10 +3,16 @@ title: Xác định lưới chính xác cho lớp GDB tệp trong Aspose.GIS
 linktitle: Xác định lưới chính xác cho lớp GDB tệp
 second_title: API Aspose.GIS .NET
 description: Tìm hiểu cách xác định lưới chính xác cho lớp Tệp GDB bằng Aspose.GIS cho .NET. Thực hiện theo hướng dẫn từng bước của chúng tôi.
-type: docs
 weight: 21
 url: /vi/net/layer-data-operations/define-precision-grid-for-file-gdb-layer/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Xác định lưới chính xác cho lớp GDB tệp trong Aspose.GIS
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách xác định lưới chính xác cho lớp Cơ sở dữ liệu địa lý tệp (GDB) bằng Aspose.GIS cho .NET. Aspose.GIS là một thư viện .NET mạnh mẽ cung cấp chức năng không gian địa lý toàn diện để hoạt động với nhiều định dạng tệp GIS khác nhau.
 ## Điều kiện tiên quyết
@@ -88,3 +94,9 @@ Có, bạn có thể thực hiện các thao tác không gian như đệm, giao 
 Có, Aspose.GIS cho .NET cung cấp hỗ trợ cho các phép biến đổi tọa độ giữa các hệ quy chiếu không gian khác nhau.
 ### Có phiên bản dùng thử cho Aspose.GIS cho .NET không?
 Có, bạn có thể tải xuống phiên bản dùng thử miễn phí của Aspose.GIS cho .NET từ[trang mạng](https://releases.aspose.com/gis/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

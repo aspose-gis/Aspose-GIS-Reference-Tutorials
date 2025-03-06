@@ -3,10 +3,16 @@ title: Tạo đa giác với hình học lỗ bằng Aspose.GIS
 linktitle: Tạo đa giác với hình học lỗ
 second_title: API Aspose.GIS .NET
 description: Tìm hiểu cách tạo đa giác có hình học lỗ bằng Aspose.GIS cho .NET. Hướng dẫn từng bước với các ví dụ về mã.
-type: docs
 weight: 13
 url: /vi/net/geometry-creation/create-polygon-with-hole-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Tạo đa giác với hình học lỗ bằng Aspose.GIS
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ tìm hiểu quy trình tạo đa giác có hình dạng lỗ bằng Aspose.GIS cho .NET. Aspose.GIS là một thư viện mạnh mẽ cho phép các nhà phát triển làm việc với dữ liệu không gian địa lý trong các ứng dụng .NET của họ. 
 ## Điều kiện tiên quyết
@@ -66,3 +72,9 @@ Aspose.GIS là thư viện .NET cho phép các nhà phát triển làm việc v�
  Bạn có thể tìm thấy sự hỗ trợ cho Aspose.GIS trên[Diễn đàn Aspose.GIS](https://forum.aspose.com/c/gis/33).
 ### 5. Làm cách nào tôi có thể nhận được giấy phép tạm thời cho Aspose.GIS?
  Bạn có thể nhận được giấy phép tạm thời cho Aspose.GIS từ[đây](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

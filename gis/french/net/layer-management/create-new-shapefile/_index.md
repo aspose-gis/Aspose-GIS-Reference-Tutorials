@@ -3,10 +3,16 @@ title: Créer un nouveau fichier de formes
 linktitle: Créer un nouveau fichier de formes
 second_title: API Aspose.GIS .NET
 description: Découvrez comment créer un nouveau fichier de formes à l'aide d'Aspose.GIS pour .NET. Suivez notre guide étape par étape et débloquez la puissance de la manipulation des données spatiales.
-type: docs
 weight: 12
 url: /fr/net/layer-management/create-new-shapefile/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Créer un nouveau fichier de formes
+
 ## Introduction
 Si vous vous lancez dans le développement de systèmes d'information géographique (SIG) avec .NET, Aspose.GIS est votre solution incontournable. Cette puissante bibliothèque permet aux développeurs de travailler de manière transparente avec des données spatiales. Dans ce didacticiel, nous vous guiderons tout au long du processus de création d'un nouveau fichier de formes à l'aide d'Aspose.GIS pour .NET.
 ## Conditions préalables
@@ -80,3 +86,9 @@ Aspose.GIS prend principalement en charge .NET, mais des versions sont égalemen
  Obtenez votre permis temporaire[ici](https://purchase.aspose.com/temporary-license/).
 ### Q : Où puis-je acheter Aspose.GIS pour .NET ?
  Vous pouvez acheter la bibliothèque[ici](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

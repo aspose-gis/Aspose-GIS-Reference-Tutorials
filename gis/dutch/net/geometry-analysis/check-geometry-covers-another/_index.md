@@ -3,10 +3,16 @@ title: Controleer of geometrie een ander omvat
 linktitle: Controleer of geometrie een ander omvat
 second_title: Aspose.GIS .NET-API
 description: Leer hoe u Aspose.GIS voor .NET kunt gebruiken om efficiënt met geografische gegevens te werken, ruimtelijke informatie te analyseren en kaartfuncties in uw .NET-toepassingen te integreren.
-type: docs
 weight: 15
 url: /nl/net/geometry-analysis/check-geometry-covers-another/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Controleer of geometrie een ander omvat
+
 ## Invoering
 Aspose.GIS voor .NET is een krachtige bibliotheek die ontwikkelaars tools biedt om efficiënt met geografische gegevens te werken binnen hun .NET-applicaties. Of u nu een kaarttoepassing bouwt, ruimtelijke gegevens analyseert of geografische kenmerken in uw software integreert, Aspose.GIS biedt een uitgebreide reeks functionaliteiten om uw ontwikkelingsproces te stroomlijnen.
 ## Vereisten
@@ -74,3 +80,9 @@ Ja, Aspose.GIS voor .NET ondersteunt een breed scala aan GIS-formaten, waaronder
 Aspose.GIS voor .NET is een eigen bibliotheek ontwikkeld door Aspose, dus bijdragen van externe ontwikkelaars worden niet geaccepteerd. U kunt echter wel feedback en suggesties geven om de bibliotheek te verbeteren.
 ### Hoe vaak worden er updates uitgebracht voor Aspose.GIS voor .NET?
  Er worden regelmatig updates voor Aspose.GIS voor .NET uitgebracht om nieuwe functies, verbeteringen en bugfixes te introduceren. Controleer de[website](https://releases.aspose.com/gis/net/) voor de nieuwste uitgaven.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

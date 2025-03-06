@@ -3,10 +3,16 @@ title: Переведите геометрию из WKT с помощью Aspose
 linktitle: Перевести геометрию из WKT
 second_title: API Aspose.GIS .NET
 description: Узнайте, как перевести геометрию из общеизвестного текста с помощью Aspose.GIS для .NET. Пошаговое руководство для бесшовной интеграции.
-type: docs
 weight: 21
 url: /ru/net/geometry-processing/translate-geometry-from-wkt/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Переведите геометрию из WKT с помощью Aspose.GIS в .NET.
+
 ## Введение
 В этом уроке мы углубимся в процесс перевода геометрии из Well-Known Text (WKT) с использованием Aspose.GIS для .NET. Aspose.GIS — это мощный API .NET, который позволяет разработчикам легко работать с геопространственными данными. Независимо от того, являетесь ли вы опытным разработчиком или только начинаете заниматься геопространственным программированием, это руководство шаг за шагом проведет вас через этот процесс.
 ## Предварительные условия
@@ -48,3 +54,9 @@ Console.WriteLine(line.Count); // Выход: 3
  Вы можете найти документацию[здесь](https://reference.aspose.com/gis/net/).
 ### Как я могу получить поддержку Aspose.GIS для .NET?
  Вы можете получить поддержку на форуме Aspose.GIS.[здесь](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

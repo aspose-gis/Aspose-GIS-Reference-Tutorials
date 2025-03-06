@@ -3,10 +3,16 @@ title: विशेषता के आधार पर सुविधाओं
 linktitle: विशेषता के आधार पर सुविधाओं को फ़िल्टर करें
 second_title: Aspose.GIS .NET एपीआई
 description: स्थानिक डेटा हेरफेर में .NET के लिए Aspose.GIS की शक्ति का अन्वेषण करें। सुविधाओं को सहजता से फ़िल्टर करें, जीआईएस अनुप्रयोगों को बढ़ाएं और उत्पादकता बढ़ाएं।
-type: docs
 weight: 21
 url: /hi/net/layer-management/filter-features-by-attribute/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# विशेषता के आधार पर सुविधाओं को फ़िल्टर करें
+
 ## परिचय
 भौगोलिक सूचना प्रणाली (जीआईएस) की गतिशील दुनिया में, .NET के लिए Aspose.GIS एक शक्तिशाली उपकरण के रूप में सामने आता है जो डेवलपर्स को स्थानिक डेटा में निर्बाध रूप से हेरफेर और विश्लेषण करने का अधिकार देता है। चाहे आप एक अनुभवी जीआईएस पेशेवर हों या संभावनाओं का पता लगाने के लिए उत्सुक एक जिज्ञासु डेवलपर हों, यह ट्यूटोरियल आपको .NET वातावरण में Aspose.GIS का उपयोग करने के आवश्यक चरणों के माध्यम से मार्गदर्शन करेगा।
 ## आवश्यक शर्तें
@@ -57,3 +63,9 @@ foreach (Feature feature in layer.WhereGreater("dob", new DateTime(1982, 1, 1, 0
  एक अस्थायी लाइसेंस प्राप्त करें[यहाँ](https://purchase.aspose.com/temporary-license/).
 ### क्या अन्य Aspose.GIS सुविधाओं के लिए चरण-दर-चरण ट्यूटोरियल उपलब्ध है?
  हाँ, आप इस पर अधिक ट्यूटोरियल और दस्तावेज़ पा सकते हैं[Aspose.GIS संदर्भ](https://reference.aspose.com/gis/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

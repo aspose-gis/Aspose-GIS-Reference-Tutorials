@@ -3,10 +3,16 @@ title: Tentukan ID Objek dan Nama Bidang Geometri
 linktitle: Tentukan ID Objek dan Nama Bidang Geometri
 second_title: Aspose.GIS .NET API
 description: Jelajahi keajaiban GIS dengan Aspose.GIS untuk .NET! Kelola data geospasial dengan mudah. Unduh sekarang dan keluarkan kekuatan kecerdasan spasial.
-type: docs
 weight: 20
 url: /id/net/layer-data-operations/specify-object-id-and-geometry-field-names/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Tentukan ID Objek dan Nama Bidang Geometri
+
 ## Perkenalan
 Memulai perjalanan ke dunia Sistem Informasi Geografis (GIS) menggunakan Aspose.GIS untuk .NET membuka banyak kemungkinan bagi pengembang dan peminat. Pustaka canggih ini memberdayakan Anda untuk menangani data geospasial dengan mudah. Dalam tutorial ini, kami akan memandu Anda melalui proses menentukan ID Objek dan nama bidang Geometri, yang meletakkan dasar bagi upaya GIS Anda.
 ## Prasyarat
@@ -74,3 +80,9 @@ J: Ya, Aspose.GIS untuk .NET cocok untuk aplikasi desktop dan web, menyediakan k
 J: Aspose.GIS untuk .NET mendukung berbagai sistem referensi spasial, memberikan fleksibilitas untuk kumpulan data geografis yang berbeda.
 ### T: Di mana saya bisa mencari bantuan atau mendiskusikan pertanyaan terkait Aspose.GIS?
  J: Kunjungi forum Aspose.GIS[Di Sini](https://forum.aspose.com/c/gis/33) untuk dukungan dan diskusi.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

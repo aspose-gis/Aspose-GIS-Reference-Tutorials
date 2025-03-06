@@ -3,10 +3,16 @@ title: 別のジオメトリ カバーを確認してください
 linktitle: 別のジオメトリ カバーを確認してください
 second_title: Aspose.GIS .NET API
 description: Aspose.GIS for .NET を利用して地理データを効率的に操作し、空間情報を分析し、マッピング機能を .NET アプリケーションに統合する方法を学びます。
-type: docs
 weight: 15
 url: /ja/net/geometry-analysis/check-geometry-covers-another/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 別のジオメトリ カバーを確認してください
+
 ## 導入
 Aspose.GIS for .NET は、.NET アプリケーション内で地理データを効率的に操作するためのツールを開発者に提供する強力なライブラリです。マッピング アプリケーションの構築、空間データの分析、ソフトウェアへの地理的フィーチャの統合のいずれの場合でも、Aspose.GIS は開発プロセスを合理化するための包括的な機能セットを提供します。
 ## 前提条件
@@ -74,3 +80,9 @@ Console.WriteLine(point.CoveredBy(line)); //真実
 Aspose.GIS for .NET は、Aspose によって開発された独自のライブラリであるため、外部開発者からの貢献は受け入れられません。ただし、ライブラリを改善するためにフィードバックや提案を提供することはできます。
 ### Aspose.GIS for .NET の更新プログラムはどのくらいの頻度でリリースされますか?
  Aspose.GIS for .NET の更新は定期的にリリースされ、新機能、拡張機能、バグ修正が導入されています。チェックしてください[Webサイト](https://releases.aspose.com/gis/net/)最新のリリースについては。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

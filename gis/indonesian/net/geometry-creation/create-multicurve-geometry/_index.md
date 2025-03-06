@@ -3,10 +3,16 @@ title: Buat Geometri MultiCurve dengan Aspose.GIS untuk .NET
 linktitle: Buat Geometri MultiCurve
 second_title: Aspose.GIS .NET API
 description: Pelajari cara membuat geometri MultiCurve di .NET dengan Aspose.GIS untuk representasi dan analisis data spasial yang efisien.
-type: docs
 weight: 17
 url: /id/net/geometry-creation/create-multicurve-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Buat Geometri MultiCurve dengan Aspose.GIS untuk .NET
+
 ## Perkenalan
 Dalam bidang pengembangan Sistem Informasi Geografis (GIS) menggunakan .NET, Aspose.GIS menonjol sebagai perangkat yang ampuh. Baik Anda seorang pengembang berpengalaman atau baru memasuki dunia GIS, Aspose.GIS untuk .NET menyediakan serangkaian fungsi komprehensif untuk bekerja dengan data spasial secara efisien. Artikel ini berfungsi sebagai panduan langkah demi langkah untuk memanfaatkan salah satu fiturnya: membuat geometri MultiCurve.
 ## Prasyarat
@@ -82,3 +88,9 @@ Ya, Aspose.GIS untuk .NET menawarkan berbagai kemampuan analisis spasial, termas
 Ya, Anda dapat mengunduh Aspose.GIS versi uji coba gratis untuk .NET dari[Situs web Aspose.GIS](https://releases.aspose.com/gis/net/) untuk menjelajahi fitur-fiturnya sebelum melakukan pembelian.
 ### Bagaimana saya bisa mendapatkan bantuan jika saya mengalami masalah saat menggunakan Aspose.GIS untuk .NET?
 Anda dapat mencari bantuan dari forum komunitas Aspose.GIS atau mengakses sumber daya dukungan yang disediakan oleh Aspose.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

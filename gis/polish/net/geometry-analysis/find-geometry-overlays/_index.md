@@ -3,10 +3,16 @@ title: Opanowanie nakładek geometrycznych za pomocą Aspose.GIS dla .NET
 linktitle: Znajdź nakładki geometryczne
 second_title: Aspose.GIS .NET API
 description: Dowiedz się, jak wykonywać operacje nakładania geometrycznego przy użyciu Aspose.GIS dla .NET. Opanuj operacje na przecięciach, sumach, różnicach i różnicach symetrycznych.
-type: docs
 weight: 16
 url: /pl/net/geometry-analysis/find-geometry-overlays/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Opanowanie nakładek geometrycznych za pomocą Aspose.GIS dla .NET
+
 ## Wstęp
 dziedzinie systemów informacji geograficznej (GIS) operacje nakładania mają fundamentalne znaczenie dla analizy przestrzennej. Umożliwiają porównywanie i łączenie różnych zbiorów danych przestrzennych w celu uzyskania cennych spostrzeżeń. Aspose.GIS dla .NET zapewnia solidną funkcjonalność do wydajnego wykonywania nakładek geometrycznych. W tym samouczku zajmiemy się różnymi operacjami nakładek, takimi jak przecięcie, suma, różnica i różnica symetryczna, przy użyciu Aspose.GIS dla .NET.
 ## Warunki wstępne
@@ -108,3 +114,9 @@ Tak, Aspose.GIS dla .NET może być używany zarówno w projektach komercyjnych,
  Tak, dostępne są licencje tymczasowe do celów testowania i oceny. Można je uzyskać od[Tutaj](https://purchase.aspose.com/temporary-license/).
 ### P: Czy mogę kupić Aspose.GIS bezpośrednio dla .NET?
  Tak, możesz kupić Aspose.GIS dla .NET na stronie internetowej[Tutaj](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

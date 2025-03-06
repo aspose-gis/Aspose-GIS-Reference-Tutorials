@@ -3,10 +3,16 @@ title: Tüm Özellik Öznitelik Değerlerini Al
 linktitle: Tüm Özellik Öznitelik Değerlerini Al
 second_title: Aspose.GIS .NET API'si
 description: Aspose.GIS for .NET ile coğrafi gelişimi keşfedin! Özellik öznitelik değerlerini sorunsuz bir şekilde alın. Uzamsal kodlama macerası için hemen indirin.
-type: docs
 weight: 15
 url: /tr/net/layer-interaction-and-data-access/get-all-feature-attribute-values/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Tüm Özellik Öznitelik Değerlerini Al
+
 ## giriiş
 Aspose.GIS for .NET ile mekansal geliştirme dünyasına hoş geldiniz! Bu güçlü kitaplık, geliştiricilerin GIS işlevlerini .NET uygulamalarına sorunsuz bir şekilde entegre etmelerine olanak tanıyarak mekansal veri işlemeyi çocuk oyuncağı haline getirir. Bu kapsamlı eğitimde, temel bir hususu inceleyeceğiz: özelliklerden özellik değerlerinin alınması. Hadi dalalım!
 ## Önkoşullar
@@ -84,3 +90,9 @@ Kesinlikle! Aspose.GIS, Shapefile, GeoJSON ve daha fazlası dahil olmak üzere �
  Test amacıyla geçici bir lisans alabilirsiniz[Burada](https://purchase.aspose.com/temporary-license/).
 ### Aspose.GIS'in ayrıntılı belgelerini nerede bulabilirim?
  Kapsamlı belgeler mevcuttur[Burada](https://reference.aspose.com/gis/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Verwandeln Sie Polygone in Linien mit Aspose.GIS für .NET
 linktitle: Ersetzen Sie Polygone durch Linien
 second_title: Aspose.GIS .NET-API
 description: Erfahren Sie, wie Sie mit Aspose.GIS für .NET Polygone durch Linien ersetzen. Verbessern Sie mühelos Ihre Fähigkeiten zur Bearbeitung von GIS-Daten.
-type: docs
 weight: 16
 url: /de/net/geometry-processing/replace-polygons-with-lines/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Verwandeln Sie Polygone in Linien mit Aspose.GIS für .NET
+
 ## Einführung
 In der Welt der Entwicklung geografischer Informationssysteme (GIS) sticht Aspose.GIS für .NET als leistungsstarkes Toolset für die Arbeit mit Geodaten hervor. Unabhängig davon, ob Sie ein erfahrener Entwickler sind oder gerade erst mit der GIS-Programmierung beginnen, bietet Aspose.GIS für .NET umfassende Funktionen zur effizienten Bearbeitung und Analyse geografischer Daten.
 ## Voraussetzungen
@@ -54,3 +60,9 @@ Ja, Aspose.GIS für .NET unterstützt das Lesen und Schreiben verschiedener GIS-
  Ja, Sie können eine temporäre Lizenz erwerben bei[Hier](https://purchase.aspose.com/temporary-license/).
 ### Ist Aspose.GIS für .NET sowohl für Anfänger als auch für erfahrene Entwickler geeignet?
 Absolut, Aspose.GIS für .NET richtet sich an Entwickler aller Ebenen und bietet umfassende Dokumentation und Support.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

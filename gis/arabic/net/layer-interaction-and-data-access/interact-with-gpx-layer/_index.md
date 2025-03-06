@@ -3,10 +3,16 @@ title: التفاعل مع طبقة GPX
 linktitle: التفاعل مع طبقة GPX
 second_title: Aspose.GIS .NET API
 description: استكشف Aspose.GIS for .NET وتفاعل بسهولة مع طبقات GPX. قم بتنزيل المكتبة، وجرّب النسخة التجريبية المجانية، وارفع مستوى تطبيقاتك الجغرافية المكانية!
-type: docs
 weight: 16
 url: /ar/net/layer-interaction-and-data-access/interact-with-gpx-layer/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# التفاعل مع طبقة GPX
+
 ## مقدمة
 هل أنت مستعد للارتقاء بتطبيقاتك الجغرافية المكانية إلى المستوى التالي؟ يوفر Aspose.GIS for .NET مجموعة قوية من الأدوات للعمل مع بيانات نظام المعلومات الجغرافية (GIS) بسلاسة. في هذا البرنامج التعليمي، سنرشدك خلال عملية التفاعل مع طبقات GPX (تنسيق تبادل GPS) باستخدام Aspose.GIS for .NET. سواء كنت مطورًا متمرسًا أو بدأت للتو في استخدام نظم المعلومات الجغرافية، سيساعدك هذا الدليل التفصيلي خطوة بخطوة على الاستفادة من إمكانيات هذه المكتبة القوية.
 ## المتطلبات الأساسية
@@ -78,3 +84,9 @@ using (var layer = Drivers.Gpx.OpenLayer(dataDir + "schiehallion.gpx"))
  نعم يمكنك الحصول على ترخيص مؤقت[هنا](https://purchase.aspose.com/temporary-license/).
 ### كيف يمكنني شراء Aspose.GIS لـ .NET؟
  يمكنك شراء Aspose.GIS[هنا](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

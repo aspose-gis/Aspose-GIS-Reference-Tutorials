@@ -3,10 +3,16 @@ title: Dokunarak Geometrileri Kontrol Edin
 linktitle: Dokunarak Geometrileri Kontrol Edin
 second_title: Aspose.GIS .NET API'si
 description: Aspose.GIS for .NET ile mekansal veri işlemenin gücünü ortaya çıkarın. Bu çok yönlü araç seti ile mekansal işlevleri uygulamalarınıza sorunsuz bir şekilde entegre edin.
-type: docs
 weight: 13
 url: /tr/net/geometry-analysis/check-geometries-touching/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Dokunarak Geometrileri Kontrol Edin
+
 ## giriiş
 Coğrafi Bilgi Sistemleri (GIS) alanında, Aspose.GIS for .NET, mekansal işlevleri uygulamalarına sorunsuz bir şekilde dahil etmek isteyen geliştiriciler için güçlü bir araç olarak öne çıkıyor. Aspose.GIS, sağlam özellikleri ve kullanıcı dostu arayüzü ile geliştiricilerin analiz, görselleştirme veya geometrileri manipüle etme gibi konumsal verilerle zahmetsizce çalışmasına olanak tanır.
 ## Önkoşullar
@@ -64,3 +70,9 @@ Aspose.GIS, .NET Framework, .NET Core ve .NET Standard gibi çeşitli .NET çer�
 Aspose.GIS, en son teknolojilerle uyumluluğu sağlamak ve bildirilen sorunları çözmek için düzenli olarak güncellemeler ve geliştirmeler alır.
 ### Aspose.GIS için geçici lisans alabilir miyim?
  Evet, adresinden geçici lisans alabilirsiniz.[Burada](https://purchase.aspose.com/temporary-license/) Aspose.GIS'in yeteneklerini geliştirme ortamınızda değerlendirmek için.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

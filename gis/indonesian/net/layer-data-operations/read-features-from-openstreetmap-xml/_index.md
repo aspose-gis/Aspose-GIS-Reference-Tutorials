@@ -3,10 +3,16 @@ title: Baca Fitur dari OpenStreetMap XML Di Aspose.GIS
 linktitle: Baca Fitur dari OpenStreetMap XML
 second_title: Aspose.GIS .NET API
 description: Pelajari cara membaca fitur dari OpenStreetMap XML menggunakan Aspose.GIS untuk .NET. Tutorial langkah demi langkah dengan contoh kode.
-type: docs
 weight: 13
 url: /id/net/layer-data-operations/read-features-from-openstreetmap-xml/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Baca Fitur dari OpenStreetMap XML Di Aspose.GIS
+
 ## Perkenalan
 Aspose.GIS untuk .NET adalah perpustakaan canggih yang memungkinkan pengembang bekerja dengan data sistem informasi geografis (GIS) dalam aplikasi .NET mereka. Baik Anda membangun aplikasi pemetaan, menganalisis data spasial, atau mengintegrasikan fungsionalitas GIS ke dalam perangkat lunak Anda, Aspose.GIS menyediakan beragam fitur untuk menyederhanakan proses pengembangan Anda.
 Dalam tutorial ini, kita akan mempelajari cara membaca fitur dari OpenStreetMap XML menggunakan Aspose.GIS untuk .NET. Kami akan membagi setiap langkah menjadi beberapa bagian yang dapat dikelola, memastikan bahwa Anda dapat dengan mudah mengikutinya terlepas dari tingkat keahlian Anda.
@@ -75,3 +81,9 @@ Ya, Anda dapat membeli lisensi Aspose.GIS untuk menggunakannya dalam proyek kome
  Anda dapat mengunjungi[Forum Aspose.GIS](https://forum.aspose.com/c/gis/33) untuk bantuan dan untuk terhubung dengan pengguna dan pengembang lain.
 ### Bisakah saya mendapatkan lisensi sementara Aspose.GIS untuk .NET?
  Ya, Anda dapat meminta lisensi sementara dari[halaman lisensi sementara](https://purchase.aspose.com/temporary-license/) untuk tujuan pengujian dan evaluasi.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

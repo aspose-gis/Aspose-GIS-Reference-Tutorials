@@ -3,10 +3,16 @@ title: Μετρήστε Γεωμετρίες στη Γεωμετρία με το
 linktitle: Μετρήστε Γεωμετρίες στη Γεωμετρία
 second_title: Aspose.GIS .NET API
 description: Μάθετε πώς να μετράτε γεωμετρίες σε μια γεωμετρία χρησιμοποιώντας το Aspose.GIS για .NET. Βήμα προς βήμα μάθημα με παραδείγματα κώδικα για προγραμματιστές.
-type: docs
 weight: 23
 url: /el/net/geometry-creation/count-geometries-in-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Μετρήστε Γεωμετρίες στη Γεωμετρία με το Aspose.GIS
+
 ## Εισαγωγή
 Το Aspose.GIS για .NET είναι ένα ισχυρό εργαλείο για προγραμματιστές που επιδιώκουν να ενσωματώσουν γεωχωρικές λειτουργίες στις εφαρμογές τους .NET. Είτε δημιουργείτε λογισμικό χαρτογράφησης, υπηρεσίες που βασίζονται σε τοποθεσία ή εργαλεία χωρικής ανάλυσης, το Aspose.GIS παρέχει ένα ολοκληρωμένο σύνολο λειτουργιών για να καλύψει τις ανάγκες σας. Σε αυτό το σεμινάριο, θα εξερευνήσουμε πώς να μετράμε γεωμετρίες σε μια γεωμετρία χρησιμοποιώντας το Aspose.GIS για .NET.
 ## Προαπαιτούμενα
@@ -70,3 +76,9 @@ Console.WriteLine(geometriesCount); // 2
  Ναι, μπορείτε να κάνετε λήψη μιας δωρεάν δοκιμής από το[δικτυακός τόπος](https://releases.aspose.com/).
 ### Πού μπορώ να βρω υποστήριξη για το Aspose.GIS για .NET;
  Μπορείτε να βρείτε υποστήριξη στο[Φόρουμ Aspose.GIS](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

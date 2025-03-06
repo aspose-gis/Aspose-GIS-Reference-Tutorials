@@ -3,10 +3,16 @@ title: 使用 Aspose.GIS for .NET 計算凸包
 linktitle: 取得幾何凸包
 second_title: Aspose.GIS .NET API
 description: 了解如何使用 Aspose.GIS 在 .NET 中計算幾何圖形的凸包。包含程式碼範例和常見問題的綜合教學。
-type: docs
 weight: 20
 url: /zh-hant/net/geometry-analysis/get-geometry-convex-hull/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.GIS for .NET 計算凸包
+
 ## 介紹
 Aspose.GIS for .NET 是一個功能強大的函式庫，為在 .NET 應用程式中使用地理資訊系統 (GIS) 提供了廣泛的功能。無論您是建立地圖應用程式、分析空間資料還是執行地理空間操作，Aspose.GIS 都可以透過其直覺的 API 和全面的功能集簡化流程。
 ## 先決條件
@@ -79,3 +85,9 @@ for (int i = 0; i < ring.Count; ++i)
  Aspose.GIS 的臨時許可證可以透過指定的[臨時許可證連結](https://purchase.aspose.com/temporary-license/)，能夠在試用期或短期專案期間不間斷使用。
 ### Q：我可以在哪裡尋求協助或參與與 Aspose.GIS 相關的討論？
 如需支援、指導和社群互動，請造訪 Aspose.GIS 論壇[這裡](https://forum.aspose.com/c/gis/33)，您可以在這裡與其他開發人員互動、提出問題並分享見解。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

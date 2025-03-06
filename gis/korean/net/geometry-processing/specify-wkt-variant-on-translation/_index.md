@@ -3,10 +3,16 @@ title: Aspose.GIS를 사용하여 번역 시 WKT 변형 지정
 linktitle: 번역 시 WKT 변형 지정
 second_title: Aspose.GIS .NET API
 description: 공간 데이터 표현 형식과 정밀도를 효과적으로 제어하기 위해 .NET용 Aspose.GIS에서 WKT 변형을 지정하는 방법을 알아보세요.
-type: docs
 weight: 19
 url: /ko/net/geometry-processing/specify-wkt-variant-on-translation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS를 사용하여 번역 시 WKT 변형 지정
+
 ## 소개
 .NET용 Aspose.GIS는 개발자가 .NET 애플리케이션에서 GIS(지리 정보 시스템) 데이터를 쉽게 사용할 수 있도록 하는 강력한 라이브러리입니다. Aspose.GIS가 제공하는 필수 기능 중 하나는 번역 중에 WKT(Well-Known Text) 변형을 지정하여 사용자가 공간 데이터 표현의 형식과 정밀도를 제어할 수 있도록 하는 기능입니다. 이 튜토리얼에서는 .NET용 Aspose.GIS를 사용하여 WKT 변형을 단계별로 지정하는 방법을 살펴보겠습니다.
 ## 전제조건
@@ -66,3 +72,9 @@ Console.WriteLine("Flat3: " + point.AsText(WktVariant.Iso, NumericFormat.Flat(3)
  예, 다음에서 Aspose.GIS 무료 평가판을 다운로드할 수 있습니다.[여기](https://releases.aspose.com/).
 ### Aspose.GIS에 대한 도움이나 지원은 어디서 받을 수 있나요?
  질문을 게시하거나 Aspose.GIS 커뮤니티에서 도움을 구할 수 있습니다.[법정](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

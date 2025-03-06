@@ -3,10 +3,16 @@ title: Obtener información de atributos de capa
 linktitle: Obtener información de atributos de capa
 second_title: Aspose.GIS API .NET
 description: Descubra el poder de Aspose.GIS para .NET en este tutorial paso a paso. Recupere información de atributos de capa sin esfuerzo. ¡Descarga tu prueba gratuita ahora!
-type: docs
 weight: 11
 url: /es/net/layer-interaction-and-data-access/get-layer-attribute-information/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Obtener información de atributos de capa
+
 ## Introducción
 ¡Bienvenido a nuestro tutorial detallado sobre cómo aprovechar el poder de Aspose.GIS para .NET! Si está ansioso por sumergirse en el mundo de los sistemas de información geográfica (SIG) utilizando el marco .NET, está en el lugar correcto. En esta guía, lo guiaremos a través de los pasos esenciales para recuperar información de atributos de capas, brindándole una base sólida para su viaje de desarrollo SIG.
 ## Requisitos previos
@@ -66,3 +72,9 @@ R: Aspose.GIS publica actualizaciones frecuentes para garantizar la compatibilid
  R: Sí, puedes encontrar una comunidad de apoyo en[Foro Aspose.GIS](https://forum.aspose.com/c/gis/33) para discutir consultas, compartir experiencias y buscar ayuda.
 ### P: ¿Puedo probar Aspose.GIS antes de comprar una licencia?
  R: ¡Ciertamente! Toma tu[prueba gratuita aquí](https://releases.aspose.com/) y explore todo el potencial de Aspose.GIS.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

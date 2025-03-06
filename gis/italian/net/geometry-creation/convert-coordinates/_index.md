@@ -3,10 +3,16 @@ title: Coordinare la conversione con Aspose.GIS
 linktitle: Converti coordinate
 second_title: API Aspose.GIS .NET
 description: Scopri come convertire le coordinate con Aspose.GIS per .NET. Guida passo passo, prerequisiti e domande frequenti forniti.
-type: docs
 weight: 25
 url: /it/net/geometry-creation/convert-coordinates/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Coordinare la conversione con Aspose.GIS
+
 ## introduzione
 In questo tutorial approfondiremo il mondo dei sistemi informativi geografici (GIS) utilizzando la potente libreria Aspose.GIS per .NET. Aspose.GIS è un toolkit completo che consente agli sviluppatori di lavorare con i dati spaziali senza sforzo. Che tu sia uno sviluppatore esperto o che tu abbia appena iniziato, questo tutorial ti guiderà attraverso il processo di utilizzo di Aspose.GIS per convertire le coordinate in modo efficace.
 ## Prerequisiti
@@ -66,3 +72,9 @@ Aspose.GIS si rivolge principalmente agli sviluppatori .NET, ma offre interopera
  Sì, è possibile ottenere licenze temporanee da[pagina della licenza temporanea](https://purchase.aspose.com/temporary-license/).
 ### Dove posso acquistare Aspose.GIS?
  È possibile acquistare Aspose.GIS da[pagina di acquisto](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

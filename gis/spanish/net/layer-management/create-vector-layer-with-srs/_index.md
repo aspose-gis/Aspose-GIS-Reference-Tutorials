@@ -3,10 +3,16 @@ title: Crear capa vectorial con SRS
 linktitle: Crear capa vectorial con SRS
 second_title: Aspose.GIS API .NET
 description: Explore Aspose.GIS para .NET su clave para una integración SIG perfecta. Cree capas vectoriales sin esfuerzo con sistemas de referencia espaciales específicos. ¡Descargar ahora!
-type: docs
 weight: 13
 url: /es/net/layer-management/create-vector-layer-with-srs/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Crear capa vectorial con SRS
+
 ## Introducción
 Aspose.GIS para .NET es una poderosa biblioteca que permite a los desarrolladores trabajar con datos del sistema de información geográfica (GIS) sin problemas en aplicaciones .NET. En este tutorial, nos centraremos en crear una capa vectorial con un sistema de referencia espacial (SRS). Al final de esta guía, podrá integrar sin esfuerzo capacidades SIG en sus proyectos .NET.
 ## Requisitos previos
@@ -90,3 +96,9 @@ Integrar la funcionalidad SIG en sus aplicaciones .NET nunca ha sido tan fácil 
  Sí, puede explorar las funciones de Aspose.GIS obteniendo una prueba gratuita[aquí](https://releases.aspose.com/).
 ### ¿Cómo puedo comprar una licencia para Aspose.GIS?
  Para comprar una licencia, visite el[pagina de compra](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

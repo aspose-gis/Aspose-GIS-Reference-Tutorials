@@ -3,10 +3,16 @@ title: Преобразование координат с помощью Aspose.
 linktitle: Преобразование координат
 second_title: API Aspose.GIS .NET
 description: Узнайте, как конвертировать координаты с помощью Aspose.GIS для .NET. Предоставляется пошаговое руководство, предварительные требования и часто задаваемые вопросы.
-type: docs
 weight: 25
 url: /ru/net/geometry-creation/convert-coordinates/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Преобразование координат с помощью Aspose.GIS
+
 ## Введение
 В этом уроке мы углубимся в мир географических информационных систем (ГИС) с помощью мощной библиотеки Aspose.GIS для .NET. Aspose.GIS — это комплексный набор инструментов, который позволяет разработчикам легко работать с пространственными данными. Независимо от того, являетесь ли вы опытным разработчиком или только начинаете, это руководство проведет вас через процесс использования Aspose.GIS для эффективного преобразования координат.
 ## Предварительные условия
@@ -66,3 +72,9 @@ Aspose.GIS в первую очередь ориентирован на разр
  Да, временные лицензии можно получить в[страница временной лицензии](https://purchase.aspose.com/temporary-license/).
 ### Где я могу приобрести Aspose.GIS?
  Вы можете приобрести Aspose.GIS на сайте[страница покупки](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

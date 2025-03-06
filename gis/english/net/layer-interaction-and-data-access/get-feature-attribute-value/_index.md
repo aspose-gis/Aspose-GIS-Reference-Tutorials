@@ -3,10 +3,16 @@ title: Get Feature Attribute Value
 linktitle: Get Feature Attribute Value
 second_title: Aspose.GIS .NET API
 description: Explore Aspose.GIS for .NET – the ultimate tool for seamless GIS data integration. Download your free trial now! #Aspose #GIS #.NET
-type: docs
 weight: 12
 url: /net/layer-interaction-and-data-access/get-feature-attribute-value/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Get Feature Attribute Value
+
 ## Introduction
 Welcome to the world of Aspose.GIS for .NET, a powerful library that empowers .NET developers to seamlessly work with geographic information system (GIS) data. Whether you're a seasoned developer or just starting your journey into GIS, this tutorial will guide you through the process of retrieving feature attribute values using Aspose.GIS for .NET.
 ## Prerequisites
@@ -80,3 +86,10 @@ A: Yes, you can obtain a temporary license for testing from [here](https://purch
 A: Join the discussion on the [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) to seek help and connect with other users.
 ### Q: Is there a free trial version of Aspose.GIS?
 A: Certainly! You can explore the features of Aspose.GIS by downloading the free trial from [here](https://releases.aspose.com/).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

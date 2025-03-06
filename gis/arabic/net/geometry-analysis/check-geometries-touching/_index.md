@@ -3,10 +3,16 @@ title: تحقق من لمس الأشكال الهندسية
 linktitle: تحقق من لمس الأشكال الهندسية
 second_title: Aspose.GIS .NET API
 description: أطلق العنان لقوة معالجة البيانات المكانية باستخدام Aspose.GIS for .NET. يمكنك دمج الوظائف المكانية بسلاسة في تطبيقاتك باستخدام مجموعة الأدوات متعددة الاستخدامات هذه.
-type: docs
 weight: 13
 url: /ar/net/geometry-analysis/check-geometries-touching/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# تحقق من لمس الأشكال الهندسية
+
 ## مقدمة
 في مجال أنظمة المعلومات الجغرافية (GIS)، يبرز Aspose.GIS for .NET كأداة قوية للمطورين الذين يتطلعون إلى دمج الوظائف المكانية في تطبيقاتهم بسلاسة. بفضل ميزاته القوية وواجهته سهلة الاستخدام، يعمل Aspose.GIS على تمكين المطورين من العمل مع البيانات المكانية دون عناء، سواء كان ذلك من خلال تحليل الأشكال الهندسية أو تصورها أو معالجتها.
 ## المتطلبات الأساسية
@@ -64,3 +70,9 @@ Console.WriteLine(geometry1.Touches(geometry4)); // خطأ شنيع
 يتلقى Aspose.GIS بانتظام تحديثات وتحسينات لضمان التوافق مع أحدث التقنيات ومعالجة أي مشكلات تم الإبلاغ عنها.
 ### هل يمكنني الحصول على ترخيص مؤقت لـ Aspose.GIS؟
  نعم يمكنك الحصول على ترخيص مؤقت من[هنا](https://purchase.aspose.com/temporary-license/) لتقييم قدرات Aspose.GIS في بيئة التطوير الخاصة بك.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

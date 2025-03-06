@@ -3,10 +3,16 @@ title: معالجة الهندسة
 linktitle: معالجة الهندسة
 second_title: Aspose.GIS .NET API
 description: أتقن Aspose.GIS for .NET من خلال برامجنا التعليمية الشاملة. تعلم المعالجة الهندسية الدقيقة والتحليل المكاني ومعالجة البيانات من أجل التطوير الأمثل لنظم المعلومات الجغرافية.
-type: docs
 weight: 23
 url: /ar/net/geometry-processing/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# معالجة الهندسة
+
 ## مقدمة
 
 أطلق العنان للإمكانات الكاملة لـ Aspose.GIS for .NET من خلال برامجنا التعليمية المتعمقة حول المعالجة الهندسية. سواء كنت تقوم بالتكرار على الأشكال الهندسية أو النقاط أو إدارة الدقة، فإن أدلةنا خطوة بخطوة تضمن التكامل السلس في تطبيقات .NET الخاصة بك.
@@ -81,3 +87,9 @@ Master Aspose.GIS for .NET للتعامل مع البيانات الجغرافي
 تعرف على كيفية ترجمة الأشكال الهندسية إلى تنسيق Well-Known Binary (WKB) في تطبيقات .NET باستخدام Aspose.GIS للتعامل السلس مع البيانات المكانية.
 ### [تحويل الهندسة إلى تنسيق WKT باستخدام Aspose.GIS لـ .NET](./translate-geometry-to-wkt/)
 تعرف على كيفية ترجمة الأشكال الهندسية المكانية إلى تنسيق نص معروف (WKT) باستخدام Aspose.GIS for .NET. تعزيز مهارات تطوير نظم المعلومات الجغرافية لديك.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

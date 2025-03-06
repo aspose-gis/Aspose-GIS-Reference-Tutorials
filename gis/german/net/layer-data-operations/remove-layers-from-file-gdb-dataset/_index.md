@@ -3,10 +3,16 @@ title: Entfernen Sie Ebenen aus dem Datei-GDB-Datensatz
 linktitle: Entfernen Sie Ebenen aus dem Datei-GDB-Datensatz
 second_title: Aspose.GIS .NET-API
 description: Entdecken Sie GIS mit Aspose.GIS für .NET! Erfahren Sie Schritt für Schritt, wie Sie Layer aus File-GDB-Datensätzen entfernen. Laden Sie es jetzt herunter und genießen Sie ein nahtloses Geodatenerlebnis.
-type: docs
 weight: 17
 url: /de/net/layer-data-operations/remove-layers-from-file-gdb-dataset/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Entfernen Sie Ebenen aus dem Datei-GDB-Datensatz
+
 ## Einführung
 Schöpfen Sie das volle Potenzial geografischer Informationssysteme (GIS) mit Aspose.GIS für .NET aus, einem leistungsstarken Toolkit zur Vereinfachung der Manipulation und Visualisierung räumlicher Daten. Egal, ob Sie ein erfahrener Entwickler oder ein GIS-Enthusiast sind, dieses Tutorial führt Sie durch den Prozess des Entfernens von Layern aus einem File Geodatabase (GDB)-Datensatz mit Aspose.GIS für .NET.
 ## Voraussetzungen
@@ -71,3 +77,9 @@ Ja, Aspose.GIS unterstützt die Interoperabilität mit verschiedenen GIS-Formate
  Ja, eine temporäre Lizenz kann erworben werden[Hier](https://purchase.aspose.com/temporary-license/).
 ### Gibt es Beispieldatensätze für die Praxis?
 Entdecken Sie die Aspose.GIS-Dokumentation für Beispieldatensätze und zusätzliche Ressourcen.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

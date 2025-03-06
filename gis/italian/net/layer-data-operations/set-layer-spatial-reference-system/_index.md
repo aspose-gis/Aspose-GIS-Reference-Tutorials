@@ -3,10 +3,16 @@ title: Imposta il sistema di riferimento spaziale del layer
 linktitle: Imposta il sistema di riferimento spaziale del layer
 second_title: API Aspose.GIS .NET
 description: Impostazione principale del sistema di riferimento spaziale dei livelli con Aspose.GIS per .NET. Migliora i tuoi progetti GIS con questo tutorial passo passo.
-type: docs
 weight: 19
 url: /it/net/layer-data-operations/set-layer-spatial-reference-system/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Imposta il sistema di riferimento spaziale del layer
+
 ## introduzione
 Nel vasto panorama dei Sistemi Informativi Geografici (GIS), Aspose.GIS per .NET si distingue come uno strumento robusto e versatile per gli sviluppatori. Questo tutorial ti guiderà attraverso il processo di impostazione del sistema di riferimento spaziale dei livelli utilizzando Aspose.GIS per .NET. Che tu sia uno sviluppatore esperto o un nuovo arrivato nello sviluppo GIS, questa guida passo passo ti aiuterà a sfruttare la potenza di Aspose.GIS per migliorare le tue capacità di gestione dei dati spaziali.
 ## Prerequisiti
@@ -72,3 +78,9 @@ Assolutamente! Aspose.GIS è versatile e può essere utilizzato sia in applicazi
  Certamente! È possibile scaricare una versione di prova gratuita[Qui](https://releases.aspose.com/).
 ### Dove posso cercare supporto per le query relative ad Aspose.GIS?
  Per qualsiasi supporto o domanda, visitare il[Forum Aspose.GIS](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

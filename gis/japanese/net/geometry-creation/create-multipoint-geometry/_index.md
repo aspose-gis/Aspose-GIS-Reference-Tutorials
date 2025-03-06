@@ -3,10 +3,16 @@ title: Aspose.GIS for .NET を使用してマルチポイント ジオメトリ�
 linktitle: マルチポイント ジオメトリの作成
 second_title: Aspose.GIS .NET API
 description: Aspose.GIS for .NET をマスターする - マルチポイント ジオメトリを簡単に作成する方法を学びます。開発者向けの包括的なチュートリアル。
-type: docs
 weight: 14
 url: /ja/net/geometry-creation/create-multipoint-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS for .NET を使用してマルチポイント ジオメトリを作成する
+
 ## 導入
 
 地理情報システム (GIS) の世界では、Aspose.GIS for .NET は開発者にとって強力なツールとして際立っています。その堅牢な機能と柔軟性により、.NET アプリケーションで空間データを操作する場合に最適です。このチュートリアルでは、特にマルチポイント ジオメトリの作成に焦点を当てて、Aspose.GIS for .NET の基本を詳しく説明します。経験豊富な開発者であっても、初心者であっても、このガイドでは各ステップを順を追って説明しており、理解しやすく実装しやすくなっています。
@@ -82,3 +88,9 @@ A: もちろんです！ Aspose.GIS for .NET は、ポリゴン、ラインな�
 
 ### Q: 短期プロジェクト用に一時ライセンスを購入できますか?
 A: はい、特定のプロジェクトのニーズに合わせて一時ライセンスを取得できます。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

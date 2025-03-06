@@ -3,10 +3,16 @@ title: Dapatkan Poin di Permukaan Geometri
 linktitle: Dapatkan Poin di Permukaan Geometri
 second_title: Aspose.GIS .NET API
 description: Pelajari cara bekerja dengan data geospasial secara efisien menggunakan Aspose.GIS untuk .NET. Panduan langkah demi langkah dan FAQ disertakan.
-type: docs
 weight: 25
 url: /id/net/geometry-analysis/get-point-on-geometry-surface/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Dapatkan Poin di Permukaan Geometri
+
 ## Perkenalan
 Dalam tutorial ini, kita akan mempelajari cara menggunakan Aspose.GIS untuk .NET untuk bekerja dengan geometri dan mengambil titik pada permukaannya. Aspose.GIS adalah perpustakaan canggih yang menyediakan berbagai fungsi untuk pemrosesan, manipulasi, dan visualisasi data geospasial dalam aplikasi .NET.
 ## Prasyarat
@@ -66,3 +72,9 @@ Ya, Aspose.GIS mendukung berbagai kerangka .NET, termasuk .NET Framework, .NET C
  Ya, Anda dapat memperoleh lisensi sementara untuk Aspose.GIS dari[Di Sini](https://purchase.aspose.com/temporary-license/).
 ### Dimana saya bisa membeli Aspose.GIS?
  Anda dapat membeli Aspose.GIS dari halaman pembelian[Di Sini](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Aspose.GIS による座標変換
 linktitle: 座標を変換する
 second_title: Aspose.GIS .NET API
 description: Aspose.GIS for .NET を使用して座標を変換する方法を学びます。ステップバイステップのガイド、前提条件、および FAQ が提供されます。
-type: docs
 weight: 25
 url: /ja/net/geometry-creation/convert-coordinates/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS による座標変換
+
 ## 導入
 このチュートリアルでは、.NET 用の強力な Aspose.GIS ライブラリを使用して、地理情報システム (GIS) の世界を詳しく説明します。 Aspose.GIS は、開発者が空間データを簡単に操作できるようにする包括的なツールキットです。経験豊富な開発者でも、初心者でも、このチュートリアルでは、Aspose.GIS を利用して座標を効率的に変換するプロセスを説明します。
 ## 前提条件
@@ -66,3 +72,9 @@ Aspose.GIS は主に .NET 開発者を対象としていますが、Aspose.GIS f
 はい、一時ライセンスは次のサイトから取得できます。[一時ライセンスのページ](https://purchase.aspose.com/temporary-license/).
 ### Aspose.GIS はどこで購入できますか?
  Aspose.GIS は、以下から購入できます。[購入ページ](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

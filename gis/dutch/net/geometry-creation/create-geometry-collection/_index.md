@@ -3,10 +3,16 @@ title: Maak een geometriecollectie met Aspose.GIS voor .NET
 linktitle: Maak een geometriecollectie
 second_title: Aspose.GIS .NET-API
 description: Ontgrendel de kracht van georuimtelijke gegevensmanipulatie met Aspose.GIS voor .NET. Creëer, visualiseer en analyseer naadloos locatiegebaseerde gegevens in uw .NET-applicaties.
-type: docs
 weight: 21
 url: /nl/net/geometry-creation/create-geometry-collection/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Maak een geometriecollectie met Aspose.GIS voor .NET
+
 
 ## Invoering
 
@@ -109,3 +115,9 @@ A: Ja, Aspose.GIS biedt robuuste visualisatiemogelijkheden, waardoor u eenvoudig
 ### Vraag: Is er een community of forum waar ik hulp kan zoeken en contact kan maken met andere Aspose.GIS-gebruikers?
 
  EEN: Absoluut! Ga naar de[Aspose.GIS-forum](https://forum.aspose.com/c/gis/33) om vragen te stellen, kennis te delen en contact te maken met collega-ontwikkelaars in de Aspose.GIS-gemeenschap.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

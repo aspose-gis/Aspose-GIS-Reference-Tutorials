@@ -3,10 +3,16 @@ title: ترجمة الهندسة من WKB باستخدام Aspose.GIS لـ .NET
 linktitle: ترجمة الهندسة من WKB
 second_title: Aspose.GIS .NET API
 description: تعرف على كيفية التعامل مع المعلومات الجغرافية في .NET باستخدام Aspose.GIS لـ .NET. يمكنك ترجمة الأشكال الهندسية من تنسيق WKB بسهولة من خلال إرشادات خطوة بخطوة.
-type: docs
 weight: 20
 url: /ar/net/geometry-processing/translate-geometry-from-wkb/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# ترجمة الهندسة من WKB باستخدام Aspose.GIS لـ .NET
+
 ## مقدمة
 في مجال تطوير .NET، يعد التعامل مع المعلومات الجغرافية مطلبًا شائعًا. سواء كان الأمر يتعلق بتطبيقات رسم الخرائط، أو التحليل المكاني، أو تصور البيانات، فإن وجود أدوات قوية للعمل مع البيانات الجغرافية أمر بالغ الأهمية. هذا هو المكان الذي يلعب فيه Aspose.GIS for .NET دوره. Aspose.GIS for .NET هي مكتبة قوية توفر وظائف شاملة للعمل مع التنسيقات الجغرافية المكانية المختلفة وتنفيذ العمليات المكانية بكفاءة.
 ## المتطلبات الأساسية
@@ -61,3 +67,9 @@ Console.WriteLine(geometry.AsText()); // الخطوط (1.2 3.4، 5.6 7.8)
 يمكنك الحصول على الدعم لـ Aspose.GIS for .NET من خلال المنتدى[هنا](https://forum.aspose.com/c/gis/33) أو عن طريق الاتصال بدعم Aspose مباشرة.
 ### هل يمكنني استخدام Aspose.GIS for .NET في المشاريع التجارية؟
 نعم، يمكنك استخدام Aspose.GIS for .NET في المشاريع التجارية عن طريق شراء الترخيص المناسب.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

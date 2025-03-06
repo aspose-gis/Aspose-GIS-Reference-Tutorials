@@ -3,10 +3,16 @@ title: 자르기 레이어 기능
 linktitle: 자르기 레이어 기능
 second_title: Aspose.GIS .NET API
 description: .NET용 Aspose.GIS로 지리공간의 마법을 풀어보세요! 자르기 레이어 기능을 쉽게 사용할 수 있습니다. 지금 무료 평가판을 다운로드하세요. #Aspose #GIS #지리공간
-type: docs
 weight: 19
 url: /ko/net/layer-management/crop-layer-features/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 자르기 레이어 기능
+
 ## 소개
 광범위한 지리공간 데이터 처리 영역에서 .NET용 Aspose.GIS는 개발자에게 지리 정보 처리에 대한 원활한 경험을 제공하는 강력한 도구로 등장합니다. 이 튜토리얼에서는 Aspose.GIS를 사용하여 레이어 기능을 자르는 과정을 안내하여 특정 요구 사항에 맞게 지리공간 데이터를 맞춤화할 수 있습니다.
 ## 전제조건
@@ -62,3 +68,9 @@ Console.WriteLine($"bounds: {bounds}");
  A: 예, 무료 평가판을 다운로드할 수 있습니다.[여기](https://releases.aspose.com/).
 ### Q: .NET용 Aspose.GIS를 어디서 구입할 수 있나요?
  A: 라이브러리를 구입할 수 있습니다.[여기](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

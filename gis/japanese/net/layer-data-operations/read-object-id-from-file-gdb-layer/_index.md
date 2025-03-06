@@ -3,10 +3,16 @@ title: Aspose.GIS のファイル GDB レイヤーからオブジェクト ID �
 linktitle: ファイル GDB レイヤーからオブジェクト ID を読み取る
 second_title: Aspose.GIS .NET API
 description: Aspose.GIS for .NET を利用して地理空間データ処理を効率的に処理する方法を学びます。包括的なチュートリアルと専門家のガイダンスが利用可能です。
-type: docs
 weight: 16
 url: /ja/net/layer-data-operations/read-object-id-from-file-gdb-layer/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS のファイル GDB レイヤーからオブジェクト ID を読み取る
+
 ## 導入
 Aspose.GIS for .NET をマスターするための包括的なガイドへようこそ! Aspose.GIS は、.NET Framework 内で地理空間データの処理と視覚化タスクを効率的に処理するように設計された強力なライブラリです。あなたが経験豊富な開発者であっても、地理空間プログラミングを始めたばかりであっても、このチュートリアルでは、Aspose.GIS の可能性を最大限に活用するために知っておくべきことをすべて説明します。
 ## 前提条件
@@ -74,3 +80,9 @@ Aspose.GIS に関して問題が発生したり質問がある場合は、次の
 はい、テストと評価の目的で、Aspose Web サイトから一時ライセンスを取得できます。
 ### Aspose.GIS for .NET の包括的なドキュメントはどこで見つけられますか?
 を参照できます。[ドキュメンテーション](https://reference.aspose.com/gis/net/) Aspose.GIS API と機能の使用に関する詳細情報を参照してください。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

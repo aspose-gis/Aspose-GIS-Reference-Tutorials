@@ -3,10 +3,16 @@ title: .NET'te Aspose.GIS kullanarak Geometriyi WKT'den çevirin
 linktitle: WKT'den Geometriyi Çevir
 second_title: Aspose.GIS .NET API'si
 description: Aspose.GIS for .NET kullanarak Bilinen Metinlerden geometriyi nasıl çevireceğinizi öğrenin. Sorunsuz entegrasyon için adım adım eğitim.
-type: docs
 weight: 21
 url: /tr/net/geometry-processing/translate-geometry-from-wkt/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# .NET'te Aspose.GIS kullanarak Geometriyi WKT'den çevirin
+
 ## giriiş
 Bu eğitimde Aspose.GIS for .NET kullanarak Well-Known Text'den (WKT) geometri dönüştürme sürecini derinlemesine inceleyeceğiz. Aspose.GIS, geliştiricilerin coğrafi verilerle zahmetsizce çalışmasına olanak tanıyan güçlü bir .NET API'sidir. İster deneyimli bir geliştirici olun ister coğrafi uzamsal programlamaya yeni başlıyor olun, bu eğitim size süreç boyunca adım adım rehberlik edecektir.
 ## Önkoşullar
@@ -48,3 +54,9 @@ Evet, şu adresten ücretsiz deneme alabilirsiniz:[Burada](https://releases.aspo
  Belgeleri bulabilirsiniz[Burada](https://reference.aspose.com/gis/net/).
 ### Aspose.GIS for .NET için nasıl destek alabilirim?
  Aspose.GIS forumundan destek alabilirsiniz[Burada](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

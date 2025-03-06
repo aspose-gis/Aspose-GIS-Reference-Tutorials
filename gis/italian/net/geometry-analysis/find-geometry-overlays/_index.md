@@ -3,10 +3,16 @@ title: Padroneggiare le sovrapposizioni di geometria con Aspose.GIS per .NET
 linktitle: Trova sovrapposizioni di geometria
 second_title: API Aspose.GIS .NET
 description: Scopri come eseguire operazioni di sovrapposizione geometrica utilizzando Aspose.GIS per .NET. Padroneggiare le operazioni di intersezione, unione, differenza e differenza simmetrica.
-type: docs
 weight: 16
 url: /it/net/geometry-analysis/find-geometry-overlays/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Padroneggiare le sovrapposizioni di geometria con Aspose.GIS per .NET
+
 ## introduzione
 Nel campo dei Sistemi Informativi Geografici (GIS), le operazioni di sovrapposizione sono fondamentali per l'analisi spaziale. Consentono il confronto e la combinazione di diversi set di dati spaziali per ricavare informazioni preziose. Aspose.GIS per .NET fornisce funzionalità robuste per eseguire sovrapposizioni geometriche in modo efficiente. In questo tutorial, approfondiremo varie operazioni di sovrapposizione come Intersezione, Unione, Differenza e Differenza simmetrica utilizzando Aspose.GIS per .NET.
 ## Prerequisiti
@@ -108,3 +114,9 @@ Sì, Aspose.GIS per .NET può essere utilizzato sia in progetti commerciali che 
  Sì, sono disponibili licenze temporanee a scopo di test e valutazione. Puoi ottenerli da[Qui](https://purchase.aspose.com/temporary-license/).
 ### D: Posso acquistare direttamente Aspose.GIS per .NET?
  Sì, puoi acquistare Aspose.GIS per .NET dal sito web[Qui](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

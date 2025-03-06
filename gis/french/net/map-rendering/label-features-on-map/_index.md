@@ -3,10 +3,16 @@ title: Maîtriser l'étiquetage des fonctionnalités avec Aspose.GIS pour .NET
 linktitle: Étiqueter les entités sur la carte
 second_title: API Aspose.GIS .NET
 description: Explorez Aspose.GIS pour .NET et maîtrisez l'art de l'étiquetage des entités sur les cartes. Améliorez vos visualisations géospatiales sans effort. #Aspose #SIG
-type: docs
 weight: 11
 url: /fr/net/map-rendering/label-features-on-map/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Maîtriser l'étiquetage des fonctionnalités avec Aspose.GIS pour .NET
+
 ## Introduction
 Dans le monde de la visualisation de données géospatiales, l’étiquetage des entités sur une carte joue un rôle crucial dans la transmission efficace des informations. Aspose.GIS for .NET fournit une boîte à outils puissante pour y parvenir de manière transparente. Dans ce didacticiel, nous explorerons différentes méthodes d'étiquetage de points sur une carte à l'aide d'Aspose.GIS, améliorant ainsi vos visualisations de carte avec des étiquettes informatives.
 ## Conditions préalables
@@ -126,3 +132,9 @@ Aspose.GIS est optimisé pour les performances, mais envisagez d'utiliser des co
 Oui, vous pouvez affiner le placement des étiquettes à l'aide d'options telles que la rotation, les points d'ancrage et les décalages.
 ### Puis-je automatiser la génération d’étiquettes dans un processus par lots ?
 Absolument, vous pouvez intégrer Aspose.GIS dans vos flux de travail automatisés pour la génération d'étiquettes par lots.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Aspose.GIS for .NET での変換時に WKB バリアントを指定する
 linktitle: 翻訳時に WKB バリアントを指定する
 second_title: Aspose.GIS .NET API
 description: この包括的なガイドを使用して、Aspose.GIS for .NET で WKB バリアントを簡単に指定する方法を学びましょう。 GIS 開発スキルを向上させます。
-type: docs
 weight: 18
 url: /ja/net/geometry-processing/specify-wkb-variant-on-translation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS for .NET での変換時に WKB バリアントを指定する
+
 ## 導入
 地理情報システム (GIS) 開発の分野では、Aspose.GIS for .NET は強力なツールセットとして際立っています。その多用途性と効率性により、GIS 機能を .NET アプリケーションにシームレスに統合することを目指す開発者にとって、頼りになる選択肢となります。この記事は、Aspose.GIS for .NET を活用するための包括的なガイドとして機能し、特に翻訳プロセス中の WKB (Well-Known Binary) バリアントの指定に焦点を当てています。
 ## 前提条件
@@ -62,3 +68,9 @@ Aspose.GIS for .NET は、さまざまなバージョンの .NET と互換性が
 一時ライセンスは、次のサイトにアクセスして取得できます。[一時ライセンスのページ](https://purchase.aspose.com/temporary-license/)そして提供された指示に従ってください。
 ### Aspose.GIS for .NET のライセンスはどこで購入できますか?
  Aspose.GIS for .NET のライセンスは、次の購入ページから購入できます。[このリンク](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

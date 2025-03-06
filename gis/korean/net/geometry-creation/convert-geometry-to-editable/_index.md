@@ -3,10 +3,16 @@ title: Aspose.GIS를 사용하여 형상을 편집 가능한 형식으로 변환
 linktitle: 형상을 편집 가능으로 변환
 second_title: Aspose.GIS .NET API
 description: .NET용 Aspose.GIS를 사용하여 형상을 편집 가능한 형식으로 손쉽게 변환하는 방법을 알아보세요. 이 단계별 튜토리얼을 살펴보세요.
-type: docs
 weight: 22
 url: /ko/net/geometry-creation/convert-geometry-to-editable/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS를 사용하여 형상을 편집 가능한 형식으로 변환
+
 ## 소개
 지리공간 프로그래밍 영역에서는 효율성과 정확성이 가장 중요합니다. .NET용 Aspose.GIS는 개발자가 지리 데이터를 손쉽게 조작할 수 있도록 지원하는 강력한 툴킷입니다. 포괄적인 기능 세트와 사용자 친화적인 인터페이스를 통해 Aspose.GIS는 간단한 변환부터 복잡한 공간 분석에 이르는 작업을 단순화합니다. 이 튜토리얼에서는 .NET용 Aspose.GIS를 사용하여 형상을 편집 가능한 형식으로 변환하는 기능 중 하나를 자세히 살펴보겠습니다.
 ## 전제조건
@@ -70,3 +76,9 @@ Console.WriteLine(readOnlyLine.AsText()); // 라인스트링(1 1, 2 2)
  네, 임시 면허는 다음 기관에서 받으실 수 있습니다.[Aspose.GIS 구매 페이지](https://purchase.aspose.com/temporary-license/) 평가 목적으로.
 ### Q: Aspose.GIS를 직접 구매할 수 있나요?
  전적으로! 다음으로 향하세요.[구매 페이지](https://purchase.aspose.com/buy) 귀하의 필요에 맞는 라이센스를 취득하십시오.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

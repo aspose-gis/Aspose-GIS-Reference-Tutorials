@@ -3,10 +3,16 @@ title: Crea geometria multipoligono con Aspose.GIS
 linktitle: Crea geometria multipoligono
 second_title: API Aspose.GIS .NET
 description: Scopri come creare geometrie multipoligono utilizzando Aspose.GIS per .NET. Guida passo passo per principianti. Prova gratuita disponibile.
-type: docs
 weight: 16
 url: /it/net/geometry-creation/create-multipolygon-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Crea geometria multipoligono con Aspose.GIS
+
 ## introduzione
 Nel mondo dello sviluppo di sistemi informativi geografici (GIS), Aspose.GIS per .NET si distingue come un potente strumento per creare, modificare e analizzare dati geospaziali. Che tu sia uno sviluppatore esperto o che tu abbia appena iniziato, padroneggiare Aspose.GIS può aprire un mondo di possibilità per i tuoi progetti.
 ## Prerequisiti
@@ -66,3 +72,9 @@ Assolutamente! Aspose.GIS offre documentazione completa ed esercitazioni per aiu
  Sì, puoi ottenere una licenza temporanea da[Qui](https://purchase.aspose.com/temporary-license/) a fini di valutazione.
 ### Posso acquistare direttamente Aspose.GIS?
  Sì, puoi acquistare Aspose.GIS dal sito web[Qui](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

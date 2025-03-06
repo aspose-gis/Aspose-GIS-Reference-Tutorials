@@ -3,10 +3,16 @@ title: Odebrat vrstvy ze souboru GDB Dataset
 linktitle: Odebrat vrstvy ze souboru GDB Dataset
 second_title: Aspose.GIS .NET API
 description: Prozkoumejte GIS s Aspose.GIS pro .NET! Naučte se odstraňovat vrstvy z datových sad File GDB krok za krokem. Stáhněte si nyní pro bezproblémový zážitek z prostorových dat.
-type: docs
 weight: 17
 url: /cs/net/layer-data-operations/remove-layers-from-file-gdb-dataset/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Odebrat vrstvy ze souboru GDB Dataset
+
 ## Úvod
 Odemkněte plný potenciál geografických informačních systémů (GIS) s Aspose.GIS for .NET, výkonnou sadou nástrojů navrženou pro zjednodušení manipulace s prostorovými daty a jejich vizualizace. Ať už jste zkušený vývojář nebo nadšenec GIS, tento tutoriál vás provede procesem odstraňování vrstev z datové sady File Geodatabase (GDB) pomocí Aspose.GIS for .NET.
 ## Předpoklady
@@ -71,3 +77,9 @@ Ano, Aspose.GIS podporuje interoperabilitu s různými formáty GIS, což umož�
  Ano, dočasnou licenci lze zakoupit[tady](https://purchase.aspose.com/temporary-license/).
 ### Jsou k dispozici nějaké vzorové datové sady pro praxi?
 Prozkoumejte dokumentaci Aspose.GIS pro ukázkové datové sady a další zdroje.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

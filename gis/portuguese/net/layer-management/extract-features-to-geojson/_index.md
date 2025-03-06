@@ -3,10 +3,16 @@ title: Extraia recursos para GeoJSON
 linktitle: Extraia recursos para GeoJSON
 second_title: API Aspose.GIS .NET
 description: Explore o guia passo a passo sobre como usar Aspose.GIS for .NET para extrair recursos para GeoJSON. Aproveite o poder do GIS com facilidade! #Aspose #GIS
-type: docs
 weight: 23
 url: /pt/net/layer-management/extract-features-to-geojson/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Extraia recursos para GeoJSON
+
 ## Introdução
 Bem-vindo ao nosso tutorial passo a passo sobre como extrair recursos para GeoJSON usando Aspose.GIS for .NET! Quer você seja um desenvolvedor experiente ou esteja apenas começando sua jornada na programação GIS, este guia irá orientá-lo durante o processo, garantindo que você aproveite todo o poder do Aspose.GIS for .NET.
 ## Pré-requisitos
@@ -87,3 +93,9 @@ Neste tutorial, exploramos o processo de extração de recursos para GeoJSON usa
  Sim, você pode encontrar o teste gratuito[aqui](https://releases.aspose.com/).
 ### P: Onde posso comprar o Aspose.GIS para .NET?
  Você pode comprar o produto[aqui](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

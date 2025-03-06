@@ -3,10 +3,16 @@ title: Crie polígono com geometria de furo usando Aspose.GIS
 linktitle: Criar polígono com geometria de furo
 second_title: API Aspose.GIS .NET
 description: Aprenda como criar polígono com geometria de furo usando Aspose.GIS for .NET. Tutorial passo a passo com exemplos de código.
-type: docs
 weight: 13
 url: /pt/net/geometry-creation/create-polygon-with-hole-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Crie polígono com geometria de furo usando Aspose.GIS
+
 ## Introdução
 Neste tutorial, percorreremos o processo de criação de um polígono com geometria de furo usando Aspose.GIS for .NET. Aspose.GIS é uma biblioteca poderosa que permite aos desenvolvedores trabalhar com dados geoespaciais em seus aplicativos .NET. 
 ## Pré-requisitos
@@ -66,3 +72,9 @@ Aspose.GIS é uma biblioteca .NET que permite aos desenvolvedores trabalhar com 
  Você pode encontrar suporte para Aspose.GIS no site[Fórum Aspose.GIS](https://forum.aspose.com/c/gis/33).
 ### 5. Como posso obter uma licença temporária do Aspose.GIS?
  Você pode obter uma licença temporária para Aspose.GIS em[aqui](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

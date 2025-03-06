@@ -3,10 +3,16 @@ title: Geometriai átfedések elsajátítása az Aspose.GIS segítségével .NET
 linktitle: Keresse meg a geometriai lefedéseket
 second_title: Aspose.GIS .NET API
 description: Ismerje meg, hogyan hajthat végre geometriai átfedési műveleteket az Aspose.GIS for .NET használatával. Mester metszéspont, unió, különbség és szimmetrikus különbség műveletek.
-type: docs
 weight: 16
 url: /hu/net/geometry-analysis/find-geometry-overlays/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Geometriai átfedések elsajátítása az Aspose.GIS segítségével .NET-hez
+
 ## Bevezetés
 térinformatikai rendszerek (GIS) területén az overlay műveletek alapvetőek a térbeli elemzéshez. Lehetővé teszik a különböző térbeli adatkészletek összehasonlítását és kombinálását, hogy értékes betekintést nyerhessenek. Az Aspose.GIS for .NET robusztus funkciókat biztosít a geometriai átfedések hatékony végrehajtásához. Ebben az oktatóanyagban az Aspose.GIS for .NET használatával különféle átfedési műveletekbe fogunk beleásni, mint például a metszéspont, az egyesülés, a különbség és a szimmetrikus különbség.
 ## Előfeltételek
@@ -108,3 +114,9 @@ Igen, az Aspose.GIS for .NET használható kereskedelmi és nem kereskedelmi pro
  Igen, tesztelési és értékelési célokra rendelkezésre állnak ideiglenes licencek. től szerezheti be őket[itt](https://purchase.aspose.com/temporary-license/).
 ### K: Megvásárolhatom közvetlenül az Aspose.GIS-t .NET-hez?
  Igen, megvásárolhatja az Aspose.GIS-t .NET-hez a webhelyről[itt](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

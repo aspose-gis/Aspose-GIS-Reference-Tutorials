@@ -3,10 +3,16 @@ title: ジオメトリ サーフェス上のポイントを取得
 linktitle: ジオメトリ サーフェス上のポイントを取得
 second_title: Aspose.GIS .NET API
 description: Aspose.GIS for .NET を使用して地理空間データを効率的に操作する方法を学びます。ステップバイステップのガイドとよくある質問が含まれています。
-type: docs
 weight: 25
 url: /ja/net/geometry-analysis/get-point-on-geometry-surface/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# ジオメトリ サーフェス上のポイントを取得
+
 ## 導入
 このチュートリアルでは、Aspose.GIS for .NET を使用してジオメトリを操作し、その表面上の点を取得する方法を検討します。 Aspose.GIS は、.NET アプリケーションでの地理空間データの処理、操作、視覚化のためのさまざまな機能を提供する強力なライブラリです。
 ## 前提条件
@@ -66,3 +72,9 @@ Console.WriteLine(polygon.SpatiallyContains(pointOnSurface)); //真実
 はい、Aspose.GIS の一時ライセンスを次のサイトから取得できます。[ここ](https://purchase.aspose.com/temporary-license/).
 ### Aspose.GIS はどこで購入できますか?
  Aspose.GIS は購入ページから購入できます[ここ](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

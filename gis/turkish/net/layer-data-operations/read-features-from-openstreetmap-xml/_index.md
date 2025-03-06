@@ -3,10 +3,16 @@ title: Aspose.GIS'te OpenStreetMap XML'in Özelliklerini Okuyun
 linktitle: OpenStreetMap XML'den Özellikleri Oku
 second_title: Aspose.GIS .NET API'si
 description: Aspose.GIS for .NET kullanarak OpenStreetMap XML'deki özellikleri nasıl okuyacağınızı öğrenin. Kod örnekleriyle adım adım eğitim.
-type: docs
 weight: 13
 url: /tr/net/layer-data-operations/read-features-from-openstreetmap-xml/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS'te OpenStreetMap XML'in Özelliklerini Okuyun
+
 ## giriiş
 Aspose.GIS for .NET, geliştiricilerin .NET uygulamalarında coğrafi bilgi sistemi (GIS) verileriyle çalışmasına olanak tanıyan güçlü bir kütüphanedir. İster bir haritalama uygulaması oluşturuyor olun, ister mekansal verileri analiz ediyor olun, ister GIS işlevselliğini yazılımınıza entegre ediyor olun, Aspose.GIS, geliştirme sürecinizi kolaylaştırmak için çok çeşitli özellikler sunar.
 Bu eğitimde Aspose.GIS for .NET kullanarak OpenStreetMap XML'deki özelliklerin nasıl okunacağını inceleyeceğiz. Uzmanlık seviyeniz ne olursa olsun kolayca takip edebilmenizi sağlamak için her adımı yönetilebilir parçalara ayıracağız.
@@ -75,3 +81,9 @@ Evet, Aspose.GIS'i ticari projelerde kullanmak için lisans satın alabilirsiniz
  Ziyaret edebilirsiniz[Aspose.GIS forumu](https://forum.aspose.com/c/gis/33) Yardım almak ve diğer kullanıcılarla ve geliştiricilerle bağlantı kurmak için.
 ### Aspose.GIS for .NET için geçici bir lisans alabilir miyim?
  Evet, geçici lisans talebinde bulunabilirsiniz.[geçici lisans sayfası](https://purchase.aspose.com/temporary-license/) test ve değerlendirme amaçlıdır.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

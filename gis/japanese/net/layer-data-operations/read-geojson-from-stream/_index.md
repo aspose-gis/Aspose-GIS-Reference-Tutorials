@@ -3,10 +3,16 @@ title: Aspose.GIS for .NET を使用したストリームからの GeoJSON の�
 linktitle: ストリームから GeoJSON を読み取る
 second_title: Aspose.GIS .NET API
 description: Aspose.GIS for .NET を使用してストリームから GeoJSON を読み取る方法を学びます。地理空間をアプリケーションにシームレスに統合するには、ステップバイステップのガイドに従ってください。
-type: docs
 weight: 14
 url: /ja/net/layer-data-operations/read-geojson-from-stream/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS for .NET を使用したストリームからの GeoJSON の読み取り
+
 ## 導入
 Aspose.GIS for .NET を使用してストリームから GeoJSON を読み取るためのステップバイステップ ガイドへようこそ。 Aspose.GIS は、.NET アプリケーションに地理空間機能を提供する強力な API であり、さまざまな GIS 形式をシームレスに操作できるようになります。このチュートリアルでは、Aspose.GIS を使用してストリームから GeoJSON データを読み取るプロセスを説明し、明確さと理解を容易にするために各ステップに分けて説明します。
 ## 前提条件
@@ -56,3 +62,9 @@ using (var layer = VectorLayer.Open(AbstractPath.FromStream(memoryStream), Drive
  Aspose フォーラムで Aspose.GIS のサポートを受けることができます。[ここ](https://forum.aspose.com/c/gis/33).
 ### Aspose.GIS を使用するには一時ライセンスが必要ですか?
  Aspose.GIS の一時ライセンスは、以下から取得できます。[ここ](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

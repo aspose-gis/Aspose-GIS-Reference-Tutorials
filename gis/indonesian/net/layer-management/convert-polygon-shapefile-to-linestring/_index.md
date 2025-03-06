@@ -3,10 +3,16 @@ title: Ubah Bentuk Poligon menjadi Linestring
 linktitle: Ubah Bentuk Poligon menjadi Linestring
 second_title: Aspose.GIS .NET API
 description: Jelajahi kekuatan Aspose.GIS untuk .NET dan konversikan Polygon Shapefiles ke Linestrings dengan mudah. Tingkatkan pengembangan GIS Anda hari ini!
-type: docs
 weight: 18
 url: /id/net/layer-management/convert-polygon-shapefile-to-linestring/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Ubah Bentuk Poligon menjadi Linestring
+
 ## Perkenalan
 Jika Anda bekerja dengan sistem informasi geografis (GIS) di .NET, Aspose.GIS adalah perpustakaan canggih yang dapat menyederhanakan tugas Anda. Dalam tutorial ini, kami akan memandu Anda melalui proses konversi Polygon Shapefile menjadi Linestring menggunakan Aspose.GIS. Hal ini sangat berguna ketika Anda perlu mengekstrak fitur linier dari data poligonal untuk berbagai aplikasi seperti perencanaan rute atau analisis jaringan.
 ## Prasyarat
@@ -78,3 +84,9 @@ Ya, Aspose.GIS mendukung berbagai versi .NET, memastikan kompatibilitas dengan l
  Ya, Anda dapat menjelajahi Aspose.GIS dengan uji coba gratis dengan mengunjungi[Link ini](https://releases.aspose.com/).
 ### Di mana saya dapat mencari bantuan atau dukungan?
  Mengunjungi[Forum Aspose.GIS](https://forum.aspose.com/c/gis/33) untuk bantuan atau pertanyaan terkait dukungan apa pun.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

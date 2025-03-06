@@ -3,10 +3,16 @@ title: Zvládnutí překrytí geometrie pomocí Aspose.GIS pro .NET
 linktitle: Najděte překrytí geometrie
 second_title: Aspose.GIS .NET API
 description: Naučte se provádět operace geometrického překrývání pomocí Aspose.GIS pro .NET. Operace hlavního průniku, sjednocení, rozdílu a symetrického rozdílu.
-type: docs
 weight: 16
 url: /cs/net/geometry-analysis/find-geometry-overlays/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Zvládnutí překrytí geometrie pomocí Aspose.GIS pro .NET
+
 ## Úvod
 oblasti geografických informačních systémů (GIS) jsou operace překrytí zásadní pro prostorovou analýzu. Umožňují porovnávání a kombinování různých souborů prostorových dat za účelem získání cenných poznatků. Aspose.GIS for .NET poskytuje robustní funkce pro efektivní provádění geometrických překryvů. V tomto tutoriálu se ponoříme do různých překryvných operací, jako je Intersection, Union, Difference a Symmetric Difference pomocí Aspose.GIS pro .NET.
 ## Předpoklady
@@ -108,3 +114,9 @@ Ano, Aspose.GIS for .NET lze použít v komerčních i nekomerčních projektech
  Ano, dočasné licence jsou k dispozici pro účely testování a hodnocení. Můžete je získat z[tady](https://purchase.aspose.com/temporary-license/).
 ### Otázka: Mohu koupit Aspose.GIS pro .NET přímo?
  Ano, Aspose.GIS pro .NET si můžete zakoupit z webu[tady](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

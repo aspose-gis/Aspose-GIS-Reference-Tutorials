@@ -3,10 +3,16 @@ title: Geometri Oluşturma
 linktitle: Geometri Oluşturma
 second_title: Aspose.GIS .NET API'si
 description: Aspose.GIS for .NET ile coğrafi veri manipülasyonunun potansiyelini ortaya çıkarın. Geometri oluşturma, dönüştürme ve analiz konularını kapsayan eğitimlerimize göz atın.
-type: docs
 weight: 21
 url: /tr/net/geometry-creation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Geometri Oluşturma
+
 
 ## giriiş
 
@@ -105,3 +111,9 @@ Aspose.GIS for .NET kullanarak bir geometrideki geometrileri nasıl sayacağın�
 Coğrafi verileri zahmetsizce işlemek için Aspose.GIS for .NET'i nasıl kullanacağınızı öğrenin. Kapsamlı eğitimler mevcuttur.
 ### [Aspose.GIS ile Dönüşümü Koordine Et](./convert-coordinates/)
 Aspose.GIS for .NET ile koordinatları nasıl dönüştüreceğinizi öğrenin. Adım adım kılavuz, ön koşullar ve SSS sağlanmıştır.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

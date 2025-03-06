@@ -3,10 +3,16 @@ title: Линеаризация геометрии
 linktitle: Линеаризация геометрии
 second_title: API Aspose.GIS .NET
 description: Узнайте, как использовать Aspose.GIS for .NET для эффективной работы с геопространственными данными, выполнения пространственного анализа и манипулирования географическими данными в ваших приложениях .NET.
-type: docs
 weight: 14
 url: /ru/net/geometry-processing/linearize-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Линеаризация геометрии
+
 ## Введение
 Aspose.GIS for .NET — это мощная библиотека, которая позволяет разработчикам эффективно работать с геопространственными данными в приложениях .NET. Создаете ли вы картографическое приложение, выполняете пространственный анализ или манипулируете географическими данными, Aspose.GIS предоставляет инструменты, необходимые для выполнения работы.
 ## Предварительные условия
@@ -83,3 +89,9 @@ layer.Add(feature);
  Да, вы можете загрузить бесплатную пробную версию с сайта[Веб-сайт Aspose](https://releases.aspose.com/).
 ### Вопрос: Где я могу найти помощь и поддержку по Aspose.GIS?
  Вы можете посетить[Форум Aspose.GIS](https://forum.aspose.com/c/gis/33) за помощь со стороны сообщества и сотрудников службы поддержки Aspose.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

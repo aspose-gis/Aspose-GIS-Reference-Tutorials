@@ -3,10 +3,16 @@ title: Gestión de capas
 linktitle: Gestión de capas
 second_title: Aspose.GIS API .NET
 description: Libere el potencial del desarrollo geoespacial con los tutoriales de Aspose.GIS para .NET. Cree, administre y manipule conjuntos de datos SIG sin esfuerzo.
-type: docs
 weight: 24
 url: /es/net/layer-management/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Gestión de capas
+
 ## Introducción
 
 Aspose.GIS para .NET permite a los desarrolladores profundizar en el apasionante mundo del desarrollo geoespacial. En esta lista completa de tutoriales, exploramos varios tutoriales de administración de capas que lo guiarán para desbloquear todo el potencial de Aspose.GIS para .NET. Desde la creación de nuevos conjuntos de datos de File GDB hasta la manipulación de datos espaciales, estos tutoriales lo cubren todo.
@@ -68,3 +74,9 @@ Explore el poder de Aspose.GIS para .NET y convierta sin esfuerzo archivos de fo
 Explore el poder de Aspose.GIS para .NET en la manipulación de datos espaciales. Filtre funciones sin esfuerzo, mejore las aplicaciones SIG y aumente la productividad.
 ### [Extraer características a GeoJSON](./extract-features-to-geojson/)
 Explore la guía paso a paso sobre el uso de Aspose.GIS para .NET para extraer funciones a GeoJSON. ¡Aproveche el poder de SIG con facilidad! 
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

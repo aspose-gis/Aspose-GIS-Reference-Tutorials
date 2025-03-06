@@ -3,10 +3,16 @@ title: Aspose.GIS ile Geometriler Arasındaki Mesafeyi Hesaplayın
 linktitle: Geometriler Arasındaki Mesafeyi Hesaplayın
 second_title: Aspose.GIS .NET API'si
 description: Aspose.GIS'i kullanarak .NET'te geometriler arasındaki mesafeleri nasıl hesaplayacağınızı öğrenin. Kod örnekleri içeren adım adım kılavuz. Jeo-uzamsal uygulamalarınızı geliştirin.
-type: docs
 weight: 21
 url: /tr/net/geometry-analysis/calculate-distance-between-geometries/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS ile Geometriler Arasındaki Mesafeyi Hesaplayın
+
 ## giriiş
 Jeouzaysal programlama alanında, farklı geometriler arasındaki mesafeleri hesaplama yeteneği çok önemlidir. İster çokgenler, çizgiler veya noktalarla ilgileniyor olun, aralarındaki mesafeyi bilmek haritalamadan lojistik planlamaya kadar çeşitli uygulamalar için çok önemli olabilir. Aspose.GIS for .NET, bu tür hesaplamaları kolaylıkla ve hassasiyetle gerçekleştirmek için güçlü araçlar sağlar.
 ## Önkoşullar
@@ -84,3 +90,9 @@ Evet, Aspose.GIS for .NET'i kullanarak hem 2D hem de 3D geometrilerle çalışab
 Aspose.GIS for .NET, diğer GIS kütüphaneleriyle birlikte çalışabilirlik sağlayarak ek işlevlerden yararlanmanıza olanak tanır.
 ### Aspose.GIS for .NET kullanıcıları için teknik destek mevcut mu?
  Evet, Aspose.GIS for .NET kullanıcıları Aspose aracılığıyla teknik desteğe erişebilirler.[forumlar](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

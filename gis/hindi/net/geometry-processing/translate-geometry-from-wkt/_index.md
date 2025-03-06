@@ -3,10 +3,16 @@ title: .NET में Aspose.GIS का उपयोग करके WKT से 
 linktitle: WKT से ज्यामिति का अनुवाद करें
 second_title: Aspose.GIS .NET एपीआई
 description: .NET के लिए Aspose.GIS का उपयोग करके सुप्रसिद्ध पाठ से ज्यामिति का अनुवाद करना सीखें। निर्बाध एकीकरण के लिए चरण-दर-चरण ट्यूटोरियल।
-type: docs
 weight: 21
 url: /hi/net/geometry-processing/translate-geometry-from-wkt/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# .NET में Aspose.GIS का उपयोग करके WKT से ज्यामिति का अनुवाद करें
+
 ## परिचय
 इस ट्यूटोरियल में, हम .NET के लिए Aspose.GIS का उपयोग करके वेल-नोन टेक्स्ट (WKT) से ज्यामिति का अनुवाद करने की प्रक्रिया के बारे में विस्तार से जानेंगे। Aspose.GIS एक शक्तिशाली .NET API है जो डेवलपर्स को भू-स्थानिक डेटा के साथ सहजता से काम करने की अनुमति देता है। चाहे आप एक अनुभवी डेवलपर हों या सिर्फ भू-स्थानिक प्रोग्रामिंग से शुरुआत कर रहे हों, यह ट्यूटोरियल आपको चरण दर चरण प्रक्रिया में मार्गदर्शन करेगा।
 ## आवश्यक शर्तें
@@ -48,3 +54,9 @@ Console.WriteLine(line.Count); // आउटपुट: 3
  आप दस्तावेज़ पा सकते हैं[यहाँ](https://reference.aspose.com/gis/net/).
 ### मैं .NET के लिए Aspose.GIS के लिए समर्थन कैसे प्राप्त कर सकता हूँ?
  आप Aspose.GIS फोरम से समर्थन प्राप्त कर सकते हैं[यहाँ](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

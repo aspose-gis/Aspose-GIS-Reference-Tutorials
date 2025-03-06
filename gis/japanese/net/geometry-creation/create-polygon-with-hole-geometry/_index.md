@@ -3,10 +3,16 @@ title: Aspose.GIS を使用して穴ジオメトリを持つポリゴンを作�
 linktitle: 穴ジオメトリを使用してポリゴンを作成する
 second_title: Aspose.GIS .NET API
 description: Aspose.GIS for .NET を使用して穴ジオメトリを持つポリゴンを作成する方法を学びます。コード例を含むステップバイステップのチュートリアル。
-type: docs
 weight: 13
 url: /ja/net/geometry-creation/create-polygon-with-hole-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS を使用して穴ジオメトリを持つポリゴンを作成する
+
 ## 導入
 このチュートリアルでは、Aspose.GIS for .NET を使用して穴ジオメトリを持つポリゴンを作成するプロセスを説明します。 Aspose.GIS は、開発者が .NET アプリケーションで地理空間データを操作できるようにする強力なライブラリです。 
 ## 前提条件
@@ -66,3 +72,9 @@ Aspose.GIS は、開発者が地理空間データを操作し、さまざまな
  Aspose.GIS のサポートは、[Aspose.GIS フォーラム](https://forum.aspose.com/c/gis/33).
 ### 5. Aspose.GIS の一時ライセンスを取得するにはどうすればよいですか?
  Aspose.GIS の一時ライセンスは、以下から取得できます。[ここ](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

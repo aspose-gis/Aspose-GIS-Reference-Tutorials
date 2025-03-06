@@ -3,10 +3,16 @@ title: GIS 숙달 - .NET용 Aspose.GIS를 사용하여 GDB에 레이어 추가
 linktitle: 파일 GDB 데이터세트에 레이어 추가
 second_title: Aspose.GIS .NET API
 description: .NET용 Aspose.GIS를 사용하여 GIS의 강력한 기능을 활용해 보세요! 이 단계별 튜토리얼에서 File GDB 데이터세트에 레이어를 추가하는 방법을 알아보세요. #지리적 데이터 #Aspose #GIS
-type: docs
 weight: 16
 url: /ko/net/layer-management/add-layer-to-file-gdb-dataset/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# GIS 숙달 - .NET용 Aspose.GIS를 사용하여 GDB에 레이어 추가
+
 ## 소개
 .NET용 Aspose.GIS를 사용하여 GIS 기능을 향상시킬 준비가 되셨습니까? 이 단계별 가이드에서는 파일 지리 데이터베이스(GDB) 데이터세트에 레이어를 추가하는 과정을 안내합니다. .NET용 Aspose.GIS는 지리 정보를 조작하는 강력한 기능을 제공하며, 이 튜토리얼을 사용하면 추가 레이어를 데이터 세트에 원활하게 통합할 수 있습니다.
 ## 전제조건
@@ -75,3 +81,9 @@ using (var layer = dataset.OpenLayer("data"))
  전적으로! 토론에 참여하고 경험을 공유하세요.[Aspose.GIS 포럼](https://forum.aspose.com/c/gis/33).
 ### Q: .NET용 Aspose.GIS에 대한 자세한 문서는 어디서 찾을 수 있나요?
  포괄적인 문서 살펴보기[여기](https://reference.aspose.com/gis/net/) .NET용 Aspose.GIS에 대한 자세한 정보를 확인하세요.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

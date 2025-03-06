@@ -3,10 +3,16 @@ title: 使用 Aspose.GIS for .NET 檢查幾何圖形相交
 linktitle: 檢查幾何圖形相交
 second_title: Aspose.GIS .NET API
 description: 透過逐步指導了解如何使用 Aspose.GIS for .NET 檢查幾何圖形相交。輕鬆增強您的 GIS 開發。
-type: docs
 weight: 11
 url: /zh-hant/net/geometry-analysis/check-geometries-intersection/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.GIS for .NET 檢查幾何圖形相交
+
 ## 介紹
 在地理資訊系統 (GIS) 領域，Aspose.GIS for .NET 作為一個強大的工具包脫穎而出，使開發人員能夠將高級空間功能無縫整合到他們的應用程式中。無論您是經驗豐富的開發人員還是剛剛涉足 GIS 開發，本文都將作為您利用 Aspose.GIS for .NET 有效檢查幾何圖形相交的綜合指南。
 ## 先決條件
@@ -76,3 +82,9 @@ Console.WriteLine(geometry1.Disjoint(geometry2)); //錯誤的
 是的，您可以從以下地址獲得臨時許可證[這裡](https://purchase.aspose.com/temporary-license/).
 ### 哪裡可以購買 Aspose.GIS for .NET 的授權版本？
 您可以從以下位置購買 Aspose.GIS for .NET 的授權版本：[這裡](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

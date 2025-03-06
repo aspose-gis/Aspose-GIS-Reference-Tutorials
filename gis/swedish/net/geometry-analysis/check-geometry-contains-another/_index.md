@@ -3,10 +3,16 @@ title: Kontrollera att geometrin innehåller en annan
 linktitle: Kontrollera att geometrin innehåller en annan
 second_title: Aspose.GIS .NET API
 description: Utforska Aspose.GIS för .NET, ett robust bibliotek för sömlös integrering av geospatial data i dina .NET-applikationer.
-type: docs
 weight: 14
 url: /sv/net/geometry-analysis/check-geometry-contains-another/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Kontrollera att geometrin innehåller en annan
+
 ## Introduktion
 Aspose.GIS för .NET är ett kraftfullt bibliotek som gör det möjligt för utvecklare att arbeta med geospatial data sömlöst i sina .NET-applikationer. Oavsett om du bygger en kartapplikation, utför geospatial analys eller integrerar platsbaserade funktioner i din programvara, förenklar Aspose.GIS processen genom att tillhandahålla intuitiva API:er och robust funktionalitet.
 ## Förutsättningar
@@ -85,3 +91,9 @@ S: Aspose.GIS släpper regelbundet uppdateringar för att förbättra prestanda,
 S: Ja, du kan gå med i Aspose.GIS-gemenskapsforumet[här](https://forum.aspose.com/c/gis/33) att få kontakt med andra användare, ställa frågor och dela dina erfarenheter.
 ### F5: Kan jag prova Aspose.GIS innan jag köper?
  S: Visst, du kan utforska Aspose.GIS genom att ladda ner den kostnadsfria testversionen från[här](https://releases.aspose.com/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

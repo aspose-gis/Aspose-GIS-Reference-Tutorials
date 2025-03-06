@@ -3,10 +3,16 @@ title: Určete variantu WKT při překladu pomocí Aspose.GIS
 linktitle: Při překladu zadejte variantu WKT
 second_title: Aspose.GIS .NET API
 description: Naučte se, jak specifikovat varianty WKT v Aspose.GIS pro .NET, abyste mohli efektivně řídit formát a přesnost reprezentace prostorových dat.
-type: docs
 weight: 19
 url: /cs/net/geometry-processing/specify-wkt-variant-on-translation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Určete variantu WKT při překladu pomocí Aspose.GIS
+
 ## Úvod
 Aspose.GIS for .NET je výkonná knihovna, která umožňuje vývojářům bez námahy pracovat s daty geografického informačního systému (GIS) v jejich aplikacích .NET. Jednou ze základních funkcí poskytovaných Aspose.GIS je schopnost specifikovat variantu dobře známého textu (WKT) během překladu, což uživatelům umožňuje řídit formát a přesnost reprezentací prostorových dat. V tomto tutoriálu prozkoumáme, jak specifikovat varianty WKT krok za krokem pomocí Aspose.GIS pro .NET.
 ## Předpoklady
@@ -66,3 +72,9 @@ Ano, Aspose.GIS podporuje širokou škálu formátů prostorových dat, včetně
  Ano, můžete si stáhnout bezplatnou zkušební verzi Aspose.GIS z[tady](https://releases.aspose.com/).
 ### Kde mohu získat pomoc nebo podporu pro Aspose.GIS?
  Své dotazy můžete zveřejnit nebo požádat o pomoc komunitu Aspose.GIS na adrese[Fórum](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

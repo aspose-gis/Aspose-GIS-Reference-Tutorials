@@ -3,10 +3,16 @@ title: Shapefile'ı GeoJSON'a dönüştürün
 linktitle: Shapefile'ı GeoJSON'a dönüştürün
 second_title: Aspose.GIS .NET API'si
 description: Aspose.GIS'i kullanarak Shapefile'ı .NET'te GeoJSON'a zahmetsizce nasıl dönüştürebileceğinizi öğrenin. Sorunsuz veri birlikte çalışabilirliği için adım adım kılavuzumuzu izleyin.
-type: docs
 weight: 15
 url: /tr/net/geo-data-conversion/convert-shapefile-to-geojson/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Shapefile'ı GeoJSON'a dönüştürün
+
 ## giriiş
 Coğrafi Bilgi Sistemleri (GIS) alanında, verilerin birlikte çalışabilirliği kusursuz entegrasyon ve analiz için çok önemlidir. Yaygın bir görev, yaygın olarak kullanılan bir coğrafi uzamsal vektör veri formatı olan Shapefiles'ı, coğrafi uzamsal veri alışverişi için hafif bir format olan GeoJSON'a dönüştürmektir. Bu eğitim, Aspose.GIS for .NET kütüphanesini kullanarak Shapefile'ı zahmetsizce GeoJSON'a dönüştürme sürecinde size rehberlik edecektir.
 ## Önkoşullar
@@ -58,3 +64,9 @@ Evet, Aspose.GIS for .NET, GeoTIFF, KML, GML ve daha fazlasını içeren çok ç
 Evet, Aspose.GIS for .NET, dönüştürme sürecini gereksinimlerinize göre özelleştirmek için kapsamlı seçenekler sunar.
 ### Aspose.GIS for .NET'in deneme sürümü mevcut mu?
  Evet, Aspose.GIS for .NET'in ücretsiz deneme sürümünden şu adresten yararlanabilirsiniz:[İnternet sitesi](https://releases.aspose.com/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

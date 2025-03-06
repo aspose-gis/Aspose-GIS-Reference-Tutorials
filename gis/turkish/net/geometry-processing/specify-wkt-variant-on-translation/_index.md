@@ -3,10 +3,16 @@ title: Aspose.GIS kullanarak Çeviride WKT Varyantını Belirleyin
 linktitle: Çeviride WKT Varyantını Belirtin
 second_title: Aspose.GIS .NET API'si
 description: Uzamsal veri temsil formatını ve hassasiyetini etkili bir şekilde kontrol etmek için Aspose.GIS for .NET'te WKT değişkenlerini nasıl belirleyeceğinizi öğrenin.
-type: docs
 weight: 19
 url: /tr/net/geometry-processing/specify-wkt-variant-on-translation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS kullanarak Çeviride WKT Varyantını Belirleyin
+
 ## giriiş
 Aspose.GIS for .NET, geliştiricilerin .NET uygulamalarında coğrafi bilgi sistemi (GIS) verileriyle zahmetsizce çalışmasına olanak tanıyan güçlü bir kütüphanedir. Aspose.GIS'in sağladığı temel özelliklerden biri, çeviri sırasında İyi Bilinen Metin (WKT) değişkenini belirleyerek kullanıcıların konumsal veri temsillerinin formatını ve hassasiyetini kontrol edebilmesidir. Bu eğitimde, Aspose.GIS for .NET'i kullanarak WKT varyantlarının adım adım nasıl belirleneceğini inceleyeceğiz.
 ## Önkoşullar
@@ -66,3 +72,9 @@ Evet, Aspose.GIS, ESRI Shapefile, GeoJSON ve KML dahil olmak üzere çok çeşit
  Evet, Aspose.GIS'in ücretsiz deneme sürümünü şu adresten indirebilirsiniz:[Burada](https://releases.aspose.com/).
 ### Aspose.GIS için nereden yardım veya destek alabilirim?
  Aspose.GIS topluluğundan sorularınızı gönderebilir veya yardım isteyebilirsiniz.[forum](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

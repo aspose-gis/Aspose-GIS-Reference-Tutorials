@@ -3,10 +3,16 @@ title: ジオメトリを線形化する
 linktitle: ジオメトリを線形化する
 second_title: Aspose.GIS .NET API
 description: Aspose.GIS for .NET を使用して、地理空間データを効率的に操作し、空間分析を実行し、.NET アプリケーション内で地理を操作する方法を学びます。
-type: docs
 weight: 14
 url: /ja/net/geometry-processing/linearize-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# ジオメトリを線形化する
+
 ## 導入
 Aspose.GIS for .NET は、開発者が .NET アプリケーション内で地理空間データを効率的に操作できるようにする強力なライブラリです。マッピング アプリケーションの構築、空間分析の実行、地理データの操作のいずれの場合でも、Aspose.GIS はその作業を完了するために必要なツールを提供します。
 ## 前提条件
@@ -83,3 +89,9 @@ layer.Add(feature);
 はい、次のサイトから無料試用版をダウンロードできます。[Aspose ウェブサイト](https://releases.aspose.com/).
 ### Q: Aspose.GIS のヘルプとサポートはどこで見つけられますか?
 訪問できます。[Aspose.GIS フォーラム](https://forum.aspose.com/c/gis/33)コミュニティおよび Aspose サポート スタッフからの支援が必要です。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

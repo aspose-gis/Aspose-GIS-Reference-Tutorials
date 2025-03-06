@@ -3,10 +3,16 @@ title: قراءة الميزات من GML في Aspose.GIS
 linktitle: قراءة الميزات من GML
 second_title: Aspose.GIS .NET API
 description: تعرف على كيفية قراءة الميزات من ملفات GML باستخدام Aspose.GIS لـ .NET. برنامج تعليمي شامل لمطوري نظم المعلومات الجغرافية.
-type: docs
 weight: 10
 url: /ar/net/layer-data-operations/read-features-from-gml/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# قراءة الميزات من GML في Aspose.GIS
+
 ## مقدمة
 
 هل أنت مستعد للتعمق في عالم نظم المعلومات الجغرافية (GIS) باستخدام مكتبة Aspose.GIS for .NET القوية؟ سواء كنت مطورًا متمرسًا أو بدأت رحلتك في برمجة نظم المعلومات الجغرافية، فسيرشدك هذا البرنامج التعليمي خلال عملية قراءة الميزات من ملفات GML (لغة التوصيف الجغرافي) خطوة بخطوة. يوفر Aspose.GIS for .NET مجموعة شاملة من الأدوات وواجهات برمجة التطبيقات لمعالجة البيانات الجغرافية المكانية دون عناء، مما يسمح لك بإطلاق الإمكانات الكاملة لتطبيقات نظم المعلومات الجغرافية الخاصة بك.
@@ -113,3 +119,9 @@ using (VectorLayer layer = VectorLayer.Open(dataDir + "file.gml", Drivers.Gml, n
 ### س: هل الدعم الفني متاح لمستخدمي Aspose.GIS؟
 
  ج: نعم، توفر Aspose دعمًا فنيًا مخصصًا من خلال المنتدى الخاص بها[وصلة]( https://forum.aspose.com/c/gis/33)، حيث يمكن للمستخدمين طلب المساعدة والإبلاغ عن المشكلات والتفاعل مع المجتمع.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

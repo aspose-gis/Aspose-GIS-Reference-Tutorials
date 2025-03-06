@@ -3,10 +3,16 @@ title: 获取特征属性值（默认）
 linktitle: 获取特征属性值（默认）
 second_title: Aspose.GIS .NET API
 description: 释放 Aspose.GIS for .NET 的强大功能！使用此分步指南轻松检索和操作要素属性值。立即下载试用版！
-type: docs
 weight: 14
 url: /zh/net/layer-interaction-and-data-access/get-feature-attribute-value-default/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 获取特征属性值（默认）
+
 ## 介绍
 欢迎来到 Aspose.GIS for .NET 的世界！在本综合指南中，我们将深入探讨使用 Aspose.GIS 的强大功能检索要素属性值的复杂性。无论您是经验丰富的开发人员还是刚刚入门，本教程都将为您提供分步演练，确保您充分利用这个出色工具的潜力。
 ## 先决条件
@@ -97,3 +103,9 @@ using (var layer = Drivers.GeoJson.CreateLayer(dataDir + "data2_out.json"))
 是的，您可以通过免费试用来探索 Aspose.GIS。下载它[这里](https://releases.aspose.com/).
 ### 如何获得用于测试目的的临时许可证？
 如需临时许可证，请访问[这里](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

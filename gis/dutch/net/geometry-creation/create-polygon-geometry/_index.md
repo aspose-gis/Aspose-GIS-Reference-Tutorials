@@ -3,10 +3,16 @@ title: Creëer polygoongeometrie met Aspose.GIS voor .NET
 linktitle: Maak veelhoekgeometrie
 second_title: Aspose.GIS .NET-API
 description: Leer hoe u polygoongeometrie kunt maken met Aspose.GIS voor .NET. Stapsgewijze zelfstudie voor .NET-ontwikkelaars.
-type: docs
 weight: 12
 url: /nl/net/geometry-creation/create-polygon-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Creëer polygoongeometrie met Aspose.GIS voor .NET
+
 ## Invoering
 In de wereld van softwareontwikkeling spelen geografische informatiesystemen (GIS) een cruciale rol bij het analyseren en visualiseren van ruimtelijke gegevens. Aspose.GIS voor .NET is een krachtige bibliotheek die ontwikkelaars de tools biedt die ze nodig hebben om efficiënt met GIS-gegevens te werken. In deze tutorial zullen we onderzoeken hoe je Aspose.GIS voor .NET kunt gebruiken om polygoongeometrie te creëren, een essentiële taak in veel GIS-toepassingen.
 ## Vereisten
@@ -66,3 +72,9 @@ Ja, Aspose.GIS voor .NET ondersteunt verschillende GIS-bestandsindelingen zoals 
  Ja, u kunt een gratis proefversie van Aspose.GIS voor .NET downloaden van[hier](https://releases.aspose.com/).
 ### Waar kan ik ondersteuning krijgen voor Aspose.GIS voor .NET?
  U kunt ondersteuning voor Aspose.GIS voor .NET krijgen van de[Aspose.GIS-forum](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

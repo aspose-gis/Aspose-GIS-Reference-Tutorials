@@ -3,10 +3,16 @@ title: 建立單層檔案 GDB
 linktitle: 建立單層檔案 GDB
 second_title: Aspose.GIS .NET API
 description: 使用 Aspose.GIS 釋放 .NET 中地理空間資料管理的潛力。了解如何逐步建立文件地理資料庫和圖層。現在下載！
-type: docs
 weight: 11
 url: /zh-hant/net/layer-management/create-file-gdb-with-single-layer/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 建立單層檔案 GDB
+
 ## 介紹
 您準備好使用強大的文件地理資料庫和圖層來提升您的地理空間應用程式了嗎？ Aspose.GIS for .NET 是您的最佳選擇。在本教學中，我們將引導您完成使用 Aspose.GIS for .NET 建立單層文件地理資料庫 (GDB) 的過程。輕鬆利用 .NET 應用程式中空間資料管理和視覺化的強大功能。
 ## 先決條件
@@ -70,3 +76,9 @@ using (var layer = dataset.OpenLayer("layer"))
 參觀[Aspose.GIS論壇](https://forum.aspose.com/c/gis/33)以獲得社區的支持和幫助。
 ### Aspose.GIS for .NET 是否有臨時許可證？
 是的，您可以獲得[臨時執照](https://purchase.aspose.com/temporary-license/)適用於 Aspose.GIS for .NET。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

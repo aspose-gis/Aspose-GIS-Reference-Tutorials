@@ -3,10 +3,16 @@ title: Dapatkan Tipe Geometri dengan Aspose.GIS untuk .NET
 linktitle: Dapatkan Tipe Geometri
 second_title: Aspose.GIS .NET API
 description: Temukan kehebatan Aspose.GIS untuk .NET. Pelajari cara menangani data spasial secara efisien di proyek .NET Anda dengan tutorial komprehensif ini.
-type: docs
 weight: 23
 url: /id/net/geometry-analysis/get-geometry-type/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Dapatkan Tipe Geometri dengan Aspose.GIS untuk .NET
+
 ## Perkenalan
 Dalam bidang pengembangan .NET, Aspose.GIS berfungsi sebagai alat yang ampuh untuk menangani informasi geografis. Fungsionalitasnya yang kaya menjadikannya pilihan tepat bagi pengembang yang bekerja dengan data spasial. Dalam tutorial ini, kita akan mempelajari dasar-dasar Aspose.GIS untuk .NET, menguraikan konsep-konsep utama dan memberikan panduan langkah demi langkah untuk membantu Anda memulai dengan mudah.
 ## Prasyarat
@@ -63,3 +69,9 @@ Ya, Aspose.GIS mendukung berbagai versi .NET, memastikan kompatibilitas di berba
  Untuk opsi lisensi sementara, kunjungi[izin sementara](https://purchase.aspose.com/temporary-license/) halaman.
 ### Di mana saya dapat membeli Aspose.GIS untuk proyek saya?
  Anda dapat membeli Aspose.GIS dari halaman pembelian[Di Sini](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

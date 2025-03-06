@@ -3,10 +3,16 @@ title: 使用 Aspose.GIS 指定翻譯時的 WKT 變體
 linktitle: 指定翻譯時的 WKT 變體
 second_title: Aspose.GIS .NET API
 description: 了解如何在 Aspose.GIS for .NET 中指定 WKT 變體，以有效控制空間資料表示格式和精確度。
-type: docs
 weight: 19
 url: /zh-hant/net/geometry-processing/specify-wkt-variant-on-translation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.GIS 指定翻譯時的 WKT 變體
+
 ## 介紹
 Aspose.GIS for .NET 是一個功能強大的程式庫，可讓開發人員在其 .NET 應用程式中輕鬆使用地理資訊系統 (GIS) 資料。 Aspose.GIS 提供的基本功能之一是能夠在翻譯過程中指定眾所周知的文字 (WKT) 變體，使用戶能夠控制空間資料表示的格式和精確度。在本教程中，我們將探索如何使用 Aspose.GIS for .NET 逐步指定 WKT 變體。
 ## 先決條件
@@ -66,3 +72,9 @@ Console.WriteLine("Flat3: " + point.AsText(WktVariant.Iso, NumericFormat.Flat(3)
 是的，您可以從以下位置下載 Aspose.GIS 的免費試用版：[這裡](https://releases.aspose.com/).
 ### 我可以在哪裡獲得 Aspose.GIS 的協助或支援？
 您可以在 Aspose.GIS 社群發佈您的問題或尋求協助：[論壇](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

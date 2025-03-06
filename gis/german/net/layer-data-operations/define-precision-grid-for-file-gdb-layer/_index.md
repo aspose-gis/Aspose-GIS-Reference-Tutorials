@@ -3,10 +3,16 @@ title: Definieren Sie das Präzisionsraster für die Datei-GDB-Ebene in Aspose.G
 linktitle: Definieren Sie das Präzisionsraster für die Datei-GDB-Ebene
 second_title: Aspose.GIS .NET-API
 description: Erfahren Sie, wie Sie mit Aspose.GIS für .NET ein Präzisionsraster für einen File-GDB-Layer definieren. Folgen Sie unserer Schritt-für-Schritt-Anleitung.
-type: docs
 weight: 21
 url: /de/net/layer-data-operations/define-precision-grid-for-file-gdb-layer/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Definieren Sie das Präzisionsraster für die Datei-GDB-Ebene in Aspose.GIS
+
 ## Einführung
 In diesem Tutorial erfahren Sie, wie Sie mithilfe von Aspose.GIS für .NET ein Präzisionsraster für einen GDB-Layer (File Geodatabase) definieren. Aspose.GIS ist eine leistungsstarke .NET-Bibliothek, die umfassende Geodatenfunktionen für die Arbeit mit verschiedenen GIS-Dateiformaten bietet.
 ## Voraussetzungen
@@ -88,3 +94,9 @@ Ja, Sie können mit Aspose.GIS für .NET räumliche Operationen wie Pufferung, S
 Ja, Aspose.GIS für .NET bietet Unterstützung für Koordinatentransformationen zwischen verschiedenen räumlichen Bezugssystemen.
 ### Gibt es eine Testversion für Aspose.GIS für .NET?
 Ja, Sie können eine kostenlose Testversion von Aspose.GIS für .NET herunterladen[Webseite](https://releases.aspose.com/gis/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

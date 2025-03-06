@@ -3,10 +3,16 @@ title: Créer une couche vectorielle avec SRS
 linktitle: Créer une couche vectorielle avec SRS
 second_title: API Aspose.GIS .NET
 description: Explorez Aspose.GIS pour .NET - votre clé pour une intégration SIG transparente. Créez facilement des couches vectorielles avec des systèmes de référence spatiale spécifiés. Télécharger maintenant!
-type: docs
 weight: 13
 url: /fr/net/layer-management/create-vector-layer-with-srs/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Créer une couche vectorielle avec SRS
+
 ## Introduction
 Aspose.GIS pour .NET est une bibliothèque puissante qui permet aux développeurs de travailler de manière transparente avec les données du système d'information géographique (SIG) dans les applications .NET. Dans ce didacticiel, nous nous concentrerons sur la création d'une couche vectorielle avec un système de référence spatiale (SRS). À la fin de ce guide, vous serez en mesure d'intégrer sans effort les fonctionnalités SIG dans vos projets .NET.
 ## Conditions préalables
@@ -90,3 +96,9 @@ Absolument! Aspose.GIS pour .NET est polyvalent et peut être utilisé dans des 
  Oui, vous pouvez explorer les fonctionnalités d'Aspose.GIS en obtenant un essai gratuit[ici](https://releases.aspose.com/).
 ### Comment puis-je acheter une licence pour Aspose.GIS ?
  Pour acheter une licence, visitez le[page d'achat](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

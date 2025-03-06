@@ -3,10 +3,16 @@ title: Tạo hình học đường cong phức hợp với Aspose.GIS trong .NET
 linktitle: Tạo hình học đường cong phức hợp
 second_title: API Aspose.GIS .NET
 description: Tìm hiểu cách tạo hình học đường cong phức hợp trong .NET bằng Aspose.GIS để xử lý dữ liệu không gian địa lý liền mạch.
-type: docs
 weight: 19
 url: /vi/net/geometry-creation/create-compound-curve-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Tạo hình học đường cong phức hợp với Aspose.GIS trong .NET
+
 ## Giới thiệu
 Trong thế giới phát triển .NET, Aspose.GIS là một công cụ mạnh mẽ cung cấp rất nhiều chức năng để làm việc với dữ liệu không gian địa lý. Cho dù bạn đang phát triển các ứng dụng để lập bản đồ, dịch vụ dựa trên vị trí hay phân tích địa lý, Aspose.GIS đều cung cấp các công cụ cần thiết để hợp lý hóa quy trình phát triển của bạn.
 ## Điều kiện tiên quyết
@@ -94,3 +100,9 @@ Có, Aspose.GIS có thể được sử dụng trong cả ứng dụng web và m
 Có, Aspose.GIS cung cấp một loạt chức năng phân tích không gian, bao gồm tính toán khoảng cách, các phép toán hình học và truy vấn không gian.
 ### Có diễn đàn cộng đồng hoặc kênh hỗ trợ nào dành cho người dùng Aspose.GIS không?
  Có, bạn có thể ghé thăm[Diễn đàn Aspose.GIS](https://forum.aspose.com/c/gis/33) để đặt câu hỏi, chia sẻ ý tưởng và tìm kiếm sự trợ giúp từ cộng đồng và nhóm hỗ trợ.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

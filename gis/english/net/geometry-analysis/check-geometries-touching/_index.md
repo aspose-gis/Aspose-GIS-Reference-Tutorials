@@ -3,10 +3,16 @@ title: Check Geometries Touching
 linktitle: Check Geometries Touching
 second_title: Aspose.GIS .NET API
 description: Unlock the power of spatial data handling with Aspose.GIS for .NET. Seamlessly integrate spatial functionalities into your applications with this versatile toolkit.
-type: docs
 weight: 13
 url: /net/geometry-analysis/check-geometries-touching/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Check Geometries Touching
+
 ## Introduction
 In the realm of Geographic Information Systems (GIS), Aspose.GIS for .NET stands out as a powerful tool for developers looking to incorporate spatial functionalities into their applications seamlessly. With its robust features and user-friendly interface, Aspose.GIS empowers developers to work with spatial data effortlessly, whether it's analyzing, visualizing, or manipulating geometries.
 ## Prerequisites
@@ -64,3 +70,10 @@ You can visit the [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) to seek 
 Aspose.GIS regularly receives updates and enhancements to ensure compatibility with the latest technologies and address any reported issues.
 ### Can I obtain a temporary license for Aspose.GIS?
 Yes, you can obtain a temporary license from [here](https://purchase.aspose.com/temporary-license/) to evaluate Aspose.GIS's capabilities in your development environment.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

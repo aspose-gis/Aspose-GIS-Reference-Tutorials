@@ -3,10 +3,16 @@ title: Créer un polygone avec une géométrie de trou à l'aide d'Aspose.GIS
 linktitle: Créer un polygone avec une géométrie de trou
 second_title: API Aspose.GIS .NET
 description: Découvrez comment créer un polygone avec une géométrie de trou à l'aide d'Aspose.GIS pour .NET. Tutoriel étape par étape avec des exemples de code.
-type: docs
 weight: 13
 url: /fr/net/geometry-creation/create-polygon-with-hole-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Créer un polygone avec une géométrie de trou à l'aide d'Aspose.GIS
+
 ## Introduction
 Dans ce didacticiel, nous allons parcourir le processus de création d'un polygone avec une géométrie de trou à l'aide d'Aspose.GIS pour .NET. Aspose.GIS est une bibliothèque puissante qui permet aux développeurs de travailler avec des données géospatiales dans leurs applications .NET. 
 ## Conditions préalables
@@ -66,3 +72,9 @@ Aspose.GIS est une bibliothèque .NET qui permet aux développeurs de travailler
  Vous pouvez trouver du support pour Aspose.GIS sur le[Forum Aspose.GIS](https://forum.aspose.com/c/gis/33).
 ### 5. Comment puis-je obtenir une licence temporaire pour Aspose.GIS ?
  Vous pouvez obtenir une licence temporaire pour Aspose.GIS auprès de[ici](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

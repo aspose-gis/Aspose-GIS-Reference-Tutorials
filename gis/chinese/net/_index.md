@@ -1,12 +1,17 @@
 ---
 title: Aspose.GIS for .NET 的综合教程和示例
 linktitle: Aspose.GIS for .NET 教程
-type: docs
 weight: 10
 url: /zh/net/
 description: 通过综合教程了解 Aspose.GIS for .NET 的强大功能。掌握地理数据转换、几何创建、分析、图层管理等。
-is_root: true
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS for .NET 的综合教程和示例
+
 
 ## 介绍
 
@@ -94,3 +99,10 @@ is_root: true
 了解有关使用 Aspose.GIS for .NET 进行图层数据操作的综合教程。学习读取、操作和可视化地理空间数据。
 ### [地图渲染](./map-rendering/)
 使用 Aspose.GIS for .NET 释放地理空间数据可视化的潜力。轻松导入 SLD、标记要素并渲染令人惊叹的地图。立即探索！
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: 新しいシェープファイルの作成
 linktitle: 新しいシェープファイルの作成
 second_title: Aspose.GIS .NET API
 description: Aspose.GIS for .NET を使用して新しいシェープファイルを作成する方法を学びます。ステップバイステップのガイドに従って、空間データ操作の力を解き放ちましょう。
-type: docs
 weight: 12
 url: /ja/net/layer-management/create-new-shapefile/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 新しいシェープファイルの作成
+
 ## 導入
 .NET を使用した地理情報システム (GIS) 開発を詳しく検討している場合は、Aspose.GIS が頼りになるソリューションです。この強力なライブラリにより、開発者は空間データをシームレスに操作できるようになります。このチュートリアルでは、Aspose.GIS for .NET を使用して新しいシェープファイルを作成するプロセスを説明します。
 ## 前提条件
@@ -80,3 +86,9 @@ Aspose.GIS は主に .NET をサポートしていますが、Java で利用で�
 仮免許を取得する[ここ](https://purchase.aspose.com/temporary-license/).
 ### Q: Aspose.GIS for .NET はどこで購入できますか?
 図書館を購入できます[ここ](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Layer Management
 linktitle: Layer Management
 second_title: Aspose.GIS .NET API
 description: Unlock the potential of geospatial development with Aspose.GIS for .NET tutorials. Effortlessly create, manage, and manipulate GIS datasets. 
-type: docs
 weight: 24
 url: /net/layer-management/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Layer Management
+
 ## Introduction
 
 Aspose.GIS for .NET empowers developers to delve into the exciting world of geospatial development. In this comprehensive tutorial listing, we explore various Layer Management Tutorials that guide you through unlocking the full potential of Aspose.GIS for .NET. From creating new File GDB datasets to manipulating spatial data, these tutorials cover it all.
@@ -68,3 +74,9 @@ Unlock geospatial magic with Aspose.GIS for .NET! Crop layer features effortless
 Explore the power of Aspose.GIS for .NET in spatial data manipulation. Filter features effortlessly, enhance GIS applications, and boost productivity.
 ### [Extract Features to GeoJSON](./extract-features-to-geojson/)
 Explore the step-by-step guide on using Aspose.GIS for .NET to extract features to GeoJSON. Harness the power of GIS with ease! 
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

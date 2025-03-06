@@ -3,10 +3,16 @@ title: Konvertálja a GeoJSON-t TopoJSON-ra a csoportosítással
 linktitle: Konvertálja a GeoJSON-t TopoJSON-ra a csoportosítással
 second_title: Aspose.GIS .NET API
 description: Ebből az átfogó oktatóanyagból megtudhatja, hogyan konvertálhatja a GeoJSON-t TopoJSON-ba csoportosítással az Aspose.GIS for .NET használatával.
-type: docs
 weight: 13
 url: /hu/net/geo-data-conversion/convert-geojson-to-topojson-with-grouping/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Konvertálja a GeoJSON-t TopoJSON-ra a csoportosítással
+
 ## Bevezetés
 
 Üdvözöljük lépésenkénti útmutatónkban az Aspose.GIS for .NET használatáról a GeoJSON csoportosítással TopoJSON formátumba konvertálásához. Az Aspose.GIS egy hatékony .NET API, amely lehetővé teszi a fejlesztők számára, hogy zökkenőmentesen dolgozzanak a földrajzi adatokkal. Ebben az oktatóanyagban végigvezetjük a GeoJSON-fájlok TopoJSON-formátumba konvertálásának folyamatán, miközben a funkciókat meghatározott attribútumok alapján csoportosítjuk.
@@ -93,3 +99,9 @@ V: Igen, az Aspose.GIS a GeoJSON-on és a TopoJSON-on kívül különféle föld
 
 ### 5. kérdés: Hol kaphatok támogatást az Aspose.GIS-hez?
  V: Támogatást kaphat az Aspose.GIS közösségi fórumtól[itt](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

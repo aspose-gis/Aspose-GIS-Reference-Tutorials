@@ -3,10 +3,16 @@ title: Leer características de OpenStreetMap XML en Aspose.GIS
 linktitle: Leer características de OpenStreetMap XML
 second_title: Aspose.GIS API .NET
 description: Aprenda a leer funciones de OpenStreetMap XML usando Aspose.GIS para .NET. Tutorial paso a paso con ejemplos de código.
-type: docs
 weight: 13
 url: /es/net/layer-data-operations/read-features-from-openstreetmap-xml/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Leer características de OpenStreetMap XML en Aspose.GIS
+
 ## Introducción
 Aspose.GIS para .NET es una poderosa biblioteca que permite a los desarrolladores trabajar con datos del sistema de información geográfica (GIS) en sus aplicaciones .NET. Ya sea que esté creando una aplicación de mapeo, analizando datos espaciales o integrando la funcionalidad SIG en su software, Aspose.GIS proporciona una amplia gama de características para agilizar su proceso de desarrollo.
 En este tutorial, exploraremos cómo leer funciones de OpenStreetMap XML usando Aspose.GIS para .NET. Dividiremos cada paso en partes manejables, asegurándonos de que pueda seguirlos fácilmente independientemente de su nivel de experiencia.
@@ -75,3 +81,9 @@ Sí, puede adquirir una licencia de Aspose.GIS para utilizarlo en proyectos come
  Puedes visitar el[Foro Aspose.GIS](https://forum.aspose.com/c/gis/33) para obtener ayuda y conectarse con otros usuarios y desarrolladores.
 ### ¿Puedo obtener una licencia temporal de Aspose.GIS para .NET?
  Sí, puede solicitar una licencia temporal al[página de licencia temporal](https://purchase.aspose.com/temporary-license/) para fines de prueba y evaluación.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

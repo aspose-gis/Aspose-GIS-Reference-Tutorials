@@ -3,10 +3,16 @@ title: 线性化几何
 linktitle: 线性化几何
 second_title: Aspose.GIS .NET API
 description: 了解如何使用 Aspose.GIS for .NET 高效处理地理空间数据、执行空间分析以及在 .NET 应用程序中操作地理。
-type: docs
 weight: 14
 url: /zh/net/geometry-processing/linearize-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 线性化几何
+
 ## 介绍
 Aspose.GIS for .NET 是一个功能强大的库，允许开发人员在 .NET 应用程序中高效地处理地理空间数据。无论您是构建地图应用程序、执行空间分析还是操作地理数据，Aspose.GIS 都能提供完成工作所需的工具。
 ## 先决条件
@@ -83,3 +89,9 @@ layer.Add(feature);
 是的，您可以从以下位置下载免费试用版：[阿斯普斯网站](https://releases.aspose.com/).
 ### 问：在哪里可以找到 Aspose.GIS 的帮助和支持？
 您可以访问[Aspose.GIS论坛](https://forum.aspose.com/c/gis/33)寻求社区和 Aspose 支持人员的帮助。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

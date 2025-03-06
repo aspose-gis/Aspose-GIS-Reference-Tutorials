@@ -3,10 +3,16 @@ title: Aspose.GIS for .NET ile Geometri Koleksiyonu Oluşturun
 linktitle: Geometri Koleksiyonu Oluştur
 second_title: Aspose.GIS .NET API'si
 description: Aspose.GIS for .NET ile coğrafi veri manipülasyonunun gücünü ortaya çıkarın. .NET uygulamalarınızda konum tabanlı verileri sorunsuz bir şekilde oluşturun, görselleştirin ve analiz edin.
-type: docs
 weight: 21
 url: /tr/net/geometry-creation/create-geometry-collection/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS for .NET ile Geometri Koleksiyonu Oluşturun
+
 
 ## giriiş
 
@@ -109,3 +115,9 @@ C: Evet, Aspose.GIS güçlü görselleştirme yetenekleri sunarak çarpıcı har
 ### S: Yardım isteyebileceğim ve diğer Aspose.GIS kullanıcılarıyla bağlantı kurabileceğim bir topluluk veya forum var mı?
 
  C: Kesinlikle! Şuraya gidin:[Aspose.GIS forumu](https://forum.aspose.com/c/gis/33) Soru sormak, bilgi paylaşmak ve Aspose.GIS topluluğundaki diğer geliştiricilerle bağlantı kurmak için.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

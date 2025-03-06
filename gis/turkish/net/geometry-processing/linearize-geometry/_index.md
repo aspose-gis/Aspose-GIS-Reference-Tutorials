@@ -3,10 +3,16 @@ title: Geometriyi Doğrusallaştırma
 linktitle: Geometriyi Doğrusallaştırma
 second_title: Aspose.GIS .NET API'si
 description: Jeo-uzamsal verilerle verimli bir şekilde çalışmak, uzamsal analiz gerçekleştirmek ve .NET uygulamalarınızdaki coğrafi değişiklikleri yapmak için Aspose.GIS for .NET'i nasıl kullanacağınızı öğrenin.
-type: docs
 weight: 14
 url: /tr/net/geometry-processing/linearize-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Geometriyi Doğrusallaştırma
+
 ## giriiş
 Aspose.GIS for .NET, geliştiricilerin .NET uygulamaları içerisinde coğrafi verilerle verimli bir şekilde çalışmasına olanak tanıyan güçlü bir kütüphanedir. İster bir haritalama uygulaması oluşturuyor olun, ister mekansal analiz gerçekleştirin, ister coğrafi verileri yönetin, Aspose.GIS işinizi halletmeniz için ihtiyacınız olan araçları sağlar.
 ## Önkoşullar
@@ -83,3 +89,9 @@ Evet, Aspose.GIS, karmaşık coğrafi görevlerin üstesinden gelmek için geni�
  Evet, ücretsiz deneme sürümünü şuradan indirebilirsiniz:[Web sitesi](https://releases.aspose.com/).
 ### S: Aspose.GIS için nereden yardım ve destek bulabilirim?
  Ziyaret edebilirsiniz[Aspose.GIS forumu](https://forum.aspose.com/c/gis/33) topluluktan ve Aspose destek personelinden yardım almak için.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

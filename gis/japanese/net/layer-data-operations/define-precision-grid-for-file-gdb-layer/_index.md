@@ -3,10 +3,16 @@ title: Aspose.GIS でファイル GDB レイヤーの精度グリッドを定義
 linktitle: ファイル GDB レイヤーの高精度グリッドの定義
 second_title: Aspose.GIS .NET API
 description: Aspose.GIS for .NET を使用してファイル GDB レイヤーの高精度グリッドを定義する方法を学習します。ステップバイステップのチュートリアルに従ってください。
-type: docs
 weight: 21
 url: /ja/net/layer-data-operations/define-precision-grid-for-file-gdb-layer/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS でファイル GDB レイヤーの精度グリッドを定義する
+
 ## 導入
 このチュートリアルでは、Aspose.GIS for .NET を使用してファイル ジオデータベース (GDB) レイヤーの精密グリッドを定義する方法を検討します。 Aspose.GIS は、さまざまな GIS ファイル形式で動作する包括的な地理空間機能を提供する強力な .NET ライブラリです。
 ## 前提条件
@@ -88,3 +94,9 @@ catch (GisException e)
 はい、Aspose.GIS for .NET は、異なる空間参照系間の座標変換をサポートします。
 ### Aspose.GIS for .NET の試用版はありますか?
 はい、Aspose.GIS for .NET の無料試用版を次のサイトからダウンロードできます。[Webサイト](https://releases.aspose.com/gis/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

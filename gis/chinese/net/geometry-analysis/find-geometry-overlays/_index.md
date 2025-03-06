@@ -3,10 +3,16 @@ title: 使用 Aspose.GIS for .NET 掌握几何叠加
 linktitle: 查找几何叠加
 second_title: Aspose.GIS .NET API
 description: 了解如何使用 Aspose.GIS for .NET 执行几何叠加操作。掌握交、并、差和对称差运算。
-type: docs
 weight: 16
 url: /zh/net/geometry-analysis/find-geometry-overlays/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.GIS for .NET 掌握几何叠加
+
 ## 介绍
 在地理信息系统 (GIS) 领域，叠加操作是空间分析的基础。它们可以比较和组合不同的空间数据集，以获得有价值的见解。 Aspose.GIS for .NET 提供了强大的功能来有效地执行几何叠加。在本教程中，我们将使用 Aspose.GIS for .NET 深入研究各种叠加操作，例如交集、并集、差集和对称差集。
 ## 先决条件
@@ -108,3 +114,9 @@ PrintRing(((IPolygon)multiPolygon[1]).ExteriorRing);
 是的，临时许可证可用于测试和评估目的。您可以从以下位置获取它们：[这里](https://purchase.aspose.com/temporary-license/).
 ### 问：我可以直接购买 Aspose.GIS for .NET 吗？
 是的，您可以从网站购买 Aspose.GIS for .NET[这里](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

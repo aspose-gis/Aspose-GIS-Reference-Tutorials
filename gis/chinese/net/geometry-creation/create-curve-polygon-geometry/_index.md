@@ -3,10 +3,16 @@ title: 使用 Aspose.GIS for .NET 创建曲线多边形几何图形
 linktitle: 创建曲线多边形几何体
 second_title: Aspose.GIS .NET API
 description: 了解如何使用 Aspose.GIS for .NET 高效创建曲线多边形几何。遵循我们的分步指南，无缝融入您的 GIS 应用程序。
-type: docs
 weight: 18
 url: /zh/net/geometry-creation/create-curve-polygon-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.GIS for .NET 创建曲线多边形几何图形
+
 ## 介绍
 在地理信息系统 (GIS) 开发领域，Aspose.GIS for .NET 作为创建、编辑和操作空间数据的强大工具脱颖而出。本教程旨在指导您完成使用 Aspose.GIS for .NET 创建曲线多边形几何的过程。在本教程结束时，您将具备为 GIS 应用程序高效构建复杂几何图形的知识。
 ## 先决条件
@@ -108,3 +114,9 @@ layer.Add(feature);
 是的，您可以加入 Aspose.GIS 社区论坛[这里](https://forum.aspose.com/c/gis/33)与其他用户互动、提出问题并分享您的经验。
 ### 我可以在购买前试用 Aspose.GIS for .NET 吗？
 当然！您可以从 Aspose.GIS for .NET 免费试用[发布页面](https://releases.aspose.com/)，让您可以在购买前探索其功能。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

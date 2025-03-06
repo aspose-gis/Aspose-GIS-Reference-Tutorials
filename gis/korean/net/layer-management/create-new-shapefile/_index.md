@@ -3,10 +3,16 @@ title: 새 셰이프파일 생성
 linktitle: 새 셰이프파일 생성
 second_title: Aspose.GIS .NET API
 description: .NET용 Aspose.GIS를 사용하여 새 모양 파일을 만드는 방법을 알아보세요. 단계별 가이드를 따라 공간 데이터 조작의 힘을 활용해 보세요.
-type: docs
 weight: 12
 url: /ko/net/layer-management/create-new-shapefile/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 새 셰이프파일 생성
+
 ## 소개
 .NET을 사용하여 지리 정보 시스템(GIS) 개발을 탐구하고 있다면 Aspose.GIS가 적합한 솔루션입니다. 이 강력한 라이브러리는 개발자가 공간 데이터를 원활하게 사용할 수 있도록 지원하며, 이 튜토리얼에서는 .NET용 Aspose.GIS를 사용하여 새로운 쉐이프파일을 생성하는 과정을 안내합니다.
 ## 전제조건
@@ -80,3 +86,9 @@ Aspose.GIS는 주로 .NET을 지원하지만 Java에서도 사용할 수 있는 
  임시 면허증을 받으세요[여기](https://purchase.aspose.com/temporary-license/).
 ### Q: .NET용 Aspose.GIS를 어디서 구입할 수 있나요?
  도서관을 구매하시면 됩니다[여기](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

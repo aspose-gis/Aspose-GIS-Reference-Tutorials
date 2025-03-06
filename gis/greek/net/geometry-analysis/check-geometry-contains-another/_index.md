@@ -3,10 +3,16 @@ title: Ελέγξτε ότι η γεωμετρία περιέχει άλλη
 linktitle: Ελέγξτε ότι η γεωμετρία περιέχει άλλη
 second_title: Aspose.GIS .NET API
 description: Εξερευνήστε το Aspose.GIS για .NET μια ισχυρή βιβλιοθήκη για απρόσκοπτη ενσωμάτωση γεωχωρικών δεδομένων στις εφαρμογές σας .NET.
-type: docs
 weight: 14
 url: /el/net/geometry-analysis/check-geometry-contains-another/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Ελέγξτε ότι η γεωμετρία περιέχει άλλη
+
 ## Εισαγωγή
 Το Aspose.GIS για .NET είναι μια ισχυρή βιβλιοθήκη που επιτρέπει στους προγραμματιστές να εργάζονται με γεωχωρικά δεδομένα απρόσκοπτα στις εφαρμογές τους .NET. Είτε δημιουργείτε μια εφαρμογή χαρτογράφησης, είτε εκτελείτε γεωχωρική ανάλυση είτε ενσωματώνετε χαρακτηριστικά που βασίζονται σε τοποθεσία στο λογισμικό σας, το Aspose.GIS απλοποιεί τη διαδικασία παρέχοντας εύχρηστα API και ισχυρή λειτουργικότητα.
 ## Προαπαιτούμενα
@@ -85,3 +91,9 @@ Console.WriteLine(geometry3.Within(geometry1)); // Αληθής
 Α: Ναι, μπορείτε να εγγραφείτε στο φόρουμ της κοινότητας Aspose.GIS[εδώ](https://forum.aspose.com/c/gis/33) για να συνδεθείτε με άλλους χρήστες, να κάνετε ερωτήσεις και να μοιραστείτε τις εμπειρίες σας.
 ### Ε5: Μπορώ να δοκιμάσω το Aspose.GIS πριν από την αγορά;
  Α: Σίγουρα, μπορείτε να εξερευνήσετε το Aspose.GIS κατεβάζοντας τη δωρεάν δοκιμή από[εδώ](https://releases.aspose.com/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

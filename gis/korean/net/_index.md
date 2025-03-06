@@ -1,12 +1,17 @@
 ---
 title: .NET용 Aspose.GIS의 포괄적인 튜토리얼 및 예제
 linktitle: .NET 튜토리얼용 Aspose.GIS
-type: docs
 weight: 10
 url: /ko/net/
 description: 포괄적인 튜토리얼을 통해 .NET용 Aspose.GIS의 강력한 기능을 알아보세요. GeoData 변환, 지오메트리 생성, 분석, 레이어 관리 등을 마스터하세요.
-is_root: true
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# .NET용 Aspose.GIS의 포괄적인 튜토리얼 및 예제
+
 
 ## 소개
 
@@ -94,3 +99,10 @@ is_root: true
 .NET용 Aspose.GIS를 사용하여 레이어 데이터 작업에 대한 포괄적인 튜토리얼을 찾아보세요. 지리공간 데이터를 읽고, 조작하고, 시각화하는 방법을 알아보세요.
 ### [지도 렌더링](./map-rendering/)
 .NET용 Aspose.GIS를 사용하여 지리공간 데이터 시각화의 잠재력을 활용해 보세요. 손쉽게 SLD를 가져오고, 기능에 라벨을 지정하고, 멋진 지도를 렌더링할 수 있습니다. 지금 탐험해보세요!
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

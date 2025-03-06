@@ -3,10 +3,16 @@ title: Establecer tolerancias para la capa GDB del archivo
 linktitle: Establecer tolerancias para la capa GDB del archivo
 second_title: Aspose.GIS API .NET
 description: Explore Aspose.GIS para .NET y domine la manipulación de datos geoespaciales. Establezca tolerancias sin esfuerzo con una guía paso a paso. Mejore sus aplicaciones .NET.
-type: docs
 weight: 22
 url: /es/net/layer-data-operations/set-tolerances-for-file-gdb-layer/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Establecer tolerancias para la capa GDB del archivo
+
 ## Introducción
 ¡Bienvenido al mundo de la manipulación de datos geoespaciales utilizando Aspose.GIS para .NET! Si está ansioso por mejorar sus habilidades en el manejo de información geográfica en sus aplicaciones .NET, está en el lugar correcto. En esta guía completa, profundizaremos en los intrincados detalles de la configuración de tolerancias para una capa de geodatabase de archivos (GDB), brindándole información práctica e instrucciones paso a paso.
 ## Requisitos previos
@@ -69,3 +75,9 @@ Sí, Aspose.GIS admite la interoperabilidad, lo que le permite integrarlo con ot
  Sí, puedes obtener un[licencia temporal](https://purchase.aspose.com/temporary-license/) para pruebas y evaluación.
 ### ¿Dónde puedo comprar la licencia Aspose.GIS para .NET?
  Puede adquirir la licencia en el[comprar pagina](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

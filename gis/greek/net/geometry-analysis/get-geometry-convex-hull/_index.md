@@ -3,10 +3,16 @@ title: Υπολογίστε το Convex Hull με το Aspose.GIS για .NET
 linktitle: Αποκτήστε το Geometry Convex Hull
 second_title: Aspose.GIS .NET API
 description: Μάθετε πώς να υπολογίζετε την κυρτή γάστρα μιας γεωμετρίας στο .NET χρησιμοποιώντας το Aspose.GIS. Ολοκληρωμένο σεμινάριο με παραδείγματα κώδικα και συχνές ερωτήσεις.
-type: docs
 weight: 20
 url: /el/net/geometry-analysis/get-geometry-convex-hull/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Υπολογίστε το Convex Hull με το Aspose.GIS για .NET
+
 ## Εισαγωγή
 Το Aspose.GIS για .NET είναι μια ισχυρή βιβλιοθήκη που παρέχει ένα ευρύ φάσμα λειτουργιών για εργασία με συστήματα γεωγραφικών πληροφοριών (GIS) σε εφαρμογές .NET. Είτε δημιουργείτε εφαρμογές χαρτογράφησης, αναλύετε χωρικά δεδομένα ή εκτελείτε γεωχωρικές λειτουργίες, το Aspose.GIS απλοποιεί τη διαδικασία με το διαισθητικό API και το ολοκληρωμένο σύνολο χαρακτηριστικών.
 ## Προαπαιτούμενα
@@ -79,3 +85,9 @@ for (int i = 0; i < ring.Count; ++i)
  Οι προσωρινές άδειες για το Aspose.GIS μπορούν να αποκτηθούν μέσω των καθορισμένων[σύνδεσμος προσωρινής άδειας](https://purchase.aspose.com/temporary-license/), επιτρέποντας την αδιάλειπτη χρήση κατά τη διάρκεια δοκιμαστικών περιόδων ή βραχυπρόθεσμων έργων.
 ### Ε: Πού μπορώ να αναζητήσω βοήθεια ή να συμμετάσχω σε συζητήσεις που σχετίζονται με το Aspose.GIS;
 Για υποστήριξη, καθοδήγηση και αλληλεπίδραση με την κοινότητα, επισκεφτείτε το φόρουμ Aspose.GIS[εδώ](https://forum.aspose.com/c/gis/33), όπου μπορείτε να αλληλεπιδράσετε με άλλους προγραμματιστές, να κάνετε ερωτήσεις και να μοιραστείτε πληροφορίες.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

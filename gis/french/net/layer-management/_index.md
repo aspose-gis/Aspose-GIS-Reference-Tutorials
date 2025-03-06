@@ -3,10 +3,16 @@ title: Gestion des couches
 linktitle: Gestion des couches
 second_title: API Aspose.GIS .NET
 description: Libérez le potentiel du développement géospatial avec les didacticiels Aspose.GIS pour .NET. Créez, gérez et manipulez sans effort des ensembles de données SIG.
-type: docs
 weight: 24
 url: /fr/net/layer-management/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Gestion des couches
+
 ## Introduction
 
 Aspose.GIS pour .NET permet aux développeurs de se plonger dans le monde passionnant du développement géospatial. Dans cette liste complète de didacticiels, nous explorons divers didacticiels de gestion des couches qui vous guident pour libérer tout le potentiel d'Aspose.GIS pour .NET. De la création de nouveaux ensembles de données File GDB à la manipulation de données spatiales, ces didacticiels couvrent tout.
@@ -68,3 +74,9 @@ Débloquez la magie géospatiale avec Aspose.GIS pour .NET ! Fonctionnalités d
 Découvrez la puissance d'Aspose.GIS pour .NET dans la manipulation de données spatiales. Filtrez les fonctionnalités sans effort, améliorez les applications SIG et augmentez la productivité.
 ### [Extraire les fonctionnalités vers GeoJSON](./extract-features-to-geojson/)
 Explorez le guide étape par étape sur l'utilisation d'Aspose.GIS pour .NET pour extraire des fonctionnalités vers GeoJSON. Exploitez facilement la puissance du SIG ! 
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

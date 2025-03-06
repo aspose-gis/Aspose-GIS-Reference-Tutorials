@@ -3,10 +3,16 @@ title: 掌握 GIS - 使用 Aspose.GIS for .NET 將圖層加入 GDB
 linktitle: 將圖層新增至檔案 GDB 資料集
 second_title: Aspose.GIS .NET API
 description: 使用 Aspose.GIS for .NET 釋放 GIS 的強大功能！在此逐步教學中了解如何將圖層新增至檔案 GDB 資料集。 #地理資料#Aspose #GIS
-type: docs
 weight: 16
 url: /zh-hant/net/layer-management/add-layer-to-file-gdb-dataset/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 掌握 GIS - 使用 Aspose.GIS for .NET 將圖層加入 GDB
+
 ## 介紹
 您準備好使用 Aspose.GIS for .NET 增強您的 GIS 功能了嗎？在本逐步指南中，我們將引導您完成在文件地理資料庫 (GDB) 資料集中新增圖層的過程。 Aspose.GIS for .NET 提供了強大的功能來操作地理訊息，透過本教程，您將能夠將其他圖層無縫整合到資料集中。
 ## 先決條件
@@ -75,3 +81,9 @@ Aspose.GIS for .NET 支援廣泛的空間參考系統，提供地理資料處理
 絕對地！參與討論並分享您的經驗[Aspose.GIS論壇](https://forum.aspose.com/c/gis/33).
 ### Q：在哪裡可以找到 Aspose.GIS for .NET 的詳細文件？
 探索全面的文檔[這裡](https://reference.aspose.com/gis/net/)有關 Aspose.GIS for .NET 的深入資訊。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

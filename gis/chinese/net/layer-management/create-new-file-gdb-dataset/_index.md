@@ -3,10 +3,16 @@ title: 创建新文件 GDB 数据集
 linktitle: 创建新文件 GDB 数据集
 second_title: Aspose.GIS .NET API
 description: 探索 Aspose.GIS for .NET 以轻松创建和管理 GIS 数据集。立即下载以进行无缝地理空间开发。 #Aspose #GIS
-type: docs
 weight: 10
 url: /zh/net/layer-management/create-new-file-gdb-dataset/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 创建新文件 GDB 数据集
+
 ## 介绍
 在地理空间开发领域，Aspose.GIS for .NET 作为管理和操作地理信息系统 (GIS) 数据的强大工具包脱颖而出。无论您是经验丰富的开发人员还是刚刚开始 GIS 之旅，本教程都将引导您完成使用 Aspose.GIS for .NET 创建新文件地理数据库 (GDB) 数据集的过程。
 ## 先决条件
@@ -84,3 +90,9 @@ Aspose.GIS for .NET 是一个独立的工具包；但是，您可以将其与其
 探索[Aspose.GIS 文档](https://reference.aspose.com/gis/net/)了解更多示例和详细信息。
 ### 问：哪里可以购买 Aspose.GIS for .NET？
 您可以在以下位置购买 Aspose.GIS for .NET[购买页面](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

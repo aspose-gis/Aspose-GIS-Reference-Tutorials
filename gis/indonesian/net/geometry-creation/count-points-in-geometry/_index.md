@@ -3,10 +3,16 @@ title: Hitung Poin dalam Geometri dengan Aspose.GIS untuk .NET
 linktitle: Hitung Poin dalam Geometri
 second_title: Aspose.GIS .NET API
 description: Pelajari cara memanfaatkan Aspose.GIS untuk .NET untuk memanipulasi data geografis dengan mudah. Tersedia tutorial komprehensif.
-type: docs
 weight: 24
 url: /id/net/geometry-creation/count-points-in-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Hitung Poin dalam Geometri dengan Aspose.GIS untuk .NET
+
 ## Perkenalan
 Dalam bidang pengembangan Sistem Informasi Geografis (GIS), Aspose.GIS untuk .NET menonjol sebagai perangkat yang ampuh untuk memanipulasi dan memproses data geografis. Baik Anda seorang pengembang berpengalaman atau baru mendalami dunia pemrograman GIS, menguasai Aspose.GIS dapat membuka banyak sekali kemungkinan dalam proyek Anda.
 ## Prasyarat
@@ -71,3 +77,9 @@ Sangat! Anda dapat menemukan dokumentasi terperinci untuk Aspose.GIS untuk .NET 
  Anda dapat mengunjungi[Forum Aspose.GIS](https://forum.aspose.com/c/gis/33) untuk mencari dukungan atau mengajukan pertanyaan dari komunitas Aspose.
 ### Apakah ada uji coba gratis yang tersedia untuk Aspose.GIS untuk .NET?
  Ya, Anda dapat memanfaatkan uji coba gratis dari[Halaman rilis Aspose.GIS](https://releases.aspose.com/) untuk mengevaluasi fitur-fiturnya sebelum melakukan pembelian.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

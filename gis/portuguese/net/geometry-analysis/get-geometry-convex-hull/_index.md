@@ -3,10 +3,16 @@ title: Calcule o casco convexo com Aspose.GIS para .NET
 linktitle: Obter casco convexo de geometria
 second_title: API Aspose.GIS .NET
 description: Aprenda como calcular o casco convexo de uma geometria em .NET usando Aspose.GIS. Tutorial abrangente com exemplos de código e perguntas frequentes.
-type: docs
 weight: 20
 url: /pt/net/geometry-analysis/get-geometry-convex-hull/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Calcule o casco convexo com Aspose.GIS para .NET
+
 ## Introdução
 Aspose.GIS for .NET é uma biblioteca poderosa que oferece uma ampla gama de funcionalidades para trabalhar com sistemas de informação geográfica (GIS) em aplicativos .NET. Esteja você construindo aplicativos de mapeamento, analisando dados espaciais ou executando operações geoespaciais, o Aspose.GIS simplifica o processo com sua API intuitiva e conjunto abrangente de recursos.
 ## Pré-requisitos
@@ -79,3 +85,9 @@ Com certeza, Aspose.GIS oferece suporte a uma ampla variedade de formatos geoesp
  Licenças temporárias para Aspose.GIS podem ser adquiridas através do designado[link de licença temporária](https://purchase.aspose.com/temporary-license/), permitindo o uso ininterrupto durante períodos de teste ou projetos de curto prazo.
 ### P: Onde posso procurar assistência ou participar de discussões relacionadas ao Aspose.GIS?
 Para suporte, orientação e interação da comunidade, visite o fórum Aspose.GIS[aqui](https://forum.aspose.com/c/gis/33), onde você pode interagir com outros desenvolvedores, fazer perguntas e compartilhar ideias.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

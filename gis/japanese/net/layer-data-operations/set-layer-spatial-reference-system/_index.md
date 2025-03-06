@@ -3,10 +3,16 @@ title: レイヤー空間参照系の設定
 linktitle: レイヤー空間参照系の設定
 second_title: Aspose.GIS .NET API
 description: Aspose.GIS for .NET を使用したマスター設定レイヤー空間参照システム。このステップバイステップのチュートリアルを使用して、GIS プロジェクトを強化します。
-type: docs
 weight: 19
 url: /ja/net/layer-data-operations/set-layer-spatial-reference-system/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# レイヤー空間参照系の設定
+
 ## 導入
 地理情報システム (GIS) の広大な環境の中で、Aspose.GIS for .NET は開発者にとって堅牢で多用途のツールとして際立っています。このチュートリアルでは、Aspose.GIS for .NET を使用してレイヤー空間参照システムを設定するプロセスを説明します。経験豊富な開発者でも、GIS 開発の初心者でも、このステップバイステップ ガイドは、Aspose.GIS の機能を活用して空間データ処理機能を強化するのに役立ちます。
 ## 前提条件
@@ -72,3 +78,9 @@ using (VectorLayer layer = VectorLayer.Open(path, Drivers.Shapefile))
 確かに！無料の試用版をダウンロードできます[ここ](https://releases.aspose.com/).
 ### Aspose.GIS 関連のクエリのサポートはどこに問い合わせればよいですか?
 サポートまたは質問がある場合は、次のサイトにアクセスしてください。[Aspose.GIS フォーラム](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

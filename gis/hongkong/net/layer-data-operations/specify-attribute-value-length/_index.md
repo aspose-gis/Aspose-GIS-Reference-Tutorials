@@ -3,10 +3,16 @@ title: 指定屬性值長度
 linktitle: 指定屬性值長度
 second_title: Aspose.GIS .NET API
 description: 使用 Aspose.GIS for .NET 探索地理空間開發。輕鬆管理和操作 .NET 應用程式中的空間資料。
-type: docs
 weight: 18
 url: /zh-hant/net/layer-data-operations/specify-attribute-value-length/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 指定屬性值長度
+
 ## 介紹
 歡迎來到 Aspose.GIS for .NET 的世界—您通往強大且有效率的地理空間開發的入口網站！這個綜合教學將引導您完成使用 Aspose.GIS 在 .NET 應用程式中輕鬆管理地理空間資料的基本步驟。無論您是經驗豐富的開發人員還是地理空間程式設計的新手，本指南都旨在為您提供堅實的基礎和實用的見解。
 ## 先決條件
@@ -61,3 +67,9 @@ layer.Add(feature);
 答：購買您的許可證[這裡](https://purchase.aspose.com/buy).
 ### Q：在哪裡可以存取 Aspose.GIS for .NET 的文檔？
 答：請參閱[文件](https://reference.aspose.com/gis/net/)進行全面指導。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

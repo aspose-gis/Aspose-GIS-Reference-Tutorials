@@ -3,10 +3,16 @@ title: Création de géométrie
 linktitle: Création de géométrie
 second_title: API Aspose.GIS .NET
 description: Libérez le potentiel de la manipulation des données géospatiales avec Aspose.GIS pour .NET. Plongez dans nos didacticiels traitant de la création, de la conversion et de l'analyse de la géométrie.
-type: docs
 weight: 21
 url: /fr/net/geometry-creation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Création de géométrie
+
 
 ## Introduction
 
@@ -105,3 +111,9 @@ Apprenez à compter les géométries dans une géométrie à l'aide d'Aspose.GIS
 Découvrez comment utiliser Aspose.GIS pour .NET pour manipuler des données géographiques sans effort. Tutoriels complets disponibles.
 ### [Coordonner la conversion avec Aspose.GIS](./convert-coordinates/)
 Découvrez comment convertir des coordonnées avec Aspose.GIS pour .NET. Guide étape par étape, prérequis et FAQ fournis.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

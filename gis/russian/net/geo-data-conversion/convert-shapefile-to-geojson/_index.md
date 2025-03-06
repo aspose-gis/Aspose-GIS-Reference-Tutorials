@@ -3,10 +3,16 @@ title: Преобразование шейп-файла в GeoJSON
 linktitle: Преобразование шейп-файла в GeoJSON
 second_title: API Aspose.GIS .NET
 description: Узнайте, как легко преобразовать Shapefile в GeoJSON в .NET с помощью Aspose.GIS. Следуйте нашему пошаговому руководству, чтобы обеспечить бесперебойную совместимость данных.
-type: docs
 weight: 15
 url: /ru/net/geo-data-conversion/convert-shapefile-to-geojson/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Преобразование шейп-файла в GeoJSON
+
 ## Введение
 В сфере географических информационных систем (ГИС) совместимость данных имеет решающее значение для плавной интеграции и анализа. Одной из распространенных задач является преобразование шейп-файлов, широко используемого формата геопространственных векторных данных, в GeoJSON, облегченный формат для обмена геопространственными данными. Это руководство проведет вас через процесс преобразования шейп-файла в GeoJSON без особых усилий с помощью библиотеки Aspose.GIS for .NET.
 ## Предварительные условия
@@ -58,3 +64,9 @@ Aspose.GIS for .NET поддерживает .NET Framework 4.5 и более п
 Да, Aspose.GIS for .NET предоставляет широкие возможности для настройки процесса преобразования в соответствии с вашими требованиями.
 ### Доступна ли пробная версия Aspose.GIS для .NET?
  Да, вы можете воспользоваться бесплатной пробной версией Aspose.GIS для .NET на сайте[Веб-сайт](https://releases.aspose.com/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

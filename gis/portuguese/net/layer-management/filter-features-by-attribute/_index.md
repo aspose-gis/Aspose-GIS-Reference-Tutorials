@@ -3,10 +3,16 @@ title: Filtrar recursos por atributo
 linktitle: Filtrar recursos por atributo
 second_title: API Aspose.GIS .NET
 description: Explore o poder do Aspose.GIS for .NET na manipulação de dados espaciais. Filtre recursos sem esforço, aprimore aplicativos GIS e aumente a produtividade.
-type: docs
 weight: 21
 url: /pt/net/layer-management/filter-features-by-attribute/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Filtrar recursos por atributo
+
 ## Introdução
 No mundo dinâmico dos Sistemas de Informação Geográfica (GIS), o Aspose.GIS for .NET se destaca como uma ferramenta poderosa que permite aos desenvolvedores manipular e analisar dados espaciais de forma integrada. Quer você seja um profissional GIS experiente ou um desenvolvedor curioso e ansioso para explorar as possibilidades, este tutorial irá guiá-lo pelas etapas essenciais do uso do Aspose.GIS em um ambiente .NET.
 ## Pré-requisitos
@@ -57,3 +63,9 @@ Aspose.GIS for .NET simplifica a manipulação e análise de dados espaciais, to
  Obtenha uma licença temporária[aqui](https://purchase.aspose.com/temporary-license/).
 ### Existe um tutorial passo a passo disponível para outros recursos do Aspose.GIS?
  Sim, você pode encontrar mais tutoriais e documentação no[Referência Aspose.GIS](https://reference.aspose.com/gis/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

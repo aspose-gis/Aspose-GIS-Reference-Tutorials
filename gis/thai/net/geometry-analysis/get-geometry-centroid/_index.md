@@ -3,10 +3,16 @@ title: รับ Geometry Centroid ด้วย Aspose.GIS
 linktitle: รับเรขาคณิตเซนทรอยด์
 second_title: Aspose.GIS .NET API
 description: เรียนรู้วิธีใช้ประโยชน์จาก Aspose.GIS สำหรับ .NET กับเซนทรอยด์เรขาคณิตผ่านเนื้อหาที่ครอบคลุมนี้ ผสานรวมการวิเคราะห์เชิงพื้นที่เข้ากับแอปพลิเคชัน .NET ของคุณได้อย่างราบรื่น
-type: docs
 weight: 19
 url: /th/net/geometry-analysis/get-geometry-centroid/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# รับ Geometry Centroid ด้วย Aspose.GIS
+
 ## การแนะนำ
 ในขอบเขตของการพัฒนาระบบสารสนเทศทางภูมิศาสตร์ (GIS) Aspose.GIS สำหรับ .NET มีความโดดเด่นในฐานะเครื่องมือที่แข็งแกร่งและอเนกประสงค์สำหรับการจัดการข้อมูลเชิงพื้นที่ ด้วยการควบคุมพลัง นักพัฒนาสามารถจัดการและวิเคราะห์ข้อมูลทางภูมิศาสตร์ภายในแอปพลิเคชัน .NET ของตนได้อย่างมีประสิทธิภาพ บทช่วยสอนนี้มีจุดมุ่งหมายเพื่อแนะนำคุณตลอดกระบวนการใช้ Aspose.GIS สำหรับ .NET เพื่อรับเซนทรอยด์ของเรขาคณิต ซึ่งเป็นการดำเนินการพื้นฐานในการวิเคราะห์เชิงพื้นที่
 ## ข้อกำหนดเบื้องต้น
@@ -70,3 +76,9 @@ Aspose.GIS สำหรับ .NET เข้ากันได้กับ .NET 
  ใช่ เอกสารประกอบที่ครอบคลุมสำหรับ Aspose.GIS สำหรับ .NET มีอยู่ใน[หน้าเอกสาร](https://reference.aspose.com/gis/net/)โดยนำเสนอข้อมูลเชิงลึกโดยละเอียดเกี่ยวกับการใช้งานและฟังก์ชันต่างๆ
 ### ถาม: ฉันจะขอความช่วยเหลือหรือมีส่วนร่วมกับชุมชนเกี่ยวกับ Aspose.GIS สำหรับ .NET ได้อย่างไร
  หากมีข้อสงสัย การสนับสนุน หรือการมีส่วนร่วมกับชุมชน คุณสามารถไปที่ฟอรัมเฉพาะของ Aspose.GIS[ที่นี่](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

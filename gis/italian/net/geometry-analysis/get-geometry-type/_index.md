@@ -3,10 +3,16 @@ title: Ottieni tipo di geometria con Aspose.GIS per .NET
 linktitle: Ottieni tipo di geometria
 second_title: API Aspose.GIS .NET
 description: Scopri la potenza di Aspose.GIS per .NET. Scopri come gestire i dati spaziali in modo efficiente nei tuoi progetti .NET con questo tutorial completo.
-type: docs
 weight: 23
 url: /it/net/geometry-analysis/get-geometry-type/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Ottieni tipo di geometria con Aspose.GIS per .NET
+
 ## introduzione
 Nel regno dello sviluppo .NET, Aspose.GIS funge da potente strumento per la gestione delle informazioni geografiche. Le sue ricche funzionalità lo rendono la scelta ideale per gli sviluppatori che lavorano con dati spaziali. In questo tutorial, approfondiremo le nozioni di base di Aspose.GIS per .NET, analizzando i concetti chiave e fornendo una guida passo passo per aiutarti a iniziare con facilità.
 ## Prerequisiti
@@ -63,3 +69,9 @@ Sì, Aspose.GIS supporta varie versioni di .NET, garantendo la compatibilità tr
  Per le opzioni di licenza temporanea, visitare il sito[licenza temporanea](https://purchase.aspose.com/temporary-license/) pagina.
 ### Dove posso acquistare Aspose.GIS per il mio progetto?
  È possibile acquistare Aspose.GIS dalla pagina di acquisto[Qui](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: التحليل الهندسي
 linktitle: التحليل الهندسي
 second_title: Aspose.GIS .NET API
 description: أطلق العنان لإمكانات Aspose.GIS .NET من خلال برامج تعليمية شاملة حول التحليل الهندسي. إتقان التعامل مع البيانات المكانية بسهولة من أجل تطوير قوي لنظم المعلومات الجغرافية.
-type: docs
 weight: 22
 url: /ar/net/geometry-analysis/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# التحليل الهندسي
+
 ## مقدمة
 
 يأخذ التحليل الجغرافي المكاني قفزة للأمام مع Aspose.GIS for .NET، حيث يقدم مجموعة أدوات متعددة الاستخدامات للتكامل السلس للوظائف المكانية في تطبيقات .NET الخاصة بك. في هذه السلسلة من البرامج التعليمية، سنستكشف جوانب مختلفة من التحليل الهندسي، مما يتيح لك الاستفادة من الإمكانات الكاملة للبيانات الجغرافية المكانية. دعونا نتعمق في التفاصيل:
@@ -89,3 +95,9 @@ url: /ar/net/geometry-analysis/
 تعرف على كيفية حساب الطول الهندسي في .NET باستخدام Aspose.GIS لمعالجة البيانات المكانية بكفاءة. دليل خطوة بخطوة مع أمثلة التعليمات البرمجية.
 ### [الحصول على نقطة على سطح الهندسة](./get-point-on-geometry-surface/)
 تعرف على كيفية التعامل مع البيانات الجغرافية المكانية بكفاءة باستخدام Aspose.GIS for .NET. تم تضمين دليل خطوة بخطوة والأسئلة الشائعة.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

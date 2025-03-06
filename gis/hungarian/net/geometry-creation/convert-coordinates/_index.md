@@ -3,10 +3,16 @@ title: Koordinálja az átalakítást az Aspose.GIS segítségével
 linktitle: Koordináták konvertálása
 second_title: Aspose.GIS .NET API
 description: Ismerje meg, hogyan konvertálhat koordinátákat az Aspose.GIS for .NET segítségével. Lépésről lépésre útmutató, előfeltételek és GYIK biztosított.
-type: docs
 weight: 25
 url: /hu/net/geometry-creation/convert-coordinates/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Koordinálja az átalakítást az Aspose.GIS segítségével
+
 ## Bevezetés
 Ebben az oktatóanyagban elmélyülünk a földrajzi információs rendszerek (GIS) világában a hatékony Aspose.GIS könyvtár segítségével .NET-hez. Az Aspose.GIS egy átfogó eszköztár, amely lehetővé teszi a fejlesztők számára, hogy könnyedén dolgozzanak téradatokkal. Akár tapasztalt fejlesztő, akár csak most kezdi, ez az oktatóanyag végigvezeti Önt az Aspose.GIS használatával a koordináták hatékony konvertálásához.
 ## Előfeltételek
@@ -66,3 +72,9 @@ Az Aspose.GIS elsősorban a .NET-fejlesztőket célozza meg, de az Aspose.GIS fo
  Igen, ideiglenes engedélyek szerezhetők be a[ideiglenes licenc oldal](https://purchase.aspose.com/temporary-license/).
 ### Hol vásárolhatom meg az Aspose.GIS-t?
  Az Aspose.GIS-t megvásárolhatja a[vásárlási oldal](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

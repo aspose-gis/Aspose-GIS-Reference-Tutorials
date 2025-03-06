@@ -3,10 +3,16 @@ title: Aspose.GIS を使用してジオメトリ間の距離を計算する
 linktitle: ジオメトリ間の距離を計算する
 second_title: Aspose.GIS .NET API
 description: Aspose.GIS を使用して .NET でジオメトリ間の距離を計算する方法を学びます。コード例を含むステップバイステップのガイド。地理空間アプリケーションを強化します。
-type: docs
 weight: 21
 url: /ja/net/geometry-analysis/calculate-distance-between-geometries/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS を使用してジオメトリ間の距離を計算する
+
 ## 導入
 地理空間プログラミングの領域では、異なるジオメトリ間の距離を計算する機能が最も重要です。多角形、線、点のいずれを扱う場合でも、それらの間の距離を知ることは、地図作成から物流計画に至るまで、さまざまなアプリケーションにとって非常に重要です。 Aspose.GIS for .NET は、このような計算を簡単かつ正確に実行するための強力なツールを提供します。
 ## 前提条件
@@ -84,3 +90,9 @@ Console.WriteLine(distance.ToString("F")); //0.63
 Aspose.GIS for .NET は他の GIS ライブラリとの相互運用性を提供し、追加機能を利用できるようにします。
 ### Aspose.GIS for .NET ユーザーはテクニカル サポートを利用できますか?
 はい、Aspose.GIS for .NET のユーザーは、Aspose を通じてテクニカル サポートにアクセスできます。[フォーラム](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

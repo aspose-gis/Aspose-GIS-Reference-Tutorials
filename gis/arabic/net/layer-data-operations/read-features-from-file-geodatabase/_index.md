@@ -3,10 +3,16 @@ title: اقرأ الميزات من قاعدة البيانات الجغرافي
 linktitle: قراءة الميزات من قاعدة البيانات الجغرافية الملف
 second_title: Aspose.GIS .NET API
 description: اكتشف قوة Aspose.GIS for .NET، وهي مكتبة شاملة للبيانات الجغرافية المكانية في تطبيقات .NET. يمكنك قراءة البيانات الجغرافية المكانية وكتابتها وتحليلها بسهولة.
-type: docs
 weight: 15
 url: /ar/net/layer-data-operations/read-features-from-file-geodatabase/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# اقرأ الميزات من قاعدة البيانات الجغرافية للملفات في Aspose.GIS
+
 ## مقدمة
 في مجال تطوير نظم المعلومات الجغرافية (GIS)، يمثل Aspose.GIS for .NET مجموعة أدوات هائلة، حيث يقدم مجموعة شاملة من الوظائف لمعالجة البيانات الجغرافية المكانية بأقصى قدر من الكفاءة. من خلال تسخير قوة Aspose.GIS، يمكن للمطورين دمج إمكانات GIS بسلاسة في تطبيقات .NET الخاصة بهم، مما يمكنهم من قراءة البيانات الجغرافية المكانية وكتابتها وتحليلها بسهولة.
 ## المتطلبات الأساسية
@@ -82,3 +88,9 @@ Console.WriteLine(feature.Geometry.AsText());
  نعم يمكنك زيارة[منتدى Aspose.GIS](https://forum.aspose.com/c/gis/33) للتفاعل مع المجتمع والحصول على الدعم من الخبراء.
 ### هل يمكنني تجربة Aspose.GIS for .NET قبل إجراء عملية الشراء؟
  بالتأكيد، يمكنك الاستفادة من النسخة التجريبية المجانية من Aspose.GIS for .NET من خلال موقع[صفحة الإصدار](https://releases.aspose.com/)مما يسمح لك باستكشاف ميزاته قبل الالتزام بالشراء.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

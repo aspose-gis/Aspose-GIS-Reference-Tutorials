@@ -3,10 +3,16 @@ title: Διαβάστε το αναγνωριστικό αντικειμένου
 linktitle: Διαβάστε το αναγνωριστικό αντικειμένου από το επίπεδο αρχείου GDB
 second_title: Aspose.GIS .NET API
 description: Μάθετε πώς να χρησιμοποιείτε το Aspose.GIS για .NET για να χειρίζεστε αποτελεσματικά την επεξεργασία γεωχωρικών δεδομένων. Διατίθενται ολοκληρωμένα σεμινάρια και καθοδήγηση από ειδικούς.
-type: docs
 weight: 16
 url: /el/net/layer-data-operations/read-object-id-from-file-gdb-layer/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Διαβάστε το αναγνωριστικό αντικειμένου από το αρχείο GDB Layer στο Aspose.GIS
+
 ## Εισαγωγή
 Καλώς ήλθατε στον περιεκτικό μας οδηγό για την εκμάθηση του Aspose.GIS για .NET! Το Aspose.GIS είναι μια ισχυρή βιβλιοθήκη σχεδιασμένη για να χειρίζεται αποτελεσματικά εργασίες επεξεργασίας και οπτικοποίησης γεωχωρικών δεδομένων εντός του πλαισίου .NET. Είτε είστε έμπειρος προγραμματιστής είτε μόλις ξεκινάτε το ταξίδι σας στον γεωχωρικό προγραμματισμό, αυτό το σεμινάριο θα σας καθοδηγήσει σε όλα όσα χρειάζεται να γνωρίζετε για να αξιοποιήσετε πλήρως τις δυνατότητες του Aspose.GIS.
 ## Προαπαιτούμενα
@@ -74,3 +80,9 @@ Console.WriteLine(feature.GetValue<int>("OBJECTID"));
 Ναι, μπορείτε να λάβετε προσωρινή άδεια από τον ιστότοπο Aspose για σκοπούς δοκιμής και αξιολόγησης.
 ### Πού μπορώ να βρω ολοκληρωμένη τεκμηρίωση για το Aspose.GIS για .NET;
  Μπορείτε να ανατρέξετε στο[τεκμηρίωση](https://reference.aspose.com/gis/net/) για λεπτομερείς πληροφορίες σχετικά με τη χρήση των API και των δυνατοτήτων του Aspose.GIS.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

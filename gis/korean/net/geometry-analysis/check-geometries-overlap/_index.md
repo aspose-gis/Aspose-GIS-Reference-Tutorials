@@ -3,10 +3,16 @@ title: Aspose.GIS를 사용한 마스터 지리공간 분석
 linktitle: 지오메트리 겹침 확인
 second_title: Aspose.GIS .NET API
 description: .NET용 Aspose.GIS를 사용하여 지리공간 분석을 살펴보세요. 단계별 안내를 통해 형상이 겹치는지 확인하는 방법을 알아보세요.
-type: docs
 weight: 12
 url: /ko/net/geometry-analysis/check-geometries-overlap/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS를 사용한 마스터 지리공간 분석
+
 ## 소개
 
 지리공간 분석 영역에서 .NET용 Aspose.GIS는 개발자와 데이터 과학자 모두를 위한 강력한 도구로 돋보입니다. .NET 프레임워크와의 원활한 통합을 통해 사용자는 공간 데이터를 심층적으로 분석하고 복잡한 분석을 수행하며 귀중한 통찰력을 얻을 수 있습니다. 이 튜토리얼은 .NET용 Aspose.GIS를 사용하여 기하학 중복을 확인하는 과정을 안내하고 단계별 지침, 필수 전제 조건 및 자세한 예를 제공합니다.
@@ -101,3 +107,9 @@ A1: 예, .NET용 Aspose.GIS는 다른 .NET 라이브러리와 원활하게 통�
 ### Q5: .NET용 Aspose.GIS에 대한 지원은 어디에서 찾을 수 있습니까?
 
 A5: 도움이나 문의 사항이 있으면 Aspose.GIS 포럼을 방문하세요.[여기](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

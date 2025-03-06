@@ -3,10 +3,16 @@ title: Počítání bodů v geometrii s Aspose.GIS pro .NET
 linktitle: Počítání bodů v geometrii
 second_title: Aspose.GIS .NET API
 description: Naučte se používat Aspose.GIS pro .NET k snadné manipulaci s geografickými daty. Úplné dostupné konzultace.
-type: docs
 weight: 24
 url: /cs/net/geometry-creation/count-points-in-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Počítání bodů v geometrii s Aspose.GIS pro .NET
+
 ## Úvod
 oblasti vývoje geografických informačních systémů (GIS) vyniká Aspose.GIS for .NET jako výkonná sada nástrojů pro manipulaci a zpracování geografických dat. Ať už jste ostřílený vývojář nebo se jen noříte do světa programování GIS, zvládnutí Aspose.GIS může otevřít nespočet možností ve vašich projektech.
 ## Předpoklady
@@ -71,3 +77,9 @@ Absolutně! Podrobnou dokumentaci k Aspose.GIS pro .NET naleznete na[dokumentač
  Můžete navštívit[Fórum Aspose.GIS](https://forum.aspose.com/c/gis/33) hledat podporu nebo klást otázky od komunity Aspose.
 ### Je k dispozici bezplatná zkušební verze pro Aspose.GIS pro .NET?
  Ano, můžete využít bezplatnou zkušební verzi z[Stránka vydání Aspose.GIS](https://releases.aspose.com/) před nákupem vyhodnotit jeho vlastnosti.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

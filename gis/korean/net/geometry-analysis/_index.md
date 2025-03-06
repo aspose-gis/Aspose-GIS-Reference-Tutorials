@@ -3,10 +3,16 @@ title: 기하학 분석
 linktitle: 기하학 분석
 second_title: Aspose.GIS .NET API
 description: 기하학 분석에 대한 포괄적인 튜토리얼을 통해 Aspose.GIS .NET의 잠재력을 활용해 보세요. 강력한 GIS 개발을 위해 공간 데이터 처리를 손쉽게 마스터하세요.
-type: docs
 weight: 22
 url: /ko/net/geometry-analysis/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 기하학 분석
+
 ## 소개
 
 지리공간 분석은 공간 기능을 .NET 애플리케이션에 원활하게 통합하기 위한 다목적 툴킷을 제공하는 Aspose.GIS for .NET을 통해 한 단계 더 발전했습니다. 이 튜토리얼 시리즈에서는 기하학 분석의 다양한 측면을 살펴보고 지리공간 데이터의 잠재력을 최대한 활용할 수 있도록 지원합니다. 세부 사항을 살펴 보겠습니다.
@@ -89,3 +95,9 @@ Aspose.GIS를 사용하여 .NET에서 형상 간의 거리를 계산하는 방�
 효율적인 공간 데이터 처리를 위해 Aspose.GIS를 사용하여 .NET에서 형상 길이를 계산하는 방법을 알아보세요. 코드 예제가 포함된 단계별 가이드입니다.
 ### [형상 표면에서 점 가져오기](./get-point-on-geometry-surface/)
 .NET용 Aspose.GIS를 사용하여 지리공간 데이터를 효율적으로 작업하는 방법을 알아보세요. 단계별 가이드와 FAQ가 포함되어 있습니다.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

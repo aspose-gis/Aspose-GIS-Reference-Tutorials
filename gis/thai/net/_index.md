@@ -1,12 +1,17 @@
 ---
 title: บทช่วยสอนที่ครอบคลุมและตัวอย่าง Aspose.GIS สำหรับ .NET
 linktitle: Aspose.GIS สำหรับบทช่วยสอน .NET
-type: docs
 weight: 10
 url: /th/net/
 description: ค้นพบพลังของ Aspose.GIS สำหรับ .NET ผ่านบทช่วยสอนที่ครอบคลุม การแปลง GeoData หลัก การสร้างเรขาคณิต การวิเคราะห์ การจัดการเลเยอร์ และอื่นๆ
-is_root: true
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# บทช่วยสอนที่ครอบคลุมและตัวอย่าง Aspose.GIS สำหรับ .NET
+
 
 ## การแนะนำ
 
@@ -94,3 +99,10 @@ is_root: true
 ค้นพบบทช่วยสอนที่ครอบคลุมเกี่ยวกับการดำเนินการกับข้อมูลเลเยอร์โดยใช้ Aspose.GIS สำหรับ .NET เรียนรู้การอ่าน จัดการ และแสดงภาพข้อมูลเชิงพื้นที่
 ### [การแสดงแผนที่](./map-rendering/)
 ปลดล็อกศักยภาพของการแสดงข้อมูลเชิงพื้นที่ด้วย Aspose.GIS สำหรับ .NET นำเข้า SLD คุณสมบัติป้ายกำกับ และเรนเดอร์แผนที่ที่น่าทึ่งได้อย่างง่ายดาย สำรวจตอนนี้!
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

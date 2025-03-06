@@ -3,10 +3,16 @@ title: Policz geometrie w geometrii za pomocą Aspose.GIS
 linktitle: Policz geometrie w geometrii
 second_title: Aspose.GIS .NET API
 description: Dowiedz się, jak liczyć geometrie w geometrii przy użyciu Aspose.GIS dla .NET. Samouczek krok po kroku z przykładami kodu dla programistów.
-type: docs
 weight: 23
 url: /pl/net/geometry-creation/count-geometries-in-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Policz geometrie w geometrii za pomocą Aspose.GIS
+
 ## Wstęp
 Aspose.GIS dla .NET to potężne narzędzie dla programistów chcących włączyć funkcjonalność geoprzestrzenną do swoich aplikacji .NET. Niezależnie od tego, czy tworzysz oprogramowanie do mapowania, usługi oparte na lokalizacji, czy narzędzia do analizy przestrzennej, Aspose.GIS zapewnia kompleksowy zestaw funkcji spełniających Twoje potrzeby. W tym samouczku odkryjemy, jak liczyć geometrie w geometrii przy użyciu Aspose.GIS dla .NET.
 ## Warunki wstępne
@@ -70,3 +76,9 @@ Tak, Aspose.GIS dla .NET obsługuje szeroką gamę formatów plików GIS, w tym 
  Tak, możesz pobrać bezpłatną wersję próbną ze strony[strona internetowa](https://releases.aspose.com/).
 ### Gdzie mogę znaleźć wsparcie dla Aspose.GIS dla .NET?
  Wsparcie znajdziesz na stronie[Forum Aspose.GIS](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

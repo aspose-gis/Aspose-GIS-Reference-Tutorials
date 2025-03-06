@@ -3,10 +3,16 @@ title: Számítsa ki a Convex Hull-t az Aspose.GIS segítségével .NET-hez
 linktitle: Szerezze be a Geometry Convex Hull-t
 second_title: Aspose.GIS .NET API
 description: Ismerje meg, hogyan számíthatja ki egy geometria konvex héját .NET-ben az Aspose.GIS segítségével. Átfogó oktatóanyag kódpéldákkal és GYIK-vel.
-type: docs
 weight: 20
 url: /hu/net/geometry-analysis/get-geometry-convex-hull/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Számítsa ki a Convex Hull-t az Aspose.GIS segítségével .NET-hez
+
 ## Bevezetés
 Az Aspose.GIS for .NET egy hatékony könyvtár, amely a .NET-alkalmazásokban található földrajzi információs rendszerekkel (GIS) való munkavégzéshez számos funkcionalitást biztosít. Akár térképészeti alkalmazásokat épít, akár téradatokat elemez, akár térinformatikai műveleteket hajt végre, az Aspose.GIS leegyszerűsíti a folyamatot intuitív API-jával és átfogó szolgáltatáskészletével.
 ## Előfeltételek
@@ -79,3 +85,9 @@ Az Aspose.GIS egyértelműen a térinformatikai formátumok széles skáláját 
  Az Aspose.GIS ideiglenes licencei a kijelölt helyen szerezhetők be[ideiglenes licenc hivatkozás](https://purchase.aspose.com/temporary-license/), amely lehetővé teszi a megszakítás nélküli használatot a próbaidőszakok vagy a rövid távú projektek során.
 ### K: Hol kérhetek segítséget, vagy hol vehetek részt az Aspose.GIS-sel kapcsolatos vitákban?
 Támogatásért, útmutatásért és közösségi interakcióért keresse fel az Aspose.GIS fórumot[itt](https://forum.aspose.com/c/gis/33), ahol kapcsolatba léphet más fejlesztőkkel, kérdéseket tehet fel, és megoszthatja tapasztalatait.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

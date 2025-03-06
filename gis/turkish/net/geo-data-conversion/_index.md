@@ -3,10 +3,16 @@ title: GeoData Dönüşümü
 linktitle: GeoData Dönüşümü
 second_title: Aspose.GIS .NET API'si
 description: Aspose.GIS for .NET eğitimleriyle kusursuz GeoData dönüşümünü keşfedin. GeoJSON'u TopoJSON'a, Shapefile'ı GeoJSON'a ve daha fazlasını dönüştürmeyi öğrenin.
-type: docs
 weight: 20
 url: /tr/net/geo-data-conversion/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# GeoData Dönüşümü
+
 ## giriiş
 
 Aspose.GIS for .NET ile zahmetsiz GeoData dönüştürme eğitimleri dünyasına hoş geldiniz. Bu kapsamlı kılavuzda, Coğrafi Bilgi Sisteminizin (GIS) veri işleme verimliliğini artırmak için çeşitli teknikleri inceleyeceğiz.
@@ -45,3 +51,9 @@ Aspose.GIS for .NET kullanarak, dosya boyutunu ve hassasiyetini optimize ederek 
 Aspose.GIS'i kullanarak Shapefile'ı .NET'te GeoJSON'a zahmetsizce nasıl dönüştürebileceğinizi öğrenin. Sorunsuz veri birlikte çalışabilirliği için adım adım kılavuzumuzu izleyin.
 ### [TopoJSON'u GeoJSON'a dönüştür](./convert-topojson-to-geojson/)
 Aspose.GIS for .NET'i kullanarak TopoJSON'u sorunsuz bir şekilde GeoJSON'a nasıl dönüştüreceğinizi öğrenin. Verimli coğrafi veri işleme için adım adım eğitimimizi izleyin.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

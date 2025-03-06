@@ -3,10 +3,16 @@ title: تحويل الهندسة إلى تنسيق WKT باستخدام Aspose.G
 linktitle: ترجمة الهندسة إلى WKT
 second_title: Aspose.GIS .NET API
 description: تعرف على كيفية ترجمة الأشكال الهندسية المكانية إلى تنسيق نص معروف (WKT) باستخدام Aspose.GIS for .NET. تعزيز مهارات تطوير نظم المعلومات الجغرافية لديك.
-type: docs
 weight: 23
 url: /ar/net/geometry-processing/translate-geometry-to-wkt/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# تحويل الهندسة إلى تنسيق WKT باستخدام Aspose.GIS لـ .NET
+
 ## مقدمة
 في عالم تطوير نظم المعلومات الجغرافية (GIS)، يبرز Aspose.GIS for .NET كأداة قوية لإدارة البيانات المكانية ومعالجتها. بفضل واجهة برمجة التطبيقات البديهية والميزات القوية، يمكن للمطورين دمج وظائف نظم المعلومات الجغرافية بسهولة في تطبيقات .NET الخاصة بهم. إحدى هذه الوظائف هي ترجمة الأشكال الهندسية إلى تنسيق نص معروف (WKT). في هذا البرنامج التعليمي، سنتعمق في عملية ترجمة الأشكال الهندسية إلى WKT باستخدام Aspose.GIS for .NET.
 ## المتطلبات الأساسية
@@ -55,3 +61,9 @@ Console.WriteLine(point.AsText()); // نقطة (23.5732، 25.3421)
  ج: نعم، يمكنك التواصل مع[Aspose.GIS لمنتدى .NET](https://forum.aspose.com/c/gis/33) للحصول على الدعم أو طلبات الميزات أو الإبلاغ عن المشكلات.
 ### س: هل تتوفر نسخة تجريبية من Aspose.GIS for .NET؟
  ج: نعم، يمكنك الوصول إلى النسخة التجريبية المجانية من Aspose.GIS لـ .NET[هنا](https://releases.aspose.com/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

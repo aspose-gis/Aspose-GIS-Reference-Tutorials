@@ -3,10 +3,16 @@ title: Menguasai Overlay Geometri dengan Aspose.GIS untuk .NET
 linktitle: Temukan Hamparan Geometri
 second_title: Aspose.GIS .NET API
 description: Pelajari cara melakukan operasi overlay geometris menggunakan Aspose.GIS untuk .NET. Kuasai operasi perpotongan, penyatuan, selisih, dan selisih simetris.
-type: docs
 weight: 16
 url: /id/net/geometry-analysis/find-geometry-overlays/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Menguasai Overlay Geometri dengan Aspose.GIS untuk .NET
+
 ## Perkenalan
 Dalam bidang Sistem Informasi Geografis (GIS), operasi overlay merupakan hal mendasar untuk analisis spasial. Mereka memungkinkan perbandingan dan kombinasi kumpulan data spasial yang berbeda untuk memperoleh wawasan yang berharga. Aspose.GIS untuk .NET menyediakan fungsionalitas yang kuat untuk melakukan overlay geometris secara efisien. Dalam tutorial ini, kita akan mempelajari berbagai operasi overlay seperti Intersection, Union, Difference, dan Symmetric Difference menggunakan Aspose.GIS untuk .NET.
 ## Prasyarat
@@ -108,3 +114,9 @@ Ya, Aspose.GIS untuk .NET dapat digunakan dalam proyek komersial dan non-komersi
  Ya, lisensi sementara tersedia untuk tujuan pengujian dan evaluasi. Anda dapat memperolehnya dari[Di Sini](https://purchase.aspose.com/temporary-license/).
 ### T: Dapatkah saya membeli Aspose.GIS untuk .NET secara langsung?
  Ya, Anda dapat membeli Aspose.GIS untuk .NET dari situs web[Di Sini](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

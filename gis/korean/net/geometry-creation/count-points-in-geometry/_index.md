@@ -3,10 +3,16 @@ title: .NET용 Aspose.GIS를 사용하여 형상의 중요 포인트
 linktitle: 기하학의 중요점
 second_title: Aspose.GIS .NET API
 description: .NET용 Aspose.GIS를 활용하여 지리적 데이터를 손쉽게 조작하는 방법을 알아보세요. 포괄적인 튜토리얼을 이용할 수 있습니다.
-type: docs
 weight: 24
 url: /ko/net/geometry-creation/count-points-in-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# .NET용 Aspose.GIS를 사용하여 형상의 중요 포인트
+
 ## 소개
 지리 정보 시스템(GIS) 개발 영역에서 .NET용 Aspose.GIS는 지리 데이터를 조작하고 처리하기 위한 강력한 도구 세트로 돋보입니다. 노련한 개발자이든 GIS 프로그래밍의 세계를 탐구하든 Aspose.GIS를 마스터하면 프로젝트에 무수한 가능성이 열릴 수 있습니다.
 ## 전제조건
@@ -71,3 +77,9 @@ Console.WriteLine(pointsCount);  // 2
  당신은 방문 할 수 있습니다[Aspose.GIS 포럼](https://forum.aspose.com/c/gis/33) Aspose 커뮤니티에서 지원을 구하거나 질문을 하세요.
 ### .NET용 Aspose.GIS에 대한 무료 평가판이 있습니까?
  예, 다음 사이트에서 무료 평가판을 이용하실 수 있습니다.[Aspose.GIS 릴리스 페이지](https://releases.aspose.com/) 구매하기 전에 기능을 평가하십시오.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

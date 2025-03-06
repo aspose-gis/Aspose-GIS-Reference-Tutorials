@@ -3,10 +3,16 @@ title: تحويل البيانات الجغرافية
 linktitle: تحويل البيانات الجغرافية
 second_title: Aspose.GIS .NET API
 description: اكتشف التحويل السلس للبيانات الجغرافية باستخدام البرامج التعليمية لـ Aspose.GIS for .NET. تعرّف على كيفية تحويل GeoJSON إلى TopoJSON، وShapefile إلى GeoJSON، والمزيد.
-type: docs
 weight: 20
 url: /ar/net/geo-data-conversion/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# تحويل البيانات الجغرافية
+
 ## مقدمة
 
 مرحبًا بك في عالم من البرامج التعليمية السهلة لتحويل GeoData باستخدام Aspose.GIS for .NET. في هذا الدليل الشامل، سوف نتعمق في تقنيات مختلفة لتحسين كفاءة معالجة بيانات نظام المعلومات الجغرافية (GIS).
@@ -45,3 +51,9 @@ url: /ar/net/geo-data-conversion/
 تعرف على كيفية تحويل Shapefile إلى GeoJSON في .NET بسهولة باستخدام Aspose.GIS. اتبع دليلنا خطوة بخطوة للتشغيل البيني للبيانات بشكل سلس.
 ### [تحويل TopoJSON إلى GeoJSON](./convert-topojson-to-geojson/)
 تعرف على كيفية تحويل TopoJSON إلى GeoJSON بسلاسة باستخدام Aspose.GIS for .NET. اتبع برنامجنا التعليمي خطوة بخطوة للتعامل بكفاءة مع البيانات الجغرافية.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

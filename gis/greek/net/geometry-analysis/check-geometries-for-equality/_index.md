@@ -3,10 +3,16 @@ title: Ελέγξτε τις γεωμετρίες για ισότητα
 linktitle: Ελέγξτε τις γεωμετρίες για ισότητα
 second_title: Aspose.GIS .NET API
 description: Μάθετε πώς να χρησιμοποιείτε το Aspose.GIS για .NET για να ελέγχετε τις γεωμετρίες για ισότητα στις εφαρμογές σας .NET με αυτό το ολοκληρωμένο σεμινάριο.
-type: docs
 weight: 10
 url: /el/net/geometry-analysis/check-geometries-for-equality/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Ελέγξτε τις γεωμετρίες για ισότητα
+
 ## Εισαγωγή
 Το Aspose.GIS για .NET είναι μια ισχυρή βιβλιοθήκη που επιτρέπει στους προγραμματιστές να εργάζονται αποτελεσματικά με γεωχωρικά δεδομένα στις εφαρμογές τους .NET. Είτε δημιουργείτε εφαρμογές χαρτογράφησης, εργαλεία χωρικής ανάλυσης είτε ενσωματώνετε γεωχωρικές λειτουργίες σε υπάρχον λογισμικό, το Aspose.GIS παρέχει τα εργαλεία που χρειάζεστε για να ολοκληρώσετε τη δουλειά.
 ## Προαπαιτούμενα
@@ -73,3 +79,9 @@ Console.WriteLine(geometry1.SpatiallyEquals(geometry2)); // Ψευδής
  Μπορείτε να λάβετε υποστήριξη από το φόρουμ της κοινότητας Aspose.GIS[εδώ](https://forum.aspose.com/c/gis/33).
 ### Μπορώ να αγοράσω μια προσωρινή άδεια χρήσης για το Aspose.GIS για .NET;
  Ναι, μπορείτε να αγοράσετε μια προσωρινή άδεια από το[σελίδα αγοράς](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

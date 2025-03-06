@@ -3,10 +3,16 @@ title: الحصول على نقطة على سطح الهندسة
 linktitle: الحصول على نقطة على سطح الهندسة
 second_title: Aspose.GIS .NET API
 description: تعرف على كيفية التعامل مع البيانات الجغرافية المكانية بكفاءة باستخدام Aspose.GIS for .NET. تم تضمين دليل خطوة بخطوة والأسئلة الشائعة.
-type: docs
 weight: 25
 url: /ar/net/geometry-analysis/get-point-on-geometry-surface/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# الحصول على نقطة على سطح الهندسة
+
 ## مقدمة
 في هذا البرنامج التعليمي، سنستكشف كيفية استخدام Aspose.GIS for .NET للعمل مع الأشكال الهندسية واسترداد النقاط الموجودة على أسطحها. Aspose.GIS هي مكتبة قوية توفر وظائف متنوعة لمعالجة البيانات الجغرافية المكانية ومعالجتها وتصورها في تطبيقات .NET.
 ## المتطلبات الأساسية
@@ -66,3 +72,9 @@ Console.WriteLine(polygon.SpatiallyContains(pointOnSurface)); // حقيقي
  نعم، يمكنك الحصول على تراخيص مؤقتة لـ Aspose.GIS من[هنا](https://purchase.aspose.com/temporary-license/).
 ### أين يمكنني شراء Aspose.GIS؟
  يمكنك شراء Aspose.GIS من صفحة الشراء[هنا](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

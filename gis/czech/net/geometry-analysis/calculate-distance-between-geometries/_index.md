@@ -3,10 +3,16 @@ title: Vypočítejte vzdálenost mezi geometriemi pomocí Aspose.GIS
 linktitle: Vypočítat vzdálenost mezi geometriemi
 second_title: Aspose.GIS .NET API
 description: Naučte se vypočítat vzdálenosti mezi geometriemi v .NET pomocí Aspose.GIS. Podrobný průvodce s příklady kódu. Vylepšete své geoprostorové aplikace.
-type: docs
 weight: 21
 url: /cs/net/geometry-analysis/calculate-distance-between-geometries/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Vypočítejte vzdálenost mezi geometriemi pomocí Aspose.GIS
+
 ## Úvod
 oblasti geoprostorového programování je schopnost vypočítat vzdálenosti mezi různými geometriemi prvořadá. Ať už se zabýváte polygony, liniemi nebo body, znalost vzdálenosti mezi nimi může být rozhodující pro různé aplikace, od mapování až po plánování logistiky. Aspose.GIS for .NET poskytuje výkonné nástroje pro snadné a přesné provádění takových výpočtů.
 ## Předpoklady
@@ -84,3 +90,9 @@ Ano, pomocí Aspose.GIS pro .NET můžete pracovat s 2D i 3D geometrií.
 Aspose.GIS for .NET poskytuje interoperabilitu s jinými knihovnami GIS, což vám umožňuje využívat další funkce.
 ### Je k dispozici technická podpora pro Aspose.GIS pro uživatele .NET?
  Ano, uživatelé Aspose.GIS pro .NET mohou přistupovat k technické podpoře prostřednictvím Aspose[fórech](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

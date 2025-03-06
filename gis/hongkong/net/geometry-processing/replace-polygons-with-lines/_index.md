@@ -3,10 +3,16 @@ title: 使用 Aspose.GIS for .NET 將多邊形轉換為直線
 linktitle: 用直線替換多邊形
 second_title: Aspose.GIS .NET API
 description: 了解如何使用 Aspose.GIS for .NET 將多邊形替換為直線。輕鬆增強您的 GIS 資料操作技能。
-type: docs
 weight: 16
 url: /zh-hant/net/geometry-processing/replace-polygons-with-lines/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.GIS for .NET 將多邊形轉換為直線
+
 ## 介紹
 在地理資訊系統 (GIS) 開發領域，Aspose.GIS for .NET 作為處理空間資料的強大工具集脫穎而出。無論您是經驗豐富的開發人員還是剛開始 GIS 程式設計之旅，Aspose.GIS for .NET 都提供了一套全面的功能來有效地操作和分析地理資料。
 ## 先決條件
@@ -54,3 +60,9 @@ Aspose.GIS for .NET 提供了操作空間資料的強大功能，包括用線取
 是的，您可以從以下位置取得臨時許可證[這裡](https://purchase.aspose.com/temporary-license/).
 ### Aspose.GIS for .NET 適合初學者和經驗豐富的開發人員嗎？
 當然，Aspose.GIS for .NET 可以滿足各個層級的開發人員的需求，提供全面的文件和支援。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: สร้างรูปหลายเหลี่ยมด้วย Hol
 linktitle: สร้างรูปหลายเหลี่ยมด้วย Hole Geometry
 second_title: Aspose.GIS .NET API
 description: เรียนรู้วิธีสร้างรูปหลายเหลี่ยมด้วยรูปทรงของรูโดยใช้ Aspose.GIS สำหรับ .NET บทช่วยสอนทีละขั้นตอนพร้อมตัวอย่างโค้ด
-type: docs
 weight: 13
 url: /th/net/geometry-creation/create-polygon-with-hole-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# สร้างรูปหลายเหลี่ยมด้วย Hole Geometry โดยใช้ Aspose.GIS
+
 ## การแนะนำ
 ในบทช่วยสอนนี้ เราจะอธิบายขั้นตอนการสร้างรูปหลายเหลี่ยมด้วยเรขาคณิตของรูโดยใช้ Aspose.GIS สำหรับ .NET Aspose.GIS เป็นไลบรารีอันทรงพลังที่ช่วยให้นักพัฒนาสามารถทำงานกับข้อมูลเชิงพื้นที่ในแอปพลิเคชัน .NET ของตนได้ 
 ## ข้อกำหนดเบื้องต้น
@@ -66,3 +72,9 @@ Aspose.GIS เป็นไลบรารี .NET ที่ช่วยให้
  คุณสามารถค้นหาการสนับสนุนสำหรับ Aspose.GIS ได้ที่[ฟอรัม Aspose.GIS](https://forum.aspose.com/c/gis/33).
 ### 5. ฉันจะขอรับใบอนุญาตชั่วคราวสำหรับ Aspose.GIS ได้อย่างไร
  คุณสามารถขอรับใบอนุญาตชั่วคราวสำหรับ Aspose.GIS ได้จาก[ที่นี่](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

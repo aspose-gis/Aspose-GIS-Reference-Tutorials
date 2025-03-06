@@ -3,10 +3,16 @@ title: Gruplama ile GeoJSON'u TopoJSON'a dönüştürün
 linktitle: Gruplama ile GeoJSON'u TopoJSON'a dönüştürün
 second_title: Aspose.GIS .NET API'si
 description: Bu kapsamlı eğitimde Aspose.GIS for .NET kullanarak GeoJSON'u gruplamayla TopoJSON'a nasıl dönüştüreceğinizi öğrenin.
-type: docs
 weight: 13
 url: /tr/net/geo-data-conversion/convert-geojson-to-topojson-with-grouping/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Gruplama ile GeoJSON'u TopoJSON'a dönüştürün
+
 ## giriiş
 
 Gruplamayla GeoJSON'u TopoJSON'a dönüştürmek için Aspose.GIS for .NET'i kullanmayla ilgili adım adım kılavuzumuza hoş geldiniz. Aspose.GIS, geliştiricilerin coğrafi verilerle sorunsuz bir şekilde çalışmasına olanak tanıyan güçlü bir .NET API'sidir. Bu eğitimde, özellikleri belirtilen niteliklere göre gruplandırırken GeoJSON dosyalarını TopoJSON'a dönüştürme sürecinde size yol göstereceğiz.
@@ -93,3 +99,9 @@ C: Evet, Aspose.GIS, GeoJSON ve TopoJSON'un ötesinde çeşitli coğrafi veri fo
 
 ### S5: Aspose.GIS için nereden destek alabilirim?
  C: Aspose.GIS topluluk forumundan destek alabilirsiniz.[Burada](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

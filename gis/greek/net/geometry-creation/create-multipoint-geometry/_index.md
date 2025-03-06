@@ -3,10 +3,16 @@ title: Δημιουργήστε MultiPoint Geometry με το Aspose.GIS για 
 linktitle: Δημιουργία MultiPoint Geometry
 second_title: Aspose.GIS .NET API
 description: Master Aspose.GIS για .NET - Μάθετε να δημιουργείτε γεωμετρίες πολλών σημείων χωρίς κόπο. Ολοκληρωμένο σεμινάριο για προγραμματιστές.
-type: docs
 weight: 14
 url: /el/net/geometry-creation/create-multipoint-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Δημιουργήστε MultiPoint Geometry με το Aspose.GIS για .NET
+
 ## Εισαγωγή
 
 Στον κόσμο των Συστημάτων Γεωγραφικών Πληροφοριών (GIS), το Aspose.GIS για .NET ξεχωρίζει ως ένα ισχυρό εργαλείο για προγραμματιστές. Τα ισχυρά χαρακτηριστικά και η ευελιξία του το καθιστούν κορυφαία επιλογή για εργασία με χωρικά δεδομένα σε εφαρμογές .NET. Σε αυτό το σεμινάριο, θα εμβαθύνουμε στα βασικά του Aspose.GIS για .NET, εστιάζοντας συγκεκριμένα στη δημιουργία γεωμετριών πολλών σημείων. Είτε είστε έμπειρος προγραμματιστής είτε μόλις ξεκινάτε, αυτός ο οδηγός θα σας καθοδηγήσει σε κάθε βήμα, καθιστώντας το εύκολο να το κατανοήσετε και να το εφαρμόσετε.
@@ -82,3 +88,9 @@ multipoint.Add(new Point(3, 4));
 
 ### Ε: Μπορώ να αγοράσω μια προσωρινή άδεια για βραχυπρόθεσμα έργα;
 Α: Ναι, μπορείτε να αποκτήσετε μια προσωρινή άδεια για τις συγκεκριμένες ανάγκες του έργου σας.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

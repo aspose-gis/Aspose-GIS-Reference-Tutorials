@@ -3,10 +3,16 @@ title: 使用 Aspose.GIS for .NET 获取几何类型
 linktitle: 获取几何类型
 second_title: Aspose.GIS .NET API
 description: 探索 Aspose.GIS for .NET 的强大功能。通过这个综合教程，了解如何在 .NET 项目中有效处理空间数据。
-type: docs
 weight: 23
 url: /zh/net/geometry-analysis/get-geometry-type/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.GIS for .NET 获取几何类型
+
 ## 介绍
 在.NET 开发领域，Aspose.GIS 是处理地理信息的强大工具。其丰富的功能使其成为处理空间数据的开发人员的首选。在本教程中，我们将深入研究 Aspose.GIS for .NET 的基础知识，分解关键概念并提供分步指导以帮助您轻松入门。
 ## 先决条件
@@ -63,3 +69,9 @@ Console.WriteLine(geometryType); //观点
 有关临时许可选项，请访问[临时执照](https://purchase.aspose.com/temporary-license/)页。
 ### 我可以在哪里为我的项目购买 Aspose.GIS？
 您可以从购买页面购买Aspose.GIS[这里](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

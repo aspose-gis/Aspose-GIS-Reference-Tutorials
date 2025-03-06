@@ -3,10 +3,16 @@ title: Aspose.GIS'te Dosya GDB Katmanından Nesne Kimliğini Okuyun
 linktitle: Dosya GDB Katmanından Nesne Kimliğini Oku
 second_title: Aspose.GIS .NET API'si
 description: Jeo-uzamsal veri işlemeyi verimli bir şekilde gerçekleştirmek için Aspose.GIS for .NET'i nasıl kullanacağınızı öğrenin. Kapsamlı eğitimler ve uzman rehberliği mevcuttur.
-type: docs
 weight: 16
 url: /tr/net/layer-data-operations/read-object-id-from-file-gdb-layer/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS'te Dosya GDB Katmanından Nesne Kimliğini Okuyun
+
 ## giriiş
 Aspose.GIS for .NET'te uzmanlaşmaya yönelik kapsamlı kılavuzumuza hoş geldiniz! Aspose.GIS, .NET çerçevesinde coğrafi veri işleme ve görselleştirme görevlerini verimli bir şekilde yürütmek için tasarlanmış güçlü bir kütüphanedir. İster deneyimli bir geliştirici olun, ister coğrafi uzamsal programlama yolculuğunuza yeni başlıyor olun, bu eğitim size Aspose.GIS'in tüm potansiyelinden yararlanmanız için bilmeniz gereken her şeyi anlatacaktır.
 ## Önkoşullar
@@ -74,3 +80,9 @@ Aspose.GIS ile ilgili herhangi bir sorunla karşılaşırsanız veya soruların�
 Evet, test ve değerlendirme amacıyla Aspose web sitesinden geçici bir lisans alabilirsiniz.
 ### Aspose.GIS for .NET'in kapsamlı belgelerini nerede bulabilirim?
  Şuraya başvurabilirsiniz:[dokümantasyon](https://reference.aspose.com/gis/net/) Aspose.GIS API'lerinin ve özelliklerinin kullanımına ilişkin ayrıntılı bilgi için.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Controleer de kruispunten van geometrieën met Aspose.GIS voor .NET
 linktitle: Controleer geometrieën snijpunt
 second_title: Aspose.GIS .NET-API
 description: Leer hoe u de kruispunten van geometrieën kunt controleren met behulp van Aspose.GIS voor .NET met stapsgewijze begeleiding. Verbeter moeiteloos uw GIS-ontwikkeling.
-type: docs
 weight: 11
 url: /nl/net/geometry-analysis/check-geometries-intersection/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Controleer de kruispunten van geometrieën met Aspose.GIS voor .NET
+
 ## Invoering
 Op het gebied van geografische informatiesystemen (GIS) onderscheidt Aspose.GIS voor .NET zich als een krachtige toolkit waarmee ontwikkelaars geavanceerde ruimtelijke functionaliteiten naadloos in hun applicaties kunnen integreren. Of u nu een doorgewinterde ontwikkelaar bent of net bezig bent met GIS-ontwikkeling, dit artikel zal dienen als uw uitgebreide gids voor het gebruik van Aspose.GIS voor .NET om de kruispunten van geometrieën effectief te controleren.
 ## Vereisten
@@ -76,3 +82,9 @@ Ja, Aspose.GIS voor .NET is compatibel met verschillende .NET-frameworks, waaron
  Ja, u kunt een tijdelijke licentie verkrijgen via[hier](https://purchase.aspose.com/temporary-license/).
 ### Waar kan ik een gelicentieerde versie van Aspose.GIS voor .NET kopen?
  U kunt een gelicentieerde versie van Aspose.GIS voor .NET aanschaffen bij[hier](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Ellenőrizze a geometriák egyenlőségét
 linktitle: Ellenőrizze a geometriák egyenlőségét
 second_title: Aspose.GIS .NET API
 description: Ezzel az átfogó oktatóanyaggal megtudhatja, hogyan használhatja az Aspose.GIS for .NET fájlt a .NET-alkalmazások geometriájának egyenlőségéhez.
-type: docs
 weight: 10
 url: /hu/net/geometry-analysis/check-geometries-for-equality/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Ellenőrizze a geometriák egyenlőségét
+
 ## Bevezetés
 Az Aspose.GIS for .NET egy hatékony könyvtár, amely lehetővé teszi a fejlesztők számára, hogy hatékonyan dolgozzanak térinformatikai adatokkal .NET-alkalmazásaikban. Akár térképészeti alkalmazásokat, akár térelemző eszközöket épít, akár térinformatikai funkciókat integrál a meglévő szoftverekbe, az Aspose.GIS biztosítja a munka elvégzéséhez szükséges eszközöket.
 ## Előfeltételek
@@ -73,3 +79,9 @@ Igen, az Aspose.GIS for .NET kompatibilis a különböző .NET-keretrendszerekke
  Támogatást kaphat az Aspose.GIS közösségi fórumtól[itt](https://forum.aspose.com/c/gis/33).
 ### Vásárolhatok ideiglenes licencet az Aspose.GIS for .NET számára?
  Igen, vásárolhat ideiglenes licencet a[vásárlási oldal](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

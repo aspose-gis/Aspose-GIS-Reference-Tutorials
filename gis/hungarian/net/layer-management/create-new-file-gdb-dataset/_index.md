@@ -3,10 +3,16 @@ title: Új fájl létrehozása GDB adatkészlet
 linktitle: Új fájl létrehozása GDB adatkészlet
 second_title: Aspose.GIS .NET API
 description: Fedezze fel az Aspose.GIS for .NET webhelyet, amellyel könnyedén hozhat létre és kezelhet GIS-adatkészleteket. Töltse le most a zökkenőmentes térinformatikai fejlesztéshez. #Aspose #GIS
-type: docs
 weight: 10
 url: /hu/net/layer-management/create-new-file-gdb-dataset/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Új fájl létrehozása GDB adatkészlet
+
 ## Bevezetés
 térinformatikai fejlesztés területén az Aspose.GIS for .NET kiemelkedik a földrajzi információs rendszer (GIS) adatainak kezelésére és manipulálására szolgáló hatékony eszköztárként. Akár tapasztalt fejlesztő, akár csak most kezdi el a GIS felé vezető utat, ez az oktatóanyag végigvezeti Önt egy új File Geodatabase (GDB) adatkészlet létrehozásának folyamatán az Aspose.GIS for .NET használatával.
 ## Előfeltételek
@@ -84,3 +90,9 @@ Az Aspose.GIS for .NET egy önálló eszközkészlet; azonban a funkcionalitás 
  Fedezze fel a[Aspose.GIS dokumentáció](https://reference.aspose.com/gis/net/) további példákért és részletes információkért.
 ### K: Hol vásárolhatom meg az Aspose.GIS-t .NET-hez?
  Megvásárolhatja az Aspose.GIS for .NET webhelyet[vásárlási oldal](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

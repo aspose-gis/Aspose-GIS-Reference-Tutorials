@@ -3,10 +3,16 @@ title: Erstellen Sie einen neuen Datei-GDB-Datensatz
 linktitle: Erstellen Sie einen neuen Datei-GDB-Datensatz
 second_title: Aspose.GIS .NET-API
 description: Entdecken Sie Aspose.GIS für .NET, um mühelos GIS-Datensätze zu erstellen und zu verwalten. Laden Sie es jetzt herunter und profitieren Sie von einer nahtlosen Geodatenentwicklung. #Aspose #GIS
-type: docs
 weight: 10
 url: /de/net/layer-management/create-new-file-gdb-dataset/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Erstellen Sie einen neuen Datei-GDB-Datensatz
+
 ## Einführung
 Im Bereich der Geodatenentwicklung zeichnet sich Aspose.GIS für .NET als leistungsstarkes Toolkit zur Verwaltung und Bearbeitung von GIS-Daten (Geographic Information System) aus. Unabhängig davon, ob Sie ein erfahrener Entwickler sind oder gerade erst Ihre Reise in den GIS-Bereich beginnen, führt Sie dieses Tutorial durch den Prozess der Erstellung eines neuen File Geodatabase (GDB)-Datensatzes mit Aspose.GIS für .NET.
 ## Voraussetzungen
@@ -84,3 +90,9 @@ Aspose.GIS für .NET ist ein eigenständiges Toolkit; Sie können es jedoch in a
  Entdecke die[Aspose.GIS-Dokumentation](https://reference.aspose.com/gis/net/) Weitere Beispiele und detaillierte Informationen finden Sie hier.
 ### F: Wo kann ich Aspose.GIS für .NET kaufen?
  Sie können Aspose.GIS für .NET auf der Website erwerben[Kaufseite](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

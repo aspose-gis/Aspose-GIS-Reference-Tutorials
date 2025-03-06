@@ -3,10 +3,16 @@ title: Extraheer functies naar GeoJSON
 linktitle: Extraheer functies naar GeoJSON
 second_title: Aspose.GIS .NET-API
 description: Verken de stapsgewijze handleiding over het gebruik van Aspose.GIS voor .NET om functies naar GeoJSON te extraheren. Benut de kracht van GIS met gemak! #Aspose #GIS
-type: docs
 weight: 23
 url: /nl/net/layer-management/extract-features-to-geojson/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Extraheer functies naar GeoJSON
+
 ## Invoering
 Welkom bij onze stapsgewijze zelfstudie over het extraheren van functies naar GeoJSON met behulp van Aspose.GIS voor .NET! Of u nu een doorgewinterde ontwikkelaar bent of net begint aan uw reis in GIS-programmering, deze gids begeleidt u door het proces, zodat u de volledige kracht van Aspose.GIS voor .NET kunt benutten.
 ## Vereisten
@@ -87,3 +93,9 @@ In deze zelfstudie hebben we het proces van het extraheren van functies naar Geo
  Ja, u kunt de gratis proefversie vinden[hier](https://releases.aspose.com/).
 ### Vraag: Waar kan ik Aspose.GIS voor .NET kopen?
  U kunt het product kopen[hier](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

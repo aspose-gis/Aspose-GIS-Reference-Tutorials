@@ -3,10 +3,16 @@ title: 地理データの変換
 linktitle: 地理データの変換
 second_title: Aspose.GIS .NET API
 description: Aspose.GIS for .NET チュートリアルを使用したシームレスな GeoData 変換をご覧ください。 GeoJSON から TopoJSON への変換、Shapefile から GeoJSON への変換などを学びます。
-type: docs
 weight: 20
 url: /ja/net/geo-data-conversion/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 地理データの変換
+
 ## 導入
 
 Aspose.GIS for .NET を使用した簡単な GeoData 変換チュートリアルの世界へようこそ。この包括的なガイドでは、地理情報システム (GIS) データ処理効率を向上させるためのさまざまなテクニックを詳しく説明します。
@@ -45,3 +51,9 @@ Aspose.GIS for .NET を使用して量子化を行い、ファイル サイズ�
 Aspose.GIS を使用して、.NET で Shapefile を GeoJSON に簡単に変換する方法を学びます。シームレスなデータ相互運用性については、ステップバイステップのガイドに従ってください。
 ### [TopoJSON から GeoJSON への変換](./convert-topojson-to-geojson/)
 Aspose.GIS for .NET を使用して TopoJSON を GeoJSON にシームレスに変換する方法を学びます。地理データを効率的に処理するには、段階的なチュートリアルに従ってください。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

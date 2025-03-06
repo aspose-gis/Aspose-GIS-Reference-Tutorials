@@ -3,10 +3,16 @@ title: Create Polygon with Hole Geometry using Aspose.GIS
 linktitle: Create Polygon with Hole Geometry
 second_title: Aspose.GIS .NET API
 description: Learn how to create polygon with hole geometry using Aspose.GIS for .NET. Step-by-step tutorial with code examples.
-type: docs
 weight: 13
 url: /net/geometry-creation/create-polygon-with-hole-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Create Polygon with Hole Geometry using Aspose.GIS
+
 ## Introduction
 In this tutorial, we'll walk through the process of creating a polygon with a hole geometry using Aspose.GIS for .NET. Aspose.GIS is a powerful library that enables developers to work with geospatial data in their .NET applications. 
 ## Prerequisites
@@ -66,3 +72,10 @@ Yes, you can avail of a free trial of Aspose.GIS from [here](https://releases.as
 You can find support for Aspose.GIS on the [Aspose.GIS forum](https://forum.aspose.com/c/gis/33).
 ### 5. How can I obtain a temporary license for Aspose.GIS?
 You can obtain a temporary license for Aspose.GIS from [here](https://purchase.aspose.com/temporary-license/).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

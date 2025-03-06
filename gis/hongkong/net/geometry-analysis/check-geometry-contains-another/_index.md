@@ -3,10 +3,16 @@ title: 檢查幾何體是否包含另一個幾何體
 linktitle: 檢查幾何體是否包含另一個幾何體
 second_title: Aspose.GIS .NET API
 description: 探索 Aspose.GIS for .NET，這是一個強大的程式庫，可在 .NET 應用程式中無縫整合地理空間資料。
-type: docs
 weight: 14
 url: /zh-hant/net/geometry-analysis/check-geometry-contains-another/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 檢查幾何體是否包含另一個幾何體
+
 ## 介紹
 Aspose.GIS for .NET 是一個功能強大的程式庫，可讓開發人員在其 .NET 應用程式中無縫地處理地理空間資料。無論您是建立地圖應用程式、執行地理空間分析，還是將基於位置的功能整合到您的軟體中，Aspose.GIS 都可以透過提供直覺的 API 和強大的功能來簡化流程。
 ## 先決條件
@@ -85,3 +91,9 @@ Console.WriteLine(geometry3.Within(geometry1)); //真的
 答：是的，您可以加入 Aspose.GIS 社群論壇[這裡](https://forum.aspose.com/c/gis/33)與其他用戶聯繫、提出問題並分享您的經驗。
 ### Q5：我可以在購買前試用Aspose.GIS嗎？
 答：當然，您可以透過下載免費試用版來探索 Aspose.GIS[這裡](https://releases.aspose.com/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

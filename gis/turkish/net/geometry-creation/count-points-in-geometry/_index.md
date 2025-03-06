@@ -3,10 +3,16 @@ title: Aspose.GIS for .NET ile Geometride Noktaları Sayma
 linktitle: Geometride Puanları Sayma
 second_title: Aspose.GIS .NET API'si
 description: Coğrafi verileri zahmetsizce işlemek için Aspose.GIS for .NET'i nasıl kullanacağınızı öğrenin. Kapsamlı eğitimler mevcuttur.
-type: docs
 weight: 24
 url: /tr/net/geometry-creation/count-points-in-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS for .NET ile Geometride Noktaları Sayma
+
 ## giriiş
 Coğrafi Bilgi Sistemleri (GIS) geliştirme alanında Aspose.GIS for .NET, coğrafi verilerin işlenmesi ve işlenmesi için güçlü bir araç seti olarak öne çıkıyor. İster tecrübeli bir geliştirici olun ister sadece GIS programlama dünyasına dalın, Aspose.GIS'te uzmanlaşmak projelerinizde sayısız olasılığın kapısını aralayabilir.
 ## Önkoşullar
@@ -71,3 +77,9 @@ Kesinlikle! Aspose.GIS for .NET ile ilgili ayrıntılı belgeleri şu adreste bu
  Ziyaret edebilirsiniz[Aspose.GIS forumu](https://forum.aspose.com/c/gis/33) Aspose topluluğundan destek istemek veya soru sormak için.
 ### Aspose.GIS for .NET'in ücretsiz deneme sürümü mevcut mu?
  Evet, ücretsiz deneme sürümünden yararlanabilirsiniz.[Aspose.GIS sayfası yayınlandı](https://releases.aspose.com/) Bir satın alma işlemi yapmadan önce özelliklerini değerlendirmek için.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

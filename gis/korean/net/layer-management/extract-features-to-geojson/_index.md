@@ -3,10 +3,16 @@ title: GeoJSON으로 특징 추출
 linktitle: GeoJSON으로 특징 추출
 second_title: Aspose.GIS .NET API
 description: .NET용 Aspose.GIS를 사용하여 GeoJSON으로 기능을 추출하는 방법에 대한 단계별 가이드를 살펴보세요. GIS의 강력한 기능을 쉽게 활용하세요! #Aspose #GIS
-type: docs
 weight: 23
 url: /ko/net/layer-management/extract-features-to-geojson/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# GeoJSON으로 특징 추출
+
 ## 소개
 .NET용 Aspose.GIS를 사용하여 GeoJSON으로 기능을 추출하는 방법에 대한 단계별 튜토리얼에 오신 것을 환영합니다! 숙련된 개발자이든 이제 막 GIS 프로그래밍 여정을 시작하는 사람이든 이 가이드는 프로세스를 안내하여 .NET용 Aspose.GIS의 모든 기능을 활용할 수 있도록 보장합니다.
 ## 전제조건
@@ -87,3 +93,9 @@ outputLayer.Add(outputFeature);
  예, 무료 평가판을 찾을 수 있습니다[여기](https://releases.aspose.com/).
 ### Q: .NET용 Aspose.GIS를 어디서 구입할 수 있나요?
  제품을 구매하실 수 있습니다.[여기](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

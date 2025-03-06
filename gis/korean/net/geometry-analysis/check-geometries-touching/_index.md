@@ -3,10 +3,16 @@ title: 지오메트리 터치 확인
 linktitle: 지오메트리 터치 확인
 second_title: Aspose.GIS .NET API
 description: .NET용 Aspose.GIS를 사용하여 공간 데이터 처리 기능을 활용해 보세요. 이 다용도 툴킷을 사용하여 공간 기능을 애플리케이션에 원활하게 통합하세요.
-type: docs
 weight: 13
 url: /ko/net/geometry-analysis/check-geometries-touching/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 지오메트리 터치 확인
+
 ## 소개
 GIS(지리 정보 시스템) 영역에서 .NET용 Aspose.GIS는 공간 기능을 애플리케이션에 원활하게 통합하려는 개발자를 위한 강력한 도구로 돋보입니다. 강력한 기능과 사용자 친화적인 인터페이스를 갖춘 Aspose.GIS는 개발자가 형상을 분석, 시각화 또는 조작하는 등 공간 데이터를 쉽게 사용할 수 있도록 지원합니다.
 ## 전제조건
@@ -64,3 +70,9 @@ Aspose.GIS는 .NET Framework, .NET Core 및 .NET Standard를 포함한 다양한
 Aspose.GIS는 최신 기술과의 호환성을 보장하고 보고된 문제를 해결하기 위해 정기적으로 업데이트 및 개선 사항을 받습니다.
 ### Aspose.GIS에 대한 임시 라이선스를 얻을 수 있나요?
  예, 다음에서 임시 라이센스를 얻을 수 있습니다.[여기](https://purchase.aspose.com/temporary-license/) 개발 환경에서 Aspose.GIS의 기능을 평가합니다.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

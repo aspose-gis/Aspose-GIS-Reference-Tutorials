@@ -3,10 +3,16 @@ title: Ismételje meg a geometriákat a gyűjteményben
 linktitle: Ismételje meg a geometriákat a gyűjteményben
 second_title: Aspose.GIS .NET API
 description: Ismerje meg, hogyan használhatja az Aspose.GIS for .NET-et a térinformatikai adatok zökkenőmentes kezeléséhez a .NET-alkalmazásokon belül.
-type: docs
 weight: 10
 url: /hu/net/geometry-processing/iterate-over-geometries-in-collection/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Ismételje meg a geometriákat a gyűjteményben
+
 ## Bevezetés
 térinformatikai adatok kezelése és elemzése terén az Aspose.GIS for .NET hatékony eszközkészletként jelenik meg, amely képessé teszi a fejlesztőket a földrajzi információk zökkenőmentes manipulálására, megjelenítésére és feldolgozására a .NET-alkalmazásokon belül. Ez a cikk átfogó útmutatóként szolgál az Aspose.GIS .NET-hez való hatékony kihasználásához, a kezdő és a tapasztalt fejlesztők számára egyaránt.
 ## Előfeltételek
@@ -81,3 +87,9 @@ V: Igen, az Aspose.GIS for .NET kompatibilis különféle .NET környezetekkel, 
 V: Valóban, az Aspose.GIS dokumentáció átfogó mintaprojekteket kínál a tanulási és fejlesztési folyamatok megkönnyítésére.
 ### K: Bővíthetem az Aspose.GIS .NET-hez való funkcióit?
 V: Természetesen az Aspose.GIS for .NET funkciói kibővíthetők egyéni modulok integrálásával és a nyújtott bővíthetőségi szolgáltatások kihasználásával.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

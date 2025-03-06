@@ -3,10 +3,16 @@ title: Chuyển đổi Shapefile đa giác thành Linestring
 linktitle: Chuyển đổi Shapefile đa giác thành Linestring
 second_title: API Aspose.GIS .NET
 description: Khám phá sức mạnh của Aspose.GIS cho .NET và dễ dàng chuyển đổi Tệp hình dạng đa giác thành Linestrings. Thúc đẩy sự phát triển GIS của bạn ngay hôm nay!
-type: docs
 weight: 18
 url: /vi/net/layer-management/convert-polygon-shapefile-to-linestring/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Chuyển đổi Shapefile đa giác thành Linestring
+
 ## Giới thiệu
 Nếu bạn đang làm việc với hệ thống thông tin địa lý (GIS) trong .NET, Aspose.GIS là một thư viện mạnh mẽ có thể đơn giản hóa công việc của bạn. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn quy trình chuyển đổi Tệp hình đa giác thành Chuỗi đường bằng Aspose.GIS. Điều này có thể đặc biệt hữu ích khi bạn cần trích xuất các đặc điểm tuyến tính từ dữ liệu đa giác cho các ứng dụng khác nhau như lập kế hoạch tuyến đường hoặc phân tích mạng.
 ## Điều kiện tiên quyết
@@ -78,3 +84,9 @@ Có, Aspose.GIS hỗ trợ nhiều phiên bản .NET khác nhau, đảm bảo kh
  Có, bạn có thể khám phá Aspose.GIS với bản dùng thử miễn phí bằng cách truy cập[liên kết này](https://releases.aspose.com/).
 ### Tôi có thể tìm kiếm sự giúp đỡ hoặc hỗ trợ ở đâu?
  Tham quan[Diễn đàn Aspose.GIS](https://forum.aspose.com/c/gis/33) cho bất kỳ trợ giúp hoặc truy vấn liên quan đến hỗ trợ.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

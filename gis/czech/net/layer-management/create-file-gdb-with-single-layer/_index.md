@@ -3,10 +3,16 @@ title: Vytvořte soubor GDB s jednou vrstvou
 linktitle: Vytvořte soubor GDB s jednou vrstvou
 second_title: Aspose.GIS .NET API
 description: Odemkněte potenciál správy geoprostorových dat v .NET s Aspose.GIS. Naučte se krok za krokem vytvářet souborové geodatabáze a vrstvy. Stáhnout teď!
-type: docs
 weight: 11
 url: /cs/net/layer-management/create-file-gdb-with-single-layer/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Vytvořte soubor GDB s jednou vrstvou
+
 ## Úvod
 Jste připraveni pozvednout své geoprostorové aplikace pomocí robustních souborových geodatabází a vrstev? Nehledejte nic jiného než Aspose.GIS pro .NET. V tomto tutoriálu vás provedeme procesem vytváření geodatabáze souborů (GDB) s jednou vrstvou pomocí Aspose.GIS pro .NET. Využijte možnosti správy a vizualizace prostorových dat ve svých aplikacích .NET bez námahy.
 ## Předpoklady
@@ -70,3 +76,9 @@ Ano, Aspose.GIS for .NET lze bez problémů integrovat do vašich stávajících
  Navštivte[Fórum Aspose.GIS](https://forum.aspose.com/c/gis/33) za podporu a pomoc komunity.
 ### Jsou k dispozici dočasné licence pro Aspose.GIS pro .NET?
  Ano, můžete získat a[dočasná licence](https://purchase.aspose.com/temporary-license/) pro Aspose.GIS pro .NET.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

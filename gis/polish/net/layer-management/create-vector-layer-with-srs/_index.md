@@ -3,10 +3,16 @@ title: Utwórz warstwę wektorową za pomocą SRS
 linktitle: Utwórz warstwę wektorową za pomocą SRS
 second_title: Aspose.GIS .NET API
 description: Poznaj Aspose.GIS dla .NET - Twój klucz do płynnej integracji GIS. Twórz warstwy wektorowe bez wysiłku, korzystając z określonych systemów odniesień przestrzennych. Pobierz teraz!
-type: docs
 weight: 13
 url: /pl/net/layer-management/create-vector-layer-with-srs/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Utwórz warstwę wektorową za pomocą SRS
+
 ## Wstęp
 Aspose.GIS dla .NET to potężna biblioteka, która umożliwia programistom płynną pracę z danymi systemu informacji geograficznej (GIS) w aplikacjach .NET. W tym samouczku skupimy się na tworzeniu warstwy wektorowej z systemem odniesień przestrzennych (SRS). Pod koniec tego przewodnika będziesz w stanie bez wysiłku zintegrować możliwości GIS ze swoimi projektami .NET.
 ## Warunki wstępne
@@ -90,3 +96,9 @@ Absolutnie! Aspose.GIS dla .NET jest wszechstronny i może być używany w aplik
  Tak, możesz poznać funkcje Aspose.GIS, uzyskując bezpłatną wersję próbną[Tutaj](https://releases.aspose.com/).
 ### Jak mogę kupić licencję na Aspose.GIS?
  Aby kupić licencję, odwiedź stronę[strona zakupu](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

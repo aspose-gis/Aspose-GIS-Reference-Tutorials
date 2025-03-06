@@ -3,10 +3,16 @@ title: 通过分组将 GeoJSON 转换为 TopoJSON
 linktitle: 通过分组将 GeoJSON 转换为 TopoJSON
 second_title: Aspose.GIS .NET API
 description: 在此综合教程中，了解如何使用 Aspose.GIS for .NET 通过分组将 GeoJSON 转换为 TopoJSON。
-type: docs
 weight: 13
 url: /zh/net/geo-data-conversion/convert-geojson-to-topojson-with-grouping/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 通过分组将 GeoJSON 转换为 TopoJSON
+
 ## 介绍
 
 欢迎使用我们的分步指南，了解如何使用 Aspose.GIS for .NET 通过分组将 GeoJSON 转换为 TopoJSON。 Aspose.GIS 是一个功能强大的.NET API，允许开发人员无缝地处理地理数据。在本教程中，我们将引导您完成将 GeoJSON 文件转换为 TopoJSON 的过程，同时根据指定的属性对要素进行分组。
@@ -93,3 +99,9 @@ VectorLayer.Convert(sampleGeoJsonPath, Drivers.GeoJson, outputFilePath, Drivers.
 
 ### Q5：从哪里可以获得 Aspose.GIS 的支持？
 答：您可以从 Aspose.GIS 社区论坛获得支持[这里](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

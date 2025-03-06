@@ -3,10 +3,16 @@ title: Adja meg a WKT Variant on Translation az Aspose.GIS segítségével
 linktitle: Adja meg a WKT-változatot a fordításnál
 second_title: Aspose.GIS .NET API
 description: Ismerje meg, hogyan adhat meg WKT-változatokat az Aspose.GIS for .NET-ben a téradat-megjelenítési formátum és a pontosság hatékony szabályozásához.
-type: docs
 weight: 19
 url: /hu/net/geometry-processing/specify-wkt-variant-on-translation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Adja meg a WKT Variant on Translation az Aspose.GIS segítségével
+
 ## Bevezetés
 Az Aspose.GIS for .NET egy hatékony könyvtár, amely lehetővé teszi a fejlesztők számára, hogy könnyedén dolgozzanak a földrajzi információs rendszer (GIS) adataival .NET-alkalmazásaikban. Az Aspose.GIS egyik alapvető funkciója, hogy a fordítás során megadható a jól ismert szöveg (WKT) változat, amely lehetővé teszi a felhasználók számára a térbeli adatok megjelenítésének formátumának és pontosságának szabályozását. Ebben az oktatóanyagban lépésről lépésre megvizsgáljuk, hogyan adhatunk meg WKT-változatokat az Aspose.GIS for .NET használatával.
 ## Előfeltételek
@@ -66,3 +72,9 @@ Igen, az Aspose.GIS a téradat-formátumok széles skáláját támogatja, bele�
  Igen, letöltheti az Aspose.GIS ingyenes próbaverzióját a webhelyről[itt](https://releases.aspose.com/).
 ### Hol kaphatok segítséget vagy támogatást az Aspose.GIS-hez?
  Kérdéseit felteheti, vagy segítséget kérhet az Aspose.GIS közösségtől a címen[fórum](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

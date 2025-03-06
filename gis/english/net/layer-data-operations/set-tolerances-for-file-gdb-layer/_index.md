@@ -3,10 +3,16 @@ title: Set Tolerances for File GDB Layer
 linktitle: Set Tolerances for File GDB Layer
 second_title: Aspose.GIS .NET API
 description: Explore Aspose.GIS for .NET and master geospatial data manipulation. Set tolerances effortlessly with step-by-step guidance. Enhance your .NET applications.
-type: docs
 weight: 22
 url: /net/layer-data-operations/set-tolerances-for-file-gdb-layer/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Set Tolerances for File GDB Layer
+
 ## Introduction
 Welcome to the world of geospatial data manipulation using Aspose.GIS for .NET! If you're eager to enhance your skills in handling geographic information in your .NET applications, you're in the right place. In this comprehensive guide, we will delve into the intricate details of setting tolerances for a File Geodatabase (GDB) layer, providing you with practical insights and step-by-step instructions.
 ## Prerequisites
@@ -69,3 +75,10 @@ Visit the [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) to connect with 
 Yes, you can obtain a [temporary license](https://purchase.aspose.com/temporary-license/) for testing and evaluation.
 ### Where can I purchase the Aspose.GIS for .NET license?
 You can purchase the license from the [buy page](https://purchase.aspose.com/buy).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

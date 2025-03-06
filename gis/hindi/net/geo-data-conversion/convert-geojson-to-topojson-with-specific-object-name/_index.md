@@ -3,10 +3,16 @@ title: विशिष्ट ऑब्जेक्ट नाम के साथ
 linktitle: विशिष्ट ऑब्जेक्ट नाम के साथ जियोजसन को टोपोजसन में बदलें
 second_title: Aspose.GIS .NET एपीआई
 description: .NET के लिए Aspose.GIS का उपयोग करके एक विशिष्ट ऑब्जेक्ट नाम के साथ जियोजसन को टोपोजसन में परिवर्तित करने का तरीका जानें। यह ट्यूटोरियल कुशल भौगोलिक डेटा हेरफेर के लिए चरण-दर-चरण मार्गदर्शिका प्रदान करता है।
-type: docs
 weight: 12
 url: /hi/net/geo-data-conversion/convert-geojson-to-topojson-with-specific-object-name/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# विशिष्ट ऑब्जेक्ट नाम के साथ जियोजसन को टोपोजसन में बदलें
+
 ## परिचय
 .NET के लिए Aspose.GIS, .NET अनुप्रयोगों में भौगोलिक डेटा के साथ काम करने के लिए एक शक्तिशाली उपकरण है। चाहे आप मैपिंग एप्लिकेशन विकसित कर रहे हों, स्थानिक डेटा का विश्लेषण कर रहे हों, या जियोजोन फ़ाइलों में हेरफेर कर रहे हों, Aspose.GIS आपके वर्कफ़्लो को सुव्यवस्थित करने के लिए सुविधाओं का एक व्यापक सेट प्रदान करता है।
 ## आवश्यक शर्तें
@@ -67,3 +73,9 @@ VectorLayer.Convert(sampleGeoJsonPath, Drivers.GeoJson, outputFilePath, Drivers.
  आप यहां से लाइसेंस खरीद सकते हैं[यहाँ](https://purchase.aspose.com/buy).
 ### क्या मुझे मूल्यांकन के लिए अस्थायी लाइसेंस की आवश्यकता है?
  हाँ, आप अस्थायी लाइसेंस प्राप्त कर सकते हैं[यहाँ](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

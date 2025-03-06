@@ -3,10 +3,16 @@ title: حدد متغير WKB للترجمة في Aspose.GIS لـ .NET
 linktitle: حدد متغير WKB عند الترجمة
 second_title: Aspose.GIS .NET API
 description: تعرف على كيفية تحديد متغيرات WKB في Aspose.GIS لـ .NET دون عناء باستخدام هذا الدليل الشامل. تعزيز مهارات تطوير نظم المعلومات الجغرافية لديك.
-type: docs
 weight: 18
 url: /ar/net/geometry-processing/specify-wkb-variant-on-translation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# حدد متغير WKB للترجمة في Aspose.GIS لـ .NET
+
 ## مقدمة
 في مجال تطوير نظم المعلومات الجغرافية (GIS)، يبرز Aspose.GIS for .NET كمجموعة أدوات قوية. إن تعدد استخداماته وكفاءته يجعله خيارًا مفضلاً للمطورين الذين يهدفون إلى دمج وظائف نظم المعلومات الجغرافية في تطبيقات .NET الخاصة بهم بسلاسة. تعمل هذه المقالة كدليل شامل للاستفادة من Aspose.GIS for .NET، مع التركيز بشكل خاص على تحديد متغيرات WKB (الثنائية المعروفة) أثناء عمليات الترجمة.
 ## المتطلبات الأساسية
@@ -62,3 +68,9 @@ File.WriteAllBytes(Path.Combine("Your Document Directory", "EWkbFile.ewkb"), wkb
  يمكنك الحصول على ترخيص مؤقت بزيارة[صفحة الترخيص المؤقتة](https://purchase.aspose.com/temporary-license/) واتباع التعليمات المقدمة.
 ### أين يمكنني شراء ترخيص Aspose.GIS لـ .NET؟
  يمكنك شراء ترخيص Aspose.GIS for .NET من صفحة الشراء على[هذا الرابط](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

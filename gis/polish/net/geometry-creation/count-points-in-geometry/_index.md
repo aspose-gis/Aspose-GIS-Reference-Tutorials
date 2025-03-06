@@ -3,10 +3,16 @@ title: Licz punkty w geometrii za pomocą Aspose.GIS dla .NET
 linktitle: Policz punkty w geometrii
 second_title: Aspose.GIS .NET API
 description: Dowiedz się, jak wykorzystać Aspose.GIS dla .NET do łatwego manipulowania danymi geograficznymi. Dostępne kompleksowe samouczki.
-type: docs
 weight: 24
 url: /pl/net/geometry-creation/count-points-in-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Licz punkty w geometrii za pomocą Aspose.GIS dla .NET
+
 ## Wstęp
 dziedzinie rozwoju systemów informacji geograficznej (GIS) Aspose.GIS dla .NET wyróżnia się jako potężny zestaw narzędzi do manipulowania i przetwarzania danych geograficznych. Niezależnie od tego, czy jesteś doświadczonym programistą, czy po prostu zagłębiasz się w świat programowania GIS, opanowanie Aspose.GIS może otworzyć niezliczone możliwości w Twoich projektach.
 ## Warunki wstępne
@@ -71,3 +77,9 @@ Absolutnie! Szczegółową dokumentację Aspose.GIS dla .NET można znaleźć na
  Możesz odwiedzić[Forum Aspose.GIS](https://forum.aspose.com/c/gis/33) aby szukać wsparcia lub zadawać pytania społeczności Aspose.
 ### Czy dostępna jest bezpłatna wersja próbna Aspose.GIS dla .NET?
  Tak, możesz skorzystać z bezpłatnego okresu próbnego w witrynie[Strona z wydaniami Aspose.GIS](https://releases.aspose.com/) aby ocenić jego funkcje przed dokonaniem zakupu.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Kontrollera Geometri täcker en annan
 linktitle: Kontrollera Geometri täcker en annan
 second_title: Aspose.GIS .NET API
 description: Lär dig hur du använder Aspose.GIS för .NET för att effektivt arbeta med geografiska data, analysera rumslig information och integrera kartfunktioner i dina .NET-applikationer.
-type: docs
 weight: 15
 url: /sv/net/geometry-analysis/check-geometry-covers-another/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Kontrollera Geometri täcker en annan
+
 ## Introduktion
 Aspose.GIS för .NET är ett kraftfullt bibliotek som ger utvecklare verktyg för att effektivt arbeta med geografiska data i sina .NET-applikationer. Oavsett om du bygger en kartapplikation, analyserar rumslig data eller integrerar geografiska funktioner i din programvara, erbjuder Aspose.GIS en omfattande uppsättning funktioner för att effektivisera din utvecklingsprocess.
 ## Förutsättningar
@@ -74,3 +80,9 @@ Ja, Aspose.GIS för .NET stöder ett brett utbud av GIS-format inklusive Shapefi
 Aspose.GIS för .NET är ett eget bibliotek utvecklat av Aspose, så bidrag från externa utvecklare accepteras inte. Du kan dock ge feedback och förslag för att förbättra biblioteket.
 ### Hur ofta släpps uppdateringar för Aspose.GIS för .NET?
  Uppdateringar för Aspose.GIS för .NET släpps regelbundet för att introducera nya funktioner, förbättringar och buggfixar. Kolla[hemsida](https://releases.aspose.com/gis/net/) för de senaste utgåvorna.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

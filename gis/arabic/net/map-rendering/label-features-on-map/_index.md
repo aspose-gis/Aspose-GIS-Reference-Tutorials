@@ -3,10 +3,16 @@ title: إتقان تصنيف الميزات باستخدام Aspose.GIS لـ .NE
 linktitle: ميزات التسمية على الخريطة
 second_title: Aspose.GIS .NET API
 description: استكشف Aspose.GIS for .NET وأتقن فن وضع العلامات على الميزات على الخرائط. تعزيز تصوراتك الجغرافية المكانية دون عناء. #Aspose #GIS
-type: docs
 weight: 11
 url: /ar/net/map-rendering/label-features-on-map/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# إتقان تصنيف الميزات باستخدام Aspose.GIS لـ .NET
+
 ## مقدمة
 في عالم تصور البيانات الجغرافية المكانية، تلعب ميزات وضع العلامات على الخريطة دورًا حاسمًا في نقل المعلومات بشكل فعال. يوفر Aspose.GIS for .NET مجموعة أدوات قوية لتحقيق ذلك بسلاسة. في هذا البرنامج التعليمي، سوف نستكشف طرقًا مختلفة لوضع العلامات على النقاط على الخريطة باستخدام Aspose.GIS، مما يعزز تصورات الخريطة باستخدام تسميات إعلامية.
 ## المتطلبات الأساسية
@@ -126,3 +132,9 @@ var pointLabeling = new SimpleLabeling("name")
 نعم، يمكنك ضبط موضع التسمية باستخدام خيارات مثل التدوير ونقاط الربط والإزاحات.
 ### هل يمكنني أتمتة عملية إنشاء الملصقات في عملية مجمعة؟
 بالتأكيد، يمكنك دمج Aspose.GIS في سير العمل الآلي الخاص بك لإنشاء الملصقات المجمعة.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

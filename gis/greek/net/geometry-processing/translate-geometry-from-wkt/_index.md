@@ -3,10 +3,16 @@ title: Μεταφράστε τη Γεωμετρία από το WKT χρησιμ
 linktitle: Μετάφραση Γεωμετρίας από το WKT
 second_title: Aspose.GIS .NET API
 description: Μάθετε πώς να μεταφράζετε τη γεωμετρία από το γνωστό κείμενο χρησιμοποιώντας το Aspose.GIS για .NET. Ένα βήμα προς βήμα σεμινάριο για απρόσκοπτη ενσωμάτωση.
-type: docs
 weight: 21
 url: /el/net/geometry-processing/translate-geometry-from-wkt/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Μεταφράστε τη Γεωμετρία από το WKT χρησιμοποιώντας το Aspose.GIS στο .NET
+
 ## Εισαγωγή
 Σε αυτό το σεμινάριο, θα εμβαθύνουμε στη διαδικασία μετάφρασης της γεωμετρίας από το Γνωστό Κείμενο (WKT) χρησιμοποιώντας το Aspose.GIS για .NET. Το Aspose.GIS είναι ένα ισχυρό API .NET που επιτρέπει στους προγραμματιστές να εργάζονται με γεωχωρικά δεδομένα χωρίς κόπο. Είτε είστε έμπειρος προγραμματιστής είτε μόλις ξεκινάτε με τον γεωχωρικό προγραμματισμό, αυτό το σεμινάριο θα σας καθοδηγήσει βήμα προς βήμα στη διαδικασία.
 ## Προαπαιτούμενα
@@ -48,3 +54,9 @@ Console.WriteLine(line.Count); // Έξοδος: 3
  Μπορείτε να βρείτε την τεκμηρίωση[εδώ](https://reference.aspose.com/gis/net/).
 ### Πώς μπορώ να λάβω υποστήριξη για το Aspose.GIS για .NET;
  Μπορείτε να λάβετε υποστήριξη από το φόρουμ Aspose.GIS[εδώ](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

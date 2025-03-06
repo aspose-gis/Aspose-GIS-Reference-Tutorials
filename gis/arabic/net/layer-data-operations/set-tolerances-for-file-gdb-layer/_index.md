@@ -3,10 +3,16 @@ title: تعيين التفاوتات لطبقة ملف GDB
 linktitle: تعيين التفاوتات لطبقة ملف GDB
 second_title: Aspose.GIS .NET API
 description: استكشف Aspose.GIS for .NET وأتقن معالجة البيانات الجغرافية المكانية. قم بتعيين التفاوتات بسهولة من خلال إرشادات خطوة بخطوة. تحسين تطبيقات .NET الخاصة بك.
-type: docs
 weight: 22
 url: /ar/net/layer-data-operations/set-tolerances-for-file-gdb-layer/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# تعيين التفاوتات لطبقة ملف GDB
+
 ## مقدمة
 مرحبًا بك في عالم معالجة البيانات الجغرافية المكانية باستخدام Aspose.GIS for .NET! إذا كنت حريصًا على تحسين مهاراتك في التعامل مع المعلومات الجغرافية في تطبيقات .NET، فأنت في المكان الصحيح. في هذا الدليل الشامل، سوف نتعمق في التفاصيل المعقدة لإعداد التفاوتات لطبقة قاعدة البيانات الجغرافية للملفات (GDB)، مما يوفر لك رؤى عملية وتعليمات خطوة بخطوة.
 ## المتطلبات الأساسية
@@ -69,3 +75,9 @@ using (var layer = dataset.CreateLayer("layer_name", options))
  نعم يمكنك الحصول على[ترخيص مؤقت](https://purchase.aspose.com/temporary-license/) للاختبار والتقييم.
 ### أين يمكنني شراء ترخيص Aspose.GIS for .NET؟
  يمكنك شراء الترخيص من[صفحة الشراء](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

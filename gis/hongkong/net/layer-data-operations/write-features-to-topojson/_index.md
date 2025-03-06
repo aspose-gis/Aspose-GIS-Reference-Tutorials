@@ -3,10 +3,16 @@ title: 將特徵寫入 TopoJSON
 linktitle: 將特徵寫入 TopoJSON
 second_title: Aspose.GIS .NET API
 description: 掌握使用 Aspose.GIS for .NET 撰寫 TopoJSON 功能。請按照我們的逐步教學進行操作。提升您的 GIS 應用程式。
-type: docs
 weight: 24
 url: /zh-hant/net/layer-data-operations/write-features-to-topojson/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 將特徵寫入 TopoJSON
+
 ## 介紹
 在地理資訊系統 (GIS) 開發領域，Aspose.GIS for .NET 作為一個強大的工具包脫穎而出，提供了大量用於操作空間資料的功能。在其眾多功能中，本教學重點在於一項特定任務：使用 Aspose.GIS for .NET 將功能寫入 TopoJSON 格式。如果您渴望透過 TopoJSON 支援來增強您的 GIS 應用程序，請按照以下步驟了解逐步指南。
 ## 先決條件
@@ -72,3 +78,9 @@ layer.Add(feature1);
 答：前往[Aspose.GIS論壇](https://forum.aspose.com/c/gis/33)以獲得社區支持和討論。
 ### Q：如何取得 Aspose.GIS 的臨時許可證？
 答：您可以獲得臨時許可證[這裡](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

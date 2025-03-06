@@ -3,10 +3,16 @@ title: ज्यामिति सतह पर बिंदु प्राप
 linktitle: ज्यामिति सतह पर बिंदु प्राप्त करें
 second_title: Aspose.GIS .NET एपीआई
 description: .NET के लिए Aspose.GIS का उपयोग करके भू-स्थानिक डेटा के साथ कुशलतापूर्वक काम करना सीखें। चरण-दर-चरण मार्गदर्शिका और अक्सर पूछे जाने वाले प्रश्न शामिल हैं।
-type: docs
 weight: 25
 url: /hi/net/geometry-analysis/get-point-on-geometry-surface/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# ज्यामिति सतह पर बिंदु प्राप्त करें
+
 ## परिचय
 इस ट्यूटोरियल में, हम यह पता लगाएंगे कि ज्यामिति के साथ काम करने और उनकी सतहों पर बिंदुओं को पुनः प्राप्त करने के लिए .NET के लिए Aspose.GIS का उपयोग कैसे करें। Aspose.GIS एक शक्तिशाली लाइब्रेरी है जो .NET अनुप्रयोगों में भू-स्थानिक डेटा प्रोसेसिंग, हेरफेर और विज़ुअलाइज़ेशन के लिए विभिन्न कार्यक्षमताएं प्रदान करती है।
 ## आवश्यक शर्तें
@@ -66,3 +72,9 @@ Console.WriteLine(polygon.SpatiallyContains(pointOnSurface)); // सत्य
  हां, आप Aspose.GIS के लिए अस्थायी लाइसेंस प्राप्त कर सकते हैं[यहाँ](https://purchase.aspose.com/temporary-license/).
 ### मैं Aspose.GIS कहां से खरीद सकता हूं?
  आप Aspose.GIS को खरीद पृष्ठ से खरीद सकते हैं[यहाँ](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

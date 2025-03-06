@@ -3,10 +3,16 @@ title: إنشاء هندسة مضلعة باستخدام Aspose.GIS لـ .NET
 linktitle: إنشاء هندسة المضلع
 second_title: Aspose.GIS .NET API
 description: تعرف على كيفية إنشاء هندسة المضلعات باستخدام Aspose.GIS لـ .NET. برنامج تعليمي خطوة بخطوة لمطوري .NET.
-type: docs
 weight: 12
 url: /ar/net/geometry-creation/create-polygon-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# إنشاء هندسة مضلعة باستخدام Aspose.GIS لـ .NET
+
 ## مقدمة
 في عالم تطوير البرمجيات، تلعب أنظمة المعلومات الجغرافية (GIS) دورًا حيويًا في تحليل البيانات المكانية وتصورها. Aspose.GIS for .NET هي مكتبة قوية توفر للمطورين الأدوات التي يحتاجونها للعمل مع بيانات GIS بكفاءة. في هذا البرنامج التعليمي، سنستكشف كيفية استخدام Aspose.GIS for .NET لإنشاء هندسة مضلعة، وهي مهمة أساسية في العديد من تطبيقات نظم المعلومات الجغرافية.
 ## المتطلبات الأساسية
@@ -66,3 +72,9 @@ polygon.ExteriorRing = ring;
  نعم، يمكنك تنزيل نسخة تجريبية مجانية من Aspose.GIS for .NET من[هنا](https://releases.aspose.com/).
 ### أين يمكنني الحصول على الدعم لـ Aspose.GIS لـ .NET؟
  يمكنك الحصول على دعم لـ Aspose.GIS for .NET من[منتدى Aspose.GIS](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

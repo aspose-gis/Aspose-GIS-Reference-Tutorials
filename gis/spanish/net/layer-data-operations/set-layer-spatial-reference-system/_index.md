@@ -3,10 +3,16 @@ title: Establecer sistema de referencia espacial de capas
 linktitle: Establecer sistema de referencia espacial de capas
 second_title: Aspose.GIS API .NET
 description: Configuración maestra del sistema de referencia espacial de capas con Aspose.GIS para .NET. Mejore sus proyectos SIG con este tutorial paso a paso.
-type: docs
 weight: 19
 url: /es/net/layer-data-operations/set-layer-spatial-reference-system/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Establecer sistema de referencia espacial de capas
+
 ## Introducción
 En el vasto panorama de los Sistemas de Información Geográfica (SIG), Aspose.GIS para .NET se destaca como una herramienta robusta y versátil para desarrolladores. Este tutorial lo guiará a través del proceso de configuración del sistema de referencia espacial de capas usando Aspose.GIS para .NET. Ya sea que sea un desarrollador experimentado o un recién llegado al desarrollo de SIG, esta guía paso a paso lo ayudará a aprovechar el poder de Aspose.GIS para mejorar sus capacidades de manejo de datos espaciales.
 ## Requisitos previos
@@ -72,3 +78,9 @@ Sí, Aspose.GIS se integra bien con otras bibliotecas SIG y puede usarse junto c
  ¡Ciertamente! Puedes descargar una versión de prueba gratuita.[aquí](https://releases.aspose.com/).
 ### ¿Dónde puedo buscar ayuda para consultas relacionadas con Aspose.GIS?
  Para cualquier soporte o consulta visita el[Foro Aspose.GIS](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

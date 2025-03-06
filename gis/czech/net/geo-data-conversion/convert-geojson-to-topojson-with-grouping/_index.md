@@ -3,10 +3,16 @@ title: Převeďte GeoJSON na TopoJSON pomocí seskupení
 linktitle: Převeďte GeoJSON na TopoJSON pomocí seskupení
 second_title: Aspose.GIS .NET API
 description: Naučte se, jak převést GeoJSON na TopoJSON se seskupováním pomocí Aspose.GIS pro .NET v tomto komplexním tutoriálu.
-type: docs
 weight: 13
 url: /cs/net/geo-data-conversion/convert-geojson-to-topojson-with-grouping/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Převeďte GeoJSON na TopoJSON pomocí seskupení
+
 ## Úvod
 
 Vítejte v našem podrobném průvodci, jak pomocí Aspose.GIS for .NET převést GeoJSON na TopoJSON se seskupováním. Aspose.GIS je výkonné .NET API, které umožňuje vývojářům bezproblémově pracovat s geografickými daty. V tomto tutoriálu vás provedeme procesem převodu souborů GeoJSON na TopoJSON při seskupování funkcí na základě zadaných atributů.
@@ -93,3 +99,9 @@ Odpověď: Ano, Aspose.GIS poskytuje podporu pro různé formáty geografických
 
 ### Q5: Kde mohu získat podporu pro Aspose.GIS?
  Odpověď: Podporu můžete získat na fóru komunity Aspose.GIS[tady](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

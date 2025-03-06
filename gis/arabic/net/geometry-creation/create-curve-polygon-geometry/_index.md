@@ -3,10 +3,16 @@ title: إنشاء هندسة مضلعة منحنية باستخدام Aspose.GIS
 linktitle: إنشاء هندسة المضلع المنحنى
 second_title: Aspose.GIS .NET API
 description: تعرف على كيفية إنشاء هندسة مضلع المنحنى بكفاءة باستخدام Aspose.GIS لـ .NET. اتبع دليلنا خطوة بخطوة للتمتع بسلاسة في تطبيقات نظم المعلومات الجغرافية الخاصة بك.
-type: docs
 weight: 18
 url: /ar/net/geometry-creation/create-curve-polygon-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# إنشاء هندسة مضلعة منحنية باستخدام Aspose.GIS لـ .NET
+
 ## مقدمة
 في مجال تطوير نظم المعلومات الجغرافية (GIS)، يبرز Aspose.GIS for .NET كأداة قوية لإنشاء البيانات المكانية وتحريرها ومعالجتها. يهدف هذا البرنامج التعليمي إلى إرشادك خلال عملية إنشاء منحنى مضلع هندسي باستخدام Aspose.GIS for .NET. بحلول نهاية هذا البرنامج التعليمي، ستكون مجهزًا بالمعرفة اللازمة لإنشاء أشكال هندسية معقدة لتطبيقات نظم المعلومات الجغرافية الخاصة بك بكفاءة.
 ## المتطلبات الأساسية
@@ -108,3 +114,9 @@ layer.Add(feature);
  نعم، يمكنك الانضمام إلى منتدى مجتمع Aspose.GIS[هنا](https://forum.aspose.com/c/gis/33) للتواصل مع المستخدمين الآخرين وطرح الأسئلة ومشاركة تجاربك.
 ### هل يمكنني تجربة Aspose.GIS for .NET قبل الشراء؟
  بالطبع! يمكنك الاستفادة من النسخة التجريبية المجانية من Aspose.GIS for .NET من[صفحة الإصدارات](https://releases.aspose.com/)مما يسمح لك باستكشاف ميزاته قبل إجراء عملية الشراء.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

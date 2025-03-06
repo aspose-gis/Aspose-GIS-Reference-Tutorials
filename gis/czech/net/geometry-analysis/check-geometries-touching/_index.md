@@ -3,10 +3,16 @@ title: Zkontrolujte dotykové geometrie
 linktitle: Zkontrolujte dotykové geometrie
 second_title: Aspose.GIS .NET API
 description: Odemkněte výkon práce s prostorovými daty s Aspose.GIS pro .NET. Bezproblémově integrujte prostorové funkce do svých aplikací s touto všestrannou sadou nástrojů.
-type: docs
 weight: 13
 url: /cs/net/geometry-analysis/check-geometries-touching/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Zkontrolujte dotykové geometrie
+
 ## Úvod
 V oblasti geografických informačních systémů (GIS) vyniká Aspose.GIS for .NET jako výkonný nástroj pro vývojáře, kteří chtějí bezproblémově začlenit prostorové funkce do svých aplikací. Díky svým robustním funkcím a uživatelsky přívětivému rozhraní umožňuje Aspose.GIS vývojářům pracovat s prostorovými daty bez námahy, ať už jde o analýzu, vizualizaci nebo manipulaci s geometriemi.
 ## Předpoklady
@@ -64,3 +70,9 @@ Aspose.GIS podporuje různé .NET frameworky, včetně .NET Framework, .NET Core
 Aspose.GIS pravidelně dostává aktualizace a vylepšení, aby byla zajištěna kompatibilita s nejnovějšími technologiemi a vyřešeny všechny hlášené problémy.
 ### Mohu získat dočasnou licenci pro Aspose.GIS?
  Ano, můžete získat dočasnou licenci od[tady](https://purchase.aspose.com/temporary-license/) k vyhodnocení schopností Aspose.GIS ve vašem vývojovém prostředí.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

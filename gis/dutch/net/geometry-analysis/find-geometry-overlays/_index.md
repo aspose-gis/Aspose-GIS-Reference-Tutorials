@@ -3,10 +3,16 @@ title: Beheersing van geometrie-overlays met Aspose.GIS voor .NET
 linktitle: Vind geometrie-overlays
 second_title: Aspose.GIS .NET-API
 description: Leer hoe u geometrische overlay-bewerkingen uitvoert met Aspose.GIS voor .NET. Master-bewerkingen op het gebied van snijpunten, samenvoegingen, verschillen en symmetrische verschillen.
-type: docs
 weight: 16
 url: /nl/net/geometry-analysis/find-geometry-overlays/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Beheersing van geometrie-overlays met Aspose.GIS voor .NET
+
 ## Invoering
 Op het gebied van geografische informatiesystemen (GIS) zijn overlay-operaties van fundamenteel belang voor ruimtelijke analyse. Ze maken de vergelijking en combinatie van verschillende ruimtelijke datasets mogelijk om waardevolle inzichten te verkrijgen. Aspose.GIS voor .NET biedt robuuste functionaliteiten voor het efficiënt uitvoeren van geometrische overlays. In deze zelfstudie gaan we dieper in op verschillende overlay-bewerkingen, zoals Intersection, Union, Difference en Symmetric Difference met behulp van Aspose.GIS voor .NET.
 ## Vereisten
@@ -108,3 +114,9 @@ Ja, Aspose.GIS voor .NET kan worden gebruikt in zowel commerciële als niet-comm
  Ja, er zijn tijdelijke licenties beschikbaar voor test- en evaluatiedoeleinden. U kunt ze verkrijgen bij[hier](https://purchase.aspose.com/temporary-license/).
 ### Vraag: Kan ik Aspose.GIS voor .NET rechtstreeks kopen?
  Ja, u kunt Aspose.GIS voor .NET aanschaffen via de website[hier](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

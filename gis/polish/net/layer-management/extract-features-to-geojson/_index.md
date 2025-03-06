@@ -3,10 +3,16 @@ title: Wyodrębnij funkcje do GeoJSON
 linktitle: Wyodrębnij funkcje do GeoJSON
 second_title: Aspose.GIS .NET API
 description: Zapoznaj się z przewodnikiem krok po kroku dotyczącym używania Aspose.GIS dla .NET do wyodrębniania funkcji do GeoJSON. Z łatwością wykorzystaj moc GIS! #Aspose #GIS
-type: docs
 weight: 23
 url: /pl/net/layer-management/extract-features-to-geojson/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Wyodrębnij funkcje do GeoJSON
+
 ## Wstęp
 Witamy w naszym samouczku krok po kroku dotyczącym wyodrębniania funkcji do GeoJSON przy użyciu Aspose.GIS dla .NET! Niezależnie od tego, czy jesteś doświadczonym programistą, czy dopiero zaczynasz swoją przygodę z programowaniem GIS, ten przewodnik przeprowadzi Cię przez proces, upewniając się, że wykorzystasz pełną moc Aspose.GIS dla .NET.
 ## Warunki wstępne
@@ -87,3 +93,9 @@ W tym samouczku omówiliśmy proces wyodrębniania funkcji do GeoJSON przy użyc
  Tak, możesz znaleźć bezpłatną wersję próbną[Tutaj](https://releases.aspose.com/).
 ### P: Gdzie mogę kupić Aspose.GIS dla .NET?
  Możesz kupić produkt[Tutaj](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

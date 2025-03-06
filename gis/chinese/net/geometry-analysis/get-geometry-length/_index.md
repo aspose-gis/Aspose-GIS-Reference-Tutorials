@@ -3,10 +3,16 @@ title: 使用 Aspose.GIS 计算 .NET 中的几何长度
 linktitle: 获取几何长度
 second_title: Aspose.GIS .NET API
 description: 了解如何使用 Aspose.GIS 在 .NET 中计算几何长度，以实现高效的空间数据处理。带有代码示例的分步指南。
-type: docs
 weight: 24
 url: /zh/net/geometry-analysis/get-geometry-length/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.GIS 计算 .NET 中的几何长度
+
 ## 介绍
 在 .NET 开发领域，Aspose.GIS 作为一个强大的工具包脱颖而出，为处理地理信息系统 (GIS) 提供强大的功能。无论您是经验丰富的开发人员还是刚刚踏入 GIS 编程领域，Aspose.GIS for .NET 都提供了一套全面的工具来有效地处理空间数据。在本教程中，我们将深入研究 GIS 开发的基本任务之一 - 计算几何长度。我们将逐步探索如何使用 Aspose.GIS for .NET 来实现这一目标，并将该过程分解为可管理的块以便于理解。
 ## 先决条件
@@ -74,3 +80,9 @@ Console.WriteLine("{0:F}", rectangle.GetLength()); //输出：4.00
 答：您可以从以下机构获取临时许可证：[这里](https://purchase.aspose.com/temporary-license/).
 ### 问：我可以自定义几何长度计算的输出格式吗？
 答：是的，Aspose.GIS for .NET 提供了各种格式选项来根据您的要求自定义输出格式。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

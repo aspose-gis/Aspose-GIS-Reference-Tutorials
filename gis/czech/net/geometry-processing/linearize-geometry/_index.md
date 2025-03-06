@@ -3,10 +3,16 @@ title: Linearizovat geometrii
 linktitle: Linearizovat geometrii
 second_title: Aspose.GIS .NET API
 description: Naučte se používat Aspose.GIS pro .NET k efektivní práci s geoprostorovými daty, provádění prostorové analýzy a manipulaci s geografickými oblastmi ve vašich aplikacích .NET.
-type: docs
 weight: 14
 url: /cs/net/geometry-processing/linearize-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Linearizovat geometrii
+
 ## Úvod
 Aspose.GIS for .NET je výkonná knihovna, která umožňuje vývojářům efektivně pracovat s geoprostorovými daty v rámci aplikací .NET. Ať už vytváříte mapovou aplikaci, provádíte prostorovou analýzu nebo manipulujete s geografickými daty, Aspose.GIS poskytuje nástroje, které potřebujete ke své práci.
 ## Předpoklady
@@ -83,3 +89,9 @@ Ano, Aspose.GIS poskytuje širokou škálu prostorových operací a analytickýc
  Ano, můžete si stáhnout bezplatnou zkušební verzi z[Aspose webové stránky](https://releases.aspose.com/).
 ### Otázka: Kde najdu pomoc a podporu pro Aspose.GIS?
  Můžete navštívit[Fórum Aspose.GIS](https://forum.aspose.com/c/gis/33) za pomoc od komunity a podpůrného personálu Aspose.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: تنسيق التحويل مع Aspose.GIS
 linktitle: تحويل الإحداثيات
 second_title: Aspose.GIS .NET API
 description: تعرف على كيفية تحويل الإحداثيات باستخدام Aspose.GIS لـ .NET. يتم توفير دليل خطوة بخطوة والمتطلبات الأساسية والأسئلة الشائعة.
-type: docs
 weight: 25
 url: /ar/net/geometry-creation/convert-coordinates/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# تنسيق التحويل مع Aspose.GIS
+
 ## مقدمة
 في هذا البرنامج التعليمي، سوف نتعمق في عالم نظم المعلومات الجغرافية (GIS) باستخدام مكتبة Aspose.GIS القوية لـ .NET. Aspose.GIS عبارة عن مجموعة أدوات شاملة تمكن المطورين من العمل مع البيانات المكانية دون عناء. سواء كنت مطورًا متمرسًا أو بدأت للتو، سيرشدك هذا البرنامج التعليمي خلال عملية استخدام Aspose.GIS لتحويل الإحداثيات بشكل فعال.
 ## المتطلبات الأساسية
@@ -66,3 +72,9 @@ Console.WriteLine(geoRef);
  نعم يمكن الحصول على التراخيص المؤقتة من[صفحة الترخيص المؤقتة](https://purchase.aspose.com/temporary-license/).
 ### أين يمكنني شراء Aspose.GIS؟
  يمكنك شراء Aspose.GIS من[صفحة الشراء](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

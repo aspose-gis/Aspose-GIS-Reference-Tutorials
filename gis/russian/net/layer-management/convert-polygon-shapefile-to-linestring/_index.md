@@ -3,10 +3,16 @@ title: Преобразование шейп-файла многоугольни
 linktitle: Преобразование шейп-файла многоугольника в строку линий
 second_title: API Aspose.GIS .NET
 description: Исследуйте возможности Aspose.GIS for .NET и легко конвертируйте шейп-файлы полигонов в строки линий. Ускорьте свое развитие ГИС уже сегодня!
-type: docs
 weight: 18
 url: /ru/net/layer-management/convert-polygon-shapefile-to-linestring/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Преобразование шейп-файла многоугольника в строку линий
+
 ## Введение
 Если вы работаете с географическими информационными системами (ГИС) в .NET, Aspose.GIS — это мощная библиотека, которая может упростить ваши задачи. В этом уроке мы покажем вам процесс преобразования шейп-файла Polygon в Linestring с помощью Aspose.GIS. Это может быть особенно полезно, когда вам нужно извлечь линейные объекты из полигональных данных для различных приложений, таких как планирование маршрута или сетевой анализ.
 ## Предварительные условия
@@ -78,3 +84,9 @@ destination.Add(destinationFeature);
  Да, вы можете изучить Aspose.GIS с помощью бесплатной пробной версии, посетив[эта ссылка](https://releases.aspose.com/).
 ### Куда я могу обратиться за помощью или поддержкой?
  Посетить[Форум Aspose.GIS](https://forum.aspose.com/c/gis/33) для любой помощи или вопросов, связанных с поддержкой.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Tính khoảng cách giữa các hình học với Aspose.GIS
 linktitle: Tính khoảng cách giữa các hình học
 second_title: API Aspose.GIS .NET
 description: Tìm hiểu cách tính khoảng cách giữa các hình học trong .NET bằng Aspose.GIS. Hướng dẫn từng bước với các ví dụ về mã. Tăng cường các ứng dụng không gian địa lý của bạn.
-type: docs
 weight: 21
 url: /vi/net/geometry-analysis/calculate-distance-between-geometries/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Tính khoảng cách giữa các hình học với Aspose.GIS
+
 ## Giới thiệu
 Trong lĩnh vực lập trình không gian địa lý, khả năng tính toán khoảng cách giữa các dạng hình học khác nhau là điều tối quan trọng. Cho dù bạn đang xử lý đa giác, đường hay điểm, việc biết khoảng cách giữa chúng có thể rất quan trọng đối với nhiều ứng dụng khác nhau, từ lập bản đồ đến lập kế hoạch hậu cần. Aspose.GIS for .NET cung cấp các công cụ mạnh mẽ để thực hiện các phép tính như vậy một cách dễ dàng và chính xác.
 ## Điều kiện tiên quyết
@@ -84,3 +90,9 @@ Có, bạn có thể làm việc với cả hình học 2D và 3D bằng Aspose.
 Aspose.GIS for .NET cung cấp khả năng tương tác với các thư viện GIS khác, cho phép bạn tận dụng các chức năng bổ sung.
 ### Có hỗ trợ kỹ thuật cho Aspose.GIS cho người dùng .NET không?
  Có, người dùng Aspose.GIS cho .NET có thể truy cập hỗ trợ kỹ thuật thông qua Aspose[diễn đàn](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: परत स्थानिक संदर्भ प्रणाली 
 linktitle: परत स्थानिक संदर्भ प्रणाली सेट करें
 second_title: Aspose.GIS .NET एपीआई
 description: .NET के लिए Aspose.GIS के साथ मास्टर सेटिंग लेयर स्पैटियल रेफरेंस सिस्टम। इस चरण-दर-चरण ट्यूटोरियल के साथ अपनी जीआईएस परियोजनाओं को उन्नत करें।
-type: docs
 weight: 19
 url: /hi/net/layer-data-operations/set-layer-spatial-reference-system/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# परत स्थानिक संदर्भ प्रणाली सेट करें
+
 ## परिचय
 भौगोलिक सूचना प्रणाली (जीआईएस) के विशाल परिदृश्य में, .NET के लिए Aspose.GIS डेवलपर्स के लिए एक मजबूत और बहुमुखी उपकरण के रूप में खड़ा है। यह ट्यूटोरियल आपको .NET के लिए Aspose.GIS का उपयोग करके लेयर स्पैटियल रेफरेंस सिस्टम सेट करने की प्रक्रिया में मार्गदर्शन करेगा। चाहे आप एक अनुभवी डेवलपर हों या जीआईएस विकास में नए हों, यह चरण-दर-चरण मार्गदर्शिका आपकी स्थानिक डेटा प्रबंधन क्षमताओं को बढ़ाने के लिए Aspose.GIS की शक्ति का उपयोग करने में आपकी सहायता करेगी।
 ## आवश्यक शर्तें
@@ -72,3 +78,9 @@ using (VectorLayer layer = VectorLayer.Open(path, Drivers.Shapefile))
  निश्चित रूप से! आप नि:शुल्क परीक्षण संस्करण डाउनलोड कर सकते हैं[यहाँ](https://releases.aspose.com/).
 ### मैं Aspose.GIS-संबंधित प्रश्नों के लिए सहायता कहाँ से प्राप्त कर सकता हूँ?
  किसी भी सहायता या प्रश्न के लिए, पर जाएँ[Aspose.GIS फोरम](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

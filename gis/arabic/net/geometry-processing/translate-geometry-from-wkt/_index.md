@@ -3,10 +3,16 @@ title: ترجمة الهندسة من WKT باستخدام Aspose.GIS في .NET
 linktitle: ترجمة الهندسة من WKT
 second_title: Aspose.GIS .NET API
 description: تعرف على كيفية ترجمة الأشكال الهندسية من نص مشهور باستخدام Aspose.GIS for .NET. برنامج تعليمي خطوة بخطوة للتكامل السلس.
-type: docs
 weight: 21
 url: /ar/net/geometry-processing/translate-geometry-from-wkt/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# ترجمة الهندسة من WKT باستخدام Aspose.GIS في .NET
+
 ## مقدمة
 في هذا البرنامج التعليمي، سنتعمق في عملية ترجمة الأشكال الهندسية من نص معروف (WKT) باستخدام Aspose.GIS for .NET. Aspose.GIS عبارة عن واجهة برمجة تطبيقات .NET قوية تتيح للمطورين العمل مع البيانات الجغرافية المكانية دون عناء. سواء كنت مطورًا متمرسًا أو بدأت للتو في البرمجة الجغرافية المكانية، فسيرشدك هذا البرنامج التعليمي خلال العملية خطوة بخطوة.
 ## المتطلبات الأساسية
@@ -48,3 +54,9 @@ Console.WriteLine(line.Count); // الإخراج: 3
  يمكنك العثور على الوثائق[هنا](https://reference.aspose.com/gis/net/).
 ### كيف يمكنني الحصول على دعم Aspose.GIS لـ .NET؟
  يمكنك الحصول على الدعم من منتدى Aspose.GIS[هنا](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

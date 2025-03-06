@@ -3,10 +3,16 @@ title: Läs objekt-ID från fil GDB-lager i Aspose.GIS
 linktitle: Läs objekt-ID från File GDB Layer
 second_title: Aspose.GIS .NET API
 description: Lär dig hur du använder Aspose.GIS för .NET för att hantera geospatial databehandling effektivt. Omfattande handledning och expertvägledning tillgängliga.
-type: docs
 weight: 16
 url: /sv/net/layer-data-operations/read-object-id-from-file-gdb-layer/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Läs objekt-ID från fil GDB-lager i Aspose.GIS
+
 ## Introduktion
 Välkommen till vår omfattande guide om hur du behärskar Aspose.GIS för .NET! Aspose.GIS är ett kraftfullt bibliotek designat för att hantera geospatial databehandling och visualiseringsuppgifter effektivt inom .NET-ramverket. Oavsett om du är en erfaren utvecklare eller precis har börjat din resa inom geospatial programmering, kommer den här handledningen att leda dig genom allt du behöver veta för att utnyttja den fulla potentialen hos Aspose.GIS.
 ## Förutsättningar
@@ -74,3 +80,9 @@ Om du stöter på några problem eller har frågor om Aspose.GIS kan du besöka[
 Ja, du kan få en tillfällig licens från Aspose-webbplatsen för test- och utvärderingssyften.
 ### Var kan jag hitta omfattande dokumentation för Aspose.GIS för .NET?
  Du kan hänvisa till[dokumentation](https://reference.aspose.com/gis/net/) för detaljerad information om hur du använder Aspose.GIS API:er och funktioner.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Vytvářejte geometrii MultiLineString pomocí Aspose.GIS pro .NET
 linktitle: Vytvořte geometrii MultiLineString
 second_title: Aspose.GIS .NET API
 description: Prozkoumejte sílu Aspose.GIS pro .NET při efektivní správě geoprostorových dat. Stáhněte si nyní pro bezproblémový zážitek.
-type: docs
 weight: 15
 url: /cs/net/geometry-creation/create-multilinestring-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Vytvářejte geometrii MultiLineString pomocí Aspose.GIS pro .NET
+
 ## Úvod
 Aspose.GIS for .NET je výkonná knihovna, která umožňuje vývojářům bezproblémově pracovat s geoprostorovými daty v rámci jejich aplikací .NET. Ať už vytváříte mapovou aplikaci, provádíte geoprostorovou analýzu nebo integrujete funkce založené na poloze do vašeho softwaru, Aspose.GIS poskytuje nástroje, které potřebujete k efektivnímu zpracování prostorových dat.
 ## Předpoklady
@@ -64,3 +70,9 @@ Ano, Aspose.GIS for .NET je kompatibilní s různými verzemi frameworku .NET, c
 Zatímco zkušební verze je k dispozici pro testování, pokud požadujete další funkce nebo potřebujete otestovat plnou funkčnost, můžete získat dočasnou licenci od[buy.aspose.com](https://purchase.aspose.com/temporary-license/).
 ### Je Aspose.GIS for .NET vhodný pro desktopové i webové aplikace?
 Ano, Aspose.GIS for .NET lze použít v různých aplikacích, včetně desktopových, webových a serverových aplikací, což poskytuje všestrannost napříč různými vývojovými scénáři.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

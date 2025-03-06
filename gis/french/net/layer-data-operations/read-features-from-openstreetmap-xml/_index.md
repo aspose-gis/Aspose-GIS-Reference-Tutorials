@@ -3,10 +3,16 @@ title: Lire les fonctionnalités d'OpenStreetMap XML dans Aspose.GIS
 linktitle: Lire les fonctionnalités d'OpenStreetMap XML
 second_title: API Aspose.GIS .NET
 description: Découvrez comment lire les fonctionnalités d'OpenStreetMap XML à l'aide d'Aspose.GIS pour .NET. Tutoriel étape par étape avec des exemples de code.
-type: docs
 weight: 13
 url: /fr/net/layer-data-operations/read-features-from-openstreetmap-xml/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Lire les fonctionnalités d'OpenStreetMap XML dans Aspose.GIS
+
 ## Introduction
 Aspose.GIS pour .NET est une bibliothèque puissante qui permet aux développeurs de travailler avec des données du système d'information géographique (SIG) dans leurs applications .NET. Que vous créiez une application cartographique, analysiez des données spatiales ou intégriez des fonctionnalités SIG dans votre logiciel, Aspose.GIS fournit une large gamme de fonctionnalités pour rationaliser votre processus de développement.
 Dans ce didacticiel, nous allons explorer comment lire les fonctionnalités d'OpenStreetMap XML à l'aide d'Aspose.GIS pour .NET. Nous décomposerons chaque étape en morceaux gérables, garantissant que vous puissiez facilement suivre quel que soit votre niveau d'expertise.
@@ -75,3 +81,9 @@ Oui, vous pouvez acheter une licence pour Aspose.GIS pour l'utiliser dans des pr
  Vous pouvez visiter le[Forum Aspose.GIS](https://forum.aspose.com/c/gis/33) pour obtenir de l’aide et se connecter avec d’autres utilisateurs et développeurs.
 ### Puis-je obtenir une licence temporaire pour Aspose.GIS pour .NET ?
  Oui, vous pouvez demander une licence temporaire auprès du[page de licence temporaire](https://purchase.aspose.com/temporary-license/) à des fins de tests et d’évaluation.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

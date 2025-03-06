@@ -3,10 +3,16 @@ title: Získejte bod na geometrickém povrchu
 linktitle: Získejte bod na geometrickém povrchu
 second_title: Aspose.GIS .NET API
 description: Naučte se, jak efektivně pracovat s geoprostorovými daty pomocí Aspose.GIS pro .NET. Součástí je podrobný průvodce a často kladené otázky.
-type: docs
 weight: 25
 url: /cs/net/geometry-analysis/get-point-on-geometry-surface/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Získejte bod na geometrickém povrchu
+
 ## Úvod
 V tomto tutoriálu prozkoumáme, jak používat Aspose.GIS pro .NET pro práci s geometriemi a získávání bodů na jejich površích. Aspose.GIS je výkonná knihovna, která poskytuje různé funkce pro zpracování, manipulaci a vizualizaci geoprostorových dat v aplikacích .NET.
 ## Předpoklady
@@ -66,3 +72,9 @@ Ano, Aspose.GIS podporuje různé .NET frameworky, včetně .NET Framework, .NET
  Ano, dočasné licence pro Aspose.GIS můžete získat od[tady](https://purchase.aspose.com/temporary-license/).
 ### Kde mohu zakoupit Aspose.GIS?
  Aspose.GIS můžete zakoupit na nákupní stránce[tady](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: 取得特徵屬性值（預設）
 linktitle: 取得特徵屬性值（預設）
 second_title: Aspose.GIS .NET API
 description: 釋放 Aspose.GIS for .NET 的強大功能！使用此逐步指南輕鬆檢索和操作要素屬性值。立即下載試用版！
-type: docs
 weight: 14
 url: /zh-hant/net/layer-interaction-and-data-access/get-feature-attribute-value-default/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 取得特徵屬性值（預設）
+
 ## 介紹
 歡迎來到 Aspose.GIS for .NET 的世界！在本綜合指南中，我們將深入探討使用 Aspose.GIS 的強大功能檢索要素屬性值的複雜性。無論您是經驗豐富的開發人員還是剛入門，本教學都將為您提供逐步演練，確保您充分利用這個出色工具的潛力。
 ## 先決條件
@@ -97,3 +103,9 @@ using (var layer = Drivers.GeoJson.CreateLayer(dataDir + "data2_out.json"))
 是的，您可以透過免費試用來探索 Aspose.GIS。下載它[這裡](https://releases.aspose.com/).
 ### 如何獲得用於測試目的的臨時許可證？
 如需臨時許可證，請訪問[這裡](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

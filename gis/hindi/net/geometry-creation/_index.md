@@ -3,10 +3,16 @@ title: ज्यामिति निर्माण
 linktitle: ज्यामिति निर्माण
 second_title: Aspose.GIS .NET एपीआई
 description: .NET के लिए Aspose.GIS के साथ भू-स्थानिक डेटा हेरफेर की क्षमता को अनलॉक करें। ज्यामिति निर्माण, रूपांतरण और विश्लेषण को कवर करते हुए हमारे ट्यूटोरियल में गोता लगाएँ।
-type: docs
 weight: 21
 url: /hi/net/geometry-creation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# ज्यामिति निर्माण
+
 
 ## परिचय
 
@@ -105,3 +111,9 @@ Aspose.GIS के साथ .NET में मल्टीकर्व ज्य
 भौगोलिक डेटा में आसानी से हेरफेर करने के लिए .NET के लिए Aspose.GIS का उपयोग करना सीखें। व्यापक ट्यूटोरियल उपलब्ध हैं.
 ### [Aspose.GIS के साथ रूपांतरण समन्वयित करें](./convert-coordinates/)
 जानें कि .NET के लिए Aspose.GIS के साथ निर्देशांक कैसे परिवर्तित करें। चरण-दर-चरण मार्गदर्शिका, पूर्वापेक्षाएँ और अक्सर पूछे जाने वाले प्रश्न प्रदान किए गए।
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

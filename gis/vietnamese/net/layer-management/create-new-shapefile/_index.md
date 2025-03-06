@@ -3,10 +3,16 @@ title: Tạo Shapefile mới
 linktitle: Tạo Shapefile mới
 second_title: API Aspose.GIS .NET
 description: Tìm hiểu cách tạo một tệp hình dạng mới bằng Aspose.GIS cho .NET. Hãy làm theo hướng dẫn từng bước của chúng tôi và khám phá sức mạnh của thao tác dữ liệu không gian.
-type: docs
 weight: 12
 url: /vi/net/layer-management/create-new-shapefile/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Tạo Shapefile mới
+
 ## Giới thiệu
 Nếu bạn đang nghiên cứu phát triển hệ thống thông tin địa lý (GIS) bằng .NET, Aspose.GIS là giải pháp phù hợp cho bạn. Thư viện mạnh mẽ này trao quyền cho các nhà phát triển làm việc liền mạch với dữ liệu không gian và trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn quy trình tạo một tệp hình dạng mới bằng Aspose.GIS cho .NET.
 ## Điều kiện tiên quyết
@@ -80,3 +86,9 @@ Aspose.GIS chủ yếu hỗ trợ .NET, nhưng cũng có phiên bản dành cho 
  Nhận giấy phép tạm thời của bạn[đây](https://purchase.aspose.com/temporary-license/).
 ### Câu hỏi: Tôi có thể mua Aspose.GIS cho .NET ở đâu?
  Bạn có thể mua thư viện[đây](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

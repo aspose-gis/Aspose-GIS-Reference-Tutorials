@@ -3,10 +3,16 @@ title: ファイル GDB データセットからレイヤーを削除する
 linktitle: ファイル GDB データセットからレイヤーを削除する
 second_title: Aspose.GIS .NET API
 description: Aspose.GIS for .NET で GIS を探索しましょう!ファイル GDB データセットからレイヤーを削除する方法を段階的に学習します。今すぐダウンロードして、シームレスな空間データ エクスペリエンスを体験してください。
-type: docs
 weight: 17
 url: /ja/net/layer-data-operations/remove-layers-from-file-gdb-dataset/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# ファイル GDB データセットからレイヤーを削除する
+
 ## 導入
 空間データの操作と視覚化を簡素化するように設計された強力なツールキットである Aspose.GIS for .NET を使用して、地理情報システム (GIS) の可能性を最大限に引き出します。経験豊富な開発者であっても、GIS 愛好家であっても、このチュートリアルでは、Aspose.GIS for .NET を使用してファイル ジオデータベース (GDB) データセットからレイヤーを削除するプロセスを説明します。
 ## 前提条件
@@ -71,3 +77,9 @@ Console.WriteLine(dataset.LayersCount); //1
 はい、一時ライセンスを購入できます[ここ](https://purchase.aspose.com/temporary-license/).
 ### 練習に利用できるサンプル データセットはありますか?
 サンプル データセットと追加リソースについては、Aspose.GIS ドキュメントを参照してください。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Aspose.GIS for .NET'te Çeviride WKB Varyantını Belirleyin
 linktitle: Çeviride WKB Varyantını Belirtin
 second_title: Aspose.GIS .NET API'si
 description: Bu kapsamlı kılavuzla Aspose.GIS for .NET'te WKB değişkenlerini zahmetsizce nasıl belirleyeceğinizi öğrenin. CBS geliştirme becerilerinizi geliştirin.
-type: docs
 weight: 18
 url: /tr/net/geometry-processing/specify-wkb-variant-on-translation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS for .NET'te Çeviride WKB Varyantını Belirleyin
+
 ## giriiş
 Coğrafi Bilgi Sistemleri (GIS) geliştirme alanında Aspose.GIS for .NET güçlü bir araç seti olarak öne çıkıyor. Çok yönlülüğü ve verimliliği, GIS işlevlerini .NET uygulamalarına sorunsuz bir şekilde entegre etmeyi amaçlayan geliştiricilerin tercihi haline getiriyor. Bu makale, Aspose.GIS for .NET'ten yararlanmak için kapsamlı bir kılavuz görevi görüyor ve özellikle çeviri süreçleri sırasında WKB (Tanınmış İkili) değişkenlerinin belirlenmesine odaklanıyor.
 ## Önkoşullar
@@ -62,3 +68,9 @@ Aspose.GIS for .NET, çeşitli .NET sürümleriyle uyumlu olacak şekilde tasarl
  adresini ziyaret ederek geçici lisans alabilirsiniz.[geçici lisans sayfası](https://purchase.aspose.com/temporary-license/) ve sağlanan talimatları takip edin.
 ### Aspose.GIS for .NET lisansını nereden satın alabilirim?
  Aspose.GIS for .NET lisansını şu adresteki satın alma sayfasından satın alabilirsiniz:[bu bağlantı](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

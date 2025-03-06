@@ -3,10 +3,16 @@ title: Převést Shapefile na GeoJSON
 linktitle: Převést Shapefile na GeoJSON
 second_title: Aspose.GIS .NET API
 description: Naučte se, jak bez námahy převést Shapefile na GeoJSON v .NET pomocí Aspose.GIS. Postupujte podle našeho podrobného průvodce pro bezproblémovou interoperabilitu dat.
-type: docs
 weight: 15
 url: /cs/net/geo-data-conversion/convert-shapefile-to-geojson/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Převést Shapefile na GeoJSON
+
 ## Úvod
 V oblasti geografických informačních systémů (GIS) je interoperabilita dat klíčová pro bezproblémovou integraci a analýzu. Jedním z běžných úkolů je převod Shapefiles, široce používaného formátu geoprostorových vektorových dat, na GeoJSON, odlehčený formát pro výměnu geoprostorových dat. Tento tutoriál vás provede procesem převodu Shapefile na GeoJSON bez námahy pomocí knihovny Aspose.GIS for .NET.
 ## Předpoklady
@@ -58,3 +64,9 @@ Ano, Aspose.GIS for .NET podporuje širokou škálu geoprostorových formátů, 
 Ano, Aspose.GIS for .NET poskytuje rozsáhlé možnosti přizpůsobení procesu převodu podle vašich požadavků.
 ### Je k dispozici zkušební verze pro Aspose.GIS pro .NET?
  Ano, můžete využít bezplatnou zkušební verzi Aspose.GIS pro .NET z webu[webová stránka](https://releases.aspose.com/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

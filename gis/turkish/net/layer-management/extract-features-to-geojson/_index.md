@@ -3,10 +3,16 @@ title: Özellikleri GeoJSON'a Çıkarın
 linktitle: Özellikleri GeoJSON'a Çıkarın
 second_title: Aspose.GIS .NET API'si
 description: Özellikleri GeoJSON'a çıkarmak için Aspose.GIS for .NET kullanımına ilişkin adım adım kılavuzu keşfedin. CBS'nin gücünden kolaylıkla yararlanın! #Aspose #GIS
-type: docs
 weight: 23
 url: /tr/net/layer-management/extract-features-to-geojson/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Özellikleri GeoJSON'a Çıkarın
+
 ## giriiş
 Aspose.GIS for .NET kullanarak özelliklerin GeoJSON'a çıkarılmasıyla ilgili adım adım eğitimimize hoş geldiniz! İster deneyimli bir geliştirici olun ister GIS programlama yolculuğunuza yeni başlıyor olun, bu kılavuz süreç boyunca size yol göstererek Aspose.GIS for .NET'in tüm gücünden faydalanmanızı sağlayacaktır.
 ## Önkoşullar
@@ -87,3 +93,9 @@ Bu eğitimde Aspose.GIS for .NET kullanarak GeoJSON'a özellik çıkarma süreci
  Evet, ücretsiz deneme sürümünü bulabilirsiniz[Burada](https://releases.aspose.com/).
 ### S: Aspose.GIS for .NET'i nereden satın alabilirim?
  Ürünü satın alabilirsiniz[Burada](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Λάβετε σημείο στην επιφάνεια γεωμετρία�
 linktitle: Λάβετε σημείο στην επιφάνεια γεωμετρίας
 second_title: Aspose.GIS .NET API
 description: Μάθετε πώς να εργάζεστε αποτελεσματικά με γεωχωρικά δεδομένα χρησιμοποιώντας το Aspose.GIS για .NET. Περιλαμβάνεται οδηγός βήμα προς βήμα και συχνές ερωτήσεις.
-type: docs
 weight: 25
 url: /el/net/geometry-analysis/get-point-on-geometry-surface/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Λάβετε σημείο στην επιφάνεια γεωμετρίας
+
 ## Εισαγωγή
 Σε αυτό το σεμινάριο, θα διερευνήσουμε πώς να χρησιμοποιήσετε το Aspose.GIS για .NET για να εργαστείτε με γεωμετρίες και να ανακτήσετε σημεία στις επιφάνειές τους. Το Aspose.GIS είναι μια ισχυρή βιβλιοθήκη που παρέχει διάφορες λειτουργίες για επεξεργασία γεωχωρικών δεδομένων, χειρισμό και οπτικοποίηση σε εφαρμογές .NET.
 ## Προαπαιτούμενα
@@ -66,3 +72,9 @@ Console.WriteLine(polygon.SpatiallyContains(pointOnSurface)); // Αληθής
  Ναι, μπορείτε να αποκτήσετε προσωρινές άδειες για το Aspose.GIS από[εδώ](https://purchase.aspose.com/temporary-license/).
 ### Πού μπορώ να αγοράσω το Aspose.GIS;
  Μπορείτε να αγοράσετε το Aspose.GIS από τη σελίδα αγοράς[εδώ](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

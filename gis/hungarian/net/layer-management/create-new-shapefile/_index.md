@@ -3,10 +3,16 @@ title: Új Shapefile létrehozása
 linktitle: Új Shapefile létrehozása
 second_title: Aspose.GIS .NET API
 description: Ismerje meg, hogyan hozhat létre új shape fájlt az Aspose.GIS for .NET használatával. Kövesse lépésről lépésre útmutatónkat, és szabadítsa fel a téradat-manipuláció erejét.
-type: docs
 weight: 12
 url: /hu/net/layer-management/create-new-shapefile/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Új Shapefile létrehozása
+
 ## Bevezetés
 Ha elmélyül a földrajzi információs rendszerek (GIS) fejlesztésében a .NET segítségével, az Aspose.GIS a legjobb megoldás. Ez a hatékony könyvtár lehetővé teszi a fejlesztők számára, hogy zökkenőmentesen dolgozzanak a téradatokkal, és ebben az oktatóanyagban végigvezetjük Önt az Aspose.GIS for .NET használatával új shapefile létrehozásának folyamatán.
 ## Előfeltételek
@@ -80,3 +86,9 @@ Az Aspose.GIS elsősorban a .NET-et támogatja, de vannak Java-verziók is.
  Szerezze meg ideiglenes engedélyét[itt](https://purchase.aspose.com/temporary-license/).
 ### K: Hol vásárolhatom meg az Aspose.GIS-t .NET-hez?
  Meg lehet vásárolni a könyvtárat[itt](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Fonctionnalités de la couche de recadrage
 linktitle: Fonctionnalités de la couche de recadrage
 second_title: API Aspose.GIS .NET
 description: Débloquez la magie géospatiale avec Aspose.GIS pour .NET ! Fonctionnalités de couche de recadrage sans effort. Téléchargez votre essai gratuit maintenant. #Aspose #SIG #géospatial
-type: docs
 weight: 19
 url: /fr/net/layer-management/crop-layer-features/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Fonctionnalités de la couche de recadrage
+
 ## Introduction
 Dans le vaste domaine du traitement des données géospatiales, Aspose.GIS pour .NET apparaît comme un outil puissant, offrant aux développeurs une expérience transparente dans la gestion des informations géographiques. Ce didacticiel vous guidera tout au long du processus de recadrage des entités de couche à l'aide d'Aspose.GIS, vous permettant d'adapter vos données géospatiales pour répondre à des exigences spécifiques.
 ## Conditions préalables
@@ -62,3 +68,9 @@ Aspose.GIS pour .NET ouvre un champ de possibilités aux développeurs travailla
  R : Oui, vous pouvez télécharger un essai gratuit[ici](https://releases.aspose.com/).
 ### Q : Où puis-je acheter Aspose.GIS pour .NET ?
  R : Vous pouvez acheter la bibliothèque[ici](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: .NET용 Aspose.GIS를 사용하여 다각형 형상 생성
 linktitle: 다각형 기하학 만들기
 second_title: Aspose.GIS .NET API
 description: .NET용 Aspose.GIS를 사용하여 다각형 형상을 만드는 방법을 알아보세요. .NET 개발자를 위한 단계별 튜토리얼입니다.
-type: docs
 weight: 12
 url: /ko/net/geometry-creation/create-polygon-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# .NET용 Aspose.GIS를 사용하여 다각형 형상 생성
+
 ## 소개
 소프트웨어 개발 세계에서 지리정보시스템(GIS)은 공간 데이터를 분석하고 시각화하는 데 중요한 역할을 합니다. .NET용 Aspose.GIS는 개발자에게 GIS 데이터를 효율적으로 사용하는 데 필요한 도구를 제공하는 강력한 라이브러리입니다. 이 튜토리얼에서는 Aspose.GIS for .NET을 사용하여 많은 GIS 애플리케이션에서 필수적인 작업인 다각형 기하학을 만드는 방법을 살펴보겠습니다.
 ## 전제조건
@@ -66,3 +72,9 @@ polygon.ExteriorRing = ring;
  예, 다음에서 .NET용 Aspose.GIS 무료 평가판을 다운로드할 수 있습니다.[여기](https://releases.aspose.com/).
 ### .NET용 Aspose.GIS에 대한 지원은 어디서 받을 수 있나요?
  .NET용 Aspose.GIS에 대한 지원은 다음에서 받을 수 있습니다.[Aspose.GIS 포럼](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Převést Polygon Shapefile na Linestring
 linktitle: Převést Polygon Shapefile na Linestring
 second_title: Aspose.GIS .NET API
 description: Prozkoumejte sílu Aspose.GIS pro .NET a bez námahy převádějte polygonové tvarové soubory na Linestrings. Podpořte svůj vývoj GIS ještě dnes!
-type: docs
 weight: 18
 url: /cs/net/layer-management/convert-polygon-shapefile-to-linestring/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Převést Polygon Shapefile na Linestring
+
 ## Úvod
 Pokud pracujete s geografickými informačními systémy (GIS) v .NET, Aspose.GIS je výkonná knihovna, která může zjednodušit vaše úkoly. V tomto tutoriálu vás provedeme procesem převodu Polygon Shapefile na Linestring pomocí Aspose.GIS. To může být zvláště užitečné, když potřebujete extrahovat lineární prvky z polygonálních dat pro různé aplikace, jako je plánování trasy nebo analýza sítě.
 ## Předpoklady
@@ -78,3 +84,9 @@ Ano, Aspose.GIS podporuje různé verze .NET a zajišťuje kompatibilitu s vaš�
  Ano, můžete prozkoumat Aspose.GIS s bezplatnou zkušební verzí na návštěvě[tento odkaz](https://releases.aspose.com/).
 ### Kde mohu hledat pomoc nebo podporu?
  Navštivte[Fórum Aspose.GIS](https://forum.aspose.com/c/gis/33) pro jakoukoli pomoc nebo dotazy týkající se podpory.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

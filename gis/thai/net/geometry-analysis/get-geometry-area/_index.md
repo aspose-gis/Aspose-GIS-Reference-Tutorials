@@ -3,10 +3,16 @@ title: รับพื้นที่เรขาคณิตด้วย Aspose
 linktitle: รับพื้นที่เรขาคณิต
 second_title: Aspose.GIS .NET API
 description: ปลดล็อกพลังของระบบข้อมูลทางภูมิศาสตร์ใน .NET ด้วย Aspose.GIS ดำเนินการปฏิบัติการเชิงพื้นที่ได้อย่างง่ายดาย
-type: docs
 weight: 18
 url: /th/net/geometry-analysis/get-geometry-area/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# รับพื้นที่เรขาคณิตด้วย Aspose.GIS
+
 ## การแนะนำ
 ในโลกของระบบข้อมูลทางภูมิศาสตร์ (GIS) และการประมวลผลข้อมูลเชิงพื้นที่ Aspose.GIS สำหรับ .NET มีความโดดเด่นในฐานะเครื่องมือที่แข็งแกร่งและอเนกประสงค์สำหรับนักพัฒนา ด้วยชุดคุณลักษณะที่หลากหลายและ API ที่ใช้งานง่าย Aspose.GIS ช่วยให้นักพัฒนาสามารถทำงานกับรูปแบบข้อมูลทางภูมิศาสตร์ที่หลากหลาย ดำเนินการเชิงพื้นที่ และจัดการรูปทรงเรขาคณิตได้อย่างง่ายดายภายในแอปพลิเคชัน .NET
 ## ข้อกำหนดเบื้องต้น
@@ -72,3 +78,9 @@ Aspose.GIS สำหรับ .NET มอบประสบการณ์ที
  ใช่ ใบอนุญาตชั่วคราวมีให้สำหรับ Aspose.GIS สำหรับ .NET คุณสามารถรับพวกมันได้จาก[หน้าซื้อ](https://purchase.aspose.com/temporary-license/).
 ### Aspose.GIS สำหรับ .NET รองรับรูปแบบข้อมูลทางภูมิศาสตร์ที่หลากหลายหรือไม่
 แน่นอนว่า Aspose.GIS สำหรับ .NET รองรับรูปแบบข้อมูลทางภูมิศาสตร์ที่หลากหลาย ทำให้มั่นใจถึงความเข้ากันได้และความยืดหยุ่นในการจัดการข้อมูล
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

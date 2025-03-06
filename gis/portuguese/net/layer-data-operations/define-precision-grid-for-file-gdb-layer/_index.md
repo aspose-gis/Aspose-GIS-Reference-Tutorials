@@ -3,10 +3,16 @@ title: Definir grade de precisão para camada GDB de arquivo em Aspose.GIS
 linktitle: Definir grade de precisão para camada GDB de arquivo
 second_title: API Aspose.GIS .NET
 description: Aprenda como definir uma grade de precisão para uma camada File GDB usando Aspose.GIS for .NET. Siga nosso tutorial passo a passo.
-type: docs
 weight: 21
 url: /pt/net/layer-data-operations/define-precision-grid-for-file-gdb-layer/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Definir grade de precisão para camada GDB de arquivo em Aspose.GIS
+
 ## Introdução
 Neste tutorial, exploraremos como definir uma grade de precisão para uma camada File Geodatabase (GDB) usando Aspose.GIS for .NET. Aspose.GIS é uma biblioteca .NET poderosa que fornece funcionalidade geoespacial abrangente para trabalhar com vários formatos de arquivo GIS.
 ## Pré-requisitos
@@ -88,3 +94,9 @@ Sim, você pode realizar operações espaciais como buffer, interseção e cálc
 Sim, o Aspose.GIS for .NET fornece suporte para transformações de coordenadas entre diferentes sistemas de referência espacial.
 ### Existe uma versão de teste disponível para Aspose.GIS for .NET?
 Sim, você pode baixar uma versão de teste gratuita do Aspose.GIS for .NET no site[local na rede Internet](https://releases.aspose.com/gis/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

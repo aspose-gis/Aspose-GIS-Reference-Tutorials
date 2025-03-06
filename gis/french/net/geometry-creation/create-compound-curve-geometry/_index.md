@@ -3,10 +3,16 @@ title: Créer une géométrie de courbe composée avec Aspose.GIS dans .NET
 linktitle: Créer une géométrie de courbe composée
 second_title: API Aspose.GIS .NET
 description: Découvrez comment créer des géométries de courbes composées dans .NET à l'aide d'Aspose.GIS pour un traitement transparent des données géospatiales.
-type: docs
 weight: 19
 url: /fr/net/geometry-creation/create-compound-curve-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Créer une géométrie de courbe composée avec Aspose.GIS dans .NET
+
 ## Introduction
 Dans le monde du développement .NET, Aspose.GIS est un outil puissant qui offre une multitude de fonctionnalités pour travailler avec des données géospatiales. Que vous développiez des applications de cartographie, de services basés sur la localisation ou d'analyse géographique, Aspose.GIS fournit les outils nécessaires pour rationaliser votre processus de développement.
 ## Conditions préalables
@@ -94,3 +100,9 @@ Oui, Aspose.GIS peut être utilisé à la fois dans des applications de bureau e
 Oui, Aspose.GIS offre une gamme de fonctionnalités d'analyse spatiale, notamment le calcul de distance, les opérations géométriques et les requêtes spatiales.
 ### Existe-t-il un forum communautaire ou un canal d'assistance disponible pour les utilisateurs d'Aspose.GIS ?
  Oui, vous pouvez visiter le[Forum Aspose.GIS](https://forum.aspose.com/c/gis/33) pour poser des questions, partager des idées et demander de l'aide à la communauté et à l'équipe d'assistance.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

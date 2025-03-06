@@ -3,10 +3,16 @@ title: 형상 표면에서 점 가져오기
 linktitle: 형상 표면에서 점 가져오기
 second_title: Aspose.GIS .NET API
 description: .NET용 Aspose.GIS를 사용하여 지리공간 데이터를 효율적으로 작업하는 방법을 알아보세요. 단계별 가이드와 FAQ가 포함되어 있습니다.
-type: docs
 weight: 25
 url: /ko/net/geometry-analysis/get-point-on-geometry-surface/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 형상 표면에서 점 가져오기
+
 ## 소개
 이 튜토리얼에서는 .NET용 Aspose.GIS를 사용하여 형상 작업을 수행하고 표면의 점을 검색하는 방법을 살펴보겠습니다. Aspose.GIS는 .NET 애플리케이션에서 지리공간 데이터 처리, 조작 및 시각화를 위한 다양한 기능을 제공하는 강력한 라이브러리입니다.
 ## 전제조건
@@ -66,3 +72,9 @@ Console.WriteLine(polygon.SpatiallyContains(pointOnSurface)); // 진실
  예, 다음에서 Aspose.GIS에 대한 임시 라이선스를 얻을 수 있습니다.[여기](https://purchase.aspose.com/temporary-license/).
 ### Aspose.GIS는 어디서 구입할 수 있나요?
  구매페이지에서 Aspose.GIS를 구매하실 수 있습니다.[여기](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

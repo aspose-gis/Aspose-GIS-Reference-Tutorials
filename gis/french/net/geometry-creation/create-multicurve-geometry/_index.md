@@ -3,10 +3,16 @@ title: Créer une géométrie multi-courbes avec Aspose.GIS pour .NET
 linktitle: Créer une géométrie multi-courbe
 second_title: API Aspose.GIS .NET
 description: Apprenez à créer une géométrie MultiCurve dans .NET avec Aspose.GIS pour une représentation et une analyse efficaces des données spatiales.
-type: docs
 weight: 17
 url: /fr/net/geometry-creation/create-multicurve-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Créer une géométrie multi-courbes avec Aspose.GIS pour .NET
+
 ## Introduction
 Dans le domaine du développement de systèmes d'information géographique (SIG) utilisant .NET, Aspose.GIS se distingue comme une boîte à outils puissante. Que vous soyez un développeur chevronné ou que vous débutiez simplement dans le monde des SIG, Aspose.GIS pour .NET fournit un ensemble complet de fonctionnalités pour travailler efficacement avec les données spatiales. Cet article sert de guide étape par étape pour exploiter l'une de ses fonctionnalités : la création d'une géométrie MultiCurve.
 ## Conditions préalables
@@ -82,3 +88,9 @@ Oui, Aspose.GIS pour .NET offre une gamme de fonctionnalités d'analyse spatiale
 Oui, vous pouvez télécharger une version d'essai gratuite d'Aspose.GIS pour .NET à partir du[Site Web Aspose.GIS](https://releases.aspose.com/gis/net/) pour explorer ses fonctionnalités avant de faire un achat.
 ### Comment puis-je obtenir de l'aide si je rencontre des problèmes lors de l'utilisation d'Aspose.GIS pour .NET ?
 Vous pouvez demander de l'aide sur les forums de la communauté Aspose.GIS ou accéder aux ressources d'assistance fournies par Aspose.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

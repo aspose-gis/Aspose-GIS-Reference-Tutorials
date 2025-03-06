@@ -3,10 +3,16 @@ title: .NET용 Aspose.GIS를 사용한 지리공간 데이터 처리
 linktitle: 유도선 형상 생성
 second_title: Aspose.GIS .NET API
 description: .NET용 Aspose.GIS를 사용하여 .NET 애플리케이션에서 지리공간 데이터로 작업하는 방법을 알아보세요. 손쉽게 지도를 생성, 분석, 시각화할 수 있습니다.
-type: docs
 weight: 11
 url: /ko/net/geometry-creation/create-linestring-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# .NET용 Aspose.GIS를 사용한 지리공간 데이터 처리
+
 ## 소개
 Aspose.GIS for .NET은 개발자가 .NET 애플리케이션에서 지리공간 데이터를 원활하게 사용할 수 있게 해주는 강력한 라이브러리입니다. 매핑 애플리케이션을 구축하든, 공간 데이터를 분석하든, 위치 기반 서비스를 통합하든 Aspose.GIS는 지리 정보를 효율적으로 관리하는 데 필요한 도구를 제공합니다.
 ## 전제조건
@@ -54,3 +60,9 @@ line.AddPoint(-98.65, 12.65);
 Aspose.GIS는 성능을 개선하고, 새로운 기능을 추가하고, 보고된 문제를 해결하기 위해 정기적으로 업데이트를 출시합니다.
 ### Q: Aspose.GIS에 대한 도움을 받을 수 있는 커뮤니티 포럼이 있습니까?
  예, Aspose.GIS 포럼을 방문하여 커뮤니티 지원을 받고 다른 사용자와 소통할 수 있습니다.[Aspose.GIS 포럼](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

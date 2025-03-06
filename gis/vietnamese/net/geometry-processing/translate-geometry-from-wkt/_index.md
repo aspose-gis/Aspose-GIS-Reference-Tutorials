@@ -3,10 +3,16 @@ title: Dịch hình học từ WKT bằng Aspose.GIS trong .NET
 linktitle: Dịch hình học từ WKT
 second_title: API Aspose.GIS .NET
 description: Tìm hiểu cách dịch hình học từ Văn bản nổi tiếng bằng Aspose.GIS cho .NET. Hướng dẫn từng bước để tích hợp liền mạch.
-type: docs
 weight: 21
 url: /vi/net/geometry-processing/translate-geometry-from-wkt/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Dịch hình học từ WKT bằng Aspose.GIS trong .NET
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ đi sâu vào quá trình dịch hình học từ Văn bản nổi tiếng (WKT) bằng Aspose.GIS cho .NET. Aspose.GIS là một API .NET mạnh mẽ cho phép các nhà phát triển làm việc với dữ liệu không gian địa lý một cách dễ dàng. Cho dù bạn là nhà phát triển dày dạn kinh nghiệm hay mới bắt đầu với lập trình không gian địa lý, hướng dẫn này sẽ hướng dẫn bạn thực hiện quy trình từng bước.
 ## Điều kiện tiên quyết
@@ -48,3 +54,9 @@ Có, bạn có thể dùng thử miễn phí từ[đây](https://releases.aspose
  Bạn có thể tìm thấy tài liệu[đây](https://reference.aspose.com/gis/net/).
 ### Làm cách nào tôi có thể nhận được hỗ trợ cho Aspose.GIS cho .NET?
  Bạn có thể nhận được hỗ trợ từ diễn đàn Aspose.GIS[đây](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

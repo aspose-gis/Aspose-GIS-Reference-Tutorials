@@ -3,10 +3,16 @@ title: 형상에 다른 항목이 포함되어 있는지 확인
 linktitle: 형상에 다른 항목이 포함되어 있는지 확인
 second_title: Aspose.GIS .NET API
 description: .NET 애플리케이션에 원활한 지리공간 데이터 통합을 위한 강력한 라이브러리인 Aspose.GIS for .NET을 살펴보세요.
-type: docs
 weight: 14
 url: /ko/net/geometry-analysis/check-geometry-contains-another/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 형상에 다른 항목이 포함되어 있는지 확인
+
 ## 소개
 .NET용 Aspose.GIS는 개발자가 .NET 애플리케이션 내에서 지리공간 데이터를 원활하게 사용할 수 있게 해주는 강력한 라이브러리입니다. 매핑 애플리케이션을 구축하든, 지리공간 분석을 수행하든, 위치 기반 기능을 소프트웨어에 통합하든 Aspose.GIS는 직관적인 API와 강력한 기능을 제공하여 프로세스를 단순화합니다.
 ## 전제조건
@@ -85,3 +91,9 @@ A: Aspose.GIS는 성능을 개선하고, 새로운 기능을 추가하고, 보�
 A: 예, Aspose.GIS 커뮤니티 포럼에 가입할 수 있습니다.[여기](https://forum.aspose.com/c/gis/33) 다른 사용자와 소통하고, 질문하고, 경험을 공유하세요.
 ### Q5: 구매하기 전에 Aspose.GIS를 사용해 볼 수 있나요?
  A: 물론 무료 평가판을 다운로드하여 Aspose.GIS를 탐색할 수 있습니다.[여기](https://releases.aspose.com/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

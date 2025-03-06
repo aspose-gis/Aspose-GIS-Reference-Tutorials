@@ -3,10 +3,16 @@ title: Buat Geometri MultiPoint dengan Aspose.GIS untuk .NET
 linktitle: Buat Geometri MultiPoint
 second_title: Aspose.GIS .NET API
 description: Master Aspose.GIS untuk .NET - Belajar membuat geometri multi-titik dengan mudah. Tutorial komprehensif untuk pengembang.
-type: docs
 weight: 14
 url: /id/net/geometry-creation/create-multipoint-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Buat Geometri MultiPoint dengan Aspose.GIS untuk .NET
+
 ## Perkenalan
 
 Dalam dunia Sistem Informasi Geografis (GIS), Aspose.GIS untuk .NET menonjol sebagai alat yang ampuh bagi pengembang. Fitur-fiturnya yang kuat dan fleksibilitas menjadikannya pilihan utama untuk bekerja dengan data spasial dalam aplikasi .NET. Dalam tutorial ini, kita akan mempelajari dasar-dasar Aspose.GIS untuk .NET, dengan fokus khusus pada pembuatan geometri multi-titik. Baik Anda seorang pengembang berpengalaman atau baru memulai, panduan ini akan memandu Anda melalui setiap langkah, sehingga mudah untuk dipahami dan diterapkan.
@@ -82,3 +88,9 @@ J: Tentu saja! Aspose.GIS untuk .NET mendukung berbagai format data spasial, ter
 
 ### T: Dapatkah saya membeli lisensi sementara untuk proyek jangka pendek?
 J: Ya, Anda dapat memperoleh lisensi sementara untuk kebutuhan spesifik proyek Anda.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

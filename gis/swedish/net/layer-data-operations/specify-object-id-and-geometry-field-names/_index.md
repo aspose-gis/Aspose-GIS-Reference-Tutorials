@@ -3,10 +3,16 @@ title: Ange objekt-ID och geometrifältnamn
 linktitle: Ange objekt-ID och geometrifältnamn
 second_title: Aspose.GIS .NET API
 description: Utforska GIS-magi med Aspose.GIS för .NET! Hantera geospatial data utan ansträngning. Ladda ner nu och släpp lös kraften i rumslig intelligens.
-type: docs
 weight: 20
 url: /sv/net/layer-data-operations/specify-object-id-and-geometry-field-names/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Ange objekt-ID och geometrifältnamn
+
 ## Introduktion
 Att ge dig ut på en resa in i riket av Geographic Information Systems (GIS) med Aspose.GIS för .NET öppnar upp en värld av möjligheter för både utvecklare och entusiaster. Detta kraftfulla bibliotek ger dig möjlighet att hantera geospatial data utan ansträngning. I den här handledningen guidar vi dig genom processen att specificera objekt-ID och geometrifältnamn, vilket lägger grunden för dina GIS-strävanden.
 ## Förutsättningar
@@ -74,3 +80,9 @@ S: Ja, Aspose.GIS för .NET är lämplig för både skrivbords- och webbapplikat
 S: Aspose.GIS för .NET stöder olika rumsliga referenssystem, vilket ger flexibilitet för olika geografiska datamängder.
 ### F: Var kan jag söka hjälp eller diskutera Aspose.GIS-relaterade frågor?
  S: Besök Aspose.GIS-forumet[här](https://forum.aspose.com/c/gis/33) för stöd och diskussioner.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

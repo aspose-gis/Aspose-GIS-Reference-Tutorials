@@ -3,10 +3,16 @@ title: GIS Mastery - เพิ่มเลเยอร์ให้กับ GDB 
 linktitle: เพิ่มเลเยอร์ลงในไฟล์ชุดข้อมูล GDB
 second_title: Aspose.GIS .NET API
 description: ปลดล็อกพลังของ GIS ด้วย Aspose.GIS สำหรับ .NET! เรียนรู้วิธีเพิ่มเลเยอร์ให้กับชุดข้อมูล File GDB ในบทช่วยสอนทีละขั้นตอนนี้ #ข้อมูลทางภูมิศาสตร์ #Aspose #GIS
-type: docs
 weight: 16
 url: /th/net/layer-management/add-layer-to-file-gdb-dataset/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# GIS Mastery - เพิ่มเลเยอร์ให้กับ GDB ด้วย Aspose.GIS สำหรับ .NET
+
 ## การแนะนำ
 คุณพร้อมที่จะปรับปรุงความสามารถ GIS ของคุณโดยใช้ Aspose.GIS สำหรับ .NET แล้วหรือยัง? ในคำแนะนำทีละขั้นตอนนี้ เราจะแนะนำคุณตลอดขั้นตอนการเพิ่มเลเยอร์ให้กับชุดข้อมูล File Geodatabase (GDB) Aspose.GIS สำหรับ .NET นำเสนอฟีเจอร์ที่มีประสิทธิภาพในการจัดการข้อมูลทางภูมิศาสตร์ และด้วยบทช่วยสอนนี้ คุณจะสามารถรวมเลเยอร์เพิ่มเติมเข้ากับชุดข้อมูลของคุณได้อย่างราบรื่น
 ## ข้อกำหนดเบื้องต้น
@@ -75,3 +81,9 @@ Aspose.GIS สำหรับ .NET รองรับระบบอ้างอ
  อย่างแน่นอน! เข้าร่วมการสนทนาและแบ่งปันประสบการณ์ของคุณเกี่ยวกับ[ฟอรัม Aspose.GIS](https://forum.aspose.com/c/gis/33).
 ### ถาม: ฉันจะหาเอกสารโดยละเอียดสำหรับ Aspose.GIS สำหรับ .NET ได้ที่ไหน
  สำรวจเอกสารที่ครอบคลุม[ที่นี่](https://reference.aspose.com/gis/net/) สำหรับข้อมูลเชิงลึกเกี่ยวกับ Aspose.GIS สำหรับ .NET
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

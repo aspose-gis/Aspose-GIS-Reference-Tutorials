@@ -3,10 +3,16 @@ title: Chỉ định Biến thể WKT trên bản dịch bằng Aspose.GIS
 linktitle: Chỉ định Biến thể WKT trên bản dịch
 second_title: API Aspose.GIS .NET
 description: Tìm hiểu cách chỉ định các biến thể WKT trong Aspose.GIS cho .NET để kiểm soát độ chính xác và định dạng biểu diễn dữ liệu không gian một cách hiệu quả.
-type: docs
 weight: 19
 url: /vi/net/geometry-processing/specify-wkt-variant-on-translation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Chỉ định Biến thể WKT trên bản dịch bằng Aspose.GIS
+
 ## Giới thiệu
 Aspose.GIS for .NET là một thư viện mạnh mẽ cho phép các nhà phát triển làm việc với dữ liệu hệ thống thông tin địa lý (GIS) trong các ứng dụng .NET của họ một cách dễ dàng. Một trong những tính năng thiết yếu do Aspose.GIS cung cấp là khả năng chỉ định biến thể Văn bản nổi tiếng (WKT) trong quá trình dịch, cho phép người dùng kiểm soát định dạng và độ chính xác của cách biểu diễn dữ liệu không gian. Trong hướng dẫn này, chúng ta sẽ khám phá cách chỉ định từng bước các biến thể WKT bằng cách sử dụng Aspose.GIS cho .NET.
 ## Điều kiện tiên quyết
@@ -66,3 +72,9 @@ Có, Aspose.GIS hỗ trợ nhiều định dạng dữ liệu không gian, bao g
  Có, bạn có thể tải xuống phiên bản dùng thử miễn phí của Aspose.GIS từ[đây](https://releases.aspose.com/).
 ### Tôi có thể nhận trợ giúp hoặc hỗ trợ cho Aspose.GIS ở đâu?
  Bạn có thể đăng câu hỏi của mình hoặc tìm kiếm sự trợ giúp từ cộng đồng Aspose.GIS tại[diễn đàn](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

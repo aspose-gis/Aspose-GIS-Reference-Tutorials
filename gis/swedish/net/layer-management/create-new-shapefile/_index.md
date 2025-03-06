@@ -3,10 +3,16 @@ title: Skapa ny Shapefil
 linktitle: Skapa ny Shapefil
 second_title: Aspose.GIS .NET API
 description: Lär dig hur du skapar en ny shapefil med Aspose.GIS för .NET. Följ vår steg-för-steg-guide och lås upp kraften i manipulering av rumslig data.
-type: docs
 weight: 12
 url: /sv/net/layer-management/create-new-shapefile/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Skapa ny Shapefil
+
 ## Introduktion
 Om du fördjupar dig i utveckling av geografiska informationssystem (GIS) med .NET, är Aspose.GIS din bästa lösning. Detta kraftfulla bibliotek ger utvecklare möjlighet att arbeta sömlöst med rumslig data, och i denna handledning guidar vi dig genom processen att skapa en ny shapefil med Aspose.GIS för .NET.
 ## Förutsättningar
@@ -80,3 +86,9 @@ Aspose.GIS stöder i första hand .NET, men det finns versioner tillgängliga f�
  Skaffa din tillfälliga licens[här](https://purchase.aspose.com/temporary-license/).
 ### F: Var kan jag köpa Aspose.GIS för .NET?
  Du kan köpa biblioteket[här](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

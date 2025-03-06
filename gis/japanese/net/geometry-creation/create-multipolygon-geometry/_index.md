@@ -3,10 +3,16 @@ title: Aspose.GIS を使用して MultiPolygon ジオメトリを作成する
 linktitle: マルチポリゴン ジオメトリの作成
 second_title: Aspose.GIS .NET API
 description: Aspose.GIS for .NET を使用して MultiPolygon ジオメトリを作成する方法を学びます。初心者向けのステップバイステップガイド。無料トライアルが可能です。
-type: docs
 weight: 16
 url: /ja/net/geometry-creation/create-multipolygon-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS を使用して MultiPolygon ジオメトリを作成する
+
 ## 導入
 地理情報システム (GIS) 開発の世界では、Aspose.GIS for .NET は地理空間データを作成、編集、分析するための強力なツールとして際立っています。経験豊富な開発者でも、初心者でも、Aspose.GIS をマスターすると、プロジェクトの可能性が広がります。
 ## 前提条件
@@ -66,3 +72,9 @@ Aspose.GIS for .NET をマスターすると、地理空間データを扱う開
 はい、次から一時ライセンスを取得できます。[ここ](https://purchase.aspose.com/temporary-license/)評価目的のため。
 ### Aspose.GIS を直接購入できますか?
 はい、Aspose.GIS を Web サイトから購入できます。[ここ](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

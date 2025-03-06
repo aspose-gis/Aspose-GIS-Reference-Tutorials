@@ -3,10 +3,16 @@ title: เขียนคุณสมบัติลงใน TopoJSON
 linktitle: เขียนคุณสมบัติลงใน TopoJSON
 second_title: Aspose.GIS .NET API
 description: เชี่ยวชาญการเขียนฟีเจอร์ TopoJSON ด้วย Aspose.GIS สำหรับ .NET ปฏิบัติตามบทช่วยสอนทีละขั้นตอนของเรา ยกระดับแอปพลิเคชัน GIS ของคุณ
-type: docs
 weight: 24
 url: /th/net/layer-data-operations/write-features-to-topojson/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# เขียนคุณสมบัติลงใน TopoJSON
+
 ## การแนะนำ
 ในขอบเขตของการพัฒนาระบบสารสนเทศภูมิศาสตร์ (GIS) Aspose.GIS สำหรับ .NET มีความโดดเด่นในฐานะชุดเครื่องมืออันทรงพลัง โดยมีฟังก์ชันการทำงานมากมายเหลือเฟือสำหรับการจัดการข้อมูลเชิงพื้นที่ ท่ามกลางความสามารถต่างๆ มากมาย บทช่วยสอนนี้มุ่งเน้นไปที่งานเฉพาะ: การเขียนคุณสมบัติเป็นรูปแบบ TopoJSON โดยใช้ Aspose.GIS สำหรับ .NET หากคุณกระตือรือร้นที่จะปรับปรุงแอปพลิเคชัน GIS ของคุณด้วยการสนับสนุน TopoJSON ให้ปฏิบัติตามเพื่อค้นหาคำแนะนำทีละขั้นตอน
 ## ข้อกำหนดเบื้องต้น
@@ -72,3 +78,9 @@ layer.Add(feature1);
  ตอบ: มุ่งหน้าไปที่[ฟอรัม Aspose.GIS](https://forum.aspose.com/c/gis/33) สำหรับการสนับสนุนและการอภิปรายของชุมชน
 ### ถาม: ฉันจะขอรับใบอนุญาตชั่วคราวสำหรับ Aspose.GIS ได้อย่างไร
  ตอบ: คุณสามารถขอรับใบอนุญาตชั่วคราวได้[ที่นี่](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

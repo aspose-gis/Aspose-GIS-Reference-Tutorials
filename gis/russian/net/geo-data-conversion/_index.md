@@ -3,10 +3,16 @@ title: Преобразование геоданных
 linktitle: Преобразование геоданных
 second_title: API Aspose.GIS .NET
 description: Откройте для себя плавное преобразование геоданных с помощью учебных пособий Aspose.GIS for .NET. Научитесь конвертировать GeoJSON в TopoJSON, шейп-файл в GeoJSON и т. д.
-type: docs
 weight: 20
 url: /ru/net/geo-data-conversion/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Преобразование геоданных
+
 ## Введение
 
 Добро пожаловать в мир простых руководств по преобразованию GeoData с помощью Aspose.GIS for .NET. В этом подробном руководстве мы рассмотрим различные методы повышения эффективности обработки данных вашей географической информационной системы (ГИС).
@@ -45,3 +51,9 @@ url: /ru/net/geo-data-conversion/
 Узнайте, как легко преобразовать Shapefile в GeoJSON в .NET с помощью Aspose.GIS. Следуйте нашему пошаговому руководству, чтобы обеспечить бесперебойную совместимость данных.
 ### [Преобразование TopoJSON в GeoJSON](./convert-topojson-to-geojson/)
 Узнайте, как легко конвертировать TopoJSON в GeoJSON с помощью Aspose.GIS для .NET. Следуйте нашему пошаговому руководству для эффективной обработки географических данных.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

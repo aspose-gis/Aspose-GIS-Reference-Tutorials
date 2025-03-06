@@ -3,10 +3,16 @@ title: Filter Features by Attribute
 linktitle: Filter Features by Attribute
 second_title: Aspose.GIS .NET API
 description: Explore the power of Aspose.GIS for .NET in spatial data manipulation. Filter features effortlessly, enhance GIS applications, and boost productivity.
-type: docs
 weight: 21
 url: /net/layer-management/filter-features-by-attribute/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Filter Features by Attribute
+
 ## Introduction
 In the dynamic world of Geographic Information Systems (GIS), Aspose.GIS for .NET stands out as a powerful tool that empowers developers to manipulate and analyze spatial data seamlessly. Whether you're a seasoned GIS professional or a curious developer eager to explore the possibilities, this tutorial will guide you through the essential steps of using Aspose.GIS in a .NET environment.
 ## Prerequisites
@@ -57,3 +63,10 @@ For any queries or assistance, visit the [Aspose.GIS forum](https://forum.aspose
 Obtain a temporary license [here](https://purchase.aspose.com/temporary-license/).
 ### Is there a step-by-step tutorial available for other Aspose.GIS features?
 Yes, you can find more tutorials and documentation on the [Aspose.GIS reference](https://reference.aspose.com/gis/net/).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

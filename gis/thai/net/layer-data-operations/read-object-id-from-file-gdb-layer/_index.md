@@ -3,10 +3,16 @@ title: อ่าน Object ID จากไฟล์ GDB Layer ใน Aspose.GIS
 linktitle: อ่าน Object ID จากไฟล์ GDB Layer
 second_title: Aspose.GIS .NET API
 description: เรียนรู้วิธีใช้ Aspose.GIS สำหรับ .NET เพื่อจัดการการประมวลผลข้อมูลเชิงพื้นที่อย่างมีประสิทธิภาพ มีบทแนะนำที่ครอบคลุมและคำแนะนำจากผู้เชี่ยวชาญ
-type: docs
 weight: 16
 url: /th/net/layer-data-operations/read-object-id-from-file-gdb-layer/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# อ่าน Object ID จากไฟล์ GDB Layer ใน Aspose.GIS
+
 ## การแนะนำ
 ยินดีต้อนรับสู่คู่มือที่ครอบคลุมเกี่ยวกับการเรียนรู้ Aspose.GIS สำหรับ .NET! Aspose.GIS เป็นไลบรารีที่มีประสิทธิภาพซึ่งออกแบบมาเพื่อจัดการงานการประมวลผลข้อมูลเชิงพื้นที่และการแสดงภาพอย่างมีประสิทธิภาพภายในกรอบงาน .NET ไม่ว่าคุณจะเป็นนักพัฒนาที่มีประสบการณ์หรือเพิ่งเริ่มต้นการเดินทางในการเขียนโปรแกรมเชิงพื้นที่ บทช่วยสอนนี้จะแนะนำทุกสิ่งที่คุณจำเป็นต้องรู้เพื่อใช้ประโยชน์จากศักยภาพสูงสุดของ Aspose.GIS
 ## ข้อกำหนดเบื้องต้น
@@ -74,3 +80,9 @@ Aspose.GIS สำหรับ .NET ได้รับการออกแบบ
 ใช่ คุณสามารถขอรับใบอนุญาตชั่วคราวได้จากเว็บไซต์ Aspose เพื่อวัตถุประสงค์ในการทดสอบและประเมินผล
 ### ฉันจะหาเอกสารที่ครอบคลุมสำหรับ Aspose.GIS สำหรับ .NET ได้ที่ไหน
  คุณสามารถอ้างถึง[เอกสารประกอบ](https://reference.aspose.com/gis/net/) สำหรับข้อมูลโดยละเอียดเกี่ยวกับการใช้ Aspose.GIS API และคุณสมบัติต่างๆ
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

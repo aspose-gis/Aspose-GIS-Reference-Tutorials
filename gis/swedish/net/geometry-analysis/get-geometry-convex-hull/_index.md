@@ -3,10 +3,16 @@ title: Beräkna Convex Hull med Aspose.GIS för .NET
 linktitle: Skaffa Geometry Convex Hull
 second_title: Aspose.GIS .NET API
 description: Lär dig hur du beräknar det konvexa skrovet för en geometri i .NET med Aspose.GIS. Omfattande handledning med kodexempel och vanliga frågor.
-type: docs
 weight: 20
 url: /sv/net/geometry-analysis/get-geometry-convex-hull/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Beräkna Convex Hull med Aspose.GIS för .NET
+
 ## Introduktion
 Aspose.GIS för .NET är ett kraftfullt bibliotek som tillhandahåller ett brett utbud av funktioner för att arbeta med geografiska informationssystem (GIS) i .NET-applikationer. Oavsett om du bygger kartapplikationer, analyserar rumslig data eller utför geospatiala operationer, förenklar Aspose.GIS processen med dess intuitiva API och omfattande funktionsuppsättning.
 ## Förutsättningar
@@ -79,3 +85,9 @@ Absolut, Aspose.GIS stöder ett brett utbud av geospatiala format, inklusive sha
  Tillfälliga licenser för Aspose.GIS kan erhållas genom utsedda[tillfällig licenslänk](https://purchase.aspose.com/temporary-license/), vilket möjliggör oavbruten användning under provperioder eller kortsiktiga projekt.
 ### F: Var kan jag söka hjälp eller delta i diskussioner relaterade till Aspose.GIS?
 Besök Aspose.GIS-forumet för stöd, vägledning och gemenskapsinteraktion[här](https://forum.aspose.com/c/gis/33), där du kan interagera med andra utvecklare, ställa frågor och dela insikter.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

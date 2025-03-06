@@ -3,10 +3,16 @@ title: Bemästra funktionsmärkning med Aspose.GIS för .NET
 linktitle: Etikettfunktioner på kartan
 second_title: Aspose.GIS .NET API
 description: Utforska Aspose.GIS för .NET och bemästra konsten att märka funktioner på kartor. Förbättra dina geospatiala visualiseringar utan ansträngning. #Aspose #GIS
-type: docs
 weight: 11
 url: /sv/net/map-rendering/label-features-on-map/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Bemästra funktionsmärkning med Aspose.GIS för .NET
+
 ## Introduktion
 en värld av geospatial datavisualisering spelar märkning av funktioner på en karta en avgörande roll för att förmedla information effektivt. Aspose.GIS för .NET tillhandahåller en kraftfull verktygslåda för att uppnå detta sömlöst. I den här handledningen kommer vi att utforska olika metoder för att märka punkter på en karta med Aspose.GIS, vilket förbättrar dina kartvisualiseringar med informativa etiketter.
 ## Förutsättningar
@@ -126,3 +132,9 @@ Aspose.GIS är optimerat för prestanda, men överväg att använda funktionsbas
 Ja, du kan finjustera etikettplaceringen med hjälp av alternativ som rotation, ankarpunkter och förskjutningar.
 ### Kan jag automatisera etikettgenerering i en batchprocess?
 Absolut, du kan integrera Aspose.GIS i dina automatiserade arbetsflöden för att skapa batchetiketter.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

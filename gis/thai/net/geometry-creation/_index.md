@@ -3,10 +3,16 @@ title: การสร้างเรขาคณิต
 linktitle: การสร้างเรขาคณิต
 second_title: Aspose.GIS .NET API
 description: ปลดล็อกศักยภาพของการจัดการข้อมูลเชิงพื้นที่ด้วย Aspose.GIS สำหรับ .NET เจาะลึกบทช่วยสอนของเรา ซึ่งครอบคลุมถึงการสร้างเรขาคณิต การแปลง และการวิเคราะห์
-type: docs
 weight: 21
 url: /th/net/geometry-creation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# การสร้างเรขาคณิต
+
 
 ## การแนะนำ
 
@@ -105,3 +111,9 @@ url: /th/net/geometry-creation/
 เรียนรู้วิธีใช้ Aspose.GIS สำหรับ .NET เพื่อจัดการข้อมูลทางภูมิศาสตร์ได้อย่างง่ายดาย มีบทช่วยสอนที่ครอบคลุม
 ### [ประสานงานการแปลงด้วย Aspose.GIS](./convert-coordinates/)
 เรียนรู้วิธีแปลงพิกัดด้วย Aspose.GIS สำหรับ .NET มีคำแนะนำทีละขั้นตอน ข้อกำหนดเบื้องต้น และคำถามที่พบบ่อย
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

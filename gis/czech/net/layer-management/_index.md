@@ -3,10 +3,16 @@ title: Správa vrstev
 linktitle: Správa vrstev
 second_title: Aspose.GIS .NET API
 description: Odemkněte potenciál geoprostorového vývoje pomocí výukových programů Aspose.GIS pro .NET. Vytvářejte, spravujte a manipulujte s datovými sadami GIS bez námahy.
-type: docs
 weight: 24
 url: /cs/net/layer-management/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Správa vrstev
+
 ## Úvod
 
 Aspose.GIS for .NET umožňuje vývojářům ponořit se do vzrušujícího světa geoprostorového vývoje. V tomto komplexním seznamu výukových programů prozkoumáme různé výukové programy pro správu vrstev, které vás provedou odemknutím plného potenciálu Aspose.GIS pro .NET. Od vytváření nových datových sad File GDB až po manipulaci s prostorovými daty, tyto výukové programy pokrývají vše.
@@ -68,3 +74,9 @@ Odemkněte geoprostorovou magii s Aspose.GIS pro .NET! Funkce oříznutí vrstvy
 Prozkoumejte sílu Aspose.GIS pro .NET při manipulaci s prostorovými daty. Filtrujte funkce bez námahy, vylepšujte GIS aplikace a zvyšte produktivitu.
 ### [Extrahujte funkce do GeoJSON](./extract-features-to-geojson/)
 Prozkoumejte podrobného průvodce používáním Aspose.GIS pro .NET k extrahování funkcí do GeoJSON. Využijte sílu GIS snadno! 
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

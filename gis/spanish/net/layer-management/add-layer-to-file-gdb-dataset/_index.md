@@ -3,10 +3,16 @@ title: Dominio GIS agregue capas a GDB con Aspose.GIS para .NET
 linktitle: Agregar capa al archivo del conjunto de datos GDB
 second_title: Aspose.GIS API .NET
 description: ¡Desbloquee el poder de SIG con Aspose.GIS para .NET! Aprenda cómo agregar capas a conjuntos de datos de File GDB en este tutorial paso a paso. #datosgeográficos #Aspose #GIS
-type: docs
 weight: 16
 url: /es/net/layer-management/add-layer-to-file-gdb-dataset/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Dominio GIS agregue capas a GDB con Aspose.GIS para .NET
+
 ## Introducción
 ¿Está listo para mejorar sus capacidades SIG utilizando Aspose.GIS para .NET? En esta guía paso a paso, lo guiaremos a través del proceso de agregar una capa a un conjunto de datos de geodatabase de archivos (GDB). Aspose.GIS para .NET proporciona potentes funciones para manipular información geográfica y, con este tutorial, podrá integrar sin problemas capas adicionales en sus conjuntos de datos.
 ## Requisitos previos
@@ -75,3 +81,9 @@ Aspose.GIS para .NET admite una amplia gama de sistemas de referencia espacial, 
  ¡Absolutamente! Únase a las discusiones y comparta sus experiencias sobre el[Foro Aspose.GIS](https://forum.aspose.com/c/gis/33).
 ### P: ¿Dónde puedo encontrar documentación detallada de Aspose.GIS para .NET?
  Explora la documentación completa[aquí](https://reference.aspose.com/gis/net/) para obtener información detallada sobre Aspose.GIS para .NET.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

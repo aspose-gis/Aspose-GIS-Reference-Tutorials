@@ -3,10 +3,16 @@ title: Hiển thị bản đồ
 linktitle: Hiển thị bản đồ
 second_title: API Aspose.GIS .NET
 description: Mở khóa tiềm năng trực quan hóa dữ liệu không gian địa lý với Aspose.GIS cho .NET. Dễ dàng nhập SLD, gắn nhãn các tính năng và hiển thị bản đồ tuyệt đẹp. Khám phá ngay bây giờ!
-type: docs
 weight: 27
 url: /vi/net/map-rendering/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Hiển thị bản đồ
+
 ## Giới thiệu
 Bạn đã sẵn sàng nâng cao kỹ năng phát triển GIS của mình và đi sâu vào thế giới trực quan hóa dữ liệu không gian địa lý chưa? Không cần tìm đâu xa ngoài Aspose.GIS cho .NET! Trong bài viết này, chúng tôi sẽ hướng dẫn bạn những điểm phức tạp của việc hiển thị bản đồ bằng một loạt hướng dẫn được thiết kế để trang bị cho bạn kiến thức và kỹ năng để tạo ra những bản đồ tuyệt đẹp một cách dễ dàng.
 
@@ -36,3 +42,9 @@ Khám phá Aspose.GIS cho .NET và nắm vững nghệ thuật ghi nhãn đối 
 Khám phá thế giới trực quan hóa dữ liệu không gian địa lý với Aspose.GIS cho .NET. Tạo bản đồ tuyệt đẹp một cách dễ dàng. Tải ngay!
 ### [Kết xuất các định dạng raster khác nhau](./render-various-raster-formats/)
 Khám phá thế giới trực quan hóa dữ liệu raster với Aspose.GIS cho .NET. Tìm hiểu cách hiển thị bản đồ tuyệt đẹp ở nhiều định dạng khác nhau một cách dễ dàng. Tải ngay!
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

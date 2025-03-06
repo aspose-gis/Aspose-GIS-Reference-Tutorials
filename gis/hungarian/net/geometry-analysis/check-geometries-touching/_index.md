@@ -3,10 +3,16 @@ title: Ellenőrizze a geometriák érintését
 linktitle: Ellenőrizze a geometriák érintését
 second_title: Aspose.GIS .NET API
 description: Az Aspose.GIS for .NET segítségével felszabadíthatja a téradat-kezelési lehetőségeket. Ezzel a sokoldalú eszközkészlettel zökkenőmentesen integrálhatja a térbeli funkciókat alkalmazásaiba.
-type: docs
 weight: 13
 url: /hu/net/geometry-analysis/check-geometries-touching/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Ellenőrizze a geometriák érintését
+
 ## Bevezetés
 A földrajzi információs rendszerek (GIS) területén az Aspose.GIS for .NET hatékony eszköz a fejlesztők számára, akik zökkenőmentesen szeretnék beépíteni a térbeli funkciókat alkalmazásaikba. Robusztus funkcióival és felhasználóbarát felületével az Aspose.GIS lehetővé teszi a fejlesztők számára, hogy könnyedén dolgozzanak téradatokkal, legyen szó geometriák elemzéséről, megjelenítéséről vagy manipulálásáról.
 ## Előfeltételek
@@ -64,3 +70,9 @@ Az Aspose.GIS különféle .NET-keretrendszereket támogat, beleértve a .NET-ke
 Az Aspose.GIS rendszeresen kap frissítéseket és fejlesztéseket, hogy biztosítsa a kompatibilitást a legújabb technológiákkal és kezelje a bejelentett problémákat.
 ### Kaphatok ideiglenes licencet az Aspose.GIS-hez?
  Igen, ideiglenes engedélyt szerezhetsz innen[itt](https://purchase.aspose.com/temporary-license/) hogy értékelje az Aspose.GIS képességeit a fejlesztői környezetben.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Tentukan Varian WKT pada Terjemahan menggunakan Aspose.GIS
 linktitle: Tentukan Varian WKT pada Terjemahan
 second_title: Aspose.GIS .NET API
 description: Pelajari cara menentukan varian WKT di Aspose.GIS untuk .NET guna mengontrol format dan presisi representasi data spasial secara efektif.
-type: docs
 weight: 19
 url: /id/net/geometry-processing/specify-wkt-variant-on-translation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Tentukan Varian WKT pada Terjemahan menggunakan Aspose.GIS
+
 ## Perkenalan
 Aspose.GIS untuk .NET adalah perpustakaan canggih yang memungkinkan pengembang bekerja dengan data sistem informasi geografis (GIS) dalam aplikasi .NET mereka dengan mudah. Salah satu fitur penting yang disediakan oleh Aspose.GIS adalah kemampuan untuk menentukan varian Teks Terkenal (WKT) selama penerjemahan, memungkinkan pengguna untuk mengontrol format dan ketepatan representasi data spasial. Dalam tutorial ini, kita akan mempelajari cara menentukan varian WKT langkah demi langkah menggunakan Aspose.GIS untuk .NET.
 ## Prasyarat
@@ -66,3 +72,9 @@ Ya, Aspose.GIS mendukung berbagai format data spasial, termasuk ESRI Shapefile, 
  Ya, Anda dapat mengunduh Aspose.GIS versi uji coba gratis dari[Di Sini](https://releases.aspose.com/).
 ### Di mana saya bisa mendapatkan bantuan atau dukungan untuk Aspose.GIS?
  Anda dapat mengirimkan pertanyaan Anda atau mencari bantuan dari komunitas Aspose.GIS di[forum](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

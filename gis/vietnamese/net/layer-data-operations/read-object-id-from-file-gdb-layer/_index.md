@@ -3,10 +3,16 @@ title: Đọc ID đối tượng từ lớp GDB tệp trong Aspose.GIS
 linktitle: Đọc ID đối tượng từ lớp GDB của tệp
 second_title: API Aspose.GIS .NET
 description: Tìm hiểu cách sử dụng Aspose.GIS cho .NET để xử lý dữ liệu không gian địa lý một cách hiệu quả. Hướng dẫn toàn diện và hướng dẫn chuyên môn có sẵn.
-type: docs
 weight: 16
 url: /vi/net/layer-data-operations/read-object-id-from-file-gdb-layer/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Đọc ID đối tượng từ lớp GDB tệp trong Aspose.GIS
+
 ## Giới thiệu
 Chào mừng bạn đến với hướng dẫn toàn diện của chúng tôi về cách làm chủ Aspose.GIS cho .NET! Aspose.GIS là một thư viện mạnh mẽ được thiết kế để xử lý các tác vụ xử lý và hiển thị dữ liệu không gian địa lý một cách hiệu quả trong khung .NET. Cho dù bạn là một nhà phát triển dày dạn kinh nghiệm hay mới bắt đầu hành trình lập trình không gian địa lý, hướng dẫn này sẽ hướng dẫn bạn mọi thứ bạn cần biết để khai thác toàn bộ tiềm năng của Aspose.GIS.
 ## Điều kiện tiên quyết
@@ -74,3 +80,9 @@ Nếu bạn gặp bất kỳ vấn đề nào hoặc có thắc mắc về Aspos
 Có, bạn có thể lấy giấy phép tạm thời từ trang web Aspose cho mục đích thử nghiệm và đánh giá.
 ### Tôi có thể tìm tài liệu toàn diện về Aspose.GIS cho .NET ở đâu?
  Bạn có thể tham khảo các[tài liệu](https://reference.aspose.com/gis/net/) để biết thông tin chi tiết về cách sử dụng API và tính năng của Aspose.GIS.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

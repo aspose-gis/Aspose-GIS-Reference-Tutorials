@@ -1,12 +1,17 @@
 ---
 title: برامج تعليمية شاملة وأمثلة على Aspose.GIS لـ .NET
 linktitle: Aspose.GIS لبرامج .NET التعليمية
-type: docs
 weight: 10
 url: /ar/net/
 description: اكتشف قوة Aspose.GIS for .NET من خلال البرامج التعليمية الشاملة. تحويل البيانات الجغرافية الرئيسية وإنشاء الأشكال الهندسية والتحليل وإدارة الطبقات والمزيد.
-is_root: true
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# برامج تعليمية شاملة وأمثلة على Aspose.GIS لـ .NET
+
 
 ## مقدمة
 
@@ -94,3 +99,10 @@ is_root: true
 اكتشف البرامج التعليمية الشاملة حول عمليات بيانات الطبقة باستخدام Aspose.GIS for .NET. تعلم كيفية قراءة البيانات الجغرافية المكانية ومعالجتها وتصورها.
 ### [عرض الخريطة](./map-rendering/)
 أطلق العنان لإمكانات تصور البيانات الجغرافية المكانية باستخدام Aspose.GIS for .NET. قم باستيراد SLD وميزات الملصقات وعرض خرائط مذهلة بسهولة. اكتشف الآن!
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

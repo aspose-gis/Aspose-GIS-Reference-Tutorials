@@ -3,10 +3,16 @@ title: GIS-Beherrschung – Hinzufügen von Ebenen zu GDB mit Aspose.GIS für .N
 linktitle: Fügen Sie dem Datei-GDB-Datensatz eine Ebene hinzu
 second_title: Aspose.GIS .NET-API
 description: Nutzen Sie die Leistungsfähigkeit von GIS mit Aspose.GIS für .NET! Erfahren Sie in dieser Schritt-für-Schritt-Anleitung, wie Sie Layer zu File-GDB-Datensätzen hinzufügen. #geografische Daten #Aspose #GIS
-type: docs
 weight: 16
 url: /de/net/layer-management/add-layer-to-file-gdb-dataset/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# GIS-Beherrschung – Hinzufügen von Ebenen zu GDB mit Aspose.GIS für .NET
+
 ## Einführung
 Sind Sie bereit, Ihre GIS-Funktionen mit Aspose.GIS für .NET zu erweitern? In dieser Schritt-für-Schritt-Anleitung führen wir Sie durch den Prozess des Hinzufügens eines Layers zu einem File Geodatabase (GDB)-Datensatz. Aspose.GIS für .NET bietet leistungsstarke Funktionen zum Bearbeiten geografischer Informationen. Mit diesem Tutorial können Sie zusätzliche Ebenen nahtlos in Ihre Datensätze integrieren.
 ## Voraussetzungen
@@ -75,3 +81,9 @@ Aspose.GIS für .NET unterstützt eine Vielzahl räumlicher Bezugssysteme und bi
  Absolut! Beteiligen Sie sich an den Diskussionen und teilen Sie Ihre Erfahrungen auf der[Aspose.GIS-Forum](https://forum.aspose.com/c/gis/33).
 ### F: Wo finde ich eine ausführliche Dokumentation zu Aspose.GIS für .NET?
  Entdecken Sie die umfassende Dokumentation[Hier](https://reference.aspose.com/gis/net/) Ausführliche Informationen zu Aspose.GIS für .NET finden Sie hier.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

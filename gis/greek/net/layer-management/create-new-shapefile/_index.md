@@ -3,10 +3,16 @@ title: Δημιουργία νέου αρχείου σχήματος
 linktitle: Δημιουργία νέου αρχείου σχήματος
 second_title: Aspose.GIS .NET API
 description: Μάθετε πώς να δημιουργείτε ένα νέο shapefile χρησιμοποιώντας το Aspose.GIS για .NET. Ακολουθήστε τον βήμα προς βήμα οδηγό μας και ξεκλειδώστε τη δύναμη του χειρισμού χωρικών δεδομένων.
-type: docs
 weight: 12
 url: /el/net/layer-management/create-new-shapefile/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Δημιουργία νέου αρχείου σχήματος
+
 ## Εισαγωγή
 Εάν εμβαθύνετε στην ανάπτυξη συστημάτων γεωγραφικών πληροφοριών (GIS) με το .NET, το Aspose.GIS είναι η ιδανική λύση. Αυτή η ισχυρή βιβλιοθήκη δίνει τη δυνατότητα στους προγραμματιστές να εργάζονται απρόσκοπτα με χωρικά δεδομένα και σε αυτό το σεμινάριο, θα σας καθοδηγήσουμε στη διαδικασία δημιουργίας ενός νέου shapefile χρησιμοποιώντας το Aspose.GIS για .NET.
 ## Προαπαιτούμενα
@@ -80,3 +86,9 @@ layer.Add(thirdFeature);
  Πάρτε την προσωρινή σας άδεια[εδώ](https://purchase.aspose.com/temporary-license/).
 ### Ε: Πού μπορώ να αγοράσω το Aspose.GIS για .NET;
  Μπορείτε να αγοράσετε τη βιβλιοθήκη[εδώ](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

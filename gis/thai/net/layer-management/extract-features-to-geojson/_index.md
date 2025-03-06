@@ -3,10 +3,16 @@ title: แยกคุณสมบัติไปยัง GeoJSON
 linktitle: แยกคุณสมบัติไปยัง GeoJSON
 second_title: Aspose.GIS .NET API
 description: สำรวจคำแนะนำทีละขั้นตอนเกี่ยวกับการใช้ Aspose.GIS สำหรับ .NET เพื่อแยกคุณสมบัติต่างๆ ให้กับ GeoJSON ควบคุมพลังของ GIS ได้อย่างง่ายดาย! #จัดทำ #GIS
-type: docs
 weight: 23
 url: /th/net/layer-management/extract-features-to-geojson/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# แยกคุณสมบัติไปยัง GeoJSON
+
 ## การแนะนำ
 ยินดีต้อนรับสู่บทช่วยสอนทีละขั้นตอนเกี่ยวกับการแยกคุณสมบัติต่างๆ ไปยัง GeoJSON โดยใช้ Aspose.GIS สำหรับ .NET! ไม่ว่าคุณจะเป็นนักพัฒนาที่มีประสบการณ์หรือเพิ่งเริ่มต้นการเดินทางในการเขียนโปรแกรม GIS คู่มือนี้จะแนะนำคุณตลอดกระบวนการ เพื่อให้มั่นใจว่าคุณจะสามารถใช้ประโยชน์จาก Aspose.GIS สำหรับ .NET ได้อย่างเต็มที่
 ## ข้อกำหนดเบื้องต้น
@@ -87,3 +93,9 @@ outputLayer.Add(outputFeature);
  ใช่ คุณสามารถค้นหารุ่นทดลองใช้ฟรีได้[ที่นี่](https://releases.aspose.com/).
 ### ถาม: ฉันจะซื้อ Aspose.GIS สำหรับ .NET ได้ที่ไหน
  ท่านสามารถซื้อสินค้าได้[ที่นี่](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

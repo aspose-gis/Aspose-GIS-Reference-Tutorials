@@ -3,10 +3,16 @@ title: احصل على قيمة سمة الميزة
 linktitle: احصل على قيمة سمة الميزة
 second_title: Aspose.GIS .NET API
 description: استكشف Aspose.GIS for .NET - الأداة المثالية للتكامل السلس لبيانات GIS. تحميل النسخة التجريبية المجانية من الآن! #Aspose #GIS #.NET
-type: docs
 weight: 12
 url: /ar/net/layer-interaction-and-data-access/get-feature-attribute-value/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# احصل على قيمة سمة الميزة
+
 ## مقدمة
 مرحبًا بك في عالم Aspose.GIS for .NET، وهي مكتبة قوية تمكّن مطوري .NET من العمل بسلاسة مع بيانات نظام المعلومات الجغرافية (GIS). سواء كنت مطورًا متمرسًا أو بدأت رحلتك للتو في نظم المعلومات الجغرافية، فسيرشدك هذا البرنامج التعليمي خلال عملية استرداد قيم سمات الميزات باستخدام Aspose.GIS for .NET.
 ## المتطلبات الأساسية
@@ -80,3 +86,9 @@ for (int i = 0; i < layer.Count; i++)
  ج: انضم إلى المناقشة حول[منتدى Aspose.GIS](https://forum.aspose.com/c/gis/33) لطلب المساعدة والتواصل مع المستخدمين الآخرين.
 ### س: هل هناك نسخة تجريبية مجانية من Aspose.GIS؟
  ج: بالتأكيد! يمكنك استكشاف ميزات Aspose.GIS عن طريق تنزيل النسخة التجريبية المجانية من[هنا](https://releases.aspose.com/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

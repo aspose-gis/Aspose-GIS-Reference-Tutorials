@@ -3,10 +3,16 @@ title: Tel punten in de geometrie met Aspose.GIS voor .NET
 linktitle: Punten tellen in de geometrie
 second_title: Aspose.GIS .NET-API
 description: Leer hoe u Aspose.GIS voor .NET kunt gebruiken om moeiteloos geografische gegevens te manipuleren. Uitgebreide tutorials beschikbaar.
-type: docs
 weight: 24
 url: /nl/net/geometry-creation/count-points-in-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Tel punten in de geometrie met Aspose.GIS voor .NET
+
 ## Invoering
 Op het gebied van de ontwikkeling van geografische informatiesystemen (GIS) onderscheidt Aspose.GIS voor .NET zich als een krachtige toolset voor het manipuleren en verwerken van geografische gegevens. Of u nu een doorgewinterde ontwikkelaar bent of zich gewoon verdiept in de wereld van GIS-programmeren, het beheersen van Aspose.GIS kan een groot aantal mogelijkheden in uw projecten openen.
 ## Vereisten
@@ -71,3 +77,9 @@ Absoluut! Gedetailleerde documentatie voor Aspose.GIS voor .NET vindt u op de we
  U kunt een bezoek brengen aan de[Aspose.GIS-forum](https://forum.aspose.com/c/gis/33) om ondersteuning te zoeken of vragen te stellen aan de Aspose-gemeenschap.
 ### Is er een gratis proefversie beschikbaar voor Aspose.GIS voor .NET?
  Ja, u kunt gebruikmaken van de gratis proefperiode van de[Aspose.GIS releasespagina](https://releases.aspose.com/) om de kenmerken ervan te evalueren voordat u een aankoop doet.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

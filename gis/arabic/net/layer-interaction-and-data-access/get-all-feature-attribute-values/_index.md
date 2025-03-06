@@ -3,10 +3,16 @@ title: احصل على كافة قيم سمات الميزة
 linktitle: احصل على كافة قيم سمات الميزة
 second_title: Aspose.GIS .NET API
 description: اكتشف التطوير الجغرافي المكاني باستخدام Aspose.GIS لـ .NET! استرداد قيم سمات الميزة بسلاسة. قم بالتنزيل الآن لمغامرة الترميز المكاني.
-type: docs
 weight: 15
 url: /ar/net/layer-interaction-and-data-access/get-all-feature-attribute-values/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# احصل على كافة قيم سمات الميزة
+
 ## مقدمة
 مرحبًا بك في عالم التطوير الجغرافي المكاني باستخدام Aspose.GIS for .NET! تعمل هذه المكتبة القوية على تمكين المطورين من دمج وظائف نظم المعلومات الجغرافية بسلاسة في تطبيقات .NET الخاصة بهم، مما يجعل معالجة البيانات المكانية أمرًا سهلاً. في هذا البرنامج التعليمي الشامل، سنستكشف جانبًا أساسيًا واحدًا - وهو استرداد قيم السمات من الميزات. دعونا الغوص في!
 ## المتطلبات الأساسية
@@ -84,3 +90,9 @@ foreach (var feature in layer)
  يمكنك الحصول على ترخيص مؤقت لأغراض الاختبار[هنا](https://purchase.aspose.com/temporary-license/).
 ### أين يمكنني العثور على وثائق مفصلة عن Aspose.GIS؟
  الوثائق الشاملة متاحة[هنا](https://reference.aspose.com/gis/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

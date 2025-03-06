@@ -3,10 +3,16 @@ title: 迭代几何中的点
 linktitle: 迭代几何中的点
 second_title: Aspose.GIS .NET API
 description: 探索 Aspose.GIS for .NET，这是一个功能强大的工具包，可将地理空间功能无缝集成到您的 .NET 应用程序中。
-type: docs
 weight: 11
 url: /zh/net/geometry-processing/iterate-over-points-in-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 迭代几何中的点
+
 ## 介绍
 
 在地理信息系统 (GIS) 开发领域，Aspose.GIS for .NET 作为一个强大的工具包脱颖而出，使开发人员能够将地理空间功能无缝集成到他们的 .NET 应用程序中。本文将逐步指导您如何利用 Aspose.GIS for .NET 的强大功能，重点关注迭代几何中的点。在本教程结束时，您将熟练地完成该过程，并具备轻松实现此功能的基本知识。
@@ -83,3 +89,9 @@ foreach (IPoint point in line)
 ### Q5：Aspose.GIS 用户可以获得技术支持吗？
 
 答：当然，Aspose.GIS 用户可以通过论坛获得专门的技术支持，确保在开发过程中遇到的任何疑问或问题都能得到及时帮助。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

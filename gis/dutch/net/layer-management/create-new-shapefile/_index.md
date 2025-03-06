@@ -3,10 +3,16 @@ title: Maak een nieuw vormbestand
 linktitle: Maak een nieuw vormbestand
 second_title: Aspose.GIS .NET-API
 description: Leer hoe u een nieuw shapefile maakt met Aspose.GIS voor .NET. Volg onze stapsgewijze handleiding en ontgrendel de kracht van manipulatie van ruimtelijke gegevens.
-type: docs
 weight: 12
 url: /nl/net/layer-management/create-new-shapefile/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Maak een nieuw vormbestand
+
 ## Invoering
 Als u zich verdiept in de ontwikkeling van geografische informatiesystemen (GIS) met .NET, is Aspose.GIS uw beste oplossing. Deze krachtige bibliotheek stelt ontwikkelaars in staat naadloos met ruimtelijke gegevens te werken, en in deze tutorial begeleiden we u door het proces van het maken van een nieuw shapefile met behulp van Aspose.GIS voor .NET.
 ## Vereisten
@@ -80,3 +86,9 @@ Aspose.GIS ondersteunt voornamelijk .NET, maar er zijn ook versies beschikbaar v
  Haal uw tijdelijke licentie[hier](https://purchase.aspose.com/temporary-license/).
 ### Vraag: Waar kan ik Aspose.GIS voor .NET kopen?
  Je kunt de bibliotheek kopen[hier](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

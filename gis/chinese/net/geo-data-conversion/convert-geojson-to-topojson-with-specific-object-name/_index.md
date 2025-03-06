@@ -3,10 +3,16 @@ title: 将 GeoJSON 转换为具有特定对象名称的 TopoJSON
 linktitle: 将 GeoJSON 转换为具有特定对象名称的 TopoJSON
 second_title: Aspose.GIS .NET API
 description: 了解如何使用 Aspose.GIS for .NET 将 GeoJSON 转换为具有特定对象名称的 TopoJSON。本教程提供了高效地理数据操作的分步指南。
-type: docs
 weight: 12
 url: /zh/net/geo-data-conversion/convert-geojson-to-topojson-with-specific-object-name/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 将 GeoJSON 转换为具有特定对象名称的 TopoJSON
+
 ## 介绍
 Aspose.GIS for .NET 是在 .NET 应用程序中处理地理数据的强大工具。无论您是开发地图应用程序、分析空间数据还是操作 geojson 文件，Aspose.GIS 都提供了一套全面的功能来简化您的工作流程。
 ## 先决条件
@@ -67,3 +73,9 @@ VectorLayer.Convert(sampleGeoJsonPath, Drivers.GeoJson, outputFilePath, Drivers.
 您可以从以下位置购买许可证[这里](https://purchase.aspose.com/buy).
 ### 我需要临时许可证才能进行评估吗？
 是的，您可以从以下地点获得临时许可证[这里](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

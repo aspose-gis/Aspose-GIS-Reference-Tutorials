@@ -3,10 +3,16 @@ title: Créer une géométrie MultiLineString à l'aide d'Aspose.GIS pour .NET
 linktitle: Créer une géométrie MultiLineString
 second_title: API Aspose.GIS .NET
 description: Découvrez la puissance d'Aspose.GIS pour .NET dans la gestion efficace des données géospatiales. Téléchargez maintenant pour une expérience transparente.
-type: docs
 weight: 15
 url: /fr/net/geometry-creation/create-multilinestring-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Créer une géométrie MultiLineString à l'aide d'Aspose.GIS pour .NET
+
 ## Introduction
 Aspose.GIS for .NET est une bibliothèque puissante qui permet aux développeurs de travailler de manière transparente avec des données géospatiales au sein de leurs applications .NET. Que vous créiez une application de cartographie, effectuiez une analyse géospatiale ou intégriez des fonctionnalités basées sur la localisation dans votre logiciel, Aspose.GIS fournit les outils dont vous avez besoin pour gérer efficacement les données spatiales.
 ## Conditions préalables
@@ -64,3 +70,9 @@ Oui, Aspose.GIS for .NET est compatible avec différentes versions du framework 
 Bien que la version d'essai soit disponible pour les tests, si vous avez besoin de fonctionnalités supplémentaires ou devez évaluer toutes les fonctionnalités, vous pouvez obtenir une licence temporaire auprès de[achat.aspose.com](https://purchase.aspose.com/temporary-license/).
 ### Aspose.GIS pour .NET est-il adapté aux applications de bureau et Web ?
 Oui, Aspose.GIS pour .NET peut être utilisé dans diverses applications, notamment des applications de bureau, Web et côté serveur, offrant ainsi une polyvalence dans différents scénarios de développement.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Рендеринг карты
 linktitle: Рендеринг карты
 second_title: API Aspose.GIS .NET
 description: Раскройте потенциал визуализации геопространственных данных с помощью Aspose.GIS для .NET. Легко импортируйте SLD, маркируйте объекты и создавайте потрясающие карты. Исследуйте сейчас!
-type: docs
 weight: 27
 url: /ru/net/map-rendering/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Рендеринг карты
+
 ## Введение
 Готовы ли вы повысить свои навыки разработки ГИС и окунуться в мир визуализации геопространственных данных? Не ищите ничего, кроме Aspose.GIS для .NET! В этой статье мы познакомим вас с тонкостями рендеринга карт с помощью серии руководств, призванных дать вам знания и навыки для легкого создания потрясающих карт.
 
@@ -36,3 +42,9 @@ url: /ru/net/map-rendering/
 Исследуйте мир визуализации геопространственных данных с помощью Aspose.GIS для .NET. Создавайте потрясающие карты без особых усилий. Скачать сейчас!
 ### [Рендеринг различных растровых форматов](./render-various-raster-formats/)
 Исследуйте мир визуализации растровых данных с помощью Aspose.GIS для .NET. Научитесь легко создавать потрясающие карты в различных форматах. Скачать сейчас!
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

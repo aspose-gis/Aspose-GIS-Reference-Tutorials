@@ -3,10 +3,16 @@ title: 取得圖層屬性資訊
 linktitle: 取得圖層屬性資訊
 second_title: Aspose.GIS .NET API
 description: 在此逐步教學中探索 Aspose.GIS for .NET 的強大功能。輕鬆檢索圖層屬性資訊。立即下載免費試用版！
-type: docs
 weight: 11
 url: /zh-hant/net/layer-interaction-and-data-access/get-layer-attribute-information/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 取得圖層屬性資訊
+
 ## 介紹
 歡迎來到我們利用 Aspose.GIS for .NET 強大功能的深入教學！如果您渴望深入了解使用 .NET 框架的地理資訊系統 (GIS) 世界，那麼您來對地方了。在本指南中，我們將引導您完成檢索圖層屬性資訊的基本步驟，為您的 GIS 開發之旅奠定堅實的基礎。
 ## 先決條件
@@ -66,3 +72,9 @@ foreach (FeatureAttribute attribute in layer.Attributes)
 答：是的，您可以在以下位置找到支持社區：[Aspose.GIS論壇](https://forum.aspose.com/c/gis/33)討論疑問、分享經驗並尋求協助。
 ### Q：我可以在購買授權之前試用 Aspose.GIS 嗎？
 答：當然可以！抓住你的[在這裡免費試用](https://releases.aspose.com/)並探索 Aspose.GIS 的全部潛力。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

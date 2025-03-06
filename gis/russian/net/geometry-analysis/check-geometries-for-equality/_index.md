@@ -3,10 +3,16 @@ title: Проверка геометрии на равенство
 linktitle: Проверка геометрии на равенство
 second_title: API Aspose.GIS .NET
 description: Из этого подробного руководства вы узнаете, как использовать Aspose.GIS for .NET для проверки равенства геометрии в ваших .NET-приложениях.
-type: docs
 weight: 10
 url: /ru/net/geometry-analysis/check-geometries-for-equality/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Проверка геометрии на равенство
+
 ## Введение
 Aspose.GIS for .NET — это мощная библиотека, которая позволяет разработчикам эффективно работать с геопространственными данными в своих .NET-приложениях. Независимо от того, создаете ли вы картографические приложения, инструменты пространственного анализа или интегрируете геопространственные функции в существующее программное обеспечение, Aspose.GIS предоставляет инструменты, необходимые для выполнения работы.
 ## Предварительные условия
@@ -73,3 +79,9 @@ Console.WriteLine(geometry1.SpatiallyEquals(geometry2)); // ЛОЖЬ
  Вы можете получить поддержку на форуме сообщества Aspose.GIS.[здесь](https://forum.aspose.com/c/gis/33).
 ### Могу ли я приобрести временную лицензию на Aspose.GIS для .NET?
  Да, вы можете приобрести временную лицензию на сайте[страница покупки](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

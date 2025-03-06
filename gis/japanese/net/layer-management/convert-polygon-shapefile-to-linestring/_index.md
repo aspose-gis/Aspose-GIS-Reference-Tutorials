@@ -3,10 +3,16 @@ title: ポリゴン シェープファイルをラインストリングに変換
 linktitle: ポリゴン シェープファイルをラインストリングに変換
 second_title: Aspose.GIS .NET API
 description: Aspose.GIS for .NET の機能を活用し、ポリゴン シェープファイルをラインストリングに簡単に変換します。今すぐ GIS 開発を強化しましょう!
-type: docs
 weight: 18
 url: /ja/net/layer-management/convert-polygon-shapefile-to-linestring/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# ポリゴン シェープファイルをラインストリングに変換
+
 ## 導入
 .NET で地理情報システム (GIS) を使用している場合、Aspose.GIS はタスクを簡素化できる強力なライブラリです。このチュートリアルでは、Aspose.GIS を使用してポリゴン シェイプファイルをラインストリングに変換するプロセスを説明します。これは、ルート計画やネットワーク解析などのさまざまなアプリケーションでポリゴン データから線形フィーチャを抽出する必要がある場合に特に役立ちます。
 ## 前提条件
@@ -78,3 +84,9 @@ destination.Add(destinationFeature);
 はい、次のサイトにアクセスすると、無料トライアルで Aspose.GIS を探索できます。[このリンク](https://releases.aspose.com/).
 ### どこに助けやサポートを求めればよいですか?
 訪問[Aspose.GIS フォーラム](https://forum.aspose.com/c/gis/33)サポートまたはサポート関連の質問については、
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

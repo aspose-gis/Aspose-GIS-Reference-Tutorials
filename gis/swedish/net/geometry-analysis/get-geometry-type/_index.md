@@ -3,10 +3,16 @@ title: Skaffa Geometry Type med Aspose.GIS för .NET
 linktitle: Hämta Geometri Type
 second_title: Aspose.GIS .NET API
 description: Upptäck kraften i Aspose.GIS för .NET. Lär dig hur du hanterar rumslig data effektivt i dina .NET-projekt med den här omfattande handledningen.
-type: docs
 weight: 23
 url: /sv/net/geometry-analysis/get-geometry-type/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Skaffa Geometry Type med Aspose.GIS för .NET
+
 ## Introduktion
 Inom området .NET-utveckling fungerar Aspose.GIS som ett kraftfullt verktyg för att hantera geografisk information. Dess rika funktioner gör det till ett bra val för utvecklare som arbetar med rumslig data. I den här handledningen kommer vi att fördjupa oss i grunderna i Aspose.GIS för .NET, bryta ner nyckelbegrepp och ge steg-för-steg-vägledning för att hjälpa dig komma igång med lätthet.
 ## Förutsättningar
@@ -63,3 +69,9 @@ Ja, Aspose.GIS stöder olika versioner av .NET, vilket säkerställer kompatibil
  För tillfälliga licensalternativ, besök[tillfällig licens](https://purchase.aspose.com/temporary-license/) sida.
 ### Var kan jag köpa Aspose.GIS för mitt projekt?
  Du kan köpa Aspose.GIS från köpsidan[här](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

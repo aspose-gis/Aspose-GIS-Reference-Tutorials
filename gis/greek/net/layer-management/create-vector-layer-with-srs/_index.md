@@ -3,10 +3,16 @@ title: Δημιουργήστε διανυσματικό επίπεδο με SRS
 linktitle: Δημιουργήστε διανυσματικό επίπεδο με SRS
 second_title: Aspose.GIS .NET API
 description: Εξερευνήστε το Aspose.GIS για .NET - το κλειδί σας για απρόσκοπτη ενσωμάτωση GIS. Δημιουργήστε διανυσματικά επίπεδα χωρίς κόπο με καθορισμένα χωρικά συστήματα αναφοράς. Κατεβάστε τώρα!
-type: docs
 weight: 13
 url: /el/net/layer-management/create-vector-layer-with-srs/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Δημιουργήστε διανυσματικό επίπεδο με SRS
+
 ## Εισαγωγή
 Το Aspose.GIS για .NET είναι μια ισχυρή βιβλιοθήκη που επιτρέπει στους προγραμματιστές να εργάζονται με δεδομένα συστήματος γεωγραφικών πληροφοριών (GIS) απρόσκοπτα σε εφαρμογές .NET. Σε αυτό το σεμινάριο, θα επικεντρωθούμε στη δημιουργία ενός διανυσματικού επιπέδου με ένα χωρικό σύστημα αναφοράς (SRS). Μέχρι το τέλος αυτού του οδηγού, θα είστε σε θέση να ενσωματώσετε αβίαστα τις δυνατότητες GIS στα έργα σας .NET.
 ## Προαπαιτούμενα
@@ -90,3 +96,9 @@ using (var layer = Drivers.Shapefile.OpenLayer(dataDir + "filepath_out.shp"))
  Ναι, μπορείτε να εξερευνήσετε τις δυνατότητες του Aspose.GIS αποκτώντας μια δωρεάν δοκιμή[εδώ](https://releases.aspose.com/).
 ### Πώς μπορώ να αγοράσω άδεια χρήσης για το Aspose.GIS;
  Για να αγοράσετε μια άδεια, επισκεφτείτε το[σελίδα αγοράς](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

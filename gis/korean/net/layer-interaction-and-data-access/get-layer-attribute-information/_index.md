@@ -3,10 +3,16 @@ title: 레이어 속성 정보 가져오기
 linktitle: 레이어 속성 정보 가져오기
 second_title: Aspose.GIS .NET API
 description: 이 단계별 튜토리얼에서 .NET용 Aspose.GIS의 강력한 기능을 알아보세요. 레이어 속성 정보를 쉽게 검색할 수 있습니다. 지금 무료 평가판을 다운로드하세요!
-type: docs
 weight: 11
 url: /ko/net/layer-interaction-and-data-access/get-layer-attribute-information/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 레이어 속성 정보 가져오기
+
 ## 소개
 .NET용 Aspose.GIS의 강력한 기능을 활용하는 심층 튜토리얼에 오신 것을 환영합니다! .NET 프레임워크를 사용하여 지리 정보 시스템(GIS)의 세계를 탐험하고 싶다면 잘 찾아오셨습니다. 이 가이드에서는 레이어 속성 정보를 검색하는 필수 단계를 안내하여 GIS 개발 여정을 위한 견고한 기반을 제공합니다.
 ## 전제조건
@@ -66,3 +72,9 @@ A: Aspose.GIS는 최신 GIS 표준과의 호환성을 보장하고 새로운 기
  A: 예, 다음에서 지원 커뮤니티를 찾을 수 있습니다.[Aspose.GIS 포럼](https://forum.aspose.com/c/gis/33) 질문에 대해 논의하고, 경험을 공유하고, 도움을 구합니다.
 ### Q: 라이선스를 구매하기 전에 Aspose.GIS를 사용해 볼 수 있나요?
  답: 물론이죠! 당신의[여기에서 무료 평가판](https://releases.aspose.com/) Aspose.GIS의 모든 잠재력을 탐색해 보세요.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

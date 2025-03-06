@@ -3,10 +3,16 @@ title: Converter Shapefile de polígono em cadeia de linha
 linktitle: Converter Shapefile de polígono em cadeia de linha
 second_title: API Aspose.GIS .NET
 description: Explore o poder do Aspose.GIS para .NET e converta facilmente Polygon Shapefiles em Linestrings. Aumente o seu desenvolvimento GIS hoje!
-type: docs
 weight: 18
 url: /pt/net/layer-management/convert-polygon-shapefile-to-linestring/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Converter Shapefile de polígono em cadeia de linha
+
 ## Introdução
 Se você estiver trabalhando com sistemas de informação geográfica (GIS) em .NET, Aspose.GIS é uma biblioteca poderosa que pode simplificar suas tarefas. Neste tutorial, iremos guiá-lo através do processo de conversão de um Polygon Shapefile em uma Linestring usando Aspose.GIS. Isso pode ser particularmente útil quando você precisa extrair recursos lineares de dados poligonais para diversas aplicações, como planejamento de rotas ou análise de rede.
 ## Pré-requisitos
@@ -78,3 +84,9 @@ Sim, Aspose.GIS suporta diversas versões de .NET, garantindo compatibilidade co
  Sim, você pode explorar o Aspose.GIS com uma avaliação gratuita visitando[esse link](https://releases.aspose.com/).
 ### Onde posso procurar ajuda ou suporte?
  Visite a[Fórum Aspose.GIS](https://forum.aspose.com/c/gis/33) para qualquer assistência ou dúvidas relacionadas ao suporte.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

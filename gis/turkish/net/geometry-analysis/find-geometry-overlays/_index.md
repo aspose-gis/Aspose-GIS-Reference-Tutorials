@@ -3,10 +3,16 @@ title: Aspose.GIS for .NET ile Geometri Kaplamalarında Uzmanlaşma
 linktitle: Geometri Kaplamalarını Bul
 second_title: Aspose.GIS .NET API'si
 description: Aspose.GIS for .NET'i kullanarak geometrik katmanlama işlemlerini nasıl gerçekleştireceğinizi öğrenin. Ana kesişim, birleşim, fark ve simetrik fark işlemleri.
-type: docs
 weight: 16
 url: /tr/net/geometry-analysis/find-geometry-overlays/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS for .NET ile Geometri Kaplamalarında Uzmanlaşma
+
 ## giriiş
 Coğrafi Bilgi Sistemleri (CBS) alanında, katmanlama işlemleri mekansal analiz için temeldir. Değerli bilgiler elde etmek için farklı mekansal veri kümelerinin karşılaştırılmasını ve birleştirilmesini sağlarlar. Aspose.GIS for .NET, geometrik katmanları verimli bir şekilde gerçekleştirmek için güçlü işlevler sağlar. Bu derste Aspose.GIS for .NET'i kullanarak Kesişme, Birleşim, Fark ve Simetrik Fark gibi çeşitli katmanlama işlemlerini inceleyeceğiz.
 ## Önkoşullar
@@ -108,3 +114,9 @@ Evet, Aspose.GIS for .NET hem ticari hem de ticari olmayan projelerde kullanıla
  Evet, test ve değerlendirme amaçlı geçici lisanslar mevcuttur. Bunları şuradan alabilirsiniz:[Burada](https://purchase.aspose.com/temporary-license/).
 ### S: Aspose.GIS for .NET'i doğrudan satın alabilir miyim?
  Evet, Aspose.GIS for .NET'i web sitesinden satın alabilirsiniz.[Burada](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

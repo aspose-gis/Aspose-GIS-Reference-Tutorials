@@ -3,10 +3,16 @@ title: Specify Attribute Value Length
 linktitle: Specify Attribute Value Length
 second_title: Aspose.GIS .NET API
 description: Explore geospatial development with Aspose.GIS for .NET. Effortlessly manage and manipulate spatial data in your .NET applications. 
-type: docs
 weight: 18
 url: /net/layer-data-operations/specify-attribute-value-length/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Specify Attribute Value Length
+
 ## Introduction
 Welcome to the world of Aspose.GIS for .NET – your gateway to powerful and efficient geospatial development! This comprehensive tutorial will guide you through the fundamental steps of using Aspose.GIS to manage geospatial data effortlessly in your .NET applications. Whether you're a seasoned developer or a newcomer to geospatial programming, this guide is designed to provide you with a solid foundation and practical insights.
 ## Prerequisites
@@ -61,3 +67,10 @@ A: Yes, explore the [free trial](https://releases.aspose.com/) to experience the
 A: Purchase your license [here](https://purchase.aspose.com/buy).
 ### Q: Where can I access the documentation for Aspose.GIS for .NET?
 A: Refer to the [documentation](https://reference.aspose.com/gis/net/) for comprehensive guidance.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

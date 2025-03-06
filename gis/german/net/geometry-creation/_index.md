@@ -3,10 +3,16 @@ title: Geometrieerstellung
 linktitle: Geometrieerstellung
 second_title: Aspose.GIS .NET-API
 description: Erschließen Sie das Potenzial der Geodatenmanipulation mit Aspose.GIS für .NET. Tauchen Sie ein in unsere Tutorials, die sich mit der Erstellung, Konvertierung und Analyse von Geometrie befassen.
-type: docs
 weight: 21
 url: /de/net/geometry-creation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Geometrieerstellung
+
 
 ## Einführung
 
@@ -105,3 +111,9 @@ Erfahren Sie, wie Sie mit Aspose.GIS für .NET Geometrien in einer Geometrie zä
 Erfahren Sie, wie Sie Aspose.GIS für .NET verwenden, um geografische Daten mühelos zu bearbeiten. Umfangreiche Tutorials verfügbar.
 ### [Koordinatenkonvertierung mit Aspose.GIS](./convert-coordinates/)
 Erfahren Sie, wie Sie Koordinaten mit Aspose.GIS für .NET konvertieren. Schritt-für-Schritt-Anleitung, Voraussetzungen und FAQs bereitgestellt.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

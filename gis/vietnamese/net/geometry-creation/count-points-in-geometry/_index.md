@@ -3,10 +3,16 @@ title: Đếm điểm trong hình học với Aspose.GIS cho .NET
 linktitle: Đếm điểm trong hình học
 second_title: API Aspose.GIS .NET
 description: Tìm hiểu cách sử dụng Aspose.GIS cho .NET để thao tác dữ liệu địa lý một cách dễ dàng. Hướng dẫn toàn diện có sẵn.
-type: docs
 weight: 24
 url: /vi/net/geometry-creation/count-points-in-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Đếm điểm trong hình học với Aspose.GIS cho .NET
+
 ## Giới thiệu
 Trong lĩnh vực phát triển Hệ thống thông tin địa lý (GIS), Aspose.GIS cho .NET nổi bật như một bộ công cụ mạnh mẽ để thao tác và xử lý dữ liệu địa lý. Cho dù bạn là nhà phát triển dày dạn kinh nghiệm hay chỉ mới tìm hiểu thế giới lập trình GIS, việc thành thạo Aspose.GIS có thể mở ra vô số khả năng trong các dự án của bạn.
 ## Điều kiện tiên quyết
@@ -71,3 +77,9 @@ Tuyệt đối! Bạn có thể tìm tài liệu chi tiết về Aspose.GIS cho 
  Bạn có thể ghé thăm[Diễn đàn Aspose.GIS](https://forum.aspose.com/c/gis/33) để tìm kiếm sự hỗ trợ hoặc đặt câu hỏi từ cộng đồng Aspose.
 ### Có bản dùng thử miễn phí dành cho Aspose.GIS cho .NET không?
  Có, bạn có thể tận dụng bản dùng thử miễn phí từ[Trang phát hành Aspose.GIS](https://releases.aspose.com/) để đánh giá các tính năng của nó trước khi mua hàng.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

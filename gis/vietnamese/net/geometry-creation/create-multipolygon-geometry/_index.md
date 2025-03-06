@@ -3,10 +3,16 @@ title: Tạo hình học MultiPolygon với Aspose.GIS
 linktitle: Tạo hình học đa giác
 second_title: API Aspose.GIS .NET
 description: Tìm hiểu cách tạo hình học MultiPolygon bằng Aspose.GIS cho .NET. Hướng dẫn từng bước cho người mới bắt đầu. Có sẵn bản dùng thử miễn phí.
-type: docs
 weight: 16
 url: /vi/net/geometry-creation/create-multipolygon-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Tạo hình học MultiPolygon với Aspose.GIS
+
 ## Giới thiệu
 Trong thế giới phát triển Hệ thống thông tin địa lý (GIS), Aspose.GIS cho .NET nổi bật như một công cụ mạnh mẽ để tạo, chỉnh sửa và phân tích dữ liệu không gian địa lý. Cho dù bạn là nhà phát triển dày dạn kinh nghiệm hay mới bắt đầu, việc thành thạo Aspose.GIS có thể mở ra vô số khả năng cho các dự án của bạn.
 ## Điều kiện tiên quyết
@@ -66,3 +72,9 @@ Tuyệt đối! Aspose.GIS cung cấp tài liệu và hướng dẫn toàn diệ
  Có, bạn có thể xin giấy phép tạm thời từ[đây](https://purchase.aspose.com/temporary-license/) cho mục đích đánh giá.
 ### Tôi có thể mua Aspose.GIS trực tiếp không?
  Có, bạn có thể mua Aspose.GIS từ trang web[đây](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

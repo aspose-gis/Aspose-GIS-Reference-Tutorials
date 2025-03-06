@@ -3,10 +3,16 @@ title: Aspose.GIS for .NET ile Poligon Geometrisi Oluşturun
 linktitle: Poligon Geometrisi Oluşturun
 second_title: Aspose.GIS .NET API'si
 description: Aspose.GIS for .NET'i kullanarak çokgen geometrisini nasıl oluşturacağınızı öğrenin. .NET geliştiricileri için adım adım eğitim.
-type: docs
 weight: 12
 url: /tr/net/geometry-creation/create-polygon-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS for .NET ile Poligon Geometrisi Oluşturun
+
 ## giriiş
 Yazılım geliştirme dünyasında coğrafi bilgi sistemleri (CBS), mekansal verilerin analiz edilmesinde ve görselleştirilmesinde hayati bir rol oynamaktadır. Aspose.GIS for .NET, geliştiricilere GIS verileriyle verimli bir şekilde çalışmak için ihtiyaç duydukları araçları sağlayan güçlü bir kütüphanedir. Bu derste, birçok GIS uygulamasında önemli bir görev olan çokgen geometrisini oluşturmak için Aspose.GIS for .NET'i nasıl kullanabileceğimizi keşfedeceğiz.
 ## Önkoşullar
@@ -66,3 +72,9 @@ Evet, Aspose.GIS for .NET Shapefile, GeoJSON ve KML gibi çeşitli GIS dosya for
  Evet, Aspose.GIS for .NET'in ücretsiz deneme sürümünü şu adresten indirebilirsiniz:[Burada](https://releases.aspose.com/).
 ### Aspose.GIS for .NET için nereden destek alabilirim?
  Aspose.GIS for .NET için destek alabilirsiniz.[Aspose.GIS forumu](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

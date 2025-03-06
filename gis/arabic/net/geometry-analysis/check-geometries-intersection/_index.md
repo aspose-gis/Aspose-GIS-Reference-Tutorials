@@ -3,10 +3,16 @@ title: تحقق من تقاطع الأشكال الهندسية مع Aspose.GIS 
 linktitle: تحقق من تقاطع الأشكال الهندسية
 second_title: Aspose.GIS .NET API
 description: تعرف على كيفية التحقق من تقاطع الأشكال الهندسية باستخدام Aspose.GIS for .NET مع إرشادات خطوة بخطوة. تعزيز تطوير نظم المعلومات الجغرافية الخاصة بك دون عناء.
-type: docs
 weight: 11
 url: /ar/net/geometry-analysis/check-geometries-intersection/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# تحقق من تقاطع الأشكال الهندسية مع Aspose.GIS لـ .NET
+
 ## مقدمة
 في مجال أنظمة المعلومات الجغرافية (GIS)، يبرز Aspose.GIS for .NET كمجموعة أدوات قوية تمكن المطورين من دمج الوظائف المكانية المتقدمة في تطبيقاتهم بسلاسة. سواء كنت مطورًا متمرسًا أو مجرد غمس أصابع قدميك في تطوير نظم المعلومات الجغرافية، ستكون هذه المقالة بمثابة دليلك الشامل للاستفادة من Aspose.GIS for .NET للتحقق من تقاطع الأشكال الهندسية بشكل فعال.
 ## المتطلبات الأساسية
@@ -76,3 +82,9 @@ Console.WriteLine(geometry1.Disjoint(geometry2)); // خطأ شنيع
  نعم يمكنك الحصول على ترخيص مؤقت من[هنا](https://purchase.aspose.com/temporary-license/).
 ### أين يمكنني شراء نسخة مرخصة من Aspose.GIS لـ .NET؟
  يمكنك شراء نسخة مرخصة من Aspose.GIS لـ .NET من[هنا](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

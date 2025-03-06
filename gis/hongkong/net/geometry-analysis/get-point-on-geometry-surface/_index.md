@@ -3,10 +3,16 @@ title: 取得幾何曲面上的點
 linktitle: 取得幾何曲面上的點
 second_title: Aspose.GIS .NET API
 description: 了解如何使用 Aspose.GIS for .NET 有效率地處理地理空間資料。包括逐步指南和常見問題。
-type: docs
 weight: 25
 url: /zh-hant/net/geometry-analysis/get-point-on-geometry-surface/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 取得幾何曲面上的點
+
 ## 介紹
 在本教程中，我們將探索如何使用 Aspose.GIS for .NET 處理幾何圖形並擷取其表面上的點。 Aspose.GIS 是一個功能強大的函式庫，為 .NET 應用程式中的地理空間資料處理、操作和視覺化提供各種功能。
 ## 先決條件
@@ -66,3 +72,9 @@ Console.WriteLine(polygon.SpatiallyContains(pointOnSurface)); //真的
 是的，您可以從以下位置取得 Aspose.GIS 的臨時許可證[這裡](https://purchase.aspose.com/temporary-license/).
 ### 哪裡可以購買 Aspose.GIS？
 您可以從購買頁面購買Aspose.GIS[這裡](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

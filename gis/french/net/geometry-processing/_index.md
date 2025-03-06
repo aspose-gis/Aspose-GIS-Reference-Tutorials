@@ -3,10 +3,16 @@ title: Traitement de la géométrie
 linktitle: Traitement de la géométrie
 second_title: API Aspose.GIS .NET
 description: Maîtrisez Aspose.GIS pour .NET avec nos didacticiels complets. Apprenez le traitement précis de la géométrie, l'analyse spatiale et la manipulation des données pour un développement SIG optimal.
-type: docs
 weight: 23
 url: /fr/net/geometry-processing/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Traitement de la géométrie
+
 ## Introduction
 
 Libérez tout le potentiel d’Aspose.GIS pour .NET avec nos didacticiels approfondis sur le traitement de la géométrie. Que vous parcouriez des géométries, des points ou que vous gériez la précision, nos guides étape par étape garantissent une intégration transparente dans vos applications .NET.
@@ -81,3 +87,9 @@ Apprenez à traduire la géométrie à partir d'un texte connu à l'aide d'Aspos
 Découvrez comment traduire la géométrie au format Well-Known Binary (WKB) dans les applications .NET à l'aide d'Aspose.GIS pour une gestion transparente des données spatiales.
 ### [Convertir la géométrie au format WKT avec Aspose.GIS pour .NET](./translate-geometry-to-wkt/)
 Découvrez comment traduire des géométries spatiales au format Well-Known Text (WKT) à l'aide d'Aspose.GIS pour .NET. Boostez vos compétences en développement SIG.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

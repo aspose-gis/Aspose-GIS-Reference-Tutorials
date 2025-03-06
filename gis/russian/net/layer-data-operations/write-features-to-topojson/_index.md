@@ -3,10 +3,16 @@ title: Запись функций в TopoJSON
 linktitle: Запись функций в TopoJSON
 second_title: API Aspose.GIS .NET
 description: Освойте написание функций TopoJSON с помощью Aspose.GIS для .NET. Следуйте нашему пошаговому руководству. Повысьте уровень своих ГИС-приложений.
-type: docs
 weight: 24
 url: /ru/net/layer-data-operations/write-features-to-topojson/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Запись функций в TopoJSON
+
 ## Введение
 В сфере разработки географических информационных систем (ГИС) Aspose.GIS for .NET выделяется как мощный набор инструментов, предлагающий множество функций для управления пространственными данными. Среди множества возможностей это руководство сосредоточено на конкретной задаче: написании объектов в формате TopoJSON с использованием Aspose.GIS для .NET. Если вы хотите улучшить свои ГИС-приложения с помощью поддержки TopoJSON, следуйте инструкциям, чтобы найти пошаговое руководство.
 ## Предварительные условия
@@ -72,3 +78,9 @@ layer.Add(feature1);
  А: Отправляйтесь в[Форум Aspose.GIS](https://forum.aspose.com/c/gis/33) за поддержку сообщества и обсуждения.
 ### Вопрос: Как я могу получить временную лицензию на Aspose.GIS?
  О: Вы можете получить временную лицензию[здесь](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

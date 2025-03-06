@@ -3,10 +3,16 @@ title: SRS를 사용하여 벡터 레이어 만들기
 linktitle: SRS를 사용하여 벡터 레이어 만들기
 second_title: Aspose.GIS .NET API
 description: 원활한 GIS 통합의 핵심인 .NET용 Aspose.GIS를 살펴보세요. 지정된 공간 참조 시스템을 사용하여 벡터 레이어를 쉽게 생성할 수 있습니다. 지금 다운로드하세요!
-type: docs
 weight: 13
 url: /ko/net/layer-management/create-vector-layer-with-srs/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# SRS를 사용하여 벡터 레이어 만들기
+
 ## 소개
 Aspose.GIS for .NET은 개발자가 .NET 애플리케이션에서 GIS(지리 정보 시스템) 데이터를 원활하게 사용할 수 있게 해주는 강력한 라이브러리입니다. 이 튜토리얼에서는 공간 참조 시스템(SRS)을 사용하여 벡터 레이어를 생성하는 방법에 중점을 둘 것입니다. 이 가이드가 끝나면 GIS 기능을 .NET 프로젝트에 쉽게 통합할 수 있게 됩니다.
 ## 전제조건
@@ -90,3 +96,9 @@ Aspose.GIS 덕분에 GIS 기능을 .NET 애플리케이션에 통합하는 것�
  예, 무료 평가판을 통해 Aspose.GIS의 기능을 탐색할 수 있습니다[여기](https://releases.aspose.com/).
 ### Aspose.GIS 라이선스는 어떻게 구매할 수 있나요?
  라이센스를 구입하려면 다음을 방문하십시오.[구매 페이지](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

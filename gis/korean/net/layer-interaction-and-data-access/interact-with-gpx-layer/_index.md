@@ -3,10 +3,16 @@ title: GPX 레이어와 상호작용
 linktitle: GPX 레이어와 상호작용
 second_title: Aspose.GIS .NET API
 description: .NET용 Aspose.GIS를 탐색하고 GPX 레이어와 손쉽게 상호 작용하세요. 라이브러리를 다운로드하고 무료 평가판을 사용해 보고 지리공간 애플리케이션을 향상시키세요!
-type: docs
 weight: 16
 url: /ko/net/layer-interaction-and-data-access/interact-with-gpx-layer/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# GPX 레이어와 상호작용
+
 ## 소개
 지리공간 애플리케이션을 한 단계 더 발전시킬 준비가 되셨나요? .NET용 Aspose.GIS는 GIS(지리 정보 시스템) 데이터를 원활하게 작업할 수 있는 강력한 도구 세트를 제공합니다. 이 튜토리얼에서는 Aspose.GIS for .NET을 사용하여 GPX(GPS Exchange Format) 레이어와 상호 작용하는 과정을 안내합니다. 숙련된 개발자이든 이제 막 GIS를 시작하는 개발자이든 이 단계별 가이드는 이 강력한 라이브러리의 기능을 활용하는 데 도움이 될 것입니다.
 ## 전제조건
@@ -78,3 +84,9 @@ using (var layer = Drivers.Gpx.OpenLayer(dataDir + "schiehallion.gpx"))
  네, 임시 면허를 취득하실 수 있습니다[여기](https://purchase.aspose.com/temporary-license/).
 ### .NET용 Aspose.GIS를 어떻게 구매할 수 있나요?
  Aspose.GIS를 구입할 수 있습니다.[여기](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Aspose.GIS を使用して .NET でジオメトリの長さを計算す�
 linktitle: ジオメトリの長さの取得
 second_title: Aspose.GIS .NET API
 description: 空間データを効率的に処理するために、Aspose.GIS を使用して .NET でジオメトリの長さを計算する方法を学びます。コード例を含むステップバイステップのガイド。
-type: docs
 weight: 24
 url: /ja/net/geometry-analysis/get-geometry-length/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS を使用して .NET でジオメトリの長さを計算する
+
 ## 導入
 .NET 開発の分野では、Aspose.GIS は地理情報システム (GIS) を処理するための強力な機能を提供する堅牢なツールキットとして優れています。経験豊富な開発者であっても、GIS プログラミングの世界に足を踏み入れたばかりであっても、Aspose.GIS for .NET は空間データを効率的に操作するための包括的なツール セットを提供します。このチュートリアルでは、GIS 開発の基本的なタスクの 1 つであるジオメトリの長さの計算について詳しく説明します。 Aspose.GIS for .NET を使用してこれを実現する方法を段階的に検討し、理解を容易にするためにプロセスを管理可能なチャンクに分割します。
 ## 前提条件
@@ -74,3 +80,9 @@ A: Aspose.GIS for .NET は、.NET Framework 4.6.1 以降のバージョンと互
  A: 一時ライセンスは以下から取得できます。[ここ](https://purchase.aspose.com/temporary-license/).
 ### Q: ジオメトリの長さ計算の出力形式をカスタマイズできますか?
 A: はい、Aspose.GIS for .NET には、要件に応じて出力形式をカスタマイズするためのさまざまな形式設定オプションが用意されています。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

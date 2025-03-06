@@ -3,10 +3,16 @@ title: 기하학 생성
 linktitle: 기하학 생성
 second_title: Aspose.GIS .NET API
 description: .NET용 Aspose.GIS를 사용하여 지리공간 데이터 조작의 잠재력을 활용해 보세요. 형상 생성, 변환 및 분석을 다루는 튜토리얼을 살펴보세요.
-type: docs
 weight: 21
 url: /ko/net/geometry-creation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 기하학 생성
+
 
 ## 소개
 
@@ -105,3 +111,9 @@ Aspose.GIS를 사용하여 .NET에서 MultiCurve 형상 생성을 마스터하�
 .NET용 Aspose.GIS를 활용하여 지리적 데이터를 손쉽게 조작하는 방법을 알아보세요. 포괄적인 튜토리얼을 이용할 수 있습니다.
 ### [Aspose.GIS를 사용한 좌표 변환](./convert-coordinates/)
 .NET용 Aspose.GIS를 사용하여 좌표를 변환하는 방법을 알아보세요. 단계별 가이드, 전제 조건 및 FAQ가 제공됩니다.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

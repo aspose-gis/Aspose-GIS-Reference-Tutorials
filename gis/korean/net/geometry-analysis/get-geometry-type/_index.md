@@ -3,10 +3,16 @@ title: .NET용 Aspose.GIS를 사용하여 형상 유형 가져오기
 linktitle: 기하학 유형 가져오기
 second_title: Aspose.GIS .NET API
 description: .NET용 Aspose.GIS의 강력한 기능을 알아보세요. 이 포괄적인 튜토리얼을 통해 .NET 프로젝트에서 공간 데이터를 효율적으로 처리하는 방법을 알아보세요.
-type: docs
 weight: 23
 url: /ko/net/geometry-analysis/get-geometry-type/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# .NET용 Aspose.GIS를 사용하여 형상 유형 가져오기
+
 ## 소개
 .NET 개발 영역에서 Aspose.GIS는 지리 정보를 처리하는 강력한 도구 역할을 합니다. 풍부한 기능으로 인해 공간 데이터를 작업하는 개발자가 선택하게 됩니다. 이 튜토리얼에서는 .NET용 Aspose.GIS의 기본 사항을 자세히 살펴보고, 주요 개념을 분석하고, 쉽게 시작할 수 있도록 단계별 지침을 제공합니다.
 ## 전제조건
@@ -63,3 +69,9 @@ Console.WriteLine(geometryType); // 가리키다
  임시 라이선스 옵션을 보려면 다음을 방문하세요.[임시 면허증](https://purchase.aspose.com/temporary-license/) 페이지.
 ### 내 프로젝트를 위해 Aspose.GIS를 어디에서 구입할 수 있나요?
  구매페이지에서 Aspose.GIS를 구매하실 수 있습니다.[여기](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Controleer geometrieën die elkaar raken
 linktitle: Controleer geometrieën die elkaar raken
 second_title: Aspose.GIS .NET-API
 description: Ontgrendel de kracht van de verwerking van ruimtelijke gegevens met Aspose.GIS voor .NET. Integreer ruimtelijke functionaliteiten naadloos in uw toepassingen met deze veelzijdige toolkit.
-type: docs
 weight: 13
 url: /nl/net/geometry-analysis/check-geometries-touching/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Controleer geometrieën die elkaar raken
+
 ## Invoering
 Op het gebied van geografische informatiesystemen (GIS) onderscheidt Aspose.GIS voor .NET zich als een krachtig hulpmiddel voor ontwikkelaars die ruimtelijke functionaliteiten naadloos in hun applicaties willen integreren. Met zijn robuuste functies en gebruiksvriendelijke interface stelt Aspose.GIS ontwikkelaars in staat moeiteloos met ruimtelijke gegevens te werken, of het nu gaat om het analyseren, visualiseren of manipuleren van geometrieën.
 ## Vereisten
@@ -64,3 +70,9 @@ Aspose.GIS ondersteunt verschillende .NET-frameworks, waaronder .NET Framework, 
 Aspose.GIS ontvangt regelmatig updates en verbeteringen om compatibiliteit met de nieuwste technologieën te garanderen en eventuele gemelde problemen op te lossen.
 ### Kan ik een tijdelijke licentie krijgen voor Aspose.GIS?
  Ja, u kunt een tijdelijke licentie verkrijgen via[hier](https://purchase.aspose.com/temporary-license/) om de mogelijkheden van Aspose.GIS in uw ontwikkelomgeving te evalueren.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

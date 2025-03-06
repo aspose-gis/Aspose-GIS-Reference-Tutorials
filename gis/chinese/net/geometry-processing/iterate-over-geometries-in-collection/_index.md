@@ -3,10 +3,16 @@ title: 迭代集合中的几何图形
 linktitle: 迭代集合中的几何图形
 second_title: Aspose.GIS .NET API
 description: 了解如何利用 Aspose.GIS for .NET 在 .NET 应用程序中无缝操作地理空间数据。
-type: docs
 weight: 10
 url: /zh/net/geometry-processing/iterate-over-geometries-in-collection/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 迭代集合中的几何图形
+
 ## 介绍
 在地理空间数据处理和分析领域，Aspose.GIS for .NET 作为一个强大的工具集出现，使开发人员能够在 .NET 应用程序中无缝地操作、可视化和处理地理信息。本文是有效利用 Aspose.GIS for .NET 的综合指南，适合新手和经验丰富的开发人员。
 ## 先决条件
@@ -81,3 +87,9 @@ foreach (Geometry geometry in geometryCollection)
 答：确实，Aspose.GIS 文档提供了全面的示例项目，以方便您的学习和开发过程。
 ### 问：我可以扩展 Aspose.GIS for .NET 的功能吗？
 答：当然，您可以通过集成自定义模块并利用提供的可扩展性功能来扩展 Aspose.GIS for .NET 的功能。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

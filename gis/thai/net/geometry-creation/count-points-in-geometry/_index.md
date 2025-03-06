@@ -3,10 +3,16 @@ title: นับคะแนนในเรขาคณิตด้วย Aspose
 linktitle: นับคะแนนในเรขาคณิต
 second_title: Aspose.GIS .NET API
 description: เรียนรู้วิธีใช้ Aspose.GIS สำหรับ .NET เพื่อจัดการข้อมูลทางภูมิศาสตร์ได้อย่างง่ายดาย มีบทช่วยสอนที่ครอบคลุม
-type: docs
 weight: 24
 url: /th/net/geometry-creation/count-points-in-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# นับคะแนนในเรขาคณิตด้วย Aspose.GIS สำหรับ .NET
+
 ## การแนะนำ
 ในขอบเขตของการพัฒนาระบบสารสนเทศทางภูมิศาสตร์ (GIS) Aspose.GIS สำหรับ .NET มีความโดดเด่นในฐานะชุดเครื่องมืออันทรงพลังสำหรับจัดการและประมวลผลข้อมูลทางภูมิศาสตร์ ไม่ว่าคุณจะเป็นนักพัฒนาที่มีประสบการณ์หรือเพียงแค่เจาะลึกโลกแห่งการเขียนโปรแกรม GIS การเรียนรู้ Aspose.GIS สามารถเปิดโอกาสมากมายให้กับโครงการของคุณ
 ## ข้อกำหนดเบื้องต้น
@@ -71,3 +77,9 @@ Console.WriteLine(pointsCount);  // 2
  ท่านสามารถเยี่ยมชมได้ที่[ฟอรัม Aspose.GIS](https://forum.aspose.com/c/gis/33) เพื่อขอความช่วยเหลือหรือถามคำถามจากชุมชน Aspose
 ### มีการทดลองใช้ฟรีสำหรับ Aspose.GIS สำหรับ .NET หรือไม่
  ใช่ คุณสามารถทดลองใช้ฟรีได้จาก[หน้าเผยแพร่ Aspose.GIS](https://releases.aspose.com/) เพื่อประเมินคุณสมบัติก่อนตัดสินใจซื้อ
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

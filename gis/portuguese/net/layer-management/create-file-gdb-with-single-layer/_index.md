@@ -3,10 +3,16 @@ title: Crie arquivo GDB com camada única
 linktitle: Crie arquivo GDB com camada única
 second_title: API Aspose.GIS .NET
 description: Desbloqueie o potencial do gerenciamento de dados geoespaciais em .NET com Aspose.GIS. Aprenda como criar bancos de dados geográficos de arquivos e camadas passo a passo. Baixe Agora!
-type: docs
 weight: 11
 url: /pt/net/layer-management/create-file-gdb-with-single-layer/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Crie arquivo GDB com camada única
+
 ## Introdução
 Você está pronto para elevar seus aplicativos geoespaciais com bancos de dados e camadas de arquivos robustos? Não procure mais, Aspose.GIS para .NET. Neste tutorial, orientaremos você no processo de criação de um File Geodatabase (GDB) com uma única camada usando Aspose.GIS for .NET. Aproveite o poder do gerenciamento e visualização de dados espaciais em seus aplicativos .NET sem esforço.
 ## Pré-requisitos
@@ -70,3 +76,9 @@ Sim, o Aspose.GIS for .NET pode ser perfeitamente integrado aos seus projetos .N
  Visite a[Fórum Aspose.GIS](https://forum.aspose.com/c/gis/33) para apoio e assistência comunitária.
 ### As licenças temporárias estão disponíveis para Aspose.GIS for .NET?
  Sim, você pode obter um[licença temporária](https://purchase.aspose.com/temporary-license/) para Aspose.GIS para .NET.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

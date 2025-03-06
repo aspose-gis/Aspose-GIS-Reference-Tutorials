@@ -3,10 +3,16 @@ title: حدد طول قيمة السمة
 linktitle: حدد طول قيمة السمة
 second_title: Aspose.GIS .NET API
 description: استكشف التطوير الجغرافي المكاني باستخدام Aspose.GIS for .NET. يمكنك إدارة البيانات المكانية ومعالجتها بسهولة في تطبيقات .NET الخاصة بك.
-type: docs
 weight: 18
 url: /ar/net/layer-data-operations/specify-attribute-value-length/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# حدد طول قيمة السمة
+
 ## مقدمة
 مرحبًا بك في عالم Aspose.GIS for .NET - بوابتك إلى التطوير الجغرافي المكاني القوي والفعال! سيرشدك هذا البرنامج التعليمي الشامل خلال الخطوات الأساسية لاستخدام Aspose.GIS لإدارة البيانات الجغرافية المكانية بسهولة في تطبيقات .NET الخاصة بك. سواء كنت مطورًا متمرسًا أو وافدًا جديدًا إلى البرمجة الجغرافية المكانية، فقد تم تصميم هذا الدليل لتزويدك بأساس متين ورؤى عملية.
 ## المتطلبات الأساسية
@@ -61,3 +67,9 @@ layer.Add(feature);
  ج: قم بشراء الترخيص الخاص بك[هنا](https://purchase.aspose.com/buy).
 ### س: أين يمكنني الوصول إلى الوثائق الخاصة بـ Aspose.GIS for .NET؟
  ج: راجع[توثيق](https://reference.aspose.com/gis/net/) للحصول على إرشادات شاملة.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: إنشاء هندسة متعددة المضلعات باستخدام Aspo
 linktitle: إنشاء هندسة متعددة المضلعات
 second_title: Aspose.GIS .NET API
 description: تعرف على كيفية إنشاء هندسة MultiPolygon باستخدام Aspose.GIS لـ .NET. دليل خطوة بخطوة للمبتدئين. النسخة التجريبية المجانية متاحة.
-type: docs
 weight: 16
 url: /ar/net/geometry-creation/create-multipolygon-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# إنشاء هندسة متعددة المضلعات باستخدام Aspose.GIS
+
 ## مقدمة
 في عالم تطوير نظم المعلومات الجغرافية (GIS)، يبرز Aspose.GIS for .NET كأداة قوية لإنشاء البيانات الجغرافية المكانية وتحريرها وتحليلها. سواء كنت مطورًا متمرسًا أو بدأت للتو، فإن إتقان Aspose.GIS يمكن أن يفتح لك عالمًا من الإمكانيات لمشاريعك.
 ## المتطلبات الأساسية
@@ -66,3 +72,9 @@ multiPolygon.Add(secondPolygon);
  نعم يمكنك الحصول على ترخيص مؤقت من[هنا](https://purchase.aspose.com/temporary-license/) لأغراض التقييم.
 ### هل يمكنني شراء Aspose.GIS مباشرة؟
  نعم، يمكنك شراء Aspose.GIS من الموقع[هنا](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: تحقق من الهندسة تغطي آخر
 linktitle: تحقق من الهندسة تغطي آخر
 second_title: Aspose.GIS .NET API
 description: تعرف على كيفية استخدام Aspose.GIS for .NET للعمل بكفاءة مع البيانات الجغرافية، وتحليل المعلومات المكانية، ودمج ميزات رسم الخرائط في تطبيقات .NET الخاصة بك.
-type: docs
 weight: 15
 url: /ar/net/geometry-analysis/check-geometry-covers-another/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# تحقق من الهندسة تغطي آخر
+
 ## مقدمة
 Aspose.GIS for .NET هي مكتبة قوية توفر للمطورين أدوات للعمل بكفاءة مع البيانات الجغرافية ضمن تطبيقات .NET الخاصة بهم. سواء كنت تقوم بإنشاء تطبيق رسم خرائط، أو تحليل البيانات المكانية، أو دمج الميزات الجغرافية في برنامجك، فإن Aspose.GIS يقدم مجموعة شاملة من الوظائف لتبسيط عملية التطوير الخاصة بك.
 ## المتطلبات الأساسية
@@ -74,3 +80,9 @@ Console.WriteLine(point.CoveredBy(line)); // حقيقي
 Aspose.GIS for .NET هي مكتبة خاصة تم تطويرها بواسطة Aspose، لذا لا يتم قبول المساهمات من المطورين الخارجيين. ومع ذلك، يمكنك تقديم الملاحظات والاقتراحات لتحسين المكتبة.
 ### ما مدى تكرار إصدار التحديثات لـ Aspose.GIS لـ .NET؟
  يتم إصدار تحديثات Aspose.GIS لـ .NET بانتظام لتقديم ميزات وتحسينات جديدة وإصلاحات للأخطاء. افحص ال[موقع إلكتروني](https://releases.aspose.com/gis/net/) لأحدث الإصدارات.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

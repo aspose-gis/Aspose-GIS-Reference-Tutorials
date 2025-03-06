@@ -3,10 +3,16 @@ title: Iterar sobre geometrías en la colección
 linktitle: Iterar sobre geometrías en la colección
 second_title: Aspose.GIS API .NET
 description: Aprenda a utilizar Aspose.GIS para .NET para manipular datos geoespaciales sin problemas dentro de sus aplicaciones .NET.
-type: docs
 weight: 10
 url: /es/net/geometry-processing/iterate-over-geometries-in-collection/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Iterar sobre geometrías en la colección
+
 ## Introducción
 En el ámbito del manejo y análisis de datos geoespaciales, Aspose.GIS para .NET surge como un poderoso conjunto de herramientas que permite a los desarrolladores manipular, visualizar y procesar información geográfica sin problemas dentro de las aplicaciones .NET. Este artículo sirve como una guía completa para aprovechar Aspose.GIS para .NET de manera efectiva, tanto para desarrolladores novatos como experimentados.
 ## Requisitos previos
@@ -81,3 +87,9 @@ R: Sí, Aspose.GIS para .NET es compatible con varios entornos .NET, incluidos .
 R: De hecho, la documentación de Aspose.GIS proporciona proyectos de muestra completos para facilitar su proceso de aprendizaje y desarrollo.
 ### P: ¿Puedo ampliar las funcionalidades de Aspose.GIS para .NET?
 R: Por supuesto, puede ampliar las funcionalidades de Aspose.GIS para .NET integrando módulos personalizados y aprovechando las funciones de extensibilidad proporcionadas.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

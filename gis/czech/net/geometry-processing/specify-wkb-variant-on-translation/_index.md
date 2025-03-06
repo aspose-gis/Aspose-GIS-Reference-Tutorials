@@ -3,10 +3,16 @@ title: Zadejte variantu WKB na překladu v Aspose.GIS pro .NET
 linktitle: Při překladu zadejte variantu WKB
 second_title: Aspose.GIS .NET API
 description: Naučte se, jak snadno specifikovat varianty WKB v Aspose.GIS pro .NET pomocí tohoto komplexního průvodce. Zvyšte své dovednosti v oblasti vývoje GIS.
-type: docs
 weight: 18
 url: /cs/net/geometry-processing/specify-wkb-variant-on-translation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Zadejte variantu WKB na překladu v Aspose.GIS pro .NET
+
 ## Úvod
 V oblasti vývoje geografických informačních systémů (GIS) vyniká Aspose.GIS for .NET jako výkonná sada nástrojů. Jeho všestrannost a efektivita z něj činí oblíbenou volbu pro vývojáře, kteří chtějí bezproblémově integrovat funkce GIS do svých aplikací .NET. Tento článek slouží jako komplexní průvodce pro využití Aspose.GIS pro .NET, konkrétně se zaměřuje na specifikaci variant WKB (Well-Known Binary) během procesů překladu.
 ## Předpoklady
@@ -62,3 +68,9 @@ Aspose.GIS for .NET je navržen tak, aby byl kompatibilní s různými verzemi .
  Dočasnou licenci můžete získat na adrese[dočasná licenční stránka](https://purchase.aspose.com/temporary-license/) a postupujte podle poskytnutých pokynů.
 ### Kde si mohu zakoupit licenci pro Aspose.GIS pro .NET?
  Licenci pro Aspose.GIS pro .NET si můžete zakoupit na nákupní stránce na adrese[tento odkaz](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

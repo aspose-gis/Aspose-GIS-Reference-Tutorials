@@ -3,10 +3,16 @@ title: Извлечение объектов в GeoJSON
 linktitle: Извлечение объектов в GeoJSON
 second_title: API Aspose.GIS .NET
 description: Изучите пошаговое руководство по использованию Aspose.GIS for .NET для извлечения объектов в GeoJSON. Используйте возможности ГИС с легкостью! #Aspose #ГИС
-type: docs
 weight: 23
 url: /ru/net/layer-management/extract-features-to-geojson/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Извлечение объектов в GeoJSON
+
 ## Введение
 Добро пожаловать в наше пошаговое руководство по извлечению объектов в GeoJSON с использованием Aspose.GIS для .NET! Независимо от того, являетесь ли вы опытным разработчиком или только начинаете свой путь в программировании ГИС, это руководство проведет вас через весь процесс, гарантируя, что вы используете всю мощь Aspose.GIS для .NET.
 ## Предварительные условия
@@ -87,3 +93,9 @@ outputLayer.Add(outputFeature);
  Да, вы можете найти бесплатную пробную версию[здесь](https://releases.aspose.com/).
 ### Вопрос: Где я могу приобрести Aspose.GIS для .NET?
  Вы можете купить товар[здесь](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

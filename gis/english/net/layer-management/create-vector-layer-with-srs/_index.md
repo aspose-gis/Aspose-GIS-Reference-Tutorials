@@ -3,10 +3,16 @@ title: Create Vector Layer with SRS
 linktitle: Create Vector Layer with SRS
 second_title: Aspose.GIS .NET API
 description: Explore Aspose.GIS for .NET - your key to seamless GIS integration. Create vector layers effortlessly with specified spatial reference systems. Download now!
-type: docs
 weight: 13
 url: /net/layer-management/create-vector-layer-with-srs/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Create Vector Layer with SRS
+
 ## Introduction
 Aspose.GIS for .NET is a powerful library that enables developers to work with geographic information system (GIS) data seamlessly in .NET applications. In this tutorial, we'll focus on creating a vector layer with a spatial reference system (SRS). By the end of this guide, you'll be able to effortlessly integrate GIS capabilities into your .NET projects.
 ## Prerequisites
@@ -90,3 +96,10 @@ You can find a helpful community at the [Aspose.GIS forum](https://forum.aspose.
 Yes, you can explore the features of Aspose.GIS by obtaining a free trial [here](https://releases.aspose.com/).
 ### How can I purchase a license for Aspose.GIS?
 To purchase a license, visit the [purchase page](https://purchase.aspose.com/buy).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -1,12 +1,17 @@
 ---
 title: Aspose.GIS for .NET 的綜合教學與範例
 linktitle: Aspose.GIS for .NET 教學課程
-type: docs
 weight: 10
 url: /zh-hant/net/
 description: 透過綜合教學了解 Aspose.GIS for .NET 的強大功能。掌握地理資料轉換、幾何創建、分析、圖層管理等。
-is_root: true
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS for .NET 的綜合教學與範例
+
 
 ## 介紹
 
@@ -94,3 +99,10 @@ is_root: true
 了解使用 Aspose.GIS for .NET 進行圖層資料操作的綜合教學。學習讀取、操作和視覺化地理空間資料。
 ### [地圖渲染](./map-rendering/)
 使用 Aspose.GIS for .NET 釋放地理空間資料視覺化的潛力。輕鬆匯入 SLD、標記要素並渲染令人驚嘆的地圖。立即探索！
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

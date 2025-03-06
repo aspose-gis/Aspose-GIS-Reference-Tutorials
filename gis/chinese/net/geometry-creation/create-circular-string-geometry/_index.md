@@ -3,10 +3,16 @@ title: 使用 Aspose.GIS for .NET 创建圆形字符串几何图形
 linktitle: 创建圆形字符串几何图形
 second_title: Aspose.GIS .NET API
 description: 使用 Aspose.GIS for .NET 释放 GIS 开发的力量。轻松创建、分析和可视化空间数据。
-type: docs
 weight: 20
 url: /zh/net/geometry-creation/create-circular-string-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.GIS for .NET 创建圆形字符串几何图形
+
 ## 介绍
 在地理信息系统 (GIS) 开发领域，Aspose.GIS for .NET 成为一种强大的工具，为开发人员提供了一个强大的框架来轻松处理空间数据。利用 Aspose.GIS 的功能，开发人员可以轻松地操作、分析和可视化地理数据，从而使他们能够制作复杂的 GIS 应用程序。
 ## 先决条件
@@ -80,3 +86,9 @@ layer.Add(feature);
 是的，您可以访问 Aspose.GIS 论坛[这里](https://forum.aspose.com/c/gis/33)寻求支持并与社区互动。
 ### 我可以获得临时许可证来评估 Aspose.GIS for .NET 吗？
 当然！您可以从以下位置获取用于评估目的的临时许可证：[这里](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: สร้างไฟล์ GDB ด้วย Single Layer
 linktitle: สร้างไฟล์ GDB ด้วย Single Layer
 second_title: Aspose.GIS .NET API
 description: ปลดล็อกศักยภาพของการจัดการข้อมูลเชิงพื้นที่ใน .NET ด้วย Aspose.GIS เรียนรู้วิธีสร้างฐานข้อมูลทางภูมิศาสตร์ของไฟล์และเลเยอร์ทีละขั้นตอน ดาวน์โหลดเดี๋ยวนี้!
-type: docs
 weight: 11
 url: /th/net/layer-management/create-file-gdb-with-single-layer/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# สร้างไฟล์ GDB ด้วย Single Layer
+
 ## การแนะนำ
 คุณพร้อมที่จะยกระดับแอปพลิเคชันเชิงพื้นที่ของคุณด้วยฐานข้อมูลทางภูมิศาสตร์และเลเยอร์ไฟล์ที่แข็งแกร่งแล้วหรือยัง? ไม่ต้องมองหาที่ไหนไกลนอกจาก Aspose.GIS สำหรับ .NET ในบทช่วยสอนนี้ เราจะแนะนำคุณตลอดขั้นตอนการสร้าง File Geodatabase (GDB) ด้วยเลเยอร์เดียวโดยใช้ Aspose.GIS สำหรับ .NET ควบคุมพลังของการจัดการข้อมูลเชิงพื้นที่และการแสดงภาพในแอปพลิเคชัน .NET ของคุณได้อย่างง่ายดาย
 ## ข้อกำหนดเบื้องต้น
@@ -70,3 +76,9 @@ using (var layer = dataset.OpenLayer("layer"))
  เยี่ยมชม[ฟอรัม Aspose.GIS](https://forum.aspose.com/c/gis/33) สำหรับการสนับสนุนและช่วยเหลือชุมชน
 ### มีใบอนุญาตชั่วคราวสำหรับ Aspose.GIS สำหรับ .NET หรือไม่
  ใช่ คุณสามารถได้รับ[ใบอนุญาตชั่วคราว](https://purchase.aspose.com/temporary-license/) สำหรับ Aspose.GIS สำหรับ .NET
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

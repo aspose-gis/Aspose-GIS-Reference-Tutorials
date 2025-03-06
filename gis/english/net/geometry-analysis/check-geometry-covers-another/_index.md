@@ -3,10 +3,16 @@ title: Check Geometry Covers Another
 linktitle: Check Geometry Covers Another
 second_title: Aspose.GIS .NET API
 description: Learn how to utilize Aspose.GIS for .NET to efficiently work with geographical data, analyze spatial information, and integrate mapping features into your .NET applications.
-type: docs
 weight: 15
 url: /net/geometry-analysis/check-geometry-covers-another/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Check Geometry Covers Another
+
 ## Introduction
 Aspose.GIS for .NET is a powerful library that provides developers with tools to efficiently work with geographical data within their .NET applications. Whether you're building a mapping application, analyzing spatial data, or integrating geographical features into your software, Aspose.GIS offers a comprehensive set of functionalities to streamline your development process.
 ## Prerequisites
@@ -74,3 +80,10 @@ Yes, Aspose.GIS for .NET supports a wide range of GIS formats including Shapefil
 Aspose.GIS for .NET is a proprietary library developed by Aspose, so contributions from external developers are not accepted. However, you can provide feedback and suggestions to improve the library.
 ### How often are updates released for Aspose.GIS for .NET?
 Updates for Aspose.GIS for .NET are released regularly to introduce new features, enhancements, and bug fixes. Check the [website](https://releases.aspose.com/gis/net/) for the latest releases.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

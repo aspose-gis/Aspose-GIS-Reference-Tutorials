@@ -3,10 +3,16 @@ title: إنشاء ملف شكل جديد
 linktitle: إنشاء ملف شكل جديد
 second_title: Aspose.GIS .NET API
 description: تعرف على كيفية إنشاء ملف شكل جديد باستخدام Aspose.GIS for .NET. اتبع دليلنا خطوة بخطوة واطلق العنان لقوة معالجة البيانات المكانية.
-type: docs
 weight: 12
 url: /ar/net/layer-management/create-new-shapefile/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# إنشاء ملف شكل جديد
+
 ## مقدمة
 إذا كنت تتعمق في تطوير أنظمة المعلومات الجغرافية (GIS) باستخدام .NET، فإن Aspose.GIS هو الحل الأمثل لك. تعمل هذه المكتبة القوية على تمكين المطورين من العمل بسلاسة مع البيانات المكانية، وفي هذا البرنامج التعليمي، سنرشدك خلال عملية إنشاء ملف شكل جديد باستخدام Aspose.GIS for .NET.
 ## المتطلبات الأساسية
@@ -80,3 +86,9 @@ layer.Add(thirdFeature);
  احصل على ترخيصك المؤقت[هنا](https://purchase.aspose.com/temporary-license/).
 ### س: أين يمكنني شراء Aspose.GIS لـ .NET؟
  يمكنك شراء المكتبة[هنا](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

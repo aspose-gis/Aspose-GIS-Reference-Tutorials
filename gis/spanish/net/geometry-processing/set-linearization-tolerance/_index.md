@@ -3,10 +3,16 @@ title: Establecer la tolerancia de linealización usando Aspose.GIS para .NET
 linktitle: Establecer tolerancia de linealización
 second_title: Aspose.GIS API .NET
 description: Domine Aspose.GIS para .NET para manejar datos geoespaciales sin esfuerzo. Siga este tutorial paso a paso y libere todo el potencial del desarrollo SIG en .NET.
-type: docs
 weight: 17
 url: /es/net/geometry-processing/set-linearization-tolerance/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Establecer la tolerancia de linealización usando Aspose.GIS para .NET
+
 ## Introducción
 En el mundo del desarrollo de sistemas de información geográfica (SIG), Aspose.GIS para .NET se destaca como un poderoso conjunto de herramientas para manejar datos espaciales con facilidad y eficiencia. Si es un desarrollador SIG experimentado o recién está comenzando, dominar Aspose.GIS puede mejorar significativamente su capacidad para trabajar con datos geoespaciales en entornos .NET.
 ## Requisitos previos
@@ -84,3 +90,9 @@ Sí, Aspose.GIS para .NET admite una amplia gama de formatos de datos SIG, inclu
 Sí, puede descargar una versión de prueba gratuita de Aspose.GIS para .NET desde el sitio web de Aspose.
 ### ¿Dónde puedo obtener soporte para Aspose.GIS para .NET?
 Puede obtener soporte para Aspose.GIS para .NET en los foros de Aspose. Visite el enlace de soporte proporcionado en la sección de recursos a continuación.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

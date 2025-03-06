@@ -3,10 +3,16 @@ title: ประสานงานการแปลงด้วย Aspose.GIS
 linktitle: แปลงพิกัด
 second_title: Aspose.GIS .NET API
 description: เรียนรู้วิธีแปลงพิกัดด้วย Aspose.GIS สำหรับ .NET มีคำแนะนำทีละขั้นตอน ข้อกำหนดเบื้องต้น และคำถามที่พบบ่อย
-type: docs
 weight: 25
 url: /th/net/geometry-creation/convert-coordinates/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# ประสานงานการแปลงด้วย Aspose.GIS
+
 ## การแนะนำ
 ในบทช่วยสอนนี้ เราจะเจาะลึกเข้าไปในโลกของระบบสารสนเทศทางภูมิศาสตร์ (GIS) โดยใช้ไลบรารี Aspose.GIS อันทรงพลังสำหรับ .NET Aspose.GIS เป็นชุดเครื่องมือที่ครอบคลุมที่ช่วยให้นักพัฒนาสามารถทำงานกับข้อมูลเชิงพื้นที่ได้อย่างง่ายดาย ไม่ว่าคุณจะเป็นนักพัฒนาที่มีประสบการณ์หรือเพิ่งเริ่มต้น บทช่วยสอนนี้จะแนะนำคุณตลอดกระบวนการใช้ Aspose.GIS เพื่อแปลงพิกัดอย่างมีประสิทธิภาพ
 ## ข้อกำหนดเบื้องต้น
@@ -66,3 +72,9 @@ Aspose.GIS มีเป้าหมายหลักคือนักพัฒ
  ใช่ สามารถรับใบอนุญาตชั่วคราวได้จาก[หน้าใบอนุญาตชั่วคราว](https://purchase.aspose.com/temporary-license/).
 ### ฉันจะซื้อ Aspose.GIS ได้ที่ไหน
  คุณสามารถซื้อ Aspose.GIS ได้จาก[หน้าซื้อ](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

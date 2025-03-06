@@ -3,10 +3,16 @@ title: Tuyến tính hóa một hình học
 linktitle: Tuyến tính hóa một hình học
 second_title: API Aspose.GIS .NET
 description: Tìm hiểu cách sử dụng Aspose.GIS cho .NET để làm việc hiệu quả với dữ liệu không gian địa lý, thực hiện phân tích không gian và thao tác địa lý trong các ứng dụng .NET của bạn.
-type: docs
 weight: 14
 url: /vi/net/geometry-processing/linearize-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Tuyến tính hóa một hình học
+
 ## Giới thiệu
 Aspose.GIS for .NET là một thư viện mạnh mẽ cho phép các nhà phát triển làm việc với dữ liệu không gian địa lý một cách hiệu quả trong các ứng dụng .NET. Cho dù bạn đang xây dựng một ứng dụng bản đồ, thực hiện phân tích không gian hay thao tác dữ liệu địa lý, Aspose.GIS đều cung cấp các công cụ bạn cần để hoàn thành công việc.
 ## Điều kiện tiên quyết
@@ -83,3 +89,9 @@ Có, Aspose.GIS cung cấp nhiều khả năng phân tích và hoạt động kh
  Có, bạn có thể tải xuống bản dùng thử miễn phí từ[trang web giả định](https://releases.aspose.com/).
 ### Câu hỏi: Tôi có thể tìm trợ giúp và hỗ trợ cho Aspose.GIS ở đâu?
  Bạn có thể ghé thăm[Diễn đàn Aspose.GIS](https://forum.aspose.com/c/gis/33) để nhận được sự hỗ trợ từ cộng đồng và nhân viên hỗ trợ của Aspose.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

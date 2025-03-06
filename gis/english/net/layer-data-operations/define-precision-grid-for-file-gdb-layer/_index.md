@@ -3,10 +3,16 @@ title: Define Precision Grid for File GDB Layer in Aspose.GIS
 linktitle: Define Precision Grid for File GDB Layer
 second_title: Aspose.GIS .NET API
 description: Learn how to define a precision grid for a File GDB layer using Aspose.GIS for .NET. Follow our step-by-step tutorial.
-type: docs
 weight: 21
 url: /net/layer-data-operations/define-precision-grid-for-file-gdb-layer/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Define Precision Grid for File GDB Layer in Aspose.GIS
+
 ## Introduction
 In this tutorial, we will explore how to define a precision grid for a File Geodatabase (GDB) layer using Aspose.GIS for .NET. Aspose.GIS is a powerful .NET library that provides comprehensive geospatial functionality to work with various GIS file formats.
 ## Prerequisites
@@ -88,3 +94,10 @@ Yes, you can perform spatial operations such as buffering, intersection, and dis
 Yes, Aspose.GIS for .NET provides support for coordinate transformations between different spatial reference systems.
 ### Is there a trial version available for Aspose.GIS for .NET?
 Yes, you can download a free trial version of Aspose.GIS for .NET from the [website](https://releases.aspose.com/gis/net/).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

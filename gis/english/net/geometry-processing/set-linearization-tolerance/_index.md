@@ -3,10 +3,16 @@ title: Set Linearization Tolerance using Aspose.GIS for .NET
 linktitle: Set Linearization Tolerance
 second_title: Aspose.GIS .NET API
 description: Master Aspose.GIS for .NET to handle geospatial data effortlessly. Follow this step-by-step tutorial and unlock the full potential of GIS development in .NET.
-type: docs
 weight: 17
 url: /net/geometry-processing/set-linearization-tolerance/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Set Linearization Tolerance using Aspose.GIS for .NET
+
 ## Introduction
 In the world of Geographic Information Systems (GIS) development, Aspose.GIS for .NET stands out as a powerful toolset for handling spatial data with ease and efficiency. Whether you're a seasoned GIS developer or just starting out, mastering Aspose.GIS can significantly enhance your ability to work with geospatial data in .NET environments.
 ## Prerequisites
@@ -84,3 +90,10 @@ Yes, Aspose.GIS for .NET supports a wide range of GIS data formats, including Ge
 Yes, you can download a free trial version of Aspose.GIS for .NET from the Aspose website.
 ### Where can I get support for Aspose.GIS for .NET?
 You can get support for Aspose.GIS for .NET from the Aspose forums. Visit the support link provided in the resources section below.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

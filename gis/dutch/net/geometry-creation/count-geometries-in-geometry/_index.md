@@ -3,10 +3,16 @@ title: Tel geometrieën in geometrie met Aspose.GIS
 linktitle: Tel geometrieën in geometrie
 second_title: Aspose.GIS .NET-API
 description: Leer hoe u geometrieën in een geometrie kunt tellen met Aspose.GIS voor .NET. Stapsgewijze tutorial met codevoorbeelden voor ontwikkelaars.
-type: docs
 weight: 23
 url: /nl/net/geometry-creation/count-geometries-in-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Tel geometrieën in geometrie met Aspose.GIS
+
 ## Invoering
 Aspose.GIS voor .NET is een krachtig hulpmiddel voor ontwikkelaars die georuimtelijke functionaliteit willen opnemen in hun .NET-toepassingen. Of u nu kaartsoftware, locatiegebaseerde services of tools voor ruimtelijke analyse bouwt, Aspose.GIS biedt een uitgebreide reeks functies om aan uw behoeften te voldoen. In deze zelfstudie onderzoeken we hoe u geometrieën binnen een geometrie kunt tellen met behulp van Aspose.GIS voor .NET.
 ## Vereisten
@@ -70,3 +76,9 @@ Ja, Aspose.GIS voor .NET ondersteunt een breed scala aan GIS-bestandsindelingen,
  Ja, u kunt een gratis proefversie downloaden van de[website](https://releases.aspose.com/).
 ### Waar kan ik ondersteuning vinden voor Aspose.GIS voor .NET?
  Ondersteuning vindt u op de[Aspose.GIS-forum](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

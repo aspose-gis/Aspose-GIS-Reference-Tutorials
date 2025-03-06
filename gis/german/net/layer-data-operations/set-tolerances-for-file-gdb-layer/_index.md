@@ -3,10 +3,16 @@ title: Legen Sie Toleranzen für die Datei-GDB-Ebene fest
 linktitle: Legen Sie Toleranzen für die Datei-GDB-Ebene fest
 second_title: Aspose.GIS .NET-API
 description: Entdecken Sie Aspose.GIS für .NET und meistern Sie die Manipulation von Geodaten. Legen Sie Toleranzen mühelos mit der Schritt-für-Schritt-Anleitung fest. Verbessern Sie Ihre .NET-Anwendungen.
-type: docs
 weight: 22
 url: /de/net/layer-data-operations/set-tolerances-for-file-gdb-layer/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Legen Sie Toleranzen für die Datei-GDB-Ebene fest
+
 ## Einführung
 Willkommen in der Welt der Geodatenmanipulation mit Aspose.GIS für .NET! Wenn Sie Ihre Fähigkeiten im Umgang mit geografischen Informationen in Ihren .NET-Anwendungen verbessern möchten, sind Sie hier richtig. In diesem umfassenden Leitfaden befassen wir uns mit den komplizierten Details des Festlegens von Toleranzen für eine File-Geodatabase-Ebene (GDB) und bieten Ihnen praktische Einblicke und Schritt-für-Schritt-Anleitungen.
 ## Voraussetzungen
@@ -69,3 +75,9 @@ Ja, Aspose.GIS unterstützt die Interoperabilität, sodass Sie es nahtlos in and
  Ja, Sie können eine erhalten[temporäre Lizenz](https://purchase.aspose.com/temporary-license/) zum Testen und Bewerten.
 ### Wo kann ich die Aspose.GIS für .NET-Lizenz erwerben?
  Sie können die Lizenz bei erwerben[Kaufseite](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

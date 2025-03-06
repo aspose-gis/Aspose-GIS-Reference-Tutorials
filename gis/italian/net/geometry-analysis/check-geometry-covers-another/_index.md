@@ -3,10 +3,16 @@ title: Controlla che la geometria copra un'altra
 linktitle: Controlla che la geometria copra un'altra
 second_title: API Aspose.GIS .NET
 description: Scopri come utilizzare Aspose.GIS per .NET per lavorare in modo efficiente con dati geografici, analizzare informazioni spaziali e integrare funzionalità di mappatura nelle tue applicazioni .NET.
-type: docs
 weight: 15
 url: /it/net/geometry-analysis/check-geometry-covers-another/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Controlla che la geometria copra un'altra
+
 ## introduzione
 Aspose.GIS per .NET è una potente libreria che fornisce agli sviluppatori strumenti per lavorare in modo efficiente con i dati geografici all'interno delle loro applicazioni .NET. Che tu stia creando un'applicazione di mappatura, analizzando dati spaziali o integrando caratteristiche geografiche nel tuo software, Aspose.GIS offre un set completo di funzionalità per semplificare il processo di sviluppo.
 ## Prerequisiti
@@ -74,3 +80,9 @@ Sì, Aspose.GIS per .NET supporta un'ampia gamma di formati GIS tra cui Shapefil
 Aspose.GIS per .NET è una libreria proprietaria sviluppata da Aspose, pertanto non sono accettati contributi di sviluppatori esterni. Tuttavia, puoi fornire feedback e suggerimenti per migliorare la libreria.
 ### Con quale frequenza vengono rilasciati gli aggiornamenti per Aspose.GIS per .NET?
  Gli aggiornamenti per Aspose.GIS per .NET vengono rilasciati regolarmente per introdurre nuove funzionalità, miglioramenti e correzioni di bug. Controlla il[sito web](https://releases.aspose.com/gis/net/) per le ultime uscite.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

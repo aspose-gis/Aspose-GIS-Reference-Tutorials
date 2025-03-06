@@ -3,10 +3,16 @@ title: Utwórz wielokąt z geometrią otworu za pomocą Aspose.GIS
 linktitle: Utwórz wielokąt z geometrią otworu
 second_title: Aspose.GIS .NET API
 description: Dowiedz się, jak utworzyć wielokąt z geometrią otworu przy użyciu Aspose.GIS dla .NET. Samouczek krok po kroku z przykładami kodu.
-type: docs
 weight: 13
 url: /pl/net/geometry-creation/create-polygon-with-hole-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Utwórz wielokąt z geometrią otworu za pomocą Aspose.GIS
+
 ## Wstęp
 W tym samouczku omówimy proces tworzenia wielokąta z geometrią otworu przy użyciu Aspose.GIS dla .NET. Aspose.GIS to potężna biblioteka, która umożliwia programistom pracę z danymi geoprzestrzennymi w aplikacjach .NET. 
 ## Warunki wstępne
@@ -66,3 +72,9 @@ Aspose.GIS to biblioteka .NET, która umożliwia programistom pracę z danymi ge
  Wsparcie dla Aspose.GIS znajdziesz na stronie[Forum Aspose.GIS](https://forum.aspose.com/c/gis/33).
 ### 5. Jak mogę uzyskać tymczasową licencję na Aspose.GIS?
  Tymczasową licencję na Aspose.GIS można uzyskać od[Tutaj](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

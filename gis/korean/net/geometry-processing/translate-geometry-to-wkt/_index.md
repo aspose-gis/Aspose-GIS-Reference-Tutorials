@@ -3,10 +3,16 @@ title: .NET용 Aspose.GIS를 사용하여 형상을 WKT 형식으로 변환
 linktitle: 기하학을 WKT로 변환
 second_title: Aspose.GIS .NET API
 description: .NET용 Aspose.GIS를 사용하여 공간 기하학을 WKT(Well-Known Text) 형식으로 변환하는 방법을 알아보세요. GIS 개발 기술을 향상시키세요.
-type: docs
 weight: 23
 url: /ko/net/geometry-processing/translate-geometry-to-wkt/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# .NET용 Aspose.GIS를 사용하여 형상을 WKT 형식으로 변환
+
 ## 소개
 GIS(지리 정보 시스템) 개발 세계에서 .NET용 Aspose.GIS는 공간 데이터를 관리하고 조작하기 위한 강력한 도구로 돋보입니다. 직관적인 API와 강력한 기능을 통해 개발자는 GIS 기능을 .NET 애플리케이션에 쉽게 통합할 수 있습니다. 그러한 기능 중 하나는 기하학을 WKT(Well-Known Text) 형식으로 변환하는 것입니다. 이 튜토리얼에서는 .NET용 Aspose.GIS를 사용하여 기하학을 WKT로 변환하는 과정을 자세히 살펴보겠습니다.
 ## 전제조건
@@ -55,3 +61,9 @@ A: 예, .NET용 Aspose.GIS는 WKB, GeoJSON, Shapefile 등 다양한 공간 형�
  A: 예, 다음 담당자에게 연락하실 수 있습니다.[.NET 포럼용 Aspose.GIS](https://forum.aspose.com/c/gis/33) 지원, 기능 요청 또는 문제 보고를 위해.
 ### Q: .NET용 Aspose.GIS 평가판이 있습니까?
  A: 예, .NET용 Aspose.GIS 무료 평가판에 액세스할 수 있습니다.[여기](https://releases.aspose.com/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

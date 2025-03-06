@@ -3,10 +3,16 @@ title: Định dạng raster dọc
 linktitle: Định dạng raster dọc
 second_title: API Aspose.GIS .NET
 description: Khám phá thế giới lập trình không gian địa lý với Aspose.GIS cho .NET. Tìm hiểu cách làm cong các định dạng raster từng bước để nâng cao trực quan hóa dữ liệu không gian.
-type: docs
 weight: 23
 url: /vi/net/layer-data-operations/warp-raster-formats/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Định dạng raster dọc
+
 ## Giới thiệu
 Chào mừng bạn đến với thế giới thú vị của lập trình không gian địa lý với Aspose.GIS cho .NET! Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn quy trình làm cong các định dạng raster bằng Aspose.GIS. Cho dù bạn là nhà phát triển dày dạn kinh nghiệm hay mới bắt đầu, hãy sẵn sàng khi chúng tôi đi sâu vào sự phức tạp của thao tác địa lý, mang đến cho dữ liệu không gian của bạn một góc nhìn hoàn toàn mới.
 ## Điều kiện tiên quyết
@@ -87,3 +93,9 @@ Aspose.GIS được thiết kế để xử lý dữ liệu tham chiếu địa 
  Có, bạn có thể khám phá các khả năng của Aspose.GIS bằng cách tải xuống bản dùng thử miễn phí[đây](https://releases.aspose.com/).
 ### Giấy phép tạm thời có sẵn cho Aspose.GIS không?
  Có, nếu bạn cần giấy phép tạm thời, bạn có thể lấy một giấy phép[đây](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

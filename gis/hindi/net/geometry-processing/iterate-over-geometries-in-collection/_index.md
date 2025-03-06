@@ -3,10 +3,16 @@ title: संग्रह में ज्यामितियों पर प
 linktitle: संग्रह में ज्यामितियों पर पुनरावृति
 second_title: Aspose.GIS .NET एपीआई
 description: अपने .NET अनुप्रयोगों के भीतर भू-स्थानिक डेटा में निर्बाध रूप से हेरफेर करने के लिए .NET के लिए Aspose.GIS का उपयोग करना सीखें।
-type: docs
 weight: 10
 url: /hi/net/geometry-processing/iterate-over-geometries-in-collection/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# संग्रह में ज्यामितियों पर पुनरावृति
+
 ## परिचय
 भू-स्थानिक डेटा प्रबंधन और विश्लेषण के क्षेत्र में, .NET के लिए Aspose.GIS एक शक्तिशाली टूलसेट के रूप में उभरता है, जो डेवलपर्स को .NET अनुप्रयोगों के भीतर भौगोलिक जानकारी में हेरफेर करने, कल्पना करने और संसाधित करने के लिए सशक्त बनाता है। यह आलेख नौसिखिए और अनुभवी डेवलपर्स दोनों के लिए समान रूप से .NET के लिए Aspose.GIS का प्रभावी ढंग से लाभ उठाने के लिए एक व्यापक मार्गदर्शिका के रूप में कार्य करता है।
 ## आवश्यक शर्तें
@@ -81,3 +87,9 @@ foreach (Geometry geometry in geometryCollection)
 उत्तर: वास्तव में, Aspose.GIS दस्तावेज़ आपके सीखने और विकास प्रक्रिया को सुविधाजनक बनाने के लिए व्यापक नमूना परियोजनाएँ प्रदान करता है।
 ### प्रश्न: क्या मैं Aspose.GIS की कार्यक्षमताओं को .NET के लिए बढ़ा सकता हूँ?
 उत्तर: बिल्कुल, आप कस्टम मॉड्यूल को एकीकृत करके और प्रदान की गई एक्स्टेंसिबिलिटी सुविधाओं का लाभ उठाकर .NET के लिए Aspose.GIS की कार्यक्षमता का विस्तार कर सकते हैं।
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

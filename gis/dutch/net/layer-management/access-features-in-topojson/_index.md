@@ -3,10 +3,16 @@ title: TopoJSON-functies ontgrendelen met Aspose.GIS voor .NET
 linktitle: Toegang tot functies in TopoJSON
 second_title: Aspose.GIS .NET-API
 description: Verken Aspose.GIS voor .NET en leer stap voor stap toegang te krijgen tot de TopoJSON-functies. Duik in de documentatie en ontketen moeiteloos geospatiale mogelijkheden.
-type: docs
 weight: 15
 url: /nl/net/layer-management/access-features-in-topojson/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# TopoJSON-functies ontgrendelen met Aspose.GIS voor .NET
+
 ## Invoering
 Aspose.GIS voor .NET is een krachtige bibliotheek waarmee ontwikkelaars moeiteloos met georuimtelijke gegevens kunnen werken. In deze zelfstudie gaan we in op de toegang tot functies in TopoJSON met behulp van Aspose.GIS voor .NET. TopoJSON is een formaat dat geografische kenmerken op een compacte en efficiënte manier weergeeft.
 ## Vereisten
@@ -67,3 +73,9 @@ Gefeliciteerd! U heeft met succes toegang gekregen tot functies in TopoJSON met 
 Ja, u krijgt toegang tot een gratis proefperiode[hier](https://releases.aspose.com/).
 ### Vraag: Hoe koop ik een licentie?
  Koop een licentie[hier](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

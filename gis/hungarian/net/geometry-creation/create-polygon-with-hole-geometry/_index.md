@@ -3,10 +3,16 @@ title: Hozzon létre sokszöget furatgeometriával az Aspose.GIS segítségével
 linktitle: Hozzon létre sokszöget furatgeometriával
 second_title: Aspose.GIS .NET API
 description: Ismerje meg, hogyan hozhat létre sokszöget furatgeometriával az Aspose.GIS for .NET használatával. Lépésről lépésre bemutató oktatóprogram kódpéldákkal.
-type: docs
 weight: 13
 url: /hu/net/geometry-creation/create-polygon-with-hole-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Hozzon létre sokszöget furatgeometriával az Aspose.GIS segítségével
+
 ## Bevezetés
 Ebben az oktatóanyagban egy lyukgeometriával rendelkező sokszög létrehozásának folyamatát mutatjuk be az Aspose.GIS for .NET használatával. Az Aspose.GIS egy hatékony könyvtár, amely lehetővé teszi a fejlesztők számára, hogy térinformatikai adatokkal dolgozzanak .NET-alkalmazásaikban. 
 ## Előfeltételek
@@ -66,3 +72,9 @@ Az Aspose.GIS egy .NET-könyvtár, amely lehetővé teszi a fejlesztők számár
  Az Aspose.GIS támogatását a következő oldalon találja meg[Aspose.GIS fórum](https://forum.aspose.com/c/gis/33).
 ### 5. Hogyan szerezhetek ideiglenes licencet az Aspose.GIS-hez?
  Ideiglenes licencet szerezhet az Aspose.GIS-hez innen[itt](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

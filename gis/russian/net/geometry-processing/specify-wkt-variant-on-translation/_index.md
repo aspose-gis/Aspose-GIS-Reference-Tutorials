@@ -3,10 +3,16 @@ title: Укажите вариант WKT для перевода с помощь
 linktitle: Укажите вариант WKT при переводе
 second_title: API Aspose.GIS .NET
 description: Узнайте, как указать варианты WKT в Aspose.GIS для .NET, чтобы эффективно управлять форматом и точностью представления пространственных данных.
-type: docs
 weight: 19
 url: /ru/net/geometry-processing/specify-wkt-variant-on-translation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Укажите вариант WKT для перевода с помощью Aspose.GIS
+
 ## Введение
 Aspose.GIS for .NET — это мощная библиотека, которая позволяет разработчикам легко работать с данными географической информационной системы (ГИС) в своих .NET-приложениях. Одной из важных функций, предоставляемых Aspose.GIS, является возможность указывать вариант хорошо известного текста (WKT) во время перевода, что позволяет пользователям контролировать формат и точность представления пространственных данных. В этом уроке мы рассмотрим, как шаг за шагом указывать варианты WKT, используя Aspose.GIS для .NET.
 ## Предварительные условия
@@ -66,3 +72,9 @@ Console.WriteLine("Flat3: " + point.AsText(WktVariant.Iso, NumericFormat.Flat(3)
  Да, вы можете скачать бесплатную пробную версию Aspose.GIS с сайта[здесь](https://releases.aspose.com/).
 ### Где я могу получить помощь или поддержку по Aspose.GIS?
  Вы можете опубликовать свои вопросы или обратиться за помощью к сообществу Aspose.GIS на странице[Форум](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

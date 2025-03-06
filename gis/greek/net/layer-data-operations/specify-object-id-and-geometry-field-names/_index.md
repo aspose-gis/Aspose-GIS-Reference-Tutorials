@@ -3,10 +3,16 @@ title: Καθορίστε τα ονόματα πεδίων ID αντικειμέ
 linktitle: Καθορίστε τα ονόματα πεδίων ID αντικειμένου και γεωμετρίας
 second_title: Aspose.GIS .NET API
 description: Εξερευνήστε τη μαγεία του GIS με το Aspose.GIS για .NET! Διαχειριστείτε τα γεωχωρικά δεδομένα χωρίς κόπο. Κάντε λήψη τώρα και απελευθερώστε τη δύναμη της χωρικής νοημοσύνης.
-type: docs
 weight: 20
 url: /el/net/layer-data-operations/specify-object-id-and-geometry-field-names/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Καθορίστε τα ονόματα πεδίων ID αντικειμένου και γεωμετρίας
+
 ## Εισαγωγή
 Ξεκινώντας ένα ταξίδι στη σφαίρα των Συστημάτων Γεωγραφικών Πληροφοριών (GIS) χρησιμοποιώντας το Aspose.GIS για .NET ανοίγει έναν κόσμο δυνατοτήτων τόσο για προγραμματιστές όσο και για λάτρεις. Αυτή η ισχυρή βιβλιοθήκη σάς δίνει τη δυνατότητα να χειρίζεστε τα γεωχωρικά δεδομένα χωρίς κόπο. Σε αυτό το σεμινάριο, θα σας καθοδηγήσουμε στη διαδικασία καθορισμού των ονομάτων πεδίων Object ID και Geometry, θέτοντας τα θεμέλια για τις προσπάθειές σας στο GIS.
 ## Προαπαιτούμενα
@@ -74,3 +80,9 @@ using (var layer = dataset.OpenLayer("layer_name"))
 Α: Το Aspose.GIS για .NET υποστηρίζει διάφορα χωρικά συστήματα αναφοράς, παρέχοντας ευελιξία για διαφορετικά γεωγραφικά σύνολα δεδομένων.
 ### Ε: Πού μπορώ να αναζητήσω βοήθεια ή να συζητήσω ερωτήματα που σχετίζονται με το Aspose.GIS;
  Α: Επισκεφθείτε το φόρουμ Aspose.GIS[εδώ](https://forum.aspose.com/c/gis/33) για υποστήριξη και συζητήσεις.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Få poäng på geometriytan
 linktitle: Få poäng på geometriytan
 second_title: Aspose.GIS .NET API
 description: Lär dig hur du arbetar med geospatial data effektivt med Aspose.GIS för .NET. Steg-för-steg-guide och vanliga frågor ingår.
-type: docs
 weight: 25
 url: /sv/net/geometry-analysis/get-point-on-geometry-surface/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Få poäng på geometriytan
+
 ## Introduktion
 I den här handledningen kommer vi att utforska hur man använder Aspose.GIS för .NET för att arbeta med geometrier och hämta punkter på deras ytor. Aspose.GIS är ett kraftfullt bibliotek som tillhandahåller olika funktioner för geospatial databehandling, manipulering och visualisering i .NET-applikationer.
 ## Förutsättningar
@@ -66,3 +72,9 @@ Ja, Aspose.GIS stöder olika .NET-ramverk, inklusive .NET Framework, .NET Core o
  Ja, du kan få tillfälliga licenser för Aspose.GIS från[här](https://purchase.aspose.com/temporary-license/).
 ### Var kan jag köpa Aspose.GIS?
  Du kan köpa Aspose.GIS från köpsidan[här](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

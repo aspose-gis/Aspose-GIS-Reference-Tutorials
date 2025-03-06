@@ -3,10 +3,16 @@ title: Buat Lapisan Vektor dengan SRS
 linktitle: Buat Lapisan Vektor dengan SRS
 second_title: Aspose.GIS .NET API
 description: Jelajahi Aspose.GIS untuk .NET - kunci Anda untuk integrasi GIS yang lancar. Buat lapisan vektor dengan mudah menggunakan sistem referensi spasial tertentu. Unduh sekarang!
-type: docs
 weight: 13
 url: /id/net/layer-management/create-vector-layer-with-srs/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Buat Lapisan Vektor dengan SRS
+
 ## Perkenalan
 Aspose.GIS untuk .NET adalah perpustakaan canggih yang memungkinkan pengembang bekerja dengan data sistem informasi geografis (GIS) secara lancar dalam aplikasi .NET. Dalam tutorial ini, kita akan fokus membuat lapisan vektor dengan sistem referensi spasial (SRS). Di akhir panduan ini, Anda akan dapat dengan mudah mengintegrasikan kemampuan GIS ke dalam proyek .NET Anda.
 ## Prasyarat
@@ -90,3 +96,9 @@ Sangat! Aspose.GIS untuk .NET serbaguna dan dapat digunakan dalam aplikasi web, 
  Ya, Anda dapat menjelajahi fitur Aspose.GIS dengan mendapatkan uji coba gratis[Di Sini](https://releases.aspose.com/).
 ### Bagaimana cara membeli lisensi Aspose.GIS?
  Untuk membeli lisensi, kunjungi[halaman pembelian](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

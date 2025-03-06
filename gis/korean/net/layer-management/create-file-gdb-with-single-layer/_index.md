@@ -3,10 +3,16 @@ title: 단일 레이어로 파일 GDB 생성
 linktitle: 단일 레이어로 파일 GDB 생성
 second_title: Aspose.GIS .NET API
 description: Aspose.GIS를 사용하여 .NET에서 지리공간 데이터 관리의 잠재력을 활용해 보세요. 파일 지리 데이터베이스 및 레이어를 생성하는 방법을 단계별로 알아보세요. 지금 다운로드하세요!
-type: docs
 weight: 11
 url: /ko/net/layer-management/create-file-gdb-with-single-layer/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 단일 레이어로 파일 GDB 생성
+
 ## 소개
 강력한 파일 지리 데이터베이스 및 레이어로 지리 공간 애플리케이션을 향상시킬 준비가 되셨습니까? .NET용 Aspose.GIS만 있으면 됩니다. 이 튜토리얼에서는 Aspose.GIS for .NET을 사용하여 단일 레이어로 파일 지리 데이터베이스(GDB)를 생성하는 과정을 안내합니다. .NET 애플리케이션에서 공간 데이터 관리 및 시각화 기능을 손쉽게 활용하세요.
 ## 전제조건
@@ -70,3 +76,9 @@ using (var layer = dataset.OpenLayer("layer"))
  방문하다[Aspose.GIS 포럼](https://forum.aspose.com/c/gis/33) 지역 사회 지원 및 지원을 위해.
 ### .NET용 Aspose.GIS에 임시 라이센스를 사용할 수 있습니까?
  예, 다음을 얻을 수 있습니다.[임시 면허증](https://purchase.aspose.com/temporary-license/) .NET용 Aspose.GIS용.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

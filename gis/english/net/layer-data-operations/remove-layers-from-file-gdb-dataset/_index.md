@@ -3,10 +3,16 @@ title: Remove Layers from File GDB Dataset
 linktitle: Remove Layers from File GDB Dataset
 second_title: Aspose.GIS .NET API
 description: Explore GIS with Aspose.GIS for .NET! Learn to remove layers from File GDB datasets step-by-step. Download now for a seamless spatial data experience.
-type: docs
 weight: 17
 url: /net/layer-data-operations/remove-layers-from-file-gdb-dataset/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Remove Layers from File GDB Dataset
+
 ## Introduction
 Unlock the full potential of Geographic Information Systems (GIS) with Aspose.GIS for .NET, a powerful toolkit designed to simplify spatial data manipulation and visualization. Whether you're a seasoned developer or a GIS enthusiast, this tutorial will guide you through the process of removing layers from a File Geodatabase (GDB) dataset using Aspose.GIS for .NET.
 ## Prerequisites
@@ -71,3 +77,10 @@ Visit the [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) for community su
 Yes, a temporary license can be purchased [here](https://purchase.aspose.com/temporary-license/).
 ### Are there any sample datasets available for practice?
 Explore the Aspose.GIS documentation for sample datasets and additional resources.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

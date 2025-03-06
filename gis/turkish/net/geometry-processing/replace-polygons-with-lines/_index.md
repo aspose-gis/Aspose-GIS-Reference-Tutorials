@@ -3,10 +3,16 @@ title: Aspose.GIS for .NET ile Çokgenleri Çizgilere Dönüştürün
 linktitle: Çokgenleri Çizgilerle Değiştirin
 second_title: Aspose.GIS .NET API'si
 description: Aspose.GIS for .NET kullanarak çokgenleri çizgilerle nasıl değiştireceğinizi öğrenin. CBS veri işleme becerilerinizi zahmetsizce geliştirin.
-type: docs
 weight: 16
 url: /tr/net/geometry-processing/replace-polygons-with-lines/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS for .NET ile Çokgenleri Çizgilere Dönüştürün
+
 ## giriiş
 Coğrafi Bilgi Sistemleri (GIS) geliştirme dünyasında Aspose.GIS for .NET, konumsal verilerle çalışmak için güçlü bir araç seti olarak öne çıkıyor. İster deneyimli bir geliştirici olun ister GIS programlama yolculuğunuza yeni başlıyor olun, Aspose.GIS for .NET, coğrafi verileri verimli bir şekilde işlemek ve analiz etmek için kapsamlı işlevler sunar.
 ## Önkoşullar
@@ -54,3 +60,9 @@ Evet, Aspose.GIS for .NET Shapefile, GeoJSON, KML ve daha fazlası gibi çeşitl
  Evet, adresinden geçici lisans alabilirsiniz.[Burada](https://purchase.aspose.com/temporary-license/).
 ### Aspose.GIS for .NET hem yeni başlayanlar hem de deneyimli geliştiriciler için uygun mu?
 Aspose.GIS for .NET kesinlikle her seviyeden geliştiriciye hitap ederek kapsamlı dokümantasyon ve destek sunar.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

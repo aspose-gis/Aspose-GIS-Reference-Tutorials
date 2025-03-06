@@ -3,10 +3,16 @@ title: حدد متغير WKT عند الترجمة باستخدام Aspose.GIS
 linktitle: حدد متغير WKT عند الترجمة
 second_title: Aspose.GIS .NET API
 description: تعرف على كيفية تحديد متغيرات WKT في Aspose.GIS لـ .NET للتحكم في تنسيق تمثيل البيانات المكانية ودقتها بشكل فعال.
-type: docs
 weight: 19
 url: /ar/net/geometry-processing/specify-wkt-variant-on-translation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# حدد متغير WKT عند الترجمة باستخدام Aspose.GIS
+
 ## مقدمة
 Aspose.GIS for .NET هي مكتبة قوية تتيح للمطورين العمل مع بيانات نظام المعلومات الجغرافية (GIS) في تطبيقات .NET الخاصة بهم دون عناء. إحدى الميزات الأساسية التي يوفرها Aspose.GIS هي القدرة على تحديد متغير النص المعروف (WKT) أثناء الترجمة، مما يمكّن المستخدمين من التحكم في تنسيق ودقة تمثيلات البيانات المكانية. في هذا البرنامج التعليمي، سنستكشف كيفية تحديد متغيرات WKT خطوة بخطوة باستخدام Aspose.GIS for .NET.
 ## المتطلبات الأساسية
@@ -66,3 +72,9 @@ Console.WriteLine("Flat3: " + point.AsText(WktVariant.Iso, NumericFormat.Flat(3)
  نعم، يمكنك تنزيل نسخة تجريبية مجانية من Aspose.GIS من[هنا](https://releases.aspose.com/).
 ### أين يمكنني الحصول على المساعدة أو الدعم لـ Aspose.GIS؟
  يمكنك نشر استفساراتك أو طلب المساعدة من مجتمع Aspose.GIS على[المنتدى](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

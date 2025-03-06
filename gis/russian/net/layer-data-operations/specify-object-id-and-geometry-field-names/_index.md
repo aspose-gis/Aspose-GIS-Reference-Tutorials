@@ -3,10 +3,16 @@ title: Укажите идентификатор объекта и имена п
 linktitle: Укажите идентификатор объекта и имена полей геометрии.
 second_title: API Aspose.GIS .NET
 description: Откройте для себя магию ГИС с помощью Aspose.GIS for .NET! Легко управляйте геопространственными данными. Загрузите сейчас и раскройте силу пространственного интеллекта.
-type: docs
 weight: 20
 url: /ru/net/layer-data-operations/specify-object-id-and-geometry-field-names/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Укажите идентификатор объекта и имена полей геометрии.
+
 ## Введение
 Путешествие в сферу географических информационных систем (ГИС) с использованием Aspose.GIS for .NET открывает мир возможностей как для разработчиков, так и для энтузиастов. Эта мощная библиотека позволяет вам легко обрабатывать геопространственные данные. В этом руководстве мы проведем вас через процесс указания имен полей идентификатора объекта и геометрии, закладывая основу для ваших начинаний в ГИС.
 ## Предварительные условия
@@ -74,3 +80,9 @@ using (var layer = dataset.OpenLayer("layer_name"))
 О: Aspose.GIS for .NET поддерживает различные системы пространственной привязки, обеспечивая гибкость для различных наборов географических данных.
 ### Вопрос: Где я могу обратиться за помощью или обсудить вопросы, связанные с Aspose.GIS?
  О: Посетите форум Aspose.GIS.[здесь](https://forum.aspose.com/c/gis/33) за поддержку и обсуждения.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

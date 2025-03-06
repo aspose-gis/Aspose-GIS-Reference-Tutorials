@@ -3,10 +3,16 @@ title: Crie geometria de curva composta com Aspose.GIS em .NET
 linktitle: Criar geometria de curva composta
 second_title: API Aspose.GIS .NET
 description: Aprenda como criar geometrias de curvas compostas em .NET usando Aspose.GIS para processamento contínuo de dados geoespaciais.
-type: docs
 weight: 19
 url: /pt/net/geometry-creation/create-compound-curve-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Crie geometria de curva composta com Aspose.GIS em .NET
+
 ## Introdução
 No mundo do desenvolvimento .NET, Aspose.GIS é uma ferramenta poderosa que oferece uma infinidade de funcionalidades para trabalhar com dados geoespaciais. Esteja você desenvolvendo aplicativos para mapeamento, serviços baseados em localização ou análise geográfica, o Aspose.GIS fornece as ferramentas necessárias para agilizar seu processo de desenvolvimento.
 ## Pré-requisitos
@@ -94,3 +100,9 @@ Sim, o Aspose.GIS pode ser utilizado tanto em aplicações desktop quanto web, o
 Sim, o Aspose.GIS oferece uma variedade de funcionalidades de análise espacial, incluindo cálculo de distância, operações geométricas e consultas espaciais.
 ### Existe um fórum da comunidade ou canal de suporte disponível para usuários do Aspose.GIS?
  Sim, você pode visitar o[Fórum Aspose.GIS](https://forum.aspose.com/c/gis/33) para fazer perguntas, compartilhar ideias e buscar assistência da comunidade e da equipe de suporte.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

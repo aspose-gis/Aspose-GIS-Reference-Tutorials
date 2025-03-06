@@ -3,10 +3,16 @@ title: Lọc tính năng theo thuộc tính
 linktitle: Lọc tính năng theo thuộc tính
 second_title: API Aspose.GIS .NET
 description: Khám phá sức mạnh của Aspose.GIS cho .NET trong thao tác dữ liệu không gian. Lọc các tính năng một cách dễ dàng, nâng cao các ứng dụng GIS và tăng năng suất.
-type: docs
 weight: 21
 url: /vi/net/layer-management/filter-features-by-attribute/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Lọc tính năng theo thuộc tính
+
 ## Giới thiệu
 Trong thế giới năng động của Hệ thống thông tin địa lý (GIS), Aspose.GIS cho .NET nổi bật như một công cụ mạnh mẽ cho phép các nhà phát triển thao tác và phân tích dữ liệu không gian một cách liền mạch. Cho dù bạn là một chuyên gia GIS dày dạn kinh nghiệm hay một nhà phát triển tò mò muốn khám phá các khả năng, hướng dẫn này sẽ hướng dẫn bạn các bước cần thiết để sử dụng Aspose.GIS trong môi trường .NET.
 ## Điều kiện tiên quyết
@@ -57,3 +63,9 @@ Aspose.GIS for .NET đơn giản hóa thao tác và phân tích dữ liệu khô
  Nhận giấy phép tạm thời[đây](https://purchase.aspose.com/temporary-license/).
 ### Có hướng dẫn từng bước cho các tính năng khác của Aspose.GIS không?
  Có, bạn có thể tìm thêm hướng dẫn và tài liệu về[Tham khảo Aspose.GIS](https://reference.aspose.com/gis/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

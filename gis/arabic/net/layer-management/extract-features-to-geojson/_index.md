@@ -3,10 +3,16 @@ title: استخراج الميزات إلى GeoJSON
 linktitle: استخراج الميزات إلى GeoJSON
 second_title: Aspose.GIS .NET API
 description: استكشف الدليل التفصيلي خطوة بخطوة حول استخدام Aspose.GIS for .NET لاستخراج الميزات إلى GeoJSON. تسخير قوة نظم المعلومات الجغرافية بكل سهولة! #Aspose #GIS
-type: docs
 weight: 23
 url: /ar/net/layer-management/extract-features-to-geojson/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# استخراج الميزات إلى GeoJSON
+
 ## مقدمة
 مرحبًا بك في برنامجنا التعليمي خطوة بخطوة حول استخراج الميزات إلى GeoJSON باستخدام Aspose.GIS for .NET! سواء كنت مطورًا متمرسًا أو بدأت رحلتك في برمجة نظم المعلومات الجغرافية، فسيرشدك هذا الدليل خلال العملية، مما يضمن لك الاستفادة من القوة الكاملة لـ Aspose.GIS لـ .NET.
 ## المتطلبات الأساسية
@@ -87,3 +93,9 @@ outputLayer.Add(outputFeature);
  نعم، يمكنك العثور على النسخة التجريبية المجانية[هنا](https://releases.aspose.com/).
 ### س: أين يمكنني شراء Aspose.GIS لـ .NET؟
  يمكنك شراء المنتج[هنا](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

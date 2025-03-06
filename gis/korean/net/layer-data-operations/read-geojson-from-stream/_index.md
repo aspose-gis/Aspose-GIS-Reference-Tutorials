@@ -3,10 +3,16 @@ title: .NET용 Aspose.GIS를 사용하여 스트림에서 GeoJSON 읽기
 linktitle: 스트림에서 GeoJSON 읽기
 second_title: Aspose.GIS .NET API
 description: .NET용 Aspose.GIS를 사용하여 스트림에서 GeoJSON을 읽는 방법을 알아보세요. 지리공간을 귀하의 애플리케이션에 원활하게 통합하려면 당사의 단계별 가이드를 따르십시오.
-type: docs
 weight: 14
 url: /ko/net/layer-data-operations/read-geojson-from-stream/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# .NET용 Aspose.GIS를 사용하여 스트림에서 GeoJSON 읽기
+
 ## 소개
 .NET용 Aspose.GIS를 사용하여 스트림에서 GeoJSON을 읽는 방법에 대한 단계별 가이드에 오신 것을 환영합니다. Aspose.GIS는 .NET 애플리케이션에 지리공간 기능을 제공하는 강력한 API로, 다양한 GIS 형식을 원활하게 사용할 수 있습니다. 이 튜토리얼에서는 Aspose.GIS를 사용하여 스트림에서 GeoJSON 데이터를 읽는 과정을 안내하고 명확성과 이해 용이성을 위해 각 단계를 세분화합니다.
 ## 전제조건
@@ -56,3 +62,9 @@ using (var layer = VectorLayer.Open(AbstractPath.FromStream(memoryStream), Drive
  Aspose 포럼에서 Aspose.GIS에 대한 지원을 받을 수 있습니다.[여기](https://forum.aspose.com/c/gis/33).
 ### Aspose.GIS를 사용하려면 임시 라이선스가 필요합니까?
  Aspose.GIS에 대한 임시 라이선스는 다음에서 얻을 수 있습니다.[여기](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

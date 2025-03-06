@@ -3,10 +3,16 @@ title: Create File GDB with Single Layer
 linktitle: Create File GDB with Single Layer
 second_title: Aspose.GIS .NET API
 description: Unlock the potential of geospatial data management in .NET with Aspose.GIS. Learn how to create File Geodatabases and layers step-by-step. Download now!
-type: docs
 weight: 11
 url: /net/layer-management/create-file-gdb-with-single-layer/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Create File GDB with Single Layer
+
 ## Introduction
 Are you ready to elevate your geospatial applications with robust file geodatabases and layers? Look no further than Aspose.GIS for .NET. In this tutorial, we'll walk you through the process of creating a File Geodatabase (GDB) with a single layer using Aspose.GIS for .NET. Harness the power of spatial data management and visualization in your .NET applications effortlessly.
 ## Prerequisites
@@ -70,3 +76,10 @@ Refer to the [documentation](https://reference.aspose.com/gis/net/) for comprehe
 Visit the [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) for community support and assistance.
 ### Are temporary licenses available for Aspose.GIS for .NET?
 Yes, you can obtain a [temporary license](https://purchase.aspose.com/temporary-license/) for Aspose.GIS for .NET.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

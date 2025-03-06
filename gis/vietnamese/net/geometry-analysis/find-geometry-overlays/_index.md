@@ -3,10 +3,16 @@ title: Làm chủ các lớp phủ hình học với Aspose.GIS cho .NET
 linktitle: Tìm lớp phủ hình học
 second_title: API Aspose.GIS .NET
 description: Tìm hiểu cách thực hiện các thao tác lớp phủ hình học bằng Aspose.GIS cho .NET. Làm chủ các phép toán giao, hợp, sai phân và sai phân đối xứng.
-type: docs
 weight: 16
 url: /vi/net/geometry-analysis/find-geometry-overlays/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Làm chủ các lớp phủ hình học với Aspose.GIS cho .NET
+
 ## Giới thiệu
 Trong lĩnh vực Hệ thống thông tin địa lý (GIS), các hoạt động lớp phủ là nền tảng cho phân tích không gian. Chúng cho phép so sánh và kết hợp các bộ dữ liệu không gian khác nhau để rút ra những hiểu biết có giá trị. Aspose.GIS cho .NET cung cấp các chức năng mạnh mẽ để thực hiện các lớp phủ hình học một cách hiệu quả. Trong hướng dẫn này, chúng ta sẽ đi sâu vào các hoạt động lớp phủ khác nhau như Giao lộ, Hợp nhất, Khác biệt và Khác biệt đối xứng bằng cách sử dụng Aspose.GIS cho .NET.
 ## Điều kiện tiên quyết
@@ -108,3 +114,9 @@ Có, Aspose.GIS for .NET có thể được sử dụng trong cả dự án thư
  Có, giấy phép tạm thời được cung cấp cho mục đích thử nghiệm và đánh giá. Bạn có thể lấy chúng từ[đây](https://purchase.aspose.com/temporary-license/).
 ### Câu hỏi: Tôi có thể mua trực tiếp Aspose.GIS cho .NET không?
  Có, bạn có thể mua Aspose.GIS cho .NET từ trang web[đây](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

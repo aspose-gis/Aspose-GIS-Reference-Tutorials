@@ -3,10 +3,16 @@ title: Özellikleri Özelliğe Göre Filtrele
 linktitle: Özellikleri Özelliğe Göre Filtrele
 second_title: Aspose.GIS .NET API'si
 description: Aspose.GIS for .NET'in mekansal veri manipülasyonundaki gücünü keşfedin. Özellikleri zahmetsizce filtreleyin, GIS uygulamalarını geliştirin ve üretkenliği artırın.
-type: docs
 weight: 21
 url: /tr/net/layer-management/filter-features-by-attribute/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Özellikleri Özelliğe Göre Filtrele
+
 ## giriiş
 Coğrafi Bilgi Sistemlerinin (GIS) dinamik dünyasında, Aspose.GIS for .NET, geliştiricilerin konumsal verileri sorunsuz bir şekilde işlemesine ve analiz etmesine olanak tanıyan güçlü bir araç olarak öne çıkıyor. İster deneyimli bir GIS profesyoneli, ister olasılıkları keşfetmeye istekli meraklı bir geliştirici olun, bu eğitim size Aspose.GIS'i .NET ortamında kullanmanın temel adımlarında rehberlik edecektir.
 ## Önkoşullar
@@ -57,3 +63,9 @@ Aspose.GIS for .NET, mekansal veri manipülasyonunu ve analizini basitleştirere
  Geçici lisans alın[Burada](https://purchase.aspose.com/temporary-license/).
 ### Diğer Aspose.GIS özellikleri için adım adım eğitim mevcut mu?
  Evet, bu konuda daha fazla eğitim ve belge bulabilirsiniz.[Aspose.GIS referansı](https://reference.aspose.com/gis/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

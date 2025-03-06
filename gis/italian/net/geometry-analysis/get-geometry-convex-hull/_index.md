@@ -3,10 +3,16 @@ title: Calcola lo scafo convesso con Aspose.GIS per .NET
 linktitle: Ottieni lo scafo convesso della geometria
 second_title: API Aspose.GIS .NET
 description: Scopri come calcolare lo scafo convesso di una geometria in .NET utilizzando Aspose.GIS. Tutorial completo con esempi di codice e domande frequenti.
-type: docs
 weight: 20
 url: /it/net/geometry-analysis/get-geometry-convex-hull/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Calcola lo scafo convesso con Aspose.GIS per .NET
+
 ## introduzione
 Aspose.GIS per .NET è una potente libreria che fornisce un'ampia gamma di funzionalità per lavorare con i sistemi di informazione geografica (GIS) nelle applicazioni .NET. Che tu stia creando applicazioni di mappatura, analizzando dati spaziali o eseguendo operazioni geospaziali, Aspose.GIS semplifica il processo con la sua API intuitiva e un set completo di funzionalità.
 ## Prerequisiti
@@ -79,3 +85,9 @@ Assolutamente, Aspose.GIS supporta un'ampia gamma di formati geospaziali, inclus
  Le licenze temporanee per Aspose.GIS possono essere acquisite tramite gli utenti designati[collegamento della licenza temporanea](https://purchase.aspose.com/temporary-license/), consentendo un utilizzo ininterrotto durante periodi di prova o progetti a breve termine.
 ### D: Dove posso chiedere assistenza o partecipare a discussioni relative ad Aspose.GIS?
 Per supporto, guida e interazione con la comunità, visitare il forum Aspose.GIS[Qui](https://forum.aspose.com/c/gis/33), dove puoi interagire con altri sviluppatori, porre domande e condividere approfondimenti.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

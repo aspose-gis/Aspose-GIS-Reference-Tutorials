@@ -3,10 +3,16 @@ title: Geometriák számolása a geometriában az Aspose.GIS segítségével
 linktitle: Számolja meg a geometriákat a geometriában
 second_title: Aspose.GIS .NET API
 description: Ismerje meg, hogyan számolhat geometriákat egy geometriában az Aspose.GIS for .NET használatával. Lépésről lépésre bemutató kódpéldákkal fejlesztőknek.
-type: docs
 weight: 23
 url: /hu/net/geometry-creation/count-geometries-in-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Geometriák számolása a geometriában az Aspose.GIS segítségével
+
 ## Bevezetés
 Az Aspose.GIS for .NET egy hatékony eszköz azoknak a fejlesztőknek, akik térinformatikai funkciókat szeretnének beépíteni .NET-alkalmazásaikba. Legyen szó térképészeti szoftverről, helyalapú szolgáltatásokról vagy térelemző eszközökről, az Aspose.GIS az Ön igényeinek megfelelő szolgáltatások átfogó készletét kínálja. Ebben az oktatóanyagban megvizsgáljuk, hogyan számolhatunk geometriákat egy geometrián belül az Aspose.GIS for .NET használatával.
 ## Előfeltételek
@@ -70,3 +76,9 @@ Igen, az Aspose.GIS for .NET GIS-fájlformátumok széles skáláját támogatja
  Igen, letölthet egy ingyenes próbaverziót a webhelyről[weboldal](https://releases.aspose.com/).
 ### Hol találok támogatást az Aspose.GIS for .NET számára?
  Támogatást találhat a[Aspose.GIS fórum](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

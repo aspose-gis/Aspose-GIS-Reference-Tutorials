@@ -3,10 +3,16 @@ title: .NET용 Aspose.GIS를 사용하여 곡선 다각형 형상 생성
 linktitle: 곡선 다각형 형상 생성
 second_title: Aspose.GIS .NET API
 description: .NET용 Aspose.GIS를 사용하여 곡선 다각형 형상을 효율적으로 생성하는 방법을 알아보세요. GIS 애플리케이션을 원활하게 사용하려면 단계별 가이드를 따르세요.
-type: docs
 weight: 18
 url: /ko/net/geometry-creation/create-curve-polygon-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# .NET용 Aspose.GIS를 사용하여 곡선 다각형 형상 생성
+
 ## 소개
 GIS(지리 정보 시스템) 개발 영역에서 .NET용 Aspose.GIS는 공간 데이터를 생성, 편집 및 조작하기 위한 강력한 도구로 돋보입니다. 이 튜토리얼은 .NET용 Aspose.GIS를 사용하여 곡선 다각형 형상을 생성하는 과정을 안내하는 것을 목표로 합니다. 이 튜토리얼을 마치면 GIS 애플리케이션을 위한 복잡한 형상을 효율적으로 구성하기 위한 지식을 갖추게 될 것입니다.
 ## 전제조건
@@ -108,3 +114,9 @@ layer.Add(feature);
  예, Aspose.GIS 커뮤니티 포럼에 가입하실 수 있습니다[여기](https://forum.aspose.com/c/gis/33) 다른 사용자와 소통하고, 질문하고, 경험을 공유하세요.
 ### 구매하기 전에 .NET용 Aspose.GIS를 사용해 볼 수 있나요?
  물론! 다음 사이트에서 .NET용 Aspose.GIS 무료 평가판을 이용할 수 있습니다.[릴리스 페이지](https://releases.aspose.com/)구매하기 전에 기능을 탐색할 수 있습니다.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

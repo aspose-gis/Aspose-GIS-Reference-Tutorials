@@ -3,10 +3,16 @@ title: Create New Shapefile
 linktitle: Create New Shapefile
 second_title: Aspose.GIS .NET API
 description: Learn how to create a new shapefile using Aspose.GIS for .NET. Follow our step-by-step guide and unlock the power of spatial data manipulation.
-type: docs
 weight: 12
 url: /net/layer-management/create-new-shapefile/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Create New Shapefile
+
 ## Introduction
 If you're delving into geographic information systems (GIS) development with .NET, Aspose.GIS is your go-to solution. This powerful library empowers developers to work seamlessly with spatial data, and in this tutorial, we'll guide you through the process of creating a new shapefile using Aspose.GIS for .NET.
 ## Prerequisites
@@ -80,3 +86,10 @@ Visit the [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) for community su
 Get your temporary license [here](https://purchase.aspose.com/temporary-license/).
 ### Q: Where can I purchase Aspose.GIS for .NET?
 You can buy the library [here](https://purchase.aspose.com/buy).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

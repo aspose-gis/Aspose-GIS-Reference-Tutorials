@@ -3,10 +3,16 @@ title: Controleer of geometrie een andere bevat
 linktitle: Controleer of geometrie een andere bevat
 second_title: Aspose.GIS .NET-API
 description: Ontdek Aspose.GIS voor .NET, een robuuste bibliotheek voor naadloze georuimtelijke gegevensintegratie in uw .NET-toepassingen.
-type: docs
 weight: 14
 url: /nl/net/geometry-analysis/check-geometry-contains-another/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Controleer of geometrie een andere bevat
+
 ## Invoering
 Aspose.GIS voor .NET is een krachtige bibliotheek waarmee ontwikkelaars naadloos met georuimtelijke gegevens kunnen werken binnen hun .NET-toepassingen. Of u nu een kaarttoepassing bouwt, geospatiale analyses uitvoert of locatiegebaseerde functies in uw software integreert, Aspose.GIS vereenvoudigt het proces door intuïtieve API's en robuuste functionaliteit te bieden.
 ## Vereisten
@@ -85,3 +91,9 @@ A: Aspose.GIS brengt regelmatig updates uit om de prestaties te verbeteren, nieu
 A: Ja, u kunt lid worden van het Aspose.GIS-communityforum[hier](https://forum.aspose.com/c/gis/33) om in contact te komen met andere gebruikers, vragen te stellen en uw ervaringen te delen.
 ### V5: Kan ik Aspose.GIS uitproberen voordat ik een aankoop doe?
  A: Zeker, u kunt Aspose.GIS verkennen door de gratis proefversie te downloaden van[hier](https://releases.aspose.com/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

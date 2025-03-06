@@ -3,10 +3,16 @@ title: Quản lý lớp
 linktitle: Quản lý lớp
 second_title: API Aspose.GIS .NET
 description: Mở khóa tiềm năng phát triển không gian địa lý với các hướng dẫn Aspose.GIS cho .NET. Dễ dàng tạo, quản lý và thao tác các bộ dữ liệu GIS.
-type: docs
 weight: 24
 url: /vi/net/layer-management/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Quản lý lớp
+
 ## Giới thiệu
 
 Aspose.GIS cho .NET trao quyền cho các nhà phát triển đi sâu vào thế giới phát triển không gian địa lý thú vị. Trong danh sách hướng dẫn toàn diện này, chúng tôi khám phá các Hướng dẫn quản lý lớp khác nhau để hướng dẫn bạn khai thác toàn bộ tiềm năng của Aspose.GIS cho .NET. Từ việc tạo bộ dữ liệu File GDB mới đến thao tác dữ liệu không gian, các hướng dẫn này đề cập đến tất cả.
@@ -68,3 +74,9 @@ Mở khóa phép thuật không gian địa lý với Aspose.GIS cho .NET! Các 
 Khám phá sức mạnh của Aspose.GIS cho .NET trong thao tác dữ liệu không gian. Lọc các tính năng một cách dễ dàng, nâng cao các ứng dụng GIS và tăng năng suất.
 ### [Trích xuất các tính năng cho GeoJSON](./extract-features-to-geojson/)
 Khám phá hướng dẫn từng bước về cách sử dụng Aspose.GIS cho .NET để trích xuất các tính năng cho GeoJSON. Khai thác sức mạnh của GIS một cách dễ dàng! 
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

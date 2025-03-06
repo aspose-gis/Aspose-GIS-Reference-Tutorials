@@ -3,10 +3,16 @@ title: ميزات طبقة المحاصيل
 linktitle: ميزات طبقة المحاصيل
 second_title: Aspose.GIS .NET API
 description: أطلق العنان للسحر الجغرافي المكاني باستخدام Aspose.GIS لـ .NET! ميزات طبقة المحاصيل دون عناء. تحميل النسخة التجريبية المجانية من الآن. #Aspose #GIS #geospatial
-type: docs
 weight: 19
 url: /ar/net/layer-management/crop-layer-features/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# ميزات طبقة المحاصيل
+
 ## مقدمة
 في المجال الواسع لمعالجة البيانات الجغرافية المكانية، يظهر Aspose.GIS for .NET كأداة قوية توفر للمطورين تجربة سلسة في التعامل مع المعلومات الجغرافية. سيرشدك هذا البرنامج التعليمي خلال عملية اقتصاص ميزات الطبقة باستخدام Aspose.GIS، مما يسمح لك بتخصيص بياناتك الجغرافية المكانية لتلبية متطلبات محددة.
 ## المتطلبات الأساسية
@@ -62,3 +68,9 @@ Console.WriteLine($"bounds: {bounds}");
  ج: نعم، يمكنك تنزيل نسخة تجريبية مجانية[هنا](https://releases.aspose.com/).
 ### س: أين يمكنني شراء Aspose.GIS لـ .NET؟
  ج: يمكنك شراء المكتبة[هنا](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

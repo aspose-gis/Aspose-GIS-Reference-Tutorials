@@ -3,10 +3,16 @@ title: Skapa vektorlager med SRS
 linktitle: Skapa vektorlager med SRS
 second_title: Aspose.GIS .NET API
 description: Utforska Aspose.GIS för .NET - din nyckel till sömlös GIS-integration. Skapa vektorlager utan ansträngning med specificerade rumsliga referenssystem. Ladda ner nu!
-type: docs
 weight: 13
 url: /sv/net/layer-management/create-vector-layer-with-srs/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Skapa vektorlager med SRS
+
 ## Introduktion
 Aspose.GIS för .NET är ett kraftfullt bibliotek som gör det möjligt för utvecklare att arbeta med geografiska informationssystem (GIS) data sömlöst i .NET-applikationer. I den här handledningen kommer vi att fokusera på att skapa ett vektorlager med ett rumsligt referenssystem (SRS). I slutet av den här guiden kommer du att utan ansträngning kunna integrera GIS-funktioner i dina .NET-projekt.
 ## Förutsättningar
@@ -90,3 +96,9 @@ Absolut! Aspose.GIS för .NET är mångsidig och kan användas i webbapplikation
  Ja, du kan utforska funktionerna i Aspose.GIS genom att få en gratis provperiod[här](https://releases.aspose.com/).
 ### Hur kan jag köpa en licens för Aspose.GIS?
  För att köpa en licens, besök[köpsidan](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

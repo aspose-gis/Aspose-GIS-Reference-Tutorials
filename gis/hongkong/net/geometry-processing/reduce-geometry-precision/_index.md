@@ -3,10 +3,16 @@ title: 在 .NET 中使用 Aspose.GIS 降低幾何精度
 linktitle: 降低幾何精度
 second_title: Aspose.GIS .NET API
 description: 了解如何使用 Aspose.GIS 在 .NET GIS 應用程式中有效降低幾何精度，以提高效能和記憶體最佳化。
-type: docs
 weight: 15
 url: /zh-hant/net/geometry-processing/reduce-geometry-precision/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 在 .NET 中使用 Aspose.GIS 降低幾何精度
+
 ## 介紹
 在本教學中，我們將探討如何使用 Aspose.GIS for .NET 來降低幾何精度。在處理 GIS 應用程式中的大型資料集時，降低幾何精度對於優化記憶體使用和提高效能至關重要。我們將每個範例分解為多個步驟以提供全面的指南。
 ## 先決條件
@@ -81,3 +87,9 @@ Console.WriteLine("{0}, {1}", line[1].X, line[1].Y);
 是的，降低幾何精度可以顯著提高效能，特別是在處理大型資料集或執行空間操作時。
 ### 在哪裡可以獲得 Aspose.GIS for .NET 支援？
 您可以透過造訪 Aspose.GIS for .NET 來獲得支持[Aspose.GIS論壇](https://forum.aspose.com/c/gis/33)或存取可用的文檔[這裡](https://reference.aspose.com/gis/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

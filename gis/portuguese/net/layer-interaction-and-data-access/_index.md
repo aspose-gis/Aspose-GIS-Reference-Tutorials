@@ -3,10 +3,16 @@ title: Interação de camadas e acesso a dados
 linktitle: Interação de camadas e acesso a dados
 second_title: API Aspose.GIS .NET
 description: Desbloqueie o potencial do Aspose.GIS para .NET com nossos tutoriais de interação de camadas e acesso a dados. Explore o desenvolvimento geoespacial e manipule recursos perfeitamente.
-type: docs
 weight: 25
 url: /pt/net/layer-interaction-and-data-access/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Interação de camadas e acesso a dados
+
 ## Introdução
 
 Aspose.GIS for .NET está na vanguarda do desenvolvimento geoespacial, oferecendo um conjunto abrangente de ferramentas para integração perfeita de dados GIS. Nesta série de tutoriais, nos aprofundamos nas complexidades da interação entre camadas e do acesso a dados, revelando todo o potencial desta poderosa biblioteca.
@@ -49,3 +55,9 @@ Explore o Aspose.GIS for .NET e interaja facilmente com camadas GPX. Baixe a bib
 Explore o poder da manipulação de dados geoespaciais em .NET com Aspose.GIS. Guia passo a passo para interagir com camadas KML. 
 ### [Modificar recursos de camada](./modify-layer-features/)
 Explore o Aspose.GIS for .NET e domine a arte de modificar recursos de camada em shapefiles sem esforço. Aumente suas aplicações geoespaciais com precisão e facilidade.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

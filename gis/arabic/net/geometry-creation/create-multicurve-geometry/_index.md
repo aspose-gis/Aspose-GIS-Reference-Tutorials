@@ -3,10 +3,16 @@ title: إنشاء هندسة MultiCurve باستخدام Aspose.GIS لـ .NET
 linktitle: إنشاء هندسة متعددة المنحنيات
 second_title: Aspose.GIS .NET API
 description: تعرف على كيفية إنشاء هندسة MultiCurve في .NET باستخدام Aspose.GIS لتمثيل وتحليل البيانات المكانية بكفاءة.
-type: docs
 weight: 17
 url: /ar/net/geometry-creation/create-multicurve-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# إنشاء هندسة MultiCurve باستخدام Aspose.GIS لـ .NET
+
 ## مقدمة
 في مجال تطوير نظم المعلومات الجغرافية (GIS) باستخدام .NET، تبرز Aspose.GIS باعتبارها مجموعة أدوات قوية. سواء كنت مطورًا متمرسًا أو مجرد دخول إلى عالم نظم المعلومات الجغرافية، يوفر Aspose.GIS for .NET مجموعة شاملة من الوظائف للعمل مع البيانات المكانية بكفاءة. تعد هذه المقالة بمثابة دليل خطوة بخطوة للاستفادة من إحدى ميزاته: إنشاء هندسة MultiCurve.
 ## المتطلبات الأساسية
@@ -82,3 +88,9 @@ layer.Add(feature);
 نعم، يمكنك تنزيل نسخة تجريبية مجانية من Aspose.GIS for .NET من[موقع Aspose.GIS](https://releases.aspose.com/gis/net/) لاستكشاف ميزاته قبل إجراء عملية الشراء.
 ### كيف يمكنني الحصول على المساعدة إذا واجهت مشاكل أثناء استخدام Aspose.GIS for .NET؟
 يمكنك طلب المساعدة من منتديات مجتمع Aspose.GIS أو الوصول إلى موارد الدعم المقدمة من Aspose.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Lettura di GeoJSON dallo streaming con Aspose.GIS per .NET
 linktitle: Leggi GeoJSON dal flusso
 second_title: API Aspose.GIS .NET
 description: Scopri come leggere GeoJSON da un flusso utilizzando Aspose.GIS per .NET. Segui la nostra guida passo passo per una perfetta integrazione del geospaziale nelle tue applicazioni.
-type: docs
 weight: 14
 url: /it/net/layer-data-operations/read-geojson-from-stream/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Lettura di GeoJSON dallo streaming con Aspose.GIS per .NET
+
 ## introduzione
 Benvenuti nella nostra guida passo passo sull'utilizzo di Aspose.GIS per .NET per leggere GeoJSON da un flusso. Aspose.GIS è una potente API che fornisce funzionalità geospaziali alle applicazioni .NET, consentendoti di lavorare senza problemi con vari formati GIS. In questo tutorial ti guideremo attraverso il processo di lettura dei dati GeoJSON da un flusso utilizzando Aspose.GIS, suddividendo ogni passaggio per chiarezza e facilità di comprensione.
 ## Prerequisiti
@@ -56,3 +62,9 @@ Sì, Aspose.GIS supporta vari formati GIS come GeoJSON, Shapefile, KML e altri.
  È possibile ottenere supporto per Aspose.GIS sui forum Aspose[Qui](https://forum.aspose.com/c/gis/33).
 ### Ho bisogno di una licenza temporanea per utilizzare Aspose.GIS?
  È possibile ottenere una licenza temporanea per Aspose.GIS da[Qui](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

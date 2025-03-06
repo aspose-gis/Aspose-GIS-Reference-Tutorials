@@ -3,10 +3,16 @@ title: โต้ตอบกับเลเยอร์ GPX
 linktitle: โต้ตอบกับเลเยอร์ GPX
 second_title: Aspose.GIS .NET API
 description: สำรวจ Aspose.GIS สำหรับ .NET และโต้ตอบกับเลเยอร์ GPX ได้อย่างง่ายดาย ดาวน์โหลดไลบรารี่ ทดลองใช้งานฟรี และยกระดับแอปพลิเคชันภูมิสารสนเทศของคุณ!
-type: docs
 weight: 16
 url: /th/net/layer-interaction-and-data-access/interact-with-gpx-layer/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# โต้ตอบกับเลเยอร์ GPX
+
 ## การแนะนำ
 คุณพร้อมที่จะยกระดับการใช้งานภูมิสารสนเทศของคุณไปอีกระดับแล้วหรือยัง? Aspose.GIS สำหรับ .NET มอบชุดเครื่องมืออันทรงพลังเพื่อทำงานกับข้อมูล Geographic Information System (GIS) ได้อย่างราบรื่น ในบทช่วยสอนนี้ เราจะแนะนำคุณตลอดกระบวนการโต้ตอบกับเลเยอร์ GPX (รูปแบบการแลกเปลี่ยน GPS) โดยใช้ Aspose.GIS สำหรับ .NET ไม่ว่าคุณจะเป็นนักพัฒนาที่มีประสบการณ์หรือเพิ่งเริ่มต้นกับ GIS คำแนะนำทีละขั้นตอนนี้จะช่วยให้คุณควบคุมความสามารถของไลบรารีที่มีประสิทธิภาพนี้
 ## ข้อกำหนดเบื้องต้น
@@ -78,3 +84,9 @@ using (var layer = Drivers.Gpx.OpenLayer(dataDir + "schiehallion.gpx"))
  ใช่ คุณสามารถขอรับใบอนุญาตชั่วคราวได้[ที่นี่](https://purchase.aspose.com/temporary-license/).
 ### ฉันจะซื้อ Aspose.GIS สำหรับ .NET ได้อย่างไร
  คุณสามารถซื้อ Aspose.GIS[ที่นี่](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

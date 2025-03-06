@@ -3,10 +3,16 @@ title: .NET용 Aspose.GIS를 사용하여 형상 교차점 확인
 linktitle: 형상 교차점 확인
 second_title: Aspose.GIS .NET API
 description: 단계별 지침을 통해 .NET용 Aspose.GIS를 사용하여 형상 교차점을 확인하는 방법을 알아보세요. 손쉽게 GIS 개발을 향상하세요.
-type: docs
 weight: 11
 url: /ko/net/geometry-analysis/check-geometries-intersection/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# .NET용 Aspose.GIS를 사용하여 형상 교차점 확인
+
 ## 소개
 지리 정보 시스템(GIS) 영역에서 .NET용 Aspose.GIS는 개발자가 고급 공간 기능을 애플리케이션에 원활하게 통합할 수 있도록 지원하는 강력한 도구 키트로 돋보입니다. 숙련된 개발자이든 아니면 그냥 GIS 개발에 발을 담그든 관계없이 이 기사는 .NET용 Aspose.GIS를 활용하여 기하학적 교차점을 효과적으로 확인하는 데 대한 포괄적인 가이드 역할을 할 것입니다.
 ## 전제조건
@@ -76,3 +82,9 @@ Console.WriteLine(geometry1.Disjoint(geometry2)); // 거짓
  예, 다음에서 임시 라이센스를 얻을 수 있습니다.[여기](https://purchase.aspose.com/temporary-license/).
 ### .NET용 Aspose.GIS 라이선스 버전을 어디에서 구입할 수 있나요?
  .NET용 Aspose.GIS 라이선스 버전은 다음에서 구입할 수 있습니다.[여기](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

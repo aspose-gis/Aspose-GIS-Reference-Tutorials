@@ -3,10 +3,16 @@ title: Làm chủ việc sửa đổi tính năng của lớp
 linktitle: Sửa đổi các tính năng của lớp
 second_title: API Aspose.GIS .NET
 description: Khám phá Aspose.GIS cho .NET và nắm vững nghệ thuật sửa đổi các tính năng lớp trong tệp hình dạng một cách dễ dàng. Tăng cường các ứng dụng không gian địa lý của bạn một cách chính xác và dễ dàng.
-type: docs
 weight: 23
 url: /vi/net/layer-interaction-and-data-access/modify-layer-features/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Làm chủ việc sửa đổi tính năng của lớp
+
 ## Giới thiệu
 Chào mừng bạn đến với hướng dẫn toàn diện này về cách sửa đổi các tính năng của lớp bằng Aspose.GIS cho .NET! Nếu bạn đang tìm cách nâng cao các ứng dụng không gian địa lý của mình và thao tác dữ liệu tệp hình dạng một cách dễ dàng thì bạn đã đến đúng nơi. Trong hướng dẫn này, chúng ta sẽ đi sâu vào quá trình sửa đổi các tính năng của lớp bằng thư viện Aspose.GIS mạnh mẽ, cung cấp cho bạn các bước chi tiết và thông tin chi tiết.
 ## Điều kiện tiên quyết
@@ -72,3 +78,9 @@ Tuyệt đối! Aspose.GIS tích hợp liền mạch với các thư viện .NET
  Tham quan[Diễn đàn hỗ trợ Aspose.GIS](https://forum.aspose.com/c/gis/33)để được hỗ trợ và hỗ trợ cộng đồng.
 ### Tôi có thể tìm tài liệu về Aspose.GIS ở đâu?
  Tài liệu Aspose.GIS có sẵn[đây](https://reference.aspose.com/gis/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

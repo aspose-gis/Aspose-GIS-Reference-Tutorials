@@ -3,10 +3,16 @@ title: Aspose.GIS for .NET を使用して線形化許容値を設定する
 linktitle: 線形化許容値の設定
 second_title: Aspose.GIS .NET API
 description: Aspose.GIS for .NET をマスターして、地理空間データを簡単に処理します。このステップバイステップのチュートリアルに従って、.NET での GIS 開発の可能性を最大限に引き出してください。
-type: docs
 weight: 17
 url: /ja/net/geometry-processing/set-linearization-tolerance/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS for .NET を使用して線形化許容値を設定する
+
 ## 導入
 地理情報システム (GIS) 開発の世界では、Aspose.GIS for .NET は、空間データを簡単かつ効率的に処理するための強力なツールセットとして際立っています。経験豊富な GIS 開発者でも、初心者でも、Aspose.GIS をマスターすると、.NET 環境で地理空間データを操作する能力が大幅に向上します。
 ## 前提条件
@@ -84,3 +90,9 @@ Aspose.GIS for .NET をマスターすると、地理空間データの処理と
 はい、Aspose Web サイトから Aspose.GIS for .NET の無料試用版をダウンロードできます。
 ### Aspose.GIS for .NET のサポートはどこで入手できますか?
 Aspose フォーラムから Aspose.GIS for .NET のサポートを得ることができます。以下のリソースセクションにあるサポートリンクにアクセスしてください。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

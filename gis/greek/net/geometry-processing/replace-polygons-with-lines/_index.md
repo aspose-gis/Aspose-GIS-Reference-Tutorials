@@ -3,10 +3,16 @@ title: Μετατρέψτε τα πολύγωνα σε γραμμές με το 
 linktitle: Αντικαταστήστε τα πολύγωνα με γραμμές
 second_title: Aspose.GIS .NET API
 description: Μάθετε πώς να αντικαθιστάτε πολύγωνα με γραμμές χρησιμοποιώντας το Aspose.GIS για .NET. Βελτιώστε τις δεξιότητές σας στον χειρισμό δεδομένων GIS χωρίς κόπο.
-type: docs
 weight: 16
 url: /el/net/geometry-processing/replace-polygons-with-lines/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Μετατρέψτε τα πολύγωνα σε γραμμές με το Aspose.GIS για .NET
+
 ## Εισαγωγή
 Στον κόσμο της ανάπτυξης Συστημάτων Γεωγραφικών Πληροφοριών (GIS), το Aspose.GIS για .NET ξεχωρίζει ως ένα ισχυρό σύνολο εργαλείων για την εργασία με χωρικά δεδομένα. Είτε είστε έμπειρος προγραμματιστής είτε μόλις ξεκινάτε το ταξίδι σας στον προγραμματισμό GIS, το Aspose.GIS για .NET προσφέρει ένα ολοκληρωμένο σύνολο λειτουργιών για αποτελεσματικό χειρισμό και ανάλυση γεωγραφικών δεδομένων.
 ## Προαπαιτούμενα
@@ -54,3 +60,9 @@ Console.WriteLine($"result: {dstGeometry.AsText()}");
  Ναι, μπορείτε να αποκτήσετε προσωρινή άδεια από[εδώ](https://purchase.aspose.com/temporary-license/).
 ### Είναι το Aspose.GIS για .NET κατάλληλο τόσο για αρχάριους όσο και για έμπειρους προγραμματιστές;
 Οπωσδήποτε, το Aspose.GIS για .NET απευθύνεται σε προγραμματιστές όλων των επιπέδων, προσφέροντας ολοκληρωμένη τεκμηρίωση και υποστήριξη.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

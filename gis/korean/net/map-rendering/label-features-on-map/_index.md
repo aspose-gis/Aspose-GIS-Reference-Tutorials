@@ -3,10 +3,16 @@ title: .NET용 Aspose.GIS를 사용하여 지형지물 라벨링 마스터하기
 linktitle: 지도의 지형지물에 라벨 지정
 second_title: Aspose.GIS .NET API
 description: .NET용 Aspose.GIS를 탐색하고 지도의 지형지물 라벨링 기술을 마스터하세요. 지리공간 시각화를 쉽게 향상할 수 있습니다. #Aspose #GIS
-type: docs
 weight: 11
 url: /ko/net/map-rendering/label-features-on-map/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# .NET용 Aspose.GIS를 사용하여 지형지물 라벨링 마스터하기
+
 ## 소개
 지리공간 데이터 시각화의 세계에서 지도의 지형지물에 라벨을 지정하는 것은 정보를 효과적으로 전달하는 데 중요한 역할을 합니다. .NET용 Aspose.GIS는 이를 원활하게 수행할 수 있는 강력한 툴킷을 제공합니다. 이 튜토리얼에서는 Aspose.GIS를 사용하여 지도의 지점에 라벨을 지정하는 다양한 방법을 살펴보고 정보 라벨로 지도 시각화를 향상시킵니다.
 ## 전제조건
@@ -126,3 +132,9 @@ Aspose.GIS는 성능에 최적화되어 있지만 데이터 속성을 기반으�
 예, 회전, 고정점, 오프셋과 같은 옵션을 사용하여 라벨 배치를 미세 조정할 수 있습니다.
 ### 일괄 프로세스에서 라벨 생성을 자동화할 수 있습니까?
 물론 배치 라벨 생성을 위해 Aspose.GIS를 자동화된 워크플로우에 통합할 수 있습니다.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

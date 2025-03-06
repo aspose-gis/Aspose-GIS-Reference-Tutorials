@@ -3,10 +3,16 @@ title: Skapa fil GDB med ett lager
 linktitle: Skapa fil GDB med ett lager
 second_title: Aspose.GIS .NET API
 description: Lås upp potentialen för geospatial datahantering i .NET med Aspose.GIS. Lär dig hur du skapar filgeodatabaser och lager steg för steg. Ladda ner nu!
-type: docs
 weight: 11
 url: /sv/net/layer-management/create-file-gdb-with-single-layer/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Skapa fil GDB med ett lager
+
 ## Introduktion
 Är du redo att lyfta dina geospatiala applikationer med robusta filgeodatabaser och lager? Leta inte längre än Aspose.GIS för .NET. I den här handledningen går vi igenom processen att skapa en filgeodatabas (GDB) med ett enda lager med Aspose.GIS för .NET. Utnyttja kraften i hantering och visualisering av rumslig data i dina .NET-applikationer utan ansträngning.
 ## Förutsättningar
@@ -70,3 +76,9 @@ Ja, Aspose.GIS för .NET kan sömlöst integreras i dina befintliga .NET-projekt
  Besök[Aspose.GIS forum](https://forum.aspose.com/c/gis/33) för samhällsstöd och hjälp.
 ### Finns tillfälliga licenser tillgängliga för Aspose.GIS för .NET?
  Ja, du kan få en[tillfällig licens](https://purchase.aspose.com/temporary-license/) för Aspose.GIS för .NET.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

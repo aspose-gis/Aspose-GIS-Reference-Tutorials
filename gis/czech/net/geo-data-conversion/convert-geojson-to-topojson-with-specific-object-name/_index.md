@@ -3,10 +3,16 @@ title: Převeďte GeoJSON na TopoJSON se specifickým názvem objektu
 linktitle: Převeďte GeoJSON na TopoJSON se specifickým názvem objektu
 second_title: Aspose.GIS .NET API
 description: Naučte se, jak převést GeoJSON na TopoJSON s konkrétním názvem objektu pomocí Aspose.GIS pro .NET. Tento výukový program poskytuje podrobného průvodce pro efektivní manipulaci s geografickými daty.
-type: docs
 weight: 12
 url: /cs/net/geo-data-conversion/convert-geojson-to-topojson-with-specific-object-name/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Převeďte GeoJSON na TopoJSON se specifickým názvem objektu
+
 ## Úvod
 Aspose.GIS for .NET je výkonný nástroj pro práci s geografickými daty v aplikacích .NET. Ať už vyvíjíte mapovací aplikaci, analyzujete prostorová data nebo manipulujete se soubory geojson, Aspose.GIS poskytuje komplexní sadu funkcí pro zefektivnění vašeho pracovního postupu.
 ## Předpoklady
@@ -67,3 +73,9 @@ Ano, můžete získat bezplatnou zkušební verzi od[tady](https://releases.aspo
  Licenci si můžete zakoupit od[tady](https://purchase.aspose.com/buy).
 ### Potřebuji pro hodnocení dočasnou licenci?
  Ano, můžete získat dočasnou licenci od[tady](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

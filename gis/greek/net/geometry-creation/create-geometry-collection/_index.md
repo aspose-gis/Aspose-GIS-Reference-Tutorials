@@ -3,10 +3,16 @@ title: Δημιουργήστε Συλλογή Γεωμετρίας με το As
 linktitle: Δημιουργία Συλλογής Γεωμετρίας
 second_title: Aspose.GIS .NET API
 description: Ξεκλειδώστε τη δύναμη του χειρισμού γεωχωρικών δεδομένων με το Aspose.GIS για .NET. Δημιουργήστε, οπτικοποιήστε και αναλύστε απρόσκοπτα δεδομένα βάσει τοποθεσίας στις εφαρμογές σας .NET.
-type: docs
 weight: 21
 url: /el/net/geometry-creation/create-geometry-collection/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Δημιουργήστε Συλλογή Γεωμετρίας με το Aspose.GIS για .NET
+
 
 ## Εισαγωγή
 
@@ -109,3 +115,9 @@ geometryCollection.Add(line);
 ### Ε: Υπάρχει κάποια κοινότητα ή φόρουμ όπου μπορώ να αναζητήσω βοήθεια και να συνδεθώ με άλλους χρήστες του Aspose.GIS;
 
  Α: Απολύτως! Κατευθυνθείτε προς το[Φόρουμ Aspose.GIS](https://forum.aspose.com/c/gis/33) για να κάνετε ερωτήσεις, να μοιραστείτε γνώσεις και να συνδεθείτε με άλλους προγραμματιστές στην κοινότητα Aspose.GIS.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

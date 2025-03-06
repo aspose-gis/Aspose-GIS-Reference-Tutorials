@@ -3,10 +3,16 @@ title: Unlocking TopoJSON Features with Aspose.GIS for .NET
 linktitle: Access Features in TopoJSON
 second_title: Aspose.GIS .NET API
 description: Explore Aspose.GIS for .NET and learn to access TopoJSON features step-by-step. Dive into documentation, and unleash geospatial capabilities effortlessly.
-type: docs
 weight: 15
 url: /net/layer-management/access-features-in-topojson/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Unlocking TopoJSON Features with Aspose.GIS for .NET
+
 ## Introduction
 Aspose.GIS for .NET is a powerful library that enables developers to work with geospatial data effortlessly. In this tutorial, we'll delve into accessing features in TopoJSON using Aspose.GIS for .NET. TopoJSON is a format that represents geographical features in a compact and efficient manner.
 ## Prerequisites
@@ -67,3 +73,10 @@ Join the [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) for assistance.
 Yes, you can access a free trial [here](https://releases.aspose.com/).
 ### Q: How do I purchase a license?
 Purchase a license [here](https://purchase.aspose.com/buy).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

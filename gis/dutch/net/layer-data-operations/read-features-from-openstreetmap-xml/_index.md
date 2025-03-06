@@ -3,10 +3,16 @@ title: Lees functies van OpenStreetMap XML in Aspose.GIS
 linktitle: Lees functies van OpenStreetMap XML
 second_title: Aspose.GIS .NET-API
 description: Leer hoe u functies uit OpenStreetMap XML kunt lezen met behulp van Aspose.GIS voor .NET. Stapsgewijze zelfstudie met codevoorbeelden.
-type: docs
 weight: 13
 url: /nl/net/layer-data-operations/read-features-from-openstreetmap-xml/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Lees functies van OpenStreetMap XML in Aspose.GIS
+
 ## Invoering
 Aspose.GIS voor .NET is een krachtige bibliotheek waarmee ontwikkelaars kunnen werken met GIS-gegevens (geografisch informatiesysteem) in hun .NET-toepassingen. Of u nu een kaarttoepassing bouwt, ruimtelijke gegevens analyseert of GIS-functionaliteit in uw software integreert, Aspose.GIS biedt een breed scala aan functies om uw ontwikkelingsproces te stroomlijnen.
 In deze zelfstudie onderzoeken we hoe u functies uit OpenStreetMap XML kunt lezen met behulp van Aspose.GIS voor .NET. We verdelen elke stap in overzichtelijke stukjes, zodat u deze gemakkelijk kunt volgen, ongeacht uw expertiseniveau.
@@ -75,3 +81,9 @@ Ja, u kunt een licentie kopen voor Aspose.GIS om het in commerciële projecten t
  U kunt een bezoek brengen aan de[Aspose.GIS-forum](https://forum.aspose.com/c/gis/33) voor hulp en om in contact te komen met andere gebruikers en ontwikkelaars.
 ### Kan ik een tijdelijke licentie verkrijgen voor Aspose.GIS voor .NET?
  Ja, u kunt een tijdelijke licentie aanvragen bij de[tijdelijke licentiepagina](https://purchase.aspose.com/temporary-license/) voor test- en evaluatiedoeleinden.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

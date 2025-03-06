@@ -3,10 +3,16 @@ title: Μετρήστε πόντους στη γεωμετρία με το Aspos
 linktitle: Μετρήστε Σημεία στη Γεωμετρία
 second_title: Aspose.GIS .NET API
 description: Μάθετε πώς να χρησιμοποιείτε το Aspose.GIS για .NET για να χειρίζεστε τα γεωγραφικά δεδομένα χωρίς κόπο. Διαθέσιμα ολοκληρωμένα σεμινάρια.
-type: docs
 weight: 24
 url: /el/net/geometry-creation/count-points-in-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Μετρήστε πόντους στη γεωμετρία με το Aspose.GIS για .NET
+
 ## Εισαγωγή
 Στον τομέα της ανάπτυξης Συστημάτων Γεωγραφικών Πληροφοριών (GIS), το Aspose.GIS για .NET ξεχωρίζει ως ένα ισχυρό σύνολο εργαλείων για το χειρισμό και την επεξεργασία γεωγραφικών δεδομένων. Είτε είστε έμπειρος προγραμματιστής είτε απλώς εμβαθύνετε στον κόσμο του προγραμματισμού GIS, η γνώση του Aspose.GIS μπορεί να ανοίξει μυριάδες δυνατότητες στα έργα σας.
 ## Προαπαιτούμενα
@@ -71,3 +77,9 @@ Console.WriteLine(pointsCount);  // 2
  Μπορείτε να επισκεφθείτε το[Φόρουμ Aspose.GIS](https://forum.aspose.com/c/gis/33) για να αναζητήσετε υποστήριξη ή να κάνετε ερωτήσεις από την κοινότητα του Aspose.
 ### Υπάρχει διαθέσιμη δωρεάν δοκιμή για το Aspose.GIS για .NET;
  Ναι, μπορείτε να επωφεληθείτε από τη δωρεάν δοκιμή από το[Σελίδα εκδόσεων Aspose.GIS](https://releases.aspose.com/) για να αξιολογήσετε τα χαρακτηριστικά του πριν κάνετε μια αγορά.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

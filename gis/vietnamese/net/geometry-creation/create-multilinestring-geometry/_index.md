@@ -3,10 +3,16 @@ title: Tạo hình học MultiLineString bằng Aspose.GIS cho .NET
 linktitle: Tạo hình học MultiLineString
 second_title: API Aspose.GIS .NET
 description: Khám phá sức mạnh của Aspose.GIS cho .NET trong việc quản lý dữ liệu không gian địa lý một cách hiệu quả. Tải xuống ngay để có trải nghiệm liền mạch.
-type: docs
 weight: 15
 url: /vi/net/geometry-creation/create-multilinestring-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Tạo hình học MultiLineString bằng Aspose.GIS cho .NET
+
 ## Giới thiệu
 Aspose.GIS for .NET là một thư viện mạnh mẽ cho phép các nhà phát triển làm việc với dữ liệu không gian địa lý một cách liền mạch trong các ứng dụng .NET của họ. Cho dù bạn đang xây dựng một ứng dụng bản đồ, thực hiện phân tích không gian địa lý hay tích hợp các tính năng dựa trên vị trí vào phần mềm của mình, Aspose.GIS đều cung cấp các công cụ bạn cần để xử lý dữ liệu không gian một cách hiệu quả.
 ## Điều kiện tiên quyết
@@ -64,3 +70,9 @@ Có, Aspose.GIS for .NET tương thích với nhiều phiên bản khác nhau c�
 Mặc dù phiên bản dùng thử có sẵn để thử nghiệm nhưng nếu bạn yêu cầu các tính năng bổ sung hoặc cần đánh giá toàn bộ chức năng, bạn có thể xin giấy phép tạm thời từ[mua hàng.aspose.com](https://purchase.aspose.com/temporary-license/).
 ### Aspose.GIS cho .NET có phù hợp cho cả ứng dụng máy tính để bàn và web không?
 Có, Aspose.GIS cho .NET có thể được sử dụng trong nhiều ứng dụng khác nhau, bao gồm các ứng dụng trên máy tính để bàn, web và phía máy chủ, mang lại tính linh hoạt trong các tình huống phát triển khác nhau.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

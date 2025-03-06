@@ -3,10 +3,16 @@ title: Cree un polígono con geometría de agujero usando Aspose.GIS
 linktitle: Crear polígono con geometría de agujero
 second_title: Aspose.GIS API .NET
 description: Aprenda a crear un polígono con geometría de agujero usando Aspose.GIS para .NET. Tutorial paso a paso con ejemplos de código.
-type: docs
 weight: 13
 url: /es/net/geometry-creation/create-polygon-with-hole-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Cree un polígono con geometría de agujero usando Aspose.GIS
+
 ## Introducción
 En este tutorial, recorreremos el proceso de creación de un polígono con una geometría de agujero usando Aspose.GIS para .NET. Aspose.GIS es una poderosa biblioteca que permite a los desarrolladores trabajar con datos geoespaciales en sus aplicaciones .NET. 
 ## Requisitos previos
@@ -66,3 +72,9 @@ Aspose.GIS es una biblioteca .NET que permite a los desarrolladores trabajar con
  Puede encontrar soporte para Aspose.GIS en el[Foro Aspose.GIS](https://forum.aspose.com/c/gis/33).
 ### 5. ¿Cómo puedo obtener una licencia temporal para Aspose.GIS?
  Puede obtener una licencia temporal para Aspose.GIS en[aquí](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Tentukan Grid Presisi untuk Lapisan File GDB di Aspose.GIS
 linktitle: Tentukan Grid Presisi untuk Lapisan File GDB
 second_title: Aspose.GIS .NET API
 description: Pelajari cara menentukan kisi presisi untuk lapisan File GDB menggunakan Aspose.GIS untuk .NET. Ikuti tutorial langkah demi langkah kami.
-type: docs
 weight: 21
 url: /id/net/layer-data-operations/define-precision-grid-for-file-gdb-layer/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Tentukan Grid Presisi untuk Lapisan File GDB di Aspose.GIS
+
 ## Perkenalan
 Dalam tutorial ini, kita akan mempelajari cara mendefinisikan grid presisi untuk lapisan File Geodatabase (GDB) menggunakan Aspose.GIS untuk .NET. Aspose.GIS adalah perpustakaan .NET yang kuat yang menyediakan fungsionalitas geospasial komprehensif untuk bekerja dengan berbagai format file GIS.
 ## Prasyarat
@@ -88,3 +94,9 @@ Ya, Anda dapat melakukan operasi spasial seperti buffering, persimpangan, dan pe
 Ya, Aspose.GIS untuk .NET menyediakan dukungan untuk transformasi koordinat antara sistem referensi spasial yang berbeda.
 ### Apakah ada versi uji coba yang tersedia untuk Aspose.GIS untuk .NET?
 Ya, Anda dapat mengunduh Aspose.GIS versi uji coba gratis untuk .NET dari[situs web](https://releases.aspose.com/gis/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Aspose.GIS를 사용하여 다중 다각형 형상 생성
 linktitle: 다중 다각형 형상 생성
 second_title: Aspose.GIS .NET API
 description: .NET용 Aspose.GIS를 사용하여 MultiPolygon 지오메트리를 만드는 방법을 알아보세요. 초보자를 위한 단계별 가이드입니다. 무료 평가판이 제공됩니다.
-type: docs
 weight: 16
 url: /ko/net/geometry-creation/create-multipolygon-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS를 사용하여 다중 다각형 형상 생성
+
 ## 소개
 지리 정보 시스템(GIS) 개발 세계에서 .NET용 Aspose.GIS는 지리 공간 데이터를 생성, 편집 및 분석하기 위한 강력한 도구로 돋보입니다. 숙련된 개발자이든 이제 막 시작하는 개발자이든 Aspose.GIS를 마스터하면 프로젝트에 대한 가능성의 세계가 열릴 수 있습니다.
 ## 전제조건
@@ -66,3 +72,9 @@ multiPolygon.Add(secondPolygon);
  예, 다음에서 임시 라이센스를 얻을 수 있습니다.[여기](https://purchase.aspose.com/temporary-license/) 평가 목적으로.
 ### Aspose.GIS를 직접 구매할 수 있나요?
  예, 웹사이트에서 Aspose.GIS를 구매할 수 있습니다[여기](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

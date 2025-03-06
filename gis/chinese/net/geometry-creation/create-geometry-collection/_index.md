@@ -3,10 +3,16 @@ title: 使用 Aspose.GIS for .NET 创建几何集合
 linktitle: 创建几何集合
 second_title: Aspose.GIS .NET API
 description: 使用 Aspose.GIS for .NET 释放地理空间数据操作的力量。在 .NET 应用程序中无缝创建、可视化和分析基于位置的数据。
-type: docs
 weight: 21
 url: /zh/net/geometry-creation/create-geometry-collection/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.GIS for .NET 创建几何集合
+
 
 ## 介绍
 
@@ -109,3 +115,9 @@ geometryCollection.Add(line);
 ### 问：是否有社区或论坛可供我寻求帮助并与其他 Aspose.GIS 用户联系？
 
 答：当然！前往[Aspose.GIS论坛](https://forum.aspose.com/c/gis/33)提出问题、分享知识并与 Aspose.GIS 社区的其他开发人员联系。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

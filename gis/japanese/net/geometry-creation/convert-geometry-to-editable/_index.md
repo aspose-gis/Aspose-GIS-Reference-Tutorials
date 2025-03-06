@@ -3,10 +3,16 @@ title: Aspose.GIS を使用してジオメトリを編集可能な形式に変�
 linktitle: ジオメトリを編集可能に変換
 second_title: Aspose.GIS .NET API
 description: Aspose.GIS for .NET を使用して、ジオメトリを編集可能な形式に簡単に変換する方法を説明します。このステップバイステップのチュートリアルに進んでください。
-type: docs
 weight: 22
 url: /ja/net/geometry-creation/convert-geometry-to-editable/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS を使用してジオメトリを編集可能な形式に変換する
+
 ## 導入
 地理空間プログラミングの分野では、効率と正確さが最も重要です。 Aspose.GIS for .NET は、開発者が地理データを簡単に操作できるようにする堅牢なツールキットです。 Aspose.GIS は、包括的な機能セットとユーザーフレンドリーなインターフェイスにより、単純な変換から複雑な空間分析に至るまでのタスクを簡素化します。このチュートリアルでは、そのような機能の 1 つである、Aspose.GIS for .NET を使用したジオメトリの編集可能な形式への変換について詳しく説明します。
 ## 前提条件
@@ -70,3 +76,9 @@ Console.WriteLine(readOnlyLine.AsText()); //ラインストリング (1 1、2 2)
 はい、次のサイトから一時ライセンスを取得できます。[Aspose.GIS 購入ページ](https://purchase.aspose.com/temporary-license/)評価目的のため。
 ### Q: Aspose.GIS を直接購入できますか?
 絶対に！に向かってください。[購入ページ](https://purchase.aspose.com/buy)ニーズに合わせたライセンスを取得します。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

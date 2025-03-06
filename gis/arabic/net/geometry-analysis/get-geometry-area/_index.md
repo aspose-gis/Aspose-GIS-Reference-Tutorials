@@ -3,10 +3,16 @@ title: احصل على المساحة الهندسية باستخدام Aspose.G
 linktitle: الحصول على المساحة الهندسية
 second_title: Aspose.GIS .NET API
 description: أطلق العنان لقوة أنظمة المعلومات الجغرافية في .NET باستخدام Aspose.GIS. أداء العمليات المكانية دون عناء.
-type: docs
 weight: 18
 url: /ar/net/geometry-analysis/get-geometry-area/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# احصل على المساحة الهندسية باستخدام Aspose.GIS
+
 ## مقدمة
 في عالم أنظمة المعلومات الجغرافية (GIS) ومعالجة البيانات المكانية، يبرز Aspose.GIS for .NET كأداة قوية ومتعددة الاستخدامات للمطورين. بفضل مجموعته الغنية من الميزات وواجهات برمجة التطبيقات البديهية، يعمل Aspose.GIS على تمكين المطورين من العمل مع تنسيقات البيانات الجغرافية المختلفة، وتنفيذ العمليات المكانية، ومعالجة الأشكال الهندسية دون عناء داخل تطبيقات .NET.
 ## المتطلبات الأساسية
@@ -72,3 +78,9 @@ Console.WriteLine("{0:F}", multiPolygon.GetArea()); // 8.50
  نعم، تتوفر تراخيص مؤقتة لـ Aspose.GIS لـ .NET. يمكنك الحصول عليها من[صفحة الشراء](https://purchase.aspose.com/temporary-license/).
 ### هل يدعم Aspose.GIS for .NET تنسيقات البيانات الجغرافية المختلفة؟
 بالتأكيد، يدعم Aspose.GIS for .NET نطاقًا واسعًا من تنسيقات البيانات الجغرافية، مما يضمن التوافق والمرونة في معالجة البيانات.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: 将多边形形状文件转换为线串
 linktitle: 将多边形形状文件转换为线串
 second_title: Aspose.GIS .NET API
 description: 探索 Aspose.GIS for .NET 的强大功能，轻松将多边形形状文件转换为线串。今天就促进您的 GIS 开发！
-type: docs
 weight: 18
 url: /zh/net/layer-management/convert-polygon-shapefile-to-linestring/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 将多边形形状文件转换为线串
+
 ## 介绍
 如果您正在使用 .NET 中的地理信息系统 (GIS)，Aspose.GIS 是一个功能强大的库，可以简化您的任务。在本教程中，我们将指导您完成使用 Aspose.GIS 将多边形形状文件转换为线串的过程。当您需要从多边形数据中提取线性要素以用于各种应用（例如路线规划或网络分析）时，这尤其有用。
 ## 先决条件
@@ -78,3 +84,9 @@ destination.Add(destinationFeature);
 是的，您可以访问 Aspose.GIS 免费试用[这个链接](https://releases.aspose.com/).
 ### 我可以在哪里寻求帮助或支持？
 参观[Aspose.GIS论坛](https://forum.aspose.com/c/gis/33)如有任何帮助或支持相关的疑问。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

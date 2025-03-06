@@ -3,10 +3,16 @@ title: Maak een polygoon met gatengeometrie met behulp van Aspose.GIS
 linktitle: Maak veelhoeken met gatengeometrie
 second_title: Aspose.GIS .NET-API
 description: Leer hoe u een polygoon met gatgeometrie kunt maken met Aspose.GIS voor .NET. Stapsgewijze zelfstudie met codevoorbeelden.
-type: docs
 weight: 13
 url: /nl/net/geometry-creation/create-polygon-with-hole-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Maak een polygoon met gatengeometrie met behulp van Aspose.GIS
+
 ## Invoering
 In deze zelfstudie doorlopen we het proces van het maken van een polygoon met een gatgeometrie met behulp van Aspose.GIS voor .NET. Aspose.GIS is een krachtige bibliotheek waarmee ontwikkelaars met georuimtelijke gegevens in hun .NET-applicaties kunnen werken. 
 ## Vereisten
@@ -66,3 +72,9 @@ Aspose.GIS is een .NET-bibliotheek waarmee ontwikkelaars met georuimtelijke gege
  Ondersteuning voor Aspose.GIS vindt u op de[Aspose.GIS-forum](https://forum.aspose.com/c/gis/33).
 ### 5. Hoe kan ik een tijdelijke licentie voor Aspose.GIS verkrijgen?
  U kunt een tijdelijke licentie voor Aspose.GIS verkrijgen bij[hier](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

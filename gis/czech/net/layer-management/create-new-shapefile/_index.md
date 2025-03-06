@@ -3,10 +3,16 @@ title: Vytvořit nový soubor Shapefile
 linktitle: Vytvořit nový soubor Shapefile
 second_title: Aspose.GIS .NET API
 description: Naučte se, jak vytvořit nový shapefile pomocí Aspose.GIS pro .NET. Postupujte podle našeho podrobného průvodce a odemkněte sílu manipulace s prostorovými daty.
-type: docs
 weight: 12
 url: /cs/net/layer-management/create-new-shapefile/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Vytvořit nový soubor Shapefile
+
 ## Úvod
 Pokud se ponoříte do vývoje geografických informačních systémů (GIS) s .NET, Aspose.GIS je vaším řešením. Tato výkonná knihovna umožňuje vývojářům bezproblémově pracovat s prostorovými daty a v tomto tutoriálu vás provedeme procesem vytváření nového souboru shapefile pomocí Aspose.GIS for .NET.
 ## Předpoklady
@@ -80,3 +86,9 @@ Aspose.GIS primárně podporuje .NET, ale existují verze dostupné i pro Javu.
  Získejte dočasnou licenci[tady](https://purchase.aspose.com/temporary-license/).
 ### Otázka: Kde mohu zakoupit Aspose.GIS pro .NET?
  Knihovnu si můžete koupit[tady](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

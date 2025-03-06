@@ -3,10 +3,16 @@ title: 从 Aspose.GIS 中的文件 GDB 层读取对象 ID
 linktitle: 从文件 GDB 层读取对象 ID
 second_title: Aspose.GIS .NET API
 description: 了解如何利用 Aspose.GIS for .NET 高效处理地理空间数据。提供全面的教程和专家指导。
-type: docs
 weight: 16
 url: /zh/net/layer-data-operations/read-object-id-from-file-gdb-layer/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 从 Aspose.GIS 中的文件 GDB 层读取对象 ID
+
 ## 介绍
 欢迎阅读我们关于掌握 Aspose.GIS for .NET 的综合指南！ Aspose.GIS 是一个功能强大的库，旨在在.NET 框架内有效地处理地理空间数据处理和可视化任务。无论您是经验丰富的开发人员还是刚刚开始地理空间编程之旅，本教程都将引导您了解充分利用 Aspose.GIS 潜力所需了解的一切。
 ## 先决条件
@@ -74,3 +80,9 @@ Aspose.GIS for .NET 是专门为 .NET 应用程序设计的。不过，Aspose �
 是的，您可以从 Aspose 网站获取临时许可证用于测试和评估目的。
 ### 在哪里可以找到 Aspose.GIS for .NET 的综合文档？
 您可以参考[文档](https://reference.aspose.com/gis/net/)有关使用 Aspose.GIS API 和功能的详细信息。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

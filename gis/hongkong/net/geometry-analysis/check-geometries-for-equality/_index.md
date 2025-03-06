@@ -3,10 +3,16 @@ title: 檢查幾何形狀是否相等
 linktitle: 檢查幾何形狀是否相等
 second_title: Aspose.GIS .NET API
 description: 透過這個綜合教程，了解如何使用 Aspose.GIS for .NET 檢查 .NET 應用程式中的幾何圖形是否相等。
-type: docs
 weight: 10
 url: /zh-hant/net/geometry-analysis/check-geometries-for-equality/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 檢查幾何形狀是否相等
+
 ## 介紹
 Aspose.GIS for .NET 是一個功能強大的程式庫，使開發人員能夠在其 .NET 應用程式中有效地處理地理空間資料。無論您是建立地圖應用程式、空間分析工具，還是將地理空間功能整合到現有軟體中，Aspose.GIS 都能提供完成工作所需的工具。
 ## 先決條件
@@ -73,3 +79,9 @@ Console.WriteLine(geometry1.SpatiallyEquals(geometry2)); //錯誤的
 您可以從 Aspose.GIS 社群論壇獲得支持[這裡](https://forum.aspose.com/c/gis/33).
 ### 我可以購買 Aspose.GIS for .NET 的臨時授權嗎？
 是的，您可以從[購買頁面](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: خطي الهندسة
 linktitle: خطي الهندسة
 second_title: Aspose.GIS .NET API
 description: تعرف على كيفية استخدام Aspose.GIS for .NET للعمل بكفاءة مع البيانات الجغرافية المكانية، وإجراء التحليل المكاني، والتعامل مع المناطق الجغرافية داخل تطبيقات .NET الخاصة بك.
-type: docs
 weight: 14
 url: /ar/net/geometry-processing/linearize-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# خطي الهندسة
+
 ## مقدمة
 Aspose.GIS for .NET هي مكتبة قوية تتيح للمطورين العمل مع البيانات الجغرافية المكانية بكفاءة داخل تطبيقات .NET. سواء كنت تقوم بإنشاء تطبيق رسم خرائط، أو إجراء تحليل مكاني، أو معالجة البيانات الجغرافية، فإن Aspose.GIS يوفر الأدوات التي تحتاجها لإنجاز المهمة.
 ## المتطلبات الأساسية
@@ -83,3 +89,9 @@ layer.Add(feature);
  نعم، يمكنك تنزيل نسخة تجريبية مجانية من[موقع أسبوز](https://releases.aspose.com/).
 ### س: أين يمكنني العثور على المساعدة والدعم لـ Aspose.GIS؟
  يمكنك زيارة[منتدى Aspose.GIS](https://forum.aspose.com/c/gis/33) للحصول على المساعدة من المجتمع وموظفي الدعم Aspose.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

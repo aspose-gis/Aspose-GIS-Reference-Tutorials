@@ -3,10 +3,16 @@ title: 파일 GDB 계층에 대한 허용오차 설정
 linktitle: 파일 GDB 계층에 대한 허용오차 설정
 second_title: Aspose.GIS .NET API
 description: .NET용 Aspose.GIS를 살펴보고 지리공간 데이터 조작을 마스터하세요. 단계별 안내를 통해 손쉽게 공차를 설정하세요. .NET 애플리케이션을 강화하세요.
-type: docs
 weight: 22
 url: /ko/net/layer-data-operations/set-tolerances-for-file-gdb-layer/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 파일 GDB 계층에 대한 허용오차 설정
+
 ## 소개
 .NET용 Aspose.GIS를 사용하여 지리공간 데이터 조작의 세계에 오신 것을 환영합니다! .NET 애플리케이션에서 지리 정보를 처리하는 기술을 향상시키고 싶다면 잘 찾아오셨습니다. 이 포괄적인 가이드에서는 파일 지리 데이터베이스(GDB) 레이어에 대한 허용 오차 설정에 대한 복잡한 세부 사항을 자세히 살펴보고 실용적인 통찰력과 단계별 지침을 제공합니다.
 ## 전제조건
@@ -69,3 +75,9 @@ using (var layer = dataset.CreateLayer("layer_name", options))
  예, 다음을 얻을 수 있습니다.[임시 면허증](https://purchase.aspose.com/temporary-license/) 테스트 및 평가를 위해.
 ### .NET용 Aspose.GIS 라이선스는 어디서 구입할 수 있나요?
  라이센스는 다음에서 구입할 수 있습니다.[구매 페이지](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

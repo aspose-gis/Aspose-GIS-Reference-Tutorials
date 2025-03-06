@@ -3,10 +3,16 @@ title: Chỉ định Biến thể WKB khi dịch trong Aspose.GIS cho .NET
 linktitle: Chỉ định biến thể WKB trên bản dịch
 second_title: API Aspose.GIS .NET
 description: Tìm hiểu cách chỉ định các biến thể WKB trong Aspose.GIS cho .NET một cách dễ dàng với hướng dẫn toàn diện này. Tăng cường kỹ năng phát triển GIS của bạn.
-type: docs
 weight: 18
 url: /vi/net/geometry-processing/specify-wkb-variant-on-translation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Chỉ định Biến thể WKB khi dịch trong Aspose.GIS cho .NET
+
 ## Giới thiệu
 Trong lĩnh vực phát triển Hệ thống thông tin địa lý (GIS), Aspose.GIS cho .NET nổi bật như một bộ công cụ mạnh mẽ. Tính linh hoạt và hiệu quả của nó khiến nó trở thành lựa chọn phù hợp cho các nhà phát triển muốn tích hợp các chức năng GIS vào các ứng dụng .NET của họ một cách liền mạch. Bài viết này đóng vai trò là hướng dẫn toàn diện để tận dụng Aspose.GIS cho .NET, đặc biệt tập trung vào việc chỉ định các biến thể WKB (Thị phân nổi tiếng) trong quá trình dịch thuật.
 ## Điều kiện tiên quyết
@@ -62,3 +68,9 @@ Aspose.GIS for .NET được thiết kế để tương thích với nhiều phi
  Bạn có thể có được giấy phép tạm thời bằng cách truy cập[trang giấy phép tạm thời](https://purchase.aspose.com/temporary-license/) và làm theo hướng dẫn được cung cấp.
 ### Tôi có thể mua giấy phép Aspose.GIS cho .NET ở đâu?
  Bạn có thể mua giấy phép Aspose.GIS cho .NET từ trang mua hàng tại[liên kết này](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

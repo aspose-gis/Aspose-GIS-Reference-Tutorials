@@ -3,10 +3,16 @@ title: Especifique la variante WKB en la traducción en Aspose.GIS para .NET
 linktitle: Especificar la variante WKB en la traducción
 second_title: Aspose.GIS API .NET
 description: Aprenda a especificar variantes de WKB en Aspose.GIS para .NET sin esfuerzo con esta guía completa. Mejore sus habilidades de desarrollo SIG.
-type: docs
 weight: 18
 url: /es/net/geometry-processing/specify-wkb-variant-on-translation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Especifique la variante WKB en la traducción en Aspose.GIS para .NET
+
 ## Introducción
 En el ámbito del desarrollo de sistemas de información geográfica (SIG), Aspose.GIS para .NET se destaca como un poderoso conjunto de herramientas. Su versatilidad y eficiencia lo convierten en la opción preferida para los desarrolladores que buscan integrar funcionalidades SIG en sus aplicaciones .NET sin problemas. Este artículo sirve como una guía completa para aprovechar Aspose.GIS para .NET, centrándose específicamente en especificar variantes WKB (binario conocido) durante los procesos de traducción.
 ## Requisitos previos
@@ -62,3 +68,9 @@ Aspose.GIS para .NET está diseñado para ser compatible con varias versiones de
  Puede obtener una licencia temporal visitando el[página de licencia temporal](https://purchase.aspose.com/temporary-license/) y siguiendo las instrucciones proporcionadas.
 ### ¿Dónde puedo comprar una licencia de Aspose.GIS para .NET?
  Puede comprar una licencia de Aspose.GIS para .NET desde la página de compra en[este enlace](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

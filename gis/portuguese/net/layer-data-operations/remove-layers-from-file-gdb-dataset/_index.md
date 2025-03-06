@@ -3,10 +3,16 @@ title: Remover camadas do conjunto de dados do arquivo GDB
 linktitle: Remover camadas do conjunto de dados do arquivo GDB
 second_title: API Aspose.GIS .NET
 description: Explore o GIS com Aspose.GIS para .NET! Aprenda a remover camadas dos conjuntos de dados do File GDB passo a passo. Baixe agora para uma experiência perfeita de dados espaciais.
-type: docs
 weight: 17
 url: /pt/net/layer-data-operations/remove-layers-from-file-gdb-dataset/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Remover camadas do conjunto de dados do arquivo GDB
+
 ## Introdução
 Libere todo o potencial dos Sistemas de Informação Geográfica (GIS) com Aspose.GIS for .NET, um poderoso kit de ferramentas projetado para simplificar a manipulação e visualização de dados espaciais. Quer você seja um desenvolvedor experiente ou um entusiasta de GIS, este tutorial irá guiá-lo através do processo de remoção de camadas de um conjunto de dados File Geodatabase (GDB) usando Aspose.GIS for .NET.
 ## Pré-requisitos
@@ -71,3 +77,9 @@ Sim, o Aspose.GIS suporta interoperabilidade com vários formatos GIS, permitind
  Sim, uma licença temporária pode ser adquirida[aqui](https://purchase.aspose.com/temporary-license/).
 ### Existem conjuntos de dados de amostra disponíveis para prática?
 Explore a documentação do Aspose.GIS para conjuntos de dados de amostra e recursos adicionais.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

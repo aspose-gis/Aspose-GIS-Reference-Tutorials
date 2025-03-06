@@ -3,10 +3,16 @@ title: Desbloqueando recursos TopoJSON com Aspose.GIS para .NET
 linktitle: Acessar recursos no TopoJSON
 second_title: API Aspose.GIS .NET
 description: Explore o Aspose.GIS for .NET e aprenda a acessar os recursos do TopoJSON passo a passo. Mergulhe na documentação e libere recursos geoespaciais sem esforço.
-type: docs
 weight: 15
 url: /pt/net/layer-management/access-features-in-topojson/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Desbloqueando recursos TopoJSON com Aspose.GIS para .NET
+
 ## Introdução
 Aspose.GIS for .NET é uma biblioteca poderosa que permite aos desenvolvedores trabalhar com dados geoespaciais sem esforço. Neste tutorial, nos aprofundaremos no acesso a recursos no TopoJSON usando Aspose.GIS for .NET. TopoJSON é um formato que representa características geográficas de forma compacta e eficiente.
 ## Pré-requisitos
@@ -67,3 +73,9 @@ Parabéns! Você acessou com sucesso recursos no TopoJSON usando Aspose.GIS for 
 Sim, você pode acessar um teste gratuito[aqui](https://releases.aspose.com/).
 ### P: Como posso adquirir uma licença?
  Compre uma licença[aqui](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

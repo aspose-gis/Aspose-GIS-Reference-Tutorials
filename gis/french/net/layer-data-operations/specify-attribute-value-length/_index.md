@@ -3,10 +3,16 @@ title: Spécifier la longueur de la valeur d'attribut
 linktitle: Spécifier la longueur de la valeur d'attribut
 second_title: API Aspose.GIS .NET
 description: Explorez le développement géospatial avec Aspose.GIS pour .NET. Gérez et manipulez sans effort les données spatiales dans vos applications .NET.
-type: docs
 weight: 18
 url: /fr/net/layer-data-operations/specify-attribute-value-length/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Spécifier la longueur de la valeur d'attribut
+
 ## Introduction
 Bienvenue dans le monde d'Aspose.GIS pour .NET – votre passerelle vers un développement géospatial puissant et efficace ! Ce didacticiel complet vous guidera à travers les étapes fondamentales de l'utilisation d'Aspose.GIS pour gérer les données géospatiales sans effort dans vos applications .NET. Que vous soyez un développeur chevronné ou un nouveau venu dans la programmation géospatiale, ce guide est conçu pour vous fournir une base solide et des informations pratiques.
 ## Conditions préalables
@@ -61,3 +67,9 @@ Toutes nos félicitations! Vous avez correctement spécifié la longueur de la v
  R : Achetez votre licence[ici](https://purchase.aspose.com/buy).
 ### Q : Où puis-je accéder à la documentation d'Aspose.GIS pour .NET ?
  R : Reportez-vous au[Documentation](https://reference.aspose.com/gis/net/) pour des conseils complets.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

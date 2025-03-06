@@ -3,10 +3,16 @@ title: Uzyskaj wartość atrybutu funkcji
 linktitle: Uzyskaj wartość atrybutu funkcji
 second_title: Aspose.GIS .NET API
 description: Poznaj Aspose.GIS dla .NET – najlepsze narzędzie do bezproblemowej integracji danych GIS. Pobierz teraz bezpłatną wersję próbną! #Aspose #GIS #.NET
-type: docs
 weight: 12
 url: /pl/net/layer-interaction-and-data-access/get-feature-attribute-value/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Uzyskaj wartość atrybutu funkcji
+
 ## Wstęp
 Witamy w świecie Aspose.GIS dla .NET, potężnej biblioteki, która umożliwia programistom .NET bezproblemową pracę z danymi systemu informacji geograficznej (GIS). Niezależnie od tego, czy jesteś doświadczonym programistą, czy dopiero zaczynasz swoją przygodę z GIS, ten samouczek poprowadzi Cię przez proces pobierania wartości atrybutów obiektów przy użyciu Aspose.GIS dla .NET.
 ## Warunki wstępne
@@ -80,3 +86,9 @@ Odp.: Absolutnie! Aspose.GIS jest przeznaczony dla programistów na wszystkich p
  Odp.: Dołącz do dyskusji na temat[Forum Aspose.GIS](https://forum.aspose.com/c/gis/33) aby szukać pomocy i łączyć się z innymi użytkownikami.
 ### P: Czy dostępna jest bezpłatna wersja próbna Aspose.GIS?
  Odp.: Oczywiście! Możesz poznać funkcje Aspose.GIS, pobierając bezpłatną wersję próbną ze strony[Tutaj](https://releases.aspose.com/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: خلق الهندسة
 linktitle: خلق الهندسة
 second_title: Aspose.GIS .NET API
 description: أطلق العنان لإمكانيات معالجة البيانات الجغرافية المكانية باستخدام Aspose.GIS for .NET. انغمس في برامجنا التعليمية التي تغطي إنشاء الأشكال الهندسية وتحويلها وتحليلها.
-type: docs
 weight: 21
 url: /ar/net/geometry-creation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# خلق الهندسة
+
 
 ## مقدمة
 
@@ -105,3 +111,9 @@ Master Aspose.GIS for .NET: تعلم كيفية إنشاء أشكال هندسي
 تعرف على كيفية استخدام Aspose.GIS for .NET لمعالجة البيانات الجغرافية دون عناء. دروس شاملة متاحة.
 ### [تنسيق التحويل مع Aspose.GIS](./convert-coordinates/)
 تعرف على كيفية تحويل الإحداثيات باستخدام Aspose.GIS لـ .NET. يتم توفير دليل خطوة بخطوة والمتطلبات الأساسية والأسئلة الشائعة.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

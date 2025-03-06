@@ -3,10 +3,16 @@ title: Cree una colección de geometría con Aspose.GIS para .NET
 linktitle: Crear colección de geometría
 second_title: Aspose.GIS API .NET
 description: Libere el poder de la manipulación de datos geoespaciales con Aspose.GIS para .NET. Cree, visualice y analice sin problemas datos basados en la ubicación en sus aplicaciones .NET.
-type: docs
 weight: 21
 url: /es/net/geometry-creation/create-geometry-collection/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Cree una colección de geometría con Aspose.GIS para .NET
+
 
 ## Introducción
 
@@ -109,3 +115,9 @@ R: Sí, Aspose.GIS ofrece sólidas capacidades de visualización, lo que le perm
 ### P: ¿Existe una comunidad o foro donde pueda buscar ayuda y conectarme con otros usuarios de Aspose.GIS?
 
  R: ¡Absolutamente! Dirígete al[Foro Aspose.GIS](https://forum.aspose.com/c/gis/33) para hacer preguntas, compartir conocimientos y conectarse con otros desarrolladores en la comunidad Aspose.GIS.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Získejte hodnotu atributu funkce
 linktitle: Získejte hodnotu atributu funkce
 second_title: Aspose.GIS .NET API
 description: Prozkoumejte Aspose.GIS for .NET – dokonalý nástroj pro bezproblémovou integraci dat GIS. Stáhněte si bezplatnou zkušební verzi nyní! #Apose #GIS #.NET
-type: docs
 weight: 12
 url: /cs/net/layer-interaction-and-data-access/get-feature-attribute-value/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Získejte hodnotu atributu funkce
+
 ## Úvod
 Vítejte ve světě Aspose.GIS for .NET, výkonné knihovny, která umožňuje vývojářům .NET bezproblémově pracovat s daty geografického informačního systému (GIS). Ať už jste zkušený vývojář nebo teprve začínáte svou cestu do GIS, tento tutoriál vás provede procesem získávání hodnot atributů funkcí pomocí Aspose.GIS pro .NET.
 ## Předpoklady
@@ -80,3 +86,9 @@ A: Rozhodně! Aspose.GIS vychází vstříc vývojářům všech úrovní dovedn
  A: Zapojte se do diskuze na[Fórum Aspose.GIS](https://forum.aspose.com/c/gis/33) vyhledat pomoc a spojit se s ostatními uživateli.
 ### Otázka: Existuje bezplatná zkušební verze Aspose.GIS?
  A: Určitě! Můžete prozkoumat funkce Aspose.GIS stažením bezplatné zkušební verze z[tady](https://releases.aspose.com/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: 使用 Aspose.GIS 建立具有孔幾何形狀的多邊形
 linktitle: 使用孔幾何形狀建立多邊形
 second_title: Aspose.GIS .NET API
 description: 了解如何使用 Aspose.GIS for .NET 建立具有孔幾何形狀的多邊形。帶有程式碼範例的分步教程。
-type: docs
 weight: 13
 url: /zh-hant/net/geometry-creation/create-polygon-with-hole-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.GIS 建立具有孔幾何形狀的多邊形
+
 ## 介紹
 在本教學中，我們將逐步介紹使用 Aspose.GIS for .NET 建立具有孔幾何形狀的多邊形的過程。 Aspose.GIS 是一個功能強大的程式庫，使開發人員能夠在其 .NET 應用程式中處理地理空間資料。 
 ## 先決條件
@@ -66,3 +72,9 @@ Aspose.GIS 是一個 .NET 函式庫，使開發人員能夠處理地理空間數
 您可以在以下位置找到對 Aspose.GIS 的支持[Aspose.GIS論壇](https://forum.aspose.com/c/gis/33).
 ### 5. 如何取得Aspose.GIS的臨時許可證？
 您可以從以下位置取得 Aspose.GIS 的臨時許可證[這裡](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

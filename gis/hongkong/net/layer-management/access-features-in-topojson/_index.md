@@ -3,10 +3,16 @@ title: 使用 Aspose.GIS for .NET 解鎖 TopoJSON 功能
 linktitle: 存取 TopoJSON 中的功能
 second_title: Aspose.GIS .NET API
 description: 探索 Aspose.GIS for .NET 並學習逐步存取 TopoJSON 功能。深入研究文檔，輕鬆釋放地理空間功能。
-type: docs
 weight: 15
 url: /zh-hant/net/layer-management/access-features-in-topojson/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.GIS for .NET 解鎖 TopoJSON 功能
+
 ## 介紹
 Aspose.GIS for .NET 是一個功能強大的程式庫，可讓開發人員輕鬆處理地理空間資料。在本教程中，我們將深入研究使用 Aspose.GIS for .NET 存取 TopoJSON 中的功能。 TopoJSON 是一種以緊湊且高效的方式表示地理特徵的格式。
 ## 先決條件
@@ -67,3 +73,9 @@ Console.WriteLine(builder.ToString());
 是的，您可以免費試用[這裡](https://releases.aspose.com/).
 ### Q：如何購買許可證？
 購買許可證[這裡](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: .NET용 Aspose.GIS를 사용하여 MultiCurve 형상 생성
 linktitle: 다중 곡선 형상 생성
 second_title: Aspose.GIS .NET API
 description: 효율적인 공간 데이터 표현 및 분석을 위해 Aspose.GIS를 사용하여 .NET에서 MultiCurve 지오메트리를 생성하는 방법을 알아보세요.
-type: docs
 weight: 17
 url: /ko/net/geometry-creation/create-multicurve-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# .NET용 Aspose.GIS를 사용하여 MultiCurve 형상 생성
+
 ## 소개
 .NET을 사용한 지리 정보 시스템(GIS) 개발 영역에서 Aspose.GIS는 강력한 툴킷으로 돋보입니다. 숙련된 개발자이거나 GIS 세계에 입문한 경우에도 Aspose.GIS for .NET은 공간 데이터를 효율적으로 작업할 수 있는 포괄적인 기능 세트를 제공합니다. 이 문서는 MultiCurve 형상 생성 기능 중 하나를 활용하는 단계별 가이드 역할을 합니다.
 ## 전제조건
@@ -82,3 +88,9 @@ MultiCurve 형상이 있는 기능을 VectorLayer에 추가합니다.
 예, 다음에서 .NET용 Aspose.GIS 무료 평가판을 다운로드할 수 있습니다.[Aspose.GIS 웹사이트](https://releases.aspose.com/gis/net/) 구매하기 전에 기능을 살펴보세요.
 ### .NET용 Aspose.GIS를 사용하는 동안 문제가 발생하면 어떻게 도움을 받을 수 있나요?
 Aspose.GIS 커뮤니티 포럼에서 도움을 구하거나 Aspose에서 제공하는 지원 리소스에 액세스할 수 있습니다.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

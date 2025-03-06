@@ -3,10 +3,16 @@ title: Δημιουργήστε πολύγωνο με γεωμετρία οπώ�
 linktitle: Δημιουργήστε πολύγωνο με γεωμετρία οπών
 second_title: Aspose.GIS .NET API
 description: Μάθετε πώς να δημιουργείτε πολύγωνο με γεωμετρία οπών χρησιμοποιώντας το Aspose.GIS για .NET. Βήμα προς βήμα σεμινάριο με παραδείγματα κώδικα.
-type: docs
 weight: 13
 url: /el/net/geometry-creation/create-polygon-with-hole-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Δημιουργήστε πολύγωνο με γεωμετρία οπών χρησιμοποιώντας το Aspose.GIS
+
 ## Εισαγωγή
 Σε αυτό το σεμινάριο, θα ακολουθήσουμε τη διαδικασία δημιουργίας ενός πολυγώνου με γεωμετρία οπής χρησιμοποιώντας το Aspose.GIS για .NET. Το Aspose.GIS είναι μια ισχυρή βιβλιοθήκη που επιτρέπει στους προγραμματιστές να εργάζονται με γεωχωρικά δεδομένα στις εφαρμογές τους .NET. 
 ## Προαπαιτούμενα
@@ -66,3 +72,9 @@ polygon.AddInteriorRing(hole);
  Μπορείτε να βρείτε υποστήριξη για το Aspose.GIS στο[Φόρουμ Aspose.GIS](https://forum.aspose.com/c/gis/33).
 ### 5. Πώς μπορώ να αποκτήσω προσωρινή άδεια για το Aspose.GIS;
  Μπορείτε να αποκτήσετε μια προσωρινή άδεια για το Aspose.GIS από[εδώ](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

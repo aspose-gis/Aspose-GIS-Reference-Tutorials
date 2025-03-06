@@ -3,10 +3,16 @@ title: Aspose.GIS에서 파일 GDB 레이어에 대한 정밀 그리드 정의
 linktitle: 파일 GDB 계층에 대한 정밀 그리드 정의
 second_title: Aspose.GIS .NET API
 description: .NET용 Aspose.GIS를 사용하여 파일 GDB 레이어에 대한 정밀 그리드를 정의하는 방법을 알아보세요. 단계별 튜토리얼을 따라해보세요.
-type: docs
 weight: 21
 url: /ko/net/layer-data-operations/define-precision-grid-for-file-gdb-layer/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS에서 파일 GDB 레이어에 대한 정밀 그리드 정의
+
 ## 소개
 이 튜토리얼에서는 .NET용 Aspose.GIS를 사용하여 파일 지리 데이터베이스(GDB) 레이어에 대한 정밀 그리드를 정의하는 방법을 살펴보겠습니다. Aspose.GIS는 다양한 GIS 파일 형식으로 작업할 수 있는 포괄적인 지리공간 기능을 제공하는 강력한 .NET 라이브러리입니다.
 ## 전제조건
@@ -88,3 +94,9 @@ catch (GisException e)
 예, Aspose.GIS for .NET은 서로 다른 공간 참조 시스템 간의 좌표 변환을 지원합니다.
 ### .NET용 Aspose.GIS에 사용할 수 있는 평가판이 있습니까?
 예, 다음에서 .NET용 Aspose.GIS 무료 평가판을 다운로드할 수 있습니다.[웹사이트](https://releases.aspose.com/gis/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Aspose.GIS를 사용한 좌표 변환
 linktitle: 좌표 변환
 second_title: Aspose.GIS .NET API
 description: .NET용 Aspose.GIS를 사용하여 좌표를 변환하는 방법을 알아보세요. 단계별 가이드, 전제 조건 및 FAQ가 제공됩니다.
-type: docs
 weight: 25
 url: /ko/net/geometry-creation/convert-coordinates/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS를 사용한 좌표 변환
+
 ## 소개
 이 튜토리얼에서는 강력한 .NET용 Aspose.GIS 라이브러리를 사용하여 지리 정보 시스템(GIS)의 세계를 탐구합니다. Aspose.GIS는 개발자가 공간 데이터를 쉽게 사용할 수 있도록 지원하는 포괄적인 툴킷입니다. 숙련된 개발자이든 이제 막 시작하는 개발자이든 이 튜토리얼은 Aspose.GIS를 활용하여 좌표를 효과적으로 변환하는 과정을 안내합니다.
 ## 전제조건
@@ -66,3 +72,9 @@ Aspose.GIS는 주로 .NET 개발자를 대상으로 하지만 Aspose.GIS for Jav
  예, 임시 라이센스는 다음에서 얻을 수 있습니다.[임시 라이센스 페이지](https://purchase.aspose.com/temporary-license/).
 ### Aspose.GIS는 어디서 구입할 수 있나요?
  Aspose.GIS는 다음에서 구입할 수 있습니다.[구매 페이지](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Ottieni informazioni sugli attributi del layer
 linktitle: Ottieni informazioni sugli attributi del layer
 second_title: API Aspose.GIS .NET
 description: Scopri la potenza di Aspose.GIS per .NET in questo tutorial passo passo. Recupera facilmente le informazioni sugli attributi del livello. Scarica la prova gratis adesso!
-type: docs
 weight: 11
 url: /it/net/layer-interaction-and-data-access/get-layer-attribute-information/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Ottieni informazioni sugli attributi del layer
+
 ## introduzione
 Benvenuti nel nostro tutorial approfondito su come sfruttare la potenza di Aspose.GIS per .NET! Se desideri tuffarti nel mondo dei sistemi informativi geografici (GIS) utilizzando il framework .NET, sei nel posto giusto. In questa guida ti guideremo attraverso i passaggi essenziali per il recupero delle informazioni sugli attributi dei layer, fornendo una solida base per il tuo percorso di sviluppo GIS.
 ## Prerequisiti
@@ -66,3 +72,9 @@ R: Aspose.GIS rilascia aggiornamenti frequenti per garantire la compatibilità c
  R: Sì, puoi trovare una comunità di supporto su[Forum Aspose.GIS](https://forum.aspose.com/c/gis/33) per discutere domande, condividere esperienze e chiedere assistenza.
 ### D: Posso provare Aspose.GIS prima di acquistare una licenza?
  R: Certamente! Prendi il tuo[prova gratuita qui](https://releases.aspose.com/) ed esplorare tutto il potenziale di Aspose.GIS.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

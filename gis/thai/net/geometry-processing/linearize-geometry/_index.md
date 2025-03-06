@@ -3,10 +3,16 @@ title: ทำให้เรขาคณิตเป็นเส้นตรง
 linktitle: ทำให้เรขาคณิตเป็นเส้นตรง
 second_title: Aspose.GIS .NET API
 description: เรียนรู้วิธีใช้ Aspose.GIS สำหรับ .NET เพื่อทำงานกับข้อมูลเชิงพื้นที่ วิเคราะห์เชิงพื้นที่ และจัดการทางภูมิศาสตร์ภายในแอปพลิเคชัน .NET ของคุณอย่างมีประสิทธิภาพ
-type: docs
 weight: 14
 url: /th/net/geometry-processing/linearize-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# ทำให้เรขาคณิตเป็นเส้นตรง
+
 ## การแนะนำ
 Aspose.GIS สำหรับ .NET เป็นไลบรารีที่มีประสิทธิภาพซึ่งช่วยให้นักพัฒนาสามารถทำงานกับข้อมูลภูมิสารสนเทศภายในแอปพลิเคชัน .NET ได้อย่างมีประสิทธิภาพ ไม่ว่าคุณจะสร้างแอปพลิเคชันการทำแผนที่ ทำการวิเคราะห์เชิงพื้นที่ หรือจัดการข้อมูลทางภูมิศาสตร์ Aspose.GIS มีเครื่องมือที่คุณต้องการเพื่อให้งานสำเร็จลุล่วง
 ## ข้อกำหนดเบื้องต้น
@@ -83,3 +89,9 @@ layer.Add(feature);
  ใช่ คุณสามารถดาวน์โหลดรุ่นทดลองใช้ฟรีได้จาก[เว็บไซต์กำหนด](https://releases.aspose.com/).
 ### ถาม: ฉันจะขอความช่วยเหลือและสนับสนุน Aspose.GIS ได้ที่ไหน
  ท่านสามารถเยี่ยมชมได้ที่[ฟอรัม Aspose.GIS](https://forum.aspose.com/c/gis/33) เพื่อขอความช่วยเหลือจากชุมชนและเจ้าหน้าที่สนับสนุนของ Aspose
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

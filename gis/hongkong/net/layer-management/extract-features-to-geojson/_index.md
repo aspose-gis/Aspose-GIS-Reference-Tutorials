@@ -3,10 +3,16 @@ title: 將特徵提取到 GeoJSON
 linktitle: 將特徵提取到 GeoJSON
 second_title: Aspose.GIS .NET API
 description: 探索使用 Aspose.GIS for .NET 將要素提取到 GeoJSON 的逐步指南。輕鬆利用 GIS 的力量！ #Aspose #GIS
-type: docs
 weight: 23
 url: /zh-hant/net/layer-management/extract-features-to-geojson/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 將特徵提取到 GeoJSON
+
 ## 介紹
 歡迎來到我們關於使用 Aspose.GIS for .NET 將特徵提取到 GeoJSON 的逐步教學！無論您是經驗豐富的開發人員還是剛開始 GIS 程式設計之旅，本指南都將引導您完成整個過程，確保您充分利用 Aspose.GIS for .NET 的全部功能。
 ## 先決條件
@@ -87,3 +93,9 @@ outputLayer.Add(outputFeature);
 是的，您可以找到免費試用版[這裡](https://releases.aspose.com/).
 ### Q：哪裡可以購買 Aspose.GIS for .NET？
 您可以購買該產品[這裡](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

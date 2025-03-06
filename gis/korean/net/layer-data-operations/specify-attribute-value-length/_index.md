@@ -3,10 +3,16 @@ title: 속성 값 길이 지정
 linktitle: 속성 값 길이 지정
 second_title: Aspose.GIS .NET API
 description: .NET용 Aspose.GIS를 사용하여 지리공간 개발을 살펴보세요. .NET 애플리케이션에서 공간 데이터를 손쉽게 관리하고 조작할 수 있습니다.
-type: docs
 weight: 18
 url: /ko/net/layer-data-operations/specify-attribute-value-length/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 속성 값 길이 지정
+
 ## 소개
 강력하고 효율적인 지리공간 개발을 위한 관문인 .NET용 Aspose.GIS의 세계에 오신 것을 환영합니다! 이 포괄적인 튜토리얼은 Aspose.GIS를 사용하여 .NET 애플리케이션에서 지리공간 데이터를 쉽게 관리하는 기본 단계를 안내합니다. 숙련된 개발자이든 지리공간 프로그래밍을 처음 접하는 사람이든 관계없이 이 가이드는 탄탄한 기초와 실용적인 통찰력을 제공하도록 설계되었습니다.
 ## 전제조건
@@ -61,3 +67,9 @@ layer.Add(feature);
  A: 라이센스를 구매하세요[여기](https://purchase.aspose.com/buy).
 ### Q: .NET용 Aspose.GIS 문서에 어디서 액세스할 수 있나요?
  답: 다음을 참조하세요.[선적 서류 비치](https://reference.aspose.com/gis/net/) 종합적인 안내를 위해.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

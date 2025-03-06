@@ -3,10 +3,16 @@ title: Oblicz wypukły kadłub za pomocą Aspose.GIS dla .NET
 linktitle: Uzyskaj geometrię wypukłego kadłuba
 second_title: Aspose.GIS .NET API
 description: Dowiedz się, jak obliczyć wypukłą powłokę geometrii w .NET przy użyciu Aspose.GIS. Obszerny samouczek z przykładami kodu i często zadawanymi pytaniami.
-type: docs
 weight: 20
 url: /pl/net/geometry-analysis/get-geometry-convex-hull/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Oblicz wypukły kadłub za pomocą Aspose.GIS dla .NET
+
 ## Wstęp
 Aspose.GIS dla .NET to potężna biblioteka zapewniająca szeroką gamę funkcjonalności do pracy z systemami informacji geograficznej (GIS) w aplikacjach .NET. Niezależnie od tego, czy budujesz aplikacje mapowe, analizujesz dane przestrzenne, czy wykonujesz operacje geoprzestrzenne, Aspose.GIS upraszcza ten proces dzięki intuicyjnemu interfejsowi API i wszechstronnemu zestawowi funkcji.
 ## Warunki wstępne
@@ -79,3 +85,9 @@ Absolutnie Aspose.GIS obsługuje szeroką gamę formatów geoprzestrzennych, w t
  Tymczasowe licencje na Aspose.GIS można nabyć za pośrednictwem wyznaczonego[tymczasowy link do licencji](https://purchase.aspose.com/temporary-license/), umożliwiając nieprzerwane użytkowanie w okresach próbnych lub projektach krótkoterminowych.
 ### P: Gdzie mogę szukać pomocy lub uczestniczyć w dyskusjach związanych z Aspose.GIS?
 Aby uzyskać wsparcie, wskazówki i interakcję ze społecznością, odwiedź forum Aspose.GIS[Tutaj](https://forum.aspose.com/c/gis/33), gdzie możesz nawiązać kontakt z innymi programistami, zadawać pytania i dzielić się spostrzeżeniami.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

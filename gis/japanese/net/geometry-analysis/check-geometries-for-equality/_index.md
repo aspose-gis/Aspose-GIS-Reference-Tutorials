@@ -3,10 +3,16 @@ title: ジオメトリが等しいかどうかを確認する
 linktitle: ジオメトリが等しいかどうかを確認する
 second_title: Aspose.GIS .NET API
 description: この包括的なチュートリアルでは、Aspose.GIS for .NET を使用して .NET アプリケーション内のジオメトリが等しいかどうかをチェックする方法を学びます。
-type: docs
 weight: 10
 url: /ja/net/geometry-analysis/check-geometries-for-equality/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# ジオメトリが等しいかどうかを確認する
+
 ## 導入
 Aspose.GIS for .NET は、開発者が .NET アプリケーションで地理空間データを効率的に操作できるようにする強力なライブラリです。マッピング アプリケーション、空間分析ツールを構築している場合でも、地理空間機能を既存のソフトウェアに統合している場合でも、Aspose.GIS はその作業を完了するために必要なツールを提供します。
 ## 前提条件
@@ -73,3 +79,9 @@ Console.WriteLine(geometry1.SpatiallyEquals(geometry2)); //間違い
 Aspose.GIS コミュニティ フォーラムからサポートを受けることができます。[ここ](https://forum.aspose.com/c/gis/33).
 ### Aspose.GIS for .NET の一時ライセンスを購入できますか?
 はい、一時ライセンスは次から購入できます。[購入ページ](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

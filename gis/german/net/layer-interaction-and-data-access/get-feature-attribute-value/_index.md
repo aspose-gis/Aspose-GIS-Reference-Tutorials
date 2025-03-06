@@ -3,10 +3,16 @@ title: Feature-Attributwert abrufen
 linktitle: Feature-Attributwert abrufen
 second_title: Aspose.GIS .NET-API
 description: Entdecken Sie Aspose.GIS für .NET – das ultimative Tool für die nahtlose GIS-Datenintegration. Laden Sie jetzt Ihre kostenlose Testversion herunter! #Aspose #GIS #.NET
-type: docs
 weight: 12
 url: /de/net/layer-interaction-and-data-access/get-feature-attribute-value/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Feature-Attributwert abrufen
+
 ## Einführung
 Willkommen in der Welt von Aspose.GIS für .NET, einer leistungsstarken Bibliothek, die .NET-Entwicklern die nahtlose Arbeit mit Daten von geografischen Informationssystemen (GIS) ermöglicht. Unabhängig davon, ob Sie ein erfahrener Entwickler sind oder gerade erst Ihre Reise in GIS beginnen, führt Sie dieses Tutorial durch den Prozess des Abrufens von Feature-Attributwerten mit Aspose.GIS für .NET.
 ## Voraussetzungen
@@ -80,3 +86,9 @@ A: Auf jeden Fall! Aspose.GIS richtet sich an Entwickler aller Erfahrungsstufen 
  A: Beteiligen Sie sich an der Diskussion über[Aspose.GIS-Forum](https://forum.aspose.com/c/gis/33) um Hilfe zu suchen und mit anderen Benutzern in Kontakt zu treten.
 ### F: Gibt es eine kostenlose Testversion von Aspose.GIS?
  A: Auf jeden Fall! Sie können die Funktionen von Aspose.GIS erkunden, indem Sie die kostenlose Testversion herunterladen[Hier](https://releases.aspose.com/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

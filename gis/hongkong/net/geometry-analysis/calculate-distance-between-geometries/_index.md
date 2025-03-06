@@ -3,10 +3,16 @@ title: 使用 Aspose.GIS 計算幾何圖形之間的距離
 linktitle: 計算幾何圖形之間的距離
 second_title: Aspose.GIS .NET API
 description: 了解如何使用 Aspose.GIS 計算 .NET 中幾何圖形之間的距離。帶有程式碼範例的分步指南。增強您的地理空間應用程式。
-type: docs
 weight: 21
 url: /zh-hant/net/geometry-analysis/calculate-distance-between-geometries/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.GIS 計算幾何圖形之間的距離
+
 ## 介紹
 在地理空間程式設計領域，計算不同幾何形狀之間的距離的能力至關重要。無論您處理的是多邊形、直線還是點，了解它們之間的距離對於從地圖繪製到物流規劃的各種應用都至關重要。 Aspose.GIS for .NET 提供了強大的工具來輕鬆、精確地執行此類計算。
 ## 先決條件
@@ -84,3 +90,9 @@ Console.WriteLine(distance.ToString("F")); //0.63
 Aspose.GIS for .NET 提供與其他 GIS 程式庫的互通性，讓您可以利用附加功能。
 ### Aspose.GIS for .NET 使用者是否可以獲得技術支援？
 是的，Aspose.GIS for .NET 的使用者可以透過 Aspose 獲得技術支持[論壇](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

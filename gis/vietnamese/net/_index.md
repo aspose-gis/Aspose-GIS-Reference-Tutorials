@@ -1,12 +1,17 @@
 ---
 title: Hướng dẫn toàn diện và ví dụ về Aspose.GIS cho .NET
 linktitle: Hướng dẫn Aspose.GIS cho .NET
-type: docs
 weight: 10
 url: /vi/net/
 description: Khám phá sức mạnh của Aspose.GIS dành cho .NET thông qua các hướng dẫn toàn diện. Làm chủ chuyển đổi GeoData, tạo hình học, phân tích, quản lý lớp, v.v.
-is_root: true
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Hướng dẫn toàn diện và ví dụ về Aspose.GIS cho .NET
+
 
 ## Giới thiệu
 
@@ -94,3 +99,10 @@ Mở khóa tiềm năng của Aspose.GIS cho .NET với Hướng dẫn truy cậ
 Khám phá các hướng dẫn toàn diện về hoạt động dữ liệu lớp bằng Aspose.GIS cho .NET. Tìm hiểu cách đọc, thao tác và trực quan hóa dữ liệu không gian địa lý.
 ### [Hiển thị bản đồ](./map-rendering/)
 Mở khóa tiềm năng trực quan hóa dữ liệu không gian địa lý với Aspose.GIS cho .NET. Dễ dàng nhập SLD, gắn nhãn các tính năng và hiển thị bản đồ tuyệt đẹp. Khám phá ngay bây giờ!
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Aspose.GIS를 사용하여 형상 영역 가져오기
 linktitle: 형상 영역 가져오기
 second_title: Aspose.GIS .NET API
 description: Aspose.GIS를 사용하여 .NET에서 지리 정보 시스템의 강력한 기능을 활용하세요. 손쉽게 공간 작업을 수행하세요.
-type: docs
 weight: 18
 url: /ko/net/geometry-analysis/get-geometry-area/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS를 사용하여 형상 영역 가져오기
+
 ## 소개
 지리 정보 시스템(GIS) 및 공간 데이터 처리 분야에서 Aspose.GIS for .NET은 개발자를 위한 강력하고 다양한 도구로 돋보입니다. 풍부한 기능 세트와 직관적인 API를 통해 Aspose.GIS는 개발자가 다양한 지리적 데이터 형식으로 작업하고, 공간 작업을 수행하고, .NET 애플리케이션 내에서 형상을 쉽게 조작할 수 있도록 지원합니다.
 ## 전제조건
@@ -72,3 +78,9 @@ Console.WriteLine("{0:F}", multiPolygon.GetArea()); // 8시 50분
  예, .NET용 Aspose.GIS에 대한 임시 라이선스를 사용할 수 있습니다. 당신은에서 얻을 수 있습니다[구매 페이지](https://purchase.aspose.com/temporary-license/).
 ### .NET용 Aspose.GIS는 다양한 지리 데이터 형식을 지원합니까?
 물론, Aspose.GIS for .NET은 광범위한 지리 데이터 형식을 지원하여 데이터 처리의 호환성과 유연성을 보장합니다.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

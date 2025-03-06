@@ -3,10 +3,16 @@ title: .NET용 Aspose.GIS를 사용하여 원형 문자열 형상 생성
 linktitle: 원형 문자열 형상 생성
 second_title: Aspose.GIS .NET API
 description: .NET용 Aspose.GIS를 사용하여 GIS 개발의 힘을 활용하세요. 공간 데이터를 손쉽게 생성, 분석, 시각화하세요.
-type: docs
 weight: 20
 url: /ko/net/geometry-creation/create-circular-string-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# .NET용 Aspose.GIS를 사용하여 원형 문자열 형상 생성
+
 ## 소개
 GIS(지리 정보 시스템) 개발 영역에서 .NET용 Aspose.GIS는 개발자에게 공간 데이터를 쉽게 사용할 수 있는 강력한 프레임워크를 제공하는 강력한 도구로 등장합니다. Aspose.GIS의 기능을 활용하여 개발자는 지리적 데이터를 쉽게 조작, 분석 및 시각화하여 정교한 GIS 애플리케이션을 제작할 수 있습니다.
 ## 전제조건
@@ -80,3 +86,9 @@ layer.Add(feature);
  예, Aspose.GIS 포럼을 방문할 수 있습니다.[여기](https://forum.aspose.com/c/gis/33) 지원을 구하고 지역사회에 참여합니다.
 ### .NET용 Aspose.GIS를 평가하기 위한 임시 라이선스를 얻을 수 있습니까?
  틀림없이! 평가 목적으로 임시 라이센스를 얻을 수 있습니다.[여기](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: 将 Shape 文件转换为 GeoJSON
 linktitle: 将 Shape 文件转换为 GeoJSON
 second_title: Aspose.GIS .NET API
 description: 了解如何使用 Aspose.GIS 在 .NET 中轻松将 Shapefile 转换为 GeoJSON。请遵循我们的分步指南，实现无缝数据互操作。
-type: docs
 weight: 15
 url: /zh/net/geo-data-conversion/convert-shapefile-to-geojson/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 将 Shape 文件转换为 GeoJSON
+
 ## 介绍
 在地理信息系统 (GIS) 领域，数据互操作性对于无缝集成和分析至关重要。一项常见任务是将 Shapefile（一种广泛使用的地理空间矢量数据格式）转换为 GeoJSON（一种用于地理空间数据交换的轻量级格式）。本教程将指导您使用 Aspose.GIS for .NET 库轻松完成将 Shapefile 转换为 GeoJSON 的过程。
 ## 先决条件
@@ -58,3 +64,9 @@ Aspose.GIS for .NET 支持.NET Framework 4.5 及更高版本。
 是的，Aspose.GIS for .NET 提供了广泛的选项，可根据您的要求自定义转换过程。
 ### Aspose.GIS for .NET 有试用版吗？
 是的，您可以从以下网站获取 Aspose.GIS for .NET 的免费试用版：[网站](https://releases.aspose.com/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

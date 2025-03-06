@@ -3,10 +3,16 @@ title: Ebenenverwaltung
 linktitle: Ebenenverwaltung
 second_title: Aspose.GIS .NET-API
 description: Erschließen Sie das Potenzial der Geodatenentwicklung mit Aspose.GIS für .NET-Tutorials. Erstellen, verwalten und bearbeiten Sie mühelos GIS-Datensätze.
-type: docs
 weight: 24
 url: /de/net/layer-management/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Ebenenverwaltung
+
 ## Einführung
 
 Aspose.GIS für .NET ermöglicht Entwicklern, in die spannende Welt der Geodatenentwicklung einzutauchen. In dieser umfassenden Tutorial-Liste erkunden wir verschiedene Layer-Management-Tutorials, die Sie dabei unterstützen, das volle Potenzial von Aspose.GIS für .NET auszuschöpfen. Von der Erstellung neuer File-GDB-Datensätze bis hin zur Bearbeitung räumlicher Daten decken diese Tutorials alles ab.
@@ -68,3 +74,9 @@ Entdecken Sie Geodaten-Magie mit Aspose.GIS für .NET! Ebenenfunktionen mühelos
 Entdecken Sie die Leistungsfähigkeit von Aspose.GIS für .NET bei der Manipulation räumlicher Daten. Filtern Sie Features mühelos, verbessern Sie GIS-Anwendungen und steigern Sie die Produktivität.
 ### [Extrahieren Sie Features nach GeoJSON](./extract-features-to-geojson/)
 Entdecken Sie die Schritt-für-Schritt-Anleitung zur Verwendung von Aspose.GIS für .NET zum Extrahieren von Features in GeoJSON. Nutzen Sie die Leistungsfähigkeit von GIS ganz einfach! 
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

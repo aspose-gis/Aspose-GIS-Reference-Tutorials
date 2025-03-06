@@ -3,10 +3,16 @@ title: Tentukan Varian WKB pada Terjemahan di Aspose.GIS untuk .NET
 linktitle: Tentukan Varian WKB pada Penerjemahan
 second_title: Aspose.GIS .NET API
 description: Pelajari cara menentukan varian WKB di Aspose.GIS untuk .NET dengan mudah menggunakan panduan komprehensif ini. Tingkatkan keterampilan pengembangan GIS Anda.
-type: docs
 weight: 18
 url: /id/net/geometry-processing/specify-wkb-variant-on-translation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Tentukan Varian WKB pada Terjemahan di Aspose.GIS untuk .NET
+
 ## Perkenalan
 Dalam bidang pengembangan Sistem Informasi Geografis (GIS), Aspose.GIS untuk .NET menonjol sebagai perangkat yang canggih. Fleksibilitas dan efisiensinya menjadikannya pilihan tepat bagi pengembang yang ingin mengintegrasikan fungsi GIS ke dalam aplikasi .NET mereka dengan lancar. Artikel ini berfungsi sebagai panduan komprehensif untuk memanfaatkan Aspose.GIS untuk .NET, khususnya berfokus pada penentuan varian WKB (Biner Terkenal) selama proses penerjemahan.
 ## Prasyarat
@@ -62,3 +68,9 @@ Aspose.GIS untuk .NET dirancang agar kompatibel dengan berbagai versi .NET, mema
  Anda dapat memperoleh lisensi sementara dengan mengunjungi[halaman lisensi sementara](https://purchase.aspose.com/temporary-license/) dan mengikuti instruksi yang diberikan.
 ### Di mana saya dapat membeli lisensi Aspose.GIS untuk .NET?
  Anda dapat membeli lisensi Aspose.GIS untuk .NET dari halaman pembelian di[Link ini](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Functiekenmerkwaarde ophalen
 linktitle: Functiekenmerkwaarde ophalen
 second_title: Aspose.GIS .NET-API
 description: Ontdek Aspose.GIS voor .NET – de ultieme tool voor naadloze GIS-gegevensintegratie. Download nu uw gratis proefversie! #Aspose #GIS #.NET
-type: docs
 weight: 12
 url: /nl/net/layer-interaction-and-data-access/get-feature-attribute-value/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Functiekenmerkwaarde ophalen
+
 ## Invoering
 Welkom in de wereld van Aspose.GIS voor .NET, een krachtige bibliotheek waarmee .NET-ontwikkelaars naadloos kunnen werken met GIS-gegevens (geografisch informatiesysteem). Of u nu een doorgewinterde ontwikkelaar bent of net begint aan uw reis naar GIS, deze tutorial leidt u door het proces van het ophalen van kenmerkattribuutwaarden met behulp van Aspose.GIS voor .NET.
 ## Vereisten
@@ -80,3 +86,9 @@ EEN: Absoluut! Aspose.GIS is geschikt voor ontwikkelaars van alle vaardigheidsni
  A: Doe mee aan de discussie over de[Aspose.GIS-forum](https://forum.aspose.com/c/gis/33) om hulp te zoeken en contact te maken met andere gebruikers.
 ### Vraag: Is er een gratis proefversie van Aspose.GIS?
  EEN: Zeker! U kunt de functies van Aspose.GIS verkennen door de gratis proefversie te downloaden van[hier](https://releases.aspose.com/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

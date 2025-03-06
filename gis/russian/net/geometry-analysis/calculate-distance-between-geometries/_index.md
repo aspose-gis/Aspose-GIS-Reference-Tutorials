@@ -3,10 +3,16 @@ title: Вычислить расстояние между геометриями
 linktitle: Вычислить расстояние между геометриями
 second_title: API Aspose.GIS .NET
 description: Узнайте, как вычислять расстояния между геометриями в .NET с помощью Aspose.GIS. Пошаговое руководство с примерами кода. Усовершенствуйте свои геопространственные приложения.
-type: docs
 weight: 21
 url: /ru/net/geometry-analysis/calculate-distance-between-geometries/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Вычислить расстояние между геометриями с помощью Aspose.GIS
+
 ## Введение
 В сфере геопространственного программирования способность рассчитывать расстояния между объектами различной геометрии имеет первостепенное значение. Независимо от того, имеете ли вы дело с полигонами, линиями или точками, знание расстояния между ними может иметь решающее значение для различных приложений, от картографирования до планирования логистики. Aspose.GIS for .NET предоставляет мощные инструменты для простого и точного выполнения таких вычислений.
 ## Предварительные условия
@@ -84,3 +90,9 @@ Console.WriteLine(distance.ToString("F")); // 0,63
 Aspose.GIS for .NET обеспечивает совместимость с другими библиотеками ГИС, позволяя вам использовать дополнительные функции.
 ### Доступна ли техническая поддержка для Aspose.GIS для пользователей .NET?
  Да, пользователи Aspose.GIS for .NET могут получить доступ к технической поддержке через Aspose.[форумы](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: สร้างเรขาคณิต MultiPoint ด้วย Aspose.GI
 linktitle: สร้างเรขาคณิตหลายจุด
 second_title: Aspose.GIS .NET API
 description: Master Aspose.GIS for .NET - เรียนรู้การสร้างรูปทรงเรขาคณิตแบบหลายจุดได้อย่างง่ายดาย บทช่วยสอนที่ครอบคลุมสำหรับนักพัฒนา
-type: docs
 weight: 14
 url: /th/net/geometry-creation/create-multipoint-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# สร้างเรขาคณิต MultiPoint ด้วย Aspose.GIS สำหรับ .NET
+
 ## การแนะนำ
 
 ในโลกของระบบสารสนเทศภูมิศาสตร์ (GIS) Aspose.GIS สำหรับ .NET มีความโดดเด่นในฐานะเครื่องมืออันทรงพลังสำหรับนักพัฒนา คุณสมบัติที่แข็งแกร่งและความยืดหยุ่นทำให้เป็นตัวเลือกอันดับต้นๆ สำหรับการทำงานกับข้อมูลเชิงพื้นที่ในแอปพลิเคชัน .NET ในบทช่วยสอนนี้ เราจะเจาะลึกพื้นฐานของ Aspose.GIS สำหรับ .NET โดยเน้นไปที่การสร้างรูปทรงเรขาคณิตแบบหลายจุดโดยเฉพาะ ไม่ว่าคุณจะเป็นนักพัฒนาที่มีประสบการณ์หรือเพิ่งเริ่มต้น คู่มือนี้จะแนะนำคุณในแต่ละขั้นตอน ทำให้ง่ายต่อการเข้าใจและนำไปใช้
@@ -82,3 +88,9 @@ multipoint.Add(new Point(3, 4));
 
 ### ถาม: ฉันสามารถซื้อใบอนุญาตชั่วคราวสำหรับโครงการระยะสั้นได้หรือไม่
 ตอบ: ได้ คุณสามารถได้รับใบอนุญาตชั่วคราวสำหรับความต้องการเฉพาะของโครงการของคุณได้
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

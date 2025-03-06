@@ -3,10 +3,16 @@ title: Aspose.GIS の GML からフィーチャを読み取る
 linktitle: GML から機能を読み取る
 second_title: Aspose.GIS .NET API
 description: Aspose.GIS for .NET を使用して GML ファイルからフィーチャを読み取る方法を学びます。 GIS 開発者向けの包括的なチュートリアル。
-type: docs
 weight: 10
 url: /ja/net/layer-data-operations/read-features-from-gml/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS の GML からフィーチャを読み取る
+
 ## 導入
 
 強力な Aspose.GIS for .NET ライブラリを使用して地理情報システム (GIS) の世界を深く掘り下げる準備はできていますか?経験豊富な開発者であっても、GIS プログラミングを始めたばかりであっても、このチュートリアルでは、GML (地理マークアップ言語) ファイルからフィーチャを読み取るプロセスをステップごとに説明します。 Aspose.GIS for .NET は、地理空間データを簡単に操作するための包括的なツールと API のセットを提供し、GIS アプリケーションの可能性を最大限に引き出すことができます。
@@ -113,3 +119,9 @@ A：確かに！ Aspose.GIS は堅牢な空間クエリ機能を提供し、複�
 ### Q: Aspose.GIS ユーザーはテクニカル サポートを利用できますか?
 
  A: はい、Aspose はフォーラムを通じて専用の技術サポートを提供します[リンク]( https://forum.aspose.com/c/gis/33)、ユーザーはここで支援を求めたり、問題を報告したり、コミュニティに参加したりできます。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

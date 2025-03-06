@@ -3,10 +3,16 @@ title: إنشاء مخزن مؤقت للهندسة
 linktitle: إنشاء مخزن مؤقت للهندسة
 second_title: Aspose.GIS .NET API
 description: أطلق العنان لقوة البرمجة الجغرافية المكانية باستخدام Aspose.GIS for .NET. يمكنك إجراء التحليل المكاني وتصور البيانات وغير ذلك الكثير بسهولة.
-type: docs
 weight: 22
 url: /ar/net/geometry-analysis/create-geometry-buffer/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# إنشاء مخزن مؤقت للهندسة
+
 ## مقدمة
 في عالم البرمجة الجغرافية المكانية، يبرز Aspose.GIS for .NET كأداة قوية. بفضل ميزاته القوية وواجهته البديهية، يمكن للمطورين التعامل بكفاءة مع البيانات الجغرافية وإجراء التحليل المكاني وإنشاء تصورات مذهلة. في هذا البرنامج التعليمي الشامل، سوف نتعمق في الجوانب الأساسية لـ Aspose.GIS for .NET، مع تفصيل الوظائف الرئيسية وتوفير إرشادات خطوة بخطوة للمبتدئين والمطورين ذوي الخبرة على حدٍ سواء.
 ## المتطلبات الأساسية
@@ -94,3 +100,9 @@ for (int i = 0; i < ring.Count; ++i)
 نعم، يدعم Aspose.GIS for .NET العديد من أنظمة الإسناد المكاني، مما يسمح للمطورين بالعمل مع البيانات الجغرافية من مصادر مختلفة بسلاسة.
 ### هل يتوفر الدعم الفني لـ Aspose.GIS for .NET؟
  نعم، يمكنك طلب الدعم الفني والمساعدة من منتدى مجتمع Aspose.GIS على[https://forum.aspose.com/c/gis/33](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

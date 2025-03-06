@@ -3,10 +3,16 @@ title: ジオメトリの作成
 linktitle: ジオメトリの作成
 second_title: Aspose.GIS .NET API
 description: Aspose.GIS for .NET を使用して地理空間データ操作の可能性を解き放ちます。ジオメトリの作成、変換、解析をカバーするチュートリアルを詳しく見てみましょう。
-type: docs
 weight: 21
 url: /ja/net/geometry-creation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# ジオメトリの作成
+
 
 ## 導入
 
@@ -105,3 +111,9 @@ Aspose.GIS for .NET を使用して、ジオメトリ内のジオメトリをカ
 Aspose.GIS for .NET を利用して地理データを簡単に操作する方法を学びます。包括的なチュートリアルが利用可能です。
 ### [Aspose.GIS による座標変換](./convert-coordinates/)
 Aspose.GIS for .NET を使用して座標を変換する方法を学びます。ステップバイステップのガイド、前提条件、および FAQ が提供されます。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: 컬렉션의 도형 반복
 linktitle: 컬렉션의 도형 반복
 second_title: Aspose.GIS .NET API
 description: .NET용 Aspose.GIS를 활용하여 .NET 애플리케이션 내에서 지리공간 데이터를 원활하게 조작하는 방법을 알아보세요.
-type: docs
 weight: 10
 url: /ko/net/geometry-processing/iterate-over-geometries-in-collection/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 컬렉션의 도형 반복
+
 ## 소개
 지리공간 데이터 처리 및 분석 영역에서 .NET용 Aspose.GIS는 개발자가 .NET 애플리케이션 내에서 지리 정보를 원활하게 조작, 시각화 및 처리할 수 있도록 지원하는 강력한 도구 세트로 등장합니다. 이 기사는 초보자와 노련한 개발자 모두를 대상으로 .NET용 Aspose.GIS를 효과적으로 활용하는 데 대한 포괄적인 가이드 역할을 합니다.
 ## 전제조건
@@ -81,3 +87,9 @@ A: 예, .NET용 Aspose.GIS는 .NET Core 및 .NET Framework를 포함한 다양�
 A: 실제로 Aspose.GIS 문서는 학습 및 개발 프로세스를 촉진하기 위한 포괄적인 샘플 프로젝트를 제공합니다.
 ### Q: .NET용 Aspose.GIS의 기능을 확장할 수 있습니까?
 A: 물론 사용자 정의 모듈을 통합하고 제공된 확장 기능을 활용하여 .NET용 Aspose.GIS의 기능을 확장할 수 있습니다.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

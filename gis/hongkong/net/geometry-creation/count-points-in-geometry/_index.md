@@ -3,10 +3,16 @@ title: 使用 Aspose.GIS for .NET 計算幾何中的點
 linktitle: 計算幾何中的點
 second_title: Aspose.GIS .NET API
 description: 了解如何利用 Aspose.GIS for .NET 輕鬆操作地理資料。提供綜合教學。
-type: docs
 weight: 24
 url: /zh-hant/net/geometry-creation/count-points-in-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.GIS for .NET 計算幾何中的點
+
 ## 介紹
 在地理資訊系統 (GIS) 開發領域，Aspose.GIS for .NET 作為操作和處理地理資料的強大工具集脫穎而出。無論您是經驗豐富的開發人員還是剛進入 GIS 程式設計世界，掌握 Aspose.GIS 都可以為您的專案帶來無數的可能性。
 ## 先決條件
@@ -71,3 +77,9 @@ Console.WriteLine(pointsCount);  // 2
 您可以訪問[Aspose.GIS論壇](https://forum.aspose.com/c/gis/33)從 Aspose 社區尋求支持或提出問題。
 ### Aspose.GIS for .NET 是否有免費試用版？
 是的，您可以從以下網站獲得免費試用[Aspose.GIS發佈頁面](https://releases.aspose.com/)在購買之前評估其功能。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

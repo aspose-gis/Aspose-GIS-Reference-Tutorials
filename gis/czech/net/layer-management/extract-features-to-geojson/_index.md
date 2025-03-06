@@ -3,10 +3,16 @@ title: Extrahujte funkce do GeoJSON
 linktitle: Extrahujte funkce do GeoJSON
 second_title: Aspose.GIS .NET API
 description: Prozkoumejte podrobného průvodce používáním Aspose.GIS pro .NET k extrahování funkcí do GeoJSON. Využijte sílu GIS snadno! #State #GIS
-type: docs
 weight: 23
 url: /cs/net/layer-management/extract-features-to-geojson/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Extrahujte funkce do GeoJSON
+
 ## Úvod
 Vítejte v našem podrobném návodu na extrahování funkcí do GeoJSON pomocí Aspose.GIS pro .NET! Ať už jste zkušený vývojář nebo teprve začínáte svou cestu v programování GIS, tento průvodce vás provede celým procesem a zajistí, že využijete plný výkon Aspose.GIS pro .NET.
 ## Předpoklady
@@ -87,3 +93,9 @@ V tomto tutoriálu jsme prozkoumali proces extrahování funkcí do GeoJSON pomo
  Ano, bezplatnou zkušební verzi najdete[tady](https://releases.aspose.com/).
 ### Otázka: Kde mohu zakoupit Aspose.GIS pro .NET?
  Produkt si můžete zakoupit[tady](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: ระบุตัวแปร WKB ในการแปลใน Aspose.
 linktitle: ระบุตัวแปร WKB ในการแปล
 second_title: Aspose.GIS .NET API
 description: เรียนรู้วิธีระบุตัวแปร WKB ใน Aspose.GIS สำหรับ .NET ได้อย่างง่ายดายด้วยคำแนะนำที่ครอบคลุมนี้ เพิ่มทักษะการพัฒนา GIS ของคุณ
-type: docs
 weight: 18
 url: /th/net/geometry-processing/specify-wkb-variant-on-translation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# ระบุตัวแปร WKB ในการแปลใน Aspose.GIS สำหรับ .NET
+
 ## การแนะนำ
 ในขอบเขตของการพัฒนาระบบสารสนเทศภูมิศาสตร์ (GIS) Aspose.GIS สำหรับ .NET มีความโดดเด่นในฐานะชุดเครื่องมืออันทรงพลัง ความคล่องตัวและประสิทธิภาพของมันทำให้เป็นตัวเลือกที่ดีสำหรับนักพัฒนาที่ต้องการรวมฟังก์ชัน GIS เข้ากับแอปพลิเคชัน .NET ของตนได้อย่างราบรื่น บทความนี้ทำหน้าที่เป็นแนวทางที่ครอบคลุมในการใช้ประโยชน์จาก Aspose.GIS สำหรับ .NET โดยเน้นไปที่การระบุตัวแปร WKB (Well-Known Binary) ในระหว่างกระบวนการแปลโดยเฉพาะ
 ## ข้อกำหนดเบื้องต้น
@@ -62,3 +68,9 @@ Aspose.GIS สำหรับ .NET ได้รับการออกแบบ
  คุณสามารถขอรับใบอนุญาตชั่วคราวได้โดยไปที่[หน้าใบอนุญาตชั่วคราว](https://purchase.aspose.com/temporary-license/) และปฏิบัติตามคำแนะนำที่ให้ไว้
 ### ฉันจะซื้อใบอนุญาตสำหรับ Aspose.GIS สำหรับ .NET ได้ที่ไหน
  คุณสามารถซื้อใบอนุญาตสำหรับ Aspose.GIS สำหรับ .NET ได้จากหน้าการซื้อที่[ลิงค์นี้](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

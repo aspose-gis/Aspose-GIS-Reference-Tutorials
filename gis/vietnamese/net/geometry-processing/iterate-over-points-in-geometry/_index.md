@@ -3,10 +3,16 @@ title: Lặp lại các điểm trong hình học
 linktitle: Lặp lại các điểm trong hình học
 second_title: API Aspose.GIS .NET
 description: Khám phá Aspose.GIS cho .NET, một bộ công cụ mạnh mẽ để tích hợp liền mạch các chức năng không gian địa lý vào các ứng dụng .NET của bạn.
-type: docs
 weight: 11
 url: /vi/net/geometry-processing/iterate-over-points-in-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Lặp lại các điểm trong hình học
+
 ## Giới thiệu
 
 Trong lĩnh vực phát triển Hệ thống thông tin địa lý (GIS), Aspose.GIS cho .NET nổi bật như một bộ công cụ mạnh mẽ trao quyền cho các nhà phát triển tích hợp liền mạch các chức năng không gian địa lý vào các ứng dụng .NET của họ. Bài viết này đóng vai trò là hướng dẫn từng bước để khai thác sức mạnh của Aspose.GIS cho .NET, tập trung vào việc lặp lại các điểm trong hình học. Đến cuối hướng dẫn này, bạn sẽ điều hướng thành thạo quy trình, được trang bị kiến thức cần thiết để triển khai chức năng này một cách dễ dàng.
@@ -83,3 +89,9 @@ Trả lời: Có, Aspose.GIS cho .NET cung cấp khả năng mở rộng thông 
 ### Câu hỏi 5: Người dùng Aspose.GIS có được hỗ trợ kỹ thuật không?
 
 Trả lời: Hoàn toàn có thể, người dùng Aspose.GIS có thể truy cập hỗ trợ kỹ thuật chuyên dụng thông qua các diễn đàn, đảm bảo hỗ trợ kịp thời cho bất kỳ truy vấn hoặc vấn đề nào gặp phải trong quá trình phát triển.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

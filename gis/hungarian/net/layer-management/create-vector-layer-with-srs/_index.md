@@ -3,10 +3,16 @@ title: Hozzon létre vektorréteget az SRS-sel
 linktitle: Hozzon létre vektorréteget az SRS-sel
 second_title: Aspose.GIS .NET API
 description: Fedezze fel az Aspose.GIS for .NET-et – ez a kulcs a zökkenőmentes GIS-integrációhoz. A megadott térbeli referenciarendszerekkel könnyedén hozhat létre vektorrétegeket. Letöltés most!
-type: docs
 weight: 13
 url: /hu/net/layer-management/create-vector-layer-with-srs/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Hozzon létre vektorréteget az SRS-sel
+
 ## Bevezetés
 Az Aspose.GIS for .NET egy hatékony könyvtár, amely lehetővé teszi a fejlesztők számára, hogy zökkenőmentesen dolgozzanak a földrajzi információs rendszer (GIS) adataival .NET-alkalmazásokban. Ebben az oktatóanyagban egy térbeli referenciarendszerrel (SRS) rendelkező vektorréteg létrehozására összpontosítunk. Az útmutató végére könnyedén integrálhatja a térinformatikai képességeket .NET-projektjeibe.
 ## Előfeltételek
@@ -90,3 +96,9 @@ Teljesen! Az Aspose.GIS for .NET sokoldalú, és használható webes alkalmazás
  Igen, az Aspose.GIS szolgáltatásait ingyenes próbaverzióval fedezheti fel[itt](https://releases.aspose.com/).
 ### Hogyan vásárolhatok licencet az Aspose.GIS-hez?
  Licenc vásárlásához keresse fel a[vásárlási oldal](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

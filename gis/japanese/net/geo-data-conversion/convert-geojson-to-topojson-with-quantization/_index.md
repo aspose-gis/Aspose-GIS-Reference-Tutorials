@@ -3,10 +3,16 @@ title: 量子化を使用して GeoJSON を TopoJSON に変換する
 linktitle: 量子化を使用して GeoJSON を TopoJSON に変換する
 second_title: Aspose.GIS .NET API
 description: Aspose.GIS for .NET を使用して量子化を行い、ファイル サイズと精度を最適化して、GeoJSON を TopoJSON に効率的に変換する方法を学びます。
-type: docs
 weight: 14
 url: /ja/net/geo-data-conversion/convert-geojson-to-topojson-with-quantization/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 量子化を使用して GeoJSON を TopoJSON に変換する
+
 ## 導入
 地理情報システム (GIS) の領域では、特に特定の使用例に合わせて最適化する場合、データ形式の変換が一般的に必要になります。 TopoJSON は、地理データを表現する際のコンパクトさと効率性で知られており、そのような目的に貴重な形式を提供します。 Aspose.GIS for .NET は、この変換をシームレスに促進する堅牢なツールを提供します。
 ## 前提条件
@@ -61,3 +67,9 @@ Aspose.GIS for .NET は幅広い GeoJSON 構造をサポートし、さまざま
 はい、利用可能な無料トライアルを通じて、Aspose.GIS for .NET の機能を探索できます。[ここ](https://releases.aspose.com/).
 ### Aspose.GIS for .NET に関連するサポートを求めたり、ディスカッションに参加したりできるのはどこですか?
  Aspose.GIS コミュニティ フォーラムに参加して、サポートやディスカッションを行うことができます。[ここ](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

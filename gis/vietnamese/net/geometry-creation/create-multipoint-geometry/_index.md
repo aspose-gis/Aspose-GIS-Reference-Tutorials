@@ -3,10 +3,16 @@ title: Tạo hình học đa điểm với Aspose.GIS cho .NET
 linktitle: Tạo hình học đa điểm
 second_title: API Aspose.GIS .NET
 description: Master Aspose.GIS for .NET - Tìm hiểu cách tạo hình học đa điểm một cách dễ dàng. Hướng dẫn toàn diện dành cho nhà phát triển.
-type: docs
 weight: 14
 url: /vi/net/geometry-creation/create-multipoint-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Tạo hình học đa điểm với Aspose.GIS cho .NET
+
 ## Giới thiệu
 
 Trong thế giới Hệ thống thông tin địa lý (GIS), Aspose.GIS cho .NET nổi bật như một công cụ mạnh mẽ dành cho các nhà phát triển. Các tính năng mạnh mẽ và linh hoạt của nó khiến nó trở thành lựa chọn hàng đầu để làm việc với dữ liệu không gian trong các ứng dụng .NET. Trong hướng dẫn này, chúng ta sẽ đi sâu vào những kiến thức cơ bản về Aspose.GIS cho .NET, đặc biệt tập trung vào việc tạo hình học đa điểm. Cho dù bạn là nhà phát triển dày dạn hay chỉ mới bắt đầu, hướng dẫn này sẽ hướng dẫn bạn từng bước, giúp bạn dễ dàng nắm bắt và thực hiện.
@@ -82,3 +88,9 @@ Trả lời: Có, Aspose.GIS cho .NET tương thích với .NET Framework 4.0 v�
 
 ### Hỏi: Tôi có thể mua giấy phép tạm thời cho các dự án ngắn hạn không?
 Đáp: Có, bạn có thể xin giấy phép tạm thời cho nhu cầu dự án cụ thể của mình.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

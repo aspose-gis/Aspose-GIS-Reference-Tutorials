@@ -3,10 +3,16 @@ title: .NET용 Aspose.GIS에서 변환 시 WKB 변형 지정
 linktitle: 변환 시 WKB 변형 지정
 second_title: Aspose.GIS .NET API
 description: 이 포괄적인 가이드를 통해 Aspose.GIS for .NET에서 WKB 변형을 쉽게 지정하는 방법을 알아보세요. GIS 개발 기술을 향상시키세요.
-type: docs
 weight: 18
 url: /ko/net/geometry-processing/specify-wkb-variant-on-translation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# .NET용 Aspose.GIS에서 변환 시 WKB 변형 지정
+
 ## 소개
 GIS(지리 정보 시스템) 개발 영역에서 .NET용 Aspose.GIS는 강력한 도구 세트로 돋보입니다. 다용성과 효율성 덕분에 GIS 기능을 .NET 애플리케이션에 원활하게 통합하려는 개발자에게 적합한 선택입니다. 이 문서는 .NET용 Aspose.GIS를 활용하는 데 대한 포괄적인 가이드 역할을 하며 특히 번역 프로세스 중 WKB(Well-Known Binary) 변형을 지정하는 데 중점을 둡니다.
 ## 전제조건
@@ -62,3 +68,9 @@ Aspose.GIS for .NET은 다양한 버전의 .NET과 호환되도록 설계되어 
  방문하시면 임시면허증을 받으실 수 있습니다.[임시 라이센스 페이지](https://purchase.aspose.com/temporary-license/) 제공된 지침을 따릅니다.
 ### .NET용 Aspose.GIS 라이선스는 어디서 구매할 수 있나요?
  구매 페이지에서 .NET용 Aspose.GIS 라이선스를 구매할 수 있습니다.[이 링크](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

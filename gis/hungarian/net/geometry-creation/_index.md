@@ -3,10 +3,16 @@ title: Geometria létrehozása
 linktitle: Geometria létrehozása
 second_title: Aspose.GIS .NET API
 description: Használja ki a térinformatikai adatok kezelésében rejlő lehetőségeket az Aspose.GIS for .NET segítségével. Merüljön el oktatóanyagainkban, amelyek lefedik a geometria létrehozását, konvertálását és elemzését.
-type: docs
 weight: 21
 url: /hu/net/geometry-creation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Geometria létrehozása
+
 
 ## Bevezetés
 
@@ -105,3 +111,9 @@ Ismerje meg, hogyan számolhat geometriákat egy geometriában az Aspose.GIS for
 Ismerje meg, hogyan használhatja az Aspose.GIS for .NET-et a földrajzi adatok könnyed manipulálására. Átfogó oktatóanyagok állnak rendelkezésre.
 ### [Koordinálja az átalakítást az Aspose.GIS segítségével](./convert-coordinates/)
 Ismerje meg, hogyan konvertálhat koordinátákat az Aspose.GIS for .NET segítségével. Lépésről lépésre útmutató, előfeltételek és GYIK biztosított.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

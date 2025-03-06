@@ -3,10 +3,16 @@ title: Batasi Geometri Pembacaan Presisi dengan Aspose.GIS untuk .NET
 linktitle: Batasi Geometri Pembacaan Presisi
 second_title: Aspose.GIS .NET API
 description: Pelajari cara mengelola presisi secara efisien saat membaca geometri menggunakan Aspose.GIS untuk .NET. Ikuti panduan langkah demi langkah kami untuk penanganan data yang optimal.
-type: docs
 weight: 12
 url: /id/net/geometry-processing/limit-precision-reading-geometries/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Batasi Geometri Pembacaan Presisi dengan Aspose.GIS untuk .NET
+
 ## Perkenalan
 Dalam bidang manipulasi data geospasial, Aspose.GIS untuk .NET merupakan alat yang ampuh, menawarkan segudang fungsi bagi pengembang dan insinyur. Salah satu kemampuan tersebut adalah kemampuan untuk membatasi presisi saat membaca geometri, sebuah aspek penting dalam aplikasi tertentu di mana presisi mungkin tidak menjadi hal yang terpenting. Dalam tutorial ini, kita akan mempelajari cara mencapai hal ini menggunakan Aspose.GIS untuk .NET, dan membagi prosesnya menjadi langkah-langkah yang dapat dikelola.
 ## Prasyarat
@@ -83,3 +89,9 @@ Ya, Aspose.GIS untuk .NET kompatibel dengan berbagai kerangka .NET, termasuk .NE
  Lisensi sementara dapat diperoleh dari[halaman pembelian](https://purchase.aspose.com/temporary-license/) untuk Aspose.GIS.
 ### Di mana saya dapat mencari bantuan atau dukungan untuk Aspose.GIS untuk .NET?
  Anda dapat mengunjungi Aspose.GIS[forum](https://forum.aspose.com/c/gis/33) untuk pertanyaan, diskusi, atau kebutuhan dukungan apa pun.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

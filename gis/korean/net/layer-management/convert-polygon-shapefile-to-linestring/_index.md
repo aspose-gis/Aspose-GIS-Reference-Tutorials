@@ -3,10 +3,16 @@ title: 다각형 Shapefile을 라인스트링으로 변환
 linktitle: 다각형 Shapefile을 라인스트링으로 변환
 second_title: Aspose.GIS .NET API
 description: .NET용 Aspose.GIS의 강력한 기능을 살펴보고 다각형 모양 파일을 라인스트링으로 쉽게 변환하세요. 지금 GIS 개발을 강화하세요!
-type: docs
 weight: 18
 url: /ko/net/layer-management/convert-polygon-shapefile-to-linestring/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 다각형 Shapefile을 라인스트링으로 변환
+
 ## 소개
 .NET에서 GIS(지리 정보 시스템)로 작업하는 경우 Aspose.GIS는 작업을 단순화할 수 있는 강력한 라이브러리입니다. 이 튜토리얼에서는 Aspose.GIS를 사용하여 Polygon Shapefile을 Linestring으로 변환하는 과정을 안내합니다. 이는 경로 계획이나 네트워크 분석과 같은 다양한 애플리케이션을 위해 다각형 데이터에서 선형 특징을 추출해야 할 때 특히 유용할 수 있습니다.
 ## 전제조건
@@ -78,3 +84,9 @@ destination.Add(destinationFeature);
  예, 다음 사이트를 방문하여 무료 평가판으로 Aspose.GIS를 탐색할 수 있습니다.[이 링크](https://releases.aspose.com/).
 ### 어디서 도움이나 지원을 구할 수 있나요?
  방문하다[Aspose.GIS 포럼](https://forum.aspose.com/c/gis/33) 지원이나 지원 관련 문의 사항이 있는 경우.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

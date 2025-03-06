@@ -3,10 +3,16 @@ title: Tạo tập dữ liệu GDB tệp mới
 linktitle: Tạo tập dữ liệu GDB tệp mới
 second_title: API Aspose.GIS .NET
 description: Khám phá Aspose.GIS for .NET để dễ dàng tạo và quản lý bộ dữ liệu GIS. Tải xuống ngay để phát triển không gian địa lý liền mạch. #Aspose #GIS
-type: docs
 weight: 10
 url: /vi/net/layer-management/create-new-file-gdb-dataset/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Tạo tập dữ liệu GDB tệp mới
+
 ## Giới thiệu
 Trong lĩnh vực phát triển không gian địa lý, Aspose.GIS cho .NET nổi bật như một bộ công cụ mạnh mẽ để quản lý và thao tác dữ liệu Hệ thống thông tin địa lý (GIS). Cho dù bạn là nhà phát triển dày dạn kinh nghiệm hay mới bắt đầu hành trình vào GIS, hướng dẫn này sẽ hướng dẫn bạn qua quy trình tạo tập dữ liệu Cơ sở dữ liệu địa lý tệp (GDB) mới bằng Aspose.GIS cho .NET.
 ## Điều kiện tiên quyết
@@ -84,3 +90,9 @@ Aspose.GIS for .NET là bộ công cụ độc lập; tuy nhiên, bạn có th�
  Khám phá cái[Tài liệu Aspose.GIS](https://reference.aspose.com/gis/net/) để biết thêm ví dụ và thông tin chi tiết.
 ### Câu hỏi: Tôi có thể mua Aspose.GIS cho .NET ở đâu?
  Bạn có thể mua Aspose.GIS cho .NET trên[trang mua hàng](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

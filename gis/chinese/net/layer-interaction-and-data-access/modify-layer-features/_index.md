@@ -3,10 +3,16 @@ title: 掌握图层功能修改
 linktitle: 修改图层特征
 second_title: Aspose.GIS .NET API
 description: 探索 Aspose.GIS for .NET 并轻松掌握修改 shapefile 中图层特征的艺术。精确、轻松地提升您的地理空间应用程序。
-type: docs
 weight: 23
 url: /zh/net/layer-interaction-and-data-access/modify-layer-features/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 掌握图层功能修改
+
 ## 介绍
 欢迎阅读这份有关使用 Aspose.GIS for .NET 修改图层功能的综合指南！如果您希望增强地理空间应用程序并轻松操作 shapefile 数据，那么您来对地方了。在本教程中，我们将深入研究使用强大的 Aspose.GIS 库修改图层特征的过程，为您提供详细的步骤和见解。
 ## 先决条件
@@ -72,3 +78,9 @@ using (var result = VectorLayer.Create(resultPath, Drivers.Shapefile, source.Spa
 参观[Aspose.GIS 支持论坛](https://forum.aspose.com/c/gis/33)寻求帮助和社区支持。
 ### 在哪里可以找到 Aspose.GIS 的文档？
  Aspose.GIS 文档可用[这里](https://reference.aspose.com/gis/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

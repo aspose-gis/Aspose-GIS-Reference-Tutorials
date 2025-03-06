@@ -3,10 +3,16 @@ title: Nhận tất cả các giá trị thuộc tính tính năng
 linktitle: Nhận tất cả các giá trị thuộc tính tính năng
 second_title: API Aspose.GIS .NET
 description: Khám phá sự phát triển không gian địa lý với Aspose.GIS cho .NET! Truy xuất các giá trị thuộc tính đối tượng một cách liền mạch. Tải xuống ngay để có một cuộc phiêu lưu mã hóa không gian.
-type: docs
 weight: 15
 url: /vi/net/layer-interaction-and-data-access/get-all-feature-attribute-values/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Nhận tất cả các giá trị thuộc tính tính năng
+
 ## Giới thiệu
 Chào mừng bạn đến với thế giới phát triển không gian địa lý với Aspose.GIS cho .NET! Thư viện mạnh mẽ này trao quyền cho các nhà phát triển tích hợp liền mạch các chức năng GIS vào các ứng dụng .NET của họ, giúp việc xử lý dữ liệu không gian trở nên dễ dàng. Trong hướng dẫn toàn diện này, chúng ta sẽ khám phá một khía cạnh cơ bản - truy xuất các giá trị thuộc tính từ các đối tượng. Hãy đi sâu vào!
 ## Điều kiện tiên quyết
@@ -84,3 +90,9 @@ Tuyệt đối! Aspose.GIS hỗ trợ nhiều định dạng khác nhau, bao g�
  Bạn có thể có được giấy phép tạm thời cho mục đích thử nghiệm[đây](https://purchase.aspose.com/temporary-license/).
 ### Tôi có thể tìm tài liệu chi tiết về Aspose.GIS ở đâu?
  Tài liệu đầy đủ có sẵn[đây](https://reference.aspose.com/gis/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Haal het geometrietype op met Aspose.GIS voor .NET
 linktitle: Geometrietype ophalen
 second_title: Aspose.GIS .NET-API
 description: Ontdek de kracht van Aspose.GIS voor .NET. Leer hoe u efficiënt met ruimtelijke gegevens omgaat in uw .NET-projecten met deze uitgebreide tutorial.
-type: docs
 weight: 23
 url: /nl/net/geometry-analysis/get-geometry-type/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Haal het geometrietype op met Aspose.GIS voor .NET
+
 ## Invoering
 Op het gebied van .NET-ontwikkeling fungeert Aspose.GIS als een krachtig hulpmiddel voor het verwerken van geografische informatie. Dankzij de rijke functionaliteiten is het een favoriete keuze voor ontwikkelaars die met ruimtelijke gegevens werken. In deze zelfstudie verdiepen we ons in de basisprincipes van Aspose.GIS voor .NET, waarbij we de belangrijkste concepten opsplitsen en stapsgewijze begeleiding bieden zodat u gemakkelijk aan de slag kunt.
 ## Vereisten
@@ -63,3 +69,9 @@ Ja, Aspose.GIS ondersteunt verschillende versies van .NET, waardoor compatibilit
  Voor tijdelijke licentieopties gaat u naar de[tijdelijke licentie](https://purchase.aspose.com/temporary-license/) bladzijde.
 ### Waar kan ik Aspose.GIS kopen voor mijn project?
  U kunt Aspose.GIS kopen via de aankooppagina[hier](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

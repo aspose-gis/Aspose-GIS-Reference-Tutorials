@@ -3,10 +3,16 @@ title: สร้างบัฟเฟอร์เรขาคณิต
 linktitle: สร้างบัฟเฟอร์เรขาคณิต
 second_title: Aspose.GIS .NET API
 description: ปลดล็อกพลังของการเขียนโปรแกรมเชิงพื้นที่ด้วย Aspose.GIS สำหรับ .NET ทำการวิเคราะห์เชิงพื้นที่ แสดงภาพข้อมูล และอื่นๆ ได้อย่างง่ายดาย
-type: docs
 weight: 22
 url: /th/net/geometry-analysis/create-geometry-buffer/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# สร้างบัฟเฟอร์เรขาคณิต
+
 ## การแนะนำ
 ในขอบเขตของการเขียนโปรแกรมเชิงพื้นที่ Aspose.GIS สำหรับ .NET มีความโดดเด่นในฐานะเครื่องมืออันทรงพลัง ด้วยคุณสมบัติที่แข็งแกร่งและอินเทอร์เฟซที่ใช้งานง่าย นักพัฒนาสามารถจัดการข้อมูลทางภูมิศาสตร์ ทำการวิเคราะห์เชิงพื้นที่ และสร้างการแสดงภาพที่น่าทึ่งได้อย่างมีประสิทธิภาพ ในบทช่วยสอนที่ครอบคลุมนี้ เราจะเจาะลึกประเด็นสำคัญของ Aspose.GIS สำหรับ .NET โดยแจกแจงฟังก์ชันการทำงานหลักๆ และให้คำแนะนำทีละขั้นตอนสำหรับผู้เริ่มต้นและนักพัฒนาที่มีประสบการณ์
 ## ข้อกำหนดเบื้องต้น
@@ -94,3 +100,9 @@ Aspose.GIS สำหรับ .NET ได้รับการออกแบบ
 ใช่ Aspose.GIS สำหรับ .NET รองรับระบบอ้างอิงเชิงพื้นที่ที่หลากหลาย ช่วยให้นักพัฒนาทำงานกับข้อมูลทางภูมิศาสตร์จากแหล่งต่างๆ ได้อย่างราบรื่น
 ### มีการสนับสนุนด้านเทคนิคสำหรับ Aspose.GIS สำหรับ .NET หรือไม่
  ใช่ คุณสามารถขอรับการสนับสนุนทางเทคนิคและความช่วยเหลือจากฟอรัมชุมชน Aspose.GIS ได้ที่[https://forum.aspose.com/c/gis/33](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

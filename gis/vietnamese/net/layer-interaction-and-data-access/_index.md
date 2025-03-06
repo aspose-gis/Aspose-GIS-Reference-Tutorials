@@ -3,10 +3,16 @@ title: Tương tác lớp và truy cập dữ liệu
 linktitle: Tương tác lớp và truy cập dữ liệu
 second_title: API Aspose.GIS .NET
 description: Mở khóa tiềm năng của Aspose.GIS cho .NET với Hướng dẫn truy cập dữ liệu và tương tác lớp của chúng tôi. Khám phá sự phát triển không gian địa lý và thao tác liền mạch các tính năng.
-type: docs
 weight: 25
 url: /vi/net/layer-interaction-and-data-access/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Tương tác lớp và truy cập dữ liệu
+
 ## Giới thiệu
 
 Aspose.GIS cho .NET luôn đi đầu trong phát triển không gian địa lý, cung cấp một bộ công cụ toàn diện để tích hợp dữ liệu GIS liền mạch. Trong loạt hướng dẫn này, chúng tôi đi sâu vào sự phức tạp của Tương tác lớp và Truy cập dữ liệu, mở khóa toàn bộ tiềm năng của thư viện mạnh mẽ này.
@@ -49,3 +55,9 @@ Khám phá Aspose.GIS cho .NET và tương tác dễ dàng với các lớp GPX.
 Khám phá sức mạnh của thao tác dữ liệu không gian địa lý trong .NET với Aspose.GIS. Hướng dẫn từng bước để tương tác với các lớp KML. 
 ### [Sửa đổi các tính năng của lớp](./modify-layer-features/)
 Khám phá Aspose.GIS cho .NET và nắm vững nghệ thuật sửa đổi các tính năng lớp trong tệp hình dạng một cách dễ dàng. Tăng cường các ứng dụng không gian địa lý của bạn một cách chính xác và dễ dàng.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

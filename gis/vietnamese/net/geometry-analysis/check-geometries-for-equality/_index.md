@@ -3,10 +3,16 @@ title: Kiểm tra hình học cho sự bình đẳng
 linktitle: Kiểm tra hình học cho sự bình đẳng
 second_title: API Aspose.GIS .NET
 description: Tìm hiểu cách sử dụng Aspose.GIS cho .NET để kiểm tra sự bằng nhau về hình học trong các ứng dụng .NET của bạn với hướng dẫn toàn diện này.
-type: docs
 weight: 10
 url: /vi/net/geometry-analysis/check-geometries-for-equality/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Kiểm tra hình học cho sự bình đẳng
+
 ## Giới thiệu
 Aspose.GIS for .NET là một thư viện mạnh mẽ cho phép các nhà phát triển làm việc với dữ liệu không gian địa lý một cách hiệu quả trong các ứng dụng .NET của họ. Cho dù bạn đang xây dựng các ứng dụng bản đồ, công cụ phân tích không gian hay tích hợp chức năng không gian địa lý vào phần mềm hiện có, Aspose.GIS đều cung cấp các công cụ bạn cần để hoàn thành công việc.
 ## Điều kiện tiên quyết
@@ -73,3 +79,9 @@ Có, Aspose.GIS cho .NET tương thích với nhiều khung .NET khác nhau, bao
  Bạn có thể nhận hỗ trợ từ diễn đàn cộng đồng Aspose.GIS[đây](https://forum.aspose.com/c/gis/33).
 ### Tôi có thể mua giấy phép tạm thời cho Aspose.GIS cho .NET không?
  Có, bạn có thể mua giấy phép tạm thời từ[trang mua hàng](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

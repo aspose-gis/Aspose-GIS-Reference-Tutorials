@@ -3,10 +3,16 @@ title: Beherrschen von Geometrieüberlagerungen mit Aspose.GIS für .NET
 linktitle: Finden Sie Geometrie-Overlays
 second_title: Aspose.GIS .NET-API
 description: Erfahren Sie, wie Sie mit Aspose.GIS für .NET geometrische Überlagerungsvorgänge durchführen. Meistern Sie Schnitt-, Vereinigungs-, Differenz- und symmetrische Differenzoperationen.
-type: docs
 weight: 16
 url: /de/net/geometry-analysis/find-geometry-overlays/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Beherrschen von Geometrieüberlagerungen mit Aspose.GIS für .NET
+
 ## Einführung
 Im Bereich der geografischen Informationssysteme (GIS) sind Overlay-Operationen von grundlegender Bedeutung für die räumliche Analyse. Sie ermöglichen den Vergleich und die Kombination verschiedener Geodatensätze, um wertvolle Erkenntnisse abzuleiten. Aspose.GIS für .NET bietet robuste Funktionen für die effiziente Durchführung geometrischer Überlagerungen. In diesem Tutorial befassen wir uns mit verschiedenen Überlagerungsoperationen wie Schnittmenge, Vereinigung, Differenz und symmetrischer Differenz mithilfe von Aspose.GIS für .NET.
 ## Voraussetzungen
@@ -108,3 +114,9 @@ Ja, Aspose.GIS für .NET kann sowohl in kommerziellen als auch nichtkommerzielle
  Ja, temporäre Lizenzen sind für Test- und Evaluierungszwecke verfügbar. Sie können sie bei beziehen[Hier](https://purchase.aspose.com/temporary-license/).
 ### F: Kann ich Aspose.GIS für .NET direkt kaufen?
  Ja, Sie können Aspose.GIS für .NET auf der Website erwerben[Hier](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

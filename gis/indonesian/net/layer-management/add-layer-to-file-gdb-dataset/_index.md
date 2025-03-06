@@ -3,10 +3,16 @@ title: Penguasaan GIS - Tambahkan Lapisan ke GDB dengan Aspose.GIS untuk .NET
 linktitle: Tambahkan Lapisan ke File Kumpulan Data GDB
 second_title: Aspose.GIS .NET API
 description: Buka kekuatan GIS dengan Aspose.GIS untuk .NET! Pelajari cara menambahkan lapisan ke kumpulan data File GDB dalam tutorial langkah demi langkah ini. #data geografis #Aspose #GIS
-type: docs
 weight: 16
 url: /id/net/layer-management/add-layer-to-file-gdb-dataset/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Penguasaan GIS - Tambahkan Lapisan ke GDB dengan Aspose.GIS untuk .NET
+
 ## Perkenalan
 Apakah Anda siap untuk meningkatkan kemampuan GIS Anda menggunakan Aspose.GIS untuk .NET? Dalam panduan langkah demi langkah ini, kami akan memandu Anda melalui proses menambahkan lapisan ke kumpulan data File Geodatabase (GDB). Aspose.GIS untuk .NET menyediakan fitur canggih untuk memanipulasi informasi geografis, dan dengan tutorial ini, Anda akan dapat mengintegrasikan lapisan tambahan ke dalam kumpulan data Anda dengan lancar.
 ## Prasyarat
@@ -75,3 +81,9 @@ Aspose.GIS untuk .NET mendukung berbagai sistem referensi spasial, memberikan fl
  Sangat! Bergabunglah dalam diskusi dan bagikan pengalaman Anda di[Forum Aspose.GIS](https://forum.aspose.com/c/gis/33).
 ### T: Di mana saya dapat menemukan dokumentasi terperinci untuk Aspose.GIS untuk .NET?
  Jelajahi dokumentasi komprehensif[Di Sini](https://reference.aspose.com/gis/net/) untuk informasi mendalam tentang Aspose.GIS untuk .NET.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

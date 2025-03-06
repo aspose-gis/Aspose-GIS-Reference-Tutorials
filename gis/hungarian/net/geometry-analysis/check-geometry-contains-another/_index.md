@@ -3,10 +3,16 @@ title: Ellenőrizze, hogy a geometria tartalmaz egy másikat
 linktitle: Ellenőrizze, hogy a geometria tartalmaz egy másikat
 second_title: Aspose.GIS .NET API
 description: Fedezze fel az Aspose.GIS for .NET-et egy robusztus könyvtár a térinformatikai adatok zökkenőmentes integrációjához .NET-alkalmazásaiban.
-type: docs
 weight: 14
 url: /hu/net/geometry-analysis/check-geometry-contains-another/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Ellenőrizze, hogy a geometria tartalmaz egy másikat
+
 ## Bevezetés
 Az Aspose.GIS for .NET egy hatékony könyvtár, amely lehetővé teszi a fejlesztők számára, hogy zökkenőmentesen dolgozzanak a térinformatikai adatokkal .NET-alkalmazásaikon belül. Akár térképalkalmazást épít, akár térinformatikai elemzést végez, akár helyalapú funkciókat épít be szoftverébe, az Aspose.GIS leegyszerűsíti a folyamatot azáltal, hogy intuitív API-kat és robusztus funkcionalitást biztosít.
 ## Előfeltételek
@@ -85,3 +91,9 @@ V: Az Aspose.GIS rendszeresen frissítéseket ad ki a teljesítmény javítása,
 V: Igen, csatlakozhatsz az Aspose.GIS közösségi fórumhoz[itt](https://forum.aspose.com/c/gis/33) kapcsolatba léphet más felhasználókkal, kérdéseket tehet fel, és megoszthatja tapasztalatait.
 ### 5. kérdés: Kipróbálhatom az Aspose.GIS-t vásárlás előtt?
  V: Természetesen felfedezheti az Aspose.GIS-t, ha letölti az ingyenes próbaverziót a webhelyről[itt](https://releases.aspose.com/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

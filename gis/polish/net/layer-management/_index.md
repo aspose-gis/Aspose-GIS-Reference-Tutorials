@@ -3,10 +3,16 @@ title: Zarządzanie warstwami
 linktitle: Zarządzanie warstwami
 second_title: Aspose.GIS .NET API
 description: Odblokuj potencjał rozwoju geoprzestrzennego dzięki samouczkom Aspose.GIS for .NET. Twórz, zarządzaj i manipuluj zbiorami danych GIS bez wysiłku.
-type: docs
 weight: 24
 url: /pl/net/layer-management/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Zarządzanie warstwami
+
 ## Wstęp
 
 Aspose.GIS dla .NET umożliwia programistom zagłębienie się w ekscytujący świat rozwoju geoprzestrzennego. W tej obszernej liście samouczków omawiamy różne samouczki dotyczące zarządzania warstwami, które poprowadzą Cię przez odblokowanie pełnego potencjału Aspose.GIS dla .NET. Od tworzenia nowych zbiorów danych File GDB po manipulowanie danymi przestrzennymi — te samouczki omówią wszystko.
@@ -68,3 +74,9 @@ Odblokuj magię geoprzestrzenną dzięki Aspose.GIS dla .NET! Warstwa uprawna dz
 Poznaj moc Aspose.GIS dla .NET w manipulacji danymi przestrzennymi. Filtruj funkcje bez wysiłku, ulepszaj aplikacje GIS i zwiększaj produktywność.
 ### [Wyodrębnij funkcje do GeoJSON](./extract-features-to-geojson/)
 Zapoznaj się z przewodnikiem krok po kroku dotyczącym używania Aspose.GIS dla .NET do wyodrębniania funkcji do GeoJSON. Z łatwością wykorzystaj moc GIS! 
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

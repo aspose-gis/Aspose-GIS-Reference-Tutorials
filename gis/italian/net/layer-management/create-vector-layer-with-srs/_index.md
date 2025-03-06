@@ -3,10 +3,16 @@ title: Crea un livello vettoriale con SRS
 linktitle: Crea un livello vettoriale con SRS
 second_title: API Aspose.GIS .NET
 description: Esplora Aspose.GIS per .NET la tua chiave per una perfetta integrazione GIS. Crea livelli vettoriali senza sforzo con sistemi di riferimento spaziali specifici. Scarica ora!
-type: docs
 weight: 13
 url: /it/net/layer-management/create-vector-layer-with-srs/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Crea un livello vettoriale con SRS
+
 ## introduzione
 Aspose.GIS per .NET è una potente libreria che consente agli sviluppatori di lavorare senza problemi con i dati del sistema informativo geografico (GIS) nelle applicazioni .NET. In questo tutorial ci concentreremo sulla creazione di un layer vettoriale con un sistema di riferimento spaziale (SRS). Al termine di questa guida sarai in grado di integrare facilmente le funzionalità GIS nei tuoi progetti .NET.
 ## Prerequisiti
@@ -90,3 +96,9 @@ Assolutamente! Aspose.GIS per .NET è versatile e può essere utilizzato in appl
  Sì, puoi esplorare le funzionalità di Aspose.GIS ottenendo una prova gratuita[Qui](https://releases.aspose.com/).
 ### Come posso acquistare una licenza per Aspose.GIS?
  Per acquistare una licenza, visitare il[pagina di acquisto](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Zkontrolujte, zda geometrie pokrývá jiný
 linktitle: Zkontrolujte, zda geometrie pokrývá jiný
 second_title: Aspose.GIS .NET API
 description: Naučte se používat Aspose.GIS pro .NET k efektivní práci s geografickými daty, analýze prostorových informací a integraci mapových funkcí do vašich aplikací .NET.
-type: docs
 weight: 15
 url: /cs/net/geometry-analysis/check-geometry-covers-another/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Zkontrolujte, zda geometrie pokrývá jiný
+
 ## Úvod
 Aspose.GIS for .NET je výkonná knihovna, která poskytuje vývojářům nástroje pro efektivní práci s geografickými daty v rámci jejich aplikací .NET. Ať už vytváříte mapovou aplikaci, analyzujete prostorová data nebo integrujete geografické prvky do svého softwaru, Aspose.GIS nabízí komplexní sadu funkcí pro zefektivnění vašeho vývojového procesu.
 ## Předpoklady
@@ -74,3 +80,9 @@ Ano, Aspose.GIS for .NET podporuje širokou škálu formátů GIS včetně Shape
 Aspose.GIS for .NET je proprietární knihovna vyvinutá společností Aspose, takže příspěvky od externích vývojářů nejsou přijímány. Můžete však poskytnout zpětnou vazbu a návrhy na zlepšení knihovny.
 ### Jak často jsou vydávány aktualizace pro Aspose.GIS pro .NET?
  Aktualizace Aspose.GIS pro .NET jsou vydávány pravidelně, aby zavedly nové funkce, vylepšení a opravy chyb. Zkontrolovat[webová stránka](https://releases.aspose.com/gis/net/) pro nejnovější verze.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

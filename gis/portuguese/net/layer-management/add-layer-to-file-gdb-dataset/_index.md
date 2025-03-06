@@ -3,10 +3,16 @@ title: Domínio de GIS - Adicione camadas ao GDB com Aspose.GIS para .NET
 linktitle: Adicionar camada ao conjunto de dados GDB do arquivo
 second_title: API Aspose.GIS .NET
 description: Desbloqueie o poder do GIS com Aspose.GIS for .NET! Aprenda como adicionar camadas aos conjuntos de dados do File GDB neste tutorial passo a passo. #dados geográficos #Aspose #GIS
-type: docs
 weight: 16
 url: /pt/net/layer-management/add-layer-to-file-gdb-dataset/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Domínio de GIS - Adicione camadas ao GDB com Aspose.GIS para .NET
+
 ## Introdução
 Você está pronto para aprimorar seus recursos GIS usando Aspose.GIS for .NET? Neste guia passo a passo, orientaremos você no processo de adição de uma camada a um conjunto de dados File Geodatabase (GDB). Aspose.GIS for .NET fornece recursos poderosos para manipular informações geográficas e, com este tutorial, você poderá integrar perfeitamente camadas adicionais em seus conjuntos de dados.
 ## Pré-requisitos
@@ -75,3 +81,9 @@ Aspose.GIS for .NET suporta uma ampla gama de sistemas de referência espacial, 
  Absolutamente! Participe das discussões e compartilhe suas experiências no[Fórum Aspose.GIS](https://forum.aspose.com/c/gis/33).
 ### P: Onde posso encontrar documentação detalhada do Aspose.GIS for .NET?
  Explore a documentação abrangente[aqui](https://reference.aspose.com/gis/net/) para obter informações detalhadas sobre Aspose.GIS for .NET.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

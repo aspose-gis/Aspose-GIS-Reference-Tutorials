@@ -3,10 +3,16 @@ title: แปลง GeoJSON เป็น TopoJSON ด้วย Quantization
 linktitle: แปลง GeoJSON เป็น TopoJSON ด้วย Quantization
 second_title: Aspose.GIS .NET API
 description: เรียนรู้วิธีแปลง GeoJSON เป็น TopoJSON อย่างมีประสิทธิภาพด้วยการหาปริมาณโดยใช้ Aspose.GIS สำหรับ .NET ซึ่งจะช่วยปรับขนาดและความแม่นยำของไฟล์ให้เหมาะสม
-type: docs
 weight: 14
 url: /th/net/geo-data-conversion/convert-geojson-to-topojson-with-quantization/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# แปลง GeoJSON เป็น TopoJSON ด้วย Quantization
+
 ## การแนะนำ
 ในขอบเขตของระบบสารสนเทศภูมิศาสตร์ (GIS) การแปลงรูปแบบข้อมูลเป็นสิ่งจำเป็นทั่วไป โดยเฉพาะอย่างยิ่งเมื่อปรับให้เหมาะสมสำหรับกรณีการใช้งานเฉพาะ TopoJSON เป็นที่รู้จักในด้านความกะทัดรัดและมีประสิทธิภาพในการนำเสนอข้อมูลทางภูมิศาสตร์ นำเสนอรูปแบบที่มีคุณค่าสำหรับวัตถุประสงค์ดังกล่าว Aspose.GIS สำหรับ .NET มอบเครื่องมือที่มีประสิทธิภาพเพื่ออำนวยความสะดวกในการแปลงนี้ได้อย่างราบรื่น
 ## ข้อกำหนดเบื้องต้น
@@ -61,3 +67,9 @@ Aspose.GIS สำหรับ .NET รองรับโครงสร้าง
  ได้ คุณสามารถสำรวจฟังก์ชันการทำงานของ Aspose.GIS สำหรับ .NET ได้ผ่านการทดลองใช้ฟรี[ที่นี่](https://releases.aspose.com/).
 ### ฉันจะขอความช่วยเหลือหรือมีส่วนร่วมในการสนทนาที่เกี่ยวข้องกับ Aspose.GIS สำหรับ .NET ได้ที่ไหน
  คุณสามารถเข้าร่วมฟอรัมชุมชน Aspose.GIS เพื่อรับการสนับสนุนและการสนทนาได้[ที่นี่](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

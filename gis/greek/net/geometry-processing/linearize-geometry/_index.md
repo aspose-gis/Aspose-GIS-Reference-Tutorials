@@ -3,10 +3,16 @@ title: Γραμμικοποίηση μιας Γεωμετρίας
 linktitle: Γραμμικοποίηση μιας Γεωμετρίας
 second_title: Aspose.GIS .NET API
 description: Μάθετε πώς να χρησιμοποιείτε το Aspose.GIS για .NET για να εργάζεστε αποτελεσματικά με γεωχωρικά δεδομένα, να εκτελείτε χωρική ανάλυση και να χειρίζεστε γεωγραφικά στοιχεία στις εφαρμογές σας .NET.
-type: docs
 weight: 14
 url: /el/net/geometry-processing/linearize-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Γραμμικοποίηση μιας Γεωμετρίας
+
 ## Εισαγωγή
 Το Aspose.GIS για .NET είναι μια ισχυρή βιβλιοθήκη που επιτρέπει στους προγραμματιστές να εργάζονται αποτελεσματικά με γεωχωρικά δεδομένα εντός εφαρμογών .NET. Είτε δημιουργείτε μια εφαρμογή χαρτογράφησης, είτε εκτελείτε χωρική ανάλυση είτε χειρίζεστε γεωγραφικά δεδομένα, το Aspose.GIS παρέχει τα εργαλεία που χρειάζεστε για να ολοκληρώσετε τη δουλειά.
 ## Προαπαιτούμενα
@@ -83,3 +89,9 @@ layer.Add(feature);
  Ναι, μπορείτε να κάνετε λήψη μιας δωρεάν δοκιμής από το[Aspose ιστότοπο](https://releases.aspose.com/).
 ### Ε: Πού μπορώ να βρω βοήθεια και υποστήριξη για το Aspose.GIS;
  Μπορείτε να επισκεφθείτε το[Φόρουμ Aspose.GIS](https://forum.aspose.com/c/gis/33) για βοήθεια από την κοινότητα και το προσωπικό υποστήριξης της Aspose.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Convierta GeoJSON a TopoJSON con agrupación
 linktitle: Convierta GeoJSON a TopoJSON con agrupación
 second_title: Aspose.GIS API .NET
 description: Aprenda cómo convertir GeoJSON a TopoJSON con agrupación usando Aspose.GIS para .NET en este completo tutorial.
-type: docs
 weight: 13
 url: /es/net/geo-data-conversion/convert-geojson-to-topojson-with-grouping/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Convierta GeoJSON a TopoJSON con agrupación
+
 ## Introducción
 
 Bienvenido a nuestra guía paso a paso sobre el uso de Aspose.GIS para .NET para convertir GeoJSON a TopoJSON con agrupación. Aspose.GIS es una potente API .NET que permite a los desarrolladores trabajar con datos geográficos sin problemas. En este tutorial, lo guiaremos a través del proceso de convertir archivos GeoJSON a TopoJSON mientras agrupamos funciones según atributos específicos.
@@ -93,3 +99,9 @@ R: Sí, Aspose.GIS brinda soporte para varios formatos de datos geográficos má
 
 ### P5: ¿Dónde puedo obtener soporte para Aspose.GIS?
  R: Puede obtener soporte en el foro de la comunidad Aspose.GIS.[aquí](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

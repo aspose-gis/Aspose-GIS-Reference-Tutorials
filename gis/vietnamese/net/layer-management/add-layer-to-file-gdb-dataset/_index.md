@@ -3,10 +3,16 @@ title: Làm chủ GIS - Thêm lớp vào GDB với Aspose.GIS cho .NET
 linktitle: Thêm lớp vào tập dữ liệu GDB
 second_title: API Aspose.GIS .NET
 description: Khai phá sức mạnh của GIS với Aspose.GIS cho .NET! Tìm hiểu cách thêm lớp vào bộ dữ liệu File GDB trong hướng dẫn từng bước này. #dữ liệu địa lý #Aspose #GIS
-type: docs
 weight: 16
 url: /vi/net/layer-management/add-layer-to-file-gdb-dataset/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Làm chủ GIS - Thêm lớp vào GDB với Aspose.GIS cho .NET
+
 ## Giới thiệu
 Bạn đã sẵn sàng nâng cao khả năng GIS của mình bằng Aspose.GIS cho .NET chưa? Trong hướng dẫn từng bước này, chúng tôi sẽ hướng dẫn bạn quy trình thêm lớp vào tập dữ liệu Cơ sở dữ liệu địa lý tệp (GDB). Aspose.GIS cho .NET cung cấp các tính năng mạnh mẽ để thao tác thông tin địa lý và với hướng dẫn này, bạn sẽ có thể tích hợp liền mạch các lớp bổ sung vào tập dữ liệu của mình.
 ## Điều kiện tiên quyết
@@ -75,3 +81,9 @@ Aspose.GIS for .NET hỗ trợ nhiều hệ thống tham chiếu không gian, ma
  Tuyệt đối! Tham gia thảo luận và chia sẻ kinh nghiệm của bạn về[Diễn đàn Aspose.GIS](https://forum.aspose.com/c/gis/33).
 ### Câu hỏi: Tôi có thể tìm tài liệu chi tiết về Aspose.GIS cho .NET ở đâu?
  Khám phá tài liệu toàn diện[đây](https://reference.aspose.com/gis/net/) để biết thông tin chuyên sâu về Aspose.GIS cho .NET.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

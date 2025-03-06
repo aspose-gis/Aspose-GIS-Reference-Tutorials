@@ -3,10 +3,16 @@ title: 개체 ID 및 형상 필드 이름 지정
 linktitle: 개체 ID 및 형상 필드 이름 지정
 second_title: Aspose.GIS .NET API
 description: .NET용 Aspose.GIS로 GIS의 마법을 탐험해보세요! 지리공간 데이터를 손쉽게 관리하세요. 지금 다운로드하여 공간 지능의 힘을 발휘해보세요.
-type: docs
 weight: 20
 url: /ko/net/layer-data-operations/specify-object-id-and-geometry-field-names/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 개체 ID 및 형상 필드 이름 지정
+
 ## 소개
 .NET용 Aspose.GIS를 사용하여 지리 정보 시스템(GIS) 영역으로의 여행을 시작하면 개발자와 애호가 모두에게 가능성의 세계가 열립니다. 이 강력한 라이브러리를 사용하면 지리공간 데이터를 쉽게 처리할 수 있습니다. 이 튜토리얼에서는 객체 ID 및 기하학 필드 이름을 지정하는 과정을 안내하여 GIS 작업의 기초를 마련합니다.
 ## 전제조건
@@ -74,3 +80,9 @@ A: 예, Aspose.GIS for .NET은 데스크톱과 웹 애플리케이션 모두에 
 A: Aspose.GIS for .NET은 다양한 공간 참조 시스템을 지원하여 다양한 지리적 데이터세트에 대한 유연성을 제공합니다.
 ### Q: Aspose.GIS 관련 쿼리에 대해 도움을 구하거나 논의할 수 있는 곳은 어디입니까?
  A: Aspose.GIS 포럼을 방문하세요.[여기](https://forum.aspose.com/c/gis/33) 지원과 토론을 위해.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

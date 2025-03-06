@@ -3,10 +3,16 @@ title: Create Compound Curve Geometry with Aspose.GIS in .NET
 linktitle: Create Compound Curve Geometry
 second_title: Aspose.GIS .NET API
 description: Learn how to create compound curve geometries in .NET using Aspose.GIS for seamless geospatial data processing.
-type: docs
 weight: 19
 url: /net/geometry-creation/create-compound-curve-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Create Compound Curve Geometry with Aspose.GIS in .NET
+
 ## Introduction
 In the world of .NET development, Aspose.GIS is a powerful tool that offers a plethora of functionalities for working with geospatial data. Whether you're developing applications for mapping, location-based services, or geographical analysis, Aspose.GIS provides the necessary tools to streamline your development process.
 ## Prerequisites
@@ -94,3 +100,10 @@ Yes, Aspose.GIS can be utilized in both desktop and web applications, offering v
 Yes, Aspose.GIS offers a range of spatial analysis functionalities, including distance calculation, geometric operations, and spatial queries.
 ### Is there a community forum or support channel available for Aspose.GIS users?
 Yes, you can visit the [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) to ask questions, share ideas, and seek assistance from the community and support team.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

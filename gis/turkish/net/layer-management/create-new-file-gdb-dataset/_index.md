@@ -3,10 +3,16 @@ title: Yeni Dosya GDB Veri Kümesi Oluştur
 linktitle: Yeni Dosya GDB Veri Kümesi Oluştur
 second_title: Aspose.GIS .NET API'si
 description: GIS veri kümelerini zahmetsizce oluşturmak ve yönetmek için Aspose.GIS for .NET'i keşfedin. Kesintisiz coğrafi gelişim için hemen indirin. #Aspose #GIS
-type: docs
 weight: 10
 url: /tr/net/layer-management/create-new-file-gdb-dataset/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Yeni Dosya GDB Veri Kümesi Oluştur
+
 ## giriiş
 Jeo-uzaysal geliştirme alanında Aspose.GIS for .NET, Coğrafi Bilgi Sistemi (GIS) verilerini yönetmek ve işlemek için güçlü bir araç seti olarak öne çıkıyor. İster deneyimli bir geliştirici olun ister GIS yolculuğunuza yeni başlıyor olun, bu eğitim size Aspose.GIS for .NET kullanarak yeni bir Dosya Geodatabase (GDB) veri seti oluşturma sürecinde yol gösterecektir.
 ## Önkoşullar
@@ -84,3 +90,9 @@ Aspose.GIS for .NET bağımsız bir araç setidir; ancak işlevselliği gelişti
  Keşfedin[Aspose.GIS belgeleri](https://reference.aspose.com/gis/net/) Daha fazla örnek ve detaylı bilgi için.
 ### S: Aspose.GIS for .NET'i nereden satın alabilirim?
  Aspose.GIS for .NET'i şu adresten satın alabilirsiniz:[satın alma sayfası](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

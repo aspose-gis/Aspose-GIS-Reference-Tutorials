@@ -3,10 +3,16 @@ title: Skapande av geometri
 linktitle: Skapande av geometri
 second_title: Aspose.GIS .NET API
 description: Lås upp potentialen för geospatial datamanipulation med Aspose.GIS för .NET. Dyk in i våra tutorials, som täcker geometriskapande, konvertering och analys.
-type: docs
 weight: 21
 url: /sv/net/geometry-creation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Skapande av geometri
+
 
 ## Introduktion
 
@@ -105,3 +111,9 @@ Lär dig hur man räknar geometrier i en geometri med Aspose.GIS för .NET. Steg
 Lär dig hur du använder Aspose.GIS för .NET för att enkelt manipulera geografiska data. Omfattande tutorials tillgängliga.
 ### [Koordinera konvertering med Aspose.GIS](./convert-coordinates/)
 Lär dig hur du konverterar koordinater med Aspose.GIS för .NET. Steg-för-steg-guide, förutsättningar och vanliga frågor tillhandahålls.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

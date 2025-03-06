@@ -3,10 +3,16 @@ title: Jellemzők szűrése attribútum alapján
 linktitle: Jellemzők szűrése attribútum alapján
 second_title: Aspose.GIS .NET API
 description: Fedezze fel az Aspose.GIS for .NET erejét a téradatok kezelésében. Könnyedén szűrheti a funkciókat, javíthatja a GIS-alkalmazásokat és növelheti a termelékenységet.
-type: docs
 weight: 21
 url: /hu/net/layer-management/filter-features-by-attribute/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Jellemzők szűrése attribútum alapján
+
 ## Bevezetés
 Geographic Information Systems (GIS) dinamikus világában az Aspose.GIS for .NET olyan hatékony eszközként tűnik ki, amely képessé teszi a fejlesztőket a téradatok zökkenőmentes manipulálására és elemzésére. Akár tapasztalt térinformatikai szakember, akár kíváncsi fejlesztő, aki szívesen fedezi fel a lehetőségeket, ez az oktatóanyag végigvezeti az Aspose.GIS .NET környezetben való használatának alapvető lépésein.
 ## Előfeltételek
@@ -57,3 +63,9 @@ Az Aspose.GIS for .NET leegyszerűsíti a téradatok kezelését és elemzését
  Szerezzen ideiglenes engedélyt[itt](https://purchase.aspose.com/temporary-license/).
 ### Elérhető-e lépésről lépésre bemutató oktatóanyag az Aspose.GIS egyéb szolgáltatásaihoz?
  Igen, további oktatóanyagokat és dokumentációt talál a[Aspose.GIS hivatkozás](https://reference.aspose.com/gis/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

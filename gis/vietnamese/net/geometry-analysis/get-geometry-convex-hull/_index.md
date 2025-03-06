@@ -3,10 +3,16 @@ title: Tính toán thân lồi với Aspose.GIS cho .NET
 linktitle: Nhận thân lồi hình học
 second_title: API Aspose.GIS .NET
 description: Tìm hiểu cách tính bao lồi của một hình học trong .NET bằng Aspose.GIS. Hướng dẫn toàn diện với các ví dụ về mã và câu hỏi thường gặp.
-type: docs
 weight: 20
 url: /vi/net/geometry-analysis/get-geometry-convex-hull/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Tính toán thân lồi với Aspose.GIS cho .NET
+
 ## Giới thiệu
 Aspose.GIS for .NET là một thư viện mạnh mẽ cung cấp nhiều chức năng để làm việc với hệ thống thông tin địa lý (GIS) trong các ứng dụng .NET. Cho dù bạn đang xây dựng các ứng dụng bản đồ, phân tích dữ liệu không gian hay thực hiện các hoạt động không gian địa lý, Aspose.GIS đều đơn giản hóa quy trình bằng API trực quan và bộ tính năng toàn diện.
 ## Điều kiện tiên quyết
@@ -79,3 +85,9 @@ Hoàn toàn có thể, Aspose.GIS hỗ trợ nhiều định dạng không gian 
  Giấy phép tạm thời cho Aspose.GIS có thể được lấy thông qua cơ quan được chỉ định[liên kết giấy phép tạm thời](https://purchase.aspose.com/temporary-license/), cho phép sử dụng không bị gián đoạn trong thời gian dùng thử hoặc các dự án ngắn hạn.
 ### Câu hỏi: Tôi có thể tìm kiếm hỗ trợ hoặc tham gia các cuộc thảo luận liên quan đến Aspose.GIS ở đâu?
 Để được hỗ trợ, hướng dẫn và tương tác cộng đồng, hãy truy cập diễn đàn Aspose.GIS[đây](https://forum.aspose.com/c/gis/33), nơi bạn có thể tương tác với các nhà phát triển đồng nghiệp, đặt câu hỏi và chia sẻ thông tin chi tiết.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

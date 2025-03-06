@@ -3,10 +3,16 @@ title: 使用 Aspose.GIS for .NET 创建多线字符串几何图形
 linktitle: 创建多线串几何图形
 second_title: Aspose.GIS .NET API
 description: 探索 Aspose.GIS for .NET 在有效管理地理空间数据方面的强大功能。立即下载以获得无缝体验。
-type: docs
 weight: 15
 url: /zh/net/geometry-creation/create-multilinestring-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.GIS for .NET 创建多线字符串几何图形
+
 ## 介绍
 Aspose.GIS for .NET 是一个功能强大的库，使开发人员能够在其 .NET 应用程序中无缝地处理地理空间数据。无论您是构建地图应用程序、执行地理空间分析，还是将基于位置的功能集成到您的软件中，Aspose.GIS 都能提供您高效处理空间数据所需的工具。
 ## 先决条件
@@ -64,3 +70,9 @@ multiLineString.Add(secondLine);
 虽然试用版可供测试，但如果您需要其他功能或需要评估完整功能，您可以从以下位置获取临时许可证：[购买.aspose.com](https://purchase.aspose.com/temporary-license/).
 ### Aspose.GIS for .NET 是否适用于桌面和 Web 应用程序？
 是的，Aspose.GIS for .NET 可用于各种应用程序，包括桌面、Web 和服务器端应用程序，提供跨不同开发场景的多功能性。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

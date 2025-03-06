@@ -3,10 +3,16 @@ title: 在 .NET 中使用 Aspose.GIS 建立複合曲線幾何圖形
 linktitle: 建立複合曲線幾何圖形
 second_title: Aspose.GIS .NET API
 description: 了解如何使用 Aspose.GIS 在 .NET 中建立複合曲線幾何圖形，以實現無縫地理空間資料處理。
-type: docs
 weight: 19
 url: /zh-hant/net/geometry-creation/create-compound-curve-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 在 .NET 中使用 Aspose.GIS 建立複合曲線幾何圖形
+
 ## 介紹
 在 .NET 開發領域，Aspose.GIS 是一個強大的工具，它提供了大量用於處理地理空間資料的功能。無論您是開發測繪、基於位置的服務還是地理分析應用程序，Aspose.GIS 都提供必要的工具來簡化您的開發流程。
 ## 先決條件
@@ -94,3 +100,9 @@ layer.Add(feature);
 是的，Aspose.GIS 提供了一系列空間分析功能，包括距離計算、幾何運算和空間查詢。
 ### 是否有可供 Aspose.GIS 使用者使用的社群論壇或支援管道？
 是的，您可以訪問[Aspose.GIS論壇](https://forum.aspose.com/c/gis/33)提出問題、分享想法並尋求社區和支持團隊的協助。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

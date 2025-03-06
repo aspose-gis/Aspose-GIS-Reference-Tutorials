@@ -3,10 +3,16 @@ title: إتقان التراكبات الهندسية باستخدام Aspose.GI
 linktitle: ابحث عن التراكبات الهندسية
 second_title: Aspose.GIS .NET API
 description: تعرف على كيفية إجراء عمليات التراكب الهندسي باستخدام Aspose.GIS for .NET. إتقان عمليات التقاطع والاتحاد والفرق والفرق المتماثل.
-type: docs
 weight: 16
 url: /ar/net/geometry-analysis/find-geometry-overlays/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# إتقان التراكبات الهندسية باستخدام Aspose.GIS لـ .NET
+
 ## مقدمة
 في مجال نظم المعلومات الجغرافية (GIS)، تعتبر عمليات التراكب أساسية للتحليل المكاني. إنها تتيح المقارنة والجمع بين مجموعات البيانات المكانية المختلفة لاستخلاص رؤى قيمة. يوفر Aspose.GIS for .NET وظائف قوية لأداء التراكبات الهندسية بكفاءة. في هذا البرنامج التعليمي، سوف نتعمق في عمليات التراكب المختلفة مثل التقاطع والاتحاد والفرق والفرق المتماثل باستخدام Aspose.GIS for .NET.
 ## المتطلبات الأساسية
@@ -108,3 +114,9 @@ PrintRing(((IPolygon)multiPolygon[1]).ExteriorRing);
  نعم، التراخيص المؤقتة متاحة لأغراض الاختبار والتقييم. يمكنك الحصول عليها من[هنا](https://purchase.aspose.com/temporary-license/).
 ### س: هل يمكنني شراء Aspose.GIS لـ .NET مباشرة؟
  نعم، يمكنك شراء Aspose.GIS for .NET من موقع الويب[هنا](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

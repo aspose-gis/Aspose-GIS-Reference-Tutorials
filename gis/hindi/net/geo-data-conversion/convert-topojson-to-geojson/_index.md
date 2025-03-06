@@ -3,10 +3,16 @@ title: TopoJSON को जियोJSON में बदलें
 linktitle: TopoJSON को जियोJSON में बदलें
 second_title: Aspose.GIS .NET एपीआई
 description: जानें कि .NET के लिए Aspose.GIS का उपयोग करके TopoJSON को जियोJSON में कैसे परिवर्तित किया जाए। कुशल भौगोलिक डेटा प्रबंधन के लिए हमारे चरण-दर-चरण ट्यूटोरियल का पालन करें।
-type: docs
 weight: 16
 url: /hi/net/geo-data-conversion/convert-topojson-to-geojson/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# TopoJSON को जियोJSON में बदलें
+
 ## परिचय
 इस ट्यूटोरियल में, हम .NET के लिए Aspose.GIS का उपयोग करके TopoJSON से जियोJSON में रूपांतरण प्रक्रिया के बारे में विस्तार से जानेंगे। Aspose.GIS एक शक्तिशाली एपीआई है जिसे .NET अनुप्रयोगों के भीतर भौगोलिक सूचना प्रसंस्करण की सुविधा के लिए डिज़ाइन किया गया है। TopoJSON और जियोJSON भौगोलिक डेटा का प्रतिनिधित्व करने के लिए व्यापक रूप से उपयोग किए जाने वाले प्रारूप हैं, और उनके बीच परिवर्तित करने में सक्षम होना विभिन्न जीआईएस अनुप्रयोगों के लिए आवश्यक है।
 ## आवश्यक शर्तें
@@ -53,3 +59,9 @@ VectorLayer.Convert(sampleTopoJsonPath, Drivers.TopoJson, outputFilePath, Driver
  हाँ, आप नि:शुल्क परीक्षण का लाभ उठा सकते हैं[Aspose वेबसाइट](https://releases.aspose.com/).
 ### मैं Aspose.GIS के लिए अस्थायी लाइसेंस कैसे प्राप्त कर सकता हूँ?
  आप से अस्थायी लाइसेंस प्राप्त कर सकते हैं[Aspose खरीद पृष्ठ](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: التكرار على النقاط في الهندسة
 linktitle: التكرار على النقاط في الهندسة
 second_title: Aspose.GIS .NET API
 description: استكشف Aspose.GIS for .NET، وهي مجموعة أدوات قوية للتكامل السلس للوظائف الجغرافية المكانية في تطبيقات .NET الخاصة بك.
-type: docs
 weight: 11
 url: /ar/net/geometry-processing/iterate-over-points-in-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# التكرار على النقاط في الهندسة
+
 ## مقدمة
 
 في مجال تطوير أنظمة المعلومات الجغرافية (GIS)، يبرز Aspose.GIS for .NET كمجموعة أدوات قوية تمكن المطورين من دمج الوظائف الجغرافية المكانية بسلاسة في تطبيقات .NET الخاصة بهم. تعد هذه المقالة بمثابة دليل خطوة بخطوة لتسخير قوة Aspose.GIS لـ .NET، مع التركيز على التكرار على النقاط في الهندسة. بحلول نهاية هذا البرنامج التعليمي، ستتنقل بمهارة خلال العملية، وستكون مزودًا بالمعرفة الأساسية لتنفيذ هذه الوظيفة دون عناء.
@@ -83,3 +89,9 @@ foreach (IPoint point in line)
 ### س5: هل يتوفر الدعم الفني لمستخدمي Aspose.GIS؟
 
 ج: بالتأكيد، يمكن لمستخدمي Aspose.GIS الوصول إلى الدعم الفني المخصص من خلال المنتديات، مما يضمن المساعدة السريعة لأية استفسارات أو مشكلات تتم مواجهتها أثناء التطوير.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

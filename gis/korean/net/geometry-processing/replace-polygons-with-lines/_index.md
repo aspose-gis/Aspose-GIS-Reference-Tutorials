@@ -3,10 +3,16 @@ title: .NET용 Aspose.GIS를 사용하여 다각형을 선으로 변환
 linktitle: 다각형을 선으로 바꾸기
 second_title: Aspose.GIS .NET API
 description: .NET용 Aspose.GIS를 사용하여 다각형을 선으로 바꾸는 방법을 알아보세요. GIS 데이터 조작 기술을 손쉽게 향상시켜 보세요.
-type: docs
 weight: 16
 url: /ko/net/geometry-processing/replace-polygons-with-lines/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# .NET용 Aspose.GIS를 사용하여 다각형을 선으로 변환
+
 ## 소개
 GIS(지리 정보 시스템) 개발 세계에서 .NET용 Aspose.GIS는 공간 데이터 작업을 위한 강력한 도구 세트로 돋보입니다. 숙련된 개발자이든 이제 막 GIS 프로그래밍 여정을 시작하는 사람이든 관계없이 Aspose.GIS for .NET은 지리적 데이터를 효율적으로 조작하고 분석할 수 있는 포괄적인 기능 세트를 제공합니다.
 ## 전제조건
@@ -54,3 +60,9 @@ Console.WriteLine($"result: {dstGeometry.AsText()}");
  예, 다음에서 임시 라이센스를 취득할 수 있습니다.[여기](https://purchase.aspose.com/temporary-license/).
 ### Aspose.GIS for .NET은 초보자와 숙련된 개발자 모두에게 적합합니까?
 물론, Aspose.GIS for .NET은 모든 수준의 개발자에게 포괄적인 문서화 및 지원을 제공합니다.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

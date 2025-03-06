@@ -3,10 +3,16 @@ title: Операции с данными слоя
 linktitle: Операции с данными слоя
 second_title: API Aspose.GIS .NET
 description: Откройте для себя подробные руководства по работе с данными слоев с помощью Aspose.GIS for .NET. Научитесь читать, манипулировать и визуализировать геопространственные данные.
-type: docs
 weight: 26
 url: /ru/net/layer-data-operations/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Операции с данными слоя
+
 ## Введение
 
 Вы разработчик ГИС и хотите улучшить свои навыки работы с данными слоев? Не смотрите дальше! В этой статье мы углубимся в серию руководств, которые охватывают различные аспекты операций с данными слоев с использованием Aspose.GIS для .NET.
@@ -92,3 +98,9 @@ url: /ru/net/layer-data-operations/
 Освойте написание функций TopoJSON с помощью Aspose.GIS для .NET. Следуйте нашему пошаговому руководству. Повысьте уровень своих ГИС-приложений.
 ### [Запись GeoJSON в поток](./write-geojson-to-stream/)
 Откройте для себя возможности Aspose.GIS для .NET! Напишите GeoJSON для потоковой передачи без особых усилий. Загрузите сейчас и получите полную геопространственную интеграцию.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

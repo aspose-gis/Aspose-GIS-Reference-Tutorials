@@ -3,10 +3,16 @@ title: Создание геометрии
 linktitle: Создание геометрии
 second_title: API Aspose.GIS .NET
 description: Раскройте потенциал манипулирования геопространственными данными с помощью Aspose.GIS для .NET. Погрузитесь в наши руководства, посвященные созданию, преобразованию и анализу геометрии.
-type: docs
 weight: 21
 url: /ru/net/geometry-creation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Создание геометрии
+
 
 ## Введение
 
@@ -105,3 +111,9 @@ url: /ru/net/geometry-creation/
 Узнайте, как использовать Aspose.GIS для .NET для легкого манипулирования географическими данными. Доступны комплексные учебные пособия.
 ### [Преобразование координат с помощью Aspose.GIS](./convert-coordinates/)
 Узнайте, как конвертировать координаты с помощью Aspose.GIS для .NET. Предоставляется пошаговое руководство, предварительные требования и часто задаваемые вопросы.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

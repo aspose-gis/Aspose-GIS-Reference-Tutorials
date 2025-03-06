@@ -3,10 +3,16 @@ title: Especificar ID de objeto y nombres de campos de geometría
 linktitle: Especificar ID de objeto y nombres de campos de geometría
 second_title: Aspose.GIS API .NET
 description: ¡Explore la magia SIG con Aspose.GIS para .NET! Administre datos geoespaciales sin esfuerzo. Descárgalo ahora y libera el poder de la inteligencia espacial.
-type: docs
 weight: 20
 url: /es/net/layer-data-operations/specify-object-id-and-geometry-field-names/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Especificar ID de objeto y nombres de campos de geometría
+
 ## Introducción
 Embarcarse en un viaje al ámbito de los Sistemas de Información Geográfica (SIG) utilizando Aspose.GIS para .NET abre un mundo de posibilidades tanto para desarrolladores como para entusiastas. Esta poderosa biblioteca le permite manejar datos geoespaciales sin esfuerzo. En este tutorial, lo guiaremos a través del proceso de especificar nombres de campos de Geometría e ID de objeto, sentando las bases para sus esfuerzos SIG.
 ## Requisitos previos
@@ -74,3 +80,9 @@ R: Sí, Aspose.GIS para .NET es adecuado tanto para aplicaciones web como de esc
 R: Aspose.GIS para .NET admite varios sistemas de referencia espacial, lo que brinda flexibilidad para diferentes conjuntos de datos geográficos.
 ### P: ¿Dónde puedo buscar ayuda o discutir consultas relacionadas con Aspose.GIS?
  R: Visite el foro Aspose.GIS[aquí](https://forum.aspose.com/c/gis/33) para apoyo y discusiones.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

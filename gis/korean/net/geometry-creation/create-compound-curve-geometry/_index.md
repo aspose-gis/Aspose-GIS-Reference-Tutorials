@@ -3,10 +3,16 @@ title: .NET에서 Aspose.GIS를 사용하여 복합 곡선 형상 생성
 linktitle: 복합 곡선 형상 생성
 second_title: Aspose.GIS .NET API
 description: 원활한 지리공간 데이터 처리를 위해 Aspose.GIS를 사용하여 .NET에서 복합 곡선 형상을 만드는 방법을 알아보세요.
-type: docs
 weight: 19
 url: /ko/net/geometry-creation/create-compound-curve-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# .NET에서 Aspose.GIS를 사용하여 복합 곡선 형상 생성
+
 ## 소개
 .NET 개발 세계에서 Aspose.GIS는 지리공간 데이터 작업을 위한 다양한 기능을 제공하는 강력한 도구입니다. 매핑, 위치 기반 서비스 또는 지리적 분석을 위한 애플리케이션을 개발하든 Aspose.GIS는 개발 프로세스를 간소화하는 데 필요한 도구를 제공합니다.
 ## 전제조건
@@ -94,3 +100,9 @@ layer.Add(feature);
 예, Aspose.GIS는 거리 계산, 기하학적 연산, 공간 쿼리를 포함한 다양한 공간 분석 기능을 제공합니다.
 ### Aspose.GIS 사용자를 위한 커뮤니티 포럼이나 지원 채널이 있습니까?
  네, 방문하실 수 있습니다[Aspose.GIS 포럼](https://forum.aspose.com/c/gis/33) 질문하고, 아이디어를 공유하고, 커뮤니티와 지원팀의 도움을 구하세요.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

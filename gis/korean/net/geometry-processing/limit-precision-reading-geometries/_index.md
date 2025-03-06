@@ -3,10 +3,16 @@ title: .NET용 Aspose.GIS를 사용하여 정밀 판독 형상 제한
 linktitle: 정밀 판독 기하학 제한
 second_title: Aspose.GIS .NET API
 description: .NET용 Aspose.GIS를 사용하여 형상을 읽을 때 정밀도를 효율적으로 관리하는 방법을 알아보세요. 최적의 데이터 처리를 위한 단계별 가이드를 따르세요.
-type: docs
 weight: 12
 url: /ko/net/geometry-processing/limit-precision-reading-geometries/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# .NET용 Aspose.GIS를 사용하여 정밀 판독 형상 제한
+
 ## 소개
 지리공간 데이터 조작 영역에서 .NET용 Aspose.GIS는 개발자와 엔지니어 모두에게 수많은 기능을 제공하는 강력한 도구입니다. 그러한 기능 중 하나는 형상을 읽을 때 정밀도를 제한하는 기능입니다. 이는 정밀도가 가장 중요하지 않은 특정 응용 분야에서 중요한 측면입니다. 이 튜토리얼에서는 .NET용 Aspose.GIS를 사용하여 이를 달성하는 방법을 자세히 살펴보고 프로세스를 관리 가능한 단계로 분류합니다.
 ## 전제조건
@@ -83,3 +89,9 @@ using (VectorLayer layer = VectorLayer.Open(path, Drivers.Shapefile, options))
  임시 라이센스는 다음에서 취득할 수 있습니다.[구매 페이지](https://purchase.aspose.com/temporary-license/) Aspose.GIS용.
 ### .NET용 Aspose.GIS에 대한 도움을 어디서 구할 수 있나요?
  Aspose.GIS를 방문하실 수 있습니다.[법정](https://forum.aspose.com/c/gis/33) 질문, 토론 또는 지원이 필요한 경우.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

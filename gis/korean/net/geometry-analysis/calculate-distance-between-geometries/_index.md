@@ -3,10 +3,16 @@ title: Aspose.GIS를 사용하여 형상 간의 거리 계산
 linktitle: 기하학 사이의 거리 계산
 second_title: Aspose.GIS .NET API
 description: Aspose.GIS를 사용하여 .NET에서 형상 간의 거리를 계산하는 방법을 알아보세요. 코드 예제가 포함된 단계별 가이드입니다. 지리공간 애플리케이션을 강화하세요.
-type: docs
 weight: 21
 url: /ko/net/geometry-analysis/calculate-distance-between-geometries/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS를 사용하여 형상 간의 거리 계산
+
 ## 소개
 지리공간 프로그래밍 영역에서는 서로 다른 형상 간의 거리를 계산하는 능력이 가장 중요합니다. 다각형, 선, 점 등 무엇을 처리하든 그 사이의 거리를 아는 것은 매핑에서 물류 계획에 이르기까지 다양한 애플리케이션에 매우 중요할 수 있습니다. .NET용 Aspose.GIS는 이러한 계산을 쉽고 정확하게 수행할 수 있는 강력한 도구를 제공합니다.
 ## 전제조건
@@ -84,3 +90,9 @@ Console.WriteLine(distance.ToString("F")); // 0.63
 Aspose.GIS for .NET은 다른 GIS 라이브러리와의 상호 운용성을 제공하므로 추가 기능을 활용할 수 있습니다.
 ### .NET 사용자를 위한 Aspose.GIS에 대한 기술 지원이 제공됩니까?
  예, .NET용 Aspose.GIS 사용자는 Aspose를 통해 기술 지원에 액세스할 수 있습니다.[포럼](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

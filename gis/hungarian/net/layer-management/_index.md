@@ -3,10 +3,16 @@ title: Rétegkezelés
 linktitle: Rétegkezelés
 second_title: Aspose.GIS .NET API
 description: Használja ki a térinformatikai fejlesztésben rejlő lehetőségeket az Aspose.GIS for .NET oktatóanyaggal. Könnyedén hozhat létre, kezelhet és manipulálhat GIS-adatkészleteket.
-type: docs
 weight: 24
 url: /hu/net/layer-management/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Rétegkezelés
+
 ## Bevezetés
 
 Az Aspose.GIS for .NET lehetővé teszi a fejlesztők számára, hogy elmélyüljenek a térinformatikai fejlesztés izgalmas világában. Ebben az átfogó oktatóanyag-listában különféle rétegkezelési oktatóanyagokat fedezünk fel, amelyek végigvezetik Önt az Aspose.GIS .NET-hez való teljes potenciáljának felszabadításán. Az új fájl GDB-adatkészletek létrehozásától a téradatok kezeléséig ezek az oktatóanyagok mindent lefednek.
@@ -68,3 +74,9 @@ Oldja fel a térinformatikai varázslatot az Aspose.GIS for .NET segítségével
 Fedezze fel az Aspose.GIS for .NET erejét a téradatok kezelésében. Könnyedén szűrheti a funkciókat, javíthatja a GIS-alkalmazásokat és növelheti a termelékenységet.
 ### [Funkciók kibontása a GeoJSON-ba](./extract-features-to-geojson/)
 Tekintse meg az Aspose.GIS for .NET használatáról szóló részletes útmutatót a funkciók GeoJSON-ba való kinyeréséhez. Használja ki könnyedén a GIS erejét! 
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

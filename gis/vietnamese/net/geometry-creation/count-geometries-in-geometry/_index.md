@@ -3,10 +3,16 @@ title: Đếm hình học trong hình học với Aspose.GIS
 linktitle: Đếm hình học trong hình học
 second_title: API Aspose.GIS .NET
 description: Tìm hiểu cách đếm hình học trong hình học bằng Aspose.GIS cho .NET. Hướng dẫn từng bước với các ví dụ về mã dành cho nhà phát triển.
-type: docs
 weight: 23
 url: /vi/net/geometry-creation/count-geometries-in-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Đếm hình học trong hình học với Aspose.GIS
+
 ## Giới thiệu
 Aspose.GIS for .NET là một công cụ mạnh mẽ dành cho các nhà phát triển đang tìm cách kết hợp chức năng không gian địa lý vào các ứng dụng .NET của họ. Cho dù bạn đang xây dựng phần mềm lập bản đồ, dịch vụ dựa trên vị trí hay công cụ phân tích không gian, Aspose.GIS đều cung cấp một bộ tính năng toàn diện để đáp ứng nhu cầu của bạn. Trong hướng dẫn này, chúng ta sẽ khám phá cách đếm các hình học trong một hình học bằng Aspose.GIS cho .NET.
 ## Điều kiện tiên quyết
@@ -70,3 +76,9 @@ Có, Aspose.GIS cho .NET hỗ trợ nhiều định dạng tệp GIS bao gồm S
  Có, bạn có thể tải xuống bản dùng thử miễn phí từ[trang mạng](https://releases.aspose.com/).
 ### Tôi có thể tìm hỗ trợ cho Aspose.GIS cho .NET ở đâu?
  Bạn có thể tìm thấy sự hỗ trợ trên[Diễn đàn Aspose.GIS](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

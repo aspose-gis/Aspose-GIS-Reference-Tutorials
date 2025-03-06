@@ -3,10 +3,16 @@ title: คำนวณ Convex Hull ด้วย Aspose.GIS สำหรับ .N
 linktitle: รับตัวเรือเรขาคณิตนูน
 second_title: Aspose.GIS .NET API
 description: เรียนรู้วิธีการคำนวณส่วนนูนของเรขาคณิตใน .NET โดยใช้ Aspose.GIS บทช่วยสอนที่ครอบคลุมพร้อมตัวอย่างโค้ดและคำถามที่พบบ่อย
-type: docs
 weight: 20
 url: /th/net/geometry-analysis/get-geometry-convex-hull/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# คำนวณ Convex Hull ด้วย Aspose.GIS สำหรับ .NET
+
 ## การแนะนำ
 Aspose.GIS สำหรับ .NET เป็นไลบรารีที่มีประสิทธิภาพซึ่งมีฟังก์ชันการทำงานที่หลากหลายสำหรับการทำงานกับระบบสารสนเทศภูมิศาสตร์ (GIS) ในแอปพลิเคชัน .NET ไม่ว่าคุณจะสร้างแอปพลิเคชันการทำแผนที่ วิเคราะห์ข้อมูลเชิงพื้นที่ หรือดำเนินการเชิงพื้นที่ Aspose.GIS จะทำให้กระบวนการง่ายขึ้นด้วย API ที่ใช้งานง่ายและชุดคุณลักษณะที่ครอบคลุม
 ## ข้อกำหนดเบื้องต้น
@@ -79,3 +85,9 @@ for (int i = 0; i < ring.Count; ++i)
  สามารถรับใบอนุญาตชั่วคราวสำหรับ Aspose.GIS ผ่านทางที่กำหนด[ลิงค์ใบอนุญาตชั่วคราว](https://purchase.aspose.com/temporary-license/)ช่วยให้ใช้งานได้ไม่สะดุดในช่วงทดลองใช้งานหรือโครงการระยะสั้น
 ### ถาม: ฉันจะขอความช่วยเหลือหรือมีส่วนร่วมในการสนทนาที่เกี่ยวข้องกับ Aspose.GIS ได้ที่ไหน
 สำหรับการสนับสนุน คำแนะนำ และการโต้ตอบกับชุมชน โปรดไปที่ฟอรัม Aspose.GIS[ที่นี่](https://forum.aspose.com/c/gis/33)ซึ่งคุณสามารถมีส่วนร่วมกับเพื่อนนักพัฒนา ถามคำถาม และแบ่งปันข้อมูลเชิงลึก
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

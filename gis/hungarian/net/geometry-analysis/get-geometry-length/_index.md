@@ -3,10 +3,16 @@ title: Számítsa ki a geometriai hosszt .NET-ben az Aspose.GIS segítségével
 linktitle: Get Geometry Leng
 second_title: Aspose.GIS .NET API
 description: Ismerje meg, hogyan számíthatja ki a geometria hosszát .NET-ben az Aspose.GIS segítségével a hatékony téradatkezelés érdekében. Útmutató lépésről lépésre kódpéldákkal.
-type: docs
 weight: 24
 url: /hu/net/geometry-analysis/get-geometry-length/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Számítsa ki a geometriai hosszt .NET-ben az Aspose.GIS segítségével
+
 ## Bevezetés
 .NET-fejlesztés területén az Aspose.GIS robusztus eszközkészletként megállja a helyét, amely hatékony funkciókat kínál a földrajzi információs rendszerek (GIS) kezelésére. Akár tapasztalt fejlesztő, akár csak belép a térinformatikai programozás világába, az Aspose.GIS for .NET átfogó eszközkészletet kínál a téradatok hatékony kezeléséhez. Ebben az oktatóanyagban a térinformatikai fejlesztés egyik alapvető feladatával – a geometria hosszának kiszámításával – foglalkozunk. Lépésről lépésre megvizsgáljuk, hogyan érhetjük el ezt az Aspose.GIS for .NET használatával, a folyamatot kezelhető darabokra bontva a könnyebb érthetőség érdekében.
 ## Előfeltételek
@@ -74,3 +80,9 @@ V: Az Aspose.GIS for .NET kompatibilis a .NET Framework 4.6.1-es vagy újabb ver
  V: Ideiglenes licencet szerezhet be[itt](https://purchase.aspose.com/temporary-license/).
 ### K: Testreszabhatom a kimeneti formátumot a geometriai hosszszámításokhoz?
 V: Igen, az Aspose.GIS for .NET különféle formázási lehetőségeket biztosít a kimeneti formátum testreszabásához az Ön igényei szerint.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

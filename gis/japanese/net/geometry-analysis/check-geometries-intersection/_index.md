@@ -3,10 +3,16 @@ title: Aspose.GIS for .NET を使用してジオメトリの交差を確認す�
 linktitle: ジオメトリの交差をチェック
 second_title: Aspose.GIS .NET API
 description: Aspose.GIS for .NET を使用してジオメトリの交差をチェックする方法を、ステップバイステップのガイダンスとともに学びます。 GIS 開発を簡単に強化します。
-type: docs
 weight: 11
 url: /ja/net/geometry-analysis/check-geometries-intersection/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.GIS for .NET を使用してジオメトリの交差を確認する
+
 ## 導入
 地理情報システム (GIS) の分野では、Aspose.GIS for .NET は、開発者が高度な空間機能をアプリケーションにシームレスに統合できるようにする強力なツールキットとして際立っています。経験豊富な開発者であっても、GIS 開発にまだ足を踏み入れたばかりであっても、この記事は、Aspose.GIS for .NET を活用してジオメトリの交差を効果的にチェックするための包括的なガイドとして役立ちます。
 ## 前提条件
@@ -76,3 +82,9 @@ Console.WriteLine(geometry1.Disjoint(geometry2)); //間違い
 はい、次から一時ライセンスを取得できます。[ここ](https://purchase.aspose.com/temporary-license/).
 ### Aspose.GIS for .NET のライセンス版はどこで購入できますか?
  Aspose.GIS for .NET のライセンス版は、次から購入できます。[ここ](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

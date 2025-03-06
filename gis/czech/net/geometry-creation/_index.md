@@ -3,10 +3,16 @@ title: Tvorba geometrie
 linktitle: Tvorba geometrie
 second_title: Aspose.GIS .NET API
 description: Odemkněte potenciál manipulace s geoprostorovými daty s Aspose.GIS pro .NET. Ponořte se do našich výukových programů, které pokrývají vytváření, převod a analýzu geometrie.
-type: docs
 weight: 21
 url: /cs/net/geometry-creation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Tvorba geometrie
+
 
 ## Úvod
 
@@ -105,3 +111,9 @@ Naučte se počítat geometrie v geometrii pomocí Aspose.GIS pro .NET. Výukov�
 Naučte se používat Aspose.GIS pro .NET k snadné manipulaci s geografickými daty. Úplné dostupné konzultace.
 ### [Převod souřadnic pomocí Aspose.GIS](./convert-coordinates/)
 Naučte se převádět souřadnice pomocí Aspose.GIS pro .NET. K dispozici je podrobný průvodce, předpoklady a často kladené otázky.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

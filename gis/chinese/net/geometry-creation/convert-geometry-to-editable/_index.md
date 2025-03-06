@@ -3,10 +3,16 @@ title: 使用 Aspose.GIS 将几何图形转换为可编辑格式
 linktitle: 将几何图形转换为可编辑
 second_title: Aspose.GIS .NET API
 description: 了解如何使用 Aspose.GIS for .NET 轻松将几何图形转换为可编辑格式。深入研究这个分步教程。
-type: docs
 weight: 22
 url: /zh/net/geometry-creation/convert-geometry-to-editable/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.GIS 将几何图形转换为可编辑格式
+
 ## 介绍
 在地理空间编程领域，效率和准确性至关重要。 Aspose.GIS for .NET 是一个强大的工具包，使开发人员能够轻松地操作地理数据。凭借其全面的功能和用户友好的界面，Aspose.GIS 简化了从简单转换到复杂空间分析的任务。本教程将深入研究这样一个功能：使用 Aspose.GIS for .NET 将几何图形转换为可编辑格式。
 ## 先决条件
@@ -70,3 +76,9 @@ Console.WriteLine(readOnlyLine.AsText()); //线串 (1 1, 2 2)
 是的，您可以从以下机构获得临时许可证[Aspose.GIS购买页面](https://purchase.aspose.com/temporary-license/)出于评估目的。
 ### 问：我可以直接购买Aspose.GIS吗？
 绝对地！前往[购买页面](https://purchase.aspose.com/buy)获取适合您需求的许可证。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

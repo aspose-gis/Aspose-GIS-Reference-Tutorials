@@ -3,10 +3,16 @@ title: Określ identyfikator obiektu i nazwy pól geometrii
 linktitle: Określ identyfikator obiektu i nazwy pól geometrii
 second_title: Aspose.GIS .NET API
 description: Odkryj magię GIS z Aspose.GIS dla .NET! Zarządzaj danymi geoprzestrzennymi bez wysiłku. Pobierz teraz i uwolnij moc inteligencji przestrzennej.
-type: docs
 weight: 20
 url: /pl/net/layer-data-operations/specify-object-id-and-geometry-field-names/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Określ identyfikator obiektu i nazwy pól geometrii
+
 ## Wstęp
 Wyruszenie w podróż do krainy systemów informacji geograficznej (GIS) przy użyciu Aspose.GIS dla .NET otwiera świat możliwości zarówno dla programistów, jak i entuzjastów. Ta potężna biblioteka umożliwia bezproblemową obsługę danych geoprzestrzennych. W tym samouczku przeprowadzimy Cię przez proces określania identyfikatora obiektu i nazw pól geometrii, kładąc podwaliny pod działania GIS.
 ## Warunki wstępne
@@ -74,3 +80,9 @@ O: Tak, Aspose.GIS dla .NET jest odpowiedni zarówno dla aplikacji komputerowych
 O: Aspose.GIS dla .NET obsługuje różne systemy odniesień przestrzennych, zapewniając elastyczność dla różnych zbiorów danych geograficznych.
 ### P: Gdzie mogę szukać pomocy lub omówić zapytania związane z Aspose.GIS?
  O: Odwiedź forum Aspose.GIS[Tutaj](https://forum.aspose.com/c/gis/33) za wsparcie i dyskusję.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

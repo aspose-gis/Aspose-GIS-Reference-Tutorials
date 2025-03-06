@@ -3,10 +3,16 @@ title: Opanowanie etykietowania funkcji za pomocą Aspose.GIS dla .NET
 linktitle: Oznacz funkcje na mapie
 second_title: Aspose.GIS .NET API
 description: Poznaj Aspose.GIS dla .NET i opanuj sztukę oznaczania obiektów na mapach. Ulepsz swoje wizualizacje geoprzestrzenne bez wysiłku. #Aspose #GIS
-type: docs
 weight: 11
 url: /pl/net/map-rendering/label-features-on-map/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Opanowanie etykietowania funkcji za pomocą Aspose.GIS dla .NET
+
 ## Wstęp
 świecie wizualizacji danych geoprzestrzennych etykietowanie obiektów na mapie odgrywa kluczową rolę w skutecznym przekazywaniu informacji. Aspose.GIS dla .NET zapewnia potężny zestaw narzędzi umożliwiający bezproblemowe osiągnięcie tego celu. W tym samouczku omówimy różne metody oznaczania punktów na mapie za pomocą Aspose.GIS, wzbogacając wizualizacje map za pomocą etykiet informacyjnych.
 ## Warunki wstępne
@@ -126,3 +132,9 @@ Aspose.GIS jest zoptymalizowany pod kątem wydajności, ale rozważ użycie konf
 Tak, możesz dostosować rozmieszczenie etykiet, korzystając z opcji takich jak obrót, punkty kontrolne i przesunięcia.
 ### Czy mogę zautomatyzować generowanie etykiet w procesie wsadowym?
 Oczywiście możesz zintegrować Aspose.GIS ze swoimi zautomatyzowanymi przepływami pracy w celu wsadowego generowania etykiet.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: 几何分析
 linktitle: 几何分析
 second_title: Aspose.GIS .NET API
 description: 通过几何分析的综合教程释放 Aspose.GIS .NET 的潜力。轻松掌握空间数据处理，实现稳健的 GIS 开发。
-type: docs
 weight: 22
 url: /zh/net/geometry-analysis/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 几何分析
+
 ## 介绍
 
 Aspose.GIS for .NET 使地理空间分析实现了飞跃，提供了一个多功能工具包，可将空间功能无缝集成到 .NET 应用程序中。在本系列教程中，我们将探索几何分析的各个方面，使您能够充分利用地理空间数据的潜力。让我们深入研究一下细节：
@@ -89,3 +95,9 @@ Aspose.GIS for .NET 使地理空间分析实现了飞跃，提供了一个多功
 了解如何使用 Aspose.GIS 在 .NET 中计算几何长度，以实现高效的空间数据处理。带有代码示例的分步指南。
 ### [获取几何曲面上的点](./get-point-on-geometry-surface/)
 了解如何使用 Aspose.GIS for .NET 高效地处理地理空间数据。包括分步指南和常见问题解答。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: تحديد الشبكة الدقيقة لطبقة ملف GDB في Aspose.
 linktitle: تحديد الشبكة الدقيقة لطبقة ملف GDB
 second_title: Aspose.GIS .NET API
 description: تعرف على كيفية تحديد شبكة دقيقة لطبقة File GDB باستخدام Aspose.GIS for .NET. اتبع البرنامج التعليمي خطوة بخطوة.
-type: docs
 weight: 21
 url: /ar/net/layer-data-operations/define-precision-grid-for-file-gdb-layer/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# تحديد الشبكة الدقيقة لطبقة ملف GDB في Aspose.GIS
+
 ## مقدمة
 في هذا البرنامج التعليمي، سوف نستكشف كيفية تحديد شبكة دقيقة لطبقة قاعدة البيانات الجغرافية للملفات (GDB) باستخدام Aspose.GIS for .NET. Aspose.GIS هي مكتبة .NET قوية توفر وظائف جغرافية مكانية شاملة للعمل مع تنسيقات ملفات GIS المختلفة.
 ## المتطلبات الأساسية
@@ -88,3 +94,9 @@ catch (GisException e)
 نعم، يوفر Aspose.GIS for .NET دعمًا للتحويلات الإحداثية بين أنظمة الإسناد المكاني المختلفة.
 ### هل هناك إصدار تجريبي متاح لـ Aspose.GIS for .NET؟
 نعم، يمكنك تنزيل نسخة تجريبية مجانية من Aspose.GIS for .NET من[موقع إلكتروني](https://releases.aspose.com/gis/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

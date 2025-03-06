@@ -3,10 +3,16 @@ title: Manajemen Lapisan
 linktitle: Manajemen Lapisan
 second_title: Aspose.GIS .NET API
 description: Buka potensi pengembangan geospasial dengan tutorial Aspose.GIS untuk .NET. Membuat, mengelola, dan memanipulasi kumpulan data GIS dengan mudah.
-type: docs
 weight: 24
 url: /id/net/layer-management/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Manajemen Lapisan
+
 ## Perkenalan
 
 Aspose.GIS untuk .NET memberdayakan pengembang untuk mempelajari dunia pengembangan geospasial yang menarik. Dalam daftar tutorial komprehensif ini, kami menjelajahi berbagai Tutorial Manajemen Lapisan yang memandu Anda dalam membuka potensi penuh Aspose.GIS untuk .NET. Dari membuat kumpulan data File GDB baru hingga memanipulasi data spasial, tutorial ini mencakup semuanya.
@@ -68,3 +74,9 @@ Buka keajaiban geospasial dengan Aspose.GIS untuk .NET! Pangkas fitur lapisan de
 Jelajahi kekuatan Aspose.GIS untuk .NET dalam manipulasi data spasial. Filter fitur dengan mudah, tingkatkan aplikasi GIS, dan tingkatkan produktivitas.
 ### [Ekstrak Fitur ke GeoJSON](./extract-features-to-geojson/)
 Jelajahi panduan langkah demi langkah tentang penggunaan Aspose.GIS untuk .NET guna mengekstrak fitur ke GeoJSON. Manfaatkan kekuatan GIS dengan mudah! 
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

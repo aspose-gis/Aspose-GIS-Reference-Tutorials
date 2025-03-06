@@ -3,10 +3,16 @@ title: Déverrouillage des fonctionnalités TopoJSON avec Aspose.GIS pour .NET
 linktitle: Accéder aux fonctionnalités de TopoJSON
 second_title: API Aspose.GIS .NET
 description: Explorez Aspose.GIS pour .NET et apprenez à accéder aux fonctionnalités de TopoJSON étape par étape. Plongez dans la documentation et exploitez les capacités géospatiales sans effort.
-type: docs
 weight: 15
 url: /fr/net/layer-management/access-features-in-topojson/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Déverrouillage des fonctionnalités TopoJSON avec Aspose.GIS pour .NET
+
 ## Introduction
 Aspose.GIS pour .NET est une bibliothèque puissante qui permet aux développeurs de travailler sans effort avec des données géospatiales. Dans ce didacticiel, nous aborderons l'accès aux fonctionnalités de TopoJSON à l'aide d'Aspose.GIS pour .NET. TopoJSON est un format qui représente les caractéristiques géographiques de manière compacte et efficace.
 ## Conditions préalables
@@ -67,3 +73,9 @@ Toutes nos félicitations! Vous avez accédé avec succès aux fonctionnalités 
 Oui, vous pouvez accéder à un essai gratuit[ici](https://releases.aspose.com/).
 ### Q : Comment puis-je acheter une licence ?
  Acheter une licence[ici](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

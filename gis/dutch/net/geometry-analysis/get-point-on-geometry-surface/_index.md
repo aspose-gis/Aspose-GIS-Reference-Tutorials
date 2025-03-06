@@ -3,10 +3,16 @@ title: Verkrijg punt op geometrie-oppervlak
 linktitle: Verkrijg punt op geometrie-oppervlak
 second_title: Aspose.GIS .NET-API
 description: Leer hoe u efficiënt met georuimtelijke gegevens kunt werken met Aspose.GIS voor .NET. Inclusief stap-voor-stap handleiding en veelgestelde vragen.
-type: docs
 weight: 25
 url: /nl/net/geometry-analysis/get-point-on-geometry-surface/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Verkrijg punt op geometrie-oppervlak
+
 ## Invoering
 In deze tutorial onderzoeken we hoe we Aspose.GIS voor .NET kunnen gebruiken om met geometrieën te werken en punten op hun oppervlakken op te halen. Aspose.GIS is een krachtige bibliotheek die verschillende functionaliteiten biedt voor de verwerking, manipulatie en visualisatie van georuimtelijke gegevens in .NET-toepassingen.
 ## Vereisten
@@ -66,3 +72,9 @@ Ja, Aspose.GIS ondersteunt verschillende .NET-frameworks, waaronder .NET Framewo
  Ja, u kunt tijdelijke licenties voor Aspose.GIS verkrijgen bij[hier](https://purchase.aspose.com/temporary-license/).
 ### Waar kan ik Aspose.GIS kopen?
  U kunt Aspose.GIS kopen via de aankooppagina[hier](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

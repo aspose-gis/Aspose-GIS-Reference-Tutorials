@@ -3,10 +3,16 @@ title: Periksa Geometri Menyentuh
 linktitle: Periksa Geometri Menyentuh
 second_title: Aspose.GIS .NET API
 description: Buka kekuatan penanganan data spasial dengan Aspose.GIS untuk .NET. Integrasikan fungsionalitas spasial dengan lancar ke dalam aplikasi Anda dengan perangkat serbaguna ini.
-type: docs
 weight: 13
 url: /id/net/geometry-analysis/check-geometries-touching/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Periksa Geometri Menyentuh
+
 ## Perkenalan
 Di bidang Sistem Informasi Geografis (GIS), Aspose.GIS untuk .NET menonjol sebagai alat yang ampuh bagi pengembang yang ingin menggabungkan fungsi spasial ke dalam aplikasi mereka dengan lancar. Dengan fitur-fitur canggih dan antarmuka yang mudah digunakan, Aspose.GIS memberdayakan pengembang untuk bekerja dengan data spasial dengan mudah, baik itu menganalisis, memvisualisasikan, atau memanipulasi geometri.
 ## Prasyarat
@@ -64,3 +70,9 @@ Aspose.GIS mendukung berbagai kerangka .NET, termasuk .NET Framework, .NET Core,
 Aspose.GIS secara berkala menerima pembaruan dan penyempurnaan untuk memastikan kompatibilitas dengan teknologi terbaru dan mengatasi masalah apa pun yang dilaporkan.
 ### Bisakah saya mendapatkan lisensi sementara untuk Aspose.GIS?
  Ya, Anda bisa mendapatkan lisensi sementara dari[Di Sini](https://purchase.aspose.com/temporary-license/) untuk mengevaluasi kemampuan Aspose.GIS di lingkungan pengembangan Anda.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

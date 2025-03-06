@@ -3,10 +3,16 @@ title: Créer un nouveau jeu de données GDB
 linktitle: Créer un nouveau jeu de données GDB
 second_title: API Aspose.GIS .NET
 description: Explorez Aspose.GIS pour .NET pour créer et gérer sans effort des ensembles de données SIG. Téléchargez-le dès maintenant pour un développement géospatial fluide. #Aspose #SIG
-type: docs
 weight: 10
 url: /fr/net/layer-management/create-new-file-gdb-dataset/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Créer un nouveau jeu de données GDB
+
 ## Introduction
 Dans le domaine du développement géospatial, Aspose.GIS pour .NET se distingue comme une puissante boîte à outils pour gérer et manipuler les données du système d'information géographique (SIG). Que vous soyez un développeur chevronné ou que vous commenciez tout juste votre parcours dans le SIG, ce didacticiel vous guidera tout au long du processus de création d'un nouvel ensemble de données de géodatabase fichier (GDB) à l'aide d'Aspose.GIS pour .NET.
 ## Conditions préalables
@@ -84,3 +90,9 @@ Aspose.GIS pour .NET est une boîte à outils autonome ; cependant, vous pouvez
  Explore le[Documentation Aspose.GIS](https://reference.aspose.com/gis/net/) pour plus d’exemples et d’informations détaillées.
 ### Q : Où puis-je acheter Aspose.GIS pour .NET ?
  Vous pouvez acheter Aspose.GIS pour .NET sur le[page d'achat](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

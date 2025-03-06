@@ -3,10 +3,16 @@ title: Ελέγξτε τις γεωμετρίες που αγγίζουν
 linktitle: Ελέγξτε τις γεωμετρίες που αγγίζουν
 second_title: Aspose.GIS .NET API
 description: Ξεκλειδώστε τη δύναμη του χειρισμού χωρικών δεδομένων με το Aspose.GIS για .NET. Ενσωματώστε απρόσκοπτα χωρικές λειτουργίες στις εφαρμογές σας με αυτό το ευέλικτο κιτ εργαλείων.
-type: docs
 weight: 13
 url: /el/net/geometry-analysis/check-geometries-touching/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Ελέγξτε τις γεωμετρίες που αγγίζουν
+
 ## Εισαγωγή
 Στον τομέα των Γεωγραφικών Συστημάτων Πληροφοριών (GIS), το Aspose.GIS για .NET ξεχωρίζει ως ένα ισχυρό εργαλείο για προγραμματιστές που θέλουν να ενσωματώσουν χωρικές λειτουργίες στις εφαρμογές τους απρόσκοπτα. Με τις ισχυρές δυνατότητες και τη φιλική προς το χρήστη διεπαφή, το Aspose.GIS δίνει τη δυνατότητα στους προγραμματιστές να εργάζονται με χωρικά δεδομένα χωρίς κόπο, είτε πρόκειται για ανάλυση, οπτικοποίηση ή χειρισμό γεωμετριών.
 ## Προαπαιτούμενα
@@ -64,3 +70,9 @@ Console.WriteLine(geometry1.Touches(geometry4)); // Ψευδής
 Το Aspose.GIS λαμβάνει τακτικά ενημερώσεις και βελτιώσεις για τη διασφάλιση της συμβατότητας με τις πιο πρόσφατες τεχνολογίες και την αντιμετώπιση τυχόν προβλημάτων που έχουν αναφερθεί.
 ### Μπορώ να αποκτήσω προσωρινή άδεια για το Aspose.GIS;
  Ναι, μπορείτε να αποκτήσετε προσωρινή άδεια από[εδώ](https://purchase.aspose.com/temporary-license/) για να αξιολογήσετε τις δυνατότητες του Aspose.GIS στο περιβάλλον ανάπτυξης σας.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

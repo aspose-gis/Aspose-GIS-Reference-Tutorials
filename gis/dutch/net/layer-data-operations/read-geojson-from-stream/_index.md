@@ -3,10 +3,16 @@ title: GeoJSON uit Stream lezen met Aspose.GIS voor .NET
 linktitle: Lees GeoJSON uit Stream
 second_title: Aspose.GIS .NET-API
 description: Leer hoe u GeoJSON uit een stream kunt lezen met Aspose.GIS voor .NET. Volg onze stapsgewijze handleiding voor een naadloze integratie van geospatial in uw applicaties.
-type: docs
 weight: 14
 url: /nl/net/layer-data-operations/read-geojson-from-stream/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# GeoJSON uit Stream lezen met Aspose.GIS voor .NET
+
 ## Invoering
 Welkom bij onze stapsgewijze handleiding over het gebruik van Aspose.GIS voor .NET om GeoJSON uit een stream te lezen. Aspose.GIS is een krachtige API die geospatiale mogelijkheden biedt voor .NET-applicaties, waardoor u naadloos met verschillende GIS-formaten kunt werken. In deze zelfstudie leiden we u door het proces van het lezen van GeoJSON-gegevens uit een stream met behulp van Aspose.GIS, waarbij we elke stap opsplitsen voor duidelijkheid en begrijpelijkheid.
 ## Vereisten
@@ -56,3 +62,9 @@ Ja, Aspose.GIS ondersteunt verschillende GIS-formaten zoals GeoJSON, Shapefile, 
  U kunt ondersteuning krijgen voor Aspose.GIS op de Aspose-forums[hier](https://forum.aspose.com/c/gis/33).
 ### Heb ik een tijdelijke licentie nodig om Aspose.GIS te gebruiken?
  U kunt een tijdelijke licentie voor Aspose.GIS verkrijgen bij[hier](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

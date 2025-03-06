@@ -3,10 +3,16 @@ title: Obtenha todos os valores de atributos de recursos
 linktitle: Obtenha todos os valores de atributos de recursos
 second_title: API Aspose.GIS .NET
 description: Explore o desenvolvimento geoespacial com Aspose.GIS for .NET! Recupere valores de atributos de recursos perfeitamente. Baixe agora para uma aventura de codificação espacial.
-type: docs
 weight: 15
 url: /pt/net/layer-interaction-and-data-access/get-all-feature-attribute-values/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Obtenha todos os valores de atributos de recursos
+
 ## Introdução
 Bem-vindo ao mundo do desenvolvimento geoespacial com Aspose.GIS for .NET! Esta poderosa biblioteca permite que os desenvolvedores integrem perfeitamente funcionalidades GIS em seus aplicativos .NET, facilitando o processamento de dados espaciais. Neste tutorial abrangente, exploraremos um aspecto fundamental: recuperar valores de atributos de recursos. Vamos mergulhar!
 ## Pré-requisitos
@@ -84,3 +90,9 @@ Absolutamente! Aspose.GIS suporta vários formatos, incluindo Shapefile, GeoJSON
  Você pode adquirir uma licença temporária para fins de teste[aqui](https://purchase.aspose.com/temporary-license/).
 ### Onde posso encontrar documentação detalhada para Aspose.GIS?
  A documentação abrangente está disponível[aqui](https://reference.aspose.com/gis/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

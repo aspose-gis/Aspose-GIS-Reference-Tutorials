@@ -3,10 +3,16 @@ title: استيراد واصف الطبقة المصممة (SLD)
 linktitle: استيراد واصف الطبقة المصممة (SLD)
 second_title: Aspose.GIS .NET API
 description: ارفع مستوى تطوير نظم المعلومات الجغرافية باستخدام Aspose.GIS for .NET. قم باستيراد واصف الطبقة المصممة (SLD) بسهولة. اكتشف إمكانيات التخصيص الآن!
-type: docs
 weight: 10
 url: /ar/net/map-rendering/import-styled-layer-descriptor/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# استيراد واصف الطبقة المصممة (SLD)
+
 ## مقدمة
 إذا كنت تتعمق في تطوير أنظمة المعلومات الجغرافية (GIS) باستخدام .NET، فإن Aspose.GIS هي الأداة المفضلة لديك للتكامل السلس والمعالجة الفعالة للبيانات المكانية. في هذا الدليل التفصيلي، سنركز على جانب واحد مهم من تطوير نظم المعلومات الجغرافية - وهو استيراد واصف الطبقة المصممة (SLD) باستخدام Aspose.GIS لـ .NET. تسمح لك هذه التقنية بتحسين التمثيل المرئي لبياناتك الجغرافية من خلال تطبيق أنماط محددة مسبقًا.
 ## المتطلبات الأساسية
@@ -66,3 +72,9 @@ using (var map = new Map(500, 320))
  الحصول على ترخيص مؤقت[هنا](https://purchase.aspose.com/temporary-license/) لأغراض التطوير أو التقييم على المدى القصير.
 ### ما هي خيارات الدعم المتاحة؟
  انضم إلى مجتمع Aspose.GIS على[المنتدى](https://forum.aspose.com/c/gis/33) لطلب المساعدة وتبادل الخبرات والتواصل مع المطورين الآخرين.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

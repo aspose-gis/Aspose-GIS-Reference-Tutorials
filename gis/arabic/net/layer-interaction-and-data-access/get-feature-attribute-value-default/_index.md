@@ -3,10 +3,16 @@ title: الحصول على قيمة سمة الميزة (افتراضي)
 linktitle: الحصول على قيمة سمة الميزة (افتراضي)
 second_title: Aspose.GIS .NET API
 description: أطلق العنان لقوة Aspose.GIS لـ .NET! يمكنك استرداد قيم سمات الميزات ومعالجتها بسهولة باستخدام هذا الدليل التفصيلي خطوة بخطوة. قم بتنزيل النسخة التجريبية الآن!
-type: docs
 weight: 14
 url: /ar/net/layer-interaction-and-data-access/get-feature-attribute-value-default/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# الحصول على قيمة سمة الميزة (افتراضي)
+
 ## مقدمة
 مرحبًا بك في عالم Aspose.GIS لـ .NET! في هذا الدليل الشامل، سنتعمق في تعقيدات استرداد قيم سمات الميزة باستخدام الإمكانات القوية لـ Aspose.GIS. سواء كنت مطورًا متمرسًا أو بدأت للتو، سيوفر لك هذا البرنامج التعليمي إرشادات تفصيلية خطوة بخطوة، مما يضمن لك الاستفادة من الإمكانات الكاملة لهذه الأداة الرائعة.
 ## المتطلبات الأساسية
@@ -97,3 +103,9 @@ using (var layer = Drivers.GeoJson.CreateLayer(dataDir + "data2_out.json"))
  نعم، يمكنك استكشاف Aspose.GIS من خلال النسخة التجريبية المجانية. تنزيله[هنا](https://releases.aspose.com/).
 ### كيف يمكنني الحصول على ترخيص مؤقت لأغراض الاختبار؟
  للحصول على تراخيص مؤقتة، قم بزيارة[هنا](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

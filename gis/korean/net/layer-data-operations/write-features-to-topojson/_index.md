@@ -3,10 +3,16 @@ title: TopoJSON에 기능 쓰기
 linktitle: TopoJSON에 기능 쓰기
 second_title: Aspose.GIS .NET API
 description: .NET용 Aspose.GIS를 사용하여 TopoJSON 기능 작성을 마스터하세요. 단계별 튜토리얼을 따라해보세요. GIS 애플리케이션을 향상시키세요.
-type: docs
 weight: 24
 url: /ko/net/layer-data-operations/write-features-to-topojson/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# TopoJSON에 기능 쓰기
+
 ## 소개
 GIS(지리 정보 시스템) 개발 영역에서 .NET용 Aspose.GIS는 공간 데이터를 조작하기 위한 다양한 기능을 제공하는 강력한 툴킷으로 돋보입니다. 많은 기능 중에서 이 튜토리얼은 .NET용 Aspose.GIS를 사용하여 TopoJSON 형식에 기능을 작성하는 특정 작업에 중점을 둡니다. TopoJSON 지원을 통해 GIS 애플리케이션을 향상시키고 싶다면 단계별 가이드를 살펴보세요.
 ## 전제조건
@@ -72,3 +78,9 @@ A: Aspose.GIS for .NET은 독립적으로 작동하도록 설계되었지만 향
  A: 다음으로 가세요.[Aspose.GIS 포럼](https://forum.aspose.com/c/gis/33) 커뮤니티 지원 및 토론을 위해.
 ### Q: Aspose.GIS에 대한 임시 라이선스를 어떻게 얻을 수 있나요?
  A: 임시면허를 취득할 수 있습니다.[여기](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

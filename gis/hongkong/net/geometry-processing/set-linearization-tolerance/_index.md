@@ -3,10 +3,16 @@ title: 使用 Aspose.GIS for .NET 設定線性化容差
 linktitle: 設定線性化容差
 second_title: Aspose.GIS .NET API
 description: 掌握 Aspose.GIS for .NET 輕鬆處理地理空間資料。遵循此逐步教程並釋放 .NET 中 GIS 開發的全部潛力。
-type: docs
 weight: 17
 url: /zh-hant/net/geometry-processing/set-linearization-tolerance/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.GIS for .NET 設定線性化容差
+
 ## 介紹
 在地理資訊系統 (GIS) 開發領域，Aspose.GIS for .NET 作為輕鬆高效處理空間資料的強大工具集脫穎而出。無論您是經驗豐富的 GIS 開發人員還是剛起步，掌握 Aspose.GIS 都可以顯著增強您在 .NET 環境中處理地理空間資料的能力。
 ## 先決條件
@@ -84,3 +90,9 @@ layer.Add(feature);
 是的，您可以從 Aspose 網站下載 Aspose.GIS for .NET 的免費試用版。
 ### 在哪裡可以獲得 Aspose.GIS for .NET 支援？
 您可以從 Aspose 論壇取得 Aspose.GIS for .NET 支援。請造訪下面資源部分中提供的支援連結。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

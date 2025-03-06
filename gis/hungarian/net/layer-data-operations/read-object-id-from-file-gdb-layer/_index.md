@@ -3,10 +3,16 @@ title: Olvassa be az objektumazonosítót az Aspose.GIS fájl GDB rétegéből
 linktitle: Object ID olvasása a fájl GDB rétegből
 second_title: Aspose.GIS .NET API
 description: Ismerje meg, hogyan használhatja az Aspose.GIS for .NET-et a térinformatikai adatok hatékony kezelésére. Átfogó oktatóanyagok és szakértői útmutatás áll rendelkezésre.
-type: docs
 weight: 16
 url: /hu/net/layer-data-operations/read-object-id-from-file-gdb-layer/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Olvassa be az objektumazonosítót az Aspose.GIS fájl GDB rétegéből
+
 ## Bevezetés
 Üdvözöljük átfogó útmutatónkban az Aspose.GIS .NET-hez való elsajátításáról! Az Aspose.GIS egy hatékony könyvtár, amelyet a térinformatikai adatfeldolgozási és vizualizációs feladatok hatékony kezelésére terveztek a .NET keretrendszeren belül. Akár tapasztalt fejlesztő, akár csak most kezdi a térinformatikai programozást, ez az oktatóanyag végigvezeti Önt mindenen, amit tudnia kell az Aspose.GIS teljes potenciáljának kiaknázásához.
 ## Előfeltételek
@@ -74,3 +80,9 @@ Ha bármilyen problémába ütközik, vagy kérdése van az Aspose.GIS-sel kapcs
 Igen, az Aspose webhelyéről ideiglenes licencet szerezhet tesztelési és értékelési célokra.
 ### Hol találom az Aspose.GIS for .NET átfogó dokumentációját?
  Hivatkozhat a[dokumentáció](https://reference.aspose.com/gis/net/) az Aspose.GIS API-k és szolgáltatások használatáról szóló részletes információkért.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

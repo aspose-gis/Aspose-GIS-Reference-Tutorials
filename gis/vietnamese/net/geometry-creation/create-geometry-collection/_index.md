@@ -3,10 +3,16 @@ title: Tạo Bộ sưu tập Hình học với Aspose.GIS cho .NET
 linktitle: Tạo bộ sưu tập hình học
 second_title: API Aspose.GIS .NET
 description: Khai phá sức mạnh của thao tác dữ liệu không gian địa lý với Aspose.GIS cho .NET. Tạo, trực quan hóa và phân tích dữ liệu dựa trên vị trí trong các ứng dụng .NET của bạn một cách liền mạch.
-type: docs
 weight: 21
 url: /vi/net/geometry-creation/create-geometry-collection/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Tạo Bộ sưu tập Hình học với Aspose.GIS cho .NET
+
 
 ## Giới thiệu
 
@@ -109,3 +115,9 @@ Trả lời: Có, Aspose.GIS cung cấp khả năng trực quan hóa mạnh mẽ
 ### Câu hỏi: Có cộng đồng hoặc diễn đàn nào để tôi có thể tìm kiếm trợ giúp và kết nối với những người dùng Aspose.GIS khác không?
 
  Đ: Chắc chắn rồi! Đi tới[Diễn đàn Aspose.GIS](https://forum.aspose.com/c/gis/33) để đặt câu hỏi, chia sẻ kiến thức và kết nối với các nhà phát triển đồng nghiệp trong cộng đồng Aspose.GIS.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

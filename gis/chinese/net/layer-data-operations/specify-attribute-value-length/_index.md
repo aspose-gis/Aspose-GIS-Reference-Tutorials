@@ -3,10 +3,16 @@ title: 指定属性值长度
 linktitle: 指定属性值长度
 second_title: Aspose.GIS .NET API
 description: 使用 Aspose.GIS for .NET 探索地理空间开发。轻松管理和操作 .NET 应用程序中的空间数据。
-type: docs
 weight: 18
 url: /zh/net/layer-data-operations/specify-attribute-value-length/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 指定属性值长度
+
 ## 介绍
 欢迎来到 Aspose.GIS for .NET 的世界——您通往强大而高效的地理空间开发的门户！这个综合教程将指导您完成使用 Aspose.GIS 在 .NET 应用程序中轻松管理地理空间数据的基本步骤。无论您是经验丰富的开发人员还是地理空间编程的新手，本指南都旨在为您提供坚实的基础和实用的见解。
 ## 先决条件
@@ -61,3 +67,9 @@ layer.Add(feature);
 答：购买您的许可证[这里](https://purchase.aspose.com/buy).
 ### 问：在哪里可以访问 Aspose.GIS for .NET 的文档？
 答：请参阅[文档](https://reference.aspose.com/gis/net/)进行全面指导。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Подсчет геометрии в геометрии с помощью
 linktitle: Подсчитайте геометрии в геометрии
 second_title: API Aspose.GIS .NET
 description: Узнайте, как подсчитывать геометрические фигуры с помощью Aspose.GIS для .NET. Пошаговое руководство с примерами кода для разработчиков.
-type: docs
 weight: 23
 url: /ru/net/geometry-creation/count-geometries-in-geometry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Подсчет геометрии в геометрии с помощью Aspose.GIS
+
 ## Введение
 Aspose.GIS for .NET — мощный инструмент для разработчиков, стремящихся включить геопространственные функции в свои .NET-приложения. Независимо от того, создаете ли вы картографическое программное обеспечение, службы определения местоположения или инструменты пространственного анализа, Aspose.GIS предоставляет полный набор функций для удовлетворения ваших потребностей. В этом уроке мы рассмотрим, как подсчитывать геометрии внутри геометрии с помощью Aspose.GIS для .NET.
 ## Предварительные условия
@@ -70,3 +76,9 @@ Console.WriteLine(geometriesCount); // 2
  Да, вы можете загрузить бесплатную пробную версию с сайта[Веб-сайт](https://releases.aspose.com/).
 ### Где я могу найти поддержку Aspose.GIS для .NET?
  Вы можете найти поддержку на[Форум Aspose.GIS](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

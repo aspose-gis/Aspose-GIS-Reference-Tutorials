@@ -3,10 +3,16 @@ title: Bereken convexe romp met Aspose.GIS voor .NET
 linktitle: Verkrijg geometrie convexe romp
 second_title: Aspose.GIS .NET-API
 description: Leer hoe u de convexe romp van een geometrie in .NET kunt berekenen met Aspose.GIS. Uitgebreide tutorial met codevoorbeelden en veelgestelde vragen.
-type: docs
 weight: 20
 url: /nl/net/geometry-analysis/get-geometry-convex-hull/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Bereken convexe romp met Aspose.GIS voor .NET
+
 ## Invoering
 Aspose.GIS voor .NET is een krachtige bibliotheek die een breed scala aan functionaliteiten biedt voor het werken met geografische informatiesystemen (GIS) in .NET-toepassingen. Of u nu kaarttoepassingen bouwt, ruimtelijke gegevens analyseert of geospatiale bewerkingen uitvoert, Aspose.GIS vereenvoudigt het proces met zijn intuïtieve API en uitgebreide functieset.
 ## Vereisten
@@ -79,3 +85,9 @@ Absoluut, Aspose.GIS ondersteunt een breed scala aan georuimtelijke formaten, wa
  Tijdelijke licenties voor Aspose.GIS kunnen worden verkregen via de aangewezen[tijdelijke licentiekoppeling](https://purchase.aspose.com/temporary-license/), waardoor ononderbroken gebruik mogelijk is tijdens proefperiodes of kortetermijnprojecten.
 ### Vraag: Waar kan ik hulp zoeken of deelnemen aan discussies met betrekking tot Aspose.GIS?
 Bezoek het Aspose.GIS-forum voor ondersteuning, begeleiding en interactie met de gemeenschap[hier](https://forum.aspose.com/c/gis/33), waar u met collega-ontwikkelaars kunt communiceren, vragen kunt stellen en inzichten kunt delen.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

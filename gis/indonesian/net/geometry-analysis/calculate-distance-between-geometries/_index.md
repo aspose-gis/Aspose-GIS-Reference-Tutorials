@@ -3,10 +3,16 @@ title: Hitung Jarak Antar Geometri dengan Aspose.GIS
 linktitle: Hitung Jarak Antar Geometri
 second_title: Aspose.GIS .NET API
 description: Pelajari cara menghitung jarak antar geometri di .NET menggunakan Aspose.GIS. Panduan langkah demi langkah dengan contoh kode. Tingkatkan aplikasi geospasial Anda.
-type: docs
 weight: 21
 url: /id/net/geometry-analysis/calculate-distance-between-geometries/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Hitung Jarak Antar Geometri dengan Aspose.GIS
+
 ## Perkenalan
 Dalam bidang pemrograman geospasial, kemampuan menghitung jarak antar geometri yang berbeda adalah hal yang terpenting. Baik Anda berurusan dengan poligon, garis, atau titik, mengetahui jarak di antara keduanya dapat menjadi hal yang penting untuk berbagai aplikasi, mulai dari pemetaan hingga perencanaan logistik. Aspose.GIS untuk .NET menyediakan alat canggih untuk melakukan penghitungan tersebut dengan mudah dan presisi.
 ## Prasyarat
@@ -84,3 +90,9 @@ Ya, Anda dapat bekerja dengan geometri 2D dan 3D menggunakan Aspose.GIS untuk .N
 Aspose.GIS untuk .NET menyediakan interoperabilitas dengan perpustakaan GIS lainnya, memungkinkan Anda memanfaatkan fungsionalitas tambahan.
 ### Apakah dukungan teknis tersedia untuk Aspose.GIS untuk pengguna .NET?
  Ya, pengguna Aspose.GIS untuk .NET dapat mengakses dukungan teknis melalui Aspose[forum](https://forum.aspose.com/c/gis/33).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

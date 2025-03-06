@@ -3,10 +3,16 @@ title: Geometriyi Kontrol Et Başka Bir Şey İçerir
 linktitle: Geometriyi Kontrol Et Başka Bir Şey İçerir
 second_title: Aspose.GIS .NET API'si
 description: Aspose.GIS for .NET'i, .NET uygulamalarınızda kesintisiz coğrafi veri entegrasyonu için güçlü bir kitaplık olarak keşfedin.
-type: docs
 weight: 14
 url: /tr/net/geometry-analysis/check-geometry-contains-another/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Geometriyi Kontrol Et Başka Bir Şey İçerir
+
 ## giriiş
 Aspose.GIS for .NET, geliştiricilerin .NET uygulamalarında coğrafi verilerle sorunsuz bir şekilde çalışmasına olanak tanıyan güçlü bir kütüphanedir. İster bir haritalama uygulaması oluşturuyor olun, ister jeo-uzaysal analiz gerçekleştiriyor olun, ister konum tabanlı özellikleri yazılımınıza entegre ediyor olun, Aspose.GIS, sezgisel API'ler ve sağlam işlevsellik sunarak süreci basitleştirir.
 ## Önkoşullar
@@ -85,3 +91,9 @@ C: Aspose.GIS performansı artırmak, yeni özellikler eklemek ve bildirilen sor
 C: Evet, Aspose.GIS topluluk forumuna katılabilirsiniz[Burada](https://forum.aspose.com/c/gis/33) diğer kullanıcılarla bağlantı kurmak, sorular sormak ve deneyimlerinizi paylaşmak için.
 ### S5: Satın almadan önce Aspose.GIS'i deneyebilir miyim?
  C: Elbette, Aspose.GIS'i aşağıdaki ücretsiz deneme sürümünü indirerek keşfedebilirsiniz.[Burada](https://releases.aspose.com/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

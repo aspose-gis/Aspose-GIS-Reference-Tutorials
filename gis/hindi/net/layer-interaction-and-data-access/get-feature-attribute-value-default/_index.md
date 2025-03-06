@@ -3,10 +3,16 @@ title: फ़ीचर विशेषता मान प्राप्त क
 linktitle: फ़ीचर विशेषता मान प्राप्त करें (डिफ़ॉल्ट)
 second_title: Aspose.GIS .NET एपीआई
 description: .NET के लिए Aspose.GIS की शक्ति अनलॉक करें! इस चरण-दर-चरण मार्गदर्शिका के साथ सुविधा विशेषता मानों को आसानी से पुनर्प्राप्त और हेरफेर करें। अपना परीक्षण अभी डाउनलोड करें!
-type: docs
 weight: 14
 url: /hi/net/layer-interaction-and-data-access/get-feature-attribute-value-default/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# फ़ीचर विशेषता मान प्राप्त करें (डिफ़ॉल्ट)
+
 ## परिचय
 .NET के लिए Aspose.GIS की दुनिया में आपका स्वागत है! इस व्यापक मार्गदर्शिका में, हम Aspose.GIS की शक्तिशाली क्षमताओं का उपयोग करके फीचर विशेषता मानों को पुनर्प्राप्त करने की जटिलताओं के बारे में जानेंगे। चाहे आप एक अनुभवी डेवलपर हों या अभी शुरुआत कर रहे हों, यह ट्यूटोरियल आपको चरण-दर-चरण पूर्वाभ्यास प्रदान करेगा, यह सुनिश्चित करते हुए कि आप इस उल्लेखनीय टूल की पूरी क्षमता का उपयोग करें।
 ## आवश्यक शर्तें
@@ -97,3 +103,9 @@ using (var layer = Drivers.GeoJson.CreateLayer(dataDir + "data2_out.json"))
  हाँ, आप नि:शुल्क परीक्षण के साथ Aspose.GIS का अन्वेषण कर सकते हैं। इसे डाउनलोड करें[यहाँ](https://releases.aspose.com/).
 ### मैं परीक्षण प्रयोजनों के लिए अस्थायी लाइसेंस कैसे प्राप्त कर सकता हूँ?
  अस्थायी लाइसेंस के लिए, यहां जाएं[यहाँ](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}
