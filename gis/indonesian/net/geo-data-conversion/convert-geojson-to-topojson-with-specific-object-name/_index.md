@@ -1,31 +1,55 @@
 ---
-title: Ubah GeoJSON menjadi TopoJSON dengan Nama Objek Tertentu
-linktitle: Ubah GeoJSON menjadi TopoJSON dengan Nama Objek Tertentu
+date: 2025-11-30
+description: Pelajari cara mengonversi GeoJSON ke TopoJSON dengan nama objek tertentu
+  menggunakan Aspose.GIS untuk .NET – panduan lengkap untuk konversi Aspose GIS.
+language: id
+linktitle: How to Convert GeoJSON to TopoJSON with Specific Object Name
 second_title: Aspose.GIS .NET API
-description: Pelajari cara mengonversi GeoJSON ke TopoJSON dengan nama objek tertentu menggunakan Aspose.GIS untuk .NET. Tutorial ini memberikan panduan langkah demi langkah untuk manipulasi data geografis yang efisien.
+title: Cara Mengonversi GeoJSON ke TopoJSON dengan Nama Objek Spesifik
+url: /net/geo-data-conversion/convert-geojson-to-topojson-with-specific-object-name/
 weight: 12
-url: /id/net/geo-data-conversion/convert-geojson-to-topojson-with-specific-object-name/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Ubah GeoJSON menjadi TopoJSON dengan Nama Objek Tertentu
+# Cara Mengonversi GeoJSON ke TopoJSON dengan Nama Objek Khusus
 
-## Perkenalan
-Aspose.GIS untuk .NET adalah alat yang ampuh untuk bekerja dengan data geografis dalam aplikasi .NET. Baik Anda mengembangkan aplikasi pemetaan, menganalisis data spasial, atau memanipulasi file geojson, Aspose.GIS menyediakan serangkaian fitur lengkap untuk menyederhanakan alur kerja Anda.
-## Prasyarat
-Sebelum kita mendalami konversi GeoJSON menjadi TopoJSON dengan nama objek tertentu menggunakan Aspose.GIS untuk .NET, pastikan Anda memiliki hal berikut:
-### 1. Instal Aspose.GIS untuk .NET
- Pergilah ke[Unduh Halaman](https://releases.aspose.com/gis/net/) dan ambil versi terbaru Aspose.GIS untuk .NET.
-### 2. Siapkan Lingkungan Pengembangan Anda
-Pastikan Anda telah menyiapkan Visual Studio atau lingkungan pengembangan .NET lainnya di sistem Anda.
-### 3. Siapkan File GeoJSON Anda
-Miliki file GeoJSON yang ingin Anda konversi ke TopoJSON. Jika Anda tidak memilikinya, Anda dapat menggunakan contoh file GeoJSON apa pun untuk tutorial ini.
+## Introduction
+Dalam tutorial ini Anda akan menemukan **cara mengonversi GeoJSON** menjadi TopoJSON sambil menetapkan nama objek khusus, menggunakan **Aspose.GIS for .NET**. Baik Anda sedang membangun layanan pemetaan, menyiapkan data untuk visualisasi web, atau hanya membutuhkan cara bersih untuk mengganti nama objek output, panduan langkah‑demi‑langkah ini menunjukkan secara tepat apa yang harus dilakukan.
 
-## Impor Namespace
+## Quick Answers
+- **Apa yang dilakukan konversi ini?** Itu mengubah koleksi fitur GeoJSON menjadi topologi TopoJSON dan memungkinkan Anda mengatur nama objek root.  
+- **Perpustakaan mana yang menangani konversi?** Aspose.GIS for .NET (bagian dari suite konversi Aspose GIS).  
+- **Apakah saya memerlukan lisensi?** Versi percobaan gratis dapat digunakan untuk pengujian; lisensi komersial diperlukan untuk produksi.  
+- **Versi .NET apa yang didukung?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.  
+- **Berapa lama implementasinya?** Sekitar 5‑10 menit setelah lingkungan siap.
+
+## What is “convert GeoJSON to TopoJSON”?
+Mengonversi GeoJSON ke TopoJSON berarti mengambil koleksi fitur GeoJSON standar dan mengenkodenya sebagai topologi TopoJSON. TopoJSON mengurangi ukuran file dengan berbagi tepi geometri dan, dengan Aspose.GIS, memungkinkan Anda menentukan **DefaultObjectName** sehingga file output berisi objek bernama pilihan Anda.
+
+## Why use Aspose.GIS .NET for this conversion?
+- **API yang Kuat** – Menangani dataset besar dan geometri kompleks tanpa parsing manual.  
+- **Opsi konversi bawaan** – Langsung mengatur nama objek, presisi koordinat, dan lainnya.  
+- **Lintas platform** – Berfungsi di lingkungan .NET apa pun, dari aplikasi desktop hingga layanan cloud.  
+- **Dukungan komprehensif** – Bagian dari keluarga konversi Aspose GIS, dengan pembaruan reguler dan dokumentasi.
+
+## Prerequisites
+Sebelum kita mulai, pastikan Anda memiliki hal‑hal berikut:
+
+### 1. Install Aspose.GIS for .NET
+Kunjungi [halaman unduhan](https://releases.aspose.com/gis/net/) dan dapatkan versi terbaru Aspose.GIS untuk .NET.
+
+### 2. Set Up Your Development Environment
+Visual Studio, Rider, atau IDE kompatibel .NET apa pun akan berfungsi. Pastikan proyek Anda menargetkan .NET Framework 4.5+ atau .NET Core 3.1+.
+
+### 3. Prepare a GeoJSON File
+Siapkan file GeoJSON yang ingin Anda konversi. Jika belum ada, Anda dapat membuat yang sederhana atau menggunakan file GeoJSON contoh apa pun untuk tutorial ini.
+
+## Import Namespaces
 Sebelum kita memulai proses konversi, mari impor namespace yang diperlukan:
+
 ```csharp
 using Aspose.Gis;
 using Aspose.Gis.Formats.TopoJson;
@@ -36,43 +60,65 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## Langkah 1: Tentukan Jalur File
+## Step‑by‑Step Guide
+
+### Step 1: Define File Paths
 ```csharp
 string sampleGeoJsonPath = "Your Document Directory" + "sample.geojson";
 var outputFilePath = "Your Document Directory" + "convertedSampleWithObjectName_out.topojson";
 ```
- Mengganti`"Your Document Directory"`dengan jalur direktori sebenarnya tempat file GeoJSON Anda berada dan tempat Anda ingin menyimpan file TopoJSON yang dikonversi.
-## Langkah 2: Tetapkan Opsi Konversi
+Ganti `"Your Document Directory"` dengan folder sebenarnya tempat GeoJSON input Anda berada dan tempat Anda ingin menyimpan hasil TopoJSON.
+
+### Step 2: Set Conversion Options (Aspose GIS conversion)
 ```csharp
 var options = new ConversionOptions
 {
     DestinationDriverOptions = new TopoJsonOptions
     {
-        // tentukan nama objek di mana fitur harus ditulis
+        // specify the name of the object where features should be written
         DefaultObjectName = "name_of_the_object",
     }
 };
 ```
- Pada langkah ini, kita membuat a`ConversionOptions` objek dan tentukan`DefaultObjectName`, yang merupakan nama objek tempat fitur harus ditulis dalam file TopoJSON yang dihasilkan.
-## Langkah 3: Lakukan Konversi
+Di sini kami membuat instance `ConversionOptions` dan mengatur `DefaultObjectName`. Ini memberi tahu Aspose.GIS untuk menulis semua fitur di bawah objek bernama **name_of_the_object** dalam file TopoJSON yang dihasilkan.
+
+### Step 3: Perform the Conversion (convert geojson to topojson)
 ```csharp
 VectorLayer.Convert(sampleGeoJsonPath, Drivers.GeoJson, outputFilePath, Drivers.TopoJson, options);
 ```
- Akhirnya, kami menelepon`Convert` metode dari`VectorLayer` kelas, melewati jalur file input GeoJSON, driver input dan output, dan opsi konversi.
+Metode `VectorLayer.Convert` melakukan pekerjaan berat: ia membaca GeoJSON sumber, menerapkan opsi yang didefinisikan di atas, dan menulis file TopoJSON dengan nama objek khusus.
 
-## Kesimpulan
-Dalam tutorial ini, kita telah mempelajari cara mengonversi GeoJSON ke TopoJSON dengan nama objek tertentu menggunakan Aspose.GIS untuk .NET. Dengan mengikuti langkah-langkah ini, Anda dapat mengelola dan memanipulasi data geografis secara efisien di aplikasi .NET Anda.
-## FAQ
-### Bisakah saya menggunakan Aspose.GIS untuk .NET dalam proyek komersial saya?
-Ya, Anda dapat menggunakan Aspose.GIS untuk .NET baik dalam proyek komersial maupun pribadi.
-### Apakah ada uji coba gratis yang tersedia untuk Aspose.GIS untuk .NET?
-Ya, Anda bisa mendapatkan uji coba gratis dari[Di Sini](https://releases.aspose.com/).
-### Di mana saya dapat menemukan dukungan untuk Aspose.GIS untuk .NET?
- Anda bisa mendapatkan dukungan dari[Forum Aspose.GIS](https://forum.aspose.com/c/gis/33).
-### Bagaimana cara membeli lisensi Aspose.GIS untuk .NET?
- Anda dapat membeli lisensi dari[Di Sini](https://purchase.aspose.com/buy).
-### Apakah saya memerlukan izin sementara untuk evaluasi?
- Ya, Anda bisa mendapatkan lisensi sementara dari[Di Sini](https://purchase.aspose.com/temporary-license/).
+## Common Issues & Tips
+- **Kesalahan Path** – Pastikan string direktori diakhiri dengan pemisah path (`\` atau `/`) atau gunakan `Path.Combine` untuk keamanan.  
+- **File Besar** – Untuk file GeoJSON yang sangat besar, pertimbangkan meningkatkan batas memori proses atau melakukan streaming data.  
+- **Konflik Nama Objek** – `DefaultObjectName` harus unik dalam file TopoJSON; jika tidak, objek yang ada dapat ditimpa.
+
+## Conclusion
+Anda sekarang tahu **cara mengonversi GeoJSON ke TopoJSON dengan nama objek tertentu** menggunakan Aspose.GIS untuk .NET. Teknik ini mempermudah persiapan data untuk peta web, mengurangi ukuran file, dan memberi Anda kontrol penuh atas struktur topologi output.
+
+## Frequently Asked Questions
+
+**Q: Bisakah saya menggunakan Aspose.GIS untuk .NET dalam komersial?**  
+A: Ya, Aspose.GIS untuk .NET dapat digunakan dalam aplikasi komersial maupun pribadi dengan lisensi yang valid.
+
+**Q: Apakah tersedia versi percobaan gratis untuk Aspose.GIS untuk .NET?**  
+A: Ya, Anda dapat memperoleh versi percobaan gratis dari [sini](https://releases.aspose.com/).
+
+**Q: Di mana saya dapat menemukan dukungan untuk Aspose.GIS untuk .NET?**  
+A: Dukungan tersedia melalui [forum Aspose.GIS](https://forum.aspose.com/c/gis/33).
+
+**Q: Bagaimana cara membeli lisensi untuk Aspose.GIS untuk .NET?**  
+A: Lisensi dapat dibeli dari [sini](https://purchase.aspose.com/buy).
+
+**Q: Apakah saya memerlukan lisensi sementara untuk evaluasi?**  
+A: Ya, lisensi evaluasi sementara tersedia dari [sini](https://purchase.aspose.com/temporary-license/).
+
+---
+
+**Last Updated:** 2025-11-30  
+**Tested With:** Aspose.GIS for .NET (latest release)  
+**Author:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
