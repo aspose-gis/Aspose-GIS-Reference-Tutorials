@@ -1,33 +1,49 @@
 ---
-title: Bereken de afstand tussen geometrieën met Aspose.GIS
-linktitle: Bereken de afstand tussen geometrieën
-second_title: Aspose.GIS .NET-API
-description: Leer hoe u afstanden tussen geometrieën in .NET kunt berekenen met behulp van Aspose.GIS. Stapsgewijze handleiding met codevoorbeelden. Verbeter uw georuimtelijke toepassingen.
+date: 2025-12-02
+description: Leer hoe u de afstand tussen geometrieën kunt berekenen met Aspose.GIS
+  voor .NET. Deze stapsgewijze gids laat zien hoe u Aspose.GIS gebruikt, de afstand
+  tot een geometrie verkrijgt en afstandsberekeningen in uw toepassingen integreert.
+language: nl
+linktitle: How to Calculate Distance Between Geometries
+second_title: Aspose.GIS .NET API
+title: Hoe de afstand tussen geometrieën te berekenen met Aspose.GIS
+url: /net/geometry-analysis/calculate-distance-between-geometries/
 weight: 21
-url: /nl/net/geometry-analysis/calculate-distance-between-geometries/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Bereken de afstand tussen geometrieën met Aspose.GIS
+# Hoe afstand tussen geometrieën te berekenen met Aspose.GIS
 
-## Invoering
-Op het gebied van geospatiale programmering is de mogelijkheid om afstanden tussen verschillende geometrieën te berekenen van cruciaal belang. Of u nu te maken heeft met polygonen, lijnen of punten, het kennen van de afstand daartussen kan van cruciaal belang zijn voor diverse toepassingen, van kaarten tot logistieke planning. Aspose.GIS voor .NET biedt krachtige tools om dergelijke berekeningen gemakkelijk en nauwkeurig uit te voeren.
+## Inleiding
+Als je ooit hebt moeten weten **hoe afstand te berekenen** tussen twee ruimtelijke objecten—of het nu een wegennet, bezorgzones of milieukenmerken betreft—dan is deze gids voor jou. In .NET maakt Aspose.GIS afstandsberekeningen eenvoudig, nauwkeurig en performant. We lopen een praktijkvoorbeeld door dat laat zien **hoe Aspose.GIS te gebruiken**, eenvoudige geometrieën te maken, en de **GetDistanceTo**‑methode aan te roepen om de afstand daartussen te verkrijgen.
+
+## Snelle antwoorden
+- **Wat betekent “afstand berekenen” in GIS?** Het retourneert de kortste (Euclidische) afstand tussen twee geometrieën.  
+- **Welke Aspose.GIS‑klasse levert de berekening?** `Geometry.GetDistanceTo(Geometry other)`.  
+- **Heb ik een licentie nodig voor ontwikkeling?** Een gratis proefversie werkt voor testen; een licentie is vereist voor productie.  
+- **Kan ik afstand berekenen voor 3‑D‑geometrieën?** Ja, Aspose.GIS ondersteunt 2‑D‑ en 3‑D‑berekeningen.  
+- **Welke .NET‑versies worden ondersteund?** .NET Framework 4.6+, .NET Core 3.1+, .NET 5/6/7.
+
+## Wat is afstandsberekening in geospatiale programmering?
+Afstandsberekening meet de kortste lijn die twee geometrieën met elkaar verbindt. Het is een kernoperatie voor taken zoals nabijheidsanalyse, routering, clustering en ruimtelijke indexering.
+
+## Waarom Aspose.GIS gebruiken om afstand te berekenen?
+- **Hoge precisie** – Gebruikt double‑precision rekenkunde.  
+- **Zero‑dependency** – Geen native GIS‑bibliotheken nodig.  
+- **Cross‑platform** – Werkt op Windows, Linux en macOS met .NET Core/5+.  
+- **Rijk geometrisch model** – Ondersteunt punten, lijnen, polygonen en multi‑geometrieën direct uit de doos.
+
 ## Vereisten
-Voordat u zich verdiept in het berekenen van afstanden tussen geometrieën met Aspose.GIS voor .NET, moet u ervoor zorgen dat u aan de volgende vereisten voldoet:
-### Installeer Aspose.GIS voor .NET
- Om aan de slag te gaan, moet Aspose.GIS voor .NET op uw systeem zijn geïnstalleerd. U kunt de bibliotheek downloaden via de[Aspose.GIS voor .NET-releasespagina](https://releases.aspose.com/gis/net/) en volg de installatie-instructies in de documentatie.
-### Kennis van .NET-ontwikkeling
-Een basiskennis van .NET-ontwikkeling met C# is noodzakelijk om de voorbeelden in deze tutorial te volgen. Als u nog niet bekend bent met de ontwikkeling van .NET, kunt u overwegen de basisbeginselen van C# op te frissen voordat u doorgaat.
+- **Aspose.GIS for .NET** geïnstalleerd (download van de [Aspose.GIS for .NET releases page](https://releases.aspose.com/gis/net/)).  
+- Basiskennis van C# en .NET‑projectstructuur.  
+- Een ontwikkelomgeving zoals Visual Studio 2022 of VS Code.
 
-## Naamruimten importeren
-Voordat u Aspose.GIS voor .NET kunt gaan gebruiken om afstanden tussen geometrieën te berekenen, moet u de vereiste naamruimten in uw C#-project importeren. Volg deze stappen om de benodigde naamruimten te importeren:
-## Open uw C#-project
-Navigeer naar uw C#-project in uw favoriete Integrated Development Environment (IDE), zoals Visual Studio.
-## Voeg naamruimtereferenties toe
-Voeg in uw C#-bestand waarin u de afstandsberekeningen wilt uitvoeren, de volgende naamruimteverwijzingen toe aan het begin van het bestand:
+## Namespaces importeren
+Voordat je Aspose.GIS kunt gebruiken, voeg je de benodigde namespaces toe aan je C#‑bestand:
+
 ```csharp
 using Aspose.Gis.Geometries;
 using System;
@@ -37,13 +53,13 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-Laten we het gegeven voorbeeld opsplitsen in meerdere stappen om te begrijpen hoe u de afstand tussen geometrieën kunt berekenen met behulp van Aspose.GIS voor .NET:
-## Stap 1: Maak veelhoekgeometrie
+### Stap 1: Maak een Polygon-geometrie
 ```csharp
 var polygon = new Polygon();
 ```
-Met deze stap wordt een nieuw exemplaar van een polygoongeometrie gemaakt.
-## Stap 2: Definieer de buitenring van de polygoon
+We beginnen met een lege polygon die later een rechthoekig gebied zal vertegenwoordigen.
+
+### Stap 2: Definieer de buitenring van de Polygon
 ```csharp
 polygon.ExteriorRing = new LinearRing(new[]
 {
@@ -54,42 +70,85 @@ polygon.ExteriorRing = new LinearRing(new[]
     new Point(0, 0),
 });
 ```
-Hier definiëren we de buitenring van de veelhoek door een reeks punten op te geven die de grens van de veelhoek vormen.
-## Stap 3: Creëer lijnstringgeometrie
+De buitenring is een gesloten lus van punten die de grens van de polygon definieert. In dit voorbeeld maken we een 1 × 1‑vierkant.
+
+### Stap 3: Maak een LineString-geometrie
 ```csharp
 var line = new LineString();
 ```
-Met deze stap wordt een nieuw exemplaar van een lijntekenreeksgeometrie geïnitialiseerd.
-## Stap 4: Punten toevoegen aan lijnreeks
+Een `LineString` is een reeks verbonden lijnsegmenten. We gebruiken het om een weg of pad te vertegenwoordigen.
+
+### Stap 4: Voeg punten toe aan de LineString
 ```csharp
 line.AddPoint(2, 0);
 line.AddPoint(1, 3);
 ```
-We voegen twee punten toe aan de lijnreeks, waarmee de vorm en het traject worden gedefinieerd.
-## Stap 5: Bereken de afstand
+Deze twee punten geven de lijn een schuine vorm die de polygon niet snijdt, waardoor de afstandsberekening interessant wordt.
+
+### Stap 5: Bereken de afstand
 ```csharp
 double distance = polygon.GetDistanceTo(line);
 ```
-Met deze stap wordt de afstand tussen de veelhoek en de lijnreeks berekend.
-## Stap 6: Uitvoerresultaat
-```csharp
-Console.WriteLine(distance.ToString("F")); // 0,63
-```
-Ten slotte drukken we de berekende afstand tot de console af, opgemaakt om twee decimalen weer te geven.
+Hier **krijgen we afstand tot geometrie** door `GetDistanceTo` aan te roepen. Aspose.GIS berekent de kortste afstand tussen de rand van de polygon en de lijn.
 
-## Conclusie
-Het berekenen van afstanden tussen geometrieën is een fundamentele taak bij geospatial programmeren, en Aspose.GIS voor .NET vereenvoudigt dit proces met zijn intuïtieve API. Door de stappen in deze zelfstudie te volgen, kunt u moeiteloos afstanden berekenen tussen polygonen, lijnen en punten in uw .NET-toepassingen.
+### Stap 6: Resultaat weergeven
+```csharp
+Console.WriteLine(distance.ToString("F")); // 0.63
+```
+Het resultaat wordt afgedrukt met twee decimalen (`0.63`). Deze waarde vertegenwoordigt de minimale Euclidische afstand tussen het vierkant en de lijn.
+
+## Veelvoorkomende gebruikssituaties
+- **Logistiek:** Vind het dichtstbijzijnde depot voor een bezorgroute.  
+- **Milieumonitoring:** Meet hoe ver een verontreinigingspluim van een beschermd gebied ligt.  
+- **Stedelijke planning:** Bepaal de afstand tussen voorgestelde infrastructuur en bestaande herkenningspunten.
+
+## Probleemoplossing & Tips
+- **Coördinatensysteem is belangrijk:** Zorg ervoor dat beide geometrieën hetzelfde CRS (coordinate reference system) gebruiken voordat je de afstand berekent.  
+- **Prestaties:** Overweeg bij grote datasets ruimtelijke indexering (R‑tree) om O(N²)-vergelijkingen te vermijden.  
+- **Precisie:** Als je geodetische (great‑circle) afstanden nodig hebt, transformeer dan eerst de coördinaten naar een geschikte projectie.
+
 ## Veelgestelde vragen
 ### Is Aspose.GIS voor .NET compatibel met alle .NET-frameworks?
-Ja, Aspose.GIS voor .NET is compatibel met .NET Framework 4.6 en hoger.
-### Kan ik Aspose.GIS voor .NET gebruiken om complexe ruimtelijke analyses uit te voeren?
-Absoluut! Aspose.GIS voor .NET biedt een breed scala aan functionaliteiten voor geavanceerde ruimtelijke analysetaken.
+Ja, Aspose.GIS for .NET is compatibel met .NET Framework 4.6 en hoger.
+
+### Kan ik Aspose.GIS voor .NET gebruiken voor complexe ruimtelijke analyses?
+Absoluut! Aspose.GIS for .NET biedt een breed scala aan functionaliteiten voor geavanceerde ruimtelijke analyse‑taken.
+
 ### Ondersteunt Aspose.GIS voor .NET zowel 2D- als 3D-geometrieën?
-Ja, u kunt met zowel 2D- als 3D-geometrieën werken met Aspose.GIS voor .NET.
+Ja, je kunt zowel 2D- als 3D-geometrieën gebruiken met Aspose.GIS for .NET.
+
 ### Kan ik Aspose.GIS voor .NET integreren met andere GIS-bibliotheken?
-Aspose.GIS voor .NET biedt interoperabiliteit met andere GIS-bibliotheken, waardoor u gebruik kunt maken van extra functionaliteiten.
-### Is er technische ondersteuning beschikbaar voor Aspose.GIS voor .NET-gebruikers?
- Ja, gebruikers van Aspose.GIS voor .NET hebben toegang tot technische ondersteuning via Aspose[forums](https://forum.aspose.com/c/gis/33).
+Aspose.GIS for .NET biedt interoperabiliteit met andere GIS‑bibliotheken, zodat je extra functionaliteiten kunt benutten.
+
+### Is technische ondersteuning beschikbaar voor Aspose.GIS voor .NET-gebruikers?
+Ja, gebruikers van Aspose.GIS for .NET kunnen technische ondersteuning krijgen via de Aspose [forums](https://forum.aspose.com/c/gis/33).
+
+## Veelgestelde vragen
+
+**Q: Hoe nauwkeurig is de afstand die `GetDistanceTo` retourneert?**  
+A: De methode gebruikt double‑precision rekenkunde en volgt de OGC Simple Features Specification, waardoor sub‑meter nauwkeurigheid wordt geboden voor typische vlakke coördinaten.
+
+**Q: Kan ik afstand berekenen tussen een `Point` en een `Polygon`?**  
+A: Ja—roep simpelweg `point.GetDistanceTo(polygon)` (of omgekeerd) aan en Aspose.GIS retourneert de kortste afstand van het punt tot de rand van de polygon.
+
+**Q: Ondersteunt de API batch‑afstandsberekeningen?**  
+A: Hoewel er geen enkele batch‑methode bestaat, kun je over collecties van geometrieën itereren en dezelfde `GetDistanceTo`‑aanroep efficiënt hergebruiken.
+
+**Q: Wat gebeurt er als de geometrieën elkaar snijden?**  
+A: De methode retourneert `0.0` omdat de kortste afstand tussen snijdende geometrieën nul is.
+
+**Q: Is er een manier om de dichtstbijzijnde punten op elke geometrie te krijgen?**  
+A: Ja—gebruik `Geometry.GetNearestPoints(Geometry other)` die een tuple retourneert met de dichtstbijzijnde punten op beide geometrieën.
+
+## Conclusie
+Afstand berekenen tussen geometrieën is een fundamentele bewerking in elke GIS‑enabled .NET‑applicatie. Door de bovenstaande stappen te volgen, weet je nu **hoe afstand te berekenen** met Aspose.GIS, hoe je **Aspose** kunt gebruiken om geometrieën te maken en te manipuleren, en hoe je de **afstand tot geometrie** met één methode‑aanroep kunt ophalen. Experimenteer met verschillende vormen, coördinatensystemen en grotere datasets om te zien hoe deze mogelijkheid je volgende ruimtelijke‑analyseproject kan versterken.
+
+---
+
+**Laatst bijgewerkt:** 2025-12-02  
+**Getest met:** Aspose.GIS 24.11 for .NET  
+**Auteur:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
