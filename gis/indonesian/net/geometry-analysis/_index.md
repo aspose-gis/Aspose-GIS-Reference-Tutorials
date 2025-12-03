@@ -1,100 +1,115 @@
 ---
-title: Analisis Geometri
-linktitle: Analisis Geometri
+date: 2025-12-02
+description: Pelajari cara memeriksa geometri, menghitung luas geometri, cangkang
+  cembung, dan lainnya menggunakan Aspose.GIS untuk .NET. Kuasai penanganan data spasial
+  untuk pengembangan GIS yang kuat.
+language: id
+linktitle: How to Check Geometry
 second_title: Aspose.GIS .NET API
-description: Buka potensi Aspose.GIS .NET dengan tutorial komprehensif tentang analisis geometri. Kuasai penanganan data spasial dengan mudah untuk pengembangan GIS yang tangguh.
+title: Cara Memeriksa Geometri dengan Aspose.GIS untuk .NET
+url: /net/geometry-analysis/
 weight: 22
-url: /id/net/geometry-analysis/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Analisis Geometri
+# Cara Memeriksa Geometri dengan Aspose.GIS untuk .NET
 
-## Perkenalan
+## Pendahuluan
 
-Analisis geospasial mengambil lompatan maju dengan Aspose.GIS untuk .NET, menawarkan perangkat serbaguna untuk integrasi fungsionalitas spasial ke dalam aplikasi .NET Anda. Dalam rangkaian tutorial ini, kita akan mengeksplorasi berbagai aspek analisis geometri, sehingga memberdayakan Anda untuk memanfaatkan potensi penuh data geospasial. Mari selami detailnya:
+Analisis geospasial melompat maju dengan Aspose.GIS untuk .NET, menawarkan toolkit serbaguna untuk integrasi mulus fungsionalitas spasial ke dalam aplikasi .NET Anda. Di pusat ini Anda akan menemukan **cara memeriksa geometri** dan melakukan operasi terkait—seperti menghitung area geometri, mengukur jarak geometri, dan menghasilkan convex hull—dengan cepat dan dapat diandalkan. Baik Anda membangun layanan pemetaan, aplikasi berbasis lokasi, atau platform GIS yang intensif data, tutorial ini memberikan panduan praktis yang Anda butuhkan.
 
-## Periksa Geometri untuk Kesetaraan
-Pelajari seni memeriksa geometri untuk kesetaraan dalam aplikasi .NET Anda menggunakan Aspose.GIS. Tutorial ini memberikan panduan langkah demi langkah, memastikan pemahaman komprehensif tentang pemeriksaan kesetaraan.[Periksa Geometri untuk Tutorial Kesetaraan](./check-geometries-for-equality/)
+## Cara Memeriksa Geometri di .NET
 
-## Periksa Persimpangan Geometri dengan Aspose.GIS untuk .NET
- Buka rahasia pemeriksaan geometri persimpangan dengan Aspose.GIS. Tingkatkan pengembangan GIS Anda dengan mudah dengan mengikuti tutorial mendetail ini.[Periksa Tutorial Persimpangan Geometri](./check-geometries-intersection/)
+Memahami berbagai cara untuk mengevaluasi hubungan spasial sangat penting bagi setiap pengembang GIS. Aspose.GIS menyediakan kumpulan metode kaya yang memungkinkan Anda memverifikasi kesamaan, interseksi, tumpang tindih, sentuhan, keterkaitan, dan cakupan geometri. Di bawah ini Anda akan menemukan koleksi tutorial langkah‑demi‑langkah yang membimbing Anda melalui setiap skenario, lengkap dengan contoh kode, tip praktik terbaik, dan kasus penggunaan dunia nyata.
 
-## Kuasai Analisis Geospasial dengan Aspose.GIS
- Jelajahi analisis geospasial dengan Aspose.GIS untuk .NET. Pelajari seluk-beluk memeriksa geometri yang tumpang tindih melalui panduan langkah demi langkah.[Tutorial Master Analisis Geospasial](./check-geometries-overlap/)
+### Memeriksa Geometri untuk Kesamaan
+Pelajari cara memeriksa geometri untuk kesamaan dalam aplikasi .NET Anda menggunakan Aspose.GIS. Tutorial ini memberikan panduan langkah‑demi‑langkah, memastikan pemahaman komprehensif tentang pemeriksaan kesamaan. [Check Geometries for Equality Tutorial](./check-geometries-for-equality/)
 
-## Periksa Geometri Menyentuh
- Integrasikan penanganan data spasial secara mulus ke dalam aplikasi Anda dengan Aspose.GIS. Tutorial ini memandu Anda melalui proses pemeriksaan geometri yang disentuh.[Lihat Tutorial Menyentuh Geometri](./check-geometries-touching/)
+### Memeriksa Interseksi Geometri dengan Aspose.GIS untuk .NET
+Buka rahasia memeriksa interseksi geometri dengan Aspose.GIS. Tingkatkan pengembangan GIS Anda dengan mudah dengan mengikuti tutorial detail ini. [Check Geometries Intersection Tutorial](./check-geometries-intersection/)
 
-## Periksa Geometri Berisi Yang Lain
-Temukan kemampuan tangguh Aspose.GIS untuk .NET dalam integrasi data geospasial yang lancar. Tutorial ini memberikan wawasan untuk memeriksa apakah satu geometri berisi geometri lainnya.[Periksa Geometri Berisi Tutorial Lain](./check-geometry-contains-another/)
+### Menguasai Analisis Geospasial dengan Aspose.GIS
+Jelajahi analisis geospasial dengan Aspose.GIS untuk .NET. Pelajari seluk‑beluk memeriksa tumpang tindih geometri melalui panduan langkah‑demi‑langkah. [Master Geospatial Analysis Tutorial](./check-geometries-overlap/)
 
-## Periksa Geometri Meliputi Yang Lain
- Bekerja secara efisien dengan data geografis, menganalisis informasi spasial, dan mengintegrasikan fitur pemetaan ke dalam aplikasi .NET Anda menggunakan Aspose.GIS.[Periksa Geometri Meliputi Tutorial Lain](./check-geometry-covers-another/)
+### Memeriksa Geometri yang Menyentuh
+Integrasikan penanganan data spasial secara mulus ke dalam aplikasi Anda dengan Aspose.GIS. Tutorial ini memandu Anda melalui proses memeriksa geometri yang menyentuh. [Check Geometries Touching Tutorial](./check-geometries-touching/)
 
-## Menguasai Overlay Geometri dengan Aspose.GIS untuk .NET
- Selami operasi overlay geometris dengan Aspose.GIS. Kuasai operasi persimpangan, penyatuan, perbedaan, dan perbedaan simetris untuk analisis spasial tingkat lanjut.[Tutorial Menguasai Geometri Overlay](./find-geometry-overlays/)
+### Memeriksa Geometri yang Mengandung Geometri Lain
+Temukan kemampuan kuat Aspose.GIS untuk .NET dalam integrasi data geospasial yang mulus. Tutorial ini memberikan wawasan tentang memeriksa apakah satu geometri mengandung geometri lain. [Check Geometry Contains Another Tutorial](./check-geometry-contains-another/)
 
-## Dapatkan Area Geometri dengan Aspose.GIS
- Buka kekuatan sistem informasi geografis di .NET. Belajar melakukan operasi spasial dengan mudah, termasuk mendapatkan luas geometri.[Dapatkan Tutorial Area Geometri](./get-geometry-area/)
+### Memeriksa Geometri yang Menutupi Geometri Lain
+Kerjakan data geografis secara efisien, analisis informasi spasial, dan integrasikan fitur pemetaan ke dalam aplikasi .NET Anda menggunakan Aspose.GIS. [Check Geometry Covers Another Tutorial](./check-geometry-covers-another/)
 
-## Dapatkan Geometry Centroid dengan Aspose.GIS untuk .NET
-Manfaatkan Aspose.GIS untuk .NET untuk menemukan pusat geometri. Integrasikan analisis spasial secara lancar ke dalam aplikasi .NET Anda dengan tutorial komprehensif ini.[Dapatkan Tutorial Geometri Centroid](./get-geometry-centroid/)
+### Menguasai Overlay Geometri dengan Aspose.GIS untuk .NET
+Menyelami operasi overlay geometrik dengan Aspose.GIS. Kuasai operasi interseksi, union, difference, dan symmetric difference untuk analisis spasial tingkat lanjut. [Mastering Geometry Overlays Tutorial](./find-geometry-overlays/)
 
-## Hitung Convex Hull dengan Aspose.GIS untuk .NET
- Pelajari cara menghitung lambung cembung suatu geometri di .NET menggunakan Aspose.GIS. Tutorial ini mencakup contoh kode dan FAQ untuk pemahaman yang komprehensif.[Tutorial Menghitung Convex Hull](./get-geometry-convex-hull/)
+### Mengambil Area Geometri dengan Aspose.GIS
+Manfaatkan kekuatan sistem informasi geografis di .NET. Pelajari cara melakukan operasi spasial dengan mudah, termasuk **menghitung area geometri**. [Get Geometry Area Tutorial](./get-geometry-area/)
 
-## Hitung Jarak Antar Geometri dengan Aspose.GIS
- Tingkatkan aplikasi geospasial Anda dengan mempelajari cara menghitung jarak antar geometri di .NET menggunakan Aspose.GIS.[Tutorial Menghitung Jarak Antar Geometri](./calculate-distance-between-geometries/)
+### Mengambil Centroid Geometri dengan Aspose.GNET
+Manfaatkan Aspose.GIS untuk .NET untuk menemukan centroid geometri. Integrasikan analisis spasial secara mulus ke dalam aplikasi .NET Anda dengan tutorial komprehensif ini. [Get Geometry Centroid Tutorial](./get-geometry-centroid/)
 
-## Buat Buffer Geometri
- Bebaskan kekuatan pemrograman geospasial dengan Aspose.GIS. Lakukan analisis spasial, visualisasikan data, dan lainnya dengan mudah dengan membuat buffer geometri.[Tutorial Membuat Buffer Geometri](./create-geometry-buffer/)
+### Menghitung Convex Hull dengan Aspose.GIS untuk .NET
+Pelajari cara **menghitung convex hull** dari sebuah geometri di .NET menggunakan Aspose.GIS. Tutorial ini mencakup contoh kode dan FAQ untuk pemahaman menyeluruh. [Calculate Convex Hull Tutorial](./get-geometry-convex-hull/)
 
-## Dapatkan Tipe Geometri dengan Aspose.GIS untuk .NET
-Temukan efisiensi Aspose.GIS untuk .NET. Tangani data spasial secara efektif di proyek .NET Anda dengan tutorial komprehensif tentang cara mendapatkan tipe geometri.[Dapatkan Tutorial Tipe Geometri](./get-geometry-type/)
+### Menghitung Jarak Antara Geometri dengan Aspose.GIS
+Tingkatkan aplikasi geospasial Anda dengan mempelajari cara **mengukur jarak geometri** antara geometri di .NET menggunakan Aspose.GIS. [Calculate Distance Between Geometries Tutorial](./calculate-distance-between-geometries/)
 
-## Hitung Panjang Geometri di .NET dengan Aspose.GIS
- Menangani data spasial secara efisien dengan mempelajari cara menghitung panjang geometri di .NET menggunakan Aspose.GIS. Tutorial ini memberikan panduan langkah demi langkah dengan contoh kode.[Tutorial Menghitung Panjang Geometri](./get-geometry-length/)
+### Membuat Buffer Geometri
+Lepaskan kekuatan pemrograman geospasial dengan Aspose.GIS. Lakukan analisis spasial, visualisasikan data, dan banyak lagi dengan mudah melalui pembuatan buffer geometri. [Create Geometry Buffer Tutorial](./create-geometry-buffer/)
 
-## Dapatkan Poin di Permukaan Geometri
- Bekerja dengan mudah dengan data geospasial menggunakan Aspose.GIS untuk .NET. Tutorial ini memberikan panduan langkah demi langkah dan FAQ untuk mendapatkan titik pada permukaan geometri.[Dapatkan Poin pada Tutorial Permukaan Geometri](./get-point-on-geometry-surface/)
+### Mengambil Tipe Geometri dengan Aspose.GIS untuk .NET
+Temukan efisiensi Aspose.GIS untuk .NET. Tangani data spasial secara efektif dalam proyek .NET Anda dengan tutorial komprehensif tentang **mengambil tipe geometri**. [Get Geometry Type Tutorial](./get-geometry-type/)
 
-Mulailah perjalanan eksplorasi dan penguasaan ini, ubah pengembangan GIS Anda dengan Aspose.GIS untuk .NET. Baik Anda seorang pemula atau pengembang berpengalaman, tutorial ini memastikan Anda membuka potensi penuh dari integrasi dan analisis data spasial. Selami dan tingkatkan keterampilan pemrograman geospasial Anda hari ini!
+### Menghitung Panjang Geometri di .NET dengan Aspose.GIS
+Tangani data spasial secara efisien dengan mempelajari cara **menghitung panjang geometri** di .NET menggunakan Aspose.GIS. Tutorial ini menyediakan panduan langkah‑demi‑langkah dengan contoh kode. [Calculate Geometry Length Tutorial](./get-geometry-length/)
+
+### Mengambil Titik pada Permukaan Geometri
+Kerjakan data geospasial dengan mudah menggunakan Aspose.GIS untuk .NET. Tutorial ini menyediakan panduan langkah‑demi‑langkah dan FAQ tentang cara mengambil titik pada permukaan geometri. [Get Point on Geometry Surface Tutorial](./get-point-on-geometry-surface/)
+
+Mulailah perjalanan eksplorasi dan penguasaan ini, mengubah pengembangan GIS Anda dengan Aspose.GIS untuk .NET. Baik Anda pemula maupun pengembang berpengalaman, tutorial ini memastikan Anda memanfaatkan potensi penuh integrasi dan analisis data spasial. Selami dan tingkatkan keterampilan pemrograman geospasial Anda hari ini!
 
 ## Tutorial Analisis Geometri
-### [Periksa Geometri untuk Kesetaraan](./check-geometries-for-equality/)
-Pelajari cara menggunakan Aspose.GIS untuk .NET guna memeriksa geometri untuk kesetaraan dalam aplikasi .NET Anda dengan tutorial komprehensif ini.
-### [Periksa Persimpangan Geometri dengan Aspose.GIS untuk .NET](./check-geometries-intersection/)
-Pelajari cara memeriksa persimpangan geometri menggunakan Aspose.GIS untuk .NET dengan panduan langkah demi langkah. Tingkatkan pengembangan GIS Anda dengan mudah.
-### [Kuasai Analisis Geospasial dengan Aspose.GIS](./check-geometries-overlap/)
-Jelajahi analisis geospasial dengan Aspose.GIS untuk .NET. Pelajari cara memeriksa geometri yang tumpang tindih dengan panduan langkah demi langkah.
-### [Periksa Geometri Menyentuh](./check-geometries-touching/)
-Buka kekuatan penanganan data spasial dengan Aspose.GIS untuk .NET. Integrasikan fungsionalitas spasial dengan lancar ke dalam aplikasi Anda dengan perangkat serbaguna ini.
-### [Periksa Geometri Berisi Yang Lain](./check-geometry-contains-another/)
-Jelajahi Aspose.GIS untuk .NET, perpustakaan tangguh untuk integrasi data geospasial yang lancar dalam aplikasi .NET Anda.
-### [Periksa Geometri Meliputi Yang Lain](./check-geometry-covers-another/)
+### [Check Geometries for Equality](./check-geometries-for-equality/)
+Pelajari cara menggunakan Aspose.GIS untuk .NET memeriksa geometri untuk kesamaan dalam aplikasi .NET Anda dengan tutorial komprehensif ini.
+### [Check Geometries Intersection with Aspose.GIS for .NET](./check-geometries-intersection/)
+Pelajari cara memeriksa interseksi geometri menggunakan Aspose.GIS untuk .NET dengan panduan langkah‑demi‑langkah. Tingkatkan pengembangan GIS Anda dengan mudah.
+### [Master Geospatial Analysis with Aspose.GIS](./check-geometries-overlap/)
+Jelajahi analisis geospasial dengan Aspose.GIS untuk .NET. Pelajari cara memeriksa tumpang tindih geometri dengan panduan langkah‑demi‑langkah.
+### [Check Geometries Touching](./check-geometries-touching/)
+Manfaatkan kekuatan penanganan data spasial dengan Aspose.GIS untuk .NET. Integrasikan fungsionalitas spasial secara mulus ke dalam aplikasi Anda dengan toolkit serbaguna ini.
+### [Check Geometry Contains Another](./check-geometry-contains-another/)
+Jelajahi Aspose.GIS untuk .NET, perpustakaan kuat untuk integrasi data geospasial yang mulus dalam aplikasi .NET Anda.
+### [Check Geometry Covers Another](./check-geometry-covers-another/)
 Pelajari cara memanfaatkan Aspose.GIS untuk .NET agar dapat bekerja secara efisien dengan data geografis, menganalisis informasi spasial, dan mengintegrasikan fitur pemetaan ke dalam aplikasi .NET Anda.
-### [Menguasai Overlay Geometri dengan Aspose.GIS untuk .NET](./find-geometry-overlays/)
-Pelajari cara melakukan operasi overlay geometris menggunakan Aspose.GIS untuk .NET. Kuasai operasi perpotongan, penyatuan, selisih, dan selisih simetris.
-### [Dapatkan Area Geometri dengan Aspose.GIS](./get-geometry-area/)
-Buka kekuatan sistem informasi geografis di .NET dengan Aspose.GIS. Lakukan operasi spasial dengan mudah.
-### [Dapatkan Geometry Centroid dengan Aspose.GIS](./get-geometry-centroid/)
-Pelajari cara memanfaatkan Aspose.GIS untuk .NET ke centroid geometri melalui panduan komprehensif ini. Integrasikan analisis spasial dengan lancar ke dalam aplikasi .NET Anda.
-### [Hitung Convex Hull dengan Aspose.GIS untuk .NET](./get-geometry-convex-hull/)
-Pelajari cara menghitung lambung cembung suatu geometri di .NET menggunakan Aspose.GIS. Tutorial komprehensif dengan contoh kode dan FAQ.
-### [Hitung Jarak Antar Geometri dengan Aspose.GIS](./calculate-distance-between-geometries/)
-Pelajari cara menghitung jarak antar geometri di .NET menggunakan Aspose.GIS. Panduan langkah demi langkah dengan contoh kode. Tingkatkan aplikasi geospasial Anda.
-### [Buat Buffer Geometri](./create-geometry-buffer/)
-Buka kekuatan pemrograman geospasial dengan Aspose.GIS untuk .NET. Lakukan analisis spasial, visualisasikan data, dan lainnya dengan mudah.
-### [Dapatkan Tipe Geometri dengan Aspose.GIS untuk .NET](./get-geometry-type/)
-Temukan kehebatan Aspose.GIS untuk .NET. Pelajari cara menangani data spasial secara efisien di proyek .NET Anda dengan tutorial komprehensif ini.
-### [Hitung Panjang Geometri di .NET dengan Aspose.GIS](./get-geometry-length/)
-Pelajari cara menghitung panjang geometri di .NET menggunakan Aspose.GIS untuk penanganan data spasial yang efisien. Panduan langkah demi langkah dengan contoh kode.
-### [Dapatkan Poin di Permukaan Geometri](./get-point-on-geometry-surface/)
-Pelajari cara bekerja dengan data geospasial secara efisien menggunakan Aspose.GIS untuk .NET. Panduan langkah demi langkah dan FAQ disertakan.
+### [Mastering Geometry Overlays with Aspose.GIS for .NET](./find-geometry-overlays/)
+Pelajari cara melakukan operasi overlay geometrik menggunakan Aspose.GIS untuk .NET. Kuasai operasi interseksi, union, difference, dan symmetric difference.
+### [Get Geometry Area with Aspose.GIS](./get-geometry-area/)
+Manfaatkan kekuatan sistem informasi geografis di .NET dengan Aspose.GIS. Lakukan operasi spasial dengan mudah.
+### [Get Geometry Centroid with Aspose.GIS for .NET](./get-geometry-centroid/)
+Pelajari cara memanfaatkan Aspose.GIS untuk .NET untuk menemukan centroid geometri melalui tutorial komprehensif ini. Integrasikan analisis spasial secara mulus ke dalam aplikasi .NET Anda.
+### [Calculate Convex Hull with Aspose.GIS for .NET](./get-geometry-convex-hull/)
+Pelajari cara menghitung convex hull dari sebuah geometri di .NET menggunakan Aspose.GIS. Tutorial lengkap dengan contoh kode dan FAQ.
+### [Calculate Distance Between Geometries with Aspose.GIS](./calculate-distance-between-geometries/)
+Pelajari cara menghitung jarak antara geometri di .NET menggunakan Aspose.GIS. Panduan langkah‑demi‑langkah dengan contoh kode. Tingkatkan aplikasi geospasial Anda.
+### [Create Geometry Buffer](./create-geometry-buffer/)
+Manfaatkan kekuatan pemrograman geospasial dengan Aspose.GIS untuk .NET. Lakukan analisis spasial, visualisasikan data, dan banyak lagi dengan mudah.
+### [Get Geometry Type with Aspose.GIS for .NET](./get-geometry-type/)
+Temukan kekuatan Aspose.GIS untuk .NET. Pelajari cara menangani data spasial secara efisien dalam proyek .NET Anda dengan tutorial komprehensif ini.
+### [Calculate Geometry Length in .NET with Aspose.GIS](./get-geometry-length/)
+Pelajari cara menghitung panjang geometri di .NET menggunakan Aspose.GIS untuk penanganan data spasial yang efisien. Panduan langkah‑demi‑langkah dan contoh kode.
+### [Get Point on Geometry Surface](./get-point-on-geometry-surface/)
+Pelajari cara bekerja dengan data geospasial secara efisien menggunakan Aspose.GIS untuk .NET. Panduan langkah‑demi‑langkah dan FAQ disertakan.
+
+---
+
+**Terakhir Diperbarui:** 2025-12-02  
+**Diuji Dengan:** Aspose.GIS untuk .NET (rilis stabil terbaru)  
+**Penulis:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}

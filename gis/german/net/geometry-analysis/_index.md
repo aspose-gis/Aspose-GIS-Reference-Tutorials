@@ -1,100 +1,130 @@
 ---
-title: Geometrieanalyse
-linktitle: Geometrieanalyse
-second_title: Aspose.GIS .NET-API
-description: Nutzen Sie das Potenzial von Aspose.GIS .NET mit umfassenden Tutorials zur Geometrieanalyse. Beherrschen Sie mühelos den Umgang mit Geodaten für eine robuste GIS-Entwicklung.
+date: 2025-12-02
+description: Erfahren Sie, wie Sie Geometrien prüfen, Flächen von Geometrien berechnen,
+  konvexe Hüllen und mehr mit Aspose.GIS für .NET. Beherrschen Sie die Verarbeitung
+  räumlicher Daten für eine robuste GIS-Entwicklung.
+language: de
+linktitle: How to Check Geometry
+second_title: Aspose.GIS .NET API
+title: Wie man Geometrie mit Aspose.GIS für .NET überprüft
+url: /net/geometry-analysis/
 weight: 22
-url: /de/net/geometry-analysis/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Geometrieanalyse
+# Wie man Geometrie mit Aspose.GIS für .NET prüft
 
 ## Einführung
 
-Die Geodatenanalyse macht mit Aspose.GIS für .NET einen großen Schritt nach vorne und bietet ein vielseitiges Toolkit für die nahtlose Integration räumlicher Funktionen in Ihre .NET-Anwendungen. In dieser Reihe von Tutorials befassen wir uns mit verschiedenen Aspekten der Geometrieanalyse und ermöglichen Ihnen, das volle Potenzial von Geodaten auszuschöpfen. Schauen wir uns die Details an:
+Die räumliche Analyse macht mit Aspose.GIS für .NET einen großen Sprung nach vorn und bietet ein vielseitiges Toolkit für die nahtlose Integration räumlicher Funktionalitäten in Ihre .NET‑Anwendungen. In diesem Hub entdecken Sie **wie man Geometrie prüft** und verwandte Operationen – wie das Berechnen von Geometrie‑Flächen, das Messen von Geometrie‑Entfernungen und das Erzeugen konvexer Hüllen – schnell und zuverlässig. Egal, ob Sie einen Mapping‑Dienst, eine standortbasierte App oder eine datenintensive GIS‑Plattform erstellen, diese Tutorials bieten Ihnen die praxisnahe Anleitung, die Sie benötigen.
 
-## Überprüfen Sie Geometrien auf Gleichheit
-Lernen Sie die Kunst, Geometrien in Ihren .NET-Anwendungen mit Aspose.GIS auf Gleichheit zu prüfen. Dieses Tutorial bietet eine Schritt-für-Schritt-Anleitung, die ein umfassendes Verständnis der Gleichheitsprüfungen gewährleistet.[Tutorial „Geometrien auf Gleichheit prüfen“.](./check-geometries-for-equality/)
+## Wie man Geometrie in .NET prüft
 
-## Überprüfen Sie den Schnittpunkt von Geometrien mit Aspose.GIS für .NET
- Entdecken Sie die Geheimnisse der Schnittpunktprüfung von Geometrien mit Aspose.GIS. Verbessern Sie Ihre GIS-Entwicklung mühelos, indem Sie diesem ausführlichen Tutorial folgen.[Sehen Sie sich das Tutorial zu Geometrie-Schnittpunkten an](./check-geometries-intersection/)
+Das Verständnis der verschiedenen Methoden zur Bewertung räumlicher Beziehungen ist für jeden GIS‑Entwickler unerlässlich. Aspose.GIS bietet eine umfangreiche Sammlung von Methoden, mit denen Sie Gleichheit, Schnitte, Überlappungen, Berührungen, Einschluss und Abdeckung von Geometrien überprüfen können. Im Folgenden finden Sie eine kuratierte Sammlung von Schritt‑für‑Schritt‑Tutorials, die Sie durch jedes Szenario führen, inklusive Code‑Beispielen, Best‑Practice‑Tipps und Anwendungsfällen aus der Praxis.
 
-## Meistern Sie die Geodatenanalyse mit Aspose.GIS
- Entdecken Sie Geoanalysen mit Aspose.GIS für .NET. Lernen Sie die Feinheiten der Überprüfung von Geometrieüberlappungen anhand einer Schritt-für-Schritt-Anleitung kennen.[Master-Tutorial zur Geodatenanalyse](./check-geometries-overlap/)
+### Geometrien auf Gleichheit prüfen
+Erfahren Sie, wie Sie Geometrien in Ihren .NET‑Anwendungen mit Aspose.GIS auf Gleichheit prüfen. Dieses Tutorial bietet eine Schritt‑für‑Schritt‑Anleitung und sorgt für ein umfassendes Verständnis von Gleichheitsprüfungen. [Check Geometries for Equality Tutorial](./check-geometries-for-equality/)
 
-## Überprüfen Sie berührende Geometrien
- Integrieren Sie die Geodatenverarbeitung nahtlos in Ihre Anwendungen mit Aspose.GIS. Dieses Tutorial führt Sie durch den Prozess der Prüfung berührender Geometrien.[Sehen Sie sich das Tutorial zum Anfassen von Geometrien an](./check-geometries-touching/)
+### Geometrien‑Schnitt mit Aspose.GIS für .NET prüfen
+Entdecken Sie, wie Sie Geometrien‑Schnitte mit Aspose.GIS prüfen. Verbessern Sie Ihre GIS‑Entwicklung mühelos, indem Sie diesem detaillierten Tutorial folgen. [Check Geometries Intersection Tutorial](./check-geometries-intersection/)
 
-## Überprüfen Sie, ob die Geometrie eine andere enthält
-Entdecken Sie die robusten Funktionen von Aspose.GIS für .NET bei der nahtlosen Geodatenintegration. Dieses Tutorial bietet Einblicke in die Überprüfung, ob eine Geometrie eine andere enthält.[„Geometrie prüfen“ enthält ein weiteres Tutorial](./check-geometry-contains-another/)
+### Geodatenanalyse mit Aspose.GIS meistern
+Erkunden Sie die Geodatenanalyse mit Aspose.GIS für .NET. Lernen Sie die Feinheiten des Prüfens von Geometrie‑Überlappungen durch eine Schritt‑für‑Schritt‑Anleitung. [Master Geospatial Analysis Tutorial](./check-geometries-overlap/)
 
-## Die Check-Geometrie deckt eine andere ab
- Arbeiten Sie effizient mit geografischen Daten, analysieren Sie räumliche Informationen und integrieren Sie Kartenfunktionen in Ihre .NET-Anwendungen mit Aspose.GIS.[Check Geometry deckt ein weiteres Tutorial ab](./check-geometry-covers-another/)
+### Geometrien auf Berührung prüfen
+Integrieren Sie die Verarbeitung räumlicher Daten nahtlos in Ihre Anwendungen mit Aspose.GIS. Dieses Tutorial führt Sie durch den Prozess, Geometrien auf Berührung zu prüfen. [Check Geometries Touching Tutorial](./check-geometries-touching/)
 
-## Beherrschen von Geometrieüberlagerungen mit Aspose.GIS für .NET
- Tauchen Sie mit Aspose.GIS in geometrische Überlagerungsvorgänge ein. Beherrschen Sie Schnitt-, Vereinigungs-, Differenz- und symmetrische Differenzoperationen für erweiterte räumliche Analysen.[Tutorial zum Beherrschen von Geometrieüberlagerungen](./find-geometry-overlays/)
+### Geometrie enthält eine andere prüfen
+Entdecken Sie die leistungsstarken Funktionen von Aspose.GIS für .NET bei der nahtlosen Integration geodaten. Dieses Tutorial gibt Einblicke, wie geprüft wird, ob eine Geometrie eine andere enthält. [Check Geometry Contains Another Tutorial](./check-geometry-contains-another/)
 
-## Holen Sie sich den Geometriebereich mit Aspose.GIS
- Nutzen Sie die Leistungsfähigkeit geografischer Informationssysteme in .NET. Lernen Sie, räumliche Operationen mühelos durchzuführen, einschließlich der Ermittlung von Geometrieflächen.[Holen Sie sich das Tutorial zum Geometriebereich](./get-geometry-area/)
+### Geometrie deckt eine andere ab prüfen
+Arbeiten Sie effizient mit geografischen Daten, analysieren Sie räumliche Informationen und integrieren Sie Mapping‑Funktionen in Ihre .NET‑Anwendungen mit Aspose.GIS. [Check Geometry Covers Another Tutorial](./check-geometry-covers-another/)
 
-## Holen Sie sich den Geometrieschwerpunkt mit Aspose.GIS für .NET
-Nutzen Sie Aspose.GIS für .NET, um Geometrieschwerpunkte zu finden. Integrieren Sie mit diesem umfassenden Tutorial räumliche Analysen nahtlos in Ihre .NET-Anwendungen.[Holen Sie sich das Tutorial zum Geometrieschwerpunkt](./get-geometry-centroid/)
+### Geometrie‑Overlays mit Aspose.GIS für .NET meistern
+Tauchen Sie ein in geometrische Overlay‑Operationen mit Aspose.GIS. Beherrschen Sie Schnitt‑, Vereinigungs‑, Differenz‑ und symmetrische Differenz‑Operationen für fortgeschrittene räumliche Analysen. [Mastering Geometry Overlays Tutorial](./find-geometry-overlays/)
 
-## Berechnen Sie die konvexe Hülle mit Aspose.GIS für .NET
- Erfahren Sie, wie Sie mit Aspose.GIS die konvexe Hülle einer Geometrie in .NET berechnen. Dieses Tutorial enthält Codebeispiele und FAQs für ein umfassendes Verständnis.[Tutorial zur Berechnung der konvexen Hülle](./get-geometry-convex-hull/)
+### Geometrie‑Fläche mit Aspose.GIS ermitteln
+Entfesseln Sie die Leistungsfähigkeit von Geoinformationssystemen in .NET. Lernen Sie, räumliche Operationen mühelos auszuführen, einschließlich **Berechnung der Geometrie‑Fläche**. [Get Geometry Area Tutorial](./get-geometry-area/)
 
-## Berechnen Sie den Abstand zwischen Geometrien mit Aspose.GIS
- Verbessern Sie Ihre Geodatenanwendungen, indem Sie lernen, wie Sie mit Aspose.GIS Abstände zwischen Geometrien in .NET berechnen.[Tutorial zum Berechnen des Abstands zwischen Geometrien](./calculate-distance-between-geometries/)
+### Geometrie‑Schwerpunkt mit Aspose.GIS für .NET ermitteln
+Nutzen Sie Aspose.GIS für .NET, um Geometrie‑Schwerpunkte zu finden. Integrieren Sie räumliche Analysen nahtlos in Ihre .NET‑Anwendungen mit diesem umfassenden Tutorial. [Get Geometry Centroid Tutorial](./get-geometry-centroid/)
 
-## Geometriepuffer erstellen
- Entfesseln Sie die Leistungsfähigkeit der Geoprogrammierung mit Aspose.GIS. Durch die Erstellung von Geometriepuffern können Sie ganz einfach räumliche Analysen durchführen, Daten visualisieren und vieles mehr.[Tutorial zum Erstellen eines Geometriepuffers](./create-geometry-buffer/)
+### Konvexe Hülle einer Geometrie mit Aspose.GIS für .NET berechnen
+Erfahren Sie, wie Sie die **konvexe Hülle** einer Geometrie in .NET mit Aspose.GIS berechnen. Dieses Tutorial enthält Code‑Beispiele und FAQs für ein umfassendes Verständnis. [Calculate Convex Hull Tutorial](./get-geometry-convex-hull/)
 
-## Holen Sie sich den Geometrietyp mit Aspose.GIS für .NET
-Entdecken Sie die Effizienz von Aspose.GIS für .NET. Behandeln Sie räumliche Daten effektiv in Ihren .NET-Projekten mit diesem umfassenden Tutorial zum Abrufen von Geometrietypen.[Holen Sie sich das Tutorial zum Geometrietyp](./get-geometry-type/)
+### Abstand zwischen Geometrien mit Aspose.GIS berechnen
+Verbessern Sie Ihre geodatenbasierten Anwendungen, indem Sie lernen, wie Sie **Geometrie‑Abstände** zwischen Geometrien in .NET mit Aspose.GIS messen. [Calculate Distance Between Geometries Tutorial](./calculate-distance-between-geometries/)
 
-## Berechnen Sie die Geometrielänge in .NET mit Aspose.GIS
- Behandeln Sie räumliche Daten effizient, indem Sie lernen, wie Sie die Geometrielänge in .NET mit Aspose.GIS berechnen. Dieses Tutorial bietet eine Schritt-für-Schritt-Anleitung mit Codebeispielen.[Tutorial zum Berechnen der Geometrielänge](./get-geometry-length/)
+### Geometrie‑Puffer erstellen
+Entfesseln Sie die Leistungsfähigkeit der geodatenbasierten Programmierung mit Aspose.GIS. Führen Sie räumliche Analysen durch, visualisieren Sie Daten und mehr, indem Sie Geometrie‑Puffer erstellen. [Create Geometry Buffer Tutorial](./create-geometry-buffer/)
 
-## Holen Sie sich einen Punkt auf der Geometrieoberfläche
- Arbeiten Sie mühelos mit Geodaten mit Aspose.GIS für .NET. Dieses Tutorial bietet eine Schritt-für-Schritt-Anleitung und FAQs zum Abrufen von Punkten auf einer Geometrieoberfläche.[Holen Sie sich das Tutorial „Punkt auf Geometrieoberfläche“.](./get-point-on-geometry-surface/)
+### Geometrie‑Typ mit Aspose.GIS für .NET ermitteln
+Entdecken Sie die Effizienz von Aspose.GIS für .NET. Verarbeiten Sie räumliche Daten effektiv in Ihren .NET‑Projekten mit diesem umfassenden Tutorial zu **Geometrie‑Typ ermitteln**. [Get Geometry Type Tutorial](./get-geometry-type/)
 
-Begeben Sie sich auf diese Reise der Erkundung und Beherrschung und transformieren Sie Ihre GIS-Entwicklung mit Aspose.GIS für .NET. Unabhängig davon, ob Sie Anfänger oder erfahrener Entwickler sind, stellen diese Tutorials sicher, dass Sie das volle Potenzial der Integration und Analyse räumlicher Daten ausschöpfen. Tauchen Sie ein und verbessern Sie noch heute Ihre Geoprogrammierkenntnisse!
+### Geometrie‑Länge in .NET mit Aspose.GIS berechnen
+Verarbeiten Sie räumliche Daten effizient, indem Sie lernen, wie Sie die **Geometrie‑Länge** in .NET mit Aspose.GIS berechnen. Dieses Tutorial bietet eine Schritt‑für‑Schritt‑Anleitung mit Code‑Beispielen. [Calculate Geometry Length Tutorial](./get-geometry-length/)
 
-## Tutorials zur Geometrieanalyse
-### [Überprüfen Sie Geometrien auf Gleichheit](./check-geometries-for-equality/)
-Erfahren Sie in diesem umfassenden Tutorial, wie Sie mit Aspose.GIS für .NET Geometrien in Ihren .NET-Anwendungen auf Gleichheit prüfen.
-### [Überprüfen Sie den Schnittpunkt von Geometrien mit Aspose.GIS für .NET](./check-geometries-intersection/)
-Erfahren Sie anhand einer Schritt-für-Schritt-Anleitung, wie Sie die Schnittmenge von Geometrien mit Aspose.GIS für .NET überprüfen. Verbessern Sie Ihre GIS-Entwicklung mühelos.
-### [Meistern Sie die Geodatenanalyse mit Aspose.GIS](./check-geometries-overlap/)
-Entdecken Sie Geoanalysen mit Aspose.GIS für .NET. Erfahren Sie anhand einer Schritt-für-Schritt-Anleitung, wie Sie die Überlappung von Geometrien überprüfen.
-### [Überprüfen Sie berührende Geometrien](./check-geometries-touching/)
-Nutzen Sie die Möglichkeiten der Geodatenverarbeitung mit Aspose.GIS für .NET. Integrieren Sie mit diesem vielseitigen Toolkit räumliche Funktionalitäten nahtlos in Ihre Anwendungen.
-### [Überprüfen Sie, ob die Geometrie eine andere enthält](./check-geometry-contains-another/)
-Entdecken Sie Aspose.GIS für .NET, eine robuste Bibliothek für die nahtlose Integration von Geodaten in Ihre .NET-Anwendungen.
-### [Die Check-Geometrie deckt eine andere ab](./check-geometry-covers-another/)
-Erfahren Sie, wie Sie Aspose.GIS für .NET nutzen, um effizient mit geografischen Daten zu arbeiten, räumliche Informationen zu analysieren und Kartenfunktionen in Ihre .NET-Anwendungen zu integrieren.
-### [Beherrschen von Geometrieüberlagerungen mit Aspose.GIS für .NET](./find-geometry-overlays/)
-Erfahren Sie, wie Sie mit Aspose.GIS für .NET geometrische Überlagerungsvorgänge durchführen. Meistern Sie Schnitt-, Vereinigungs-, Differenz- und symmetrische Differenzoperationen.
-### [Holen Sie sich den Geometriebereich mit Aspose.GIS](./get-geometry-area/)
-Nutzen Sie mit Aspose.GIS die Leistungsfähigkeit geografischer Informationssysteme in .NET. Führen Sie räumliche Operationen mühelos durch.
-### [Holen Sie sich den Geometrieschwerpunkt mit Aspose.GIS](./get-geometry-centroid/)
-Erfahren Sie in diesem umfassenden Handbuch, wie Sie Aspose.GIS für .NET zur Geometriezentrierung nutzen können. Integrieren Sie räumliche Analysen nahtlos in Ihre .NET-Anwendungen.
-### [Berechnen Sie die konvexe Hülle mit Aspose.GIS für .NET](./get-geometry-convex-hull/)
-Erfahren Sie, wie Sie mit Aspose.GIS die konvexe Hülle einer Geometrie in .NET berechnen. Umfassendes Tutorial mit Codebeispielen und FAQs.
-### [Berechnen Sie den Abstand zwischen Geometrien mit Aspose.GIS](./calculate-distance-between-geometries/)
-Erfahren Sie, wie Sie mit Aspose.GIS Abstände zwischen Geometrien in .NET berechnen. Schritt-für-Schritt-Anleitung mit Codebeispielen. Verbessern Sie Ihre Geodatenanwendungen.
-### [Geometriepuffer erstellen](./create-geometry-buffer/)
-Nutzen Sie die Leistungsfähigkeit der Geoprogrammierung mit Aspose.GIS für .NET. Führen Sie ganz einfach räumliche Analysen durch, visualisieren Sie Daten und mehr.
-### [Holen Sie sich den Geometrietyp mit Aspose.GIS für .NET](./get-geometry-type/)
-Entdecken Sie die Leistungsfähigkeit von Aspose.GIS für .NET. Erfahren Sie in diesem umfassenden Tutorial, wie Sie räumliche Daten in Ihren .NET-Projekten effizient verarbeiten.
-### [Berechnen Sie die Geometrielänge in .NET mit Aspose.GIS](./get-geometry-length/)
-Erfahren Sie, wie Sie die Geometrielänge in .NET mithilfe von Aspose.GIS für eine effiziente räumliche Datenverarbeitung berechnen. Schritt-für-Schritt-Anleitung mit Codebeispielen.
-### [Holen Sie sich einen Punkt auf der Geometrieoberfläche](./get-point-on-geometry-surface/)
-Erfahren Sie, wie Sie mit Aspose.GIS für .NET effizient mit Geodaten arbeiten. Schritt-für-Schritt-Anleitung und FAQs enthalten.
+### Punkt auf Geometrie‑Oberfläche ermitteln
+Arbeiten Sie mühelos mit geodatenbasierten Daten mit Aspose.GIS für .NET. Dieses Tutorial bietet eine Schritt‑für‑Schritt‑Anleitung und FAQs zum Ermitteln von Punkten auf einer Geometrie‑Oberfläche. [Get Point on Geometry Surface Tutorial](./get-point-on-geometry-surface/)
+
+Beginnen Sie diese Entdeckungs‑ und Meisterreise und transformieren Sie Ihre GIS‑Entwicklung mit Aspose.GIS für .NET. Egal, ob Sie Anfänger oder erfahrener Entwickler sind, diese Tutorials stellen sicher, dass Sie das volle Potenzial der Integration und Analyse räumlicher Daten ausschöpfen. Tauchen Sie ein und steigern Sie noch heute Ihre Fähigkeiten in der geodatenbasierten Programmierung!
+
+## Tutorials zur Geometrie‑Analyse
+
+### [Geometrien auf Gleichheit prüfen](./check-geometries-for-equality/)
+Erfahren Sie, wie Sie Aspose.GIS für .NET verwenden, um Geometrien in Ihren .NET‑Anwendungen auf Gleichheit zu prüfen, mit diesem umfassenden Tutorial.
+
+### [Geometrien‑Schnitt mit Aspose.GIS für .NET prüfen](./check-geometries-intersection/)
+Erfahren Sie, wie Sie Geometrien‑Schnitte mit Aspose.GIS für .NET prüfen, mit Schritt‑für‑Schritt‑Anleitung. Verbessern Sie Ihre GIS‑Entwicklung mühelos.
+
+### [Geodatenanalyse mit Aspose.GIS meistern](./check-geometries-overlap/)
+Erkunden Sie die Geodatenanalyse mit Aspose.GIS für .NET. Lernen Sie, wie Sie Geometrie‑Überlappungen mit Schritt‑für‑Schritt‑Anleitung prüfen.
+
+### [Geometrien auf Berührung prüfen](./check-geometries-touching/)
+Entfesseln Sie die Leistungsfähigkeit der Verarbeitung räumlicher Daten mit Aspose.GIS für .NET. Integrieren Sie nahtlos räumliche Funktionalitäten in Ihre Anwendungen mit diesem vielseitigen Toolkit.
+
+### [Geometrie enthält eine andere prüfen](./check-geometry-contains-another/)
+Entdecken Sie Aspose.GIS für .NET, eine robuste Bibliothek für die nahtlose Integration geodatenbasierter Daten in Ihren .NET‑Anwendungen.
+
+### [Geometrie deckt eine andere ab prüfen](./check-geometry-covers-another/)
+Erfahren Sie, wie Sie Aspose.GIS für .NET nutzen, um effizient mit geografischen Daten zu arbeiten, räumliche Informationen zu analysieren und Mapping‑Funktionen in Ihre .NET‑Anwendungen zu integrieren.
+
+### [Geometrie‑Overlays mit Aspose.GIS für .NET meistern](./find-geometry-overlays/)
+Erfahren Sie, wie Sie geometrische Overlay‑Operationen mit Aspose.GIS für .NET durchführen. Beherrschen Sie Schnitt‑, Vereinigungs‑, Differenz‑ und symmetrische Differenz‑Operationen.
+
+### [Geometrie‑Fläche mit Aspose.GIS ermitteln](./get-geometry-area/)
+Entfesseln Sie die Leistungsfähigkeit von Geoinformationssystemen in .NET mit Aspose.GIS. Führen Sie räumliche Operationen mühelos aus.
+
+### [Geometrie‑Schwerpunkt mit Aspose.GIS für .NET ermitteln](./get-geometry-centroid/)
+Erfahren Sie, wie Sie Aspose.GIS für .NET nutzen, um Geometrie‑Schwerpunkte zu bestimmen, in diesem umfassenden Tutorial. Integrieren Sie räumliche Analysen nahtlos in Ihre .NET‑Anwendungen.
+
+### [Konvexe Hülle einer Geometrie mit Aspose.GIS für .NET berechnen](./get-geometry-convex-hull/)
+Erfahren Sie, wie Sie die konvexe Hülle einer Geometrie in .NET mit Aspose.GIS berechnen. Umfassendes Tutorial mit Code‑Beispielen und FAQs.
+
+### [Abstand zwischen Geometrien mit Aspose.GIS berechnen](./calculate-distance-between-geometries/)
+Erfahren Sie, wie Sie Abstände zwischen Geometrien in .NET mit Aspose.GIS berechnen. Schritt‑für‑Schritt‑Anleitung mit Code‑Beispielen. Verbessern Sie Ihre geodatenbasierten Anwendungen.
+
+### [Geometrie‑Puffer erstellen](./create-geometry-buffer/)
+Entfesseln Sie die Leistungsfähigkeit der geodatenbasierten Programmierung mit Aspose.GIS für .NET. Führen Sie räumliche Analysen durch, visualisieren Sie Daten und mehr mit Leichtigkeit.
+
+### [Geometrie‑Typ mit Aspose.GIS für .NET ermitteln](./get-geometry-type/)
+Entdecken Sie die Leistungsfähigkeit von Aspose.GIS für .NET. Lernen Sie, räumliche Daten effizient in Ihren .NET‑Projekten zu verarbeiten, mit diesem umfassenden Tutorial.
+
+### [Geometrie‑Länge in .NET mit Aspose.GIS berechnen](./get-geometry-length/)
+Erfahren Sie, wie Sie die Geometrie‑Länge in .NET mit Aspose.GIS für eine effiziente Verarbeitung räumlicher Daten berechnen. Schritt‑für‑Schritt‑Anleitung und Code‑Beispiele.
+
+### [Punkt auf Geometrie‑Oberfläche ermitteln](./get-point-on-geometry-surface/)
+Erfahren Sie, wie Sie effizient mit geodatenbasierten Daten mit Aspose.GIS für .NET arbeiten. Schritt‑für‑Schritt‑Anleitung und enthalten.
+
+---
+
+**Zuletzt aktualisiert:** 2025-12-02  
+**Getestet mit:** Aspose.GIS für .NET (neueste stabile Version)  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}

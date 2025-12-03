@@ -1,100 +1,129 @@
 ---
-title: ज्यामिति विश्लेषण
-linktitle: ज्यामिति विश्लेषण
-second_title: Aspose.GIS .NET एपीआई
-description: ज्यामिति विश्लेषण पर व्यापक ट्यूटोरियल के साथ Aspose.GIS .NET की क्षमता को अनलॉक करें। मजबूत जीआईएस विकास के लिए सहजता से स्थानिक डेटा प्रबंधन में महारत हासिल करें।
+date: 2025-12-02
+description: Aspose.GIS for .NET का उपयोग करके ज्यामिति की जाँच, ज्यामिति क्षेत्रफल
+  की गणना, कॉन्वेक्स हुल और अधिक कैसे करें, सीखें। मजबूत GIS विकास के लिए स्थानिक
+  डेटा हैंडलिंग में निपुण बनें।
+language: hi
+linktitle: How to Check Geometry
+second_title: Aspose.GIS .NET API
+title: Aspose.GIS for .NET के साथ ज्यामिति कैसे जांचें
+url: /net/geometry-analysis/
 weight: 22
-url: /hi/net/geometry-analysis/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# ज्यामिति विश्लेषण
+# How to Check Geometry with Aspose.GIS for .NET
 
-## परिचय
+## Introduction
 
-भू-स्थानिक विश्लेषण .NET के लिए Aspose.GIS के साथ एक छलांग आगे ले जाता है, जो आपके .NET अनुप्रयोगों में स्थानिक कार्यात्मकताओं के निर्बाध एकीकरण के लिए एक बहुमुखी टूलकिट की पेशकश करता है। ट्यूटोरियल की इस श्रृंखला में, हम ज्यामिति विश्लेषण के विभिन्न पहलुओं का पता लगाएंगे, जो आपको भू-स्थानिक डेटा की पूरी क्षमता का उपयोग करने के लिए सशक्त बनाएंगे। आइए विस्तार से जानें:
+Geospatial analysis takes a leap forward with Aspose.GIS for .NET, offering a versatile toolkit for seamless integration of spatial functionalities into your .NET applications. In this hub you’ll discover **how to check geometry** and perform related operations—such as calculating geometry area, measuring geometry distance, and generating convex hulls—quickly and reliably. Whether you’re building a mapping service, a location‑based app, or a data‑intensive GIS platform, these tutorials give you the hands‑on guidance you need.
 
-## समानता के लिए ज्यामिति की जाँच करें
-Aspose.GIS का उपयोग करके अपने .NET अनुप्रयोगों में समानता के लिए ज्यामिति की जाँच करने की कला सीखें। यह ट्यूटोरियल चरण-दर-चरण मार्गदर्शन प्रदान करता है, जिससे समानता जांच की व्यापक समझ सुनिश्चित होती है।[समानता ट्यूटोरियल के लिए ज्यामिति की जाँच करें](./check-geometries-for-equality/)
+## How to Check Geometry in .NET
 
-## .NET के लिए Aspose.GIS के साथ ज्योमेट्री इंटरसेक्शन की जाँच करें
- Aspose.GIS के साथ ज्यामिति प्रतिच्छेदन की जाँच के रहस्यों को अनलॉक करें। इस विस्तृत ट्यूटोरियल का अनुसरण करके अपने जीआईएस विकास को सहजता से बढ़ाएं।[ज्योमेट्री इंटरसेक्शन ट्यूटोरियल की जाँच करें](./check-geometries-intersection/)
+Understanding the different ways to evaluate spatial relationships is essential for any GIS developer. Aspose.GIS provides a rich set of methods that let you verify equality, intersections, overlaps, touching, containment, and coverage of geometries. Below you’ll find a curated collection of step‑by‑step tutorials that walk you through each scenario, complete with code examples, best‑practice tips, and real‑world use cases.
 
-## Aspose.GIS के साथ भू-स्थानिक विश्लेषण में महारत हासिल करें
- .NET के लिए Aspose.GIS के साथ भू-स्थानिक विश्लेषण का अन्वेषण करें। चरण-दर-चरण मार्गदर्शन के माध्यम से ज्यामिति ओवरलैप की जाँच करने की पेचीदगियों को जानें।[मास्टर भू-स्थानिक विश्लेषण ट्यूटोरियल](./check-geometries-overlap/)
+### Check Geometries for Equality
+Learn the art of checking geometries for equality in your .NET applications using Aspose.GIS. This tutorial provides step-by-step guidance, ensuring a comprehensive understanding of equality checks. [ज्यामितियों की समानता जाँच ट्यूटोरियल](./check-geometries-for-equality/)
 
-## ज्यामिति को छूकर जांचें
- Aspose.GIS के साथ अपने अनुप्रयोगों में स्थानिक डेटा प्रबंधन को निर्बाध रूप से एकीकृत करें। यह ट्यूटोरियल आपको ज्यामिति को छूने की जाँच करने की प्रक्रिया में मार्गदर्शन करता है।[ज्योमेट्री टचिंग ट्यूटोरियल की जाँच करें](./check-geometries-touching/)
+### Check Geometries Intersection with Aspose.GIS for .NET
+Unlock the secrets of checking geometries intersection with Aspose.GIS. Enhance your GIS development effortlessly by following this detailed tutorial. [ज्यामितियों के प्रतिच्छेदन जाँच ट्यूटोरियल](./check-geometries-intersection/)
 
-## जाँच करें कि ज्यामिति में एक और शामिल है
-निर्बाध भू-स्थानिक डेटा एकीकरण में .NET के लिए Aspose.GIS की मजबूत क्षमताओं की खोज करें। यह ट्यूटोरियल यह जांचने के लिए अंतर्दृष्टि प्रदान करता है कि क्या एक ज्यामिति में दूसरी ज्यामिति शामिल है।[चेक ज्योमेट्री में एक और ट्यूटोरियल शामिल है](./check-geometry-contains-another/)
+### Master Geospatial Analysis with Aspose.GIS
+Explore geospatial analysis with Aspose.GIS for .NET. Learn the intricacies of checking geometries overlap through step-by-step guidance. [जियोस्पेशियल विश्लेषण में निपुणता ट्यूटोरियल](./check-geometries-overlap/)
 
-## ज्यामिति की जाँच करें अन्य को कवर करता है
- भौगोलिक डेटा के साथ कुशलतापूर्वक काम करें, स्थानिक जानकारी का विश्लेषण करें, और Aspose.GIS का उपयोग करके अपने .NET अनुप्रयोगों में मैपिंग सुविधाओं को एकीकृत करें।[चेक ज्योमेट्री में एक और ट्यूटोरियल शामिल है](./check-geometry-covers-another/)
+### Check Geometries Touching
+Seamlessly integrate spatial data handling into your applications with Aspose.GIS. This tutorial guides you through the process of checking geometries touching. [ज्यामितियों के स्पर्श जाँच ट्यूटोरियल](./check-geometries-touching/)
 
-## .NET के लिए Aspose.GIS के साथ ज्योमेट्री ओवरले में महारत हासिल करना
- Aspose.GIS के साथ ज्यामितीय ओवरले संचालन में गोता लगाएँ। उन्नत स्थानिक विश्लेषण के लिए मास्टर इंटरसेक्शन, यूनियन, अंतर और सममित अंतर संचालन।[ज्योमेट्री ओवरले ट्यूटोरियल में महारत हासिल करना](./find-geometry-overlays/)
+### Check Geometry Contains Another
+Discover the robust capabilities of Aspose.GIS for .NET in seamless geospatial data integration. This tutorial provides insights into checking if one geometry contains another. [ज्यामिति में अन्य को शामिल करना जाँच ट्यूटोरियल](./check-geometry-contains-another/)
 
-## Aspose.GIS के साथ ज्यामिति क्षेत्र प्राप्त करें
- .NET में भौगोलिक सूचना प्रणाली की शक्ति को अनलॉक करें। ज्यामिति क्षेत्र प्राप्त करने सहित, सहजता से स्थानिक संचालन करना सीखें।[ज्यामिति क्षेत्र ट्यूटोरियल प्राप्त करें](./get-geometry-area/)
+### Check Geometry Covers Another
+Efficiently work with geographical data, analyze spatial information, and integrate mapping features into your .NET applications using Aspose.GIS. [ज्यामिति में अन्य को कवर करना जाँच ट्यूटोरियल](./check-geometry-covers-another/)
 
-## .NET के लिए Aspose.GIS के साथ ज्योमेट्री सेंट्रॉइड प्राप्त करें
-ज्योमेट्री सेंट्रोइड खोजने के लिए .NET के लिए Aspose.GIS का लाभ उठाएं। इस व्यापक ट्यूटोरियल के साथ स्थानिक विश्लेषण को अपने .NET अनुप्रयोगों में सहजता से एकीकृत करें।[ज्योमेट्री सेंट्रॉइड ट्यूटोरियल प्राप्त करें](./get-geometry-centroid/)
+### Mastering Geometry Overlays with Aspose.GIS for .NET
+Dive into geometric overlay operations with Aspose.GIS. Master intersection, union, difference, and symmetric difference operations for advanced spatial analysis. [ज्यामिति ओवरले में निपुणता ट्यूटोरियल](./find-geometry-overlays/)
 
-## .NET के लिए Aspose.GIS के साथ उत्तल हल की गणना करें
- Aspose.GIS का उपयोग करके .NET में ज्यामिति के उत्तल हुल की गणना करना सीखें। इस ट्यूटोरियल में व्यापक समझ के लिए कोड उदाहरण और अक्सर पूछे जाने वाले प्रश्न शामिल हैं।[उत्तल पतवार ट्यूटोरियल की गणना करें](./get-geometry-convex-hull/)
+### Get Geometry Area with Aspose.GIS
+Unlock the power of geographic information systems in .NET. Learn to perform spatial operations effortlessly, including **calculate geometry area**. [ज्यामिति क्षेत्रफल प्राप्त करने का ट्यूटोरियल](./get-geometry-area/)
 
-## Aspose.GIS के साथ ज्यामिति के बीच की दूरी की गणना करें
- Aspose.GIS का उपयोग करके .NET में ज्यामिति के बीच की दूरी की गणना करना सीखकर अपने भू-स्थानिक अनुप्रयोगों को बढ़ाएं।[ज्यामिति ट्यूटोरियल के बीच दूरी की गणना करें](./calculate-distance-between-geometries/)
+### Get Geometry Centroid with Aspose.GIS for .NET
+Leverage Aspose.GIS for .NET to find geometry centroids. Integrate spatial analysis seamlessly into your .NET applications with this comprehensive tutorial. [ज्यामिति केंद्र बिंदु प्राप्त करने का ट्यूटोरियल](./get-geometry-centroid/)
 
-## ज्योमेट्री बफ़र बनाएं
- Aspose.GIS के साथ भू-स्थानिक प्रोग्रामिंग की शक्ति को उजागर करें। ज्यामिति बफ़र्स बनाकर आसानी से स्थानिक विश्लेषण करें, डेटा विज़ुअलाइज़ करें और बहुत कुछ करें।[ज्योमेट्री बफ़र ट्यूटोरियल बनाएं](./create-geometry-buffer/)
+### Calculate Convex Hull with Aspose.GIS for .NET
+Learn how to **calculate convex hull** of a geometry in .NET using Aspose.GIS. This tutorial includes code examples and FAQs for a comprehensive understanding. [कॉन्वेक्स हुल गणना ट्यूटोरियल](./get-geometry-convex-hull/)
 
-## .NET के लिए Aspose.GIS के साथ ज्यामिति प्रकार प्राप्त करें
-.NET के लिए Aspose.GIS की दक्षता की खोज करें। ज्यामिति प्रकार प्राप्त करने पर इस व्यापक ट्यूटोरियल के साथ अपने .NET प्रोजेक्ट में स्थानिक डेटा को प्रभावी ढंग से संभालें।[ज्यामिति प्रकार ट्यूटोरियल प्राप्त करें](./get-geometry-type/)
+### Calculate Distance Between Geometries with Aspose.GIS
+Enhance your geospatial applications by learning how to **measure geometry distance** between geometries in .NET using Aspose.GIS. [ज्यामितियों के बीच दूरी गणना ट्यूटोरियल](./calculate-distance-between-geometries/)
 
-## Aspose.GIS के साथ .NET में ज्यामिति लंबाई की गणना करें
- Aspose.GIS का उपयोग करके .NET में ज्यामिति लंबाई की गणना करना सीखकर स्थानिक डेटा को कुशलतापूर्वक संभालें। यह ट्यूटोरियल कोड उदाहरणों के साथ चरण-दर-चरण मार्गदर्शिका प्रदान करता है।[ज्यामिति लंबाई ट्यूटोरियल की गणना करें](./get-geometry-length/)
+### Create Geometry Buffer
+Unleash the power of geospatial programming with Aspose.GIS. Perform spatial analysis, visualize data, and more with ease by creating geometry buffers. [ज्यामिति बफ़र निर्माण ट्यूटोरियल](./create-geometry-buffer/)
 
-## ज्यामिति सतह पर बिंदु प्राप्त करें
- .NET के लिए Aspose.GIS का उपयोग करके भू-स्थानिक डेटा के साथ सहजता से काम करें। यह ट्यूटोरियल ज्यामिति सतह पर अंक प्राप्त करने के लिए चरण-दर-चरण मार्गदर्शिका और अक्सर पूछे जाने वाले प्रश्न प्रदान करता है।[ज्यामिति सतह ट्यूटोरियल पर प्वाइंट प्राप्त करें](./get-point-on-geometry-surface/)
+### Get Geometry Type with Aspose.GIS for .NET
+Discover the efficiency of Aspose.GIS for .NET. Handle spatial data effectively in your .NET projects with this comprehensive tutorial on **get geometry type**. [ज्यामिति प्रकार प्राप्त करने का ट्यूटोरियल](./get-geometry-type/)
 
-.NET के लिए Aspose.GIS के साथ अपने GIS विकास को रूपांतरित करते हुए अन्वेषण और महारत की इस यात्रा पर निकलें। चाहे आप शुरुआती हों या अनुभवी डेवलपर, ये ट्यूटोरियल सुनिश्चित करते हैं कि आप स्थानिक डेटा एकीकरण और विश्लेषण की पूरी क्षमता को अनलॉक करें। आज ही गोता लगाएँ और अपने भू-स्थानिक प्रोग्रामिंग कौशल को उन्नत करें!
+### Calculate Geometry Length in .NET with Aspose.GIS
+Efficiently handle spatial data by learning how to **calculate geometry length** in .NET using Aspose.GIS. This tutorial provides a step-by-step guide with code examples. [ज्यामिति लंबाई गणना ट्यूटोरियल](./get-geometry-length/)
 
-## ज्यामिति विश्लेषण ट्यूटोरियल
-### [समानता के लिए ज्यामिति की जाँच करें](./check-geometries-for-equality/)
-इस व्यापक ट्यूटोरियल के साथ जानें कि अपने .NET अनुप्रयोगों में समानता के लिए ज्यामिति की जांच करने के लिए .NET के लिए Aspose.GIS का उपयोग कैसे करें।
-### [.NET के लिए Aspose.GIS के साथ ज्योमेट्री इंटरसेक्शन की जाँच करें](./check-geometries-intersection/)
-चरण-दर-चरण मार्गदर्शन के साथ .NET के लिए Aspose.GIS का उपयोग करके ज्यामिति प्रतिच्छेदन की जांच करना सीखें। अपने जीआईएस विकास को सहजता से बढ़ाएं।
-### [Aspose.GIS के साथ भू-स्थानिक विश्लेषण में महारत हासिल करें](./check-geometries-overlap/)
-.NET के लिए Aspose.GIS के साथ भू-स्थानिक विश्लेषण का अन्वेषण करें। चरण-दर-चरण मार्गदर्शन के साथ ज्यामिति ओवरलैप की जाँच करना सीखें।
-### [ज्यामिति को छूकर जांचें](./check-geometries-touching/)
-.NET के लिए Aspose.GIS के साथ स्थानिक डेटा प्रबंधन की शक्ति को अनलॉक करें। इस बहुमुखी टूलकिट के साथ अपने अनुप्रयोगों में स्थानिक कार्यक्षमताओं को सहजता से एकीकृत करें।
-### [जाँच करें कि ज्यामिति में एक और शामिल है](./check-geometry-contains-another/)
-अपने .NET अनुप्रयोगों में निर्बाध भू-स्थानिक डेटा एकीकरण के लिए एक मजबूत लाइब्रेरी .NET के लिए Aspose.GIS का अन्वेषण करें।
-### [ज्यामिति की जाँच करें अन्य को कवर करता है](./check-geometry-covers-another/)
-भौगोलिक डेटा के साथ कुशलता से काम करने, स्थानिक जानकारी का विश्लेषण करने और अपने .NET अनुप्रयोगों में मैपिंग सुविधाओं को एकीकृत करने के लिए .NET के लिए Aspose.GIS का उपयोग करना सीखें।
-### [.NET के लिए Aspose.GIS के साथ ज्योमेट्री ओवरले में महारत हासिल करना](./find-geometry-overlays/)
-.NET के लिए Aspose.GIS का उपयोग करके ज्यामितीय ओवरले ऑपरेशन करना सीखें। मास्टर प्रतिच्छेदन, संघ, अंतर, और सममित अंतर संचालन।
-### [Aspose.GIS के साथ ज्यामिति क्षेत्र प्राप्त करें](./get-geometry-area/)
-Aspose.GIS के साथ .NET में भौगोलिक सूचना प्रणाली की शक्ति को अनलॉक करें। स्थानिक संचालन सहजता से करें।
-### [Aspose.GIS के साथ ज्योमेट्री सेंट्रोइड प्राप्त करें](./get-geometry-centroid/)
-इस व्यापक माध्यम से जानें कि .NET के लिए ज्योमेट्री सेंट्रोइड्स के लिए Aspose.GIS का लाभ कैसे उठाया जाए। अपने .NET अनुप्रयोगों में स्थानिक विश्लेषण को निर्बाध रूप से एकीकृत करें।
-### [.NET के लिए Aspose.GIS के साथ उत्तल हल की गणना करें](./get-geometry-convex-hull/)
-Aspose.GIS का उपयोग करके .NET में ज्यामिति के उत्तल हुल की गणना करना सीखें। कोड उदाहरणों और अक्सर पूछे जाने वाले प्रश्नों के साथ व्यापक ट्यूटोरियल।
-### [Aspose.GIS के साथ ज्यामिति के बीच की दूरी की गणना करें](./calculate-distance-between-geometries/)
-Aspose.GIS का उपयोग करके .NET में ज्यामिति के बीच की दूरी की गणना करना सीखें। कोड उदाहरणों के साथ चरण-दर-चरण मार्गदर्शिका। अपने भू-स्थानिक अनुप्रयोगों को बढ़ाएँ।
-### [ज्योमेट्री बफ़र बनाएं](./create-geometry-buffer/)
-.NET के लिए Aspose.GIS के साथ भू-स्थानिक प्रोग्रामिंग की शक्ति को अनलॉक करें। स्थानिक विश्लेषण करें, डेटा विज़ुअलाइज़ करें और बहुत कुछ आसानी से करें।
-### [.NET के लिए Aspose.GIS के साथ ज्यामिति प्रकार प्राप्त करें](./get-geometry-type/)
-.NET के लिए Aspose.GIS की शक्ति की खोज करें। इस व्यापक ट्यूटोरियल के साथ जानें कि अपने .NET प्रोजेक्ट में स्थानिक डेटा को कुशलतापूर्वक कैसे प्रबंधित करें।
-### [Aspose.GIS के साथ .NET में ज्यामिति लंबाई की गणना करें](./get-geometry-length/)
-कुशल स्थानिक डेटा प्रबंधन के लिए Aspose.GIS का उपयोग करके .NET में ज्यामिति लंबाई की गणना करना सीखें। कोड उदाहरणों के साथ चरण-दर-चरण मार्गदर्शिका।
-### [ज्यामिति सतह पर बिंदु प्राप्त करें](./get-point-on-geometry-surface/)
-.NET के लिए Aspose.GIS का उपयोग करके भू-स्थानिक डेटा के साथ कुशलतापूर्वक काम करना सीखें। चरण-दर-चरण मार्गदर्शिका और अक्सर पूछे जाने वाले प्रश्न शामिल हैं।
+### Get Point on Geometry Surface
+Effortlessly work with geospatial data using Aspose.GIS for .NET. This tutorial provides a step-by-step guide and FAQs on getting points on a geometry surface. [ज्यामिति सतह पर बिंदु प्राप्त करने का ट्यूटोरियल](./get-point-on-geometry-surface/)
+
+Embark on this journey of exploration and mastery, transforming your GIS development with Aspose.GIS for .NET. Whether you're a beginner or an experienced developer, these tutorials ensure you unlock the full potential of spatial data integration and analysis. Dive in and elevate your geospatial programming skills today!
+
+## Geometry Analysis Tutorials
+### [ज्यामितियों की समानता जाँच ट्यूटोरियल](./check-geometries-for-equality/)
+Learn how to use Aspose.GIS for .NET to check geometries for equality in your .NET applications with this comprehensive tutorial.
+
+### [ज्यामितियों के प्रतिच्छेदन जाँच ट्यूटोरियल](./check-geometries-intersection/)
+Learn how to check geometries intersection using Aspose.GIS for .NET with step-by-step guidance. Enhance your GIS development effortlessly.
+
+### [जियोस्पेशियल विश्लेषण में निपुणता ट्यूटोरियल](./check-geometries-overlap/)
+Explore geospatial analysis with Aspose.GIS for .NET. Learn how to check geometries overlap with step-by-step guidance.
+
+### [ज्यामितियों के स्पर्श जाँच ट्यूटोरियल](./check-geometries-touching/)
+Unlock the power of spatial data handling with Aspose.GIS for .NET. Seamlessly integrate spatial functionalities into your applications with this versatile toolkit.
+
+### [ज्यामिति में अन्य को शामिल करना जाँच ट्यूटोरियल](./check-geometry-contains-another/)
+Explore Aspose.GIS for .NET a robust library for seamless geospatial data integration in your .NET applications.
+
+### [ज्यामिति में अन्य को कवर करना जाँच ट्यूटोरियल](./check-geometry-covers-another/)
+Learn how to utilize Aspose.GIS for .NET to efficiently work with geographical data, analyze spatial information, and integrate mapping features into your .NET applications.
+
+### [ज्यामिति ओवरले में निपुणता ट्यूटोरियल](./find-geometry-overlays/)
+Learn how to perform geometric overlay operations using Aspose.GIS for .NET. Master intersection, union, difference, and symmetric difference operations.
+
+### [ज्यामिति क्षेत्रफल प्राप्त करने का ट्यूटोरियल](./get-geometry-area/)
+Unlock the power of geographic information systems in .NET with Aspose.GIS. Perform spatial operations effortlessly.
+
+### [ज्यामिति केंद्र बिंदु प्राप्त करने का ट्यूटोरियल](./get-geometry-centroid/)
+Learn how to leverage Aspose.GIS for .NET to geometry centroids through this comprehensive. Integrate spatial analysis seamlessly into your .NET applications.
+
+### [कॉन्वेक्स हुल गणना ट्यूटोरियल](./get-geometry-convex-hull/)
+Learn how to calculate the convex hull of a geometry in .NET using Aspose.GIS. Comprehensive tutorial with code examples and FAQs.
+
+### [ज्यामितियों के बीच दूरी गणना ट्यूटोरियल](./calculate-distance-between-geometries/)
+Learn how to calculate distances between geometries in .NET using Aspose.GIS. Step-by-step guide with code examples. Enhance your geospatial applications.
+
+### [ज्यामिति बफ़र निर्माण ट्यूटोरियल](./create-geometry-buffer/)
+Unlock the power of geospatial programming with Aspose.GIS for .NET. Perform spatial analysis, visualize data, and more with ease.
+
+### [ज्यामिति प्रकार प्राप्त करने का ट्यूटोरियल](./get-geometry-type/)
+Discover the power of Aspose.GIS for .NET. Learn how to handle spatial data efficiently in your .NET projects with this comprehensive tutorial.
+
+### [ज्यामिति लंबाई गणना ट्यूटोरियल](./get-geometry-length/)
+Learn how to calculate geometry length in .NET using Aspose.GIS for efficient spatial data handling. Step-by-step guide and code examples.
+
+### [ज्यामिति सतह पर बिंदु प्राप्त करने का ट्यूटोरियल](./get-point-on-geometry-surface/)
+Learn how to work with geospatial data efficiently using Aspose.GIS for .NET. Step-by-step guide and FAQs included.
+
+---
+
+**अंतिम अपडेट:** 2025-12-02  
+**परीक्षित संस्करण:** Aspose.GIS for .NET (latest stable release)  
+**लेखक:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}

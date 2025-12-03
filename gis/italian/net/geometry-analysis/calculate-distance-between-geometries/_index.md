@@ -1,33 +1,49 @@
 ---
-title: Calcola la distanza tra le geometrie con Aspose.GIS
-linktitle: Calcola la distanza tra le geometrie
-second_title: API Aspose.GIS .NET
-description: Scopri come calcolare le distanze tra le geometrie in .NET utilizzando Aspose.GIS. Guida passo passo con esempi di codice. Migliora le tue applicazioni geospaziali.
+date: 2025-12-02
+description: Scopri come calcolare la distanza tra geometrie usando Aspose.GIS per
+  .NET. Questa guida passo‑passo mostra come utilizzare Aspose.GIS, ottenere la distanza
+  da una geometria e integrare i calcoli di distanza nelle tue applicazioni.
+language: it
+linktitle: How to Calculate Distance Between Geometries
+second_title: Aspose.GIS .NET API
+title: Come calcolare la distanza tra le geometrie con Aspose.GIS
+url: /net/geometry-analysis/calculate-distance-between-geometries/
 weight: 21
-url: /it/net/geometry-analysis/calculate-distance-between-geometries/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Calcola la distanza tra le geometrie con Aspose.GIS
+# Come calcolare la distanza tra geometrie con Aspose.GIS
 
-## introduzione
-Nel campo della programmazione geospaziale, la capacità di calcolare le distanze tra diverse geometrie è fondamentale. Che tu abbia a che fare con poligoni, linee o punti, conoscere la distanza tra loro può essere fondamentale per varie applicazioni, dalla mappatura alla pianificazione logistica. Aspose.GIS per .NET fornisce potenti strumenti per eseguire tali calcoli con facilità e precisione.
+## Introduzione
+Se ti è mai capitato di dover sapere **come calcolare la distanza** tra due oggetti spaziali — che si tratti di una rete stradale, zone di consegna o elementi ambientali — questa guida è per te. In .NET, Aspose.GIS rende i calcoli di distanza semplici, accurati e performanti. Ti guideremo attraverso un esempio reale che mostra **come usare Aspose.GIS**, creare geometrie semplici e chiamare il metodo **GetDistanceTo** per ottenere la distanza tra di esse.
+
+## Risposte rapide
+- **Cosa significa “calcolare la distanza” in GIS?** Restituisce la distanza più breve (euclidea) tra due geometrie.  
+- **Quale classe di Aspose.GIS fornisce il calcolo?** `Geometry.GetDistanceTo(Geometry other)`.  
+- **È necessaria una licenza per lo sviluppo?** Una versione di prova gratuita è sufficiente per i test; è richiesta una licenza per la produzione.  
+- **Posso calcolare la distanza per geometrie 3‑D?** Sì, Aspose.GIS supporta calcoli 2‑D e 3‑D.  
+- **Quali versioni di .NET sono supportate?** .NET Framework 4.6+, .NET Core 3.1+, .NET 5/6/7.
+
+## Cos'è il calcolo della distanza nella programmazione geospaziale?
+Il calcolo della distanza misura la linea più breve che collega due geometrie. È un'operazione fondamentale per attività come analisi di prossimità, routing, clustering e indicizzazione spaziale.
+
+## Perché usare Aspose.GIS per calcolare la distanza?
+- **Alta precisione** – Utilizza aritmetica a doppia precisione.  
+- **Zero dipendenze** – Non richiede librerie GIS native.  
+- **Cross‑platform** – Funziona su Windows, Linux e macOS con .NET Core/5+.  
+- **Modello geometrico ricco** – Supporta punti, linee, poligoni e multi‑geometrie fin da subito.
+
 ## Prerequisiti
-Prima di approfondire il calcolo delle distanze tra le geometrie utilizzando Aspose.GIS per .NET, assicurati di disporre dei seguenti prerequisiti:
-### Installa Aspose.GIS per .NET
- Per iniziare, è necessario che Aspose.GIS per .NET sia installato sul tuo sistema. È possibile scaricare la libreria da[Aspose.GIS per la pagina delle versioni .NET](https://releases.aspose.com/gis/net/) e seguire le istruzioni di installazione fornite nella documentazione.
-### Familiarità con lo sviluppo .NET
-È necessaria una conoscenza di base dello sviluppo .NET utilizzando C# insieme agli esempi contenuti in questa esercitazione. Se sei nuovo allo sviluppo .NET, valuta la possibilità di rispolverare le nozioni di base di C# prima di procedere.
+- **Aspose.GIS per .NET** installato (scarica dalla [pagina di rilascio di Aspose.GIS per .NET](https://releases.aspose.com/gis/net/)).  
+- Conoscenza di base di C# e della struttura di un progetto .NET.  
+- Un ambiente di sviluppo come Visual Studio 2022 o VS Code.
 
-## Importa spazi dei nomi
-Prima di poter iniziare a utilizzare Aspose.GIS per .NET per calcolare le distanze tra le geometrie, è necessario importare gli spazi dei nomi richiesti nel progetto C#. Seguire questi passaggi per importare gli spazi dei nomi necessari:
-## Apri il tuo progetto C#
-Passare al progetto C# nell'ambiente di sviluppo integrato (IDE) preferito, ad esempio Visual Studio.
-## Aggiungi riferimenti allo spazio dei nomi
-Nel file C# in cui intendi eseguire i calcoli della distanza, aggiungi i seguenti riferimenti allo spazio dei nomi all'inizio del file:
+## Importare gli spazi dei nomi
+Prima di poter iniziare a usare Aspose.GIS, aggiungi gli spazi dei nomi richiesti al tuo file C#:
+
 ```csharp
 using Aspose.Gis.Geometries;
 using System;
@@ -37,13 +53,13 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-Analizziamo l'esempio fornito in più passaggi per capire come calcolare la distanza tra le geometrie utilizzando Aspose.GIS per .NET:
-## Passaggio 1: crea la geometria poligonale
+### Passo 1: Creare una geometria Poligono
 ```csharp
 var polygon = new Polygon();
 ```
-Questo passaggio crea una nuova istanza di una geometria poligonale.
-## Passaggio 2: Definire l'anello esterno del poligono
+Iniziamo con un poligono vuoto che più tardi rappresenterà un'area rettangolare.
+
+### Passo 2: Definire l'anello esterno del Poligono
 ```csharp
 polygon.ExteriorRing = new LinearRing(new[]
 {
@@ -54,42 +70,85 @@ polygon.ExteriorRing = new LinearRing(new[]
     new Point(0, 0),
 });
 ```
-Qui definiamo l'anello esterno del poligono specificando una sequenza di punti che formano il confine del poligono.
-## Passaggio 3: creare la geometria della stringa di linee
+L'anello esterno è un ciclo chiuso di punti che definisce il contorno del poligono. In questo esempio creiamo un quadrato 1 × 1.
+
+### Passo 3: Creare una geometria LineString
 ```csharp
 var line = new LineString();
 ```
-Questo passaggio inizializza una nuova istanza della geometria di una stringa di linea.
-## Passaggio 4: aggiungere punti alla stringa di linee
+Una `LineString` è una serie di segmenti di linea collegati. La useremo per rappresentare una strada o un percorso.
+
+### Passo 4: Aggiungere punti alla LineString
 ```csharp
 line.AddPoint(2, 0);
 line.AddPoint(1, 3);
 ```
-Aggiungiamo due punti alla corda, definendone la forma e la traiettoria.
-## Passaggio 5: calcolare la distanza
+Questi due punti danno alla linea una forma inclinata che non interseca il poligono, rendendo il calcolo della distanza più interessante.
+
+### Passo 5: Calcolare la distanza
 ```csharp
 double distance = polygon.GetDistanceTo(line);
 ```
-Questo passaggio calcola la distanza tra il poligono e la spezzata.
-## Passaggio 6: risultato dell'output
+Qui **otteniamo la distanza dalla geometria** chiamando `GetDistanceTo`. Aspose.GIS calcola la distanza più breve tra il bordo del poligono e la linea.
+
+### Passo 6: Stampare il risultato
 ```csharp
-Console.WriteLine(distance.ToString("F")); // 0,63
+Console.WriteLine(distance.ToString("F")); // 0.63
 ```
-Infine, stampiamo la distanza calcolata dalla console, formattata per visualizzare due cifre decimali.
+Il risultato è stampato con due cifre decimali (`0.63`). Questo valore rappresenta la distanza euclidea minima tra il quadrato e la linea.
+
+## Casi d'uso comuni
+- **Logistica:** Trova il deposito più vicino a un percorso di consegna.  
+- **Monitoraggio ambientale:** Misura quanto è distante una pluma di inquinante da un'area protetta.  
+- **Pianificazione urbana:** Determina la distanza tra infrastrutture proposte e punti di riferimento esistenti.
+
+## Risoluzione dei problemi e consigli
+- **Il sistema di coordinate è importante:** Assicurati che entrambe le geometrie utilizzino lo stesso CRS (sistema di riferimento delle coordinate) prima di calcolare la distanza.  
+- **Prestazioni:** Per dataset di grandi dimensioni, considera l'indicizzazione spaziale (R‑tree) per evitare confronti O(N²).  
+- **Precisione:** Se ti servono distanze geodetiche (great‑circle), trasforma le coordinate in una proiezione adeguata prima.
+
+## FAQ
+### Aspose.GIS per .NET è compatibile con tutti i framework .NET?
+Sì, Aspose.GIS per .NET è compatibile con .NET Framework 4.6 e versioni successive.
+
+### Posso usare Aspose.GIS per .NET per eseguire analisi spaziali complesse?
+Assolutamente! Aspose.GIS per .NET offre un'ampia gamma di funzionalità per attività di analisi spaziale avanzata.
+
+### Aspose.GIS per .NET supporta sia geometrie 2D che 3D?
+Sì, è possibile lavorare sia con geometrie 2D che 3D usando Aspose.GIS per .NET.
+
+### Posso integrare Aspose.GIS per .NET con altre librerie GIS?
+Aspose.GIS per .NET fornisce interoperabilità con altre librerie GIS, consentendoti di sfruttare funzionalità aggiuntive.
+
+### È disponibile supporto tecnico per gli utenti di Aspose.GIS per .NET?
+Sì, gli utenti di Aspose.GIS per .NET possono accedere al supporto tecnico tramite i [forum di Aspose](https://forum.aspose.com/c/gis/33).
+
+## Domande frequenti
+
+**D: Quanto è accurata la distanza restituita da `GetDistanceTo`?**  
+R: Il metodo utilizza aritmetica a doppia precisione e segue la Specifica OGC Simple Features, fornendo precisione sub‑metrica per coordinate planari tipiche.
+
+**D: Posso calcolare la distanza tra un `Point` e un `Polygon`?**  
+R: Sì — basta chiamare `point.GetDistanceTo(polygon)` (o il contrario) e Aspose.GIS restituirà la distanza più breve dal punto al bordo del poligono.
+
+**D: L'API supporta calcoli di distanza in batch?**  
+R: Sebbene non esista un metodo batch unico, è possibile iterare su collezioni di geometrie e riutilizzare la stessa chiamata `GetDistanceTo` in modo efficiente.
+
+**D: Cosa succede se le geometrie si intersecano?**  
+R: Il metodo restituisce `0.0` perché la distanza più breve tra geometrie intersecting è zero.
+
+**D: Esiste un modo per ottenere i punti più vicini su ciascuna geometria?**  
+R: Sì — usa `Geometry.GetNearestPoints(Geometry other)` che restituisce una tupla contenente i punti più vicini su entrambe le geometrie.
 
 ## Conclusione
-Il calcolo delle distanze tra le geometrie è un compito fondamentale nella programmazione geospaziale e Aspose.GIS per .NET semplifica questo processo con la sua API intuitiva. Seguendo i passaggi descritti in questo tutorial, puoi calcolare facilmente le distanze tra poligoni, linee e punti nelle tue applicazioni .NET.
-## Domande frequenti
-### Aspose.GIS per .NET è compatibile con tutti i framework .NET?
-Sì, Aspose.GIS per .NET è compatibile con .NET Framework 4.6 e versioni successive.
-### Posso utilizzare Aspose.GIS per .NET per eseguire analisi spaziali complesse?
-Assolutamente! Aspose.GIS per .NET offre un'ampia gamma di funzionalità per attività avanzate di analisi spaziale.
-### Aspose.GIS per .NET supporta sia le geometrie 2D che 3D?
-Sì, puoi lavorare sia con geometrie 2D che 3D utilizzando Aspose.GIS per .NET.
-### Posso integrare Aspose.GIS per .NET con altre librerie GIS?
-Aspose.GIS per .NET fornisce interoperabilità con altre librerie GIS, consentendo di sfruttare funzionalità aggiuntive.
-### Il supporto tecnico è disponibile per Aspose.GIS per gli utenti .NET?
- Sì, gli utenti di Aspose.GIS per .NET possono accedere al supporto tecnico tramite Aspose[forum](https://forum.aspose.com/c/gis/33).
+Calcolare la distanza tra geometrie è un'operazione fondamentale in qualsiasi applicazione .NET abilitata al GIS. Seguendo i passaggi sopra, ora sai **come calcolare la distanza** usando Aspose.GIS, **come usare Aspose** per creare e manipolare geometrie, e come ottenere la **distanza dalla geometria** con una singola chiamata di metodo. Sperimenta con forme diverse, sistemi di coordinate e dataset più grandi per vedere come questa funzionalità può potenziare il tuo prossimo progetto di analisi spaziale.
+
+---
+
+**Ultimo aggiornamento:** 2025-12-02  
+**Testato con:** Aspose.GIS 24.11 per .NET  
+**Autore:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}

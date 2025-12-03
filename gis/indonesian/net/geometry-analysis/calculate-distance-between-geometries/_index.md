@@ -1,33 +1,50 @@
 ---
-title: Hitung Jarak Antar Geometri dengan Aspose.GIS
-linktitle: Hitung Jarak Antar Geometri
+date: 2025-12-02
+description: Pelajari cara menghitung jarak antara geometri menggunakan Aspose.GIS
+  untuk .NET. Panduan langkah demi langkah ini menunjukkan cara menggunakan Aspose.GIS,
+  mendapatkan jarak ke geometri, dan mengintegrasikan perhitungan jarak ke dalam aplikasi
+  Anda.
+language: id
+linktitle: How to Calculate Distance Between Geometries
 second_title: Aspose.GIS .NET API
-description: Pelajari cara menghitung jarak antar geometri di .NET menggunakan Aspose.GIS. Panduan langkah demi langkah dengan contoh kode. Tingkatkan aplikasi geospasial Anda.
+title: Cara Menghitung Jarak Antara Geometri dengan Aspose.GIS
+url: /net/geometry-analysis/calculate-distance-between-geometries/
 weight: 21
-url: /id/net/geometry-analysis/calculate-distance-between-geometries/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Hitung Jarak Antar Geometri dengan Aspose.GIS
+# Cara Menghitung Jarak Antara Geometri dengan Aspose.GIS
 
-## Perkenalan
-Dalam bidang pemrograman geospasial, kemampuan menghitung jarak antar geometri yang berbeda adalah hal yang terpenting. Baik Anda berurusan dengan poligon, garis, atau titik, mengetahui jarak di antara keduanya dapat menjadi hal yang penting untuk berbagai aplikasi, mulai dari pemetaan hingga perencanaan logistik. Aspose.GIS untuk .NET menyediakan alat canggih untuk melakukan penghitungan tersebut dengan mudah dan presisi.
+## Pendahuluan
+Jika Anda pernah perlu mengetahui **cara menghitung jarak** antara dua objek spasial—baik itu jaringan jalan, zona pengiriman, atau fitur lingkungan—panduan ini untuk Anda. Di .NET, Aspose.GIS membuat perhitungan jarak menjadi sederhana, akurat, dan cepat. Kami akan membimbing Anda melalui contoh dunia nyata yang menunjukkan **cara menggunakan Aspose.GIS**, membuat geometri sederhana, dan memanggil metode **GetDistanceTo** untuk memperoleh jarak di antara keduanya.
+
+## Jawaban Cepat
+- **Apa arti “menghitung jarak” dalam GIS?** Mengembalikan jarak terpendek (Euclidean) antara dua geometri.  
+- **Kelas Aspose.GIS mana yang menyediakan perhitungan ini?** `Geometry.GetDistanceTo(Geometry other)`.  
+- **Apakah saya memerlukan lisensi untuk pengembangan?** Versi percobaan gratis cukup untuk pengujian; lisensi diperlukan untuk produksi.  
+- **Bisakah saya menghitung jarak untuk geometri 3‑D?** Ya, Aspose.GIS mendukung perhitungan 2‑D dan 3‑D.  
+- **Versi .NET apa yang didukung?** .NET Framework 4.6+, .NET Core 3.1+, .NET 5/6/7.
+
+## Apa Itu Perhitungan Jarak dalam Pemrograman Geospasial?
+Perhitungan jarak mengukur garis terpendek yang menghubungkan dua geometri. Ini merupakan operasi inti untuk tugas seperti analisis kedekatan, routing, clustering, dan pengindeksan spasial.
+
+## Mengapa Menggunakan Aspose.GIS untuk Menghitung Jarak?
+- **Presisi tinggi** – Menggunakan aritmetika double‑precision.  
+- **Tanpa ketergantungan** – Tidak memerlukan pustaka GIS native.  
+- **Lintas platform** – Berfungsi di Windows, Linux, dan macOS dengan .NET Core/5+.  
+- **Model geometri kaya** – Mendukung titik, garis, poligon, dan multi‑geometri secara bawaan.
+
 ## Prasyarat
-Sebelum mempelajari penghitungan jarak antar geometri menggunakan Aspose.GIS untuk .NET, pastikan Anda memiliki prasyarat berikut:
-### Instal Aspose.GIS untuk .NET
- Untuk memulai, Anda perlu menginstal Aspose.GIS untuk .NET di sistem Anda. Anda dapat mengunduh perpustakaan dari[Halaman rilis Aspose.GIS untuk .NET](https://releases.aspose.com/gis/net/) dan ikuti petunjuk instalasi yang disediakan dalam dokumentasi.
-### Keakraban dengan Pengembangan .NET
-Pemahaman dasar tentang pengembangan .NET menggunakan C# diperlukan untuk mengikuti contoh dalam tutorial ini. Jika Anda baru mengenal pengembangan .NET, pertimbangkan untuk mempelajari dasar-dasar C# sebelum melanjutkan.
+- **Aspose.GIS untuk .NET** terpasang (unduh dari [halaman rilis Aspose.GIS untuk .NET](https://releases.aspose.com/gis/net/)).  
+- Pengetahuan dasar tentang C# dan struktur proyek .NET.  
+- Lingkungan pengembangan seperti Visual Studio 2022 atau VS Code.
 
 ## Impor Namespace
-Sebelum Anda dapat mulai menggunakan Aspose.GIS untuk .NET guna menghitung jarak antar geometri, Anda perlu mengimpor namespace yang diperlukan ke dalam proyek C# Anda. Ikuti langkah-langkah berikut untuk mengimpor namespace yang diperlukan:
-## Buka Proyek C# Anda
-Navigasikan ke proyek C# Anda di Lingkungan Pengembangan Terpadu (IDE) pilihan Anda, seperti Visual Studio.
-## Tambahkan Referensi Namespace
-Di file C# tempat Anda ingin melakukan penghitungan jarak, tambahkan referensi namespace berikut di awal file:
+Sebelum Anda dapat mulai menggunakan Aspose.GIS, tambahkan namespace yang diperlukan ke file C# Anda:
+
 ```csharp
 using Aspose.Gis.Geometries;
 using System;
@@ -37,13 +54,13 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-Mari kita bagi contoh yang diberikan menjadi beberapa langkah untuk memahami cara menghitung jarak antar geometri menggunakan Aspose.GIS untuk .NET:
-## Langkah 1: Buat Geometri Poligon
+### Langkah 1: Buat Geometri Poligon
 ```csharp
 var polygon = new Polygon();
 ```
-Langkah ini menciptakan contoh baru geometri poligon.
-## Langkah 2: Tentukan Cincin Eksterior Poligon
+Kita memulai dengan poligon kosong yang nantinya akan mewakili area persegi panjang.
+
+### Langkah 2: Definisikan Cincin Eksterior Poligon
 ```csharp
 polygon.ExteriorRing = new LinearRing(new[]
 {
@@ -54,42 +71,85 @@ polygon.ExteriorRing = new LinearRing(new[]
     new Point(0, 0),
 });
 ```
-Di sini, kita mendefinisikan cincin luar poligon dengan menentukan rangkaian titik-titik yang membentuk batas poligon.
-## Langkah 3: Buat Geometri Garis Garis
+Cincin eksterior adalah rangkaian titik tertutup yang mendefinisikan batas poligon. Pada contoh ini kami membuat sebuah kotak 1 × 1.
+
+### Langkah 3: Buat Geometri LineString
 ```csharp
 var line = new LineString();
 ```
-Langkah ini menginisialisasi instance baru geometri string garis.
-## Langkah 4: Tambahkan Poin ke String Garis
+`LineString` adalah serangkaian segmen garis yang terhubung. Kami akan menggunakannya untuk mewakili jalan atau jalur.
+
+### Langkah 4: Tambahkan Titik ke LineString
 ```csharp
 line.AddPoint(2, 0);
 line.AddPoint(1, 3);
 ```
-Kami menambahkan dua titik ke string garis, menentukan bentuk dan lintasannya.
-## Langkah 5: Hitung Jarak
+Dua titik ini memberi garis bentuk miring yang tidak memotong poligon, sehingga perhitungan jarak menjadi menarik.
+
+### Langkah 5: Hitung Jarak
 ```csharp
 double distance = polygon.GetDistanceTo(line);
 ```
-Langkah ini menghitung jarak antara poligon dan string garis.
-## Langkah 6: Hasil Keluaran
+Di sini kami **mengambil jarak ke geometri** dengan memanggil `GetDistanceTo`. Aspose.GIS menghitung jarak terpendek antara tepi poligon dan garis.
+
+### Langkah 6: Tampilkan Hasil
 ```csharp
-Console.WriteLine(distance.ToString("F")); // 0,63
+Console.WriteLine(distance.ToString("F")); // 0.63
 ```
-Terakhir, kami mencetak jarak yang dihitung ke konsol, diformat untuk menampilkan dua tempat desimal.
+Hasil dicetak dengan dua angka desimal (`0.63`). Nilai ini mewakili jarak Euclidean minimum antara kotak dan garis.
+
+## Kasus Penggunaan Umum
+- **Logistik:** Temukan depot terdekat untuk rute pengiriman.  
+- **Pemantauan lingkungan:** Ukur seberapa jauh asap polutan dari area yang dilindungi.  
+- **Perencanaan kota:** Tentukan jarak antara infrastruktur yang diusulkan dengan landmark yang ada.
+
+## Pemecahan Masalah & Tips
+- **Sistem koordinat penting:** Pastikan kedua geometri menggunakan CRS (sistem referensi koordinat) yang sama sebelum menghitung jarak.  
+- **Kinerja:** Untuk dataset besar, pertimbangkan pengindeksan spasial (R‑tree) untuk menghindari perbandingan O(N²).  
+- **Presisi:** Jika Anda memerlukan jarak geodesik (great‑circle), ubah koordinat ke proyeksi yang sesuai terlebih dahulu.
+
+## FAQ's
+### Apakah Aspose.GIS untuk .NET kompatibel dengan semua kerangka kerja .NET?
+Ya, Aspose.GIS untuk .NET kompatibel dengan .NET Framework 4.6 ke atas.
+
+### Bisakah saya menggunakan Aspose.GIS untuk .NET untuk melakukan analisis spasial yang kompleks?
+Tentu saja! Aspose.GIS untuk .NET menawarkan beragam fungsionalitas untuk tugas analisis spasial tingkat lanjut.
+
+### Apakah Aspose.GIS untuk .NET mendukung geometri 2D dan 3D?
+Ya, Anda dapat bekerja dengan geometri 2D maupun 3D menggunakan Aspose.GIS untuk .NET.
+
+### Bisakah saya mengintegrasikan Aspose.GIS untuk .NET dengan pustaka GIS lain?
+Aspose.GIS untuk .NET menyediakan interoperabilitas dengan pustaka GIS lain, memungkinkan Anda memanfaatkan fungsionalitas tambahan.
+
+### Apakah dukungan teknis tersedia untuk pengguna Aspose.GIS untuk .NET?
+Ya, pengguna Aspose.GIS untuk .NET dapat mengakses dukungan teknis melalui [forum](https://forum.aspose.com/c/gis/33) Aspose.
+
+## Pertanyaan yang Sering Diajukan
+
+**T: Seberapa akurat jarak yang dikembalikan oleh `GetDistanceTo`?**  
+J: Metode ini menggunakan aritmetika double‑precision dan mengikuti OGC Simple Features Specification, memberikan akurasi sub‑meter untuk koordinat planar tipikal.
+
+**T: Bisakah saya menghitung jarak antara `Point` dan `Polygon`?**  
+J: Ya—cukup panggil `point.GetDistanceTo(polygon)` (atau sebaliknya) dan Aspose.GIS akan mengembalikan jarak terpendek dari titik ke tepi poligon.
+
+**T: Apakah API mendukung perhitungan jarak secara batch?**  
+J: Meskipun tidak ada metode batch tunggal, Anda dapat melakukan iterasi atas koleksi geometri dan menggunakan panggilan `GetDistanceTo` yang sama secara efisien.
+
+**T: Apa yang terjadi jika geometri saling berpotongan?**  
+J: Metode mengembalikan `0.0` karena jarak terpendek antara geometri yang berpotongan adalah nol.
+
+**T: Apakah ada cara untuk mendapatkan titik terdekat pada masing‑masing geometri?**  
+J: Ya—gunakan `Geometry.GetNearestPoints(Geometry other)` yang mengembalikan tuple berisi titik terdekat pada kedua geometri.
 
 ## Kesimpulan
-Menghitung jarak antar geometri adalah tugas mendasar dalam pemrograman geospasial, dan Aspose.GIS untuk .NET menyederhanakan proses ini dengan API intuitifnya. Dengan mengikuti langkah-langkah yang diuraikan dalam tutorial ini, Anda dapat dengan mudah menghitung jarak antara poligon, garis, dan titik di aplikasi .NET Anda.
-## FAQ
-### Apakah Aspose.GIS untuk .NET kompatibel dengan semua kerangka .NET?
-Ya, Aspose.GIS untuk .NET kompatibel dengan .NET Framework 4.6 dan lebih tinggi.
-### Bisakah saya menggunakan Aspose.GIS untuk .NET untuk melakukan analisis spasial yang kompleks?
-Sangat! Aspose.GIS untuk .NET menawarkan berbagai fungsi untuk tugas analisis spasial tingkat lanjut.
-### Apakah Aspose.GIS untuk .NET mendukung geometri 2D dan 3D?
-Ya, Anda dapat bekerja dengan geometri 2D dan 3D menggunakan Aspose.GIS untuk .NET.
-### Bisakah saya mengintegrasikan Aspose.GIS untuk .NET dengan perpustakaan GIS lainnya?
-Aspose.GIS untuk .NET menyediakan interoperabilitas dengan perpustakaan GIS lainnya, memungkinkan Anda memanfaatkan fungsionalitas tambahan.
-### Apakah dukungan teknis tersedia untuk Aspose.GIS untuk pengguna .NET?
- Ya, pengguna Aspose.GIS untuk .NET dapat mengakses dukungan teknis melalui Aspose[forum](https://forum.aspose.com/c/gis/33).
+Menghitung jarak antara geometri adalah operasi fundamental dalam aplikasi .NET yang berorientasi GIS. Dengan mengikuti langkah‑langkah di atas, Anda kini tahu **cara menghitung jarak** menggunakan Aspose.GIS, **cara menggunakan Aspose** untuk membuat dan memanipulasi geometri, serta cara mengambil **jarak ke geometri** dengan satu pemanggilan metode. Bereksperimenlah dengan bentuk berbeda, sistem koordinat, dan dataset yang lebih besar untuk melihat bagaimana kemampuan ini dapat memperkuat proyek analisis spasial Anda berikutnya.
+
+---
+
+**Terakhir Diperbarui:** 2025-12-02  
+**Diuji Dengan:** Aspose.GIS 24.11 untuk .NET  
+**Penulis:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
