@@ -102,15 +102,15 @@ A: 有，您可從 [Aspose 官方網站](https://releases.aspose.com/) 下載免
 ## 結論
 依照上述步驟，您已掌握如何使用 **Aspose.GIS for .NET** 高效地 **將 shapefile 轉換為 geojson**。此功能可實現無縫的 **地理空間資料互通性**，讓您將空間資料輕鬆匯入現代網頁地圖、API 與分析管線。未來亦可探索 Aspose.GIS 更廣泛的 **GIS 資料格式轉換** 功能，處理 KML、GML 以及影像格式，隨專案需求持續擴展。
 
+---
+
+**最後更新：** 2025-11-30  
+**測試環境：** Aspose.GIS for .NET 24.11  
+**作者：** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**最後更新：** 2025-11-30  
-**測試環境：** Aspose.GIS for .NET 24.11  
-**作者：** Aspose

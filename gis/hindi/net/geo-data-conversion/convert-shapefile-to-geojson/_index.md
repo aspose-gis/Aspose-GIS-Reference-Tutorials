@@ -104,15 +104,15 @@ A: हाँ, आप [Aspose वेबसाइट](https://releases.aspose.com/
 ## निष्कर्ष
 इन चरणों का पालन करके आप अब **Aspose.GIS for .NET** का उपयोग करके **shapefile को geojson में बदलना** कुशलता से कर सकते हैं। यह क्षमता सहज **geospatial data interoperability** को सक्षम करती है, जिससे आप स्पेशियल डेटा को आधुनिक वेब मैप्स, APIs और एनालिटिक्स पाइपलाइनों में फीड कर सकते हैं। जैसे-जैसे आपके प्रोजेक्ट्स बढ़ते हैं, Aspose.GIS की व्यापक **GIS डेटा फ़ॉर्मेट रूपांतरण** सुविधाओं का उपयोग करके KML, GML और रास्टर फ़ॉर्मेट्स को भी संभालें।
 
+---
+
+**अंतिम अपडेट:** 2025-11-30  
+**परीक्षण किया गया:** Aspose.GIS for .NET 24.11  
+**लेखक:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**अंतिम अपडेट:** 2025-11-30  
-**परीक्षण किया गया:** Aspose.GIS for .NET 24.11  
-**लेखक:** Aspose

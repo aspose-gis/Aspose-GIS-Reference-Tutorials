@@ -104,15 +104,15 @@ A: Ya, Anda dapat mengunduh versi percobaan gratis dari [situs Aspose](https://r
 ## Kesimpulan
 Dengan mengikuti langkah‑langkah ini Anda kini tahu **cara mengonversi shapefile ke geojson** secara efisien menggunakan **Aspose.GIS untuk .NET**. Kemampuan ini membuka **interoperabilitas data geospasial** yang mulus, memungkinkan Anda memasukkan data spasial ke dalam peta web modern, API, dan alur analitik. Jelajahi fitur **konversi format data GIS** yang lebih luas dari Aspose.GIS untuk menangani KML, GML, dan format raster seiring proyek Anda berkembang.
 
+---
+
+**Terakhir Diperbarui:** 2025-11-30  
+**Diuji Dengan:** Aspose.GIS for .NET 24.11  
+**Penulis:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Terakhir Diperbarui:** 2025-11-30  
-**Diuji Dengan:** Aspose.GIS for .NET 24.11  
-**Penulis:** Aspose

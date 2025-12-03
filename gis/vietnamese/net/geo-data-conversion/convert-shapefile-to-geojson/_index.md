@@ -104,15 +104,15 @@ A: Có, bạn có thể tải bản dùng thử miễn phí từ [trang web Aspo
 ## Kết luận
 Bằng cách làm theo các bước này, bạn đã biết **cách chuyển đổi shapefile sang geojson** một cách hiệu quả bằng **Aspose.GIS cho .NET**. Khả năng này mở ra **tương tác dữ liệu không gian** liền mạch, cho phép bạn đưa dữ liệu không gian vào các bản đồ web hiện đại, API và quy trình phân tích. Khám phá các tính năng **chuyển đổi định dạng dữ liệu GIS** rộng hơn của Aspose.GIS để xử lý KML, GML và các định dạng raster khi dự án của bạn phát triển.
 
+---
+
+**Cập nhật lần cuối:** 2025-11-30  
+**Kiểm tra với:** Aspose.GIS for .NET 24.11  
+**Tác giả:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Cập nhật lần cuối:** 2025-11-30  
-**Kiểm tra với:** Aspose.GIS for .NET 24.11  
-**Tác giả:** Aspose

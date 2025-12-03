@@ -104,15 +104,15 @@ A: 예, [Aspose 웹사이트](https://releases.aspose.com/)에서 무료 체험�
 ## 결론
 이 단계들을 따라 하면 **Aspose.GIS for .NET**을 사용하여 **shapefile을 geojson으로 변환**하는 방법을 효율적으로 익히게 됩니다. 이 기능은 원활한 **지리공간 데이터 상호운용성**을 제공하여 최신 웹 지도, API 및 분석 파이프라인에 공간 데이터를 손쉽게 공급할 수 있게 합니다. 프로젝트가 성장함에 따라 KML, GML 및 래스터 형식 등을 처리할 수 있는 Aspose.GIS의 광범위한 **GIS 데이터 형식 변환** 기능을 탐색해 보세요.
 
+---
+
+**Last Updated:** 2025-11-30  
+**Tested With:** Aspose.GIS for .NET 24.11  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-11-30  
-**Tested With:** Aspose.GIS for .NET 24.11  
-**Author:** Aspose

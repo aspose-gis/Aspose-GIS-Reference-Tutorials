@@ -103,15 +103,15 @@ VectorLayer.Convert(shapefilePath, Drivers.Shapefile, jsonPath, Drivers.GeoJson)
 ## สรุป
 โดยทำตามขั้นตอนเหล่านี้ คุณจะรู้ **วิธีแปลง shapefile เป็น geojson** อย่างมีประสิทธิภาพด้วย **Aspose.GIS for .NET** ความสามารถนี้เปิดประตูสู่ **การทำงานร่วมกันของข้อมูลเชิงพื้นที่** อย่างไร้รอยต่อ ทำให้คุณสามารถส่งต่อข้อมูลเชิงพื้นที่เข้าสู่เว็บแมพสมัยใหม่, API, และสายงานวิเคราะห์ต่าง ๆ ได้สำเร็จ สำรวจคุณสมบัติการแปลงรูปแบบข้อมูล GIS ที่กว้างขวางของ Aspose.GIS เพื่อจัดการกับ KML, GML, และรูปแบบเรสเตอร์เมื่อตัวโครงการของคุณเติบโต
 
+---
+
+**อัปเดตล่าสุด:** 2025-11-30  
+**ทดสอบกับ:** Aspose.GIS for .NET 24.11  
+**ผู้เขียน:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**อัปเดตล่าสุด:** 2025-11-30  
-**ทดสอบกับ:** Aspose.GIS for .NET 24.11  
-**ผู้เขียน:** Aspose

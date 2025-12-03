@@ -104,15 +104,15 @@ R: Sim, você pode baixar uma avaliação gratuita no [site da Aspose](https://r
 ## Conclusão
 Seguindo estas etapas, você agora sabe **como converter shapefile para geojson** de forma eficiente usando **Aspose.GIS for .NET**. Essa capacidade desbloqueia uma **interoperabilidade de dados geoespaciais** perfeita, permitindo que você alimente dados espaciais em mapas web modernos, APIs e pipelines de análise. Explore os recursos mais amplos de **conversão de formatos de dados GIS** do Aspose.GIS para lidar com KML, GML e formatos raster à medida que seus projetos evoluem.
 
+---
+
+**Última atualização:** 2025-11-30  
+**Testado com:** Aspose.GIS for .NET 24.11  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Última atualização:** 2025-11-30  
-**Testado com:** Aspose.GIS for .NET 24.11  
-**Autor:** Aspose

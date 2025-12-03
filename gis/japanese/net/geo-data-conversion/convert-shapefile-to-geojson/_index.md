@@ -102,15 +102,15 @@ VectorLayer.Convert(shapefilePath, Drivers.Shapefile, jsonPath, Drivers.GeoJson)
 ## 結論
 これらの手順に従うことで、**Aspose.GIS for .NET** を使用して **shapefile を geojson に変換する方法** を効率的に習得しました。この機能によりシームレスな **geospatial data interoperability** が実現し、空間データを最新のウェブマップ、API、分析パイプラインに供給できます。プロジェクトが拡大するにつれ、KML、GML、ラスタ形式などを処理できる Aspose.GIS の幅広い **GIS data format conversion** 機能もぜひご活用ください。
 
+---
+
+**最終更新日:** 2025-11-30  
+**テスト環境:** Aspose.GIS for .NET 24.11  
+**作者:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**最終更新日:** 2025-11-30  
-**テスト環境:** Aspose.GIS for .NET 24.11  
-**作者:** Aspose

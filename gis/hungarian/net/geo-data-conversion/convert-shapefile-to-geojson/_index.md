@@ -103,15 +103,15 @@ V: Igen, letölthetsz egy ingyenes próbaverziót az [Aspose weboldaláról](htt
 ## Összegzés
 A lépések követésével most már tudod, hogyan **konvertálj shapefile-t geojson-ra** hatékonyan a **Aspose.GIS for .NET** segítségével. Ez a képesség lehetővé teszi a zökkenőmentes **geospatial data interoperability**-t, így térbeli adatokat tudsz betáplálni modern webes térképekbe, API-kba és elemzési csővezetékekbe. Fedezd fel az Aspose.GIS szélesebb körű **GIS data format conversion** funkcióit, hogy KML, GML és raszteres formátumokat is kezelhess a projektjeid növekedésével.
 
+---
+
+**Utolsó frissítés:** 2025-11-30  
+**Tesztelve ezzel:** Aspose.GIS for .NET 24.11  
+**Szerző:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Utolsó frissítés:** 2025-11-30  
-**Tesztelve ezzel:** Aspose.GIS for .NET 24.11  
-**Szerző:** Aspose

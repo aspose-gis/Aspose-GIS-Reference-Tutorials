@@ -104,15 +104,15 @@ A: Ja, Sie können eine kostenlose Testversion von der [Aspose website](https://
 ## Fazit
 Durch das Befolgen dieser Schritte wissen Sie jetzt, **wie man Shapefile in GeoJSON** effizient mit **Aspose.GIS für .NET** konvertiert. Diese Fähigkeit ermöglicht nahtlose **geospatial data interoperability**, sodass Sie räumliche Daten in moderne Webkarten, APIs und Analyse‑Pipelines einspeisen können. Erkunden Sie die umfassenderen **GIS‑Datenformatkonvertierungs**‑Funktionen von Aspose.GIS, um KML, GML und Rasterformate zu verarbeiten, wenn Ihre Projekte wachsen.
 
+---
+
+**Zuletzt aktualisiert:** 2025-11-30  
+**Getestet mit:** Aspose.GIS for .NET 24.11  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Zuletzt aktualisiert:** 2025-11-30  
-**Getestet mit:** Aspose.GIS for .NET 24.11  
-**Autor:** Aspose
