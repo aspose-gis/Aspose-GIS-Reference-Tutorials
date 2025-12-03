@@ -118,15 +118,15 @@ Aspose.GIS kullanarak .NET'te geometri uzunluğunu nasıl hesaplayacağınızı 
 ### [Geometri Yüzeyinde Nokta Al](./get-point-on-geometry-surface/)
 Aspose.GIS for .NET kullanarak coğrafi verilerle verimli bir şekilde çalışmayı öğrenin. Adım adım rehber ve SSS içerir.
 
+---
+
+**Son Güncelleme:** 2025-12-02  
+**Test Edildiği Versiyon:** Aspose.GIS for .NET (en son kararlı sürüm)  
+**Yazar:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Son Güncelleme:** 2025-12-02  
-**Test Edildiği Versiyon:** Aspose.GIS for .NET (en son kararlı sürüm)  
-**Yazar:** Aspose

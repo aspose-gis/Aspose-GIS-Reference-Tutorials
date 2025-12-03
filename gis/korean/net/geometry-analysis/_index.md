@@ -117,15 +117,15 @@ Aspose.GIS를 사용해 .NET에서 기하학 길이를 계산하는 방법을 �
 ### [기하학 표면 위의 점 얻기 튜토리얼](./get-point-on-geometry-surface/)
 Aspose.GIS for .NET을 활용해 지리공간 데이터를 효율적으로 다루는 방법을 배웁니다. 단계별 가이드와 FAQ가 포함됩니다.
 
+---
+
+**Last Updated:** 2025-12-02  
+**Tested With:** Aspose.GIS for .NET (latest stable release)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-12-02  
-**Tested With:** Aspose.GIS for .NET (latest stable release)  
-**Author:** Aspose

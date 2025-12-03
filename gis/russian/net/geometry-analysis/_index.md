@@ -118,15 +118,15 @@ weight: 22
 ### [Получение точки на поверхности геометрии](./get-point-on-geometry-surface/)
 Узнайте, как эффективно работать с геопространственными данными, используя Aspose.GIS для .NET. Включено пошаговое руководство и FAQ.
 
+---
+
+**Последнее обновление:** 2025-12-02  
+**Тестировано с:** Aspose.GIS for .NET (latest stable release)  
+**Автор:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Последнее обновление:** 2025-12-02  
-**Тестировано с:** Aspose.GIS for .NET (latest stable release)  
-**Автор:** Aspose

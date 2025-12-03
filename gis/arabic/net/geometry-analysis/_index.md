@@ -117,15 +117,15 @@ weight: 22
 ### [الحصول على نقطة على سطح الشكل الهندسي](./get-point-on-geometry-surface/)
 تعلم كيفية العمل بفعالية مع البيانات الجغرافية باستخدام Aspose.GIS لـ .NET. دليل خطوة بخطوة وأسئلة شائعة مرفقة.
 
+---
+
+**آخر تحديث:** 2025-12-02  
+**تم الاختبار مع:** Aspose.GIS لـ .NET (أحدث إصدار ثابت)  
+**المؤلف:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**آخر تحديث:** 2025-12-02  
-**تم الاختبار مع:** Aspose.GIS لـ .NET (أحدث إصدار ثابت)  
-**المؤلف:** Aspose

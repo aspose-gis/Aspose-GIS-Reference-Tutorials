@@ -116,15 +116,15 @@ weight: 22
 ### [Get Point on Geometry Surface](./get-point-on-geometry-surface/)
 学习如何使用 Aspose.GIS for .NET 高效处理地理空间数据。包括逐步指南和常见问题。
 
+---
+
+**Last Updated:** 2025-12-02  
+**Tested With:** Aspose.GIS for .NET (latest stable release)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-12-02  
-**Tested With:** Aspose.GIS for .NET (latest stable release)  
-**Author:** Aspose

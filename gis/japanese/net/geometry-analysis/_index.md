@@ -116,15 +116,15 @@ Aspose.GIS を使用して .NET でジオメトリ長さを計算し、空間デ
 ### [ジオメトリ表面上のポイントを取得する](./get-point-on-geometry-surface/)
 Aspose.GIS for .NET を活用してジオメトリ表面上のポイント取得方法を学び、ステップバイステップのガイドと FAQ を提供します。
 
+---
+
+**最終更新日:** 2025-12-02  
+**テスト環境:** Aspose.GIS for .NET (latest stable release)  
+**作者:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**最終更新日:** 2025-12-02  
-**テスト環境:** Aspose.GIS for .NET (latest stable release)  
-**作者:** Aspose

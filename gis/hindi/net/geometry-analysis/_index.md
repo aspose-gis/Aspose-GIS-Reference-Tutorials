@@ -118,15 +118,15 @@ Learn how to calculate geometry length in .NET using Aspose.GIS for efficient sp
 ### [ज्यामिति सतह पर बिंदु प्राप्त करने का ट्यूटोरियल](./get-point-on-geometry-surface/)
 Learn how to work with geospatial data efficiently using Aspose.GIS for .NET. Step-by-step guide and FAQs included.
 
+---
+
+**अंतिम अपडेट:** 2025-12-02  
+**परीक्षित संस्करण:** Aspose.GIS for .NET (latest stable release)  
+**लेखक:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**अंतिम अपडेट:** 2025-12-02  
-**परीक्षित संस्करण:** Aspose.GIS for .NET (latest stable release)  
-**लेखक:** Aspose

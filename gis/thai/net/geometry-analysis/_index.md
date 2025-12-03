@@ -104,15 +104,15 @@ weight: 22
 ### [รับจุดบนพื้นผิวของ Geometry](./get-point-on-geometry-surface/)
 เรียนรู้วิธีทำงานกับข้อมูลเชิงพื้นที่อย่างมีประสิทธิภาพด้วย Aspose.GIS สำหรับ .NET คำแนะนำแบบขั้นตอนและคำถามที่พบบ่อยรวมอยู่ด้วย
 
+---
+
+**อัปเดตล่าสุด:** 2025-12-02  
+**ทดสอบด้วย:** Aspose.GIS สำหรับ .NET (รุ่นเสถียรล่าสุด)  
+**ผู้เขียน:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**อัปเดตล่าสุด:** 2025-12-02  
-**ทดสอบด้วย:** Aspose.GIS สำหรับ .NET (รุ่นเสถียรล่าสุด)  
-**ผู้เขียน:** Aspose

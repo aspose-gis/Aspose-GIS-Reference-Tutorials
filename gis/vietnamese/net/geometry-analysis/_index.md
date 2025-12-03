@@ -118,15 +118,15 @@ Tìm hiểu cách tính độ dài hình học trong .NET bằng cách sử dụ
 ### [Lấy Điểm Trên Bề Mặt Hình Học](./get-point-on-geometry-surface/)
 Tìm hiểu cách làm việc hiệu quả với dữ liệu không gian địa lý bằng cách sử dụng Aspose.GIS cho .NET. Bao gồm hướng dẫn từng bước và các câu hỏi thường gặp.
 
+---
+
+**Cập Nhật Cuối Cùng:** 2025-12-02  
+**Đã Kiểm Tra Với:** Aspose.GIS cho .NET (phiên bản ổn định mới nhất)  
+**Tác Giả:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Cập Nhật Cuối Cùng:** 2025-12-02  
-**Đã Kiểm Tra Với:** Aspose.GIS cho .NET (phiên bản ổn định mới nhất)  
-**Tác Giả:** Aspose

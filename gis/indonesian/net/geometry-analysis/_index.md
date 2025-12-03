@@ -104,15 +104,15 @@ Pelajari cara menghitung panjang geometri di .NET menggunakan Aspose.GIS untuk p
 ### [Get Point on Geometry Surface](./get-point-on-geometry-surface/)
 Pelajari cara bekerja dengan data geospasial secara efisien menggunakan Aspose.GIS untuk .NET. Panduan langkah‑demi‑langkah dan FAQ disertakan.
 
+---
+
+**Terakhir Diperbarui:** 2025-12-02  
+**Diuji Dengan:** Aspose.GIS untuk .NET (rilis stabil terbaru)  
+**Penulis:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Terakhir Diperbarui:** 2025-12-02  
-**Diuji Dengan:** Aspose.GIS untuk .NET (rilis stabil terbaru)  
-**Penulis:** Aspose

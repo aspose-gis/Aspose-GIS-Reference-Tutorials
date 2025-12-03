@@ -104,15 +104,15 @@ Lär dig hur du beräknar geometri längd i .NET med Aspose.GIS för effektiv ha
 ### [Hämta punkt på geometri yta](./get-point-on-geometry-surface/)
 Lär dig hur du arbetar med geospatial data effektivt med Aspose.GIS för .NET. Steg‑för‑steg‑guide och vanliga frågor inkluderade.
 
+---
+
+**Senast uppdaterad:** 2025-12-02  
+**Testad med:** Aspose.GIS for .NET (latest stable release)  
+**Författare:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Senast uppdaterad:** 2025-12-02  
-**Testad med:** Aspose.GIS for .NET (latest stable release)  
-**Författare:** Aspose

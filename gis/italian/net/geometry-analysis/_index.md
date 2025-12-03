@@ -104,15 +104,15 @@ Scopri come calcolare la lunghezza della geometria in .NET usando Aspose.GIS per
 ### [Ottieni un punto sulla superficie della geometria](./get-point-on-geometry-surface/)
 Scopri come lavorare con dati geospaziali in modo efficiente usando Aspose.GIS per .NET. Guida passo‑passo e FAQ incluse.
 
+---
+
+**Ultimo aggiornamento:** 2025-12-02  
+**Testato con:** Aspose.GIS per .NET (ultima versione stabile)  
+**Autore:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Ultimo aggiornamento:** 2025-12-02  
-**Testato con:** Aspose.GIS per .NET (ultima versione stabile)  
-**Autore:** Aspose

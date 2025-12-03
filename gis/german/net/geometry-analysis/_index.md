@@ -119,15 +119,15 @@ Erfahren Sie, wie Sie die Geometrie‑Länge in .NET mit Aspose.GIS für eine ef
 ### [Punkt auf Geometrie‑Oberfläche ermitteln](./get-point-on-geometry-surface/)
 Erfahren Sie, wie Sie effizient mit geodatenbasierten Daten mit Aspose.GIS für .NET arbeiten. Schritt‑für‑Schritt‑Anleitung und enthalten.
 
+---
+
+**Zuletzt aktualisiert:** 2025-12-02  
+**Getestet mit:** Aspose.GIS für .NET (neueste stabile Version)  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Zuletzt aktualisiert:** 2025-12-02  
-**Getestet mit:** Aspose.GIS für .NET (neueste stabile Version)  
-**Autor:** Aspose

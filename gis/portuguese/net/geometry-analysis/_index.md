@@ -104,15 +104,15 @@ Aprenda a calcular o comprimento da geometria em .NET usando Aspose.GIS para man
 ### [Obter Ponto na Superfície da Geometria](./get-point-on-geometry-surface/)
 Aprenda a trabalhar com dados geoespaciais de forma eficiente usando Aspose.GIS para .NET. Guia passo a passo e FAQs incluídos.
 
+---
+
+**Última Atualização:** 2025-12-02  
+**Testado com:** Aspose.GIS para .NET (última versão estável)  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Última Atualização:** 2025-12-02  
-**Testado com:** Aspose.GIS para .NET (última versão estável)  
-**Autor:** Aspose

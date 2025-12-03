@@ -119,15 +119,15 @@ weight: 22
 ### [Get Point on Geometry Surface](./get-point-on-geometry-surface/)
 Μάθετε πώς να εργάζεστε αποδοτικά με γεωχωρικά δεδομένα χρησιμοποιώντας το Aspose.GIS για .NET. Περιλαμβάνει βήμα‑βήμα οδηγό και Συχνές Ερωτήσεις.
 
+---
+
+**Τελευταία Ενημέρωση:** 2025-12-02  
+**Δοκιμάστηκε Με:** Aspose.GIS for .NET (latest stable release)  
+**Συγγραφέας:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Τελευταία Ενημέρωση:** 2025-12-02  
-**Δοκιμάστηκε Με:** Aspose.GIS for .NET (latest stable release)  
-**Συγγραφέας:** Aspose

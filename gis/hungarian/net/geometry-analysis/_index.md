@@ -118,15 +118,15 @@ Tanulja meg, hogyan számítható ki a geometria hossza .NET‑ben az Aspose.GIS
 ### [Get Point on Geometry Surface](./get-point-on-geometry-surface/)
 Tanulja meg, hogyan dolgozhat hatékonyan geotérbeli adatokkal az Aspose.GIS for .NET használatával. Lépésről‑lépésre útmutató és GYIK is szerepel.
 
+---
+
+**Last Updated:** 2025-12-02  
+**Tested With:** Aspose.GIS for .NET (latest stable release)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-12-02  
-**Tested With:** Aspose.GIS for .NET (latest stable release)  
-**Author:** Aspose

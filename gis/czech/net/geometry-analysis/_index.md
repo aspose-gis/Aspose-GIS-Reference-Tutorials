@@ -118,6 +118,12 @@ Naučte se vypočítat délku geometrie v .NET pomocí Aspose.GIS pro efektivní
 ### [Získání bodu na povrchu geometrie](./get-point-on-geometry-surface/)
 Naučte se efektivně pracovat s geoprostorovými daty pomocí Aspose.GIS pro .NET. Krok za krokem průvodce a časté dotazy jsou zahrnuty.
 
+---
+
+**Poslední aktualizace:** 2025-12-02  
+**Testováno s:** Aspose.GIS for .NET (nejnovější stabilní verze)  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -125,8 +131,3 @@ Naučte se efektivně pracovat s geoprostorovými daty pomocí Aspose.GIS pro .N
 
 {{< blocks/products/products-backtop-button >}}
 
----
-
-**Poslední aktualizace:** 2025-12-02  
-**Testováno s:** Aspose.GIS for .NET (nejnovější stabilní verze)  
-**Autor:** Aspose

@@ -104,15 +104,15 @@ Leer hoe u geometrie‑lengte berekent in .NET met Aspose.GIS voor efficiënte v
 ### [Punt op Geometrie‑Oppervlak Ophalen](./get-point-on-geometry-surface/)
 Leer hoe u efficiënt met geospatiale data werkt met Aspose.GIS voor .NET. Stap‑voor‑stap gids en FAQ’s inbegrepen.
 
+---
+
+**Laatst bijgewerkt:** 2025-12-02  
+**Getest met:** Aspose.GIS voor .NET (latest stable release)  
+**Auteur:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Laatst bijgewerkt:** 2025-12-02  
-**Getest met:** Aspose.GIS voor .NET (latest stable release)  
-**Auteur:** Aspose

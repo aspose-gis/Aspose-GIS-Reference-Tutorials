@@ -102,15 +102,15 @@ weight: 22
 ### [取得幾何表面的點](./get-point-on-geometry-surface/)
 學習使用 Aspose.GIS for .NET 高效處理地理空間資料，提供逐步指引與常見問答。
 
+---
+
+**Last Updated:** 2025-12-02  
+**Tested With:** Aspose.GIS for .NET (latest stable release)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-12-02  
-**Tested With:** Aspose.GIS for .NET (latest stable release)  
-**Author:** Aspose
