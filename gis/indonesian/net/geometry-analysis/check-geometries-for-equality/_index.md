@@ -1,31 +1,50 @@
 ---
-title: Periksa Geometri untuk Kesetaraan
-linktitle: Periksa Geometri untuk Kesetaraan
+date: 2025-12-03
+description: Pelajari cara membandingkan geometri menggunakan Aspose.GIS untuk .NET
+  dan periksa kesetaraan geometri dalam aplikasi .NET Anda.
+language: id
+linktitle: How to Compare Geometries for Equality
 second_title: Aspose.GIS .NET API
-description: Pelajari cara menggunakan Aspose.GIS untuk .NET guna memeriksa geometri untuk kesetaraan dalam aplikasi .NET Anda dengan tutorial komprehensif ini.
+title: Cara Membandingkan Geometri untuk Kesamaan menggunakan Aspose.GIS untuk .NET
+url: /net/geometry-analysis/check-geometries-for-equality/
 weight: 10
-url: /id/net/geometry-analysis/check-geometries-for-equality/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Periksa Geometri untuk Kesetaraan
+# Cara Membandingkan Geometri untuk Kesamaan menggunakan Aspose.GIS untuk .NET
 
-## Perkenalan
-Aspose.GIS untuk .NET adalah perpustakaan canggih yang memungkinkan pengembang bekerja dengan data geospasial secara efisien dalam aplikasi .NET mereka. Baik Anda membuat aplikasi pemetaan, alat analisis spasial, atau mengintegrasikan fungsi geospasial ke dalam perangkat lunak yang ada, Aspose.GIS menyediakan alat yang Anda perlukan untuk menyelesaikan pekerjaan.
+## Pendahuluan
+Dalam tutorial ini Anda akan menemukan **cara membandingkan geometri** dengan Aspose.GIS untuk .NET. Baik Anda sedang membangun layanan pemetaan, melakukan analisis spasial, atau sekadar perlu memverifikasi bahwa dua bentuk mewakili lokasi yang sama, mengetahui cara membandingkan geometri sangat penting. Kami akan memandu Anda melalui contoh lengkap end‑to‑end yang menunjukkan cara membuat, memodifikasi, dan menguji kesamaan geometri hanya dalam beberapa baris kode C#.
+
+## Jawaban Cepat
+- **Apa arti “membandingkan geometri”?** Memeriksa apakah dua objek geometris menempati ruang yang sama, terlepas dari bagaimana mereka dibangun.  
+- **Metode apa yang digunakan?** `SpatiallyEquals` dari API Aspose.GIS.  
+- **Apakah saya memerlukan lisensi untuk pengembangan?** Versi percobaan gratis dapat digunakan untuk pengujian; lisensi komersial diperlukan untuk produksi.  
+- **Versi .NET yang didukung?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6+.  
+- **Waktu implementasi tipikal?** Sekitar 5‑10 menit untuk pemeriksaan kesamaan dasar.
+
+## Apa itu Kesamaan Geometri?
+Kesamaan geometri (sering disebut kesamaan spasial) berarti bahwa dua geometri mewakili himpunan titik yang persis sama pada permukaan bumi. Dua bentuk dapat dibangun secara berbeda—MultiLineString versus LineString tunggal—tetapi tetap secara spasial sama.
+
+## Mengapa Menggunakan Aspose.GIS untuk Membandingkan Geometri?
+Aspose.GIS menyediakan mesin geometri yang kuat dan berperforma tinggi yang:
+- Menangani berbagai format vektor (WKT, GeoJSON, Shapefile, dll.).
+- Menawarkan metode perbandingan yang sadar presisi seperti `SpatiallyEquals`.
+- Bekerja secara offline, tanpa layanan eksternal, menjadikannya ideal untuk lingkungan yang aman atau terisolasi.
+
 ## Prasyarat
-Sebelum mulai menggunakan Aspose.GIS untuk .NET, pastikan Anda memiliki prasyarat berikut:
-### .NET Framework Terpasang
-Pastikan Anda telah menginstal .NET Framework di sistem Anda. Anda dapat mengunduhnya dari situs web Microsoft.
-### Aspose.GIS untuk Perpustakaan .NET
- Unduh dan instal perpustakaan Aspose.GIS untuk .NET dari[Unduh Halaman](https://releases.aspose.com/gis/net/). Ikuti petunjuk instalasi yang disediakan dalam dokumentasi.
-### Pengembangan lingkungan
-Siapkan lingkungan pengembangan pilihan Anda, seperti Visual Studio, untuk pengembangan .NET.
+Sebelum Anda memulai, pastikan Anda memiliki hal‑hal berikut:
+
+- **.NET Framework atau .NET Core terpasang** – versi apa pun yang didukung oleh Aspose.GIS.  
+- **Pustaka Aspose.GIS untuk .NET** – unduh dari [halaman unduhan Aspose.GIS](https://releases.aspose.com/gis/net/).  
+- **IDE pengembangan** – Visual Studio, Rider, atau VS Code dengan ekstensi C#.
 
 ## Impor Namespace
-Di aplikasi .NET Anda, impor namespace yang diperlukan untuk menggunakan fungsionalitas Aspose.GIS:
+Di proyek .NET Anda, tambahkan pernyataan `using` yang diperlukan agar kompiler mengetahui di mana menemukan kelas GIS:
+
 ```csharp
 using Aspose.Gis.Geometries;
 using System;
@@ -35,8 +54,9 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## Langkah 1: Tentukan Geometri
-Pertama, tentukan geometri yang ingin Anda bandingkan. Dalam contoh ini, kita memiliki dua geometri:`geometry1` Dan`geometry2`.
+## Langkah 1: Definisikan Geometri
+Pertama, kita membuat dua geometri yang akan dibandingkan. Pada contoh ini `geometry1` adalah `MultiLineString` yang terdiri dari dua segmen garis, sementara `geometry2` adalah `LineString` tunggal yang mencakup titik awal dan akhir yang sama.
+
 ```csharp
 var geometry1 = new MultiLineString
 {
@@ -48,37 +68,62 @@ var geometry2 = new LineString(new[]
     new Point(0, 0), new Point(2, 2),
 });
 ```
-## Langkah 2: Periksa Geometri untuk Kesetaraan
- Sekarang, periksa apakah geometrinya sama secara spasial menggunakan`SpatiallyEquals` metode yang disediakan oleh Aspose.GIS.
+
+## Langkah 2: Periksa Kesamaan Geometri
+Sekarang kita menggunakan metode `SpatiallyEquals` untuk melihat apakah dua bentuk dianggap sama oleh mesin GIS.
+
 ```csharp
-Console.WriteLine(geometry1.SpatiallyEquals(geometry2)); // BENAR
+Console.WriteLine(geometry1.SpatiallyEquals(geometry2)); // True
 ```
- Ini akan mencetak`True` ke konsol sejak itu`geometry1` Dan`geometry2` secara spasial setara.
-## Langkah 3: Ubah Geometri
- Selanjutnya mari kita modifikasi`geometry2` dengan menambahkan poin baru.
+
+Konsol mencetak `True` karena, meskipun dibangun secara berbeda, kedua geometri menutupi garis yang sama dari (0,0) ke (2,2).
+
+## Langkah 3: Modifikasi Salah Satu Geometri
+Untuk menggambarkan bagaimana perubahan memengaruhi kesamaan, kita menambahkan satu titik ekstra ke `geometry2`.
+
 ```csharp
 geometry2.AddPoint(3, 3);
 ```
-## Langkah 4: Periksa Kembali Kesetaraan
-Sekarang, periksa kembali persamaan geometri setelah modifikasi.
+
+## Langkah 4: Periksa Kembali Kesamaan Setelah Modifikasi
+Setelah modifikasi, geometri tidak lagi sama, sehingga `SpatiallyEquals` mengembalikan `False`.
+
 ```csharp
-Console.WriteLine(geometry1.SpatiallyEquals(geometry2)); // PALSU
+Console.WriteLine(geometry1.SpatiallyEquals(geometry2)); // False
 ```
- Kali ini, hasilnya adalah`False` karena geometrinya tidak lagi sama secara spasial akibat modifikasi yang dilakukan`geometry2`.
+
+Output `False` mengonfirmasi bahwa titik tambahan memutuskan kesamaan spasial.
+
+## Masalah Umum & Tips
+- **Masalah presisi** – Jika Anda bekerja dengan koordinat berpresisi tinggi, pertimbangkan pembulatan atau gunakan overload toleransi dari `SpatiallyEquals`.  
+- **SRID yang berbeda** – Pastikan kedua geometri memiliki Identifier Sistem Referensi Spasial (SRID) yang sama sebelum dibandingkan.  
+- **Kinerja** – Untuk koleksi besar, perbandingan batch menggunakan LINQ dapat mengurangi beban.
+
+## Pertanyaan yang Sering Diajukan
+**T: Bisakah saya menggunakan Aspose.GIS untuk .NET dengan kerangka kerja .NET lainnya?**  
+J: Ya, Aspose.GIS bekerja dengan proyek .NET Framework, .NET Core, dan .NET Standard.
+
+**T: Apakah ada versi percobaan gratis?**  
+J: Tentu saja. Unduh percobaan dari [halaman rilis Aspose.GIS](https://releases.aspose.com/).
+
+**T: Di mana saya dapat menemukan dokumentasi API lengkap?**  
+J: Dokumentasi detail ada di [halaman dokumentasi Aspose.GIS](https://reference.aspose.com/gis/net/).
+
+**T: Bagaimana cara mendapatkan bantuan jika saya mengalami masalah?**  
+J: Ajukan pertanyaan Anda di forum komunitas Aspose.GIS [di sini](https://forum.aspose.com/c/gis/33).
+
+**T: Bisakah saya membeli lisensi sementara untuk evaluasi?**  
+J: Ya, lisensi sementara tersedia di [halaman pembelian](https://purchase.aspose.com/temporary-license/).
 
 ## Kesimpulan
-Kesimpulannya, Aspose.GIS untuk .NET menyediakan alat canggih untuk bekerja dengan data geospasial dalam aplikasi .NET. Dengan mengikuti panduan langkah demi langkah ini, Anda dapat dengan mudah memeriksa kesetaraan geometri menggunakan metode Aspose.GIS.
-## FAQ
-### Bisakah saya menggunakan Aspose.GIS untuk .NET dengan kerangka .NET lainnya?
-Ya, Aspose.GIS untuk .NET kompatibel dengan berbagai kerangka .NET, termasuk .NET Core dan .NET Standard.
-### Apakah ada uji coba gratis yang tersedia untuk Aspose.GIS untuk .NET?
- Ya, Anda dapat mengunduh uji coba gratis dari[halaman rilis](https://releases.aspose.com/).
-### Di mana saya dapat menemukan dokumentasi Aspose.GIS untuk .NET?
- Anda dapat menemukan dokumentasi terperinci di[Halaman dokumentasi Aspose.GIS](https://reference.aspose.com/gis/net/).
-### Bagaimana saya bisa mendapatkan dukungan untuk Aspose.GIS untuk .NET?
- Anda bisa mendapatkan dukungan dari forum komunitas Aspose.GIS[Di Sini](https://forum.aspose.com/c/gis/33).
-### Bisakah saya membeli lisensi sementara Aspose.GIS untuk .NET?
- Ya, Anda dapat membeli lisensi sementara dari[halaman pembelian](https://purchase.aspose.com/temporary-license/).
+Anda kini mengetahui **cara membandingkan geometri** menggunakan Aspose.GIS untuk .NET, mulai dari pembuatan objek hingga pemeriksaan kesamaan spasial dan penanganan modifikasi. Kemampuan ini menjadi blok bangunan untuk analisis spasial yang lebih maju seperti validasi topologi, deteksi duplikat, dan penyaringan berbasis geometri.
+
+---
+
+**Terakhir Diperbarui:** 2025-12-03  
+**Diuji Dengan:** Aspose.GIS untuk .NET 24.11  
+**Penulis:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}

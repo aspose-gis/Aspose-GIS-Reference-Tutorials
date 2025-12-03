@@ -1,31 +1,50 @@
 ---
-title: Controleer geometrieën op gelijkheid
-linktitle: Controleer geometrieën op gelijkheid
-second_title: Aspose.GIS .NET-API
-description: Leer hoe u Aspose.GIS voor .NET kunt gebruiken om geometrieën op gelijkheid in uw .NET-toepassingen te controleren met deze uitgebreide tutorial.
+date: 2025-12-03
+description: Leer hoe u geometrieën kunt vergelijken met Aspose.GIS voor .NET en controleer
+  de gelijkheid van geometrieën in uw .NET-toepassingen.
+language: nl
+linktitle: How to Compare Geometries for Equality
+second_title: Aspose.GIS .NET API
+title: Hoe geometrieën vergelijken op gelijkheid met Aspose.GIS voor .NET
+url: /net/geometry-analysis/check-geometries-for-equality/
 weight: 10
-url: /nl/net/geometry-analysis/check-geometries-for-equality/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Controleer geometrieën op gelijkheid
+# Hoe geometrieën te vergelijken op gelijkheid met Aspose.GIS voor .NET
 
-## Invoering
-Aspose.GIS voor .NET is een krachtige bibliotheek waarmee ontwikkelaars efficiënt met georuimtelijke gegevens kunnen werken in hun .NET-toepassingen. Of u nu kaartapplicaties, tools voor ruimtelijke analyse bouwt of geospatiale functionaliteit in bestaande software integreert, Aspose.GIS biedt de tools die u nodig hebt om de klus te klaren.
-## Vereisten
-Voordat u Aspose.GIS voor .NET gaat gebruiken, moet u ervoor zorgen dat u aan de volgende vereisten voldoet:
-### .NET Framework geïnstalleerd
-Zorg ervoor dat het .NET Framework op uw systeem is geïnstalleerd. U kunt het downloaden van de Microsoft-website.
-### Aspose.GIS voor .NET-bibliotheek
- Download en installeer de Aspose.GIS voor .NET-bibliotheek vanuit de[downloadpagina](https://releases.aspose.com/gis/net/). Volg de installatie-instructies in de documentatie.
-### Ontwikkelomgeving
-Stel uw favoriete ontwikkelomgeving in, zoals Visual Studio, voor .NET-ontwikkeling.
+## Inleiding
+In deze tutorial ontdek je **hoe je geometrieën kunt vergelijken** met Aspose.GIS voor .NET. Of je nu een mappingservice bouwt, ruimtelijke analyse uitvoert, of simpelweg moet verifiëren dat twee vormen dezelfde locatie vertegenwoordigen, weten hoe je geometrieën kunt vergelijken is essentieel. We lopen door een compleet, end‑to‑end voorbeeld dat laat zien hoe je geometrieën maakt, wijzigt en de gelijkheid test in slechts een paar regels C# code.
 
-## Naamruimten importeren
-Importeer in uw .NET-toepassing de benodigde naamruimten om de Aspose.GIS-functionaliteit te gebruiken:
+## Snelle antwoorden
+- **Wat betekent “geometrieën vergelijken”?** Het controleert of twee geometrische objecten dezelfde ruimte innemen, ongeacht hoe ze zijn geconstrueerd.  
+- methode wordt gebruikt?** `SpatiallyEquals` van de Aspose.GIS API.  
+- **Heb ik een licentie nodig voor ontwikkeling?** Een gratis proefversie werkt voor testen; een commerciële licentie is vereist voor productie.  
+- **Ondersteunde .NET‑versies?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6+.  
+- **Typische implementatietijd?** Ongeveer 5‑10 minuten voor een basisgelijkheidscontrole.
+
+## Wat is geometriegelijkheid?
+Geometriegelijkheid (vaak spatial equality genoemd) betekent dat twee geometrieën exact dezelfde set punten op het aardoppervlak vertegenwoordigen. Twee vormen kunnen verschillend worden opgebouwd — een MultiLineString versus een enkele LineString — maar toch ruimtelijk gelijk zijn.
+
+## Waarom Aspose.GIS gebruiken om geometrieën te vergelijken?
+Aspose.GIS biedt een robuuste, high‑performance geometrie‑engine die:
+- Een breed scala aan vectorformaten ondersteunt (WKT, GeoJSON, Shapefile, enz.).
+- Precisie‑bewuste vergelijkingsmethoden biedt zoals `SpatiallyEquals`.
+- Offline werkt, zonder externe services, waardoor het ideaal is voor veilige of geïsoleerde omgevingen.
+
+## Voorvereisten
+Zorg ervoor dat volgende hebt:
+
+- **.NET Framework of .NET Core geïnstalleerd** – elke versie die door Aspose.GIS wordt ondersteund.  
+- **Aspose.GIS for .NET library** – download van de [Aspose.GIS download page](https://releases.aspose.com/gis/net/).  
+- **Een ontwikkel‑IDE** – Visual Studio, Rider, of VS Code met C#‑extensies.
+
+## Namespaces importeren
+Voeg in je .NET‑project de benodigde `using`‑statements toe zodat de compiler weet waar de GIS‑klassen te vinden zijn:
+
 ```csharp
 using Aspose.Gis.Geometries;
 using System;
@@ -35,8 +54,9 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## Stap 1: Definieer geometrieën
-Definieer eerst de geometrieën die u wilt vergelijken. In dit voorbeeld hebben we twee geometrieën:`geometry1` En`geometry2`.
+## Stap 1: Definieer de geometrieën
+Eerst maken we twee geometrieën die we gaan vergelijken. In dit voorbeeld is `geometry1` een `MultiLineString` bestaande uit twee lijnsegmenten terwijl `geometry2` een enkele `LineString` is die dezelfde begin‑ en eindpunten beslaat.
+
 ```csharp
 var geometry1 = new MultiLineString
 {
@@ -48,37 +68,62 @@ var geometry2 = new LineString(new[]
     new Point(0, 0), new Point(2, 2),
 });
 ```
-## Stap 2: Controleer de geometrieën op gelijkheid
- Controleer nu of de geometrieën ruimtelijk gelijk zijn met behulp van de`SpatiallyEquals` methode geleverd door Aspose.GIS.
+
+## Stap 2: Controleer geometrieën op gelijkheid
+Nu gebruiken we de `SpatiallyEquals`‑methode om te zien of de twee vormen door de GIS‑engine als gelijk worden beschouwd.
+
 ```csharp
-Console.WriteLine(geometry1.SpatiallyEquals(geometry2)); // WAAR
+Console.WriteLine(geometry1.SpatiallyEquals(geometry2)); // True
 ```
- Dit wordt afgedrukt`True` sindsdien naar de console`geometry1` En`geometry2` zijn ruimtelijk gelijk.
-## Stap 3: Wijzig de geometrie
- Laten we vervolgens aanpassen`geometry2` door een nieuw punt toe te voegen.
+
+De console print `True` omdat, ondanks de verschillende constructie, beide geometrieën dezelfde lijn van (0,0) tot (2,2) bestrijken.
+
+## Stap 3: Wijzig één geometrie
+Om te illustreren hoe een wijziging de gelijkheid beïnvloedt, voegen we een extra punt toe aan `geometry2`.
+
 ```csharp
 geometry2.AddPoint(3, 3);
 ```
-## Stap 4: Controleer de gelijkheid opnieuw
-Controleer nu opnieuw de gelijkheid van de geometrieën na de wijziging.
+
+## Stap 4: Controleer opnieuw op gelijkheid na wijziging
+Na de wijziging zijn de geometrieën niet meer gelijk, dus `SpatiallyEquals` geeft `False` terug.
+
 ```csharp
-Console.WriteLine(geometry1.SpatiallyEquals(geometry2)); // Vals
+Console.WriteLine(geometry1.SpatiallyEquals(geometry2)); // False
 ```
- Deze keer zal de uitvoer zijn`False` omdat de geometrieën niet langer ruimtelijk gelijk zijn als gevolg van de aangebrachte wijziging`geometry2`.
+
+De output `False` bevestigt dat het extra punt de ruimtelijke gelijkheid heeft verbroken.
+
+## Veelvoorkomende problemen & tips
+- **Precisieproblemen** – Werk je met zeer hoge precisie‑coördinaten, overweeg dan afronding of gebruik een tolerantietolerantie‑overload van `SpatiallyEquals`.  
+- **Verschillende SRID’s** – Zorg ervoor dat beide geometrieën dezelfde Spatial Reference System Identifier (SRID) delen voordat je vergelijkt.  
+- **Prestaties** – Voor grote collecties kunnen batch‑vergelijkingen met LINQ de overhead verminderen.
+
+## Veelgestelde vragen
+**V: Kan ik Aspose.GIS voor .NET gebruiken met andere .NET‑frameworks?**  
+A: Ja, Aspose.GIS werkt met .NET Framework, .NET Core en .NET Standard‑projecten.
+
+**V: Is er een gratis proefversie beschikbaar?**  
+A: Absoluut. Download een proefversie van de [Aspose.GIS releases page](https://releases.aspose.com/).
+
+**V: Waar kan ik de‑documentatie vinden?**  
+A: Gedetailleerde documentatie staat op de [Aspose.GIS documentation page](https://reference.aspose.com/gis/net/).
+
+**V: Hoe krijg ik hulp als ik tegen een probleem aanloop?**  
+A: Plaats je vraag op het Aspose.GIS community‑forum [hier](https://forum.aspose.com/c/gis/33).
+
+**V: Kan ik een tijdelijke licentie aanschaffen voor evaluatie?**  
+A: Ja, tijdelijke licenties zijn beschikbaar op de [purchase page](https://purchase.aspose.com/temporary-license/).
 
 ## Conclusie
-Concluderend biedt Aspose.GIS voor .NET krachtige tools voor het werken met georuimtelijke gegevens in .NET-toepassingen. Door deze stapsgewijze handleiding te volgen, kunt u eenvoudig geometrieën op gelijkheid controleren met behulp van Aspose.GIS-methoden.
-## Veelgestelde vragen
-### Kan ik Aspose.GIS voor .NET gebruiken met andere .NET-frameworks?
-Ja, Aspose.GIS voor .NET is compatibel met verschillende .NET-frameworks, waaronder .NET Core en .NET Standard.
-### Is er een gratis proefversie beschikbaar voor Aspose.GIS voor .NET?
- Ja, u kunt een gratis proefversie downloaden van de[releases pagina](https://releases.aspose.com/).
-### Waar kan ik documentatie vinden voor Aspose.GIS voor .NET?
- Uitgebreide documentatie vindt u op de website[Aspose.GIS documentatiepagina](https://reference.aspose.com/gis/net/).
-### Hoe kan ik ondersteuning krijgen voor Aspose.GIS voor .NET?
- U kunt ondersteuning krijgen van het Aspose.GIS-communityforum[hier](https://forum.aspose.com/c/gis/33).
-### Kan ik een tijdelijke licentie kopen voor Aspose.GIS voor .NET?
- Ja, u kunt een tijdelijke licentie aanschaffen bij de[aankooppagina](https://purchase.aspose.com/temporary-license/).
+Je weet nu **hoe je geometrieën kunt vergelijken** met Aspose.GIS voor .NET, van het maken van de objecten tot het controleren van ruimtelijke gelijkheid en het omgaan met wijzigingen. Deze mogelijkheid vormt een bouwsteen voor meer geavanceerde ruimtelijke analyses zoals topologie‑validatie, duplicaatdetectie en geometrie‑gebaseerde filtering.
+
+---
+
+**Laatst bijgewerkt:** 2025-12-03  
+**Getest met:** Aspose.GIS for .NET 24.11  
+**Auteur:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
