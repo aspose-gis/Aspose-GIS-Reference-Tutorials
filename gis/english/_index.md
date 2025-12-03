@@ -74,13 +74,6 @@ These are links to some useful resources:
 - [Layer Data Operations](./net/layer-data-operations/)
 - [Map Rendering](./net/map-rendering/)
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ## Frequently Asked Questions
 
 **Q: Can I use Aspose.GIS in a cloud‑based microservice?**  
@@ -104,4 +97,9 @@ A: The Aspose.GIS GitHub repository contains ready‑to‑run examples for each 
 **Tested With:** Aspose.GIS 24.11 for .NET  
 **Author:** Aspose  
 
----
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -111,15 +111,15 @@ A: Join the Aspose.GIS community forum for support and discussions [here](https:
 ## Conclusion
 By following these concise steps, you’ve learned how to **convert GeoJSON to TopoJSON with quantization** using Aspose.GIS for .NET. This approach gives you a lightweight, web‑ready TopoJSON file while retaining the spatial accuracy required for high‑quality maps. Feel free to experiment with different `QuantizationNumber` values and explore other Aspose.GIS conversion capabilities for your GIS projects.
 
+---
+
+**Last Updated:** 2025-11-28  
+**Tested With:** Aspose.GIS for .NET 24.11  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-11-28  
-**Tested With:** Aspose.GIS for .NET 24.11  
-**Author:** Aspose
