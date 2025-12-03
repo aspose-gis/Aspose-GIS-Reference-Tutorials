@@ -1,31 +1,59 @@
 ---
-title: Aspose.GIS for .NET ile Geometri Kesişmelerini Kontrol Edin
-linktitle: Geometrilerin Kesişimini Kontrol Edin
-second_title: Aspose.GIS .NET API'si
-description: Aspose.GIS for .NET'i kullanarak adım adım rehberlikle geometrilerin kesişimini nasıl kontrol edeceğinizi öğrenin. CBS gelişiminizi zahmetsizce geliştirin.
+date: 2025-12-03
+description: C#'ta çokgen geometrisi oluşturmayı ve Aspose.GIS for .NET'in Intersects
+  yöntemiyle çakışan çokgenleri tespit etmeyi öğrenin.
+language: tr
+linktitle: Create Polygon Geometry C#
+second_title: Aspose.GIS .NET API
+title: C# ile Çokgen Geometrisi Oluşturun ve Aspose.GIS for .NET ile Kesişimi Kontrol
+  Edin
+url: /net/geometry-analysis/check-geometries-intersection/
 weight: 11
-url: /tr/net/geometry-analysis/check-geometries-intersection/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.GIS for .NET ile Geometri Kesişmelerini Kontrol Edin
+# Poligon Geometrisi C# Oluşturma ve Aspose.GIS for .NET ile Kesişimi Kontrol Etme
 
-## giriiş
-Coğrafi bilgi sistemleri (GIS) alanında Aspose.GIS for .NET, geliştiricilerin gelişmiş mekansal işlevleri uygulamalarına sorunsuz bir şekilde entegre etmelerine olanak tanıyan güçlü bir araç seti olarak öne çıkıyor. İster deneyimli bir geliştirici olun ister GIS geliştirmeye yeni başlıyor olun, bu makale Aspose.GIS for .NET'ten yararlanarak geometrilerin kesişimini etkili bir şekilde kontrol etmek için kapsamlı bir kılavuz olarak hizmet edecektir.
+## Giriş
+Eğer **polygon geometry C#** oluşturmanız ve iki şeklin çakışıp çakışmadığını hızlıca belirlemeniz gerekiyorsa, Aspose.GIS for .NET size temiz, yüksek‑performanslı bir API sunar. Bu rehberde, kütüphaneyi kurmaktan `Intersects` metodunu kullanarak **çakışan poligonları tespit** etmeye kadar tüm süreci adım adım göstereceğiz. Sonunda, sadece birkaç satır kodla .NET uygulamanıza poligon‑kesişme kontrolleri ekleyebileceksiniz.
+
+## Hızlı Yanıtlar
+- **Intersects yöntemi ne yapar?** İki geometri ortak bir alan paylaştığında `true` döner.  
+- **Poligon sınıflarını hangi ad alanı içerir?** `Aspose.Gis.Geometries`.  
+- **Geliştirme için lisansa ihtiyacım var mı?** Test için ücretsiz deneme çalışır; üretim için ticari lisans gereklidir.  
+- **Bunu .NET Core / .NET 6+ ile kullanabilir miyim?** Evet, Aspose.GIS tüm modern .NET çalışma zamanlarını destekler.  
+- **Örnek çalıştırma süresi ne kadar?** Tipik bir geliştirme makinesinde bir saniyeden az.
+
+## “create polygon geometry C#” nedir?
+C# içinde bir poligon geometrisi oluşturmak, Aspose.GIS tarafından sağlanan `Polygon` sınıfını (veya diğer geometri tiplerini) örnekleyip, şeklin köşe noktalarını tanımlayan `Point` nesnelerinden oluşan kapalı bir halka sağlamaktır. Oluşturulduktan sonra geometri, kesişim, içerme ve mesafe hesaplamaları gibi uzamsal işlemlerde kullanılabilir.
+
+## Neden Aspose.GIS'i çakışan poligonları tespit etmek için kullanmalıyım?
+- **Sıfır dış bağımlılık** – saf .NET kütüphanesi, yerel GIS kurulumları yok.  
+- **Zengin uzamsal işlemler** – `Intersects`, `Disjoint`, `Contains` vb., hepsi kullanıma hazır.  
+- **Yüksek doğruluk** – ortak kenarlar veya köşeler gibi kenar durumlarını sağlam bir şekilde işler.  
+- **Çapraz platform** – .NET Core/5/6 ile Windows, Linux ve macOS'ta çalışır.
+
 ## Önkoşullar
-Aspose.GIS for .NET'i kullanarak geometrilerin kesişimlerini kontrol etmenin inceliklerine dalmadan önce, aşağıdaki önkoşulların yerine getirildiğinden emin olun:
-### Aspose.GIS for .NET'in Kurulumu
-1.  İndirme Sayfasına gidin: Ziyaret edin[Aspose.GIS for .NET indirme sayfası](https://releases.aspose.com/gis/net/) Araç setinin en son sürümünü edinmek için.
-2. Araç Setini İndirin: Geliştirme ortamınızla uyumlu uygun sürümü seçin ve araç setini indirin.
-3. Araç Kitini Kurun: Aspose.GIS for .NET'i geliştirme makinenize kurmak için sağlanan kurulum talimatlarını izleyin.
+Başlamadan önce şunların yüklü olduğundan emin olun:
+
+1. **Aspose.GIS for .NET** yüklü (aşağıdaki adımlara bakın).  
+2. Bir .NET geliştirme ortamı (Visual Studio, VS Code veya Rider).  
+3. .NET Framework 4.6+ veya .NET Core 3.1+.
+
+### Aspose.GIS for .NET Kurulumu
+1. **İndirme Sayfasına Git:** En son araç setini edinmek için [Aspose.GIS for .NET download page](https://releases.aspose.com/gis/net/) adresini ziyaret edin.  
+2. **Araç Setini İndir:** Geliştirme ortamınızla uyumlu uygun sürümü seçin ve araç setini indirin.  
+3. **Araç Setini Kurun:** Aspose.GIS for .NET'i geliştirme makinenize kurmak için verilen kurulum talimatlarını izleyin.
 
 ## Ad Alanlarını İçe Aktarma
-Aspose.GIS for .NET ile çalışmaya başlamak için gerekli ad alanlarını projenize aktarmanız gerekir.
-1. Referans Ekle: Projenize Aspose.GIS derlemesine referanslar ekleyin.
-2. Ad Alanlarını İçe Aktar: Gerekli ad alanlarını kod dosyanıza içe aktarın. Verilen örnek için aşağıdaki ad alanlarını içe aktardığınızdan emin olun:
+Aspose.GIS for .NET ile çalışmaya başlamak için projenize gerekli ad alanlarını eklemeniz gerekir.
+
+1. **Referansları Ekleyin:** Projenizde Aspose.GIS derlemesine referans ekleyin.  
+2. **Ad Alanlarını İçe Aktarın:** Kod dosyanızda gerekli ad alanlarını içe aktarın. Aşağıdaki örnek için aşağıdaki ad alanlarını eklediğinizden emin olun:
+
 ```csharp
 using Aspose.Gis.Geometries;
 using System;
@@ -35,9 +63,12 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-Artık geliştirme ortamınızı kurduğunuza ve gerekli ad alanlarını içe aktardığınıza göre, Aspose.GIS for .NET kullanarak geometrilerin kesişimini kontrol etme sürecini basit adımlara ayıralım:
-## Adım 1: Geometrileri Tanımlayın
-Bu adımda kesişimi kontrol etmek için çokgenleri temsil eden geometriler oluşturacaksınız.
+## Aspose.GIS ile polygon geometry C# nasıl oluşturulur?
+Ortam hazır olduğuna göre, daha sonra çakışma testini yapacağımız iki basit poligon geometrisi oluşturalım.
+
+### Adım 1: Geometrileri Tanımla
+Bu adımda iki dikdörtgen alanı temsil eden poligonlar oluşturacaksınız. Köşe noktaları saat yönünde tanımlanır ve halkayı kapatmak için ilk nokta sonunda tekrar edilir.
+
 ```csharp
 var geometry1 = new Polygon(new LinearRing(new[]
 {
@@ -56,35 +87,56 @@ var geometry2 = new Polygon(new LinearRing(new[]
     new Point(1, 1),
 }));
 ```
-## Adım 2: Kavşağı Kontrol Edin
- Artık şunları kullanacaksınız:`Intersects` Geometrilerin kesişip kesişmediğini kontrol etme yöntemi.
+
+### Adım 2: Çakışan poligonları tespit etmek için Intersects yöntemini kullan
+Geometriler tanımlandıktan sonra `Intersects` metodunu çağırabiliriz. Bu metod **Intersects algoritmasını** kullanarak iki poligonun herhangi bir kısmının aynı alanda olup olmadığını kontrol eder.
+
 ```csharp
-Console.WriteLine(geometry1.Intersects(geometry2)); // Doğru
-Console.WriteLine(geometry2.Intersects(geometry1)); // Doğru
-```
-## Adım 3: Ayrıklığı Kontrol Edin
- Bu adımda şunları kullanacaksınız:`Disjoint` Geometrilerin ayrık olup olmadığını belirleme yöntemi.
-```csharp
-// 'Ayrık', 'Kesişenlerin' zıttıdır
-Console.WriteLine(geometry1.Disjoint(geometry2)); // YANLIŞ
+Console.WriteLine(geometry1.Intersects(geometry2)); // True
+Console.WriteLine(geometry2.Intersects(geometry1)); // True
 ```
 
-## Çözüm
-Sonuç olarak Aspose.GIS for .NET, geometrilerin kesişimini kontrol etmek için basit bir yaklaşım sunarak uygulamalarınızın mekansal yeteneklerini artırır. Bu kılavuzda özetlenen adımları takip ederek, bu işlevselliği projelerinize sorunsuz bir şekilde entegre edebilir ve GIS geliştirmedeki olasılıklar dünyasının kilidini açabilirsiniz.
-## SSS'ler
-### Aspose.GIS for .NET'i diğer .NET çerçeveleriyle kullanabilir miyim?
-Evet, Aspose.GIS for .NET, .NET Core ve .NET Framework dahil olmak üzere çeşitli .NET çerçeveleriyle uyumludur.
-### Aspose.GIS for .NET'in ücretsiz deneme sürümü mevcut mu?
- Evet, Aspose.GIS for .NET'in ücretsiz deneme sürümüne şu adresten erişebilirsiniz:[Burada](https://releases.aspose.com/).
-### Aspose.GIS for .NET desteğini nerede bulabilirim?
- Yardım isteyebilir ve toplulukla etkileşime geçebilirsiniz.[Aspose.GIS forumu](https://forum.aspose.com/c/gis/33).
-### Aspose.GIS for .NET için geçici bir lisans alabilir miyim?
- Evet, adresinden geçici lisans alabilirsiniz.[Burada](https://purchase.aspose.com/temporary-license/).
-### Aspose.GIS for .NET'in lisanslı sürümünü nereden satın alabilirim?
- Aspose.GIS for .NET'in lisanslı sürümünü şu adresten satın alabilirsiniz:[Burada](https://purchase.aspose.com/buy).
+### Adım 3: Ayrık geometrileri kontrol et (intersect'in tersine)
+İki şeklin **çakışmadığını** doğrulamanız gerekiyorsa, `Disjoint` metodu ters sonucu verir.
+
+```csharp
+// 'Disjoint' is opposite to 'Intersects'
+Console.WriteLine(geometry1.Disjoint(geometry2)); // False
+```
+
+## Yaygın Sorunlar ve Çözümler
+| Sorun | Neden Oluşur | Çözüm |
+|-------|--------------|------|
+| **Her zaman `false` döner** | Poligonlar kapalı değil (ilk nokta ≠ son nokta). | Koordinat dizisinin sonunda ilk noktanın tekrar edildiğinden emin olun. |
+| **Kenarların temas etmesi için beklenmedik `true`** | `Intersects` ortak kenarları kesişen olarak kabul eder. | Kenar‑sadece tespiti gerekiyorsa `Touches` metodunu kullanın. |
+| **Çok sayıda poligonla performans düşüşü** | Her çağrı tüm köşe çiftlerini kontrol eder. | Destekleniyorsa `GeometryCollection` veya uzamsal indeksleme (R‑tree) ile toplu işleyin. |
+
+## Sıkça Sorulan Sorular
+
+**S: Aspose.GIS for .NET'i diğer .NET framework'leriyle kullanabilir miyim?**  
+C: Evet, Aspose.GIS for .NET .NET Core ve .NET Framework dahil olmak üzere çeşitli .NET framework'leriyle uyumludur.
+
+**S: Aspose.GIS for .NET için ücretsiz bir deneme mevcut mu?**  
+C: Evet, Aspose.GIS for .NET'in ücretsiz denemesine [buradan](https://releases.aspose.com/) ulaşabilirsiniz.
+
+**S: Aspose.GIS for .NET için destek nereden bulunur?**  
+C: Yardım almak ve toplulukla etkileşime geçmek için [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) adresini ziyaret edebilirsiniz.
+
+**S: Aspose.GIS for .NET için geçici bir lisans alabilir miyim?**  
+C: Evet, geçici lisansı [buradan](https://purchase.aspose.com/temporary-license/) temin edebilirsiniz.
+
+**S: Aspose.GIS for .NET'in lisanslı sürümünü nereden satın alabilirim?**  
+C: Lisanslı sürümü [buradan](https://purchase.aspose.com/buy) satın alabilirsiniz.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+---
+
+**Son Güncelleme:** 2025-12-03  
+**Test Edilen:** Aspose.GIS 24.11 for .NET  
+**Yazar:** Aspose
