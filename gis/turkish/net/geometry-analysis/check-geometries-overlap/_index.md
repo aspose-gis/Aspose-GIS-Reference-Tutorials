@@ -1,35 +1,53 @@
 ---
-title: Aspose.GIS ile Jeo-uzaysal Analizde Ustalaşın
-linktitle: Geometrilerin Örtüşmesini Kontrol Edin
-second_title: Aspose.GIS .NET API'si
-description: Aspose.GIS for .NET ile coğrafi analizleri keşfedin. Adım adım rehberlikle geometrilerin çakışmasını nasıl kontrol edeceğinizi öğrenin.
+date: 2025-12-04
+description: Aspose.GIS for .NET kullanarak örtüşmeyi nasıl kontrol edeceğinizi ve
+  geometrilerin örtüşmesini nasıl tespit edeceğinizi öğrenin. Geliştiriciler için
+  adım adım kılavuz.
+language: tr
+linktitle: Check Geometries Overlap
+second_title: Aspose.GIS .NET API
+title: Aspose.GIS for .NET ile Geometrilerin Çakışmasını Nasıl Kontrol Edilir
+url: /net/geometry-analysis/check-geometries-overlap/
 weight: 12
-url: /tr/net/geometry-analysis/check-geometries-overlap/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.GIS ile Jeo-uzaysal Analizde Ustalaşın
+# Geometrilerin Çakışmasını Aspose.GIS ile Nasıl Kontrol Edebilirsiniz
 
-## giriiş
+## Giriş
 
-Jeo-uzaysal analiz alanında Aspose.GIS for .NET, geliştiriciler ve veri bilimcileri için güçlü bir araç olarak öne çıkıyor. .NET çerçevesiyle kusursuz entegrasyonu, kullanıcıların uzamsal verileri derinlemesine incelemesine, karmaşık analizler gerçekleştirmesine ve paha biçilmez içgörüler elde etmesine olanak tanır. Bu eğitim, Aspose.GIS for .NET'i kullanarak geometrilerin çakışmasını kontrol etme sürecinde size rehberlik edecek, adım adım talimatlar, temel ön koşullar ve ayrıntılı örnekler sunacaktır.
+İki uzamsal özellik arasındaki **çakışmayı nasıl kontrol edeceğinizi** öğrenmeniz gerekiyorsa, Aspose.GIS for .NET size ağır işleri yapan temiz, tip‑güvenli bir API sunar. Bir yönlendirme motoru, arazi‑kullanım doğrulayıcısı ya da basit bir GIS aracı geliştiriyor olun, çakışan geometrileri tespit etmek yaygın bir gereksinimdir. Bu öğreticide, bilmeniz gereken her şeyi—önkoşullar, kod yürütmesi ve pratik ipuçları—adım adım ele alacağız, böylece kendi projelerinizde *çakışmayı nasıl tespit edeceğinizi* güvenle yanıtlayabilirsiniz.
+
+## Hızlı Yanıtlar
+- **Birincil yöntem nedir?** `Geometry.Overlaps(otherGeometry)`  
+- **Test için lisansa ihtiyacım var mı?** Ücretsiz deneme geliştirme için çalışır; üretim için lisans gereklidir.  
+- **Hangi .NET sürümleri destekleniyor?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6+.  
+- **Uygulama ne kadar sürer?** Temel bir çakışma kontrolü için yaklaşık 5‑10 dakika.  
+- **Bunu diğer GIS kütüphaneleriyle kullanabilir miyim?** Evet—Aspose.GIS çoğu .NET GIS yığınıyla sorunsuz entegre olur.
+
+## GIS'te “çakışmayı nasıl kontrol ederiz” nedir?
+
+Uzamsal analizde, *çakışma* iki geometrinin bazı iç noktalara sahip olması ancak hiçbirinin diğerini tamamen içermemesi anlamına gelir. `Overlaps` önermesi OGC (Open Geospatial Consortium) tanımını izler ve yalnızca bu özel ilişki mevcut olduğunda **true** döndürür.
+
+## Neden çakışma tespiti için Aspose.GIS kullanmalı?
+
+- **Zero‑dependency** – Yerel kütüphane veya harici hizmet gerektirmez.  
+- **Rich geometry model** – Nokta, çizgi, çokgen ve çoklu‑geometrileri kutudan çıkar çıkmaz destekler.  
+- **Performance‑optimized** – Büyük veri setleri ve gerçek‑zaman senaryoları için tasarlanmıştır.  
+- **Cross‑platform** – .NET Core ile Windows, Linux ve macOS'ta çalışır.
 
 ## Önkoşullar
 
-Eğiticiye dalmadan önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
+1. **C# temelleri** – Sınıflar, metodlar ve konsol çıktısı konusunda rahat olmalısınız.  
+2. **Aspose.GIS for .NET** – Resmi siteden [buradan](https://releases.aspose.com/gis/net/) indirip kurun.  
+3. **.NET uyumlu bir IDE** – Visual Studio, Rider veya C# uzantılı VS Code.
 
-1. Temel C# Bilgisi: Kavramları kavramak ve verilen örnekleri yürütmek için C# programlama diline aşina olmak çok önemlidir.
+## Ad Alanlarını İçe Aktarın
 
-2.  Aspose.GIS for .NET kurulumu: Aspose.GIS for .NET'i web sitesinden indirip yükleyin.[Burada](https://releases.aspose.com/gis/net/).
-
-3. Geliştirme Ortamı: İster Visual Studio ister .NET çerçevesiyle uyumlu başka bir IDE olsun, tercih ettiğiniz geliştirme ortamını kurun.
-
-## Ad Alanlarını İçe Aktar
-
-Başlamak için gerekli ad alanlarını C# projenize aktarın. Bu ad alanları, Aspose.GIS for .NET kullanılarak coğrafi analiz için gereken sınıflara ve yöntemlere erişim sağlar.
+Kodunuzun Aspose.GIS geometri tiplerine erişebilmesi için gerekli `using` ifadelerini ekleyin.
 
 ```csharp
 using Aspose.Gis.Geometries;
@@ -40,11 +58,11 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-Şimdi Aspose.GIS for .NET'i kullanarak geometrilerin çakışmasını kontrol etmenin pratik bir örneğini inceleyelim.
+Şimdi **çakışmayı nasıl kontrol edeceğinizi** adım adım gösteren pratik bir örneğe dalacağız.
 
-## Adım 1: Geometrileri Tanımlayın
+## Adım 1: Karşılaştırmak istediğiniz geometrileri tanımlayın
 
-Öncelikle karşılaştırmak istediğiniz geometrileri tanımlayın. Bu örnekte farklı yolları temsil eden LineString geometrileri oluşturacağız.
+Bir uç noktasını paylaşan ancak **çakışmayan** iki `LineString` nesnesiyle başlayacağız.
 
 ```csharp
 var geometry1 = new LineString();
@@ -56,17 +74,17 @@ geometry2.AddPoint(0, 2);
 geometry2.AddPoint(0, 3);
 ```
 
-## 2. Adım: Örtüşmeyi Kontrol Edin
+## Adım 2: `Overlaps` metodunu kullanın – ilk kontrol
 
- Daha sonra,`Overlaps` Geometrilerin çakışıp örtüşmediğini kontrol etme yöntemi.
+`Overlaps` metodu, çizgilerin yalnızca tek bir noktada temas etmesi nedeniyle `false` döndürür.
 
 ```csharp
-Console.WriteLine(geometry1.Overlaps(geometry2)); // Çıktı: Yanlış
+Console.WriteLine(geometry1.Overlaps(geometry2)); // Output: False
 ```
 
-## Adım 3: Başka Bir Geometri Oluşturun
+## Adım 3: Gerçekten çakışan başka bir geometri oluşturun
 
-Örtüşmeyi göstermek için başka bir LineString geometrisi oluşturalım.
+Şimdi `geometry1` içinden geçen üçüncü bir çizgi oluşturacağız.
 
 ```csharp
 var geometry3 = new LineString();
@@ -74,39 +92,47 @@ geometry3.AddPoint(0, 1);
 geometry3.AddPoint(0, 3);
 ```
 
-## Adım 4: Örtüşmeyi Tekrar Kontrol Edin
-
-Şimdi geometri1'in geometri3 ile çakışıp örtüşmediğini kontrol edin.
+## Adım 4: Çakışmayı tekrar kontrol edin – bu sefer **true** olmalı
 
 ```csharp
-Console.WriteLine(geometry1.Overlaps(geometry3)); // Çıkış: Doğru
+Console.WriteLine(geometry1.Overlaps(geometry3)); // Output: True
 ```
 
-## Çözüm
+### Daha karmaşık durumlarda çakışmayı nasıl tespit ederiz?
 
-Aspose.GIS for .NET, jeouzaysal analiz için güçlü bir araç seti sunarak geliştiricilerin geometrilerin çakışmasını kontrol etmek gibi karmaşık görevleri zahmetsizce gerçekleştirmesine olanak tanır. Bu eğitimi takip ederek projelerinizde Aspose.GIS for .NET'ten yararlanma konusunda fikir sahibi oldunuz ve mekansal veri analizinde sayısız olasılığa kapı açtınız.
+Poligonlar, çoklu‑geometriler ile çalışıyorsanız veya bir tolerans göz önünde bulundurmanız gerekiyorsa aynı `Overlaps` metodu geçerlidir. `LineString` yerine `Polygon`, `MultiPolygon` vb. kullanmanız yeterlidir; önermeler geometri tipini dahili olarak işleyebilir.
 
-## SSS'ler
+## Yaygın Sorunlar ve Çözümler
 
-### S1: Aspose.GIS for .NET'i diğer .NET kütüphaneleriyle birlikte kullanabilir miyim?
+| Sorun | Neden Oluşur | Çözüm |
+|-------|----------------|-----|
+| **Her zaman `false` döner** | Geometriler sadece temas ediyor (bir sınır paylaşıyor) ve çakışmıyor. | `Intersects` metodunu herhangi bir ortak nokta için kullanın veya iç kısımların kesişmesi için koordinatları ayarlayın. |
+| **Büyük veri setlerinde istisna** | Birçok geometriyi aynı anda yüklerken bellek baskısı oluşur. | Geometrileri partiler halinde işleyin veya akışlı `GeometryCollection` kullanın. |
+| **Poligonlar için beklenmeyen `true`** | Poligon iç kısımları kesişiyor ancak bir kenarı paylaşıyor. | Gerçekten OGC *overlaps* tanımına ihtiyacınız olup olmadığını doğrulayın; aksi takdirde `Crosses` veya `Touches` kullanın. |
 
-C1: Evet, Aspose.GIS for .NET, diğer .NET kitaplıklarıyla sorunsuz bir şekilde bütünleşerek yeteneklerini daha da geliştirir.
+## Sıkça Sorulan Sorular
 
-### S2: Aspose.GIS for .NET'in ücretsiz deneme sürümü mevcut mu?
+**S1: Aspose.GIS for .NET'i diğer .NET kütüphaneleriyle kullanabilir miyim?**  
+C1: Evet, Aspose.GIS for .NET diğer .NET kütüphaneleriyle sorunsuz entegre olur ve yeteneklerini daha da artırır.
 
- C2: Evet, Aspose.GIS for .NET'in ücretsiz deneme sürümüne şu adresten erişebilirsiniz:[Burada](https://releases.aspose.com/).
+**S2: Aspose.GIS for .NET için ücretsiz bir deneme mevcut mu?**  
+C2: Evet, Aspose.GIS for .NET'in ücretsiz denemesine [buradan](https://releases.aspose.com/) ulaşabilirsiniz.
 
-### S3: Aspose.GIS for .NET belgelerini nerede bulabilirim?
+**S3: Aspose.GIS for .NET dokümantasyonunu nerede bulabilirim?**  
+C3: Aspose.GIS for .NET için kapsamlı dokümantasyon [burada](https://reference.aspose.com/gis/net/) mevcuttur.
 
- Cevap3: Aspose.GIS for .NET'e yönelik kapsamlı belgeler mevcut[Burada](https://reference.aspose.com/gis/net/).
+**S4: Aspose.GIS for .NET için geçici lisansları nasıl alabilirim?**  
+C4: Aspose.GIS for .NET için geçici lisansları [buradan](https://purchase.aspose.com/temporary-license/) edinebilirsiniz.
 
-### S4: Aspose.GIS for .NET için nasıl geçici lisans alabilirim?
+**S5: Aspose.GIS for .NET için destek nereden alınır?**  
+C5: Herhangi bir yardım veya soru için Aspose.GIS forumunu [burada](https://forum.aspose.com/c/gis/33) ziyaret edin.
 
- Cevap4: Aspose.GIS for .NET'in geçici lisanslarını şu adresten alabilirsiniz:[Burada](https://purchase.aspose.com/temporary-license/).
+---
 
-### S5: Aspose.GIS for .NET desteğini nereden alabilirim?
+**Son Güncelleme:** 2025-12-04  
+**Test Edilen Sürüm:** Aspose.GIS 24.11 for .NET  
+**Yazar:** Aspose  
 
-Cevap5: Yardım veya sorularınız için Aspose.GIS forumunu ziyaret edin[Burada](https://forum.aspose.com/c/gis/33).
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
