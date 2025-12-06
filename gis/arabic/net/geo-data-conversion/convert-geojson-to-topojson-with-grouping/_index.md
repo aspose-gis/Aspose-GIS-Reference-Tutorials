@@ -1,107 +1,138 @@
 ---
-title: تحويل GeoJSON إلى TopoJSON مع التجميع
-linktitle: تحويل GeoJSON إلى TopoJSON مع التجميع
+date: 2025-12-06
+description: تعلم كيفية تحويل GeoJSON إلى TopoJSON مع التجميع، وتعيين خاصية اسم الكائن،
+  وتجميع ميزات GeoJSON باستخدام Aspose.GIS لـ .NET.
+language: ar
+linktitle: How to Convert GeoJSON to TopoJSON with Grouping using Aspose.GIS
 second_title: Aspose.GIS .NET API
-description: تعرف على كيفية تحويل GeoJSON إلى TopoJSON مع التجميع باستخدام Aspose.GIS for .NET في هذا البرنامج التعليمي الشامل.
+title: كيفية تحويل GeoJSON إلى TopoJSON مع التجميع باستخدام Aspose.GIS
+url: /net/geo-data-conversion/convert-geojson-to-topojson-with-grouping/
 weight: 13
-url: /ar/net/geo-data-conversion/convert-geojson-to-topojson-with-grouping/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# تحويل GeoJSON إلى TopoJSON مع التجميع
+# كيفية تحويل GeoJSON إلى TopoJSON مع التجميع باستخدام Aspose.GIS
 
-## مقدمة
+## المقدمة
 
-مرحبًا بك في دليلنا خطوة بخطوة حول استخدام Aspose.GIS for .NET لتحويل GeoJSON إلى TopoJSON مع التجميع. Aspose.GIS عبارة عن واجهة برمجة تطبيقات .NET قوية تتيح للمطورين العمل مع البيانات الجغرافية بسلاسة. في هذا البرنامج التعليمي، سنرشدك خلال عملية تحويل ملفات GeoJSON إلى TopoJSON أثناء تجميع الميزات بناءً على سمات محددة.
+في هذا الدليل خطوة بخطوة ستتعلم **كيفية تحويل ملفات GeoJSON** إلى TopoJSON مع تجميع العناصر بناءً على سمة مختارة. استخدام Aspose.GIS .NET API يجعل التحويل سريعًا، موثوقًا، وقابلاً للتحكم بالكامل من خلال كود C# الخاص بك. سواءً كنت تبني خدمة تحويل GeoJSON في ASP.NET أو أداة GIS سطح مكتب، يوضح لك هذا الدليل ما تحتاج إلى القيام به بالضبط.
 
-## المتطلبات الأساسية
+## إجابات سريعة
+- **ما المكتبة التي تتعامل مع التحويل؟** Aspose.GIS for .NET  
+- **كم من الوقت تستغرق عملية التنفيذ؟** عادةً 5‑10 دقائق لإعداد أساسي  
+- **هل أحتاج إلى ترخيص للإنتاج؟** نعم، يلزم الحصول على ترخيص تجاري (يتوفر تجربة مجانية)  
+- **هل يمكنني تجميع العناصر حسب أي سمة؟** نعم – قم بتعيين `ObjectNameAttribute` إلى الحقل الذي تريد التجميع بناءً عليه  
+- **هل .NET Core مدعوم؟** بالتأكيد – تعمل الواجهة البرمجية مع .NET Core، .NET 5/6، وإطار .NET الكلاسيكي  
 
-قبل أن نبدأ، تأكد من توفر المتطلبات الأساسية التالية:
+## ما هو GeoJSON وTopoJSON؟
 
-1.  Aspose.GIS for .NET: تأكد من تنزيل وتثبيت مكتبة Aspose.GIS for .NET. يمكنك تنزيله من[هنا](https://releases.aspose.com/gis/net/).
+GeoJSON هو تنسيق JSON شائع الاستخدام لتشفير الميزات الجغرافية مثل النقاط، الخطوط، والمضلعات. TopoJSON يوسع GeoJSON عن طريق تخزين الطوبولوجيا (القطاعات الخطية المشتركة) مما يقلل حجم الملف ويحسن أداء العرض للخرائط المعقدة. التحويل بينهما خطوة شائعة عندما تحتاج إلى بيانات خريطة مضغوطة لتصوير الويب.
 
-2. بيئة التطوير: يجب أن يكون لديك بيئة تطوير عمل تم إعدادها باستخدام Visual Studio أو أي بيئة تطوير متكاملة أخرى متوافقة.
+## لماذا نجمع ميزات GeoJSON؟
 
-3. نموذج ملف GeoJSON: قم بإعداد نموذج ملف GeoJSON الذي تريد تحويله. يمكنك الحصول على نماذج ملفات GeoJSON من مصادر مختلفة أو إنشاء ملفات خاصة بك.
+تجميع (`group geojson features`) يتيح لك تنظيم الهندسات المرتبطة تحت كائن مسمى واحد في TopoJSON الناتج. هذا مفيد خصوصًا عندما:
+- تريد إنشاء طبقات منفصلة لمناطق إدارية مختلفة.  
+- مكتبة الخرائط في الواجهة الأمامية تتوقع كائنات مسماة للتنسيق أو التفاعل.  
+- تحتاج إلى تقليل التكرار عبر مشاركة الحدود بين العناصر المتجاورة.
 
-## استيراد مساحات الأسماء
+## المتطلبات المسبقة
 
-أولاً، تأكد من تضمين مساحات الأسماء الضرورية في مشروعك:
+قبل أن نبدأ، تأكد من توفر المتطلبات التالية:
+
+1. **Aspose.GIS for .NET** – قم بتنزيله وتثبيته من الموقع الرسمي [هنا](https://releases.aspose.com/gis/net/).  
+2. **بيئة التطوير** – Visual Studio، Visual Studio Code، أو أي IDE يدعم C#.  
+3. **ملف GeoJSON تجريبي** – ملف يحتوي على العناصر التي تريد تحويلها.  
+
+## استيراد المساحات الاسمية
+
+أولًا، أضف المساحات الاسمية الضرورية إلى مشروعك:
 
 ```csharp
 using Aspose.Gis;
 using Aspose.Gis.Formats.TopoJson;
 ```
 
+## دليل خطوة بخطوة
 
-لنقم الآن بتقسيم عملية التحويل إلى خطوات متعددة:
+### الخطوة 1: تحديد مسارات الملفات
 
-## الخطوة 1: تحديد مسارات الملفات
-
-حدد المسارات لملف GeoJSON المُدخل وملف TopoJSON المُخرج:
+حدد مكان وجود ملف GeoJSON المصدر وأين يجب كتابة ملف TopoJSON الناتج:
 
 ```csharp
 string sampleGeoJsonPath = "Your Document Directory" + "sample.geojson";
 var outputFilePath = "Your Document Directory" + "convertedSampleWithGrouping_out.topojson";
 ```
 
- يستبدل`"Your Document Directory"` مع الدليل الفعلي حيث توجد ملفاتك.
+> **نصيحة احترافية:** استخدم `Path.Combine` لبناء مسارات متوافقة عبر الأنظمة إذا كنت تستهدف .NET Core.
 
-## الخطوة 2: تكوين خيارات التحويل
+### الخطوة 2: تكوين خيارات التحويل (تعيين سمة اسم الكائن)
 
-قم بتكوين خيارات التحويل لتحديد كيفية تنفيذ التجميع. في هذا المثال، سنقوم بتجميع الميزات بناءً على سمة محددة.
+أنشئ كائن `ConversionOptions` وأخبر Aspose.GIS كيف يجمع العناصر:
 
 ```csharp
 var options = new ConversionOptions
 {
     DestinationDriverOptions = new TopoJsonOptions
     {
-        // حدد السمة في طبقة GeoJSON التي سنقوم من خلالها بتجميع الكائنات
+        // Specify the attribute in GeoJSON layer by which we are going to group into objects
         ObjectNameAttribute = "group",
-        // حدد اسم الكائن الافتراضي للمعالم ذات قيم السمات غير المعروفة
+        // Specify the default object name for features with unknown attribute values
         DefaultObjectName = "unnamed",
     }
 };
 ```
 
- أضبط ال`ObjectNameAttribute` و`DefaultObjectName` الخصائص وفقًا لبيانات GeoJSON الخاصة بك.
+استبدل `"group"` باسم الخاصية الفعلي في ملف GeoJSON الذي تريد استخدامه لـ **تجميع ميزات geojson**. يضمن `DefaultObjectName` أن كل عنصر ينتهي به المطاف في كائن TopoJSON، حتى إذا كانت السمة مفقودة.
 
-## الخطوة 3: إجراء التحويل
+### الخطوة 3: تنفيذ التحويل (تحويل GeoJSON إلى TopoJSON)
 
-قم بتنفيذ عملية التحويل باستخدام Aspose.GIS API:
+نفّذ التحويل باستدعاء API واحد:
 
 ```csharp
 VectorLayer.Convert(sampleGeoJsonPath, Drivers.GeoJson, outputFilePath, Drivers.TopoJson, options);
 ```
 
-سيقوم سطر التعليمات البرمجية هذا بتحويل ملف GeoJSON إلى TopoJSON باستخدام خيارات التجميع المحددة.
+بعد التنفيذ، سيحتوي `convertedSampleWithGrouping_out.topojson` على تمثيل TopoJSON، مع تجميع العناصر وفق السمة التي حددتها.
 
-## خاتمة
+## المشكلات الشائعة واستكشاف الأخطاء وإصلاحها
 
-في هذا البرنامج التعليمي، تعلمنا كيفية تحويل GeoJSON إلى TopoJSON مع التجميع باستخدام Aspose.GIS for .NET. باتباع هذه الخطوات البسيطة، يمكنك التعامل بكفاءة مع تنسيقات البيانات الجغرافية في تطبيقات .NET الخاصة بك.
+| العَرَض | السبب المحتمل | الحل |
+|---------|--------------|-----|
+| **جميع العناصر تنتهي في “unnamed”** | `ObjectNameAttribute` لا يتطابق مع أي خاصية في GeoJSON | تحقق من اسم الخاصية بدقة (حسّاس لحالة الأحرف) وقم بتحديث الخيار |
+| **ملف الإخراج فارغ** | مسار ملف غير صحيح أو نقص في أذونات القراءة | استخدم مسارات مطلقة أو تأكد من أن التطبيق يملك صلاحية الوصول إلى نظام الملفات |
+| **التحويل يطرح استثناء `NotSupportedException`** | محاولة تحويل GeoJSON يحتوي على أنواع هندسة غير مدعومة (مثل GeometryCollection) | بسط البيانات المصدر أو حدّث إلى أحدث إصدار من Aspose.GIS |
 
-## الأسئلة الشائعة
+## الأسئلة المتكررة
 
-### س1: هل يمكنني تجميع الميزات بناءً على سمات متعددة؟
-ج: نعم، يمكنك تخصيص خيارات التحويل لتجميع الميزات بناءً على سمات متعددة.
+**س: هل يمكنني تجميع العناصر بناءً على عدة سمات؟**  
+ج: نعم، يمكنك دمج عدة حقول في سمة افتراضية واحدة أو إجراء عدة عمليات تحويل باستخدام قيم مختلفة لـ `ObjectNameAttribute`.
 
-### س2: هل Aspose.GIS متوافق مع .NET Core؟
-ج: نعم، يدعم Aspose.GIS .NET Core إلى جانب .NET Framework التقليدي.
+**س: هل Aspose.GIS متوافق مع ASP.NET Core؟**  
+ج: بالتأكيد – المكتبة تعمل مع ASP.NET Core، .NET 5، .NET 6، وإطار .NET الكلاسيكي.
 
-### س3: هل يمكنني تحويل تنسيقات البيانات الجغرافية الأخرى باستخدام Aspose.GIS؟
-ج: نعم، يوفر Aspose.GIS الدعم لتنسيقات البيانات الجغرافية المتنوعة بخلاف GeoJSON وTopoJSON.
+**س: هل يمكنني تحويل صيغ جغرافية أخرى غير GeoJSON؟**  
+ج: نعم، يدعم Aspose.GIS Shapefile، KML، GML، CSV، والعديد من الصيغ الأخرى للاستيراد والتصدير.
 
-### س 4: هل يقدم Aspose.GIS نسخة تجريبية مجانية؟
- ج: نعم، يمكنك الحصول على نسخة تجريبية مجانية من Aspose.GIS من[هنا](https://releases.aspose.com/).
+**س: هل يقدم Aspose.GIS تجربة مجانية؟**  
+ج: نعم، يمكنك الحصول على تجربة مجانية من Aspose.GIS عبر [هنا](https://releases.aspose.com/).
 
-### س5: أين يمكنني الحصول على الدعم لـ Aspose.GIS؟
- ج: يمكنك الحصول على الدعم من منتدى مجتمع Aspose.GIS[هنا](https://forum.aspose.com/c/gis/33).
+**س: أين يمكنني الحصول على دعم لـ Aspose.GIS؟**  
+ج: يمكنك الحصول على الدعم من منتدى مجتمع Aspose.GIS عبر [هنا](https://forum.aspose.com/c/gis/33).
+
+---
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+**آخر تحديث:** 2025-12-06  
+**تم الاختبار مع:** Aspose.GIS for .NET (أحدث إصدار)  
+**المؤلف:** Aspose  
+
+---

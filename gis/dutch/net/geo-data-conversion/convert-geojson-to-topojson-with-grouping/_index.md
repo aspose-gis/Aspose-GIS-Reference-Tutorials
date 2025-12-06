@@ -1,107 +1,139 @@
 ---
-title: Converteer GeoJSON naar TopoJSON met groepering
-linktitle: Converteer GeoJSON naar TopoJSON met groepering
-second_title: Aspose.GIS .NET-API
-description: Leer in deze uitgebreide tutorial hoe u GeoJSON naar TopoJSON kunt converteren met groepering met behulp van Aspose.GIS voor .NET.
+date: 2025-12-06
+description: Leer hoe u GeoJSON naar TopoJSON kunt converteren met groepering, het
+  objectnaamattribuut kunt instellen en GeoJSON-functies kunt groeperen met Aspose.GIS
+  voor .NET.
+language: nl
+linktitle: How to Convert GeoJSON to TopoJSON with Grouping using Aspose.GIS
+second_title: Aspose.GIS .NET API
+title: Hoe GeoJSON naar TopoJSON converteren met groepering met Aspose.GIS
+url: /net/geo-data-conversion/convert-geojson-to-topojson-with-grouping/
 weight: 13
-url: /nl/net/geo-data-conversion/convert-geojson-to-topojson-with-grouping/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Converteer GeoJSON naar TopoJSON met groepering
+# Hoe GeoJSON om te zetten naar TopoJSON met groepering met Aspose.GIS
 
-## Invoering
+## Introductie
 
-Welkom bij onze stapsgewijze handleiding over het gebruik van Aspose.GIS voor .NET om GeoJSON naar TopoJSON te converteren met groepering. Aspose.GIS is een krachtige .NET API waarmee ontwikkelaars naadloos met geografische gegevens kunnen werken. In deze zelfstudie leiden we u door het proces van het converteren van GeoJSON-bestanden naar TopoJSON, terwijl functies worden gegroepeerd op basis van opgegeven kenmerken.
+In deze stap‑voor‑stap tutorial leer je **hoe je GeoJSON**‑bestanden omzet naar TopoJSON terwijl je features groepeert op basis van een gekozen attribuut. Het gebruik van de Aspose.GIS .NET API maakt de conversie snel, betrouwbaar en volledig controleerbaar vanuit je C#‑code. Of je nu een ASP.NET GeoJSON‑conversieservice bouwt of een desktop‑GIS‑tool, deze gids laat precies zien wat je moet doen.
 
-## Vereisten
+## Snelle antwoorden
+- **Welke bibliotheek verzorgt de conversie?** Aspose.GIS for .NET  
+- **Hoe lang duurt de implementatie?** Meestal 5‑10 minuten voor een basisopzet  
+- **Heb ik een licentie nodig voor productie?** Ja, een commerciële licentie is vereist (gratis proefversie beschikbaar)  
+- **Kan ik features groeperen op elk attribuut?** Ja – stel `ObjectNameAttribute` in op het veld waarop je wilt groeperen  
+- **Wordt .NET Core ondersteund?** Absoluut – de API werkt met .NET Core, .NET 5/6 en het klassieke .NET Framework  
 
-Voordat we beginnen, zorg ervoor dat u aan de volgende vereisten voldoet:
+## Wat zijn GeoJSON en TopoJSON?
 
-1.  Aspose.GIS voor .NET: Zorg ervoor dat u de Aspose.GIS voor .NET-bibliotheek hebt gedownload en geïnstalleerd. Je kunt het downloaden van[hier](https://releases.aspose.com/gis/net/).
+GeoJSON is een veelgebruikt JSON‑formaat voor het coderen van geografische features zoals punten, lijnen en polygonen. TopoJSON breidt GeoJSON uit door topologie (gedeelde lijnsegmenten) op te slaan, waardoor de bestandsgrootte afneemt en de weergave‑prestaties voor complexe kaarten verbeteren. Het omzetten tussen beide is een veelvoorkomende stap wanneer je compacte kaartgegevens nodig hebt voor web‑visualisaties.
 
-2. Ontwikkelomgeving: U moet een werkende ontwikkelomgeving hebben met Visual Studio of een andere compatibele IDE.
+## Waarom GeoJSON‑features groeperen?
 
-3. Voorbeeld van een GeoJSON-bestand: bereid een voorbeeld van een GeoJSON-bestand voor dat u wilt converteren. U kunt voorbeeld-GeoJSON-bestanden uit verschillende bronnen verkrijgen of uw eigen bestanden maken.
+Groeperen (`group geojson features`) laat je gerelateerde geometrieën onder één benoemd object in de resulterende TopoJSON organiseren. Dit is vooral nuttig wanneer:
+- Je afzonderlijke lagen wilt maken voor verschillende administratieve regio’s.  
+- Je front‑end‑kaartbibliotheek benoemde objecten verwacht voor styling of interactie.  
+- Je duplicatie wilt verminderen door grenzen tussen aangrenzende features te delen.
 
-## Naamruimten importeren
+## Voorvereisten
 
-Zorg er eerst voor dat u de benodigde naamruimten in uw project opneemt:
+Voordat we beginnen, zorg dat je de volgende zaken hebt:
+
+1. **Aspose.GIS for .NET** – download en installeer vanaf de officiële site [here](https://releases.aspose.com/gis/net/).  
+2. **Ontwikkelomgeving** – Visual Studio, Visual Studio Code, of een IDE die C# ondersteunt.  
+3. **Voorbeeld‑GeoJSON‑bestand** – een bestand met de features die je wilt converteren.  
+
+## Namespaces importeren
+
+Voeg eerst de benodigde namespaces toe aan je project:
 
 ```csharp
 using Aspose.Gis;
 using Aspose.Gis.Formats.TopoJson;
 ```
 
+## Stapsgewijze handleiding
 
-Laten we nu het conversieproces in meerdere stappen opsplitsen:
+### Stap 1: Bestands‑paden definiëren
 
-## Stap 1: Definieer bestandspaden
-
-Definieer de paden voor uw invoer-GeoJSON-bestand en het uitvoer-TopoJSON-bestand:
+Geef aan waar de bron‑GeoJSON zich bevindt en waar de TopoJSON moet worden weggeschreven:
 
 ```csharp
 string sampleGeoJsonPath = "Your Document Directory" + "sample.geojson";
 var outputFilePath = "Your Document Directory" + "convertedSampleWithGrouping_out.topojson";
 ```
 
- Vervangen`"Your Document Directory"` met de daadwerkelijke map waar uw bestanden zich bevinden.
+> **Pro tip:** Gebruik `Path.Combine` voor platform‑onafhankelijke padopbouw als je .NET Core target.
 
-## Stap 2: Conversieopties configureren
+### Stap 2: Conversie‑opties configureren (Object Name Attribute instellen)
 
-Configureer de conversieopties om op te geven hoe de groepering moet worden uitgevoerd. In dit voorbeeld groeperen we kenmerken op basis van een specifiek attribuut.
+Maak een `ConversionOptions`‑instantie en vertel Aspose.GIS hoe de features gegroepeerd moeten worden:
 
 ```csharp
 var options = new ConversionOptions
 {
     DestinationDriverOptions = new TopoJsonOptions
     {
-        // Specificeer het attribuut in de GeoJSON-laag waarmee we objecten gaan groeperen
+        // Specify the attribute in GeoJSON layer by which we are going to group into objects
         ObjectNameAttribute = "group",
-        // Geef de standaardobjectnaam op voor objecten met onbekende attribuutwaarden
+        // Specify the default object name for features with unknown attribute values
         DefaultObjectName = "unnamed",
     }
 };
 ```
 
- Pas de .... aan`ObjectNameAttribute` En`DefaultObjectName` eigenschappen volgens uw GeoJSON-gegevens.
+Vervang `"group"` door de daadwerkelijke eigenschapsnaam in je GeoJSON die je wilt gebruiken voor **geojson feature grouping**. Het `DefaultObjectName` zorgt ervoor dat elke feature in een TopoJSON‑object terechtkomt, zelfs als het attribuut ontbreekt.
 
-## Stap 3: Voer conversie uit
+### Stap 3: De conversie uitvoeren (GeoJSON naar TopoJSON)
 
-Voer het conversieproces uit met behulp van de Aspose.GIS API:
+Voer de conversie uit met één API‑aanroep:
 
 ```csharp
 VectorLayer.Convert(sampleGeoJsonPath, Drivers.GeoJson, outputFilePath, Drivers.TopoJson, options);
 ```
 
-Deze coderegel converteert het GeoJSON-bestand naar TopoJSON met de opgegeven groeperingsopties.
+Na uitvoering bevat `convertedSampleWithGrouping_out.topojson` de TopoJSON‑representatie, met features gegroepeerd volgens het opgegeven attribuut.
 
-## Conclusie
+## Veelvoorkomende problemen en oplossingen
 
-In deze zelfstudie hebben we geleerd hoe u GeoJSON naar TopoJSON kunt converteren met groepering met behulp van Aspose.GIS voor .NET. Door deze eenvoudige stappen te volgen, kunt u efficiënt omgaan met geografische gegevensformaten in uw .NET-toepassingen.
+| Symptoom | Waarschijnlijke oorzaak | Oplossing |
+|----------|--------------------------|-----------|
+| **Alle features eindigen in “unnamed”** | `ObjectNameAttribute` komt niet overeen met een eigenschap in de GeoJSON | Controleer de exacte eigenschapsnaam (hoofdletter‑gevoelig) en werk de optie bij |
+| **Uitvoerbestand is leeg** | Onjuist pad of ontbrekende leesrechten | Gebruik absolute paden of zorg dat de app toegang heeft tot het bestandssysteem |
+| **Conversie geeft `NotSupportedException`** | Poging om een GeoJSON met niet‑ondersteunde geometrietypen te converteren (bijv. GeometryCollection) | Vereenvoudig de brondata of upgrade naar de nieuwste Aspose.GIS‑versie |
 
 ## Veelgestelde vragen
 
-### V1: Kan ik objecten groeperen op basis van meerdere attributen?
-A: Ja, u kunt de conversieopties aanpassen om objecten te groeperen op basis van meerdere attributen.
+**V: Kan ik features groeperen op basis van meerdere attributen?**  
+A: Ja, je kunt verschillende velden samenvoegen tot één virtueel attribuut of meerdere conversie‑runs uitvoeren met verschillende `ObjectNameAttribute`‑waarden.
 
-### V2: Is Aspose.GIS compatibel met .NET Core?
-A: Ja, Aspose.GIS ondersteunt .NET Core samen met het traditionele .NET Framework.
+**V: Is Aspose.GIS compatibel met ASP.NET Core?**  
+A: Absoluut – de bibliotheek werkt met ASP.NET Core, .NET 5, .NET 6 en het klassieke .NET Framework.
 
-### V3: Kan ik andere geografische gegevensformaten converteren met Aspose.GIS?
-A: Ja, Aspose.GIS biedt ondersteuning voor verschillende geografische gegevensformaten buiten GeoJSON en TopoJSON.
+**V: Kan ik andere geografische formaten converteren naast GeoJSON?**  
+A: Ja, Aspose.GIS ondersteunt Shapefile, KML, GML, CSV en nog veel meer formaten voor zowel import als export.
 
-### V4: Biedt Aspose.GIS een gratis proefperiode?
- A: Ja, u kunt een gratis proefversie van Aspose.GIS krijgen van[hier](https://releases.aspose.com/).
+**V: Biedt Aspose.GIS een gratis proefversie?**  
+A: Ja, je kunt een gratis proefversie van Aspose.GIS krijgen via [here](https://releases.aspose.com/).
 
-### V5: Waar kan ik ondersteuning krijgen voor Aspose.GIS?
- A: U kunt ondersteuning krijgen van het Aspose.GIS-communityforum[hier](https://forum.aspose.com/c/gis/33).
+**V: Waar kan ik ondersteuning krijgen voor Aspose.GIS?**  
+A: Je kunt ondersteuning krijgen via het Aspose.GIS‑communityforum [here](https://forum.aspose.com/c/gis/33).
+
+---
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+**Laatst bijgewerkt:** 2025-12-06  
+**Getest met:** Aspose.GIS for .NET (latest release)  
+**Auteur:** Aspose  
+
+---
