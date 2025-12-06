@@ -1,107 +1,138 @@
 ---
-title: Gruplama ile GeoJSON'u TopoJSON'a dönüştürün
-linktitle: Gruplama ile GeoJSON'u TopoJSON'a dönüştürün
-second_title: Aspose.GIS .NET API'si
-description: Bu kapsamlı eğitimde Aspose.GIS for .NET kullanarak GeoJSON'u gruplamayla TopoJSON'a nasıl dönüştüreceğinizi öğrenin.
+date: 2025-12-06
+description: Aspose.GIS for .NET kullanarak GeoJSON'ı gruplayarak TopoJSON'a dönüştürmeyi,
+  nesne ad özniteliğini ayarlamayı ve GeoJSON özelliklerini gruplamayı öğrenin.
+language: tr
+linktitle: How to Convert GeoJSON to TopoJSON with Grouping using Aspose.GIS
+second_title: Aspose.GIS .NET API
+title: Aspose.GIS Kullanarak Gruplama ile GeoJSON'dan TopoJSON'a Nasıl Dönüştürülür
+url: /net/geo-data-conversion/convert-geojson-to-topojson-with-grouping/
 weight: 13
-url: /tr/net/geo-data-conversion/convert-geojson-to-topojson-with-grouping/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Gruplama ile GeoJSON'u TopoJSON'a dönüştürün
+# GeoJSON'u TopoJSON'a Gruplama ile Aspose.GIS Kullanarak Nasıl Dönüştürülür
 
-## giriiş
+## Giriş
 
-Gruplamayla GeoJSON'u TopoJSON'a dönüştürmek için Aspose.GIS for .NET'i kullanmayla ilgili adım adım kılavuzumuza hoş geldiniz. Aspose.GIS, geliştiricilerin coğrafi verilerle sorunsuz bir şekilde çalışmasına olanak tanıyan güçlü bir .NET API'sidir. Bu eğitimde, özellikleri belirtilen niteliklere göre gruplandırırken GeoJSON dosyalarını TopoJSON'a dönüştürme sürecinde size yol göstereceğiz.
+Bu adım‑adım öğreticide **GeoJSON** dosyalarını, seçtiğiniz bir niteliğe göre özellikleri gruplayarak TopoJSON'a nasıl dönüştüreceğinizi öğreneceksiniz. Aspose.GIS .NET API'si, dönüşümü hızlı, güvenilir ve C# kodunuzdan tam kontrol edilebilir hâle getirir. İster bir ASP.NET GeoJSON dönüşüm servisi ister masaüstü GIS aracı geliştirin, bu kılavuz tam olarak ne yapmanız gerektiğini gösterir.
 
-## Önkoşullar
+## Hızlı Yanıtlar
+- **Dönüşümü hangi kütüphane yönetiyor?** Aspose.GIS for .NET  
+- **Uygulama ne kadar sürer?** Temel bir kurulum için genellikle 5‑10 dakika  
+- **Üretim için lisansa ihtiyacım var mı?** Evet, ticari bir lisans gereklidir (ücretsiz deneme mevcut)  
+- **Özellikleri herhangi bir niteliğe göre gruplayabilir miyim?** Evet – `ObjectNameAttribute`'u gruplayacağınız alan olarak ayarlayın  
+- **.NET Core destekleniyor mu?** Kesinlikle – API .NET Core, .NET 5/6 ve klasik .NET Framework ile çalışır  
 
-Başlamadan önce aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
+## GeoJSON ve TopoJSON Nedir?
 
-1.  Aspose.GIS for .NET: Aspose.GIS for .NET kitaplığını indirip yüklediğinizden emin olun. Şuradan indirebilirsiniz[Burada](https://releases.aspose.com/gis/net/).
+GeoJSON, nokta, çizgi ve çokgen gibi coğrafi özellikleri kodlamak için yaygın olarak kullanılan bir JSON formatıdır. TopoJSON, topolojiyi (paylaşılan çizgi segmentlerini) depolayarak dosya boyutunu küçültür ve karmaşık haritaların render performansını artırır. Web görselleştirmeleri için kompakt harita verilerine ihtiyaç duyduğunuzda aralarında dönüşüm yapmak yaygın bir adımdır.
 
-2. Geliştirme Ortamı: Visual Studio veya başka bir uyumlu IDE ile kurulmuş bir çalışma geliştirme ortamınız olmalıdır.
+## GeoJSON Özelliklerini Neden Gruplamalıyız?
 
-3. Örnek GeoJSON Dosyası: Dönüştürmek istediğiniz örnek bir GeoJSON dosyası hazırlayın. Örnek GeoJSON dosyalarını çeşitli kaynaklardan edinebilir veya kendinizinkini oluşturabilirsiniz.
+`group geojson features` (geojson özelliklerini gruplayarak) elde edilen TopoJSON içinde ilgili geometrileri tek bir adlandırılmış nesne altında düzenlemenizi sağlar. Bu özellikle şu durumlarda faydalıdır:
+- Farklı idari bölgeler için ayrı katmanlar oluşturmak istediğinizde.  
+- Ön‑uç harita kütüphanenizin stil veya etkileşim için adlandırılmış nesneler beklediği durumlarda.  
+- Bitişik özellikler arasında sınırları paylaşarak tekrarı azaltmak istediğinizde.
 
-## Ad Alanlarını İçe Aktar
+## Ön Koşullar
 
-Öncelikle projenize gerekli ad alanlarını eklediğinizden emin olun:
+Başlamadan önce aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
+
+1. **Aspose.GIS for .NET** – resmi siteden [buradan](https://releases.aspose.com/gis/net/) indirip kurun.  
+2. **Geliştirme Ortamı** – Visual Studio, Visual Studio Code veya C# destekleyen herhangi bir IDE.  
+3. **Örnek GeoJSON Dosyası** – dönüştürmek istediğiniz özellikleri içeren bir dosya.  
+
+## Ad Alanlarını İçe Aktarın
+
+Projeye gerekli ad alanlarını ekleyin:
 
 ```csharp
 using Aspose.Gis;
 using Aspose.Gis.Formats.TopoJson;
 ```
 
+## Adım‑Adım Kılavuz
 
-Şimdi dönüştürme sürecini birden çok adıma ayıralım:
+### Adım 1: Dosya Yollarını Tanımlayın
 
-## 1. Adım: Dosya Yollarını Tanımlayın
-
-Giriş GeoJSON dosyanızın ve çıkış TopoJSON dosyanızın yollarını tanımlayın:
+Kaynak GeoJSON dosyasının nerede bulunduğunu ve TopoJSON dosyasının nereye yazılacağını belirtin:
 
 ```csharp
 string sampleGeoJsonPath = "Your Document Directory" + "sample.geojson";
 var outputFilePath = "Your Document Directory" + "convertedSampleWithGrouping_out.topojson";
 ```
 
- Yer değiştirmek`"Your Document Directory"` dosyalarınızın bulunduğu gerçek dizinle.
+> **İpucu:** .NET Core hedefliyorsanız, platformlar arası yol oluşturma için `Path.Combine` kullanın.
 
-## 2. Adım: Dönüşüm Seçeneklerini Yapılandırın
+### Adım 2: Dönüşüm Seçeneklerini Yapılandırın (Nesne Adı Niteliğini Ayarlayın)
 
-Gruplandırmanın nasıl gerçekleştirileceğini belirtmek için dönüştürme seçeneklerini yapılandırın. Bu örnekte özellikleri belirli bir özelliğe göre gruplandıracağız.
+Bir `ConversionOptions` örneği oluşturun ve Aspose.GIS'e özellikleri nasıl gruplayacağını söyleyin:
 
 ```csharp
 var options = new ConversionOptions
 {
     DestinationDriverOptions = new TopoJsonOptions
     {
-        // GeoJSON katmanında nesnelere göre gruplandıracağımız özelliği belirtin
+        // Specify the attribute in GeoJSON layer by which we are going to group into objects
         ObjectNameAttribute = "group",
-        // Bilinmeyen öznitelik değerlerine sahip özellikler için varsayılan nesne adını belirtin
+        // Specify the default object name for features with unknown attribute values
         DefaultObjectName = "unnamed",
     }
 };
 ```
 
- Ayarlayın`ObjectNameAttribute` Ve`DefaultObjectName` GeoJSON verilerinize göre özellikler.
+`"group"` ifadesini, **geojson feature grouping** (geojson özellik gruplaması) için kullanmak istediğiniz gerçek alan adıyla değiştirin. `DefaultObjectName`, niteliğin eksik olduğu durumlarda bile her özelliğin bir TopoJSON nesnesine yerleştirilmesini sağlar.
 
-## 3. Adım: Dönüşümü Gerçekleştirin
+### Adım 3: Dönüşümü Gerçekleştirin (GeoJSON'u TopoJSON'a Dönüştürün)
 
-Aspose.GIS API'yi kullanarak dönüştürme sürecini yürütün:
+Tek bir API çağrısı ile dönüşümü çalıştırın:
 
 ```csharp
 VectorLayer.Convert(sampleGeoJsonPath, Drivers.GeoJson, outputFilePath, Drivers.TopoJson, options);
 ```
 
-Bu kod satırı, GeoJSON dosyasını belirtilen gruplama seçenekleriyle TopoJSON'a dönüştürecektir.
+Çalıştırdıktan sonra, `convertedSampleWithGrouping_out.topojson` dosyası, belirttiğiniz niteliğe göre gruplanmış TopoJSON temsili içerecektir.
 
-## Çözüm
+## Yaygın Sorunlar ve Çözüm Yolları
 
-Bu eğitimde Aspose.GIS for .NET kullanarak GeoJSON'u gruplamayla TopoJSON'a nasıl dönüştüreceğimizi öğrendik. Bu basit adımları izleyerek .NET uygulamalarınızda coğrafi veri formatlarını verimli bir şekilde kullanabilirsiniz.
+| Belirti | Muhtemel Neden | Çözüm |
+|---------|----------------|------|
+| **Tüm özellikler “unnamed” içinde görünüyor** | `ObjectNameAttribute` GeoJSON içinde hiçbir özelliğe eşleşmiyor | Tam alan adını (büyük/küçük harf duyarlı) doğrulayın ve seçeneği güncelleyin |
+| **Çıktı dosyası boş** | Yanlış dosya yolu veya okuma izni eksikliği | Mutlak yollar kullanın veya uygulamanın dosya sistemi erişimini sağlayın |
+| **Dönüşüm `NotSupportedException` hatası veriyor** | Desteklenmeyen geometri tipleri (ör. GeometryCollection) içeren GeoJSON | Kaynak veriyi sadeleştirin veya Aspose.GIS'in en yeni sürümüne yükseltin |
 
-## SSS'ler
+## Sık Sorulan Sorular
 
-### S1: Özellikleri birden çok özelliğe göre gruplayabilir miyim?
-C: Evet, özellikleri birden çok özelliğe göre gruplandırmak için dönüştürme seçeneklerini özelleştirebilirsiniz.
+**S: Özellikleri birden fazla niteliğe göre gruplayabilir miyim?**  
+C: Evet, birden fazla alanı tek bir sanal nitelikte birleştirerek veya farklı `ObjectNameAttribute` değerleriyle birden çok dönüşüm geçişi yaparak mümkün.
 
-### S2: Aspose.GIS .NET Core ile uyumlu mu?
-C: Evet, Aspose.GIS geleneksel .NET Framework'ün yanı sıra .NET Core'u da destekler.
+**S: Aspose.GIS ASP.NET Core ile uyumlu mu?**  
+C: Kesinlikle – kütüphane ASP.NET Core, .NET 5, .NET 6 ve klasik .NET Framework ile çalışır.
 
-### S3: Aspose.GIS'i kullanarak diğer coğrafi veri formatlarını dönüştürebilir miyim?
-C: Evet, Aspose.GIS, GeoJSON ve TopoJSON'un ötesinde çeşitli coğrafi veri formatları için destek sağlar.
+**S: GeoJSON dışındaki diğer coğrafi formatları da dönüştürebilir miyim?**  
+C: Evet, Aspose.GIS Shapefile, KML, GML, CSV ve daha birçok formatı içe ve dışa aktarabilir.
 
-### S4: Aspose.GIS ücretsiz deneme sunuyor mu?
- C: Evet, Aspose.GIS'in ücretsiz deneme sürümünü şu adresten edinebilirsiniz:[Burada](https://releases.aspose.com/).
+**S: Aspose.GIS ücretsiz deneme sunuyor mu?**  
+C: Evet, ücretsiz deneme sürümünü [buradan](https://releases.aspose.com/) alabilirsiniz.
 
-### S5: Aspose.GIS için nereden destek alabilirim?
- C: Aspose.GIS topluluk forumundan destek alabilirsiniz.[Burada](https://forum.aspose.com/c/gis/33).
+**S: Aspose.GIS için destek nereden alınır?**  
+C: Aspose.GIS topluluk forumundan [burada](https://forum.aspose.com/c/gis/33) destek alabilirsiniz.
+
+---
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+**Son Güncelleme:** 2025-12-06  
+**Test Edilen Versiyon:** Aspose.GIS for .NET (en son sürüm)  
+**Yazar:** Aspose  
+
+---

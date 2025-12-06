@@ -1,107 +1,139 @@
 ---
-title: Convierta GeoJSON a TopoJSON con agrupación
-linktitle: Convierta GeoJSON a TopoJSON con agrupación
-second_title: Aspose.GIS API .NET
-description: Aprenda cómo convertir GeoJSON a TopoJSON con agrupación usando Aspose.GIS para .NET en este completo tutorial.
+date: 2025-12-06
+description: Aprenda a convertir GeoJSON a TopoJSON con agrupación, establecer el
+  atributo de nombre del objeto y agrupar características GeoJSON usando Aspose.GIS
+  para .NET.
+language: es
+linktitle: How to Convert GeoJSON to TopoJSON with Grouping using Aspose.GIS
+second_title: Aspose.GIS .NET API
+title: Cómo convertir GeoJSON a TopoJSON con agrupación usando Aspose.GIS
+url: /net/geo-data-conversion/convert-geojson-to-topojson-with-grouping/
 weight: 13
-url: /es/net/geo-data-conversion/convert-geojson-to-topojson-with-grouping/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Convierta GeoJSON a TopoJSON con agrupación
+# Cómo convertir GeoJSON a TopoJSON con agrupación usando Aspose.GIS
 
 ## Introducción
 
-Bienvenido a nuestra guía paso a paso sobre el uso de Aspose.GIS para .NET para convertir GeoJSON a TopoJSON con agrupación. Aspose.GIS es una potente API .NET que permite a los desarrolladores trabajar con datos geográficos sin problemas. En este tutorial, lo guiaremos a través del proceso de convertir archivos GeoJSON a TopoJSON mientras agrupamos funciones según atributos específicos.
+En este tutorial paso a paso aprenderás **cómo convertir archivos GeoJSON** a TopoJSON mientras agrupas las entidades según un atributo elegido. Usar la API Aspose.GIS .NET hace que la conversión sea rápida, fiable y totalmente controlable desde tu código C#. Ya sea que estés construyendo un servicio de conversión GeoJSON en ASP.NET o una herramienta GIS de escritorio, esta guía te muestra exactamente lo que necesitas hacer.
+
+## Respuestas rápidas
+- **¿Qué biblioteca maneja la conversión?** Aspose.GIS for .NET  
+- **¿Cuánto tiempo lleva la implementación?** Normalmente 5‑10 minutos para una configuración básica  
+- **¿Necesito una licencia para producción?** Sí, se requiere una licencia comercial (disponible prueba gratuita)  
+- **¿Puedo agrupar entidades por cualquier atributo?** Sí – establece `ObjectNameAttribute` al campo que deseas usar para agrupar  
+- **¿Se admite .NET Core?** Absolutamente – la API funciona con .NET Core, .NET 5/6 y el clásico .NET Framework  
+
+## ¿Qué es GeoJSON y TopoJSON?
+
+GeoJSON es un formato JSON ampliamente usado para codificar características geográficas como puntos, líneas y polígonos. TopoJSON extiende GeoJSON almacenando topología (segmentos de línea compartidos), lo que reduce el tamaño del archivo y mejora el rendimiento de renderizado para mapas complejos. Convertir entre ambos es un paso común cuando necesitas datos de mapa compactos para visualizaciones web.
+
+## ¿Por qué agrupar entidades GeoJSON?
+
+Agrupar (`group geojson features`) te permite organizar geometrías relacionadas bajo un solo objeto con nombre en el TopoJSON resultante. Esto es especialmente útil cuando:
+- Deseas crear capas separadas para diferentes regiones administrativas.  
+- Tu biblioteca de mapeo front‑end espera objetos con nombre para estilo o interacción.  
+- Necesitas reducir duplicaciones compartiendo bordes entre entidades adyacentes.
 
 ## Requisitos previos
 
-Antes de comenzar, asegúrese de tener los siguientes requisitos previos:
+Antes de comenzar, asegúrate de contar con los siguientes requisitos:
 
-1.  Aspose.GIS para .NET: asegúrese de haber descargado e instalado la biblioteca Aspose.GIS para .NET. Puedes descargarlo desde[aquí](https://releases.aspose.com/gis/net/).
-
-2. Entorno de desarrollo: debe tener un entorno de desarrollo funcional configurado con Visual Studio o cualquier otro IDE compatible.
-
-3. Archivo GeoJSON de muestra: prepare un archivo GeoJSON de muestra que desee convertir. Puede obtener archivos GeoJSON de muestra de varias fuentes o crear los suyos propios.
+1. **Aspose.GIS for .NET** – descarga e instala desde el sitio oficial [here](https://releases.aspose.com/gis/net/).  
+2. **Entorno de desarrollo** – Visual Studio, Visual Studio Code, o cualquier IDE que soporte C#.  
+3. **Archivo GeoJSON de ejemplo** – un archivo que contenga las entidades que deseas convertir.  
 
 ## Importar espacios de nombres
 
-Primero, asegúrese de incluir los espacios de nombres necesarios en su proyecto:
+Primero, incluye los espacios de nombres necesarios en tu proyecto:
 
 ```csharp
 using Aspose.Gis;
 using Aspose.Gis.Formats.TopoJson;
 ```
 
+## Guía paso a paso
 
-Ahora dividamos el proceso de conversión en varios pasos:
+### Paso 1: Definir rutas de archivo
 
-## Paso 1: definir rutas de archivos
-
-Defina las rutas para su archivo GeoJSON de entrada y el archivo TopoJSON de salida:
+Especifica dónde se encuentra el GeoJSON de origen y dónde se debe escribir el TopoJSON:
 
 ```csharp
 string sampleGeoJsonPath = "Your Document Directory" + "sample.geojson";
 var outputFilePath = "Your Document Directory" + "convertedSampleWithGrouping_out.topojson";
 ```
 
- Reemplazar`"Your Document Directory"` con el directorio real donde se encuentran sus archivos.
+> **Consejo profesional:** Usa `Path.Combine` para construir rutas multiplataforma si apuntas a .NET Core.
 
-## Paso 2: configurar las opciones de conversión
+### Paso 2: Configurar opciones de conversión (establecer atributo de nombre de objeto)
 
-Configure las opciones de conversión para especificar cómo se debe realizar la agrupación. En este ejemplo, agruparemos funciones según un atributo específico.
+Crea una instancia de `ConversionOptions` y indica a Aspose.GIS cómo agrupar las entidades:
 
 ```csharp
 var options = new ConversionOptions
 {
     DestinationDriverOptions = new TopoJsonOptions
     {
-        // Especificar el atributo en la capa GeoJSON por el cual vamos a agrupar en objetos
+        // Specify the attribute in GeoJSON layer by which we are going to group into objects
         ObjectNameAttribute = "group",
-        // Especifique el nombre de objeto predeterminado para funciones con valores de atributos desconocidos
+        // Specify the default object name for features with unknown attribute values
         DefaultObjectName = "unnamed",
     }
 };
 ```
 
- Ajustar el`ObjectNameAttribute` y`DefaultObjectName` propiedades de acuerdo con sus datos GeoJSON.
+Reemplaza `"group"` con el nombre real de la propiedad en tu GeoJSON que deseas usar para **agrupación de entidades geojson**. `DefaultObjectName` garantiza que cada entidad termine en un objeto TopoJSON, incluso si el atributo falta.
 
-## Paso 3: realizar la conversión
+### Paso 3: Ejecutar la conversión (Convertir GeoJSON a TopoJSON)
 
-Ejecute el proceso de conversión utilizando la API Aspose.GIS:
+Ejecuta la conversión con una única llamada a la API:
 
 ```csharp
 VectorLayer.Convert(sampleGeoJsonPath, Drivers.GeoJson, outputFilePath, Drivers.TopoJson, options);
 ```
 
-Esta línea de código convertirá el archivo GeoJSON a TopoJSON con las opciones de agrupación especificadas.
+Después de la ejecución, `convertedSampleWithGrouping_out.topojson` contendrá la representación TopoJSON, con las entidades agrupadas según el atributo que especificaste.
 
-## Conclusión
+## Problemas comunes y solución de errores
 
-En este tutorial, hemos aprendido cómo convertir GeoJSON a TopoJSON con agrupación usando Aspose.GIS para .NET. Si sigue estos sencillos pasos, podrá manejar de manera eficiente formatos de datos geográficos en sus aplicaciones .NET.
+| Síntoma | Causa probable | Solución |
+|---------|----------------|----------|
+| **Todas las entidades aparecen como “unnamed”** | `ObjectNameAttribute` no coincide con ninguna propiedad en el GeoJSON | Verifica el nombre exacto de la propiedad (sensible a mayúsculas) y actualiza la opción |
+| **El archivo de salida está vacío** | Ruta de archivo incorrecta o permisos de lectura insuficientes | Usa rutas absolutas o asegura que la aplicación tenga acceso al sistema de archivos |
+| **La conversión lanza `NotSupportedException`** | Intentas convertir un GeoJSON con tipos de geometría no soportados (p. ej., GeometryCollection) | Simplifica los datos de origen o actualiza a la última versión de Aspose.GIS |
 
 ## Preguntas frecuentes
 
-### P1: ¿Puedo agrupar funciones en función de múltiples atributos?
-R: Sí, puede personalizar las opciones de conversión para agrupar funciones según múltiples atributos.
+**P: ¿Puedo agrupar entidades basándome en varios atributos?**  
+R: Sí, puedes concatenar varios campos en un solo atributo virtual o ejecutar múltiples conversiones con diferentes valores de `ObjectNameAttribute`.
 
-### P2: ¿Aspose.GIS es compatible con .NET Core?
-R: Sí, Aspose.GIS admite .NET Core junto con el tradicional .NET Framework.
+**P: ¿Aspose.GIS es compatible con ASP.NET Core?**  
+R: Absolutamente – la biblioteca funciona con ASP.NET Core, .NET 5, .NET 6 y el clásico .NET Framework.
 
-### P3: ¿Puedo convertir otros formatos de datos geográficos usando Aspose.GIS?
-R: Sí, Aspose.GIS brinda soporte para varios formatos de datos geográficos más allá de GeoJSON y TopoJSON.
+**P: ¿Puedo convertir otros formatos geográficos además de GeoJSON?**  
+R: Sí, Aspose.GIS soporta Shapefile, KML, GML, CSV y muchos más formatos tanto para importación como para exportación.
 
-### P4: ¿Aspose.GIS ofrece una prueba gratuita?
- R: Sí, puede obtener una prueba gratuita de Aspose.GIS desde[aquí](https://releases.aspose.com/).
+**P: ¿Aspose.GIS ofrece una prueba gratuita?**  
+R: Sí, puedes obtener una prueba gratuita de Aspose.GIS desde [here](https://releases.aspose.com/).
 
-### P5: ¿Dónde puedo obtener soporte para Aspose.GIS?
- R: Puede obtener soporte en el foro de la comunidad Aspose.GIS.[aquí](https://forum.aspose.com/c/gis/33).
+**P: ¿Dónde puedo obtener soporte para Aspose.GIS?**  
+R: Puedes obtener soporte en el foro de la comunidad Aspose.GIS [here](https://forum.aspose.com/c/gis/33).
+
+---
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+**Última actualización:** 2025-12-06  
+**Probado con:** Aspose.GIS for .NET (última versión)  
+**Autor:** Aspose  
+
+---
