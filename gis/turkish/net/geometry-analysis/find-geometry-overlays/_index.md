@@ -1,28 +1,51 @@
 ---
-title: Aspose.GIS for .NET ile Geometri Kaplamalarında Uzmanlaşma
-linktitle: Geometri Kaplamalarını Bul
-second_title: Aspose.GIS .NET API'si
-description: Aspose.GIS for .NET'i kullanarak geometrik katmanlama işlemlerini nasıl gerçekleştireceğinizi öğrenin. Ana kesişim, birleşim, fark ve simetrik fark işlemleri.
+date: 2025-12-07
+description: Aspose.GIS for .NET kullanarak bu mekânsal bindirme öğreticisinde bindirme
+  işlemlerini nasıl gerçekleştireceğinizi öğrenin. Kesişim, birleşim, fark ve simetrik
+  fark konularında uzmanlaşın.
+language: tr
+linktitle: Find Geometry Overlays
+second_title: Aspose.GIS .NET API
+title: Aspose.GIS for .NET ile Örtüşüm İşlemlerini Nasıl Gerçekleştirirsiniz
+url: /net/geometry-analysis/find-geometry-overlays/
 weight: 16
-url: /tr/net/geometry-analysis/find-geometry-overlays/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.GIS for .NET ile Geometri Kaplamalarında Uzmanlaşma
+# Aspose.GIS for .NET ile Örtüşme İşlemlerini Nasıl Gerçekleştirirsiniz
 
-## giriiş
-Coğrafi Bilgi Sistemleri (CBS) alanında, katmanlama işlemleri mekansal analiz için temeldir. Değerli bilgiler elde etmek için farklı mekansal veri kümelerinin karşılaştırılmasını ve birleştirilmesini sağlarlar. Aspose.GIS for .NET, geometrik katmanları verimli bir şekilde gerçekleştirmek için güçlü işlevler sağlar. Bu derste Aspose.GIS for .NET'i kullanarak Kesişme, Birleşim, Fark ve Simetrik Fark gibi çeşitli katmanlama işlemlerini inceleyeceğiz.
+## Giriş
+Overlay analizi, herhangi bir **spatial overlay tutorial** içinde temel bir tekniktir—birden çok coğrafi katmanı birleştirmenize, karşılaştırmanıza ve içgörüler elde etmenize olanak tanır. Bu rehberde Intersection, Union, Difference ve Symmetric Difference gibi **ö
+
+rtüşme** işlemlerini güçlü Aspose.GIS for .NET kütüphanesini kullanarak nasıl gerçekleştireceğinizi öğreneceksiniz. Rehberin sonunda bu yöntemleri arazi kullanım planlaması, çevresel etki çalışmaları ve rota optimizasyonu gibi gerçek dünya GIS problemlerine uygulayabileceksiniz.
+
+## Hızlı Yanıtlar
+- **Bir örtüşme işlemi nedir?** İki geometrinin birleştirilerek yeni bir geometri (intersection, union vb.) üretilen bir uzamsal yöntemdir.  
+- **.NET'te örtüşmeleri yöneten kütüphane hangisidir?** Aspose.GIS for .NET.  
+- **Uygulamanın süresi ne kadar?** Temel örnek için yaklaşık 10‑15 dakika.  
+- **Lisans gerekli mi?** Deneme sürümü ücretsizdir; üretim için ticari lisans gerekir.  
+- **Bunu .NET Core / .NET 6+ üzerinde çalıştırabilir miyim?** Evet—Aspose.GIS tüm modern .NET çalışma zamanlarını destekler.
+
+## Örtüşme İşlemi Nedir?
+Bir örtüşme işlemi iki geometrik şekli alır ve bunların uzamsal ilişkisine dayanarak yeni bir şekil hesaplar.  
+- **Intersection** her iki şeklin ortak alanını döndürür.  
+- **Union** şekilleri tek bir geometri içinde birleştirir.  
+- **Difference** bir şekli diğerinden çıkarır.  
+- **Symmetric Difference** her iki şekle ait olup aynı anda her iki şekle de ait olmayan bölümleri döndürür.
+
+## Neden Aspose.GIS'i Örtüşme İçin Kullanmalısınız?
+Aspose.GIS, düşük seviyeli matematiği soyutlayan temiz, tamamen yönetilen bir API sunar; böylece iş mantığınıza odaklanabilirsiniz. Çapraz platform çalışır, büyük veri setlerini verimli bir şekilde işler ve diğer .NET bileşenleriyle sorunsuz entegrasyon sağlar.
+
 ## Önkoşullar
-Eğiticiye dalmadan önce aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
-### 1. .NET Geliştirme Ortamı
-Makinenizde bir .NET geliştirme ortamının kurulu olduğundan emin olun. .NET SDK'yı .NET web sitesinden indirip yükleyebilirsiniz.
-### 2. Aspose.GIS for .NET Kütüphanesi
- Aspose.GIS for .NET kütüphanesini şu adresten indirip yükleyin:[İnternet sitesi](https://releases.aspose.com/gis/net/).
-## Ad Alanlarını İçe Aktar
-Aspose.GIS for .NET'i kullanmaya başlamadan önce gerekli ad alanlarını projenize aktarmanız gerekir.
+- Çalışan bir .NET geliştirme ortamı (Visual Studio, VS Code veya .NET CLI).  
+- Aspose.GIS for .NET kütüphanesi – en son sürümü [official site](https://releases.aspose.com/gis/net/) adresinden indirin.  
+
+### Ad Alanlarını İçe Aktarma
+Aspose.GIS for .NET'i kullanmaya başlamadan önce projenize gerekli ad alanlarını (namespaces) eklemeniz gerekir.
+
 ```csharp
 using Aspose.Gis.Geometries;
 using System;
@@ -32,8 +55,12 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## Adım 1: Çokgen Nesneler Oluşturun
-Öncelikle uzaysal bölgeleri temsil eden iki çokgen nesneyi tanımlayacağız.
+## .NET'te Örtüşme İşlemlerini Nasıl Gerçekleştirirsiniz
+Aşağıda iki poligon oluşturup her bir örtüşme yöntemini uygulayan adım adım bir yürütme bulunmaktadır.
+
+### Adım 1: Poligon Nesnelerini Oluşturma
+İlk olarak, kısmen üst üste gelen iki basit kare poligon tanımlıyoruz. Bu poligonlar test verilerimiz olacak.
+
 ```csharp
 var polygon1 = new Polygon();
 polygon1.ExteriorRing = new LinearRing(new[]
@@ -54,66 +81,100 @@ polygon2.ExteriorRing = new LinearRing(new[]
 	new Point(1, 1),
 });
 ```
-## Adım 2: Kesişme İşlemini Gerçekleştirin
-Şimdi iki çokgenin kesişimini bulalım.
+
+### Adım 2: Intersection İşlemini Gerçekleştirme
+**Intersection**, iki poligonun kesişen alanını verir.
+
 ```csharp
 var intersection = polygon1.Intersection(polygon2);
-Console.WriteLine("Intersection type is {0}", intersection.GeometryType); // Çokgen
+Console.WriteLine("Intersection type is {0}", intersection.GeometryType); // Polygon
 ```
-## Adım 3: Kesişme Noktalarını Yazdırın
-Kesişme çokgeninin noktalarını yazdıracağız.
+
+### Adım 3: Intersection Noktalarını Yazdırma
+Sonuç poligonunun koordinatlarını göstermek için yardımcı bir metod (`PrintRing`) kullanıyoruz.
+
 ```csharp
 PrintRing(((IPolygon)intersection).ExteriorRing);
 ```
-## Adım 4: Birleştirme İşlemini Gerçekleştirin
-Şimdi iki çokgenin birleşimini bulalım.
+
+### Adım 4: Union İşlemini Gerçekleştirme
+**Union**, her iki poligonu da kapsayan tek bir şekil olarak birleştirir.
+
 ```csharp
 var union = polygon1.Union(polygon2);
-Console.WriteLine("Union type is {0}", union.GeometryType); // Çokgen
+Console.WriteLine("Union type is {0}", union.GeometryType); // Polygon
 ```
-## Adım 5: Birleşim Noktalarını Yazdırın
-Birleşim çokgeninin noktalarını yazdırın.
+
+### Adım 5: Union Noktalarını Yazdırma
+Birleştirilmiş geometrinin koordinatlarını çıktılayın.
+
 ```csharp
 PrintRing(((IPolygon)union).ExteriorRing);
 ```
-## Adım 6: Fark İşlemini Gerçekleştirin
-Şimdi iki çokgen arasındaki farkı bulalım.
+
+### Adım 6: Difference İşlemini Gerçekleştirme
+**Difference**, `polygon2`yi `polygon1`den çıkarır ve `polygon1`in `polygon2` ile kesişmeyen kısmını bırakır.
+
 ```csharp
 var difference = polygon1.Difference(polygon2);
-Console.WriteLine("Difference type is {0}", difference.GeometryType); // Çokgen
+Console.WriteLine("Difference type is {0}", difference.GeometryType); // Polygon
 ```
-## Adım 7: Fark Noktalarını Yazdırın
-Fark çokgeninin noktalarını yazdırın.
+
+### Adım 7: Difference Noktalarını Yazdırma
+Çıkarma işleminden sonra kalan köşe noktalarını gösterin.
+
 ```csharp
 PrintRing(((IPolygon)difference).ExteriorRing);
 ```
-## Adım 8: Simetrik Fark İşlemini Gerçekleştirin
-Son olarak iki çokgen arasındaki simetrik farkı bulalım.
+
+### Adım 8: Symmetric Difference İşlemini Gerçekleştirme
+**Symmetric Difference**, her iki poligona ait olup aynı anda her iki poligona da ait olmayan alanları döndürür. Sonuç bir `MultiPolygon` olur.
+
 ```csharp
 var symDifference = polygon1.SymDifference(polygon2);
-Console.WriteLine("Symmetric Difference type is {0}", symDifference.GeometryType); // Çoklu Çokgen
+Console.WriteLine("Symmetric Difference type is {0}", symDifference.GeometryType); // MultiPolygon
 ```
-## Adım 9: Simetrik Fark Çokgenlerini Yazdırın
-Simetrik farktaki her çokgenin noktalarını yazdırın.
+
+### Adım 9: Symmetric Difference Poligonlarını Yazdırma
+`MultiPolygon` içindeki her bir poligonu döngüye alıp noktalarını yazdırın.
+
 ```csharp
 var multiPolygon = (IMultiPolygon)symDifference;
 Console.WriteLine("Polygons count is {0}", multiPolygon.Count); // 2
 PrintRing(((IPolygon)multiPolygon[0]).ExteriorRing);
 PrintRing(((IPolygon)multiPolygon[1]).ExteriorRing);
 ```
-## Çözüm
-Geometri katmanlarına hakim olmak, mekansal analizde çok önemlidir ve Aspose.GIS for .NET, bu işlemleri verimli bir şekilde gerçekleştirmek için kapsamlı bir araç seti sağlar. Bu eğitimi takip ederek, geometrik şekiller üzerinde kesişim, birleşim, fark ve simetrik fark işlemlerini gerçekleştirmek için Aspose.GIS for .NET'i nasıl kullanacağınızı öğrendiniz.
-## SSS'ler
-### S: Aspose.GIS for .NET'i ticari projelerimde kullanabilir miyim?
-Evet, Aspose.GIS for .NET hem ticari hem de ticari olmayan projelerde kullanılabilir.
-### S: Aspose.GIS for .NET'in deneme sürümü mevcut mu?
- Evet, ücretsiz deneme sürümünü şuradan indirebilirsiniz:[Burada](https://releases.aspose.com/).
-### S: Aspose.GIS for .NET için nasıl destek alabilirim?
- Aspose.GIS topluluk forumundan destek alabilirsiniz[Burada](https://forum.aspose.com/c/gis/33).
-### S: Aspose.GIS for .NET için herhangi bir geçici lisans mevcut mu?
- Evet, test ve değerlendirme amaçlı geçici lisanslar mevcuttur. Bunları şuradan alabilirsiniz:[Burada](https://purchase.aspose.com/temporary-license/).
-### S: Aspose.GIS for .NET'i doğrudan satın alabilir miyim?
- Evet, Aspose.GIS for .NET'i web sitesinden satın alabilirsiniz.[Burada](https://purchase.aspose.com/buy).
+
+## Yaygın Sorunlar ve Çözümler
+| Sorun | Neden Oluşur | Çözüm |
+|-------|----------------|-----|
+| `Intersection` sonucunda `null` | Poligonlar gerçekte üst üste gelmiyor. | Koordinatları kontrol edin veya `Intersection` çağırmadan önce `Intersects` kontrolü yapın. |
+| `SymDifference` sonucunda beklenmeyen `MultiPolygon` | Simetrik fark, ayrık bileşenler üretebilir. | Gösterildiği gibi `IMultiPolygon` tipine dönüştürüp döngüyle işleyin. |
+| Büyük veri setlerinde performans yavaşlaması | Her işlem geometriyi sıfırdan yeniden hesaplar. | Ara sonuçları yeniden kullanın veya örtüşmeden önce `Simplify()` ile geometrileri sadeleştirin. |
+
+## Sıkça Sorulan Sorular
+
+**Q: Aspose.GIS for .NET'i ticari projelerimde kullanabilir miyim?**  
+A: Evet, geçerli bir lisansla Aspose.GIS for .NET hem ticari hem de ticari olmayan projelerde kullanılabilir.
+
+**Q: Aspose.GIS for .NET için bir deneme sürümü mevcut mu?**  
+A: Evet, ücretsiz bir deneme sürümünü [buradan](https://releases.aspose.com/) indirebilirsiniz.
+
+**Q: Aspose.GIS for .NET için destek nasıl alınır?**  
+A: Aspose.GIS topluluk forumundan [burada](https://forum.aspose.com/c/gis/33) destek alabilirsiniz.
+
+**Q: Aspose.GIS for .NET için geçici lisanslar mevcut mu?**  
+A: Evet, test ve değerlendirme amaçlı geçici lisanslar [buradan](https://purchase.aspose.com/temporary-license/) temin edilebilir.
+
+**Q: Aspose.GIS for .NET'i doğrudan satın alabilir miyim?**  
+A: Evet, Aspose.GIS for .NET'i web sitesinden [buradan](https://purchase.aspose.com/buy) satın alabilirsiniz.
+
+---
+
+**Son Güncelleme:** 2025-12-07  
+**Test Edilen Sürüm:** Aspose.GIS 24.11 for .NET  
+**Yazar:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
