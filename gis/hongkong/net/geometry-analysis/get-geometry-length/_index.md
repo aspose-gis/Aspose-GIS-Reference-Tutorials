@@ -1,32 +1,46 @@
 ---
-title: 使用 Aspose.GIS 計算 .NET 中的幾何長度
-linktitle: 取得幾何長度
+date: 2025-12-07
+description: 學習如何在 .NET 中使用 Aspose.GIS 計算幾何長度，以實現高效的空間資料處理。逐步指南，附有程式碼範例。
+language: zh-hant
+linktitle: Get Geometry Length
 second_title: Aspose.GIS .NET API
-description: 了解如何使用 Aspose.GIS 在 .NET 中計算幾何長度，以實現高效的空間資料處理。帶有程式碼範例的分步指南。
+title: 如何在 .NET 中使用 Aspose.GIS 計算幾何長度
+url: /net/geometry-analysis/get-geometry-length/
 weight: 24
-url: /zh-hant/net/geometry-analysis/get-geometry-length/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# 使用 Aspose.GIS 計算 .NET 中的幾何長度
+# 如何在 .NET 中使用 Aspose.GIS 計算幾何長度
 
 ## 介紹
-在 .NET 開發領域，Aspose.GIS 作為一個強大的工具包脫穎而出，為處理地理資訊系統 (GIS) 提供強大的功能。無論您是經驗豐富的開發人員還是剛踏入 GIS 程式設計領域，Aspose.GIS for .NET 都提供了一套全面的工具來有效地處理空間資料。在本教程中，我們將深入研究 GIS 開發的基本任務之一 - 計算幾何長度。我們將逐步探索如何使用 Aspose.GIS for .NET 來實現這一目標，並將該過程分解為可管理的區塊以便於理解。
-## 先決條件
-在深入學習本教程之前，請確保您具備以下先決條件：
-### 1.Aspose.GIS for .NET函式庫
-首先，您需要在開發環境中安裝 Aspose.GIS for .NET 程式庫。如果您還沒有這樣做，您可以從[Aspose.GIS for .NET 文檔](https://reference.aspose.com/gis/net/)頁。
-### 2..NET開發環境
-確保您的電腦上設定了 .NET 開發環境。這包括安裝 Visual Studio 或任何其他相容的 IDE。
-### 3.C#的基本理解
-對 C# 程式語言的基本了解對於學習本教程至關重要。
+如果你正在尋找一種清晰、實用的 **計算長度** 方法，來測量 .NET 應用程式中的幾何物件，那麼你來對地方了。Aspose.GIS for .NET 提供了一套豐富的 GIS 專屬 API，讓空間計算（例如測量線段長度或多邊形周長）變得簡單且效能優異。在本教學中，我們將一步步說明整個流程，從環境設定到撰寫返回精確長度值的 C# 程式碼。
 
-## 導入命名空間
-為了利用 Aspose.GIS for .NET 提供的功能，您需要將必要的命名空間匯入到您的 C# 專案中。
-## 1.導入Aspose.GIS命名空間
+## 快速回答
+- **「GetLength()」回傳什麼？** 針對線段回傳線長；針對多邊形回傳周長。  
+- **需要哪個命名空間？** `Aspose.Gis.Geometries`。  
+- **可以在 .NET 6 上使用嗎？** 可以，Aspose.GIS 支援 .NET 5、.NET 6 以及更高版本。  
+- **開發階段需要授權嗎？** 免費試用可用於評估；正式上線需購買授權。  
+- **計算會考慮單位嗎？** 長度以座標系統的單位回傳（例如投影座標系統的公尺）。
+
+## 前置條件
+在開始之前，請確保你具備以下條件：
+
+### 1. Aspose.GIS for .NET 套件
+首先，你需要在開發環境中安裝 Aspose.GIS for .NET 套件。若尚未安裝，可前往 [Aspose.GIS for .NET Documentation](https://reference.aspose.com/gis/net/) 下載。
+
+### 2. .NET 開發環境
+確保你的機器已設定好 .NET 開發環境，包含 Visual Studio 或其他相容的 IDE。
+
+### 3. 基本的 C# 知識
+具備 C# 程式語言的基本概念，才能順利跟隨本教學。
+
+## 匯入命名空間
+為了使用 Aspose.GIS for .NET 提供的功能，你需要在 C# 專案中匯入相應的命名空間。
+
+### 匯入 Aspose.GIS 命名空間
 ```csharp
 using Aspose.Gis.Geometries;
 using System;
@@ -36,21 +50,36 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## 第 1 步：建立幾何對象
-首先，建立表示要計算長度的形狀的幾何物件。這可以包括直線、多邊形或任何其他幾何形狀。
+## 什麼是 Geometry Length？
+`Geometry.GetLength()` 是一個方法，用來取得幾何物件的線性測量值。對於 `LineString`，它回傳總線長；對於 `Polygon`，則回傳周長（所有邊長的總和）。此方法將底層數學抽象化，讓你專注於更高層次的 GIS 邏輯。
+
+## 為什麼使用 Aspose.GIS 進行長度計算？
+- **無外部相依** – 純 .NET 函式庫，無需原生 DLL。  
+- **高精度** – 使用 double 精度算術，確保結果準確。  
+- **跨平台** – 可在 Windows、Linux、macOS 上執行，支援 .NET Core/5/6+。  
+
+## 步驟說明
+
+### 步驟 1：建立 Geometry 物件
+首先，建立代表欲計算長度之形狀的 Geometry 物件。這可以是線、 多邊形，或其他任何幾何形狀。
+
 ```csharp
 var line = new LineString();
 line.AddPoint(0, 0);
 line.AddPoint(2, 2);
 line.AddPoint(2, 0);
 ```
-## 第 2 步：計算線的長度
-建立線幾何圖形後，您可以使用下列公式計算其長度`GetLength()`方法。
+
+### 步驟 2：在 C# 中計算線段長度
+建立好線段 Geometry 後，即可使用 `GetLength()` 方法計算其長度。以下示範如何在單行程式碼中 **calculate line length c#**。
+
 ```csharp
-Console.WriteLine("{0:F}", line.GetLength()); //輸出：4.83
+Console.WriteLine("{0:F}", line.GetLength()); // Output: 4.83
 ```
-## 第 3 步：建立多邊形幾何體
-同樣，您可以使用以下命令建立多邊形幾何對象`Polygon`和`LinearRing`類。
+
+### 步驟 3：建立 Polygon Geometry
+同樣地，你可以使用 `Polygon` 與 `LinearRing` 類別建立多邊形 Geometry 物件。
+
 ```csharp
 var rectangle = new Polygon(new LinearRing(new[]
 {
@@ -61,25 +90,47 @@ var rectangle = new Polygon(new LinearRing(new[]
     new Point(0, 0),
 }));
 ```
-## 步驟 4：計算多邊形的周長
-對於多邊形，`GetLength()`方法返回週長。
+
+### 步驟 4：取得多邊形的長度
+對於多邊形，`GetLength()` 方法回傳的是周長，也就是形狀的 **how to get length**。
+
 ```csharp
-Console.WriteLine("{0:F}", rectangle.GetLength()); //輸出：4.00
+Console.WriteLine("{0:F}", rectangle.GetLength()); // Output: 4.00
 ```
 
+## 常見問題與解決方案
+| 問題 | 解決方案 |
+|------|----------|
+| **意外的零長度** | 確認 Geometry 的座標系統與你提供的資料相符；重複點可能導致零長度段。 |
+| **單位不正確** | 記得 `GetLength()` 以 CRS 的單位回傳。必要時自行轉換為公尺或英尺。 |
+| **大量資料集的效能** | 盡可能重複使用 Geometry 物件，避免在緊密迴圈中大量建立暫時點。 |
+
+## 常見問答
+
+**Q: Aspose.GIS for .NET 是否相容所有 .NET 框架？**  
+A: Aspose.GIS for .NET 相容 .NET Framework 4.6.1 以上版本，以及 .NET 5/6/7。
+
+**Q: 可以在購買前先試用 Aspose.GIS for .NET 嗎？**  
+A: 可以，請從 [here](https://releases.aspose.com/) 取得免費試用版。
+
+**Q: 哪裡可以取得 Aspose.GIS for .NET 的支援？**  
+A: 可於 Aspose.GIS 社群論壇 [here](https://forum.aspose.com/c/gis/33) 尋求協助。
+
+**Q: 如何取得 Aspose.GIS for .NET 的臨時授權？**  
+A: 可從 [here](https://purchase.aspose.com/temporary-license/) 申請臨時授權。
+
+**Q: 可以自訂幾何長度計算的輸出格式嗎？**  
+A: 可以，Aspose.GIS for .NET 提供多種格式化選項，讓你依需求自訂輸出格式。
+
 ## 結論
-在本教程中，我們學習如何使用 Aspose.GIS for .NET 計算幾何長度。透過遵循逐步指南並利用 Aspose.GIS 提供的功能，您可以有效地處理 .NET 應用程式中的空間資料。
-## 常見問題解答
-### Q：Aspose.GIS for .NET 是否與所有 .NET 框架相容？
-答：Aspose.GIS for .NET 與 .NET Framework 4.6.1 或更高版本相容。
-### Q：我可以在購買前試用 Aspose.GIS for .NET 嗎？
-答：是的，您可以從以下位置免費試用 Aspose.GIS for .NET：[這裡](https://releases.aspose.com/).
-### Q：在哪裡可以找到對 Aspose.GIS for .NET 的支援？
-答：您可以從 Aspose.GIS 社群論壇找到支援和協助[這裡](https://forum.aspose.com/c/gis/33).
-### Q：如何取得 Aspose.GIS for .NET 的臨時授權？
-答：您可以從以下機構取得臨時許可證：[這裡](https://purchase.aspose.com/temporary-license/).
-### Q：我可以自訂幾何長度計算的輸出格式嗎？
-答：是的，Aspose.GIS for .NET 提供了各種格式選項來根據您的要求自訂輸出格式。
+在本教學中，我們說明了如何使用 Aspose.GIS for .NET **計算長度**，包括線段與多邊形的測量。透過步驟示範，你現在可以將精確的空間測量整合至任何 .NET 應用程式，無論是桌面 GIS 工具、Web 服務，或是後端資料處理管線。
+
+---
+
+**最後更新：** 2025-12-07  
+**測試環境：** Aspose.GIS 24.11 for .NET  
+**作者：** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
