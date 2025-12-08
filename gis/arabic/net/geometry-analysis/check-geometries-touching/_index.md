@@ -102,23 +102,16 @@ Console.WriteLine(geometry1.Touches(geometry4)); // False
 ج: نعم. يدعم .NET Framework، .NET Core، .NET 5+، و .NET 6+، مما يمنحك مرونة عبر المشاريع المكتبية، الويب، والسحابة.
 
 **س: هل يمكنني تجربة Aspose.GIS قبل شراء الترخيص؟**  
-ج: بالتأكيد. يمكنك الحصول على نسخة تجريبية مجانية من موقع Aspose **[هنا](https://purchase.aspose.com/temporary-license/)** لاستكشاف جميع الميزات، بما في ذلك عملية `Touches`.
+ج: بالتأكيد. يمكنك الحصول على نسخة تجريبية مجانية من موقع Aspose [هنا](https://purchase.aspose.com/temporary-license/) لاستكشاف جميع الميزات، بما في ذلك عملية `Touches`.
 
 **س: أين يمكنني العثور على الدعم للاستفسارات المتعلقة بـ Aspose.GIS؟**  
-ج: زر **[منتدى Aspose.GIS الرسمي](https://forum.aspose.com/c/gis/33)** لطرح الأسئلة، مشاركة الأمثلة، والحصول على مساعدة من المجتمع ومهندسي Aspose.
+ج: زر [منتدى Aspose.GIS الرسمي](https://forum.aspose.com/c/gis/33) لطرح الأسئلة، مشاركة الأمثلة، والحصول على مساعدة من المجتمع ومهندسي Aspose.
 
 **س: كم مرة تُصدر تحديثات لـ Aspose.GIS؟**  
 ج: تصدر Aspose تحديثات منتظمة تضيف دعم صيغ جديدة، تحسينات أداء، وإصلاحات أخطاء، لضمان التوافق مع أحدث إصدارات .NET.
 
 **س: هل يمكنني الحصول على ترخيص مؤقت لـ Aspose.GIS؟**  
-ج: نعم، الترخيص المؤقت متاح **[هنا](https://purchase.aspose.com/temporary-license/)** لأغراض التقييم.
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
+ج: نعم، الترخيص المؤقت متاح [هنا](https://purchase.aspose.com/temporary-license/) لأغراض التقييم.
 
 ---
 
@@ -126,4 +119,9 @@ Console.WriteLine(geometry1.Touches(geometry4)); // False
 **تم الاختبار مع:** Aspose.GIS for .NET 24.11 (أحدث نسخة وقت الكتابة)  
 **المؤلف:** Aspose  
 
----
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

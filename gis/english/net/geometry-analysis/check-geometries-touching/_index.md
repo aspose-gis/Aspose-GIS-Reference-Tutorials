@@ -100,23 +100,16 @@ Console.WriteLine(geometry1.Touches(geometry4)); // False
 A: Yes. It supports .NET Framework, .NET Core, .NET 5+, and .NET 6+, giving you flexibility across desktop, web, and cloud projects.
 
 **Q: Can I try Aspose.GIS before purchasing a license?**  
-A: Absolutely. You can obtain a free trial from the Aspose website **[here](https://purchase.aspose.com/temporary-license/)** to explore all features, including the `Touches` operation.
+A: Absolutely. You can obtain a free trial from the Aspose website [here](https://purchase.aspose.com/temporary-license/) to explore all features, including the `Touches` operation.
 
 **Q: Where can I find support for Aspose.GIS‑related queries?**  
-A: Visit the official **[Aspose.GIS forum](https://forum.aspose.com/c/gis/33)** to ask questions, share examples, and get help from both the community and Aspose engineers.
+A: Visit the official [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) to ask questions, share examples, and get help from both the community and Aspose engineers.
 
 **Q: How often are updates released for Aspose.GIS?**  
 A: Aspose releases regular updates that add new format support, performance improvements, and bug fixes, ensuring compatibility with the latest .NET releases.
 
 **Q: Can I obtain a temporary license for Aspose.GIS?**  
-A: Yes, a temporary license is available **[here](https://purchase.aspose.com/temporary-license/)** for evaluation purposes.
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
+A: Yes, a temporary license is available [here](https://purchase.aspose.com/temporary-license/) for evaluation purposes.
 
 ---
 
@@ -124,4 +117,9 @@ A: Yes, a temporary license is available **[here](https://purchase.aspose.com/te
 **Tested With:** Aspose.GIS for .NET 24.11 (latest at time of writing)  
 **Author:** Aspose  
 
----
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

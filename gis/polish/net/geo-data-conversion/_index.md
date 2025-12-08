@@ -72,13 +72,6 @@ Dowiedz się, jak bez wysiłku konwertować Shapefile do GeoJSON w .NET przy uż
 ### [Konwertuj TopoJSON do GeoJSON](./convert-topojson-to-geojson/)
 Dowiedz się, jak płynnie konwertować TopoJSON do GeoJSON przy użyciu Aspose.GIS dla .NET. Skorzystaj z naszego tutorialu krok po kroku dla efektywnej obsługi danych geograficznych.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ## Najczęściej zadawane pytania
 
 **Q: Czy mogę używać tych konwersji w środowisku produkcyjnym?**  
@@ -101,3 +94,10 @@ A: Tak. API automatycznie zachowuje informacje o CRS, chyba że wyraźnie przeks
 **Ostatnia aktualizacja:** 2025-12-04  
 **Testowano z:** Aspose.GIS for .NET 24.11  
 **Autor:** Aspose
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -101,23 +101,16 @@ Console.WriteLine(geometry1.Touches(geometry4)); // False
 答：是的。它支持 .NET Framework、.NET Core、.NET 5+、以及 .NET 6+，为桌面、Web 与云项目提供灵活性。
 
 **问：我可以在购买许可证前试用 Aspose.GIS 吗？**  
-答：当然。您可以从 Aspose 网站的 **[此处](https://purchase.aspose.com/temporary-license/)** 获取免费试用版，体验包括 `Touches` 在内的全部功能。
+答：当然。您可以从 Aspose 网站的 [此处](https://purchase.aspose.com/temporary-license/) 获取免费试用版，体验包括 `Touches` 在内的全部功能。
 
 **问：在哪里可以获取 Aspose.GIS 相关的支持？**  
-答：访问官方 **[Aspose.GIS 论坛](https://forum.aspose.com/c/gis/33)**，提问、分享示例，获取社区和 Aspose 工程师的帮助。
+答：访问官方 [Aspose.GIS 论坛](https://forum.aspose.com/c/gis/33) 提问、分享示例，获取社区和 Aspose 工程师的帮助。
 
 **问：Aspose.GIS 的更新频率如何？**  
 答：Aspose 定期发布更新，新增格式支持、性能改进和 bug 修复，确保与最新 .NET 版本兼容。
 
 **问：我能获取 Aspose.GIS 的临时许可证吗？**  
-答：可以，临时许可证请前往 **[此处](https://purchase.aspose.com/temporary-license/)** 申请，用于评估目的。
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
+答：可以，临时许可证请前往 [此处](https://purchase.aspose.com/temporary-license/) 申请，用于评估目的。
 
 ---
 
@@ -125,4 +118,9 @@ Console.WriteLine(geometry1.Touches(geometry4)); // False
 **测试环境：** Aspose.GIS for .NET 24.11（撰写时最新版本）  
 **作者：** Aspose  
 
----
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

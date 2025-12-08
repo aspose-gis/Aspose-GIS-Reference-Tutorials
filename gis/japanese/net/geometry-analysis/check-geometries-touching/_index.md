@@ -101,23 +101,16 @@ Console.WriteLine(geometry1.Touches(geometry4)); // False
 A: はい。.NET Framework、.NET Core、.NET 5+、.NET 6+ をサポートしており、デスクトップ、Web、クラウドプロジェクトで柔軟に使用できます。
 
 **Q: ライセンスを購入する前に Aspose.GIS を試すことはできますか？**  
-A: もちろんです。Aspose のウェブサイト **[こちら](https://purchase.aspose.com/temporary-license/)** から無料トライアルを取得し、`Touches` 操作を含むすべての機能を体験できます。
+A: もちろんです。Aspose のウェブサイト [こちら](https://purchase.aspose.com/temporary-license/) から無料トライアルを取得し、`Touches` 操作を含むすべての機能を体験できます。
 
 **Q: Aspose.GIS に関する質問のサポートはどこで受けられますか？**  
-A: 公式 **[Aspose.GIS フォーラム](https://forum.aspose.com/c/gis/33)** にアクセスして質問したり、例を共有したり、コミュニティや Aspose エンジニアから支援を受けたりできます。
+A: 公式 [Aspose.GIS フォーラム](https://forum.aspose.com/c/gis/33) にアクセスして質問したり、例を共有したり、コミュニティや Aspose エンジニアから支援を受けたりできます。
 
 **Q: Aspose.GIS のアップデートはどのくらいの頻度でリリースされますか？**  
 A: Aspose は定期的にアップデートをリリースし、新しいフォーマットサポート、パフォーマンス向上、バグ修正を追加して、最新の .NET リリースとの互換性を保ちます。
 
 **Q: Aspose.GIS の一時ライセンスを取得できますか？**  
-A: はい、評価目的で使用できる一時ライセンスは **[こちら](https://purchase.aspose.com/temporary-license/)** から入手可能です。
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
+A: はい、評価目的で使用できる一時ライセンスは [こちら](https://purchase.aspose.com/temporary-license/) から入手可能です。
 
 ---
 
@@ -125,4 +118,9 @@ A: はい、評価目的で使用できる一時ライセンスは **[こちら]
 **テスト環境:** Aspose.GIS for .NET 24.11 (latest at time of writing)  
 **作者:** Aspose  
 
----
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

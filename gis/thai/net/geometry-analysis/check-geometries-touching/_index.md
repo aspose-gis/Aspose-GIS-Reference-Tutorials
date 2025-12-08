@@ -103,23 +103,16 @@ Console.WriteLine(geometry1.Touches(geometry4)); // False
 A: รองรับ .NET Framework, .NET Core, .NET 5+, และ .NET 6+ ให้ความยืดหยุ่นสำหรับโปรเจกต์เดสก์ท็อป, เว็บ, และคลาวด์
 
 **Q: สามารถทดลองใช้ Aspose.GIS ก่อนซื้อไลเซนส์ได้หรือไม่?**  
-A: แน่นอน คุณสามารถรับรุ่นทดลองฟรีจากเว็บไซต์ Aspose **[here](https://purchase.aspose.com/temporary-license/)** เพื่อสำรวจฟีเจอร์ทั้งหมดรวมถึงการดำเนินการ `Touches`
+A: แน่นอน คุณสามารถรับรุ่นทดลองฟรีจากเว็บไซต์ Aspose [here](https://purchase.aspose.com/temporary-license/) เพื่อสำรวจฟีเจอร์ทั้งหมดรวมถึงการดำเนินการ `Touches`
 
 **Q: จะหาแหล่งสนับสนุนสำหรับคำถามเกี่ยวกับ Aspose.GIS ได้จากที่ไหน?**  
-A: เยี่ยมชม **[Aspose.GIS forum](https://forum.aspose.com/c/gis/33)** เพื่อถามคำถาม, แชร์ตัวอย่าง, และรับความช่วยเหลือจากชุมชนและวิศวกรของ Aspose
+A: เยี่ยมชม [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) เพื่อถามคำถาม, แชร์ตัวอย่าง, และรับความช่วยเหลือจากชุมชนและวิศวกรของ Aspose
 
 **Q: การอัปเดตของ Aspose.GIS มีความถี่แค่ไหน?**  
 A: Aspose ปล่อยอัปเดตเป็นประจำเพื่อเพิ่มการสนับสนุนรูปแบบใหม่, ปรับปรุงประสิทธิภาพ, และแก้ไขบั๊ก ทำให้เข้ากันได้กับ .NET เวอร์ชันล่าสุด
 
 **Q: สามารถขอรับลิขสิทธิ์ชั่วคราวสำหรับ Aspose.GIS ได้หรือไม่?**  
-A: ได้, ลิขสิทธิ์ชั่วคราวมีให้ **[here](https://purchase.aspose.com/temporary-license/)** สำหรับการประเมินผล
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
+A: ได้, ลิขสิทธิ์ชั่วคราวมีให้ [here](https://purchase.aspose.com/temporary-license/) สำหรับการประเมินผล
 
 ---
 
@@ -127,4 +120,9 @@ A: ได้, ลิขสิทธิ์ชั่วคราวมีให้
 **ทดสอบด้วย:** Aspose.GIS for .NET 24.11 (latest at time of writing)  
 **ผู้เขียน:** Aspose  
 
----
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

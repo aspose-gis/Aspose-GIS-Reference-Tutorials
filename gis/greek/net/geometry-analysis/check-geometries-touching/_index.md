@@ -103,23 +103,16 @@ Console.WriteLine(geometry1.Touches(geometry4)); // False
 Α: Ναι. Υποστηρίζει .NET Framework, .NET Core, .NET 5+, και .NET 6+, προσφέροντας ευελιξία σε desktop, web και cloud έργα.
 
 **Ε: Μπορώ να δοκιμάσω το Aspose.GIS πριν αγοράσω άδεια;**  
-Α: Φυσικά. Μπορείτε να αποκτήσετε δωρεάν δοκιμαστική άδεια από την ιστοσελίδα Aspose **[εδώ](https://purchase.aspose.com/temporary-license/)** για να εξερευνήσετε όλες τις δυνατότητες, συμπεριλαμβανομένης της λειτουργίας `Touches`.
+Α: Φυσικά. Μπορείτε να αποκτήσετε δωρεάν δοκιμαστική άδεια από την ιστοσελίδα Aspose [εδώ](https://purchase.aspose.com/temporary-license/) για να εξερευνήσετε όλες τις δυνατότητες, συμπεριλαμβανομένης της λειτουργίας `Touches`.
 
 **Ε: Πού μπορώ να βρω υποστήριξη για ερωτήματα σχετικά με το Aspose.GIS;**  
-Α: Επισκεφθείτε το επίσημο **[Φόρουμ Aspose.GIS](https://forum.aspose.com/c/gis/33)** για να θέσετε ερωτήσεις, να μοιραστείτε παραδείγματα και να λάβετε βοήθεια από την κοινότητα και τους μηχανικούς της Aspose.
+Α: Επισκεφθείτε το επίσημο [Φόρουμ Aspose.GIS](https://forum.aspose.com/c/gis/33) για να θέσετε ερωτήσεις, να μοιραστείτε παραδείγματα και να λάβετε βοήθεια από την κοινότητα και τους μηχανικούς της Aspose.
 
 **Ε: Πόσο συχνά κυκλοφορούν ενημερώσεις για το Aspose.GIS;**  
 Α: Η Aspose κυκλοφορεί τακτικές ενημερώσεις που προσθέτουν υποστήριξη νέων μορφών, βελτιώσεις απόδοσης και διορθώσεις σφαλμάτων, διασφαλίζοντας συμβατότητα με τις τελευταίες εκδόσεις .NET.
 
 **Ε: Μπορώ να αποκτήσω προσωρινή άδεια για το Aspose.GIS;**  
-Α: Ναι, προσωρινή άδεια είναι διαθέσιμη **[εδώ](https://purchase.aspose.com/temporary-license/)** για σκοπούς αξιολόγησης.
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
+Α: Ναι, προσωρινή άδεια είναι διαθέσιμη [εδώ](https://purchase.aspose.com/temporary-license/) για σκοπούς αξιολόγησης.
 
 ---
 
@@ -127,4 +120,9 @@ Console.WriteLine(geometry1.Touches(geometry4)); // False
 **Δοκιμάστηκε Με:** Aspose.GIS for .NET 24.11 (τελευταία έκδοση τη στιγμή της συγγραφής)  
 **Συγγραφέας:** Aspose  
 
----
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -103,23 +103,16 @@ Console.WriteLine(geometry1.Touches(geometry4)); // False
 R : Oui. Il prend en charge .NET Framework, .NET Core, .NET 5+, et .NET 6+, vous offrant une flexibilité pour les projets de bureau, web et cloud.
 
 **Q : Puis‑je essayer Aspose.GIS avant d’acheter une licence ?**  
-R : Absolument. Vous pouvez obtenir un essai gratuit depuis le site Aspose **[ici](https://purchase.aspose.com/temporary-license/)** pour explorer toutes les fonctionnalités, y compris l’opération `Touches`.
+R : Absolument. Vous pouvez obtenir un essai gratuit depuis le site Aspose [ici](https://purchase.aspose.com/temporary-license/) pour explorer toutes les fonctionnalités, y compris l’opération `Touches`.
 
 **Q : Où puis‑je trouver du support pour les questions liées à Aspose.GIS ?**  
-R : Consultez le forum officiel **[Aspose.GIS](https://forum.aspose.com/c/gis/33)** pour poser des questions, partager des exemples et obtenir de l’aide de la communauté ainsi que des ingénieurs Aspose.
+R : Consultez le forum officiel [Aspose.GIS](https://forum.aspose.com/c/gis/33) pour poser des questions, partager des exemples et obtenir de l’aide de la communauté ainsi que des ingénieurs Aspose.
 
 **Q : À quelle fréquence les mises à jour d’Aspose.GIS sont‑elles publiées ?**  
 R : Aspose publie régulièrement des mises à jour ajoutant de nouveaux formats, des améliorations de performance et des corrections de bugs, garantissant la compatibilité avec les dernières versions de .NET.
 
 **Q : Puis‑je obtenir une licence temporaire pour Aspose.GIS ?**  
-R : Oui, une licence temporaire est disponible **[ici](https://purchase.aspose.com/temporary-license/)** à des fins d’évaluation.
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
+R : Oui, une licence temporaire est disponible [ici](https://purchase.aspose.com/temporary-license/) à des fins d’évaluation.
 
 ---
 
@@ -127,4 +120,9 @@ R : Oui, une licence temporaire est disponible **[ici](https://purchase.aspose
 **Testé avec :** Aspose.GIS for .NET 24.11 (dernière version au moment de la rédaction)  
 **Auteur :** Aspose  
 
----
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

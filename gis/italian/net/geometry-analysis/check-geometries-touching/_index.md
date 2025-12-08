@@ -103,23 +103,16 @@ Console.WriteLine(geometry1.Touches(geometry4)); // False
 R: Sì. Supporta .NET Framework, .NET Core, .NET 5+ e .NET 6+, offrendoti flessibilità su progetti desktop, web e cloud.
 
 **D: Posso provare Aspose.GIS prima di acquistare una licenza?**  
-R: Assolutamente. Puoi ottenere una prova gratuita dal sito Aspose **[qui](https://purchase.aspose.com/temporary-license/)** per esplorare tutte le funzionalità, incluso l'operazione `Touches`.
+R: Assolutamente. Puoi ottenere una prova gratuita dal sito Aspose [qui](https://purchase.aspose.com/temporary-license/) per esplorare tutte le funzionalità, incluso l'operazione `Touches`.
 
 **D: Dove posso trovare supporto per le domande relative ad Aspose.GIS?**  
-R: Visita il forum ufficiale **[Aspose.GIS](https://forum.aspose.com/c/gis/33)** per porre domande, condividere esempi e ricevere assistenza sia dalla community sia dagli ingegneri Aspose.
+R: Visita il forum ufficiale [Aspose.GIS](https://forum.aspose.com/c/gis/33) per porre domande, condividere esempi e ricevere assistenza sia dalla community sia dagli ingegneri Aspose.
 
 **D: Con quale frequenza vengono rilasciati gli aggiornamenti per Aspose.GIS?**  
 R: Aspose rilascia aggiornamenti regolari che aggiungono nuovi formati, miglioramenti delle prestazioni e correzioni di bug, garantendo la compatibilità con le ultime versioni .NET.
 
 **D: Posso ottenere una licenza temporanea per Aspose.GIS?**  
-R: Sì, una licenza temporanea è disponibile **[qui](https://purchase.aspose.com/temporary-license/)** per scopi di valutazione.
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
+R: Sì, una licenza temporanea è disponibile [qui](https://purchase.aspose.com/temporary-license/) per scopi di valutazione.
 
 ---
 
@@ -127,4 +120,9 @@ R: Sì, una licenza temporanea è disponibile **[qui](https://purchase.aspose.co
 **Testato con:** Aspose.GIS for .NET 24.11 (latest at time of writing)  
 **Autore:** Aspose  
 
----
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

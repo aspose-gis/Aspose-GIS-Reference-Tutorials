@@ -102,23 +102,16 @@ Console.WriteLine(geometry1.Touches(geometry4)); // False
 A: 네. .NET Framework, .NET Core, .NET 5+, .NET 6+를 지원하므로 데스크톱, 웹, 클라우드 프로젝트 모두에 유연하게 사용할 수 있습니다.
 
 **Q: 라이선스를 구매하기 전에 Aspose.GIS를 체험해볼 수 있나요?**  
-A: 물론입니다. Aspose 웹사이트 **[here](https://purchase.aspose.com/temporary-license/)**에서 무료 체험판을 받아 `Touches` 작업을 포함한 모든 기능을 탐색할 수 있습니다.
+A: 물론입니다. Aspose 웹사이트 [here](https://purchase.aspose.com/temporary-license/) 에서 무료 체험판을 받아 `Touches` 작업을 포함한 모든 기능을 탐색할 수 있습니다.
 
 **Q: Aspose.GIS 관련 문의는 어디서 지원받을 수 있나요?**  
-A: 공식 **[Aspose.GIS forum](https://forum.aspose.com/c/gis/33)**에 방문해 질문을 올리거나 예제를 공유하면 커뮤니티와 Aspose 엔지니어가 도움을 줍니다.
+A: 공식 [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) 에 방문해 질문을 올리거나 예제를 공유하면 커뮤니티와 Aspose 엔지니어가 도움을 줍니다.
 
 **Q: Aspose.GIS 업데이트는 얼마나 자주 이루어지나요?**  
 A: Aspose는 새로운 포맷 지원, 성능 개선, 버그 수정 등을 포함한 정기 업데이트를 제공하여 최신 .NET 릴리스와의 호환성을 유지합니다.
 
 **Q: Aspose.GIS의 임시 라이선스를 받을 수 있나요?**  
-A: 네, 평가용 **[here](https://purchase.aspose.com/temporary-license/)**에서 임시 라이선스를 받을 수 있습니다.
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
+A: 네, 평가용 [here](https://purchase.aspose.com/temporary-license/) 에서 임시 라이선스를 받을 수 있습니다.
 
 ---
 
@@ -126,4 +119,9 @@ A: 네, 평가용 **[here](https://purchase.aspose.com/temporary-license/)**에�
 **테스트 환경:** Aspose.GIS for .NET 24.11 (작성 시 최신 버전)  
 **작성자:** Aspose  
 
----
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

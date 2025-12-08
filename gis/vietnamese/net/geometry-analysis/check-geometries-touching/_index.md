@@ -103,23 +103,16 @@ Console.WriteLine(geometry1.Touches(geometry4)); // False
 A: Có. Nó hỗ trợ .NET Framework, .NET Core, .NET 5+, và .NET 6+, mang lại sự linh hoạt cho các dự án desktop, web và cloud.
 
 **Q: Tôi có thể thử Aspose.GIS trước khi mua giấy phép không?**  
-A: Chắc chắn. Bạn có thể lấy bản dùng thử miễn phí từ trang Aspose **[tại đây](https://purchase.aspose.com/temporary-license/)** để khám phá mọi tính năng, bao gồm thao tác `Touches`.
+A: Chắc chắn. Bạn có thể lấy bản dùng thử miễn phí từ trang Aspose [tại đây](https://purchase.aspose.com/temporary-license/) để khám phá mọi tính năng, bao gồm thao tác `Touches`.
 
 **Q: Tôi có thể tìm hỗ trợ cho các câu hỏi liên quan đến Aspose.GIS ở đâu?**  
-A: Truy cập **[diễn đàn Aspose.GIS](https://forum.aspose.com/c/gis/33)** để đặt câu hỏi, chia sẻ ví dụ và nhận trợ giúp từ cộng đồng cũng như các kỹ sư Aspose.
+A: Truy cập [diễn đàn Aspose.GIS](https://forum.aspose.com/c/gis/33) để đặt câu hỏi, chia sẻ ví dụ và nhận trợ giúp từ cộng đồng cũng như các kỹ sư Aspose.
 
 **Q: Các bản cập nhật của Aspose.GIS được phát hành thường xuyên như thế nào?**  
 A: Aspose phát hành các bản cập nhật định kỳ, bổ sung hỗ trợ định dạng mới, cải thiện hiệu năng và sửa lỗi, đảm bảo tương thích với các phiên bản .NET mới nhất.
 
 **Q: Tôi có thể lấy giấy phép tạm thời cho Aspose.GIS không?**  
-A: Có, giấy phép tạm thời có sẵn **[tại đây](https://purchase.aspose.com/temporary-license/)** cho mục đích đánh giá.
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
+A: Có, giấy phép tạm thời có sẵn [tại đây](https://purchase.aspose.com/temporary-license/) cho mục đích đánh giá.
 
 ---
 
@@ -127,4 +120,9 @@ A: Có, giấy phép tạm thời có sẵn **[tại đây](https://purchase.asp
 **Được kiểm tra với:** Aspose.GIS for .NET 24.11 (phiên bản mới nhất tại thời điểm viết)  
 **Tác giả:** Aspose  
 
----
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

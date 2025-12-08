@@ -67,13 +67,6 @@ Naučte se, jak snadno převést Shapefile na GeoJSON v .NET pomocí Aspose.GIS.
 ### [Převod TopoJSON na GeoJSON](./convert-topojson-to-geojson/)
 Naučte se, jak bezproblémově převést TopoJSON na GeoJSON pomocí Aspose.GIS pro .NET. Postupujte podle našeho krok‑za‑krokem tutoriálu pro efektivní práci s geografickými daty.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ## Často kladené otázky
 
 **Q: Mohu tyto konverze používat v produkčním prostředí?**  
@@ -96,3 +89,10 @@ A: Ano. API automaticky zachovává informace o CRS, pokud data výslovně nepř
 **Poslední aktualizace:** 2025-12-04  
 **Testováno s:** Aspose.GIS for .NET 24.11  
 **Autor:** Aspose
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

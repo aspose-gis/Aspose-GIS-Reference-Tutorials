@@ -114,17 +114,15 @@ Aspose brengt regelmatig updates uit die nieuwe formaatondersteuning, prestatiev
 **V: Kan ik een tijdelijke licentie voor Aspose.GIS verkrijgen?**  
 Ja, een tijdelijke licentie is beschikbaar **[hier](https://purchase.aspose.com/temporary-license/)** voor evaluatiedoeleinden.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Laatst bijgewerkt:** 2025-12-04  
 **Getest met:** Aspose.GIS for .NET 24.11 (latest at time of writing)  
 **Auteur:** Aspose  
 
----
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -103,16 +103,22 @@ Console.WriteLine(geometry1.Touches(geometry4)); // False
 R: Sim. Ele suporta .NET Framework, .NET Core, .NET 5+, e .NET 6+, oferecendo flexibilidade em projetos desktop, web e cloud.
 
 **P: Posso experimentar o Aspose.GIS antes de comprar uma licença?**  
-R: Absolutamente. Você pode obter uma avaliação gratuita no site da Aspose **[aqui](https://purchase.aspose.com/temporary-license/)** para explorar todos os recursos, incluindo a operação `Touches`.
+R: Absolutamente. Você pode obter uma avaliação gratuita no site da Aspose [aqui](https://purchase.aspose.com/temporary-license/) para explorar todos os recursos, incluindo a operação `Touches`.
 
 **P: Onde posso encontrar suporte para dúvidas relacionadas ao Aspose.GIS?**  
-R: Visite o **[fórum oficial do Aspose.GIS](https://forum.aspose.com/c/gis/33)** para fazer perguntas, compartilhar exemplos e obter ajuda tanto da comunidade quanto dos engenheiros da Aspose.
+R: Visite o [fórum oficial do Aspose.GIS](https://forum.aspose.com/c/gis/33) para fazer perguntas, compartilhar exemplos e obter ajuda tanto da comunidade quanto dos engenheiros da Aspose.
 
 **P: Com que frequência são lançadas atualizações para o Aspose.GIS?**  
 R: A Aspose lança atualizações regulares que adicionam suporte a novos formatos, melhorias de desempenho e correções de bugs, garantindo compatibilidade com as versões mais recentes do .NET.
 
 **P: Posso obter uma licença temporária para o Aspose.GIS?**  
-R: Sim, uma licença temporária está disponível **[aqui](https://purchase.aspose.com/temporary-license/)** para fins de avaliação.
+R: Sim, uma licença temporária está disponível [aqui](https://purchase.aspose.com/temporary-license/) para fins de avaliação.
+
+---
+
+**Última Atualização:** 2025-12-04  
+**Testado com:** Aspose.GIS for .NET 24.11 (mais recente no momento da escrita)  
+**Autor:** Aspose
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
@@ -120,9 +126,3 @@ R: Sim, uma licença temporária está disponível **[aqui](https://purchase.asp
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Última Atualização:** 2025-12-04  
-**Testado com:** Aspose.GIS for .NET 24.11 (mais recente no momento da escrita)  
-**Autor:** Aspose

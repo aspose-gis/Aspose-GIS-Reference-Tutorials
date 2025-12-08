@@ -103,23 +103,16 @@ Console.WriteLine(geometry1.Touches(geometry4)); // False
 A: Igen. Támogatja a .NET Framework, .NET Core, .NET 5+, és .NET 6+ verziókat, így rugalmasságot biztosít asztali, web és felhő projektekhez.
 
 **Q: Kipróbálhatom az Aspose.GIS-t licenc vásárlása előtt?**  
-A: Természetesen. Ingyenes próbaverziót szerezhet az Aspose weboldalán **[itt](https://purchase.aspose.com/temporary-license/)**, hogy felfedezze az összes funkciót, beleértve a `Touches` műveletet is.
+A: Természetesen. Ingyenes próbaverziót szerezhet az Aspose weboldalán [itt](https://purchase.aspose.com/temporary-license/) ,hogy felfedezze az összes funkciót, beleértve a `Touches` műveletet is.
 
 **Q: Hol találok támogatást az Aspose.GIS‑hez kapcsolódó kérdésekhez?**  
-A: Látogassa meg a hivatalos **[Aspose.GIS fórumot](https://forum.aspose.com/c/gis/33)**, ahol kérdéseket tehet fel, példákat oszthat meg, és segítséget kaphat a közösségtől és az Aspose mérnökeiktől.
+A: Látogassa meg a hivatalos [Aspose.GIS fórumot](https://forum.aspose.com/c/gis/33) ,ahol kérdéseket tehet fel, példákat oszthat meg, és segítséget kaphat a közösségtől és az Aspose mérnökeiktől.
 
 **Q: Milyen gyakran jelennek meg frissítések az Aspose.GIS-hez?**  
 A: Az Aspose rendszeres frissítéseket ad ki, amelyek új formátumtámogatást, teljesítményjavításokat és hibajavításokat tartalmaznak, biztosítva a kompatibilitást a legújabb .NET kiadásokkal.
 
 **Q: Kaphatok ideiglenes licencet az Aspose.GIS-hez?**  
-A: Igen, ideiglenes licenc elérhető **[itt](https://purchase.aspose.com/temporary-license/)** értékelési célokra.
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
+A: Igen, ideiglenes licenc elérhető [itt](https://purchase.aspose.com/temporary-license/) értékelési célokra.
 
 ---
 
@@ -127,4 +120,9 @@ A: Igen, ideiglenes licenc elérhető **[itt](https://purchase.aspose.com/tempor
 **Tested With:** Aspose.GIS for .NET 24.11 (latest at time of writing)  
 **Author:** Aspose  
 
----
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}
