@@ -1,35 +1,59 @@
 ---
-title: 別のジオメトリ カバーを確認してください
-linktitle: 別のジオメトリ カバーを確認してください
+date: 2025-12-06
+description: Aspose.GIS for .NET を使用して C# で LineString を作成し、LineString にポイントを追加し、ジオメトリが別のジオメトリをカバーしているかどうかを確認する方法を学びます。
+language: ja
+linktitle: Create LineString C# – Check Geometry Covers Another
 second_title: Aspose.GIS .NET API
-description: Aspose.GIS for .NET を利用して地理データを効率的に操作し、空間情報を分析し、マッピング機能を .NET アプリケーションに統合する方法を学びます。
+title: LineString の作成 C# – ジオメトリが別のジオメトリをカバーしているか確認
+url: /net/geometry-analysis/check-geometry-covers-another/
 weight: 15
-url: /ja/net/geometry-analysis/check-geometry-covers-another/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# 別のジオメトリ カバーを確認してください
+# Check Geometry Covers Another
 
-## 導入
-Aspose.GIS for .NET は、.NET アプリケーション内で地理データを効率的に操作するためのツールを開発者に提供する強力なライブラリです。マッピング アプリケーションの構築、空間データの分析、ソフトウェアへの地理的フィーチャの統合のいずれの場合でも、Aspose.GIS は開発プロセスを合理化するための包括的な機能セットを提供します。
-## 前提条件
-Aspose.GIS for .NET の使用に入る前に、次の前提条件が設定されていることを確認してください。
-### 1. Visual Studioをインストールする
-システムに Visual Studio がインストールされていることを確認してください。 Aspose.GIS for .NET は Visual Studio とシームレスに統合され、スムーズな開発エクスペリエンスを提供します。
-### 2. .NET 用の Aspose.GIS を入手します。
- Aspose.GIS for .NET ライブラリを次の場所からダウンロードします。[Webサイト](https://releases.aspose.com/gis/net/)。ライブラリを直接ダウンロードすることも、NuGet などのパッケージ マネージャーを使用してプロジェクトにインストールすることもできます。
-### 3. .NET Framework に関する知識
-Aspose.GIS for .NET を効果的に利用するには、.NET Framework と C# プログラミング言語の基本的な知識が不可欠です。
-### 4. ドキュメントとサポートへのアクセス
-を参照してください。[ドキュメンテーション](https://reference.aspose.com/gis/net/)Aspose.GIS API と機能の詳細については、「Aspose.GIS の API と機能」を参照してください。問題が発生した場合や質問がある場合は、[Aspose.GIS フォーラム](https://forum.aspose.com/c/gis/33)援助のために。
-### 5. オプション: 一時ライセンス
-Aspose.GIS for .NET を検討している場合は、次から一時ライセンスを取得できます。[ここ](https://purchase.aspose.com/temporary-license/)ライブラリの機能を評価します。
+## Introduction
+Aspose.GIS for .NET は、.NET アプリケーション内で地理データを効率的に扱うためのツールを開発者に提供する強力なライブラリです。マッピングアプリ構築、空間データの解析、あるいはソフトウェアへの地理機能の統合など、Aspose.GIS は開発プロセスを簡素化する包括的な機能セットを提供します。本チュートリアルでは **C# で LineString を作成する方法**、ラインにポイントを追加する方法、そして `Covers` と `CoveredBy` メソッドを使用した **点がライン上にあるかのチェック** を学びます。
 
-## 名前空間のインポート
-プロジェクトで Aspose.GIS for .NET を使用する前に、必要な名前空間をインポートする必要があります。
+## Quick Answers
+- **“create LineString in C#” とは何ですか？** `LineString` ジオメトリ オブジェクトをインスタンス化し、座標ポイントで構成することを指します。  
+- **どのメソッドで点がライン上にあるかを確認しますか？** `LineString` の `Covers` メソッド、または `Point` の `CoveredBy` メソッドを使用します。  
+- **サンプル実行にライセンスは必要ですか？** 評価用の一時ライセンスで動作しますが、本番環境ではフル ライセンスが必要です。  
+- **.NET Core でも使用できますか？** はい、Aspose.GIS は .NET Framework と .NET Core の両方をサポートしています。  
+- **LineString に追加できるポイント数に制限はありますか？** 明確な上限はなく、空間解析に必要なだけポイントを追加できます。
+
+## What is **create LineString C#**?
+`LineString` は、直線セグメントで結ばれた順序付けられたポイントのリストからなる幾何形状です。C# では `Aspose.Gis.Geometries` 名前空間の `LineString` クラスをインスタンス化し、`AddPoint` メソッドで **LineString にポイントを追加** します。
+
+## Why use Aspose.GIS for a point on line check?
+- **Precision** – 浮動小数点計算や空間述語を正確に処理します。  
+- **Cross‑platform** – .NET Framework、.NET Core、.NET 5/6+ で動作します。  
+- **Rich API** – `Covers`、`CoveredBy`、`Intersects` などの空間関係メソッドをフルセットで提供します。  
+
+## Prerequisites
+Aspose.GIS for .NET の使用を開始する前に、以下の前提条件が整っていることを確認してください。
+
+### 1. Install Visual Studio
+システムに Visual Studio がインストールされていることを確認してください。Aspose.GIS for .NET は Visual Studio とシームレスに統合され、快適な開発体験を提供します。
+
+### 2. Obtain Aspose.GIS for .NET
+Aspose.GIS for .NET ライブラリを [website](https://releases.aspose.com/gis/net/) からダウンロードします。直接ダウンロードするか、NuGet などのパッケージマネージャーを使用してプロジェクトにインストールできます。
+
+### 3. Familiarity with .NET Framework
+.NET Framework と C# の基本的な知識は、Aspose.GIS for .NET を効果的に活用するために必須です。
+
+### 4. Access to Documentation and Support
+詳細な API 情報は [documentation](https://reference.aspose.com/gis/net/) を参照してください。問題や質問がある場合は、[Aspose.GIS forum](https://forum.aspose.com/c/gis/33) でサポートを受けられます。
+
+### 5. Optional: Temporary License
+Aspose.GIS for .NET を試す場合は、[here](https://purchase.aspose.com/temporary-license/) から一時ライセンスを取得して機能を評価できます。
+
+## Import Namespaces
+Aspose.GIS for .NET をプロジェクトで使用する前に、必要な名前空間をインポートします。
+
 ```csharp
 using Aspose.Gis.Geometries;
 using System;
@@ -39,50 +63,77 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-ここで、Aspose.GIS for .NET を使用して、あるジオメトリが別のジオメトリを覆っているかどうかを確認する方法を理解するために、提供された例を複数のステップに分解してみましょう。
-## ステップ 1: LineString オブジェクトを作成する
+それでは、Aspose.GIS for .NET を使って **あるジオメトリが別のジオメトリをカバーするか** を確認する例を、複数のステップに分けて解説します。
+
+## How to **create LineString C#** – Step‑by‑Step Guide
+
+### Step 1: Create a LineString Object
 ```csharp
 var line = new LineString();
 ```
-ここで、新しいインスタンスを作成します。`LineString`オブジェクト。2 次元空間内の一連の接続された線分を表します。
-## ステップ 2: LineString にポイントを追加する
+ここでは、2 次元空間で連続した線分のシーケンスを表す新しい `LineString` オブジェクトをインスタンス化しています。
+
+### Step 2: **Add Points to LineString**
 ```csharp
 line.AddPoint(0, 0);
 line.AddPoint(1, 1);
 ```
-にポイントを追加します。`LineString`を使用して`AddPoint`方法。この例では、(0, 0) と (1, 1) の 2 つの点を追加して、線分を形成します。
-## ステップ 3: ポイント オブジェクトの作成
+`AddPoint` メソッドを使って **LineString にポイントを追加** します。この例では (0, 0) と (1, 1) の 2 点を追加し、単純な対角線セグメントを構成しています。
+
+### Step 3: Create a Point Object
 ```csharp
 var point = new Point(0, 0);
 ```
-インスタンス化する`Point` 次元空間内の 1 つの点を表すオブジェクト。ここでは、座標 (0, 0) に点を作成します。
-## ステップ 4: 線が点をカバーしているかどうかを確認する
-```csharp
-Console.WriteLine(line.Covers(point));    //真実
-```
-使用`Covers`線が点をカバーしているかどうかを確認するメソッド。この場合、返されるのは、`True`点 (0, 0) が直線上にあるからです。
-## ステップ 5: 点が線で覆われているかどうかを確認する
-```csharp
-Console.WriteLine(point.CoveredBy(line)); //真実
-```
-同様に、`CoveredBy`点が線で覆われているかどうかを確認するメソッド。点(0,0)は直線上にあるので戻ります。`True`.
+2 次元空間の単一点を表す `Point` オブジェクトをインスタンス化します。ここでは座標 (0, 0) の点を作成しています。
 
-## 結論
-結論として、Aspose.GIS for .NET は、.NET アプリケーションで地理データを操作するための強力なツールを提供します。上記の手順に従うことで、Aspose.GIS の機能を効率的に利用して、あるジオメトリが別のジオメトリを覆っているかどうかを確認し、ソフトウェアの空間解析機能を強化できます。
-## よくある質問
-### Aspose.GIS for .NET を商用プロジェクトで使用できますか?
-はい、適切なライセンスを取得した後、商用プロジェクトと非商用プロジェクトの両方で Aspose.GIS for .NET を使用できます。
-### Aspose.GIS for .NET は .NET Core と互換性がありますか?
-はい、Aspose.GIS for .NET は .NET Framework 環境と .NET Core 環境の両方と互換性があります。
-### Aspose.GIS for .NET はさまざまな GIS 形式をサポートしていますか?
-はい、Aspose.GIS for .NET は、Shapefile、GeoJSON、KML などを含む幅広い GIS 形式をサポートしています。
-### Aspose.GIS for .NET の開発に貢献できますか?
-Aspose.GIS for .NET は、Aspose によって開発された独自のライブラリであるため、外部開発者からの貢献は受け入れられません。ただし、ライブラリを改善するためにフィードバックや提案を提供することはできます。
-### Aspose.GIS for .NET の更新プログラムはどのくらいの頻度でリリースされますか?
- Aspose.GIS for .NET の更新は定期的にリリースされ、新機能、拡張機能、バグ修正が導入されています。チェックしてください[Webサイト](https://releases.aspose.com/gis/net/)最新のリリースについては。
+### Step 4: Perform a **point on line check** – Does the line cover the point?
+```csharp
+Console.WriteLine(line.Covers(point));    // True
+```
+`Covers` メソッドを使用して、ラインが点をカバーしているかを確認します。この場合、点 (0, 0) がライン上に正確に位置しているため `True` が返ります。
+
+### Step 5: Verify the reverse relationship – Is the point covered by the line?
+```csharp
+Console.WriteLine(point.CoveredBy(line)); // True
+```
+同様に `CoveredBy` メソッドで点がラインにカバーされているかを確認します。点 (0, 0) がライン上にあるため、こちらも `True` が返ります。
+
+## Common Issues and Solutions
+| Issue | Why it Happens | Fix |
+|-------|----------------|-----|
+| `line.Covers(point)` returns `False` even though the point looks on the line | 浮動小数点の精度差により、座標が完全に一致していないことがあります。 | 座標に `Math.Round` を適用するか、`line.Distance(point) < epsilon` のような許容誤差チェックを使用してください。 |
+| Missing `using Aspose.Gis.Geometries;` | 名前空間がインポートされていないため、コンパイルエラーが発生します。 | **Import Namespaces** セクションのインポート文があることを確認してください。 |
+| License exception at runtime | 本番環境で有効なライセンスがロードされていません。 | `License license = new License(); license.SetLicense("Aspose.GIS.lic");` のように一時またはフル ライセンスをロードしてください。 |
+
+## Frequently Asked Questions
+
+**Q: Can I use Aspose.GIS for .NET in my commercial projects?**  
+A: はい、適切なライセンスを取得すれば、商用・非商用を問わず Aspose.GIS for .NET を使用できます。
+
+**Q: Is Aspose.GIS for .NET compatible with .NET Core?**  
+A: はい、.NET Framework と .NET Core の両環境で動作します。
+
+**Q: Does Aspose.GIS for .NET support various GIS formats?**  
+A: はい、Shapefile、GeoJSON、KML など多数の GIS フォーマットをサポートしています。
+
+**Q: Can I contribute to the development of Aspose.GIS for .NET?**  
+A: Aspose.GIS for .NET は Aspose が開発・提供する商用ライブラリのため、外部からのコード貢献は受け付けていません。ただし、フィードバックや改善提案は受け付けています。
+
+**Q: How often are updates released for Aspose.GIS for .NET?**  
+A: 新機能、改善、バグ修正を含むアップデートが定期的にリリースされます。最新リリースは [website](https://releases.aspose.com/gis/net/) をご確認ください。
+
+## Conclusion
+まとめると、Aspose.GIS for .NET は .NET アプリケーションで地理データを扱うための強力なツールを提供します。上記の手順に従うことで、**C# で LineString を作成し**、**LineString にポイントを追加**、そして **点がライン上にあるかのチェック** を実施し、あるジオメトリが別のジオメトリをカバーしているかを判定できます。この機能はソフトウェアの空間解析機能を強化し、より高度な GIS 操作への道を開きます。
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+---
+
+**Last Updated:** 2025-12-06  
+**Tested With:** Aspose.GIS for .NET (latest release)  
+**Author:** Aspose
