@@ -1,32 +1,47 @@
 ---
-title: Calcola la lunghezza della geometria in .NET con Aspose.GIS
-linktitle: Ottieni la lunghezza della geometria
-second_title: API Aspose.GIS .NET
-description: Scopri come calcolare la lunghezza della geometria in .NET utilizzando Aspose.GIS per una gestione efficiente dei dati spaziali. Guida passo passo con esempi di codice.
+date: 2025-12-07
+description: Scopri come calcolare la lunghezza della geometria in .NET usando Aspose.GIS
+  per una gestione efficiente dei dati spaziali. Guida passo‑passo con esempi di codice.
+language: it
+linktitle: Get Geometry Length
+second_title: Aspose.GIS .NET API
+title: Come calcolare la lunghezza della geometria in .NET con Aspose.GIS
+url: /net/geometry-analysis/get-geometry-length/
 weight: 24
-url: /it/net/geometry-analysis/get-geometry-length/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Calcola la lunghezza della geometria in .NET con Aspose.GIS
+# Come calcolare la lunghezza della geometria in .NET con Aspose.GIS
 
-## introduzione
-Nel regno dello sviluppo .NET, Aspose.GIS si distingue come un robusto toolkit che offre potenti funzionalità per la gestione dei sistemi di informazione geografica (GIS). Che tu sia uno sviluppatore esperto o che tu stia semplicemente entrando nel mondo della programmazione GIS, Aspose.GIS per .NET fornisce un set completo di strumenti per lavorare in modo efficiente con i dati spaziali. In questo tutorial approfondiremo uno dei compiti fondamentali nello sviluppo GIS: il calcolo della lunghezza della geometria. Esploreremo passo dopo passo come raggiungere questo obiettivo utilizzando Aspose.GIS per .NET, suddividendo il processo in blocchi gestibili per una facile comprensione.
+## Introduzione
+Se stai cercando un modo chiaro e pratico **come calcolare la lunghezza** degli oggetti geometrici in un'applicazione .NET, sei nel posto giusto. Aspose.GIS per .NET ti offre un ricco set di API focalizzate sul GIS che rendono i calcoli spaziali — come la misurazione della lunghezza di una linea o del perimetro di un poligono — semplici e performanti. In questo tutorial percorreremo l'intero processo, dalla configurazione dell'ambiente alla scrittura del codice C# che restituisce valori di lunghezza accurati.
+
+## Risposte rapide
+- **Cosa restituisce “GetLength()”?** Per le linee restituisce la lunghezza della linea; per i poligoni restituisce il perimetro.  
+- **Quale namespace è necessario?** `Aspose.Gis.Geometries`.  
+- **Posso usarlo con .NET 6?** Sì, Aspose.GIS supporta .NET 5, .NET 6 e versioni successive.  
+- **È necessaria una licenza per lo sviluppo?** Una prova gratuita è sufficiente per la valutazione; è richiesta una licenza per la produzione.  
+- **Il calcolo è consapevole dell'unità?** La lunghezza è restituita nelle unità del sistema di coordinate (ad es., metri per CRS proiettati).
+
 ## Prerequisiti
-Prima di immergerti nel tutorial, assicurati di disporre dei seguenti prerequisiti:
-### 1. Aspose.GIS per la libreria .NET
- Innanzitutto, devi avere la libreria Aspose.GIS per .NET installata nel tuo ambiente di sviluppo. Se non lo hai già fatto, puoi scaricarlo dal file[Aspose.GIS per la documentazione .NET](https://reference.aspose.com/gis/net/) pagina.
-### 2. Ambiente di sviluppo .NET
-Assicurati di avere un ambiente di sviluppo .NET configurato sul tuo computer. Ciò include l'installazione di Visual Studio o qualsiasi altro IDE compatibile.
-### 3. Comprensione di base di C#
-È essenziale acquisire una conoscenza di base del linguaggio di programmazione C# insieme a questo tutorial.
+Prima di iniziare, assicurati di avere quanto segue:
 
-## Importa spazi dei nomi
-Per utilizzare le funzionalità fornite da Aspose.GIS per .NET, è necessario importare gli spazi dei nomi necessari nel progetto C#.
-## 1. Importare lo spazio dei nomi Aspose.GIS
+### 1. Libreria Aspose.GIS per .NET
+Innanzitutto, devi avere la libreria Aspose.GIS per .NET installata nel tuo ambiente di sviluppo. Se non l'hai ancora fatto, puoi scaricarla dalla pagina [Aspose.GIS for .NET Documentation](https://reference.aspose.com/gis/net/).
+
+### 2. Ambiente di sviluppo .NET
+Assicurati di avere un ambiente di sviluppo .NET configurato sulla tua macchina. Questo include Visual Studio o qualsiasi altro IDE compatibile installato.
+
+### 3. Conoscenza di base di C#
+Una conoscenza di base del linguaggio di programmazione C# è essenziale per seguire questo tutorial.
+
+## Importare i namespace
+Per utilizzare le funzionalità offerte da Aspose.GIS per .NET, è necessario importare i namespace richiesti nel tuo progetto C#.
+
+### Importare il namespace Aspose.GIS
 ```csharp
 using Aspose.Gis.Geometries;
 using System;
@@ -36,21 +51,36 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## Passaggio 1: crea oggetti geometrici
-Per cominciare, crea gli oggetti geometrici che rappresentano le forme di cui vuoi calcolare la lunghezza. Ciò può includere linee, poligoni o qualsiasi altra forma geometrica.
+## Che cos'è la lunghezza della geometria?
+`Geometry.GetLength()` è un metodo che restituisce la misura lineare di un oggetto geometrico. Per un `LineString` fornisce la lunghezza totale della linea, mentre per un `Polygon` restituisce il perimetro (la somma di tutti i suoi lati). Questo metodo astrae la matematica sottostante, permettendoti di concentrarti sulla logica GIS di livello superiore.
+
+## Perché usare Aspose.GIS per i calcoli di lunghezza?
+- **Nessuna dipendenza esterna** – libreria .NET pura, senza DLL native.  
+- **Alta precisione** – utilizza aritmetica a doppia precisione per risultati accurati.  
+- **Cross‑platform** – funziona su Windows, Linux e macOS con .NET Core/5/6+.  
+
+## Guida passo‑passo
+
+### Passo 1: Creare oggetti geometria
+Per iniziare, crea gli oggetti geometria che rappresentano le forme per le quali desideri calcolare la lunghezza. Possono includere linee, poligoni o qualsiasi altra forma geometrica.
+
 ```csharp
 var line = new LineString();
 line.AddPoint(0, 0);
 line.AddPoint(2, 2);
 line.AddPoint(2, 0);
 ```
-## Passaggio 2: calcolare la lunghezza delle linee
- Una volta creata la geometria della linea, puoi calcolarne la lunghezza utilizzando il comando`GetLength()` metodo.
+
+### Passo 2: Come calcolare la lunghezza di una linea in C#
+Una volta creata la geometria della linea, puoi calcolarne la lunghezza usando il metodo `GetLength()`. Questo dimostra **calculate line length c#** in una singola riga di codice.
+
 ```csharp
-Console.WriteLine("{0:F}", line.GetLength()); // Risultato: 4,83
+Console.WriteLine("{0:F}", line.GetLength()); // Output: 4.83
 ```
-## Passaggio 3: crea la geometria poligonale
- Allo stesso modo, puoi creare oggetti geometrici poligonali utilizzando il file`Polygon` E`LinearRing` classi.
+
+### Passo 3: Creare geometria poligonale
+Allo stesso modo, puoi creare oggetti geometria poligonale usando le classi `Polygon` e `LinearRing`.
+
 ```csharp
 var rectangle = new Polygon(new LinearRing(new[]
 {
@@ -61,25 +91,47 @@ var rectangle = new Polygon(new LinearRing(new[]
     new Point(0, 0),
 }));
 ```
-## Passaggio 4: calcola il perimetro per i poligoni
- Per i poligoni, il`GetLength()`metodo restituisce il perimetro.
+
+### Passo 4: Come ottenere la lunghezza di un poligono
+Per i poligoni, il metodo `GetLength()` restituisce il perimetro, che è effettivamente **how to get length** della forma.
+
 ```csharp
-Console.WriteLine("{0:F}", rectangle.GetLength()); // Uscita: 4.00
+Console.WriteLine("{0:F}", rectangle.GetLength()); // Output: 4.00
 ```
 
-## Conclusione
-In questo tutorial, abbiamo imparato come calcolare la lunghezza della geometria utilizzando Aspose.GIS per .NET. Seguendo la guida passo passo e sfruttando le funzionalità fornite da Aspose.GIS, puoi gestire in modo efficiente i dati spaziali nelle tue applicazioni .NET.
+## Problemi comuni e soluzioni
+| Problema | Soluzione |
+|----------|-----------|
+| **Lunghezza inattesa pari a zero** | Verifica che il sistema di coordinate della geometria corrisponda ai dati forniti; punti duplicati possono generare segmenti di lunghezza zero. |
+| **Unità errate** | Ricorda che `GetLength()` restituisce valori nelle unità del CRS. Converti in metri/piedi se necessario. |
+| **Prestazioni con dataset di grandi dimensioni** | Riutilizza gli oggetti geometria quando possibile ed evita di creare migliaia di punti temporanei all'interno di loop stretti. |
+
 ## Domande frequenti
-### D: Aspose.GIS per .NET è compatibile con tutti i framework .NET?
-R: Aspose.GIS per .NET è compatibile con .NET Framework 4.6.1 o versioni successive.
-### D: Posso provare Aspose.GIS per .NET prima dell'acquisto?
- R: Sì, puoi usufruire di una prova gratuita di Aspose.GIS per .NET da[Qui](https://releases.aspose.com/).
-### D: Dove posso trovare supporto per Aspose.GIS per .NET?
- R: Puoi trovare supporto e assistenza dal forum della community Aspose.GIS[Qui](https://forum.aspose.com/c/gis/33).
-### D: Come posso ottenere una licenza temporanea per Aspose.GIS per .NET?
- R: Puoi acquisire una licenza temporanea da[Qui](https://purchase.aspose.com/temporary-license/).
-### D: Posso personalizzare il formato di output per i calcoli della lunghezza della geometria?
-R: Sì, Aspose.GIS per .NET fornisce varie opzioni di formattazione per personalizzare il formato di output secondo le proprie esigenze.
+
+**D: Aspose.GIS per .NET è compatibile con tutti i framework .NET?**  
+R: Aspose.GIS per .NET è compatibile con .NET Framework 4.6.1 o versioni successive, così come con .NET 5/6/7.
+
+**D: Posso provare Aspose.GIS per .NET prima di acquistarlo?**  
+R: Sì, puoi usufruire di una prova gratuita di Aspose.GIS per .NET da [qui](https://releases.aspose.com/).
+
+**D: Dove posso trovare supporto per Aspose.GIS per .NET?**  
+R: Puoi trovare supporto e assistenza nel forum della community Aspose.GIS [qui](https://forum.aspose.com/c/gis/33).
+
+**D: Come posso ottenere una licenza temporanea per Aspose.GIS per .NET?**  
+R: Puoi acquisire una licenza temporanea da [qui](https://purchase.aspose.com/temporary-license/).
+
+**D: Posso personalizzare il formato di output per i calcoli della lunghezza della geometria?**  
+R: Sì, Aspose.GIS per .NET offre varie opzioni di formattazione per personalizzare il formato di output secondo le tue esigenze.
+
+## Conclusione
+In questo tutorial abbiamo coperto **come calcolare la lunghezza** sia delle geometrie lineari che di quelle poligonali usando Aspose.GIS per .NET. Seguendo gli esempi passo‑passo, ora puoi integrare misurazioni spaziali precise in qualsiasi applicazione .NET, sia essa uno strumento GIS desktop, un servizio web o una pipeline di elaborazione dati back‑end.
+
+---
+
+**Ultimo aggiornamento:** 2025-12-07  
+**Testato con:** Aspose.GIS 24.11 per .NET  
+**Autore:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}

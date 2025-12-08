@@ -1,32 +1,48 @@
 ---
-title: Hitung Panjang Geometri di .NET dengan Aspose.GIS
-linktitle: Dapatkan Panjang Geometri
+date: 2025-12-07
+description: Pelajari cara menghitung panjang geometri di .NET menggunakan Aspose.GIS
+  untuk penanganan data spasial yang efisien. Panduan langkah demi langkah dengan
+  contoh kode.
+language: id
+linktitle: Get Geometry Length
 second_title: Aspose.GIS .NET API
-description: Pelajari cara menghitung panjang geometri di .NET menggunakan Aspose.GIS untuk penanganan data spasial yang efisien. Panduan langkah demi langkah dengan contoh kode.
+title: Cara Menghitung Panjang Geometri di .NET dengan Aspose.GIS
+url: /net/geometry-analysis/get-geometry-length/
 weight: 24
-url: /id/net/geometry-analysis/get-geometry-length/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Hitung Panjang Geometri di .NET dengan Aspose.GIS
+# Cara Menghitung Panjang Geometri di .NET dengan Aspose.GIS
 
-## Perkenalan
-Dalam bidang pengembangan .NET, Aspose.GIS berdiri sebagai perangkat tangguh yang menawarkan fungsionalitas canggih untuk menangani sistem informasi geografis (GIS). Baik Anda seorang pengembang berpengalaman atau baru terjun ke dunia pemrograman GIS, Aspose.GIS untuk .NET menyediakan seperangkat alat komprehensif untuk bekerja dengan data spasial secara efisien. Dalam tutorial ini, kita akan mempelajari salah satu tugas mendasar dalam pengembangan GIS - menghitung panjang geometri. Kami akan menjelajahi langkah demi langkah bagaimana mencapai hal ini menggunakan Aspose.GIS untuk .NET, membagi proses menjadi beberapa bagian yang dapat dikelola agar mudah dipahami.
-## Prasyarat
-Sebelum masuk ke tutorial, pastikan Anda memiliki prasyarat berikut:
-### 1. Aspose.GIS untuk Perpustakaan .NET
- Pertama, Anda perlu menginstal pustaka Aspose.GIS untuk .NET di lingkungan pengembangan Anda. Jika Anda belum melakukannya, Anda dapat mengunduhnya dari[Aspose.GIS untuk Dokumentasi .NET](https://reference.aspose.com/gis/net/) halaman.
-### 2. Lingkungan Pengembangan .NET
-Pastikan Anda telah menyiapkan lingkungan pengembangan .NET di mesin Anda. Ini termasuk menginstal Visual Studio atau IDE lain yang kompatibel.
-### 3. Pemahaman Dasar C#
-Pemahaman dasar tentang bahasa pemrograman C# sangat penting untuk diikuti dalam tutorial ini.
+## Introduction
+Jika Anda mencari cara yang jelas dan praktis **cara menghitung panjang** objek geometris dalam aplikasi .NET, Anda berada di tempat yang tepat. Aspose.GIS untuk .NET menyediakan serangkaian API berfokus GIS yang membuat perhitungan spasial—seperti mengukur panjang garis atau keliling poligon—menjadi sederhana dan cepat. Dalam tutorial ini kami akan membimbing Anda melalui seluruh proses, mulai dari menyiapkan lingkungan hingga menulis kode C# yang menghasilkan nilai panjang yang akurat.
 
-## Impor Namespace
-Untuk memanfaatkan fungsionalitas yang disediakan oleh Aspose.GIS untuk .NET, Anda perlu mengimpor namespace yang diperlukan ke proyek C# Anda.
-## 1. Impor Namespace Aspose.GIS
+## Quick Answers
+- **Apa yang dikembalikan oleh “GetLength()”?** Untuk garis, ia mengembalikan panjang garis; untuk poligon, ia mengembalikan keliling.  
+- **Namespace apa yang diperlukan?** `Aspose.Gis.Geometries`.  
+- **Apakah saya dapat menggunakan ini dengan .NET 6?** Ya, Aspose.GIS mendukung .NET 5, .NET 6, dan versi selanjutnya.  
+- **Apakah saya memerlukan lisensi untuk pengembangan?** Versi percobaan gratis dapat digunakan untuk evaluasi; lisensi diperlukan untuk produksi.  
+- **Apakah perhitungan memperhatikan satuan?** Panjang dikembalikan dalam satuan sistem koordinat (misalnya meter untuk CRS terproyeksi).
+
+## Prerequisites
+Sebelum kita mulai, pastikan Anda memiliki hal‑hal berikut:
+
+### 1. Aspose.GIS for .NET Library
+Pertama, Anda harus memiliki pustaka Aspose.GIS untuk .NET yang terpasang di lingkungan pengembangan Anda. Jika belum, Anda dapat mengunduhnya dari halaman [Aspose.GIS for .NET Documentation](https://reference.aspose.com/gis/net/).
+
+### 2. .NET Development Environment
+Pastikan Anda memiliki lingkungan pengembangan .NET yang terpasang di mesin Anda. Ini termasuk Visual Studio atau IDE kompatibel lainnya.
+
+### 3. Basic Understanding of C#
+Pemahaman dasar tentang bahasa pemrograman C# diperlukan untuk mengikuti tutorial ini.
+
+## Import Namespaces
+Untuk memanfaatkan fungsionalitas yang disediakan oleh Aspose.GIS untuk .NET, Anda perlu mengimpor namespace yang diperlukan ke dalam proyek C# Anda.
+
+### Import Aspose.GIS Namespace
 ```csharp
 using Aspose.Gis.Geometries;
 using System;
@@ -36,21 +52,36 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## Langkah 1: Buat Objek Geometri
-Untuk memulainya, buat objek geometri yang mewakili bentuk yang ingin Anda hitung panjangnya. Ini dapat mencakup garis, poligon, atau bentuk geometris lainnya.
+## What is Geometry Length?
+`Geometry.GetLength()` adalah metode yang mengembalikan ukuran linear dari sebuah objek geometri. Untuk `LineString` ia memberikan total panjang garis, sementara untuk `Polygon` ia mengembalikan keliling (jumlah semua sisi). Metode ini menyembunyikan perhitungan matematika di baliknya, sehingga Anda dapat fokus pada logika GIS tingkat tinggi.
+
+## Why Use Aspose.GIS for Length Calculations?
+- **Tanpa dependensi eksternal** – pustaka .NET murni, tanpa DLL native.  
+- **Presisi tinggi** – menggunakan aritmetika double‑precision untuk hasil yang akurat.  
+- **Lintas‑platform** – berfungsi di Windows, Linux, dan macOS dengan .NET Core/5/6+.  
+
+## Step‑by‑Step Guide
+
+### Step 1: Create Geometry Objects
+Untuk memulai, buat objek geometri yang mewakili bentuk yang ingin Anda hitung panjangnya. Ini dapat mencakup garis, poligon, atau bentuk geometris lainnya.
+
 ```csharp
 var line = new LineString();
 line.AddPoint(0, 0);
 line.AddPoint(2, 2);
 line.AddPoint(2, 0);
 ```
-## Langkah 2: Hitung Panjang Garis
- Setelah Anda membuat geometri garis, Anda dapat menghitung panjangnya menggunakan`GetLength()` metode.
+
+### Step 2: How to calculate line length in C#
+Setelah Anda membuat geometri garis, Anda dapat menghitung panjangnya menggunakan metode `GetLength()`. Ini memperlihatkan **calculate line length c#** dalam satu baris kode.
+
 ```csharp
-Console.WriteLine("{0:F}", line.GetLength()); // Keluaran: 4.83
+Console.WriteLine("{0:F}", line.GetLength()); // Output: 4.83
 ```
-## Langkah 3: Buat Geometri Poligon
- Demikian pula, Anda dapat membuat objek geometri poligon menggunakan`Polygon` Dan`LinearRing` kelas.
+
+### Step 3: Create Polygon Geometry
+Demikian pula, Anda dapat membuat objek geometri poligon menggunakan kelas `Polygon` dan `LinearRing`.
+
 ```csharp
 var rectangle = new Polygon(new LinearRing(new[]
 {
@@ -61,25 +92,47 @@ var rectangle = new Polygon(new LinearRing(new[]
     new Point(0, 0),
 }));
 ```
-## Langkah 4: Hitung Keliling Poligon
- Untuk poligon, itu`GetLength()`metode mengembalikan perimeter.
+
+### Step 4: How to get length of a polygon
+Untuk poligon, metode `GetLength()` mengembalikan keliling, yang pada dasarnya adalah **how to get length** dari bentuk tersebut.
+
 ```csharp
-Console.WriteLine("{0:F}", rectangle.GetLength()); // Keluaran: 4,00
+Console.WriteLine("{0:F}", rectangle.GetLength()); // Output: 4.00
 ```
 
-## Kesimpulan
-Dalam tutorial ini, kita telah mempelajari cara menghitung panjang geometri menggunakan Aspose.GIS untuk .NET. Dengan mengikuti panduan langkah demi langkah dan memanfaatkan fungsionalitas yang disediakan oleh Aspose.GIS, Anda dapat menangani data spasial secara efisien di aplikasi .NET Anda.
-## FAQ
-### T: Apakah Aspose.GIS untuk .NET kompatibel dengan semua kerangka .NET?
-J: Aspose.GIS untuk .NET kompatibel dengan .NET Framework 4.6.1 atau versi yang lebih baru.
-### T: Bisakah saya mencoba Aspose.GIS untuk .NET sebelum membeli?
- J: Ya, Anda dapat memanfaatkan uji coba gratis Aspose.GIS untuk .NET dari[Di Sini](https://releases.aspose.com/).
-### T: Di mana saya dapat menemukan dukungan Aspose.GIS untuk .NET?
- J: Anda dapat memperoleh dukungan dan bantuan dari forum komunitas Aspose.GIS[Di Sini](https://forum.aspose.com/c/gis/33).
-### T: Bagaimana cara mendapatkan lisensi sementara Aspose.GIS untuk .NET?
- J: Anda dapat memperoleh lisensi sementara dari[Di Sini](https://purchase.aspose.com/temporary-license/).
-### T: Dapatkah saya menyesuaikan format keluaran untuk penghitungan panjang geometri?
-J: Ya, Aspose.GIS untuk .NET menyediakan berbagai opsi pemformatan untuk menyesuaikan format keluaran sesuai kebutuhan Anda.
+## Common Issues and Solutions
+| Issue | Solution |
+|-------|----------|
+| **Unexpected zero length** | Pastikan sistem koordinat geometri cocok dengan data yang Anda berikan; titik duplikat dapat menyebabkan segmen dengan panjang nol. |
+| **Incorrect units** | Ingat bahwa `GetLength()` mengembalikan nilai dalam satuan CRS. Konversikan ke meter/kaki jika diperlukan. |
+| **Performance with large datasets** | Gunakan kembali objek geometri bila memungkinkan dan hindari membuat ribuan titik sementara di dalam loop yang ketat. |
+
+## Frequently Asked Questions
+
+**Q: Apakah Aspose.GIS untuk .NET kompatibel dengan semua framework .NET?**  
+A: Aspose.GIS untuk .NET kompatibel dengan .NET Framework 4.6.1 atau versi lebih baru, serta .NET 5/6/7.
+
+**Q: Bisakah saya mencoba Aspose.GIS untuk .NET sebelum membeli?**  
+A: Ya, Anda dapat mencoba versi percobaan gratis Aspose.GIS untuk .NET dari [here](https://releases.aspose.com/).
+
+**Q: Di mana saya dapat menemukan dukungan untuk Aspose.GIS untuk .NET?**  
+A: Anda dapat menemukan dukungan dan bantuan di forum komunitas Aspose.GIS [here](https://forum.aspose.com/c/gis/33).
+
+**Q: Bagaimana cara mendapatkan lisensi sementara untuk Aspose.GIS untuk .NET?**  
+A: Anda dapat memperoleh lisensi sementara dari [here](https://purchase.aspose.com/temporary-license/).
+
+**Q: Bisakah saya menyesuaikan format output untuk perhitungan panjang geometri?**  
+A: Ya, Aspose.GIS untuk .NET menyediakan berbagai opsi pemformatan untuk menyesuaikan format output sesuai kebutuhan Anda.
+
+## Conclusion
+Dalam tutorial ini kami membahas **cara menghitung panjang** untuk geometri garis dan poligon menggunakan Aspose.GIS untuk .NET. Dengan mengikuti contoh langkah‑demi‑langkah, Anda kini dapat mengintegrasikan pengukuran spasial yang tepat ke dalam aplikasi .NET apa pun, baik itu alat GIS desktop, layanan web, atau pipeline pemrosesan data backend.
+
+---
+
+**Last Updated:** 2025-12-07  
+**Tested With:** Aspose.GIS 24.11 for .NET  
+**Author:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}

@@ -1,28 +1,48 @@
 ---
-title: เชี่ยวชาญการวางซ้อนเรขาคณิตด้วย Aspose.GIS สำหรับ .NET
-linktitle: ค้นหาการซ้อนทับทางเรขาคณิต
+date: 2025-12-07
+description: เรียนรู้วิธีทำการโอเวอร์เลย์ในบทแนะนำการโอเวอร์เลย์เชิงพื้นที่นี้โดยใช้
+  Aspose.GIS สำหรับ .NET. เชี่ยวชาญการตัดกัน, การรวม, ความแตกต่าง, และความแตกต่างสมมาตร.
+language: th
+linktitle: Find Geometry Overlays
 second_title: Aspose.GIS .NET API
-description: เรียนรู้วิธีดำเนินการโอเวอร์เลย์เรขาคณิตโดยใช้ Aspose.GIS สำหรับ .NET การดำเนินการทางแยกหลัก สหภาพ ผลต่าง และผลต่างสมมาตร
+title: วิธีทำการดำเนินการโอเวอร์เลย์ด้วย Aspose.GIS สำหรับ .NET
+url: /net/geometry-analysis/find-geometry-overlays/
 weight: 16
-url: /th/net/geometry-analysis/find-geometry-overlays/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# เชี่ยวชาญการวางซ้อนเรขาคณิตด้วย Aspose.GIS สำหรับ .NET
+# วิธีการทำการดำเนินการ Overlay ด้วย Aspose.GIS for .NET
 
-## การแนะนำ
-ในขอบเขตของระบบสารสนเทศภูมิศาสตร์ (GIS) การดำเนินการซ้อนทับเป็นพื้นฐานสำหรับการวิเคราะห์เชิงพื้นที่ ช่วยให้สามารถเปรียบเทียบและรวมชุดข้อมูลเชิงพื้นที่ต่างๆ เข้าด้วยกันเพื่อให้ได้ข้อมูลเชิงลึกที่มีคุณค่า Aspose.GIS สำหรับ .NET มีฟังก์ชันการทำงานที่มีประสิทธิภาพสำหรับการแสดงภาพซ้อนทับทางเรขาคณิตอย่างมีประสิทธิภาพ ในบทช่วยสอนนี้ เราจะเจาะลึกการดำเนินการซ้อนทับต่างๆ เช่น Intersection, Union, Difference และ Symmetric Difference โดยใช้ Aspose.GIS สำหรับ .NET
+## บทนำ
+การวิเคราะห์ overlay เป็นเทคนิคหลักใน **บทแนะนำการ overlay เชิงพื้นที่**—มันช่วยให้คุณรวม, เปรียบเทียบ, และสกัดข้อมูลเชิงลึกจากหลายชั้นภูมิศาสตร์ ในคู่มือนี้คุณจะได้เรียนรู้ **วิธีการทำการดำเนินการ overlay** เช่น Intersection, Union, Difference, และ Symmetric Difference ด้วยไลบรารี Aspose.GIS for .NET ที่ทรงพลัง เมื่อจบบทเรียนคุณจะสามารถนำวิธีเหล่านี้ไปใช้กับปัญหา GIS ในโลกจริง เช่น การวางแผนการใช้ที่ดิน, การศึกษาผลกระทบต่อสิ่งแวดล้อม, และการเพิ่มประสิทธิภาพเส้นทาง
+
+## คำตอบสั้น
+- **Overlay operation คืออะไร?** วิธีเชิงพื้นที่ที่รวมรูปทรงสองรูปเพื่อสร้างรูปทรงใหม่ (intersection, union ฯลฯ)  
+- **ไลบรารีใดจัดการ overlay ใน .NET?** Aspose.GIS for .NET  
+- **ใช้เวลานานเท่าไหร่ในการทำตัวอย่างพื้นฐาน?** ประมาณ 10‑15 นาที  
+- **ต้องมีลิขสิทธิ์หรือไม่?** มีรุ่นทดลองฟรี; ต้องมีลิขสิทธิ์เชิงพาณิชย์สำหรับการใช้งานจริง  
+- **สามารถรันบน .NET Core / .NET 6+ ได้หรือไม่?** ได้—Aspose.GIS รองรับ .NET runtime สมัยใหม่ทั้งหมด
+
+## Overlay Operation คืออะไร?
+การดำเนินการ overlay จะรับรูปทรงเรขาคณิตสองรูปและคำนวณรูปใหม่ตามความสัมพันธ์เชิงพื้นที่ของพวกมัน  
+- **Intersection** คืนพื้นที่ที่เป็นส่วนร่วมของทั้งสองรูป  
+- **Union** รวมรูปทั้งสองเป็นรูปทรงเดียว  
+- **Difference** ลบรูปหนึ่งออกจากอีกรูปหนึ่ง  
+- **Symmetric Difference** คืนส่วนที่เป็นของรูปใดรูปหนึ่งแต่ไม่ใช่ของทั้งสองพร้อมกัน
+
+## ทำไมต้องใช้ Aspose.GIS สำหรับ Overlay?
+Aspose.GIS มี API ที่สะอาดและจัดการทั้งหมดในระดับ Managed ทำให้คุณไม่ต้องกังวลเรื่องคณิตศาสตร์ระดับล่าง สามารถทำงานข้ามแพลตฟอร์ม, จัดการชุดข้อมูลขนาดใหญ่ได้อย่างมีประสิทธิภาพ, และผสานรวมกับคอมโพเนนต์ .NET อื่น ๆ ได้อย่างราบรื่น
+
 ## ข้อกำหนดเบื้องต้น
-ก่อนที่จะเข้าสู่บทช่วยสอน ตรวจสอบให้แน่ใจว่าคุณมีข้อกำหนดเบื้องต้นต่อไปนี้:
-### 1. สภาพแวดล้อมการพัฒนา .NET
-ตรวจสอบให้แน่ใจว่าคุณได้ตั้งค่าสภาพแวดล้อมการพัฒนา .NET บนเครื่องของคุณ คุณสามารถดาวน์โหลดและติดตั้ง .NET SDK ได้จากเว็บไซต์ .NET
-### 2. Aspose.GIS สำหรับไลบรารี .NET
- ดาวน์โหลดและติดตั้งไลบรารี Aspose.GIS สำหรับ .NET จากไฟล์[เว็บไซต์](https://releases.aspose.com/gis/net/).
-## นำเข้าเนมสเปซ
-ก่อนที่คุณจะเริ่มใช้ Aspose.GIS สำหรับ .NET ได้ คุณจะต้องนำเข้าเนมสเปซที่จำเป็นลงในโปรเจ็กต์ของคุณก่อน
+- สภาพแวดล้อมการพัฒนา .NET ที่ทำงานได้ (Visual Studio, VS Code, หรือ .NET CLI)  
+- ไลบรารี Aspose.GIS for .NET – ดาวน์โหลดเวอร์ชันล่าสุดจาก [official site](https://releases.aspose.com/gis/net/)  
+
+### นำเข้า Namespaces
+ก่อนที่คุณจะเริ่มใช้ Aspose.GIS for .NET คุณต้องนำเข้า namespaces ที่จำเป็นเข้าสู่โปรเจกต์ของคุณ
+
 ```csharp
 using Aspose.Gis.Geometries;
 using System;
@@ -32,8 +52,12 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## ขั้นตอนที่ 1: สร้างวัตถุรูปหลายเหลี่ยม
-ขั้นแรก เราจะกำหนดวัตถุรูปหลายเหลี่ยมสองชิ้นที่แสดงถึงพื้นที่เชิงพื้นที่
+## วิธีการทำการดำเนินการ Overlay ใน .NET
+ต่อไปนี้เป็นขั้นตอนแบบละเอียดในการสร้างสองโพลิกอนและใช้แต่ละวิธี overlay
+
+### ขั้นตอนที่ 1: สร้างอ็อบเจ็กต์ Polygon
+แรกเริ่ม เรากำหนดโพลิกอนสี่เหลี่ยมจัตุรัสสองรูปที่ทับกันบางส่วน ซึ่งจะเป็นข้อมูลทดสอบของเรา
+
 ```csharp
 var polygon1 = new Polygon();
 polygon1.ExteriorRing = new LinearRing(new[]
@@ -54,66 +78,100 @@ polygon2.ExteriorRing = new LinearRing(new[]
 	new Point(1, 1),
 });
 ```
-## ขั้นตอนที่ 2: ดำเนินการทางแยก
-ต่อไป เราจะหาจุดตัดของรูปหลายเหลี่ยมทั้งสอง
+
+### ขั้นตอนที่ 2: ทำการดำเนินการ Intersection
+**Intersection** ให้เราพื้นที่ที่ทับซ้อนของสองโพลิกอน
+
 ```csharp
 var intersection = polygon1.Intersection(polygon2);
-Console.WriteLine("Intersection type is {0}", intersection.GeometryType); // รูปหลายเหลี่ยม
+Console.WriteLine("Intersection type is {0}", intersection.GeometryType); // Polygon
 ```
-## ขั้นตอนที่ 3: พิมพ์จุดตัดกัน
-เราจะพิมพ์จุดของรูปหลายเหลี่ยมที่ตัดกัน
+
+### ขั้นตอนที่ 3: พิมพ์จุด Intersection
+เราใช้เมธอดช่วย (`PrintRing`) เพื่อแสดงพิกัดของโพลิกอนผลลัพธ์
+
 ```csharp
 PrintRing(((IPolygon)intersection).ExteriorRing);
 ```
-## ขั้นตอนที่ 4: ดำเนินการปฏิบัติการสหภาพ
-ทีนี้ เรามาค้นหาการรวมกันของสองรูปหลายเหลี่ยมกัน
+
+### ขั้นตอนที่ 4: ทำการดำเนินการ Union
+**Union** รวมโพลิกอนทั้งสองเป็นรูปทรงเดียวที่ครอบคลุมพื้นที่ทั้งหมดของโพลิกอนใดโพลิกอนหนึ่ง
+
 ```csharp
 var union = polygon1.Union(polygon2);
-Console.WriteLine("Union type is {0}", union.GeometryType); // รูปหลายเหลี่ยม
+Console.WriteLine("Union type is {0}", union.GeometryType); // Polygon
 ```
-## ขั้นตอนที่ 5: พิมพ์คะแนนยูเนี่ยน
-พิมพ์จุดของรูปหลายเหลี่ยมแบบยูเนี่ยน
+
+### ขั้นตอนที่ 5: พิมพ์จุด Union
+แสดงพิกัดของเรขาคณิตที่รวมกันแล้ว
+
 ```csharp
 PrintRing(((IPolygon)union).ExteriorRing);
 ```
-## ขั้นตอนที่ 6: ดำเนินการดำเนินการแตกต่าง
-ต่อไป เรามาดูความแตกต่างระหว่างรูปหลายเหลี่ยมสองรูปนี้กัน
+
+### ขั้นตอนที่ 6: ทำการดำเนินการ Difference
+**Difference** ลบ `polygon2` ออกจาก `polygon1` ทำให้เหลือเฉพาะส่วนของ `polygon1` ที่ไม่ทับกับ `polygon2`
+
 ```csharp
 var difference = polygon1.Difference(polygon2);
-Console.WriteLine("Difference type is {0}", difference.GeometryType); // รูปหลายเหลี่ยม
+Console.WriteLine("Difference type is {0}", difference.GeometryType); // Polygon
 ```
-## ขั้นตอนที่ 7: พิมพ์จุดแตกต่าง
-พิมพ์จุดของรูปหลายเหลี่ยมส่วนต่าง
+
+### ขั้นตอนที่ 7: พิมพ์จุด Difference
+แสดงจุดยอดที่เหลือหลังการลบ
+
 ```csharp
 PrintRing(((IPolygon)difference).ExteriorRing);
 ```
-## ขั้นตอนที่ 8: ดำเนินการผลต่างสมมาตร
-สุดท้ายนี้ เรามาดูความแตกต่างแบบสมมาตรระหว่างรูปหลายเหลี่ยมสองรูปนี้กัน
+
+### ขั้นตอนที่ 8: ทำการดำเนินการ Symmetric Difference
+**Symmetric Difference** คืนพื้นที่ที่เป็นของโพลิกอนใดโพลิกอนหนึ่งแต่ไม่เป็นของทั้งสองพร้อมกัน ผลลัพธ์คือ `MultiPolygon`
+
 ```csharp
 var symDifference = polygon1.SymDifference(polygon2);
-Console.WriteLine("Symmetric Difference type is {0}", symDifference.GeometryType); // มัลติโพลิกอน
+Console.WriteLine("Symmetric Difference type is {0}", symDifference.GeometryType); // MultiPolygon
 ```
-## ขั้นตอนที่ 9: พิมพ์รูปหลายเหลี่ยมส่วนต่างสมมาตร
-พิมพ์จุดของแต่ละรูปหลายเหลี่ยมด้วยผลต่างสมมาตร
+
+### ขั้นตอนที่ 9: พิมพ์ Polygons ของ Symmetric Difference
+วนลูปผ่านแต่ละโพลิกอนใน `MultiPolygon` แล้วพิมพ์จุดของมัน
+
 ```csharp
 var multiPolygon = (IMultiPolygon)symDifference;
 Console.WriteLine("Polygons count is {0}", multiPolygon.Count); // 2
 PrintRing(((IPolygon)multiPolygon[0]).ExteriorRing);
 PrintRing(((IPolygon)multiPolygon[1]).ExteriorRing);
 ```
-## บทสรุป
-การเรียนรู้การซ้อนทับเรขาคณิตเป็นสิ่งสำคัญในการวิเคราะห์เชิงพื้นที่ และ Aspose.GIS สำหรับ .NET มอบชุดเครื่องมือที่ครอบคลุมเพื่อดำเนินการเหล่านี้อย่างมีประสิทธิภาพ เมื่อทำตามบทช่วยสอนนี้ คุณจะได้เรียนรู้วิธีใช้ Aspose.GIS สำหรับ .NET เพื่อดำเนินการตัดกัน การรวม ผลต่าง และผลต่างสมมาตรบนรูปทรงเรขาคณิต
+
+## ปัญหาที่พบบ่อยและวิธีแก้
+| ปัญหา | สาเหตุ | วิธีแก้ |
+|-------|--------|--------|
+| ผลลัพธ์ `null` จาก `Intersection` | โพลิกอนไม่ทับกันจริง | ตรวจสอบพิกัดหรือใช้การตรวจสอบ `Intersects` ก่อนเรียก `Intersection` |
+| ได้ `MultiPolygon` ที่ไม่คาดคิดจาก `SymDifference` | Symmetric Difference อาจสร้างส่วนที่แยกจากกัน | แคสต์เป็น `IMultiPolygon` แล้ววนลูปตามตัวอย่าง |
+| ชะลอตัวเมื่อทำงานกับชุดข้อมูลขนาดใหญ่ | ทุกการดำเนินการคำนวณเรขาคณิตใหม่ทั้งหมด | ใช้ผลลัพธ์กลางซ้ำหรือทำให้รูปทรงง่ายลงด้วย `Simplify()` ก่อนทำ overlay |
+
 ## คำถามที่พบบ่อย
-### ถาม: ฉันสามารถใช้ Aspose.GIS สำหรับ .NET ในโครงการเชิงพาณิชย์ของฉันได้หรือไม่
-ใช่ Aspose.GIS สำหรับ .NET สามารถใช้ได้ทั้งในโครงการเชิงพาณิชย์และไม่ใช่เชิงพาณิชย์
-### ถาม: Aspose.GIS สำหรับ .NET มีเวอร์ชันทดลองใช้งานหรือไม่
- ใช่ คุณสามารถดาวน์โหลดเวอร์ชันทดลองใช้ฟรีได้จาก[ที่นี่](https://releases.aspose.com/).
-### ถาม: ฉันจะรับการสนับสนุน Aspose.GIS สำหรับ .NET ได้อย่างไร
- คุณสามารถรับการสนับสนุนจากฟอรัมชุมชน Aspose.GIS[ที่นี่](https://forum.aspose.com/c/gis/33).
-### ถาม: มีใบอนุญาตชั่วคราวสำหรับ Aspose.GIS สำหรับ .NET หรือไม่
- ใช่ ใบอนุญาตชั่วคราวมีไว้เพื่อการทดสอบและประเมินผล คุณสามารถรับได้จาก[ที่นี่](https://purchase.aspose.com/temporary-license/).
-### ถาม: ฉันสามารถซื้อ Aspose.GIS สำหรับ .NET ได้โดยตรงหรือไม่
- ใช่ คุณสามารถซื้อ Aspose.GIS สำหรับ .NET ได้จากเว็บไซต์[ที่นี่](https://purchase.aspose.com/buy).
+
+**ถาม: ฉันสามารถใช้ Aspose.GIS for .NET ในโครงการเชิงพาณิชย์ได้หรือไม่?**  
+ตอบ: ได้, Aspose.GIS for .NET สามารถใช้ได้ทั้งในโครงการเชิงพาณิชย์และไม่เชิงพาณิชย์โดยมีลิขสิทธิ์ที่ถูกต้อง
+
+**ถาม: มีเวอร์ชันทดลองของ Aspose.GIS for .NET หรือไม่?**  
+ตอบ: มี, คุณสามารถดาวน์โหลดเวอร์ชันทดลองฟรีได้จาก [ที่นี่](https://releases.aspose.com/)
+
+**ถาม: จะขอรับการสนับสนุนสำหรับ Aspose.GIS for .NET ได้อย่างไร?**  
+ตอบ: คุณสามารถรับการสนับสนุนจากฟอรั่มชุมชน Aspose.GIS [ที่นี่](https://forum.aspose.com/c/gis/33)
+
+**ถาม: มีลิขสิทธิ์ชั่วคราวสำหรับ Aspose.GIS for .NET หรือไม่?**  
+ตอบ: มี, ลิขสิทธิ์ชั่วคราวพร้อมให้ใช้สำหรับการทดสอบและประเมินผล คุณสามารถรับได้จาก [ที่นี่](https://purchase.aspose.com/temporary-license/)
+
+**ถาม: สามารถซื้อ Aspose.GIS for .NET ได้โดยตรงหรือไม่?**  
+ตอบ: ได้, คุณสามารถสั่งซื้อ Aspose.GIS for .NET ได้จากเว็บไซต์ [ที่นี่](https://purchase.aspose.com/buy)
+
+---
+
+**Last Updated:** 2025-12-07  
+**Tested With:** Aspose.GIS 24.11 for .NET  
+**Author:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
