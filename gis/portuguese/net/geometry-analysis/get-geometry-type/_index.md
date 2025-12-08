@@ -1,34 +1,52 @@
 ---
-title: Obtenha o tipo de geometria com Aspose.GIS para .NET
-linktitle: Obter tipo de geometria
-second_title: API Aspose.GIS .NET
-description: Descubra o poder do Aspose.GIS para .NET. Aprenda como lidar com dados espaciais de forma eficiente em seus projetos .NET com este tutorial abrangente.
+date: 2025-12-08
+description: Aprenda como **obter o tipo de geometria** a partir de um ponto usando
+  Aspose.GIS para .NET. Este guia passo a passo cobre os pré‑requisitos de GIS, a
+  criação de um objeto ponto e o trabalho com dados espaciais em C#.
+language: pt
+linktitle: Get Geometry Type
+second_title: Aspose.GIS .NET API
+title: Obter Tipo de Geometria com Aspose.GIS para .NET
+url: /net/geometry-analysis/get-geometry-type/
 weight: 23
-url: /pt/net/geometry-analysis/get-geometry-type/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Obtenha o tipo de geometria com Aspose.GIS para .NET
+# Obter Tipo de Geometria com Aspose.GIS para .NET
 
 ## Introdução
-No domínio do desenvolvimento .NET, Aspose.GIS serve como uma ferramenta poderosa para lidar com informações geográficas. Suas ricas funcionalidades o tornam uma escolha ideal para desenvolvedores que trabalham com dados espaciais. Neste tutorial, nos aprofundaremos nos fundamentos do Aspose.GIS for .NET, detalhando os principais conceitos e fornecendo orientação passo a passo para ajudá-lo a começar com facilidade.
-## Pré-requisitos
-Antes de mergulhar no Aspose.GIS for .NET, certifique-se de ter os seguintes pré-requisitos configurados:
-### Configuração do ambiente .NET
-1. Instale o .NET SDK: comece instalando o .NET SDK adequado ao seu sistema operacional. Você pode baixá-lo do site .NET ou usar um gerenciador de pacotes como o NuGet.
-2. Instalação IDE: Escolha seu ambiente de desenvolvimento integrado (IDE) preferido, como Visual Studio ou JetBrains Rider. Instale e configure-o de acordo com suas preferências.
-3.  Instalação do Aspose.GIS: Baixe e instale o Aspose.GIS for .NET do fornecido[Link para Download](https://releases.aspose.com/gis/net/).
-4.  Documentação da API: familiarize-se com o[Documentação do Aspose.GIS para .NET](https://reference.aspose.com/gis/net/). Ele serve como um recurso valioso para compreender as funcionalidades e o uso da biblioteca.
+Se você precisa **get geometry type** de um recurso espacial em uma aplicação .NET, o Aspose.GIS facilita muito. Neste tutorial, percorreremos todo o processo — desde a configuração do seu ambiente GIS até a criação de um objeto point e a extração do seu geometry type. Ao final, você entenderá como **work with spatial data** de forma eficiente e estará pronto para expandir o exemplo para linhas, polígonos e mais.
 
-## Importar namespaces
-Em qualquer projeto .NET utilizando Aspose.GIS, você precisa importar os namespaces necessários para acessar suas classes e métodos de forma eficiente. Siga esses passos:
-## Etapa 1: abra seu projeto .NET
-Inicie seu IDE preferido (por exemplo, Visual Studio).
-## Etapa 2: adicionar namespace Aspose.GIS
-Em seu arquivo de código, importe o namespace necessário para Aspose.GIS:
+## Respostas Rápidas
+- **What does “get geometry type” mean?** Retorna o valor enum (por exemplo, Point, LineString) que identifica a forma de um objeto geometry.  
+- **Which library provides this capability?** Aspose.GIS for .NET.  
+- **Do I need a license to run the example?** Um trial gratuito funciona para desenvolvimento; uma licença é necessária para produção.  
+- **What .NET versions are supported?** .NET 5, .NET 6, .NET Core 3.1 e posteriores.  
+- **How long does the setup take?** Normalmente menos de 10 minutos para um exemplo básico de point.
+
+## O que é “get geometry type” no Aspose.GIS?
+`GeometryType` é uma enumeração que descreve o tipo de geometria com a qual você está lidando — Point, LineString, Polygon, etc. Acessar essa propriedade permite que você tome decisões no seu código com base na forma dos dados que está processando.
+
+## Por que usar Aspose.GIS para .NET?
+- **Full‑featured GIS engine** – sem dependências nativas externas.  
+- **Rich API** – criar, editar e analisar dados espaciais diretamente do C#.  
+- **Cross‑platform** – funciona no Windows, Linux e macOS.  
+- **Excellent documentation** – referência rápida e exemplos para cada classe.
+
+## Pré‑requisitos GIS para .NET (gis prerequisites .net)
+Antes de começar, certifique-se de que você tem o seguinte configurado:
+
+1. **.NET SDK** – versão mais recente (download no site oficial do .NET).  
+2. **IDE** – Visual Studio, Rider ou VS Code com extensões C#.  
+3. **Aspose.GIS for .NET** – obtenha a biblioteca no [download link](https://releases.aspose.com/gis/net/).  
+4. **API Documentation** – mantenha a [Aspose.GIS for .NET docs](https://reference.aspose.com/gis/net/) à mão para referência.
+
+## Importar Namespaces
+Em qualquer projeto .NET que use Aspose.GIS, você precisa importar os namespaces necessários. Isso lhe dá acesso às classes de geometry, coleções e métodos utilitários.
+
 ```csharp
 using Aspose.Gis.Geometries;
 using System;
@@ -37,41 +55,63 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 ```
-Ao incluir este namespace, você obtém acesso às principais funcionalidades do Aspose.GIS em seu projeto.
-## Divida cada exemplo em várias etapas
-Vamos dividir o exemplo fornecido em várias etapas para melhor compreensão e implementação.
-## Etapa 1: crie um objeto de ponto
+
+## Como obter geometry type de um point
+Abaixo está um **point example .net** que demonstra o fluxo completo — da criação do point à recuperação do seu geometry type.
+
+### Passo 1: Criar um Objeto Point
 ```csharp
 Point point = new Point(40.7128, -74.006);
 ```
- Nesta etapa, instanciamos um novo`Point` objeto, representando um ponto geográfico com latitude 40.7128 e longitude -74.006.
-## Etapa 2: recuperar o tipo de geometria
+*Pro tip:* O construtor `Point` espera **latitude** primeiro e **longitude** segundo, correspondendo à ordem convencional GIS.
+
+### Passo 2: Recuperar Geometry Type
 ```csharp
 GeometryType geometryType = point.GeometryType;
 ```
- Aqui, recuperamos o tipo de geometria do objeto de ponto criado usando o`GeometryType` propriedade.
-## Etapa 3: Exibir tipo de geometria
-```csharp
-Console.WriteLine(geometryType); // Apontar
-```
-Finalmente, imprimimos o tipo de geometria no console. Neste caso, a saída será “Ponto”, indicando que o objeto representa um ponto no espaço geográfico.
+Aqui acessamos a propriedade `GeometryType`, que retorna o valor enum `GeometryType.Point`.
 
-## Conclusão
-Neste tutorial, fornecemos uma compreensão básica do Aspose.GIS for .NET, cobrindo pré-requisitos essenciais, importações de namespace e uma análise passo a passo de um exemplo básico. Armado com esse conhecimento, agora você está equipado para explorar mais e aproveitar os recursos do Aspose.GIS para lidar com dados espaciais de forma eficiente em seus projetos .NET.
-## Perguntas frequentes
-### Aspose.GIS é compatível com todas as versões do .NET?
-Sim, o Aspose.GIS suporta várias versões do .NET, garantindo compatibilidade em diferentes ambientes.
-### Posso experimentar o Aspose.GIS antes de comprar?
- Certamente! Você pode acessar uma avaliação gratuita do Aspose.GIS no site fornecido[link](https://releases.aspose.com/).
-### Onde posso encontrar suporte para consultas relacionadas ao Aspose.GIS?
- Você pode buscar assistência e interagir com a comunidade no Aspose.GIS[Fórum de suporte](https://forum.aspose.com/c/gis/33).
-### Como posso obter uma licença temporária para Aspose.GIS?
- Para opções de licenciamento temporário, visite o[licença temporária](https://purchase.aspose.com/temporary-license/) página.
-### Onde posso adquirir o Aspose.GIS para o meu projeto?
- Você pode comprar Aspose.GIS na página de compra[aqui](https://purchase.aspose.com/buy).
+### Passo 3: Exibir Geometry Type
+```csharp
+Console.WriteLine(geometryType); // Point
+```
+A saída do console confirma que o objeto é realmente um **point**, e você conseguiu **get geometry type** dele com sucesso.
+
+## Problemas Comuns & Soluções
+| Problema | Causa | Correção |
+|----------|-------|----------|
+| **`GeometryType` returns `Unknown`** | A geometria não foi inicializada corretamente. | Certifique-se de usar o construtor correto (`new Point(lat, lon)`). |
+| **Compilation errors** | Referência ao Aspose.GIS ausente. | Adicione o pacote NuGet `Aspose.GIS` ao seu projeto. |
+| **Runtime exception on Linux** | Bibliotecas nativas incompatíveis. | Use a versão .NET Core do Aspose.GIS, que é totalmente cross‑platform. |
+
+## Perguntas Frequentes
+
+**Q: O Aspose.GIS é compatível com todas as versões do .NET?**  
+A: Sim, o Aspose.GIS suporta .NET Framework 4.5+, .NET Core 3.1+, .NET 5, .NET 6 e posteriores.
+
+**Q: Posso experimentar o Aspose.GIS antes de comprar?**  
+A: Absolutamente. Um trial gratuito está disponível no [download link](https://releases.aspose.com/).
+
+**Q: Onde posso encontrar suporte para dúvidas relacionadas ao Aspose.GIS?**  
+A: Visite o [support forum](https://forum.aspose.com/c/gis/33) do Aspose.GIS para ajuda da comunidade e assistência oficial.
+
+**Q: Como obtenho uma licença temporária para desenvolvimento?**  
+A: Licenças temporárias são fornecidas na página de [temporary license](https://purchase.aspose.com/temporary-license/).
+
+**Q: Onde posso comprar uma licença completa para uso em produção?**  
+A: Você pode adquirir uma licença diretamente na página de compra do Aspose.GIS [aqui](https://purchase.aspose.com/buy).
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+---
+
+**Última atualização:** 2025-12-08  
+**Testado com:** Aspose.GIS for .NET (latest release)  
+**Autor:** Aspose  
+
+---
