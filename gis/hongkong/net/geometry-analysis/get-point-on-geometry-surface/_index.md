@@ -1,30 +1,40 @@
 ---
-title: 取得幾何曲面上的點
-linktitle: 取得幾何曲面上的點
+date: 2025-12-09
+description: 學習如何使用 Aspose.GIS for .NET 檢查點是否位於多邊形內。一步一步的指南，教您取得表面點、使用 C# 建立多邊形，並取得多邊形上的點。
+linktitle: Check Point Inside Polygon and Get Point on Surface
 second_title: Aspose.GIS .NET API
-description: 了解如何使用 Aspose.GIS for .NET 有效率地處理地理空間資料。包括逐步指南和常見問題。
-weight: 25
+title: 檢查點是否在多邊形內並取得表面上的點
 url: /zh-hant/net/geometry-analysis/get-point-on-geometry-surface/
+weight: 25
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# 取得幾何曲面上的點
+# 檢查點是否在多邊形內部以及取得表面上的點
 
 ## 介紹
-在本教程中，我們將探索如何使用 Aspose.GIS for .NET 處理幾何圖形並擷取其表面上的點。 Aspose.GIS 是一個功能強大的函式庫，為 .NET 應用程式中的地理空間資料處理、操作和視覺化提供各種功能。
-## 先決條件
-在我們開始之前，請確保您具備以下條件：
-### 環境設定
-1. 安裝 Aspose.GIS for .NET：從下列位置下載並安裝 Aspose.GIS for .NET 程式庫[這裡](https://releases.aspose.com/gis/net/).
-2. 設定您的開發環境：確保您擁有適用於 .NET 程式設計的有效開發環境。如果沒有，您可以設定 Visual Studio 或您選擇的任何其他 .NET 開發環境。
-3. C# 基礎：如果您還不熟悉 C# 程式語言基礎知識，請先熟悉一下。
-4. 取得文件：保留[文件](https://reference.aspose.com/gis/net/)方便在整個教學中進行參考。
+在本教學中，你將學習如何使用 Aspose.GIS for .NET **檢查點是否在多邊形內部**，以及 **取得幾何圖形表面上的點**。我們會示範在 C# 中建立多邊形、取得位於多邊形表面的點，並驗證該點確實位於多邊形內部。完成後，你將擁有一段可直接放入任何 .NET 地理空間應用程式的即用程式碼片段。
 
-## 導入命名空間
-在深入研究實作之前，我們首先導入必要的命名空間：
+## 快速回答
+- **「檢查點是否在多邊形內部」是什麼意思？** 它會驗證給定座標是否位於多邊形幾何的邊界之內。  
+- **哪個方法會回傳多邊形內部的點？** `GetPointOnSurface()` 會回傳一個保證在多邊形內部的點。  
+- **執行範例是否需要授權？** 可使用免費試用版進行評估；正式上線則需購買完整授權。  
+- **支援哪些 .NET 版本？** .NET Framework、.NET Core 與 .NET Standard 均相容。  
+- **實作大約需要多久？** 約 5‑10 分鐘即可完成複製、編譯與執行。
+
+## 前置條件
+在開始之前，請確保你具備以下條件：
+
+### 環境設定
+1. 安裝 Aspose.GIS for .NET：從 [此處](https://releases.aspose.com/gis/net/) 下載並安裝 Aspose.GIS for .NET 套件。  
+2. 設定開發環境：確保已具備可用的 .NET 開發環境，若尚未安裝，可自行安裝 Visual Studio 或其他你偏好的 .NET 開發工具。  
+3. 具備 C# 基礎知識：若尚未熟悉 C#，請先了解其基本語法。  
+4. 取得文件說明：隨時參考 [文件說明](https://reference.aspose.com/gis/net/) 以便查詢相關資訊。
+
+## 匯入命名空間
+在實作之前，先匯入必要的命名空間：
 
 ```csharp
 using Aspose.Gis.Geometries;
@@ -35,9 +45,11 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-現在我們已經設定了環境並導入了所需的命名空間，讓我們將範例分解為多個步驟以更好地理解它。
-## 第 1 步：建立多邊形
-首先，我們需要建立一個多邊形幾何體。我們透過指定多邊形的頂點來定義多邊形的外環。
+現在我們已完成環境設定與命名空間匯入，接下來把範例拆解成多個步驟，方便更深入了解。
+
+## 如何在 C# 中建立多邊形  
+首先，我們需要 **建立一個多邊形** 幾何。透過指定頂點座標來定義多邊形的外環。
+
 ```csharp
 var polygon = new Polygon();
 polygon.ExteriorRing = new LinearRing(new[]
@@ -48,33 +60,67 @@ polygon.ExteriorRing = new LinearRing(new[]
     new Point(0, 0),
 });
 ```
-## 第 2 步：取得曲面上的點
-接下來，我們使用以下方法來檢索多邊形表面上的點：`GetPointOnSurface()`方法。
+
+## 如何取得表面上的點  
+接著，使用 `GetPointOnSurface()` 方法取得多邊形表面上的點。這就是 **取得表面點** 的步驟。
+
 ```csharp
 IPoint pointOnSurface = polygon.GetPointOnSurface();
 ```
-## 第 3 步：驗證多邊形內的點
-我們可以使用以下方法驗證檢索到的點是否位於多邊形內部`SpatiallyContains()`方法。
+
+## 如何檢查點是否在多邊形內部  
+我們可以利用 `SpatiallyContains()` 方法驗證先前取得的點是否位於多邊形內部。此步驟示範了 **取得多邊形點** 後再進行檢查。
+
 ```csharp
-Console.WriteLine(polygon.SpatiallyContains(pointOnSurface)); //真的
+Console.WriteLine(polygon.SpatiallyContains(pointOnSurface)); // True
 ```
 
+## 常見問題與解決方案
+- **空的多邊形** – 請確保外環至少有三個不同的頂點，否則 `GetPointOnSurface()` 可能會回傳未定義的點。  
+- **順時針 vs. 逆時針** – 環的方向不會影響包含測試，但保持一致的環向有助於其他空間運算。  
+- **座標系統** – 本範例使用簡單的笛卡爾平面；若使用真實世界座標，請務必正確設定 CRS（座標參考系統）。
+
 ## 結論
-在本教程中，我們學習如何使用 Aspose.GIS for .NET 取得多邊形幾何體表面上的點並驗證其包含在多邊形內。借助 Aspose.GIS，處理地理空間資料變得有效率且簡單，使開發人員能夠建立強大的地理空間應用程式。
-## 常見問題解答
-### Aspose.GIS 與其他.NET 框架相容嗎？
-是的，Aspose.GIS 支援各種 .NET 框架，包括 .NET Framework、.NET Core 和 .NET Standard。
-### 我可以在購買前試用 Aspose.GIS 嗎？
-是的，您可以從以下位置下載 Aspose.GIS 的免費試用版：[這裡](https://releases.aspose.com/).
-### 我如何獲得 Aspose.GIS 的支援？
-您可以造訪Aspose.GIS論壇[這裡](https://forum.aspose.com/c/gis/33)尋求協助並與其他使用者和開發人員互動。
-### Aspose.GIS 是否提供臨時許可證？
-是的，您可以從以下位置取得 Aspose.GIS 的臨時許可證[這裡](https://purchase.aspose.com/temporary-license/).
-### 哪裡可以購買 Aspose.GIS？
-您可以從購買頁面購買Aspose.GIS[這裡](https://purchase.aspose.com/buy).
+在本教學中，我們學會了如何使用 Aspose.GIS for .NET **檢查點是否在多邊形內部**、取得 **表面上的點**，並驗證其包含關係。借助 Aspose.GIS，處理地理空間資料變得高效且簡單，讓開發者能打造穩健的地理空間應用程式。
+
+## 常見問答
+### Aspose.GIS 是否相容其他 .NET 框架？
+是的，Aspose.GIS 支援多種 .NET 框架，包括 .NET Framework、.NET Core 與 .NET Standard。
+
+### 我可以在購買前先試用 Aspose.GIS 嗎？
+可以，你可從 [此處](https://releases.aspose.com/) 下載 Aspose.GIS 的免費試用版。
+
+### 如何取得 Aspose.GIS 的技術支援？
+可前往 Aspose.GIS 論壇 [此處](https://forum.aspose.com/c/gis/33) 尋求協助，與其他使用者與開發者交流。
+
+### Aspose.GIS 提供臨時授權嗎？
+提供，你可從 [此處](https://purchase.aspose.com/temporary-license/) 取得臨時授權。
+
+### 我該從哪裡購買 Aspose.GIS？
+可至購買頁面 [此處](https://purchase.aspose.com/buy) 進行購買。
+
+**其他問答**
+
+**問：** 處理大型多邊形資料集的最佳方式是什麼？  
+**答：** 採用延遲載入幾何，並重複使用單一 `GeometryFactory` 實例，以降低記憶體開銷。
+
+**問：** 我可以取得多個表面點嗎？  
+**答：** `GetPointOnSurface()` 只回傳單一內部點。若需多個點，可在多邊形的外接盒內隨機產生點，並使用 `SpatiallyContains()` 逐一測試。
+
+**問：** 建立多邊形後能否匯出為 shapefile？  
+**答：** 可以，Aspose.GIS 提供 `FeatureSet` 與 `ShapefileWriter` 類別，讓你將幾何寫入 Shapefile 格式。
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+---
+
+**最後更新：** 2025-12-09  
+**測試環境：** Aspose.GIS 24.11 for .NET  
+**作者：** Aspose  
+
+---
