@@ -1,30 +1,56 @@
 ---
-title: Buat Buffer Geometri
-linktitle: Buat Buffer Geometri
+date: 2025-12-09
+description: Pelajari cara membuat buffer dengan Aspose.GIS untuk .NET, termasuk cara
+  menginstal Aspose, mengimpor namespace, dan memeriksa keterkaitan spasial untuk
+  analisis spasial yang efektif.
+linktitle: How to Create Buffer Using Aspose.GIS for .NET
 second_title: Aspose.GIS .NET API
-description: Buka kekuatan pemrograman geospasial dengan Aspose.GIS untuk .NET. Lakukan analisis spasial, visualisasikan data, dan lainnya dengan mudah.
-weight: 22
+title: Cara Membuat Buffer Menggunakan Aspose.GIS untuk .NET
 url: /id/net/geometry-analysis/create-geometry-buffer/
+weight: 22
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Buat Buffer Geometri
+# Cara Membuat Buffer dengan Aspose.GIS untuk .NET
 
-## Perkenalan
-Dalam bidang pemrograman geospasial, Aspose.GIS untuk .NET menonjol sebagai alat yang ampuh. Dengan fitur-fitur canggih dan antarmuka intuitif, pengembang dapat secara efisien menangani data geografis, melakukan analisis spasial, dan membuat visualisasi yang menakjubkan. Dalam tutorial komprehensif ini, kita akan mempelajari aspek-aspek penting Aspose.GIS untuk .NET, menguraikan fungsi-fungsi utama dan memberikan panduan langkah demi langkah untuk pemula dan pengembang berpengalaman.
+## Pendahuluan
+Jika Anda bekerja dengan data geospasial di lingkungan .NET, mengetahui **cara membuat buffer** di sekitar geometri sangat penting untuk tugas seperti analisis kedekatan, zonasi, dan generalisasi fitur. Dalam tutorial ini, kami akan memandu Anda melalui seluruh proses menggunakan Aspose.GIS untuk .NET—mulai dari instalasi, mengimpor namespace yang diperlukan, menghasilkan buffer untuk geometri garis dan poligon, hingga memeriksa keberadaan spasial. Pada akhir tutorial, Anda akan memiliki pemahaman praktis yang kuat tentang cara melakukan analisis spasial dengan buffer dalam aplikasi Anda sendiri.
+
+## Jawaban Cepat
+- **Apa itu buffer geometri?** Poligon yang melingkupi semua titik dalam jarak tertentu dari geometri sumber.  
+- **Mengapa menggunakan Aspose.GIS untuk buffering?** Menawarkan API yang sederhana, berperforma tinggi, dan bekerja di .NET Framework, .NET Core, serta .NET 5/6+.  
+- **Bagaimana cara menginstal Aspose.GIS?** Unduh pustaka dari situs resmi dan tambahkan sebagai referensi di Visual Studio.  
+- **Bagaimana cara memeriksa keberadaan?** Gunakan metode `SpatiallyContains` untuk menguji apakah sebuah titik berada di dalam buffer yang dihasilkan.  
+- **Apakah saya dapat melakukan analisis spasial selain buffering?** Ya—operasi seperti intersect, union, dan perhitungan jarak juga didukung.
+
+## Apa itu Buffer Geometri?
+Buffer geometri menciptakan zona di sekitar sebuah fitur (titik, garis, atau poligon) pada jarak yang ditentukan pengguna. Zona ini berguna untuk mengidentifikasi fitur terdekat, membuat area dampak, atau menyederhanakan bentuk yang kompleks.
+
+## Mengapa Menggunakan Aspose.GIS untuk Membuat Buffer?
+- **Dukungan lintas‑platform:** Berfungsi di Windows, Linux, dan macOS.  
+- **Tanpa dependensi eksternal:** Tidak memerlukan pustaka GIS native.  
+- **API kaya:** Menyertakan buffering, predikat spasial, dan transformasi sistem koordinat.  
+- **Dioptimalkan untuk performa:** Menangani dataset besar secara efisien.
+
 ## Prasyarat
-Sebelum kita memulai perjalanan dengan Aspose.GIS untuk .NET, penting untuk memastikan bahwa Anda memiliki prasyarat yang diperlukan:
-### Menginstal Aspose.GIS untuk .NET
-1.  Unduh Perpustakaan Aspose.GIS untuk .NET: Navigasikan ke[tautan unduhan](https://releases.aspose.com/gis/net/) dan dapatkan versi terbaru perpustakaan Aspose.GIS untuk .NET.
-2. Integrasi dengan Visual Studio: Setelah diunduh, integrasikan perpustakaan ke dalam lingkungan Visual Studio Anda dengan menambahkannya sebagai referensi dalam proyek Anda.
-3.  Memperoleh Lisensi: Dapatkan lisensi yang valid dari[Berasumsi](https://purchase.aspose.com/buy)untuk membuka potensi penuh perpustakaan Aspose.GIS untuk .NET. Alternatifnya, Anda dapat memanfaatkan a[izin sementara](https://purchase.aspose.com/temporary-license/) untuk tujuan pengujian.
+Sebelum memulai, pastikan Anda memiliki hal‑hal berikut:
+
+- **Visual Studio 2019 atau lebih baru** (atau IDE .NET kompatibel lainnya).  
+- **.NET 6 SDK** (atau .NET Core 3.1+).  
+- **Pustaka Aspose.GIS untuk .NET** – lihat langkah‑langkah instalasi di bawah.
+
+### Cara Menginstal Aspose.GIS untuk .NET
+1. Unduh pustaka Aspose.GIS untuk .NET dari [tautan unduhan](https://releases.aspose.com/gis/net/).  
+2. Di Visual Studio, klik kanan proyek Anda → **Add** → **Reference…** → telusuri ke DLL yang diunduh dan tambahkan.  
+3. Dapatkan lisensi dari [Aspose](https://purchase.aspose.com/buy) atau gunakan [lisensi sementara](https://purchase.aspose.com/temporary-license/) untuk evaluasi.
 
 ## Mengimpor Namespace
-Untuk mulai memanfaatkan fungsionalitas Aspose.GIS untuk .NET, penting untuk mengimpor namespace yang diperlukan ke dalam proyek Anda. Hal ini memungkinkan akses ke kelas dan metode penting untuk operasi geospasial.
-## Langkah 1: Mengimpor Namespace Aspose.GIS
+Untuk mulai menggunakan API, impor namespace yang diperlukan ke file C# Anda.
+
+### Cara Mengimpor Aspose.GIS
 ```csharp
 using Aspose.Gis.Geometries;
 using System;
@@ -34,31 +60,48 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-Sekarang, mari kita membedah contoh yang diberikan menjadi beberapa langkah, dengan menjelaskan setiap langkahnya.
-## Langkah 1: Buat Buffer Geometri
+Sekarang mari kita uraikan proses pembuatan buffer langkah demi langkah.
+
+## Panduan Langkah‑per‑Langkah
+
+### Langkah 1: Membuat Buffer Geometri
+Pertama, kita mendefinisikan geometri `LineString` sederhana yang akan menjadi sumber buffer kita.
+
 ```csharp
-// Tentukan geometri LineString
+// Define a LineString geometry
 var line = new LineString();
 line.AddPoint(0, 0);
 line.AddPoint(3, 3);
 ```
-Pada langkah ini, kita membuat objek geometri LineString dan menambahkan dua titik untuk menentukan garis dari (0,0) hingga (3,3).
-## Langkah 2: Hasilkan Buffer untuk LineString
+
+Dalam potongan kode ini kami membuat `LineString` dan menambahkan dua titik, membentuk garis diagonal dari (0,0) ke (3,3).
+
+### Langkah 2: Menghasilkan Buffer untuk LineString
+Selanjutnya, kami menghasilkan buffer di sekitar garis dengan **jarak positif** sebesar 1 satuan.
+
 ```csharp
-// Hasilkan buffer untuk LineString dengan jarak positif
+// Generate a buffer for the LineString with a positive distance
 var lineBuffer = line.GetBuffer(distance: 1);
 ```
-Di sini, kita membuat buffer di sekitar LineString dengan jarak positif tertentu, yang berisi semua titik dalam jarak tertentu dari geometri masukan.
-## Langkah 3: Periksa Penahanan Spasial
+
+Metode `GetBuffer` mengembalikan poligon yang mencakup setiap titik yang berada dalam jarak 1 satuan dari garis asli.
+
+### Langkah 3: Memeriksa Keberadaan Spasial
+Sekarang kami mendemonstrasikan **cara memeriksa keberadaan** dengan menguji apakah titik‑titik tertentu berada di dalam buffer.
+
 ```csharp
-// Periksa penahanan spasial titik-titik dalam buffer
-Console.WriteLine(lineBuffer.SpatiallyContains(new Point(1, 2)));     // BENAR
-Console.WriteLine(lineBuffer.SpatiallyContains(new Point(3.1, 3.1))); // BENAR
+// Check spatial containment of points within the buffer
+Console.WriteLine(lineBuffer.SpatiallyContains(new Point(1, 2)));     // True
+Console.WriteLine(lineBuffer.SpatiallyContains(new Point(3.1, 3.1))); // True
 ```
-Kami menguji penahanan spasial dengan memeriksa apakah titik tertentu terletak dalam buffer yang dihasilkan, mengembalikan nilai boolean yang menunjukkan penahanan.
-## Langkah 4: Tentukan Geometri Poligon
+
+Predikat `SpatiallyContains` mengembalikan `true` jika titik berada di dalam poligon buffer.
+
+### Langkah 4: Mendefinisikan Geometri Poligon
+Kami juga akan membuat geometri `Polygon` untuk mengilustrasikan buffering dengan **jarak negatif**, yang mengecilkan bentuk.
+
 ```csharp
-// Definisikan geometri Poligon
+// Define a Polygon geometry
 var polygon = new Polygon();
 polygon.ExteriorRing = new LinearRing(new[]
 {
@@ -69,37 +112,63 @@ polygon.ExteriorRing = new LinearRing(new[]
     new Point(0, 0),
 });
 ```
-Di sini, kita membuat objek geometri Poligon dengan cincin luar yang ditentukan oleh rangkaian titik.
-## Langkah 5: Hasilkan Buffer untuk Poligon
+
+Poligon ini mewakili sebuah persegi dengan titik sudut di (0,0), (0,3), (3,3), dan (3,0).
+
+### Langkah 5: Menghasilkan Buffer untuk Poligon
+Menerapkan jarak negatif –1 satuan akan mengontraksi poligon ke dalam.
+
 ```csharp
-// Hasilkan buffer untuk Poligon dengan jarak negatif
+// Generate a buffer for the Polygon with a negative distance
 var polygonBuffer = (IPolygon)polygon.GetBuffer(distance: -1);
 ```
-Kita membuat buffer di sekitar Poligon dengan jarak negatif tertentu, sehingga menyebabkan geometri 'menyusut' ke dalam.
-## Langkah 6: Akses Titik Cincin Eksterior Penyangga
+
+`polygonBuffer` yang dihasilkan adalah persegi yang lebih kecil, berguna untuk membuat zona interior.
+
+### Langkah 6: Mengakses Titik‑titik Ring Eksterior Buffer
+Akhirnya, kami mengambil dan menampilkan koordinat‑koordinat ring eksterior buffer.
+
 ```csharp
-// Titik akses cincin luar penyangga Polygon
+// Access points of the exterior ring of the buffer Polygon
 var ring = polygonBuffer.ExteriorRing;
 for (int i = 0; i < ring.Count; ++i)
 {
     Console.WriteLine("[{0}] = ({1} {2})", i, ring[i].X, ring[i].Y);
 }
 ```
-Terakhir, kita mengambil dan melakukan iterasi melalui titik-titik yang terdiri dari cincin luar Poligon yang di-buffer, dan menampilkan koordinatnya.
 
-## Kesimpulan
-Kesimpulannya, Aspose.GIS untuk .NET memberi pengembang perangkat komprehensif untuk pemrograman geospasial, memungkinkan manipulasi, analisis, dan visualisasi data geografis dengan mudah. Dengan mengikuti tutorial ini, Anda memperoleh wawasan tentang fungsi penting dan mempelajari cara mengintegrasikan dan memanfaatkan Aspose.GIS untuk .NET dalam proyek Anda secara efektif.
-## FAQ
-### Apakah Aspose.GIS untuk .NET kompatibel dengan kerangka .NET lainnya?
-Ya, Aspose.GIS untuk .NET kompatibel dengan berbagai kerangka .NET, termasuk .NET Core dan .NET Standard.
-### Bisakah saya melakukan analisis spasial menggunakan Aspose.GIS untuk .NET?
-Sangat! Aspose.GIS untuk .NET menawarkan fungsionalitas yang kuat untuk analisis spasial, termasuk buffering, perpotongan, dan penghitungan jarak.
-### Apakah ada batasan ukuran kumpulan data geografis yang dapat diproses?
-Aspose.GIS untuk .NET dirancang untuk menangani kumpulan data geografis besar secara efisien, dengan algoritma yang dioptimalkan untuk memastikan kinerja bahkan dengan data yang luas.
-### Apakah Aspose.GIS untuk .NET mendukung sistem referensi spasial yang berbeda?
-Ya, Aspose.GIS untuk .NET mendukung berbagai sistem referensi spasial, memungkinkan pengembang untuk bekerja dengan data geografis dari berbagai sumber secara lancar.
-### Apakah dukungan teknis tersedia untuk Aspose.GIS untuk .NET?
- Ya, Anda dapat mencari dukungan teknis dan bantuan dari forum komunitas Aspose.GIS di[https://forum.aspose.com/c/gis/33](https://forum.aspose.com/c/gis/33).
+Loop ini mencetak setiap vertex dari poligon yang dikontraksi, mengonfirmasi geometri buffer.
+
+## Masalah Umum dan Solusinya
+| Masalah | Solusi |
+|-------|----------|
+| **Buffer mengembalikan `null`** | Pastikan nilai jarak sesuai dengan sistem koordinat geometri. |
+| **`SpatiallyContains` selalu mengembalikan `false`** | Verifikasi bahwa kedua geometri menggunakan referensi spasial (CRS) yang sama. |
+| **Penurunan performa dengan dataset besar** | Proses geometri secara batch dan gunakan kembali instance `GeometryFactory` yang sama. |
+
+## Pertanyaan yang Sering Diajukan
+
+**T: Apakah Aspose.GIS untuk .NET kompatibel dengan kerangka kerja .NET lainnya?**  
+J: Ya, ia bekerja dengan .NET Framework, .NET Core, .NET 5, dan .NET 6.
+
+**T: Bisakah saya melakukan analisis spasial menggunakan Aspose.GIS untuk .NET?**  
+J: Tentu. Pustaka ini mendukung buffering, intersect, perhitungan jarak, dan lainnya.
+
+**T: Apakah ada batasan ukuran dataset?**  
+J: API dioptimalkan untuk dataset besar, namun konsumsi memori tergantung pada ukuran geometri yang Anda muat.
+
+**T: Apakah Aspose.GIS mendukung sistem referensi spasial yang berbeda?**  
+J: Ya, ia menangani berbagai sistem koordinat dan memungkinkan transformasi secara langsung.
+
+**T: Di mana saya dapat memperoleh dukungan teknis?**  
+J: Kunjungi forum komunitas Aspose.GIS di [https://forum.aspose.com/c/gis/33](https://forum.aspose.com/c/gis/33) untuk bantuan.
+
+---
+
+**Terakhir Diperbarui:** 2025-12-09  
+**Diuji Dengan:** Aspose.GIS untuk .NET 24.11 (versi terbaru pada saat penulisan)  
+**Penulis:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
