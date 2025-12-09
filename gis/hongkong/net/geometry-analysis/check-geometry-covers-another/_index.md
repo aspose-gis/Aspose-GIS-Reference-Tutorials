@@ -1,11 +1,10 @@
 ---
 date: 2025-12-06
 description: 學習如何在 C# 中使用 Aspose.GIS for .NET 建立 LineString、向 LineString 添加點，並檢查幾何圖形是否覆蓋另一個。
-language: zh-hant
 linktitle: Create LineString C# – Check Geometry Covers Another
 second_title: Aspose.GIS .NET API
 title: 建立 LineString C# – 檢查幾何是否覆蓋另一個
-url: /net/geometry-analysis/check-geometry-covers-another/
+url: /zh-hant/net/geometry-analysis/check-geometry-covers-another/
 weight: 15
 ---
 

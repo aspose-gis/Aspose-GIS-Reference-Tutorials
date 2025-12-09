@@ -3,11 +3,10 @@ date: 2025-12-02
 description: Tanulja meg, hogyan ellenőrizheti a geometriát, számíthatja ki a geometriai
   területet, a konvex burkot és még sok mást az Aspose.GIS for .NET használatával.
   Szerezzen mesteri tudást a térbeli adatok kezelésében a robusztus GIS fejlesztéshez.
-language: hu
 linktitle: How to Check Geometry
 second_title: Aspose.GIS .NET API
 title: Hogyan ellenőrizhetjük a geometriát az Aspose.GIS for .NET segítségével
-url: /net/geometry-analysis/
+url: /hu/net/geometry-analysis/
 weight: 22
 ---
 

@@ -2,11 +2,10 @@
 date: 2025-12-04
 description: تعلم كيفية فحص التماس بين الأشكال الهندسية باستخدام Aspose.GIS لـ .NET،
   وهي مكتبة قوية للتعامل مع البيانات المكانية وإجراء التحليل المكاني .NET.
-language: ar
 linktitle: How to Check Touching Geometries
 second_title: Aspose.GIS .NET API
 title: كيفية التحقق من التماس الأشكال الهندسية باستخدام Aspose.GIS لـ .NET
-url: /net/geometry-analysis/check-geometries-touching/
+url: /ar/net/geometry-analysis/check-geometries-touching/
 weight: 13
 ---
 

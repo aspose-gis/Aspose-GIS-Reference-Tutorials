@@ -2,11 +2,10 @@
 date: 2025-12-02
 description: تعلم كيفية فحص الهندسة، حساب مساحة الهندسة، الغلاف المحدب، والمزيد باستخدام
   Aspose.GIS لـ .NET. إتقان معالجة البيانات المكانية لتطوير GIS قوي.
-language: ar
 linktitle: How to Check Geometry
 second_title: Aspose.GIS .NET API
 title: كيفية التحقق من الهندسة باستخدام Aspose.GIS لـ .NET
-url: /net/geometry-analysis/
+url: /ar/net/geometry-analysis/
 weight: 22
 ---
 

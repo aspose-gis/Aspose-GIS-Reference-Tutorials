@@ -3,11 +3,10 @@ date: 2025-12-02
 description: Pelajari cara memeriksa geometri, menghitung luas geometri, cangkang
   cembung, dan lainnya menggunakan Aspose.GIS untuk .NET. Kuasai penanganan data spasial
   untuk pengembangan GIS yang kuat.
-language: id
 linktitle: How to Check Geometry
 second_title: Aspose.GIS .NET API
 title: Cara Memeriksa Geometri dengan Aspose.GIS untuk .NET
-url: /net/geometry-analysis/
+url: /id/net/geometry-analysis/
 weight: 22
 ---
 

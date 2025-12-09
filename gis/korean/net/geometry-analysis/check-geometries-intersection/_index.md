@@ -2,11 +2,10 @@
 date: 2025-12-03
 description: C#에서 폴리곤 지오메트리를 만드는 방법과 Aspose.GIS for .NET의 Intersects 메서드를 사용하여 겹치는
   폴리곤을 감지하는 방법을 배워보세요.
-language: ko
 linktitle: Create Polygon Geometry C#
 second_title: Aspose.GIS .NET API
 title: C#로 폴리곤 지오메트리 생성 및 Aspose.GIS for .NET으로 교차 확인
-url: /net/geometry-analysis/check-geometries-intersection/
+url: /ko/net/geometry-analysis/check-geometries-intersection/
 weight: 11
 ---
 

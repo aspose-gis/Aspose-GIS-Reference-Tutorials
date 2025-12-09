@@ -3,11 +3,10 @@ date: 2025-12-02
 description: Tìm hiểu cách kiểm tra hình học, tính diện tích hình học, bao lồi và
   nhiều hơn nữa bằng Aspose.GIS cho .NET. Nắm vững việc xử lý dữ liệu không gian để
   phát triển GIS mạnh mẽ.
-language: vi
 linktitle: How to Check Geometry
 second_title: Aspose.GIS .NET API
 title: Cách kiểm tra hình học với Aspose.GIS cho .NET
-url: /net/geometry-analysis/
+url: /vi/net/geometry-analysis/
 weight: 22
 ---
 

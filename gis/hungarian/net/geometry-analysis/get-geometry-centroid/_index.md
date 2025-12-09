@@ -3,11 +3,10 @@ date: 2025-12-07
 description: Tanulja meg, hogyan lehet a geometria középpontját lekérni az Aspose.GIS
   for .NET segítségével, és hogyan számíthatja ki a sokszög középpontját térbeli elemzéshez
   .NET alkalmazásaiban.
-language: hu
 linktitle: Get Geometry Centroid
 second_title: Aspose.GIS .NET API
 title: Hogyan kapjuk meg egy geometria középpontját az Aspose.GIS for .NET segítségével
-url: /net/geometry-analysis/get-geometry-centroid/
+url: /hu/net/geometry-analysis/get-geometry-centroid/
 weight: 19
 ---
 

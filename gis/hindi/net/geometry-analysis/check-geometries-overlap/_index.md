@@ -2,11 +2,10 @@
 date: 2025-12-04
 description: Aspose.GIS for .NET का उपयोग करके ओवरलैप कैसे जांचें और ज्यामितियों के
   ओवरलैप का पता कैसे लगाएँ, सीखें। डेवलपर्स के लिए चरण‑दर‑चरण गाइड।
-language: hi
 linktitle: Check Geometries Overlap
 second_title: Aspose.GIS .NET API
 title: Aspose.GIS for .NET के साथ ज्यामितियों के ओवरलैप की जाँच कैसे करें
-url: /net/geometry-analysis/check-geometries-overlap/
+url: /hi/net/geometry-analysis/check-geometries-overlap/
 weight: 12
 ---
 

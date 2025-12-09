@@ -2,11 +2,10 @@
 date: 2025-11-30
 description: เรียนรู้วิธีแปลง GeoJSON เป็น TopoJSON พร้อมชื่ออ็อบเจกต์เฉพาะโดยใช้
   Aspose.GIS สำหรับ .NET – คู่มือฉบับสมบูรณ์สำหรับการแปลง Aspose GIS.
-language: th
 linktitle: How to Convert GeoJSON to TopoJSON with Specific Object Name
 second_title: Aspose.GIS .NET API
 title: วิธีแปลง GeoJSON เป็น TopoJSON พร้อมชื่อวัตถุเฉพาะ
-url: /net/geo-data-conversion/convert-geojson-to-topojson-with-specific-object-name/
+url: /th/net/geo-data-conversion/convert-geojson-to-topojson-with-specific-object-name/
 weight: 12
 ---
 

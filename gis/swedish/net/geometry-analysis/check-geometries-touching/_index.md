@@ -3,11 +3,10 @@ date: 2025-12-04
 description: Lär dig hur du kontrollerar berörande geometrier med Aspose.GIS för .NET,
   ett kraftfullt bibliotek för att hantera rumsliga data och utföra rumslig analys
   i .NET.
-language: sv
 linktitle: How to Check Touching Geometries
 second_title: Aspose.GIS .NET API
 title: Hur man kontrollerar berörande geometrier med Aspose.GIS för .NET
-url: /net/geometry-analysis/check-geometries-touching/
+url: /sv/net/geometry-analysis/check-geometries-touching/
 weight: 13
 ---
 

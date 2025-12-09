@@ -3,11 +3,10 @@ date: 2025-12-04
 description: Tìm hiểu cách kiểm tra các hình học tiếp xúc bằng Aspose.GIS cho .NET,
   một thư viện mạnh mẽ để xử lý dữ liệu không gian và thực hiện phân tích không gian
   .NET.
-language: vi
 linktitle: How to Check Touching Geometries
 second_title: Aspose.GIS .NET API
 title: Cách kiểm tra các hình học tiếp xúc bằng Aspose.GIS cho .NET
-url: /net/geometry-analysis/check-geometries-touching/
+url: /vi/net/geometry-analysis/check-geometries-touching/
 weight: 13
 ---
 

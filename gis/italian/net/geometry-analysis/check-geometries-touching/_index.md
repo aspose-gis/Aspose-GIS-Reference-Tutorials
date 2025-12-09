@@ -3,11 +3,10 @@ date: 2025-12-04
 description: Impara a verificare le geometrie che si toccano utilizzando Aspose.GIS
   per .NET, una potente libreria per gestire dati spaziali ed eseguire analisi spaziali
   .NET.
-language: it
 linktitle: How to Check Touching Geometries
 second_title: Aspose.GIS .NET API
 title: Come verificare le geometrie che si toccano con Aspose.GIS per .NET
-url: /net/geometry-analysis/check-geometries-touching/
+url: /it/net/geometry-analysis/check-geometries-touching/
 weight: 13
 ---
 

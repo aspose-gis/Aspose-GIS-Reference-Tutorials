@@ -2,11 +2,10 @@
 date: 2025-12-07
 description: تعرّف على كيفية تنفيذ عمليات التراكب في هذا الدرس المتعلق بالتراكب المكاني
   باستخدام Aspose.GIS لـ .NET. إتقن التقاطع، الاتحاد، الفرق، والفرق المتماثل.
-language: ar
 linktitle: Find Geometry Overlays
 second_title: Aspose.GIS .NET API
 title: كيفية تنفيذ عمليات التراكب باستخدام Aspose.GIS لـ .NET
-url: /net/geometry-analysis/find-geometry-overlays/
+url: /ar/net/geometry-analysis/find-geometry-overlays/
 weight: 16
 ---
 

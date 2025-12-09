@@ -2,11 +2,10 @@
 date: 2025-12-06
 description: Aspose.GIS for .NET를 사용하여 지오메트리의 면적을 계산하는 방법을 배우세요 – GIS 면적 계산, C# 삼각형
   면적, 다중 폴리곤 면적 계산에 적합합니다.
-language: ko
 linktitle: Get Geometry Area
 second_title: Aspose.GIS .NET API
 title: Aspose.GIS for .NET를 사용하여 면적 계산하는 방법
-url: /net/geometry-analysis/get-geometry-area/
+url: /ko/net/geometry-analysis/get-geometry-area/
 weight: 18
 ---
 

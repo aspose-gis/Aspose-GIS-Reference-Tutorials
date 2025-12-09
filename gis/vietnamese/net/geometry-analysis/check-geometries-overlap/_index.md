@@ -2,11 +2,10 @@
 date: 2025-12-04
 description: Tìm hiểu cách kiểm tra và phát hiện sự chồng lấn của các hình học bằng
   Aspose.GIS cho .NET. Hướng dẫn chi tiết từng bước cho các nhà phát triển.
-language: vi
 linktitle: Check Geometries Overlap
 second_title: Aspose.GIS .NET API
 title: Cách kiểm tra chồng lấp của các hình học với Aspose.GIS cho .NET
-url: /net/geometry-analysis/check-geometries-overlap/
+url: /vi/net/geometry-analysis/check-geometries-overlap/
 weight: 12
 ---
 

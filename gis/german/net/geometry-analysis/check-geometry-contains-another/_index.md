@@ -4,11 +4,10 @@ description: Lernen Sie, wie Sie mit C# bestimmen, ob ein Punkt innerhalb eines 
   liegt. Dieses Aspose.GIS .NET‑Tutorial behandelt Prüfungen, ob Geometrien einen
   Punkt enthalten, Techniken der geospatialen Analyse in .NET und bewährte Methoden
   mit Aspose.GIS .NET.
-language: de
 linktitle: point inside polygon c# – Check Geometry Contains Another
 second_title: Aspose.GIS .NET API
 title: Punkt im Polygon C# – Prüfen, ob Geometrie eine andere enthält
-url: /net/geometry-analysis/check-geometry-contains-another/
+url: /de/net/geometry-analysis/check-geometry-contains-another/
 weight: 14
 ---
 

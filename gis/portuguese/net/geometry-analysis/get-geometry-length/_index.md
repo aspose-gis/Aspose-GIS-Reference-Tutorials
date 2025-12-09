@@ -3,11 +3,10 @@ date: 2025-12-07
 description: Aprenda a calcular o comprimento de geometria no .NET usando Aspose.GIS
   para um manuseio eficiente de dados espaciais. Guia passo a passo com exemplos de
   código.
-language: pt
 linktitle: Get Geometry Length
 second_title: Aspose.GIS .NET API
 title: Como Calcular o Comprimento da Geometria no .NET com Aspose.GIS
-url: /net/geometry-analysis/get-geometry-length/
+url: /pt/net/geometry-analysis/get-geometry-length/
 weight: 24
 ---
 

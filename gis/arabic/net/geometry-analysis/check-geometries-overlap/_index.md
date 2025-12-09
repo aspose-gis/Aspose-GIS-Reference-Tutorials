@@ -2,11 +2,10 @@
 date: 2025-12-04
 description: تعلم كيفية التحقق من التداخل وكيفية اكتشاف تداخل الأشكال الهندسية باستخدام
   Aspose.GIS لـ .NET. دليل خطوة بخطوة للمطورين.
-language: ar
 linktitle: Check Geometries Overlap
 second_title: Aspose.GIS .NET API
 title: كيفية التحقق من تداخل الأشكال الهندسية باستخدام Aspose.GIS لـ .NET
-url: /net/geometry-analysis/check-geometries-overlap/
+url: /ar/net/geometry-analysis/check-geometries-overlap/
 weight: 12
 ---
 

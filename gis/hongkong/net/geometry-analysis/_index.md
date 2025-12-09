@@ -1,11 +1,10 @@
 ---
 date: 2025-12-02
 description: 學習如何使用 Aspose.GIS for .NET 檢查幾何、計算幾何面積、凸包等功能，掌握空間資料處理，打造穩健的 GIS 開發。
-language: zh-hant
 linktitle: How to Check Geometry
 second_title: Aspose.GIS .NET API
 title: 如何使用 Aspose.GIS for .NET 檢查幾何
-url: /net/geometry-analysis/
+url: /zh-hant/net/geometry-analysis/
 weight: 22
 ---
 

@@ -2,12 +2,11 @@
 date: 2025-12-03
 description: Dowiedz się, jak tworzyć geometrię wielokątów w C# i wykrywać nakładające
   się wielokąty przy użyciu metody Intersects w Aspose.GIS dla .NET.
-language: pl
 linktitle: Create Polygon Geometry C#
 second_title: Aspose.GIS .NET API
 title: Utwórz geometrię wielokąta w C# i sprawdź przecięcie przy użyciu Aspose.GIS
   dla .NET
-url: /net/geometry-analysis/check-geometries-intersection/
+url: /pl/net/geometry-analysis/check-geometries-intersection/
 weight: 11
 ---
 

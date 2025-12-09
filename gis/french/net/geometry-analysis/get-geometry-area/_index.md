@@ -3,11 +3,10 @@ date: 2025-12-06
 description: Apprenez à calculer la surface des géométries avec Aspose.GIS pour .NET
   – parfait pour le calcul de surface GIS, le calcul de la surface d'un triangle en
   C# et le calcul de la surface d'un multipolygone.
-language: fr
 linktitle: Get Geometry Area
 second_title: Aspose.GIS .NET API
 title: Comment calculer la surface avec Aspose.GIS pour .NET
-url: /net/geometry-analysis/get-geometry-area/
+url: /fr/net/geometry-analysis/get-geometry-area/
 weight: 18
 ---
 

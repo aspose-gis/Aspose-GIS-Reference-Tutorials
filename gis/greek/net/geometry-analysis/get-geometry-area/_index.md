@@ -3,11 +3,10 @@ date: 2025-12-06
 description: Μάθετε πώς να υπολογίζετε την περιοχή γεωμετριών χρησιμοποιώντας το Aspose.GIS
   για .NET – ιδανικό για υπολογισμό περιοχής GIS, υπολογισμό περιοχής τριγώνου C#
   και υπολογισμό περιοχής πολλαπλών πολυγώνων.
-language: el
 linktitle: Get Geometry Area
 second_title: Aspose.GIS .NET API
 title: Πώς να υπολογίσετε την περιοχή με το Aspose.GIS για .NET
-url: /net/geometry-analysis/get-geometry-area/
+url: /el/net/geometry-analysis/get-geometry-area/
 weight: 18
 ---
 

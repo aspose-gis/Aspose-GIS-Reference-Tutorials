@@ -3,11 +3,10 @@ date: 2025-12-02
 description: เรียนรู้วิธีตรวจสอบเรขาคณิต, คำนวณพื้นที่เรขาคณิต, หาผลรวมรูปทรงคอนเวกซ์,
   และอื่น ๆ ด้วย Aspose.GIS สำหรับ .NET. เชี่ยวชาญการจัดการข้อมูลเชิงพื้นที่เพื่อการพัฒนา
   GIS ที่แข็งแกร่ง.
-language: th
 linktitle: How to Check Geometry
 second_title: Aspose.GIS .NET API
 title: วิธีตรวจสอบเรขาคณิตด้วย Aspose.GIS สำหรับ .NET
-url: /net/geometry-analysis/
+url: /th/net/geometry-analysis/
 weight: 22
 ---
 

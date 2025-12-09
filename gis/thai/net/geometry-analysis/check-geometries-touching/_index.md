@@ -3,11 +3,10 @@ date: 2025-12-04
 description: เรียนรู้วิธีตรวจสอบการสัมผัสของรูปทรงเรขาคณิตโดยใช้ Aspose.GIS สำหรับ
   .NET ซึ่งเป็นไลบรารีที่มีประสิทธิภาพในการจัดการข้อมูลเชิงพื้นที่และทำการวิเคราะห์เชิงพื้นที่ใน
   .NET.
-language: th
 linktitle: How to Check Touching Geometries
 second_title: Aspose.GIS .NET API
 title: วิธีตรวจสอบเรขาคณิตที่สัมผัสกันด้วย Aspose.GIS สำหรับ .NET
-url: /net/geometry-analysis/check-geometries-touching/
+url: /th/net/geometry-analysis/check-geometries-touching/
 weight: 13
 ---
 

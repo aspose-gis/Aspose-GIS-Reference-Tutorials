@@ -1,11 +1,10 @@
 ---
 date: 2025-12-03
 description: Aspose.GIS for .NET の Intersects メソッドを使用して、C# でポリゴンジオメトリを作成し、重なり合うポリゴンを検出する方法を学びましょう。
-language: ja
 linktitle: Create Polygon Geometry C#
 second_title: Aspose.GIS .NET API
 title: C#でポリゴンジオメトリを作成し、Aspose.GIS for .NETで交差をチェックする
-url: /net/geometry-analysis/check-geometries-intersection/
+url: /ja/net/geometry-analysis/check-geometries-intersection/
 weight: 11
 ---
 

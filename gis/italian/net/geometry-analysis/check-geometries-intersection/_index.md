@@ -2,11 +2,10 @@
 date: 2025-12-03
 description: Scopri come creare geometrie poligonali in C# e rilevare poligoni sovrapposti
   utilizzando il metodo Intersects di Aspose.GIS per .NET.
-language: it
 linktitle: Create Polygon Geometry C#
 second_title: Aspose.GIS .NET API
 title: Crea geometria poligonale C# e verifica l'intersezione con Aspose.GIS per .NET
-url: /net/geometry-analysis/check-geometries-intersection/
+url: /it/net/geometry-analysis/check-geometries-intersection/
 weight: 11
 ---
 

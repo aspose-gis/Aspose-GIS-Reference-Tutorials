@@ -3,11 +3,10 @@ date: 2025-12-07
 description: Tanulja meg, hogyan hajthat végre átfedési műveleteket ebben a térbeli
   átfedés oktatóanyagban az Aspose.GIS for .NET használatával. Sajátítsa el a metszetet,
   az uniót, a különbséget és a szimmetrikus különbséget.
-language: hu
 linktitle: Find Geometry Overlays
 second_title: Aspose.GIS .NET API
 title: Hogyan végezzünk átfedési műveleteket az Aspose.GIS for .NET segítségével
-url: /net/geometry-analysis/find-geometry-overlays/
+url: /hu/net/geometry-analysis/find-geometry-overlays/
 weight: 16
 ---
 

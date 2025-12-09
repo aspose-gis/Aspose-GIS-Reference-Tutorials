@@ -2,11 +2,10 @@
 date: 2025-12-07
 description: Tìm hiểu cách tính độ dài của hình học trong .NET bằng Aspose.GIS để
   xử lý dữ liệu không gian hiệu quả. Hướng dẫn từng bước kèm ví dụ mã.
-language: vi
 linktitle: Get Geometry Length
 second_title: Aspose.GIS .NET API
 title: Cách tính độ dài của hình học trong .NET với Aspose.GIS
-url: /net/geometry-analysis/get-geometry-length/
+url: /vi/net/geometry-analysis/get-geometry-length/
 weight: 24
 ---
 

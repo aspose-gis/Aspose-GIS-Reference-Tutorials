@@ -2,11 +2,10 @@
 date: 2025-12-04
 description: 学习如何使用 C# 判断点是否位于多边形内部。本 Aspose.GIS .NET 教程涵盖几何包含点检查、地理空间分析 .NET 技术以及
   Aspose.GIS .NET 的最佳实践。
-language: zh
 linktitle: point inside polygon c# – Check Geometry Contains Another
 second_title: Aspose.GIS .NET API
 title: 点在多边形内部 C# – 检查几何是否包含另一个
-url: /net/geometry-analysis/check-geometry-contains-another/
+url: /zh/net/geometry-analysis/check-geometry-contains-another/
 weight: 14
 ---
 

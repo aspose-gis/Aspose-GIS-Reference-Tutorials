@@ -3,11 +3,10 @@ date: 2025-12-06
 description: Узнайте, как вычислять площадь геометрий с помощью Aspose.GIS для .NET
   — идеально подходит для расчёта площади в ГИС, вычисления площади треугольника на
   C# и расчёта площади мультиполигонов.
-language: ru
 linktitle: Get Geometry Area
 second_title: Aspose.GIS .NET API
 title: Как вычислить площадь с помощью Aspose.GIS для .NET
-url: /net/geometry-analysis/get-geometry-area/
+url: /ru/net/geometry-analysis/get-geometry-area/
 weight: 18
 ---
 

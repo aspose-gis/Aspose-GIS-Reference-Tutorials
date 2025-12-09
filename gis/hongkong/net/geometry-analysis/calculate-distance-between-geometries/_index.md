@@ -1,11 +1,10 @@
 ---
 date: 2025-12-02
 description: 學習如何使用 Aspose.GIS for .NET 計算幾何圖形之間的距離。此一步一步的指南展示了如何使用 Aspose.GIS、取得與幾何圖形的距離，並將距離計算整合到您的應用程式中。
-language: zh-hant
 linktitle: How to Calculate Distance Between Geometries
 second_title: Aspose.GIS .NET API
 title: 如何使用 Aspose.GIS 計算幾何之間的距離
-url: /net/geometry-analysis/calculate-distance-between-geometries/
+url: /zh-hant/net/geometry-analysis/calculate-distance-between-geometries/
 weight: 21
 ---
 

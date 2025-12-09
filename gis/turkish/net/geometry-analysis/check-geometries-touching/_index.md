@@ -3,11 +3,10 @@ date: 2025-12-04
 description: Aspose.GIS for .NET kullanarak temas eden geometrileri nasıl kontrol
   edeceğinizi öğrenin; mekânsal verileri işlemek ve mekânsal analiz yapmak için güçlü
   bir kütüphane.
-language: tr
 linktitle: How to Check Touching Geometries
 second_title: Aspose.GIS .NET API
 title: Aspose.GIS for .NET ile Dokunan Geometrileri Nasıl Kontrol Edilir
-url: /net/geometry-analysis/check-geometries-touching/
+url: /tr/net/geometry-analysis/check-geometries-touching/
 weight: 13
 ---
 

@@ -2,11 +2,10 @@
 date: 2025-12-03
 description: Pelajari cara membuat geometri poligon C# dan mendeteksi poligon yang
   tumpang tindih menggunakan metode Intersects dari Aspose.GIS untuk .NET.
-language: id
 linktitle: Create Polygon Geometry C#
 second_title: Aspose.GIS .NET API
 title: Buat Geometri Poligon C# dan Periksa Interseksi dengan Aspose.GIS untuk .NET
-url: /net/geometry-analysis/check-geometries-intersection/
+url: /id/net/geometry-analysis/check-geometries-intersection/
 weight: 11
 ---
 

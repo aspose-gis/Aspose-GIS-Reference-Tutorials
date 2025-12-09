@@ -3,11 +3,10 @@ date: 2025-12-07
 description: Erfahren Sie, wie Sie den Schwerpunkt einer Geometrie mit Aspose.GIS
   für .NET ermitteln und den Polygon‑Schwerpunkt für die räumliche Analyse in Ihren
   .NET‑Anwendungen berechnen.
-language: de
 linktitle: Get Geometry Centroid
 second_title: Aspose.GIS .NET API
 title: Wie man den Schwerpunkt einer Geometrie mit Aspose.GIS für .NET ermittelt
-url: /net/geometry-analysis/get-geometry-centroid/
+url: /de/net/geometry-analysis/get-geometry-centroid/
 weight: 19
 ---
 

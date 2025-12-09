@@ -2,11 +2,10 @@
 date: 2025-12-06
 description: Erfahren Sie, wie Sie die Fläche von Geometrien mit Aspose.GIS für .NET
   berechnen – ideal für GIS-Flächenberechnung, Dreiecksflächen in C# und Multipolygon-Flächenberechnung.
-language: de
 linktitle: Get Geometry Area
 second_title: Aspose.GIS .NET API
 title: Wie man die Fläche mit Aspose.GIS für .NET berechnet
-url: /net/geometry-analysis/get-geometry-area/
+url: /de/net/geometry-analysis/get-geometry-area/
 weight: 18
 ---
 

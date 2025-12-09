@@ -1,11 +1,10 @@
 ---
 date: 2025-12-03
 description: 了解如何使用 Aspose.GIS for .NET 比较几何体，并在您的 .NET 应用程序中检查几何体相等性。
-language: zh
 linktitle: How to Compare Geometries for Equality
 second_title: Aspose.GIS .NET API
 title: 如何使用 Aspose.GIS for .NET 比较几何对象的相等性
-url: /net/geometry-analysis/check-geometries-for-equality/
+url: /zh/net/geometry-analysis/check-geometries-for-equality/
 weight: 10
 ---
 

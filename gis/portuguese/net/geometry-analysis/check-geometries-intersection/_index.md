@@ -2,12 +2,11 @@
 date: 2025-12-03
 description: Aprenda como criar geometria de polígono em C# e detectar polígonos sobrepostos
   usando o método Intersects do Aspose.GIS para .NET.
-language: pt
 linktitle: Create Polygon Geometry C#
 second_title: Aspose.GIS .NET API
 title: Criar Geometria de Polígono em C# e Verificar Interseção com Aspose.GIS para
   .NET
-url: /net/geometry-analysis/check-geometries-intersection/
+url: /pt/net/geometry-analysis/check-geometries-intersection/
 weight: 11
 ---
 

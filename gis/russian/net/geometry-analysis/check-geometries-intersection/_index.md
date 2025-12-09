@@ -2,12 +2,11 @@
 date: 2025-12-03
 description: Узнайте, как создавать полигональную геометрию в C# и определять пересекающиеся
   полигоны с помощью метода Intersects библиотеки Aspose.GIS для .NET.
-language: ru
 linktitle: Create Polygon Geometry C#
 second_title: Aspose.GIS .NET API
 title: Создание полигональной геометрии C# и проверка пересечения с Aspose.GIS для
   .NET
-url: /net/geometry-analysis/check-geometries-intersection/
+url: /ru/net/geometry-analysis/check-geometries-intersection/
 weight: 11
 ---
 

@@ -1,11 +1,10 @@
 ---
 date: 2025-12-06
 description: 學習如何使用 Aspose.GIS for .NET 計算幾何圖形的面積——適用於 GIS 面積計算、C# 三角形面積以及多邊形面積計算。
-language: zh-hant
 linktitle: Get Geometry Area
 second_title: Aspose.GIS .NET API
 title: 如何使用 Aspose.GIS for .NET 計算面積
-url: /net/geometry-analysis/get-geometry-area/
+url: /zh-hant/net/geometry-analysis/get-geometry-area/
 weight: 18
 ---
 

@@ -3,11 +3,10 @@ date: 2025-12-07
 description: Μάθετε πώς να εκτελείτε λειτουργίες επικάλυψης σε αυτό το σεμινάριο χωρικής
   επικάλυψης χρησιμοποιώντας το Aspose.GIS για .NET. Κατακτήστε την τομή, την ένωση,
   τη διαφορά και τη συμμετρική διαφορά.
-language: el
 linktitle: Find Geometry Overlays
 second_title: Aspose.GIS .NET API
 title: Πώς να εκτελέσετε λειτουργίες επικάλυψης με το Aspose.GIS για .NET
-url: /net/geometry-analysis/find-geometry-overlays/
+url: /el/net/geometry-analysis/find-geometry-overlays/
 weight: 16
 ---
 

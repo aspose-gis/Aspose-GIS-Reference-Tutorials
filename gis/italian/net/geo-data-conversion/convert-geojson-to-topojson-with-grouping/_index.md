@@ -3,11 +3,10 @@ date: 2025-12-06
 description: Scopri come convertire GeoJSON in TopoJSON con raggruppamento, impostare
   l'attributo del nome dell'oggetto e raggruppare le feature GeoJSON utilizzando Aspose.GIS
   per .NET.
-language: it
 linktitle: How to Convert GeoJSON to TopoJSON with Grouping using Aspose.GIS
 second_title: Aspose.GIS .NET API
 title: Come convertire GeoJSON in TopoJSON con raggruppamento usando Aspose.GIS
-url: /net/geo-data-conversion/convert-geojson-to-topojson-with-grouping/
+url: /it/net/geo-data-conversion/convert-geojson-to-topojson-with-grouping/
 weight: 13
 ---
 

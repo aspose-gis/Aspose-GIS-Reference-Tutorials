@@ -3,11 +3,10 @@ date: 2025-12-04
 description: Tanulja meg, hogyan ellenőrizheti az átfedést és hogyan detektálhatja
   a geometriai átfedéseket az Aspose.GIS for .NET használatával. Lépésről lépésre
   útmutató fejlesztőknek.
-language: hu
 linktitle: Check Geometries Overlap
 second_title: Aspose.GIS .NET API
 title: Hogyan ellenőrizhetjük a geometriai átfedést az Aspose.GIS for .NET segítségével
-url: /net/geometry-analysis/check-geometries-overlap/
+url: /hu/net/geometry-analysis/check-geometries-overlap/
 weight: 12
 ---
 

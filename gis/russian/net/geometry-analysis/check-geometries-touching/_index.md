@@ -3,11 +3,10 @@ date: 2025-12-04
 description: Узнайте, как проверять соприкасающиеся геометрии с помощью Aspose.GIS
   для .NET — мощной библиотеки для работы с пространственными данными и выполнения
   пространственного анализа в .NET.
-language: ru
 linktitle: How to Check Touching Geometries
 second_title: Aspose.GIS .NET API
 title: Как проверить соприкасающиеся геометрии с помощью Aspose.GIS для .NET
-url: /net/geometry-analysis/check-geometries-touching/
+url: /ru/net/geometry-analysis/check-geometries-touching/
 weight: 13
 ---
 

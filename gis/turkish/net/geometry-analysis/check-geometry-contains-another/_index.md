@@ -4,11 +4,10 @@ description: C# kullanarak bir noktanın bir çokgenin içinde olup olmadığın
   belirleyeceğinizi öğrenin. Bu Aspose.GIS .NET öğreticisi, geometri içinde nokta
   kontrolleri, coğrafi veri analizi .NET teknikleri ve Aspose.GIS .NET ile en iyi
   uygulamaları kapsar.
-language: tr
 linktitle: point inside polygon c# – Check Geometry Contains Another
 second_title: Aspose.GIS .NET API
 title: C#'de Çokgen İçindeki Nokta – Geometri Başkasını İçeriyor mu Kontrol Et
-url: /net/geometry-analysis/check-geometry-contains-another/
+url: /tr/net/geometry-analysis/check-geometry-contains-another/
 weight: 14
 ---
 

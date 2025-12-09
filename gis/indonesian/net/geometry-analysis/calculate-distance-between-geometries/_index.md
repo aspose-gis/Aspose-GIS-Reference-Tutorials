@@ -4,11 +4,10 @@ description: Pelajari cara menghitung jarak antara geometri menggunakan Aspose.G
   untuk .NET. Panduan langkah demi langkah ini menunjukkan cara menggunakan Aspose.GIS,
   mendapatkan jarak ke geometri, dan mengintegrasikan perhitungan jarak ke dalam aplikasi
   Anda.
-language: id
 linktitle: How to Calculate Distance Between Geometries
 second_title: Aspose.GIS .NET API
 title: Cara Menghitung Jarak Antara Geometri dengan Aspose.GIS
-url: /net/geometry-analysis/calculate-distance-between-geometries/
+url: /id/net/geometry-analysis/calculate-distance-between-geometries/
 weight: 21
 ---
 

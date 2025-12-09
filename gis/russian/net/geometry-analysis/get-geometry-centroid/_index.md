@@ -2,11 +2,10 @@
 date: 2025-12-07
 description: Узнайте, как получить центроид геометрии с помощью Aspose.GIS для .NET
   и вычислить центроид полигона для пространственного анализа в ваших .NET‑приложениях.
-language: ru
 linktitle: Get Geometry Centroid
 second_title: Aspose.GIS .NET API
 title: Как получить центр тяжести геометрии с помощью Aspose.GIS для .NET
-url: /net/geometry-analysis/get-geometry-centroid/
+url: /ru/net/geometry-analysis/get-geometry-centroid/
 weight: 19
 ---
 

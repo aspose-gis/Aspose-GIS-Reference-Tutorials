@@ -2,12 +2,11 @@
 date: 2025-12-03
 description: C#'ta çokgen geometrisi oluşturmayı ve Aspose.GIS for .NET'in Intersects
   yöntemiyle çakışan çokgenleri tespit etmeyi öğrenin.
-language: tr
 linktitle: Create Polygon Geometry C#
 second_title: Aspose.GIS .NET API
 title: C# ile Çokgen Geometrisi Oluşturun ve Aspose.GIS for .NET ile Kesişimi Kontrol
   Edin
-url: /net/geometry-analysis/check-geometries-intersection/
+url: /tr/net/geometry-analysis/check-geometries-intersection/
 weight: 11
 ---
 

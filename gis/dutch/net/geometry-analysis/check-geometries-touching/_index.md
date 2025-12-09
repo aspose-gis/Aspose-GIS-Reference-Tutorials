@@ -3,11 +3,10 @@ date: 2025-12-04
 description: Leer hoe u raakliggende geometrieën kunt controleren met Aspose.GIS voor
   .NET, een krachtige bibliotheek om ruimtelijke gegevens te verwerken en ruimtelijke
   analyses uit te voeren.
-language: nl
 linktitle: How to Check Touching Geometries
 second_title: Aspose.GIS .NET API
 title: Hoe raakliggende geometrieën te controleren met Aspose.GIS voor .NET
-url: /net/geometry-analysis/check-geometries-touching/
+url: /nl/net/geometry-analysis/check-geometries-touching/
 weight: 13
 ---
 

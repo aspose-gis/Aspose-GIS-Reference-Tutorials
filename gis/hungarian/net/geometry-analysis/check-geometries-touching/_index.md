@@ -3,11 +3,10 @@ date: 2025-12-04
 description: Tanulja meg, hogyan ellenőrizheti az érintkező geometriákat az Aspose.GIS
   for .NET segítségével, egy erőteljes könyvtár, amely a térbeli adatok kezelésére
   és térbeli elemzések elvégzésére szolgál .NET.
-language: hu
 linktitle: How to Check Touching Geometries
 second_title: Aspose.GIS .NET API
 title: Hogyan ellenőrizhetjük az érintkező geometriákat az Aspose.GIS for .NET segítségével
-url: /net/geometry-analysis/check-geometries-touching/
+url: /hu/net/geometry-analysis/check-geometries-touching/
 weight: 13
 ---
 

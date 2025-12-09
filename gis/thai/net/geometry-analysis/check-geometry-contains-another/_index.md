@@ -3,11 +3,10 @@ date: 2025-12-04
 description: เรียนรู้วิธีกำหนดว่าจุดอยู่ภายในรูปหลายเหลี่ยมหรือไม่โดยใช้ C# บทแนะนำ
   Aspose.GIS .NET นี้ครอบคลุมการตรวจสอบว่าเรขาคณิตมีจุดอยู่ภายใน, เทคนิคการวิเคราะห์เชิงพื้นที่ด้วย
   .NET, และแนวปฏิบัติที่ดีที่สุดกับ Aspose.GIS .NET.
-language: th
 linktitle: point inside polygon c# – Check Geometry Contains Another
 second_title: Aspose.GIS .NET API
 title: จุดภายในรูปหลายเหลี่ยม C# – ตรวจสอบว่าเรขาคณิตมีอีกอันหนึ่งอยู่หรือไม่
-url: /net/geometry-analysis/check-geometry-contains-another/
+url: /th/net/geometry-analysis/check-geometry-contains-another/
 weight: 14
 ---
 

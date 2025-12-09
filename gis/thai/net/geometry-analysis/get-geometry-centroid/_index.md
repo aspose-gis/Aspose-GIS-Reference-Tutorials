@@ -3,11 +3,10 @@ date: 2025-12-07
 description: เรียนรู้วิธีการหาจุดศูนย์กลางของรูปทรงเรขาคณิตโดยใช้ Aspose.GIS สำหรับ
   .NET และคำนวณจุดศูนย์กลางของหลายเหลี่ยมสำหรับการวิเคราะห์เชิงพื้นที่ในแอปพลิเคชัน
   .NET ของคุณ
-language: th
 linktitle: Get Geometry Centroid
 second_title: Aspose.GIS .NET API
 title: วิธีหาจุดศูนย์กลางของรูปทรงด้วย Aspose.GIS สำหรับ .NET
-url: /net/geometry-analysis/get-geometry-centroid/
+url: /th/net/geometry-analysis/get-geometry-centroid/
 weight: 19
 ---
 

@@ -2,11 +2,10 @@
 date: 2025-12-06
 description: เรียนรู้วิธีสร้าง LineString ใน C# ด้วย Aspose.GIS สำหรับ .NET, เพิ่มจุดลงใน
   LineString, และตรวจสอบว่าเรขาคณิตหนึ่งครอบคลุมอีกเรขาคณิตหนึ่งหรือไม่.
-language: th
 linktitle: Create LineString C# – Check Geometry Covers Another
 second_title: Aspose.GIS .NET API
 title: สร้าง LineString ด้วย C# – ตรวจสอบว่า Geometry ครอบคลุม Geometry อื่น
-url: /net/geometry-analysis/check-geometry-covers-another/
+url: /th/net/geometry-analysis/check-geometry-covers-another/
 weight: 15
 ---
 

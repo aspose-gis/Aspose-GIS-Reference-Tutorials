@@ -2,11 +2,10 @@
 date: 2025-12-07
 description: Lär dig hur du får centroiden för en geometri med Aspose.GIS för .NET
   och beräknar polygonens centroid för rumslig analys i dina .NET‑applikationer.
-language: sv
 linktitle: Get Geometry Centroid
 second_title: Aspose.GIS .NET API
 title: Hur man får centroiden för en geometri med Aspose.GIS för .NET
-url: /net/geometry-analysis/get-geometry-centroid/
+url: /sv/net/geometry-analysis/get-geometry-centroid/
 weight: 19
 ---
 

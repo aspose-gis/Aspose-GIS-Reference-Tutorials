@@ -3,11 +3,10 @@ date: 2025-12-02
 description: Tìm hiểu cách tính khoảng cách giữa các hình học bằng Aspose.GIS cho
   .NET. Hướng dẫn từng bước này cho thấy cách sử dụng Aspose.GIS, lấy khoảng cách
   tới hình học và tích hợp tính toán khoảng cách vào ứng dụng của bạn.
-language: vi
 linktitle: How to Calculate Distance Between Geometries
 second_title: Aspose.GIS .NET API
 title: Cách tính khoảng cách giữa các hình học bằng Aspose.GIS
-url: /net/geometry-analysis/calculate-distance-between-geometries/
+url: /vi/net/geometry-analysis/calculate-distance-between-geometries/
 weight: 21
 ---
 

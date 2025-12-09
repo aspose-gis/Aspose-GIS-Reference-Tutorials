@@ -2,11 +2,10 @@
 date: 2025-12-06
 description: เรียนรู้วิธีคำนวณพื้นที่ของรูปทรงเรขาคณิตโดยใช้ Aspose.GIS สำหรับ .NET
   – เหมาะสำหรับการคำนวณพื้นที่ GIS, การคำนวณพื้นที่สามเหลี่ยมใน C#, และการคำนวณพื้นที่มัลติโพลิกอน.
-language: th
 linktitle: Get Geometry Area
 second_title: Aspose.GIS .NET API
 title: วิธีคำนวณพื้นที่ด้วย Aspose.GIS สำหรับ .NET
-url: /net/geometry-analysis/get-geometry-area/
+url: /th/net/geometry-analysis/get-geometry-area/
 weight: 18
 ---
 

@@ -4,11 +4,10 @@ description: Tanulja meg, hogyan határozhatja meg, hogy egy pont a sokszögön 
   helyezkedik-e el C#-ban. Ez az Aspose.GIS .NET útmutató a geometriai ponttartalmazás
   ellenőrzéseket, a geospatial elemzési .NET technikákat és a legjobb gyakorlatokat
   mutatja be az Aspose.GIS .NET használatával.
-language: hu
 linktitle: point inside polygon c# – Check Geometry Contains Another
 second_title: Aspose.GIS .NET API
 title: Pont a sokszögben C# – Ellenőrizze, hogy a geometria tartalmaz‑e másikat
-url: /net/geometry-analysis/check-geometry-contains-another/
+url: /hu/net/geometry-analysis/check-geometry-contains-another/
 weight: 14
 ---
 

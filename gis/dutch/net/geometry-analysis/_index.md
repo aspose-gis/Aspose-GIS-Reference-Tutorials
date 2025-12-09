@@ -3,11 +3,10 @@ date: 2025-12-02
 description: Leer hoe u geometrie kunt controleren, de oppervlakte van geometrie kunt
   berekenen, de convexe omhulling en meer kunt gebruiken met Aspose.GIS voor .NET.
   Beheers het omgaan met ruimtelijke gegevens voor robuuste GIS-ontwikkeling.
-language: nl
 linktitle: How to Check Geometry
 second_title: Aspose.GIS .NET API
 title: Hoe geometrie te controleren met Aspose.GIS voor .NET
-url: /net/geometry-analysis/
+url: /nl/net/geometry-analysis/
 weight: 22
 ---
 

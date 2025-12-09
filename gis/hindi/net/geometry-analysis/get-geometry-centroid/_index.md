@@ -3,11 +3,10 @@ date: 2025-12-07
 description: Aspose.GIS for .NET का उपयोग करके जियोमेट्री का सेंट्रॉइड कैसे प्राप्त
   करें और अपने .NET अनुप्रयोगों में स्पैशियल विश्लेषण के लिए पॉलीगॉन सेंट्रॉइड की
   गणना करें।
-language: hi
 linktitle: Get Geometry Centroid
 second_title: Aspose.GIS .NET API
 title: Aspose.GIS for .NET के साथ जियोमेट्री का सेंटरॉइड कैसे प्राप्त करें
-url: /net/geometry-analysis/get-geometry-centroid/
+url: /hi/net/geometry-analysis/get-geometry-centroid/
 weight: 19
 ---
 

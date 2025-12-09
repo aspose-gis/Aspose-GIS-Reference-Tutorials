@@ -3,11 +3,10 @@ date: 2025-12-07
 description: Impara come eseguire operazioni di overlay in questo tutorial di overlay
   spaziale usando Aspose.GIS per .NET. Padroneggia intersezione, unione, differenza
   e differenza simmetrica.
-language: it
 linktitle: Find Geometry Overlays
 second_title: Aspose.GIS .NET API
 title: Come eseguire operazioni di sovrapposizione con Aspose.GIS per .NET
-url: /net/geometry-analysis/find-geometry-overlays/
+url: /it/net/geometry-analysis/find-geometry-overlays/
 weight: 16
 ---
 

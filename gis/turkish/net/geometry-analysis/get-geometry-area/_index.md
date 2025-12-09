@@ -3,11 +3,10 @@ date: 2025-12-06
 description: Aspose.GIS for .NET kullanarak geometrilerin alanını nasıl hesaplayacağınızı
   öğrenin – GIS alan hesaplaması, C# üçgen alanı ve çokgen alanı hesaplaması için
   mükemmeldir.
-language: tr
 linktitle: Get Geometry Area
 second_title: Aspose.GIS .NET API
 title: Aspose.GIS for .NET ile Alan Nasıl Hesaplanır
-url: /net/geometry-analysis/get-geometry-area/
+url: /tr/net/geometry-analysis/get-geometry-area/
 weight: 18
 ---
 

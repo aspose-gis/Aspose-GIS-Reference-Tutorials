@@ -2,11 +2,10 @@
 date: 2025-12-04
 description: Scopri come verificare la sovrapposizione e come rilevare la sovrapposizione
   di geometrie usando Aspose.GIS per .NET. Guida passo‑passo per gli sviluppatori.
-language: it
 linktitle: Check Geometries Overlap
 second_title: Aspose.GIS .NET API
 title: Come verificare la sovrapposizione di geometrie con Aspose.GIS per .NET
-url: /net/geometry-analysis/check-geometries-overlap/
+url: /it/net/geometry-analysis/check-geometries-overlap/
 weight: 12
 ---
 

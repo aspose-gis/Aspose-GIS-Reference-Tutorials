@@ -1,11 +1,10 @@
 ---
 date: 2025-12-07
 description: 了解如何使用 Aspose.GIS for .NET 取得幾何圖形的中心點，並在 .NET 應用程式中計算多邊形的中心點以進行空間分析。
-language: zh-hant
 linktitle: Get Geometry Centroid
 second_title: Aspose.GIS .NET API
 title: 如何使用 Aspose.GIS for .NET 獲取幾何圖形的重心
-url: /net/geometry-analysis/get-geometry-centroid/
+url: /zh-hant/net/geometry-analysis/get-geometry-centroid/
 weight: 19
 ---
 

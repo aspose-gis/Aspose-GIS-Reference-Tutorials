@@ -4,11 +4,10 @@ description: Pelajari cara menentukan apakah sebuah titik berada di dalam poligo
   menggunakan C#. Tutorial Aspose.GIS .NET ini mencakup pemeriksaan apakah geometri
   mengandung titik, teknik analisis geospasial .NET, dan praktik terbaik dengan Aspose.GIS
   .NET.
-language: id
 linktitle: point inside polygon c# – Check Geometry Contains Another
 second_title: Aspose.GIS .NET API
 title: titik di dalam poligon c# – Periksa Geometri Mengandung Lainnya
-url: /net/geometry-analysis/check-geometry-contains-another/
+url: /id/net/geometry-analysis/check-geometry-contains-another/
 weight: 14
 ---
 

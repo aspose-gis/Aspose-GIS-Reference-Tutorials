@@ -2,11 +2,10 @@
 date: 2025-12-06
 description: Aspose.GIS for .NET का उपयोग करके C# में LineString कैसे बनाएं, LineString
   में बिंदु जोड़ें, और जांचें कि क्या कोई ज्यामिति दूसरी को कवर करती है।
-language: hi
 linktitle: Create LineString C# – Check Geometry Covers Another
 second_title: Aspose.GIS .NET API
 title: LineString बनाएं C# – जाँचें कि ज्यामिति किसी अन्य को कवर करती है
-url: /net/geometry-analysis/check-geometry-covers-another/
+url: /hi/net/geometry-analysis/check-geometry-covers-another/
 weight: 15
 ---
 

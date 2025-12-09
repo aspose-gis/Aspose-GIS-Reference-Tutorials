@@ -1,11 +1,10 @@
 ---
 date: 2025-12-07
 description: 学习如何使用 Aspose.GIS for .NET 获取几何体的中心点，并在 .NET 应用程序中计算多边形中心点以进行空间分析。
-language: zh
 linktitle: Get Geometry Centroid
 second_title: Aspose.GIS .NET API
 title: 如何使用 Aspose.GIS for .NET 获取几何的质心
-url: /net/geometry-analysis/get-geometry-centroid/
+url: /zh/net/geometry-analysis/get-geometry-centroid/
 weight: 19
 ---
 

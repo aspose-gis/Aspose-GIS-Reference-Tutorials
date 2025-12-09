@@ -2,11 +2,10 @@
 date: 2025-12-04
 description: Pelajari cara memeriksa tumpang tindih dan cara mendeteksi tumpang tindih
   geometri menggunakan Aspose.GIS untuk .NET. Panduan langkah demi langkah untuk pengembang.
-language: id
 linktitle: Check Geometries Overlap
 second_title: Aspose.GIS .NET API
 title: Cara Memeriksa Tumpang Tindih Geometri dengan Aspose.GIS untuk .NET
-url: /net/geometry-analysis/check-geometries-overlap/
+url: /id/net/geometry-analysis/check-geometries-overlap/
 weight: 12
 ---
 

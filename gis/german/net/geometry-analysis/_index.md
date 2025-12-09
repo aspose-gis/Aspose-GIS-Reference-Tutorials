@@ -3,11 +3,10 @@ date: 2025-12-02
 description: Erfahren Sie, wie Sie Geometrien prüfen, Flächen von Geometrien berechnen,
   konvexe Hüllen und mehr mit Aspose.GIS für .NET. Beherrschen Sie die Verarbeitung
   räumlicher Daten für eine robuste GIS-Entwicklung.
-language: de
 linktitle: How to Check Geometry
 second_title: Aspose.GIS .NET API
 title: Wie man Geometrie mit Aspose.GIS für .NET überprüft
-url: /net/geometry-analysis/
+url: /de/net/geometry-analysis/
 weight: 22
 ---
 

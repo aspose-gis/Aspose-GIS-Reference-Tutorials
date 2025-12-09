@@ -3,11 +3,10 @@ date: 2025-12-04
 description: Naučte se, jak zjistit, zda se bod nachází uvnitř polygonu pomocí C#.
   Tento tutoriál Aspose.GIS .NET pokrývá kontrolu, zda geometrie obsahuje bod, techniky
   geospatial analýzy v .NET a osvědčené postupy s Aspose.GIS .NET.
-language: cs
 linktitle: point inside polygon c# – Check Geometry Contains Another
 second_title: Aspose.GIS .NET API
 title: bod uvnitř polygonu c# – Zkontrolovat, zda geometrie obsahuje jinou
-url: /net/geometry-analysis/check-geometry-contains-another/
+url: /cs/net/geometry-analysis/check-geometry-contains-another/
 weight: 14
 ---
 

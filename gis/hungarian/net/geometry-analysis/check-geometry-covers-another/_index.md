@@ -3,11 +3,10 @@ date: 2025-12-06
 description: Tanulja meg, hogyan hozhat létre LineString-et C#‑ban az Aspose.GIS for
   .NET használatával, hogyan adhat pontokat egy LineString‑hez, és hogyan ellenőrizheti,
   hogy egy geometria lefedi‑e a másikat.
-language: hu
 linktitle: Create LineString C# – Check Geometry Covers Another
 second_title: Aspose.GIS .NET API
 title: LineString létrehozása C# – Ellenőrizze, hogy a geometria lefedi-e a másikat
-url: /net/geometry-analysis/check-geometry-covers-another/
+url: /hu/net/geometry-analysis/check-geometry-covers-another/
 weight: 15
 ---
 

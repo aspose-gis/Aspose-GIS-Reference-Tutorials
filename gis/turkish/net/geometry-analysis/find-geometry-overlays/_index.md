@@ -3,11 +3,10 @@ date: 2025-12-07
 description: Aspose.GIS for .NET kullanarak bu mekânsal bindirme öğreticisinde bindirme
   işlemlerini nasıl gerçekleştireceğinizi öğrenin. Kesişim, birleşim, fark ve simetrik
   fark konularında uzmanlaşın.
-language: tr
 linktitle: Find Geometry Overlays
 second_title: Aspose.GIS .NET API
 title: Aspose.GIS for .NET ile Örtüşüm İşlemlerini Nasıl Gerçekleştirirsiniz
-url: /net/geometry-analysis/find-geometry-overlays/
+url: /tr/net/geometry-analysis/find-geometry-overlays/
 weight: 16
 ---
 

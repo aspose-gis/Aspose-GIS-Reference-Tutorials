@@ -3,11 +3,10 @@ date: 2025-12-07
 description: Aspose.GIS for .NET का उपयोग करके इस स्पैशियल ओवरले ट्यूटोरियल में ओवरले
   ऑपरेशन्स कैसे करें, सीखें। इंटरसेक्शन, यूनियन, डिफरेंस और सिमेट्रिक डिफरेंस में
   महारत हासिल करें।
-language: hi
 linktitle: Find Geometry Overlays
 second_title: Aspose.GIS .NET API
 title: Aspose.GIS for .NET के साथ ओवरले ऑपरेशन्स कैसे करें
-url: /net/geometry-analysis/find-geometry-overlays/
+url: /hi/net/geometry-analysis/find-geometry-overlays/
 weight: 16
 ---
 

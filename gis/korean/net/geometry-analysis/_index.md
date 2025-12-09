@@ -2,11 +2,10 @@
 date: 2025-12-02
 description: Aspose.GIS for .NET를 사용하여 기하학을 확인하고, 기하학 면적을 계산하며, 볼록 껍질 등을 수행하는 방법을
   배웁니다. 견고한 GIS 개발을 위한 공간 데이터 처리 기술을 마스터하세요.
-language: ko
 linktitle: How to Check Geometry
 second_title: Aspose.GIS .NET API
 title: Aspose.GIS for .NET으로 지오메트리 확인하는 방법
-url: /net/geometry-analysis/
+url: /ko/net/geometry-analysis/
 weight: 22
 ---
 

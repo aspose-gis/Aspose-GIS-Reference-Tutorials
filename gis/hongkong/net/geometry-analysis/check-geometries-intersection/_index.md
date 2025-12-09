@@ -1,11 +1,10 @@
 ---
 date: 2025-12-03
 description: 學習如何使用 C# 建立多邊形幾何，並使用 Aspose.GIS for .NET 的 Intersects 方法檢測重疊的多邊形。
-language: zh-hant
 linktitle: Create Polygon Geometry C#
 second_title: Aspose.GIS .NET API
 title: 使用 C# 建立多邊形幾何並使用 Aspose.GIS for .NET 檢查相交
-url: /net/geometry-analysis/check-geometries-intersection/
+url: /zh-hant/net/geometry-analysis/check-geometries-intersection/
 weight: 11
 ---
 

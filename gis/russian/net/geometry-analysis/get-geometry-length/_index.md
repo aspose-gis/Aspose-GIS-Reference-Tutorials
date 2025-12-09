@@ -3,11 +3,10 @@ date: 2025-12-07
 description: Изучите, как вычислять длину геометрии в .NET с помощью Aspose.GIS для
   эффективной обработки пространственных данных. Пошаговое руководство с примерами
   кода.
-language: ru
 linktitle: Get Geometry Length
 second_title: Aspose.GIS .NET API
 title: Как вычислить длину геометрии в .NET с помощью Aspose.GIS
-url: /net/geometry-analysis/get-geometry-length/
+url: /ru/net/geometry-analysis/get-geometry-length/
 weight: 24
 ---
 

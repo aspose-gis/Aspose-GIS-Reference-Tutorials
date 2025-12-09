@@ -3,11 +3,10 @@ date: 2025-12-02
 description: Узнайте, как проверять геометрию, вычислять площадь геометрии, построить
   выпуклую оболочку и многое другое с помощью Aspose.GIS для .NET. Овладейте обработкой
   пространственных данных для надёжной разработки ГИС.
-language: ru
 linktitle: How to Check Geometry
 second_title: Aspose.GIS .NET API
 title: Как проверить геометрию с помощью Aspose.GIS для .NET
-url: /net/geometry-analysis/
+url: /ru/net/geometry-analysis/
 weight: 22
 ---
 

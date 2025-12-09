@@ -3,11 +3,10 @@ date: 2025-12-04
 description: Узнайте, как определить, находится ли точка внутри многоугольника, используя
   C#. Этот учебник Aspose.GIS .NET охватывает проверку, содержит ли геометрия точку,
   техники геопространственного анализа в .NET и лучшие практики с Aspose.GIS .NET.
-language: ru
 linktitle: point inside polygon c# – Check Geometry Contains Another
 second_title: Aspose.GIS .NET API
 title: Точка внутри полигона C# – проверка, содержит ли одна геометрия другую
-url: /net/geometry-analysis/check-geometry-contains-another/
+url: /ru/net/geometry-analysis/check-geometry-contains-another/
 weight: 14
 ---
 

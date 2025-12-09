@@ -2,11 +2,10 @@
 date: 2025-12-04
 description: Apprenez à vérifier le chevauchement et à détecter le chevauchement des
   géométries en utilisant Aspose.GIS pour .NET. Guide étape par étape pour les développeurs.
-language: fr
 linktitle: Check Geometries Overlap
 second_title: Aspose.GIS .NET API
 title: Comment vérifier le chevauchement des géométries avec Aspose.GIS pour .NET
-url: /net/geometry-analysis/check-geometries-overlap/
+url: /fr/net/geometry-analysis/check-geometries-overlap/
 weight: 12
 ---
 

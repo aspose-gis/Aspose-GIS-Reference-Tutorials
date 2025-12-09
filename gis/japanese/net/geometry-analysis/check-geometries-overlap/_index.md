@@ -1,11 +1,10 @@
 ---
 date: 2025-12-04
 description: Aspose.GIS for .NET を使用してジオメトリの重なりを確認および検出する方法を学びます。開発者向けのステップバイステップガイド。
-language: ja
 linktitle: Check Geometries Overlap
 second_title: Aspose.GIS .NET API
 title: Aspose.GIS for .NET でジオメトリの重なりを確認する方法
-url: /net/geometry-analysis/check-geometries-overlap/
+url: /ja/net/geometry-analysis/check-geometries-overlap/
 weight: 12
 ---
 

@@ -2,11 +2,10 @@
 date: 2025-12-04
 description: C# を使用して点がポリゴンの内部にあるかどうかを判定する方法を学びましょう。この Aspose.GIS .NET チュートリアルでは、ジオメトリの点包含チェック、ジオスペーシャル分析
   .NET 手法、そして Aspose.GIS .NET のベストプラクティスを取り上げています。
-language: ja
 linktitle: point inside polygon c# – Check Geometry Contains Another
 second_title: Aspose.GIS .NET API
 title: C#でポリゴン内の点 – ジオメトリが別のジオメトリを含むか確認
-url: /net/geometry-analysis/check-geometry-contains-another/
+url: /ja/net/geometry-analysis/check-geometry-contains-another/
 weight: 14
 ---
 

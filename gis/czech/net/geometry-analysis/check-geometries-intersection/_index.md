@@ -2,12 +2,11 @@
 date: 2025-12-03
 description: Naučte se, jak v C# vytvořit polygonovou geometrii a detekovat překrývající
   se polygony pomocí metody Intersects v Aspose.GIS pro .NET.
-language: cs
 linktitle: Create Polygon Geometry C#
 second_title: Aspose.GIS .NET API
 title: Vytvořte polygonovou geometrii v C# a zkontrolujte průnik pomocí Aspose.GIS
   pro .NET
-url: /net/geometry-analysis/check-geometries-intersection/
+url: /cs/net/geometry-analysis/check-geometries-intersection/
 weight: 11
 ---
 

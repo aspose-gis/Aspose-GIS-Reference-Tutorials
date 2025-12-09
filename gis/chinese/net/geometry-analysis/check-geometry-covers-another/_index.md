@@ -1,11 +1,10 @@
 ---
 date: 2025-12-06
 description: 学习如何使用 Aspose.GIS for .NET 在 C# 中创建 LineString，向 LineString 添加点，并检查几何对象是否覆盖另一个几何对象。
-language: zh
 linktitle: Create LineString C# – Check Geometry Covers Another
 second_title: Aspose.GIS .NET API
 title: 创建 LineString（C#）– 检查几何对象是否覆盖另一个
-url: /net/geometry-analysis/check-geometry-covers-another/
+url: /zh/net/geometry-analysis/check-geometry-covers-another/
 weight: 15
 ---
 

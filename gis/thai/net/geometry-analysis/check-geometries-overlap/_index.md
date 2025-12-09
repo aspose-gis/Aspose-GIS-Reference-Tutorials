@@ -2,11 +2,10 @@
 date: 2025-12-04
 description: เรียนรู้วิธีตรวจสอบการทับซ้อนและวิธีตรวจจับการทับซ้อนของรูปทรงเรขาคณิตโดยใช้
   Aspose.GIS สำหรับ .NET คู่มือขั้นตอนต่อขั้นตอนสำหรับนักพัฒนา
-language: th
 linktitle: Check Geometries Overlap
 second_title: Aspose.GIS .NET API
 title: วิธีตรวจสอบการทับซ้อนของรูปทรงเรขาคณิตด้วย Aspose.GIS สำหรับ .NET
-url: /net/geometry-analysis/check-geometries-overlap/
+url: /th/net/geometry-analysis/check-geometries-overlap/
 weight: 12
 ---
 

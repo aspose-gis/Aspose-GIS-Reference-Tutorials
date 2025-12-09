@@ -2,11 +2,10 @@
 date: 2025-12-07
 description: Naučte se provádět operace překrytí v tomto tutoriálu o prostorovém překrytí
   pomocí Aspose.GIS pro .NET. Ovládněte průnik, sjednocení, rozdíl a symetrický rozdíl.
-language: cs
 linktitle: Find Geometry Overlays
 second_title: Aspose.GIS .NET API
 title: Jak provádět překryvové operace pomocí Aspose.GIS pro .NET
-url: /net/geometry-analysis/find-geometry-overlays/
+url: /cs/net/geometry-analysis/find-geometry-overlays/
 weight: 16
 ---
 

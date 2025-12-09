@@ -1,11 +1,10 @@
 ---
 date: 2025-12-04
 description: 学习如何使用 Aspose.GIS for .NET 检查重叠以及检测几何图形的重叠。面向开发者的逐步指南。
-language: zh
 linktitle: Check Geometries Overlap
 second_title: Aspose.GIS .NET API
 title: 如何使用 Aspose.GIS for .NET 检查几何图形的重叠
-url: /net/geometry-analysis/check-geometries-overlap/
+url: /zh/net/geometry-analysis/check-geometries-overlap/
 weight: 12
 ---
 

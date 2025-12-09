@@ -3,11 +3,10 @@ date: 2025-12-06
 description: Ismerje meg, hogyan számíthatja ki a geometriai területeket az Aspose.GIS
   for .NET használatával – tökéletes GIS terület számításhoz, háromszög terület C#-ban,
   és multipolygon terület számításhoz.
-language: hu
 linktitle: Get Geometry Area
 second_title: Aspose.GIS .NET API
 title: Hogyan számítsuk ki a területet az Aspose.GIS for .NET segítségével
-url: /net/geometry-analysis/get-geometry-area/
+url: /hu/net/geometry-analysis/get-geometry-area/
 weight: 18
 ---
 

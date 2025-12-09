@@ -2,11 +2,10 @@
 date: 2025-12-06
 description: 學習如何使用 Aspose.GIS for .NET 將 GeoJSON 轉換為 TopoJSON（含分組），設定物件名稱屬性，並對 GeoJSON
   要素進行分組。
-language: zh-hant
 linktitle: How to Convert GeoJSON to TopoJSON with Grouping using Aspose.GIS
 second_title: Aspose.GIS .NET API
 title: 使用 Aspose.GIS 將 GeoJSON 轉換為 TopoJSON 並進行分組
-url: /net/geo-data-conversion/convert-geojson-to-topojson-with-grouping/
+url: /zh-hant/net/geo-data-conversion/convert-geojson-to-topojson-with-grouping/
 weight: 13
 ---
 

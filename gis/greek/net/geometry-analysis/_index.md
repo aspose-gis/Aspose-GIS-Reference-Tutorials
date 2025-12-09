@@ -3,11 +3,10 @@ date: 2025-12-02
 description: Μάθετε πώς να ελέγχετε γεωμετρία, να υπολογίζετε το εμβαδόν γεωμετρίας,
   το κυρτό περίβλημα και άλλα χρησιμοποιώντας το Aspose.GIS για .NET. Κατακτήστε τη
   διαχείριση χωρικών δεδομένων για ανθεκτική ανάπτυξη GIS.
-language: el
 linktitle: How to Check Geometry
 second_title: Aspose.GIS .NET API
 title: Πώς να ελέγξετε τη γεωμετρία με το Aspose.GIS για .NET
-url: /net/geometry-analysis/
+url: /el/net/geometry-analysis/
 weight: 22
 ---
 

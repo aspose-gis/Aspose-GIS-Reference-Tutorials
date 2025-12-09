@@ -3,11 +3,10 @@ date: 2025-12-02
 description: Aspose.GIS for .NET का उपयोग करके ज्यामिति की जाँच, ज्यामिति क्षेत्रफल
   की गणना, कॉन्वेक्स हुल और अधिक कैसे करें, सीखें। मजबूत GIS विकास के लिए स्थानिक
   डेटा हैंडलिंग में निपुण बनें।
-language: hi
 linktitle: How to Check Geometry
 second_title: Aspose.GIS .NET API
 title: Aspose.GIS for .NET के साथ ज्यामिति कैसे जांचें
-url: /net/geometry-analysis/
+url: /hi/net/geometry-analysis/
 weight: 22
 ---
 

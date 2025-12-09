@@ -1,11 +1,10 @@
 ---
 date: 2025-12-07
 description: 學習如何在此空間疊加教學中使用 Aspose.GIS for .NET 執行疊加操作。掌握交集、聯集、差集及對稱差集。
-language: zh-hant
 linktitle: Find Geometry Overlays
 second_title: Aspose.GIS .NET API
 title: 如何使用 Aspose.GIS for .NET 執行疊加操作
-url: /net/geometry-analysis/find-geometry-overlays/
+url: /zh-hant/net/geometry-analysis/find-geometry-overlays/
 weight: 16
 ---
 

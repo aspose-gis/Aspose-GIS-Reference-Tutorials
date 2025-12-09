@@ -1,11 +1,10 @@
 ---
 date: 2025-12-06
 description: 学习如何使用 Aspose.GIS for .NET 计算几何体面积——完美适用于 GIS 面积计算、三角形面积（C#）以及多多边形面积计算。
-language: zh
 linktitle: Get Geometry Area
 second_title: Aspose.GIS .NET API
 title: 如何使用 Aspose.GIS for .NET 计算面积
-url: /net/geometry-analysis/get-geometry-area/
+url: /zh/net/geometry-analysis/get-geometry-area/
 weight: 18
 ---
 

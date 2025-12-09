@@ -3,11 +3,10 @@ date: 2025-12-04
 description: Pelajari cara memeriksa geometri yang bersentuhan menggunakan Aspose.GIS
   untuk .NET, sebuah perpustakaan kuat untuk menangani data spasial dan melakukan
   analisis spasial .NET.
-language: id
 linktitle: How to Check Touching Geometries
 second_title: Aspose.GIS .NET API
 title: Cara Memeriksa Geometri yang Bersentuhan dengan Aspose.GIS untuk .NET
-url: /net/geometry-analysis/check-geometries-touching/
+url: /id/net/geometry-analysis/check-geometries-touching/
 weight: 13
 ---
 

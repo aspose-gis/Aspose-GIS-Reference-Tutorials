@@ -3,11 +3,10 @@ date: 2025-12-04
 description: Leer hoe u kunt bepalen of een punt binnen een polygoon ligt met C#.
   Deze Aspose.GIS .NET‑tutorial behandelt controles of een geometrie een punt bevat,
   geospatiale analyse‑technieken in .NET en best practices met Aspose GIS .NET.
-language: nl
 linktitle: point inside polygon c# – Check Geometry Contains Another
 second_title: Aspose.GIS .NET API
 title: punt binnen veelhoek c# – Controleer of geometrie een andere bevat
-url: /net/geometry-analysis/check-geometry-contains-another/
+url: /nl/net/geometry-analysis/check-geometry-contains-another/
 weight: 14
 ---
 

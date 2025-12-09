@@ -3,11 +3,10 @@ date: 2025-12-02
 description: Aspose.GIS for .NET kullanarak geometrinin nasıl kontrol edileceğini,
   geometri alanının nasıl hesaplanacağını, konveks kılıfı ve daha fazlasını öğrenin.
   Sağlam GIS geliştirme için mekansal veri işleme konusunda uzmanlaşın.
-language: tr
 linktitle: How to Check Geometry
 second_title: Aspose.GIS .NET API
 title: Aspose.GIS for .NET ile Geometriyi Nasıl Kontrol Edilir
-url: /net/geometry-analysis/
+url: /tr/net/geometry-analysis/
 weight: 22
 ---
 

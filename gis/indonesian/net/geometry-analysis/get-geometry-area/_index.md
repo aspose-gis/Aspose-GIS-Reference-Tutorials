@@ -2,11 +2,10 @@
 date: 2025-12-06
 description: Pelajari cara menghitung area geometri menggunakan Aspose.GIS untuk .NET
   – sempurna untuk perhitungan area GIS, area segitiga C#, dan perhitungan area multipolygon.
-language: id
 linktitle: Get Geometry Area
 second_title: Aspose.GIS .NET API
 title: Cara Menghitung Luas dengan Aspose.GIS untuk .NET
-url: /net/geometry-analysis/get-geometry-area/
+url: /id/net/geometry-analysis/get-geometry-area/
 weight: 18
 ---
 

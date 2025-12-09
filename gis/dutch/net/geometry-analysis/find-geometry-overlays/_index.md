@@ -3,11 +3,10 @@ date: 2025-12-07
 description: Leer hoe u overlay‑bewerkingen uitvoert in deze tutorial over ruimtelijke
   overlay met Aspose.GIS voor .NET. Beheers intersectie, unie, verschil en symmetrisch
   verschil.
-language: nl
 linktitle: Find Geometry Overlays
 second_title: Aspose.GIS .NET API
 title: Hoe overlaybewerkingen uit te voeren met Aspose.GIS voor .NET
-url: /net/geometry-analysis/find-geometry-overlays/
+url: /nl/net/geometry-analysis/find-geometry-overlays/
 weight: 16
 ---
 

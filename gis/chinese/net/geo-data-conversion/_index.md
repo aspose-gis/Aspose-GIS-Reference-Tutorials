@@ -2,11 +2,10 @@
 date: 2025-12-04
 description: 学习如何使用 Aspose.GIS for .NET 将 geojson、shapefile 转换为 geojson，以及将 topojson
   转换为 geojson。一步步教程，帮助实现无缝的 GIS 数据转换。
-language: zh
 linktitle: How to Convert GeoJSON – Aspose.GIS for .NET
 second_title: Aspose.GIS .NET API
 title: 如何转换 GeoJSON – Aspose.GIS for .NET
-url: /net/geo-data-conversion/
+url: /zh/net/geo-data-conversion/
 weight: 20
 ---
 

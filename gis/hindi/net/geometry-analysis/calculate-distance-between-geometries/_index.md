@@ -3,11 +3,10 @@ date: 2025-12-02
 description: Aspose.GIS for .NET का उपयोग करके ज्यामितियों के बीच दूरी कैसे गणना करें,
   सीखें। यह चरण-दर-चरण मार्गदर्शिका दिखाती है कि Aspose.GIS का उपयोग कैसे करें, ज्यामिति
   तक दूरी प्राप्त करें, और अपने अनुप्रयोगों में दूरी गणनाओं को एकीकृत करें।
-language: hi
 linktitle: How to Calculate Distance Between Geometries
 second_title: Aspose.GIS .NET API
 title: Aspose.GIS के साथ ज्यामितियों के बीच दूरी कैसे गणना करें
-url: /net/geometry-analysis/calculate-distance-between-geometries/
+url: /hi/net/geometry-analysis/calculate-distance-between-geometries/
 weight: 21
 ---
 

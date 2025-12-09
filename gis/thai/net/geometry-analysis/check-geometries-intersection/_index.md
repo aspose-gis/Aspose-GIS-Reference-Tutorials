@@ -2,11 +2,10 @@
 date: 2025-12-03
 description: เรียนรู้วิธีสร้างรูปหลายเหลี่ยมใน C# และตรวจจับรูปหลายเหลี่ยมที่ทับซ้อนโดยใช้เมธอด
   Intersects ของ Aspose.GIS สำหรับ .NET
-language: th
 linktitle: Create Polygon Geometry C#
 second_title: Aspose.GIS .NET API
 title: สร้างรูปทรงหลายเหลี่ยมใน C# และตรวจสอบการตัดกันด้วย Aspose.GIS สำหรับ .NET
-url: /net/geometry-analysis/check-geometries-intersection/
+url: /th/net/geometry-analysis/check-geometries-intersection/
 weight: 11
 ---
 

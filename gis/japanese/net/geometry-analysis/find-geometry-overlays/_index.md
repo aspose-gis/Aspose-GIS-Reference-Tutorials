@@ -1,11 +1,10 @@
 ---
 date: 2025-12-07
 description: Aspose.GIS for .NET を使用したこの空間オーバーレイチュートリアルで、オーバーレイ操作の実行方法を学びましょう。交差、合併、差分、対称差分をマスターしてください。
-language: ja
 linktitle: Find Geometry Overlays
 second_title: Aspose.GIS .NET API
 title: .NET 用 Aspose.GIS でオーバーレイ操作を実行する方法
-url: /net/geometry-analysis/find-geometry-overlays/
+url: /ja/net/geometry-analysis/find-geometry-overlays/
 weight: 16
 ---
 

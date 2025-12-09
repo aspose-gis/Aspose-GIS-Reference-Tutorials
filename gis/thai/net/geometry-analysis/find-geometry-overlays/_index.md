@@ -2,11 +2,10 @@
 date: 2025-12-07
 description: เรียนรู้วิธีทำการโอเวอร์เลย์ในบทแนะนำการโอเวอร์เลย์เชิงพื้นที่นี้โดยใช้
   Aspose.GIS สำหรับ .NET. เชี่ยวชาญการตัดกัน, การรวม, ความแตกต่าง, และความแตกต่างสมมาตร.
-language: th
 linktitle: Find Geometry Overlays
 second_title: Aspose.GIS .NET API
 title: วิธีทำการดำเนินการโอเวอร์เลย์ด้วย Aspose.GIS สำหรับ .NET
-url: /net/geometry-analysis/find-geometry-overlays/
+url: /th/net/geometry-analysis/find-geometry-overlays/
 weight: 16
 ---
 

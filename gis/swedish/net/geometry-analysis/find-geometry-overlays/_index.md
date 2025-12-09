@@ -3,11 +3,10 @@ date: 2025-12-07
 description: Lär dig hur du utför överlagringsoperationer i den här handledningen
   om spatial överlagring med Aspose.GIS för .NET. Bemästra skärning, förening, differens
   och symmetrisk differens.
-language: sv
 linktitle: Find Geometry Overlays
 second_title: Aspose.GIS .NET API
 title: Hur man utför överlagringsoperationer med Aspose.GIS för .NET
-url: /net/geometry-analysis/find-geometry-overlays/
+url: /sv/net/geometry-analysis/find-geometry-overlays/
 weight: 16
 ---
 

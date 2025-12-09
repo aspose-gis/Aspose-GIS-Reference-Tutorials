@@ -3,11 +3,10 @@ date: 2025-12-04
 description: Pelajari cara mengonversi geojson, mengonversi shapefile ke geojson,
   dan mengonversi topojson ke geojson menggunakan Aspose.GIS untuk .NET. Tutorial
   langkah demi langkah untuk konversi data GIS yang mulus.
-language: id
 linktitle: How to Convert GeoJSON – Aspose.GIS for .NET
 second_title: Aspose.GIS .NET API
 title: Cara Mengonversi GeoJSON – Aspose.GIS untuk .NET
-url: /net/geo-data-conversion/
+url: /id/net/geo-data-conversion/
 weight: 20
 ---
 

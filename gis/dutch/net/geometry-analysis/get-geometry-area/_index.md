@@ -2,11 +2,10 @@
 date: 2025-12-06
 description: Leer hoe u de oppervlakte van geometrieën kunt berekenen met Aspose.GIS
   voor .NET – perfect voor GIS-oppervlakteberekening, driehoeksoppervlakte C# en multipolygon-oppervlakteberekening.
-language: nl
 linktitle: Get Geometry Area
 second_title: Aspose.GIS .NET API
 title: Hoe oppervlakte berekenen met Aspose.GIS voor .NET
-url: /net/geometry-analysis/get-geometry-area/
+url: /nl/net/geometry-analysis/get-geometry-area/
 weight: 18
 ---
 

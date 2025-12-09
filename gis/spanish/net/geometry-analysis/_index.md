@@ -3,11 +3,10 @@ date: 2025-12-02
 description: Aprenda a verificar geometría, calcular áreas de geometría, envolventes
   convexas y más usando Aspose.GIS para .NET. Domine el manejo de datos espaciales
   para un desarrollo GIS robusto.
-language: es
 linktitle: How to Check Geometry
 second_title: Aspose.GIS .NET API
 title: Cómo comprobar la geometría con Aspose.GIS para .NET
-url: /net/geometry-analysis/
+url: /es/net/geometry-analysis/
 weight: 22
 ---
 

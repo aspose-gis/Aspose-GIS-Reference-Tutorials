@@ -2,11 +2,10 @@
 date: 2025-12-07
 description: Aspose.GIS for .NET를 사용한 이 공간 오버레이 튜토리얼에서 오버레이 작업 수행 방법을 배우세요. 교차, 합집합,
   차집합 및 대칭 차집합을 마스터하세요.
-language: ko
 linktitle: Find Geometry Overlays
 second_title: Aspose.GIS .NET API
 title: Aspose.GIS for .NET를 사용한 오버레이 작업 수행 방법
-url: /net/geometry-analysis/find-geometry-overlays/
+url: /ko/net/geometry-analysis/find-geometry-overlays/
 weight: 16
 ---
 

@@ -3,11 +3,10 @@ date: 2025-12-04
 description: تعلم كيفية تحديد ما إذا كانت نقطة تقع داخل مضلع باستخدام C#. يغطي هذا
   الدرس التعليمي لـ Aspose.GIS .NET فحوصات احتواء الهندسة للنقطة، وتقنيات التحليل
   الجغرافي المكانية في .NET، وأفضل الممارسات مع Aspose.GIS .NET.
-language: ar
 linktitle: point inside polygon c# – Check Geometry Contains Another
 second_title: Aspose.GIS .NET API
 title: نقطة داخل مضلع C# – التحقق مما إذا كانت الهندسة تحتوي على أخرى
-url: /net/geometry-analysis/check-geometry-contains-another/
+url: /ar/net/geometry-analysis/check-geometry-contains-another/
 weight: 14
 ---
 

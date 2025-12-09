@@ -2,11 +2,10 @@
 date: 2025-12-04
 description: Dowiedz się, jak sprawdzić nakładanie się i wykrywać nakładanie się geometrii
   przy użyciu Aspose.GIS dla .NET. Przewodnik krok po kroku dla programistów.
-language: pl
 linktitle: Check Geometries Overlap
 second_title: Aspose.GIS .NET API
 title: Jak sprawdzić nakładanie się geometrii przy użyciu Aspose.GIS dla .NET
-url: /net/geometry-analysis/check-geometries-overlap/
+url: /pl/net/geometry-analysis/check-geometries-overlap/
 weight: 12
 ---
 

@@ -3,11 +3,10 @@ date: 2025-12-04
 description: Μάθετε πώς να ελέγχετε τις γεωμετρίες που αγγίζουν χρησιμοποιώντας το
   Aspose.GIS για .NET, μια ισχυρή βιβλιοθήκη για τη διαχείριση χωρικών δεδομένων και
   την εκτέλεση χωρικής ανάλυσης .NET.
-language: el
 linktitle: How to Check Touching Geometries
 second_title: Aspose.GIS .NET API
 title: Πώς να ελέγξετε τις αγγίζουσες γεωμετρίες με το Aspose.GIS για .NET
-url: /net/geometry-analysis/check-geometries-touching/
+url: /el/net/geometry-analysis/check-geometries-touching/
 weight: 13
 ---
 

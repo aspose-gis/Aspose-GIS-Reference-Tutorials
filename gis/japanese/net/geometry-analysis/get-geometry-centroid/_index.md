@@ -1,11 +1,10 @@
 ---
 date: 2025-12-07
 description: Aspose.GIS for .NET を使用してジオメトリの重心を取得し、.NET アプリケーションで空間分析のためにポリゴンの重心を計算する方法を学びましょう。
-language: ja
 linktitle: Get Geometry Centroid
 second_title: Aspose.GIS .NET API
 title: .NET 用 Aspose.GIS でジオメトリの重心を取得する方法
-url: /net/geometry-analysis/get-geometry-centroid/
+url: /ja/net/geometry-analysis/get-geometry-centroid/
 weight: 19
 ---
 

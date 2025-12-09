@@ -3,11 +3,10 @@ date: 2025-12-04
 description: Aspose.GIS for .NET kullanarak örtüşmeyi nasıl kontrol edeceğinizi ve
   geometrilerin örtüşmesini nasıl tespit edeceğinizi öğrenin. Geliştiriciler için
   adım adım kılavuz.
-language: tr
 linktitle: Check Geometries Overlap
 second_title: Aspose.GIS .NET API
 title: Aspose.GIS for .NET ile Geometrilerin Çakışmasını Nasıl Kontrol Edilir
-url: /net/geometry-analysis/check-geometries-overlap/
+url: /tr/net/geometry-analysis/check-geometries-overlap/
 weight: 12
 ---
 

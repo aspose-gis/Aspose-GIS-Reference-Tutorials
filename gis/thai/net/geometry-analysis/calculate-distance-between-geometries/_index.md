@@ -2,11 +2,10 @@
 date: 2025-12-02
 description: เรียนรู้วิธีคำนวณระยะทางระหว่างรูปทรงเรขาคณิตโดยใช้ Aspose.GIS สำหรับ
   .NET คู่มือแบบขั้นตอนนี้แสดงวิธีใช้ Aspose.GIS, รับระยะทางถึงรูปทรงเรขาคณิต, และรวมการคำนวณระยะทางเข้ากับแอปพลิเคชันของคุณ.
-language: th
 linktitle: How to Calculate Distance Between Geometries
 second_title: Aspose.GIS .NET API
 title: วิธีคำนวณระยะทางระหว่างรูปทรงเรขาคณิตด้วย Aspose.GIS
-url: /net/geometry-analysis/calculate-distance-between-geometries/
+url: /th/net/geometry-analysis/calculate-distance-between-geometries/
 weight: 21
 ---
 

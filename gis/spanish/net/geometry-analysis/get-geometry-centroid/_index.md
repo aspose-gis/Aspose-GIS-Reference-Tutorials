@@ -3,11 +3,10 @@ date: 2025-12-07
 description: Aprenda cómo obtener el centroide de una geometría usando Aspose.GIS
   para .NET y calcule el centroide de un polígono para análisis espacial en sus aplicaciones
   .NET.
-language: es
 linktitle: Get Geometry Centroid
 second_title: Aspose.GIS .NET API
 title: Cómo obtener el centroide de una geometría con Aspose.GIS para .NET
-url: /net/geometry-analysis/get-geometry-centroid/
+url: /es/net/geometry-analysis/get-geometry-centroid/
 weight: 19
 ---
 

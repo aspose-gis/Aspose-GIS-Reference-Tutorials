@@ -3,11 +3,10 @@ date: 2025-12-07
 description: Изучите, как выполнять операции наложения в этом учебнике по пространственному
   наложению с использованием Aspose.GIS для .NET. Овладейте пересечением, объединением,
   разностью и симметрической разностью.
-language: ru
 linktitle: Find Geometry Overlays
 second_title: Aspose.GIS .NET API
 title: Как выполнять операции наложения с Aspose.GIS для .NET
-url: /net/geometry-analysis/find-geometry-overlays/
+url: /ru/net/geometry-analysis/find-geometry-overlays/
 weight: 16
 ---
 

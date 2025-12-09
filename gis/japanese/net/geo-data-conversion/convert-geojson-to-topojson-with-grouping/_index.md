@@ -2,11 +2,10 @@
 date: 2025-12-06
 description: Aspose.GIS for .NET を使用して、GeoJSON をグループ化付きで TopoJSON に変換し、オブジェクト名属性を設定し、GeoJSON
   のフィーチャをグループ化する方法を学びましょう。
-language: ja
 linktitle: How to Convert GeoJSON to TopoJSON with Grouping using Aspose.GIS
 second_title: Aspose.GIS .NET API
 title: Aspose.GIS を使用したグルーピング付き GeoJSON から TopoJSON への変換方法
-url: /net/geo-data-conversion/convert-geojson-to-topojson-with-grouping/
+url: /ja/net/geo-data-conversion/convert-geojson-to-topojson-with-grouping/
 weight: 13
 ---
 

@@ -2,11 +2,10 @@
 date: 2025-11-30
 description: Aprende a convertir sin esfuerzo Shapefile a GeoJSON en .NET usando Aspose.GIS.
   Sigue nuestra guía paso a paso para una interoperabilidad fluida de datos geoespaciales.
-language: es
 linktitle: Convert Shapefile to GeoJSON
 second_title: Aspose.GIS .NET API
 title: Convertir Shapefile a GeoJSON
-url: /net/geo-data-conversion/convert-shapefile-to-geojson/
+url: /es/net/geo-data-conversion/convert-shapefile-to-geojson/
 weight: 15
 ---
 

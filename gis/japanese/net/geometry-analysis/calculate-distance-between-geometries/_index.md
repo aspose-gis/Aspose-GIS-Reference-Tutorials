@@ -2,11 +2,10 @@
 date: 2025-12-02
 description: Aspose.GIS for .NET を使用してジオメトリ間の距離を計算する方法を学びましょう。このステップバイステップガイドでは、Aspose.GIS
   の使い方、ジオメトリへの距離取得方法、そして距離計算をアプリケーションに統合する方法を示します。
-language: ja
 linktitle: How to Calculate Distance Between Geometries
 second_title: Aspose.GIS .NET API
 title: Aspose.GIS を使用したジオメトリ間の距離計算方法
-url: /net/geometry-analysis/calculate-distance-between-geometries/
+url: /ja/net/geometry-analysis/calculate-distance-between-geometries/
 weight: 21
 ---
 

@@ -3,12 +3,11 @@ date: 2025-12-03
 description: Μάθετε πώς να δημιουργείτε γεωμετρία πολυγώνων σε C# και να ανιχνεύετε
   επικαλυπτόμενους πολυγώνους χρησιμοποιώντας τη μέθοδο Intersects του Aspose.GIS
   για .NET.
-language: el
 linktitle: Create Polygon Geometry C#
 second_title: Aspose.GIS .NET API
 title: Δημιουργία Πολυγωνικής Γεωμετρίας C# και Έλεγχος Τομής με το Aspose.GIS για
   .NET
-url: /net/geometry-analysis/check-geometries-intersection/
+url: /el/net/geometry-analysis/check-geometries-intersection/
 weight: 11
 ---
 

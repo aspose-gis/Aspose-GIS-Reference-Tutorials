@@ -3,12 +3,11 @@ date: 2025-12-03
 description: Apprenez à créer des géométries de polygones en C# et à détecter les
   polygones qui se chevauchent en utilisant la méthode Intersects d’Aspose.GIS pour
   .NET.
-language: fr
 linktitle: Create Polygon Geometry C#
 second_title: Aspose.GIS .NET API
 title: Créer une géométrie de polygone C# et vérifier l’intersection avec Aspose.GIS
   pour .NET
-url: /net/geometry-analysis/check-geometries-intersection/
+url: /fr/net/geometry-analysis/check-geometries-intersection/
 weight: 11
 ---
 

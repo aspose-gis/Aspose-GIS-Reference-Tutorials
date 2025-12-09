@@ -1,11 +1,10 @@
 ---
 date: 2025-12-02
 description: 了解如何使用 Aspose.GIS for .NET 计算几何体之间的距离。本分步指南展示了如何使用 Aspose.GIS、获取几何体的距离，并将距离计算集成到您的应用程序中。
-language: zh
 linktitle: How to Calculate Distance Between Geometries
 second_title: Aspose.GIS .NET API
 title: 如何使用 Aspose.GIS 计算几何体之间的距离
-url: /net/geometry-analysis/calculate-distance-between-geometries/
+url: /zh/net/geometry-analysis/calculate-distance-between-geometries/
 weight: 21
 ---
 

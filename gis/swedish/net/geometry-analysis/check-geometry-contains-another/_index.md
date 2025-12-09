@@ -3,11 +3,10 @@ date: 2025-12-04
 description: Lär dig hur du avgör om en punkt ligger inom en polygon med C#. Denna
   Aspose.GIS .NET-handledning täcker kontroller för om geometri innehåller en punkt,
   tekniker för geospatial analys i .NET och bästa praxis med Aspose.GIS .NET.
-language: sv
 linktitle: point inside polygon c# – Check Geometry Contains Another
 second_title: Aspose.GIS .NET API
 title: Punkt i polygon c# – Kontrollera om geometri innehåller en annan
-url: /net/geometry-analysis/check-geometry-contains-another/
+url: /sv/net/geometry-analysis/check-geometry-contains-another/
 weight: 14
 ---
 

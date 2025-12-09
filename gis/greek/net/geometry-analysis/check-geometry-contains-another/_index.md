@@ -4,11 +4,10 @@ description: Μάθετε πώς να καθορίζετε αν ένα σημε�
   χρησιμοποιώντας C#. Αυτό το σεμινάριο Aspose.GIS .NET καλύπτει ελέγχους περιεχομένου
   σημείου στη γεωμετρία, τεχνικές γεωχωρικής ανάλυσης .NET και βέλτιστες πρακτικές
   με το Aspose.GIS .NET.
-language: el
 linktitle: point inside polygon c# – Check Geometry Contains Another
 second_title: Aspose.GIS .NET API
 title: σημείο εντός πολυγώνου c# – Έλεγχος αν η γεωμετρία περιέχει άλλη
-url: /net/geometry-analysis/check-geometry-contains-another/
+url: /el/net/geometry-analysis/check-geometry-contains-another/
 weight: 14
 ---
 

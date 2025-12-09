@@ -1,11 +1,10 @@
 ---
 date: 2025-12-07
 description: 學習如何在 .NET 中使用 Aspose.GIS 計算幾何長度，以實現高效的空間資料處理。逐步指南，附有程式碼範例。
-language: zh-hant
 linktitle: Get Geometry Length
 second_title: Aspose.GIS .NET API
 title: 如何在 .NET 中使用 Aspose.GIS 計算幾何長度
-url: /net/geometry-analysis/get-geometry-length/
+url: /zh-hant/net/geometry-analysis/get-geometry-length/
 weight: 24
 ---
 

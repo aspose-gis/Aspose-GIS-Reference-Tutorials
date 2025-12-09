@@ -3,11 +3,10 @@ date: 2025-12-07
 description: Aspose.GIS for .NET kullanarak bir geometrinin merkez noktasını nasıl
   alacağınızı öğrenin ve .NET uygulamalarınızda mekânsal analiz için çokgenin merkez
   noktasını hesaplayın.
-language: tr
 linktitle: Get Geometry Centroid
 second_title: Aspose.GIS .NET API
 title: Aspose.GIS for .NET ile Bir Geometrinin Merkez Noktasını Nasıl Alırsınız
-url: /net/geometry-analysis/get-geometry-centroid/
+url: /tr/net/geometry-analysis/get-geometry-centroid/
 weight: 19
 ---
 

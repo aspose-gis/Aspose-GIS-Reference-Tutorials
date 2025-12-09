@@ -3,11 +3,10 @@ date: 2025-12-06
 description: Tìm hiểu cách tính diện tích của các hình học bằng Aspose.GIS cho .NET
   – hoàn hảo cho việc tính diện tích GIS, tính diện tích tam giác C#, và tính diện
   tích đa đa giác.
-language: vi
 linktitle: Get Geometry Area
 second_title: Aspose.GIS .NET API
 title: Cách tính diện tích bằng Aspose.GIS cho .NET
-url: /net/geometry-analysis/get-geometry-area/
+url: /vi/net/geometry-analysis/get-geometry-area/
 weight: 18
 ---
 

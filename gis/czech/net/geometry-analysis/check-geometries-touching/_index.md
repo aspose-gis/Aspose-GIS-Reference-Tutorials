@@ -3,11 +3,10 @@ date: 2025-12-04
 description: Naučte se, jak kontrolovat dotýkající se geometrie pomocí Aspose.GIS
   pro .NET, výkonné knihovny pro práci s prostorovými daty a provádění prostorové
   analýzy v .NET.
-language: cs
 linktitle: How to Check Touching Geometries
 second_title: Aspose.GIS .NET API
 title: Jak zkontrolovat dotýkající se geometrie pomocí Aspose.GIS pro .NET
-url: /net/geometry-analysis/check-geometries-touching/
+url: /cs/net/geometry-analysis/check-geometries-touching/
 weight: 13
 ---
 

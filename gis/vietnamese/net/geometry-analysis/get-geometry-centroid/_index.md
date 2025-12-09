@@ -2,11 +2,10 @@
 date: 2025-12-07
 description: Tìm hiểu cách lấy tâm của một hình học bằng Aspose.GIS cho .NET và tính
   tâm đa giác cho phân tích không gian trong các ứng dụng .NET của bạn.
-language: vi
 linktitle: Get Geometry Centroid
 second_title: Aspose.GIS .NET API
 title: Cách lấy điểm trung tâm của một hình học bằng Aspose.GIS cho .NET
-url: /net/geometry-analysis/get-geometry-centroid/
+url: /vi/net/geometry-analysis/get-geometry-centroid/
 weight: 19
 ---
 

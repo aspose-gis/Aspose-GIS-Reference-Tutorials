@@ -3,11 +3,10 @@ date: 2025-12-07
 description: Pelajari cara melakukan operasi overlay dalam tutorial overlay spasial
   ini menggunakan Aspose.GIS untuk .NET. Kuasai irisan, gabungan, selisih, dan selisih
   simetris.
-language: id
 linktitle: Find Geometry Overlays
 second_title: Aspose.GIS .NET API
 title: Cara Melakukan Operasi Overlay dengan Aspose.GIS untuk .NET
-url: /net/geometry-analysis/find-geometry-overlays/
+url: /id/net/geometry-analysis/find-geometry-overlays/
 weight: 16
 ---
 

@@ -2,11 +2,10 @@
 date: 2025-12-07
 description: Naučte se, jak získat centroid geometrie pomocí Aspose.GIS pro .NET a
   vypočítat centroid polygonu pro prostorovou analýzu ve vašich .NET aplikacích.
-language: cs
 linktitle: Get Geometry Centroid
 second_title: Aspose.GIS .NET API
 title: Jak získat centroid geometrie pomocí Aspose.GIS pro .NET
-url: /net/geometry-analysis/get-geometry-centroid/
+url: /cs/net/geometry-analysis/get-geometry-centroid/
 weight: 19
 ---
 

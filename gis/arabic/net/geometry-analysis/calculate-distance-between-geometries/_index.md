@@ -3,11 +3,10 @@ date: 2025-12-02
 description: تعلم كيفية حساب المسافة بين الأشكال الهندسية باستخدام Aspose.GIS لـ .NET.
   يوضح هذا الدليل خطوة بخطوة كيفية استخدام Aspose.GIS، الحصول على المسافة إلى الشكل
   الهندسي، وتكامل حسابات المسافة في تطبيقاتك.
-language: ar
 linktitle: How to Calculate Distance Between Geometries
 second_title: Aspose.GIS .NET API
 title: كيفية حساب المسافة بين الأشكال الهندسية باستخدام Aspose.GIS
-url: /net/geometry-analysis/calculate-distance-between-geometries/
+url: /ar/net/geometry-analysis/calculate-distance-between-geometries/
 weight: 21
 ---
 

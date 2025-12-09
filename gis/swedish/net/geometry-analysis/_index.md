@@ -3,11 +3,10 @@ date: 2025-12-02
 description: Lär dig hur du kontrollerar geometri, beräknar geometrinyta, konvex hölje
   och mer med Aspose.GIS för .NET. Bemästra hantering av rumsliga data för robust
   GIS‑utveckling.
-language: sv
 linktitle: How to Check Geometry
 second_title: Aspose.GIS .NET API
 title: Hur man kontrollerar geometri med Aspose.GIS för .NET
-url: /net/geometry-analysis/
+url: /sv/net/geometry-analysis/
 weight: 22
 ---
 

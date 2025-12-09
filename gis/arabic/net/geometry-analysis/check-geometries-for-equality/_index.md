@@ -2,11 +2,10 @@
 date: 2025-12-03
 description: تعلم كيفية مقارنة الأشكال الهندسية باستخدام Aspose.GIS لـ .NET وتحقق
   من تساوي الأشكال الهندسية في تطبيقات .NET الخاصة بك.
-language: ar
 linktitle: How to Compare Geometries for Equality
 second_title: Aspose.GIS .NET API
 title: كيفية مقارنة الأشكال الهندسية للتساوي باستخدام Aspose.GIS لـ .NET
-url: /net/geometry-analysis/check-geometries-for-equality/
+url: /ar/net/geometry-analysis/check-geometries-for-equality/
 weight: 10
 ---
 

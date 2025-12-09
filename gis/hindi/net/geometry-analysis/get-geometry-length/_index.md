@@ -3,11 +3,10 @@ date: 2025-12-07
 description: Aspose.GIS का उपयोग करके .NET में ज्यामिति की लंबाई कैसे गणना करें, यह
   सीखें, जिससे स्थानिक डेटा को कुशलतापूर्वक संभाला जा सके। कोड उदाहरणों के साथ चरण‑दर‑चरण
   मार्गदर्शिका।
-language: hi
 linktitle: Get Geometry Length
 second_title: Aspose.GIS .NET API
 title: Aspose.GIS के साथ .NET में ज्यामिति की लंबाई कैसे गणना करें
-url: /net/geometry-analysis/get-geometry-length/
+url: /hi/net/geometry-analysis/get-geometry-length/
 weight: 24
 ---
 

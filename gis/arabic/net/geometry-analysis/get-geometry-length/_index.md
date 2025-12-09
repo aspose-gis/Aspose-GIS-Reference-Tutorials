@@ -2,11 +2,10 @@
 date: 2025-12-07
 description: تعلم كيفية حساب طول الهندسة في .NET باستخدام Aspose.GIS لمعالجة البيانات
   المكانية بكفاءة. دليل خطوة بخطوة مع أمثلة على الشيفرة.
-language: ar
 linktitle: Get Geometry Length
 second_title: Aspose.GIS .NET API
 title: كيفية حساب طول الشكل الهندسي في .NET باستخدام Aspose.GIS
-url: /net/geometry-analysis/get-geometry-length/
+url: /ar/net/geometry-analysis/get-geometry-length/
 weight: 24
 ---
 

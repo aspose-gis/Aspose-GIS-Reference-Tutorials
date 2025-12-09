@@ -4,11 +4,10 @@ description: Tìm hiểu cách xác định xem một điểm có nằm trong đ
   C#. Hướng dẫn Aspose.GIS .NET này bao gồm các kiểm tra điểm nằm trong hình học,
   kỹ thuật phân tích không gian địa lý .NET, và các thực tiễn tốt nhất với Aspose.GIS
   .NET.
-language: vi
 linktitle: point inside polygon c# – Check Geometry Contains Another
 second_title: Aspose.GIS .NET API
 title: điểm trong đa giác c# – Kiểm tra Geometry có chứa đối tượng khác
-url: /net/geometry-analysis/check-geometry-contains-another/
+url: /vi/net/geometry-analysis/check-geometry-contains-another/
 weight: 14
 ---
 

@@ -3,11 +3,10 @@ date: 2025-12-06
 description: Erfahren Sie, wie Sie in C# mit Aspose.GIS für .NET ein LineString erstellen,
   Punkte zu einem LineString hinzufügen und prüfen, ob eine Geometrie eine andere
   überdeckt.
-language: de
 linktitle: Create LineString C# – Check Geometry Covers Another
 second_title: Aspose.GIS .NET API
 title: LineString in C# erstellen – Prüfen, ob Geometrie eine andere abdeckt
-url: /net/geometry-analysis/check-geometry-covers-another/
+url: /de/net/geometry-analysis/check-geometry-covers-another/
 weight: 15
 ---
 

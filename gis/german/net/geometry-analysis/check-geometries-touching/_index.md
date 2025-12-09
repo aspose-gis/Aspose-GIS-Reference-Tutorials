@@ -3,11 +3,10 @@ date: 2025-12-04
 description: Erfahren Sie, wie Sie berührende Geometrien mit Aspose.GIS für .NET prüfen,
   einer leistungsstarken Bibliothek zur Verarbeitung räumlicher Daten und zur Durchführung
   räumlicher Analysen in .NET.
-language: de
 linktitle: How to Check Touching Geometries
 second_title: Aspose.GIS .NET API
 title: Wie man berührende Geometrien mit Aspose.GIS für .NET prüft
-url: /net/geometry-analysis/check-geometries-touching/
+url: /de/net/geometry-analysis/check-geometries-touching/
 weight: 13
 ---
 

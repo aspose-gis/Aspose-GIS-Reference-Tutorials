@@ -3,11 +3,10 @@ date: 2025-12-07
 description: Erfahren Sie, wie Sie Overlay-Operationen in diesem Spatial‑Overlay‑Tutorial
   mit Aspose.GIS für .NET durchführen. Beherrschen Sie Schnittmenge, Vereinigung,
   Differenz und symmetrische Differenz.
-language: de
 linktitle: Find Geometry Overlays
 second_title: Aspose.GIS .NET API
 title: So führen Sie Overlay‑Operationen mit Aspose.GIS für .NET durch.
-url: /net/geometry-analysis/find-geometry-overlays/
+url: /de/net/geometry-analysis/find-geometry-overlays/
 weight: 16
 ---
 

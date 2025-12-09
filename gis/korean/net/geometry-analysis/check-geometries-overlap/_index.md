@@ -2,11 +2,10 @@
 date: 2025-12-04
 description: Aspose.GIS for .NET을 사용하여 겹침을 확인하고 지오메트리의 겹침을 감지하는 방법을 배웁니다. 개발자를 위한
   단계별 가이드.
-language: ko
 linktitle: Check Geometries Overlap
 second_title: Aspose.GIS .NET API
 title: Aspose.GIS for .NET를 사용하여 기하학 겹침 확인 방법
-url: /net/geometry-analysis/check-geometries-overlap/
+url: /ko/net/geometry-analysis/check-geometries-overlap/
 weight: 12
 ---
 

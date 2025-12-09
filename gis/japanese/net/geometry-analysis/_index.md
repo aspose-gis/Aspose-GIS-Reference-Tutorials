@@ -1,11 +1,10 @@
 ---
 date: 2025-12-02
 description: Aspose.GIS for .NET を使用して、ジオメトリのチェック、ジオメトリ面積の計算、凸包などを学びます。堅牢な GIS 開発のために空間データの取り扱いをマスターしましょう。
-language: ja
 linktitle: How to Check Geometry
 second_title: Aspose.GIS .NET API
 title: .NET 用 Aspose.GIS でジオメトリをチェックする方法
-url: /net/geometry-analysis/
+url: /ja/net/geometry-analysis/
 weight: 22
 ---
 

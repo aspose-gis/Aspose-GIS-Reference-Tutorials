@@ -2,11 +2,10 @@
 date: 2025-12-06
 description: Lär dig hur du beräknar area för geometriska objekt med Aspose.GIS för
   .NET – perfekt för GIS‑areaberäkning, triangelarea i C# och multipolygon‑areaberäkning.
-language: sv
 linktitle: Get Geometry Area
 second_title: Aspose.GIS .NET API
 title: Hur man beräknar yta med Aspose.GIS för .NET
-url: /net/geometry-analysis/get-geometry-area/
+url: /sv/net/geometry-analysis/get-geometry-area/
 weight: 18
 ---
 

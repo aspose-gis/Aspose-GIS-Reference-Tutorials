@@ -2,11 +2,10 @@
 date: 2025-12-03
 description: Aspose.GIS for .NET का उपयोग करके ज्यामितियों की तुलना करना सीखें और
   अपने .NET अनुप्रयोगों में ज्यामिति समानता जांचें।
-language: hi
 linktitle: How to Compare Geometries for Equality
 second_title: Aspose.GIS .NET API
 title: Aspose.GIS for .NET का उपयोग करके ज्यामितियों की समानता की तुलना कैसे करें
-url: /net/geometry-analysis/check-geometries-for-equality/
+url: /hi/net/geometry-analysis/check-geometries-for-equality/
 weight: 10
 ---
 

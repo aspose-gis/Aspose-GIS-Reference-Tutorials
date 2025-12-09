@@ -3,11 +3,10 @@ date: 2025-12-06
 description: Aspose.GIS for .NET का उपयोग करके ज्यामितियों का क्षेत्रफल कैसे गणना
   करें सीखें – GIS क्षेत्रफल गणना, त्रिकोणीय क्षेत्रफल C# और मल्टीपॉलिगॉन क्षेत्रफल
   गणना के लिए उपयुक्त।
-language: hi
 linktitle: Get Geometry Area
 second_title: Aspose.GIS .NET API
 title: Aspose.GIS for .NET के साथ क्षेत्रफल की गणना कैसे करें
-url: /net/geometry-analysis/get-geometry-area/
+url: /hi/net/geometry-analysis/get-geometry-area/
 weight: 18
 ---
 

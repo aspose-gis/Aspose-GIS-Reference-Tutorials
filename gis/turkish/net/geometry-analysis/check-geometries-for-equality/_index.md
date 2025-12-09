@@ -2,11 +2,10 @@
 date: 2025-12-03
 description: Aspose.GIS for .NET kullanarak geometrileri nasıl karşılaştıracağınızı
   öğrenin ve .NET uygulamalarınızda geometri eşitliğini kontrol edin.
-language: tr
 linktitle: How to Compare Geometries for Equality
 second_title: Aspose.GIS .NET API
 title: Aspose.GIS for .NET kullanarak Geometrileri Eşitlik İçin Nasıl Karşılaştırılır
-url: /net/geometry-analysis/check-geometries-for-equality/
+url: /tr/net/geometry-analysis/check-geometries-for-equality/
 weight: 10
 ---
 

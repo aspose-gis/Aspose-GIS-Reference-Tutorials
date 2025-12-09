@@ -4,11 +4,10 @@ description: Dowiedz się, jak określić, czy punkt znajduje się wewnątrz wie
   przy użyciu C#. Ten samouczek Aspose.GIS .NET obejmuje sprawdzanie, czy geometria
   zawiera punkt, techniki analizy geoprzestrzennej w .NET oraz najlepsze praktyki
   z użyciem Aspose.GIS .NET.
-language: pl
 linktitle: point inside polygon c# – Check Geometry Contains Another
 second_title: Aspose.GIS .NET API
 title: punkt wewnątrz wielokąta c# – Sprawdź, czy geometria zawiera inną
-url: /net/geometry-analysis/check-geometry-contains-another/
+url: /pl/net/geometry-analysis/check-geometry-contains-another/
 weight: 14
 ---
 

@@ -3,11 +3,10 @@ date: 2025-12-06
 description: Aprenda a calcular a área de geometrias usando Aspose.GIS para .NET –
   perfeito para cálculo de área GIS, área de triângulo em C# e cálculo de área de
   multipolígonos.
-language: pt
 linktitle: Get Geometry Area
 second_title: Aspose.GIS .NET API
 title: Como Calcular Área com Aspose.GIS para .NET
-url: /net/geometry-analysis/get-geometry-area/
+url: /pt/net/geometry-analysis/get-geometry-area/
 weight: 18
 ---
 

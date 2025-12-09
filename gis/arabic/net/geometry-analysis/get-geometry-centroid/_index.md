@@ -2,11 +2,10 @@
 date: 2025-12-07
 description: تعلم كيفية الحصول على مركز الشكل الهندسي باستخدام Aspose.GIS لـ .NET
   وحساب مركز المضلع للتحليل المكاني في تطبيقات .NET الخاصة بك.
-language: ar
 linktitle: Get Geometry Centroid
 second_title: Aspose.GIS .NET API
 title: كيفية الحصول على المركز الهندسي باستخدام Aspose.GIS لـ .NET
-url: /net/geometry-analysis/get-geometry-centroid/
+url: /ar/net/geometry-analysis/get-geometry-centroid/
 weight: 19
 ---
 

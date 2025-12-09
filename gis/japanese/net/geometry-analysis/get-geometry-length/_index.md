@@ -1,11 +1,10 @@
 ---
 date: 2025-12-07
 description: Aspose.GIS を使用して .NET でジオメトリの長さを計算し、効率的な空間データ処理を実現する方法を学びましょう。コード例付きのステップバイステップガイドです。
-language: ja
 linktitle: Get Geometry Length
 second_title: Aspose.GIS .NET API
 title: Aspose.GIS を使用した .NET でジオメトリの長さを計算する方法
-url: /net/geometry-analysis/get-geometry-length/
+url: /ja/net/geometry-analysis/get-geometry-length/
 weight: 24
 ---
 

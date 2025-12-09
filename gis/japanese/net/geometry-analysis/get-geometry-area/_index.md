@@ -1,11 +1,10 @@
 ---
 date: 2025-12-06
 description: Aspose.GIS for .NET を使用してジオメトリの面積を計算する方法を学びましょう – GIS の面積計算、三角形の面積（C#）およびマルチポリゴンの面積計算に最適です。
-language: ja
 linktitle: Get Geometry Area
 second_title: Aspose.GIS .NET API
 title: Aspose.GIS for .NET を使用した面積の計算方法
-url: /net/geometry-analysis/get-geometry-area/
+url: /ja/net/geometry-analysis/get-geometry-area/
 weight: 18
 ---
 

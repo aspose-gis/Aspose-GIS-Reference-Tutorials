@@ -3,11 +3,10 @@ date: 2025-12-06
 description: Pelajari cara membuat LineString di C# menggunakan Aspose.GIS untuk .NET,
   menambahkan titik ke LineString, dan memeriksa apakah sebuah geometri menutupi geometri
   lain.
-language: id
 linktitle: Create LineString C# – Check Geometry Covers Another
 second_title: Aspose.GIS .NET API
 title: Buat LineString C# – Periksa Geometri Menutupi Lainnya
-url: /net/geometry-analysis/check-geometry-covers-another/
+url: /id/net/geometry-analysis/check-geometry-covers-another/
 weight: 15
 ---
 

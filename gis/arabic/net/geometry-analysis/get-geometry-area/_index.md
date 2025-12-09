@@ -2,11 +2,10 @@
 date: 2025-12-06
 description: تعلم كيفية حساب مساحة الأشكال الهندسية باستخدام Aspose.GIS لـ .NET –
   مثالي لحساب مساحة GIS، وحساب مساحة المثلث بلغة C#، وحساب مساحة المضلع المتعدد.
-language: ar
 linktitle: Get Geometry Area
 second_title: Aspose.GIS .NET API
 title: كيفية حساب المساحة باستخدام Aspose.GIS لـ .NET
-url: /net/geometry-analysis/get-geometry-area/
+url: /ar/net/geometry-analysis/get-geometry-area/
 weight: 18
 ---
 

@@ -3,11 +3,10 @@ date: 2025-12-07
 description: Dowiedz się, jak wykonywać operacje nakładania w tym samouczku dotyczącym
   nakładania przestrzennego przy użyciu Aspose.GIS dla .NET. Opanuj przecięcie, sumę,
   różnicę i różnicę symetryczną.
-language: pl
 linktitle: Find Geometry Overlays
 second_title: Aspose.GIS .NET API
 title: Jak wykonać operacje nakładania przy użyciu Aspose.GIS dla .NET
-url: /net/geometry-analysis/find-geometry-overlays/
+url: /pl/net/geometry-analysis/find-geometry-overlays/
 weight: 16
 ---
 

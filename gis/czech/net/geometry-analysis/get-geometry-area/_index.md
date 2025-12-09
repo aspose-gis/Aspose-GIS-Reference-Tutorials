@@ -3,11 +3,10 @@ date: 2025-12-06
 description: Naučte se, jak vypočítat plochu geometrických objektů pomocí Aspose.GIS
   pro .NET – ideální pro výpočet plochy GIS, plochu trojúhelníku v C# a výpočet plochy
   multipolygonu.
-language: cs
 linktitle: Get Geometry Area
 second_title: Aspose.GIS .NET API
 title: Jak vypočítat plochu pomocí Aspose.GIS pro .NET
-url: /net/geometry-analysis/get-geometry-area/
+url: /cs/net/geometry-analysis/get-geometry-area/
 weight: 18
 ---
 

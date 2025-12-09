@@ -2,11 +2,10 @@
 date: 2025-12-03
 description: تعلم كيفية إنشاء هندسة مضلع باستخدام C# واكتشاف تداخل المضلعات باستخدام
   طريقة Intersects في Aspose.GIS لـ .NET.
-language: ar
 linktitle: Create Polygon Geometry C#
 second_title: Aspose.GIS .NET API
 title: إنشاء هندسة مضلع C# والتحقق من التقاطع باستخدام Aspose.GIS لـ .NET
-url: /net/geometry-analysis/check-geometries-intersection/
+url: /ar/net/geometry-analysis/check-geometries-intersection/
 weight: 11
 ---
 

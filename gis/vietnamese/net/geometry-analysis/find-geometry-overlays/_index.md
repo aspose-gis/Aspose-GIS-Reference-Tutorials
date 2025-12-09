@@ -3,11 +3,10 @@ date: 2025-12-07
 description: Học cách thực hiện các thao tác overlay trong hướng dẫn overlay không
   gian này bằng Aspose.GIS cho .NET. Thành thạo các phép giao nhau, hợp, hiệu và hiệu
   đối xứng.
-language: vi
 linktitle: Find Geometry Overlays
 second_title: Aspose.GIS .NET API
 title: Cách thực hiện các thao tác chồng lớp với Aspose.GIS cho .NET
-url: /net/geometry-analysis/find-geometry-overlays/
+url: /vi/net/geometry-analysis/find-geometry-overlays/
 weight: 16
 ---
 

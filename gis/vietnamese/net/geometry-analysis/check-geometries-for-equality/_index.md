@@ -2,11 +2,10 @@
 date: 2025-12-03
 description: Tìm hiểu cách so sánh hình học bằng Aspose.GIS cho .NET và kiểm tra tính
   bằng nhau của hình học trong các ứng dụng .NET của bạn.
-language: vi
 linktitle: How to Compare Geometries for Equality
 second_title: Aspose.GIS .NET API
 title: Cách so sánh các hình học để xác định tính bằng nhau bằng Aspose.GIS cho .NET
-url: /net/geometry-analysis/check-geometries-for-equality/
+url: /vi/net/geometry-analysis/check-geometries-for-equality/
 weight: 10
 ---
 

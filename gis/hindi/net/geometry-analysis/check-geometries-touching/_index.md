@@ -3,11 +3,10 @@ date: 2025-12-04
 description: Aspose.GIS for .NET का उपयोग करके टचिंग ज्योमेट्रीज़ की जाँच कैसे करें,
   सीखें, जो स्पैशियल डेटा को संभालने और स्पैशियल विश्लेषण करने के लिए एक शक्तिशाली
   लाइब्रेरी है .NET.
-language: hi
 linktitle: How to Check Touching Geometries
 second_title: Aspose.GIS .NET API
 title: Aspose.GIS for .NET के साथ टचिंग जियोमेट्रीज़ की जाँच कैसे करें
-url: /net/geometry-analysis/check-geometries-touching/
+url: /hi/net/geometry-analysis/check-geometries-touching/
 weight: 13
 ---
 

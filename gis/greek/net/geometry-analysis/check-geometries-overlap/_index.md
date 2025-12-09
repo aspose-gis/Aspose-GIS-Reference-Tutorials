@@ -2,11 +2,10 @@
 date: 2025-12-04
 description: Μάθετε πώς να ελέγχετε την επικάλυψη και πώς να ανιχνεύετε την επικάλυψη
   γεωμετριών χρησιμοποιώντας το Aspose.GIS για .NET. Οδηγός βήμα‑προς‑βήμα για προγραμματιστές.
-language: el
 linktitle: Check Geometries Overlap
 second_title: Aspose.GIS .NET API
 title: Πώς να ελέγξετε την επικάλυψη γεωμετριών με το Aspose.GIS για .NET
-url: /net/geometry-analysis/check-geometries-overlap/
+url: /el/net/geometry-analysis/check-geometries-overlap/
 weight: 12
 ---
 

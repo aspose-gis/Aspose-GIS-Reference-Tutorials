@@ -2,11 +2,10 @@
 date: 2025-12-07
 description: Aspose.GIS for .NET를 사용하여 기하학 객체의 중심점을 얻는 방법과 .NET 애플리케이션에서 공간 분석을 위한
   다각형 중심점 계산 방법을 배워보세요.
-language: ko
 linktitle: Get Geometry Centroid
 second_title: Aspose.GIS .NET API
 title: Aspose.GIS for .NET을 사용하여 기하학의 중심점 얻는 방법
-url: /net/geometry-analysis/get-geometry-centroid/
+url: /ko/net/geometry-analysis/get-geometry-centroid/
 weight: 19
 ---
 

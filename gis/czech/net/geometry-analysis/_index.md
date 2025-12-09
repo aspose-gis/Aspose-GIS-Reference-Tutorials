@@ -3,11 +3,10 @@ date: 2025-12-02
 description: Naučte se, jak kontrolovat geometrii, vypočítávat plochu geometrie, konvexní
   obálku a další pomocí Aspose.GIS pro .NET. Ovládněte práci s prostorovými daty pro
   robustní vývoj GIS.
-language: cs
 linktitle: How to Check Geometry
 second_title: Aspose.GIS .NET API
 title: Jak zkontrolovat geometrii pomocí Aspose.GIS pro .NET
-url: /net/geometry-analysis/
+url: /cs/net/geometry-analysis/
 weight: 22
 ---
 
@@ -130,4 +129,3 @@ Naučte se efektivně pracovat s geoprostorovými daty pomocí Aspose.GIS pro .N
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-

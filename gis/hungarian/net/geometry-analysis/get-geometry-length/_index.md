@@ -3,11 +3,10 @@ date: 2025-12-07
 description: Tanulja meg, hogyan számítsa ki a geometria hosszát .NET‑ben az Aspose.GIS
   használatával a hatékony térbeli adatkezelés érdekében. Lépésről‑lépésre útmutató
   kódrészletekkel.
-language: hu
 linktitle: Get Geometry Length
 second_title: Aspose.GIS .NET API
 title: Hogyan számítsuk ki a geometria hosszát .NET‑ben az Aspose.GIS segítségével
-url: /net/geometry-analysis/get-geometry-length/
+url: /hu/net/geometry-analysis/get-geometry-length/
 weight: 24
 ---
 

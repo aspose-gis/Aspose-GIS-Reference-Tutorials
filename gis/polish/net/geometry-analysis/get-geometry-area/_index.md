@@ -3,11 +3,10 @@ date: 2025-12-06
 description: Dowiedz się, jak obliczać powierzchnię geometrii przy użyciu Aspose.GIS
   dla .NET – idealne do obliczania powierzchni w GIS, pola trójkąta w C# oraz powierzchni
   multipoligonów.
-language: pl
 linktitle: Get Geometry Area
 second_title: Aspose.GIS .NET API
 title: Jak obliczyć powierzchnię przy użyciu Aspose.GIS dla .NET
-url: /net/geometry-analysis/get-geometry-area/
+url: /pl/net/geometry-analysis/get-geometry-area/
 weight: 18
 ---
 

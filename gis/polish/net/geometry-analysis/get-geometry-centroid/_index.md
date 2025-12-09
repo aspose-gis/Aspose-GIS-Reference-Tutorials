@@ -3,11 +3,10 @@ date: 2025-12-07
 description: Dowiedz się, jak uzyskać centroid geometrii przy użyciu Aspose.GIS dla
   .NET i obliczyć centroid wielokąta do analizy przestrzennej w swoich aplikacjach
   .NET.
-language: pl
 linktitle: Get Geometry Centroid
 second_title: Aspose.GIS .NET API
 title: Jak uzyskać centroid geometrii przy użyciu Aspose.GIS dla .NET
-url: /net/geometry-analysis/get-geometry-centroid/
+url: /pl/net/geometry-analysis/get-geometry-centroid/
 weight: 19
 ---
 

@@ -2,11 +2,10 @@
 date: 2025-12-04
 description: C#를 사용하여 점이 다각형 내부에 있는지 확인하는 방법을 배웁니다. 이 Aspose.GIS .NET 튜토리얼에서는 기하학적
   포함 점 검사, 지리공간 분석 .NET 기술 및 Aspose.GIS .NET의 모범 사례를 다룹니다.
-language: ko
 linktitle: point inside polygon c# – Check Geometry Contains Another
 second_title: Aspose.GIS .NET API
 title: C#에서 다각형 내부의 점 – 기하학이 다른 것을 포함하는지 확인
-url: /net/geometry-analysis/check-geometry-contains-another/
+url: /ko/net/geometry-analysis/check-geometry-contains-another/
 weight: 14
 ---
 

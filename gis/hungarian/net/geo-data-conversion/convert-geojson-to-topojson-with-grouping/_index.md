@@ -3,11 +3,10 @@ date: 2025-12-06
 description: Ismerje meg, hogyan konvertálhatja a GeoJSON-t TopoJSON-re csoportosítással,
   állíthatja be az objektum név attribútumát, és csoportosíthatja a GeoJSON elemeket
   az Aspose.GIS for .NET használatával.
-language: hu
 linktitle: How to Convert GeoJSON to TopoJSON with Grouping using Aspose.GIS
 second_title: Aspose.GIS .NET API
 title: Hogyan konvertáljunk GeoJSON-t TopoJSON-re csoportosítással az Aspose.GIS segítségével
-url: /net/geo-data-conversion/convert-geojson-to-topojson-with-grouping/
+url: /hu/net/geo-data-conversion/convert-geojson-to-topojson-with-grouping/
 weight: 13
 ---
 

@@ -1,11 +1,10 @@
 ---
 date: 2025-12-02
 description: 学习如何使用 Aspose.GIS for .NET 检查几何、计算几何面积、凸包等。掌握空间数据处理，实现强大的 GIS 开发。
-language: zh
 linktitle: How to Check Geometry
 second_title: Aspose.GIS .NET API
 title: 如何使用 Aspose.GIS for .NET 检查几何体
-url: /net/geometry-analysis/
+url: /zh/net/geometry-analysis/
 weight: 22
 ---
 

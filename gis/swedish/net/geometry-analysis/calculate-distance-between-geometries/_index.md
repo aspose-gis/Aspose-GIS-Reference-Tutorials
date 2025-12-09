@@ -3,11 +3,10 @@ date: 2025-12-02
 description: Lär dig hur du beräknar avstånd mellan geometrier med Aspose.GIS för
   .NET. Denna steg‑för‑steg‑guide visar hur du använder Aspose.GIS, hämtar avstånd
   till en geometri och integrerar avståndsberäkningar i dina applikationer.
-language: sv
 linktitle: How to Calculate Distance Between Geometries
 second_title: Aspose.GIS .NET API
 title: Hur man beräknar avstånd mellan geometrier med Aspose.GIS
-url: /net/geometry-analysis/calculate-distance-between-geometries/
+url: /sv/net/geometry-analysis/calculate-distance-between-geometries/
 weight: 21
 ---
 

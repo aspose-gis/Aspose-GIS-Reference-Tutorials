@@ -2,11 +2,10 @@
 date: 2025-12-07
 description: เรียนรู้วิธีคำนวณความยาวของเรขาคณิตใน .NET ด้วย Aspose.GIS เพื่อการจัดการข้อมูลเชิงพื้นที่อย่างมีประสิทธิภาพ
   คู่มือขั้นตอนโดยละเอียดพร้อมตัวอย่างโค้ด
-language: th
 linktitle: Get Geometry Length
 second_title: Aspose.GIS .NET API
 title: วิธีคำนวณความยาวของเรขาคณิตใน .NET ด้วย Aspose.GIS
-url: /net/geometry-analysis/get-geometry-length/
+url: /th/net/geometry-analysis/get-geometry-length/
 weight: 24
 ---
 

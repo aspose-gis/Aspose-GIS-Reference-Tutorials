@@ -3,11 +3,10 @@ date: 2025-12-07
 description: Pelajari cara mendapatkan centroid dari sebuah geometri menggunakan Aspose.GIS
   untuk .NET dan menghitung centroid poligon untuk analisis spasial dalam aplikasi
   .NET Anda.
-language: id
 linktitle: Get Geometry Centroid
 second_title: Aspose.GIS .NET API
 title: Cara Mendapatkan Centroid dari Geometri dengan Aspose.GIS untuk .NET
-url: /net/geometry-analysis/get-geometry-centroid/
+url: /id/net/geometry-analysis/get-geometry-centroid/
 weight: 19
 ---
 

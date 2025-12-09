@@ -1,11 +1,10 @@
 ---
 date: 2025-12-04
 description: 了解如何使用 Aspose.GIS for .NET 检查相接的几何对象，这是一款强大的库，可处理空间数据并执行空间分析。
-language: zh
 linktitle: How to Check Touching Geometries
 second_title: Aspose.GIS .NET API
 title: 如何使用 Aspose.GIS for .NET 检查相接几何体
-url: /net/geometry-analysis/check-geometries-touching/
+url: /zh/net/geometry-analysis/check-geometries-touching/
 weight: 13
 ---
 

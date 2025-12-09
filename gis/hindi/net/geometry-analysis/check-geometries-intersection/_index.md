@@ -2,11 +2,10 @@
 date: 2025-12-03
 description: C# में बहुभुज ज्यामिति बनाना सीखें और Aspose.GIS for .NET की Intersects
   विधि का उपयोग करके ओवरलैपिंग बहुभुजों का पता लगाएँ।
-language: hi
 linktitle: Create Polygon Geometry C#
 second_title: Aspose.GIS .NET API
 title: C# में बहुभुज ज्यामिति बनाएं और Aspose.GIS for .NET के साथ प्रतिच्छेदन जांचें
-url: /net/geometry-analysis/check-geometries-intersection/
+url: /hi/net/geometry-analysis/check-geometries-intersection/
 weight: 11
 ---
 

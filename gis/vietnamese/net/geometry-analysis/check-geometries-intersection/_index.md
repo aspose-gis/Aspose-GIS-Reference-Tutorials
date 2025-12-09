@@ -2,11 +2,10 @@
 date: 2025-12-03
 description: Tìm hiểu cách tạo hình đa giác trong C# và phát hiện các đa giác chồng
   lấn bằng phương thức Intersects của Aspose.GIS cho .NET.
-language: vi
 linktitle: Create Polygon Geometry C#
 second_title: Aspose.GIS .NET API
 title: Tạo Đa giác trong C# và Kiểm tra Giao nhau với Aspose.GIS cho .NET
-url: /net/geometry-analysis/check-geometries-intersection/
+url: /vi/net/geometry-analysis/check-geometries-intersection/
 weight: 11
 ---
 

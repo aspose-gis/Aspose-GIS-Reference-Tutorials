@@ -2,12 +2,11 @@
 date: 2025-12-03
 description: Tanulja meg, hogyan hozhat létre sokszög geometriát C#-ban, és hogyan
   észlelheti az átfedő sokszögeket az Aspose.GIS for .NET Intersects metódusával.
-language: hu
 linktitle: Create Polygon Geometry C#
 second_title: Aspose.GIS .NET API
 title: Poligon geometria létrehozása C#-ban és metszet ellenőrzése az Aspose.GIS for
   .NET segítségével
-url: /net/geometry-analysis/check-geometries-intersection/
+url: /hu/net/geometry-analysis/check-geometries-intersection/
 weight: 11
 ---
 

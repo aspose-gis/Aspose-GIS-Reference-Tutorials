@@ -3,11 +3,10 @@ date: 2025-12-03
 description: Aspose.GIS for .NET kullanarak TopoJSON'ı GeoJSON'a sorunsuz bir şekilde
   dönüştürmeyi öğrenin. TopoJSON'ı nasıl dönüştüreceğinizi ve coğrafi verileri verimli
   bir şekilde nasıl yöneteceğinizi adım adım rehberimizde takip edin.
-language: tr
 linktitle: Convert TopoJSON to GeoJSON
 second_title: Aspose.GIS .NET API
 title: TopoJSON'i GeoJSON'a Dönüştür
-url: /net/geo-data-conversion/convert-topojson-to-geojson/
+url: /tr/net/geo-data-conversion/convert-topojson-to-geojson/
 weight: 16
 ---
 

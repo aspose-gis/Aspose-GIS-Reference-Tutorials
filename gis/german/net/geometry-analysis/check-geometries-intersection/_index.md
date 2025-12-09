@@ -2,11 +2,10 @@
 date: 2025-12-03
 description: Erfahren Sie, wie Sie Polygongeometrien in C# erstellen und überlappende
   Polygone mit der Intersects‑Methode von Aspose.GIS für .NET erkennen.
-language: de
 linktitle: Create Polygon Geometry C#
 second_title: Aspose.GIS .NET API
 title: Polygon-Geometrie in C# erstellen und Schnitt mit Aspose.GIS für .NET prüfen
-url: /net/geometry-analysis/check-geometries-intersection/
+url: /de/net/geometry-analysis/check-geometries-intersection/
 weight: 11
 ---
 

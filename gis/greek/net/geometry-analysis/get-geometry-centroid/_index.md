@@ -3,11 +3,10 @@ date: 2025-12-07
 description: Μάθετε πώς να λαμβάνετε το κέντρο βάρους μιας γεωμετρίας χρησιμοποιώντας
   το Aspose.GIS για .NET και να υπολογίζετε το κέντρο βάρους πολυγώνου για χωρική
   ανάλυση στις .NET εφαρμογές σας.
-language: el
 linktitle: Get Geometry Centroid
 second_title: Aspose.GIS .NET API
 title: Πώς να λάβετε το κέντρο μάζας μιας γεωμετρίας με το Aspose.GIS για .NET
-url: /net/geometry-analysis/get-geometry-centroid/
+url: /el/net/geometry-analysis/get-geometry-centroid/
 weight: 19
 ---
 

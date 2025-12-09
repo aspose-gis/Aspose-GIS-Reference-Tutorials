@@ -2,11 +2,10 @@
 date: 2025-12-06
 description: Tìm hiểu cách chuyển đổi GeoJSON sang TopoJSON với việc nhóm, đặt thuộc
   tính tên đối tượng và nhóm các tính năng GeoJSON bằng Aspose.GIS cho .NET.
-language: vi
 linktitle: How to Convert GeoJSON to TopoJSON with Grouping using Aspose.GIS
 second_title: Aspose.GIS .NET API
 title: Cách chuyển đổi GeoJSON sang TopoJSON với việc nhóm bằng Aspose.GIS
-url: /net/geo-data-conversion/convert-geojson-to-topojson-with-grouping/
+url: /vi/net/geo-data-conversion/convert-geojson-to-topojson-with-grouping/
 weight: 13
 ---
 

@@ -3,11 +3,10 @@ date: 2025-12-02
 description: Naucz się sprawdzać geometrię, obliczać pole powierzchni, otoczkę wypukłą
   i wiele innych, korzystając z Aspose.GIS dla .NET. Opanuj obsługę danych przestrzennych,
   aby tworzyć solidne aplikacje GIS.
-language: pl
 linktitle: How to Check Geometry
 second_title: Aspose.GIS .NET API
 title: Jak sprawdzić geometrię przy użyciu Aspose.GIS dla .NET
-url: /net/geometry-analysis/
+url: /pl/net/geometry-analysis/
 weight: 22
 ---
 
