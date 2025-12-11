@@ -193,13 +193,6 @@ weight: 21
 ### [使用 Aspose.GIS for .NET 計算幾何中的點數量](./count-points-in-geometry/)
 ### [使用 Aspose.GIS 進行座標轉換](./convert-coordinates/)
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ## 常見問題
 
 **Q: 我可以在 .NET Core 專案中使用 MultiLineString API 嗎？**  
@@ -222,3 +215,10 @@ A: 請參閱 Aspose.GIS 文件中的「Performance Tuning」章節，以及「Co
 **最後更新：** 2025-12-11  
 **測試環境：** Aspose.GIS 24.12 for .NET  
 **作者：** Aspose
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

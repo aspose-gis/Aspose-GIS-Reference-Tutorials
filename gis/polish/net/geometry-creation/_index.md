@@ -168,13 +168,6 @@ Naucz się wykorzystywać Aspose.GIS dla .NET do bezproblemowej manipulacji dany
 ### [Konwersja współrzędnych z Aspose.GIS](./convert-coordinates/)
 Naucz się konwertować współrzędne przy użyciu Aspose.GIS dla .NET. Przewodnik krok po kroku, wymagania wstępne i FAQ zapewnione.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ## Najczęściej zadawane pytania
 
 **Q: Czy mogę używać API MultiLineString w projekcie .NET Core?**  
@@ -197,3 +190,10 @@ A: Sprawdź sekcję „Performance Tuning” w dokumentacji Aspose.GIS oraz tuto
 **Ostatnia aktualizacja:** 2025-12-11  
 **Testowane z:** Aspose.GIS 24.12 dla .NET  
 **Autor:** Aspose
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

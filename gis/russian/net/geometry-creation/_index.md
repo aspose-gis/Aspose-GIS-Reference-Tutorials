@@ -239,13 +239,6 @@ Link: [Convert Coordinates](./convert-coordinates/)
 
 Узнайте, как преобразовать координаты с помощью Aspose.GIS for .NET. Пошаговое руководство, требования и часто задаваемые вопросы.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ## Часто задаваемые вопросы
 
 **В: Могу ли я использовать API MultiLineString в проекте .NET Core?**  
@@ -268,3 +261,10 @@ Link: [Convert Coordinates](./convert-coordinates/)
 **Последнее обновление:** 2025-12-11  
 **Тестировано с:** Aspose.GIS 24.12 for .NET  
 **Автор:** Aspose
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -168,13 +168,6 @@ Link: [Convert Coordinates](./convert-coordinates/)
 ### [تحويل الإحداثيات باستخدام Aspose.GIS](./convert-coordinates/)
 تعلم كيفية تحويل الإحداثيات باستخدام Aspose.GIS for .NET. دليل خطوة بخطوة، المتطلبات المسبقة، والأسئلة المتكررة متوفر.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ## الأسئلة المتكررة
 
 **س: هل يمكنني استخدام واجهة MultiLineString API في مشروع .NET Core؟**  
@@ -197,3 +190,10 @@ Link: [Convert Coordinates](./convert-coordinates/)
 **آخر تحديث:** 2025-12-11  
 **تم الاختبار مع:** Aspose.GIS 24.12 for .NET  
 **المؤلف:** Aspose
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

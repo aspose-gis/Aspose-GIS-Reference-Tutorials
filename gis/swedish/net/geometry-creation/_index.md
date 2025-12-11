@@ -168,13 +168,6 @@ Lär dig hur du utnyttjar Aspose.GIS för .NET för att manipulera geografisk da
 ### [Koordinatkonvertering med Aspose.GIS](./convert-coordinates/)
 Lär dig hur du konverterar koordinater med Aspose.GIS för .NET. Steg‑för‑steg‑guide, förutsättningar och vanliga frågor tillhandahålls.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ## Vanliga frågor
 
 **Q: Kan jag använda MultiLineString‑API:t i ett .NET Core‑projekt?**  
@@ -197,3 +190,10 @@ A: Se avsnittet “Performance Tuning” i Aspose.GIS‑dokumentationen och hand
 **Senast uppdaterad:** 2025-12-11  
 **Testad med:** Aspose.GIS 24.12 för .NET  
 **Författare:** Aspose
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

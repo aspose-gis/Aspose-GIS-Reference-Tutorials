@@ -167,13 +167,6 @@ Link: [Convert Coordinates](./convert-coordinates/)
 ### [Coordinate Conversion with Aspose.GIS](./convert-coordinates/)
 เรียนรู้วิธีแปลงพิกัดด้วย Aspose.GIS for .NET คู่มือขั้นตอน‑โดย‑ขั้นตอน พร้อมข้อกำหนดเบื้องต้นและ FAQ
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ## คำถามที่พบบ่อย
 
 **Q: สามารถใช้ MultiLineString API ในโครงการ .NET Core ได้หรือไม่?**  
@@ -196,3 +189,10 @@ A: ดูส่วน “Performance Tuning” ในเอกสาร Aspose.G
 **อัปเดตล่าสุด:** 2025-12-11  
 **ทดสอบกับ:** Aspose.GIS 24.12 for .NET  
 **ผู้เขียน:** Aspose
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -202,13 +202,6 @@ Aspose.GIS for .NET を活用し、ジオメトリ内のポイント数をカウ
 ### [Aspose.GIS を使用した座標変換](./convert-coordinates/)
 Aspose.GIS for .NET で座標変換を行う方法をステップバイステップで学び、前提条件、FAQ などを網羅した完全ガイドです。
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ## よくある質問
 
 **Q: .NET Core プロジェクトで MultiLineString API を使用できますか？**  
@@ -231,3 +224,10 @@ A: Aspose.GIS のドキュメント内の “Performance Tuning” セクショ�
 **最終更新日:** 2025-12-11  
 **テスト環境:** Aspose.GIS 24.12 for .NET  
 **作者:** Aspose
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

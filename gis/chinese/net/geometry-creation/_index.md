@@ -166,13 +166,6 @@ weight: 21
 ### [使用 Aspose.GIS 进行坐标转换](./convert-coordinates/)
 学习如何使用 Aspose.GIS for .NET 进行坐标转换，提供分步指南、前置条件和常见问题解答。
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ## 常见问题
 
 **Q: 我可以在 .NET Core 项目中使用 MultiLineString API 吗？**  
@@ -195,3 +188,10 @@ A: 请查阅 Aspose.GIS 文档中的 “Performance Tuning” 部分，以及 �
 **最后更新：** 2025-12-11  
 **测试环境：** Aspose.GIS 24.12 for .NET  
 **作者：** Aspose
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}
