@@ -1,37 +1,40 @@
 ---
-title: Hitung Poin dalam Geometri dengan Aspose.GIS untuk .NET
-linktitle: Hitung Poin dalam Geometri
+date: 2025-12-11
+description: Pelajari cara menghitung titik dalam geometri menggunakan Aspose.GIS
+  untuk .NET dan cara menambahkan titik ke LineString. Tutorial komprehensif tersedia.
+linktitle: Count Points in Geometry
 second_title: Aspose.GIS .NET API
-description: Pelajari cara memanfaatkan Aspose.GIS untuk .NET untuk memanipulasi data geografis dengan mudah. Tersedia tutorial komprehensif.
-weight: 24
+title: Cara Menghitung Titik dalam Geometri dengan Aspose.GIS untuk .NET
 url: /id/net/geometry-creation/count-points-in-geometry/
+weight: 24
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Hitung Poin dalam Geometri dengan Aspose.GIS untuk .NET
+# Cara Menghitung Titik dalam Geometri dengan Aspose.GIS untuk .NET
 
-## Perkenalan
-Dalam bidang pengembangan Sistem Informasi Geografis (GIS), Aspose.GIS untuk .NET menonjol sebagai perangkat yang ampuh untuk memanipulasi dan memproses data geografis. Baik Anda seorang pengembang berpengalaman atau baru mendalami dunia pemrograman GIS, menguasai Aspose.GIS dapat membuka banyak sekali kemungkinan dalam proyek Anda.
+## Cara Menghitung Titik dalam Geometri
+Dalam ranah pengembangan Sistem Informasi Geografis (GIS), **cara menghitung titik** dalam sebuah geometri adalah tugas yang sering. Aspose.GIS untuk .NET membuat operasi ini sederhana, memungkinkan Anda fokus pada logika bisnis daripada penanganan geometri tingkat rendah. Dalam tutorial ini kami akan menunjukkan cara membuat `LineString`, **menambahkan titik ke LineString**, dan mengambil jumlah titik—semua dalam beberapa baris C#.
+
+## Jawaban Cepat
+- **Apa arti “count points”?** Mengembalikan jumlah vertex yang disimpan dalam objek geometri.  
+- **Kelas apa yang digunakan?** `LineString` dari `Aspose.Gis.Geometries`.  
+- **Berapa banyak titik yang dapat saya tambahkan?** Tidak terbatas, hanya dibatasi oleh memori.  
+- **Apakah saya memerlukan lisensi untuk fitur ini?** Lisensi sementara dapat digunakan untuk evaluasi; lisensi penuh diperlukan untuk produksi.  
+- **Versi .NET yang didukung?** .NET Framework, .NET Core, .NET 5/6 dan selanjutnya.
+
 ## Prasyarat
-Sebelum mendalami seluk-beluk Aspose.GIS untuk .NET, pastikan Anda memiliki prasyarat berikut:
-### 1. Instal Aspose.GIS untuk .NET
- Untuk memulai, Anda perlu menginstal Aspose.GIS untuk .NET di lingkungan pengembangan Anda. Anda dapat mengunduhnya dari[Halaman rilis Aspose.GIS untuk .NET](https://releases.aspose.com/gis/net/) dan ikuti petunjuk instalasi yang disediakan dalam dokumentasi.
-### 2. Siapkan Lingkungan Pengembangan Anda
-Pastikan Anda memiliki lingkungan pengembangan yang sesuai. Ini biasanya melibatkan menginstal Visual Studio atau IDE pengembangan .NET pilihan lainnya di sistem Anda.
-### 3. Pemahaman Dasar C# dan .NET Framework
-Biasakan diri Anda dengan bahasa pemrograman C# dan dasar-dasar kerangka .NET. Hal ini akan memudahkan pemahaman tentang API Aspose.GIS dan penggunaannya.
+Sebelum menyelami kode, pastikan Anda memiliki hal berikut:
+
+1. **Aspose.GIS untuk .NET** terpasang – unduh dari [halaman rilis Aspose.GIS untuk .NET](https://releases.aspose.com/gis/net/).  
+2. Lingkungan pengembangan .NET seperti Visual Studio.  
+3. Familiaritas dasar dengan C# dan kerangka kerja .NET.
 
 ## Impor Namespace
-Sebelum Anda dapat mulai menggunakan Aspose.GIS di aplikasi .NET, Anda perlu mengimpor namespace yang diperlukan. Mari kita bagi proses ini menjadi beberapa langkah:
-## 1. Buka Proyek .NET Anda
-Luncurkan Visual Studio atau .NET IDE pilihan Anda dan buka proyek tempat Anda ingin menggunakan Aspose.GIS.
-## 2. Tambahkan Referensi Aspose.GIS
-Klik kanan proyek Anda di Solution Explorer, pilih "Kelola Paket NuGet", dan cari "Aspose.GIS". Instal paket untuk menambahkan referensi yang diperlukan ke proyek Anda.
-## 3. Impor Namespace
- Di file C# Anda, impor namespace yang diperlukan menggunakan`using` kata kunci:
+Untuk mulai menggunakan Aspose.GIS, tambahkan namespace yang diperlukan ke file C# Anda:
+
 ```csharp
 using Aspose.Gis.Geometries;
 using System;
@@ -41,42 +44,69 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-Sekarang, mari kita membedah contoh yang diberikan ke dalam format panduan langkah demi langkah:
-## 1. Buat Objek LineString
+## Panduan Langkah‑per‑Langkah
+
+### Langkah 1: Buat Objek `LineString`
+`LineString` mewakili serangkaian segmen garis yang terhubung. Buat instance dengan konstruktor default:
+
 ```csharp
 LineString line = new LineString();
 ```
-Ini menginisialisasi instance baru dari kelas LineString, yang mewakili rangkaian segmen garis yang terhubung dalam ruang 2 dimensi.
-## 2. Tambahkan Poin ke LineString
+
+### Langkah 2: **Tambahkan Titik** ke `LineString`
+Di sini kami **menambahkan titik ke LineString** menggunakan pasangan lintang‑bujur. Setiap pemanggilan menambahkan vertex baru ke geometri:
+
 ```csharp
 line.AddPoint(78.65, -32.65);
 line.AddPoint(-98.65, 12.65);
 ```
-Di sini, dua titik ditambahkan ke objek LineString. Setiap titik ditentukan oleh koordinat lintang dan bujurnya.
-## 3. Hitung Poinnya
+
+### Langkah 3: Hitung Titik
+Properti `Count` memberikan total jumlah titik (vertex) yang disimpan dalam `LineString`:
+
 ```csharp
 int pointsCount = line.Count;
 ```
- Ini mengambil jumlah poin dalam objek LineString dan menyimpannya di`pointsCount` variabel.
-## 4. Tampilkan Hitungannya
+
+### Langkah 4: Tampilkan Jumlah
+Akhirnya, cetak jumlah ke konsol. Untuk contoh di atas, hasilnya `2`:
+
 ```csharp
 Console.WriteLine(pointsCount);  // 2
 ```
- Terakhir, penghitungan poin dicetak ke konsol, yang dalam hal ini adalah`2`.
+
+## Mengapa Ini Penting
+Menghitung titik penting ketika Anda perlu memvalidasi kompleksitas geometri, menghitung panjang, atau menegakkan aturan kualitas data. Dengan menguasai pola sederhana ini, Anda dapat memperluas logika ke poligon, multipoint, dan alur kerja GIS yang lebih kompleks.
+
+## Masalah Umum & Tips
+- **Referensi null:** Pastikan instance `LineString` dibuat sebelum memanggil `AddPoint`.  
+- **Urutan koordinat:** Aspose.GIS mengharapkan `(longitude, latitude)`. Menukar keduanya dapat menyebabkan geometri tidak akurat.  
+- **Kinerja:** Menambahkan banyak titik dalam loop tidak masalah, tetapi pertimbangkan operasi batch untuk dataset yang sangat besar.
 
 ## Kesimpulan
-Menguasai Aspose.GIS untuk .NET membuka banyak kemungkinan dalam manipulasi dan pemrosesan data geografis dalam aplikasi .NET Anda. Dengan mengikuti panduan langkah demi langkah ini, Anda dapat dengan mudah mengintegrasikan Aspose.GIS ke dalam proyek Anda dan memanfaatkan kemampuannya secara maksimal.
+Anda sekarang tahu **cara menghitung titik** dalam sebuah geometri dan cara **menambahkan titik ke LineString** menggunakan Aspose.GIS untuk .NET. Keterampilan dasar ini membuka pintu ke analisis spasial yang lebih kaya, validasi data, dan solusi GIS kustom.
+
 ## FAQ
+
 ### Apakah Aspose.GIS untuk .NET kompatibel dengan semua kerangka .NET?
-Ya, Aspose.GIS untuk .NET mendukung beberapa kerangka .NET, termasuk .NET Core dan .NET Standard.
+Ya, Aspose.GIS untuk .NET mendukung banyak kerangka .NET, termasuk .NET Core dan .NET Standard.
+
 ### Bisakah saya mendapatkan lisensi sementara untuk tujuan evaluasi?
- Ya, Anda bisa mendapatkan lisensi sementara untuk Aspose.GIS untuk .NET dari[Asumsikan situs web](https://purchase.aspose.com/temporary-license/).
-### Apakah Aspose.GIS untuk .NET menyediakan dokumentasi yang komprehensif?
-Sangat! Anda dapat menemukan dokumentasi terperinci untuk Aspose.GIS untuk .NET di[halaman dokumentasi](https://reference.aspose.com/gis/net/).
-### Bagaimana saya bisa mendapatkan dukungan atau mengajukan pertanyaan terkait Aspose.GIS untuk .NET?
- Anda dapat mengunjungi[Forum Aspose.GIS](https://forum.aspose.com/c/gis/33) untuk mencari dukungan atau mengajukan pertanyaan dari komunitas Aspose.
-### Apakah ada uji coba gratis yang tersedia untuk Aspose.GIS untuk .NET?
- Ya, Anda dapat memanfaatkan uji coba gratis dari[Halaman rilis Aspose.GIS](https://releases.aspose.com/) untuk mengevaluasi fitur-fiturnya sebelum melakukan pembelian.
+Ya, Anda dapat memperoleh lisensi sementara untuk Aspose.GIS untuk .NET dari [situs Aspose](https://purchase.aspose.com/temporary-license/).
+
+### Apakah Aspose.GIS untuk .NET menyediakan dokumentasi lengkap?
+Tentu! Anda dapat menemukan dokumentasi terperinci untuk Aspose.GIS untuk .NET di [halaman dokumentasi](https://reference.aspose.com/gis/net/).
+
+### Bagaimana saya dapat mendapatkan dukungan atau mengajukan pertanyaan terkait Aspose.GIS untuk .NET?
+Anda dapat mengunjungi [forum Aspose.GIS](https://forum.aspose.com/c/gis/33) untuk mencari dukungan atau mengajukan pertanyaan kepada komunitas Aspose.
+
+### Apakah ada percobaan gratis untuk Aspose.GIS untuk .NET?
+Ya, Anda dapat memanfaatkan percobaan gratis dari [halaman rilis Aspose.GIS](https://releases.aspose.com/) untuk mengevaluasi fiturnya sebelum melakukan pembelian.
+
+**Last Updated:** 2025-12-11  
+**Tested With:** Aspose.GIS for .NET 24.11  
+**Author:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}

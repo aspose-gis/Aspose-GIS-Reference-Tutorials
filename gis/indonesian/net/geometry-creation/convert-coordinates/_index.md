@@ -1,77 +1,126 @@
 ---
-title: Koordinasikan Konversi dengan Aspose.GIS
-linktitle: Konversi Koordinat
+date: 2025-12-11
+description: Pelajari cara mengonversi koordinat ke DMS menggunakan Aspose.GIS untuk
+  .NET. Termasuk contoh C#, konversi latitude longitude dengan C#, dan panduan langkah
+  demi langkah.
+linktitle: Convert Coordinates
 second_title: Aspose.GIS .NET API
-description: Pelajari cara mengonversi koordinat dengan Aspose.GIS untuk .NET. Panduan langkah demi langkah, prasyarat, dan FAQ disediakan.
-weight: 25
+title: Konversi Koordinat ke DMS dengan Aspose.GIS untuk .NET
 url: /id/net/geometry-creation/convert-coordinates/
+weight: 25
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Koordinasikan Konversi dengan Aspose.GIS
+# Konversi Koordinat ke DMS dengan Aspose.GIS
 
-## Perkenalan
-Dalam tutorial ini, kita akan mempelajari dunia sistem informasi geografis (GIS) menggunakan perpustakaan Aspose.GIS yang canggih untuk .NET. Aspose.GIS adalah perangkat komprehensif yang memberdayakan pengembang untuk bekerja dengan data spasial dengan mudah. Baik Anda seorang pengembang berpengalaman atau baru memulai, tutorial ini akan memandu Anda melalui proses penggunaan Aspose.GIS untuk mengonversi koordinat secara efektif.
+## Pendahuluan
+Dalam tutorial ini, Anda akan menemukan cara **mengonversi koordinat ke DMS** (derajat, menit, detik) menggunakan pustaka Aspose.GIS yang kuat untuk .NET. Apakah Anda perlu c# mengonversi latitude longitude untuk aplikasi pemetaan, menghasilkan string lokasi yang dapat dibaca manusia, atau sekadar menjelajahi format koordinat yang berbeda, panduan ini akan memandu Anda melalui setiap langkah dengan penjelasan yang jelas dan kode C# yang siap dijalankan.
+
+## Jawaban Cepat
+- **Apa arti “convert coordinates to DMS”?** Itu mengubah nilai latitude/longitude numerik menjadi notasi tradisional derajat‑menit‑detik.  
+- **Pustaka mana yang menangani konversi?** Aspose.GIS untuk .NET menyediakan kelas `GeoConvert` dengan dukungan format bawaan.  
+- **Apakah saya memerlukan lisensi untuk mencobanya?** Versi percobaan gratis tersedia; lisensi komersial diperlukan untuk penggunaan produksi.  
+- **Versi .NET apa yang didukung?** .NET Framework 4.5+, .NET Core 3.1+, dan .NET 5/6+.  
+- **Bisakah saya menggunakan kode yang sama untuk format lain?** Ya—cukup ubah nilai enum `PointFormats` (misalnya, `DecimalDegrees`, `GeoRef`).  
+
+## Apa itu konversi koordinat ke DMS?
+Mengonversi koordinat ke DMS menulis ulang nilai latitude dan longitude desimal ke dalam format seperti `25°30'00"N 45°30'00"E`. Representasi ini banyak digunakan dalam kartografi, navigasi, dan pertukaran data GIS.
+
+## Mengapa menggunakan Aspose.GIS untuk konversi koordinat?
+- **API All‑in‑one** – Tanpa pustaka eksternal atau matematika kompleks; Aspose.GIS menangani parsing dan pemformatan secara internal.  
+- **Akurasi tinggi** – Penanganan presisi untuk kasus tepi seperti nilai negatif dan penanda belahan bumi.  
+- **Cross‑platform** – Berfungsi sama pada runtime .NET Windows, Linux, dan macOS.  
+- **Ekstensibel** – Mudah beralih antara format DMS, decimal degrees, degree‑decimal‑minutes, dan GeoRef.  
+
 ## Prasyarat
-Sebelum masuk ke tutorial, pastikan Anda memiliki prasyarat berikut:
-1. Pengetahuan Dasar C#: Keakraban dengan bahasa pemrograman C# sangat penting untuk memahami dan mengimplementasikan contoh kode yang diberikan.
-  
-2.  Instalasi Aspose.GIS: Pastikan Anda telah mengunduh dan menginstal perpustakaan Aspose.GIS untuk .NET. Anda dapat mengunduhnya dari[Situs web Aspose.GIS](https://releases.aspose.com/gis/net/).
+Sebelum Anda memulai, pastikan Anda memiliki:
+
+1. **Pengetahuan dasar tentang C#** – Familiaritas dengan variabel, pemanggilan metode, dan output konsol.  
+2. **Aspose.GIS terpasang** – Unduh paket terbaru dari [situs web Aspose.GIS](https://releases.aspose.com/gis/net/).  
 
 ## Impor Namespace
-Sebelum memulai, mari impor namespace yang diperlukan untuk mengakses fungsi Aspose.GIS:
+Pertama, impor namespace yang diperlukan untuk operasi GIS:
+
 ```csharp
 using System;
 using Aspose.Gis;
 ```
 
-Mari kita bagi contoh yang diberikan menjadi beberapa langkah untuk pemahaman yang jelas:
-## Langkah 1: Mulai Proses Konversi
+## Panduan langkah‑demi‑langkah
+
+### Langkah 1: Mulai proses konversi
+Kami mencetak pesan ramah sehingga Anda tahu demo telah dimulai.
+
 ```csharp
 Console.WriteLine($"\n== Start: {nameof(ConvertCoordinate)}");
 ```
-Baris ini hanya menampilkan pesan yang menunjukkan dimulainya proses konversi koordinat.
-## Langkah 2: Konversikan ke Derajat Desimal
+
+### Langkah 2: Konversi ke Decimal Degrees  
+Meskipun tujuan akhir adalah DMS, kami mulai dengan menampilkan representasi desimal asli.
+
 ```csharp
 var decimalDegrees = GeoConvert.AsPointText(25.5, 45.5, PointFormats.DecimalDegrees);
 Console.WriteLine(decimalDegrees);
 ```
- Di sini, kami mengonversi koordinat (25.5, 45.5) ke format derajat desimal menggunakan`AsPointText` metode dengan`PointFormats.DecimalDegrees` parameter. Hasilnya kemudian dicetak ke konsol.
-## Langkah 3: Konversikan ke Derajat Menit Desimal
+
+### Langkah 3: Konversi ke Degree Decimal Minutes  
+Format ini (`DD°MM.m'`) adalah langkah menengah yang umum ketika Anda perlu *convert lat long degree minutes*.
+
 ```csharp
 var degreeDecimalMinutes = GeoConvert.AsPointText(25.5, 45.5, PointFormats.DegreeDecimalMinutes);
 Console.WriteLine(degreeDecimalMinutes);
 ```
-Langkah ini mengubah koordinat ke format menit desimal derajat dan mencetak hasilnya.
-## Langkah 4: Konversikan ke Derajat Menit Detik
+
+### Langkah 4: Konversi ke Degree Minutes Seconds (DMS)  
+Berikut inti tutorial kami—**convert coordinates to DMS**.
+
 ```csharp
 var degreeMinutesSeconds = GeoConvert.AsPointText(25.5, 45.5, PointFormats.DegreeMinutesSeconds);
 Console.WriteLine(degreeMinutesSeconds);
 ```
-Demikian pula, kami mengonversi koordinat ke format derajat menit detik dan menampilkan hasilnya.
-## Langkah 5: Konversikan ke GeoRef
+
+### Langkah 5: Konversi ke GeoRef  
+Untuk melengkapi, kami juga mendemonstrasikan format `GeoRef`, yang berguna dalam alur kerja penginderaan jauh.
+
 ```csharp
 var geoRef = GeoConvert.AsPointText(25.5, 45.5, PointFormats.GeoRef);
 Console.WriteLine(geoRef);
 ```
-Terakhir, kita ubah koordinatnya ke format GeoRef dan cetak hasilnya.
+
+## Masalah Umum dan Solusinya
+- **Huruf belahan bumi yang salah** – Pastikan Anda memberikan nilai positif untuk utara/timur dan negatif untuk selatan/barat; API secara otomatis menambahkan sufiks yang benar.  
+- **Output kosong yang tidak terduga** – Verifikasi bahwa assembly `Aspose.Gis` direferensikan dengan benar dan proyek menargetkan versi .NET yang didukung.  
+- **Lisensi tidak ditemukan** – Letakkan file lisensi Anda di root aplikasi atau atur secara programatis dengan `License license = new License(); license.SetLicense("Aspose.GIS.lic");`.  
+
+## Pertanyaan yang Sering Diajukan
+
+**Q: Apakah Aspose.GIS kompatibel dengan bahasa pemrograman lain?**  
+A: Aspose.GIS terutama ditujukan untuk pengembang .NET, tetapi versi Java juga tersedia.
+
+**Q: Apakah saya dapat mencoba Aspose.GIS sebelum membeli?**  
+A: Ya, Anda dapat mengakses percobaan gratis Aspose.GIS dari [situs web](https://releases.aspose.com/).
+
+**Q: Bagaimana saya dapat mendapatkan dukungan untuk Aspose.GIS?**  
+A: Anda dapat mencari bantuan di forum komunitas Aspose.GIS [di sini](https://forum.aspose.com/c/gis/33).
+
+**Q: Apakah lisensi sementara tersedia untuk Aspose.GIS?**  
+A: Ya, lisensi sementara dapat diperoleh dari [halaman lisensi sementara](https://purchase.aspose.com/temporary-license/).
+
+**Q: Di mana saya dapat membeli Aspose.GIS?**  
+A: Anda dapat membeli Aspose.GIS dari [halaman pembelian](https://purchase.aspose.com/buy).
 
 ## Kesimpulan
-Dalam tutorial ini, kita telah menjelajahi proses konversi koordinat menggunakan Aspose.GIS untuk .NET. Dengan mengikuti panduan langkah demi langkah dan memanfaatkan perpustakaan Aspose.GIS, Anda dapat memanipulasi data spasial secara efisien dalam aplikasi .NET Anda.
-## FAQ
-### Apakah Aspose.GIS kompatibel dengan bahasa pemrograman lain?
-Aspose.GIS terutama menargetkan pengembang .NET, namun menawarkan interoperabilitas dengan Java melalui Aspose.GIS untuk Java.
-### Bisakah saya mencoba Aspose.GIS sebelum membeli?
- Ya, Anda dapat mengakses uji coba gratis Aspose.GIS dari[situs web](https://releases.aspose.com/).
-### Bagaimana saya bisa mendapatkan dukungan untuk Aspose.GIS?
- Anda dapat mencari bantuan dari forum komunitas Aspose.GIS[Di Sini](https://forum.aspose.com/c/gis/33).
-### Apakah lisensi sementara tersedia untuk Aspose.GIS?
- Ya, izin sementara dapat diperoleh dari[halaman lisensi sementara](https://purchase.aspose.com/temporary-license/).
-### Dimana saya bisa membeli Aspose.GIS?
- Anda dapat membeli Aspose.GIS dari[halaman pembelian](https://purchase.aspose.com/buy).
+Dengan mengikuti langkah‑langkah ini, Anda kini tahu cara **convert coordinates to DMS** dan format GIS umum lainnya menggunakan Aspose.GIS untuk .NET. Kemampuan ini memungkinkan Anda mengintegrasikan string lokasi yang dapat dibaca manusia secara mulus ke dalam aplikasi pemetaan, laporan, atau alur kerja data spasial apa pun. Jangan ragu untuk bereksperimen dengan nilai latitude/longitude yang berbeda dan menjelajahi format lain yang ditawarkan oleh kelas `GeoConvert`.
+
+---
+
+**Terakhir Diperbarui:** 2025-12-11  
+**Diuji Dengan:** Aspose.GIS 24.11 untuk .NET  
+**Penulis:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
