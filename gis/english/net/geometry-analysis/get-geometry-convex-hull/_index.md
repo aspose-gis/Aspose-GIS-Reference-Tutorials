@@ -1,5 +1,5 @@
 ---
-title: How to Use Aspose: Calculate Convex Hull with Aspose.GIS for .NET
+title: How to Use Aspose - Calculate Convex Hull with Aspose.GIS for .NET
 linktitle: Get Geometry Convex Hull
 second_title: Aspose.GIS .NET API
 description: Learn how to use Aspose to calculate the convex hull of a geometry in .NET. This guide shows how to compute hull and extract convex hull points with Aspose.GIS.
