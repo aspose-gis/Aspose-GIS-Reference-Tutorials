@@ -112,17 +112,15 @@ Bạn có thể mua Aspose.GIS từ trang mua hàng [đây](https://purchase.asp
 **Hỏi:** Có thể xuất đa giác ra file shapefile sau khi tạo không?  
 **Đáp:** Có, Aspose.GIS cung cấp các lớp `FeatureSet` và `ShapefileWriter` để ghi các hình học ra định dạng Shapefile.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Cập nhật lần cuối:** 2025-12-09  
 **Đã kiểm tra với:** Aspose.GIS 24.11 cho .NET  
 **Tác giả:** Aspose  
 
----
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

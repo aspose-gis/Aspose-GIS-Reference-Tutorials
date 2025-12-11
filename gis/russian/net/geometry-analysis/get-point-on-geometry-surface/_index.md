@@ -112,17 +112,15 @@ Console.WriteLine(polygon.SpatiallyContains(pointOnSurface)); // True
 **Q:** Можно ли экспортировать полигон в shapefile после создания?  
 **A:** Да, Aspose.GIS предоставляет классы `FeatureSet` и `ShapefileWriter` для записи геометрий в формат Shapefile.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Последнее обновление:** 2025-12-09  
 **Тестировано с:** Aspose.GIS 24.11 for .NET  
 **Автор:** Aspose  
 
----
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

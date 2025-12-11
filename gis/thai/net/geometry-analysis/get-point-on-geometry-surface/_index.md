@@ -111,15 +111,15 @@ Console.WriteLine(polygon.SpatiallyContains(pointOnSurface)); // True
 **Q:** สามารถส่งออกรูปหลายเหลี่ยมเป็น shapefile หลังจากสร้างได้หรือไม่?  
 **A:** ได้, Aspose.GIS มีคลาส `FeatureSet` และ `ShapefileWriter` เพื่อเขียนเรขาคณิตเป็นรูปแบบ Shapefile  
 
+---
+
+**อัปเดตล่าสุด:** 2025-12-09  
+**ทดสอบด้วย:** Aspose.GIS 24.11 for .NET  
+**ผู้เขียน:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**อัปเดตล่าสุด:** 2025-12-09  
-**ทดสอบด้วย:** Aspose.GIS 24.11 for .NET  
-**ผู้เขียน:** Aspose

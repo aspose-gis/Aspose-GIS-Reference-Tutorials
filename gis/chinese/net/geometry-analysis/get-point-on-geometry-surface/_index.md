@@ -118,17 +118,15 @@ Console.WriteLine(polygon.SpatiallyContains(pointOnSurface)); // True
 **Q:** 创建后能将多边形导出为 shapefile 吗？  
 **A:** 可以，Aspose.GIS 提供 `FeatureSet` 和 `ShapefileWriter` 类，可将几何体写入 Shapefile 格式。
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Last Updated:** 2025-12-09  
 **Tested With:** Aspose.GIS 24.11 for .NET  
 **Author:** Aspose  
 
----
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -112,17 +112,15 @@ Megvásárolhatja az Aspose.GIS‑t a vásárlási oldalon [itt](https://purchas
 **K:** Lehetséges-e a sokszög exportálása shapefile‑ba a létrehozás után?  
 **V:** Igen, az Aspose.GIS biztosítja a `FeatureSet` és `ShapefileWriter` osztályokat a geometria Shapefile formátumba írásához.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Utoljára frissítve:** 2025-12-09  
 **Tesztelt verzió:** Aspose.GIS 24.11 for .NET  
 **Szerző:** Aspose  
 
----
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

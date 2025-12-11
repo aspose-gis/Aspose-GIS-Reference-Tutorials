@@ -112,15 +112,15 @@ Je kunt Aspose.GIS kopen via de aankooppagina [hier](https://purchase.aspose.com
 **Q:** Is het mogelijk om de polygoon na creatie naar een shapefile te exporteren?  
 **A:** Ja, Aspose.GIS biedt de klassen `FeatureSet` en `ShapefileWriter` om geometrieën naar het Shapefile‑formaat te schrijven.
 
+---
+
+**Last Updated:** 2025-12-09  
+**Tested With:** Aspose.GIS 24.11 for .  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-12-09  
-**Tested With:** Aspose.GIS 24.11 for .  
-**Author:** Aspose

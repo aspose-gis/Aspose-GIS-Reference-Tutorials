@@ -116,15 +116,15 @@ Możesz zakupić Aspose.GIS na stronie zakupu [tutaj](https://purchase.aspose.co
 **Q:** Czy można wyeksportować wielokąt do pliku shapefile po jego utworzeniu?  
 **A:** Tak, Aspose.GIS udostępnia klasy `FeatureSet` i `ShapefileWriter` do zapisu geometrii w formacie Shapefile.
 
+---
+
+**Last Updated:** 2025-12-09  
+**Tested With:** Aspose.GIS 24.11 for .NET  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-12-09  
-**Tested With:** Aspose.GIS 24.11 for .NET  
-**Author:** Aspose

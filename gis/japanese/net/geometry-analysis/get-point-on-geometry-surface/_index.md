@@ -115,17 +115,15 @@ Aspose.GIS フォーラムは [こちら](https://forum.aspose.com/c/gis/33) で
 **Q:** 作成したポリゴンを Shapefile にエクスポートできますか？  
 **A:** はい、Aspose.GIS は `FeatureSet` と `ShapefileWriter` クラスを提供しており、ジオメトリを Shapefile 形式で書き出すことが可能です。
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Last Updated:** 2025-12-09  
 **Tested With:** Aspose.GIS 24.11 for .NET  
 **Author:** Aspose  
 
----
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

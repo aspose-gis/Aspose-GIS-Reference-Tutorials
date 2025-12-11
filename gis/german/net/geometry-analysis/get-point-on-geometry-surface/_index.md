@@ -113,17 +113,15 @@ Sie können Aspose.GIS über die Kaufseite [hier](https://purchase.aspose.com/bu
 **Q:** Ist es möglich, das Polygon nach der Erstellung in eine Shapefile zu exportieren?  
 **A:** Ja, Aspose.GIS stellt die Klassen `FeatureSet` und `ShapefileWriter` bereit, um Geometrien im Shapefile‑Format zu schreiben.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Last Updated:** 2025-12-09  
 **Tested With:** Aspose.GIS 24.11 for .NET  
 **Author:** Aspose  
 
----
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

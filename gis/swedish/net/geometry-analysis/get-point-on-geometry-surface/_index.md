@@ -112,15 +112,15 @@ Du kan köpa Aspose.GIS från köpsidan [here](https://purchase.aspose.com/buy).
 **Q:** Är det möjligt att exportera polygonen till en shapefil efter skapandet?  
 **A:** Ja, Aspose.GIS tillhandahåller klasserna `FeatureSet` och `ShapefileWriter` för att skriva geometrier till Shapefile-format.
 
+---
+
+**Last Updated:** 2025-12-09  
+**Tested With:** Aspose.GIS 24.11 for .NET  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-12-09  
-**Tested With:** Aspose.GIS 24.11 for .NET  
-**Author:** Aspose

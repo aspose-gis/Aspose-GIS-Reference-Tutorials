@@ -112,17 +112,15 @@ Anda dapat membeli Aspose.GIS melalui halaman pembelian [here](https://purchase.
 **Q:** Apakah memungkinkan mengekspor poligon ke shapefile setelah dibuat?  
 **A:** Ya, Aspose.GIS menyediakan kelas `FeatureSet` dan `ShapefileWriter` untuk menulis geometri ke format Shapefile.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Terakhir Diperbarui:** 2025-12-09  
 **Diuji dengan:** Aspose.GIS 24.11 for .NET  
 **Penulis:** Aspose  
 
----
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

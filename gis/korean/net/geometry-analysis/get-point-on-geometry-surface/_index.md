@@ -111,15 +111,15 @@ Aspose.GIS 포럼 [here](https://forum.aspose.com/c/gis/33)에서 다른 사용�
 **Q:** 다각형을 생성한 뒤 Shapefile로 내보낼 수 있나요?  
 **A:** 네, Aspose.GIS는 `FeatureSet` 및 `ShapefileWriter` 클래스를 제공하여 지오메트리를 Shapefile 형식으로 저장할 수 있습니다.
 
+---
+
+**마지막 업데이트:** 2025-12-09  
+**테스트 환경:** Aspose.GIS 24.11 for .NET  
+**작성자:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**마지막 업데이트:** 2025-12-09  
-**테스트 환경:** Aspose.GIS 24.11 for .NET  
-**작성자:** Aspose

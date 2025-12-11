@@ -112,17 +112,15 @@ Puoi acquistare Aspose.GIS dalla pagina di acquisto [qui](https://purchase.aspos
 **Q:** È possibile esportare il poligono in un shapefile dopo la creazione?  
 **A:** Sì, Aspose.GIS fornisce le classi `FeatureSet` e `ShapefileWriter` per scrivere le geometrie in formato Shapefile.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Ultimo Aggiornamento:** 2025-12-09  
 **Testato Con:** Aspose.GIS 24.11 for .NET  
 **Autore:** Aspose  
 
----
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

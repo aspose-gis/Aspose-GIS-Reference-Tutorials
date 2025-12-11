@@ -112,17 +112,15 @@ Console.WriteLine(polygon.SpatiallyContains(pointOnSurface)); // True
 **प्रश्न:** निर्माण के बाद बहुभुज को शैपफ़ाइल में निर्यात करना संभव है क्या?  
 **उत्तर:** हाँ, Aspose.GIS `FeatureSet` और `ShapefileWriter` क्लासेज़ प्रदान करता है जो ज्यामितियों को शैपफ़ाइल फ़ॉर्मेट में लिखते हैं।
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Last Updated:** 2025-12-09  
 **Tested With:** Aspose.GIS 24.11 for .NET  
 **Author:** Aspose  
 
----
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

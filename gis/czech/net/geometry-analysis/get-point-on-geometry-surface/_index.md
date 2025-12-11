@@ -112,15 +112,15 @@ Můžete zakoupit Aspose.GIS na stránce nákupu [zde](https://purchase.aspose.c
 **Q:** Je možné exportovat polygon do shapefile po vytvoření?  
 **A:** Ano, Aspose.GIS poskytuje třídy `FeatureSet` a `ShapefileWriter` pro zápis geometrie do formátu Shapefile.
 
+---
+
+**Poslední aktualizace:** 2025-12-09  
+**Testováno s:** Aspose.GIS 24.11 for .NET  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Poslední aktualizace:** 2025-12-09  
-**Testováno s:** Aspose.GIS 24.11 for .NET  
-**Autor:** Aspose

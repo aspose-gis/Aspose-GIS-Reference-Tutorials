@@ -112,17 +112,15 @@ Console.WriteLine(polygon.SpatiallyContains(pointOnSurface)); // True
 **Ε:** Είναι δυνατόν να εξάγω το πολύγωνο σε shapefile μετά τη δημιουργία;  
 **Α:** Ναι, το Aspose.GIS παρέχει τις κλάσεις `FeatureSet` και `ShapefileWriter` για τη γραφή γεωμετριών σε μορφή Shapefile.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Τελευταία ενημέρωση:** 2025-12-09  
 **Δοκιμάστηκε με:** Aspose.GIS 24.11 for .NET  
 **Συγγραφέας:** Aspose  
 
----
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

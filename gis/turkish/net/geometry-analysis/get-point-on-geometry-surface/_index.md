@@ -115,17 +115,15 @@ Aspose.GIS'i satın alma sayfasından [buradan](https://purchase.aspose.com/buy)
 **S:** Oluşturulduktan sonra poligonu shapefile olarak dışa aktarmak mümkün mü?  
 **C:** Evet, Aspose.GIS `FeatureSet` ve `ShapefileWriter` sınıflarını sağlayarak geometrileri Shapefile formatına yazmanıza olanak tanır.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Last Updated:** 2025-12-09  
 **Tested With:** Aspose.GIS 24.11 for .NET  
 **Author:** Aspose  
 
----
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}
