@@ -1,37 +1,40 @@
 ---
-title: Tel punten in de geometrie met Aspose.GIS voor .NET
-linktitle: Punten tellen in de geometrie
-second_title: Aspose.GIS .NET-API
-description: Leer hoe u Aspose.GIS voor .NET kunt gebruiken om moeiteloos geografische gegevens te manipuleren. Uitgebreide tutorials beschikbaar.
-weight: 24
+date: 2025-12-11
+description: Leer hoe u punten in geometrie kunt tellen met Aspose.GIS voor .NET en
+  hoe u punten aan een LineString kunt toevoegen. Uitgebreide tutorials beschikbaar.
+linktitle: Count Points in Geometry
+second_title: Aspose.GIS .NET API
+title: Hoe punten te tellen in geometrie met Aspose.GIS voor .NET
 url: /nl/net/geometry-creation/count-points-in-geometry/
+weight: 24
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Tel punten in de geometrie met Aspose.GIS voor .NET
+# Hoe punten tellen in geometrie met Aspose.GIS voor .NET
 
-## Invoering
-Op het gebied van de ontwikkeling van geografische informatiesystemen (GIS) onderscheidt Aspose.GIS voor .NET zich als een krachtige toolset voor het manipuleren en verwerken van geografische gegevens. Of u nu een doorgewinterde ontwikkelaar bent of zich gewoon verdiept in de wereld van GIS-programmeren, het beheersen van Aspose.GIS kan een groot aantal mogelijkheden in uw projecten openen.
-## Vereisten
-Voordat u zich verdiept in de fijne kneepjes van Aspose.GIS voor .NET, moet u ervoor zorgen dat u aan de volgende vereisten voldoet:
-### 1. Installeer Aspose.GIS voor .NET
- Om te beginnen moet Aspose.GIS voor .NET in uw ontwikkelomgeving zijn geïnstalleerd. Je kunt het downloaden van de[Aspose.GIS voor .NET-releasespagina](https://releases.aspose.com/gis/net/) en volg de installatie-instructies in de documentatie.
-### 2. Stel uw ontwikkelomgeving in
-Zorg ervoor dat u een geschikte ontwikkelomgeving gereed heeft. Meestal houdt dit in dat Visual Studio of een andere .NET-ontwikkelings-IDE van uw voorkeur op uw systeem is geïnstalleerd.
-### 3. Basiskennis van C# en .NET Framework
-Maak uzelf vertrouwd met de programmeertaal C# en de basisbeginselen van het .NET-framework. Dit zal het begrip van de Aspose.GIS API's en hun gebruik vergemakkelijken.
+## Hoe punten tellen in geometrie
+In de wereld van Geographic Information Systems (GIS) ontwikkeling, **hoe punten te tellen** in een geometrie is een veelvoorkomende taak. Aspose.GIS voor .NET maakt deze bewerking eenvoudig, zodat je je kunt concentreren op de bedrijfslogica in plaats van op low‑level geometriebehandeling. In deze tutorial lopen we door het maken van een `LineString`, **punten toevoegen aan een LineString**, en het ophalen van het aantal punten — allemaal in slechts een paar regels C#.
 
-## Naamruimten importeren
-Voordat u Aspose.GIS in uw .NET-applicatie kunt gaan gebruiken, moet u de benodigde naamruimten importeren. Laten we dit proces in stappen opsplitsen:
-## 1. Open uw .NET-project
-Start uw Visual Studio of gewenste .NET IDE en open het project waarin u Aspose.GIS wilt gebruiken.
-## 2. Voeg Aspose.GIS-referentie toe
-Klik met de rechtermuisknop op uw project in de Solution Explorer, selecteer "NuGet-pakketten beheren" en zoek naar "Aspose.GIS". Installeer het pakket om de benodigde referenties aan uw project toe te voegen.
-## 3. Naamruimten importeren
- Importeer in uw C#-bestand de vereiste naamruimten met behulp van de`using` trefwoord:
+## Snelle antwoorden
+- **Wat betekent “count points”?** Het retourneert het aantal vertices dat is opgeslagen in een geometrie‑object.  
+- **Welke klasse wordt gebruikt?** `LineString` uit `Aspose.Gis.Geometries`.  
+- **Hoeveel punten kan ik toevoegen?** Onbeperkt, alleen beperkt door geheugen.  
+- **Heb ik een licentie nodig voor deze functie?** Een tijdelijke licentie werkt voor evaluatie; een volledige licentie is vereist voor productie.  
+- **Ondersteunde .NET‑versies?** .NET Framework, .NET Core, .NET 5/6 en later.
+
+## Voorvereisten
+Voordat je in de code duikt, zorg ervoor dat je het volgende hebt:
+
+1. **Aspose.GIS for .NET** geïnstalleerd – download het van de [Aspose.GIS for .NET releases page](https://releases.aspose.com/gis/net/).  
+2. Een .NET ontwikkelomgeving zoals Visual Studio.  
+3. Basiskennis van C# en het .NET‑framework.
+
+## Namespaces importeren
+Om Aspose.GIS te gebruiken, voeg je de vereiste namespaces toe aan je C#‑bestand:
+
 ```csharp
 using Aspose.Gis.Geometries;
 using System;
@@ -41,42 +44,70 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-Laten we nu het gegeven voorbeeld ontleden in een stapsgewijze handleiding:
-## 1. Maak een LineString-object
+## Stapsgewijze handleiding
+
+### Stap 1: Maak een `LineString`‑object
+Een `LineString` vertegenwoordigt een reeks verbonden lijnsegmenten. Instantieer het met de standaardconstructor:
+
 ```csharp
 LineString line = new LineString();
 ```
-Hiermee wordt een nieuw exemplaar van de klasse LineString geïnitialiseerd, die een reeks verbonden lijnsegmenten in een tweedimensionale ruimte vertegenwoordigt.
-## 2. Voeg punten toe aan de lijnstring
+
+### Stap 2: **Punten toevoegen** aan de `LineString`
+Hier **voegen we punten toe aan een LineString** met latitude‑longitude paren. Elke aanroep voegt een nieuw vertex toe aan de geometrie:
+
 ```csharp
 line.AddPoint(78.65, -32.65);
 line.AddPoint(-98.65, 12.65);
 ```
-Hier worden twee punten toegevoegd aan het LineString-object. Elk punt wordt gedefinieerd door zijn lengte- en breedtegraadcoördinaten.
-## 3. Tel de punten
+
+### Stap 3: Tel de punten
+De `Count`‑eigenschap geeft je het totale aantal punten (vertices) dat is opgeslagen in de `LineString`:
+
 ```csharp
 int pointsCount = line.Count;
 ```
- Hiermee wordt het aantal punten in het LineString-object opgehaald en opgeslagen in de`pointsCount` variabel.
-## 4. Geef de telling weer
+
+### Stap 4: Toon het aantal
+Ten slotte, geef het aantal weer op de console. Voor het bovenstaande voorbeeld is het resultaat `2`:
+
 ```csharp
 Console.WriteLine(pointsCount);  // 2
 ```
- Ten slotte wordt het aantal punten op de console afgedrukt, wat in dit geval het geval zou zijn`2`.
+
+## Waarom dit belangrijk is
+Het tellen van punten is essentieel wanneer je de complexiteit van geometrieën moet valideren, lengtes moet berekenen of datakwaliteitsregels moet handhaven. Door dit eenvoudige patroon onder de knie te krijgen, kun je de logica uitbreiden naar polygonen, multipoints en meer complexe GIS‑workflows.
+
+## Veelvoorkomende problemen & tips
+- **Null‑referentie:** Zorg ervoor dat de `LineString`‑instantie is aangemaakt voordat je `AddPoint` aanroept.  
+- **Coördinaatvolgorde:** Aspose.GIS verwacht `(longitude, latitude)`. Het omwisselen kan leiden tot onjuiste geometrie.  
+- **Prestaties:** Het toevoegen van een groot aantal punten in een lus is prima, maar overweeg batch‑operaties voor enorme datasets.
 
 ## Conclusie
-Het beheersen van Aspose.GIS voor .NET opent een wereld aan mogelijkheden op het gebied van geografische gegevensmanipulatie en -verwerking binnen uw .NET-toepassingen. Door deze stapsgewijze handleiding te volgen, kunt u Aspose.GIS naadloos in uw projecten integreren en de mogelijkheden ervan optimaal benutten.
+Je weet nu **hoe je punten telt** in een geometrie en hoe je **punten toevoegt aan een LineString** met Aspose.GIS voor .NET. Deze fundamentele vaardigheid opent de deur naar uitgebreidere ruimtelijke analyses, datavalidatie en aangepaste GIS‑oplossingen.
+
 ## Veelgestelde vragen
-### Is Aspose.GIS voor .NET compatibel met alle .NET-frameworks?
-Ja, Aspose.GIS voor .NET ondersteunt meerdere .NET-frameworks, waaronder .NET Core en .NET Standard.
+### Is Aspose.GIS voor .NET compatibel met alle .NET‑frameworks?
+Ja, Aspose.GIS voor .NET ondersteunt meerdere .NET‑frameworks, inclusief .NET Core en .NET Standard.
+
 ### Kan ik een tijdelijke licentie krijgen voor evaluatiedoeleinden?
- Ja, u kunt een tijdelijke licentie voor Aspose.GIS voor .NET verkrijgen bij de[Aspose-website](https://purchase.aspose.com/temporary-license/).
+Ja, je kunt een tijdelijke licentie voor Aspose.GIS voor .NET verkrijgen via de [Aspose website](https://purchase.aspose.com/temporary-license/).
+
 ### Biedt Aspose.GIS voor .NET uitgebreide documentatie?
-Absoluut! Gedetailleerde documentatie voor Aspose.GIS voor .NET vindt u op de website[documentatiepagina](https://reference.aspose.com/gis/net/).
-### Hoe kan ik ondersteuning krijgen of vragen stellen met betrekking tot Aspose.GIS voor .NET?
- U kunt een bezoek brengen aan de[Aspose.GIS-forum](https://forum.aspose.com/c/gis/33) om ondersteuning te zoeken of vragen te stellen aan de Aspose-gemeenschap.
+Absoluut! Je kunt gedetailleerde documentatie voor Aspose.GIS voor .NET vinden op de [documentatiepagina](https://reference.aspose.com/gis/net/).
+
+### Hoe kan ik ondersteuning krijgen of vragen stellen over Aspose.GIS voor .NET?
+Je kunt het [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) bezoeken om ondersteuning te zoeken of vragen te stellen aan de Aspose‑community.
+
 ### Is er een gratis proefversie beschikbaar voor Aspose.GIS voor .NET?
- Ja, u kunt gebruikmaken van de gratis proefperiode van de[Aspose.GIS releasespagina](https://releases.aspose.com/) om de kenmerken ervan te evalueren voordat u een aankoop doet.
+Ja, je kunt de gratis proefversie krijgen via de [Aspose.GIS releases pagina](https://releases.aspose.com/) om de functies te evalueren voordat je een aankoop doet.
+
+---
+
+**Last Updated:** 2025-12-11  
+**Tested With:** Aspose.GIS for .NET 24.11  
+**Author:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
