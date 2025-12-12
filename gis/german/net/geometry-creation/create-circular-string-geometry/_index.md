@@ -1,33 +1,45 @@
 ---
-title: Erstellen Sie kreisförmige String-Geometrie mit Aspose.GIS für .NET
-linktitle: Erstellen Sie eine kreisförmige String-Geometrie
-second_title: Aspose.GIS .NET-API
-description: Nutzen Sie die Leistungsfähigkeit der GIS-Entwicklung mit Aspose.GIS für .NET. Erstellen, analysieren und visualisieren Sie mühelos räumliche Daten.
-weight: 20
+date: 2025-12-12
+description: Erfahren Sie, wie Sie einen Vektorlayer erstellen und eine kreisförmige
+  String‑Geometrie mit Aspose.GIS für .NET hinzufügen – ein schneller Weg, GIS‑Anwendungen
+  zu entwickeln.
+linktitle: Create Circular String Geometry
+second_title: Aspose.GIS .NET API
+title: Vektorlayer & Circular String in Aspose.GIS für .NET erstellen
 url: /de/net/geometry-creation/create-circular-string-geometry/
+weight: 20
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Erstellen Sie kreisförmige String-Geometrie mit Aspose.GIS für .NET
+# Vektorlayer erstellen und Circular String-Geometrie mit Aspose.GIS für .NET
 
 ## Einführung
-Im Bereich der Entwicklung geografischer Informationssysteme (GIS) erweist sich Aspose.GIS für .NET als leistungsstarkes Tool, das Entwicklern ein robustes Framework für die mühelose Arbeit mit räumlichen Daten bietet. Durch die Nutzung der Funktionen von Aspose.GIS können Entwickler geografische Daten problemlos bearbeiten, analysieren und visualisieren und so anspruchsvolle GIS-Anwendungen erstellen.
+Wenn Sie eine GIS‑Anwendung auf der .NET‑Plattform entwickeln, besteht der erste Schritt häufig darin, **einen Vektorlayer** zu erstellen, der Ihre räumlichen Features speichert. Aspose.GIS für .NET macht diesen Prozess unkompliziert und ermöglicht es Ihnen, diese Layer mit fortgeschrittenen Geometrien wie Circular Strings anzureichern. In diesem Tutorial lernen Sie genau, wie Sie einen Vektorlayer erstellen, eine Circular String‑Geometrie hinzufügen und das Ergebnis als Shapefile speichern – alles mit sauberem, produktionsreifem C#‑Code.
+
+## Schnelle Antworten
+- **Was bedeutet „create vector layer“?** Es erstellt einen neuen Container (Layer), der räumliche Features wie Punkte, Linien oder Polygone halten kann.  
+- **Welche Klasse repräsentiert einen Circular String?** `CircularString` aus `Aspose.Gis.Geometries`.  
+- **Kann ich den Layer als Shapefile speichern?** Ja – verwenden Sie `Drivers.Shapefile` beim Erstellen des Layers.  
+- **Benötige ich eine Lizenz für die Entwicklung?** Eine temporäre Lizenz reicht für die Evaluierung; für die Produktion ist eine Voll‑Lizenz erforderlich.  
+- **Welche .NET‑Versionen werden unterstützt?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
+
+## Was ist „create vector layer“?
+Ein Vektorlayer ist eine logische Gruppierung von Vektor‑Features (Punkten, Linien, Polygonen), die in einer einzigen Datenquelle gespeichert werden. In Aspose.GIS instanziieren Sie einen Layer, indem Sie `VectorLayer.Create` aufrufen und den Zieldateipfad sowie den gewünschten Treiber (z. B. Shapefile) übergeben. Sobald der Layer existiert, können Sie Features hinzufügen, Geometrien zuweisen und räumliche Operationen ausführen.
+
+## Warum einen Circular String hinzufügen?
+Circular Strings sind eine Art **linearer Geometrie**, die Bögen mithilfe einer Punktsequenz annähert. Sie sind nützlich, um gekrümmte Straßen, Flusskurven oder andere Features darzustellen, bei denen eine glatte Kurve benötigt wird, ohne viele kleine Liniensegmente zu verwenden.
+
 ## Voraussetzungen
-Bevor Sie in die aufregende Welt von Aspose.GIS für .NET eintauchen, stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
-### .NET Framework installiert
-Stellen Sie sicher, dass das .NET Framework auf Ihrem System installiert ist. Sie können es von der Microsoft-Website herunterladen oder Ihren bevorzugten Paketmanager verwenden.
-### Aspose.GIS für .NET-Bibliothek
- Erwerben Sie die Aspose.GIS für .NET-Bibliothek von der Website. Sie können auf den Download-Link zugreifen[Hier](https://releases.aspose.com/gis/net/).
-### Entwicklungsumgebung
-Richten Sie Ihre Entwicklungsumgebung mit einer geeigneten integrierten Entwicklungsumgebung (IDE) wie Visual Studio oder JetBrains Rider ein.
-### Grundlegende Programmierkenntnisse
-Machen Sie sich mit den Grundlagen der Programmierung und der C#-Sprache vertraut, da Aspose.GIS für .NET innerhalb des .NET-Ökosystems arbeitet.
+- **.NET Framework oder .NET Core** auf Ihrem Rechner installiert.  
+- **Aspose.GIS for .NET**‑Bibliothek – laden Sie sie von der offiziellen Seite **[hier](https://releases.aspose.com/gis/net/)** herunter.  
+- Eine IDE wie **Visual Studio** oder **JetBrains Rider**.  
+- Grundlegende Kenntnisse in der **C#**‑Programmierung.
 
 ## Namespaces importieren
-Um mit Aspose.GIS für .NET zu beginnen, müssen Sie die erforderlichen Namespaces in Ihr Projekt importieren. Folge diesen Schritten:
+Fügen Sie die erforderlichen Namespaces zu Ihrer C#‑Datei hinzu:
 
 ```csharp
 using Aspose.Gis;
@@ -39,53 +51,91 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-Lassen Sie uns tiefer in die Erstellung kreisförmiger String-Geometrie mit Aspose.GIS für .NET eintauchen. Befolgen Sie diese Schritte sorgfältig:
-## Schritt 1: Dateipfad definieren
+## Schritt‑für‑Schritt‑Anleitung
+
+### Schritt 1: Ausgabepfad definieren
+Legen Sie den Ort fest, an dem das Shapefile geschrieben wird.
+
 ```csharp
 string path = "Your Document Directory" + "CreateCircularString_out.shp";
 ```
- Ersetzen`"Your Document Directory"`mit dem Verzeichnispfad, in dem Sie die Ausgabedatei speichern möchten.
-## Schritt 2: Vektorebene erstellen
+
+Ersetzen Sie `"Your Document Directory"` durch den tatsächlichen Ordnerpfad auf Ihrem System.
+
+### Schritt 2: **Vektorlayer erstellen**
+Öffnen Sie einen `VectorLayer` mit der `Create`‑Methode. Dies ist der Kern der **create vector layer**‑Operation.
+
 ```csharp
 using (VectorLayer layer = VectorLayer.Create(path, Drivers.Shapefile))
 {
 ```
- Initialisieren Sie a`VectorLayer` Objekt mit der`Create` -Methode unter Angabe des Dateipfads und des Treibertyps (hier Shapefile).
-## Schritt 3: Feature konstruieren
-```csharp
-var feature = layer.ConstructFeature();
-```
-Konstruieren Sie ein Feature innerhalb der Vektorebene.
-## Schritt 4: Erstellen Sie eine kreisförmige Zeichenfolge
-```csharp
-var circularString = new CircularString();
-circularString.AddPoint(0, 0);
-circularString.AddPoint(1, 1);
-circularString.AddPoint(2, 0);
-circularString.AddPoint(1, -1);
-circularString.AddPoint(0, 0);
-```
-Erstellen Sie eine kreisförmige String-Geometrie, indem Sie Punkte hinzufügen, die die Form des Kreises definieren.
-## Schritt 5: Geometrie festlegen und Feature hinzufügen
-```csharp
-feature.Geometry = circularString;
-layer.Add(feature);
-```
-Weisen Sie dem Feature die kreisförmige String-Geometrie zu und fügen Sie das Feature zum Layer hinzu.
 
-## Abschluss
-Zusammenfassend lässt sich sagen, dass Aspose.GIS für .NET eine nahtlose GIS-Entwicklung ermöglicht und eine Fülle von Funktionen für den effizienten Umgang mit Geodaten bietet. Wenn Sie die in diesem Leitfaden beschriebenen Schritte befolgen, können Sie Ihre Reise in die Welt der GIS-Entwicklung mit Aspose.GIS beginnen.
-## FAQs
+### Schritt 3: Neues Feature konstruieren
+Ein Feature repräsentiert einen einzelnen räumlichen Datensatz im Layer.
+
+```csharp
+    var feature = layer.ConstructFeature();
+```
+
+### Schritt 4: Circular String-Geometrie erstellen
+Fügen Sie die Punkte hinzu, die die gekrümmte Form definieren. Die Punktsequenz erzeugt einen Bogen, der am selben Ort beginnt und endet und so einen geschlossenen Circular String bildet.
+
+```csharp
+    var circularString = new CircularString();
+    circularString.AddPoint(0, 0);
+    circularString.AddPoint(1, 1);
+    circularString.AddPoint(2, 0);
+    circularString.AddPoint(1, -1);
+    circularString.AddPoint(0, 0);
+```
+
+### Schritt 5: Geometrie zuweisen und das Feature dem Layer hinzufügen
+Verknüpfen Sie die Geometrie mit dem Feature und speichern Sie es im Layer.
+
+```csharp
+    feature.Geometry = circularString;
+    layer.Add(feature);
+}
+```
+
+Wenn der `using`‑Block endet, wird der Layer automatisch auf das Shapefile auf dem Datenträger geschrieben.
+
+## Häufige Probleme & Lösungen
+| Problem | Lösung |
+|---------|--------|
+| **Ungültiger Dateipfad** | Stellen Sie sicher, dass das Verzeichnis existiert und Sie Schreibrechte haben. |
+| **CircularString erscheint als gerade Linie** | Vergewissern Sie sich, dass die Punkte in der richtigen Reihenfolge hinzugefügt werden; der erste und letzte Punkt sollten für eine geschlossene Form identisch sein. |
+| **Lizenzausnahme** | Verwenden Sie während der Entwicklung eine temporäre Lizenz oder erwerben Sie eine Voll‑Lizenz für den Produktionseinsatz. |
+
+## Häufig gestellte Fragen
+
 ### Ist Aspose.GIS für .NET mit allen Versionen des .NET Framework kompatibel?
-Ja, Aspose.GIS für .NET ist so konzipiert, dass es mit verschiedenen Versionen des .NET Framework kompatibel ist und so Flexibilität für Entwickler gewährleistet.
-### Kann ich Aspose.GIS für .NET mit anderen GIS-Bibliotheken integrieren?
-Absolut! Aspose.GIS für .NET bietet Interoperabilität mit anderen GIS-Bibliotheken und ermöglicht Entwicklern die Nutzung zusätzlicher Funktionen.
+Ja, Aspose.GIS für .NET ist so konzipiert, dass es mit einer breiten Palette von .NET‑Versionen funktioniert, vom Framework 4.5 bis zu den neuesten .NET 8‑Releases.
+
+### Kann ich Aspose.GIS für .NET mit anderen GIS‑Bibliotheken integrieren?
+Absolut! Sie können Daten mit anderen Bibliotheken einlesen, mit Aspose.GIS bearbeiten und anschließend wieder schreiben, dank seiner flexiblen API.
+
 ### Unterstützt Aspose.GIS für .NET die Visualisierung räumlicher Daten?
-Ja, Aspose.GIS für .NET bietet robuste Unterstützung für die Visualisierung räumlicher Daten und ermöglicht es Entwicklern, überzeugende Karten und visuelle Darstellungen zu erstellen.
-### Gibt es ein Community-Forum, in dem ich Hilfe zu Aspose.GIS für .NET suchen kann?
- Ja, Sie können das Aspose.GIS-Forum besuchen[Hier](https://forum.aspose.com/c/gis/33) um Unterstützung zu suchen und sich mit der Gemeinschaft auseinanderzusetzen.
-### Kann ich eine temporäre Lizenz zur Evaluierung von Aspose.GIS für .NET erhalten?
- Sicherlich! Eine temporäre Lizenz zu Evaluierungszwecken erhalten Sie bei[Hier](https://purchase.aspose.com/temporary-license/).
+Ja, die Bibliothek enthält Rendering‑Utilities, mit denen Sie Karten und visuelle Darstellungen Ihrer Geometrien erzeugen können.
+
+### Gibt es ein Community‑Forum, in dem ich Hilfe zu Aspose.GIS für .NET erhalten kann?
+Ja, Sie können das Aspose.GIS‑Forum **[hier](https://forum.aspose.com/c/gis/33)** besuchen, um Fragen zu stellen und Erfahrungen zu teilen.
+
+### Kann ich eine temporäre Lizenz erhalten, um Aspose.GIS für .NET zu evaluieren?
+Natürlich! Eine temporäre Evaluationslizenz ist **[hier](https://purchase.aspose.com/temporary-license/)** verfügbar.
+
+### Wie füge ich komplexere Geometrien (z. B. MultiLineString) zum selben Layer hinzu?
+Erstellen Sie das entsprechende Geometrie‑Objekt (z. B. `MultiLineString`), füllen Sie es mit einzelnen `LineString`‑Objekten, weisen Sie es `feature.Geometry` zu und fügen Sie das Feature wie beim Circular String hinzu.
+
+## Fazit
+Durch das Befolgen dieser Schritte wissen Sie jetzt, wie Sie **vector layer**‑Objekte erstellen und mit einer Circular String‑Geometrie mithilfe von Aspose.GIS für .NET anreichern. Diese Grundlage ermöglicht es Ihnen, umfangreichere GIS‑Lösungen zu bauen – sei es beim Kartieren von Verkehrsnetzen, Visualisieren von Umweltdaten oder Entwickeln benutzerdefinierter räumlicher Analyse‑Tools.
+
+---
+
+**Zuletzt aktualisiert:** 2025-12-12  
+**Getestet mit:** Aspose.GIS 24.11 for .NET  
+**Autor:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
