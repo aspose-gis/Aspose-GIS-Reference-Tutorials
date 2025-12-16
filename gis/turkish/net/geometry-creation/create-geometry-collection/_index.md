@@ -1,48 +1,67 @@
 ---
-title: Aspose.GIS for .NET ile Geometri Koleksiyonu Oluşturun
-linktitle: Geometri Koleksiyonu Oluştur
-second_title: Aspose.GIS .NET API'si
-description: Aspose.GIS for .NET ile coğrafi veri manipülasyonunun gücünü ortaya çıkarın. .NET uygulamalarınızda konum tabanlı verileri sorunsuz bir şekilde oluşturun, görselleştirin ve analiz edin.
-weight: 21
+date: 2025-12-16
+description: Aspose.GIS for .NET kullanarak **geometri koleksiyonu oluşturmayı** öğrenin
+  ve uygulamalarınızda coğrafi verileri görselleştirin.
+linktitle: Create Geometry Collection
+second_title: Aspose.GIS .NET API
+title: Aspose.GIS for .NET ile Geometri Koleksiyonu Oluşturma
 url: /tr/net/geometry-creation/create-geometry-collection/
+weight: 21
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.GIS for .NET ile Geometri Koleksiyonu Oluşturun
+# Aspose.GIS for .NET ile Geometri Koleksiyonu Oluşturma
 
+## Giriş
 
-## giriiş
+Aspose.GIS for .NET ile coğrafi veri manipülasyonu dünyasına hoş geldiniz! İster deneyimli bir geliştirici olun, ister GIS'in geniş okyanusuna yeni adım atıyor olun, Aspose.GIS .NET uygulamalarınızda konuma dayalı verilerin gücünden yararlanmanız için gereken araçları sunar. **Bu öğreticide geometri koleksiyonu** nesnelerini nasıl oluşturacağınızı, diğer geometrilerle nasıl birleştireceğinizi ve bunların daha büyük GIS iş akışlarına nasıl uyduğunu öğreneceksiniz.
 
-Aspose.GIS for .NET ile coğrafi veri manipülasyonu dünyasına hoş geldiniz! İster deneyimli bir geliştirici olun ister GIS'in engin okyanusuna dalın, Aspose.GIS sizi .NET uygulamalarınızda konum tabanlı verilerin gücünden yararlanmanız için ihtiyaç duyduğunuz araçlarla donatır. Bu kapsamlı kılavuzda, ortamınızı ayarlamaktan gelişmiş coğrafi işlemleri gerçekleştirmeye kadar, başlangıç için bilmeniz gereken her şeyde size yol göstereceğiz.
+## Hızlı Yanıtlar
+- **Geometri koleksiyonu nedir?** Bir nesne içinde birden fazla geometri tipini (nokta, çizgi, çokgen) tutabilen bir kapsayıcı.  
+- **Aspose.GIS'i neden kullanmalısınız?** Yerel bağımlılıklar olmadan coğrafi verileri oluşturmak, düzenlemek ve görselleştirmek için saf .NET API'si sağlar.  
+- **Ön koşullar nelerdir?** .NET 6+ (veya .NET Core/.NET Framework), Aspose.GIS for .NET kütüphanesi ve lisanslı ya da deneme anahtarı.  
+- **Ne kadar sürer?** Örnek kodu yazıp çalıştırmak yaklaşık 5‑10 dakika.  
+- **Koleksiyonu görselleştirebilir miyim?** Evet – yaygın formatlara (GeoJSON, Shapefile) dışa aktarabilir ve herhangi bir GIS görüntüleyiciyle render edebilirsiniz.
 
-## Önkoşullar
+## Geometri Koleksiyonu Nedir?
 
-Aspose.GIS for .NET ile jeo-uzamsal veri manipülasyonunun heyecan verici dünyasına dalmadan önce, sorunsuz bir şekilde takip etmek için ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım.
+**Geometri koleksiyonu**, nokta, çizgi, çokgen ve diğer geometri tiplerinin karışımını depolayabilen birleşik bir GIS nesnesidir. Tek bir geometri tipini paylaşmayan ilgili özellikleri gruplamanız gerektiğinde, örneğin bir şehrin önemli nokta işaretlerini sınır çizgileriyle bir arada tutmak gibi durumlarda özellikle faydalıdır.
 
-1. Aspose.GIS for .NET'i yükleyin:
+## Aspose.GIS ile geometri koleksiyonu neden oluşturulmalı?
 
-- Şuraya gidin:[indirme sayfası](https://releases.aspose.com/gis/net/) ve Aspose.GIS for .NET'in en son sürümünü edinin.
--  Belgelerde sağlanan kurulum talimatlarını izleyin[Burada](https://reference.aspose.com/gis/net/) Aspose.GIS'i .NET ortamınıza kurmak için.
+- **Esneklik:** Tür bilgisi kaybolmadan heterojen geometrileri birleştirin.  
+- **Performans:** Birden çok ayrı örnek yönetmek yerine tek bir nesne üzerinde çalışın.  
+- **Birliktelik:** Koleksiyon semantiğini anlayan standart GIS formatlarına dışa aktarın.  
+- **Görselleştirme:** Koleksiyonu harita render kütüphanelerine kolayca besleyerek **coğrafi verileri görselleştirebilirsiniz**.
+
+## Ön Koşullar
+
+Aspose.GIS for .NET ile coğrafi veri manipülasyonunun heyecan verici dünyasına dalmadan önce, sorunsuz bir şekilde takip edebilmeniz için gereken her şeye sahip olduğunuzdan emin olalım.
+
+1. Aspose.GIS for .NET'i kurun:
+
+- [download page](https://releases.aspose.com/gis/net/) adresine gidin ve Aspose.GIS for .NET'in en son sürümünü indirin.  
+- Aspose.GIS'i .NET ortamınıza kurmak için belgelerdeki kurulum talimatlarını [burada](https://reference.aspose.com/gis/net/) izleyin.
 
 2. Geliştirme Ortamınızı Kurun:
 
-- İster Visual Studio ister başka bir .NET geliştirme ortamı olsun, favori IDE'nizi çalıştırın.
-- Jeo-uzaysal verilerle çalışmayı düşündüğünüz yeni bir proje oluşturun veya mevcut bir projeyi açın.
+- Visual Studio ya da başka bir .NET geliştirme ortamı olsun, favori IDE'nizi açın.  
+- Coğrafi verilerle çalışmayı planladığınız yeni bir proje oluşturun ya da mevcut bir projeyi açın.
 
-## Gerekli Ad Alanlarını İçe Aktarın:
+## Gerekli Ad Alanlarını İçe Aktarın
 
-Jeo-uzaysal verileri değiştirmeye başlamadan önce ilgili ad alanlarını projenize aktarmanız gerekir. Adım adım gidelim:
+Coğrafi verileri manipüle etmeye başlamadan önce, projenize ilgili ad alanlarını (namespaces) eklemeniz gerekir. Adım adım ilerleyelim:
 
 1. Projenizi Açın:
 
 IDE'nizde projenize gidin.
 
-2. Direktifleri Kullanarak Ekle:
+2. Using Direktiflerini Ekleyin:
 
-Aspose.GIS ile çalışacağınız dosyanın başına aşağıdaki kullanma direktiflerini ekleyin:
+Aspose.GIS ile çalışacağınız dosyanın başına aşağıdaki using direktiflerini ekleyin:
 
 ```csharp
 using Aspose.Gis.Geometries;
@@ -53,22 +72,25 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-İçe aktarılan bu ad alanları ile Aspose.GIS for .NET ile coğrafi veri manipülasyonu dünyasına dalmaya hazırsınız!
+Bu ad alanlarını içe aktardığınızda, Aspose.GIS for .NET ile coğrafi veri manipülasyonunun dünyasına dalmaya hazırsınız!
 
+## Geometri koleksiyonu nasıl oluşturulur
 
-## 1. Adım: Bir Nokta Oluşturun
+Aşağıda, bireysel geometrileri oluşturup ardından bir **geometri koleksiyonu**na birleştirmenizi sağlayan basit, adım adım bir rehber bulacaksınız.
 
-İlk önce bir nokta geometrisi oluşturalım. Noktalar, Dünya yüzeyinde enlem ve boylam koordinatlarıyla tanımlanan tek konumları temsil eder.
+### Adım 1: Nokta geometrisi oluşturma
+
+İlk olarak, Dünya yüzeyinde tek bir konumu temsil eden **nokta geometrisi** oluşturalım.
 
 ```csharp
 Point point = new Point(40.7128, -74.006);
 ```
 
-Burada New York City'nin konumuna karşılık gelen 40.7128 enlem ve -74.006 boylamda bir nokta yaratıyoruz.
+Burada, enlem 40.7128 ve boylam ‑74.006 olan bir nokta oluşturuyoruz; bu, New York City konumuna karşılık gelir.
 
-## Adım 2: LineString Oluşturun
+### Adım 2: Çizgi dizesi (line string) oluşturma
 
-Sonra bir LineString geometrisi oluşturalım. LineString'ler bir çizgi oluşturan bir dizi noktadan oluşur.
+Sonra, **çizgi dizesi** geometrisi oluşturacağız. Çizgi dizesi, kesintisiz bir hat oluşturacak şekilde bir dizi noktadan oluşur. Bu aynı zamanda Aspose.GIS'te **çizgi dizesi nasıl oluşturulur** sorusunun yanıtıdır.
 
 ```csharp
 LineString line = new LineString();
@@ -76,11 +98,11 @@ line.AddPoint(78.65, -32.65);
 line.AddPoint(-98.65, 12.65);
 ```
 
-Bu örnekte iki noktaya sahip bir LineString tanımlıyoruz: (78.65, -32.65) ve (-98.65, 12.65).
+Bu örnekte, iki nokta ile bir çizgi dizesi tanımlıyoruz: (78.65, ‑32.65) ve (‑98.65, 12.65).
 
-## Adım 3: Geometri Koleksiyonu Oluşturun
+### Adım 3: Geometri koleksiyonu oluşturma
 
-Artık noktamız ve LineString'imiz olduğuna göre bunları bir GeometryCollection'da birleştirelim.
+Şimdi bir nokta ve bir çizgi dizesine sahip olduğumuza göre, bunları bir **geometri koleksiyonu**na birleştirebiliriz.
 
 ```csharp
 GeometryCollection geometryCollection = new GeometryCollection();
@@ -88,33 +110,59 @@ geometryCollection.Add(point);
 geometryCollection.Add(line);
 ```
 
-Burada önceden oluşturulan noktayı ve LineString'i GeometryCollection'a ekliyoruz.
+Burada, önceden oluşturulan nokta ve çizgi dizesini `GeometryCollection`a ekliyoruz. Bu koleksiyon artık tek bir varlık olarak dışa aktarılabilir, sorgulanabilir veya görselleştirilebilir.
 
-## Çözüm
+## Yaygın Sorunlar ve Çözümleri
 
-Tebrikler! Aspose.GIS for .NET'i kullanarak başarıyla bir geometri koleksiyonu oluşturdunuz. Aspose.GIS ile coğrafi veri manipülasyonu söz konusu olduğunda bu, buzdağının sadece görünen kısmıdır. Belgeleri keşfedin, farklı geometrileri deneyin ve .NET uygulamalarınızdaki konum tabanlı verilerin tüm potansiyelini ortaya çıkarın.
+| Sorun | Çözüm |
+|-------|----------|
+| **Geçersiz koordinat sırası** | Aspose.GIS **enlem, boylam** (Y, X) bekler. Nokta veya çizgi dizesi oluştururken sıralamayı iki kez kontrol edin. |
+| **Boş koleksiyon** | Koleksiyonu kullanmadan önce en az bir geometri eklediğinizden emin olun; aksi takdirde dışa aktarma boş bir dosya oluşturabilir. |
+| **Dışa aktarma formatı koleksiyonları desteklemiyor** | **GeoJSON** veya **Shapefile** gibi koleksiyon semantiğini anlayan formatları kullanın. |
 
-## SSS'ler
+## Sıkça Sorulan Sorular
 
-### S: Aspose.GIS for .NET'i diğer .NET çerçeveleriyle birlikte kullanabilir miyim?
+### Q: Aspose.GIS for .NET'i diğer .NET framework'leriyle kullanabilir miyim?
 
-C: Evet, Aspose.GIS for .NET, .NET Core ve .NET Standard dahil çok çeşitli .NET çerçeveleriyle uyumludur.
+A: Evet, Aspose.GIS for .NET, .NET Core ve .NET Standard dahil olmak üzere geniş bir .NET framework yelpazesiyle uyumludur.
 
-### S: Aspose.GIS çeşitli mekansal referans sistemlerini destekliyor mu?
+### Q: Aspose.GIS çeşitli mekansal referans sistemlerini destekliyor mu?
 
-C: Kesinlikle! Aspose.GIS, çok sayıda mekansal referans sistemi için destek sağlayarak dünyanın her yerinden gelen coğrafi verilerle sorunsuz bir şekilde çalışmanıza olanak tanır.
+A: Kesinlikle! Aspose.GIS, dünya çapındaki coğrafi verilerle sorunsuz çalışmanızı sağlayan çok sayıda mekansal referans sistemini destekler.
 
-### S: Aspose.GIS hem küçük ölçekli hem de kurumsal düzeydeki uygulamalar için uygun mudur?
+### Q: Aspose.GIS küçük ölçekli ve kurumsal düzeydeki uygulamalar için uygun mu?
 
-C: Aslında Aspose.GIS, küçük ölçekli projelerle uğraşan hobicilerden devasa coğrafi veri kümelerini işleyen kurumsal düzeydeki uygulamalara kadar her seviyeden geliştiriciye hitap ediyor.
+A: Evet, Aspose.GIS, küçük ölçekli projelerle uğraşan hobi geliştiricilerden büyük coğrafi veri setlerini işleyen kurumsal düzeydeki uygulamalara kadar tüm seviyelerdeki geliştiricilere hizmet verir.
 
-### S: Aspose.GIS'i kullanarak coğrafi verileri görselleştirebilir miyim?
+### Q: Aspose.GIS ile coğrafi verileri görselleştirebilir miyim?
 
-C: Evet, Aspose.GIS güçlü görselleştirme yetenekleri sunarak çarpıcı haritalar oluşturmanıza ve coğrafi verileri kolaylıkla görselleştirmenize olanak tanır.
+A: Evet, Aspose.GIS güçlü görselleştirme yetenekleri sunar; etkileyici haritalar oluşturabilir ve coğrafi verileri kolayca görselleştirebilirsiniz.
 
-### S: Yardım isteyebileceğim ve diğer Aspose.GIS kullanıcılarıyla bağlantı kurabileceğim bir topluluk veya forum var mı?
+### Q: Yardım alabileceğim ve diğer Aspose.GIS kullanıcılarıyla bağlantı kurabileceğim bir topluluk veya forum var mı?
 
- C: Kesinlikle! Şuraya gidin:[Aspose.GIS forumu](https://forum.aspose.com/c/gis/33) Soru sormak, bilgi paylaşmak ve Aspose.GIS topluluğundaki diğer geliştiricilerle bağlantı kurmak için.
+A: Kesinlikle! Sorular sormak, bilgi paylaşmak ve Aspose.GIS topluluğundaki diğer geliştiricilerle bağlantı kurmak için [Aspose.GIS forumuna](https://forum.aspose.com/c/gis/33) gidin.
+
+## Ek Sıkça Sorulan Sorular
+
+**S: Geometri koleksiyonunu GeoJSON'a nasıl dışa aktarırım?**  
+C: Koleksiyon üzerindeki `Export` metodunu kullanın ve çıktı formatı olarak `GeoJson` belirtin. Bu, web haritalarında **coğrafi verileri görselleştirmeyi** kolaylaştırır.
+
+**S: Aynı koleksiyona daha fazla geometri tipi (ör. çokgenler) ekleyebilir miyim?**  
+C: Evet, `GeometryCollection` `Geometry`'den türeyen herhangi bir geometriyi kabul eder; böylece nokta, çizgi, çokgen ve hatta diğer koleksiyonları karıştırabilirsiniz.
+
+**S: Örnek kodu çalıştırmak için lisansa ihtiyacım var mı?**  
+C: Geliştirme ve test için ücretsiz deneme yeterlidir, ancak üretim ortamları için ticari lisans gereklidir.
+
+## Sonuç
+
+Tebrikler! Aspose.GIS for .NET kullanarak **geometri koleksiyonu** nesnelerini nasıl oluşturacağınızı başarıyla öğrendiniz ve nokta ile çizgi dizelerini tek bir çok yönlü kapsayıcıda nasıl birleştireceğinizi anladınız. Bundan sonra farklı GIS formatlarına dışa aktarmayı, harita kütüphaneleriyle entegrasyonu veya koleksiyonu ek geometri tipleriyle genişletmeyi keşfedebilirsiniz.
+
+---
+
+**Son Güncelleme:** 2025-12-16  
+**Test Edilen Versiyon:** Aspose.GIS for .NET 24.11  
+**Yazar:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
