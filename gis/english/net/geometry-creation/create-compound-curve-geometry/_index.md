@@ -1,5 +1,5 @@
 ---
-title: How to Add Curves: Compound Curve Geometry with Aspose.GIS
+title: How to Add Curves - Compound Curve Geometry with Aspose.GIS
 linktitle: How to Add Curves – Compound Curve Geometry
 second_title: Aspose.GIS .NET API
 description: Learn how to add curves and create compound curve geometries in .NET using Aspose.GIS for seamless geospatial data processing.
