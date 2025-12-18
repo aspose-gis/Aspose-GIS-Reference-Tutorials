@@ -1,92 +1,141 @@
 ---
-title: Xử lý hình học
-linktitle: Xử lý hình học
-second_title: API Aspose.GIS .NET
-description: Nắm vững Aspose.GIS cho .NET với các hướng dẫn toàn diện của chúng tôi. Tìm hiểu cách xử lý hình học chính xác, phân tích không gian và thao tác dữ liệu để phát triển GIS tối ưu.
-weight: 23
+date: 2025-12-18
+description: Thành thạo Aspose.GIS cho .NET và học cách chuyển đổi hình học sang WKT,
+  giảm độ chính xác của hình học, và chuyển đổi đa giác thành đường để phát triển
+  GIS tối ưu.
+linktitle: Geometry Processing
+second_title: Aspose.GIS .NET API
+title: Chuyển đổi hình học sang WKT với Aspose.GIS cho .NET
 url: /vi/net/geometry-processing/
+weight: 23
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Xử lý hình học
+# Chuyển Đổi Hình Học Sang WKT với Aspose.GIS cho .NET
 
 ## Giới thiệu
 
-Khai phá toàn bộ tiềm năng của Aspose.GIS cho .NET bằng các hướng dẫn chuyên sâu của chúng tôi về xử lý hình học. Cho dù bạn đang lặp lại hình học, điểm hay quản lý độ chính xác, hướng dẫn từng bước của chúng tôi sẽ đảm bảo tích hợp liền mạch vào các ứng dụng .NET của bạn.
+Khám phá toàn bộ tiềm năng của Aspose.GIS cho .NET với các hướng dẫn chi tiết về xử lý hình học. Trong hướng dẫn này, bạn sẽ khám phá **cách chuyển đổi hình học sang WKT**, một bước cơ bản cho các quy trình GIS tương thích, và khám phá các nhiệm vụ liên quan như giảm độ chính xác của hình học và chuyển đổi đa giác thành đường thẳng. Dù bạn đang xây dựng dịch vụ bản đồ, thực hiện phân tích không gian, hay chuẩn bị dữ liệu cho các API bên ngoài, những hướng dẫn từng bước này sẽ giúp bạn tích hợp các khả năng địa không gian mạnh mẽ vào các ứng dụng .NET của mình.
 
-## Lặp lại hình học trong bộ sưu tập
- Khám phá Aspose.GIS để biết khả năng của .NET trong việc thao tác dữ liệu không gian địa lý trong các ứng dụng .NET của bạn. Hướng dẫn của chúng tôi hướng dẫn bạn cách lặp lại hình học một cách hiệu quả, nâng cao kỹ năng xử lý dữ liệu không gian của bạn.[Đọc thêm](./iterate-over-geometries-in-collection/)
+## Trả Lời Nhanh
+- **“convert geometry to WKT” có nghĩa là gì?** Nó chuyển đổi một đối tượng hình học thành biểu diễn Well‑Known Text, một định dạng chuỗi có thể đọc được bởi con người.  
+- **Tại sao lại dùng WKT?** WKT được hỗ trợ rộng rãi bởi các công cụ GIS, cơ sở dữ liệu và dịch vụ web, giúp việc trao đổi dữ liệu trở nên đơn giản.  
+- **Lớp Aspose.GIS nào xử lý việc chuyển đổi?** Lớp `Geometry` cung cấp phương thức `ToWkt()` và các phương thức liên quan.  
+- **Tôi có cần giấy phép cho việc sử dụng trong môi trường sản xuất không?** Có, cần giấy phép thương mại của Aspose.GIS cho các triển khai không phải thử nghiệm.  
+- **Quá trình chuyển đổi có an toàn với đa luồng không?** Các phương thức chuyển đổi không có trạng thái và an toàn khi gọi từ nhiều luồng.
 
-## Lặp lại các điểm trong hình học
- Khám phá sức mạnh của Aspose.GIS dành cho .NET trong việc tích hợp liền mạch các chức năng không gian địa lý vào các ứng dụng .NET của bạn. Tìm hiểu cách lặp lại các điểm trong hình học để phân tích không gian hiệu quả.[Đọc thêm](./iterate-over-points-in-geometry/)
+## Convert geometry to WKT là gì?
+Chuyển đổi hình học sang WKT có nghĩa là tuần tự hoá một hình dạng hình học—điểm, đường, đa giác, v.v.—vào một chuỗi văn bản thuần tuân theo đặc tả Well‑Known Text. Định dạng này cho phép lưu trữ, ghi log và giao tiếp dễ dàng với các cơ sở dữ liệu như PostGIS hoặc các dịch vụ như GeoServer.
 
-## Giới hạn hình học đọc chính xác với Aspose.GIS cho .NET
-Quản lý hiệu quả độ chính xác khi đọc hình học bằng Aspose.GIS cho .NET. Hãy làm theo hướng dẫn của chúng tôi để xử lý dữ liệu tối ưu, đảm bảo độ chính xác khi trình bày dữ liệu không gian.[Đọc thêm](./limit-precision-reading-geometries/)
+## Tại sao sử dụng Aspose.GIS cho nhiệm vụ này?
+Aspose.GIS cung cấp một API sạch sẽ, hướng đối tượng, trừu tượng hoá các chi tiết phức tạp của đặc tả WKT. Bạn nhận được:
+- **Xử lý độ chính xác chính xác** – kiểm soát số chữ số thập phân trong quá trình chuyển đổi.  
+- **Hỗ trợ đa định dạng** – di chuyển liền mạch giữa WKB, WKT và các định dạng GIS khác.  
+- **Các phương thức tối ưu hiệu năng** – phù hợp cho các ứng dụng máy chủ có khối lượng lớn.
 
-Khám phá các hướng dẫn của chúng tôi về tuyến tính hóa hình học, giảm độ chính xác, chuyển đổi đa giác thành đường thẳng và thiết lập dung sai tuyến tính hóa. Làm chủ việc chỉ định các biến thể WKB và WKT một cách dễ dàng để tăng cường kiểm soát độ chính xác và biểu diễn dữ liệu không gian.
+## Lặp Qua Các Hình Học Trong Bộ Sưu Tập
+Khám phá khả năng của Aspose.GIS cho .NET trong việc thao tác dữ liệu không gian trong các ứng dụng .NET của bạn. Hướng dẫn của chúng tôi chỉ cho bạn cách lặp qua các hình học một cách hiệu quả, nâng cao kỹ năng xử lý dữ liệu không gian của bạn. [Read more](./iterate-over-geometries-in-collection/)
 
-## Tuyến tính hóa một hình học
- Làm việc hiệu quả với dữ liệu không gian địa lý, thực hiện phân tích không gian và thao tác địa lý trong các ứng dụng .NET của bạn bằng Aspose.GIS. Hướng dẫn của chúng tôi hướng dẫn bạn tuyến tính hóa hình học để có kết quả tối ưu.[Đọc thêm](./linearize-geometry/)
+## Lặp Qua Các Điểm Trong Hình Học
+Khám phá sức mạnh của Aspose.GIS cho .NET trong việc tích hợp các chức năng không gian vào các ứng dụng .NET của bạn. Học cách lặp qua các điểm trong hình học để thực hiện phân tích không gian hiệu quả. [Read more](./iterate-over-points-in-geometry/)
 
-## Giảm độ chính xác của hình học bằng cách sử dụng Aspose.GIS trong .NET
- Nâng cao hiệu suất và tối ưu hóa bộ nhớ trong các ứng dụng .NET GIS bằng cách tìm hiểu cách giảm độ chính xác hình học bằng Aspose.GIS. Nâng cao hiệu quả trong việc xử lý dữ liệu không gian.[Đọc thêm](./reduce-geometry-precision/)
+## Giới Hạn Độ Chính Xác Khi Đọc Hình Học với Aspose.GIS cho .NET
+Quản lý độ chính xác một cách hiệu quả khi đọc các hình học bằng Aspose.GIS cho .NET. Thực hiện theo hướng dẫn của chúng tôi để xử lý dữ liệu tối ưu, đảm bảo độ chính xác trong việc biểu diễn dữ liệu không gian. [Read more](./limit-precision-reading-geometries/)
 
-## Chuyển đổi đa giác thành đường thẳng với Aspose.GIS cho .NET
-Nâng cấp kỹ năng xử lý dữ liệu GIS của bạn bằng cách thay thế đa giác bằng các đường bằng Aspose.GIS cho .NET. Khám phá hướng dẫn của chúng tôi để chuyển đổi liền mạch và xử lý dữ liệu không gian nâng cao.[Đọc thêm](./replace-polygons-with-lines/)
+Khám phá các hướng dẫn của chúng tôi về việc tuyến hoá hình học, giảm độ chính xác, chuyển đổi đa giác thành đường thẳng và thiết lập ngưỡng tuyến hoá. Nắm vững cách chỉ định các biến thể WKB và WKT một cách dễ dàng để kiểm soát tốt hơn việc biểu diễn và độ chính xác của dữ liệu không gian.
 
-## Đặt dung sai tuyến tính hóa bằng Aspose.GIS cho .NET
- Nắm vững Aspose.GIS cho .NET với hướng dẫn từng bước của chúng tôi. Tìm hiểu cách xử lý dữ liệu không gian địa lý một cách dễ dàng bằng cách đặt dung sai tuyến tính hóa để phát triển GIS chính xác trong .NET.[Đọc thêm](./set-linearization-tolerance/)
+## Tuyến Hoá Một Hình Học
+Làm việc hiệu quả với dữ liệu không gian, thực hiện phân tích không gian và thao tác địa lý trong các ứng dụng .NET của bạn bằng Aspose.GIS. Hướng dẫn của chúng tôi chỉ cho bạn cách tuyến hoá một hình học để đạt kết quả tối ưu. [Read more](./linearize-geometry/)
 
-## Chỉ định Biến thể WKB khi dịch trong Aspose.GIS cho .NET
- Dễ dàng chỉ định các biến thể WKB trong Aspose.GIS cho .NET với hướng dẫn toàn diện của chúng tôi. Nâng cao kỹ năng phát triển GIS của bạn và giành quyền kiểm soát độ chính xác và định dạng biểu diễn dữ liệu không gian.[Đọc thêm](./specify-wkb-variant-on-translation/)
+## Giảm Độ Chính Xác Hình Học bằng Aspose.GIS trong .NET
+Cải thiện hiệu năng và tối ưu bộ nhớ trong các ứng dụng GIS .NET bằng cách học cách giảm độ chính xác của hình học sử dụng Aspose.GIS. Nâng cao hiệu quả trong việc xử lý dữ liệu không gian. [Read more](./reduce-geometry-precision/)
 
-## Chỉ định Biến thể WKT trên bản dịch bằng Aspose.GIS
- Đạt được kiến thức chuyên môn trong việc chỉ định các biến thể WKT trong Aspose.GIS cho .NET. Kiểm soát định dạng và độ chính xác biểu diễn dữ liệu không gian một cách hiệu quả bằng hướng dẫn từng bước của chúng tôi.[Đọc thêm](./specify-wkt-variant-on-translation/)
+## Chuyển Đổi Đa Giác Thành Đường Thẳng với Aspose.GIS cho .NET
+Nâng cao kỹ năng thao tác dữ liệu GIS của bạn bằng cách thay thế đa giác bằng đường thẳng sử dụng Aspose.GIS cho .NET. Khám phá hướng dẫn của chúng tôi để thực hiện chuyển đổi liền mạch và cải thiện việc xử lý dữ liệu không gian. [Read more](./replace-polygons-with-lines/)
 
-## Dịch hình học từ WKB bằng Aspose.GIS cho .NET
-Làm việc với thông tin địa lý trong .NET một cách dễ dàng. Dịch hình học từ định dạng WKB với hướng dẫn từng bước của chúng tôi bằng Aspose.GIS để xử lý dữ liệu không gian liền mạch.[Đọc thêm](./translate-geometry-from-wkb/)
+## Thiết Lập Ngưỡng Tuyến Hoá bằng Aspose.GIS cho .NET
+Thành thạo Aspose.GIS cho .NET với hướng dẫn từng bước của chúng tôi. Học cách xử lý dữ liệu không gian một cách dễ dàng bằng cách thiết lập ngưỡng tuyến hoá cho việc phát triển GIS chính xác trong .NET. [Read more](./set-linearization-tolerance/)
 
-## Dịch hình học từ WKT bằng Aspose.GIS trong .NET
- Dịch hình học một cách hiệu quả từ Văn bản nổi tiếng bằng Aspose.GIS cho .NET. Khám phá hướng dẫn của chúng tôi để tích hợp liền mạch vào quá trình phát triển GIS của bạn.[Đọc thêm](./translate-geometry-from-wkt/)
+## Chỉ Định Biến Thể WKB Khi Dịch Trong Aspose.GIS cho .NET
+Dễ dàng chỉ định các biến thể WKB trong Aspose.GIS cho .NET với hướng dẫn toàn diện của chúng tôi. Nâng cao kỹ năng phát triển GIS và kiểm soát định dạng và độ chính xác của việc biểu diễn dữ liệu không gian. [Read more](./specify-wkb-variant-on-translation/)
 
-## Dịch hình học sang định dạng WKB bằng Aspose.GIS cho .NET
- Tìm hiểu cách dịch hình học sang định dạng Nhị phân nổi tiếng (WKB) trong các ứng dụng .NET bằng Aspose.GIS. Đảm bảo xử lý dữ liệu không gian liền mạch để phát triển GIS tối ưu.[Đọc thêm](./translate-geometry-to-wkb/)
+## Chỉ Định Biến Thể WKT Khi Dịch Sử Dụng Aspose.GIS
+Nắm vững cách chỉ định các biến thể WKT trong Aspose.GIS cho .NET. Kiểm soát định dạng và độ chính xác của việc biểu diễn dữ liệu không gian một cách hiệu quả với hướng dẫn từng bước của chúng tôi. [Read more](./specify-wkt-variant-on-translation/)
 
-## Chuyển đổi hình học sang định dạng WKT bằng Aspose.GIS cho .NET
- Nâng cao kỹ năng phát triển GIS của bạn bằng cách học cách dịch hình học không gian sang định dạng Văn bản nổi tiếng (WKT) bằng Aspose.GIS cho .NET. Khám phá hướng dẫn của chúng tôi để thể hiện dữ liệu không gian nâng cao.[Đọc thêm](./translate-geometry-to-wkt/)
+## Dịch Hình Học Từ WKB bằng Aspose.GIS cho .NET
+Làm việc với thông tin địa lý trong .NET một cách dễ dàng. Dịch hình học từ định dạng WKB với hướng dẫn từng bước của chúng tôi sử dụng Aspose.GIS để xử lý dữ liệu không gian liền mạch. [Read more](./translate-geometry-from-wkb/)
 
-## Hướng dẫn xử lý hình học
-### [Lặp lại hình học trong bộ sưu tập](./iterate-over-geometries-in-collection/)
-Tìm hiểu cách sử dụng Aspose.GIS cho .NET để thao tác dữ liệu không gian địa lý một cách liền mạch trong các ứng dụng .NET của bạn.
-### [Lặp lại các điểm trong hình học](./iterate-over-points-in-geometry/)
-Khám phá Aspose.GIS cho .NET, một bộ công cụ mạnh mẽ để tích hợp liền mạch các chức năng không gian địa lý vào các ứng dụng .NET của bạn.
-### [Giới hạn hình học đọc chính xác với Aspose.GIS cho .NET](./limit-precision-reading-geometries/)
-Tìm hiểu cách quản lý hiệu quả độ chính xác khi đọc hình học bằng Aspose.GIS cho .NET. Hãy làm theo hướng dẫn từng bước của chúng tôi để xử lý dữ liệu tối ưu.
-### [Hướng dẫn viết giới hạn chính xác bằng Aspose.GIS cho .NET](./limit-precision-writing-geometries/)
-Khám phá hướng dẫn từng bước về việc hạn chế độ chính xác khi viết hình học bằng Aspose.GIS cho .NET. Tăng cường quản lý dữ liệu không gian một cách dễ dàng.
-### [Tuyến tính hóa một hình học](./linearize-geometry/)
-Tìm hiểu cách sử dụng Aspose.GIS cho .NET để làm việc hiệu quả với dữ liệu không gian địa lý, thực hiện phân tích không gian và thao tác địa lý trong các ứng dụng .NET của bạn.
-### [Giảm độ chính xác của hình học bằng cách sử dụng Aspose.GIS trong .NET](./reduce-geometry-precision/)
-Tìm hiểu cách giảm độ chính xác hình học một cách hiệu quả trong các ứng dụng .NET GIS bằng Aspose.GIS để cải thiện hiệu suất và tối ưu hóa bộ nhớ.
-### [Chuyển đổi đa giác thành đường thẳng với Aspose.GIS cho .NET](./replace-polygons-with-lines/)
-Tìm hiểu cách thay thế đa giác bằng các đường bằng Aspose.GIS cho .NET. Nâng cao kỹ năng thao tác dữ liệu GIS của bạn một cách dễ dàng.
-### [Đặt dung sai tuyến tính hóa bằng Aspose.GIS cho .NET](./set-linearization-tolerance/)
-Làm chủ Aspose.GIS cho .NET để xử lý dữ liệu không gian địa lý một cách dễ dàng. Hãy làm theo hướng dẫn từng bước này và khám phá toàn bộ tiềm năng phát triển GIS trong .NET.
-### [Chỉ định Biến thể WKB khi dịch trong Aspose.GIS cho .NET](./specify-wkb-variant-on-translation/)
-Tìm hiểu cách chỉ định các biến thể WKB trong Aspose.GIS cho .NET một cách dễ dàng với hướng dẫn toàn diện này. Tăng cường kỹ năng phát triển GIS của bạn.
-### [Chỉ định Biến thể WKT trên bản dịch bằng Aspose.GIS](./specify-wkt-variant-on-translation/)
-Tìm hiểu cách chỉ định các biến thể WKT trong Aspose.GIS cho .NET để kiểm soát độ chính xác và định dạng biểu diễn dữ liệu không gian một cách hiệu quả.
-### [Dịch hình học từ WKB bằng Aspose.GIS cho .NET](./translate-geometry-from-wkb/)
+## Dịch Hình Học Từ WKT bằng Aspose.GIS trong .NET
+Dịch hình học từ Well‑Known Text một cách hiệu quả bằng Aspose.GIS cho .NET. Khám phá hướng dẫn của chúng tôi để tích hợp liền mạch vào quá trình phát triển GIS của bạn. [Read more](./translate-geometry-from-wkt/)
+
+## Dịch Hình Học Sang Định Dạng WKB với Aspose.GIS cho .NET
+Tìm hiểu cách dịch hình học sang định dạng Well‑Known Binary (WKB) trong các ứng dụng .NET sử dụng Aspose.GIS. Đảm bảo xử lý dữ liệu không gian liền mạch cho việc phát triển GIS tối ưu. [Read more](./translate-geometry-to-wkb/)
+
+## Chuyển Đổi Hình Học Sang Định Dạng WKT với Aspose.GIS cho .NET
+Nâng cao kỹ năng phát triển GIS của bạn bằng cách học cách dịch các hình học không gian sang định dạng Well‑Known Text (WKT) sử dụng Aspose.GIS cho .NET. Khám phá hướng dẫn của chúng tôi để cải thiện việc biểu diễn dữ liệu không gian. [Read more](./translate-geometry-to-wkt/)
+
+## Cách Chuyển Đổi Hình Học Sang WKT
+Quá trình chuyển đổi rất đơn giản:
+1. Tải hoặc tạo một đối tượng `Geometry` bằng Aspose.GIS.  
+2. Gọi phương thức `ToWkt()` để lấy chuỗi WKT.  
+3. (Tùy chọn) Điều chỉnh độ chính xác bằng cách đặt thuộc tính `CoordinatePrecision` trước khi chuyển đổi.  
+
+Cách tiếp cận này hoạt động cho bất kỳ loại hình học nào—điểm, đường, đa giác và đa hình học.
+
+## Các Hướng Dẫn Xử Lý Hình Học
+### [Iterate Over Geometries in Collection](./iterate-over-geometries-in-collection/)
+Tìm hiểu cách sử dụng Aspose.GIS cho .NET để thao tác dữ liệu không gian một cách liền mạch trong các ứng dụng .NET của bạn.
+### [Iterate Over Points in Geometry](./iterate-over-points-in-geometry/)
+Khám phá Aspose.GIS cho .NET, một bộ công cụ mạnh mẽ để tích hợp liền mạch các chức năng không gian vào các ứng dụng .NET của bạn.
+### [Limit Precision Reading Geometries with Aspose.GIS for .NET](./limit-precision-reading-geometries/)
+Tìm hiểu cách quản lý độ chính xác một cách hiệu quả khi đọc các hình học bằng Aspose.GIS cho .NET. Thực hiện theo hướng dẫn từng bước của chúng tôi để xử lý dữ liệu tối ưu.
+### [Precision Limit Writing Guide using Aspose.GIS for .NET](./limit-precision-writing-geometries/)
+Khám phá hướng dẫn từng bước về việc giới hạn độ chính xác khi ghi các hình học bằng Aspose.GIS cho .NET. Nâng cao quản lý dữ liệu không gian một cách dễ dàng.
+### [Linearize a Geometry](./linearize-geometry/)
+Tìm hiểu cách sử dụng Aspose.GIS cho .NET để làm việc hiệu quả với dữ liệu không gian, thực hiện phân tích không gian và thao tác địa lý trong các ứng dụng .NET của bạn.
+### [Reduce Geometry Precision using Aspose.GIS in .NET](./reduce-geometry-precision/)
+Tìm hiểu cách giảm độ chính xác của hình học một cách hiệu quả trong các ứng dụng GIS .NET bằng Aspose.GIS để cải thiện hiệu năng và tối ưu bộ nhớ.
+### [Transform Polygons to Lines with Aspose.GIS for .NET](./replace-polygons-with-lines/)
+Tìm hiểu cách thay thế đa giác bằng đường thẳng sử dụng Aspose.GIS cho .NET. Nâng cao kỹ năng thao tác dữ liệu GIS của bạn một cách dễ dàng.
+### [Set Linearization Tolerance using Aspose.GIS for .NET](./set-linearization-tolerance/)
+Thành thạo Aspose.GIS cho .NET để xử lý dữ liệu không gian một cách dễ dàng. Thực hiện theo hướng dẫn từng bước này và khai thác toàn bộ tiềm năng của việc phát triển GIS trong .NET.
+### [Specify WKB Variant on Translation in Aspose.GIS for .NET](./specify-wkb-variant-on-translation/)
+Tìm hiểu cách chỉ định các biến thể WKB trong Aspose.GIS cho .NET một cách dễ dàng với hướng dẫn toàn diện này. Nâng cao kỹ năng phát triển GIS của bạn.
+### [Specify WKT Variant on Translation using Aspose.GIS](./specify-wkt-variant-on-translation/)
+Tìm hiểu cách chỉ định các biến thể WKT trong Aspose.GIS cho .NET để kiểm soát định dạng và độ chính xác của việc biểu diễn dữ liệu không gian một cách hiệu quả.
+### [Translate Geometry from WKB using Aspose.GIS for .NET](./translate-geometry-from-wkb/)
 Tìm hiểu cách làm việc với thông tin địa lý trong .NET bằng Aspose.GIS cho .NET. Dịch hình học từ định dạng WKB một cách dễ dàng với hướng dẫn từng bước.
-### [Dịch hình học từ WKT bằng Aspose.GIS trong .NET](./translate-geometry-from-wkt/)
-Tìm hiểu cách dịch hình học từ Văn bản nổi tiếng bằng Aspose.GIS cho .NET. Hướng dẫn từng bước để tích hợp liền mạch.
-### [Dịch hình học sang định dạng WKB bằng Aspose.GIS cho .NET](./translate-geometry-to-wkb/)
-Tìm hiểu cách dịch hình học sang định dạng Nhị phân nổi tiếng (WKB) trong các ứng dụng .NET bằng Aspose.GIS để xử lý dữ liệu không gian liền mạch.
-### [Chuyển đổi hình học sang định dạng WKT bằng Aspose.GIS cho .NET](./translate-geometry-to-wkt/)
-Tìm hiểu cách dịch hình học không gian sang định dạng Văn bản nổi tiếng (WKT) bằng Aspose.GIS cho .NET. Tăng cường kỹ năng phát triển GIS của bạn.
+### [Translate Geometry from WKT using Aspose.GIS in .NET](./translate-geometry-from-wkt/)
+Tìm hiểu cách dịch hình học từ Well‑Known Text bằng Aspose.GIS cho .NET. Một hướng dẫn từng bước để tích hợp liền mạch.
+### [Translating Geometry to WKB Format with Aspose.GIS for .NET](./translate-geometry-to-wkb/)
+Tìm hiểu cách dịch hình học sang định dạng Well‑Known Binary (WKB) trong các ứng dụng .NET sử dụng Aspose.GIS để xử lý dữ liệu không gian liền mạch.
+### [Convert Geometry to WKT Format with Aspose.GIS for .NET](./translate-geometry-to-wkt/)
+Tìm hiểu cách dịch các hình học không gian sang định dạng Well‑Known Text (WKT) bằng Aspose.GIS cho .NET. Nâng cao kỹ năng phát triển GIS của bạn.
+
+## Câu Hỏi Thường Gặp
+
+**Q: Tôi có thể chuyển đổi một bộ sưu tập lớn các hình học sang WKT một cách hiệu quả không?**  
+A: Có. Tải các hình học theo lô, tùy chọn đặt `CoordinatePrecision` để giảm độ dài chuỗi, và sử dụng `Parallel.ForEach` để chuyển đổi đa luồng.
+
+**Q: Việc chuyển đổi sang WKT có ảnh hưởng đến đối tượng hình học gốc không?**  
+A: Không. Phương thức `ToWkt()` trả về một biểu diễn chuỗi mà không thay đổi đối tượng `Geometry` nguồn.
+
+**Q: Làm sao tôi kiểm soát số chữ số thập phân trong đầu ra WKT?**  
+A: Điều chỉnh `Geometry.PrecisionModel` hoặc định dạng kết quả bằng `String.Format` sau khi chuyển đổi.
+
+**Q: WKT có hỗ trợ các hình học 3D (giá trị Z và M) không?**  
+A: Aspose.GIS bao gồm các tọa độ Z và M trong đầu ra WKT khi hình học chứa chúng, theo đặc tả EWKT.
+
+**Q: Các phiên bản .NET nào tương thích với các hướng dẫn này?**  
+A: Các ví dụ hoạt động với .NET Framework 4.6.1+, .NET Core 3.1+, và .NET 6/7.
+
+**Cập Nhật Cuối Cùng:** 2025-12-18  
+**Kiểm Tra Với:** Aspose.GIS for .NET (latest stable release)  
+**Tác Giả:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}

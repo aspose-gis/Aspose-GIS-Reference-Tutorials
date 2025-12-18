@@ -1,92 +1,143 @@
 ---
-title: Geometri İşleme
-linktitle: Geometri İşleme
-second_title: Aspose.GIS .NET API'si
-description: Kapsamlı eğitimlerimizle Aspose.GIS for .NET'te ustalaşın. Optimum CBS gelişimi için hassas geometri işlemeyi, mekansal analizi ve veri manipülasyonunu öğrenin.
-weight: 23
+date: 2025-12-18
+description: Aspose.GIS for .NET'i uzmanlıkla öğrenin ve geometrileri WKT'ye dönüştürmeyi,
+  geometrinin hassasiyetini azaltmayı ve optimal GIS geliştirme için çokgenleri çizgilere
+  dönüştürmeyi öğrenin.
+linktitle: Geometry Processing
+second_title: Aspose.GIS .NET API
+title: Aspose.GIS for .NET ile Geometrileri WKT'ye Dönüştür
 url: /tr/net/geometry-processing/
+weight: 23
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Geometri İşleme
+# Aspose.GIS for .NET ile Geometrinin WKT'ye Dönüştürülmesi
 
-## giriiş
+## Giriş
 
-Geometri işlemeyle ilgili derinlemesine eğitimlerimizle Aspose.GIS for .NET'in tüm potansiyelini ortaya çıkarın. İster geometriler, noktalar üzerinde yineleme yapıyor olun ister hassasiyeti yönetiyor olun, adım adım kılavuzlarımız .NET uygulamalarınızla kusursuz entegrasyon sağlar.
+Aspose.GIS for .NET'in tam potansiyelini, geometri işleme konusundaki kapsamlı eğitimlerimizle ortaya çıkarın. Bu rehberde **geometrinin WKT'ye nasıl dönüştürüleceğini** keşfedecek, geometrinin hassasiyetini azaltma ve çokgenleri çizgilere dönüştürme gibi ilgili görevleri inceleyeceksiniz. İster bir haritalama servisi oluşturuyor, ister mekansal analiz yapıyor ya da dış API'ler için veri hazırlıyor olun, bu adım‑adım talimatlar .NET uygulamalarınıza güçlü coğrafi uzamsal yetenekleri entegre etmenize yardımcı olacaktır.
 
-## Koleksiyondaki Geometrileri Yineleyin
- Aspose.GIS for .NET'in, .NET uygulamalarınızdaki coğrafi verileri işleme konusundaki yeteneklerini keşfedin. Eğitmenimiz, geometrileri verimli bir şekilde yineleme konusunda size rehberlik ederek mekansal veri işleme becerilerinizi geliştirir.[Devamını oku](./iterate-over-geometries-in-collection/)
+## Hızlı Yanıtlar
+- **“Geometrinin WKT'ye dönüştürülmesi” ne anlama gelir?** Bir geometri nesnesini, insan tarafından okunabilir bir dize formatı olan Well‑Known Text (WKT) temsiline dönüştürür.  
+- **Neden WKT kullanılır?** WKT, GIS araçları, veritabanları ve web servisleri tarafından yaygın olarak desteklenir, veri alışverişini basitleştirir.  
+- **Dönüştürmeyi hangi Aspose.GIS sınıfı yönetir?** `Geometry` sınıfı `ToWkt()` ve ilgili yöntemleri sağlar.  
+- **Üretim kullanımında lisansa ihtiyacım var mı?** Evet, deneme dışı dağıtımlar için ticari bir Aspose.GIS lisansı gereklidir.  
+- **Dönüştürme işlemi çok iş parçacıklı (thread‑safe) mi?** Dönüştürme yöntemleri durum tutmaz ve birden çok iş parçacığından güvenle çağrılabilir.
 
-## Geometride Tekrarlanan Noktalar
- Aspose.GIS for .NET'in, jeo-uzaysal işlevleri .NET uygulamalarınıza kusursuz bir şekilde entegre etme gücünü keşfedin. Etkili mekansal analiz için geometrideki noktalar üzerinde nasıl yineleme yapılacağını öğrenin.[Devamını oku](./iterate-over-points-in-geometry/)
+## Geometrinin WKT'ye Dönüştürülmesi nedir?
+Geometrinin WKT'ye dönüştürülmesi, bir geometrik şekli—nokta, çizgi, çokgen vb.—Well‑Known Text (WKT) spesifikasyonuna uygun düz metin bir dizeye serileştirmek anlamına gelir. Bu format, PostGIS gibi veritabanları veya GeoServer gibi hizmetlerle kolay depolama, günlük kaydı ve iletişim sağlar.
 
-## Aspose.GIS for .NET ile Hassas Okuma Geometrilerini Sınırlayın
-Aspose.GIS for .NET'i kullanarak geometrileri okurken hassasiyeti verimli bir şekilde yönetin. Optimum veri işleme ve mekansal veri temsilinde doğruluk sağlamak için kılavuzumuzu izleyin.[Devamını oku](./limit-precision-reading-geometries/)
+## Bu görev için neden Aspose.GIS kullanılmalı?
+Aspose.GIS, WKT spesifikasyonunun karmaşıklıklarını soyutlayan temiz, nesne‑yönelimli bir API sunar. Şunları elde edersiniz:
+- **Doğru hassasiyet yönetimi** – dönüştürme sırasında ondalık basamakları kontrol eder.
+- **Çapraz‑format desteği** – WKB, WKT ve diğer GIS formatları arasında sorunsuz geçiş sağlar.
+- **Performans‑optimize yöntemler** – yüksek verimli sunucu uygulamaları için uygundur.
 
-Geometriyi doğrusallaştırma, hassasiyeti azaltma, çokgenleri çizgilere dönüştürme ve doğrusallaştırma toleransını ayarlama hakkındaki eğitimlerimizi keşfedin. Uzamsal veri temsili ve hassasiyeti üzerinde gelişmiş kontrol için WKB ve WKT çeşitlerini zahmetsizce belirleme konusunda uzmanlaşın.
+## Koleksiyondaki Geometriler Üzerinde Döngü
+Aspose.GIS for .NET'in .NET uygulamalarınız içinde coğrafi uzamsal verileri manipüle etme yeteneklerini keşfedin. Eğitimimiz, geometriler üzerinde verimli bir şekilde döngü yapmayı ve mekansal veri işleme becerilerinizi artırmayı size rehberlik eder. [Daha fazla oku](./iterate-over-geometries-in-collection/)
 
-## Geometriyi Doğrusallaştırma
- Aspose.GIS'i kullanarak .NET uygulamalarınızda jeo-uzaysal verilerle verimli bir şekilde çalışın, uzamsal analiz gerçekleştirin ve coğrafi değişiklikleri yapın. Eğitimimiz, en iyi sonuçları elde etmek için geometriyi doğrusallaştırma konusunda size rehberlik eder.[Devamını oku](./linearize-geometry/)
+## Geometri İçindeki Noktalar Üzerinde Döngü
+Aspose.GIS for .NET'in coğrafi uzamsal işlevselliği .NET uygulamalarınıza sorunsuz bir şekilde entegre etme gücünü keşfedin. Mekansal analiz için geometri içindeki noktalarda döngü yapmayı öğrenin. [Daha fazla oku](./iterate-over-points-in-geometry/)
 
-## .NET'te Aspose.GIS kullanarak Geometri Hassasiyetini Azaltın
- Aspose.GIS kullanarak geometri hassasiyetinin nasıl azaltılacağını öğrenerek .NET GIS uygulamalarında performansı ve bellek optimizasyonunu geliştirin. Uzamsal veri işlemede verimliliği artırın.[Devamını oku](./reduce-geometry-precision/)
+## Aspose.GIS for .NET ile Geometrileri Okurken Hassasiyeti Sınırlandırma
+Aspose.GIS for .NET kullanarak geometrileri okurken hassasiyeti verimli bir şekilde yönetin. Optimum veri işleme için rehberimizi izleyin, mekansal veri temsiliyetinde doğruluğu sağlayın. [Daha fazla oku](./limit-precision-reading-geometries/)
 
-## Aspose.GIS for .NET ile Çokgenleri Çizgilere Dönüştürün
-Aspose.GIS for .NET'i kullanarak çokgenleri çizgilerle değiştirerek GIS veri işleme becerilerinizi yükseltin. Sorunsuz bir geçiş ve gelişmiş mekansal veri işleme için eğitimimizi keşfedin.[Devamını oku](./replace-polygons-with-lines/)
+Explore our tutorials on linearizing geometry, reducing precision, transforming polygons to lines, and setting linearization tolerance. Master specifying WKB and WKT variants effortlessly for enhanced control over spatial data representation and precision.
 
-## Aspose.GIS for .NET'i kullanarak Doğrusallaştırma Toleransını Ayarlayın
- Adım adım eğitimimizle Aspose.GIS for .NET'te ustalaşın. .NET'te hassas GIS geliştirme için doğrusallaştırma toleransını ayarlayarak coğrafi uzamsal verileri zahmetsizce nasıl yöneteceğinizi öğrenin.[Devamını oku](./set-linearization-tolerance/)
+## Bir Geometriyi Lineerleştirme
+Aspose.GIS kullanarak .NET uygulamalarınız içinde coğrafi uzamsal verilerle verimli bir şekilde çalışın, mekansal analiz yapın ve coğrafi verileri manipüle edin. Eğitimimiz, optimal sonuçlar için bir geometrinin lineerleştirilmesini size rehberlik eder. [Daha fazla oku](./linearize-geometry/)
 
-## Aspose.GIS for .NET'te Çeviride WKB Varyantını Belirleyin
- Kapsamlı kılavuzumuzla Aspose.GIS for .NET'te WKB çeşitlerini zahmetsizce belirtin. CBS geliştirme becerilerinizi geliştirin ve mekansal veri temsil formatı ve hassasiyeti üzerinde kontrol sahibi olun.[Devamını oku](./specify-wkb-variant-on-translation/)
+## Aspose.GIS ile .NET'te Geometri Hassasiyetini Azaltma
+Aspose.GIS kullanarak .NET GIS uygulamalarında performansı ve bellek kullanımını artırmak için geometri hassasiyetini nasıl azaltacağınızı öğrenin. Mekansal veri işleme verimliliğini geliştirin. [Daha fazla oku](./reduce-geometry-precision/)
 
-## Aspose.GIS kullanarak Çeviride WKT Varyantını Belirleyin
- Aspose.GIS for .NET'te WKT değişkenlerini belirleme konusunda uzmanlık kazanın. Adım adım eğitimimizle mekansal veri temsil formatını ve hassasiyetini etkili bir şekilde kontrol edin.[Devamını oku](./specify-wkt-variant-on-translation/)
+## Aspose.GIS for .NET ile Çokgenleri Çizgilere Dönüştürme
+Aspose.GIS for .NET kullanarak çokgenleri çizgilere dönüştürerek GIS veri manipülasyon becerilerinizi geliştirin. Sorunsuz bir geçiş ve geliştirilmiş mekansal veri işleme için eğitimimizi keşfedin. [Daha fazla oku](./replace-polygons-with-lines/)
 
-## Aspose.GIS for .NET kullanarak Geometriyi WKB'den çevirin
-.NET'te coğrafi bilgilerle zahmetsizce çalışın. Kesintisiz konumsal veri işleme için Aspose.GIS'i kullanarak adım adım kılavuzumuzla geometriyi WKB formatından çevirin.[Devamını oku](./translate-geometry-from-wkb/)
+## Aspose.GIS for .NET ile Lineerleştirme Toleransını Ayarlama
+Adım adım eğitimimizle Aspose.GIS for .NET'i ustalaşın. .NET içinde hassas GIS geliştirme için lineerleştirme toleransını ayarlayarak coğrafi uzamsal verileri sorunsuz bir şekilde yönetmeyi öğrenin. [Daha fazla oku](./set-linearization-tolerance/)
 
-## .NET'te Aspose.GIS kullanarak Geometriyi WKT'den çevirin
- Aspose.GIS for .NET'i kullanarak Geometriyi Bilinen Metinlerden verimli bir şekilde çevirin. GIS geliştirmenize kusursuz entegrasyon için eğitimimizi keşfedin.[Devamını oku](./translate-geometry-from-wkt/)
+## Aspose.GIS for .NET'te Çeviride WKB Varyantını Belirtme
+Kapsamlı rehberimizle Aspose.GIS for .NET'te WKB varyantlarını sorunsuz bir şekilde belirtin. GIS geliştirme becerilerinizi artırın ve mekansal veri temsili formatı ve hassasiyeti üzerinde kontrol sağlayın. [Daha fazla oku](./specify-wkb-variant-on-translation/)
 
-## Aspose.GIS for .NET ile Geometriyi WKB Formatına Çevirme
- Aspose.GIS kullanarak .NET uygulamalarında geometriyi Tanınmış İkili (WKB) formatına nasıl çevireceğinizi öğrenin. Optimum CBS gelişimi için kesintisiz mekansal veri işlemeyi sağlayın.[Devamını oku](./translate-geometry-to-wkb/)
+## Aspose.GIS Kullanarak Çeviride WKT Varyantını Belirtme
+Aspose.GIS for .NET'te WKT varyantlarını belirtme konusunda uzmanlaşın. Adım adım eğitimimizle mekansal veri temsili formatı ve hassasiyeti etkili bir şekilde kontrol edin. [Daha fazla oku](./specify-wkt-variant-on-translation/)
 
-## Aspose.GIS for .NET ile Geometriyi WKT Formatına Dönüştürün
- Aspose.GIS for .NET kullanarak mekansal geometrileri Tanınmış Metin (WKT) formatına nasıl çevireceğinizi öğrenerek GIS geliştirme becerilerinizi geliştirin. Gelişmiş mekansal veri temsili için eğitimimizi keşfedin.[Devamını oku](./translate-geometry-to-wkt/)
+## Aspose.GIS for .NET ile WKB'den Geometri Çevirme
+.NET içinde coğrafi bilgiyle sorunsuz çalışın. Aspose.GIS kullanarak WKB formatından geometri çevirme konusunda adım adım rehberimizi izleyin. [Daha fazla oku](./translate-geometry-from-wkb/)
 
-## Geometri İşleme Dersleri
-### [Koleksiyondaki Geometrileri Yineleyin](./iterate-over-geometries-in-collection/)
-.NET uygulamalarınızda coğrafi verileri sorunsuz bir şekilde yönetmek için Aspose.GIS for .NET'i nasıl kullanacağınızı öğrenin.
-### [Geometride Tekrarlanan Noktalar](./iterate-over-points-in-geometry/)
-Jeo-uzaysal işlevlerin .NET uygulamalarınıza kusursuz entegrasyonu için güçlü bir araç seti olan Aspose.GIS for .NET'i keşfedin.
-### [Aspose.GIS for .NET ile Hassas Okuma Geometrilerini Sınırlayın](./limit-precision-reading-geometries/)
-Aspose.GIS for .NET kullanarak geometrileri okurken hassasiyeti nasıl etkili bir şekilde yöneteceğinizi öğrenin. Optimum veri işleme için adım adım kılavuzumuzu izleyin.
-### [Aspose.GIS for .NET kullanarak Hassas Limit Yazma Kılavuzu](./limit-precision-writing-geometries/)
-Aspose.GIS for .NET kullanarak geometri yazma hassasiyetini sınırlamaya yönelik adım adım kılavuzu keşfedin. Uzamsal veri yönetimini zahmetsizce geliştirin.
-### [Geometriyi Doğrusallaştırma](./linearize-geometry/)
-Jeo-uzamsal verilerle verimli bir şekilde çalışmak, uzamsal analiz gerçekleştirmek ve .NET uygulamalarınızdaki coğrafi değişiklikleri yapmak için Aspose.GIS for .NET'i nasıl kullanacağınızı öğrenin.
-### [.NET'te Aspose.GIS kullanarak Geometri Hassasiyetini Azaltın](./reduce-geometry-precision/)
-Daha iyi performans ve bellek optimizasyonu için Aspose.GIS kullanarak .NET GIS uygulamalarında geometri hassasiyetini verimli bir şekilde nasıl azaltacağınızı öğrenin.
-### [Aspose.GIS for .NET ile Çokgenleri Çizgilere Dönüştürün](./replace-polygons-with-lines/)
-Aspose.GIS for .NET kullanarak çokgenleri çizgilerle nasıl değiştireceğinizi öğrenin. CBS veri işleme becerilerinizi zahmetsizce geliştirin.
-### [Aspose.GIS for .NET'i kullanarak Doğrusallaştırma Toleransını Ayarlayın](./set-linearization-tolerance/)
-Aspose.GIS for .NET konusunda uzmanlaşarak coğrafi verileri zahmetsizce yönetin. Bu adım adım öğreticiyi takip edin ve .NET'te GIS geliştirmenin tüm potansiyelini ortaya çıkarın.
-### [Aspose.GIS for .NET'te Çeviride WKB Varyantını Belirleyin](./specify-wkb-variant-on-translation/)
-Bu kapsamlı kılavuzla Aspose.GIS for .NET'te WKB değişkenlerini zahmetsizce nasıl belirleyeceğinizi öğrenin. CBS geliştirme becerilerinizi geliştirin.
-### [Aspose.GIS kullanarak Çeviride WKT Varyantını Belirleyin](./specify-wkt-variant-on-translation/)
-Uzamsal veri temsil formatını ve hassasiyetini etkili bir şekilde kontrol etmek için Aspose.GIS for .NET'te WKT değişkenlerini nasıl belirleyeceğinizi öğrenin.
-### [Aspose.GIS for .NET kullanarak Geometriyi WKB'den çevirin](./translate-geometry-from-wkb/)
-Aspose.GIS for .NET kullanarak .NET'te coğrafi bilgilerle nasıl çalışılacağını öğrenin. Adım adım rehberlikle geometriyi WKB formatından zahmetsizce çevirin.
-### [.NET'te Aspose.GIS kullanarak Geometriyi WKT'den çevirin](./translate-geometry-from-wkt/)
-Aspose.GIS for .NET kullanarak Bilinen Metinlerden geometriyi nasıl çevireceğinizi öğrenin. Sorunsuz entegrasyon için adım adım eğitim.
-### [Aspose.GIS for .NET ile Geometriyi WKB Formatına Çevirme](./translate-geometry-to-wkb/)
-Kesintisiz mekansal veri işleme için Aspose.GIS kullanarak geometriyi .NET uygulamalarında Tanınmış İkili (WKB) formatına nasıl çevireceğinizi öğrenin.
-### [Aspose.GIS for .NET ile Geometriyi WKT Formatına Dönüştürün](./translate-geometry-to-wkt/)
-Aspose.GIS for .NET kullanarak uzaysal geometrileri Tanınmış Metin (WKT) formatına nasıl çevireceğinizi öğrenin. CBS geliştirme becerilerinizi geliştirin.
+## Aspose.GIS ile .NET'te WKT'den Geometri Çevirme
+Aspose.GIS for .NET kullanarak Well‑Known Text (WKT) formatından geometriyi verimli bir şekilde çevirin. GIS geliştirme sürecinize sorunsuz entegrasyon için eğitimimizi keşfedin. [Daha fazla oku](./translate-geometry-from-wkt/)
+
+## Aspose.GIS for .NET ile Geometrinin WKB Formatına Çevrilmesi
+Aspose.GIS kullanarak .NET uygulamalarında geometriyi Well‑Known Binary (WKB) formatına nasıl çevireceğinizi öğrenin. Optimal GIS geliştirme için sorunsuz mekansal veri işleme sağlayın. [Daha fazla oku](./translate-geometry-to-wkb/)
+
+## Aspose.GIS for .NET ile Geometrinin WKT Formatına Dönüştürülmesi
+Aspose.GIS for .NET kullanarak mekansal geometrileri Well‑Known Text (WKT) formatına nasıl çevirileceğini öğrenerek GIS geliştirme becerilerinizi artırın. Gelişmiş mekansal veri temsili için eğitimimizi keşfedin. [Daha fazla oku](./translate-geometry-to-wkt/)
+
+## Geometrinin WKT'ye Nasıl Dönüştürüleceği
+Dönüştürme süreci basittir:
+1. Aspose.GIS kullanarak bir `Geometry` nesnesi yükleyin veya oluşturun.  
+2. WKT dizesini elde etmek için `ToWkt()` metodunu çağırın.  
+3. (İsteğe bağlı) Dönüştürmeden önce `CoordinatePrecision` özelliğini ayarlayarak hassasiyeti düzenleyin.  
+
+Bu yaklaşım, nokta, çizgi, çokgen ve çoklu‑geometriler dahil tüm geometri tipleri için çalışır.
+
+## Geometri İşleme Eğitimleri
+### [Koleksiyondaki Geometriler Üzerinde Döngü](./iterate-over-geometries-in-collection/)
+Learn how to utilize Aspose.GIS for .NET to manipulate geospatial data seamlessly within your .NET applications.
+### [Geometri İçindeki Noktalar Üzerinde Döngü](./iterate-over-points-in-geometry/)
+Explore Aspose.GIS for .NET, a powerful toolkit for seamless integration of geospatial functionalities into your .NET applications.
+### [Aspose.GIS for .NET ile Geometrileri Okurken Hassasiyeti Sınırlandırma](./limit-precision-reading-geometries/)
+Learn how to efficiently manage precision when reading geometries using Aspose.GIS for .NET. Follow our step‑by‑step guide for optimal data handling.
+### [Aspose.GIS for .NET ile Geometrileri Yazarken Hassasiyeti Sınırlama Kılavuzu](./limit-precision-writing-geometries/)
+Explore step‑by‑step guide on limiting precision in writing geometries using Aspose.GIS for .NET. Enhance spatial data management effortlessly.
+### [Bir Geometriyi Lineerleştirme](./linearize-geometry/)
+Learn how to use Aspose.GIS for .NET to efficiently work with geospatial data, perform spatial analysis, and manipulate geographic within your .NET applications.
+### [Aspose.GIS ile .NET'te Geometri Hassasiyetini Azaltma](./reduce-geometry-precision/)
+Learn how to reduce geometry precision efficiently in .NET GIS applications using Aspose.GIS for improved performance and memory optimization.
+### [Aspose.GIS for .NET ile Çokgenleri Çizgilere Dönüştürme](./replace-polygons-with-lines/)
+Learn how to replace polygons with lines using Aspose.GIS for .NET. Enhance your GIS data manipulation skills effortlessly.
+### [Aspose.GIS for .NET ile Lineerleştirme Toleransını Ayarlama](./set-linearization-tolerance/)
+Master Aspose.GIS for .NET to handle geospatial data effortlessly. Follow this step‑by‑step tutorial and unlock the full potential of GIS development in .NET.
+### [Aspose.GIS for .NET'te Çeviride WKB Varyantını Belirtme](./specify-wkb-variant-on-translation/)
+Learn how to specify WKB variants in Aspose.GIS for .NET effortlessly with this comprehensive guide. Boost your GIS development skills.
+### [Aspose.GIS Kullanarak Çeviride WKT Varyantını Belirtme](./specify-wkt-variant-on-translation/)
+Learn how to specify WKT variants in Aspose.GIS for .NET to control spatial data representation format and precision effectively.
+### [Aspose.GIS for .NET ile WKB'den Geometri Çevirme](./translate-geometry-from-wkb/)
+Learn how to work with geographic information in .NET using Aspose.GIS for .NET. Translate geometry from WKB format effortlessly with step‑by‑step guidance.
+### [Aspose.GIS ile .NET'te WKT'den Geometri Çevirme](./translate-geometry-from-wkt/)
+Learn how to translate geometry from Well‑Known Text using Aspose.GIS for .NET. A step‑by‑step tutorial for seamless integration.
+### [Aspose.GIS for .NET ile Geometrinin WKB Formatına Çevrilmesi](./translate-geometry-to-wkb/)
+Learn how to translate geometry to Well‑Known Binary (WKB) format in .NET applications using Aspose.GIS for seamless spatial data handling.
+### [Aspose.GIS for .NET ile Geometrinin WKT Formatına Dönüştürülmesi](./translate-geometry-to-wkt/)
+Learn how to translate spatial geometries to Well‑Known Text (WKT) format using Aspose.GIS for .NET. Boost your GIS development skills.
+
+## Sıkça Sorulan Sorular
+
+**S: Büyük geometri koleksiyonlarını WKT'ye verimli bir şekilde dönüştürebilir miyim?**  
+C: Evet. Geometrileri toplu olarak yükleyin, isteğe bağlı olarak dize uzunluğunu azaltmak için `CoordinatePrecision` ayarlayın ve çok iş parçacıklı dönüşüm için `Parallel.ForEach` kullanın.
+
+**S: WKT'ye dönüştürme, orijinal geometri nesnesini etkiler mi?**  
+C: Hayır. `ToWkt()` metodu, kaynak `Geometry` örneğini değiştirmeden bir dize temsili döndürür.
+
+**S: WKT çıktısındaki ondalık basamak sayısını nasıl kontrol edebilirim?**  
+C: `Geometry.PrecisionModel`'i ayarlayın veya dönüşüm sonrası sonucu `String.Format` ile biçimlendirin.
+
+**S: WKT, 3D geometriler (Z ve M değerleri) için destekleniyor mu?**  
+C: Geometri Z ve M koordinatlarını içeriyorsa, Aspose.GIS bu koordinatları EWKT spesifikasyonuna uygun olarak WKT çıktısına ekler.
+
+**S: Bu eğitimler hangi .NET sürümleriyle uyumludur?**  
+C: Örnekler .NET Framework 4.6.1+, .NET Core 3.1+, ve .NET 6/7 ile çalışır.
+
+---
+
+**Son Güncelleme:** 2025-12-18  
+**Test Edilen:** Aspose.GIS for .NET (latest stable release)  
+**Yazar:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
