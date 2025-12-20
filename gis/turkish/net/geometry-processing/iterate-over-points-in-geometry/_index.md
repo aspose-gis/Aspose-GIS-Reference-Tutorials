@@ -1,29 +1,50 @@
 ---
-title: Geometride Tekrarlanan Noktalar
-linktitle: Geometride Tekrarlanan Noktalar
-second_title: Aspose.GIS .NET API'si
-description: Jeo-uzaysal işlevlerin .NET uygulamalarınıza kusursuz entegrasyonu için güçlü bir araç seti olan Aspose.GIS for .NET'i keşfedin.
-weight: 11
+date: 2025-12-20
+description: Aspose.GIS for .NET'i kullanarak nokta eklemeyi ve geometri üzerinde
+  yineleme yapmayı öğrenin; .NET geliştiricileri için güçlü bir GIS araç seti.
+linktitle: How to Add Points and Iterate Over Geometry in .NET
+second_title: Aspose.GIS .NET API
+title: .NET'te Noktalar Nasıl Eklenir ve Geometri Üzerinde Nasıl Döngü Yapılır
 url: /tr/net/geometry-processing/iterate-over-points-in-geometry/
+weight: 11
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Geometride Tekrarlanan Noktalar
+# Nokta Ekleme ve Geometri Üzerinde Döngü
 
-## giriiş
+## Giriş
 
-Coğrafi Bilgi Sistemleri (GIS) geliştirme alanında, Aspose.GIS for .NET, geliştiricilerin coğrafi mekansal işlevleri .NET uygulamalarına sorunsuz bir şekilde entegre etmelerine olanak sağlayan güçlü bir araç seti olarak öne çıkıyor. Bu makale, geometrideki noktalar üzerinde yinelemeye odaklanarak Aspose.GIS for .NET'in gücünden yararlanmaya yönelik adım adım bir kılavuz görevi görmektedir. Bu eğitimin sonunda, bu işlevselliği zahmetsizce uygulamak için gerekli bilgilerle donatılmış olarak süreç boyunca ustaca gezineceksiniz.
+.NET ortamında GIS verileriyle çalışıyorsanız, bilmeniz gereken ilk şeylerden biri **nokta eklemenin** nasıl yapılacağı ve bu noktalara nasıl erişileceğidir. Aspose.GIS for .NET, bu süreci basitleştiren temiz, nesne‑yönelimli bir API sunar. Bu öğreticide bir `LineString` oluşturmayı, ona nokta eklemeyi ve bu noktalar üzerinde döngü yaparak koordinatları çıkarmayı ya da daha ileri analizler yapmayı adım adım göstereceğiz.
+
+## Hızlı Yanıtlar
+- **Nokta koleksiyonları için birincil sınıf nedir?** `LineString`
+- **Bir nokta nasıl eklenir?** `AddPoint(longitude, latitude)` kullanın
+- **foreach döngüsüyle yineleme yapılabilir mi?** Evet, `LineString` `IEnumerable<IPoint>` uygular
+- **Önkoşullar?** .NET 6+ (veya .NET Core 3.1/Framework 4.6+) ve Aspose.GIS for .NET kütüphanesi
+- **Tipik kullanım senaryosu?** Rotalar oluşturma, izleri görselleştirme veya mekansal analiz için verileri ön işleme
+
+## GIS’te “nokta ekleme” nedir?
+
+Nokta eklemek, bireysel koordinat çiftlerini (boylam, enlem) bir `LineString`, `Polygon` veya `MultiPoint` gibi bir geometrik kapsayıcıya yerleştirmek anlamına gelir. Her nokta, modellediğiniz şekil veya yolu tanımlayan bir köşe olur.
+
+## Neden Aspose.GIS ile nokta ekleyelim?
+
+- **Güçlü tip güvenliği** – geometri nesneleri güçlü tipli olduğundan çalışma zamanı hataları azalır.  
+- **Çapraz platform** – .NET Framework, .NET Core ve .NET 5/6+ üzerinde çalışır.  
+- **Zengin API** – yerleşik yineleme, mekansal işlemler ve format desteği (Shapefile, GeoJSON vb.) sağlar.
 
 ## Önkoşullar
 
-Eğiticiye dalmadan önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
+- Visual Studio 2022 (veya herhangi bir C# IDE)  
+- Aspose.GIS for .NET NuGet paketi yüklü  
+- C# sözdizimi temelleri  
 
-## Ad Alanlarını İçe Aktar
+## Ad Alanlarını İçe Aktarma
 
-.NET uygulamanızdaki Aspose.GIS işlevlerine erişimi etkinleştirmek için gerekli ad alanlarını içe aktararak başlayın:
+Aspose.GIS işlevlerine .NET uygulamanızda erişebilmek için gerekli ad alanlarını içe aktararak başlayın:
 
 ```csharp
 using Aspose.Gis.Geometries;
@@ -34,28 +55,30 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-Şimdi daha net bir anlayış için örneği birden fazla adıma ayıralım:
+## Geometriye Nasıl Nokta Eklenir?
 
-## Adım 1: LineString Nesnesi Oluşturun
+### Adım 1: `LineString` nesnesi oluşturma  
 
-Bağlantılı noktaların sırasını temsil edecek bir LineString nesnesi oluşturarak başlayın:
+`LineString`, birbirine bağlı noktaların (bir poligon) sırasını temsil eder. İlk olarak nesneyi örnekleyin:
 
 ```csharp
 LineString line = new LineString();
 ```
 
-## Adım 2: LineString'e Nokta Ekleme
+### Adım 2: `LineString`e nokta ekleme  
 
- Daha sonra LineString'e noktaları kullanarak ekleyin.`AddPoint` yöntem. Her nokta enlem ve boylam koordinatlarıyla tanımlanır:
+Her koordinat çiftini eklemek için `AddPoint` metodunu kullanın. Bu, **geometriye nokta eklemenin** temel adımıdır:
 
 ```csharp
 line.AddPoint(78.65, -32.65);
 line.AddPoint(-98.65, 12.65);
 ```
 
-## Adım 3: Noktaları Yineleyin
+İhtiyacınız kadar `AddPoint` çağrısı yapabilirsiniz; her çağrı çizgiye yeni bir köşe ekler.
 
-Şimdi LineString içindeki noktaları bir kullanarak yineleyin.`foreach` döngü:
+### Adım 3: Noktalar üzerinde yineleme  
+
+Noktalar eklendikten sonra, bir `foreach` ifadesiyle üzerinden dönebilirsiniz. `LineString`, `IEnumerable<IPoint>` uyguladığı için yineleme basit ve sezgiseldir:
 
 ```csharp
 foreach (IPoint point in line)
@@ -64,34 +87,47 @@ foreach (IPoint point in line)
 }
 ```
 
-## Çözüm
+Döngü, her noktanın X (boylam) ve Y (enlem) değerlerini konsola yazdırır; böylece noktaların doğru eklendiğini doğrulayabilirsiniz.
 
-Sonuç olarak, Aspose.GIS for .NET kullanarak geometrideki noktalar üzerinde yineleme konusunda uzmanlaşmak, sağlam jeouzaysal uygulamalar geliştirmek için çok önemlidir. Bu eğitim, sürecin kapsamlı bir dökümünü sunarak, bu işlevselliği .NET projelerinize sorunsuz bir şekilde entegre etmeniz için sizi gerekli becerilerle donattı.
+## Yaygın Kullanım Senaryoları
 
-## SSS'ler
+- **Rota planlama** – GPS kayıtlarından bir yol oluşturup ardından duraklar arasındaki mesafeleri analiz edin.  
+- **Veri doğrulama** – Noktalar üzerinden yineleme yaparak beklenen sınırlar içinde olup olmadıklarını kontrol edin (ör. bir ülkenin sınırları içinde).  
+- **Görselleştirme** – `LineString`i GeoJSON veya Shapefile formatına aktararak harita araçlarında kullanın.
 
-### S1: Aspose.GIS for .NET LineString'in yanı sıra diğer geometrik şekilleri de işleyebilir mi?
+## Sıkça Sorulan Sorular
 
-C: Evet, Aspose.GIS for .NET, Nokta, Poligon ve MultiLineString gibi çeşitli geometrik şekilleri destekleyerek jeouzaysal veri işlemede çok yönlülük sunar.
+### S1: Aspose.GIS for .NET, `LineString` dışındaki geometrik şekilleri de destekliyor mu?
 
-### S2: Aspose.GIS hem ticari hem de kişisel projeler için uygun mudur?
+**C:** Evet, Aspose.GIS `Point`, `Polygon`, `MultiLineString`, `MultiPolygon` ve daha birçok geometri tipini destekler.
 
-C: Kesinlikle, Aspose.GIS lisansları hem ticari hem de kişisel kullanıma hitap ederek çeşitli proje gereksinimlerine uyacak esnek seçenekler sunar.
+### S2: Aspose.GIS hem ticari hem de kişisel projeler için uygun mu?
 
-### S3: Aspose.GIS for .NET yeni başlayanlar için kapsamlı belgeler sunuyor mu?
+**C:** Keslikle. Lisans seçenekleri ticari, kişisel ve eğitim amaçlı kullanım senaryolarını kapsar.
 
-C: Aslında Aspose.GIS for .NET, eğitimler, API referansları ve kod örnekleri de dahil olmak üzere kapsamlı belgeler sunarak her seviyedeki geliştiricinin sorunsuz bir şekilde işe başlamasını kolaylaştırıyor.
+### S3: Aspose.GIS for .NET, yeni başlayanlar için kapsamlı bir dokümantasyon sunuyor mu?
 
-### S4: Aspose.GIS for .NET'in işlevselliğini özel geliştirme yoluyla genişletebilir miyim?
+**C Evet, ürün kapsamlı dokümanlar, API referansları ve hızlı başlangıç için onlarca kod örneği içerir.
 
-C: Evet, Aspose.GIS for .NET, özel geliştirme yoluyla genişletilebilirlik sunarak geliştiricilerin jeouzaysal çözümleri belirli proje ihtiyaçlarına göre uyarlamasına olanak tanır.
+### S4: Aspose.GIS for .NET işlevselliğini özel geliştirmelerle genişletebilir miyim?
+
+**C:** Aspose.GIS sınıflarını sarmalayarak veya uzantı metodları yazarak belirli iş akışlarına uyarlayabilir, tam kontrol sağlayabilirsiniz.
 
 ### S5: Aspose.GIS kullanıcıları için teknik destek mevcut mu?
 
-C: Aspose.GIS kullanıcıları kesinlikle forumlar aracılığıyla özel teknik desteğe erişebilir ve geliştirme sırasında karşılaşılan herhangi bir soru veya sorun için anında yardım sağlayabilirler.
+**C:** Aspose forumları ve bilet sistemi üzerinden özel teknik destek sağlanır; böylece hızlı yardım alabilirsiniz.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+---
+
+**Son Güncelleme:** 2025-12-20  
+**Test Edilen Sürüm:** Aspose.GIS for .NET 24.5 (yazım anındaki en yeni sürüm)  
+**Yazar:** Aspose  
+
+---

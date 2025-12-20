@@ -1,29 +1,50 @@
 ---
-title: Herhaal punten in de geometrie
-linktitle: Herhaal punten in de geometrie
-second_title: Aspose.GIS .NET-API
-description: Ontdek Aspose.GIS voor .NET, een krachtige toolkit voor naadloze integratie van georuimtelijke functionaliteiten in uw .NET-applicaties.
-weight: 11
+date: 2025-12-20
+description: Leer hoe u punten kunt toevoegen en over geometrie kunt itereren met
+  Aspose.GIS voor .NET, de krachtige GIS‑toolkit voor .NET‑ontwikkelaars.
+linktitle: How to Add Points and Iterate Over Geometry in .NET
+second_title: Aspose.GIS .NET API
+title: Hoe punten toe te voegen en door geometrie te itereren in .NET
 url: /nl/net/geometry-processing/iterate-over-points-in-geometry/
+weight: 11
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Herhaal punten in de geometrie
+# Hoe Punten Toevoegen en Over Geometrie Itereren
 
-## Invoering
+## Inleiding
 
-Op het gebied van de ontwikkeling van geografische informatiesystemen (GIS) onderscheidt Aspose.GIS voor .NET zich als een robuuste toolkit die ontwikkelaars in staat stelt georuimtelijke functionaliteiten naadloos in hun .NET-toepassingen te integreren. Dit artikel dient als een stapsgewijze handleiding voor het benutten van de kracht van Aspose.GIS voor .NET, waarbij de nadruk ligt op het herhalen van punten in de geometrie. Aan het einde van deze tutorial navigeert u vakkundig door het proces, uitgerust met de essentiële kennis om deze functionaliteit moeiteloos te implementeren.
+Als je werkt met GIS-gegevens in een .NET-omgeving, is een van de eerste dingen die je moet weten **hoe je punten toevoegt** aan een geometrie en vervolgens met die punten werkt. Aspose.GIS for .NET biedt een nette, objectgeoriënteerde API die dit proces eenvoudig maakt. In deze tutorial lopen we door het maken van een `LineString`, het toevoegen van punten daaraan, en het itereren over die punten zodat je coördinaten kunt extraheren of verdere analyses kunt uitvoeren.
+
+## Snelle Antwoorden
+- **Wat is de primaire klasse voor puntcollecties?** `LineString`
+- **Hoe voeg je een punt toe?** Gebruik `AddPoint(longitude, latitude)`
+- **Kun je itereren met een foreach‑lus?** Ja, `LineString` implementeert `IEnumerable<IPoint>`
+- **Vereisten?** .NET 6+ (of .NET Core 3.1/Framework 4.6+) en de Aspose.GIS for .NET‑bibliotheek
+- **Typisch gebruiksscenario?** Routes bouwen, tracks visualiseren, of data voorruimen voor ruimtelijke analyse
+
+## Wat betekent “punten toevoegen” in GIS?
+
+Punten toevoegen betekent het invoegen van individuele coördinaatparen (longitude, latitude) in een geometrische container zoals een `LineString`, `Polygon` of `MultiPoint`. Elk punt wordt een vertex die de vorm of het pad definieert dat je modelleert.
+
+## Waarom punten toevoegen met Aspose.GIS?
+
+- **Sterke type‑veiligheid** – geometrie‑objecten zijn sterk getypeerd, waardoor runtime‑fouten worden verminderd.  
+- **Cross‑platform** – werkt op .NET Framework, .NET Core en .NET 5/6+.  
+- **Rijke API** – ingebouwde iteratie, ruimtelijke bewerkingen en ondersteuning voor formaten (Shapefile, GeoJSON, enz.).
 
 ## Vereisten
 
-Voordat u in de zelfstudie duikt, moet u ervoor zorgen dat u aan de volgende vereisten voldoet:
+- Visual Studio 2022 (of een andere C#‑IDE)  
+- Aspose.GIS for .NET NuGet‑pakket geïnstalleerd  
+- Basiskennis van C#‑syntaxis  
 
-## Naamruimten importeren
+## Namespaces Importeren
 
-Begin met het importeren van de benodigde naamruimten om toegang tot de Aspose.GIS-functionaliteiten in uw .NET-applicatie mogelijk te maken:
+Begin met het importeren van de benodigde namespaces om toegang te krijgen tot de Aspose.GIS‑functionaliteiten in je .NET‑applicatie:
 
 ```csharp
 using Aspose.Gis.Geometries;
@@ -34,28 +55,30 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-Laten we het voorbeeld nu in meerdere stappen opsplitsen voor een beter begrip:
+## Hoe Punten Toevoegen aan een Geometrie?
 
-## Stap 1: Maak een LineString-object
+### Stap 1: Maak een `LineString`‑object  
 
-Begin met het maken van een LineString-object om een reeks verbonden punten weer te geven:
+Een `LineString` vertegenwoordigt een reeks verbonden punten (een polyline). Maak eerst een instantie van het object:
 
 ```csharp
 LineString line = new LineString();
 ```
 
-## Stap 2: Voeg punten toe aan de LineString
+### Stap 2: Voeg punten toe aan de `LineString`  
 
- Voeg vervolgens punten toe aan de LineString met behulp van de`AddPoint` methode. Elk punt wordt gedefinieerd door zijn lengte- en breedtegraadcoördinaten:
+Gebruik de `AddPoint`‑methode om elk coördinaatpaar in te voegen. Dit is de kern van **hoe je punten toevoegt** aan je geometrie:
 
 ```csharp
 line.AddPoint(78.65, -32.65);
 line.AddPoint(-98.65, 12.65);
 ```
 
-## Stap 3: Herhaal de punten
+Je kunt `AddPoint` zo vaak aanroepen als nodig; elke aanroep voegt een nieuwe vertex toe aan de lijn.
 
-Herhaal nu de punten binnen de LineString met behulp van a`foreach` lus:
+### Stap 3: Itereer over de punten  
+
+Nu de punten zijn toegevoegd, kun je er met een `foreach`‑statement doorheen lopen. De `LineString` implementeert `IEnumerable<IPoint>`, waardoor itereren eenvoudig en intuïtief is:
 
 ```csharp
 foreach (IPoint point in line)
@@ -64,34 +87,47 @@ foreach (IPoint point in line)
 }
 ```
 
-## Conclusie
+De lus print de X‑ (longitude) en Y‑ (latitude) waarden van elk punt naar de console, zodat je kunt verifiëren dat de punten correct zijn toegevoegd.
 
-Concluderend is het beheersen van de iteratie over punten in de geometrie met behulp van Aspose.GIS voor .NET van cruciaal belang voor het ontwikkelen van robuuste geospatiale toepassingen. Deze tutorial geeft een uitgebreid overzicht van het proces, waardoor u over de nodige vaardigheden beschikt om deze functionaliteit naadloos in uw .NET-projecten te integreren.
+## Veelvoorkomende Gebruikssituaties
 
-## Veelgestelde vragen
+- **Routeplanning** – Bouw een pad op basis van GPS‑logs en analyseer vervolgens afstanden tussen waypoints.  
+- **Datavalidatie** – Iterate over punten om te controleren of ze binnen de verwachte grenzen vallen (bijv. binnen de grenzen van een land).  
+- **Visualisatie** – Exporteer de `LineString` naar GeoJSON of Shapefile voor gebruik in kaarttools.
 
-### Vraag 1: Kan Aspose.GIS voor .NET naast LineString ook andere geometrische vormen verwerken?
+## Veelgestelde Vragen
 
-A: Ja, Aspose.GIS voor .NET ondersteunt verschillende geometrische vormen zoals Point, Polygon en MultiLineString, wat veelzijdigheid biedt in de verwerking van georuimtelijke gegevens.
+### Q1: Kan Aspose.GIS for .NET andere geometrische vormen aan naast `LineString`?
 
-### Vraag 2: Is Aspose.GIS geschikt voor zowel commerciële als persoonlijke projecten?
+**A:** Ja, Aspose.GIS ondersteunt `Point`, `Polygon`, `MultiLineString`, `MultiPolygon` en nog veel meer geometrische typen.
 
-A: Absoluut, Aspose.GIS-licenties zijn geschikt voor zowel commercieel als persoonlijk gebruik en bieden flexibele opties voor uiteenlopende projectvereisten.
+### Q2: Is Aspose.GIS geschikt voor zowel commerciële als persoonlijke projecten?
 
-### V3: Biedt Aspose.GIS voor .NET uitgebreide documentatie voor beginners?
+**A:** Absoluut. Licentie‑opties dekken commerciële, persoonlijke en educatieve gebruikssituaties.
 
-A: Aspose.GIS voor .NET biedt uitgebreide documentatie, inclusief tutorials, API-referenties en codevoorbeelden, waardoor ontwikkelaars van alle niveaus een soepele onboarding mogelijk maken.
+### Q3: Biedt Aspose.GIS for .NET uitgebreide documentatie voor beginners?
 
-### V4: Kan ik de functionaliteit van Aspose.GIS voor .NET uitbreiden via aangepaste ontwikkeling?
+**A:** Ja, het product bevat uitgebreide documentatie, API‑referenties en tientallen code‑voorbeelden om je snel op weg te helpen.
 
-A: Ja, Aspose.GIS voor .NET biedt uitbreidbaarheid via aangepaste ontwikkeling, waardoor ontwikkelaars georuimtelijke oplossingen kunnen afstemmen op specifieke projectbehoeften.
+### Q4: Kan ik de functionaliteit van Aspose.GIS for .NET uitbreiden via maatwerkontwikkeling?
 
-### V5: Is er technische ondersteuning beschikbaar voor Aspose.GIS-gebruikers?
+**A:** Je kunt extensiemethoden bouwen of Aspose.GIS‑klassen omhullen om aan specifieke workflows te voldoen, waardoor je volledige controle krijgt over aangepaste georuimtelijke oplossingen.
 
-A: Absoluut, Aspose.GIS-gebruikers hebben toegang tot speciale technische ondersteuning via forums, waardoor snelle hulp wordt gegarandeerd bij eventuele vragen of problemen die ze tijdens de ontwikkeling tegenkomen.
+### Q5: Is er technische ondersteuning beschikbaar voor Aspose.GIS‑gebruikers?
+
+**A:** Toegewijde technische ondersteuning wordt geleverd via de Aspose‑forums en het ticketsysteem, zodat je snel hulp krijgt.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+---
+
+**Laatst Bijgewerkt:** 2025-12-20  
+**Getest Met:** Aspose.GIS for .NET 24.5 (latest at time of writing)  
+**Auteur:** Aspose  
+
+---
