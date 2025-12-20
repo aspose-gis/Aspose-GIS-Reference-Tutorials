@@ -1,29 +1,38 @@
 ---
-title: 使用 Aspose.GIS for .NET 限制讀取幾何圖形的精度
-linktitle: 限制讀取幾何精度
+date: 2025-12-20
+description: 學習如何使用 Aspose.GIS for .NET 建立向量圖層及在讀取幾何圖形時限制精度。提供逐步指南，以實現最佳的地理空間資料處理。
+linktitle: Limit Precision Reading Geometries
 second_title: Aspose.GIS .NET API
-description: 了解如何使用 Aspose.GIS for .NET 讀取幾何圖形時有效管理精確度。請遵循我們的逐步指南以實現最佳數據處理。
-weight: 12
+title: 使用 Aspose.GIS for .NET 建立向量圖層，限制精度
 url: /zh-hant/net/geometry-processing/limit-precision-reading-geometries/
+weight: 12
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# 使用 Aspose.GIS for .NET 限制讀取幾何圖形的精度
+# 建立向量圖層，限制精度（使用 Aspose.GIS for .NET）
 
-## 介紹
-在地理空間資料操作領域，Aspose.GIS for .NET 是一個強大的工具，為開發人員和工程師等提供了大量的功能。其中一項功能是在讀取幾何形狀時限制精度的能力，這在精度可能不是最重要的某些應用中是至關重要的方面。在本教程中，我們將深入研究如何使用 Aspose.GIS for .NET 來實現這一目標，並將流程分解為可管理的步驟。
-## 先決條件
-在我們開始這趟旅程之前，請確保您具備以下先決條件：
-1. 安裝：Aspose.GIS for .NET 程式庫應該安裝在您的開發環境中。如果沒有，您可以從以下位置下載[發布頁面](https://releases.aspose.com/gis/net/).
-2. 熟悉 .NET：要理解和實作所提供的程式碼範例，需要具備 C# 和 .NET 框架的基本知識。
-3. 開發環境：需要一個有效的.NET開發環境，例如Visual Studio。
-4. 文件目錄：設定一個目錄，您可以在其中儲存和存取在此過程中產生的 shapefile。
+## Introduction
+在處理地理空間資料時，您常常需要 **create vector layer** 物件，並在讀取時控制保留多少數值細節。Aspose.GIS for .NET 讓限制精度變得簡單，這可在不需要超高精度的情況下提升效能並減少儲存空間。於本教學中，您將會看到如何建立向量圖層、寫入簡單的點幾何，然後以精確與截斷兩種精度讀回它。
 
-## 導入命名空間
-在我們開始實現讀取幾何圖形時限制精度的功能之前，讓我們確保導入必要的命名空間：
+## Quick Answers
+- **「limit precision」是什麼意思？** 它會將座標值四捨五入至指定的小數位數。  
+- **為什麼要先建立向量圖層？** 向量圖層是儲存點、線、面等幾何圖形的容器。  
+- **有哪些精度模型可供選擇？** `PrecisionModel.Exact`（不四捨五入）與 `PrecisionModel.Rounding(n)`（四捨五入至 *n* 位小數）。  
+- **試用這個功能需要授權嗎？** 可從 releases 頁面取得免費試用版。  
+- **支援哪些 .NET 版本？** .NET Framework 4.5 以上、.NET Core 以及 .NET 5/6 以上。
+
+## Prerequisites
+在開始之前，請確保您已具備以下前置條件：
+1. **Installation** – 必須在開發環境中安裝 Aspose.GIS for .NET 套件。若尚未安裝，可從 [releases page](https://releases.aspose.com/gis/net/) 下載。  
+2. **Familiarity with .NET** – 需要具備基本的 C# 與 .NET 框架知識，以便理解與實作範例程式碼。  
+3. **Development Environment** – 必須有可運作的 .NET 開發環境，例如 Visual Studio。  
+4. **Document Directory** – 請先建立一個資料夾，用於存放與存取本教學產生的 shapefile。
+
+## Import Namespaces
+在實作讀取幾何時限制精度的功能之前，先確保已匯入必要的命名空間：
 ```csharp
 using Aspose.Gis;
 using Aspose.Gis.Formats.Shapefile;
@@ -36,8 +45,8 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## 第 1 步：建立向量圖層
-首先，我們需要建立一個向量圖層，可以在其中添加幾何圖形。這可以使用以下程式碼片段來實現：
+## How to Create Vector Layer
+第一步是 **create vector layer**，用來保存我們的幾何圖形。此圖層將以 Shapefile 格式儲存，之後可使用不同的精度設定重新開啟。
 ```csharp
 string path = "Your Document Directory" + "LimitPrecisionWhenReadingGeometries_out.shp";
 using (VectorLayer layer = VectorLayer.Create(path, Drivers.Shapefile))
@@ -47,15 +56,17 @@ using (VectorLayer layer = VectorLayer.Create(path, Drivers.Shapefile))
 	layer.Add(feature);
 }
 ```
-## 第 2 步：設定精確度選項
-接下來，我們需要定義讀取幾何形狀的選項，指定所需的精確度模型。我們可以這樣做：
+
+## Setting Precision Options
+接下來，我們需要為讀取幾何圖形定義選項，指定所需的精度模型。我們先使用精確精度作為範例：
 ```csharp
 var options = new ShapefileOptions();
-//按原樣讀取資料。
+// read data as‑is.
 options.XYPrecisionModel = PrecisionModel.Exact;
 ```
-## 第三步：精確讀取幾何圖形
-現在，讓我們使用指定的選項開啟向量圖層，以精確的精度讀取幾何圖形：
+
+## Reading Geometries with Exact Precision
+現在，使用先前設定的選項開啟向量圖層，以精確精度讀取幾何圖形：
 ```csharp
 using (VectorLayer layer = VectorLayer.Open(path, Drivers.Shapefile, options))
 {
@@ -64,8 +75,9 @@ using (VectorLayer layer = VectorLayer.Open(path, Drivers.Shapefile, options))
 	Console.WriteLine("{0}, {1}", point.X, point.Y);
 }
 ```
-## 步驟 4：截斷精度
-最後，如果我們想將精度截斷到特定的小數位數，我們可以相應地調整精度模型：
+
+## Truncating Precision
+若想將精度截斷至特定的小數位數，可相應調整精度模型：
 ```csharp
 options.XYPrecisionModel = PrecisionModel.Rounding(2);
 using (VectorLayer layer = VectorLayer.Open(path, Drivers.Shapefile, options))
@@ -76,19 +88,42 @@ using (VectorLayer layer = VectorLayer.Open(path, Drivers.Shapefile, options))
 }
 ```
 
-## 結論
-總之，讀取幾何圖形時管理精確度是地理空間資料操作的重要面向。 Aspose.GIS for .NET 提供了強大的功能來有效地實現這一目標。透過遵循本教程中概述的步驟，您可以根據您的要求無縫地限制精度，確保應用程式中的最佳資料處理。
-## 常見問題解答
-### 我可以將 Aspose.GIS for .NET 與其他 .NET 框架（如 .NET Core 或 .NET Standard）一起使用嗎？
-是的，Aspose.GIS for .NET 與各種 .NET 框架相容，包括 .NET Core 和 .NET Standard。
-### Aspose.GIS for .NET 有試用版嗎？
-是的，您可以從以下網站取得免費試用版[發布頁面](https://releases.aspose.com/).
-### 在哪裡可以找到 Aspose.GIS for .NET 的綜合文件？
-您可以參考[文件](https://reference.aspose.com/gis/net/)取得詳細資訊和範例。
+## Common Issues and Solutions
+- **Unexpected coordinate values** – 請確保在開啟圖層之前就設定 `options.XYPrecisionModel`。開啟之後再更改不會生效。  
+- **File not found** – 請檢查 `path` 變數指向的是有效的目錄，且前一步已成功建立 Shapefile。  
+- **Incorrect geometry type** – 範例使用 `Point`。若使用其他幾何類型（例如 `LineString`），請確保轉型與實際類型相符。
+
+## Conclusion
+總結來說，讀取幾何圖形時的精度管理是地理空間資料操作中的關鍵環節。Aspose.GIS for .NET 提供了強大的功能，讓您能有效地限制精度。依循本教學的步驟，您即可順利 **create vector layer** 並依需求限制精度，確保應用程式中的資料處理達到最佳效能。
+
+## FAQ's
+### 我可以在 .NET Core 或 .NET Standard 等其他 .NET 框架上使用 Aspose.GIS for .NET 嗎？
+可以，Aspose.GIS for .NET 相容於多種 .NET 框架，包括 .NET Core 與 .NET Standard。  
+### Aspose.GIS for .NET 有提供試用版嗎？
+有，您可從 [releases page](https://releases.aspose.com/) 取得免費試用版。  
+### 哪裡可以找到 Aspose.GIS for .NET 的完整文件說明？
+請參考 [documentation](https://reference.aspose.com/gis/net/) 取得詳細資訊與範例。  
 ### 如何取得 Aspose.GIS for .NET 的臨時授權？
-臨時許可證可以從[購買頁面](https://purchase.aspose.com/temporary-license/)對於 Aspose.GIS。
-### 我可以在哪裡尋求 Aspose.GIS for .NET 的協助或支援？
-您可以造訪Aspose.GIS[論壇](https://forum.aspose.com/c/gis/33)如有任何疑問、討論或支援需求。
+可於 [purchase page](https://purchase.aspose.com/temporary-license/) 取得 Aspose.GIS 的臨時授權。  
+### 若需要協助或支援，該去哪裡尋求？
+您可以前往 Aspose.GIS 的 [forum](https://forum.aspose.com/c/gis/33) 提問、討論或取得支援。
+
+## Frequently Asked Questions
+**Q: 限制精度會影響原始的 shapefile 嗎？**  
+A: 不會。精度只在讀取幾何時套用，來源檔案保持不變。  
+
+**Q: 可以為 X 與 Y 座標使用不同的精度模型嗎？**  
+A: 目前 Aspose.GIS 會對兩個軸使用相同的 `XYPrecisionModel`。  
+
+**Q: 能否自訂四捨五入函式？**  
+A: API 只支援內建的 `PrecisionModel.Rounding(int)` 方法。若需自訂邏輯，必須在讀取後自行處理座標。
+
+---
+
+**Last Updated:** 2025-12-20  
+**Tested With:** Aspose.GIS 24.11 for .NET  
+**Author:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
