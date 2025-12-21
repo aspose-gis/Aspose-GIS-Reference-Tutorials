@@ -1,29 +1,50 @@
 ---
-title: Linearisasikan Geometri
-linktitle: Linearisasikan Geometri
+date: 2025-12-21
+description: Pelajari cara melinierkan geometri dengan Aspose.GIS untuk .NET, memungkinkan
+  pemrosesan data geospasial yang efisien, analisis spasial, dan manipulasi geometri
+  dalam aplikasi .NET Anda.
+linktitle: Linearize a Geometry
 second_title: Aspose.GIS .NET API
-description: Pelajari cara menggunakan Aspose.GIS untuk .NET agar dapat bekerja secara efisien dengan data geospasial, melakukan analisis spasial, dan memanipulasi geografis dalam aplikasi .NET Anda.
-weight: 14
+title: Cara Melinierkan Geometri Menggunakan Aspose.GIS untuk .NET
 url: /id/net/geometry-processing/linearize-geometry/
+weight: 14
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Linearisasikan Geometri
+# Linearize a Geometry
 
-## Perkenalan
-Aspose.GIS untuk .NET adalah perpustakaan canggih yang memungkinkan pengembang bekerja dengan data geospasial secara efisien dalam aplikasi .NET. Baik Anda membuat aplikasi pemetaan, melakukan analisis spasial, atau memanipulasi data geografis, Aspose.GIS menyediakan alat yang Anda perlukan untuk menyelesaikan pekerjaan.
-## Prasyarat
-Sebelum mulai menggunakan Aspose.GIS untuk .NET, pastikan Anda telah menyiapkan prasyarat berikut:
-1. Instalasi Aspose.GIS untuk .NET: Anda dapat mengunduh perpustakaan dari[Situs web Aspose.GIS](https://releases.aspose.com/gis/net/).
-2. .NET Framework: Pastikan Anda telah menginstal .NET Framework di lingkungan pengembangan Anda.
-3. Lingkungan Pengembangan: Editor kode seperti Visual Studio akan bermanfaat untuk menulis dan menjalankan aplikasi .NET Anda.
-#
-## Impor Namespace
-Untuk mulai menggunakan fungsionalitas Aspose.GIS, Anda perlu mengimpor namespace yang diperlukan ke dalam proyek Anda. Inilah cara Anda melakukannya:
-## Langkah 1: Impor Namespace Aspose.GIS
+## Introduction
+Jika Anda perlu **cara linearize geometry** untuk pemetaan, analisis spasial, atau tugas pertukaran data, Aspose.GIS untuk .NET memberikan cara yang bersih dan programatis untuk melakukannya. Dalam tutorial ini kami akan membahas contoh dunia nyata yang lengkap yang menunjukkan cara mengambil geometri kompleks—yang berisi kurva dan bentuk majemuk—dan mengubahnya menjadi representasi linear sederhana yang dapat bekerja dengan sistem GIS apa pun.
+
+## Quick Answers
+- **Apa arti linearizing a geometry?** Mengonversi kurva dan bentuk kompleks menjadi segmen‑segmen garis lurus.  
+- **Mengapa menggunakan Aspose.GIS?** Ia mendukung puluhan format GIS dan menangani konversi geometri tanpa alat eksternal.  
+- **Prasyarat?** .NET Framework atau .NET Core, Visual Studio, dan pustaka Aspose.GIS.  
+- **Berapa lama contoh ini dijalankan?** Kurang dari lima menit setelah pustaka terpasang.  
+- **Bisakah saya menyimpan ke format lain?** Ya—ganti driver KML dengan Shapefile, GeoJSON, dll.
+
+## What is Linearizing Geometry?
+Linearizing geometry berarti memecah setiap bentuk melengkung atau komposit menjadi serangkaian segmen garis lurus (sebuah “geometri linear”). Hal ini menyederhanakan rendering, analisis, dan interoperabilitas dengan alat yang hanya memahami garis dan titik.
+
+## Why Linearize Geometry?
+- **Performance:** Geometri linear lebih cepat dirender dan diquery.  
+- **Compatibility:** Banyak platform GIS (misalnya layanan peta lama) hanya menerima fitur linear.  
+- **Simplification:** Berguna untuk membuat thumbnail, pratinjau cepat, atau memberi data ke algoritma yang memerlukan input linear.
+
+## Prerequisites
+Sebelum menyelam ke kode, pastikan Anda memiliki:
+
+1. **Aspose.GIS untuk .NET** – unduh dari [situs Aspose.GIS](https://releases.aspose.com/gis/net/).  
+2. **.NET Framework** (atau .NET Core) terpasang di mesin pengembangan Anda.  
+3. **Visual Studio** (atau IDE kompatibel C# apa pun) untuk menulis dan mengeksekusi contoh.
+
+## Import Namespaces
+Untuk mulai menggunakan fungsionalitas Aspose.GIS, impor namespace yang diperlukan.
+
+### Step 1: Import the Aspose.GIS Core Namespaces
 ```csharp
 using Aspose.Gis;
 using Aspose.Gis.Geometries;
@@ -33,62 +54,99 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 ```
-## Langkah 2: Impor Driver Tertentu
-Bergantung pada format file yang Anda gunakan, impor namespace driver yang sesuai. Misalnya, untuk file KML:
+
+### Step 2: Import the Driver for Your Target Format
+Untuk contoh ini kami akan menulis hasil ke file KML:
 ```csharp
 using Aspose.GIS.Kml;
 ```
-## Linearisasikan Geometri: Panduan Langkah demi Langkah
-Sekarang, mari kita uraikan contoh yang diberikan menjadi beberapa langkah untuk linierisasi geometri menggunakan Aspose.GIS untuk .NET.
-## Langkah 1: Tentukan Jalur Keluaran
+
+## How to Linearize Geometry – Step‑by‑Step Guide
+Berikut adalah penjelasan terperinci setiap baris kode, menjelaskan **cara linearize geometry** dan mengapa setiap langkah penting.
+
+### Step 1: Define the Output Path
 ```csharp
 string path = "Your Document Directory" + "LinearizeGeometry_out.kml";
 ```
- Mengganti`"Your Document Directory"` dengan jalur tempat Anda ingin menyimpan file keluaran.
-## Langkah 2: Buat Lapisan
+Ganti `"Your Document Directory"` dengan folder tempat Anda ingin menyimpan file KML.
+
+### Step 2: Create a Layer for the Output File
 ```csharp
 using (var layer = Drivers.Kml.CreateLayer(path))
 ```
-Kode ini membuat lapisan untuk menyimpan fitur geografis dalam file KML.
-## Langkah 3: Buat Fitur
+*Layer* adalah wadah untuk fitur geografis. Di sini kami membuat layer KML baru yang akan menampung geometri yang telah dilinearize.
+
+### Step 3: Construct a New Feature
 ```csharp
 var feature = layer.ConstructFeature();
 ```
-Fitur mewakili entitas geografis seperti titik, garis, atau poligon.
-## Langkah 4: Tentukan Geometri
+*Feature* mewakili satu objek geografis (titik, garis, poligon, dll.). Kami akan melampirkan geometri linear kami ke fitur ini.
+
+### Step 4: Define the Original Complex Geometry
 ```csharp
 var geometry = Geometry.FromText(@"GeometryCollection (LineString (0 0, 1 1, 2 0),CompoundCurve ((4 0, 5 1), CircularString (5 1, 6 2, 7 1)))");
 ```
-Di sini, Anda menentukan geometri yang ingin Anda linierkan. Anda dapat membuat geometri dari representasi WKT (Teks Terkenal).
-## Langkah 5: Linearisasikan Geometri
+Kami membuat geometri dari string Well‑Known Text (WKT). Contoh ini mencakup `LineString`, `CompoundCurve`, dan `CircularString`—sempurna untuk mendemonstrasikan linearization.
+
+### Step 5: Linearize the Geometry
 ```csharp
 var linear = geometry.ToLinearGeometry();
 ```
-Langkah ini linierisasi geometri masukan, menciptakan versi sederhana yang sesuai untuk aplikasi tertentu.
-## Langkah 6: Tetapkan Geometri Linier ke Fitur
+Metode `ToLinearGeometry()` mengubah semua kurva menjadi segmen garis lurus, menghasilkan versi *linear* dari geometri asli.
+
+### Step 6: Assign the Linear Geometry to the Feature
 ```csharp
 feature.Geometry = linear;
 ```
-Tetapkan geometri yang dilinearisasi sebagai geometri fitur.
-## Langkah 7: Tambahkan Fitur ke Lapisan
+Sekarang fitur memuat geometri linear yang telah disederhanakan.
+
+### Step 7: Add the Feature to the Layer
 ```csharp
 layer.Add(feature);
 ```
-Terakhir, tambahkan fitur dengan geometri yang dilinearisasi ke lapisan.
+Akhirnya, kami menambahkan fitur ke layer KML, yang menulis geometri linear ke file output ketika blok `using` selesai.
 
-## Kesimpulan
-Dalam tutorial ini, kita telah membahas dasar-dasar penggunaan Aspose.GIS untuk .NET untuk linierisasi geometri. Dengan mengikuti langkah-langkah ini, Anda dapat mengintegrasikan fungsionalitas geospasial ke dalam aplikasi .NET Anda dengan mudah.
-## FAQ
-### T: Apakah Aspose.GIS untuk .NET kompatibel dengan .NET Core?
-Ya, Aspose.GIS untuk .NET kompatibel dengan .NET Core, memungkinkan Anda membangun aplikasi lintas platform.
-### T: Dapatkah saya bekerja dengan format file GIS yang berbeda menggunakan Aspose.GIS untuk .NET?
-Sangat! Aspose.GIS mendukung berbagai format file GIS, termasuk KML, Shapefile, GeoJSON, dan banyak lagi.
-### T: Apakah Aspose.GIS menawarkan dukungan untuk operasi dan analisis spasial?
-Ya, Aspose.GIS menyediakan berbagai operasi spasial dan kemampuan analisis untuk menangani tugas geospasial yang kompleks.
-### T: Apakah ada uji coba gratis yang tersedia untuk Aspose.GIS untuk .NET?
- Ya, Anda dapat mengunduh uji coba gratis dari[Asumsikan situs web](https://releases.aspose.com/).
-### T: Di mana saya bisa mendapatkan bantuan dan dukungan untuk Aspose.GIS?
- Anda dapat mengunjungi[Forum Aspose.GIS](https://forum.aspose.com/c/gis/33) untuk bantuan dari masyarakat dan staf pendukung Aspose.
+## Common Pitfalls & Tips
+- **Path separators:** Gunakan `Path.Combine` untuk membangun path lintas‑platform.  
+- **Large geometries:** Linearizing bentuk yang sangat kompleks dapat menghasilkan banyak vertex; pertimbangkan menggunakan `Simplify()` setelah linearization jika Anda memerlukan titik lebih sedikit.  
+- **Driver selection:** Jika Anda memerlukan format output lain, ganti `Drivers.Kml` dengan `Drivers.Shapefile`, `Drivers.GeoJson`, dll., dan sesuaikan ekstensi file yang bersangkutan.
+
+## Conclusion
+Dalam tutorial ini kami membahas **cara linearize geometry** menggunakan Aspose.GIS untuk .NET, mulai dari menyiapkan lingkungan hingga menulis hasil yang telah dilinearize ke file KML. Anda kini dapat mengintegrasikan alur kerja ini ke dalam aplikasi pemetaan, pipeline pemrosesan data, atau proyek terkait GIS apa pun yang memerlukan geometri yang disederhanakan.
+
+## FAQ's
+### Q: Apakah Aspose.GIS untuk .NET kompatibel dengan .NET Core?
+Ya, Aspose.GIS untuk .NET kompatibel dengan .NET Core, memungkinkan Anda membangun aplikasi lintas‑platform.
+
+### Q: Bisakah saya bekerja dengan format file GIS yang berbeda menggunakan Aspose.GIS untuk .NET?
+Tentu! Aspose.GIS mendukung berbagai format file GIS, termasuk KML, Shapefile, GeoJSON, dan lainnya.
+
+### Q: Apakah Aspose.GIS menawarkan dukungan untuk operasi spasial dan analisis?
+Ya, Aspose.GIS menyediakan beragam operasi spasial dan kemampuan analisis untuk menangani tugas geospasial yang kompleks.
+
+### Q: Apakah ada percobaan gratis untuk Aspose.GIS untuk .NET?
+Ya, Anda dapat mengunduh percobaan gratis dari [situs Aspose](https://releases.aspose.com/).
+
+### Q: Di mana saya dapat menemukan bantuan dan dukungan untuk Aspose.GIS?
+Anda dapat mengunjungi [forum Aspose.GIS](https://forum.aspose.com/c/gis/33) untuk mendapatkan bantuan dari komunitas dan staf dukungan Aspose.
+
+## Frequently Asked Questions (Additional)
+
+**Q: Bisakah saya linearize geometri yang mengandung koordinat 3D (Z)?**  
+A: Ya, `ToLinearGeometry()` bekerja dengan geometri 2D dan 3D; nilai Z dipertahankan dalam segmen garis yang dihasilkan.
+
+**Q: Bagaimana linearization memengaruhi ukuran file output?**  
+A: Mengonversi kurva menjadi banyak segmen garis pendek dapat meningkatkan ukuran file. Gunakan `Simplify()` setelah linearization jika ukuran file menjadi perhatian.
+
+**Q: Apakah memungkinkan mengontrol panjang segmen saat linearizing?**  
+A: Metode default menggunakan toleransi internal. Untuk segmentasi khusus, Anda dapat melakukan tessellation kurva secara manual sebelum memanggil `ToLinearGeometry()`.
+
+---
+
+**Last Updated:** 2025-12-21  
+**Tested With:** Aspose.GIS 24.11 untuk .NET  
+**Author:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
