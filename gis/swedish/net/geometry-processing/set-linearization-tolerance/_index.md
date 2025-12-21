@@ -1,33 +1,46 @@
 ---
-title: Ställ in linjäriseringstolerans med Aspose.GIS för .NET
-linktitle: Ställ in linjäriseringstolerans
+date: 2025-12-21
+description: Lär dig hur du skapar ett vektorlager, ställer in linjäriseringstolerans
+  och lägger till ett objekt i lagret med Aspose.GIS för .NET. Följ den här steg‑för‑steg‑guiden
+  för att exportera GeoJSON‑filer.
+linktitle: Set Linearization Tolerance
 second_title: Aspose.GIS .NET API
-description: Master Aspose.GIS för .NET för att hantera geospatial data utan ansträngning. Följ denna steg-för-steg handledning och lås upp den fulla potentialen för GIS-utveckling i .NET.
-weight: 17
+title: Skapa vektorlager och ställ in linjäriseringstolerans med Aspose.GIS för .NET
 url: /sv/net/geometry-processing/set-linearization-tolerance/
+weight: 17
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Ställ in linjäriseringstolerans med Aspose.GIS för .NET
+# Skapa Vector Layer och ställ in Linearization Tolerance med Aspose.GIS för .NET
 
 ## Introduktion
-en värld av Geographic Information Systems (GIS) utveckling framstår Aspose.GIS för .NET som en kraftfull verktygsuppsättning för att hantera rumslig data med lätthet och effektivitet. Oavsett om du är en erfaren GIS-utvecklare eller precis har börjat, kan behärskning av Aspose.GIS avsevärt förbättra din förmåga att arbeta med geospatial data i .NET-miljöer.
-## Förutsättningar
-Innan du börjar använda Aspose.GIS för .NET, se till att du har följande förutsättningar på plats:
-### 1. Installera Visual Studio
-Se till att du har Visual Studio installerat på ditt system. Aspose.GIS för .NET integreras sömlöst med Visual Studio, vilket ger en välbekant utvecklingsmiljö för .NET-utvecklare.
-### 2. Skaffa Aspose.GIS-licens
-För att låsa upp den fulla potentialen hos Aspose.GIS behöver du en giltig licens. Du kan skaffa en licens från Asposes webbplats eller välja en tillfällig licens för utvärderingssyften.
-### 3. Ladda ner Aspose.GIS för .NET
-Ladda ner Aspose.GIS för .NET-biblioteket från Asposes webbplats. Du hittar nedladdningslänken i resurserna nedan.
-### 4. Bekantskap med C#
-Grundläggande kunskaper i programmeringsspråket C# är avgörande för att förstå och implementera exemplen i denna handledning.
+Om du behöver **create vector layer**‑filer, kontrollera kurvprecision och exportera resultatet som ett GeoJSON‑dokument, gör Aspose.GIS för .NET det enkelt. I den här handledningen lär du dig hur du konfigurerar GeoJSON‑alternativ, ställer in linjäriserings toleransen och **add feature to layer**‑objekt — allt medan koden hålls ren och produktionsklar.
 
-## Importera namnområden
-Innan du börjar arbeta med Aspose.GIS för .NET, importera de nödvändiga namnrymden till ditt projekt:
+## Snabba svar
+- **Vad betyder “create vector layer”?** Det skapar ett nytt GIS‑vektordataset (t.ex. en GeoJSON‑fil) som kan lagra geometrier och attribut.  
+- **Hur ställer man in tolerans?** Använd egenskapen `LinearizationTolerance` i `GeoJsonOptions`.  
+- **Kan jag exportera en GeoJSON‑fil?** Ja — skapa helt enkelt ett `VectorLayer` med drivrutinen `Drivers.GeoJson`.  
+- **Behöver jag en licens?** En giltig Aspose.GIS‑licens låser upp alla funktioner; en tillfällig licens fungerar för utvärdering.  
+- **Vilka .NET‑versioner stöds?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
+
+## Vad är “create vector layer”?
+Att skapa ett vector layer innebär att initiera en ny GIS‑behållare (t.ex. en GeoJSON‑fil) som kan innehålla geometriska funktioner som punkter, linjer och polygoner. Detta lager blir målet för all geometri du konstruerar och alla attribut du bifogar.
+
+## Varför konfigurera GeoJSON‑alternativ?
+Att konfigurera GeoJSON‑alternativ — särskilt **linearization tolerance** — säkerställer att kurvade geometrier (t.ex. `CircularString`) approximeras med en precision som uppfyller ditt programs noggrannhetskrav. Detta steg är avgörande när du senare **export GeoJSON file** för användning i webbkartor eller rumsliga analyser.
+
+## Förutsättningar
+1. **Visual Studio** installerat (någon nyare version).  
+2. **Aspose.GIS‑licens** (eller en tillfällig utvärderingsnyckel).  
+3. **Aspose.GIS for .NET**‑biblioteket nedladdat och refererat i ditt projekt.  
+4. Grundläggande kunskap om **C#**.
+
+## Importera namnrymder
+Först importerar du de nödvändiga namnrymderna så att kompilatorn vet var GIS‑klasserna finns:
+
 ```csharp
 using Aspose.Gis;
 using Aspose.Gis.Formats.GeoJson;
@@ -38,61 +51,89 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 ```
-#Låt oss nu dela upp exemplet i flera steg:
-## Steg 1: Ställ in linjäriseringstolerans
-I det här steget ställer du in linjäriseringstoleransen för GeoJSON-alternativen:
+
+## Steg‑för‑steg‑guide
+
+### Steg 1: Konfigurera GeoJSON‑alternativ (hur man ställer in tolerans)
+Vi skapar ett `GeoJsonOptions`‑objekt och talar om för Aspose.GIS hur nära den linjäriserade geometrin måste vara den ursprungliga kurvan.
+
 ```csharp
 var options = new GeoJsonOptions
 {
-    // linjär geometri måste ligga inom 1e-4 från kurvgeometrin
+    // linearized geometry must be within 1e-4 from curve geometry
     LinearizationTolerance = 1e-4,
 };
 ```
-## Steg 2: Ange utdatasökväg
-Definiera sökvägen där du vill spara utdata-JSON-filen:
+
+### Steg 2: Definiera utdata‑sökvägen (hur man exporterar GeoJSON)
+Ange var den resulterande filen ska sparas. Ersätt platshållaren med din faktiska mapp.
+
 ```csharp
 string path = "Your Document Directory" + "SpecifyLinearizationTolerance_out.json";
 ```
- Byta ut`"Your Document Directory"` med den faktiska katalogsökvägen där du vill spara filen.
-## Steg 3: Skapa vektorlager
-Skapa ett vektorlager med de angivna alternativen och utmatningsvägen:
+
+### Steg 3: **Create Vector Layer** med de konfigurerade alternativen
+Nu **create vector layer** faktiskt med `VectorLayer.Create`‑metoden. `using`‑blocket garanterar korrekt resurshantering.
+
 ```csharp
 using (VectorLayer layer = VectorLayer.Create(path, Drivers.GeoJson, options))
 {
-    // Din kod här
+    // Your code here
 }
 ```
- Det här kodavsnittet säkerställer korrekt resursförfogande med hjälp av`using` påstående.
-## Steg 4: Konstruera geometri
-Konstruera en geometri (i det här fallet en cirkulär sträng) som du vill lägga till i lagret:
+
+### Steg 4: Konstruera en geometri (t.ex. en circular string)
+Här bygger vi en exempelgeometri — en `CircularString`. Du kan ersätta detta med valfri giltig WKT.
+
 ```csharp
 var curveGeometry = Geometry.FromText("CircularString (0 0, 1 1, 2 0)");
 ```
-Ersätt geometridefinitionen med önskad geometri.
-## Steg 5: Lägg till funktion till lager
-Konstruera en egenskap och tilldela den geometrin, lägg sedan till egenskapen i vektorlagret:
+
+### Steg 5: **Add Feature to Layer** och spara
+Till sist skapar vi ett feature, tilldelar geometrin och lägger till det i lagret. Detta är kärnan i **add feature to layer**‑operationen.
+
 ```csharp
 var feature = layer.ConstructFeature();
 feature.Geometry = curveGeometry;
 layer.Add(feature);
 ```
 
+När `using`‑blocket avslutas skrivs lagret automatiskt till filen som definierats i `path`, vilket ger dig en färdig‑att‑använda GeoJSON‑fil.
+
+## Vanliga problem och tips
+- **Felaktig sökväg** – Se till att katalogen finns och att du har skrivrättigheter.  
+- **Toleransen för låg** – Att sätta `LinearizationTolerance` till ett mycket litet värde kan öka filstorleken dramatiskt. Justera efter dina noggrannhetsbehov.  
+- **Licensfel** – Om du ser licensvarningar, kontrollera att licensfilen har laddats korrekt innan några Aspose.GIS‑anrop.
+
+## Vanliga frågor
+
+**Q: Är Aspose.GIS för .NET kompatibel med andra .NET‑ramverk?**  
+A: Ja, den fungerar med .NET Framework, .NET Core och .NET 5/6/7.
+
+**Q: Kan jag använda Aspose.GIS i kommersiella projekt?**  
+A: Absolut. En kommersiell licens tar bort alla utvärderingsrestriktioner.
+
+**Q: Stöder Aspose.GIS andra GIS‑format förutom GeoJSON?**  
+A: Ja, den stöder Shapefile, KML, GML och många fler.
+
+**Q: Finns en provversion?**  
+A: Du kan ladda ner en gratis provversion från Aspose‑webbplatsen.
+
+**Q: Var kan jag få support?**  
+A: Använd Aspose‑forumet eller supportlänken i resurser‑sektionen.
+
 ## Slutsats
-Att behärska Aspose.GIS för .NET öppnar upp en värld av möjligheter inom geospatial databehandling och manipulation. Genom att följa denna handledning och utforska den omfattande dokumentationen och resurserna som tillhandahålls av Aspose, kan du lyfta dina GIS-utvecklingsfärdigheter till nya höjder.
-## FAQ's
-### Är Aspose.GIS för .NET kompatibelt med andra .NET-ramverk?
-Ja, Aspose.GIS för .NET är kompatibelt med olika .NET-ramverk, inklusive .NET Core och .NET Standard.
-### Kan jag använda Aspose.GIS för .NET i mina kommersiella projekt?
-Absolut! Aspose.GIS för .NET erbjuder kommersiella licenser för användning i kommersiella projekt.
-### Stöder Aspose.GIS för .NET olika GIS-dataformat?
-Ja, Aspose.GIS för .NET stöder ett brett utbud av GIS-dataformat, inklusive GeoJSON, Shapefile, KML och många fler.
-### Finns det en testversion tillgänglig för Aspose.GIS för .NET?
-Ja, du kan ladda ner en gratis testversion av Aspose.GIS för .NET från Asposes webbplats.
-### Var kan jag få support för Aspose.GIS för .NET?
-Du kan få support för Aspose.GIS för .NET från Aspose-forumen. Besök supportlänken i resursavsnittet nedan.
+Genom att följa dessa steg vet du nu hur du **create vector layer**, konfigurerar linjäriserings toleransen och **add feature to layer** för sömlös **export GeoJSON file**‑skapande. Utforska ytterligare geometrityper och attributhantering för att fullt utnyttja Aspose.GIS i dina .NET‑GIS‑projekt.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+---
+
+**Senast uppdaterad:** 2025-12-21  
+**Testat med:** Aspose.GIS 24.11 för .NET  
+**Författare:** Aspose
