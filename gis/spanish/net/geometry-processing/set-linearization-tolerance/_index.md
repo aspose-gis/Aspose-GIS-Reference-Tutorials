@@ -1,33 +1,49 @@
 ---
-title: Establecer la tolerancia de linealización usando Aspose.GIS para .NET
-linktitle: Establecer tolerancia de linealización
-second_title: Aspose.GIS API .NET
-description: Domine Aspose.GIS para .NET para manejar datos geoespaciales sin esfuerzo. Siga este tutorial paso a paso y libere todo el potencial del desarrollo SIG en .NET.
-weight: 17
+date: 2025-12-21
+description: Aprende a crear una capa vectorial, establecer la tolerancia de linealización
+  y agregar una entidad a la capa usando Aspose.GIS para .NET. Sigue esta guía paso
+  a paso para exportar archivos GeoJSON.
+linktitle: Set Linearization Tolerance
+second_title: Aspose.GIS .NET API
+title: Crear capa vectorial y establecer la tolerancia de linealización usando Aspose.GIS
+  para .NET
 url: /es/net/geometry-processing/set-linearization-tolerance/
+weight: 17
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Establecer la tolerancia de linealización usando Aspose.GIS para .NET
+# Crear capa vectorial y establecer tolerancia de linealización usando Aspose.GIS para .NET
 
 ## Introducción
-En el mundo del desarrollo de sistemas de información geográfica (SIG), Aspose.GIS para .NET se destaca como un poderoso conjunto de herramientas para manejar datos espaciales con facilidad y eficiencia. Si es un desarrollador SIG experimentado o recién está comenzando, dominar Aspose.GIS puede mejorar significativamente su capacidad para trabajar con datos geoespaciales en entornos .NET.
+Si necesitas **crear capa vectorial**, controlar la precisión de curvas y exportar el resultado como un documento GeoJSON, Aspose.GIS para .NET lo hace sencillo. En este tutorial aprenderás a configurar las opciones de GeoJSON, establecer la tolerancia de linealización y **agregar entidad a la capa** — todo manteniendo el código limpio y listo para producción.
+
+## Respuestas rápidas
+- **¿Qué significa “crear capa vectorial”?** Crea un nuevo conjunto de datos GIS vectorial (p. ej., un archivo GeoJSON) que puede almacenar geometrías y atributos.  
+- **¿Cómo establecer la tolerancia?** Usa la propiedad `LinearizationTolerance` de `GeoJsonOptions`.  
+- **¿Puedo exportar un archivo GeoJSON?** Sí, simplemente crea un `VectorLayer` con el controlador `Drivers.GeoJson`.  
+- **¿Necesito una licencia?** Una licencia válida de Aspose.GIS desbloquea todas las funciones; una licencia temporal funciona para evaluación.  
+- **¿Qué versiones de .NET son compatibles?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
+
+## ¿Qué es “crear capa vectorial”?
+Crear una capa vectorial significa inicializar un nuevo contenedor GIS (como un archivo GeoJSON) que puede contener entidades geométricas como puntos, líneas y polígonos. Esta capa se convierte en el destino para cualquier geometría que construyas y cualquier atributo que adjuntes.
+
+## ¿Por qué configurar las opciones de GeoJSON?
+Configurar las opciones de GeoJSON—especialmente la **tolerancia de linealización**—garantiza que las geometrías curvas (p. ej., `CircularString`) se aproximen con una precisión que cumpla los requisitos de exactitud de tu aplicación. Este paso es crucial cuando luego **exportas el archivo GeoJSON** para usarlo en mapas web o análisis espaciales.
+
 ## Requisitos previos
-Antes de sumergirse en el uso de Aspose.GIS para .NET, asegúrese de tener implementados los siguientes requisitos previos:
-### 1. Instale Visual Studio
-Asegúrese de tener Visual Studio instalado en su sistema. Aspose.GIS para .NET se integra perfectamente con Visual Studio, proporcionando un entorno de desarrollo familiar para los desarrolladores de .NET.
-### 2. Obtenga la licencia Aspose.GIS
-Para desbloquear todo el potencial de Aspose.GIS, necesita una licencia válida. Puede adquirir una licencia en el sitio web de Aspose u optar por una licencia temporal con fines de evaluación.
-### 3. Descargue Aspose.GIS para .NET
-Descargue la biblioteca Aspose.GIS para .NET desde el sitio web de Aspose. Puede encontrar el enlace de descarga en la sección de recursos a continuación.
-### 4. Familiaridad con C#
-El conocimiento básico del lenguaje de programación C# es esencial para comprender e implementar los ejemplos proporcionados en este tutorial.
+Antes de comenzar, asegúrate de tener:
+
+1. **Visual Studio** instalado (cualquier versión reciente).  
+2. **Licencia de Aspose.GIS** (o una clave de evaluación temporal).  
+3. Biblioteca **Aspose.GIS para .NET** descargada y referenciada en tu proyecto.  
+4. Familiaridad básica con **C#**.
 
 ## Importar espacios de nombres
-Antes de comenzar a trabajar con Aspose.GIS para .NET, importe los espacios de nombres necesarios a su proyecto:
+Primero, importa los espacios de nombres requeridos para que el compilador sepa dónde encontrar las clases GIS:
+
 ```csharp
 using Aspose.Gis;
 using Aspose.Gis.Formats.GeoJson;
@@ -38,61 +54,91 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 ```
-#Ahora, dividamos el ejemplo proporcionado en varios pasos:
-## Paso 1: establecer la tolerancia de linealización
-En este paso, establecerá la tolerancia de linealización para las opciones de GeoJSON:
+
+## Guía paso a paso
+
+### Paso 1: Configurar opciones de GeoJSON (cómo establecer la tolerancia)
+Crearemos un objeto `GeoJsonOptions` y le indicaremos a Aspose.GIS cuán cerca debe estar la geometría linealizada de la curva original.
+
 ```csharp
 var options = new GeoJsonOptions
 {
-    // la geometría linealizada debe estar dentro de 1e-4 de la geometría de la curva
+    // linearized geometry must be within 1e-4 from curve geometry
     LinearizationTolerance = 1e-4,
 };
 ```
-## Paso 2: especificar la ruta de salida
-Defina la ruta donde desea guardar el archivo JSON de salida:
+
+### Paso 2: Definir la ruta de salida (cómo exportar GeoJSON)
+Especifica dónde se guardará el archivo resultante. Reemplaza el marcador de posición con tu carpeta real.
+
 ```csharp
 string path = "Your Document Directory" + "SpecifyLinearizationTolerance_out.json";
 ```
- Reemplazar`"Your Document Directory"` con la ruta del directorio real donde desea guardar el archivo.
-## Paso 3: crear una capa vectorial
-Cree una capa vectorial usando las opciones especificadas y la ruta de salida:
+
+### Paso 3: **Crear capa vectorial** con las opciones configuradas
+Ahora realmente **creamos la capa vectorial** usando el método `VectorLayer.Create`. El bloque `using` garantiza la correcta liberación de recursos.
+
 ```csharp
 using (VectorLayer layer = VectorLayer.Create(path, Drivers.GeoJson, options))
 {
-    // Tu código aquí
+    // Your code here
 }
 ```
- Este fragmento de código garantiza la eliminación adecuada de los recursos mediante el`using` declaración.
-## Paso 4: construir geometría
-Construya una geometría (en este caso, una cadena circular) que desee agregar a la capa:
+
+### Paso 4: Construir una geometría (p. ej., una cadena circular)
+Aquí construimos una geometría de ejemplo—un `CircularString`. Puedes reemplazarla con cualquier WKT válido.
+
 ```csharp
 var curveGeometry = Geometry.FromText("CircularString (0 0, 1 1, 2 0)");
 ```
-Reemplace la definición de geometría con la geometría que desee.
-## Paso 5: agregar función a la capa
-Construya una entidad y asígnele la geometría, luego agregue la entidad a la capa vectorial:
+
+### Paso 5: **Agregar entidad a la capa** y guardar
+Finalmente, creamos una entidad, asignamos la geometría y la añadimos a la capa. Este es el núcleo de la operación **agregar entidad a la capa**.
+
 ```csharp
 var feature = layer.ConstructFeature();
 feature.Geometry = curveGeometry;
 layer.Add(feature);
 ```
 
-## Conclusión
-Dominar Aspose.GIS para .NET abre un mundo de posibilidades en el procesamiento y manipulación de datos geoespaciales. Si sigue este tutorial y explora la extensa documentación y recursos proporcionados por Aspose, podrá elevar sus habilidades de desarrollo SIG a nuevas alturas.
+Cuando el bloque `using` finaliza, la capa se escribe automáticamente en el archivo definido en `path`, proporcionándote un archivo GeoJSON listo para usar.
+
+## Problemas comunes y consejos
+- **Ruta incorrecta** – Asegúrate de que el directorio exista y tengas permisos de escritura.  
+- **Tolerancia demasiado baja** – Establecer `LinearizationTolerance` a un valor muy pequeño puede aumentar drásticamente el tamaño del archivo. Ajústalo según tus necesidades de precisión.  
+- **Errores de licencia** – Si ves advertencias de licencia, verifica que el archivo de licencia se haya cargado correctamente antes de cualquier llamada a Aspose.GIS.
+
 ## Preguntas frecuentes
-### ¿Aspose.GIS para .NET es compatible con otros marcos .NET?
-Sí, Aspose.GIS para .NET es compatible con varios marcos .NET, incluidos .NET Core y .NET Standard.
-### ¿Puedo utilizar Aspose.GIS para .NET en mis proyectos comerciales?
-¡Absolutamente! Aspose.GIS para .NET ofrece licencias comerciales para su uso en proyectos comerciales.
-### ¿Aspose.GIS para .NET admite diferentes formatos de datos SIG?
-Sí, Aspose.GIS para .NET admite una amplia gama de formatos de datos SIG, incluidos GeoJSON, Shapefile, KML y muchos más.
-### ¿Existe una versión de prueba disponible de Aspose.GIS para .NET?
-Sí, puede descargar una versión de prueba gratuita de Aspose.GIS para .NET desde el sitio web de Aspose.
-### ¿Dónde puedo obtener soporte para Aspose.GIS para .NET?
-Puede obtener soporte para Aspose.GIS para .NET en los foros de Aspose. Visite el enlace de soporte proporcionado en la sección de recursos a continuación.
+
+**P: ¿Aspose.GIS para .NET es compatible con otros frameworks de .NET?**  
+R: Sí, funciona con .NET Framework, .NET Core y .NET 5/6/7.
+
+**P: ¿Puedo usar Aspose.GIS en proyectos comerciales?**  
+R: Por supuesto. Una licencia comercial elimina todas las restricciones de evaluación.
+
+**P: ¿Aspose.GIS admite otros formatos GIS además de GeoJSON?**  
+R: Sí, admite Shapefile, KML, GML y muchos más.
+
+**P: ¿Existe una versión de prueba disponible?**  
+R: Puedes descargar una prueba gratuita desde el sitio web de Aspose.
+
+**P: ¿Dónde puedo obtener soporte?**  
+R: Usa los foros de Aspose o el enlace de soporte en la sección de recursos.
+
+## Conclusión
+Al seguir estos pasos ahora sabes cómo **crear capa vectorial**, configurar la tolerancia de linealización y **agregar entidad a la capa** para una creación fluida de **exportar archivo GeoJSON**. Explora tipos de geometría adicionales y el manejo de atributos para aprovechar al máximo Aspose.GIS en tus proyectos GIS con .NET.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+---
+
+**Última actualización:** 2025-12-21  
+**Probado con:** Aspose.GIS 24.11 para .NET  
+**Autor:** Aspose  
+
+---

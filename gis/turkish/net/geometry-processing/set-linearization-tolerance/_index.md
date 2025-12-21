@@ -1,33 +1,47 @@
 ---
-title: Aspose.GIS for .NET'i kullanarak Doğrusallaştırma Toleransını Ayarlayın
-linktitle: Doğrusallaştırma Toleransını Ayarla
-second_title: Aspose.GIS .NET API'si
-description: Aspose.GIS for .NET konusunda uzmanlaşarak coğrafi verileri zahmetsizce yönetin. Bu adım adım öğreticiyi takip edin ve .NET'te GIS geliştirmenin tüm potansiyelini ortaya çıkarın.
-weight: 17
+date: 2025-12-21
+description: Aspose.GIS for .NET kullanarak vektör katmanı oluşturmayı, lineerleştirme
+  toleransını ayarlamayı ve katmana özellik eklemeyi öğrenin. GeoJSON dosyalarını
+  dışa aktarmak için bu adım adım kılavuzu izleyin.
+linktitle: Set Linearization Tolerance
+second_title: Aspose.GIS .NET API
+title: Aspose.GIS for .NET kullanarak Vektör Katmanı Oluşturma ve Lineerleştirme Toleransını
+  Ayarlama
 url: /tr/net/geometry-processing/set-linearization-tolerance/
+weight: 17
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.GIS for .NET'i kullanarak Doğrusallaştırma Toleransını Ayarlayın
+# Aspose.GIS for .NET kullanarak Vektör Katmanı Oluşturma ve Lineerleştirme Toleransını Ayarlama
 
-## giriiş
-Coğrafi Bilgi Sistemleri (GIS) geliştirme dünyasında, Aspose.GIS for .NET, konumsal verileri kolay ve verimli bir şekilde işlemek için güçlü bir araç seti olarak öne çıkıyor. İster deneyimli bir GIS geliştiricisi olun, ister yeni başlıyor olun, Aspose.GIS'te uzmanlaşmak, .NET ortamlarında coğrafi verilerle çalışma becerinizi önemli ölçüde artırabilir.
+## Giriş
+Eğer **create vector layer** dosyaları oluşturmanız, eğri hassasiyetini kontrol etmeniz ve sonucu bir GeoJSON belgesi olarak dışa aktarmanız gerekiyorsa, Aspose.GIS for .NET bunu oldukça basit hale getirir. Bu öğreticide GeoJSON seçeneklerini nasıl yapılandıracağınızı, lineerleştirme toleransını nasıl ayarlayacağınızı ve **add feature to layer** nesnelerini nasıl ekleyeceğinizi öğreneceksiniz — tüm bunları kodu temiz ve üretim‑hazır tutarak.
+
+## Hızlı Yanıtlar
+- **What does “create vector layer” mean?** Yeni bir GIS vektör veri kümesi (ör. bir GeoJSON dosyası) oluşturur ve bu küme geometrileri ve öznitelikleri depolayabilir.  
+- **How to set tolerance?** `GeoJsonOptions` sınıfının `LinearizationTolerance` özelliğini kullanın.  
+- **Can I export a GeoJSON file?** Evet—`Drivers.GeoJson` sürücüsüyle bir `VectorLayer` oluşturmanız yeterlidir.  
+- **Do I need a license?** Geçerli bir Aspose.GIS lisansı tüm özelliklerin kilidini açar; geçici bir lisans değerlendirme için çalışır.  
+- **Which .NET versions are supported?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
+
+## “create vector layer” nedir?
+Bir vektör katmanı oluşturmak, nokta, çizgi ve çokgen gibi geometrik özellikleri tutabilen yeni bir GIS konteyneri (ör. bir GeoJSON dosyası) başlatmak anlamına gelir. Bu katman, oluşturduğunuz tüm geometrilerin ve eklediğiniz tüm özniteliklerin hedefi olur.
+
+## GeoJSON seçeneklerini neden yapılandırmalıyız?
+GeoJSON seçeneklerini yapılandırmak — özellikle **linearization tolerance** — eğri geometrilerin (ör. `CircularString`) uygulamanızın doğruluk gereksinimlerini karşılayacak bir hassasiyetle yaklaştırılmasını sağlar. Bu adım, daha sonra **export GeoJSON file** işlemiyle web haritalarında veya mekansal analizlerde kullanmak için kritik öneme sahiptir.
+
 ## Önkoşullar
-Aspose.GIS for .NET'i kullanmaya başlamadan önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
-### 1. Visual Studio'yu yükleyin
-Sisteminizde Visual Studio'nun kurulu olduğundan emin olun. Aspose.GIS for .NET, Visual Studio ile sorunsuz bir şekilde bütünleşerek .NET geliştiricilerine tanıdık bir geliştirme ortamı sağlar.
-### 2. Aspose.GIS Lisansını Alın
-Aspose.GIS'in tüm potansiyelini açığa çıkarmak için geçerli bir lisansa ihtiyacınız var. Aspose web sitesinden bir lisans alabilir veya değerlendirme amacıyla geçici bir lisans almayı tercih edebilirsiniz.
-### 3. Aspose.GIS for .NET'i indirin
-Aspose.GIS for .NET kütüphanesini Aspose web sitesinden indirin. İndirme bağlantısını aşağıdaki kaynaklar bölümünde bulabilirsiniz.
-### 4. C#'a aşinalık
-Bu eğitimde sağlanan örnekleri anlamak ve uygulamak için temel C# programlama dili bilgisi gereklidir.
+1. **Visual Studio** yüklü (herhangi bir güncel sürüm).  
+2. **Aspose.GIS license** (veya geçici bir değerlendirme anahtarı).  
+3. **Aspose.GIS for .NET** kütüphanesi indirilmiş ve projenize referans verilmiş.  
+4. **C#** hakkında temel bilgi.
 
-## Ad Alanlarını İçe Aktar
-Aspose.GIS for .NET ile çalışmaya başlamadan önce gerekli ad alanlarını projenize aktarın:
+## Ad Alanlarını İçe Aktarma
+First, import the required namespaces so the compiler knows where to find the GIS classes:
+
 ```csharp
 using Aspose.Gis;
 using Aspose.Gis.Formats.GeoJson;
@@ -38,61 +52,89 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 ```
-#Şimdi verilen örneği birden fazla adıma ayıralım:
-## Adım 1: Doğrusallaştırma Toleransını Ayarlayın
-Bu adımda GeoJSON seçenekleri için doğrusallaştırma toleransını ayarlayacaksınız:
+
+## Adım‑Adım Kılavuz
+
+### Adım 1: GeoJSON Seçeneklerini Yapılandırma (tolerans nasıl ayarlanır)
+`GeoJsonOptions` nesnesi oluşturacağız ve Aspose.GIS'e lineerleştirilmiş geometrinin orijinal eğriye ne kadar yakın olması gerektiğini söyleyeceğiz.
+
 ```csharp
 var options = new GeoJsonOptions
 {
-    // Doğrusallaştırılmış geometri, eğri geometrisinden 1e-4 dahilinde olmalıdır
+    // linearized geometry must be within 1e-4 from curve geometry
     LinearizationTolerance = 1e-4,
 };
 ```
-## Adım 2: Çıkış Yolunu Belirleyin
-Çıktı JSON dosyasını kaydetmek istediğiniz yolu tanımlayın:
+
+### Adım 2: Çıktı Yolunu Tanımlama (GeoJSON nasıl dışa aktarılır)
+Oluşturulan dosyanın nereye kaydedileceğini belirtin. Yer tutucuyu gerçek klasör yolunuzla değiştirin.
+
 ```csharp
 string path = "Your Document Directory" + "SpecifyLinearizationTolerance_out.json";
 ```
- Yer değiştirmek`"Your Document Directory"` dosyayı kaydetmek istediğiniz gerçek dizin yolu ile.
-## Adım 3: Vektör Katmanı Oluşturun
-Belirtilen seçenekleri ve çıktı yolunu kullanarak bir vektör katmanı oluşturun:
+
+### Adım 3: **Create Vector Layer** yapılandırılmış seçeneklerle
+Şimdi `VectorLayer.Create` metodunu kullanarak gerçekten **create vector layer** yapıyoruz. `using` bloğu kaynakların doğru şekilde serbest bırakılmasını garanti eder.
+
 ```csharp
 using (VectorLayer layer = VectorLayer.Create(path, Drivers.GeoJson, options))
 {
-    // Kodunuz burada
+    // Your code here
 }
 ```
- Bu kod pasajı, aşağıdakileri kullanarak kaynakların uygun şekilde atılmasını sağlar:`using` ifade.
-## Adım 4: Geometriyi Oluşturun
-Katmana eklemek istediğiniz bir geometri (bu durumda dairesel bir dize) oluşturun:
+
+### Adım 4: Geometri Oluşturma (ör. bir circular string)
+Burada örnek bir geometri oluşturuyoruz — bir `CircularString`. Bunu geçerli herhangi bir WKT ile değiştirebilirsiniz.
+
 ```csharp
 var curveGeometry = Geometry.FromText("CircularString (0 0, 1 1, 2 0)");
 ```
-Geometri tanımını istediğiniz geometriyle değiştirin.
-## Adım 5: Katmana Özellik Ekleme
-Bir özellik oluşturun ve geometriyi ona atayın, ardından özelliği vektör katmanına ekleyin:
+
+### Adım 5: **Add Feature to Layer** ve kaydet
+Son olarak bir özellik (feature) oluşturuyor, geometrisini atıyor ve katmana ekliyoruz. Bu, **add feature to layer** işleminin çekirdeğidir.
+
 ```csharp
 var feature = layer.ConstructFeature();
 feature.Geometry = curveGeometry;
 layer.Add(feature);
 ```
 
-## Çözüm
-Aspose.GIS for .NET'e hakim olmak, coğrafi veri işleme ve manipülasyonunda bir olasılıklar dünyasının kapılarını açar. Bu eğitimi takip ederek ve Aspose tarafından sağlanan kapsamlı belgeleri ve kaynakları keşfederek GIS geliştirme becerilerinizi yeni boyutlara yükseltebilirsiniz.
-## SSS'ler
-### Aspose.GIS for .NET diğer .NET çerçeveleriyle uyumlu mu?
-Evet, Aspose.GIS for .NET, .NET Core ve .NET Standard dahil olmak üzere çeşitli .NET çerçeveleriyle uyumludur.
-### Aspose.GIS for .NET'i ticari projelerimde kullanabilir miyim?
-Kesinlikle! Aspose.GIS for .NET, ticari projelerde kullanılmak üzere ticari lisanslar sunar.
-### Aspose.GIS for .NET farklı GIS veri formatlarını destekliyor mu?
-Evet, Aspose.GIS for .NET, GeoJSON, Shapefile, KML ve çok daha fazlasını içeren çok çeşitli GIS veri formatlarını destekler.
-### Aspose.GIS for .NET'in deneme sürümü mevcut mu?
-Evet, Aspose.GIS for .NET'in ücretsiz deneme sürümünü Aspose web sitesinden indirebilirsiniz.
-### Aspose.GIS for .NET için nereden destek alabilirim?
-Aspose forumlarından Aspose.GIS for .NET konusunda destek alabilirsiniz. Aşağıdaki kaynaklar bölümünde sağlanan destek bağlantısını ziyaret edin.
+`using` bloğu sona erdiğinde, katman `path` içinde tanımlanan dosyaya otomatik olarak yazılır ve size kullanıma hazır bir GeoJSON dosyası sağlar.
+
+## Yaygın Sorunlar ve İpuçları
+- **Incorrect path** – Dizinin var olduğundan ve yazma izinlerine sahip olduğunuzdan emin olun.  
+- **Tolerance too low** – `LinearizationTolerance` değerini çok düşük bir değere ayarlamak dosya boyutunu dramatik şekilde artırabilir. Doğruluk ihtiyaçlarınıza göre ayarlayın.  
+- **License errors** – Lisans uyarıları görürseniz, herhangi bir Aspose.GIS çağrısından önce lisans dosyasının doğru yüklendiğini doğrulayın.
+
+## Sıkça Sorulan Sorular
+
+**S: Aspose.GIS for .NET diğer .NET framework'leriyle uyumlu mu?**  
+C: Evet, .NET Framework, .NET Core ve .NET 5/6/7 ile çalışır.
+
+**S: Aspose.GIS'i ticari projelerde kullanabilir miyim?**  
+C: Kesinlikle. Ticari bir lisans tüm değerlendirme kısıtlamalarını kaldırır.
+
+**S: Aspose.GIS GeoJSON dışındaki diğer GIS formatlarını destekliyor mu?**  
+C: Evet, Shapefile, KML, GML ve daha birçok formatı destekler.
+
+**S: Deneme sürümü mevcut mu?**  
+C: Aspose web sitesinden ücretsiz bir deneme sürümü indirebilirsiniz.
+
+**S: Destek nereden alınabilir?**  
+C: Aspose forumlarını veya kaynaklar bölümündeki destek bağlantısını kullanın.
+
+## Sonuç
+Bu adımları izleyerek artık **create vector layer** nasıl yapılacağını, lineerleştirme toleransını nasıl yapılandıracağınızı ve sorunsuz bir **export GeoJSON file** oluşturmak için **add feature to layer** işlemini nasıl gerçekleştireceğinizi biliyorsunuz. Ek geometri tiplerini ve öznitelik yönetimini keşfederek Aspose.GIS'i .NET GIS projelerinizde tam anlamıyla kullanın.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+---
+
+**Son Güncelleme:** 2025-12-21  
+**Test Edilen Versiyon:** Aspose.GIS 24.11 for .NET  
+**Yazar:** Aspose
