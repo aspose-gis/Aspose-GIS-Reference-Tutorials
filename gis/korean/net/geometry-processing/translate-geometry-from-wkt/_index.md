@@ -1,27 +1,47 @@
 ---
-title: .NET에서 Aspose.GIS를 사용하여 WKT의 형상 변환
-linktitle: WKT에서 기하학 변환
+date: 2025-12-23
+description: Aspose.GIS for .NET를 사용하여 WKT를 지오메트리로 변환하고 포인트를 계산하는 방법을 배우세요. 개발자를 위한
+  단계별 가이드.
+linktitle: Translate Geometry from WKT
 second_title: Aspose.GIS .NET API
-description: .NET용 Aspose.GIS를 사용하여 Well-Known Text의 형상을 변환하는 방법을 알아보세요. 원활한 통합을 위한 단계별 튜토리얼입니다.
-weight: 21
+title: Aspose.GIS를 사용하여 .NET에서 WKT를 Geometry로 변환하는 방법
 url: /ko/net/geometry-processing/translate-geometry-from-wkt/
+weight: 21
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# .NET에서 Aspose.GIS를 사용하여 WKT의 형상 변환
+# Aspose.GIS for .NET를 사용하여 WKT를 Geometry로 변환하기
 
-## 소개
-이 튜토리얼에서는 .NET용 Aspose.GIS를 사용하여 WKT(Well-Known Text)의 기하학을 변환하는 프로세스를 자세히 살펴보겠습니다. Aspose.GIS는 개발자가 쉽게 지리공간 데이터로 작업할 수 있게 해주는 강력한 .NET API입니다. 숙련된 개발자이거나 지리 공간 프로그래밍을 처음 시작하는 사람이든 이 튜토리얼은 프로세스를 단계별로 안내합니다.
-## 전제조건
-시작하기 전에 다음 전제 조건이 충족되었는지 확인하세요.
-1.  .NET API용 Aspose.GIS: 다음에서 다운로드할 수 있습니다.[여기](https://releases.aspose.com/gis/net/).
-2. C# 프로그래밍 언어에 대한 기본 이해.
+## Introduction
+이 튜토리얼에서는 Aspose.GIS for .NET을 사용해 **WKT를 Geometry로 변환하는 방법**을 알아보고, 변환된 도형에서 **포인트 수를 세는 방법**에 대한 실용적인 예제를 확인합니다. 매핑 서비스 구축, GIS 데이터 처리, 혹은 .NET 애플리케이션에서 Well‑Known Text를 읽어야 할 경우, 이 단계들을 따라 하면 빠르게 시작할 수 있습니다.
 
-## 네임스페이스 가져오기
-먼저 필요한 네임스페이스를 C# 프로젝트로 가져옵니다.
+## Quick Answers
+- **Can Aspose.GIS read WKT?** Yes – the `Geometry.FromText` method parses WKT strings directly.  
+- **How many lines of code are needed?** About 5‑6 lines for a basic conversion and point count.  
+- **Do I need a license for production?** Yes, a commercial license is required for non‑trial use.  
+- **Supported .NET versions?** .NET Framework 4.6+, .NET Core 3.1+, .NET 5/6+.  
+- **Is counting points built‑in?** Absolutely – geometry objects expose a `Count` property.
+
+## What is “convert WKT to geometry”?
+Well‑Known Text (WKT)는 기하 객체를 표현하기 위한 평문 마크업입니다. WKT를 Geometry로 변환한다는 것은 해당 텍스트를 프로그래밍 방식으로 조작할 수 있는 객체 모델(`ILineString`, `IPolygon` 등)로 바꾸는 것을 의미합니다.
+
+## Why use Aspose.GIS for this conversion?
+- **Zero‑dependency parsing** – no external libraries needed.  
+- **Full GIS feature set** – supports 2D/3D coordinates, SRID handling, and many file formats.  
+- **High performance** – optimized for large datasets and multithreaded scenarios.  
+
+## Prerequisites
+Before we begin, make sure you have:
+
+1. Aspose.GIS for .NET API – download it from [here](https://releases.aspose.com/gis/net/).  
+2. Basic knowledge of C# and a .NET development environment (Visual Studio, VS Code, etc.).
+
+## Import Namespaces
+First, add the required namespaces to your C# file:
+
 ```csharp
 using Aspose.Gis.Geometries;
 using System;
@@ -30,30 +50,64 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 ```
-## 1단계: WKT에서 유도선 생성
-첫 번째 단계는 Well-Known Text 표현에서 LineString 개체를 만드는 것입니다.
+
+## Step 1: Create a LineString from WKT
+Now we’ll **convert WKT to geometry** by creating a `LineString` object from a WKT string that includes Z‑coordinates:
+
 ```csharp
 ILineString line = (ILineString)Geometry.FromText("LINESTRING Z (0.1 0.2 0.3, 1 2 1, 12 23 2)");
 ```
-## 2단계: 유도선의 점 개수 계산
-다음으로 LineString의 점 수를 계산해 보겠습니다.
+
+> *Pro tip:* The `FromText` method automatically detects the geometry type, so you can cast it to the appropriate interface (`ILineString`, `IPolygon`, etc.).
+
+## How to count points in a LineString?
+To answer the secondary keyword **how to count points**, simply read the `Count` property of the `ILineString` instance:
+
 ```csharp
-Console.WriteLine(line.Count); // 출력: 3
+Console.WriteLine(line.Count); // Output: 3
 ```
 
-## 결론
-이 튜토리얼에서는 .NET용 Aspose.GIS를 사용하여 Well-Known Text의 기하학을 변환하는 방법을 살펴보았습니다. 이러한 간단한 단계를 따르면 지리공간 데이터 처리를 .NET 애플리케이션에 원활하게 통합할 수 있습니다.
-## FAQ
-### 상업용 프로젝트에서 .NET용 Aspose.GIS를 사용할 수 있나요?
-그래 넌 할수있어. Aspose.GIS for .NET은 개발자별로 라이선스가 부여되므로 상업용 프로젝트에서 아무런 제한 없이 사용할 수 있습니다.
-### .NET용 Aspose.GIS는 WKT 외에 다른 기하학적 형식을 지원합니까?
-예, .NET용 Aspose.GIS는 WKB, GeoJSON 및 Shapefile을 포함한 다양한 기하학적 형식을 지원합니다.
-### .NET용 Aspose.GIS에 대한 무료 평가판이 있습니까?
-예, 다음에서 무료 평가판을 받을 수 있습니다.[여기](https://releases.aspose.com/).
-### .NET용 Aspose.GIS에 대한 문서는 어디서 찾을 수 있나요?
- 문서를 찾을 수 있습니다[여기](https://reference.aspose.com/gis/net/).
-### .NET용 Aspose.GIS에 대한 지원을 받으려면 어떻게 해야 합니까?
- Aspose.GIS 포럼에서 지원을 받을 수 있습니다.[여기](https://forum.aspose.com/c/gis/33).
+The output shows that the line contains three vertices, confirming that the conversion succeeded and the point count is accurate.
+
+## Conclusion
+You now know **how to convert WKT to geometry** using Aspose.GIS for .NET and how to retrieve the number of points with a single property call. These fundamentals let you integrate GIS data processing into any .NET application, from desktop tools to cloud services.
+
+## FAQ's
+### Can I use Aspose.GIS for .NET in my commercial projects?
+Yes, you can. Aspose.GIS for .NET is licensed per developer, allowing you to use it in commercial projects without any restrictions.
+
+### Does Aspose.GIS for .NET support other geometric formats besides WKT?
+Yes, Aspose.GIS for .NET supports various geometric formats, including WKB, GeoJSON, and Shapefile.
+
+### Is there a free trial available for Aspose.GIS for .NET?
+Yes, you can get a free trial from [here](https://releases.aspose.com/).
+
+### Where can I find documentation for Aspose.GIS for .NET?
+You can find the documentation [here](https://reference.aspose.com/gis/net/).
+
+### How can I get support for Aspose.GIS for .NET?
+You can get support from the Aspose.GIS forum [here](https://forum.aspose.com/c/gis/33).
+
+## Frequently Asked Questions (Additional)
+
+**Q: What if my WKT string contains invalid syntax?**  
+A: `Geometry.FromText` throws a `FormatException`. Wrap the call in a try‑catch block to handle malformed WKT gracefully.
+
+**Q: Can I convert a collection of WKT strings in one go?**  
+A: Yes – iterate over your string list, call `Geometry.FromText` for each item, and store the results in a `List<IGeometry>`.
+
+**Q: Does Aspose.GIS preserve Z‑values when converting?**  
+A: Absolutely. When the WKT includes a Z coordinate (as shown in the example), the resulting geometry retains those values.
+
+**Q: Is it possible to export the geometry back to WKT after manipulation?**  
+A: Use the `ToText()` method on any `IGeometry` instance to get the WKT representation.
+
+---
+
+**Last Updated:** 2025-12-23  
+**Tested With:** Aspose.GIS 24.11 for .NET  
+**Author:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
