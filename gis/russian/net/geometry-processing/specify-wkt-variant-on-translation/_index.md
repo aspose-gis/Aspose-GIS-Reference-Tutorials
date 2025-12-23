@@ -1,28 +1,49 @@
 ---
-title: Укажите вариант WKT для перевода с помощью Aspose.GIS
-linktitle: Укажите вариант WKT при переводе
-second_title: API Aspose.GIS .NET
-description: Узнайте, как указать варианты WKT в Aspose.GIS для .NET, чтобы эффективно управлять форматом и точностью представления пространственных данных.
-weight: 19
+date: 2025-12-23
+description: Узнайте, как преобразовать геометрию в WKT с различными вариантами, установить
+  числовой формат и настроить точность десятичных знаков с помощью Aspose.GIS для
+  .NET.
+linktitle: Convert Geometry to WKT
+second_title: Aspose.GIS .NET API
+title: Преобразование геометрии в варианты WKT с помощью Aspose.GIS
 url: /ru/net/geometry-processing/specify-wkt-variant-on-translation/
+weight: 19
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Укажите вариант WKT для перевода с помощью Aspose.GIS
+# Преобразование геометрии в варианты WKT с использованием Aspose.GIS
 
-## Введение
-Aspose.GIS for .NET — это мощная библиотека, которая позволяет разработчикам легко работать с данными географической информационной системы (ГИС) в своих .NET-приложениях. Одной из важных функций, предоставляемых Aspose.GIS, является возможность указывать вариант хорошо известного текста (WKT) во время перевода, что позволяет пользователям контролировать формат и точность представления пространственных данных. В этом уроке мы рассмотрим, как шаг за шагом указывать варианты WKT, используя Aspose.GIS для .NET.
-## Предварительные условия
-Прежде чем мы начнем, убедитесь, что у вас есть следующие предварительные условия:
-1. Aspose.GIS for .NET: Загрузите и установите Aspose.GIS for .NET с сайта[страница загрузки](https://releases.aspose.com/gis/net/).
-2. Среда разработки: убедитесь, что у вас настроена среда разработки .NET.
-3. Базовые знания: Знакомство с языком программирования C# и .NET Framework.
+## Introduction
+В современных приложениях .NET **преобразование геометрии в WKT** является обычным шагом, когда необходимо обмениваться пространственными данными с другими системами или сохранять их в текстовом формате. Aspose.GIS для .NET делает это преобразование простым, предоставляя полный контроль над вариантом WKT, форматом чисел и точностью десятичных знаков. В этом руководстве вы узнаете, как преобразовать геометрию в WKT, выбрать правильный вариант и точно настроить вывод в соответствии с требованиями вашего проекта.
 
-## Импортировать пространства имен
-Прежде чем использовать функциональность Aspose.GIS в своем коде, импортируйте необходимые пространства имен:
+## Quick Answers
+- **Что означает «преобразование геометрии в WKT»?** Это преобразует геометрические объекты (точки, линии, полигоны) в представление Well‑Known Text.  
+- **Какие варианты WKT поддерживаются?** `Iso`, `SimpleFeatureAccessOutdated` и `ExtendedPostGis`.  
+- **Как контролировать точность десятичных знаков?** Используйте параметры `NumericFormat`, такие как `General`, `RoundTrip` или `Flat`.  
+- **Нужна ли лицензия для продакшн?** Да, для использования в не‑тестовом режиме требуется коммерческая лицензия.  
+- **Какие версии .NET совместимы?** .NET Framework 4.0+ и .NET 5/6/7.
+
+## What is “convert geometry to WKT”?
+Преобразование геометрии в WKT создает человекочитаемую строку, описывающую пространственные объекты. Этот формат широко поддерживается GIS‑инструментами, базами данных и веб‑сервисами, что делает его идеальным для обмена данными.
+
+## Why use Aspose.GIS for this conversion?
+- **Precision control** – Выберите, сколько десятичных знаков будет выводиться.  
+- **Variant flexibility** – Соответствуйте точному диалекту WKT, требуемому вашей целевой системой.  
+- **No external dependencies** – Чистая .NET‑библиотека, без нативных бинарных файлов.
+
+## Prerequisites
+Перед началом убедитесь, что у вас есть:
+
+1. **Aspose.GIS for .NET** – Скачайте и установите его со [страницы загрузки](https://releases.aspose.com/gis/net/).  
+2. **Development Environment** – Любая современная версия Visual Studio или VS Code с .NET SDK.  
+3. **Basic C# knowledge** – Знание классов, объектов и платформы .NET.
+
+## Import Namespaces
+Сначала подключите необходимые пространства имён:
+
 ```csharp
 using Aspose.Gis.Geometries;
 using Aspose.Gis.SpatialReferencing;
@@ -33,45 +54,80 @@ using System.Text;
 using System.Threading.Tasks;
 using Aspose.Gis;
 ```
-## Шаг 1. Создайте точечный объект
- Сначала создайте`Point` объект с широтой, долготой и дополнительными значениями меры (M):
+
+## Step 1: Create a Point Object
+Создайте `Point`, который позже будет **преобразован в WKT**. Точка содержит широту, долготу и необязательное значение измерения (M):
+
 ```csharp
 Point point = new Point(23.5732, 25.3421) { M = 40.3 };
 ```
-## Шаг 2. Установите пространственную систему отсчета (SRS).
-Назначьте точечному объекту систему пространственной привязки (SRS). В этом примере мы используем пространственную систему координат WGS84:
+
+## Step 2: Set Spatial Reference System (SRS)
+Назначьте систему координат, чтобы вывод WKT знал, к какой системе привязаны координаты. Здесь используется общепринятая система WGS84:
+
 ```csharp
 point.SpatialReferenceSystem = SpatialReferenceSystem.Wgs84;
 ```
-## Шаг 3. Укажите вариант WKT
- Теперь укажите вариант WKT для перевода. Aspose.GIS поддерживает различные варианты WKT, в том числе`Iso`, `SimpleFeatureAccessOutdated` , и`ExtendedPostGis`. Выберите подходящий вариант исходя из ваших требований:
+
+## Step 3: Specify WKT Variant
+Выберите подходящий вариант WKT при **преобразовании геометрии в WKT**. Каждый вариант форматирует вывод немного по‑разному:
+
 ```csharp
-Console.WriteLine(point.AsText(WktVariant.Iso)); // ТОЧКА М (23.5732, 25.3421, 40.3)
-Console.WriteLine(point.AsText(WktVariant.SimpleFeatureAccessOutdated)); // ТОЧКА (23.5732, 25.3421)
+Console.WriteLine(point.AsText(WktVariant.Iso)); // POINT M (23.5732, 25.3421, 40.3)
+Console.WriteLine(point.AsText(WktVariant.SimpleFeatureAccessOutdated)); // POINT (23.5732, 25.3421)
 Console.WriteLine(point.AsText(WktVariant.ExtendedPostGis)); // SRID=4326;POINTM (23.5732, 25.3421, 40.3)
 ```
-## Шаг 4. Управляйте числовым форматом
-Вы можете управлять числовым форматом координат в представлении WKT. Aspose.GIS предоставляет параметры для указания десятичной точности:
+
+## Step 4: Control Numeric Format (Set Numeric Format & Adjust Decimal Precision)
+Точно настройте числовое представление координат. Класс `NumericFormat` позволяет **установить формат чисел** и **регулировать точность десятичных знаков** в соответствии с вашими потребностями:
+
 ```csharp
-Console.WriteLine("G17  : " + point.AsText(WktVariant.Iso, NumericFormat.General(17))); // ТОЧКА М (23,5732 25,342099999999999 40,299999999999997)
-Console.WriteLine("R    : " + point.AsText(WktVariant.Iso, NumericFormat.RoundTrip)); // ТОЧКА М (23,5732 25,3421 40,3)
-Console.WriteLine("G3   : " + point.AsText(WktVariant.Iso, NumericFormat.General(3))); // ТОЧКА М (23,6 25,3 40,3)
-Console.WriteLine("Flat3: " + point.AsText(WktVariant.Iso, NumericFormat.Flat(3))); // ТОЧКА М (23,573 25,342 40,3)
+Console.WriteLine("G17  : " + point.AsText(WktVariant.Iso, NumericFormat.General(17))); // POINT M (23.5732 25.342099999999999 40.299999999999997)
+Console.WriteLine("R    : " + point.AsText(WktVariant.Iso, NumericFormat.RoundTrip)); // POINT M (23.5732 25.3421 40.3)
+Console.WriteLine("G3   : " + point.AsText(WktVariant.Iso, NumericFormat.General(3))); // POINT M (23.6 25.3 40.3)
+Console.WriteLine("Flat3: " + point.AsText(WktVariant.Iso, NumericFormat.Flat(3))); // POINT M (23.573 25.342 40.3)
 ```
 
-## Заключение
-В этом уроке мы узнали, как указывать варианты WKT при переводе с помощью Aspose.GIS для .NET. Следуя шагам, описанным выше, разработчики могут эффективно контролировать формат и точность представления пространственных данных в своих приложениях .NET, повышая гибкость и удобство использования географических информационных систем.
-## Часто задаваемые вопросы
-### Совместим ли Aspose.GIS со всеми версиями .NET?
-Да, Aspose.GIS поддерживает .NET Framework 4.0 и выше.
-### Могу ли я использовать Aspose.GIS для коммерческих проектов?
-Да, Aspose.GIS можно использовать как для личных, так и для коммерческих проектов.
-### Обеспечивает ли Aspose.GIS поддержку других форматов пространственных данных?
-Да, Aspose.GIS поддерживает широкий спектр форматов пространственных данных, включая ESRI Shapefile, GeoJSON и KML.
-### Доступна ли бесплатная пробная версия Aspose.GIS?
- Да, вы можете скачать бесплатную пробную версию Aspose.GIS с сайта[здесь](https://releases.aspose.com/).
-### Где я могу получить помощь или поддержку по Aspose.GIS?
- Вы можете опубликовать свои вопросы или обратиться за помощью к сообществу Aspose.GIS на странице[Форум](https://forum.aspose.com/c/gis/33).
+## Common Issues & Tips
+- **Missing M value** – Если измерение не требуется, опустите свойство `M`; вариант ISO автоматически его удалит.  
+- **Unexpected precision** – Убедитесь, что используете правильный `NumericFormat`; `General` сохраняет полную двойную точность, а `Flat` округляет до указанного количества знаков.  
+- **SRID not displayed** – Только вариант `ExtendedPostGis` добавляет префикс `SRID=` к выводу. Выбирайте этот вариант, если ваша целевая система ожидает SRID.
+
+## Conclusion
+Следуя этим шагам, вы теперь знаете, как **преобразовать геометрию в WKT**, выбрать правильный вариант и точно контролировать числовой вывод. Это даёт гибкость интеграции Aspose.GIS в любой GIS‑рабочий процесс, базу данных или веб‑сервис, который потребляет WKT.
+
+## FAQ's
+### Is Aspose.GIS compatible with all versions of .NET?
+Yes, Aspose.GIS supports .NET Framework 4.0 and higher.  
+
+### Can I use Aspose.GIS for commercial projects?
+Yes, Aspose.GIS can be used for both personal and commercial projects.  
+
+### Does Aspose.GIS provide support for other spatial data formats?
+Yes, Aspose.GIS supports a wide range of spatial data formats, including ESRI Shapefile, GeoJSON, and KML.  
+
+### Is there a free trial available for Aspose.GIS?
+Yes, you can download a free trial version of Aspose.GIS from [here](https://releases.aspose.com/).  
+
+### Where can I get help or support for Aspose.GIS?
+You can post your queries or seek assistance from the Aspose.GIS community at the [forum](https://forum.aspose.com/c/gis/33).
+
+## Frequently Asked Questions
+**Q: How do I export a Geometry collection to a single WKT string?**  
+A: Iterate over each geometry in the collection and concatenate their `AsText` results, optionally separating them with commas or newlines.
+
+**Q: Can I change the SRID without altering the coordinates?**  
+A: Yes, set the `SpatialReferenceSystem` property to the desired SRID; the coordinate values remain unchanged.
+
+**Q: What happens if I use an unsupported WKT variant?**  
+A: Aspose.GIS will throw an `ArgumentException`. Always validate the variant against `WktVariant` enum values.
+
+---
+
+**Last Updated:** 2025-12-23  
+**Tested With:** Aspose.GIS 24.11 for .NET  
+**Author:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}

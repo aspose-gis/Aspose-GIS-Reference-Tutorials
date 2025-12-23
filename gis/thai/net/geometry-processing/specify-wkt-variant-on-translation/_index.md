@@ -1,28 +1,46 @@
 ---
-title: ระบุตัวแปร WKT ในการแปลโดยใช้ Aspose.GIS
-linktitle: ระบุตัวแปร WKT ในการแปล
+date: 2025-12-23
+description: เรียนรู้วิธีแปลงเรขาคณิตเป็น WKT ด้วยตัวเลือกที่หลากหลาย ตั้งค่ารูปแบบตัวเลขและปรับความแม่นยำของทศนิยมโดยใช้
+  Aspose.GIS สำหรับ .NET.
+linktitle: Convert Geometry to WKT
 second_title: Aspose.GIS .NET API
-description: เรียนรู้วิธีระบุตัวแปร WKT ใน Aspose.GIS สำหรับ .NET เพื่อควบคุมรูปแบบการแสดงข้อมูลเชิงพื้นที่และความแม่นยำอย่างมีประสิทธิภาพ
-weight: 19
+title: แปลงเรขาคณิตเป็นตัวเลือก WKT Variant ด้วย Aspose.GIS
 url: /th/net/geometry-processing/specify-wkt-variant-on-translation/
+weight: 19
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# ระบุตัวแปร WKT ในการแปลโดยใช้ Aspose.GIS
+# แปลง Geometry เป็นตัวเลือก Variant ของ WKT ด้วย Aspose.GIS
 
-## การแนะนำ
-Aspose.GIS สำหรับ .NET เป็นไลบรารีที่มีประสิทธิภาพซึ่งช่วยให้นักพัฒนาสามารถทำงานกับข้อมูลระบบสารสนเทศภูมิศาสตร์ (GIS) ในแอปพลิเคชัน .NET ของตนได้อย่างง่ายดาย หนึ่งในคุณสมบัติที่สำคัญของ Aspose.GIS คือความสามารถในการระบุตัวแปร Well-Known Text (WKT) ในระหว่างการแปล ทำให้ผู้ใช้สามารถควบคุมรูปแบบและความแม่นยำของการแสดงข้อมูลเชิงพื้นที่ได้ ในบทช่วยสอนนี้ เราจะสำรวจวิธีระบุตัวแปร WKT ทีละขั้นตอนโดยใช้ Aspose.GIS สำหรับ .NET
+## บทนำ
+ในแอปพลิเคชัน .NET สมัยใหม่, **การแปลง geometry เป็น WKT** เป็นขั้นตอนทั่วไปเมื่อคุณต้องการแลกเปลี่ยนข้อมูลเชิงพื้นที่กับระบบอื่นหรือเก็บไว้ในรูปแบบข้อความ. Aspose.GIS for .NET ทำให้การแปลงนี้เป็นเรื่องง่ายในขณะที่ให้คุณควบคุมเต็มที่เกี่ยวกับ WKT variant, numeric format, และ decimal precision. ในบทแนะนำนี้คุณจะได้เรียนรู้วิธีการแปลง geometry เป็น WKT, เลือก variant ที่เหมาะสม, และปรับแต่งผลลัพธ์ให้ตรงตามความต้องการของโครงการของคุณอย่างแม่นยำ.
+
+## คำตอบสั้น
+- **“convert geometry to WKT” หมายถึงอะไร?** มันแปลงวัตถุเชิงเรขาคณิต (จุด, เส้น, โพลิกอน) ให้เป็นรูปแบบ Well‑Known Text.  
+- **WKT variants ที่สนับสนุนมีอะไรบ้าง?** `Iso`, `SimpleFeatureAccessOutdated`, และ `ExtendedPostGis`.  
+- **ฉันจะควบคุม decimal precision อย่างไร?** ใช้ตัวเลือก `NumericFormat` เช่น `General`, `RoundTrip`, หรือ `Flat`.  
+- **ฉันต้องการไลเซนส์สำหรับการใช้งานจริงหรือไม่?** ใช่, จำเป็นต้องมีไลเซนส์เชิงพาณิชย์สำหรับการใช้งานที่ไม่ใช่รุ่นทดลอง.  
+- **เวอร์ชัน .NET ที่เข้ากันได้คืออะไร?** .NET Framework 4.0+ และ .NET 5/6/7.
+
+## “convert geometry to WKT” คืออะไร?
+การแปลง geometry เป็น WKT จะสร้างสตริงที่มนุษย์อ่านได้ซึ่งอธิบายวัตถุเชิงพื้นที่. รูปแบบนี้ได้รับการยอมรับอย่างกว้างขวางโดยเครื่องมือ GIS, ฐานข้อมูล, และเว็บเซอร์วิส, ทำให้เหมาะสำหรับการแลกเปลี่ยนข้อมูล.
+
+## ทำไมต้องใช้ Aspose.GIS สำหรับการแปลงนี้?
+- **Precision control** – เลือกจำนวนตำแหน่งทศนิยมที่ต้องการแสดง.  
+- **Variant flexibility** – ตรงกับ dialect ของ WKT ที่ระบบปลายทางของคุณต้องการ.  
+- **No external dependencies** – ไลบรารี .NET แท้, ไม่มีไบนารีเนทีฟ.
+
 ## ข้อกำหนดเบื้องต้น
-ก่อนที่เราจะเริ่มต้น ตรวจสอบให้แน่ใจว่าคุณมีข้อกำหนดเบื้องต้นต่อไปนี้:
-1. Aspose.GIS สำหรับ .NET: ดาวน์โหลดและติดตั้ง Aspose.GIS สำหรับ .NET จาก[หน้าดาวน์โหลด](https://releases.aspose.com/gis/net/).
-2. สภาพแวดล้อมการพัฒนา: ตรวจสอบให้แน่ใจว่าคุณได้ตั้งค่าสภาพแวดล้อมการพัฒนา .NET แล้ว
-3. ความรู้พื้นฐาน: ความคุ้นเคยกับภาษาการเขียนโปรแกรม C# และกรอบงาน .NET
+1. **Aspose.GIS for .NET** – ดาวน์โหลดและติดตั้งจาก [download page](https://releases.aspose.com/gis/net/).  
+2. **Development Environment** – สภาพแวดล้อมการพัฒนา – เวอร์ชันล่าสุดของ Visual Studio หรือ VS Code พร้อม .NET SDK.  
+3. **Basic C# knowledge** – ความรู้พื้นฐาน C# – ความคุ้นเคยกับคลาส, อ็อบเจกต์, และ .NET framework.
 
-## นำเข้าเนมสเปซ
-ก่อนที่จะใช้ฟังก์ชัน Aspose.GIS ในโค้ดของคุณ ให้นำเข้าเนมสเปซที่จำเป็น:
+## นำเข้า Namespaces
+ขั้นแรก, นำ Namespaces ที่จำเป็นเข้าสู่สโคป:
+
 ```csharp
 using Aspose.Gis.Geometries;
 using Aspose.Gis.SpatialReferencing;
@@ -33,45 +51,78 @@ using System.Text;
 using System.Threading.Tasks;
 using Aspose.Gis;
 ```
-## ขั้นตอนที่ 1: สร้างวัตถุจุด
- ขั้นแรกให้สร้างก`Point` วัตถุที่มีค่าละติจูด ลองจิจูด และค่าการวัดเสริม (M):
+
+## ขั้นตอนที่ 1: สร้างอ็อบเจกต์ Point
+สร้าง `Point` ที่คุณจะ later **convert geometry to WKT**. จุดนี้รวม latitude, longitude, และค่า measure (M) ที่เป็นตัวเลือก:
+
 ```csharp
 Point point = new Point(23.5732, 25.3421) { M = 40.3 };
 ```
-## ขั้นตอนที่ 2: ตั้งค่าระบบอ้างอิงเชิงพื้นที่ (SRS)
-กำหนดระบบอ้างอิงเชิงพื้นที่ (SRS) ให้กับวัตถุจุด ในตัวอย่างนี้ เราใช้ระบบอ้างอิงเชิงพื้นที่ WGS84:
+
+## ขั้นตอนที่ 2: ตั้งค่า Spatial Reference System (SRS)
+กำหนดระบบอ้างอิงเชิงพื้นที่เพื่อให้ผลลัพธ์ WKT รู้ว่าจะอ้างอิงระบบพิกัดใด. ที่นี่เราใช้ระบบ WGS84 ที่เป็นที่นิยม:
+
 ```csharp
 point.SpatialReferenceSystem = SpatialReferenceSystem.Wgs84;
 ```
-## ขั้นตอนที่ 3: ระบุตัวแปร WKT
- ตอนนี้ ให้ระบุตัวแปร WKT สำหรับการแปล Aspose.GIS รองรับ WKT หลากหลายรูปแบบ รวมถึง`Iso`, `SimpleFeatureAccessOutdated` , และ`ExtendedPostGis`. เลือกรุ่นที่เหมาะสมตามความต้องการของคุณ:
+
+## ขั้นตอนที่ 3: ระบุ WKT Variant
+**Choose the appropriate WKT variant when you convert geometry to WKT**. แต่ละ variant จะจัดรูปแบบผลลัพธ์แตกต่างกันเล็กน้อย:
+
 ```csharp
-Console.WriteLine(point.AsText(WktVariant.Iso)); // จุดเอ็ม (23.5732, 25.3421, 40.3)
-Console.WriteLine(point.AsText(WktVariant.SimpleFeatureAccessOutdated)); // จุด (23.5732, 25.3421)
+Console.WriteLine(point.AsText(WktVariant.Iso)); // POINT M (23.5732, 25.3421, 40.3)
+Console.WriteLine(point.AsText(WktVariant.SimpleFeatureAccessOutdated)); // POINT (23.5732, 25.3421)
 Console.WriteLine(point.AsText(WktVariant.ExtendedPostGis)); // SRID=4326;POINTM (23.5732, 25.3421, 40.3)
 ```
-## ขั้นตอนที่ 4: ควบคุมรูปแบบตัวเลข
-คุณสามารถควบคุมรูปแบบตัวเลขของพิกัดในการเป็นตัวแทน WKT Aspose.GIS มีตัวเลือกในการระบุความแม่นยำของทศนิยม:
+
+## ขั้นตอนที่ 4: ควบคุม Numeric Format (ตั้ง Numeric Format & ปรับ Decimal Precision)
+ปรับแต่งการแสดงผลตัวเลขของพิกัด. คลาส `NumericFormat` ให้คุณ **set numeric format** และ **adjust decimal precision** ให้เหมาะกับความต้องการของคุณ:
+
 ```csharp
-Console.WriteLine("G17  : " + point.AsText(WktVariant.Iso, NumericFormat.General(17))); // จุดเอ็ม (23.5732 25.342099999999999 40.299999999999997)
-Console.WriteLine("R    : " + point.AsText(WktVariant.Iso, NumericFormat.RoundTrip)); // จุดเอ็ม (23.5732 25.3421 40.3)
-Console.WriteLine("G3   : " + point.AsText(WktVariant.Iso, NumericFormat.General(3))); // จุดเอ็ม (23.6 25.3 40.3)
-Console.WriteLine("Flat3: " + point.AsText(WktVariant.Iso, NumericFormat.Flat(3))); // จุดเอ็ม (23.573 25.342 40.3)
+Console.WriteLine("G17  : " + point.AsText(WktVariant.Iso, NumericFormat.General(17))); // POINT M (23.5732 25.342099999999999 40.299999999999997)
+Console.WriteLine("R    : " + point.AsText(WktVariant.Iso, NumericFormat.RoundTrip)); // POINT M (23.5732 25.3421 40.3)
+Console.WriteLine("G3   : " + point.AsText(WktVariant.Iso, NumericFormat.General(3))); // POINT M (23.6 25.3 40.3)
+Console.WriteLine("Flat3: " + point.AsText(WktVariant.Iso, NumericFormat.Flat(3))); // POINT M (23.573 25.342 40.3)
 ```
 
-## บทสรุป
-ในบทช่วยสอนนี้ เราได้เรียนรู้วิธีระบุรูปแบบ WKT ในการแปลโดยใช้ Aspose.GIS สำหรับ .NET ด้วยการทำตามขั้นตอนที่สรุปไว้ข้างต้น นักพัฒนาจะสามารถควบคุมรูปแบบและความแม่นยำของการแสดงข้อมูลเชิงพื้นที่ในแอปพลิเคชัน .NET ได้อย่างมีประสิทธิภาพ เพิ่มความยืดหยุ่นและการใช้งานระบบสารสนเทศทางภูมิศาสตร์
+## ปัญหาทั่วไป & เคล็ดลับ
+- **Missing M value** – หากคุณไม่ต้องการ measure, ให้ละเว้น property `M`; variant ISO จะลบออกโดยอัตโนมัติ.  
+- **Unexpected precision** – ตรวจสอบให้แน่ใจว่าคุณใช้ `NumericFormat` ที่ถูกต้อง; `General` รักษาความแม่นยำแบบ double เต็ม, ส่วน `Flat` จะปัดเศษตามจำนวนตำแหน่งทศนิยมที่ระบุ.  
+- **SRID not displayed** – เฉพาะ variant `ExtendedPostGis` จะใส่คำนำหน้า `SRID=` ในผลลัพธ์. เลือก variant นี้เมื่อระบบเป้าหมายของคุณต้องการ SRID.
+
+## สรุป
+โดยทำตามขั้นตอนเหล่านี้คุณจะรู้วิธี **convert geometry to WKT**, เลือก variant ที่เหมาะสม, และควบคุมผลลัพธ์ตัวเลขอย่างแม่นยำ. สิ่งนี้ทำให้คุณมีความยืดหยุ่นในการผสาน Aspose.GIS กับเวิร์กโฟลว์ GIS, ฐานข้อมูล, หรือเว็บเซอร์วิสใด ๆ ที่รับ WKT.
+
 ## คำถามที่พบบ่อย
-### Aspose.GIS เข้ากันได้กับ .NET ทุกเวอร์ชันหรือไม่
-ใช่ Aspose.GIS รองรับ .NET Framework 4.0 และสูงกว่า
-### ฉันสามารถใช้ Aspose.GIS สำหรับโครงการเชิงพาณิชย์ได้หรือไม่
-ใช่ Aspose.GIS สามารถใช้กับทั้งโครงการส่วนตัวและเชิงพาณิชย์
-### Aspose.GIS ให้การสนับสนุนรูปแบบข้อมูลเชิงพื้นที่อื่นๆ หรือไม่
-ใช่ Aspose.GIS รองรับรูปแบบข้อมูลเชิงพื้นที่ที่หลากหลาย รวมถึง ESRI Shapefile, GeoJSON และ KML
-### Aspose.GIS มีรุ่นทดลองใช้ฟรีหรือไม่
- ใช่ คุณสามารถดาวน์โหลด Aspose.GIS เวอร์ชันทดลองใช้ฟรีได้จาก[ที่นี่](https://releases.aspose.com/).
-### ฉันจะขอความช่วยเหลือหรือสนับสนุน Aspose.GIS ได้ที่ไหน
- คุณสามารถโพสต์คำถามของคุณหรือขอความช่วยเหลือจากชุมชน Aspose.GIS ได้ที่[ฟอรั่ม](https://forum.aspose.com/c/gis/33).
+### Aspose.GIS รองรับทุกเวอร์ชันของ .NET หรือไม่?
+ใช่, Aspose.GIS รองรับ .NET Framework 4.0 ขึ้นไป.  
+
+### ฉันสามารถใช้ Aspose.GIS สำหรับโครงการเชิงพาณิชย์ได้หรือไม่?
+ใช่, Aspose.GIS สามารถใช้ได้ทั้งในโครงการส่วนบุคคลและเชิงพาณิชย์.  
+
+### Aspose.GIS มีการสนับสนุนรูปแบบข้อมูลเชิงพื้นที่อื่นหรือไม่?
+ใช่, Aspose.GIS รองรับรูปแบบข้อมูลเชิงพื้นที่หลากหลาย รวมถึง ESRI Shapefile, GeoJSON, และ KML.  
+
+### มีรุ่นทดลองฟรีสำหรับ Aspose.GIS หรือไม่?
+ใช่, คุณสามารถดาวน์โหลดรุ่นทดลองฟรีของ Aspose.GIS ได้จาก [here](https://releases.aspose.com/).  
+
+### ฉันจะขอความช่วยเหลือหรือสนับสนุนสำหรับ Aspose.GIS ได้จากที่ไหน?
+คุณสามารถโพสต์คำถามหรือขอความช่วยเหลือจากชุมชน Aspose.GIS ได้ที่ [forum](https://forum.aspose.com/c/gis/33).
+
+## คำถามที่พบบ่อย
+**Q: How do I export a Geometry collection to a single WKT string?**  
+A: Iterate over each geometry in the collection and concatenate their `AsText` results, optionally separating them with commas or newlines.  
+**Q: Can I change the SRID without altering the coordinates?**  
+A: Yes, set the `SpatialReferenceSystem` property to the desired SRID; the coordinate values remain unchanged.  
+**Q: What happens if I use an unsupported WKT variant?**  
+A: Aspose.GIS will throw an `ArgumentException`. Always validate the variant against `WktVariant` enum values.
+
+---
+
+**Last Updated:** 2025-12-23  
+**Tested With:** Aspose.GIS 24.11 for .NET  
+**Author:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}

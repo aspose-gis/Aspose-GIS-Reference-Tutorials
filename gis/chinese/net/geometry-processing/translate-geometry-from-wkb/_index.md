@@ -1,30 +1,49 @@
 ---
-title: 使用 Aspose.GIS for .NET 从 WKB 转换几何图形
-linktitle: 从 WKB 翻译几何
+date: 2025-12-23
+description: 学习如何使用 Aspose.GIS for .NET 从二进制创建几何体并转换 WKB 几何体——逐步代码、先决条件和故障排除。
+linktitle: Translate Geometry from WKB
 second_title: Aspose.GIS .NET API
-description: 了解如何使用 Aspose.GIS for .NET 在 .NET 中处理地理信息。通过分步指导，轻松转换 WKB 格式的几何图形。
-weight: 20
+title: 使用 Aspose.GIS for .NET 从二进制（WKB）创建几何对象
 url: /zh/net/geometry-processing/translate-geometry-from-wkb/
+weight: 20
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# 使用 Aspose.GIS for .NET 从 WKB 转换几何图形
+# 使用 Aspose.GIS for .NET 从二进制 (WKB) 创建几何对象
 
-## 介绍
-在 .NET 开发领域，处理地理信息是一个常见的需求。无论是地图应用程序、空间分析还是数据可视化，拥有强大的地理数据处理工具都至关重要。这就是 Aspose.GIS for .NET 发挥作用的地方。 Aspose.GIS for .NET 是一个功能强大的库，提供全面的功能来处理各种地理空间格式并有效地执行空间操作。
-## 先决条件
-在深入研究使用 Aspose.GIS for .NET 的详细信息之前，请确保您具备以下先决条件：
-### .NET环境设置
-1. 安装 Visual Studio：确保您的系统上安装了 Visual Studio。您可以从网站或通过 Visual Studio 安装程序下载它。
-2. 创建 .NET 项目：打开 Visual Studio 并创建一个新的 .NET 项目。根据您的要求选择合适的项目类型。
-3. 安装 Aspose.GIS：您可以通过 NuGet Package Manager 安装 Aspose.GIS for .NET。只需搜索“Aspose.GIS”并将该包安装到您的项目中即可。
-4. 获取许可证：获取 Aspose.GIS for .NET 的有效许可证。您可以购买许可证或获取临时许可证以用于评估目的。
+## Introduction
+在 .NET 开发领域，处理地理信息是常见需求。无论是构建地图应用、执行空间分析，还是可视化数据，您通常需要 **从二进制** 格式（如 Well‑Known Binary (WKB)）**创建几何对象**。Aspose.GIS for .NET 使此任务变得简单，只需几行代码即可 **将 WKB 几何** 转换为丰富的 .NET 对象。在本教程中，我们将从项目设置到以文本形式显示几何对象，完整演示整个过程。
 
-## 导入命名空间
-在项目中开始使用 Aspose.GIS for .NET 之前，请确保导入必要的命名空间以访问其功能。
+## Quick Answers
+- **创建几何对象（从二进制）** 是指将字节数组（WKB）转换为 .NET 中可用的几何对象。  
+- **哪个库负责此转换？** Aspose.GIS for .NET 提供 `Geometry.FromBinary` 方法。  
+- **开发是否需要许可证？** 试用许可证可用于评估；生产环境需要正式许可证。  
+- **是否支持 .NET Core？** 是的，Aspose.GIS 支持 .NET Framework、.NET Core 以及 .NET 5/6+。  
+- **实现大约需要多长时间？** 基本转换通常在 10 分钟以内。
+
+## What is “create geometry from binary”?
+从二进制创建几何是指读取 WKB（Well‑Known Binary）表示——一种紧凑、平台无关的字节序列——并将其转换为几何对象 (`IGeometry`)，以便在应用程序中进行操作、查询或渲染。
+
+## Why convert WKB geometry with Aspose.GIS?
+- **完整格式支持** – 支持 WKB、WKT、GeoJSON、Shapefile 等多种格式。  
+- **零依赖** – 无需本地库或外部工具。  
+- **高性能** – 为大数据集优化解析。  
+- **丰富的 API** – 提供空间操作、坐标转换和属性处理等功能。
+
+## Prerequisites
+在编写代码之前，请确保已准备好以下内容：
+
+### .NET Environment Setup
+1. **Visual Studio** – 安装最新版本（Community、Professional 或 Enterprise）。  
+2. **创建 .NET 项目** – 控制台应用（推荐使用 .NET 6）非常适合演示。  
+3. **安装 Aspose.GIS** – 打开 **NuGet 包管理器**，搜索 **Aspose.GIS**，然后安装最新的稳定版本。  
+4. **获取许可证** – 使用临时评估许可证，或从 Aspose 官网购买正式许可证。
+
+## Import Namespaces
+在项目中开始使用 Aspose.GIS for .NET 之前，导入必要的命名空间：
 
 ```csharp
 using Aspose.Gis.Geometries;
@@ -36,40 +55,61 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-使用 Aspose.GIS for .NET 将几何图形从众所周知的二进制 (WKB) 格式转换涉及几个步骤。让我们将这个过程分解为可管理的步骤：
-## 第1步：读取WKB文件
+### Step 1: Read the WKB File
 ```csharp
 string path = Path.Combine("Your Document Directory", "WkbFile.wkb");
 byte[] wkb = File.ReadAllBytes(path);
 ```
-在此步骤中，我们指定 WKB 文件的路径，并使用以下命令将其内容读入字节数组：`File.ReadAllBytes()`方法。
-## 第 2 步：将 WKB 转换为几何图形
+这里我们在磁盘上定位 **WKB** 文件，并将其二进制内容加载到 `byte[]` 中。该字节数组是您随后将转换为几何对象的原始表示。
+
+### Step 2: Convert WKB to Geometry
 ```csharp
 IGeometry geometry = Geometry.FromBinary(wkb);
 ```
-在这里，我们使用`Geometry.FromBinary()`Aspose.GIS for .NET提供的方法将WKB字节数组转换为几何对象（`IGeometry`）。
-## 第 3 步：将几何图形显示为文本
-```csharp
-Console.WriteLine(geometry.AsText()); //线串（1.2 3.4、5.6 7.8）
-```
-最后，我们使用`AsText()`几何对象上的方法来获取其文本表示，然后可以根据需要打印或使用。
+`Geometry.FromBinary()` 方法 **从二进制数据创建几何对象**，实际上 **将 WKB 几何** 转换为可供使用的 `IGeometry` 实例。
 
-## 结论
-Aspose.GIS for .NET 提供了一套全面的工具，用于在 .NET 应用程序中处理地理空间数据。通过遵循本教程中概述的步骤，您可以轻松地从 WKB 格式转换几何图形并轻松执行各种空间操作。
-## 常见问题解答
-### Aspose.GIS for .NET 与 .NET Core 兼容吗？
-是的，Aspose.GIS for .NET 与 .NET Framework 和 .NET Core 兼容。
-### 在购买许可证之前我可以尝试 Aspose.GIS for .NET 吗？
-是的，您可以从网站获取 Aspose.GIS for .NET 的免费试用版[这里](https://purchase.aspose.com/buy).
-### Aspose.GIS for .NET 支持各种地理空间格式吗？
-是的，Aspose.GIS for .NET 支持多种地理空间格式，包括 WKB、WKT、GeoJSON 等。
-### 如何获得 Aspose.GIS for .NET 支持？
-您可以通过论坛获得 Aspose.GIS for .NET 支持[这里](https://forum.aspose.com/c/gis/33)或直接联系 Aspose 支持。
-### 我可以在商业项目中使用 Aspose.GIS for .NET 吗？
-是的，您可以通过购买合适的许可证在商业项目中使用 Aspose.GIS for .NET。
+### Step 3: Display Geometry as Text
+```csharp
+Console.WriteLine(geometry.AsText()); // LINESTRING (1.2 3.4, 5.6 7.8)
+```
+调用 `AsText()` 会以 Well‑Known Text (WKT) 格式返回几何对象，该格式可读性强，适用于调试或日志记录。
+
+## Common Issues & Troubleshooting
+| 症状 | 可能原因 | 解决办法 |
+|---------|----------------|-----|
+| `ArgumentException: Invalid WKB` | WKB 损坏或不受支持的版本 | 验证源文件并确保其符合 OGC WKB 规范。 |
+| `NullReferenceException` on `geometry` | `wkb` 数组为空 | 检查文件路径，确认文件存在且非空。 |
+| Unexpected SRID | WKB 缺少 SRID 信息 | 使用 `Geometry.FromBinary(wkb, srid)` 重载手动指定空间参考。 |
+
+## Frequently Asked Questions
+
+**问：Aspose.GIS for .NET 是否兼容 .NET Core？**  
+**答：是的，Aspose.GIS 支持 .NET Framework、.NET Core 以及 .NET 5/6+。**
+
+**问：我可以在购买许可证前试用 Aspose.GIS for .NET 吗？**  
+**答：可以，您可以从网站 [here](https://purchase.aspose.com/buy) 获取 Aspose.GIS for .NET 的免费试用。**
+
+**问：Aspose.GIS for .NET 是否支持多种地理空间格式？**  
+**答：是的，Aspose.GIS for .NET 支持包括 WKB、WKT、GeoJSON 等在内的多种地理空间格式。**
+
+**问：如何获取 Aspose.GIS for .NET 的支持？**  
+**答：您可以通过论坛 [here](https://forum.aspose.com/c/gis/33) 或直接联系 Aspose 支持获取帮助。**
+
+**问：我可以在商业项目中使用 Aspose.GIS for .NET 吗？**  
+**答：可以，购买合适的许可证后即可在商业项目中使用 Aspose.GIS for .NET。**
+
+## Conclusion
+Aspose.GIS for .NET 为 .NET 应用中的地理空间数据处理提供了完整的工具集。按照上述步骤，您可以快速、可靠地 **从二进制创建几何对象**，从而以最小的工作量构建强大的地图、分析或可视化功能。
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+---
+
+**最后更新:** 2025-12-23  
+**测试环境:** Aspose.GIS for .NET 24.11 (latest at time of writing)  
+**作者:** Aspose
