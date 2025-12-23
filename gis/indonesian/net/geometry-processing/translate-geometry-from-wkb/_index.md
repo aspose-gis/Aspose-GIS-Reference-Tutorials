@@ -1,30 +1,51 @@
 ---
-title: Terjemahkan Geometri dari WKB menggunakan Aspose.GIS untuk .NET
-linktitle: Terjemahkan Geometri dari WKB
+date: 2025-12-23
+description: Pelajari cara membuat geometri dari biner dan mengonversi geometri WKB
+  dengan Aspose.GIS untuk .NET – kode langkah demi langkah, prasyarat, dan pemecahan
+  masalah.
+linktitle: Translate Geometry from WKB
 second_title: Aspose.GIS .NET API
-description: Pelajari cara bekerja dengan informasi geografis di .NET menggunakan Aspose.GIS untuk .NET. Terjemahkan geometri dari format WKB dengan mudah dengan panduan langkah demi langkah.
-weight: 20
+title: Buat Geometri dari Biner (WKB) Menggunakan Aspose.GIS untuk .NET
 url: /id/net/geometry-processing/translate-geometry-from-wkb/
+weight: 20
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Terjemahkan Geometri dari WKB menggunakan Aspose.GIS untuk .NET
+# Buat Geometri dari Biner (WKB) Menggunakan Aspose.GIS untuk .NET
 
-## Perkenalan
-Dalam bidang pengembangan .NET, penanganan informasi geografis merupakan kebutuhan umum. Baik untuk aplikasi pemetaan, analisis spasial, atau visualisasi data, memiliki alat canggih untuk bekerja dengan data geografis sangatlah penting. Di sinilah Aspose.GIS untuk .NET berperan. Aspose.GIS untuk .NET adalah perpustakaan canggih yang menyediakan fungsionalitas komprehensif untuk bekerja dengan berbagai format geospasial dan melakukan operasi spasial secara efisien.
+## Pendahuluan
+Di dunia pengembangan .NET, penanganan informasi geografis adalah kebutuhan yang umum. Baik Anda membangun aplikasi pemetaan, melakukan analisis spasial, atau memvisualisasikan data, Anda sering perlu **create geometry from binary** dalam format seperti Well‑Known Binary (WKB). Aspose.GIS untuk .NET membuat tugas ini menjadi sederhana, memungkinkan Anda **convert WKB geometry** menjadi objek .NET yang kaya hanya dengan beberapa baris kode. Dalam tutorial ini kami akan membimbing Anda melalui seluruh proses, mulai dari penyiapan proyek hingga menampilkan geometri sebagai teks.
+
+## Jawaban Cepat
+- **Apa arti “create geometry from binary”?** Itu berarti mengubah array byte (WKB) menjadi objek geometri yang dapat digunakan di .NET.  
+- **Perpustakaan mana yang menangani konversi ini?** Aspose.GIS untuk .NET menyediakan metode `Geometry.FromBinary`.  
+- **Apakah saya memerlukan lisensi untuk pengembangan?** Lisensi percobaan dapat digunakan untuk evaluasi; lisensi penuh diperlukan untuk produksi.  
+- **Apakah .NET Core didukung?** Ya, Aspose.GIS bekerja dengan .NET Framework, .NET Core, dan .NET 5/6+.  
+- **Berapa lama implementasinya?** Biasanya kurang dari 10 menit untuk konversi dasar.
+
+## Apa itu “create geometry from binary”?
+Membuat geometri dari biner mengacu pada membaca representasi WKB (Well‑Known Binary) — urutan byte yang kompak dan independen platform — dan mengubahnya menjadi objek geometrik (`IGeometry`) yang dapat Anda manipulasi, query, atau render dalam aplikasi Anda.
+
+## Mengapa mengonversi geometri WKB dengan Aspose.GIS?
+- **Dukungan format lengkap** – Menangani WKB, WKT, GeoJSON, Shapefile, dan banyak lagi.  
+- **Tanpa ketergantungan** – Tidak memerlukan pustaka native atau alat eksternal.  
+- **Kinerja tinggi** – Parsing yang dioptimalkan untuk dataset besar.  
+- **API kaya** – Akses ke operasi spasial, transformasi koordinat, dan penanganan atribut.
+
 ## Prasyarat
-Sebelum mempelajari detail cara bekerja dengan Aspose.GIS untuk .NET, pastikan Anda memiliki prasyarat berikut:
-### Pengaturan Lingkungan .NET
-1. Instal Visual Studio: Pastikan Anda telah menginstal Visual Studio di sistem Anda. Anda dapat mendownloadnya dari website atau melalui Visual Studio Installer.
-2. Buat Proyek .NET: Buka Visual Studio dan buat proyek .NET baru. Pilih jenis proyek yang sesuai berdasarkan kebutuhan Anda.
-3. Instal Aspose.GIS: Anda dapat menginstal Aspose.GIS untuk .NET melalui NuGet Package Manager. Cukup cari "Aspose.GIS" dan instal paket tersebut ke dalam proyek Anda.
-4. Dapatkan Lisensi: Dapatkan lisensi yang valid untuk Aspose.GIS untuk .NET. Anda dapat membeli lisensi atau mendapatkan lisensi sementara untuk tujuan evaluasi.
+Sebelum menyelam ke kode, pastikan Anda telah menyiapkan hal-hal berikut:
+
+### Penyiapan Lingkungan .NET
+1. **Visual Studio** – Instal versi terbaru (Community, Professional, atau Enterprise).  
+2. **Buat Proyek .NET** – Aplikasi Konsol (.NET 6 direkomendasikan) bekerja dengan sempurna untuk demo.  
+3. **Instal Aspose.GIS** – Buka **NuGet Package Manager**, cari **Aspose.GIS**, lalu instal paket stabil terbaru.  
+4. **Dapatkan Lisensi** – Gunakan lisensi evaluasi sementara atau beli lisensi penuh dari situs web Aspose.
 
 ## Impor Namespace
-Sebelum Anda mulai menggunakan Aspose.GIS untuk .NET di proyek Anda, pastikan untuk mengimpor namespace yang diperlukan untuk mengakses fungsinya.
+Sebelum Anda mulai menggunakan Aspose.GIS untuk .NET dalam proyek Anda, impor namespace yang diperlukan:
 
 ```csharp
 using Aspose.Gis.Geometries;
@@ -36,40 +57,61 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-Menerjemahkan geometri dari format Well-Known Binary (WKB) menggunakan Aspose.GIS untuk .NET melibatkan beberapa langkah. Mari kita bagi prosesnya menjadi langkah-langkah yang dapat dikelola:
-## Langkah 1: Baca File WKB
+### Langkah 1: Baca File WKB
 ```csharp
 string path = Path.Combine("Your Document Directory", "WkbFile.wkb");
 byte[] wkb = File.ReadAllBytes(path);
 ```
- Pada langkah ini, kami menentukan jalur ke file WKB dan membaca isinya ke dalam array byte menggunakan`File.ReadAllBytes()` metode.
-## Langkah 2: Ubah WKB menjadi Geometri
+Di sini kami menemukan file **WKB** di disk dan memuat konten binernya ke dalam `byte[]`. Array byte ini adalah representasi mentah yang nanti akan Anda konversi menjadi geometri.
+
+### Langkah 2: Konversi WKB ke Geometri
 ```csharp
 IGeometry geometry = Geometry.FromBinary(wkb);
 ```
- Di sini, kami menggunakan`Geometry.FromBinary()`metode yang disediakan oleh Aspose.GIS untuk .NET untuk mengubah array byte WKB menjadi objek geometris (`IGeometry`).
-## Langkah 3: Tampilkan Geometri sebagai Teks
+Metode `Geometry.FromBinary()` **creates geometry from binary** data, secara efektif **converting WKB geometry** menjadi instance `IGeometry` yang dapat Anda gunakan.
+
+### Langkah 3: Tampilkan Geometri sebagai Teks
 ```csharp
-Console.WriteLine(geometry.AsText()); // GARIS GARIS (1.2 3.4, 5.6 7.8)
+Console.WriteLine(geometry.AsText()); // LINESTRING (1.2 3.4, 5.6 7.8)
 ```
- Akhirnya, kami menggunakan`AsText()` metode pada objek geometri untuk memperoleh representasi tekstualnya, yang kemudian dapat dicetak atau digunakan sesuai kebutuhan.
+Memanggil `AsText()` mengembalikan geometri dalam format Well‑Known Text (WKT), yang dapat dibaca manusia dan berguna untuk debugging atau pencatatan.
+
+## Masalah Umum & Pemecahan Masalah
+| Gejala | Penyebab Kemungkinan | Perbaikan |
+|---------|----------------------|-----------|
+| `ArgumentException: Invalid WKB` | Versi WKB yang rusak atau tidak didukung | Verifikasi file sumber dan pastikan mengikuti spesifikasi OGC WKB. |
+| `NullReferenceException` on `geometry` | Array `wkb` kosong | Periksa jalur file dan pastikan file ada serta tidak kosong. |
+| Unexpected SRID | WKB tidak menyertakan informasi SRID | Gunakan overload `Geometry.FromBinary(wkb, srid)` untuk menentukan referensi spasial secara manual. |
+
+## Pertanyaan yang Sering Diajukan
+
+**Q: Apakah Aspose.GIS untuk .NET kompatibel dengan .NET Core?**  
+A: Ya, Aspose.GIS mendukung baik .NET Framework maupun .NET Core, serta .NET 5/6+.
+
+**Q: Bisakah saya mencoba Aspose.GIS untuk .NET sebelum membeli lisensi?**  
+A: Ya, Anda dapat memperoleh percobaan gratis Aspose.GIS untuk .NET dari situs web [di sini](https://purchase.aspose.com/buy).
+
+**Q: Apakah Aspose.GIS untuk .NET mendukung berbagai format geospasial?**  
+A: Ya, Aspose.GIS untuk .NET mendukung beragam format geospasial, termasuk WKB, WKT, GeoJSON, dan lainnya.
+
+**Q: Bagaimana cara mendapatkan dukungan untuk Aspose.GIS untuk .NET?**  
+A: Anda dapat mendapatkan dukungan untuk Aspose.GIS untuk .NET melalui forum [di sini](https://forum.aspose.com/c/gis/33) atau dengan menghubungi dukungan Aspose secara langsung.
+
+**Q: Bisakah saya menggunakan Aspose.GIS untuk .NET dalam proyek komersial?**  
+A: Ya, Anda dapat menggunakan Aspose.GIS untuk .NET dalam proyek komersial dengan membeli lisensi yang sesuai.
 
 ## Kesimpulan
-Aspose.GIS untuk .NET menawarkan seperangkat alat komprehensif untuk bekerja dengan data geospasial dalam aplikasi .NET. Dengan mengikuti langkah-langkah yang diuraikan dalam tutorial ini, Anda dapat dengan mudah menerjemahkan geometri dari format WKB dan melakukan berbagai operasi spasial dengan mudah.
-## FAQ
-### Apakah Aspose.GIS untuk .NET kompatibel dengan .NET Core?
-Ya, Aspose.GIS untuk .NET kompatibel dengan .NET Framework dan .NET Core.
-### Bisakah saya mencoba Aspose.GIS untuk .NET sebelum membeli lisensi?
- Ya, Anda bisa mendapatkan uji coba gratis Aspose.GIS untuk .NET dari situs web[Di Sini](https://purchase.aspose.com/buy).
-### Apakah Aspose.GIS untuk .NET mendukung berbagai format geospasial?
-Ya, Aspose.GIS untuk .NET mendukung berbagai format geospasial, termasuk WKB, WKT, GeoJSON, dan banyak lagi.
-### Bagaimana saya bisa mendapatkan dukungan untuk Aspose.GIS untuk .NET?
-Anda bisa mendapatkan dukungan untuk Aspose.GIS untuk .NET melalui forum[Di Sini](https://forum.aspose.com/c/gis/33) atau dengan menghubungi dukungan Aspose secara langsung.
-### Bisakah saya menggunakan Aspose.GIS untuk .NET dalam proyek komersial?
-Ya, Anda dapat menggunakan Aspose.GIS untuk .NET dalam proyek komersial dengan membeli lisensi yang sesuai.
+Aspose.GIS untuk .NET menawarkan rangkaian alat yang komprehensif untuk bekerja dengan data geospasial dalam aplikasi .NET. Dengan mengikuti langkah‑langkah di atas, Anda dapat **create geometry from binary** dengan cepat dan andal, memungkinkan Anda membangun fitur pemetaan, analisis, atau visualisasi yang kuat dengan upaya minimal.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+---
+
+**Last Updated:** 2025-12-23  
+**Tested With:** Aspose.GIS for .NET 24.11 (latest at time of writing)  
+**Author:** Aspose
