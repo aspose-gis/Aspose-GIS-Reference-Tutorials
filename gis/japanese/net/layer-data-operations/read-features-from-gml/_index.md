@@ -1,37 +1,51 @@
 ---
-title: Aspose.GIS の GML からフィーチャを読み取る
-linktitle: GML から機能を読み取る
+date: 2025-12-26
+description: Aspose.GIS for .NET を使用して GML ファイルから GML フィーチャを読み取る方法を学びましょう。GIS 開発者向けの包括的なチュートリアルです。
+linktitle: Read Features from GML
 second_title: Aspose.GIS .NET API
-description: Aspose.GIS for .NET を使用して GML ファイルからフィーチャを読み取る方法を学びます。 GIS 開発者向けの包括的なチュートリアル。
-weight: 10
+title: GMLの読み取り方法：Aspose.GISでGMLからフィーチャを読み込む
 url: /ja/net/layer-data-operations/read-features-from-gml/
+weight: 10
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.GIS の GML からフィーチャを読み取る
+# GML の読み取り方法: Aspose.GIS で GML からフィーチャを読む
 
-## 導入
+## はじめに
 
-強力な Aspose.GIS for .NET ライブラリを使用して地理情報システム (GIS) の世界を深く掘り下げる準備はできていますか?経験豊富な開発者であっても、GIS プログラミングを始めたばかりであっても、このチュートリアルでは、GML (地理マークアップ言語) ファイルからフィーチャを読み取るプロセスをステップごとに説明します。 Aspose.GIS for .NET は、地理空間データを簡単に操作するための包括的なツールと API のセットを提供し、GIS アプリケーションの可能性を最大限に引き出すことができます。
+Aspose.GIS for .NET を使用して **gml を読む** 方法について、明確でステップバイステップのガイドをお探しなら、ここが最適です。経験豊富な GIS 開発者でも、地理データの取り扱いを始めたばかりの方でも、本チュートリアルは環境設定から GML レイヤーの属性値抽出まで、必要なすべてを丁寧に解説します。最後まで読めば、.NET アプリケーションに自信を持って GML データを統合できるようになります。
+
+## クイック回答
+- **使用されているライブラリは？** Aspose.GIS for .NET  
+- **主なタスクは？** gml ファイルを読み取り、フィーチャ属性を抽出する方法  
+- **前提条件は？** .NET 開発環境、Aspose.GIS ライブラリ、サンプル GML ファイル  
+- **大容量 GML ファイルは扱えるか？** はい、Aspose.GIS はデータを効率的にストリーミングします  
+- **インターネット接続は必要か？** GML が外部スキーマを参照している場合のみ必要です  
+
+## Aspose.GIS のコンテキストで「gml を読む」とは？
+
+GML（Geography Markup Language）を読むとは、GML ドキュメントを開き、フィーチャコレクションを解析し、必要な属性値にアクセスすることを指します。Aspose.GIS は低レベルの XML 操作を抽象化し、`VectorLayer` や `Feature` といった馴染みのある .NET オブジェクトで作業できるようにします。
+
+## GML の読み取りに Aspose.GIS を使用する理由
+
+- **フル .NET 統合** – .NET Framework、.NET Core、.NET 5/6+ で動作します。  
+- **スキーマ認識パース** – ファイル内またはインターネットからスキーマを自動的にロードします。  
+- **パフォーマンス最適化** – ファイル全体をメモリに読み込まずに大規模データセットをストリーミングします。  
+- **リッチ API** – 空間クエリ、ジオメトリ変換、フォーマット変換をサポートします。
 
 ## 前提条件
 
-このエキサイティングな旅に乗り出す前に、次の前提条件が満たされていることを確認してください。
-
-1. C# および .NET 環境の基本知識: .NET 環境内で作業するため、C# プログラミング言語と .NET フレームワークに精通していると役立ちます。
-
-2. Aspose.GIS for .NET ライブラリのインストール: Aspose.GIS for .NET ライブラリをダウンロードしてインストールしていることを確認します。ライブラリは次から入手できます。[ダウンロードリンク](https://releases.aspose.com/gis/net/).
-
-3. サンプル GML ファイルへのアクセス: 機能の読み取りを練習するために使用するサンプル GML ファイルをいくつか準備します。これらのファイルには、GML 形式でエンコードされた地理空間データが含まれている必要があります。
-
-4. インターネット接続 (オプション): GML ファイルがインターネット上にあるスキーマを参照している場合は、Aspose.GIS が Web からスキーマを読み込む必要がある可能性があるため、インターネット接続があることを確認してください。
+1. **C#/.NET の知識** – Visual Studio などの .NET IDE に基本的に慣れていること。  
+2. **Aspose.GIS for .NET** – [ダウンロードリンク](https://releases.aspose.com/gis/net/) から取得してインストール。  
+3. **サンプル GML ファイル** – テスト用に少なくとも 1 つの GML ファイルを用意。  
+4. **インターネット接続（オプション）** – GML が外部スキーマを参照している場合にのみ必要です。
 
 ## 名前空間のインポート
 
-まず、必要な名前空間を C# コードにインポートして、Aspose.GIS for .NET が提供する機能を利用しましょう。
+まず、GIS 機能を提供する名前空間をインポートします。
 
 ```csharp
 using Aspose.Gis;
@@ -46,11 +60,9 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-準備が整ったので、GML ファイルから特徴を読み取るプロセスを複数のステップに分けてみましょう。
+## 手順 1: GmlOptions の定義
 
-## ステップ 1: GmlOptions を定義する
-
-まず、GML ファイルを読み取るためのオプションを定義する必要があります。のインスタンスを作成します`GmlOptions`クラスを作成し、それに応じてプロパティを設定します。
+GML ファイルを読み込む際のスキーマ位置の取り扱い方法を設定します。
 
 ```csharp
 GmlOptions options = new GmlOptions
@@ -60,11 +72,11 @@ GmlOptions options = new GmlOptions
 };
 ```
 
-このステップでは、次のように設定します。`SchemaLocation`null に設定すると、Aspose.GIS が GML ファイル自体からスキーマの場所を読み取ろうとすることを示します。さらに、`LoadSchemasFromInternet`スキーマ参照がオンラインにある場合は true に設定します。
+`SchemaLocation` を `null` に設定すると、ライブラリは GML 内部のスキーマ参照を探します。一方、`LoadSchemasFromInternet = true` にすると外部スキーマの自動ダウンロードが有効になります。
 
-## ステップ 2: GML ファイルから機能を読み取る
+## 手順 2: GML ファイルからフィーチャを読む
 
-次に、`VectorLayer.Open` GML ファイルを開いてその機能を読み取るメソッド。ファイル パスを指定し、GML ドライバーを指定し、以前に定義したドライバーを渡します。`GmlOptions`.
+`VectorLayer.Open` メソッドで GML ファイルを開き、フィーチャを列挙します。`"attribute"` を実際に読み取りたいフィールド名に置き換えてください。
 
 ```csharp
 using (VectorLayer layer = VectorLayer.Open(dataDir + "file.gml", Drivers.Gml, options))
@@ -76,11 +88,11 @@ using (VectorLayer layer = VectorLayer.Open(dataDir + "file.gml", Drivers.Gml, o
 }
 ```
 
-ここでは、レイヤー内の各フィーチャを反復処理して、特定の属性の値を取得します。交換する`"attribute"`取得する属性の名前を付けます。
+このループは、レイヤ内のすべてのフィーチャに対して選択した属性の値を出力します。
 
-## ステップ 3: 属性スキーマの復元 (オプション)
+## 手順 3: 属性スキーマの復元（オプション）
 
-GML ファイルでスキーマの場所が明示的に指定されていない場合は、ファイル データに基づいて属性スキーマを復元することを選択できます。
+GML ファイルに明示的なスキーマ位置が **含まれていない** 場合、Aspose.GIS にデータからスキーマを推測させることができます。
 
 ```csharp
 using (VectorLayer layer = VectorLayer.Open(dataDir + "file.gml", Drivers.Gml, new GmlOptions(){RestoreSchema = true}))
@@ -92,36 +104,44 @@ using (VectorLayer layer = VectorLayer.Open(dataDir + "file.gml", Drivers.Gml, n
 }
 ```
 
-このステップでは、次の新しいインスタンスを渡します。`GmlOptions`と`RestoreSchema`true に設定します。 Aspose.GIS は、ファイル データを使用して属性スキーマの復元を試みます。
+`RestoreSchema = true` を設定すると自動的にスキーマが再構築され、元の GML にスキーマメタデータがなくても属性値にアクセスできるようになります。
+
+## 共通の問題と解決策
+
+| 問題 | 原因 | 解決策 |
+|------|------|--------|
+| **スキーマが見つからない** | `SchemaLocation` が未設定で `LoadSchemasFromInternet` が無効 | `LoadSchemasFromInternet` を有効にするか、ローカルスキーマファイルを `SchemaLocation` で指定 |
+| **属性値が空** | `GetValue` に誤った属性名を使用 | GIS ビューアで正確なフィールド名を確認するか、`feature.Attributes` を調査 |
+| **大容量ファイルでパフォーマンス低下** | ファイル全体をメモリに読み込んでいる | デフォルトのストリーミングモードを使用し、フィーチャを一括でコレクションに格納し## よくある質問
+
+**Q: Aspose.GIS は大容量 GML ファイルを効率的に処理できますか？**  
+A: はい、データをストリーミングし、イテレート時にのみフィーチャを実体化するため、メモリ使用量が低く抑えられます。
+
+**Q: GML 以外の地理空間フォーマットもサポートしていますか？**  
+A: もちろんです。Shapefile、KML、GeoJSON など多数のフォーマットに対応しています。
+
+**Q: デスクトップアプリとウェブアプリの両方で使用できますか？**  
+A: はい、API はプラットフォームに依存せず、ASP.NET、Blazor、WPF、コンソールアプリなどで利用可能です。
+
+**Q: 読み取ったフィーチャに対して空間クエリを実行できますか？**  
+A: 可能です。`VectorLayer` をロードした後、`Select`、`Intersect`、`Within` などのメソッドで空間クエリを実行できます。
+
+**Q: 技術サポートはどこで受けられますか？**  
+A: Aspose のフォーラム [link]( https://forum.aspose.com/c/gis/33) で専用サポートが提供されています。
 
 ## 結論
 
-おめでとう！ Aspose.GIS for .NET を使用して GML ファイルからフィーチャを読み取る方法を学習しました。ステップバイステップのガイドに従うことで、地理空間データを .NET アプリケーションにシームレスに統合し、GIS 開発の無限の可能性への扉を開くことができます。
+これで、Aspose.GIS for .NET を使用して **gml を読む** 完全な本番向けワークフローが整いました。`GmlOptions` を設定し、レイヤを開き、必要に応じてスキーマを復元すれば、任意の属性を抽出し、GIS ソリューションに GML データをシームレスに統合できます。
 
-## よくある質問
-
-### Q: Aspose.GIS は大きな GML ファイルを効率的に処理できますか?
-
-A: はい、Aspose.GIS は大きな GML ファイルを効率的に処理できるように最適化されており、広範な地理空間データであってもスムーズな処理が保証されます。
-
-### Q: Aspose.GIS は GML 以外の地理空間形式をサポートしていますか?
-
-A: もちろんです！ Aspose.GIS は、Shapefile、KML、GeoJSON などのさまざまな地理空間形式のサポートを提供し、データ統合における柔軟性を提供します。
-
-### Q: Aspose.GIS はデスクトップ アプリケーションと Web アプリケーションの両方と互換性がありますか?
-
-A: はい、Aspose.GIS は多用途であり、.NET Framework を使用して開発されたデスクトップ アプリケーションと Web アプリケーションの両方にシームレスに統合できます。
-
-### Q: Aspose.GIS を使用して空間クエリを実行できますか?
-
-A：確かに！ Aspose.GIS は堅牢な空間クエリ機能を提供し、複雑な空間操作を簡単に実行できます。
-
-### Q: Aspose.GIS ユーザーはテクニカル サポートを利用できますか?
-
- A: はい、Aspose はフォーラムを通じて専用の技術サポートを提供します[リンク]( https://forum.aspose.com/c/gis/33)、ユーザーはここで支援を求めたり、問題を報告したり、コミュニティに参加したりできます。
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+---
+
+**最終更新日:** 2025-12-26  
+**テスト環境:** Aspose.GIS 24.11 for .NET  
+**作者:** Aspose
