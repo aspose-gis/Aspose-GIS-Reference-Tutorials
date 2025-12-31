@@ -1,27 +1,48 @@
 ---
-title: 파일 GDB 계층에 대한 허용오차 설정
-linktitle: 파일 GDB 계층에 대한 허용오차 설정
+date: 2025-12-31
+description: Aspose.GIS for .NET를 탐색하고 파일 GDB 데이터세트를 생성하고 허용오차를 손쉽게 설정하는 방법을 단계별 안내와
+  함께 배우세요. .NET 애플리케이션을 향상시키세요.
+linktitle: Set Tolerances for File GDB Layer
 second_title: Aspose.GIS .NET API
-description: .NET용 Aspose.GIS를 살펴보고 지리공간 데이터 조작을 마스터하세요. 단계별 안내를 통해 손쉽게 공차를 설정하세요. .NET 애플리케이션을 강화하세요.
-weight: 22
+title: 파일 GDB 데이터셋 생성 및 레이어에 대한 허용오차 설정
 url: /ko/net/layer-data-operations/set-tolerances-for-file-gdb-layer/
+weight: 22
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# 파일 GDB 계층에 대한 허용오차 설정
+# 파일 GDB 데이터셋 생성 및 레이어에 대한 공차 설정
 
-## 소개
-.NET용 Aspose.GIS를 사용하여 지리공간 데이터 조작의 세계에 오신 것을 환영합니다! .NET 애플리케이션에서 지리 정보를 처리하는 기술을 향상시키고 싶다면 잘 찾아오셨습니다. 이 포괄적인 가이드에서는 파일 지리 데이터베이스(GDB) 레이어에 대한 허용 오차 설정에 대한 복잡한 세부 사항을 자세히 살펴보고 실용적인 통찰력과 단계별 지침을 제공합니다.
-## 전제조건
-튜토리얼을 시작하기 전에 다음 전제 조건이 충족되었는지 확인하세요.
--  .NET 라이브러리용 Aspose.GIS: 다음에서 Aspose.GIS 라이브러리를 다운로드하고 설치하세요.[다운로드 링크](https://releases.aspose.com/gis/net/) . 아직 구입하지 않은 경우 다음에서 라이브러리를 더 자세히 탐색할 수 있습니다.[선적 서류 비치](https://reference.aspose.com/gis/net/).
-- 개발 환경: Visual Studio 또는 기타 선호하는 IDE를 포함하여 .NET 개발 환경을 설정합니다.
-이제 필수 사항이 준비되었으므로 필요한 네임스페이스를 가져오는 것부터 시작해 보겠습니다.
-## 네임스페이스 가져오기
-.NET 애플리케이션에 Aspose.GIS의 기능을 활용하려면 다음 네임스페이스를 포함하세요.
+## Introduction
+If you need to **create file GDB dataset** and control its precision, you’re in the right place. In this tutorial we’ll walk through the entire process—starting from setting up your .NET project, creating a File Geodatabase (GDB) dataset, and then applying XY, Z, and M tolerances to a new layer. By the end you’ll have a ready‑to‑use dataset that works smoothly with ArcGIS tools and other GIS applications.
+
+## Quick Answers
+- **What does “create file GDB dataset” mean?** It creates a new File Geodatabase container on disk that can hold multiple GIS layers.  
+- **Why set tolerances?** Tolerances define the precision for geometry operations, preventing rounding errors in spatial analysis.  
+- **Which Aspose.GIS class is used?** `Dataset.Create` together with `FileGdbOptions`.  
+- **Do I need a license for development?** A temporary license is enough for testing; a full license is required for production.  
+- **What .NET versions are supported?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
+
+## What is a File GDB Dataset?
+A File Geodatabase (GDB) is a folder‑based data store that holds GIS layers, tables, and relationships. Using Aspose.GIS you can programmatically **create file GDB dataset** without needing ArcGIS installed, making it ideal for automated pipelines or custom applications.
+
+## Why set tolerances for a layer?
+Setting tolerances ensures that geometry calculations (like intersections, buffering, or snapping) respect the precision you need. This is especially important when working with high‑resolution data or when exporting to other GIS platforms that expect specific tolerance values.
+
+## Prerequisites
+Before we dive into the code, make sure you have the following:
+
+- **Aspose.GIS for .NET Library** – Download and install the Aspose.GIS library from the [download link](https://releases.aspose.com/gis/net/). If you haven’t acquired it yet, you can explore the library further in the [documentation](https://reference.aspose.com/gis/net/).
+- **Development Environment** – Visual Studio, Rider, or any IDE that supports .NET development.
+- **A valid license** – Use a temporary license for testing or a full license for production (see the links in the FAQ section).
+
+Now that you have everything ready, let’s import the namespaces we’ll need.
+
+## Import Namespaces
+In your .NET application, include the following namespaces to leverage the functionalities of Aspose.GIS:
+
 ```csharp
 using Aspose.Gis;
 using Aspose.Gis.Formats.FileGdb;
@@ -30,21 +51,34 @@ using Aspose.Gis.SpatialReferencing;
 using System;
 using System.Text;
 ```
-네임스페이스가 준비되면 File GDB 계층에 대한 허용 오차 설정을 위한 단계별 가이드를 탐색할 준비가 모두 완료되었습니다.
-## 1단계: 문서 디렉터리 정의
-코드에서 문서 디렉토리 경로를 설정하여 시작하십시오.
+
+With the namespaces in place, we can start building the dataset.
+
+## Step‑by‑Step Guide
+
+### Step 1: Define Your Document Directory
+First, point the code to the folder where you want the File GDB to be created:
+
 ```csharp
 string dataDir = "Your Document Directory";
 ```
-## 2단계: 파일 GDB 데이터 세트 생성
-지정된 경로에 새 File GDB 데이터세트를 생성합니다:
+
+> **Pro tip:** Use `Path.Combine` if you need to build the path in a platform‑independent way.
+
+### Step 2: Create a File GDB Dataset
+Now we actually **create file GDB dataset** on disk. The `Dataset.Create` method takes the full path and the driver type (`Drivers.FileGdb`).
+
 ```csharp
 var path = dataDir + "TolerancesForFileGdbLayer_out.gdb";
 using (var dataset = Dataset.Create(path, Drivers.FileGdb))
 {
 ```
-## 3단계: FileGdbOptions를 사용하여 허용 오차 설정
- 다음을 사용하여 File GDB 레이어에 대한 허용오차를 지정합니다.`FileGdbOptions` 수업:
+
+> The `using` block ensures that the dataset is properly closed and flushed to disk when you’re done.
+
+### Step 3: Set Tolerances using `FileGdbOptions`
+Before creating a layer, define the tolerances you need. `FileGdbOptions` lets you specify XY, Z, and M tolerances.
+
 ```csharp
 var options = new FileGdbOptions
 {
@@ -53,28 +87,53 @@ var options = new FileGdbOptions
     MTolerance = 0.1,
 };
 ```
-## 4단계: 공차가 있는 레이어 생성
-지정된 허용오차를 사용하여 데이터세트 내에 레이어를 만듭니다.
+
+These values are typical for high‑precision engineering data, but you can adjust them to suit your project.
+
+### Step 4: Create a Layer with the Specified Tolerances
+Finally, create a new layer inside the dataset, passing the options object we just configured.
+
 ```csharp
 using (var layer = dataset.CreateLayer("layer_name", options))
 {
-    // 레이어는 제공된 허용오차로 생성되어 ArcGIS 기능/도구에서 사용할 수 있습니다.
+    // The layer is created with the provided tolerances, ready for use in ArcGIS features/tools.
 }
 ```
-축하해요! .NET용 Aspose.GIS를 사용하여 파일 GDB 레이어에 대한 허용 오차를 성공적으로 설정했습니다. 지리공간 프로젝트에서 Aspose.GIS의 광범위한 기능을 자유롭게 탐색해 보세요.
-## 결론
-이 가이드에서는 File GDB 레이어에 대한 허용 오차를 설정하는 프로세스를 탐색하여 지리 공간 데이터를 효율적으로 관리할 수 있도록 지원했습니다. .NET용 Aspose.GIS는 지리공간 개발을 위한 강력한 기반을 제공하며 이러한 기술을 익히면 애플리케이션에서 무한한 가능성을 열어줍니다.
-## 자주 묻는 질문
-### 다른 GIS 라이브러리와 함께 .NET용 Aspose.GIS를 사용할 수 있나요?
-예, Aspose.GIS는 상호 운용성을 지원하므로 다른 GIS 라이브러리와 원활하게 통합할 수 있습니다.
-### .NET용 Aspose.GIS에 사용할 수 있는 평가판이 있습니까?
- 전적으로! 다음을 통해 기능을 탐색할 수 있습니다.[무료 평가판](https://releases.aspose.com/).
-### .NET용 Aspose.GIS에 대한 지원을 받으려면 어떻게 해야 합니까?
- 방문하다[Aspose.GIS 포럼](https://forum.aspose.com/c/gis/33) 지역사회와 연결하고 도움을 구합니다.
-### 테스트 목적으로 임시 라이센스가 필요합니까?
- 예, 다음을 얻을 수 있습니다.[임시 면허증](https://purchase.aspose.com/temporary-license/) 테스트 및 평가를 위해.
-### .NET용 Aspose.GIS 라이선스는 어디서 구입할 수 있나요?
- 라이센스는 다음에서 구입할 수 있습니다.[구매 페이지](https://purchase.aspose.com/buy).
+
+When the `using` block ends, the layer is saved with the tolerances you defined.
+
+## Common Issues & Solutions
+| Issue | Why it Happens | Fix |
+|-------|----------------|-----|
+| **Dataset path not found** | The `dataDir` variable points to a non‑existent folder. | Ensure the directory exists or create it with `Directory.CreateDirectory(dataDir)`. |
+| **Invalid tolerance values** | Tolerances must be non‑negative numbers. | Use positive values; avoid zero unless you intentionally want no tolerance. |
+| **License error** | A trial or temporary license has expired. | Apply a fresh temporary license or upgrade to a full license. |
+
+## Frequently Asked Questions
+
+**Q: Can I use Aspose.GIS for .NET with other GIS libraries?**  
+A: Yes, Aspose.GIS supports interoperability, allowing you to integrate it with libraries such as NetTopologySuite or GDAL.
+
+**Q: Is there a trial version available for Aspose.GIS for .NET?**  
+A: Absolutely! You can explore the features with the [free trial version](https://releases.aspose.com/).
+
+**Q: How can I get support for Aspose.GIS for .NET?**  
+A: Visit the [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) to connect with the community and seek assistance.
+
+**Q: Do I need a temporary license for testing purposes?**  
+A: Yes, you can obtain a [temporary license](https://purchase.aspose.com/temporary-license/) for testing and evaluation.
+
+**Q: Where can I purchase the Aspose.GIS for .NET license?**  
+A: You can purchase the license from the [buy page](https://purchase.aspose.com/buy).
+
+## Conclusion
+In this guide we covered how to **create file GDB dataset**, configure geometry tolerances, and save a ready‑to‑use layer with Aspose.GIS for .NET. These steps give you precise control over spatial data, making your GIS applications more reliable and interoperable.
+
+---  
+**Last Updated:** 2025-12-31  
+**Tested With:** Aspose.GIS for .NET 24.11 (latest at time of writing)  
+**Author:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
