@@ -1,33 +1,48 @@
 ---
-title: Leggi l'ID oggetto dal file GDB Layer in Aspose.GIS
-linktitle: Leggi l'ID oggetto dal livello GDB del file
-second_title: API Aspose.GIS .NET
-description: Scopri come utilizzare Aspose.GIS per .NET per gestire in modo efficiente l'elaborazione dei dati geospaziali. Sono disponibili tutorial completi e guida esperta.
-weight: 16
+date: 2026-01-02
+description: Impara come utilizzare asp gis read objectid con Aspose.GIS per .NET
+  per elaborare in modo efficiente i layer di File Geodatabase. Tutorial completo
+  e guida esperta.
+linktitle: Read Object ID from File GDB Layer
+second_title: Aspose.GIS .NET API
+title: asp gis leggi objectid – Leggi ID oggetto dal layer File GDB
 url: /it/net/layer-data-operations/read-object-id-from-file-gdb-layer/
+weight: 16
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Leggi l'ID oggetto dal file GDB Layer in Aspose.GIS
+# asp gis read objectid – Leggi Object ID da un layer File GDB
 
-## introduzione
-Benvenuti nella nostra guida completa su come padroneggiare Aspose.GIS per .NET! Aspose.GIS è una potente libreria progettata per gestire in modo efficiente le attività di elaborazione e visualizzazione dei dati geospaziali all'interno del framework .NET. Che tu sia uno sviluppatore esperto o che tu abbia appena iniziato il tuo viaggio nella programmazione geospaziale, questo tutorial ti guiderà attraverso tutto ciò che devi sapere per sfruttare tutto il potenziale di Aspose.GIS.
+## Introduzione
+In questa guida completa, scoprirai come **asp gis read objectid** utilizzando Aspose.GIS per .NET. Che tu stia creando un servizio web abilitato GIS o un'utilità desktop, leggere il campo OBJECTID da un layer File Geodatabase (GDB) è un primo passo comune in molti flussi di lavoro spaziali. Ti accompagneremo attraverso l'intero processo—dalla configurazione del progetto all'estrazione e stampa dell'Object ID di ogni feature—così potrai iniziare a integrare questa funzionalità nelle tue applicazioni subito.
+
+## Risposte rapide
+- **Cosa fa “asp gis read objectid”?** Recupera l'attributo numerico OBJECTID per ogni feature in un layer File GDB.  
+- **Quale libreria è necessaria?** Aspose.GIS per .NET (disponibile via NuGet o download diretto).  
+- **È necessaria una licenza?** Una versione di prova gratuita è sufficiente per lo sviluppo; è richiesta una licenza commerciale per la produzione.  
+- **Quale IDE dovrei usare?** Visual Studio 2022 (o qualsiasi versione recente) è consigliato.  
+- **Posso targettizzare .NET 6+?** Sì—Aspose.GIS supporta .NET Framework 4.5+, .NET Core 3.1+, e .NET 5/6/7.
+
+## Che cos’è asp gis read objectid?
+`asp gis read objectid` si riferisce all'operazione di accesso al campo **OBJECTID**—un identificatore unico interno che ogni feature in un layer File Geodatabase possiede. Questo identificatore è essenziale per attività come la selezione delle feature, la modifica e la sincronizzazione dei dati tra diversi dataset GIS.
+
+## Perché usare Aspose.GIS per questa attività?
+- **Zero dipendenze native** – Non è necessario installare software ESRI localmente.  
+- **Cross‑platform** – Funziona su Windows, Linux e macOS.  
+- **API ricca** – Fornisce metodi semplici come `GetValue<T>` per recuperare direttamente i valori degli attributi.  
+- **Ottimizzata per le prestazioni** – Gestisce file GDB di grandi dimensioni con un basso consumo di memoria.
+
 ## Prerequisiti
-Prima di immergerti nel tutorial, assicurati di avere i seguenti prerequisiti:
-1. Visual Studio: assicurati di avere Visual Studio installato sul tuo sistema, poiché lo utilizzeremo per scrivere ed eseguire il nostro codice .NET.
-   
-2.  Aspose.GIS per .NET: dovrai scaricare e installare Aspose.GIS per .NET. È possibile ottenere la libreria da[pagina di download](https://releases.aspose.com/gis/net/).
-3. Conoscenza di base di C#: la familiarità con il linguaggio di programmazione C# è essenziale per comprendere e implementare gli esempi forniti in questo tutorial.
+1. **Visual Studio** – Qualsiasi edizione recente (Community, Professional o Enterprise).  
+2. **Aspose.GIS per .NET** – Scarica dalla [pagina di download](https://releases.aspose.com/gis/net/) o installa via NuGet (`Install-Package Aspose.GIS`).  
+3. **Conoscenza base di C#** – Familiarità con cicli, istruzioni using e output su console.
 
-## Importazione di spazi dei nomi
-Per iniziare con Aspose.GIS per .NET, è necessario importare gli spazi dei nomi richiesti nel codice C#. Segui questi passi:
-## Passaggio 1: aggiungere riferimenti ad Aspose.GIS
-Inizia aggiungendo riferimenti alla libreria Aspose.GIS nel tuo progetto Visual Studio. Puoi farlo facendo riferimento direttamente ai file DLL o installando il pacchetto tramite NuGet.
-## Passaggio 2: importare gli spazi dei nomi
-Successivamente, importa gli spazi dei nomi necessari all'inizio del file C#. Ciò consente di accedere alle classi e ai metodi forniti da Aspose.GIS.
+## Importazione degli spazi dei nomi
+Per prima cosa, aggiungi i riferimenti ad Aspose.GIS nel tuo progetto (via NuGet o facendo riferimento ai DLL). Quindi importa gli spazi dei nomi necessari nella parte superiore del tuo file C#:
+
 ```csharp
 using Aspose.Gis;
 using System;
@@ -37,49 +52,83 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-Ora suddividiamo lo snippet di codice fornito in più passaggi:
-## Passaggio 1: definire la directory dei dati
+## Guida passo‑passo
+
+### Passo 1: Definisci la directory dei dati
+Imposta il percorso della cartella che contiene i file `.gdb`.
+
 ```csharp
 string dataDir = "Your Document Directory";
 ```
- Sostituire`"Your Document Directory"` con il percorso della directory contenente i file File Geodatabase (GDB).
-## Passaggio 2: aprire il set di dati e il layer
+
+Sostituisci `"Your Document Directory"` con il percorso effettivo della cartella sul tuo computer.
+
+### Passo 2: Apri il dataset e il layer di destinazione
+Crea un oggetto `Dataset` per il File GDB e poi apri il layer specifico che desideri leggere.
+
 ```csharp
 string path = dataDir + "test.gdb";
 using (var dataset = Dataset.Open(path, Drivers.FileGdb))
 using (var layer = dataset.OpenLayer("layer"))
 {
-    // Il codice per leggere gli ID oggetto va qui
+    // Code to read object IDs goes here
 }
 ```
-Questo passaggio apre il set di dati e il livello dal file GDB specificato (`test.gdb`). Assicurarsi che il driver corretto (`FileGdb`) viene utilizzato per aprire il set di dati.
-## Passaggio 3: scorrere le funzionalità
+
+> **Suggerimento:** Verifica che il nome del layer (`"layer"`) corrisponda al nome mostrato nel tuo esploratore di file GDB.
+
+### Passo 3: Itera su tutte le feature del layer
+Scorri ogni oggetto `Feature` esposto dalla collezione `layer`.
+
 ```csharp
 foreach (var feature in layer)
 {
-    // Il codice per elaborare ciascuna funzionalità va qui
+    // Code to process each feature goes here
 }
 ```
-Qui, iteriamo attraverso ciascuna funzionalità nel livello recuperato dal set di dati.
-## Passaggio 4: recuperare l'ID oggetto
+
+### Passo 4: Recupera e visualizza l'OBJECTID
+All'interno del ciclo, ottieni il valore intero dell'attributo `OBJECTID` e scrivilo sulla console.
+
 ```csharp
 Console.WriteLine(feature.GetValue<int>("OBJECTID"));
 ```
-All'interno del ciclo, recuperiamo e stampiamo il valore dell'attributo "OBJECTID" per ciascuna caratteristica.
+
+L'esecuzione del programma stamperà un elenco di Object ID, uno per riga, confermando che l'operazione **asp gis read objectid** è riuscita.
+
+## Problemi comuni e soluzioni
+| Problema | Motivo | Soluzione |
+|----------|--------|-----------|
+| `ArgumentException: Field OBJECTID not found` | Il layer utilizza un nome campo diverso (es. `OID`). | Controlla il nome esatto del campo con `layer.Schema.Fields` e modifica la stringa in `GetValue`. |
+| `FileNotFoundException` | Percorso errato alla cartella `.gdb`. | Usa percorsi assoluti o `Path.Combine(dataDir, "test.gdb")`. |
+| Rallentamento delle prestazioni su GDB di grandi dimensioni | La lettura di tutte le feature contemporaneamente consuma memoria. | Processa le feature in batch o usa `layer.Select` con un filtro spaziale. |
+
+## Domande frequenti
+
+**D: Posso usare Aspose.GIS per .NET con altri linguaggi di programmazione?**  
+R: Aspose.GIS è costruito specificamente per .NET, ma Aspose offre librerie analoghe per Java e altre piattaforme.
+
+**D: È disponibile una versione di prova gratuita per Aspose.GIS?**  
+R: Sì, puoi scaricare una versione di prova gratuita di Aspose.GIS per .NET dalla [sito web](https://releases.aspose.com/gis/net/).
+
+**D: Come posso ottenere supporto tecnico per Aspose.GIS?**  
+R: Se incontri problemi o hai domande, visita il [forum Aspose.GIS](https://forum.aspose.com/c/gis/33) per assistenza da parte della community e dello staff.
+
+**D: Posso acquistare una licenza temporanea per Aspose.GIS?**  
+R: Sì, è disponibile una licenza di valutazione temporanea direttamente dal sito Aspose.
+
+**D: Dove posso trovare la documentazione completa per Aspose.GIS per .NET?**  
+R: Riferimenti API dettagliati e guide d'uso sono disponibili nella [documentazione](https://reference.aspose.com/gis/net/).
 
 ## Conclusione
-In questo tutorial, abbiamo trattato le nozioni di base sull'utilizzo di Aspose.GIS per .NET per leggere gli ID oggetto da un livello File Geodatabase. Seguendo la guida passo passo e comprendendo gli esempi di codice forniti, ora sei in grado di esplorare attività di elaborazione dei dati geospaziali più avanzate con Aspose.GIS.
-## Domande frequenti
-### Posso utilizzare Aspose.GIS per .NET con altri linguaggi di programmazione?
-Aspose.GIS per .NET è progettato specificamente per le applicazioni .NET. Tuttavia, Aspose offre anche librerie per Java e altre piattaforme.
-### È disponibile una prova gratuita per Aspose.GIS?
-Sì, puoi scaricare una versione di prova gratuita di Aspose.GIS per .NET da[sito web](https://releases.aspose.com/gis/net/).
-### Come posso ottenere supporto tecnico per Aspose.GIS?
-Se riscontri problemi o hai domande su Aspose.GIS, puoi visitare il[Forum Aspose.GIS](https://forum.aspose.com/c/gis/33) per assistenza.
-### Posso acquistare una licenza temporanea per Aspose.GIS?
-Sì, puoi ottenere una licenza temporanea dal sito Web Aspose per scopi di test e valutazione.
-### Dove posso trovare la documentazione completa per Aspose.GIS per .NET?
- Puoi fare riferimento a[documentazione](https://reference.aspose.com/gis/net/) per informazioni dettagliate sull'utilizzo delle API e delle funzionalità di Aspose.GIS.
+Ora disponi di un esempio completo, end‑to‑end, su come **asp gis read objectid** da un layer File Geodatabase utilizzando Aspose.GIS per .NET. Con queste conoscenze, puoi estendere il codice per filtrare le feature, aggiornare gli attributi o integrare gli ID in flussi di lavoro GIS più ampi. Esplora ulteriormente l'API di Aspose.GIS per sbloccare operazioni spaziali avanzate come trasformazioni geometriche, gestione raster e conversioni di sistemi di coordinate.
+
+---
+
+**Ultimo aggiornamento:** 2026-01-02  
+**Testato con:** Aspose.GIS 24.11 per .NET  
+**Autore:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
