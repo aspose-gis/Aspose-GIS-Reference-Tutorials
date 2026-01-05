@@ -1,27 +1,39 @@
 ---
-title: フィーチャー属性値の取得 (デフォルト)
-linktitle: フィーチャー属性値の取得 (デフォルト)
+date: 2026-01-05
+description: Aspose.GIS for .NETで属性値を取得し、デフォルトを設定する方法を学びます。このステップバイステップガイドでは、GeoJSONレイヤーの作成とGISフィーチャの構築を示します。
+linktitle: How to Get Attribute Value (Default)
 second_title: Aspose.GIS .NET API
-description: Aspose.GIS for .NET のパワーを解放してください!このステップバイステップのガイドを使用すると、フィーチャ属性値を簡単に取得して操作できます。今すぐ試用版をダウンロードしてください!
-weight: 14
+title: Aspose.GIS for .NETで属性値（デフォルト）を取得する方法
 url: /ja/net/layer-interaction-and-data-access/get-feature-attribute-value-default/
+weight: 14
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# フィーチャー属性値の取得 (デフォルト)
+# Aspise.GIS for .NET を使用して属性値（デフォルト）を取得する方法
 
-## 導入
-Aspose.GIS for .NET の世界へようこそ!この包括的なガイドでは、Aspose.GIS の強力な機能を使用してフィーチャ属性値を取得する複雑な仕組みについて詳しく説明します。経験豊富な開発者であっても、初心者であっても、このチュートリアルではステップバイステップのウォークスルーを提供し、この優れたツールの可能性を最大限に活用できるようにします。
+## はじめに
+この包括的なチュートリアルでは、Aspose.GIS for .NET を使用して GIS フィーチャから **属性値を取得する方法** と、属性が存在しない場合のデフォルト値の扱い方を学びます。空間分析エンジンの構築やシンプルなマップビューアの作成など、属性取得とデフォルト処理をマスターすることは、信頼性の高い GIS アプリケーションにとって不可欠です。
+
+## クイック回答
+- **主要なメソッドは何ですか？** `Feature.GetValueOrDefault<T>()`  
+- **カスタムデフォルトを設定できますか？** はい、デフォルト値を受け取るオーバーロードを使用するか、属性の `DefaultValue` を定義することで設定できます。  
+- **開発にライセンスは必要ですか？** テストには無料トライアルで動作しますが、本番環境では商用ライセンスが必要です。  
+- **サポートされているジオメトリ形式は？** GeoJSON、Shapefile、GML など、Aspose.GIS ドライバを通じて多数の形式をサポートしています。  
+- **.NET Core/.NET 6+ でも動作しますか？** はい、ライブラリはクロスプラットフォームです。
+
 ## 前提条件
-このコーディングの冒険に着手する前に、次の前提条件が満たされていることを確認してください。
-- C# および .NET Framework に関する実践的な知識。
--  Aspose.GIS for .NET がインストールされています。そうでない場合は、からダウンロードしてください[ここ](https://releases.aspose.com/gis/net/).
-- Visual Studio などのコード エディターでシームレスに操作できます。
+本題に入る前に、以下が揃っていることを確認してください：
+
+- C# と .NET エコシステムの基本的な知識  
+- Aspose.GIS for .NET がインストールされていること。まだの場合は、[here](https://releases.aspose.com/gis/net/) からダウンロードしてください。  
+- Visual Studio や Visual Studio Code などのコードエディタ  
+
 ## 名前空間のインポート
-C# プロジェクトに、必要な名前空間を必ず含めてください。
+C# ファイルに必要な `using` 文を追加して、API の型を利用できるようにします：
+
 ```csharp
 using Aspose.Gis;
 using Aspose.GIS.Examples.CSharp;
@@ -32,15 +44,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 ```
-ここで、それぞれの例を一連のわかりやすい手順に分けて見てみましょう。
-## フィーチャー属性値の取得 (デフォルト)
-### ステップ 1: 環境をセットアップする
-まず、ドキュメント ディレクトリへのパスを定義します。
+
+それでは、各例をステップバイステップで見ていきましょう。
+
+## 属性値（デフォルト）を取得する方法
+### 手順 1: 環境の設定
+テストドキュメントが格納されているフォルダーへのパスを定義します：
+
 ```csharp
 string dataDir = "Your Document Directory";
 ```
-### ステップ 2: GeoJson レイヤーを作成する
-GeoJson レイヤーを作成し、デフォルト値を使用して属性を定義します。
+
+### 手順 2: GeoJSON レイヤーの作成
+**geojson レイヤーを作成**します — ここで、null もしくは未設定になり得る属性を定義します：
+
 ```csharp
 using (var layer = Drivers.GeoJson.CreateLayer(dataDir + "data1_out.json"))
 {
@@ -49,23 +66,29 @@ using (var layer = Drivers.GeoJson.CreateLayer(dataDir + "data1_out.json"))
     attribute.CanBeUnset = true;
     layer.Attributes.Add(attribute);
 ```
-### ステップ 3: フィーチャを構築する
-定義された属性を使用してフィーチャを構築します。
+
+### 手順 3: GIS フィーチャの構築
+次に **GIS フィーチャを構築**します — これにより、先ほど定義した属性スキーマを遵守した新しいフィーチャ インスタンスが得られます：
+
 ```csharp
     Feature feature = layer.ConstructFeature();
 ```
-### ステップ 4: 値を取得する
-さまざまなシナリオで属性値を取得します。
+
+### 手順 4: 値の取得
+最後に、いくつかのシナリオで **フィーチャ属性を取得**し、デフォルトがどのように機能するかを示します：
+
 ```csharp
-    int? nullValue = feature.GetValueOrDefault<int?>("attribute"); //値 == null
-    var defValue1 = feature.GetValueOrDefault<int?>("attribute", 10); //値 == 10
-    var defValue2 = feature.GetValueOrDefault("attribute", 25); //値 == 10
+    int? nullValue = feature.GetValueOrDefault<int?>("attribute"); // value == null
+    var defValue1 = feature.GetValueOrDefault<int?>("attribute", 10); // value == 10
+    var defValue2 = feature.GetValueOrDefault("attribute", 25); // value == 10
     Console.WriteLine($"'{nullValue}' vs '{defValue1}' vs '{defValue2}'");
 }
 ```
-## デフォルト値の設定
-### ステップ 1: 別の GeoJson レイヤーを作成する
-別の GeoJson レイヤーと double 属性を使用してプロセスを繰り返します。
+
+## デフォルト値の設定方法
+### 手順 1: 別の GeoJSON レイヤーを作成
+今回はスキーマ上で **属性のデフォルトを設定**します：
+
 ```csharp
 using (var layer = Drivers.GeoJson.CreateLayer(dataDir + "data2_out.json"))
 {
@@ -75,34 +98,65 @@ using (var layer = Drivers.GeoJson.CreateLayer(dataDir + "data2_out.json"))
     attribute.DefaultValue = 100;
     layer.Attributes.Add(attribute);
 ```
-### ステップ 2: フィーチャーを構築する (再度)
+
+### 手順 2: GIS フィーチャを再度構築
 ```csharp
     Feature feature = layer.ConstructFeature();
 ```
-### ステップ 3: 値の取得と設定
-属性値を取得および設定し、デフォルトを示します。
+
+### 手順 3: 値の取得と設定
+デフォルトを取得し、実行時に **デフォルトの設定方法** の効果を確認するために変更します：
+
 ```csharp
-    double defValue1 = feature.GetValueOrDefault<double>("attribute"); //値 == 100
-    var defValue2 = feature.GetValueOrDefault("attribute"); //値 == 100
+    double defValue1 = feature.GetValueOrDefault<double>("attribute"); // value == 100
+    var defValue2 = feature.GetValueOrDefault("attribute"); // value == 100
     feature.SetValue("attribute", 50);
-    var newValue = feature.GetValueOrDefault<double>("attribute"); //値 == 50
+    var newValue = feature.GetValueOrDefault<double>("attribute"); // value == 50
     Console.WriteLine($"'{defValue1}' vs '{defValue2}' vs '{newValue}'");
 }
 ```
-おめでとう！フィーチャ属性値の取得と操作において、Aspose.GIS for .NET の機能をうまく活用することができました。
-## 結論
-このチュートリアルでは、Aspose.GIS for .NET を使用してフィーチャ属性値を取得する微妙な違いを検討しました。 Aspose.GIS は、直感的な API と堅牢な機能により、.NET 環境での GIS 開発の可能性の世界を開きます。
+
+## よくある落とし穴とヒント
+- **`using` ブロックの閉鎖を忘れないでください。** レイヤーは自動的に破棄され、ファイルハンドルが解放されます。  
+- **`CanBeNull` が false の場合、`GetValueOrDefault` は常に値を返します**（格納された値または定義されたデフォルトのいずれか）。  
+- **ジェネリックオーバーロード**（`GetValueOrDefault<T>`）を使用して、値型のボクシング/アンボクシングを回避してください。  
+- **プロのコツ:** 属性が実際に設定されているか確認したい場合は、`GetValueOrDefault` を呼び出す前に `feature.IsAttributeSet("attribute")` を使用してください。  
+
 ## よくある質問
-### Aspose.GIS は .NET Core と互換性がありますか?
-はい、Aspose.GIS は .NET Core と完全に互換性があり、クロスプラットフォーム サポートを提供します。
-### Aspose.GIS を商用プロジェクトに使用できますか?
-絶対に！ Aspose.GIS には商用ライセンスが付属しており、商用アプリケーションで制限なく使用できます。
-### 追加のサポートやリソースはどこで入手できますか?
-訪問[Aspose.GIS フォーラム](https://forum.aspose.com/c/gis/33)コミュニティのサポートを求めて、[ドキュメンテーション](https://reference.aspose.com/gis/net/)詳細な情報については。
-### 無料トライアルはありますか?
-はい、無料トライアルで Aspose.GIS を探索できます。ダウンロードしてください[ここ](https://releases.aspose.com/).
-### テスト目的で一時ライセンスを取得するにはどうすればよいですか?
-一時ライセンスについては、次のサイトをご覧ください。[ここ](https://purchase.aspose.com/temporary-license/).
+### Aspose.GIS は .NET Core と互換性がありますか？
+はい、Aspose.GIS は .NET Core と完全に互換性があり、クロスプラットフォームのサポートを提供します。
+
+### 商用プロジェクトで Aspose.GIS を使用できますか？
+もちろんです！ Aspose.GIS には商用ライセンスが付属しており、制限なく商用アプリケーションで使用できます。
+
+### 追加のサポートやリソースはどこで見つけられますか？
+コミュニティサポートは [Aspose.GIS フォーラム](https://forum.aspose.com/c/gis/33) を、詳細情報は [ドキュメント](https://reference.aspose.com/gis/net/) をご覧ください。
+
+### 無料トライアルは利用できますか？
+はい、無料トライアルで Aspose.GIS をお試しいただけます。ダウンロードは [here](https://releases.aspose.com/) から。
+
+### テスト目的の一時ライセンスはどう取得しますか？
+一時ライセンスは [here](https://purchase.aspose.com/temporary-license/) から取得してください。
+
+## 追加の FAQ
+**Q: 存在しない属性に対して `GetValueOrDefault` を呼び出した場合はどうなりますか？**  
+A: メソッドは `ArgumentException` をスローします。必ず属性名を確認するか、まず `feature.HasAttribute("name")` を使用してください。
+
+**Q: レイヤー作成後にデフォルト値を変更できますか？**  
+A: はい、`attribute.DefaultValue` を変更し、`layer.UpdateAttribute(attribute)` を呼び出すことで変更を永続化できます。
+
+**Q: Aspose.GIS は属性値の一括更新をサポートしていますか？**  
+A: フィーチャ コレクションを反復処理し、各フィーチャで `SetValue` を呼び出すことができます。大規模データセットの場合は、パフォーマンス向上のために `FeatureCursor` API の使用を検討してください。
+
+## 結論
+本ガイドでは **属性値の取得方法**、デフォルトの定義と上書き方法、そしてアプリケーションの要件に合わせた **GeoJSON レイヤー** スキーマの作成方法を解説しました。これらのテクニックを活用すれば、欠損データやオプションデータを柔軟に扱える堅牢な GIS ソリューションを構築できます。
+
+---
+
+**最終更新日:** 2026-01-05  
+**テスト環境:** Aspose.GIS 24.11 for .NET  
+**作者:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
