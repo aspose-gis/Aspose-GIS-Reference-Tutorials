@@ -1,98 +1,147 @@
 ---
-title: Nhận tất cả các giá trị thuộc tính tính năng
-linktitle: Nhận tất cả các giá trị thuộc tính tính năng
-second_title: API Aspose.GIS .NET
-description: Khám phá sự phát triển không gian địa lý với Aspose.GIS cho .NET! Truy xuất các giá trị thuộc tính đối tượng một cách liền mạch. Tải xuống ngay để có một cuộc phiêu lưu mã hóa không gian.
-weight: 15
+date: 2026-01-05
+description: Tìm hiểu cách đọc shapefile bằng C# sử dụng Aspose.GIS cho .NET, truy
+  xuất tất cả giá trị thuộc tính của đối tượng và xuất các thuộc tính một cách hiệu
+  quả.
+linktitle: Get All Feature Attribute Values
+second_title: Aspose.GIS .NET API
+title: Đọc Shapefile C# – Lấy Tất Cả Giá Trị Thuộc Tính Của Đối Tượng
 url: /vi/net/layer-interaction-and-data-access/get-all-feature-attribute-values/
+weight: 15
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Nhận tất cả các giá trị thuộc tính tính năng
+# Get All Feature Attribute Values
 
-## Giới thiệu
-Chào mừng bạn đến với thế giới phát triển không gian địa lý với Aspose.GIS cho .NET! Thư viện mạnh mẽ này trao quyền cho các nhà phát triển tích hợp liền mạch các chức năng GIS vào các ứng dụng .NET của họ, giúp việc xử lý dữ liệu không gian trở nên dễ dàng. Trong hướng dẫn toàn diện này, chúng ta sẽ khám phá một khía cạnh cơ bản - truy xuất các giá trị thuộc tính từ các đối tượng. Hãy đi sâu vào!
-## Điều kiện tiên quyết
-Trước khi chúng ta bắt đầu cuộc hành trình thú vị này, hãy đảm bảo bạn có sẵn các điều kiện tiên quyết sau:
--  Aspose.GIS for .NET: Tải xuống và cài đặt thư viện từ[Trang tải xuống Aspose.GIS cho .NET](https://releases.aspose.com/gis/net/).
-- Môi trường phát triển: Thiết lập môi trường phát triển .NET, chẳng hạn như Visual Studio.
-- Shapefile: Chuẩn bị sẵn một Shapefile mẫu (ví dụ: "InputShapeFile.shp") trong thư mục tài liệu của bạn.
-## Nhập không gian tên
-Trong mã C# của bạn, hãy bắt đầu bằng cách nhập các vùng tên cần thiết để tận dụng các chức năng của Aspose.GIS:
+## Introduction
+Chào mừng đến với thế giới phát triển địa không gian với Aspose.GIS cho .NET! Trong hướng dẫn này bạn sẽ học **cách đọc shapefile C#** và lấy mọi giá trị thuộc tính từ các đối tượng của nó. Dù bạn đang xây dựng ứng dụng bản đồ hay xử lý dữ liệu không gian hàng loạt, việc nắm vững việc trích xuất thuộc tính là rất quan trọng. Hãy cùng khám phá và xem mã thực tế.
+
+## Quick Answers
+- **What does this code do?** Nó mở một Shapefile và đọc tất cả, một số, hoặc các giá trị thuộc tính đã dump từ mỗi đối tượng.  
+- **Which library is required?** Aspose.GIS for .NET (tương thích với .NET Framework và .NET Core).  
+- **Do I need a license?** Giấy phép tạm thời hoạt động cho việc thử nghiệm; giấy phép đầy đủ cần thiết cho môi trường sản xuất.  
+- **Can I read other formats?** Có – cùng một API hỗ trợ GeoJSON, KML và nhiều định dạng khác.  
+- **How to dump attributes?** Sử dụng `feature.GetValuesDump()` để lấy một mảng đối tượng linh hoạt.
+
+## What is “read shapefile C#”?
+Đọc một Shapefile trong C# có nghĩa là mở tệp .shp bằng một thư viện GIS, duyệt qua các đối tượng vector của nó, và truy cập dữ liệu thuộc tính được lưu trong tệp .dbf đi kèm. Aspose.GIS trừu tượng hoá việc xử lý tệp cấp thấp, cho phép bạn tập trung vào các giá trị thuộc tính cần thiết.
+
+## Why use Aspose.GIS to read attributes?
+- **Simple API** – các phương thức trực quan như `GetValues` và `GetValuesDump`.  
+- **Cross‑platform** – hoạt động trên Windows, Linux và macOS với .NET Core.  
+- **Rich format support** – xử lý Shapefile, GeoJSON, GML và nhiều định dạng khác mà không cần plugin bổ sung.  
+- **Performance‑optimized** – duyệt nhanh qua các bộ dữ liệu lớn.
+
+## Prerequisites
+Trước khi bắt đầu hành trình thú vị này, hãy đảm bảo bạn đã chuẩn bị đầy đủ các yêu cầu sau:
+- Aspose.GIS for .NET: Tải xuống và cài đặt thư viện từ [Aspose.GIS for .NET download page](https://releases.aspose.com/gis/net/).
+- Development Environment: Thiết lập môi trường phát triển .NET, chẳng hạn Visual Studio.
+- Shapefile: Có một Shapefile mẫu (ví dụ, "InputShapeFile.shp") sẵn sàng trong thư mục tài liệu của bạn.
+
+## Import Namespaces
+Trong mã C# của bạn, bắt đầu bằng việc nhập các namespace cần thiết để tận dụng các tính năng của Aspose.GIS:
 ```csharp
 using System;
 using Aspose.Gis;
 ```
-## Bước 1: Đặt thư mục tài liệu
+
+## Step 1: Set the Document Directory
 ```csharp
 string dataDir = "Your Document Directory";
 ```
-Thay thế "Thư mục tài liệu của bạn" bằng đường dẫn thực tế nơi chứa Shapefile của bạn.
-## Bước 2: Mở VectorLayer
+Thay thế "Your Document Directory" bằng đường dẫn thực tế nơi Shapefile của bạn được lưu.
+
+## Step 2: Open the VectorLayer
 ```csharp
 using (VectorLayer layer = VectorLayer.Open(dataDir + "InputShapeFile.shp", Drivers.Shapefile))
 {
-    // Mã của bạn cho các bước tiếp theo ở đây
+    // Your code for further steps goes here
 }
 ```
-Bước này liên quan đến việc mở Shapefile bằng Aspose.GIS, chỉ định đường dẫn và định dạng tệp (trong trường hợp này là Shapefile).
-## Bước 3: Truy xuất tất cả các giá trị thuộc tính tính năng
+Bước này mở Shapefile bằng Aspose.GIS, chỉ định đường dẫn tệp và định dạng (trong trường hợp này là Shapefile).
+
+## Step 3: Retrieve All Feature Attribute Values
 ```csharp
 foreach (var feature in layer)
 {
-    // đọc tất cả các thuộc tính vào một mảng.
+    // reads all the attributes into an array.
     object[] all = new object[3];
     feature.GetValues(all);
     Console.WriteLine("all    : {0}, {1}, {2}", all);
-    // Mã của bạn để xử lý tất cả các giá trị thuộc tính ở đây
+    // Your code for handling all attribute values goes here
     Console.WriteLine();
 }
 ```
-Đoạn mã này trình bày cách truy xuất tất cả các giá trị thuộc tính cho từng đối tượng trong Shapefile.
-## Bước 4: Truy xuất một số giá trị thuộc tính tính năng
+Đoạn mã này cho thấy **cách đọc thuộc tính** cho mọi đối tượng bằng cách tải chúng vào một mảng có kích thước cố định.
+
+## Step 4: Retrieve Several Feature Attribute Values
 ```csharp
 foreach (var feature in layer)
 {
-    // đọc một số thuộc tính vào một mảng.
+    // reads several attributes into an array.
     object[] several = new object[2];
     feature.GetValues(several);
     Console.WriteLine("several: {0}, {1}", several);
-    // Mã của bạn để xử lý một số giá trị thuộc tính ở đây
+    // Your code for handling several attribute values goes here
     Console.WriteLine();
 }
 ```
-Tương tự như Bước 3, bước này tập trung vào việc lấy các giá trị thuộc tính cụ thể từ các đối tượng.
-## Bước 5: Truy xuất các giá trị thuộc tính dưới dạng kết xuất đối tượng
+Ở đây chúng tôi minh họa **cách đọc các giá trị thuộc tính cụ thể** khi bạn chỉ cần một phần các trường dữ liệu.
+
+## Step 5: Retrieve Attribute Values as Objects Dump
 ```csharp
 foreach (var feature in layer)
 {
-    // đọc các thuộc tính dưới dạng một tập hợp các đối tượng.
+    // reads attributes as a dump of objects.
     var dump = feature.GetValuesDump();
     Console.WriteLine("dump   : {0}, {1}, {2}", dump);
-    // Mã của bạn để xử lý các giá trị thuộc tính bị đổ sẽ ở đây
+    // Your code for handling dumped attribute values goes here
     Console.WriteLine();
 }
 ```
-Bước cuối cùng này trình bày cách truy xuất các giá trị thuộc tính ở định dạng kết xuất, mang lại sự linh hoạt trong việc xử lý dữ liệu.
-## Phần kết luận
-Chúc mừng! Bạn đã điều hướng thành công thông qua việc truy xuất các giá trị thuộc tính đối tượng bằng Aspose.GIS cho .NET. Đây chỉ là một cái nhìn thoáng qua về khả năng to lớn của thư viện này. Khám phá sâu hơn và mở khóa toàn bộ tiềm năng phát triển không gian địa lý trong các ứng dụng .NET của bạn.
-## Các câu hỏi thường gặp
-### Aspose.GIS có tương thích với .NET Core không?
+Bước cuối cùng này trình bày **cách dump thuộc tính** bằng `GetValuesDump()`, trả về một bộ sưu tập linh hoạt mà bạn có thể kiểm tra hoặc tuần tự hoá.
+
+## Common Issues and Solutions
+- **Array size mismatch** – Đảm bảo mảng bạn truyền vào `GetValues` khớp với số lượng thuộc tính mong đợi; nếu không bạn sẽ nhận được các mục `null`.  
+- **File not found** – Kiểm tra `dataDir` trỏ tới thư mục đúng và tên Shapefile được viết chính xác.  
+- **License exception** – Nếu gặp lỗi giấy phép, áp dụng giấy phép tạm thời hoặc đầy đủ trước khi gọi bất kỳ phương thức API nào.
+
+## Frequently Asked Questions
+### Is Aspose.GIS compatible with .NET Core?
 Có, Aspose.GIS hoàn toàn tương thích với .NET Core, cho phép bạn xây dựng các ứng dụng đa nền tảng.
-### Tôi có thể làm việc với các định dạng tệp GIS khác nhau bằng Aspose.GIS không?
-Tuyệt đối! Aspose.GIS hỗ trợ nhiều định dạng khác nhau, bao gồm Shapefile, GeoJSON, v.v.
-### Có diễn đàn cộng đồng nào hỗ trợ Aspose.GIS không?
- Có, bạn có thể tìm sự trợ giúp và tương tác với cộng đồng Aspose.GIS trên[diễn đàn hỗ trợ](https://forum.aspose.com/c/gis/33).
-### Làm cách nào tôi có thể nhận được giấy phép tạm thời cho Aspose.GIS?
- Bạn có thể có được giấy phép tạm thời cho mục đích thử nghiệm[đây](https://purchase.aspose.com/temporary-license/).
-### Tôi có thể tìm tài liệu chi tiết về Aspose.GIS ở đâu?
- Tài liệu đầy đủ có sẵn[đây](https://reference.aspose.com/gis/net/).
+
+### Can I work with different GIS file formats using Aspose.GIS?
+Chắc chắn! Aspose.GIS hỗ trợ nhiều định dạng, bao gồm Shapefile, GeoJSON và nhiều định dạng khác.
+
+### Is there a community forum for Aspose.GIS support?
+Có, bạn có thể tìm trợ giúp và tham gia cộng đồng Aspose.GIS tại [support forum](https://forum.aspose.com/c/gis/33).
+
+### How can I obtain a temporary license for Aspose.GIS?
+Bạn có thể nhận giấy phép tạm thời cho mục đích thử nghiệm [here](https://purchase.aspose.com/temporary-license/).
+
+### Where can I find detailed documentation for Aspose.GIS?
+Tài liệu chi tiết có sẵn [here](https://reference.aspose.com/gis/net/).
+
+### How do I retrieve only the “Name” attribute from each feature?
+Sử dụng `GetValues` với một mảng có kích thước một phần tử và truyền chỉ số của trường “Name”, hoặc gọi trực tiếp `feature["Name"]`.
+
+### What is the difference between `GetValues` and `GetValuesDump`?
+`GetValues` điền một mảng đã được cấp phát trước với các giá trị thô, trong khi `GetValuesDump` trả về một mảng đối tượng có thể được duyệt mà không cần biết schema trước.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+---
+
+**Last Updated:** 2026-01-05  
+**Tested With:** Aspose.GIS for .NET (latest release)  
+**Author:** Aspose  
+
+---
