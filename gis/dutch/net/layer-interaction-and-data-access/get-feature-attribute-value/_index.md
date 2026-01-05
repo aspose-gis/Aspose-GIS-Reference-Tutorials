@@ -1,28 +1,39 @@
 ---
-title: Functiekenmerkwaarde ophalen
-linktitle: Functiekenmerkwaarde ophalen
-second_title: Aspose.GIS .NET-API
-description: Ontdek Aspose.GIS voor .NET – de ultieme tool voor naadloze GIS-gegevensintegratie. Download nu uw gratis proefversie! #Aspose #GIS #.NET
-weight: 12
+description: Leer hoe u dynamisch type casting kunt gebruiken met Aspose.GIS voor
+  .NET om attribuutwaarden uit een shapefile op te halen. Inclusief voorbeelden van
+  expliciete type casting.
+linktitle: Get Feature Attribute Value using Dynamic Type Casting
+second_title: Aspose.GIS .NET API
+title: Attribuutwaarde van object ophalen met dynamische typecasting
 url: /nl/net/layer-interaction-and-data-access/get-feature-attribute-value/
+weight: 12
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Functiekenmerkwaarde ophalen
+# Feature‑attribuutwaarde ophalen met dynamisch type‑casten
 
-## Invoering
-Welkom in de wereld van Aspose.GIS voor .NET, een krachtige bibliotheek waarmee .NET-ontwikkelaars naadloos kunnen werken met GIS-gegevens (geografisch informatiesysteem). Of u nu een doorgewinterde ontwikkelaar bent of net begint aan uw reis naar GIS, deze tutorial leidt u door het proces van het ophalen van kenmerkattribuutwaarden met behulp van Aspose.GIS voor .NET.
-## Vereisten
-Voordat we ingaan op de tutorial, zorg ervoor dat je aan de volgende vereisten voldoet:
-- Een basiskennis van .NET-ontwikkeling.
-- Visual Studio is op uw computer geïnstalleerd.
--  Aspose.GIS voor .NET-bibliotheek, die u kunt downloaden van de[download link](https://releases.aspose.com/gis/net/).
-- Bekendheid met GIS-concepten en terminologie.
-## Naamruimten importeren
-Om uw project een vliegende start te geven, moet u ervoor zorgen dat u de benodigde naamruimten importeert. Deze stap is cruciaal voor toegang tot de functionaliteit van Aspose.GIS voor .NET. Neem de volgende naamruimten op in uw code:
+## Introductie
+Welkom in de wereld van Aspose.GIS voor .NET, een krachtige bibliotheek die .NET‑ontwikkelaars in staat stelt om moeiteloos met geografische informatiesystemen (GIS) te werken. In deze tutorial ontdek je hoe **dynamisch type‑casten** het proces van het ophalen van feature‑attribuutwaarden uit een shapefile vereenvoudigt, terwijl we ook de klassieke **expliciete type‑cast**‑benadering behandelen. Of je nu een shapefile‑.NET‑applicatie leest of **attribuutwaarden** moet **ophalen** voor analyses, deze technieken maken je code schoner en flexibeler.
+
+## Snelle antwoorden
+- **Wat is dynamisch type‑casten?** Een runtime‑methode om attribuutwaarden op te halen zonder vooraf het doelformaat op te geven.  
+- **Waarom Aspose.GIS gebruiken?** Het biedt een uniforme API om shapefile‑.NET‑data te lezen en ondersteunt beide cast‑methoden.  
+- **Heb ik een licentie nodig?** Een gratis proefversie is beschikbaar; een commerciële licentie is vereist voor productie.  
+- **Welke .NET‑versies worden ondersteund?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6 en later.  
+- **Kan ik attribuutwaarden uit grote bestanden ophalen?** Ja—doorloop features efficiënt zoals in de voorbeelden wordt getoond.
+
+## Voorvereisten
+Voordat we aan de tutorial beginnen, zorg dat je de volgende zaken hebt:
+- Een basiskennis van .NET‑ontwikkeling.  
+- Visual Studio geïnstalleerd op je machine.  
+- Aspose.GIS voor .NET‑bibliotheek, te downloaden via de [download‑link](https://releases.aspose.com/gis/net/).  
+- Vertrouwdheid met GIS‑concepten en terminologie.
+
+## Namespaces importeren
+Om je project op te starten, moet je de benodigde namespaces importeren. Deze stap is cruciaal om toegang te krijgen tot de functionaliteit van Aspose.GIS voor .NET. Voeg de volgende namespaces toe aan je code:
 ```csharp
 using Aspose.Gis;
 using System;
@@ -31,64 +42,98 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 ```
-## Zelfstudie: Functiekenmerkwaarde ophalen
-## Stap 1: Stel uw project in
-Maak een nieuw .NET-project in Visual Studio en verwijs naar de Aspose.GIS-bibliotheek.
-## Stap 2: Definieer uw documentenmap
-Stel het pad naar uw documentenmap in. Dit is waar uw shapefile (InputShapeFile.shp) zich bevindt.
+
+## Hoe dynamisch type‑casten te gebruiken om attribuutwaarden op te halen
+Hieronder vind je een stapsgewijze handleiding die je meeneemt door het opzetten van het project, het openen van een shapefile en het ophalen van attribuutwaarden met zowel **expliciete type‑cast** als **dynamisch type‑cast**.
+
+### Stap 1: Project instellen
+Maak een nieuw .NET‑project aan in Visual Studio en voeg een referentie naar de Aspose.GIS‑bibliotheek toe.
+
+### Stap 2: Documentmap definiëren
+Stel het pad in naar je documentmap. Hier staat je shapefile (`InputShapeFile.shp`).
 ```csharp
 string dataDir = "Your Document Directory";
 ```
-## Stap 3: Open de vectorlaag
-Open de vectorlaag met Aspose.GIS. Zorg ervoor dat u het stuurprogramma opgeeft, in dit geval het Shapefile-stuurprogramma.
+
+### Stap 3: Vectorlaag openen
+Open de vectorlaag met Aspose.GIS. Zorg ervoor dat je de driver opgeeft, in dit geval de Shapefile‑driver.
 ```csharp
 using (VectorLayer layer = VectorLayer.Open(dataDir + "InputShapeFile.shp", Drivers.Shapefile))
 {
-    // Uw code voor het verwerken van de vectorlaag komt hier terecht
+    // Your code for processing the vector layer goes here
 }
 ```
-## Stap 4: Functiekenmerkwaarden ophalen
-Loop nu door elk object in de laag en haal attribuutwaarden op. Aspose.GIS biedt verschillende manieren om waarden op te halen.
-### Geval 1: Expliciete typecasting
+
+### Stap 4: Feature‑attribuutwaarden ophalen
+Loop nu door elke feature in de laag en haal de attribuutwaarden op. Aspose.GIS biedt verschillende manieren om attribuutwaarden te verkrijgen.
+
+#### Geval 1: Expliciete type‑cast
 ```csharp
 for (int i = 0; i < layer.Count; i++)
 {
     Feature feature = layer[i];
     Console.WriteLine("Entry {0} information\n ========================", i);
-    string nameValue = feature.GetValue<string>("name"); // attribuutnaam is hoofdlettergevoelig
+    string nameValue = feature.GetValue<string>("name"); // attribute name is case-sensitive
     int ageValue = feature.GetValue<int>("age");
     string dobValue = feature.GetValue<DateTime>("dob").ToString();
     Console.WriteLine("Attribute value for feature #{0} is: {1}, {2}", nameValue, ageValue, dobValue);
 }
 ```
-### Geval 2: Dynamisch typegieten
+
+#### Geval 2: Dynamisch type‑cast
 ```csharp
 for (int i = 0; i < layer.Count; i++)
 {
     Feature feature = layer[i];
     Console.WriteLine("Entry {0} information\n ========================", i);
-    var objName = feature.GetValue("name"); // attribuutnaam is hoofdlettergevoelig
+    var objName = feature.GetValue("name"); // attribute name is case-sensitive
     var objAge = feature.GetValue("age");
     var objDob = feature.GetValue("dob");
     Console.WriteLine("Attribute object for feature #{0} is: {1}, {2}", objName, objAge, objDob);
 }
 ```
+
+> **Pro tip:** Gebruik dynamisch type‑casten wanneer je niet zeker bent van het exacte datatype van een attribuut of wanneer je generieke code wilt schrijven die met meerdere shapefiles werkt. Schakel over naar expliciete type‑cast wanneer je compile‑time type‑veiligheid nodig hebt.
+
+## Veelvoorkomende problemen en oplossingen
+- **Attribuutnaam komt niet overeen:** GIS‑attribuutnamen zijn hoofdlettergevoelig. Controleer de exacte spelling in het shapefile‑schema.  
+- **Null‑waarden:** `GetValue` retourneert `null` voor ontbrekende attributen; verwerk dit zorgvuldig om een `NullReferenceException` te voorkomen.  
+- **Grote datasets:** Gebruik `foreach` of paginering om het geheugenverbruik te beperken.
+
+## Veelgestelde vragen
+### Q: Is Aspose.GIS geschikt voor zowel beginners als ervaren ontwikkelaars?
+A: Absoluut! Aspose.GIS richt zich op ontwikkelaars van elk niveau en biedt een intuïtieve API voor het manipuleren van GIS‑data.
+
+### Q: Kan ik Aspose.GIS gebruiken in mijn commerciële projecten?
+A: Ja, Aspose.GIS is een commercieel product. Licentie‑details vind je op de [aankooppagina](https://purchase.aspose.com/buy).
+
+### Q: Zijn tijdelijke licenties beschikbaar voor testdoeleinden?
+A: Ja, je kunt een tijdelijke licentie voor testen verkrijgen via [deze link](https://purchase.aspose.com/temporary-license/).
+
+### Q: Waar vind ik community‑ondersteuning voor Aspose.GIS?
+A: Neem deel aan de discussie op het [Aspose.GIS‑forum](https://forum.aspose.com/c/gis/33) om hulp te zoeken en contact te leggen met andere gebruikers.
+
+### Q: Is er een gratis proefversie van Aspose.GIS?
+A: Zeker! Je kunt de functies van Aspose.GIS verkennen door de gratis proefversie te downloaden via [hier](https://releases.aspose.com/).
+
+### Q: Hoe haal ik shapefile‑attribuutwaarden op zonder hun typen te kennen?
+A: Gebruik de dynamische type‑cast‑methode (`feature.GetValue("attributeName")`) die de waarde als een `object` retourneert dat je runtime kunt casten.
+
+### Q: Kan ik shapefile‑.NET‑data lezen in een .NET Core‑applicatie?
+A: Ja, Aspose.GIS voor .NET ondersteunt volledig .NET Core, .NET 5 en latere versies.
+
 ## Conclusie
-Gefeliciteerd! U hebt met succes geleerd hoe u Aspose.GIS voor .NET kunt gebruiken om kenmerkwaarden op te halen. Deze tutorial heeft u voorzien van de fundamentele kennis om GIS-functionaliteit naadloos te integreren in uw .NET-applicaties.
-## Veel Gestelde Vragen
-### Vraag: Is Aspose.GIS geschikt voor zowel beginners als ervaren ontwikkelaars?
-EEN: Absoluut! Aspose.GIS is geschikt voor ontwikkelaars van alle vaardigheidsniveaus en biedt een intuïtieve API voor het manipuleren van GIS-gegevens.
-### Vraag: Kan ik Aspose.GIS gebruiken in mijn commerciële projecten?
- A: Ja, Aspose.GIS is een commercieel product. Licentiegegevens vindt u op de[aankooppagina](https://purchase.aspose.com/buy).
-### Vraag: Zijn er tijdelijke licenties beschikbaar voor testdoeleinden?
- A: Ja, u kunt een tijdelijke licentie voor testen verkrijgen bij[hier](https://purchase.aspose.com/temporary-license/).
-### Vraag: Waar kan ik community-ondersteuning vinden voor Aspose.GIS?
- A: Doe mee aan de discussie over de[Aspose.GIS-forum](https://forum.aspose.com/c/gis/33) om hulp te zoeken en contact te maken met andere gebruikers.
-### Vraag: Is er een gratis proefversie van Aspose.GIS?
- EEN: Zeker! U kunt de functies van Aspose.GIS verkennen door de gratis proefversie te downloaden van[hier](https://releases.aspose.com/).
+Gefeliciteerd! Je hebt geleerd hoe je Aspose.GIS voor .NET kunt gebruiken om feature‑attribuutwaarden op te halen met zowel **expliciete type‑cast** als **dynamisch type‑cast**. Deze technieken stellen je in staat om **shapefile‑attribuut**‑data efficiënt te verkrijgen, of je nu een desktop‑GIS‑tool bouwt of ruimtelijke analyses integreert in een webservice.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+---
+
+**Last Updated:** 2026-01-05  
+**Tested With:** Aspose.GIS for .NET (latest)  
+**Author:** Aspose

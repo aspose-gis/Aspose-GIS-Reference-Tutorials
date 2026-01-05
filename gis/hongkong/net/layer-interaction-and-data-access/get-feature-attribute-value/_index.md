@@ -1,28 +1,37 @@
 ---
-title: 取得特徵屬性值
-linktitle: 取得特徵屬性值
+description: 學習如何使用 Aspose.GIS for .NET 的動態類型轉換從 shapefile 取得屬性值。包括顯式類型轉換範例。
+linktitle: Get Feature Attribute Value using Dynamic Type Casting
 second_title: Aspose.GIS .NET API
-description: 探索 Aspose.GIS for .NET – 無縫 GIS 資料整合的終極工具。立即下載免費試用版！ #Aspose #GIS #.NET
-weight: 12
+title: 使用動態類型轉換取得要素屬性值
 url: /zh-hant/net/layer-interaction-and-data-access/get-feature-attribute-value/
+weight: 12
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# 取得特徵屬性值
+# 使用動態類型轉換取得要素屬性值
 
-## 介紹
-歡迎來到 Aspose.GIS for .NET 的世界，這是一個功能強大的程式庫，使 .NET 開發人員能夠無縫地處理地理資訊系統 (GIS) 資料。無論您是經驗豐富的開發人員還是剛開始 GIS 之旅，本教學都將引導您完成使用 Aspose.GIS for .NET 擷取要素屬性值的流程。
-## 先決條件
-在我們深入學習本教程之前，請確保您具備以下先決條件：
-- 對 .NET 開發有基本了解。
-- Visual Studio 安裝在您的電腦上。
--  Aspose.GIS for .NET 函式庫，您可以從[下載連結](https://releases.aspose.com/gis/net/).
-- 熟悉 GIS 概念和術語。
-## 導入命名空間
-若要啟動您的項目，請確保匯入必要的命名空間。此步驟對於存取 Aspose.GIS for .NET 提供的功能至關重要。在您的程式碼中包含以下命名空間：
+## Introduction
+歡迎來到 Aspose.GIS for .NET 的世界，這是一個功能強大的函式庫，讓 .NET 開發者能夠無縫處理地理資訊系統（GIS）資料。在本教學中，您將了解 **動態型別轉換** 如何簡化從 shapefile 取得要素屬性值的過程，同時也會涵蓋傳統的 **顯式型別轉換** 方法。無論您是在 .NET 應用程式中讀取 shapefile，或是需要 **取得屬性值** 進行分析，這些技巧都能讓您的程式碼更簡潔、更具彈性。
+
+## Quick Answers
+- **什麼是動態型別轉換？** 一種在執行期間取得屬性值的方式，無需事先指定目標類型。  
+- **為什麼使用 Aspose.GIS？** 它提供統一的 API 來讀取 shapefile .NET 資料，且支援兩種轉換方法。  
+- **是否需要授權？** 提供免費試用版；正式上線需購買商業授權。  
+- **支援哪些 .NET 版本？** .NET Framework 4.5 以上、 .NET Core 3.1 以上、 .NET 5/6 及更高版本。  
+- **能否從大型檔案取得屬性值？** 可以——如範例所示，以有效率的方式遍歷要素。
+
+## Prerequisites
+在開始本教學之前，請確保您已具備以下前置條件：
+- 具備 .NET 開發的基本概念。  
+- 電腦已安裝 Visual Studio。  
+- Aspose.GIS for .NET 函式庫，可從 [download link](https://releases.aspose.com/gis/net/) 下載。  
+- 熟悉 GIS 的概念與術語。
+
+## Import Namespaces
+要啟動您的專案，請確保匯入必要的命名空間。此步驟對於存取 Aspose.GIS for .NET 所提供的功能至關重要。於程式碼中加入以下命名空間：
 ```csharp
 using Aspose.Gis;
 using System;
@@ -31,64 +40,100 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 ```
-## 教學：取得要素屬性值
-## 第 1 步：設定您的項目
-在 Visual Studio 中建立一個新的 .NET 專案並引用 Aspose.GIS 程式庫。
-## 第 2 步：定義您的文件目錄
-設定文檔目錄的路徑。這是您的 shapefile (InputShapeFile.shp) 所在的位置。
+
+## How to Use Dynamic Type Casting to Fetch Attribute Values
+以下是一個逐步指南，說明如何設定專案、開啟 shapefile，並使用 **顯式型別轉換** 與 **動態型別轉換** 取得屬性值。
+
+### Step 1: Set up Your Project
+在 Visual Studio 中建立新的 .NET 專案，並參考 Aspose.GIS 函式庫。
+
+### Step 2: Define Your Document Directory
+設定文件目錄的路徑。此目錄放置您的 shapefile (`InputShapeFile.shp`)。
 ```csharp
 string dataDir = "Your Document Directory";
 ```
-## 第三步：打開向量圖層
-使用 Aspose.GIS 開啟向量圖層。確保指定驅動程序，在本例中為 Shapefile 驅動程式。
+
+### Step 3: Open the Vector Layer
+使用 Aspose.GIS 開啟向量圖層。請務必指定驅動程式，此例使用 Shapefile 驅動程式。
 ```csharp
 using (VectorLayer layer = VectorLayer.Open(dataDir + "InputShapeFile.shp", Drivers.Shapefile))
 {
-    //您處理向量圖層的程式碼位於此處
+    // Your code for processing the vector layer goes here
 }
 ```
-## 第 4 步：檢索要素屬性值
-現在，循環遍歷圖層中的每個要素並檢索屬性值。 Aspose.GIS 提供了不同的取得值的方法。
-### 案例 1：顯式類型轉換
+
+### Step 4: Retrieve Feature Attribute Values
+現在，遍歷圖層中的每個要素並取得屬性值。Aspose.GIS 提供多種方式取得屬性值。
+
+#### Case 1: Explicit Type Casting
 ```csharp
 for (int i = 0; i < layer.Count; i++)
 {
     Feature feature = layer[i];
     Console.WriteLine("Entry {0} information\n ========================", i);
-    string nameValue = feature.GetValue<string>("name"); //屬性名稱區分大小寫
+    string nameValue = feature.GetValue<string>("name"); // attribute name is case-sensitive
     int ageValue = feature.GetValue<int>("age");
     string dobValue = feature.GetValue<DateTime>("dob").ToString();
     Console.WriteLine("Attribute value for feature #{0} is: {1}, {2}", nameValue, ageValue, dobValue);
 }
 ```
-### 案例 2：動態型別轉換
+
+#### Case 2: Dynamic Type Casting
 ```csharp
 for (int i = 0; i < layer.Count; i++)
 {
     Feature feature = layer[i];
     Console.WriteLine("Entry {0} information\n ========================", i);
-    var objName = feature.GetValue("name"); //屬性名稱區分大小寫
+    var objName = feature.GetValue("name"); // attribute name is case-sensitive
     var objAge = feature.GetValue("age");
     var objDob = feature.GetValue("dob");
     Console.WriteLine("Attribute object for feature #{0} is: {1}, {2}", objName, objAge, objDob);
 }
 ```
-## 結論
-恭喜！您已成功學習如何使用 Aspose.GIS for .NET 擷取要素屬性值。本教學為您提供了將 GIS 功能無縫整合到 .NET 應用程式中的基礎知識。
-## 經常問的問題
-### Q：Aspose.GIS 適合初學者和經驗豐富的開發人員嗎？
-答：當然！ Aspose.GIS 適合各種技能等級的開發人員，為 GIS 資料操作提供直覺的 API。
-### Q：我可以在我的商業專案中使用 Aspose.GIS 嗎？
-答：是的，Aspose.GIS 是一個商業產品。您可以在以下位置找到許可詳細信息[購買頁面](https://purchase.aspose.com/buy).
-### Q：臨時許可證是否可用於測試目的？
-答：是的，您可以從以下地址獲得臨時測試許可證：[這裡](https://purchase.aspose.com/temporary-license/).
-### Q：在哪裡可以找到 Aspose.GIS 的社群支援？
-答：加入討論[Aspose.GIS論壇](https://forum.aspose.com/c/gis/33)尋求協助並與其他用戶聯繫。
-### Q：Aspose.GIS 有免費試用版嗎？
-答：當然可以！您可以透過下載免費試用版來探索 Aspose.GIS 的功能[這裡](https://releases.aspose.com/).
+
+> **專業提示：** 當您不確定屬性的確切資料類型，或希望撰寫可在多個 shapefile 中通用的程式碼時，請使用動態型別轉換。若需要編譯時的類型安全，則改用顯式型別轉換。
+
+## Common Issues and Solutions
+常見問題與解決方案
+- **屬性名稱不匹配：** GIS 屬性名稱區分大小寫。請再次確認 shapefile 結構中的精確拼寫。  
+- **空值：** `GetValue` 會在屬性缺失時回傳 `null`，請妥善處理以避免 `NullReferenceException`。  
+- **大型資料集：** 使用 `foreach` 或分頁方式遍歷，以降低記憶體使用量。
+
+## Frequently Asked Questions
+### Q: Aspose.GIS 是否適合新手與有經驗的開發者？
+A: 當然！Aspose.GIS 為各層次開發者提供直觀的 API，方便進行 GIS 資料操作。
+
+### Q: 我可以在商業專案中使用 Aspose.GIS 嗎？
+A: 可以，Aspose.GIS 為商業產品。授權資訊請參閱 [purchase page](https://purchase.aspose.com/buy)。
+
+### Q: 是否提供測試用的臨時授權？
+A: 可以，您可從 [here](https://purchase.aspose.com/temporary-license/) 取得測試用臨時授權。
+
+### Q: 在哪裡可以取得 Aspose.GIS 的社群支援？
+A: 請前往 [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) 參與討論，尋求協助並與其他使用者交流。
+
+### Q: 是否有 Aspose.GIS 的免費試用版？
+A: 當然！您可從 [here](https://releases.aspose.com/) 下載免費試用版，體驗 Aspose.GIS 功能。
+
+### Q: 如何在不知屬性類型的情況下取得 shapefile 屬性值？
+A: 使用動態型別轉換方式（`feature.GetValue("attributeName")`），它會以 `object` 回傳值，您可於執行時自行轉型。
+
+### Q: 我能在 .NET Core 應用程式中讀取 shapefile .NET 資料嗎？
+A: 可以，Aspose.GIS for .NET 完全支援 .NET Core、 .NET 5 及更高版本。
+
+## Conclusion
+結論
+恭喜！您已成功學會如何使用 Aspose.GIS for .NET 透過 **顯式型別轉換** 與 **動態型別轉換** 取得要素屬性值。這些技巧讓您能有效取得 **shapefile 屬性** 資料，無論是開發桌面 GIS 工具，或是將空間分析整合至 Web 服務，都能得心應手。
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+---
+
+**最後更新：** 2026-01-05  
+**測試環境：** Aspose.GIS for .NET (latest)  
+**作者：** Aspose

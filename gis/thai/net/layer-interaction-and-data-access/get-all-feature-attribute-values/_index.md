@@ -1,98 +1,146 @@
 ---
-title: รับค่าคุณสมบัติคุณสมบัติทั้งหมด
-linktitle: รับค่าคุณสมบัติคุณสมบัติทั้งหมด
+date: 2026-01-05
+description: เรียนรู้วิธีอ่านไฟล์ shapefile ด้วย C# โดยใช้ Aspose.GIS สำหรับ .NET,
+  ดึงค่าคุณลักษณะของฟีเจอร์ทั้งหมด, และทำการดัมพ์คุณลักษณะอย่างมีประสิทธิภาพ.
+linktitle: Get All Feature Attribute Values
 second_title: Aspose.GIS .NET API
-description: สำรวจการพัฒนาเชิงพื้นที่ด้วย Aspose.GIS สำหรับ .NET! ดึงค่าคุณลักษณะคุณลักษณะได้อย่างราบรื่น ดาวน์โหลดตอนนี้เพื่อการผจญภัยในการเขียนโค้ดเชิงพื้นที่
-weight: 15
+title: อ่าน Shapefile ด้วย C# – ดึงค่าคุณลักษณะทั้งหมดของฟีเจอร์
 url: /th/net/layer-interaction-and-data-access/get-all-feature-attribute-values/
+weight: 15
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# รับค่าคุณสมบัติคุณสมบัติทั้งหมด
+# รับค่าคุณลักษณะทั้งหมดของฟีเจอร์
 
-## การแนะนำ
-ยินดีต้อนรับสู่โลกแห่งการพัฒนาเชิงพื้นที่ด้วย Aspose.GIS สำหรับ .NET! ไลบรารีอันทรงพลังนี้ช่วยให้นักพัฒนาสามารถรวมฟังก์ชัน GIS เข้ากับแอปพลิเคชัน .NET ของตนได้อย่างราบรื่น ทำให้การประมวลผลข้อมูลเชิงพื้นที่เป็นเรื่องง่าย ในบทช่วยสอนที่ครอบคลุมนี้ เราจะสำรวจแง่มุมพื้นฐานด้านหนึ่ง นั่นคือการดึงค่าแอตทริบิวต์จากฟีเจอร์ต่างๆ มาดำน้ำกันเถอะ!
-## ข้อกำหนดเบื้องต้น
-ก่อนที่เราจะเริ่มต้นการเดินทางที่น่าตื่นเต้นนี้ ตรวจสอบให้แน่ใจว่าคุณมีข้อกำหนดเบื้องต้นต่อไปนี้:
--  Aspose.GIS สำหรับ .NET: ดาวน์โหลดและติดตั้งไลบรารีจาก[หน้าดาวน์โหลด Aspose.GIS สำหรับ .NET](https://releases.aspose.com/gis/net/).
-- สภาพแวดล้อมการพัฒนา: ตั้งค่าสภาพแวดล้อมการพัฒนา .NET เช่น Visual Studio
-- เชปไฟล์: เตรียมเชปไฟล์ตัวอย่าง (เช่น "InputShapeFile.shp") ให้พร้อมในไดเร็กทอรีเอกสารของคุณ
-## นำเข้าเนมสเปซ
-ในโค้ด C# ของคุณ ให้เริ่มต้นด้วยการนำเข้าเนมสเปซที่จำเป็นเพื่อใช้ประโยชน์จากฟังก์ชัน Aspose.GIS:
+## Introduction
+ยินดีต้อนรับสู่โลกของการพัฒนาเชิงพื้นที่ด้วย Aspose.GIS for .NET! ในบทแนะนำนี้คุณจะได้เรียนรู้ **วิธีอ่าน shapefile C#** และดึงค่าคุณลักษณะทั้งหมดจากฟีเจอร์ของมัน ไม่ว่าคุณจะสร้างแอปแผนที่หรือประมวลผลข้อมูลเชิงพื้นที่เป็นชุด การเชี่ยวชาญการสกัดคุณลักษณะเป็นสิ่งสำคัญ มาดูโค้ดที่ทำงานกันเลย
+
+## Quick Answers
+- **What does this code do?** มันเปิด Shapefile และอ่านค่าคุณลักษณะทั้งหมด, บางส่วน, หรือ dump ค่าคุณลักษณะจากแต่ละฟีเจอร์.  
+- **Which library is required?** Aspose.GIS for .NET (compatible with .NET Framework and .NET Core).  
+- **Do I need a license?** ไลเซนส์ชั่วคราวใช้สำหรับการทดสอบ; ไลเซนส์เต็มจำเป็นสำหรับการใช้งานจริง.  
+- **Can I read other formats?** ใช่ – API เดียวกันรองรับ GeoJSON, KML, และอื่น ๆ อีกมาก.  
+- **How to dump attributes?** ใช้ `feature.GetValuesDump()` เพื่อรับอาเรย์ออบเจ็กต์ที่ยืดหยุ่น.
+
+## What is “read shapefile C#”?
+การอ่าน Shapefile ด้วย C# หมายถึงการเปิดไฟล์ .shp ด้วยไลบรารี GIS, วนลูปผ่านฟีเจอร์เวกเตอร์ของมัน, และเข้าถึงข้อมูลคุณลักษณะที่เก็บไว้ในไฟล์ .dbf ที่มาพร้อมกัน Aspose.GIS ทำหน้าที่แยกการจัดการไฟล์ระดับต่ำออกไป ทำให้คุณโฟกัสที่ค่าคุณลักษณะที่ต้องการได้อย่างง่ายดาย
+
+## Why use Aspose.GIS to read attributes?
+- **Simple API** – วิธีการที่เข้าใจง่ายเช่น `GetValues` และ `GetValuesDump`.  
+- **Cross‑platform** – ทำงานบน Windows, Linux, และ macOS ด้วย .NET Core.  
+- **Rich format support** – จัดการ Shapefile, GeoJSON, GML, และอื่น ๆ โดยไม่ต้องใช้ปลั๊กอินเพิ่มเติม.  
+- **Performance‑optimized** – การวนซ้ำที่เร็วสำหรับชุดข้อมูลขนาดใหญ่.
+
+## Prerequisites
+ก่อนที่เราจะเริ่มการเดินทางที่น่าตื่นเต้นนี้ โปรดตรวจสอบว่าคุณมีสิ่งต่อไปนี้พร้อมอยู่แล้ว:
+- Aspose.GIS for .NET: ดาวน์โหลดและติดตั้งไลบรารีจาก [Aspose.GIS for .NET download page](https://releases.aspose.com/gis/net/).
+- Development Environment: ตั้งค่าสภาพแวดล้อมการพัฒนา .NET เช่น Visual Studio.
+- Shapefile: มี Shapefile ตัวอย่าง (เช่น "InputShapeFile.shp") พร้อมในไดเรกทอรีเอกสารของคุณ.
+
+## Import Namespaces
+ในโค้ด C# ของคุณ ให้เริ่มต้นด้วยการนำเข้า namespace ที่จำเป็นเพื่อใช้ฟังก์ชันของ Aspose.GIS:
 ```csharp
 using System;
 using Aspose.Gis;
 ```
-## ขั้นตอนที่ 1: ตั้งค่าไดเร็กทอรีเอกสาร
+
+## Step 1: Set the Document Directory
 ```csharp
 string dataDir = "Your Document Directory";
 ```
-แทนที่ "Your Document Directory" ด้วยเส้นทางจริงที่มี Shapefile ของคุณอยู่
-## ขั้นตอนที่ 2: เปิด VectorLayer
+แทนที่ "Your Document Directory" ด้วยพาธจริงที่เก็บ Shapefile ของคุณ
+
+## Step 2: Open the VectorLayer
 ```csharp
 using (VectorLayer layer = VectorLayer.Open(dataDir + "InputShapeFile.shp", Drivers.Shapefile))
 {
-    // รหัสของคุณสำหรับขั้นตอนต่อไปอยู่ที่นี่
+    // Your code for further steps goes here
 }
 ```
-ขั้นตอนนี้เกี่ยวข้องกับการเปิด Shapefile โดยใช้ Aspose.GIS โดยระบุเส้นทางและรูปแบบของไฟล์ (ในกรณีนี้คือ Shapefile)
-## ขั้นตอนที่ 3: ดึงค่าแอตทริบิวต์คุณสมบัติทั้งหมด
+ขั้นตอนนี้เกี่ยวกับการเปิด Shapefile ด้วย Aspose.GIS โดยระบุพาธไฟล์และรูปแบบ (ในกรณีนี้คือ Shapefile)
+
+## Step 3: Retrieve All Feature Attribute Values
 ```csharp
 foreach (var feature in layer)
 {
-    // อ่านคุณลักษณะทั้งหมดลงในอาร์เรย์
+    // reads all the attributes into an array.
     object[] all = new object[3];
     feature.GetValues(all);
     Console.WriteLine("all    : {0}, {1}, {2}", all);
-    // รหัสของคุณสำหรับจัดการค่าแอตทริบิวต์ทั้งหมดอยู่ที่นี่
+    // Your code for handling all attribute values goes here
     Console.WriteLine();
 }
 ```
-ข้อมูลโค้ดนี้สาธิตวิธีการดึงค่าแอตทริบิวต์ทั้งหมดสำหรับแต่ละคุณลักษณะใน Shapefile
-## ขั้นตอนที่ 4: ดึงค่าคุณลักษณะคุณสมบัติหลายรายการ
+โค้ดส่วนนี้แสดง **วิธีอ่านคุณลักษณะ** ของทุกฟีเจอร์โดยโหลดเข้าอาเรย์ขนาดคงที่
+
+## Step 4: Retrieve Several Feature Attribute Values
 ```csharp
 foreach (var feature in layer)
 {
-    // อ่านแอตทริบิวต์หลายรายการลงในอาร์เรย์
+    // reads several attributes into an array.
     object[] several = new object[2];
     feature.GetValues(several);
     Console.WriteLine("several: {0}, {1}", several);
-    // รหัสของคุณสำหรับจัดการค่าแอตทริบิวต์หลายค่าอยู่ที่นี่
+    // Your code for handling several attribute values goes here
     Console.WriteLine();
 }
 ```
-เช่นเดียวกับขั้นตอนที่ 3 ขั้นตอนนี้มุ่งเน้นไปที่การรับค่าแอตทริบิวต์เฉพาะจากคุณลักษณะ
-## ขั้นตอนที่ 5: ดึงค่าแอตทริบิวต์เป็นการถ่ายโอนข้อมูลออบเจ็กต์
+ที่นี่เราสาธิต **วิธีอ่านค่าคุณลักษณะเฉพาะ** เมื่อคุณต้องการเพียงบางฟิลด์เท่านั้น
+
+## Step 5: Retrieve Attribute Values as Objects Dump
 ```csharp
 foreach (var feature in layer)
 {
-    // อ่านแอตทริบิวต์เป็นการดัมพ์ของอ็อบเจ็กต์
+    // reads attributes as a dump of objects.
     var dump = feature.GetValuesDump();
     Console.WriteLine("dump   : {0}, {1}, {2}", dump);
-    // รหัสของคุณสำหรับการจัดการค่าแอตทริบิวต์ที่ถูกทิ้งอยู่ที่นี่
+    // Your code for handling dumped attribute values goes here
     Console.WriteLine();
 }
 ```
-ขั้นตอนสุดท้ายนี้จะแสดงวิธีการดึงค่าแอตทริบิวต์ในรูปแบบดัมพ์ ซึ่งให้ความยืดหยุ่นในการจัดการข้อมูล
-## บทสรุป
-ยินดีด้วย! คุณได้สำรวจการเรียกค่าคุณลักษณะคุณลักษณะโดยใช้ Aspose.GIS สำหรับ .NET สำเร็จแล้ว นี่เป็นเพียงการสรุปความสามารถอันมากมายของไลบรารีนี้ สำรวจเพิ่มเติมและปลดล็อกศักยภาพสูงสุดของการพัฒนาเชิงพื้นที่ในแอปพลิเคชัน .NET ของคุณ
-## คำถามที่พบบ่อย
-### Aspose.GIS เข้ากันได้กับ .NET Core หรือไม่
-ใช่ Aspose.GIS เข้ากันได้กับ .NET Core อย่างสมบูรณ์ ทำให้คุณสามารถสร้างแอปพลิเคชันข้ามแพลตฟอร์มได้
-### ฉันสามารถทำงานกับไฟล์ GIS รูปแบบอื่นโดยใช้ Aspose.GIS ได้หรือไม่
-อย่างแน่นอน! Aspose.GIS รองรับรูปแบบต่างๆ รวมถึง Shapefile, GeoJSON และอื่นๆ
-### มีฟอรัมชุมชนสำหรับการสนับสนุน Aspose.GIS หรือไม่
- ใช่ คุณสามารถขอความช่วยเหลือและมีส่วนร่วมกับชุมชน Aspose.GIS ได้บน[ฟอรั่มการสนับสนุน](https://forum.aspose.com/c/gis/33).
-### ฉันจะขอรับใบอนุญาตชั่วคราวสำหรับ Aspose.GIS ได้อย่างไร
- คุณสามารถขอรับใบอนุญาตชั่วคราวเพื่อการทดสอบได้[ที่นี่](https://purchase.aspose.com/temporary-license/).
-### ฉันจะหาเอกสารโดยละเอียดสำหรับ Aspose.GIS ได้ที่ไหน
- มีเอกสารประกอบครบถ้วน[ที่นี่](https://reference.aspose.com/gis/net/).
+ขั้นตอนสุดท้ายนี้แสดง **วิธี dump คุณลักษณะ** ด้วย `GetValuesDump()` ซึ่งจะคืนคอลเลกชันแบบยืดหยุ่นที่คุณสามารถตรวจสอบหรือทำการ serialize ได้
+
+## Common Issues and Solutions
+- **Array size mismatch** – ตรวจสอบให้แน่ใจว่าอาเรย์ที่ส่งให้ `GetValues` มีขนาดตรงกับจำนวนคุณลักษณะที่คาดหวัง; มิฉะนั้นคุณจะได้รับค่า `null`.  
+- **File not found** – ตรวจสอบว่า `dataDir` ชี้ไปยังโฟลเดอร์ที่ถูกต้องและชื่อ Shapefile ถูกสะกดอย่างแม่นยำ.  
+- **License exception** – หากพบข้อผิดพลาดเกี่ยวกับไลเซนส์ ให้ใช้ไลเซนส์ชั่วคราวหรือเต็มก่อนเรียกใช้เมธอด API ใด ๆ.
+
+## Frequently Asked Questions
+### Is Aspose.GIS compatible with .NET Core?
+ใช่, Aspose.GIS รองรับ .NET Core อย่างเต็มที่ ทำให้คุณสามารถสร้างแอปพลิเคชันข้ามแพลตฟอร์มได้
+
+### Can I work with different GIS file formats using Aspose.GIS?
+แน่นอน! Aspose.GIS รองรับรูปแบบต่าง ๆ รวมถึง Shapefile, GeoJSON, และอื่น ๆ อีกมาก
+
+### Is there a community forum for Aspose.GIS support?
+ใช่, คุณสามารถขอความช่วยเหลือและร่วมสนทนากับชุมชน Aspose.GIS ได้ที่ [support forum](https://forum.aspose.com/c/gis/33)
+
+### How can I obtain a temporary license for Aspose.GIS?
+คุณสามารถรับไลเซนส์ชั่วคราวสำหรับการทดสอบได้จาก [here](https://purchase.aspose.com/temporary-license/)
+
+### Where can I find detailed documentation for Aspose.GIS?
+เอกสารฉบับเต็มพร้อมให้ศึกษาได้ที่ [here](https://reference.aspose.com/gis/net/)
+
+### How do I retrieve only the “Name” attribute from each feature?
+ใช้ `GetValues` กับอาเรย์ขนาดหนึ่งและส่งดัชนีของฟิลด์ “Name”, หรือเรียก `feature["Name"]` โดยตรง
+
+### What is the difference between `GetValues` and `GetValuesDump`?
+`GetValues` เติมค่าในอาเรย์ที่จัดสรรไว้ล่วงหน้าด้วยค่าดิบ, ส่วน `GetValuesDump` คืนอาเรย์ออบเจ็กต์ที่สามารถวนลูปได้โดยไม่ต้องรู้สคีมาล่วงหน้า
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+---
+
+**อัปเดตล่าสุด:** 2026-01-05  
+**ทดสอบด้วย:** Aspose.GIS for .NET (latest release)  
+**ผู้เขียน:** Aspose  
+
+---
