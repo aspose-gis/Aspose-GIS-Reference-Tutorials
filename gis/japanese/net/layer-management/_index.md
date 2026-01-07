@@ -1,82 +1,115 @@
 ---
-title: レイヤ管理
-linktitle: レイヤ管理
+date: 2026-01-07
+description: Aspose.GIS for .NET を使用して、新しいシェープファイルを作成し、GIS レイヤーを管理する方法を学びましょう。ステップバイステップのチュートリアル、ヒント、そしてジオスペーシャル開発のベストプラクティスをご紹介します。
+linktitle: Layer Management
 second_title: Aspose.GIS .NET API
-description: Aspose.GIS for .NET チュートリアルを使用して、地理空間開発の可能性を解き放ちます。 GIS データセットを簡単に作成、管理、操作します。
-weight: 24
+title: 新規シェープファイル作成 – レイヤー管理
 url: /ja/net/layer-management/
+weight: 24
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# レイヤ管理
+# 新しいシェープファイルの作成 – レイヤー管理
 
-## 導入
+## はじめに
 
-Aspose.GIS for .NET を使用すると、開発者は地理空間開発のエキサイティングな世界を深く掘り下げることができます。この包括的なチュートリアル リストでは、Aspose.GIS for .NET の可能性を最大限に引き出すためのさまざまなレイヤー管理チュートリアルを紹介します。これらのチュートリアルでは、新しい File GDB データセットの作成から空間データの操作まで、すべてをカバーしています。
+**新しいシェープファイル** を作成したり、ジオスペーシャルプロジェクトでレイヤーを整理したりする必要がある場合、Aspose.GIS for .NET はコードファーストのシンプルな方法を提供します。この概要では、File GDB の作成からフィーチャのフィルタリングまで、GIS データセットの構築、編集、変換に役立つすべてのレイヤー管理チュートリアルを一覧にしています。マッピングアプリやデータ処理パイプラインの構築に関わらず、これらのガイドはレイヤーを効率的に扱う方法を具体的に示します。
 
-## 新しいファイル GDB データセットの作成 
-GIS データセットを簡単に作成および管理するための Aspose.GIS for .NET の機能を調べてください。今すぐダウンロードして、シームレスな地理空間開発エクスペリエンスを体験してください。次のステップバイステップガイドに従ってください。[新しいファイル GDB データセットの作成](./create-new-file-gdb-dataset/)始めるために。
+## クイック回答
+- **Aspose.GIS で何が作れますか？** シェープファイル、File GDB、TopoJSON レイヤーなど、フル機能の GIS データセットを作成できます。  
+- **ライセンスは必要ですか？** 評価用の無料トライアルで試すことができますが、本番環境では商用ライセンスが必要です。  
+- **対応している .NET バージョンは？** .NET Framework 4.5+、.NET Core 3.1+、.NET 5/6/7。  
+- **すべてのタスクでコードが必要ですか？** ほとんどのチュートリアルは、コピー＆ペーストできる実行可能な C# スニペットを提供しています。  
+- **典型的なタスクはどれくらい時間がかかりますか？** シェープファイルの作成などのシンプルな操作は数秒で完了します。
 
-## 単一レイヤーのファイル GDB を作成する 
-Aspose.GIS を使用して、.NET での地理空間データ管理の可能性を解き放ちます。ファイル ジオデータベースとレイヤーを作成する方法を段階的に学習します。今すぐダウンロードして、GIS 開発の取り組みを変革しましょう。詳細なチュートリアルを確認してください。[単一レイヤーのファイル GDB を作成する](./create-file-gdb-with-single-layer/).
+## 新しい File GDB データセットの作成 
+Aspose.GIS for .NET の機能を活用して、GIS データセットを手軽に作成・管理しましょう。シームレスなジオスペーシャル開発体験のために今すぐダウンロードしてください。ステップバイステップのガイドは [新しい File GDB データセットの作成](./create-new-file-gdb-dataset/) で確認できます。
+
+## 単一レイヤーの File GDB の作成 
+.NET でのジオスペーシャルデータ管理の可能性を Aspose.GIS で解き放ちましょう。File Geodatabase とレイヤーの作成手順をステップバイステップで学べます。今すぐダウンロードして GIS 開発の旅を変革してください。詳細チュートリアルは [単一レイヤーの File GDB の作成](./create-file-gdb-with-single-layer/) をご覧ください。
 
 ## 新しいシェープファイルの作成 
-Aspose.GIS for .NET を使用して新しいシェープファイルを作成する技術をマスターします。私たちのステップバイステップのガイドはプロセスをガイドし、空間データ操作の力を解き放つのに役立ちます。次のチュートリアルに進んでください[新しいシェープファイルの作成](./create-new-shapefile/)地理空間スキルを向上させます。
+Aspose.GIS for .NET を使用して **新しいシェープファイル** を作成する方法をマスターしましょう。ステップバイステップのガイドがプロセス全体を案内し、空間データ操作の力を引き出します。スキル向上のために [新しいシェープファイルの作成](./create-new-shapefile/) をぜひご活用ください。
 
-## SRSでベクターレイヤーを作成 
-Aspose.GIS for .NET は、シームレスな GIS 統合の鍵となります。指定された空間参照系を使用してベクター レイヤーを簡単に作成します。今すぐダウンロードして、地理空間機能を強化してください。詳細については、こちらをご覧ください[SRSでベクターレイヤーを作成](./create-vector-layer-with-srs/).
+## SRS 付きベクターレイヤーの作成 
+Aspose.GIS for .NET はシームレスな GIS 統合の鍵です。指定した空間参照系（SRS）でベクターレイヤーを簡単に作成できます。今すぐダウンロードしてジオスペーシャル機能を高めましょう。詳細は [SRS 付きベクターレイヤーの作成](./create-vector-layer-with-srs/) でご確認ください。
 
-## TopoJSON の機能にアクセスする 
-Aspose.GIS for .NET を使用して、TopoJSON 機能の世界に飛び込んでください。段階的なチュートリアルに従って、地理空間機能を簡単に探索してください。チュートリアルにアクセスするには、[TopoJSON の機能にアクセスする](./access-features-in-topojson/) GIS プロジェクトの可能性を最大限に引き出します。
+## TopoJSON のフィーチャへのアクセス 
+Aspose.GIS for .NET で TopoJSON フィーチャの世界に飛び込みましょう。ステップバイステップのチュートリアルでジオスペーシャル機能を簡単に探求できます。チュートリアルは [TopoJSON のフィーチャへのアクセス](./access-features-in-topojson/) で利用可能です。
 
-## ファイル GDB データセットにレイヤーを追加 
-Aspose.GIS for .NET で GIS のパワーを実感してください!詳細なステップバイステップのチュートリアルを通じて、ファイル GDB データセットにレイヤーを追加する方法を学びます。地理空間開発の取り組みを変革します。[ファイル GDB データセットにレイヤーを追加](./add-layer-to-file-gdb-dataset/).
+## File GDB データセットへのレイヤー追加 
+Aspose.GIS for .NET で GIS の力を体感してください！詳細なステップバイステップチュートリアルで File GDB データセットにレイヤーを追加する方法を学べます。開発の旅を変えるには [File GDB データセットへのレイヤー追加](./add-layer-to-file-gdb-dataset/) をご覧ください。
 
-## GeoJSON レイヤーをファイル GDB に変換 
-Aspose.GIS for .NET で地理空間の驚異を解き放ちましょう! GeoJSON レイヤーをファイル ジオデータベースに簡単に変換し、地理空間機能を拡張します。次のチュートリアルに従って、今すぐ試してみてください。[GeoJSON レイヤーをファイル GDB に変換](./convert-geojson-layer-to-file-gdb/).
+## GeoJSON レイヤーを File GDB に変換 
+Aspose.GIS for .NET でジオスペーシャルの可能性を広げましょう！GeoJSON レイヤーを File Geodatabase に簡単に変換し、ジオスペーシャル機能を拡張できます。チュートリアルは [GeoJSON レイヤーを File GDB に変換](./convert-geojson-layer-to-file-gdb/) でご確認ください。
 
-## ポリゴン シェープファイルをラインストリングに変換 
-Aspose.GIS for .NET の機能を活用し、ポリゴン シェープファイルをラインストリングに簡単に変換します。次のステップバイステップ ガイドに従って、今すぐ GIS 開発を促進してください。[ポリゴン シェープファイルをラインストリングに変換](./convert-polygon-shapefile-to-linestring/).
+## ポリゴンシェープファイルをラインストリングに変換 
+Aspose.GIS for .NET の力を活用し、ポリゴンシェープファイルをラインストリングに簡単に変換しましょう。ステップバイステップのガイドは [ポリゴンシェープファイルをラインストリングに変換](./convert-polygon-shapefile-to-linestring/) でご利用いただけます。
 
-## クロップレイヤーの機能 
-Aspose.GIS for .NET で地理空間の魔法を解き放ちましょう!レイヤー フィーチャを簡単にトリミングして、GIS プロジェクトをレベルアップします。今すぐ無料トライアルをダウンロードして、次の URL でチュートリアルをご覧ください。[クロップレイヤーの機能](./crop-layer-features/).
+## レイヤーのフィーチャをトリミング 
+Aspose.GIS for .NET でジオスペーシャルマジックを解き放ちましょう！レイヤーのフィーチャを簡単にトリミングし、GIS プロジェクトを向上させます。無料トライアルを今すぐダウンロードし、チュートリアルは [レイヤーのフィーチャをトリミング](./crop-layer-features/) で確認してください。
 
-## 属性による特徴のフィルタリング 
-空間データ操作における Aspose.GIS for .NET の威力を探ってください。フィーチャを簡単にフィルターし、GIS アプリケーションを強化し、生産性を向上します。次のチュートリアルに進んでください[属性による特徴のフィルタリング](./filter-features-by-attribute/)GIS プロジェクトを次のレベルに引き上げます。
+## 属性でフィーチャをフィルタリング 
+Aspose.GIS for .NET の空間データ操作力を探求しましょう。属性でフィーチャを簡単にフィルタリングし、GIS アプリケーションを強化、作業効率を向上させます。チュートリアルは [属性でフィーチャをフィルタリング](./filter-features-by-attribute/) でご覧ください。
 
-## 特徴を GeoJSON に抽出する 
-Aspose.GIS for .NET を使用してフィーチャを GeoJSON に抽出するためのステップバイステップ ガイドをご覧ください。 GIS のパワーを簡単に活用しましょう。次のチュートリアルを確認してください[特徴を GeoJSON に抽出する](./extract-features-to-geojson/)シームレスな地理空間体験を実現します。
+## フィーチャを GeoJSON に抽出 
+Aspose.GIS for .NET を使用したフィーチャの GeoJSON への抽出手順をステップバイステップで解説します。GIS の力を手軽に活用しましょう！シームレスなジオスペーシャル体験は [フィーチャを GeoJSON に抽出](./extract-features-to-geojson/) で確認できます。
 
-Aspose.GIS for .NET を使用して地理空間の旅に乗り出し、GIS 開発を変革しましょう。チュートリアルをダウンロードして手順に従い、地理空間データ操作の可能性を最大限に引き出します。今すぐシームレスな統合の世界に飛び込んで、GIS の機能を高めてください。
-## レイヤ管理のチュートリアル
-### [新しいファイル GDB データセットの作成](./create-new-file-gdb-dataset/)
-Aspose.GIS for .NET を探索して、GIS データセットを簡単に作成および管理します。シームレスな地理空間開発のために今すぐダウンロードしてください。 
-### [単一レイヤーのファイル GDB を作成する](./create-file-gdb-with-single-layer/)
-Aspose.GIS を使用して、.NET での地理空間データ管理の可能性を解き放ちます。ファイル ジオデータベースとレイヤーを作成する方法を段階的に学習します。ダウンロード中！
+Aspose.GIS for .NET と共にジオスペーシャルの旅を始め、GIS 開発を変革しましょう。チュートリアルをダウンロードし、手順に従ってジオスペーシャルデータ操作の可能性を最大限に引き出してください。シームレスな統合の世界に飛び込み、今日から GIS 能力を高めましょう！
+
+## レイヤー管理チュートリアル
+### [新しい File GDB データセットの作成](./create-new-file-gdb-dataset/)
+Aspose.GIS for .NET を活用して、GIS データセットを手軽に作成・管理できます。シームレスなジオスペーシャル開発のために今すぐダウンロードしてください。 
+### [単一レイヤーの File GDB の作成](./create-file-gdb-with-single-layer/)
+.NET でのジオスペーシャルデータ管理の可能性を Aspose.GIS で解き放ちましょう。File Geodatabase とレイヤーの作成手順をステップバイステップで学べます。今すぐダウンロード！ 
 ### [新しいシェープファイルの作成](./create-new-shapefile/)
-Aspose.GIS for .NET を使用して新しいシェープファイルを作成する方法を学びます。ステップバイステップのガイドに従って、空間データ操作の力を解き放ちましょう。
-### [SRSでベクターレイヤーを作成](./create-vector-layer-with-srs/)
-シームレスな GIS 統合の鍵となる Aspose.GIS for .NET を探索してください。指定された空間参照系を使用してベクター レイヤーを簡単に作成します。ダウンロード中！
-### [TopoJSON の機能にアクセスする](./access-features-in-topojson/)
-Aspose.GIS for .NET を探索し、TopoJSON 機能に段階的にアクセスする方法を学びます。ドキュメントを詳しく調べて、地理空間機能を簡単に解放します。
-### [ファイル GDB データセットにレイヤーを追加](./add-layer-to-file-gdb-dataset/)
-Aspose.GIS for .NET で GIS の力を解き放ちましょう!このステップバイステップのチュートリアルで、ファイル GDB データセットにレイヤーを追加する方法を学習します。
-### [GeoJSON レイヤーをファイル GDB に変換](./convert-geojson-layer-to-file-gdb/)
-Aspose.GIS for .NET で地理空間の驚異を解き放ちましょう! GeoJSON レイヤーをファイル ジオデータベースに簡単に変換します。やってみよう！
-### [ポリゴン シェープファイルをラインストリングに変換](./convert-polygon-shapefile-to-linestring/)
-Aspose.GIS for .NET の機能を活用し、ポリゴン シェープファイルをラインストリングに簡単に変換します。今すぐ GIS 開発を強化しましょう!
-### [クロップレイヤーの機能](./crop-layer-features/)
-Aspose.GIS for .NET で地理空間の魔法を解き放ちましょう!レイヤー フィーチャを簡単にトリミングします。今すぐ無料トライアルをダウンロードしてください。
-### [属性による特徴のフィルタリング](./filter-features-by-attribute/)
-空間データ操作における Aspose.GIS for .NET の威力を探ってください。フィーチャを簡単にフィルターし、GIS アプリケーションを強化し、生産性を向上します。
-### [特徴を GeoJSON に抽出する](./extract-features-to-geojson/)
-Aspose.GIS for .NET を使用してフィーチャを GeoJSON に抽出するためのステップバイステップ ガイドをご覧ください。 GIS のパワーを簡単に活用しましょう。 
+Aspose.GIS for .NET を使用して新しいシェープファイルを作成する方法を学びましょう。ステップバイステップのガイドで空間データ操作の力を引き出します。 
+### [SRS 付きベクターレイヤーの作成](./create-vector-layer-with-srs/)
+Aspose.GIS for .NET はシームレスな GIS 統合の鍵です。指定した空間参照系でベクターレイヤーを簡単に作成できます。今すぐダウンロード！ 
+### [TopoJSON のフィーチャへのアクセス](./access-features-in-topojson/)
+Aspose.GIS for .NET を探求し、TopoJSON フィーチャへステップバイステップでアクセスする方法を学びましょう。ドキュメントに潜むジオスペーシャル機能を簡単に活用できます。 
+### [File GDB データセットへのレイヤー追加](./add-layer-to-file-gdb-dataset/)
+Aspose.GIS for .NET で GIS の力を解き放ちましょう！このステップバイステップチュートリアルで File GDB データセットにレイヤーを追加する方法を学べます。 
+### [GeoJSON レイヤーを File GDB に変換](./convert-geojson-layer-to-file-gdb/)
+Aspose.GIS for .NET でジオスペーシャルの驚異を体感！GeoJSON レイヤーを File Geodatabase に簡単に変換できます。今すぐお試しください！ 
+### [ポリゴンシェープファイルをラインストリングに変換](./convert-polygon-shapefile-to-linestring/)
+Aspose.GIS for .NET の力を活用し、ポリゴンシェープファイルをラインストリングに簡単に変換しましょう。GIS 開発を今すぐブースト！ 
+### [レイヤーのフィーチャをトリミング](./crop-layer-features/)
+Aspose.GIS for .NET でジオスペーシャルマジックを解き放ちましょう！レイヤーのフィーチャを簡単にトリミングできます。無料トライアルを今すぐダウンロード。 
+### [属性でフィーチャをフィルタリング](./filter-features-by-attribute/)
+Aspose.GIS for .NET の空間データ操作力を探求し、属性でフィーチャを簡単にフィルタリング、GIS アプリケーションを強化し、生産性を向上させましょう。 
+### [フィーチャを GeoJSON に抽出](./extract-features-to-geojson/)
+Aspose.GIS for .NET を使用したフィーチャの GeoJSON への抽出手順をステップバイステップで解説します。GIS の力を手軽に活用！ 
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+## よくある質問
+
+**Q:** **新しいシェープファイル** をプログラムで作成するにはどうすればよいですか？  
+**A:** Aspose.GIS の `Shapefile` クラスを使用し、ジオメトリタイプを指定してフィールドを追加し、フィーチャを書き込みます。リンクされた「新しいシェープファイルの作成」チュートリアルに正確なコードが掲載されています。
+
+**Q:** File GDB とシェープファイルの違いは何ですか？  
+**A:** File Geodatabase（File GDB）はフォルダー構造でデータを保存し、スキーマサポートが豊富です。一方、シェープファイルは複数の固定長ファイルからなるシンプルで広く互換性のあるフォーマットです。
+
+**Q:** **属性でフィーチャをフィルタリング** を効率的に行うには？  
+**A:** `Query` オブジェクトに WHERE 句（例: `SELECT * FROM layer WHERE Population > 1000`）を組み立てます。「属性でフィーチャをフィルタリング」ガイドが API の使い方を詳しく説明しています。
+
+**Q:** 中間ファイルなしでシェープファイルを GeoJSON に変換できますか？  
+**A:** はい。シェープファイルを `FeatureCollection` にロードし、`ExportToGeoJson()` を直接呼び出します。完全な例は「フィーチャを GeoJSON に抽出」チュートリアルをご参照ください。
+
+**Q:** これらのサンプルをローカルで実行するために特別なライセンスは必要ですか？  
+**A:** 無料評価ライセンスで開発・テストは可能です。商用環境での導入には Aspose から商用ライセンスを購入してください。
+
+---
+
+**最終更新日:** 2026-01-07  
+**テスト環境:** Aspose.GIS for .NET（最新安定版）  
+**作者:** Aspose

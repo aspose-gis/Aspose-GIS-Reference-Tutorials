@@ -1,82 +1,117 @@
 ---
-title: Správa vrstev
-linktitle: Správa vrstev
+date: 2026-01-07
+description: Naučte se, jak **vytvářet nové shapefile** soubory a spravovat GIS vrstvy
+  pomocí Aspose.GIS pro .NET. Krok za krokem návody, tipy a osvědčené postupy pro
+  vývoj geodat.
+linktitle: Layer Management
 second_title: Aspose.GIS .NET API
-description: Odemkněte potenciál geoprostorového vývoje pomocí výukových programů Aspose.GIS pro .NET. Vytvářejte, spravujte a manipulujte s datovými sadami GIS bez námahy.
-weight: 24
+title: Vytvořit nový shapefile – Správa vrstev
 url: /cs/net/layer-management/
+weight: 24
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Správa vrstev
+# Vytvořit nový shapefile – Správa vrstev
 
-## Úvod
+## Introduction
 
-Aspose.GIS for .NET umožňuje vývojářům ponořit se do vzrušujícího světa geoprostorového vývoje. V tomto komplexním seznamu výukových programů prozkoumáme různé výukové programy pro správu vrstev, které vás provedou odemknutím plného potenciálu Aspose.GIS pro .NET. Od vytváření nových datových sad File GDB až po manipulaci s prostorovými daty, tyto výukové programy pokrývají vše.
+Pokud potřebujete **create new shapefile** soubory nebo organizovat vrstvy v geospatial projektu, Aspose.GIS for .NET vám poskytuje čistý, code‑first způsob, jak to provést. V tomto přehledu uvádíme všechny tutoriály Správy vrstev, které vám pomohou vytvářet, upravovat a transformovat GIS datové sady – od vytvoření File GDB po filtrování prvků. Ať už vytváříte mapovou aplikaci nebo datový zpracovatelský řetězec, tyto průvodce vám přesně ukážou, jak efektivně pracovat s vrstvami.
 
-## Vytvořte nový soubor GDB Dataset 
- Prozkoumejte možnosti Aspose.GIS for .NET pro snadné vytváření a správu datových sad GIS. Stáhněte si nyní pro bezproblémový vývoj geoprostoru. Postupujte podle našeho podrobného průvodce na adrese[Vytvořte nový soubor GDB Dataset](./create-new-file-gdb-dataset/) začít.
+## Quick Answers
+- **Co mohu vytvořit s Aspose.GIS?** Plnohodnotné GIS datové sady, včetně shapefiles, File GDB a TopoJSON vrstev.  
+- **Potřebuji licenci?** Bezplatná zkušební verze funguje pro hodnocení; pro produkci je vyžadována komerční licence.  
+- **Které verze .NET jsou podporovány?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.  
+- **Je kód vyžadován pro každý úkol?** Většina tutoriálů poskytuje připravené C# úryvky, které můžete zkopírovat a vložit.  
+- **Jak dlouho trvá typický úkol?** Jednoduché operace, jako vytvoření shapefile, obvykle trvají několik sekund.
 
-## Vytvořte soubor GDB s jednou vrstvou 
- Odemkněte potenciál správy geoprostorových dat v .NET s Aspose.GIS. Naučte se krok za krokem vytvářet souborové geodatabáze a vrstvy. Stáhněte si nyní a proměňte svou cestu vývoje GIS. Podívejte se na podrobný návod na[Vytvořte soubor GDB s jednou vrstvou](./create-file-gdb-with-single-layer/).
+## Vytvořit novou File GDB datovou sadu 
+Prozkoumejte možnosti Aspose.GIS for .NET pro snadné vytváření a správu GIS datových sad. Stáhněte si nyní pro plynulý vývoj geospatial aplikací. Postupujte podle našeho krok‑za‑krokem průvodce na [Create New File GDB Dataset](./create-new-file-gdb-dataset/) a začněte.
 
-## Vytvořit nový soubor Shapefile 
- Osvojte si umění vytváření nového shapefile pomocí Aspose.GIS pro .NET. Náš podrobný průvodce vás provede celým procesem a pomůže vám uvolnit sílu manipulace s prostorovými daty. Ponořte se do výukového programu na adrese[Vytvořit nový soubor Shapefile](./create-new-shapefile/) zlepšit své geoprostorové dovednosti.
+## Vytvořit File GDB s jednou vrstvou 
+Odhalte potenciál správy geospatial dat v .NET s Aspose.GIS. Naučte se krok‑za‑krokem vytvářet File Geodatabáze a vrstvy. Stáhněte si nyní a transformujte svou GIS vývojovou cestu. Prohlédněte si podrobný tutoriál na [Create File GDB with Single Layer](./create-file-gdb-with-single-layer/).
 
-## Vytvořte vektorovou vrstvu pomocí SRS 
-Aspose.GIS for .NET je vaším klíčem k bezproblémové integraci GIS. Bez námahy vytvářejte vektorové vrstvy se zadanými prostorovými referenčními systémy. Stáhněte si nyní a rozšiřte své geoprostorové možnosti. Více se dozvíte na[Vytvořte vektorovou vrstvu pomocí SRS](./create-vector-layer-with-srs/).
+## Vytvořit nový shapefile 
+Ovládněte umění vytváření **new shapefile** pomocí Aspose.GIS for .NET. Náš krok‑za‑krokem průvodce vás provede procesem a pomůže vám využít sílu manipulace s prostorovými daty. Ponořte se do tutoriálu na [Create New Shapefile](./create-new-shapefile/) a zlepšete své geospatial dovednosti.
 
-## Přístup k funkcím v TopoJSON 
- Ponořte se do světa funkcí TopoJSON s Aspose.GIS pro .NET. Postupujte podle našeho podrobného návodu a bez námahy prozkoumejte geoprostorové možnosti. Přístup k výukovému programu na adrese[Přístup k funkcím v TopoJSON](./access-features-in-topojson/) k uvolnění plného potenciálu vašich GIS projektů.
+## Vytvořit vektorovou vrstvu se SRS 
+Aspose.GIS for .NET je vaším klíčem k bezproblémové GIS integraci. Snadno vytvořte vektorové vrstvy se specifikovanými systémy prostorových referencí. Stáhněte si nyní a zvyšte své geospatial schopnosti. Další informace na [Create Vector Layer with SRS](./create-vector-layer-with-srs/).
 
-## Přidat vrstvu do souboru dat GDB 
- Objevte sílu GIS s Aspose.GIS pro .NET! Naučte se přidávat vrstvy do datových sad File GDB pomocí našeho podrobného, podrobného kurzu. Transformujte svou cestu geoprostorového rozvoje na[Přidat vrstvu do souboru dat GDB](./add-layer-to-file-gdb-dataset/).
+## Přístup k prvkům v TopoJSON 
+Ponořte se do světa TopoJSON prvků s Aspose.GIS for .NET. Postupujte podle našeho krok‑za‑krokem tutoriálu a objevujte geospatial možnosti bez námahy. Přístup k tutoriálu na [Access Features in TopoJSON](./access-features-in-topojson/) a využijte plný potenciál svých GIS projektů.
 
-## Převeďte vrstvu GeoJSON na soubor GDB 
- Odemkněte geoprostorové zázraky s Aspose.GIS pro .NET! Bez námahy převádějte vrstvy GeoJSON na geodatabáze souborů a rozšiřte své geoprostorové možnosti. Vyzkoušejte to nyní podle našeho výukového programu na adrese[Převeďte vrstvu GeoJSON na soubor GDB](./convert-geojson-layer-to-file-gdb/).
+## Přidat vrstvu do File GDB datové sady 
+Objevte sílu GIS s Aspose.GIS for .NET! Naučte se přidávat vrstvy do File GDB datových sad pomocí našeho podrobného krok‑za‑krokem tutoriálu. Transformujte svou geospatial vývojovou cestu na [Add Layer to File GDB Dataset](./add-layer-to-file-gdb-dataset/).
 
-## Převést Polygon Shapefile na Linestring 
-Prozkoumejte sílu Aspose.GIS pro .NET a bez námahy převádějte polygonové tvarové soubory na Linestrings. Podpořte svůj vývoj GIS ještě dnes podle našeho podrobného průvodce na adrese[Převést Polygon Shapefile na Linestring](./convert-polygon-shapefile-to-linestring/).
+## Převést GeoJSON vrstvu do File GDB 
+Odemkněte geospatial zázraky s Aspose.GIS for .NET! Snadno převádějte GeoJSON vrstvy do File Geodatabází a rozšiřujte své geospatial schopnosti. Vyzkoušejte to nyní podle našeho tutoriálu na [Convert GeoJSON Layer to File GDB](./convert-geojson-layer-to-file-gdb/).
 
-## Funkce vrstvy oříznutí 
- Odemkněte geoprostorovou magii s Aspose.GIS pro .NET! Funkce oříznutí vrstvy bez námahy a pozvednutí vašich GIS projektů. Stáhněte si bezplatnou zkušební verzi a prozkoumejte tutoriál na adrese[Funkce vrstvy oříznutí](./crop-layer-features/).
+## Převést polygonový shapefile na Linestring 
+Prozkoumejte sílu Aspose.GIS for .NET a snadno převádějte polygonové Shapefiles na Linestringy. Zvyšte svůj GIS vývoj dnes podle našeho krok‑za‑krokem průvodce na [Convert Polygon Shapefile to Linestring](./convert-polygon-shapefile-to-linestring/).
 
-## Filtrování funkcí podle atributu 
- Prozkoumejte sílu Aspose.GIS pro .NET při manipulaci s prostorovými daty. Filtrujte funkce bez námahy, vylepšujte GIS aplikace a zvyšte produktivitu. Ponořte se do výukového programu na adrese[Filtrování funkcí podle atributu](./filter-features-by-attribute/) posunout své projekty GIS na další úroveň.
+## Oříznout prvky vrstvy 
+Odemkněte geospatial magii s Aspose.GIS for .NET! Ořízněte prvky vrstvy snadno a pozvedněte své GIS projekty. Stáhněte si bezplatnou zkušební verzi nyní a prozkoumejte tutoriál na [Crop Layer Features](./crop-layer-features/).
 
-## Extrahujte funkce do GeoJSON 
- Prozkoumejte podrobného průvodce používáním Aspose.GIS pro .NET k extrahování funkcí do GeoJSON. Využijte sílu GIS snadno! Podívejte se na tutoriál na[Extrahujte funkce do GeoJSON](./extract-features-to-geojson/) pro bezproblémový geoprostorový zážitek.
+## Filtrovat prvky podle atributu 
+Prozkoumejte sílu Aspose.GIS for .NET v manipulaci s prostorovými daty. Filtrovat prvky snadno, zlepšete GIS aplikace a zvýšte produktivitu. Ponořte se do tutoriálu na [Filter Features by Attribute](./filter-features-by-attribute/) a posuňte své GIS projekty na další úroveň.
 
-Vydejte se na svou geoprostorovou cestu s Aspose.GIS pro .NET a transformujte svůj vývoj GIS. Stáhněte si výukové programy, postupujte podle kroků a uvolněte plný potenciál manipulace s geoprostorovými daty. Ponořte se do světa bezproblémové integrace a vylepšete své možnosti GIS ještě dnes!
-## Výukové programy pro správu vrstev
-### [Vytvořte nový soubor GDB Dataset](./create-new-file-gdb-dataset/)
-Prozkoumejte Aspose.GIS for .NET, abyste mohli snadno vytvářet a spravovat datové sady GIS. Stáhněte si nyní pro bezproblémový geoprostorový rozvoj. 
-### [Vytvořte soubor GDB s jednou vrstvou](./create-file-gdb-with-single-layer/)
-Odemkněte potenciál správy geoprostorových dat v .NET s Aspose.GIS. Naučte se krok za krokem vytvářet souborové geodatabáze a vrstvy. Stáhnout teď!
-### [Vytvořit nový soubor Shapefile](./create-new-shapefile/)
-Naučte se, jak vytvořit nový shapefile pomocí Aspose.GIS pro .NET. Postupujte podle našeho podrobného průvodce a odemkněte sílu manipulace s prostorovými daty.
-### [Vytvořte vektorovou vrstvu pomocí SRS](./create-vector-layer-with-srs/)
-Prozkoumejte Aspose.GIS for .NET – váš klíč k bezproblémové integraci GIS. Vytvářejte vektorové vrstvy bez námahy pomocí specifikovaných prostorových referenčních systémů. Stáhnout teď!
-### [Přístup k funkcím v TopoJSON](./access-features-in-topojson/)
-Prozkoumejte Aspose.GIS pro .NET a naučte se přistupovat k funkcím TopoJSON krok za krokem. Ponořte se do dokumentace a bez námahy uvolněte geoprostorové schopnosti.
-### [Přidat vrstvu do souboru dat GDB](./add-layer-to-file-gdb-dataset/)
-Odemkněte sílu GIS s Aspose.GIS pro .NET! V tomto podrobném kurzu se dozvíte, jak přidat vrstvy do datových sad File GDB.
-### [Převeďte vrstvu GeoJSON na soubor GDB](./convert-geojson-layer-to-file-gdb/)
-Odemkněte geoprostorové zázraky s Aspose.GIS pro .NET! Bez námahy převádějte vrstvy GeoJSON do souborových geodatabází. Vyzkoušej to teď!
-### [Převést Polygon Shapefile na Linestring](./convert-polygon-shapefile-to-linestring/)
-Prozkoumejte sílu Aspose.GIS pro .NET a bez námahy převádějte polygonové tvarové soubory na Linestrings. Podpořte svůj vývoj GIS ještě dnes!
-### [Funkce vrstvy oříznutí](./crop-layer-features/)
-Odemkněte geoprostorovou magii s Aspose.GIS pro .NET! Funkce oříznutí vrstvy bez námahy. Stáhněte si bezplatnou zkušební verzi.
-### [Filtrování funkcí podle atributu](./filter-features-by-attribute/)
-Prozkoumejte sílu Aspose.GIS pro .NET při manipulaci s prostorovými daty. Filtrujte funkce bez námahy, vylepšujte GIS aplikace a zvyšte produktivitu.
-### [Extrahujte funkce do GeoJSON](./extract-features-to-geojson/)
-Prozkoumejte podrobného průvodce používáním Aspose.GIS pro .NET k extrahování funkcí do GeoJSON. Využijte sílu GIS snadno! 
+## Extrahovat prvky do GeoJSON 
+Prozkoumejte krok‑za‑krokem průvodce používáním Aspose.GIS for .NET k extrakci prvků do GeoJSON. Využijte sílu GIS s lehkostí! Podívejte se na tutoriál na [Extract Features to GeoJSON](./extract-features-to-geojson/) pro plynulý geospatial zážitek.
+
+Vydejte se na svou geospatial cestu s Aspose.GIS for .NET a transformujte svůj GIS vývoj. Stáhněte si tutoriály, postupujte podle kroků a využijte plný potenciál manipulace s geospatial daty. Ponořte se do světa bezproblémové integrace a zvyšte své GIS schopnosti ještě dnes!
+
+## Layer Management Tutorials
+### [Vytvořit novou File GDB datovou sadu](./create-new-file-gdb-dataset/)
+Prozkoumejte Aspose.GIS for .NET pro snadné vytváření a správu GIS datových sad. Stáhněte si nyní pro plynulý geospatial vývoj. 
+### [Vytvořit File GDB s jednou vrstvou](./create-file-gdb-with-single-layer/)
+Odhalte potenciál správy geospatial dat v .NET s Aspose.GIS. Naučte se krok‑za‑krokem vytvářet File Geodatabáze a vrstvy. Stáhněte si nyní!
+### [Vytvořit nový shapefile](./create-new-shapefile/)
+Naučte se vytvářet nový shapefile pomocí Aspose.GIS for .NET. Postupujte podle našeho krok‑za‑krokem průvodce a odhalte sílu manipulace s prostorovými daty.
+### [Vytvořit vektorovou vrstvu se SRS](./create-vector-layer-with-srs/)
+Prozkoumejte Aspose.GIS for .NET - váš klíč k bezproblémové GIS integraci. Snadno vytvořte vektorové vrstvy se specifikovanými systémy prostorových referencí. Stáhněte si nyní!
+### [Přístup k prvkům v TopoJSON](./access-features-in-topojson/)
+Prozkoumejte Aspose.GIS for .NET a naučte se přístup k TopoJSON prvkům krok‑za‑krokem. Ponořte se do dokumentace a využijte geospatial schopnosti bez námahy.
+### [Přidat vrstvu do File GDB datové sady](./add-layer-to-file-gdb-dataset/)
+Odhalte sílu GIS s Aspose.GIS for .NET! Naučte se přidávat vrstvy do File GDB datových sad v tomto krok‑za‑krokem tutoriálu.
+### [Převést GeoJSON vrstvu do File GDB](./convert-geojson-layer-to-file-gdb/)
+Odhalte geospatial zázraky s Aspose.GIS for .NET! Snadno převádějte GeoJSON vrstvy do File Geodatabází. Vyzkoušejte to nyní!
+### [Převést polygonový shapefile na Linestring](./convert-polygon-shapefile-to-linestring/)
+Prozkoumejte sílu Aspose.GIS for .NET a snadno převádějte polygonové Shapefiles na Linestringy. Zvyšte svůj GIS vývoj dnes!
+### [Oříznout prvky vrstvy](./crop-layer-features/)
+Odhalte geospatial magii s Aspose.GIS for .NET! Ořízněte prvky vrstvy snadno. Stáhněte si bezplatnou zkušební verzi nyní.
+### [Filtrovat prvky podle atributu](./filter-features-by-attribute/)
+Prozkoumejte sílu Aspose.GIS for .NET v manipulaci s prostorovými daty. Filtrovat prvky snadno, zlepšete GIS aplikace a zvýšte produktivitu.
+### [Extrahovat prvky do GeoJSON](./extract-features-to-geojson/)
+Prozkoumejte krok‑za‑krokem průvodce používáním Aspose.GIS for .NET k extrakci prvků do GeoJSON. Využijte sílu GIS s lehkostí!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+## Často kladené otázky
+
+**Q:** Jak mohu programově **create new shapefile** soubory?  
+**A:** Použijte třídu `Shapefile` v Aspose.GIS, specifikujte typ geometrie, přidejte pole a poté zapište prvky. Odkazovaný tutoriál „Create New Shapefile“ ukazuje přesný kód.
+
+**Q:** Jaký je rozdíl mezi File GDB a shapefile?  
+**A:** File Geodatabase (File GDB) ukládá data ve struktuře založené na složce s bohatší podporou schématu, zatímco shapefile je jednoduchý, široce kompatibilní formát sestávající z několika souborů pevné délky.
+
+**Q:** Jak mohu efektivně **filter features by attribute**?  
+**A:** Vytvořte objekt `Query` s klauzulí WHERE (např. `SELECT * FROM layer WHERE Population > 1000`). Průvodce „Filter Features by Attribute“ vás provede API.
+
+**Q:** Mohu převést shapefile na GeoJSON bez mezilehlých souborů?  
+**A:** Ano—načtěte shapefile do `FeatureCollection` a přímo zavolejte `ExportToGeoJson()`. Viz tutoriál „Extract Features to GeoJSON“ pro kompletní příklad.
+
+**Q:** Potřebuji speciální licenci pro spuštění těchto příkladů lokálně?  
+**A:** Bezplatná evaluační licence funguje pro vývoj a testování. Pro produkční nasazení zakupte komerční licenci od Aspose.
+
+---
+
+**Poslední aktualizace:** 2026-01-07  
+**Testováno s:** Aspose.GIS for .NET (nejnovější stabilní verze)  
+**Autor:** Aspose

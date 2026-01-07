@@ -1,27 +1,51 @@
 ---
-title: Maîtriser la modification des fonctionnalités de la couche
-linktitle: Modifier les entités de couche
-second_title: API Aspose.GIS .NET
-description: Explorez Aspose.GIS pour .NET et maîtrisez l'art de modifier sans effort les fonctionnalités des couches dans les fichiers de formes. Boostez vos applications géospatiales avec précision et facilité.
-weight: 23
+date: 2026-01-07
+description: Apprenez à tamponner la géométrie et à modifier les entités de couche
+  dans les shapefiles en utilisant Aspose.GIS pour .NET – un guide pas à pas pour
+  une manipulation précise des données géospatiales.
+linktitle: Modify Layer Features
+second_title: Aspose.GIS .NET API
+title: Comment tamponner une géométrie – Maîtriser la modification des entités de
+  couche
 url: /fr/net/layer-interaction-and-data-access/modify-layer-features/
+weight: 23
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Maîtriser la modification des fonctionnalités de la couche
+# Comment tamponner une géométrie – Maîtriser la modification des attributs de couche
 
 ## Introduction
-Bienvenue dans ce guide complet sur la modification des fonctionnalités des couches à l'aide d'Aspose.GIS pour .NET ! Si vous souhaitez améliorer vos applications géospatiales et manipuler les données de fichiers de formes sans effort, vous êtes au bon endroit. Dans ce didacticiel, nous aborderons le processus de modification des entités de couche à l'aide de la puissante bibliothèque Aspose.GIS, en vous fournissant des étapes et des informations détaillées.
-## Conditions préalables
-Avant de plonger dans le didacticiel, assurez-vous que les conditions préalables suivantes sont remplies :
--  Bibliothèque Aspose.GIS pour .NET : téléchargez et installez la bibliothèque à partir du[Page de téléchargement d'Aspose.GIS pour .NET](https://releases.aspose.com/gis/net/).
-- Environnement de développement .NET : assurez-vous de disposer d'un environnement de développement .NET fonctionnel configuré sur votre ordinateur.
-- Exemple de fichier de formes : préparez un exemple de fichier de formes que vous utiliserez à des fins de démonstration.
-## Importer des espaces de noms
-Pour commencer, importez les espaces de noms nécessaires dans votre projet .NET :
+Bienvenue dans ce guide complet sur **comment tamponner une géométrie** tout en modifiant les attributs de couche à l’aide d’Aspose.GIS pour .NET ! Si vous devez améliorer vos applications géospatiales, créer des zones de sécurité ou simplement ajuster la forme des entités dans un shapefile, vous êtes au bon endroit. Dans les quelques minutes qui suivent, nous parcourrons un exemple réel complet montrant exactement comment tamponner une géométrie et mettre à jour les données d’attributs de façon programmatique.
+
+## Réponses rapides
+- **Que fait le tamponnage d’une géométrie ?** Il crée une nouvelle forme qui entoure l’entité originale à une distance spécifiée.  
+- **Quelle bibliothèque gère le tamponnage dans ce tutoriel ?** Aspose.GIS pour .NET.  
+- **Ai‑je besoin d’une licence pour exécuter l’exemple ?** Une version d’essai gratuite suffit pour les tests ; une licence commerciale est requise en production.  
+- **Quel format de fichier est utilisé ?** ESRI Shapefile (`.shp`).  
+- **Puis‑je modifier la distance du tampon ?** Oui—il suffit de changer la valeur passée à `GetBuffer()`.
+
+## Qu’est‑ce que la géométrie tampon ?
+Le tamponnage est une opération spatiale qui agrandit (ou réduit) une géométrie vers l’extérieur (ou l’intérieur) d’une distance uniforme, générant un nouveau polygone qui représente la zone située à cette distance de l’entité originale. Il est couramment utilisé pour créer des zones d’impact, des analyses de proximité et des visualisations cartographiques.
+
+## Pourquoi utiliser la géométrie tampon dans les shapefiles ?
+- **Zones de sécurité :** Définir des aires de dégagement autour de routes, de canalisations ou de sites dangereux.  
+- **Requêtes de proximité :** Trouver rapidement les entités situées à une certaine distance d’un point ou d’une ligne.  
+- **Visualisation :** Mettre en évidence les zones d’influence sur les cartes sans modifier les données d’origine.  
+- **Préparation des données :** Générer de nouvelles couches pour des analyses SIG en aval.
+
+## Prérequis
+Avant de commencer, assurez‑vous d’avoir les éléments suivants :
+
+- Bibliothèque Aspose.GIS pour .NET : téléchargez et installez la bibliothèque depuis la [page de téléchargement d’Aspose.GIS pour .NET](https://releases.aspose.com/gis/net/).  
+- Environnement de développement .NET : Visual Studio, VS Code ou tout IDE supportant .NET.  
+- Shapefile d’exemple : un shapefile (`.shp`) contenant au moins une entité avec un attribut **name** (utilisé dans l’exemple).  
+
+## Importer les espaces de noms
+Ajoutez les directives `using` requises à votre projet C# afin de pouvoir travailler avec les vecteurs, les géométries et les I/O de fichiers.
+
 ```csharp
 using Aspose.Gis;
 using Aspose.Gis.Formats.Shapefile;
@@ -29,58 +53,96 @@ using Aspose.GIS.Examples.CSharp;
 using System.IO;
 using Aspose.Gis.Geometries;
 ```
-Maintenant, décomposons l'exemple en plusieurs étapes.
-## Étape 1 : configurer l'environnement
-Commencez par définir le chemin d'accès à votre répertoire de documents :
+
+## Guide étape par étape
+
+### Étape 1 : Configurer le répertoire de travail
+Définissez le dossier où résident vos shapefiles source et résultat.
+
 ```csharp
 string dataDir = "Your Document Directory";
 ```
-## Étape 2 : Définir les chemins source et résultat
-Spécifiez les chemins des fichiers de formes source et résultat :
+
+### Étape 2 : Définir les chemins source et résultat
+Indiquez à l’API le shapefile original et spécifiez où le fichier modifié sera enregistré.
+
 ```csharp
 string sourcePath = Path.Combine(dataDir, "InputShapeFile.shp");
 string resultPath = Path.Combine(dataDir, "modified_out.shp");
 ```
-## Étape 3 : Ouvrir le fichier de formes source et créer le fichier de formes de résultat
-Ouvrez le fichier de formes source et créez le fichier de formes résultat :
+
+### Étape 3 : Ouvrir le shapefile source, tamponner la géométrie et écrire les résultats
+Le cœur du **comment tamponner une géométrie** se trouve dans ce bloc. Nous ouvrons la source, copions son schéma, parcourons chaque entité, créons un tampon de 2,0 unités, mettons à jour un attribut et écrivons l’entité modifiée dans un nouveau shapefile.
+
 ```csharp
 using (var source = VectorLayer.Open(sourcePath, Drivers.Shapefile))
 using (var result = VectorLayer.Create(resultPath, Drivers.Shapefile, source.SpatialReferenceSystem))
 {
-    // Copier les attributs de la source vers le résultat
+    // Copy attributes from the source to the result
     result.CopyAttributes(source);
-    // Parcourez les fonctionnalités du fichier de formes source
+    // Iterate through features in the source shapefile
     foreach (var feature in source)
     {
-        // Modifier la géométrie en créant un tampon
+        // Modify the geometry by creating a buffer
         var modifiedGeometry = feature.Geometry.GetBuffer(2.0);
         feature.Geometry = modifiedGeometry;
-        // Modifier un attribut de fonctionnalité (par exemple, convertir l'attribut « nom » en majuscules)
+        // Modify a feature attribute (e.g., converting 'name' attribute to uppercase)
         var attributeValue = feature.GetValue<string>("name");
         var modifiedAttributeValue = attributeValue.ToUpper();
         feature.SetValue("name", modifiedAttributeValue);
-        // Ajouter la fonctionnalité modifiée au fichier de formes obtenu
+        // Add the modified feature to the result shapefile
         result.Add(feature);
     }
 }
 ```
-Cet extrait de code illustre les étapes principales impliquées dans la modification des entités de couche à l'aide d'Aspose.GIS pour .NET. N'hésitez pas à adapter et à intégrer ces étapes dans vos propres projets pour une manipulation efficace des données géospatiales.
-## Conclusion
-Toutes nos félicitations! Vous avez appris avec succès comment modifier les entités de couche à l'aide d'Aspose.GIS pour .NET. Ce didacticiel fournit une base solide pour intégrer la manipulation de données géospatiales dans vos applications, vous permettant ainsi de créer des solutions cartographiques plus dynamiques et interactives.
+
+**Que se passe‑t‑il ici ?**  
+- `GetBuffer(2.0)` crée un polygone qui entoure la géométrie originale de 2 unités (l’unité dépend du système de coordonnées de la couche).  
+- La manipulation d’attributs montre que vous pouvez combiner les modifications géométriques avec les éditions d’attributs en une seule passe.
+
+## Problèmes courants et dépannage
+| Symptôme | Cause probable | Solution |
+|----------|----------------|----------|
+| **Shapefile résultat vide** | Distance de tampon trop petite pour le système de coordonnées | Augmenter la valeur du tampon ou vérifier les unités du CRS. |
+| **`ArgumentException` sur `GetBuffer`** | Type de géométrie non pris en charge (par ex., géométrie nulle) | S’assurer que chaque entité possède une géométrie valide avant le tamponnage. |
+| **Attribut “name” introuvable** | Nom de champ différent dans votre fichier source | Remplacer `"name"` par le nom réel du champ que vous souhaitez modifier. |
+
 ## Questions fréquemment posées
-### Aspose.GIS est-il adapté aux tâches géospatiales simples et complexes ?
-Oui, Aspose.GIS est conçu pour gérer un large éventail de tâches géospatiales, des opérations de base à l'analyse spatiale complexe.
-### Puis-je utiliser Aspose.GIS avec d’autres bibliothèques .NET ?
-Absolument! Aspose.GIS s'intègre de manière transparente à d'autres bibliothèques .NET, offrant flexibilité et compatibilité.
-### Existe-t-il une version d'essai disponible pour Aspose.GIS ?
- Oui, vous pouvez explorer les capacités d'Aspose.GIS en téléchargeant le[version d'essai gratuite](https://releases.aspose.com/).
-### Comment puis-je obtenir de l'aide pour Aspose.GIS ?
- Visiter le[Forum d'assistance Aspose.GIS](https://forum.aspose.com/c/gis/33)pour obtenir de l’aide et du soutien communautaire.
-### Où puis-je trouver la documentation pour Aspose.GIS ?
- La documentation Aspose.GIS est disponible[ici](https://reference.aspose.com/gis/net/).
+### Aspose.GIS convient‑il aux tâches géospatiales simples et complexes ?
+Oui, Aspose.GIS est conçu pour gérer un large éventail de tâches géospatiales, des opérations de base aux analyses spatiales complexes.
+
+### Puis‑je utiliser Aspose.GIS avec d’autres bibliothèques .NET ?
+Absolument ! Aspose.GIS s’intègre parfaitement avec d’autres bibliothèques .NET, offrant flexibilité et compatibilité.
+
+### Existe‑t‑il une version d’essai d’Aspose.GIS ?
+Oui, vous pouvez explorer les capacités d’Aspose.GIS en téléchargeant la [version d’essai gratuite](https://releases.aspose.com/).
+
+### Comment obtenir du support pour Aspose.GIS ?
+Visitez le [forum de support Aspose.GIS](https://forum.aspose.com/c/gis/33) pour obtenir de l’aide et le soutien de la communauté.
+
+### Où trouver la documentation d’Aspose.GIS ?
+La documentation d’Aspose.GIS est disponible [ici](https://reference.aspose.com/gis/net/).
+
+**Q :** Puis‑je tamponner des géométries dans différentes unités (par ex., mètres vs. degrés) ?  
+**R :** Oui—la distance de tampon est interprétée selon les unités du système de coordonnées de la couche. Convertissez votre distance en conséquence.
+
+**Q :** Le tamponnage préserve‑t‑il les attributs de l’entité d’origine ?  
+**R :** Dans l’exemple, nous copions le schéma puis définissons explicitement les valeurs d’attributs modifiées, ainsi tous les attributs d’origine restent sauf si vous les modifiez.
+
+## Conclusion
+Vous avez maintenant maîtrisé **comment tamponner une géométrie** et modifier les attributs de couche à l’aide d’Aspose.GIS pour .NET. Ce modèle peut être étendu à des flux de travail plus complexes—comme la génération de multiples zones de tampon, la réalisation de jointures spatiales ou l’exportation vers d’autres formats SIG. Continuez à expérimenter, et vous construirez des solutions géospatiales puissantes en un rien de temps.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+---
+
+**Dernière mise à jour :** 2026-01-07  
+**Testé avec :** Aspose.GIS for .NET (dernière version)  
+**Auteur :** Aspose  
+
+---

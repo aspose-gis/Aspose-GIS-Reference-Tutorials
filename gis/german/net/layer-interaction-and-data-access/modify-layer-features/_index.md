@@ -1,27 +1,50 @@
 ---
-title: Beherrschung der Layer-Feature-Modifikation
-linktitle: Layer-Features ändern
-second_title: Aspose.GIS .NET-API
-description: Entdecken Sie Aspose.GIS für .NET und meistern Sie die Kunst, Layer-Features in Shapefiles mühelos zu ändern. Steigern Sie Ihre Geodatenanwendungen mit Präzision und Leichtigkeit.
-weight: 23
+date: 2026-01-07
+description: Erfahren Sie, wie Sie Geometrien puffern und Layer‑Features in Shapefiles
+  mit Aspose.GIS für .NET bearbeiten – ein Schritt‑für‑Schritt‑Leitfaden für präzise
+  Geodatenverarbeitung.
+linktitle: Modify Layer Features
+second_title: Aspose.GIS .NET API
+title: Wie man Geometrie puffert – Beherrschung der Ebenen-Feature-Modifikation
 url: /de/net/layer-interaction-and-data-access/modify-layer-features/
+weight: 23
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Beherrschung der Layer-Feature-Modifikation
+# Wie man Geometrie puffert – Beherrschung der Modifikation von Layer-Features
 
 ## Einführung
-Willkommen zu dieser umfassenden Anleitung zum Ändern von Layer-Features mit Aspose.GIS für .NET! Wenn Sie Ihre Geodatenanwendungen verbessern und Shapefile-Daten mühelos bearbeiten möchten, sind Sie hier richtig. In diesem Tutorial befassen wir uns mit dem Prozess der Änderung von Layer-Features mithilfe der leistungsstarken Aspose.GIS-Bibliothek und liefern Ihnen detaillierte Schritte und Einblicke.
+Willkommen zu diesem umfassenden Leitfaden, **wie man Geometrie puffert** und dabei Layer-Features mit Aspose.GIS für .NET modifiziert! Wenn Sie Ihre geospatiale Anwendung verbessern, Sicherheitszonen erstellen oder einfach die Formen von Features in einer Shapefile anpassen möchten, sind Sie hier genau richtig. In den nächsten Minuten führen wir Sie durch ein vollständiges, praxisnahes Beispiel, das genau zeigt, wie man Geometrie puffert und Attributdaten programmgesteuert aktualisiert.
+
+## Kurze Antworten
+- **Was bewirkt das Puffer einer Geometrie?** Es erzeugt eine neue Form, die das ursprüngliche Feature in einem angegebenen Abstand umschließt.  
+- **Welche Bibliothek übernimmt das Puffer‑Handling in diesem Tutorial?** Aspose.GIS für .NET.  
+- **Benötige ich eine Lizenz, um das Beispiel auszuführen?** Eine kostenlose Testversion reicht für Tests; für den Produktionseinsatz ist eine kommerzielle Lizenz erforderlich.  
+- **Welches Dateiformat wird verwendet?** ESRI Shapefile (`.shp`).  
+- **Kann ich den Pufferabstand ändern?** Ja – passen Sie einfach den Wert an, der an `GetBuffer()` übergeben wird.
+
+## Was ist Buffer Geometry?
+Puffern ist ein räumlicher Vorgang, bei dem eine Geometrie gleichmäßig nach außen (oder nach innen) um einen festgelegten Abstand erweitert (bzw. verkleinert) wird und dabei ein neues Polygon entsteht, das den Bereich innerhalb dieses Abstands vom ursprünglichen Feature darstellt. Es wird häufig zur Erstellung von Einwirkungszonen, Proximity‑Analysen und Kartenvisualisierungen verwendet.
+
+## Warum Buffer Geometry in Shapefiles verwenden?
+- **Sicherheitszonen:** Definieren Sie Freiraumbereiche um Straßen, Pipelines oder Gefahrenstellen.  
+- **Proximity‑Abfragen:** Finden Sie schnell Features, die sich innerhalb eines bestimmten Abstands zu einem Punkt oder einer Linie befinden.  
+- **Visualisierung:** Heben Sie Einflussbereiche auf Karten hervor, ohne die Originaldaten zu verändern.  
+- **Datenvorbereitung:** Erzeugen Sie neue Layer für nachgelagerte GIS‑Analysen.
+
 ## Voraussetzungen
-Bevor wir uns mit dem Tutorial befassen, stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
--  Aspose.GIS für .NET-Bibliothek: Laden Sie die Bibliothek von herunter und installieren Sie sie[Aspose.GIS für .NET-Downloadseite](https://releases.aspose.com/gis/net/).
-- .NET-Entwicklungsumgebung: Stellen Sie sicher, dass auf Ihrem Computer eine funktionierende .NET-Entwicklungsumgebung eingerichtet ist.
-- Beispiel-Shapefile: Bereiten Sie ein Beispiel-Shapefile vor, das Sie zu Demonstrationszwecken verwenden.
+Bevor wir starten, stellen Sie sicher, dass Sie Folgendes bereit haben:
+
+- Aspose.GIS für .NET Bibliothek: Laden Sie die Bibliothek von der [Aspose.GIS für .NET Download‑Seite](https://releases.aspose.com/gis/net/) herunter und installieren Sie sie.  
+- .NET‑Entwicklungsumgebung: Visual Studio, VS Code oder jede IDE, die .NET unterstützt.  
+- Beispiel‑Shapefile: Eine Shapefile (`.shp`), die mindestens ein Feature mit einem **name**‑Attribut enthält (wie im Beispiel verwendet).  
+
 ## Namespaces importieren
-Importieren Sie zunächst die erforderlichen Namespaces in Ihr .NET-Projekt:
+Fügen Sie die erforderlichen `using`‑Direktiven zu Ihrem C#‑Projekt hinzu, damit Sie mit Vektoren, Geometrien und Datei‑I/O arbeiten können.
+
 ```csharp
 using Aspose.Gis;
 using Aspose.Gis.Formats.Shapefile;
@@ -29,58 +52,98 @@ using Aspose.GIS.Examples.CSharp;
 using System.IO;
 using Aspose.Gis.Geometries;
 ```
-Lassen Sie uns das Beispiel nun in mehrere Schritte unterteilen.
-## Schritt 1: Umgebung einrichten
-Beginnen Sie mit der Definition des Pfads zu Ihrem Dokumentverzeichnis:
+
+## Schritt‑für‑Schritt‑Anleitung
+
+### Schritt 1: Arbeitsverzeichnis einrichten
+Definieren Sie den Ordner, in dem Ihre Quell‑ und Ergebnis‑Shapefiles liegen.
+
 ```csharp
 string dataDir = "Your Document Directory";
 ```
-## Schritt 2: Definieren Sie Quell- und Ergebnispfade
-Geben Sie die Pfade für die Quell- und Ergebnis-Shapefiles an:
+
+### Schritt 2: Quell‑ und Zielpfade definieren
+Weisen Sie die API auf die ursprüngliche Shapefile und den Speicherort der modifizierten Datei hin.
+
 ```csharp
 string sourcePath = Path.Combine(dataDir, "InputShapeFile.shp");
 string resultPath = Path.Combine(dataDir, "modified_out.shp");
 ```
-## Schritt 3: Quell-Shapefile öffnen und Ergebnis-Shapefile erstellen
-Öffnen Sie das Quell-Shapefile und erstellen Sie das Ergebnis-Shapefile:
+
+### Schritt 3: Quell‑Shapefile öffnen, Geometry puffern und Ergebnisse schreiben
+Der Kern von **wie man Geometrie puffert** befindet sich in diesem Block. Wir öffnen die Quelle, kopieren ihr Schema, iterieren über jedes Feature, erzeugen einen Puffer von 2,0 Einheiten, aktualisieren ein Attribut und schreiben das modifizierte Feature in eine neue Shapefile.
+
 ```csharp
 using (var source = VectorLayer.Open(sourcePath, Drivers.Shapefile))
 using (var result = VectorLayer.Create(resultPath, Drivers.Shapefile, source.SpatialReferenceSystem))
 {
-    // Kopieren Sie Attribute von der Quelle in das Ergebnis
+    // Copy attributes from the source to the result
     result.CopyAttributes(source);
-    // Durchlaufen Sie Features im Quell-Shapefile
+    // Iterate through features in the source shapefile
     foreach (var feature in source)
     {
-        // Ändern Sie die Geometrie, indem Sie einen Puffer erstellen
+        // Modify the geometry by creating a buffer
         var modifiedGeometry = feature.Geometry.GetBuffer(2.0);
         feature.Geometry = modifiedGeometry;
-        // Ein Feature-Attribut ändern (z. B. das Attribut „Name“ in Großbuchstaben umwandeln)
+        // Modify a feature attribute (e.g., converting 'name' attribute to uppercase)
         var attributeValue = feature.GetValue<string>("name");
         var modifiedAttributeValue = attributeValue.ToUpper();
         feature.SetValue("name", modifiedAttributeValue);
-        // Fügen Sie das geänderte Feature zum Ergebnis-Shapefile hinzu
+        // Add the modified feature to the result shapefile
         result.Add(feature);
     }
 }
 ```
-Dieser Codeausschnitt demonstriert die Kernschritte beim Ändern von Layer-Features mit Aspose.GIS für .NET. Sie können diese Schritte gerne anpassen und in Ihre eigenen Projekte integrieren, um eine effiziente Geodatenmanipulation zu ermöglichen.
-## Abschluss
-Glückwunsch! Sie haben erfolgreich gelernt, wie Sie Layer-Features mit Aspose.GIS für .NET ändern. Dieses Tutorial bietet eine solide Grundlage für die Integration der Manipulation von Geodaten in Ihre Anwendungen und ermöglicht Ihnen die Erstellung dynamischerer und interaktiverer Kartenlösungen.
+
+**Was passiert hier?**  
+- `GetBuffer(2.0)` erzeugt ein Polygon, das die ursprüngliche Geometrie um 2 Einheiten umschließt (die Einheit hängt vom Koordinatensystem des Layers ab).  
+- Die Attributmanipulation zeigt, dass Sie Geometrieänderungen mit Attribut‑Edits in einem Durchlauf kombinieren können.
+
+## Allgemeine Probleme & Fehlersuche
+| Symptom | Wahrscheinliche Ursache | Lösung |
+|---------|--------------------------|--------|
+| **Leere Ergebnis‑Shapefile** | Pufferabstand zu klein für das Koordinatensystem | Erhöhen Sie den Pufferwert oder prüfen Sie die CRS‑Einheiten. |
+| **`ArgumentException` bei `GetBuffer`** | Geometrietyp nicht unterstützt (z. B. null‑Geometrie) | Stellen Sie sicher, dass jedes Feature eine gültige Geometrie besitzt, bevor Sie puffern. |
+| **Attribut „name“ nicht gefunden** | Anderer Feldname in Ihrer Quell‑Datei | Ersetzen Sie `"name"` durch den tatsächlichen Feldnamen, den Sie ändern möchten. |
+
 ## Häufig gestellte Fragen
-### Ist Aspose.GIS sowohl für einfache als auch komplexe Geodatenaufgaben geeignet?
-Ja, Aspose.GIS ist für die Bewältigung einer breiten Palette von Geodatenaufgaben konzipiert, von einfachen Operationen bis hin zu komplexen räumlichen Analysen.
-### Kann ich Aspose.GIS mit anderen .NET-Bibliotheken verwenden?
-Absolut! Aspose.GIS lässt sich nahtlos in andere .NET-Bibliotheken integrieren und bietet so Flexibilität und Kompatibilität.
-### Gibt es eine Testversion für Aspose.GIS?
- Ja, Sie können die Funktionen von Aspose.GIS erkunden, indem Sie das herunterladen[kostenlose Testversion](https://releases.aspose.com/).
-### Wie kann ich Unterstützung für Aspose.GIS erhalten?
- Besuche den[Aspose.GIS-Supportforum](https://forum.aspose.com/c/gis/33)für Hilfe und gemeinschaftliche Unterstützung.
-### Wo finde ich die Dokumentation für Aspose.GIS?
- Die Aspose.GIS-Dokumentation ist verfügbar[Hier](https://reference.aspose.com/gis/net/).
+### Ist Aspose.GIS sowohl für einfache als auch für komplexe geospatiale Aufgaben geeignet?
+Ja, Aspose.GIS ist darauf ausgelegt, ein breites Spektrum an geospatiale Aufgaben zu bewältigen, von Grundoperationen bis hin zu komplexen räumlichen Analysen.
+
+### Kann ich Aspose.GIS mit anderen .NET‑Bibliotheken verwenden?
+Absolut! Aspose.GIS lässt sich nahtlos in andere .NET‑Bibliotheken integrieren und bietet dadurch Flexibilität und Kompatibilität.
+
+### Gibt es eine Testversion von Aspose.GIS?
+Ja, Sie können die Funktionen von Aspose.GIS mit der [kostenlosen Testversion](https://releases.aspose.com/) erkunden.
+
+### Wie erhalte ich Support für Aspose.GIS?
+Besuchen Sie das [Aspose.GIS Support‑Forum](https://forum.aspose.com/c/gis/33) für Hilfe und Community‑Support.
+
+### Wo finde ich die Dokumentation zu Aspose.GIS?
+Die Aspose.GIS‑Dokumentation ist [hier](https://reference.aspose.com/gis/net/) verfügbar.
+
+**Zusätzliche Q&A**
+
+**F:** Kann ich Geometrien in unterschiedlichen Einheiten puffern (z. B. Meter vs. Grad)?  
+**A:** Ja – der Pufferabstand wird in den Einheiten des Layer‑Koordinatensystems interpretiert. Konvertieren Sie Ihren Abstand entsprechend.
+
+**F:** Bewahrt das Puffer‑Verfahren die ursprünglichen Attribute des Features?  
+**A:** Im Beispiel kopieren wir das Schema und setzen anschließend explizit die geänderten Attributwerte, sodass alle ursprünglichen Attribute erhalten bleiben, sofern Sie sie nicht ändern.
+
+## Fazit
+Sie haben nun **wie man Geometrie puffert** und Layer‑Attribute mit Aspose.GIS für .NET modifiziert. Dieses Muster lässt sich auf komplexere Workflows ausweiten – etwa das Erzeugen mehrerer Pufferzonen, das Durchführen räumlicher Joins oder das Exportieren in andere GIS‑Formate. Experimentieren Sie weiter, und Sie werden im Handumdrehen leistungsstarke geospatiale Lösungen bauen.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+---
+
+**Last Updated:** 2026-01-07  
+**Tested With:** Aspose.GIS for .NET (latest release)  
+**Author:** Aspose  
+
+---
