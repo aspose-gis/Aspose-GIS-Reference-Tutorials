@@ -1,27 +1,50 @@
 ---
-title: Katman Özelliği Değişikliğinde Uzmanlaşma
-linktitle: Katman Özelliklerini Değiştir
-second_title: Aspose.GIS .NET API'si
-description: Aspose.GIS for .NET'i keşfedin ve şekil dosyalarındaki katman özelliklerini zahmetsizce değiştirme sanatında ustalaşın. Jeo-uzamsal uygulamalarınızı hassasiyetle ve kolaylıkla güçlendirin.
-weight: 23
+date: 2026-01-07
+description: Aspose.GIS for .NET kullanarak shapefile’larda geometriyi tamponlamayı
+  ve katman özelliklerini değiştirmeyi öğrenin – hassas coğrafi veri işleme için adım
+  adım bir rehber.
+linktitle: Modify Layer Features
+second_title: Aspose.GIS .NET API
+title: Geometriyi Nasıl Buffer'lar – Katman Özelliği Değiştirmede Ustalık
 url: /tr/net/layer-interaction-and-data-access/modify-layer-features/
+weight: 23
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Katman Özelliği Değişikliğinde Uzmanlaşma
+# Geometriyi Buffer’lamak – Katman Özelliği Değiştirmeyi Ustalıkla Öğrenin
 
-## giriiş
-Aspose.GIS for .NET kullanarak katman özelliklerini değiştirmeye yönelik bu kapsamlı kılavuza hoş geldiniz! Jeouzaysal uygulamalarınızı geliştirmek ve şekil dosyası verilerini zahmetsizce değiştirmek istiyorsanız doğru yerdesiniz. Bu eğitimde, güçlü Aspose.GIS kütüphanesini kullanarak katman özelliklerini değiştirme sürecini derinlemesine inceleyerek size ayrıntılı adımlar ve bilgiler sunacağız.
+## Giriş
+Aspose.GIS for .NET kullanarak katman özelliklerini değiştirirken **geometriyi nasıl buffer’layacağınızı** anlatan bu kapsamlı rehbere hoş geldiniz! Coğrafi uygulamalarınızı geliştirmek, güvenlik bölgeleri oluşturmak ya da bir shapefile’daki özellik şekillerini ayarlamak istiyorsanız doğru yerdesiniz. Önümüzdeki birkaç dakikada, geometriyi buffer’layıp öznitelik verilerini programlı olarak nasıl güncelleyeceğinizi gösteren eksiksiz, gerçek‑dünya bir örnek üzerinden ilerleyeceğiz.
+
+## Hızlı Yanıtlar
+- **Bir geometriyi buffer’lamak ne işe yarar?** Belirtilen mesafede orijinal özelliği çevreleyen yeni bir şekil oluşturur.  
+- **Bu öğreticide hangi kütüphane buffer’lamayı gerçekleştirir?** Aspose.GIS for .NET.  
+- **Örneği çalıştırmak için lisansa ihtiyacım var mı?** Test için ücretsiz deneme sürümü yeterlidir; üretim için ticari lisans gereklidir.  
+- **Hangi dosya formatı kullanılıyor?** ESRI Shapefile (`.shp`).  
+- **Buffer mesafesini değiştirebilir miyim?** Evet—`GetBuffer()` metoduna gönderilen değeri değiştirmeniz yeterlidir.
+
+## Buffer Geometri Nedir?
+Buffer’lama, bir geometriyi dışa (veya içe) doğru sabit bir mesafe kadar genişleten (veya daraltan) bir uzamsal işlemdir; bu işlem, orijinal özelliğin belirli bir mesafe içindeki alanı temsil eden yeni bir poligon üretir. Genellikle etki bölgeleri oluşturmak, yakınlık analizleri yapmak ve harita görselleştirmeleri için kullanılır.
+
+## Shapefile’larda Buffer Geometri Neden Kullanılır?
+- **Güvenlik bölgeleri:** Yollar, boru hatları veya tehlikeli alanlar etrafında boşluk alanları tanımlayın.  
+- **Yakınlık sorguları:** Bir nokta ya da hat üzerindeki belirli bir mesafe içinde bulunan özellikleri hızlıca bulun.  
+- **Görselleştirme:** Orijinal veriyi değiştirmeden haritalarda etki alanlarını vurgulayın.  
+- **Veri hazırlama:** Sonraki GIS analizleri için yeni katmanlar üretin.
+
 ## Önkoşullar
-Eğiticiye dalmadan önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
--  Aspose.GIS for .NET Library: Kütüphaneyi şuradan indirip yükleyin:[Aspose.GIS for .NET indirme sayfası](https://releases.aspose.com/gis/net/).
-- .NET Geliştirme Ortamı: Makinenizde çalışan bir .NET geliştirme ortamının kurulu olduğundan emin olun.
-- Örnek Şekil Dosyası: Gösterim amacıyla kullanacağınız örnek bir şekil dosyasını hazırlayın.
-## Ad Alanlarını İçe Aktar
-Başlamak için gerekli ad alanlarını .NET projenize aktarın:
+Başlamadan önce aşağıdakilerin hazır olduğundan emin olun:
+
+- Aspose.GIS for .NET Kütüphanesi: Kütüphaneyi [Aspose.GIS for .NET indirme sayfasından](https://releases.aspose.com/gis/net/) indirin ve kurun.  
+- .NET Geliştirme Ortamı: Visual Studio, VS Code veya .NET destekleyen herhangi bir IDE.  
+- Örnek Shapefile: En az bir **name** özniteliğine sahip bir özellik içeren bir shapefile (`.shp`).
+
+## Ad Alanlarını İçe Aktarın
+Vektörler, geometriler ve dosya I/O ile çalışabilmek için C# projenize gerekli `using` yönergelerini ekleyin.
+
 ```csharp
 using Aspose.Gis;
 using Aspose.Gis.Formats.Shapefile;
@@ -29,58 +52,98 @@ using Aspose.GIS.Examples.CSharp;
 using System.IO;
 using Aspose.Gis.Geometries;
 ```
-Şimdi örneği birden fazla adıma ayıralım.
-## 1. Adım: Ortamı Ayarlayın
-Belge dizininizin yolunu tanımlayarak başlayın:
+
+## Adım‑Adım Kılavuz
+
+### Adım 1: Çalışma Dizinini Ayarlayın
+Kaynak ve sonuç shapefile’larının bulunduğu klasörü tanımlayın.
+
 ```csharp
 string dataDir = "Your Document Directory";
 ```
-## Adım 2: Kaynak ve Sonuç Yollarını Tanımlayın
-Kaynak ve sonuç şekil dosyalarının yollarını belirtin:
+
+### Adım 2: Kaynak ve Sonuç Yollarını Belirleyin
+API’yı orijinal shapefile’a yönlendirin ve değiştirilmiş dosyanın nereye kaydedileceğini belirtin.
+
 ```csharp
 string sourcePath = Path.Combine(dataDir, "InputShapeFile.shp");
 string resultPath = Path.Combine(dataDir, "modified_out.shp");
 ```
-## Adım 3: Kaynak Şekil Dosyasını Açın ve Sonuç Şekil Dosyasını Oluşturun
-Kaynak şekil dosyasını açın ve sonuç şekil dosyasını oluşturun:
+
+### Adım 3: Kaynak Shapefile’ı Açın, Geometriyi Buffer’layın ve Sonuçları Yazın
+**Geometriyi nasıl buffer’layacağınız** bu blokta gerçekleşir. Kaynağı açar, şemasını kopyalar, her bir özelliği döngüye alır, 2.0 birimlik bir buffer oluşturur, bir özniteliği günceller ve değiştirilmiş özelliği yeni bir shapefile’a yazarız.
+
 ```csharp
 using (var source = VectorLayer.Open(sourcePath, Drivers.Shapefile))
 using (var result = VectorLayer.Create(resultPath, Drivers.Shapefile, source.SpatialReferenceSystem))
 {
-    // Nitelikleri kaynaktan sonuca kopyalayın
+    // Copy attributes from the source to the result
     result.CopyAttributes(source);
-    // Kaynak şekil dosyasındaki özellikleri yineleyin
+    // Iterate through features in the source shapefile
     foreach (var feature in source)
     {
-        // Bir tampon oluşturarak geometriyi değiştirin
+        // Modify the geometry by creating a buffer
         var modifiedGeometry = feature.Geometry.GetBuffer(2.0);
         feature.Geometry = modifiedGeometry;
-        // Bir özellik niteliğini değiştirin (örneğin, 'ad' niteliğini büyük harfe dönüştürmek)
+        // Modify a feature attribute (e.g., converting 'name' attribute to uppercase)
         var attributeValue = feature.GetValue<string>("name");
         var modifiedAttributeValue = attributeValue.ToUpper();
         feature.SetValue("name", modifiedAttributeValue);
-        // Değiştirilen özelliği sonuç şekil dosyasına ekleyin
+        // Add the modified feature to the result shapefile
         result.Add(feature);
     }
 }
 ```
-Bu kod parçacığı, Aspose.GIS for .NET kullanılarak katman özelliklerinin değiştirilmesinde yer alan temel adımları göstermektedir. Verimli coğrafi veri manipülasyonu için bu adımları kendi projelerinize uyarlamaktan ve entegre etmekten çekinmeyin.
-## Çözüm
-Tebrikler! Aspose.GIS for .NET'i kullanarak katman özelliklerini nasıl değiştireceğinizi başarıyla öğrendiniz. Bu eğitim, coğrafi uzamsal veri manipülasyonunu uygulamalarınıza dahil etmek için sağlam bir temel sağlayarak daha dinamik ve etkileşimli haritalama çözümleri oluşturmanıza olanak tanır.
-## Sıkça Sorulan Sorular
-### Aspose.GIS hem basit hem de karmaşık coğrafi görevler için uygun mudur?
-Evet, Aspose.GIS, temel işlemlerden karmaşık mekansal analizlere kadar çok çeşitli coğrafi görevleri yerine getirmek üzere tasarlanmıştır.
-### Aspose.GIS'i diğer .NET kütüphaneleriyle kullanabilir miyim?
-Kesinlikle! Aspose.GIS diğer .NET kütüphaneleriyle sorunsuz bir şekilde bütünleşerek esneklik ve uyumluluk sağlar.
-### Aspose.GIS'in deneme sürümü mevcut mu?
- Evet, Aspose.GIS'in özelliklerini indirerek keşfedebilirsiniz.[ücretsiz deneme sürümü](https://releases.aspose.com/).
-### Aspose.GIS için nasıl destek alabilirim?
- Ziyaret edin[Aspose.GIS destek forumu](https://forum.aspose.com/c/gis/33)yardım ve topluluk desteği için.
-### Aspose.GIS belgelerini nerede bulabilirim?
- Aspose.GIS belgeleri mevcuttur[Burada](https://reference.aspose.com/gis/net/).
+
+**Burada ne oluyor?**  
+- `GetBuffer(2.0)` orijinal geometriyi 2 birim (katmanın koordinat sistemine bağlı olarak) çevreleyen bir poligon oluşturur.  
+- Öznitelik manipülasyonu, geometri değişikliklerini tek bir geçişte öznitelik düzenlemeleriyle birleştirebileceğinizi gösterir.
+
+## Yaygın Sorunlar ve Çözüm Önerileri
+| Belirti | Muhtemel Neden | Çözüm |
+|---------|----------------|------|
+| **Boş sonuç shapefile** | Koordinat sistemi için buffer mesafesi çok küçük | Buffer değerini artırın veya CRS birimlerini kontrol edin. |
+| **`ArgumentException` on `GetBuffer`** | Geometri tipi desteklenmiyor (ör. null geometri) | Buffer’lamadan önce her özelliğin geçerli bir geometrisi olduğundan emin olun. |
+| **Öznitelik “name” bulunamadı** | Kaynak dosyanızda farklı bir alan adı var | `"name"` ifadesini değiştirmek istediğiniz gerçek alan adıyla değiştirin. |
+
+## Sık Sorulan Sorular
+### Aspose.GIS hem basit hem de karmaşık coğrafi görevler için uygun mu?
+Evet, Aspose.GIS temel işlemlerden karmaşık uzamsal analizlere kadar geniş bir yelpazede coğrafi görevleri yerine getirecek şekilde tasarlanmıştır.
+
+### Aspose.GIS’i diğer .NET kütüphaneleriyle birlikte kullanabilir miyim?
+Kesinlikle! Aspose.GIS diğer .NET kütüphaneleriyle sorunsuz bir şekilde bütünleşir, esneklik ve uyumluluk sağlar.
+
+### Aspose.GIS için bir deneme sürümü mevcut mu?
+Evet, [ücretsiz deneme sürümünü](https://releases.aspose.com/) indirerek Aspose.GIS’in yeteneklerini keşfedebilirsiniz.
+
+### Aspose.GIS için destek nasıl alınır?
+Yardım ve topluluk desteği için [Aspose.GIS destek forumunu](https://forum.aspose.com/c/gis/33) ziyaret edin.
+
+### Aspose.GIS dokümantasyonuna nereden ulaşabilirim?
+Aspose.GIS dokümantasyonu [burada](https://reference.aspose.com/gis/net/) mevcuttur.
+
+**Ek Soru‑Cevap**
+
+**S:** Farklı birimlerde (ör. metre vs. derece) geometri buffer’layabilir miyim?  
+**C:** Evet—buffer mesafesi katmanın koordinat sistemi birimlerinde yorumlanır. Mesafenizi buna göre dönüştürün.
+
+**S:** Buffer’lama orijinal özelliğin özniteliklerini korur mu?  
+**C:** Örnekte şemayı kopyalayıp ardından değiştirilmiş öznitelik değerlerini açıkça ayarladığımız için, siz değiştirmezseniz tüm orijinal öznitelikler korunur.
+
+## Sonuç
+Artık **geometriyi nasıl buffer’layacağınızı** ve katman özniteliklerini Aspose.GIS for .NET ile nasıl değiştireceğinizi öğrendiniz. Bu desen, birden fazla buffer bölgesi oluşturma, uzamsal birleştirmeler yapma veya diğer GIS formatlarına dışa aktarma gibi daha karmaşık iş akışlarına genişletilebilir. Denemeye devam edin, kısa sürede güçlü coğrafi çözümler geliştireceksiniz.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+---
+
+**Son Güncelleme:** 2026-01-07  
+**Test Edilen Versiyon:** Aspose.GIS for .NET (en son sürüm)  
+**Yazar:** Aspose  
+
+---

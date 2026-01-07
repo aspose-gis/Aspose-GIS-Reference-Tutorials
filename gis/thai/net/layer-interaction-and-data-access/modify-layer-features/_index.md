@@ -1,27 +1,49 @@
 ---
-title: การเรียนรู้การปรับเปลี่ยนคุณสมบัติเลเยอร์
-linktitle: ปรับเปลี่ยนคุณสมบัติของเลเยอร์
+date: 2026-01-07
+description: เรียนรู้วิธีการบัฟเฟอร์เรขาคณิตและแก้ไขคุณลักษณะของเลเยอร์ในไฟล์ shapefile
+  ด้วย Aspose.GIS สำหรับ .NET – คู่มือขั้นตอนต่อขั้นตอนสำหรับการจัดการข้อมูลเชิงพื้นที่อย่างแม่นยำ.
+linktitle: Modify Layer Features
 second_title: Aspose.GIS .NET API
-description: สำรวจ Aspose.GIS สำหรับ .NET และฝึกฝนศิลปะในการปรับเปลี่ยนฟีเจอร์เลเยอร์ในเชปไฟล์ได้อย่างง่ายดาย เพิ่มประสิทธิภาพการใช้งานเชิงพื้นที่ของคุณด้วยความแม่นยำและง่ายดาย
-weight: 23
+title: วิธีทำบัฟเฟอร์เรขาคณิต – เชี่ยวชาญการแก้ไขคุณลักษณะของเลเยอร์
 url: /th/net/layer-interaction-and-data-access/modify-layer-features/
+weight: 23
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# การเรียนรู้การปรับเปลี่ยนคุณสมบัติเลเยอร์
+# วิธีทำ Buffer รูปทรง – การปรับแต่งคุณลักษณะของเลเยอร์
 
-## การแนะนำ
-ยินดีต้อนรับสู่คำแนะนำที่ครอบคลุมเกี่ยวกับการปรับเปลี่ยนคุณสมบัติเลเยอร์โดยใช้ Aspose.GIS สำหรับ .NET! หากคุณต้องการปรับปรุงแอปพลิเคชันเชิงพื้นที่และจัดการข้อมูลเชปไฟล์อย่างง่ายดาย แสดงว่าคุณมาถูกที่แล้ว ในบทช่วยสอนนี้ เราจะเจาะลึกกระบวนการแก้ไขฟีเจอร์เลเยอร์โดยใช้ไลบรารี Aspose.GIS อันทรงพลัง ซึ่งให้ขั้นตอนและข้อมูลเชิงลึกโดยละเอียดแก่คุณ
-## ข้อกำหนดเบื้องต้น
-ก่อนที่เราจะเจาะลึกบทช่วยสอน ตรวจสอบให้แน่ใจว่าคุณมีข้อกำหนดเบื้องต้นต่อไปนี้:
--  Aspose.GIS สำหรับ .NET Library: ดาวน์โหลดและติดตั้งไลบรารีจาก[หน้าดาวน์โหลด Aspose.GIS สำหรับ .NET](https://releases.aspose.com/gis/net/).
-- สภาพแวดล้อมการพัฒนา .NET: ตรวจสอบให้แน่ใจว่าคุณได้ตั้งค่าสภาพแวดล้อมการพัฒนา .NET ที่ใช้งานได้บนเครื่องของคุณ
-- เชปไฟล์ตัวอย่าง: เตรียมเชปไฟล์ตัวอย่างที่คุณจะใช้เพื่อวัตถุประสงค์ในการสาธิต
-## นำเข้าเนมสเปซ
-ในการเริ่มต้น ให้นำเข้าเนมสเปซที่จำเป็นลงในโปรเจ็กต์ .NET ของคุณ:
+## Introduction
+ยินดีต้อนรับสู่คู่มือฉบับสมบูรณ์เกี่ยวกับ **วิธีทำ Buffer รูปทรง** ขณะปรับเปลี่ยนคุณลักษณะของเลเยอร์โดยใช้ Aspose.GIS for .NET! หากคุณต้องการเสริมประสิทธิภาพแอปพลิเคชันภูมิสารสนเทศของคุณ สร้างโซนความปลอดภัย หรือเพียงแค่ปรับรูปทรงของฟีเจอร์ใน shapefile คุณมาถูกที่แล้ว ในไม่กี่นาทีต่อไป เราจะพาคุณผ่านตัวอย่างจริงที่แสดงอย่างชัดเจนว่าทำอย่างไรเพื่อทำ Buffer รูปทรงและอัปเดตข้อมูลแอตทริบโดยโปรแกรม
+
+## Quick Answers
+- **What does buffering a geometry do?** It creates a new shape that surrounds the original feature at a specified distance.  
+- **Which library handles buffering in this tutorial?** Aspose.GIS for .NET.  
+- **Do I need a license to run the sample?** A free trial works for testing; a commercial license is required for production.  
+- **What file format is used?** ESRI Shapefile (`.shp`).  
+- **Can I change the buffer distance?** Yes—simply modify the value passed to `GetBuffer()`.
+
+## What is Buffer Geometry?
+Buffering คือการดำเนินการเชิงพื้นที่ที่ขยาย (หรือหด) รูปทรงออกไปด้านนอก (หรือด้านใน) ด้วยระยะทางที่สม่ำเสมอ ทำให้ได้โพลิกอนใหม่ที่แสดงพื้นที่ภายในระยะนั้นจากฟีเจอร์เดิม มักใช้สำหรับสร้างโซนผลกระทบ การวิเคราะห์ระยะใกล้เคียง และการแสดงผลบนแผนที่
+
+## Why Use Buffer Geometry in Shapefiles?
+- **Safety zones:** กำหนดพื้นที่ว่างระหว่างถนน ท่อส่ง หรือสถานที่อันตราย  
+- **Proximity queries:** ค้นหาฟีเจอร์ที่อยู่ในระยะที่กำหนดจากจุดหรือเส้นได้อย่างรวดเร็ว  
+- **Visualization:** เน้นพื้นที่อิทธิพลบนแนที่โดยไม่ต้องแก้ไขข้อมูลต้นฉบับ  
+- **Data preparation:** สร้างเลเยอร์ใหม่สำหรับการวิเคราะห์ GIS ต่อไป
+
+## Prerequisites
+ก่อนที่เราจะเริ่ม โปรดเตรียมสิ่งต่อไปนี้ให้พร้อม:
+
+- Aspose.GIS for .NET Library: ดาวน์โหลดและติดตั้งไลบรารีจาก [Aspose.GIS for .NET download page](https://releases.aspose.com/gis/net/).  
+- .NET Development Environment: Visual Studio, VS Code หรือ IDE ใด ๆ ที่รองรับ .NET  
+- Sample Shapefile: ไฟล์ shapefile (`.shp`) ที่มีอย่างน้อยหนึ่งฟีเจอร์พร้อมแอตทริบิวต์ **name** (ใช้ในตัวอย่าง)
+
+## Import Namespaces
+เพิ่ม `using` directives ที่จำเป็นในโปรเจกต์ C# ของคุณเพื่อให้สามารถทำงานกับเวกเตอร์ รูทรง และการอ่าน‑เขียนไฟล์ได้
+
 ```csharp
 using Aspose.Gis;
 using Aspose.Gis.Formats.Shapefile;
@@ -29,58 +51,98 @@ using Aspose.GIS.Examples.CSharp;
 using System.IO;
 using Aspose.Gis.Geometries;
 ```
-ตอนนี้ เรามาแบ่งตัวอย่างออกเป็นหลายขั้นตอนกัน
-## ขั้นตอนที่ 1: ตั้งค่าสภาพแวดล้อม
-เริ่มต้นด้วยการกำหนดเส้นทางไปยังไดเร็กทอรีเอกสารของคุณ:
+
+## Step‑by‑Step Guide
+
+### Step 1: Set Up the Working Directory
+กำหนดโฟลเดอร์ที่เก็บ shapefile ต้นฉบับและผลลัพธ์
+
 ```csharp
 string dataDir = "Your Document Directory";
 ```
-## ขั้นตอนที่ 2: กำหนดแหล่งที่มาและเส้นทางผลลัพธ์
-ระบุเส้นทางสำหรับแหล่งที่มาและไฟล์รูปร่างผลลัพธ์:
+
+### Step 2: Define Source and Result Paths
+ระบุพาธของ shapefile ต้นฉบับและพาธที่ไฟล์ที่แก้ไขแล้วจะถูกบันทึก
+
 ```csharp
 string sourcePath = Path.Combine(dataDir, "InputShapeFile.shp");
 string resultPath = Path.Combine(dataDir, "modified_out.shp");
 ```
-## ขั้นตอนที่ 3: โอเพ่นซอร์ส Shapefile และสร้าง Shapefile ผลลัพธ์
-เปิดเชปไฟล์ต้นฉบับและสร้างเชปไฟล์ผลลัพธ์:
+
+### Step 3: Open the Source Shapefile, Buffer Geometry, and Write Results
+ส่วนสำคัญของ **วิธีทำ Buffer รูปทรง** อยู่ในบล็อกนี้ เราจะเปิดไฟล์ต้นฉบับ คัดลอกสคีม่า ทำการวนลูปแต่ละฟีเจอร์ สร้างบัฟเฟอร์ 2.0 หน่วย ปรับแอตทริบิวต์ แล้วเขียนฟีเจอร์ที่แก้ไขแล้วลงใน shapefile ใหม่
+
 ```csharp
 using (var source = VectorLayer.Open(sourcePath, Drivers.Shapefile))
 using (var result = VectorLayer.Create(resultPath, Drivers.Shapefile, source.SpatialReferenceSystem))
 {
-    // คัดลอกแอตทริบิวต์จากแหล่งที่มาไปยังผลลัพธ์
+    // Copy attributes from the source to the result
     result.CopyAttributes(source);
-    // วนซ้ำฟีเจอร์ต่างๆ ในเชปไฟล์ต้นฉบับ
+    // Iterate through features in the source shapefile
     foreach (var feature in source)
     {
-        // ปรับเปลี่ยนรูปทรงโดยการสร้างบัฟเฟอร์
+        // Modify the geometry by creating a buffer
         var modifiedGeometry = feature.Geometry.GetBuffer(2.0);
         feature.Geometry = modifiedGeometry;
-        // ปรับเปลี่ยนคุณลักษณะคุณลักษณะ (เช่น การแปลงคุณลักษณะ 'ชื่อ' เป็นตัวพิมพ์ใหญ่)
+        // Modify a feature attribute (e.g., converting 'name' attribute to uppercase)
         var attributeValue = feature.GetValue<string>("name");
         var modifiedAttributeValue = attributeValue.ToUpper();
         feature.SetValue("name", modifiedAttributeValue);
-        // เพิ่มคุณลักษณะที่แก้ไขแล้วลงในเชปไฟล์ผลลัพธ์
+        // Add the modified feature to the result shapefile
         result.Add(feature);
     }
 }
 ```
-ข้อมูลโค้ดนี้สาธิตขั้นตอนหลักที่เกี่ยวข้องกับการแก้ไขฟีเจอร์เลเยอร์โดยใช้ Aspose.GIS สำหรับ .NET คุณสามารถปรับเปลี่ยนและรวมขั้นตอนเหล่านี้เข้ากับโปรเจ็กต์ของคุณเองได้อย่างอิสระเพื่อการจัดการข้อมูลภูมิสารสนเทศที่มีประสิทธิภาพ
-## บทสรุป
-ยินดีด้วย! คุณได้เรียนรู้วิธีแก้ไขคุณสมบัติเลเยอร์โดยใช้ Aspose.GIS สำหรับ .NET เรียบร้อยแล้ว บทช่วยสอนนี้เป็นรากฐานที่มั่นคงสำหรับการผสมผสานการจัดการข้อมูลเชิงพื้นที่เข้ากับแอปพลิเคชันของคุณ ทำให้คุณสามารถสร้างโซลูชันการทำแผนที่แบบไดนามิกและเชิงโต้ตอบได้มากขึ้น
-## คำถามที่พบบ่อย
-### Aspose.GIS เหมาะสำหรับงานภูมิสารสนเทศทั้งแบบง่ายและซับซ้อนหรือไม่
-ใช่ Aspose.GIS ได้รับการออกแบบมาเพื่อจัดการกับงานเชิงพื้นที่ที่หลากหลาย ตั้งแต่การปฏิบัติงานขั้นพื้นฐานไปจนถึงการวิเคราะห์เชิงพื้นที่ที่ซับซ้อน
-### ฉันสามารถใช้ Aspose.GIS กับไลบรารี .NET อื่นๆ ได้หรือไม่
-อย่างแน่นอน! Aspose.GIS ทำงานร่วมกับไลบรารี .NET อื่นๆ ได้อย่างราบรื่น โดยให้ความยืดหยุ่นและความเข้ากันได้
-### มี Aspose.GIS รุ่นทดลองใช้งานหรือไม่
- ใช่ คุณสามารถสำรวจความสามารถของ Aspose.GIS ได้โดยการดาวน์โหลด[รุ่นทดลองใช้ฟรี](https://releases.aspose.com/).
-### ฉันจะรับการสนับสนุนสำหรับ Aspose.GIS ได้อย่างไร
- เยี่ยมชม[ฟอรัมสนับสนุน Aspose.GIS](https://forum.aspose.com/c/gis/33)เพื่อช่วยเหลือและสนับสนุนชุมชน
-### ฉันจะหาเอกสารสำหรับ Aspose.GIS ได้ที่ไหน
- มีเอกสารประกอบของ Aspose.GIS[ที่นี่](https://reference.aspose.com/gis/net/).
+
+**What’s happening here?**  
+- `GetBuffer(2.0)` สร้างโพลิกอนที่ล้อมรอบรูปทรงเดิมด้วยระยะ 2 หน่วย (หน่วยขึ้นอยู่กับระบบพิกัดของเลเยอร์)  
+- การจัดการแอตทริบิวต์แสดงให้เห็นว่าคุณสามารถรวมการเปลี่ยนแปลงรูปทรงกับการแก้ไขแอตทริบิวต์ในขั้นตอนเดียวได้
+
+## Common Issues & Troubleshooting
+| Symptom | Likely Cause | Fix |
+|---------|--------------|-----|
+| **Empty result shapefile** | Buffer distance too small for the coordinate system | Increase the buffer value or verify the CRS units. |
+| **`ArgumentException` on `GetBuffer`** | Geometry type not supported (e.g., null geometry) | Ensure each feature has a valid geometry before buffering. |
+| **Attribute “name” not found** | Different field name in your source file | Replace `"name"` with the actual field name you want to modify. |
+
+## Frequently Asked Questions
+### Is Aspose.GIS suitable for both simple and complex geospatial tasks?
+Yes, Aspose.GIS is designed to handle a wide range of geospatial tasks, from basic operations to complex spatial analysis.
+
+### Can I use Aspose.GIS with other .NET libraries?
+Absolutely! Aspose.GIS seamlessly integrates with other .NET libraries, providing flexibility and compatibility.
+
+### Is there a trial version available for Aspose.GIS?
+Yes, you can explore the capabilities of Aspose.GIS by downloading the [free trial version](https://releases.aspose.com/).
+
+### How can I get support for Aspose.GIS?
+Visit the [Aspose.GIS support forum](https://forum.aspose.com/c/gis/33) for assistance and community support.
+
+### Where can I find the documentation for Aspose.GIS?
+The Aspose.GIS documentation is available [here](https://reference.aspose.com/gis/net/).
+
+**Additional Q&A**
+
+**Q:** Can I buffer geometries in different units (e.g., meters vs. degrees)?  
+**A:** Yes—buffer distance is interpreted in the layer’s coordinate system units. Convert your distance accordingly.
+
+**Q:** Does buffering preserve the original feature’s attributes?  
+**A:** In the example we copy the schema and then explicitly set the modified attribute values, so all original attributes remain unless you change them.
+
+## Conclusion
+You’ve now mastered **how to buffer geometry** and modify layer attributes using Aspose.GIS for .NET. This pattern can be extended to more complex workflows—such as generating multiple buffer zones, performing spatial joins, or exporting to other GIS formats. Keep experimenting, and you’ll be building powerful geospatial solutions in no time.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+---
+
+**Last Updated:** 2026-01-07  
+**Tested With:** Aspose.GIS for .NET (latest release)  
+**Author:** Aspose  
+
+---
