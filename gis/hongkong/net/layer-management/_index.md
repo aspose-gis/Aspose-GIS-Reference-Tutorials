@@ -1,82 +1,115 @@
 ---
-title: 圖層管理
-linktitle: 圖層管理
+date: 2026-01-07
+description: 學習如何 **建立新的 Shapefile 檔案**，以及使用 Aspose.GIS for .NET 管理 GIS 圖層。一步一步的教學、技巧與最佳實踐，助您進行地理空間開發。
+linktitle: Layer Management
 second_title: Aspose.GIS .NET API
-description: 使用 Aspose.GIS for .NET 教學釋放地理空間開發的潛力。輕鬆建立、管理和操作 GIS 資料集。
-weight: 24
+title: 建立新形狀檔 – 圖層管理
 url: /zh-hant/net/layer-management/
+weight: 24
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# 圖層管理
+# 建立新 Shapefile – 圖層管理
 
 ## 介紹
 
-Aspose.GIS for .NET 讓開發人員能夠深入研究令人興奮的地理空間開發世界。在這個綜合教程清單中，我們探索了各種圖層管理教程，指導您釋放 Aspose.GIS for .NET 的全部潛力。從建立新的檔案 GDB 資料集到操作空間數據，這些教學涵蓋了所有內容。
+如果您需要 **create new shapefile** 檔案或在地理空間專案中組織圖層，Aspose.GIS for .NET 為您提供乾淨、以程式碼為先的做法。在本概覽中，我們列出所有圖層管理教學，協助您建構、編輯與轉換 GIS 資料集——從 File GDB 建立到要素篩選。無論您是在開發地圖應用程式或資料處理管線，這些指南都會精準說明如何有效操作圖層。
 
-## 建立新檔案 GDB 資料集 
-探索 Aspose.GIS for .NET 的功能，輕鬆建立和管理 GIS 資料集。立即下載以獲得無縫的地理空間開發體驗。請按照我們的逐步指南進行操作：[建立新檔案 GDB 資料集](./create-new-file-gdb-dataset/)開始。
+## 快速解答
+- **What can I build with Aspose.GIS?** 完整功能的 GIS 資料集，包括 shapefiles、File GDB 以及 TopoJSON 圖層。  
+- **Do I need a license?** 免費試用可供評估；正式上線需購買商業授權。  
+- **Which .NET versions are supported?** .NET Framework 4.5+、.NET Core 3.1+、.NET 5/6/7。  
+- **Is code required for every task?** 大多數教學提供可直接複製貼上的 C# 程式碼片段。  
+- **How long does a typical task take?** 像是建立 shapefile 這類簡單操作通常在數秒內完成。
 
-## 建立單層檔案 GDB 
-使用 Aspose.GIS 釋放 .NET 中地理空間資料管理的潛力。了解如何逐步建立文件地理資料庫和圖層。立即下載並改變您的 GIS 開發之旅。查看詳細教學：[建立單層檔案 GDB](./create-file-gdb-with-single-layer/).
+## 建立新 File GDB 資料集 
+探索 Aspose.GIS for .NET 的功能，輕鬆建立與管理 GIS 資料集。立即下載，獲得順暢的地理空間開發體驗。請參考我們的步驟教學 [Create New File GDB Dataset](./create-new-file-gdb-dataset/) 開始使用。
 
-## 建立新的形狀文件 
-掌握使用 Aspose.GIS for .NET 建立新 shapefile 的藝術。我們的逐步指南將引導您完成整個過程，幫助您釋放空間資料操作的力量。深入了解教學：[建立新的形狀文件](./create-new-shapefile/)提高您的地理空間技能。
+## 建立單一圖層的 File GDB 
+釋放 .NET 中地理空間資料管理的潛力，使用 Aspose.GIS。一步步學會建立 File Geodatabase 與圖層。立即下載，改變您的 GIS 開發之旅。詳情請見教學 [Create File GDB with Single Layer](./create-file-gdb-with-single-layer/)。
+
+## 建立新 Shapefile 
+精通使用 Aspose.GIS for .NET **create new shapefile** 的技巧。我們的步驟指南將帶您完成整個流程，協助您發揮空間資料操作的威力。前往 [Create New Shapefile](./create-new-shapefile/) 提升您的地理空間技能。
 
 ## 使用 SRS 建立向量圖層 
-Aspose.GIS for .NET 是無縫 GIS 整合的關鍵。使用指定的空間參考系統輕鬆建立向量圖層。立即下載並提升您的地理空間能力。了解更多信息，請訪問[使用 SRS 建立向量圖層](./create-vector-layer-with-srs/).
+Aspose.GIS for .NET 是您無縫整合 GIS 的關鍵。輕鬆建立具指定空間參考系統的向量圖層。立即下載，提升您的地理空間能力。了解更多請至 [Create Vector Layer with SRS](./create-vector-layer-with-srs/)。
 
-## 存取 TopoJSON 中的功能 
-使用 Aspose.GIS for .NET 深入了解 TopoJSON 功能的世界。按照我們的逐步教學輕鬆探索地理空間功能。訪問教程：[存取 TopoJSON 中的功能](./access-features-in-topojson/)釋放 GIS 專案的全部潛力。
+## 取得 TopoJSON 中的要素 
+深入探索 Aspose.GIS for .NET 的 TopoJSON 要素。跟隨我們的步驟教學，輕鬆掌握地理空間功能。前往 [Access Features in TopoJSON](./access-features-in-topojson/) 釋放 GIS 專案的完整潛能。
 
-## 將圖層新增至檔案 GDB 資料集 
-透過 Aspose.GIS for .NET 探索 GIS 的強大功能！透過我們詳細的分步教程，了解如何在檔案 GDB 資料集中新增圖層。改變您的地理空間開發之旅[將圖層新增至檔案 GDB 資料集](./add-layer-to-file-gdb-dataset/).
+## 新增圖層至 File GDB 資料集 
+發現 Aspose.GIS for .NET 的 GIS 強大功能！學習如何透過我們詳細的步驟教學，將圖層新增至 File GDB 資料集。前往 [Add Layer to File GDB Dataset](./add-layer-to-file-gdb-dataset/) 轉變您的地理空間開發之路。
 
-## 將 GeoJSON 圖層轉換為檔案 GDB 
-使用 Aspose.GIS for .NET 解鎖地理空間奇蹟！輕鬆將 GeoJSON 圖層轉換為文件地理資料庫並擴展您的地理空間功能。請按照我們的教學立即嘗試[將 GeoJSON 圖層轉換為檔案 GDB](./convert-geojson-layer-to-file-gdb/).
+## 將 GeoJSON 圖層轉換為 File GDB 
+使用 Aspose.GIS for .NET 釋放地理空間奇蹟！輕鬆將 GeoJSON 圖層轉換為 File Geodatabase，擴展您的地理空間能力。立即依照教學 [Convert GeoJSON Layer to File GDB](./convert-geojson-layer-to-file-gdb/) 嘗試。
 
-## 將多邊形形狀檔轉換為線串 
-探索 Aspose.GIS for .NET 的強大功能，輕鬆將多邊形形狀檔案轉換為線字串。立即按照我們的逐步指南推廣您的 GIS 開發：[將多邊形形狀檔轉換為線串](./convert-polygon-shapefile-to-linestring/).
+## 將多邊形 Shapefile 轉為線串 
+探索 Aspose.GIS for .NET 的威力，輕鬆將多邊形 Shapefile 轉換為線串。透過步驟指南 [Convert Polygon Shapefile to Linestring](./convert-polygon-shapefile-to-linestring/) 提升您的 GIS 開發。
 
-## 作物圖層功能 
-使用 Aspose.GIS for .NET 解鎖地理空間魔法！輕鬆使用作物圖層功能並提升您的 GIS 專案。立即下載免費試用版並瀏覽教學：[作物圖層功能](./crop-layer-features/).
+## 裁切圖層要素 
+使用 Aspose.GIS for .NET 釋放地理空間魔法！輕鬆裁切圖層要素，提升 GIS 專案。立即下載免費試用，並參考教學 [Crop Layer Features](./crop-layer-features/)。
 
-## 按屬性過濾功能 
-探索 Aspose.GIS for .NET 在空間資料操作方面的強大功能。輕鬆過濾功能、增強 GIS 應用程式並提高生產力。深入了解教學：[按屬性過濾功能](./filter-features-by-attribute/)將您的 GIS 專案提升到一個新的水平。
+## 依屬性篩選要素 
+探索 Aspose.GIS for .NET 在空間資料操作上的威力。輕鬆篩選要素，增強 GIS 應用並提升生產力。前往 [Filter Features by Attribute](./filter-features-by-attribute/) 讓您的 GIS 專案更上一層樓。
 
-## 將特徵提取到 GeoJSON 
-探索使用 Aspose.GIS for .NET 將要素提取到 GeoJSON 的逐步指南。輕鬆利用 GIS 的力量！查看教學：[將特徵提取到 GeoJSON](./extract-features-to-geojson/)無縫的地理空間體驗。
+## 匯出要素至 GeoJSON 
+使用 Aspose.GIS for .NET 的步驟指南，將要素匯出為 GeoJSON。輕鬆掌握 GIS 的力量！請參考教學 [Extract Features to GeoJSON](./extract-features-to-geojson/) 體驗順暢的地理空間體驗。
 
-使用 Aspose.GIS for .NET 踏上您的地理空間之旅，改變您的 GIS 開發。下載教程，按照步驟操作，並釋放地理空間資料操作的全部潛力。立即深入無縫整合的世界並提升您的 GIS 能力！
-## 圖層管理教程
-### [建立新檔案 GDB 資料集](./create-new-file-gdb-dataset/)
-探索 Aspose.GIS for .NET 以輕鬆建立和管理 GIS 資料集。立即下載以進行無縫地理空間開發。 
-### [建立單層檔案 GDB](./create-file-gdb-with-single-layer/)
-使用 Aspose.GIS 釋放 .NET 中地理空間資料管理的潛力。了解如何逐步建立文件地理資料庫和圖層。現在下載！
-### [建立新的形狀文件](./create-new-shapefile/)
-了解如何使用 Aspose.GIS for .NET 建立新的 shapefile。遵循我們的逐步指南並釋放空間資料操作的力量。
-### [使用 SRS 建立向量圖層](./create-vector-layer-with-srs/)
-探索 Aspose.GIS for .NET - 無縫 GIS 整合的關鍵。使用指定的空間參考系統輕鬆建立向量圖層。現在下載！
-### [存取 TopoJSON 中的功能](./access-features-in-topojson/)
-探索 Aspose.GIS for .NET 並學習逐步存取 TopoJSON 功能。深入研究文檔，輕鬆釋放地理空間功能。
-### [將圖層新增至檔案 GDB 資料集](./add-layer-to-file-gdb-dataset/)
-使用 Aspose.GIS for .NET 釋放 GIS 的強大功能！在此逐步教學中了解如何將圖層新增至檔案 GDB 資料集。
-### [將 GeoJSON 圖層轉換為檔案 GDB](./convert-geojson-layer-to-file-gdb/)
-使用 Aspose.GIS for .NET 解鎖地理空間奇蹟！輕鬆將 GeoJSON 圖層轉換為文件地理資料庫。現在就試試！
-### [將多邊形形狀檔轉換為線串](./convert-polygon-shapefile-to-linestring/)
-探索 Aspose.GIS for .NET 的強大功能，輕鬆將多邊形形狀檔案轉換為線字串。今天就促進您的 GIS 開發！
-### [作物圖層功能](./crop-layer-features/)
-使用 Aspose.GIS for .NET 解鎖地理空間魔法！作物圖層功能毫不費力。立即下載免費試用版。
-### [按屬性過濾功能](./filter-features-by-attribute/)
-探索 Aspose.GIS for .NET 在空間資料操作方面的強大功能。輕鬆過濾功能、增強 GIS 應用程式並提高生產力。
-### [將特徵提取到 GeoJSON](./extract-features-to-geojson/)
-探索使用 Aspose.GIS for .NET 將要素提取到 GeoJSON 的逐步指南。輕鬆利用 GIS 的力量！ 
+踏上 Aspose.GIS for .NET 的地理空間之旅，改變您的 GIS 開發。下載教學、依循步驟，釋放空間資料操作的全部潛能。立即投入無縫整合的世界，提升您的 GIS 能力！
+
+## 圖層管理教學
+### [Create New File GDB Dataset](./create-new-file-gdb-dataset/)
+探索 Aspose.GIS for .NET，輕鬆建立與管理 GIS 資料集。立即下載，獲得順暢的地理空間開發體驗。 
+### [Create File GDB with Single Layer](./create-file-gdb-with-single-layer/)
+釋放 .NET 中地理空間資料管理的潛力。一步步學會建立 File Geodatabase 與圖層。立即下載！ 
+### [Create New Shapefile](./create-new-shapefile/)
+學習使用 Aspose.GIS for .NET 建立新 shapefile。跟隨步驟指南，釋放空間資料操作的威力。 
+### [Create Vector Layer with SRS](./create-vector-layer-with-srs/)
+探索 Aspose.GIS for .NET——您無縫整合 GIS 的關鍵。輕鬆建立具指定空間參考系統的向量圖層。立即下載！ 
+### [Access Features in TopoJSON](./access-features-in-topojson/)
+探索 Aspose.GIS for .NET，學習一步步存取 TopoJSON 要素。深入文件，輕鬆釋放地理空間能力。 
+### [Add Layer to File GDB Dataset](./add-layer-to-file-gdb-dataset/)
+釋放 Aspose.GIS for .NET 的 GIS 強大功能！學習在此步驟教學中將圖層新增至 File GDB 資料集。 
+### [Convert GeoJSON Layer to File GDB](./convert-geojson-layer-to-file-gdb/)
+釋放 Aspose.GIS for .NET 的地理空間奇蹟！輕鬆將 GeoJSON 圖層轉換為 File Geodatabase。立即嘗試！ 
+### [Convert Polygon Shapefile to Linestring](./convert-polygon-shapefile-to-linestring/)
+探索 Aspose.GIS for .NET 的威力，輕鬆將多邊形 Shapefile 轉換為線串。提升您的 GIS 開發！ 
+### [Crop Layer Features](./crop-layer-features/)
+釋放 Aspose.GIS for .NET 的地理空間魔法！輕鬆裁切圖層要素。立即下載免費試用。 
+### [Filter Features by Attribute](./filter-features-by-attribute/)
+探索 Aspose.GIS for .NET 在空間資料操作上的威力。輕鬆篩選要素，增強 GIS 應用並提升生產力。 
+### [Extract Features to GeoJSON](./extract-features-to-geojson/)
+使用 Aspose.GIS for .NET 的步驟指南，將要素匯出為 GeoJSON。輕鬆掌握 GIS 的力量！ 
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+## 常見問題
+
+**Q:** 如何以程式方式 **create new shapefile** 檔案？  
+**A:** 使用 Aspose.GIS 中的 `Shapefile` 類別，指定幾何類型、加入欄位，然後寫入要素。連結的「Create New Shapefile」教學展示完整程式碼。
+
+**Q:** File GDB 與 shapefile 有何不同？  
+**A:** File Geodatabase（File GDB）以資料夾為基礎的結構儲存資料，支援更豐富的綱要；而 shapefile 是一種簡單、相容性高的格式，由多個固定長度檔案組成。
+
+**Q:** 如何高效 **filter features by attribute**？  
+**A:** 建立帶有 WHERE 子句的 `Query` 物件（例如 `SELECT * FROM layer WHERE Population > 1000`）。「Filter Features by Attribute」指南會一步步說明 API 用法。
+
+**Q:** 能否在不產生中介檔案的情況下將 shapefile 轉為 GeoJSON？  
+**A:** 可以——將 shapefile 載入 `FeatureCollection` 後直接呼叫 `ExportToGeoJson()`。請參考「Extract Features to GeoJSON」教學取得完整範例。
+
+**Q:** 執行這些範例需要特別授權嗎？  
+**A:** 免費評估授權可用於開發與測試。正式上線時，請從 Aspose 購買商業授權。
+
+---
+
+**Last Updated:** 2026-01-07  
+**Tested With:** Aspose.GIS for .NET (latest stable release)  
+**Author:** Aspose

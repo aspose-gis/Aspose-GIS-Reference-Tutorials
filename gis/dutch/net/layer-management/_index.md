@@ -1,82 +1,117 @@
 ---
-title: Laagbeheer
-linktitle: Laagbeheer
-second_title: Aspose.GIS .NET-API
-description: Ontgrendel het potentieel van georuimtelijke ontwikkeling met Aspose.GIS voor .NET-tutorials. Creëer, beheer en manipuleer moeiteloos GIS-datasets.
-weight: 24
+date: 2026-01-07
+description: Leer hoe u **nieuwe shapefile**‑bestanden maakt en GIS‑lagen beheert
+  met Aspose.GIS voor .NET. Stapsgewijze tutorials, tips en best practices voor geospatiale
+  ontwikkeling.
+linktitle: Layer Management
+second_title: Aspose.GIS .NET API
+title: Nieuwe shapefile maken – Laagbeheer
 url: /nl/net/layer-management/
+weight: 24
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Laagbeheer
+# Nieuwe Shapefile maken – Laagbeheer
 
-## Invoering
+## Introductie
 
-Aspose.GIS voor .NET stelt ontwikkelaars in staat zich te verdiepen in de opwindende wereld van geospatiale ontwikkeling. In deze uitgebreide tutoriallijst onderzoeken we verschillende Layer Management Tutorials die u begeleiden bij het ontsluiten van het volledige potentieel van Aspose.GIS voor .NET. Van het maken van nieuwe File GDB-datasets tot het manipuleren van ruimtelijke gegevens, deze tutorials behandelen het allemaal.
+Als je **nieuwe shapefile**‑bestanden moet maken of lagen in een geospatiaal project moet organiseren, biedt Aspose.GIS voor .NET een schone, code‑first manier om dit te doen. In dit overzicht sommen we elke Laagbeheer‑tutorial op die je helpt bij het bouwen, bewerken en transformeren van GIS‑datasets—van File GDB‑creatie tot feature‑filtering. Of je nu een kaartapplicatie of een gegevensverwerkings‑pipeline bouwt, deze gidsen laten je precies zien hoe je efficiënt met lagen werkt.
 
-## Maak een nieuw bestand GDB-gegevensset 
- Ontdek de mogelijkheden van Aspose.GIS voor .NET om moeiteloos GIS-datasets te creëren en te beheren. Download nu voor een naadloze geospatiale ontwikkelingservaring. Volg onze stapsgewijze handleiding op[Maak een nieuw bestand GDB-gegevensset](./create-new-file-gdb-dataset/) starten.
+## Quick Answers
+- **Wat kan ik bouwen met Aspose.GIS?** Volledig uitgeruste GIS‑datasets, inclusief shapefiles, File GDB’s en TopoJSON‑lagen.  
+- **Heb ik een licentie nodig?** Een gratis proefversie werkt voor evaluatie; een commerciële licentie is vereist voor productie.  
+- **Welke .NET‑versies worden ondersteund?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.  
+- **Is code vereist voor elke taak?** De meeste tutorials bieden kant‑klaar C#‑fragmenten die je kunt kopiëren‑en‑plakken.  
+- **Hoe lang duurt een typische taak?** Simpele bewerkingen zoals het maken van een shapefile duren meestal enkele seconden.
 
-## Maak een bestands-GDB met één laag 
- Ontgrendel het potentieel van georuimtelijk gegevensbeheer in .NET met Aspose.GIS. Leer stap voor stap hoe u bestandsgeodatabases en lagen kunt maken. Download nu en transformeer uw GIS-ontwikkelingstraject. Bekijk de gedetailleerde tutorial op[Maak een bestands-GDB met één laag](./create-file-gdb-with-single-layer/).
+## Nieuwe File GDB‑dataset maken 
+Ontdek de mogelijkheden van Aspose.GIS voor .NET om moeiteloos GIS‑datasets te maken en te beheren. Download nu voor een naadloze geospatiale ontwikkelervaring. Volg onze stap‑voor‑stap‑gids op [Nieuwe File GDB‑dataset maken](./create-new-file-gdb-dataset/) om te beginnen.
 
-## Maak een nieuw vormbestand 
- Beheers de kunst van het maken van een nieuw shapefile met Aspose.GIS voor .NET. Onze stapsgewijze handleiding leidt u door het proces en helpt u de kracht van manipulatie van ruimtelijke gegevens te ontketenen. Duik in de tutorial op[Maak een nieuw vormbestand](./create-new-shapefile/) om uw geospatiale vaardigheden te verbeteren.
+## File GDB met één laag maken 
+Ontgrendel het potentieel van geospatiale datamanagement in .NET met Aspose.GIS. Leer hoe je File Geodatabases en lagen stap‑voor‑stap maakt. Download nu en transformeer je GIS‑ontwikkeltraject. Bekijk de gedetailleerde tutorial op [File GDB met één laag maken](./create-file-gdb-with-single-layer/).
 
-## Maak een vectorlaag met SRS 
-Aspose.GIS voor .NET is uw sleutel tot naadloze GIS-integratie. Creëer moeiteloos vectorlagen met gespecificeerde ruimtelijke referentiesystemen. Download nu en vergroot uw geospatiale mogelijkheden. Meer informatie op[Maak een vectorlaag met SRS](./create-vector-layer-with-srs/).
+## Nieuwe Shapefile maken 
+Beheers de kunst van het maken van een **nieuwe shapefile** met Aspose.GIS voor .NET. Onze stap‑voor‑stap‑gids leidt je door het proces en helpt je de kracht van ruimtelijke datamanipulatie te benutten. Duik in de tutorial op [Nieuwe Shapefile maken](./create-new-shapefile/) om je geospatiale vaardigheden te verbeteren.
 
-## Toegang tot functies in TopoJSON 
- Duik in de wereld van TopoJSON-functies met Aspose.GIS voor .NET. Volg onze stapsgewijze zelfstudie en verken moeiteloos de geospatiale mogelijkheden. Ga naar de tutorial op[Toegang tot functies in TopoJSON](./access-features-in-topojson/) om het volledige potentieel van uw GIS-projecten te benutten.
+## Vectorlaag maken met SRS 
+Aspose.GIS voor .NET is jouw sleutel tot naadloze GIS‑integratie. Maak moeiteloos vectorlagen met opgegeven ruimtelijke referentiesystemen. Download nu en til je geospatiale mogelijkheden naar een hoger niveau. Lees meer op [Vectorlaag maken met SRS](./create-vector-layer-with-srs/).
 
-## Laag toevoegen aan bestand GDB-gegevensset 
- Ontdek de kracht van GIS met Aspose.GIS voor .NET! Leer hoe u lagen kunt toevoegen aan File GDB-datasets via onze gedetailleerde, stapsgewijze zelfstudie. Transformeer uw geospatiale ontwikkelingstraject op[Laag toevoegen aan bestand GDB-gegevensset](./add-layer-to-file-gdb-dataset/).
+## Toegang tot features in TopoJSON 
+Duik in de wereld van TopoJSON‑features met Aspose.GIS voor .NET. Volg onze stap‑voor‑stap‑tutorial en verken moeiteloos geospatiale mogelijkheden. Toegang tot de tutorial via [Toegang tot features in TopoJSON](./access-features-in-topojson/) om het volledige potentieel van je GIS‑projecten te benutten.
 
-## Converteer GeoJSON-laag naar GDB-bestand 
- Ontgrendel georuimtelijke wonderen met Aspose.GIS voor .NET! Converteer GeoJSON-lagen moeiteloos naar bestandsgeodatabases en breid uw georuimtelijke mogelijkheden uit. Probeer het nu door onze tutorial te volgen op[Converteer GeoJSON-laag naar GDB-bestand](./convert-geojson-layer-to-file-gdb/).
+## Laag toevoegen aan File GDB‑dataset 
+Ontdek de kracht van GIS met Aspose.GIS voor .NET! Leer hoe je lagen toevoegt aan File GDB‑datasets via onze gedetailleerde stap‑voor‑stap‑tutorial. Transformeer je geospatiale ontwikkeltraject op [Laag toevoegen aan File GDB‑dataset](./add-layer-to-file-gdb-dataset/).
 
-## Converteer polygoon-vormbestand naar lijntekenreeks 
-Ontdek de kracht van Aspose.GIS voor .NET en converteer Polygon Shape-bestanden moeiteloos naar Linestrings. Geef uw GIS-ontwikkeling vandaag nog een boost door onze stapsgewijze handleiding te volgen op[Converteer polygoon-vormbestand naar lijntekenreeks](./convert-polygon-shapefile-to-linestring/).
+## GeoJSON‑laag naar File GDB converteren 
+Ontgrendel geospatiale wonderen met Aspose.GIS voor .NET! Converteer moeiteloos GeoJSON‑lagen naar File Geodatabases en breid je geospatiale mogelijkheden uit. Probeer het nu door onze tutorial te volgen op [GeoJSON‑laag naar File GDB converteren](./convert-geojson-layer-to-file-gdb/).
 
-## Functies voor bijsnijdlagen 
- Ontgrendel georuimtelijke magie met Aspose.GIS voor .NET! Bijsnijdlagen kunnen moeiteloos worden gebruikt en uw GIS-projecten naar een hoger niveau tillen. Download nu uw gratis proefperiode en bekijk de tutorial op[Functies voor bijsnijdlagen](./crop-layer-features/).
+## Polygon‑shapefile naar Linestring converteren 
+Ontdek de kracht van Aspose.GIS voor .NET en converteer moeiteloos Polygon‑shapefiles naar Linestrings. Verhoog je GIS‑ontwikkeling vandaag door onze stap‑voor‑stap‑gids te volgen op [Polygon‑shapefile naar Linestring converteren](./convert-polygon-shapefile-to-linestring/).
 
-## Filter functies op kenmerk 
- Ontdek de kracht van Aspose.GIS voor .NET bij de manipulatie van ruimtelijke gegevens. Filter functies moeiteloos, verbeter GIS-applicaties en verhoog de productiviteit. Duik in de tutorial op[Filter functies op kenmerk](./filter-features-by-attribute/) om uw GIS-projecten naar een hoger niveau te tillen.
+## Laagfeatures bijsnijden 
+Ontgrendel geospatiale magie met Aspose.GIS voor .NET! Bijsnijd laagfeatures moeiteloos en til je GIS‑projecten naar een hoger niveau. Download nu je gratis proefversie en verken de tutorial op [Laagfeatures bijsnijden](./crop-layer-features/).
 
-## Extraheer functies naar GeoJSON 
- Verken de stapsgewijze handleiding over het gebruik van Aspose.GIS voor .NET om functies naar GeoJSON te extraheren. Benut de kracht van GIS met gemak! Bekijk de tutorial op[Extraheer functies naar GeoJSON](./extract-features-to-geojson/) voor een naadloze geospatiale ervaring.
+## Features filteren op attribuut 
+Ontdek de kracht van Aspose.GIS voor .NET in ruimtelijke datamanipulatie. Filter features moeiteloos, verbeter GIS‑applicaties en verhoog de productiviteit. Duik in de tutorial op [Features filteren op attribuut](./filter-features-by-attribute/) om je GIS‑projecten naar een hoger niveau te tillen.
 
-Begin aan uw georuimtelijke reis met Aspose.GIS voor .NET en transformeer uw GIS-ontwikkeling. Download de tutorials, volg de stappen en ontketen het volledige potentieel van geospatiale gegevensmanipulatie. Duik in de wereld van naadloze integratie en verhoog vandaag nog uw GIS-mogelijkheden!
-## Tutorials voor laagbeheer
-### [Maak een nieuw bestand GDB-gegevensset](./create-new-file-gdb-dataset/)
-Verken Aspose.GIS voor .NET om moeiteloos GIS-datasets te maken en te beheren. Download nu voor naadloze geospatiale ontwikkeling. 
-### [Maak een bestands-GDB met één laag](./create-file-gdb-with-single-layer/)
-Ontgrendel het potentieel van georuimtelijk gegevensbeheer in .NET met Aspose.GIS. Leer stap voor stap hoe u bestandsgeodatabases en lagen kunt maken. Download nu!
-### [Maak een nieuw vormbestand](./create-new-shapefile/)
-Leer hoe u een nieuw shapefile maakt met Aspose.GIS voor .NET. Volg onze stapsgewijze handleiding en ontgrendel de kracht van manipulatie van ruimtelijke gegevens.
-### [Maak een vectorlaag met SRS](./create-vector-layer-with-srs/)
-Ontdek Aspose.GIS voor .NET - uw sleutel tot naadloze GIS-integratie. Creëer moeiteloos vectorlagen met gespecificeerde ruimtelijke referentiesystemen. Download nu!
-### [Toegang tot functies in TopoJSON](./access-features-in-topojson/)
-Verken Aspose.GIS voor .NET en leer stap voor stap toegang te krijgen tot de TopoJSON-functies. Duik in de documentatie en ontketen moeiteloos geospatiale mogelijkheden.
-### [Laag toevoegen aan bestand GDB-gegevensset](./add-layer-to-file-gdb-dataset/)
-Ontgrendel de kracht van GIS met Aspose.GIS voor .NET! Leer in deze stapsgewijze zelfstudie hoe u lagen kunt toevoegen aan File GDB-gegevenssets.
-### [Converteer GeoJSON-laag naar GDB-bestand](./convert-geojson-layer-to-file-gdb/)
-Ontgrendel georuimtelijke wonderen met Aspose.GIS voor .NET! Converteer GeoJSON-lagen moeiteloos naar bestandsgeodatabases. Probeer het nu!
-### [Converteer polygoon-vormbestand naar lijntekenreeks](./convert-polygon-shapefile-to-linestring/)
-Ontdek de kracht van Aspose.GIS voor .NET en converteer Polygon Shape-bestanden moeiteloos naar Linestrings. Geef vandaag nog uw GIS-ontwikkeling een boost!
-### [Functies voor bijsnijdlagen](./crop-layer-features/)
-Ontgrendel georuimtelijke magie met Aspose.GIS voor .NET! Bijsnijdlaag is moeiteloos te gebruiken. Download nu uw gratis proefperiode.
-### [Filter functies op kenmerk](./filter-features-by-attribute/)
-Ontdek de kracht van Aspose.GIS voor .NET bij de manipulatie van ruimtelijke gegevens. Filter functies moeiteloos, verbeter GIS-applicaties en verhoog de productiviteit.
-### [Extraheer functies naar GeoJSON](./extract-features-to-geojson/)
-Verken de stapsgewijze handleiding over het gebruik van Aspose.GIS voor .NET om functies naar GeoJSON te extraheren. Benut de kracht van GIS met gemak! 
+## Features extraheren naar GeoJSON 
+Ontdek de stap‑voor‑stap‑gids over het gebruik van Aspose.GIS voor .NET om features naar GeoJSON te extraheren. Benut de kracht van GIS met gemak! Bekijk de tutorial op [Features extraheren naar GeoJSON](./extract-features-to-geojson/) voor een naadloze geospatiale ervaring.
+
+Begin aan je geospatiale reis met Aspose.GIS voor .NET en transformeer je GIS‑ontwikkeling. Download de tutorials, volg de stappen, en ontgrendel het volledige potentieel van geospatiale datamanipulatie. Duik in de wereld van naadloze integratie en til je GIS‑mogelijkheden vandaag nog naar een hoger niveau!
+
+## Layer Management Tutorials
+### [Nieuwe File GDB‑dataset maken](./create-new-file-gdb-dataset/)
+Ontdek Aspose.GIS voor .NET om moeiteloos GIS‑datasets te maken en te beheren. Download nu voor naadloze geospatiale ontwikkeling. 
+### [File GDB met één laag maken](./create-file-gdb-with-single-layer/)
+Ontgrendel het potentieel van geospatiale datamanagement in .NET met Aspose.GIS. Leer hoe je File Geodatabases en lagen stap‑voor‑stap maakt. Download nu!
+### [Nieuwe Shapefile maken](./create-new-shapefile/)
+Leer hoe je een nieuwe shapefile maakt met Aspose.GIS voor .NET. Volg onze stap‑voor‑stap‑gids en benut de kracht van ruimtelijke datamanipulatie.
+### [Vectorlaag maken met SRS](./create-vector-layer-with-srs/)
+Ontdek Aspose.GIS voor .NET – jouw sleutel tot naadloze GIS‑integratie. Maak moeiteloos vectorlagen met opgegeven ruimtelijke referentiesystemen. Download nu!
+### [Toegang tot features in TopoJSON](./access-features-in-topojson/)
+Ontdek Aspose.GIS voor .NET en leer stap‑voor‑stap TopoJSON‑features te benaderen. Duik in de documentatie en benut moeiteloos geospatiale mogelijkheden.
+### [Laag toevoegen aan File GDB‑dataset](./add-layer-to-file-gdb-dataset/)
+Ontgrendel de kracht van GIS met Aspose.GIS voor .NET! Leer hoe je lagen toevoegt aan File GDB‑datasets in deze stap‑voor‑stap‑tutorial.
+### [GeoJSON‑laag naar File GDB converteren](./convert-geojson-layer-to-file-gdb/)
+Ontgrendel geospatiale wonderen met Aspose.GIS voor .NET! Converteer moeiteloos GeoJSON‑lagen naar File Geodatabases. Probeer het nu!
+### [Polygon‑shapefile naar Linestring converteren](./convert-polygon-shapefile-to-linestring/)
+Ontdek de kracht van Aspose.GIS voor .NET en converteer moeiteloos Polygon‑shapefiles naar Linestrings. Verhoog je GIS‑ontwikkeling vandaag!
+### [Laagfeatures bijsnijden](./crop-layer-features/)
+Ontgrendel geospatiale magie met Aspose.GIS voor .NET! Bijsnijd laagfeatures moeiteloos. Download nu je gratis proefversie.
+### [Features filteren op attribuut](./filter-features-by-attribute/)
+Ontdek de kracht van Aspose.GIS voor .NET in ruimtelijke datamanipulatie. Filter features moeiteloos, verbeter GIS‑applicaties en verhoog de productiviteit.
+### [Features extraheren naar GeoJSON](./extract-features-to-geojson/)
+Ontdek de stap‑voor‑stap‑gids over het gebruik van Aspose.GIS voor .NET om features naar GeoJSON te extraheren. Benut de kracht van GIS met gemak! 
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+## Frequently Asked Questions
+
+**Q:** Hoe maak ik **nieuwe shapefile**‑bestanden programmatisch?  
+**A:** Gebruik de `Shapefile`‑klasse in Aspose.GIS, specificeer het geometrie‑type, voeg velden toe, en schrijf vervolgens de features. De gekoppelde tutorial “Nieuwe Shapefile maken” toont de exacte code.
+
+**Q:** Wat is het verschil tussen een File GDB en een shapefile?  
+**A:** Een File Geodatabase (File GDB) slaat gegevens op in een map‑gebaseerde structuur met rijkere schema‑ondersteuning, terwijl een shapefile een eenvoudig, breed compatibel formaat is dat bestaat uit meerdere bestanden met vaste lengte.
+
+**Q:** Hoe kan ik **features filteren op attribuut** efficiënt?  
+**A:** Bouw een `Query`‑object met een WHERE‑clausule (bijv. `SELECT * FROM layer WHERE Population > 1000`). De gids “Features filteren op attribuut” leidt je door de API.
+
+**Q:** Kan ik een shapefile naar GeoJSON converteren zonder tussenbestanden?  
+**A:** Ja—laad de shapefile in een `FeatureCollection` en roep direct `ExportToGeoJson()` aan. Zie de tutorial “Features extraheren naar GeoJSON” voor een volledig voorbeeld.
+
+**Q:** Heb ik een speciale licentie nodig om deze voorbeelden lokaal uit te voeren?  
+**A:** Een gratis evaluatielicentie werkt voor ontwikkeling en testen. Voor productie‑implementaties moet je een commerciële licentie aanschaffen bij Aspose.
+
+---
+
+**Laatst bijgewerkt:** 2026-01-07  
+**Getest met:** Aspose.GIS for .NET (latest stable release)  
+**Auteur:** Aspose
