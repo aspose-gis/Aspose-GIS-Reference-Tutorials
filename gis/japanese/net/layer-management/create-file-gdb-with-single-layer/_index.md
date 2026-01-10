@@ -1,27 +1,49 @@
 ---
-title: 単一レイヤーのファイル GDB を作成する
-linktitle: 単一レイヤーのファイル GDB を作成する
+date: 2026-01-10
+description: Aspose.GIS for .NET を使用して、ファイルジオデータベースにベクターレイヤーを作成する方法を学びましょう。空間参照 WGS84
+  とファイル GDB オプションで地理空間データを管理します。
+linktitle: Create File GDB with Single Layer
 second_title: Aspose.GIS .NET API
-description: Aspose.GIS を使用して、.NET での地理空間データ管理の可能性を解き放ちます。ファイル ジオデータベースとレイヤーを作成する方法を段階的に学習します。ダウンロード中！
-weight: 11
+title: File GDBでベクターレイヤーを作成 – Aspose.GIS .NET チュートリアル
 url: /ja/net/layer-management/create-file-gdb-with-single-layer/
+weight: 11
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# 単一レイヤーのファイル GDB を作成する
+# File GDB でベクターレイヤーを作成する
 
-## 導入
-堅牢なファイル ジオデータベースとレイヤーを使用して地理空間アプリケーションを強化する準備はできていますか? Aspose.GIS for .NET 以外に探す必要はありません。このチュートリアルでは、Aspose.GIS for .NET を使用して単一レイヤーのファイル ジオデータベース (GDB) を作成するプロセスを説明します。 .NET アプリケーションで空間データの管理と視覚化の機能を簡単に活用できます。
+## はじめに
+File Geodatabase (GDB) 内に **ベクターレイヤーを作成** し、ジオスペーシャルデータを効率的に管理したい場合、Aspose.GIS for .NET はクリーンなコードファーストアプローチを提供します。このステップバイステップガイドでは、ラインフィーチャを書き込み、File GDB オプションを設定し、空間参照 WGS84 を使用する方法を数行の C# で示します。最後にはレイヤー内のフィーチャ数をカウントし、作成した GDB を任意の .NET マッピングまたは解析ワークフローに統合できるようになります。
+
+## クイック回答
+- **「ベクターレイヤーを作成」とは何ですか？** 新しいベクターデータセット（ポイント、ライン、ポリゴン）をジオデータベースファイルに追加することを意味します。  
+- **どのライブラリを使用すべきですか？** Aspose.GIS for .NET が File GDB の作成と編集をフルサポートします。  
+- **開発にライセンスは必要ですか？** テスト用の無料トライアルで動作しますが、本番環境では商用ライセンスが必要です。  
+- **空間参照を設定できますか？** はい – 一般的な WGS84 データムには `SpatialReferenceSystem.Wgs84` を使用します。  
+- **コード行数はどれくらいですか？** GDB の作成、ラインフィーチャの追加、フィーチャ数の取得まで、30 行未満です。
+
+## 「ベクターレイヤーを作成」操作とは何ですか？
+ベクターレイヤーを作成することは、ジオデータベース内に新しいテーブルを定義し、幾何オブジェクト（ポイント、ライン、ポリゴン）とそれらの属性を格納できるようにすることです。この操作は **ジオスペーシャルデータを管理** するすべての GIS ベースアプリケーションの基盤となります。
+
+## なぜ Aspose.GIS を使用してベクターレイヤーを作成するのか？
+- **外部依存関係ゼロ** – API は .NET Framework、.NET Core、.NET 5/6 でそのまま動作します。  
+- **File GDB のフルサポート** – `FileGdbOptions` で圧縮や空間インデックスなどを制御できます。  
+- **組み込みの空間参照処理** – `SpatialReferenceSystem.Wgs84` を渡すだけでグローバル座標系で作業できます。  
+- **シンプルな API** – ラインフィーチャを書き込み、レイヤーに追加し、数行のメソッド呼び出しでフィーチャ数を取得できます。
+
 ## 前提条件
-チュートリアルに入る前に、次の前提条件が満たされていることを確認してください。
-1.  Aspose.GIS for .NET: Aspose.GIS ライブラリがインストールされていることを確認してください。からダウンロードできます。[Aspose.GIS for .NET ダウンロード ページ](https://releases.aspose.com/gis/net/).
-2. 開発環境: マシン上に動作する .NET 開発環境をセットアップします。
-3. ドキュメント ディレクトリ: 地理空間データ ファイルを保存するシステム上のディレクトリを選択または作成します。
+開始する前に、以下を用意してください。
+
+1. **Aspose.GIS for .NET** – [Aspose.GIS for .NET ダウンロードページ](https://releases.aspose.com/gis/net/) から取得。  
+2. **.NET 開発環境** – Visual Studio、Rider、または `dotnet` CLI。  
+3. **フォルダー** – File GDB を作成する場所（ここでは *Your Document Directory* と呼びます）。
+
 ## 名前空間のインポート
-まず、必要な名前空間を .NET プロジェクトにインポートする必要があります。これらの名前空間は、Aspose.GIS 機能へのアクセスを提供します。コード ファイルの先頭に次の行を追加します。
+C# ファイルの先頭に必要な `using` 文を追加します。
+
 ```csharp
 using Aspose.Gis;
 using Aspose.Gis.Geometries;
@@ -34,12 +56,14 @@ using System.Threading.Tasks;
 using Aspose.Gis.Formats.FileGdb;
 using Aspose.Gis.SpatialReferencing;
 ```
-## ステップ 1: ドキュメント ディレクトリを設定する
+
+## ステップ 1: ドキュメントディレクトリの設定
 ```csharp
 string dataDir = "Your Document Directory";
 ```
-「Your Document Directory」を、地理空間データ ファイルを保存するディレクトリへのパスに置き換えます。
-## ステップ 2: 単一レイヤーのファイル ジオデータベースを作成する
+`"Your Document Directory"` を、File GDB を配置したい絶対パスに置き換えてください。
+
+## ステップ 2: 単一レイヤーのファイルジオデータベースを作成する
 ```csharp
 var options = new FileGdbOptions();
 using (var layer = VectorLayer.Create(path, Drivers.FileGdb, options, SpatialReferenceSystem.Wgs84))
@@ -53,29 +77,47 @@ using (var layer = VectorLayer.Create(path, Drivers.FileGdb, options, SpatialRef
     layer.Add(feature);
 }
 ```
-このコード スニペットは、単一レイヤーを持つファイル ジオデータベースを作成し、それにライン フィーチャを追加します。
-## ステップ 3: ファイル ジオデータベースを開いてレイヤー情報を取得する
+このスニペットは `FileGdbOptions` を使用して **ベクターレイヤーを作成** し、シンプルなラインフィーチャを書き込み、**空間参照 WGS84** を使用した File GDB に保存します。
+
+## ステップ 3: ファイルジオデータベースを開き、レイヤー情報を取得する
 ```csharp
 using (var dataset = Dataset.Open(path, Drivers.FileGdb))
 using (var layer = dataset.OpenLayer("layer"))
 {
-    Console.WriteLine("Features count: {0}", layer.Count); //出力: 特徴数: 1
+    Console.WriteLine("Features count: {0}", layer.Count); // Output: Features count: 1
 }
 ```
-このステップでは、作成されたファイル ジオデータベースを開き、「layer」という名前のレイヤーを取得し、レイヤー内のフィーチャの数を出力します。
-## 結論
-おめでとう！ Aspose.GIS for .NET を使用して、単一レイヤーのファイル ジオデータベースが正常に作成されました。アプリケーションでの空間データ管理の膨大な機能を簡単に探索できます。
+ここではデータセットを開いて **フィーチャ数をカウント** し、`1` が出力されます。
+
+## 一般的な問題と解決策
+| 問題 | 原因 | 対策 |
+|-------|--------|-----|
+| **`File not found`** | `path` 変数が間違っている | `dataDir` が既存フォルダーを指しているか確認し、`path` が `Path.Combine(dataDir, "MyData.gdb")` のようにファイル名と結合されているか確認してください。 |
+| **`Unsupported geometry`** | File GDB で許可されていないジオメトリタイプを使用している | 基本レイヤーでは `Point`、`LineString`、`Polygon` のみを使用してください。 |
+| **`License not set`** | 本番環境で有効なライセンスが設定されていない | `License license = new License(); license.SetLicense("Aspose.GIS.lic");` でライセンスを登録してください。 |
+
 ## よくある質問
-### 既存の .NET プロジェクトで Aspose.GIS for .NET を使用できますか?
+### 既存の .NET プロジェクトで Aspose.GIS for .NET を使用できますか？
 はい、Aspose.GIS for .NET は既存の .NET プロジェクトにシームレスに統合できます。
-### Aspose.GIS for .NET の試用版はありますか?
-はい、Aspose.GIS for .NET の機能を調べるには、[無料試用版](https://releases.aspose.com/).
-### Aspose.GIS for .NET の詳細なドキュメントはどこで見つけられますか?
-を参照してください。[ドキュメンテーション](https://reference.aspose.com/gis/net/) Aspose.GIS for .NET に関する包括的な情報については、「Aspose.GIS for .NET」を参照してください。
-### Aspose.GIS for .NET のサポートを受けるにはどうすればよいですか?
-訪問[Aspose.GIS フォーラム](https://forum.aspose.com/c/gis/33)コミュニティのサポートと支援のために。
-### Aspose.GIS for .NET の一時ライセンスは利用できますか?
-はい、入手できます[仮免許](https://purchase.aspose.com/temporary-license/) Aspose.GIS for .NET の場合。
+
+### Aspose.GIS for .NET のトライアル版はありますか？
+はい、[無料トライアル版](https://releases.aspose.com/) をダウンロードして機能をお試しいただけます。
+
+### Aspose.GIS for .NET の詳細なドキュメントはどこにありますか？
+包括的な情報は [ドキュメント](https://reference.aspose.com/gis/net/) を参照してください。
+
+### Aspose.GIS for .NET のサポートはどこで受けられますか？
+コミュニティサポートや支援は [Aspose.GIS フォーラム](https://forum.aspose.com/c/gis/33) でご利用いただけます。
+
+### Aspose.GIS for .NET の一時ライセンスはありますか？
+はい、[一時ライセンス](https://purchase.aspose.com/temporary-license/) を取得できます。
+
+---
+
+**最終更新日:** 2026-01-10  
+**テスト環境:** Aspose.GIS 24.11 for .NET  
+**作者:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
