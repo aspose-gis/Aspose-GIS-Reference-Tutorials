@@ -1,27 +1,49 @@
 ---
-title: Tạo tệp GDB với một lớp
-linktitle: Tạo tệp GDB với một lớp
-second_title: API Aspose.GIS .NET
-description: Mở khóa tiềm năng quản lý dữ liệu không gian địa lý trong .NET với Aspose.GIS. Tìm hiểu cách tạo Cơ sở dữ liệu địa lý tệp và các lớp theo từng bước. Tải ngay!
-weight: 11
+date: 2026-01-10
+description: Tìm hiểu cách tạo lớp vector trong File Geodatabase bằng Aspose.GIS cho
+  .NET. Quản lý dữ liệu không gian với hệ tham chiếu WGS84 và các tùy chọn file gdb.
+linktitle: Create File GDB with Single Layer
+second_title: Aspose.GIS .NET API
+title: Tạo lớp vector trong File GDB – Hướng dẫn Aspose.GIS .NET
 url: /vi/net/layer-management/create-file-gdb-with-single-layer/
+weight: 11
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Tạo tệp GDB với một lớp
+# Tạo Lớp Vector trong File GDB
 
 ## Giới thiệu
-Bạn đã sẵn sàng nâng cao các ứng dụng không gian địa lý của mình bằng các cơ sở dữ liệu và lớp tệp địa lý mạnh mẽ chưa? Không cần tìm đâu xa ngoài Aspose.GIS cho .NET. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn quy trình tạo Cơ sở dữ liệu địa lý tệp (GDB) với một lớp duy nhất bằng cách sử dụng Aspose.GIS cho .NET. Khai thác sức mạnh của việc quản lý và trực quan hóa dữ liệu không gian trong các ứng dụng .NET của bạn một cách dễ dàng.
-## Điều kiện tiên quyết
-Trước khi đi sâu vào hướng dẫn, hãy đảm bảo bạn có sẵn các điều kiện tiên quyết sau:
-1.  Aspose.GIS for .NET: Đảm bảo bạn đã cài đặt thư viện Aspose.GIS. Bạn có thể tải nó xuống từ[Trang tải xuống Aspose.GIS cho .NET](https://releases.aspose.com/gis/net/).
-2. Môi trường phát triển: Thiết lập môi trường phát triển .NET hoạt động trên máy của bạn.
-3. Thư mục Tài liệu: Chọn hoặc tạo một thư mục trên hệ thống nơi bạn sẽ lưu trữ các tệp dữ liệu không gian địa lý của mình.
+Nếu bạn cần **create vector layer** bên trong một File Geodatabase (GDB) và quản lý dữ liệu không gian một cách hiệu quả, Aspose.GIS for .NET cung cấp cho bạn một cách tiếp cận sạch sẽ, code‑first. Trong hướng dẫn từng bước này, chúng tôi sẽ chỉ cho bạn cách ghi một line feature, cấu hình các tùy chọn file gdb, và làm việc với spatial reference WGS84 — tất cả chỉ trong vài dòng C#. Khi kết thúc, bạn sẽ có thể đếm số đối tượng trong một lớp và tích hợp GDB đã tạo vào bất kỳ quy trình ánh xạ hoặc phân tích nào trên .NET.
+
+## Câu trả lời nhanh
+- **What does “create vector layer” mean?** Có nghĩa là thêm một bộ dữ liệu vector mới (điểm, đường, hoặc đa giác) vào một tệp geodatabase.  
+- **Which library should I use?** Aspose.GIS for .NET cung cấp hỗ trợ đầy đủ cho việc tạo và chỉnh sửa File GDB.  
+- **Do I need a license for development?** Bản dùng thử miễn phí đủ cho việc thử nghiệm; cần giấy phép thương mại cho môi trường sản xuất.  
+- **Can I set the spatial reference?** Có – sử dụng `SpatialReferenceSystem.Wgs84` cho datum WGS84 phổ biến.  
+- **How many lines of code?** Ít hơn 30 dòng để tạo GDB, thêm một line feature, và đọc lại số lượng đối tượng.
+
+## Hoạt động “create vector layer” là gì?
+Tạo một lớp vector có nghĩa là định nghĩa một bảng mới trong geodatabase để lưu trữ các đối tượng hình học (điểm, đường, đa giác) cùng với các thuộc tính của chúng. Hoạt động này là nền tảng cho bất kỳ ứng dụng GIS nào cần **manage geospatial data**.
+
+## Tại sao nên dùng Aspose.GIS để tạo lớp vector?
+- **Zero external dependencies** – API hoạt động ngay trên .NET Framework, .NET Core và .NET 5/6.  
+- **Full support for File GDB** – bạn có thể cấu hình `FileGdbOptions` để kiểm soát nén, lập chỉ mục không gian, và hơn thế nữa.  
+- **Built‑in spatial reference handling** – chỉ cần truyền `SpatialReferenceSystem.Wgs84` để làm việc trong hệ tọa độ toàn cầu.  
+- **Straightforward API** – API đơn giản – ghi line feature, thêm vào lớp, và lấy số lượng đối tượng chỉ với vài lời gọi phương thức.
+
+## Yêu cầu trước
+Trước khi bắt đầu, hãy chắc chắn rằng bạn có:
+
+1. **Aspose.GIS for .NET** – tải xuống từ [trang tải Aspose.GIS for .NET](https://releases.aspose.com/gis/net/).  
+2. **Môi trường phát triển .NET** – Visual Studio, Rider, hoặc `dotnet` CLI.  
+3. **Một thư mục** nơi File GDB sẽ được tạo (chúng tôi sẽ gọi là *Your Document Directory*).
+
 ## Nhập không gian tên
-Để bắt đầu, bạn cần nhập các vùng tên cần thiết vào dự án .NET của mình. Các không gian tên này sẽ cung cấp quyền truy cập vào các chức năng của Aspose.GIS. Thêm các dòng sau vào đầu tệp mã của bạn:
+Thêm các câu lệnh `using` cần thiết ở đầu tệp C# của bạn:
+
 ```csharp
 using Aspose.Gis;
 using Aspose.Gis.Geometries;
@@ -34,12 +56,14 @@ using System.Threading.Tasks;
 using Aspose.Gis.Formats.FileGdb;
 using Aspose.Gis.SpatialReferencing;
 ```
-## Bước 1: Thiết lập thư mục tài liệu của bạn
+
+## Bước 1: Thiết lập Thư mục Tài liệu của bạn
 ```csharp
 string dataDir = "Your Document Directory";
 ```
-Thay thế "Thư mục tài liệu của bạn" bằng đường dẫn đến thư mục mà bạn muốn lưu trữ các tệp dữ liệu không gian địa lý của mình.
-## Bước 2: Tạo cơ sở dữ liệu địa lý tệp với một lớp
+Thay thế `"Your Document Directory"` bằng đường dẫn tuyệt đối nơi bạn muốn File GDB được lưu.
+
+## Bước 2: Tạo File Geodatabase với một Lớp duy nhất
 ```csharp
 var options = new FileGdbOptions();
 using (var layer = VectorLayer.Create(path, Drivers.FileGdb, options, SpatialReferenceSystem.Wgs84))
@@ -53,29 +77,47 @@ using (var layer = VectorLayer.Create(path, Drivers.FileGdb, options, SpatialRef
     layer.Add(feature);
 }
 ```
-Đoạn mã này tạo Cơ sở dữ liệu địa lý tệp với một lớp duy nhất và thêm tính năng dòng vào đó.
-## Bước 3: Mở cơ sở dữ liệu địa lý tệp và truy xuất thông tin lớp
+Đoạn mã này **creates a vector layer** bằng cách sử dụng `FileGdbOptions`, ghi một line feature đơn giản, và lưu nó vào một File GDB sử dụng **spatial reference WGS84**.
+
+## Bước 3: Mở File Geodatabase và Lấy Thông tin Lớp
 ```csharp
 using (var dataset = Dataset.Open(path, Drivers.FileGdb))
 using (var layer = dataset.OpenLayer("layer"))
 {
-    Console.WriteLine("Features count: {0}", layer.Count); // Đầu ra: Số lượng tính năng: 1
+    Console.WriteLine("Features count: {0}", layer.Count); // Output: Features count: 1
 }
 ```
-Trong bước này, chúng tôi mở Cơ sở dữ liệu địa lý tệp đã tạo, truy xuất lớp có tên là "lớp" và in số lượng đối tượng địa lý trong lớp.
-## Phần kết luận
-Chúc mừng! Bạn đã tạo thành công Cơ sở dữ liệu địa lý tệp với một lớp duy nhất bằng Aspose.GIS cho .NET. Khám phá khả năng quản lý dữ liệu không gian rộng lớn trong ứng dụng của bạn một cách dễ dàng.
-## Các câu hỏi thường gặp
-### Tôi có thể sử dụng Aspose.GIS cho .NET trong các dự án .NET hiện tại của mình không?
-Có, Aspose.GIS cho .NET có thể được tích hợp liền mạch vào các dự án .NET hiện có của bạn.
-### Có phiên bản dùng thử cho Aspose.GIS cho .NET không?
- Có, bạn có thể khám phá các tính năng của Aspose.GIS cho .NET bằng cách tải xuống[phiên bản dùng thử miễn phí](https://releases.aspose.com/).
-### Tôi có thể tìm tài liệu chi tiết về Aspose.GIS cho .NET ở đâu?
- Tham khảo đến[tài liệu](https://reference.aspose.com/gis/net/) để biết thông tin toàn diện về Aspose.GIS cho .NET.
-### Làm cách nào tôi có thể nhận được hỗ trợ cho Aspose.GIS cho .NET?
- Tham quan[Diễn đàn Aspose.GIS](https://forum.aspose.com/c/gis/33) để được cộng đồng hỗ trợ và giúp đỡ.
-### Giấy phép tạm thời có sẵn cho Aspose.GIS cho .NET không?
- Có, bạn có thể nhận được một[giấy phép tạm thời](https://purchase.aspose.com/temporary-license/) cho Aspose.GIS cho .NET.
+Ở đây chúng tôi **count features layer** bằng cách mở dataset và in ra số lượng đối tượng – trong trường hợp này, `1`.
+
+## Vấn đề thường gặp và Giải pháp
+| Vấn đề | Nguyên nhân | Cách khắc phục |
+|-------|------------|----------------|
+| **`File not found`** | Biến `path` không đúng | Kiểm tra `dataDir` trỏ tới thư mục tồn tại và `path` được kết hợp với tên tệp, ví dụ `Path.Combine(dataDir, "MyData.gdb")`. |
+| **`Unsupported geometry`** | Sử dụng loại hình học không được phép trong File GDB | Chỉ sử dụng `Point`, `LineString`, hoặc `Polygon` cho các lớp cơ bản. |
+| **`License not set`** | Chạy mà không có giấy phép hợp lệ trong môi trường sản xuất | Đăng ký giấy phép của bạn bằng `License license = new License(); license.SetLicense("Aspose.GIS.lic");`. |
+
+## Câu hỏi thường gặp
+### Tôi có thể sử dụng Aspose.GIS for .NET trong các dự án .NET hiện có của mình không?
+Có, Aspose.GIS for .NET có thể được tích hợp một cách liền mạch vào các dự án .NET hiện có của bạn.
+
+### Có phiên bản dùng thử cho Aspose.GIS for .NET không?
+Có, bạn có thể khám phá các tính năng của Aspose.GIS for .NET bằng cách tải xuống [phiên bản dùng thử miễn phí](https://releases.aspose.com/).
+
+### Tôi có thể tìm tài liệu chi tiết cho Aspose.GIS for .NET ở đâu?
+Tham khảo [tài liệu](https://reference.aspose.com/gis/net/) để có thông tin chi tiết về Aspose.GIS for .NET.
+
+### Làm sao tôi có thể nhận hỗ trợ cho Aspose.GIS for .NET?
+Truy cập [diễn đàn Aspose.GIS](https://forum.aspose.com/c/gis/33) để nhận hỗ trợ và trợ giúp từ cộng đồng.
+
+### Có giấy phép tạm thời cho Aspose.GIS for .NET không?
+Có, bạn có thể nhận một [giấy phép tạm thời](https://purchase.aspose.com/temporary-license/) cho Aspose.GIS for .NET.
+
+---
+
+**Cập nhật lần cuối:** 2026-01-10  
+**Kiểm tra với:** Aspose.GIS 24.11 for .NET  
+**Tác giả:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}

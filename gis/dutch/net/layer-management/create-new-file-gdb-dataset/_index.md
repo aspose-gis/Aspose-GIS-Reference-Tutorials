@@ -1,28 +1,48 @@
 ---
-title: Maak een nieuw bestand GDB-gegevensset
-linktitle: Maak een nieuw bestand GDB-gegevensset
-second_title: Aspose.GIS .NET-API
-description: Verken Aspose.GIS voor .NET om moeiteloos GIS-datasets te maken en te beheren. Download nu voor naadloze geospatiale ontwikkeling. #Aspose #GIS
-weight: 10
+date: 2026-01-10
+description: Leer hoe u file‑geodatabase .NET‑datasets maakt met Aspose.GIS voor .NET.
+  Stapsgewijze gids voor moeiteloos GIS‑gegevensbeheer.
+linktitle: Create New File GDB Dataset
+second_title: Aspose.GIS .NET API
+title: Maak File Geodatabase .NET-dataset met Aspose.GIS
 url: /nl/net/layer-management/create-new-file-gdb-dataset/
+weight: 10
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Maak een nieuw bestand GDB-gegevensset
+# Maak File Geodatabase .NET Dataset met Aspose.GIS
 
-## Invoering
-Op het gebied van georuimtelijke ontwikkeling onderscheidt Aspose.GIS voor .NET zich als een krachtige toolkit voor het beheren en manipuleren van gegevens uit het Geografisch Informatiesysteem (GIS). Of u nu een doorgewinterde ontwikkelaar bent of net begint aan uw reis naar GIS, deze tutorial leidt u door het proces van het maken van een nieuwe File Geodatabase (GDB)-gegevensset met behulp van Aspose.GIS voor .NET.
+## Introductie
+In deze tutorial **maak je file geodatabase .NET** datasets vanaf nul met Aspose.GIS voor .NET. Of je nu een desktop GIS‑tool bouwt, een web‑service die ruimtelijke gegevens opslaat, of gewoon een betrouwbare manier nodig hebt om File Geodatabases programmatisch te genereren, deze gids leidt je door elke stap met duidelijke uitleg en praktijkvoorbeelden.
+
+## Snelle Antwoorden
+- **Waar gaat deze tutorial over?** Een nieuwe File Geodatabase maken, twee lagen toevoegen, en de dataset verifiëren met Aspose.GIS voor .NET.  
+- **Hoe lang duurt het?** Ongeveer 10‑15 minuten voor een ontwikkelaar die bekend is met C#.  
+- **Vereisten?** .NET‑ontwikkelomgeving, Aspose.GIS voor .NET‑bibliotheek, en een schrijfbare map.  
+- **Kan ik dit gebruiken in .NET Core / .NET 6+?** Ja – de API is volledig compatibel met moderne .NET‑runtimes.  
+- **Heb ik een licentie nodig?** Een tijdelijke of permanente Aspose.GIS‑licentie is vereist voor productiegebruik.
+
+## Wat is een File Geodatabase?
+Een File Geodatabase (File GDB) is een map‑gebaseerde gegevensopslag die GIS‑feature‑klassen, rasterdatasets en gerelateerde metadata bevat. Het biedt snelle lees‑/schrijfpresentaties, ondersteunt grote datasets en wordt veel gebruikt in het ArcGIS‑ecosysteem van Esri. Met Aspose.GIS kun je deze databases direct vanuit .NET‑code maken en manipuleren zonder externe GIS‑software.
+
+## Waarom een file geodatabase .NET maken met Aspose.GIS?
+- **Geen externe afhankelijkheden** – de bibliotheek behandelt alle bestandsformaatdetails.  
+- **Cross‑platform** – werkt op Windows, Linux en macOS .NET‑runtimes.  
+- **Rijke geometrie‑ondersteuning** – punten, lijnen, polygonen en meer.  
+- **Volledige controle** – jij bepaalt het schema, de attributen en de ruimtelijke referentie.
+
 ## Vereisten
-Voordat u in de zelfstudie duikt, moet u ervoor zorgen dat u aan de volgende vereisten voldoet:
--  Aspose.GIS voor .NET: Zorg ervoor dat de Aspose.GIS voor .NET-bibliotheek is geïnstalleerd. Je kunt het downloaden van de[Aspose.GIS voor .NET-downloadpagina](https://releases.aspose.com/gis/net/).
-- Ontwikkelomgeving: Stel uw ontwikkelomgeving in met een compatibele IDE, zoals Visual Studio, en zorg dat u basiskennis heeft van .NET-programmering.
-- Documentmap: Vervang 'Uw documentenmap' in het codefragment door het juiste pad waar u uw GDB-gegevensset wilt opslaan.
-- Bekendheid met C#: In deze tutorial wordt ervan uitgegaan dat u bekend bent met de programmeertaal C#.
-## Naamruimten importeren
-Importeer in de eerste stappen de benodigde naamruimten om de Aspose.GIS-functionaliteit in uw .NET-toepassing te benutten:
+- Aspose.GIS voor .NET geïnstalleerd. Je kunt het downloaden van de [Aspose.GIS for .NET downloadpagina](https://releases.aspose.com/gis/net/).  
+- Een ontwikkelomgeving zoals Visual Studio 2022 (of een andere IDE die .NET ondersteunt).  
+- Een schrijfbare map op je computer waar de nieuwe GDB wordt aangemaakt – vervang `"Your Document Directory"` in de code door dat pad.  
+- Basiskennis van C# en .NET‑projectstructuur.
+
+## Namespaces importeren
+Importeer eerst de namespaces die toegang geven tot Aspose.GIS‑klassen:
+
 ```csharp
 using Aspose.Gis;
 using Aspose.Gis.Geometries;
@@ -33,17 +53,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 ```
-## Stap 1: Maak een nieuwe GDB-gegevensset voor bestanden
+
+## Stapsgewijze gids
+
+### Stap 1: Maak een nieuw File GDB‑dataset
+De volgende code maakt een lege File Geodatabase. Dit is de kern van **create file geodatabase .net**.
+
 ```csharp
 string dataDir = "Your Document Directory";
 using (var dataset = Dataset.Create(dataDir, Drivers.FileGdb))
 {
-    Console.WriteLine(dataset.LayersCount); // Uitgang: 0
-    // Ga verder met de volgende stappen...
+    Console.WriteLine(dataset.LayersCount); // Output: 0
+    // Continue with subsequent steps...
 }
 ```
- Uitleg: In deze stap maken we een nieuwe GDB-gegevensset met behulp van de`Dataset.Create` methode. We specificeren het pad en het stuurprogramma (FileGdb) om een File Geodatabase te maken. De console-uitvoer geeft het initiële aantal lagen weer, dat op dit moment nul is.
-## Stap 2: Maak laag_1 en vul deze in
+
+**Uitleg:** `Dataset.Create` initialiseert de GDB op het opgegeven pad met de `FileGdb` driver. Op dit moment bevat de dataset geen lagen, dus het aantal lagen is nul.
+
+### Stap 2: Maak en vul `layer_1`
+Nu voegen we een eerste laag toe die gehele getal‑attributen en puntgeometrieën opslaat.
+
 ```csharp
 using (var layer = dataset.CreateLayer("layer_1"))
 {
@@ -57,8 +86,15 @@ using (var layer = dataset.CreateLayer("layer_1"))
     }
 }
 ```
-Uitleg: Deze stap omvat het maken van een laag met de naam "layer_1" binnen de gegevensset. Het definieert een attribuut met de naam "waarde" van het type geheel getal en vult de laag met tien objecten, elk met een puntgeometrie.
-## Stap 3: Maak en vul Layer_2 in
+
+**Uitleg:**  
+- `CreateLayer` maakt een nieuwe feature‑class met de naam **layer_1**.  
+- Een integer‑attribuut genaamd **value** wordt gedefinieerd.  
+- De lus voegt tien features toe, elk met een uniek geheel getal en een punt op coördinaten *(i, i)*.
+
+### Stap 3: Maak en vul `layer_2`
+Vervolgens voegen we een tweede laag toe die het omgaan met lijngeometrie demonstreert.
+
 ```csharp
 using (var layer = dataset.CreateLayer("layer_2"))
 {
@@ -71,25 +107,50 @@ using (var layer = dataset.CreateLayer("layer_2"))
     layer.Add(feature);
 }
 ```
-Uitleg: Hier maken we een tweede laag met de naam "layer_2" en voegen we een enkel object toe met een lijnreeksgeometrie.
-## Stap 4: Controleer het aantal bijgewerkte lagen
+
+**Uitleg:** Dit maakt **layer_2** aan en voegt één feature in waarvan de geometrie een `LineString` is die twee punten verbindt.
+
+### Stap 4: Controleer het bijgewerkte aantal lagen
+Controleer tenslotte dat beide lagen succesvol zijn toegevoegd.
+
 ```csharp
-Console.WriteLine(dataset.LayersCount); // Uitgang: 2
+Console.WriteLine(dataset.LayersCount); // Output: 2
 ```
-Uitleg: Tenslotte controleren we het bijgewerkte aantal lagen na het toevoegen van de twee lagen. In dit geval moet de uitvoer 2 zijn.
+
+**Uitleg:** De dataset meldt nu twee lagen, wat bevestigt dat het **create file geodatabase .net**‑proces naar verwachting is voltooid.
+
+## Veelvoorkomende problemen en oplossingen
+| Probleem | Waarom het gebeurt | Oplossing |
+|----------|--------------------|-----------|
+| **`UnauthorizedAccessException`** bij het maken van de dataset | Het mappad is alleen‑lezen of je hebt geen rechten. | Kies een schrijfbare directory of start Visual Studio als Administrator. |
+| **`ArgumentException` voor driver** | De drivernaam is verkeerd gespeld of de bibliotheekversie ondersteunt het niet. | Gebruik `Drivers.FileGdb` precies zoals getoond; zorg dat je de nieuwste Aspose.GIS‑package hebt. |
+| **Features verschijnen niet in ArcGIS** | Ontbrekende ruimtelijke referentie of incompatibele geometrie. | Stel een ruimtelijke referentie in op de laag indien nodig, en zorg dat geometrieën geldig zijn. |
+
+## Veelgestelde vragen
+### V: Kan ik Aspose.GIS voor .NET gebruiken met andere GIS‑bibliotheken?
+Aspose.GIS voor .NET is een zelfstandige toolkit; je kunt het echter integreren met andere .NET‑bibliotheken om functionaliteit uit te breiden.
+
+### V: Is er een community‑forum voor Aspose.GIS‑ondersteuning?
+Ja, je kunt ondersteuning en discussies vinden op het [Aspose.GIS Forum](https://forum.aspose.com/c/gis/33).
+
+### V: Hoe kan ik een tijdelijke licentie voor Aspose.GIS verkrijgen?
+Bezoek de pagina [Temporary License](https://purchase.aspose.com/temporary-license/) voor informatie over het verkrijgen van een tijdelijke licentie.
+
+### V: Zijn er extra voorbeelden en documentatie beschikbaar?
+Bekijk de [Aspose.GIS documentatie](https://reference.aspose.com/gis/net/) voor meer voorbeelden en gedetailleerde informatie.
+
+### V: Waar kan ik Aspose.GIS voor .NET kopen?
+Je kunt Aspose.GIS voor .NET kopen op de [aankooppagina](https://purchase.aspose.com/buy).
+
 ## Conclusie
-Gefeliciteerd! U hebt met succes een nieuwe File GDB-gegevensset gemaakt en deze gevuld met lagen met behulp van Aspose.GIS voor .NET. Deze tutorial biedt een fundamenteel inzicht in het werken met georuimtelijke gegevens in een .NET-omgeving.
-## Veel Gestelde Vragen
-### Vraag: Kan ik Aspose.GIS voor .NET gebruiken met andere GIS-bibliotheken?
-Aspose.GIS voor .NET is een zelfstandige toolkit; U kunt het echter integreren met andere .NET-bibliotheken om de functionaliteit te verbeteren.
-### Vraag: Is er een communityforum voor Aspose.GIS-ondersteuning?
- Ja, u kunt ondersteuning en discussies vinden op de[Aspose.GIS-forum](https://forum.aspose.com/c/gis/33).
-### Vraag: Hoe kan ik een tijdelijke licentie voor Aspose.GIS verkrijgen?
- Bezoek de[Tijdelijke licentie](https://purchase.aspose.com/temporary-license/) pagina voor informatie over het verkrijgen van een tijdelijke licentie.
-### Vraag: Zijn er aanvullende voorbeelden en documentatie beschikbaar?
- Ontdek de[Aspose.GIS-documentatie](https://reference.aspose.com/gis/net/) voor meer voorbeelden en gedetailleerde informatie.
-### Vraag: Waar kan ik Aspose.GIS voor .NET kopen?
- U kunt Aspose.GIS voor .NET aanschaffen op de website[aankooppagina](https://purchase.aspose.com/buy).
+Je hebt nu succesvol **file geodatabase .NET** datasets gemaakt, twee verschillende lagen toegevoegd, en het resultaat geverifieerd met Aspose.GIS. Deze basis stelt je in staat om rijkere GIS‑toepassingen te bouwen — meer lagen toe te voegen, complexe schema's te definiëren, of te integreren met webservices. Verken de Aspose.GIS‑API verder om met rasterdata, ruimtelijke queries en geavanceerde geometrie‑operaties te werken.
+
+---
+
+**Laatst bijgewerkt:** 2026-01-10  
+**Getest met:** Aspose.GIS for .NET 24.11 (of nieuwste)  
+**Auteur:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}

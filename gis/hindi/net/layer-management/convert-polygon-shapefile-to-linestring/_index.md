@@ -1,27 +1,49 @@
 ---
-title: पॉलीगॉन शेपफाइल को लाइनस्ट्रिंग में बदलें
-linktitle: पॉलीगॉन शेपफाइल को लाइनस्ट्रिंग में बदलें
-second_title: Aspose.GIS .NET एपीआई
-description: .NET के लिए Aspose.GIS की शक्ति का अन्वेषण करें और आसानी से पॉलीगॉन शेपफाइल्स को लाइनस्ट्रिंग्स में परिवर्तित करें। आज ही अपने जीआईएस विकास को बढ़ावा दें!
-weight: 18
+date: 2026-01-10
+description: Aspose.GIS for .NET का उपयोग करके shapefile को C# में पढ़ना और एक polygon
+  shapefile को linestring में बदलना सीखें। स्पष्ट चरण‑दर‑चरण मार्गदर्शन के साथ अपने
+  GIS विकास को तेज़ बनाएं।
+linktitle: Convert Polygon Shapefile to Linestring
+second_title: Aspose.GIS .NET API
+title: Shapefile पढ़ें C# – Polygon Shapefile को Linestring में बदलें
 url: /hi/net/layer-management/convert-polygon-shapefile-to-linestring/
+weight: 18
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# पॉलीगॉन शेपफाइल को लाइनस्ट्रिंग में बदलें
+# Read Shapefile C# – Polygon Shapefile को Linestring में बदलें
 
-## परिचय
-यदि आप .NET में भौगोलिक सूचना प्रणाली (GIS) के साथ काम कर रहे हैं, तो Aspose.GIS एक शक्तिशाली लाइब्रेरी है जो आपके कार्यों को सरल बना सकती है। इस ट्यूटोरियल में, हम आपको Aspose.GIS का उपयोग करके पॉलीगॉन शेपफाइल को लिनेस्ट्रिंग में बदलने की प्रक्रिया के बारे में मार्गदर्शन करेंगे। यह विशेष रूप से तब उपयोगी हो सकता है जब आपको रूट प्लानिंग या नेटवर्क विश्लेषण जैसे विभिन्न अनुप्रयोगों के लिए बहुभुज डेटा से रैखिक विशेषताएं निकालने की आवश्यकता होती है।
-## आवश्यक शर्तें
-इससे पहले कि हम ट्यूटोरियल में उतरें, सुनिश्चित करें कि आपके पास निम्नलिखित स्थान हैं:
--  Aspose.GIS लाइब्रेरी: Aspose.GIS लाइब्रेरी को डाउनलोड और इंस्टॉल करें[वेबसाइट](https://releases.aspose.com/gis/net/).
-- शेपफ़ाइल डेटा: रूपांतरण के लिए एक बहुभुज शेपफ़ाइल तैयार रखें। यदि आपके पास कोई नहीं है, तो आप नमूना डेटा ढूंढ सकते हैं या अपना स्वयं का डेटा बना सकते हैं।
-- विकास परिवेश: आवश्यक उपकरणों के साथ अपना .NET विकास परिवेश स्थापित करें।
-## नामस्थान आयात करें
-अपने C# कोड में, आपको आवश्यक कक्षाओं और विधियों तक पहुँचने के लिए Aspose.GIS नेमस्पेस को आयात करना होगा। अपनी कोड फ़ाइल की शुरुआत में निम्नलिखित नामस्थान जोड़ें:
+## Introduction
+यदि आप .NET में जियोग्राफिक इन्फॉर्मेशन सिस्टम्स (GIS) के साथ काम कर रहे हैं, तो **read shapefile c#** डेटा को हेरफेर करने से पहले एक सामान्य पहला कदम है। Aspose.GIS इस प्रक्रिया को सरल बनाता है, जिससे आप कुछ ही कोड लाइनों के साथ एक Polygon Shapefile को Linestring में बदल सकते हैं। यह क्षमता विशेष रूप से तब उपयोगी होती है जब आपको पॉलीगॉन डेटा सेट से रैखिक फीचर निकालने की आवश्यकता होती है, जैसे कि रूट प्लानिंग, नेटवर्क एनालिसिस, या डेटा विज़ुअलाइज़ेशन के लिए।
+
+## Quick Answers
+- **कौन सी लाइब्रेरी आपको read shapefile c# पढ़ने में मदद करती है?** Aspose.GIS for .NET  
+- **क्या आप पॉलीगॉन को लाइन में बदल सकते हैं?** हाँ – पॉलीगॉन की एक्सटीरियर रिंग के साथ `LineString` का उपयोग करें।  
+- **क्या प्रोडक्शन के लिए लाइसेंस चाहिए?** प्रोडक्शन उपयोग के लिए एक कमर्शियल लाइसेंस आवश्यक है।  
+- **कौन से .NET संस्करण समर्थित हैं?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6+।  
+- **क्या ट्रायल उपलब्ध है?** बिल्कुल – Aspose साइट से एक मुफ्त ट्रायल डाउनलोड करें।
+
+## What is “read shapefile c#”?
+C# में shapefile पढ़ना मतलब `.shp` फ़ाइल को मेमोरी में लोड करना ताकि आप उसकी ज्योमेट्रीज़ को क्वेरी, मॉडिफ़ाई या ट्रांसफ़ॉर्म कर सकें। Aspose.GIS एक सरल API प्रदान करता है जो लो‑लेवल विवरणों को एब्स्ट्रैक्ट करता है और आपको GIS लॉजिक पर ध्यान केंद्रित करने देता है।
+
+## Why convert polygon to line with Aspose.GIS?
+- **टोपोलॉजी बनाए रखें** – परिवर्तन प्रत्येक पॉलीगॉन की सटीक बाहरी सीमा को रखता है।  
+- **परफ़ॉर्मेंस** – लाइब्रेरी बड़े डेटा सेट के लिए ऑप्टिमाइज़्ड है, जिससे बैच कन्वर्ज़न तेज़ होते हैं।  
+- **लचीलापन** – आप बाद में लाइन्स्ट्रिंग को किसी अन्य shapefile, GeoJSON, या किसी भी समर्थित फ़ॉर्मेट में लिख सकते हैं।
+
+## Prerequisites
+ट्यूटोरियल शुरू करने से पहले सुनिश्चित करें कि आपके पास निम्नलिखित उपलब्ध हों:
+
+- **Aspose.GIS Library** – Aspose.GIS लाइब्रेरी को [website](https://releases.aspose.com/gis/net/) से डाउनलोड और इंस्टॉल करें।  
+- **Shapefile Data** – कन्वर्ज़न के लिए एक Polygon Shapefile तैयार रखें। यदि आपके पास नहीं है, तो आप सैंपल डेटा पा सकते हैं या अपना स्वयं का बना सकते हैं।  
+- **Development Environment** – आवश्यक टूल्स (Visual Studio, .NET SDK, आदि) के साथ अपना .NET डेवलपमेंट एनवायरनमेंट सेट अप करें।
+
+## Import Namespaces
+अपने C# कोड में, आवश्यक क्लास और मेथड्स तक पहुंचने के लिए Aspose.GIS नेमस्पेस को इम्पोर्ट करना होगा। अपने कोड फ़ाइल की शुरुआत में निम्नलिखित नेमस्पेस जोड़ें:
+
 ```csharp
 using Aspose.Gis;
 using Aspose.Gis.Geometries;
@@ -31,37 +53,45 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 ```
-## चरण 1: दस्तावेज़ निर्देशिका सेट करें
+
+## How to convert shapefile from polygon to line?
+नीचे एक चरण‑दर‑चरण गाइड दिया गया है जो **shapefile को पॉलीगॉन से लाइन में बदलने** की प्रक्रिया दिखाता है, Aspose.GIS का उपयोग करके।
+
+### Step 1: Set the Document Directory
 ```csharp
-// दस्तावेज़ निर्देशिका का पथ.
+// The path to the documents directory.
 string dataDir = "Your Document Directory";
 ```
-"आपकी दस्तावेज़ निर्देशिका" को उस निर्देशिका के पथ से बदलें जहां आपकी शेपफ़ाइल स्थित है।
-## चरण 2: सोर्स शेपफाइल खोलें
+`"Your Document Directory"` को उस वास्तविक पाथ से बदलें जहाँ आपका shapefile स्थित है।
+
+### Step 2: Open the Source Shapefile
 ```csharp
 using (VectorLayer source = VectorLayer.Open(dataDir + "PolygonShapeFile.shp", Drivers.Shapefile))
 {
-    // बाकी कोड यहां जाएगा
+    // Rest of the code will go here
 }
 ```
-यह चरण पढ़ने के लिए स्रोत पॉलीगॉन शेपफाइल को खोलता है।
-## चरण 3: डेस्टिनेशन लिनेस्ट्रिंग शेपफाइल बनाएं
+यह लाइन **स्रोत Polygon Shapefile को खोलती है** ताकि आप उसकी फीचर्स पढ़ सकें।
+
+### Step 3: Create the Destination Linestring Shapefile
 ```csharp
 using (VectorLayer destination = VectorLayer.Create(dataDir + "PolygonShapeFileToLineShapeFile_out.shp", Drivers.Shapefile))
 {
-    // बाकी कोड यहां जाएगा
+    // Rest of the code will go here
 }
 ```
-यहां, हम परिवर्तित डेटा लिखने के लिए एक नया लाइनस्ट्रिंग शेपफाइल बनाते हैं।
-## चरण 4: स्रोत सुविधाओं के माध्यम से पुनरावृति
+यहाँ हम **एक नया Linestring Shapefile बनाते हैं** जो परिवर्तित ज्योमेट्रीज़ को संग्रहीत करेगा।
+
+### Step 4: Iterate Through Source Features
 ```csharp
 foreach (Feature sourceFeature in source)
 {
-    // बाकी कोड यहां जाएगा
+    // Rest of the code will go here
 }
 ```
-यह लूप स्रोत पॉलीगॉन शेपफ़ाइल में प्रत्येक सुविधा के माध्यम से पुनरावृत्त होता है।
-## चरण 5: बहुभुज को लिनेस्ट्रिंग में बदलें और गंतव्य पर लिखें
+यह लूप मूल फ़ाइल में प्रत्येक पॉलीगॉन फीचर के माध्यम से चलता है।
+
+### Step 5: Convert Polygon to Linestring and Write to Destination
 ```csharp
 Polygon polygon = (Polygon)sourceFeature.Geometry;
 LineString line = new LineString(polygon.ExteriorRing);
@@ -69,21 +99,36 @@ Feature destinationFeature = destination.ConstructFeature();
 destinationFeature.Geometry = line;
 destination.Add(destinationFeature);
 ```
-इस चरण में, प्रत्येक बहुभुज सुविधा को एक लाइनस्ट्रिंग में बदल दिया जाता है, और परिणामी लाइनस्ट्रिंग सुविधा को गंतव्य शेपफाइल पर लिखा जाता है।
-## निष्कर्ष
-इन चरणों का पालन करके, आप .NET के लिए Aspose.GIS का उपयोग करके आसानी से पॉलीगॉन शेपफाइल को लाइनस्ट्रिंग में परिवर्तित कर सकते हैं। यह प्रक्रिया जीआईएस अनुप्रयोगों में डेटा विश्लेषण और विज़ुअलाइज़ेशन के लिए नई संभावनाएं खोलती है।
+इस ब्लॉक में हम **पॉलीगॉन को लाइन में बदलते** हैं (`LineString`) और नई फीचर को लक्ष्य shapefile में जोड़ते हैं।
 
-## पूछे जाने वाले प्रश्न
-### क्या Aspose.GIS .NET के सभी संस्करणों के साथ संगत है?
-हां, Aspose.GIS आपके विकास परिवेश के साथ अनुकूलता सुनिश्चित करते हुए, .NET के विभिन्न संस्करणों का समर्थन करता है।
-### क्या मैं व्यावसायिक परियोजनाओं के लिए Aspose.GIS का उपयोग कर सकता हूँ?
- हाँ तुम कर सकते हो। व्यावसायिक परियोजनाओं में Aspose.GIS का उपयोग करने के लिए, लाइसेंस खरीदने पर विचार करें[यहाँ](https://purchase.aspose.com/buy).
-### क्या कोई उदाहरण या दस्तावेज़ उपलब्ध हैं?
- हां, आप यहां व्यापक दस्तावेज़ और उदाहरण पा सकते हैं[दस्तावेज़ीकरण पृष्ठ](https://reference.aspose.com/gis/net/).
-### क्या कोई परीक्षण संस्करण उपलब्ध है?
- हाँ, आप Aspose.GIS पर जाकर नि:शुल्क परीक्षण के साथ एक्सप्लोर कर सकते हैं[इस लिंक](https://releases.aspose.com/).
-### मैं सहायता या सहायता कहां मांग सकता हूं?
- दौरा करना[Aspose.GIS फोरम](https://forum.aspose.com/c/gis/33) किसी भी सहायता या समर्थन-संबंधित प्रश्न के लिए।
+## Common Issues and Tips
+- **Coordinate System Mismatch** – सुनिश्चित करें कि स्रोत और लक्ष्य दोनों लेयर एक ही स्पेशियल रेफ़रेंस का उपयोग करें; अन्यथा लाइन्स विस्थापित दिख सकती हैं।  
+- **Large Files** – बहुत बड़े shapefiles को प्रोसेस करते समय सभी फीचर्स को एक बार मेमोरी में लोड करने के बजाय स्ट्रीमिंग पर विचार करें।  
+- **Null Geometries** – खाली ज्योमेट्री वाले फीचर्स से बचें ताकि रन‑टाइम एक्सेप्शन न आए।
+
+## Frequently Asked Questions
+
+**Q: क्या Aspose.GIS सभी .NET संस्करणों के साथ संगत है?**  
+A: हाँ, Aspose.GIS विभिन्न .NET संस्करणों को सपोर्ट करता है, जिससे आपका डेवलपमेंट एनवायरनमेंट संगत रहता है।
+
+**Q: क्या मैं Aspose.GIS को कमर्शियल प्रोजेक्ट्स में उपयोग कर सकता हूँ?**  
+A: हाँ, आप कर सकते हैं। कमर्शियल प्रोजेक्ट्स में Aspose.GIS उपयोग करने के लिए [here](https://purchase.aspose.com/buy) से लाइसेंस खरीदने पर विचार करें।
+
+**Q: क्या कोई उदाहरण या डॉक्यूमेंटेशन उपलब्ध है?**  
+A: हाँ, आप व्यापक डॉक्यूमेंटेशन और उदाहरण [documentation page](https://reference.aspose.com/gis/net/) पर पा सकते हैं।
+
+**Q: क्या ट्रायल वर्ज़न उपलब्ध है?**  
+A: हाँ, आप मुफ्त ट्रायल के लिए [this link](https://releases.aspose.com/) पर जाकर Aspose.GIS का अन्वेषण कर सकते हैं।
+
+**Q: मैं सहायता या सपोर्ट कहाँ प्राप्त कर सकता हूँ?**  
+A: किसी भी सहायता या सपोर्ट‑संबंधी प्रश्नों के लिए [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) पर जाएँ।
+
+---
+
+**Last Updated:** 2026-01-10  
+**Tested With:** Aspose.GIS for .NET (latest release)  
+**Author:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}

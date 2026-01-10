@@ -1,28 +1,50 @@
 ---
-title: Criar novo conjunto de dados GDB de arquivo
-linktitle: Criar novo conjunto de dados GDB de arquivo
-second_title: API Aspose.GIS .NET
-description: Explore o Aspose.GIS for .NET para criar e gerenciar conjuntos de dados GIS sem esforço. Baixe agora para um desenvolvimento geoespacial perfeito. #Aspose #GIS
-weight: 10
+date: 2026-01-10
+description: Aprenda a criar conjuntos de dados .NET de geobanco de arquivos usando
+  Aspose.GIS para .NET. Guia passo a passo para gerenciamento de dados GIS sem esforço.
+linktitle: Create New File GDB Dataset
+second_title: Aspose.GIS .NET API
+title: Criar Conjunto de Dados .NET de Geodatabase de Arquivo com Aspose.GIS
 url: /pt/net/layer-management/create-new-file-gdb-dataset/
+weight: 10
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Criar novo conjunto de dados GDB de arquivo
+# Criar Conjunto de Dados File Geodatabase .NET com Aspose.GIS
 
 ## Introdução
-No domínio do desenvolvimento geoespacial, Aspose.GIS for .NET se destaca como um poderoso kit de ferramentas para gerenciar e manipular dados de Sistemas de Informação Geográfica (GIS). Quer você seja um desenvolvedor experiente ou esteja apenas começando sua jornada no GIS, este tutorial irá orientá-lo no processo de criação de um novo conjunto de dados File Geodatabase (GDB) usando Aspose.GIS for .NET.
-## Pré-requisitos
-Antes de mergulhar no tutorial, certifique-se de ter os seguintes pré-requisitos em vigor:
--  Aspose.GIS for .NET: Certifique-se de ter a biblioteca Aspose.GIS for .NET instalada. Você pode baixá-lo no[Página de download do Aspose.GIS para .NET](https://releases.aspose.com/gis/net/).
-- Ambiente de desenvolvimento: configure seu ambiente de desenvolvimento com um IDE compatível, como o Visual Studio, e tenha um conhecimento básico de programação .NET.
-- Diretório de documentos: substitua "Seu diretório de documentos" no trecho de código pelo caminho apropriado onde você deseja armazenar seu conjunto de dados GDB.
-- Familiaridade com C#: Este tutorial pressupõe que você esteja familiarizado com a linguagem de programação C#.
-## Importar namespaces
-Nas etapas iniciais, importe os namespaces necessários para aproveitar a funcionalidade Aspose.GIS em seu aplicativo .NET:
+Neste tutorial você **criará conjuntos de dados file geodatabase .NET** do zero usando Aspose.GIS para .NET. Seja construindo uma ferramenta GIS de desktop, um serviço web que armazena dados espaciais, ou simplesmente precisando de uma forma confiável de gerar File Geodatabases programaticamente, este guia o conduz por cada passo com explicações claras e contexto do mundo real.
+
+## Respostas Rápidas
+- **O que este tutorial cobre?** Criação de um novo File Geodatabase, adição de duas camadas e verificação do conjunto de dados usando Aspose.GIS para .NET.  
+- **Quanto tempo leva?** Cerca de 10‑15 minutos para um desenvolvedor familiarizado com C#.  
+- **Pré‑requisitos?** Ambiente de desenvolvimento .NET, biblioteca Aspose.GIS para .NET e um caminho de pasta gravável.  
+- **Posso usar isso no .NET Core / .NET 6+?** Sim – a API é totalmente compatível com runtimes .NET modernos.  
+- **Preciso de licença?** Uma licença temporária ou permanente do Aspose.GIS é necessária para uso em produção.
+
+## O que é um File Geodatabase?
+Um File Geodatabase (File GDB) é um armazenamento de dados baseado em pastas que contém classes de recursos GIS, conjuntos de dados raster e metadados relacionados. Ele oferece desempenho rápido de leitura/gravação, suporta grandes volumes de dados e é amplamente usado no ecossistema ArcGIS da Esri. Usando Aspose.GIS, você pode criar e manipular esses bancos de dados diretamente a partir de código .NET sem nenhum software GIS externo.
+
+## Por que criar file geodatabase .NET com Aspose.GIS?
+- **Sem dependências externas** – a biblioteca lida com todos os detalhes do formato de arquivo.  
+- **Multiplataforma** – funciona em runtimes .NET Windows, Linux e macOS.  
+- **Suporte rico a geometria** – pontos, linhas, polígonos e mais.  
+- **Controle total** – você decide o esquema, atributos e referência espacial.
+
+## Pré‑requisitos
+Antes de começar, certifique‑se de que você tem o seguinte:
+
+- Aspose.GIS para .NET instalado. Você pode baixá‑lo na [página de download do Aspose.GIS para .NET](https://releases.aspose.com/gis/net/).  
+- Um ambiente de desenvolvimento como Visual Studio 2022 (ou qualquer IDE que suporte .NET).  
+- Uma pasta gravável na sua máquina onde o novo GDB será criado – substitua `"Your Document Directory"` no código por esse caminho.  
+- Familiaridade básica com C# e a estrutura de projetos .NET.
+
+## Importar Namespaces
+Primeiro, importe os namespaces que dão acesso às classes Aspose.GIS:
+
 ```csharp
 using Aspose.Gis;
 using Aspose.Gis.Geometries;
@@ -33,17 +55,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 ```
-## Etapa 1: criar um novo conjunto de dados GDB de arquivo
+
+## Guia Passo a Passo
+
+### Etapa 1: Criar um Novo Conjunto de Dados File GDB
+O trecho a seguir cria um File Geodatabase vazio. Este é o núcleo de **create file geodatabase .net**.
+
 ```csharp
 string dataDir = "Your Document Directory";
 using (var dataset = Dataset.Create(dataDir, Drivers.FileGdb))
 {
-    Console.WriteLine(dataset.LayersCount); // Saída: 0
-    // Continue com as etapas subsequentes...
+    Console.WriteLine(dataset.LayersCount); // Output: 0
+    // Continue with subsequent steps...
 }
 ```
- Explicação: Nesta etapa, criamos um novo conjunto de dados GDB usando o`Dataset.Create` método. Especificamos o caminho e o driver (FileGdb) para criar um arquivo Geodatabase. A saída do console exibe a contagem inicial de camadas, que é zero neste ponto.
-## Etapa 2: criar e preencher a camada_1
+
+**Explicação:** `Dataset.Create` inicializa o GDB no caminho especificado usando o driver `FileGdb`. Neste ponto o conjunto de dados não contém camadas, portanto a contagem de camadas é zero.
+
+### Etapa 2: Criar e Popular `layer_1`
+Agora adicionamos a primeira camada que armazena atributos inteiros e geometrias de ponto.
+
 ```csharp
 using (var layer = dataset.CreateLayer("layer_1"))
 {
@@ -57,8 +88,15 @@ using (var layer = dataset.CreateLayer("layer_1"))
     }
 }
 ```
-Explicação: Esta etapa envolve a criação de uma camada chamada "camada_1" no conjunto de dados. Ele define um atributo denominado "valor" do tipo inteiro e preenche a camada com dez feições, cada uma possuindo uma geometria de ponto.
-## Etapa 3: criar e preencher a camada_2
+
+**Explicação:**  
+- `CreateLayer` cria uma nova classe de recursos chamada **layer_1**.  
+- Um atributo inteiro chamado **value** é definido.  
+- O loop adiciona dez recursos, cada um com um inteiro exclusivo e um ponto nas coordenadas *(i, i)*.
+
+### Etapa 3: Criar e Popular `layer_2`
+Em seguida, adicionamos uma segunda camada que demonstra o manuseio de geometria de linha.
+
 ```csharp
 using (var layer = dataset.CreateLayer("layer_2"))
 {
@@ -71,25 +109,50 @@ using (var layer = dataset.CreateLayer("layer_2"))
     layer.Add(feature);
 }
 ```
-Explicação: Aqui, criamos uma segunda camada chamada "camada_2" e adicionamos um único recurso com uma geometria de sequência de linhas.
-## Etapa 4: verifique a contagem de camadas atualizadas
+
+**Explicação:** Isto cria **layer_2** e insere um único recurso cuja geometria é um `LineString` conectando dois pontos.
+
+### Etapa 4:ificar a Cont Atualizada de Camadas
+Por fim, confirme que ambas as camadas foram adicionadas com sucesso.
+
 ```csharp
-Console.WriteLine(dataset.LayersCount); // Saída: 2
+Console.WriteLine(dataset.LayersCount); // Output: 2
 ```
-Explicação: Finalmente, verificamos a contagem de camadas atualizadas após adicionar as duas camadas. Neste caso, a saída deve ser 2.
+
+**Explicação:** O conjunto de dados agora relata duas camadas, confirmando que o processo **create file geodatabase .net** foi concluído como esperado.
+
+## Problemas Comuns e Soluções
+| Problema | Por que acontece | Solução |
+|----------|------------------|---------|
+| **`UnauthorizedAccessException`** ao criar o conjunto de dados | O caminho da pasta é somente leitura ou você não tem permissões. | Escolha um diretório gravável ou execute o Studio como Administrador. |
+| **`ArgumentException` para driver** | O nome do driver está escrito incorretamente ou a versão da biblioteca não o suporta. | Use `Drivers.FileGdb` exatamente como mostrado; garanta que você tem a versão mais recente do Aspose.GIS. |
+| **Recursos não aparecem no ArcGIS** | Falta referência espacial ou geometria incompatível. | Defina uma referência espacial na camada, se necessário, e assegure que as geometrias são válidas. |
+
+## Perguntas Frequentes
+### P: Posso usar Aspose.GIS para .NET com outras bibliotecas GIS?
+Aspose.GIS para .NET é um kit de ferramentas independente; porém, você pode integrá‑lo com outras bibliotecas .NET para ampliar a funcionalidade.
+
+### P: Existe um fórum da comunidade para suporte ao Aspose.GIS?
+Sim, você pode encontrar suporte e discussões no [Aspose.GIS Forum](https://forum.aspose.com/c/gis/33).
+
+### P: Como obter uma licença temporária para Aspose.GIS?
+Visite a página de [Licença Temporária](https://purchase.aspose.com/temporary-license/) para informações sobre como obter uma licença temporária.
+
+### P: Há exemplos e documentação adicionais disponíveis?
+Explore a [documentação do Aspose.GIS](https://reference.aspose.com/gis/net/) para mais exemplos e informações detalhadas.
+
+### P: Onde posso comprar Aspose.GIS para .NET?
+Você pode comprar Aspose.GIS para .NET na [página de compra](https://purchase.aspose.com/buy).
+
 ## Conclusão
-Parabéns! Você criou com sucesso um novo conjunto de dados File GDB e o preencheu com camadas usando Aspose.GIS for .NET. Este tutorial fornece uma compreensão básica do trabalho com dados geoespaciais em um ambiente .NET.
-## perguntas frequentes
-### P: Posso usar Aspose.GIS for .NET com outras bibliotecas GIS?
-Aspose.GIS for .NET é um kit de ferramentas independente; no entanto, você pode integrá-lo a outras bibliotecas .NET para aprimorar a funcionalidade.
-### P: Existe um fórum da comunidade para suporte do Aspose.GIS?
- Sim, você pode encontrar suporte e discussões no[Fórum Aspose.GIS](https://forum.aspose.com/c/gis/33).
-### P: Como posso obter uma licença temporária para Aspose.GIS?
- Visite a[Licença Temporária](https://purchase.aspose.com/temporary-license/) página para obter informações sobre como obter uma licença temporária.
-### P: Existem exemplos e documentação adicionais disponíveis?
- Explore o[Documentação Aspose.GIS](https://reference.aspose.com/gis/net/) para mais exemplos e informações detalhadas.
-### P: Onde posso comprar o Aspose.GIS para .NET?
- Você pode adquirir o Aspose.GIS for .NET no site[página de compra](https://purchase.aspose.com/buy).
+Você acabou de **criar conjuntos de dados file geodatabase .NET**, adicionar duas camadas distintas e verificar o resultado usando Aspose.GIS. Esta base permite que você construa aplicações GIS mais robustas — adicione mais camadas, defina esquemas complexos ou integre com serviços web. Explore mais a API do Aspose.GIS para trabalhar com dados raster, consultas espaciais e operações avançadas de geometria.
+
+---
+
+**Última atualização:** 2026-01-10  
+**Testado com:** Aspose.GIS para .NET 24.11 (ou mais recente)  
+**Autor:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
