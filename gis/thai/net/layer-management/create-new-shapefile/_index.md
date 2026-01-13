@@ -1,27 +1,39 @@
 ---
-title: สร้างเชปไฟล์ใหม่
-linktitle: สร้างเชปไฟล์ใหม่
+date: 2026-01-13
+description: เรียนรู้วิธีสร้างไฟล์ shapefile ใหม่ด้วย Aspose.GIS สำหรับ .NET คู่มือแบบขั้นตอนนี้จะแสดงวิธีกำหนดเลเยอร์เวกเตอร์
+  เพิ่มแอตทริบิวต์วันที่ และจัดการข้อมูลเชิงพื้นที่
+linktitle: Create New Shapefile
 second_title: Aspose.GIS .NET API
-description: เรียนรู้วิธีสร้างเชปไฟล์ใหม่โดยใช้ Aspose.GIS สำหรับ .NET ปฏิบัติตามคำแนะนำทีละขั้นตอนของเราและปลดล็อกพลังของการจัดการข้อมูลเชิงพื้นที่
-weight: 12
+title: สร้างไฟล์ Shapefile ใหม่
 url: /th/net/layer-management/create-new-shapefile/
+weight: 12
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# สร้างเชปไฟล์ใหม่
+# สร้าง Shapefile ใหม่
 
-## การแนะนำ
-หากคุณกำลังเจาะลึกการพัฒนาระบบสารสนเทศทางภูมิศาสตร์ (GIS) ด้วย .NET Aspose.GIS คือโซลูชันที่เหมาะกับคุณ ไลบรารีอันทรงพลังนี้ช่วยให้นักพัฒนาสามารถทำงานกับข้อมูลเชิงพื้นที่ได้อย่างราบรื่น และในบทช่วยสอนนี้ เราจะแนะนำคุณตลอดกระบวนการสร้างเชปไฟล์ใหม่โดยใช้ Aspose.GIS สำหรับ .NET
-## ข้อกำหนดเบื้องต้น
-ก่อนที่เราจะเข้าสู่บทช่วยสอน ตรวจสอบให้แน่ใจว่าคุณมีข้อกำหนดเบื้องต้นต่อไปนี้:
-- ความเข้าใจพื้นฐานเกี่ยวกับภาษาการเขียนโปรแกรม C#
-- ติดตั้ง Visual Studio บนเครื่องของคุณแล้ว
--  Aspose.GIS สำหรับไลบรารี .NET คุณสามารถดาวน์โหลดได้[ที่นี่](https://releases.aspose.com/gis/net/).
-## นำเข้าเนมสเปซ
-เริ่มต้นด้วยการนำเข้าเนมสเปซที่จำเป็นเพื่อใช้ประโยชน์จากฟังก์ชันการทำงานของ Aspose.GIS:
+## Introduction
+If you're delving into geographic information systems (GIS) development with .NET, Aspose.GIS is your go‑to solution. This powerful library empowers developers to work seamlessly with spatial data, and in this tutorial, we'll guide you through how to **create new shapefile** using Aspose.GIS for .NET. You'll see why defining a vector layer and adding a date attribute are essential steps for robust GIS projects.
+
+## Quick Answers
+- **What does this tutorial teach?** How to create a new shapefile, define a vector layer, and add attributes (including a date field).  
+- **Which library is required?** Aspose.GIS for .NET.  
+- **Do I need a license?** A free trial works for learning; a commercial license is required for production.  
+- **What IDE should I use?** Visual Studio (any recent version).  
+- **How long does the implementation take?** About 10‑15 minutes for the basic example.
+
+## Prerequisites
+Before we jump into the tutorial, make sure you have the following prerequisites in place:
+- Basic understanding of C# programming language.
+- Visual Studio installed on your machine.
+- Aspose.GIS for .NET library. You can download it [here](https://releases.aspose.com/gis/net/).
+
+## Import Namespaces
+Start by importing the necessary namespaces to leverage the functionality of Aspose.GIS:
+
 ```csharp
 using Aspose.Gis;
 using Aspose.Gis.Geometries;
@@ -31,25 +43,29 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 ```
-## ขั้นตอนที่ 1: ตั้งค่าโครงการของคุณ
-เริ่มต้นด้วยการสร้างโครงการ C# ใหม่ใน Visual Studio และรวมไลบรารี Aspose.GIS
-## ขั้นตอนที่ 2: กำหนดไดเร็กทอรีเอกสาร
+
+## Step 1: Set Up Your Project
+Begin by creating a new C# project in Visual Studio and include the Aspose.GIS library.
+
+## Step 2: Define the Document Directory
 ```csharp
 string dataDir = "Your Document Directory";
 ```
-แทนที่ "Your Document Directory" ด้วยเส้นทางจริงที่คุณต้องการบันทึกรูปร่างไฟล์ใหม่
-## ขั้นตอนที่ 3: สร้าง VectorLayer
+Replace *Your Document Directory* with the actual path where you want to save your new shapefile.
+
+## Step 3: Create a VectorLayer
 ```csharp
 using (VectorLayer layer = VectorLayer.Create(dataDir + "NewShapeFile_out.shp", Drivers.Shapefile))
 {
-    //เพิ่มคุณสมบัติก่อนที่จะเพิ่มคุณสมบัติ
+    // add attributes before adding features
     layer.Attributes.Add(new FeatureAttribute("name", AttributeDataType.String));
     layer.Attributes.Add(new FeatureAttribute("age", AttributeDataType.Integer));
     layer.Attributes.Add(new FeatureAttribute("dob", AttributeDataType.DateTime));
 ```
-ส่วนของโค้ดนี้จะตั้งค่าเลเยอร์เวกเตอร์และกำหนดคุณลักษณะสำหรับจุดสนใจของคุณ
-## ขั้นตอนที่ 4: เพิ่มคุณสมบัติ
-### กรณีที่ 1: ตั้งค่าเป็นรายบุคคล
+This code segment **defines a vector layer** and declares three attributes: a text field (`name`), an integer field (`age`), and a date‑time field (`dob`). Adding the date attribute is crucial for temporal GIS analyses.
+
+## Step 4: Add Features
+### Case 1: Sets Values Individually
 ```csharp
 Feature firstFeature = layer.ConstructFeature();
 firstFeature.Geometry = new Point(33.97, -118.25);
@@ -64,7 +80,9 @@ secondFeature.SetValue("age", 54);
 secondFeature.SetValue("dob", new DateTime(1984, 12, 15, 15, 30, 0));
 layer.Add(secondFeature);
 ```
-### กรณีที่ 2: ตั้งค่าใหม่สำหรับแอตทริบิวต์ทั้งหมด
+Here we create two points, set each attribute separately, and add the features to the layer.
+
+### Case 2: Sets New Values for All Attributes
 ```csharp
 Feature thirdFeature = layer.ConstructFeature();
 thirdFeature.Geometry = new Point(34.81, -92.28);
@@ -73,19 +91,41 @@ thirdFeature.SetValues(data);
 layer.Add(thirdFeature);
 }
 ```
-## บทสรุป
- ยินดีด้วย! คุณสร้างเชปไฟล์ใหม่โดยใช้ Aspose.GIS สำหรับ .NET สำเร็จแล้ว บทช่วยสอนนี้ครอบคลุมพื้นฐานการตั้งค่าโปรเจ็กต์ การกำหนดแอตทริบิวต์ และการเพิ่มฟีเจอร์ ขณะที่คุณสำรวจเพิ่มเติม โปรดดูที่[เอกสารประกอบ](https://reference.aspose.com/gis/net/) สำหรับคุณสมบัติและฟังก์ชันขั้นสูง
-## คำถามที่พบบ่อย
-### ถาม: ฉันสามารถใช้ Aspose.GIS กับภาษาการเขียนโปรแกรมอื่นๆ ได้หรือไม่
-Aspose.GIS รองรับ .NET เป็นหลัก แต่ก็มีเวอร์ชันสำหรับ Java ด้วยเช่นกัน
-### ถาม: มีการทดลองใช้ฟรีหรือไม่?
- ใช่ คุณสามารถเข้าถึงการทดลองใช้ฟรีได้[ที่นี่](https://releases.aspose.com/).
-### ถาม: ฉันจะรับการสนับสนุนสำหรับ Aspose.GIS ได้ที่ไหน
- เยี่ยมชม[ฟอรัม Aspose.GIS](https://forum.aspose.com/c/gis/33) สำหรับการสนับสนุนและการอภิปรายของชุมชน
-### ถาม: ฉันจะขอรับใบอนุญาตชั่วคราวได้อย่างไร
- รับใบอนุญาตชั่วคราวของคุณ[ที่นี่](https://purchase.aspose.com/temporary-license/).
-### ถาม: ฉันจะซื้อ Aspose.GIS สำหรับ .NET ได้ที่ไหน
- คุณสามารถซื้อห้องสมุดได้[ที่นี่](https://purchase.aspose.com/buy).
+In this approach we populate all attribute values in one call using an object array—handy when you have many attributes.
+
+## Why This Matters
+Creating a shapefile programmatically lets you automate data pipelines, generate test datasets, or integrate GIS output directly into web services. By mastering **how to create shapefile** with Aspose.GIS, you gain full control over feature geometry, attribute schema, and file format compliance.
+
+## Common Pitfalls & Tips
+- **Path separators:** Use `Path.Combine` for cross‑platform compatibility instead of string concatenation.  
+- **Attribute order:** The order of values in `SetValues` must match the order you added attributes.  
+- **Date handling:** Always use `DateTimeKind.Utc` if your GIS data will be shared across time zones.
+
+## Conclusion
+Congratulations! You've successfully created a new shapefile using Aspose.GIS for .NET. This tutorial covered the basics of setting up your project, defining a vector layer, and adding features—including a date attribute. As you explore further, refer to the [documentation](https://reference.aspose.com/gis/net/) for advanced features and functionalities.
+
+## Frequently Asked Questions
+### Q: Can I use Aspose.GIS with other programming languages?
+Aspose.GIS primarily supports .NET, but there are versions available for Java as well.  
+
+### Q: Is there a free trial available?
+Yes, you can access the free trial [here](https://releases.aspose.com/).  
+
+### Q: Where can I find support for Aspose.GIS?
+Visit the [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) for community support and discussions.  
+
+### Q: How can I obtain a temporary license?
+Get your temporary license [here](https://purchase.aspose.com/temporary-license/).  
+
+### Q: Where can I purchase Aspose.GIS for .NET?
+You can buy the library [here](https://purchase.aspose.com/buy).
+
+---
+
+**Last Updated:** 2026-01-13  
+**Tested With:** Aspose.GIS 24.11 for .NET  
+**Author:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}

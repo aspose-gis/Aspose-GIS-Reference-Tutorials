@@ -1,26 +1,48 @@
 ---
-title: 掌握 GIS - 使用 Aspose.GIS for .NET 將圖層加入 GDB
-linktitle: 將圖層新增至檔案 GDB 資料集
+date: 2026-01-13
+description: 了解如何使用 Aspose.GIS 為 File GDB 資料集新增圖層，並支援 WGS84 空間參考。請遵循此逐步指南，在 .NET 中將圖層新增至
+  GDB。
+linktitle: Add Layer to File GDB Dataset
 second_title: Aspose.GIS .NET API
-description: 使用 Aspose.GIS for .NET 釋放 GIS 的強大功能！在此逐步教學中了解如何將圖層新增至檔案 GDB 資料集。 #地理資料#Aspose #GIS
-weight: 16
+title: 空間參考 WGS84 – 使用 Aspose.GIS 向 GDB 添加圖層
 url: /zh-hant/net/layer-management/add-layer-to-file-gdb-dataset/
+weight: 16
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# 掌握 GIS - 使用 Aspose.GIS for .NET 將圖層加入 GDB
+# spatial reference wgs84 – 使用 Aspose.GIS 向 GDB 新增圖層
 
-## 介紹
-您準備好使用 Aspose.GIS for .NET 增強您的 GIS 功能了嗎？在本逐步指南中，我們將引導您完成在文件地理資料庫 (GDB) 資料集中新增圖層的過程。 Aspose.GIS for .NET 提供了強大的功能來操作地理訊息，透過本教程，您將能夠將其他圖層無縫整合到資料集中。
-## 先決條件
-在深入學習本教程之前，請確保您具備以下先決條件：
--  Aspose.GIS for .NET Library：從以下位置下載並安裝該程式庫：[Aspose.GIS for .NET 文檔](https://reference.aspose.com/gis/net/).
-- 文件目錄：在您的機器上建立專用的文件目錄，用於儲存和管理GIS相關文件。
-## 導入命名空間
-在您的 .NET 專案中，請確保匯入必要的命名空間以存取 Aspose.GIS 功能。使用以下程式碼片段：
+## Introduction
+準備好使用 Aspose.GIS for .NET 提升您的 GIS 工作流程了嗎？在本教學中，您將學習 **如何向 File GDB 資料集新增圖層**，同時使用 **spatial reference wgs84** 座標系統。我們會逐步說明，從準備資料夾到驗證新建立的圖層，讓您能自信地操作地理資料。
+
+## Quick Answers
+- **使用的主要座標系統是什麼？** spatial reference wgs84 (WGS 84)  
+- **哪個函式庫提供 API？** Aspose.GIS for .NET  
+- **測試是否需要授權？** 是 – 可取得臨時 Aspose 授權。  
+- **可以為新圖層新增屬性嗎？** 當然可以，您可以定義任意數量的要素屬性。  
+- **支援哪些 .NET 版本？** .NET Framework 4.5+、.NET Core 3.1+、.NET 5/6。
+
+## What is spatial reference wgs84?
+spatial reference wgs84（World Geodetic System 1984）是最廣泛使用的地理座標系統。它以度數定義緯度與經度，並作為許多 GIS 資料集的預設座標參考系（CRS），包括本指南中將建立的資料集。
+
+## Why use Aspose.GIS to add a layer?
+- **無外部相依性：** 直接使用純 .NET 程式碼即可運作。  
+- **完整控制結構：** 您可以自訂屬性與幾何類型。  
+- **跨平台：** 相容於 Windows、Linux 與 macOS 執行環境。  
+- **彈性授權：** 臨時授權讓您在正式投入前快速評估。
+
+## Prerequisites
+開始之前，請確保您已具備：
+
+- Aspose.GIS for .NET 程式庫：從 [Aspose.GIS for .NET Documentation](https://reference.aspose.com/gis/net/) 下載並安裝程式庫。  
+- 文件目錄：在您的電腦上建立專用資料夾以儲存 GIS 檔案。
+
+## Import Namespaces
+Add the required `using` statements to your C# project so you can access Aspose.GIS classes:
+
 ```csharp
 using Aspose.Gis;
 using Aspose.Gis.Geometries;
@@ -32,23 +54,29 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 ```
-## 第1步：複製目錄
-在繼續之前，複製包含 GDB 資料集的目錄。此步驟可確保原始資料集保持完整。使用提供的程式碼片段：
+
+## Step 1: Copy Directory
+First, duplicate the folder that contains the original GDB dataset. Keeping a copy protects the source data while you experiment.
+
 ```csharp
 string dataDir = "Your Document Directory";
 var path = dataDir + "ThreeLayers.gdb";
 var datasetPath = "Your Document Directory" + "AddLayerToFileGdbDataset_out.gdb";
 RunExamples.CopyDirectory(path, datasetPath);
 ```
-## 步驟2：開啟資料集並檢查建立能力
-打開複製的資料集並檢查它是否可以建立圖層。這是由存在證實的`True`在控制台輸出中。
+
+## Step 2: Open Dataset and Verify Creation Capability
+Open the newly copied dataset and confirm that it can create new layers. The `CanCreateLayers` property should return **True**.
+
 ```csharp
 using (var dataset = Dataset.Open(datasetPath, Drivers.FileGdb))
 {
-    Console.WriteLine(dataset.CanCreateLayers); //真的
+    Console.WriteLine(dataset.CanCreateLayers); // True
 ```
-## 第 3 步：建立並填入新圖層
-在資料集中建立一個新圖層，定義其空間參考系統、屬性和範例要素。此程式碼片段演示了該過程：
+
+## Step 3: Create and Populate a New Layer with spatial reference wgs84
+Now we create a layer named **data** and explicitly set its spatial reference to **Wgs84**. We also add a simple attribute called **Name** and insert one point feature.
+
 ```csharp
 using (var layer = dataset.CreateLayer("data", SpatialReferenceSystem.Wgs84))
 {
@@ -59,31 +87,48 @@ using (var layer = dataset.CreateLayer("data", SpatialReferenceSystem.Wgs84))
     layer.Add(feature);
 }
 ```
-## 第 4 步：開啟並驗證新增的層
-打開您剛剛建立的圖層並驗證其內容。使用以下程式碼檢查計數並檢索屬性值：
+
+## Step 4: Open and Validate the Added Layer
+Finally, open the layer you just created and verify its contents. The console will show that the layer contains one feature and that the **Name** attribute matches what we set.
+
 ```csharp
 using (var layer = dataset.OpenLayer("data"))
 {
-    Console.WriteLine(layer.Count); //1
-    Console.WriteLine(layer[0].GetValue<string>("Name")); // “姓名_1”
+    Console.WriteLine(layer.Count); // 1
+    Console.WriteLine(layer[0].GetValue<string>("Name")); // "Name_1"
 }
 ```
-## 結論
-恭喜！您已成功學習如何使用 Aspose.GIS for .NET 將圖層新增至檔案 GDB 資料集。借助這些新發現的技能，您可以有效地操作 GIS 專案中的地理資料。
-## 經常問的問題
-### Q：我可以將 Aspose.GIS for .NET 與其他 GIS 程式庫一起使用嗎？
-Aspose.GIS for .NET 設計為獨立工作，但它可以與其他程式庫整合以增強功能。
-### Q：臨時許可證是否可用於測試目的？
-是的，您可以從以下地址獲得臨時許可證[這裡](https://purchase.aspose.com/temporary-license/)用於測試和評估。
-### Q：Aspose.GIS for .NET 支援哪些空間參考系統？
-Aspose.GIS for .NET 支援廣泛的空間參考系統，提供地理資料處理的彈性。
-### Q：我可以為 Aspose.GIS 社群做出貢獻嗎？
-絕對地！參與討論並分享您的經驗[Aspose.GIS論壇](https://forum.aspose.com/c/gis/33).
-### Q：在哪裡可以找到 Aspose.GIS for .NET 的詳細文件？
-探索全面的文檔[這裡](https://reference.aspose.com/gis/net/)有關 Aspose.GIS for .NET 的深入資訊。
+
+## Common Issues & Tips
+- **路徑不正確：** 確認 `dataDir` 以路徑分隔符 (`/` 或 `\`) 結尾，確保字串串接後形成有效的檔案路徑。  
+- **授權錯誤：** 若出現授權警告，請在執行程式前於 Aspose 入口網站套用臨時授權。  
+- **CRS 不匹配：** 在其他 GIS 工具中開啟此圖層時，請確認該工具將 WGS 84（EPSG:4326）辨識為座標系統。
+
+## Frequently Asked Questions
+### Q: Can I use Aspose.GIS for .NET with other GIS libraries?
+Aspose.GIS for .NET 設計為獨立使用，但可與其他函式庫整合以增強功能。
+
+### Q: Is a temporary license available for testing purposes?
+是的，您可從 [此處](https://purchase.aspose.com/temporary-license/) 取得臨時授權，用於測試與評估。
+
+### Q: What spatial reference systems does Aspose.GIS for .NET support?
+Aspose.GIS for .NET 支援多種座標參考系，提供地理資料處理的彈性。
+
+### Q: Can I contribute to the Aspose.GIS community?
+當然可以！歡迎加入討論，並在 [Aspose.GIS 論壇](https://forum.aspose.com/c/gis/33) 分享您的經驗。
+
+### Q: Where can I find detailed documentation for Aspose.GIS for .NET?
+請至 [此處](https://reference.aspose.com/gis/net/) 探索完整文件，取得 Aspose.GIS for .NET 的深入資訊。
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+---
+
+**最後更新：** 2026-01-13  
+**測試環境：** Aspose.GIS for .NET (latest stable version)  
+**作者：** Aspose

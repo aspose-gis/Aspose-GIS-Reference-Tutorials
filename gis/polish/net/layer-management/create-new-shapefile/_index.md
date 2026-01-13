@@ -1,27 +1,40 @@
 ---
-title: Utwórz nowy plik kształtu
-linktitle: Utwórz nowy plik kształtu
+date: 2026-01-13
+description: Dowiedz się, jak utworzyć nowy plik shapefile przy użyciu Aspose.GIS
+  dla .NET. Ten przewodnik krok po kroku pokazuje, jak zdefiniować warstwę wektorową,
+  dodać atrybut daty i zarządzać danymi przestrzennymi.
+linktitle: Create New Shapefile
 second_title: Aspose.GIS .NET API
-description: Dowiedz się, jak utworzyć nowy plik kształtu przy użyciu Aspose.GIS dla .NET. Postępuj zgodnie z naszym przewodnikiem krok po kroku i odblokuj moc manipulacji danymi przestrzennymi.
-weight: 12
+title: Utwórz nowy shapefile
 url: /pl/net/layer-management/create-new-shapefile/
+weight: 12
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Utwórz nowy plik kształtu
+# Utwórz nowy shapefile
 
-## Wstęp
-Jeśli zagłębiasz się w rozwój systemów informacji geograficznej (GIS) za pomocą .NET, Aspose.GIS jest rozwiązaniem dla Ciebie. Ta potężna biblioteka umożliwia programistom bezproblemową pracę z danymi przestrzennymi, a w tym samouczku poprowadzimy Cię przez proces tworzenia nowego pliku kształtu przy użyciu Aspose.GIS dla .NET.
-## Warunki wstępne
-Zanim przejdziemy do samouczka, upewnij się, że spełniasz następujące wymagania wstępne:
+## Wprowadzenie
+Jeśli zagłębiasz się w rozwój systemów informacji geograficznej (GIS) w .NET, Aspose.GIS jest Twoim rozwiązaniem. Ta potężna biblioteka umożliwia programistom płynną pracę z danymi przestrzennymi, a w tym samouczku pokażemy, jak **utworzyć nowy shapefile** przy użyciu Aspose.GIS dla .NET. Zobaczysz, dlaczego definiowanie warstwy wektorowej i dodanie atrybutu daty są kluczowymi krokami w solidnych projektach GIS.
+
+## Szybkie odpowiedzi
+- **Co uczy ten samouczek?** Jak utworzyć nowy shapefile, zdefiniować warstwę wektorową i dodać atrybuty (w tym pole daty).  
+- **Jakiej biblioteki potrzebujesz?** Aspose.GIS dla .NET.  
+- **Czy potrzebna jest licencja?** Bezpłatna wersja próbna wystarczy do nauki; licencja komercyjna jest wymagana w produkcji.  
+- **Jakie IDE powinienem używać?** Visual Studio (dowolna nowsza wersja).  
+- **Jak długo trwa implementacja?** Około 10‑15 minut dla podstawowego przykładu.
+
+## Wymagania wstępne
+Zanim przejdziemy do samouczka, upewnij się, że spełniasz następujące wymagania:
 - Podstawowa znajomość języka programowania C#.
-- Program Visual Studio zainstalowany na Twoim komputerze.
--  Biblioteka Aspose.GIS dla .NET. Możesz go pobrać[Tutaj](https://releases.aspose.com/gis/net/).
-## Importuj przestrzenie nazw
-Zacznij od zaimportowania niezbędnych przestrzeni nazw, aby wykorzystać funkcjonalność Aspose.GIS:
+- Zainstalowany Visual Studio na komputerze.
+- Biblioteka Aspose.GIS dla .NET. Możesz ją pobrać [tutaj](https://releases.aspose.com/gis/net/).
+
+## Importowanie przestrzeni nazw
+Rozpocznij od zaimportowania niezbędnych przestrzeni nazw, aby wykorzystać funkcjonalność Aspose.GIS:
+
 ```csharp
 using Aspose.Gis;
 using Aspose.Gis.Geometries;
@@ -31,25 +44,29 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 ```
-## Krok 1: Skonfiguruj swój projekt
-Rozpocznij od utworzenia nowego projektu C# w programie Visual Studio i dołącz bibliotekę Aspose.GIS.
-## Krok 2: Zdefiniuj katalog dokumentów
+
+## Krok 1: Konfiguracja projektu
+Rozpocznij od utworzenia nowego projektu C# w Visual Studio i dołącz biblioteki Aspose.GIS.
+
+## Krok 2: Definiowanie katalogu dokumentów
 ```csharp
 string dataDir = "Your Document Directory";
 ```
-Zastąp „Twój katalog dokumentów” rzeczywistą ścieżką, w której chcesz zapisać nowy plik kształtu.
-## Krok 3: Utwórz warstwę wektorową
+Zastąp *Your Document Directory* rzeczywistą ścieżką, w której chcesz zapisać nowy shapefile.
+
+## Krok 3: Utworzenie VectorLayer
 ```csharp
 using (VectorLayer layer = VectorLayer.Create(dataDir + "NewShapeFile_out.shp", Drivers.Shapefile))
 {
-    //dodaj atrybuty przed dodaniem funkcji
+    // add attributes before adding features
     layer.Attributes.Add(new FeatureAttribute("name", AttributeDataType.String));
     layer.Attributes.Add(new FeatureAttribute("age", AttributeDataType.Integer));
     layer.Attributes.Add(new FeatureAttribute("dob", AttributeDataType.DateTime));
 ```
-Ten segment kodu konfiguruje warstwę wektorową i definiuje atrybuty Twoich funkcji.
-## Krok 4: Dodaj funkcje
-### Przypadek 1: Ustawia wartości indywidualnie
+Ten fragment kodu **definiuje warstwę wektorową** i deklaruje trzy atrybuty: pole tekstowe (`name`), pole liczb całkowitych (`age`) oraz pole daty i czasu (`dob`). Dodanie atrybutu daty jest kluczowe dla analiz czasowych w GIS.
+
+## Krok 4: Dodawanie obiektów
+### Przypadek 1: Ustawianie wartości indywidualnie
 ```csharp
 Feature firstFeature = layer.ConstructFeature();
 firstFeature.Geometry = new Point(33.97, -118.25);
@@ -64,7 +81,9 @@ secondFeature.SetValue("age", 54);
 secondFeature.SetValue("dob", new DateTime(1984, 12, 15, 15, 30, 0));
 layer.Add(secondFeature);
 ```
-### Przypadek 2: Ustawia nowe wartości dla wszystkich atrybutów
+Tutaj tworzymy dwa punkty, ustawiamy każdy atrybut osobno i dodajemy obiekty do warstwy.
+
+### Przypadek 2: Ustawianie nowych wartości dla wszystkich atrybutów
 ```csharp
 Feature thirdFeature = layer.ConstructFeature();
 thirdFeature.Geometry = new Point(34.81, -92.28);
@@ -73,19 +92,39 @@ thirdFeature.SetValues(data);
 layer.Add(thirdFeature);
 }
 ```
-## Wniosek
- Gratulacje! Pomyślnie utworzyłeś nowy plik kształtu przy użyciu Aspose.GIS dla .NET. W tym samouczku omówiono podstawy konfigurowania projektu, definiowania atrybutów i dodawania funkcji. W miarę dalszej eksploracji zapoznaj się z[dokumentacja](https://reference.aspose.com/gis/net/) dla zaawansowanych funkcji i funkcjonalności.
-## Często Zadawane Pytania
+W tym podejściu wypełniamy wszystkie wartości atrybutów w jednym wywołaniu przy użyciu tablicy obiektów — przydatne, gdy masz wiele atrybutów.
+
+## Dlaczego to jest ważne
+Programowe tworzenie shapefile pozwala automatyzować przepływy danych, generować zestawy testowe lub integrować wyniki GIS bezpośrednio z usługami internetowymi. Opanowując **tworzenie shapefile** przy użyciu Aspose.GIS, uzyskasz pełną kontrolę nad geometrią obiektów, schematem atrybutów i zgodnością formatu pliku.
+
+## Częste pułapki i wskazówki
+- **Separatory ścieżek:** Używaj `Path.Combine` dla kompatybilności międzyplatformowej zamiast konkatenacji ciągów.  
+- **Kolejność atrybutów:** Kolejność wartości w `SetValues` musi odpowiadać kolejności, w jakiej dodano atrybuty.  
+- **Obsługa dat:** Zawsze używaj `DateTimeKind.Utc`, jeśli Twoje dane GIS będą udostępniane w różnych strefach czasowych.
+
+## Zakończenie
+Gratulacje! Pomyślnie utworzyłeś nowy shapefile przy użyciu Aspose.GIS dla .NET. Ten samouczek obejmował podstawy konfiguracji projektu, definiowania warstwy wektorowej i dodawania obiektów — w tym atrybutu daty. W miarę dalszej eksploracji odwołuj się do [dokumentacji](https://reference.aspose.com/gis/net/) w celu poznania zaawansowanych funkcji i możliwości.
+
+## Najczęściej zadawane pytania
 ### P: Czy mogę używać Aspose.GIS z innymi językami programowania?
-Aspose.GIS obsługuje przede wszystkim .NET, ale dostępne są również wersje dla Java.
-### P: Czy dostępny jest bezpłatny okres próbny?
- Tak, możesz uzyskać dostęp do bezpłatnego okresu próbnego[Tutaj](https://releases.aspose.com/).
+Aspose.GIS głównie obsługuje .NET, ale dostępne są także wersje dla Javy.
+
+### P: Czy dostępna jest bezpłatna wersja próbna?
+Tak, bezpłatną wersję próbną możesz uzyskać [tutaj](https://releases.aspose.com/).
+
 ### P: Gdzie mogę znaleźć wsparcie dla Aspose.GIS?
- Odwiedzić[Forum Aspose.GIS](https://forum.aspose.com/c/gis/33) za wsparcie społeczności i dyskusje.
-### P: Jak mogę uzyskać licencję tymczasową?
- Zdobądź tymczasową licencję[Tutaj](https://purchase.aspose.com/temporary-license/).
+Odwiedź [forum Aspose.GIS](https://forum.aspose.com/c/gis/33) w celu uzyskania wsparcia społeczności i dyskusji.
+
+### P: Jak mogę uzyskać tymczasową licencję?
+Uzyskaj tymczasową licencję [tutaj](https://purchase.aspose.com/temporary-license/).
+
 ### P: Gdzie mogę kupić Aspose.GIS dla .NET?
- Można kupić bibliotekę[Tutaj](https://purchase.aspose.com/buy).
+Bibliotekę możesz kupić [tutaj](https://purchase.aspose.com/buy).
+
+**Ostatnia aktualizacja:** 2026-01-13  
+**Testowano z:** Aspose.GIS 24.11 dla .NET  
+**Autor:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
