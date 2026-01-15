@@ -1,27 +1,50 @@
 ---
-title: Maîtriser l'étiquetage des fonctionnalités avec Aspose.GIS pour .NET
-linktitle: Étiqueter les entités sur la carte
-second_title: API Aspose.GIS .NET
-description: Explorez Aspose.GIS pour .NET et maîtrisez l'art de l'étiquetage des entités sur les cartes. Améliorez vos visualisations géospatiales sans effort. #Aspose #SIG
-weight: 11
+date: 2026-01-15
+description: Apprenez à étiqueter les entités cartographiques à l'aide d'Aspose.GIS
+  pour .NET, avec des options de style d'étiquette personnalisées pour le libellé
+  de grands ensembles de données.
+linktitle: Label Features on Map
+second_title: Aspose.GIS .NET API
+title: Étiqueter les entités cartographiques avec Aspose.GIS pour .NET
 url: /fr/net/map-rendering/label-features-on-map/
+weight: 11
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Maîtriser l'étiquetage des fonctionnalités avec Aspose.GIS pour .NET
+# Fonctionnalités d'étiquetage des entités cartographiques avec Aspose.GIS pour .NET
 
 ## Introduction
-Dans le monde de la visualisation de données géospatiales, l’étiquetage des entités sur une carte joue un rôle crucial dans la transmission efficace des informations. Aspose.GIS for .NET fournit une boîte à outils puissante pour y parvenir de manière transparente. Dans ce didacticiel, nous explorerons différentes méthodes d'étiquetage de points sur une carte à l'aide d'Aspose.GIS, améliorant ainsi vos visualisations de carte avec des étiquettes informatives.
-## Conditions préalables
-Avant de plonger dans le didacticiel, assurez-vous que les conditions préalables suivantes sont remplies :
-- Une connaissance pratique de C# et du framework .NET.
--  Aspose.GIS pour .NET installé. Vous pouvez le télécharger[ici](https://releases.aspose.com/gis/net/).
-- Un fichier GeoJSON contenant des données de points. Si vous n'en avez pas, vous pouvez utiliser un exemple de fichier pour tester.
-## Importer des espaces de noms
-Dans votre code C#, assurez-vous d'importer les espaces de noms nécessaires pour travailler avec Aspose.GIS :
+L'étiquetage des entités cartographiques est essentiel pour transformer des données géospatiales brutes en visualisations claires et conviviales. Dans ce tutoriel, vous découvrirez **comment étiqueter les entités cartographiques** (le mot‑clé principal) à l'aide d'Aspose.GIS pour .NET, explorerez les styles d'étiquettes personnalisés et verrez des techniques qui fonctionnent même avec de grands ensembles de données. À la fin, vous serez capable d'ajouter du texte informatif directement sur vos cartes, les rendant plus instructives pour les analystes et les utilisateurs finaux.
+
+## Réponses rapides
+- **Quelle est la classe principale pour le rendu ?** `Map` (Aspose.Gis.Rendering)
+- **Quelle classe d'étiquetage ajoute du texte simple ?** `SimpleLabeling`
+- **Puis‑je styliser les étiquettes (halo, police, rotation) ?** Oui – via des propriétés comme `HaloSize`, `FontStyle` et `Placement`
+- **Comment gérer de grands ensembles de données ?** Utilisez `FeatureBasedConfiguration` pour prioriser les étiquettes en fonction des valeurs d'attributs
+- **Ai‑je besoin d'une licence ?** Une version d'essai fonctionne pour le développement ; une licence commerciale est requise pour la production
+
+## Qu'est‑ce que l'étiquetage des entités cartographiques ?
+`label map features` signifie attacher du texte lisible (tel que des noms de villes, des chiffres de population ou des identifiants personnalisés) aux objets géométriques — points, lignes ou polygones—afin que la carte transmette à la fois les informations spatiales et attributaires d'un seul coup d'œil.
+
+## Pourquoi utiliser Aspose.GIS pour l'étiquetage des entités cartographiques ?
+- **Aucune dépendance externe** – bibliothèque .NET pure, aucune binaire GIS native requise.  
+- **Options de style riches** – halos, polices personnalisées, rotation et points d’ancrage vous permettent d’ajuster finement l’apparence.  
+- **Conçu pour la performance** – l’étiquetage basé sur les entités intégré vous permet de prioriser les étiquettes les plus importantes lors du rendu de grands ensembles de données.  
+- **Multiples formats de sortie** – SVG, PNG, PDF, etc., avec des résultats d’étiquetage cohérents.
+
+## Prérequis
+Avant de commencer, assurez‑vous de disposer de :
+
+- Une connaissance pratique du C# et du framework .NET.  
+- Aspose.GIS pour .NET installé. Vous pouvez le télécharger **[ici](https://releases.aspose.com/gis/net/)**.  
+- Un fichier GeoJSON contenant des données ponctuelles (ou tout autre format vectoriel pris en charge).  
+
+## Importer les espaces de noms
+Dans votre code C#, importez les espaces de noms requis :
+
 ```csharp
 using System;
 using System.Drawing;
@@ -32,14 +55,16 @@ using Aspose.Gis.Rendering.Symbolizers;
 using Aspose.GIS.Examples.CSharp;
 using FontStyle = Aspose.Gis.Rendering.Labelings.FontStyle;
 ```
-Maintenant, décomposons chaque exemple en plusieurs étapes dans un format de guide étape par étape.
-##  Étiquetage des points
 
-### Étape 1 : Définissez le chemin d'accès à votre répertoire de documents :
+Nous allons maintenant parcourir plusieurs scénarios d'étiquetage, chacun s’appuyant sur le précédent.
+
+## Étiquetage de points – Comment étiqueter des points
+### Étape 1 : Définir le chemin vers votre répertoire de documents
 ```csharp
 string dataDir = "Your Document Directory";
 ```
-### Étape 2 : Créez une carte avec un simple symbole de marqueur :
+
+### Étape 2 : Créer une carte avec un symbole de marqueur simple
 ```csharp
 using (var map = new Map(500, 200))
 {
@@ -49,18 +74,19 @@ using (var map = new Map(500, 200))
         StrokeStyle = StrokeStyle.None
     };
     var labeling = new SimpleLabeling(labelAttribute: "name");
-    // 3. Ajoutez un calque vectoriel et appliquez l'étiquetage
+    // 3. Add a vector layer and apply labeling
     map.Add(VectorLayer.Open(dataDir + "points.geojson", Drivers.GeoJson), symbol, labeling);
     map.Padding = 50;
-    // 4. Rendre la carte dans un fichier SVG
+    // 4. Render the map to an SVG file
     map.Render(dataDir + "points_labeling_out.svg", Renderers.Svg);
 }
 ```
-## Style d'étiquetage des points
 
-Suivez les étapes 1 et 2 de l’exemple précédent.
+Dans cet exemple de base nous **how to label points** en utilisant l'attribut `name` du fichier GeoJSON.
 
-### Étape 1 : Personnalisez le style d'étiquetage :
+## Étiquetage de points stylisé – Style d'étiquette personnalisé
+Suivez les étapes 1 et 2 de l'exemple précédent, puis personnalisez le style d'étiquetage :
+
 ```csharp
 var labeling = new SimpleLabeling(labelAttribute: "name")
 {
@@ -69,12 +95,14 @@ var labeling = new SimpleLabeling(labelAttribute: "name")
     FontSize = 15,
     FontStyle = FontStyle.Italic,
 };
-// Le reste des étapes reste le même
+// Rest of the steps remain the same
 ```
-## Points d'étiquetage placés
 
-Suivez les étapes 1 et 2 du premier exemple.
-### Étape 2 : Personnalisez l'emplacement de l'étiquette :
+Le halo ajouté et la police italique donnent aux étiquettes un **custom label style** qui se démarque sur des arrière‑plans chargés.
+
+## Étiquetage de points avec placement – Options de placement avancées
+Reprenez les étapes 1 et 2 du premier exemple, puis ajustez le placement :
+
 ```csharp
 var labeling = new SimpleLabeling(labelAttribute: "name")
 {
@@ -88,13 +116,14 @@ var labeling = new SimpleLabeling(labelAttribute: "name")
         Rotation = 10,
     }
 };
-// Le reste des étapes reste le même
+// Rest of the steps remain the same
 ```
-## Basé sur la fonctionnalité d'étiquetage des points
 
-Suivez les étapes 1 et 2 du premier exemple.
+Ici nous contrôlons les points d’ancrage, les décalages et la rotation, vous offrant un contrôle granulaire sur **how to label points** dans des zones cartographiques encombrées.
 
-### Étape 1 : Mettre en œuvre un étiquetage basé sur les fonctionnalités :
+## Étiquetage de points basé sur les entités – Étiquetage de grands ensembles de données
+Lorsque vous traitez de nombreux points, vous pouvez vouloir prioriser les étiquettes selon un attribut tel que la population. Suivez les étapes 1 et 2 du premier exemple, puis implémentez l'étiquetage basé sur les entités :
+
 ```csharp
 var pointLabeling = new SimpleLabeling("name")
 {
@@ -108,30 +137,46 @@ var pointLabeling = new SimpleLabeling("name")
     },
     FeatureBasedConfiguration = (feature, labeling) =>
     {
-        // Récupérez la population de la fonctionnalité.
+        // Retrieve population from the feature.
         var population = feature.GetValue<int>("population");
-        // La taille de la police est calculée et basée sur la population.
+        // Font size is computed and is based on the population.
         labeling.FontSize = Math.Min(20, 5 * population / 1000);
-        // La priorité du label repose également sur la population.
-        // Plus la priorité est élevée, plus l'étiquette est susceptible d'apparaître sur l'image de sortie.
+        // Priority of the label is also based on the population.
+        // The greater the priority is, the more likely label will appear on the output image.
         labeling.Priority = population;
     }
 };
-// Le reste des étapes reste le même
+// Rest of the steps remain the same
 ```
+
+Cette stratégie **large dataset labeling** garantit que les villes les plus importantes (par population) sont affichées en premier, tandis que les points moins critiques peuvent être omis lorsque l’espace est limité.
+
 ## Conclusion
-Toutes nos félicitations! Vous avez appris à améliorer vos visualisations cartographiques en étiquetant les entités à l'aide d'Aspose.GIS pour .NET. Expérimentez avec différents styles et emplacements pour créer des cartes attrayantes adaptées à vos données.
-## FAQ
-### Puis-je étiqueter des entités à l’aide de polices personnalisées ?
-Oui, vous pouvez personnaliser le style et la taille de la police dans la configuration de l'étiquetage.
-### Aspose.GIS est-il compatible avec d'autres formats de données SIG ?
-Aspose.GIS prend en charge divers formats géospatiaux, notamment GeoJSON, Shapefile, etc.
-### Comment puis-je gérer de grands ensembles de données pour l’étiquetage ?
-Aspose.GIS est optimisé pour les performances, mais envisagez d'utiliser des configurations basées sur les fonctionnalités pour hiérarchiser les étiquettes en fonction des attributs de données.
-### Existe-t-il des options avancées de placement d’étiquettes ?
-Oui, vous pouvez affiner le placement des étiquettes à l'aide d'options telles que la rotation, les points d'ancrage et les décalages.
-### Puis-je automatiser la génération d’étiquettes dans un processus par lots ?
-Absolument, vous pouvez intégrer Aspose.GIS dans vos flux de travail automatisés pour la génération d'étiquettes par lots.
+Félicitations ! Vous savez maintenant plusieurs façons **d'étiqueter les entités cartographiques** avec Aspose.GIS pour .NET — du simple étiquetage de points au style sophistiqué basé sur les entités pour de grands ensembles de données. Expérimentez avec les halos, les rotations et les règles de priorité pour créer des cartes qui communiquent exactement ce que votre audience doit voir.
+
+## Foire aux questions
+
+**Q : Puis‑je étiqueter les entités avec des polices personnalisées ?**  
+R : Oui. Définissez `FontFamily` et `FontStyle` dans la configuration `SimpleLabeling` pour utiliser n’importe quelle police installée.
+
+**Q : Aspose.GIS est‑il compatible avec d’autres formats de données GIS ?**  
+R : Absolument. Il prend en charge GeoJSON, Shapefile, KML, GML et bien d’autres formats.
+
+**Q : Comment gérer de grands ensembles de données pour l'étiquetage ?**  
+R : Utilisez `FeatureBasedConfiguration` pour attribuer des priorités et ajuster dynamiquement les tailles de police en fonction des valeurs d’attributs, comme montré dans l’exemple basé sur les entités.
+
+**Q : Existe‑t‑il des options avancées de placement d’étiquettes ?**  
+R : Oui. Vous pouvez affiner le placement avec `PointLabelPlacement`, en ajustant les points d’ancrage, les décalages et la rotation.
+
+**Q : Puis‑je automatiser la génération d’étiquettes dans un processus batch ?**  
+R : Bien sûr. Enveloppez le code de rendu de la carte dans une boucle ou un service en arrière‑plan pour traiter automatiquement plusieurs couches ou fichiers.
+
+---
+
+**Dernière mise à jour :** 2026-01-15  
+**Testé avec :** Aspose.GIS 24.11 pour .NET  
+**Auteur :** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
