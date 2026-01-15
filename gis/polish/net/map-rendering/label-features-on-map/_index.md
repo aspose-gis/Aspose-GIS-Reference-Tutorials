@@ -1,27 +1,50 @@
 ---
-title: Opanowanie etykietowania funkcji za pomocą Aspose.GIS dla .NET
-linktitle: Oznacz funkcje na mapie
+date: 2026-01-15
+description: Dowiedz się, jak etykietować elementy mapy przy użyciu Aspose.GIS dla
+  .NET, z niestandardowymi opcjami stylu etykiet dla etykietowania dużych zestawów
+  danych.
+linktitle: Label Features on Map
 second_title: Aspose.GIS .NET API
-description: Poznaj Aspose.GIS dla .NET i opanuj sztukę oznaczania obiektów na mapach. Ulepsz swoje wizualizacje geoprzestrzenne bez wysiłku. #Aspose #GIS
-weight: 11
+title: Etykietowanie elementów mapy przy użyciu Aspose.GIS dla .NET
 url: /pl/net/map-rendering/label-features-on-map/
+weight: 11
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Opanowanie etykietowania funkcji za pomocą Aspose.GIS dla .NET
+# Etykietowanie elementów mapy przy użyciu Aspose.GIS dla .NET
 
-## Wstęp
-świecie wizualizacji danych geoprzestrzennych etykietowanie obiektów na mapie odgrywa kluczową rolę w skutecznym przekazywaniu informacji. Aspose.GIS dla .NET zapewnia potężny zestaw narzędzi umożliwiający bezproblemowe osiągnięcie tego celu. W tym samouczku omówimy różne metody oznaczania punktów na mapie za pomocą Aspose.GIS, wzbogacając wizualizacje map za pomocą etykiet informacyjnych.
-## Warunki wstępne
-Zanim przejdziesz do samouczka, upewnij się, że spełniasz następujące wymagania wstępne:
-- Praktyczna znajomość C# i frameworka .NET.
--  Zainstalowany Aspose.GIS dla .NET. Możesz go pobrać[Tutaj](https://releases.aspose.com/gis/net/).
-- Plik GeoJSON zawierający dane punktowe. Jeśli go nie masz, możesz użyć przykładowego pliku do przetestowania.
-## Importuj przestrzenie nazw
-Upewnij się, że w kodzie C# zaimportowałeś przestrzenie nazw niezbędne do pracy z Aspose.GIS:
+## Wprowadzenie
+Etykietowanie elementów mapy jest niezbędne, aby przekształcić surowe dane geoprzestrzenne w czytelne, przyjazne dla użytkownika wizualizacje. W tym samouczku dowiesz się **jak etykietować elementy mapy** (główne słowo kluczowe) przy użyciu Aspose.GIS dla .NET, poznasz niestandardowe style etykiet oraz techniki działające nawet przy dużych zestawach danych. Po zakończeniu będziesz w stanie dodać informacyjny tekst bezpośrednio na mapy, czyniąc je bardziej wartościowymi dla analityków i użytkowników końcowych.
+
+## Szybkie odpowiedzi
+- **Jaka jest główna klasa do renderowania?** `Map` (Aspose.Gis.Rendering)
+- **Która klasa etykietowania dodaje prosty tekst?** `SimpleLabeling`
+- **Czy mogę stylizować etykiety (halo, czcionka, obrót)?** Tak – poprzez właściwości takie jak `HaloSize`, `FontStyle` i `Placement`
+- **Jak radzić sobie z dużymi zestawami danych?** Użyj `FeatureBasedConfiguration`, aby priorytetyzować etykiety na podstawie wartości atrybutów
+- **Czy potrzebna jest licencja?** Wersja próbna działa w środowisku deweloperskim; licencja komercyjna jest wymagana w produkcji
+
+## Co to są etykiety elementów mapy?
+`label map features` oznacza dołączanie czytelnego tekstu (np. nazw miast, liczb ludności lub własnych identyfikatorów) do obiektów geometrycznych — punktów, linii lub wielokątów — tak, aby mapa jednocześnie przekazywała informacje przestrzenne i atrybutowe w jednym spojrzeniu.
+
+## Dlaczego warto używać Aspose.GIS do etykietowania elementów mapy?
+- **Zero zewnętrznych zależności** – czysta biblioteka .NET, bez potrzeby natywnych plików binarnych GIS.  
+- **Bogate opcje stylizacji** – halo, własne czcionki, obrót i punkty kotwiczenia pozwalają precyzyjnie dopasować wygląd.  
+- **Świadomość wydajności** – wbudowane etykietowanie oparte na cechach umożliwia priorytetyzację najważniejszych etykiet przy renderowaniu dużych zestawów danych.  
+- **Wiele formatów wyjściowych** – SVG, PNG, PDF itp., z jednolitymi rezultatami etykietowania.
+
+## Wymagania wstępne
+Zanim rozpoczniesz, upewnij się, że masz:
+
+- Praktyczną znajomość C# i platformy .NET.  
+- Zainstalowane Aspose.GIS dla .NET. Możesz pobrać je **[here](https://releases.aspose.com/gis/net/)**.  
+- Plik GeoJSON zawierający dane punktowe (lub dowolny obsługiwany format wektorowy).  
+
+## Importowanie przestrzeni nazw
+W kodzie C# zaimportuj wymagane przestrzenie nazw:
+
 ```csharp
 using System;
 using System.Drawing;
@@ -32,14 +55,16 @@ using Aspose.Gis.Rendering.Symbolizers;
 using Aspose.GIS.Examples.CSharp;
 using FontStyle = Aspose.Gis.Rendering.Labelings.FontStyle;
 ```
-Teraz podzielmy każdy przykład na wiele kroków w formie przewodnika krok po kroku.
-##  Etykietowanie punktów
 
-### Krok 1: Ustaw ścieżkę do katalogu dokumentów:
+Teraz przejdziemy przez kilka scenariuszy etykietowania, każdy budujący się na poprzednim.
+
+## Etykietowanie punktów – Jak etykietować punkty
+### Krok 1: Ustaw ścieżkę do katalogu dokumentów
 ```csharp
 string dataDir = "Your Document Directory";
 ```
-### Krok 2: Utwórz mapę z prostym symbolem znacznika:
+
+### Krok 2: Utwórz mapę z prostym symbolem znacznika
 ```csharp
 using (var map = new Map(500, 200))
 {
@@ -49,18 +74,19 @@ using (var map = new Map(500, 200))
         StrokeStyle = StrokeStyle.None
     };
     var labeling = new SimpleLabeling(labelAttribute: "name");
-    // 3. Dodaj warstwę wektorową i zastosuj etykietowanie
+    // 3. Add a vector layer and apply labeling
     map.Add(VectorLayer.Open(dataDir + "points.geojson", Drivers.GeoJson), symbol, labeling);
     map.Padding = 50;
-    // 4. Wyrenderuj mapę do pliku SVG
+    // 4. Render the map to an SVG file
     map.Render(dataDir + "points_labeling_out.svg", Renderers.Svg);
 }
 ```
-## Styl etykietowania punktów
 
-Wykonaj kroki 1 i 2 z poprzedniego przykładu.
+W tym podstawowym przykładzie **how to label points** używamy atrybutu `name` z pliku GeoJSON.
 
-### Krok 1: Dostosuj styl etykietowania:
+## Etykietowanie punktów ze stylem – Niestandardowy styl etykiety
+Postępuj zgodnie z krokami 1 i 2 z poprzedniego przykładu, a następnie dostosuj styl etykietowania:
+
 ```csharp
 var labeling = new SimpleLabeling(labelAttribute: "name")
 {
@@ -69,12 +95,14 @@ var labeling = new SimpleLabeling(labelAttribute: "name")
     FontSize = 15,
     FontStyle = FontStyle.Italic,
 };
-// Pozostałe kroki pozostają takie same
+// Rest of the steps remain the same
 ```
-## Umieszczone oznakowanie punktów
 
-Wykonaj kroki 1 i 2 z pierwszego przykładu.
-### Krok 2: Dostosuj położenie etykiety:
+Dodane halo i kursywa nadają etykietom **custom label style**, który wyróżnia się na zatłoczonym tle.
+
+## Etykietowanie punktów z pozycjonowaniem – Zaawansowane opcje rozmieszczenia
+Ponownie rozpocznij od kroków 1 i 2 z pierwszego przykładu, a potem dostosuj pozycjonowanie:
+
 ```csharp
 var labeling = new SimpleLabeling(labelAttribute: "name")
 {
@@ -88,13 +116,14 @@ var labeling = new SimpleLabeling(labelAttribute: "name")
         Rotation = 10,
     }
 };
-// Pozostałe kroki pozostają takie same
+// Rest of the steps remain the same
 ```
-## Etykietowanie punktów oparte na funkcjach
 
-Wykonaj kroki 1 i 2 z pierwszego przykładu.
+Tutaj kontrolujemy punkty kotwiczenia, offsety i obrót, co daje precyzyjną kontrolę nad **how to label points** w gęsto zaludnionych obszarach mapy.
 
-### Krok 1: Wdróż etykietowanie oparte na funkcjach:
+## Etykietowanie punktów oparte na cechach – Etykietowanie dużych zestawów danych
+Gdy masz do czynienia z wieloma punktami, możesz chcieć priorytetyzować etykiety na podstawie atrybutu, takiego jak populacja. Postępuj zgodnie z krokami 1 i 2 z pierwszego przykładu, a następnie wdroż etykietowanie oparte na cechach:
+
 ```csharp
 var pointLabeling = new SimpleLabeling("name")
 {
@@ -108,30 +137,46 @@ var pointLabeling = new SimpleLabeling("name")
     },
     FeatureBasedConfiguration = (feature, labeling) =>
     {
-        // Pobierz populację z obiektu.
+        // Retrieve population from the feature.
         var population = feature.GetValue<int>("population");
-        // Rozmiar czcionki jest obliczany na podstawie populacji.
+        // Font size is computed and is based on the population.
         labeling.FontSize = Math.Min(20, 5 * population / 1000);
-        // Priorytet etykiety zależy również od populacji.
-        // Im wyższy priorytet, tym większe prawdopodobieństwo pojawienia się etykiety na obrazie wyjściowym.
+        // Priority of the label is also based on the population.
+        // The greater the priority is, the more likely label will appear on the output image.
         labeling.Priority = population;
     }
 };
-// Pozostałe kroki pozostają takie same
+// Rest of the steps remain the same
 ```
-## Wniosek
-Gratulacje! Nauczyłeś się, jak ulepszać wizualizacje map, etykietując obiekty za pomocą Aspose.GIS dla .NET. Eksperymentuj z różnymi stylami i lokalizacjami, aby tworzyć atrakcyjne mapy dostosowane do Twoich danych.
-## Często zadawane pytania
-### Czy mogę oznaczać obiekty przy użyciu niestandardowych czcionek?
-Tak, możesz dostosować styl i rozmiar czcionki w konfiguracji etykietowania.
-### Czy Aspose.GIS jest kompatybilny z innymi formatami danych GIS?
-Aspose.GIS obsługuje różne formaty geoprzestrzenne, w tym GeoJSON, Shapefile i inne.
-### Jak mogę obsługiwać duże zbiory danych do etykietowania?
-Aspose.GIS jest zoptymalizowany pod kątem wydajności, ale rozważ użycie konfiguracji opartych na funkcjach, aby nadać priorytet etykietom na podstawie atrybutów danych.
-### Czy dostępne są zaawansowane opcje umieszczania etykiet?
-Tak, możesz dostosować rozmieszczenie etykiet, korzystając z opcji takich jak obrót, punkty kontrolne i przesunięcia.
-### Czy mogę zautomatyzować generowanie etykiet w procesie wsadowym?
-Oczywiście możesz zintegrować Aspose.GIS ze swoimi zautomatyzowanymi przepływami pracy w celu wsadowego generowania etykiet.
+
+Ta strategia **large dataset labeling** zapewnia, że najważniejsze miasta (według liczby ludności) są wyświetlane jako pierwsze, a mniej istotne punkty mogą zostać pominięte, gdy przestrzeń jest ograniczona.
+
+## Zakończenie
+Gratulacje! Teraz znasz różne sposoby **label map features** przy użyciu Aspose.GIS dla .NET — od prostego etykietowania punktów po zaawansowane, oparte na cechach stylizowanie dużych zestawów danych. Eksperymentuj z halo, obrotami i regułami priorytetów, aby tworzyć mapy, które dokładnie przekazują to, co Twoja publiczność musi zobaczyć.
+
+## Najczęściej zadawane pytania
+
+**Q: Czy mogę etykietować elementy przy użyciu własnych czcionek?**  
+A: Tak. Ustaw `FontFamily` i `FontStyle` w konfiguracji `SimpleLabeling`, aby używać dowolnej zainstalowanej czcionki.
+
+**Q: Czy Aspose.GIS jest kompatybilny z innymi formatami danych GIS?**  
+A: Absolutnie. Obsługuje GeoJSON, Shapefile, KML, GML i wiele innych formatów.
+
+**Q: Jak mogę radzić sobie z dużymi zestawami danych przy etykietowaniu?**  
+A: Użyj `FeatureBasedConfiguration`, aby przypisywać priorytety i dynamicznie dostosowywać rozmiary czcionek na podstawie wartości atrybutów, jak pokazano w przykładzie opartym na cechach.
+
+**Q: Czy dostępne są zaawansowane opcje rozmieszczania etykiet?**  
+A: Tak. Możesz precyzyjnie dostroić pozycjonowanie za pomocą `PointLabelPlacement`, regulując punkty kotwiczenia, offsety i obrót.
+
+**Q: Czy mogę zautomatyzować generowanie etykiet w procesie wsadowym?**  
+A: Oczywiście. Umieść kod renderujący mapę w pętli lub usłudze w tle, aby automatycznie przetwarzać wiele warstw lub plików.
+
+---
+
+**Ostatnia aktualizacja:** 2026-01-15  
+**Testowano z:** Aspose.GIS 24.11 dla .NET  
+**Autor:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}

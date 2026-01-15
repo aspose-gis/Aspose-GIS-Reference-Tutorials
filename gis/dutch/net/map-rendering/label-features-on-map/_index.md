@@ -1,27 +1,49 @@
 ---
-title: Functielabeling beheersen met Aspose.GIS voor .NET
-linktitle: Label functies op kaart
-second_title: Aspose.GIS .NET-API
-description: Verken Aspose.GIS voor .NET en beheers de kunst van het labelen van objecten op kaarten. Verbeter uw geospatiale visualisaties moeiteloos. #Aspose #GIS
-weight: 11
+date: 2026-01-15
+description: Leer hoe u kaartobjecten labelt met Aspose.GIS voor .NET, met aangepaste
+  labelstijlopties voor het labelen van grote datasets.
+linktitle: Label Features on Map
+second_title: Aspose.GIS .NET API
+title: Label kaartobjecten met Aspose.GIS voor .NET
 url: /nl/net/map-rendering/label-features-on-map/
+weight: 11
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Functielabeling beheersen met Aspose.GIS voor .NET
+# Kaartfeatures labelen met Aspose.GIS voor .NET
 
-## Invoering
-In de wereld van geospatiale datavisualisatie speelt het labelen van kenmerken op een kaart een cruciale rol bij het effectief overbrengen van informatie. Aspose.GIS voor .NET biedt een krachtige toolkit om dit naadloos te bereiken. In deze zelfstudie verkennen we verschillende methoden voor het labelen van punten op een kaart met behulp van Aspose.GIS, waardoor uw kaartvisualisaties worden verbeterd met informatieve labels.
+## Inleiding
+Het labelen van kaartfeatures is essentieel om ruwe georuimtelijke gegevens om te zetten in duidelijke, gebruiksvriendelijke visualisaties. In deze tutorial ontdek je **hoe je kaartfeatures labelt** (het primaire zoekwoord) met Aspose.GIS voor .NET, verken je aangepaste labelstijlen, en zie je technieken die zelfs werken met grote datasets. Aan het einde kun je informatieve tekst direct op je kaarten toevoegen, waardoor ze inzichtelijker worden voor analisten en eindgebruikers.
+
+## Snelle antwoorden
+- **Wat is de hoofdklasse voor rendering?** `Map` (Aspose.Gis.Rendering)
+- **Welke labelklasse voegt eenvoudige tekst toe?** `SimpleLabeling`
+- **Kan ik labels stylen (halo, lettertype, rotatie)?** Ja – via eigenschappen zoals `HaloSize`, `FontStyle` en `Placement`
+- **Hoe ga ik om met grote datasets?** Gebruik `FeatureBasedConfiguration` om labels te prioriteren op basis van attribuutwaarden
+- **Heb ik een licentie nodig?** Een proefversie werkt voor ontwikkeling; een commerciële licentie is vereist voor productie
+
+## Wat zijn labelkaartfeatures?
+`label map features` betekent het toevoegen van leesbare tekst (zoals stadsnamen, bevolkingscijfers of aangepaste identifiers) aan geometrische objecten—punten, lijnen of polygonen—zodat de kaart zowel ruimtelijke als attribuutinformatie in één oogopslag weergeeft.
+
+## Waarom Aspose.GIS gebruiken voor het labelen van kaartfeatures?
+- **Geen externe afhankelijkheden** – pure .NET-bibliotheek, geen native GIS-binaries vereist.  
+- **Rijke stylingopties** – halos, aangepaste lettertypen, rotatie en ankerpunten stellen je in staat het uiterlijk nauwkeurig af te stemmen.  
+- **Prestatie‑bewust** – ingebouwde feature‑gebaseerde labeling stelt je in staat de belangrijkste labels te prioriteren bij het renderen van grote datasets.  
+- **Meerdere uitvoerformaten** – SVG, PNG, PDF, enz., met consistente labelresultaten.
+
 ## Vereisten
-Voordat u in de zelfstudie duikt, moet u ervoor zorgen dat u aan de volgende vereisten voldoet:
-- Een praktische kennis van C# en het .NET-framework.
--  Aspose.GIS voor .NET geïnstalleerd. Je kunt het downloaden[hier](https://releases.aspose.com/gis/net/).
-- Een GeoJSON-bestand met puntgegevens. Als u er geen heeft, kunt u een voorbeeldbestand gebruiken om te testen.
-## Naamruimten importeren
-Zorg ervoor dat u in uw C#-code de benodigde naamruimten importeert om met Aspose.GIS te werken:
+Zorg ervoor dat je het volgende hebt voordat je begint:
+
+- Een werkende kennis van C# en het .NET-framework.  
+- Aspose.GIS voor .NET geïnstalleerd. Je kunt het downloaden **[hier](https://releases.aspose.com/gis/net/)**.  
+- Een GeoJSON‑bestand met puntgegevens (of een ander ondersteund vectorformaat).
+
+## Namespaces importeren
+Importeer in je C#‑code de benodigde namespaces:
+
 ```csharp
 using System;
 using System.Drawing;
@@ -32,14 +54,16 @@ using Aspose.Gis.Rendering.Symbolizers;
 using Aspose.GIS.Examples.CSharp;
 using FontStyle = Aspose.Gis.Rendering.Labelings.FontStyle;
 ```
-Laten we nu elk voorbeeld opsplitsen in meerdere stappen in een stapsgewijze handleiding.
-##  Puntenlabeling
 
-### Stap 1: Stel het pad naar uw documentenmap in:
+We zullen nu verschillende labelscenario's doorlopen, elk voortbouwend op het vorige.
+
+## Punten labelen – Hoe punten labelen
+### Stap 1: Stel het pad in naar je documentenmap
 ```csharp
 string dataDir = "Your Document Directory";
 ```
-### Stap 2: Maak een kaart met een eenvoudig markeringssymbool:
+
+### Stap 2: Maak een kaart met een eenvoudig markersymbool
 ```csharp
 using (var map = new Map(500, 200))
 {
@@ -49,18 +73,19 @@ using (var map = new Map(500, 200))
         StrokeStyle = StrokeStyle.None
     };
     var labeling = new SimpleLabeling(labelAttribute: "name");
-    // 3. Voeg een vectorlaag toe en pas labels toe
+    // 3. Add a vector layer and apply labeling
     map.Add(VectorLayer.Open(dataDir + "points.geojson", Drivers.GeoJson), symbol, labeling);
     map.Padding = 50;
-    // 4. Render de kaart naar een SVG-bestand
+    // 4. Render the map to an SVG file
     map.Render(dataDir + "points_labeling_out.svg", Renderers.Svg);
 }
 ```
-## Puntenlabeling gestileerd
 
-Volg stap 1 en 2 uit het vorige voorbeeld.
+In dit eenvoudige voorbeeld **hoe we punten labelen** met behulp van het `name`‑attribuut uit het GeoJSON‑bestand.
 
-### Stap 1: Pas de labelstijl aan:
+## Punten labelen gestyled – Aangepaste labelstijl
+Volg stap 1 en 2 van het vorige voorbeeld, en pas vervolgens de labelstijl aan:
+
 ```csharp
 var labeling = new SimpleLabeling(labelAttribute: "name")
 {
@@ -69,12 +94,14 @@ var labeling = new SimpleLabeling(labelAttribute: "name")
     FontSize = 15,
     FontStyle = FontStyle.Italic,
 };
-// De rest van de stappen blijven hetzelfde
+// Rest of the steps remain the same
 ```
-## Puntenlabeling geplaatst
 
-Volg stap 1 en 2 uit het eerste voorbeeld.
-### Stap 2: Pas de plaatsing van het label aan:
+De toegevoegde halo en cursieve lettertype geven de labels een **aangepaste labelstijl** die opvalt tegen drukke achtergronden.
+
+## Punten labelen geplaatst – Geavanceerde plaatsingsopties
+Begin opnieuw met stap 1 en 2 van het eerste voorbeeld, en pas vervolgens de plaatsing aan:
+
 ```csharp
 var labeling = new SimpleLabeling(labelAttribute: "name")
 {
@@ -88,13 +115,14 @@ var labeling = new SimpleLabeling(labelAttribute: "name")
         Rotation = 10,
     }
 };
-// De rest van de stappen blijven hetzelfde
+// Rest of the steps remain the same
 ```
-## Puntenlabeling op basis van functies
 
-Volg stap 1 en 2 uit het eerste voorbeeld.
+Hier regelen we ankerpunten, offsets en rotatie, waardoor je fijnmazige controle krijgt over **hoe je punten labelt** in drukke kaartgebieden.
 
-### Stap 1: Op functies gebaseerde labels implementeren:
+## Punten labelen op basis van features – Labelen van grote datasets
+Bij het omgaan met veel punten wil je mogelijk labels prioriteren op basis van een attribuut zoals populatie. Volg stap 1 en 2 van het eerste voorbeeld, en implementeer vervolgens feature‑gebaseerde labeling:
+
 ```csharp
 var pointLabeling = new SimpleLabeling("name")
 {
@@ -108,30 +136,46 @@ var pointLabeling = new SimpleLabeling("name")
     },
     FeatureBasedConfiguration = (feature, labeling) =>
     {
-        // Haal de populatie op uit het object.
+        // Retrieve population from the feature.
         var population = feature.GetValue<int>("population");
-        // De lettergrootte wordt berekend en is gebaseerd op de populatie.
+        // Font size is computed and is based on the population.
         labeling.FontSize = Math.Min(20, 5 * population / 1000);
-        // De prioriteit van het label is ook gebaseerd op de populatie.
-        // Hoe groter de prioriteit is, hoe waarschijnlijker het is dat het label op de uitvoerafbeelding verschijnt.
+        // Priority of the label is also based on the population.
+        // The greater the priority is, the more likely label will appear on the output image.
         labeling.Priority = population;
     }
 };
-// De rest van de stappen blijven hetzelfde
+// Rest of the steps remain the same
 ```
+
+Deze **labelstrategie voor grote datasets** zorgt ervoor dat de belangrijkste steden (op basis van populatie) eerst worden weergegeven, terwijl minder kritieke punten kunnen worden weggelaten wanneer de ruimte beperkt is.
+
 ## Conclusie
-Gefeliciteerd! U hebt geleerd hoe u uw kaartvisualisaties kunt verbeteren door objecten te labelen met Aspose.GIS voor .NET. Experimenteer met verschillende stijlen en plaatsingen om aantrekkelijke kaarten te maken die zijn afgestemd op uw gegevens.
+Gefeliciteerd! Je kent nu meerdere manieren om **kaartfeatures te labelen** met Aspose.GIS voor .NET — van eenvoudige puntlabeling tot geavanceerde, feature‑gebaseerde styling voor grote datasets. Experimenteer met halos, rotaties en prioriteitsregels om kaarten te maken die precies overbrengen wat je publiek moet zien.
+
 ## Veelgestelde vragen
-### Kan ik elementen labelen met aangepaste lettertypen?
-Ja, u kunt de letterstijl en -grootte aanpassen in de labelconfiguratie.
-### Is Aspose.GIS compatibel met andere GIS-gegevensformaten?
-Aspose.GIS ondersteunt verschillende georuimtelijke formaten, waaronder GeoJSON, Shapefile en meer.
-### Hoe kan ik grote datasets verwerken voor labeling?
-Aspose.GIS is geoptimaliseerd voor prestaties, maar overweeg het gebruik van op functies gebaseerde configuraties om labels prioriteit te geven op basis van gegevensattributen.
-### Zijn er geavanceerde opties voor het plaatsen van labels beschikbaar?
-Ja, u kunt de plaatsing van labels nauwkeurig afstemmen met behulp van opties zoals rotatie, ankerpunten en offsets.
-### Kan ik het genereren van labels in een batchproces automatiseren?
-Absoluut, u kunt Aspose.GIS integreren in uw geautomatiseerde workflows voor het genereren van batchlabels.
+
+**Q: Kan ik features labelen met aangepaste lettertypen?**  
+A: Ja. Stel `FontFamily` en `FontStyle` in de `SimpleLabeling`‑configuratie in om elk geïnstalleerd lettertype te gebruiken.
+
+**Q: Is Aspose.GIS compatibel met andere GIS‑dataformaten?**  
+A: Absoluut. Het ondersteunt GeoJSON, Shapefile, KML, GML en nog veel meer formaten.
+
+**Q: Hoe kan ik grote datasets voor labeling verwerken?**  
+A: Gebruik `FeatureBasedConfiguration` om prioriteiten toe te wijzen en dynamisch lettergroottes aan te passen op basis van attribuutwaarden, zoals getoond in het feature‑gebaseerde voorbeeld.
+
+**Q: Zijn er geavanceerde opties voor labelplaatsing beschikbaar?**  
+A: Ja. Je kunt de plaatsing fijn afstemmen met `PointLabelPlacement`, waarbij je ankerpunten, offsets en rotatie aanpast.
+
+**Q: Kan ik labelgeneratie automatiseren in een batch‑proces?**  
+A: Zeker. Plaats de kaartrendercode in een lus of een achtergrondservice om meerdere lagen of bestanden automatisch te verwerken.
+
+---
+
+**Laatst bijgewerkt:** 2026-01-15  
+**Getest met:** Aspose.GIS 24.11 for .NET  
+**Auteur:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}

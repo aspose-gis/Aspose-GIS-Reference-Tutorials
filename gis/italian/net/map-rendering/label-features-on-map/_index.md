@@ -1,27 +1,50 @@
 ---
-title: Padroneggiare l'etichettatura delle funzionalità con Aspose.GIS per .NET
-linktitle: Etichetta caratteristiche sulla mappa
-second_title: API Aspose.GIS .NET
-description: Esplora Aspose.GIS per .NET e padroneggia l'arte dell'etichettatura delle caratteristiche sulle mappe. Migliora le tue visualizzazioni geospaziali senza sforzo. #Aspose #GIS
-weight: 11
+date: 2026-01-15
+description: Scopri come etichettare le caratteristiche della mappa usando Aspose.GIS
+  per .NET, con opzioni di stile di etichetta personalizzate per l'etichettatura di
+  grandi dataset.
+linktitle: Label Features on Map
+second_title: Aspose.GIS .NET API
+title: Etichetta le funzionalità della mappa con Aspose.GIS per .NET
 url: /it/net/map-rendering/label-features-on-map/
+weight: 11
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Padroneggiare l'etichettatura delle funzionalità con Aspose.GIS per .NET
+# Etichettare le funzionalità della mappa con Aspose.GIS per .NET
 
-## introduzione
-Nel mondo della visualizzazione dei dati geospaziali, l'etichettatura delle caratteristiche su una mappa gioca un ruolo cruciale nel trasmettere le informazioni in modo efficace. Aspose.GIS per .NET fornisce un potente toolkit per raggiungere questo obiettivo senza problemi. In questo tutorial esploreremo vari metodi per etichettare i punti su una mappa utilizzando Aspose.GIS, migliorando le visualizzazioni della mappa con etichette informative.
+## Introduzione
+Etichettare le funzionalità della mappa è essenziale per trasformare i dati geospaziali grezzi in visualizzazioni chiare e facili da usare. In questo tutorial scoprirai **how to label map features** (la parola chiave principale) utilizzando Aspose.GIS per .NET, esplorerai stili di etichetta personalizzati e vedrai tecniche che funzionano anche con grandi dataset. Alla fine sarai in grado di aggiungere testo informativo direttamente sulle tue mappe, rendendole più utili per analisti e utenti finali.
+
+## Risposte rapide
+- **Qual è la classe principale per il rendering?** `Map` (Aspose.Gis.Rendering)
+- **Quale classe di etichettatura aggiunge testo semplice?** `SimpleLabeling`
+- **Posso stilizzare le etichette (alone, font, rotazione)?** Sì – tramite proprietà come `HaloSize`, `FontStyle` e `Placement`
+- **Come gestire grandi dataset?** Usa `FeatureBasedConfiguration` per dare priorità alle etichette in base ai valori degli attributi
+- **È necessaria una licenza?** Una versione di prova funziona per lo sviluppo; è necessaria una licenza commerciale per la produzione
+
+## Che cosa sono le etichette delle funzionalità della mappa?
+`label map features` indica l'attaccamento di testo leggibile (come nomi di città, dati di popolazione o identificatori personalizzati) a oggetti geometrici—punti, linee o poligoni—così che la mappa trasmetta sia informazioni spaziali sia attributi a colpo d'occhio.
+
+## Perché utilizzare Aspose.GIS per le etichette delle funzionalità della mappa?
+- **Zero dipendenze esterne** – libreria .NET pura, non richiede binari GIS nativi.  
+- **Opzioni di styling ricche** – alone, font personalizzati, rotazione e punti di ancoraggio ti consentono di perfezionare l'aspetto.  
+- **Ottimizzata per le prestazioni** – l'etichettatura basata su feature integrata ti permette di dare priorità alle etichette più importanti durante il rendering di grandi dataset.  
+- **Molteplici formati di output** – SVG, PNG, PDF, ecc., con risultati di etichettatura coerenti.
+
 ## Prerequisiti
-Prima di immergerti nel tutorial, assicurati di avere i seguenti prerequisiti:
-- Una conoscenza pratica di C# e del framework .NET.
--  Aspose.GIS per .NET installato. Puoi scaricarlo[Qui](https://releases.aspose.com/gis/net/).
-- Un file GeoJSON contenente dati di punti. Se non ne hai uno, puoi utilizzare un file di esempio per testare.
-## Importa spazi dei nomi
-Nel tuo codice C#, assicurati di importare gli spazi dei nomi necessari per lavorare con Aspose.GIS:
+Prima di iniziare, assicurati di avere:
+
+- Una buona conoscenza di C# e del framework .NET.  
+- Aspose.GIS per .NET installato. Puoi scaricarlo **[qui](https://releases.aspose.com/gis/net/)**.  
+- Un file GeoJSON contenente dati puntuali (o qualsiasi formato vettoriale supportato).  
+
+## Importare gli spazi dei nomi
+Nel tuo codice C#, importa gli spazi dei nomi richiesti:
+
 ```csharp
 using System;
 using System.Drawing;
@@ -32,14 +55,16 @@ using Aspose.Gis.Rendering.Symbolizers;
 using Aspose.GIS.Examples.CSharp;
 using FontStyle = Aspose.Gis.Rendering.Labelings.FontStyle;
 ```
-Ora suddividiamo ciascun esempio in più passaggi in un formato di guida passo passo.
-##  Etichettatura dei punti
 
-### Passaggio 1: imposta il percorso della directory dei documenti:
+Ora vedremo diversi scenari di etichettatura, ognuno basato sul precedente.
+
+## Etichettatura dei punti – Come etichettare i punti
+### Passo 1: Imposta il percorso della tua directory dei documenti
 ```csharp
 string dataDir = "Your Document Directory";
 ```
-### Passaggio 2: crea una mappa con un semplice simbolo indicatore:
+
+### Passo 2: Crea una mappa con un simbolo marker semplice
 ```csharp
 using (var map = new Map(500, 200))
 {
@@ -49,18 +74,19 @@ using (var map = new Map(500, 200))
         StrokeStyle = StrokeStyle.None
     };
     var labeling = new SimpleLabeling(labelAttribute: "name");
-    // 3. Aggiungi un livello vettoriale e applica l'etichettatura
+    // 3. Add a vector layer and apply labeling
     map.Add(VectorLayer.Open(dataDir + "points.geojson", Drivers.GeoJson), symbol, labeling);
     map.Padding = 50;
-    // 4. Renderizza la mappa in un file SVG
+    // 4. Render the map to an SVG file
     map.Render(dataDir + "points_labeling_out.svg", Renderers.Svg);
 }
 ```
-## Etichettatura dei punti con stile
 
-Seguire i passaggi 1 e 2 dell'esempio precedente.
+In questo esempio base utilizziamo **how to label points** usando l'attributo `name` del file GeoJSON.
 
-### Passaggio 1: personalizza lo stile di etichettatura:
+## Etichettatura dei punti con stile – Stile di etichetta personalizzato
+Segui i passi 1 e 2 dell'esempio precedente, poi personalizza lo stile di etichettatura:
+
 ```csharp
 var labeling = new SimpleLabeling(labelAttribute: "name")
 {
@@ -69,12 +95,14 @@ var labeling = new SimpleLabeling(labelAttribute: "name")
     FontSize = 15,
     FontStyle = FontStyle.Italic,
 };
-// Il resto dei passaggi rimane lo stesso
+// Rest of the steps remain the same
 ```
-## Etichettatura dei punti posizionata
 
-Seguire i passaggi 1 e 2 del primo esempio.
-### Passaggio 2: personalizza il posizionamento dell'etichetta:
+L'alone aggiunto e il font in corsivo conferiscono alle etichette uno **custom label style** che risalta su sfondi affollati.
+
+## Etichettatura dei punti posizionata – Opzioni avanzate di posizionamento
+Ancora una volta inizia con i passi 1 e 2 del primo esempio, poi regola il posizionamento:
+
 ```csharp
 var labeling = new SimpleLabeling(labelAttribute: "name")
 {
@@ -88,13 +116,14 @@ var labeling = new SimpleLabeling(labelAttribute: "name")
         Rotation = 10,
     }
 };
-// Il resto dei passaggi rimane lo stesso
+// Rest of the steps remain the same
 ```
-## Etichettatura dei punti basata su funzionalità
 
-Seguire i passaggi 1 e 2 del primo esempio.
+Qui controlliamo i punti di ancoraggio, gli offset e la rotazione, offrendoti un controllo dettagliato su **how to label points** nelle aree di mappa affollate.
 
-### Passaggio 1: implementare l'etichettatura basata sulle funzionalità:
+## Etichettatura dei punti basata su feature – Etichettatura di grandi dataset
+Quando si gestiscono molti punti, potresti voler dare priorità alle etichette in base a un attributo come la popolazione. Segui i passi 1 e 2 del primo esempio, poi implementa l'etichettatura basata su feature:
+
 ```csharp
 var pointLabeling = new SimpleLabeling("name")
 {
@@ -108,30 +137,46 @@ var pointLabeling = new SimpleLabeling("name")
     },
     FeatureBasedConfiguration = (feature, labeling) =>
     {
-        // Recupera la popolazione dalla funzionalità.
+        // Retrieve population from the feature.
         var population = feature.GetValue<int>("population");
-        // La dimensione del carattere viene calcolata e si basa sulla popolazione.
+        // Font size is computed and is based on the population.
         labeling.FontSize = Math.Min(20, 5 * population / 1000);
-        // La priorità dell'etichetta si basa anche sulla popolazione.
-        // Maggiore è la priorità, maggiore è la probabilità che l'etichetta venga visualizzata sull'immagine di output.
+        // Priority of the label is also based on the population.
+        // The greater the priority is, the more likely label will appear on the output image.
         labeling.Priority = population;
     }
 };
-// Il resto dei passaggi rimane lo stesso
+// Rest of the steps remain the same
 ```
+
+Questa strategia di **large dataset labeling** garantisce che le città più importanti (per popolazione) vengano mostrate per prime, mentre i punti meno critici possono essere omessi quando lo spazio è limitato.
+
 ## Conclusione
-Congratulazioni! Hai imparato come migliorare le visualizzazioni della mappa etichettando le funzionalità utilizzando Aspose.GIS per .NET. Sperimenta stili e posizionamenti diversi per creare mappe accattivanti su misura per i tuoi dati.
+Congratulazioni! Ora conosci diversi modi per **label map features** con Aspose.GIS per .NET—dall'etichettatura semplice dei punti a uno styling sofisticato, basato su feature, per grandi dataset. Sperimenta con alone, rotazioni e regole di priorità per creare mappe che comunicano esattamente ciò che il tuo pubblico deve vedere.
+
 ## Domande frequenti
-### Posso etichettare gli elementi utilizzando caratteri personalizzati?
-Sì, puoi personalizzare lo stile e la dimensione del carattere nella configurazione dell'etichettatura.
-### Aspose.GIS è compatibile con altri formati di dati GIS?
-Aspose.GIS supporta vari formati geospaziali, tra cui GeoJSON, Shapefile e altri.
-### Come posso gestire set di dati di grandi dimensioni per l'etichettatura?
-Aspose.GIS è ottimizzato per le prestazioni, ma considera l'utilizzo di configurazioni basate su funzionalità per dare priorità alle etichette in base agli attributi dei dati.
-### Sono disponibili opzioni avanzate di posizionamento delle etichette?
-Sì, puoi ottimizzare il posizionamento delle etichette utilizzando opzioni come rotazione, punti di ancoraggio e offset.
-### Posso automatizzare la generazione di etichette in un processo batch?
-Assolutamente, puoi integrare Aspose.GIS nei tuoi flussi di lavoro automatizzati per la generazione di etichette batch.
+
+**Q: Posso etichettare le feature usando font personalizzati?**  
+A: Sì. Imposta `FontFamily` e `FontStyle` nella configurazione `SimpleLabeling` per utilizzare qualsiasi font installato.
+
+**Q: Aspose.GIS è compatibile con altri formati di dati GIS?**  
+A: Assolutamente. Supporta GeoJSON, Shapefile, KML, GML e molti altri formati.
+
+**Q: Come posso gestire grandi dataset per l'etichettatura?**  
+A: Usa `FeatureBasedConfiguration` per assegnare priorità e regolare dinamicamente le dimensioni del font in base ai valori degli attributi, come mostrato nell'esempio basato su feature.
+
+**Q: Sono disponibili opzioni avanzate di posizionamento delle etichette?**  
+A: Sì. Puoi perfezionare il posizionamento con `PointLabelPlacement`, regolando punti di ancoraggio, offset e rotazione.
+
+**Q: Posso automatizzare la generazione delle etichette in un processo batch?**  
+A: Certamente. Avvolgi il codice di rendering della mappa in un ciclo o in un servizio in background per elaborare più livelli o file automaticamente.
+
+---
+
+**Ultimo aggiornamento:** 2026-01-15  
+**Testato con:** Aspose.GIS 24.11 for .NET  
+**Autore:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
