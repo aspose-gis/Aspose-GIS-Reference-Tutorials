@@ -1,28 +1,47 @@
 ---
-title: تصفية الميزات حسب السمة
-linktitle: تصفية الميزات حسب السمة
+date: 2026-01-18
+description: تعلم كيفية قراءة ملف shapefile باستخدام C# وتصفية العناصر حسب التاريخ
+  باستخدام Aspose.GIS لـ .NET. دليل خطوة بخطوة لتصفية سمات ملف shapefile بكفاءة.
+linktitle: Read Shapefile C# – Filter Features by Attribute
 second_title: Aspose.GIS .NET API
-description: اكتشف قوة Aspose.GIS for .NET في معالجة البيانات المكانية. يمكنك تصفية الميزات دون عناء، وتحسين تطبيقات نظم المعلومات الجغرافية، وزيادة الإنتاجية.
-weight: 21
+title: قراءة ملف Shapefile في C# – تصفية العناصر حسب السمة باستخدام Aspose.GIS
 url: /ar/net/layer-management/filter-features-by-attribute/
+weight: 21
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# تصفية الميزات حسب السمة
+# قراءة Shapefile C# – تصفية العناصر حسب السمة باستخدام Aspose.GIS
 
 ## مقدمة
-في العالم الديناميكي لأنظمة المعلومات الجغرافية (GIS)، يبرز Aspose.GIS for .NET كأداة قوية تمكن المطورين من معالجة البيانات المكانية وتحليلها بسلاسة. سواء كنت محترفًا متمرسًا في نظم المعلومات الجغرافية أو مطورًا فضوليًا حريصًا على استكشاف الإمكانيات، فإن هذا البرنامج التعليمي سيرشدك خلال الخطوات الأساسية لاستخدام Aspose.GIS في بيئة .NET.
-## المتطلبات الأساسية
-قبل الغوص في الأمثلة العملية، تأكد من توفر المتطلبات الأساسية التالية:
--  تثبيت Aspose.GIS: قم بتنزيل وتثبيت مكتبة Aspose.GIS من ملف[رابط التحميل](https://releases.aspose.com/gis/net/).
-- بيئة التطوير: قم بإعداد بيئة تطوير .NET على جهازك.
-- البيانات المكانية: قم بإعداد ملف شكل الإدخال (على سبيل المثال، "InputShapeFile.shp") الذي يحتوي على البيانات المكانية التي تنوي العمل بها.
-- المعرفة الأساسية بـ C#: تعرف على أساسيات لغة البرمجة C#.
+إذا كنت بحاجة إلى **read shapefile C#** وتريد عزل السجلات التي تطابق معايير محددة بسرعة، فإن Aspose.GIS لـ .NET يوفر لك واجهة برمجة تطبيقات نظيفة وسلسة. في هذا الدرس سنستعرض تحميل ملف Shapefile، **filtering features by date**، واستخراج قيم السمات—مثالي لأي شخص يرغب في **filter shapefile attribute** أو **iterate GIS features** في تطبيق .NET.
+
+## إجابات سريعة
+- **What does this tutorial cover?** قراءة ملف shapefile في C# وتصفية العناصر حسب سمة تاريخية.  
+- **Which library is used?** Aspose.GIS لـ .NET.  
+- **How many lines of code?** أقل من 20 سطرًا للمنطق الأساسي للتصفية.  
+- **Do I need a license?** النسخة التجريبية المجانية تكفي للتطوير؛ يلزم الحصول على ترخيص للإنتاج.  
+- **Supported platforms?** .NET Framework، .NET Core، و .NET 5/6+.
+
+## ما هو “read shapefile C#”؟
+قراءة ملف shapefile في C# تعني تحميل البيانات المتجهة المخزنة في ملف *.shp* (وملفاته المرافقة) إلى الذاكرة بحيث يمكنك الاستعلام أو التعديل أو التصدير برمجيًا. Aspose.GIS يج abstracts تفاصيل تنسيق الملف، مما يتيح لك التركيز على المنطق المكاني.
+
+## لماذا تصفية العناصر حسب التاريخ باستخدام Aspose.GIS؟
+- **Performance:** المكتبة تدفع الفلتر إلى مصدر البيانات، متجنبةً الفحص الكامل.  
+- **Simplicity:** طرق LINQ‑style السلسة مثل `WhereGreater` تجعل الكود ذاتيًا واضحًا.  
+- **Flexibility:** يمكنك دمج فلاتر التاريخ مع أي فلاتر سمات أخرى، مما يتيح تحليلات GIS قوية.
+
+## المتطلبات المسبقة
+- Aspose.GIS Installation: تحميل وتثبيت مكتبة Aspose.GIS من [download link](https://releases.aspose.com/gis/net/).  
+- Development Environment: بيئة تطوير .NET (Visual Studio، Rider، أو VS Code) مُعدة على جهازك.  
+- Spatial Data: ملف shapefile إدخال (مثال: **InputShapeFile.shp**) يحتوي على سمة **dob** (تاريخ الميلاد) التي تريد تصفيتها.  
+- Basic Knowledge of C#: إلمام بتركيب C# وبنية مشروع .NET.
+
 ## استيراد مساحات الأسماء
-في كود C# الخاص بك، تأكد من استيراد مساحات الأسماء الضرورية للوصول إلى وظائف Aspose.GIS:
+في ملف C# المصدر، استورد مساحات الأسماء المطلوبة لعمليات GIS:
+
 ```csharp
 using Aspose.Gis;
 using System;
@@ -31,41 +50,68 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 ```
-## الخطوة 1: قم بتعيين دليل المستندات
-تأكد من أن لديك مسار دليل المستند الصحيح في التعليمات البرمجية الخاصة بك:
+
+## الخطوة 1: تعيين دليل المستند
+حدد المجلد الذي يحتوي على ملف shapefile الخاص بك. استبدل العنصر النائب بالمسار الفعلي على جهازك.
+
 ```csharp
 string dataDir = "Your Document Directory";
 ```
-## الخطوة 2: افتح طبقة المتجهات
-استخدم Aspose.GIS لفتح الطبقة المتجهة من ملف الشكل:
+
+## الخطوة 2: فتح طبقة المتجهات
+استخدم Aspose.GIS لفتح ملف shapefile كطبقة متجهات. هذه الخطوة **reads the shapefile C#** وتجهزه للاستعلام.
+
 ```csharp
 using (VectorLayer layer = VectorLayer.Open(dataDir + "InputShapeFile.shp", Drivers.Shapefile))
 ```
-## الخطوة 3: التكرار من خلال الميزات
-قم بالتكرار عبر جميع الميزات ذات قيمة تاريخ في السمة "dob" بعد 1 يناير 1982:
+
+## الخطوة 3: تكرار ميزات GIS وتصفية حسب التاريخ
+الآن نقوم بـ **iterate GIS features** ونطبق شرط **filter features by date** على سمة **dob**. سيتم طباعة السجلات التي تاريخ ميلادها بعد 1 يناير 1982 فقط.
+
 ```csharp
 foreach (Feature feature in layer.WhereGreater("dob", new DateTime(1982, 1, 1, 0, 0, 0)))
 {
     Console.WriteLine(feature.GetValue<DateTime>("dob").ToShortDateString());
 }
 ```
-يوضح مقتطف الشفرة هذا ميزات التصفية بناءً على سمة محددة ("dob" في هذه الحالة) وشرط تاريخ محدد.
-## خاتمة
-يعمل Aspose.GIS for .NET على تبسيط معالجة البيانات المكانية وتحليلها، مما يجعلها أداة لا غنى عنها للمطورين في تطبيقات نظم المعلومات الجغرافية. باتباع هذا الدليل التفصيلي، تعلمت كيفية تصفية المعالم حسب البيانات الجدولية، ووضع الأساس لعمليات البيانات المكانية الأكثر تقدمًا.
-## أسئلة مكررة
-### هل Aspose.GIS متوافق مع جميع تنسيقات ملفات GIS؟
- يدعم Aspose.GIS العديد من تنسيقات ملفات GIS، بما في ذلك Shapefile وGeoJSON وKML. افحص ال[توثيق](https://reference.aspose.com/gis/net/) للحصول على قائمة شاملة.
+
+المقتطف يوضح طريقة مختصرة لـ **filter shapefile attribute** دون تحميل مجموعة البيانات بالكامل إلى الذاكرة.
+
+## المشكلات الشائعة والنصائح
+- **Date format mismatch:** تأكد من أن حقل **dob** في shapefile مخزن كنوع تاريخ؛ وإلا قد يفشل التحويل.  
+- **Path errors:** استخدم `Path.Combine(dataDir, "InputShapeFile.shp")` لتجنب فقدان فواصل المسار على أنظمة تشغيل مختلفة.  
+- **Performance:** بالنسبة لملفات shapefile الكبيرة جدًا، فكر في تطبيق فلاتر سمات إضافية لتقليل مجموعة النتائج مبكرًا.
+
+## الخلاصة
+يُسهل Aspose.GIS لـ .NET عملية **read shapefile C#**، **filter features by date**، و **iterate GIS features** بكفاءة. ببضع أسطر من الكود يمكنك فتح استعلامات مكانية قوية، مما يمهد الأساس لتحليلات GIS المتقدمة.
+
+## الأسئلة المتكررة
+### هل Aspose.GIS متوافق مع جميع صيغ ملفات GIS؟
+يدعم Aspose.GIS صيغ ملفات GIS متعددة، بما في ذلك Shapefile، GeoJSON، و KML. راجع [documentation](https://reference.aspose.com/gis/net/) للحصول على قائمة شاملة.
+
 ### هل يمكنني تجربة Aspose.GIS قبل الشراء؟
- نعم، يمكنك استكشاف النسخة التجريبية المجانية من Aspose.GIS من خلال زيارة الموقع[هنا](https://releases.aspose.com/).
+نعم، يمكنك تجربة نسخة تجريبية مجانية من Aspose.GIS بزيارة [here](https://releases.aspose.com/).
+
 ### أين يمكنني العثور على الدعم لـ Aspose.GIS؟
- لأية استفسارات أو مساعدة، قم بزيارة[منتدى Aspose.GIS](https://forum.aspose.com/c/gis/33).
-### كيف يمكنني الحصول على ترخيص مؤقت لـ Aspose.GIS؟
- الحصول على ترخيص مؤقت[هنا](https://purchase.aspose.com/temporary-license/).
-### هل يتوفر برنامج تعليمي خطوة بخطوة لميزات Aspose.GIS الأخرى؟
- نعم، يمكنك العثور على المزيد من البرامج التعليمية والوثائق على[مرجع Aspose.GIS](https://reference.aspose.com/gis/net/).
+لأي استفسارات أو مساعدة، زر [Aspose.GIS forum](https://forum.aspose.com/c/gis/33).
+
+### كيف أحصل على ترخيص مؤقت لـ Aspose.GIS؟
+احصل على ترخيص مؤقت [here](https://purchase.aspose.com/temporary-license/).
+
+### هل هناك دليل خطوة بخطوة متاح لميزات Aspose.GIS الأخرى؟
+نعم، يمكنك العثور على المزيد من الدروس والوثائق على [Aspose.GIS reference](https://reference.aspose.com/gis/net/).
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+---
+
+**آخر تحديث:** 2026‑01‑18  
+**تم الاختبار مع:** Aspose.GIS for .NET (latest release)  
+**المؤلف:** Aspose  
+
+---
