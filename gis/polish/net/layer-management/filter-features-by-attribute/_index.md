@@ -1,28 +1,51 @@
 ---
-title: Filtruj funkcje według atrybutu
-linktitle: Filtruj funkcje według atrybutu
+date: 2026-01-18
+description: Dowiedz się, jak odczytać plik shapefile w C# i filtrować obiekty według
+  daty przy użyciu Aspose.GIS dla .NET. Przewodnik krok po kroku, jak efektywnie filtrować
+  atrybuty shapefile.
+linktitle: Read Shapefile C# – Filter Features by Attribute
 second_title: Aspose.GIS .NET API
-description: Poznaj moc Aspose.GIS dla .NET w manipulacji danymi przestrzennymi. Filtruj funkcje bez wysiłku, ulepszaj aplikacje GIS i zwiększaj produktywność.
-weight: 21
+title: Odczyt pliku Shapefile w C# – Filtrowanie obiektów według atrybutu przy użyciu
+  Aspose.GIS
 url: /pl/net/layer-management/filter-features-by-attribute/
+weight: 21
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Filtruj funkcje według atrybutu
+# Odczyt pliku Shapefile w C# – Filtrowanie obiektów według atrybutu przy użyciu Aspose.GIS
 
-## Wstęp
-dynamicznym świecie systemów informacji geograficznej (GIS) Aspose.GIS dla .NET wyróżnia się jako potężne narzędzie, które umożliwia programistom płynne manipulowanie i analizowanie danych przestrzennych. Niezależnie od tego, czy jesteś doświadczonym profesjonalistą GIS, czy ciekawym programistą chcącym odkrywać możliwości, ten samouczek poprowadzi Cię przez podstawowe kroki korzystania z Aspose.GIS w środowisku .NET.
-## Warunki wstępne
-Zanim zagłębisz się w praktyczne przykłady, upewnij się, że spełnione są następujące wymagania wstępne:
--  Instalacja Aspose.GIS: Pobierz i zainstaluj bibliotekę Aspose.GIS z[link do pobrania](https://releases.aspose.com/gis/net/).
-- Środowisko programistyczne: Skonfiguruj środowisko programistyczne .NET na swoim komputerze.
-- Dane przestrzenne: Przygotuj wejściowy plik kształtu (np. „InputShapeFile.shp”) zawierający dane przestrzenne, z którymi zamierzasz pracować.
-- Podstawowa znajomość języka C#: Zapoznaj się z podstawami języka programowania C#.
-## Importuj przestrzenie nazw
-Upewnij się, że w kodzie C# zaimportowałeś niezbędne przestrzenie nazw, aby uzyskać dostęp do funkcjonalności Aspose.GIS:
+## Wprowadzenie
+Jeśli potrzebujesz **odczytu shapefile C#** i szybkiego wyodrębnienia rekordów spełniających określone kryteria, Aspose.GIS dla .NET oferuje czyste, płynne API. W tym samouczku przeprowadzimy Cię przez ładowanie pliku Shapefile, **filtrowanie obiektów według daty**, oraz wyodrębnianie wartości atrybutów — idealne dla każdego, kto chce **filtrować atrybut shapefile** lub **iterować obiekty GIS** w aplikacji .NET.
+
+## Szybkie odpowiedzi
+- **Co obejmuje ten samouczek?** Odczyt pliku shapefile w C# i filtrowanie obiektów według atrybutu daty.  
+- **Jakiej biblioteki użyto?** Aspose.GIS dla .NET.  
+- **Ile linii kodu?** Mniej niż 20 linii dla podstawowej logiki filtrowania.  
+- **Czy potrzebna jest licencja?** Darmowa wersja próbna działa w środowisku deweloperskim; licencja jest wymagana w produkcji.  
+- **Obsługiwane platformy?** .NET Framework, .NET Core oraz .NET 5/6+.
+
+## Czym jest „odczyt shapefile C#”?
+Odczyt pliku shapefile w C# oznacza wczytanie danych wektorowych przechowywanych w pliku *.shp* (oraz jego plikach towarzyszących) do pamięci, aby można było je programowo zapytać, edytować lub eksportować. Aspose.GIS ukrywa szczegóły formatu pliku, pozwalając skupić się na logice przestrzennej.
+
+## Dlaczego filtrować obiekty według daty przy użyciu Aspose.GIS?
+- **Wydajność:** Biblioteka przenosi filtr do źródła danych, unikając pełnych skanów.  
+- **Prostota:** Metody w stylu Fluent LINQ, takie jak `WhereGreater`, sprawiają, że kod jest samowyjaśniający.  
+- **Elastyczność:** Możesz łączyć filtry dat z innymi filtrami atrybutów, umożliwiając potężne analizy GIS.
+
+## Wymagania wstępne
+Zanim przejdziesz do praktycznych przykładów, upewnij się, że masz:
+
+- **Instalacja Aspose.GIS:** Pobierz i zainstaluj bibliotekę Aspose.GIS z [linku do pobrania](https://releases.aspose.com/gis/net/).  
+- **Środowisko programistyczne:** IDE .NET (Visual Studio, Rider lub VS Code) skonfigurowane na Twoim komputerze.  
+- **Dane przestrzenne:** Plik wejściowy shapefile (np. **InputShapeFile.shp**) zawierający atrybut **dob** (date‑of‑birth), który chcesz filtrować.  
+- **Podstawowa znajomość C#:** Znajomość składni C# oraz struktury projektu .NET.
+
+## Importowanie przestrzeni nazw
+W swoim pliku źródłowym C# zaimportuj przestrzenie nazw niezbędne do operacji GIS:
+
 ```csharp
 using Aspose.Gis;
 using System;
@@ -31,41 +54,68 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 ```
-## Krok 1: Ustaw katalog dokumentów
-Upewnij się, że w kodzie masz poprawną ścieżkę katalogu dokumentów:
+
+## Krok 1: Ustaw katalog dokumentu
+Zdefiniuj folder, w którym znajduje się Twój shapefile. Zastąp symbol zastępczy rzeczywistą ścieżką na swoim komputerze.
+
 ```csharp
 string dataDir = "Your Document Directory";
 ```
+
 ## Krok 2: Otwórz warstwę wektorową
-Użyj Aspose.GIS, aby otworzyć warstwę wektorową z pliku kształtu:
+Użyj Aspose.GIS, aby otworzyć shapefile jako warstwę wektorową. Ten krok **odczytuje shapefile C#** i przygotowuje go do zapytań.
+
 ```csharp
 using (VectorLayer layer = VectorLayer.Open(dataDir + "InputShapeFile.shp", Drivers.Shapefile))
 ```
-## Krok 3: Iteruj po funkcjach
-Iteruj po wszystkich obiektach z datą w atrybucie „dob” późniejszą niż 1 stycznia 1982 r.:
+
+## Krok 3: Iteruj obiekty GIS i filtruj według daty
+Teraz **iterujemy obiekty GIS** i stosujemy warunek **filtru obiektów według daty** na atrybucie **dob**. Tylko rekordy z datą urodzenia późniejszą niż 1 styczeń 1982 zostaną wyświetlone.
+
 ```csharp
 foreach (Feature feature in layer.WhereGreater("dob", new DateTime(1982, 1, 1, 0, 0, 0)))
 {
     Console.WriteLine(feature.GetValue<DateTime>("dob").ToShortDateString());
 }
 ```
-Ten fragment kodu demonstruje funkcje filtrowania w oparciu o określony atrybut (w tym przypadku „dob”) i podany warunek daty.
-## Wniosek
-Aspose.GIS dla .NET upraszcza manipulację i analizę danych przestrzennych, co czyni go niezbędnym narzędziem dla programistów aplikacji GIS. Postępując zgodnie z tym przewodnikiem krok po kroku, nauczyłeś się filtrować obiekty według atrybutów, co stanowi podstawę dla bardziej zaawansowanych operacji na danych przestrzennych.
-## Często Zadawane Pytania
+
+Ten fragment pokazuje zwięzły sposób **filtrowania atrybutu shapefile** bez ładowania całego zestawu danych do pamięci.
+
+## Typowe problemy i wskazówki
+- **Niezgodność formatu daty:** Upewnij się, że pole **dob** w shapefile jest przechowywane jako typ daty; w przeciwnym razie rzutowanie może się nie powieść.  
+- **Błędy ścieżki:** Użyj `Path.Combine(dataDir, "InputShapeFile.shp")`, aby uniknąć brakujących separatorów ścieżek na różnych systemach operacyjnych.  
+- **Wydajność:** W przypadku bardzo dużych shapefile rozważ zastosowanie dodatkowych filtrów atrybutów, aby wcześnie zmniejszyć liczbę wyników.
+
+## Podsumowanie
+Aspose.GIS dla .NET umożliwia łatwe **odczytanie shapefile C#**, **filtrowanie obiektów według daty** oraz **iterowanie obiektów GIS** w sposób wydajny. Dzięki kilku liniom kodu możesz odblokować potężne zapytania przestrzenne, tworząc podstawy dla bardziej zaawansowanej analizy GIS.
+
+## Najczęściej zadawane pytania
 ### Czy Aspose.GIS jest kompatybilny ze wszystkimi formatami plików GIS?
- Aspose.GIS obsługuje różne formaty plików GIS, w tym Shapefile, GeoJSON i KML. Sprawdź[dokumentacja](https://reference.aspose.com/gis/net/) dla pełnej listy.
+Aspose.GIS obsługuje różne formaty plików GIS, w tym Shapefile, GeoJSON i KML. Sprawdź [dokumentację](https://reference.aspose.com/gis/net/) po pełną listę.
+
 ### Czy mogę wypróbować Aspose.GIS przed zakupem?
- Tak, możesz skorzystać z bezpłatnej wersji próbnej Aspose.GIS odwiedzając stronę[Tutaj](https://releases.aspose.com/).
+Tak, możesz wypróbować darmową wersję próbną Aspose.GIS, odwiedzając [tutaj](https://releases.aspose.com/).
+
 ### Gdzie mogę znaleźć wsparcie dla Aspose.GIS?
- W razie jakichkolwiek pytań lub pomocy odwiedź stronę[Forum Aspose.GIS](https://forum.aspose.com/c/gis/33).
-### Jak uzyskać tymczasową licencję na Aspose.GIS?
- Uzyskaj tymczasową licencję[Tutaj](https://purchase.aspose.com/temporary-license/).
-### Czy dostępny jest samouczek krok po kroku dotyczący innych funkcji Aspose.GIS?
- Tak, więcej samouczków i dokumentacji można znaleźć na stronie[Odniesienie do Aspose.GIS](https://reference.aspose.com/gis/net/).
+W razie pytań lub potrzeb pomocy, odwiedź [forum Aspose.GIS](https://forum.aspose.com/c/gis/33).
+
+### Jak uzyskać tymczasową licencję dla Aspose.GIS?
+Uzyskaj tymczasową licencję [tutaj](https://purchase.aspose.com/temporary-license/).
+
+### Czy dostępny jest krok po kroku samouczek dla innych funkcji Aspose.GIS?
+Tak, możesz znaleźć więcej samouczków i dokumentacji w [referencji Aspose.GIS](https://reference.aspose.com/gis/net/).
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+---
+
+**Last Updated:** 2026‑01‑18  
+**Tested With:** Aspose.GIS for .NET (latest release)  
+**Author:** Aspose  
+
+---

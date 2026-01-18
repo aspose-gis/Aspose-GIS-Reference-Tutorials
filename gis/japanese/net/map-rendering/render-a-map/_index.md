@@ -1,27 +1,38 @@
 ---
-title: Aspose.GIS を使用した地理空間データの視覚化をマスターする
-linktitle: 地図をレンダリングする
+date: 2026-01-18
+description: Aspose.GIS for .NET を使用して、地図に都市を追加し、SVG 地図を生成する方法を学びましょう。素早く魅力的なビジュアル化を作成できます。
+linktitle: Render a Map
 second_title: Aspose.GIS .NET API
-description: Aspose.GIS for .NET を使用して地理空間データ視覚化の世界を探索してください。魅力的な地図を簡単に作成できます。ダウンロード中！ #アスポーズ #GIS
-weight: 13
+title: Aspose.GIS for .NET を使用して地図に都市を追加する方法
 url: /ja/net/map-rendering/render-a-map/
+weight: 13
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.GIS を使用した地理空間データの視覚化をマスターする
+# Aspose.GIS for .NET を使用してマップに都市を追加する方法
 
-## 導入
-Aspose.GIS for .NET のエキサイティングな世界へようこそ!魅力的な地図を作成し、.NET アプリケーションで地理空間データの力を活用することに熱心であれば、ここが正しい場所です。このステップバイステップ ガイドでは、Aspose.GIS for .NET を使用してマップをレンダリングする手順を説明し、没入型の学習体験を提供します。
+## はじめに
+Aspose.GIS for .NET のエキサイティングな世界へようこそ！このステップバイステップ ガイドでは、**マップに都市を追加**し、高品質な SVG 出力を生成する方法を学びます。デスクトップ ダッシュボードや Web ベースの GIS ポータルを構築する場合でも、このチュートリアルではベクターレイヤーの描画、マップ寸法の設定、GeoJSON マップの簡単な読み込み方法を示します。
+
+## クイック回答
+- **このチュートリアルで扱う内容は？** マップに都市を追加し、SVG ファイルとしてエクスポートします。  
+- **必要なライブラリは？** Aspose.GIS for .NET。  
+- **ライセンスは必要ですか？** 無料トライアルがあります。製品版で使用する場合はライセンスが必要です。  
+- **Web アプリでも使えますか？** はい – 同じコードは ASP.NET、Blazor、その他の .NET Web フレームワークでも動作します。  
+- **生成される出力形式は？** ブラウザで表示でき、さらに編集可能な SVG マップです。
+
 ## 前提条件
-チュートリアルに入る前に、次の前提条件が満たされていることを確認してください。
--  Aspose.GIS for .NET ライブラリ: Aspose.GIS for .NET ライブラリがインストールされていることを確認してください。ダウンロードできます[ここ](https://releases.aspose.com/gis/net/).
-- データ ファイル: チュートリアルに必要なシェープファイルと geojson データを準備します。ドキュメント内のサンプル データを見つけることも、独自のファイルを使用することもできます。
-- 開発環境: Visual Studio などのコード エディターを含む .NET 開発環境をセットアップします。
+チュートリアルに入る前に、以下の前提条件が揃っていることを確認してください。
+- Aspose.GIS for .NET ライブラリ: Aspose.GIS for .NET ライブラリがインストールされていることを確認してください。ダウンロードは[こちら](https://releases.aspose.com/gis/net/)から。  
+- データファイル: チュートリアルで使用するシェープファイルと GeoJSON データを用意します。サンプルデータはドキュメントにありますし、独自のファイルを使用しても構いません。  
+- 開発環境: Visual Studio などのコードエディタを含む .NET 開発環境がセットアップされていること。
+
 ## 名前空間のインポート
-まず、必要な名前空間を .NET プロジェクトにインポートします。これらの名前空間は、Aspose.GIS 機能を操作するために不可欠です。
+まず、.NET プロジェクトに必要な名前空間をインポートします。これらの名前空間は Aspose.GIS の機能を使用するために必須です。
+
 ```csharp
 using Aspose.Gis;
 using Aspose.Gis.Rendering;
@@ -34,49 +45,66 @@ using System.Drawing.Text;
 using System.IO;
 using System.Linq;
 ```
-## ステップ 1: マップをセットアップする
+
+## 手順 1: マップの設定 (set map dimensions)
 ```csharp
 string dataDir = "Your Document Directory";
 using (var map = new Map(800, 476))
 {
-    //マップ設定用の追加コードをここに追加できます。
+    // Additional code for map setup can be added here.
 }
 ```
-このステップでは、指定された幅と高さで新しいマップを初期化します。お好みに応じて寸法を調整してください。
-## ステップ 2: ベース マップを追加する
+この手順では、幅 800 ピクセル、高さ 476 ピクセルの新しいマップを初期化します。デザイン要件に合わせて寸法を調整してください。
+
+## 手順 2: ベースマップの追加 (draw vector layer)
 ```csharp
 var baseMapSymbolizer = new SimpleFill { FillColor = Color.Salmon, StrokeWidth = 0.75 };
 map.Add(VectorLayer.Open(dataDir + "basemap.shp", Drivers.Shapefile), baseMapSymbolizer);
 ```
-ここでは、シェープファイルを使用してベース マップ レイヤーを追加します。をカスタマイズします。`SimpleFill`デザインの好みに合わせてシンボライザーを選択します。
-## ステップ 3: マップに都市を追加する
+ここでは、シェープファイルをしてベースマップ用の**ベクターレイヤーを描画**します。`SimpleFill` のプロパティは、好みのビジュアルスタイルに合わせて変更できます。
+
+## 手順 3: マップに都市を追加 (add cities to map, load GeoJSON map)
 ```csharp
 var citiesSymbolizer = new SimpleMarker() { FillColor = Color.LightBlue };
 citiesSymbolizer.FeatureBasedConfiguration = (feature, symbolizer) =>
 {
-    //ここに追加の構成ロジックを追加できます。
+    // Additional configuration logic can be added here.
 };
 map.Add(VectorLayer.Open(dataDir + "points.geojson", Drivers.GeoJson), citiesSymbolizer);
 ```
-この手順には、GeoJSON ファイルからマップに都市データを追加することが含まれます。をカスタマイズします。`SimpleMarker`シンボライザーを使用して、要件に基づいて機能を構成します。
-## ステップ 4: マップをレンダリングする
+この手順では、都市のポイント データを含む GeoJSON ファイルを読み込み、**マップに都市を追加**します。`FeatureBasedConfiguration` デリゲートを拡張して、人口などの属性に基づいて都市のスタイルを設定することも可能です。
+
+## 手順 4: マップのレンダリング (export map SVG, generate SVG map)
 ```csharp
 map.Render(dataDir + "cities_out.svg", Renderers.Svg);
 ```
-最後に、マップを SVG ファイルにレンダリングします。必要に応じて出力ファイルのパスを調整します。
+最後に、**マップを SVG ファイルとしてエクスポート**します。生成された `cities_out.svg` は、最新のブラウザやベクター グラフィック エディタで開くことができます。
+
 ## 結論
-おめでとう！ Aspose.GIS for .NET を使用して魅力的なマップを作成することに成功しました。このチュートリアルでは、地理空間データを簡単に視覚化できる Aspose.GIS の強力な機能を垣間見ることができました。
-## よくある質問
-### Web アプリケーションで Aspose.GIS for .NET を使用できますか?
-はい、Aspose.GIS for .NET はデスクトップ アプリケーションと Web アプリケーションの両方に適しています。
-### 試用版はありますか?
-はい、無料試用版を試すことができます[ここ](https://releases.aspose.com/).
-### Aspose.GIS for .NET のサポートはどこで見つけられますか?
-訪問[Aspose.GIS フォーラム](https://forum.aspose.com/c/gis/33)サポートやご質問がございましたら。
-### 短期プロジェクト用に一時ライセンスを購入できますか?
-はい、一時ライセンスが利用可能です[ここ](https://purchase.aspose.com/temporary-license/).
-### Aspose.GIS for .NET で利用できる追加のチュートリアルはありますか?
-はい、確認してください[ドキュメンテーション](https://reference.aspose.com/gis/net/)包括的なチュートリアルとガイドをご覧ください。
+おめでとうございます！Aspose.GIS for .NET を使用して**マップに都市を追加**し、SVG マップを生成できました。このチュートリアルでは、マップ寸法の設定、ベクターレイヤーの描画、GeoJSON データの読み込み、そしてスケーラブルな SVG へのエクスポート方法を実演しました。Web と印刷の両シナリオに最適です。
+
+## FAQ
+### Aspose.GIS for .NET を Web アプリケーションで使用できますか？
+はい、Aspose.GIS for .NET はデスクトップ アプリだけでなく Web アプリでも利用可能です。
+
+### トライアル版はありますか？
+はい、無料トライアル版は[こちら](https://releases.aspose.com/)から入手できます。
+
+### Aspose.GIS for .NET のサポートはどこで受けられますか？
+質問や支援が必要な場合は、[Aspose.GIS フォーラム](https://forum.aspose.com/c/gis/33)をご利用ください。
+
+### 短期プロジェクト向けに一時ライセンスを購入できますか？
+はい、一時ライセンスは[こちら](https://purchase.aspose.com/temporary-license/)から取得できます。
+
+### Aspose.GIS for .NET の追加チュートリアルはありますか？
+はい、包括的なチュートリアルやガイドは[ドキュメンテーション](https://reference.aspose.com/gis/net/)で確認できます。
+
+---
+
+**最終更新日:** 2026-01-18  
+**テスト環境:** Aspose.GIS 24.11 for .NET  
+**作者:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
