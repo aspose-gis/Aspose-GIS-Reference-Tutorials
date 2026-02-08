@@ -1,9 +1,9 @@
 ---
-date: 2025-12-04
-description: Aspose.GIS for .NET を使用して、接触しているジオメトリのチェック方法を学びましょう。これは、空間データを扱い、空間分析を実行するための強力なライブラリです。.NET
+date: 2026-02-08
+description: Aspose.GIS for .NET を使用して接触ジオメトリを検出し、ネットワークルーティングチェックを実行する方法を学びましょう。このライブラリは空間データの処理と空間分析を可能にする強力なツールです。
 linktitle: How to Check Touching Geometries
 second_title: Aspose.GIS .NET API
-title: Aspose.GIS for .NETで接触ジオメトリをチェックする方法
+title: ネットワークルーティングチェック：Aspose.GISでの接触ジオメトリ
 url: /ja/net/geometry-analysis/check-geometries-touching/
 weight: 13
 ---
@@ -12,38 +12,41 @@ weight: 13
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# 接触ジオメトリの確認方法
+# ネットワークルーティングチェック: Aspose.GIS for .NET でタッチジオメトリを使用する方法
 
-## はじめに
-2つの空間オブジェクト間の**接触の確認方法**が必要な場合、Aspose.GIS for .NET はクリーンで型安全な API を提供し、作業を簡単にします。このチュートリアルでは、ラインストリングやポイントを作成し、`Touches` メソッドを使用してジオメトリが境界のみを共有しているかどうかを判定する方法を示します。これは、ネットワークルーティング、マップオーバーレイの検証、近接チェックなど、多くの空間分析 .NET シナリオでのコア操作です。
+## Introduction
+2 つの空間オブジェクト間で **ネットワークルーティングチェックを実行** する必要があるとき、Aspose.GIS for .NET はクリーンで型安全な API を提供し、作業を簡単にします。このチュートリアルでは、ラインストリングやポイントを作成し、`Touches` メソッドを使用してジオメトリが境界だけを共有しているかどうかを判定する方法を紹介します。この操作は、ルート検証、マップオーバーレイの検証、近接クエリなど、多くの **spatial analysis .NET** シナリオの基礎となります。
 
-## クイック回答
-- **“touching” は何を意味しますか？** 2つのジオメトリは少なくとも1つの境界点を共有しますが、内部は交差しません。  
+## Quick Answers
+- **「タッチ (touching)」とは何ですか？** 2 つのジオメトリが少なくとも 1 つの境界点を共有しますが、内部は交差しません。  
 - **どのメソッドでチェックしますか？** `Geometry.Touches(otherGeometry)`。  
-- **この機能にライセンスは必要ですか？** 開発にはトライアルで動作しますが、本番環境では永続ライセンスが必要です。  
-- **サポートされている .NET バージョンは？** .NET Framework、.NET Core、.NET 5/6/7 – すべて Aspose.GIS がカバーしています。  
-- **実装にどれくらい時間がかかりますか？** 基本的な例で約5〜10分です。
+- **この機能にライセンスは必要ですか？** 開発用にはトライアルで動作しますが、本番環境では永続ライセンスが必要です。  
+- **対応している .NET バージョンは？** .NET Framework、.NET Core、.NET 5/6/7 すべてが Aspose.GIS によってカバーされています。  
+- **実装にかかる時間は？** 基本的な例で約 5〜10 分です。  
 
-## 空間分析における “Touching” とは何ですか？
-GIS 用語で、*touching* は2つのジオメトリがエッジで接触し、重なり合わない空間関係を指します。*intersects*（内部の重なりを含む）とは異なり、特徴が境界でのみ接触していることを検証する必要がある場合に使用されます。例えば、交差せずにジャンクションで接続する道路セグメントなどです。
+## How to Perform a Network Routing Check Using Touching Geometries
+以下では、**タッチしているジオメトリをチェックする方法** と、その結果をルーティング検証ワークフローに組み込む手順を詳しく説明します。
 
-## なぜ Aspose.GIS for Spatial Analysis .NET を使用するのか？
-Aspose.GIS は、ネイティブ GIS のインストールなしで **空間データを扱える** 完全に管理された .NET ライブラリを提供します。Shapefile、GeoJSON、KML など幅広いフォーマットをサポートし、`Touches`、`Intersects`、`Contains` などの高性能ジオメトリ操作を提供します。純粋な .NET であるため、Web サービス、デスクトップアプリ、クラウド関数に直接組み込むことができます。
+### What is “Touching” in Spatial Analysis?
+GIS 用語で *touching* は、2 つのジオメトリがエッジで接触しているが、内部は重なっていない空間関係を指します。*intersects*（内部の重なりを含む）とは異なり、境界だけで接続していることを検証したい場合に使用されます。たとえば、道路セグメントが交差せずに交差点で接続しているかどうかを確認する際に利用されます。
 
-## 前提条件
-開始する前に、以下が揃っていることを確認してください：
+## Why Use Aspose.GIS for Spatial Analysis .NET?
+Aspose.GIS は、ネイティブ GIS のインストールが不要な完全マネージド .NET ライブラリで、**空間データの取り扱い** を容易にします。Shapefile、GeoJSON、KML など多数のフォーマットに対応し、`Touches`、`Intersects`、`Contains` などの高性能ジオメトリ演算を提供します。純粋な .NET 実装なので、Web サービス、デスクトップアプリ、クラウドファンクションに直接組み込むことができます。
 
-1. **Visual Studio**（任意の最新バージョン）をマシンにインストールしてください。  
-2. **Aspose.GIS for .NET** – 最新パッケージを [公式ダウンロードページ](https://releases.aspose.com/gis/net/) からダウンロードしてください。  
-3. **有効なライセンス**（または無料トライアル） – [こちら](https://releases.aspose.com/) から取得してください。  
+## Prerequisites
+開始する前に以下を用意してください。
 
-### 環境の設定
+1. **Visual Studio**（最新バージョンのいずれか）をマシンにインストール。  
+2. **Aspose.GIS for .NET** – 最新パッケージを [official download page](https://releases.aspose.com/gis/net/) からダウンロード。  
+3. **有効なライセンス**（または無料トライアル） – [here](https://releases.aspose.com/) から取得。  
+
+### Setting Up Your Environment
 1. まだインストールしていない場合は Visual Studio をインストールします。  
 2. 上記リンクから Aspose.GIS for .NET をダウンロードし、NuGet パッケージをプロジェクトに追加します。  
-3. コード内でライセンスファイルを適用します（テスト用に一時ライセンスを使用することも可能です）。
+3. コード内でライセンスファイルを適用する（テスト用に一時ライセンスを使用しても可）。
 
-## 名前空間のインポート
-API を使用開始するには、必要な名前空間をインポートします：
+## Import Namespaces
+API を使用するために必要な名前空間をインポートします。
 
 ```csharp
 using Aspose.Gis.Geometries;
@@ -54,8 +57,8 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## ステップ 1: ラインストリング（およびポイント）の作成
-以下では、**ラインストリング** オブジェクトと、タッチ関係のテストに使用するポイントを作成します。
+## Step 1: Create Line Strings (and a Point)
+以下で **ラインストリング** オブジェクトと、タッチ関係をテストするポイントを作成します。
 
 ```csharp
 var geometry1 = new LineString();
@@ -70,13 +73,13 @@ geometry4.AddPoint(1, 1);
 geometry4.AddPoint(4, 4);
 ```
 
-*説明*：  
-- `geometry1` と `geometry2` はエンドポイント `(2, 2)` を共有しています。  
-- `geometry3` はその共有エンドポイントに正確に位置するポイントです。  
-- `geometry4` は同じ領域を横切りますが、`geometry1` とは境界を共有 **していません**。
+*Explanation*:  
+- `geometry1` と `geometry2` は端点 `(2, 2)` を共有しています。  
+- `geometry3` はその共有端点に正確に位置するポイントです。  
+- `geometry4` は同じ領域を横切りますが、`geometry1` とは境界を共有してい **ません**。
 
-## ステップ 2: タッチ関係の確認
-ここで `Touches` メソッドを呼び出し、どのペアがタッチと見なされるかを確認します。
+## Step 2: Check Touching Relationships
+`Touches` メソッドを呼び出して、どのペアがタッチしているかを確認します。
 
 ```csharp
 Console.WriteLine(geometry1.Touches(geometry2)); // True
@@ -85,36 +88,39 @@ Console.WriteLine(geometry1.Touches(geometry3)); // True
 Console.WriteLine(geometry1.Touches(geometry4)); // False
 ```
 
-*結果*：  
-- 最初の3つのチェックは、ジオメトリが内部の重なりなしに単一のポイントで接触しているため **True** を返します。  
-- 最後のチェックは、2つのラインストリングが境界ポイントだけでなく線分上で交差しているため **False** を返します。
+*Result*:  
+- 最初の 3 つのチェックは **True** を返します。ジオメトリは内部の重なりなしに単一の点で接触しているためです。  
+- 最後のチェックは **False** を返します。2 本のラインストリングが線分上で交差しており、単なる境界点での接触ではないためです。
 
-## 一般的な問題とヒント
-- **精度の問題** – GIS 計算は浮動小数点ベースです。予期しない `False` 結果が出た場合は、座標を正規化するか、`Geometry.EqualsExact(other, tolerance)` を使用して許容誤差を設定してください。  
-- **混合ジオメトリタイプ** – `Touches` はポイント、ライン、ポリゴン間で機能しますが、意味合いは異なります。データモデルで期待される関係を常に確認してください。  
-- **パフォーマンス** – 大規模データセットの場合、チェックをバッチ処理するか、Aspose.GIS が提供する空間インデックス（例: R‑tree）を使用して O(N²) の比較を回避してください。
+## Common Issues & Tips
+- **Precision problems** – GIS 計算は浮動小数点ベースです。予期しない `False` が出た場合は、座標を正規化するか、`Geometry.EqualsExact(other, tolerance)` で許容誤差を指定してください。  
+- **Mixed geometry types** – `Touches` はポイント、ライン、ポリゴン間でも機能しますが、意味合いが異なるため、データモデルで期待する関係を必ず確認してください。  
+- **Performance** – 大規模データセットの場合はバッチ処理や Aspose.GIS が提供する空間インデックス（例: R‑tree）を利用し、O(N²) の比較を回避しましょう。
 
-## よくある質問
+## Frequently Asked Questions
 
-**Q: Aspose.GIS はすべての .NET フレームワークと互換性がありますか？**  
-A: はい。.NET Framework、.NET Core、.NET 5+、.NET 6+ をサポートしており、デスクトップ、Web、クラウドプロジェクトで柔軟に使用できます。
+**Q: Aspose.GIS はすべての .NET フレームワークに対応していますか？**  
+A: はい。.NET Framework、.NET Core、.NET 5+、.NET 6+ をサポートしており、デスクトップ、Web、クラウドプロジェクトで柔軟に利用できます。
 
 **Q: ライセンスを購入する前に Aspose.GIS を試すことはできますか？**  
-A: もちろんです。Aspose のウェブサイト [こちら](https://purchase.aspose.com/temporary-license/) から無料トライアルを取得し、`Touches` 操作を含むすべての機能を体験できます。
+A: もちろんです。Aspose のウェブサイトから無料トライアルを取得できます。詳細は [here](https://purchase.aspose.com/temporary-license/) をご覧ください。`Touches` 操作を含むすべての機能を試すことができます。
 
-**Q: Aspose.GIS に関する質問のサポートはどこで受けられますか？**  
-A: 公式 [Aspose.GIS フォーラム](https://forum.aspose.com/c/gis/33) にアクセスして質問したり、例を共有したり、コミュニティや Aspose エンジニアから支援を受けたりできます。
+**Q: Aspose.GIS 関連の質問はどこでサポートを受けられますか？**  
+A: 公式 [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) で質問を投稿できます。コミュニティや Aspose エンジニアからの支援が受けられます。
 
-**Q: Aspose.GIS のアップデートはどのくらいの頻度でリリースされますか？**  
-A: Aspose は定期的にアップデートをリリースし、新しいフォーマットサポート、パフォーマンス向上、バグ修正を追加して、最新の .NET リリースとの互換性を保ちます。
+**Q: Aspose.GIS のアップデートはどのくらいの頻度で行われますか？**  
+A: 定期的に新しいフォーマットサポート、パフォーマンス改善、バグ修正を含むアップデートがリリースされ、最新の .NET リリースとの互換性が保たれます。
 
-**Q: Aspose.GIS の一時ライセンスを取得できますか？**  
-A: はい、評価目的で使用できる一時ライセンスは [こちら](https://purchase.aspose.com/temporary-license/) から入手可能です。
+**Q: Aspose.GIS の一時ライセンスは取得できますか？**  
+A: はい、評価目的で使用できる一時ライセンスが [here](https://purchase.aspose.com/temporary-license/) から入手可能です。
+
+**Q: `Touches` メソッドはネットワークルーティングチェックにどのように役立ちますか？**  
+A: 道路セグメントが共有エンドポイント（タッチ）でのみ接続していることを確認することで、ルーティングネットワークが意図しない重なりなしに正しく接続されているかを検証できます。
 
 ---
 
-**最終更新日:** 2025-12-04  
-**テスト環境:** Aspose.GIS for .NET 24.11 (latest at time of writing)  
+**最終更新日:** 2026-02-08  
+**テスト環境:** Aspose.GIS for .NET 24.11（執筆時点での最新）  
 **作者:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
