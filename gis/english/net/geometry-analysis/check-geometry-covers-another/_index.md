@@ -2,10 +2,10 @@
 title: Create LineString C# – Check Geometry Covers Another
 linktitle: Create LineString C# – Check Geometry Covers Another
 second_title: Aspose.GIS .NET API
-description: Learn how to create LineString in C# using Aspose.GIS for .NET, add points to a LineString, and check if a geometry covers another.
+description: Learn how to create linestring c# with Aspose.GIS for .NET, add points to a linestring, and perform a point on line check using the covers method.
 weight: 15
 url: /net/geometry-analysis/check-geometry-covers-another/
-date: 2025-12-06
+date: 2026-02-08
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -15,21 +15,21 @@ date: 2025-12-06
 # Check Geometry Covers Another
 
 ## Introduction
-Aspose.GIS for .NET is a powerful library that provides developers with tools to efficiently work with geographical data within their .NET applications. Whether you're building a mapping application, analyzing spatial data, or integrating geographical features into your software, Aspose.GIS offers a comprehensive set of functionalities to streamline your development process. In this tutorial you’ll learn **how to create LineString in C#**, add points to the line, and perform a **point on line check** using the `Covers` and `CoveredBy` methods.
+In this tutorial you’ll learn **how to create linestring c#** using Aspose.GIS for .NET, add points to a linestring, and perform a reliable **point on line check** with the `Covers` and `CoveredBy` methods. Whether you’re building a mapping tool, performing spatial analytics, or simply need to verify geometric relationships, mastering these operations will give your application the precision it needs.
 
 ## Quick Answers
-- **What does “create LineString in C#” mean?** It means instantiating a `LineString` geometry object and populating it with coordinate points.  
+- **What does “create linestring c#” mean?** It means instantiating a `LineString` geometry object and populating it with coordinate points.  
 - **Which method checks if a point lies on a line?** Use the `Covers` method on the `LineString` or `CoveredBy` on the `Point`.  
 - **Do I need a license to run the sample?** A temporary license works for evaluation; a full license is required for production.  
 - **Can this be used with .NET Core?** Yes, Aspose.GIS supports .NET Framework and .NET Core.  
-- **How many points can I add to a LineString?** There is no hard limit; you can add as many points as needed for your spatial analysis.
+- **How many points can I add to a linestring?** There is no hard limit; you can add as many points as needed for your spatial analysis.
 
-## What is **create LineString C#**?
-A `LineString` is a geometric shape consisting of an ordered list of points connected by straight line segments. In C# you create it by instantiating the `LineString` class from the `Aspose.Gis.Geometries` namespace and then **add points to the LineString** using the `AddPoint` method.
+## What is **create linestring c#**?
+A `LineString` is a geometric shape consisting of an ordered list of points connected by straight line segments. In C# you create it by instantiating the `LineString` class from the `Aspose.Gis.Geometries` namespace and then **add points to linestring** using the `AddPoint` method.
 
 ## Why use Aspose.GIS for a point on line check?
-- **Precision** – Handles floating‑point calculations and spatial predicates accurately.  
-- **Cross‑platform** – Works with .NET Framework, .NET Core, and .NET 5/6+.  
+- **Precision** – Handles floating‑point calculations and spatial predicates accurately, giving you a **precision point on line** result.  
+- **Cross‑platform** – Works with .NET Framework, .NET Core, and .NET 5/6+.  
 - **Rich API** – Provides a full suite of spatial relationship methods (`Covers`, `CoveredBy`, `Intersects`, etc.).  
 
 ## Prerequisites
@@ -64,7 +64,7 @@ using System.Threading.Tasks;
 
 Now, let's break down the example provided into multiple steps to understand how to **check if one geometry covers another** using Aspose.GIS for .NET.
 
-## How to **create LineString C#** – Step‑by‑Step Guide
+## How to create linestring c# – Step‑by‑Step Guide
 
 ### Step 1: Create a LineString Object
 ```csharp
@@ -77,7 +77,7 @@ Here, we instantiate a new `LineString` object, which represents a sequence of c
 line.AddPoint(0, 0);
 line.AddPoint(1, 1);
 ```
-We **add points to the LineString** using the `AddPoint` method. In this example, we add two points: (0, 0) and (1, 1), forming a simple diagonal line segment.
+We **add points to linestring** using the `AddPoint` method. In this example, we add two points: (0, 0) and (1, 1), forming a simple diagonal line segment.
 
 ### Step 3: Create a Point Object
 ```csharp
@@ -122,7 +122,7 @@ A: Aspose.GIS for .NET is a proprietary library developed by Aspose, so external
 A: Updates for Aspose.GIS for .NET are released regularly to introduce new features, enhancements, and bug fixes. Check the [website](https://releases.aspose.com/gis/net/) for the latest releases.
 
 ## Conclusion
-In conclusion, Aspose.GIS for .NET provides powerful tools for working with geographical data in .NET applications. By following the steps outlined above, you can efficiently **create LineString in C#**, **add points linestring**, and perform a **point on line check** to determine whether one geometry covers another. This capability enhances the spatial analysis features of your software and opens the door to more advanced GIS operations.
+By following the steps above, you now know how to **create linestring c#**, **add points to linestring**, and perform a reliable **point on line check** using the `Covers` and `CoveredBy` methods. This capability enhances the spatial analysis features of your software and opens the door to more advanced GIS operations.
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
@@ -133,6 +133,6 @@ In conclusion, Aspose.GIS for .NET provides powerful tools for working with geog
 
 ---
 
-**Last Updated:** 2025-12-06  
+**Last Updated:** 2026-02-08  
 **Tested With:** Aspose.GIS for .NET (latest release)  
 **Author:** Aspose
