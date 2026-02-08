@@ -1,11 +1,11 @@
 ---
-date: 2025-12-09
-description: Scopri come creare un buffer con Aspose.GIS per .NET, inclusi i passaggi
-  per installare Aspose, importare i namespace e verificare il contenimento spaziale
-  per un'analisi spaziale efficace.
+date: 2026-02-08
+description: Scopri come creare buffer di geometrie con Aspose.GIS per .NET ed eseguire
+  analisi spaziali di buffer, includendo l'installazione, le importazioni dei namespace
+  e i controlli di contenimento.
 linktitle: How to Create Buffer Using Aspose.GIS for .NET
 second_title: Aspose.GIS .NET API
-title: Come creare un buffer usando Aspose.GIS per .NET
+title: Come creare un buffer di geometria con Aspose.GIS per .NET
 url: /it/net/geometry-analysis/create-geometry-buffer/
 weight: 22
 ---
@@ -14,41 +14,42 @@ weight: 22
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Come creare un buffer con Aspose.GIS per .NET
+# Come creare un buffer di geometria con Aspose.GIS per .NET
 
 ## Introduzione
-Se lavori con dati geospaziali in un ambiente .NET, conoscere **come creare un buffer** attorno alle geometrie è essenziale per attività come l'analisi di prossimità, la zonizzazione e la generalizzazione delle feature. In questo tutorial, ti guideremo attraverso l'intero processo usando Aspose.GIS per .NET—dall'installazione, all'importazione dei namespace richiesti, alla generazione di buffer sia per geometrie lineari che poligonali, e infine al controllo del contenimento spaziale. Alla fine, avrai una solida comprensione pratica di come eseguire analisi spaziali con i buffer nelle tue applicazioni.
+Se lavori con dati geospaziali in un ambiente .NET, conoscere **come creare un buffer di geometria** è fondamentale per analisi di prossimità, zonizzazione e generalizzazione delle feature. In questo tutorial ti guideremo attraverso l’intero processo con Aspose.GIS per .NET—dall’installazione, all’importazione dei namespace richiesti, alla generazione di buffer per geometrie lineari e poligonali, fino al controllo della contenimento spaziale. Alla fine sarai in grado di applicare **buffer di analisi spaziale** nelle tue applicazioni.
 
 ## Risposte rapide
-- **Che cos'è un buffer geometrico?** Un poligono che racchiude tutti i punti entro una distanza specificata da una geometria di origine.  
-- **Perché usare Aspose.GIS per il buffering?** Offre un'API semplice e ad alte prestazioni che funziona su .NET Framework, .NET Core e .NET 5/6+.  
+- **Che cos'è un buffer di geometria?** Un poligono che racchiude tutti i punti entro una distanza specificata da una geometria di origine.  
+- **Perché usare Aspose.GIS per il buffering?** Offre un’API semplice e ad alte prestazioni che funziona su .NET Framework, .NET Core e .NET 5/6+.  
 - **Come installare Aspose.GIS?** Scarica la libreria dal sito ufficiale e aggiungila come riferimento in Visual Studio.  
-- **Come verificare il contenimento?** Usa il metodo `SpatiallyContains` per testare se un punto si trova all'interno del buffer generato.  
-- **Posso eseguire analisi spaziali oltre il buffering?** Sì—operazioni come intersect, union e calcoli di distanza sono anch'esse supportate.
+- **Come verificare la contenimento?** Usa il metodo `SpatiallyContains` per testare se un punto si trova all’interno del buffer generato.  
+- **Posso eseguire analisi spaziali oltre il buffering?** Sì—operazioni come intersect, union e calcoli di distanza sono anch’esse supportate.
 
-## Che cos'è un buffer geometrico?
-Un buffer geometrico crea una zona attorno a una feature (punto, linea o poligono) a una distanza definita dall'utente. Questa zona è utile per identificare feature vicine, creare aree di impatto o semplificare forme complesse.
+## Che cos'è un buffer di geometria?
+Un buffer di geometria crea una zona attorno a una feature (punto, linea o poligono) a una distanza definita dall’utente. Questa zona è utile per identificare feature vicine, creare aree di impatto o semplificare forme complesse.
 
-## Perché usare Aspose.GIS per la creazione di buffer?
+## Come creare un buffer di geometria con Aspose.GIS
+### Perché usare Aspose.GIS per i buffer di analisi spaziale?
 - **Supporto cross‑platform:** Funziona su Windows, Linux e macOS.  
-- **Nessuna dipendenza esterna:** Non è necessario alcun libreria GIS nativa.  
-- **API ricca:** Include buffering, predicati spaziali e trasformazioni del sistema di coordinate.  
-- **Ottimizzata per le prestazioni:** Gestisce grandi dataset in modo efficiente.
+- **Zero dipendenze esterne:** Non è necessario alcun library GIS nativo.  
+- **API ricca:** Include buffering, predicati spaziali e trasformazioni di sistemi di coordinate.  
+- **Ottimizzata per le prestazioni:** Gestisce grandi dataset in modo efficiente, rendendola ideale per buffer di analisi spaziale ad alta intensità.
 
 ## Prerequisiti
 Prima di iniziare, assicurati di avere quanto segue:
 
 - **Visual Studio 2019 o successivo** (o qualsiasi IDE .NET compatibile).  
 - **.NET 6 SDK** (o .NET Core 3.1+).  
-- **Libreria Aspose.GIS per .NET** – vedi i passaggi di installazione di seguito.  
+- **Libreria Aspose.GIS per .NET** – vedi i passaggi di installazione qui sotto.  
 
 ### Come installare Aspose.GIS per .NET
-1. Scarica la libreria Aspose.GIS per .NET dal [download link](https://releases.aspose.com/gis/net/).  
-2. In Visual Studio, fai clic con il tasto destro sul tuo progetto → **Add** → **Reference…** → sfoglia il DLL scaricato e aggiungilo.  
-3. Ottieni una licenza da [Aspose](https://purchase.aspose.com/buy) o usa una [licenza temporanea](https://purchase.aspose.com/temporary-license/) per la valutazione.
+1. Scarica la libreria Aspose.GIS per .NET dal [link di download](https://releases.aspose.com/gis/net/).  
+2. In Visual Studio, fai clic destro sul tuo progetto → **Add** → **Reference…** → sfoglia il DLL scaricato e aggiungilo.  
+3. Ottieni una licenza da [Aspose](https://purchase.aspose.com/buy) o utilizza una [licenza temporanea](https://purchase.aspose.com/temporary-license/) per la valutazione.
 
 ## Importazione dei namespace
-Per iniziare a usare l'API, importa i namespace richiesti nel tuo file C#.
+Per iniziare a usare l’API, importa i namespace richiesti nel tuo file C#.
 
 ### Come importare Aspose.GIS
 ```csharp
@@ -60,12 +61,12 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-Ora analizziamo il processo di creazione del buffer passo‑passo.
+Ora analizziamo il processo di creazione del buffer passo‑per‑passo.
 
 ## Guida passo‑passo
 
-### Passo 1: Creare un buffer geometrico
-Per prima cosa, definiamo una semplice geometria `LineString` che servirà come sorgente per il nostro buffer.
+### Passo 1: Creare un buffer di geometria
+Per prima cosa, definiamo una semplice geometria `LineString` che servirà da sorgente per il nostro buffer.
 
 ```csharp
 // Define a LineString geometry
@@ -76,7 +77,7 @@ line.AddPoint(3, 3);
 
 In questo snippet creiamo un `LineString` e aggiungiamo due punti, formando una linea diagonale da (0,0) a (3,3).
 
-### Passo 2: Generare il buffer per LineString
+### Passo 2: Generare un buffer per LineString
 Successivamente, generiamo un buffer attorno alla linea con una **distanza positiva** di 1 unità.
 
 ```csharp
@@ -84,10 +85,10 @@ Successivamente, generiamo un buffer attorno alla linea con una **distanza posit
 var lineBuffer = line.GetBuffer(distance: 1);
 ```
 
-Il metodo `GetBuffer` restituisce un poligono che include tutti i punti situati entro 1 unità dalla linea originale.
+Il metodo `GetBuffer` restituisce un poligono che include ogni punto situato entro 1 unità dalla linea originale.
 
-### Passo 3: Verificare il contenimento spaziale
-Ora dimostriamo **come verificare il contenimento** testando se punti specifici ricadono all'interno del buffer.
+### Passo 3: Verificare la contenimento spaziale
+Ora dimostriamo **come verificare la contenimento** testando se punti specifici ricadono all’interno del buffer.
 
 ```csharp
 // Check spatial containment of points within the buffer
@@ -95,9 +96,9 @@ Console.WriteLine(lineBuffer.SpatiallyContains(new Point(1, 2)));     // True
 Console.WriteLine(lineBuffer.SpatiallyContains(new Point(3.1, 3.1))); // True
 ```
 
-Il predicato `SpatiallyContains` restituisce `true` se il punto si trova all'interno del poligono buffer.
+Il predicato `SpatiallyContains` restituisce `true` se il punto si trova all’interno del poligono buffer.
 
-### Passo 4: Definire una geometria Polygon
+### Passo 4: Definire una geometria Poligono
 Creeremo anche una geometria `Polygon` per illustrare il buffering con una **distanza negativa**, che riduce la forma.
 
 ```csharp
@@ -115,18 +116,18 @@ polygon.ExteriorRing = new LinearRing(new[]
 
 Il poligono rappresenta un quadrato con vertici in (0,0), (0,3), (3,3) e (3,0).
 
-### Passo 5: Generare il buffer per Polygon
-Applicare una distanza negativa di –1 unità contrae il poligono verso l'interno.
+### Passo 5: Generare un buffer per Poligono
+Applicando una distanza negativa di –1 unità il poligono si contrae verso l’interno.
 
 ```csharp
 // Generate a buffer for the Polygon with a negative distance
 var polygonBuffer = (IPolygon)polygon.GetBuffer(distance: -1);
 ```
 
-Il risultato `polygonBuffer` è un quadrato più piccolo, utile per creare zone interne.
+Il risultato, `polygonBuffer`, è un quadrato più piccolo, utile per creare zone interne.
 
 ### Passo 6: Accedere ai punti dell'anello esterno del buffer
-Infine, recuperiamo e visualizziamo le coordinate dell'anello esterno del buffer.
+Infine, recuperiamo e visualizziamo le coordinate dell’anello esterno del buffer.
 
 ```csharp
 // Access points of the exterior ring of the buffer Polygon
@@ -140,34 +141,33 @@ for (int i = 0; i < ring.Count; ++i)
 Questo ciclo stampa ogni vertice del poligono contratto, confermando la geometria del buffer.
 
 ## Problemi comuni e soluzioni
-
 | Problema | Soluzione |
 |----------|-----------|
 | **Il buffer restituisce `null`** | Assicurati che il valore della distanza sia appropriato per il sistema di coordinate della geometria. |
 | **`SpatiallyContains` restituisce sempre `false`** | Verifica che entrambe le geometrie condividano lo stesso riferimento spaziale (CRS). |
-| **Rallentamento delle prestazioni con grandi dataset** | Elabora le geometrie in batch e riutilizza la stessa istanza di `GeometryFactory`. |
+| **Rallentamento delle prestazioni con dataset di grandi dimensioni** | Elabora le geometrie in batch e riutilizza la stessa istanza di `GeometryFactory`. |
 
 ## Domande frequenti
 
-**D: Aspose.GIS per .NET è compatibile con altri framework .NET?**  
+**D: È Aspose.GIS per .NET compatibile con altri framework .NET?**  
 R: Sì, funziona con .NET Framework, .NET Core, .NET 5 e .NET 6.
 
 **D: Posso eseguire analisi spaziali usando Aspose.GIS per .NET?**  
-R: Assolutamente. La libreria supporta buffering, intersect, calcoli di distanza e altro.
+R: Assolutamente. La libreria supporta buffering, intersezione, calcoli di distanza e molto altro.
 
 **D: Ci sono limiti sulla dimensione del dataset?**  
-R: L'API è ottimizzata per grandi dataset, ma il consumo di memoria dipende dalla dimensione delle geometrie caricate.
+R: L’API è ottimizzata per dataset di grandi dimensioni, ma il consumo di memoria dipende dalla complessità delle geometrie caricate.
 
 **D: Aspose.GIS supporta diversi sistemi di riferimento spaziale?**  
-R: Sì, gestisce un'ampia gamma di sistemi di coordinate e consente trasformazioni on‑the‑fly.
+R: Sì, gestisce un’ampia gamma di sistemi di coordinate e consente trasformazioni on‑the‑fly.
 
 **D: Dove posso ottenere supporto tecnico?**  
-R: Visita il forum della community di Aspose.GIS su [https://forum.aspose.com/c/gis/33](https://forum.aspose.com/c/gis/33) per assistenza.
+R: Visita il forum della community di Aspose.GIS all’indirizzo [https://forum.aspose.com/c/gis/33](https://forum.aspose.com/c/gis/33) per assistenza.
 
 ---
 
-**Ultimo aggiornamento:** 2025-12-09  
-**Testato con:** Aspose.GIS per .NET 24.11 (ultima versione al momento della scrittura)  
+**Ultimo aggiornamento:** 2026-02-08  
+**Testato con:** Aspose.GIS per .NET (ultima versione)  
 **Autore:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
