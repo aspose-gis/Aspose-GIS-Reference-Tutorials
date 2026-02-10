@@ -1,6 +1,6 @@
 ---
-date: 2025-12-07
-description: Aspose.GIS を使用して .NET でジオメトリの長さを計算し、効率的な空間データ処理を実現する方法を学びましょう。コード例付きのステップバイステップガイドです。
+date: 2026-02-10
+description: Aspose.GIS を使用して .NET でジオメトリの長さを計算する方法を学び、効率的な空間データ処理を実現します。C# の線分長取得例と線分長計算例が含まれています。
 linktitle: Get Geometry Length
 second_title: Aspose.GIS .NET API
 title: Aspose.GIS を使用した .NET でジオメトリの長さを計算する方法
@@ -12,34 +12,42 @@ weight: 24
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.GIS for .NET でジオメトリの長さを計算する方法
+# Aspose.GIS を使用した .NET でのジオメトリ長さの計算方法
 
-## Introduction
-.NET アプリケーションでジオメトリ オブジェクトの **長さを計算する方法** を明確かつ実践的に知りたい方は、ここが最適です。Aspose.GIS for .NET は、ラインの長さやポリゴンの周囲長といった空間計算をシンプルかつ高速に行える GIS 向け API を豊富に提供します。本チュートリアルでは、環境構築から正確な長さ値を返す C# コードの記述まで、全工程を順を追って解説します。
+## はじめに
+もし **calculate geometry length .NET** を明確で実用的に行う方法を探しているなら、ここが適切な場所です。Aspose.GIS for .NET は、ライン長さやポリゴン周囲長の測定など、空間計算をシンプルかつ高速に行える GIS 特化型 API を豊富に提供します。このチュートリアルでは、環境設定から正確な長さ値を返す C# コードの作成まで、全工程を順に解説します。
 
-## Quick Answers
-- **「GetLength()」は何を返すのですか？** ラインの場合は線の長さ、ポリゴンの場合は周囲長を返します。  
-- **必要な名前空間はどれですか？** `Aspose.Gis.Geometries`。  
-- **.NET 6 でも使用できますか？** はい、Aspose.GIS は .NET 5、.NET 6 以降をサポートしています。  
-- **開発用にライセンスは必要ですか？** 評価用の無料トライアルで動作しますが、本番環境ではライセンスが必要です。  
-- **計算単位は考慮されていますか？** 長さは座標系の単位で返されます（例: 投影 CRS の場合はメートル）。
+## クイック回答
+- **「GetLength()」は何を返しますか？** ラインの場合はライン長さを、ポリゴンの場合は周囲長（周長）を返します。  
+- **どの名前空間が必要ですか？** `Aspose.Gis.Geometries`。  
+- **.NET 6 で使用できますか？** はい、Aspose.GIS は .NET 5、.NET 6 以降をサポートしています。  
+- **開発にライセンスは必要ですか？** 評価目的なら無料トライアルで利用可能ですが、本番環境ではライセンスが必要です。  
+- **計算は単位に対応していますか？** 長さは座標系の単位で返されます（例：投影座標系の場合はメートル）。
 
-## Prerequisites
+## ジオメトリ長さとは？
+`Geometry.GetLength()` はジオメトリオブジェクトの線形測定値を返すメソッドです。`LineString` の場合は総ライン長さを、`Polygon` の場合は周囲長（すべてのエッジの合計）を返します。このメソッドは内部の計算を抽象化し、上位レベルの GIS ロジックに集中できるようにします。
+
+## なぜ Aspose.GIS を長さ計算に使用するのか？
+- **外部依存なし** – 純粋な .NET ライブラリで、ネイティブ DLL が不要です。  
+- **高精度** – ダブル精度演算を使用し、正確な結果を提供します。  
+- **クロスプラットフォーム** – Windows、Linux、macOS 上で .NET Core/5/6+ と共に動作します。  
+
+## 前提条件
 開始する前に、以下が揃っていることを確認してください。
 
-### 1. Aspose.GIS for .NET Library
-まず、開発環境に Aspose.GIS for .NET ライブラリがインストールされている必要があります。まだの場合は、[Aspose.GIS for .NET Documentation](https://reference.aspose.com/gis/net/) ページからダウンロードしてください。
+### 1. Aspose.GIS for .NET ライブラリ
+まず、開発環境に Aspose.GIS for .NET ライブラリがインストールされている必要があります。まだインストールしていない場合は、[Aspose.GIS for .NET ドキュメント](https://reference.aspose.com/gis/net/) ページからダウンロードできます。
 
-### 2. .NET Development Environment
-マシンに .NET 開発環境が整っていることを確認します。Visual Studio などの対応 IDE がインストールされていることが前提です。
+### 2. .NET 開発環境
+マシンに .NET 開発環境が構築されていることを確認してください。これには Visual Studio もしくは他の対応 IDE がインストールされていることが含まれます。
 
-### 3. Basic Understanding of C#
-C# の基本的な知識があると、本チュートリアルをスムーズに進められます。
+### 3. C# の基本的な理解
+このチュートリアルを進めるには、C# プログラミング言語の基本的な理解が必要です。
 
-## Import Namespaces
-Aspose.GIS for .NET が提供する機能を利用するには、C# プロジェクトに必要な名前空間をインポートする必要があります。
+## 名前空間のインポート
+Aspose.GIS for .NET が提供する機能を利用するには、必要な名前空間を C# プロジェクトにインポートする必要があります。
 
-### Import Aspose.GIS Namespace
+### Aspose.GIS 名前空間のインポート
 ```csharp
 using Aspose.Gis.Geometries;
 using System;
@@ -49,18 +57,9 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## What is Geometry Length?
-`Geometry.GetLength()` はジオメトリ オブジェクトの線形測定値を返すメソッドです。`LineString` では総線長を、`Polygon` では周囲長（全エッジの合計）を取得できます。このメソッドは内部の数学計算を抽象化し、上位レベルの GIS ロジックに集中できるようにします。
-
-## Why Use Aspose.GIS for Length Calculations?
-- **外部依存なし** – 純粋な .NET ライブラリで、ネイティブ DLL が不要です。  
-- **高精度** – double 精度の演算で正確な結果を提供します。  
-- **クロスプラットフォーム** – Windows、Linux、macOS 上の .NET Core/5/6+ で動作します。  
-
-## Step‑by‑Step Guide
-
-### Step 1: Create Geometry Objects
-まず、長さを計算したい形状を表すジオメトリ オブジェクトを作成します。ライン、ポリゴン、その他任意のジオメトリが対象です。
+## C# でライン長さを取得する方法
+### 手順 1: ジオメトリオブジェクトの作成
+まず、長さを計算したい形状を表すジオメトリオブジェクトを作成します。ライン、ポリゴン、その他任意の幾何形状を含めることができます。
 
 ```csharp
 var line = new LineString();
@@ -69,15 +68,16 @@ line.AddPoint(2, 2);
 line.AddPoint(2, 0);
 ```
 
-### Step 2: How to calculate line length in C#
-ラインジオメトリを作成したら、`GetLength()` メソッドで長さを計算できます。これは **calculate line length c#** をワンライナーで実現する例です。
+### 手順 2: C# でライン長さを計算する
+ラインジオメトリを作成したら、`GetLength()` メソッドを使用して長さを計算できます。これは、**calculate line length c#** を1行のコードで実演しています。
 
 ```csharp
 Console.WriteLine("{0:F}", line.GetLength()); // Output: 4.83
 ```
 
-### Step 3: Create Polygon Geometry
-同様に、`Polygon` と `LinearRing` クラスを使用してポリゴン ジオメトリ オブジェクトを作成できます。
+## ポリゴンのライン長さを C# で計算する方法
+### 手順 3: ポリゴンジオメトリの作成
+同様に、`Polygon` と `LinearRing` クラスを使用してポリゴンジオメトリオブジェクトを作成できます。
 
 ```csharp
 var rectangle = new Polygon(new LinearRing(new[]
@@ -90,45 +90,45 @@ var rectangle = new Polygon(new LinearRing(new[]
 }));
 ```
 
-### Step 4: How to get length of a polygon
-ポリゴンに対しては、`GetLength()` が周囲長を返します。これが形状の **how to get length** に相当します。
+### 手順 4: ポリゴンの長さを取得する
+ポリゴンの場合、`GetLength()` メソッドは周囲長を返します。これは実質的に形状の **how to get length** です。
 
 ```csharp
 Console.WriteLine("{0:F}", rectangle.GetLength()); // Output: 4.00
 ```
 
-## Common Issues and Solutions
-| Issue | Solution |
+## よくある問題と解決策
+| 問題 | 解決策 |
 |-------|----------|
-| **Unexpected zero length** | ジオメトリの座標系が提供したデータと一致しているか確認してください。重複点があると長さが 0 になることがあります。 |
-| **Incorrect units** | `GetLength()` は CRS の単位で値を返すことを忘れずに。必要に応じてメートルやフィートに変換してください。 |
-| **Performance with large datasets** | 可能な限りジオメトリ オブジェクトを再利用し、ループ内で多数の一時ポイントを生成しないようにしてください。 |
+| **予期しないゼロ長さ** | ジオメトリの座標系が提供したデータと一致しているか確認してください。重複したポイントはゼロ長さのセグメントを引き起こす可能性があります。 |
+| **単位が正しくない** | `GetLength()` は CRS の単位で値を返すことを忘れないでください。必要に応じてメートルやフィートに変換してください。 |
+| **大規模データセットでのパフォーマンス** | 可能な限りジオメトリオブジェクトを再利用し、ループ内で数千の一時ポイントを作成するのを避けてください。 |
 
-## Frequently Asked Questions
+## よくある質問
 
 **Q: Aspose.GIS for .NET はすべての .NET フレームワークと互換性がありますか？**  
-A: Aspose.GIS for .NET は .NET Framework 4.6.1 以降、そして .NET 5/6/7 と互換性があります。
+A: Aspose.GIS for .NET は .NET Framework 4.6.1 以降、および .NET 5/6/7 と互換性があります。
 
 **Q: 購入前に Aspose.GIS for .NET を試すことはできますか？**  
-A: はい、[こちら](https://releases.aspose.com/) から無料トライアルをご利用いただけます。
+A: はい、[こちら](https://releases.aspose.com/) から Aspose.GIS for .NET の無料トライアルをご利用いただけます。
 
-**Q: Aspose.GIS for .NET のサポートはどこで受けられますか？**  
-A: Aspose.GIS コミュニティフォーラムは [こちら](https://forum.aspose.com/c/gis/33) です。
+**Q: Aspose.GIS for .NET のサポートはどこで見つけられますか？**  
+A: Aspose.GIS コミュニティフォーラム [こちら](https://forum.aspose.com/c/gis/33) でサポートと支援を受けられます。
 
 **Q: Aspose.GIS for .NET の一時ライセンスはどのように取得できますか？**  
 A: [こちら](https://purchase.aspose.com/temporary-license/) から一時ライセンスを取得できます。
 
-**Q: ジオメトリ 長さ計算の出力形式をカスタマイズできますか？**  
-A: はい、Aspose.GIS for .NET は様々な書式オプションを提供しており、要件に合わせて出力形式をカスタマイズできます。
+**Q: ジオメトリ長さ計算の出力形式をカスタマイズできますか？**  
+A: はい、Aspose.GIS for .NET は要件に合わせて出力形式をカスタマイズできるさまざまなフォーマットオプションを提供しています。
 
-## Conclusion
-本チュートリアルでは、Aspose.GIS for .NET を使用してラインとポリゴンのジオメトリ 長さを **計算する方法** を解説しました。ステップバイステップの例に従えば、デスクトップ GIS ツール、Web サービス、バックエンドのデータ処理パイプラインなど、あらゆる .NET アプリケーションに正確な空間測定機能を組み込むことができます。
+## 結論
+このチュートリアルでは、Aspose.GIS for .NET を使用してラインとポリゴンジオメトリの両方で **how to calculate geometry length .NET** をカバーしました。ステップバイステップの例に従うことで、デスクトップ GIS ツール、Web サービス、バックエンドのデータ処理パイプラインなど、あらゆる .NET アプリケーションに正確な空間測定を組み込むことができるようになりました。
 
 ---
 
-**Last Updated:** 2025-12-07  
-**Tested With:** Aspose.GIS 24.11 for .NET  
-**Author:** Aspose  
+**最終更新日:** 2026-02-10  
+**テスト環境:** Aspose.GIS 24.11 for .NET  
+**作者:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

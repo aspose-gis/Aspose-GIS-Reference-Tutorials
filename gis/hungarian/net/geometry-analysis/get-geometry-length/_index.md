@@ -1,8 +1,8 @@
 ---
-date: 2025-12-07
-description: Tanulja meg, hogyan számítsa ki a geometria hosszát .NET‑ben az Aspose.GIS
-  használatával a hatékony térbeli adatkezelés érdekében. Lépésről‑lépésre útmutató
-  kódrészletekkel.
+date: 2026-02-10
+description: Tudja meg, hogyan számítható ki a geometria hossza .NET környezetben
+  az Aspose.GIS segítségével a hatékony térbeli adatkezelés érdekében. Tartalmazza
+  a vonalhossz lekérését C#-ban és a vonalhossz számítását C# példákkal.
 linktitle: Get Geometry Length
 second_title: Aspose.GIS .NET API
 title: Hogyan számítsuk ki a geometria hosszát .NET‑ben az Aspose.GIS segítségével
@@ -14,32 +14,40 @@ weight: 24
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Hogyan számítsuk ki a geometria hosszát .NET-ben az Aspose.GIS használatával
+# Hogyan számítsuk ki a geometriai hosszúságot .NET-ben az Aspose.GIS segítségével
 
 ## Introduction
-Ha egyértelmű, gyakorlati módot keres **hogyan számítsuk ki a hosszát** a geometriai objektumoknak egy .NET alkalmazásban, jó helyen jár. Az Aspose.GIS for .NET gazdag GIS‑központú API‑készletet biztosít, amelyek a térbeli számításokat – például vonalhossz vagy poligon kerület mérését – egyszerűvé és teljesítményessé teszik. Ebben az útmutatóban végigvezetjük a teljes folyamatot, a környezet beállításától a C# kód írásáig, amely pontos hosszértékeket ad vissza.
+Ha egy világos, gyakorlati módot keresel a **geometry length .NET** kiszámítására, jó helyen vagy. Az Aspose.GIS for .NET gazdag GIS‑központú API‑készletet biztosít, amely egyszerűvé és gyorssá teszi a térbeli számításokat – például a vonalhossz vagy a polygon kerület mérését. Ebben az oktatóanyagról lépésről‑lépésre végigvezetünk a teljes folyamaton, a környezet beállításától a pontos hosszértékeket visszaadó C# kód írásáig.
 
 ## Quick Answers
-- **Mi ad vissza a “GetLength()”?** Vonalak esetén a vonalhosszt, poligonok esetén a kerületet adja vissza.  
+- **Mit ad vissza a “GetLength()”?** Vonalak esetén a vonalhosszt, polygonok esetén a kerületet adja vissza.  
 - **Melyik névtér szükséges?** `Aspose.Gis.Geometries`.  
-- **Használhatom .NET 6-tal?** Igen, az Aspose.GIS támogatja a .NET 5‑öt, .NET 6‑ot és későbbi verziókat.  
-- **Szükségem van licencre fejlesztéshez?** Egy ingyenes próba a kiértékeléshez elegendő; a termeléshez licenc szükséges.  
-- **Figyelembe veszi a számítás egységét?** A hossz a koordináta‑rendszer egységeiben (pl. méter a vetített CRS‑ben) kerül visszaadásra.
+- **Használhatom .NET 6-tal?** Igen, az Aspose.GIS támogatja a .NET 5, .NET 6 és újabb verziókat.  
+- **Szükség van licencre fejlesztéshez?** Egy ingyenes próba verzió elegendő értékeléshez; a licenc a termeléshez kötelező.  
+- **Az egységek figyelembe vannak véve?** A hossz a koordináta‑rendszer egységeiben (pl. méter a vetített CRS‑ben) kerül visszaadásra.
+
+## What is Geometry Length?
+A `Geometry.GetLength()` egy olyan metódus, amely a geometriai objektum lineáris mérését adja vissza. `LineString` esetén a teljes vonalhosszt, `Polygon` esetén a kerületet (az összes él összegét) adja. Ez a metódus elrejti a mögöttes matematikát, így a magasabb szintű GIS logikára koncentrálhatsz.
+
+## Why Use Aspose.GIS for Length Calculations?
+- **Nincsenek külső függőségek** – tiszta .NET könyvtár, nincs natív DLL.  
+- **Nagy pontosság** – dupla‑pontosságú aritmetikát használ a pontos eredményekért.  
+- **Kereszt‑platform** – Windows, Linux és macOS rendszereken is működik a .NET Core/5/6+ verziókkal.  
 
 ## Prerequisites
-Mielőtt elkezdenénk, győződjön meg róla, hogy a következőkkel rendelkezik:
+Mielőtt elkezdenénk, győződj meg róla, hogy a következők rendelkezésedre állnak:
 
 ### 1. Aspose.GIS for .NET Library
-Először is telepítve kell legyen az Aspose.GIS for .NET könyvtár a fejlesztői környezetben. Ha még nem tette meg, letöltheti a [Aspose.GIS for .NET Documentation](https://reference.aspose.com/gis/net/) oldalról.
+Először is telepítened kell az Aspose.GIS for .NET könyvtárat a fejlesztői környezetedbe. Ha még nem tetted meg, letöltheted a [Aspose.GIS for .NET Documentation](https://reference.aspose.com/gis/net/) oldalról.
 
 ### 2. .NET Development Environment
-Győződjön meg róla, hogy .NET fejlesztői környezet van beállítva a gépén. Ez magában foglalja a Visual Studio vagy bármely más kompatibilis IDE telepítését.
+Biztosítsd, hogy a gépeden be legyen állítva egy .NET fejlesztői környezet. Ez magában foglalja a Visual Studio vagy bármely más kompatibilis IDE telepítését.
 
 ### 3. Basic Understanding of C#
 Alapvető C# programozási ismeretek szükségesek a tutorial követéséhez.
 
 ## Import Namespaces
-Az Aspose.GIS for .NET által biztosított funkciók használatához importálni kell a szükséges névtereket a C# projektbe.
+Az Aspose.GIS for .NET által nyújtott funkciók használatához importálnod kell a szükséges névtereket a C# projektedbe.
 
 ### Import Aspose.GIS Namespace
 ```csharp
@@ -51,18 +59,9 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## What is Geometry Length?
-`Geometry.GetLength()` egy olyan metódus, amely a geometriai objektum lineáris mérését adja vissza. `LineString` esetén a teljes vonalhosszt, `Polygon` esetén a kerületet (az összes él összegét) adja. Ez a metódus elrejti a mögöttes matematikát, így a magasabb szintű GIS logikára koncentrálhat.
-
-## Why Use Aspose.GIS for Length Calculations?
-- **Nincsenek külső függőségek** – tiszta .NET könyvtár, nincs natív DLL.  
-- **Nagy pontosság** – dupla pontosságú aritmetikát használ a pontos eredményekhez.  
-- **Keresztplatformos** – Windows, Linux és macOS rendszereken működik .NET Core/5/6+ környezetben.  
-
-## Step‑by‑Step Guide
-
+## How to Get Line Length C#
 ### Step 1: Create Geometry Objects
-Kezdésként hozza létre a geometriai objektumokat, amelyek a hossz számításához szükséges alakzatokat képviselik. Ez lehet vonalak, poligonok vagy bármely más geometriai forma.
+Kezdésként hozd létre a geometriai objektumokat, amelyek a hossz számításához szükséges alakzatokat reprezentálják. Ez lehet vonal, polygon vagy bármely más geometriai forma.
 
 ```csharp
 var line = new LineString();
@@ -71,15 +70,16 @@ line.AddPoint(2, 2);
 line.AddPoint(2, 0);
 ```
 
-### Step 2: How to calculate line length in C#
-Miután létrehozta a vonalgeometriát, kiszámíthatja a hosszát a `GetLength()` metódussal. Ez bemutatja a **calculate line length c#** egyetlen kódsorban.
+### Step 2: Calculate Line Length in C#
+Miután létrehoztad a vonalgeometriát, a `GetLength()` metódussal számíthatod ki a hosszát. Ez a **calculate line length c#** példát egyetlen kódsorban mutatja be.
 
 ```csharp
 Console.WriteLine("{0:F}", line.GetLength()); // Output: 4.83
 ```
 
+## How to Calculate Line Length C# for Polygons
 ### Step 3: Create Polygon Geometry
-Hasonlóan, poligon geometriai objektumokat hozhat létre a `Polygon` és `LinearRing` osztályok használatával.
+Hasonlóan létrehozhatsz polygon geometriai objektumokat a `Polygon` és `LinearRing` osztályok használatával.
 
 ```csharp
 var rectangle = new Polygon(new LinearRing(new[]
@@ -92,8 +92,8 @@ var rectangle = new Polygon(new LinearRing(new[]
 }));
 ```
 
-### Step 4: How to get length of a polygon
-Poligonok esetén a `GetLength()` metódus a kerületet adja vissza, ami lényegében a **how to get length** a forma esetében.
+### Step 4: Get Length of a Polygon
+Polygonok esetén a `GetLength()` metódus a kerületet adja vissza, ami lényegében a **how to get length** a forma esetében.
 
 ```csharp
 Console.WriteLine("{0:F}", rectangle.GetLength()); // Output: 4.00
@@ -102,35 +102,35 @@ Console.WriteLine("{0:F}", rectangle.GetLength()); // Output: 4.00
 ## Common Issues and Solutions
 | Issue | Solution |
 |-------|----------|
-| **Váratlanul nulla hossz** | Ellenőrizze, hogy a geometria koordináta‑rendszere megegyezik a megadott adatokkal; ismétlődő pontok nulla‑hosszú szegmenseket okozhatnak. |
-| **Helytelen egységek** | Ne feledje, hogy a `GetLength()` a CRS egységeiben adja vissza az értékeket. Szükség esetén konvertáljon méterre/lábra. |
-| **Teljesítmény nagy adathalmazoknál** | Amikor csak lehetséges, használja újra a geometriai objektumokat, és kerülje el több ezer ideiglenes pont létrehozását szoros ciklusokban. |
+| **Unexpected zero length** | Ellenőrizd, hogy a geometria koordináta‑rendszere megegyezik-e a megadott adatokkal; a duplikált pontok nulla‑hosszú szegmenseket eredményezhetnek. |
+| **Incorrect units** | Ne feledd, hogy a `GetLength()` a CRS egységeiben adja vissza az értéket. Szükség esetén konvertáld méterre/lábra. |
+| **Performance with large datasets** | Amikor csak lehetséges, újrahasználd a geometriai objektumokat, és kerüld el a több ezer ideiglenes pont létrehozását szoros ciklusokban. |
 
 ## Frequently Asked Questions
 
 **Q: Az Aspose.GIS for .NET kompatibilis minden .NET keretrendszerrel?**  
 A: Az Aspose.GIS for .NET kompatibilis a .NET Framework 4.6.1 vagy újabb verziókkal, valamint a .NET 5/6/7‑tel.
 
-**Q: Próbálhatom ki az Aspose.GIS for .NET-et vásárlás előtt?**  
-A: Igen, ingyenes próba verziót szerezhet az Aspose.GIS for .NET‑hez [innen](https://releases.aspose.com/).
+**Q: Próbálhatom-e ki az Aspose.GIS for .NET‑et vásárlás előtt?**  
+A: Igen, ingyenes próba verziót igényelhetsz az Aspose.GIS for .NET‑ből [itt](https://releases.aspose.com/).
 
-**Q: Hol találok támogatást az Aspose.GIS for .NET-hez?**  
-A: Támogatást és segítséget a Aspose.GIS közösségi fórumon [itt](https://forum.aspose.com/c/gis/33) talál.
+**Q: Hol találok támogatást az Aspose.GIS for .NET‑hez?**  
+A: Támogatást és segítséget a Aspose.GIS közösségi fórumon kaphatsz [itt](https://forum.aspose.com/c/gis/33).
 
-**Q: Hogyan szerezhetek ideiglenes licencet az Aspose.GIS for .NET-hez?**  
-A: Ideiglenes licencet szerezhet [innen](https://purchase.aspose.com/temporary-license/).
+**Q: Hogyan szerezhetek ideiglenes licencet az Aspose.GIS for .NET‑hez?**  
+A: Ideiglenes licencet igényelhetsz [itt](https://purchase.aspose.com/temporary-license/).
 
-**Q: Testreszabhatom a kimeneti formátumot a geometriai hossz számításokhoz?**  
-A: Igen, az Aspose.GIS for .NET különféle formázási lehetőségeket kínál a kimeneti formátum testreszabásához az igényei szerint.
+**Q: Testreszabhatom-e a kimeneti formátumot a geometriai hossz számításokhoz?**  
+A: Igen, az Aspose.GIS for .NET különféle formázási lehetőségeket kínál a kimeneti formátum testreszabásához az igényeid szerint.
 
 ## Conclusion
-Ebben az útmutatóban lefedtük, **hogyan számítsuk ki a hosszát** mind vonal, mind poligon geometriai objektumoknak az Aspose.GIS for .NET használatával. A lépésről‑lépésre példák követésével most már be tudja integrálni a pontos térbeli méréseket bármely .NET alkalmazásba, legyen az asztali GIS eszköz, webszolgáltatás vagy háttér‑adatfeldolgozó csővezeték.
+Ebben az oktatóanyagban bemutattuk, hogyan **calculate geometry length .NET** mind vonal, mind polygon geometriák esetén az Aspose.GIS for .NET használatával. A lépésről‑lépésre bemutatott példák segítségével most már pontos térbeli mérőszámokat integrálhatsz bármely .NET alkalmazásba, legyen az asztali GIS eszköz, webszolgáltatás vagy háttér‑adatfeldolgozó csővezeték.
 
 ---
 
-**Utolsó frissítés:** 2025-12-07  
-**Tesztelt verzió:** Aspose.GIS 24.11 for .NET  
-**Szerző:** Aspose  
+**Last Updated:** 2026-02-10  
+**Tested With:** Aspose.GIS 24.11 for .NET  
+**Author:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

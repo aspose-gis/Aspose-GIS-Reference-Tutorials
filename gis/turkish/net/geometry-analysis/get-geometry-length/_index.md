@@ -1,10 +1,11 @@
 ---
-date: 2025-12-07
+date: 2026-02-10
 description: Aspose.GIS kullanarak .NET’te geometri uzunluğunu nasıl hesaplayacağınızı
-  öğrenin, verimli mekansal veri işleme için. Kod örnekleriyle adım adım rehber.
+  öğrenin ve verimli uzamsal veri işleme sağlayın. İçinde get line length C# ve calculate
+  line length C# örnekleri bulunur.
 linktitle: Get Geometry Length
 second_title: Aspose.GIS .NET API
-title: Aspose.GIS ile .NET’te Geometrinin Uzunluğunu Nasıl Hesaplayabilirsiniz
+title: Aspose.GIS ile .NET'te Geometri Uzunluğunu Nasıl Hesaplanır
 url: /tr/net/geometry-analysis/get-geometry-length/
 weight: 24
 ---
@@ -13,34 +14,42 @@ weight: 24
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# .NET'te Aspose.GIS ile Geometri Uzunluğunu Hesaplama
+# .NET ile Geometry Length Hesaplama Nasıl Yapılır? Aspose.GIS
 
 ## Giriş
-Eğer .NET uygulamasında geometrik nesnelerin **uzunluğunu nasıl hesaplayacağınız** konusunda net ve pratik bir yol arıyorsanız, doğru yerdesiniz. Aspose.GIS for .NET, uzamsal hesaplamaları—örneğin çizgi uzunluğunu veya çokgen çevresini ölçmeyi—kolay ve yüksek performanslı hale getiren GIS odaklı zengin bir API seti sunar. Bu öğreticide, ortamı kurmaktan doğru uzunluk değerlerini döndüren C# kodunu yazmaya kadar tüm süreci adım adım inceleyeceğiz.
+Eğer **geometry length .NET** hesaplamanın net, pratik bir yolunu arıyorsanız doğru yerdesiniz. Aspose.GIS for .NET, uzamsal hesaplamaları—örneğin çizgi uzunluğunu veya çokgen çevresini ölçmeyi—kolay ve yüksek performanslı hale getiren zengin bir GIS‑odaklı API seti sunar. Bu öğreticide, ortamı kurmaktan doğru uzunluk değerlerini döndüren C# kodunu yazmaya kadar tüm süreci adım adım inceleyeceğiz.
 
 ## Hızlı Yanıtlar
-- **“GetLength()” ne döndürür?** Çizgiler için çizgi uzunluğunu; çokgenler için çevresini döndürür.  
-- **Hangi ad alanı (namespace) gereklidir?** `Aspose.Gis.Geometries`.  
-- **Bunu .NET 6 ile kullanabilir miyim?** Evet, Aspose.GIS .NET 5, .NET 6 ve üzerini destekler.  
-- **Geliştirme için lisansa ihtiyacım var mı?** Değerlendirme için ücretsiz deneme yeterlidir; üretim için lisans gereklidir.  
-- **Hesaplama birim‑bilincine sahip mi?** Uzunluk, koordinat sisteminin birimlerinde döndürülür (ör. projeksiyonlu CRS için metre).
+- **“GetLength()” ne döndürür?** Çizgiler için çizgi uzunluğunu; çokgenler için çevreyi döndürür.  
+- **Hangi ad alanı (namespace) gerekir?** `Aspose.Gis.Geometries`.  
+- **Bunu .NET 6 ile kullanabilir miyim?** Evet, Aspose.GIS .NET 5, .NET 6 ve sonrası sürümleri destekler.  
+- **Geliştirme için lisansa ihtiyacım var mı?** Değerlendirme için ücretsiz deneme sürümü yeterlidir; üretim için lisans gereklidir.  
+- **Hesaplama birim‑duyarlı mı?** Uzunluk, koordinat sisteminin birimlerinde (ör. projeksiyonlu CRS için metre) döndürülür.
 
-## Ön Koşullar
-Başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
+## Geometry Length Nedir?
+`Geometry.GetLength()` bir geometri nesnesinin doğrusal ölçümünü döndüren bir yöntemdir. Bir `LineString` için toplam çizgi uzunluğunu, bir `Polygon` için ise çevreyi (tüm kenarların toplamı) verir. Bu yöntem, altındaki matematiği soyutlayarak daha yüksek seviyeli GIS mantığına odaklanmanızı sağlar.
+
+## Neden Aspose.GIS ile Uzunluk Hesaplaması Yapmalısınız?
+- **Harici bağımlılık yok** – saf .NET kütüphanesi, yerel DLL gerektirmez.  
+- **Yüksek hassasiyet** – doğru sonuçlar için double‑precision aritmetik kullanır.  
+- **Çapraz platform** – Windows, Linux ve macOS üzerinde .NET Core/5/6+ ile çalışır.  
+
+## Önkoşullar
+Başlamadan önce aşağıdakilerin kurulu olduğundan emin olun:
 
 ### 1. Aspose.GIS for .NET Kütüphanesi
-İlk olarak, geliştirme ortamınıza Aspose.GIS for .NET kütüphanesini kurmuş olmanız gerekir. Henüz yapmadıysanız, [Aspose.GIS for .NET Documentation](https://reference.aspose.com/gis/net/) sayfasından indirebilirsiniz.
+İlk olarak, geliştirme ortamınıza Aspose.GIS for .NET kütüphanesini kurmanız gerekir. Henüz yapmadıysanız, [Aspose.GIS for .NET Documentation](https://reference.aspose.com/gis/net/) sayfasından indirebilirsiniz.
 
 ### 2. .NET Geliştirme Ortamı
-Makinenizde bir .NET geliştirme ortamının kurulu olduğundan emin olun. Bu, Visual Studio ya da başka bir uyumlu IDE'nin yüklü olmasını içerir.
+Makinenizde bir .NET geliştirme ortamının kurulu olduğundan emin olun. Bu, Visual Studio ya da uyumlu başka bir IDE’yi içerir.
 
 ### 3. C# Temel Bilgisi
-Bu öğreticiyi takip edebilmek için C# programlama diline temel bir anlayışa sahip olmanız gereklidir.
+Bu öğreticiyi takip edebilmek için temel C# programlama bilgisine sahip olmanız gerekir.
 
-## Ad Alanlarını (Namespaces) İçe Aktarma
-Aspose.GIS for .NET tarafından sağlanan işlevselliği kullanabilmek için C# projenize gerekli ad alanlarını (namespaces) içe aktarmanız gerekir.
+## Ad Alanlarını (Namespaces) İçeri Aktarma
+Aspose.GIS for .NET tarafından sağlanan işlevleri C# projenizde kullanabilmek için gerekli ad alanlarını içeri aktarmanız gerekir.
 
-### Aspose.GIS Ad Alanını İçe Aktarma
+### Aspose.GIS Ad Alanını İçeri Aktarma
 ```csharp
 using Aspose.Gis.Geometries;
 using System;
@@ -50,18 +59,9 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## Geometri Uzunluğu Nedir?
-`Geometry.GetLength()` bir geometri nesnesinin doğrusal ölçümünü döndüren bir yöntemdir. `LineString` için toplam çizgi uzunluğunu, `Polygon` için ise çevresini (tüm kenarların toplamı) verir. Bu yöntem, alttaki matematiği soyutlayarak daha üst düzey GIS mantığına odaklanmanızı sağlar.
-
-## Uzunluk Hesaplamaları İçin Neden Aspose.GIS Kullanılmalı?
-- **Harici bağımlılık yok** – saf .NET kütüphanesi, yerel DLL gerektirmez.  
-- **Yüksek hassasiyet** – doğru sonuçlar için çift duyarlıklı (double) aritmetik kullanır.  
-- **Çapraz platform** – .NET Core/5/6+ ile Windows, Linux ve macOS'ta çalışır.
-
-## Adım‑Adım Kılavuz
-
-### Adım 1: Geometri Nesneleri Oluşturma
-İlk olarak, uzunluğunu hesaplamak istediğiniz şekilleri temsil eden geometri nesnelerini oluşturun. Bu, çizgileri, çokgenleri veya diğer geometrik şekilleri içerebilir.
+## C# ile Çizgi Uzunluğunu Nasıl Alırsınız
+### Adım 1: Geometri Nesnelerini Oluşturma
+İlk olarak, uzunluğunu hesaplamak istediğiniz şekilleri temsil eden geometri nesnelerini oluşturun. Bu nesneler çizgi, çokgen veya diğer geometrik şekiller olabilir.
 
 ```csharp
 var line = new LineString();
@@ -70,15 +70,16 @@ line.AddPoint(2, 2);
 line.AddPoint(2, 0);
 ```
 
-### Adım 2: C#'ta Çizgi Uzunluğunu Nasıl Hesaplayabilirsiniz
-Çizgi geometrisini oluşturduktan sonra, uzunluğunu `GetLength()` yöntemiyle hesaplayabilirsiniz. Bu, **calculate line length c#** işlemini tek bir kod satırıyla gösterir.
+### Adım 2: C#’ta Çizgi Uzunluğunu Hesaplama
+Çizgi geometrisini oluşturduktan sonra, `GetLength()` yöntemiyle uzunluğunu hesaplayabilirsiniz. Bu, **calculate line length c#** işlemini tek bir kod satırıyla gösterir.
 
 ```csharp
 Console.WriteLine("{0:F}", line.GetLength()); // Output: 4.83
 ```
 
-### Adım 3: Çokgen Geometrisi Oluşturma
-Benzer şekilde, `Polygon` ve `LinearRing` sınıflarını kullanarak çokgen geometri nesneleri oluşturabilirsiniz.
+## Poligonlar İçin C#’ta Çizgi Uzunluğunu Hesaplama
+### Adım 3: Poligon Geometrisi Oluşturma
+Benzer şekilde, `Polygon` ve `LinearRing` sınıflarını kullanarak poligon geometri nesneleri oluşturabilirsiniz.
 
 ```csharp
 var rectangle = new Polygon(new LinearRing(new[]
@@ -91,8 +92,8 @@ var rectangle = new Polygon(new LinearRing(new[]
 }));
 ```
 
-### Adım 4: Bir Çokgenin Uzunluğunu Nasıl Alabilirsiniz
-Çokgenler için `GetLength()` yöntemi çevreyi döndürür; bu, şeklin **how to get length** (uzunluğunu nasıl alacağınız) anlamına gelir.
+### Adım 4: Poligon Uzunluğunu Almak
+Poligonlar için `GetLength()` yöntemi çevreyi döndürür; bu da şeklin **how to get length** değeridir.
 
 ```csharp
 Console.WriteLine("{0:F}", rectangle.GetLength()); // Output: 4.00
@@ -101,33 +102,33 @@ Console.WriteLine("{0:F}", rectangle.GetLength()); // Output: 4.00
 ## Yaygın Sorunlar ve Çözümleri
 | Sorun | Çözüm |
 |-------|----------|
-| **Beklenmeyen sıfır uzunluk** | Geometrinin koordinat sisteminin sağladığınız verilerle eşleştiğini doğrulayın; yinelenen noktalar sıfır‑uzunluklu segmentlere neden olabilir. |
-| **Yanlış birimler** | `GetLength()`'in CRS birimlerindeki değerleri döndürdüğünü unutmayın. Gerekirse metre/feet'e dönüştürün. |
-| **Büyük veri setlerinde performans** | Mümkün olduğunda geometri nesnelerini yeniden kullanın ve sık döngüler içinde binlerce geçici nokta oluşturmaktan kaçının. |
+| **Beklenmedik sıfır uzunluk** | Geometrinin koordinat sisteminin sağladığınız veriyle eşleştiğini doğrulayın; tekrarlanan noktalar sıfır‑uzunluklu segmentlere neden olabilir. |
+| **Yanlış birimler** | `GetLength()` değerlerinin CRS birimlerinde döndüğünü unutmayın. Gerekirse metre/feet gibi birimlere dönüştürün. |
+| **Büyük veri setlerinde performans** | Mümkün olduğunca geometri nesnelerini yeniden kullanın ve sıkı döngüler içinde binlerce geçici nokta oluşturmaktan kaçının. |
 
-## Sıkça Sorulan Sorular
+## Sık Sorulan Sorular
 
-**S: Aspose.GIS for .NET tüm .NET framework'leriyle uyumlu mu?**  
-C: Aspose.GIS for .NET, .NET Framework 4.6.1 veya daha sonraki sürümlerle, ayrıca .NET 5/6/7 ile uyumludur.
+**S: Aspose.GIS for .NET tüm .NET framework’leriyle uyumlu mu?**  
+C: Aspose.GIS for .NET, .NET Framework 4.6.1 ve üzeri sürümlerle, ayrıca .NET 5/6/7 ile uyumludur.
 
-**S: Aspose.GIS for .NET'i satın almadan deneyebilir miyim?**  
-C: Evet, Aspose.GIS for .NET'in ücretsiz deneme sürümünü [buradan](https://releases.aspose.com/) alabilirsiniz.
+**S: Aspose.GIS for .NET’i satın almadan denemek mümkün mü?**  
+C: Evet, Aspose.GIS for .NET’in ücretsiz deneme sürümünü [buradan](https://releases.aspose.com/) edinebilirsiniz.
 
-**S: Aspose.GIS for .NET için desteği nereden bulabilirim?**  
-C: Aspose.GIS topluluk forumundan [burada](https://forum.aspose.com/c/gis/33) destek ve yardım alabilirsiniz.
+**S: Aspose.GIS for .NET için destek nereden alınır?**  
+C: Aspose.GIS topluluk forumundan [burada](https://forum.aspose.com/c/gis/33) destek ve yardım bulabilirsiniz.
 
-**S: Aspose.GIS for .NET için geçici bir lisans nasıl alabilirim?**  
-C: Geçici lisansı [buradan](https://purchase.aspose.com/temporary-license/) edinebilirsiniz.
+**S: Aspose.GIS for .NET için geçici bir lisans nasıl alınır?**  
+C: Geçici lisansı [buradan](https://purchase.aspose.com/temporary-license/) temin edebilirsiniz.
 
-**S: Geometri uzunluğu hesaplamaları için çıktı formatını özelleştirebilir miyim?**  
+**S: Geometry length hesaplamaları için çıktı formatını özelleştirebilir miyim?**  
 C: Evet, Aspose.GIS for .NET, gereksinimlerinize göre çıktı formatını özelleştirmenize olanak tanıyan çeşitli biçimlendirme seçenekleri sunar.
 
 ## Sonuç
-Bu öğreticide, Aspose.GIS for .NET kullanarak çizgi ve çokgen geometrilerinin **uzunluğunu nasıl hesaplayacağınızı** ele aldık. Adım‑adım örnekleri izleyerek, artık herhangi bir .NET uygulamasına, ister masaüstü GIS aracı, ister web servisi, ister arka uç veri işleme hattı olsun, kesin uzamsal ölçümler entegre edebilirsiniz.
+Bu öğreticide, Aspose.GIS for .NET kullanarak hem çizgi hem de çokgen geometrileri için **how to calculate geometry length .NET** konusunu ele aldık. Adım‑adım örnekleri izleyerek, masaüstü GIS aracı, web servisi veya arka uç veri işleme hattı gibi herhangi bir .NET uygulamasına kesin uzamsal ölçümler entegre edebilirsiniz.
 
 ---
 
-**Son Güncelleme:** 2025-12-07  
+**Son Güncelleme:** 2026-02-10  
 **Test Edilen Versiyon:** Aspose.GIS 24.11 for .NET  
 **Yazar:** Aspose  
 
