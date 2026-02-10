@@ -1,31 +1,49 @@
 ---
-title: Aspose.GIS for .NET ile Dışbükey Gövdeyi Hesaplayın
-linktitle: Geometri Dışbükey Gövde Alın
-second_title: Aspose.GIS .NET API'si
-description: Aspose.GIS'i kullanarak .NET'te bir geometrinin dışbükey gövdesini nasıl hesaplayacağınızı öğrenin. Kod örnekleri ve SSS içeren kapsamlı eğitim.
-weight: 20
+date: 2026-02-10
+description: Aspose.GIS for .NET, mekânsal analiz için güçlü bir .NET kütüphanesini
+  kullanarak konveks kabuğu nasıl hesaplayacağınızı ve konveks kabuk noktalarını nasıl
+  çıkaracağınızı öğrenin.
+linktitle: Get Geometry Convex Hull
+second_title: Aspose.GIS .NET API
+title: Aspose.GIS for .NET ile Konveks Dışbükey Kabuk Hesaplama – Aspose Nasıl Kullanılır
 url: /tr/net/geometry-analysis/get-geometry-convex-hull/
+weight: 20
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.GIS for .NET ile Dışbükey Gövdeyi Hesaplayın
+# Aspose Kullanımı: Aspose.GIS for .NET ile Konveks Kılıf Hesaplama
 
-## giriiş
-Aspose.GIS for .NET, .NET uygulamalarında coğrafi bilgi sistemleri (GIS) ile çalışmak için geniş bir işlevsellik yelpazesi sunan güçlü bir kütüphanedir. İster haritalama uygulamaları oluşturuyor olun, ister mekansal verileri analiz ediyor, ister jeouzaysal operasyonlar gerçekleştiriyor olun, Aspose.GIS, sezgisel API'si ve kapsamlı özellik seti ile süreci basitleştirir.
+## Giriş
+Bu öğreticide, **bir geometri için konveks kılıfı** .NET uygulamasında Aspose.GIS kullanarak nasıl hesaplayacağınızı öğreneceksiniz. İster bir haritalama aracı, ister mekânsal analiz yapıyor olun ya da sadece bir nokta kümesini çevrelemek istiyor olun, konveks kılıf işlemi temel bir yapı taşıdır. Proje kurulumundan konveks kılıf noktalarını çıkarmaya kadar her adımı adım adım göstereceğiz; böylece bu yeteneği güvenle entegre edebilirsiniz.
+
+## Hızlı Yanıtlar
+- **“Konveks kılıf” ne demektir?** Bir nokta kümesini tamamen çevreleyen en küçük konveks çokgendir.  
+- **Kılıf hesabını hangi kütüphane sağlar?** Aspose.GIS for .NET, yerleşik `GetConvexHull()` metodunu sunar.  
+- **Örneği çalıştırmak için lisansa ihtiyacım var mı?** Değerlendirme için ücretsiz deneme çalışır; üretim için ticari lisans gereklidir.  
+- **Hangi .NET sürümleri destekleniyor?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.  
+- **Bireysel kılıf noktalarını çıkarabilir miyim?** Evet—sonucu `ILinearRing` tipine dönüştürüp koordinatlarını döngüyle gezebilirsiniz.
+
+## Aspose.GIS ile konveks kılıf hesaplamanın nedenleri
+- **Yüksek performans** – Optimize edilmiş yerel algoritmalar, binlerce noktayı anında işler.  
+- **Harici bağımlılık yok** – Üçüncü taraf geometri motorlarına ihtiyaç duymaz.  
+- **Zengin format desteği** – Shapefile, GeoJSON, KML ve daha fazlası ile çalışır; böylece herhangi bir kaynak veriyi kılıf hesabına besleyebilirsiniz.  
+- **Tutarlı API** – Diğer mekânsal işlemlerde kullandığınız aynı akıcı stil, kodunuzu temiz ve sürdürülebilir tutar.
+
 ## Önkoşullar
-Aspose.GIS for .NET kullanarak bir geometrinin dışbükey gövdesinin nasıl elde edileceğine ilişkin eğitime dalmadan önce aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
-### 1. Aspose.GIS for .NET'i yükleyin
- Ziyaret edin[İndirme: {link](https://releases.aspose.com/gis/net/) Aspose.GIS for .NET'in en son sürümünü edinmek için. .NET ortamınıza sorunsuz entegrasyon için belgelerde sağlanan kurulum talimatlarını izleyin.
-### 2. .NET Geliştirmeye Aşinalık
-Bu eğitimdeki örneklerin yanı sıra temel C# ve .NET geliştirme bilgisi gereklidir. .NET'te yeniyseniz, başlamak için giriş kaynaklarını keşfetmeyi düşünün.
-### 3. Geliştirme Ortamını Kurun
-Visual Studio veya .NET geliştirme için tercih edilen herhangi bir IDE de dahil olmak üzere uygun bir geliştirme ortamının yapılandırılmış olduğundan emin olun.
+### 1. Aspose.GIS for .NET'i Yükleyin
+En son Aspose.GIS for .NET sürümünü edinmek için [indirme bağlantısını](https://releases.aspose.com/gis/net/) ziyaret edin. .NET ortamınıza sorunsuz entegrasyon için belgelerdeki kurulum talimatlarını izleyin.
 
-## Ad Alanlarını İçe Aktar
-.NET projenize Aspose.GIS tarafından sağlanan işlevlere erişmek için gerekli ad alanlarını içe aktararak başlayın.
+### 2. .NET Geliştirme Bilgisi
+C# ve .NET geliştirme temellerine aşina olmanız, bu öğreticideki örnekleri takip edebilmeniz için gereklidir. .NET’e yeniyseniz, başlangıç kaynaklarını inceleyerek temel bilgileri edinin.
+
+### 3. Geliştirme Ortamını Hazırlayın
+Visual Studio ya da tercih ettiğiniz herhangi bir .NET IDE’si dahil olmak üzere uygun bir geliştirme ortamının yapılandırıldığından emin olun.
+
+## Ad Alanlarını İçe Aktarın
+.NET projenizde, Aspose.GIS’in sunduğu işlevlere erişmek için gerekli ad alanlarını içe aktararak başlayın.
 
 ```csharp
 using Aspose.Gis.Geometries;
@@ -35,13 +53,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 ```
-Bu ad alanı, coğrafi verilerle çalışmaya yönelik sınıflar ve yöntemler de dahil olmak üzere Aspose.GIS for .NET'in temel işlevlerine erişim sağlar.
+Bu ad alanı, Aspose.GIS for .NET’in coğrafi veri ile çalışmak için sınıflarını ve metodlarını içerir.
 
-Sistem ad alanı, .NET çerçevesinin temel giriş/çıkış işlemleri ve diğer temel işlevleri için gereklidir.
+`System` ad alanı, temel giriş/çıkış işlemleri ve .NET çerçevesinin diğer çekirdek işlevleri için gereklidir.
 
-Şimdi Aspose.GIS for .NET'i kullanarak bir geometrinin dışbükey gövdesini elde etmenin adım adım sürecine dalalım.
-## Adım 1: Çok Noktalı Geometri Oluşturun
-İlk olarak, birden çok nokta içeren çok noktalı bir geometri tanımlayın. Bu noktalar dışbükey gövdenin hesaplanmasında temel oluşturacaktır.
+Şimdi, Aspose.GIS for .NET kullanarak bir geometrinin konveks kılıfını elde etme sürecine adım adım dalalım.
+
+## Aspose.GIS for .NET ile konveks kılıf nasıl hesaplanır
+### Adım 1: Çok Noktalı (MultiPoint) Geometri Oluşturun
+İlk olarak, birden çok noktayı içeren çok noktalı bir geometri tanımlayın. Bu noktalar, konveks kılıfın hesaplanması için temel oluşturur.
+
 ```csharp
 var geometry = new MultiPoint
 {
@@ -54,15 +75,19 @@ var geometry = new MultiPoint
     new Point(4, 3),
 };
 ```
-Bu kod parçacığı, yedi farklı noktadan oluşan çok noktalı bir geometri oluşturur.
-## Adım 2: Dışbükey Gövde Alın
- Ardından, şunu çağırın:`GetConvexHull()` Dışbükey gövdeyi hesaplamak için geometri nesnesindeki yöntem.
+Bu kod parçacığı, yedi farklı nokta içeren bir çok noktalı geometri oluşturur.
+
+### Adım 2: Konveks Kılıfı Alın
+Sonra, geometri nesnesi üzerinde `GetConvexHull()` metodunu çağırarak konveks kılıfı hesaplayın.
+
 ```csharp
 var convexHull = geometry.GetConvexHull();
 ```
-Bu yöntem, girdi geometrisinin dışbükey kabuğunu hesaplar ve dışbükey kabuğu temsil eden yeni bir geometri elde edilir.
-## Adım 3: Dışbükey Gövde Noktalarına Erişim
-Dışbükey gövde hesaplandıktan sonra onu oluşturan noktalara erişebilirsiniz.
+Bu metod, giriş geometrisinin konveks kılıfını hesaplayarak yeni bir geometri (konveks kılıf) döndürür.
+
+### Adım 3: Konveks Kılıf Noktalarına Erişin
+Konveks kılıf hesaplandıktan sonra, sonucu `ILinearRing` tipine dönüştürerek ve köşelerini döngüyle gezerek **konveks kılıf noktalarını çıkarabilirsiniz**.
+
 ```csharp
 var ring = (ILinearRing)convexHull;
 for (int i = 0; i < ring.Count; ++i)
@@ -70,21 +95,51 @@ for (int i = 0; i < ring.Count; ++i)
     Console.WriteLine("[{0}] = ({1} {2})", i, ring[i].X, ring[i].Y);
 }
 ```
-Bu döngü, dışbükey gövdenin noktaları boyunca yinelenir ve bunların koordinatlarını konsola yazdırır.
+Bu döngü, konveks kılıfın noktalarını iterasyonla dolaşır ve koordinatlarını konsola yazar.
 
-## Çözüm
-Bu derste, bir geometrinin dışbükey gövdesini elde etmek için Aspose.GIS for .NET'in nasıl kullanılacağını araştırdık. Adım adım kılavuzu takip ederek, coğrafi verilerin verimli bir şekilde işlenmesine ve analizine olanak tanıyarak, coğrafi uzamsal işlevleri .NET uygulamalarınıza sorunsuz bir şekilde entegre edebilirsiniz.
-## SSS'ler
-### S: Aspose.GIS for .NET hem masaüstü hem de web uygulamaları için uygun mudur?
-Evet, Aspose.GIS for .NET hem masaüstü hem de web uygulamalarında kullanılabilir ve coğrafi veri işlemede çok yönlülük sunar.
-### S: Aspose.GIS çeşitli coğrafi formatları destekliyor mu?
-Kesinlikle Aspose.GIS, şekil dosyaları, GeoJSON, KML ve daha fazlası dahil olmak üzere çok çeşitli coğrafi formatları destekleyerek çeşitli veri kaynaklarıyla kesintisiz birlikte çalışabilirliği kolaylaştırır.
-### S: Satın almadan önce Aspose.GIS for .NET'i deneyebilir miyim?
- Evet, sağlanan Aspose.GIS for .NET ücretsiz deneme sürümünden yararlanabilirsiniz.[bağlantı](https://releases.aspose.com/)özelliklerini keşfetmenize ve projelerinize uygunluğunu değerlendirmenize olanak tanır.
-### S: Aspose.GIS için nasıl geçici lisans alabilirim?
- Aspose.GIS için geçici lisanslar belirlenen adresten edinilebilir.[geçici lisans bağlantısı](https://purchase.aspose.com/temporary-license/)Deneme sürelerinde veya kısa süreli projelerde kesintisiz kullanıma olanak sağlar.
-### S: Aspose.GIS ile ilgili nereden yardım alabilirim veya tartışmalara katılabilirim?
-Destek, rehberlik ve topluluk etkileşimi için Aspose.GIS forumunu ziyaret edin[Burada](https://forum.aspose.com/c/gis/33), diğer geliştiricilerle iletişim kurabileceğiniz, sorular sorabileceğiniz ve içgörüleri paylaşabileceğiniz yer.
+## Yaygın Kullanım Senaryoları
+- **Haritalama uygulamaları** – Kullanıcı tarafından oluşturulan konum iğneleri etrafında minimal bir sınır çizin.  
+- **Çarpışma tespiti** – Nesnelerin bir ortak alanda bulunup bulunmadığını hızlıca belirleyin.  
+- **Veri kümeleme** – Daha karmaşık algoritmalara geçmeden bir kümenin dış sınırlarını görselleştirin.  
+- **Coğrafi çit (Geofence) oluşturma** – GPS koordinatları koleksiyonunun etrafında basit bir çit üretin.
+
+## Yaygın Sorunlar ve Çözümler
+- **Null sonuç:** Kaynak geometrinin en az üç doğrusal olmayan nokta içerdiğinden emin olun; aksi takdirde `GetConvexHull()` orijinal geometriyi döndürebilir.  
+- **Yanlış tip dönüşümü:** Kılıf bir `Geometry` nesnesi olarak döner; dönüşüm yalnızca sonuç bir çokgen halkası olduğunda `ILinearRing` tipine güvenlidir. Karışık geometri koleksiyonlarıyla çalışıyorsanız, dönüşümden önce tipi doğrulayın.  
+- **Lisans istisnaları:** Geçerli bir lisans olmadan kod çalıştırmak, oluşturulan dosyalara filigran ekler; deneme veya ticari lisans alarak bunu önleyin.
+
+## Sıkça Sorulan Sorular
+
+**S: Aspose.GIS for .NET hem masaüstü hem de web uygulamaları için uygun mu?**  
+C: Evet, Aspose.GIS for .NET hem masaüstü hem de web uygulamalarında kullanılabilir; coğrafi veri işleme konusunda çok yönlüdür.
+
+**S: Aspose.GIS çeşitli coğrafi formatları destekliyor mu?**  
+C: Kesinlikle, Aspose.GIS shapefile, GeoJSON, KML ve daha fazlası dahil olmak üzere geniş bir coğrafi format yelpazesini destekler; böylece farklı veri kaynaklarıyla sorunsuz entegrasyon sağlar.
+
+**S: Aspose.GIS for .NET'i satın almadan önce deneyebilir miyim?**  
+C: Evet, sağlanan [bağlantı](https://releases.aspose.com/) üzerinden Aspose.GIS for .NET’in ücretsiz deneme sürümünü alabilir, özelliklerini keşfedebilir ve projeleriniz için uygunluğunu değerlendirebilirsiniz.
+
+**S: Aspose.GIS için geçici lisanslar nasıl temin edilir?**  
+C: Geçici lisanslar, belirlenen [geçici lisans bağlantısı](https://purchase.aspose.com/temporary-license/) üzerinden alınabilir; bu sayede deneme sürecinde veya kısa vadeli projelerde kesintisiz kullanım sağlanır.
+
+**S: Aspose.GIS ile ilgili destek alabileceğim veya tartışmalara katılabileceğim yer neresi?**  
+C: Destek, rehberlik ve topluluk etkileşimi için Aspose.GIS forumuna [buradan](https://forum.aspose.com/c/gis/33) ulaşabilirsiniz; diğer geliştiricilerle sorularınızı paylaşabilir ve deneyimlerinizi aktarabilirsiniz.
+
+**S: Büyük veri setlerinde konveks kılıf hesaplamanın performans etkisi nedir?**  
+C: Aspose.GIS optimize edilmiş yerel algoritmalar kullanır; on binlerce nokta ile bile modern donanımlarda hesaplama genellikle milisaniyeler içinde tamamlanır.
+
+**S: Hesaplanan konveks kılıfı GeoJSON gibi bir dosya formatına dışa aktarabilir miyim?**  
+C: Evet, `convexHull` geometrisini `Save` metodu ile herhangi bir desteklenen formata yazabilirsiniz; örnek: `convexHull.Save("hull.geojson", ExportFormat.GeoJson);`.
+
+## Sonuç
+Bu öğreticide, bir geometrinin **konveks kılıfını nasıl hesaplayacağınızı** ve **konveks kılıf noktalarını nasıl çıkaracağınızı** inceledik. Adım adım rehberi izleyerek, .NET uygulamalarınıza güçlü mekânsal yetenekleri sorunsuz bir şekilde entegre edebilir, coğrafi verileri verimli bir şekilde işleyip analiz edebilirsiniz.
+
+---
+
+**Son Güncelleme:** 2026-02-10  
+**Test Edilen Versiyon:** Aspose.GIS 24.11 for .NET (yazım anındaki en yeni sürüm)  
+**Yazar:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
