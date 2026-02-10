@@ -1,7 +1,8 @@
 ---
-date: 2025-12-06
-description: Pelajari cara menghitung area geometri menggunakan Aspose.GIS untuk .NET
-  – sempurna untuk perhitungan area GIS, area segitiga C#, dan perhitungan area multipolygon.
+date: 2026-02-10
+description: Pelajari **cara menghitung area** geometri menggunakan Aspose.GIS untuk
+  .NET – sempurna untuk perhitungan area GIS, area segitiga C#, dan perhitungan area
+  multipolygon.
 linktitle: Get Geometry Area
 second_title: Aspose.GIS .NET API
 title: Cara Menghitung Luas dengan Aspose.GIS untuk .NET
@@ -15,40 +16,43 @@ weight: 18
 
 # Cara Menghitung Luas dengan Aspose.GIS untuk .NET
 
-## Introduction
-Jika Anda perlu **cara menghitung luas** dari bentuk geografis—baik itu segitiga sederhana, persegi, atau multipolygon yang kompleks—Aspose.GIS untuk .NET memberikan API yang bersih dan berperforma tinggi untuk melakukannya dalam beberapa baris C#. Pada tutorial ini kami akan membahas cara membuat geometri, menghitung luasnya, dan mencetak hasilnya, sehingga Anda dapat langsung menerapkan perhitungan luas GIS dalam proyek Anda.
+## Pendahuluan
+Jika Anda perlu **cara menghitung luas** dari bentuk geografis—baik itu segitiga sederhana, persegi, atau multipolygon kompleks—Aspose.GIS untuk .NET memberikan API yang bersih dan berperforma tinggi untuk melakukannya hanya dalam beberapa baris C#. Dalam tutorial ini kami akan membahas cara membuat geometri, menghitung luasnya, dan mencetak hasilnya, sehingga Anda dapat langsung menerapkan perhitungan luas GIS dalam proyek Anda.
 
-## Quick Answers
+### Jawaban Cepat
 - **Perpustakaan apa yang menangani perhitungan luas?** Aspose.GIS untuk .NET  
-- **Tipe geometri yang didukung?** Polygon, MultiPolygon, LinearRing, dan lainnya  
+- **Jenis geometri yang didukung?** Polygon, MultiPolygon, LinearRing, dan lainnya  
 - **Waktu eksekusi tipikal?** Di bawah satu detik untuk puluhan bentuk pada PC standar  
 - **Prasyarat?** .NET 6+ (atau .NET Framework 4.7.2) dan paket NuGet Aspose.GIS  
-- **Kebutuhan lisensi?** Versi percobaan gratis untuk evaluasi; lisensi komersial untuk produksi  
+- **Persyaratan lisensi?** Uji coba gratis untuk evaluasi; lisensi komersial untuk produksi  
 
-## What is “how to calculate area” in GIS?
-Menghitung luas sebuah geometri berarti menentukan permukaan yang ditutupi oleh bentuk tersebut pada sistem koordinat planar (atau terproyeksi). Hasilnya dinyatakan dalam satuan persegi yang sesuai dengan sistem koordinat (misalnya meter persegi, derajat persegi). Aspose.GIS mengabstraksi matematika, sehingga Anda dapat fokus pada logika bisnis Anda.
+## Apa itu “cara menghitung luas” dalam GIS?
+Menghitung luas sebuah geometri berarti menentukan permukaan yang ditutupi oleh bentuk tersebut pada sistem koordinat planar (atau terproyeksi). Hasilnya dinyatakan dalam satuan persegi yang sesuai dengan sistem koordinat (misalnya meter persegi, derajat persegi). Aspose.GIS mengabstraksi matematika, memungkinkan Anda fokus pada logika bisnis.
 
-## Why use Aspose.GIS for GIS area calculation?
+## Mengapa Ini Penting untuk Proyek GIS Anda
+Perhitungan luas yang akurat adalah tulang punggung banyak analisis spasial—misalnya perencanaan penggunaan lahan, studi dampak lingkungan, atau penilaian properti. Dengan menggunakan perpustakaan .NET yang dapat diandalkan, Anda menghilangkan tebak‑tebakan formula manual dan menghindari kesalahan mahal yang muncul akibat ketidaksesuaian sistem koordinat.
+
+## Mengapa menggunakan Aspose.GIS untuk perhitungan luas GIS?
 - **Matematika akurat** – algoritma bawaan menghormati sistem referensi koordinat geometri.  
 - **Tanpa ketergantungan eksternal** – tidak memerlukan pustaka native atau instalasi GDAL.  
-- **Integrasi penuh dengan .NET** – bekerja dengan .NET Framework, .NET Core, dan .NET 5/6+.  
-- **Dukungan geometri lengkap** – dari polygon sederhana hingga multipolygon dan koleksi yang kompleks.
+- **Integrasi .NET penuh** – bekerja dengan .NET Framework, .NET Core, dan .NET 5/6+.  
+- **Dukungan geometri lengkap** – dari poligon sederhana hingga multipolygon kompleks dan koleksi.
 
-## Prerequisites
-Sebelum menyelami tutorial Aspose.GIS untuk .NET, pastikan Anda telah menyiapkan prasyarat berikut:
+## Prasyarat
+Sebelum menyelam ke tutorial Aspose.GIS untuk .NET, pastikan Anda telah menyiapkan prasyarat berikut:
 
-### .NET Development Environment Setup
-1. Install Visual Studio: Jika belum, unduh dan instal Visual Studio, lingkungan pengembangan terintegrasi (IDE) untuk pengembangan .NET.  
-2. Instalasi Aspose.GIS: Unduh dan instal Aspose.GIS untuk .NET dari [tautan unduhan](https://releases.aspose.com/gis/net/).  
-3. Akses Dokumentasi: Kenali dokumentasi Aspose.GIS untuk .NET yang tersedia [di sini](https://reference.aspose.com/gis/net/).
+### Pengaturan Lingkungan Pengembangan .NET
+1. **Instal Visual Studio:** Jika belum, unduh dan instal Visual Studio, lingkungan pengembangan terintegrasi (IDE) untuk pengembangan .NET.  
+2. **Instalasi Aspose.GIS:** Unduh dan instal Aspose.GIS untuk .NET dari [tautan unduhan](https://releases.aspose.com/gis/net/).  
+3. **Akses Dokumentasi:** Kenali dokumentasi Aspose.GIS untuk .NET yang tersedia [di sini](https://reference.aspose.com/gis/net/).
 
-## Import Namespaces
-Untuk mulai memanfaatkan fungsionalitas Aspose.GIS dalam aplikasi .NET Anda, Anda perlu mengimpor namespace yang diperlukan. Ikuti langkah-langkah berikut:
+## Impor Namespace
+Untuk mulai memanfaatkan fungsionalitas Aspose.GIS dalam aplikasi .NET Anda, Anda perlu mengimpor namespace yang diperlukan. Ikuti langkah‑langkah berikut:
 
-## Step 1: Open Your .NET Project
-Buka Visual Studio dan buka proyek .NET Anda tempat Anda ingin mengintegrasikan Aspose.GIS.
+## Langkah 1: Buka Proyek .NET Anda
+Luncurkan Visual Studio dan buka proyek .NET Anda di mana Anda berencana mengintegrasikan Aspose.GIS.
 
-## Step 2: Import Namespaces
+## Langkah 2: Impor Namespace
 Di file C# Anda, impor namespace yang diperlukan:
 ```csharp
 using Aspose.Gis.Geometries;
@@ -61,7 +65,7 @@ using System.Threading.Tasks;
 
 Sekarang, mari kita uraikan contoh yang diberikan menjadi beberapa langkah untuk memahami setiap bagiannya dengan lebih baik.
 
-## Step 3: Define Geometries
+## Langkah 3: Definisikan Geometri
 Buat geometri yang mewakili segitiga, persegi, dan multipolygon:
 ```csharp
 var triangleRing = new LinearRing();
@@ -80,7 +84,7 @@ var square = new Polygon(squareRing);
 var multiPolygon = new MultiPolygon { triangle, square };
 ```
 
-## Step 4: Calculate Geometry Areas
+## Langkah 4: Hitung Luas Geometri
 Manfaatkan metode Aspose.GIS untuk menghitung luas geometri:
 ```csharp
 Console.WriteLine("{0:F}", triangle.GetArea());     // 4.50
@@ -88,39 +92,39 @@ Console.WriteLine("{0:F}", square.GetArea());       // 4.00
 Console.WriteLine("{0:F}", multiPolygon.GetArea()); // 8.50
 ```
 
-### What the output means
-- **Segitiga** memiliki luas **4,50** satuan persegi.  
-- **Persegi** menghasilkan **4,00** satuan persegi.  
-- **Multipolygon** (segitiga + persegi) menambahkan keduanya dengan benar, menghasilkan **8,50** satuan persegi.
+### Apa arti output
+- **Segitiga** memiliki luas **4.50** satuan persegi.  
+- **Persegi** menghasilkan **4.00** satuan persegi.  
+- **Multipolygon** (segitiga + persegi) menambahkan keduanya dengan benar, menghasilkan **8.50** satuan persegi.
 
-## Common Pitfalls & Tips
+## Kesalahan Umum & Tips
 - **Sistem koordinat penting** – jika Anda bekerja dengan lintang/bujur, pertimbangkan untuk memproyeksikan ulang ke CRS planar sebelum memanggil `GetArea()`.  
-- **Ring tertutup** – pastikan titik pertama dan terakhir dari `LinearRing` identik; jika tidak, luas dapat dihitung secara keliru.  
+- **Ring tertutup** – pastikan titik pertama dan terakhir dari `LinearRing` identik; jika tidak, luas dapat dihitung secara salah.  
 - **Kinerja** – untuk ribuan geometri, gunakan kembali objek bila memungkinkan dan hindari alokasi yang tidak perlu.
 
-## Frequently Asked Questions
+## Pertanyaan yang Sering Diajukan
 
-**Q: Can I use Aspose.GIS for .NET with other .NET frameworks like .NET Core or .NET Standard?**  
-A: Yes, Aspose.GIS for .NET is compatible with various .NET frameworks, including .NET Core and .NET Standard, ensuring flexibility in your development environment.
+**Q:** Apakah saya dapat menggunakan Aspose.GIS untuk .NET dengan kerangka kerja .NET lain seperti .NET Core atau .NET Standard?  
+**A:** Ya, Aspose.GIS untuk .NET kompatibel dengan berbagai kerangka kerja .NET, termasuk .NET Core dan .NET Standard, memastikan fleksibilitas dalam lingkungan pengembangan Anda.
 
-**Q: Is there a free trial available for Aspose.GIS for .NET?**  
-A: Yes, you can access a free trial of Aspose.GIS for .NET from the [release page](https://releases.aspose.com/).
+**Q:** Apakah tersedia uji coba gratis untuk Aspose.GIS untuk .NET?  
+**A:** Ya, Anda dapat mengakses uji coba gratis Aspose.GIS untuk .NET dari [halaman rilis](https://releases.aspose.com/).
 
-**Q: Where can I find support for Aspose.GIS for .NET?**  
-A: You can find assistance and engage with the community at the Aspose.GIS for .NET [support forum](https://forum.aspose.com/c/gis/33).
+**Q:** Di mana saya dapat menemukan dukungan untuk Aspose.GIS untuk .NET?  
+**A:** Anda dapat menemukan bantuan dan berinteraksi dengan komunitas di [forum dukungan Aspose.GIS untuk .NET](https://forum.aspose.com/c/gis/33).
 
-**Q: Can I purchase a temporary license for Aspose.GIS for .NET?**  
-A: Yes, temporary licenses are available for Aspose.GIS for .NET. You can acquire them from the [purchase page](https://purchase.aspose.com/temporary-license/).
+**Q:** Bisakah saya membeli lisensi sementara untuk Aspose.GIS untuk .NET?  
+**A:** Ya, lisensi sementara tersedia untuk Aspose.GIS untuk .NET. Anda dapat memperolehnya dari [halaman pembelian](https://purchase.aspose.com/temporary-license/).
 
-**Q: Does Aspose.GIS for .NET support various geographic data formats?**  
-A: Absolutely, Aspose.GIS for .NET supports a wide range of geographic data formats, ensuring compatibility and flexibility in data handling.
+**Q:** Apakah Aspose.GIS untuk .NET mendukung berbagai format data geografis?  
+**A:** Tentu saja, Aspose.GIS untuk .NET mendukung beragam format data geografis, memastikan kompatibilitas dan fleksibilitas dalam penanganan data.
 
-## Conclusion
-Aspose.GIS untuk .NET menyediakan pengalaman yang mulus bagi pengembang yang bekerja dengan data geografis dalam aplikasi .NET mereka. Dengan mengikuti tutorial ini dan memanfaatkan API yang kuat, Anda dapat dengan efisien memanipulasi data spasial, melakukan operasi kompleks, dan membuka potensi penuh GIS dalam proyek Anda. Baik Anda menghitung luas segitiga sederhana maupun mengagregasi luas multipolygon, pustaka ini membuat **cara menghitung luas** menjadi sederhana dan dapat diandalkan.
+## Kesimpulan
+Aspose.GIS untuk .NET menyediakan pengalaman yang mulus bagi pengembang yang bekerja dengan data geografis dalam aplikasi .NET mereka. Dengan mengikuti tutorial ini dan memanfaatkan API yang kuat, Anda dapat dengan efisien memanipulasi data spasial, melakukan operasi kompleks, dan membuka potensi penuh GIS dalam proyek Anda. Baik Anda menghitung luas segitiga sederhana maupun mengagregasi luas multipolygon, perpustakaan ini membuat **cara menghitung luas** menjadi sederhana dan dapat diandalkan.
 
 ---
 
-**Last Updated:** 2025-12-06  
+**Last Updated:** 2026-02-10  
 **Tested With:** Aspose.GIS 24.11 for .NET  
 **Author:** Aspose  
 
