@@ -1,11 +1,11 @@
 ---
-date: 2025-12-07
-description: Dowiedz się, jak uzyskać centroid geometrii przy użyciu Aspose.GIS dla
-  .NET i obliczyć centroid wielokąta do analizy przestrzennej w swoich aplikacjach
-  .NET.
+date: 2026-02-10
+description: Dowiedz się, jak obliczyć centroid geometrii przy użyciu Aspose.GIS dla
+  .NET, pobierz punkt centralny wielokąta i oblicz centroid multipoligonu w analizie
+  przestrzennej.
 linktitle: Get Geometry Centroid
 second_title: Aspose.GIS .NET API
-title: Jak uzyskać centroid geometrii przy użyciu Aspose.GIS dla .NET
+title: Jak obliczyć centroid geometrii przy użyciu Aspose.GIS dla .NET
 url: /pl/net/geometry-analysis/get-geometry-centroid/
 weight: 19
 ---
@@ -14,35 +14,38 @@ weight: 19
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Jak uzyskać centroid geometrii przy użyciu Aspose.GIS dla .NET
+# Jak obliczyć centroid geometrii przy użyciu Aspose.GIS dla .NET
 
-## Introduction
-Jeśli pracujesz nad **analizą przestrzenną w C#** i potrzebujesz wiedzieć **jak uzyskać centroid** dowolnego kształtu, trafiłeś we właściwe miejsce. W tym samouczku przeprowadzimy Cię przez użycie Aspose.GIS dla .NET do **obliczania centroidu wielokąta**, pobrania tego centroidu oraz zobaczenia, jak ten mały element geometrii może odblokować potężne scenariusze **integracji analizy przestrzennej**, takie jak rozmieszczanie etykiet, grupowanie i obliczenia odległości.
+## Wprowadzenie
+Jeśli pracujesz nad **analizą przestrzenną w C#** i potrzebujesz wiedzieć **jak obliczyć centroid** dowolnego kształtu, trafiłeś we właściwe miejsce. W tym samouczku przeprowadzimy Cię przez użycie Aspose.GIS dla .NET do **obliczenia centroidu wielokąta**, pobrania tego centroidu oraz zobaczenia, jak ten mały element geometrii może odblokować potężne scenariusze **zintegrowanej analizy przestrzennej**, takie jak umieszczanie etykiet, grupowanie i obliczenia odległości.
 
-## Quick Answers
-- **What is the primary method?** `GetCentroid()` on an `IGeometry` object.  
-- **Which library provides it?** Aspose.GIS for .NET.  
-- **How many lines of code?** Less than 15 lines total (excluding using statements).  
-- **Do I need a license?** A temporary license works for testing; a full license is required for production.  
-- **Can it run on .NET 6+?** Yes – the API is fully compatible with .NET Core and .NET 5/6.
+## Szybkie odpowiedzi
+- **Jaka jest podstawowa metoda?** `GetCentroid()` na obiekcie `IGeometry`.  
+- **Która biblioteka ją udostępnia?** Aspose.GIS dla .NET.  
+- **Ile linii kodu?** Mniej niż 15 linii łącznie (bez instrukcji using).  
+- **Czy potrzebna jest licencja?** Tymczasowa licencja działa w testach; pełna licencja jest wymagana w produkcji.  
+- **Czy działa na .NET 6+?** Tak – API jest w pełni kompatybilne z .NET Core oraz .NET 5/6.  
 
-## What is a Centroid and Why Does It Matter?
-Centroid to geometryczne centrum kształtu – można je traktować jako „punkt równowagi”. Dla wielokątów centroid jest często używany do umieszczania etykiet, obliczania średnich położeń lub jako punkt odniesienia w zapytaniach przestrzennych. Znajomość **jak uzyskać centroid** szybko pozwala zintegrować funkcje analizy przestrzennej bez konieczności samodzielnego pisania skomplikowanej matematyki.
+## Co to jest centroid i dlaczego ma znaczenie?
+Centroid jest geometrycznym środkiem kształtu – można go traktować jako „punkt równowagi”. Dla wielokątów centroid (lub **środkowy punkt wielokąta**) jest często używany do umieszczania etykiet, obliczania średnich położeń lub jako punkt odniesienia w zapytaniach przestrzennych. Znajomość **sposobu obliczania centroidu** pozwala szybko integrować funkcje analizy przestrzennej bez konieczności samodzielnego pisania skomplikowanych obliczeń.
 
-## Prerequisites
-Before we dive in, make sure you have the following:
+## Dlaczego obliczać centroid multipoligonu?
+Podczas pracy z kolekcjami wielokątów (np. granice kraju składające się z wysp), możesz potrzebować **obliczyć centroid multipoligonu**. Aspose.GIS pozwala wywołać `GetCentroid()` na obiekcie `MultiPolygon` i zwraca centroid połączonego kształtu, upraszczając zadania przetwarzania wsadowego i wizualizacji map.
 
-### 1. Installing Aspose.GIS for .NET
-Download the library from the [Aspose.GIS for .NET website](https://releases.aspose.com/gis/net/). Follow the installation instructions to add the NuGet package to your project.
+## Wymagania wstępne
+Zanim zaczniemy, upewnij się, że masz następujące:
 
-### 2. Familiarity with C# Programming
-You should be comfortable writing basic C# code. If you’re new, consider a quick refresher on variables, classes, and console output.
+### 1. Instalacja Aspose.GIS dla .NET
+Pobierz bibliotekę ze [strony Aspose.GIS dla .NET](https://releases.aspose.com/gis/net/). Postępuj zgodnie z instrukcjami instalacji, aby dodać pakiet NuGet do swojego projektu.
 
-### 3. Basic Understanding of Geographic Concepts
-While not mandatory, knowing the difference between points, lines, and polygons will help you follow the examples more easily.
+### 2. Znajomość programowania w C#
+Powinieneś swobodnie pisać podstawowy kod w C#. Jeśli jesteś nowicjuszem, rozważ szybkie odświeżenie wiedzy na temat zmiennych, klas i wyjścia konsoli.
 
-## Import Namespaces
-We need to bring the Aspose.GIS classes into scope. Add the following `using` directives at the top of your C# file:
+### 3. Podstawowa znajomość pojęć geograficznych
+Choć nie jest to obowiązkowe, znajomość różnicy między punktami, liniami i wielokątami ułatwi śledzenie przykładów.
+
+## Importowanie przestrzeni nazw
+Musimy wprowadzić klasy Aspose.GIS do zasięgu. Dodaj następujące dyrektywy `using` na początku pliku C#:
 
 ```csharp
 using Aspose.Gis.Geometries;
@@ -53,13 +56,13 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-These namespaces give you access to geometry types, the `GetCentroid()` method, and standard .NET utilities.
+Te przestrzenie nazw dają dostęp do typów geometrii, metody `GetCentroid()` oraz standardowych narzędzi .NET.
 
-## How to Get Centroid of a Geometry
-Below is a step‑by‑step guide that shows how to **create polygon geometry**, compute its centroid, and display the result.
+## Jak obliczyć centroid geometrii
+Poniżej znajduje się przewodnik krok po kroku, który pokazuje, jak **utworzyć geometrię wielokąta**, obliczyć jego centroid i wyświetlić wynik.
 
-### Step 1: Define a Polygon
-First, we **create polygon geometry** by specifying its vertices. This example builds a simple, non‑self‑intersecting polygon:
+### Krok 1: Definicja wielokąta
+Najpierw **tworzymy geometrię wielokąta** poprzez określenie jego wierzchołków. Ten przykład buduje prosty, nieprzecinający się sam siebie wielokąt:
 
 ```csharp
 var polygon = new Polygon();
@@ -74,65 +77,66 @@ polygon.ExteriorRing = new LinearRing(new[]
 });
 ```
 
-### Step 2: Retrieve Polygon Centroid
-Once the polygon is defined, call `GetCentroid()` to **retrieve polygon centroid**:
+### Krok 2: Pobranie centroidu wielokąta (środkowy punkt wielokąta)
+Gdy wielokąt jest zdefiniowany, wywołaj `GetCentroid()`, aby **pobrać centroid wielokąta**:
 
 ```csharp
 IPoint centroid = polygon.GetCentroid();
 ```
 
-### Step 3: Display Centroid Coordinates
-Finally, output the X and Y coordinates of the centroid. The format string rounds the values to two decimal places:
+### Krok 3: Wyświetlenie współrzędnych centroidu
+Na koniec wypisz współrzędne X i Y centroidu. Łańcuch formatu zaokrągla wartości do dwóch miejsc po przecinku:
 
 ```csharp
 Console.WriteLine("{0:F} {1:F}", centroid.X, centroid.Y); // Output: 3.33 2.58
 ```
 
-Running the program will print the centroid coordinates to the console, confirming that the geometry was processed correctly.
+Uruchomienie programu wypisze współrzędne centroidu w konsoli, potwierdzając prawidłowe przetworzenie geometrii.
 
-## Common Pitfalls & Pro Tips
-- **Pitfall:** Supplying a self‑intersecting polygon can produce an unexpected centroid.  
-  **Tip:** Validate your polygon (e.g., using `IsValid` if available) before calling `GetCentroid()`.
-- **Pitfall:** Forgetting to close the ring (the first and last points must be identical).  
-  **Tip:** Always repeat the first point as the last point when constructing a `LinearRing`.
-- **Pro Tip:** For large datasets, compute centroids in parallel using `Parallel.ForEach` to speed up batch processing.
+## Częste pułapki i wskazówki profesjonalne
+- **Pułapka:** Dostarczenie samoprzecinającego się wielokąta może spowodować nieoczekiwany centroid.  
+  **Wskazówka:** Zweryfikuj swój wielokąt (np. używając `IsValid`, jeśli jest dostępny) przed wywołaniem `GetCentroid()`.
+- **Pułapka:** Zapomnienie zamknięcia pierścienia (pierwszy i ostatni punkt muszą być identyczne).  
+  **Wskazówka:** Zawsze powtarzaj pierwszy punkt jako ostatni przy konstruowaniu `LinearRing`.
+- **Wskazówka profesjonalna:** Dla dużych zbiorów danych obliczaj centroidy równolegle przy użyciu `Parallel.ForEach`, aby przyspieszyć przetwarzanie wsadowe.
+- **Wskazówka profesjonalna:** Pracując z `MultiPolygon`, wywołaj `GetCentroid()` bezpośrednio na kolekcji, aby **obliczyć centroid multipoligonu** w jednym wywołaniu.
 
-## FAQ's
-### Q: Is Aspose.GIS for .NET compatible with all versions of .NET Framework?
-Aspose.GIS for .NET is compatible with .NET Framework 4.6 and higher, ensuring broad compatibility across various versions.
+## FAQ
+### Q: Czy Aspose.GIS dla .NET jest kompatybilny ze wszystkimi wersjami .NET Framework?
+A: Aspose.GIS dla .NET jest kompatybilny z .NET Framework 4.6 i wyższymi, zapewniając szeroką kompatybilność z różnymi wersjami.
 
-### Q: Can I obtain temporary licenses for Aspose.GIS for .NET?
-Yes, temporary licenses for Aspose.GIS for .NET are available for testing purposes. You can acquire them from the [temporary license page](https://purchase.aspose.com/temporary-license/).
+### Q: Czy mogę uzyskać tymczasowe licencje dla Aspose.GIS dla .NET?
+A: Tak, tymczasowe licencje dla Aspose.GIS dla .NET są dostępne w celach testowych. Możesz je uzyskać ze [strony tymczasowych licencji](https://purchase.aspose.com/temporary-license/).
 
-### Q: Is Aspose.GIS for .NET suitable for both desktop and web applications?
-Absolutely! Aspose.GIS for .NET can be seamlessly integrated into both desktop and web applications, offering flexibility in development.
+### Q: Czy Aspose.GIS dla .NET jest odpowiedni zarówno dla aplikacji desktopowych, jak i webowych?
+A: Zdecydowanie! Aspose.GIS dla .NET może być płynnie zintegrowany zarówno z aplikacjami desktopowymi, jak i webowymi, oferując elastyczność w rozwoju.
 
-### Q: Does Aspose.GIS for .NET provide extensive documentation?
-Yes, comprehensive documentation for Aspose.GIS for .NET is available on the [documentation page](https://reference.aspose.com/gis/net/), offering detailed insights into its usage and functionalities.
+### Q: Czy Aspose.GIS dla .NET zapewnia obszerną dokumentację?
+A: Tak, obszerna dokumentacja Aspose.GIS dla .NET jest dostępna na [stronie dokumentacji](https://reference.aspose.com/gis/net/), oferując szczegółowe informacje o jej użyciu i funkcjonalnościach.
 
-### Q: How can I seek assistance or engage with the community regarding Aspose.GIS for .NET?
-For any inquiries, support, or community engagement, you can visit the Aspose.GIS dedicated forum [here](https://forum.aspose.com/c/gis/33).
+### Q: Jak mogę uzyskać pomoc lub zaangażować się w społeczność dotyczącą Aspose.GIS dla .NET?
+A: W przypadku pytań, wsparcia lub zaangażowania w społeczność, możesz odwiedzić dedykowane forum Aspose.GIS [tutaj](https://forum.aspose.com/c/gis/33).
 
-## Frequently Asked Questions
+## Najczęściej zadawane pytania
 
-**Q: Can I calculate the centroid of a MultiPolygon?**  
-A: Yes. Call `GetCentroid()` on each individual polygon or on the `MultiPolygon` object; the API will return the centroid of the combined shape.
+**Q: Czy mogę obliczyć centroid MultiPolygon?**  
+A: Tak. Wywołaj `GetCentroid()` na każdym pojedynczym wielokącie lub na obiekcie `MultiPolygon`; API zwróci centroid połączonego kształtu.
 
-**Q: Does the centroid calculation consider the Earth's curvature?**  
-A: The built‑in `GetCentroid()` works in the coordinate space of the geometry (planar). For geodetic data, re‑project to a suitable planar CRS before calculating the centroid.
+**Q: Czy obliczanie centroidu uwzględnia krzywiznę Ziemi?**  
+A: Wbudowana metoda `GetCentroid()` działa w przestrzeni współrzędnych geometrii (płaszczyzna). Dla danych geodezyjnych należy przekształcić je do odpowiedniego płaskiego układu współrzędnych (CRS) przed obliczeniem centroidu.
 
-**Q: Is there a way to get the centroid of a geometry collection in one call?**  
-A: You can iterate over the collection and compute centroids individually, or use the `GeometryFactory` to merge geometries and then call `GetCentroid()` on the merged result.
+**Q: Czy istnieje sposób, aby uzyskać centroid kolekcji geometrii w jednym wywołaniu?**  
+A: Możesz iterować po kolekcji i obliczać centroidy indywidualnie, lub użyć `GeometryFactory` do połączenia geometrii i następnie wywołać `GetCentroid()` na wyniku scalonym.
 
-**Q: How accurate is the centroid for very large polygons?**  
-A: Accuracy depends on the coordinate precision and projection. For extremely large or complex polygons, consider simplifying the geometry first to improve performance.
+**Q: Jak dokładny jest centroid bardzo dużych wielokątów?**  
+A: Dokładność zależy od precyzji współrzędnych i projekcji. Dla niezwykle dużych lub skomplikowanych wielokątów rozważ upraszczanie geometrii przed obliczeniem, aby poprawić wydajność.
 
-**Q: Can I format the centroid output as GeoJSON?**  
-A: Yes. After obtaining the `IPoint`, you can serialize it using Aspose.GIS's `GeoJsonWriter` or any JSON serializer of your choice.
+**Q: Czy mogę sformatować wyjście centroidu jako GeoJSON?**  
+A: Tak. Po uzyskaniu `IPoint` możesz go zserializować przy użyciu `GeoJsonWriter` Aspose.GIS lub dowolnego wybranego serializatora JSON.
 
 ---
 
-**Last Updated:** 2025-12-07  
+**Last Updated:** 2026-02-10  
 **Tested With:** Aspose.GIS 24.11 for .NET  
 **Author:** Aspose  
 
