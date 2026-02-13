@@ -1,11 +1,11 @@
 ---
-date: 2025-12-09
-description: Leer hoe u controleert of een punt binnen een polygoon ligt met Aspose.GIS
-  voor .NET. Stapsgewijze handleiding om een punt op een oppervlak te krijgen, een
-  polygoon te maken in C# en een punt op een polygoon op te halen.
+date: 2026-02-13
+description: Leer hoe je controleert of een punt binnen een polygoon ligt met Aspose.GIS
+  voor .NET, maak polygoongeometrie en verkrijg een punt op het oppervlak in C#. Stapsgewijze
+  handleiding met volledig codevoorbeeld.
 linktitle: Check Point Inside Polygon and Get Point on Surface
 second_title: Aspose.GIS .NET API
-title: Controleer punt binnen polygoon en verkrijg punt op oppervlak
+title: Controleer of punt binnen polygoon ligt en krijg punt op oppervlak
 url: /nl/net/geometry-analysis/get-point-on-geometry-surface/
 weight: 25
 ---
@@ -14,29 +14,35 @@ weight: 25
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Punt binnen polygoon controleren en punt op oppervlak verkrijgen
+# Controleer Punt Binnen Polygon en Verkrijg Punt op Oppervlak
 
-## Inleiding
-In deze tutorial leer je **hoe je een punt binnen een polygoon kunt controleren** met Aspose.GIS voor .NET en zie je ook hoe je **een punt op het oppervlak** van een geometrie kunt verkrijgen. We lopen door het maken van een polygoon in C#, het ophalen van een punt dat op het oppervlak van de polygoon ligt, en het verifiëren dat het punt daadwerkelijk binnen de polygoon ligt. Aan het einde heb je een kant‑klaar fragment dat je in elke .NET geospatiale applicatie kunt gebruiken.
+## Introductie
+In deze tutorial leer je **hoe je een punt binnen een polygon controleert** met Aspose.GIS voor .NET en zie je ook hoe je **een punt op het oppervlak** van een geometrie **krijgt**. We lopen door het maken van een polygon‑geometrie in C#, het ophalen van een punt dat op het oppervlak van de polygon ligt, en het verifiëren dat het punt daadwerkelijk binnen de polygon bevindt. Aan het einde heb je een kant‑klaar fragment dat je in elke .NET geospatiale applicatie kunt gebruiken.
 
-## Snelle antwoorden
-- **Wat betekent “check point inside polygon”?** Het controleert of een gegeven coördinaat binnen de grenzen van een polygoongeometrie ligt.  
-- **Welke methode retourneert een punt in het binnenste van een polygoon?** `GetPointOnSurface()` retourneert een punt dat gegarandeerd binnen de polygoon ligt.  
+## Snelle Antwoorden
+- **Wat betekent “check point inside polygon”?** Het controleert of een gegeven coördinaat binnen de grenzen van een polygon‑geometrie ligt.  
+- **Welke methode retourneert een punt in het binnenste van een polygon?** `GetPointOnSurface()` retourneert een punt dat gegarandeerd binnen de polygon ligt.  
 - **Heb ik een licentie nodig om het voorbeeld uit te voeren?** Een gratis proefversie werkt voor evaluatie; een volledige licentie is vereist voor productie.  
 - **Welke .NET‑versies worden ondersteund?** .NET Framework, .NET Core en .NET Standard zijn allemaal compatibel.  
 - **Hoe lang duurt de implementatie?** Ongeveer 5‑10 minuten om te kopiëren, compileren en uit te voeren.
 
-## Voorvereisten
+## Wat is “check point inside polygon”?
+Een punt binnen een polygon controleren is een fundamentele ruimtelijke bewerking. Het beantwoordt de vraag “Is deze coördinaat gelegen binnen het gebied dat door de polygon wordt gedefinieerd?” Dit is essentieel voor taken zoals geofencing, kaartanalyse en ruimtelijke validatie.
+
+## Waarom Aspose.GIS gebruiken voor deze taak?
+Aspose.GIS biedt een high‑performance, volledig beheerde API die complexe geometrie‑bewerkingen afhandelt zonder externe afhankelijkheden. Het ondersteunt een breed scala aan coördinatenreferentiesystemen, werkt op alle belangrijke .NET‑runtime‑omgevingen, en biedt duidelijke, chainable methoden zoals `SpatiallyContains()` en `GetPointOnSurface()`.
+
+## Vereisten
 Voordat we beginnen, zorg ervoor dat je het volgende hebt:
 
-### Omgevingsinstelling
-1. Installeer Aspose.GIS voor .NET: Download en installeer de Aspose.GIS voor .NET‑bibliotheek van [hier](https://releases.aspose.com/gis/net/).  
-2. Stel je ontwikkelomgeving in: Zorg voor een werkende ontwikkelomgeving voor .NET‑programmering. Zo niet, kun je Visual Studio of een andere .NET‑ontwikkelomgeving naar keuze installeren.  
-3. Basiskennis van C#: Maak jezelf vertrouwd met de basis van de programmeertaal C# als je dat nog niet bent.  
-4. Toegang tot documentatie: Houd de [documentatie](https://reference.aspose.com/gis/net/) bij de hand voor naslag gedurende de tutorial.
+### Omgevingsconfiguratie
+1. Installeer Aspose.GIS voor .NET: Download en installeer de Aspose.GIS voor .NET bibliotheek van [hier](https://releases.aspose.com/gis/net/).  
+2. Stel je ontwikkelomgeving in: Zorg dat je een werkende ontwikkelomgeving voor .NET‑programmering hebt. Zo niet, kun je Visual Studio of een andere .NET‑ontwikkelomgeving naar keuze installeren.  
+3. Basiskennis van C#: Maak jezelf vertrouwd met de basisprincipes van de programmeertaal C# als je die nog niet kent.  
+4. Toegang tot documentatie: Houd de [documentatie](https://reference.aspose.com/gis/net/) bij de hand voor referentie gedurende de tutorial.
 
-## Namespaces importeren
-Voordat we ingaan op de implementatie, laten we eerst de benodigde namespaces importeren:
+## Namespaces Importeren
+Voordat we in de implementatie duiken, laten we beginnen met het importeren van de benodigde namespaces:
 
 ```csharp
 using Aspose.Gis.Geometries;
@@ -47,10 +53,10 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-Nu we onze omgeving hebben opgezet en de vereiste namespaces hebben geïmporteerd, laten we het voorbeeld in meerdere stappen opsplitsen om het beter te begrijpen.
+## Stapsgewijze Gids
 
-## Hoe een polygoon maken in C#  
-Eerst moeten we een **polygoon** geometrie **creëren**. We definiëren de buitenring van de polygoon door de hoekpunten op te geven.
+### Stap 1: Polygon‑geometrie maken in C#
+Eerst moeten we een **polygon**‑geometrie **maken**. We definiëren de buitenring van de polygon door de hoekpunten op te geven.
 
 ```csharp
 var polygon = new Polygon();
@@ -63,60 +69,62 @@ polygon.ExteriorRing = new LinearRing(new[]
 });
 ```
 
-## Hoe een punt op het oppervlak verkrijgen  
-Vervolgens halen we een punt op het oppervlak van de polygoon op met de `GetPointOnSurface()`‑methode. Dit is de **get point on surface** stap.
+### Stap 2: Punt op Oppervlak Ophalen
+Vervolgens halen we een punt op het oppervlak van de polygon op met de `GetPointOnSurface()`‑methode. Dit is de **get point on surface** stap.
 
 ```csharp
 IPoint pointOnSurface = polygon.GetPointOnSurface();
 ```
 
-## Hoe een punt binnen een polygoon controleren  
-We kunnen verifiëren of het opgehaalde punt binnen de polygoon ligt met behulp van de `SpatiallyContains()`‑methode. Dit toont **het ophalen van een punt op de polygoon** en vervolgens het controleren ervan.
+### Stap 3: Punt Binnen Polygon Controleren
+We kunnen verifiëren of het opgehaalde punt binnen de polygon ligt met de `SpatiallyContains()`‑methode. Dit toont **retrieving point on polygon** en vervolgens de controle.
 
 ```csharp
 Console.WriteLine(polygon.SpatiallyContains(pointOnSurface)); // True
 ```
 
-## Veelvoorkomende problemen en oplossingen
-- **Lege polygoon** – Zorg ervoor dat de buitenring minstens drie verschillende hoekpunten heeft; anders kan `GetPointOnSurface()` een ongedefinieerd punt retourneren.  
-- **Klokwijs vs. tegen de klok in** – De oriëntatie van de ring beïnvloedt de containment‑check niet, maar een consistente winding‑order helpt bij andere ruimtelijke bewerkingen.  
-- **Coördinatensysteem** – Het voorbeeld gebruikt een eenvoudig Cartesiaans vlak; bij werken met echte coördinaten moet je ervoor zorgen dat het CRS (coordinate reference system) correct is gedefinieerd.
+## Veelvoorkomende Problemen en Oplossingen
+- **Lege polygon** – Zorg ervoor dat de buitenring minstens drie verschillende hoekpunten heeft; anders kan `GetPointOnSurface()` een ongedefinieerd punt retourneren.  
+- **Klokwijs versus tegen de klok in** – De oriëntatie van de ring beïnvloedt de containment‑check niet, maar een consistente winding‑volgorde helpt bij andere ruimtelijke bewerkingen.  
+- **Coördinatensysteem** – Het voorbeeld gebruikt een eenvoudig cartesiaans vlak; bij het werken met coördinaten uit de echte wereld, zorg ervoor dat het CRS (coordinate reference system) correct is gedefinieerd.
 
-## Conclusie
-In deze tutorial hebben we geleerd hoe je **een punt binnen een polygoon kunt controleren** met Aspose.GIS voor .NET, een **punt op het oppervlak** kunt verkrijgen, en de containment kunt verifiëren. Met Aspose.GIS wordt het verwerken van geospatiale data efficiënt en eenvoudig, waardoor ontwikkelaars robuuste geospatiale applicaties kunnen bouwen.
+## Veelgestelde Vragen
 
-## Veelgestelde vragen
-### Is Aspose.GIS compatibel met andere .NET‑frameworks?
-Ja, Aspose.GIS ondersteunt verschillende .NET‑frameworks, waaronder .NET Framework, .NET Core en .NET Standard.
+### FAQ's
+#### Is Aspose.GIS compatibel met andere .NET‑frameworks?
+Ja, Aspose.GIS ondersteunt verschillende .NET‑frameworks, inclusief .NET Framework, .NET Core en .NET Standard.
 
-### Kan ik Aspose.GIS uitproberen voordat ik het koop?
+#### Kan ik Aspose.GIS uitproberen voordat ik koop?
 Ja, je kunt een gratis proefversie van Aspose.GIS downloaden van [hier](https://releases.aspose.com/).
 
-### Hoe kan ik ondersteuning krijgen voor Aspose.GIS?
-Je kunt het Aspose.GIS‑forum bezoeken [hier](https://forum.aspose.com/c/gis/33) om hulp te zoeken en in contact te komen met andere gebruikers en ontwikkelaars.
+#### Hoe kan ik ondersteuning krijgen voor Aspose.GIS?
+Je kunt het Aspose.GIS‑forum bezoeken [hier](https://forum.aspose.com/c/gis/33) om hulp te zoeken en te communiceren met andere gebruikers en ontwikkelaars.
 
-### Biedt Aspose.GIS tijdelijke licenties?
+#### Biedt Aspose.GIS tijdelijke licenties aan?
 Ja, je kunt tijdelijke licenties voor Aspose.GIS verkrijgen van [hier](https://purchase.aspose.com/temporary-license/).
 
-### Waar kan ik Aspose.GIS kopen?
+#### Waar kan ik Aspose.GIS kopen?
 Je kunt Aspose.GIS kopen via de aankooppagina [hier](https://purchase.aspose.com/buy).
 
-**Aanvullende V&A**
+### Extra Vragen & Antwoorden
 
-**Q:** Wat is de beste manier om grote polygoondatasets te verwerken?  
-**A:** Laad geometrieën lui en hergebruik een enkele `GeometryFactory`‑instantie om het geheugenverbruik te verminderen.
+**V:** Wat is de beste manier om grote polygon‑datasets te verwerken?  
+**A:** Laad geometrieën lui (lazy) en hergebruik een enkele `GeometryFactory`‑instantie om het geheugenverbruik te verminderen.
 
-**Q:** Kan ik meerdere punten op het oppervlak ophalen?  
-**A:** `GetPointOnSurface()` retourneert één intern punt. Om meerdere interne punten te genereren, kun je een willekeurige puntgenerator gebruiken binnen de begrenzingsbox van de polygoon en elk punt testen met `SpatiallyContains()`.
+**V:** Kan ik meerdere punten op het oppervlak ophalen?  
+**A:** `GetPointOnSurface()` retourneert één enkel binnenste punt. Om meerdere binnenste punten te genereren, kun je een willekeurige puntgenerator binnen de begrenzingsdoos van de polygon gebruiken en elk punt testen met `SpatiallyContains()`.
 
-**Q:** Is het mogelijk om de polygoon na creatie naar een shapefile te exporteren?  
-**A:** Ja, Aspose.GIS biedt de klassen `FeatureSet` en `ShapefileWriter` om geometrieën naar het Shapefile‑formaat te schrijven.
+**V:** Is het mogelijk om de polygon na creatie naar een shapefile te exporteren?  
+**A:** Ja, Aspose.GIS biedt de `FeatureSet`‑ en `ShapefileWriter`‑klassen om geometrieën naar Shapefile‑formaat te schrijven.
+
+## Conclusie
+In deze tutorial hebben we geleerd hoe je **check point inside polygon** gebruikt met Aspose.GIS voor .NET, een **punt op het oppervlak** verkrijgt, en de containment verifieert. Met Aspose.GIS wordt het omgaan met geospatiale data efficiënt en eenvoudig, waardoor ontwikkelaars robuuste geospatiale applicaties kunnen bouwen.
 
 ---
 
-**Last Updated:** 2025-12-09  
-**Tested With:** Aspose.GIS 24.11 for .  
-**Author:** Aspose
+**Laatst bijgewerkt:** 2026-02-13  
+**Getest met:** Aspose.GIS 24.11 voor .NET  
+**Auteur:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
