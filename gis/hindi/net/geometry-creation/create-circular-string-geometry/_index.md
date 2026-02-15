@@ -1,7 +1,7 @@
 ---
-date: 2025-12-12
+date: 2026-02-15
 description: Aspose.GIS for .NET का उपयोग करके वेक्टर लेयर बनाना और सर्कुलर स्ट्रिंग
-  जियोमेट्री जोड़ना सीखें – GIS एप्लिकेशन बनाने का एक तेज़ तरीका।
+  जियोमेट्री जोड़ना सीखें – GIS एप्लिकेशन बनाने का तेज़ तरीका।
 linktitle: Create Circular String Geometry
 second_title: Aspose.GIS .NET API
 title: Aspose.GIS for .NET में वेक्टर लेयर और सर्कुलर स्ट्रिंग बनाएं
@@ -15,30 +15,30 @@ weight: 20
 
 # Aspose.GIS for .NET के साथ वेक्टर लेयर और सर्कुलर स्ट्रिंग ज्योमेट्री बनाएं
 
-## Introduction
-यदि आप .NET प्लेटफ़ॉर्म पर GIS एप्लिकेशन बना रहे हैं, तो पहला कदम अक्सर **to create vector layer** ऑब्जेक्ट्स बनाना होता है जो आपके स्पैशियल फीचर्स को संग्रहीत करते हैं। Aspose.GIS for .NET इस प्रक्रिया को सरल बनाता है और आपको इन लेयर्स को सर्कुलर स्ट्रिंग जैसी उन्नत ज्योमेट्रीज़ से समृद्ध करने देता है। इस ट्यूटोरियल में आप सीखेंगे कि कैसे एक वेक्टर लेयर बनाएं, सर्कुलर स्ट्रिंग ज्योमेट्री जोड़ें, और परिणाम को Shapefile के रूप में सहेजें—सभी साफ़, प्रोडक्शन‑रेडी C# कोड के साथ।
+## परिचय
+यदि आप .NET प्लेटफ़ॉर्म पर GIS एप्लिकेशन बना रहे हैं, तो पहला कदम अक्सर **वेक्टर लेयर** ऑब्जेक्ट बनाना होता है जो आपके स्पैशियल फीचर्स को संग्रहीत करते हैं। Aspose.GIS for .NET इस प्रक्रिया को सरल बनाता है और आपको इन लेयर्स को सर्कुलर स्ट्रिंग जैसी उन्नत ज्योमेट्रीज़ से समृद्ध करने देता है। इस ट्यूटोरियल में आप सीखेंगे कि कैसे **वेक्टर लेयर** बनाएं, **सर्कुलर स्ट्रिंग** ज्योमेट्री जोड़ें, और परिणाम को Shapefile के रूप में सहेजें—सभी साफ़, प्रोडक्शन‑रेडी C# कोड के साथ।
 
-## Quick Answers
-- **What does “create vector layer” mean?** यह एक नया कंटेनर (लेयर) बनाता है जो पॉइंट्स, लाइन्स, या पॉलीगॉन्स जैसे स्पैशियल फीचर्स को रख सकता है।  
-- **Which class represents a circular string?** `CircularString` from `Aspose.Gis.Geometries`.  
-- **Can I save the layer as a Shapefile?** Yes – use `Drivers.Shapefile` when creating the layer.  
-- **Do I need a license for development?** एक अस्थायी लाइसेंस मूल्यांकन के लिए काम करता है; उत्पादन के लिए पूर्ण लाइसेंस आवश्यक है।  
-- **What .NET versions are supported?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
+## त्वरित उत्तर
+- **'वेक्टर लेयर बनाना' का क्या मतलब है?** यह एक नया कंटेनर (लेयर) बनाता है जो पॉइंट्स, लाइन्स, या पॉलीगॉन्स जैसी स्पैशियल फीचर्स को रख सकता है।  
+- **कौन सा क्लास सर्कुलर स्ट्रिंग को दर्शाता है?** `CircularString` from `Aspose.Gis.Geometries`.  
+- **क्या मैं लेयर को Shapefile के रूप में सहेज सकता हूँ?** हाँ – लेयर बनाते समय `Drivers.Shapefile` का उपयोग करें।  
+- **क्या विकास के लिए लाइसेंस चाहिए?** मूल्यांकन के लिए एक टेम्पररी लाइसेंस काम करता है; प्रोडक्शन के लिए पूर्ण लाइसेंस आवश्यक है।  
+- **कौन से .NET संस्करण समर्थित हैं?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
 
-## What is “create vector layer”?
-वेक्टर लेयर एक लॉजिकल ग्रुपिंग है जिसमें वेक्टर फीचर्स (पॉइंट्स, लाइन्स, पॉलीग) एक ही डेटा स्रोत में संग्रहीत होते हैं। Aspose.GIS में आप `VectorLayer.Create` को कॉल करके लेयर बनाते हैं, जिसमें लक्ष्य फ़ाइल पाथ और वांछित ड्राइवर (जैसे Shapefile) पास किया जाता है। लेयर बन जाने के बाद, आप फीचर्स जोड़ सकते हैं, ज्योमेट्री असाइन कर सकते हैं, और स्पैशियल ऑपरेशन्स कर सकते हैं।
+## “वेक्टर लेयर बनाना” क्या है?
+वेक्टर लेयर एक लॉजिकल समूह है जो एक ही डेटा स्रोत में संग्रहीत वेक्टर फीचर्स (पॉइंट्स, लाइन्स, पॉलीगॉन्स) को एकत्र करता है। Aspose.GIS में आप `VectorLayer.Create` को कॉल करके लेयर बनाते हैं, जिसमें लक्ष्य फ़ाइल पाथ और इच्छित ड्राइवर (जैसे Shapefile) पास किया जाता है। लेयर बन जाने के बाद, आप फीचर्स जोड़ सकते हैं, ज्योमेट्री असाइन कर सकते हैं, और स्पैशियल ऑपरेशन्स कर सकते हैं।
 
-## Why add a circular string?
-सर्कुलर स्ट्रिंग्स **linear geometry** का एक प्रकार हैं जो बिंदुओं की श्रृंखला का उपयोग करके आर्क्स का अनुमान लगाते हैं। ये घुमावदार सड़कों, नदी के मोड़ों, या किसी भी फीचर को दर्शाने में उपयोगी हैं जहाँ कई छोटे लाइन सेगमेंट्स के बजाय एक स्मूथ कर्व की आवश्यकता होती है।
+## सर्कुलर स्ट्रिंग क्यों जोड़ें?
+सर्कुलर स्ट्रिंग्स एक प्रकार की **लीनियर ज्योमेट्री** हैं जो बिंदुओं की श्रृंखला का उपयोग करके आर्क्स का अनुमान लगाती हैं। ये घुमावदार सड़कों, नदी के मोड़ों, या किसी भी फीचर को दर्शाने में उपयोगी हैं जहाँ कई छोटे लाइन सेगमेंट्स के बिना एक स्मूद कर्व की आवश्यकता होती है।
 
-## Prerequisites
-- **.NET Framework or .NET Core** installed on your machine.  
-- **Aspose.GIS for .NET** library – download it from the official site **[here](https://releases.aspose.com/gis/net/)**.  
-- An IDE such as **Visual Studio** or **JetBrains Rider**.  
-- Basic familiarity with **C#** programming.
+## पूर्वापेक्षाएँ
+- **.NET Framework या .NET Core** आपके मशीन पर स्थापित होना चाहिए।  
+- **Aspose.GIS for .NET** लाइब्रेरी – इसे आधिकारिक साइट से डाउनलोड करें **[here](https://releases.aspose.com/gis/net/)**।  
+- **Visual Studio** या **JetBrains Rider** जैसे IDE।  
+- **C#** प्रोग्रामिंग की बुनियादी परिचितता।
 
-## Import Namespaces
-Add the required namespaces to your C# file:
+## नेमस्पेस इम्पोर्ट करें
+अपने C# फ़ाइल में आवश्यक नेमस्पेस जोड़ें:
 
 ```csharp
 using Aspose.Gis;
@@ -50,34 +50,34 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## Step‑by‑Step Guide
+## चरण‑दर‑चरण गाइड
 
-### Step 1: Define the output file path
-Set the location where the Shapefile will be written.
+### चरण 1: आउटपुट फ़ाइल पाथ निर्धारित करें
+Shapefile लिखे जाने की जगह सेट करें।
 
 ```csharp
 string path = "Your Document Directory" + "CreateCircularString_out.shp";
 ```
 
-Replace `"Your Document Directory"` with the actual folder path on your system.
+`"Your Document Directory"` को अपने सिस्टम पर वास्तविक फ़ोल्डर पाथ से बदलें।
 
-### Step 2: **Create vector layer**
-Open a `VectorLayer` using the `Create` method. This is the core of the **create vector layer** operation.
+### चरण 2: **वेक्टर लेयर बनाएं**
+`Create` मेथड का उपयोग करके एक `VectorLayer` खोलें। यह **वेक्टर लेयर बनाना** ऑपरेशन का मुख्य भाग है।
 
 ```csharp
 using (VectorLayer layer = VectorLayer.Create(path, Drivers.Shapefile))
 {
 ```
 
-### Step 3: Construct a new feature
-A feature represents a single spatial record inside the layer.
+### चरण 3: नया फीचर बनाएं
+एक फीचर लेयर के अंदर एकल स्पैशियल रिकॉर्ड को दर्शाता है।
 
 ```csharp
     var feature = layer.ConstructFeature();
 ```
 
-### Step 4: Build the circular string geometry
-Add the points that define the curved shape. The sequence of points creates an arc that starts and ends at the same location, forming a closed circular string.
+### चरण 4: सर्कुलर स्ट्रिंग ज्योमेट्री बनाएं
+वक्र आकार को परिभाषित करने वाले बिंदुओं को जोड़ें। बिंदुओं की श्रृंखला एक आर्क बनाती है जो एक ही स्थान से शुरू और समाप्त होती है, जिससे एक बंद सर्कुलर स्ट्रिंग बनती है।
 
 ```csharp
     var circularString = new CircularString();
@@ -88,8 +88,8 @@ Add the points that define the curved shape. The sequence of points creates an a
     circularString.AddPoint(0, 0);
 ```
 
-### Step 5: Assign geometry and add the feature to the layer
-Link the geometry to the feature and store it in the layer.
+### चरण 5: ज्योमेट्री असाइन करें और फीचर को लेयर में जोड़ें
+ज्योमेट्री को फीचर से लिंक करें और उसे लेयर में सहेजें।
 
 ```csharp
     feature.Geometry = circularString;
@@ -97,43 +97,60 @@ Link the geometry to the feature and store it in the layer.
 }
 ```
 
-When the `using` block ends, the layer is automatically flushed to the Shapefile on disk.
+जब `using` ब्लॉक समाप्त होता है, तो लेयर स्वचालित रूप से डिस्क पर Shapefile में फ्लश हो जाता है।
 
-## Common Issues & Solutions
+## सामान्य समस्याएँ और समाधान
 | समस्या | समाधान |
 |-------|----------|
-| **File path invalid** | Ensure the directory exists and you have write permissions. |
-| **CircularString appears as a straight line** | Verify that points are added in the correct order; the first and last points should be identical for a closed shape. |
-| **License exception** | Apply a temporary license during development or purchase a full license for production use. |
+| **फ़ाइल पाथ अमान्य** | डायरेक्टरी मौजूद है और आपके पास लिखने की अनुमति है, यह सुनिश्चित करें। |
+| **CircularString सीधी रेखा जैसा दिख रहा है** | सुनिश्चित करें कि बिंदु सही क्रम में जोड़े गए हैं; बंद आकार के लिए पहले और अंतिम बिंदु समान होने चाहिए। |
+| **लाइसेंस अपवाद** | विकास के दौरान टेम्पररी लाइसेंस लागू करें या प्रोडक्शन उपयोग के लिए पूर्ण लाइसेंस खरीदें। |
 
-## Frequently Asked Questions
+## अक्सर पूछे जाने वाले प्रश्न
 
 ### क्या Aspose.GIS for .NET सभी .NET Framework संस्करणों के साथ संगत है?
-Yes, Aspose.GIS for .NET is designed to work with a wide range of .NET versions, from Framework 4.5 up to the latest .NET 8 releases.
+हाँ, Aspose.GIS for .NET को व्यापक .NET संस्करणों के साथ काम करने के लिए डिज़ाइन किया गया है, Framework 4.5 से लेकर नवीनतम .NET 8 रिलीज़ तक।
 
-### क्या मैं Aspose.GIS for .NET को अन्य GIS लाइब्रेरीज़ के साथ एकीकृत कर सकता हूँ?
-Absolutely! You can read data with other libraries, manipulate it with Aspose.GIS, and then write it back, thanks to its flexible API.
+### क्या मैं Aspose.GIS for .NET को अन्य GIS लाइब्रेरीज़ के साथ इंटीग्रेट कर सकता हूँ?
+बिल्कुल! आप अन्य लाइब्रेरीज़ से डेटा पढ़ सकते हैं, उसे Aspose.GIS से प्रोसेस कर सकते हैं, और फिर वापस लिख सकते हैं, इसकी लचीली API के कारण।
 
 ### क्या Aspose.GIS for .NET स्पैशियल डेटा विज़ुअलाइज़ेशन का समर्थन करता है?
-Yes, the library includes rendering utilities that let you generate maps and visual representations of your geometries.
+हाँ, लाइब्रेरी में रेंडरिंग यूटिलिटीज़ शामिल हैं जो आपके ज्योमेट्रीज़ के मानचित्र और विज़ुअल प्रतिनिधित्व उत्पन्न करने की अनुमति देती हैं।
 
-### क्या कोई कम्युनिटी फ़ोरम है जहाँ मैं Aspose.GIS for .NET से संबंधित सहायता ले सकूँ?
-Yes, you can visit the Aspose.GIS forum **[here](https://forum.aspose.com/c/gis/33)** to ask questions and share experiences.
+### क्या Aspose.GIS for .NET के लिए कोई कम्युनिटी फ़ोरम है जहाँ मैं सहायता ले सकूँ?
+हाँ, आप Aspose.GIS फ़ोरम **[here](https://forum.aspose.com/c/gis/33)** पर जाकर प्रश्न पूछ सकते हैं और अनुभव साझा कर सकते हैं।
 
-### क्या मैं Aspose.GIS for .NET का मूल्यांकन करने के लिए अस्थायी लाइसेंस प्राप्त कर सकता हूँ?
-Certainly! A temporary evaluation license is available **[here](https://purchase.aspose.com/temporary-license/)**.
+### क्या मैं Aspose.GIS for .NET का मूल्यांकन करने के लिए टेम्पररी लाइसेंस प्राप्त कर सकता हूँ?
+निश्चित रूप से! एक टेम्पररी मूल्यांकन लाइसेंस **[here](https://purchase.aspose.com/temporary-license/)** उपलब्ध है।
 
 ### मैं उसी लेयर में अधिक जटिल ज्योमेट्रीज़ (जैसे MultiLineString) कैसे जोड़ूँ?
-Create the appropriate geometry object (e.g., `MultiLineString`), populate it with individual `LineString` objects, assign it to and add the feature just like we did with the circular string.
+उचित ज्योमेट्री ऑब्जेक्ट (जैसे `MultiLineString`) बनाएं, उसे व्यक्तिगत `LineString` ऑब्जेक्ट्स से भरें, इसे `feature.Geometry` को असाइन करें, और फीचर को `layer.Add(feature)` के साथ जोड़ें, ठीक उसी तरह जैसा हमने सर्कुलर स्ट्रिंग के साथ किया।
 
-## Conclusion
-इन चरणों का पालन करके अब आप **create vector layer** ऑब्जेक्ट्स को कैसे बनाएं और उन्हें सर्कुलर स्ट्रिंग ज्योमेट्री से कैसे समृद्ध करें, यह जानते हैं, Aspose.GIS for .NET का उपयोग करके। यह आधार आपको अधिक समृद्ध GIS समाधान बनाने में मदद करता है—चाहे आप ट्रांसपोर्टेशन नेटवर्क को मैप कर रहे हों, पर्यावरणीय डेटा को विज़ुअलाइज़ कर रहे हों, या कस्टम स्पैशियल एनालिटिक्स टूल्स विकसित कर रहे हों।
+## FAQ (त्वरित‑संदर्भ)
+
+**प्रश्न:** मैं प्रोग्रामेटिकली **वेक्टर लेयर** कैसे बनाऊँ?  
+**उत्तर:** `using` ब्लॉक के भीतर `VectorLayer.Create(path, Drivers.Shapefile)` (या कोई अन्य ड्राइवर) को कॉल करें।
+
+**प्रश्न:** सर्कुलर स्ट्रिंग में बिंदु जोड़ने की विधि क्या है?  
+**उत्तर:** प्रत्येक निर्देशांक के लिए `circularString.AddPoint(x, y)` का उपयोग करें।
+
+**प्रश्न:** क्या मैं एक ही लेयर में कई ज्योमेट्रीज़ संग्रहीत कर सकता हूँ?  
+**उत्तर:** हाँ, प्रत्येक ज्योमेट्री के लिए नया फीचर बनाएं और `layer.Add(feature)` के साथ जोड़ें।
+
+**प्रश्न:** यदि Shapefile नहीं बन रहा है तो क्या करें?  
+**उत्तर:** आउटपुट डायरेक्टरी मौजूद है, लिखने की अनुमति है, और ड्राइवर (`Drivers.Shapefile`) सही ढंग से संदर्भित है, यह सत्यापित करें।
+
+**प्रश्न:** मूल्यांकन बिल्ड के लिए लाइसेंस आवश्यक है क्या?  
+**उत्तर:** विकास और परीक्षण के लिए टेम्पररी लाइसेंस पर्याप्त है; प्रोडक्शन डिप्लॉयमेंट के लिए पूर्ण लाइसेंस आवश्यक है।
+
+## निष्कर्ष
+इन चरणों का पालन करके आप अब **वेक्टर लेयर** ऑब्जेक्ट बनाना और Aspose.GIS for .NET का उपयोग करके **सर्कुलर स्ट्रिंग** ज्योमेट्री से उन्हें समृद्ध करना जानते हैं। यह बुनियाद आपको अधिक समृद्ध GIS समाधान बनाने में मदद करेगी—चाहे आप परिवहन नेटवर्क का मानचित्रण कर रहे हों, पर्यावरणीय डेटा का विज़ुअलाइज़ेशन कर रहे हों, या कस्टम स्पैशियल एनालिटिक्स टूल विकसित कर रहे हों।
 
 ---
 
-**Last Updated:** 2025-12-12  
-**Tested With:** Aspose.GIS 24.11 for .NET  
-**Author:** Aspose  
+**अंतिम अपडेट:** 2026-02-15  
+**परीक्षण किया गया:** Aspose.GIS 24.11 for .NET  
+**लेखक:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
