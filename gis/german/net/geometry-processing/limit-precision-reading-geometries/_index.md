@@ -1,29 +1,40 @@
 ---
-title: Beschränken Sie die Präzision beim Lesen von Geometrien mit Aspose.GIS für .NET
-linktitle: Begrenzen Sie präzise Lesegeometrien
-second_title: Aspose.GIS .NET-API
-description: Erfahren Sie, wie Sie die Präzision beim Lesen von Geometrien mit Aspose.GIS für .NET effizient verwalten. Befolgen Sie unsere Schritt-für-Schritt-Anleitung für eine optimale Datenverarbeitung.
-weight: 12
+date: 2025-12-20
+description: Erfahren Sie, wie Sie einen Vektorlayer erstellen und die Genauigkeit
+  beim Lesen von Geometrien mit Aspose.GIS für .NET begrenzen. Schritt‑für‑Schritt‑Anleitung
+  für die optimale Verarbeitung von Geodaten.
+linktitle: Limit Precision Reading Geometries
+second_title: Aspose.GIS .NET API
+title: Vektorlayer erstellen, Präzision begrenzen mit Aspose.GIS für .NET
 url: /de/net/geometry-processing/limit-precision-reading-geometries/
+weight: 12
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Beschränken Sie die Präzision beim Lesen von Geometrien mit Aspose.GIS für .NET
+# Vektorlayer erstellen, Präzision begrenzen mit Aspose.GIS für .NET
 
-## Einführung
-Im Bereich der Geodatenmanipulation ist Aspose.GIS für .NET ein leistungsstarkes Tool, das Entwicklern und Ingenieuren gleichermaßen eine Vielzahl von Funktionen bietet. Eine dieser Funktionen ist die Möglichkeit, die Präzision beim Lesen von Geometrien einzuschränken, ein entscheidender Aspekt bei bestimmten Anwendungen, bei denen Präzision möglicherweise nicht im Vordergrund steht. In diesem Tutorial erfahren Sie, wie Sie dies mit Aspose.GIS für .NET erreichen können, und unterteilen den Prozess in überschaubare Schritte.
+## Einleitung
+Beim Arbeiten mit Geodaten müssen Sie häufig **Vektorlayer**‑Objekte erstellen und steuern, wie viele numerische Details beim Lesen erhalten bleiben. Aspose.GIS für .NET ermöglicht es, die Präzision einfach zu begrenzen, was die Leistung verbessern und den Speicherbedarf reduzieren kann, wenn ultra‑hohe Genauigkeit nicht erforderlich ist. In diesem Tutorial sehen Sie genau, wie Sie einen Vektorlayer erstellen, eine einfache Punktgeometrie schreiben und diese anschließend sowohl mit exakter als auch mit gekürzter Präzision wieder einlesen.
+
+## Schnelle Antworten
+- **Was bedeutet „Präzision begrenzen“?** Es rundet Koordinatenwerte auf eine definierte Anzahl von Dezimalstellen.  
+- **Warum zuerst einen Vektorlayer erstellen?** Ein Vektorlayer ist der Container, der Geometrien wie Punkte, Linien und Polygone speichert.  
+- **Welche Präzisionsmodelle stehen zur Verfügung?** `PrecisionModel.Exact` (kein Runden) und `PrecisionModel.Rounding(n)` (Runden auf *n* Dezimalstellen).  
+- **Benötige ich eine Lizenz, um das auszuprobieren?** Eine kostenlose Testversion ist auf der Release‑Seite verfügbar.  
+- **Welche .NET‑Versionen werden unterstützt?** .NET Framework 4.5+, .NET Core und .NET 5/6+.
+
 ## Voraussetzungen
-Bevor wir uns auf diese Reise begeben, stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
-1.  Installation: Die Aspose.GIS für .NET-Bibliothek sollte in Ihrer Entwicklungsumgebung installiert sein. Wenn nicht, können Sie es hier herunterladen[Veröffentlichungsseite](https://releases.aspose.com/gis/net/).
-2. Vertrautheit mit .NET: Grundkenntnisse in C# und dem .NET Framework sind erforderlich, um die bereitgestellten Codebeispiele zu verstehen und umzusetzen.
-3. Entwicklungsumgebung: Eine funktionierende .NET-Entwicklungsumgebung wie Visual Studio ist erforderlich.
-4. Dokumentenverzeichnis: Richten Sie ein Verzeichnis ein, in dem Sie das während des Prozesses generierte Shapefile speichern und darauf zugreifen können.
+Bevor wir beginnen, stellen Sie sicher, dass Sie die folgenden Voraussetzungen erfüllt haben:
+1. **Installation** – Die Aspose.GIS für .NET‑Bibliothek sollte in Ihrer Entwicklungsumgebung installiert sein. Falls nicht, können Sie sie von der [Release‑Seite](https://releases.aspose.com/gis/net/) herunterladen.
+2. **Vertrautheit mit .NET** – Grundkenntnisse in C# und dem .NET‑Framework sind nötig, um die bereitgestellten Code‑Beispiele zu verstehen und umzusetzen.
+3. **Entwicklungsumgebung** – Eine funktionierende .NET‑Entwicklungsumgebung, z. B. Visual Studio, ist erforderlich.
+4. **Dokumenten‑Verzeichnis** – Richten Sie ein Verzeichnis ein, in dem Sie die während des Prozesses erzeugte Shapefile speichern und darauf zugreifen können.
 
 ## Namespaces importieren
-Bevor wir mit der Implementierung der Funktionalität zur Begrenzung der Genauigkeit beim Lesen von Geometrien beginnen, stellen wir sicher, dass wir die erforderlichen Namespaces importieren:
+Bevor wir die Funktionalität zur Begrenzung der Präzision beim Lesen von Geometrien implementieren, stellen wir sicher, dass die notwendigen Namespaces importiert werden:
 ```csharp
 using Aspose.Gis;
 using Aspose.Gis.Formats.Shapefile;
@@ -36,8 +47,8 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## Schritt 1: Erstellen einer Vektorebene
-Zuerst müssen wir eine Vektorebene erstellen, in der wir unsere Geometrien hinzufügen können. Dies kann mit dem folgenden Codeausschnitt erreicht werden:
+## So erstellen Sie einen Vektorlayer
+Der erste Schritt besteht darin, einen **Vektorlayer** zu **erstellen**, der unsere Geometrie enthält. Dieser Layer wird als Shapefile gespeichert, sodass wir ihn später mit anderen Präzisionseinstellungen wieder öffnen können.
 ```csharp
 string path = "Your Document Directory" + "LimitPrecisionWhenReadingGeometries_out.shp";
 using (VectorLayer layer = VectorLayer.Create(path, Drivers.Shapefile))
@@ -47,15 +58,17 @@ using (VectorLayer layer = VectorLayer.Create(path, Drivers.Shapefile))
 	layer.Add(feature);
 }
 ```
-## Schritt 2: Präzisionsoptionen festlegen
-Als nächstes müssen wir Optionen zum Lesen von Geometrien definieren und das gewünschte Präzisionsmodell angeben. Wir können dies wie folgt tun:
+
+## Präzisionsoptionen festlegen
+Als Nächstes definieren wir Optionen zum Lesen von Geometrien und geben das gewünschte Präzisionsmodell an. Wir können mit exakter Präzision beginnen:
 ```csharp
 var options = new ShapefileOptions();
-// Daten so lesen, wie sie sind.
+// read data as‑is.
 options.XYPrecisionModel = PrecisionModel.Exact;
 ```
-## Schritt 3: Geometrien mit exakter Präzision lesen
-Öffnen wir nun die Vektorebene mit den angegebenen Optionen, um Geometrien mit exakter Präzision zu lesen:
+
+## Geometrien mit exakter Präzision lesen
+Jetzt öffnen wir den Vektorlayer mit den angegebenen Optionen, um Geometrien mit exakter Präzision zu lesen:
 ```csharp
 using (VectorLayer layer = VectorLayer.Open(path, Drivers.Shapefile, options))
 {
@@ -64,8 +77,9 @@ using (VectorLayer layer = VectorLayer.Open(path, Drivers.Shapefile, options))
 	Console.WriteLine("{0}, {1}", point.X, point.Y);
 }
 ```
-## Schritt 4: Präzision kürzen
-Wenn wir schließlich die Genauigkeit auf eine bestimmte Anzahl von Dezimalstellen kürzen möchten, können wir das Präzisionsmodell entsprechend anpassen:
+
+## Präzision kürzen
+Wenn wir die Präzision auf eine bestimmte Anzahl von Dezimalstellen kürzen möchten, passen wir das Präzisionsmodell entsprechend an:
 ```csharp
 options.XYPrecisionModel = PrecisionModel.Rounding(2);
 using (VectorLayer layer = VectorLayer.Open(path, Drivers.Shapefile, options))
@@ -76,19 +90,42 @@ using (VectorLayer layer = VectorLayer.Open(path, Drivers.Shapefile, options))
 }
 ```
 
-## Abschluss
-Zusammenfassend lässt sich sagen, dass die Verwaltung der Präzision beim Lesen von Geometrien ein entscheidender Aspekt der Manipulation von Geodaten ist. Aspose.GIS für .NET bietet robuste Funktionalitäten, um dies effizient zu erreichen. Indem Sie die in diesem Tutorial beschriebenen Schritte befolgen, können Sie die Präzision nahtlos entsprechend Ihren Anforderungen einschränken und so eine optimale Datenverarbeitung in Ihren Anwendungen gewährleisten.
-## FAQs
-### Kann ich Aspose.GIS für .NET mit anderen .NET-Frameworks wie .NET Core oder .NET Standard verwenden?
-Ja, Aspose.GIS für .NET ist mit verschiedenen .NET-Frameworks kompatibel, einschließlich .NET Core und .NET Standard.
-### Gibt es eine Testversion für Aspose.GIS für .NET?
- Ja, Sie können eine kostenlose Testversion von erhalten[Veröffentlichungsseite](https://releases.aspose.com/).
-### Wo finde ich eine umfassende Dokumentation für Aspose.GIS für .NET?
- Sie können sich auf die beziehen[Dokumentation](https://reference.aspose.com/gis/net/) Ausführliche Informationen und Beispiele finden Sie hier.
+## Häufige Probleme und Lösungen
+- **Unerwartete Koordinatenwerte** – Stellen Sie sicher, dass Sie `options.XYPrecisionModel` *vor* dem Öffnen des Layers setzen. Eine Änderung danach hat keine Wirkung.
+- **Datei nicht gefunden** – Prüfen Sie, ob die Variable `path` auf ein gültiges Verzeichnis zeigt und die Shapefile im vorherigen Schritt erfolgreich erstellt wurde.
+- **Falscher Geometrietyp** – Das Beispiel verwendet einen `Point`. Für andere Geometrietypen (z. B. `LineString`) muss das Casting dem tatsächlichen Typ entsprechen.
+
+## Fazit
+Zusammenfassend ist das Management der Präzision beim Lesen von Geometrien ein entscheidender Aspekt der Geodaten‑Manipulation. Aspose.GIS für .NET bietet robuste Funktionen, um dies effizient zu erreichen. Durch Befolgen der in diesem Tutorial beschriebenen Schritte können Sie nahtlos **Vektorlayer**‑Objekte erstellen und die Präzision nach Ihren Anforderungen begrenzen, wodurch eine optimale Datenverarbeitung in Ihren Anwendungen gewährleistet wird.
+
+## FAQ's
+### Kann ich Aspose.GIS für .NET mit anderen .NET‑Frameworks wie .NET Core oder .NET Standard verwenden?
+Ja, Aspose.GIS für .NET ist mit verschiedenen .NET‑Frameworks kompatibel, einschließlich .NET Core und .NET Standard.  
+### Gibt es eine Testversion von Aspose.GIS für .NET?
+Ja, Sie können eine kostenlose Testversion von der [Release‑Seite](https://releases.aspose.com/) erhalten.  
+### Wo finde ich umfassende Dokumentation für Aspose.GIS für .NET?
+Sie können die [Dokumentation](https://reference.aspose.com/gis/net/) für detaillierte Informationen und Beispiele einsehen.  
 ### Wie kann ich temporäre Lizenzen für Aspose.GIS für .NET erhalten?
- Temporäre Lizenzen können bei erworben werden[Kaufseite](https://purchase.aspose.com/temporary-license/) für Aspose.GIS.
-### Wo kann ich Hilfe oder Support für Aspose.GIS für .NET suchen?
- Sie können das Aspose.GIS besuchen[Forum](https://forum.aspose.com/c/gis/33) für Fragen, Diskussionen oder Supportbedarf.
+Temporäre Lizenzen können Sie über die [Kauf‑Seite](https://purchase.aspose.com/temporary-license/) für Aspose.GIS erwerben.  
+### Wo kann ich Unterstützung oder Support für Aspose.GIS für .NET erhalten?
+Besuchen Sie das Aspose.GIS [Forum](https://forum.aspose.com/c/gis/33) für Fragen, Diskussionen oder Support‑Anfragen.
+
+## Häufig gestellte Fragen
+**F: Beeinflusst das Begrenzen der Präzision die ursprüngliche Shapefile?**  
+A: Nein. Die Präzision wird nur beim Lesen der Geometrie angewendet; die Quelldatei bleibt unverändert.  
+
+**F: Kann ich für X‑ und Y‑Koordinaten unterschiedliche Präzisionsmodelle verwenden?**  
+A: Aspose.GIS wendet derzeit dasselbe `XYPrecisionModel` auf beide Achsen an.  
+
+**F: Ist es möglich, eine benutzerdefinierte Rundungsfunktion festzulegen?**  
+A: Die API unterstützt nur die eingebaute Methode `PrecisionModel.Rounding(int)`. Für benutzerdefinierte Logik müssten Sie die Koordinaten nach dem Lesen nachbearbeiten.
+
+---
+
+**Zuletzt aktualisiert:** 2025-12-20  
+**Getestet mit:** Aspose.GIS 24.11 für .NET  
+**Autor:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
