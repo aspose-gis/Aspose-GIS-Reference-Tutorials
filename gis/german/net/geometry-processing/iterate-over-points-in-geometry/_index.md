@@ -118,15 +118,15 @@ Die Schleife gibt die X‑ (Länge) und Y‑ (Breite) Werte jedes Punktes in der
 
 **A:** Dedizierter technischer Support wird über die Aspose‑Foren und das Ticketsystem bereitgestellt, sodass Sie schnelle Hilfe erhalten.
 
+---
+
+**Zuletzt aktualisiert:** 2025-12-20  
+**Getestet mit:** Aspose.GIS für .NET 24.5 (aktuell zum Zeitpunkt des Schreibens)  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Zuletzt aktualisiert:** 2025-12-20  
-**Getestet mit:** Aspose.GIS für .NET 24.5 (aktuell zum Zeitpunkt des Schreibens)  
-**Autor:** Aspose

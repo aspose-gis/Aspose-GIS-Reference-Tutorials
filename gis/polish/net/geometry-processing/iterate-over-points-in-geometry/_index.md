@@ -117,13 +117,6 @@ The loop prints each point’s X (longitude) and Y (latitude) values to the cons
 
 **Odp:** Dedykowane wsparcie techniczne jest dostępne poprzez fora Aspose oraz system zgłoszeń, zapewniając szybkie wsparcie.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Last Updated:** 2025-12-20  
@@ -131,3 +124,10 @@ The loop prints each point’s X (longitude) and Y (latitude) values to the cons
 **Author:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

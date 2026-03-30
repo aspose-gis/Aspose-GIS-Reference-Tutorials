@@ -15,36 +15,36 @@ weight: 11
 
 # Cara Menambahkan Titik dan Mengiterasi Geometri
 
-## Introduction
+## Perkenalan
 
 Jika Anda bekerja dengan data GIS dalam lingkungan .NET, salah satu hal pertama yang perlu Anda ketahui adalah **cara menambahkan titik** ke sebuah geometri dan kemudian bekerja dengan titik‑titik tersebut. Aspose.GIS untuk .NET menyediakan API berorientasi‑objek yang bersih yang membuat proses ini menjadi sederhana. Dalam tutorial ini kami akan membahas cara membuat `LineString`, menambahkan titik ke dalamnya, dan mengiterasi titik‑titik tersebut sehingga Anda dapat mengekstrak koordinat atau melakukan analisis lebih lanjut.
 
-## Quick Answers
+## Jawaban Cepat
 - **Apa kelas utama untuk koleksi titik?** `LineString`
-- **Bagaimana cara menambahkan sebuah titik?** Gunakan `AddPoint(longitude, latitude)`
+- **Bagaimana cara menambahkan sebuah titik?** Gunakan `AddPoint(bujur, lintang)`
 - **Apakah Anda dapat mengiterasi dengan loop foreach?** Ya, `LineString` mengimplementasikan `IEnumerable<IPoint>`
-- **Prasyarat?** .NET 6+ (atau .NET Core 3.1/Framework 4.6+) dan pustaka Aspose.GIS untuk .NET
+- **Prasyarat?** .NET6+ (atau .NETCore3.1/Framework4.6+) dan pustaka Aspose.GIS untuk .NET
 - **Contoh penggunaan umum?** Membangun rute, memvisualisasikan jejak, atau memproses data untuk analisis spasial
 
-## What is “adding points” in GIS?
+## Apa yang dimaksud dengan “menambahkan poin” di GIS?
 
-Menambahkan titik berarti menyisipkan pasangan koordinat individu (longitude, latitude) ke dalam sebuah kontainer geometris seperti `LineString`, `Polygon`, atau `MultiPoint`. Setiap titik menjadi sebuah vertex yang mendefinisikan bentuk atau jalur yang Anda modelkan.
+Menambahkan titik berarti menyisipkan pasangan koordinat individu (bujur, lintang) ke dalam sebuah wadah geometri seperti `LineString`, `Polygon`, atau `MultiPoint`. Setiap titik menjadi sebuah titik yang mendefinisikan bentuk atau jalur yang Anda modelkan.
 
-## Why add points with Aspose.GIS?
+## Mengapa menambahkan poin dengan Aspose.GIS?
 
-- **Strong type safety** – geometry objects are strongly typed, reducing runtime errors.  
-- **Cross‑platform** – works on .NET Framework, .NET Core, and .NET 5/6+.  
-- **Rich API** – built‑in iteration, spatial operations, and format support (Shapefile, GeoJSON, etc.).
+- **Keamanan tipe yang kuat** – objek geometri memiliki tipe yang kuat, mengurangi kesalahan saat runtime.
+- **Lintas platform** – berfungsi pada .NET Framework, .NET Core, dan .NET5/6+.
+- **API yang kaya** – iterasi bawaan, operasi spasial, dan dukungan format (Shapefile, GeoJSON, dll.).
 
-## Prerequisites
+## Prasyarat
 
-- Visual Studio 2022 (atau IDE C# apa pun)  
-- Aspose.GIS for .NET NuGet package installed  
-- Basic understanding of C# syntax  
+- Visual Studio 2022 (atau IDE C# apa pun)
+- Paket NuGet Aspose.GIS for .NET terinstal
+- Pemahaman dasar tentang sintaks C#
 
-## Import Namespaces
+## Impor Namespace
 
-Mulailah dengan mengimpor namespace yang diperlukan untuk mengakses fungsionalitas Aspose.GIS dalam aplikasi .NET Anda:
+Mulailah dengan mengukuhkan namespace yang diperlukan untuk mengakses fungsionalitas Aspose.GIS dalam aplikasi .NET Anda:
 
 ```csharp
 using Aspose.Gis.Geometries;
@@ -55,11 +55,10 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## How to Add Points to a Geometry?
 
-### Step 1: Create a `LineString` object  
+## Cara Menambahkan Titik ke Geometri?
 
-Langkah 1: Buat objek `LineString`  
+### Langkah 1: Buat objek `LineString`  
 
 Sebuah `LineString` mewakili urutan titik yang terhubung (sebuah polyline). Pertama, buat instance objek tersebut:
 
@@ -67,9 +66,7 @@ Sebuah `LineString` mewakili urutan titik yang terhubung (sebuah polyline). Pert
 LineString line = new LineString();
 ```
 
-### Step 2: Add points to the `LineString`  
-
-Langkah 2: Tambahkan titik ke `LineString`  
+### Langkah 2: Tambahkan titik ke `LineString`  
 
 Gunakan metode `AddPoint` untuk menyisipkan setiap pasangan koordinat. Inilah inti dari **cara menambahkan titik** ke geometri Anda:
 
@@ -80,9 +77,7 @@ line.AddPoint(-98.65, 12.65);
 
 Anda dapat memanggil `AddPoint` sebanyak yang diperlukan; setiap pemanggilan menambahkan sebuah vertex baru ke garis.
 
-### Step 3: Iterate over the points  
-
-Langkah 3: Iterasi titik‑titik  
+### Langkah 3: Iterasi titik‑titik  
 
 Setelah titik‑titik ditambahkan, Anda dapat mengulanginya dengan pernyataan `foreach`. `LineString` mengimplementasikan `IEnumerable<IPoint>`, sehingga iterasi menjadi sederhana dan intuitif:
 
@@ -95,33 +90,41 @@ foreach (IPoint point in line)
 
 Loop ini mencetak nilai X (longitude) dan Y (latitude) setiap titik ke konsol, memungkinkan Anda memverifikasi bahwa titik‑titik telah ditambahkan dengan benar.
 
-## Common Use Cases
+## Kasus Penggunaan Umum
 
-- **Route planning** – Build a path from GPS logs and then analyze distances between waypoints.  
-- **Data validation** – Iterate over points to ensure they fall within expected bounds (e.g., within a country’s borders).  
-- **Visualization** – Export the `LineString` to GeoJSON or Shapefile for use in mapping tools.
+- **Perencanaan rute** – Membangun jalur dari log GPS dan kemudian menganalisis jarak antar titik arah.
 
-## Frequently Asked Questions
+- **Validasi data** – Melakukan iterasi pada titik-titik untuk memastikan titik-titik tersebut berada dalam batas yang diharapkan (misalnya, di dalam perbatasan suatu negara).
 
-### Q1: Can Aspose.GIS for .NET handle other geometric shapes besides `LineString`?
+- **Visualisasi** – Mengekspor `LineString` ke GeoJSON atau Shapefile untuk digunakan dalam alat pemetaan.
 
-**A:** Yes, Aspose.GIS supports `Point`, `Polygon`, `MultiLineString`, `MultiPolygon`, and many more geometry types.
+## Pertanyaan yang Sering Diajukan
 
-### Q2: Is Aspose.GIS suitable for both commercial and personal projects?
+### T1: Dapatkah Aspose.GIS untuk .NET menangani bentuk geometris lain selain `LineString`?
 
-**A:** Absolutely. Licensing options cover commercial, personal, and educational use cases.
+**J:** Ya, Aspose.GIS mendukung `Point`, `Polygon`, `MultiLineString`, `MultiPolygon`, dan banyak lagi tipe geometri lainnya.
 
-### Q3: Does Aspose.GIS for .NET offer comprehensive documentation for beginners?
+### T2: Apakah Aspose.GIS cocok untuk proyek komersial dan pribadi?
 
-**A:** Yes, the product includes extensive docs, API references, and dozens of code examples to help you get started quickly.
+**J:** Tentu saja. Opsi lisensi mencakup kasus penggunaan komersial, pribadi, dan pendidikan.
 
-### Q4: Can I extend the functionality of Aspose.GIS for .NET through custom development?
+### T3: Apakah Aspose.GIS for .NET menawarkan dokumentasi komprehensif untuk pemula?
 
-**A:** You can build extension methods or wrap Aspose.GIS classes to fit specific workflows, giving you full control over custom geospatial solutions.
+**J:** Ya, produk ini mencakup dokumentasi yang lengkap, referensi API, dan puluhan contoh kode untuk membantu Anda memulai dengan cepat.
 
-### Q5: Is technical support available for Aspose.GIS users?
+### T4: Dapatkah saya memperluas fungsionalitas Aspose.GIS for .NET melalui pengembangan kustom?
 
-**A:** Dedicated technical support is provided through the Aspose forums and ticketing system, ensuring you receive prompt assistance.
+**J:** Anda dapat membangun metode ekstensi atau membungkus kelas Aspose.GIS agar sesuai dengan alur kerja tertentu, memberi Anda kendali penuh atas solusi geospasial kustom.
+
+### T5: Apakah dukungan teknis tersedia untuk pengguna Aspose.GIS?
+
+**J:** Dukungan teknis khusus disediakan melalui forum dan sistem tiket Aspose, memastikan Anda menerima bantuan dengan cepat.
+
+---
+
+**Terakhir Diperbarui:** 2025-12-20  
+**Diuji Dengan:** Aspose.GIS for .NET 24.5 (terbaru pada saat penulisan)  
+**Penulis:** Aspose
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
@@ -129,9 +132,3 @@ Loop ini mencetak nilai X (longitude) dan Y (latitude) setiap titik ke konsol, m
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Terakhir Diperbarui:** 2025-12-20  
-**Diuji Dengan:** Aspose.GIS for .NET 24.5 (terbaru pada saat penulisan)  
-**Penulis:** Aspose

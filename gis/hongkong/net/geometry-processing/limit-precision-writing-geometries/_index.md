@@ -125,15 +125,15 @@ A: 能。Aspose.GIS 設計能處理從快速原型到高吞吐量伺服器應用
 ## 結論
 依照上述步驟，您現在已掌握 **如何在 Aspose.GIS for .NET 中限制寫入幾何圖形的精度**。控制座標四捨五入不僅能讓空間資料保持整潔、具備互操作性，亦能提升儲存效率——這些都是任何以 GIS 為核心的專案所重視的關鍵優勢。
 
+---
+
+**最後更新：** 2025-12-20  
+**測試環境：** Aspose.GIS 24.11 for .NET  
+**作者：** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**最後更新：** 2025-12-20  
-**測試環境：** Aspose.GIS 24.11 for .NET  
-**作者：** Aspose

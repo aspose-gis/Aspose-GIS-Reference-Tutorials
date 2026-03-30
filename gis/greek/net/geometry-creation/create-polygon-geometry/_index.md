@@ -127,19 +127,3 @@ polygon.ExteriorRing = ring;
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
-## Συχνές Ερωτήσεις
-### Είναι το Aspose.GIS για .NET συμβατό με όλες τις εκδόσεις του .NET Framework;
-Ναι, το Aspose.GIS για .NET είναι συμβατό με .NET Framework 4.6 και νεότερες εκδόσεις.
-
-### Μπορώ να χρησιμοποιήσω το Aspose.GIS για .NET για να εκτελέσω χωρική ανάλυση;
-Ναι, το Aspose.GIS για .NET παρέχει ένα ευρύ φάσμα λειτουργιών για την εκτέλεση εργασιών χωρικής ανάλυσης.
-
-### Υποστηρίζει το Aspose.GIS για .NET διαφορετικές μορφές αρχείων GIS;
-Ναι, το Aspose.GIS για .NET υποστηρίζει διάφορες μορφές αρχείων GIS όπως Shapefile, GeoJSON και KML.
-
-### Υπάρχει δωρεάν δοκιμή διαθέσιμη για το Aspose.GIS για .NET;
-Ναι, μπορείτε να κατεβάσετε μια δωρεάν δοκιμή του Aspose.GIS για .NET από [εδώ](https://releases.aspose.com/).
-
-### Πού μπορώ να λάβω υποστήριξη για το Aspose.GIS για .NET;
-Μπορείτε να λάβετε υποστήριξη για το Aspose.GIS για .NET από το [Φόρουμ Aspose.GIS](https://forum.aspose.com/c/gis/33).

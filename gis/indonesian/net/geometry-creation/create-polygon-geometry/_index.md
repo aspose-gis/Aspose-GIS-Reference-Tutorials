@@ -131,19 +131,3 @@ Dalam panduan ini kami membahas **cara membuat poligon** langkah demi langkah, m
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
-## FAQ
-### Apakah Aspose.GIS untuk .NET kompatibel dengan semua versi .NET Framework?  
-Ya, Aspose.GIS untuk .NET kompatibel dengan .NET Framework 4.6 dan versi yang lebih tinggi.
-
-### Dapatkah saya menggunakan Aspose.GIS untuk .NET untuk melakukan analisis spasial?  
-Ya, Aspose.GIS untuk .NET menyediakan berbagai fungsionalitas untuk melakukan tugas analisis spasial.
-
-### Apakah Aspose.GIS untuk .NET mendukung format file GIS yang berbeda?  
-Ya, Aspose.GIS untuk .NET mendukung berbagai format file GIS seperti Shapefile, GeoJSON, dan KML.
-
-### Apakah ada versi percobaan gratis untuk Aspose.GIS untuk .NET?  
-Ya, Anda dapat mengunduh versi percobaan gratis Aspose.GIS untuk .NET dari [here](https://releases.aspose.com/).
-
-### Di mana saya dapat mendapatkan dukungan untuk Aspose.GIS untuk .NET?  
-Anda dapat mendapatkan dukungan untuk Aspose.GIS untuk .NET dari [Aspose.GIS forum](https://forum.aspose.com/c/gis/33).

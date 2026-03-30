@@ -117,13 +117,6 @@ O loop imprime os valores X (longitude) e Y (latitude) de cada ponto no console,
 
 **A:** Suporte técnico dedicado é fornecido através dos fóruns da Aspose e do sistema de tickets, garantindo assistência rápida.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Last Updated:** 2025-12-20  
@@ -131,3 +124,10 @@ O loop imprime os valores X (longitude) e Y (latitude) de cada ponto no console,
 **Author:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -127,15 +127,15 @@ O: Tak, Aspose.GIS został zaprojektowany tak, aby obsługiwać wszystko — od 
 ## Zakończenie
 Postępując zgodnie z powyższymi krokami, teraz wiesz **jak ograniczyć precyzję** przy zapisywaniu geometrii przy użyciu Aspose.GIS dla .NET. Kontrolowanie zaokrąglania współrzędnych pomaga utrzymać dane przestrzenne w czystości, zapewnia interoperacyjność i efektywność przechowywania — kluczowe korzyści dla każdego projektu skoncentrowanego na GIS.
 
+---
+
+**Ostatnia aktualizacja:** 2025-12-20  
+**Testowano z:** Aspose.GIS 24.11 dla .NET  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Ostatnia aktualizacja:** 2025-12-20  
-**Testowano z:** Aspose.GIS 24.11 dla .NET  
-**Autor:** Aspose

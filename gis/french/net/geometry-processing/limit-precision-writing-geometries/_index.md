@@ -127,15 +127,15 @@ R : Oui, Aspose.GIS est conçu pour gérer tout, des prototypes rapides aux ap
 ## Conclusion
 En suivant les étapes ci‑dessus, vous savez maintenant **comment limiter la précision** lors de l’écriture de géométries avec Aspose.GIS pour .NET. Contrôler l’arrondi des coordonnées permet de garder vos données spatiales propres, interopérables et économes en stockage — des avantages clés pour tout projet centré sur le GIS.
 
+---
+
+**Dernière mise à jour :** 2025-12-20  
+**Testé avec :** Aspose.GIS 24.11 pour .NET  
+**Auteur :** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Dernière mise à jour :** 2025-12-20  
-**Testé avec :** Aspose.GIS 24.11 pour .NET  
-**Auteur :** Aspose

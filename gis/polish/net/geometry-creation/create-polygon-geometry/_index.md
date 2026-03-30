@@ -131,15 +131,3 @@ W tym przewodniku omówiliśmy **jak utworzyć geometrię wielokąta** krok po k
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
-## FAQ's
-### Czy Aspose.GIS dla .NET jest kompatybilny ze wszystkimi wersjami .NET Framework?
-Tak, Aspose.GIS dla .NET jest kompatybilny z .NET Framework 4.6 i wyższymi wersjami.
-### Czy mogę używać Aspose.GIS dla .NET do analizy przestrzennej?
-Tak, Aspose.GIS dla .NET zapewnia szeroki zakres funkcjonalności do wykonywania zadań analizy przestrzennej.
-### Czy Aspose.GIS dla .NET obsługuje różne formaty plików GIS?
-Tak, Aspose.GIS dla .NET obsługuje różne formaty plików GIS, takie jak Shapefile, GeoJSON i KML.
-### Czy dostępna jest darmowa wersja próbna Aspose.GIS dla .NET?
-Tak, możesz pobrać darmową wersję próbną Aspose.GIS dla .NET [tutaj](https://releases.aspose.com/).
-### Gdzie mogę uzyskać wsparcie dla Aspose.GIS dla .NET?
-Wsparcie dla Aspose.GIS dla .NET możesz uzyskać na [forum Aspose.GIS](https://forum.aspose.com/c/gis/33).

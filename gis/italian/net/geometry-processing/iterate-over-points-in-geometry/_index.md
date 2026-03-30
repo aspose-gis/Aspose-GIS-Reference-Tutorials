@@ -117,13 +117,6 @@ Il ciclo stampa i valori X (longitudine) e Y (latitudine) di ogni punto sulla co
 
 **A:** Un supporto tecnico dedicato è fornito tramite i forum Aspose e il sistema di ticket, garantendo assistenza rapida.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Last Updated:** 2025-12-20  
@@ -131,3 +124,10 @@ Il ciclo stampa i valori X (longitudine) e Y (latitudine) di ogni punto sulla co
 **Author:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

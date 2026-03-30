@@ -131,15 +131,3 @@ In deze gids hebben we **hoe je polygon**‑geometrie stap voor stap maakt behan
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
-## FAQ's
-### Is Aspose.GIS voor .NET compatibel met alle versies van .NET Framework?
-Ja, Aspose.GIS voor .NET is compatibel met .NET Framework 4.6 en hogere versies.
-### Kan ik Aspose.GIS voor .NET gebruiken om ruimtelijke analyses uit te voeren?
-Ja, Aspose.GIS voor .NET biedt een breed scala aan functionaliteiten voor het uitvoeren van ruimtelijke analyse‑taken.
-### Ondersteunt Aspose.GIS voor .NET verschillende GIS‑bestandsformaten?
-Ja, Aspose.GIS voor .NET ondersteunt diverse GIS‑bestandsformaten zoals Shapefile, GeoJSON en KML.
-### Is er een gratis proefversie beschikbaar voor Aspose.GIS voor .NET?
-Ja, je kunt een gratis proefversie van Aspose.GIS voor .NET downloaden van [hier](https://releases.aspose.com/).
-### Waar kan ik ondersteuning krijgen voor Aspose.GIS voor .NET?
-Je kunt ondersteuning krijgen voor Aspose.GIS voor .NET via het [Aspose.GIS‑forum](https://forum.aspose.com/c/gis/33).

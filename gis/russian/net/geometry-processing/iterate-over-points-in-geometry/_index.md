@@ -117,13 +117,6 @@ foreach (IPoint point in line)
 
 **A:** Специальная техническая поддержка предоставляется через форумы Aspose и систему тикетов, гарантируя быстрый отклик на ваши вопросы.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Последнее обновление:** 2025-12-20  
@@ -131,3 +124,10 @@ foreach (IPoint point in line)
 **Автор:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

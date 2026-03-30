@@ -117,13 +117,6 @@ foreach (IPoint point in line)
 
 **ج:** يتوفر دعم فني مخصص منتديات Aspose ونظام التذاكر، لضمان حصولك على المساعدة بسرعة.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **آخر تحديث:** 2025-12-20  
@@ -131,3 +124,10 @@ foreach (IPoint point in line)
 **المؤلف:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

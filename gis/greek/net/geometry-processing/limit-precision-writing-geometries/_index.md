@@ -127,15 +127,15 @@ using (VectorLayer layer = VectorLayer.Open(path, Drivers.GeoJson))
 ## Συμπέρασμα
 Ακολουθώντας τα παραπάνω βήματα, γνωρίζετε πλέον **πώς να περιορίσετε την ακρίβεια** κατά τη γραφή γεωμετριών με το Aspose.GIS για .NET. Ο έλεγχος της στρογγυλοποίησης των συντεταγμένων βοηθά να διατηρείτε τα χωρικά σας δεδομένα καθαρά, διαλειτουργικά και αποδοτικά σε αποθήκευση — βασικά οφέλη για κάθε έργο με κεντρικό GIS.
 
+---
+
+**Τελευταία ενημέρωση:** 2025-12-20  
+**Δοκιμή με:** Aspose.GIS 24.11 for .NET  
+**Συγγραφέας:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Τελευταία ενημέρωση:** 2025-12-20  
-**Δοκιμή με:** Aspose.GIS 24.11 for .NET  
-**Συγγραφέας:** Aspose

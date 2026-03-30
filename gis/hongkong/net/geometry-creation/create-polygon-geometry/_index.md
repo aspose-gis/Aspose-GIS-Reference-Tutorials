@@ -130,20 +130,3 @@ A: 目前函式庫主要聚焦於 2‑D 幾何；若需 3‑D，需自行處理 
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
-## 常見問題
-
-### Aspose.GIS for .NET 是否相容所有 .NET Framework 版本？
-是，Aspose.GIS for .NET 相容於 .NET Framework 4.6 以及更高版本。
-
-### 我可以使用 Aspose.GIS for .NET 進行空間分析嗎？
-可以，Aspose.GIS for .NET 提供廣泛的功能，支援各種空間分析任務。
-
-### Aspose.GIS for .NET 支援不同的 GIS 檔案格式嗎？
-是，Aspose.GIS for .NET 支援多種 GIS 檔案格式，例如 Shapefile、GeoJSON 與 KML。
-
-### 是否有免費試用版可供下載？
-有，您可從 [here](https://releases.aspose.com/) 下載 Aspose.GIS for .NET 的免費試用版。
-
-### 我可以從哪裡取得 Aspose.GIS for .NET 的支援？
-您可以在 [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) 取得支援。

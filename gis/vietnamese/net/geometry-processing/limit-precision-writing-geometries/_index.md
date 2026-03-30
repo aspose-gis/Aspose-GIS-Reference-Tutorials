@@ -18,7 +18,7 @@ weight: 13
 
 Nếu bạn đang tự hỏi **cách giới hạn độ chính xác** khi ghi các đối tượng hình học trong một ứng dụng GIS .NET, Aspose.GIS cho .NET cung cấp một cách đơn giản, hiệu suất cao để kiểm soát việc làm tròn tọa độ. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn toàn bộ quy trình — từ thiết lập môi trường đến xác minh rằng đầu ra tuân theo các quy tắc độ chính xác mà bạn định nghĩa.
 
-## Quick Answers
+## Câu trả lời nhanh
 - **“Giới hạn độ chính xác” có nghĩa là gì?** Nó làm tròn các giá trị tọa độ tới một số chữ số thập phân đã định khi ghi tệp không gian.  
 - **Định dạng nào được sử dụng trong ví dụ?** GeoJSON, nhưng cùng các tùy chọn này cũng áp dụng cho các định dạng được hỗ trợ khác.  
 - **Tôi có cần giấy phép để thử không?** Bản dùng thử miễn phí hoạt động cho việc phát triển và thử nghiệm; giấy phép thương mại cần thiết cho môi trường sản xuất.  
@@ -127,15 +127,15 @@ A: Có, Aspose.GIS được thiết kế để xử lý mọi thứ từ các ng
 ## Kết Luận
 Bằng cách thực hiện các bước trên, bạn hiện đã biết **cách giới hạn độ chính xác** khi ghi các đối tượng hình học với Aspose.GIS cho .NET. Kiểm soát việc làm tròn tọa độ giúp dữ liệu không gian của bạn sạch sẽ, tương thích và tiết kiệm dung lượng lưu trữ — những lợi ích then chốt cho bất kỳ dự án nào tập trung vào GIS.
 
+---
+
+**Last Updated:** 2025-12-20  
+**Tested With:** Aspose.GIS 24.11 for .NET  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-12-20  
-**Tested With:** Aspose.GIS 24.11 for .NET  
-**Author:** Aspose

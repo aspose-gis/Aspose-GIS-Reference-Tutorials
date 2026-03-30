@@ -127,15 +127,15 @@ A: Igen, az Aspose.GIS úgy van tervezve, hogy mind a gyors prototípusokat, min
 ## Összegzés
 A fenti lépések követésével most már tudod, **hogyan korlátozhatod a pontosságot** geometriaíráskor az Aspose.GIS for .NET‑el. A koordináták kerekítésének szabályozása segít a térbeli adatok tisztaságának, interoperabilitásának és tárolási hatékonyságának megőrzésében – kulcsfontosságú előny minden GIS‑központú projekt számára.
 
+---
+
+**Utoljára frissítve:** 2025-12-20  
+**Tesztelt verzió:** Aspose.GIS 24.11 for .NET  
+**Szerző:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Utoljára frissítve:** 2025-12-20  
-**Tesztelt verzió:** Aspose.GIS 24.11 for .NET  
-**Szerző:** Aspose

@@ -125,15 +125,15 @@ using (VectorLayer layer = VectorLayer.Open(path, Drivers.GeoJson))
 ## 结论
 按照上述步骤操作后，您已经掌握了在 Aspose.GIS for .NET 中**如何限制写入几何体的精度**。控制坐标四舍五入有助于保持空间数据的整洁、可互操作性以及存储效率——这些都是任何以 GIS 为核心的项目的关键优势。
 
+---
+
+**最后更新：** 2025-12-20  
+**测试环境：** Aspose.GIS 24.11 for .NET  
+**作者：** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**最后更新：** 2025-12-20  
-**测试环境：** Aspose.GIS 24.11 for .NET  
-**作者：** Aspose

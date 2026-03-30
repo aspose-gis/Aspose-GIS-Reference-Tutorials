@@ -127,15 +127,15 @@ A: Ja, Aspose.GIS ist darauf ausgelegt, alles von schnellen Prototypen bis hin z
 ## Fazit
 Wenn Sie die obigen Schritte befolgt haben, wissen Sie jetzt **wie man die Präzision** beim Schreiben von Geometrien mit Aspose.GIS für .NET begrenzt. Die Steuerung der Koordinatenrundung hilft, Ihre räumlichen Daten sauber, interoperabel und speichereffizient zu halten – zentrale Vorteile für jedes GIS‑zentrierte Projekt.
 
+---
+
+**Zuletzt aktualisiert:** 2025-12-20  
+**Getestet mit:** Aspose.GIS 24.11 for .NET  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Zuletzt aktualisiert:** 2025-12-20  
-**Getestet mit:** Aspose.GIS 24.11 for .NET  
-**Autor:** Aspose

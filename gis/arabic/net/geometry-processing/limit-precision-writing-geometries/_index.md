@@ -127,15 +127,15 @@ using (VectorLayer layer = VectorLayer.Open(path, Drivers.GeoJson))
 ## الخلاصة
 باتباع الخطوات أعلاه، أصبحت الآن تعرف **كيفية تحديد الدقة** عند كتابة الأشكال الهندسية باستخدام Aspose.GIS for .NET. يساعد التحكم في تقريب الإحداثيات على الحفاظ على بياناتك المكانية نظيفة، قابلة للتبادل، وفعّالة في التخزين—وهي فوائد أساسية لأي مشروع يركز على GIS.
 
+---
+
+**آخر تحديث:** 2025-12-20  
+**تم الاختبار باستخدام:** Aspose.GIS 24.11 for .NET  
+**المؤلف:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**آخر تحديث:** 2025-12-20  
-**تم الاختبار باستخدام:** Aspose.GIS 24.11 for .NET  
-**المؤلف:** Aspose

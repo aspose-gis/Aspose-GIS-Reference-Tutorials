@@ -125,15 +125,15 @@ A: 예, Aspose.GIS는 빠른 프로토타입부터 고처리량 서버 애플리
 ## 결론
 위 단계들을 따라 하면 Aspose.GIS for .NET으로 지오메트리를 쓸 때 **정밀도를 제한하는 방법**을 알게 됩니다. 좌표 반올림을 제어하면 공간 데이터를 깔끔하고 상호 운용 가능하며 저장 효율적으로 유지할 수 있어, GIS 중심 프로젝트에 필수적인 장점을 제공합니다.
 
+---
+
+**마지막 업데이트:** 2025-12-20  
+**테스트 환경:** Aspose.GIS 24.11 for .NET  
+**작성자:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**마지막 업데이트:** 2025-12-20  
-**테스트 환경:** Aspose.GIS 24.11 for .NET  
-**작성자:** Aspose

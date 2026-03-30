@@ -125,15 +125,15 @@ A: Yes, Aspose.GIS is designed to handle everything from quick prototypes to hig
 ## Conclusion
 By following the steps above, you now know **how to limit precision** when writing geometries with Aspose.GIS for .NET. Controlling coordinate rounding helps keep your spatial data clean, interoperable, and storage‑efficient—key benefits for any GIS‑centric project.
 
+---
+
+**Last Updated:** 2025-12-20  
+**Tested With:** Aspose.GIS 24.11 for .NET  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-12-20  
-**Tested With:** Aspose.GIS 24.11 for .NET  
-**Author:** Aspose

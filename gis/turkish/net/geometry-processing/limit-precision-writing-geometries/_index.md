@@ -127,15 +127,15 @@ C: Evet, Aspose.GIS hızlı prototiplerden yüksek verimli sunucu uygulamaların
 ## Sonuç
 Yukarıdaki adımları izleyerek, Aspose.GIS for .NET ile geometrileri yazarken **hassasiyeti nasıl sınırlayacağınızı** artık biliyorsunuz. Koordinat yuvarlamasını kontrol etmek, mekânsal verilerinizi temiz, birlikte çalışabilir ve depolama‑verimli tutmanıza yardımcı olur—her GIS‑odaklı proje için temel faydalar sağlar.
 
+---
+
+**Son Güncelleme:** 2025-12-20  
+**Test Edilen:** Aspose.GIS 24.11 for .NET  
+**Yazar:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Son Güncelleme:** 2025-12-20  
-**Test Edilen:** Aspose.GIS 24.11 for .NET  
-**Yazar:** Aspose

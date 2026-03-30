@@ -127,15 +127,15 @@ using (VectorLayer layer = VectorLayer.Open(path, Drivers.GeoJson))
 ## Conclusie
 Door de bovenstaande stappen te volgen, weet u nu **hoe u de precisie kunt beperken** bij het schrijven van geometrieën met Aspose.GIS voor .NET. Het beheersen van coördinatenafronding helpt uw ruimtelijke data schoon, interoperabel en opslag‑efficiënt te houden—belangrijke voordelen voor elk GIS‑gericht project.
 
+---
+
+**Laatst bijgewerkt:** 2025-12-20  
+**Getest met:** Aspose.GIS 24.11 for .NET  
+**Auteur:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Laatst bijgewerkt:** 2025-12-20  
-**Getest met:** Aspose.GIS 24.11 for .NET  
-**Auteur:** Aspose

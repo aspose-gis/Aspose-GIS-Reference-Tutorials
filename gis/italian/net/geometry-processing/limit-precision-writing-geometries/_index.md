@@ -127,15 +127,15 @@ R: Sì, Aspose.GIS è progettata per gestire tutto, dai prototipi rapidi alle ap
 ## Conclusione
 Seguendo i passaggi sopra, ora sai **come limitare la precisione** quando scrivi geometrie con Aspose.GIS per .NET. Controllare l'arrotondamento delle coordinate aiuta a mantenere i dati spaziali puliti, interoperabili e efficienti in termini di spazio—benefici chiave per qualsiasi progetto incentrato sul GIS.
 
+---
+
+**Last Updated:** 2025-12-20  
+**Tested With:** Aspose.GIS 24.11 for .NET  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-12-20  
-**Tested With:** Aspose.GIS 24.11 for .NET  
-**Author:** Aspose

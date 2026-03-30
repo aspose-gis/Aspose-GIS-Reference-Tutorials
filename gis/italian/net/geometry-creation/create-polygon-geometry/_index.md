@@ -131,15 +131,3 @@ In questa guida abbiamo coperto **how to create polygon** geometry passo dopo pa
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
-## FAQ's
-### Aspose.GIS per .NET è compatibile con tutte le versioni di .NET Framework?
-Sì, Aspose.GIS per .NET è compatibile con .NET Framework 4.6 e versioni successive.
-### Posso usare Aspose.GIS per .NET per eseguire analisi spaziali?
-Sì, Aspose.GIS per .NET fornisce un’ampia gamma di funzionalità per eseguire attività di analisi spaziale.
-### Aspose.GIS per .NET supporta diversi formati di file GIS?
-Sì, Aspose.GIS per .NET supporta vari formati di file GIS come Shapefile, GeoJSON e KML.
-### È disponibile una versione di prova gratuita per Aspose.GIS per .NET?
-Sì, puoi scaricare una prova gratuita di Aspose.GIS per .NET da [here](https://releases.aspose.com/).
-### Dove posso ottenere supporto per Aspose.GIS per .NET?
-Puoi ottenere supporto per Aspose.GIS per .NET dal [Aspose.GIS forum](https://forum.aspose.com/c/gis/33).

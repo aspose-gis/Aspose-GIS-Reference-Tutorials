@@ -131,15 +131,3 @@ V tomto průvodci jsme krok za krokem ukázali **jak vytvořit polygon** geometr
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
-## FAQ's
-### Je Aspose.GIS pro .NET kompatibilní se všemi verzemi .NET Framework?
-Ano, Aspose.GIS pro .NET je kompatibilní s .NET Framework 4.6 a vyššími verzemi.
-### Mohu pomocí Aspose.GIS pro .NET provádět prostorové analýzy?
-Ano, Aspose.GIS pro .NET poskytuje širokou škálu funkcí pro provádění prostorových analytických úloh.
-### Podporuje Aspose.GIS pro .NET různé GIS formáty souborů?
-Ano, Aspose.GIS pro .NET podporuje různé GIS formáty souborů, jako jsou Shapefile, GeoJSON a KML.
-### Je k dispozici bezplatná zkušební verze Aspose.GIS pro .NET?
-Ano, bezplatnou zkušební verzi Aspose.GIS pro .NET si můžete stáhnout [zde](https://releases.aspose.com/).
-### Kde mohu získat podporu pro Aspose.GIS pro .NET?
-Podporu pro Aspose.GIS pro .NET můžete získat na [Aspose.GIS fóru](https://forum.aspose.com/c/gis/33).

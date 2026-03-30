@@ -126,15 +126,15 @@ A: Sí, Aspose.GIS está diseñada para manejar desde prototipos rápidos hasta 
 ## Conclusión
 Al seguir los pasos anteriores, ahora sabes **cómo limitar la precisión** al escribir geometrías con Aspose.GIS para .NET. Controlar el redondeo de coordenadas ayuda a mantener tus datos espaciales limpios, interoperables y eficientes en almacenamiento, beneficios clave para cualquier proyecto centrado en GIS.
 
+---
+
+**Última actualización:** 2025-12-20  
+**Probado con:** Aspose.GIS 24.11 for .NET  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Última actualización:** 2025-12-20  
-**Probado con:** Aspose.GIS 24.11 for .NET  
-**Autor:** Aspose

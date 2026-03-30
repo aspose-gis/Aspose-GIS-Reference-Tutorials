@@ -118,13 +118,6 @@ A ciklus kiírja minden pont X (hosszúság) és Y (szélesség) értékét a ko
 
 **A:** Igen, dedikált technikai támogatás áll rendelkezésre az Aspose fórumokon és a ticket‑rendszeren keresztül, biztosítva a gyors segítséget.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Utoljára frissítve:** 2025-12-20  
@@ -132,3 +125,10 @@ A ciklus kiírja minden pont X (hosszúság) és Y (szélesség) értékét a ko
 **Szerző:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

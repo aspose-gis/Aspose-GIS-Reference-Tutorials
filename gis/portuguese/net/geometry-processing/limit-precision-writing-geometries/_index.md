@@ -126,15 +126,15 @@ A: Sim, o Aspose.GIS foi projetado para lidar com tudo, desde protótipos rápid
 ## Conclusão
 Seguindo os passos acima, você agora sabe **como limitar a precisão** ao gravar geometrias com Aspose.GIS para .NET. Controlar o arredondamento de coordenadas ajuda a manter seus dados espaciais limpos, interoperáveis e eficientes em armazenamento — benefícios essenciais para qualquer projeto centrado em GIS.
 
+---
+
+**Última Atualização:** 2025-12-20  
+**Testado com:** Aspose.GIS 24.11 for .NET  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Última Atualização:** 2025-12-20  
-**Testado com:** Aspose.GIS 24.11 for .NET  
-**Autor:** Aspose

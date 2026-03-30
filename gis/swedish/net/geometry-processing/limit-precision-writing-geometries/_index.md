@@ -127,15 +127,15 @@ A: Ja, Aspose.GIS är designat för att hantera allt från snabba prototyper til
 ## Slutsats
 Genom att följa stegen ovan vet du nu **hur man begränsar precision** när du skriver geometrier med Aspose.GIS för .NET. Att kontrollera koordinatavrundning hjälper till att hålla dina rumsliga data rena, interoperabla och lagringseffektiva—viktiga fördelar för alla GIS‑centrerade projekt.
 
+---
+
+**Senast uppdaterad:** 2025-12-20  
+**Testad med:** Aspose.GIS 24.11 för .NET  
+**Författare:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Senast uppdaterad:** 2025-12-20  
-**Testad med:** Aspose.GIS 24.11 för .NET  
-**Författare:** Aspose

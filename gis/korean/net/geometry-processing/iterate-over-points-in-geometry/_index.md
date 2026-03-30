@@ -117,15 +117,15 @@ foreach (IPoint point in line)
 
 **A:** 전용 기술 지원은 Aspose 포럼 및 티켓 시스템을 통해 제공되어 신속한 도움을 받을 수 있습니다.
 
+---
+
+**마지막 업데이트:** 2025-12-20  
+**테스트 환경:** Aspose.GIS for .NET 24.5 (작성 시 최신 버전)  
+**작성자:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**마지막 업데이트:** 2025-12-20  
-**테스트 환경:** Aspose.GIS for .NET 24.5 (작성 시 최신 버전)  
-**작성자:** Aspose

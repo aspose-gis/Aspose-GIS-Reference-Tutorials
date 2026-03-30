@@ -127,15 +127,15 @@ A: Ano, Aspose.GIS je navržena tak, aby zvládla vše od rychlých prototypů p
 ## Závěr
 Po provedení výše uvedených kroků nyní víte **jak omezit přesnost** při zápisu geometrií pomocí Aspose.GIS pro .NET. Řízení zaokrouhlování souřadnic pomáhá udržet vaše prostorová data čistá, interoperabilní a úsporná v úložišti – klíčové výhody pro jakýkoli GIS‑orientovaný projekt.
 
+---
+
+**Last Updated:** 2025-12-20  
+**Tested With:** Aspose.GIS 24.11 for .NET  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-12-20  
-**Tested With:** Aspose.GIS 24.11 for .NET  
-**Author:** Aspose

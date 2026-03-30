@@ -131,15 +131,3 @@ polygon.ExteriorRing = ring;
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
-## FAQ's
-### Совместим ли Aspose.GIS для .NET со всеми версиями .NET Framework?
-Да, Aspose.GIS для .NET совместим с .NET Framework 4.6 и более новыми версиями.  
-### Можно ли использовать Aspose.GIS для .NET для выполнения пространственного анализа?
-Да, Aspose.GIS для .NET предоставляет широкий набор функций для выполнения задач пространственного анализа.  
-### Поддерживает ли Aspose.GIS для .NET различные GIS‑форматы файлов?
-Да, Aspose.GIS для .NET поддерживает различные GIS‑форматы файлов, такие как Shapefile, GeoJSON и KML.  
-### Доступна ли бесплатная пробная версия Aspose.GIS для .NET?
-Да, вы можете скачать бесплатную пробную версию Aspose.GIS для .NET [здесь](https://releases.aspose.com/).  
-### Где можно получить поддержку по Aspose.GIS для .NET?
-Поддержку по Aspose.GIS для .NET можно получить на форуме [Aspose.GIS forum](https://forum.aspose.com/c/gis/33).

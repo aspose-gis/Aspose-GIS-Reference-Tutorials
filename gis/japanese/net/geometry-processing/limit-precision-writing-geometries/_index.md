@@ -16,22 +16,22 @@ weight: 13
 
 .NET GIS アプリケーションでジオメトリを書き込む際に **精度を制限する方法** をお探しなら、Aspose.GIS for .NET は座標の丸めを制御するシンプルで高性能な手段を提供します。このチュートリアルでは、環境のセットアップから出力が定義した精度ルールに従っているかの検証まで、全工程を順に解説します。
 
-## Quick Answers
+## クイック回答
 - **「精度を制限する」とは何ですか？** 空間ファイルを書き込む際に、座標値を指定した小数桁数に丸めます。  
 - **例で使用しているフォーマットはどれですか？** GeoJSON ですが、同じオプションは他のサポートフォーマットでも適用できます。  
 - **試すのにライセンスは必要ですか？** 開発・テスト用の無料トライアルが利用可能です。商用利用には製品ライセンスが必要です。  
 - **対応している .NET バージョンは？** .NET Framework 4.5 以上、.NET Core 3.1 以上、.NET 5/6/7。  
 - **Z 座標の精度だけ別に制御できますか？** はい、`ZPrecisionModel` を使用して正確な値または丸めた値を設定できます。
 
-## How to Limit Precision When Writing Geometries
+## ジオメトリ書き込み時の精度制限方法
 精度を制限することは、異なる GIS ツール間で座標表現を統一したり、ファイルサイズを削減したり、データ交換標準に準拠したりする際に重要です。以下では、精度オプションを定義しジオメトリを書き込み、丸めが正しく行われたかを読み戻して確認します。
 
-## Prerequisites
+## 前提条件
 
-### 1. Download and Installation
+### 1. ダウンロードとインストール
 公式サイトから最新の Aspose.GIS for .NET パッケージを取得してください: [download link](https://releases.aspose.com/gis/net/)。インストールガイドに従い、NuGet パッケージをプロジェクトに追加します。
 
-### 2. Namespace Import
+### 2. 名前空間のインポート
 GIS クラスやヘルパーユーティリティにアクセスできるよう、必要な名前空間をインポートします。
 
 ```csharp
@@ -46,9 +46,9 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## Step‑by‑Step Guide
+## ステップバイステップガイド
 
-### Step 1: Define Precision Options
+### ステップ 1: 精度オプションの定義
 `GeoJsonOptions` インスタンスを作成し、X/Y および Z 座標の小数桁数を Aspose.GIS に指示します。
 
 ```csharp
@@ -62,14 +62,14 @@ var options = new GeoJsonOptions
 };
 ```
 
-### Step 2: Set Output Path
+### ステップ 2: 出力パスの設定
 生成される GeoJSON ファイルの保存先を指定します。
 
 ```csharp
 var path = "Your Document Directory" + "LimitPrecisionWhenWritingGeometries_out.json";
 ```
 
-### Step 3: Create and Populate Geometry
+### ステップ 3: ジオメトリの作成とデータ投入
 上記で定義したオプションを使用して新しい `VectorLayer` を開き、`Point` ジオメトリを構築してレイヤーに追加します。
 
 ```csharp
@@ -86,7 +86,7 @@ using (VectorLayer layer = VectorLayer.Create(path, Drivers.GeoJson, options))
 }
 ```
 
-### Step 4: Read and Verify Precision
+### ステップ 4: 精度の読み取りと検証
 作成したファイルを開き座標を出力します。X/Y の値が小数点以下 3 桁に丸められ、Z の値はそのまま正確に保持されていることが確認できるはずです。
 
 ```csharp
@@ -99,13 +99,13 @@ using (VectorLayer layer = VectorLayer.Open(path, Drivers.GeoJson))
 }
 ```
 
-## Common Issues & Tips
+## よくある問題と対処法
 
 - **Path Errors:** `path` に指定したディレクトリが存在することを確認するか、`Path.Combine` と `Environment.CurrentDirectory` を組み合わせて安全なファイルパスを構築してください。  
 - **Precision Not Applied:** レイヤー作成時に `GeoJsonOptions` オブジェクトを渡しているか確認してください。渡さない場合はデフォルトのフルダブル精度が使用されます。  
 - **Large Datasets:** 大量データを処理する場合は、単一の `VectorLayer` インスタンスを再利用し、フィーチャをバッチ追加することでパフォーマンスを向上させます。
 
-## Frequently Asked Questions
+## よくある質問
 
 **Q: Aspose.GIS for .NET は他の GIS フォーマットと互換性がありますか？**  
 A: はい、Shapefile、GeoJSON、KML、GML など多数のフォーマットをサポートしており、フォーマット間のシームレスな変換が可能です。
@@ -122,8 +122,14 @@ A: Aspose.GIS フォーラムや Stack Overflow の `aspose-gis` タグが質問
 **Q: ライブラリは小規模スクリプトとエンタープライズ規模のアプリケーションの両方で動作しますか？**  
 A: はい、Aspose.GIS はクイックプロトタイプから高スループットのサーバーアプリケーションまで、あらゆる規模の開発に対応できるよう設計されています。
 
-## Conclusion
+## まとめ
 上記の手順に従うことで、Aspose.GIS for .NET を使用してジオメトリを書き込む際の **精度制限方法** が理解できました。座標の丸めを制御することで、空間データをクリーンに保ち、相互運用性とストレージ効率を高めることができます。これは GIS 中心のプロジェクトにとって重要な利点です。
+
+---
+
+**Last Updated:** 2025-12-20  
+**Tested With:** Aspose.GIS 24.11 for .NET  
+**Author:** Aspose
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
@@ -131,9 +137,3 @@ A: はい、Aspose.GIS はクイックプロトタイプから高スループッ
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-12-20  
-**Tested With:** Aspose.GIS 24.11 for .NET  
-**Author:** Aspose

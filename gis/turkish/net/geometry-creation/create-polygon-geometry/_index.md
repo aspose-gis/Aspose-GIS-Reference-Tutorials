@@ -131,15 +131,3 @@ Bu rehberde **çokgen nasıl oluşturulur** konusunu adım adım ele aldık, eks
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
-## SSS
-### Aspose.GIS for .NET tüm .NET Framework sürümleriyle uyumlu mu?
-Evet, Aspose.GIS for .NET .NET Framework 4.6 ve üzeri sürümlerle uyumludur.
-### Aspose.GIS for .NET ile mekânsal analiz yapabilir miyim?
-Evet, Aspose.GIS for .NET mekânsal analiz görevleri için geniş bir işlev yelpazesi sunar.
-### Aspose.GIS for .NET farklı GIS dosya formatlarını destekliyor mu?
-Evet, Aspose.GIS for .NET Shapefile, GeoJSON ve KML gibi çeşitli GIS dosya formatlarını destekler.
-### Aspose.GIS for .NET için ücretsiz deneme sürümü mevcut mu?
-Evet, Aspose.GIS for .NET ücretsiz deneme sürümünü [buradan](https://releases.aspose.com/) indirebilirsiniz.
-### Aspose.GIS for .NET için destek nasıl alınır?
-Aspose.GIS for .NET desteğini [Aspose.GIS forumundan](https://forum.aspose.com/c/gis/33) alabilirsiniz.
