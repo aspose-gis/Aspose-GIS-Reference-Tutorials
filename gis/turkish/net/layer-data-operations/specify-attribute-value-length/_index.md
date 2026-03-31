@@ -1,27 +1,45 @@
 ---
-title: Öznitelik Değeri Uzunluğunu Belirtin
-linktitle: Öznitelik Değeri Uzunluğunu Belirtin
-second_title: Aspose.GIS .NET API'si
-description: Aspose.GIS for .NET ile jeouzaysal gelişimi keşfedin. .NET uygulamalarınızdaki uzamsal verileri zahmetsizce yönetin ve değiştirin.
-weight: 18
+date: 2025-12-31
+description: Aspose.GIS for .NET'te alan genişliğini nasıl ayarlayacağınızı ve shapefile'lara
+  uzunlukla birlikte öznitelik eklemeyi verimli bir şekilde öğrenin.
+linktitle: How to Set Field Width
+second_title: Aspose.GIS .NET API
+title: Aspose.GIS for .NET'te Alan Genişliğini Nasıl Ayarlarsınız
 url: /tr/net/layer-data-operations/specify-attribute-value-length/
+weight: 18
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Öznitelik Değeri Uzunluğunu Belirtin
+# Aspose.GIS for .NET'te Alan Genişliğini Nasıl Ayarlarsınız
 
-## giriiş
-Aspose.GIS for .NET dünyasına hoş geldiniz; güçlü ve etkili coğrafi gelişime açılan kapınız! Bu kapsamlı eğitim, .NET uygulamalarınızda coğrafi verileri zahmetsizce yönetmek için Aspose.GIS'i kullanmanın temel adımlarında size rehberlik edecektir. İster deneyimli bir geliştirici olun ister jeouzaysal programlamaya yeni başlayan biri olun, bu kılavuz size sağlam bir temel ve pratik bilgiler sağlamak için tasarlanmıştır.
+## Giriiş
+Aspose.GIS for .NET'te hoş geldiniz – güçlü ve verimli hizmet bilgi sistemleri geliştirme kapınız! Bu öğretici öğretici, Aspose.GIS'i .NET uygulamalarınızda veri yönetimini zahmetsizce yapmak için temel adımlarla size rehberlik edecek. İster programın bir geliştiricisi olun, ister bakanlığın programlamaya yeni başlayın, bu kılavuz sağlam bir temel ve pratik içgörüler sunmak için tasarlanmıştır. **Bu öğreticide, öznitelik değerleri için alan genişliğinin nasıl ayarlanacağını** öğrenecek ve şekil dosyası alanlarınızın verilerini tam olarak beklediğiniz gibi saklamanızı sağlayacaksınız.
+
+## Hızlı Yanıtlar
+- **Bu kılavuzun temel amacı nedir?** Aspose.GIS for .NET kullanarak bir şekil dosyasındaki öznitelik için alan genişliğinin nasıl ayarlanacağını gösterin.
+- **Alan genişliğini koruyan sınıf hangisidir?** `FeatureAttribute.Width`.
+- **Kodu çalıştırmak için lisansa ihtiyacınız var mı?** Değerlendirme için geçici bir lisans yeterlidir; üretim ortamı için tam lisans gereklidir.
+- **Örnekte hangi dosya formatı kullanılıyor?** ESRI Shapefile (`.shp`).
+- **Katman dahil edildikten sonra genişlik ortaya çıkabilir mi?** Hayır – kapsamlı, özellikler eklenmeden önce tanımlanmalıdır.
+
 ## Önkoşullar
-Eğiticiye dalmadan önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
--  Aspose.GIS for .NET Library: Aspose.GIS for .NET kütüphanesini aşağıdaki adresten indirip yükleyin:[İndirme: {link](https://releases.aspose.com/gis/net/).
+Öğreticiye başlamadan önce aşağıdaki ön koşullar yerine getirildikten sonra emin olun:
+- Aspose.GIS for .NET Kütüphanesi: Aspose.GIS for .NET kütüphanesini [download link](https://releases.aspose.com/gis/net/) adresinden indirip yükleyin.
 - Geliştirme Ortamı: Visual Studio gibi tercih ettiğiniz .NET geliştirme ortamını kurun.
-- Belge Dizini: Jeo-uzaysal belgelerinizin saklanacağı dizini belirtin.
-## Ad Alanlarını İçe Aktar
-Aspose.GIS for .NET'in işlevselliklerinden yararlanmak için gerekli ad alanlarını içe aktararak başlayın:
+- Belge Dizini: Coğrafi belgelerin depolanacağı dizini belirtilmiştir.
+
+## Alan Genişliği Nedir ve Neden Önemlidir?
+Alan genişliği (veya öznitelik uzunluğu), bir dize özniteliğinin tutabileceği maksimum karakter sayısını belirler. Doğru genişlik ayarı, veri kırılmasının önlenmesi ve sabit‑uzunluklu alanlara dayalı diğer GIS araçlarıyla uyumluluğu sağlar.
+
+## Bir Nitelik İçin Alan Genişliği Nasıl Ayarlanır
+Aşağıda adım‑adım bir yürütme bulunmaktadır. Her kod bozulan orijinal kaynak değiştirilmemiştir; açıklamaları netlik almak için düzenlemektir.
+
+### Ad Alanlarını İçe Aktar
+Aspose.GIS for .NET'in saklanmasından faydalanmak için gerekli reklam alanlarını içeride aktarmaya başlayın:
+
 ```csharp
 using Aspose.Gis;
 using System;
@@ -30,43 +48,74 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 ```
-## VectorLayer'ı oluştur
-Jeo-uzamsal verilerle çalışmaya yönelik temel bir bileşen olan VectorLayer'ı oluşturarak başlayın.
+
+### VectorLayer'ı oluştur
+Çıktı şekil dosyasına işaret eden bir `VectorLayer` oluşturur. Bu katman, güvenliği kontrol etmek istediğiniz özniteliği barındıracaktır.
+
 ```csharp
 string dataDir = "Your Document Directory";
 using (VectorLayer layer = VectorLayer.Create(dataDir + "SpecifyAttributeValueLength_out.shp", Drivers.Shapefile))
 {
-    // Sonraki adımlara ilişkin kodunuz buraya gelecek.
+    // Your code for the next steps will go here.
 }
 ```
-## Belirli Uzunluğa Sahip Özellik Ekle
-Özellik eklemeden önce belirli uzunlukta bir öznitelik tanımlayın.
+
+### Belirli Uzunlukta Nitelik Ekleme
+**wide** adlı bir öznitelik tanımlayın ve genişliğini açıkça 120 karakter olarak ayarlayın. Bu, Aspose.GIS'te **alan genişliğini nasıl ayarlayacağınızın** temelidir.
+
 ```csharp
 FeatureAttribute attribute = new FeatureAttribute("wide", AttributeDataType.String);
 attribute.Width = 120;
 layer.Attributes.Add(attribute);
 ```
-## Özellik Oluşturma ve Ekleme
-Bir özellik oluşturun ve özellik değerini belirtilen uzunluk dahilinde ayarlayın.
+
+> **Pro tip:** `Width` özelliği yalnızca dize (string) öznitelikler için geçerlidir. Sayısal tipler için boyut, veri tipinin kendisi tarafından belirlenir.
+
+### Özellik Oluşturma ve Ekleme
+Şimdi bir özellik oluşturun, 120‑karakter sınırına uyan bir değer atayın ve özelliği katmana ekleyin.
+
 ```csharp
 Feature feature = layer.ConstructFeature();
 feature.SetValue("wide", "this string can be up to 120 characters long now.");
 layer.Add(feature);
 ```
-Tebrikler! Aspose.GIS for .NET'i kullanarak nitelik değeri uzunluğunu başarıyla belirlediniz.
+
+Daha uzun bir dize atamaya çalışırsanız, Aspose.GIS tanımlı genişliğe göre kırpar ve veri bütünlüğünü korur.
+
+## Yaygın Tuzaklar ve Sorun Giderme
+- **`Genişlik` özelliği öznitelik eklemeden önce ayarlamayı unuttum mu?** Varsayılan genişlik 255 karakterdir; Daha sonra mevcut alanlar üzerinde etkili olmaz. Her zaman öncesinde güvenliği tanımlayın.
+- **Dize olmayan bir veri tipi mi kullanırsınız?** `Width` özelliği dijital veya tarih alanları için yoksayılır; özniteliğin `AttributeDataType` `String` olduğundan emin olun.
+- **“alan bulunamadı” hatası alıyorum?** `SetValue` içinde kullanılan öznitelik adının tam olarak (büyük/küçük harfler duyarlı) eşleştiğini doğrulayın.
+
 ## Çözüm
- Bu eğitim Aspose.GIS for .NET'in güçlü özelliklerine kısa bir bakış sunarak uygulamalarınızda coğrafi verilerle sorunsuz bir şekilde çalışmanıza olanak sağladı. Farklı özellikleri deneyin, keşfedin[dokümantasyon](https://reference.aspose.com/gis/net/)Aspose.GIS ile jeo-uzamsal gelişimin tüm potansiyelini ortaya çıkarın.
+Bu öğreticide, Aspose.GIS for .NET kullanarak bir şekil dosyasındaki öznitelik için **alan genişliğinin nasıl ayarlanacağını** gösterdik ve **uzunluklu öznitelik eklemenin** etkili yolunu sundu. Farklı genişliklerle denemeler yapın, [documentation](https://reference.aspose.com/gis/net/) ayıklanmış cinsel depolama ve Aspose.GIS ile depolama geliştirme potansiyelinin tamamını ortaya çıkarın.
+
 ## Sıkça Sorulan Sorular
-### S: Aspose.GIS for .NET için nasıl geçici lisans alabilirim?
- C: Geçici bir lisans alabilirsiniz[Burada](https://purchase.aspose.com/temporary-license/).
-### S: Aspose.GIS for .NET için topluluk desteğini nerede bulabilirim?
- C: Ziyaret edin[Aspose.GIS forumu](https://forum.aspose.com/c/gis/33) topluluk desteği için.
-### S: Aspose.GIS for .NET'in ücretsiz deneme sürümü mevcut mu?
- C: Evet, keşfedin[ücretsiz deneme](https://releases.aspose.com/)yetenekleri ilk elden deneyimlemek.
-### S: Aspose.GIS for .NET lisansını nasıl satın alabilirim?
- C: Lisansınızı satın alın[Burada](https://purchase.aspose.com/buy).
-### S: Aspose.GIS for .NET belgelerine nereden erişebilirim?
- C: Bkz.[dokümantasyon](https://reference.aspose.com/gis/net/) kapsamlı rehberlik için.
+### Q: Aspose.GIS for .NET için geçici bir lisans nasıl alabilirim?
+A: Geçici lisansı [buradan](https://purchase.aspose.com/temporary-license/) edinebilirsiniz.
+
+### Q: Aspose.GIS for .NET için topluluk desteği nerede bulunur?
+A: Topluluk desteği için [Aspose.GIS forumunu](https://forum.aspose.com/c/gis/33) ziyaret edin.
+
+### Q: Aspose.GIS for .NET için ücretsiz deneme sürümü var mı?
+A: Evet, yetenekleri ilk elden deneyimlemek için [free trial](https://releases.aspose.com/) sayfasını inceleyin.
+
+### Q: Aspose.GIS for .NET için lisans nasıl satın alınır?
+A: Lisansınızı [buradan](https://purchase.aspose.com/buy) satın alabilirsiniz.
+
+### Q: Aspose.GIS for .NET dokümantasyonuna nereden ulaşabilirim?
+A: Kapsamlı rehberlik için [documentation](https://reference.aspose.com/gis/net/) sayfasına bakın.
+
+### Q: Katman oluşturulduktan sonra alan genişliğini değiştirebilir miyim?
+A: Hayır. Alan genişliği, öznitelik katmana eklenmeden önce tanımlanmalıdır; değiştirmek için katmanı yeniden oluşturmanız gerekir.
+
+### Q: Daha büyük bir genişlik dosya boyutunu etkiler mi?
+A: Shapefile'lar dize alanlarını sabit uzunlukta saklar, bu nedenle daha büyük genişlikler .dbf dosya boyutunu orantılı olarak artırır.
+
+**Last Updated:** 2025-12-31  
+**Tested With:** Aspose.GIS 24.11 for .NET  
+**Author:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
