@@ -1,27 +1,43 @@
 ---
-title: Tentukan Grid Presisi untuk Lapisan File GDB di Aspose.GIS
-linktitle: Tentukan Grid Presisi untuk Lapisan File GDB
+date: 2025-12-28
+description: Pelajari cara mengatur grid untuk lapisan File GDB menggunakan Aspose.GIS
+  untuk .NET, termasuk menambahkan fitur ke lapisan dan memvalidasi rentang koordinat.
+linktitle: Define Precision Grid for File GDB Layer
 second_title: Aspose.GIS .NET API
-description: Pelajari cara menentukan kisi presisi untuk lapisan File GDB menggunakan Aspose.GIS untuk .NET. Ikuti tutorial langkah demi langkah kami.
-weight: 21
+title: Cara Mengatur Grid untuk Layer File GDB di Aspose.GIS
 url: /id/net/layer-data-operations/define-precision-grid-for-file-gdb-layer/
+weight: 21
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Tentukan Grid Presisi untuk Lapisan File GDB di Aspose.GIS
+# Cara Mengatur Grid untuk Layer File GDB di Aspose.GIS
 
-## Perkenalan
-Dalam tutorial ini, kita akan mempelajari cara mendefinisikan grid presisi untuk lapisan File Geodatabase (GDB) menggunakan Aspose.GIS untuk .NET. Aspose.GIS adalah perpustakaan .NET yang kuat yang menyediakan fungsionalitas geospasial komprehensif untuk bekerja dengan berbagai format file GIS.
+## Pendahuluan
+Dalam tutorial ini, Anda akan mempelajari **cara mengatur grid** untuk layer File Geodatabase (GDB) menggunakan Aspose.GIS untuk .NET. Menetapkan grid presisi membantu Anda **memvalidasi rentang koordinat**, mencegah kesalahan out‑of‑range, dan memastikan data yang **Anda tambahkan fitur ke layer** tetap akurat dan dapat diandalkan. Kami akan membimbing Anda melalui setiap langkah, menjelaskan mengapa pengaturan tersebut penting, dan menunjukkan cara menangani jebakan umum.
+
+## Jawaban Cepat
+- **Apa arti “set grid”?** Itu mendefinisikan presisi koordinat dan rentang valid untuk sebuah layer GIS.  
+- **Mengapa menggunakan grid presisi?** Itu melindungi data Anda dari koordinat tidak valid dan meningkatkan efisiensi penyimpanan.  
+- **Perpustakaan mana yang menyediakan fitur ini?** Aspose.GIS untuk .NET.  
+- **Apakah saya memerlukan lisensi?** Versi percobaan tersedia; lisensi komersial diperlukan untuk produksi.  
+- **Bisakah saya menggunakan ini dengan .NET Core?** Ya, Aspose.GIS mendukung .NET Framework dan .NET Core.
+
+## Apa Itu Grid Presisi dan Mengapa Harus Diatur?
+Grid presisi adalah sekumpulan parameter (origin, scale, dll.) yang memberi tahu mesin GIS cara membulatkan dan menyimpan nilai koordinat. Dengan mendefinisikan grid, Anda **memvalidasi rentang koordinat** secara otomatis, dan setiap upaya memasukkan titik di luar grid akan memicu pengecualian—membantu Anda **menangani out of range** lebih awal dalam pengembangan.
+
 ## Prasyarat
-Sebelum kita mulai, pastikan Anda telah menginstal prasyarat berikut:
-1. Visual Studio: Pastikan Anda telah menginstal Visual Studio di sistem Anda.
-2.  Aspose.GIS untuk .NET Library: Unduh dan instal perpustakaan Aspose.GIS untuk .NET dari[situs web](https://releases.aspose.com/gis/net/).
-3. Pengetahuan Dasar C#: Keakraban dengan bahasa pemrograman C# akan bermanfaat untuk memahami contoh kode.
+Sebelum memulai, pastikan Anda telah menginstal hal‑hal berikut:
+
+1. **Visual Studio** – versi terbaru apa pun (Community, Professional, atau Enterprise).  
+2. **Aspose.GIS untuk .NET** – unduh dari [situs web](https://releases.aspose.com/gis/net/).  
+3. **Pengetahuan dasar C#** – Anda harus nyaman membuat proyek konsol .NET.
+
 ## Impor Namespace
-Pertama, mari impor namespace yang diperlukan untuk bekerja dengan Aspose.GIS:
+Pertama, impor namespace yang diperlukan untuk bekerja dengan Aspose.GIS:
+
 ```csharp
 using Aspose.Gis;
 using Aspose.Gis.Formats.FileGdb;
@@ -30,15 +46,22 @@ using Aspose.Gis.SpatialReferencing;
 using System;
 using System.Text;
 ```
-Sekarang, mari kita uraikan setiap langkah dalam mendefinisikan grid presisi untuk lapisan File GDB.
-## Langkah 1: Buat Kumpulan Data
+
+## Cara Mengatur Grid di Layer File GDB
+Berikut adalah panduan langkah‑demi‑langkah yang menunjukkan secara tepat cara mengonfigurasi grid, membuat layer, dan dengan aman **menambahkan fitur ke layer**.
+
+### Langkah 1: Buat Dataset
+Kita mulai dengan membuat dataset File Geodatabase baru. Di sinilah layer akan berada.
+
 ```csharp
 var path = "Your Document Directory" + "PrecisionGrid_out.gdb";
 using (var dataset = Dataset.Create(path, Drivers.FileGdb))
 {
 ```
- Di sini, kami membuat kumpulan data baru dalam format File Geodatabase dengan menentukan jalur dan menggunakan`Dataset.Create` metode.
-## Langkah 2: Tentukan Opsi Grid Presisi
+
+### Langkah 2: Tentukan Opsi Grid Presisi
+Di sini kita menentukan parameter grid. Sesuaikan origin dan scale agar cocok dengan sistem koordinat proyek Anda.
+
 ```csharp
 var options = new FileGdbOptions
 {
@@ -53,14 +76,20 @@ var options = new FileGdbOptions
     EnsureValidCoordinatesRange = true,
 };
 ```
-Pada langkah ini, kami menentukan opsi grid presisi untuk lapisan File GDB. Kami menentukan asal X dan Y, skala XY, asal M, skala M, dan memastikan bahwa rentang koordinat yang valid diterapkan.
-## Langkah 3: Buat Lapisan
+
+*Flag `EnsureValidCoordinatesRange = true` memberi tahu Aspose.GIS untuk **memvalidasi rentang koordinat** untuk setiap fitur yang Anda tambahkan.*
+
+### Langkah 3: Buat Layer dengan Grid
+Sekarang kita membuat layer baru di dalam dataset, menerapkan opsi grid yang baru saja kita definisikan. Kita akan menggunakan sistem referensi spasial WGS84.
+
 ```csharp
 using (var layer = dataset.CreateLayer("layer_name", options, SpatialReferenceSystem.Wgs84))
 {
 ```
-Di sini, kita membuat layer baru di dalam kumpulan data dengan nama dan opsi yang ditentukan. Kami menggunakan sistem referensi spasial WGS84.
-## Langkah 4: Tambahkan Fitur ke Layer
+
+### Langkah 4: Tambahkan Fitur ke Layer
+Kami membuat dua fitur titik. Titik pertama berada di dalam grid, sementara yang kedua sengaja berada di luar untuk mendemonstrasikan **cara menangani out of range**.
+
 ```csharp
 var feature = layer.ConstructFeature();
 feature.Geometry = new Point(10, 20) { M = 10.1282 };
@@ -68,8 +97,10 @@ layer.Add(feature);
 feature = layer.ConstructFeature();
 feature.Geometry = new Point(-410, 0) { M = 20.2343 };
 ```
-Pada langkah ini, kita membuat fitur dengan geometri titik dan menambahkannya ke lapisan. Perhatikan bahwa menambahkan fitur dengan koordinat di luar kisi presisi yang ditentukan akan menimbulkan pengecualian.
-## Langkah 5: Tangani Pengecualian
+
+### Langkah 5: Tangani Pengecualian Saat Menambahkan Fitur di Luar Rentang
+Mencoba menambahkan fitur kedua akan memicu pengecualian karena koordinat X‑nya (`-410`) berada di luar grid yang ditetapkan. Kami menangkap pengecualian tersebut dan menampilkan pesan yang jelas.
+
 ```csharp
 try
 {
@@ -77,23 +108,43 @@ try
 }
 catch (GisException e)
 {
-    Console.WriteLine(e.Message); // Nilai X -410 berada di luar rentang valid.
+    Console.WriteLine(e.Message); // X value -410 is out of valid range.
 }
 ```
-Di sini, kami menangani pengecualian yang mungkin terjadi saat menambahkan fitur ke lapisan di luar rentang koordinat yang valid.
-## Kesimpulan
-Dalam tutorial ini, kita mempelajari cara mendefinisikan grid presisi untuk lapisan File GDB menggunakan Aspose.GIS untuk .NET. Dengan mengikuti panduan langkah demi langkah, Anda dapat bekerja secara efisien dengan data geospasial di aplikasi .NET Anda.
-## FAQ
-### Bisakah saya menggunakan Aspose.GIS untuk .NET dengan format file GIS lainnya?
-Ya, Aspose.GIS untuk .NET mendukung berbagai format file GIS, termasuk Shapefile, GeoJSON, KML, dan banyak lagi.
-### Apakah Aspose.GIS untuk .NET kompatibel dengan .NET Core?
-Ya, Aspose.GIS untuk .NET kompatibel dengan .NET Framework dan .NET Core.
-### Bisakah saya melakukan operasi spasial menggunakan Aspose.GIS untuk .NET?
-Ya, Anda dapat melakukan operasi spasial seperti buffering, persimpangan, dan penghitungan jarak menggunakan Aspose.GIS untuk .NET.
-### Apakah Aspose.GIS untuk .NET menyediakan dukungan untuk transformasi koordinat?
-Ya, Aspose.GIS untuk .NET menyediakan dukungan untuk transformasi koordinat antara sistem referensi spasial yang berbeda.
-### Apakah ada versi uji coba yang tersedia untuk Aspose.GIS untuk .NET?
-Ya, Anda dapat mengunduh Aspose.GIS versi uji coba gratis untuk .NET dari[situs web](https://releases.aspose.com/gis/net/).
+
+### Langkah 6: Pembersihan
+Pernyataan `using` secara otomatis menutup dan membuang dataset serta layer, memastikan semua sumber daya dibebaskan.
+
+## Masalah Umum dan Solusinya
+| Masalah | Mengapa Terjadi | Solusi |
+|-------|----------------|-----|
+| **Exception: “X value … is out of valid range.”** | Koordinat berada di luar grid presisi. | Sesuaikan `XOrigin`, `YOrigin`, atau `XYScale` agar mencakup data Anda, atau pastikan data masukan berada dalam rentang yang ditetapkan. |
+| **Fitur tidak muncul di penampil GIS** | Layer tidak disimpan atau referensi spasial salah. | Verifikasi bahwa `SpatialReferenceSystem.Wgs84` cocok dengan CRS penampil, dan bahwa `Dataset.Create` berhasil. |
+| **Nilai M diabaikan** | `MScale` diatur ke 0 atau terlalu rendah. | Tetapkan `MScale` yang wajar (misalnya `1e4`) untuk menyimpan nilai ukuran. |
+
+## Pertanyaan yang Sering Diajukan
+
+**T: Bisakah saya menggunakan Aspose.GIS untuk .NET dengan format file GIS lain?**  
+J: Ya, Aspose.GIS mendukung Shapefile, GeoJSON, KML, dan banyak format lainnya.
+
+**T: Apakah Aspose.GIS untuk .NET kompatibel dengan .NET Core?**  
+J: Tentu saja. Perpustakaan ini bekerja dengan .NET Framework, .NET Core, dan .NET 5/6+.
+
+**T: Bisakah saya melakukan operasi spasial seperti buffering atau intersection?**  
+J: Ya, API mencakup metode untuk buffering, intersecting, dan menghitung jarak.
+
+**T: Apakah Aspose.GIS menyediakan kemampuan transformasi koordinat?**  
+J: Ya, Anda dapat mentransformasi geometri antar sistem referensi spasial yang berbeda menggunakan alat reprojection bawaan.
+
+**T: Apakah ada versi percobaan yang tersedia?**  
+J: Ya, Anda dapat mengunduh versi percobaan gratis dari [situs web](https://releases.aspose.com/gis/net/).
+
+---
+
+**Terakhir Diperbarui:** 2025-12-28  
+**Diuji Dengan:** Aspose.GIS 24.11 untuk .NET  
+**Penulis:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}

@@ -1,27 +1,44 @@
 ---
-title: Definire la griglia di precisione per il livello GDB del file in Aspose.GIS
-linktitle: Definisci griglia di precisione per il layer GDB del file
-second_title: API Aspose.GIS .NET
-description: Scopri come definire una griglia di precisione per un livello File GDB utilizzando Aspose.GIS per .NET. Segui il nostro tutorial passo dopo passo.
-weight: 21
+date: 2025-12-28
+description: Impara come impostare la griglia per un layer File GDB usando Aspose.GIS
+  per .NET, includendo l'aggiunta di feature al layer e la convalida dell'intervallo
+  di coordinate.
+linktitle: Define Precision Grid for File GDB Layer
+second_title: Aspose.GIS .NET API
+title: Come impostare la griglia per il layer File GDB in Aspose.GIS
 url: /it/net/layer-data-operations/define-precision-grid-for-file-gdb-layer/
+weight: 21
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Definire la griglia di precisione per il livello GDB del file in Aspose.GIS
+# Come impostare la griglia per un layer File GDB in Aspose.GIS
 
-## introduzione
-In questo tutorial, esploreremo come definire una griglia di precisione per un livello File Geodatabase (GDB) utilizzando Aspose.GIS per .NET. Aspose.GIS è una potente libreria .NET che fornisce funzionalità geospaziali complete per lavorare con vari formati di file GIS.
+## Introduzione
+In questo tutorial imparerai **come impostare la griglia** per un layer File Geodatabase (GDB) utilizzando Aspose.GIS per .NET. Impostare una griglia di precisione ti aiuta a **convalidare l'intervallo delle coordinate**, previene errori di fuori‑intervallo e garantisce che i dati a cui **aggiungi feature al layer** rimangano accurati e affidabili. Ti guideremo passo dopo passo, spiegheremo perché le impostazioni sono importanti e ti mostreremo come gestire le difficoltà più comuni.
+
+## Risposte rapide
+- **Cosa significa “impostare la griglia”?** Definisce la precisione delle coordinate e l'intervallo valido per un layer GIS.  
+- **Perché usare una griglia di precisione?** Protegge i tuoi dati da coordinate non valide e migliora l'efficienza di archiviazione.  
+- **Quale libreria fornisce questa funzionalità?** Aspose.GIS per .NET.  
+- **È necessaria una licenza?** È disponibile una versione di prova; per la produzione è richiesta una licenza commerciale.  
+- **Posso usarla con .NET Core?** Sì, Aspose.GIS supporta .NET Framework e .NET Core.
+
+## Cos'è una griglia di precisione e perché impostarla?
+Una griglia di precisione è un insieme di parametri (origine, scala, ecc.) che indica al motore GIS come arrotondare e memorizzare i valori delle coordinate. Definendo una griglia **convalidi automaticamente l'intervallo delle coordinate** e qualsiasi tentativo di inserire un punto al di fuori della griglia genererà un'eccezione, aiutandoti a **gestire gli errori di fuori intervallo** già nelle fasi iniziali dello sviluppo.
+
 ## Prerequisiti
-Prima di iniziare, assicurati di avere installati i seguenti prerequisiti:
-1. Visual Studio: assicurati di avere Visual Studio installato sul tuo sistema.
-2.  Libreria Aspose.GIS per .NET: scaricare e installare la libreria Aspose.GIS per .NET da[sito web](https://releases.aspose.com/gis/net/).
-3. Conoscenza di base di C#: la familiarità con il linguaggio di programmazione C# sarà utile per comprendere gli esempi di codice.
-## Importa spazi dei nomi
-Innanzitutto, importiamo gli spazi dei nomi necessari per lavorare con Aspose.GIS:
+Prima di iniziare, assicurati di avere installato quanto segue:
+
+1. **Visual Studio** – qualsiasi versione recente (Community, Professional o Enterprise).  
+2. **Aspose.GIS per .NET** – scaricalo dal [sito web](https://releases.aspose.com/gis/net/).  
+3. **Conoscenza di base di C#** – dovresti sentirti a tuo agio nella creazione di progetti console .NET.
+
+## Importare gli spazi dei nomi
+Per prima cosa, importa gli spazi dei nomi necessari per lavorare con Aspose.GIS:
+
 ```csharp
 using Aspose.Gis;
 using Aspose.Gis.Formats.FileGdb;
@@ -30,15 +47,22 @@ using Aspose.Gis.SpatialReferencing;
 using System;
 using System.Text;
 ```
-Analizziamo ora ogni passaggio della definizione di una griglia di precisione per un livello File GDB.
-## Passaggio 1: crea un set di dati
+
+## Come impostare la griglia in un layer File GDB
+Di seguito trovi una guida passo‑per‑passo che mostra esattamente come configurare la griglia, creare un layer e aggiungere in modo sicuro **feature al layer**.
+
+### Passo 1: Creare un dataset
+Iniziamo creando un nuovo dataset File Geodatabase. È qui che vivrà il layer.
+
 ```csharp
 var path = "Your Document Directory" + "PrecisionGrid_out.gdb";
 using (var dataset = Dataset.Create(path, Drivers.FileGdb))
 {
 ```
- Qui creiamo un nuovo set di dati in un formato File Geodatabase specificando il percorso e utilizzando il file`Dataset.Create` metodo.
-## Passaggio 2: definire le opzioni della griglia di precisione
+
+### Passo 2: Definire le opzioni della griglia di precisione
+Qui specifichiamo i parametri della griglia. Regola le origini e le scale per farle corrispondere al sistema di coordinate del tuo progetto.
+
 ```csharp
 var options = new FileGdbOptions
 {
@@ -53,14 +77,20 @@ var options = new FileGdbOptions
     EnsureValidCoordinatesRange = true,
 };
 ```
-In questo passaggio definiamo le opzioni della griglia di precisione per il livello File GDB. Specifichiamo le origini X e Y, la scala XY, l'origine M, la scala M e ci assicuriamo che vengano applicati intervalli di coordinate validi.
-## Passaggio 3: crea un livello
+
+*Il flag `EnsureValidCoordinatesRange = true` indica ad Aspose.GIS di **convalidare l'intervallo delle coordinate** per ogni feature che aggiungi.*
+
+### Passo 3: Creare un layer con la griglia
+Ora creiamo un nuovo layer all'interno del dataset, applicando le opzioni di griglia appena definite. Useremo il sistema di riferimento spaziale WGS84.
+
 ```csharp
 using (var layer = dataset.CreateLayer("layer_name", options, SpatialReferenceSystem.Wgs84))
 {
 ```
-Qui creiamo un nuovo livello all'interno del set di dati con il nome e le opzioni specificati. Utilizziamo il sistema di riferimento spaziale WGS84.
-## Passaggio 4: aggiungi funzionalità al livello
+
+### Passo 4: Aggiungere feature al layer
+Costruiamo due feature puntuali. Il primo punto si trova all'interno della griglia, mentre il secondo è deliberatamente fuori per dimostrare **come gestire gli errori di fuori intervallo**.
+
 ```csharp
 var feature = layer.ConstructFeature();
 feature.Geometry = new Point(10, 20) { M = 10.1282 };
@@ -68,8 +98,10 @@ layer.Add(feature);
 feature = layer.ConstructFeature();
 feature.Geometry = new Point(-410, 0) { M = 20.2343 };
 ```
-In questo passaggio, costruiamo feature con geometrie puntuali e le aggiungiamo al layer. Tieni presente che l'aggiunta di una feature con coordinate esterne alla griglia di precisione definita genererà un'eccezione.
-## Passaggio 5: gestire le eccezioni
+
+### Passo 5: Gestire le eccezioni quando si aggiungono feature fuori intervallo
+Il tentativo di aggiungere la seconda feature genererà un'eccezione perché la sua coordinata X (`-410`) è al di fuori della griglia definita. Catturiamo l'eccezione e mostriamo un messaggio chiaro.
+
 ```csharp
 try
 {
@@ -77,23 +109,43 @@ try
 }
 catch (GisException e)
 {
-    Console.WriteLine(e.Message); // Il valore X -410 non è compreso nell'intervallo valido.
+    Console.WriteLine(e.Message); // X value -410 is out of valid range.
 }
 ```
-Qui gestiamo le eccezioni che possono verificarsi quando si aggiungono elementi al layer al di fuori dell'intervallo di coordinate valido.
-## Conclusione
-In questo tutorial, abbiamo imparato come definire una griglia di precisione per un livello File GDB utilizzando Aspose.GIS per .NET. Seguendo la guida passo passo, puoi lavorare in modo efficiente con i dati geospaziali nelle tue applicazioni .NET.
+
+### Passo 6: Pulizia
+Le istruzioni `using` chiudono e rilasciano automaticamente il dataset e il layer, garantendo il rilascio di tutte le risorse.
+
+## Problemi comuni e soluzioni
+| Problema | Perché si verifica | Soluzione |
+|----------|--------------------|-----------|
+| **Eccezione: “Il valore X … è fuori dall'intervallo valido.”** | Le coordinate sono al di fuori della griglia di precisione. | Regola `XOrigin`, `YOrigin` o `XYScale` per includere i tuoi dati, oppure assicurati che i dati di input siano entro l'intervallo definito. |
+| **Le feature non compaiono nel visualizzatore GIS** | Layer non salvato o riferimento spaziale errato. | Verifica che `SpatialReferenceSystem.Wgs84` corrisponda al CRS del visualizzatore e che `Dataset.Create` sia riuscito. |
+| **Valori M ignorati** | `MScale` impostato a 0 o troppo basso. | Imposta un `MScale` ragionevole (ad es. `1e4`) per memorizzare i valori di misura. |
+
 ## Domande frequenti
-### Posso utilizzare Aspose.GIS per .NET con altri formati di file GIS?
-Sì, Aspose.GIS per .NET supporta vari formati di file GIS, inclusi Shapefile, GeoJSON, KML e altri.
-### Aspose.GIS per .NET è compatibile con .NET Core?
-Sì, Aspose.GIS per .NET è compatibile sia con .NET Framework che con .NET Core.
-### Posso eseguire operazioni spaziali utilizzando Aspose.GIS per .NET?
-Sì, puoi eseguire operazioni spaziali come buffering, intersezione e calcolo della distanza utilizzando Aspose.GIS per .NET.
-### Aspose.GIS per .NET fornisce supporto per le trasformazioni di coordinate?
-Sì, Aspose.GIS per .NET fornisce supporto per le trasformazioni di coordinate tra diversi sistemi di riferimento spaziale.
-### È disponibile una versione di prova per Aspose.GIS per .NET?
-Sì, puoi scaricare una versione di prova gratuita di Aspose.GIS per .NET da[sito web](https://releases.aspose.com/gis/net/).
+
+**D: Posso usare Aspose.GIS per .NET con altri formati di file GIS?**  
+R: Sì, Aspose.GIS supporta Shapefile, GeoJSON, KML e molti altri formati.
+
+**D: Aspose.GIS per .NET è compatibile con .NET Core?**  
+R: Assolutamente. La libreria funziona con .NET Framework, .NET Core e .NET 5/6+.
+
+**D: Posso eseguire operazioni spaziali come buffering o intersezione?**  
+R: Sì, l'API include metodi per il buffering, l'intersezione e il calcolo delle distanze.
+
+**D: Aspose.GIS offre capacità di trasformazione delle coordinate?**  
+R: Sì, puoi trasformare geometrie tra diversi sistemi di riferimento spaziale usando gli strumenti di riproiezione integrati.
+
+**D: È disponibile una versione di prova?**  
+R: Sì, puoi scaricare una prova gratuita dal [sito web](https://releases.aspose.com/gis/net/).
+
+---
+
+**Ultimo aggiornamento:** 2025-12-28  
+**Testato con:** Aspose.GIS 24.11 per .NET  
+**Autore:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
