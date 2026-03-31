@@ -128,13 +128,6 @@ A: Použijte fóra Aspose nebo odkaz na podporu v sekci zdrojů.
 ## Závěr
 Po absolvování těchto kroků nyní víte, jak **vytvořit vektorovou vrstvu**, nakonfigurovat toleranci linearizace a **přidat prvek do vrstvy** pro bezproblémové **exportování souboru GeoJSON**. Prozkoumejte další typy geometrie a práci s atributy, abyste plně využili Aspose.GIS ve svých .NET GIS projektech.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Poslední aktualizace:** 2025-12-21  
@@ -142,3 +135,10 @@ Po absolvování těchto kroků nyní víte, jak **vytvořit vektorovou vrstvu**
 **Autor:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -86,23 +86,6 @@ Por fim, gravamos os dados binários WKB gerados em um arquivo chamado `EWkbFile
 
 ## Perguntas Frequentes
 
-### O Aspose.GIS para .NET é compatível com todas as versões do .NET?
-O Aspose.GIS para .NET foi projetado para ser compatível com diversas versões do .NET, garantindo flexibilidade e acessibilidade para desenvolvedores.
-
-### Posso solicitar suporte ou assistência ao usar Aspose.GIS para .NET?
-Sim, você pode buscar suporte e assistência através do dedicado [forum Aspose.GIS](https://forum.aspose.com/c/gis/33), onde especialistas e outros desenvolvedores podem responder às suas dúvidas.
-
-### O Aspose.GIS para .NET oferece um teste gratuito?
-Sim, você pode explorar os recursos e capacidades do Aspose.GIS para .NET por meio de um teste gratuito disponível neste [link](https://releases.aspose.com/).
-
-### Como posso obter uma licença temporária para Aspose.GIS para .NET?
-Você pode obter uma licença temporária visitando a [página de licença temporária](https://purchase.aspose.com/temporary-license/) e seguindo as instruções fornecidas.
-
-### Onde posso comprar uma licença para Aspose.GIS para .NET?
-Você pode adquirir uma licença para Aspose.GIS para .NET na página de compra neste [link](https://purchase.aspose.com/buy).
-
-## Perguntas Frequentes
-
 **Q: Posso usar o arquivo EWKB com o PostGIS?**  
 A: Sim, a variante `ExtendedPostGis` produz EWKB que inclui o SRID, que o PostGIS pode ler diretamente.
 

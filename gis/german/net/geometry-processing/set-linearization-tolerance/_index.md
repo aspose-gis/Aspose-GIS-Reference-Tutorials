@@ -127,13 +127,6 @@ A: Nutzen Sie die Aspose‑Foren oder den Support‑Link im Ressourcen‑Abschni
 ## Fazit
 Durch Befolgen dieser Schritte wissen Sie jetzt, wie Sie **Vektorlayer erstellen**, die Linearisationstoleranz konfigurieren und **Feature zum Layer hinzufügen** können, um nahtlos **GeoJSON‑Dateien exportieren** zu können. Erkunden Sie weitere Geometrietypen und die Handhabung von Attributen, um das volle Potenzial von Aspose.GIS in Ihren .NET‑GIS‑Projekten auszuschöpfen.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Last Updated:** 2025-12-21  
@@ -141,3 +134,10 @@ Durch Befolgen dieser Schritte wissen Sie jetzt, wie Sie **Vektorlayer erstellen
 **Author:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

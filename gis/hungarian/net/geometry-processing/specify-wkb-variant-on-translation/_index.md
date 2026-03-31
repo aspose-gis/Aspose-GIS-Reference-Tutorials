@@ -84,23 +84,6 @@ Végül a generált WKB bináris adatot egy `EWkbFile.ewkb` nevű fájlba írjuk
 | **Helytelen SRID** | Az alapértelmezett `WkbVariant.Standard` használata elveszíti az SRID‑t. | Mindig használd a `WkbVariant.ExtendedPostGis` változatot, ha SRID megőrzésre van szükség. |
 | **Licenc kivétel** | Érvényes licenc hiányában történő futtatás termelésben. | Alkalmazz ideiglenes vagy teljes licencet a kód termelési környezetben történő végrehajtása előtt. |
 
-## GYIK
-
-### Az Aspose.GIS for .NET kompatibilis-e az összes .NET verzióval?
-Az Aspose.GIS for .NET úgy van tervezve, hogy különböző .NET verziókkal kompatibilis legyen, biztosítva a rugalmasságot és a fejlesztők számára elérhetővé téve a technológiát.
-
-### Kérhetek támogatást vagy segítséget az Aspose.GIS for .NET használata közben?
-Igen, támogatást és segítséget kérhetsz a dedikált [Aspose.GIS fórumon](https://forum.aspose.com/c/gis/33), ahol szakértők és fejlesztők válaszolnak a kérdéseidre.
-
-### Az Aspose.GIS for .NET ingyenes próbaidőszakot kínál?
-Igen, ingyenes próbaidőszak keretében felfedezheted az Aspose.GIS for .NET funkcióit a [linken](https://releases.aspose.com/).
-
-### Hogyan szerezhetek ideiglenes licencet az Aspose.GIS for .NET-hez?
-Ideiglenes licencet a [temporary license page](https://purchase.aspose.com/temporary-license/) oldalon szerezhetsz, a megadott útmutató követésével.
-
-### Hol vásárolhatok licencet az Aspose.GIS for .NET-hez?
-Licencet a vásárlási oldalon a [linken](https://purchase.aspose.com/buy) vásárolhatsz.
-
 ## Gyakran feltett kérdések
 **Q: Használhatom az EWKB fájlt PostGIS‑szel?**  
 A: Igen, az `ExtendedPostGis` változat EWKB‑t generál, amely tartalmazza az SRID‑t, és a PostGIS közvetlenül be tudja olvasni.

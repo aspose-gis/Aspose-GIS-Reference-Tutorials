@@ -128,13 +128,6 @@ layer.Add(feature);
 ## สรุป
 โดยทำตามขั้นตอนเหล่านี้คุณจะรู้วิธี **สร้าง vector layer**, ตั้งค่า linearization tolerance, และ **เพิ่ม feature ไปยัง layer** เพื่อสร้าง **ส่งออกไฟล์ GeoJSON** อย่างราบรื่น สำรวจประเภทเรขาคณิตและการจัดการแอตทริบิวต์เพิ่มเติมเพื่อใช้ประโยชน์จาก Aspose.GIS อย่างเต็มที่ในโครงการ GIS บน .NET ของคุณ
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **อัปเดตล่าสุด:** 2025-12-21  
@@ -142,3 +135,10 @@ layer.Add(feature);
 **ผู้เขียน:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

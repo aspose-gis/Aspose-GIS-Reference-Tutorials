@@ -125,13 +125,6 @@ A: Use the Aspose forums or the support link in the resources section.
 ## Conclusion
 By following these steps you now know how to **create vector layer**, configure the linearization tolerance, and **add feature to layer** for seamless **export GeoJSON file** creation. Explore additional geometry types and attribute handling to fully leverage Aspose.GIS in your .NET GIS projects.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Last Updated:** 2025-12-21  
@@ -139,3 +132,10 @@ By following these steps you now know how to **create vector layer**, configure 
 **Author:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

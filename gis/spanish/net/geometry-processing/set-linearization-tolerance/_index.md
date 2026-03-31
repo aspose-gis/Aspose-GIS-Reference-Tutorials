@@ -128,13 +128,6 @@ R: Usa los foros de Aspose o el enlace de soporte en la sección de recursos.
 ## Conclusión
 Al seguir estos pasos ahora sabes cómo **crear capa vectorial**, configurar la tolerancia de linealización y **agregar entidad a la capa** para una creación fluida de **exportar archivo GeoJSON**. Explora tipos de geometría adicionales y el manejo de atributos para aprovechar al máximo Aspose.GIS en tus proyectos GIS con .NET.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Última actualización:** 2025-12-21  
@@ -142,3 +135,10 @@ Al seguir estos pasos ahora sabes cómo **crear capa vectorial**, configurar la 
 **Autor:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -125,15 +125,15 @@ A: Använd Aspose‑forumet eller supportlänken i resurser‑sektionen.
 ## Slutsats
 Genom att följa dessa steg vet du nu hur du **create vector layer**, konfigurerar linjäriserings toleransen och **add feature to layer** för sömlös **export GeoJSON file**‑skapande. Utforska ytterligare geometrityper och attributhantering för att fullt utnyttja Aspose.GIS i dina .NET‑GIS‑projekt.
 
+---
+
+**Senast uppdaterad:** 2025-12-21  
+**Testat med:** Aspose.GIS 24.11 för .NET  
+**Författare:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Senast uppdaterad:** 2025-12-21  
-**Testat med:** Aspose.GIS 24.11 för .NET  
-**Författare:** Aspose

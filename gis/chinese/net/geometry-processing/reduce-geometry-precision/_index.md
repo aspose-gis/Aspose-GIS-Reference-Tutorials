@@ -14,30 +14,30 @@ weight: 15
 
 # 如何在 .NET 中对 Z 进行四舍五入并降低几何精度
 
-## Introduction
+## 简介
 在本教程中，您将学习使用 Aspose.GIS for .NET **对 Z 进行四舍五入** 并降低几何精度的方法。降低几何精度是一种经过验证的技术，可 **提升 GIS 性能** 并在处理大型空间数据集时降低内存消耗。我们将逐步演示每个步骤并提供清晰的说明，帮助您立即在自己的项目中应用此技术。
 
-## Quick Answers
+## 快速解答
 - **“how to round Z” 是什么意思？** 它指的是在几何对象中修剪 Z 坐标的小数位数。  
 - **为什么要降低几何精度？** 它可以减少每个顶点存储的数据量，从而加快空间操作并降低内存使用。  
 - **哪个库提供此功能？** Aspose.GIS for .NET 内置了 `RoundZ` 和 `RoundXY` 方法。  
 - **是否需要许可证？** 免费试用可用于测试；生产环境需要商业许可证。  
 - **我可以控制小数位数吗？** 可以，在 `Round*` 方法中指定所需的位数。
 
-## What is “how to round Z” in GIS?
+## GIS 中“如何对 Z 轴进行舍入”是什么？
 对 Z 坐标进行四舍五入即去除多余的小数精度，例如将 3.345 转换为 3.3（或您定义的任意精度）。这一简单操作可以显著缩小文件大小并加速计算，尤其在第三维度对分析并非关键时效果更佳。
 
-## Why reduce geometry precision with Aspose.GIS?
+## 为什么要使用 Aspose.GIS 降低几何精度？
 - **性能提升：** 数据量更小意味着空间查询和转换更快。  
 - **内存节省：** 更小的顶点表示释放 RAM，使更大的数据集能够驻留在内存中。  
 - **灵活性：** 您可以自行决定精度水平，以在准确性和速度之间取得平衡。
 
-## Prerequisites
+## 前提条件
 在开始之前，请确保具备以下前置条件：
 1. Aspose.GIS for .NET 库：从 [Aspose.GIS website](https://releases.aspose.com/gis/net/) 下载并安装该库。  
 2. 基础的 C# 编程知识：熟悉 C# 编程语言将有助于学习。
 
-## Import Namespaces
+## 导入命名空间
 首先，导入使用 Aspose.GIS 类和方法所需的命名空间。
 
 ```csharp
@@ -49,42 +49,42 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## Step 1: Create a Point
+## 步骤 1：创建点
 让我们先创建一个具有特定坐标的点。
 
 ```csharp
 Point point = new Point(1.344, 2.345, 3.345, 4.345);
 ```
 
-## Step 2: Reduce XY Precision
+## 步骤 2：降低 XY 精度
 现在，将该点的 X 和 Y 坐标精度降低到两位小数。
 
 ```csharp
 point.RoundXY(digits: 2);
 ```
 
-## Step 3: Display Coordinates
+## 步骤 3：显示坐标
 显示该点更新后的坐标。
 
 ```csharp
 Console.WriteLine("{0}, {1}, {2}, {3}", point.X, point.Y, point.Z, point.M);
 ```
 
-## Step 4: Reduce Z Precision – **how to round z**
+## 步骤 4：降低 Z 轴精度 – **如何对 Z 轴进行舍入**
 接下来，将该点的 Z 坐标精度降低到一位小数。这正是 **how to round z** 的核心。
 
 ```csharp
 point.RoundZ(digits: 1);
 ```
 
-## Step 5: Display Updated Coordinates
+## 步骤 5：显示更新后的坐标
 显示在降低 Z 精度后该点的更新坐标。
 
 ```csharp
 Console.WriteLine("{0}, {1}, {2}, {3}", point.X, point.Y, point.Z, point.M);
 ```
 
-## Step 6: Create a LineString
+## 步骤 6：创建线串
 现在，创建一个 `LineString` 并向其中添加点。
 
 ```csharp
@@ -93,14 +93,14 @@ line.AddPoint(1.2, 2.3);
 line.AddPoint(2.4, 3.1);
 ```
 
-## Step 7: Reduce XY Precision of LineString
+## 步骤 7：降低线串的 XY 精度
 将 `LineString` 的 X 和 Y 坐标精度降低到零位小数。
 
 ```csharp
 line.RoundXY(digits: 0);
 ```
 
-## Step 8: Display Updated Coordinates of LineString
+## 步骤 8：显示线串的更新后的坐标
 显示在降低 XY 精度后 `LineString` 的更新坐标。
 
 ```csharp
@@ -108,12 +108,12 @@ Console.WriteLine("{0}, {1}", line[0].X, line[0].Y);
 Console.WriteLine("{0}, {1}", line[1].X, line[1].Y);
 ```
 
-## Common Use Cases & Tips
+## 常见用例和技巧
 - **大型栅格‑矢量转换：** 对 Z 进行四舍五入可以缩小中间几何文件。  
 - **移动 GIS 应用：** 降低精度可在网络传输几何时减少带宽消耗。  
 - **专业提示：** 在 `RoundZ` 之前先使用 `RoundXY`，以保持工作流的一致性。
 
-## Frequently Asked Questions
+## 常见问题解答
 
 **Q: 为什么在 GIS 中降低几何精度很重要？**  
 A: 降低几何精度有助于优化内存使用并提升性能，尤其在处理大型数据集的 GIS 应用时效果显著。

@@ -124,15 +124,15 @@ A: 使用 Aspose 論壇或資源區段中的支援連結。
 ## 結論
 透過上述步驟，您現在已了解如何 **create vector layer**、設定線性化容差，並 **add feature to layer**，以順利完成 **export GeoJSON file** 的建立。探索更多幾何類型與屬性處理，充分發揮 Aspose.GIS 在 .NET GIS 專案中的威力。
 
+---
+
+**最後更新：** 2025-12-21  
+**測試環境：** Aspose.GIS 24.11 for .NET  
+**作者：** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**最後更新：** 2025-12-21  
-**測試環境：** Aspose.GIS 24.11 for .NET  
-**作者：** Aspose

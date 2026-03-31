@@ -84,22 +84,6 @@ Tot slot schrijven we de gegenereerde WKB‑binaire data naar een bestand met de
 | **Onjuiste SRID** | Het gebruik van de standaard `WkbVariant.Standard` verliest SRID. | Gebruik altijd `WkbVariant.ExtendedPostGis` wanneer SRID‑behoud vereist is. |
 | **Licentie‑exception** | Uitvoeren zonder geldige licentie in productie. | Pas een tijdelijke of volledige licentie toe voordat je de code in een productie‑omgeving uitvoert. |
 
-## Veelgestelde vragen
-### Is Aspose.GIS voor .NET compatibel met alle .NET‑versies?
-Aspose.GIS voor .NET is ontworpen om compatibel te zijn met verschillende .NET‑versies, waardoor flexibiliteit en toegankelijkheid voor ontwikkelaars gewaarborgd zijn.
-
-### Kan ik ondersteuning of hulp aanvragen tijdens het gebruik van Aspose.GIS voor .NET?
-Ja, je kunt ondersteuning en hulp zoeken via het speciale [Aspose.GIS‑forum](https://forum.aspose.com/c/gis/33), waar experts en mede‑ontwikkelaars je vragen kunnen beantwoorden.
-
-### Biedt Aspose.GIS voor .NET een gratis proefversie?
-Ja, je kunt de functies en mogelijkheden van Aspose.GIS voor .NET verkennen via een gratis proefversie die beschikbaar is via [deze link](https://releases.aspose.com/).
-
-### Hoe kan ik een tijdelijke licentie voor Aspose.GIS voor .NET verkrijgen?
-Je kunt een tijdelijke licentie verkrijgen door de [pagina voor tijdelijke licenties](https://purchase.aspose.com/temporary-license/) te bezoeken en de gegeven instructies te volgen.
-
-### Waar kan ik een licentie voor Aspose.GIS voor .NET aanschaffen?
-Je kunt een licentie voor Aspose.GIS voor .NET kopen op de aankooppagina via [deze link](https://purchase.aspose.com/buy).
-
 ## Frequently Asked Questions
 **Q: Kan ik het EWKB‑bestand gebruiken met PostGIS?**  
 A: Ja, de `ExtendedPostGis`‑variant produceert EWKB die SRID bevat, wat PostGIS direct kan lezen.

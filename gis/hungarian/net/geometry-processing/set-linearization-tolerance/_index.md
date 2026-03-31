@@ -128,13 +128,6 @@ A: Használd az Aspose fórumokat vagy a források szekcióban található támo
 ## Összegzés
 Ezekkel a lépésekkel most már tudod, hogyan **vektor réteget hozz létre**, hogyan állítsd be a linearizációs toleranciát, és hogyan **jellemzőt adj a réteghez** a zökkenőmentes **GeoJSON fájl exportálás** érdekében. Fedezz fel további geometria típusokat és attribútumkezelést, hogy teljes mértékben kiaknázhasd az Aspose.GIS lehetőségeit .NET GIS projektjeidben.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Utoljára frissítve:** 2025-12-21  
@@ -142,3 +135,10 @@ Ezekkel a lépésekkel most már tudod, hogyan **vektor réteget hozz létre**, 
 **Szerző:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

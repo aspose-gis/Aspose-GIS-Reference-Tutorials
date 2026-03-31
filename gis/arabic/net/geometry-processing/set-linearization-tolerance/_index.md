@@ -124,15 +124,15 @@ layer.Add(feature);
 ## الخلاصة
 باتباع هذه الخطوات، أصبحت الآن تعرف كيفية **create vector layer**، وتكوين تسامح الخطية، و**add feature to layer** لإنشاء **export GeoJSON file** بسلاسة. استكشف أنواع أشكال هندسية إضافية ومعالجة السمات للاستفادة الكاملة من Aspose.GIS في مشاريع GIS الخاصة بـ .NET.
 
+---
+
+**آخر تحديث:** 2025-12-21  
+**تم الاختبار مع:** Aspose.GIS 24.11 for .NET  
+**المؤلف:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**آخر تحديث:** 2025-12-21  
-**تم الاختبار مع:** Aspose.GIS 24.11 for .NET  
-**المؤلف:** Aspose

@@ -128,13 +128,6 @@ layer.Add(feature);
 ## Заключение
 Следуя этим шагам, вы теперь знаете, как **создать векторный слой**, настроить допуск линейризации и **добавить объект в слой** для бесшовного **экспорта файла GeoJSON**. Исследуйте дополнительные типы геометрий и работу с атрибутами, чтобы полностью раскрыть потенциал Aspose.GIS в ваших .NET GIS‑проектах.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Последнее обновление:** 2025-12-21  
@@ -142,3 +135,10 @@ layer.Add(feature);
 **Автор:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

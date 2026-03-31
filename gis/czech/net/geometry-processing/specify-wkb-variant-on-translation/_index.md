@@ -85,22 +85,6 @@ Nakonec zapíšeme vygenerovaná binární data WKB do souboru s názvem `EWkbFi
 | **Licence výjimka** | Spouštění bez platné licence v produkci. | Aplikujte dočasnou nebo plnou licenci před spuštěním kódu v produkčním prostředí. |
 
 ## Často kladené otázky
-### Je Aspose.GIS pro .NET kompatibilní se všemi verzemi .NET?
-Aspose.GIS pro .NET je navržen tak, aby byl kompatibilní s různými verzemi .NET, což zajišťuje flexibilitu a přístupnost pro vývojáře.
-
-### Mohu požádat o podporu nebo asistenci při používání Aspose.GIS pro .NET?
-Ano, můžete získat podporu a asistenci prostřednictvím dedikovaného [Aspose.GIS fóra](https://forum.aspose.com/c/gis/33), kde odborníci a ostatní vývojáři odpoví na vaše dotazy.
-
-### Nabízí Aspose.GIS pro .NET bezplatnou zkušební verzi?
-Ano, funkce a možnosti Aspose.GIS pro .NET můžete vyzkoušet zdarma na [tento odkaz](https://releases.aspose.com/).
-
-### Jak mohu získat dočasnou licenci pro Aspose.GIS pro .NET?
-Dočasnou licenci získáte návštěvou [stránky dočasné licence](https://purchase.aspose.com/temporary-license/) a podle poskytnutých instrukcí.
-
-### Kde mohu zakoupit licenci pro Aspose.GIS pro .NET?
-Licenci pro Aspose.GIS pro .NET můžete zakoupit na stránce nákupu na [tento odkaz](https://purchase.aspose.com/buy).
-
-## Často kladené otázky
 **Q: Mohu použít soubor EWKB s PostGIS?**  
 A: Ano, varianta `ExtendedPostGis` vytváří EWKB, který obsahuje SRID a PostGIS jej může přímo načíst.
 

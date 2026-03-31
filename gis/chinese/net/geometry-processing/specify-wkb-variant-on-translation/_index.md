@@ -83,23 +83,7 @@ File.WriteAllBytes(Path.Combine("Your Document Directory", "EWkbFile.ewkb"), wkb
 | **SRID 不正确** | 使用默认的 `WkbVariant.Standard` 会丢失 SRID。 | 在需要保留 SRID 时始终使用 `WkbVariant.ExtendedPostGis`。 |
 | **许可证异常** | 在生产环境中未使用有效许可证运行。 | 在生产环境执行代码前应用临时或正式许可证。 |
 
-## 常见问答
-### Aspose.GIS for .NET 是否兼容所有 .NET 版本？
-Aspose.GIS for .NET 设计为兼容多种 .NET 版本，确保开发者拥有灵活性和可访问性。
-
-### 使用 Aspose.GIS for .NET 时，我可以请求支持或帮助吗？
-可以，您可以通过专门的 [Aspose.GIS 论坛](https://forum.aspose.com/c/gis/33) 寻求支持，专家和其他开发者会帮助解答您的疑问。
-
-### Aspose.GIS for .NET 是否提供免费试用？
-是的，您可以通过 [此链接](https://releases.aspose.com/) 获取免费试用，体验 Aspose.GIS for .NET 的功能与能力。
-
-### 如何获取 Aspose.GIS for .NET 的临时许可证？
-请访问 [temporary license page](https://purchase.aspose.com/temporary-license/) 并按照说明获取临时许可证。
-
-### 在哪里可以购买 Aspose.GIS for .NET 的许可证？
-您可以在购买页面通过 [此链接](https://purchase.aspose.com/buy) 进行购买。
-
-## Frequently Asked Questions
+## 常见问题解答
 **Q: 可以在 PostGIS 中使用 EWKB 文件吗？**  
 A: 可以，`ExtendedPostGis` 变体生成的 EWKB 包含 SRID，PostGIS 能直接读取。
 

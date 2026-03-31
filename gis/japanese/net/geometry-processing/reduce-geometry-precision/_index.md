@@ -14,31 +14,31 @@ weight: 15
 
 # Z を丸め、.NET でジオメトリ精度を削減する方法
 
-## Introduction
+## はじめに
 このチュートリアルでは、Aspose.GIS for .NET を使用して **Z を丸める** 方法とジオメトリ精度を削減する方法を学びます。ジオメトリ精度の削減は、**GIS のパフォーマンスを向上させ**、大規模な空間データセットを扱う際のメモリ使用量を削減する実証済みの手法です。各ステップを明確に説明しながら進めるので、すぐに自分のプロジェクトにこの手法を適用できます。
 
-## Quick Answers
+## よくある質問
 - **“how to round Z” は何を意味しますか？** ジオメトリオブジェクトの Z 座標の小数点以下の桁数を削減することを指します。  
 - **なぜジオメトリ精度を削減するのですか？** 頂点ごとに保存されるデータ量が減少し、空間操作が高速化され、メモリ使用量が削減されます。  
 - **どのライブラリがこれを処理しますか？** Aspose.GIS for .NET は組み込みの `RoundZ` と `RoundXY` メソッドを提供します。  
 - **ライセンスは必要ですか？** 無料トライアルでテストは可能ですが、本番環境では商用ライセンスが必要です。  
 - **小数点以下の桁数を制御できますか？** はい、`Round*` メソッドで希望の桁数を指定します。
 
-## What is “how to round Z” in GIS?
+## GISで「Z座標を丸める方法」とは？
 Z 座標を丸めることは余分な小数精度を削減し、たとえば 3.345 を 3.3（または任意の精度）に変換します。このシンプルな操作は、特に第3次元が分析に重要でない場合、ファイルサイズを大幅に縮小し、計算を高速化することができます。
 
-## Why reduce geometry precision with Aspose.GIS?
+## Aspose.GISでジオメトリの精度を下げるメリットは？
 - **パフォーマンス向上:** 処理データが少なくなることで、空間クエリや変換が高速化します。  
 - **メモリ節約:** 小さな頂点表現により RAM が解放され、より大きなデータセットをメモリ内に保持できます。  
 - **柔軟性:** 正確さと速度のバランスを取る精度レベルを自分で決定できます。
 
-## Prerequisites
+## 前提条件
 開始する前に、以下の前提条件が揃っていることを確認してください。
 
 1. Aspose.GIS for .NET ライブラリ: [Aspose.GIS website](https://releases.aspose.com/gis/net/) からダウンロードしてインストールしてください。  
 2. C# プログラミングの基本知識: C# 言語に慣れていると役立ちます。
 
-## Import Namespaces
+## 名前空間のインポート
 まず、Aspose.GIS のクラスとメソッドを使用するために必要な名前空間をインポートします。
 
 ```csharp
@@ -50,42 +50,42 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## Step 1: Create a Point
+## ステップ1：ポイントの作成
 まず、特定の座標を持つポイントを作成しましょう。
 
 ```csharp
 Point point = new Point(1.344, 2.345, 3.345, 4.345);
 ```
 
-## Step 2: Reduce XY Precision
+## ステップ2：XY座標の精度を下げる
 次に、ポイントの X および Y 座標の精度を小数点以下 2 桁に削減します。
 
 ```csharp
 point.RoundXY(digits: 2);
 ```
 
-## Step 3: Display Coordinates
+## ステップ3：座標の表示
 ポイントの更新された座標を表示します。
 
 ```csharp
 Console.WriteLine("{0}, {1}, {2}, {3}", point.X, point.Y, point.Z, point.M);
 ```
 
-## Step 4: Reduce Z Precision – **how to round z**
+## ステップ4：Z座標の精度を下げる – **Z座標を丸める方法**
 次に、ポイントの Z 座標の精度を小数点以下 1 桁に削減しましょう。これが **how to round z** の核心です。
 
 ```csharp
 point.RoundZ(digits: 1);
 ```
 
-## Step 5: Display Updated Coordinates
+## ステップ5：更新された座標の表示
 Z 精度を削減した後のポイントの更新された座標を表示します。
 
 ```csharp
 Console.WriteLine("{0}, {1}, {2}, {3}", point.X, point.Y, point.Z, point.M);
 ```
 
-## Step 6: Create a LineString
+## ステップ6：ラインストリングの作成
 次に、`LineString` を作成し、ポイントを追加しましょう。
 
 ```csharp
@@ -94,14 +94,14 @@ line.AddPoint(1.2, 2.3);
 line.AddPoint(2.4, 3.1);
 ```
 
-## Step 7: Reduce XY Precision of LineString
+## ステップ7：ラインストリングのXY座標の精度を下げる
 `LineString` の X および Y 座標の精度を小数点以下 0 桁に削減します。
 
 ```csharp
 line.RoundXY(digits: 0);
 ```
 
-## Step 8: Display Updated Coordinates of LineString
+## ステップ8：ラインストリングの更新された座標の表示
 XY 精度を削減した後の `LineString` の更新された座標を表示します。
 
 ```csharp
@@ -109,12 +109,12 @@ Console.WriteLine("{0}, {1}", line[0].X, line[0].Y);
 Console.WriteLine("{0}, {1}", line[1].X, line[1].Y);
 ```
 
-## Common Use Cases & Tips
+## 一般的な使用例とヒント
 - **大規模なラスタ‑ベクタ変換:** Z を丸めることで中間ジオメトリファイルを縮小できます。  
 - **モバイル GIS アプリ:** 精度を下げることで、ネットワーク上でジオメトリを送信する際の帯域幅が削減されます。  
 - **プロのコツ:** ワークフローを一貫させるために、`RoundZ` の前に `RoundXY` を適用してください。
 
-## Frequently Asked Questions
+## よくある質問
 
 **Q: なぜジオメトリ精度の削減が GIS で重要なのですか？**  
 A: ジオメトリ精度を削減することで、メモリ使用量を最適化し、特に大規模データセットを扱う GIS アプリケーションでパフォーマンスが向上します。

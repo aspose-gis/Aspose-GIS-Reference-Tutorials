@@ -85,22 +85,6 @@ Son olarak, oluşturulan WKB ikili verisini seçtiğiniz dizinde `EWkbFile.ewkb`
 | **Lisans istisnası** | Üretim ortamında geçerli bir lisans olmadan çalıştırmak. | Üretim ortamında kodu çalıştırmadan önce geçici veya tam bir lisans uygulayın. |
 
 ## Sık Sorulan Sorular
-### Aspose.GIS for .NET tüm .NET sürümleriyle uyumlu mu?
-Aspose.GIS for .NET, çeşitli .NET sürümleriyle uyumlu olacak şekilde tasarlanmıştır; bu sayede geliştiriciler için esneklik ve erişilebilirlik sağlar.
-
-### Aspose.GIS for .NET kullanırken destek veya yardım talep edebilir miyim?
-Evet, uzmanların ve diğer geliştiricilerin sorularınızı yanıtlayabileceği özel [Aspose.GIS forumu](https://forum.aspose.com/c/gis/33) üzerinden destek ve yardım alabilirsiniz.
-
-### Aspose.GIS for .NET ücretsiz deneme sunuyor mu?
-Evet, [bu bağlantı](https://releases.aspose.com/) üzerinden mevcut olan ücretsiz deneme sürümüyle Aspose.GIS for .NET'in özellik ve yeteneklerini keşfedebilirsiniz.
-
-### Aspose.GIS for .NET için geçici bir lisans nasıl alabilirim?
-[Geçici lisans sayfasını](https://purchase.aspose.com/temporary-license/) ziyaret ederek ve verilen talimatları izleyerek geçici bir lisans edinebilirsiniz.
-
-### Aspose.GIS for .NET için lisans nereden satın alınabilir?
-Lisansı, [bu bağlantı](https://purchase.aspose.com/buy) üzerinden satın alabilirsiniz.
-
-## Sık Sorulan Sorular
 **S: EWKB dosyasını PostGIS ile kullanabilir miyim?**  
 C: Evet, `ExtendedPostGis` varyantı SRID'yi içeren EWKB üretir; PostGIS bunu doğrudan okuyabilir.
 

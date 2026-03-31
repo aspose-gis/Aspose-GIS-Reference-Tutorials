@@ -128,13 +128,6 @@ R: Use os fóruns da Aspose ou o link de suporte na seção de recursos.
 ## Conclusão
 Seguindo estes passos, você agora sabe como **criar camada vetorial**, configurar a tolerância de linearização e **adicionar recurso à camada** para criar **exportar arquivo GeoJSON** de forma fluida. Explore tipos de geometria adicionais e o tratamento de atributos para aproveitar ao máximo o Aspose.GIS em seus projetos GIS .NET.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Última atualização:** 2025-12-21  
@@ -142,3 +135,10 @@ Seguindo estes passos, você agora sabe como **criar camada vetorial**, configur
 **Autor:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

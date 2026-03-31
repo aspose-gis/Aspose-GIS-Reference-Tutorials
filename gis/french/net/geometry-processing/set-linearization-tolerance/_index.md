@@ -128,13 +128,6 @@ R : Utilisez les forums Aspose ou le lien de support dans la section ressource
 ## Conclusion
 En suivant ces étapes, vous savez maintenant comment **créer une couche vectorielle**, configurer la tolérance de linéarisation et **ajouter une entité à la couche** pour une création fluide de **fichier GeoJSON exporté**. Explorez d’autres types de géométries et la gestion des attributs pour exploiter pleinement Aspose.GIS dans vos projets GIS .NET.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Dernière mise à jour :** 2025-12-21  
@@ -142,3 +135,10 @@ En suivant ces étapes, vous savez maintenant comment **créer une couche vector
 **Auteur :** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

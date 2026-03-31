@@ -85,22 +85,6 @@ File.WriteAllBytes(Path.Combine("Your Document Directory", "EWkbFile.ewkb"), wkb
 | **License exception** | รันโดยไม่มีลิขสิทธิ์ที่ถูกต้องในสภาพแวดล้อมการผลิต | ใส่ลิขสิทธิ์ชั่วคราวหรือเต็มก่อนรันโค้ดในสภาพแวดล้อมการผลิต |
 
 ## คำถามที่พบบ่อย
-### Aspose.GIS สำหรับ .NET รองรับทุกเวอร์ชันของ .NET หรือไม่?
-Aspose.GIS สำหรับ .NET ถูกออกแบบให้เข้ากันได้กับหลายเวอร์ชันของ .NET เพื่อให้มีความยืดหยุ่นและเข้าถึงได้สำหรับนักพัฒนา
-
-### สามารถขอรับการสนับสนุนหรือความช่วยเหลือขณะใช้ Aspose.GIS สำหรับ .NET ได้หรือไม่?
-ได้ คุณสามารถขอรับการสนับสนุนและความช่วยเหลือผ่าน [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) ซึ่งผู้เชี่ยวชาญและนักพัฒนาคนอื่น ๆ จะตอบคำถามของคุณ
-
-### Aspose.GIS สำหรับ .NET มีรุ่นทดลองฟรีหรือไม่?
-มี คุณสามารถสำรวจคุณลักษณะและความสามารถของ Aspose.GIS สำหรับ .NET ผ่านรุ่นทดลองฟรีที่ [this link](https://releases.aspose.com/)
-
-### จะขอรับลิขสิทธิ์ชั่วคราวสำหรับ Aspose.GIS สำหรับ .NET ได้อย่างไร?
-คุณสามารถขอรับลิขสิทธิ์ชั่วคราวได้โดยไปที่ [temporary license page](https://purchase.aspose.com/temporary-license/) แล้วทำตามคำแนะนำที่ให้ไว้
-
-### จะซื้อลิขสิทธิ์สำหรับ Aspose.GIS สำหรับ .NET ได้จากที่ไหน?
-คุณสามารถซื้อลิขสิทธิ์สำหรับ Aspose.GIS สำหรับ .NET ได้จากหน้าการซื้อที่ [this link](https://purchase.aspose.com/buy)
-
-## Frequently Asked Questions
 **Q: สามารถใช้ไฟล์ EWKB กับ PostGIS ได้หรือไม่?**  
 A: ใช่, variant `ExtendedPostGis` จะสร้าง EWKB ที่รวม SRID ซึ่ง PostGIS สามารถอ่านได้โดยตรง
 

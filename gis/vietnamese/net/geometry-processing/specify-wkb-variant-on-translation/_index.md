@@ -83,22 +83,6 @@ Finally, we write the generated WKB binary data to a file named `EWkbFile.ewkb` 
 | **Ngoại lệ giấy phép** | Chạy mà không có giấy phép hợp lệ trong môi trường sản xuất. | Áp dụng giấy phép tạm thời hoặc đầy đủ trước khi thực thi mã trong môi trường sản xuất. |
 
 ## Câu hỏi thường gặp
-### Aspose.GIS cho .NET có tương thích với tất cả các phiên bản .NET không?
-Aspose.GIS for .NET is designed to be compatible with various versions of .NET, ensuring flexibility and accessibility for developers.
-
-### Tôi có thể yêu cầu hỗ trợ hoặc trợ giúp khi sử dụng Aspose.GIS cho .NET không?
-Yes, you can seek support and assistance through the dedicated [Aspose.GIS forum](https://forum.aspose.com/c/gis/33), where experts and fellow developers can address your queries.
-
-### Aspose.GIS cho .NET có cung cấp bản dùng thử miễn phí không?
-Yes, you can explore the features and capabilities of Aspose.GIS for .NET through a free trial available at [this link](https://releases.aspose.com/).
-
-### Làm sao tôi có thể lấy giấy phép tạm thời cho Aspose.GIS cho .NET?
-You can obtain a temporary license by visiting the [temporary license page](https://purchase.aspose.com/temporary-license/) and following the provided instructions.
-
-### Tôi có thể mua giấy phép cho Aspose.GIS cho .NET ở đâu?
-You can purchase a license for Aspose.GIS for .NET from the purchase page at [this link](https://purchase.aspose.com/buy).
-
-## Câu hỏi thường gặp
 **Q: Tôi có thể sử dụng tệp EWKB với PostGIS không?**  
 A: Yes, the `ExtendedPostGis` variant produces EWKB that includes SRID, which PostGIS can read directly.
 

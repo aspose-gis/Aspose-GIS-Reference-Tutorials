@@ -126,15 +126,15 @@ C: Aspose forumlarını veya kaynaklar bölümündeki destek bağlantısını ku
 ## Sonuç
 Bu adımları izleyerek artık **create vector layer** nasıl yapılacağını, lineerleştirme toleransını nasıl yapılandıracağınızı ve sorunsuz bir **export GeoJSON file** oluşturmak için **add feature to layer** işlemini nasıl gerçekleştireceğinizi biliyorsunuz. Ek geometri tiplerini ve öznitelik yönetimini keşfederek Aspose.GIS'i .NET GIS projelerinizde tam anlamıyla kullanın.
 
+---
+
+**Son Güncelleme:** 2025-12-21  
+**Test Edilen Versiyon:** Aspose.GIS 24.11 for .NET  
+**Yazar:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Son Güncelleme:** 2025-12-21  
-**Test Edilen Versiyon:** Aspose.GIS 24.11 for .NET  
-**Yazar:** Aspose

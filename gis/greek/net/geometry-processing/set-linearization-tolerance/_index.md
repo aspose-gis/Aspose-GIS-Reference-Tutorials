@@ -128,13 +128,6 @@ layer.Add(feature);
 ## Συμπέρασμα
 Ακολουθώντας αυτά τα βήματα, τώρα ξέρετε πώς να **create vector layer**, να διαμορφώσετε την ανοχή γραμμικοποίησης και να **add feature to layer** για απρόσκοπτη δημιουργία **export GeoJSON file**. Εξερευνήστε πρόσθετους τύπους γεωμετρίας και διαχείριση χαρακτηριστικών για να αξιοποιήσετε πλήρως το Aspose.GIS στα .NET GIS έργα σας.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Τελευταία Ενημέρωση:** 2025-12-21  
@@ -142,3 +135,10 @@ layer.Add(feature);
 **Συγγραφέας:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

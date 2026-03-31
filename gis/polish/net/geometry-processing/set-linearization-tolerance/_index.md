@@ -128,13 +128,6 @@ O: Skorzystaj z forów Aspose lub linku wsparcia w sekcji zasobów.
 ## Zakończenie
 Postępując zgodnie z tymi krokami, teraz wiesz, jak **utworzyć warstwę wektorową**, skonfigurować tolerancję linearyzacji oraz **dodać obiekt do warstwy** w celu bezproblemowego **eksportu pliku GeoJSON**. Eksperymentuj z dodatkowymi typami geometrii i obsługą atrybutów, aby w pełni wykorzystać możliwości Aspose.GIS w swoich projektach GIS opartych na .NET.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Ostatnia aktualizacja:** 2025-12-21  
@@ -142,3 +135,10 @@ Postępując zgodnie z tymi krokami, teraz wiesz, jak **utworzyć warstwę wekto
 **Autor:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

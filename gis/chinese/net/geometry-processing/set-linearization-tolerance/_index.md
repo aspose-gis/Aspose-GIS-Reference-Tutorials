@@ -126,13 +126,6 @@ layer.Add(feature);
 ## 结论
 通过本教程，您已经掌握了如何 **创建矢量图层**、配置线性化容差，以及 **向图层添加要素**，从而实现无缝的 **导出 GeoJSON 文件**。探索更多几何类型和属性处理，以充分利用 Aspose.GIS 在 .NET GIS 项目中的强大功能。
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **最后更新：** 2025-12-21  
@@ -140,3 +133,10 @@ layer.Add(feature);
 **作者：** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}
