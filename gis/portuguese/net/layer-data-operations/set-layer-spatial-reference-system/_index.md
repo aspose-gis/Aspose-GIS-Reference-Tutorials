@@ -96,22 +96,6 @@ Repita estas etapas de acordo com seu caso de uso específico, e você estará b
 | **CRS incorreto exibido** | Uso do código EPSG errado | Verifique novamente o código EPSG com uma fonte autoritária (por exemplo, EPSG.io). |
 | **Recurso não salvo** | Não chamar `layer.Add(feature)` dentro do bloco `using` | Garanta que o método `Add` seja executado antes que a camada seja descartada. |
 
-## Perguntas Frequentes
-### O Aspose.GIS é compatível com outras bibliotecas GIS?
-Sim, o Aspose.GIS integra‑se bem com outras bibliotecas GIS e pode ser usado em conjunto com elas.
-
-### Posso usar o Aspose.GIS tanto para aplicativos desktop quanto web?
-Absolutamente! O Aspose.GIS é versátil e pode ser utilizado tanto em aplicativos desktop quanto em aplicações baseadas na web.
-
-### Existem opções de licenciamento disponíveis para o Aspose.GIS?
-Sim, você pode explorar as opções de licenciamento e fazer uma compra [aqui](https://purchase.aspose.com/buy).
-
-### Existe uma versão de teste gratuita disponível para o Aspose.GIS?
-Certamente! Você pode baixar uma versão de teste gratuita [aqui](https://releases.aspose.com/).
-
-### Onde posso buscar suporte para dúvidas relacionadas ao Aspose.GIS?
-Para qualquer suporte ou dúvidas, visite o [forum Aspose.GIS](https://forum.aspose.com/c/gis/33).
-
 ## Perguntas Frequentes Adicionais
 **Q: Como altero o CRS de um Shapefile existente?**  
 A: Abra a camada, crie um novo `SpatialReferenceSystem` com o código EPSG desejado e atribua‑o a `layer.SpatialReferenceSystem` antes de salvar.

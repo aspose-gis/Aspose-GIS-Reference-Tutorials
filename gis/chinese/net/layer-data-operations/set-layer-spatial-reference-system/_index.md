@@ -96,22 +96,6 @@ using (VectorLayer layer = VectorLayer.Open(path, Drivers.Shapefile))
 | **显示的 CRS 不正确** | 使用了错误的 EPSG 代码 | 使用权威来源（如 EPSG.io）再次确认 EPSG 代码。 |
 | **要素未保存** | 在 `using` 块内未调用 `layer.Add(feature)` | 确保在释放图层之前执行 `Add` 方法。 |
 
-## 常见问答
-### Aspose.GIS 与其他 GIS 库兼容吗？
-是的，Aspose.GIS 可与其他 GIS 库良好集成，并可协同使用。
-
-### Aspose.GIS 可用于桌面和 Web 应用吗？
-当然！Aspose.GIS 具备多平台特性，可用于桌面和基于 Web 的应用程序。
-
-### Aspose.GIS 有哪些授权选项？
-有，您可以在[此处](https://purchase.aspose.com/buy)了解并购买授权。
-
-### 是否提供 Aspose.GIS 的免费试用版？
-当然！您可以在[此处](https://releases.aspose.com/)下载免费试用版。
-
-### 在哪里可以获取 Aspose.GIS 相关的支持？
-如需支持或咨询，请访问 [Aspose.GIS 论坛](https://forum.aspose.com/c/gis/33)。
-
 ## 其他常见问答
 **问：如何更改已有 Shapefile 的 CRS？**  
 答：打开图层，使用所需的 EPSG 代码创建新的 `SpatialReferenceSystem`，并在保存前将其赋值给 `layer.SpatialReferenceSystem`。

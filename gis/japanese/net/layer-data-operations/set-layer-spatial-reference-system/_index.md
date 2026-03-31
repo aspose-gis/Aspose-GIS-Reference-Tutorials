@@ -96,22 +96,6 @@ using (VectorLayer layer = VectorLayer.Open(path, Drivers.Shapefile))
 | **CRS が正しく表示されない** | 誤った EPSG コードを使用している | 権威ある情報源（例: EPSG.io）で EPSG コードを再確認してください。 |
 | **フィーチャーが保存されない** | `using` ブロック内で `layer.Add(feature)` を呼び出していない | レイヤーが破棄される前に `Add` メソッドが実行されていることを確認してください。 |
 
-## FAQ
-### Aspose.GIS は他の GIS ライブラリと互換性がありますか？
-はい、Aspose.GIS は他の GIS ライブラリとうまく統合でき、併用が可能です。
-
-### Aspose.GIS はデスクトップとウェブの両方のアプリケーションで使用できますか？
-もちろんです！Aspose.GIS は汎用性が高く、デスクトップアプリケーションでもウェブベースのアプリケーションでも利用できます。
-
-### Aspose.GIS のライセンスオプションはありますか？
-はい、ライセンスオプションを確認し、購入は[こちら](https://purchase.aspose.com/buy)から行えます。
-
-### Aspose.GIS の無料トライアルはありますか？
-あります！無料トライアル版は[こちら](https://releases.aspose.com/)からダウンロードできます。
-
-### Aspose.GIS に関するサポートはどこで受けられますか？
-サポートや質問は[Aspose.GIS フォーラム](https://forum.aspose.com/c/gis/33)をご利用ください。
-
 ## 追加の FAQ
 **Q: 既存のシェープファイルの CRS を変更するには？**  
 A: レイヤーを開き、目的の EPSG コードで新しい `SpatialReferenceSystem` を作成し、`layer.SpatialReferenceSystem` に割り当ててから保存します。

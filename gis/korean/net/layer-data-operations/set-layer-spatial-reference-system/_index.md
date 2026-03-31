@@ -96,22 +96,6 @@ using (VectorLayer layer = VectorLayer.Open(path, Drivers.Shapefile))
 | **잘못된 CRS 표시** | 잘못된 EPSG 코드를 사용함 | 권위 있는 소스(e.g., EPSG.io)에서 EPSG 코드를 다시 확인하십시오. |
 | **피처가 저장되지 않음** | `using` 블록 내에서 `layer.Add(feature)`를 호출하지 않음 | 레이어가 해제되기 전에 `Add` 메서드가 실행되었는지 확인하십시오. |
 
-## 자주 묻는 질문
-### Aspose.GIS가 다른 GIS 라이브러리와 호환되나요?
-예, Aspose.GIS는 다른 GIS 라이브러리와 잘 통합되며 함께 사용할 수 있습니다.
-
-### Aspose.GIS를 데스크톱 및 웹 애플리케이션 모두에 사용할 수 있나요?
-물론입니다! Aspose.GIS는 데스크톱 및 웹 기반 애플리케이션 모두에서 활용할 수 있는 다목적 솔루션입니다.
-
-### Aspose.GIS에 대한 라이선스 옵션이 있나요?
-예, 라이선스 옵션을 확인하고 구매는 [여기](https://purchase.aspose.com/buy)에서 진행할 수 있습니다.
-
-### Aspose.GIS에 대한 무료 체험판이 있나요?
-네! 무료 체험판은 [여기](https://releases.aspose.com/)에서 다운로드할 수 있습니다.
-
-### Aspose.GIS 관련 문의에 대한 지원은 어디서 받을 수 있나요?
-지원이나 문의 사항이 있으면 [Aspose.GIS 포럼](https://forum.aspose.com/c/gis/33)을 방문하십시오.
-
 ## 추가 자주 묻는 질문
 **Q: 기존 Shapefile의 CRS를 어떻게 변경하나요?**  
 A: 레이어를 열고 원하는 EPSG 코드를 사용해 새로운 `SpatialReferenceSystem`을 만든 뒤, 저장하기 전에 `layer.SpatialReferenceSystem`에 할당합니다.

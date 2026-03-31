@@ -16,25 +16,25 @@ weight: 19
 
 # Vektör Katmanı Oluşturma ve Katman Uzamsal Referans Sistemini Ayarlama
 
-## Introduction
-Coğrafi Bilgi Sistemleri (GIS) dünyasında **Aspose.GIS for .NET**, geliştiriciler için sağlam ve çok yönlü bir araç olarak öne çıkar. Bu öğreticide **vektör katmanı oluşturacak**, uzamsal referansını tanımlayacak, bir nokta özelliği ekleyecek ve EPSG kodunu alacaksınız—hepsi net, adım‑adım yönergelerle. İster deneyimli bir GIS mühendisi olun, ister yeni başlıyor olun, bu teknikler shapefile koordinat sistemini doğru şekilde ayarlamanıza ve mekansal veri iş akışlarınızın güvenilirliğini artırmanıza yardımcı olacaktır.
+## Giriiş
+Coğrafi Bilgi Sistemleri (GIS) dünyasında **Aspose.GIS for .NET**, geliştiriciler için sağlam ve çok yönlü bir araç olarak öne çıkar. Bu öğreticide **vektör planı oluşturacak**, uzamsal referansını tanımlayacak, bir nokta özelliği ekleyecek ve EPSG verilerini sunacak—hepsi net, adım‑adım talimatlarla. İster havade bir GIS mühendisi olun, ister yeni başlayın, bu teknikler şekil dosyası koordinat sistemini doğru şekilde ayarlamanıza ve mekansal veri akışlarının verimliliğini artırmanıza yardımcı olacaktır.
 
-## Quick Answers
-- **“Vektör katmanı oluşturma” ne anlama gelir?** Yeni bir GIS katmanı (ör. bir Shapefile) oluşturur ve nokta, çizgi veya çokgen gibi geometrileri depolayabilir.  
-- **Örnekte hangi EPSG kodu kullanılıyor?** EPSG 26918 (NAD83 / UTM zone 18N).  
-- **Katmanı oluşturduktan sonra bir nokta özelliği ekleyebilir miyim?** Evet—`ConstructFeature()` kullanın ve bir `Point` geometrisi atayın.  
-- **Katmanın CRS'sini nasıl alırım?** `layer.SpatialReferenceSystem.EpsgCode` veya `.Name` değerini okuyun.  
-- **Aspose.GIS için lisansa ihtiyacım var mı?** Ücretsiz deneme sürümü mevcuttur; üretim kullanımı için lisans gereklidir.
+## Hızlı Yanıtlar
+- **“Vektör katmanı oluşturma” ne anlama gelir?**Yeni bir GIS haritası (ör. bir Shapefile) oluşturur ve nokta, çizgi veya çokgen gibi geometrileri depolayabilir.
+- **Örnekte hangi EPSG kodu kullanılıyor?**EPSG26918 (NAD83 / UTM Zone18N).
+- **Katmanı oluşturduktan sonra bir nokta özelliği olabilir mi?**Evet—`ConstructFeature()` kullanın ve bir `Point` geometrisi atayın.
+- **Katmanın CRS'sini nasıl alırım?**`layer.SpatialReferenceSystem.EpsgCode` veya `.Name` değerini okuyun.
+- **Aspose.GIS için lisansa ihtiyacınız var mı?**Ücretsiz deneme sürümü mevcuttur; üretim kullanımı için lisans gereklidir.
 
-## Prerequisites
+## Önkoşullar
 Öğreticiye başlamadan önce aşağıdaki ön koşulların sağlandığından emin olun:
-- .NET programlamada temel bilgi.  
-- Sisteminizde Visual Studio yüklü.  
-- Aspose.GIS for .NET kütüphanesi, [buradan](https://releases.aspose.com/gis/net/) indirebilirsiniz.  
+- .NET programlamada temel bilgiler.
+- Sisteminizde Visual Studio Yüklü.
+- Aspose.GIS for .NET kütüphanesi, [buradan](https://releases.aspose.com/gis/net/) indirmeler.
 - GIS'te uzamsal referans sistemleri hakkında temel anlayış.
 
-## Import Namespaces
-.NET projenizde, Aspose.GIS tarafından sağlanan işlevlere erişmek için gerekli ad alanlarını içe aktararak başlayın. Aşağıdaki kod parçacığını kullanın:
+## Ad Alanlarını İçe Aktar
+.NET projenizde, Aspose.GIS tarafından sağlanan kapasiteler için uygun reklam alanlarını aktarmaya başlayın. kod Aşağıdaki parçacığını kullanın:
 
 ```csharp
 using Aspose.Gis;
@@ -43,14 +43,14 @@ using Aspose.Gis.SpatialReferencing;
 using System;
 ```
 
-## Step 1: Specify the Document Directory
-Belge dizininizin yolunu belirtin. Bu, mekansal veri dosyalarınızın saklanacağı konum olacaktır.
+## Adım 1: Belge Dizinini Belirleyin
+Belge dizininizin yolu belirlenir. Bu, mekansal veri dosyalarının saklanacağı yerde olacaktır.
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-## Step 2: Define Spatial Reference and Set Shapefile Coordinate System
+## Adım 2: Mekansal Referansı Tanımlayın ve Shapefile Koordinat Sistemini Ayarlayın
 Shapefile yolunu tanımlayın ve **uzamsal referansı** EPSG kodu (bu örnekte 26918) kullanarak **tanımlayın**. Bu adım, katman için **shapefile koordinat sistemini ayarlar**.
 
 ```csharp
@@ -58,7 +58,7 @@ string path = dataDir + "SpecifyLayerSpatialReference_out.shp";
 var srs = SpatialReferenceSystem.CreateFromEpsg(26918);
 ```
 
-## Step 3: Create Vector Layer
+## Adım 3: Vektör Katmanı Oluşturun
 Şimdi **vektör katmanı oluşturun**; belirtilen Shapefile yolu, sürücü türü (Shapefile) ve az önce tanımladığınız uzamsal referans sistemi ile.
 
 ```csharp
@@ -68,7 +68,7 @@ using (VectorLayer layer = VectorLayer.Create(path, Drivers.Shapefile, srs))
 }
 ```
 
-## Step 4: Add Point Feature to the Layer
+## Adım 4: Katmana Nokta Özelliği Ekleme
 Yeni bir özellik oluşturun ve **nokta özelliği ekleyin**; geometrisini (koordinatları 60, 24 olan bir `Point`) ayarlayın. Ardından özelliği vektör katmanına ekleyin.
 
 ```csharp
@@ -77,7 +77,7 @@ feature.Geometry = new Point(60, 24);
 layer.Add(feature);
 ```
 
-## Step 5: Retrieve Spatial Reference System Information (Retrieve EPSG Code)
+## Adım 5: Mekansal Referans Sistemi Bilgilerini Alma (EPSG Kodunu Alma)
 Vector Layer'ı açın ve uzamsal referans sistemi hakkında bilgi alın; örneğin EPSG kodu ve insan tarafından okunabilir adı. Bu, **EPSG kodunu almayı** ve **katman CRS'sini ayarlamayı** gösterir.
 
 ```csharp
@@ -90,53 +90,37 @@ using (VectorLayer layer = VectorLayer.Open(path, Drivers.Shapefile))
 
 Bu adımları kendi kullanım senaryonuza göre tekrarlayın; böylece **vektör katmanı oluşturma** sanatını ve Aspose.GIS for .NET ile uzamsal referansları yönetmeyi ustalıkla yapabilirsiniz.
 
-## Common Issues and Solutions
-| Issue | Why it Happens | Fix |
-|-------|----------------|-----|
-| **Katman açılamıyor** | Yanlış sürücü veya bozuk dosya yolu | `Drivers.Shapefile` doğruluğunu kontrol edin ve `path` değişkeninin mevcut bir `.shp` dosyasına işaret ettiğinden emin olun. |
-| **Yanlış CRS gösteriliyor** | Hatalı EPSG kodu kullanılması | EPSG kodunu güvenilir bir kaynaktan (ör. EPSG.io) tekrar kontrol edin. |
-| **Özellik kaydedilmiyor** | `using` bloğu içinde `layer.Add(feature)` çağrılmaması | Katman serbest bırakılmadan önce `Add` metodunun çalıştırıldığından emin olun. |
+## Yaygın Sorunlar ve Çözümler
+| Sayı | Neden Olur | Düzelt |
+|----------|-----|-----|
+| **Katman açmıyor** | Yanlış sürücü veya bozuk dosya yolu | `Drivers.Shapefile` doğruluk kontrolünü edin ve `path` değişkeninin mevcut bir `.shp` dosyasına işaretlendiğinde emin olun. |
+| **Yanlış CRS gösteriliyor** | Hatalı EPSG kodunun kullanılması | EPSG kodu güvenilir bir kaynaktan (ör. EPSG.io) tekrar kontrol edin. |
+| **Özellik kaydedilmiyor** | ``kullanma` tükenmesi içinde `layer.Add(feature)` çağrılmaması | Katman serbest bırakılmadan önce `Add` yönteminin çalıştırıldığından emin olun. |
 
-## Frequently Asked Questions
-### Aspose.GIS diğer GIS kütüphaneleriyle uyumlu mu?
-Evet, Aspose.GIS diğer GIS kütüphaneleriyle iyi entegrasyon sağlar ve birlikte kullanılabilir.
+## Ek Sıkça Sorulan Sorular
+**S: Mevcut bir Shapefile'ın CRS'sini nasıl değiştiririm?**
+C: Katmanı açmak, istediğiniz EPSG koduyla yeni bir `SpatialReferenceSystem` oluşturup kaydetmeden önce `layer.SpatialReferenceSystem` özelliğini atayın.
 
-### Aspose.GIS'i hem masaüstü hem de web uygulamalarında kullanabilir miyim?
-Kesinlikle! Aspose.GIS çok yönlüdür ve hem masaüstü hem de web‑tabanlı uygulamalarda kullanılabilir.
+**S: Aynı işlemin başka geometri türleri (ör. çokgenler) seçenekleri var mı?**
+C: Evet—`new Point(x, y)` şartına göre `new Polygon(...)` veya `new LineString(...)` ile onaylandı.
 
-### Aspose.GIS için lisans seçenekleri mevcut mu?
-Evet, lisans seçeneklerini inceleyebilir ve satın alabilirsiniz: [buradan](https://purchase.aspose.com/buy).
+**S: Büyük veri setleriyle verimli çalışmak mümkün mü?**
+C: Akış (streaming) API'lerini kullanın (`VectorLayer.Create` ile `FeatureCollection`) ve kaynakları serbest bırakmak için katmanları zamanında imha edin.
 
-### Aspose.GIS için ücretsiz deneme sürümü var mı?
-Elbette! Ücretsiz deneme sürümünü şu adresten indirebilirsiniz: [buradan](https://releases.aspose.com/).
-
-### Aspose.GIS ile ilgili sorular için nereden destek alabilirim?
-Her türlü destek ve soru için [Aspose.GIS forumunu](https://forum.aspose.com/c/gis/33) ziyaret edin.
-
-## Additional Frequently Asked Questions
-**S: Mevcut bir Shapefile'ın CRS'sini nasıl değiştiririm?**  
-C: Katmanı açın, istediğiniz EPSG koduyla yeni bir `SpatialReferenceSystem` oluşturun ve kaydetmeden önce `layer.SpatialReferenceSystem` özelliğine atayın.
-
-**S: Aynı yöntemle başka geometri tipleri (ör. çokgenler) ekleyebilir miyim?**  
-C: Evet—`new Point(x, y)` ifadesini ihtiyacınıza göre `new Polygon(...)` veya `new LineString(...)` ile değiştirin.
-
-**S: Büyük veri setleriyle verimli çalışmak mümkün mü?**  
-C: Akış (streaming) API'lerini kullanın (`VectorLayer.Create` ile `FeatureCollection`) ve kaynakları serbest bırakmak için katmanları zamanında dispose edin.
-
-**S: Aspose.GIS koordinat dönüşümünü destekliyor mu?**  
+**S: Aspose.GIS koordinat hızının büyüklüğü mü?**
 C: Evet—`Geometry.Transform(targetSrs)` ile geometrileri farklı uzamsal referanslar arasında yeniden projekte edebilirsiniz.
 
-**S: Hangi .NET sürümleri destekleniyor?**  
+**S: Hangi .NET uzantısı destekleniyor?**
 C: Aspose.GIS .NET Framework 4.6+, .NET Core 3.1+, .NET 5/6/7 ile çalışır.
 
-## Conclusion
-Bu öğreticide **vektör katmanı oluşturma**, uzamsal referansını tanımlama, **nokta özelliği ekleme** ve **EPSG kodunu alma** konularını Aspose.GIS for .NET kullanarak inceledik. Bu adımları ustalaştırarak shapefile koordinat sistemini güvenle ayarlayabilir, katman CRS'sini yönetebilir ve güvenilir GIS uygulamaları geliştirebilirsiniz.
+## Çözüm
+Bu öğreticide **vektör planı oluşturma**, uzamsal referansını tanımlama, **nokta özelliği ekleme** ve **EPSG kodlama alma** konularını Aspose.GIS for .NET kullanarak inceledik. Bu hızları ustalaştırarak şekil dosyası koordinatlarını ölçebilir, katman CRS'sini yönetebilir ve güvenilir GIS uygulamalarını geliştirebilirsiniz.
 
 ---
 
-**Last Updated:** 2025-12-31  
-**Tested With:** Aspose.GIS 24.11 for .NET  
-**Author:** Aspose  
+**Son Güncelleme:** 2025-12-31
+**Test Edilen Sürüm:** Aspose.GIS 24.11 for .NET
+**Yazar:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

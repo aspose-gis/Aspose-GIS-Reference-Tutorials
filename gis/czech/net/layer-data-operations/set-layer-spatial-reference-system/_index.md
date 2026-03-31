@@ -97,22 +97,6 @@ Opakujte tyto kroky podle vašeho konkrétního scénáře a budete na dobré ce
 | **Zobrazuje se nesprávný CRS** | Použit nesprávný kód EPSG | Zkontrolujte kód EPSG u autoritativního zdroje (např. EPSG.io). |
 | **Prvek se neuloží** | Nevolá se `layer.Add(feature)` uvnitř bloku `using` | Ujistěte se, že metoda `Add` je vykonána před uvolněním vrstvy. |
 
-## Často kladené otázky
-### Je Aspose.GIS kompatibilní s jinými GIS knihovnami?
-Ano, Aspose.GIS se dobře integruje s dalšími GIS knihovnami a lze jej používat společně s nimi.
-
-### Lze Aspose.GIS použít jak pro desktopové, tak pro webové aplikace?
-Rozhodně! Aspose.GIS je univerzální a může být nasazen jak v desktopových, tak ve webových aplikacích.
-
-### Jaké licenční možnosti jsou pro Aspose.GIS k dispozici?
-Ano, můžete prozkoumat licenční možnosti a provést nákup [zde](https://purchase.aspose.com/buy).
-
-### Je k dispozici bezplatná zkušební verze Aspose.GIS?
-Samozřejmě! Bezplatnou zkušební verzi si můžete stáhnout [zde](https://releases.aspose.com/).
-
-### Kde mohu získat podporu pro dotazy související s Aspose.GIS?
-Pro jakoukoli podporu nebo dotazy navštivte [forum Aspose.GIS](https://forum.aspose.com/c/gis/33).
-
 ## Další často kladené otázky
 **Q: Jak změním CRS existujícího shapefile?**  
 A: Otevřete vrstvu, vytvořte nový `SpatialReferenceSystem` s požadovaným kódem EPSG a přiřaďte jej `layer.SpatialReferenceSystem` před uložením.

@@ -97,22 +97,6 @@ Herhaal deze stappen volgens jouw specifieke gebruikssituatie, en je bent goed o
 | **Onjuist CRS weergegeven** | Verkeerde EPSG‑code gebruikt | Controleer de EPSG‑code bij een gezaghebbende bron (bijv. EPSG.io). |
 | **Feature niet opgeslagen** | `layer.Add(feature)` niet aangeroepen binnen het `using`‑blok | Zorg dat de `Add`‑methode wordt uitgevoerd voordat de laag wordt vrijgegeven. |
 
-## Veelgestelde Vragen
-### Is Aspose.GIS compatibel met andere GIS‑bibliotheken?
-Ja, Aspose.GIS integreert goed met andere GIS‑bibliotheken en kan in combinatie met hen worden gebruikt.
-
-### Kan ik Aspose.GIS gebruiken voor zowel desktop‑ als webapplicaties?
-Absoluut! Aspose.GIS is veelzijdig en kan zowel in desktop‑ als web‑gebaseerde applicaties worden ingezet.
-
-### Zijn er licentie‑opties beschikbaar voor Aspose.GIS?
-Ja, je kunt licentie‑opties verkennen en een aankoop doen [hier](https://purchase.aspose.com/buy).
-
-### Is er een gratis proefversie beschikbaar voorose.GIS?
-Zeker! Je kunt een gratis proefversie downloaden [hier](https://releases.aspose.com/).
-
-### Waar kan ik ondersteuning vinden voor vragen over Aspose.GIS?
-Voor ondersteuning of vragen, bezoek het [Aspose.GIS‑forum](https://forum.aspose.com/c/gis/33).
-
 ## Aanvullende Veelgestelde Vragen
 **V: Hoe wijzig ik het CRS van een bestaande Shapefile?**  
 A: Open de laag, maak een nieuw `SpatialReferenceSystem` met de gewenste EPSG‑code, en wijs dit toe aan `layer.SpatialReferenceSystem` voordat je opslaat.

@@ -15,7 +15,7 @@ weight: 22
 # 建立檔案 GDB 資料集並為圖層設定容差
 
 ## 簡介
-If you need to **create file GDB dataset** and control its precision, you’re in the right place. In this tutorial we’ll walk through the entire process—starting from setting up your .NET project, creating a File Geodatabase (GDB) dataset, and then applying XY, Z, and M tolerances to a new layer. By the end you’ll have a ready‑to‑use dataset that works smoothly with ArcGIS tools and other GIS applications.
+如果您需要建立文件地理資料庫 (GDB) 資料集並控制其精確度，那麼您來對地方了。本教學將帶您完成整個過程—從設定 .NET 專案開始，建立檔案地理資料庫 (GDB) 資料集，然後對新圖層套用 XY、Z 和 M 方向的容差。最後，您將獲得一個可與 ArcGIS 工具和其他 GIS 應用程式無縫協作的現成資料集。
 
 ## 快速解答
 - **「create file GDB dataset」是什麼意思？** 它會在磁碟上建立一個新的 File Geodatabase 容器，可容納多個 GIS 圖層。  
@@ -25,10 +25,11 @@ If you need to **create file GDB dataset** and control its precision, you’re i
 - **支援哪些 .NET 版本？** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
 
 ## 什麼是檔案 GDB 資料集？
-A File Geodatabase (GDB) is a folder‑based data store that holds GIS layers, tables, and relationships. Using Aspose.GIS you can programmatically **create file GDB dataset** without needing ArcGIS installed, making it ideal for automated pipelines or custom applications.
+文件地理資料庫 (GDB) 是一種基於資料夾的資料存儲，用於存儲 GIS 圖層、表格和關聯。使用 Aspose.GIS，您可以無需安裝 ArcGIS 即可透過程式設計方式**建立檔案 GDB 資料集**，這使其成為自動化流程或自訂應用程式的理想選擇。
 
 ## 為什麼要為圖層設定容差？
-Setting tolerances ensures that geometry calculations (like intersections, buffering, or snapping) respect the precision you need. This is especially important when working with high‑resolution data or when exporting to other GIS platforms that expect specific tolerance values.
+
+設定容差可確保幾何運算（例如相交、緩衝區分析或擷取）符合您所需的精確度。這在處理高解析度資料或匯出到其他需要特定容差值的 GIS 平台時尤其重要。
 
 ## 先決條件
 - **Aspose.GIS for .NET Library** – 從 [download link](https://releases.aspose.com/gis/net/) 下載並安裝 Aspose.GIS 函式庫。如果您尚未取得，可在 [documentation](https://reference.aspose.com/gis/net/) 中進一步了解此函式庫。  
@@ -38,7 +39,7 @@ Setting tolerances ensures that geometry calculations (like intersections, buffe
 現在您已備妥所有項目，讓我們匯入所需的命名空間。
 
 ## 匯入命名空間
-In your .NET application, include the following namespaces to leverage the functionalities of Aspose.GIS:
+在您的 .NET 應用程式中，包含以下命名空間以利用 Aspose.GIS 的功能：
 
 ```csharp
 using Aspose.Gis;
@@ -49,12 +50,12 @@ using System;
 using System.Text;
 ```
 
-With the namespaces in place, we can start building the dataset.
+命名空間就位後，我們就可以開始建立資料集了。
 
 ## 逐步指南
 
 ### 步驟 1：定義文件目錄
-First, point the code to the folder where you want the File GDB to be created:
+首先，將程式碼指向您希望建立檔案 GDB 的資料夾：
 
 ```csharp
 string dataDir = "Your Document Directory";
@@ -63,7 +64,7 @@ string dataDir = "Your Document Directory";
 > **Pro tip:** 如果需要以跨平台方式組合路徑，請使用 `Path.Combine`。
 
 ### 步驟 2：建立檔案 GDB 資料集
-Now we actually **create file GDB dataset** on disk. The `Dataset.Create` method takes the full path and the driver type (`Drivers.FileGdb`).
+現在我們實際在磁碟上**建立檔案 GDB 資料集**。 `Dataset.Create` 方法接受完整路徑和驅動程式類型（`Drivers.FileGdb`）。
 
 ```csharp
 var path = dataDir + "TolerancesForFileGdbLayer_out.gdb";
@@ -74,7 +75,7 @@ using (var dataset = Dataset.Create(path, Drivers.FileGdb))
 > `using` 區塊可確保在完成後正確關閉資料集並將資料寫入磁碟。
 
 ### 步驟 3：使用 `FileGdbOptions` 設定容差
-Before creating a layer, define the tolerances you need. `FileGdbOptions` lets you specify XY, Z, and M tolerances.
+在建立圖層之前，請定義所需的公差。 `FileGdbOptions` 可讓您指定 XY、Z 和 M 方向的公差。
 
 ```csharp
 var options = new FileGdbOptions
@@ -85,10 +86,10 @@ var options = new FileGdbOptions
 };
 ```
 
-These values are typical for high‑precision engineering data, but you can adjust them to suit your project.
+這些值通常適用於高精度工程數據，但您可以根據專案需求進行調整。
 
 ### 步驟 4：使用指定的容差建立圖層
-Finally, create a new layer inside the dataset, passing the options object we just configured.
+最後，在資料集中建立一個新圖層，並將我們剛剛配置的選項物件傳遞給它。
 
 ```csharp
 using (var layer = dataset.CreateLayer("layer_name", options))
@@ -97,7 +98,7 @@ using (var layer = dataset.CreateLayer("layer_name", options))
 }
 ```
 
-When the `using` block ends, the layer is saved with the tolerances you defined.
+當 `using` 區塊結束時，圖層將按照您定義的公差保存。
 
 ## 常見問題與解決方案
 | 問題 | 發生原因 | 解決方法 |
@@ -124,7 +125,7 @@ A: 是的，您可以取得 [temporary license](https://purchase.aspose.com/temp
 A: 您可於 [buy page](https://purchase.aspose.com/buy) 購買授權。
 
 ## 結論
-In this guide we covered how to **create file GDB dataset**, configure geometry tolerances, and save a ready‑to‑use layer with Aspose.GIS for .NET. These steps give you precise control over spatial data, making your GIS applications more reliable and interoperable.
+本指南介紹如何使用 Aspose.GIS for .NET 建立檔案 GDB 資料集、配置幾何容差以及儲存可直接使用的圖層。這些步驟可讓您精確控制空間數據，進而提高 GIS 應用程式的可靠性和互通性。
 
 ---  
 **最後更新：** 2025-12-31  

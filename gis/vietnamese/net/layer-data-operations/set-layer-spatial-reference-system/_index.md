@@ -97,22 +97,6 @@ Lặp lại các bước này tùy theo trường hợp sử dụng cụ thể c
 | **CRS hiển thị không đúng** | Sử dụng mã EPSG sai | Kiểm tra lại mã EPSG với nguồn đáng tin cậy (ví dụ: EPSG.io). |
 | **Đối tượng không được lưu** | Không gọi `layer.Add(feature)` trong khối `using` | Đảm bảo phương thức `Add` được thực thi trước khi lớp (layer) bị giải phóng. |
 
-## Câu hỏi thường gặp
-### Aspose.GIS có tương thích với các thư viện GIS khác không?
-Có, Aspose.GIS tích hợp tốt với các thư viện GIS khác và có thể được sử dụng cùng với chúng.
-
-### Tôi có thể sử dụng Aspose.GIS cho cả ứng dụng desktop và web không?
-Chắc chắn! Aspose.GIS đa năng và có thể được sử dụng trong cả ứng dụng desktop và web.
-
-### Có các tùy chọn cấp phép nào cho Aspose.GIS không?
-Có, bạn có thể khám phá các tùy chọn cấp phép và mua hàng [tại đây](https://purchase.aspose.com/buy).
-
-### Có phiên bản dùng thử miễn phí cho Aspose.GIS không?
-Chắc chắn! Bạn có thể tải phiên bản dùng thử miễn phí [tại đây](https://releases.aspose.com/).
-
-### Tôi có thể tìm hỗ trợ cho các câu hỏi liên quan đến Aspose.GIS ở đâu?
-Đối với bất kỳ hỗ trợ hoặc câu hỏi nào, hãy truy cập [diễn đàn Aspose.GIS](https://forum.aspose.com/c/gis/33).
-
 ## Các câu hỏi thường gặp bổ sung
 **Q: Làm thế nào để thay đổi CRS của một Shapefile hiện có?**  
 A: Mở lớp, tạo một `SpatialReferenceSystem` mới với mã EPSG mong muốn, và gán nó cho `layer.SpatialReferenceSystem` trước khi lưu.

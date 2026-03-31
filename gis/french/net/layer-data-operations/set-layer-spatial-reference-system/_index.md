@@ -18,24 +18,24 @@ weight: 19
 # Créer une couche vectorielle et définir le système de référence spatiale de la couche
 
 ## Introduction
-Dans le vaste paysage des Systèmes d’Information Géographique (GIS), **Aspose.GIS for .NET** se démarque comme un outil robuste et polyvalent pour les développeurs. Dans ce tutoriel, vous allez **create vector layer**, définir sa référence spatiale, ajouter une entité ponctuelle et récupérer le code EPSG — le tout avec des instructions claires, étape par étape. Que vous soyez un ingénieur GIS chevronné ou que vous débutiez, ces techniques vous aideront à définir correctement le système de coordonnées du shapefile et à améliorer la fiabilité de vos flux de travail de données spatiales.
+Dans le vaste paysage des Systèmes d’Information Géographique (GIS), **Aspose.GIS for .NET** se démarque comme un outil robuste et polyvalent pour les développeurs. Dans ce tutoriel, vous allez **créer une couche vectorielle**, définir sa référence spatiale, ajouter une entité ponctuelle et récupérer le code EPSG — le tout avec des instructions claires, étape par étape. Que vous soyez un ingénieur SIG chevronné ou que vous débutiez, ces techniques vous aideront à définir correctement le système de coordonnées du shapefile et à améliorer la fiabilité de vos flux de travail de données spatiales.
 
-## Quick Answers
-- **What does “create vector layer” mean?** It creates a new GIS layer (e.g., a Shapefile) that can store geometries such as points, lines, or polygons.  
-- **Which EPSG code is used in the example?** EPSG 26918 (NAD83 / UTM zone 18N).  
-- **Can I add a point feature after creating the layer?** Yes—use `ConstructFeature()` and assign a `Point` geometry.  
-- **How do I retrieve the layer’s CRS?** Read `layer.SpatialReferenceSystem.EpsgCode` or `.Name`.  
-- **Do I need a license for Aspose.GIS?** A free trial is available; a license is required for production use.
+## Réponses rapides
+- **Que signifie « créer une couche vectorielle » ?**Cela crée une nouvelle couche SIG (par exemple, un fichier Shape) qui peut stocker des géométries telles que des points, des lignes ou des polygones.
+- **Quel code EPSG est utilisé dans l'exemple ?**EPSG26918 (NAD83 / UTM zone18N).
+- **Puis-je ajouter une entité ponctuelle après avoir créé le calque ?**Oui : utilisez `ConstructFeature()` et attribuez une géométrie `Point`.
+- **Comment récupérer le CRS de la couche ?**Lisez `layer.SpatialReferenceSystem.EpsgCode` ou `.Name`.
+- **Ai-je besoin d'une licence pour Aspose.GIS ?**Un essai gratuit est disponible ; une licence est requise pour une utilisation en production.
 
-## Prerequisites
-Avant de plonger dans le tutoriel, assurez‑vous d’avoir les prérequis suivants :
-- Une connaissance pratique de la programmation .NET.  
-- Visual Studio installé sur votre système.  
-- La bibliothèque Aspose.GIS for .NET, que vous pouvez télécharger [ici](https://releases.aspose.com/gis/net/).  
-- Une compréhension de base des systèmes de référence spatiale en GIS.
+## Prérequis
+Avant de Sous-marin dans le tutoriel, assurez-vous d’avoir les prérequis suivants :
+- Une connaissance pratique de la programmation .NET.
+- Visual Studio installé sur votre système.
+- La bibliothèque Aspose.GIS for .NET, que vous pouvez télécharger [ici](https://releases.aspose.com/gis/net/).
+- Une compréhension de base des systèmes de référence spatiale en SIG.
 
-## Import Namespaces
-Dans votre projet .NET, commencez par importer les espaces de noms nécessaires pour accéder aux fonctionnalités fournies par Aspose.GIS. Utilisez le fragment de code suivant :
+## Importer des espaces de noms
+Dans votre projet .NET, commencez par importer les espaces de noms nécessaires pour accéder aux fonctionnalités fournies par Aspose.GIS. Utilisez le fragment de code suivant :
 
 ```csharp
 using Aspose.Gis;
@@ -44,22 +44,22 @@ using Aspose.Gis.SpatialReferencing;
 using System;
 ```
 
-## Step 1: Specify the Document Directory
-Commencez par spécifier le chemin vers votre répertoire de documents. Ce sera l’emplacement où vos fichiers de données spatiales seront stockés.
+## Étape 1 : Spécifiez le répertoire des documents
+Commencez par préciser le chemin vers votre répertoire de documents. Ce sera l’emplacement où vos fichiers de données spatiales seront stockés.
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-## Step 2: Define Spatial Reference and Set Shapefile Coordinate System
-Définissez le chemin du Shapefile, et **define spatial reference** en utilisant le code EPSG (26918 dans cet exemple). Cette étape **sets the shapefile coordinate system** pour la couche.
+## Étape 2 : Définir la référence spatiale et définir le système de coordonnées du fichier de formes
+Définissez le chemin du Shapefile, et **define spatial reference** en utilisant le code EPSG (26918 dans cet exemple). Cette étape **définit le système de coordonnées du shapefile** pour la couche.
 
 ```csharp
 string path = dataDir + "SpecifyLayerSpatialReference_out.shp";
 var srs = SpatialReferenceSystem.CreateFromEpsg(26918);
 ```
 
-## Step 3: Create Vector Layer
+## Étape 3 : Créer une couche vectorielle
 Maintenant **create vector layer** avec le chemin du Shapefile spécifié, le type de pilote (Shapefile) et le système de référence spatiale que vous venez de définir.
 
 ```csharp
@@ -69,7 +69,7 @@ using (VectorLayer layer = VectorLayer.Create(path, Drivers.Shapefile, srs))
 }
 ```
 
-## Step 4: Add Point Feature to the Layer
+## Étape 4 : Ajouter des entités ponctuelles à la couche
 Construisez une nouvelle entité et **add point feature** en définissant sa géométrie (un `Point` avec les coordonnées 60, 24). Puis ajoutez l’entité à la couche vectorielle.
 
 ```csharp
@@ -78,7 +78,7 @@ feature.Geometry = new Point(60, 24);
 layer.Add(feature);
 ```
 
-## Step 5: Retrieve Spatial Reference System Information (Retrieve EPSG Code)
+## Étape 5 : Récupérer les informations du système de référence spatiale (code EPSG)
 Ouvrez la couche vectorielle et récupérez les informations sur le système de référence spatiale, telles que le code EPSG et le nom lisible par l’homme. Cela montre comment **retrieve EPSG code** et **set layer CRS**.
 
 ```csharp
@@ -91,53 +91,44 @@ using (VectorLayer layer = VectorLayer.Open(path, Drivers.Shapefile))
 
 Répétez ces étapes selon votre cas d’utilisation spécifique, et vous serez bien parti pour maîtriser l’art de **create vector layer** et gérer les références spatiales avec Aspose.GIS for .NET.
 
-## Common Issues and Solutions
-| Issue | Why it Happens | Fix |
+## Problèmes courants et solutions
+| Problème | Cause | Solution |
+
 |-------|----------------|-----|
-| **Layer fails to open** | Wrong driver or corrupted file path | Verify `Drivers.Shapefile` and ensure `path` points to an existing `.shp` file. |
-| **Incorrect CRS displayed** | Using the wrong EPSG code | Double‑check the EPSG code with an authoritative source (e.g., EPSG.io). |
-| **Feature not saved** | Not calling `layer.Add(feature)` inside the `using` block | Ensure the `Add` method is executed before the layer is disposed. |
 
-## Frequently Asked Questions
-### Is Aspose.GIS compatible with other GIS libraries?
-Yes, Aspose.GIS integrates well with other GIS libraries and can be used in conjunction with them.
+| **Impossible d'ouvrir le calque** | Pilote incorrect ou chemin d'accès corrompu | Vérifiez `Drivers.Shapefile` et assurez-vous que `path` pointe vers un fichier `.shp` existant. |
 
-### Can I use Aspose.GIS for both desktop and web applications?
-Absolutely! Aspose.GIS is versatile and can be utilized in both desktop and web‑based applications.
+| **Système de coordonnées de référence (SCR) affiché incorrect** | Utilisation d'un code EPSG incorrect | Vérifiez le code EPSG auprès d'une source fiable (par exemple, EPSG.io). |
 
-### Are there any licensing options available for Aspose.GIS?
-Yes, you can explore licensing options and make a purchase [here](https://purchase.aspose.com/buy).
+| **Entité non enregistrée** | Absence d'appel à `layer.Add(feature)` dans le bloc `using` | Assurez-vous que la méthode `Add` est exécutée avant la suppression du calque. |
 
-### Is there a free trial available for Aspose.GIS?
-Certainly! You can download a free trial version [here](https://releases.aspose.com/).
+## Questions fréquentes supplémentaires
+**Q : Comment modifier le SCR d’un fichier Shapefile existant ?**
 
-### Where can I seek support for Aspose.GIS‑related queries?
-For any support or queries, visit the [Aspose.GIS forum](https://forum.aspose.com/c/gis/33).
+R : Ouvrez la couche, créez un nouvel objet `SpatialReferenceSystem` avec le code EPSG souhaité et assignez-le à `layer.SpatialReferenceSystem` avant d’enregistrer.
 
-## Additional Frequently Asked Questions
-**Q: How do I change the CRS of an existing Shapefile?**  
-A: Open the layer, create a new `SpatialReferenceSystem` with the desired EPSG code, and assign it to `layer.SpatialReferenceSystem` before saving.
+**Q : Puis-je ajouter d’autres types de géométrie (par exemple, des polygones) en utilisant la même méthode ?**
 
-**Q: Can I add other geometry types (e.g., polygons) using the same approach?**  
-A: Yes—replace `new Point(x, y)` with `new Polygon(...)` or `new LineString(...)` as needed.
+R : Oui, remplacez `new Point(x, y)` par `new Polygon(...)` ou `new LineString(...)` selon vos besoins.
 
-**Q: Is it possible to work with large datasets efficiently?**  
-A: Use streaming APIs (`VectorLayer.Create` with `FeatureCollection`) and dispose layers promptly to free resources.
+**Q : Est-il possible de travailler efficacement avec de grands jeux de données ?**
 
-**Q: Does Aspose.GIS support coordinate transformation?**  
-A: Yes—use `Geometry.Transform(targetSrs)` to reproject geometries between different spatial references.
+R : Utilisez les API de flux (`VectorLayer.Create` avec `FeatureCollection`) et supprimez rapidement les couches pour libérer des ressources.
 
-**Q: What .NET versions are supported?**  
-A: Aspose.GIS works with .NET Framework 4.6+, .NET Core 3.1+, .NET 5/6/7.
+**Q : Aspose.GIS prend-il en charge la transformation de coordonnées ?**
+R : Oui : utilisez « Geometry.Transform(targetSrs) » pour reprojeter des géométries entre différentes références spatiales.
+
+**Q : Quelles versions de .NET sont prises en charge ?**
+R : Aspose.GIS fonctionne avec .NET Framework 4.6+, .NET Core 3.1+, .NET 5/6/7.
 
 ## Conclusion
-Dans ce tutoriel, nous avons exploré comment **create vector layer**, définir sa référence spatiale, **add point feature**, et **retrieve EPSG code** en utilisant Aspose.GIS for .NET. En maîtrisant ces étapes, vous pourrez définir correctement le système de coordonnées du shapefile, gérer le CRS de la couche et créer des applications GIS fiables.
+Dans ce tutoriel, nous avons exploré comment **créer une couche vectorielle**, définir sa référence spatiale, **ajouter une entité ponctuelle** et **récupérer le code EPSG** en utilisant Aspose.GIS pour .NET. En maîtrisant ces étapes, vous pourrez définir correctement le système de coordonnées du shapefile, gérer le CRS de la couche et créer des applications SIG fiables.
 
 ---
 
-**Last Updated:** 2025-12-31  
-**Tested With:** Aspose.GIS 24.11 for .NET  
-**Author:** Aspose  
+**Dernière mise à jour :** 31/12/2025
+**Testé avec :** Aspose.GIS 24.11 pour .NET
+**Auteur :** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

@@ -14,29 +14,29 @@ weight: 18
 
 # Aspose.GIS for .NET でフィールド幅を設定する方法
 
-## Introduction
+## はじめに
 Aspose.GIS for .NET の世界へようこそ – 強力で効率的なジオスペーシャル開発へのゲートウェイです！本包括的チュートリアルでは、Aspose.GIS を使用して .NET アプリケーションでジオスペーシャル データを簡単に管理するための基本的な手順をご案内します。経験豊富な開発者でも、ジオスペーシャル プログラミング初心者でも、本ガイドは確固たる基礎と実践的な洞察を提供するよう設計されています。**このチュートリアルでは属性値のフィールド幅の設定方法**を学び、シェープファイルのフィールドが期待通りにデータを格納できるようにします。
 
-## Quick Answers
+## よくある質問
 - **このガイドの主な目的は何ですか？** Aspose.GIS for .NET を使用してシェープファイルの属性フィールド幅を設定する方法を示すことです。  
 - **どのクラスがフィールド幅を定義しますか？** `FeatureAttribute.Width`。  
 - **コードを実行するのにライセンスは必要ですか？** 評価用の一時ライセンスで動作しますが、本番環境ではフルライセンスが必要です。  
 - **例で使用されているファイル形式は何ですか？** ESRI Shapefile（`.shp`）。  
 - **レイヤー作成後に幅を変更できますか？** できません – 幅はフィーチャを追加する前に定義する必要があります。
 
-## Prerequisites
+## 前提条件
 チュートリアルに入る前に、以下の前提条件が整っていることを確認してください:
 - Aspose.GIS for .NET ライブラリ: [download link](https://releases.aspose.com/gis/net/) から Aspose.GIS for .NET ライブラリをダウンロードしてインストールします。  
 - 開発環境: Visual Studio など、お好みの .NET 開発環境をセットアップします。  
 - ドキュメント ディレクトリ: ジオスペーシャル ドキュメントを保存するディレクトリを指定します。
 
-## What Is Field Width and Why It Matters?
+## フィールド幅とは何か、そしてなぜ重要なのか？
 フィールド幅（または属性長）は、文字列属性が保持できる最大文字数を決定します。正しい幅を設定することでデータの切り捨てを防ぎ、固定長フィールドに依存する他の GIS ツールとの互換性を確保できます。
 
-## How to Set Field Width for an Attribute
+## 属性のフィールド幅を設定する方法
 以下にステップバイステップの手順を示します。各コードブロックは元のソースから変更していません。説明文だけを拡充しています。
 
-### Import Namespaces
+### 名前空間のインポート
 Aspose.GIS for .NET の機能を利用するために必要な名前空間をインポートします。
 
 ```csharp
@@ -48,7 +48,7 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-### Create VectorLayer
+### ベクターレイヤーの作成
 出力シェープファイルを指す `VectorLayer` を作成します。このレイヤーが幅を制御したい属性を保持します。
 
 ```csharp
@@ -59,7 +59,7 @@ using (VectorLayer layer = VectorLayer.Create(dataDir + "SpecifyAttributeValueLe
 }
 ```
 
-### Add Attribute with Specific Length
+### 特定の長さの属性の追加
 **wide** という名前の属性を定義し、幅を 120 文字に明示的に設定します。これが Aspose.GIS で **フィールド幅を設定する方法** の核心です。
 
 ```csharp
@@ -70,7 +70,7 @@ layer.Attributes.Add(attribute);
 
 > **Pro tip:** `Width` プロパティは文字列属性にのみ適用されます。数値型の場合、サイズはデータ型自体で決まります。
 
-### Construct and Add Feature
+### フィーチャの構築と追加
 次にフィーチャを構築し、120 文字の制限内の値を割り当ててレイヤーに追加します。
 
 ```csharp
@@ -81,15 +81,15 @@ layer.Add(feature);
 
 長い文字列を割り当てようとすると、Aspose.GIS は定義された幅に合わせて切り捨て、データの整合性を保ちます。
 
-## Common Pitfalls & Troubleshooting
+## よくある落とし穴とトラブルシューティング
 - **`Width` を属性追加前に設定し忘れた？** デフォルト幅は 255 文字です。後から設定しても既存フィールドには影響しません。必ず先に幅を定義してください。  
 - **非文字列データ型を使用している？** 数値や日付フィールドでは `Width` プロパティは無視されます。属性の `AttributeDataType` が `String` であることを確認してください。  
 - **「field not found」エラーが出た？** `SetValue` で使用した属性名が正確に（大文字小文字を区別して）一致しているか確認してください。
 
-## Conclusion
+## まとめ
 本チュートリアルでは Aspose.GIS for .NET を使用してシェープファイルの属性フィールド幅を **設定する方法** を示し、**長さ付き属性の追加** 方法を解説しました。さまざまな幅を試し、[documentation](https://reference.aspose.com/gis/net/) を探索して、Aspose.GIS のジオスペーシャル開発の可能性を最大限に引き出してください。
 
-## Frequently Asked Questions
+## よくある質問
 ### Q: Aspose.GIS for .NET の一時ライセンスはどう取得できますか？
 A: [here](https://purchase.aspose.com/temporary-license/) から取得できます。
 
