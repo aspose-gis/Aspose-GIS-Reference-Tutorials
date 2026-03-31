@@ -122,15 +122,15 @@ Igen, a funkciókat egy ingyenes próba verzióval is felfedezheti, amely [itt](
 ### Hol kaphatok támogatást az Aspose.GIS-szel kapcsolatos kérdésekhez?
 Bármilyen kérdés vagy segítség esetén látogasson el az [Aspose.GIS fórumra](https://forum.aspose.com/c/gis/33).
 
+---
+
+**Utoljára frissítve:** 2025-12-28  
+**Tesztelve:** Aspose.GIS for .NET (legújabb kiadás)  
+**Szerző:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Utoljára frissítve:** 2025-12-28  
-**Tesztelve:** Aspose.GIS for .NET (legújabb kiadás)  
-**Szerző:** Aspose

@@ -1,5 +1,5 @@
 ---
-title: How to Read OSM: Read Features from OpenStreetMap XML in Aspose.GIS
+title: How to Read OSM - Read Features from OpenStreetMap XML in Aspose.GIS
 linktitle: Read Features from OpenStreetMap XML
 second_title: Aspose.GIS .NET API
 description: Learn how to read osm features from OpenStreetMap XML using Aspose.GIS for .NET. Step-by-step tutorial with code examples.

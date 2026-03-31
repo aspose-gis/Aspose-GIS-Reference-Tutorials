@@ -122,15 +122,15 @@ Ya, Anda dapat menjelajahi fitur Aspose.GIS melalui versi percobaan gratis yang 
 ### Di mana saya dapat memperoleh dukungan untuk pertanyaan terkait Aspose.GIS?
 Untuk pertanyaan atau bantuan, Anda dapat mengunjungi [forum Aspose.GIS](https://forum.aspose.com/c/gis/33).
 
+---
+
+**Terakhir Diperbarui:** 2025-12-28  
+**Diuji Dengan:** Aspose.GIS untuk .NET (rilis terbaru)  
+**Penulis:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Terakhir Diperbarui:** 2025-12-28  
-**Diuji Dengan:** Aspose.GIS untuk .NET (rilis terbaru)  
-**Penulis:** Aspose

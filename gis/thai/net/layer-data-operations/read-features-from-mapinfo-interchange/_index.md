@@ -132,13 +132,6 @@ foreach (Feature feature in layer)
 **ถาม: จะหาความช่วยเหลือจากชุมชนหรือการสนับสนุนอย่างเป็นทางการได้จากที่ไหน?**  
 ตอบ: เยี่ยมชม [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) เพื่อรับความช่วยเหลือจากชุมชนและวิศวกรของ Aspose
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **อัปเดตล่าสุด:** 2025-12-28  
@@ -146,3 +139,10 @@ foreach (Feature feature in layer)
 **ผู้เขียน:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

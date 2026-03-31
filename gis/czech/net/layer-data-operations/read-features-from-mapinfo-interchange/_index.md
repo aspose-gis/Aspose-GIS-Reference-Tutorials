@@ -130,15 +130,15 @@ A: Ano. Stačí přidat NuGet balíček a začít používat API vedle vašeho s
 **Q: Kde mohu získat komunitní pomoc nebo oficiální podporu?**  
 A: Navštivte [Aspose.GIS fórum](https://forum.aspose.com/c/gis/33) pro komunitní asistenci a oficiální podporu od inženýrů Aspose.
 
+---
+
+**Poslední aktualizace:** 2025-12-28  
+**Testováno s:** Aspose.GIS 24.11 for .NET  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Poslední aktualizace:** 2025-12-28  
-**Testováno s:** Aspose.GIS 24.11 for .NET  
-**Autor:** Aspose

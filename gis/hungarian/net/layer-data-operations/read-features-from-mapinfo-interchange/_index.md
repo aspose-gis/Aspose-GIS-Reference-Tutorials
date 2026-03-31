@@ -131,15 +131,15 @@ A: Igen. Csak add hozzá a NuGet csomagot, és már használhatod az API‑t a m
 **Q: Hol kaphatok közösségi vagy hivatalos támogatást?**  
 A: Látogasd meg a [Aspose.GIS fórumot](https://forum.aspose.com/c/gis/33) a közösségi segítségért és az Aspose mérnökök hivatalos támogatásáért.
 
+---
+
+**Legutóbb frissítve:** 2025-12-28  
+**Tesztelve:** Aspose.GIS 24.11 for .NET  
+**Szerző:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Legutóbb frissítve:** 2025-12-28  
-**Tesztelve:** Aspose.GIS 24.11 for .NET  
-**Szerző:** Aspose

@@ -133,13 +133,6 @@ foreach (Feature feature in layer)
 **Ε: Πού μπορώ να βρω βοήθεια από την κοινότητα ή επίσημη υποστήριξη;**  
 Α: Επισκεφθείτε το [Φόρουμ Aspose.GIS](https://forum.aspose.com/c/gis/33) για βοήθεια από την κοινότητα και επίσημη υποστήριξη από μηχανικούς της Aspose.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Τελευταία Ενημέρωση:** 2025-12-28  
@@ -147,3 +140,10 @@ foreach (Feature feature in layer)
 **Συγγραφέας:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

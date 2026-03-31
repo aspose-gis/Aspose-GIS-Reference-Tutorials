@@ -121,15 +121,15 @@ Có, bạn có thể khám phá các tính năng của Aspose.GIS qua bản dùn
 ### Tôi có thể nhận hỗ trợ cho các câu hỏi liên quan đến Aspose.GIS ở đâu?
 Đối với bất kỳ câu hỏi hoặc hỗ trợ nào, bạn có thể truy cập [diễn đàn Aspose.GIS](https://forum.aspose.com/c/gis/33).
 
+---
+
+**Cập nhật lần cuối:** 2025-12-28  
+**Đã kiểm tra với:** Aspose.GIS cho .NET (phiên bản mới nhất)  
+**Tác giả:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Cập nhật lần cuối:** 2025-12-28  
-**Đã kiểm tra với:** Aspose.GIS cho .NET (phiên bản mới nhất)  
-**Tác giả:** Aspose

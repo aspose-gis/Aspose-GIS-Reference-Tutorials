@@ -122,15 +122,15 @@ Evet, ücretsiz deneme sürümünü [buradan](https://releases.aspose.com/) keş
 ### Aspose.GIS ile ilgili sorular için nereden destek alabilirim?
 Her türlü soru veya yardım için [Aspose.GIS forumunu](https://forum.aspose.com/c/gis/33) ziyaret edebilirsiniz.
 
+---
+
+**Son Güncelleme:** 2025-12-28  
+**Test Edilen:** Aspose.GIS for .NET (latest release)  
+**Yazar:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Son Güncelleme:** 2025-12-28  
-**Test Edilen:** Aspose.GIS for .NET (latest release)  
-**Yazar:** Aspose

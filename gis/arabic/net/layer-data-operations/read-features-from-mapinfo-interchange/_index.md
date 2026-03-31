@@ -131,15 +131,16 @@ foreach (Feature feature in layer)
 **س: أين يمكنني الحصول على مساعدة من المجتمع أو الدعم الرسمي؟**  
 ج: زر [منتدى Aspose.GIS](https://forum.aspose.com/c/gis/33) للحصول على مساعدة المجتمع والدعم الرسمي من مهندسي Aspose.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
 
 ---
 
 **آخر تحديث:** 2025-12-28  
 **تم الاختبار مع:** Aspose.GIS 24.11 لـ .NET  
 **المؤلف:** Aspose
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

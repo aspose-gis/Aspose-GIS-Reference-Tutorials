@@ -120,15 +120,15 @@ foreach (Feature feature in layer)
 ### 哪里可以获得 Aspose.GIS 相关的支持？
 如有任何疑问或需要帮助，可前往 [Aspose.GIS 论坛](https://forum.aspose.com/c/gis/33)。
 
+---
+
+**最后更新：** 2025-12-28  
+**测试环境：** Aspose.GIS for .NET（最新发布）  
+**作者：** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**最后更新：** 2025-12-28  
-**测试环境：** Aspose.GIS for .NET（最新发布）  
-**作者：** Aspose

@@ -133,13 +133,6 @@ Ta prosta enumeracja działa dla dowolnego rozmiaru zestawu danych; możesz zami
 **P:** Gdzie mogę uzyskać pomoc społeczności lub oficjalne wsparcie?  
 **O:** Odwiedź [forum Aspose.GIS](https://forum.aspose.com/c/gis/33), aby uzyskać pomoc społeczności oraz oficjalne wsparcie od inżynierów Aspose.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Ostatnia aktualizacja:** 2025-12-28  
@@ -147,3 +140,10 @@ Ta prosta enumeracja działa dla dowolnego rozmiaru zestawu danych; możesz zami
 **Autor:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

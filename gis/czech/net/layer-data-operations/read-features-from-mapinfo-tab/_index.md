@@ -121,15 +121,15 @@ Ano, funkce Aspose.GIS můžete prozkoumat prostřednictvím bezplatné zkušebn
 ### Kde mohu získat podporu pro dotazy týkající se Aspose.GIS?
 Pro jakékoli dotazy nebo pomoc navštivte [forum Aspose.GIS](https://forum.aspose.com/c/gis/33).
 
+---
+
+**Poslední aktualizace:** 2025-12-28  
+**Testováno s:** Aspose.GIS for .NET (latest release)  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Poslední aktualizace:** 2025-12-28  
-**Testováno s:** Aspose.GIS for .NET (latest release)  
-**Autor:** Aspose

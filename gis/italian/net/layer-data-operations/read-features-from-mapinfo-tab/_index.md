@@ -121,15 +121,15 @@ Sì, puoi esplorare le funzionalità di Aspose.GIS tramite una prova gratuita di
 ### Dove posso ottenere supporto per domande relative ad Aspose.GIS?
 Per qualsiasi domanda o assistenza, visita il [forum di Aspose.GIS](https://forum.aspose.com/c/gis/33).
 
+---
+
+**Ultimo aggiornamento:** 2025-12-28  
+**Testato con:** Aspose.GIS per .NET (ultima release)  
+**Autore:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Ultimo aggiornamento:** 2025-12-28  
-**Testato con:** Aspose.GIS per .NET (ultima release)  
-**Autore:** Aspose

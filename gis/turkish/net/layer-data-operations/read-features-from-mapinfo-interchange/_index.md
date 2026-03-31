@@ -133,15 +133,15 @@ C: Yes. Simply add the NuGet package and start using the API alongside your exis
 **S: Topluluk yardımı veya resmi destek nereden alınabilir?**  
 C: Visit the [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) for community assistance and official support from Aspose engineers.
 
+---
+
+**Son Güncelleme:** 2025-12-28  
+**Test Edilen Versiyon:** Aspose.GIS 24.11 for .NET  
+**Yazar:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Son Güncelleme:** 2025-12-28  
-**Test Edilen Versiyon:** Aspose.GIS 24.11 for .NET  
-**Yazar:** Aspose

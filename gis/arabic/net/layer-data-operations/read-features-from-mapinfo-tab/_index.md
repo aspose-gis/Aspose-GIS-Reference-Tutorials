@@ -121,15 +121,15 @@ foreach (Feature feature in layer)
 ### أين يمكنني الحصول على الدعم لاستفسارات Aspose.GIS؟
 لأي استفسارات أو مساعدة، يمكنك زيارة [منتدى Aspose.GIS](https://forum.aspose.com/c/gis/33).
 
+---
+
+**آخر تحديث:** 2025-12-28  
+**تم الاختبار مع:** Aspose.GIS for .NET (أحدث إصدار)  
+**المؤلف:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**آخر تحديث:** 2025-12-28  
-**تم الاختبار مع:** Aspose.GIS for .NET (أحدث إصدار)  
-**المؤلف:** Aspose

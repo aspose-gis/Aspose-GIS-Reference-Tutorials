@@ -121,15 +121,15 @@ Ja, u kunt de functies van Aspose.GIS verkennen via een gratis proefversie die h
 ### Waar kan ik ondersteuning krijgen voor vragen over Aspose.GIS?
 Voor vragen of hulp kunt u het [Aspose.GIS‑forum](https://forum.aspose.com/c/gis/33) bezoeken.
 
+---
+
+**Last Updated:** 2025-12-28  
+**Tested With:** Aspose.GIS for .NET (latest release)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-12-28  
-**Tested With:** Aspose.GIS for .NET (latest release)  
-**Author:** Aspose

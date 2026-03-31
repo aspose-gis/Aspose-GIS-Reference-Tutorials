@@ -130,15 +130,15 @@ A: Ja. Fügen Sie einfach das NuGet‑Paket hinzu und nutzen Sie die API neben I
 **Q: Wo finde ich Community‑Hilfe oder offiziellen Support?**  
 A: Besuchen Sie das [Aspose.GIS‑Forum](https://forum.aspose.com/c/gis/33) für Community‑Unterstützung und offiziellen Support von Aspose‑Ingenieuren.
 
+---
+
+**Zuletzt aktualisiert:** 2025-12-28  
+**Getestet mit:** Aspose.GIS 24.11 für .NET  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Zuletzt aktualisiert:** 2025-12-28  
-**Getestet mit:** Aspose.GIS 24.11 für .NET  
-**Autor:** Aspose

@@ -130,13 +130,6 @@ R: Sì. Basta aggiungere il pacchetto NuGet e iniziare a usare l'API insieme al 
 **D: Dove posso ottenere aiuto dalla community o supporto ufficiale?**  
 R: Visita il [forum Aspose.GIS](https://forum.aspose.com/c/gis/33) per assistenza della community e supporto ufficiale dagli ingegneri Aspose.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Ultimo aggiornamento:** 2025-12-28  
@@ -144,3 +137,10 @@ R: Visita il [forum Aspose.GIS](https://forum.aspose.com/c/gis/33) per assistenz
 **Autore:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}
