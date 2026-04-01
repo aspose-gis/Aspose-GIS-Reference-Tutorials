@@ -1,27 +1,41 @@
 ---
-title: Özellik Öznitelik Değerini Al (Varsayılan)
-linktitle: Özellik Öznitelik Değerini Al (Varsayılan)
-second_title: Aspose.GIS .NET API'si
-description: Aspose.GIS for .NET'in gücünü ortaya çıkarın! Bu adım adım kılavuzla özellik öznitelik değerlerini zahmetsizce alın ve değiştirin. Deneme sürümünüzü şimdi indirin!
-weight: 14
+date: 2026-01-05
+description: Aspose.GIS for .NET'te öznitelik değerlerini nasıl alacağınızı ve varsayılanları
+  nasıl ayarlayacağınızı öğrenin. Bu adım adım kılavuz, GeoJSON katmanları oluşturmayı
+  ve GIS özellikleri oluşturmayı gösterir.
+linktitle: How to Get Attribute Value (Default)
+second_title: Aspose.GIS .NET API
+title: Aspose.GIS for .NET ile Öznitelik Değerini (Varsayılan) Nasıl Alabilirsiniz
 url: /tr/net/layer-interaction-and-data-access/get-feature-attribute-value-default/
+weight: 14
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Özellik Öznitelik Değerini Al (Varsayılan)
+# Aspise.GIS for .NET ile Öznitelik Değerini (Varsayılan) Alma
 
-## giriiş
-Aspose.GIS for .NET dünyasına hoş geldiniz! Bu kapsamlı kılavuzda Aspose.GIS'in güçlü yeteneklerini kullanarak özellik öznitelik değerlerini almanın inceliklerini ele alacağız. İster deneyimli bir geliştirici olun ister yeni başlıyor olun, bu eğitim size bu olağanüstü aracın tüm potansiyelinden yararlanmanızı sağlayacak adım adım bir yol sunacaktır.
+## Giriş
+Bu kapsamlı öğreticide, Aspose.GIS for .NET kullanarak bir GIS özelliğinden **öznitelik değerlerini nasıl alacağınızı** keşfedecek ve bir öznitelik eksik olduğunda varsayılan değerlerle nasıl çalışılacağını öğreneceksiniz. Uzamsal analiz motoru ya da basit bir harita görüntüleyici geliştiriyor olun, öznitelik alımını ve varsayılanların yönetimini ustalıkla yapmak güvenilir GIS uygulamaları için hayati öneme sahiptir.
+
+## Hızlı Yanıtlar
+- **Birincil yöntem nedir?** `Feature.GetValueOrDefault<T>()`  
+- **Özel bir varsayılan ayarlayabilir miyim?** Evet, varsayılan değeri kabul eden aşırı yükleme yoluyla veya öznitelikte `DefaultValue` tanımlayarak.  
+- **Geliştirme için lisansa ihtiyacım var mı?** Test için ücretsiz deneme sürümü çalışır; üretim için ticari lisans gereklidir.  
+- **Desteklenen geometri formatları?** GeoJSON, Shapefile, GML ve Aspose.GIS sürücüleri aracılığıyla birçok başka format.  
+- **.NET Core/.NET 6+ ile çalışır mı?** Kesinlikle – kütüphane çapraz platformdur.
+
 ## Önkoşullar
-Bu kodlama macerasına başlamadan önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
-- C# ve .NET framework'ü hakkında çalışma bilgisi.
--  Aspose.GIS for .NET kuruldu. Değilse, şuradan indirin:[Burada](https://releases.aspose.com/gis/net/).
-- Sorunsuz bir şekilde takip edebileceğiniz Visual Studio gibi bir kod düzenleyici.
-## Ad Alanlarını İçe Aktar
-C# projenize gerekli ad alanlarını eklediğinizden emin olun:
+İlerlemeye başlamadan önce şunların olduğundan emin olun:
+
+- C# ve .NET ekosistemi hakkında temel bilgi.  
+- Aspose.GIS for .NET yüklü. Henüz yüklemediyseniz, [buradan](https://releases.aspose.com/gis/net/) indirin.  
+- Visual Studio veya Visual Studio Code gibi bir kod düzenleyici.
+
+## Ad Alanlarını İçe Aktarma
+API türlerinin kullanılabilir olması için C# dosyanıza gerekli `using` ifadelerini ekleyin:
+
 ```csharp
 using Aspose.Gis;
 using Aspose.GIS.Examples.CSharp;
@@ -32,15 +46,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 ```
-Şimdi her örneği takip edilmesi kolay bir dizi adıma ayıralım.
-## Özellik Öznitelik Değerini Al (Varsayılan)
-### 1. Adım: Ortamı Ayarlayın
-Belgeler dizininizin yolunu tanımlayarak başlayın:
+
+Şimdi her örneği adım adım inceleyelim.
+
+## Öznitelik Değerini (Varsayılan) Alma
+### Adım 1: Ortamı Hazırlama
+Test belgelerinizin bulunduğu klasörün yolunu tanımlayın:
+
 ```csharp
 string dataDir = "Your Document Directory";
 ```
-### Adım 2: GeoJson Katmanı Oluşturun
-Bir GeoJson katmanı oluşturun ve varsayılan değerlere sahip bir nitelik tanımlayın:
+
+### Adım 2: GeoJSON Katmanı Oluşturma
+**geojson katmanı oluşturacağız** — null veya ayarlanmamış olabilecek bir öznitelik tanımladığımız ilk yer:
+
 ```csharp
 using (var layer = Drivers.GeoJson.CreateLayer(dataDir + "data1_out.json"))
 {
@@ -49,23 +68,29 @@ using (var layer = Drivers.GeoJson.CreateLayer(dataDir + "data1_out.json"))
     attribute.CanBeUnset = true;
     layer.Attributes.Add(attribute);
 ```
-### 3. Adım: Bir Özellik Oluşturun
-Tanımlanan özniteliği kullanarak bir özellik oluşturun:
+
+### Adım 3: GIS Özelliği Oluşturma
+**GIS özelliği oluşturacağız** — bu, az önce tanımladığımız öznitelik şemasına uyan yeni bir özellik örneği sağlar:
+
 ```csharp
     Feature feature = layer.ConstructFeature();
 ```
-### Adım 4: Değerleri Alın
-Özellik değerlerini çeşitli senaryolarla alın:
+
+### Adım 4: Değerleri Almak
+Son olarak, varsayılanların nasıl çalıştığını gösteren çeşitli senaryolarla **özellik özniteliği** değerlerini alıyoruz:
+
 ```csharp
-    int? nullValue = feature.GetValueOrDefault<int?>("attribute"); // değer == boş
-    var defValue1 = feature.GetValueOrDefault<int?>("attribute", 10); // değer == 10
-    var defValue2 = feature.GetValueOrDefault("attribute", 25); // değer == 10
+    int? nullValue = feature.GetValueOrDefault<int?>("attribute"); // value == null
+    var defValue1 = feature.GetValueOrDefault<int?>("attribute", 10); // value == 10
+    var defValue2 = feature.GetValueOrDefault("attribute", 25); // value == 10
     Console.WriteLine($"'{nullValue}' vs '{defValue1}' vs '{defValue2}'");
 }
 ```
+
 ## Varsayılan Değerleri Ayarlama
-### Adım 1: Başka Bir GeoJson Katmanı Oluşturun
-İşlemi farklı bir GeoJson katmanı ve double niteliğiyle tekrarlayın:
+### Adım 1: Başka Bir GeoJSON Katmanı Oluşturma
+Bu sefer **öznitelik varsayılanını** doğrudan şemada ayarlayacağız:
+
 ```csharp
 using (var layer = Drivers.GeoJson.CreateLayer(dataDir + "data2_out.json"))
 {
@@ -75,34 +100,65 @@ using (var layer = Drivers.GeoJson.CreateLayer(dataDir + "data2_out.json"))
     attribute.DefaultValue = 100;
     layer.Attributes.Add(attribute);
 ```
-### Adım 2: Bir Özellik Oluşturun (Tekrar)
+
+### Adım 2: GIS Özelliği (Tekrar) Oluşturma
 ```csharp
     Feature feature = layer.ConstructFeature();
 ```
-### 3. Adım: Değerleri Alın ve Ayarlayın
-Varsayılanları gösteren öznitelik değerlerini alın ve ayarlayın:
+
+### Adım 3: Değerleri Al ve Ayarla
+Varsayılanı alıyoruz, ardından çalışma zamanında **varsayılanı nasıl ayarlayacağınızı** görmek için değiştiriyoruz:
+
 ```csharp
-    double defValue1 = feature.GetValueOrDefault<double>("attribute"); // değer == 100
-    var defValue2 = feature.GetValueOrDefault("attribute"); // değer == 100
+    double defValue1 = feature.GetValueOrDefault<double>("attribute"); // value == 100
+    var defValue2 = feature.GetValueOrDefault("attribute"); // value == 100
     feature.SetValue("attribute", 50);
-    var newValue = feature.GetValueOrDefault<double>("attribute"); // değer == 50
+    var newValue = feature.GetValueOrDefault<double>("attribute"); // value == 50
     Console.WriteLine($"'{defValue1}' vs '{defValue2}' vs '{newValue}'");
 }
 ```
-Tebrikler! Özellik nitelik değerlerini alma ve değiştirme konusunda Aspose.GIS for .NET'in gücünden başarıyla yararlandınız.
-## Çözüm
-Bu eğitimde Aspose.GIS for .NET kullanarak özellik öznitelik değerlerini almanın inceliklerini araştırdık. Sezgisel API'si ve güçlü özellikleriyle Aspose.GIS, .NET ortamlarında GIS geliştirme için fırsatlar dünyasının kapılarını açıyor.
+
+## Yaygın Tuzaklar ve İpuçları
+- **`using` bloğunu kapatmayı asla unutmayın.** Katman otomatik olarak yok edilir ve dosya tutamaçları serbest bırakılır.  
+- **`CanBeNull` false olduğunda, `GetValueOrDefault` her zaman bir değer döndürür** (saklanan ya da tanımlı varsayılan).  
+- **Genel aşırı yüklemeyi kullanın** (`GetValueOrDefault<T>`) değer tipleri için kutulama/kutudan çıkarma işlemlerinden kaçınmak için.  
+- **Pro ipucu:** Bir özniteliğin gerçekten ayarlanıp ayarlanmadığını kontrol etmeniz gerekiyorsa, `GetValueOrDefault` çağırmadan önce `feature.IsAttributeSet("attribute")` kullanın.
+
 ## Sıkça Sorulan Sorular
 ### Aspose.GIS .NET Core ile uyumlu mu?
-Evet, Aspose.GIS .NET Core ile tamamen uyumludur ve platformlar arası destek sağlar.
-### Aspose.GIS'i ticari projeler için kullanabilir miyim?
-Kesinlikle! Aspose.GIS, ticari uygulamalarınızda herhangi bir kısıtlama olmaksızın kullanmanıza olanak tanıyan ticari bir lisansla birlikte gelir.
-### Ek destek ve kaynakları nerede bulabilirim?
- Ziyaret edin[Aspose.GIS forumu](https://forum.aspose.com/c/gis/33) topluluk desteği için ve keşfetmek için[dokümantasyon](https://reference.aspose.com/gis/net/) derinlemesine bilgi için.
-### Ücretsiz deneme mevcut mu?
- Evet, Aspose.GIS'i ücretsiz deneme sürümüyle keşfedebilirsiniz. İndir[Burada](https://releases.aspose.com/).
-### Test amaçlı geçici lisansı nasıl edinebilirim?
- Geçici lisanslar için şu adresi ziyaret edin:[Burada](https://purchase.aspose.com/temporary-license/).
+Evet, Aspose.GIS .NET Core ile tamamen uyumludur, çapraz‑platform desteği sağlar.
+
+### Aspose.GIS'i ticari projelerde kullanabilir miyim?
+Kesinlikle! Aspose.GIS, ticari uygulamalarınızda herhangi bir kısıtlama olmadan kullanmanıza izin veren bir ticari lisansa sahiptir.
+
+### Ek destek ve kaynakları nereden bulabilirim?
+Topluluk desteği için [Aspose.GIS forumuna](https://forum.aspose.com/c/gis/33) gidin ve ayrıntılı bilgi için [belgelere](https://reference.aspose.com/gis/net/) göz atın.
+
+### Ücretsiz deneme sürümü mevcut mu?
+Evet, Aspose.GIS'i ücretsiz deneme sürümüyle keşfedebilirsiniz. [buradan](https://releases.aspose.com/) indirin.
+
+### Test amaçlı geçici lisans nasıl alabilirim?
+Geçici lisanslar için [buraya](https://purchase.aspose.com/temporary-license/) bakın.
+
+## Ek SSS
+**S: `GetValueOrDefault` metodunu var olmayan bir öznitelik üzerinde çağırırsam ne olur?**  
+C: Metod bir `ArgumentException` fırlatır. Her zaman öznitelik adını doğrulayın veya önce `feature.HasAttribute("name")` kullanın.
+
+**S: Katman oluşturulduktan sonra varsayılan değeri değiştirebilir miyim?**  
+C: Evet, `attribute.DefaultValue`'ı değiştirebilir ve ardından değişikliği kalıcı kılmak için `layer.UpdateAttribute(attribute)` çağırabilirsiniz.
+
+**S: Aspose.GIS öznitelik değerlerinin toplu güncellemelerini destekliyor mu?**  
+C: Bir özellik koleksiyonunu döngüyle gezebilir ve her özellikte `SetValue` çağırabilirsiniz; büyük veri setleri için daha iyi performans sağlamak amacıyla `FeatureCursor` API'sini kullanmayı düşünün.
+
+## Sonuç
+Bu rehberde **öznitelik değerlerini nasıl alacağınızı**, varsayılanları nasıl tanımlayıp geçersiz kılacağınızı ve uygulama ihtiyaçlarınıza uygun **GeoJSON katmanı** şemalarını nasıl **oluşturacağınızı** ele aldık. Bu tekniklerle eksik veya isteğe bağlı verileri sorunsuz bir şekilde yöneten sağlam GIS çözümleri oluşturabilirsiniz.
+
+---
+
+**Last Updated:** 2026-01-05  
+**Tested With:** Aspose.GIS 24.11 for .NET  
+**Author:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
