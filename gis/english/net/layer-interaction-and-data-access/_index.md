@@ -75,13 +75,6 @@ Explore the power of geospatial data manipulation in .NET with Aspose.GIS. Stepâ
 ### [Modify Layer Features](./modify-layer-features/)
 Explore Aspose.GIS for .NET and master the art of modifying layer features in shapefiles effortlessly. Boost your geospatial applications with precision and ease.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Last Updated:** 2026-01-05  
@@ -89,3 +82,10 @@ Explore Aspose.GIS for .NET and master the art of modifying layer features in sh
 **Author:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

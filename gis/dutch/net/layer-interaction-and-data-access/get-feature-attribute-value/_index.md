@@ -125,15 +125,15 @@ A: Ja, Aspose.GIS voor .NET ondersteunt volledig .NET Core, .NET 5 en latere
 ## Conclusie
 Gefeliciteerd! Je hebt geleerd hoe je Aspose.GIS voor .NET kunt gebruiken om feature‑attribuutwaarden op te halen met zowel **expliciete type‑cast** als **dynamisch type‑cast**. Deze technieken stellen je in staat om **shapefile‑attribuut**‑data efficiënt te verkrijgen, of je nu een desktop‑GIS‑tool bouwt of ruimtelijke analyses integreert in een webservice.
 
+---
+
+**Last Updated:** 2026-01-05  
+**Tested With:** Aspose.GIS for .NET (latest)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026-01-05  
-**Tested With:** Aspose.GIS for .NET (latest)  
-**Author:** Aspose

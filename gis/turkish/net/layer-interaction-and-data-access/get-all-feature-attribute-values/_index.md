@@ -130,13 +130,6 @@ Kapsamlı dokümantasyon [burada](https://reference.aspose.com/gis/net/) mevcutt
 ### `GetValues` ile `GetValuesDump` arasındaki fark nedir?
 `GetValues`, önceden tahsis edilmiş bir diziyi ham değerlerle doldurur, `GetValuesDump` ise şemayı önceden bilmeden yineleyebileceğiniz bir nesne dizisi döndürür.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Son Güncelleme:** 2026-01-05  
@@ -144,3 +137,10 @@ Kapsamlı dokümantasyon [burada](https://reference.aspose.com/gis/net/) mevcutt
 **Yazar:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -75,13 +75,6 @@ weight: 25
 ### [修改圖層要素](./modify-layer-features/)
 探索 Aspose.GIS for .NET，輕鬆掌握在 shapefile 中修改圖層要素的技巧。以精準與便利提升您的地理空間應用程式。
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **最後更新:** 2026-01-05  
@@ -89,3 +82,10 @@ weight: 25
 **作者:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

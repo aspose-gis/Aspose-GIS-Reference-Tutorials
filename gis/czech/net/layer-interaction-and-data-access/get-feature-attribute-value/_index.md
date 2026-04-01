@@ -124,15 +124,15 @@ A: Ano, Aspose.GIS pro .NET plně podporuje .NET Core, .NET 5 a novější ver
 ## Závěr
 Gratulujeme! Úspěšně jste se naučili, jak pomocí Aspose.GIS pro .NET získávat hodnoty atributů prvků pomocí **explicitního přetypování** i **dynamického přetypování**. Tyto techniky vám umožní **efektivně získávat data atributů shapefile**, ať už vytváříte desktopový GIS nástroj nebo integrujete prostorovou analytiku do webové služby.
 
+---
+
+**Poslední aktualizace:** 2026-01-05  
+**Testováno s:** Aspose.GIS pro .NET (nejnovější)  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Poslední aktualizace:** 2026-01-05  
-**Testováno s:** Aspose.GIS pro .NET (nejnovější)  
-**Autor:** Aspose

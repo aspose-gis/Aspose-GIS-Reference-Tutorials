@@ -76,15 +76,15 @@ weight: 25
 ### [Modify Layer Features](./modify-layer-features/)
 استكشف Aspose.GIS لـ .NET وتقن فن تعديل خصائص الطبقة في ملفات shapefile بسهولة. عزز تطبيقاتك الجغرافية بالدقة والسهولة.
 
+---
+
+**آخر تحديث:** 2026-01-05  
+**تم الاختبار مع:** Aspose.GIS for .NET (latest release)  
+**المؤلف:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**آخر تحديث:** 2026-01-05  
-**تم الاختبار مع:** Aspose.GIS for .NET (latest release)  
-**المؤلف:** Aspose

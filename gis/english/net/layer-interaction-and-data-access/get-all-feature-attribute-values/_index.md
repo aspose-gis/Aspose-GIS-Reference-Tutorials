@@ -129,13 +129,6 @@ Use `GetValues` with an array sized to one element and pass the index of the “
 ### What is the difference between `GetValues` and `GetValuesDump`?
 `GetValues` fills a pre‑allocated array with raw values, while `GetValuesDump` returns an object array that can be enumerated without knowing the schema ahead of time.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Last Updated:** 2026-01-05  
@@ -143,3 +136,10 @@ Use `GetValues` with an array sized to one element and pass the index of the “
 **Author:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

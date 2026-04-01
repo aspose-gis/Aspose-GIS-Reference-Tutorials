@@ -77,13 +77,6 @@ Khám phá sức mạnh của việc thao tác dữ liệu không gian trong .NE
 ### [Modify Layer Features](./modify-layer-features/)
 Khám phá Aspose.GIS cho .NET và thành thạo nghệ thuật sửa đổi feature của layer trong shapefile một cách dễ dàng. Tăng cường các ứng dụng không gian địa lý của bạn với độ chính xác và sự thuận tiện.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Last Updated:** 2026-01-05  
@@ -91,3 +84,10 @@ Khám phá Aspose.GIS cho .NET và thành thạo nghệ thuật sửa đổi fea
 **Author:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

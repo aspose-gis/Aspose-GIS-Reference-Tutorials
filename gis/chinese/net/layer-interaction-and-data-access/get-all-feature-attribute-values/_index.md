@@ -129,13 +129,6 @@ foreach (var feature in layer)
 ### `GetValues` 与 `GetValuesDump` 有何区别？
 `GetValues` 将原始值填充到预先分配的数组中，而 `GetValuesDump` 返回一个对象数组，可在未知模式的情况下直接枚举。
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **最后更新：** 2026-01-05  
@@ -143,3 +136,10 @@ foreach (var feature in layer)
 **作者：** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

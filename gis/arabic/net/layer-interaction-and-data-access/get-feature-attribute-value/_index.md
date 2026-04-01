@@ -124,15 +124,15 @@ for (int i = 0; i < layer.Count; i++)
 ## الخاتمة
 تهانينا! لقد تعلمت بنجاح كيفية استخدام Aspose.GIS لـ .NET لاسترجاع قيم سمات العناصر باستخدام كل من **التحويل الصريح للنوع** و**التحويل الديناميكي للنوع**. تُتيح لك هذه التقنيات **جلب بيانات سمات shapefile** بكفاءة، سواءً كنت تبني أداة GIS سطح مكتب أو تُدمج التحليلات المكانية في خدمة ويب.
 
+---
+
+**آخر تحديث:** 2026-01-05  
+**تم الاختبار مع:** Aspose.GIS لـ .NET (الأحدث)  
+**المؤلف:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**آخر تحديث:** 2026-01-05  
-**تم الاختبار مع:** Aspose.GIS لـ .NET (الأحدث)  
-**المؤلف:** Aspose

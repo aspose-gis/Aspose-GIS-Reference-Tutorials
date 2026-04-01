@@ -125,15 +125,15 @@ V: Igen, az Aspose.GIS for .NET teljes mértékben támogatja a .NET Core‑t, a
 ## Összegzés
 Gratulálunk! Sikeresen megtanulta, hogyan használja az Aspose.GIS for .NET‑et a feature attribútumértékek lekérésére **explicit típuskonverzióval** és **dinamikus típuskonverzióval** egyaránt. Ezek a technikák lehetővé teszik a shapefile attribútumadatok hatékony megszerzését, legyen szó asztali GIS eszköz fejlesztéséről vagy térbeli elemzések webszolgáltatásba való integrálásáról.
 
+---
+
+**Utoljára frissítve:** 2026-01-05  
+**Tesztelve:** Aspose.GIS for .NET (legújabb)  
+**Szerző:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Utoljára frissítve:** 2026-01-05  
-**Tesztelve:** Aspose.GIS for .NET (legújabb)  
-**Szerző:** Aspose

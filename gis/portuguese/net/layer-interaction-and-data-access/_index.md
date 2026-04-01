@@ -77,15 +77,15 @@ Explore o poder da manipulação de dados geoespaciais em .NET com Aspose.GIS. G
 ### [Modificar Recursos da Camada](./modify-layer-features/)
 Explore o Aspose.GIS para .NET e domine a arte de modificar recursos de camada em shapefiles de forma simples. Impulsione suas aplicações geoespaciais com precisão e facilidade.
 
+---
+
+**Última Atualização:** 2026-01-05  
+**Testado com:** Aspose.GIS for .NET (latest release)  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Última Atualização:** 2026-01-05  
-**Testado com:** Aspose.GIS for .NET (latest release)  
-**Autor:** Aspose

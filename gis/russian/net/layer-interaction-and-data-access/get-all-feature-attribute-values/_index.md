@@ -130,13 +130,6 @@ foreach (var feature in layer)
 ### В чём разница между `GetValues` и `GetValuesDump`?
 `GetValues` заполняет предварительно выделенный массив сырыми значениями, тогда как `GetValuesDump` возвращает массив объектов, который можно перечислять без предварительного знания схемы.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Последнее обновление:** 2026-01-05  
@@ -144,3 +137,10 @@ foreach (var feature in layer)
 **Автор:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

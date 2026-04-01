@@ -131,13 +131,6 @@ foreach (var feature in layer)
 ### Ποια είναι η διαφορά μεταξύ `GetValues` και `GetValuesDump`;
 `GetValues` γεμίζει έναν προ‑καθορισμένο πίνακα με ακατέργαστες τιμές, ενώ `GetValuesDump` επιστρέφει έναν πίνακα αντικειμένων που μπορεί να διαβαστεί χωρίς προ‑γνώση του σχήματος.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Τελευταία Ενημέρωση:** 2026-01-05  
@@ -145,3 +138,10 @@ foreach (var feature in layer)
 **Συγγραφέας:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

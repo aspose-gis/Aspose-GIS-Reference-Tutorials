@@ -130,13 +130,6 @@ Gebruik `GetValues` met een array van één element en geef de index van het “
 ### Wat is het verschil tussen `GetValues` en `GetValuesDump`?
 `GetValues` vult een vooraf‑gealloceerde array met ruwe waarden, terwijl `GetValuesDump` een objectarray retourneert die kan worden doorlopen zonder vooraf de schema te kennen.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Laatst bijgewerkt:** 2026-01-05  
@@ -144,3 +137,10 @@ Gebruik `GetValues` met een array van één element en geef de index van het “
 **Auteur:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

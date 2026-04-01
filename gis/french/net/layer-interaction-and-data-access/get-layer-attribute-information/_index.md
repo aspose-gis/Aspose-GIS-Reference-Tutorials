@@ -15,28 +15,28 @@ weight: 11
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Obtenir les attributs de couche
+# Obtenir les attributs de la couche
 
 ## Introduction
-Bienvenue dans notre tutoriel approfondi sur **l’obtention des attributs de couche** avec Aspose.GIS pour .NET ! Si vous cherchez à extraire des informations détaillées sur les attributs des couches vectorielles GIS, vous êtes au bon endroit. Dans ce guide, nous passerons en revue tout ce dont vous avez besoin — de la configuration de l’environnement à l’affichage du nom, du type de données et de la nullabilité de chaque attribut. À la fin, vous serez prêt à intégrer des requêtes d’attributs de couche dans vos propres applications GIS .NET.
+Bienvenue dans notre tutoriel approfondi sur **l’obtention des attributs de couche** avec Aspose.GIS pour .NET! Si vous cherchez à extraire des informations détaillées sur les attributs des couches distinctes SIG, vous êtes au bon endroit. Dans ce guide, nous passerons en revue tout ce dont vous avez besoin—de la configuration de l’environnement à l’affichage du nom, du type de données et de la nullabilité de chaque attribut. À la fin, vous serez prêt à intégrer des requêtes d’attributs de couche dans vos propres applications GIS .NET.
 
-## Quick Answers
-- **Que signifie « obtenir les attributs de couche » ?** Il s’agit de récupérer le schéma (noms des champs, types, nullabilité) d’une couche vectorielle GIS.  
-- **Quelle bibliothèque le prend en charge ?** Aspose.GIS pour .NET fournit une API simple pour accéder aux attributs de couche.  
-- **Ai‑je besoin d’une licence ?** Un essai gratuit suffit pour le développement ; une licence commerciale est requise pour la production.  
-- **Quel IDE devrais‑je utiliser ?** Visual Studio (toute version récente) fonctionne parfaitement avec le SDK .NET.  
-- **Puis‑je l’utiliser avec .NET Core / .NET 5+ ?** Oui, l’API est entièrement compatible avec les runtimes .NET modernes.
+## Réponses rapides
+- **Que signifie «obtenir les attributs de couche»?** Il s'agit de récupérer le schéma (noms des champs, types, nullabilité) d'une couche vectorielle SIG.
+- **Quelle bibliothèque le prend en charge ?** Aspose.GIS pour .NET fournit une API simple pour les attributs de couche.
+- **Ai‑je besoin d’une licence?** Un essai gratuit suffit pour le développement; une licence commerciale est requise pour la production.
+- **Quel IDE dois-je utiliser?** VisualStudio (toute version récente) fonctionne parfaitement avec le SDK .NET.
+- **Puis‑je l’utiliser avec .NET Core / .NET5+?** Oui, l’API est entièrement compatible avec les runtimes .NET modernes.
 
-## Prerequisites
-Avant de commencer, assurez‑vous de disposer de :
+## Prérequis
+Avant de commencer, assurez-vous de disposer de :
 
-- Connaissances de base en développement .NET.  
-- Visual Studio installé sur votre machine.  
-- Bibliothèque Aspose.GIS pour .NET téléchargée et référencée dans votre projet (vous pouvez obtenir un essai sur le site Aspose).  
+- Connaissances de base en développement .NET.
+- VisualStudio installé sur votre machine.
+- Bibliothèque Aspose.GIS pour .NET téléchargée et référencée dans votre projet (vous pouvez obtenir un essai sur le site Aspose).
 
-Maintenant que tout est prêt, passons au codage.
+Maintenant que tout est prêt, passez au codage.
 
-## Import Namespaces
+## Importer des espaces de noms
 Tout d’abord, importez les espaces de noms requis afin de pouvoir travailler avec les objets Aspose.GIS et les types .NET standards.
 
 ```csharp
@@ -48,10 +48,10 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-Ces instructions `using` vous donnent accès aux classes principales du GIS, au type `VectorLayer` et aux utilitaires .NET courants.
+Ces instructions `using` vous donnent accès aux classes principales du SIG, au type `VectorLayer` et aux utilitaires .NET courants.
 
-## Step 1: Set Up Your Environment
-Définissez le dossier contenant votre Shapefile (ou toute autre source de données vectorielles prise en charge). Remplacez le texte de substitution par le chemin réel sur votre machine.
+## Étape 1 : Configurez votre environnement
+Définissez le dossier contenant votre Shapefile (ou toute autre source de données distinctement prise en charge). Remplacez le texte de substitution par le chemin réel sur votre machine.
 
 ```csharp
 string dataDir = "Your Document Directory";
@@ -59,7 +59,7 @@ string dataDir = "Your Document Directory";
 
 > **Astuce :** Utilisez un chemin absolu ou un chemin relatif basé sur la racine de votre projet pour éviter les erreurs « file not found ».
 
-## Step 2: Open the Vector Layer
+## Étape 2 : Ouvrir la couche vectorielle
 Ouvrez le shapefile avec `VectorLayer.Open`. Cette méthode renvoie un objet `VectorLayer` que nous utiliserons pour interroger les attributs.
 
 ```csharp
@@ -71,7 +71,7 @@ using (VectorLayer layer = VectorLayer.Open(dataDir + "InputShapeFile.shp", Driv
 
 Le bloc `using` garantit que la couche est correctement libérée après utilisation.
 
-## Step 3: Retrieve Attribute Information
+## Étape 3 : Récupérer les informations d’attribut
 À l’intérieur du bloc `using`, parcourez la collection `Attributes`. C’est ici que nous **obtenons les attributs de couche** et affichons leurs détails.
 
 ```csharp

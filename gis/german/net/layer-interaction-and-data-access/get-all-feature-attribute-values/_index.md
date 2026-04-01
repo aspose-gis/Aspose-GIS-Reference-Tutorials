@@ -130,13 +130,6 @@ Verwenden Sie `GetValues` mit einem Array der Größe eins und übergeben Sie de
 ### Was ist der Unterschied zwischen `GetValues` und `GetValuesDump`?
 `GetValues` füllt ein vorab zugewiesenes Array mit Rohwerten, während `GetValuesDump` ein Objekt‑Array zurückgibt, das ohne vorheriges Kenntnis des Schemas enumeriert werden kann.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Zuletzt aktualisiert:** 2026-01-05  
@@ -144,3 +137,10 @@ Verwenden Sie `GetValues` mit einem Array der Größe eins und übergeben Sie de
 **Autor:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

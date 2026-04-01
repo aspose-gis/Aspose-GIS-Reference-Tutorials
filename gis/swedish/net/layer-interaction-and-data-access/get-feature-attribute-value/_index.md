@@ -125,15 +125,15 @@ for (int i = 0; i < layer.Count; i++)
 ## Slutsats
 Grattis! Du har nu lärt dig hur du använder Aspose.GIS för .NET för att hämta funktionsattributvärden med både **explicit type casting** och **dynamic type casting**. Dessa tekniker ger dig möjlighet att **get shapefile attribute**‑data effektivt, oavsett om du bygger ett desktop‑GIS‑verktyg eller integrerar rumslig analys i en webbtjänst.
 
+---
+
+**Last Updated:** 2026-01-05  
+**Tested With:** Aspose.GIS för .NET (senaste)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026-01-05  
-**Tested With:** Aspose.GIS för .NET (senaste)  
-**Author:** Aspose

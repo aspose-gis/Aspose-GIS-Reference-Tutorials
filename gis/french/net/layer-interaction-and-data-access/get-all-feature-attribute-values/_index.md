@@ -130,13 +130,6 @@ Utilisez `GetValues` avec un tableau de taille un et passez l’indice du champ 
 ### Quelle est la différence entre `GetValues` et `GetValuesDump` ?
 `GetValues` remplit un tableau pré‑alloué avec les valeurs brutes, tandis que `GetValuesDump` renvoie un tableau d’objets qui peut être énuméré sans connaître le schéma au préalable.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Dernière mise à jour :** 2026-01-05  
@@ -144,3 +137,10 @@ Utilisez `GetValues` avec un tableau de taille un et passez l’indice du champ 
 **Auteur :** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

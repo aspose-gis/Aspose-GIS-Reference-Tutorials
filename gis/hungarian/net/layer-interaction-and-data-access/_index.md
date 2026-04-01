@@ -77,15 +77,15 @@ Fedezd fel a .NET-ben elérhető térinformatikai adatmanipuláció erejét az A
 ### [Réteg funkciók módosítása](./modify-layer-features/)
 Fedezd fel az Aspose.GIS for .NET-et és sajátítsd el a shapefile réteg funkciók módosításának művészetét könnyedén. Növeld térinformatikai alkalmazásaid pontosságát és egyszerűségét.
 
+---
+
+**Last Updated:** 2026-01-05  
+**Tested With:** Aspose.GIS for .NET (latest release)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026-01-05  
-**Tested With:** Aspose.GIS for .NET (latest release)  
-**Author:** Aspose

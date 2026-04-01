@@ -125,15 +125,15 @@ A: Sì, Aspose.GIS per .NET supporta pienamente .NET Core, .NET 5 e versioni s
 ## Conclusione
 Congratulazioni! Avete appreso con successo come utilizzare Aspose.GIS per .NET per recuperare i valori degli attributi delle feature usando sia il **casting esplicito di tipo** sia il **casting dinamico di tipo**. Queste tecniche vi consentono di **ottenere i dati degli attributi dello shapefile** in modo efficiente, sia che stiate costruendo uno strumento GIS desktop sia che stiate integrando analisi spaziali in un servizio web.
 
+---
+
+**Last Updated:** 2026-01-05  
+**Tested With:** Aspose.GIS for .NET (latest)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026-01-05  
-**Tested With:** Aspose.GIS for .NET (latest)  
-**Author:** Aspose

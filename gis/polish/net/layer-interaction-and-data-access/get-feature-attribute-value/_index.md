@@ -125,15 +125,15 @@ O: Tak, Aspose.GIS dla .NET w pełni obsługuje .NET Core, .NET 5 i nowsze wer
 ## Zakończenie
 Gratulacje! Pomyślnie nauczyłeś się, jak używać Aspose.GIS dla .NET do pobierania wartości atrybutów obiektów przy użyciu zarówno **jawnego rzutowania typów**, jak i **dynamicznego rzutowania typów**. Te techniki umożliwiają efektywne **pobieranie danych atrybutów shapefile**, niezależnie od tego, czy tworzysz narzędzie GIS na pulpit, czy integrujesz analizy przestrzenne w usłudze internetowej.
 
+---
+
+**Ostatnia aktualizacja:** 2026-01-05  
+**Testowano z:** Aspose.GIS for .NET (latest)  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Ostatnia aktualizacja:** 2026-01-05  
-**Testowano z:** Aspose.GIS for .NET (latest)  
-**Autor:** Aspose

@@ -77,13 +77,6 @@ Aspose.GIS for .NET'i keşfedin ve GPX katmanlarıyla zahmetsizce etkileşime ge
 ### [Katman Özelliklerini Değiştir](./modify-layer-features/)
 Aspose.GIS for .NET'i keşfedin ve shapefile'larda katman özelliklerini zahmetsizce değiştirme sanatında uzmanlaşın. Coğrafi uygulamalarınızı hassasiyet ve kolaylıkla artırın.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Son Güncelleme:** 2026-01-05  
@@ -91,3 +84,10 @@ Aspose.GIS for .NET'i keşfedin ve shapefile'larda katman özelliklerini zahmets
 **Yazar:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

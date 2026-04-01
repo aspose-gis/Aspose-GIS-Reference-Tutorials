@@ -136,13 +136,6 @@ foreach (var feature in layer)
 ### `GetValues` と `GetValuesDump` の違いは何ですか？
 `GetValues` は事前に確保した配列に生の値を埋め込みますが、`GetValuesDump` はスキーマを事前に知らなくても列挙可能なオブジェクト配列を返します。
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Last Updated:** 2026-01-05  
@@ -150,3 +143,10 @@ foreach (var feature in layer)
 **Author:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

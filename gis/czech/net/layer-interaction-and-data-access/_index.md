@@ -75,15 +75,15 @@ Prozkoumejte sílu manipulace s geoprostorovými daty v .NET pomocí Aspose.GIS.
 ### [Modify Layer Features](./modify-layer-features/)
 Prozkoumejte Aspose.GIS pro .NET a ovládněte umění úpravy prvků vrstvy v shapefile souborech bez námahy. Zvyšte své geoprostorové aplikace pomocí přesnosti a jednoduchosti.
 
+---
+
+**Last Updated:** 2026-01-05  
+**Tested With:** Aspose.GIS for .NET (latest release)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026-01-05  
-**Tested With:** Aspose.GIS for .NET (latest release)  
-**Author:** Aspose

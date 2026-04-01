@@ -77,15 +77,15 @@ Scopri la potenza della manipolazione dei dati geospaziali in .NET con Aspose.GI
 ### [Modify Layer Features](./modify-layer-features/)
 Esplora Aspose.GIS per .NET e padroneggia l'arte di modificare le feature dei layer negli shapefile senza sforzo. Potenzia le tue applicazioni geospaziali con precisione e facilità.
 
+---
+
+**Last Updated:** 2026-01-05  
+**Tested With:** Aspose.GIS for .NET (latest release)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026-01-05  
-**Tested With:** Aspose.GIS for .NET (latest release)  
-**Author:** Aspose

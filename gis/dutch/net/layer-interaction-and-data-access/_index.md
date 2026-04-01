@@ -84,15 +84,15 @@ Verken de kracht van geospatiale gegevensmanipulatie in .NET met Aspose.GIS. Sta
 ### [Modify Layer Features](./modify-layer-features/)
 Verken Aspose.GIS voor .NET en beheers de kunst van het moeiteloos wijzigen van laagfeatures in shapefiles. Verhoog uw geospatiale toepassingen met precisie en gemak.
 
+---
+
+**Laatst bijgewerkt:** 2026-01-05  
+**Getest met:** Aspose.GIS for .NET (latest release)  
+**Auteur:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Laatst bijgewerkt:** 2026-01-05  
-**Getest met:** Aspose.GIS for .NET (latest release)  
-**Auteur:** Aspose

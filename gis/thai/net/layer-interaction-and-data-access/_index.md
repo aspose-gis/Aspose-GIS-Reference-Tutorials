@@ -76,13 +76,6 @@ weight: 25
 ### [Modify Layer Features](./modify-layer-features/)
 สำรวจ Aspose.GIS สำหรับ .NET และเชี่ยวชาญศิลปะการแก้ไขฟีเจอร์ของเลเยอร์ใน shapefile อย่างง่ายดาย เพิ่มประสิทธิภาพแอปพลิเคชันเชิงพื้นที่ของคุณด้วยความแม่นยำและความสะดวก
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Last Updated:** 2026-01-05  
@@ -90,3 +83,10 @@ weight: 25
 **Author:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -130,13 +130,6 @@ Użyj `GetValues` z tablicą o rozmiarze jednego elementu i przekaż indeks pola
 ### Jaka jest różnica między `GetValues` a `GetValuesDump`?
 `GetValues` wypełnia wcześniej przydzieloną tablicę surowymi wartościami, natomiast `GetValuesDump` zwraca tablicę obiektów, którą można iterować bez wcześniejszej znajomości schematu.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Ostatnia aktualizacja:** 2026-01-05  
@@ -144,3 +137,10 @@ Użyj `GetValues` z tablicą o rozmiarze jednego elementu i przekaż indeks pola
 **Autor:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

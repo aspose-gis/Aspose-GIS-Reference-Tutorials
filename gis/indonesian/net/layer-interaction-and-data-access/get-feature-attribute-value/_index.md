@@ -15,24 +15,24 @@ weight: 12
 
 # Dapatkan Nilai Atribut Fitur menggunakan Casting Tipe Dinamis
 
-## Introduction
-Selamat datang di dunia Aspose.GIS untuk .NET, sebuah perpustakaan kuat yang memungkinkan pengembang .NET untuk bekerja dengan data sistem informasi geografis (GIS) secara mulus. Dalam tutorial ini Anda akan menemukan bagaimana **dynamic type casting** menyederhanakan proses pengambilan nilai atribut fitur dari shapefile, sekaligus membahas pendekatan klasik **explicit type casting**. Baik Anda membaca shapefile dalam aplikasi .NET maupun perlu **fetch attribute values** untuk analitik, teknik ini akan membuat kode Anda lebih bersih dan fleksibel.
+## Perkenalan
+Selamat datang di dunia Aspose.GIS untuk .NET, sebuah perpustakaan kuat yang memungkinkan pengembang .NET untuk bekerja dengan sistem data informasi geografis (GIS) secara mulus. Dalam tutorial ini Anda akan menemukan bagaimana **dynamic type casting** menjelaskan proses pengambilan nilai atribut fitur dari shapefile, sekaligus membahas pendekatan klasik **explicit type casting**. Baik Anda membaca shapefile dalam aplikasi .NET maupun perlu **fetch Attribute Values** untuk analitik, teknik ini akan membuat kode Anda lebih bersih dan fleksibel.
 
-## Quick Answers
-- **What is dynamic type casting?** Cara pada runtime untuk mengambil nilai atribut tanpa menentukan tipe target terlebih dahulu.  
-- **Why use Aspose.GIS?** Menyediakan API terpadu untuk membaca data shapefile .NET dan mendukung kedua metode casting.  
-- **Do I need a license?** Tersedia trial gratis; lisensi komersial diperlukan untuk produksi.  
-- **Which .NET versions are supported?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6 dan versi selanjutnya.  
-- **Can I fetch attribute values from large files?** Ya—iterasi fitur secara efisien seperti yang ditunjukkan dalam contoh.
+## Jawaban Cepat
+- **Apa itu casting tipe dinamis?** Cara pada runtime untuk mengambil nilai atribut tanpa menentukan tipe target terlebih dahulu.
+- **Mengapa menggunakan Aspose.GIS?** Menyediakan API terpadu untuk membaca data shapefile.NET dan mendukung kedua metode casting.
+- **Apakah saya memerlukan lisensi?** Tersedia uji coba gratis; lisensi komersial diperlukan untuk produksi.
+- **Versi .NET manakah yang didukung?** .NET Framework 4.5+, .NET Core 3.1+, .NET5/6 dan versi selanjutnya.
+- **Dapatkah saya mengambil nilai atribut dari file besar?** Ya—iterasi fitur secara efisien seperti yang ditampilkan dalam contoh.
 
-## Prerequisites
+## Prasyarat
 Sebelum kita masuk ke tutorial, pastikan Anda telah menyiapkan hal‑hal berikut:
-- Pemahaman dasar tentang pengembangan .NET.  
-- Visual Studio terpasang di mesin Anda.  
-- Perpustakaan Aspose.GIS untuk .NET, yang dapat Anda unduh dari [download link](https://releases.aspose.com/gis/net/).  
+- Pemahaman dasar tentang pengembangan .NET.
+- Visual Studio terpasang di mesin Anda.
+- Perpustakaan Aspose.GIS untuk .NET, yang dapat Anda unduh dari [link download](https://releases.aspose.com/gis/net/).
 - Familiaritas dengan konsep dan terminologi GIS.
 
-## Import Namespaces
+## Impor Namespace
 Untuk memulai proyek Anda, pastikan Anda mengimpor namespace yang diperlukan. Langkah ini penting untuk mengakses fungsionalitas yang disediakan oleh Aspose.GIS untuk .NET. Sertakan namespace berikut dalam kode Anda:
 ```csharp
 using Aspose.Gis;
@@ -43,19 +43,18 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## How to Use Dynamic Type Casting to Fetch Attribute Values
+## Cara Menggunakan Transmisi Tipe Dinamis untuk Mengambil Nilai Atribut
 Berikut panduan langkah‑demi‑langkah yang membawa Anda melalui penyiapan proyek, membuka shapefile, dan mengambil nilai atribut menggunakan **explicit type casting** serta **dynamic type casting**.
 
-### Step 1: Set up Your Project
+### Langkah 1: Siapkan Proyek Anda
 Buat proyek .NET baru di Visual Studio dan referensikan pustaka Aspose.GIS.
 
-### Step 2: Define Your Document Directory
-Tentukan jalur ke direktori dokumen Anda. Di sinilah shapefile (`InputShapeFile.shp`) berada.
+### Langkah 2: Tentukan Direktori Dokumen Anda
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-### Step 3: Open the Vector Layer
+### Langkah 3: Buka Lapisan Vektor
 Buka layer vektor menggunakan Aspose.GIS. Pastikan Anda menyebutkan driver, dalam hal ini driver Shapefile.
 ```csharp
 using (VectorLayer layer = VectorLayer.Open(dataDir + "InputShapeFile.shp", Drivers.Shapefile))
@@ -64,10 +63,10 @@ using (VectorLayer layer = VectorLayer.Open(dataDir + "InputShapeFile.shp", Driv
 }
 ```
 
-### Step 4: Retrieve Feature Attribute Values
-Sekarang, lakukan loop pada setiap fitur di layer dan ambil nilai atributnya. Aspose.GIS menyediakan berbagai cara untuk fetch attribute values.
+### Langkah 4: Ambil Nilai Atribut Fitur
+Sekarang, lakukan loop pada setiap fitur di layer dan ambil nilai atributnya. Aspose.GIS menyediakan berbagai cara untuk mengambil nilai atribut.
 
-#### Case 1: Explicit Type Casting
+#### Kasus 1: Transmisi Tipe Eksplisit
 ```csharp
 for (int i = 0; i < layer.Count; i++)
 {
@@ -80,7 +79,7 @@ for (int i = 0; i < layer.Count; i++)
 }
 ```
 
-#### Case 2: Dynamic Type Casting
+#### Kasus 2: Konversi Tipe Dinamis
 ```csharp
 for (int i = 0; i < layer.Count; i++)
 {
@@ -93,37 +92,43 @@ for (int i = 0; i < layer.Count; i++)
 }
 ```
 
-> **Pro tip:** Gunakan dynamic type casting ketika Anda tidak yakin dengan tipe data tepat dari sebuah atribut atau ketika Anda ingin menulis kode generik yang berfungsi pada banyak shapefile. Beralihlah ke explicit type casting ketika Anda memerlukan keamanan tipe pada waktu kompilasi.
+> **Tips pro:** Gunakan casting tipe dinamis ketika Anda tidak yakin dengan tipe data yang tepat dari sebuah atribut atau ketika Anda ingin menulis kode generik yang berfungsi pada banyak shapefile. Beralihlah ke casting tipe eksplisit ketika Anda memerlukan keamanan tipe pada waktu kompilasi.
 
-## Common Issues and Solutions
-- **Attribute name mismatch:** Nama atribut GIS bersifat case‑sensitive. Periksa kembali ejaan tepat dalam skema shapefile.  
-- **Null values:** `GetValue` mengembalikan `null` untuk atribut yang hilang; tangani dengan hati‑hati agar tidak terjadi `NullReferenceException`.  
-- **Large datasets:** Iterasi menggunakan `foreach` atau paging untuk mengurangi konsumsi memori.
+## Masalah Umum dan Solusinya
+- **Ketidakcocokan nama atribut:** Nama atribut GIS bersifat peka huruf besar-kecil. Periksa kembali ejaan yang tepat dalam skema shapefile.
+- **Nilai nol:** `GetValue` mengembalikan `null` untuk atribut yang hilang; tangani dengan hati‑hati agar tidak terjadi `NullReferenceException`.
+- **Dataset besar:** Iterasi menggunakan `foreach` atau paging untuk mengurangi konsumsi memori.
 
-## Frequently Asked Questions
-### Q: Is Aspose.GIS suitable for both beginners and experienced developers?
-A: Absolutely! Aspose.GIS caters to developers of all skill levels, providing an intuitive API for GIS data manipulation.
+## Pertanyaan yang Sering Diajukan
+### T: Apakah Aspose.GIS cocok untuk pemula dan pengembang berpengalaman?
+J: Tentu saja! Aspose.GIS melayani pengembang dari semua tingkat keahlian, menyediakan API intuitif untuk manipulasi data GIS.
 
-### Q: Can I use Aspose.GIS in my commercial projects?
-A: Yes, Aspose.GIS is a commercial product. You can find licensing details on the [purchase page](https://purchase.aspose.com/buy).
+### T: Dapatkah saya menggunakan Aspose.GIS dalam proyek komersial saya?
+J: Ya, Aspose.GIS adalah produk komersial. Anda dapat menemukan detail lisensi di [halaman pembelian](https://purchase.aspose.com/buy).
 
-### Q: Are temporary licenses available for testing purposes?
-A: Yes, you can obtain a temporary license for testing from [here](https://purchase.aspose.com/temporary-license/).
+### T: Apakah lisensi sementara tersedia untuk tujuan pengujian?
+J: Ya, Anda dapat memperoleh lisensi sementara untuk pengujian dari [sini](https://purchase.aspose.com/temporary-license/).
 
-### Q: Where can I find community support for Aspose.GIS?
-A: Join the discussion on the [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) to seek help and connect with other users.
+### T: Di mana saya dapat menemukan dukungan komunitas untuk Aspose.GIS?
+J: Bergabunglah dalam diskusi di [forum Aspose.GIS](https://forum.aspose.com/c/gis/33) untuk mencari bantuan dan terhubung dengan pengguna lain.
 
-### Q: Is there a free trial version of Aspose.GIS?
-A: Certainly! You can explore the features of Aspose.GIS by downloading the free trial from [here](https://releases.aspose.com/).
+### T: Apakah ada versi uji coba gratis Aspose.GIS?
+J: Tentu! Anda dapat menjelajahi fitur-fitur Aspose.GIS dengan mengunduh versi uji coba gratis dari [sini](https://releases.aspose.com/).
 
-### Q: How do I get shapefile attribute values without knowing their types?
-A: Use the dynamic type casting approach (`feature.GetValue("attributeName")`) which returns the value as an `object` that you can cast at runtime.
+### T: Bagaimana cara mendapatkan nilai atribut shapefile tanpa mengetahui tipenya?
+J: Gunakan pendekatan casting tipe dinamis (`feature.GetValue("attributeName")`) yang mengembalikan nilai sebagai `objek` yang dapat Anda transmisikan saat runtime.
 
-### Q: Can I read shapefile .NET data in a .NET Core application?
-A: Yes, Aspose.GIS for .NET fully supports .NET Core, .NET 5, and later versions.
+### T: Bisakah saya membaca data shapefile.NET di aplikasi .NET Core?
+J: Ya, Aspose.GIS untuk .NET sepenuhnya mendukung .NET Core, .NET5, dan versi yang lebih baru.
 
-## Conclusion
-Selamat! Anda telah berhasil mempelajari cara menggunakan Aspose.GIS untuk .NET dalam mengambil nilai atribut fitur menggunakan **explicit type casting** dan **dynamic type casting**. Teknik ini memungkinkan Anda **get shapefile attribute** data secara efisien, baik Anda membangun alat GIS desktop maupun mengintegrasikan analitik spasial ke dalam layanan web.
+## Kesimpulan
+Selamat! Anda telah berhasil mempelajari cara menggunakan Aspose.GIS untuk .NET dalam mengambil nilai atribut fitur menggunakan **explicit type casting** dan **dynamic type casting**. Teknik ini memungkinkan Anda **mendapatkan atribut shapefile** data secara efisien, baik Anda membangun alat GIS desktop maupun mengintegrasikan analitik spasial ke dalam layanan web.
+
+---
+
+**Terakhir Diperbarui:** 05-01-2026
+**Diuji Dengan:** Aspose.GIS untuk .NET (terbaru)
+**Penulis:** Beranggapan
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
@@ -131,9 +136,3 @@ Selamat! Anda telah berhasil mempelajari cara menggunakan Aspose.GIS untuk .NET 
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026-01-05  
-**Tested With:** Aspose.GIS for .NET (latest)  
-**Author:** Aspose

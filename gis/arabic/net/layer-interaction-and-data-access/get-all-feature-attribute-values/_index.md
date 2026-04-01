@@ -130,13 +130,6 @@ foreach (var feature in layer)
 ### ما الفرق بين `GetValues` و `GetValuesDump`؟
 `GetValues` يملأ مصفوفة مُخصصة مسبقًا بالقيم الخام، بينما `GetValuesDump` يُعيد مصفوفة كائنات يمكن تعدادها دون الحاجة لمعرفة المخطط مسبقًا.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Last Updated:** 2026-01-05  
@@ -144,3 +137,10 @@ foreach (var feature in layer)
 **Author:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

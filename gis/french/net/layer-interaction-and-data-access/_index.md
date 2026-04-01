@@ -77,15 +77,15 @@ Explorez la puissance de la manipulation de données géospatiales en .NET avec 
 ### [Modifier les entités de couche](./modify-layer-features/)
 Explorez Aspose.GIS pour .NET et maîtrisez l'art de modifier les entités de couche dans les shapefiles sans effort. Boostez vos applications géospatiales avec précision et facilité.
 
+---
+
+**Dernière mise à jour :** 2026-01-05  
+**Testé avec :** Aspose.GIS for .NET (latest release)  
+**Auteur :** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Dernière mise à jour :** 2026-01-05  
-**Testé avec :** Aspose.GIS for .NET (latest release)  
-**Auteur :** Aspose

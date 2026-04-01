@@ -124,15 +124,15 @@ for (int i = 0; i < layer.Count; i++)
 ## Kết luận
 Chúc mừng! Bạn đã học cách sử dụng Aspose.GIS cho .NET để lấy giá trị thuộc tính của đối tượng bằng cả **định kiểu rõ ràng** và **định kiểu động**. Những kỹ thuật này giúp bạn **lấy dữ liệu thuộc tính shapefile** một cách hiệu quả, dù bạn đang xây dựng công cụ GIS desktop hay tích hợp phân tích không gian vào dịch vụ web.
 
+---
+
+**Last Updated:** 2026-01-05  
+**Tested With:** Aspose.GIS for .NET (latest)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026-01-05  
-**Tested With:** Aspose.GIS for .NET (latest)  
-**Author:** Aspose

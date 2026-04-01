@@ -124,15 +124,15 @@ A: ใช่, Aspose.GIS for .NET รองรับ .NET Core, .NET 5, แล
 ## สรุป
 ขอแสดงความยินดี! คุณได้เรียนรู้วิธีใช้ Aspose.GIS for .NET เพื่อดึงค่าแอตทริบิวต์ของฟีเจอร์โดยใช้ทั้ง **explicit type casting** และ **dynamic type casting** แล้ว เทคนิคเหล่านี้ทำให้คุณสามารถ **get shapefile attribute** ได้อย่างมีประสิทธิภาพ ไม่ว่าจะเป็นการสร้างเครื่องมือ GIS บนเดสก์ท็อปหรือการรวมการวิเคราะห์เชิงพื้นที่เข้าในเว็บเซอร์วิส
 
+---
+
+**อัปเดตล่าสุด:** 2026-01-05  
+**ทดสอบด้วย:** Aspose.GIS for .NET (latest)  
+**ผู้เขียน:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**อัปเดตล่าสุด:** 2026-01-05  
-**ทดสอบด้วย:** Aspose.GIS for .NET (latest)  
-**ผู้เขียน:** Aspose

@@ -77,15 +77,15 @@ Utforska kraften i geospatial datamanipulation i .NET med Aspose.GIS. Steg‑fö
 ### [Modify Layer Features](./modify-layer-features/)
 Utforska Aspose.GIS för .NET och bemästra konsten att modifiera lagerfunktioner i shapefiler enkelt. Förbättra dina geospatiala applikationer med precision och lätthet.
 
+---
+
+**Senast uppdaterad:** 2026-01-05  
+**Testat med:** Aspose.GIS for .NET (latest release)  
+**Författare:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Senast uppdaterad:** 2026-01-05  
-**Testat med:** Aspose.GIS for .NET (latest release)  
-**Författare:** Aspose

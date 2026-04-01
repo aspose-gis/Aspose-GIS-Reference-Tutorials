@@ -131,13 +131,6 @@ Használja a `GetValues`-t egy egy elemű tömbbel, és adja át a „Name” me
 ### Mi a különbség a `GetValues` és a `GetValuesDump` között?
 `GetValues` egy előre lefoglaltt tömböt tölt fel nyers értékekkel, míg a `GetValuesDump` egy objektumtömböt ad vissza, amelyet a séma előzetes ismerete nélkül is bejárhat.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Utoljára frissítve:** 2026-01-05  
@@ -145,3 +138,10 @@ Használja a `GetValues`-t egy egy elemű tömbbel, és adja át a „Name” me
 **Szerző:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

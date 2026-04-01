@@ -125,15 +125,15 @@ for (int i = 0; i < layer.Count; i++)
 ## Заключение
 Поздравляем! Вы успешно изучили, как с помощью Aspose.GIS для .NET получать значения атрибутов объектов, используя как **явное**, так и **динамическое приведение типов**. Эти техники позволяют эффективно **получать данные атрибутов shapefile**, будь то настольное GIS‑приложение или интеграция пространственной аналитики в веб‑службу.
 
+---
+
+**Последнее обновление:** 2026-01-05  
+**Тестировано с:** Aspose.GIS for .NET (latest)  
+**Автор:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Последнее обновление:** 2026-01-05  
-**Тестировано с:** Aspose.GIS for .NET (latest)  
-**Автор:** Aspose
