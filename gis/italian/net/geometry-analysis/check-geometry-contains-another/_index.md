@@ -1,12 +1,12 @@
 ---
-date: 2025-12-04
+date: 2026-02-05
 description: Scopri come determinare se un punto si trova all'interno di un poligono
-  usando C#. Questo tutorial Aspose.GIS .NET copre i controlli di contenimento di
-  punti nella geometria, le tecniche di analisi geospaziale .NET e le migliori pratiche
+  usando C#. Questo tutorial Aspose.GIS .NET copre i controlli di contenimento del
+  punto nella geometria, le tecniche di analisi geospaziale .NET e le migliori pratiche
   con Aspose.GIS .NET.
 linktitle: point inside polygon c# – Check Geometry Contains Another
 second_title: Aspose.GIS .NET API
-title: punto dentro il poligono c# – Verifica se la geometria ne contiene un'altra
+title: punto all'interno del poligono C# – Verifica se una geometria ne contiene un'altra
 url: /it/net/geometry-analysis/check-geometry-contains-another/
 weight: 14
 ---
@@ -18,41 +18,47 @@ weight: 14
 # punto all'interno del poligono c# – Verifica se la geometria contiene un'altra
 
 ## Introduzione
-Se stai lavorando a progetti di **geospatial analysis .net**, uno dei compiti più comuni è determinare se una posizione specifica (un punto) si trovi all'interno di un'area definita (un poligono). In questo tutorial ti mostreremo, passo‑per‑passo, come eseguire un controllo **point inside polygon c#** con la libreria **Aspose.GIS .NET**. Che tu stia creando un'applicazione di mappatura, un servizio basato sulla posizione o qualsiasi soluzione che richieda logica di contenimento spaziale, gli snippet di codice qui sotto ti metteranno in funzione in pochi minuti.
+Se stai lavorando su progetti di **geospatial analysis .net**, uno dei compiti più comuni è determinare se una posizione specifica (un punto) cade all'interno di un'area definita (un poligono). In questo tutorial ti mostreremo, passo‑per‑passo, come eseguire un controllo **point inside polygon c#** con la libreria **Aspose.GIS .NET**. Che tu stia creando un'applicazione di mappatura, un servizio basato sulla posizione o qualsiasi soluzione che richieda logica di contenimento spaziale, gli snippet di codice qui sotto ti metteranno subito in funzione.
 
 ## Risposte rapide
-- **Cosa significa “point inside polygon c#”?** È una query spaziale che restituisce true quando una geometria punto si trova completamente all'interno di una geometria poligono.  
+- **Cosa significa “point inside polygon c#”?** È una query spaziale che restituisce true quando una geometria Point si trova completamente all'interno di una geometria Polygon.  
 - **Quale libreria gestisce questo in .NET?** Aspose.GIS per .NET fornisce i metodi `SpatiallyContains` e `Within`.  
-- **È necessaria una licenza?** È disponibile una versione di prova gratuita; per l'uso in produzione è richiesta una licenza commerciale.  
+- **Ho bisogno di una licenza?** È disponibile una versione di prova gratuita; per l'uso in produzione è necessaria una licenza commerciale.  
 - **È compatibile con .NET Core / .NET 6+?** Sì – Aspose.GIS supporta pienamente i runtime .NET moderni.  
 - **Quanto tempo richiede l'implementazione?** Circa 10 minuti per copiare il codice ed eseguire l'esempio.
 
-## Cos'è il point inside polygon c#?
-Un test *point inside polygon* verifica se le coordinate di un oggetto `Point` sono situate all'interno dei confini di un oggetto `Polygon`. In C# ciò è tipicamente realizzato tramite librerie geometriche che implementano gli algoritmi **Ray Casting** o **Winding Number**. Aspose.GIS astrae questi dettagli e offre un'API semplice: `polygon.SpatiallyContains(point)`.
+## Che cos'è point inside polygon c#?
+Un test *punto all'interno del poligono* verifica se le coordinate di un oggetto `Point` sono situate entro i confini di un oggetto `Polygon`. In C# ciò è tipicamente realizzato tramite librerie geometriche che implementano gli algoritmi **Ray Casting** o **Winding Number**. Aspose.GIS astrae questi dettagli e offre un'API semplice: `polygon.SpatiallyContains(point)`.
 
-## Perché usare Aspose.GIS .NET per i controlli di contenimento di punti nella geometria?
-- **Modello geometrico ricco** – Supporta poligoni, multipoligoni, anelli lineari e molto altro.  
+## Perché usare Aspose.GIS .NET per i controlli di contenimento geometrico?
+- **Modello geometrico ricco** – Supporta poligoni, multipoligoni, anelli lineari e altro.  
 - **Operazioni spaziali ad alte prestazioni** – Ottimizzate per grandi dataset.  
 - **Cross‑platform** – Funziona su .NET Framework, .NET Core e .NET 5/6+.  
 - **Documentazione completa** – Numerosi esempi per scenari di **geospatial analysis .net**.  
+
+## Casi d'uso comuni per point inside polygon c#
+- **Geofencing**: Attiva azioni quando un dispositivo entra o esce da un'area predefinita.  
+- **Visualizzazione della mappa**: Evidenzia regioni che contengono un punto selezionato dall'utente.  
+- **Analisi spaziale**: Filtra i dataset per includere solo i record che ricadono all'interno di un'area di studio.  
+- **Pianificazione delle consegne**: Verifica che un indirizzo di consegna sia compreso in una zona di servizio.
 
 ## Prerequisiti
 Prima di iniziare, assicurati di avere:
 
 1. **Ambiente di sviluppo .NET** – .NET 6 SDK (o successivo) installato.  
-2. **Aspose.GIS per .NET** – Scaricalo dalla pagina di rilascio ufficiale e aggiungi il pacchetto NuGet al tuo progetto.  
-3. **Conoscenza base di C#** – Familiarità con classi, oggetti e applicazioni console.
+2. **Aspose.GIS per .NET** – Scarica dalla pagina di rilascio ufficiale e aggiungi il pacchetto NuGet al tuo progetto.  
+3. **Conoscenza di base di C#** – Familiarità con classi, oggetti e applicazioni console.
 
 ### 1. Configurazione dell'ambiente di sviluppo .NET
-Assicurati di avere un ambiente di sviluppo .NET funzionante sulla tua macchina. Questo include avere l'SDK .NET installato e configurato correttamente.
+Assicurati di avere un ambiente di sviluppo .NET funzionante sulla tua macchina. Questo include avere il .NET SDK installato e configurato correttamente.
 
 ### 2. Installazione di Aspose.GIS
 Installa Aspose.GIS per .NET scaricando la libreria dalla pagina di rilascio [qui](https://releases.aspose.com/gis/net/). Segui le istruzioni di installazione fornite nella documentazione [qui](https://reference.aspose.com/gis/net/) per integrare Aspose.GIS nel tuo progetto.
 
-### 3. Conoscenza di base di C#
+### 3. Comprensione di base di C#
 Familiarizzati con il linguaggio di programmazione C# poiché Aspose.GIS per .NET è principalmente utilizzato con C#.
 
-## Importazione degli spazi dei nomi
+## Importare gli spazi dei nomi
 Nel tuo progetto C#, importa gli spazi dei nomi necessari per utilizzare le funzionalità di Aspose.GIS:
 ```csharp
 using Aspose.Gis.Geometries;
@@ -64,7 +70,7 @@ using System.Threading.Tasks;
 ```
 
 ## Passo 1: Definire gli oggetti geometria
-Per prima cosa, definisci gli oggetti geometria usando le classi di Aspose.GIS. Qui creiamo un poligono con un anello esterno e un anello interno (un buco), quindi un punto che testeremo per il contenimento.
+Per prima cosa, definisci gli oggetti geometria usando le classi di Aspose.GIS. Qui creiamo un poligono con un anello esterno e un anello interno (un buco), poi un punto che testeremo per il contenimento.
 ```csharp
 var geometry1 = new Polygon();
 geometry1.ExteriorRing = new LinearRing(new[]
@@ -87,7 +93,7 @@ var geometry2 = new Point(2, 2);
 ```
 
 ## Passo 2: Verificare il contenimento spaziale
-Successivamente, verifica se la geometria **geometry1** contiene il punto **geometry2**. Il metodo `SpatiallyContains` restituisce `false` perché il punto si trova all'interno dell'anello interno (il buco).
+Successivamente, verifica se la **geometry1** del poligono contiene il punto **geometry2**. Il metodo `SpatiallyContains` restituisce `false` perché il punto si trova all'interno dell'anello interno (il buco).
 ```csharp
 Console.WriteLine(geometry1.SpatiallyContains(geometry2)); // False
 ```
@@ -112,8 +118,8 @@ Console.WriteLine(geometry3.Within(geometry1)); // True
 
 ## Problemi comuni e soluzioni
 | Problema | Perché accade | Soluzione |
-|----------|----------------|-----------|
-| **Risultato `false` inatteso** | Il punto si trova dentro un buco (anello interno) del poligono. | Verifica di stare testando il poligono corretto o usa `geometry1.ExteriorRing` per poligoni semplici senza buchi. |
+|----------|---------------|-----------|
+| **Risultato `false` inaspettato** | Il punto si trova dentro un buco (anello interno) del poligono. | Assicurati di testare contro il poligono corretto o usa `geometry1.ExteriorRing` per poligoni semplici senza buchi. |
 | **NullReferenceException** | Gli oggetti geometria non sono stati inizializzati prima di chiamare `SpatiallyContains`. | Istanzia sia il poligono sia il punto prima di invocare i metodi spaziali. |
 | **Rallentamento delle prestazioni su grandi dataset** | Creazione ripetuta di oggetti geometria all'interno di cicli. | Riutilizza le istanze di geometria o elabora in batch usando `GeometryCollection`. |
 
@@ -129,17 +135,20 @@ R: Assolutamente sì, Aspose.GIS offre varie funzionalità per l'analisi geospaz
 R: Aspose.GIS rilascia regolarmente aggiornamenti per migliorare le prestazioni, aggiungere nuove funzionalità e risolvere eventuali problemi segnalati. Puoi rimanere aggiornato visitando la pagina di rilascio.
 
 **D: Esiste un forum della community per gli utenti di Aspose.GIS?**  
-R: Sì, puoi unirti al forum della community di Aspose.GIS [qui](https://forum.aspose.com/c/gis/33) per entrare in contatto con altri utenti, fare domande e condividere le tue esperienze.
+R: Sì, puoi unirti al forum della community Aspose.GIS [qui](https://forum.aspose.com/c/gis/33) per connetterti con altri utenti, porre domande e condividere le tue esperienze.
 
 **D: Posso provare Aspose.GIS prima di acquistarlo?**  
 R: Certamente, puoi esplorare Aspose.GIS scaricando la versione di prova gratuita [qui](https://releases.aspose.com/).
 
+**D: Cosa succede se testo un punto che cade esattamente sul bordo del poligono?**  
+R: Aspose.GIS considera i punti sul confine come **interni** per il metodo `SpatiallyContains`. Usa `Touches` se ti serve un comportamento diverso.
+
 ## Conclusione
-In questa guida abbiamo mostrato una soluzione pratica di **point inside polygon c#** usando Aspose.GIS per .NET. Definendo le tue geometrie e sfruttando il metodo `SpatiallyContains` (o `Within`), puoi rispondere rapidamente a domande di contenimento spaziale—una parte essenziale di qualsiasi workflow di **geospatial analysis .net**. Sentiti libero di sperimentare con dataset più grandi, diversi tipi di geometria e combinare questi controlli con altre capacità di Aspose.GIS, come i calcoli di distanza o l'indicizzazione spaziale.
+In questa guida abbiamo mostrato una soluzione pratica di **point inside polygon c#** utilizzando Aspose.GIS per .NET. Definendo le tue geometrie e sfruttando il metodo `SpatiallyContains` (o `Within`), puoi rispondere rapidamente a domande di contenimento spaziale—una parte essenziale di qualsiasi flusso di lavoro di **geospatial analysis .net**. Sentiti libero di sperimentare con dataset più grandi, diversi tipi di geometria e combinare questi controlli con altre capacità di Aspose.GIS, come i calcoli di distanza o l'indicizzazione spaziale.
 
 ---
 
-**Last Updated:** 2025-12-04  
+**Last Updated:** 2026-02-05  
 **Tested With:** Aspose.GIS 24.11 for .NET  
 **Author:** Aspose  
 
@@ -149,3 +158,5 @@ In questa guida abbiamo mostrato una soluzione pratica di **point inside polygon
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+---
