@@ -1,11 +1,15 @@
 ---
-date: 2025-12-21
-description: Lär dig hur du linjäriserar geometri med Aspose.GIS för .NET, vilket
-  möjliggör effektiv bearbetning av geospatial data, rumslig analys och geometrimanipulation
-  i dina .NET‑appar.
-linktitle: Linearize a Geometry
+date: 2026-04-06
+description: Lär dig hur du konverterar kurvor till linjer och linjäriserar geometri
+  med Aspose.GIS för .NET, vilket möjliggör snabb geospatial bearbetning och analys
+  i dina .NET‑applikationer.
+keywords:
+- convert curves to lines
+- how to linearize geometry
+- Aspose.GIS linearize geometry
+linktitle: Linearisa en geometri
 second_title: Aspose.GIS .NET API
-title: Hur man lineariserar geometri med Aspose.GIS för .NET
+title: Konvertera kurvor till linjer med Aspose.GIS för .NET
 url: /sv/net/geometry-processing/linearize-geometry/
 weight: 14
 ---
@@ -14,37 +18,37 @@ weight: 14
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Linearizera en geometri
+# Konvertera kurvor till linjer med Aspose.GIS för .NET
 
 ## Introduktion
-Om du behöver **hur man lineariserar geometri** för kartläggning, rumslig analys eller data‑utbytesuppgifter, ger Aspose.GIS för .NET dig ett rent, programatiskt sätt att göra det. I den här handledningen går vi igenom ett komplett, verkligt exempel som visar hur du tar en komplex geometri—med kurvor och sammansatta former—och omvandlar den till en enkel linjär representation som fungerar med alla GIS‑system.
+If you need to **convert curves to lines** for mapping, spatial analysis, or data‑exchange tasks, Aspose.GIS for .NET gives you a clean, programmatic way to do it. In this tutorial we’ll walk through a complete, real‑world example that shows you how to take a complex geometry—containing curves and compound shapes—and turn it into a simple linear representation that works with any GIS system.
 
 ## Snabba svar
-- **Vad betyder det att linearizera en geometri?** Omvandla kurvor och komplexa former till raka linjesegment.
-- **Varför använda Aspose.GIS?** Det stöder dussintals GIS‑format och hanterar geometrikonvertering utan externa verktyg.
-- **Förutsättningar?** .NET Framework eller .NET Core, Visual Studio och Aspose.GIS‑biblioteket.
-- **Hur lång tid tar exemplet?** Under fem minuter att köra när biblioteket är installerat.
-- **Kan jag spara till andra format?** Ja—byt ut KML‑drivrutinen mot Shapefile, GeoJSON osv.
+- **Vad betyder linjärisering av en geometri?** Converting curves and complex shapes into straight‑line segments.  
+- **Varför använda Aspose.GIS?** It supports dozens of GIS formats and handles geometry conversion without external tools.  
+- **Förutsättningar?** .NET Framework or .NET Core, Visual Studio, and the Aspose.GIS library.  
+- **Hur lång tid tar exemplet?** Under five minutes to run once the library is installed.  
+- **Kan jag spara till andra format?** Yes—replace the KML driver with Shapefile, GeoJSON, etc.
 
-## Vad är lineariserande geometri?
-Att linearizera geometri innebär att bryta ner vilken kurvad eller sammansatt form som helst till en serie raka linjesegment (en "linjär geometri"). Detta förenklar rendering, analys och interoperabilitet med verktyg som bara förstår linjer och punkter.
+## Vad är linjärisering av geometri?
+Linearizing geometry means breaking down any curved or composite shape into a series of straight‑line segments (a “linear geometry”). This simplifies rendering, analysis, and interoperability with tools that only understand lines and points.
 
-## Varför linjärisera geometri?
-- **Prestanda:** Linjära geometrier renderas och frågas snabbare.
-- **Kompatibilitet:** Många GIS‑plattformar (t.ex. äldre karttjänster) accepterar endast linjära objekt.
-- **Förenkling:** Användbart för att skapa miniatyrbilder, snabba förhandsvisningar eller mata in data i algoritmer som kräver linjärt input.
+## Varför konvertera kurvor till linjer?
+- **Prestanda:** Linear geometries are faster to render and query.  
+- **Kompatibilitet:** Many GIS platforms (e.g., older map services) only accept linear features.  
+- **Förenkling:** Useful for creating thumbnails, quick previews, or feeding data into algorithms that require linear input.
 
 ## Förutsättningar
-Innan du dyker ner i koden, se till att du har:
+Before diving into the code, make sure you have:
 
-1. **Aspose.GIS for .NET** – ladda ner det från [Aspose.GIS-webbplatsen](https://releases.aspose.com/gis/net/).
-2. **.NET Framework** (eller .NET Core) installeras på din utvecklingsmaskin.
-3. **Visual Studio** (eller någon C#‑kompatibel IDE) för att skriva och köra exemplet.
+1. **Aspose.GIS for .NET** – download it from the [Aspose.GIS webbplats](https://releases.aspose.com/gis/net/).  
+2. **.NET Framework** (or .NET Core) installed on your development machine.  
+3. **Visual Studio** (or any C#‑compatible IDE) for writing and executing the sample.
 
-## Importera namnområden
-För att börja använda Aspose.GIS‑funktionalitet, importera de nödvändiga namnutrymmena.
+## Importera namnrymder
+To start using Aspose.GIS functionality, import the required namespaces.
 
-### Steg 1: Importera Aspose.GIS Core Namespaces
+### Steg 1: Importera Aspose.GIS Core-namnrymderna
 ```csharp
 using Aspose.Gis;
 using Aspose.Gis.Geometries;
@@ -56,92 +60,96 @@ using System.Threading.Tasks;
 ```
 
 ### Steg 2: Importera drivrutinen för ditt målformat
-I det här exemplet skriver vi resultatet till en KML-fil:
+For this example we’ll write the result to a KML file:
+```csharp
+using Aspose.GIS.Kml;
+```
 
-## Hur man linjäriserar geometri – Steg-för-steg-guide
-Nedan följer en detaljerad genomgång av varje kod, som förklarar **hur man linjäriserar geometri** och för varje steg är viktigt.
+## Hur man konverterar kurvor till linjer – Steg‑för‑steg‑guide
+Below is a detailed walk‑through of each line of code, explaining **how to convert curves to lines** and why each step matters.
 
-### Steg 1: Definiera utdatasökvägen
+### Steg 1: Definiera utdatavägen
 ```csharp
 string path = "Your Document Directory" + "LinearizeGeometry_out.kml";
 ```
-Ersätt `"Your Document Directory"` med den mapp där du vill spara KML‑filen.
+Replace `"Your Document Directory"` with the folder where you want the KML file saved.
 
 ### Steg 2: Skapa ett lager för utdatafilen
 ```csharp
 using (var layer = Drivers.Kml.CreateLayer(path))
 ```
-Ett *lager* är en behållare för geografiska objekt. Här skapar vi ett nytt KML‑lager som kommer att hålla vår lineariserade geometri.
+A *layer* is a container for geographic features. Here we create a new KML layer that will hold our linearized geometry.
 
-### Steg 3: Konstruera en ny funktion
+### Steg 3: Skapa ett nytt objekt
 ```csharp
 var feature = layer.ConstructFeature();
 ```
-Ett *objekt* representerar ett enskilt geografiskt objekt (punkt, linje, polygon osv.). Vi kommer att fästa vår linjära geometri till detta objekt.
+A *feature* represents a single geographic object (point, line, polygon, etc.). We’ll attach our linear geometry to this feature.
 
 ### Steg 4: Definiera den ursprungliga komplexa geometrin
 ```csharp
 var geometry = Geometry.FromText(@"GeometryCollection (LineString (0 0, 1 1, 2 0),CompoundCurve ((4 0, 5 1), CircularString (5 1, 6 2, 7 1)))");
 ```
-Vi skapar en geometri från en Well‑Known Text (WKT)-sträng. Detta exempel inkluderar en `LineString`, en `CompoundCurve` och en `CircularString`—perfekt för att demonstrera linearisering.
+We create a geometry from a Well‑Known Text (WKT) string. This example includes a `LineString`, a `CompoundCurve`, and a `CircularString`—perfect for demonstrating the conversion of curves to lines.
 
 ### Steg 5: Linjärisera geometrin
 ```csharp
 var linear = geometry.ToLinearGeometry();
 ```
-`ToLinearGeometry()`‑metoden konverterar alla kurvor till raka linjesegment och producerar en *linjär* version av den ursprungliga geometrin.
+The `ToLinearGeometry()` method converts all curves into straight‑line segments, producing a *linear* version of the original geometry.
 
-### Steg 6: Tilldela den linjära geometrin till funktionen
+### Steg 6: Tilldela den linjära geometrin till objektet
 ```csharp
 feature.Geometry = linear;
 ```
-Nu innehåller objektet den förenklade, linjära geometrin.
+Now the feature holds the simplified, linear geometry.
 
-### Steg 7: Lägg till funktionen i lagret
+### Steg 7: Lägg till objektet i lagret
 ```csharp
 layer.Add(feature);
 ```
-Slutligen lägger vi till objektet i KML‑lagret, vilket skriver den linjära geometrin till utdatafilen när `using`‑blocket avslutas.
+Finally, we add the feature to the KML layer, which writes the linear geometry to the output file when the `using` block ends.
 
 ## Vanliga fallgropar och tips
-- **Sökvägsavgränsare:** Använd `Path.Combine` för plattformsoberoende sökvägsbyggnad.
-- **Stora geometrier:** Att linearizera mycket komplexa former kan skapa många hörn; överväg att använda `Simplify()` efter linearisering om du behöver färre punkter.
-- **Drivrutinval:** Om du behöver ett annat utdataformat, byt `Drivers.Kml` mot `Drivers.Shapefile`, `Drivers.GeoJson` osv., och justera filändelsen därefter.
+- **Sökvägsavgränsare:** Use `Path.Combine` for cross‑platform path building.  
+- **Stora geometrier:** Linearizing very complex shapes can produce many vertices; consider using `Simplify()` after linearization if you need fewer points.  
+- **Drivrutinval:** If you need a different output format, swap `Drivers.Kml` with `Drivers.Shapefile`, `Drivers.GeoJson`, etc., and adjust the file extension accordingly.
+
+## Vanliga frågor (förbättrad)
+
+**Q: Är Aspose.GIS för .NET kompatibel med .NET Core?**  
+A: Yes, Aspose.GIS for .NET works with .NET Core, allowing you to build cross‑platform applications.
+
+**Q: Kan jag arbeta med olika GIS-filformat med Aspose.GIS för .NET?**  
+A: Absolutely! Aspose.GIS supports KML, Shapefile, GeoJSON, and many other formats.
+
+**Q: Erbjuder Aspose.GIS stöd för rumsliga operationer och analyser?**  
+A: Yes, it provides a wide range of spatial operations and analysis capabilities to handle complex geospatial tasks.
+
+**Q: Finns en gratis provversion av Aspose.GIS för .NET?**  
+A: Yes, you can download a free trial from the [Aspose website](https://releases.aspose.com/).
+
+**Q: Var kan jag hitta hjälp och support för Aspose.GIS?**  
+A: Visit the [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) for assistance from the community and Aspose support staff.
+
+**Ytterligare frågor och svar**
+
+**Q: Kan jag linjärisera geometrier som innehåller 3D (Z)-koordinater?**  
+A: Yes, `ToLinearGeometry()` works with both 2D and 3D geometries; the Z values are preserved in the resulting line segments.
+
+**Q: Hur påverkar linjärisering storleken på utdatafilen?**  
+A: Converting curves to many short line segments can increase file size. Use `Simplify()` after linearization if file size is a concern.
+
+**Q: Är det möjligt att kontrollera segmentlängden vid linjärisering?**  
+A: The default method uses an internal tolerance. For custom segmentation, you can manually tessellate curves before calling `ToLinearGeometry()`.
 
 ## Slutsats
-I den här handledningen har vi gått igenom **hur man lineariserar geometri** med Aspose.GIS för .NET, från att konfigurera miljön till att skriva det lineariserade resultatet till en KML-fil. Du kan nu integrera arbetsflödet i kartapplikationer, datapipelines eller vilket GIS‑relaterat projekt som helst som kräver förenklade geometrier.
-
-## Vanliga frågor
-### F: Är Aspose.GIS för .NET kompatibel med .NET Core?
-Ja, Aspose.GIS för .NET är kompatibel med .NET Core, vilket gör att du kan bygga plattformsoberoende applikationer.
-
-### F: Kan jag arbeta med olika GIS-filformat med Aspose.GIS för .NET?
-Absolut! Aspose.GIS stöder olika GIS-filformat, inklusive KML, Shapefile, GeoJSON och fler.
-
-### F: Erbjuder Aspose.GIS stöd för rumsliga operationer och analyser?
-Ja, Aspose.GIS tillhandahåller ett brett utbud av rumsliga operationer och analysfunktioner för att hantera komplexa geospatiala uppgifter.
-
-### F: Finns det en gratis provversion av Aspose.GIS för .NET?
-Ja, du kan ladda ner en gratis provversion från [Aspose‑webbplatsen](https://releases.aspose.com/).
-
-### F: Var kan jag hitta hjälp och support för Aspose.GIS?
-Du kan besöka [Aspose.GIS‑forumet](https://forum.aspose.com/c/gis/33) för hjälp från communityn och Aspose‑supportpersonal.
-
-## Vanliga frågor (ytterligare)
-
-**Fråga: Kan jag linearizera geometrier som innehåller 3D (Z)-koordinater?**
-A: Ja, `ToLinearGeometry()` fungerar med 2D‑ och 3D‑geometrier; Z‑‑bevaras i de delvärdande linjesegmenten.
-
-**F: Hur styr lineariseringsstorleken på utdatafilen?**
-A: Att konvertera kurvor till många korta linjesegment kan öka filstorleken. Använd `Simplify()` efter linearisering om filstorleken är en bekymmer.
-
-**F: Är det möjligt att styra segmentlängden vid linearisering?**
-A: Standardmetoden använder en intern tolerans. För anpassad segmentering kan du manuellt tessellera kurvor innan du anropar `ToLinearGeometry()`.
+In this tutorial we covered **how to convert curves to lines** using Aspose.GIS for .NET, from setting up the environment to writing the linearized result to a KML file. You can now integrate this workflow into mapping applications, data‑processing pipelines, or any GIS‑related project that requires simplified geometries.
 
 ---
 
-**Senast uppdaterad:** 2025-12-21
-**Testat med:** Aspose.GIS 24.11 för .NET
+**Senast uppdaterad:** 2026-04-06  
+**Testat med:** Aspose.GIS 24.11 for .NET  
 **Författare:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
