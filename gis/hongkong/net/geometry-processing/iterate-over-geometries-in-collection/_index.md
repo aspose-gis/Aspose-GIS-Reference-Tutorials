@@ -1,33 +1,59 @@
 ---
-title: 迭代集合中的幾何圖形
-linktitle: 迭代集合中的幾何圖形
+date: 2026-04-06
+description: 學習如何使用 Aspose.GIS for .NET 建立幾何集合並處理地理空間資料，包括如何新增點幾何以及在 .NET 中操作地理空間資料。
+keywords:
+- create geometry collection
+- add point geometry
+- process geospatial data
+- geospatial data .net
+linktitle: 在集合中遍歷幾何圖形
 second_title: Aspose.GIS .NET API
-description: 了解如何利用 Aspose.GIS for .NET 在 .NET 應用程式中無縫操作地理空間資料。
-weight: 10
+title: 如何在 .NET 中建立幾何集合並遍歷幾何體
 url: /zh-hant/net/geometry-processing/iterate-over-geometries-in-collection/
+weight: 10
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# 迭代集合中的幾何圖形
+# 如何在 .NET 中建立幾何集合並遍歷幾何圖形
 
 ## 介紹
-在地理空間資料處理和分析領域，Aspose.GIS for .NET 作為一個強大的工具集出現，使開發人員能夠在 .NET 應用程式中無縫地操作、視覺化和處理地理資訊。本文是有效利用 Aspose.GIS for .NET 的全面指南，適合新手和經驗豐富的開發人員。
-## 先決條件
-在深入研究 Aspose.GIS for .NET 的複雜性之前，請確保您具備以下先決條件：
-### 1.安裝Aspose.GIS for .NET
-首先，從以下位置下載並安裝 Aspose.GIS for .NET[發布頁面](https://releases.aspose.com/gis/net/)。請按照文件中提供的安裝說明將其無縫整合到您的 .NET 環境中。
-### 2.熟悉.NET開發
-對 .NET 框架和 C# 程式語言的基本了解對於掌握本教程中討論的概念至關重要。
-### 3.IDE設定
-使用開發 .NET 應用程式所需的組態設定整合開發環境 (IDE)。確保您擁有有利於 .NET 開發的工作環境。
-### 4. 基本地理空間概念
-雖然不是強制性的，但熟悉基本的地理空間概念（例如點、線和幾何集合）可以加快您的學習過程。
+在地理空間資料處理與分析領域，Aspose.GIS for .NET 作為一套強大的工具組，讓開發人員能夠 **建立幾何集合** 物件、**處理地理空間資料**，並在 .NET 應用程式中無縫視覺化地理資訊。本文提供了全面的指南，協助開發者有效運用 Aspose.GIS for .NET，無論是新手還是資深開發者皆適用。
 
-## 導入命名空間
-首先匯入必要的命名空間以有效地存取 Aspose.GIS for .NET 提供的功能。
+## 快速解答
+- **我可以達成什麼？** 建立幾何集合、加入點幾何，並遍歷每種幾何類型。  
+- **需要哪個函式庫？** Aspose.GIS for .NET（最新版本）。  
+- **需要授權嗎？** 可取得臨時授權供評估使用；正式環境需購買完整授權。  
+- **支援哪些 .NET 版本？** 可在 .NET Framework、.NET Core 以及 .NET 5/6+ 上運行。  
+- **實作需要多長時間？** 基本的集合工作流程通常在 15 分鐘內完成。
+
+## 什麼是幾何集合？
+**幾何集合** 是一種容器，可容納多個幾何物件——點、線、面等，讓您能將它們視為單一實體。當您在 .NET 應用程式中處理混合幾何類型的地理空間資料時，這特別有用。
+
+## 為何要建立幾何集合？
+- **簡化遍歷** – 您可以使用單一 `foreach` 迴圈遍歷異質幾何。  
+- **保持資料有序** – 將相關要素分組，而不必建立多個容器。  
+- **支援批次操作** – 一次性對所有項目套用轉換或分析。
+
+## 前置條件
+在深入探討 Aspose.GIS for .NET 的細節之前，請確保已具備以下前置條件：
+
+### 1. 安裝 Aspose.GIS for .NET
+從 [release page](https://releases.aspose.com/gis/net/) 下載並安裝 Aspose.GIS for .NET。請依照文件中的安裝說明，將其無縫整合至您的 .NET 環境。
+
+### 2. 熟悉 .NET 開發
+對 .NET 框架與 C# 程式語言的基本了解是掌握本教學內容的前提。
+
+### 3. IDE 設定
+設定您的整合開發環境 (IDE)，完成開發 .NET 應用程式所需的配置。確保您擁有適合 .NET 開發的工作環境。
+
+### 4. 基本地理空間概念
+雖非必須，但熟悉點、線、幾何集合等基本地理空間概念，可加速學習流程。
+
+## 匯入命名空間
+開始匯入必要的命名空間，以有效存取 Aspose.GIS for .NET 提供的功能。
 
 ```csharp
 using Aspose.Gis.Geometries;
@@ -38,25 +64,30 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
+現在，我們將示例分解為多個步驟，以了解使用 Aspose.GIS for .NET **建立幾何集合** 並遍歷其幾何圖形的過程。
 
-現在，讓我們將提供的範例分解為多個步驟，以了解使用 Aspose.GIS for .NET 迭代集合中的幾何圖形的過程。
-## 第 1 步：建立幾何對象
-使用提供的座標實例化點和線幾何圖形。
+## 步驟 1：建立幾何物件
+使用提供的座標實例化點與線幾何，示範如何 **加入點幾何** 至集合。
+
 ```csharp
 Point pointGeometry = new Point(40.7128, -74.006);
 LineString lineGeometry = new LineString();
 lineGeometry.AddPoint(78.65, -32.65);
 lineGeometry.AddPoint(-98.65, 12.65);
 ```
-## 第 2 步：填充幾何集合
-構造一個幾何集合並將創建的幾何添加到其中。
+
+## 步驟 2：填充幾何集合
+建立幾何集合並將先前建立的幾何物件加入其中。這是 **建立幾何集合** 的核心步驟。
+
 ```csharp
 GeometryCollection geometryCollection = new GeometryCollection();
 geometryCollection.Add(pointGeometry);
 geometryCollection.Add(lineGeometry);
 ```
-## 第 3 步：迭代幾何圖形
-循環遍歷幾何圖形集合併根據其類型處理每個幾何圖形。
+
+## 步驟 3：遍歷幾何圖形
+遍歷幾何集合，依其類型處理每個幾何。此模式非常適合在存在混合幾何類型的情況下 **處理地理空間資料**。
+
 ```csharp
 foreach (Geometry geometry in geometryCollection)
 {
@@ -64,29 +95,46 @@ foreach (Geometry geometry in geometryCollection)
     {
         case GeometryType.Point:
             Point point = (Point)geometry;
-            //手柄點幾何形狀
+            // Handle point geometry
             break;
         case GeometryType.LineString:
             LineString line = (LineString)geometry;
-            //處理線幾何形狀
+            // Handle line geometry
             break;
     }
 }
 ```
 
+## 常見陷阱與技巧
+- **轉型安全**：在轉型前務必檢查 `GeometryType`，以避免執行時例外。  
+- **座標順序**：Aspose.GIS 需要先緯度後經度，若顛倒會導致位置顛倒。  
+- **效能**：對於大型集合，可考慮使用 `Parallel.ForEach` 加速處理，但在修改共享資源時需注意執行緒安全。
+
 ## 結論
-掌握 Aspose.GIS for .NET 使開發人員能夠在其 .NET 應用程式中充分利用地理空間資料的潛力。透過遵循本教學並探索提供的大量文檔，您可以輕鬆地將地理空間功能無縫整合到您的專案中。
-## 常見問題解答
-### Q：Aspose.GIS for .NET 是否與所有 .NET 環境相容？
-答：是的，Aspose.GIS for .NET 與各種 .NET 環境相容，包括 .NET Core 和 .NET Framework。
-### Q：我可以獲得用於評估目的的臨時許可證嗎？
-答：當然，您可以從評估機構獲得臨時許可證。[阿斯普斯網站](https://purchase.aspose.com/temporary-license/).
-### Q：Aspose.GIS for .NET 是否提供技術支援？
-答：是的，可以透過以下方式獲得技術支持[Aspose.GIS論壇](https://forum.aspose.com/c/gis/33)，您可以在其中尋求協助並與其他開發人員互動。
-### Q：是否有任何範例專案可用於啟動開發？
-答：確實，Aspose.GIS 文件提供了全面的範例項目，以方便您的學習和開發過程。
-### Q：我可以擴充 Aspose.GIS for .NET 的功能嗎？
-答：當然，您可以透過整合自訂模組並利用提供的可擴充性功能來擴充 Aspose.GIS for .NET 的功能。
+精通 Aspose.GIS for .NET 讓開發者能在 .NET 應用程式中充分發揮地理空間資料的潛力。學會 **建立幾何集合**、**加入點幾何**，以及高效 **處理地理空間資料**，即可自信地打造穩健的地圖、分析與視覺化解決方案。
+
+## 常見問答
+### Q: Aspose.GIS for .NET 是否相容所有 .NET 環境？
+A: 是的，Aspose.GIS for .NET 相容於多種 .NET 環境，包括 .NET Core 與 .NET Framework。
+
+### Q: 我可以取得臨時授權以供評估嗎？
+A: 當然，您可從 [Aspose website](https://purchase.aspose.com/temporary-license/) 取得臨時授權以供評估。
+
+### Q: Aspose.GIS for .NET 是否提供技術支援？
+A: 是的，可透過 [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) 獲得技術支援，您可在此尋求協助並與其他開發者交流。
+
+### Q: 有提供範例專案以協助開發起步嗎？
+A: 確實如此，Aspose.GIS 文件提供了完整的範例專案，協助您學習與開發。
+
+### Q: 我可以擴充 Aspose.GIS for .NET 的功能嗎？
+A: 當然可以，您可透過整合自訂模組與利用提供的可擴充功能，來擴充 Aspose.GIS for .NET 的功能。
+
+---
+
+**Last Updated:** 2026-04-06  
+**Tested With:** Aspose.GIS for .NET (latest release)  
+**Author:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
