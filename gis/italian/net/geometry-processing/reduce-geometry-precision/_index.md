@@ -1,10 +1,14 @@
 ---
-date: 2025-12-21
-description: Impara come arrotondare i valori Z e ridurre la precisione della geometria
-  con Aspose.GIS per .NET, migliorando le prestazioni GIS e l'utilizzo della memoria.
-linktitle: Reduce Geometry Precision
+date: 2026-04-09
+description: Scopri come ridurre la precisione della geometria e arrotondare i valori
+  Z usando Aspose.GIS per .NET, migliorando le prestazioni GIS e risparmiando memoria.
+keywords:
+- how to reduce geometry
+- how to round z
+- geometry precision .NET
+linktitle: Riduci la precisione della geometria
 second_title: Aspose.GIS .NET API
-title: Come arrotondare Z e ridurre la precisione della geometria in .NET
+title: Come ridurre la precisione della geometria e arrotondare Z in .NET
 url: /it/net/geometry-processing/reduce-geometry-precision/
 weight: 15
 ---
@@ -13,32 +17,38 @@ weight: 15
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Come arrotondare Z e ridurre la precisione della geometria in .NET
+# Come ridurre la precisione della geometria e arrotondare Z in .NET
 
 ## Introduzione
-In questo tutorial scoprirai **come arrotondare Z** e ridurre la precisione della geometria utilizzando Aspose.GIS per .NET. Ridurre la precisione della geometria è una tecnica collaudata per **migliorare le prestazioni GIS** e ridurre il consumo di memoria quando si lavora con grandi dataset spaziali. Ti guideremo passo passo con spiegazioni chiare, così potrai applicare subito la tecnica nei tuoi progetti.
+Se lavori con grandi dataset spaziali, probabilmente hai notato che ogni cifra decimale aggiuntiva nei dati di geometria si accumula – sia in termini di dimensione del file sia di tempo di elaborazione. In questo tutorial imparerai **come ridurre la precisione della geometria** e **come arrotondare i valori Z** con Aspose.GIS per .NET. Alla fine della guida sarai in grado di ridurre le dimensioni dei file di geometria, velocizzare le operazioni spaziali e mantenere basso l’ingombro di memoria, il tutto con poche chiamate di metodo semplici.
 
 ## Risposte rapide
-- **Cosa significa “how to round Z”?** Si riferisce al taglio del numero di cifre decimali della coordinata Z in un oggetto geometrico.  
-- **Perché ridurre la precisione della geometria?** Diminuisce la quantità di dati memorizzati per vertice, velocizzando le operazioni spaziali e riducendo l'uso di memoria.  
+- **Cosa significa “come arrotondare Z”?** Riduce il numero di cifre decimali della coordinata Z in un oggetto geometria.  
+- **Perché ridurre la precisione della geometria?** Diminuisce la quantità di dati memorizzati per vertice, il che velocizza le query spaziali e riduce l'uso della memoria.  
 - **Quale libreria gestisce questo?** Aspose.GIS per .NET fornisce i metodi integrati `RoundZ` e `RoundXY`.  
-- **Ho bisogno di una licenza?** Una prova gratuita è sufficiente per i test; è necessaria una licenza commerciale per la produzione.  
-- **Posso controllare il numero di cifre decimali?** Sì, specifichi il conteggio desiderato di cifre nei metodi `Round*`.
+- **Ho bisogno di una licenza?** Una versione di prova gratuita è sufficiente per i test; è necessaria una licenza commerciale per la produzione.  
+- **Posso controllare il numero di cifre decimali?** Sì, specifichi il numero di cifre desiderato nei metodi `Round*`.  
 
-## Che cos'è “how to round Z” in GIS?
-Arrotondare la coordinata Z elimina la precisione decimale in eccesso, trasformando un valore come 3.345 in 3.3 (o in qualsiasi precisione tu definisca). Questa operazione semplice può ridurre drasticamente le dimensioni dei file e accelerare i calcoli, soprattutto quando la terza dimensione non è critica per la tua analisi.
+## Come ridurre la precisione della geometria in .NET
+Ridurre la precisione della geometria è semplice come chiamare `RoundXY` su qualsiasi oggetto geometria. Il metodo accetta il numero di cifre decimali che desideri mantenere per le coordinate X e Y. Questa operazione è particolarmente utile quando l'accuratezza sub‑metrica esatta non è necessaria per la tua analisi.
+
+## Come arrotondare i valori Z in .NET
+Quando i tuoi dati includono una componente Z (elevazione), puoi chiamare `RoundZ` per limitarne la precisione. Questo è il passaggio **come arrotondare Z** che spesso produce le maggiori riduzioni delle dimensioni dei file per dataset 3‑D, poiché i valori di elevazione tendono ad avere molte cifre decimali.
+
+## Che cosa è “come arrotondare Z” in GIS?
+Arrotondare la coordinata Z elimina l'eccesso di precisione decimale, trasformando un valore come 3.345 in 3.3 (o qualsiasi precisione tu definisca). Questa semplice operazione può ridurre drasticamente le dimensioni dei file e accelerare i calcoli, soprattutto quando la terza dimensione non è critica per la tua analisi.
 
 ## Perché ridurre la precisione della geometria con Aspose.GIS?
 - **Miglioramento delle prestazioni:** Meno dati da elaborare significa query spaziali e trasformazioni più rapide.  
 - **Risparmio di memoria:** Rappresentazioni dei vertici più piccole liberano RAM, consentendo a dataset più grandi di rimanere in memoria.  
-- **Flessibilità:** Decidi tu il livello di precisione che bilancia accuratezza e velocità.
+- **Flessibilità:** Decidi tu il livello di precisione che bilancia accuratezza e velocità.  
 
 ## Prerequisiti
 Prima di iniziare, assicurati di avere i seguenti prerequisiti:
-1. **Libreria Aspose.GIS per .NET:** Scarica e installa la libreria dal [sito web di Aspose.GIS](https://releases.aspose.com/gis/net/).  
-2. **Conoscenza di base della programmazione C#:** Familiarità con il linguaggio C# sarà utile.
+1. Aspose.GIS for .NET Library: Scarica e installa la libreria dal [Aspose.GIS website](https://releases.aspose.com/gis/net/).  
+2. Conoscenza di base della programmazione C#: Familiarità con il linguaggio di programmazione C# sarà utile.
 
-## Importare gli spazi dei nomi
+## Importa gli spazi dei nomi
 Per prima cosa, importa gli spazi dei nomi necessari per utilizzare le classi e i metodi di Aspose.GIS.
 
 ```csharp
@@ -50,43 +60,43 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## Passo 1: Creare un Punto
+## Passo 1: Crea un punto
 Iniziamo creando un punto con coordinate specifiche.
 
 ```csharp
 Point point = new Point(1.344, 2.345, 3.345, 4.345);
 ```
 
-## Passo 2: Ridurre la precisione XY
+## Passo 2: Riduci la precisione XY
 Ora ridurremo la precisione delle coordinate X e Y del punto a due cifre decimali.
 
 ```csharp
 point.RoundXY(digits: 2);
 ```
 
-## Passo 3: Visualizzare le coordinate
+## Passo 3: Visualizza le coordinate
 Visualizza le coordinate aggiornate del punto.
 
 ```csharp
 Console.WriteLine("{0}, {1}, {2}, {3}", point.X, point.Y, point.Z, point.M);
 ```
 
-## Passo 4: Ridurre la precisione Z – **how to round z**
-Successivamente, riduciamo la precisione della coordinata Z del punto a una cifra decimale. Questo è il fulcro di **how to round z**.
+## Passo 4: Riduci la precisione Z – **come arrotondare Z**
+Successivamente, riduciamo la precisione della coordinata Z del punto a una cifra decimale. Questo è il fulcro di **come arrotondare Z**.
 
 ```csharp
 point.RoundZ(digits: 1);
 ```
 
-## Passo 5: Visualizzare le coordinate aggiornate
+## Passo 5: Visualizza le coordinate aggiornate
 Visualizza le coordinate aggiornate del punto dopo aver ridotto la precisione Z.
 
 ```csharp
 Console.WriteLine("{0}, {1}, {2}, {3}", point.X, point.Y, point.Z, point.M);
 ```
 
-## Passo 6: Creare un LineString
-Ora creiamo un `LineString` e aggiungiamo dei punti.
+## Passo 6: Crea un LineString
+Ora creiamo un `LineString` e aggiungiamo punti ad esso.
 
 ```csharp
 LineString line = new LineString();
@@ -94,14 +104,14 @@ line.AddPoint(1.2, 2.3);
 line.AddPoint(2.4, 3.1);
 ```
 
-## Passo 7: Ridurre la precisione XY del LineString
-Riduciamo la precisione delle coordinate X e Y del `LineString` a zero cifre decimali.
+## Passo 7: Riduci la precisione XY del LineString
+Riduci la precisione delle coordinate X e Y del `LineString` a zero cifre decimali.
 
 ```csharp
 line.RoundXY(digits: 0);
 ```
 
-## Passo 8: Visualizzare le coordinate aggiornate del LineString
+## Passo 8: Visualizza le coordinate aggiornate del LineString
 Visualizza le coordinate aggiornate del `LineString` dopo aver ridotto la precisione XY.
 
 ```csharp
@@ -109,32 +119,32 @@ Console.WriteLine("{0}, {1}", line[0].X, line[0].Y);
 Console.WriteLine("{0}, {1}", line[1].X, line[1].Y);
 ```
 
-## Casi d'uso comuni e suggerimenti
-- **Grandi conversioni raster‑vector:** Arrotondare Z può ridurre le dimensioni dei file di geometria intermedi.  
-- **App GIS mobili:** Una precisione inferiore riduce la larghezza di banda quando si trasmette la geometria sulla rete.  
-- **Suggerimento professionale:** Applica `RoundXY` prima di `RoundZ` per mantenere il flusso di lavoro coerente.
+## Casi d'uso comuni e consigli
+- **Grandi conversioni raster‑vector:** Arrotondare Z può ridurre i file di geometria intermedi.  
+- **App GIS mobili:** Una precisione più bassa riduce la larghezza di banda durante la trasmissione della geometria sulla rete.  
+- **Consiglio professionale:** Applica `RoundXY` prima di `RoundZ` per mantenere il flusso di lavoro coerente.
 
 ## Domande frequenti
 
-**Q: Perché la riduzione della precisione della geometria è importante nel GIS?**  
-A: Ridurre la precisione della geometria aiuta a ottimizzare l'uso della memoria e a migliorare le prestazioni, specialmente quando si gestiscono grandi dataset in applicazioni GIS.
+**Q: Perché è importante la riduzione della precisione della geometria in GIS?**  
+A: Ridurre la precisione della geometria aiuta a ottimizzare l'uso della memoria e a migliorare le prestazioni, soprattutto quando si gestiscono grandi dataset in applicazioni GIS.
 
 **Q: La riduzione della precisione della geometria influisce sull'accuratezza?**  
-A: Sebbene si perda una minima accuratezza, il compromesso spesso offre un buon equilibrio tra precisione e prestazioni per la maggior parte delle analisi spaziali.
+A: Sebbene si perda una piccola precisione, il compromesso spesso offre un buon equilibrio tra precisione e prestazioni per la maggior parte delle analisi spaziali.
 
 **Q: Posso personalizzare il livello di riduzione della precisione in Aspose.GIS per .NET?**  
-A: Sì, puoi specificare il numero desiderato di cifre decimali sia per le coordinate XY sia per la Z usando i metodi `RoundXY` e `RoundZ`.
+A: Sì, puoi specificare il numero desiderato di cifre decimali per le coordinate XY e Z usando i metodi `RoundXY` e `RoundZ`.
 
 **Q: Ci sono benefici di prestazioni misurabili?**  
 A: Assolutamente—meno dati per vertice significano query spaziali più rapide, I/O ridotto e minore consumo di memoria.
 
 **Q: Dove posso ottenere supporto per Aspose.GIS per .NET?**  
-A: Puoi ottenere supporto visitando il [forum di Aspose.GIS](https://forum.aspose.com/c/gis/33) o consultando la documentazione disponibile [qui](https://reference.aspose.com/gis/net/).
+A: Puoi ottenere supporto visitando il [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) o accedendo alla documentazione disponibile [qui](https://reference.aspose.com/gis/net/).
 
 ---
 
-**Ultimo aggiornamento:** 2025-12-21  
-**Testato con:** Aspose.GIS 24.11 per .NET  
+**Ultimo aggiornamento:** 2026-04-09  
+**Testato con:** Aspose.GIS 24.11 for .NET  
 **Autore:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
