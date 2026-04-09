@@ -1,11 +1,15 @@
 ---
-date: 2025-12-21
-description: Aspose.GIS for .NET ile geometriyi doğrusal hâle getirmeyi öğrenin; .NET
-  uygulamalarınızda verimli coğrafi veri işleme, mekânsal analiz ve geometri manipülasyonu
-  sağlayın.
-linktitle: Linearize a Geometry
+date: 2026-04-09
+description: Aspose.GIS for .NET kullanarak eğrileri çizgilere (geometrileri doğrusal
+  hâle getirerek) dönüştürmeyi öğrenin; bu sayede .NET uygulamalarınızda verimli coğrafi
+  veri işleme ve analizi sağlayabilirsiniz.
+keywords:
+- convert curves to lines
+- how to linearize geometry
+- Aspose.GIS .NET
+linktitle: Geometriyi Doğrusallaştır
 second_title: Aspose.GIS .NET API
-title: Aspose.GIS for .NET ile Geometriyi Nasıl Doğrusal Hale Getirirsiniz
+title: Aspose.GIS for .NET ile Eğrileri Çizgilere Dönüştürme
 url: /tr/net/geometry-processing/linearize-geometry/
 weight: 14
 ---
@@ -14,35 +18,37 @@ weight: 14
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Geometriyi Doğrusal Hale Getirme
+# Eğrileri Çizgilere Dönüştürme (Geometriyi Doğrusal Hale Getirme) Aspose.GIS for .NET ile
 
 ## Giriş
-Haritalama, mekansal analiz veya veri‑değişim görevleri için **geometriyi nasıl doğrusal hale getireceğinizi** öğrenmeniz gerekiyorsa, Aspose.GIS for .NET size temiz ve programatik bir yol sunar. Bu öğreticide, eğriler ve birleşik şekiller içeren karmaşık bir geometriyi alıp, herhangi bir GIS sistemiyle çalışan basit bir doğrusal temsile dönüştürmeyi gösteren eksiksiz, gerçek dünya örneğini adım adım inceleyeceğiz.
+If you need to **convert curves to lines** for mapping, spatial analysis, or data‑exchange tasks, Aspose.GIS for .NET gives you a clean, programmatic way to do it. In this tutorial we’ll walk through a complete, real‑world example that shows you how to take a complex geometry—containing curves and compound shapes—and turn it into a simple linear representation that works with any GIS system.
 
 ## Hızlı Yanıtlar
-- **Geometrinin doğrusal hale getirilmesi ne anlama gelir?** Eğrileri ve karmaşık şekilleri düz çizgi segmentlerine dönüştürmek.  
-- **Neden Aspose.GIS kullanılmalı?** Onlarca GIS formatını destekler ve dış araçlar olmadan geometri dönüşümünü gerçekleştirir.  
-- **Önkoşullar?** .NET Framework veya .NET Core, Visual Studio ve Aspose.GIS kütüphanesi.  
-- **Örnek ne kadar sürer?** Kütüphane kurulduktan sonra beş dakikadan az bir sürede çalışır.  
-- **Başka formatlarda kaydedebilir miyim?** Evet—KML sürücüsünü Shapefile, GeoJSON vb. ile değiştirin.
+- **“Eğrileri çizgilere dönüştürmek” ne anlama geliyor?** It transforms curved geometries into straight‑line segments.  
+- **Neden Aspose.GIS seçilmeli?** The library supports dozens of GIS formats and handles geometry conversion without external tools.  
+- **Önceden neye ihtiyacım var?** .NET Framework or .NET Core, Visual Studio (or any C# IDE), and the Aspose.GIS NuGet package.  
+- **Örnek ne kadar sürede çalışır?** Less than five minutes once the library is installed.  
+- **Diğer formatlara dışa aktarabilir miyim?** Absolutely—swap the KML driver for Shapefile, GeoJSON, etc.
 
-## Geometrinin Doğrusal Hale Getirilmesi Nedir?
-Doğrusal hale getirme, eğri veya birleşik bir şekli bir dizi düz‑çizgi segmentine (bir “doğrusal geometri”) bölmek anlamına gelir. Bu, yalnızca çizgi ve nokta anlayan araçlarla render, analiz ve birlikte çalışabilirliği basitleştirir.
+## Eğrileri Çizgilere Dönüştürmek Ne Anlama Geliyor?
+Converting curves to lines (also called **linearizing geometry**) breaks down any curved or composite shape into a series of straight‑line segments, known as a “linear geometry.” This simplification makes rendering faster, improves compatibility with older GIS services, and reduces the complexity of spatial algorithms.
 
-## Neden Geometriyi Doğrusal Hale Getirmeli?
-- **Performans:** Doğrusal geometriler daha hızlı render ve sorgu yapılır.  
-- **Uyumluluk:** Birçok GIS platformu (ör. eski harita hizmetleri) yalnızca doğrusal özellikleri kabul eder.  
-- **Basitleştirme:** Küçük resimler, hızlı ön izlemeler oluşturmak veya doğrusal girdi gerektiren algoritmalara veri sağlamak için faydalıdır.
+## Neden Eğrileri Çizgilere Dönüştürmeliyiz?
+- **Performans:** Linear geometries render and query much faster.  
+- **Uyumluluk:** Many GIS platforms (especially legacy services) only accept linear features.  
+- **Basitleştirme:** Ideal for thumbnails, quick previews, or feeding data into algorithms that require linear input.
 
-## Önkoşullar
-1. **Aspose.GIS for .NET** – bunu [Aspose.GIS web sitesinden](https://releases.aspose.com/gis/net/) indirebilirsiniz.  
-2. Geliştirme makinenizde kurulu **.NET Framework** (veya .NET Core).  
-3. Örneği yazmak ve çalıştırmak için **Visual Studio** (veya herhangi bir C# uyumlu IDE).
+## Ön Koşullar
+Before diving into the code, make sure you have:
+
+1. **Aspose.GIS for .NET** – download it from the [Aspose.GIS website](https://releases.aspose.com/gis/net/).  
+2. **.NET Framework** (or .NET Core) installed on your development machine.  
+3. **Visual Studio** (or any C#‑compatible IDE) for writing and executing the sample.
 
 ## Ad Alanlarını İçe Aktarma
-Aspose.GIS işlevselliğini kullanmaya başlamak için gerekli ad alanlarını içe aktarın.
+To start using Aspose.GIS functionality, import the required namespaces.
 
-### Adım 1: Aspose.GIS Core Ad Alanlarını İçe Aktarın
+### Adım 1: Temel Aspose.GIS Ad Alanları
 ```csharp
 using Aspose.Gis;
 using Aspose.Gis.Geometries;
@@ -53,93 +59,97 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-### Adım 2: Hedef Formatınız İçin Sürücüyü İçe Aktarın
-Bu örnek için sonucu bir KML dosyasına yazacağız:
+### Adım 2: Hedef Format İçin Sürücü
+For this example we’ll write the result to a KML file:
 ```csharp
 using Aspose.GIS.Kml;
 ```
 
-## Geometrinin Doğrusal Hale Getirilmesi – Adım Adım Kılavuz
-Aşağıda her kod satırını ayrıntılı olarak inceleyerek **geometriyi nasıl doğrusal hale getireceğinizi** ve her adımın neden önemli olduğunu açıklıyoruz.
+## Adım Adım Eğrileri Çizgilere Dönüştürme Kılavuzu
+Below is a detailed walk‑through of each line of code, explaining **how to convert curves to lines** and why each step matters.
 
-### Adım 1: Çıktı Yolunu Tanımlayın
+### Adım 1: Çıktı Yolunu Tanımlama
 ```csharp
 string path = "Your Document Directory" + "LinearizeGeometry_out.kml";
 ```
-`"Your Document Directory"` ifadesini KML dosyasını kaydetmek istediğiniz klasörle değiştirin.
+Replace `"Your Document Directory"` with the folder where you want the KML file saved. Using `Path.Combine` is recommended for cross‑platform compatibility.
 
-### Adım 2: Çıktı Dosyası İçin Bir Katman Oluşturun
+### Adım 2: Çıktı Dosyası İçin Katman Oluşturma
 ```csharp
 using (var layer = Drivers.Kml.CreateLayer(path))
 ```
-*layer* coğrafi özellikler için bir konteynerdir. Burada doğrusal hale getirilmiş geometrimizi tutacak yeni bir KML katmanı oluşturuyoruz.
+A *layer* is a container for geographic features. Here we create a new KML layer that will hold our linearized geometry.
 
-### Adım 3: Yeni Bir Özellik Oluşturun
+### Adım 3: Yeni Bir Özellik Oluşturma
 ```csharp
 var feature = layer.ConstructFeature();
 ```
-*feature* tek bir coğrafi nesneyi (nokta, çizgi, çokgen vb.) temsil eder. Doğrusal geometrimizi bu özelliğe ekleyeceğiz.
+A *feature* represents a single geographic object (point, line, polygon, etc.). We’ll attach our linear geometry to this feature.
 
-### Adım 4: Orijinal Karmaşık Geometriyi Tanımlayın
+### Adım 4: Orijinal Karmaşık Geometriyi Tanımlama
 ```csharp
 var geometry = Geometry.FromText(@"GeometryCollection (LineString (0 0, 1 1, 2 0),CompoundCurve ((4 0, 5 1), CircularString (5 1, 6 2, 7 1)))");
 ```
-Well‑Known Text (WKT) dizesinden bir geometri oluşturuyoruz. Bu örnek, doğrusal hale getirmeyi göstermek için mükemmel olan bir `LineString`, bir `CompoundCurve` ve bir `CircularString` içerir.
+We create a geometry from a Well‑Known Text (WKT) string. This example includes a `LineString`, a `CompoundCurve`, and a `CircularString`—perfect for demonstrating **convert curves to lines**.
 
-### Adım 5: Geometriyi Doğrusal Hale Getirin
+### Adım 5: Eğrileri Çizgilere Dönüştürme
 ```csharp
 var linear = geometry.ToLinearGeometry();
 ```
-`ToLinearGeometry()` yöntemi tüm eğrileri düz çizgi segmentlerine dönüştürerek, orijinal geometrinin *doğrusal* bir versiyonunu üretir.
+The `ToLinearGeometry()` method converts all curves into straight‑line segments, producing a *linear* version of the original geometry.
 
-### Adım 6: Doğrusal Geometriyi Özelliğe Atayın
+### Adım 6: Doğrusal Geometriyi Özelliğe Atama
 ```csharp
 feature.Geometry = linear;
 ```
-Artık özellik, basitleştirilmiş, doğrusal geometriyi tutuyor.
+Now the feature holds the simplified, linear geometry.
 
-### Adım 7: Özelliği Katmana Ekleyin
+### Adım 7: Özelliği Katmana Ekleme
 ```csharp
 layer.Add(feature);
 ```
-Son olarak, özelliği KML katmanına ekliyoruz; `using` bloğu sona erdiğinde doğrusal geometri çıktı dosyasına yazılır.
+Finally, we add the feature to the KML layer, which writes the linear geometry to the output file when the `using` block ends.
 
-## Yaygın Tuzaklar ve İpuçları
-- **Yol ayırıcıları:** Çapraz platform yol oluşturma için `Path.Combine` kullanın.  
-- **Büyük geometriler:** Çok karmaşık şekilleri doğrusal hale getirmek çok sayıda köşe oluşturabilir; daha az nokta gerekiyorsa doğrusal hale getirmeden sonra `Simplify()` kullanmayı düşünün.  
-- **Sürücü seçimi:** Farklı bir çıktı formatına ihtiyacınız varsa `Drivers.Kml` yerine `Drivers.Shapefile`, `Drivers.GeoJson` vb. ile değiştirin ve dosya uzantısını buna göre ayarlayın.
+## Yaygın Tuzaklar ve Profesyonel İpuçları
+- **Yol ayırıcıları:** Use `Path.Combine` to avoid issues on Windows vs. Linux.  
+- **Çok büyük geometriler:** Linearizing intricate shapes can generate thousands of vertices; consider calling `Simplify()` after linearization to reduce point count.  
+- **Sürücü seçimi:** If you need a different output format, replace `Drivers.Kml` with `Drivers.Shapefile`, `Drivers.GeoJson`, etc., and change the file extension accordingly.  
+- **Z değerlerini koruma:** `ToLinearGeometry()` retains 3‑D (Z) coordinates, so you don’t lose elevation data.
 
-## Sonuç
-Bu öğreticide, Aspose.GIS for .NET kullanarak **geometriyi nasıl doğrusal hale getireceğinizi** ortamı kurmaktan doğrusal sonucu bir KML dosyasına yazmaya kadar ele aldık. Artık bu iş akışını haritalama uygulamaları, veri‑işleme hatları veya basitleştirilmiş geometrilere ihtiyaç duyan herhangi bir GIS‑ilişkili projeye entegre edebilirsiniz.
+## Sıkça Sorulan Sorular (SSS)
 
-## Sık Sorulan Sorular
-### Q: Aspose.GIS for .NET .NET Core ile uyumlu mu?
-Evet, Aspose.GIS for .NET .NET Core ile uyumludur ve çapraz platform uygulamaları oluşturmanıza olanak tanır.
+**S: Aspose.GIS for .NET .NET Core ile uyumlu mu?**  
+C: Yes, Aspose.GIS works with .NET Core, enabling cross‑platform applications.
 
-### Q: Aspose.GIS for .NET ile farklı GIS dosya formatlarıyla çalışabilir miyim?
-Kesinlikle! Aspose.GIS, KML, Shapefile, GeoJSON ve daha fazlası dahil olmak üzere çeşitli GIS dosya formatlarını destekler.
+**S: Aspose.GIS for .NET ile farklı GIS dosya formatlarıyla çalışabilir miyim?**  
+C: Absolutely! The library supports KML, Shapefile, GeoJSON, and many more formats.
 
-### Q: Aspose.GIS mekansal işlemler ve analiz desteği sunuyor mu?
-Evet, Aspose.GIS karmaşık coğrafi uzamsal görevleri yönetmek için geniş bir mekansal işlem ve analiz yetenekleri yelpazesi sunar.
+**S: Aspose.GIS mekansal işlemler ve analiz sunuyor mu?**  
+C: Yes, it provides a wide range of spatial functions, from buffering to spatial joins.
 
-### Q: Aspose.GIS for .NET için ücretsiz deneme mevcut mu?
-Evet, ücretsiz denemeyi [Aspose web sitesinden](https://releases.aspose.com/) indirebilirsiniz.
+**S: Ücretsiz deneme sürümü mevcut mu?**  
+C: Yes, you can download a free trial from the [Aspose website](https://releases.aspose.com/).
 
-### Q: Aspose.GIS için yardım ve destek nereden bulabilirim?
-Topluluk ve Aspose destek ekibinden yardım almak için [Aspose.GIS forumunu](https://forum.aspose.com/c/gis/33) ziyaret edebilirsiniz.
+**S: Sorun yaşarsam nereden yardım alabilirim?**  
+C: Visit the [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) for community and staff support.
 
-## Sık Sorulan Sorular (Ek)
+### Ek Yaygın Sorular
 
 **S: 3D (Z) koordinatları içeren geometrileri doğrusal hale getirebilir miyim?**  
-Evet, `ToLinearGeometry()` 2D ve 3D geometrilerle çalışır; Z değerleri sonuçtaki çizgi segmentlerinde korunur.
+C: Yes, `ToLinearGeometry()` works with both 2D and 3D geometries; Z values are preserved.
 
-**S: Doğrusal hale getirme çıktı dosyasının boyutunu nasıl etkiler?**  
-Eğrileri birçok kısa çizgi segmentine dönüştürmek dosya boyutunu artırabilir. Dosya boyutu bir sorun ise doğrusal hale getirmeden sonra `Simplify()` kullanın.
+**S: Doğrusal hale getirme dosya boyutunu nasıl etkiler?**  
+C: Converting curves to many short line segments can increase file size. Use `Simplify()` after linearization if size is a concern.
 
-**S: Doğrusal hale getirirken segment uzunluğunu kontrol etmek mümkün mü?**  
-Varsayılan yöntem dahili bir tolerans kullanır. Özel segmentasyon için `ToLinearGeometry()` çağırmadan önce eğrileri manuel olarak tessellate edebilirsiniz.
+**S: Eğrileri çizgilere dönüştürürken segment uzunluğunu kontrol edebilir miyim?**  
+C: The default method uses an internal tolerance. For custom segmentation you can manually tessellate curves before calling `ToLinearGeometry()`.
 
-**Son Güncelleme:** 2025-12-21  
+## Sonuç
+In this tutorial we covered **how to convert curves to lines** (linearize geometry) using Aspose.GIS for .NET, from setting up the environment to writing the linearized result to a KML file. You can now embed this workflow into mapping applications, data‑processing pipelines, or any GIS‑related project that requires simplified geometries.
+
+---
+
+**Son Güncelleme:** 2026-04-09  
 **Test Edilen Versiyon:** Aspose.GIS 24.11 for .NET  
 **Yazar:** Aspose  
 
