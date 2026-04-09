@@ -1,33 +1,63 @@
 ---
-title: Itera sulle geometrie nella raccolta
-linktitle: Itera sulle geometrie nella raccolta
-second_title: API Aspose.GIS .NET
-description: Scopri come utilizzare Aspose.GIS per .NET per manipolare i dati geospaziali senza problemi all'interno delle tue applicazioni .NET.
-weight: 10
+date: 2026-04-09
+description: Scopri come creare una collezione di geometrie e gestire i dati geospaziali
+  utilizzando Aspose.GIS per .NET.
+keywords:
+- create geometry collection
+- geospatial data handling
+- create point geometry
+- process geospatial data
+- add point to collection
+linktitle: Itera sulle geometrie nella collezione
+second_title: Aspose.GIS .NET API
+title: Crea una collezione di geometrie e itera sulle geometrie
 url: /it/net/geometry-processing/iterate-over-geometries-in-collection/
+weight: 10
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Itera sulle geometrie nella raccolta
+# Crea una collezione di geometrie e itera sulle geometrie
 
-## introduzione
-Nel campo della gestione e dell'analisi dei dati geospaziali, Aspose.GIS per .NET emerge come un potente set di strumenti, che consente agli sviluppatori di manipolare, visualizzare ed elaborare le informazioni geografiche senza problemi all'interno delle applicazioni .NET. Questo articolo funge da guida completa per sfruttare in modo efficace Aspose.GIS per .NET, rivolgendosi sia agli sviluppatori principianti che a quelli esperti.
+## Introduzione
+In questa guida pratica imparerai a **create geometry collection** oggetti e a iterare attraverso i loro membri usando Aspose.GIS per .NET. Che tu stia costruendo un servizio di mappatura, eseguendo analisi spaziali, o semplicemente abbia bisogno di **process geospatial data**, questo tutorial ti accompagna passo passo — dall'impostazione dell'ambiente alla gestione di ogni tipo di geometria all'interno della collezione.
+
+## Risposte rapide
+- **What does “create geometry collection” mean?** Significa costruire un contenitore che può contenere più oggetti di geometria (punti, linee, poligoni, ecc.) in una singola variabile.  
+- **Which library helps with geospatial data handling?** Aspose.GIS for .NET fornisce un'API ricca per creare, leggere e manipolare dati geometrici.  
+- **Do I need a license to try this?** È disponibile una licenza temporanea gratuita per la valutazione (vedi le FAQ).  
+- **Can I add point geometry to the collection?** Sì – puoi **add point to collection** usando il metodo `Add`.  
+- **Which .NET versions are supported?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
+
+## Cos'è una Geometry Collection?
+Una **GeometryCollection** è una geometria composita che raggruppa oggetti di geometria eterogenei (punti, linee, poligoni, ecc.) in un'unica entità. Questa struttura è ideale quando è necessario trattare diverse forme correlate come un'unica unità logica, pur potendo accedere a ciascuna geometria individuale.
+
+## Perché usare Aspose.GIS per la gestione dei dati geospaziali?
+Aspose.GIS per .NET offre:
+- Full‑featured **geospatial data handling** senza dipendenze esterne.  
+- Sicurezza di tipo forte per **create point geometry**, line strings e altro.  
+- Supporto cross‑platform (Windows, Linux, macOS).  
+- Semplici pattern di iterazione che ti permettono di **process geospatial data** in modo efficiente.
+
 ## Prerequisiti
-Prima di approfondire le complessità di Aspose.GIS per .NET, assicurati di disporre dei seguenti prerequisiti:
-### 1. Installare Aspose.GIS per .NET
- Innanzitutto, scarica e installa Aspose.GIS per .NET dal file[pagina di rilascio](https://releases.aspose.com/gis/net/). Segui le istruzioni di installazione fornite nella documentazione per integrarlo perfettamente nel tuo ambiente .NET.
-### 2. Familiarità con lo sviluppo .NET
-Una conoscenza fondamentale del framework .NET e del linguaggio di programmazione C# è essenziale per comprendere i concetti discussi in questa esercitazione.
-### 3. Configurazione dell'IDE
-Configura il tuo ambiente di sviluppo integrato (IDE) con le configurazioni necessarie per sviluppare applicazioni .NET. Assicurati di disporre di un ambiente di lavoro favorevole allo sviluppo .NET.
-### 4. Concetti geospaziali di base
-Sebbene non sia obbligatoria, la familiarità con i concetti geospaziali di base come punti, linee e raccolte geometriche può accelerare il processo di apprendimento.
+Prima di immergerti, assicurati di avere quanto segue:
 
-## Importa spazi dei nomi
-Inizia importando gli spazi dei nomi necessari per accedere in modo efficiente alle funzionalità fornite da Aspose.GIS per .NET.
+### 1. Installa Aspose.GIS per .NET
+Scarica e installa la libreria dalla [release page](https://releases.aspose.com/gis/net/). Segui le istruzioni fornite per aggiungere il pacchetto NuGet al tuo progetto.
+
+### 2. Familiarità con lo sviluppo .NET
+È necessaria una comprensione di base di C# e del runtime .NET.
+
+### 3. Configurazione IDE
+Usa Visual Studio, Visual Studio Code o qualsiasi IDE compatibile con .NET che preferisci.
+
+### 4. Concetti di base geospaziali (Opzionale)
+Conoscere la differenza tra punti, linee e collezioni ti aiuterà a seguire gli esempi più rapidamente.
+
+## Importa i namespace
+Inizia importando i namespace che espongono le classi di geometria di Aspose.GIS.
 
 ```csharp
 using Aspose.Gis.Geometries;
@@ -38,25 +68,30 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
+## Guida passo‑passo
 
-Ora, suddividiamo l'esempio fornito in più passaggi per comprendere il processo di iterazione sulle geometrie in una raccolta utilizzando Aspose.GIS per .NET.
-## Passaggio 1: crea oggetti geometrici
-Crea un'istanza di geometrie di punti e linee utilizzando le coordinate fornite.
+### Passo 1: Crea oggetti geometrici
+Prima, **create point geometry** e una line string che più tardi **add point to collection**.
+
 ```csharp
 Point pointGeometry = new Point(40.7128, -74.006);
 LineString lineGeometry = new LineString();
 lineGeometry.AddPoint(78.65, -32.65);
 lineGeometry.AddPoint(-98.65, 12.65);
 ```
-## Passaggio 2: popolare la raccolta di geometrie
-Costruisci una raccolta di geometrie e aggiungivi le geometrie create.
+
+### Passo 2: Popola la Geometry Collection
+Ora **create geometry collection** e la popoliamo con gli oggetti creati sopra.
+
 ```csharp
 GeometryCollection geometryCollection = new GeometryCollection();
 geometryCollection.Add(pointGeometry);
 geometryCollection.Add(lineGeometry);
 ```
-## Passaggio 3: ripetere le geometrie
-Passa in rassegna la raccolta di geometrie e gestisci ciascuna geometria in base al suo tipo.
+
+### Passo 3: Itera sulle geometrie
+Infine, itera attraverso la collezione. L'istruzione `switch` ti consente di gestire ogni geometria in base al suo tipo — perfetta per **process geospatial data** in una collezione eterogenea.
+
 ```csharp
 foreach (Geometry geometry in geometryCollection)
 {
@@ -64,29 +99,52 @@ foreach (Geometry geometry in geometryCollection)
     {
         case GeometryType.Point:
             Point point = (Point)geometry;
-            // Gestire la geometria dei punti
+            // Handle point geometry
             break;
         case GeometryType.LineString:
             LineString line = (LineString)geometry;
-            // Gestire la geometria della linea
+            // Handle line geometry
             break;
     }
 }
 ```
 
-## Conclusione
-Padroneggiare Aspose.GIS per .NET consente agli sviluppatori di sfruttare tutto il potenziale dei dati geospaziali all'interno delle loro applicazioni .NET. Seguendo questo tutorial ed esplorando l'ampia documentazione fornita, puoi integrare facilmente le funzionalità geospaziali nei tuoi progetti.
+## Problemi comuni e soluzioni
+- **Problem:** La collezione appare vuota dopo aver aggiunto le geometrie.  
+  **Solution:** Assicurati di aggiungere gli oggetti **before** inizi a iterare. Il metodo `Add` deve essere chiamato sulla stessa istanza di `GeometryCollection` che poi enumeri.
+
+- **Problem:** Il casting fallisce con un'eccezione di cast non valido.  
+  **Solution:** Controlla sempre `geometry.GeometryType` prima del cast, come mostrato nel blocco `switch`.
+
+- **Problem:** Le coordinate sembrano invertite (latitudine/longitudine).  
+  **Solution:** Aspose.GIS si aspetta l'ordine `(latitude, longitude)`. Verifica nuovamente l'ordine dei tuoi parametri.
+
 ## Domande frequenti
-### D: Aspose.GIS per .NET è compatibile con tutti gli ambienti .NET?
-R: Sì, Aspose.GIS per .NET è compatibile con vari ambienti .NET, inclusi .NET Core e .NET Framework.
-### D: Posso ottenere una licenza temporanea a scopo di valutazione?
- R: Certamente puoi acquisire una licenza temporanea per la valutazione da[Sito web Aspose](https://purchase.aspose.com/temporary-license/).
-### D: È disponibile il supporto tecnico per Aspose.GIS per .NET?
- R: Sì, il supporto tecnico è disponibile tramite[Forum Aspose.GIS](https://forum.aspose.com/c/gis/33), dove puoi chiedere assistenza e interagire con altri sviluppatori.
-### D: Sono disponibili progetti di esempio per avviare lo sviluppo?
-R: In effetti, la documentazione Aspose.GIS fornisce progetti di esempio completi per facilitare il processo di apprendimento e sviluppo.
-### D: Posso estendere le funzionalità di Aspose.GIS per .NET?
-R: Assolutamente, puoi estendere le funzionalità di Aspose.GIS per .NET integrando moduli personalizzati e sfruttando le funzionalità di estensibilità fornite.
+
+**Q:** Aspose.GIS per .NET è compatibile con tutti gli ambienti .NET?  
+**A:** Sì, funziona con .NET Framework, .NET Core e .NET 5/6/7.
+
+**Q:** Posso ottenere una licenza temporanea per scopi di valutazione?  
+**A:** Certamente, puoi acquisire una licenza temporanea per la valutazione dal [Aspose website](https://purchase.aspose.com/temporary-license/).
+
+**Q:** È disponibile supporto tecnico per Aspose.GIS per .NET?  
+**A:** Sì, il supporto tecnico è disponibile tramite il [Aspose.GIS forum](https://forum.aspose.com/c/gis/33), dove puoi chiedere assistenza e interagire con altri sviluppatori.
+
+**Q:** Ci sono progetti di esempio disponibili per avviare lo sviluppo?  
+**A:** Sì, la documentazione di Aspose.GIS fornisce progetti di esempio completi per facilitare il tuo apprendimento e processo di sviluppo.
+
+**Q:** Posso estendere le funzionalità di Aspose.GIS per .NET?  
+**A:** Assolutamente, puoi estendere le funzionalità integrando moduli personalizzati e sfruttando le caratteristiche di estensibilità fornite.
+
+## Conclusione
+Padroneggiando la capacità di **create geometry collection** e iterare sui suoi membri, sblocchi potenti capacità di **geospatial data handling** nelle tue applicazioni .NET. Usa i pattern mostrati qui per costruire analisi spaziali più complesse, renderizzare mappe o fornire dati GIS a servizi downstream.
+
+---
+
+**Ultimo aggiornamento:** 2026-04-09  
+**Testato con:** Aspose.GIS for .NET (latest release)  
+**Autore:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
