@@ -1,65 +1,113 @@
 ---
-title: تحويل المضلعات إلى خطوط باستخدام Aspose.GIS لـ .NET
+date: 2026-04-09
+description: تعلم كيفية تحويل المضلع إلى خط وتحويل المضلعات إلى خطوط باستخدام Aspose.GIS
+  لـ .NET. دليل سريع لمطوري نظم المعلومات الجغرافية.
+keywords:
+- convert polygon to line
+- how to replace polygons
+- transform polygons to lines
 linktitle: استبدال المضلعات بالخطوط
 second_title: Aspose.GIS .NET API
-description: تعرف على كيفية استبدال المضلعات بالخطوط باستخدام Aspose.GIS لـ .NET. عزز مهاراتك في التعامل مع بيانات نظم المعلومات الجغرافية دون عناء.
-weight: 16
+title: تحويل المضلع إلى خط باستخدام Aspose.GIS لـ .NET
 url: /ar/net/geometry-processing/replace-polygons-with-lines/
+weight: 16
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# تحويل المضلعات إلى خطوط باستخدام Aspose.GIS لـ .NET
+# تحويل المضلع إلى خط باستخدام Aspose.GIS لـ .NET
 
 ## مقدمة
-في عالم تطوير أنظمة المعلومات الجغرافية (GIS)، يبرز Aspose.GIS for .NET كمجموعة أدوات قوية للعمل مع البيانات المكانية. سواء كنت مطورًا متمرسًا أو بدأت رحلتك في برمجة نظم المعلومات الجغرافية، فإن Aspose.GIS for .NET يقدم مجموعة شاملة من الوظائف لمعالجة البيانات الجغرافية وتحليلها بكفاءة.
-## المتطلبات الأساسية
-قبل الغوص في البرنامج التعليمي، تأكد من إعداد المتطلبات الأساسية التالية:
+If you need to **convert polygon to line** in a .NET GIS project, Aspose.GIS makes the process straightforward. Whether you’re simplifying map visualizations, preparing data for routing algorithms, or just need a cleaner geometry representation, this tutorial will walk you through the steps to replace polygons with line geometries using the Aspose.GIS API.
+
+## إجابات سريعة
+- **What does “convert polygon to line” mean?** It transforms closed polygon shapes into their boundary line strings.  
+- **Why use Aspose.GIS for this task?** It provides a single method (`ReplacePolygonsByLines`) that handles the conversion efficiently without manual geometry parsing.  
+- **Which .NET versions are supported?** .NET Framework 4.5+, .NET Core 3.1+, and .NET 5/6+.  
+- **Do I need a license for development?** A free trial works for testing; a commercial license is required for production.  
+- **How long does the implementation take?** Typically under 10 minutes for a basic conversion.
+
+## ما هو “convert polygon to line”؟
+Converting a polygon to a line means extracting the polygon’s outer ring (its perimeter) and representing it as a `LineString`. The resulting geometry retains the shape’s outline but loses interior area information, which is useful for tasks like network analysis or edge rendering.
+
+## لماذا تحويل المضلعات إلى خطوط باستخدام Aspose.GIS؟
+- **Simplify visualizations:** Lines are lighter to render, especially on web maps.  
+- **Prepare data for routing:** Many routing engines require line geometries.  
+- **Maintain topology:** The line retains the exact boundary of the original polygon, ensuring spatial accuracy.  
+- **One‑line solution:** The `ReplacePolygonsByLines()` method does all the heavy lifting for you.
+
+## المتطلبات المسبقة
+Before you start, make sure you have the following:
+
 ### تثبيت Aspose.GIS لـ .NET
-1.  تنزيل Aspose.GIS لـ .NET: تفضل بزيارة[هذا الرابط](https://releases.aspose.com/gis/net/) لتنزيل أحدث إصدار من Aspose.GIS لـ .NET.
-   
-2.  تثبيت Aspose.GIS for .NET: اتبع تعليمات التثبيت المتوفرة في الحزمة التي تم تنزيلها أو قم بالرجوع إلى[توثيق](https://reference.aspose.com/gis/net/) لخطوات التثبيت التفصيلية.
+1. Download Aspose.GIS for .NET: Visit [this link](https://releases.aspose.com/gis/net/) to download the latest version.  
+2. Install Aspose.GIS for .NET: Follow the installation instructions in the package or see the [documentation](https://reference.aspose.com/gis/net/) for detailed steps.
 
 ## استيراد مساحات الأسماء
-في مشروع .NET الخاص بك، تأكد من استيراد مساحات الأسماء الضرورية للوصول إلى وظائف Aspose.GIS.
+In your .NET project, import the required namespaces so you can work with Aspose.GIS classes.
+
 ```csharp
 using System;
 using Aspose.Gis.Geometries;
 ```
 
-في هذا البرنامج التعليمي، سنتعلم كيفية استبدال المضلعات بخطوط باستخدام Aspose.GIS for .NET. يمكن أن تكون هذه العملية مفيدة في تطبيقات نظم المعلومات الجغرافية المختلفة حيث يلزم تحويل الأشكال الهندسية المضلعة المعقدة إلى أشكال هندسية خطية أبسط لمزيد من التحليل أو التصور.
-## الخطوة 1: تحديد هندسة المصدر
-أولاً، حدد الشكل الهندسي المصدر الذي يحتوي على المضلعات التي تريد استبدالها بالخطوط.
+## دليل خطوة بخطوة
+
+### الخطوة 1: تعريف الهندسة المصدر
+Create a geometry collection that includes one or more polygons you want to convert. In this example we also add a point to show that non‑polygon elements remain unchanged.
+
 ```csharp
 var srcGeometry = Geometry.FromText(@"GeometryCollection (POLYGON((1 2, 1 4, 3 4, 3 2)), Point (5 1))");
 ```
-## الخطوة 2: استبدال المضلعات بالخطوط
- بعد ذلك، استخدم`ReplacePolygonsByLines()` طريقة تحويل المضلعات إلى خطوط.
+
+### الخطوة 2: تحويل المضلعات إلى خطوط
+Call the `ReplacePolygonsByLines()` method. This single call scans the collection, replaces every polygon with its corresponding line representation, and leaves other geometry types untouched.
+
 ```csharp
 var dstGeometry = srcGeometry.ReplacePolygonsByLines();
 ```
-## الخطوة 3: عرض النتائج
-وأخيرا، قم بعرض الأشكال الهندسية الأصلية والمحولة لرؤية التحول.
+
+### الخطوة 3: عرض الهندسات الأصلية والمحولة
+Print both the original and the transformed geometries to the console so you can verify the conversion.
+
 ```csharp
 Console.WriteLine($"source: {srcGeometry.AsText()}");
 Console.WriteLine($"result: {dstGeometry.AsText()}");
 ```
 
-## خاتمة
-يوفر Aspose.GIS for .NET وظائف قوية لمعالجة البيانات المكانية، بما في ذلك القدرة على استبدال المضلعات بالخطوط. باتباع هذا البرنامج التعليمي، تكون قد تعلمت كيفية إجراء هذا التحويل بسلاسة في تطبيقات .NET الخاصة بك.
-## الأسئلة الشائعة
-### هل يمكن لـ Aspose.GIS for .NET العمل مع تنسيقات ملفات GIS المختلفة؟
-نعم، يدعم Aspose.GIS for .NET قراءة وكتابة تنسيقات GIS المختلفة مثل Shapefile وGeoJSON وKML والمزيد.
-### هل تتوفر نسخة تجريبية مجانية من Aspose.GIS for .NET؟
- نعم، يمكنك الوصول إلى الإصدار التجريبي المجاني من Aspose.GIS for .NET[هنا](https://releases.aspose.com/).
-### هل يقدم Aspose.GIS for .NET الدعم للمطورين؟
- نعم، يمكن للمطورين الحصول على الدعم والمساعدة من منتدى مجتمع Aspose.GIS[هنا](https://forum.aspose.com/c/gis/33).
-### هل يمكنني شراء ترخيص مؤقت لـ Aspose.GIS لـ .NET؟
- نعم يمكنك الحصول على ترخيص مؤقت من[هنا](https://purchase.aspose.com/temporary-license/).
-### هل Aspose.GIS for .NET مناسب لكل من المطورين المبتدئين وذوي الخبرة؟
-بالتأكيد، Aspose.GIS for .NET يلبي احتياجات المطورين على جميع المستويات، ويقدم وثائق ودعمًا شاملين.
+## المشكلات الشائعة والحلول
+- **Missing line output:** Ensure the source geometry actually contains polygons; points or multipoints will be passed through unchanged.  
+- **Coordinate order problems:** Aspose.GIS expects coordinates in `X Y` order (longitude latitude). Swapped values can produce unexpected shapes.  
+- **Large collections:** For very large datasets, consider processing geometries in batches to avoid high memory consumption.
+
+## الأسئلة المتكررة
+
+**Q: Can Aspose.GIS for .NET work with various GIS file formats?**  
+A: Yes, it supports Shapefile, GeoJSON, KML, and many other common GIS formats.
+
+**Q: Is there a free trial available for Aspose.GIS for .NET?**  
+A: Yes, you can access the free trial of Aspose.GIS for .NET [here](https://releases.aspose.com/).
+
+**Q: Does Aspose.GIS for .NET offer support for developers?**  
+A: Yes, developers can get support and assistance from the Aspose.GIS community forum [here](https://forum.aspose.com/c/gis/33).
+
+**Q: Can I purchase a temporary license for Aspose.GIS for .NET?**  
+A: Yes, you can acquire a temporary license from [here](https://purchase.aspose.com/temporary-license/).
+
+**Q: Is Aspose.GIS for .NET suitable for both beginners and experienced developers?**  
+A: Absolutely, it provides comprehensive documentation, code examples, and API references for all skill levels.
+
+## الخلاصة
+By following these steps, you’ve learned how to **convert polygon to line** and effectively **transform polygons to lines** using Aspose.GIS for .NET. This capability opens the door to lighter visualizations, routing preparations, and many other GIS workflows. Feel free to explore additional Aspose.GIS features such as spatial queries, reprojection, and format conversion to extend your application’s capabilities.
+
+---
+
+**Last Updated:** 2026-04-09  
+**Tested With:** Aspose.GIS for .NET (latest release)  
+**Author:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}

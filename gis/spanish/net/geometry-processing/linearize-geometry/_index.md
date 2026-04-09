@@ -1,11 +1,15 @@
 ---
-date: 2025-12-21
-description: Aprenda a linealizar geometría con Aspose.GIS para .NET, lo que permite
-  un procesamiento eficiente de datos geoespaciales, análisis espacial y manipulación
-  de geometría en sus aplicaciones .NET.
-linktitle: Linearize a Geometry
+date: 2026-04-09
+description: Aprende cómo convertir curvas en líneas (linealizar la geometría) usando
+  Aspose.GIS para .NET, lo que permite un procesamiento y análisis geoespacial eficiente
+  en tus aplicaciones .NET.
+keywords:
+- convert curves to lines
+- how to linearize geometry
+- Aspose.GIS .NET
+linktitle: Linealizar una geometría
 second_title: Aspose.GIS .NET API
-title: Cómo linealizar la geometría usando Aspose.GIS para .NET
+title: Cómo convertir curvas en líneas con Aspose.GIS para .NET
 url: /es/net/geometry-processing/linearize-geometry/
 weight: 14
 ---
@@ -14,25 +18,25 @@ weight: 14
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Linearizar una Geometría
+# Convertir Curvas a Líneas (Linealizar Geometría) con Aspose.GIS para .NET
 
 ## Introducción
-Si necesitas **cómo linealizar geometrías** para mapeo, análisis espacial o tareas de intercambio de datos, Aspose.GIS para .NET te ofrece una forma limpia y programática de hacerlo. En este tutorial recorreremos un ejemplo completo y real que muestra cómo tomar una geometría compleja—que contiene curvas y formas compuestas—y convertirla en una representación lineal simple que funciona con cualquier sistema GIS.
+Si necesitas **convertir curvas a líneas** para mapeo, análisis espacial o tareas de intercambio de datos, Aspose.GIS para .NET te ofrece una forma limpia y programática de hacerlo. En este tutorial recorreremos un ejemplo completo y del mundo real que muestra cómo tomar una geometría compleja—que contiene curvas y formas compuestas—y convertirla en una representación lineal simple que funciona con cualquier sistema GIS.
 
 ## Respuestas rápidas
-- **¿Qué significa linealizar una geometría?** Convertir curvas y formas complejas en segmentos de línea recta.  
-- **¿Por qué usar Aspose.GIS?** Soporta docenas de formatos GIS y maneja la conversión de geometrías sin herramientas externas.  
-- **¿Requisitos previos?** .NET Framework o .NET Core, Visual Studio y la biblioteca Aspose.GIS.  
-- **¿Cuánto tiempo lleva el ejemplo?** Menos de cinco minutos en ejecutarse una vez instalada la biblioteca.  
-- **¿Puedo guardar en otros formatos?** Sí—reemplaza el controlador KML por Shapefile, GeoJSON, etc.
+- **¿Qué significa “convertir curvas a líneas”?** Transforma geometrías curvas en segmentos de línea recta.  
+- **¿Por qué elegir Aspose.GIS?** La biblioteca soporta docenas de formatos GIS y maneja la conversión de geometrías sin herramientas externas.  
+- **¿Qué necesito previamente?** .NET Framework o .NET Core, Visual Studio (o cualquier IDE de C#), y el paquete NuGet Aspose.GIS.  
+- **¿Cuánto tiempo tardará la muestra?** Menos de cinco minutos una vez instalada la biblioteca.  
+- **¿Puedo exportar a otros formatos?** Por supuesto—cambia el controlador KML por Shapefile, GeoJSON, etc.
 
-## ¿Qué es la linealización de geometrías?
-Linealizar una geometría significa descomponer cualquier forma curva o compuesta en una serie de segmentos de línea recta (una “geometría lineal”). Esto simplifica la renderización, el análisis y la interoperabilidad con herramientas que solo entienden líneas y puntos.
+## ¿Qué significa Convertir Curvas a Líneas?
+Convertir curvas a líneas (también llamado **linealizar geometría**) descompone cualquier forma curva o compuesta en una serie de segmentos de línea recta, conocida como “geometría lineal”. Esta simplificación hace que el renderizado sea más rápido, mejora la compatibilidad con servicios GIS antiguos y reduce la complejidad de los algoritmos espaciales.
 
-## ¿Por qué linealizar geometrías?
-- **Rendimiento:** Las geometrías lineales se renderizan y consultan más rápido.  
-- **Compatibilidad:** Muchas plataformas GIS (p. ej., servicios de mapas antiguos) solo aceptan características lineales.  
-- **Simplificación:** Útil para crear miniaturas, vistas previas rápidas o alimentar algoritmos que requieren entrada lineal.
+## ¿Por qué Convertir Curvas a Líneas?
+- **Rendimiento:** Las geometrías lineales se renderizan y consultan mucho más rápido.  
+- **Compatibilidad:** Muchas plataformas GIS (especialmente servicios heredados) solo aceptan características lineales.  
+- **Simplificación:** Ideal para miniaturas, vistas previas rápidas o para alimentar datos a algoritmos que requieren entrada lineal.
 
 ## Requisitos previos
 Antes de sumergirte en el código, asegúrate de tener:
@@ -44,7 +48,7 @@ Antes de sumergirte en el código, asegúrate de tener:
 ## Importar espacios de nombres
 Para comenzar a usar la funcionalidad de Aspose.GIS, importa los espacios de nombres requeridos.
 
-### Paso 1: Importar los espacios de nombres principales de Aspose.GIS
+### Paso 1: Espacios de nombres principales de Aspose.GIS
 ```csharp
 using Aspose.Gis;
 using Aspose.Gis.Geometries;
@@ -55,20 +59,20 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-### Paso 2: Importar el controlador para el formato de destino
+### Paso 2: Controlador para el formato de destino
 Para este ejemplo escribiremos el resultado en un archivo KML:
 ```csharp
 using Aspose.GIS.Kml;
 ```
 
-## Cómo linealizar una geometría – Guía paso a paso
-A continuación se muestra un recorrido detallado de cada línea de código, explicando **cómo linealizar geometrías** y por qué cada paso es importante.
+## Guía paso a paso para convertir curvas a líneas
+A continuación se muestra un recorrido detallado de cada línea de código, explicando **cómo convertir curvas a líneas** y por qué cada paso es importante.
 
 ### Paso 1: Definir la ruta de salida
 ```csharp
 string path = "Your Document Directory" + "LinearizeGeometry_out.kml";
 ```
-Reemplaza `"Your Document Directory"` con la carpeta donde deseas que se guarde el archivo KML.
+Reemplaza `"Your Document Directory"` con la carpeta donde deseas guardar el archivo KML. Se recomienda usar `Path.Combine` para compatibilidad multiplataforma.
 
 ### Paso 2: Crear una capa para el archivo de salida
 ```csharp
@@ -86,9 +90,9 @@ Una *característica* representa un solo objeto geográfico (punto, línea, pol�
 ```csharp
 var geometry = Geometry.FromText(@"GeometryCollection (LineString (0 0, 1 1, 2 0),CompoundCurve ((4 0, 5 1), CircularString (5 1, 6 2, 7 1)))");
 ```
-Creamos una geometría a partir de una cadena Well‑Known Text (WKT). Este ejemplo incluye un `LineString`, un `CompoundCurve` y un `CircularString`—perfecto para demostrar la linealización.
+Creamos una geometría a partir de una cadena Well‑Known Text (WKT). Este ejemplo incluye un `LineString`, un `CompoundCurve` y un `CircularString`—perfecto para demostrar **convertir curvas a líneas**.
 
-### Paso 5: Linealizar la geometría
+### Paso 5: Convertir curvas a líneas
 ```csharp
 var linear = geometry.ToLinearGeometry();
 ```
@@ -104,46 +108,48 @@ Ahora la característica contiene la geometría simplificada y lineal.
 ```csharp
 layer.Add(feature);
 ```
-Finalmente, añadimos la característica a la capa KML, lo que escribe la geometría lineal en el archivo de salida cuando finaliza el bloque `using`.
+Finalmente, añadimos la característica a la capa KML, lo que escribe la geometría lineal al archivo de salida cuando finaliza el bloque `using`.
 
-## Errores comunes y consejos
-- **Separadores de ruta:** Usa `Path.Combine` para construir rutas multiplataforma.  
-- **Geometrías grandes:** Linealizar formas muy complejas puede generar muchos vértices; considera usar `Simplify()` después de la linealización si necesitas menos puntos.  
-- **Selección de controlador:** Si necesitas un formato de salida diferente, sustituye `Drivers.Kml` por `Drivers.Shapefile`, `Drivers.GeoJson`, etc., y ajusta la extensión del archivo en consecuencia.
+## Problemas comunes y consejos profesionales
+- **Separadores de ruta:** Usa `Path.Combine` para evitar problemas en Windows vs. Linux.  
+- **Geometrías muy grandes:** Linealizar formas intrincadas puede generar miles de vértices; considera llamar a `Simplify()` después de la linealización para reducir el recuento de puntos.  
+- **Selección de controlador:** Si necesitas un formato de salida diferente, reemplaza `Drivers.Kml` por `Drivers.Shapefile`, `Drivers.GeoJson`, etc., y cambia la extensión del archivo en consecuencia.  
+- **Preservar valores Z:** `ToLinearGeometry()` conserva coordenadas 3‑D (Z), por lo que no pierdes datos de elevación.
+
+## Preguntas Frecuentes (FAQ)
+
+**P: ¿Aspose.GIS para .NET es compatible con .NET Core?**  
+R: Sí, Aspose.GIS funciona con .NET Core, lo que permite aplicaciones multiplataforma.
+
+**P: ¿Puedo trabajar con diferentes formatos de archivo GIS usando Aspose.GIS para .NET?**  
+R: ¡Absolutamente! La biblioteca soporta KML, Shapefile, GeoJSON y muchos más formatos.
+
+**P: ¿Aspose.GIS ofrece operaciones y análisis espaciales?**  
+R: Sí, proporciona una amplia gama de funciones espaciales, desde buffers hasta uniones espaciales.
+
+**P: ¿Hay una versión de prueba gratuita disponible?**  
+R: Sí, puedes descargar una prueba gratuita desde el [sitio web de Aspose](https://releases.aspose.com/).
+
+**P: ¿Dónde puedo obtener ayuda si encuentro problemas?**  
+R: Visita el [foro de Aspose.GIS](https://forum.aspose.com/c/gis/33) para soporte de la comunidad y del personal.
+
+### Consultas comunes adicionales
+
+**P: ¿Puedo linealizar geometrías que contengan coordenadas 3D (Z)?**  
+R: Sí, `ToLinearGeometry()` funciona con geometrías 2D y 3D; los valores Z se conservan.
+
+**P: ¿Cómo afecta la linealización al tamaño del archivo?**  
+R: Convertir curvas en muchos segmentos de línea cortos puede aumentar el tamaño del archivo. Usa `Simplify()` después de la linealización si el tamaño es una preocupación.
+
+**P: ¿Puedo controlar la longitud del segmento al convertir curvas a líneas?**  
+R: El método predeterminado usa una tolerancia interna. Para una segmentación personalizada puedes teselar manualmente las curvas antes de llamar a `ToLinearGeometry()`.
 
 ## Conclusión
-En este tutorial cubrimos **cómo linealizar geometrías** usando Aspose.GIS para .NET, desde la configuración del entorno hasta la escritura del resultado linealizado en un archivo KML. Ahora puedes integrar este flujo de trabajo en aplicaciones de mapeo, pipelines de procesamiento de datos o cualquier proyecto GIS que requiera geometrías simplificadas.
-
-## Preguntas frecuentes
-### Q: ¿Es Aspose.GIS para .NET compatible con .NET Core?
-Sí, Aspose.GIS para .NET es compatible con .NET Core, lo que permite crear aplicaciones multiplataforma.
-
-### Q: ¿Puedo trabajar con diferentes formatos de archivo GIS usando Aspose.GIS para .NET?
-¡Absolutamente! Aspose.GIS soporta varios formatos GIS, incluidos KML, Shapefile, GeoJSON y más.
-
-### Q: ¿Aspose.GIS ofrece soporte para operaciones y análisis espaciales?
-Sí, Aspose.GIS proporciona una amplia gama de operaciones y capacidades de análisis espacial para manejar tareas geoespaciales complejas.
-
-### Q: ¿Hay una prueba gratuita disponible para Aspose.GIS para .NET?
-Sí, puedes descargar una prueba gratuita desde el [sitio web de Aspose](https://releases.aspose.com/).
-
-### Q: ¿Dónde puedo encontrar ayuda y soporte para Aspose.GIS?
-Puedes visitar el [foro de Aspose.GIS](https://forum.aspose.com/c/gis/33) para obtener asistencia de la comunidad y del personal de soporte de Aspose.
-
-## Preguntas frecuentes (Adicionales)
-
-**Q: ¿Puedo linealizar geometrías que contengan coordenadas 3D (Z)?**  
-A: Sí, `ToLinearGeometry()` funciona con geometrías 2D y 3D; los valores Z se conservan en los segmentos de línea resultantes.
-
-**Q: ¿Cómo afecta la linealización al tamaño del archivo de salida?**  
-A: Convertir curvas en muchos segmentos cortos puede aumentar el tamaño del archivo. Usa `Simplify()` después de la linealización si el tamaño del archivo es una preocupación.
-
-**Q: ¿Es posible controlar la longitud de los segmentos al linealizar?**  
-A: El método predeterminado usa una tolerancia interna. Para una segmentación personalizada, puedes teselar manualmente las curvas antes de llamar a `ToLinearGeometry()`.
+En este tutorial cubrimos **cómo convertir curvas a líneas** (linealizar geometría) usando Aspose.GIS para .NET, desde la configuración del entorno hasta la escritura del resultado linealizado en un archivo KML. Ahora puedes integrar este flujo de trabajo en aplicaciones de mapeo, pipelines de procesamiento de datos o cualquier proyecto relacionado con GIS que requiera geometrías simplificadas.
 
 ---
 
-**Última actualización:** 2025-12-21  
+**Última actualización:** 2026-04-09  
 **Probado con:** Aspose.GIS 24.11 para .NET  
 **Autor:** Aspose  
 
