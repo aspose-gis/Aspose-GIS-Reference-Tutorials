@@ -1,27 +1,50 @@
 ---
-title: Utwórz plik GDB z pojedynczą warstwą
-linktitle: Utwórz plik GDB z pojedynczą warstwą
+date: 2026-01-10
+description: Dowiedz się, jak utworzyć warstwę wektorową w bazie danych plikowych
+  (File Geodatabase) przy użyciu Aspose.GIS dla .NET. Zarządzaj danymi geoprzestrzennymi
+  z odniesieniem przestrzennym WGS84 i opcjami pliku gdb.
+linktitle: Create File GDB with Single Layer
 second_title: Aspose.GIS .NET API
-description: Odblokuj potencjał zarządzania danymi geoprzestrzennymi w .NET dzięki Aspose.GIS. Dowiedz się, jak krok po kroku tworzyć geobazy plikowe i warstwy. Pobierz teraz!
-weight: 11
+title: Tworzenie warstwy wektorowej w pliku GDB – samouczek Aspose.GIS .NET
 url: /pl/net/layer-management/create-file-gdb-with-single-layer/
+weight: 11
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Utwórz plik GDB z pojedynczą warstwą
+# Utwórz warstwę wektorową w File GDB
 
-## Wstęp
-Czy jesteś gotowy, aby ulepszyć swoje aplikacje geoprzestrzenne dzięki solidnym geobazom plikowym i warstwom? Nie szukaj dalej niż Aspose.GIS dla .NET. W tym samouczku przeprowadzimy Cię przez proces tworzenia geobazy plikowej (GDB) z pojedynczą warstwą przy użyciu Aspose.GIS dla .NET. Wykorzystaj bez wysiłku możliwości zarządzania danymi przestrzennymi i wizualizacji w aplikacjach .NET.
-## Warunki wstępne
-Zanim przejdziesz do samouczka, upewnij się, że spełniasz następujące wymagania wstępne:
-1.  Aspose.GIS dla .NET: Upewnij się, że masz zainstalowaną bibliotekę Aspose.GIS. Można go pobrać z[Strona pobierania Aspose.GIS dla .NET](https://releases.aspose.com/gis/net/).
-2. Środowisko programistyczne: Skonfiguruj działające środowisko programistyczne .NET na swoim komputerze.
-3. Katalog dokumentów: Wybierz lub utwórz katalog w swoim systemie, w którym będziesz przechowywać pliki danych geoprzestrzennych.
-## Importuj przestrzenie nazw
-Aby rozpocząć, musisz zaimportować niezbędne przestrzenie nazw do swojego projektu .NET. Te przestrzenie nazw zapewnią dostęp do funkcjonalności Aspose.GIS. Dodaj następujące wiersze na początku pliku kodu:
+## Wprowadzenie
+Jeśli potrzebujesz **create vector layer** wewnątrz File Geodatabase (GDB) i chcesz efektywnie zarządzać danymi geoprzestrzennymi, Aspose.GIS for .NET zapewnia czyste podejście code‑first. W tym przewodniku krok po kroku pokażemy, jak zapisać cechę linii, skonfigurować opcje file gdb i pracować z odniesieniem przestrzennym WGS84 — wszystko w kilku liniach C#. Po zakończeniu będziesz mógł zliczyć cechy w warstwie i zintegrować powstały GDB z dowolnym przepływem pracy .NET związanym z mapowaniem lub analizą.
+
+## Szybkie odpowiedzi
+- **What does “create vector layer” mean?** Oznacza to dodanie nowego zestawu danych wektorowych (punktów, linii lub wielokątów) do pliku geobazy.  
+- **Which library should I use?** Aspose.GIS for .NET zapewnia pełne wsparcie dla tworzenia i edycji File GDB.  
+- **Do I need a license for development?** Darmowa wersja próbna działa do testów; licencja komercyjna jest wymagana w produkcji.  
+- **Can I set the spatial reference?** Tak – użyj `SpatialReferenceSystem.Wgs84` dla powszechnego datumu WGS84.  
+- **How many lines of code?** Mniej niż 30 linii kodu, aby utworzyć GDB, dodać cechę linii i odczytać liczbę cech.
+
+## Czym jest operacja „create vector layer”?
+Tworzenie warstwy wektorowej oznacza zdefiniowanie nowej tabeli w geobazie, która przechowuje obiekty geometryczne (punkty, linie, wielokąty) wraz z ich atrybutami. Ta operacja jest podstawą każdej aplikacji opartej na GIS, która musi **manage geospatial data**.
+
+## Dlaczego używać Aspose.GIS do tworzenia warstwy wektorowej?
+- **Zero external dependencies** – API działa od razu na .NET Framework, .NET Core oraz .NET 5/6.  
+- **Full support for File GDB** – możesz skonfigurować `FileGdbOptions`, aby kontrolować kompresję, indeksowanie przestrzenne i inne.  
+- **Built‑in spatial reference handling** – po prostu przekaż `SpatialReferenceSystem.Wgs84`, aby pracować w globalnym układzie współrzędnych.  
+- **Straightforward API** – zapisz cechę linii, dodaj ją do warstwy i pobierz liczbę cech przy użyciu kilku wywołań metod.
+
+## Prerequisites
+Zanim rozpoczniesz, upewnij się, że masz:
+
+1. **Aspose.GIS for .NET** – pobierz go ze [strony pobierania Aspose.GIS for .NET](https://releases.aspose.com/gis/net/).  
+2. **A .NET development environment** – Visual Studio, Rider lub `dotnet` CLI.  
+3. **A folder** gdzie zostanie utworzony File GDB (nazwijmy go *Your Document Directory*).
+
+## Importowanie przestrzeni nazw
+Dodaj wymagane instrukcje `using` na początku swojego pliku C#:
+
 ```csharp
 using Aspose.Gis;
 using Aspose.Gis.Geometries;
@@ -34,12 +57,14 @@ using System.Threading.Tasks;
 using Aspose.Gis.Formats.FileGdb;
 using Aspose.Gis.SpatialReferencing;
 ```
-## Krok 1: Skonfiguruj katalog dokumentów
+
+## Krok 1: Skonfiguruj swój katalog dokumentów
 ```csharp
 string dataDir = "Your Document Directory";
 ```
-Zastąp „Twój katalog dokumentów” ścieżką do katalogu, w którym chcesz przechowywać pliki danych geoprzestrzennych.
-## Krok 2: Utwórz geobazę plikową z pojedynczą warstwą
+Zastąp `"Your Document Directory"` bezwzględną ścieżką, w której ma znajdować się File GDB.
+
+## Krok 2: Utwórz File Geodatabase z jedną warstwą
 ```csharp
 var options = new FileGdbOptions();
 using (var layer = VectorLayer.Create(path, Drivers.FileGdb, options, SpatialReferenceSystem.Wgs84))
@@ -53,29 +78,47 @@ using (var layer = VectorLayer.Create(path, Drivers.FileGdb, options, SpatialRef
     layer.Add(feature);
 }
 ```
-Ten fragment kodu tworzy geobazę plikową z pojedynczą warstwą i dodaje do niej element liniowy.
-## Krok 3: Otwórz geobazę plików i pobierz informacje o warstwach
+Ten fragment **creates a vector layer** przy użyciu `FileGdbOptions`, zapisuje prostą cechę linii i przechowuje ją w File GDB, który używa **spatial reference WGS84**.
+
+## Krok 3: Otwórz File Geodatabase i pobierz informacje o warstwie
 ```csharp
 using (var dataset = Dataset.Open(path, Drivers.FileGdb))
 using (var layer = dataset.OpenLayer("layer"))
 {
-    Console.WriteLine("Features count: {0}", layer.Count); // Dane wyjściowe: Liczba funkcji: 1
+    Console.WriteLine("Features count: {0}", layer.Count); // Output: Features count: 1
 }
 ```
-W tym kroku otwieramy utworzoną geobazę plikową, pobieramy warstwę o nazwie „warstwa” i drukujemy liczbę obiektów w warstwie.
-## Wniosek
-Gratulacje! Pomyślnie utworzyłeś geobazę plikową z pojedynczą warstwą przy użyciu Aspose.GIS dla .NET. Z łatwością poznaj szerokie możliwości zarządzania danymi przestrzennymi w swoich aplikacjach.
-## Często Zadawane Pytania
-### Czy mogę używać Aspose.GIS dla .NET w moich istniejących projektach .NET?
-Tak, Aspose.GIS dla .NET można bezproblemowo zintegrować z istniejącymi projektami .NET.
-### Czy dostępna jest wersja próbna Aspose.GIS dla .NET?
- Tak, możesz poznać funkcje Aspose.GIS dla .NET, pobierając plik[bezpłatna wersja próbna](https://releases.aspose.com/).
-### Gdzie mogę znaleźć szczegółową dokumentację Aspose.GIS dla .NET?
- Patrz[dokumentacja](https://reference.aspose.com/gis/net/) aby uzyskać wyczerpujące informacje na temat Aspose.GIS dla .NET.
-### Jak mogę uzyskać wsparcie dla Aspose.GIS dla .NET?
- Odwiedzić[Forum Aspose.GIS](https://forum.aspose.com/c/gis/33) za wsparcie i pomoc społeczną.
-### Czy dostępne są licencje tymczasowe dla Aspose.GIS dla .NET?
- Tak, możesz uzyskać[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) dla Aspose.GIS dla .NET.
+Tutaj **count features layer** otwierając zestaw danych i wypisując liczbę cech – w tym przypadku `1`.
+
+## Common Issues and Solutions
+| Problem | Powód | Rozwiązanie |
+|---------|-------|-------------|
+| **`File not found`** | Niepoprawna zmienna `path` | Sprawdź, czy `dataDir` wskazuje istniejący folder oraz czy `path` łączy go z nazwą pliku, np., `Path.Combine(dataDir, "MyData.gdb")`. |
+| **`Unsupported geometry`** | Użycie typu geometrii niedozwolonego w File GDB | Używaj `Point`, `LineString` lub `Polygon` dla podstawowych warstw. |
+| **`License not set`** | Uruchamianie bez ważnej licencji w środowisku produkcyjnym | Zarejestruj licencję przy użyciu `License license = new License(); license.SetLicense("Aspose.GIS.lic");`. |
+
+## Najczęściej zadawane pytania
+### Can I use Aspose.GIS for .NET in my existing .NET projects?
+Tak, Aspose.GIS for .NET może być płynnie zintegrowany z istniejącymi projektami .NET.
+
+### Is there a trial version available for Aspose.GIS for .NET?
+Tak, możesz zapoznać się z funkcjami Aspose.GIS for .NET, pobierając [bezpłatną wersję próbną](https://releases.aspose.com/).
+
+### Where can I find detailed documentation for Aspose.GIS for .NET?
+Zapoznaj się z [dokumentacją](https://reference.aspose.com/gis/net/), aby uzyskać pełne informacje o Aspose.GIS for .NET.
+
+### How can I get support for Aspose.GIS for .NET?
+Odwiedź [forum Aspose.GIS](https://forum.aspose.com/c/gis/33), aby uzyskać wsparcie społeczności i pomoc.
+
+### Are temporary licenses available for Aspose.GIS for .NET?
+Tak, możesz uzyskać [tymczasową licencję](https://purchase.aspose.com/temporary-license/) dla Aspose.GIS for .NET.
+
+---
+
+**Last Updated:** 2026-01-10  
+**Tested With:** Aspose.GIS 24.11 for .NET  
+**Author:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}

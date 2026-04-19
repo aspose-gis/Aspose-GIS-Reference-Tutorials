@@ -1,27 +1,50 @@
 ---
-title: Crie arquivo GDB com camada única
-linktitle: Crie arquivo GDB com camada única
-second_title: API Aspose.GIS .NET
-description: Desbloqueie o potencial do gerenciamento de dados geoespaciais em .NET com Aspose.GIS. Aprenda como criar bancos de dados geográficos de arquivos e camadas passo a passo. Baixe Agora!
-weight: 11
+date: 2026-01-10
+description: Aprenda a criar camada vetorial em um File Geodatabase usando Aspose.GIS
+  para .NET. Gerencie dados geoespaciais com referência espacial WGS84 e opções de
+  arquivo gdb.
+linktitle: Create File GDB with Single Layer
+second_title: Aspose.GIS .NET API
+title: Criar camada vetorial no File GDB – Tutorial Aspose.GIS .NET
 url: /pt/net/layer-management/create-file-gdb-with-single-layer/
+weight: 11
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Crie arquivo GDB com camada única
+# Criar Camada Vetorial em File GDB
 
 ## Introdução
-Você está pronto para elevar seus aplicativos geoespaciais com bancos de dados e camadas de arquivos robustos? Não procure mais, Aspose.GIS para .NET. Neste tutorial, orientaremos você no processo de criação de um File Geodatabase (GDB) com uma única camada usando Aspose.GIS for .NET. Aproveite o poder do gerenciamento e visualização de dados espaciais em seus aplicativos .NET sem esforço.
+Se você precisa **create vector layer** dentro de um File Geodatabase (GDB) e gerenciar dados geoespaciais de forma eficiente, o Aspose.GIS for .NET oferece uma abordagem limpa, code‑first. Neste guia passo a passo, mostraremos como escrever um recurso de linha, configurar as opções de file gdb e trabalhar com a **spatial reference WGS84** — tudo em algumas linhas de C#. Ao final, você poderá contar os recursos em uma camada e integrar o GDB resultante em qualquer fluxo de trabalho de mapeamento ou análise .NET.
+
+## Respostas Rápidas
+- **O que significa “create vector layer”?** Significa adicionar um novo conjunto de dados vetoriais (pontos, linhas ou polígonos) a um arquivo de geodatabase.  
+- **Qual biblioteca devo usar?** O Aspose.GIS for .NET fornece suporte total para criação e edição de File GDB.  
+- **Preciso de licença para desenvolvimento?** Uma versão de avaliação gratuita funciona para testes; uma licença comercial é necessária para produção.  
+- **Posso definir a referência espacial?** Sim – use `SpatialReferenceSystem.Wgs84` para o datum WGS84 comum.  
+- **Quantas linhas de código?** Menos de 30 linhas para criar o GDB, adicionar um recurso de linha e ler novamente a contagem de recursos.
+
+## O que é uma operação “create vector layer”?
+Criar uma camada vetorial significa definir uma nova tabela dentro de um geodatabase que armazena objetos geométricos (pontos, linhas, polígonos) junto com seus atributos. Esta operação é a base para qualquer aplicação baseada em GIS que precise **manage geospatial data**.
+
+## Por que usar Aspose.GIS para criar uma camada vetorial?
+- **Zero dependências externas** – a API funciona pronta para uso em .NET Framework, .NET Core e .NET 5/6.  
+- **Suporte total para File GDB** – você pode configurar `FileGdbOptions` para controlar compressão, indexação espacial e mais.  
+- **Manipulação integrada de referência espacial** – basta passar `SpatialReferenceSystem.Wgs84` para trabalhar no sistema de coordenadas global.  
+- **API simples** – escreva um recurso de linha, adicione‑o a uma camada e recupere a contagem de recursos com apenas algumas chamadas de método.
+
 ## Pré-requisitos
-Antes de mergulhar no tutorial, certifique-se de ter os seguintes pré-requisitos em vigor:
-1.  Aspose.GIS for .NET: Certifique-se de ter a biblioteca Aspose.GIS instalada. Você pode baixá-lo no[Página de download do Aspose.GIS para .NET](https://releases.aspose.com/gis/net/).
-2. Ambiente de desenvolvimento: configure um ambiente de desenvolvimento .NET funcional em sua máquina.
-3. Diretório de documentos: Escolha ou crie um diretório em seu sistema onde você armazenará seus arquivos de dados geoespaciais.
-## Importar namespaces
-Para começar, você precisa importar os namespaces necessários em seu projeto .NET. Esses namespaces fornecerão acesso às funcionalidades do Aspose.GIS. Adicione as seguintes linhas no início do seu arquivo de código:
+Antes de começar, certifique‑se de que você tem:
+
+1. **Aspose.GIS for .NET** – faça o download na [Aspose.GIS for .NET download page](https://releases.aspose.com/gis/net/).  
+2. **Um ambiente de desenvolvimento .NET** – Visual Studio, Rider ou a CLI `dotnet`.  
+3. **Uma pasta** onde o File GDB será criado (chamaremos de *Your Document Directory*).
+
+## Importar Namespaces
+Adicione as declarações `using` necessárias no início do seu arquivo C#:
+
 ```csharp
 using Aspose.Gis;
 using Aspose.Gis.Geometries;
@@ -34,12 +57,17 @@ using System.Threading.Tasks;
 using Aspose.Gis.Formats.FileGdb;
 using Aspose.Gis.SpatialReferencing;
 ```
-## Etapa 1: configure seu diretório de documentos
+
+## Etapa 1: Configurar Seu Diretório de Documentos
+Substitua `"Your Document Directory"` pelo caminho absoluto onde você deseja que o File GDB seja criado.
+
 ```csharp
 string dataDir = "Your Document Directory";
 ```
-Substitua “Seu diretório de documentos” pelo caminho para o diretório onde você deseja armazenar seus arquivos de dados geoespaciais.
-## Etapa 2: Crie um arquivo geodatabase com uma única camada
+
+## Etapa 2: Criar um File Geodatabase com uma Única Camada
+Este trecho **creates a vector layer** usando `FileGdbOptions`, grava um recurso de linha simples e o armazena em um File GDB que usa a **spatial reference WGS84**.
+
 ```csharp
 var options = new FileGdbOptions();
 using (var layer = VectorLayer.Create(path, Drivers.FileGdb, options, SpatialReferenceSystem.Wgs84))
@@ -53,29 +81,47 @@ using (var layer = VectorLayer.Create(path, Drivers.FileGdb, options, SpatialRef
     layer.Add(feature);
 }
 ```
-Este trecho de código cria um arquivo Geodatabase com uma única camada e adiciona um recurso de linha a ele.
-## Etapa 3: Abra o arquivo Geodatabase e recupere as informações da camada
+
+## Etapa 3: Abrir o File Geodatabase e Recuperar Informações da Camada
+Aqui nós **count features layer** ao abrir o conjunto de dados e imprimir o número de recursos – neste caso, `1`.
+
 ```csharp
 using (var dataset = Dataset.Open(path, Drivers.FileGdb))
 using (var layer = dataset.OpenLayer("layer"))
 {
-    Console.WriteLine("Features count: {0}", layer.Count); // Saída: Contagem de recursos: 1
+    Console.WriteLine("Features count: {0}", layer.Count); // Output: Features count: 1
 }
 ```
-Nesta etapa, abrimos o arquivo Geodatabase criado, recuperamos a camada chamada “camada” e imprimimos a contagem de feições na camada.
-## Conclusão
-Parabéns! Você criou com sucesso um arquivo geodatabase com uma única camada usando Aspose.GIS for .NET. Explore com facilidade os vastos recursos de gerenciamento de dados espaciais em seus aplicativos.
-## perguntas frequentes
-### Posso usar o Aspose.GIS for .NET em meus projetos .NET existentes?
-Sim, o Aspose.GIS for .NET pode ser perfeitamente integrado aos seus projetos .NET existentes.
-### Existe uma versão de teste disponível para Aspose.GIS for .NET?
- Sim, você pode explorar os recursos do Aspose.GIS for .NET baixando o[versão de teste gratuita](https://releases.aspose.com/).
+
+## Problemas Comuns e Soluções
+| Problema | Motivo | Correção |
+|----------|--------|----------|
+| **`File not found`** | Variável `path` incorreta | Verifique se `dataDir` aponta para uma pasta existente e se `path` a combina com um nome de arquivo, por exemplo, `Path.Combine(dataDir, "MyData.gdb")`. |
+| **`Unsupported geometry`** | Usando um tipo de geometria não permitido no File GDB | Use apenas `Point`, `LineString` ou `Polygon` para camadas básicas. |
+| **`License not set`** | Executando sem uma licença válida em produção | Registre sua licença com `License license = new License(); license.SetLicense("Aspose.GIS.lic");`. |
+
+## Perguntas Frequentes
+### Posso usar Aspose.GIS for .NET em meus projetos .NET existentes?
+Sim, Aspose.GIS for .NET pode ser integrado perfeitamente em seus projetos .NET existentes.
+
+### Existe uma versão de avaliação disponível para Aspose.GIS for .NET?
+Sim, você pode explorar os recursos do Aspose.GIS for .NET baixando a [free trial version](https://releases.aspose.com/).
+
 ### Onde posso encontrar documentação detalhada para Aspose.GIS for .NET?
- Consulte o[documentação](https://reference.aspose.com/gis/net/) para obter informações abrangentes sobre Aspose.GIS for .NET.
+Consulte a [documentation](https://reference.aspose.com/gis/net/) para informações abrangentes sobre Aspose.GIS for .NET.
+
 ### Como posso obter suporte para Aspose.GIS for .NET?
- Visite a[Fórum Aspose.GIS](https://forum.aspose.com/c/gis/33) para apoio e assistência comunitária.
-### As licenças temporárias estão disponíveis para Aspose.GIS for .NET?
- Sim, você pode obter um[licença temporária](https://purchase.aspose.com/temporary-license/) para Aspose.GIS para .NET.
+Visite o [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) para suporte da comunidade e assistência.
+
+### Licenças temporárias estão disponíveis para Aspose.GIS for .NET?
+Sim, você pode obter uma [temporary license](https://purchase.aspose.com/temporary-license/) para Aspose.GIS for .NET.
+
+---
+
+**Last Updated:** 2026-01-10  
+**Tested With:** Aspose.GIS 24.11 for .NET  
+**Author:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}

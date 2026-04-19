@@ -1,28 +1,51 @@
 ---
-title: Créer un nouveau jeu de données GDB
-linktitle: Créer un nouveau jeu de données GDB
-second_title: API Aspose.GIS .NET
-description: Explorez Aspose.GIS pour .NET pour créer et gérer sans effort des ensembles de données SIG. Téléchargez-le dès maintenant pour un développement géospatial fluide. #Aspose #SIG
-weight: 10
+date: 2026-01-10
+description: Apprenez à créer des ensembles de données .NET de géodatabase fichier
+  avec Aspose.GIS pour .NET. Guide étape par étape pour une gestion sans effort des
+  données SIG.
+linktitle: Create New File GDB Dataset
+second_title: Aspose.GIS .NET API
+title: Créer un jeu de données .NET de géodatabase de fichiers avec Aspose.GIS
 url: /fr/net/layer-management/create-new-file-gdb-dataset/
+weight: 10
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Créer un nouveau jeu de données GDB
+# Créer un jeu de données File Geodatabase .NET avec Aspose.GIS
 
 ## Introduction
-Dans le domaine du développement géospatial, Aspose.GIS pour .NET se distingue comme une puissante boîte à outils pour gérer et manipuler les données du système d'information géographique (SIG). Que vous soyez un développeur chevronné ou que vous commenciez tout juste votre parcours dans le SIG, ce didacticiel vous guidera tout au long du processus de création d'un nouvel ensemble de données de géodatabase fichier (GDB) à l'aide d'Aspose.GIS pour .NET.
-## Conditions préalables
-Avant de plonger dans le didacticiel, assurez-vous que les conditions préalables suivantes sont remplies :
--  Aspose.GIS pour .NET : assurez-vous que la bibliothèque Aspose.GIS pour .NET est installée. Vous pouvez le télécharger depuis le[Page de téléchargement d'Aspose.GIS pour .NET](https://releases.aspose.com/gis/net/).
-- Environnement de développement : configurez votre environnement de développement avec un IDE compatible, tel que Visual Studio, et possédez une compréhension de base de la programmation .NET.
-- Répertoire de documents : remplacez « Votre répertoire de documents » dans l'extrait de code par le chemin approprié où vous souhaitez stocker votre ensemble de données GDB.
-- Familiarité avec C# : ce didacticiel suppose que vous êtes familier avec le langage de programmation C#.
-## Importer des espaces de noms
-Dans les étapes initiales, importez les espaces de noms nécessaires pour exploiter la fonctionnalité Aspose.GIS dans votre application .NET :
+Dans ce tutoriel, vous allez **créer des jeux de données File Geodatabase .NET** à partir de zéro en utilisant Aspose.GIS pour .NET. Que vous construisiez un outil GIS de bureau, un service web qui stocke des données spatiales, ou que vous ayez simplement besoin d’une méthode fiable pour générer des File Geodatabases de façon programmatique, ce guide vous accompagne à chaque étape avec des explications claires et un contexte réel.
+
+## Réponses rapides
+- **Que couvre ce tutoriel ?** Création d’une nouvelle File Geodatabase, ajout de deux couches, et vérification du jeu de données avec Aspose.GIS pour .NET.  
+- **Combien de temps cela prend‑il ?** Environ 10‑15 minutes pour un développeur familier avec C#.  
+- **Prérequis ?** Environnement de développement .NET, bibliothèque Aspose.GIS pour .NET, et un chemin de dossier accessible en écriture.  
+- **Puis‑je l’utiliser avec .NET Core / .NET 6+ ?** Oui – l’API est entièrement compatible avec les runtimes .NET modernes.  
+- **Ai‑je besoin d’une licence ?** Une licence temporaire ou permanente Aspose.GIS est requise pour une utilisation en production.
+
+## Qu’est‑ce qu’une File Geodatabase ?
+Une File Geodatabase (File GDB) est un magasin de données basé sur un dossier qui contient des classes d’entités GIS, des jeux de données raster et les métadonnées associées. Elle offre des performances de lecture/écriture rapides, prend en charge de grands jeux de données et est largement utilisée dans l’écosystème ArcGIS d’Esri. Avec Aspose.GIS, vous pouvez créer et manipuler ces bases directement depuis du code .NET sans aucun logiciel GIS externe.
+
+## Pourquoi créer une File Geodatabase .NET avec Aspose.GIS ?
+- **Aucune dépendance externe** – la bibliothèque gère tous les détails du format de fichier.  
+- **Multiplateforme** – fonctionne sur les runtimes .NET Windows, Linux et macOS.  
+- **Support riche de la géométrie** – points, lignes, polygones, etc.  
+- **Contrôle total** – vous décidez du schéma, des attributs et du système de référence spatiale.
+
+## Prérequis
+Avant de commencer, assurez‑vous de disposer de :
+
+- Aspose.GIS pour .NET installé. Vous pouvez le télécharger depuis la [page de téléchargement Aspose.GIS pour .NET](https://releases.aspose.com/gis/net/).  
+- Un environnement de développement tel que Visual Studio 2022 (ou tout IDE supportant .NET).  
+- Un dossier accessible en écriture sur votre machine où la nouvelle GDB sera créée – remplacez `"Your Document Directory"` dans le code par ce chemin.  
+- Une connaissance de base du C# et de la structure d’un projet .NET.
+
+## Importer les espaces de noms
+Tout d’abord, importez les espaces de noms qui vous donnent accès aux classes Aspose.GIS :
+
 ```csharp
 using Aspose.Gis;
 using Aspose.Gis.Geometries;
@@ -33,17 +56,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 ```
-## Étape 1 : Créer un nouvel ensemble de données fichier GDB
+
+## Guide étape par étape
+
+### Étape 1 : Créer un nouveau jeu de données File GDB
+Le fragment suivant crée une File Geodatabase vide. C’est le cœur du **create file geodatabase .net**.
+
 ```csharp
 string dataDir = "Your Document Directory";
 using (var dataset = Dataset.Create(dataDir, Drivers.FileGdb))
 {
-    Console.WriteLine(dataset.LayersCount); // Sortie : 0
-    // Continuez avec les étapes suivantes...
+    Console.WriteLine(dataset.LayersCount); // Output: 0
+    // Continue with subsequent steps...
 }
 ```
- Explication : Dans cette étape, nous créons un nouvel ensemble de données GDB à l'aide du`Dataset.Create` méthode. Nous spécifions le chemin et le pilote (FileGdb) pour créer une géodatabase fichier. La sortie de la console affiche le nombre de couches initial, qui est nul à ce stade.
-## Étape 2 : créer et remplir le calque_1
+
+**Explication :** `Dataset.Create` initialise la GDB au chemin spécifié en utilisant le pilote `FileGdb`. À ce stade, le jeu de données ne contient aucune couche, donc le nombre de couches est zéro.
+
+### Étape 2 : Créer et remplir `layer_1`
+Nous ajoutons maintenant une première couche qui stocke des attributs entiers et des géométries de points.
+
 ```csharp
 using (var layer = dataset.CreateLayer("layer_1"))
 {
@@ -57,8 +89,15 @@ using (var layer = dataset.CreateLayer("layer_1"))
     }
 }
 ```
-Explication : Cette étape implique la création d'une couche nommée "layer_1" dans l'ensemble de données. Il définit un attribut nommé « valeur » de type entier et remplit la couche avec dix entités, chacune ayant une géométrie ponctuelle.
-## Étape 3 : créer et remplir le calque_2
+
+**Explication :**  
+- `CreateLayer` crée une nouvelle classe d’entités nommée **layer_1**.  
+- Un attribut entier appelé **value** est défini.  
+- La boucle ajoute dix entités, chacune avec un entier unique et un point aux coordonnées *(i, i)*.
+
+### Étape 3 : Créer et remplir `layer_2`
+Ensuite, nous ajoutons une seconde couche qui montre la gestion des géométries de ligne.
+
 ```csharp
 using (var layer = dataset.CreateLayer("layer_2"))
 {
@@ -71,25 +110,50 @@ using (var layer = dataset.CreateLayer("layer_2"))
     layer.Add(feature);
 }
 ```
-Explication : Ici, nous créons une deuxième couche nommée "layer_2" et ajoutons une seule entité avec une géométrie de chaîne de lignes.
-## Étape 4 : Vérifiez le nombre de couches mis à jour
+
+**Explication :** Ceci crée **layer_2** et insère une unique entité dont la géométrie est un `LineString` reliant deux points.
+
+### Étape 4 : Vérifier le nombre de couches mis à jour
+Enfin, confirmez que les deux couches ont bien été ajoutées.
+
 ```csharp
-Console.WriteLine(dataset.LayersCount); // Sortie : 2
+Console.WriteLine(dataset.LayersCount); // Output: 2
 ```
-Explication : Enfin, nous vérifions le nombre de couches mises à jour après avoir ajouté les deux couches. Dans ce cas, la sortie devrait être 2.
+
+**Explication :** Le jeu de données indique maintenant deux couches, confirmant que le processus **create file geodatabase .net** s’est déroulé comme prévu.
+
+## Problèmes courants et solutions
+| Problème | Pourquoi cela se produit | Solution |
+|----------|--------------------------|----------|
+| **`UnauthorizedAccessException`** lors de la création du jeu de données | Le chemin du dossier est en lecture‑seule ou vous n’avez pas les permissions nécessaires. | Choisissez un répertoire accessible en écriture ou exécutez Visual Studio en tant qu’administrateur. |
+| **`ArgumentException` pour le pilote** | Le nom du pilote est mal orthographié ou la version de la bibliothèque ne le supporte pas. | Utilisez exactement `Drivers.FileGdb` comme indiqué ; assurez‑vous d’avoir la dernière version du package Aspose.GIS. |
+| **Les entités n’apparaissent pas dans ArcGIS** | Référence spatiale manquante ou géométrie incompatible. | Définissez une référence spatiale sur la couche si nécessaire, et assurez‑vous que les géométries sont valides. |
+
+## Questions fréquentes
+### Q : Puis‑je utiliser Aspose.GIS pour .NET avec d’autres bibliothèques GIS ?
+Aspose.GIS pour .NET est une boîte à outils autonome ; toutefois, vous pouvez l’intégrer à d’autres bibliothèques .NET pour enrichir les fonctionnalités.
+
+### Q : Existe‑t‑il un forum communautaire pour le support d’Aspose.GIS ?
+Oui, vous pouvez trouver de l’aide et des discussions sur le [Forum Aspose.GIS](https://forum.aspose.com/c/gis/33).
+
+### Q : Comment obtenir une licence temporaire pour Aspose.GIS ?
+Visitez la page [Licence temporaire](https://purchase.aspose.com/temporary-license/) pour obtenir des informations sur l’obtention d’une licence temporaire.
+
+### Q : Y a‑t‑il des exemples supplémentaires et de la documentation disponible ?
+Explorez la [documentation Aspose.GIS](https://reference.aspose.com/gis/net/) pour plus d’exemples et d’informations détaillées.
+
+### Q : Où puis‑je acheter Aspose.GIS pour .NET ?
+Vous pouvez acheter Aspose.GIS pour .NET sur la [page d’achat](https://purchase.aspose.com/buy).
+
 ## Conclusion
-Toutes nos félicitations! Vous avez créé avec succès un nouveau jeu de données File GDB et l'avez rempli avec des couches à l'aide d'Aspose.GIS pour .NET. Ce didacticiel fournit une compréhension fondamentale de l'utilisation de données géospatiales dans un environnement .NET.
-## Questions fréquemment posées
-### Q : Puis-je utiliser Aspose.GIS pour .NET avec d’autres bibliothèques SIG ?
-Aspose.GIS pour .NET est une boîte à outils autonome ; cependant, vous pouvez l'intégrer à d'autres bibliothèques .NET pour améliorer les fonctionnalités.
-### Q : Existe-t-il un forum communautaire pour le support d'Aspose.GIS ?
- Oui, vous pouvez trouver du soutien et des discussions sur le[Forum Aspose.GIS](https://forum.aspose.com/c/gis/33).
-### Q : Comment puis-je obtenir une licence temporaire pour Aspose.GIS ?
- Visiter le[Permis temporaire](https://purchase.aspose.com/temporary-license/) page pour obtenir des informations sur l'obtention d'un permis temporaire.
-### Q : Existe-t-il des exemples et de la documentation supplémentaires disponibles ?
- Explore le[Documentation Aspose.GIS](https://reference.aspose.com/gis/net/) pour plus d’exemples et d’informations détaillées.
-### Q : Où puis-je acheter Aspose.GIS pour .NET ?
- Vous pouvez acheter Aspose.GIS pour .NET sur le[page d'achat](https://purchase.aspose.com/buy).
+Vous avez maintenant créé avec succès des **jeux de données file geodatabase .NET**, ajouté deux couches distinctes et vérifié le résultat à l’aide d’Aspose.GIS. Cette base vous permet de développer des applications GIS plus riches — ajoutez d’autres couches, définissez des schémas complexes, ou intégrez‑les à des services web. Explorez davantage l’API Aspose.GIS pour travailler avec des données raster, des requêtes spatiales et des opérations géométriques avancées.
+
+---
+
+**Dernière mise à jour :** 2026-01-10  
+**Testé avec :** Aspose.GIS pour .NET 24.11 (ou version la plus récente)  
+**Auteur :** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}

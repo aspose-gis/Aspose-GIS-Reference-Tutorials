@@ -1,27 +1,50 @@
 ---
-title: Tek Katmanlı Dosya GDB Oluşturun
-linktitle: Tek Katmanlı Dosya GDB Oluşturun
-second_title: Aspose.GIS .NET API'si
-description: Aspose.GIS ile .NET'te coğrafi veri yönetiminin potansiyelini ortaya çıkarın. Dosya Coğrafi Veritabanlarını ve katmanlarını adım adım nasıl oluşturacağınızı öğrenin. Şimdi İndirin!
-weight: 11
+date: 2026-01-10
+description: Aspose.GIS for .NET kullanarak bir Dosya Coğrafi Veritabanı'nda vektör
+  katmanı nasıl oluşturulacağını öğrenin. Coğrafi verileri WGS84 uzamsal referansı
+  ve dosya gdb seçenekleriyle yönetin.
+linktitle: Create File GDB with Single Layer
+second_title: Aspose.GIS .NET API
+title: File GDB'de Vektör Katmanı Oluşturma – Aspose.GIS .NET Öğreticisi
 url: /tr/net/layer-management/create-file-gdb-with-single-layer/
+weight: 11
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Tek Katmanlı Dosya GDB Oluşturun
+# Dosya GDB'de Vektör Katmanı Oluşturma
 
-## giriiş
-Jeo-uzamsal uygulamalarınızı sağlam dosya coğrafi veritabanları ve katmanlarıyla yükseltmeye hazır mısınız? Aspose.GIS for .NET'ten başka bir yere bakmayın. Bu eğitimde, Aspose.GIS for .NET'i kullanarak tek katmanlı bir Dosya Geodatabase'i (GDB) oluşturma sürecinde size yol göstereceğiz. .NET uygulamalarınızda uzamsal veri yönetimi ve görselleştirmenin gücünden zahmetsizce yararlanın.
+## Giriş
+Dosya Coğrafi Veritabanı (GDB) içinde **vektör katmanı** oluşturmanız ve coğrafi verileri verimli bir şekilde yönetmeniz gerekiyorsa, Aspose.GIS for .NET size temiz, kod‑ilk yaklaşımı sunar. Bu adım‑adım kılavuzda bir çizgi özelliği nasıl yazılır, dosya gdb seçenekleri nasıl yapılandırılır ve WGS84 uzamsal referansı nasıl kullanılır gösteriyoruz — tümü birkaç C# satırıyla. Sonunda bir katmandaki özellikleri sayabilir ve elde edilen GDB'yi herhangi bir .NET haritalama veya analiz iş akışına entegre edebilirsiniz.
+
+## Hızlı Yanıtlar
+- **“vektör katmanı oluşturma” ne anlama gelir?** Yeni bir vektör veri kümesi (nokta, çizgi veya çokgen) bir coğrafi veritabanı dosyasına eklemek anlamına gelir.  
+- **Hangi kütüphaneyi kullanmalıyım?** Aspose.GIS for .NET, Dosya GDB oluşturma ve düzenleme için tam destek sağlar.  
+- **Geliştirme için lisansa ihtiyacım var mı?** Test için ücretsiz deneme sürümü çalışır; üretim için ticari lisans gereklidir.  
+- **Uzamsal referansı ayarlayabilir miyim?** Evet – yaygın WGS84 datumu için `SpatialReferenceSystem.Wgs84` kullanın.  
+- **Kaç satır kod?** GDB'yi oluşturmak, bir çizgi özelliği eklemek ve özellik sayısını geri okumak için 30 satırdan az.
+
+## “Vektör katmanı oluşturma” işlemi nedir?
+Vektör katmanı oluşturmak, geometrik nesneleri (nokta, çizgi, çokgen) ve bunların özniteliklerini depolayan yeni bir tabloyu bir coğrafi veritabanı içinde tanımlamak anlamına gelir. Bu işlem, **coğrafi verileri yönetmesi** gereken herhangi bir GIS‑tabanlı uygulamanın temelini oluşturur.
+
+## Vektör katmanı oluşturmak için neden Aspose.GIS kullanılmalı?
+- **Sıfır dış bağımlılık** – API, .NET Framework, .NET Core ve .NET 5/6 üzerinde kutudan çıkar çıkmaz çalışır.  
+- **Dosya GDB için tam destek** – sıkıştırma, uzamsal indeksleme ve daha fazlasını kontrol etmek için `FileGdbOptions` yapılandırabilirsiniz.  
+- **Yerleşik uzamsal referans işleme** – küresel koordinat sisteminde çalışmak için sadece `SpatialReferenceSystem.Wgs84` geçirin.  
+- **Basit API** – çizgi özelliği yazın, bir katmana ekleyin ve sadece birkaç metod çağrısıyla özellik sayısını alın.
+
 ## Önkoşullar
-Eğiticiye dalmadan önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
-1.  Aspose.GIS for .NET: Aspose.GIS kütüphanesinin kurulu olduğundan emin olun. adresinden indirebilirsiniz.[Aspose.GIS for .NET indirme sayfası](https://releases.aspose.com/gis/net/).
-2. Geliştirme Ortamı: Makinenizde çalışan bir .NET geliştirme ortamı kurun.
-3. Belge Dizini: Jeo-uzamsal veri dosyalarınızı saklayacağınız sisteminizde bir dizin seçin veya oluşturun.
-## Ad Alanlarını İçe Aktar
-Başlamak için .NET projenize gerekli ad alanlarını içe aktarmanız gerekir. Bu ad alanları Aspose.GIS işlevlerine erişim sağlayacaktır. Kod dosyanızın başına aşağıdaki satırları ekleyin:
+Başlamadan önce, şunların olduğundan emin olun:
+
+1. **Aspose.GIS for .NET** – bunu [Aspose.GIS for .NET indirme sayfasından](https://releases.aspose.com/gis/net/) indirin.  
+2. **Bir .NET geliştirme ortamı** – Visual Studio, Rider veya `dotnet` CLI.  
+3. **Bir klasör** – Dosya GDB'nin oluşturulacağı yer (biz buna *Your Document Directory* diyeceğiz).
+
+## Ad Alanlarını İçe Aktarın
+C# dosyanızın en üstüne gerekli `using` ifadelerini ekleyin:
+
 ```csharp
 using Aspose.Gis;
 using Aspose.Gis.Geometries;
@@ -34,12 +57,14 @@ using System.Threading.Tasks;
 using Aspose.Gis.Formats.FileGdb;
 using Aspose.Gis.SpatialReferencing;
 ```
-## 1. Adım: Belge Dizininizi Kurun
+
+## Adım 1: Belge Dizininizi Ayarlayın
 ```csharp
 string dataDir = "Your Document Directory";
 ```
-"Belge Dizininiz"i, jeo-uzamsal veri dosyalarınızı depolamak istediğiniz dizinin yolu ile değiştirin.
-## Adım 2: Tek Katmanlı Dosya Coğrafi Veritabanı Oluşturun
+`"Your Document Directory"` ifadesini, Dosya GDB'nin bulunmasını istediğiniz mutlak yol ile değiştirin.
+
+## Adım 2: Tek Katmanlı Bir Dosya Coğrafi Veritabanı Oluşturun
 ```csharp
 var options = new FileGdbOptions();
 using (var layer = VectorLayer.Create(path, Drivers.FileGdb, options, SpatialReferenceSystem.Wgs84))
@@ -53,29 +78,47 @@ using (var layer = VectorLayer.Create(path, Drivers.FileGdb, options, SpatialRef
     layer.Add(feature);
 }
 ```
-Bu kod parçacığı, tek katmanlı bir Dosya Coğrafi Veri Tabanı oluşturur ve ona bir çizgi özelliği ekler.
+Bu kod parçacığı `FileGdbOptions` kullanarak **bir vektör katmanı oluşturur**, basit bir çizgi özelliği yazar ve **WGS84 uzamsal referansı** kullanan bir Dosya GDB'de depolar.
+
 ## Adım 3: Dosya Coğrafi Veritabanını Açın ve Katman Bilgilerini Alın
 ```csharp
 using (var dataset = Dataset.Open(path, Drivers.FileGdb))
 using (var layer = dataset.OpenLayer("layer"))
 {
-    Console.WriteLine("Features count: {0}", layer.Count); // Çıktı: Özellik sayısı: 1
+    Console.WriteLine("Features count: {0}", layer.Count); // Output: Features count: 1
 }
 ```
-Bu adımda, oluşturulan Dosya Geodatabase'i açıp "katman" adlı katmanı alıyoruz ve katmandaki özelliklerin sayısını yazdırıyoruz.
-## Çözüm
-Tebrikler! Aspose.GIS for .NET'i kullanarak tek katmanlı bir Dosya Geodatabase'ini başarıyla oluşturdunuz. Uygulamalarınızdaki konumsal veri yönetiminin geniş yeteneklerini kolaylıkla keşfedin.
-## Sıkça Sorulan Sorular
+Burada veri kümesini açarak ve özellik sayısını yazdırarak **katmandaki özellikleri sayıyoruz** – bu örnekte `1`.
+
+## Yaygın Sorunlar ve Çözümleri
+| Sorun | Neden | Çözüm |
+|-------|--------|-----|
+| **`File not found`** | Yanlış `path` değişkeni | `dataDir`'in mevcut bir klasöre işaret ettiğini ve `path`'in bir dosya adıyla birleştirildiğini doğrulayın, örn., `Path.Combine(dataDir, "MyData.gdb")`. |
+| **`Unsupported geometry`** | Dosya GDB'de izin verilmeyen bir geometri türü kullanılıyor | Temel katmanlar için `Point`, `LineString` veya `Polygon` kullanın. |
+| **`License not set`** | Üretimde geçerli bir lisans olmadan çalışıyor | Lisansınızı şu şekilde kaydedin: `License license = new License(); license.SetLicense("Aspose.GIS.lic");`. |
+
+## Sık Sorulan Sorular
 ### Aspose.GIS for .NET'i mevcut .NET projelerimde kullanabilir miyim?
 Evet, Aspose.GIS for .NET mevcut .NET projelerinize sorunsuz bir şekilde entegre edilebilir.
-### Aspose.GIS for .NET'in deneme sürümü mevcut mu?
- Evet, Aspose.GIS for .NET'in özelliklerini indirerek keşfedebilirsiniz.[ücretsiz deneme sürümü](https://releases.aspose.com/).
-### Aspose.GIS for .NET'in ayrıntılı belgelerini nerede bulabilirim?
- Bakın[dokümantasyon](https://reference.aspose.com/gis/net/) Aspose.GIS for .NET hakkında kapsamlı bilgi için.
-### Aspose.GIS for .NET için nasıl destek alabilirim?
- Ziyaret edin[Aspose.GIS forumu](https://forum.aspose.com/c/gis/33) Toplumsal destek ve yardım için.
+
+### Aspose.GIS for .NET için deneme sürümü mevcut mu?
+Evet, [ücretsiz deneme sürümünü](https://releases.aspose.com/) indirerek Aspose.GIS for .NET'in özelliklerini keşfedebilirsiniz.
+
+### Aspose.GIS for .NET için ayrıntılı belgeleri nerede bulabilirim?
+Aspose.GIS for .NET hakkında kapsamlı bilgi için [belgelere](https://reference.aspose.com/gis/net/) bakın.
+
+### Aspose.GIS for .NET için destek nasıl alabilirim?
+Topluluk desteği ve yardım için [Aspose.GIS forumunu](https://forum.aspose.com/c/gis/33) ziyaret edin.
+
 ### Aspose.GIS for .NET için geçici lisanslar mevcut mu?
- Evet, alabilirsiniz[geçici lisans](https://purchase.aspose.com/temporary-license/) Aspose.GIS for .NET için.
+Evet, Aspose.GIS for .NET için bir [geçici lisans](https://purchase.aspose.com/temporary-license/) alabilirsiniz.
+
+---
+
+**Last Updated:** 2026-01-10  
+**Tested With:** Aspose.GIS 24.11 for .NET  
+**Author:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}

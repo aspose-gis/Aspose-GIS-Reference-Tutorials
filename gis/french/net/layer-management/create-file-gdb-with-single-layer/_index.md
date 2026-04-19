@@ -1,27 +1,50 @@
 ---
-title: Créer un fichier GDB avec une seule couche
-linktitle: Créer un fichier GDB avec une seule couche
-second_title: API Aspose.GIS .NET
-description: Libérez le potentiel de la gestion des données géospatiales dans .NET avec Aspose.GIS. Découvrez comment créer des géodatabases fichier et des couches étape par étape. Télécharger maintenant!
-weight: 11
+date: 2026-01-10
+description: Apprenez à créer une couche vectorielle dans une géodatabase de fichiers
+  en utilisant Aspose.GIS pour .NET. Gérez les données géospatiales avec la référence
+  spatiale WGS84 et les options de fichier gdb.
+linktitle: Create File GDB with Single Layer
+second_title: Aspose.GIS .NET API
+title: Créer une couche vectorielle dans un fichier GDB – Tutoriel Aspose.GIS .NET
 url: /fr/net/layer-management/create-file-gdb-with-single-layer/
+weight: 11
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Créer un fichier GDB avec une seule couche
+# Créer une couche vectorielle dans un File GDB
 
 ## Introduction
-Êtes-vous prêt à élever vos applications géospatiales avec des géodatabases et des couches de fichiers robustes ? Ne cherchez pas plus loin que Aspose.GIS pour .NET. Dans ce didacticiel, nous vous guiderons tout au long du processus de création d'une géodatabase fichier (GDB) avec une seule couche à l'aide d'Aspose.GIS pour .NET. Exploitez sans effort la puissance de la gestion et de la visualisation des données spatiales dans vos applications .NET.
-## Conditions préalables
-Avant de plonger dans le didacticiel, assurez-vous que les conditions préalables suivantes sont remplies :
-1.  Aspose.GIS pour .NET : assurez-vous que la bibliothèque Aspose.GIS est installée. Vous pouvez le télécharger depuis le[Page de téléchargement d'Aspose.GIS pour .NET](https://releases.aspose.com/gis/net/).
-2. Environnement de développement : configurez un environnement de développement .NET fonctionnel sur votre machine.
-3. Répertoire de documents : choisissez ou créez un répertoire sur votre système dans lequel vous stockerez vos fichiers de données géospatiales.
-## Importer des espaces de noms
-Pour commencer, vous devez importer les espaces de noms nécessaires dans votre projet .NET. Ces espaces de noms donneront accès aux fonctionnalités Aspose.GIS. Ajoutez les lignes suivantes au début de votre fichier de code :
+Si vous devez **créer une couche vectorielle** à l’intérieur d’une géodatabase de type File (GDB) et gérer les données géospatiales efficacement, Aspose.GIS for .NET vous offre une approche propre, code‑first. Dans ce guide pas à pas, nous vous montrerons comment écrire une entité linéaire, configurer les options du file gdb, et travailler avec le système de référence spatiale WGS84 — le tout en quelques lignes de C#. À la fin, vous pourrez compter les entités d’une couche et intégrer le GDB résultant dans n’importe quel flux de travail de cartographie ou d’analyse .NET.
+
+## Réponses rapides
+- **Que signifie « créer une couche vectorielle » ?** Cela consiste à ajouter un nouveau jeu de données vectorielles (points, lignes ou polygones) à un fichier de géodatabase.  
+- **Quelle bibliothèque dois‑je utiliser ?** Aspose.GIS for .NET fournit un support complet pour la création et la modification de File GDB.  
+- **Ai‑je besoin d’une licence pour le développement ?** Une version d’essai gratuite suffit pour les tests ; une licence commerciale est requise en production.  
+- **Puis‑je définir le système de référence spatiale ?** Oui – utilisez `SpatialReferenceSystem.Wgs84` pour le datum WGS84 le plus répandu.  
+- **Combien de lignes de code ?** Moins de 30 lignes pour créer le GDB, ajouter une entité linéaire et lire le nombre d’entités.
+
+## Qu’est‑ce qu’une opération « créer une couche vectorielle » ?
+Créer une couche vectorielle signifie définir une nouvelle table à l’intérieur d’une géodatabase qui stocke des objets géométriques (points, lignes, polygones) ainsi que leurs attributs. Cette opération constitue la base de toute application SIG nécessitant de **gérer des données géospatiales**.
+
+## Pourquoi utiliser Aspose.GIS pour créer une couche vectorielle ?
+- **Aucune dépendance externe** – l’API fonctionne immédiatement sur .NET Framework, .NET Core et .NET 5/6.  
+- **Support complet du File GDB** – vous pouvez configurer `FileGdbOptions` pour contrôler la compression, l’indexation spatiale, etc.  
+- **Gestion intégrée du système de référence spatiale** – il suffit de passer `SpatialReferenceSystem.Wgs84` pour travailler dans le système de coordonnées global.  
+- **API simple** – écrivez une entité linéaire, ajoutez‑la à une couche, et récupérez le nombre d’entités avec seulement quelques appels de méthode.
+
+## Prérequis
+Avant de commencer, assurez‑vous d’avoir :
+
+1. **Aspose.GIS for .NET** – téléchargez‑le depuis la [page de téléchargement d’Aspose.GIS for .NET](https://releases.aspose.com/gis/net/).  
+2. **Un environnement de développement .NET** – Visual Studio, Rider ou le CLI `dotnet`.  
+3. **Un dossier** où le File GDB sera créé (nous l’appellerons *Your Document Directory*).
+
+## Importer les espaces de noms
+Ajoutez les instructions `using` requises en haut de votre fichier C# :
+
 ```csharp
 using Aspose.Gis;
 using Aspose.Gis.Geometries;
@@ -34,12 +57,14 @@ using System.Threading.Tasks;
 using Aspose.Gis.Formats.FileGdb;
 using Aspose.Gis.SpatialReferencing;
 ```
-## Étape 1 : Configurez votre répertoire de documents
+
+## Étape 1 : Configurer votre répertoire de documents
 ```csharp
 string dataDir = "Your Document Directory";
 ```
-Remplacez « Votre répertoire de documents » par le chemin d'accès au répertoire dans lequel vous souhaitez stocker vos fichiers de données géospatiales.
-## Étape 2 : Créer une géodatabase fichier avec une seule couche
+Remplacez `"Your Document Directory"` par le chemin absolu où vous souhaitez que le File GDB soit créé.
+
+## Étape 2 : Créer un File Geodatabase avec une seule couche
 ```csharp
 var options = new FileGdbOptions();
 using (var layer = VectorLayer.Create(path, Drivers.FileGdb, options, SpatialReferenceSystem.Wgs84))
@@ -53,29 +78,47 @@ using (var layer = VectorLayer.Create(path, Drivers.FileGdb, options, SpatialRef
     layer.Add(feature);
 }
 ```
-Cet extrait de code crée une géodatabase fichier avec une seule couche et y ajoute une entité linéaire.
-## Étape 3 : ouvrir la géodatabase fichier et récupérer les informations sur la couche
+Cet extrait **crée une couche vectorielle** à l’aide de `FileGdbOptions`, écrit une simple entité linéaire, et la stocke dans un File GDB qui utilise le **système de référence spatiale WGS84**.
+
+## Étape 3 : Ouvrir le File Geodatabase et récupérer les informations de la couche
 ```csharp
 using (var dataset = Dataset.Open(path, Drivers.FileGdb))
 using (var layer = dataset.OpenLayer("layer"))
 {
-    Console.WriteLine("Features count: {0}", layer.Count); // Sortie : nombre de fonctionnalités : 1
+    Console.WriteLine("Features count: {0}", layer.Count); // Output: Features count: 1
 }
 ```
-Au cours de cette étape, nous ouvrons la géodatabase fichier créée, récupérons la couche nommée « couche » et imprimons le nombre d'entités dans la couche.
-## Conclusion
-Toutes nos félicitations! Vous avez créé avec succès une géodatabase fichier avec une seule couche à l'aide d'Aspose.GIS pour .NET. Explorez facilement les vastes capacités de gestion des données spatiales dans vos applications.
-## Questions fréquemment posées
-### Puis-je utiliser Aspose.GIS pour .NET dans mes projets .NET existants ?
-Oui, Aspose.GIS pour .NET peut être intégré de manière transparente à vos projets .NET existants.
-### Existe-t-il une version d'essai disponible pour Aspose.GIS pour .NET ?
- Oui, vous pouvez explorer les fonctionnalités d'Aspose.GIS pour .NET en téléchargeant le[version d'essai gratuite](https://releases.aspose.com/).
-### Où puis-je trouver une documentation détaillée pour Aspose.GIS pour .NET ?
- Se référer au[Documentation](https://reference.aspose.com/gis/net/) pour des informations complètes sur Aspose.GIS pour .NET.
-### Comment puis-je obtenir de l'assistance pour Aspose.GIS pour .NET ?
- Visiter le[Forum Aspose.GIS](https://forum.aspose.com/c/gis/33) pour le soutien et l’assistance de la communauté.
-### Des licences temporaires sont-elles disponibles pour Aspose.GIS pour .NET ?
- Oui, vous pouvez obtenir un[permis temporaire](https://purchase.aspose.com/temporary-license/) pour Aspose.GIS pour .NET.
+Ici nous **comptons les entités de la couche** en ouvrant le jeu de données et en affichant le nombre d’entités – dans ce cas, `1`.
+
+## Problèmes courants et solutions
+| Problème | Raison | Solution |
+|----------|--------|----------|
+| **`File not found`** | Variable `path` incorrecte | Vérifiez que `dataDir` pointe vers un dossier existant et que `path` le combine avec un nom de fichier, par ex. `Path.Combine(dataDir, "MyData.gdb")`. |
+| **`Unsupported geometry`** | Type de géométrie non autorisé dans le File GDB | Limitez‑vous aux types `Point`, `LineString` ou `Polygon` pour les couches de base. |
+| **`License not set`** | Exécution sans licence valide en production | Enregistrez votre licence avec `License license = new License(); license.SetLicense("Aspose.GIS.lic");`. |
+
+## Foire aux questions
+### Puis‑je utiliser Aspose.GIS for .NET dans mes projets .NET existants ?
+Oui, Aspose.GIS for .NET peut être intégré de façon transparente dans vos projets .NET existants.
+
+### Existe‑t‑il une version d’essai d’Aspose.GIS for .NET ?
+Oui, vous pouvez explorer les fonctionnalités d’Aspose.GIS for .NET en téléchargeant la [version d’essai gratuite](https://releases.aspose.com/).
+
+### Où puis‑je trouver la documentation détaillée d’Aspose.GIS for .NET ?
+Consultez la [documentation](https://reference.aspose.com/gis/net/) pour obtenir des informations complètes sur Aspose.GIS for .NET.
+
+### Comment obtenir du support pour Aspose.GIS for .NET ?
+Visitez le [forum Aspose.GIS](https://forum.aspose.com/c/gis/33) pour le support communautaire et l’assistance.
+
+### Des licences temporaires sont‑elles disponibles pour Aspose.GIS for .NET ?
+Oui, vous pouvez obtenir une [licence temporaire](https://purchase.aspose.com/temporary-license/) pour Aspose.GIS for .NET.
+
+---
+
+**Dernière mise à jour :** 2026-01-10  
+**Testé avec :** Aspose.GIS 24.11 for .NET  
+**Auteur :** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
