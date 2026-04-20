@@ -1,8 +1,8 @@
 ---
-date: 2025-12-06
-description: Tanulja meg, hogyan hozhat létre LineString-et C#‑ban az Aspose.GIS for
-  .NET használatával, hogyan adhat pontokat egy LineString‑hez, és hogyan ellenőrizheti,
-  hogy egy geometria lefedi‑e a másikat.
+date: 2026-02-08
+description: Tanulja meg, hogyan hozhat létre Linestringet C#‑ban az Aspose.GIS for
+  .NET segítségével, hogyan adhat pontokat egy Linestringhez, és hogyan végezhet pont‑vonal
+  ellenőrzést a covers metódus használatával.
 linktitle: Create LineString C# – Check Geometry Covers Another
 second_title: Aspose.GIS .NET API
 title: LineString létrehozása C# – Ellenőrizze, hogy a geometria lefedi-e a másikat
@@ -16,44 +16,44 @@ weight: 15
 
 # Ellenőrizze, hogy a geometria lefedi-e a másikat
 
-## Bevezetés
-Az Aspose.GIS for .NET egy hatékony könyvtár, amely fejlesztőknek eszközöket biztosít a földrajzi adatok hatékony kezeléséhez .NET alkalmazásaikban. Akár térképező alkalmazást épít, térbeli adatokat elemez, vagy földrajzi funkciókat integrál a szoftverébe, az Aspose.GIS átfogó funkcionalitást kínál a fejlesztési folyamat felgyorsításához. Ebben az útmutatóban megtanulja, **hogyan hozhat létre LineString-et C#-ban**, hogyan adhat pontokat a vonalhoz, és hogyan végezhet **pont‑vonal ellenőrzést** a `Covers` és `CoveredBy` metódusok segítségével.
+## Introduction
+Ebben az oktatóanyagról megtanulja, **how to create linestring c#** használatával az Aspose.GIS for .NET, pontokat hozzáadni egy linestringhez, és megbízható **point on line check** végrehajtani a `Covers` és `CoveredBy` metódusokkal. Akár térképező eszközt épít, térbeli elemzéseket végez, vagy egyszerűen csak geometriai kapcsolatokat kell ellenőriznie, ezen műveletek elsajátítása a szükséges pontosságot biztosítja az alkalmazásának.
 
-## Gyors válaszok
-- **Mit jelent a “create LineString in C#”?** Ez azt jelenti, hogy egy `LineString` geometriai objektumot példányosít, és koordinátapontokkal tölti fel.  
-- **Melyik metódus ellenőrzi, hogy egy pont egy vonalon helyezkedik-e el?** Használja a `Covers` metódust a `LineString`-en vagy a `CoveredBy` metódust a `Point`-on.  
-- **Szükségem van licencre a minta futtatásához?** Egy ideiglenes licenc elegendő értékeléshez; a teljes licenc a termeléshez kötelező.  
-- **Használható ez .NET Core‑dal?** Igen, az Aspose.GIS támogatja a .NET Framework‑öt és a .NET Core‑t egyaránt.  
-- **Hány pontot adhatok hozzá egy LineString-hez?** Nincs szigorú korlát; annyi pontot hozzáadhat, amennyire a térbeli elemzéshez szüksége van.
+## Quick Answers
+- **What does “create linestring c#” mean?** Ez azt jelenti, hogy egy `LineString` geometriai objektumot példányosítunk, és koordináta pontokkal töltjük fel.
+- **Which method checks if a point lies on a line?** Használja a `Covers` metódust a `LineString`-en vagy a `CoveredBy`-t a `Point`-on.
+- **Do I need a license to run the sample?** Egy ideiglenes licenc elegendő értékeléshez; a teljes licenc szükséges a termeléshez.
+- **Can this be used with .NET Core?** Igen, az Aspose.GIS támogatja a .NET Framework-öt és a .NET Core-t.
+- **How many points can I add to a linestring?** Nincs szigorú korlát; annyi pontot adhat hozzá, amennyire a térbeli elemzéshez szüksége van.
 
-## Mi az a **create LineString C#**?
-A `LineString` egy geometriai alakzat, amely rendezett pontlistából áll, amelyet egyenes vonalrészek kapcsolnak össze. C#‑ban a `Aspose.Gis.Geometries` névtér `LineString` osztályának példányosításával hozhatja létre, majd a `AddPoint` metódussal **pontokat adhat a LineString-hez**.
+## What is **create linestring c#**?
+`LineString` egy geometriai alakzat, amely egy rendezett pontlistából áll, amelyet egyenes vonalszakaszok kötnek össze. C#-ban úgy hozhatja létre, hogy példányosítja a `LineString` osztályt az `Aspose.Gis.Geometries` névtérből, majd **add points to linestring** a `AddPoint` metódussal.
 
-## Miért használja az Aspose.GIS‑t pont‑vonal ellenőrzéshez?
-- **Pontosság** – Pontosan kezeli a lebegőpontos számításokat és a térbeli predikátumokat.  
-- **Keresztplatformos** – Működik .NET Framework, .NET Core és .NET 5/6+ környezetekkel.  
-- **Gazdag API** – Teljes körű térbeli kapcsolat metódusokat biztosít (`Covers`, `CoveredBy`, `Intersects`, stb.).
+## Why use Aspose.GIS for a point on line check?
+- **Precision** – Pontosan kezeli a lebegőpontos számításokat és a térbeli predikátumokat, így **precision point on line** eredményt biztosít.
+- **Cross‑platform** – Működik a .NET Framework, .NET Core és a .NET 5/6+ környezetekkel.
+- **Rich API** – Teljes sorozatot kínál a térbeli kapcsolat metódusokból (`Covers`, `CoveredBy`, `Intersects`, stb.).
 
-## Előkövetelmények
-Mielőtt elkezdené használni az Aspose.GIS for .NET‑et, győződjön meg arról, hogy az alábbi előkövetelmények teljesülnek:
+## Prerequisites
+Mielőtt elkezdené használni az Aspose.GIS for .NET-et, győződjön meg róla, hogy a következő előfeltételek telepítve vannak:
 
-### 1. Visual Studio telepítése
-Győződjön meg róla, hogy a rendszerén telepítve van a Visual Studio. Az Aspose.GIS for .NET zökkenőmentesen integrálódik a Visual Studio‑val, így gördülékeny fejlesztési élményt biztosít.
+### 1. Install Visual Studio
+Győződjön meg róla, hogy a rendszerén telepítve van a Visual Studio. Az Aspose.GIS for .NET zökkenőmentesen integrálódik a Visual Studio-val, így sima fejlesztési élményt nyújt.
 
-### 2. Aspose.GIS for .NET beszerzése
-Töltse le az Aspose.GIS for .NET könyvtárat a [weboldalról](https://releases.aspose.com/gis/net/). A könyvtárat letöltheti közvetlenül, vagy használhatja a NuGet csomagkezelőt a projektbe való telepítéshez.
+### 2. Obtain Aspose.GIS for .NET
+Töltse le az Aspose.GIS for .NET könyvtárat a [weboldalról](https://releases.aspose.com/gis/net/). Letöltheti közvetlenül, vagy használhat egy csomagkezelőt, például a NuGet-et, hogy telepítse a projektjébe.
 
-### 3. .NET Framework ismerete
-Alapvető ismeretek a .NET keretrendszerről és a C# programozási nyelvről szükségesek az Aspose.GIS for .NET hatékony használatához.
+### 3. Familiarity with .NET Framework
+Alapvető ismeretek a .NET keretrendszerről és a C# programozási nyelvről elengedhetetlenek az Aspose.GIS for .NET hatékony használatához.
 
-### 4. Dokumentáció és támogatás elérése
-Tekintse meg a [dokumentációt](https://reference.aspose.com/gis/net/) a részletes információkért az Aspose.GIS API‑król és funkciókról. Ha problémába ütközik vagy kérdése van, használja az [Aspose.GIS fórumot](https://forum.aspose.com/c/gis/33) segítségkérésre.
+### 4. Access to Documentation and Support
+Tekintse meg a [dokumentációt](https://reference.aspose.com/gis/net/) az Aspose.GIS API-k és funkciók részletes információiért. Ha problémába ütközik vagy kérdése van, használja az [Aspose.GIS fórumot](https://forum.aspose.com/c/gis/33) segítségként.
 
-### 5. Opcionális: Ideiglenes licenc
-Ha az Aspose.GIS for .NET‑et szeretné kipróbálni, ideiglenes licencet szerezhet [innen](https://purchase.aspose.com/temporary-license/) a könyvtár funkcióinak értékeléséhez.
+### 5. Optional: Temporary License
+Ha az Aspose.GIS for .NET-et vizsgálja, ideiglenes licencet szerezhet [innen](https://purchase.aspose.com/temporary-license/), hogy értékelje a könyvtár funkcióit.
 
-## Névterek importálása
-Mielőtt az Aspose.GIS for .NET-et a projektjében használja, importálni kell a szükséges névtereket:
+## Import Namespaces
+Mielőtt az Aspose.GIS for .NET-et a projektjében használná, importálnia kell a szükséges névtereket:
 
 ```csharp
 using Aspose.Gis.Geometries;
@@ -64,67 +64,68 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-Most bontsuk le a példát több lépésre, hogy megértsük, **hogyan ellenőrizhető, hogy egy geometria lefedi-e a másikat** az Aspose.GIS for .NET segítségével.
+Most bontsuk le a megadott példát több lépésre, hogy megértsük, hogyan **check if one geometry covers another** használatával az Aspose.GIS for .NET.
 
-## Hogyan **hozzunk létre LineString-et C#‑ban** – Lépésről‑lépésre útmutató
+## How to create linestring c# – Step‑by‑Step Guide
+## Hogyan hozhatunk létre linestring c# – Lépésről‑lépésre útmutató
 
-### 1. lépés: LineString objektum létrehozása
+### Step 1: Create a LineString Object
 ```csharp
 var line = new LineString();
 ```
-Itt egy új `LineString` objektumot példányosítunk, amely egy kétdimenziós térben összekapcsolt vonalrészek sorozatát képviseli.
+Itt egy új `LineString` objektumot példányosítunk, amely egy két‑dimenziós térben összekapcsolt vonalszakaszok sorozatát képviseli.
 
-### 2. lépés: **Pontok hozzáadása a LineString-hez**
+### Step 2: **Add Points to LineString**
 ```csharp
 line.AddPoint(0, 0);
 line.AddPoint(1, 1);
 ```
-A `AddPoint` metódussal **pontokat adunk a LineString-hez**. Ebben a példában két pontot adunk hozzá: (0, 0) és (1, 1), így egy egyszerű átlós vonalrészt hozunk létre.
+A `AddPoint` metódussal **add points to linestring**. Ebben a példában két pontot adunk hozzá: (0, 0) és (1, 1), így egy egyszerű átlós vonalszakaszt hozunk létre.
 
-### 3. lépés: Point objektum létrehozása
+### Step 3: Create a Point Object
 ```csharp
 var point = new Point(0, 0);
 ```
-Egy `Point` objektumot példányosítunk, amely egyetlen pontot képvisel egy kétdimenziós térben. Itt egy (0, 0) koordinátájú pontot hozunk létre.
+Példányosítunk egy `Point` objektumot, amely egyetlen pontot képvisel egy két‑dimenziós térben. Itt egy (0, 0) koordinátájú pontot hozunk létre.
 
-### 4. lépés: **Pont‑vonal ellenőrzés** – Lefedi-e a vonal a pontot?
+### Step 4: Perform a **point on line check** – Does the line cover the point?
 ```csharp
 Console.WriteLine(line.Covers(point));    // True
 ```
-A `Covers` metódussal ellenőrizzük, hogy a vonal lefedi‑e a pontot. Ebben az esetben `True` értéket ad vissza, mivel a (0, 0) pont pontosan a vonalon helyezkedik el.
+Használja a `Covers` metódust annak ellenőrzésére, hogy a vonal lefedi‑e a pontot. Ebben az esetben `True` értéket ad vissza, mivel a (0, 0) pont pontosan a vonalon helyezkedik el.
 
-### 5. lépés: Fordított kapcsolat ellenőrzése – A pontot lefedi‑e a vonal?
+### Step 5: Verify the reverse relationship – Is the point covered by the line?
 ```csharp
 Console.WriteLine(point.CoveredBy(line)); // True
 ```
-Hasonlóan a `CoveredBy` metódust használjuk annak ellenőrzésére, hogy a pontot lefedi‑e a vonal. Mivel a (0, 0) pont a vonalon van, ez is `True` értéket ad vissza.
+Hasonlóan, használja a `CoveredBy` metódust annak ellenőrzésére, hogy a pontot a vonal lefedi‑e. Mivel a (0, 0) pont a vonalon van, ez is `True` értéket ad vissza.
 
-## Gyakori problémák és megoldások
+## Common Issues and Solutions
 | Probléma | Miért fordul elő | Megoldás |
-|----------|------------------|----------|
-| `line.Covers(point)` `False` értéket ad, pedig a pont a vonalon van | A pont koordinátái nem pontosan egyeznek a lebegőpontos pontosság miatt | Használjon `Math.Round`-ot a koordinátákon, vagy végezzen tolerancián alapuló ellenőrzést `line.Distance(point) < epsilon` feltétellel. |
-| Hiányzik a `using Aspose.Gis.Geometries;` | A névtér nincs importálva, ami fordítási hibákat okoz | Győződjön meg róla, hogy az importálási utasítás jelen van (lásd a **Névterek importálása** részt). |
-| Licenckivétel futásidőben | Nincs érvényes licenc betöltve a termeléshez | Töltsön be egy ideiglenes vagy teljes licencet a `License license = new License(); license.SetLicense("Aspose.GIS.lic");` kóddal. |
+|----------|-------------------|----------|
+| `line.Covers(point)` `False` értéket ad vissza, bár a pont a vonalon látszik | A pont koordinátái nem pontosan egyeznek a lebegőpontos pontosság miatt. | Használja a `Math.Round`-ot a koordinátákon, vagy alkalmazzon tolerancia‑alapú ellenőrzést a `line.Distance(point) < epsilon` feltétellel. |
+| Hiányzó `using Aspose.Gis.Geometries;` | A névtér nincs importálva, ami fordítási hibákat okoz. | Győződjön meg róla, hogy az importálási utasítás jelen van (lásd a **Import Namespaces** szekciót). |
+| Licenckivétel futásidőben | Nincs érvényes licenc betöltve a termeléshez. | Töltsön be egy ideiglenes vagy teljes licencet a `License license = new License(); license.SetLicense("Aspose.GIS.lic");` használatával. |
 
-## Gyakran feltett kérdések
+## Frequently Asked Questions
 
-**K: Használhatom az Aspose.GIS for .NET-et kereskedelmi projektekben?**  
-V: Igen, az Aspose.GIS for .NET-et mind kereskedelmi, mind nem kereskedelmi projektekben használhatja a megfelelő licenc megszerzése után.
+**Q: Használhatom az Aspose.GIS for .NET-et kereskedelmi projektjeimben?**  
+A: Igen, az Aspose.GIS for .NET-et mind kereskedelmi, mind nem‑kereskedelmi projektekben használhatja a megfelelő licenc megszerzése után.
 
-**K: Az Aspose.GIS for .NET kompatibilis a .NET Core‑dal?**  
-V: Igen, az Aspose.GIS for .NET kompatibilis mind a .NET Framework, mind a .NET Core környezetekkel.
+**Q: Kompatibilis az Aspose.GIS for .NET a .NET Core‑ral?**  
+A: Igen, az Aspose.GIS for .NET kompatibilis mind a .NET Framework, mind a .NET Core környezetekkel.
 
-**K: Támogatja az Aspose.GIS for .NET különböző GIS formátumokat?**  
-V: Igen, az Aspose.GIS for .NET számos GIS formátumot támogat, többek között a Shapefile, GeoJSON, KML és még sok más.
+**Q: Támogatja az Aspose.GIS for .NET a különböző GIS formátumokat?**  
+A: Igen, az Aspose.GIS for .NET számos GIS formátumot támogat, beleértve a Shapefile, GeoJSON, KML és egyebeket.
 
-**K: Hozzájárulhatok az Aspose.GIS for .NET fejlesztéséhez?**  
-V: Az Aspose.GIS for .NET egy zárt forrású könyvtár, amelyet az Aspose fejleszt, így külső hozzájárulások nem lehetségesek. Azonban visszajelzésekkel és javaslatokkal segítheti a termék javítását.
+**Q: Hozzájárulhatok az Aspose.GIS for .NET fejlesztéséhez?**  
+A: Az Aspose.GIS for .NET egy zárt forráskódú könyvtár, amelyet az Aspose fejleszt, így külső hozzájárulások nem elfogadottak. Azonban visszajelzést és javaslatokat adhat a könyvtár fejlesztéséhez.
 
-**K: Milyen gyakran jelennek meg frissítések az Aspose.GIS for .NET-hez?**  
-V: Az Aspose.GIS for .NET rendszeresen kap frissítéseket, amelyek új funkciókat, fejlesztéseket és hibajavításokat tartalmaznak. A legújabb kiadásokért tekintse meg a [weboldalt](https://releases.aspose.com/gis/net/).
+**Q: Milyen gyakran jelennek meg frissítések az Aspose.GIS for .NET-hez?**  
+A: Az Aspose.GIS for .NET frissítései rendszeresen megjelennek, új funkciók, fejlesztések és hibajavítások bevezetésével. Tekintse meg a [weboldalt](https://releases.aspose.com/gis/net/) a legújabb kiadásokért.
 
-## Összegzés
-Összefoglalva, az Aspose.GIS for .NET erőteljes eszközöket biztosít a földrajzi adatok .NET alkalmazásokban történő kezeléséhez. A fenti lépések követésével hatékonyan **hozhat létre LineString-et C#‑ban**, **pontokat adhat a LineString-hez**, és végrehajthat egy **pont‑vonal ellenőrzést**, hogy meghatározza, egy geometria lefedi‑e a másikat. Ez a képesség bővíti szoftvere térbeli elemzési funkcióit, és lehetővé teszi fejlettebb GIS műveletek alkalmazását.
+## Conclusion
+A fenti lépések követésével most már tudja, hogyan **create linestring c#**, **add points to linestring**, és megbízható **point on line check** végez a `Covers` és `CoveredBy` metódusokkal. Ez a képesség bővíti a szoftvere térbeli elemzési funkcióit, és lehetővé teszi a fejlettebb GIS műveletek használatát.
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
@@ -135,6 +136,6 @@ V: Az Aspose.GIS for .NET rendszeresen kap frissítéseket, amelyek új funkció
 
 ---
 
-**Utolsó frissítés:** 2025-12-06  
-**Tesztelve:** Aspose.GIS for .NET (legújabb kiadás)  
-**Szerző:** Aspose
+**Last Updated:** 2026-02-08  
+**Tested With:** Aspose.GIS for .NET (latest release)  
+**Author:** Aspose
