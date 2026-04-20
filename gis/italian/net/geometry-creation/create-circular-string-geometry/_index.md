@@ -1,7 +1,8 @@
 ---
-date: 2025-12-12
-description: Scopri come creare un livello vettoriale e aggiungere geometria a stringa
-  circolare usando Aspose.GIS per .NET – un modo rapido per creare applicazioni GIS.
+date: 2026-02-15
+description: Scopri come creare un layer vettoriale e aggiungere geometria a stringa
+  circolare usando Aspose.GIS per .NET – un modo rapido per sviluppare applicazioni
+  GIS.
 linktitle: Create Circular String Geometry
 second_title: Aspose.GIS .NET API
 title: Crea livello vettoriale e stringa circolare in Aspose.GIS per .NET
@@ -16,29 +17,29 @@ weight: 20
 # Crea un layer vettoriale e una geometria Circular String con Aspose.GIS per .NET
 
 ## Introduzione
-Se stai creando un'applicazione GIS sulla piattaforma .NET, il primo passo è spesso **to create vector layer** oggetti che memorizzano le tue feature spaziali. Aspose.GIS per .NET rende questo processo semplice e ti consente di arricchire quei layer con geometrie avanzate come le circular strings. In questo tutorial imparerai esattamente come creare un vector layer, aggiungere una geometria circular string e salvare il risultato come Shapefile—tutto con codice C# pulito e pronto per la produzione.
+Se stai sviluppando un'applicazione GIS sulla piattaforma .NET, il primo passo è spesso **creare layer vettoriali** che memorizzano le tue feature spaziali. Aspose.GIS per .NET rende questo processo semplice e ti consente di arricchire quei layer con geometrie avanzate come le circular string. In questo tutorial imparerai esattamente come **creare un layer vettoriale**, **aggiungere una circular string** geometria, e salvare il risultato come Shapefile—tutto con codice C# pulito e pronto per la produzione.
 
 ## Risposte rapide
-- **What does “create vector layer” mean?** Crea un nuovo contenitore (layer) che può contenere feature spaziali come punti, linee o poligoni.  
-- **Which class represents a circular string?** La classe `CircularString` di `Aspose.Gis.Geometries`.  
-- **Can I save the layer as a Shapefile?** Sì – usa `Drivers.Shapefile` quando crei il layer.  
-- **Do I need a license for development?** Una licenza temporanea è sufficiente per la valutazione; è necessaria una licenza completa per la produzione.  
-- **What .NET versions are supported?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
+- **Cosa significa “create vector layer”?** Crea un nuovo contenitore (layer) che può contenere feature spaziali come punti, linee o poligoni.  
+- **Quale classe rappresenta una circular string?** `CircularString` da `Aspose.Gis.Geometries`.  
+- **Posso salvare il layer come Shapefile?** Sì – usa `Drivers.Shapefile` quando crei il layer.  
+- **Ho bisogno di una licenza per lo sviluppo?** Una licenza temporanea è sufficiente per la valutazione; è necessaria una licenza completa per la produzione.  
+- **Quali versioni di .NET sono supportate?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
 
-## Che cos'è “create vector layer”?
-Un layer vettoriale è un raggruppamento logico di feature vettoriali (punti, linee, poligoni) memorizzate in una singola fonte dati. In Aspose.GIS istanzi un layer chiamando `VectorLayer.Create`, passando il percorso del file di destinazione e il driver desiderato (ad esempio, Shapefile). Una volta che il layer esiste, puoi aggiungere feature, assegnare geometrie ed eseguire operazioni spaziali.
+## Cos'è “create vector layer”?
+Un layer vettoriale è un raggruppamento logico di feature vettoriali (punti, linee, poligoni) memorizzate in una singola fonte dati. In Aspose.GIS istanzi un layer chiamando `VectorLayer.Create`, passando il percorso del file di destinazione e il driver desiderato (ad esempio, Shapefile). Una volta che il layer esiste, puoi aggiungere feature, assegnare geometrie e eseguire operazioni spaziali.
 
 ## Perché aggiungere una circular string?
-Le circular strings sono un tipo di **geometria lineare** che approssima archi usando una sequenza di punti. Sono utili per rappresentare strade curve, curve di fiumi o qualsiasi feature in cui è necessaria una curva fluida senza ricorrere a molti piccoli segmenti di linea.
+Le circular string sono un tipo di **geometria lineare** che approssima archi usando una sequenza di punti. Sono utili per rappresentare strade curve, curve di fiumi o qualsiasi feature dove è necessaria una curva liscia senza ricorrere a molti piccoli segmenti di linea.
 
 ## Prerequisiti
 - **.NET Framework o .NET Core** installati sulla tua macchina.  
-- Libreria **Aspose.GIS for .NET** – scaricala dal sito ufficiale **[here](https://releases.aspose.com/gis/net/)**.  
+- **Libreria Aspose.GIS per .NET** – scaricala dal sito ufficiale **[qui](https://releases.aspose.com/gis/net/)**.  
 - Un IDE come **Visual Studio** o **JetBrains Rider**.  
 - Familiarità di base con la programmazione **C#**.
 
 ## Importa gli spazi dei nomi
-Add the required namespaces to your C# file:
+Aggiungi gli spazi dei nomi richiesti al tuo file C#:
 
 ```csharp
 using Aspose.Gis;
@@ -61,8 +62,8 @@ string path = "Your Document Directory" + "CreateCircularString_out.shp";
 
 Sostituisci `"Your Document Directory"` con il percorso reale della cartella sul tuo sistema.
 
-### Passo 2: **Create vector layer**
-Apri un `VectorLayer` usando il metodo `Create`. Questo è il nucleo dell'operazione **create vector layer**.
+### Passo 2: **Crea un layer vettoriale**
+Apri un `VectorLayer` usando il metodo `Create`. Questo è il fulcro dell'operazione **create vector layer**.
 
 ```csharp
 using (VectorLayer layer = VectorLayer.Create(path, Drivers.Shapefile))
@@ -97,14 +98,14 @@ Collega la geometria alla feature e memorizzala nel layer.
 }
 ```
 
-Quando il blocco `using` termina, il layer viene automaticamente scritto nello Shapefile su disco.
+Quando il blocco `using` termina, il layer viene automaticamente scritto sullo Shapefile su disco.
 
 ## Problemi comuni e soluzioni
 | Problema | Soluzione |
 |----------|-----------|
-| **File path invalid** | Assicurati che la directory esista e che tu abbia i permessi di scrittura. |
-| **CircularString appears as a straight line** | Verifica che i punti siano aggiunti nell'ordine corretto; il primo e l'ultimo punto dovrebbero essere identici per una forma chiusa. |
-| **License exception** | Applica una licenza temporanea durante lo sviluppo o acquista una licenza completa per l'uso in produzione. |
+| **Percorso file non valido** | Assicurati che la directory esista e che tu abbia i permessi di scrittura. |
+| **CircularString appare come una linea retta** | Verifica che i punti siano aggiunti nell'ordine corretto; il primo e l'ultimo punto dovrebbero essere identici per una forma chiusa. |
+| **Eccezione di licenza** | Applica una licenza temporanea durante lo sviluppo o acquista una licenza completa per l'uso in produzione. |
 
 ## Domande frequenti
 
@@ -115,23 +116,40 @@ Sì, Aspose.GIS per .NET è progettato per funzionare con un'ampia gamma di vers
 Assolutamente! Puoi leggere dati con altre librerie, manipolarli con Aspose.GIS e poi riscriverli, grazie alla sua API flessibile.
 
 ### Aspose.GIS per .NET supporta la visualizzazione di dati spaziali?
-Sì, la libreria include utilità di rendering che ti permettono di generare mappe e rappresentazioni visive delle tue geometrie.
+Sì, la libreria include utility di rendering che ti permettono di generare mappe e rappresentazioni visive delle tue geometrie.
 
 ### Esiste un forum della community dove posso chiedere assistenza su Aspose.GIS per .NET?
-Sì, puoi visitare il forum Aspose.GIS **[here](https://forum.aspose.com/c/gis/33)** per fare domande e condividere esperienze.
+Sì, puoi visitare il forum Aspose.GIS **[qui](https://forum.aspose.com/c/gis/33)** per fare domande e condividere esperienze.
 
 ### Posso ottenere una licenza temporanea per valutare Aspose.GIS per .NET?
-Certamente! Una licenza temporanea di valutazione è disponibile **[here](https://purchase.aspose.com/temporary-license/)**.
+Certamente! Una licenza di valutazione temporanea è disponibile **[qui](https://purchase.aspose.com/temporary-license/)**.
 
-### Come aggiungo geometrie più complesse (ad esempio, MultiLineString) allo stesso layer?
-Crea l'oggetto geometria appropriato (ad esempio, `MultiLineString`), popolalo con oggetti `LineString` individuali, assegnalo a `feature.Geometry` e aggiungi la feature come abbiamo fatto con la circular string.
+### Come aggiungo geometrie più complesse (ad es., MultiLineString) allo stesso layer?
+Crea l'oggetto geometria appropriato (ad es., `MultiLineString`), popolalo con oggetti `LineString` individuali, assegnalo a `feature.Geometry` e aggiungi la feature come abbiamo fatto con la circular string.
+
+## FAQ (Riferimento rapido)
+
+**D:** Come **creo un layer vettoriale** programmaticamente?  
+**R:** Chiama `VectorLayer.Create(path, Drivers.Shapefile)` (o un altro driver) all'interno di un blocco `using`.
+
+**D:** Quale metodo aggiunge punti a una circular string?  
+**R:** Usa `circularString.AddPoint(x, y)` per ogni coordinata.
+
+**D:** Posso memorizzare più geometrie nello stesso layer?  
+**R:** Sì, costruisci una nuova feature per ogni geometria e aggiungila con `layer.Add(feature)`.
+
+**D:** Cosa devo fare se lo Shapefile non viene creato?  
+**R:** Verifica che la directory di output esista, che tu abbia i permessi di scrittura e che il driver (`Drivers.Shapefile`) sia correttamente referenziato.
+
+**D:** È necessaria una licenza per la build di valutazione?  
+**R:** Una licenza temporanea è sufficiente per sviluppo e test; una licenza completa è necessaria per le distribuzioni in produzione.
 
 ## Conclusione
-Seguendo questi passaggi ora sai come **create vector layer** oggetti e arricchirli con una geometria circular string usando Aspose.GIS per .NET. Questa base ti consente di costruire soluzioni GIS più avanzate—che tu stia mappando reti di trasporto, visualizzando dati ambientali o sviluppando strumenti di analisi spaziale personalizzati.
+Seguendo questi passaggi ora sai come **creare layer vettoriali** e arricchirli con una geometria **circular string** usando Aspose.GIS per .NET. Questa base ti consente di costruire soluzioni GIS più avanzate—che tu stia mappando reti di trasporto, visualizzando dati ambientali o sviluppando strumenti di analisi spaziale personalizzati.
 
 ---
 
-**Ultimo aggiornamento:** 2025-12-12  
+**Ultimo aggiornamento:** 2026-02-15  
 **Testato con:** Aspose.GIS 24.11 per .NET  
 **Autore:** Aspose  
 

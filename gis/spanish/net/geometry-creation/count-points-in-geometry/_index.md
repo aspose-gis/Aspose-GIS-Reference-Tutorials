@@ -1,10 +1,10 @@
 ---
-date: 2025-12-11
-description: Aprenda cómo contar puntos en geometría usando Aspose.GIS para .NET y
-  cómo agregar puntos a un LineString. Tutoriales completos disponibles.
+date: 2026-02-15
+description: Aprende a contar vértices en geometría usando Aspose.GIS para .NET, agrega
+  puntos a un LineString y cuenta la geometría de puntos de manera eficiente.
 linktitle: Count Points in Geometry
 second_title: Aspose.GIS .NET API
-title: Cómo contar puntos en geometría con Aspose.GIS para .NET
+title: Cómo contar vértices en geometría con Aspose.GIS para .NET
 url: /es/net/geometry-creation/count-points-in-geometry/
 weight: 24
 ---
@@ -13,17 +13,22 @@ weight: 24
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Cómo contar puntos en una geometría con Aspose.GIS para .NET
+# Cómo contar vértices en geometría con Aspose.GIS para .NET
 
-## Cómo contar puntos en una geometría
-En el ámbito del desarrollo de Sistemas de Información Geográfica (GIS), **cómo contar puntos** en una geometría es una tarea frecuente. Aspose.GIS para .NET hace que esta operación sea sencilla, permitiéndote centrarte en la lógica de negocio en lugar de en el manejo de geometrías a bajo nivel. En este tutorial recorreremos la creación de un `LineString`, **agregar puntos a un LineString**, y obtener el recuento de puntos, todo en solo unas pocas líneas de C#.
+Contar vértices es una operación rutinaria cuando trabajas con datos espaciales. En este tutorial descubrirás **cómo contar vértices** en un objeto de geometría, verás una forma práctica de **añadir puntos a una línea**, y aprenderás cómo la API Aspose.GIS .NET hace que todo el proceso sea sencillo. Ya sea que estés validando la calidad de los datos o preparando la geometría para un análisis posterior, dominar este patrón acelerará tu desarrollo GIS.
 
 ## Respuestas rápidas
-- **¿Qué significa “contar puntos”?** Devuelve el número de vértices almacenados en un objeto de geometría.  
-- **¿Qué clase se utiliza?** `LineString` de `Aspose.Gis.Geometries`.  
-- **¿Cuántos puntos puedo agregar?** Ilimitado, limitado solo por la memoria.  
+- **¿Qué significa “contar vértices”?** Devuelve el número de puntos (vértices) almacenados en un objeto de geometría.  
+- **¿Qué clase se usa?** `LineString` de `Aspose.Gis.Geometries`.  
+- **¿Cuántos puntos puedo añadir?** Ilimitados, limitados solo por la memoria.  
 - **¿Necesito una licencia para esta función?** Una licencia temporal funciona para evaluación; se requiere una licencia completa para producción.  
 - **¿Versiones de .NET compatibles?** .NET Framework, .NET Core, .NET 5/6 y posteriores.
+
+## ¿Qué es “contar vértices” en GIS?
+Contar vértices simplemente significa obtener el número total de pares de coordenadas que definen una geometría. Para un `LineString`, cada vértice representa un punto donde se encuentran dos segmentos de línea.
+
+## ¿Por qué usar Aspose.GIS para contar vértices?
+Aspose.GIS ofrece una API limpia y orientada a objetos que abstrae el manejo de geometría de bajo nivel. Puedes centrarte en la lógica de negocio —como la validación de datos o el cálculo de longitud— sin preocuparte por las matemáticas subyacentes.
 
 ## Requisitos previos
 Antes de sumergirte en el código, asegúrate de tener lo siguiente:
@@ -53,16 +58,16 @@ Un `LineString` representa una serie de segmentos de línea conectados. Instánc
 LineString line = new LineString();
 ```
 
-### Paso 2: **Agregar puntos** al `LineString`
-Aquí **agregamos puntos a un LineString** usando pares latitud‑longitud. Cada llamada agrega un nuevo vértice a la geometría:
+### Cómo añadir puntos a un LineString
+Añadir puntos es la forma de **añadir puntos a una línea** en geometrías. Cada llamada agrega un nuevo vértice al `LineString`.
 
 ```csharp
 line.AddPoint(78.65, -32.65);
 line.AddPoint(-98.65, 12.65);
 ```
 
-### Paso 3: Contar los puntos
-La propiedad `Count` te brinda el número total de puntos (vértices) almacenados en el `LineString`:
+### Paso 3: Contar los puntos (Contar vértices)
+La propiedad `Count` te brinda el número total de puntos (vértices) almacenados en el `LineString`. Esto es el núcleo de **contar puntos geometría**.
 
 ```csharp
 int pointsCount = line.Count;
@@ -76,33 +81,37 @@ Console.WriteLine(pointsCount);  // 2
 ```
 
 ## Por qué es importante
-Contar puntos es esencial cuando necesitas validar la complejidad de la geometría, calcular longitudes o aplicar reglas de calidad de datos. Al dominar este patrón simple, puedes extender la lógica a polígonos, multipuntos y flujos de trabajo GIS más complejos.
+Contar vértices es esencial cuando necesitas validar la complejidad de la geometría, calcular longitudes o aplicar reglas de calidad de datos. Al dominar este patrón simple, puedes extender la lógica a polígonos, multipuntos y flujos de trabajo GIS más complejos.
 
 ## Problemas comunes y consejos
 - **Referencia nula:** Asegúrate de que la instancia de `LineString` esté creada antes de llamar a `AddPoint`.  
-- **Orden de coordenadas:** Aspose.GIS espera `(longitude, latitude)`. Intercambiarlas puede generar geometrías inexactas.  
-- **Rendimiento:** Agregar una gran cantidad de puntos en un bucle está bien, pero considera operaciones por lotes para conjuntos de datos masivos.
+- **Orden de coordenadas:** Aspose.GIS espera `(longitude, latitude)`. Intercambiarlas puede producir geometrías inexactas.  
+- **Rendimiento:** Añadir una gran cantidad de puntos en un bucle está bien, pero considera operaciones por lotes para conjuntos de datos masivos.  
+- **Añadir puntos al linestring:** Cuando necesites agregar muchos vértices, crea primero una `List<Point>` y luego llama a `line.AddPoints(list)` (disponible en versiones más recientes) para un mejor rendimiento.
 
 ## Conclusión
-Ahora sabes **cómo contar puntos** en una geometría y cómo **agregar puntos a un LineString** usando Aspose.GIS para .NET. Esta habilidad fundamental abre la puerta a análisis espacial más rico, validación de datos y soluciones GIS personalizadas.
+Ahora sabes **cómo contar vértices** en una geometría y cómo **añadir puntos a un LineString** usando Aspose.GIS para .NET. Esta habilidad fundamental abre la puerta a análisis espacial más rico, validación de datos y soluciones GIS personalizadas.
 
 ## Preguntas frecuentes
-### ¿Es Aspose.GIS para .NET compatible con todos los frameworks .NET?
-Sí, Aspose.GIS para .NET soporta múltiples frameworks .NET, incluyendo .NET Core y .NET Standard.
 
-### ¿Puedo obtener una licencia temporal para propósitos de evaluación?
-Sí, puedes obtener una licencia temporal para Aspose.GIS para .NET desde el [sitio web de Aspose](https://purchase.aspose.com/temporary-license/).
+**Q: ¿Es Aspose.GIS for .NET compatible con todos los frameworks .NET?**  
+A: Sí, Aspose.GIS for .NET soporta múltiples frameworks .NET, incluidos .NET Core y .NET Standard.
 
-### ¿Aspose.GIS para .NET proporciona documentación completa?
-¡Absolutamente! Puedes encontrar documentación detallada para Aspose.GIS para .NET en la [página de documentación](https://reference.aspose.com/gis/net/).
+**Q: ¿Puedo obtener una licencia temporal para propósitos de evaluación?**  
+A: Sí, puedes obtener una licencia temporal para Aspose.GIS for .NET desde el [sitio web de Aspose](https://purchase.aspose.com/temporary-license/).
 
-### ¿Cómo puedo obtener soporte o hacer preguntas relacionadas con Aspose.GIS para .NET?
-Puedes visitar el [foro de Aspose.GIS](https://forum.aspose.com/c/gis/33) para buscar soporte o hacer preguntas a la comunidad de Aspose.
+**Q: ¿Aspose.GIS for .NET proporciona documentación completa?**  
+A: ¡Absolutamente! Puedes encontrar documentación detallada para Aspose.GIS for .NET en la [página de documentación](https://reference.aspose.com/gis/net/).
 
-### ¿Hay una prueba gratuita disponible para Aspose.GIS para .NET?
-Sí, puedes aprovechar la prueba gratuita desde la [página de lanzamientos de Aspose.GIS](https://releases.aspose.com/) para evaluar sus funciones antes de realizar una compra.
+**Q: ¿Cómo puedo obtener soporte o hacer preguntas relacionadas con Aspose.GIS for .NET?**  
+A: Puedes visitar el [foro de Aspose.GIS](https://forum.aspose.com/c/gis/33) para buscar soporte o hacer preguntas a la comunidad de Aspose.
 
-**Última actualización:** 2025-12-11  
+**Q: ¿Hay una prueba gratuita disponible para Aspose.GIS for .NET?**  
+A: Sí, puedes aprovechar la prueba gratuita desde la [página de lanzamientos de Aspose.GIS](https://releases.aspose.com/) para evaluar sus características antes de comprar.
+
+---
+
+**Última actualización:** 2026-02-15  
 **Probado con:** Aspose.GIS for .NET 24.11  
 **Autor:** Aspose  
 
