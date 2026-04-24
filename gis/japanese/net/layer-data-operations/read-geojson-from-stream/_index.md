@@ -1,8 +1,12 @@
 ---
-date: 2025-12-28
-description: Aspose.GIS for .NET を使用してストリームから GeoJSON を読み取る方法を学びましょう。この C# の GeoJSON
-  読み取りガイドは、地理空間データを統合するためのステップバイステップの例を提供します。
-linktitle: Read GeoJSON from Stream
+date: 2026-04-24
+description: Aspose.GIS for .NET を使用してストリームから **geojson の読み取り方法** を学びます。このステップバイステップガイドでは、**geojson
+  ストリームの読み込み** 方法、解析、そして C# でプロパティを抽出する方法を示します。
+keywords:
+- how to read geojson
+- load geojson stream
+- Aspose GIS GeoJSON
+linktitle: ストリームからGeoJSONを読み込む
 second_title: Aspose.GIS .NET API
 title: Aspose.GIS for .NET を使用してストリームから GeoJSON を読み取る方法
 url: /ja/net/layer-data-operations/read-geojson-from-stream/
@@ -13,30 +17,33 @@ weight: 14
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# ストリームから Aspose.GIS for .NET で GeoJSON を読む方法
+# ストリームからGeoJSONを読む方法（Aspose.GIS for .NET）
 
 ## はじめに
-.NET アプリケーションで **geojson の読み取り方法** をお探しなら、ここが適切な場所です。このチュートリアルでは、GeoJSON 文字列を変換し、メモリストリームから GeoJSON レイヤーを開き、Aspose.GIS を使って GeoJSON のプロパティを抽出する **c# geojson の例** をステップバイステップで解説します。最後まで読めば、地理空間データをのプロジェクトに組み込める再利用可能なパターンが手に入ります。
+もし .NET アプリケーションで **geojson の読み取り方法** を知りたいなら、ここが正しい場所です。このチュートリアルでは、**C# GeoJSON の例** を通じて、GeoJSON 文字列を変換し、**geojson ストリームを** メモリストリームにロードし、GeoJSON レイヤーを開き、Aspose.GIS を使用して GeoJSON プロパティを抽出する方法を示します。最後まで読むと、地理空間データを扱う必要がある任意のプロジェクトに組み込める再利用可能なパターンが手に入ります。
 
 ## クイック回答
-- **どのライブラリを使うべきですか？** Aspose.GIS for .NET  
-- **GeoJSON をストリームから直接読むことはできますか？** はい – `VectorLayer.Open` と `AbstractPath.FromStream` を使用します。  
-用にライセンスは必要ですか？** テスト用の無料トライアルで動作しますが、本番環境ではライセンスが必要です。  
+- **どのライブラリを使用すべきですか？** Aspose.GIS for .NET – すぐに多くの GIS フォーマットを処理します。  
+- **ストリームから直接 GeoJSON を読み取れますか？** はい – `VectorLayer.Open` と `AbstractPath.FromStream` を使用します。  
+- **開発にライセンスは必要ですか？** テストには無料トライアルで動作しますが、製品版にはフルライセンスが必要です。  
 - **サポートされている .NET バージョンは？** .NET Framework 4.5 以上、.NET Core 3.1 以上、.NET 5/6 以上。  
-- **プロパティの抽出ですか？** はい – フィーチャー上で `GetValue<T>(columnName)` を呼び出すだけです。
+- **プロパティの抽出は簡単ですか？** はい – フィーチャーで `GetValue<T>(columnName)` を呼び出すだけです。
 
-## 「geojson の読み取り方法」とは？
-GeoJSON の読み取りとは、地理的フィーチャ（ポイント、ライン、ポリゴン）を記述した JSON ベースのフォーマットを解析し、アプリケーション内でクエリ、編集、または描画できるオブジェクトとして利用可能にすることです。
+## “how to read geojson” とは何ですか？
+GeoJSON を読むことは、地理的なフィーチャー（ポイント、ライン、ポリゴン）を記述する JSON ベースのフォーマットを解析し、それらのフィーチャーをアプリケーション内でクエリ、編集、または描画できるオブジェクトに変換することを意味します。
 
-## Aspose.GIS で **geojson レイヤーを開く** 理由
-Aspose.GIS は低レベルのパース処理を抽象化し、さまざまな GIS フォーマットに対して一貫した API を提供します。ストリームから直接 **geojson レイヤーを開く** ことができ、大容量ファイルも効率的に処理でき、カスタム JSON パーサーを書かずにフィーチャ属性にアクセスできます。
+## Aspose.GIS を使用して **geojson レイヤーを開く** 理由は？
+Aspose.GIS は低レベルのパース詳細を抽象化し、多くの GIS フォーマットに対して一貫した API を提供します。ストリームから直接 **geojson レイヤーを開く** ことができ、大きなファイルも効率的に処理でき、カスタム JSON パーサーを書かずにフィーチャー属性にアクセスできます。
+
+## いつ **geojson ストリームをロード** しますか？
+- レスポンスボディで GeoJSON を返す Web サービスからデータをインポートする場合。  
+- ユーザーがアップロードした GeoJSON ファイルを、まずディスクに書き込まずに処理する場合。  
+- オンザフライで生成されたインメモリデータ（例: データベースや別の API から）を扱う場合。  
 
 ## 前提条件
-作業を始める前に以下を用意してください。
-
-1. **C# の基本知識** – .NET の構文と Visual Studio IDE に慣れていること。  
-2. **Aspose.GIS のインストール** – ライブラリは [here](https://releases.aspose.com/gis/net/) からダウンロードできます。  
-3. **開発環境** – Visual Studio、Visual Studio Code、または JetBrains Rider があれば問題ありません。  
+1. **C# の基本知識** – .NET の構文と Visual Studio IDE に慣れていることが必要です。  
+2. **Aspose.GIS がインストール済み** – ライブラリは [here](https://releases.aspose.com/gis/net/) からダウンロードしてください。  
+3. **開発環境** – Visual Studio、Visual Studio Code、または JetBrains Rider が使用できます。  
 
 ## 名前空間のインポート
 ```csharp
@@ -46,7 +53,7 @@ using System.Text;
 using Aspose.Gis;
 ```
 
-## 手順 1: **GeoJSON 文字列の変換** – **c# geojson の例**
+## ステップ 1: **GeoJSON 文字列の変換** – **C# GeoJSON の例**
 まず、シンプルな `FeatureCollection` を表す JSON 文字列を作成します。これがワークフローの **convert geojson string** 部分です。
 
 ```csharp
@@ -56,8 +63,8 @@ const string geoJson = @"{""type"":""FeatureCollection"",""features"":[
 ]}";
 ```
 
-## 手順 2: ストリームから **GeoJSON レイヤーを開く** そして **geojson プロパティを抽出**
-次に、文字列を `MemoryStream` に流し込み GIS レイヤーとして開き、属性値の読み取り（**extract geojson properties** 手順）を実演します。
+## ステップ 2: **GeoJSON ストリームのロード** と **geojson プロパティの抽出**
+次に、文字列を `MemoryStream` に渡し、GIS レイヤーとして開き、属性値の読み取り方法を示します（**extract geojson properties** のステップ）。
 
 ```csharp
 using (var memoryStream = new MemoryStream(Encoding.UTF8.GetBytes(geoJson)))
@@ -68,38 +75,38 @@ using (var layer = VectorLayer.Open(AbstractPath.FromStream(memoryStream), Drive
 }
 ```
 
-> **プロのコツ:** `VectorLayer.Open` は `Drivers.GeoJson` を指定すると自動的に GeoJSON 形式を検出します。ストリームの代わりにファイルパスを渡すことで直接ファイルを開くことも可能です。
+> **プロのコツ:** `VectorLayer.Open` は `Drivers.GeoJson` を渡すと自動的に GeoJSON フォーマットを検出します。ストリームの代わりにファイルパスを指定すれば、ファイルを直接開くこともできます。
 
 ## よくある問題と解決策
-| 問題 | 解決策 |
-|------|--------|
-| **JSON 形式が無効** | GeoJSON 文字列が正しく構成されているか確認し、JSON バリデータで検証してください。 |
-| **エンコーディングの問題** | ストリームが UTF-8 (`Encoding.UTF8.GetBytes`) であることを確認してください。 |
-| **プロパティが見つからない** | プロパティ名が正しく綴られているか確認（例では `"name"`）。 |
-| **ライセンス例外** | テスト用にトライアルライセンスを使用し、本番環境では永続ライセンスを適用してください。 |
+| Issue | Solution |
+|-------|----------|
+| **JSON フォーマットが無効** | GeoJSON 文字列が正しく形成されているか確認し、JSON バリデータを使用してください。 |
+| **エンコーディングの問題** | ストリームが UTF-8 (`Encoding.UTF8.GetBytes`) を使用していることを確認してください。 |
+| **プロパティが欠落** | プロパティ名が正しく綴られているか確認してください（例では `"name"`）。 |
+| **ライセンス例外** | テストにはトライアルライセンスを使用し、製品版には永続ライセンスを適用してください。 |
 
-## FAQ
-### Aspose.GIS は他の GIS フォーマットにも対応していますか？
+## よくある質問
+### Aspose.GIS は他の GIS フォーマットと互換性がありますか？
 はい、Aspose.GIS は GeoJSON、Shapefile、KML、GML など多数のフォーマットをサポートしています。
 
-### 購入前に Aspose.GIS を試すことはできますか？
-はい、[here](https://releases.aspose.com/) から無料トライアルをダウンロードできます。
+### 購入前に Aspose.GIS を試せますか？
+はい、[here](https://releases.aspose.com/) から Aspose.GIS の無料トライアルをダウンロードできます。
 
-### Aspose.GIS のドキュメントはどこにありますか？
-ドキュメントは [here](https://reference.aspose.com/gis/net/) にあります。
+### Aspose.GIS のドキュメントはどこで見つけられますか？
+Aspose.GIS のドキュメントは [here](https://reference.aspose.com/gis/net/) にあります。
 
 ### Aspose.GIS のサポートはどこで受けられますか？
-Aspose フォーラムの [here](https://forum.aspose.com/c/gis/33) でサポートを受けられます。
+Aspose.GIS のサポートは Aspose フォーラムの [here](https://forum.aspose.com/c/gis/33) で受けられます。
 
-### Aspose.GIS を使用するために一時ライセンスは必要ですか？
-一時ライセンスは [here](https://purchase.aspose.com/temporary-license/) から取得できます。
+### Aspose.GIS を使用するのに一時ライセンスは必要ですか？
+Aspose.GIS の一時ライセンスは [here](https://purchase.aspose.com/temporary-license/) から取得できます。
 
 ## 結論
-本ガイドでは、Aspose.GIS for .NET を使用してメモリストリームから **geojson を読む方法** を解説し、**c# read geojson** のワークフローを示し、開いたレイヤーから **extract geojson properties** する手順を紹介しました。これらの手順を活用すれば、任意の .NET アプリケーションに地理空間データ処理をシームレスに統合できます。
+このガイドでは、Aspose.GIS for .NET を使用してメモリストリームから **geojson の読み取り方法** を解説し、**C# での geojson 読み取り** ワークフローを示し、開いたレイヤーから **geojson プロパティの抽出** 方法を紹介しました。これらの手順により、任意の .NET アプリケーションに地理空間データ処理をシームレスに統合できます。
 
 ---
 
-**最終更新日:** 2025-12-28  
+**最終更新日:** 2026-04-24  
 **テスト環境:** Aspose.GIS 24.11 for .NET  
 **作者:** Aspose  
 
