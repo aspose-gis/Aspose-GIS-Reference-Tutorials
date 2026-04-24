@@ -1,10 +1,17 @@
 ---
-date: 2025-12-28
-description: Naučte se, jak nastavit mřížku pro vrstvu File GDB pomocí Aspose.GIS
-  pro .NET, včetně přidání prvků do vrstvy a ověření rozsahu souřadnic.
-linktitle: Define Precision Grid for File GDB Layer
+date: 2026-04-24
+description: Naučte se, jak vytvořit souborovou geodatabázi a nastavit mřížku přesnosti
+  pro vrstvu File GDB pomocí Aspose.GIS pro .NET, včetně přidání prvků do vrstvy a
+  ověření rozsahu souřadnic.
+keywords:
+- create file geodatabase
+- handle out of range
+- add features layer
+- configure coordinate grid
+- validate coordinate range
+linktitle: Definovat mřížku přesnosti pro vrstvu File GDB
 second_title: Aspose.GIS .NET API
-title: Jak nastavit mřížku pro vrstvu File GDB v Aspose.GIS
+title: Vytvořit souborovou geodatabázi a nastavit mřížku pro vrstvu GDB (Aspose.GIS)
 url: /cs/net/layer-data-operations/define-precision-grid-for-file-gdb-layer/
 weight: 21
 ---
@@ -16,26 +23,36 @@ weight: 21
 # Jak nastavit mřížku pro vrstvu File GDB v Aspose.GIS
 
 ## Úvod
-V tomto tutoriálu se naučíte **jak nastavit mřížku** pro vrstvu File Geodatabase (GDB) pomocí Aspose.GIS pro .NET. Nastavení přesné mřížky vám pomáhá **validovat rozsah souřadnic**, zabraňuje chybám mimo rozsah a zajišťuje, že data, která **přidáváte do vrstvy**, zůstávají přesná a spolehlivá. Provedeme vás každým krokem, vysvětlíme, proč jsou nastavení důležitá, a ukážeme, jak zvládat běžné úskalí.
+V tomto tutoriálu **vytvoříte objekty souborové geodatabáze** a naučíte se, jak **nastavit mřížku** pro vrstvu File Geodatabase (GDB) pomocí Aspose.GIS pro .NET. Definování přesné mřížky vám umožní **ověřit rozsah souřadnic**, zabraňuje chybám mimo rozsah a zajišťuje, že jakákoli operace **přidání prvků do vrstvy** ukládá data přesně. Provedeme vás každým krokem, vysvětlíme, proč je každé nastavení důležité, a ukážeme vám, jak **zvládat situace mimo rozsah** elegantně.
 
 ## Rychlé odpovědi
 - **Co znamená „nastavit mřížku“?** Definuje přesnost souřadnic a platný rozsah pro GIS vrstvu.  
-- **Proč používat přesnou mřížku?** Chrání vaše data před neplatnými souřadnicemi a zlepšuje efektivitu úložiště.  
+- **Proč používat přesnou mřížku?** Chrání vaše data před neplatnými souřadnicemi a zvyšuje efektivitu ukládání.  
 - **Která knihovna tuto funkci poskytuje?** Aspose.GIS pro .NET.  
-- **Potřebuji licenci?** K dispozici je zkušební verze; pro produkci je vyžadována komerční licence.  
+- **Potřebuji licenci?** K dispozici je zkušební verze; pro produkční nasazení je vyžadována komerční licence.  
 - **Mohu to použít s .NET Core?** Ano, Aspose.GIS podporuje .NET Framework i .NET Core.
 
-## Co je přesná mřížka a proč ji nastavit?
-Přesná mřížka je sada parametrů (počátek, měřítko atd.), která říká GIS enginu, jak zaokrouhlovat a ukládat hodnoty souřadnic. Definováním mřížky **automaticky validujete rozsah souřadnic** a jakýkoli pokus vložit bod mimo mřížku vyvolá výjimku — pomáhá vám **zvládat situace mimo rozsah** již v raném vývoji.
+## Co je to přesná mřížka a proč ji nastavit?
+Přesná mřížka je soubor parametrů (počátek, měřítko atd.), které říkají GIS enginu, jak zaokrouhlovat a ukládat hodnoty souřadnic. Nastavením mřížky **automaticky ověříte rozsah souřadnic** a jakýkoli pokus vložit bod mimo mřížku vyvolá výjimku – pomáhá vám to **zvládat situace mimo rozsah** již v rané fázi vývoje.
+
+## Proč vytvořit souborovou geodatabázi s přesnou mřížkou?
+Vytvoření souborové geodatabáze vám poskytne přenosný, vysoce výkonný kontejner pro vektorová data. Přidání přesné mřížky při vytváření zajišťuje:
+
+- **Konzistentní kvalita dat** – každý prvek respektuje stejnou číselnou přesnost.  
+- **Rychlejší indexování** – engine může ukládat souřadnice efektivněji.  
+- **Včasná detekce chyb** – souřadnice mimo rozsah jsou zachyceny dříve, než poškozují datový soubor.
 
 ## Předpoklady
-Předtím, než začneme, ujistěte se, že máte nainstalováno následující:
-
 1. **Visual Studio** – jakákoli recentní verze (Community, Professional nebo Enterprise).  
 2. **Aspose.GIS pro .NET** – stáhněte jej z [webu](https://releases.aspose.com/gis/net/).  
-3. **Základní znalost C#** – měli byste být schopni vytvářet .NET konzolové projekty.
+3. **Základní znalost C#** – měli byste být zvyklí vytvářet .NET konzolové projekty.
 
-## Importování jmenných prostorů
+## Běžné případy použití
+- **Terénní sběr dat**, kde GPS zařízení mohou produkovat souřadnice mírně mimo zamýšlený rozsah.  
+- **Migrace dat** ze starých systémů, které používaly odlišné přesnosti souřadnic.  
+- **Automatizované ETL pipeline**, které potřebují **vynutit prostorovou integritu** před načtením dat do GIS databáze.
+
+## Importujte jmenné prostory
 Nejprve importujte jmenné prostory potřebné pro práci s Aspose.GIS:
 
 ```csharp
@@ -47,11 +64,11 @@ using System;
 using System.Text;
 ```
 
-## Jak nastavit mřížku ve vrstvě File GDB
-Níže je krok‑za‑krokem průvodce, který přesně ukazuje, jak nakonfigurovat mřížku, vytvořit vrstvu a bezpečně **přidávat prvky do vrstvy**.
+## Jak nakonfigurovat mřížku souřadnic ve vrstvě File GDB
+Níže je podrobný návod, který ukazuje, jak přesně nakonfigurovat mřížku, vytvořit vrstvu a bezpečně **přidat prvky do vrstvy**.
 
-### Krok 1: Vytvoření datasetu
-Začneme vytvořením nového datasetu File Geodatabase. Toto je místo, kde bude vrstva umístěna.
+### Krok 1: Vytvořit dataset
+Začneme vytvořením nového datasetu File Geodatabase. Toto bude místo, kde bude vrstva umístěna.
 
 ```csharp
 var path = "Your Document Directory" + "PrecisionGrid_out.gdb";
@@ -59,7 +76,7 @@ using (var dataset = Dataset.Create(path, Drivers.FileGdb))
 {
 ```
 
-### Krok 2: Definování možností přesné mřížky
+### Krok 2: Definovat možnosti přesné mřížky
 Zde specifikujeme parametry mřížky. Přizpůsobte počátky a měřítka tak, aby odpovídaly souřadnicovému systému vašeho projektu.
 
 ```csharp
@@ -77,9 +94,9 @@ var options = new FileGdbOptions
 };
 ```
 
-*Příznak `EnsureValidCoordinatesRange = true` říká Aspose.GIS, aby **validoval rozsah souřadnic** pro každý prvek, který přidáte.*
+*Příznak `EnsureValidCoordinatesRange = true` říká Aspose.GIS, aby **ověřil rozsah souřadnic** pro každý přidaný prvek.*
 
-### Krok 3: Vytvoření vrstvy s mřížkou
+### Krok 3: Vytvořit vrstvu s mřížkou
 Nyní vytvoříme novou vrstvu uvnitř datasetu, aplikujeme právě definované možnosti mřížky. Použijeme prostorový referenční systém WGS84.
 
 ```csharp
@@ -87,7 +104,7 @@ using (var layer = dataset.CreateLayer("layer_name", options, SpatialReferenceSy
 {
 ```
 
-### Krok 4: Přidání prvků do vrstvy
+### Krok 4: Přidat prvky do vrstvy
 Vytvoříme dva bodové prvky. První bod leží uvnitř mřížky, zatímco druhý úmyslně spadá mimo, aby demonstroval **jak zvládat chyby mimo rozsah**.
 
 ```csharp
@@ -98,7 +115,7 @@ feature = layer.ConstructFeature();
 feature.Geometry = new Point(-410, 0) { M = 20.2343 };
 ```
 
-### Krok 5: Zpracování výjimek při přidávání prvků mimo rozsah
+### Krok 5: Zpracovat výjimky při přidávání prvků mimo rozsah
 Pokus o přidání druhého prvku vyvolá výjimku, protože jeho X souřadnice (`-410`) je mimo definovanou mřížku. Zachytíme výjimku a vypíšeme jasnou zprávu.
 
 ```csharp
@@ -112,15 +129,20 @@ catch (GisException e)
 }
 ```
 
-### Krok 6: Vyčištění
-Příkazy `using` automaticky uzavřou a uvolní dataset a vrstvu, čímž zajistí uvolnění všech zdrojů.
+### Krok 6: Úklid
+Příkazy `using` automaticky uzavřou a uvolní dataset a vrstvu, čímž zajistí uvolnění všech prostředků.
 
 ## Časté problémy a řešení
-| Problém | Proč se to děje | Řešení |
+| Problém | Proč k tomu dochází | Řešení |
 |-------|----------------|-----|
-| **Výjimka: „X hodnota … je mimo platný rozsah.“** | Souřadnice spadají mimo přesnou mřížku. | Upravte `XOrigin`, `YOrigin` nebo `XYScale`, aby zahrnovaly vaše data, nebo zajistěte, že vstupní data jsou v definovaném rozsahu. |
-| **Prvky se nezobrazují v GIS prohlížeči** | Vrstva není uložena nebo je špatný prostorový referenční systém. | Ověřte, že `SpatialReferenceSystem.Wgs84` odpovídá CRS prohlížeče, a že `Dataset.Create` byl úspěšný. |
-| **M hodnoty jsou ignorovány** | `MScale` nastaven na 0 nebo příliš nízký. | Nastavte rozumný `MScale` (např. `1e4`) pro ukládání měrných hodnot. |
+| **Výjimka: „X hodnota … je mimo platný rozsah.“** | Souřadnice spadají mimo přesnou mřížku. | Upravit `XOrigin`, `YOrigin` nebo `XYScale`, aby zahrnovaly vaše data, nebo zajistit, že vstupní data jsou v definovaném rozsahu. |
+| **Prvky se nezobrazují v GIS prohlížeči** | Vrstva nebyla uložena nebo je špatný prostorový referenční systém. | Ověřte, že `SpatialReferenceSystem.Wgs84` odpovídá CRS prohlížeče a že `Dataset.Create` proběhl úspěšně. |
+| **M hodnoty jsou ignorovány** | `MScale` nastaven na 0 nebo příliš nízký. | Nastavte rozumnou hodnotu `MScale` (např. `1e4`) pro ukládání měrných hodnot. |
+
+## Tipy pro řešení problémů
+- **Zkontrolujte rozsahy mřížky** před načítáním velkých dávkách dat; malá překlepka v `XOrigin` může způsobit odmítnutí mnoha řádků.  
+- **Zaznamenejte zprávu výjimky** (jak je ukázáno v bloku try‑catch) do souboru při zpracování automatizovaných importů; usnadní to odhalování vzorců v datech mimo rozsah.  
+- **Používejte `EnsureValidCoordinatesRange = false` pouze pro důvěryhodné zdroje dat** – vypnutí validace může vést k poškozeným geometriím.
 
 ## Často kladené otázky
 
@@ -141,7 +163,7 @@ A: Ano, můžete si stáhnout bezplatnou zkušební verzi z [webu](https://relea
 
 ---
 
-**Poslední aktualizace:** 2025-12-28  
+**Poslední aktualizace:** 2026-04-24  
 **Testováno s:** Aspose.GIS 24.11 pro .NET  
 **Autor:** Aspose  
 

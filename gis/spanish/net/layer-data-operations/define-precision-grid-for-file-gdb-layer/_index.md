@@ -1,10 +1,17 @@
 ---
-date: 2025-12-28
-description: Aprenda cómo establecer la cuadrícula para una capa File GDB usando Aspose.GIS
-  para .NET, incluyendo agregar características a la capa y validar el rango de coordenadas.
-linktitle: Define Precision Grid for File GDB Layer
+date: 2026-04-24
+description: Aprenda cómo crear una geodatabase de archivos y establecer una cuadrícula
+  de precisión para una capa File GDB usando Aspose.GIS para .NET, incluyendo la adición
+  de entidades a la capa y la validación del rango de coordenadas.
+keywords:
+- create file geodatabase
+- handle out of range
+- add features layer
+- configure coordinate grid
+- validate coordinate range
+linktitle: Definir cuadrícula de precisión para capa de GDB de archivo
 second_title: Aspose.GIS .NET API
-title: Cómo configurar la cuadrícula para la capa File GDB en Aspose.GIS
+title: Crear Geodatabase de Archivo y Configurar la Cuadrícula para la Capa GDB (Aspose.GIS)
 url: /es/net/layer-data-operations/define-precision-grid-for-file-gdb-layer/
 weight: 21
 ---
@@ -13,30 +20,40 @@ weight: 21
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Cómo establecer una cuadrícula para una capa File GDB en Aspose.GIS
+# Cómo establecer la cuadrícula para la capa File GDB en Aspose.GIS
 
 ## Introducción
-En este tutorial, aprenderás **cómo establecer una cuadrícula** para una capa de File Geodatabase (GDB) usando Aspose.GIS para .NET. Definir una cuadrícula de precisión te ayuda a **validar el rango de coordenadas**, evita errores de fuera de rango y garantiza que los datos a los que **agregues entidades a la capa** permanezcan precisos y fiables. Recorreremos cada paso, explicaremos por qué son importantes los ajustes y te mostraremos cómo manejar los problemas más comunes.
+En este tutorial **creará objetos de geodatabase de archivo** y aprenderá cómo **establecer la cuadrícula** para una capa File Geodatabase (GDB) usando Aspose.GIS para .NET. Definir una cuadrícula de precisión le permite **validar el rango de coordenadas**, evita errores fuera de rango y garantiza que cualquier operación de **añadir características a la capa** almacene los datos con precisión. Recorreremos cada paso, explicaremos por qué cada configuración es importante y le mostraremos cómo **manejar escenarios fuera de rango** de forma elegante.
 
 ## Respuestas rápidas
-- **¿Qué significa “establecer cuadrícula”?** Define la precisión de coordenadas y el rango válido para una capa GIS.  
-- **¿Por qué usar una cuadrícula de precisión?** Protege tus datos de coordenadas inválidas y mejora la eficiencia de almacenamiento.  
+- **¿Qué significa “set grid”?** Define la precisión de coordenadas y el rango válido para una capa GIS.  
+- **¿Por qué usar una cuadrícula de precisión?** Protege sus datos de coordenadas inválidas y mejora la eficiencia de almacenamiento.  
 - **¿Qué biblioteca proporciona esta función?** Aspose.GIS para .NET.  
 - **¿Necesito una licencia?** Hay una versión de prueba disponible; se requiere una licencia comercial para producción.  
-- **¿Puedo usarlo con .NET Core?** Sí, Aspose.GIS es compatible con .NET Framework y .NET Core.
+- **¿Puedo usar esto con .NET Core?** Sí, Aspose.GIS soporta .NET Framework y .NET Core.
 
-## ¿Qué es una cuadrícula de precisión y por qué establecerla?
-Una cuadrícula de precisión es un conjunto de parámetros (origen, escala, etc.) que indica al motor GIS cómo redondear y almacenar los valores de coordenadas. Al definir una cuadrícula, **validas automáticamente el rango de coordenadas**, y cualquier intento de insertar un punto fuera de la cuadrícula generará una excepción, lo que te ayuda a **manejar escenarios fuera de rango** temprano en el desarrollo.
+## Qué es una cuadrícula de precisión y por qué establecerla
+Una cuadrícula de precisión es un conjunto de parámetros (origen, escala, etc.) que indica al motor GIS cómo redondear y almacenar los valores de coordenadas. Al configurar una cuadrícula usted **valida el rango de coordenadas** automáticamente, y cualquier intento de insertar un punto fuera de la cuadrícula generará una excepción—ayudándole a **manejar escenarios fuera de rango** temprano en el desarrollo.
+
+## Por qué crear una File Geodatabase con una cuadrícula de precisión
+Crear una geodatabase de archivo le brinda un contenedor portátil y de alto rendimiento para datos vectoriales. Añadir una cuadrícula de precisión al crearla garantiza:
+
+- **Calidad de datos consistente** – cada característica respeta la misma precisión numérica.  
+- **Indexación más rápida** – el motor puede almacenar coordenadas de manera más eficiente.  
+- **Detección temprana de errores** – las coordenadas fuera de rango se detectan antes de que corrompan el conjunto de datos.
 
 ## Requisitos previos
-Antes de comenzar, asegúrate de tener instalados los siguientes elementos:
-
 1. **Visual Studio** – cualquier versión reciente (Community, Professional o Enterprise).  
-2. **Aspose.GIS para .NET** – descárgalo desde el [sitio web](https://releases.aspose.com/gis/net/).  
-3. **Conocimientos básicos de C#** – deberías sentirte cómodo creando proyectos de consola .NET.
+2. **Aspose.GIS para .NET** – descárguelo desde el [sitio web](https://releases.aspose.com/gis/net/).  
+3. **Conocimientos básicos de C#** – debe sentirse cómodo creando proyectos de consola .NET.
+
+## Casos de uso comunes
+- **Recopilación de datos de campo** donde los dispositivos GPS pueden producir coordenadas ligeramente fuera del alcance previsto.  
+- **Migración de datos** desde sistemas heredados que usaban diferentes precisiones de coordenadas.  
+- **Pipelines ETL automatizados** que necesitan imponer integridad espacial antes de cargar datos en una base de datos GIS.
 
 ## Importar espacios de nombres
-Primero, importa los espacios de nombres requeridos para trabajar con Aspose.GIS:
+Primero, importe los espacios de nombres requeridos para trabajar con Aspose.GIS:
 
 ```csharp
 using Aspose.Gis;
@@ -47,11 +64,11 @@ using System;
 using System.Text;
 ```
 
-## Cómo establecer la cuadrícula en una capa File GDB
-A continuación se muestra una guía paso a paso que indica exactamente cómo configurar la cuadrícula, crear una capa y agregar **entidades a la capa** de forma segura.
+## Cómo configurar la cuadrícula de coordenadas en una capa File GDB
+A continuación se muestra una guía paso a paso que indica exactamente cómo configurar la cuadrícula, crear una capa y **añadir características a la capa** de forma segura.
 
 ### Paso 1: Crear un conjunto de datos
-Comenzamos creando un nuevo conjunto de datos File Geodatabase. Aquí es donde vivirá la capa.
+Comenzamos creando un nuevo conjunto de datos File Geodatabase. Aquí es donde residirá la capa.
 
 ```csharp
 var path = "Your Document Directory" + "PrecisionGrid_out.gdb";
@@ -60,7 +77,7 @@ using (var dataset = Dataset.Create(path, Drivers.FileGdb))
 ```
 
 ### Paso 2: Definir opciones de cuadrícula de precisión
-Aquí especificamos los parámetros de la cuadrícula. Ajusta los orígenes y escalas para que coincidan con el sistema de coordenadas de tu proyecto.
+Aquí especificamos los parámetros de la cuadrícula. Ajuste los orígenes y escalas para que coincidan con el sistema de coordenadas de su proyecto.
 
 ```csharp
 var options = new FileGdbOptions
@@ -77,7 +94,7 @@ var options = new FileGdbOptions
 };
 ```
 
-*La bandera `EnsureValidCoordinatesRange = true` indica a Aspose.GIS que **valide el rango de coordenadas** para cada entidad que agregues.*
+*La bandera `EnsureValidCoordinatesRange = true` indica a Aspose.GIS que **valide el rango de coordenadas** para cada característica que añada.*
 
 ### Paso 3: Crear una capa con la cuadrícula
 Ahora creamos una nueva capa dentro del conjunto de datos, aplicando las opciones de cuadrícula que acabamos de definir. Utilizaremos el sistema de referencia espacial WGS84.
@@ -87,8 +104,8 @@ using (var layer = dataset.CreateLayer("layer_name", options, SpatialReferenceSy
 {
 ```
 
-### Paso 4: Agregar entidades a la capa
-Construimos dos entidades de tipo punto. El primer punto está dentro de la cuadrícula, mientras que el segundo se coloca deliberadamente fuera para demostrar **cómo manejar errores fuera de rango**.
+### Paso 4: Añadir características a la capa
+Construimos dos características de punto. El primer punto está dentro de la cuadrícula, mientras que el segundo cae deliberadamente fuera para demostrar **cómo manejar errores fuera de rango**.
 
 ```csharp
 var feature = layer.ConstructFeature();
@@ -98,8 +115,8 @@ feature = layer.ConstructFeature();
 feature.Geometry = new Point(-410, 0) { M = 20.2343 };
 ```
 
-### Paso 5: Manejar excepciones al agregar entidades fuera de rango
-Intentar agregar la segunda entidad provocará una excepción porque su coordenada X (`-410`) está fuera de la cuadrícula definida. Capturamos la excepción y mostramos un mensaje claro.
+### Paso 5: Manejar excepciones al añadir características fuera de rango
+Intentar añadir la segunda característica provocará una excepción porque su coordenada X (`-410`) está fuera de la cuadrícula definida. Capturamos la excepción y mostramos un mensaje claro.
 
 ```csharp
 try
@@ -113,36 +130,41 @@ catch (GisException e)
 ```
 
 ### Paso 6: Limpieza
-Las sentencias `using` cierran y liberan automáticamente el conjunto de datos y la capa, garantizando que todos los recursos se liberen.
+Las sentencias `using` cierran y liberan automáticamente el conjunto de datos y la capa, asegurando que todos los recursos se liberen.
 
 ## Problemas comunes y soluciones
 | Problema | Por qué ocurre | Solución |
 |----------|----------------|----------|
-| **Excepción: “El valor X … está fuera del rango válido.”** | Las coordenadas quedan fuera de la cuadrícula de precisión. | Ajusta `XOrigin`, `YOrigin` o `XYScale` para abarcar tus datos, o asegura que los datos de entrada estén dentro del rango definido. |
-| **Las entidades no aparecen en el visor GIS** | La capa no se guardó o la referencia espacial es incorrecta. | Verifica que `SpatialReferenceSystem.Wgs84` coincida con el CRS del visor y que `Dataset.Create` haya tenido éxito. |
-| **Los valores M se ignoran** | `MScale` está establecido en 0 o es demasiado bajo. | Define un `MScale` razonable (p. ej., `1e4`) para almacenar valores de medida. |
+| **Excepción: “X value … is out of valid range.”** | Las coordenadas están fuera de la cuadrícula de precisión. | Ajuste `XOrigin`, `YOrigin` o `XYScale` para abarcar sus datos, o asegúrese de que los datos de entrada estén dentro del rango definido. |
+| **Las características no aparecen en el visor GIS** | Capa no guardada o referencia espacial incorrecta. | Verifique que `SpatialReferenceSystem.Wgs84` coincida con el CRS del visor, y que `Dataset.Create` haya tenido éxito. |
+| **Valores M ignorados** | `MScale` establecido a 0 o demasiado bajo. | Establezca un `MScale` razonable (p.ej., `1e4`) para almacenar valores de medida. |
+
+## Consejos de solución de problemas
+- **Verifique nuevamente los límites de la cuadrícula** antes de cargar grandes lotes de datos; un pequeño error tipográfico en `XOrigin` puede causar que muchas filas sean rechazadas.  
+- **Registre el mensaje de excepción** (como se muestra en el bloque try‑catch) en un archivo al procesar importaciones automatizadas; esto facilita detectar patrones en datos fuera de rango.  
+- **Use `EnsureValidCoordinatesRange = false` solo para fuentes de datos confiables** – desactivarlo omite la validación y puede generar geometrías corruptas.
 
 ## Preguntas frecuentes
 
 **P: ¿Puedo usar Aspose.GIS para .NET con otros formatos de archivo GIS?**  
-R: Sí, Aspose.GIS es compatible con Shapefile, GeoJSON, KML y muchos más formatos.
+R: Sí, Aspose.GIS soporta Shapefile, GeoJSON, KML y muchos más formatos.
 
 **P: ¿Aspose.GIS para .NET es compatible con .NET Core?**  
 R: Absolutamente. La biblioteca funciona con .NET Framework, .NET Core y .NET 5/6+.
 
-**P: ¿Puedo realizar operaciones espaciales como buffers o intersecciones?**  
+**P: ¿Puedo realizar operaciones espaciales como buffer o intersección?**  
 R: Sí, la API incluye métodos para crear buffers, intersectar y calcular distancias.
 
 **P: ¿Aspose.GIS ofrece capacidades de transformación de coordenadas?**  
-R: Sí, puedes transformar geometrías entre diferentes sistemas de referencia espacial usando las herramientas de reproyección integradas.
+R: Sí, puede transformar geometrías entre diferentes sistemas de referencia espacial usando las herramientas de reproyección integradas.
 
-**P: ¿Existe una versión de prueba disponible?**  
-R: Sí, puedes descargar una prueba gratuita desde el [sitio web](https://releases.aspose.com/gis/net/).
+**P: ¿Hay una versión de prueba disponible?**  
+R: Sí, puede descargar una prueba gratuita desde el [sitio web](https://releases.aspose.com/gis/net/).
 
 ---
 
-**Última actualización:** 2025-12-28  
-**Probado con:** Aspose.GIS 24.11 para .NET  
+**Última actualización:** 2026-04-24  
+**Probado con:** Aspose.GIS 24.11 for .NET  
 **Autor:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
