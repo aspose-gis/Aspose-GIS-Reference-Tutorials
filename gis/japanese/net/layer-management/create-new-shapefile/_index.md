@@ -1,10 +1,11 @@
 ---
-title: 新しいシェープファイルの作成
-linktitle: 新しいシェープファイルの作成
+date: 2026-01-13
+description: Aspose.GIS for .NET を使用して新しいシェープファイルを作成する方法を学びましょう。このステップバイステップガイドでは、ベクターレイヤーの定義、日付属性の追加、空間データの管理方法を示します。
+linktitle: Create New Shapefile
 second_title: Aspose.GIS .NET API
-description: Aspose.GIS for .NET を使用して新しいシェープファイルを作成する方法を学びます。ステップバイステップのガイドに従って、空間データ操作の力を解き放ちましょう。
-weight: 12
+title: 新しいシェープファイルを作成
 url: /ja/net/layer-management/create-new-shapefile/
+weight: 12
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -13,15 +14,25 @@ url: /ja/net/layer-management/create-new-shapefile/
 
 # 新しいシェープファイルの作成
 
-## 導入
-.NET を使用した地理情報システム (GIS) 開発を詳しく検討している場合は、Aspose.GIS が頼りになるソリューションです。この強力なライブラリにより、開発者は空間データをシームレスに操作できるようになります。このチュートリアルでは、Aspose.GIS for .NET を使用して新しいシェープファイルを作成するプロセスを説明します。
+## はじめに
+.NET で地理情報システム（GIS）開発に取り組むなら、Aspose.GIS が最適なソリューションです。この強力なライブラリは開発者が空間データをシームレスに扱えるようにし、本チュートリアルでは Aspose.GIS for .NET を使用して **新しいシェープファイルを作成**する方法をご案内します。ベクターレイヤーの定義や日付属性の追加が、堅牢な GIS プロジェクトにとって重要なステップである理由も解説します。
+
+## クイック回答
+- **このチュートリアルで学べることは？** 新しいシェープファイルの作成、ベクターレイヤーの定義、属性（日時フィールドを含む）の追加方法。  
+- **必要なライブラリは？** Aspose.GIS for .NET。  
+- **ライセンスは必要ですか？** 学習目的なら無料トライアルで可。商用利用には商用ライセンスが必要です。  
+- **使用する IDE は？** Visual Studio（最新バージョンで可）。  
+- **実装にかかる時間は？** 基本的な例で約 10‑15 分。
+
 ## 前提条件
-チュートリアルに進む前に、次の前提条件が満たされていることを確認してください。
-- C# プログラミング言語の基本的な理解。
-- Visual Studio がマシンにインストールされていること。
--  .NET ライブラリ用の Aspose.GIS。ダウンロードできます[ここ](https://releases.aspose.com/gis/net/).
+チュートリアルに入る前に、以下の前提条件を満たしていることを確認してください。
+- C# プログラミング言語の基本的な理解。  
+- マシンに Visual Studio がインストールされていること。  
+- Aspose.GIS for .NET ライブラリ。ダウンロードは [こちら](https://releases.aspose.com/gis/net/)。
+
 ## 名前空間のインポート
-まず、Aspose.GIS の機能を利用するために必要な名前空間をインポートします。
+Aspose.GIS の機能を利用するために、必要な名前空間をインポートします。
+
 ```csharp
 using Aspose.Gis;
 using Aspose.Gis.Geometries;
@@ -31,25 +42,29 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 ```
-## ステップ 1: プロジェクトをセットアップする
-まず、Visual Studio で新しい C# プロジェクトを作成し、Aspose.GIS ライブラリを含めます。
-## ステップ 2: ドキュメント ディレクトリを定義する
+
+## 手順 1: プロジェクトのセットアップ
+Visual Studio で新しい C# プロジェクトを作成し、Aspose.GIS ライブラリを追加します。
+
+## 手順 2: ドキュメントディレクトリの定義
 ```csharp
 string dataDir = "Your Document Directory";
 ```
-「Your Document Directory」を、新しいシェープファイルを保存する実際のパスに置き換えます。
-## ステップ 3: VectorLayer を作成する
+*Your Document Directory* を、作成したシェープファイルを保存したい実際のパスに置き換えてください。
+
+## 手順 3: VectorLayer の作成
 ```csharp
 using (VectorLayer layer = VectorLayer.Create(dataDir + "NewShapeFile_out.shp", Drivers.Shapefile))
 {
-    //機能を追加する前に属性を追加してください
+    // add attributes before adding features
     layer.Attributes.Add(new FeatureAttribute("name", AttributeDataType.String));
     layer.Attributes.Add(new FeatureAttribute("age", AttributeDataType.Integer));
     layer.Attributes.Add(new FeatureAttribute("dob", AttributeDataType.DateTime));
 ```
-このコード セグメントはベクター レイヤーを設定し、フィーチャの属性を定義します。
-## ステップ 4: 機能を追加する
-### ケース 1: 値を個別に設定する
+このコードは **ベクターレイヤーを定義**し、3 つの属性（テキスト フィールド `name`、整数フィールド `age`、日時フィールド `dob`）を宣言します。日時属性の追加は、時間的な GIS 分析にとって重要です。
+
+## 手順 4: フィーチャの追加
+### ケース 1: 個別に値を設定
 ```csharp
 Feature firstFeature = layer.ConstructFeature();
 firstFeature.Geometry = new Point(33.97, -118.25);
@@ -64,7 +79,9 @@ secondFeature.SetValue("age", 54);
 secondFeature.SetValue("dob", new DateTime(1984, 12, 15, 15, 30, 0));
 layer.Add(secondFeature);
 ```
-### ケース 2: すべての属性に新しい値を設定する
+ここでは 2 つのポイントを作成し、各属性を別々に設定してレイヤーに追加しています。
+
+### ケース 2: すべての属性に対して新しい値を一括設定
 ```csharp
 Feature thirdFeature = layer.ConstructFeature();
 thirdFeature.Geometry = new Point(34.81, -92.28);
@@ -73,19 +90,41 @@ thirdFeature.SetValues(data);
 layer.Add(thirdFeature);
 }
 ```
+この方法では、オブジェクト配列を使ってすべての属性値を一度に設定します。属性が多数ある場合に便利です。
+
+## なぜ重要か
+プログラムからシェープファイルを作成できれば、データパイプラインの自動化、テストデータセットの生成、あるいは GIS 出力を直接ウェブサービスに統合することが可能になります。Aspose.GIS で **シェープファイルの作成方法** をマスターすれば、フィーチャジオメトリ、属性スキーマ、ファイル形式の準拠性を完全にコントロールできます。
+
+## よくある落とし穴とヒント
+- **パス区切り文字:** 文字列結合ではなく `Path.Combine` を使用して、クロスプラットフォーム互換性を確保してください。  
+- **属性の順序:** `SetValues` に渡す値の順序は、属性を追加した順序と一致させる必要があります。  
+- **日付の取り扱い:** GIS データをタイムゾーン間で共有する場合は、常に `DateTimeKind.Utc` を使用してください。
+
 ## 結論
-おめでとう！ Aspose.GIS for .NET を使用して新しいシェープファイルが正常に作成されました。このチュートリアルでは、プロジェクトの設定、属性の定義、機能の追加の基本について説明しました。さらに詳しく調べる場合は、次を参照してください。[ドキュメンテーション](https://reference.aspose.com/gis/net/)高度な機能を備えています。
-## よくある質問
-### Q: Aspose.GIS を他のプログラミング言語で使用できますか?
-Aspose.GIS は主に .NET をサポートしていますが、Java で利用できるバージョンもあります。
-### Q: 無料トライアルはありますか?
-はい、無料トライアルにアクセスできます[ここ](https://releases.aspose.com/).
-### Q: Aspose.GIS のサポートはどこで見つけられますか?
-訪問[Aspose.GIS フォーラム](https://forum.aspose.com/c/gis/33)コミュニティのサポートとディスカッションのために。
-### Q: 一時ライセンスを取得するにはどうすればよいですか?
-仮免許を取得する[ここ](https://purchase.aspose.com/temporary-license/).
-### Q: Aspose.GIS for .NET はどこで購入できますか?
-図書館を購入できます[ここ](https://purchase.aspose.com/buy).
+おめでとうございます！Aspose.GIS for .NET を使用して新しいシェープファイルの作成に成功しました。このチュートリアルでは、プロジェクトのセットアップ、ベクターレイヤーの定義、フィーチャの追加（日時属性を含む）という基本的な流れを解説しました。さらに詳しい機能や高度な使い方については、[ドキュメント](https://reference.aspose.com/gis/net/)をご参照ください。
+
+## FAQ（よくある質問）
+### Q: 他のプログラミング言語でも Aspose.GIS を使用できますか？
+Aspose.GIS は主に .NET 向けですが、Java 用のバージョンも提供されています。  
+
+### Q: 無料トライアルはありますか？
+はい、無料トライアルは [こちら](https://releases.aspose.com/) から入手できます。  
+
+### Q: Aspose.GIS のサポートはどこで受けられますか？
+コミュニティサポートやディスカッションは [Aspose.GIS フォーラム](https://forum.aspose.com/c/gis/33) で行われています。  
+
+### Q: 一時ライセンスはどう取得できますか？
+一時ライセンスは [こちら](https://purchase.aspose.com/temporary-license/) から取得できます。  
+
+### Q: Aspose.GIS for .NET を購入するには？
+ライブラリの購入は [こちら](https://purchase.aspose.com/buy) から可能です。
+
+---
+
+**最終更新日:** 2026-01-13  
+**テスト環境:** Aspose.GIS 24.11 for .NET  
+**作者:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}

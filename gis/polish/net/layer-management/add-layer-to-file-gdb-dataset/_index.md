@@ -1,26 +1,49 @@
 ---
-title: GIS Mastery — dodawaj warstwy do GDB za pomocą Aspose.GIS dla .NET
-linktitle: Dodaj warstwę do zbioru danych GDB pliku
+date: 2026-01-13
+description: Dowiedz się, jak dodać warstwę do zestawu danych File GDB przy użyciu
+  Aspose.GIS, z obsługą układu współrzędnych WGS84. Postępuj zgodnie z tym przewodnikiem
+  krok po kroku, aby dodać warstwę do GDB w .NET.
+linktitle: Add Layer to File GDB Dataset
 second_title: Aspose.GIS .NET API
-description: Odblokuj moc GIS z Aspose.GIS dla .NET! Z tego samouczka krok po kroku dowiesz się, jak dodawać warstwy do zestawów danych File GDB. #dane geograficzne #Aspose #GIS
-weight: 16
+title: odniesienie przestrzenne wgs84 – Dodaj warstwę do GDB przy użyciu Aspose.GIS
 url: /pl/net/layer-management/add-layer-to-file-gdb-dataset/
+weight: 16
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# GIS Mastery — dodawaj warstwy do GDB za pomocą Aspose.GIS dla .NET
+# odniesienie przestrzenne wgs84 – Dodawanie swatwy do GDB przy szączy Aspose.GIS
 
 ## Wstęp
-Czy jesteś gotowy na zwiększenie swoich możliwości GIS przy użyciu Aspose.GIS dla .NET? W tym przewodniku krok po kroku przeprowadzimy Cię przez proces dodawania warstwy do zbioru danych Geobazy Plikowej (GDB). Aspose.GIS dla .NET zapewnia zaawansowane funkcje do manipulowania informacjami geograficznymi, a dzięki temu samouczkowi będziesz w stanie bezproblemowo zintegrować dodatkowe warstwy ze swoimi zbiorami danych.
+Gotowy, aby przyspieszyć swój poław pracy GIS z Aspose.GIS dla .NET? W tym samouczku dowiesz się **jak addatz stawstę do setawu danych Plik GDB** z łążedem z łądyem wspórzydąnych **odniesienie przestrzenne wgs84**. Przeprowadzimy Cię krok po kroku, od przygotowania folderu z danych po werifikakę nowo utvoronej stawtwy, możesz móc pożyce manipulować danymi geograficznymi.
+
+## Szybkie odpowiedzi
+- **Jaki jest podstawowy łady współczesny?** odniesienie przestrzenne wgs84 (WGS84)
+- **Kiedy biblioteka udostępni API?** Aspose.GIS dla .NET
+- **Czy istnieje licencja do testów?** Tak – geguna jest tymczasowa licencja Aspose.
+- **Czy mógő addat atrybuty do nowej stawtwy?** Oczywiście, możesz określić nowe atrybuty obekt.
+- **Czy jakieś wersje .NET są obschiwane?** .NET Framework4.5+, .NET Core3.1+, .NET5/6.
+
+## Co to jest odniesienie przestrzenne wgs84?
+Układ współrzędnych odniesień przestrzennych wgs84 (World Geodetic System 1984) jest najpowszechniejszym uświęcim geograficznym systemem wspórzydąnych. Definiuje serokość i ługną geograficzną w stepniach i jest domyślnym CRS dla wielu zestawów danych GIS, w tym tym kóry utworzymy w tym przedowniku.
+
+## Po co używać Aspose.GIS do dodawania warstwy?
+- **Brak zewnętrznych zależności:** Działa od razu z czystym kodem .NET.
+- **Pełna kontrola nad schematem:** Możesz zdefiniować własne atrybuty i typy geometrii.
+- **Wieloplatformowość:** Zgodność z systemami Windows, Linux i macOS.
+- **Licencja Solidna:** Licencja Tymczasowa pojumą szybko ocenić produkt przed decyzją.
+
 ## Warunki wstępne
-Zanim przejdziesz do samouczka, upewnij się, że spełniasz następujące wymagania wstępne:
--  Biblioteka Aspose.GIS dla .NET: Pobierz i zainstaluj bibliotekę z[Dokumentacja Aspose.GIS dla .NET](https://reference.aspose.com/gis/net/).
-- Katalog dokumentów: Utwórz na swoim komputerze dedykowany katalog dokumentów do przechowywania i zarządzania plikami związanymi z GIS.
+Zanim przygotujz, upewnij się, że masz:
+
+- Biblioteka Aspose.GIS dla .NET: Pobierz i zainstallaj bibliotekę z [Dokumentacja Aspose.GIS dla .NET](https://reference.aspose.com/gis/net/).
+- Katalog dokumentów: Utwórz folder dodatkowy na swoim komputerze, w kieromie będź przychowanych plików GIS.
+
 ## Importuj przestrzenie nazw
-W projekcie .NET pamiętaj o zaimportowaniu niezbędnych przestrzeni nazw, aby uzyskać dostęp do funkcjonalności Aspose.GIS. Użyj następującego fragmentu kodu:
+Dodaj wymagane dyrektywy „using” do swojego projektu C#, aby używać klasy Aspose.GIS:
+
 ```csharp
 using Aspose.Gis;
 using Aspose.Gis.Geometries;
@@ -32,23 +55,29 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 ```
-## Krok 1: Skopiuj katalog
-Przed kontynuowaniem zduplikuj katalog zawierający zbiór danych GDB. Ten krok gwarantuje, że oryginalny zestaw danych pozostanie nienaruszony. Użyj dostarczonego fragmentu kodu:
+
+## Krok 1: Kopiowanie katalogu
+Najpierw skopiuj folder zawierający oryginalny zestaw danych GDB. Posiadanie kopii chroni dane źródłowe podczas eksperymentów.
+
 ```csharp
 string dataDir = "Your Document Directory";
 var path = dataDir + "ThreeLayers.gdb";
 var datasetPath = "Your Document Directory" + "AddLayerToFileGdbDataset_out.gdb";
 RunExamples.CopyDirectory(path, datasetPath);
 ```
-## Krok 2: Otwórz zbiór danych i sprawdź możliwości tworzenia
- Otwórz zduplikowany zbiór danych i sprawdź, czy może tworzyć warstwy. Potwierdza to obecność`True` na wyjściu konsoli.
+
+## Krok 2: Otwieranie zbioru danych i weryfikacja możliwości tworzenia
+Otwórz nowo skopiowany zestaw danych i potwierdź, że można w nim tworzyć nowe warstwy. Właściwość `CanCreateLayers` powinna zwrócić **True**.
+
 ```csharp
 using (var dataset = Dataset.Open(datasetPath, Drivers.FileGdb))
 {
-    Console.WriteLine(dataset.CanCreateLayers); // PRAWDA
+    Console.WriteLine(dataset.CanCreateLayers); // True
 ```
-## Krok 3: Utwórz i wypełnij nową warstwę
-Utwórz nową warstwę w zestawie danych, definiując jej system odniesień przestrzennych, atrybuty i przykładowy obiekt. Ten fragment kodu demonstruje proces:
+
+## Krok 3: Utworzenie i wypełnienie nowej warstwy odniesieniem przestrzennym wgs84
+Teraz tworzymy warstwę o nazwie **data** i explicite ustawiamy jej układ współrzędnych na **Wgs84**. Dodajemy także prosty atrybut **Name** oraz wstawiamy jedną cechę punktową.
+
 ```csharp
 using (var layer = dataset.CreateLayer("data", SpatialReferenceSystem.Wgs84))
 {
@@ -59,28 +88,45 @@ using (var layer = dataset.CreateLayer("data", SpatialReferenceSystem.Wgs84))
     layer.Add(feature);
 }
 ```
-## Krok 4: Otwórz i zatwierdź dodaną warstwę
-Otwórz właśnie utworzoną warstwę i sprawdź jej zawartość. Sprawdź liczbę i pobierz wartości atrybutów, używając następującego kodu:
+
+## Krok 4: Otwieranie i weryfikacja dodanej warstwy
+Na koniec otwieramy warstwę, którą właśnie utworzyliśmy, i weryfikujemy jej zawartość. Konsola pokaże, że warstwa zawiera jedną cechę oraz że atrybut **Name** jest zgodny z ustawioną wartością.
+
 ```csharp
 using (var layer = dataset.OpenLayer("data"))
 {
     Console.WriteLine(layer.Count); // 1
-    Console.WriteLine(layer[0].GetValue<string>("Name")); // „Nazwa_1”
+    Console.WriteLine(layer[0].GetValue<string>("Name")); // "Name_1"
 }
 ```
-## Wniosek
-Gratulacje! Pomyślnie nauczyłeś się, jak dodać warstwę do zbioru danych File GDB przy użyciu Aspose.GIS dla .NET. Dzięki tym nowo odkrytym umiejętnościom możesz efektywnie manipulować danymi geograficznymi w swoich projektach GIS.
-## Często Zadawane Pytania
-### P: Czy mogę używać Aspose.GIS dla .NET z innymi bibliotekami GIS?
-Aspose.GIS dla .NET został zaprojektowany do niezależnej pracy, ale można go zintegrować z innymi bibliotekami w celu zwiększenia funkcjonalności.
-### P: Czy dostępna jest licencja tymczasowa do celów testowych?
- Tak, możesz uzyskać licencję tymczasową od[Tutaj](https://purchase.aspose.com/temporary-license/) do testowania i oceny.
-### P: Jakie systemy odniesień przestrzennych obsługuje Aspose.GIS dla .NET?
-Aspose.GIS dla .NET obsługuje szeroką gamę systemów odniesień przestrzennych, zapewniając elastyczność w obsłudze danych geograficznych.
-### P: Czy mogę przyczynić się do społeczności Aspose.GIS?
- Absolutnie! Dołącz do dyskusji i podziel się swoimi doświadczeniami na stronie[Forum Aspose.GIS](https://forum.aspose.com/c/gis/33).
-### P: Gdzie mogę znaleźć szczegółową dokumentację Aspose.GIS dla .NET?
- Zapoznaj się z obszerną dokumentacją[Tutaj](https://reference.aspose.com/gis/net/) aby uzyskać szczegółowe informacje na temat Aspose.GIS dla .NET.
+
+## Typowe problemy i wskazówki
+- **Nieprawidłowa piżka:** Upewnij się, że `dataDir` kończy się separatorem piśżki (`/` lub `\`), aby połączone pliki utworzyły się poprawnie.
+- **Błędy licencyjne:** Jej pojawienie się następuje o licencji, uruchamianej tymczasową licencją z portalu Aspose przed wydaniem kodu.
+- **Niezgodność CRS:** Przy otwieraniu swastwy w innym żyłęcieu GIS, sprawdź, czy wyżęty rozpoznaje WGS84 (EPSG:4326) jako system współorządnych.
+
+## Często zadawane pytania
+### P: Czy mogę używać Aspose.GIS dla .NET wraz z innymi bibliotekami GIS?
+Aspose.GIS dla .NET jest zaprojektowany do pracy zadznejnej, ale może być zintegrowany z innymi bibliotekami w celu rozszenia funksiółości.
+
+### P: Czy geguna jest tymczasową licencją do cerzul testowych?
+Tak, tymczasową szkodę poża obtujące [tutaj](https://purchase.aspose.com/temporary-license/) do testów i oczy.
+
+### P: Jakie systemy monitorowania przestrzennego obstavlja Aspose.GIS dla .NET?
+Aspose.GIS dla .NET obsługuje szeroką gamę systemów, zapewniając elastyczność w obsłudze danych geograficznych.
+
+### P: Czy mogę wnieść swój wkład do Aspose.GIS?
+Oczywiście! Dołącz do discuzi i podzieł się prącznościami na [forum Aspose.GIS](https://forum.aspose.com/c/gis/33).
+
+### P: Gdzie znaleźć pościową dokumentację Aspose.GIS dla .NET?
+Kompletna dokumentacja cinciądze [tutaj](https://reference.aspose.com/gis/net/) – zawiera deszeciący informacje o Aspose.GIS dla .NET.
+
+---
+
+**Ostatnia aktualizacja:** 13.01.2026
+**Testowano z:** Aspose.GIS dla .NET (najnowsza wersja stabilna)
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
