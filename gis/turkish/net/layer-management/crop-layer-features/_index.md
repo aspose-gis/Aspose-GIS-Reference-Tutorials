@@ -119,15 +119,15 @@ E: Aspose.GIS, temel GDAL sürücülerinin desteklediği tüm formatları, JPEG2
 ## Sonuç
 Bu kılavuzu izleyerek artık Aspose.GIS for .NET ile **katman kırpma** özelliklerini verimli bir şekilde nasıl yapacağınızı biliyorsunuz. **Poligon ile raster kırpma**, **raster hücre boyutunu çıkar** ve **raster kapsamını al** işlemlerini kolayca gerçekleştirebilir ve herhangi bir projenin ihtiyaçlarına uyarlayabilirsiniz. Yeniden projeksiyon, raster stil verme ve vektör analizi için diğer API'ları keşfederek coğrafi iş akışlarınızın tam potansiyelini ortaya çıkarın.
 
+---
+
+**Last Updated:** 2026-01-13  
+**Tested With:** Aspose.GIS 24.10 for .NET  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026-01-13  
-**Tested With:** Aspose.GIS 24.10 for .NET  
-**Author:** Aspose

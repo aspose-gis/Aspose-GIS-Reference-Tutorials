@@ -14,34 +14,34 @@ weight: 16
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# spatial reference wgs84 – إضافة طبقة إلى GDB باستخدام Aspose.GIS
+# الإسناد المكاني wgs84 – قم بإضافته إلى GDB باستخدام Aspose.GIS
 
-## Introduction
-هل أنت مستعد لتعزيز سير عمل GIS الخاص بك باستخدام Aspose.GIS for .NET؟ في هذا الدرس ستتعلم **كيفية إضافة طبقة إلى مجموعة بيانات File GDB** أثناء العمل مع نظام الإحداثيات **spatial reference wgs84**. سنستعرض كل خطوة، من إعداد مجلد البيانات الخاص بك إلى التحقق من صحة الطبقة التي تم إنشاؤها حديثًا، حتى تتمكن من بدء معالجة البيانات الجغرافية بثقة.
+## مقدمة
+هل انت صور بک سیر امل GIS هایس بک بیک بیک Aspose.GIS for .NET؟ ستتعلم في هذا الدرس **كيفية إضافة طبقة إلى مجموعة من ملفات البيانات GDB** أثناء العمل مع النظام الإحداثي **الإسناد المكاني wgs84**. لن نقوم بكل خطوة، بدءًا من إعداد مجموعة البيانات الخاصة بك وحتى التحقق من صحة الفصل الذي تم إنشاؤه مؤخرًا، حتى تتمكن من البدء في معالجة البيانات الجغرافية.
 
-## Quick Answers
-- **ما هو نظام الإحداثيات الأساسي المستخدم؟** spatial reference wgs84 (WGS 84)  
-- **أي مكتبة توفر الـ API؟** Aspose.GIS for .NET  
-- **هل أحتاج إلى ترخيص للاختبار؟** نعم – ترخيص Aspose مؤقت متاح.  
-- **هل يمكنني إضافة سمات إلى الطبقة الجديدة؟** بالتأكيد، يمكنك تعريف أي عدد من سمات الميزة.  
-- **ما إصدارات .NET المدعومة؟** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6.
+## إجابات سريعة
+- **ما هو نزام قيادات عنيام المثيرة؟** الإسناد المكاني wgs84 (WGS84)
+- **اي مكتبة توفر الـ API?** Aspose.GIS for .NET
+- **هل أحتا إلى ترخيص للتخصص?** نعم –ترخيص Aspose Aspose.
+- **هل إلى سمات الحديثة إلى تبقة?** استبديل, تعريف اي تعريف اي تحميل من سمات على التحميل.
+- **ما استقراء .NET المدعومه؟** .NET Framework4.5+, .NET Core3.1+, .NET5/6.
 
-## What is spatial reference wgs84?
-الإشارة المكانية wgs84 (World Geodetic System 1984) هي نظام الإحداثيات الجغرافية الأكثر استخدامًا. تُعرّف خطوط العرض والطول بالدرجات وتعمل كنظام إحداثيات افتراضي للعديد من مجموعات بيانات GIS، بما في ذلك تلك التي سننشئها في هذا الدليل.
+## ما هو الإسناد المكاني wgs84؟
+إصلاة المكانية wgs84 (النظام الجيوديسي العالمي 1984) هيزام القرآنيات الغرفورية الأملت يستقورًا. تُعرّف خطوط العرض والطول بالدرجات وتعمل كنظام إحداثي افتراضي للعديد من مجموعات بيانات نظم المعلومات الجغرافية، بما في ذلك تلك التي سنقوم بإنشائها في هذا الدليل.
 
-## Why use Aspose.GIS to add a layer?
-- **بدون تبعيات خارجية:** يعمل مباشرةً مع كود .NET النقي.  
-- **تحكم كامل في المخطط:** يمكنك تعريف سمات مخصصة وأنواع هندسية.  
-- **متعدد المنصات:** متوافق مع بيئات تشغيل Windows وLinux وmacOS.  
-- **ترخيص قوي:** تسمح التراخيص المؤقتة بتقييم سريع قبل الالتزام.
+## لماذا نستخدم Aspose.GIS لإضافة طبقة؟
+- **بدون تعبايات براقة:** يعمل مباشرة مع كود .NET.
+- **تخصيم كامل في الشراء:** يمكنك تحديد الميزات وأنواع التصميم المخصصة.
+- **أنظمة أساسية متعددة:** متوافق مع أنظمة التشغيل Windows وLinux وmacOS.
+- **ترخيص قوي:** التراخيص تحميل التلخيص التحميل السريع قبل عليبة.
 
-## Prerequisites
+## المتطلبات الأساسية
 قبل البدء، تأكد من أن لديك:
 
-- مكتبة Aspose.GIS for .NET: قم بتنزيل وتثبيت المكتبة من [Aspose.GIS for .NET Documentation](https://reference.aspose.com/gis/net/).  
-- دليل المستندات: أنشئ مجلدًا مخصصًا على جهازك لتخزين ملفات GIS.
+- مؤسسة Aspose.GIS for .NET: قم بتعليقة التثبيت المؤسسة من [Aspose.GIS for .NET Documentation](https://reference.aspose.com/gis/net/).
+- دليل الإكتمونات: أنشك مجلدًا مزدوجًا على التحكم مففولة GIS.
 
-## Import Namespaces
+## استيراد مساحات الأسماء
 أضف عبارات `using` المطلوبة إلى مشروع C# الخاص بك حتى تتمكن من الوصول إلى فئات Aspose.GIS:
 
 ```csharp
@@ -56,7 +56,7 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## Step 1: Copy Directory
+## الخطوة 1: نسخ المجلد
 أولاً، قم بنسخ المجلد الذي يحتوي على مجموعة بيانات GDB الأصلية. الحفاظ على نسخة يحمي البيانات المصدر أثناء التجربة.
 
 ```csharp
@@ -66,7 +66,7 @@ var datasetPath = "Your Document Directory" + "AddLayerToFileGdbDataset_out.gdb"
 RunExamples.CopyDirectory(path, datasetPath);
 ```
 
-## Step 2: Open Dataset and Verify Creation Capability
+## الخطوة 2: فتح مجموعة البيانات والتحقق من إمكانية الإنشاء
 افتح مجموعة البيانات المنسوخة حديثًا وتأكد من أنها يمكنها إنشاء طبقات جديدة. يجب أن تُعيد خاصية `CanCreateLayers` القيمة **True**.
 
 ```csharp
@@ -75,7 +75,7 @@ using (var dataset = Dataset.Open(datasetPath, Drivers.FileGdb))
     Console.WriteLine(dataset.CanCreateLayers); // True
 ```
 
-## Step 3: Create and Populate a New Layer with spatial reference wgs84
+## الخطوة 3: إنشاء طبقة جديدة وتعبئتها بالإحداثيات المكانية WGS84
 الآن نقوم بإنشاء طبقة باسم **data** ونحدد صراحةً إشارةها المكانية إلى **Wgs84**. نضيف أيضًا سمة بسيطة تسمى **Name** ونُدرج ميزة نقطة واحدة.
 
 ```csharp
@@ -89,7 +89,7 @@ using (var layer = dataset.CreateLayer("data", SpatialReferenceSystem.Wgs84))
 }
 ```
 
-## Step 4: Open and Validate the Added Layer
+## الخطوة 4: فتح الطبقة المضافة والتحقق من صحتها
 أخيرًا، افتح الطبقة التي أنشأتها للتو وتحقق من محتوياتها. سيظهر في وحدة التحكم أن الطبقة تحتوي على ميزة واحدة وأن سمة **Name** تتطابق مع ما حددناه.
 
 ```csharp
@@ -100,26 +100,34 @@ using (var layer = dataset.OpenLayer("data"))
 }
 ```
 
-## Common Issues & Tips
-- **مسار غير صحيح:** تأكد من أن `dataDir` ينتهي بفاصل مسار (`/` أو `\`) حتى تُكوّن السلاسل المتصلة مسارات ملفات صالحة.  
-- **أخطاء الترخيص:** إذا ظهرت تحذيرات ترخيص، قم بتطبيق ترخيص مؤقت من بوابة Aspose قبل تشغيل الكود.  
-- **عدم تطابق CRS:** عند فتح الطبقة لاحقًا في أداة GIS أخرى، تأكد من أن الأداة تتعرف على WGS 84 (EPSG:4326) كنظام الإحداثيات.
+## المشكلات والنصائح الشائعة
+- **مسار غير صحيح:** تأكد من أن `dataDir` ينتهي بمسار فصل (`/` أو `\`) حتى تُنشئ السلاس غير المشروعات مشاريع مفولة صالحة.
+- **أختراء الخلفية:** إذا ظهرت التحذيرات الخاصة بالترخيص، قم بزيارة مطلوبة لكنير من بعدة Aspose قبل تعريف الكود.
+- **غير متوافق مع CRS:** عند فتح الفرنسية صحتًا في جديل GIS عرض المزيد، تأكد من أن الأداة تتعرف على WGS84 (EPSG:4326) كنظام القرآنيات.
 
-## Frequently Asked Questions
-### Q: Can I use Aspose.GIS for .NET with other GIS libraries?
-تم تصميم Aspose.GIS for .NET للعمل بشكل مستقل، ولكن يمكن دمجه مع مكتبات أخرى لتعزيز الوظائف.
+## الأسئلة المتداولة
+### س: هل يمكنني استخدام Aspose.GIS for .NET مع مكتبات GIS الأخرى؟
+تم تصميم Aspose.GIS for .NET للعمل بشكل مستقل، ولكن يمكن دمجه مع مكتبات أخرى لتحسين الأداء الوظيفي.
 
-### Q: Is a temporary license available for testing purposes?
-نعم، يمكنك الحصول على ترخيص مؤقت من [here](https://purchase.aspose.com/temporary-license/) للاختبار والتقييم.
+### س: هل الترخيص المؤقت متاح لأغراض الاختبار؟
+نعم، يمكنك الحصول على ترخيص مؤقت من [هنا](https://purchase.aspose.com/temporary-license/) لأغراض الاختبار والتجربة.
 
-### Q: What spatial reference systems does Aspose.GIS for .NET support?
-يدعم Aspose.GIS for .NET مجموعة واسعة من أنظمة الإشارة المكانية، مما يوفر مرونة في معالجة البيانات الجغرافية.
+## س: ما هي أنظمة الإسناد المكاني التي يدعمها Aspose.GIS لـ .NET؟
 
-### Q: Can I contribute to the Aspose.GIS community?
-بالطبع! انضم إلى المناقشات وشارك تجاربك على [Aspose.GIS forum](https://forum.aspose.com/c/gis/33).
+يدعم Aspose.GIS لـ .NET نطاقًا واسعًا من أنظمة الإسناد المكاني، مما يوفر مرونة في معالجة البيانات الجغرافية.
 
-### Q: Where can I find detailed documentation for Aspose.GIS for .NET?
+## س: هل يمكنني المساهمة في مجتمع Aspose.GIS؟
+
+بالتأكيد! انضم إلى منتدى Aspose.GIS (https://forum.aspose.com/c/gis/33).
+
+## س: أين يمكنني العثور على توثيق مفصل لـ Aspose.GIS لـ .NET؟
 استكشف الوثائق الشاملة [here](https://reference.aspose.com/gis/net/) للحصول على معلومات متعمقة حول Aspose.GIS for .NET.
+
+---
+
+**آخر تحديث:** 2026-01-13  
+**تم الاختبار باستخدام:** Aspose.GIS for .NET (latest stable version)  
+**المؤلف:** Aspose
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
@@ -127,9 +135,3 @@ using (var layer = dataset.OpenLayer("data"))
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**آخر تحديث:** 2026-01-13  
-**تم الاختبار باستخدام:** Aspose.GIS for .NET (latest stable version)  
-**المؤلف:** Aspose

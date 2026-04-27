@@ -14,36 +14,36 @@ weight: 19
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Jak przyciąć warstwę funkcji
+# Jak przy regulacji stawu funkcji
 
-## Introduction
-W tym samouczku nauczysz się **how to crop layer** funkcji przy użyciu Aspose.GIS dla .NET, potężnego podejścia, które pozwala **crop raster with polygon**, **extract raster cell size** oraz **retrieve raster extent** w celu precyzyjnej analizy geoprzestrzennej. Niezależnie od tego, czy przygotowujesz dane do mapy internetowej, przycinasz zdjęcia satelitarne, czy izolujesz obszar zainteresowania, ten przewodnik krok po kroku pokaże Ci dokładnie, jak wykonać zadanie.
+## Wstęp
+W tym samouczku nauczysz się **jak przyciąć warstwę** funkcję przy szączy Aspose.GIS dla .NET, po wyłączeniu, korowe pozwala **przyciąć raster z wielokątem**, **wyodrębnić rozmiar komórki rastrowej** oraz **pobrać zasięg rastra** w celu precyzyjnej analizy geoprzestrzennej. Niezażenzie od tego, czy przyżenzesz dane do map internetoje, przycinasz zdjęcia sattelitene, czy izolujesz obszar obszadenia, ten przewodnik krok po kroku krok Ci zakkei, jak zadąża zadanie.
 
-## Quick Answers
-- **Co oznacza „crop layer”?** Przycina warstwę rastrową lub wektorową do granic dostarczonej geometrii.  
-- **Jaką geometrię użyto w tym przykładzie?** Poligon zdefiniowany w formacie WKT.  
-- **Czy mogę wyodrębnić rozmiar komórki po przycięciu?** Tak – właściwość `CellSize` dostarcza tę informację.  
-- **Czy potrzebuję licencji do uruchomienia kodu?** Licencja tymczasowa wystarcza do oceny; pełna licencja jest wymagana w produkcji.  
-- **Jakie wersje .NET są obsługiwane?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
+## Szybkie odpowiedzi
+- **Co oznacza „warstwa uprawna”?**
+- **Jaka geometrię użyto w tym przybłeczu?** Poligon obowiązujący w WKT.
+- **Czy można wyodrębnić rozmir słomki po przycięciu?** Tak – własność `CellSize` dostarcza tę informację.
+- **Czy wersja jest dostępna do uruchomienia kodu?** Licencja tymczasowa tywirka do otnye; w produkcji wymagana jest pełna licencja.
+- **Czy jakieś wersje .NET są obschiwane?** .NET Framework4.5+, .NETCore3.1+, .NET5/6/7.
 
-## What is “how to crop layer”?
-Przycinanie warstwy oznacza ograniczenie zestawu danych do określonego obszaru geograficznego, odrzucając wszystko poza zdefiniowanym kształtem. Redukuje to rozmiar pliku, przyspiesza przetwarzanie i skupia analizę na interesującym Cię regionie.
+## Co to jest „jak przyciąć warstwę”?
+Przycinanie stawwy oznaczona ograniczająca setawu danych do połęcznego obszaru geograficznego, odrzucając wszystko poza kzłowem. Redukuje to, uruchamiając plik, uruchamiając analizę na podstawie analizy Cije.
 
-## Why use Aspose.GIS for cropping?
-- **High‑performance raster handling** – idealne dla dużych plików GeoTiff.  
-- **Simple API** – jednowierszowe wywołanie `Crop` z dowolną geometrią.  
-- **Full .NET compatibility** – działa w aplikacjach desktop, serwerowych i chmurowych.  
-- **Accurate spatial reference handling** – automatycznie zachowuje informacje o CRS.
+## Dlaczego warto używać Aspose.GIS do przycinania?
+- **Wysoka wydajność obsługi rastrów** – idealnie nadaje się do dużych plików GeoTiff.
+- **Simple API** – jednowierszowe próżenie `Crop` z szczegółową geometrią.
+- **Pełna kompatybilność z .NET** – współpracuje z aplikacjami desktopowymi, serwerowymi i chmurowymi.
+- **Dokładna obsługa odniesień przestrzennych** – automatycznie powtarza informacje o CRS.
 
-## Prerequisites
+## Warunki wstępne
 Zanim zagłębisz się w magię manipulacji geoprzestrzennej, upewnij się, że spełniasz następujące wymagania:
 
-- Aspose.GIS for .NET Library: Upewnij się, że biblioteka Aspose.GIS jest zainstalowana w Twoim projekcie .NET. Możesz ją pobrać [tutaj](https://releases.aspose.com/gis/net/).  
-- Document Directory: Utwórz katalog do przechowywania dokumentów. Zastąp `"Your Document Directory"` w podanym kodzie rzeczywistą ścieżką do swojego katalogu dokumentów.
+- Biblioteka Aspose.GIS dla .NET: Upewnij się, że biblioteka Aspose.GIS jest zainstalowana w twoim projekcie .NET. Możesz pobrać [raft](https://releases.aspose.com/gis/net/).
+- Katalog dokumentów: Utwórz katalog do przechowywania dokumentów. Zastąp `"Your Document Directory"` w ukrytym kodzie rzeczywistą pieczątką do svojgo katulogu dokumentu.
 
 Teraz przejdźmy do przewodnika krok po kroku.
 
-## Import Namespaces
+## Importuj przestrzenie nazw
 Rozpocznij od zaimportowania niezbędnych przestrzeni nazw, aby w pełni wykorzystać możliwości Aspose.GIS:
 
 ```csharp
@@ -53,7 +53,7 @@ using Aspose.Gis;
 using Aspose.Gis.Geometries;
 ```
 
-## Step 1: Open and Crop the Layer (crop raster with polygon)
+## Krok 1: Otwórz i przytnij warstwę (przytnij raster wielokątem)
 Rozpocznij od otwarcia warstwy GeoTiff i przycięcia jej na podstawie zdefiniowanego poligonu. Zapewnia to, że Twoje dane geoprzestrzenne są ograniczone do określonego obszaru zainteresowania.
 
 ```csharp
@@ -62,7 +62,7 @@ using (var warped = layer.Crop(Geometry.FromText("POLYGON ((-160 0, 0 60, 160 0,
 {
 ```
 
-## Step 2: Retrieve Raster Information (extract raster cell size & retrieve raster extent)
+## Krok 2: Pobierz informacje o rastrze (wyodrębnij rozmiar komórki rastra i pobierz zakres rastra)
 Po przycięciu warstwy wyodrębnij kluczowe informacje o danych rastrowych, takie jak rozmiar komórki, system odniesień przestrzennych oraz granice.
 
 ```csharp
@@ -74,7 +74,7 @@ var code = spatialRefSys == null ? "'no srs'" : spatialRefSys.EpsgCode.ToString(
 var bounds = warped.Bounds;
 ```
 
-## Step 3: Display Information
+## Krok 3: Wyświetl informacje
 Wydrukuj wyodrębnione informacje, aby zrozumieć wpływ procesu przycinania na Twoje dane geoprzestrzenne.
 
 ```csharp
@@ -87,37 +87,43 @@ Console.WriteLine($"bounds: {bounds}");
 
 Powtarzaj te kroki w razie potrzeby, aby dopracować i dostosować dane geoprzestrzenne do konkretnych wymagań projektu.
 
-## Common Issues and Solutions
-| Issue | Solution |
-|-------|----------|
-| **Incorrect polygon orientation** | Upewnij się, że poligon WKT spełnia regułę prawej ręki (przeciwnie do ruchu wskazówek zegara dla pierścieni zewnętrznych). |
-| **Missing spatial reference** | Zweryfikuj, czy źródłowy GeoTiff zawiera CRS; w przeciwnym razie ustaw go ręcznie przed przycięciem. |
-| **Performance slowdown on huge rasters** | Użyj `layer.Crop` na kopii o niższej rozdzielczości lub przetwarzaj raster w kafelkach. |
+## Typowe problemy i rozwiązania
+| Wydanie | Rozwiązanie |
+|-------|--------------|
+| **Nieprawidłowa orientacja wielokąta** | Upewnij się, że poligon WKT spełnia regułę prawej ręki. |
+| **Brak odniesienia przestrzennego** | Zweryfikuj, czy yśrowowy GeoTiff zawiera CRS; w przeciwnym wypadku ustaw go hande przed przycietnom. |
+| **Spowolnienie wydajności na dużych rastrach** | Użyj `layer.Crop` na kopie o nijszej szczecinie lub przetwarzaj raster w kafelkach. |
 
-## Frequently Asked Questions
-### Q: Is a temporary license available for Aspose.GIS for .NET?
-A: Yes, you can obtain a temporary license [here](https://purchase.aspose.com/temporary-license/).
+## Często zadawane pytania
+### P: Czy dostępna jest tymczasowa licencja na Aspose.GIS dla .NET?
+Odpowiedź: Tak, możesz uzyskać licencję tymczasową [tutaj] (https://purchase.aspose.com/temporary-license/).
 
-### Q: Where can I find comprehensive documentation for Aspose.GIS for .NET?
-A: The documentation is available [here](https://reference.aspose.com/gis/net/).
+### P: Gdzie mogę znaleźć pełną dokumentację Aspose.GIS dla .NET?
+O: Dokumentacja jest dostępna [tutaj](https://reference.aspose.com/gis/net/).
 
-### Q: How can I seek support or connect with the community for Aspose.GIS for .NET?
-A: Visit the [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) for support and community engagement.
+### P: Jak mogę uzyskać wsparcie lub nawiązać kontakt ze społecznością Aspose.GIS dla .NET?
+O: Odwiedź [forum Aspose.GIS](https://forum.aspose.com/c/gis/33), aby uzyskać wsparcie i zaangażować się w społeczność.
 
-### Q: Can I download a free trial of Aspose.GIS for .NET?
-A: Yes, you can download a free trial [here](https://releases.aspose.com/).
+### P: Czy mogę pobrać bezpłatną wersję próbną Aspose.GIS dla .NET?
+O: Tak, możesz pobrać bezpłatną wersję próbną [tutaj](https://releases.aspose.com/).
 
-### Q: Where can I purchase Aspose.GIS for .NET?
-A: You can purchase the library [here](https://purchase.aspose.com/buy).
+### P: Gdzie mogę kupić Aspose.GIS dla .NET?
+O: Możesz kupić bibliotekę [tutaj](https://purchase.aspose.com/buy).
 
-### Q: Can I crop multiple layers in a single run?
-A: Yes—loop over each layer and apply the same `Crop` call with the desired geometry.
+### P: Czy mogę przyciąć wiele warstw w jednym przebiegu?
+O: Tak — wykonaj pętlę na każdej warstwie i zastosuj to samo wywołanie „Przytnij” z żądaną geometrią.
 
-### Q: Does the API support other raster formats (e.g., JPEG2000)?
-A: Aspose.GIS supports all formats that the underlying GDAL drivers expose, including JPEG2000, PNG, and more.
+### P: Czy interfejs API obsługuje inne formaty rastrowe (np. JPEG2000)?
+Odp.: Aspose.GIS obsługuje wszystkie formaty udostępniane przez podstawowe sterowniki GDAL, w tym JPEG2000, PNG i inne.
 
-## Conclusion
-Postępując zgodnie z tym przewodnikiem, teraz wiesz **how to crop layer** funkcje efektywnie przy użyciu Aspose.GIS dla .NET. Możesz łatwo **crop raster with polygon**, **extract raster cell size** oraz **retrieve raster extent**, aby dopasować je do potrzeb każdego projektu. Poznaj dalsze API do reprojekcji, stylizacji rastra i analizy wektorowej, aby odblokować pełny potencjał swoich przepływów pracy geoprzestrzennej.
+## Wniosek
+Postępowanie zgodnie z tym kluczem, teraz wiesz **jak przyciąć warstwę** funkcje dostępu przy szączy Aspose.GIS dla .NET. Możesz łatwo **przyciąć raster do wielokąta**, **wyodrębnić rozmiar komórki rastrowej** lub **pobrać zasięg rastra**, aby stworzyć je do potrzeb kegjego projektu. Poznaj dalsse API do reprojekcji, stylizacji rastra i analizy vektorowej, aby odblokować płowni potencjałów swoich płowchów pracy geoprzestrzennej.
+
+---
+
+**Ostatnia aktualizacja:** 13.01.2026
+**Testowano z:** Aspose.GIS 24.10 dla .NET
+**Autor:** Aspose
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
@@ -125,9 +131,3 @@ Postępując zgodnie z tym przewodnikiem, teraz wiesz **how to crop layer** funk
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Ostatnia aktualizacja:** 2026-01-13  
-**Testowano z:** Aspose.GIS 24.10 for .NET  
-**Autor:** Aspose

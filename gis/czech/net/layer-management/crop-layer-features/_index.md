@@ -119,13 +119,6 @@ A: Aspose.GIS podporuje všechny formáty, které jsou k dispozici prostřednict
 ## Závěr
 Po absolvování tohoto průvodce nyní víte **jak oříznout vrstvy** efektivně pomocí Aspose.GIS pro .NET. Snadno můžete **ořezat rastr polygonem**, **získat velikost buňky rastru** a **získat rozsah rastru** tak, aby vyhovovaly potřebám jakéhokoli projektu. Prozkoumejte další API pro reprojekci, stylování rasteru a vektorovou analýzu a odemkněte tak plný potenciál vašich geoprostorových pracovních postupů.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Poslední aktualizace:** 2026-01-13  
@@ -133,3 +126,10 @@ Po absolvování tohoto průvodce nyní víte **jak oříznout vrstvy** efektivn
 **Autor:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

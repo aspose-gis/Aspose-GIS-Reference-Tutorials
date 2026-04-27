@@ -120,15 +120,15 @@ Aspose.GIS for .NET은 다양한 spatial reference 시스템을 폭넓게 지원
 ### Q: Aspose.GIS for .NET에 대한 자세한 문서는 어디서 찾을 수 있나요?
 자세한 내용은 [여기](https://reference.aspose.com/gis/net/)에서 포괄적인 문서를 확인하세요.
 
+---
+
+**마지막 업데이트:** 2026-01-13  
+**테스트 환경:** Aspose.GIS for .NET (최신 안정 버전)  
+**작성자:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**마지막 업데이트:** 2026-01-13  
-**테스트 환경:** Aspose.GIS for .NET (최신 안정 버전)  
-**작성자:** Aspose

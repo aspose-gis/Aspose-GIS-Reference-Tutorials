@@ -121,15 +121,15 @@ Absolutamente! Participe das discussões e compartilhe suas experiências no [As
 ### P: Onde posso encontrar documentação detalhada do Aspose.GIS para .NET?
 Explore a documentação completa [aqui](https://reference.aspose.com/gis/net/) para informações aprofundadas sobre Aspose.GIS for .NET.
 
+---
+
+**Last Updated:** 2026-01-13  
+**Tested With:** Aspose.GIS for .NET (latest stable version)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026-01-13  
-**Tested With:** Aspose.GIS for .NET (latest stable version)  
-**Author:** Aspose

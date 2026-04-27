@@ -121,15 +121,15 @@ Természetesen! Csatlakozz a beszélgetésekhez és oszd meg tapasztalataidat az
 ### K: Hol találhatom meg az Aspose.GIS for .NET részletes dokumentációját?
 Tekintsd meg a részletes dokumentációt [itt](https://reference.aspose.com/gis/net/), ahol alapos információkat találsz az Aspose.GIS for .NET‑ről.  
 
+---
+
+**Utoljára frissítve:** 2026-01-13  
+**Tesztelt verzió:** Aspose.GIS for .NET (latest stable version)  
+**Szerző:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Utoljára frissítve:** 2026-01-13  
-**Tesztelt verzió:** Aspose.GIS for .NET (latest stable version)  
-**Szerző:** Aspose

@@ -14,35 +14,36 @@ weight: 16
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# spatial reference wgs84 – Add Layer to GDB using Aspose.GIS
+# referensi spasial wgs84 – Tambahkan Layer ke GDB menggunakan Aspose.GIS
 
-## Introduction
-Siap meningkatkan alur kerja GIS Anda dengan Aspose.GIS untuk .NET? Pada tutorial ini Anda akan mempelajari **cara menambahkan layer ke dataset File GDB** sambil bekerja dengan sistem koordinat **spatial reference wgs84**. Kami akan membimbing Anda melalui setiap langkah, mulai dari menyiapkan folder data hingga memvalidasi layer yang baru dibuat, sehingga Anda dapat mulai memanipulasi data geografis dengan percaya diri.
+## Perkenalan
+Apakah Anda meningkatkan pekerjaan Anda dengan GIS Anda dengan Aspose.GIS untuk .NET? Pada tutorial ini Anda akan delmenada **cara mendapatkan lapisan ke dataset File GDB** sambil bekerja dengan sistem koordinat **referensi spasial wgs84**. Kami akan membimbing Anda melalui etiyap langkah, mulai dari memmpata folder data hingga memvalidasi layer yang baru keida, sepaha Anda dapat mulai memanipulasi data geografis dengan permanya diri.
 
-## Quick Answers
-- **Apa sistem koordinat utama yang digunakan?** spatial reference wgs84 (WGS 84)  
-- **Perpustakaan mana yang menyediakan API?** Aspose.GIS untuk .NET  
-- **Apakah saya memerlukan lisensi untuk pengujian?** Ya – lisensi sementara Aspose tersedia.  
-- **Bisakah saya menambahkan atribut ke layer baru?** Tentu saja, Anda dapat mendefinisikan sejumlah atribut fitur.  
-- **Versi .NET apa yang didukung?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6.
+## Jawaban Cepat
+- **Apa sistem koordinat utama yang diwana?** referensi spasial wgs84 (WGS84)
+- **Perpustakaan mana yang predukana API?** Aspose.GIS untuk .NET
+- **Apakah saya menyukai lisensi untuk tesaing?** Ya – lisensi semanta Aspose bebekandi.
+- ** ingin saya mendapat atribut ke layer baru? ** Tentu saja, Anda dapat mendefinisikan fitur atribut jumbal.
+- **Versi .NET apa yang didukung?** .NET Framework4.5+, .NET Core3.1+, .NET5/6.
 
-## What is spatial reference wgs84?
-spatial reference wgs84 (World Geodetic System 1984) adalah sistem koordinat geografis yang paling banyak digunakan. Sistem ini mendefinisikan lintang dan bujur dalam derajat dan berfungsi sebagai CRS default untuk banyak dataset GIS, termasuk yang akan kami buat dalam panduan ini.
+## Apa itu referensi spasial wgs84?
+referensi spasial wgs84 (World Geodetic System 1984) adalah sistem koordinat geografis yang paling banyak diwana. Sistem ini mendefinisikan lintang dan bujur dalam degradasi dan fungsi sebagai CRS default untuk banyak dataset GIS, pasamu yang akan kami buat dalam panduan ini.
 
-## Why use Aspose.GIS to add a layer?
-- **Tanpa ketergantungan eksternal:** Berfungsi langsung dengan kode .NET murni.  
-- **Kontrol penuh atas skema:** Anda dapat mendefinisikan atribut khusus dan tipe geometri.  
-- **Lintas‑platform:** Kompatibel dengan runtime Windows, Linux, dan macOS.  
-- **Lisensi yang kuat:** Lisensi sementara memungkinkan Anda mengevaluasi dengan cepat sebelum berkomitmen.
+## Mengapa menggunakan Aspose.GIS untuk menambahkan lapisan?
+- **Tanpa ketergantungan eksternal:** Berfungsi langsung dengan kode .NET murni.
+- **Kontrol penuh atas skema:** Anda dapat mendefinisikan atribut khusus dan tipe geometrik.
+- **Lintas‑platform:** Kompatibel dengan runtime Windows, Linux, dan macOS.
+- **Lisensi yang kuat:** Lisensi semanara pemangana Anda menyalakannya dengan cepat sebelum berkomitmen.
 
-## Prerequisites
+## Prasyarat
 Sebelum memulai, pastikan Anda memiliki:
 
-- Aspose.GIS untuk .NET Library: Unduh dan instal perpustakaan dari [Aspose.GIS for .NET Documentation](https://reference.aspose.com/gis/net/).  
-- Document Directory: Buat folder khusus di mesin Anda untuk menyimpan file GIS.
+- Pustaka Aspose.GIS untuk .NET: Unduh dan instal pustaka dari [Dokumentasi Aspose.GIS untuk .NET](https://reference.aspose.com/gis/net/).
 
-## Import Namespaces
-Tambahkan pernyataan `using` yang diperlukan ke proyek C# Anda sehingga Anda dapat mengakses kelas Aspose.GIS:
+- Direktori Dokumen: Buat folder khusus di mesin Anda untuk menyimpan file GIS.
+
+## Impor Namespace
+Tambahkan pernyataan `using` yang diperlukan untuk proyek C# Anda agar Anda dapat mengakses kelas Aspose.GIS:
 
 ```csharp
 using Aspose.Gis;
@@ -56,7 +57,7 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## Step 1: Copy Directory
+## Langkah 1: Salin Direktori
 Pertama, duplikat folder yang berisi dataset GDB asli. Menyimpan salinan melindungi data sumber saat Anda bereksperimen.
 
 ```csharp
@@ -66,7 +67,7 @@ var datasetPath = "Your Document Directory" + "AddLayerToFileGdbDataset_out.gdb"
 RunExamples.CopyDirectory(path, datasetPath);
 ```
 
-## Step 2: Open Dataset and Verify Creation Capability
+## Langkah 2: Buka Dataset dan Verifikasi Kemampuan Pembuatan
 Buka dataset yang baru disalin dan pastikan bahwa ia dapat membuat layer baru. Properti `CanCreateLayers` harus mengembalikan **True**.
 
 ```csharp
@@ -75,7 +76,7 @@ using (var dataset = Dataset.Open(datasetPath, Drivers.FileGdb))
     Console.WriteLine(dataset.CanCreateLayers); // True
 ```
 
-## Step 3: Create and Populate a New Layer with spatial reference wgs84
+## Langkah 3: Buat dan Isi Layer Baru dengan referensi spasial wgs84
 Sekarang kita membuat layer bernama **data** dan secara eksplisit menetapkan spatial reference-nya ke **Wgs84**. Kami juga menambahkan atribut sederhana bernama **Name** dan menyisipkan satu fitur titik.
 
 ```csharp
@@ -89,7 +90,7 @@ using (var layer = dataset.CreateLayer("data", SpatialReferenceSystem.Wgs84))
 }
 ```
 
-## Step 4: Open and Validate the Added Layer
+## Langkah 4: Buka dan Validasi Layer yang Ditambahkan
 Akhirnya, buka layer yang baru Anda buat dan verifikasi isinya. Konsol akan menampilkan bahwa layer tersebut berisi satu fitur dan bahwa atribut **Name** cocok dengan yang telah kami tetapkan.
 
 ```csharp
@@ -100,26 +101,32 @@ using (var layer = dataset.OpenLayer("data"))
 }
 ```
 
-## Common Issues & Tips
-- **Path tidak tepat:** Pastikan `dataDir` diakhiri dengan pemisah path (`/` atau `\`) sehingga string yang digabung membentuk path file yang valid.  
-- **Kesalahan lisensi:** Jika Anda melihat peringatan lisensi, terapkan lisensi sementara dari portal Aspose sebelum menjalankan kode.  
-- **Ketidaksesuaian CRS:** Saat membuka layer nanti di alat GIS lain, pastikan alat tersebut mengenali WGS 84 (EPSG:4326) sebagai sistem koordinat.
+## Masalah & Tip Umum
+- **Path tidak tepat:** Pastikan `dataDir` diakhiri dengan pemisah path (`/` atau `\`) sehata string yang digabung berarti file path yang valid.
+- **Kesalahan lisensi:** Jika Anda melihat memandaran lisensi, menerapkan lisensi semaran dari portal Aspose sebelum kemenakan kode.
+- **Ketidaksesuaian CRS:** Saat membuka lapisan nanti di alat GIS lain, pasiktan alat tersebut nakani WGS84 (EPSG:4326) sebagai sistem koordinat.
 
-## Frequently Asked Questions
-### Q: Can I use Aspose.GIS for .NET with other GIS libraries?
-Aspose.GIS untuk .NET dirancang agar dapat bekerja secara mandiri, tetapi dapat diintegrasikan dengan perpustakaan lain untuk fungsionalitas yang lebih luas.  
+## Pertanyaan yang Sering Diajukan
+### T: Bisakah saya menggunakan Aspose.GIS untuk .NET dengan perpustakaan GIS lainnya?
+Aspose.GIS untuk .NET dirancang agar dapat bekerja secara mandiri, sehingga dapat berinteraksi dengan perpustakaan lain untuk fungsi yang lebih luas.
 
-### Q: Is a temporary license available for testing purposes?
-Ya, Anda dapat memperoleh lisensi sementara dari [here](https://purchase.aspose.com/temporary-license/) untuk pengujian dan evaluasi.  
+### T: Apakah lisensi sementara tersedia untuk tujuan pengujian?
+Ya, Anda dapat menguji lisensi semesteran dari [di sini](https://purchase.aspose.com/temporary-license/) untuk tesaman dan evaluasi.
 
-### Q: What spatial reference systems does Aspose.GIS for .NET support?
-Aspose.GIS untuk .NET mendukung berbagai sistem referensi spasial, memberikan fleksibilitas dalam penanganan data geografis.  
+### T: Sistem referensi spasial apa yang didukung Aspose.GIS untuk .NET?
+Aspose.GIS untuk .NET mendungan sistem referensi spasial, megjukan fleksibilitas dalam penanganan data geografis.
 
-### Q: Can I contribute to the Aspose.GIS community?
-Tentu saja! Bergabunglah dalam diskusi dan bagikan pengalaman Anda di [Aspose.GIS forum](https://forum.aspose.com/c/gis/33).  
+### T: Dapatkah saya berkontribusi pada komunitas Aspose.GIS?
+Tentu saja! penyelesaian dalam diskusi dan bagikan pengamanan Anda di [Forum Aspose.GIS](https://forum.aspose.com/c/gis/33).
 
-### Q: Where can I find detailed documentation for Aspose.GIS for .NET?
-Jelajahi dokumentasi lengkap [here](https://reference.aspose.com/gis/net/) untuk informasi mendalam tentang Aspose.GIS untuk .NET.
+### T: Di mana saya dapat menemukan dokumentasi terperinci untuk Aspose.GIS untuk .NET?
+Jelajahi dokumentazione lengkap [here](https://reference.aspose.com/gis/net/) untuk informasi geşam tentang Aspose.GIS untuk .NET.
+
+---
+
+**Terakhir Diperbarui:** 2026-01-13
+**Diuji Dengan:** Aspose.GIS untuk .NET (versi stabil terbaru)
+**Pengembang:** Aspose
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
@@ -127,9 +134,3 @@ Jelajahi dokumentasi lengkap [here](https://reference.aspose.com/gis/net/) untuk
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026-01-13  
-**Tested With:** Aspose.GIS for .NET (latest stable version)  
-**Author:** Aspose

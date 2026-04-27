@@ -13,26 +13,26 @@ weight: 12
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# สร้าง Shapefile ใหม่
+# สร้างไฟล์ Shapefile ใหม่
 
-## Introduction
-If you're delving into geographic information systems (GIS) development with .NET, Aspose.GIS is your go‑to solution. This powerful library empowers developers to work seamlessly with spatial data, and in this tutorial, we'll guide you through how to **create new shapefile** using Aspose.GIS for .NET. You'll see why defining a vector layer and adding a date attribute are essential steps for robust GIS projects.
+## บทนำ
+หากคุณกำลังศึกษาการพัฒนาระบบสารสนเทศภูมิศาสตร์ (GIS) ด้วย .NET Aspose.GIS คือโซลูชันที่คุณควรใช้ ไลบรารีอันทรงพลังนี้ช่วยให้นักพัฒนาสามารถทำงานกับข้อมูลเชิงพื้นที่ได้อย่างราบรื่น และในบทช่วยสอนนี้ เราจะแนะนำวิธีการ **สร้างไฟล์ shapefile ใหม่** โดยใช้ Aspose.GIS สำหรับ .NET คุณจะได้เห็นว่าเหตุใดการกำหนดเลเยอร์เวกเตอร์และการเพิ่มแอตทริบิวต์วันที่จึงเป็นขั้นตอนสำคัญสำหรับโครงการ GIS ที่แข็งแกร่ง
 
-## Quick Answers
-- **What does this tutorial teach?** How to create a new shapefile, define a vector layer, and add attributes (including a date field).  
-- **Which library is required?** Aspose.GIS for .NET.  
-- **Do I need a license?** A free trial works for learning; a commercial license is required for production.  
-- **What IDE should I use?** Visual Studio (any recent version).  
-- **How long does the implementation take?** About 10‑15 minutes for the basic example.
+## คำตอบโดยย่อ
+- **บทช่วยสอนนี้สอนอะไร?** วิธีการสร้างไฟล์ shapefile ใหม่ กำหนดเลเยอร์เวกเตอร์ และเพิ่มแอตทริบิวต์ (รวมถึงฟิลด์วันที่)
+- **ต้องใช้ไลบรารีใด?** Aspose.GIS สำหรับ .NET
+- **ฉันต้องมีใบอนุญาตหรือไม่?** การทดลองใช้ฟรีเหมาะสำหรับการเรียนรู้ จำเป็นต้องมีใบอนุญาตเชิงพาณิชย์สำหรับการใช้งานจริง
+- **ฉันควรใช้ IDE ใด?** Visual Studio (เวอร์ชันล่าสุดใดก็ได้)
+- **การใช้งานใช้เวลานานแค่ไหน?** ประมาณ 10-15 นาทีสำหรับตัวอย่างพื้นฐาน
 
-## Prerequisites
-Before we jump into the tutorial, make sure you have the following prerequisites in place:
-- Basic understanding of C# programming language.
-- Visual Studio installed on your machine.
-- Aspose.GIS for .NET library. You can download it [here](https://releases.aspose.com/gis/net/).
+## ข้อกำหนดเบื้องต้น
+ก่อนที่เราจะเริ่มบทเรียน โปรดตรวจสอบให้แน่ใจว่าคุณมีข้อกำหนดเบื้องต้นต่อไปนี้:
+- ความเข้าใจพื้นฐานเกี่ยวกับภาษาการเขียนโปรแกรม C#
+- Visual Studio ติดตั้งอยู่ในเครื่องของคุณ
+- ไลบรารี Aspose.GIS สำหรับ .NET คุณสามารถดาวน์โหลดได้ [ที่นี่](https://releases.aspose.com/gis/net/)
 
-## Import Namespaces
-Start by importing the necessary namespaces to leverage the functionality of Aspose.GIS:
+## นำเข้าเนมสเปซ
+เริ่มต้นด้วยการนำเข้าเนมสเปซที่จำเป็นเพื่อใช้ประโยชน์จากฟังก์ชันการทำงานของ Aspose.GIS:
 
 ```csharp
 using Aspose.Gis;
@@ -44,16 +44,17 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## Step 1: Set Up Your Project
-Begin by creating a new C# project in Visual Studio and include the Aspose.GIS library.
+## ขั้นตอนที่ 1: ตั้งค่าโปรเจ็กต์ของคุณ
+เริ่มต้นด้วยการสร้างโปรเจ็กต์ C# ใหม่ใน Visual Studio และรวมไลบรารี Aspose.GIS เข้ามา
 
-## Step 2: Define the Document Directory
+## ขั้นตอนที่ 2: กำหนดไดเร็กทอรีเอกสาร
 ```csharp
 string dataDir = "Your Document Directory";
 ```
-Replace *Your Document Directory* with the actual path where you want to save your new shapefile.
 
-## Step 3: Create a VectorLayer
+แทนที่ *Your Document Directory* ด้วยเส้นทางจริงที่คุณต้องการบันทึกไฟล์ shapefile ใหม่ของคุณ
+
+## ขั้นตอนที่ 3: สร้างเลเยอร์เวกเตอร์
 ```csharp
 using (VectorLayer layer = VectorLayer.Create(dataDir + "NewShapeFile_out.shp", Drivers.Shapefile))
 {
@@ -62,10 +63,11 @@ using (VectorLayer layer = VectorLayer.Create(dataDir + "NewShapeFile_out.shp", 
     layer.Attributes.Add(new FeatureAttribute("age", AttributeDataType.Integer));
     layer.Attributes.Add(new FeatureAttribute("dob", AttributeDataType.DateTime));
 ```
-This code segment **defines a vector layer** and declares three attributes: a text field (`name`), an integer field (`age`), and a date‑time field (`dob`). Adding the date attribute is crucial for temporal GIS analyses.
 
-## Step 4: Add Features
-### Case 1: Sets Values Individually
+ส่วนของโค้ดนี้ **กำหนดเลเยอร์เวกเตอร์** และประกาศแอตทริบิวต์สามรายการ ได้แก่ ฟิลด์ข้อความ (`name`), ฟิลด์จำนวนเต็ม (`age`) และฟิลด์วันที่และเวลา (`dob`) การเพิ่มแอตทริบิวต์วันที่มีความสำคัญอย่างยิ่งสำหรับการวิเคราะห์ GIS เชิงเวลา
+
+## ขั้นตอนที่ 4: เพิ่มฟีเจอร์
+### กรณีที่ 1: กำหนดค่าทีละรายการ
 ```csharp
 Feature firstFeature = layer.ConstructFeature();
 firstFeature.Geometry = new Point(33.97, -118.25);
@@ -80,9 +82,10 @@ secondFeature.SetValue("age", 54);
 secondFeature.SetValue("dob", new DateTime(1984, 12, 15, 15, 30, 0));
 layer.Add(secondFeature);
 ```
-Here we create two points, set each attribute separately, and add the features to the layer.
 
-### Case 2: Sets New Values for All Attributes
+ในที่นี้เราสร้างจุดสองจุด กำหนดค่าแอตทริบิวต์แต่ละรายการแยกกัน และเพิ่มฟีเจอร์ลงในเลเยอร์
+
+### กรณีที่ 2: กำหนดค่าใหม่สำหรับแอตทริบิวต์ทั้งหมด
 ```csharp
 Feature thirdFeature = layer.ConstructFeature();
 thirdFeature.Geometry = new Point(34.81, -92.28);
@@ -91,40 +94,40 @@ thirdFeature.SetValues(data);
 layer.Add(thirdFeature);
 }
 ```
-In this approach we populate all attribute values in one call using an object array—handy when you have many attributes.
+ในวิธีการนี้ เราจะใส่ค่าแอตทริบิวต์ทั้งหมดในการเรียกเพียงครั้งเดียวโดยใช้อาร์เรย์ของออบเจ็กต์ ซึ่งสะดวกเมื่อคุณมีแอตทริบิวต์จำนวนมาก
 
-## Why This Matters
-Creating a shapefile programmatically lets you automate data pipelines, generate test datasets, or integrate GIS output directly into web services. By mastering **how to create shapefile** with Aspose.GIS, you gain full control over feature geometry, attribute schema, and file format compliance.
+## เหตุใดจึงสำคัญ
+การสร้างไฟล์ shapefile ด้วยโปรแกรมช่วยให้คุณสามารถทำให้กระบวนการจัดการข้อมูลเป็นไปโดยอัตโนมัติ สร้างชุดข้อมูลทดสอบ หรือผสานรวมเอาต์พุต GIS เข้ากับบริการเว็บได้โดยตรง การเรียนรู้ **วิธีการสร้างไฟล์ shapefile** ด้วย Aspose.GIS จะทำให้คุณควบคุมรูปทรงเรขาคณิตของฟีเจอร์ โครงสร้างแอตทริบิวต์ และการปฏิบัติตามรูปแบบไฟล์ได้อย่างเต็มที่
 
-## Common Pitfalls & Tips
-- **Path separators:** Use `Path.Combine` for cross‑platform compatibility instead of string concatenation.  
-- **Attribute order:** The order of values in `SetValues` must match the order you added attributes.  
-- **Date handling:** Always use `DateTimeKind.Utc` if your GIS data will be shared across time zones.
+## ข้อผิดพลาดทั่วไปและเคล็ดลับ
+- **ตัวคั่นเส้นทาง:** ใช้ `Path.Combine` เพื่อความเข้ากันได้ข้ามแพลตฟอร์มแทนการต่อสตริง
+- **ลำดับแอตทริบิวต์:** ลำดับของค่าใน `SetValues` ต้องตรงกับลำดับที่คุณเพิ่มแอตทริบิวต์
+- **การจัดการวันที่:** ใช้ `DateTimeKind.Utc` เสมอหากข้อมูล GIS ของคุณจะถูกแชร์ข้ามเขตเวลา
 
-## Conclusion
-Congratulations! You've successfully created a new shapefile using Aspose.GIS for .NET. This tutorial covered the basics of setting up your project, defining a vector layer, and adding features—including a date attribute. As you explore further, refer to the [documentation](https://reference.aspose.com/gis/net/) for advanced features and functionalities.
+## สรุป
+ขอแสดงความยินดี! คุณได้สร้างไฟล์ shapefile ใหม่โดยใช้ Aspose.GIS สำหรับ .NET สำเร็จแล้ว บทช่วยสอนนี้ครอบคลุมพื้นฐานของการตั้งค่าโปรเจ็กต์ การกำหนดเลเยอร์เวกเตอร์ และการเพิ่มฟีเจอร์ต่างๆ รวมถึงแอตทริบิวต์วันที่ ในขณะที่คุณสำรวจเพิ่มเติม โปรดดู [เอกสารประกอบ](https://reference.aspose.com/gis/net/) สำหรับฟีเจอร์และฟังก์ชันการทำงานขั้นสูง
 
-## Frequently Asked Questions
-### Q: Can I use Aspose.GIS with other programming languages?
-Aspose.GIS primarily supports .NET, but there are versions available for Java as well.  
+## คำถามที่พบบ่อย
+### ถาม: ฉันสามารถใช้ Aspose.GIS กับภาษาโปรแกรมอื่นๆ ได้หรือไม่?
+Aspose.GIS รองรับ .NET เป็นหลัก แต่ก็มีเวอร์ชันสำหรับ Java ด้วยเช่นกัน
 
-### Q: Is there a free trial available?
-Yes, you can access the free trial [here](https://releases.aspose.com/).  
+### ถาม: มีการทดลองใช้ฟรีหรือไม่?
+ใช่ คุณสามารถเข้าถึงการทดลองใช้ฟรีได้ [ที่นี่](https://releases.aspose.com/)
 
-### Q: Where can I find support for Aspose.GIS?
-Visit the [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) for community support and discussions.  
+### ถาม: ฉันจะหาการสนับสนุนสำหรับ Aspose.GIS ได้ที่ไหน?
+โปรดไปที่ [ฟอรัม Aspose.GIS](https://forum.aspose.com/c/gis/33) สำหรับการสนับสนุนและการสนทนาในชุมชน
 
-### Q: How can I obtain a temporary license?
-Get your temporary license [here](https://purchase.aspose.com/temporary-license/).  
+### ถาม: ฉันจะขอรับใบอนุญาตชั่วคราวได้อย่างไร?
+รับใบอนุญาตชั่วคราวได้ [ที่นี่](https://purchase.aspose.com/temporary-license/)
 
-### Q: Where can I purchase Aspose.GIS for .NET?
-You can buy the library [here](https://purchase.aspose.com/buy).
+### ถาม: ฉันจะซื้อ Aspose.GIS สำหรับ .NET ได้ที่ไหน?
+คุณสามารถซื้อไลบรารีได้ [ที่นี่](https://purchase.aspose.com/buy)
 
 ---
 
-**Last Updated:** 2026-01-13  
-**Tested With:** Aspose.GIS 24.11 for .NET  
-**Author:** Aspose  
+**อัปเดตล่าสุด:** 2026-01-13
+**ทดสอบกับ:** Aspose.GIS 24.11 สำหรับ .NET
+**ผู้เขียน:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

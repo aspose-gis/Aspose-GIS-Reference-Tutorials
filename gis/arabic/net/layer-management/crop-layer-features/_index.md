@@ -119,12 +119,6 @@ Aspose.GIS يدعم جميع الصيغ التي تكشف عنها برامج ت
 ## الخلاصة
 باتباع هذا الدليل، أصبحت الآن تعرف **how to crop layer** الميزات بفعالية باستخدام Aspose.GIS for .NET. يمكنك بسهولة **crop raster with polygon**، **extract raster cell size**، و **retrieve raster extent** لتلبية احتياجات أي مشروع. استكشف المزيد من APIs لإعادة الإسقاط، تنسيق raster، وتحليل المتجهات لإطلاق الإمكانات الكاملة لتدفقات عملك الجغرافي.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Last Updated:** 2026-01-13  
@@ -132,3 +126,9 @@ Aspose.GIS يدعم جميع الصيغ التي تكشف عنها برامج ت
 **Author:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

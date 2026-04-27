@@ -119,13 +119,6 @@ A: Aspose.GIS suporta todos os formatos que os drivers GDAL subjacentes expõem,
 ## Conclusão
 Seguindo este guia, você agora sabe **como recortar recursos de camada** de forma eficiente com Aspose.GIS para .NET. Você pode facilmente **recortar raster com polígono**, **extrair o tamanho da célula do raster** e **recuperar a extensão do raster** para atender a qualquer necessidade de projeto. Explore APIs adicionais para reprojeção, estilização de raster e análise vetorial para desbloquear todo o potencial dos seus fluxos de trabalho geoespaciais.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Última atualização:** 2026-01-13  
@@ -133,3 +126,10 @@ Seguindo este guia, você agora sabe **como recortar recursos de camada** de for
 **Autor:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -120,15 +120,15 @@ R : Aspose.GIS prend en charge tous les formats exposés par les pilotes GDAL 
 ## Conclusion
 En suivant ce guide, vous savez maintenant **comment recadrer les entités de couche** efficacement avec Aspose.GIS for .NET. Vous pouvez facilement **recadrer un raster avec un polygone**, **extraire la taille des cellules du raster**, et **récupérer l’étendue du raster** pour répondre aux besoins de n’importe quel projet. Explorez d’autres API pour la reprojection, le style raster et l’analyse vectorielle afin de libérer tout le potentiel de vos flux de travail géospatiaux.
 
+---
+
+**Last Updated:** 2026-01-13  
+**Tested With:** Aspose.GIS 24.10 for .NET  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026-01-13  
-**Tested With:** Aspose.GIS 24.10 for .NET  
-**Author:** Aspose

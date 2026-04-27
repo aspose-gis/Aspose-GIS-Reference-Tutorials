@@ -117,13 +117,6 @@ A: Aspose.GIS supports all formats that the underlying GDAL drivers expose, incl
 ## Conclusion
 By following this guide you now know **how to crop layer** features efficiently with Aspose.GIS for .NET. You can easily **crop raster with polygon**, **extract raster cell size**, and **retrieve raster extent** to fit any project’s needs. Explore further APIs for re‑projection, raster styling, and vector analysis to unlock the full potential of your geospatial workflows.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Last Updated:** 2026-01-13  
@@ -131,3 +124,10 @@ By following this guide you now know **how to crop layer** features efficiently 
 **Author:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

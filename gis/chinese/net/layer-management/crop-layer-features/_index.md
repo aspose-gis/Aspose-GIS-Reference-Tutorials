@@ -117,15 +117,15 @@ A: Aspose.GIS 支持底层 GDAL 驱动所提供的所有格式，包括 JPEG2000
 ## 结论
 通过本指南，您现在已经掌握了使用 Aspose.GIS for .NET 高效 **how to crop layer** 图层要素的方法。您可以轻松 **crop raster with polygon**、**extract raster cell size** 和 **retrieve raster extent**，以满足任何项目需求。进一步探索重新投影、栅格样式和矢量分析等 API，释放地理空间工作流的全部潜力。
 
+---
+
+**最后更新:** 2026-01-13  
+**已测试:** Aspose.GIS 24.10 for .NET  
+**作者:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**最后更新:** 2026-01-13  
-**已测试:** Aspose.GIS 24.10 for .NET  
-**作者:** Aspose

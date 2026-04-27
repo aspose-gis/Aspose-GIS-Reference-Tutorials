@@ -121,15 +121,15 @@ using (var layer = dataset.OpenLayer("data"))
 ### Ε: Πού μπορώ να βρω λεπτομερή τεκμηρίωση για το Aspose.GIS for .NET;
 Εξερευνήστε την πλήρη τεκμηρίωση [εδώ](https://reference.aspose.com/gis/net/) για εκτενείς πληροφορίες σχετικά με το Aspose.GIS for .NET.
 
+---
+
+**Τελευταία Ενημέρωση:** 2026-01-13  
+**Δοκιμάστηκε Με:** Aspose.GIS for .NET (τελευταία σταθερή έκδοση)  
+**Συγγραφέας:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Τελευταία Ενημέρωση:** 2026-01-13  
-**Δοκιμάστηκε Με:** Aspose.GIS for .NET (τελευταία σταθερή έκδοση)  
-**Συγγραφέας:** Aspose

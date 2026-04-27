@@ -14,26 +14,32 @@ weight: 12
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Yeni Shapefile Oluştur
+# Yeni Shapefile Oluşturma
 
-## Introduction
-Geographic information systems (GIS) geliştirmesine .NET ile dalıyorsanız, Aspose.GIS sizin başvuracağınız çözümdür. Bu güçlü kütüphane, geliştiricilerin mekansal verilerle sorunsuz çalışmasını sağlar ve bu öğreticide, Aspose.GIS for .NET kullanarak **yeni shapefile oluşturmayı** adım adım göstereceğiz. Vektör katmanı tanımlamanın ve tarih özniteliği eklemenin sağlam GIS projeleri için neden önemli adımlar olduğunu göreceksiniz.
+## Giriş
+Aspose.GIS, .NET ile coğrafi bilgi sistemleri (GIS) geliştirme için başvurabileceğiniz çözümdür. Bu güçlü kütüphane, geliştiricilerin mekanik verilerle sorunsuz bir şekilde çalışmasına olanak tanır ve bu eğitim, Aspose.GIS for .NET kullanarak adım adım yeni bir shapefile oluşturmayı gösterecektir. Vektör katmanlarını tanımlamanın ve geçmişe ait özellikleri eklemenin sağlam GIS projeleri için neden önemli adımlar olduğunu göreceksiniz.
 
-## Quick Answers
-- **Bu öğretici ne öğretir?** Yeni bir shapefile oluşturmayı, bir vektör katmanı tanımlamayı ve öznitelikler eklemeyi (tarih alanı dahil) öğretir.  
-- **Hangi kütüphane gereklidir?** Aspose.GIS for .NET.  
-- **Lisans gerekli mi?** Öğrenme için ücretsiz deneme yeterlidir; üretim için ticari lisans gereklidir.  
-- **Hangi IDE kullanılmalı?** Visual Studio (herhangi bir yeni sürüm).  
-- **Uygulama ne kadar sürer?** Temel örnek için yaklaşık 10‑15 dakika.
+## Hızlı Cevaplar
+- **Bu eğitim neyi öğretmiyor?** Yeni bir shapefile oluşturmayı, vektör katmanı tanımlamayı ve öznitelikler (geçmişe ait olanlar dahil) eklemeyi öğretir.
 
-## Prerequisites
-Öğreticiye başlamadan önce aşağıdaki ön koşulların sağlandığından emin olun:
-- C# programlama diline temel bir anlayış.
-- Makinenizde Visual Studio yüklü.
-- Aspose.GIS for .NET kütüphanesi. Bunu [buradan](https://releases.aspose.com/gis/net/) indirebilirsiniz.
+- **Gerekli kütüphane?** Aspose.GIS for .NET.
 
-## Import Namespaces
-Aspose.GIS işlevselliğinden yararlanmak için gerekli ad alanlarını (namespaces) içe aktararak başlayın:
+- **Lisans gerekli mi?** Öğrenmek için ücretsiz deneme sürümü yeterlidir; üretim için ticari lisans gereklidir.
+
+- **Hangi IDE kullanılacak?** Visual Studio (Herhangi bir yeni sürüm).
+
+- **Uygulama ne kadar sürer?** Temel olarak 10-15 dakika sürer.
+
+## Önkoşullar
+Eğitime başlamadan önce aşağıdaki koşulları sağladığınızdan emin olun:
+- C# programlama diline temel bir sekpeh.
+
+- Bilgisayarınızda Visual Studio kurulu olmalı.
+
+- .NET için Aspose.GIS kütüphaneleri. Bunu [buradan](https://releases.aspose.com/gis/net/) adresinden indirebilirsiniz.
+
+## Ad Alanlarını İçe Aktarma
+Aspose.GIS işlevselliğinden yararlanmak için, gerekli ad alanlarını girerek başlayın:
 
 ```csharp
 using Aspose.Gis;
@@ -45,16 +51,16 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## Step 1: Set Up Your Project
+## Adım 1: Projenizi Kurun
 Visual Studio'da yeni bir C# projesi oluşturarak ve Aspose.GIS kütüphanesini ekleyerek başlayın.
 
-## Step 2: Define the Document Directory
+## Adım 2: Belge Dizinini Tanımlayın
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 *Your Document Directory* ifadesini yeni shapefile'inizi kaydetmek istediğiniz gerçek yol ile değiştirin.
 
-## Step 3: Create a VectorLayer
+## Adım 3: Bir Vektör Katmanı Oluşturun
 ```csharp
 using (VectorLayer layer = VectorLayer.Create(dataDir + "NewShapeFile_out.shp", Drivers.Shapefile))
 {
@@ -65,8 +71,9 @@ using (VectorLayer layer = VectorLayer.Create(dataDir + "NewShapeFile_out.shp", 
 ```
 Bu kod bölümü **bir vektör katmanı tanımlar** ve üç öznitelik bildirir: bir metin alanı (`name`), bir tam sayı alanı (`age`) ve bir tarih‑zaman alanı (`dob`). Tarih özniteliği eklemek, zamansal GIS analizleri için kritik öneme sahiptir.
 
-## Step 4: Add Features
-### Case 1: Sets Values Individually
+## Adım 4: Özellikler Ekleyin
+### Durum 1: Değerleri Tek Tek Ayarlayın
+
 ```csharp
 Feature firstFeature = layer.ConstructFeature();
 firstFeature.Geometry = new Point(33.97, -118.25);
@@ -83,7 +90,7 @@ layer.Add(secondFeature);
 ```
 Burada iki nokta oluşturuyor, her özniteliği ayrı ayrı ayarlıyor ve özellikleri katmana ekliyoruz.
 
-### Case 2: Sets New Values for All Attributes
+### Durum 2: Tüm Nitelikler İçin Yeni Değerler Ayarlayın
 ```csharp
 Feature thirdFeature = layer.ConstructFeature();
 thirdFeature.Geometry = new Point(34.81, -92.28);
@@ -94,38 +101,44 @@ layer.Add(thirdFeature);
 ```
 Bu yöntemde, bir nesne dizisi kullanarak tüm öznitelik değerlerini tek bir çağrıda dolduruyoruz—çok sayıda özniteliğiniz olduğunda kullanışlıdır.
 
-## Why This Matters
-Programatik olarak shapefile oluşturmak, veri boru hatlarını otomatikleştirmenize, test veri setleri oluşturmanıza veya GIS çıktısını doğrudan web hizmetlerine entegre etmenize olanak tanır. Aspose.GIS ile **shapefile oluşturmayı** ustalaşarak, özellik geometrisi, öznitelik şeması ve dosya formatı uyumluluğu üzerinde tam kontrol elde edersiniz.
+## Neden Önemli?
+Programlanabilir şekilde shapefile dosyaları oluşturmanıza, veri boru sınırlarını otomatikleştirmenize, gövde veri kümeleri oluşturmanıza veya GIS çıktısını doğrudan web servislerine entegre etmenize olanak tanır. Aspose.GIS ile **shapefile oluşturma**, özel çizgiler, geometrik özellikler, öznitelik şemaları ve dosya formatı uyumluluğu üzerinde tam kontrole sahipsiniz.
 
-## Common Pitfalls & Tips
-- **Yol ayırıcıları:** Dize birleştirme yerine çapraz platform uyumluluğu için `Path.Combine` kullanın.  
-- **Öznitelik sırası:** `SetValues` içindeki değerlerin sırası, eklediğiniz özniteliklerin sırası ile aynı olmalıdır.  
-- **Tarih işleme:** GIS verileriniz zaman dilimleri arasında paylaşılacaksa her zaman `DateTimeKind.Utc` kullanın.
+## Sık Karşılaşılan Hatalar ve İpuçları
+- **Yol ayrıştırıcıları:** Çapraz platform uyumluluğu için birleştirme yerine `Path.Combine` kullanın.
 
-## Conclusion
-Tebrikler! Aspose.GIS for .NET kullanarak yeni bir shapefile'i başarıyla oluşturdunuz. Bu öğreticide projenizi kurma, bir vektör katmanı tanımlama ve özellik ekleme (tarih özniteliği dahil) temelleri ele alındı. Daha fazla keşfederken, gelişmiş özellikler ve işlevsellikler için [belgelere](https://reference.aspose.com/gis/net/) başvurun.
+- **Özniteliklerin sırası:** `SetValues` içindeki değerlerin sırası, eklediğiniz özniteliklerin sırasıyla aynı olmalıdır.
 
-## Frequently Asked Questions
-### Q: Can I use Aspose.GIS with other programming languages?
-Aspose.GIS öncelikle .NET'i destekler, ancak Java için de sürümleri mevcuttur.  
+- **Tarih obsehme:** GIS verilerinizin zaman zaman zaman arındın paşılağılakasa her zaman `DateTimeKind.Utc` kullanın.
 
-### Q: Is there a free trial available?
-Evet, ücretsiz deneme sürümüne [buradan](https://releases.aspose.com/) ulaşabilirsiniz.  
+## Sonuç
+Tebrikler! Aspose.GIS for .NET kullanarak yeni bir shapefile dosyasını başarıyla oluşturabilirsiniz. Bu öğretici proje, vektör katmanının tanımına ve özelliklerin (tarihsel özellikler dahil) eklenmesine dayanmaktadır. Daha fazlasını keşfetmek için, gelişmiş özellikler ve işlevsellik için [belgelere](https://reference.aspose.com/gis/net/) bakın.
 
-### Q: Where can I find support for Aspose.GIS?
-Topluluk desteği ve tartışmalar için [Aspose.GIS forumunu](https://forum.aspose.com/c/gis/33) ziyaret edin.  
+## Sıkça Sorulan Sorular
+### S: Aspose.GIS'i diğer programlama dilleriyle kullanabilir miyim?
 
-### Q: How can I obtain a temporary license?
-Geçici lisansınızı [buradan](https://purchase.aspose.com/temporary-license/) edinin.  
+Aspose.GIS öncelikle .NET'i destekler, ancak Java sürümleri de mevcuttur.
 
-### Q: Where can I purchase Aspose.GIS for .NET?
-Kütüphaneyi [buradan](https://purchase.aspose.com/buy) satın alabilirsiniz.
+### S: Ücretsiz deneme sürümü mevcut mu?
+
+Evet, [burada](https://releases.aspose.com/) adresinden ücretsiz deneme sürümünü edinebilirsiniz.
+
+### S: Aspose.GIS için destek nerede bulabilirim?
+
+Destek ve tartışmalar için [Aspose.GIS forumunu](https://forum.aspose.com/c/gis/33) ziyaret edin.
+
+### S: Geçici lisansı nasıl edinebilirim?
+
+Geçici lisansınızı [buradan](https://purchase.aspose.com/temporary-license/) adresinden edinebilirsiniz.
+
+### S: Aspose.GIS for .NET'i nereden satın alabilirim?
+Kütüphaneden [buradan](https://purchase.aspose.com/buy) satın alabilirsiniz.
 
 ---
 
-**Last Updated:** 2026-01-13  
-**Tested With:** Aspose.GIS 24.11 for .NET  
-**Author:** Aspose  
+**Son Güncelleme:** 13.01.2026
+**Test Edilen Sürüm:** Aspose.GIS 24.11 for .NET
+**Yazar:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

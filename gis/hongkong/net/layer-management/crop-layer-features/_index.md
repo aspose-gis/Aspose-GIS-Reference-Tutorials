@@ -117,13 +117,6 @@ A: Aspose.GIS 支援所有底層 GDAL 驅動程式所提供的格式，包括 JP
 ## 結論
 透過本指南，您已掌握如何使用 Aspose.GIS for .NET 高效地 **裁剪圖層**。您可以輕鬆 **以多邊形裁剪光柵**、**取得光柵格點大小**，以及 **取得光柵範圍**，以符合任何專案需求。進一步探索重新投影、光柵樣式與向量分析等 API，釋放您的地理空間工作流程的全部潛能。
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **最後更新：** 2026-01-13  
@@ -131,3 +124,10 @@ A: Aspose.GIS 支援所有底層 GDAL 驅動程式所提供的格式，包括 JP
 **作者：** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -119,13 +119,6 @@ Console.WriteLine($"bounds: {bounds}");
 ## निष्कर्ष
 इस गाइड को फॉलो करके आप अब **लेयर को क्रॉप करने** की प्रक्रिया को Aspose.GIS for .NET के साथ कुशलतापूर्वक कर सकते हैं। आप आसानी से **पॉलीगॉन के साथ रास्टर को क्रॉप**, **रास्टर सेल साइज निकाल**, और **रास्टर की सीमा प्राप्त** कर सकते हैं, जिससे किसी भी प्रोजेक्ट की जरूरतें पूरी हो सकें। आगे के API जैसे री‑प्रोजेक्शन, रास्टर स्टाइलिंग, और वेक्टर एनालिसिस का अन्वेषण करें ताकि अपने जियोस्पेशियल वर्कफ़्लो की पूरी क्षमता को खोल सकें।
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **अंतिम अपडेट:** 2026-01-13  
@@ -133,3 +126,10 @@ Console.WriteLine($"bounds: {bounds}");
 **लेखक:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

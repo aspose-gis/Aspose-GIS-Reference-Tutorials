@@ -119,15 +119,15 @@ A: Aspose.GIS mendukung semua format yang diekspos oleh driver GDAL di bawahnya,
 ## Kesimpulan
 Dengan mengikuti panduan ini Anda kini tahu **cara memotong layer** fitur secara efisien menggunakan Aspose.GIS untuk .NET. Anda dapat dengan mudah **memotong raster dengan poligon**, **mengekstrak ukuran sel raster**, dan **mengambil batas raster** untuk memenuhi kebutuhan proyek apa pun. Jelajahi API lebih lanjut untuk reproyeksi, styling raster, dan analisis vektor guna membuka potensi penuh alur kerja geospasial Anda.
 
+---
+
+**Last Updated:** 2026-01-13  
+**Tested With:** Aspose.GIS 24.10 for .NET  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026-01-13  
-**Tested With:** Aspose.GIS 24.10 for .NET  
-**Author:** Aspose

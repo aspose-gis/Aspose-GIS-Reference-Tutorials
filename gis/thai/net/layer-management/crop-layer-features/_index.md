@@ -118,13 +118,6 @@ A: Aspose.GIS รองรับทุกรูปแบบที่ไดรเ
 ## สรุป
 ด้วยการทำตามคู่มือนี้ คุณได้เรียนรู้ **วิธีการตัดเลเยอร์** อย่างมีประสิทธิภาพด้วย Aspose.GIS for .NET คุณสามารถ **ตัด raster ด้วย polygon**, **สกัดขนาดเซลล์ของ raster**, และ **ดึงขอบเขตของ raster** เพื่อให้ตรงกับความต้องการของโครงการใด ๆ อย่าลืมสำรวจ API อื่น ๆ เช่น การแปลงพิกัด, การจัดรูปแบบ raster, และการวิเคราะห์เวกเตอร์ เพื่อเปิดศักยภาพเต็มที่ของกระบวนการทำงานเชิงพื้นที่ของคุณ
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **อัปเดตล่าสุด:** 2026-01-13  
@@ -132,3 +125,10 @@ A: Aspose.GIS รองรับทุกรูปแบบที่ไดรเ
 **ผู้เขียน:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

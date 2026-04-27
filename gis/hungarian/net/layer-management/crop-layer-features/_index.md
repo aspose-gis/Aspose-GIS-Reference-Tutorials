@@ -119,15 +119,15 @@ A: Az Aspose.GIS támogatja az összes olyan formátumot, amelyet az alapul szol
 ## Összegzés
 Ezzel az útmutatóval most már hatékonyan tudja, hogyan **crop layer** jellemzőket használja az Aspose.GIS for .NET segítségével. Egyszerűen **crop raster with polygon**, **extract raster cell size**, és **retrieve raster extent** végezhet, hogy bármely projekt igényeinek megfeleljen. Fedezze fel a további API-kat a reprojekcióhoz, raszter stílushoz és vektor elemzéshez, hogy kiaknázza a térinformatikai munkafolyamatok teljes potenciálját.
 
+---
+
+**Legutóbb frissítve:** 2026-01-13  
+**Tesztelve:** Aspose.GIS 24.10 for .NET  
+**Szerző:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Legutóbb frissítve:** 2026-01-13  
-**Tesztelve:** Aspose.GIS 24.10 for .NET  
-**Szerző:** Aspose

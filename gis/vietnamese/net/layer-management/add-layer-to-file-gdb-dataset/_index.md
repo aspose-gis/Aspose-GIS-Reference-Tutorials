@@ -121,15 +121,15 @@ Chắc chắn! Tham gia thảo luận và chia sẻ kinh nghiệm của bạn tr
 ### Hỏi: Tôi có thể tìm tài liệu chi tiết cho Aspose.GIS cho .NET ở đâu?
 Khám phá tài liệu chi tiết [tại đây](https://reference.aspose.com/gis/net/) để có thông tin sâu về Aspose.GIS cho .NET.
 
+---
+
+**Last Updated:** 2026-01-13  
+**Tested With:** Aspose.GIS for .NET (latest stable version)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026-01-13  
-**Tested With:** Aspose.GIS for .NET (latest stable version)  
-**Author:** Aspose

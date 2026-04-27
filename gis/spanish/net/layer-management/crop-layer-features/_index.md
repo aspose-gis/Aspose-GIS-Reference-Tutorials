@@ -119,13 +119,6 @@ R: Aspose.GIS admite todos los formatos que los controladores GDAL subyacentes e
 ## Conclusión
 Al seguir esta guía ahora sabe **cómo recortar capas** de manera eficiente con Aspose.GIS para .NET. Puede **recortar ráster con polígono**, **extraer el tamaño de celda del ráster** y **obtener la extensión del ráster** para adaptarse a cualquier necesidad del proyecto. Explore más APIs para reproyección, estilo de ráster y análisis vectorial para desbloquear todo el potencial de sus flujos de trabajo geoespaciales.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Última actualización:** 2026-01-13  
@@ -133,3 +126,10 @@ Al seguir esta guía ahora sabe **cómo recortar capas** de manera eficiente con
 **Autor:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

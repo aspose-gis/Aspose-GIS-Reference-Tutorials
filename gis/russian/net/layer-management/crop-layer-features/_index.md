@@ -119,15 +119,15 @@ Console.WriteLine($"bounds: {bounds}");
 ## Заключение
 Следуя этому руководству, вы теперь знаете, **как эффективно обрезать слой** с помощью Aspose.GIS для .NET. Вы можете легко **обрезать растр полигоном**, **извлекать размер ячейки растра** и **получать границы растра**, чтобы удовлетворить любые потребности проекта. Изучайте дополнительные API для репроекции, стилизации растра и векторного анализа, чтобы раскрыть весь потенциал ваших геопространственных рабочих процессов.
 
+---
+
+**Last Updated:** 2026-01-13  
+**Tested With:** Aspose.GIS 24.10 for .NET  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026-01-13  
-**Tested With:** Aspose.GIS 24.10 for .NET  
-**Author:** Aspose

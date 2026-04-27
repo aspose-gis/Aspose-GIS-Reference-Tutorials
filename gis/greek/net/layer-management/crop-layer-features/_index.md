@@ -120,13 +120,6 @@ Console.WriteLine($"bounds: {bounds}");
 ## Συμπέρασμα
 Ακολουθώντας αυτόν τον οδηγό, τώρα γνωρίζετε **πώς να κόψετε χαρακτηριστικά στρώματος** αποδοτικά με το Aspose.GIS για .NET. Μπορείτε εύκολα να **κόψετε raster με πολύγωνο**, **εξάγετε το μέγεθος κελιού raster**, και **ανακτήσετε το εύρος raster** για να καλύψετε τις ανάγκες οποιουδήποτε έργου. Εξερευνήστε περαιτέρω APIs για επαναπροβολή, στυλ raster και ανάλυση διανυσμάτων ώστε να αξιοποιήσετε πλήρως τις δυνατότητες των γεωχωρικών σας ροών εργασίας.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Τελευταία Ενημέρωση:** 2026-01-13  
@@ -134,3 +127,10 @@ Console.WriteLine($"bounds: {bounds}");
 **Συγγραφέας:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

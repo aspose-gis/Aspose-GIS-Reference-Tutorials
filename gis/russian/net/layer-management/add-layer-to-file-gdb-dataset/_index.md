@@ -14,34 +14,35 @@ weight: 16
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# spatial reference wgs84 – Добавление слоя в GDB с помощью Aspose.GIS
+# пространственная привязка wgs84 – Добавление слоя в GDB с помощью Aspose.GIS
 
-## Introduction
-Готовы ускорить ваш GIS‑рабочий процесс с Aspose.GIS для .NET? В этом руководстве вы узнаете, **как добавить слой в набор данных File GDB**, работая с координатной системой **spatial reference wgs84**. Мы пройдём каждый шаг, от подготовки папки с данными до проверки только что созданного слоя, чтобы вы могли уверенно манипулировать географическими данными.
+## Введение
+Готовы опчереть ваш ГИС‑рабочий процесс с Aspose.GIS для .NET? В этом руководстве вы узнаете **как добавлены слова в набор данных файла GDB**, работая с кородинной системой **пространственной привязки wgs84**. Мы пройдем каждый шаг, от подготовки папки с данными до проверки только что созданного слоя, чтобы вы могли уверенно манипулировать географическими данными.
 
-## Quick Answers
-- **What is the primary coordinate system used?** spatial reference wgs84 (WGS 84)  
-- **Which library provides the API?** Aspose.GIS for .NET  
-- **Do I need a license for testing?** Yes – a temporary Aspose license is available.  
-- **Can I add attributes to the new layer?** Absolutely, you can define any number of feature attributes.  
-- **What .NET versions are supported?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6.
+## Быстрые ответы
+- **Какая основная система координат используется?** Пространственная привязка wgs84 (WGS84)
+- **Какая библиотека предоставляет API?** Aspose.GIS для .NET
+- **Нужна ли мне лицензия для тестирования?** Да – доступна временная лицензия Aspose.
+- **Могу ли я добавить атрибуты в новый слой?** Конечно, вы можете определить любое количество атрибутов объектов.
+- **Какие версии .NET поддерживаются?** .NET Framework4.5+, .NET Core3.1+, .NET5/6.
 
-## What is spatial reference wgs84?
-spatial reference wgs84 (World Geodetic System 1984) — самая широко используемая географическая координатная система. Она определяет широту и долготу в градусах и служит CRS по умолчанию для многих GIS‑наборов данных, включая тот, который мы создадим в этом руководстве.
+## Что такое пространственная привязка wgs84?
+пространственная привязка wgs84 (World Geodetic System 1984) — наиболее широко используемая географическая система координат. Он определяет широту и долготу в градусах и по умолчанию служит CRS для многих наборов данных ГИС, включая тот, который мы создали в этом руководстве.
 
-## Why use Aspose.GIS to add a layer?
-- **No external dependencies:** Работает сразу «из коробки» на чистом .NET‑коде.  
-- **Full control over schema:** Вы можете определить пользовательские атрибуты и типы геометрии.  
-- **Cross‑platform:** Совместима с Windows, Linux и macOS.  
-- **Robust licensing:** Временные лицензии позволяют быстро оценить возможности перед покупкой.
+## Зачем использовать Aspose.GIS для добавления слоя?
+- **Нет внешних зависимостей:** Работает сад «из коробки» на чистом .NET‑коде.
+- **Полный контроль над схемой.** Вы можете определять пользовательские атрибуты и типы геометрии.
+- **Кроссплатформенность:** Совместима с Windows, Linux и macOS.
+- **Надежное лицензирование:** Временные лицензии предлагают быструю оценку возможности перед покупкой.
 
-## Prerequisites
-Перед началом убедитесь, что у вас есть:
+## Предварительные условия
+Перед началом работы убедитесь, что у вас есть:
 
-- Aspose.GIS for .NET Library: Скачайте и установите библиотеку из [Aspose.GIS for .NET Documentation](https://reference.aspose.com/gis/net/).  
-- Document Directory: Создайте отдельную папку на вашем компьютере для хранения GIS‑файлов.
+- Библиотека Aspose.GIS for .NET: Загрузите и установите библиотеку из [Документации Aspose.GIS for .NET](https://reference.aspose.com/gis/net/).
 
-## Import Namespaces
+- Каталог документов: Создайте отдельную папку на вашем компьютере для хранения файлов ГИС.
+
+## Импорт пространств имен
 Добавьте необходимые `using`‑операторы в ваш C#‑проект, чтобы получить доступ к классам Aspose.GIS:
 
 ```csharp
@@ -56,7 +57,7 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## Step 1: Copy Directory
+## Шаг 1: Скопируйте каталог
 Сначала продублируйте папку, содержащую оригинальный набор данных GDB. Наличие копии защищает исходные данные во время экспериментов.
 
 ```csharp
@@ -66,7 +67,7 @@ var datasetPath = "Your Document Directory" + "AddLayerToFileGdbDataset_out.gdb"
 RunExamples.CopyDirectory(path, datasetPath);
 ```
 
-## Step 2: Open Dataset and Verify Creation Capability
+## Шаг 2: Откройте набор данных и проверьте возможность его создания
 Откройте только что скопированный набор данных и убедитесь, что он может создавать новые слои. Свойство `CanCreateLayers` должно вернуть **True**.
 
 ```csharp
@@ -75,7 +76,7 @@ using (var dataset = Dataset.Open(datasetPath, Drivers.FileGdb))
     Console.WriteLine(dataset.CanCreateLayers); // True
 ```
 
-## Step 3: Create and Populate a New Layer with spatial reference wgs84
+## Шаг 3: Создайте и заполните новый слой пространственной привязкой wgs84
 Теперь создаём слой с именем **data** и явно задаём его пространственную ссылку **Wgs84**. Мы также добавляем простой атрибут **Name** и вставляем одну точечную фичу.
 
 ```csharp
@@ -89,7 +90,7 @@ using (var layer = dataset.CreateLayer("data", SpatialReferenceSystem.Wgs84))
 }
 ```
 
-## Step 4: Open and Validate the Added Layer
+## Шаг 4: Откройте и проверьте добавленный слой
 Наконец, откройте только что созданный слой и проверьте его содержимое. Консоль покажет, что слой содержит одну фичу и что атрибут **Name** соответствует заданному значению.
 
 ```csharp
@@ -100,26 +101,35 @@ using (var layer = dataset.OpenLayer("data"))
 }
 ```
 
-## Common Issues & Tips
-- **Incorrect path:** Убедитесь, что `dataDir` заканчивается разделителем пути (`/` или `\`), чтобы склеенные строки образовали корректные пути к файлам.  
-- **License errors:** Если появляются предупреждения о лицензировании, примените временную лицензию из портала Aspose перед запуском кода.  
-- **CRS mismatch:** При открытии слоя позже в другом GIS‑инструменте убедитесь, что он распознаёт WGS 84 (EPSG:4326) как координатную систему.
+## Распространенные проблемы и советы
+- **Неправильный путь:** Убедитесь, что `dataDir` заканчивается разделителем пути (`/` или `\`), чтобы склеенные строки образовывали правильные пути к файлам.
 
-## Frequently Asked Questions
-### Q: Can I use Aspose.GIS for .NET with other GIS libraries?
-Aspose.GIS for .NET разработан для автономной работы, но его можно интегрировать с другими библиотеками для расширения функциональности.  
+- **Ошибки лицензирования:** Если появляются предупреждения о лицензировании, примените временную лицензию с портала Aspose перед началом работы с кодом.
 
-### Q: Is a temporary license available for testing purposes?
-Yes, you can obtain a temporary license from [here](https://purchase.aspose.com/temporary-license/) for testing and evaluation.  
+- **Несоответствие CRS:** При последующем открытии слоя в другом инструменте ГИС убедитесь, что он распознает WGS84 (EPSG:4326) в качестве системы координат.
 
-### Q: What spatial reference systems does Aspose.GIS for .NET support?
-Aspose.GIS for .NET supports a wide range of spatial reference systems, providing flexibility in geographic data handling.  
+## Часто задаваемые вопросы
+### В: Можно ли использовать Aspose.GIS для .NET с другими библиотеками ГИС?
+Aspose.GIS для .NET предназначен для автономной работы, но его можно интегрировать с другими библиотеками для расширения функциональности.
 
-### Q: Can I contribute to the Aspose.GIS community?
-Absolutely! Join the discussions and share your experiences on the [Aspose.GIS forum](https://forum.aspose.com/c/gis/33).  
+### В: Доступна ли временная лицензия для целей тестирования?
 
-### Q: Where can I find detailed documentation for Aspose.GIS for .NET?
-Explore the comprehensive documentation [here](https://reference.aspose.com/gis/net/) for in‑depth information on Aspose.GIS for .NET.
+Да, вы можете получить временную лицензию [здесь](https://purchase.aspose.com/temporary-license/) для тестирования и оценки.
+
+### В: Какие системы пространственной привязки поддерживает Aspose.GIS для .NET?
+Aspose.GIS для .NET поддерживает широкий спектр систем пространственной привязки, обеспечивая гибкость в обработке географических данных.
+
+### В: Могу ли я внести свой вклад в сообщество Aspose.GIS?
+Конечно! Присоединяйтесь к обсуждениям и делитесь своим опытом на [форуме Aspose.GIS](https://forum.aspose.com/c/gis/33).
+
+### В: Где я могу найти подробную документацию по Aspose.GIS для .NET?
+Изучите исчерпывающую документацию [здесь](https://reference.aspose.com/gis/net/) для получения подробной информации об Aspose.GIS для .NET.
+
+---
+
+**Последнее обновление:** 13.01.2026
+**Протестировано с:** Aspose.GIS для .NET (последняя стабильная версия)
+**Автор:** Aspose
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
@@ -127,9 +137,3 @@ Explore the comprehensive documentation [here](https://reference.aspose.com/gis/
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026-01-13  
-**Tested With:** Aspose.GIS for .NET (latest stable version)  
-**Author:** Aspose

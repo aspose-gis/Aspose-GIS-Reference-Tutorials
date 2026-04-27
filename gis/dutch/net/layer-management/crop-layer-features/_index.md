@@ -119,13 +119,6 @@ A: Aspose.GIS ondersteunt alle formaten die de onderliggende GDAL‑drivers bloo
 ## Conclusie
 Door deze gids te volgen, weet je nu **hoe je laag‑kenmerken efficiënt kunt bijsnijden** met Aspose.GIS voor .NET. Je kunt eenvoudig **raster bijsnijden met een polygoon**, **de rastercelgrootte extraheren**, en **de raster‑extent ophalen** om aan de behoeften van elk project te voldoen. Verken verdere API’s voor herprojectie, raster‑styling en vectoranalyse om het volledige potentieel van je geospatiale workflows te benutten.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Laatst bijgewerkt:** 2026-01-13  
@@ -133,3 +126,10 @@ Door deze gids te volgen, weet je nu **hoe je laag‑kenmerken efficiënt kunt b
 **Auteur:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

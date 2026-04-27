@@ -120,13 +120,6 @@ Aspose.GIS supporta tutti i formati esposti dai driver GDAL sottostanti, inclusi
 ## Conclusione
 Seguendo questa guida ora sai **come ritagliare le funzionalità del layer** in modo efficiente con Aspose.GIS per .NET. Puoi facilmente **ritagliare raster con poligono**, **estrarre la dimensione della cella raster** e **recuperare l'estensione del raster** per soddisfare le esigenze di qualsiasi progetto. Esplora ulteriori API per la riproiezione, lo styling raster e l'analisi vettoriale per sbloccare il pieno potenziale dei tuoi flussi di lavoro geospaziali.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Ultimo aggiornamento:** 2026-01-13  
@@ -134,3 +127,10 @@ Seguendo questa guida ora sai **come ritagliare le funzionalità del layer** in 
 **Autore:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}
