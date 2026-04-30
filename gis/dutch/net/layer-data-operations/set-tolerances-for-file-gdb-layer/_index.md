@@ -1,10 +1,16 @@
 ---
-date: 2025-12-31
-description: Ontdek Aspose.GIS voor .NET en leer hoe u een file GDB‑dataset maakt
-  en toleranties moeiteloos instelt met stapsgewijze begeleiding. Verbeter uw .NET‑toepassingen.
-linktitle: Set Tolerances for File GDB Layer
+date: 2026-04-30
+description: Leer hoe u GDB‑bestanden maakt met Aspose.GIS voor .NET, de laagprecisie
+  instelt en bestands‑GDB‑opties gebruikt om toleranties te beheersen.
+keywords:
+- how to create gdb
+- create gis layer
+- how to set tolerances
+- set layer precision
+- file gdb options
+linktitle: Toleranties instellen voor File GDB‑laag
 second_title: Aspose.GIS .NET API
-title: Maak File GDB-dataset en stel toleranties voor een laag in
+title: Hoe een GDB-dataset te maken en toleranties voor een laag in te stellen
 url: /nl/net/layer-data-operations/set-tolerances-for-file-gdb-layer/
 weight: 22
 ---
@@ -13,35 +19,35 @@ weight: 22
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Maak File GDB-dataset en stel toleranties in voor een laag
+# Hoe een GDB-dataset te maken en toleranties voor een laag in te stellen
 
-## Inleiding
-Als je een **create file GDB dataset** moet maken en de precisie ervan wilt beheersen, ben je hier op de juiste plek. In deze tutorial lopen we het volledige proces door—beginnend met het opzetten van je .NET‑project, het aanmaken van een File Geodatabase (GDB) dataset, en vervolgens het toepassen van XY-, Z- en M‑toleranties op een nieuwe laag. Aan het einde heb je een kant‑klaar dataset dat soepel werkt met ArcGIS‑tools en andere GIS‑toepassingen.
+## Introductie
+If you need to **create file GDB dataset** and control its precision, you’re in the right place. In this tutorial we’ll walk through the entire process—starting from setting up your .NET project, creating a File Geodatabase (GDB) dataset, and then applying XY, Z, and M tolerances to a new layer. By the end you’ll have a ready‑to‑use dataset that works smoothly with ArcGIS tools and other GIS applications. This guide shows you **how to create gdb** files programmatically, so you can automate data pipelines without manual intervention.
 
 ## Snelle antwoorden
-- **Wat betekent “create file GDB dataset”?** Het maakt een nieuwe File Geodatabase‑container op schijf aan die meerdere GIS‑lagen kan bevatten.  
-- **Waarom toleranties instellen?** Toleranties definiëren de precisie voor geometrische bewerkingen, waardoor afrondingsfouten in ruimtelijke analyses worden voorkomen.  
-- **Welke Aspose.GIS‑klasse wordt gebruikt?** `Dataset.Create` samen met `FileGdbOptions`.  
-- **Heb ik een licentie nodig voor ontwikkeling?** Een tijdelijke licentie is voldoende voor testen; een volledige licentie is vereist voor productie.  
-- **Welke .NET‑versies worden ondersteund?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
+- **What does “create file GDB dataset” mean?** It creates a new File Geodatabase container on disk that can hold multiple GIS layers.  
+- **Why set tolerances?** Tolerances define the precision for geometry operations, preventing rounding errors in spatial analysis.  
+- **Which Aspose.GIS class is used?** `Dataset.Create` together with `FileGdbOptions`.  
+- **Do I need a license for development?** A temporary license is enough for testing; a full license is required for production.  
+- **What .NET versions are supported?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
 
 ## Wat is een File GDB-dataset?
-Een File Geodatabase (GDB) is een map‑gebaseerde gegevensopslag die GIS‑lagen, tabellen en relaties bevat. Met Aspose.GIS kun je programmatisch **create file GDB dataset** maken zonder dat ArcGIS geïnstalleerd hoeft te zijn, waardoor het ideaal is voor geautomatiseerde pipelines of aangepaste toepassingen.
+A File Geodatabase (GDB) is a folder‑based data store that holds GIS layers, tables, and relationships. Using Aspose.GIS you can programmatically **create file GDB dataset** without needing ArcGIS installed, making it ideal for automated pipelines or custom applications.
 
-## Waarom toleranties instellen voor een laag?
-Het instellen van toleranties zorgt ervoor dat geometrieberekeningen (zoals intersecties, buffers of snapping) de precisie respecteren die je nodig hebt. Dit is vooral belangrijk bij het werken met hoog‑resolutie‑gegevens of bij het exporteren naar andere GIS‑platformen die specifieke tolerantiewaarden verwachten.
+## Waarom toleranties voor een laag instellen?
+Setting tolerances ensures that geometry calculations (like intersections, buffering, or snapping) respect the precision you need. This is especially important when working with high‑resolution data or when exporting to other GIS platforms that expect specific tolerance values. In other words, you’re **setting layer precision** to avoid unexpected geometry errors.
 
-## Voorvereisten
-Voordat we in de code duiken, zorg ervoor dat je het volgende hebt:
+## Vereisten
+Before we dive into the code, make sure you have the following:
 
-- **Aspose.GIS for .NET Library** – Download en installeer de Aspose.GIS‑bibliotheek van de [download link](https://releases.aspose.com/gis/net/). Als je deze nog niet hebt verkregen, kun je de bibliotheek verder verkennen in de [documentation](https://reference.aspose.com/gis/net/).
-- **Development Environment** – Visual Studio, Rider, of elke IDE die .NET‑ontwikkeling ondersteunt.
-- **A valid license** – Gebruik een tijdelijke licentie voor testen of een volledige licentie voor productie (zie de links in de FAQ‑sectie).
+- **Aspose.GIS for .NET Library** – Download and install the Aspose.GIS library from the [download link](https://releases.aspose.com/gis/net/). If you haven’t acquired it yet, you can explore the library further in the [documentation](https://reference.aspose.com/gis/net/).
+- **Development Environment** – Visual Studio, Rider, or any IDE that supports .NET development.
+- **A valid license** – Use a temporary license for testing or a full license for production (see the links in the FAQ section).
 
-Nu je alles klaar hebt, laten we de namespaces importeren die we nodig hebben.
+Now that you have everything ready, let’s import the namespaces we’ll need.
 
 ## Namespaces importeren
-Neem in je .NET‑applicatie de volgende namespaces op om de functionaliteiten van Aspose.GIS te benutten:
+In your .NET application, include the following namespaces to leverage the functionalities of Aspose.GIS:
 
 ```csharp
 using Aspose.Gis;
@@ -52,21 +58,22 @@ using System;
 using System.Text;
 ```
 
-Met de namespaces op hun plaats kunnen we beginnen met het bouwen van de dataset.
+With the namespaces in place, we can start building the dataset.
 
-## Stapsgewijze handleiding
+## Hoe een GDB-dataset te maken?
+Below is the step‑by‑step guide that walks you through creating the dataset and configuring tolerances.
 
-### Stap 1: Definieer je documentmap
-Eerst wijs je de code naar de map waarin je de File GDB wilt aanmaken:
+### Stap 1: Definieer uw documentmap
+First, point the code to the folder where you want the File GDB to be created:
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-> **Pro tip:** Gebruik `Path.Combine` als je het pad platform‑onafhankelijk wilt opbouwen.
+> **Pro tip:** Use `Path.Combine` if you need to build the path in a platform‑independent way.
 
 ### Stap 2: Maak een File GDB-dataset
-Nu maken we daadwerkelijk **create file GDB dataset** op schijf. De `Dataset.Create`‑methode neemt het volledige pad en het driver‑type (`Drivers.FileGdb`).
+Now we actually **create file GDB dataset** on disk. The `Dataset.Create` method takes the full path and the driver type (`Drivers.FileGdb`).
 
 ```csharp
 var path = dataDir + "TolerancesForFileGdbLayer_out.gdb";
@@ -74,10 +81,10 @@ using (var dataset = Dataset.Create(path, Drivers.FileGdb))
 {
 ```
 
-> Het `using`‑blok zorgt ervoor dat de dataset correct wordt gesloten en naar schijf wordt weggeschreven wanneer je klaar bent.
+> The `using` block ensures that the dataset is properly closed and flushed to disk when you’re done.
 
 ### Stap 3: Stel toleranties in met `FileGdbOptions`
-Voordat je een laag maakt, definieer je de toleranties die je nodig hebt. `FileGdbOptions` stelt je in staat XY-, Z- en M‑toleranties op te geven.
+Before creating a layer, define the tolerances you need. `FileGdbOptions` lets you specify XY, Z, and M tolerances—this is the **file gdb options** object that controls precision.
 
 ```csharp
 var options = new FileGdbOptions
@@ -88,10 +95,10 @@ var options = new FileGdbOptions
 };
 ```
 
-Deze waarden zijn typisch voor hoog‑precisie‑engineeringsgegevens, maar je kunt ze aanpassen aan je project.
+These values are typical for high‑precision engineering data, but you can adjust them to suit your project.
 
-### Stap 4: Maak een laag met de opgegeven toleranties
-Maak tenslotte een nieuwe laag binnen de dataset, waarbij je het opties‑object dat we zojuist hebben geconfigureerd doorgeeft.
+### Stap 4: Maak een GIS-laag met de opgegeven toleranties
+Finally, create a new layer inside the dataset, passing the options object we just configured. This step demonstrates **how to set tolerances** while also **creating a GIS layer**.
 
 ```csharp
 using (var layer = dataset.CreateLayer("layer_name", options))
@@ -100,40 +107,39 @@ using (var layer = dataset.CreateLayer("layer_name", options))
 }
 ```
 
-Wanneer het `using`‑blok eindigt, wordt de laag opgeslagen met de toleranties die je hebt gedefinieerd.
+When the `using` block ends, the layer is saved with the tolerances you defined.
 
 ## Veelvoorkomende problemen & oplossingen
-
 | Probleem | Waarom het gebeurt | Oplossing |
 |----------|--------------------|-----------|
-| **Dataset‑pad niet gevonden** | De `dataDir`‑variabele wijst naar een niet‑bestaande map. | Zorg ervoor dat de map bestaat of maak deze aan met `Directory.CreateDirectory(dataDir)`. |
-| **Ongeldige tolerantiewaarden** | Toleranties moeten niet‑negatieve getallen zijn. | Gebruik positieve waarden; vermijd nul tenzij je opzettelijk geen tolerantie wilt. |
-| **Licentiefout** | Een proef‑ of tijdelijke licentie is verlopen. | Pas een nieuwe tijdelijke licentie toe of upgrade naar een volledige licentie. |
+| **Dataset-pad niet gevonden** | De `dataDir`-variabele wijst naar een niet‑bestaande map. | Zorg ervoor dat de map bestaat of maak deze aan met `Directory.CreateDirectory(dataDir)`. |
+| **Ongeldige tolerantiewaarden** | Toleranties moeten niet‑negatieve getallen zijn. | Gebruik positieve waarden; vermijd nul tenzij u bewust geen tolerantie wilt. |
+| **Licentiefout** | Een proef- of tijdelijke licentie is verlopen. | Pas een nieuwe tijdelijke licentie toe of upgrade naar een volledige licentie. |
 
 ## Veelgestelde vragen
 
-**Q: Kan ik Aspose.GIS for .NET gebruiken met andere GIS‑bibliotheken?**  
-A: Ja, Aspose.GIS ondersteunt interoperabiliteit, waardoor je het kunt integreren met bibliotheken zoals NetTopologySuite of GDAL.
+**Q: Kan ik Aspose.GIS voor .NET gebruiken met andere GIS-bibliotheken?**  
+A: Ja, Aspose.GIS ondersteunt interoperabiliteit, waardoor u het kunt integreren met bibliotheken zoals NetTopologySuite of GDAL.
 
-**Q: Is er een proefversie beschikbaar voor Aspose.GIS for .NET?**  
-A: Absoluut! Je kunt de functies verkennen met de [free trial version](https://releases.aspose.com/).
+**Q: Is er een proefversie beschikbaar voor Aspose.GIS voor .NET?**  
+A: Absolutely! You can explore the features with the [free trial version](https://releases.aspose.com/).
 
-**Q: Hoe kan ik ondersteuning krijgen voor Aspose.GIS for .NET?**  
-A: Bezoek het [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) om contact te maken met de community en hulp te zoeken.
+**Q: Hoe kan ik ondersteuning krijgen voor Aspose.GIS voor .NET?**  
+A: Visit the [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) to connect with the community and seek assistance.
 
 **Q: Heb ik een tijdelijke licentie nodig voor testdoeleinden?**  
-A: Ja, je kunt een [temporary license](https://purchase.aspose.com/temporary-license/) verkrijgen voor testen en evaluatie.
+A: Yes, you can obtain a [temporary license](https://purchase.aspose.com/temporary-license/) for testing and evaluation.
 
-**Q: Waar kan ik de Aspose.GIS for .NET‑licentie kopen?**  
-A: Je kunt de licentie kopen via de [buy page](https://purchase.aspose.com/buy).
+**Q: Waar kan ik de Aspose.GIS voor .NET-licentie kopen?**  
+A: You can purchase the license from the [buy page](https://purchase.aspose.com/buy).
 
 ## Conclusie
-In deze gids hebben we behandeld hoe je **create file GDB dataset** maakt, geometrische toleranties configureert en een kant‑klaar laag opslaat met Aspose.GIS for .NET. Deze stappen geven je precieze controle over ruimtelijke gegevens, waardoor je GIS‑toepassingen betrouwbaarder en beter interoperabel worden.
+In this guide we covered **how to create gdb** files, configure geometry tolerances, and save a ready‑to‑use layer with Aspose.GIS for .NET. These steps give you precise control over spatial data, making your GIS applications more reliable and interoperable.
 
 ---  
-**Last Updated:** 2025-12-31  
-**Tested With:** Aspose.GIS for .NET 24.11 (latest at time of writing)  
-**Author:** Aspose  
+**Laatst bijgewerkt:** 2026-04-30  
+**Getest met:** Aspose.GIS for .NET 24.11 (latest at time of writing)  
+**Auteur:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

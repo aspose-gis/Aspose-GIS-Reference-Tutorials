@@ -1,11 +1,16 @@
 ---
-date: 2025-12-31
-description: Utforska Aspose.GIS för .NET och lär dig hur du skapar ett fil‑GDB‑dataset
-  och ställer in toleranser utan ansträngning med steg‑för‑steg‑vägledning. Förbättra
-  dina .NET‑applikationer.
-linktitle: Set Tolerances for File GDB Layer
+date: 2026-04-30
+description: Lär dig hur du skapar GDB-filer med Aspose.GIS för .NET, ställer in lagerprecision
+  och använder fil‑GDB-alternativ för att kontrollera toleranser.
+keywords:
+- how to create gdb
+- create gis layer
+- how to set tolerances
+- set layer precision
+- file gdb options
+linktitle: Ställ in toleranser för File GDB‑lager
 second_title: Aspose.GIS .NET API
-title: Skapa File GDB-dataset och ange toleranser för ett lager
+title: Hur man skapar ett GDB-dataset och anger toleranser för ett lager
 url: /sv/net/layer-data-operations/set-tolerances-for-file-gdb-layer/
 weight: 22
 ---
@@ -14,35 +19,35 @@ weight: 22
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Skapa File GDB-dataset och ange toleranser för ett lager
+# Hur man skapar GDB-dataset och anger toleranser för ett lager
 
 ## Introduktion
-Om du behöver **create file GDB dataset** och kontrollera dess precision, är du på rätt plats. I den här handledningen går vi igenom hela processen — från att sätta upp ditt .NET‑projekt, skapa ett File Geodatabase (GDB)‑dataset, och sedan tillämpa XY-, Z- och M‑toleranser på ett nytt lager. I slutet har du ett färdigt dataset som fungerar smidigt med ArcGIS‑verktyg och andra GIS‑applikationer.
+If you need to **create file GDB dataset** and control its precision, you’re in the right place. In this tutorial we’ll walk through the entire process—starting from setting up your .NET project, creating a File Geodatabase (GDB) dataset, and then applying XY, Z, and M tolerances to a new layer. By the end you’ll have a ready‑to‑use dataset that works smoothly with ArcGIS tools and other GIS applications. This guide shows you **how to create gdb** files programmatically, so you can automate data pipelines without manual intervention.
 
 ## Snabba svar
 - **What does “create file GDB dataset” mean?** Det skapar en ny File Geodatabase‑behållare på disken som kan innehålla flera GIS‑lager.  
 - **Why set tolerances?** Toleranser definierar precisionen för geometriska operationer och förhindrar avrundningsfel i rumslig analys.  
-- **Which Aspose.GIS class is used?** `Dataset.Create` tillsammans med `FileGdbOptions`.  
+- **Which Aspose.GIS class is used?** `Dataset.Create` together with `FileGdbOptions`.  
 - **Do I need a license for development?** En tillfällig licens räcker för testning; en full licens krävs för produktion.  
 - **What .NET versions are supported?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
 
 ## Vad är ett File GDB-dataset?
-En File Geodatabase (GDB) är en mapp‑baserad datalagring som innehåller GIS‑lager, tabeller och relationer. Med Aspose.GIS kan du programatiskt **create file GDB dataset** utan att behöva ArcGIS installerat, vilket gör det idealiskt för automatiserade pipelines eller anpassade applikationer.
+A File Geodatabase (GDB) is a folder‑based data store that holds GIS layers, tables, and relationships. Using Aspose.GIS you can programmatically **create file GDB dataset** without needing ArcGIS installed, making it ideal for automated pipelines or custom applications.
 
 ## Varför ange toleranser för ett lager?
-Att ange toleranser säkerställer att geometriberäkningar (som skärningar, buffring eller snappning) respekterar den precision du behöver. Detta är särskilt viktigt när du arbetar med högupplösta data eller när du exporterar till andra GIS‑plattformar som förväntar sig specifika toleransvärden.
+Setting tolerances ensures that geometry calculations (like intersections, buffering, or snapping) respect the precision you need. This is especially important when working with high‑resolution data or when exporting to other GIS platforms that expect specific tolerance values. In other words, you’re **setting layer precision** to avoid unexpected geometry errors.
 
 ## Förutsättningar
-Innan vi dyker ner i koden, se till att du har följande:
+Before we dive into the code, make sure you have the following:
 
-- **Aspose.GIS for .NET Library** – Ladda ner och installera Aspose.GIS‑biblioteket från [download link](https://releases.aspose.com/gis/net/). Om du ännu inte har skaffat det kan du utforska biblioteket vidare i [documentation](https://reference.aspose.com/gis/net/).
-- **Development Environment** – Visual Studio, Rider eller någon IDE som stödjer .NET‑utveckling.
-- **A valid license** – Använd en tillfällig licens för testning eller en full licens för produktion (se länkarna i FAQ‑avsnittet).
+- **Aspose.GIS for .NET Library** – Download and install the Aspose.GIS library from the [download link](https://releases.aspose.com/gis/net/). If you haven’t acquired it yet, you can explore the library further in the [documentation](https://reference.aspose.com/gis/net/).
+- **Development Environment** – Visual Studio, Rider, or any IDE that supports .NET development.
+- **A valid license** – Use a temporary license for testing or a full license for production (see the links in the FAQ section).
 
-Nu när du har allt klart, låt oss importera de namnrymder vi kommer att behöva.
+Now that you have everything ready, let’s import the namespaces we’ll need.
 
 ## Importera namnrymder
-I din .NET‑applikation, inkludera följande namnrymder för att utnyttja funktionerna i Aspose.GIS:
+In your .NET application, include the following namespaces to leverage the functionalities of Aspose.GIS:
 
 ```csharp
 using Aspose.Gis;
@@ -53,21 +58,22 @@ using System;
 using System.Text;
 ```
 
-Med namnrymderna på plats kan vi börja bygga datasetet.
+With the namespaces in place, we can start building the dataset.
 
-## Steg‑för‑steg‑guide
+## Hur man skapar GDB-dataset?
+Below is the step‑by‑step guide that walks you through creating the dataset and configuring tolerances.
 
 ### Steg 1: Definiera din dokumentkatalog
-Först, peka koden mot mappen där du vill att File GDB ska skapas:
+First, point the code to the folder where you want the File GDB to be created:
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-> **Pro tip:** Använd `Path.Combine` om du behöver bygga sökvägen på ett plattformsoberoende sätt.
+> **Proffstips:** Use `Path.Combine` if you need to build the path in a platform‑independent way.
 
 ### Steg 2: Skapa ett File GDB-dataset
-Nu **create file GDB dataset** vi faktiskt på disk. Metoden `Dataset.Create` tar hela sökvägen och drivrutintypen (`Drivers.FileGdb`).
+Now we actually **create file GDB dataset** on disk. The `Dataset.Create` method takes the full path and the driver type (`Drivers.FileGdb`).
 
 ```csharp
 var path = dataDir + "TolerancesForFileGdbLayer_out.gdb";
@@ -75,10 +81,10 @@ using (var dataset = Dataset.Create(path, Drivers.FileGdb))
 {
 ```
 
-> `using`‑blocket säkerställer att datasetet stängs korrekt och skrivs till disk när du är klar.
+> The `using` block ensures that the dataset is properly closed and flushed to disk when you’re done.
 
 ### Steg 3: Ange toleranser med `FileGdbOptions`
-Innan du skapar ett lager, definiera de toleranser du behöver. `FileGdbOptions` låter dig ange XY-, Z- och M‑toleranser.
+Before creating a layer, define the tolerances you need. `FileGdbOptions` lets you specify XY, Z, and M tolerances—this is the **file gdb options** object that controls precision.
 
 ```csharp
 var options = new FileGdbOptions
@@ -89,10 +95,10 @@ var options = new FileGdbOptions
 };
 ```
 
-Dessa värden är typiska för högprecisions‑ingenjörsdata, men du kan justera dem för att passa ditt projekt.
+These values are typical for high‑precision engineering data, but you can adjust them to suit your project.
 
-### Steg 4: Skapa ett lager med de angivna toleranserna
-Slutligen, skapa ett nytt lager i datasetet och skicka med options‑objektet som vi just konfigurerade.
+### Steg 4: Skapa ett GIS‑lager med de angivna toleranserna
+Finally, create a new layer inside the dataset, passing the options object we just configured. This step demonstrates **how to set tolerances** while also **creating a GIS layer**.
 
 ```csharp
 using (var layer = dataset.CreateLayer("layer_name", options))
@@ -101,39 +107,38 @@ using (var layer = dataset.CreateLayer("layer_name", options))
 }
 ```
 
-När `using`‑blocket avslutas sparas lagret med de toleranser du definierade.
+When the `using` block ends, the layer is saved with the tolerances you defined.
 
-## Vanliga problem & lösningar
-
+## Vanliga problem och lösningar
 | Problem | Varför det händer | Lösning |
 |-------|----------------|-----|
-| **Dataset‑sökväg hittades inte** | Variabeln `dataDir` pekar på en icke‑existerande mapp. | Se till att katalogen finns eller skapa den med `Directory.CreateDirectory(dataDir)`. |
-| **Ogiltiga toleransvärden** | Toleranser måste vara icke‑negativa tal. | Använd positiva värden; undvik noll om du inte avsiktligt vill ha ingen tolerans. |
-| **Licensfel** | En prov‑ eller tillfällig licens har gått ut. | Använd en ny tillfällig licens eller uppgradera till en full licens. |
+| **Dataset path not found** | The `dataDir` variable points to a non‑existent folder. | Ensure the directory exists or create it with `Directory.CreateDirectory(dataDir)`. |
+| **Invalid tolerance values** | Tolerances must be non‑negative numbers. | Use positive values; avoid zero unless you intentionally want no tolerance. |
+| **License error** | A trial or temporary license has expired. | Apply a fresh temporary license or upgrade to a full license. |
 
 ## Vanliga frågor
 
-**Q: Kan jag använda Aspose.GIS för .NET med andra GIS‑bibliotek?**  
-A: Ja, Aspose.GIS stödjer interoperabilitet och låter dig integrera det med bibliotek som NetTopologySuite eller GDAL.
+**Q: Can I use Aspose.GIS for .NET with other GIS libraries?**  
+A: Yes, Aspose.GIS supports interoperability, allowing you to integrate it with libraries such as NetTopologySuite or GDAL.
 
-**Q: Finns det en provversion tillgänglig för Aspose.GIS för .NET?**  
-A: Absolut! Du kan utforska funktionerna med [gratis provversion](https://releases.aspose.com/).
+**Q: Is there a trial version available for Aspose.GIS for .NET?**  
+A: Absolutely! You can explore the features with the [free trial version](https://releases.aspose.com/).
 
-**Q: Hur kan jag få support för Aspose.GIS för .NET?**  
-A: Besök [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) för att komma i kontakt med communityn och söka hjälp.
+**Q: How can I get support for Aspose.GIS for .NET?**  
+A: Visit the [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) to connect with the community and seek assistance.
 
-**Q: Behöver jag en tillfällig licens för teständamål?**  
-A: Ja, du kan skaffa en [tillfällig licens](https://purchase.aspose.com/temporary-license/) för testning och utvärdering.
+**Q: Do I need a temporary license for testing purposes?**  
+A: Yes, you can obtain a [temporary license](https://purchase.aspose.com/temporary-license/) for testing and evaluation.
 
-**Q: Var kan jag köpa licensen för Aspose.GIS för .NET?**  
-A: Du kan köpa licensen från [köpsida](https://purchase.aspose.com/buy).
+**Q: Where can I purchase the Aspose.GIS for .NET license?**  
+A: You can purchase the license from the [buy page](https://purchase.aspose.com/buy).
 
 ## Slutsats
-I den här guiden gick vi igenom hur man **create file GDB dataset**, konfigurerar geometriska toleranser och sparar ett färdigt lager med Aspose.GIS för .NET. Dessa steg ger dig exakt kontroll över rumsliga data, vilket gör dina GIS‑applikationer mer pålitliga och interoperabla.
+In this guide we covered **how to create gdb** files, configure geometry tolerances, and save a ready‑to‑use layer with Aspose.GIS for .NET. These steps give you precise control over spatial data, making your GIS applications more reliable and interoperable.
 
 ---  
-**Senast uppdaterad:** 2025-12-31  
-**Testad med:** Aspose.GIS for .NET 24.11 (senaste vid skrivtillfället)  
+**Senast uppdaterad:** 2026-04-30  
+**Testat med:** Aspose.GIS for .NET 24.11 (senaste vid skrivande stund)  
 **Författare:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
