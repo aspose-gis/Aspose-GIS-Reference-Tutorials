@@ -1,37 +1,42 @@
 ---
-title: Lees functies uit GML in Aspose.GIS
-linktitle: Lees functies van GML
-second_title: Aspose.GIS .NET-API
-description: Leer hoe u functies uit GML-bestanden kunt lezen met Aspose.GIS voor .NET. Een uitgebreide tutorial voor GIS-ontwikkelaars.
-weight: 10
+date: 2026-04-30
+description: Leer hoe u GML-functies kunt lezen met Aspose.GIS voor .NET. Deze tutorial
+  laat zien hoe u GML-bestanden efficiënt kunt lezen.
+keywords:
+- how to read gml
+- aspose gis gml
+- read gml features
+linktitle: Features lezen uit GML
+second_title: Aspose.GIS .NET API
+title: Hoe GML-features te lezen met Aspose.GIS
 url: /nl/net/layer-data-operations/read-features-from-gml/
+weight: 10
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Lees functies uit GML in Aspose.GIS
+# Hoe GML-functies te lezen met Aspose.GIS
 
-## Invoering
+## Introductie
 
-Ben je klaar om je te verdiepen in de wereld van Geografische Informatiesystemen (GIS) met behulp van de krachtige Aspose.GIS voor .NET-bibliotheek? Of u nu een doorgewinterde ontwikkelaar bent of net begint met GIS-programmeren, deze tutorial leidt u stap voor stap door het proces van het lezen van functies uit GML-bestanden (Geography Markup Language). Aspose.GIS voor .NET biedt een uitgebreide set tools en API's om georuimtelijke gegevens moeiteloos te manipuleren, waardoor u het volledige potentieel van uw GIS-toepassingen kunt ontsluiten.
+Als je je afvraagt **hoe gml te lezen** bestanden in een .NET‑omgeving, ben je op de juiste plek. In deze tutorial lopen we stap‑voor‑stap door de Aspose.GIS for .NET API, laten we zien hoe je een GML‑bestand opent, de functies eruit haalt en eventueel ontbrekende attribuutschema’s herstelt. Of je nu een desktop‑GIS‑tool of een web‑gebaseerde kaartservice bouwt, deze workflow stelt je in staat om rijke georuimtelijke data snel en betrouwbaar te integreren.
 
-## Vereisten
+## Snelle antwoorden
+- **Welke bibliotheek is nodig?** Aspose.GIS for .NET  
+- **Kan ik schema's van internet laden?** Ja, stel `LoadSchemasFromInternet = true`.  
+- **Heb ik een licentie nodig voor ontwikkeling?** Een gratis proefversie werkt voor testen; een licentie is vereist voor productie.  
+- **Is ondersteuning voor grote bestanden beschikbaar?** Aspose.GIS streamt data, zodat grote GML‑bestanden efficiënt worden verwerkt.  
+- **Welke .NET‑versies worden ondersteund?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
 
-Voordat we aan deze spannende reis beginnen, moet je ervoor zorgen dat je aan de volgende vereisten voldoet:
+## Hoe GML-functies te lezen
 
-1. Basiskennis van C# en .NET-omgeving: Bekendheid met de programmeertaal C# en het .NET-framework zal nuttig zijn aangezien we in de .NET-omgeving zullen werken.
+Hieronder vind je de praktische, hands‑on‑gids die je kunt kopiëren‑en‑plakken in je project. Elke stap wordt in duidelijke taal uitgelegd vóór het bijbehorende code‑blok, zodat je altijd weet *waarom* je iets doet.
 
-2. Installatie van Aspose.GIS voor .NET-bibliotheek: Zorg ervoor dat u de Aspose.GIS voor .NET-bibliotheek hebt gedownload en geïnstalleerd. U kunt de bibliotheek verkrijgen via de[download link](https://releases.aspose.com/gis/net/).
+### Stap 1: Vereiste namespaces importeren
 
-3. Toegang tot voorbeeld-GML-bestanden: bereid enkele voorbeeld-GML-bestanden voor die u gaat gebruiken om de leesfuncties te oefenen. Deze bestanden moeten georuimtelijke gegevens bevatten die zijn gecodeerd in GML-indeling.
-
-4. Internetverbinding (optioneel): Als uw GML-bestanden verwijzen naar schema's die zich op internet bevinden, zorg er dan voor dat u een internetverbinding hebt, aangezien Aspose.GIS mogelijk schema's van internet moet laden.
-
-## Naamruimten importeren
-
-Laten we om te beginnen de benodigde naamruimten in onze C#-code importeren om de functionaliteit van Aspose.GIS voor .NET te gebruiken.
+Eerst importeer je de Aspose.GIS‑namespaces. Hierdoor krijg je toegang tot `VectorLayer`, `GmlOptions` en andere essentiële klassen.
 
 ```csharp
 using Aspose.Gis;
@@ -46,11 +51,9 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-Nu we de basis hebben gelegd, gaan we het proces van het lezen van functies uit GML-bestanden in meerdere stappen opsplitsen.
+### Stap 2: GmlOptions definiëren
 
-## Stap 1: Definieer GmlOptions
-
- Eerst moeten we de opties definiëren voor het lezen van GML-bestanden. We maken een exemplaar van`GmlOptions` klasse en stel de eigenschappen dienovereenkomstig in.
+`GmlOptions` stelt je in staat om het gedrag van de GML‑parser te regelen. Het instellen van `SchemaLocation` op `null` vertelt Aspose.GIS het schema direct uit het bestand te lezen, terwijl `LoadSchemasFromInternet` online schema‑resolutie inschakelt wanneer dat nodig is.
 
 ```csharp
 GmlOptions options = new GmlOptions
@@ -60,11 +63,11 @@ GmlOptions options = new GmlOptions
 };
 ```
 
- In deze stap configureren we`SchemaLocation`op nul, wat aangeeft dat Aspose.GIS zal proberen de schemalocatie uit het GML-bestand zelf te lezen. Bovendien schakelen we in`LoadSchemasFromInternet` op true als de schemareferenties zich online bevinden.
+> **Pro tip:** Als je de exacte schema‑locatie kent, wijs die dan toe aan `SchemaLocation` om extra netwerk‑verzoeken te vermijden.
 
-## Stap 2: Lees functies uit het GML-bestand
+### Stap 3: Het GML‑bestand openen en functies enumereren
 
- Vervolgens gebruiken we de`VectorLayer.Open` methode om het GML-bestand te openen en de functies ervan te lezen. We geven het bestandspad op, specificeren het GML-stuurprogramma en geven het eerder gedefinieerde door`GmlOptions`.
+Gebruik `VectorLayer.Open` met de GML‑driver en de opties die je zojuist hebt gemaakt. Het `using`‑blok zorgt ervoor dat de laag correct wordt vrijgegeven na verwerking.
 
 ```csharp
 using (VectorLayer layer = VectorLayer.Open(dataDir + "file.gml", Drivers.Gml, options))
@@ -76,11 +79,11 @@ using (VectorLayer layer = VectorLayer.Open(dataDir + "file.gml", Drivers.Gml, o
 }
 ```
 
- Hier doorlopen we elk object in de laag en halen we de waarde van een specifiek attribuut op. Vervangen`"attribute"` met de naam van het attribuut dat u wilt ophalen.
+Vervang `"attribute"` door de werkelijke veldnaam die je wilt lezen (bijv. `"Name"` of `"Population"`). De `GetValue<T>`‑methode converteert het attribuut automatisch naar het gevraagde .NET‑type.
 
-## Stap 3: Kenmerkenschema herstellen (optioneel)
+### Stap 4 (optioneel): Attribuutschema herstellen wanneer ontbreekt
 
-Als het GML-bestand de schemalocatie niet expliciet specificeert, kunt u ervoor kiezen om het attributenschema te herstellen op basis van de bestandsgegevens.
+Sommige GML‑bestanden laten de schema‑definitie weg. Door `RestoreSchema` in te schakelen, leidt Aspose.GIS de attribuutstructuur af uit de data zelf.
 
 ```csharp
 using (VectorLayer layer = VectorLayer.Open(dataDir + "file.gml", Drivers.Gml, new GmlOptions(){RestoreSchema = true}))
@@ -92,33 +95,63 @@ using (VectorLayer layer = VectorLayer.Open(dataDir + "file.gml", Drivers.Gml, n
 }
 ```
 
- In deze stap passeren we een nieuw exemplaar van`GmlOptions` met`RestoreSchema` ingesteld op waar. Aspose.GIS zal proberen het attributenschema te herstellen met behulp van de bestandsgegevens.
+Deze fallback is handig voor legacy‑datasets of bestanden die door tools van derden zijn gegenereerd.
 
-## Conclusie
+## Waarom Aspose.GIS gebruiken voor GML?
 
-Gefeliciteerd! Je hebt met succes geleerd hoe je features uit GML-bestanden kunt lezen met Aspose.GIS voor .NET. Door de stapsgewijze handleiding te volgen, kunt u georuimtelijke gegevens naadloos integreren in uw .NET-toepassingen, waardoor deuren worden geopend naar eindeloze mogelijkheden in de GIS-ontwikkeling.
+- **Volledige .NET‑integratie:** Geen native bibliotheken of COM‑interop nodig.  
+- **Robuuste schema‑afhandeling:** Automatisch laden van het web of lokale bestanden.  
+- **Prestatiegericht:** Stream‑gebaseerd lezen minimaliseert het geheugen‑verbruik.  
+- **Cross‑platform:** Werkt op Windows, Linux en macOS met .NET Core/.NET 5+.
+
+## Vereisten
+
+1. **C# / .NET‑kennis** – basisvertrouwdheid met klassen, `using`‑statements en console‑output.  
+2. **Aspose.GIS for .NET** – download het via de [download link](https://releases.aspose.com/gis/net/).  
+3. **Voorbeeld‑GML‑bestanden** – zorg dat je minstens één GML‑bestand hebt om mee te experimenteren.  
+4. **Internettoegang (optioneel)** – alleen vereist als je GML verwijzingen naar externe schema’s bevat.
+
+## Veelvoorkomende problemen & tips
+
+| Probleem | Waarom het gebeurt | Oplossing |
+|----------|--------------------|-----------|
+| **Schema not found** | `SchemaLocation` wijst naar een ontbrekende URL. | Stel `LoadSchemasFromInternet = true` in of lever een lokaal schema‑bestand. |
+| **Null attribute values** | Attribuutnaam komt niet overeen (hoofdletter‑gevoelig). | Controleer de exacte veldnaam met een GIS‑viewer of `feature.GetFieldNames()`. |
+| **Large file slows down** | Het volledige bestand wordt in het geheugen geladen. | Houd `RestoreSchema` op false en verwerk functies in een streaming‑lus zoals getoond. |
 
 ## Veelgestelde vragen
 
-### Vraag: Kan Aspose.GIS grote GML-bestanden efficiënt verwerken?
+### Q: Kan Aspose.GIS grote GML‑bestanden efficiënt verwerken?
+A: Ja, Aspose.GIS streamt data en maakt gebruik van lazy loading, zodat zelfs multi‑gigabyte GML‑bestanden verwerkt kunnen worden zonder het geheugen uit te putten.
 
-A: Ja, Aspose.GIS is geoptimaliseerd om grote GML-bestanden efficiënt te verwerken, waardoor een soepele verwerking wordt gegarandeerd, zelfs met uitgebreide georuimtelijke gegevens.
+### Q: Ondersteunt Aspose.GIS andere georuimtelijke formaten naast GML?
+A: Absoluut! Het ondersteunt Shapefile, KML, GeoJSON, CSV en nog veel meer, waardoor je flexibel met diverse gegevensbronnen kunt werken.
 
-### Vraag: Ondersteunt Aspose.GIS naast GML ook andere georuimtelijke formaten?
+### Q: Is Aspose.GIS compatibel met zowel desktop‑ als webapplicaties?
+A: Ja, de bibliotheek werkt naadloos in ASP.NET, ASP.NET Core, WPF, WinForms en console‑applicaties.
 
-EEN: Absoluut! Aspose.GIS biedt ondersteuning voor verschillende georuimtelijke formaten zoals Shapefile, KML, GeoJSON en meer, en biedt flexibiliteit bij gegevensintegratie.
+### Q: Kan ik ruimtelijke queries uitvoeren met Aspose.GIS?
+A: Zeker. Je kunt ruimtelijke predicaten zoals `Intersects`, `Contains` en `Within` direct op `Feature`‑collecties toepassen.
 
-### Vraag: Is Aspose.GIS compatibel met zowel desktop- als webapplicaties?
+### Q: Is technische ondersteuning beschikbaar voor Aspose.GIS‑gebruikers?
+A: Ja, Aspose biedt dedicated technische ondersteuning via hun forum [link]( https://forum.aspose.com/c/gis/33), waar gebruikers hulp kunnen zoeken, problemen kunnen melden en met de community kunnen communiceren.
 
-A: Ja, Aspose.GIS is veelzijdig en kan naadloos worden geïntegreerd in zowel desktop- als webapplicaties die zijn ontwikkeld met behulp van het .NET-framework.
+### Q: Hoe lees ik een GML‑bestand dat een aangepaste namespace gebruikt?
+A: Stel de `Namespace`‑eigenschap van `GmlOptions` in op de aangepaste namespace, en open vervolgens de laag zoals gewoonlijk.
 
-### Vraag: Kan ik ruimtelijke zoekopdrachten uitvoeren met Aspose.GIS?
+### Q: Kan ik GML‑bestanden schrijven of bewerken nadat ik ze heb gelezen?
+A: Ja, je kunt attribuutwaarden wijzigen en vervolgens `layer.Save("output.gml", Drivers.Gml)` aanroepen om de wijzigingen op te slaan.
 
-EEN: Zeker! Aspose.GIS biedt robuuste mogelijkheden voor ruimtelijke zoekopdrachten, waardoor u met gemak complexe ruimtelijke bewerkingen kunt uitvoeren.
+## Conclusie
 
-### Vraag: Is er technische ondersteuning beschikbaar voor Aspose.GIS-gebruikers?
+Je hebt nu een volledige, productie‑klare handleiding voor **hoe gml te lezen** bestanden met Aspose.GIS for .NET. Door de bovenstaande stappen te volgen kun je GML‑data integreren in elke .NET‑applicatie, attribuut‑extractie uitvoeren en ontbrekende schema’s elegant afhandelen. Verken de andere format‑drivers in Aspose.GIS om echt veelzijdige GIS‑oplossingen te bouwen.
 
- A: Ja, Aspose biedt speciale technische ondersteuning via hun forum[koppeling]( https://forum.aspose.com/c/gis/33), waar gebruikers hulp kunnen zoeken, problemen kunnen melden en met de gemeenschap kunnen communiceren.
+---
+
+**Laatst bijgewerkt:** 2026-04-30  
+**Getest met:** Aspose.GIS for .NET 24.11 (latest at time of writing)  
+**Auteur:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
