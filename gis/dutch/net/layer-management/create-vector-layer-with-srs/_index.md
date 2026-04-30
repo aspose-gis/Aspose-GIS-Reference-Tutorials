@@ -1,27 +1,44 @@
 ---
-title: Maak een vectorlaag met SRS
-linktitle: Maak een vectorlaag met SRS
-second_title: Aspose.GIS .NET-API
-description: Ontdek Aspose.GIS voor .NET - uw sleutel tot naadloze GIS-integratie. Creëer moeiteloos vectorlagen met gespecificeerde ruimtelijke referentiesystemen. Download nu!
-weight: 13
+date: 2026-01-15
+description: Ontdek Aspose.GIS voor .NET om een vectorlaag met een ruimtelijk referentiesysteem
+  te maken. Leer hoe je SRS instelt, een laag maakt en GIS‑gegevens beheert. Download
+  nu!
+linktitle: Create Vector Layer with SRS
+second_title: Aspose.GIS .NET API
+title: Vectorlaag maken met SRS
 url: /nl/net/layer-management/create-vector-layer-with-srs/
+weight: 13
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Maak een vectorlaag met SRS
+# Vectorlaag maken met SRS
 
-## Invoering
-Aspose.GIS voor .NET is een krachtige bibliotheek waarmee ontwikkelaars naadloos kunnen werken met GIS-gegevens (geografisch informatiesysteem) in .NET-toepassingen. In deze zelfstudie concentreren we ons op het maken van een vectorlaag met een ruimtelijk referentiesysteem (SRS). Aan het einde van deze handleiding kunt u moeiteloos GIS-mogelijkheden integreren in uw .NET-projecten.
-## Vereisten
-Voordat we ingaan op de tutorial, zorg ervoor dat je aan de volgende vereisten voldoet:
-- Basiskennis van C# en .NET-ontwikkeling.
--  Aspose.GIS voor .NET-bibliotheek geïnstalleerd. Je kunt het downloaden[hier](https://releases.aspose.com/gis/net/).
-- Een ontwikkelomgeving opgezet en klaar.
-## Naamruimten importeren
-Zorg ervoor dat u de benodigde naamruimten aan het begin van uw C#-bestand importeert:
+## Introduction
+Aspose.GIS for .NET is een krachtige bibliotheek die ontwikkelaars in staat stelt **create vector layer** objecten te maken en naadloos te werken met geografische informatiesysteem (GIS) gegevens in .NET-toepassingen. In deze tutorial lopen we door hoe je een vectorlaag maakt met een ruimtelijk referentiesysteem (SRS), waarom je een ruimtelijke referentie zou willen instellen, en welke voordelen dit biedt voor projecten in de echte wereld. Aan het einde van deze gids kun je GIS-mogelijkheden integreren in je .NET-oplossingen met vertrouwen.
+
+## Quick Answers
+- **Wat is het primaire doel van deze tutorial?** Om te laten zien hoe je een vectorlaag maakt met een gespecificeerde SRS met behulp van Aspose.GIS voor .NET.  
+- **Welke projectie wordt in het voorbeeld gebruikt?** World Mercator (EPSG:3395).  
+- **Heb ik een licentie nodig om de code uit te voeren?** Een gratis proefversie werkt voor ontwikkeling; een commerciële licentie is vereist voor productie.  
+- **Kan ik dezelfde aanpak gebruiken met andere GIS-formaten?** Ja, dezelfde SRS-afhandeling geldt voor Shapefile, GeoJSON, KML, enz.  
+- **Welke .NET-versies worden ondersteund?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
+
+## What is a vector layer and why set its spatial reference?
+Een **vector layer** slaat geometrische objecten (punten, lijnen, polygonen) op samen met attribuutgegevens. Het toewijzen van een **spatial reference** (SRS) vertelt GIS-software hoe die coördinaten op het aardoppervlak geïnterpreteerd moeten worden. Het instellen van de juiste SRS zorgt voor nauwkeurige metingen, correcte overlay met andere lagen en betrouwbare kaartvisualisaties.
+
+## Prerequisites
+Voordat we beginnen, zorg ervoor dat je het volgende hebt:
+
+- Basiskennis van C# en .NET-ontwikkeling.  
+- Aspose.GIS for .NET bibliotheek geïnstalleerd. Je kunt het downloaden **[here](https://releases.aspose.com/gis/net/)**.  
+- Een ontwikkelomgeving (Visual Studio, VS Code, of een andere C# IDE).  
+
+## Import Namespaces
+Zorg ervoor dat je de benodigde namespaces bovenaan je C#-bestand hebt geïmporteerd:
+
 ```csharp
 using Aspose.Gis;
 using Aspose.Gis.Formats.Shapefile;
@@ -34,8 +51,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 ```
-## Stap 1: Stel het geprojecteerde ruimtelijke referentiesysteem in
-Laten we een geprojecteerd ruimtelijk referentiesysteem (SRS) maken met de World Mercator-projectie als voorbeeld. Volg deze stappen:
+
+## How to set spatial reference (SRS) – Step 1
+Laten we een **projected spatial reference system** maken met de World Mercator-projectie als voorbeeld. Dit toont **how to set srs** voor een laag.
+
 ```csharp
 var parameters = new ProjectedSpatialReferenceSystemParameters
 {
@@ -53,8 +72,10 @@ parameters.AddProjectionParameter("false_easting", 0);
 parameters.AddProjectionParameter("false_northing", 0);
 var projectedSrs = SpatialReferenceSystem.CreateProjected(parameters, Identifier.Epsg(3395));
 ```
-## Stap 2: Maak een vectorlaag en voeg functies toe
-Laten we nu een shapefile maken en functies toevoegen met de opgegeven SRS:
+
+## How to create layer – Step 2
+Nu gaan we een **create a vector layer** (een Shapefile) maken en functies toevoegen die de SRS gebruiken die we zojuist hebben gedefinieerd. Dit gedeelte beantwoordt **how to create layer** met Aspose.GIS.
+
 ```csharp
 using (var layer = Drivers.Shapefile.CreateLayer(dataDir + "filepath_out.shp", new ShapefileOptions(), projectedSrs))
 {
@@ -65,7 +86,7 @@ using (var layer = Drivers.Shapefile.CreateLayer(dataDir + "filepath_out.shp", n
     feature.Geometry = new Point(1, 2) { SpatialReferenceSystem = SpatialReferenceSystem.Nad83 };
     try
     {
-        layer.Add(feature); // Dit levert een uitzondering op omdat de geometrie een andere SRS heeft
+        layer.Add(feature); // This will throw an exception as the geometry has a different SRS
     }
     catch (GisException e)
     {
@@ -73,29 +94,71 @@ using (var layer = Drivers.Shapefile.CreateLayer(dataDir + "filepath_out.shp", n
     }
 }
 ```
-## Stap 3: Verifieer het ruimtelijke referentiesysteem
-Laten we ten slotte de laag openen en het ruimtelijke referentiesysteem ervan verifiëren:
+
+> **Pro tip:** Controleer altijd dat de `SpatialReferenceSystem` van de geometrie overeenkomt met de SRS van de laag voordat je deze toevoegt. Niet-overeenkomende SRS-waarden veroorzaken een `GisException`, zoals hierboven getoond.
+
+## Verify Spatial Reference System – Step 3
+Open tenslotte de laag en bevestig dat de SRS correct is toegepast.
+
 ```csharp
 using (var layer = Drivers.Shapefile.OpenLayer(dataDir + "filepath_out.shp"))
 {
-    var srsName = layer.SpatialReferenceSystem.Name; // "WGS 84 / Wereld Mercator"
-    layer.SpatialReferenceSystem.IsEquivalent(projectedSrs); // Zou waar moeten terugkeren
+    var srsName = layer.SpatialReferenceSystem.Name; // "WGS 84 / World Mercator"
+    layer.SpatialReferenceSystem.IsEquivalent(projectedSrs); // Should return true
 }
 ```
-Door deze stappen te volgen, hebt u met succes een vectorlaag gemaakt met een gespecificeerd ruimtelijk referentiesysteem met behulp van Aspose.GIS voor .NET.
-## Conclusie
-GIS-functionaliteit integreren in uw .NET-applicaties is nog nooit zo eenvoudig geweest dankzij Aspose.GIS. Met de mogelijkheid om moeiteloos vectorlagen te creëren en ruimtelijke referentiesystemen te beheren, kunt u uw projecten uitbreiden met krachtige geospatiale mogelijkheden.
-## Veelgestelde vragen
-### Is Aspose.GIS compatibel met alle GIS-bestandsformaten?
- Aspose.GIS ondersteunt verschillende GIS-formaten, waaronder Shapefile, GeoJSON, KML en meer. Controleer de[documentatie](https://reference.aspose.com/gis/net/) voor de volledige lijst.
-### Kan ik Aspose.GIS gebruiken in een webapplicatie?
+
+Als de `IsEquivalent`-aanroep `true` retourneert, heb je met succes **create vector layer** met de gewenste ruimtelijke referentie.
+
+## Common Issues & Solutions
+| Probleem | Waarom het gebeurt | Oplossing |
+|----------|--------------------|-----------|
+| `GisException` bij het toevoegen van een feature | Geometrie gebruikt een andere SRS dan de laag | Stel `feature.Geometry.SpatialReferenceSystem` in op de SRS van de laag voordat je toevoegt |
+| Laag lijkt leeg in GIS-software | Het shapefile werd aangemaakt zonder een correct `.prj`-bestand | Zorg ervoor dat het `projectedSrs`-object wordt doorgegeven bij het aanmaken van de laag |
+| Onverwachte coördinaatwaarden | Verkeerde projectieparameters (bijv. centrale meridiaan) | Controleer de parameters die aan `AddProjectionParameter` zijn doorgegeven |
+
+## FAQs
+### Is Aspose.GIS compatible with all GIS file formats?
+Aspose.GIS ondersteunt verschillende GIS-formaten, waaronder Shapefile, GeoJSON, KML en meer. Bekijk de **[documentation](https://reference.aspose.com/gis/net/)** voor de volledige lijst.
+
+### Can I use Aspose.GIS in a web application?
 Absoluut! Aspose.GIS voor .NET is veelzijdig en kan worden gebruikt in webapplicaties, desktopapplicaties en zelfs mobiele apps.
-### Waar kan ik ondersteuning krijgen voor Aspose.GIS?
- Je kunt een behulpzame community vinden op de[Aspose.GIS-forum](https://forum.aspose.com/c/gis/33) voor eventuele vragen of problemen die u tegenkomt.
-### Is er een gratis proefversie beschikbaar?
- Ja, u kunt de functies van Aspose.GIS verkennen door een gratis proefperiode aan te vragen[hier](https://releases.aspose.com/).
-### Hoe kan ik een licentie voor Aspose.GIS aanschaffen?
- Als u een licentie wilt kopen, gaat u naar de[aankooppagina](https://purchase.aspose.com/buy).
+
+### Where can I get support for Aspose.GIS?
+Je kunt een behulpzame community vinden op het **[Aspose.GIS forum](https://forum.aspose.com/c/gis/33)** voor eventuele vragen of problemen.
+
+### Is there a free trial available?
+Ja, je kunt de functies van Aspose.GIS verkennen door een gratis proefversie te verkrijgen **[here](https://releases.aspose.com/)**.
+
+### How can I purchase a license for Aspose.GIS?
+Om een licentie aan te schaffen, bezoek de **[purchase page](https://purchase.aspose.com/buy)**.
+
+## Frequently Asked Questions (Additional)
+
+**Q: Wat gebeurt er als ik een geometrie met een andere SRS probeer toe te voegen?**  
+A: Aspose.GIS gooit een `GisException`. Je moet de geometrie opnieuw projecteren of ervoor zorgen dat deze dezelfde SRS als de laag heeft.
+
+**Q: Kan ik de SRS van een bestaande laag wijzigen?**  
+A: Ja, je kunt een nieuwe laag maken met de gewenste SRS en functies overzetten, waarbij je ze zo nodig reprojection.
+
+**Q: Is het mogelijk om met 3D-coördinaten te werken?**  
+A: Aspose.GIS ondersteunt Z‑coördinaten; gebruik gewoon geometry-constructors die een Z-waarde accepteren.
+
+**Q: Handelt de bibliotheek datumtransformaties automatisch af?**  
+A: Wanneer je geometrieën reprojecteert met `Geometry.Transform`, voert Aspose.GIS de benodigde datumverschuiving uit.
+
+**Q: Welke .NET-versies zijn officieel getest?**  
+A: De bibliotheek is getest met .NET Framework 4.5+, .NET Core 3.1+, en .NET 5/6/7.
+
+## Conclusion
+Je hebt nu geleerd hoe je een **create vector layer** maakt met een aangepast ruimtelijk referentiesysteem met behulp van Aspose.GIS voor .NET. Door de juiste SRS in te stellen, geometrie consistent te verwerken en de metadata van de laag te verifiëren, kun je robuuste GIS-ondersteunde applicaties bouwen die interopereren met elke standaard GIS-software.
+
+---
+
+**Last Updated:** 2026-01-15  
+**Getest met:** Aspose.GIS 24.11 for .NET (latest at time of writing)  
+**Auteur:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}

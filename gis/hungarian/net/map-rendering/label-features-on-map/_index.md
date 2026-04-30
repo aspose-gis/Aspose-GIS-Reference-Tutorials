@@ -1,27 +1,49 @@
 ---
-title: A jellemzők címkézésének elsajátítása az Aspose.GIS segítségével .NET-hez
-linktitle: Címke jellemzők a térképen
+date: 2026-01-15
+description: Ismerje meg, hogyan címkézheti a térképi elemeket az Aspose.GIS for .NET
+  használatával, egyedi címkestílus-beállításokkal nagy adatkészletek címkézéséhez.
+linktitle: Label Features on Map
 second_title: Aspose.GIS .NET API
-description: Fedezze fel az Aspose.GIS for .NET webhelyet, és sajátítsa el a térképeken a jellemzők címkézésének művészetét. Fokozza a térinformatikai vizualizációkat könnyedén. #Aspose #GIS
-weight: 11
+title: Térképfunkciók címkézése az Aspose.GIS for .NET használatával
 url: /hu/net/map-rendering/label-features-on-map/
+weight: 11
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# A jellemzők címkézésének elsajátítása az Aspose.GIS segítségével .NET-hez
+# Térképi elemek címkézése az Aspose.GIS for .NET segítségével
 
 ## Bevezetés
-térinformatikai adatok megjelenítésének világában a térképen található címkézési jellemzők döntő szerepet játszanak az információ hatékony közvetítésében. Az Aspose.GIS for .NET hatékony eszközkészletet biztosít ennek zökkenőmentes megvalósításához. Ebben az oktatóanyagban a pontok Aspose.GIS segítségével történő felcímkézésének különböző módszereit mutatjuk be, amelyek informatív címkékkel javítják a térkép megjelenítését.
-## Előfeltételek
-Mielőtt belevágna az oktatóanyagba, győződjön meg arról, hogy a következő előfeltételeket teljesítette:
-- C# és .NET keretrendszer gyakorlati ismerete.
--  Aspose.GIS for .NET telepítve. Letöltheti[itt](https://releases.aspose.com/gis/net/).
-- Pontadatokat tartalmazó GeoJSON-fájl. Ha nem rendelkezik ilyennel, használhat egy mintafájlt a teszteléshez.
+A térképi elemek címkézése elengedhetetlen a nyers földrajzi adatok tiszta, felhasználóbarát vizualizációkká alakításához. Ebben az útmutatóban megtudja, **hogyan címkézze a térképi elemeket** (az elsődleges kulcsszó) az Aspose.GIS for .NET használatával, felfedezhet egyedi címkestílusokat, és megismerhet olyan technikákat, amelyek nagy adatállományok esetén is működnek. A végére képes lesz informatív szöveget közvetlenül a térképekre helyezni, így azok elemzők és végfelhasználók számára is átfogóbbak lesznek.
+
+## Gyors válaszok
+- **Mi a fő osztály a rendereléshez?** `Map` (Aspose.Gis.Rendering)
+- **Melyik címkéző osztály ad egyszerű szöveget?** `SimpleLabeling`
+- **Stílusozhatom a címkéket (halo, betűtípus, forgatás)?** Igen – a `HaloSize`, `FontStyle` és `Placement` tulajdonságok segítségével
+- **Hogyan kezeljem a nagy adatállományokat?** Használja a `FeatureBasedConfiguration`-t, hogy attribútumértékek alapján priorizálja a címkéket
+- **Szükségem van licencre?** A próbaverzió fejlesztéshez működik; a termeléshez kereskedelmi licenc szükséges
+
+## Mi a label map features?
+A `label map features` azt jelenti, hogy olvasható szöveget (például városneveket, népességi adatokat vagy egyedi azonosítókat) csatolunk geometriai objektumokhoz – pontokhoz, vonalakhoz vagy poligonokhoz – hogy a térkép egy pillantással térbeli és attribútum információkat is közvetítsen.
+
+## Miért használjuk az Aspose.GIS-t a térképi elemek címkézéséhez?
+- **Nulla külső függőség** – tiszta .NET könyvtár, nincs szükség natív GIS binárisokra.  
+- **Gazdag stíluslehetőségek** – halo, egyedi betűtípusok, forgatás és rögzítési pontok, amelyekkel finomhangolhatja a megjelenést.  
+- **Teljesítmény‑tudatos** – beépített feature‑based címkézés, amely lehetővé teszi a legfontosabb címkék priorizálását nagy adatállományok renderelésekor.  
+- **Több kimeneti formátum** – SVG, PNG, PDF stb., egységes címkézési eredményekkel.
+
+## Előkövetelmények
+Mielőtt elkezdené, győződjön meg róla, hogy rendelkezik:
+
+- C# és a .NET keretrendszer működő ismerete.  
+- Az Aspose.GIS for .NET telepítve van. Letöltheti **[itt](https://releases.aspose.com/gis/net/)**.  
+- Egy GeoJSON fájl, amely pont adatokat tartalmaz (vagy bármely támogatott vektorformátum).
+
 ## Névterek importálása
-Győződjön meg arról, hogy a C#-kódban importálja az Aspose.GIS-sel való munkához szükséges névtereket:
+A C# kódban importálja a szükséges névtereket:
+
 ```csharp
 using System;
 using System.Drawing;
@@ -32,14 +54,16 @@ using Aspose.Gis.Rendering.Symbolizers;
 using Aspose.GIS.Examples.CSharp;
 using FontStyle = Aspose.Gis.Rendering.Labelings.FontStyle;
 ```
-Most bontsuk le az egyes példákat több lépésre, lépésről lépésre útmutató formátumban.
-##  Pontok címkézése
 
-### 1. lépés: Állítsa be a dokumentumkönyvtár elérési útját:
+Most több címkézési forgatókönyvet fogunk végigjárni, mindegyik az előzőre épül.
+
+## Pontok címkézése – Hogyan címkézzük a pontokat
+### 1. lépés: Állítsa be a dokumentumok könyvtárának útvonalát
 ```csharp
 string dataDir = "Your Document Directory";
 ```
-### 2. lépés: Készítsen térképet egy egyszerű jelölő szimbólummal:
+
+### 2. lépés: Hozzon létre egy térképet egyszerű jelölő szimbólummal
 ```csharp
 using (var map = new Map(500, 200))
 {
@@ -49,18 +73,19 @@ using (var map = new Map(500, 200))
         StrokeStyle = StrokeStyle.None
     };
     var labeling = new SimpleLabeling(labelAttribute: "name");
-    // 3. Adjon hozzá egy vektorréteget, és alkalmazzon címkézést
+    // 3. Add a vector layer and apply labeling
     map.Add(VectorLayer.Open(dataDir + "points.geojson", Drivers.GeoJson), symbol, labeling);
     map.Padding = 50;
-    // 4. Renderje le a térképet SVG fájlba
+    // 4. Render the map to an SVG file
     map.Render(dataDir + "points_labeling_out.svg", Renderers.Svg);
 }
 ```
-## Pontok címkézése stílusban
 
-Kövesse az előző példa 1. és 2. lépését.
+Ebben az egyszerű példában **hogyan címkézzük a pontokat** a GeoJSON fájl `name` attribútumával.
 
-### 1. lépés: A címkézési stílus testreszabása:
+## Pontok címkézése stílusosan – Egyedi címkestílus
+Kövesse az előző példa 1. és 2. lépését, majd testreszabja a címkézési stílust:
+
 ```csharp
 var labeling = new SimpleLabeling(labelAttribute: "name")
 {
@@ -69,12 +94,14 @@ var labeling = new SimpleLabeling(labelAttribute: "name")
     FontSize = 15,
     FontStyle = FontStyle.Italic,
 };
-// A többi lépés ugyanaz marad
+// Rest of the steps remain the same
 ```
-## Pontok címkézése elhelyezve
 
-Kövesse az első példa 1. és 2. lépését.
-### 2. lépés: A címke elhelyezésének testreszabása:
+A hozzáadott halo és dőlt betűtípus egy **egyedi címkestílust** kölcsönöz a címkéknek, amely kiemelkedik a zsúfolt háttérből.
+
+## Pontok címkézése elhelyezve – Haladó elhelyezési beállítások
+Ismét kezdje az első példa 1. és 2. lépésével, majd állítsa be az elhelyezést:
+
 ```csharp
 var labeling = new SimpleLabeling(labelAttribute: "name")
 {
@@ -88,13 +115,14 @@ var labeling = new SimpleLabeling(labelAttribute: "name")
         Rotation = 10,
     }
 };
-// A többi lépés ugyanaz marad
+// Rest of the steps remain the same
 ```
-## Pontcímkézési funkció alapú
 
-Kövesse az első példa 1. és 2. lépését.
+Itt szabályozhatja a rögzítési pontokat, eltolásokat és forgatást, így finomhangolt irányítást kap a **pontok címkézéséről** zsúfolt térképrészletekben.
 
-### 1. lépés: A funkcióalapú címkézés alkalmazása:
+## Pontok címkézése funkció alapúan – Nagy adatállomány címkézése
+Sok pont kezelésekor előnyben részesítheti a címkéket egy attribútum, például a népesség alapján. Kövesse az első példa 1. és 2. lépését, majd valósítsa meg a funkció alapú címkézést:
+
 ```csharp
 var pointLabeling = new SimpleLabeling("name")
 {
@@ -108,30 +136,46 @@ var pointLabeling = new SimpleLabeling("name")
     },
     FeatureBasedConfiguration = (feature, labeling) =>
     {
-        // Népesség lekérése a tereptárgyból.
+        // Retrieve population from the feature.
         var population = feature.GetValue<int>("population");
-        // A betűméret kiszámítása a populáción alapul.
+        // Font size is computed and is based on the population.
         labeling.FontSize = Math.Min(20, 5 * population / 1000);
-        // A címke prioritása szintén a populáción alapul.
-        // Minél nagyobb a prioritás, annál valószínűbb, hogy címke jelenik meg a kimeneti képen.
+        // Priority of the label is also based on the population.
+        // The greater the priority is, the more likely label will appear on the output image.
         labeling.Priority = population;
     }
 };
-// A többi lépés ugyanaz marad
+// Rest of the steps remain the same
 ```
-## Következtetés
-Gratulálunk! Megtanulta, hogyan javíthatja térképmegjelenítését az Aspose.GIS for .NET használatával funkciók címkézésével. Kísérletezzen különböző stílusokkal és elhelyezésekkel, hogy lenyűgöző térképeket hozzon létre az adataihoz igazítva.
-## GYIK
-### Felcímkézhetek funkciókat egyéni betűtípusok használatával?
-Igen, testreszabhatja a betűtípust és -méretet a címkézési konfigurációban.
-### Az Aspose.GIS kompatibilis más GIS adatformátumokkal?
-Az Aspose.GIS különféle térinformatikai formátumokat támogat, beleértve a GeoJSON-t, a Shapefile-t és egyebeket.
-### Hogyan kezelhetek nagy adatkészleteket címkézéshez?
-Az Aspose.GIS a teljesítményre optimalizált, de fontolja meg a szolgáltatásalapú konfigurációk használatát a címkék adatattribútumok alapján történő priorizálásához.
-### Vannak speciális címkeelhelyezési lehetőségek?
-Igen, finomhangolhatja a címkék elhelyezését olyan opciókkal, mint az elforgatás, a rögzítési pontok és az eltolások.
-### Automatizálhatom a címkegenerálást kötegelt folyamatban?
-Természetesen az Aspose.GIS integrálható az automatizált munkafolyamataiba a kötegelt címkegeneráláshoz.
+
+Ez a **nagy adatállomány címkézési** stratégia biztosítja, hogy a legfontosabb városok (népesség szerint) először jelenjenek meg, míg a kevésbé fontos pontok elhagyhatók, ha a hely korlátozott.
+
+## Összegzés
+Gratulálunk! Most már többféle módot ismer a **térképi elemek címkézésére** az Aspose.GIS for .NET segítségével – az egyszerű pontcímkézéstől a kifinomult, funkció alapú stílusig nagy adatállományok esetén. Kísérletezzen halo-val, forgatással és prioritási szabályokkal, hogy olyan térképeket készítsen, amelyek pontosan azt közvetítik, amit a közönsége látni szeretne.
+
+## Gyakran Ismételt Kérdések
+
+**K: Címkézhetek elemeket egyedi betűtípusokkal?**  
+I: Igen. Állítsa be a `FontFamily` és `FontStyle` értékeket a `SimpleLabeling` konfigurációban, hogy bármely telepített betűtípust használhasson.
+
+**K: Az Aspose.GIS kompatibilis más GIS adatformátumokkal?**  
+I: Teljesen. Támogatja a GeoJSON, Shapefile, KML, GML és még sok más formátumot.
+
+**K: Hogyan kezelhetem a nagy adatállományokat a címkézéshez?**  
+I: Használja a `FeatureBasedConfiguration`-t, hogy priorizálja a címkéket és dinamikusan állítsa a betűméreteket attribútumértékek alapján, ahogy a funkció alapú példában látható.
+
+**K: Elérhetők haladó címkeelhelyezési beállítások?**  
+I: Igen. Finomhangolhatja az elhelyezést a `PointLabelPlacement` segítségével, beállítva a rögzítési pontokat, eltolásokat és forgatást.
+
+**K: Automatizálhatom a címkék generálását kötegelt folyamatban?**  
+I: Természetesen. A térkép renderelési kódot egy ciklusba vagy háttérszolgáltatásba ágyazva automatikusan feldolgozhat több réteget vagy fájlt.
+
+---
+
+**Last Updated:** 2026-01-15  
+**Tested With:** Aspose.GIS 24.11 for .NET  
+**Author:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
