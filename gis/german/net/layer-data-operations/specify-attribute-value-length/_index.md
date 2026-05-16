@@ -1,10 +1,40 @@
 ---
-date: 2025-12-31
-description: Erfahren Sie, wie Sie die Feldbreite in Aspose.GIS für .NET festlegen
-  und Attribute mit Länge effizient zu Shapefiles hinzufügen.
-linktitle: How to Set Field Width
+date: 2026-05-16
+description: Vektor-Layer-Beispiel, das zeigt, wie man field width festlegt, attribute
+  width definiert und attribute length in Aspose.GIS für .NET hinzufügt – ein vollständiger
+  Schritt‑für‑Schritt‑Leitfaden.
+keywords:
+- vector layer example
+- how to set width
+- set field width
+- define attribute width
+- add attribute length
+linktitle: Wie man field width festlegt
+schemas:
+- author: Aspose
+  dateModified: '2026-05-16'
+  description: Vector layer example showing how to set field width, define attribute
+    width, and add attribute length in Aspose.GIS for .NET – a complete step‑by‑step
+    guide.
+  headline: Vector Layer Example – How to Set Field Width in Aspose.GIS for .NET
+  type: TechArticle
+- questions:
+  - answer: You can acquire a temporary license [here](https://purchase.aspose.com/temporary-license/).
+    question: How can I obtain a temporary license for Aspose.GIS for .NET?
+  - answer: Visit the [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) for peer‑to‑peer
+      help and official responses.
+    question: Where can I find community support for Aspose.GIS for .NET?
+  - answer: Yes, explore the [free trial](https://releases.aspose.com/) to experience
+      the full feature set without cost.
+    question: Is there a free trial available for Aspose.GIS for .NET?
+  - answer: Purchase your license [here](https://purchase.aspose.com/buy).
+    question: How do I purchase a license for Aspose.GIS for .NET?
+  - answer: Refer to the [documentation](https://reference.aspose.com/gis/net/) for
+      comprehensive API details.
+    question: Where can I access the documentation for Aspose.GIS for .NET?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: Wie man die Feldbreite in Aspose.GIS für .NET festlegt
+title: Vektor-Layer-Beispiel – Wie man field width in Aspose.GIS für .NET festlegt
 url: /de/net/layer-data-operations/specify-attribute-value-length/
 weight: 18
 ---
@@ -13,32 +43,35 @@ weight: 18
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Wie man die Feldbreite in Aspose.GIS für .NET festlegt
+# Vektor-Layer-Beispiel – Wie man die Feldbreite in Aspose.GIS für .NET festlegt
 
-## Einleitung
-Willkommen in der Welt von Aspose.GIS für .NET – Ihrem Tor zu leistungsstarker und effizienter Geodatenentwicklung! Dieses umfassende Tutorial führt Sie durch die grundlegenden Schritte, um Aspose.GIS zu nutzen und Geodaten mühelos in Ihren .NET‑Anwendungen zu verwalten. Egal, ob Sie ein erfahrener Entwickler oder ein Neuling im Bereich Geodatenprogrammierung sind, dieser Leitfaden bietet Ihnen ein solides Fundament und praktische Einblicke. **In diesem Tutorial lernen Sie, wie Sie die Feldbreite für Attributwerte festlegen**, sodass Ihre Shapefile‑Felder Daten exakt so speichern, wie Sie es erwarten.
+In diesem **Vektor-Layer-Beispiel** lernen Sie, wie man die Feldbreite für ein Attribut beim Erstellen einer Shapefile mit Aspose.GIS für .NET festlegt. Wir gehen jeden Schritt durch, vom Importieren von Namespaces bis zum Hinzufügen eines Features, und erklären, warum die Kontrolle der Attributlänge für Datenintegrität und Interoperabilität mit anderen GIS‑Tools wichtig ist.
 
-## Kurze Antworten
-- **Was ist der Hauptzweck dieses Leitfadens?** Um Ihnen zu zeigen, wie Sie die Feldbreite für ein Attribut in einer Shapefile mit Aspose.GIS für .NET festlegen.  
+## Schnelle Antworten
+- **Was ist der Hauptzweck dieses Leitfadens?** Ihnen zu zeigen, wie man die Feldbreite für ein Attribut in einer Shapefile mithilfe von Aspose.GIS für .NET festlegt.  
 - **Welche Klasse definiert die Feldbreite?** `FeatureAttribute.Width`.  
-- **Benötige ich eine Lizenz, um den Code auszuführen?** Eine temporäre Lizenz funktioniert für die Evaluierung; für die Produktion ist eine Voll‑Lizenz erforderlich.  
+- **Benötige ich eine Lizenz, um den Code auszuführen?** Eine temporäre Lizenz funktioniert für die Evaluierung; für den Produktionseinsatz ist eine Voll‑Lizenz erforderlich.  
 - **Welches Dateiformat wird im Beispiel verwendet?** ESRI Shapefile (`.shp`).  
-- **Kann ich die Breite ändern, nachdem die Ebene erstellt wurde?** Nein – die Breite muss definiert werden, bevor Features hinzugefügt werden.
-
-## Voraussetzungen
-Bevor Sie mit dem Tutorial beginnen, stellen Sie sicher, dass Sie die folgenden Voraussetzungen erfüllen:
-- Aspose.GIS für .NET Bibliothek: Laden Sie die Aspose.GIS für .NET Bibliothek von dem [Download-Link](https://releases.aspose.com/gis/net/) herunter und installieren Sie sie.
-- Entwicklungsumgebung: Richten Sie Ihre bevorzugte .NET‑Entwicklungsumgebung ein, z. B. Visual Studio.
-- Dokumentenverzeichnis: Geben Sie das Verzeichnis an, in dem Ihre geospatiale Dokumente gespeichert werden.
+- **Kann ich die Breite ändern, nachdem der Layer erstellt wurde?** Nein – die Breite muss definiert werden, bevor Features hinzugefügt werden.
 
 ## Was ist Feldbreite und warum ist sie wichtig?
-Die Feldbreite (oder Attributlänge) bestimmt die maximale Anzahl von Zeichen, die ein Zeichenketten‑Attribut enthalten kann. Die korrekte Festlegung der Breite verhindert Datenabschneidung und gewährleistet die Kompatibilität mit anderen GIS‑Tools, die möglicherweise feste Feldlängen voraussetzen.
+Die Feldbreite (auch Attributlänge genannt) ist die maximale Anzahl von Zeichen, die ein Zeichenkettenfeld in der DBF‑Komponente einer Shapefile speichern kann. Das Festlegen der korrekten Breite verhindert stillschweigende Kürzungen, stellt sicher, dass andere GIS‑Anwendungen die Daten exakt so lesen, wie Sie sie eingegeben haben, und hält die Dateigröße vorhersehbar – jedes zusätzliche Zeichen fügt pro Datensatz ein Byte hinzu.
 
-## Wie man die Feldbreite für ein Attribut festlegt
-Im Folgenden finden Sie eine Schritt‑für‑Schritt‑Anleitung. Jeder Codeblock bleibt unverändert; die begleitenden Erklärungen wurden zur Klarheit erweitert.
+## Voraussetzungen
+- **Aspose.GIS für .NET Bibliothek** – herunterladen über den [download link](https://releases.aspose.com/gis/net/).  
+- **Entwicklungsumgebung** – Visual Studio 2022, Visual Studio Code oder jede IDE, die .NET 6+ unterstützt.  
+- **Schreibzugriff** – ein Ordner auf dem Datenträger, in dem die erzeugte Shapefile gespeichert wird.
 
-### Importieren von Namespaces
-Importieren Sie die erforderlichen Namespaces, um die Funktionalitäten von Aspose.GIS für .NET zu nutzen:
+## Warum ein Vektor‑Layer‑Beispiel mit definierter Breite verwenden?
+Aspose.GIS unterstützt **mehr als 30 GIS‑Dateiformate**, darunter Shapefile, GeoJSON, KML und GML. Wenn Sie die Feldbreite explizit festlegen, vermeiden Sie das Standard‑Limit von 255 Zeichen, das die `.dbf`‑Datei unnötig um bis zu 255 × AnzahlDerDatensätze Bytes aufblähen kann. Bei großen Datensätzen führt das zu spürbaren Speicherersparnissen.
+
+## Wie legt man die Feldbreite für ein Attribut fest?
+In diesem Abschnitt laden oder erstellen wir ein `VectorLayer`, das auf die Ziel‑`.shp`‑Datei verweist, definieren ein Zeichenketten‑Attribut mit einer genauen Breite und fügen anschließend Features hinzu – alles in wenigen prägnanten Anweisungen. `VectorLayer` repräsentiert ein Vektor‑Datenset wie eine Shapefile und bietet Zugriff auf Geometrie und Attributtabelle. Nachfolgend das direkte, umsetzbare Rezept, dem Sie Schritt für Schritt folgen können:
+
+Laden oder erstellen Sie ein `VectorLayer`, das auf die Ziel‑`.shp`‑Datei verweist, deklarieren Sie ein Zeichenketten‑Attribut namens **wide** mit `Width = 120` und fügen dann ein Feature hinzu, dessen Wert das 120‑Zeichen‑Limit einhält. Aspose.GIS kürzt automatisch jede längere Zeichenkette auf die definierte Breite und bewahrt so die Datenkonsistenz, ohne Ausnahmen zu werfen.
+
+### Namespaces importieren
+`FeatureAttribute`, `VectorLayer` und verwandte Typen befinden sich im Namespace `Aspose.Gis`. Importieren Sie sie am Anfang Ihrer Datei:
 
 ```csharp
 using Aspose.Gis;
@@ -50,7 +83,9 @@ using System.Threading.Tasks;
 ```
 
 ### VectorLayer erstellen
-Erstellen Sie einen `VectorLayer`, der auf die Ausgabeshapefile verweist. Diese Ebene wird das Attribut hosten, dessen Breite wir steuern wollen.
+Die Klasse `VectorLayer` repräsentiert eine Vektor‑Datenquelle (z. B. eine Shapefile). Sie ist der Container, der Features und deren Attribute enthält.
+
+Die Klasse `VectorLayer` ist Aspose.GIS' Darstellung eines Vektor‑Datensets, das Geometrie und Attributtabellen im Speicher verwaltet. Erstellen Sie eine Instanz, die auf eine neue oder bestehende `.shp`‑Datei verweist.
 
 ```csharp
 string dataDir = "Your Document Directory";
@@ -61,7 +96,9 @@ using (VectorLayer layer = VectorLayer.Create(dataDir + "SpecifyAttributeValueLe
 ```
 
 ### Attribut mit spezifischer Länge hinzufügen
-Definieren Sie ein Attribut namens **wide** und setzen Sie dessen Breite explizit auf 120 Zeichen. Dies ist der Kern von **wie man die Feldbreite festlegt** in Aspose.GIS.
+Definieren Sie ein Zeichenketten‑Attribut namens **wide** und setzen Sie dessen `Width`‑Eigenschaft auf 120 Zeichen. Dies ist der zentrale Schritt des **Vektor‑Layer‑Beispiels**.
+
+Das Objekt `FeatureAttribute` beschreibt eine Spalte in der Attributtabelle; das Setzen von `Width = 120` weist den Shapefile‑Writer an, genau 120 Bytes für jeden Datensatz dieses Feldes zu reservieren.
 
 ```csharp
 FeatureAttribute attribute = new FeatureAttribute("wide", AttributeDataType.String);
@@ -69,10 +106,12 @@ attribute.Width = 120;
 layer.Attributes.Add(attribute);
 ```
 
-> **Pro Tipp:** Die `Width`‑Eigenschaft gilt nur für Zeichenketten‑Attribute. Bei numerischen Typen wird die Größe durch den Datentyp selbst bestimmt.
+> **Profi‑Tipp:** Die `Width`‑Eigenschaft gilt nur für Zeichenketten‑Attribute. Numerische, Datums‑ oder Boolesche Felder ignorieren `Width`, da ihre Größe durch den Datentyp festgelegt ist.
 
 ### Feature erstellen und hinzufügen
-Erstellen Sie nun ein Feature, weisen Sie einen Wert zu, der das 120‑Zeichen‑Limit einhält, und fügen Sie das Feature der Ebene hinzu.
+Erstellen Sie ein `Feature`, weisen Sie ihm einen Wert zu, der innerhalb des 120‑Zeichen‑Limits liegt, und fügen Sie es dem Layer hinzu. Überschreitet die Zeichenkette das Limit, kürzt Aspose.GIS sie stillschweigend auf die definierte Breite, wodurch die Datenintegrität erhalten bleibt.
+
+Die Klasse `Feature` kapselt Geometrie‑ und Attributwerte; nach dem Setzen des Attributs schreibt der Aufruf `layer.Add(feature)` den Datensatz in die Shapefile.
 
 ```csharp
 Feature feature = layer.ConstructFeature();
@@ -80,47 +119,55 @@ feature.SetValue("wide", "this string can be up to 120 characters long now.");
 layer.Add(feature);
 ```
 
-Wenn Sie versuchen, eine längere Zeichenkette zuzuweisen, schneidet Aspose.GIS sie auf die definierte Breite zu und bewahrt so die Datenintegrität.
+Wenn Sie versuchen, eine längere Zeichenkette zuzuweisen, wird Aspose.GIS sie auf die definierte Breite kürzen und die Datenintegrität bewahren.
 
-## Übliche Stolperfallen & Fehlersuche
-- **Vergessen, `Width` vor dem Hinzufügen des Attributs zu setzen?** Die Standardbreite beträgt 255 Zeichen; ein späteres Setzen hat keine Wirkung auf bereits vorhandene Felder. Definieren Sie die Breite immer zuerst.
-- **Verwendung eines Nicht‑String‑Datentyps?** Die `Width`‑Eigenschaft wird für numerische oder Datumsfelder ignoriert; stellen Sie sicher, dass `AttributeDataType` des Attributs `String` ist.
-- **Erhalt einer „field not found“-Fehlermeldung?** Überprüfen Sie, ob der in `SetValue` verwendete Attributname exakt (Groß‑/Kleinschreibung) übereinstimmt.
-
-## Fazit
-Dieses Tutorial hat **gezeigt, wie man die Feldbreite** für ein Attribut in einer Shapefile mit Aspose.GIS für .NET festlegt und **wie man ein Attribut mit Länge** effektiv hinzufügt. Experimentieren Sie mit verschiedenen Breiten, erkunden Sie die [Dokumentation](https://reference.aspose.com/gis/net/), und nutzen Sie das volle Potenzial der Geodatenentwicklung mit Aspose.GIS.
+## Häufige Fallstricke & Fehlerbehebung
+- **Haben Sie vergessen, `Width` vor dem Hinzufügen des Attributs zu setzen?** Die Standardbreite beträgt 255 Zeichen; eine spätere Änderung wirkt sich nicht auf bereits erstellte Felder aus. Definieren Sie die Breite immer zuerst.  
+- **Verwenden Sie einen Nicht‑String‑Datentyp?** `Width` wird für numerische oder Datumsfelder ignoriert; stellen Sie sicher, dass der `AttributeDataType` des Attributs `String` ist.  
+- **Fehler „Feld nicht gefunden“?** Attributnamen sind case‑sensitive. Vergewissern Sie sich, dass der in `SetValue` verwendete Name exakt dem im Schema definierten Namen entspricht.  
+- **Unerwartete Zunahme der Dateigröße?** Größere Breiten erhöhen die `.dbf`‑Größe linear. Bei 10 000 Datensätzen fügt eine Breitensteigerung von 50 auf 120 etwa 700 KB hinzu.
 
 ## Häufig gestellte Fragen
-### Q: Wie kann ich eine temporäre Lizenz für Aspose.GIS für .NET erhalten?
-A: Sie können eine temporäre Lizenz [hier](https://purchase.aspose.com/temporary-license/) erhalten.
+**Q: Wie kann ich eine temporäre Lizenz für Aspose.GIS für .NET erhalten?**  
+A: Sie können eine temporäre Lizenz [hier](https://purchase.aspose.com/temporary-license/) erwerben.
 
-### Q: Wo finde ich Community‑Support für Aspose.GIS für .NET?
-A: Besuchen Sie das [Aspose.GIS‑Forum](https://forum.aspose.com/c/gis/33) für Community‑Support.
+**Q: Wo finde ich Community‑Support für Aspose.GIS für .NET?**  
+A: Besuchen Sie das [Aspose.GIS‑Forum](https://forum.aspose.com/c/gis/33) für Peer‑to‑Peer‑Hilfe und offizielle Antworten.
 
-### Q: Gibt es eine kostenlose Testversion für Aspose.GIS für .NET?
-A: Ja, erkunden Sie die [kostenlose Testversion](https://releases.aspose.com/), um die Funktionen selbst zu erleben.
+**Q: Gibt es eine kostenlose Testversion für Aspose.GIS für .NET?**  
+A: Ja, testen Sie die [kostenlose Testversion](https://releases.aspose.com/), um den vollen Funktionsumfang ohne Kosten zu erleben.
 
-### Q: Wie kaufe ich eine Lizenz für Aspose.GIS für .NET?
+**Q: Wie kaufe ich eine Lizenz für Aspose.GIS für .NET?**  
 A: Kaufen Sie Ihre Lizenz [hier](https://purchase.aspose.com/buy).
 
-### Q: Wo kann ich die Dokumentation für Aspose.GIS für .NET einsehen?
-A: Konsultieren Sie die [Dokumentation](https://reference.aspose.com/gis/net/) für umfassende Anleitungen.
+**Q: Wo finde ich die Dokumentation für Aspose.GIS für .NET?**  
+A: Siehe die [Dokumentation](https://reference.aspose.com/gis/net/) für umfassende API‑Details.
 
-### Q: Kann ich die Feldbreite ändern, nachdem die Ebene erstellt wurde?
-A: Nein. Die Feldbreite muss definiert werden, bevor das Attribut zur Ebene hinzugefügt wird; Sie müssten die Ebene neu erstellen, um sie zu ändern.
+**Q: Kann ich die Feldbreite ändern, nachdem der Layer erstellt wurde?**  
+A: Nein. Die Feldbreite muss definiert werden, bevor das Attribut hinzugefügt wird; um sie zu ändern, müssen Sie den Layer mit dem neuen Schema neu erstellen.
 
-### Q: Wirkt sich das Setzen einer größeren Breite auf die Dateigröße aus?
-A: Shapefiles speichern Zeichenkettenfelder mit fester Länge, sodass größere Breiten die .dbf‑Dateigröße proportional erhöhen.
+**Q: Wirkt sich das Setzen einer größeren Breite auf die Dateigröße aus?**  
+A: Shapefiles speichern Zeichenkettenfelder mit fester Länge, sodass eine Erhöhung der Breite die `.dbf`‑Dateigröße proportional zur Anzahl der Datensätze direkt erhöht.
+
+## Fazit
+Dieses **Vektor‑Layer‑Beispiel** zeigte, wie man die Feldbreite für ein Attribut in einer Shapefile mit Aspose.GIS für .NET festlegt und wie man ein Attribut mit einer spezifischen Länge effizient hinzufügt. Durch die Kontrolle der Attributbreite vermeiden Sie Datenkürzungen, halten die Dateigrößen optimal und gewährleisten nahtlose Interoperabilität mit anderen GIS‑Plattformen. Experimentieren Sie mit unterschiedlichen Breiten, erkunden Sie die [Dokumentation](https://reference.aspose.com/gis/net/) und erschließen Sie das volle Potenzial der geospatiale Entwicklung mit Aspose.GIS.
 
 ---
 
-**Zuletzt aktualisiert:** 2025-12-31  
-**Getestet mit:** Aspose.GIS 24.11 für .NET  
+**Zuletzt aktualisiert:** 2026-05-16  
+**Getestet mit:** Aspose.GIS 24.11 for .NET  
 **Autor:** Aspose  
+
+{{< blocks/products/products-backtop-button >}}
+
+## Verwandte Tutorials
+
+- [Layer-Attribute abrufen – Layer-Attributinformationen mit Aspose.GIS für .NET erhalten](/gis/net/layer-interaction-and-data-access/get-layer-attribute-information/)
+- [Wie man Attributwert (Standard) mit Aspose.GIS für .NET erhält](/gis/net/layer-interaction-and-data-access/get-feature-attribute-value-default/)
+- [Vector Layer in File GDB erstellen – Aspose.GIS .NET Tutorial](/gis/net/layer-management/create-file-gdb-with-single-layer/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
