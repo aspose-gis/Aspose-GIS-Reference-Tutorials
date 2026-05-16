@@ -5,7 +5,7 @@ second_title: Aspose.GIS .NET API
 description: Learn how to calculate distance between geometries using Aspose.GIS for .NET. This step‑by‑step guide shows how to use Aspose.GIS, get distance to geometry, and integrate distance calculations into your applications.
 weight: 21
 url: /net/geometry-analysis/calculate-distance-between-geometries/
-date: 2025-12-02
+date: 2026-01-31
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -23,6 +23,9 @@ If you’ve ever needed to know **how to calculate distance** between two spatia
 - **Do I need a license for development?** A free trial works for testing; a license is required for production.  
 - **Can I calculate distance for 3‑D geometries?** Yes, Aspose.GIS supports 2‑D and 3‑D calculations.  
 - **What .NET versions are supported?** .NET Framework 4.6+, .NET Core 3.1+, .NET 5/6/7.
+
+## How to Calculate Distance Between Geometries
+In this tutorial we focus on measuring the **distance between point polygon** geometries—a common task when you need to know how far a feature (like a sensor or a customer location) lies from a defined area. Although the sample uses a `Polygon` and a `LineString`, the same `GetDistanceTo` method works perfectly for a `Point`‑to‑`Polygon` scenario.
 
 ## What is Distance Calculation in Geospatial Programming?
 Distance calculation measures the shortest line that connects two geometries. It’s a core operation for tasks such as proximity analysis, routing, clustering, and spatial indexing.
@@ -142,7 +145,7 @@ Calculating distance between geometries is a fundamental operation in any GIS‑
 
 ---
 
-**Last Updated:** 2025-12-02  
+**Last Updated:** 2026-01-31  
 **Tested With:** Aspose.GIS 24.11 for .NET  
 **Author:** Aspose  
 
