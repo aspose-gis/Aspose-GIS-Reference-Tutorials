@@ -1,10 +1,61 @@
 ---
-date: 2025-12-20
-description: เรียนรู้วิธีสร้างโพลิกอนโดยใช้ Aspose.GIS สำหรับ .NET คู่มือแบบขั้นตอนต่อขั้นตอนสำหรับนักพัฒนา
-  .NET เพื่อสร้างเรขาคณิตโพลิกอน
-linktitle: Create Polygon Geometry
+date: 2026-05-31
+description: เรียนรู้วิธีสร้างโพลิกอนโดยใช้ Aspose.GIS สำหรับ .NET. คู่มือขั้นตอนต่อขั้นตอนสำหรับนักพัฒนา
+  .NET เพื่อสร้างเรขาคณิตโพลิกอนและส่งออกไฟล์ shapefile โพลิกอน.
+keywords:
+- how to create polygon
+- export polygon shapefile
+- add vertices polygon
+- build polygon coordinates
+linktitle: สร้างเรขาคณิตโพลิกอน
+schemas:
+- author: Aspose
+  dateModified: '2026-05-31'
+  description: Learn how to create polygon using Aspose.GIS for .NET. Step‑by‑step
+    guide for .NET developers to build polygon geometry and export polygon shapefile.
+  headline: How to Create Polygon Geometry with Aspose.GIS for .NET
+  type: TechArticle
+- description: Learn how to create polygon using Aspose.GIS for .NET. Step‑by‑step
+    guide for .NET developers to build polygon geometry and export polygon shapefile.
+  name: How to Create Polygon Geometry with Aspose.GIS for .NET
+  steps:
+  - name: Create a Polygon Object
+    text: The `Polygon` class is the top‑level container that represents a single
+      polygon geometry. **The `Polygon` class represents a closed geometric shape
+      consisting of an exterior ring and optional interior rings.**
+  - name: Define Exterior Ring
+    text: A `LinearRing` holds the sequence of points that form the outer boundary.
+      **The `LinearRing` class stores an ordered list of coordinate pairs that must
+      form a closed loop.**
+  - name: Add Points to the Exterior Ring
+    text: Now we **add vertices polygon** by feeding latitude‑longitude pairs (or
+      any coordinate system you prefer) into the ring. The points must form a closed
+      loop, so the first and last coordinates are identical. **`LinearRing.AddPoint(x,
+      y)` adds a single vertex to the ring; repeat for each coordinate.**
+  - name: Set Exterior Ring on the Polygon
+    text: Finally, assign the prepared ring to the polygon’s `ExteriorRing` property.
+      The polygon is now a complete, valid geometry object. **The `ExteriorRing` property
+      links the constructed `LinearRing` to the `Polygon` instance, finalizing the
+      shape.** Congratulations! You have just **created polygon geome
+  type: HowTo
+- questions:
+  - answer: Yes – simply iterate through your coordinate collection and call `ring.AddPoint(x,
+      y)` for each item.
+    question: Can I create a polygon from an existing list of coordinates?
+  - answer: Create another `LinearRing`, add points, and assign it to `polygon.InteriorRings.Add(yourRing);`.
+    question: How do I add an interior ring (hole) to the polygon?
+  - answer: Use `polygon.IsValid` property; it returns `true` if the geometry complies
+      with OGC standards.
+    question: Is there a way to validate the polygon after creation?
+  - answer: Absolutely. Use `FeatureWriter` with `GeoJson` format to write the polygon
+      to a file, or choose `Shapefile` to **export polygon shapefile**.
+    question: Can I export the polygon directly to GeoJSON?
+  - answer: The library currently focuses on 2‑D geometries; for 3‑D you’ll need to
+      manage Z‑values manually or use another specialized library.
+    question: Does Aspose.GIS support 3‑D polygons?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: วิธีสร้างรูปหลายเหลี่ยมด้วย Aspose.GIS สำหรับ .NET
+title: วิธีสร้างเรขาคณิตโพลิกอนด้วย Aspose.GIS สำหรับ .NET
 url: /th/net/geometry-creation/create-polygon-geometry/
 weight: 12
 ---
@@ -13,36 +64,38 @@ weight: 12
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# วิธีสร้าง Polygon Geometry ด้วย Aspose.GIS สำหรับ .NET
+# วิธีสร้างรูปหลายเหลี่ยม (Polygon) ด้วย Aspose.GIS สำหรับ .NET
 
-## การแนะนำ
-มุมมองที่ชัดเจนและเป็นประโยชน์เกี่ยวกับเกี่ยวกับการสร้างรูปหลายเหลี่ยม** เรขาคณิตตามปกติ .NET คุณมาถูกที่แล้วในบทแนะนำนี้เราจะต้องใช้ส่วนประกอบทั้งหมด Aspose.GIS สำหรับ .NET – สำหรับโปรเจกต์นี้ ให้คุณทราบจุด การสรุปรูปหลายเหลี่ยม คุณจะเข้าใจว่าทำไมไลบรารีนี้จึงทำให้การพิจารณาสำหรับโครงสร้างรูปหลายเหลี่ยม ของข้อมูลเชิงพื้นที่ และคุณจะมี ** ตัวอย่างรูปหลายเหลี่ยมเรขาคณิต** ที่นำกลับมาใช้ใหม่ได้สำหรับแอปพลิเคชัน GIS เมืองหลวง
+## บทนำ
 
-## คำตอบด่วน
-- **คลาสหลักสำหรับ polygon อะไร?** `Polygon` จาก `Aspose.Gis.Geometries`.
-- **เมธอดใดที่ใช้เพิ่มจุดยอด?** `LinearRing.AddPoint(x, y)`.
-- **ต้องการไลเซนส์สำหรับการพัฒนาหรือไม่?** ทดลองทดลองฟรีการทดสอบได้; ต้องมีเซนส์อย่างแท้จริง.
-- ** รองรับการทำงานของ .NET ในอนาคต?** .NET Framework4.6+, .NETCore3.1+, .NET5/6+.
-- ** สามารถส่งออกรูปหลายเหลี่ยมไปเป็นไฟล์ได้หรือเปล่า?** ได้ – ใช้ `FeatureWriter` เพื่อเขียนเป็น Shapefile, GeoJSON และอื่นๆ
+หากคุณกำลังมองหาคู่มือที่ชัดเจนและเป็นประโยชน์เกี่ยวกับ **วิธีสร้างรูปหลายเหลี่ยม** ในสภาพแวดล้อม .NET คุณมาถูกที่แล้ว ในบทแนะนำนี้เราจะเดินผ่านกระบวนการทั้งหมดโดยใช้ Aspose.GIS สำหรับ .NET – ตั้งแต่การตั้งค่าโครงการ การเพิ่มจุด และการสรุปรูปหลายเหลี่ยม เมื่อเสร็จคุณจะเข้าใจว่าทำไมไลบรารีนี้จึงเป็นตัวเลือกที่ดีสำหรับการทำงานกับโครงสร้างรูปหลายเหลี่ยมของข้อมูลเชิงพื้นที่ และคุณจะมี **ตัวอย่างรูปหลายเหลี่ยม** ที่สามารถนำกลับมาใช้ใหม่สำหรับแอปพลิเคชัน GIS ของคุณเอง คุณยังจะได้เห็นวิธี **ส่งออก shapefile ของรูปหลายเหลี่ยม** และรูปแบบทั่วไปอื่น ๆ
 
-## เรขาคณิตรูปหลายเหลี่ยมคืออะไร?
-จากรูปหลายเหลี่ยมปิดที่ประกอบด้วยส่วนประกอบภายนอก (ขอบเขต) และอาจมีคู่ภายในหนึ่งหรือหลายวง (รูช่อง) ใน GIS, รูปหลายเหลี่ยมใช้โมเดลพื้นที่จริงเช่นโครงสร้าง, พื้นที่หรือขอบเขตของ Aspose.GIS มีโมเดลอ็อบเจ็กต์ที่สะอาดตาให้คุณ **สร้างพิกัดรูปหลายเหลี่ยม** ได้ตามปกติของ C#.
+## คำตอบอย่างรวดเร็ว
+`Polygon` คือคลาสที่แสดงถึงรูปหลายเหลี่ยมใน Aspose.GIS. `LinearRing.AddPoint` เพิ่มจุดยอดไปยัง linear ring.  
 
-## เหตุใดจึงต้องใช้ Aspose.GIS เพื่อสร้างเรขาคณิตรูปหลายเหลี่ยม
-- **สนับสนุน .NET เป็นส่วน** – รองรับ .NET Framework, .NET Core, และ .NET 5/6.
-- **การรับฟังความคิดเห็นจากภายนอก** – ไลบรารีการรับรู้ของเรขาคณิตภายใน.
-- ** รองรับรูปแบบไฟล์ที่หลากหลาย** – เขียนรูปหลายเหลี่ยมและ Shapefile, GeoJSON, KML และอื่น ๆ อีกมากมาย
-- **ข้อมูล** – สำหรับชุดข้อมูลเชิงพื้นที่ขนาดใหญ่.
+- **คลาสหลักสำหรับรูปหลายเหลี่ยมคืออะไร?** `Polygon` จาก `Aspose.Gis.Geometries`.  
+- **เมธอดใดที่เพิ่มจุดยอด?** `LinearRing.AddPoint(x, y)` – มันเพิ่มจุดยอดของรูปหลายเหลี่ยมทีละจุด.  
+- **ฉันต้องการใบอนุญาตสำหรับการพัฒนาหรือไม่?** รุ่นทดลองฟรีใช้ได้สำหรับการทดสอบ; จำเป็นต้องมีใบอนุญาตสำหรับการใช้งานจริง.  
+- **เวอร์ชัน .NET ที่รองรับ?** .NET Framework 4.6+, .NET Core 3.1+, .NET 5/6+.  
+- **ฉันสามารถส่งออกรูปหลายเหลี่ยมเป็นไฟล์ได้หรือไม่?** ใช่ – ใช้ `FeatureWriter` เพื่อเขียน Shapefile, GeoJSON ฯลฯ และสามารถ **ส่งออก shapefile ของรูปหลายเหลี่ยม** ได้อย่างง่ายดาย.  
+
+## รูปหลายเหลี่ยม (Polygon) คืออะไร?
+
+รูปหลายเหลี่ยมคือรูปแบบที่ปิดที่ประกอบด้วยวงแหวนภายนอก (ขอบเขตภายนอก) และอาจมีวงแหวนภายในหนึ่งหรือหลายวง (รู). ใน GIS, รูปหลายเหลี่ยมจำลองพื้นที่ในโลกจริงเช่น ทะเลสาบ, แปลงที่ดิน, หรือขอบเขตการปกครอง. Aspose.GIS ให้โมเดลวัตถุที่สะอาดที่ทำให้คุณ **สร้างพิกัดรูปหลายเหลี่ยม** ด้วยเพียงไม่กี่บรรทัดของ C#.
+
+## ทำไมต้องใช้ Aspose.GIS เพื่อสร้างรูปหลายเหลี่ยม?
+
+Aspose.GIS ให้คุณสร้างรูปหลายเหลี่ยมได้อย่างรวดเร็วพร้อมประสิทธิภาพระดับองค์กร. มันรองรับ **รูปแบบการนำเข้าและส่งออกกว่า 50 รูปแบบ**, สามารถประมวลผลชุดข้อมูลหลายร้อยหน้าโดยไม่ต้องโหลดไฟล์ทั้งหมดเข้าสู่หน่วยความจำ, และทำงานบน .NET Framework 4.6+, .NET Core 3.1+, .NET 5/6+. นั่นหมายความว่าคุณสามารถ **ส่งออก shapefile ของรูปหลายเหลี่ยม**, GeoJSON, KML, และรูปแบบอื่น ๆ อีกหลายรูปแบบโดยตรงจากโค้ด, ทำให้ไม่ต้องใช้ตัวแปลงของบุคคลที่สาม.
 
 ## ข้อกำหนดเบื้องต้น
-ก่อนเริ่มดำเนินการขั้นตอนการดำเนินการจริงๆ มี:
 
-1. **ความรู้เหมือนกับ C#** – นี่คือคลาสและเมธอดระดับพื้นฐาน.
-2. ** ดาวน์โหลด Aspose.GIS สำหรับ .NET** – ดาวน์โหลดได้จาก [ที่นี่](https://releases.aspose.com/gis/net/)
-3. ** บางครั้งต้องรอนาน ** – Visual Studio, Rider หรือ IDE ใด ๆ ที่เข้ากันได้กับ .NET
+1. **ความรู้พื้นฐานการเขียนโปรแกรม C#** – ความคุ้นเคยพื้นฐานกับคลาสและเมธอด.  
+2. **การติดตั้ง Aspose.GIS สำหรับ .NET** – คุณสามารถดาวน์โหลดได้จาก [here](https://releases.aspose.com/gis/net/).  
+3. **การตั้งค่าสภาพแวดล้อมการพัฒนา** – Visual Studio, Rider, หรือ IDE ใด ๆ ที่รองรับ .NET.  
 
-## นำเข้าเนมสเปซ 
-เราต้องนำคลาส GIS เข้ามาใช้ในสโคป `using` ด้านล่างนี้คือทั้งหมดที่คุณต้องการสำหรับตัวอย่างนี้.
+## นำเข้า Namespaces
+
+เราต้องนำคลาส GIS เข้ามาในขอบเขต. คำสั่ง `using` ด้านล่างเป็นทั้งหมดที่คุณต้องการสำหรับตัวอย่างนี้.
 
 ```csharp
 using Aspose.Gis.Geometries;
@@ -53,26 +106,32 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## วิธีสร้างเรขาคณิตรูปหลายเหลี่ยมใน Aspose.GIS
+## วิธีสร้างรูปหลายเหลี่ยมใน Aspose.GIS  
 
-เพื่อเป็นขั้นตอนแบบละเอียดอย่างละเอียดขั้นตอนมีคำอธิบายสั้น ๆ และจากนั้นไปใส่ในโปรเจกต์ของคุณ.
+โหลดโครงการของคุณ, เพิ่ม Namespaces ที่จำเป็น, สร้างอ็อบเจ็กต์ `Polygon`, สร้างวงแหวนภายนอก, เพิ่มจุดยอดของรูปหลายเหลี่ยม, และสุดท้ายกำหนดวงแหวน – ทั้งหมดในไม่กี่ขั้นตอนที่ง่ายดาย วิธีนี้ทำงานบน .NET runtime ที่รองรับทั้งหมดและสร้างรูปหลายเหลี่ยมที่สอดคล้องกับมาตรฐาน OGC พร้อมส่งออก.
 
-### ขั้นตอนที่ 1: สร้างวัตถุรูปหลายเหลี่ยม 
-แรกสุดให้สร้างอินสแตนซ์ของคลาส `Polygon` ซึ่งอ็อบเจ็กต์นี้จะเก็บวงแหวนภายนอกและวงแหวนภายในใด ๆ ที่คุณอาจเพิ่มในภายหลัง.
+### ขั้นตอนที่ 1: สร้างอ็อบเจ็กต์ Polygon  
+
+`Polygon` class คือคอนเทนเนอร์ระดับบนสุดที่แสดงถึงรูปหลายเหลี่ยมเดียว.  
+**คลาส `Polygon` แสดงถึงรูปทรงเรขาคณิตที่ปิดที่ประกอบด้วยวงแหวนภายนอกและวงแหวนภายในที่เป็นตัวเลือก.**  
 
 ```csharp
 Polygon polygon = new Polygon();
 ```
 
-### ขั้นตอนที่ 2: กำหนดวงแหวนภายนอก 
-วงแหวนภายนอกกำหนดขอบเขตด้านนอกของ polygon เราจะสร้างอินสแตนซ์ของ `LinearRing` ที่จะรับพิกัดต่อไป.
+### ขั้นตอนที่ 2: กำหนดวงแหวนภายนอก  
+
+`LinearRing` เก็บลำดับของจุดที่สร้างขอบเขตภายนอก.  
+**คลาส `LinearRing` เก็บรายการคู่พิกัดที่เรียงลำดับซึ่งต้องสร้างเป็นวงปิด.**  
 
 ```csharp
 LinearRing ring = new LinearRing();
 ```
 
 ### ขั้นตอนที่ 3: เพิ่มจุดลงในวงแหวนภายนอก  
-ตอนนี้เราจะ **เพิ่มจุด polygon** โดยใส่คู่พิกัด latitude‑longitude (หรือระบบพิกัดใด ๆ ที่คุณต้องการ) ลงในวงแหวน จุดต้องสร้างลูปปิด ดังนั้นพิกัดแรกและพิกัดสุดท้ายต้องเหมือนกัน.
+
+ตอนนี้เราจะ **เพิ่มจุดยอดของรูปหลายเหลี่ยม** โดยใส่คู่ละติจูด‑ลองจิจูด (หรือระบบพิกัดใด ๆ ที่คุณต้องการ) ลงในวงแหวน. จุดต้องสร้างเป็นวงปิด, ดังนั้นพิกัดแรกและสุดท้ายต้องเหมือนกัน.  
+**`LinearRing.AddPoint(x, y)` เพิ่มจุดยอดหนึ่งจุดลงในวง; ทำซ้ำสำหรับแต่ละพิกัด.**  
 
 ```csharp
 ring.AddPoint(50.02, 36.22);
@@ -82,52 +141,57 @@ ring.AddPoint(49.98, 36.17);
 ring.AddPoint(50.02, 36.22);
 ```
 
-### ขั้นตอนที่ 4: วางวงแหวนภายนอกบนรูปหลายเหลี่ยม  
-สุดท้ายให้กำหนดวงแหวนที่เตรียมไว้ให้กับคุณสมบัติ `ExteriorRing` ของ polygon ตอนนี้ polygon จะเป็นอ็อบเจ็กต์ geometry ที่สมบูรณ์และถูกต้อง.
+### ขั้นตอนที่ 4: กำหนดวงแหวนภายนอกให้กับ Polygon  
+
+สุดท้าย, กำหนดวงแหวนที่เตรียมไว้ให้กับคุณสมบัติ `ExteriorRing` ของ polygon. ตอนนี้ polygon เป็นอ็อบเจ็กต์เรขาคณิตที่สมบูรณ์และถูกต้อง.  
+**คุณสมบัติ `ExteriorRing` เชื่อม `LinearRing` ที่สร้างขึ้นกับอินสแตนซ์ `Polygon`, ทำให้รูปทรงเสร็จสมบูรณ์.**  
 
 ```csharp
 polygon.ExteriorRing = ring;
 ```
 
-ยินดีด้วย! คุณเพิ่ง **สร้างเรขาคณิตรูปหลายเหลี่ยม** โดยใช้ Aspose.GIS สำหรับ .NET จากที่นี่ คุณสามารถแนบรูปหลายเหลี่ยมเข้ากับสถานที่ เขียนลงในไฟล์ หรือทำการวิเคราะห์เชิงพื้นที่ได้
+ยินดีด้วย! คุณเพิ่ง **สร้างรูปหลายเหลี่ยม** ด้วย Aspose.GIS สำหรับ .NET. จากนี้คุณสามารถแนบรูปหลายเหลี่ยมเข้ากับฟีเจอร์, เขียนลงไฟล์, หรือทำการวิเคราะห์เชิงพื้นที่ได้.
 
-## ปัญหาและเคล็ดลับทั่วไป
+## ปัญหาทั่วไป & เคล็ดลับ  
 
-| ปัญหา | ทำไมมันถึงเกิดขึ้น | แก้ไข |
-|----------------------|----------------|-----|
-| **แหวนยังไม่ปิด** | จุดแรกและจุดสุดท้ายต่างกันเพียงเรขาคณิตเท่านั้น | พิกัดแรกเป็นพิกัดสุดท้าย (ตามนี้) |
-| **ลำดับพิกัดผิด** | ไลบรารี GIS ของ X (ลองจิจูด) ก่อน Y (ละติจูด) | การตัดเฉือนจะส่ง `(ลองจิจูด, ละติจูด)` ส่วน `AddPoint` |
-| **ไม่มีใบอนุญาต** | การทดลองอาจจำกัดการทำงานบางอย่าง | ใช้เซนส์ทดลองฟรีสำหรับการทดสอบ; ใช้ไลเซนส์แบบชำระเงินสำหรับการผลิต |
+| ปัญหา | สาเหตุ | วิธีแก้ |
+|-------|--------|----------|
+| **วงแหวนไม่ปิด** | จุดแรกและจุดสุดท้ายต่างกัน ทำให้รูปหลายเหลี่ยมไม่ถูกต้อง. | ทำซ้ำพิกัดแรกเป็นพิกัดสุดท้าย (ตามที่แสดงข้างต้น). |
+| **ลำดับพิกัดผิด** | ไลบรารี GIS คาดหวัง X (ลองจิจูด) แล้วตามด้วย Y (ละติจูด). | ตรวจสอบว่าคุณส่ง `(longitude, latitude)` ให้กับ `AddPoint`. |
+| **ไม่มีใบอนุญาต** | โหมดทดลองอาจจำกัดการทำงานบางอย่าง. | ใช้ใบอนุญาตทดลองฟรีสำหรับการทดสอบ; ใช้ใบอนุญาตแบบชำระเงินสำหรับการใช้งานจริง. |
 
-## คำถามที่พบบ่อย
+## คำถามที่พบบ่อย  
 
-**ถาม: ฉันสามารถสร้างรูปหลายเหลี่ยมจากรายการพิกัดที่มีอยู่ได้หรือไม่?**
-ตอบ: ได้ – เพียงแค่วนลูปผ่านชุดพิกัดของคุณและเรียกใช้ `ring.AddPoint(x, y)` สำหรับแต่ละรายการ
+**Q: ฉันสามารถสร้างรูปหลายเหลี่ยมจากรายการพิกัดที่มีอยู่ได้หรือไม่?**  
+A: ใช่ – เพียงแค่วนรอบผ่านคอลเลกชันพิกัดของคุณและเรียก `ring.AddPoint(x, y)` สำหรับแต่ละรายการ.  
 
-**ถาม: ฉันจะเพิ่มวงแหวนภายใน (รู) ให้กับรูปหลายเหลี่ยมได้อย่างไร?**
-ตอบ: สร้าง `LinearRing` อีกอัน เพิ่มจุด และกำหนดให้กับ `polygon.InteriorRings.Add(yourRing);`
+**Q: ฉันจะเพิ่มวงแหวนภายใน (รู) ให้กับรูปหลายเหลี่ยมได้อย่างไร?**  
+A: สร้าง `LinearRing` อีกอัน, เพิ่มจุด, แล้วกำหนดให้กับ `polygon.InteriorRings.Add(yourRing);`.  
 
-**ถาม: มีวิธีตรวจสอบความถูกต้องของรูปหลายเหลี่ยมหลังจากสร้างแล้วหรือไม่?**
-ตอบ: ใช้คุณสมบัติ `polygon.IsValid` ซึ่งจะส่งคืน `true` หากรูปทรงเรขาคณิตเป็นไปตามมาตรฐาน OGC
+**Q: มีวิธีตรวจสอบความถูกต้องของรูปหลายเหลี่ยมหลังจากสร้างหรือไม่?**  
+A: ใช้คุณสมบัติ `polygon.IsValid`; จะคืนค่า `true` หากรูปหลายเหลี่ยมสอดคล้องกับมาตรฐาน OGC.  
 
-**ถาม: ฉันสามารถส่งออกรูปหลายเหลี่ยมไปยัง GeoJSON ได้โดยตรงหรือไม่?**
-ตอบ: ได้อย่างแน่นอน ใช้ `FeatureWriter` กับรูปแบบ `GeoJson` เพื่อเขียนรูปหลายเหลี่ยมลงในไฟล์
+**Q: ฉันสามารถส่งออกรูปหลายเหลี่ยมโดยตรงเป็น GeoJSON ได้หรือไม่?**  
+A: ได้เลย. ใช้ `FeatureWriter` กับรูปแบบ `GeoJson` เพื่อเขียนรูปหลายเหลี่ยมลงไฟล์, หรือเลือก `Shapefile` เพื่อ **ส่งออก shapefile ของรูปหลายเหลี่ยม**.  
 
-**ถาม: Aspose.GIS รองรับรูปหลายเหลี่ยม 3 มิติหรือไม่**
-ตอบ: ปัจจุบันห้องสมุดมุ่งเน้นไปที่เรขาคณิต 2 มิติ; สำหรับ 3-D คุณจะต้องจัดการค่า Z ด้วยตนเอง หรือใช้ไลบรารีพิเศษอื่น
-
-## บทสรุป
-ในคู่มือนี้เราได้อธิบาย **วิธีสร้างรูปหลายเหลี่ยม** เรขาคณิตให้เป็นขั้นตอนแสดงตัวอย่าง **เรขาคณิตรูปหลายเหลี่ยม** แผงควบคุมและเน้นแนวปฏิบัติที่ดีที่สุดสำหรับการเชื่อมต่อรูปหลายเหลี่ยมของข้อมูลเชิงพื้นที่ใน Aspose.GIS ลองทดลองเพิ่มพร้อมกันภายในระบบระบบพิกัดต่างและสำรวจรูปแบบไฟล์เพื่อขยายพื้นฐานนี้ต่อไป
+**Q: Aspose.GIS รองรับรูปหลายเหลี่ยม 3‑D หรือไม่?**  
+A: ไลบรารีนี้ในปัจจุบันมุ่งเน้นที่รูปหลายเหลี่ยม 2‑D; สำหรับ 3‑D คุณต้องจัดการค่า Z ด้วยตนเองหรือใช้ไลบรารีเฉพาะอื่น.  
 
 ---
 
-**อัปเดตล่าสุด:** 20-12-2025
-**ทดสอบกับ:** Aspose.GIS 24.11 สำหรับ .NET
-**ผู้เขียน:** สมมติ  
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
+**อัปเดตล่าสุด:** 2026-05-31  
+**ทดสอบด้วย:** Aspose.GIS 24.11 for .NET  
+**ผู้เขียน:** Aspose  
 
 {{< blocks/products/products-backtop-button >}}
+
+## บทแนะนำที่เกี่ยวข้อง
+
+- [สร้างรูปหลายเหลี่ยมพร้อมรูโดยใช้ Aspose.GIS](/gis/net/geometry-creation/create-polygon-with-hole-geometry/)
+- [สร้างรูปหลายเหลี่ยม C# และตรวจสอบการตัดกันด้วย Aspose.GIS สำหรับ .NET](/gis/net/geometry-analysis/check-geometries-intersection/)
+- [วิธีสร้าง Buffer ด้วย Aspose.GIS สำหรับ .NET](/gis/net/geometry-analysis/create-geometry-buffer/)
+
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
