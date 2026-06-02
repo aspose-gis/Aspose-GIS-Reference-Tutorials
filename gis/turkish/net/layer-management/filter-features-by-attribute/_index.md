@@ -104,13 +104,6 @@ Geçici lisansı [here](https://purchase.aspose.com/temporary-license/) adresind
 ### Diğer Aspose.GIS özellikleri için ad‑ad öğreticiler var mı?
 Evet, daha fazla öğretici ve belgeyi [Aspose.GIS reference](https://reference.aspose.com/gis/net/) sayfasında bulabilirsiniz.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Son Güncelleme:** 2026‑01‑18  
@@ -118,3 +111,10 @@ Evet, daha fazla öğretici ve belgeyi [Aspose.GIS reference](https://reference.
 **Yazar:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

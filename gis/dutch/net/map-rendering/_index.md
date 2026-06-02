@@ -77,17 +77,6 @@ A: U kunt het `Style`‑object ophalen, de regels aanpassen en opnieuw toepassen
 **Q: Welke beperkingen zijn er voor de grootte van de rasteroutput?**  
 A: De limiet hangt af van beschikbaar geheugen; bij zeer grote rasters kunt u overwegen de output te tile‑en of streaming te gebruiken.
 
-**Laatst bijgewerkt:** 2026-01-18  
-**Getest met:** Aspose.GIS for .NET 24.10  
-**Auteur:** Aspose  
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ## Kaartrendering tutorials
 ### [Import Styled Layer Descriptor (SLD)](./import-styled-layer-descriptor/)
 Verhoog GIS-ontwikkeling met Aspose.GIS voor .NET. Importeer Styled Layer Descriptor (SLD) moeiteloos. Ontdek nu de aanpassingsmogelijkheden!
@@ -100,3 +89,14 @@ Verken de wereld van geospatiale datavisualisatie met Aspose.GIS voor .NET. Maak
 
 ### [Render Various Raster Formats](./render-various-raster-formats/)
 Verken de wereld van rasterdatavisualisatie met Aspose.GIS voor .NET. Leer moeiteloos verbluffende kaarten in verschillende formaten renderen. Download nu!
+
+**Laatst bijgewerkt:** 2026-01-18  
+**Getest met:** Aspose.GIS for .NET 24.10  
+**Auteur:** Aspose  
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

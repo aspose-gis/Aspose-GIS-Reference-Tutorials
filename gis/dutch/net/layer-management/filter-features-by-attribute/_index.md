@@ -104,13 +104,6 @@ Verkrijg een tijdelijke licentie [here](https://purchase.aspose.com/temporary-li
 ### Is er een stapsgewijze tutorial beschikbaar voor andere Aspose.GIS‑functies?
 Ja, je kunt meer tutorials en documentatie vinden op de [Aspose.GIS reference](https://reference.aspose.com/gis/net/).
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Last Updated:** 2026‑01‑18  
@@ -118,3 +111,10 @@ Ja, je kunt meer tutorials en documentatie vinden op de [Aspose.GIS reference](h
 **Author:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

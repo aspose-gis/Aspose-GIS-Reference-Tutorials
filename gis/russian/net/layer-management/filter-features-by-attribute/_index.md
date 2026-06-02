@@ -15,34 +15,37 @@ weight: 21
 
 # Чтение Shapefile C# – Фильтрация объектов по атрибуту с Aspose.GIS
 
-## Introduction
-Если вам нужно **read shapefile C#** и быстро изолировать записи, соответствующие определённым критериям, Aspose.GIS для .NET предоставляет чистый, удобный API. В этом руководстве мы пройдём процесс загрузки Shapefile, **filtering features by date**, и извлечения значений атрибутов — идеально подходит для тех, кто хочет **filter shapefile attribute** данные или **iterate GIS features** в приложении .NET.
+## Введение
+Если вам нужно **прочитать шейп-файл C#** и быстро изолировать записи в соответствии с определенными критериями, Aspose.GIS для .NET предоставляет чистый и удобный API. В этом руководстве мы пройдём процесс загрузки шейп-файла, **фильтрации объектов по дате** и извлечения атрибутов атрибутов — подходит для тех, кто хочет **фильтровать атрибут шейп-файла** данных или **итерировать функции ГИС** в приложении .NET.
 
-## Quick Answers
-- **Что покрывает это руководство?** Чтение shapefile в C# и фильтрация объектов по атрибуту даты.  
-- **Какая библиотека используется?** Aspose.GIS для .NET.  
-- **Сколько строк кода?** Менее 20 строк для основной логики фильтрации.  
-- **Нужна ли лицензия?** Бесплатная пробная версия подходит для разработки; лицензия требуется для продакшн.  
+## Быстрые ответы
+- **Что скрывает это руководство?** Чтение шейп-файла на C# и фильтрация объектов по атрибуту даты.
+- **Какая библиотека используется?** Aspose.GIS для .NET.
+- **Сколько строк кода?** Менее 20 строк для основной логики фильтра.
+- **Нужна ли лицензия?** Бесплатная пробная версия подходит для разработки; Лицензия требуется для продакшн.
 - **Поддерживаемые платформы?** .NET Framework, .NET Core и .NET 5/6+.
 
-## What is “read shapefile C#”?
-Чтение shapefile в C# означает загрузку векторных данных, хранящихся в файле *.shp* (и сопутствующих файлах), в память, чтобы вы могли программно выполнять запросы, редактировать или экспортировать их. Aspose.GIS абстрагирует детали формата файлов, позволяя сосредоточиться на пространственной логике.
+## Что такое «читать шейп-файл C#»?
+Чтение шейп-файла на C# означает загрузку векторных данных, хранящихся в файле *.shp* (и соответствующих файлах) в памяти, чтобы вы могли программно выполнить запросы, сохранить или экспортировать их. Aspose.GIS абстрагирует данные формы файлов, фокусируясь на пространственной логике.
 
-## Why filter features by date with Aspose.GIS?
-- **Производительность:** Библиотека передаёт фильтр непосредственно источнику данных, избегая полного сканирования.  
-- **Простота:** Fluent‑методы в стиле LINQ, такие как `WhereGreater`, делают код самодокументируемым.  
-- **Гибкость:** Вы можете комбинировать фильтры по дате с любыми другими атрибутными фильтрами, что позволяет выполнять мощный GIS‑анализ.
+## Зачем фильтровать объекты по дате с помощью Aspose.GIS?
+- **Производительность:** Библиотека передаёт фильтр непосредственно источнику данных, исбегая полный каскад.
+- **Простота:** Свободно‑методы в стиле LINQ, такие как `WhereGreater`, делают код самодокументируемым.
+- **Гибкость:** Вы можете комбинировать фильтры по дате с любыми другими атрибутными фильтрами, что позволяет выполнять солнечный ГИС‑анализ.
 
-## Prerequisites
-Before diving into the hands‑on examples, make sure you have:
+## Предварительные требования
+Прежде чем приступить к практическим примерам, убедитесь, что у вас есть:
 
-- Aspose.GIS Installation: Download and install the Aspose.GIS library from the [download link](https://releases.aspose.com/gis/net/).  
-- Development Environment: A .NET IDE (Visual Studio, Rider, or VS Code) set up on your machine.  
-- Spatial Data: An input shapefile (e.g., **InputShapeFile.shp**) that contains a **dob** (date‑of‑birth) attribute you want to filter.  
-- Basic Knowledge of C#: Familiarity with C# syntax and .NET project structure.
+- Установка Aspose.GIS: Загрузите и установите библиотеку Aspose.GIS по ссылке [ссылка для скачивания](https://releases.aspose.com/gis/net/).
 
-## Import Namespaces
-In your C# source file, import the namespaces required for GIS operations:
+- Среда разработки: Установленная на вашем компьютере среда разработки .NET (Visual Studio, Rider или VS Code).
+
+- Пространственные данные: Входной шейп-файл (например, **InputShapeFile.shp**), содержащий атрибут **dob** (дата рождения), который вы хотите отфильтровать.
+
+- Базовые знания C#: Знание синтаксиса C# и структуры проекта .NET.
+
+## Импорт пространств имен
+В исходном файле C# импортируйте пространства имен, необходимые для операций ГИС:
 
 ```csharp
 using Aspose.Gis;
@@ -53,22 +56,22 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## Step 1: Set the Document Directory
-Define the folder that holds your shapefile. Replace the placeholder with the actual path on your machine.
+## Шаг 1: Укажите каталог документов
+Определите папку, в которой будет храниться ваш шейп-файл. Замените заполнитель фактическим путем на вашем компьютере.
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-## Step 2: Open the Vector Layer
-Use Aspose.GIS to open the shapefile as a vector layer. This step **reads the shapefile C#** and prepares it for querying.
+## Шаг 2: Откройте векторный слой
+Используйте Aspose.GIS для открытия шейп-файла в качестве векторного слоя. На этом шаге **считывается шейп-файл C#** и подготавливается к выполнению запросов.
 
 ```csharp
 using (VectorLayer layer = VectorLayer.Open(dataDir + "InputShapeFile.shp", Drivers.Shapefile))
 ```
 
-## Step 3: Iterate GIS Features and Filter by Date
-Now we **iterate GIS features** and apply a **filter features by date** condition on the **dob** attribute. Only records with a birth date later than January 1 , 1982 will be printed.
+## Шаг 3: Переберите объекты ГИС и отфильтруйте по дате
+Теперь мы **перебираем объекты ГИС** и применяем условие **фильтрации объектов по дате** к атрибуту **dob**. Будут выведены только записи с датой рождения позже 1 января 1982 года.
 
 ```csharp
 foreach (Feature feature in layer.WhereGreater("dob", new DateTime(1982, 1, 1, 0, 0, 0)))
@@ -77,31 +80,39 @@ foreach (Feature feature in layer.WhereGreater("dob", new DateTime(1982, 1, 1, 0
 }
 ```
 
-The snippet demonstrates a concise way to **filter shapefile attribute** data without loading the entire dataset into memory.
+Этот фрагмент демонстрирует краткий способ **фильтрации данных атрибутов шейп-файла** без загрузки всего набора данных в память.
 
-## Common Issues & Tips
-- **Несоответствие формата даты:** Убедитесь, что поле **dob** в shapefile хранится как тип даты; иначе приведение может завершиться ошибкой.  
-- **Ошибки пути:** Используйте `Path.Combine(dataDir, "InputShapeFile.shp")`, чтобы избежать отсутствия разделителей пути на разных ОС.  
-- **Производительность:** Для очень больших shapefile рассмотрите возможность применения дополнительных атрибутных фильтров, чтобы сократить набор результатов на ранних этапах.
+## Распространенные проблемы и советы
+- **Несоответствие даты формирования:** Убедитесь, что поле **dob** в шейп-файле хранится как тип даты; В противном случае приведение может привести к ошибке.
+- **Ошибки пути:** Используйте `Path.Combine(dataDir, "InputShapeFile.shp")`, чтобы избежать получения разделителей пути на разных ОС.
+- **Производительность:** Для очень больших шейп-файлов рассмотрите возможность применения дополнительных атрибутных фильтров, чтобы сократить набор результатов на начальных этапах.
 
-## Conclusion
-Aspose.GIS для .NET упрощает **read shapefile C#**, **filter features by date** и **iterate GIS features** эффективно. Всего несколькими строками кода вы можете открыть мощные пространственные запросы, закладывая основу для более продвинутого GIS‑аналитики.
+## Заключение
+Aspose.GIS для .NET объём **читает шейп-файл C#**, **фильтрует объекты по дате** и **эффективно повторяет функции ГИС**. Всего несколькими строками кода вы можете открыть мощные внутренние запросы, закладывая основу для более продвинутого ГИС‑аналитики.
 
-## Frequently Asked Questions
-### Is Aspose.GIS compatible with all GIS file formats?
-Aspose.GIS поддерживает различные форматы GIS‑файлов, включая Shapefile, GeoJSON и KML. См. [documentation](https://reference.aspose.com/gis/net/) для полного списка.
+## Часто задаваемые вопросы
+### Совместим ли Aspose.GIS со всеми форматами файлов ГИС?
+Aspose.GIS поддерживает различные форматы ГИС-файлов, включая Shapefile, GeoJSON и KML. См. [документация](https://reference.aspose.com/gis/net/) для всего списка.
 
-### Can I try Aspose.GIS before purchasing?
-Да, вы можете попробовать бесплатную пробную версию Aspose.GIS, перейдя по ссылке [here](https://releases.aspose.com/).
+### Могу ли я попробовать Aspose.GIS перед покупкой?
+Да, вы можете попробовать бесплатную пробную версию Aspose.GIS, перейдя по ссылке [здесь](https://releases.aspose.com/).
 
-### Where can I find support for Aspose.GIS?
-По любым вопросам или за помощью посетите [Aspose.GIS forum](https://forum.aspose.com/c/gis/33).
+### Где я могу найти поддержку Aspose.GIS?
+По любым вопросам или с помощью посетителя [форума Aspose.GIS](https://forum.aspose.com/c/gis/33).
 
-### How do I obtain a temporary license for Aspose.GIS?
-Получить временную лицензию можно [here](https://purchase.aspose.com/temporary-license/).
+### Как получить временную лицензию для Aspose.GIS?
+Получить временную лицензию можно [здесь](https://purchase.aspose.com/temporary-license/).
 
-### Is there a step‑by‑step tutorial available for other Aspose.GIS features?
-Да, вы можете найти дополнительные руководства и документацию на [Aspose.GIS reference](https://reference.aspose.com/gis/net/).
+### Существует ли пошаговое руководство по другим функциям Aspose.GIS?
+Да, вы можете найти дополнительные руководства и документацию в [Справочнике Aspose.GIS](https://reference.aspose.com/gis/net/).
+
+---
+
+**Последнее обновление:** 18 января 2026 г.
+**Протестировано с использованием:** Aspose.GIS for .NET (последняя версия)
+**Автор:** Aspose  
+
+---
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
@@ -109,11 +120,3 @@ Aspose.GIS поддерживает различные форматы GIS‑фа
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026‑01‑18  
-**Tested With:** Aspose.GIS for .NET (latest release)  
-**Author:** Aspose  
-
----

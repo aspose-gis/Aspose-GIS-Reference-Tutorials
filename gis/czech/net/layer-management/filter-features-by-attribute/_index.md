@@ -101,15 +101,15 @@ Získejte dočasnou licenci [here](https://purchase.aspose.com/temporary-license
 ### Existuje krok‑za‑krokem tutoriál pro další funkce Aspose.GIS?
 Ano, více tutoriálů a dokumentaci najdete na [Aspose.GIS reference](https://reference.aspose.com/gis/net/).
 
+---
+
+**Last Updated:** 2026‑01‑18  
+**Tested With:** Aspose.GIS for .NET (latest release)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026‑01‑18  
-**Tested With:** Aspose.GIS for .NET (latest release)  
-**Author:** Aspose

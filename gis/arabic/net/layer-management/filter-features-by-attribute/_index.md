@@ -101,13 +101,6 @@ foreach (Feature feature in layer.WhereGreater("dob", new DateTime(1982, 1, 1, 0
 ### هل هناك دليل خطوة بخطوة متاح لميزات Aspose.GIS الأخرى؟
 نعم، يمكنك العثور على المزيد من الدروس والوثائق على [Aspose.GIS reference](https://reference.aspose.com/gis/net/).
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **آخر تحديث:** 2026‑01‑18  
@@ -115,3 +108,10 @@ foreach (Feature feature in layer.WhereGreater("dob", new DateTime(1982, 1, 1, 0
 **المؤلف:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

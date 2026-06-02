@@ -105,13 +105,6 @@ Uzyskaj tymczasową licencję [tutaj](https://purchase.aspose.com/temporary-lice
 ### Czy dostępny jest krok po kroku samouczek dla innych funkcji Aspose.GIS?
 Tak, możesz znaleźć więcej samouczków i dokumentacji w [referencji Aspose.GIS](https://reference.aspose.com/gis/net/).
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Last Updated:** 2026‑01‑18  
@@ -119,3 +112,10 @@ Tak, możesz znaleźć więcej samouczków i dokumentacji w [referencji Aspose.G
 **Author:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

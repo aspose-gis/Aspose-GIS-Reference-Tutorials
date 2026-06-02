@@ -103,15 +103,15 @@ Aspose.GIS विभिन्न GIS फ़ाइल फ़ॉर्मेट्
 ### क्या अन्य Aspose.GIS फीचर्स के लिए स्टेप‑बाय‑स्टेप ट्यूटोरियल उपलब्ध है?
 हाँ, आप अधिक ट्यूटोरियल और डॉक्यूमेंटेशन [Aspose.GIS reference](https://reference.aspose.com/gis/net/) पर पा सकते हैं।
 
+---
+
+**Last Updated:** 2026‑01‑18  
+**Tested With:** Aspose.GIS for .NET (latest release)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026‑01‑18  
-**Tested With:** Aspose.GIS for .NET (latest release)  
-**Author:** Aspose

@@ -81,19 +81,6 @@ weight: 27
 **Q:** ما هي الحدود على حجم مخرجات الرستر؟  
 **A:** الحد يعتمد على الذاكرة المتاحة؛ بالنسبة للرستر الكبيرة جدًا، فكر في تقسيم المخرجات إلى بلاطات أو استخدام البث.
 
----
-
-**Last Updated:** 2026-01-18  
-**Tested With:** Aspose.GIS for .NET 24.10  
-**Author:** Aspose  
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ## دروس عرض الخرائط
 ### [Import Styled Layer Descriptor (SLD)](./import-styled-layer-descriptor/)
 استيراد Styled Layer Descriptor (SLD)  
@@ -110,3 +97,16 @@ weight: 27
 ### [Render Various Raster Formats](./render-various-raster-formats/)
 عرض صيغ رستر متعددة  
 استكشف عالم تصور بيانات الرستر باستخدام Aspose.GIS for .NET. تعلم كيفية عرض خرائط رائعة بصيغ متعددة بسهولة. حمّل الآن!
+
+---
+
+**Last Updated:** 2026-01-18  
+**Tested With:** Aspose.GIS for .NET 24.10  
+**Author:** Aspose  
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -102,15 +102,15 @@ foreach (Feature feature in layer.WhereGreater("dob", new DateTime(1982, 1, 1, 0
 ### Υπάρχει tutorial βήμα‑βήμα για άλλα χαρακτηριστικά του Aspose.GIS;
 Ναι, μπορείτε να βρείτε περισσότερα tutorials και τεκμηρίωση στο [Aspose.GIS reference](https://reference.aspose.com/gis/net/).
 
+---
+
+**Τελευταία ενημέρωση:** 2026‑01‑18  
+**Δοκιμή με:** Aspose.GIS for .NET (τελευταία έκδοση)  
+**Συγγραφέας:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Τελευταία ενημέρωση:** 2026‑01‑18  
-**Δοκιμή με:** Aspose.GIS for .NET (τελευταία έκδοση)  
-**Συγγραφέας:** Aspose

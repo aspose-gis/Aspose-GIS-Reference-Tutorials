@@ -81,19 +81,6 @@ A: Puedes obtener el objeto `Style`, modificar sus reglas y volver a aplicarlo a
 **Q: ¿Qué limitaciones existen sobre el tamaño de la salida raster?**  
 A: El límite depende de la memoria disponible; para rasters muy grandes, considera dividir la salida en mosaicos o usar streaming.
 
----
-
-**Última actualización:** 2026-01-18  
-**Probado con:** Aspose.GIS for .NET 24.10  
-**Autor:** Aspose  
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ## Tutoriales de renderizado de mapas
 ### [Import Styled Layer Descriptor (SLD)](./import-styled-layer-descriptor/)
 Eleva el desarrollo GIS con Aspose.GIS for .NET. Importa Styled Layer Descriptor (SLD) sin esfuerzo. ¡Explora ahora las posibilidades de personalización!
@@ -106,3 +93,16 @@ Explora el mundo de la visualización de datos geoespaciales con Aspose.GIS for 
 
 ### [Render Various Raster Formats](./render-various-raster-formats/)
 Explora el mundo de la visualización de datos raster con Aspose.GIS for .NET. Aprende a renderizar mapas impresionantes en varios formatos sin esfuerzo. ¡Descarga ahora!
+
+---
+
+**Última actualización:** 2026-01-18  
+**Probado con:** Aspose.GIS for .NET 24.10  
+**Autor:** Aspose  
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -103,13 +103,6 @@ Aspose.GIS 支持多种 GIS 文件格式，包括 Shapefile、GeoJSON 和 KML。
 ### 是否有其他 Aspose.GIS 功能的分步教程？
 有，您可以在 [Aspose.GIS reference](https://reference.aspose.com/gis/net/) 上找到更多教程和文档。
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **最后更新：** 2026‑01‑18  
@@ -117,3 +110,10 @@ Aspose.GIS 支持多种 GIS 文件格式，包括 Shapefile、GeoJSON 和 KML。
 **作者：** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}
