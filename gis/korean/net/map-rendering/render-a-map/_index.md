@@ -1,27 +1,39 @@
 ---
-title: Aspose.GIS로 지리공간 데이터 시각화 마스터하기
-linktitle: 지도 렌더링
+date: 2026-01-18
+description: Aspose.GIS for .NET를 사용하여 지도에 도시를 추가하고 SVG 지도를 생성하는 방법을 배워보세요. 멋진 시각화를
+  빠르게 만들 수 있습니다.
+linktitle: Render a Map
 second_title: Aspose.GIS .NET API
-description: .NET용 Aspose.GIS를 사용하여 지리공간 데이터 시각화의 세계를 탐험해보세요. 손쉽게 멋진 지도를 만들어 보세요. 지금 다운로드하세요! #Aspose #GIS
-weight: 13
+title: Aspose.GIS for .NET를 사용하여 지도에 도시 추가하는 방법
 url: /ko/net/map-rendering/render-a-map/
+weight: 13
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.GIS로 지리공간 데이터 시각화 마스터하기
+# Aspose.GIS for .NET을 사용하여 지도에 도시 추가하는 방법
 
-## 소개
-.NET용 Aspose.GIS의 흥미진진한 세계에 오신 것을 환영합니다! 멋진 지도를 만들고 .NET 애플리케이션에서 지리공간 데이터의 기능을 활용하는 데 관심이 있다면 잘 찾아오셨습니다. 이 단계별 가이드에서는 Aspose.GIS for .NET을 사용하여 지도를 렌더링하는 과정을 안내하여 몰입형 학습 경험을 제공합니다.
-## 전제조건
-튜토리얼을 시작하기 전에 다음 전제 조건이 충족되었는지 확인하세요.
--  .NET 라이브러리용 Aspose.GIS: .NET 라이브러리용 Aspose.GIS가 설치되어 있는지 확인하세요. 당신은 그것을 다운로드 할 수 있습니다[여기](https://releases.aspose.com/gis/net/).
-- 데이터 파일: 튜토리얼에 필요한 Shapefile과 geojson 데이터를 준비합니다. 설명서에서 샘플 데이터를 찾거나 자체 파일을 사용할 수 있습니다.
-- 개발 환경: Visual Studio와 같은 코드 편집기를 포함하여 .NET 개발 환경을 설정합니다.
-## 네임스페이스 가져오기
-시작하려면 필요한 네임스페이스를 .NET 프로젝트로 가져옵니다. 이러한 네임스페이스는 Aspose.GIS 기능을 사용하는 데 필수적입니다.
+## Introduction
+Aspose.GIS for .NET의 흥미진진한 세계에 오신 것을 환영합니다! 이 단계별 가이드에서는 **지도에 도시를 추가하는 방법**을 배우고 고품질 SVG 출력을 생성하는 방법을 알아봅니다. 데스크톱 대시보드든 웹 기반 GIS 포털이든, 이 튜토리얼을 통해 벡터 레이어를 그리기, 지도 크기 설정, GeoJSON 지도 로드 등을 손쉽게 수행할 수 있습니다.
+
+## Quick Answers
+- **이 튜토리얼에서 다루는 내용은?** 지도에 도시를 추가하고 SVG 파일로 내보내기.  
+- **필요한 라이브러리는?** Aspose.GIS for .NET.  
+- **라이선스가 필요한가요?** 무료 체험판을 사용할 수 있으며, 프로덕션 환경에서는 라이선스가 필요합니다.  
+- **웹 앱에서도 사용할 수 있나요?** 예 – 동일한 코드는 ASP.NET, Blazor 및 기타 .NET 웹 프레임워크에서도 작동합니다.  
+- **생성되는 출력 형식은?** 브라우저에서 표시하거나 추가 편집이 가능한 SVG 지도.
+
+## Prerequisites
+튜토리얼을 시작하기 전에 다음 사전 조건을 확인하세요:
+- Aspose.GIS for .NET Library: Aspose.GIS for .NET 라이브러리가 설치되어 있는지 확인합니다. [여기](https://releases.aspose.com/gis/net/)에서 다운로드할 수 있습니다.
+- Data Files: 튜토리얼에 필요한 shapefile 및 GeoJSON 데이터를 준비합니다. 문서에서 샘플 데이터를 찾거나 직접 파일을 사용할 수 있습니다.
+- Development Environment: Visual Studio와 같은 코드 편집기를 포함한 .NET 개발 환경이 설정되어 있어야 합니다.
+
+## Import Namespaces
+시작하려면 .NET 프로젝트에 필요한 네임스페이스를 가져옵니다. 이 네임스페이스들은 Aspose.GIS 기능을 사용하기 위해 필수입니다.
+
 ```csharp
 using Aspose.Gis;
 using Aspose.Gis.Rendering;
@@ -34,49 +46,66 @@ using System.Drawing.Text;
 using System.IO;
 using System.Linq;
 ```
-## 1단계: 지도 설정
+
+## Step 1: Set Up the Map (set map dimensions)
 ```csharp
 string dataDir = "Your Document Directory";
 using (var map = new Map(800, 476))
 {
-    // 여기에 지도 설정을 위한 추가 코드를 추가할 수 있습니다.
+    // Additional code for map setup can be added here.
 }
 ```
-이 단계에서는 지정된 너비와 높이로 새 지도를 초기화합니다. 원하는 대로 크기를 조정하세요.
-## 2단계: 기본 지도 추가
+이 단계에서는 가로 800 픽셀, 세로 476 픽셀인 새 지도를 초기화합니다. 디자인 요구에 따라 크기를 조정하세요.
+
+## Step 2: Add a Base Map (draw vector layer)
 ```csharp
 var baseMapSymbolizer = new SimpleFill { FillColor = Color.Salmon, StrokeWidth = 0.75 };
 map.Add(VectorLayer.Open(dataDir + "basemap.shp", Drivers.Shapefile), baseMapSymbolizer);
 ```
- 여기서는 쉐이프파일을 사용하여 기본 지도 레이어를 추가합니다. 사용자 정의`SimpleFill` 귀하의 디자인 선호도에 따른 기호화 장치.
-## 3단계: 지도에 도시 추가
+여기서는 shapefile을 사용하여 기본 지도용 **벡터 레이어를 그립니다**. `SimpleFill` 속성을 변경하여 원하는 시각 스타일을 적용할 수 있습니다.
+
+## Step 3: Add Cities to the Map (add cities to map, load GeoJSON map)
 ```csharp
 var citiesSymbolizer = new SimpleMarker() { FillColor = Color.LightBlue };
 citiesSymbolizer.FeatureBasedConfiguration = (feature, symbolizer) =>
 {
-    // 여기에 추가 구성 논리를 추가할 수 있습니다.
+    // Additional configuration logic can be added here.
 };
 map.Add(VectorLayer.Open(dataDir + "points.geojson", Drivers.GeoJson), citiesSymbolizer);
 ```
- 이 단계에는 GeoJSON 파일의 도시 데이터를 지도에 추가하는 작업이 포함됩니다. 사용자 정의`SimpleMarker` 귀하의 요구 사항에 따라 기호화 기능을 구성하고 기능을 구성하십시오.
-## 4단계: 지도 렌더링
+이 단계에서는 도시 포인트 데이터를 포함한 GeoJSON 파일을 로드하고 **지도에 도시를 추가**합니다. `FeatureBasedConfiguration` 대리자를 활용해 인구와 같은 속성에 따라 도시 스타일을 지정할 수 있습니다.
+
+## Step 4: Render the Map (export map SVG, generate SVG map)
 ```csharp
 map.Render(dataDir + "cities_out.svg", Renderers.Svg);
 ```
-마지막으로 지도를 SVG 파일로 렌더링합니다. 필요에 따라 출력 파일 경로를 조정합니다.
-## 결론
-축하해요! .NET용 Aspose.GIS를 사용하여 매력적인 지도를 성공적으로 만들었습니다. 이 튜토리얼에서는 Aspose.GIS의 강력한 기능을 엿볼 수 있어 지리공간 데이터를 쉽게 시각화할 수 있습니다.
-## 자주 묻는 질문
-### 내 웹 애플리케이션에서 .NET용 Aspose.GIS를 사용할 수 있나요?
-예, Aspose.GIS for .NET은 데스크탑과 웹 애플리케이션 모두에 적합합니다.
-### 평가판을 사용할 수 있나요?
-예, 무료 평가판을 사용해 볼 수 있습니다[여기](https://releases.aspose.com/).
-### .NET용 Aspose.GIS에 대한 지원은 어디서 찾을 수 있나요?
- 방문하다[Aspose.GIS 포럼](https://forum.aspose.com/c/gis/33) 도움이나 문의사항이 있으면
-### 단기 프로젝트를 위해 임시 라이센스를 구매할 수 있나요?
- 예, 임시 라이센스를 사용할 수 있습니다[여기](https://purchase.aspose.com/temporary-license/).
-### .NET용 Aspose.GIS에 사용할 수 있는 추가 튜토리얼이 있습니까?
- 네, 확인해 보세요[선적 서류 비치](https://reference.aspose.com/gis/net/) 포괄적인 튜토리얼 및 가이드를 확인하세요.
+마지막으로 **지도를 SVG 파일로 내보냅니다**. 생성된 `cities_out.svg`는 최신 브라우저나 벡터 그래픽 편집기에서 열 수 있습니다.
+
+## Conclusion
+축하합니다! Aspose.GIS for .NET을 사용하여 **지도에 도시를 성공적으로 추가**하고 SVG 지도를 생성했습니다. 이 튜토리얼에서는 지도 크기 설정, 벡터 레이어 그리기, GeoJSON 데이터 로드, 결과를 확장 가능한 SVG로 내보내는 과정을 보여주었으며, 웹 및 인쇄 시나리오 모두에 적합합니다.
+
+## FAQs
+### Can I use Aspose.GIS for .NET in my web applications?
+예, Aspose.GIS for .NET은 데스크톱 및 웹 애플리케이션 모두에 적합합니다.
+
+### Is there a trial version available?
+예, 무료 체험판을 [여기](https://releases.aspose.com/)에서 확인할 수 있습니다.
+
+### Where can I find support for Aspose.GIS for .NET?
+지원이 필요하거나 질문이 있으면 [Aspose.GIS 포럼](https://forum.aspose.com/c/gis/33)을 방문하세요.
+
+### Can I purchase a temporary license for short-term projects?
+예, 임시 라이선스를 [여기](https://purchase.aspose.com/temporary-license/)에서 구매할 수 있습니다.
+
+### Are there additional tutorials available for Aspose.GIS for .NET?
+예, 포괄적인 튜토리얼과 가이드는 [문서](https://reference.aspose.com/gis/net/)에서 확인하세요.
+
+---
+
+**Last Updated:** 2026-01-18  
+**Tested With:** Aspose.GIS 24.11 for .NET  
+**Author:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}

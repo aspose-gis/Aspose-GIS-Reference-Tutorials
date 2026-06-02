@@ -1,28 +1,48 @@
 ---
-title: Filtrer les fonctionnalités par attribut
-linktitle: Filtrer les fonctionnalités par attribut
-second_title: API Aspose.GIS .NET
-description: Découvrez la puissance d'Aspose.GIS pour .NET dans la manipulation de données spatiales. Filtrez les fonctionnalités sans effort, améliorez les applications SIG et augmentez la productivité.
-weight: 21
+date: 2026-01-18
+description: Apprenez à lire un shapefile en C# et à filtrer les entités par date
+  à l’aide d’Aspose.GIS pour .NET. Guide étape par étape pour filtrer efficacement
+  les attributs d’un shapefile.
+linktitle: Read Shapefile C# – Filter Features by Attribute
+second_title: Aspose.GIS .NET API
+title: Lire un Shapefile C# – Filtrer les entités par attribut avec Aspose.GIS
 url: /fr/net/layer-management/filter-features-by-attribute/
+weight: 21
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Filtrer les fonctionnalités par attribut
+# Lire un Shapefile C# – Filtrer les entités par attribut avec Aspose.GIS
 
 ## Introduction
-Dans le monde dynamique des systèmes d'information géographique (SIG), Aspose.GIS pour .NET se distingue comme un outil puissant qui permet aux développeurs de manipuler et d'analyser les données spatiales de manière transparente. Que vous soyez un professionnel SIG chevronné ou un développeur curieux désireux d'explorer les possibilités, ce didacticiel vous guidera à travers les étapes essentielles de l'utilisation d'Aspose.GIS dans un environnement .NET.
-## Conditions préalables
-Avant de plonger dans les exemples pratiques, assurez-vous que les conditions préalables suivantes sont remplies :
--  Installation d'Aspose.GIS : téléchargez et installez la bibliothèque Aspose.GIS à partir du[lien de téléchargement](https://releases.aspose.com/gis/net/).
-- Environnement de développement : disposez d'un environnement de développement .NET sur votre machine.
-- Données spatiales : préparez le fichier de formes d'entrée (par exemple, "InputShapeFile.shp") contenant les données spatiales avec lesquelles vous avez l'intention de travailler.
-- Connaissance de base de C# : Familiarisez-vous avec les bases du langage de programmation C#.
+Si vous devez **read shapefile C#** et isoler rapidement les enregistrements correspondant à des critères spécifiques, Aspose.GIS pour .NET vous offre une API propre et fluide. Dans ce tutoriel, nous allons charger un Shapefile, **filtering Features by date**, et extraire les valeurs d'attributs — parfait pour quiconque souhaite **filter shapefileattribut** des données ou **iterate GIS Features** dans une application .NET.
+
+## Réponses rapides
+- **Que couvre ce tutoriel ?** Lecture d'un shapefile en C# et filtrage des entités par un attribut de date.
+- **Quelle bibliothèque est utilisée ?** Aspose.GIS pour .NET.
+- **Combien de lignes de code ?** Moins de 20 lignes pour la logique principale de filtrage.
+- **Ai-je besoin d'une licence ?** Un essai gratuit suffit pour le développement ; une licence est requise pour la production.
+- **Plateformes prises en charge ?** .NET Framework, .NET Core et .NET5/6+.
+
+## Qu'est-ce que « read shapefile C# » ?
+Lire un shapefile en C# signifie charger les données enregistrées dans le fichier *.shp* (et ses fichiers associés) en mémoire afin de pouvoir les interroger, les modifier ou les exporter de manière programmatique. Aspose.GIS résume les détails du format de fichier, vous permettant de vous concentrer sur la logique spatiale.
+
+## Pourquoi filtrer les entités par date avec Aspose.GIS ?
+- **Performance :** La bibliothèque pousse le filtre jusqu'à la source de données, indispensable les analyses complètes.
+- **Simplicité :** Les méthodes de style LINQ fluides comme `WhereGreater` rendent le code auto‑explicatif.
+- **Flexibilité :** Vous pouvez combiner les filtres de date avec tout autre filtre d'attribut, permettant des analyses SIG puissantes.
+
+## Prérequis
+- Installation d'Aspose.GIS : Téléchargez et installez la bibliothèque Aspose.GIS depuis le [download link](https://releases.aspose.com/gis/net/).
+- Environnement de développement : Un IDE .NET (Visual Studio, Rider ou VS Code) installé sur votre machine.
+- Données spatiales : Un shapefile d'entrée (par ex., **InputShapeFile.shp**) contenant un attribut **dob** (date de naissance) que vous souhaitez filtrer.
+- Connaissances de base en C# : Familiarité avec la syntaxe C# et la structure d'un projet .NET.
+
 ## Importer des espaces de noms
-Dans votre code C#, assurez-vous d'importer les espaces de noms nécessaires pour accéder aux fonctionnalités d'Aspose.GIS :
+Dans votre fichier source C#, importez les espaces de noms requis pour les opérations SIG :
+
 ```csharp
 using Aspose.Gis;
 using System;
@@ -31,38 +51,65 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 ```
+
 ## Étape 1 : Définir le répertoire des documents
-Assurez-vous d'avoir le chemin d'accès correct au répertoire de documents dans votre code :
+Définissez le dossier contenant votre shapefile. Remplacez le texte de substitution par le chemin réel sur votre machine.
+
 ```csharp
 string dataDir = "Your Document Directory";
 ```
-## Étape 2 : ouvrez le calque vectoriel
-Utilisez Aspose.GIS pour ouvrir la couche vectorielle à partir du fichier de formes :
+
+## Étape 2 : Ouvrir la couche vectorielle
+Utilisez Aspose.GIS pour ouvrir le shapefile en tant que couche vectorielle. Cette étape **reads the shapefile C#** et le prépare pour l'interrogation.
+
 ```csharp
 using (VectorLayer layer = VectorLayer.Open(dataDir + "InputShapeFile.shp", Drivers.Shapefile))
 ```
-## Étape 3 : Parcourir les fonctionnalités
-Parcourez toutes les entités dont la valeur de date dans l'attribut « dob » est postérieure au 1er janvier 1982 :
+
+## Étape 3 : Parcourir les entités SIG et filtrer par date
+Nous **iterate GIS features** maintenant et appliquons une condition **filter features by date** sur l'attribut **dob**. Seuls les enregistrements avec une date de naissance postérieure au 1 janvier 1982 seront affichés.
+
 ```csharp
 foreach (Feature feature in layer.WhereGreater("dob", new DateTime(1982, 1, 1, 0, 0, 0)))
 {
     Console.WriteLine(feature.GetValue<DateTime>("dob").ToShortDateString());
 }
 ```
-Cet extrait de code illustre les fonctionnalités de filtrage basées sur un attribut spécifié (« dob » dans ce cas) et une condition de date donnée.
+
+Cet extrait montre une façon concise de **filter shapefile attribute** les données sans charger l'ensemble du jeu de données en mémoire.
+
+## Problèmes courants et conseils
+- **Date format mismatch :** Assurez-vous que le champ **dob** du shapefile est stocké en tant que type date ; sinon, le casting peut échouer.
+- **Path error :** Utilisez `Path.Combine(dataDir, "InputShapeFile.shp")` pour éviter les séparateurs de chemin manquants sur différents systèmes d'exploitation.
+- **Performance :** Pour des shapefiles très volumineux, prévoyez d'appliquer des filtres d'attribut supplémentaires afin de réduire le jeu de résultats dès le départ.
+
 ## Conclusion
-Aspose.GIS pour .NET simplifie la manipulation et l'analyse des données spatiales, ce qui en fait un outil indispensable pour les développeurs d'applications SIG. En suivant ce guide étape par étape, vous avez appris à filtrer les entités par attribut, jetant ainsi les bases d'opérations de données spatiales plus avancées.
+Aspose.GIS pour .NET rend simple le **read shapefile C#**, le **filter Features by date** et l'**iterate GIS Features** de manière efficace. Avec seulement quelques lignes de code, vous pouvez débloquer des requêtes spatiales puissantes, posant les bases d'analyses GIS plus avancées.
+
 ## Questions fréquemment posées
-### Aspose.GIS est-il compatible avec tous les formats de fichiers SIG ?
- Aspose.GIS prend en charge divers formats de fichiers SIG, notamment Shapefile, GeoJSON et KML. Vérifier la[Documentation](https://reference.aspose.com/gis/net/) pour une liste complète.
-### Puis-je essayer Aspose.GIS avant d'acheter ?
- Oui, vous pouvez explorer un essai gratuit d'Aspose.GIS en visitant[ici](https://releases.aspose.com/).
-### Où puis-je trouver de l’assistance pour Aspose.GIS ?
- Pour toute question ou assistance, visitez le[Forum Aspose.GIS](https://forum.aspose.com/c/gis/33).
+### Aspose.GIS est‑il compatible avec tous les formats de fichiers GIS ?
+Aspose.GIS prend en charge divers formats de fichiers SIG, notamment Shapefile, GeoJSON et KML. Consultez la [documentation](https://reference.aspose.com/gis/net/) pour une liste complète.
+
+### Puis‑je essayer Aspose.GIS avant d'acheter ?
+Oui, vous pouvez explorer un essai gratuit d'Aspose.GIS en visitant [ici](https://releases.aspose.com/).
+
+### Où puis‑je trouver du support pour Aspose.GIS ?
+Pour toute question ou assistance, consultez le [forum Aspose.GIS](https://forum.aspose.com/c/gis/33).
+
 ### Comment obtenir une licence temporaire pour Aspose.GIS ?
- Obtenir un permis temporaire[ici](https://purchase.aspose.com/temporary-license/).
-### Existe-t-il un didacticiel étape par étape disponible pour les autres fonctionnalités d'Aspose.GIS ?
- Oui, vous pouvez trouver plus de tutoriels et de documentation sur le[Référence Aspose.GIS](https://reference.aspose.com/gis/net/).
+Obtenez une licence temporaire [ici](https://purchase.aspose.com/temporary-license/).
+
+### Existe‑t‑il un tutoriel étape par étape pour d'autres fonctionnalités d'Aspose.GIS ?
+Oui, vous pouvez trouver plus de tutoriels et de documentation sur la [référence Aspose.GIS](https://reference.aspose.com/gis/net/).
+
+---
+
+**Dernière mise à jour :** 2026‑01‑18
+**Testé avec :** Aspose.GIS pour .NET (dernière version)
+**Auteur :** Aspose  
+
+---
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}

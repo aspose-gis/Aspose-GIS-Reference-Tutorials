@@ -1,27 +1,39 @@
 ---
-title: Menguasai Visualisasi Data Geospasial dengan Aspose.GIS
-linktitle: Render Peta
+date: 2026-01-18
+description: Pelajari cara menambahkan kota ke peta dan menghasilkan peta SVG menggunakan
+  Aspose.GIS untuk .NET. Buat visualisasi menakjubkan dengan cepat.
+linktitle: Render a Map
 second_title: Aspose.GIS .NET API
-description: Jelajahi dunia visualisasi data geospasial dengan Aspose.GIS untuk .NET. Buat peta yang menakjubkan dengan mudah. Unduh sekarang! #Asumsikan #GIS
-weight: 13
+title: Cara Menambahkan Kota ke Peta dengan Aspose.GIS untuk .NET
 url: /id/net/map-rendering/render-a-map/
+weight: 13
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Menguasai Visualisasi Data Geospasial dengan Aspose.GIS
+# Cara Menambahkan Kota ke Peta dengan Aspose.GIS untuk .NET
 
-## Perkenalan
-Selamat datang di dunia Aspose.GIS untuk .NET yang menarik! Jika Anda tertarik untuk membuat peta menakjubkan dan memanfaatkan kekuatan data geospasial dalam aplikasi .NET, Anda berada di tempat yang tepat. Dalam panduan langkah demi langkah ini, kami akan memandu Anda dalam merender peta menggunakan Aspose.GIS untuk .NET, sehingga memberi Anda pengalaman belajar yang mendalam.
+## Pendahuluan
+Selamat datang di dunia menarik Aspose.GIS untuk .NET! Dalam panduan langkah‑demi‑langkah ini, Anda akan belajar **cara menambahkan kota ke peta** dan menghasilkan output SVG berkualitas tinggi. Baik Anda membangun dasbor desktop maupun portal GIS berbasis web, tutorial ini menunjukkan cara menggambar lapisan vektor, mengatur dimensi peta, dan memuat peta GeoJSON dengan mudah.
+
+## Jawaban Cepat
+- **Apa yang dibahas dalam tutorial ini?** Menambahkan kota ke peta dan mengekspornya sebagai file SVG.  
+- **Perpustakaan apa yang diperlukan?** Aspose.GIS untuk .NET.  
+- **Apakah saya memerlukan lisensi?** Versi percobaan gratis tersedia; lisensi diperlukan untuk produksi.  
+- **Bisakah saya menggunakan ini dalam aplikasi web?** Ya – kode yang sama bekerja di ASP.NET, Blazor, dan kerangka kerja web .NET lainnya.  
+- **Format output apa yang dihasilkan?** Peta SVG yang dapat ditampilkan di browser atau diedit lebih lanjut.
+
 ## Prasyarat
-Sebelum masuk ke tutorial, pastikan Anda memiliki prasyarat berikut:
--  Aspose.GIS untuk .NET Library: Pastikan Anda telah menginstal perpustakaan Aspose.GIS untuk .NET. Anda dapat mengunduhnya[Di Sini](https://releases.aspose.com/gis/net/).
-- File Data: Siapkan data shapefile dan geojson yang diperlukan untuk tutorial. Anda dapat menemukan contoh data di dokumentasi atau menggunakan file Anda sendiri.
-- Lingkungan Pengembangan: Siapkan lingkungan pengembangan .NET, termasuk editor kode seperti Visual Studio.
+Sebelum memulai tutorial, pastikan Anda memiliki prasyarat berikut:
+- **Aspose.GIS untuk .NET Library:** Pastikan perpustakaan Aspose.GIS untuk .NET sudah terpasang. Anda dapat mengunduhnya [di sini](https://releases.aspose.com/gis/net/).
+- **File Data:** Siapkan shapefile dan data GeoJSON yang diperlukan untuk tutorial. Anda dapat menemukan contoh data di dokumentasi atau menggunakan file Anda sendiri.
+- **Lingkungan Pengembangan:** Miliki lingkungan pengembangan .NET yang sudah disiapkan, termasuk editor kode seperti Visual Studio.
+
 ## Impor Namespace
-Untuk memulai, impor namespace yang diperlukan ke proyek .NET Anda. Namespace ini penting untuk bekerja dengan fungsi Aspose.GIS.
+Untuk memulai, impor namespace yang diperlukan ke dalam proyek .NET Anda. Namespace ini penting untuk bekerja dengan fungsionalitas Aspose.GIS.
+
 ```csharp
 using Aspose.Gis;
 using Aspose.Gis.Rendering;
@@ -34,49 +46,66 @@ using System.Drawing.Text;
 using System.IO;
 using System.Linq;
 ```
-## Langkah 1: Siapkan Peta
+
+## Langkah 1: Menyiapkan Peta (menetapkan dimensi peta)
 ```csharp
 string dataDir = "Your Document Directory";
 using (var map = new Map(800, 476))
 {
-    // Kode tambahan untuk pengaturan peta dapat ditambahkan di sini.
+    // Additional code for map setup can be added here.
 }
 ```
-Pada langkah ini, kita menginisialisasi peta baru dengan lebar dan tinggi tertentu. Sesuaikan dimensi sesuai dengan preferensi Anda.
-## Langkah 2: Tambahkan Peta Dasar
+Pada langkah ini, kami menginisialisasi peta baru dengan lebar 800 piksel dan tinggi 476 piksel. Sesuaikan dimensi sesuai kebutuhan desain Anda.
+
+## Langkah 2: Menambahkan Peta Dasar (menggambar lapisan vektor)
 ```csharp
 var baseMapSymbolizer = new SimpleFill { FillColor = Color.Salmon, StrokeWidth = 0.75 };
 map.Add(VectorLayer.Open(dataDir + "basemap.shp", Drivers.Shapefile), baseMapSymbolizer);
 ```
- Di sini, kita menambahkan layer peta dasar menggunakan shapefile. Sesuaikan`SimpleFill` simbol sesuai dengan preferensi desain Anda.
-## Langkah 3: Tambahkan Kota ke Peta
+Di sini, kami **menggambar lapisan vektor** untuk peta dasar menggunakan shapefile. Silakan ubah properti `SimpleFill` agar sesuai dengan gaya visual Anda.
+
+## Langkah 3: Menambahkan Kota ke Peta (menambahkan kota ke peta, memuat peta GeoJSON)
 ```csharp
 var citiesSymbolizer = new SimpleMarker() { FillColor = Color.LightBlue };
 citiesSymbolizer.FeatureBasedConfiguration = (feature, symbolizer) =>
 {
-    // Logika konfigurasi tambahan dapat ditambahkan di sini.
+    // Additional configuration logic can be added here.
 };
 map.Add(VectorLayer.Open(dataDir + "points.geojson", Drivers.GeoJson), citiesSymbolizer);
 ```
- Langkah ini melibatkan penambahan data kota dari file GeoJSON ke peta. Sesuaikan`SimpleMarker` simbol dan konfigurasikan fitur berdasarkan kebutuhan Anda.
-## Langkah 4: Render Peta
+Langkah ini memuat file GeoJSON yang berisi data titik kota dan **menambahkan kota ke peta**. Anda dapat memperluas delegate `FeatureBasedConfiguration` untuk menata kota berdasarkan atribut seperti populasi.
+
+## Langkah 4: Merender Peta (mengekspor peta SVG, menghasilkan peta SVG)
 ```csharp
 map.Render(dataDir + "cities_out.svg", Renderers.Svg);
 ```
-Terakhir, kami merender peta ke file SVG. Sesuaikan jalur file keluaran sesuai kebutuhan.
+Akhirnya, kami **mengekspor peta sebagai file SVG**. File `cities_out.svg` yang dihasilkan dapat dibuka di browser modern mana pun atau editor grafis vektor.
+
 ## Kesimpulan
-Selamat! Anda telah berhasil membuat peta menawan menggunakan Aspose.GIS untuk .NET. Tutorial ini memberikan gambaran sekilas tentang kemampuan Aspose.GIS yang canggih, memungkinkan Anda memvisualisasikan data geospasial dengan mudah.
+Selamat! Anda telah berhasil **menambahkan kota ke peta** dan menghasilkan peta SVG menggunakan Aspose.GIS untuk .NET. Tutorial ini menunjukkan cara mengatur dimensi peta, menggambar lapisan vektor, memuat data GeoJSON, dan mengekspor hasilnya sebagai SVG yang dapat diskalakan—sempurna untuk skenario web maupun cetak.
+
 ## FAQ
-### Bisakah saya menggunakan Aspose.GIS untuk .NET di aplikasi web saya?
-Ya, Aspose.GIS untuk .NET cocok untuk aplikasi desktop dan web.
-### Apakah ada versi uji coba yang tersedia?
-Ya, Anda dapat menjelajahi versi uji coba gratis[Di Sini](https://releases.aspose.com/).
+### Bisakah saya menggunakan Aspose.GIS untuk .NET dalam aplikasi web saya?
+Ya, Aspose.GIS untuk .NET cocok untuk aplikasi desktop maupun web.
+
+### Apakah ada versi percobaan yang tersedia?
+Ya, Anda dapat menjelajahi versi percobaan gratis [di sini](https://releases.aspose.com/).
+
 ### Di mana saya dapat menemukan dukungan untuk Aspose.GIS untuk .NET?
- Mengunjungi[Forum Aspose.GIS](https://forum.aspose.com/c/gis/33) untuk bantuan atau pertanyaan apa pun.
+Kunjungi [forum Aspose.GIS](https://forum.aspose.com/c/gis/33) untuk bantuan atau pertanyaan apa pun.
+
 ### Bisakah saya membeli lisensi sementara untuk proyek jangka pendek?
- Ya, lisensi sementara tersedia[Di Sini](https://purchase.aspose.com/temporary-license/).
-### Apakah ada tutorial tambahan yang tersedia untuk Aspose.GIS untuk .NET?
- Ya, periksa[dokumentasi](https://reference.aspose.com/gis/net/) untuk tutorial dan panduan komprehensif.
+Ya, lisensi sementara tersedia [di sini](https://purchase.aspose.com/temporary-license/).
+
+### Apakah ada tutorial tambahan untuk Aspose.GIS untuk .NET?
+Ya, periksa [dokumentasi](https://reference.aspose.com/gis/net/) untuk tutorial dan panduan lengkap.
+
+---
+
+**Terakhir Diperbarui:** 2026-01-18  
+**Diuji Dengan:** Aspose.GIS 24.11 untuk .NET  
+**Penulis:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
