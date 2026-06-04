@@ -141,13 +141,13 @@ A: 您可在 Aspose.GIS 社群論壇[此處](https://forum.aspose.com/c/gis/33)�
 
 ---
 
+**Last Updated:** 2026-02-05  
+**Tested With:** Aspose.GIS for .NET (latest release)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
-**Last Updated:** 2026-02-05  
-**Tested With:** Aspose.GIS for .NET (latest release)  
-**Author:** Aspose

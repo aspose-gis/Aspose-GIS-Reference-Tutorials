@@ -17,48 +17,50 @@ weight: 14
 # จุดภายในพอลิกอน c# – ตรวจสอบ Geometry Contains Another
 
 ## บทนำ
-If you’re working on **geospatial analysis .net** projects, one of the most common tasks is to determine whether a specific location (a point) falls inside a defined area (a polygon). In this tutorial we’ll show you, step‑by‑step, how to perform a **point inside polygon c#** check with the **Aspose.GIS .NET** library. Whether you’re building a mapping application, a location‑based service, or any solution that needs spatial containment logic, the code snippets below will get you up and running in minutes.
+หากคุณกำลังทำงานเกี่ยวกับโครงการ **การวิเคราะห์เชิงพื้นที่ .NET** หนึ่งในงานที่พบบ่อยที่สุดคือการตรวจสอบว่าตำแหน่งเฉพาะ (จุด) อยู่ภายในพื้นที่ที่กำหนด (รูปหลายเหลี่ยม) หรือไม่ ในบทช่วยสอนนี้ เราจะแสดงให้คุณเห็นทีละขั้นตอนถึงวิธีการตรวจสอบ **จุดภายในรูปหลายเหลี่ยม C#** ด้วยไลบรารี **Aspose.GIS .NET** ไม่ว่าคุณจะสร้างแอปพลิเคชันแผนที่ บริการตามตำแหน่ง หรือโซลูชันใดๆ ที่ต้องการตรรกะการครอบคลุมเชิงพื้นที่ ตัวอย่างโค้ดด้านล่างจะช่วยให้คุณเริ่มต้นใช้งานได้ในไม่กี่นาที
 
 ## คำตอบด่วน
-- **What does “point inside polygon c#” mean?** It’s a spatial query that returns true when a point geometry lies completely within a polygon geometry.  
-- **Which library handles this in .NET?** Aspose.GIS for .NET provides the `SpatiallyContains` and `Within` methods.  
-- **Do I need a license?** A free trial is available; a commercial license is required for production use.  
-- **Is it compatible with .NET Core / .NET 6+?** Yes – Aspose.GIS fully supports modern .NET runtimes.  
-- **How long does the implementation take?** Around 10 minutes to copy the code and run the example.
+- **“จุดภายในรูปหลายเหลี่ยม C#” หมายความว่าอย่างไร?** มันคือการค้นหาเชิงพื้นที่ที่จะส่งคืนค่าจริงเมื่อรูปทรงเรขาคณิตของจุดอยู่ภายในรูปทรงเรขาคณิตของรูปหลายเหลี่ยมอย่างสมบูรณ์
+- **ไลบรารีใดที่จัดการเรื่องนี้ใน .NET?** Aspose.GIS สำหรับ .NET มีเมธอด `SpatiallyContains` และ `Within`
+- **ฉันต้องมีใบอนุญาตหรือไม่?** มีเวอร์ชันทดลองใช้งานฟรี แต่ต้องใช้ใบอนุญาตเชิงพาณิชย์สำหรับการใช้งานในระดับการผลิต
+- **ใช้งานร่วมกับ .NET Core / .NET 6+ ได้หรือไม่?** ได้ – Aspose.GIS รองรับรันไทม์ .NET รุ่นใหม่ๆ อย่างเต็มรูปแบบ
+- **การใช้งานใช้เวลานานแค่ไหน?** ประมาณ 10 นาทีในการคัดลอกโค้ดและรันตัวอย่าง
 
-## จุดภายในพอลิกอน c# คืออะไร?
-A *point inside polygon* test checks if the coordinates of a `Point` object are located within the boundaries of a `Polygon` object. In C# this is typically achieved through geometry libraries that implement the **Ray Casting** or **Winding Number** algorithms. Aspose.GIS abstracts those details and offers a simple API: `polygon.SpatiallyContains(point)`.
+## การทดสอบจุดภายในรูปหลายเหลี่ยมใน C# คืออะไร?
 
-## ทำไมต้องใช้ Aspose.GIS .NET สำหรับการตรวจสอบ geometry contains point?
-- **Rich geometry model** – Supports polygons, multipolygons, linear rings, and more.  
-- **High‑performance spatial operations** – Optimized for large datasets.  
-- **Cross‑platform** – Works on .NET Framework, .NET Core, and .NET 5/6+.  
-- **Comprehensive documentation** – Plenty of examples for geospatial analysis .net scenarios.  
+การทดสอบ *point inside polygon* ตรวจสอบว่าพิกัดของวัตถุ `Point` อยู่ภายในขอบเขตของวัตถุ `Polygon` หรือไม่ ใน C# โดยทั่วไปจะทำได้ผ่านไลบรารีเรขาคณิตที่ใช้ขั้นตอนวิธี **Ray Casting** หรือ **Winding Number** Aspose.GIS ลดความซับซ้อนของรายละเอียดเหล่านั้นและนำเสนอ API ที่เรียบง่าย: `polygon.SpatiallyContains(point)`
 
-## กรณีการใช้งานทั่วไปสำหรับจุดภายในพอลิกอน c#
-- **Geofencing**: Trigger actions when a device enters or leaves a predefined area.  
-- **Map visualisation**: Highlight regions that contain a user‑selected point.  
-- **Spatial analytics**: Filter datasets to only those records that fall inside a study area.  
-- **Delivery routing**: Verify that a delivery address lies within a service zone.
+## วิธีใช้ Aspose.GIS .NET สำหรับการทดสอบ geometry contains point?
 
-## ข้อกำหนดเบื้องต้น
-Before you start, make sure you have:
+- **โมเดลเรขาคณิตที่สมบูรณ์** – รองรับรูปหลายเหลี่ยม รูปหลายเหลี่ยมหลายรูป วงแหวนเชิงเส้น และอื่นๆ
+- **การดำเนินการเชิงพื้นที่ประสิทธิภาพสูง** – ปรับให้เหมาะสมสำหรับชุดข้อมูลขนาดใหญ่
+- **ข้ามแพลตฟอร์ม** – ใช้งานได้บน .NET Framework, .NET Core และ .NET5/6+
+- **เอกสารประกอบที่ครอบคลุม** – ตัวอย่างมากมายสำหรับสถานการณ์การวิเคราะห์เชิงพื้นที่บน .NET
 
-1. **.NET development environment** – .NET 6 SDK (or later) installed.  
-2. **Aspose.GIS for .NET** – Download from the official release page and add the NuGet package to your project.  
-3. **Basic C# knowledge** – Familiarity with classes, objects, and console applications.
+## รูปแบบการใช้งานทั่วไปสำหรับการตรวจสอบพื้นที่ทางภูมิศาสตร์ c#
+- **Geofencing**: เรียกใช้งานเมื่ออุปกรณ์เข้าหรือออกจากพื้นที่ที่กำหนดไว้ล่วงหน้า
+- **การแสดงภาพแผนที่**: เน้นพื้นที่ที่มีจุดที่ผู้ใช้เลือก
+- **การวิเคราะห์เชิงพื้นที่**: กรองชุดข้อมูลเฉพาะระเบียนที่อยู่ในพื้นที่ศึกษา
+- **การกำหนดเส้นทางการจัดส่ง**: ตรวจสอบว่าที่อยู่จัดส่งอยู่ในเขตบริการหรือไม่
 
-### 1. การตั้งค่าสภาพแวดล้อมการพัฒนา .NET
-Ensure you have a working .NET development environment set up on your machine. This includes having the .NET SDK installed and configured properly.
+## เบื้องต้น
+ก่อนที่คุณจะเริ่มต้น ตรวจสอบให้แน่ใจว่าคุณมี:
+
+1. **.NET สภาพแวดล้อมการพัฒนา** – ติดตั้ง .NET6 SDK (หรือใหม่กว่า)
+2. **Aspose.GIS สำหรับ .NET** – ดาวน์โหลดจากหน้าเผยแพร่อย่างเป็นทางการ และเพิ่มแพ็คเกจ NuGet ให้กับโปรเจ็กต์ของคุณ
+3. **ความรู้ C# พื้นฐาน** – ความคุ้นเคยกับคลาส อ็อบเจ็กต์ และแอปพลิเคชันคอนโซล
+
+### 1. ยังคงต้องมีการพัฒนา .NET
+ตรวจสอบให้แน่ใจว่าคุณได้ตั้งค่าสภาพแวดล้อมการพัฒนา .NET ที่ใช้งานได้บนเครื่องของคุณ ซึ่งรวมถึงการติดตั้งและกำหนดค่า .NET SDK อย่างถูกต้อง
 
 ### 2. การติดตั้ง Aspose.GIS
-Install Aspose.GIS for .NET by downloading the library from the release page [here](https://releases.aspose.com/gis/net/). Follow the installation instructions provided in the documentation [here](https://reference.aspose.com/gis/net/) to integrate Aspose.GIS into your project.
+ติดตั้ง Aspose.GIS สำหรับ .NET โดยดาวน์โหลดไลบรารีจากหน้าเผยแพร่ [ที่นี่](https://releases.aspose.com/gis/net/) ปฏิบัติตามคำแนะนำในการติดตั้งที่ระบุไว้ในเอกสาร [ที่นี่](https://reference.aspose.com/gis/net/) เพื่อผสานรวม Aspose.GIS เข้ากับโปรเจ็กต์ของคุณ
 
-### 3. ความเข้าใจพื้นฐานของ C#
-Familiarize yourself with the C# programming language as Aspose.GIS for .NET is primarily used with C#.
+### 3. เรียนรู้ภาษา C#
+ทำความคุ้นเคยกับภาษาการเขียนโปรแกรม C# เนื่องจาก Aspose.GIS สำหรับ .NET นั้นใช้งานร่วมกับ C# เป็นหลัก
 
-## นำเข้า Namespaces
-In your C# project, import the necessary namespaces to utilize Aspose.GIS functionalities:
+## นำเข้าเนมสเปซ
+ในโปรเจ็กต์ C# ของคุณ นำเข้าเนมสเปซที่จำเป็นเพื่อใช้งานฟังก์ชันการทำงานของ Aspose.GIS:
 ```csharp
 using Aspose.Gis.Geometries;
 using System;
@@ -69,7 +71,7 @@ using System.Threading.Tasks;
 ```
 
 ## ขั้นตอนที่ 1: กำหนด Geometry Objects
-First, define the geometry objects using Aspose.GIS classes. Here we create a polygon with an outer ring and an interior ring (a hole), then a point that we will test for containment.
+ขั้นแรก กำหนดวัตถุทางเรขาคณิตโดยใช้คลาสของ Aspose.GIS ในที่นี้ เราสร้างรูปหลายเหลี่ยมที่มีวงแหวนด้านนอกและวงแหวนด้านใน (รู) จากนั้นสร้างจุดที่เราจะทดสอบว่าอยู่ภายในหรือไม่
 ```csharp
 var geometry1 = new Polygon();
 geometry1.ExteriorRing = new LinearRing(new[]
@@ -92,25 +94,25 @@ var geometry2 = new Point(2, 2);
 ```
 
 ## ขั้นตอนที่ 2: ตรวจสอบ Spatial Containment
-Next, check if the polygon **geometry1** contains the point **geometry2**. The `SpatiallyContains` method returns `false` because the point lies inside the interior ring (the hole).
+ถัดไป ตรวจสอบว่ารูปหลายเหลี่ยม **geometry1** ครอบคลุมจุด **geometry2** หรือไม่ เมธอด `SpatiallyContains` จะส่งคืนค่า `false` เนื่องจากจุดนั้นอยู่ภายในวงแหวนด้านใน (ช่องว่าง)
 ```csharp
 Console.WriteLine(geometry1.SpatiallyContains(geometry2)); // False
 ```
 
 ## ขั้นตอนที่ 3: กำหนด Geometry อีกอัน
-Now we define a second point that lies in the outer ring but outside the interior ring.
+ตอนนี้เรากำหนดจุดที่สองซึ่งอยู่ภายในวงแหวนด้านนอก แต่ภายนอกวงแหวนด้านใน
 ```csharp
 var geometry3 = new Point(0.5, 0.5);
 ```
 
 ## ขั้นตอนที่ 4: ตรวจสอบ Spatial Containment อีกครั้ง
-Running the same containment check with the new point returns `true`, confirming that the point is indeed inside the polygon’s exterior boundary.
+การตรวจสอบการครอบคลุมแบบเดียวกันกับจุดใหม่จะส่งคืนค่า `true` ซึ่งยืนยันว่าจุดนั้นอยู่ภายในขอบเขตภายนอกของรูปหลายเหลี่ยมจริง ๆ
 ```csharp
 Console.WriteLine(geometry1.SpatiallyContains(geometry3)); // True
 ```
 
-## ขั้นตอนที่ 5: ฟังก์ชันที่เทียบเท่า
-Aspose.GIS also provides the inverse method `Within`. The following line demonstrates that `geometry3.Within(geometry1)` yields the same result as `geometry1.SpatiallyContains(geometry3)`.
+## ขั้นตอนที่ 5: ครอบคลุมที่ขอบเขต
+Aspose.GIS ยังมีเมธอดผกผัน `Within` บรรทัดต่อไปนี้แสดงให้เห็นว่า `geometry3.Within(geometry1)` ให้ผลลัพธ์เดียวกันกับ `geometry1.SpatiallyContains(geometry3)`
 ```csharp
 Console.WriteLine(geometry3.Within(geometry1)); // True
 ```
@@ -124,26 +126,28 @@ Console.WriteLine(geometry3.Within(geometry1)); // True
 
 ## คำถามที่พบบ่อย
 
-**Q: Is Aspose.GIS compatible with .NET Core?**  
-A: Yes, Aspose.GIS fully supports .NET Core, allowing you to develop geospatial applications across different platforms.
+**ถาม: Aspose.GIS สามารถใช้งานร่วมกับ .NET Core ได้หรือไม่?**
+ตอบ: ได้ Aspose.GIS รองรับ .NET Core อย่างเต็มรูปแบบ ทำให้คุณสามารถพัฒนาแอปพลิเคชันเชิงพื้นที่บนแพลตฟอร์มต่างๆ ได้
 
-**Q: Can I perform geospatial analysis using Aspose.GIS?**  
-A: Absolutely, Aspose.GIS offers various functionalities for geospatial analysis, including spatial queries, distance calculations, and geometry manipulations.
+**ถาม: ฉันสามารถทำการวิเคราะห์เชิงพื้นที่โดยใช้ Aspose.GIS ได้หรือไม่?**
+ตอบ: ได้อย่างแน่นอน Aspose.GIS มีฟังก์ชันการทำงานต่างๆ สำหรับการวิเคราะห์เชิงพื้นที่ รวมถึงการค้นหาเชิงพื้นที่ การคำนวณระยะทาง และการจัดการรูปทรงเรขาคณิต
 
-**Q: How frequently are updates released for Aspose.GIS?**  
-A: Aspose.GIS regularly releases updates to improve performance, add new features, and address any reported issues. You can stay updated by visiting the release page.
+**ถาม: Aspose.GIS มีการอัปเดตบ่อยแค่ไหน?**
+ตอบ: Aspose.GIS มีการอัปเดตเป็นประจำเพื่อปรับปรุงประสิทธิภาพ เพิ่มคุณสมบัติใหม่ และแก้ไขปัญหาต่างๆ ที่ได้รับการรายงาน คุณสามารถติดตามข่าวสารล่าสุดได้โดยไปที่หน้าการอัปเดต
 
-**Q: Is there a community forum for Aspose.GIS users?**  
-A: Yes, you can join the Aspose.GIS community forum [here](https://forum.aspose.com/c/gis/33) to connect with other users, ask questions, and share your experiences.
+**ถาม: มีฟอรัมชุมชนสำหรับผู้ใช้ Aspose.GIS หรือไม่?**
+ตอบ: มี คุณสามารถเข้าร่วมฟอรัมชุมชน Aspose.GIS ได้ [ที่นี่](https://forum.aspose.com/c/gis/33) เพื่อเชื่อมต่อกับผู้ใช้รายอื่น ถามคำถาม และแบ่งปันประสบการณ์ของคุณ
 
-**Q: Can I try Aspose.GIS before purchasing?**  
-A: Certainly, you can explore Aspose.GIS by downloading the free trial from [here](https://releases.aspose.com/).
 
-**Q: What happens if I test a point that lies exactly on the polygon edge?**  
-A: Aspose.GIS treats points on the boundary as **inside** for the `SpatiallyContains` method. Use `Touches` if you need a different behavior.
 
-## สรุป
-In this guide we demonstrated a practical **point inside polygon c#** solution using Aspose.GIS for .NET. By defining your geometries and leveraging the `SpatiallyContains` (or `Within`) method, you can quickly answer spatial containment questions—an essential part of any **geospatial analysis .net** workflow. Feel free to experiment with larger datasets, different geometry types, and combine these checks with other Aspose.GIS capabilities such as distance calculations or spatial indexing.
+**ถาม: ฉันสามารถทดลองใช้ Aspose.GIS ก่อนซื้อได้หรือไม่?**
+ตอบ: ได้แน่นอน คุณสามารถทดลองใช้ Aspose.GIS ได้โดยดาวน์โหลดเวอร์ชันทดลองใช้ฟรีจาก [ที่นี่](https://releases.aspose.com/)
+
+**ถาม: จะเกิดอะไรขึ้นถ้าฉันทดสอบจุดที่อยู่บนขอบของรูปหลายเหลี่ยมพอดี?**
+ตอบ: Aspose.GIS จะถือว่าจุดที่อยู่บนขอบเขตเป็น **ภายใน** สำหรับเมธอด `SpatiallyContains` หากต้องการพฤติกรรมที่แตกต่างออกไป ให้ใช้ `Touches`
+
+## อ้างอิง
+ในคู่มือนี้ เราได้สาธิตวิธีการแก้ปัญหา **จุดภายในรูปหลายเหลี่ยมด้วยภาษา C#** โดยใช้ Aspose.GIS สำหรับ .NET โดยการกำหนดรูปทรงเรขาคณิตของคุณและใช้ประโยชน์จากเมธอด `SpatiallyContains` (หรือ `Within`) คุณสามารถตอบคำถามเกี่ยวกับการบรรจุเชิงพื้นที่ได้อย่างรวดเร็ว ซึ่งเป็นส่วนสำคัญของเวิร์กโฟลว์ **การวิเคราะห์เชิงพื้นที่ .NET** ใดๆ คุณสามารถทดลองกับชุดข้อมูลขนาดใหญ่ขึ้น ประเภทรูปทรงเรขาคณิตที่แตกต่างกัน และผสมผสานการตรวจสอบเหล่านี้เข้ากับความสามารถอื่นๆ ของ Aspose.GIS เช่น การคำนวณระยะทางหรือการจัดทำดัชนีเชิงพื้นที่ได้ตามต้องการ
 
 ---
 

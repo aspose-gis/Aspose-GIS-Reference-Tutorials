@@ -18,37 +18,37 @@ weight: 12
 
 ## บทนำ
 
-If you need to **วิธีตรวจสอบการทับซ้อน** between two spatial features, Aspose.GIS for .NET gives you a clean, type‑safe API that does the heavy lifting. Whether you’re building a routing engine, a land‑use validator, or a simple GIS utility, performing spatial overlap analysis is a common requirement. In this tutorial we’ll walk through everything you need to know—prerequisites, code walkthrough, and practical tips—so you can confidently answer the question *วิธีตรวจจับการทับซ้อน* in your own projects.
+หากคุณต้องการ **วิธีตรวจสอบการซ้อนทับซ้อน** ระหว่างคุณสมบัติเชิงพื้นที่สองคุณสมบัติ Aspose.GIS สำหรับ .NET มอบ API ที่สะอาดและปลอดภัยต่อการพิมพ์ซึ่งช่วยยกของหนัก ไม่ว่าคุณกำลังสร้างกลไกการกำหนดเส้นทาง เครื่องมือตรวจสอบการใช้ที่ดิน หรือยูทิลิตี้ GIS แบบธรรมดา การดำเนินการวิเคราะห์การทับซ้อนกันเชิงพื้นที่ถือเป็นข้อกำหนดทั่วไป ในบทช่วยสอนนี้ เราจะอธิบายทุกสิ่งที่คุณจำเป็นต้องรู้ ไม่ว่าจะเป็นข้อกำหนดเบื้องต้น การแนะนำโค้ด และเคล็ดลับการปฏิบัติ เพื่อให้คุณสามารถตอบคำถามได้อย่างมั่นใจ *วิธีการของการซ้อนทับซ้อน* ในโปรเจ็กต์ของคุณเอง
 
-## คำตอบสั้น
-- **วิธีหลักคืออะไร?** `Geometry.Overlaps(otherGeometry)`  
-- **ฉันต้องการไลเซนส์สำหรับการทดสอบหรือไม่?** การทดลองใช้ฟรีทำงานสำหรับการพัฒนา; จำเป็นต้องมีไลเซนส์สำหรับการใช้งานจริง.  
-- **เวอร์ชัน .NET ที่รองรับคืออะไร?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6+.  
-- **การดำเนินการใช้เวลานานเท่าไหร่?** ประมาณ 5‑10 นาทีสำหรับการตรวจสอบการทับซ้อนพื้นฐาน.  
-- **ฉันสามารถใช้ร่วมกับไลบรารี GIS อื่นได้หรือไม่?** ได้—Aspose.GIS ผสานรวมอย่างราบรื่นกับส่วนใหญ่ของสแต็ก GIS ของ .NET.
+##คำตอบสั้นๆ
+- **วิธีหลักคืออะไร?** `Geometry.Overlaps(otherGeometry)`
+- ** ตรวจสอบไลเซนส์สำหรับการทดสอบหรือไม่?** เอกสารฟรีทำงานสำหรับการพัฒนา; อย่าลืมทานอาหารเซนส์จริง.
+- ** รองรับ .NET รองรับอะไร?** .NET Framework4.5+, .NETCore3.1+, .NET5/6+
+- **การดำเนินการทำได้มากที่สุด?**ด้วย 5-10 นาทีสำหรับการตรวจสอบการทับซ้อนพื้นฐาน
+- **ประกอบฉากในไลบรารี GIS อื่นๆ ได้หรือไม่** ได้—Aspose.GIS ตรวจสอบรวมอย่างใดอย่างหนึ่งกับปกติของเดสก์ท็อป GIS ของ .NET
 
-## การวิเคราะห์การทับซ้อนเชิงพื้นที่คืออะไร?
+## การวิเคราะห์การทับซ้อนกันเชิงพื้นที่คืออะไร?
 
-ในการวิเคราะห์เชิงพื้นที่, *การทับซ้อน* หมายถึงเรขาคณิตสองรูปแชร์จุดภายในบางส่วนแต่ไม่มีรูปใดเป็นเจ้าของทั้งหมดของอีกรูปหนึ่ง. พรีดิเคท `Overlaps` ปฏิบัติตามคำนิยามของ OGC (Open Geospatial Consortium) และคืนค่า **true** เฉพาะเมื่อความสัมพันธ์นี้มีอยู่จริง.
+ในการวิเคราะห์เชิงพื้นที่, *การทับซ้อน* อีกครั้งหนึ่งสองรูปแชร์จุดภายในโหดร้ายแต่ไม่มีรูปใดเป็นเจ้าของอีกหนึ่งรูปหนึ่ง. พรีดิเคท `Overlaps` ตามคำนิยามของ OGC (Open Geospatial Consortium) และการเก็บรักษา **true** ในช่วงเมื่อความสัมพันธ์นี้อยู่จริง.
 
-## ทำไมต้องใช้ Aspose.GIS สำหรับการตรวจจับการทับซ้อน?
+##เพื่อใช้ Aspose.GIS สำหรับการเคลือบซ้อนซ้อน?
 
-- **Zero‑dependency** – ไม่ต้องใช้ไลบรารีเนทีฟหรือบริการภายนอก.  
-- **Rich geometry model** – รองรับจุด, เส้น, โพลิกอน, และมัลติ‑เรขาคณิตโดยตรง.  
-- **Performance‑optimized** – ออกแบบมาสำหรับชุดข้อมูลขนาดใหญ่และสถานการณ์เรียลไทม์.  
-- **Cross‑platform** – ทำงานบน Windows, Linux, และ macOS ด้วย .NET Core.  
+- **Zero‑dependency** – เคยใช้ไลบรารีเนทีฟหรือบริการภายนอก
+- **แบบจำลองเรขาคณิตแบบสมบูรณ์** – แสดงจุด, การตรวจสอบ, ตรวจสอบ, และมัลติฟังก์ชั่นโดยตรง
+- **Performance‑optimized** – ข้อมูลชุดใหญ่และสถานการณ์เรียลไทม์
+- **ข้ามแพลตฟอร์ม** – ทำงานบน Windows, Linux, และ macOS ด้วย .NET Core
 
-## ข้อกำหนดเบื้องต้น
+## เบื้องต้น
 
-Before you start, make sure you have:
+ก่อนที่คุณจะเริ่มต้น ตรวจสอบให้แน่ใจว่าคุณมี:
 
-1. **C# basics** – คุณควรคุ้นเคยกับคลาส, เมธอด, และการแสดงผลบนคอนโซล.  
-2. **Aspose.GIS for .NET** – ดาวน์โหลดและติดตั้งจากเว็บไซต์ทางการ [here](https://releases.aspose.com/gis/net/).  
-3. **A .NET‑compatible IDE** – Visual Studio, Rider, หรือ VS Code พร้อมส่วนขยาย C#.
+1. **C# basics** – ในส่วนของคลาส, เมธอด, และในส่วนนี้
+2. **Aspose.GIS for .NET** – ดาวน์โหลดได้จากเว็บไซต์ทางการ[ที่นี่](https://releases.aspose.com/gis/net/)
+3. **A .NET‑เข้ากันได้กับ IDE** – Visual Studio, Rider, หรือ VSCode พร้อมด้วย C#.
 
-## นำเข้า Namespaces
+## นำเข้าเนมสเปซ
 
-Add the required `using` statements to give your code access to Aspose.GIS geometry types.
+เพิ่มคำสั่ง `using` ที่จำเป็นเพื่อให้โค้ดของคุณสามารถเข้าถึงประเภทเรขาคณิตของ Aspose.GIS
 
 ```csharp
 using Aspose.Gis.Geometries;
@@ -61,7 +61,7 @@ using System.Threading.Tasks;
 
 ## ขั้นตอนที่ 1: กำหนดเรขาคณิตที่คุณต้องการเปรียบเทียบ
 
-We’ll start with two `LineString` objects that share an endpoint but do **not** overlap.
+เราจะเริ่มต้นด้วยอ็อบเจ็กต์ `LineString` สองอันที่ใช้จุดปลายร่วมกัน แต่ **ไม่** ทับซ้อนกัน
 
 ```csharp
 var geometry1 = new LineString();
@@ -75,7 +75,7 @@ geometry2.AddPoint(0, 3);
 
 ## ขั้นตอนที่ 2: ใช้เมธอด `Overlaps` – การตรวจสอบครั้งแรก
 
-The `Overlaps` method returns `false` because the lines only touch at a single point.
+เมธอด `Overlaps` จะคืนค่า `false` เพราะเส้นสัมผัสกันเพียงจุดเดียว
 
 ```csharp
 Console.WriteLine(geometry1.Overlaps(geometry2)); // Output: False
@@ -83,7 +83,7 @@ Console.WriteLine(geometry1.Overlaps(geometry2)); // Output: False
 
 ## ขั้นตอนที่ 3: สร้างเรขาคณิตอื่นที่ทับซ้อนจริงๆ
 
-Now we’ll create a third line that runs through the interior of `geometry1`.
+ตอนนี้เราจะสร้างเส้นที่สามที่วิ่งผ่านส่วนภายในของ `geometry1`
 
 ```csharp
 var geometry3 = new LineString();
@@ -99,7 +99,7 @@ Console.WriteLine(geometry1.Overlaps(geometry3)); // Output: True
 
 ### วิธีตรวจจับการทับซ้อนในกรณีที่ซับซ้อนขึ้น?
 
-If you’re working with polygons, multi‑geometries, or need to consider a tolerance, the same `Overlaps` method applies. Just replace `LineString` with `Polygon`, `MultiPolygon`, etc., and the predicate will handle the geometry type internally. This is especially handy for **check overlapping polygons** scenarios and general **gis overlap check** tasks.
+หากคุณกำลังทำงานกับรูปหลายเหลี่ยม รูปทรงเรขาคณิตหลายรูป หรือจำเป็นต้องพิจารณาค่าความคลาดเคลื่อน วิธีการ `Overlaps` ก็ยังคงใช้ได้เหมือนเดิม เพียงแค่แทนที่ `LineString` ด้วย `Polygon`, `MultiPolygon` เป็นต้น และฟังก์ชันตรวจสอบเงื่อนไขจะจัดการประเภทของรูปทรงเรขาคณิตภายในเอง วิธีนี้มีประโยชน์อย่างยิ่งสำหรับสถานการณ์ **ตรวจสอบรูปหลายเหลี่ยมที่ทับซ้อนกัน** และงาน **ตรวจสอบการทับซ้อนของ GIS** ทั่วไป
 
 ## ปัญหาทั่วไปและวิธีแก้ไข
 

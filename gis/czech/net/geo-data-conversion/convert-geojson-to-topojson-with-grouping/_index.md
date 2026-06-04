@@ -141,15 +141,15 @@ Nyní máte kompletní, připravený recept pro **convert geojson to topojson** 
 
 ---
 
+**Last Updated:** 2026-02-05  
+**Tested With:** Aspose.GIS for .NET (latest release)  
+**Author:** Aspose  
+
+---
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
-**Last Updated:** 2026-02-05  
-**Tested With:** Aspose.GIS for .NET (latest release)  
-**Author:** Aspose  
-
----

@@ -137,15 +137,15 @@ A: Aspose.GIS 커뮤니티 포럼에서 지원을 받을 수 있습니다 [여
 
 ---
 
+**마지막 업데이트:** 2026-02-05  
+**테스트 환경:** Aspose.GIS for .NET (latest release)  
+**작성자:** Aspose  
+
+---
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
-**마지막 업데이트:** 2026-02-05  
-**테스트 환경:** Aspose.GIS for .NET (latest release)  
-**작성자:** Aspose  
-
----

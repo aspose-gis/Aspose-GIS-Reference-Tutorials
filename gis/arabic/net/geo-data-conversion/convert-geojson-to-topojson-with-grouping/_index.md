@@ -139,13 +139,13 @@ VectorLayer.Convert(sampleGeoJsonPath, Drivers.GeoJson, outputFilePath, Drivers.
 
 أصبح لديك الآن وصفة كاملة وجاهزة للإنتاج **لتحويل geojson إلى topojson** مع تجميع العناصر باستخدام Aspose.GIS لـ .NET. من خلال ضبط `ObjectNameAttribute`، تتحكم في كيفية تنظيم العناصر، مما يبسط التنسيق والتفاعل اللاحق في خرائط الويب. لا تتردد في استكشاف محركات أخرى، وتجربة سمات تجميع مختلفة، ودمج هذا التحويل في خطوط أنابيب GIS الأكبر.
 
+**آخر تحديث:** 2026-02-05  
+**تم الاختبار مع:** Aspose.GIS for .NET (الإصدار الأخير)  
+**المؤلف:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
-**آخر تحديث:** 2026-02-05  
-**تم الاختبار مع:** Aspose.GIS for .NET (الإصدار الأخير)  
-**المؤلف:** Aspose

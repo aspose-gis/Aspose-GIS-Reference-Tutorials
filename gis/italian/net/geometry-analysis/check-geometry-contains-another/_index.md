@@ -152,11 +152,11 @@ In questa guida abbiamo mostrato una soluzione pratica di **point inside polygon
 **Tested With:** Aspose.GIS 24.11 for .NET  
 **Author:** Aspose  
 
+---
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----

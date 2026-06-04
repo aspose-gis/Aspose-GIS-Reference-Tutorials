@@ -142,15 +142,15 @@ Je hebt nu een volledige, productie‑klare handleiding voor **convert geojson t
 
 ---
 
+**Laatst bijgewerkt:** 2026-02-05  
+**Getest met:** Aspose.GIS for .NET (latest release)  
+**Auteur:** Aspose  
+
+---
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
-**Laatst bijgewerkt:** 2026-02-05  
-**Getest met:** Aspose.GIS for .NET (latest release)  
-**Auteur:** Aspose  
-
----

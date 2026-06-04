@@ -149,11 +149,11 @@ In this guide we demonstrated a practical **point inside polygon c#** solution u
 **Tested With:** Aspose.GIS 24.11 for .NET  
 **Author:** Aspose  
 
+---
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----

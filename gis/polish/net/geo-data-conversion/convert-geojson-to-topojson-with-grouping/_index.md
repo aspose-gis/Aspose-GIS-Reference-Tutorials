@@ -142,15 +142,15 @@ Masz teraz kompletny, gotowy do produkcji przepis na **convert geojson to topojs
 
 ---
 
+**Ostatnia aktualizacja:** 2026-02-05  
+**Testowano z:** Aspose.GIS for .NET (latest release)  
+**Autor:** Aspose  
+
+---
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
-**Ostatnia aktualizacja:** 2026-02-05  
-**Testowano z:** Aspose.GIS for .NET (latest release)  
-**Autor:** Aspose  
-
----

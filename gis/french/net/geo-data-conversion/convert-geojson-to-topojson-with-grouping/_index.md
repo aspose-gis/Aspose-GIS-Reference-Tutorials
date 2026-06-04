@@ -142,15 +142,15 @@ Vous disposez maintenant d’une recette complète, prête pour la production, p
 
 ---
 
+**Dernière mise à jour :** 2026-02-05  
+**Testé avec :** Aspose.GIS for .NET (dernière version)  
+**Auteur :** Aspose  
+
+---
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
-**Dernière mise à jour :** 2026-02-05  
-**Testé avec :** Aspose.GIS for .NET (dernière version)  
-**Auteur :** Aspose  
-
----

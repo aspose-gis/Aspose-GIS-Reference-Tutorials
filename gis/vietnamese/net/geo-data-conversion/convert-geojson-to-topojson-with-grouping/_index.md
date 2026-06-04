@@ -57,11 +57,9 @@ using Aspose.Gis.Formats.TopoJson;
 
 ## Hướng Dẫn Từng Bước
 
-### Step 1: Define File Paths
+### Bước 1: Xác định đường dẫn tệp
 
-Xác định Đường Dẫn Tệp
-
-Specify where the source GeoJSON lives and where the TopoJSON should be written:
+Hãy chỉ định vị trí lưu trữ tệp GeoJSON nguồn và vị trí ghi tệp TopoJSON:
 
 ```csharp
 string sampleGeoJsonPath = "Your Document Directory" + "sample.geojson";
@@ -70,11 +68,9 @@ var outputFilePath = "Your Document Directory" + "convertedSampleWithGrouping_ou
 
 > **Mẹo chuyên nghiệp:** Sử dụng `Path.Combine` để xây dựng đường dẫn đa nền tảng nếu bạn nhắm tới .NET Core.
 
-### Step 2: Configure Conversion Options (Set Object Name Attribute)
+### Bước 2: Cấu Hình Tùy Chọn Chuyển Đổi (Đặt Thuộc Tính Tên Đối Tượng)
 
-Cấu Hình Tùy Chọn Chuyển Đổi (Đặt Thuộc Tính Tên Đối Tượng)
-
-Create a `ConversionOptions` instance and tell Aspose.GIS how to group the features:
+Tạo một thể hiện `ConversionOptions` và cho Aspose.GIS biết cách nhóm các đối tượng:
 
 ```csharp
 var options = new ConversionOptions
@@ -91,11 +87,9 @@ var options = new ConversionOptions
 
 Thay `"group"` bằng tên thuộc tính thực tế trong GeoJSON mà bạn muốn dùng cho **geojson feature grouping**. `DefaultObjectName` đảm bảo mọi đối tượng đều có một tên trong TopoJSON, ngay cả khi thuộc tính bị thiếu.
 
-### Step 3: Perform the Conversion (Convert GeoJSON to TopoJSON)
+### Bước 3: Thực Hiện Chuyển Đổi (Chuyển GeoJSON sang TopoJSON)
 
-Thực Hiện Chuyển Đổi (Chuyển GeoJSON sang TopoJSON)
-
-Run the conversion with a single API call:
+Thực hiện chuyển đổi chỉ với một lệnh gọi API duy nhất:
 
 ```csharp
 VectorLayer.Convert(sampleGeoJsonPath, Drivers.GeoJson, outputFilePath, Drivers.TopoJson, options);
@@ -141,15 +135,15 @@ Bạn đã có một công thức hoàn chỉnh, sẵn sàng cho môi trường 
 
 ---
 
+**Last Updated:** 2026-02-05  
+**Tested With:** Aspose.GIS for .NET (latest release)  
+**Author:** Aspose  
+
+---
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
-**Last Updated:** 2026-02-05  
-**Tested With:** Aspose.GIS for .NET (latest release)  
-**Author:** Aspose  
-
----

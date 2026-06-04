@@ -17,35 +17,35 @@ weight: 12
 
 # Analisis Overlap Spasial Geometri dengan Aspose.GIS
 
-## Introduction
+## Perkenalan
 
-Jika Anda perlu **cara memeriksa overlap** antara dua fitur spasial, Aspose.GIS untuk .NET memberikan API yang bersih, tipe‑aman yang melakukan pekerjaan berat. Baik Anda sedang membangun mesin routing, validator penggunaan lahan, atau utilitas GIS sederhana, melakukan analisis overlap spasial adalah kebutuhan umum. Dalam tutorial ini kami akan membahas semua yang perlu Anda ketahui—prasyarat, penjelasan kode, dan tips praktis—sehingga Anda dapat dengan percaya diri menjawab pertanyaan *bagaimana mendeteksi overlap* dalam proyek Anda sendiri.
+Jika Anda perlu **cara memeriksa tumpang tindih** antara dua fitur spasial, Aspose.GIS untuk .NET memberikan API yang bersih, tipe‑aman yang melakukan pekerjaan berat. Baik Anda sedang membangun mesin routing, validator penggunaan lahan, atau utilitas GIS sederhana, melakukan analisis overlap spasial adalah kebutuhan umum. Dalam tutorial ini kami akan membahas semua yang perlu Anda ketahui—prasyarat, penjelasan kode, dan tips praktis—sehingga Anda dapat percaya diri menjawab pertanyaan *bagaimana mendeteksi tumpang tindih* dalam proyek Anda sendiri.
 
-## Quick Answers
-- **Apa metode utama?** `Geometry.Overlaps(otherGeometry)`  
-- **Apakah saya memerlukan lisensi untuk pengujian?** Versi percobaan gratis dapat digunakan untuk pengembangan; lisensi diperlukan untuk produksi.  
-- **Versi .NET apa yang didukung?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6+.  
-- **Berapa lama implementasinya?** Sekitar 5‑10 menit untuk pemeriksaan overlap dasar.  
-- **Bisakah saya menggunakan ini dengan perpustakaan GIS lain?** Ya—Aspose.GIS terintegrasi dengan mulus ke sebagian besar stack GIS .NET.
+## Jawaban Cepat
+- **Apa metode utama?** `Geometri.Tumpang tindih(Geometri lainnya)`
+- **Apakah saya memerlukan lisensi untuk pengujian?** Versi percobaan gratis dapat digunakan untuk pengembangan; lisensi diperlukan untuk produksi.
+- **Versi .NET apa yang didukung?** .NET Framework4.5+, .NETCore3.1+, .NET5/6+.
+- **Berapa lama implementasinya?** Sekitar 5‑10menit untuk pemeriksaan tumpang tindih dasar.
+- ** bisakah saya menggunakan ini dengan perpustakaan GIS lain?** Ya—Aspose.GIS terintegrasi dengan mulus ke sebagian besar stack GIS .NET.
 
-## What is Spatial Overlap Analysis?
+## Apa itu Analisis Tumpang Tindih Spasial?
 
-Dalam analisis spasial, *overlap* berarti bahwa dua geometri berbagi beberapa titik interior tetapi tidak ada yang sepenuhnya mengandung yang lain. Predikat `Overlaps` mengikuti definisi OGC (Open Geospatial Consortium) dan mengembalikan **true** hanya ketika hubungan spesifik ini ada.
+Dalam analisis spasial, *overlap* berarti dua geometri berbagi beberapa titik interior tetapi tidak ada yang sepenuhnya mengandung yang lain. Predikat `Overlaps` mengikuti definisi OGC (Open Geospatial Consortium) dan mengembalikan **true** hanya ketika hubungan spesifik ini ada.
 
-## Why Use Aspose.GIS for Overlap Detection?
+## Mengapa Menggunakan Aspose.GIS untuk Deteksi Tumpang Tindih?
 
-- **Zero‑dependency** – Tidak memerlukan pustaka native atau layanan eksternal.  
-- **Rich geometry model** – Mendukung titik, garis, poligon, dan multi‑geometri secara langsung.  
-- **Performance‑optimized** – Dirancang untuk dataset besar dan skenario waktu‑nyata.  
-- **Cross‑platform** – Berfungsi di Windows, Linux, dan macOS dengan .NET Core.  
+- **Zero‑dependency** – Tidak memerlukan pustaka native atau layanan eksternal.
+- **Model geometri yang kaya** – Mendukung titik, garis, poligon, dan multi‑geometri secara langsung.
+- **Kinerja‑dioptimalkan** – dirancang untuk kumpulan data besar dan skenario waktu‑nyata.
+- **Lintas‑platform** – Berfungsi di Windows, Linux, dan macOS dengan .NET Core.
 
-## Prerequisites
+## Prasyarat
 
-1. **Dasar-dasar C#** – Anda harus nyaman dengan kelas, metode, dan output konsol.  
-2. **Aspose.GIS untuk .NET** – Unduh dan instal dari situs resmi [here](https://releases.aspose.com/gis/net/).  
-3. **IDE yang kompatibel dengan .NET** – Visual Studio, Rider, atau VS Code dengan ekstensi C#.
+1. **Dasar-dasar C#** – Anda harus nyaman dengan kelas, metode, dan konsol keluaran.
+2. **Aspose.GIS untuk .NET** – Unduh dan instal dari situs resmi[di sini](https://releases.aspose.com/gis/net/).
+3. **IDE yang kompatibel dengan .NET** – Visual Studio, Rider, atau VSCode dengan ekstensi C#.
 
-## Import Namespaces
+## Impor Namespace
 
 Tambahkan pernyataan `using` yang diperlukan untuk memberi kode Anda akses ke tipe geometri Aspose.GIS.
 
@@ -58,7 +58,7 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## Step 1: Define the geometries you want to compare
+## Langkah 1: Tentukan geometri yang ingin Anda bandingkan
 
 Kita akan memulai dengan dua objek `LineString` yang berbagi satu titik akhir tetapi **tidak** overlap.
 
@@ -72,7 +72,7 @@ geometry2.AddPoint(0, 2);
 geometry2.AddPoint(0, 3);
 ```
 
-## Step 2: Use the `Overlaps` method – first check
+## Langkah 2: Gunakan metode `Tumpang Tindih` – periksa terlebih dahulu
 
 Metode `Overlaps` mengembalikan `false` karena garis‑garis tersebut hanya bersentuhan pada satu titik.
 
@@ -80,7 +80,7 @@ Metode `Overlaps` mengembalikan `false` karena garis‑garis tersebut hanya bers
 Console.WriteLine(geometry1.Overlaps(geometry2)); // Output: False
 ```
 
-## Step 3: Create another geometry that truly overlaps
+## Langkah 3: Buat geometri lain yang benar-benar tumpang tindih
 
 Sekarang kita akan membuat garis ketiga yang melintasi interior `geometry1`.
 
@@ -90,46 +90,46 @@ geometry3.AddPoint(0, 1);
 geometry3.AddPoint(0, 3);
 ```
 
-## Step 4: Check overlap again – this time it should be true
+## Langkah 4: Periksa tumpang tindih lagi – kali ini seharusnya benar
 
 ```csharp
 Console.WriteLine(geometry1.Overlaps(geometry3)); // Output: True
 ```
 
-### How to detect overlap in more complex cases?
+### Bagaimana cara mendeteksi tumpang tindih dalam kasus yang lebih kompleks?
 
-Jika Anda bekerja dengan poligon, multi‑geometri, atau perlu mempertimbangkan toleransi, metode `Overlaps` yang sama dapat digunakan. Cukup ganti `LineString` dengan `Polygon`, `MultiPolygon`, dll., dan predikat akan menangani tipe geometri secara internal. Ini sangat berguna untuk skenario **check overlapping polygons** dan tugas umum **gis overlap check**.
+Jika Anda bekerja dengan poligon, multi‑geometri, atau perlu mempertimbangkan toleransi, metode `Overlaps` yang sama dapat digunakan. Cukup ganti `LineString` dengan `Polygon`, `MultiPolygon`, dll., dan predikat akan menangani tipe geometri secara internal. Ini sangat berguna untuk skenario **memeriksa poligon yang tumpang tindih** dan tugas umum **memeriksa tumpang tindih**.
 
-## Common Issues and Solutions
+## Masalah Umum dan Solusinya
 
 | Masalah | Mengapa Terjadi | Solusi |
 |-------|----------------|-----|
-| **Always returns `false`** | Geometri hanya bersentuhan (berbagi batas) bukan overlap. | Gunakan `Intersects` untuk setiap titik yang berbagi, atau sesuaikan koordinat sehingga interior berpotongan. |
-| **Exception on large datasets** | Tekanan memori saat memuat banyak geometri sekaligus. | Proses geometri dalam batch atau gunakan `GeometryCollection` dengan streaming. |
-| **Unexpected `true` for polygons** | Interior poligon berpotongan tetapi berbagi tepi. | Pastikan Anda memang memerlukan definisi OGC *overlaps*; jika tidak, gunakan `Crosses` atau `Touches`. |
+| **Selalu mengembalikan `false`** | Geometri hanya bersentuhan (berbagi batas) bukan tumpang tindih. | Gunakan `Intersects` untuk setiap titik yang berbagi, atau sesuaikan koordinat sehingga interior berpotongan. |
+| **Pengecualian pada kumpulan data besar** | Tekanan memori saat memuat banyak geometri sekaligus. | Proses geometri dalam batch atau gunakan `GeometryCollection` dengan streaming. |
+| **``Benar` yang tak terduga untuk poligon** | Interior poligon berpotongan tetapi berbagi tepi. | Pastikan Anda memang memerlukan resolusi OGC *overlaps*; jika tidak, gunakan `Crosses` atau `Touches`. |
 
-## Frequently Asked Questions
+## Pertanyaan yang Sering Diajukan
 
-**Q1: Bisakah saya menggunakan Aspose.GIS untuk .NET dengan perpustakaan .NET lain?**  
+**Q1: ​​Bisakah saya menggunakan Aspose.GIS untuk .NET dengan perpustakaan .NET lain?**
 A1: Ya, Aspose.GIS untuk .NET terintegrasi secara mulus dengan perpustakaan .NET lain, memperluas kemampuannya lebih jauh.
 
-**Q2: Apakah tersedia percobaan gratis untuk Aspose.GIS untuk .NET?**  
+**Q2: Apakah tersedia percobaan gratis untuk Aspose.GIS untuk .NET?**
 A2: Ya, Anda dapat mengakses percobaan gratis Aspose.GIS untuk .NET dari [here](https://releases.aspose.com/).
 
-**Q3: Di mana saya dapat menemukan dokumentasi untuk Aspose.GIS untuk .NET?**  
-A3: Dokumentasi lengkap untuk Aspose.GIS untuk .NET tersedia [here](https://reference.aspose.com/gis/net/).
+**Q3: Bagaimana saya dapat menemukan dokumentasi untuk Aspose.GIS untuk .NET?**
+A3: Dokumentasi lengkap untuk Aspose.GIS untuk .NET tersedia [di sini](https://reference.aspose.com/gis/net/).
 
-**Q4: Bagaimana cara mendapatkan lisensi sementara untuk Aspose.GIS untuk .NET?**  
-A4: Anda dapat memperoleh lisensi sementara untuk Aspose.GIS untuk .NET dari [here](https://purchase.aspose.com/temporary-license/).
+**Q4: Bagaimana cara mendapatkan lisensi sementara untuk Aspose.GIS untuk .NET?**
+A4: Anda dapat memperoleh lisensi sementara untuk Aspose.GIS untuk .NET dari [di sini](https://purchase.aspose.com/temporary-license/).
 
-**Q5: Di mana saya dapat mencari dukungan untuk Aspose.GIS untuk .NET?**  
-A5: Untuk bantuan atau pertanyaan, kunjungi forum Aspose.GIS [here](https://forum.aspose.com/c/gis/33).
+**Q5: Di mana saya dapat mencari dukungan untuk Aspose.GIS untuk .NET?**
+A5: Untuk bantuan atau pertanyaan, kunjungi forum Aspose.GIS [di sini](https://forum.aspose.com/c/gis/33).
 
 ---
 
-**Terakhir Diperbarui:** 2026-02-05  
-**Diuji Dengan:** Aspose.GIS 24.11 untuk .NET  
-**Penulis:** Aspose  
+**Terakhir Diperbarui:** 05-02-2026
+**Diuji Dengan:** Aspose.GIS 24.11 untuk .NET
+**Penulis:** Berasumsi  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

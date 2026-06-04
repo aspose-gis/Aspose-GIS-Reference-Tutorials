@@ -125,23 +125,23 @@ Console.WriteLine(geometry3.Within(geometry1)); // True
 
 ## Preguntas frecuentes
 
-**Q: Is Aspose.GIS compatible with .NET Core?**  
-A: Sí, Aspose.GIS soporta completamente .NET Core, lo que te permite desarrollar aplicaciones geoespaciales en diferentes plataformas.
+**P: ¿Aspose.GIS es compatible con .NET Core?**
+R: Sí, Aspose.GIS soporta completamente .NET Core, lo que te permite desarrollar aplicaciones geoespaciales en diferentes plataformas.
 
-**Q: Can I perform geospatial analysis using Aspose.GIS?**  
-A: Absolutamente, Aspose.GIS ofrece diversas funcionalidades para análisis geoespacial, incluyendo consultas espaciales, cálculos de distancia y manipulaciones de geometría.
+**P: ¿Puedo realizar análisis geoespaciales usando Aspose.GIS?**
+R: Absolutamente, Aspose.GIS ofrece diversas funcionalidades para análisis geoespacial, incluyendo consultas espaciales, cálculos de distancia y manipulaciones de geometría.
 
-**Q: How frequently are updates released for Aspose.GIS?**  
-A: Aspose.GIS publica actualizaciones regularmente para mejorar el rendimiento, añadir nuevas funciones y abordar problemas reportados. Puedes mantenerte al día visitando la página de lanzamientos.
+**P: ¿Con qué frecuencia se publican actualizaciones para Aspose.GIS?**
+R: Aspose.GIS publica actualizaciones periódicamente para mejorar el rendimiento, agregar nuevas funciones y abordar problemas reportados. Puedes mantenerte al día visitando la página de lanzamientos.
 
-**Q: Is there a community forum for Aspose.GIS users?**  
-A: Sí, puedes unirte al foro de la comunidad Aspose.GIS [here](https://forum.aspose.com/c/gis/33) para conectar con otros usuarios, hacer preguntas y compartir tus experiencias.
+**P: ¿Existe un foro comunitario para usuarios de Aspose.GIS?**
+R: Sí, puedes unirte al foro de la comunidad Aspose.GIS [aquí](https://forum.aspose.com/c/gis/33) para conectar con otros usuarios, hacer preguntas y compartir tus experiencias.
 
-**Q: Can I try Aspose.GIS before purchasing?**  
-A: Por supuesto, puedes explorar Aspose.GIS descargando la prueba gratuita desde [here](https://releases.aspose.com/).
+**P: ¿Puedo probar Aspose.GIS antes de comprarlo?**
+R: Por supuesto, puedes explorar Aspose.GIS descargando la prueba gratuita desde [aquí](https://releases.aspose.com/).
 
-**Q: What happens if I test a point that lies exactly on the polygon edge?**  
-A: Aspose.GIS trata los puntos en el límite como **inside** para el método `SpatiallyContains`. Usa `Touches` si necesitas un comportamiento diferente.
+**P: ¿Qué sucede si pruebo un punto que se encuentra exactamente en el borde del polígono?**
+R: Aspose.GIS trata los puntos en el límite como **inside** para el método `SpatiallyContains`. Usa `Touches` si necesitas un comportamiento diferente.
 
 ## Conclusión
 En esta guía demostramos una solución práctica **point inside polygon c#** usando Aspose.GIS para .NET. Definiendo tus geometrías y aprovechando el método `SpatiallyContains` (o `Within`), puedes responder rápidamente a preguntas de contención espacial—una parte esencial de cualquier flujo de trabajo de **geospatial analysis .net**. Siéntete libre de experimentar con conjuntos de datos más grandes, diferentes tipos de geometría y combinar estas verificaciones con otras capacidades de Aspose.GIS, como cálculos de distancia o indexación espacial.
