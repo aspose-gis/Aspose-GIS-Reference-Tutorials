@@ -1,7 +1,7 @@
 ---
-date: 2025-12-03
-description: Leer hoe je polygon-geometry in C# maakt en overlappende polygonen detecteert
-  met de Intersects-methode van Aspose.GIS voor .NET.
+date: 2026-02-05
+description: Leer hoe je polygongeometrie in C# maakt en hoe je Intersects gebruikt
+  om overlappende polygonen te detecteren met Aspose.GIS voor .NET.
 linktitle: Create Polygon Geometry C#
 second_title: Aspose.GIS .NET API
 title: Polygongeometrie maken in C# en intersectie controleren met Aspose.GIS voor
@@ -14,44 +14,47 @@ weight: 11
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Polygongeometrie maken in C# en intersectie controleren met Aspose.GIS voor .NET
+# Polygon‑geometrie maken in C# en intersectie controleren met Aspose.GIS voor .NET
 
 ## Inleiding
-Als je **polygongeometrie C#** wilt maken en snel wilt bepalen of twee vormen elkaar overlappen, biedt Aspose.GIS voor .NET een nette, high‑performance API. In deze gids lopen we het volledige proces door — van het installeren van de bibliotheek tot het gebruik van de `Intersects`‑methode om **overlappende polygonen** te detecteren. Aan het einde kun je polygon‑intersectiecontroles integreren in elke .NET‑applicatie met slechts een paar regels code.
+Als je **polygon‑geometrie C#** moet maken en snel wilt bepalen of twee vormen elkaar overlappen, biedt Aspose.GIS voor .NET een nette, hoog‑presterende API. In deze gids lopen we het volledige proces door – van het installeren van de bibliotheek tot het gebruik van de `Intersects`‑methode om **overlappende polygonen** te detecteren. Aan het einde kun je polygon‑intersectiecontroles integreren in elke .NET‑applicatie met slechts een paar regels code.
 
 ## Snelle antwoorden
-- **Wat doet de Intersects‑methode?** Het retourneert `true` wanneer twee geometrieën een gemeenschappelijk gebied delen.  
-- **Welke namespace bevat polygonkl?** `Aspose.Gis.Geometries`.  
+- **Wat doet de Intersects‑methode?** Ze retourneert `true` wanneer twee geometrieën een gemeenschappelijk gebied delen.  
+- **Welke namespace bevat polygon‑klassen?** `Aspose.Gis.Geometries`.  
 - **Heb ik een licentie nodig voor ontwikkeling?** Een gratis proefversie werkt voor testen; een commerciële licentie is vereist voor productie.  
 - **Kan ik dit gebruiken met .NET Core / .NET 6+?** Ja, Aspose.GIS ondersteunt alle moderne .NET‑runtimes.  
-- **Hoe lang duurt het om het voorbeeld uit te voeren?** Minder dan een seconde op een typische ontwikkelmachine.
+- **Hoe lang duurt het voorbeeld om uit te voeren?** Minder dan een seconde op een typische ontwikkelmachine.
 
-## Wat is “polygongeometrie maken in C#”?
-Een polygongeometrie maken in C# betekent het instantieren van de `Polygon`‑klasse (of andere geometrische types) die door Aspose.GIS worden geleverd en het leveren van een gesloten ring van `Point`‑objecten die de hoekpunten van definiëren. Eenmaal gebouwd kan de geometrie deelnemen aan ruimtelijke bewerkingen zoals intersectie, containment en afstandsberekeningen.
+## Wat is “polygon geometrie maken C#”?
+Een polygon‑geometrie maken in C# betekent het instantieren van de `Polygon`‑klasse (of andere geometrie‑typen) die door Aspose.GIS worden geleverd en het leveren van een gesloten ring van `Point`‑objecten die de hoekpunten van de vorm definiëren. Eenmaal gebouwd kan de geometrie deelnemen aan ruimtelijke bewerkingen zoals intersectie, containment en afstandsberekeningen.
 
 ## Waarom Aspose.GIS gebruiken om overlappende polygonen te detecteren?
-- **Geen externe afhankelijkheden** – pure .NET bibliotheek, geen native GIS‑installaties.  
-- **Rijke ruimtelijke bewerkingen** – `Intersects`, `Disjoint`, `Contains`, enz., direct klaar voor gebruik.  
+- **Geen externe afhankelijkheden** – pure .NET‑bibliotheek, geen native GIS‑installaties.  
+- **Rijke ruimtelijke bewerkingen** – `Intersects`, `Disjoint`, `Contains`, enz., allemaal direct beschikbaar.  
 - **Hoge nauwkeurigheid** – robuuste afhandeling van randgevallen zoals gedeelde randen of hoekpunten.  
-- **Cross‑platform** – werkt op Windows, Linux en macOS met .NET Core/5/6.
+- **Cross‑platform** – werkt op Windows, Linux en macOS met .NET Core/5/6.  
 
-## Voorvereisten
-Voordat je begint, zorg dat je het volgende hebt:
+### Waarom dit belangrijk is
+Het programmatisch kunnen controleren of twee geografische gebieden elkaar kruisen is essentieel voor vele real‑world scenario’s: ruimtelijke planning, validatie van bezorgzones, milieueffectanalyse en zelfs botsingsdetectie in game‑ontwikkeling. Met Aspose.GIS kun je deze controles uitvoeren zonder een zware GIS‑server.
 
-1. **Aspose.GIS for .NET** geïnstalleerd (zie de stappen hieronder).  
-2. Een .NET ontwikkelomgeving (Visual Studio, VS Code of Rider).  
+## Vereisten
+Zorg ervoor dat je het volgende hebt voordat je begint:
+
+1. **Aspose.GIS voor .NET** geïnstalleerd (zie de stappen hieronder).  
+2. Een .NET‑ontwikkelomgeving (Visual Studio, VS Code of Rider).  
 3. .NET Framework 4.6+ of .NET Core 3.1+.
 
-### Installing Aspose.GIS for .NET
-1. Navigeer naar de downloadpagina: Bezoek [Aspose.GIS for .NET download page](https://releases.aspose.com/gis/net/) om de nieuwste versie van de toolkit te verkrijgen.  
-2. Download de toolkit: Selecteer de juiste versie die compatibel is met uw ontwikkelomgeving en download de toolkit.  
-3. Installeer de toolkit: Volg de meegeleverde installatie‑instructies om Aspose.GIS for .NET op uw ontwikkelmachine te installeren.
+### Aspose.GIS voor .NET installeren
+1. Navigeer naar de Downloadpagina: Bezoek de [Aspose.GIS for .NET download page](https://releases.aspose.com/gis/net/) om de nieuwste versie van de toolkit te verkrijgen.  
+2. Download de Toolkit: Selecteer de juiste versie die compatibel is met jouw ontwikkelomgeving en download de toolkit.  
+3. Installeer de Toolkit: Volg de installatie‑instructies die worden meegeleverd om Aspose.GIS voor .NET op je ontwikkelmachine te installeren.
 
 ## Namespaces importeren
-Om met Aspose.GIS for .NET te werken, moet je de benodigde namespaces in je project importeren.
+Om met Aspose.GIS voor .NET te werken, moet je de benodigde namespaces in je project importeren.
 
-1. Referenties toevoegen: Voeg in uw project referenties toe aan de Aspose.GIS‑assembly.  
-2. Namespaces importeren: Importeer de benodigde namespaces in uw code‑bestand. Voor het gegeven voorbeeld, zorg ervoor dat u de volgende namespaces importeert:
+1. Referenties toevoegen: Voeg in je project referenties toe naar de Aspose.GIS‑assembly.  
+2. Namespaces importeren: Importeer de vereiste namespaces in je code‑bestand. Voor het gegeven voorbeeld moet je de volgende namespaces importeren:
 
 ```csharp
 using Aspose.Gis.Geometries;
@@ -62,8 +65,8 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## Hoe polygongeometrie maken in C# met Aspose.GIS?
-Nu de omgeving klaar is, laten we twee eenvoudige polygongeometrieën maken die we later op overlapping gaan testen.
+## Hoe polygon geometrie maken C# met Aspose.GIS?
+Nu de omgeving klaar is, laten we twee eenvoudige polygon‑geometrieën maken die we later op overlap gaan testen.
 
 ### Stap 1: Geometrieën definiëren
 In deze stap maak je polygonen die twee rechthoekige gebieden vertegenwoordigen. De hoekpunten worden gedefinieerd in een klokrichting, en het eerste punt wordt aan het einde herhaald om de ring te sluiten.
@@ -95,8 +98,8 @@ Console.WriteLine(geometry1.Intersects(geometry2)); // True
 Console.WriteLine(geometry2.Intersects(geometry1)); // True
 ```
 
-### Stap 3: Controleren op gescheiden geometrieën (het tegenovergestelde van intersectie)
-Als je moet bevestigen dat twee vormen **niet** overlappen, biedt de `Disjoint`‑methode het inverse resultaat.
+### Stap 3: Controleren op gescheiden geometrieën (het tegenovergestelde van intersect)
+Als je wilt bevestigen dat twee vormen **niet** overlappen, levert de `Disjoint`‑methode het inverse resultaat.
 
 ```csharp
 // 'Disjoint' is opposite to 'Intersects'
@@ -105,27 +108,36 @@ Console.WriteLine(geometry1.Disjoint(geometry2)); // False
 
 ## Veelvoorkomende problemen en oplossingen
 | Probleem | Waarom het gebeurt | Oplossing |
-|----------|--------------------|----------|
-| **Altijd `false`** | De polygonen zijn niet gesloten (eerste punt ≠ laatste punt). | Zorg ervoor dat het eerste punt wordt herhaald aan het einde van de coördinatenarray. |
-| **Onverwacht `true` voor aangrenzende randen** | `Intersects` beschouwt gedeelde randen als intersectie. | Gebruik de `Touches`‑methode als u alleen randdetectie nodig heeft. |
-| **Prestatie‑vertraging bij veel polygonen** | Elke oproep controleert elk vertex‑paar. | Batchverwerking met `GeometryCollection` of ruimtelijke indexering (R‑tree) indien ondersteund. |
+|----------|--------------------|-----------|
+| **Retourneert altijd `false`** | De polygonen zijn niet gesloten (eerste punt ≠ laatste punt). | Zorg ervoor dat het eerste punt aan het einde van de coördinatenarray wordt herhaald. |
+| **Onverwacht `true` bij aangrenzende randen** | `Intersects` beschouwt gedeelde randen als intersectie. | Gebruik de `Touches`‑methode als je alleen randdetectie nodig hebt. |
+| **Prestatie‑vertraging bij veel polygonen** | Elke oproep controleert elk hoekpunt‑paar. | Verwerk in batches met `GeometryCollection` of ruimtelijke indexering (R‑tree) indien ondersteund. |
 
 ## Veelgestelde vragen
 
-**Q: Kan ik Aspose.GIS for .NET gebruiken met andere .NET‑frameworks?**  
-A: Ja, Aspose.GIS for .NET is compatibel met diverse .NET‑frameworks, inclusief .NET Core en .NET Framework.
+**Q:** Kan ik Aspose.GIS voor .NET gebruiken met andere .NET‑frameworks?  
+**A:** Ja, Aspose.GIS voor .NET is compatibel met diverse .NET‑frameworks, inclusief .NET Core en .NET Framework.
 
-**Q: Is er een gratis proefversie beschikbaar voor Aspose.GIS for .NET?**  
-A: Ja, je kunt een gratis proefversie van Aspose.GIS for .NET verkrijgen via [hier](https://releases.aspose.com/).
+**Q:** Is er een gratis proefversie beschikbaar voor Aspose.GIS voor .NET?  
+**A:** Ja, je kunt een gratis proefversie van Aspose.GIS voor .NET krijgen [hier](https://releases.aspose.com/).
 
-**Q: Waar kan ik ondersteuning vinden voor Aspose.GIS for .NET?**  
-A: Je kunt hulp zoeken en contact opnemen met de community op het [Aspose.GIS forum](https://forum.aspose.com/c/gis/33).
+**Q:** Waar vind ik ondersteuning voor Aspose.GIS voor .NET?  
+**A:** Je kunt hulp zoeken en deelnemen aan de community op het [Aspose.GIS forum](https://forum.aspose.com/c/gis/33).
 
-**Q: Kan ik een tijdelijke licentie verkrijgen voor Aspose.GIS for .NET?**  
-A: Ja, je kunt een tijdelijke licentie verkrijgen via [hier](https://purchase.aspose.com/temporary-license/).
+**Q:** Kan ik een tijdelijke licentie verkrijgen voor Aspose.GIS voor .NET?  
+**A:** Ja, een tijdelijke licentie kun je verkrijgen [hier](https://purchase.aspose.com/temporary-license/).
 
-**Q: Waar kan ik een gelicentieerde versie van Aspose.GIS for .NET kopen?**  
-A: Je kunt een gelicentieerde versie van Aspose.GIS for .NET kopen via [hier](https://purchase.aspose.com/buy).
+**Q:** Waar kan ik een gelicentieerde versie van Aspose.GIS voor .NET kopen?  
+**A:** Een gelicentieerde versie kun je kopen [hier](https://purchase.aspose.com/buy).
+
+## Conclusie
+Je hebt nu een volledig, productie‑klaar voorbeeld dat laat zien hoe je **polygon geometrie C#** maakt, de **Intersects**‑methode gebruikt om overlappen te detecteren, en gescheiden voorwaarden verifieert. Voel je vrij dit patroon uit te breiden naar grotere geometrieverzamelingen, ruimtelijke indexering toe te passen voor betere prestaties, of te combineren met andere Aspose.GIS‑bewerkingen zoals buffering of ruimtelijke joins.
+
+---
+
+**Laatst bijgewerkt:** 2026-02-05  
+**Getest met:** Aspose.GIS 24.11 voor .NET  
+**Auteur:** Aspose
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
@@ -133,9 +145,3 @@ A: Je kunt een gelicentieerde versie van Aspose.GIS for .NET kopen via [hier](ht
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Laatst bijgewerkt:** 2025-12-03  
-**Getest met:** Aspose.GIS 24.11 for .NET  
-**Auteur:** Aspose

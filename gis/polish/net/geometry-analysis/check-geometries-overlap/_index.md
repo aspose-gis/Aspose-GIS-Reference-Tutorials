@@ -1,10 +1,12 @@
 ---
-date: 2025-12-04
-description: Dowiedz się, jak sprawdzić nakładanie się i wykrywać nakładanie się geometrii
-  przy użyciu Aspose.GIS dla .NET. Przewodnik krok po kroku dla programistów.
+date: 2026-02-05
+description: Dowiedz się, jak przeprowadzić analizę nakładania się przestrzennego
+  i wykrywać nakładające się wielokąty przy użyciu Aspose.GIS dla .NET. Przewodnik
+  krok po kroku dla programistów.
 linktitle: Check Geometries Overlap
 second_title: Aspose.GIS .NET API
-title: Jak sprawdzić nakładanie się geometrii przy użyciu Aspose.GIS dla .NET
+title: Jak przeprowadzić analizę nakładania się geometrii w przestrzeni przy użyciu
+  Aspose.GIS dla .NET
 url: /pl/net/geometry-analysis/check-geometries-overlap/
 weight: 12
 ---
@@ -13,41 +15,39 @@ weight: 12
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Jak sprawdzić nakładanie się geometrii przy użyciu Aspose.GIS
+# Analiza Nakładania się Geometrii z Aspose.GIS
 
 ## Wprowadzenie
 
-Jeśli potrzebujesz **jak sprawdzić nakładanie się** dwóch obiektów przestrzennych, Aspose.GIS dla .NET oferuje czyste, typowo‑bezpieczne API, które wykonuje całą ciężką pracę. Niezależnie od tego, czy budujesz silnik routingu, walidator zagospodarowania terenu, czy prostą usługę GIS, wykrywanie nakładających się geometrii jest powszechnym wymogiem. W tym samouczku przeprowadzimy Cię przez wszystko, co musisz wiedzieć – wymagania wstępne, przegląd kodu i praktyczne wskazówki – abyś mógł pewnie odpowiedzieć na pytanie *jak wykrywać nakładanie* w własnych projektach.
+Jeśli potrzebujesz **jak sprawdzić nakładanie się** dwóch cech przestrzennych, Aspose.GIS dla .NET zapewnia czyste, typowo‑bezpieczne API, które wykonuje ciężką pracę. Niezależnie od tego, czy tworzysz silnik routingu, walidator zagospodarowania terenu, czy prostą usługę GIS, przeprowadzanie analizy nakładania się jest powszechnym wymogiem. W tym samouczku przeprowadzimy Cię przez wszystko, co musisz wiedzieć — wymagania wstępne, przegląd kodu i praktyczne wskazówki — abyś mógł pewnie odpowiedzieć na pytanie *jak wykryć nakładanie się* w swoich projektach.
 
 ## Szybkie odpowiedzi
 - **Jaka jest podstawowa metoda?** `Geometry.Overlaps(otherGeometry)`  
-- **Czy potrzebna jest licencja do testów?** Darmowa wersja próbna działa w fazie rozwoju; licencja jest wymagana w produkcji.  
-- **Jakie wersje .NET są obsługiwane?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6+.  
-- **Jak długo trwa implementacja?** Około 5‑10 minut dla podstawowego sprawdzenia nakładania.  
-- **Czy mogę używać tego z innymi bibliotekami GIS?** Tak – Aspose.GIS integruje się płynnie z większością stosów GIS w .NET.
+- **Czy potrzebna jest licencja do testów?** Darmowa wersja próbna działa w środowisku deweloperskim; licencja jest wymagana w produkcji.  
+- **Jakie wersje .NET są wspierane?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6+.  
+- **Jak długo trwa implementacja?** Około 5‑10 minut dla podstawowego sprawdzenia nakładania się.  
+- **Czy mogę używać tego z innymi bibliotekami GIS?** Tak — Aspose.GIS integruje się płynnie z większością stosów .NET GIS.
 
-## Co oznacza „jak sprawdzić nakładanie” w GIS?
+## Czym jest analiza nakładania się przestrzennego?
 
-W analizie przestrzennej *nakładanie* oznacza, że dwie geometrie współdzielą pewne punkty wewnętrzne, ale żadna z nich nie zawiera w całości drugiej. Predykat `Overlaps` stosuje definicję OGC (Open Geospatial Consortium) i zwraca **true** wyłącznie wtedy, gdy istnieje dokładnie taki związek.
+W analizie przestrzennej *nakładanie się* oznacza, że dwie geometrie współdzielą pewne punkty wewnętrzne, ale żadna z nich nie zawiera w pełni drugiej. Predykat `Overlaps` stosuje definicję OGC (Open Geospatial Consortium) i zwraca **true** tylko wtedy, gdy istnieje dokładnie taki związek.
 
 ## Dlaczego używać Aspose.GIS do wykrywania nakładania się?
 
-- **Zero‑zależności** – Nie wymaga natywnych bibliotek ani usług zewnętrznych.  
-- **Bogaty model geometrii** – Obsługuje punkty, linie, wielokąty i geometrie wielokrotne od razu po wyjęciu z pudełka.  
-- **Wydajność zoptymalizowana** – Zaprojektowany pod duże zbiory danych i scenariusze czasu rzeczywistego.  
-- **Cross‑platform** – Działa na Windows, Linux i macOS z .NET Core.
+- **Zero‑zależności** – nie wymaga natywnych bibliotek ani usług zewnętrznych.  
+- **Bogaty model geometrii** – obsługuje punkty, linie, wielokąty i wielogometry od razu.  
+- **Zoptymalizowana wydajność** – zaprojektowana dla dużych zbiorów danych i scenariuszy w czasie rzeczywistym.  
+- **Wieloplatformowa** – działa na Windows, Linux i macOS z .NET Core.  
 
 ## Wymagania wstępne
 
-Zanim zaczniesz, upewnij się, że masz:
-
-1. **Podstawy C#** – Powinieneś być pewny w klasach, metodach i wyjściu konsoli.  
-2. **Aspose.GIS dla .NET** – Pobierz i zainstaluj go z oficjalnej strony [here](https://releases.aspose.com/gis/net/).  
-3. **IDE kompatybilne z .NET** – Visual Studio, Rider lub VS Code z rozszerzeniem C#.
+1. **Podstawy C#** – powinieneś być pewny w pracy z klasami, metodami i wyjściem konsoli.  
+2. **Aspose.GIS for .NET** – pobierz i zainstaluj ze strony oficjalnej [here](https://releases.aspose.com/gis/net/).  
+3. **IDE kompatybilne z .NET** – Visual Studio, Rider lub VS Code z rozszerzeniem C#.  
 
 ## Importowanie przestrzeni nazw
 
-Dodaj wymagane instrukcje `using`, aby uzyskać dostęp do typów geometrii Aspose.GIS.
+Dodaj wymagane instrukcje `using`, aby Twój kod miał dostęp do typów geometrii Aspose.GIS.
 
 ```csharp
 using Aspose.Gis.Geometries;
@@ -57,8 +57,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 ```
-
-Teraz przejdziemy do praktycznego przykładu, który pokaże **jak sprawdzić nakładanie** krok po kroku.
 
 ## Krok 1: Zdefiniuj geometrie, które chcesz porównać
 
@@ -76,7 +74,7 @@ geometry2.AddPoint(0, 3);
 
 ## Krok 2: Użyj metody `Overlaps` – pierwsze sprawdzenie
 
-Metoda `Overlaps` zwraca `false`, ponieważ linie dotykają się jedynie w jednym punkcie.
+Metoda `Overlaps` zwraca `false`, ponieważ linie jedynie stykają się w jednym punkcie.
 
 ```csharp
 Console.WriteLine(geometry1.Overlaps(geometry2)); // Output: False
@@ -92,43 +90,43 @@ geometry3.AddPoint(0, 1);
 geometry3.AddPoint(0, 3);
 ```
 
-## Krok 4: Sprawdź nakładanie ponownie – tym razem powinno zwrócić true
+## Krok 4: Sprawdź nakładanie się ponownie – tym razem powinno zwrócić true
 
 ```csharp
 Console.WriteLine(geometry1.Overlaps(geometry3)); // Output: True
 ```
 
-### Jak wykrywać nakładanie w bardziej złożonych przypadkach?
+### Jak wykrywać nakładanie się w bardziej złożonych przypadkach?
 
-Jeśli pracujesz z wielokątami, geometrami wielokrotnymi lub musisz uwzględnić tolerancję, ta sama metoda `Overlaps` ma zastosowanie. Wystarczy zamienić `LineString` na `Polygon`, `MultiPolygon` itp., a predykat obsłuży typ geometrii wewnętrznie.
+Jeśli pracujesz z wielokątami, wielogometriami lub musisz uwzględnić tolerancję, ta sama metoda `Overlaps` ma zastosowanie. Wystarczy zamienić `LineString` na `Polygon`, `MultiPolygon` itp., a predykat obsłuży typ geometrii wewnętrznie. Jest to szczególnie przydatne w scenariuszach **check overlapping polygons** oraz ogólnych zadaniach **gis overlap check**.
 
 ## Typowe problemy i rozwiązania
 
 | Problem | Dlaczego się pojawia | Rozwiązanie |
-|---------|----------------------|-------------|
-| **Zawsze zwraca `false`** | Geometrie jedynie się dotykają (dzielą granicę), a nie nakładają. | Użyj `Intersects` dla dowolnego wspólnego punktu lub zmodyfikuj współrzędne, aby ich wnętrza się przecinały. |
-| **Wyjątek przy dużych zbiorach danych** | Nacisk na pamięć przy ładowaniu wielu geometrii jednocześnie. | Przetwarzaj geometrie partiami lub użyj `GeometryCollection` ze strumieniowaniem. |
-| **Nieoczekiwane `true` dla wielokątów** | Wnętrza wielokątów przecinają się, ale dzielą krawędź. | Sprawdź, czy naprawdę potrzebujesz definicji OGC *overlaps*; w innym wypadku użyj `Crosses` lub `Touches`. |
+|-------|----------------|-----|
+| **Always returns `false`** | Geometrie jedynie się stykają (dzielą granicę), a nie nakładają. | Użyj `Intersects` dla dowolnego wspólnego punktu lub dostosuj współrzędne, aby wnętrza się przecinały. |
+| **Exception on large datasets** | Nacisk na pamięć przy ładowaniu wielu geometrii jednocześnie. | Przetwarzaj geometrie w partiach lub użyj `GeometryCollection` ze strumieniowaniem. |
+| **Unexpected `true` for polygons** | Wnętrza wielokątów przecinają się, ale dzielą krawędź. | Zweryfikuj, czy naprawdę potrzebujesz definicji OGC *overlaps*; w przeciwnym razie użyj `Crosses` lub `Touches`. |
 
 ## Najczęściej zadawane pytania
 
-**Q1: Czy mogę używać Aspose.GIS dla .NET z innymi bibliotekami .NET?**  
-A1: Tak, Aspose.GIS dla .NET płynnie integruje się z innymi bibliotekami .NET, rozszerzając ich możliwości.
+**Q1: Czy mogę używać Aspose.GIS for .NET z innymi bibliotekami .NET?**  
+A1: Tak, Aspose.GIS for .NET płynnie integruje się z innymi bibliotekami .NET, rozszerzając ich możliwości.
 
-**Q2: Czy dostępna jest darmowa wersja próbna Aspose.GIS dla .NET?**  
-A2: Tak, darmową wersję próbną Aspose.GIS dla .NET można pobrać [here](https://releases.aspose.com/).
+**Q2: Czy dostępna jest darmowa wersja próbna Aspose.GIS for .NET?**  
+A2: Tak, możesz uzyskać darmową wersję próbną Aspose.GIS for .NET [here](https://releases.aspose.com/).
 
-**Q3: Gdzie mogę znaleźć dokumentację Aspose.GIS dla .NET?**  
-A3: Kompleksowa dokumentacja Aspose.GIS dla .NET jest dostępna [here](https://reference.aspose.com/gis/net/).
+**Q3: Gdzie mogę znaleźć dokumentację Aspose.GIS for .NET?**  
+A3: Kompleksowa dokumentacja Aspose.GIS for .NET jest dostępna [here](https://reference.aspose.com/gis/net/).
 
-**Q4: Jak mogę uzyskać tymczasowe licencje dla Aspose.GIS dla .NET?**  
-A4: Tymczasowe licencje dla Aspose.GIS dla .NET można uzyskać [here](https://purchase.aspose.com/temporary-license/).
+**Q4: Jak mogę uzyskać tymczasowe licencje dla Aspose.GIS for .NET?**  
+A4: Tymczasowe licencje dla Aspose.GIS for .NET można uzyskać [here](https://purchase.aspose.com/temporary-license/).
 
-**Q5: Gdzie mogę uzyskać wsparcie dla Aspose.GIS dla .NET?**  
-A5: Wszelką pomoc i pytania można kierować na forum Aspose.GIS [here](https://forum.aspose.com/c/gis/33).
+**Q5: Gdzie mogę uzyskać wsparcie dla Aspose.GIS for .NET?**  
+A5: W razie pytań lub problemów odwiedź forum Aspose.GIS [here](https://forum.aspose.com/c/gis/33).
 
-**Ostatnia aktualizacja:** 2025-12-04  
-**Testowano z:** Aspose.GIS 24.11 dla .NET  
+**Ostatnia aktualizacja:** 2026-02-05  
+**Testowano z:** Aspose.GIS 24.11 for .NET  
 **Autor:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}

@@ -1,10 +1,10 @@
 ---
-date: 2025-12-06
-description: Aspose.GIS for .NET を使用して、GeoJSON をグループ化付きで TopoJSON に変換し、オブジェクト名属性を設定し、GeoJSON
-  のフィーチャをグループ化する方法を学びましょう。
+date: 2026-02-05
+description: Aspose.GIS for .NET を使用して、グルーピング、オブジェクト名属性の設定、GeoJSON フィーチャのグループ化を行いながら、**geojson
+  を topojson に変換**する方法を学びましょう。
 linktitle: How to Convert GeoJSON to TopoJSON with Grouping using Aspose.GIS
 second_title: Aspose.GIS .NET API
-title: Aspose.GIS を使用したグルーピング付き GeoJSON から TopoJSON への変換方法
+title: Aspose.GIS を使用して、グループ化付きで GeoJSON を TopoJSON に変換する方法
 url: /ja/net/geo-data-conversion/convert-geojson-to-topojson-with-grouping/
 weight: 13
 ---
@@ -13,63 +13,69 @@ weight: 13
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.GIS を使用した属性でグループ化する GeoJSON から TopoJSON への変換方法
+# Aspose.GIS を使用したグループ化付き GeoJSON から TopoJSON への変換方法
 
 ## はじめに
+このステップバイステップのチュートリアルでは、**GeoJSON** ファイルを属性に基づいてフィーチャをグループ化しながら **TopoJSON** に変換する方法を学びます。Aspose.GIS .NET API を使用すれば、変換は高速で信頼性が高く、C# コードから完全に制御できます。ASP.NET GeoJSON 変換サービスやデスクトップ GIS ツールを構築する場合でも、本ガイドは **convert geojson to topojson** を効率的に行うために必要な手順をすべて示します。
 
-このステップバイステップのチュートリアルでは、**GeoJSON** ファイルを **TopoJSON** に変換し、選択した属性に基づいてフィーチャをグループ化する方法を学びます。Aspose.GIS .NET API を使用すれば、変換は高速で信頼性が高く、C# コードから完全に制御できます。ASP.NET GeoJSON 変換サービスやデスクトップ GIS ツールを構築する場合でも、本ガイドに従うだけで必要な手順がすべて分かります。
+## よくある質問
+- **What library handles the conversion?** Aspose.GIS for .NET  
+- **How long does the implementation take?** Typically 5‑10 minutes for a basic setup  
+- **Do I need a license for production?** Yes, a commercial license is required (free trial available)  
+- **Can I group features by any attribute?** Yes – set the `ObjectNameAttribute` to the field you want to group by  
+- **Is .NET Core supported?** Absolutely – the API works with .NET Core, .NET 5/6, and the classic .NET Framework  
 
-## クイック回答
-- **変換を担当するライブラリは？** Aspose.GIS for .NET  
-- **実装にかかる時間は？** 基本的なセットアップで通常 5‑10 分程度  
-- **本番環境でライセンスは必要？** はい、商用ライセンスが必要です（無料トライアルあり）  
-- **任意の属性でフィーチャをグループ化できるか？** はい – `ObjectNameAttribute` にグループ化したいフィールドを設定します  
-- **.NET Core はサポートされているか？** もちろんです – API は .NET Core、.NET 5/6、従来の .NET Framework でも動作します  
+## C# でグループ化機能を使って GeoJSON を TopoJSON に変換する方法
+以下では、必要な手順を正確に解説します。プロセスはシンプルです：ソースと出力ファイルを定義し、グループ化オプションを設定し、Aspose.GIS に処理を任せます。
 
 ## GeoJSON と TopoJSON とは？
 
-GeoJSON は、ポイント、ライン、ポリゴンなどの地理的フィーチャをエンコードするために広く使用されている JSON 形式です。TopoJSON は GeoJSON を拡張し、トポロジー（共有線分）を保持することでファイルサイズを削減し、複雑な地図の描画性能を向上させます。Web 可視化用にコンパクトな地図データが必要なときに、両者間の変換は一般的な作業です。
+GeoJSON は、ポイント、ライン、ポリゴンなどの地理的フィーチャをエンコードするために広く使用されている JSON 形式です。TopoJSON は GeoJSON を拡張し、トポロジー（共有線分）を保持することでファイルサイズを削減し、複雑な地図の描画性能を向上させます。Web 可視化用にコンパクトな地図データが必要なときに、両者の変換は一般的なステップです。
 
-## なぜ GeoJSON フィーチャをグループ化するのか？
+## GeoJSON フィーチャをグループ化する理由
 
-`group geojson features`（GeoJSON フィーチャのグループ化）により、結果の TopoJSON 内で関連するジオメトリを単一の名前付きオブジェクトにまとめることができます。これは次のようなケースで特に有用です。
-- 異なる行政区画ごとに別レイヤーを作成したい場合  
-- フロントエンドのマッピングライブラリがスタイリングやインタラクションのために名前付きオブジェクトを期待している場合  
-- 隣接するフィーチャ間で境界線を共有し、重複を削減したい場合  
+グループ化（`group geojson features`）により、結果の TopoJSON 内で関連するジオメトリを単一の名前付きオブジェクトにまとめられます。これは次のようなケースで特に有用です：
+- 異なる行政区画ごとに別々のレイヤーを作成したい場合。  
+- フロントエンドのマッピングライブラリがスタイリングやインタラクションのために名前付きオブジェクトを期待している場合。  
+- 隣接フィーチャ間で境界線を共有することで重複を削減したい場合。
+
+## グループ化のためのオブジェクト名属性の設定
+
+`ObjectNameAttribute` は、ソース GeoJSON のどのプロパティを TopoJSON 出力時のオブジェクト名として使用するかを Aspose.GIS に指示します。この属性を正しく設定することが、**group geojson features** を成功させる鍵です。
 
 ## 前提条件
 
-作業を始める前に、以下の項目をご用意ください。
+開始する前に、以下の前提条件を確認してください：
 
-1. **Aspose.GIS for .NET** – 公式サイトから[こちら](https://releases.aspose.com/gis/net/)でダウンロードしてインストールします。  
-2. **開発環境** – Visual Studio、Visual Studio Code、または C# をサポートする任意の IDE  
-3. **サンプル GeoJSON ファイル** – 変換したいフィーチャが含まれるファイル  
+1. **Aspose.GIS for .NET** – 公式サイトから [here](https://releases.aspose.com/gis/net/) でダウンロードしてインストール。  
+2. **Development Environment** – Visual Studio、Visual Studio Code、または C# をサポートする任意の IDE。  
+3. **Sample GeoJSON File** – 変換したいフィーチャを含むファイル。  
 
 ## 名前空間のインポート
 
-プロジェクトに必要な名前空間を追加します。
+まず、プロジェクトに必要な名前空間をインクルードします：
 
 ```csharp
 using Aspose.Gis;
 using Aspose.Gis.Formats.TopoJson;
 ```
 
-## 手順ガイド
+## ステップバイステップガイド
 
-### 手順 1: ファイルパスの定義
+### ステップ1：ファイルパスの定義
 
-ソの GeoJSON が存在する場所と、TopoJSON を書き出す先を指定します。
+ソース GeoJSON の場所と TopoJSON の出力先を指定します：
 
 ```csharp
 string sampleGeoJsonPath = "Your Document Directory" + "sample.geojson";
 var outputFilePath = "Your Document Directory" + "convertedSampleWithGrouping_out.topojson";
 ```
 
-> **プロのコツ:** .NET Core を対象にする場合は、`Path.Combine` を使ってクロスプラットフォームなパス構築を行いましょう。
+> **Pro tip:** .NET Core を対象とする場合は、`Path.Combine` を使用してクロスプラットフォームなパス構築を行いましょう。
 
-### 手順 2: 変換オプションの設定（オブジェクト名属性の指定）
+### ステップ2：変換オプションの設定（オブジェクト名属性の設定）
 
-`ConversionOptions` インスタンスを作成し、Aspose.GIS にフィーチャのグループ化方法を指示します。
+`ConversionOptions` インスタンスを作成し、フィーチャのグループ化方法を Aspose.GIS に指示します：
 
 ```csharp
 var options = new ConversionOptions
@@ -84,42 +90,68 @@ var options = new ConversionOptions
 };
 ```
 
-`"group"` を、**geojson フィーチャのグループ化** に使用したい実際のプロパティ名に置き換えてください。`DefaultObjectName` は、属性が存在しない場合でもすべてのフィーチャが TopoJSON のオブジェクトに割り当てられるようにします。
+`"group"` を、**geojson feature grouping** に使用したい実際のプロパティ名に置き換えてください。`DefaultObjectName` は、属性が欠落している場合でもすべてのフィーチャが TopoJSON オブジェクトに割り当てられることを保証します。
 
-### 手順 3: 変換の実行（GeoJSON から TopoJSON へ）
+### ステップ3：変換の実行（GeoJSONからTopoJSONへの変換）
 
-単一の API 呼び出しで変換を実行します。
+単一の API 呼び出しで変換を実行します：
 
 ```csharp
 VectorLayer.Convert(sampleGeoJsonPath, Drivers.GeoJson, outputFilePath, Drivers.TopoJson, options);
 ```
 
-実行後、`convertedSampleWithGrouping_out.topojson` に属性でグループ化された TopoJSON 表現が保存されます。
+実行後、`convertedSampleWithGrouping_out.topojson` に属性で指定した通りにフィーチャがグループ化された TopoJSON が生成されます。
 
 ## よくある問題とトラブルシューティング
 
-| 症状 | 考えられる原因 | 対処方法 |
-|------|----------------|----------|
-| **すべてのフィーチャが「unnamed」になる** | `ObjectNameAttribute` が GeoJSON のプロパティと一致していない | 正確なプロパティ名（大文字小文字を含む）を確認し、オプションを更新 |
-| **出力ファイルが空になる** | ファイルパスが誤っている、または読み取り権限がない | 絶対パスを使用するか、アプリにファイルシステムへのアクセス権を付与 |
-| **変換時に `NotSupportedException` がスローされる** | サポート外のジオメトリタイプ（例: GeometryCollection）を含む GeoJSON を変換しようとしている | ソースデータを簡素化するか、最新バージョンの Aspose.GIS にアップデート |
+| 症状 | 考えられる原因 | 解決策 |
+|---------|--------------|-----|
+| **All features end up in “unnamed”** | `ObjectNameAttribute` が GeoJSON のプロパティと一致しない | 正確なプロパティ名（大文字小文字を区別）を確認し、オプションを更新する |
+| **Output file is empty** | ファイルパスが正しくない、または読み取り権限がない | 絶対パスを使用するか、アプリがファイルシステムへのアクセス権を持っていることを確認する |
+| **Conversion throws `NotSupportedException`** | サポートされていないジオメトリタイプ（例: GeometryCollection）を含む GeoJSON を変換しようとしている | ソースデータを簡素化するか、最新の Aspose.GIS バージョンにアップグレードする |
 
-## FAQ（よくある質問）
+## C# GeoJSON変換のベストプラクティス
 
-**Q: 複数の属性でフィーチャをグループ化できますか？**  
-A: はい、複数のフィールドを結合して仮想属性を作成するか、異なる `ObjectNameAttribute` を指定して複数回変換することで実できます。
+- **変換前にソースGeoJSONを検証**して、属性の欠落を早期に検出します。
 
-**Q: Aspose.GIS は ASP.NET Core と互換性がありますか？**  
-A: もちろんです – ライブラリは ASP.NET Core、.NET 5、.NET 6、従来の .NET Framework で動作します。
+- **ファイルパスには`Path.Combine`**を使用して、プラットフォーム固有の区切り文字の問題を回避します。
 
-**Q: GeoJSON 以外の地理フォーマットも変換できますか？**  
-A: はい、Aspose.GIS は Shapefile、KML、GML、CSV など多数のフォーマットのインポート・エクスポートをサポートしています。
+- **変換呼び出しをtry-catchブロックで囲む**ことで、I/Oエラーを適切に処理します。
 
-**Q: Aspose.GIS の無料トライアルはありますか？**  
-A: はい、[こちら](https://releases.aspose.com/)から無料トライアルを取得できます。
+- **`DefaultObjectName`の出現箇所をログに記録**します。これは、上流で修正すべきデータ品質の問題を示している可能性があります。
 
-**Q: Aspose.GIS のサポートはどこで受けられますか？**  
-A: Aspose.GIS コミュニティフォーラムは[こちら](https://forum.aspose.com/c/gis/33)から利用できます。
+## よくある質問
+
+**Q: 複数の属性に基づいてフィーチャをグループ化できますか？** 
+
+A: はい、複数のフィールドを単一の仮想属性に連結するか、異なる`ObjectNameAttribute`値を使用して複数の変換パスを実行できます。
+
+**Q: Aspose.GISはASP.NET Coreと互換性がありますか？** 
+
+A: はい、互換性があります。このライブラリは、ASP.NET Core、.NET 5、.NET 6、および従来の.NET Frameworkで動作します。
+
+
+**Q: GeoJSON以外の地理情報フォーマットも変換できますか？** 
+
+A: はい、Aspose.GISはShapefile、KML、GML、CSVなど、インポートとエクスポートの両方で多くのフォーマットをサポートしています。
+
+**Q: Aspose.GISの無料トライアルはありますか？** 
+
+A: はい、[こちら](https://releases.aspose.com/)からAspose.GISの無料トライアルをご利用いただけます。
+
+**Q: Aspose.GISのサポートはどこで受けられますか？**
+
+ A: Aspose.GISコミュニティフォーラム[こちら](https://forum.aspose.com/c/gis/33)でサポートを受けることができます。
+
+## まとめ
+
+これで、Aspose.GIS for .NETを使用してフィーチャグループ分けを行い、**GeoJSONからTopoJSONへの変換**を行うための、本番環境ですぐに使える完全な手順がわかりました。`ObjectNameAttribute`を設定することで、フィーチャの整理方法を制御でき、Webマップでのスタイリングや操作が簡素化されます。他のドライバーを試したり、さまざまなグループ化属性を試したり、この変換をより大規模なGISパイプラインに統合したりすることも可能です。
+
+---
+
+**最終更新日:** 2026年2月5日
+**テスト環境:** Aspose.GIS for .NET (最新リリース)
+**作成者:** Aspose 
 
 ---
 
@@ -129,9 +161,3 @@ A: Aspose.GIS コミュニティフォーラムは[こちら](https://forum.aspo
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
-**最終更新日:** 2025-12-06  
-**テスト環境:** Aspose.GIS for .NET（最新リリース）  
-**作者:** Aspose  
-
----

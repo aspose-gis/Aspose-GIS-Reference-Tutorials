@@ -1,10 +1,10 @@
 ---
-date: 2025-12-03
-description: เรียนรู้วิธีสร้างรูปหลายเหลี่ยมใน C# และตรวจจับรูปหลายเหลี่ยมที่ทับซ้อนโดยใช้เมธอด
-  Intersects ของ Aspose.GIS สำหรับ .NET
+date: 2026-02-05
+description: เรียนรู้วิธีสร้างเรขาคณิตรูปหลายเหลี่ยมด้วย C# และวิธีใช้ intersects
+  เพื่อตรวจจับรูปหลายเหลี่ยมที่ทับซ้อนกันด้วย Aspose.GIS สำหรับ .NET
 linktitle: Create Polygon Geometry C#
 second_title: Aspose.GIS .NET API
-title: สร้างรูปทรงหลายเหลี่ยมใน C# และตรวจสอบการตัดกันด้วย Aspose.GIS สำหรับ .NET
+title: สร้างเรขาคณิตหลายเหลี่ยมใน C# และตรวจสอบการตัดกันด้วย Aspose.GIS สำหรับ .NET
 url: /th/net/geometry-analysis/check-geometries-intersection/
 weight: 11
 ---
@@ -15,42 +15,45 @@ weight: 11
 
 # สร้าง Polygon Geometry C# และตรวจสอบการตัดกันด้วย Aspose.GIS สำหรับ .NET
 
-## Introduction
-หากคุณต้องการ **สร้าง polygon geometry C#** และต้องการตรวจสอบอย่างรวดเร็วว่ารูปสองรูปทับกันหรือไม่ Aspose.GIS สำหรับ .NET จะมอบ API ที่สะอาดและมีประสิทธิภาพสูง ในคู่มือนี้เราจะเดินผ่านกระบวนการทั้งหมด—from การตั้งค่าห้องสมุดไปจนถึงการใช้เมธอด `Intersects` เพื่อ **ตรวจจับ polygon ที่ทับกัน** เมื่อเสร็จสิ้น คุณจะสามารถผสานการตรวจสอบการตัดกันของ polygon เข้าไปในแอปพลิเคชัน .NET ใด ๆ เพียงไม่กี่บรรทัดของโค้ด
+## บทนำ
+หากคุณต้องการ **สร้าง polygon geometry C#** และต้องการตรวจสอบอย่างรวดเร็วว่ารูปสองรูปทับกันหรือไม่ Aspose.GIS สำหรับ .NET ให้ API ที่สะอาดและมีประสิทธิภาพสูง ในคู่มือนี้เราจะเดินผ่านกระบวนการทั้งหมด — ตั้งแต่การติดตั้งไลบรารีจนถึงการใช้เมธอด `Intersects` เพื่อ **ตรวจจับ polygon ที่ทับกัน** เมื่อเสร็จสิ้น คุณจะสามารถผสานการตรวจสอบการตัดกันของ polygon เข้าไปในแอปพลิเคชัน .NET ใดก็ได้ด้วยเพียงไม่กี่บรรทัดของโค้ด
 
-## Quick Answers
-- **เมธอด Intersects ทำอะไร?** คืนค่า `true` เมื่อสอง geometry มีพื้นที่ร่วมกันใด ๆ  
-- **เนมสเปซใดที่มีคลาส polygon?** `Aspose.Gis.Geometries`  
-- **ต้องใช้ไลเซนส์สำหรับการพัฒนาหรือไม่?** รุ่นทดลองฟรีใช้ได้สำหรับการทดสอบ; ต้องมีไลเซนส์เชิงพาณิชย์สำหรับการใช้งานจริง  
+## คำตอบสั้น
+- **เมธอด Intersects ทำอะไร?** คืนค่า `true` เมื่อเรขาคณิตสองรูปมีพื้นที่ส่วนกลางใด ๆ ร่วมกัน  
+- **เนมสเปซที่มีคลาส polygon อยู่ที่ไหน?** `Aspose.Gis.Geometries`  
+- **ต้องใช้ไลเซนส์สำหรับการพัฒนาหรือไม่?** สามารถใช้รุ่นทดลองฟรีสำหรับการทดสอบ; ต้องมีไลเซนส์เชิงพาณิชย์สำหรับการใช้งานจริง  
 - **สามารถใช้กับ .NET Core / .NET 6+ ได้หรือไม่?** ใช่, Aspose.GIS รองรับ .NET runtime สมัยใหม่ทั้งหมด  
 - **ตัวอย่างใช้เวลารันเท่าไหร่?** น้อยกว่าวินาทีหนึ่งบนเครื่องพัฒนาปกติ
 
-## What is “create polygon geometry C#”?
-การสร้าง polygon geometry ใน C# หมายถึงการสร้างอินสแตนซ์ของคลาส `Polygon` (หรือประเภท geometry อื่น) ที่จัดทำโดย Aspose.GIS และให้ชุด `Point` ปิดวงที่กำหนดจุดยอดของรูปทรง เมื่อสร้างเสร็จ geometry นี้สามารถทำงานร่วมกับการดำเนินการเชิงพื้นที่ต่าง ๆ เช่น การตัดกัน, การบรรจุ, และการคำนวณระยะทาง
+## “สร้าง polygon geometry C#” คืออะไร?
+การสร้าง polygon geometry ใน C# หมายถึงการสร้างอินสแตนซ์ของคลาส `Polygon` (หรือประเภทเรขาคณิตอื่น) ที่มาจาก Aspose.GIS และใส่ชุดของอ็อบเจ็กต์ `Point` ที่ปิดเป็นวงแหวนเพื่อกำหนดจุดยอดของรูป เมื่อสร้างเสร็จ เรขาคณิตนี้สามารถทำงานกับการดำเนินการเชิงพื้นที่ต่าง ๆ เช่น การตัดกัน, การครอบคลุม, และการคำนวณระยะทาง
 
-## Why use Aspose.GIS to detect overlapping polygons?
-- **Zero external dependencies** – ไลบรารี .NET แท้ ๆ ไม่ต้องติดตั้ง GIS แบบเนทีฟ  
-- **Rich spatial operations** – `Intersects`, `Disjoint`, `Contains` ฯลฯ พร้อมใช้  
-- **High accuracy** – จัดการกรณีขอบอย่างแข็งแรง เช่น ขอบหรือจุดยอดที่แชร์กัน  
-- **Cross‑platform** – ทำงานบน Windows, Linux, และ macOS ด้วย .NET Core/5/6
+## ทำไมต้องใช้ Aspose.GIS เพื่อตรวจจับ polygon ที่ทับกัน?
+- **ไม่มีการพึ่งพาภายนอก** – ไลบรารี .NET เพียว ๆ ไม่ต้องติดตั้ง GIS แบบเนทีฟ  
+- **การดำเนินการเชิงพื้นที่ครบครัน** – `Intersects`, `Disjoint`, `Contains` ฯลฯ พร้อมใช้งาน  
+- **ความแม่นยำสูง** – จัดการกรณีขอบเขตพิเศษเช่นขอบหรือจุดยอดที่แชร์กันได้อย่างมั่นคง  
+- **ข้ามแพลตฟอร์ม** – ทำงานบน Windows, Linux, และ macOS ด้วย .NET Core/5/6  
 
-## Prerequisites
-ก่อนเริ่มทำงาน ให้ตรวจสอบว่าคุณมี:
+### ทำไมเรื่องนี้ถึงสำคัญ
+การตรวจสอบว่าเขตพื้นที่สองพื้นที่ทางภูมิศาสตร์ตัดกันหรือไม่โดยอัตโนมัติเป็นสิ่งจำเป็นในหลายสถานการณ์จริง: การวางแผนการใช้ที่ดิน, การตรวจสอบโซนการจัดส่ง, การวิเคราะห์ผลกระทบต่อสิ่งแวดล้อม, และแม้กระทั่งการตรวจจับการชนในเกม การใช้ Aspose.GIS ทำให้คุณทำการตรวจสอบเหล่านี้ได้โดยไม่ต้องพึ่งพา GIS เซิร์ฟเวอร์ที่หนักหน่วง
 
-1. **Aspose.GIS for .NET** ที่ติดตั้งแล้ว (ดูขั้นตอนด้านล่าง)  
-2. สภาพแวดล้อมการพัฒนา .NET (Visual Studio, VS Code, หรือ Rider)  
+## ข้อกำหนดเบื้องต้น
+ก่อนเริ่มทำตามขั้นตอน ให้ตรวจสอบว่าคุณมี:
+
+1. **Aspose.GIS สำหรับ .NET** ติดตั้งแล้ว (ดูขั้นตอนด้านล่าง)  
+2. สภาพแวดล้อมการพัฒนา .NET (Visual Studio, VS Code หรือ Rider)  
 3. .NET Framework 4.6+ หรือ .NET Core 3.1+
 
-### Installing Aspose.GIS for .NET
-1. ไปที่หน้า Download: เยี่ยมชม [Aspose.GIS for .NET download page](https://releases.aspose.com/gis/net/) เพื่อรับเวอร์ชันล่าสุดของเครื่องมือ  
-2. ดาวน์โหลด Toolkit: เลือกเวอร์ชันที่เข้ากันกับสภาพแวดล้อมการพัฒนาของคุณและดาวน์โหลด  
-3. ติดตั้ง Toolkit: ทำตามคำแนะนำการติดตั้งที่ให้มาเพื่อทำการติดตั้ง Aspose.GIS for .NET บนเครื่องของคุณ
+### การติดตั้ง Aspose.GIS สำหรับ .NET
+1. ไปที่หน้าดาวน์โหลด: เยี่ยมชม [Aspose.GIS for .NET download page](https://releases.aspose.com/gis/net/) เพื่อรับเวอร์ชันล่าสุดของชุดเครื่องมือ  
+2. ดาวน์โหลดชุดเครื่องมือ: เลือกเวอร์ชันที่เข้ากันกับสภาพแวดล้อมการพัฒนาของคุณและดาวน์โหลด  
+3. ติดตั้งชุดเครื่องมือ: ปฏิบัติตามคำแนะนำการติดตั้งที่ให้มาเพื่อทำการติดตั้ง Aspose.GIS สำหรับ .NET บนเครื่องของคุณ
 
-## Importing Namespaces
-เพื่อเริ่มทำงานกับ Aspose.GIS for .NET คุณต้องนำเข้าเนมสเปซที่จำเป็นเข้าสู่โปรเจกต์ของคุณ
+## การนำเข้าเนมสเปซ
+เพื่อเริ่มทำงานกับ Aspose.GIS สำหรับ .NET คุณต้องนำเข้าเนมสเปซที่จำเป็นเข้าสู่โปรเจกต์ของคุณ
 
-1. เพิ่ม References: ในโปรเจกต์ของคุณ ให้เพิ่มการอ้างอิงไปยัง assembly ของ Aspose.GIS  
-2. Import Namespaces: นำเข้าเนมสเปซที่ต้องการในไฟล์โค้ดของคุณ สำหรับตัวอย่างนี้ ให้แน่ใจว่าคุณได้นำเข้าดังต่อไปนี้:
+1. เพิ่มอ้างอิง: ในโปรเจกต์ของคุณให้เพิ่มอ้างอิงไปยัง assembly ของ Aspose.GIS  
+2. นำเข้าเนมสเปซ: นำเข้าเนมสเปซที่ต้องการในไฟล์โค้ดของคุณ สำหรับตัวอย่างนี้ให้แน่ใจว่าได้นำเข้าเนมสเปซต่อไปนี้:
 
 ```csharp
 using Aspose.Gis.Geometries;
@@ -61,11 +64,11 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## How to create polygon geometry C# with Aspose.GIS?
-ตอนนี้สภาพแวดล้อมพร้อมแล้ว เรามาสร้าง polygon geometry สองรูปแบบง่าย ๆ ที่เราจะทดสอบการทับกันต่อไป
+## วิธีสร้าง polygon geometry C# ด้วย Aspose.GIS?
+เมื่อสภาพแวดล้อมพร้อมแล้ว เราจะสร้าง polygon geometry สองรูปแบบง่าย ๆ ที่จะใช้ทดสอบการทับกันในขั้นตอนต่อไป
 
-### Step 1: Define Geometries
-ในขั้นตอนนี้ คุณจะสร้าง polygon ที่แทนพื้นที่สี่เหลี่ยมผืนผ้าสองรูป จุดยอดจะถูกกำหนดตามลำดับตามเข็มนาฬิกา และจุดแรกจะทำซ้ำที่ท้ายเพื่อปิดวง
+### ขั้นตอนที่ 1: กำหนดเรขาคณิต
+ในขั้นตอนนี้คุณจะสร้าง polygon ที่แทนพื้นที่สี่เหลี่ยมสองพื้นที่ จุดยอดจะถูกกำหนดตามลำดับตามเข็มนาฬิกา และจุดแรกจะทำซ้ำที่ตำแหน่งสุดท้ายเพื่อปิดวงแหวน
 
 ```csharp
 var geometry1 = new Polygon(new LinearRing(new[]
@@ -86,15 +89,15 @@ var geometry2 = new Polygon(new LinearRing(new[]
 }));
 ```
 
-### Step 2: Use Intersects method to detect overlapping polygons
-เมื่อกำหนด geometry แล้ว เราสามารถเรียกเมธอด `Intersects` ได้ เมธอดนี้ **ใช้ algorithm Intersects** เพื่อตรวจสอบว่ามีส่วนใดของสอง polygon แชร์พื้นที่เดียวกันหรือไม่
+### ขั้นตอนที่ 2: วิธีใช้เมธอด Intersects เพื่อตรวจจับ polygon ที่ทับกัน
+เมื่อกำหนดเรขาคณิตแล้ว เราสามารถเรียกเมธอด `Intersects` ได้ เมธอดนี้ **ใช้ algorithm Intersects** เพื่อตรวจสอบว่ามีส่วนใดของสอง polygon แชร์พื้นที่เดียวกันหรือไม่
 
 ```csharp
 Console.WriteLine(geometry1.Intersects(geometry2)); // True
 Console.WriteLine(geometry2.Intersects(geometry1)); // True
 ```
 
-### Step 3: Check for disjoint geometries (the opposite of intersect)
+### ขั้นตอนที่ 3: ตรวจสอบเรขาคณิตที่แยกจากกัน (ตรงข้ามกับ intersect)
 หากคุณต้องการยืนยันว่ารูปสองรูป **ไม่** ทับกัน เมธอด `Disjoint` จะให้ผลลัพธ์ตรงกันข้าม
 
 ```csharp
@@ -102,29 +105,38 @@ Console.WriteLine(geometry2.Intersects(geometry1)); // True
 Console.WriteLine(geometry1.Disjoint(geometry2)); // False
 ```
 
-## Common Issues and Solutions
-| Issue | Why it Happens | Fix |
-|-------|----------------|-----|
-| **Always returns `false`** | Polygon ไม่ได้ปิด (first point ≠ last point) | ตรวจสอบให้จุดแรกทำซ้ำที่ท้ายของอาร์เรย์พิกัด |
-| **Unexpected `true` for touching edges** | `Intersects` ถือว่าเส้นขอบที่แชร์กันเป็นการตัดกัน | ใช้เมธอด `Touches` หากต้องการตรวจจับเฉพาะการสัมผัสขอบ |
-| **Performance slowdown with many polygons** | แต่ละการเรียกตรวจสอบทุกคู่จุดยอด | ทำการประมวลผลเป็นชุดโดยใช้ `GeometryCollection` หรือดัชนีเชิงพื้นที่ (R‑tree) หากรองรับ |
+## ปัญหาที่พบบ่อยและวิธีแก้
+| ปัญหา | สาเหตุ | วิธีแก้ |
+|-------|--------|--------|
+| **ผลลัพธ์กลับ `false` เสมอ** | Polygon ไม่ปิด (จุดแรก ≠ จุดสุดท้าย) | ตรวจสอบให้แน่ใจว่าจุดแรกทำซ้ำที่ตำแหน่งสุดท้ายของอาร์เรย์พิกัด |
+| **ได้ค่า `true` ที่ไม่คาดคิดเมื่อขอบแตะกัน** | `Intersects` ถือว่าขอบที่แชร์กันเป็นการตัดกัน | ใช้เมธอด `Touches` หากต้องการตรวจจับเฉพาะการแตะขอบ |
+| **ประสิทธิภาพช้าลงเมื่อมี polygon จำนวนมาก** | การเรียกแต่ละครั้งตรวจสอบทุกคู่จุดยอด | ประมวลผลเป็นชุดโดยใช้ `GeometryCollection` หรือดัชนีเชิงพื้นที่ (R‑tree) หากรองรับ |
 
-## Frequently Asked Questions
+## คำถามที่พบบ่อย
 
-**Q: Can I use Aspose.GIS for .NET with other .NET frameworks?**  
-A: Yes, Aspose.GIS for .NET is compatible with various .NET frameworks, including .NET Core and .NET Framework.
+**ถาม:** สามารถใช้ Aspose.GIS สำหรับ .NET กับเฟรมเวิร์ก .NET อื่น ๆ ได้หรือไม่?  
+**ตอบ:** ใช่, Aspose.GIS สำหรับ .NET เข้ากันได้กับเฟรมเวิร์ก .NET หลากหลาย รวมถึง .NET Core และ .NET Framework
 
-**Q: Is there a free trial available for Aspose.GIS for .NET?**  
-A: Yes, you can access a free trial of Aspose.GIS for .NET from [here](https://releases.aspose.com/).
+**ถาม:** มีรุ่นทดลองฟรีสำหรับ Aspose.GIS สำหรับ .NET หรือไม่?  
+**ตอบ:** มี, คุณสามารถเข้าถึงรุ่นทดลองฟรีของ Aspose.GIS สำหรับ .NET ได้จาก [ที่นี่](https://releases.aspose.com/)
 
-**Q: Where can I find support for Aspose.GIS for .NET?**  
-A: You can seek assistance and engage with the community on the [Aspose.GIS forum](https://forum.aspose.com/c/gis/33).
+**ถาม:** จะหาแหล่งสนับสนุนสำหรับ Aspose.GIS สำหรับ .NET ได้จากที่ไหน?  
+**ตอบ:** คุณสามารถขอความช่วยเหลือและเข้าร่วมชุมชนได้ที่ [Aspose.GIS forum](https://forum.aspose.com/c/gis/33)
 
-**Q: Can I obtain a temporary license for Aspose.GIS for .NET?**  
-A: Yes, you can obtain a temporary license from [here](https://purchase.aspose.com/temporary-license/).
+**ถาม:** สามารถขอรับไลเซนส์ชั่วคราวสำหรับ Aspose.GIS สำหรับ .NET ได้หรือไม่?  
+**ตอบ:** ได้, คุณสามารถขอรับไลเซนส์ชั่วคราวได้จาก [ที่นี่](https://purchase.aspose.com/temporary-license/)
 
-**Q: Where can I purchase a licensed version of Aspose.GIS for .NET?**  
-A: You can purchase a licensed version of Aspose.GIS for .NET from [here](https://purchase.aspose.com/buy).
+**ถาม:** จะซื้อเวอร์ชันที่มีไลเซนส์ของ Aspose.GIS สำหรับ .NET ได้จากที่ไหน?  
+**ตอบ:** คุณสามารถซื้อเวอร์ชันที่มีไลเซนส์ของ Aspose.GIS สำหรับ .NET ได้จาก [ที่นี่](https://purchase.aspose.com/buy)
+
+## สรุป
+คุณมีตัวอย่างที่พร้อมใช้งานในระดับผลิตแล้วที่แสดงวิธี **สร้าง polygon geometry C#**, ใช้เมธอด **Intersects** เพื่อตรวจจับการทับกัน, และตรวจสอบเงื่อนไขแยกจากกันแล้ว อย่าลังเลที่จะขยายรูปแบบนี้ไปยังคอลเลกชันเรขาคณิตขนาดใหญ่, ผสานดัชนีเชิงพื้นที่เพื่อเพิ่มประสิทธิภาพ, หรือรวมกับการดำเนินการ Aspose.GIS อื่น ๆ เช่น การบัฟเฟอร์หรือการเชื่อมโยงเชิงพื้นที่
+
+---
+
+**อัปเดตล่าสุด:** 2026-02-05  
+**ทดสอบด้วย:** Aspose.GIS 24.11 for .NET  
+**ผู้เขียน:** Aspose
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
@@ -132,9 +144,3 @@ A: You can purchase a licensed version of Aspose.GIS for .NET from [here](https:
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-12-03  
-**Tested With:** Aspose.GIS 24.11 for .NET  
-**Author:** Aspose

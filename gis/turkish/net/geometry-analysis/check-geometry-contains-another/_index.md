@@ -1,12 +1,12 @@
 ---
-date: 2025-12-04
+date: 2026-02-05
 description: C# kullanarak bir noktanın bir çokgenin içinde olup olmadığını nasıl
   belirleyeceğinizi öğrenin. Bu Aspose.GIS .NET öğreticisi, geometri içinde nokta
   kontrolleri, coğrafi veri analizi .NET teknikleri ve Aspose.GIS .NET ile en iyi
   uygulamaları kapsar.
 linktitle: point inside polygon c# – Check Geometry Contains Another
 second_title: Aspose.GIS .NET API
-title: C#'de Çokgen İçindeki Nokta – Geometri Başkasını İçeriyor mu Kontrol Et
+title: nokta çokgen içinde c# – Geometri başka birini içeriyor mu kontrol et
 url: /tr/net/geometry-analysis/check-geometry-contains-another/
 weight: 14
 ---
@@ -15,44 +15,50 @@ weight: 14
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# point inside polygon c# – Check Geometry Contains Another
+# c# içinde nokta poligon – Geometri İçeriyor mu Kontrolü
 
-## Introduction
-**geospatial analysis .net** projeleri üzerinde çalışıyorsanız, en yaygın görevlerden biri belirli bir konumun (bir noktanın) tanımlı bir alanın (bir çokgenin) içinde olup olmadığını belirlemektir. Bu öğreticide, **Aspose.GIS .NET** kütüphanesini kullanarak **point inside polygon c#** kontrolünü adım adım nasıl yapacağınızı göstereceğiz. Haritalama uygulaması, konuma dayalı hizmet veya mekânsal kapsama mantığı gerektiren herhangi bir çözüm geliştiriyor olun, aşağıdaki kod parçacıkları sizi dakikalar içinde çalışır hâle getirecek.
+## Giriiş
+Eğer **jeo-uzamsal analiz .net** projeleri üzerinde çalışıyorsanız, en yaygın görevlerden biri belirli bir konumun (bir noktanın) tanımlı bir alanın (bir poligonun) içinde olup olmadığının belirlenmesidir. Bu öğreticide, **Aspose.GIS .NET** kütüphanesini kullanarak **point inside polygon c#** kontrol adım adım nasıl kaydedileceğiniz. Haritalama uygulaması, dağınık temelli hizmet veya uzamsal kapsama mantığı çerçevesinde herhangi bir çözüm geliştiriliyor olun, aşağıdaki kodda sizi dakikalar içinde çalışır duruma gelecektir.
 
-## Quick Answers
-- **“point inside polygon c#” ne anlama geliyor?** Bir nokta geometrisinin tamamen bir çokgen geometrisinin içinde yer alması durumunda `true` dönen bir mekânsal sorgudur.  
-- **.NET’te bunu hangi kütüphane sağlıyor?** Aspose.GIS for .NET `SpatiallyContains` ve `Within` metodlarını sunar.  
-- **Lisans gerekir mi?** Ücretsiz deneme sürümü mevcuttur; üretim kullanımı için ticari lisans gereklidir.  
-- **.NET Core / .NET 6+ ile uyumlu mu?** Evet – Aspose.GIS modern .NET çalışma zamanlarını tam olarak destekler.  
-- **Uygulama ne kadar sürer?** Kodu kopyalayıp örneği çalıştırmak yaklaşık 10 dakika sürer.
+## Hızlı Yanıtlar
+- **“point inside polygon c#” ne anlama geliyor?** Bir nokta geometrisinin tamamen bir poligon geometrisinin içinde yer alması durumunda doğru (true) dönen bir uzamsal sorgudur.
+- **Bu .NET'te hangi kütüphane bulunur?** Aspose.GIS for .NET, `SpatiallyContains` ve `Within` yöntemlerini sunar.
+- **Lisans gerekir mi?** Ücretsiz deneme mevcuttur; üretim kullanımı için ticari lisans gereklidir.
+- **.NET Core / .NET 6+ ile uyumlu mu?** Evet – Aspose.GIS modern .NET çalışma zamanlarını tam olarak destekleme.
+- **Uygulama ne kadar sürer?** Kodu kopyalayıp örnek kullanarak yaklaşık 10dakika devam eder.
 
-## What is point inside polygon c#?
-*point inside polygon* testi, bir `Point` nesnesinin koordinatlarının bir `Polygon` nesnesinin sınırları içinde olup olmadığını kontrol eder. C#’ta bu genellikle **Ray Casting** veya **Winding Number** algoritmalarını uygulayan geometri kütüphaneleriyle yapılır. Aspose.GIS bu detayları soyutlayarak basit bir API sunar: `polygon.SpatiallyContains(point)`.
+## C# poligonunun içindeki nokta nedir?
+Bir *point inside polygon* testi, bir `Nokta' nesnesinin koordinatlarının bir `Polygon` nesnesinin yarıçapının içinde olup olmadığını kontrol eder. C#'ta bu genellikle **Ray Casting** veya **Sarım Numarası** eklentilerini uygulayan geometri uygulamalarıyla yapılır. Aspose.GIS bu ayrıntıları soyutlayarak basit bir API sunar: `polygon.SpatiallyContains(point)`.
 
-## Why use Aspose.GIS .NET for geometry contains point checks?
-- **Zengin geometri modeli** – Çokgenler, çoklu çokgenler, lineer halkalar ve daha fazlasını destekler.  
-- **Yüksek performanslı mekânsal işlemler** – Büyük veri setleri için optimize edilmiştir.  
-- **Çapraz platform** – .NET Framework, .NET Core ve .NET 5/6+ üzerinde çalışır.  
-- **Kapsamlı dokümantasyon** – **geospatial analysis .net** senaryoları için çok sayıda örnek içerir.  
+## Nokta kontrolleri içeren geometri için neden Aspose.GIS .NET kullanmalısınız?
+- **Zengin geometri modeli** – Poligonlar, çoklu poligonlar, doğrusal halkalar ve daha fazlasının.
+- **Yüksek performanslı uzamsal işlemler** – Büyük veri kitapları için optimize edilmiştir.
+- **Çapraz platform** – .NET Framework, .NET Core ve .NET5/6+ üzerinde çalışır.
+- **Kapsamlı dokümantasyon** – **jeouzaysal analiz .net** senaryoları için çok sayıda örnek içerir.
 
-## Prerequisites
-Başlamadan önce şunların kurulu olduğundan emin olun:
+## Çokgen içindeki nokta için Yaygın Kullanım Durumları c#
+- **Geofencing**: Bir cihaz önceden tanımlanmış bir alanda kayıtlı veya olduğunda eylemler tetiklenir.
+- **Harita görselleştirme**: Kullanıcı‑seçili bir noktayı kapsayan bölge vurgulanır.
+- **Uzaysal analitik**: Veri kitapları, yalnızca bir çalışma dosyası içinde kalan kayıtlarla filtrelenir.
+- **Teslimat rotası**: Bir teslimat adresinin hizmet bölgesi içinde olup olmadığı doğrulanır.
 
-1. **.NET geliştirme ortamı** – .NET 6 SDK (veya daha yeni) yüklü.  
-2. **Aspose.GIS for .NET** – Resmi sürüm sayfasından indirip projenize NuGet paketi olarak ekleyin.  
-3. **Temel C# bilgisi** – Sınıflar, nesneler ve konsol uygulamaları hakkında temel anlayış.
+## Önkoşullar
+Başlamadan önce programın kuruluşunun olduğundan emin olun:
 
-### 1. .NET Development Environment Setup
-Makinenizde çalışan bir .NET geliştirme ortamının kurulu olduğundan emin olun. Bu, .NET SDK’nın doğru şekilde yüklü ve yapılandırılmış olmasını içerir.
+1. **.NET geliştirme ortamı** – .NET6 SDK (veya daha yeni) yüklü.
+2. **Aspose.GIS for .NET** – Resmi sürüm sürümünün indirilmesi ve projenize NuGet paketi olarak eklenmesi.
+3. **Temel C# bilgisi** – Sınıflar, nesneler ve konsol uygulamaları hakkında temel bilgiler.
 
-### 2. Aspose.GIS Installation
-Aspose.GIS for .NET’i, sürüm sayfasından [burada](https://releases.aspose.com/gis/net/) kütüphaneyi indirerek kurun. Dokümantasyonda verilen kurulum talimatlarını [burada](https://reference.aspose.com/gis/net/) izleyerek Aspose.GIS’i projenize entegre edin.
+### 1. .NET Geliştirme Ortamı Kurulumu
+Makinenizde çalışan bir .NET geliştirme ortamının kurulu olduğundan emin olun. Bu, .NET SDK’nın doğru şekilde yüklü ve ele alınmasını içerir.
 
-### 3. Basic Understanding of C#
-Aspose.GIS for .NET esas olarak C# ile kullanıldığından, C# programlama diline aşina olun.
+### 2. Aspose.GIS Kurulumu
+Aspose.GIS for .NET’i, sürüm sürümünün [burada](https://releases.aspose.com/gis/net/) kütüphaneyi indirerek yüklenir. Belgelendirmede verilen kurulum talimatlarını [burada](https://reference.aspose.com/gis/net/) izleyerek Aspose.GIS'i projenize entegre edin.
 
-## Import Namespaces
+### 3. Temel C# Anlayışı
+Aspose.GIS for .NET esas olarak C# ile paylaşıldığında, C# programlama diline dair bilgi alın.
+
+## Ad Alanlarını İçe Aktar
 C# projenizde Aspose.GIS işlevselliğini kullanmak için gerekli ad alanlarını içe aktarın:
 ```csharp
 using Aspose.Gis.Geometries;
@@ -63,8 +69,8 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## Step 1: Define Geometry Objects
-İlk olarak Aspose.GIS sınıflarını kullanarak geometri nesnelerini tanımlayın. Burada dış halkalı ve iç halkalı (bir delik) bir çokgen oluşturuyor, ardından kapsama testini yapacağımız bir nokta tanımlıyoruz.
+## Adım 1: Geometri Nesnelerini Tanımlayın
+İlk olarak, Aspose.GIS sınıflarını kullanarak geometri nesnelerini tanımlayın. Burada dış halkalı ve iç halkalı (bir delik) bir poligon ve ardından kapsama testini yapacağımız bir nokta oluşturuyoruz.
 ```csharp
 var geometry1 = new Polygon();
 geometry1.ExteriorRing = new LinearRing(new[]
@@ -86,62 +92,69 @@ geometry1.AddInteriorRing(new LinearRing(new[]
 var geometry2 = new Point(2, 2);
 ```
 
-## Step 2: Check Spatial Containment
-Sonra, **geometry1** çokgeninin **geometry2** noktasını içerip içermediğini kontrol edin. `SpatiallyContains` metodu, nokta iç halkada (delikte) bulunduğu için `false` döner.
+## Adım 2: Mekansal Kapsamı Kontrol Edin
+Sonra, poligon **geometry1**’in nokta **geometry2**’yi içerip içermediğini kontrol edin. `SpatiallyContains` metodu, nokta iç halkada (delikte) bulunduğu için `false` döndürür.
 ```csharp
 Console.WriteLine(geometry1.SpatiallyContains(geometry2)); // False
 ```
 
-## Step 3: Define Another Geometry
+## Adım 3: Başka Bir Geometri Tanımlayın
 Şimdi, dış halkada ama iç halkanın dışında kalan ikinci bir nokta tanımlıyoruz.
 ```csharp
 var geometry3 = new Point(0.5, 0.5);
 ```
 
-## Step 4: Check Spatial Containment Again
-Yeni nokta ile aynı kapsama kontrolünü çalıştırdığınızda `true` döner ve noktanın çokgenin dış sınırları içinde olduğunu doğrular.
+## Adım 4: Mekansal Kapsamı Tekrar Kontrol Edin
+Yeni nokta ile aynı kapsama kontrolünü çalıştırdığınızda `true` döner ve noktanın poligonun dış sınırı içinde olduğunu doğrular.
 ```csharp
 Console.WriteLine(geometry1.SpatiallyContains(geometry3)); // True
 ```
 
-## Step 5: Equivalent Functionality
-Aspose.GIS ayrıca ters metodu `Within` sağlar. Aşağıdaki satır, `geometry3.Within(geometry1)` ifadesinin `geometry1.SpatiallyContains(geometry3)` ile aynı sonucu verdiğini gösterir.
+## Adım 5: Eşdeğer İşlevsellik
+Aspose.GIS ayrıca ters metot olan `Within`’ı da sağlar. Aşağıdaki satır, `geometry3.Within(geometry1)` ifadesinin `geometry1.SpatiallyContains(geometry3)` ile aynı sonucu verdiğini gösterir.
 ```csharp
 Console.WriteLine(geometry3.Within(geometry1)); // True
 ```
 
-## Common Issues and Solutions
+## Sık Karşılaşılan Sorunlar ve Çözümler
 | Sorun | Neden Oluşur | Çözüm |
+
 |-------|----------------|-----|
-| **Beklenmeyen `false` sonucu** | Nokta, çokgenin bir deliği (iç halka) içinde bulunur. | Doğru çokgeni test ettiğinizden emin olun veya deliksiz basit çokgenler için `geometry1.ExteriorRing` kullanın. |
-| **NullReferenceException** | `SpatiallyContains` çağrılmadan önce geometri nesneleri başlatılmamış. | Hem çokgen hem de nokta nesnelerini metod çağrısından önce örnekleyin. |
-| **Büyük veri setlerinde performans yavaşlaması** | Döngüler içinde sürekli geometri nesneleri oluşturulması. | Geometri örneklerini yeniden kullanın veya `GeometryCollection` ile toplu işleyin. |
 
-## Frequently Asked Questions
+| **Beklenmeyen `false` sonuç** | Nokta, çokgenin bir deliğinin (iç halkasının) içinde yer alıyor. | Doğru çokgene karşı test yaptığınızdan emin olun veya deliksiz basit çokgenler için `geometry1.ExteriorRing` kullanın. |
 
-**S: Aspose.GIS .NET Core ile uyumlu mu?**  
-C: Evet, Aspose.GIS .NET Core’u tam olarak destekler; farklı platformlarda mekânsal uygulamalar geliştirebilirsiniz.
+| **NullReferenceException** | `SpatiallyContains` çağrılmadan önce geometri nesneleri başlatılmamış. | Mekansal yöntemleri çağırmadan önce hem çokgen hem de nokta nesnelerini örnekleyin. |
 
-**S: Aspose.GIS ile geospatial analysis yapabilir miyim?**  
-C: Kesinlikle, Aspose.GIS mekânsal sorgular, mesafe hesaplamaları ve geometri manipülasyonları gibi çeşitli analiz fonksiyonları sunar.
+| **Büyük veri kümelerinde performans yavaşlaması** | Döngüler içinde tekrar tekrar geometri nesneleri oluşturuluyor. | Geometri örneklerini yeniden kullanın veya `GeometryCollection` kullanarak toplu işlem yapın. |
 
-**S: Aspose.GIS güncellemeleri ne sıklıkla yayınlanıyor?**  
-C: Aspose.GIS performans iyileştirmeleri, yeni özellikler ve hataların giderilmesi için düzenli olarak güncellemeler yayınlar. Güncel kalmak için sürüm sayfasını ziyaret edin.
+## Sıkça Sorulan Sorular
 
-**S: Aspose.GIS kullanıcıları için bir topluluk forumu var mı?**  
-C: Evet, diğer kullanıcılarla iletişime geçmek, soru sormak ve deneyimlerinizi paylaşmak için Aspose.GIS topluluk forumuna [buradan](https://forum.aspose.com/c/gis/33) katılabilirsiniz.
+**S: Aspose.GIS, .NET Core ile uyumlu mu?**
+C: Evet, Aspose.GIS, .NET Core'u tam olarak destekleyerek farklı platformlarda coğrafi bilgi sistemleri uygulamaları geliştirmenize olanak tanır.
 
-**S: Aspose.GIS’i satın almadan önce deneyebilir miyim?**  
-C: Tabii ki, ücretsiz deneme sürümünü [buradan](https://releases.aspose.com/) indirerek keşfedebilirsiniz.
+**S: Aspose.GIS kullanarak coğrafi bilgi sistemleri analizi yapabilir miyim?**
+C: Kesinlikle, Aspose.GIS, mekansal sorgular, mesafe hesaplamaları ve geometri manipülasyonları dahil olmak üzere coğrafi bilgi sistemleri analizi için çeşitli işlevler sunar.
 
-## Conclusion
-Bu rehberde, Aspose.GIS for .NET kullanarak pratik bir **point inside polygon c#** çözümünü gösterdik. Geometrilerinizi tanımlayıp `SpatiallyContains` (veya `Within`) metodunu kullanarak mekânsal kapsama sorularına hızlıca yanıt verebilir, **geospatial analysis .net** iş akışınızın kritik bir parçasını kolayca halledebilirsiniz. Daha büyük veri setleri, farklı geometri tipleriyle denemeler yapın ve bu kontrolleri mesafe hesaplamaları veya mekânsal indeksleme gibi diğer Aspose.GIS yetenekleriyle birleştirin.
+**S: Aspose.GIS için güncellemeler ne sıklıkla yayınlanıyor?**
+C: Aspose.GIS, performansı iyileştirmek, yeni özellikler eklemek ve bildirilen sorunları gidermek için düzenli olarak güncellemeler yayınlar. Yayın sayfasını ziyaret ederek güncel kalabilirsiniz.
+
+**S: Aspose.GIS kullanıcıları için bir topluluk forumu var mı?**
+C: Evet, diğer kullanıcılarla bağlantı kurmak, sorular sormak ve deneyimlerinizi paylaşmak için Aspose.GIS topluluk forumuna [buradan](https://forum.aspose.com/c/gis/33) katılabilirsiniz.
+
+**S: Satın almadan önce Aspose.GIS'i deneyebilir miyim?**
+C: Elbette, [buradan](https://releases.aspose.com/) ücretsiz deneme sürümünü indirerek Aspose.GIS'i keşfedebilirsiniz.
+
+**S: Tam olarak poligon kenarında bulunan bir noktayı test edersem ne olur?**
+C: Aspose.GIS, `SpatiallyContains` yöntemi için sınır üzerindeki noktaları **içeride** olarak ele alır. Farklı bir davranışa ihtiyacınız varsa `Touches` yöntemini kullanın.
+
+## Sonuç
+Bu kılavuzda, Aspose.GIS for .NET kullanarak pratik bir **poligon içindeki nokta c#** çözümünü gösterdik. Geometrilerinizi tanımlayıp `SpatiallyContains` (veya `Within`) yöntemini kullanarak uzamsal kapsamlı sorularıa hızlı yanıt sunumu, **coğrafi uzamsal analiz .net** iş akışınızın kritik bir bölümünü kolayca tamamlayabilirsiniz. Daha büyük veri kitapları, farklı geometri tipleriyle denemeler yapın ve bu kontrolleri uzaklık programlamaları veya uzamsal indeksleme gibi diğer Aspose.GIS yeteneğiyle birleştirin.
 
 ---
 
-**Last Updated:** 2025-12-04  
-**Tested With:** Aspose.GIS 24.11 for .NET  
-**Author:** Aspose  
+**Son Güncelleme:** 2026-02-05
+**Şunlarla test edilmiştir:** Aspose.GIS 24.11 for .NET
+**Yazar:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
