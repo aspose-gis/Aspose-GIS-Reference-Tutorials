@@ -126,15 +126,15 @@ A: Updates für Aspose.GIS für .NET werden regelmäßig veröffentlicht, um neu
 ## Fazit
 Durch die oben beschriebenen Schritte wissen Sie nun, wie man **linestring c# erstellt**, **Punkte zum Linestring hinzufügt** und eine zuverlässige **Punkt‑auf‑Linie‑Prüfung** mit den Methoden `Covers` und `CoveredBy` durchführt. Diese Fähigkeit erweitert die räumlichen Analysefunktionen Ihrer Software und eröffnet den Zugang zu weiterführenden GIS‑Operationen.
 
+---
+
+**Zuletzt aktualisiert:** 2026-02-08  
+**Getestet mit:** Aspose.GIS for .NET (latest release)  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Zuletzt aktualisiert:** 2026-02-08  
-**Getestet mit:** Aspose.GIS for .NET (latest release)  
-**Autor:** Aspose

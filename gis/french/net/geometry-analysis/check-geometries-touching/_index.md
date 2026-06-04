@@ -5,7 +5,7 @@ description: Apprenez comment effectuer une vérification de routage réseau en 
   pour gérer les données spatiales et permettre l'analyse spatiale.
 linktitle: How to Check Touching Geometries
 second_title: Aspose.GIS .NET API
-title: 'Vérification du routage réseau : Géométries en contact avec Aspose.GIS'
+title: 'Vérification du routage réseau - Géométries en contact avec Aspose.GIS'
 url: /fr/net/geometry-analysis/check-geometries-touching/
 weight: 13
 ---

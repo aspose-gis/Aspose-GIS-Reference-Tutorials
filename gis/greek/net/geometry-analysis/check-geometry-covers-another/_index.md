@@ -126,15 +126,15 @@ A: Οι ενημερώσεις για το Aspose.GIS για .NET κυκλοφο
 ## Συμπέρασμα
 Ακολουθώντας τα παραπάνω βήματα, τώρα γνωρίζετε πώς να **δημιουργήσετε linestring c#**, **προσθέσετε σημεία στο linestring**, και να εκτελέσετε έναν αξιόπιστο **έλεγχο σημείου πάνω σε γραμμή** χρησιμοποιώντας τις μεθόδους `Covers` και `CoveredBy`. Αυτή η δυνατότητα ενισχύει τις λειτουργίες χωρικής ανάλυσης του λογισμικού σας και ανοίγει το δρόμο για πιο προχωρημένες λειτουργίες GIS.
 
+---
+
+**Τελευταία Ενημέρωση:** 2026-02-08  
+**Δοκιμή Με:** Aspose.GIS for .NET (latest release)  
+**Συγγραφέας:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Τελευταία Ενημέρωση:** 2026-02-08  
-**Δοκιμή Με:** Aspose.GIS for .NET (latest release)  
-**Συγγραφέας:** Aspose

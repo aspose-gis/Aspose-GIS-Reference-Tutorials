@@ -125,15 +125,15 @@ A: Các bản cập nhật cho Aspose.GIS cho .NET được phát hành thườn
 ## Kết luận
 Bằng cách thực hiện các bước trên, bạn đã biết cách **tạo linestring c#**, **thêm các điểm vào linestring**, và thực hiện một **kiểm tra point on line** đáng tin cậy bằng các phương thức `Covers` và `CoveredBy`. Khả năng này nâng cao tính năng phân tích không gian của phần mềm và mở ra cơ hội cho các thao tác GIS nâng cao hơn.
 
+---
+
+**Cập nhật lần cuối:** 2026-02-08  
+**Được kiểm tra với:** Aspose.GIS for .NET (latest release)  
+**Tác giả:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Cập nhật lần cuối:** 2026-02-08  
-**Được kiểm tra với:** Aspose.GIS for .NET (latest release)  
-**Tác giả:** Aspose

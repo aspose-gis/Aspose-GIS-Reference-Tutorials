@@ -124,15 +124,15 @@ Console.WriteLine(point.CoveredBy(line)); // True
 ## 結論
 透過上述步驟，您已瞭解如何 **建立 linestring c#**、**將點加入 linestring**，以及使用 `Covers` 與 `CoveredBy` 方法執行可靠的 **點在線上檢查**。此功能可提升您軟體的空間分析能力，並為更進階的 GIS 操作鋪路。
 
+---
+
+**最後更新：** 2026-02-08  
+**測試環境：** Aspose.GIS for .NET (latest release)  
+**作者：** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**最後更新：** 2026-02-08  
-**測試環境：** Aspose.GIS for .NET (latest release)  
-**作者：** Aspose

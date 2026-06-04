@@ -1,5 +1,5 @@
 ---
-title: GIS Overlay Analysis: How to Perform Overlay Operations with Aspose.GIS for .NET
+title: GIS Overlay Analysis - How to Perform Overlay Operations with Aspose.GIS for .NET
 linktitle: Find Geometry Overlays
 second_title: Aspose.GIS .NET API
 description: Learn gis overlay analysis using Aspose.GIS for .NET. This spatial overlay tutorial shows how to perform overlay, polygon intersection .net, union, difference, and symmetric difference.

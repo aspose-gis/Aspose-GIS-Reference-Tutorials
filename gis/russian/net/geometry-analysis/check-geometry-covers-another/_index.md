@@ -125,15 +125,15 @@ Console.WriteLine(point.CoveredBy(line)); // True
 ## Заключение
 Следуя приведённым шагам, вы теперь знаете, как **создать linestring c#**, **добавлять точки в linestring** и выполнять надёжную **проверку принадлежности точки линии** с помощью методов `Covers` и `CoveredBy`. Эта возможность расширяет функции пространственного анализа вашего программного обеспечения и открывает путь к более продвинутым GIS‑операциям.
 
+---
+
+**Последнее обновление:** 2026-02-08  
+**Тестировано с:** Aspose.GIS для .NET (последний релиз)  
+**Автор:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Последнее обновление:** 2026-02-08  
-**Тестировано с:** Aspose.GIS для .NET (последний релиз)  
-**Автор:** Aspose

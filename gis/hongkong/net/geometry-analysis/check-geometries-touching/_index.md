@@ -3,7 +3,7 @@ date: 2026-02-08
 description: 學習如何使用 Aspose.GIS for .NET 透過偵測相接的幾何圖形來執行網路路由檢查，這是一個強大的函式庫，可處理空間資料並支援空間分析。
 linktitle: How to Check Touching Geometries
 second_title: Aspose.GIS .NET API
-title: 網絡路由檢查：使用 Aspose.GIS 處理相接幾何
+title: 網絡路由檢查 - 使用 Aspose.GIS 處理相接幾何
 url: /zh-hant/net/geometry-analysis/check-geometries-touching/
 weight: 13
 ---

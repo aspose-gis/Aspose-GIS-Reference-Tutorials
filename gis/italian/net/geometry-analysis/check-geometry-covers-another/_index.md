@@ -125,15 +125,15 @@ Allo stesso modo, usa il metodo `CoveredBy` per verificare se il punto è copert
 ## Conclusione
 Seguendo i passaggi sopra, ora sai come **create linestring c#**, **add points to linestring**, e eseguire un affidabile **point on line check** usando i metodi `Covers` e `CoveredBy`. Questa capacità migliora le funzionalità di analisi spaziale del tuo software e apre la porta a operazioni GIS più avanzate.
 
+---
+
+**Ultimo aggiornamento:** 2026-02-08  
+**Testato con:** Aspose.GIS for .NET (latest release)  
+**Autore:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Ultimo aggiornamento:** 2026-02-08  
-**Testato con:** Aspose.GIS for .NET (latest release)  
-**Autore:** Aspose

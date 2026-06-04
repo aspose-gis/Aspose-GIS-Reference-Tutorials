@@ -14,40 +14,40 @@ weight: 22
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Jak buforować geometrie przy użyciu Aspose.GIS dla .NET
+# Jak buforować geometrię przy użyciu Aspose.GIS dla .NET
 
-## Introduction
-Jeśli pracujesz z danymi geoprzestrzennymi w środowisku .NET, znajomość **jak buforować geometrie** jest niezbędna do analizy bliskości, wyznaczania stref i uogólniania obiektów. W tym samouczku przeprowadzimy Cię przez cały proces z Aspose.GIS dla .NET — od instalacji, importowania wymaganych przestrzeni nazw, generowania buforów dla linii i wielokątów, po ostateczne sprawdzanie zawierania przestrzennego. Po zakończeniu będziesz pewnie stosować **bufory analizy przestrzennej** w swoich aplikacjach.
+## Wstęp
+Jeśli pracujesz z danymi geoprzestrzennymi w środowisku .NET, użyteczność **jak buforować geometrie** jest równa do analizy bliskości, wyznaczania strefy i uogólniania obiektów. W tym samouczku przeprowadziliśmy Cię przez cały proces z Aspose.GIS dla .NET — od instalacji, importowania wymaganych przestrzeni nazw, generowania buforów dla linii i wielokątów, po ostatecznym sprawdzaniu wykazu przestrzennego. Po wykluczeniu bezpiecznego stosowania **bufory analizy szkodliwej** w twoich aplikacjach.
 
-## Quick Answers
-- **Co to jest bufor geometryczny?** Wielokąt, który otacza wszystkie punkty znajdujące się w określonej odległości od geometry źródłowej.  
-- **Dlaczego używać Aspose.GIS do buforowania?** Oferuje prosty, wysokowydajny interfejs API, który działa na .NET Framework, .NET Core oraz .NET 5/6+.  
-- **Jak zainstalować Aspose.GIS?** Pobierz bibliotekę z oficjalnej strony i dodaj ją jako referencję w Visual Studio.  
-- **Jak sprawdzić zawieranie?** Użyj metody `SpatiallyContains`, aby sprawdzić, czy punkt znajduje się wewnątrz wygenerowanego bufora.  
-- **Czy mogę wykonywać analizę przestrzenną poza buforowaniem?** Tak — obsługiwane są także operacje takie jak przecięcie, suma (union) i obliczenia odległości.
+## Szybkie odpowiedzi
+- **Co to jest bufor uniwersalny?** Wielokąt, który otacza wszystkie punkty znajdujące się w odległości od geometrii źródławej.
+- **Dlaczego oprogramowania Aspose.GIS do buforowania?** Oferuje prosty, wysokowydajny interfejs API, który działa na .NET Framework, .NET Core oraz .NET 5/6+.
+- **Jak odczytać Aspose.GIS?** Pobierz bibliotekę z podstawową stroną i dodaj ją jako referencję w Visual Studio.
+- **Jak sprawdzić wykaznie?** zastosować metody `SpatiallyContains`, aby sprawdzić, czy punkt znajduje się wewnątrz wygenerowanego bufora.
+- **Czy można wykonać narzędzie przestrzenne poza buforowaniem?** Tak — są także działania takie jak przecięcie, suma (złącze) i odległość.
 
-## Co to jest bufor geometryczny?
-Bufor geometryczny tworzy strefę wokół obiektu (punktu, linii lub wielokąta) w odległości określonej przez użytkownika. Strefa ta jest przydatna do identyfikacji pobliskich obiektów, tworzenia obszarów wpływu lub upraszczania złożonych kształtów.
+## Co to jest bufor ochronny?
+Bufor stanowi strefę wokół obiektu (punktu, linii lub wielokąta) w odległości określonej przez użytkownika. Strefa ta jest dostępna do wykorzystania pobliskich obiektów, tworząc obszary wpływu lub upraszczania złożoneów.
 
-## How to Buffer Geometry with Aspose.GIS
-### Why Use Aspose.GIS for Spatial Analysis Buffers?
-- **Obsługa wieloplatformowa:** Działa na Windows, Linux i macOS.  
-- **Zero zewnętrznych zależności:** Nie wymaga natywnych bibliotek GIS.  
-- **Bogate API:** Zawiera buforowanie, predykaty przestrzenne i przekształcenia układów współrzędnych.  
-- **Zoptymalizowana wydajność:** Efektywnie obsługuje duże zestawy danych, co czyni je idealnymi do intensywnych buforów analizy przestrzennej.
+## Jak buforować geometrię za pomocą Aspose.GIS
+### Dlaczego warto używać Aspose.GIS do buforów analizy przestrzennej?
+- **Obsługa wieloplatformowa:** Działa na Windows, Linux i macOS.
+- **Zero zewnętrznych zależności:** Nie wymaga natywnych bibliotek GIS.
+- **Bogate API:** Zawiera buforowanie, predykaty edukacyjne i przekształcenia współrzędnych.
+- **Zoptymalizowana wydajność:** Efektywnie obsługuje duże zestawy danych, co stanowi idealnei rozwiązanie dla buforów analizy przestrzennej.
 
-## Prerequisites
-- **Visual Studio 2019 lub nowsze** (lub dowolne kompatybilne IDE .NET).  
-- **.NET 6 SDK** (lub .NET Core 3.1+).  
-- **Biblioteka Aspose.GIS dla .NET** – zobacz kroki instalacji poniżej.  
+## Warunki wstępne
+- **Visual Studio 2019 lub nowsze** (lub wystąpiło IDE .NET).
+- **.NET 6 SDK** (lub .NET Core 3.1+).
+- **Biblioteka Aspose.GIS dla .NET** – zobacz kroki instalacji poniżej.
 
-### How to Install Aspose.GIS for .NET
-1. Pobierz bibliotekę Aspose.GIS dla .NET z [linku do pobrania](https://releases.aspose.com/gis/net/).  
-2. W Visual Studio kliknij prawym przyciskiem myszy swój projekt → **Add** → **Reference…** → przeglądaj do pobranego pliku DLL i dodaj go.  
-3. Uzyskaj licencję z [Aspose](https://purchase.aspose.com/buy) lub użyj [licencji tymczasowej](https://purchase.aspose.com/temporary-license/) do oceny.
+### Jak zainstalować Aspose.GIS dla .NET
+1. Pobierz bibliotekę Aspose.GIS dla .NET z [linku do pobrania](https://releases.aspose.com/gis/net/).
+2. W Visual Studio kliknij element elektroniczny swój projekt → **Dodaj** → **Referencja…** → przeglądaj do pobranego pliku DLL i dodaj go.
+3. wynikającej z [Aspose](https://purchase.aspose.com/buy) lub zarządzania [licencji tymczasowej](https://purchase.aspose.com/temporary-license/) do oceny.
 
-## Importing Namespaces
-### How to Import Aspose.GIS
+## Importowanie przestrzeni nazw
+### Jak zaimportować Aspose.GIS
 ```csharp
 using Aspose.Gis.Geometries;
 using System;
@@ -59,9 +59,9 @@ using System.Threading.Tasks;
 
 Teraz przeanalizujemy proces tworzenia bufora krok po kroku.
 
-## Step‑by‑Step Guide
+## Przewodnik krok po kroku
 
-### Step 1: Create a Geometry Buffer
+### Krok 1: Utwórz bufor geometrii
 Najpierw definiujemy prostą geometrię `LineString`, która będzie źródłem naszego bufora.
 
 ```csharp
@@ -73,7 +73,7 @@ line.AddPoint(3, 3);
 
 W tym fragmencie tworzymy `LineString` i dodajemy dwa punkty, tworząc przekątną linię od (0,0) do (3,3).
 
-### Step 2: Generate Buffer for LineString
+### Krok 2: Wygeneruj bufor dla ciągu linii
 Następnie generujemy bufor wokół linii z **dodatnią odległością** równą 1 jednostce.
 
 ```csharp
@@ -83,7 +83,7 @@ var lineBuffer = line.GetBuffer(distance: 1);
 
 Metoda `GetBuffer` zwraca wielokąt, który obejmuje każdy punkt znajdujący się w odległości 1 jednostki od oryginalnej linii.
 
-### Step 3: Check Spatial Containment
+### Krok 3: Sprawdź zawartość przestrzenną
 Teraz demonstrujemy **jak sprawdzić zawieranie**, testując, czy określone punkty znajdują się wewnątrz bufora.
 
 ```csharp
@@ -94,7 +94,7 @@ Console.WriteLine(lineBuffer.SpatiallyContains(new Point(3.1, 3.1))); // True
 
 Predykat `SpatiallyContains` zwraca `true`, jeśli punkt znajduje się wewnątrz wielokąta bufora.
 
-### Step 4: Define a Polygon Geometry
+### Krok 4: Zdefiniuj geometrię wielokąta
 Stworzymy także geometrię `Polygon`, aby zilustrować buforowanie z **ujemną odległością**, co zmniejsza kształt.
 
 ```csharp
@@ -112,7 +112,7 @@ polygon.ExteriorRing = new LinearRing(new[]
 
 Wielokąt reprezentuje kwadrat z wierzchołkami w (0,0), (0,3), (3,3) i (3,0).
 
-### Step 5: Generate Buffer for Polygon
+### Krok 5: Wygeneruj bufor dla wielokąta
 Zastosowanie ujemnej odległości –1 jednostki powoduje skurczenie wielokąta do wewnątrz.
 
 ```csharp
@@ -122,7 +122,7 @@ var polygonBuffer = (IPolygon)polygon.GetBuffer(distance: -1);
 
 Wynikowy `polygonBuffer` jest mniejszym kwadratem, przydatnym do tworzenia stref wewnętrznych.
 
-### Step 6: Access Buffer Exterior Ring Points
+### Krok 6: Dostęp do zewnętrznych punktów pierścienia bufora
 Na koniec pobieramy i wyświetlamy współrzędne zewnętrznego pierścienia bufora.
 
 ```csharp
@@ -136,14 +136,14 @@ for (int i = 0; i < ring.Count; ++i)
 
 Ta pętla wypisuje każdy wierzchołek skurczonego wielokąta, potwierdzając geometrię bufora.
 
-## Common Issues and Solutions
+## Typowe problemy i rozwiązania
 | Problem | Rozwiązanie |
-|-------|----------|
-| **Bufor zwraca `null`** | Upewnij się, że wartość odległości jest odpowiednia dla układu współrzędnych geometrii. |
-| **`SpatiallyContains` zawsze zwraca `false`** | Sprawdź, czy obie geometrie mają tę samą referencję przestrenną (CRS). |
-| **Spowolnienie wydajności przy dużych zestawach danych** | Przetwarzaj geometrie w partiach i ponownie używaj tej samej instancji `GeometryFactory`. |
+|-------|--------------|
+| **Bufor zwracania `null`** | powstaje, że wartość odległości jest dla układu współrzędnych geometrii. |
+| **`SpatiallyContains` zawsze zwracane `false`** | Sprawdź, czy obie geometrie mają tę samą nazwę referencyjną przestrzenną (CRS). |
+| **Spowolnienie wydajności przy dużych zestawach danych** | Przetwarzaj geometrie w częściach i ponownie używaj tej samej samej `GeometryFactory`. |
 
-## Frequently Asked Questions
+## Często zadawane pytania
 
 **P: Czy Aspose.GIS dla .NET jest kompatybilny z innymi frameworkami .NET?**  
 O: Tak, działa z .NET Framework, .NET Core, .NET 5 i .NET 6.

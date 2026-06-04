@@ -125,15 +125,15 @@ A: Aktualizace pro Aspose.GIS pro .NET jsou vydávány pravidelně, aby přinesl
 ## Závěr
 Po absolvování výše uvedených kroků nyní umíte **vytvořit linestring v C#**, **přidávat body do linestringu** a provádět spolehlivou **kontrolu bodu na linii** pomocí metod `Covers` a `CoveredBy`. Tato schopnost rozšiřuje funkce prostorové analýzy vašeho softwaru a otevírá cestu k pokročilejším GIS operacím.
 
+---
+
+**Poslední aktualizace:** 2026-02-08  
+**Testováno s:** Aspose.GIS pro .NET (nejnovější verze)  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Poslední aktualizace:** 2026-02-08  
-**Testováno s:** Aspose.GIS pro .NET (nejnovější verze)  
-**Autor:** Aspose

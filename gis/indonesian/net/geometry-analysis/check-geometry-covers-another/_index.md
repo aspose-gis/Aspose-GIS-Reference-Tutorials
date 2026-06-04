@@ -126,15 +126,15 @@ J: Pembaruan untuk Aspose.GIS untuk .NET dirilis secara reguler untuk menambahka
 ## Kesimpulan
 Dengan mengikuti langkah‑langkah di atas, Anda kini tahu cara **membuat linestring c#**, **menambahkan titik ke linestring**, dan melakukan **pemeriksaan titik pada garis** yang andal menggunakan metode `Covers` dan `CoveredBy`. Kemampuan ini meningkatkan fitur analisis spasial perangkat lunak Anda dan membuka pintu ke operasi GIS yang lebih maju.
 
+---
+
+**Terakhir Diperbarui:** 2026-02-08  
+**Diuji Dengan:** Aspose.GIS untuk .NET (rilis terbaru)  
+**Penulis:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Terakhir Diperbarui:** 2026-02-08  
-**Diuji Dengan:** Aspose.GIS untuk .NET (rilis terbaru)  
-**Penulis:** Aspose

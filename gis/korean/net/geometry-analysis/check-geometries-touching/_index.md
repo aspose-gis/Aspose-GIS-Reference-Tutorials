@@ -4,7 +4,7 @@ description: Aspose.GIS for .NET를 사용하여 접촉하는 지오메트리를
   이 강력한 라이브러리는 공간 데이터를 처리하고 공간 분석을 가능하게 합니다.
 linktitle: How to Check Touching Geometries
 second_title: Aspose.GIS .NET API
-title: '네트워크 라우팅 검사: Aspose.GIS와 접촉 지오메트리'
+title: '네트워크 라우팅 검사 - Aspose.GIS와 접촉 지오메트리'
 url: /ko/net/geometry-analysis/check-geometries-touching/
 weight: 13
 ---

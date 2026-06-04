@@ -3,7 +3,7 @@ date: 2026-02-08
 description: Aspose.GIS for .NET を使用して接触ジオメトリを検出し、ネットワークルーティングチェックを実行する方法を学びましょう。このライブラリは空間データの処理と空間分析を可能にする強力なツールです。
 linktitle: How to Check Touching Geometries
 second_title: Aspose.GIS .NET API
-title: ネットワークルーティングチェック：Aspose.GISでの接触ジオメトリ
+title: ネットワークルーティングチェック - Aspose.GISでの接触ジオメトリ
 url: /ja/net/geometry-analysis/check-geometries-touching/
 weight: 13
 ---
@@ -14,38 +14,38 @@ weight: 13
 
 # ネットワークルーティングチェック: Aspose.GIS for .NET でタッチジオメトリを使用する方法
 
-## Introduction
+## はじめに
 2 つの空間オブジェクト間で **ネットワークルーティングチェックを実行** する必要があるとき、Aspose.GIS for .NET はクリーンで型安全な API を提供し、作業を簡単にします。このチュートリアルでは、ラインストリングやポイントを作成し、`Touches` メソッドを使用してジオメトリが境界だけを共有しているかどうかを判定する方法を紹介します。この操作は、ルート検証、マップオーバーレイの検証、近接クエリなど、多くの **spatial analysis .NET** シナリオの基礎となります。
 
-## Quick Answers
+## よくある質問
 - **「タッチ (touching)」とは何ですか？** 2 つのジオメトリが少なくとも 1 つの境界点を共有しますが、内部は交差しません。  
 - **どのメソッドでチェックしますか？** `Geometry.Touches(otherGeometry)`。  
 - **この機能にライセンスは必要ですか？** 開発用にはトライアルで動作しますが、本番環境では永続ライセンスが必要です。  
 - **対応している .NET バージョンは？** .NET Framework、.NET Core、.NET 5/6/7 すべてが Aspose.GIS によってカバーされています。  
 - **実装にかかる時間は？** 基本的な例で約 5〜10 分です。  
 
-## How to Perform a Network Routing Check Using Touching Geometries
+## 接触ジオメトリを使用したネットワークルーティングチェックの実行方法
 以下では、**タッチしているジオメトリをチェックする方法** と、その結果をルーティング検証ワークフローに組み込む手順を詳しく説明します。
 
-### What is “Touching” in Spatial Analysis?
+### 空間解析における「接触」とは？
 GIS 用語で *touching* は、2 つのジオメトリがエッジで接触しているが、内部は重なっていない空間関係を指します。*intersects*（内部の重なりを含む）とは異なり、境界だけで接続していることを検証したい場合に使用されます。たとえば、道路セグメントが交差せずに交差点で接続しているかどうかを確認する際に利用されます。
 
-## Why Use Aspose.GIS for Spatial Analysis .NET?
+## Aspose.GIS for Spatial Analysis .NET を使用する理由
 Aspose.GIS は、ネイティブ GIS のインストールが不要な完全マネージド .NET ライブラリで、**空間データの取り扱い** を容易にします。Shapefile、GeoJSON、KML など多数のフォーマットに対応し、`Touches`、`Intersects`、`Contains` などの高性能ジオメトリ演算を提供します。純粋な .NET 実装なので、Web サービス、デスクトップアプリ、クラウドファンクションに直接組み込むことができます。
 
-## Prerequisites
+## 前提条件
 開始する前に以下を用意してください。
 
 1. **Visual Studio**（最新バージョンのいずれか）をマシンにインストール。  
 2. **Aspose.GIS for .NET** – 最新パッケージを [official download page](https://releases.aspose.com/gis/net/) からダウンロード。  
 3. **有効なライセンス**（または無料トライアル） – [here](https://releases.aspose.com/) から取得。  
 
-### Setting Up Your Environment
+### 環境設定
 1. まだインストールしていない場合は Visual Studio をインストールします。  
 2. 上記リンクから Aspose.GIS for .NET をダウンロードし、NuGet パッケージをプロジェクトに追加します。  
 3. コード内でライセンスファイルを適用する（テスト用に一時ライセンスを使用しても可）。
 
-## Import Namespaces
+## 名前空間のインポート
 API を使用するために必要な名前空間をインポートします。
 
 ```csharp
@@ -57,7 +57,7 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## Step 1: Create Line Strings (and a Point)
+## ステップ1：線分（と点）を作成する
 以下で **ラインストリング** オブジェクトと、タッチ関係をテストするポイントを作成します。
 
 ```csharp
@@ -78,7 +78,7 @@ geometry4.AddPoint(4, 4);
 - `geometry3` はその共有端点に正確に位置するポイントです。  
 - `geometry4` は同じ領域を横切りますが、`geometry1` とは境界を共有してい **ません**。
 
-## Step 2: Check Touching Relationships
+## ステップ2：接触関係を確認する
 `Touches` メソッドを呼び出して、どのペアがタッチしているかを確認します。
 
 ```csharp
@@ -92,12 +92,12 @@ Console.WriteLine(geometry1.Touches(geometry4)); // False
 - 最初の 3 つのチェックは **True** を返します。ジオメトリは内部の重なりなしに単一の点で接触しているためです。  
 - 最後のチェックは **False** を返します。2 本のラインストリングが線分上で交差しており、単なる境界点での接触ではないためです。
 
-## Common Issues & Tips
+## よくある問題と対処法
 - **Precision problems** – GIS 計算は浮動小数点ベースです。予期しない `False` が出た場合は、座標を正規化するか、`Geometry.EqualsExact(other, tolerance)` で許容誤差を指定してください。  
 - **Mixed geometry types** – `Touches` はポイント、ライン、ポリゴン間でも機能しますが、意味合いが異なるため、データモデルで期待する関係を必ず確認してください。  
 - **Performance** – 大規模データセットの場合はバッチ処理や Aspose.GIS が提供する空間インデックス（例: R‑tree）を利用し、O(N²) の比較を回避しましょう。
 
-## Frequently Asked Questions
+## よくある質問
 
 **Q: Aspose.GIS はすべての .NET フレームワークに対応していますか？**  
 A: はい。.NET Framework、.NET Core、.NET 5+、.NET 6+ をサポートしており、デスクトップ、Web、クラウドプロジェクトで柔軟に利用できます。

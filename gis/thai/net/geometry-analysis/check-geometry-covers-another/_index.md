@@ -125,15 +125,15 @@ Console.WriteLine(point.CoveredBy(line)); // True
 ## สรุป
 โดยทำตามขั้นตอนข้างต้น คุณจะรู้วิธี **สร้าง linestring c#**, **เพิ่มจุดลงใน linestring**, และทำการ **ตรวจสอบจุดบนเส้น** อย่างเชื่อถือได้ด้วยเมธอด `Covers` และ `CoveredBy` ความสามารถนี้จะเพิ่มศักยภาพการวิเคราะห์เชิงพื้นที่ของซอฟต์แวร์ของคุณและเปิดประตูสู่การทำงาน GIS ขั้นสูงต่อไป
 
+---
+
+**อัปเดตล่าสุด:** 2026-02-08  
+**ทดสอบกับ:** Aspose.GIS for .NET (รุ่นล่าสุด)  
+**ผู้เขียน:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**อัปเดตล่าสุด:** 2026-02-08  
-**ทดสอบกับ:** Aspose.GIS for .NET (รุ่นล่าสุด)  
-**ผู้เขียน:** Aspose
