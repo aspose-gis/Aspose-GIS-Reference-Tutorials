@@ -30,8 +30,11 @@ A térbeli adatok elemzése azt jelenti, hogy értelmes mintákat, összefüggé
 
 ## Aspose.GIS for .NET Tutorials
 {{% alert color="primary" %}}
-Induljon el egy átalakító úton a geospaciális fejlesztés felé az Aspose.GIS for .NET oktatóanyagokkal. A **geo data conversion** elsajátításától a pontos **geometry creation**‑ig, a rétegkezelésen és a lenyűgöző térképmegjelenítésen át, átfogó útmutatóink felhatalmazzák Önt a geospaciális adatok könnyed manipulálására és megjelenítésére. Akár újonc, akár tapasztalt fejlesztő, lépésről‑lépésre oktatóanyagaink zökkenőmentes utat kínálnak az Aspose.GIS teljes potenciáljának kiaknázásához, biztosítva, hogy magabiztosan navigáljon a GIS fejlesztés összetettségei között. Kezdje el ma a felfedezést, és emelje képességeit új magasságokba!
-{{% /tegály, a stílusokat és a szerkesztési jogosultságokat. Az Aspose.GIS‑sel **create GIS layers**, összevonhatja őket, vagy attribútumkritériumok alapján feloszthatja.
+Induljon el egy átalakító utazásra a térinformatikai fejlesztés világába az Aspose.GIS for .NET oktatóanyagaival! A **geográfiai adatkonverzió** elsajátításától a precíz **geometria-létrehozásig**, a rétegkezelésig és a magával ragadó térképrenderelésig, átfogó útmutatóink segítségével könnyedén manipulálhatja és megjelenítheti térinformatikai adatait. Akár kezdő, akár tapasztalt fejlesztő, lépésről lépésre haladó oktatóanyagaink zökkenőmentes utat kínálnak az Aspose.GIS teljes potenciáljának kiaknázásához, biztosítva, hogy magabiztosan eligazodjon a térinformatikai fejlesztés bonyolultságaiban. Kezdje el a felfedezést még ma, és emelje új magasságokba képességeit!.
+{{% /alert %}}
+
+### Mi a GIS rétegkezelés?
+A GIS rétegkezelés a térbeli adatok logikai csoportokba (rétegekbe) rendezését jelenti, így szabályozható a láthatóság, a stílus és a szerkesztési engedélyek. Az Aspose.GIS segítségével **létrehozhat GIS rétegeket**, egyesítheti vagy feloszthatja azokat attribútumkritériumok alapján.
 
 ### Hogyan hozzunk létre GIS rétegeket (Create GIS Layers)
 1. **Instantiate a new layer** – válassza ki a célformátumot (pl. Shapefile, GeoJSON).  
