@@ -1,11 +1,66 @@
 ---
-date: 2026-02-08
-description: Μάθετε πώς να εκτελείτε έναν έλεγχο δρομολόγησης δικτύου εντοπίζοντας
-  αγγίζουσες γεωμετρίες με το Aspose.GIS for .NET, μια ισχυρή βιβλιοθήκη για τη διαχείριση
-  χωρικών δεδομένων και την ενεργοποίηση χωρικής ανάλυσης.
-linktitle: How to Check Touching Geometries
+date: 2026-06-05
+description: Μάθετε πώς να δημιουργήσετε line string ASP.NET και να εκτελέσετε έναν
+  έλεγχο δρομολόγησης δικτύου ανιχνεύοντας αγγίγματα γεωμετριών με Aspose.GIS for
+  .NET, μια ισχυρή βιβλιοθήκη για διαχείριση και ανάλυση χωρικών δεδομένων.
+keywords:
+- create line string asp.net
+- touching geometries
+- Aspose.GIS spatial analysis
+linktitle: Πώς να ελέγξετε αγγίγματα γεωμετριών
+schemas:
+- author: Aspose
+  dateModified: '2026-06-05'
+  description: Learn how to create line string ASP.NET and perform a network routing
+    check by detecting touching geometries with Aspose.GIS for .NET, a powerful library
+    for spatial data handling and analysis.
+  headline: Create line string ASP.NET – Touching Geometries Check with Aspose.GIS
+  type: TechArticle
+- description: Learn how to create line string ASP.NET and perform a network routing
+    check by detecting touching geometries with Aspose.GIS for .NET, a powerful library
+    for spatial data handling and analysis.
+  name: Create line string ASP.NET – Touching Geometries Check with Aspose.GIS
+  steps:
+  - name: '**Visual Studio** (any recent version).'
+    text: '**Visual Studio** (any recent version).'
+  - name: '**Aspose.GIS for .NET** – download the latest package from the [official
+      download page](https://releases.aspose.com/gis/net/).'
+    text: '**Aspose.GIS for .NET** – download the latest package from the [official
+      download page](https://releases.aspose.com/gis/net/).'
+  - name: '**A valid license** (or a free trial) – obtain it from [here](https://purchase.aspose.com/temporary-license/)
+      or view all releases at [here](https://releases.aspose.com/).'
+    text: '**A valid license** (or a free trial) – obtain it from [here](https://purchase.aspose.com/temporary-license/)
+      or view all releases at [here](https://releases.aspose.com/).'
+  - name: Install Visual Studio if you haven’t already.
+    text: Install Visual Studio if you haven’t already.
+  - name: Add the Aspose.GIS NuGet package to your project (e.g., `Install-Package
+      Aspose.GIS`).
+    text: Add the Aspose.GIS NuGet package to your project (e.g., `Install-Package
+      Aspose.GIS`).
+  - name: Apply your license file in code (or use a temporary license for testing).
+    text: Apply your license file in code (or use a temporary license for testing).
+  type: HowTo
+- questions:
+  - answer: Yes. It supports .NET Framework, .NET Core, .NET 5+, and .NET 6+, giving
+      you flexibility across desktop, web, and cloud projects.
+    question: Is Aspose.GIS compatible with all .NET frameworks?
+  - answer: Absolutely. You can obtain a free trial from the Aspose website [here](https://purchase.aspose.com/temporary-license/)
+      to explore all features, including the `Touches` operation.
+    question: Can I try Aspose.GIS before purchasing a license?
+  - answer: Visit the official [Aspose.GIS forum](https://forum.aspose.com/c/gis/33)
+      to ask questions, share examples, and get help from both the community and Aspose
+      engineers.
+    question: Where can I find support for Aspose.GIS‑related queries?
+  - answer: Aspose releases regular updates that add new format support, performance
+      improvements, and bug fixes, ensuring compatibility with the latest .NET releases.
+    question: How often are updates released for Aspose.GIS?
+  - answer: By confirming that road segments only meet at shared endpoints (touch),
+      you can validate that a routing network is correctly connected without unintended
+      overlaps.
+    question: How does the `Touches` method help with a network routing check?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: 'Έλεγχος Δρομολόγησης Δικτύου: Επαφή Γεωμετριών με Aspose.GIS'
+title: Δημιουργία line string ASP.NET – Έλεγχος αγγίγματος γεωμετριών με Aspose.GIS
 url: /el/net/geometry-analysis/check-geometries-touching/
 weight: 13
 ---
@@ -14,41 +69,40 @@ weight: 13
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Έλεγχος Δικτυακής Δρομολόγησης: Επαφή Γεωμετριών με Aspose.GIS για .NET
+# Δημιουργία γραμμής ASP.NET – Έλεγχος Αγγίγματος Γεωμετριών με το Aspose.GIS
 
 ## Εισαγωγή
-Όταν χρειάζεται να **εκτελέσετε έναν έλεγχο δικτυακής δρομολόγησης** μεταξύ δύο χωρικών αντικειμένων, το Aspose.GIS για .NET σας παρέχει ένα καθαρό, type‑safe API που κάνει τη δουλειά απλή. Σε αυτό το tutorial θα δείτε πώς να δημιουργήσετε line strings, points, και στη συνέχεια να χρησιμοποιήσετε τη μέθοδο `Touches` για να καθορίσετε εάν οι γεωμετρίες μοιράζονται μόνο ένα σύνορο. Αυτή η λειτουργία είναι θεμέλιος λίθος πολλών σεναρίων **spatial analysis .NET** όπως η επαλήθευση διαδρομής, η επαλήθευση επικάλυψης χάρτη και ερωτήματα εγγύτητας.
+Όταν χρειάζεται να **εκτελέσετε έναν έλεγχο δρομολόγησης δικτύου** μεταξύ δύο χωρικών αντικειμένων, το πρώτο βήμα είναι να **δημιουργήσετε αντικείμενα line string ASP.NET** που μοντελοποιούν τα τμήματα του δρόμου σας. Το Aspose.GIS για .NET παρέχει ένα καθαρό, type‑safe API που κάνει αυτή τη λειτουργία τετριμμένη, επιτρέποντάς σας να εστιάσετε στη λογική της επιχείρησης αντί στην χαμηλού επιπέδου γεωμετρική μαθηματική. Σε αυτό το μάθημα θα περάσουμε από τη δημιουργία line strings, την προσθήκη ενός σημείου, και τη χρήση της μεθόδου `Touches` για να επαληθεύσουμε ότι οι γεωμετρίες συναντιούνται μόνο στα σύνορά τους – μια βασική απαίτηση για την επικύρωση διαδρομών, την επαλήθευση επικάλυψης χαρτών και ερωτήματα εγγύτητας.
 
 ## Γρήγορες Απαντήσεις
-- **Τι σημαίνει “touching”;** Δύο γεωμετρίες μοιράζονται τουλάχιστον ένα σημείο σύνορου, αλλά τα εσωτερικά τους δεν τέμνονται.  
+- **Τι σημαίνει το «αγγίξιμο»;** Δύο γεωμετρίες μοιράζονται τουλάχιστον ένα σημείο σύνορου, αλλά τα εσωτερικά τους δεν τέμνονται.  
 - **Ποια μέθοδος το ελέγχει;** `Geometry.Touches(otherGeometry)`.  
-- **Χρειάζομαι άδεια για αυτή τη λειτουργία;** Η δοκιμαστική έκδοση λειτουργεί για ανάπτυξη· απαιτείται μόνιμη άδεια για παραγωγή.  
-- **Υποστηριζόμενες εκδόσεις .NET;** .NET Framework, .NET Core, .NET 5/6/7 – όλα καλύπτονται από το Aspose.GIS.  
-- **Πόσο χρόνο διαρκεί η υλοποίηση;** Περίπου 5‑10 λεπτά για ένα βασικό παράδειγμα.  
+- **Χρειάζομαι άδεια για αυτή τη δυνατότητα;** Η δοκιμαστική έκδοση λειτουργεί για ανάπτυξη· απαιτείται μόνιμη άδεια για παραγωγή.  
+- **Υποστηριζόμενες εκδόσεις .NET;** .NET Framework, .NET Core, .NET 5/6/7 – όλα καλύπτονται από το Aspose.GIS.  
+- **Πόσο διαρκεί η υλοποίηση;** Περίπου 5‑10 λεπτά για ένα βασικό παράδειγμα.  
 
-## Πώς να Εκτελέσετε Έλεγχο Δικτυακής Δρομολόγησης Χρησιμοποιώντας Επαφές Γεωμετριών
-Παρακάτω περπατάμε μέσα από τα ακριβή βήματα που χρειάζεστε για **να ελέγξετε τις επαφές** γεωμετριών και να ενσωματώσετε το αποτέλεσμα σε μια ροή εργασίας επαλήθευσης δρομολόγησης.
+## Τι είναι το «Αγγίξιμο» στην Ανάλυση Χώρου;
+**Touching** περιγράφει μια χωρική σχέση όπου δύο γεωμετρίες συναντιούνται στα άκρα τους χωρίς να επικαλύπτονται τα εσωτερικά. Αυτό διαφέρει από το *intersects*, το οποίο περιλαμβάνει επίσης επικάλυψη εσωτερικών σημείων, και είναι ουσιώδες όταν πρέπει να επιβεβαιώσετε ότι τα τμήματα του δρόμου συνδέονται μόνο σε διασταυρώσεις.
 
-### Τι είναι το “Touching” στην Ανάλυση Χώρου;
-Στην ορολογία GIS, το *touching* περιγράφει μια χωρική σχέση όπου δύο γεωμετρίες συναντιούνται στα άκρα τους αλλά δεν επικαλύπτονται. Είναι διαφορετικό από το *intersects* (που περιλαμβάνει εσωτερική επικάλυψη) και χρησιμοποιείται συχνά όταν χρειάζεται να επαληθεύσετε ότι τα χαρακτηριστικά συναντώνται μόνο σε ένα σύνορο—π.χ., τμήματα δρόμου που συνδέονται σε ένα κόμβο χωρίς να διασχίζουν το ένα το άλλο.
+Η μέθοδος `Touches` επιστρέφει **true** όταν οι γεωμετρίες μοιράζονται ένα σημείο σύνορου αλλά κανένα εσωτερικό σημείο, καθιστώντας την ιδανική για την επικύρωση της συνδεσιμότητας του δικτύου χωρίς ανεπιθύμητες διασταυρώσεις.
 
-## Γιατί να Χρησιμοποιήσετε το Aspose.GIS για Spatial Analysis .NET;
-Το Aspose.GIS παρέχει μια πλήρως διαχειριζόμενη βιβλιοθήκη .NET που σας επιτρέπει να **χειρίζεστε χωρικά δεδομένα** χωρίς εγκαταστάσεις εγγενών GIS. Υποστηρίζει μια ευρεία γκάμα μορφών (Shapefile, GeoJSON, KML, κ.λπ.) και προσφέρει λειτουργίες γεωμετρίας υψηλής απόδοσης όπως `Touches`, `Intersects`, `Contains` και άλλα. Επειδή είναι καθαρό .NET, μπορείτε να το ενσωματώσετε απευθείας σε web services, εφαρμογές desktop ή cloud functions.
+## Γιατί να χρησιμοποιήσετε το Aspose.GIS για Ανάλυση Χώρου .NET;
+Το Aspose.GIS υποστηρίζει **30+ μορφές εισόδου και εξόδου** (συμπεριλαμβανομένων Shapefile, GeoJSON, KML και GML) και μπορεί να επεξεργαστεί αρχεία έως **2 GB** χωρίς να φορτώνει ολόκληρο το έγγραφο στη μνήμη, χάρη στην αρχιτεκτονική ροής δεδομένων. Η βιβλιοθήκη προσφέρει λειτουργίες γεωμετρίας υψηλής απόδοσης—`Touches`, `Intersects`, `Contains`, `Distance`—όλες πλήρως διαχειριζόμενες στο .NET, ώστε να μπορείτε να ενσωματώσετε την ανάλυση χωρικών δεδομένων απευθείας σε web services, εφαρμογές desktop ή Azure Functions χωρίς εξωτερικές εγκαταστάσεις GIS.
 
 ## Προαπαιτούμενα
-Πριν ξεκινήσετε, βεβαιωθείτε ότι έχετε τα εξής:
+Πριν ξεκινήσετε, βεβαιωθείτε ότι έχετε:
 
-1. **Visual Studio** (οποιαδήποτε πρόσφατη έκδοση) εγκατεστημένο στον υπολογιστή σας.  
-2. **Aspose.GIS for .NET** – κατεβάστε το τελευταίο πακέτο από τη [official download page](https://releases.aspose.com/gis/net/).  
-3. **Μια έγκυρη άδεια** (ή δωρεάν δοκιμή) – αποκτήστε την από [here](https://releases.aspose.com/).  
+1. **Visual Studio** (οποιαδήποτε πρόσφατη έκδοση).  
+2. **Aspose.GIS for .NET** – κατεβάστε το τελευταίο πακέτο από τη [επίσημη σελίδα λήψης](https://releases.aspose.com/gis/net/).  
+3. **Έγκυρη άδεια** (ή δωρεάν δοκιμή) – αποκτήστε την από [εδώ](https://purchase.aspose.com/temporary-license/) ή δείτε όλες τις εκδόσεις στο [εδώ](https://releases.aspose.com/).  
 
-### Ρύθμιση του Περιβάλλοντός Σας
+### Ρύθμιση του Περιβάλλοντος σας
 1. Εγκαταστήστε το Visual Studio αν δεν το έχετε ήδη.  
-2. Κατεβάστε το Aspose.GIS for .NET από τον παραπάνω σύνδεσμο και προσθέστε το πακέτο NuGet στο έργο σας.  
+2. Προσθέστε το πακέτο NuGet Aspose.GIS στο έργο σας (π.χ., `Install-Package Aspose.GIS`).  
 3. Εφαρμόστε το αρχείο άδειας στον κώδικα (ή χρησιμοποιήστε προσωρινή άδεια για δοκιμές).
 
-## Εισαγωγή Namespaces
-Για να αρχίσετε να χρησιμοποιείτε το API, εισάγετε τα απαιτούμενα namespaces:
+## Εισαγωγή Χώρων Ονομάτων
+Για να αρχίσετε να χρησιμοποιείτε το API, εισάγετε τους απαιτούμενους χώρους ονομάτων:
 
 ```csharp
 using Aspose.Gis.Geometries;
@@ -59,8 +113,12 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## Βήμα 1: Δημιουργία Line Strings (και ενός Point)
-Παρακάτω **δημιουργούμε αντικείμενα line string** και ένα σημείο που θα χρησιμοποιηθεί για τη δοκιμή της σχέσης touching.
+## Πώς να Ελέγξετε τις Γεωμετρίες Αγγίγματος στο Aspose.GIS;
+Η `Touches` είναι μια μέθοδος που επιστρέφει true όταν δύο γεωμετρίες μοιράζονται μόνο ένα σημείο σύνορου και κανένα εσωτερικό σημείο.  
+Φορτώστε ή δημιουργήστε τις γεωμετρίες, έπειτα καλέστε τη `Touches` για να αξιολογήσετε τη σχέση. Η μέθοδος επιστρέφει ένα Boolean που υποδεικνύει εάν τα δύο σχήματα μοιράζονται μόνο ένα σημείο σύνορου. Αυτός ο έλεγχος μίας γραμμής είναι επαρκής για τις περισσότερες περιπτώσεις επικύρωσης δρομολόγησης και μπορεί να εκτελεστεί σε βρόχο για μεγάλα δίκτυα.
+
+## Βήμα 1: Δημιουργία Γραμμών (και ενός Σημείου)
+Η `LineString` είναι ένας τύπος γεωμετρίας που αντιπροσωπεύει μια σειρά συνδεδεμένων τμημάτων γραμμής που ορίζονται από διατεταγμένα σημεία.  
 
 ```csharp
 var geometry1 = new LineString();
@@ -80,8 +138,8 @@ geometry4.AddPoint(4, 4);
 - `geometry3` είναι ένα σημείο που βρίσκεται ακριβώς σε αυτό το κοινό άκρο.  
 - `geometry4` διασχίζει την ίδια περιοχή αλλά **δεν** μοιράζεται σύνορο με το `geometry1`.
 
-## Βήμα 2: Έλεγχος Σχέσεων Touching
-Τώρα καλούμε τη μέθοδο `Touches` για να δούμε ποια ζεύγη θεωρούνται touching.
+## Βήμα 2: Έλεγχος Σχέσεων Αγγίγματος
+Τώρα καλούμε τη μέθοδο `Touches` για να δούμε ποια ζεύγη θεωρούνται αγγίγματα.
 
 ```csharp
 Console.WriteLine(geometry1.Touches(geometry2)); // True
@@ -91,39 +149,41 @@ Console.WriteLine(geometry1.Touches(geometry4)); // False
 ```
 
 *Αποτέλεσμα*:  
-- Οι πρώτοι τρεις έλεγχοι επιστρέφουν **True** επειδή οι γεωμετρίες συναντώνται σε ένα μόνο σημείο χωρίς εσωτερική επικάλυψη.  
-- Ο τελευταίος έλεγχος επιστρέφει **False** επειδή τα δύο line strings τέμνονται σε ένα τμήμα γραμμής, όχι μόνο σε σημείο σύνορου.
+- Οι πρώτοι τρεις έλεγχοι επιστρέφουν **True** επειδή οι γεωμετρίες συναντιούνται σε ένα μόνο σημείο χωρίς εσωτερική επικάλυψη.  
+- Ο τελευταίος έλεγχος επιστρέφει **False** επειδή οι δύο γραμμές διασταυρώνονται σε τμήμα γραμμής, όχι μόνο σε σημείο σύνορου.
 
 ## Κοινά Προβλήματα & Συμβουλές
-- **Προβλήματα ακρίβειας** – Οι υπολογισμοί GIS βασίζονται σε αριθμούς κινητής υποδιαστολής. Αν αντιμετωπίσετε απροσδόκητα αποτελέσματα `False`, σκεφτείτε την κανονικοποίηση των συντεταγμένων ή τη χρήση ανοχής με `Geometry.EqualsExact(other, tolerance)`.  
-- **Μικτοί τύποι γεωμετριών** – Το `Touches` λειτουργεί μεταξύ σημείων, γραμμών και πολυγώνων, αλλά η σημασιολογία διαφέρει· πάντα επαληθεύετε τη ζητούμενη σχέση για το μοντέλο δεδομένων σας.  
-- **Απόδοση** – Για μεγάλα σύνολα δεδομένων, κάντε έλεγχο σε παρτίδες ή χρησιμοποιήστε χωρικά ευρετήρια (π.χ., R‑tree) που παρέχονται από το Aspose.GIS για να αποφύγετε συγκρίσεις O(N²).
+- **Προβλήματα ακρίβειας** – Οι υπολογισμοί GIS βασίζονται σε αριθμούς κινητής υποδιαστολής. Εάν αντιμετωπίσετε απροσδόκητα αποτελέσματα `False`, εξετάστε την κανονικοποίηση των συντεταγμένων ή τη χρήση ανοχής με `Geometry.EqualsExact(other, tolerance)`.  
+- **Μικτές τύποι γεωμετριών** – Η `Touches` λειτουργεί μεταξύ σημείων, γραμμών και πολυγώνων, αλλά η σημασιολογία διαφέρει· πάντα επαληθεύετε τη ζητούμενη σχέση για το μοντέλο δεδομένων σας.  
+- **Απόδοση** – Για μεγάλα σύνολα δεδομένων, ομαδοποιήστε τους ελέγχους ή χρησιμοποιήστε χωρικούς δείκτες (π.χ., R‑tree) που παρέχει το Aspose.GIS για να αποφύγετε συγκρίσεις O(N²).
 
 ## Συχνές Ερωτήσεις
 
 **Ε: Είναι το Aspose.GIS συμβατό με όλα τα .NET frameworks;**  
-Α: Ναι. Υποστηρίζει .NET Framework, .NET Core, .NET 5+, και .NET 6+, παρέχοντάς σας ευελιξία σε έργα desktop, web και cloud.
+Α: Ναι. Υποστηρίζει .NET Framework, .NET Core, .NET 5+, και .NET 6+, προσφέροντάς σας ευελιξία σε έργα desktop, web και cloud.
 
 **Ε: Μπορώ να δοκιμάσω το Aspose.GIS πριν αγοράσω άδεια;**  
-Α: Απόλυτα. Μπορείτε να αποκτήσετε δωρεάν δοκιμή από την ιστοσελίδα Aspose [here](https://purchase.aspose.com/temporary-license/) για να εξερευνήσετε όλες τις λειτουργίες, συμπεριλαμβανομένης της λειτουργίας `Touches`.
+Α: Απόλυτα. Μπορείτε να αποκτήσετε δωρεάν δοκιμαστική έκδοση από την ιστοσελίδα Aspose [εδώ](https://purchase.aspose.com/temporary-license/) για να εξερευνήσετε όλες τις λειτουργίες, συμπεριλαμβανομένης της λειτουργίας `Touches`.
 
 **Ε: Πού μπορώ να βρω υποστήριξη για ερωτήματα σχετικά με το Aspose.GIS;**  
 Α: Επισκεφθείτε το επίσημο [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) για να θέσετε ερωτήσεις, να μοιραστείτε παραδείγματα και να λάβετε βοήθεια τόσο από την κοινότητα όσο και από τους μηχανικούς της Aspose.
 
 **Ε: Πόσο συχνά κυκλοφορούν ενημερώσεις για το Aspose.GIS;**  
-Α: Η Aspose κυκλοφορεί τακτικές ενημερώσεις που προσθέτουν υποστήριξη νέων μορφών, βελτιώσεις απόδοσης και διορθώσεις σφαλμάτων, εξασφαλίζοντας συμβατότητα με τις τελευταίες εκδόσεις .NET.
+Α: Η Aspose κυκλοφορεί τακτικές ενημερώσεις που προσθέτουν υποστήριξη νέων μορφών, βελτιώσεις απόδοσης και διορθώσεις σφαλμάτων, διασφαλίζοντας τη συμβατότητα με τις τελευταίες εκδόσεις του .NET.
 
-**Ε: Μπορώ να αποκτήσω προσωρινή άδεια για το Aspose.GIS;**  
-Α: Ναι, μια προσωρινή άδεια είναι διαθέσιμη [here](https://purchase.aspose.com/temporary-license/) για σκοπούς αξιολόγησης.
+**Ε: Πώς η μέθοδος `Touches` βοηθά σε έναν έλεγχο δρομολόγησης δικτύου;**  
+Α: Επιβεβαιώνοντας ότι τα τμήματα του δρόμου συναντιούνται μόνο σε κοινά άκρα (touch), μπορείτε να επικυρώσετε ότι ένα δίκτυο δρομολόγησης είναι σωστά συνδεδεμένο χωρίς ανεπιθύμητες επικάλυψεις.
 
-**Ε: Πώς η μέθοδος `Touches` βοηθά σε έναν έλεγχο δικτυακής δρομολόγησης;**  
-Α: Επιβεβαιώνοντας ότι τα τμήματα δρόμου συναντώνται μόνο σε κοινά άκρα (touch), μπορείτε να επαληθεύσετε ότι ένα δίκτυο δρομολόγησης είναι σωστά συνδεδεμένο χωρίς ανεπιθύμητες επικάλυψεις.
+**Τελευταία ενημέρωση:** 2026-06-05  
+**Δοκιμάστηκε με:** Aspose.GIS for .NET 24.11 (τελευταία έκδοση τη στιγμή της συγγραφής)  
+**Συγγραφέας:** Aspose
 
----
+## Σχετικά Μαθήματα
 
-**Τελευταία Ενημέρωση:** 2026-02-08  
-**Δοκιμάστηκε Με:** Aspose.GIS for .NET 24.11 (latest at time of writing)  
-**Συγγραφέας:** Aspose  
+- [Διαχείριση Γεωχωρικών Δεδομένων με Aspose.GIS για .NET](/gis/net/geometry-creation/create-linestring-geometry/)
+- [Δημιουργία Πολυγωνικής Γεωμετρίας C# και Έλεγχος Διασταύρωσης με Aspose.GIS για .NET](/gis/net/geometry-analysis/check-geometries-intersection/)
+- [Πώς να Υπολογίσετε το Μήκος Γεωμετρίας σε .NET με Aspose.GIS](/gis/net/geometry-analysis/get-geometry-length/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

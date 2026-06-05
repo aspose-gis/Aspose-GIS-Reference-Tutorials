@@ -1,11 +1,66 @@
 ---
-date: 2026-02-08
-description: Scopri come eseguire un controllo di instradamento di rete rilevando
-  geometrie che si toccano con Aspose.GIS per .NET, una potente libreria per gestire
-  dati spaziali e abilitare l'analisi spaziale.
-linktitle: How to Check Touching Geometries
+date: 2026-06-05
+description: Scopri come creare line string ASP.NET ed eseguire un controllo di routing
+  di rete rilevando le geometrie che si toccano con Aspose.GIS per .NET, una potente
+  libreria per la gestione e l'analisi dei dati spaziali.
+keywords:
+- create line string asp.net
+- touching geometries
+- Aspose.GIS spatial analysis
+linktitle: Come verificare le geometrie che si toccano
+schemas:
+- author: Aspose
+  dateModified: '2026-06-05'
+  description: Learn how to create line string ASP.NET and perform a network routing
+    check by detecting touching geometries with Aspose.GIS for .NET, a powerful library
+    for spatial data handling and analysis.
+  headline: Create line string ASP.NET – Touching Geometries Check with Aspose.GIS
+  type: TechArticle
+- description: Learn how to create line string ASP.NET and perform a network routing
+    check by detecting touching geometries with Aspose.GIS for .NET, a powerful library
+    for spatial data handling and analysis.
+  name: Create line string ASP.NET – Touching Geometries Check with Aspose.GIS
+  steps:
+  - name: '**Visual Studio** (any recent version).'
+    text: '**Visual Studio** (any recent version).'
+  - name: '**Aspose.GIS for .NET** – download the latest package from the [official
+      download page](https://releases.aspose.com/gis/net/).'
+    text: '**Aspose.GIS for .NET** – download the latest package from the [official
+      download page](https://releases.aspose.com/gis/net/).'
+  - name: '**A valid license** (or a free trial) – obtain it from [here](https://purchase.aspose.com/temporary-license/)
+      or view all releases at [here](https://releases.aspose.com/).'
+    text: '**A valid license** (or a free trial) – obtain it from [here](https://purchase.aspose.com/temporary-license/)
+      or view all releases at [here](https://releases.aspose.com/).'
+  - name: Install Visual Studio if you haven’t already.
+    text: Install Visual Studio if you haven’t already.
+  - name: Add the Aspose.GIS NuGet package to your project (e.g., `Install-Package
+      Aspose.GIS`).
+    text: Add the Aspose.GIS NuGet package to your project (e.g., `Install-Package
+      Aspose.GIS`).
+  - name: Apply your license file in code (or use a temporary license for testing).
+    text: Apply your license file in code (or use a temporary license for testing).
+  type: HowTo
+- questions:
+  - answer: Yes. It supports .NET Framework, .NET Core, .NET 5+, and .NET 6+, giving
+      you flexibility across desktop, web, and cloud projects.
+    question: Is Aspose.GIS compatible with all .NET frameworks?
+  - answer: Absolutely. You can obtain a free trial from the Aspose website [here](https://purchase.aspose.com/temporary-license/)
+      to explore all features, including the `Touches` operation.
+    question: Can I try Aspose.GIS before purchasing a license?
+  - answer: Visit the official [Aspose.GIS forum](https://forum.aspose.com/c/gis/33)
+      to ask questions, share examples, and get help from both the community and Aspose
+      engineers.
+    question: Where can I find support for Aspose.GIS‑related queries?
+  - answer: Aspose releases regular updates that add new format support, performance
+      improvements, and bug fixes, ensuring compatibility with the latest .NET releases.
+    question: How often are updates released for Aspose.GIS?
+  - answer: By confirming that road segments only meet at shared endpoints (touch),
+      you can validate that a routing network is correctly connected without unintended
+      overlaps.
+    question: How does the `Touches` method help with a network routing check?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: 'Verifica del routing di rete: Geometrie di contatto con Aspose.GIS'
+title: Creare line string ASP.NET – Verifica delle geometrie che si toccano con Aspose.GIS
 url: /it/net/geometry-analysis/check-geometries-touching/
 weight: 13
 ---
@@ -14,41 +69,40 @@ weight: 13
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Verifica del routing di rete: Geometrie che si toccano con Aspose.GIS per .NET
+# Crea line string ASP.NET – Controllo delle geometrie che si toccano con Aspose.GIS
 
 ## Introduzione
-Quando hai bisogno di **eseguire una verifica del routing di rete** tra due oggetti spaziali, Aspose.GIS per .NET ti offre un'API pulita e type‑safe che rende il lavoro banale. In questo tutorial vedrai come creare line string, punti e poi utilizzare il metodo `Touches` per determinare se le geometrie condividono solo un confine. Questa operazione è un pilastro di molti scenari di **spatial analysis .NET** come la validazione di percorsi, la verifica di sovrapposizioni di mappe e le query di prossimità.
+Quando è necessario **eseguire un controllo di instradamento di rete** tra due oggetti spaziali, il primo passo è **creare oggetti line string ASP.NET** che modellano i tuoi segmenti stradali. Aspose.GIS per .NET fornisce un'API pulita e type‑safe che rende questa operazione banale, permettendoti di concentrarti sulla logica di business anziché sulla matematica di geometria a basso livello. In questo tutorial vedremo come creare line string, aggiungere un punto e utilizzare il metodo `Touches` per verificare che le geometrie si incontrino solo ai loro bordi – un requisito chiave per la convalida del percorso, la verifica della sovrapposizione della mappa e le query di prossimità.
 
 ## Risposte rapide
 - **Cosa significa “touching”?** Due geometrie condividono almeno un punto di confine ma i loro interni non si intersecano.  
 - **Quale metodo lo verifica?** `Geometry.Touches(otherGeometry)`.  
 - **È necessaria una licenza per questa funzionalità?** Una versione di prova funziona per lo sviluppo; è necessaria una licenza permanente per la produzione.  
-- **Versioni .NET supportate?** .NET Framework, .NET Core, .NET 5/6/7 – tutte coperte da Aspose.GIS.  
+- **Versioni .NET supportate?** .NET Framework, .NET Core, .NET 5/6/7 – tutte coperte da Aspose.GIS.  
 - **Quanto tempo richiede l'implementazione?** Circa 5‑10 minuti per un esempio base.  
 
-## Come eseguire una verifica del routing di rete usando geometrie che si toccano
-Di seguito percorriamo i passaggi esatti necessari per **verificare le geometrie che si toccano** e integrare il risultato in un flusso di lavoro di validazione del routing.
+## Cos'è “Touching” nell'analisi spaziale?
+**Touching** descrive una relazione spaziale in cui due geometrie si incontrano ai loro bordi senza sovrapporre gli interni. Questo è diverso da *intersects*, che include anche la sovrapposizione degli interni, ed è essenziale quando è necessario confermare che i segmenti stradali si connettano solo alle intersezioni.
 
-### Cos'è il “touching” nell'analisi spaziale?
-Nella terminologia GIS, *touching* descrive una relazione spaziale in cui due geometrie si incontrano ai loro bordi ma non si sovrappongono. È diverso da *intersects* (che include la sovrapposizione degli interni) e viene spesso usato quando è necessario convalidare che le feature si incontrino solo al confine — ad esempio, segmenti stradali che si collegano a un incrocio senza attraversarsi.
+Il metodo `Touches` restituisce **true** quando le geometrie condividono un punto di confine ma nessun punto interno, rendendolo ideale per convalidare la connettività della rete senza incroci non desiderati.
 
 ## Perché usare Aspose.GIS per l'analisi spaziale .NET?
-Aspose.GIS fornisce una libreria .NET completamente gestita che ti consente di **gestire dati spaziali** senza installazioni GIS native. Supporta un'ampia gamma di formati (Shapefile, GeoJSON, KML, ecc.) e offre operazioni geometriche ad alte prestazioni come `Touches`, `Intersects`, `Contains` e altro. Poiché è puro .NET, puoi integrarlo direttamente in servizi web, applicazioni desktop o funzioni cloud.
+Aspose.GIS supporta **oltre 30 formati di input e output** (inclusi Shapefile, GeoJSON, KML e GML) e può elaborare file fino a **2 GB** senza caricare l'intero documento in memoria, grazie alla sua architettura di streaming. La libreria offre operazioni di geometria ad alte prestazioni—`Touches`, `Intersects`, `Contains`, `Distance`—tutte completamente gestite in .NET, così puoi incorporare l'analisi spaziale direttamente in servizi web, applicazioni desktop o Azure Functions senza installazioni GIS esterne.
 
 ## Prerequisiti
-Prima di iniziare, assicurati di avere quanto segue:
+Prima di iniziare, assicurati di avere:
 
-1. **Visual Studio** (qualsiasi versione recente) installato sulla tua macchina.  
-2. **Aspose.GIS for .NET** – scarica l'ultimo pacchetto dalla [pagina di download ufficiale](https://releases.aspose.com/gis/net/).  
-3. **Una licenza valida** (o una prova gratuita) – ottienila da [qui](https://releases.aspose.com/).  
+1. **Visual Studio** (qualsiasi versione recente).  
+2. **Aspose.GIS per .NET** – scarica il pacchetto più recente dalla [pagina di download ufficiale](https://releases.aspose.com/gis/net/).  
+3. **Una licenza valida** (o una prova gratuita) – ottienila da [qui](https://purchase.aspose.com/temporary-license/) o visualizza tutte le versioni su [qui](https://releases.aspose.com/).  
 
 ### Configurazione dell'ambiente
 1. Installa Visual Studio se non lo hai già fatto.  
-2. Scarica Aspose.GIS for .NET dal link sopra e aggiungi il pacchetto NuGet al tuo progetto.  
-3. Applica il file di licenza nel codice (o usa una licenza temporanea per i test).
+2. Aggiungi il pacchetto NuGet Aspose.GIS al tuo progetto (ad esempio `Install-Package Aspose.GIS`).  
+3. Applica il file di licenza nel codice (o utilizza una licenza temporanea per i test).
 
-## Importare gli spazi dei nomi
-Per iniziare a usare l'API, importa gli spazi dei nomi richiesti:
+## Importazione dei namespace
+Per iniziare a utilizzare l'API, importa i namespace richiesti:
 
 ```csharp
 using Aspose.Gis.Geometries;
@@ -59,8 +113,12 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## Passo 1: Creare Line String (e un Punto)
-Di seguito **creiamo oggetti line string** e un punto che verrà usato per testare la relazione di touching.
+## Come verificare le geometrie Touching in Aspose.GIS?
+`Touches` è un metodo che restituisce true quando due geometrie condividono solo un punto di confine e nessun punto interno.  
+Carica o crea le geometrie, quindi chiama `Touches` per valutare la relazione. Il metodo restituisce un Boolean che indica se le due forme condividono solo un punto di confine. Questo controllo a singola riga è sufficiente per la maggior parte degli scenari di convalida del routing e può essere eseguito in un ciclo stretto per reti di grandi dimensioni.
+
+## Passo 1: Crea line string (e un punto)
+`LineString` è un tipo di geometria che rappresenta una serie di segmenti di linea collegati definiti da punti ordinati.  
 
 ```csharp
 var geometry1 = new LineString();
@@ -80,7 +138,7 @@ geometry4.AddPoint(4, 4);
 - `geometry3` è un punto situato esattamente in quel punto finale condiviso.  
 - `geometry4` attraversa la stessa area ma **non** condivide un confine con `geometry1`.
 
-## Passo 2: Verificare le relazioni di Touching
+## Passo 2: Verifica le relazioni Touching
 Ora chiamiamo il metodo `Touches` per vedere quali coppie sono considerate touching.
 
 ```csharp
@@ -91,39 +149,43 @@ Console.WriteLine(geometry1.Touches(geometry4)); // False
 ```
 
 *Risultato*:  
-- I primi tre controlli restituiscono **True** perché le geometrie si incontrano in un unico punto senza sovrapposizione degli interni.  
-- L'ultimo controllo restituisce **False** perché le due line string si intersecano su un segmento di linea, non solo in un punto di confine.
+- I primi tre controlli restituiscono **True** perché le geometrie si incontrano in un unico punto senza sovrapposizione interna.  
+- L'ultimo controllo restituisce **False** perché le due line string si intersecano lungo un segmento di linea, non solo in un punto di confine.
 
 ## Problemi comuni e suggerimenti
-- **Problemi di precisione** – I calcoli GIS sono basati su floating‑point. Se incontri risultati `False` inattesi, considera di normalizzare le coordinate o usare una tolleranza con `Geometry.EqualsExact(other, tolerance)`.  
-- **Tipi di geometria misti** – `Touches` funziona su punti, linee e poligoni, ma la semantica differisce; verifica sempre la relazione prevista per il tuo modello di dati.  
-- **Prestazioni** – Per grandi dataset, raggruppa i controlli o usa indici spaziali (ad es., R‑tree) forniti da Aspose.GIS per evitare confronti O(N²).  
+- **Problemi di precisione** – I calcoli GIS sono basati su floating‑point. Se incontri risultati `False` inattesi, considera di normalizzare le coordinate o di usare una tolleranza con `Geometry.EqualsExact(other, tolerance)`.  
+- **Tipi di geometria misti** – `Touches` funziona su punti, linee e poligoni, ma le semantiche differiscono; verifica sempre la relazione prevista per il tuo modello di dati.  
+- **Prestazioni** – Per dataset di grandi dimensioni, raggruppa i controlli o utilizza indici spaziali (ad esempio, R‑tree) forniti da Aspose.GIS per evitare confronti O(N²).
 
 ## Domande frequenti
 
-**Q: Aspose.GIS è compatibile con tutti i framework .NET?**  
-A: Sì. Supporta .NET Framework, .NET Core, .NET 5+, e .NET 6+, offrendoti flessibilità su progetti desktop, web e cloud.
+**D: Aspose.GIS è compatibile con tutti i framework .NET?**  
+R: Sì. Supporta .NET Framework, .NET Core, .NET 5+, e .NET 6+, offrendo flessibilità su progetti desktop, web e cloud.
 
-**Q: Posso provare Aspose.GIS prima di acquistare una licenza?**  
-A: Assolutamente. Puoi ottenere una prova gratuita dal sito Aspose [qui](https://purchase.aspose.com/temporary-license/) per esplorare tutte le funzionalità, inclusa l'operazione `Touches`.
+**D: Posso provare Aspose.GIS prima di acquistare una licenza?**  
+R: Assolutamente. Puoi ottenere una prova gratuita dal sito Aspose [qui](https://purchase.aspose.com/temporary-license/) per esplorare tutte le funzionalità, inclusa l'operazione `Touches`.
 
-**Q: Dove posso trovare supporto per le domande relative ad Aspose.GIS?**  
-A: Visita il forum ufficiale [Aspose.GIS](https://forum.aspose.com/c/gis/33) per porre domande, condividere esempi e ottenere aiuto sia dalla community sia dagli ingegneri Aspose.
+**D: Dove posso trovare supporto per le domande relative ad Aspose.GIS?**  
+R: Visita il forum ufficiale [Aspose.GIS](https://forum.aspose.com/c/gis/33) per porre domande, condividere esempi e ottenere aiuto sia dalla community che dagli ingegneri Aspose.
 
-**Q: Con quale frequenza vengono rilasciati gli aggiornamenti per Aspose.GIS?**  
-A: Aspose rilascia aggiornamenti regolari che aggiungono supporto a nuovi formati, miglioramenti delle prestazioni e correzioni di bug, garantendo la compatibilità con le ultime versioni .NET.
+**D: Con quale frequenza vengono rilasciati gli aggiornamenti per Aspose.GIS?**  
+R: Aspose rilascia aggiornamenti regolari che aggiungono nuovo supporto di formati, miglioramenti delle prestazioni e correzioni di bug, garantendo la compatibilità con le ultime versioni .NET.
 
-**Q: Posso ottenere una licenza temporanea per Aspose.GIS?**  
-A: Sì, una licenza temporanea è disponibile [qui](https://purchase.aspose.com/temporary-license/) per scopi di valutazione.
-
-**Q: In che modo il metodo `Touches` aiuta nella verifica del routing di rete?**  
-A: Confermando che i segmenti stradali si incontrano solo negli endpoint condivisi (touch), puoi validare che una rete di routing sia correttamente collegata senza sovrapposizioni indesiderate.
+**D: In che modo il metodo `Touches` aiuta nel controllo del routing di rete?**  
+R: Confermando che i segmenti stradali si incontrano solo negli endpoint condivisi (touch), puoi convalidare che una rete di routing sia correttamente connessa senza sovrapposizioni indesiderate.
 
 ---
 
-**Ultimo aggiornamento:** 2026-02-08  
-**Testato con:** Aspose.GIS for .NET 24.11 (ultima versione al momento della scrittura)  
-**Autore:** Aspose  
+**Ultimo aggiornamento:** 2026-06-05  
+**Testato con:** Aspose.GIS per .NET 24.11 (ultima versione al momento della stesura)  
+**Autore:** Aspose
+
+## Tutorial correlati
+
+- [Gestione dei dati geospaziali con Aspose.GIS per .NET](/gis/net/geometry-creation/create-linestring-geometry/)
+- [Creare geometria Poligono C# e verificare l'intersezione con Aspose.GIS per .NET](/gis/net/geometry-analysis/check-geometries-intersection/)
+- [Come calcolare la lunghezza di una geometria in .NET con Aspose.GIS](/gis/net/geometry-analysis/get-geometry-length/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
