@@ -9,9 +9,9 @@ url: /ja/net/geometry-analysis/calculate-distance-between-geometries/
 weight: 21
 ---
 
-{{< blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/tutorial-page-section >}}
 {{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
 
 # Aspose.GIS を使用したジオメトリ間の距離計算方法
 
@@ -143,7 +143,9 @@ A: はい、`Geometry.GetNearestPoints(Geometry other)` を使用すると、両
 **テスト済みバージョン:** Aspose.GIS 24.11 for .NET  
 **作者:** Aspose  
 
-{{< /blocks/products/pf/main-wrap-class >}}
+{{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}
