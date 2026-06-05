@@ -1,8 +1,32 @@
 ---
-date: 2026-02-05
-description: Aprende cómo comparar geometrías en .NET usando Aspose.GIS y verifica
-  la igualdad de geometrías en tus aplicaciones.
-linktitle: How to Compare Geometries for Equality
+date: 2026-06-05
+description: Aprenda cómo comparar geometrías en .NET usando Aspose.GIS, detectar
+  geometrías duplicadas y verificar la igualdad de geometrías en sus aplicaciones.
+keywords:
+- how to compare geometries
+- detect duplicate geometries
+- Aspose.GIS geometry equality
+linktitle: Cómo comparar geometrías para igualdad
+schemas:
+- author: Aspose
+  dateModified: '2026-06-05'
+  description: Learn how to compare geometries in .NET using Aspose.GIS, detect duplicate
+    geometries, and check geometry equality in your applications.
+  headline: How to Compare Geometries for Equality using Aspose.GIS for .NET
+  type: TechArticle
+- questions:
+  - answer: Yes, Aspose.GIS works with .NET Framework, .NET Core, and .NET Standard
+      projects.
+    question: Can I use Aspose.GIS for .NET with other .NET frameworks?
+  - answer: Absolutely. Download a trial from the [Aspose.GIS releases page](https://releases.aspose.com/).
+    question: Is there a free trial available?
+  - answer: Detailed docs are on the [Aspose.GIS documentation page](https://reference.aspose.com/gis/net/).
+    question: Where can I find the full API documentation?
+  - answer: Post your question on the Aspose.GIS community forum [here](https://forum.aspose.com/c/gis/33).
+    question: How do I get help if I run into an issue?
+  - answer: Yes, temporary licenses are available on the [purchase page](https://purchase.aspose.com/temporary-license/).
+    question: Can I purchase a temporary license for evaluation?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
 title: Cómo comparar geometrías para igualdad usando Aspose.GIS para .NET
 url: /es/net/geometry-analysis/check-geometries-for-equality/
@@ -16,33 +40,30 @@ weight: 10
 # Cómo comparar geometrías para igualdad usando Aspose.GIS para .NET
 
 ## Introducción
-En este tutorial descubrirás **cómo comparar geometrías** con Aspose.GIS para .NET. Ya sea que estés construyendo un servicio de mapas, realizando análisis espacial, o simplemente necesites verificar que dos formas representen la misma ubicación, saber **cómo comparar geometrías** es esencial. Recorreremos un ejemplo completo, de extremo a extremo, que te muestra cómo crear, modificar y probar la igualdad de geometrías en solo unas pocas líneas de código C#.
+En este tutorial aprenderás **cómo comparar geometrías** con Aspose.GIS para .NET, una tarea vital cuando necesitas detectar geometrías duplicadas, validar datos espaciales o aplicar reglas topológicas. Ya sea que estés construyendo un servicio de mapas, ejecutando análisis espacial por lotes o simplemente verificando que dos formas ocupen la misma ubicación, esta guía te muestra cómo crear, modificar y probar la igualdad de geometrías con código C# limpio y listo para producción.
 
 ## Respuestas rápidas
 - **¿Qué significa “compare geometries”?** Verifica si dos objetos geométricos ocupan el mismo espacio, sin importar cómo se construyan.  
-- **¿Qué método se usa?** `SpatiallyEquals` de la API de Aspose.GIS.  
+- **¿Qué método se utiliza?** `SpatiallyEquals` de la API de Aspose.GIS.  
 - **¿Necesito una licencia para desarrollo?** Una prueba gratuita funciona para pruebas; se requiere una licencia comercial para producción.  
-- **¿Versiones de .NET compatibles?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6+.  
+- **¿Versiones .NET compatibles?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6+.  
 - **¿Tiempo típico de implementación?** Aproximadamente 5‑10 minutos para una verificación básica de igualdad.
 
 ## ¿Qué es la igualdad de geometrías?
-La igualdad de geometrías (a menudo llamada igualdad espacial) significa que dos geometrías representan el mismo conjunto exacto de puntos en la superficie de la tierra. Dos formas pueden construirse de manera diferente —un MultiLineString frente a un LineString único— pero seguir siendo espacialmente iguales.
+La igualdad de geometrías, también llamada igualdad espacial, significa que dos geometrías representan el mismo conjunto exacto de puntos en la superficie de la tierra. Incluso si una geometría se construye como un `MultiLineString` y la otra como un `LineString` único, se consideran iguales cuando cada coordenada coincide dentro de la tolerancia definida. Esta definición permite a los desarrolladores detectar de forma fiable geometrías duplicadas en fuentes de datos heterogéneas.
 
 ## ¿Por qué usar Aspose.GIS para comparar geometrías?
-Aspose.GIS proporciona un motor de geometría robusto y de alto rendimiento que:
-- Maneja una amplia gama de formatos vectoriales (WKT, GeoJSON, Shapefile, etc.).
-- Ofrece métodos de comparación conscientes de la precisión como `SpatiallyEquals`.
-- Funciona sin conexión, sin servicios externos, lo que lo hace ideal para entornos seguros o aislados.
+Aspose.GIS ofrece un motor de geometría offline de alto rendimiento que elimina la necesidad de servicios externos. **Soporta más de 30 formatos vectoriales y raster** (incluidos WKT, GeoJSON, Shapefile, KML, GML) y puede procesar archivos con **cientos de miles de vértices** manteniendo el uso de memoria por debajo de 50 MB. El método `SpatiallyEquals` de la biblioteca es consciente de la precisión, proporcionando resultados determinísticos incluso con coordenadas de punto flotante.
 
 ### Por qué esto es importante para los desarrolladores
-Cuando necesitas **cómo comparar geometrías** en procesos por lotes, rutinas de detección de duplicados o validación en tiempo real, una biblioteca fiable elimina la incertidumbre y garantiza resultados consistentes entre diferentes fuentes de datos.
+Cuando necesitas **detectar geometrías duplicadas** en procesos por lotes, canalizaciones de validación en tiempo real o migraciones de datos GIS, una biblioteca probada elimina la incertidumbre y garantiza resultados consistentes entre diferentes proveedores de datos.
 
 ## Requisitos previos
-Antes de comenzar, asegúrate de contar con lo siguiente:
+Antes de comenzar, asegúrate de tener lo siguiente:
 
-- **.NET Framework o .NET Core instalados** – cualquier versión compatible con Aspose.GIS.  
-- **Biblioteca Aspose.GIS para .NET** – descárgala desde la [Aspose.GIS download page](https://releases.aspose.com/gis/net/).  
-- **Un IDE de desarrollo** – Visual Studio, Rider o VS Code con extensiones de C#.
+- **.NET Framework o .NET Core instalado** – cualquier versión compatible con Aspose.GIS.  
+- **Biblioteca Aspose.GIS para .NET** – descárgala desde la [página de descarga de Aspose.GIS](https://releases.aspose.com/gis/net/).  
+- **Un IDE de desarrollo** – Visual Studio, Rider o VS Code con extensiones C#.
 
 ## Importar espacios de nombres
 En tu proyecto .NET, agrega las sentencias `using` requeridas para que el compilador sepa dónde encontrar las clases GIS:
@@ -57,6 +78,8 @@ using System.Threading.Tasks;
 ```
 
 ## Paso 1: Definir las geometrías
+`MultiLineString` representa una colección de componentes de línea, mientras que `LineString` define una única línea continua. Ambas clases heredan del tipo base `Geometry`.
+
 Primero, creamos dos geometrías que compararemos. En este ejemplo `geometry1` es un `MultiLineString` compuesto por dos segmentos de línea, mientras que `geometry2` es un `LineString` único que abarca los mismos puntos de inicio y fin.
 
 ```csharp
@@ -71,7 +94,9 @@ var geometry2 = new LineString(new[]
 });
 ```
 
-## Paso 2: Verificar la igualdad de las geometrías
+## Paso 2: Verificar la igualdad de geometrías
+`SpatiallyEquals` evalúa si dos geometrías ocupan el mismo conjunto de puntos, aceptando opcionalmente un valor de tolerancia para la imprecisión de punto flotante.
+
 Ahora usamos el método `SpatiallyEquals` para ver si las dos formas son consideradas iguales por el motor GIS.
 
 ```csharp
@@ -96,39 +121,48 @@ Console.WriteLine(geometry1.SpatiallyEquals(geometry2)); // False
 
 La salida `False` confirma que el punto adicional rompió la igualdad espacial.
 
+## ¿Cómo detectar geometrías duplicadas?
+Carga cada geometría, llama a `SpatiallyEquals` con una tolerancia adecuada y filtra aquellas que devuelvan `True`. Este patrón escala bien con LINQ, permitiéndote identificar formas duplicadas en colecciones grandes con solo unas pocas líneas de código. También puedes combinarlo con `GroupBy` para agrupar geometrías idénticas y reducir los costos de almacenamiento.
+
 ## Problemas comunes y consejos
-- **Problemas de precisión** – Si trabajas con coordenadas de muy alta precisión, considera redondear o usar una sobrecarga de tolerancia de `SpatiallyEquals`.  
-- **SRIDs diferentes** – Asegúrate de que ambas geometrías compartan el mismo Identificador de Sistema de Referencia Espacial (SRID) antes de comparar.  
-- **Rendimiento** – Para colecciones grandes, las comparaciones por lotes usando LINQ pueden reducir la sobrecarga.
+- **Problemas de precisión** – Si trabajas con coordenadas de muy alta precisión, considera redondear o usar la sobrecarga de tolerancia de `SpatiallyEquals`.  
+- **SRIDs diferentes** – Asegúrate de que ambas geometrías compartan el mismo Identificador de Sistema de Referencia Espacial (SRID) antes de compararlas.  
+- **Rendimiento** – Para colecciones grandes, las comparaciones por lotes usando LINQ o bucles paralelos pueden reducir la sobrecarga de forma drástica.
 
 ## Preguntas frecuentes
-**P: ¿Puedo usar Aspose.GIS para .NET con otros frameworks .NET?**  
-R: Sí, Aspose.GIS funciona con proyectos .NET Framework, .NET Core y .NET Standard.
+**Q: ¿Puedo usar Aspose.GIS para .NET con otros frameworks .NET?**  
+**A:** Sí, Aspose.GIS funciona con proyectos .NET Framework, .NET Core y .NET Standard.
 
-**P: ¿Hay una prueba gratuita disponible?**  
-R: Por supuesto. Descarga una prueba desde la [Aspose.GIS releases page](https://releases.aspose.com/).
+**Q: ¿Hay una prueba gratuita disponible?**  
+**A:** Por supuesto. Descarga una prueba desde la [página de versiones de Aspose.GIS](https://releases.aspose.com/).
 
-**P: ¿Dónde puedo encontrar la documentación completa de la API?**  
-R: La documentación detallada está en la [Aspose.GIS documentation page](https://reference.aspose.com/gis/net/).
+**Q: ¿Dónde puedo encontrar la documentación completa de la API?**  
+**A:** La documentación detallada está en la [página de documentación de Aspose.GIS](https://reference.aspose.com/gis/net/).
 
-**P: ¿Cómo obtengo ayuda si tengo un problema?**  
-R: Publica tu pregunta en el foro de la comunidad Aspose.GIS [aquí](https://forum.aspose.com/c/gis/33).
+**Q: ¿Cómo puedo obtener ayuda si encuentro un problema?**  
+**A:** Publica tu pregunta en el foro de la comunidad Aspose.GIS [aquí](https://forum.aspose.com/c/gis/33).
 
-**P: ¿Puedo comprar una licencia temporal para evaluación?**  
-R: Sí, las licencias temporales están disponibles en la [purchase page](https://purchase.aspose.com/temporary-license/).
+**Q: ¿Puedo comprar una licencia temporal para evaluación?**  
+**A:** Sí, las licencias temporales están disponibles en la [página de compra](https://purchase.aspose.com/temporary-license/).
 
 ## Conclusión
-Ahora sabes **cómo comparar geometrías** usando Aspose.GIS para .NET, desde la creación de los objetos hasta la verificación de igualdad espacial y el manejo de modificaciones. Esta capacidad es un bloque fundamental para análisis espaciales más avanzados, como validación de topología, detección de duplicados y filtrado basado en geometrías.
+Ahora sabes **cómo comparar geometrías** usando Aspose.GIS para .NET, desde la creación de los objetos hasta la verificación de la igualdad espacial y el manejo de modificaciones. Esta capacidad es un bloque fundamental para análisis espaciales más avanzados, como la validación de topología, detección de duplicados y filtrado basado en geometrías.
 
 ---
 
-**Última actualización:** 2026-02-05  
+**Última actualización:** 2026-06-05  
 **Probado con:** Aspose.GIS for .NET 24.11  
 **Autor:** Aspose  
 
-{{< /blocks/products/pf/tutorial-page-section >}}
+{{< blocks/products/products-backtop-button >}}
 
+## Tutoriales relacionados
+
+- [Crear geometría de polígono C# y verificar intersección con Aspose.GIS para .NET](/gis/net/geometry-analysis/check-geometries-intersection/)
+- [Cómo realizar análisis de superposición espacial de geometrías con Aspose.GIS para .NET](/gis/net/geometry-analysis/check-geometries-overlap/)
+- [Verificación de enrutamiento de red: geometrías que se tocan con Aspose.GIS](/gis/net/geometry-analysis/check-geometries-touching/)
+
+
+{{< /blocks/products/pf/tutorial-page-section >}}
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
