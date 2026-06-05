@@ -9,9 +9,9 @@ url: /pl/net/geo-data-conversion/convert-geojson-to-topojson-with-specific-objec
 weight: 12
 ---
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
 
 # Jak przekonwertować GeoJSON na TopoJSON z określoną nazwą obiektu
 
@@ -120,8 +120,9 @@ O: Tak — poprzez strumieniowanie źródła lub zwiększenie przydziału pamię
 **Testowano z:** Aspose.GIS forze wydanie)  
 **Autor:** Aspose  
 
+{{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/tutorial-page-section >}}
-
-{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/products-backtop-button >}}
