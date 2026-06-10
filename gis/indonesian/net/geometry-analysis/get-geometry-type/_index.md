@@ -1,8 +1,8 @@
 ---
-date: 2025-12-09
+date: 2026-02-13
 description: Pelajari cara membuat geometri titik dan mendapatkan jenis geometri menggunakan
-  Aspose.GIS untuk .NET. Panduan langkah demi langkah ini mencakup prasyarat, contoh
-  kode, dan jebakan umum.
+  Aspose.GIS untuk .NET. Panduan ini menunjukkan cara membuat geometri titik, mendapatkan
+  jenis geometri, dan menghindari jebakan umum.
 linktitle: Get Geometry Type
 second_title: Aspose.GIS .NET API
 title: Cara Membuat Geometri Titik dan Mendapatkan Jenis Geometri dengan Aspose.GIS
@@ -17,38 +17,44 @@ weight: 23
 
 # Cara Membuat Geometri Titik dan Mendapatkan Tipe Geometri dengan Aspose.GIS untuk .NET
 
-## Introduction  
-Jika Anda perlu **membuat geometri titik** dan dengan cepat **menentukan tipe geometri** dalam aplikasi .NET, Aspose.GIS menyediakan API yang bersih dan efisien. Pada tutorial ini Anda akan melihat secara tepat cara membangun objek `Point`, mengambil `GeometryType`‑nya, dan menampilkan hasilnya—semua hanya dengan beberapa baris kode C#. Pada akhir tutorial, Anda akan memahami mengapa mengetahui tipe geometri penting saat bekerja dengan dataset spasial, dan Anda siap menerapkan pola yang sama pada kelas geometri lainnya.
+## Pendahuluan  
+Jika Anda perlu **membuat geometri titik** dan dengan cepat **menentukan tipe geometri** dalam aplikasi .NET, Aspose.GIS menyediakan API yang bersih dan efisien. Pada tutorial ini Anda akan melihat secara tepat cara membuat objek `Point`, mengambil `GeometryType`‑nya, dan menampilkan hasilnya—semua dengan hanya beberapa baris kode C#. Pada akhir tutorial, Anda akan memahami mengapa mengetahui tipe geometri penting saat bekerja dengan dataset spasial, dan Anda akan siap menerapkan pola yang sama pada kelas geometri lainnya.
 
-## Quick Answers
-- **Apa arti “create point geometry”?** Artinya membuat instance objek `Point` yang mewakili satu lokasi latitude/longitude.  
+## Jawaban Cepat
+- **Apa arti “create point geometry”?** Artinya membuat sebuah objek `Point` yang mewakili satu lokasi latitude/longitude.  
 - **Bagaimana cara mendapatkan tipe geometri?** Gunakan properti `GeometryType` dari setiap instance geometri (misalnya, `point.GeometryType`).  
 - **Paket NuGet mana yang diperlukan?** `Aspose.GIS` untuk .NET – instal dari tautan unduhan resmi.  
-- **Apakah saya memerlukan lisensi untuk pengembangan?** Versi percobaan gratis cukup untuk pengujian; lisensi komersial diperlukan untuk produksi.  
-- **Bisakah ini digunakan dengan .NET 6+?** Ya, Aspose.GIS mendukung .NET 5, .NET 6, dan versi selanjutnya.
+- **Apakah saya memerlukan lisensi untuk pengembangan?** Trial gratis dapat digunakan untuk pengujian; lisensi komersial diperlukan untuk produksi.  
+- **Apakah ini dapat digunakan dengan .NET 6+?** Ya, Aspose.GIS mendukung .NET 5, .NET 6, dan versi selanjutnya.
 
-## What is “create point geometry”?
-Membuat geometri titik berarti membangun objek spasial yang menyimpan sepasang koordinat (latitude dan longitude). Ini adalah bentuk geometri paling sederhana dan menjadi blok bangunan untuk operasi spasial yang lebih kompleks seperti perhitungan jarak, join spasial, dan visualisasi peta.
+## Apa itu “create point geometry”?
+Membuat geometri titik berarti membangun objek spasial yang menyimpan satu pasang koordinat (latitude dan longitude). Ini adalah bentuk geometri paling sederhana dan menjadi blok bangunan untuk operasi spasial yang lebih kompleks seperti perhitungan jarak, join spasial, dan visualisasi peta.
 
-## Why determine geometry type?
-Mengetahui tipe geometri (Point, LineString, Polygon, dll.) memungkinkan Anda menulis kode generik yang dapat menangani bentuk apa pun dengan aman. Ini sangat berguna ketika Anda membaca geometri yang tidak diketahui dari file (Shapefile, GeoJSON, dll.) dan perlu memutuskan cara memproses masing‑masing.
+## Mengapa menentukan tipe geometri?
+Mengetahui tipe geometri (Point, LineString, Polygon, dll.) memungkinkan Anda menulis kode generik yang dapat menangani bentuk apa pun dengan aman. Hal ini sangat berguna ketika Anda membaca geometri yang tidak diketahui dari file (Shapefile, GeoJSON, dll.) dan harus memutuskan cara memproses masing‑masing.
 
-## Prerequisites
+## Kasus Penggunaan Umum
+- **Layanan pemetaan** – Menampilkan satu lokasi pada ubin peta.  
+- **Hasil geocoding** – Menyimpan latitude/longitude yang dikembalikan dari pencarian alamat.  
+- **Pengindeksan spasial** – Menambahkan titik ke R‑tree untuk kueri tetangga terdekat yang cepat.  
+- **Validasi data** – Memastikan data masuk berisi titik yang valid sebelum dimasukkan ke basis data.
+
+## Prasyarat
 Sebelum memulai, pastikan Anda telah menyiapkan hal‑hal berikut:
 
 ### .NET Environment Setup
 1. **Install .NET SDK** – unduh SDK terbaru dari situs resmi .NET atau gunakan manajer paket pilihan Anda.  
-2. **IDE Installation** – Visual Studio, JetBrains Rider, atau editor apa pun yang mendukung C#.  
+2. **IDE Installation** – Visual Studio, JetBrains Rider, atau editor apa pun yang mendukung C#.  
 3. **Aspose.GIS Installation** – unduh dan instal Aspose.GIS untuk .NET dari [tautan unduhan](https://releases.aspose.com/gis/net/).  
-4. **API Documentation** – biasakan diri dengan dokumentasi [Aspose.GIS untuk .NET](https://reference.aspose.com/gis/net/).  
+4. **API Documentation** – biasakan diri dengan [dokumentasi Aspose.GIS untuk .NET](https://reference.aspose.com/gis/net/).  
 
-## Import Namespaces
+## Impor Namespace
 Dalam proyek .NET apa pun yang menggunakan Aspose.GIS, Anda perlu mengimpor namespace yang diperlukan untuk mengakses kelas dan metode secara efisien.
 
-### Step 1: Open Your .NET Project
-Buka IDE pilihan Anda (misalnya, Visual Studio).
+### Langkah 1: Buka Proyek .NET Anda
+Luncurkan IDE pilihan Anda (misalnya, Visual Studio).
 
-### Step 2: Add Aspose.GIS Namespace
+### Langkah 2: Tambahkan Namespace Aspose.GIS
 Di file kode Anda, impor namespace yang diperlukan untuk Aspose.GIS:
 
 ```csharp
@@ -60,58 +66,58 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-Dengan menyertakan namespace ini, Anda mendapatkan akses ke kelas geometri inti.
+Dengan mengimpor namespace ini, Anda mendapatkan akses ke kelas geometri inti.
 
-## How to create point geometry and get geometry type
+## Cara membuat geometri titik dan mendapatkan tipe geometri
 Mari ikuti langkah‑langkah tepatnya, masing‑masing disertai potongan kode yang jelas.
 
-### Step 1: Create a Point Object
+### Langkah 1: Buat Objek Point
 ```csharp
 Point point = new Point(40.7128, -74.006);
 ```
-Di sini kita membuat instance baru `Point` yang mewakili koordinat geografis Kota New York (latitude 40.7128, longitude ‑74.006).
+Di sini kami menginstansiasi objek `Point` baru yang mewakili koordinat geografis Kota New York (latitude 40.7128, longitude ‑74.006). Ini adalah langkah **create point geometry** yang menjadi dasar banyak alur kerja spasial.
 
-### Step 2: Retrieve Geometry Type
+### Langkah 2: Dapatkan Tipe Geometri
 ```csharp
 GeometryType geometryType = point.GeometryType;
 ```
-Properti `GeometryType` mengembalikan nilai enum yang memberi tahu Anda jenis geometri yang sedang Anda tangani—dalam kasus ini, `Point`.
+Properti `GeometryType` mengembalikan nilai enum yang memberi tahu Anda jenis geometri yang sedang Anda tangani—dalam kasus ini, `Point`. Ini adalah cara utama untuk **get geometry type**.
 
-### Step 3: Display Geometry Type
+### Langkah 3: Tampilkan Tipe Geometri
 ```csharp
 Console.WriteLine(geometryType); // Point
 ```
-Output konsol akan menampilkan **Point**, mengonfirmasi bahwa tipe geometri objek telah teridentifikasi dengan benar.
+Output konsol akan menampilkan **Point**, mengonfirmasi bahwa tipe geometri objek telah diidentifikasi dengan benar.
 
-## Common Issues and Tips
+## Masalah Umum dan Tips
 - **Urutan koordinat yang salah** – Aspose.GIS mengharapkan latitude terlebih dahulu, kemudian longitude. Menukar urutan akan menghasilkan lokasi yang tidak diharapkan.  
 - **Referensi null** – Pastikan instance `Point` telah dibuat sebelum mengakses `GeometryType`; jika tidak, Anda akan mendapatkan `NullReferenceException`.  
-- **Lisensi belum diterapkan** – Di lingkungan non‑percobaan, pemanggilan tanpa lisensi dapat melempar pengecualian lisensi. Terapkan lisensi sementara atau permanen di awal proses startup aplikasi.
+- **Lisensi hilang** – Pada lingkungan non‑trial, pemanggilan tanpa lisensi dapat melempar pengecualian lisensi. Terapkan lisensi sementara atau permanen sejak awal aplikasi.
 
-## Frequently Asked Questions
+## Pertanyaan yang Sering Diajukan
 
 **Q: Apakah Aspose.GIS kompatibel dengan semua versi .NET?**  
 A: Ya, Aspose.GIS mendukung .NET Framework 4.5+, .NET Core 3.1+, .NET 5, .NET 6, dan rilis selanjutnya.
 
 **Q: Bisakah saya mencoba Aspose.GIS sebelum membeli?**  
-A: Tentu! Anda dapat mengakses versi percobaan gratis Aspose.GIS melalui [tautan ini](https://releases.aspose.com/).
+A: Tentu! Anda dapat mengakses trial gratis Aspose.GIS melalui [tautan](https://releases.aspose.com/).
 
 **Q: Di mana saya dapat menemukan dukungan untuk pertanyaan terkait Aspose.GIS?**  
-A: Anda dapat mencari bantuan dan berinteraksi dengan komunitas di forum Aspose.GIS [support forum](https://forum.aspose.com/c/gis/33).
+A: Anda dapat mencari bantuan dan berinteraksi dengan komunitas di [forum dukungan Aspose.GIS](https://forum.aspose.com/c/gis/33).
 
 **Q: Bagaimana cara mendapatkan lisensi sementara untuk Aspose.GIS?**  
 A: Untuk opsi lisensi sementara, kunjungi halaman [temporary license](https://purchase.aspose.com/temporary-license/).
 
 **Q: Di mana saya dapat membeli Aspose.GIS untuk proyek saya?**  
-A: Anda dapat membeli Aspose.GIS melalui halaman pembelian [di sini](https://purchase.aspose.com/buy).
+A: Anda dapat membeli Aspose.GIS dari halaman pembelian [di sini](https://purchase.aspose.com/buy).
 
-## Conclusion
-Dalam panduan ini kami membahas semua yang Anda perlukan untuk **membuat geometri titik**, mengambil **tipe geometri**‑nya, dan menampilkan hasilnya menggunakan Aspose.GIS untuk .NET. Dengan dasar‑dasar ini, Anda kini dapat menjelajahi operasi spasial yang lebih maju—seperti membaca koleksi geometri, melakukan query spasial, dan memvisualisasikan data pada peta.
+## Kesimpulan
+Dalam panduan ini kami membahas semua yang Anda perlukan untuk **membuat geometri titik**, mengambil **tipe geometri**‑nya, dan menampilkan hasilnya menggunakan Aspose.GIS untuk .NET. Dengan dasar ini, Anda kini dapat menjelajahi operasi spasial yang lebih maju—seperti membaca koleksi geometri, melakukan kueri spasial, dan memvisualisasikan data pada peta.
 
 ---
 
-**Last Updated:** 2025-12-09  
-**Tested With:** Aspose.GIS untuk .NET (rilis terbaru)  
+**Last Updated:** 2026-02-13  
+**Tested With:** Aspose.GIS for .NET (latest release)  
 **Author:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}

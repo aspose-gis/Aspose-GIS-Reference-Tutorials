@@ -1,8 +1,8 @@
 ---
-date: 2025-12-09
+date: 2026-02-13
 description: Aspose.GIS for .NET kullanarak bir noktanın çokgen içinde olup olmadığını
-  nasıl kontrol edeceğinizi öğrenin. Yüzeydeki noktayı alma, C# ile çokgen oluşturma
-  ve çokgen üzerindeki noktayı elde etme adım adım rehberi.
+  kontrol etmeyi, çokgen geometrisi oluşturmayı ve C#'ta yüzey üzerindeki bir noktayı
+  almayı öğrenin. Tam kod örneğiyle adım adım rehber.
 linktitle: Check Point Inside Polygon and Get Point on Surface
 second_title: Aspose.GIS .NET API
 title: Poligon İçindeki Noktayı Kontrol Et ve Yüzeydeki Noktayı Al
@@ -10,33 +10,41 @@ url: /tr/net/geometry-analysis/get-point-on-geometry-surface/
 weight: 25
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
+Also preserve the shortcodes at top and bottom.
+
+Now produce final output.{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Poligon İçinde Nokta Kontrolü ve Yüzey Üzerinde Nokta Alma
+# Çokgen İçinde Nokta Kontrolü ve Yüzey Üzerinde Nokta Alma
 
 ## Giriş
-Bu öğreticide Aspose.GIS for .NET ile **poligon içinde nokta kontrolünün** nasıl yapılacağını ve ayrıca bir geometrinin **yüzeyindeki noktayı** nasıl alacağınızı öğreneceksiniz. C#'ta bir poligon oluşturmayı, poligonun yüzeyinde bulunan bir noktayı almaya ve bu noktanın gerçekten poligon içinde olup olmadığını doğrulamaya adım adım geçeceğiz. Sonunda, herhangi bir .NET coğrafi uygulamasına ekleyebileceğiniz hazır bir kod parçacığına sahip olacaksınız.
+Bu öğreticide **çokgen içinde nokta kontrolü** nasıl yapılır ve bir geometriyin **yüzey üzerindeki nokta** nasıl alınır öğreneceksiniz. C#'ta bir çokgen geometrisi oluşturmayı, çokgenin yüzeyinde yer alan bir nokta elde etmeyi ve bu noktanın gerçekten çokgen içinde olup olmadığını doğrulamayı adım adım göreceğiz. Sonunda, herhangi bir .NET coğrafi uygulamasına ekleyebileceğiniz hazır bir kod parçacığına sahip olacaksınız.
 
 ## Hızlı Yanıtlar
-- **“check point inside polygon” ne anlama geliyor?** Verilen bir koordinatın bir poligon geometrisinin sınırları içinde olup olmadığını doğrular.  
-- **Hangi yöntem poligonun iç kısmında bir nokta döndürür?** `GetPointOnSurface()` poligon içinde olduğundan emin olunan bir nokta döndürür.  
-- **Örneği çalıştırmak için lisansa ihtiyacım var mı?** Değerlendirme için ücretsiz deneme çalışır; üretim için tam lisans gereklidir.  
-- **Hangi .NET sürümleri destekleniyor?** .NET Framework, .NET Core ve .NET Standard hepsi uyumludur.  
-- **Uygulamanın süresi ne kadar?** Kopyalama, derleme ve çalıştırma yaklaşık 5‑10 dakika sürer.
+- **“çokgen içinde nokta kontrolü” ne anlama gelir?** Belirli bir koordinatın çokgen geometrisinin sınırları içinde olup olmadığını doğrular.  
+- **Hangi metod çokgenin iç kısmında bir nokta döndürür?** `GetPointOnSurface()` çokgenin içinde olduğundan emin olunan bir nokta döndürür.  
+- **Örneği çalıştırmak için lisansa ihtiyacım var mı?** Değerlendirme için ücretsiz deneme sürümü yeterlidir; üretim için tam lisans gereklidir.  
+- **Hangi .NET sürümleri destekleniyor?** .NET Framework, .NET Core ve .NET Standard tümü uyumludur.  
+- **Uygulamanın hazırlanması ne kadar sürer?** Kopyalama, derleme ve çalıştırma için yaklaşık 5‑10 dakikadır.
 
-## Ön Koşullar
+## “çokgen içinde nokta kontrolü” nedir?
+Bir noktanın çokgen içinde olup olmadığını kontrol etmek temel bir uzamsal işlemdir. “Bu koordinat çokgenin tanımladığı alan içinde mi?” sorusuna yanıt verir. Bu, coğrafi çitleme, harita analitiği ve uzamsal doğrulama gibi görevler için hayati öneme sahiptir.
+
+## Bu görev için neden Aspose.GIS kullanılmalı?
+Aspose.GIS, dış bağımlılık gerektirmeyen yüksek performanslı, tamamen yönetilen bir API sunar ve karmaşık geometri işlemlerini kolaylaştırır. Geniş bir koordinat referans sistemi yelpazesini destekler, tüm büyük .NET çalışma zamanlarıyla uyumludur ve `SpatiallyContains()` ve `GetPointOnSurface()` gibi açık, zincirlenebilir metodlar sağlar.
+
+## Önkoşullar
 Başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
 
 ### Ortam Kurulumu
 1. Aspose.GIS for .NET'i kurun: Aspose.GIS for .NET kütüphanesini [buradan](https://releases.aspose.com/gis/net/) indirin ve kurun.  
-2. Geliştirme Ortamınızı Kurun: .NET programlaması için çalışan bir geliştirme ortamına sahip olduğunuzdan emin olun. Yoksa Visual Studio ya da tercih ettiğiniz başka bir .NET geliştirme ortamını kurabilirsiniz.  
-3. C# Temel Bilgisi: C# programlama dilinin temellerine hâlâ aşina değilseniz, kendinizi bu konuda geliştirin.  
-4. Belgelere Erişim: Öğretici boyunca başvurmak için [belgelere](https://reference.aspose.com/gis/net/) ulaşılabilir bir yerde tutun.
+2. Geliştirme Ortamınızı Hazırlayın: .NET programlaması için çalışan bir geliştirme ortamınızın olduğundan emin olun. Yoksa Visual Studio ya da tercih ettiğiniz başka bir .NET geliştirme ortamını kurabilirsiniz.  
+3. C# Temel Bilgisi: Eğer hâlâ tanışık değilseniz C# programlama dilinin temellerine aşina olun.  
+4. Dokümantasyona Erişim: Öğretici boyunca başvurmak üzere [dokümantasyonu](https://reference.aspose.com/gis/net/) elinizin altında bulundurun.
 
-## Ad Alanlarını İçe Aktarın
-Uygulamaya geçmeden önce gerekli ad alanlarını içe aktararak başlayalım:
+## Namespace'leri İçe Aktarma
+Uygulamaya geçmeden önce gerekli namespace'leri içe aktaralım:
 
 ```csharp
 using Aspose.Gis.Geometries;
@@ -47,11 +55,10 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-Ortamı kurup gerekli ad alanlarını içe aktardığımıza göre, örneği daha iyi anlamak için birden fazla adıma ayıralım.
+## Adım Adım Kılavuz
 
-## Poligon Nasıl Oluşturulur C#  
-
-İlk olarak **bir poligon** geometrisi oluşturmamız gerekir. Poligonun dış halkasını köşelerini belirterek tanımlarız.
+### Adım 1: C#'ta Çokgen Geometrisi Oluşturma
+İlk olarak **bir çokgen** geometrisi oluşturmalıyız. Çokgenin dış halkasını köşe noktalarını belirterek tanımlarız.
 
 ```csharp
 var polygon = new Polygon();
@@ -64,62 +71,62 @@ polygon.ExteriorRing = new LinearRing(new[]
 });
 ```
 
-## Yüzey Üzerinde Nokta Nasıl Alınır  
-
-Sonra, `GetPointOnSurface()` yöntemiyle poligonun yüzeyinde bir nokta alırız. Bu **yüzey üzerindeki nokta alma** adımıdır.
+### Adım 2: Yüzey Üzerinde Nokta Alma
+Sonra `GetPointOnSurface()` metodunu kullanarak çokgenin yüzeyinde bir nokta alırız. Bu **yüzey üzerindeki nokta alma** adımıdır.
 
 ```csharp
 IPoint pointOnSurface = polygon.GetPointOnSurface();
 ```
 
-## Poligon İçinde Nokta Nasıl Kontrol Edilir  
-
-Alınan noktanın poligon içinde olup olmadığını `SpatiallyContains()` yöntemiyle doğrulayabiliriz. Bu **poligon üzerindeki noktayı alma** ve ardından kontrol etme sürecini gösterir.
+### Adım 3: Çokgen İçinde Nokta Kontrolü
+Alınan noktanın çokgen içinde olup olmadığını `SpatiallyContains()` metodu ile doğrulayabiliriz. Bu, **çokgen üzerindeki nokta alma** ve ardından kontrol etme sürecini gösterir.
 
 ```csharp
 Console.WriteLine(polygon.SpatiallyContains(pointOnSurface)); // True
 ```
 
-## Yaygın Sorunlar ve Çözümler
-- **Boş poligon** – Dış halkanın en az üç farklı köşesi olduğundan emin olun; aksi takdirde `GetPointOnSurface()` tanımsız bir nokta döndürebilir.  
-- **Saat yönü vs. Saat yönünün tersine** – Halkanın yönü içerik kontrolünü etkilemez, ancak tutarlı bir yön sırası diğer uzamsal işlemlerde yardımcı olur.  
-- **Koordinat Sistemi** – Örnek basit bir Kartezyen düzlem kullanır; gerçek dünya koordinatlarıyla çalışırken CRS (koordinat referans sistemi) doğru tanımlandığından emin olun.
+## Yaygın Sorunlar ve Çözümleri
+- **Boş çokgen** – Dış halkanın en az üç farklı köşeye sahip olduğundan emin olun; aksi takdirde `GetPointOnSurface()` tanımsız bir nokta döndürebilir.  
+- **Saat Yönünde vs. Saat Yönünün Tersine** – Halkanın yönü içerik kontrolünü etkilemez, ancak tutarlı bir sarmalama düzeni diğer uzamsal işlemler için faydalıdır.  
+- **Koordinat Sistemi** – Örnek basit bir Kartezyen düzlem kullanır; gerçek dünya koordinatlarıyla çalışırken koordinat referans sisteminin (CRS) doğru tanımlandığından emin olun.
 
-## Sonuç
-Bu öğreticide Aspose.GIS for .NET kullanarak **poligon içinde nokta kontrolünü** nasıl yapacağımızı, **yüzey üzerindeki bir nokta** elde etmeyi ve bu noktanın içeride olup olmadığını doğrulamayı öğrendik. Aspose.GIS ile coğrafi verileri işlemek etkili ve basit hale gelir, geliştiricileri sağlam coğrafi uygulamalar geliştirmeye güç verir.
+## Sık Sorulan Sorular
 
-## SSS
-### Aspose.GIS diğer .NET çerçeveleriyle uyumlu mu?
-Evet, Aspose.GIS .NET Framework, .NET Core ve .NET Standard dahil olmak üzere çeşitli .NET çerçevelerini destekler.
+### SSS
+#### Aspose.GIS diğer .NET framework'leriyle uyumlu mu?
+Evet, Aspose.GIS .NET Framework, .NET Core ve .NET Standard dahil olmak üzere çeşitli .NET framework'lerini destekler.
 
-### Satın almadan önce Aspose.GIS'i deneyebilir miyim?
-Evet, Aspose.GIS'in ücretsiz denemesini [buradan](https://releases.aspose.com/) indirebilirsiniz.
+#### Aspose.GIS'i satın almadan deneme şansım var mı?
+Evet, Aspose.GIS'in ücretsiz deneme sürümünü [buradan](https://releases.aspose.com/) indirebilirsiniz.
 
-### Aspose.GIS için destek nasıl alabilirim?
-Destek almak ve diğer kullanıcılar ve geliştiricilerle etkileşimde bulunmak için Aspose.GIS forumunu [buradan](https://forum.aspose.com/c/gis/33) ziyaret edebilirsiniz.
+#### Aspose.GIS için destek nasıl alınır?
+Aspose.GIS forumuna [buradan](https://forum.aspose.com/c/gis/33) giderek yardım alabilir ve diğer kullanıcılar ve geliştiricilerle etkileşime geçebilirsiniz.
 
-### Aspose.GIS geçici lisanslar sunuyor mu?
+#### Aspose.GIS geçici lisanslar sunuyor mu?
 Evet, Aspose.GIS için geçici lisansları [buradan](https://purchase.aspose.com/temporary-license/) temin edebilirsiniz.
 
-### Aspose.GIS'i nereden satın alabilirim?
-Aspose.GIS'i satın alma sayfasından [buradan](https://purchase.aspose.com/buy) satın alabilirsiniz.
+#### Aspose.GIS'i nereden satın alabilirim?
+Aspose.GIS'i satın alma sayfasından [buradan](https://purchase.aspose.com/buy) alabilirsiniz.
 
-**Ek Soru‑Cevap**
+### Ek Soru‑Cevap
 
-**S:** Büyük poligon veri setlerini yönetmenin en iyi yolu nedir?  
-**C:** Geometrileri tembel (lazy) yükleyin ve bellek yükünü azaltmak için tek bir `GeometryFactory` örneğini yeniden kullanın.
+**S:** Büyük çokgen veri setleri nasıl yönetilir?  
+**C:** Geometrileri tembel (lazy) yükleyin ve bellek kullanımını azaltmak için tek bir `GeometryFactory` örneğini yeniden kullanın.
 
 **S:** Yüzey üzerinde birden fazla nokta alabilir miyim?  
-**C:** `GetPointOnSurface()` tek bir iç nokta döndürür. Birden fazla iç nokta üretmek için poligonun sınırlayıcı kutusu içinde rastgele nokta üreteci kullanabilir ve her birini `SpatiallyContains()` ile test edebilirsiniz.
+**C:** `GetPointOnSurface()` tek bir iç nokta döndürür. Çoklu iç noktalar üretmek için çokgenin sınırlayıcı kutusu içinde rastgele nokta üretebilir ve her birini `SpatiallyContains()` ile test edebilirsiniz.
 
-**S:** Oluşturulduktan sonra poligonu shapefile olarak dışa aktarmak mümkün mü?  
-**C:** Evet, Aspose.GIS `FeatureSet` ve `ShapefileWriter` sınıflarını sağlayarak geometrileri Shapefile formatına yazmanıza olanak tanır.
+**S:** Çokgen oluşturulduktan sonra shapefile olarak dışa aktarılabilir mi?  
+**C:** Evet, Aspose.GIS `FeatureSet` ve `ShapefileWriter` sınıflarıyla geometrileri Shapefile formatına yazmanıza olanak tanır.
+
+## Sonuç
+Bu öğreticide Aspose.GIS for .NET kullanarak **çokgen içinde nokta kontrolü** nasıl yapılır, **yüzey üzerindeki nokta** nasıl elde edilir ve bu noktanın içeride olup olmadığı nasıl doğrulanır öğrendik. Aspose.GIS ile coğrafi verileri işlemek verimli ve basit hale gelir, geliştiricilerin sağlam coğrafi uygulamalar oluşturmasını sağlar.
 
 ---
 
-**Last Updated:** 2025-12-09  
-**Tested With:** Aspose.GIS 24.11 for .NET  
-**Author:** Aspose  
+**Son Güncelleme:** 2026-02-13  
+**Test Edilen Versiyon:** Aspose.GIS 24.11 for .NET  
+**Yazar:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

@@ -1,49 +1,68 @@
 ---
-date: 2025-12-11
-description: เรียนรู้วิธีเพิ่มจุดลงในเส้นและแปลงรูปทรงเรขาคณิตเป็นรูปแบบที่แก้ไขได้อย่างง่ายดายโดยใช้
-  Aspose.GIS สำหรับ .NET ตามขั้นตอนในบทเรียนนี้.
+date: 2026-02-13
+description: เรียนรู้วิธีเพิ่มจุดลงใน Linestring และแปลงรูปทรงเรขาคณิตเป็นรูปแบบที่แก้ไขได้อย่างง่ายดายด้วย
+  Aspose.GIS สำหรับ .NET. ทำตามบทแนะนำขั้นตอนต่อขั้นตอนนี้.
 linktitle: Convert Geometry to Editable
 second_title: Aspose.GIS .NET API
-title: วิธีเพิ่มจุดลงใน LineString และแปลงรูปทรงเรขาคณิตเป็นรูปแบบที่แก้ไขได้ด้วย
-  Aspose.GIS
+title: วิธีเพิ่มจุดลงใน LineString และแปลงเรขาคณิตเป็นรูปแบบที่แก้ไขได้ด้วย Aspose.GIS
 url: /th/net/geometry-creation/convert-geometry-to-editable/
 weight: 22
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
+ แสดง Geometry ที่แก้ไขแล้ว"
+
+### Step 5... => "### ขั้นตอนที่ 5: ยืนยันว่า Geometry ต้นฉบับยังคงไม่เปลี่ยนแปลง"
+
+## Common Pitfalls & Tips => "## ข้อผิดพลาดทั่วไป & เคล็ดลับ"
+
+## Frequently Asked Questions => "## คำถามที่พบบ่อย"
+
+### Additional Quick FAQs => "### คำถามเพิ่มเติมที่พบบ่อย"
+
+## Conclusion => "## สรุป"
+
+Now ensure all bullet points remain bullet format.
+
+Now produce final content.{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # วิธีเพิ่มจุดลงใน LineString และแปลง Geometry ให้เป็นรูปแบบที่แก้ไขได้ด้วย Aspose.GIS
 
-## บทนำ
-เมื่อทำงานกับข้อมูลเชิงพื้นที่ ความสามารถในการ **เพิ่มจุดลงใน linestring** แล้วแก้ไขได้อย่างอิสระเป็นความต้องการทั่วไป Aspose.GIS สำหรับ .NET ทำให้กระบวนการนี้ง่ายดาย ด้วย API ที่ชัดเจนสำหรับการแปลง geometry ที่อ่าน‑ได้อย่างเดียวให้เป็นแบบที่แก้ไขได้ ในบทเรียนนี้คุณจะได้เห็นวิธีเพิ่มจุดลงใน `LineString` รับสำเนาที่แก้ไขได้ และตรวจสอบว่า geometry ดั้งเดิมยังคงไม่ถูกเปลี่ยนแปลง
+## คำแนะนำ
+เมื่อคุณทำงานกับข้อมูลเชิงพื้นที่, **add point to linestring** เป็นการดำเนินการที่พบบ่อย—ไม่ว่าจะเป็นการแก้ไขเส้นทาง, ขยายเส้นทาง, หรือสร้างเรขาคณิตแบบไดนามิก Aspose.GIS สำหรับ .NET ทำให้ภารกิจนี้ง่ายดายด้วย API ที่สะอาดตาซึ่งช่วยให้คุณแปลง Geometry แบบอ่านอย่างเดียวให้เป็นแบบที่แก้ไขได้, เพิ่มจุดเวอร์เท็กซ์ใหม่, และทำให้ Geometry ต้นฉบับปลอดภัยจากการเปลี่ยนแปลงโดยบังเอิญ ในบทเรียนนี้คุณจะได้เห็นวิธีเพิ่มจุดลงใน `LineString`, รับสำเนาที่แก้ไขได้, และตรวจสอบว่า Geometry ต้นฉบับยังคงไม่ถูกเปลี่ยนแปลง
 
 ## คำตอบสั้น
-- **“เพิ่มจุดลงใน linestring” หมายถึงอะไร?** หมายถึงการแทรกพิกัดใหม่เข้าไปใน geometry `LineString` ที่มีอยู่  
-- **ไลบรารีใดสนับสนุนสิ่งนี้?** Aspose.GIS สำหรับ .NET มีเมธอด `ToEditable()` และฟังก์ชัน `AddPoint()`  
-- **ต้องมีลิขสิทธิ์สำหรับฟีเจอร์นี้หรือไม่?** สามารถใช้รุ่นทดลองฟรีสำหรับการพัฒนา; ต้องมีลิขสิทธิ์เชิงพาณิชย์สำหรับการใช้งานจริง  
-- **รองรับเวอร์ชัน .NET ใดบ้าง?** .NET Framework 4.6+, .NET Core 3.1+, .NET 5/6/7  
-- **ใช้เวลาพัฒนาเท่าไหร่?** ปกติใช้เวลาน้อยกว่า 10 นาทีสำหรับสถานการณ์พื้นฐาน
+- **What does “add point to linestring” mean?** หมายถึงการแทรกพิกัดใหม่เข้าไปใน Geometry `LineString` ที่มีอยู่แล้ว.  
+- **Which library supports this?** Aspose.GIS สำหรับ .NET มีเมธอด `ToEditable()` และฟังก์ชัน `AddPoint()`.  
+- **Do I need a license for this feature?** สามารถใช้รุ่นทดลองฟรีสำหรับการพัฒนา; ต้องมีลิขสิทธิ์เชิงพาณิชย์สำหรับการใช้งานจริง.  
+- **What .NET versions are supported?** .NET Framework 4.6+, .NET Core 3.1+, .NET 5/6/7.  
+- **How long does the implementation take?** ปกติใช้เวลาน้อยกว่า 10 นาทีสำหรับสถานการณ์พื้นฐาน.
 
-## “เพิ่มจุดลงใน linestring” คืออะไร?
-การเพิ่มจุดลงใน `LineString` จะใส่เวอร์เท็กซ์ใหม่ที่พิกัดที่ระบุ ทำให้เส้นยืดหรือมีรายละเอียดมากขึ้น การดำเนินการนี้สำคัญสำหรับการแก้ไขเส้นทาง, การแก้ไขแผนที่, หรือการสร้าง geometry แบบไดนามิก
+## การเพิ่มจุดลงใน LineString คืออะไร?
+การเพิ่มจุดลงใน `LineString` จะใส่เวอร์เท็กซ์ใหม่ที่พิกัดที่ระบุ, ทำให้เส้นยืดออกหรือสร้างเส้นทางที่ละเอียดมากขึ้น การดำเนินการนี้จำเป็นสำหรับงานเช่นการแก้ไขเส้นทาง, การแก้ไขแผนที่, หรือการสร้างเรขาคณิตแบบไดนามิก
 
 ## ทำไมต้องใช้ Aspose.GIS สำหรับงานนี้?
-- **ไม่มีการพึ่งพาไลบรารีภายนอก** – API จัดการการแปลง geometry ภายในเอง  
-- **ความปลอดภัยแบบอ่าน‑อย่างเดียว** – geometry ดั้งเดิมคงเป็น immutable ป้องกันการเปลี่ยนแปลงโดยบังเอิญ  
-- **ไวยากรณ์ง่าย** – เมธอดเช่น `ToEditable()` และ `AddPoint()` เข้าใจง่ายสำหรับนักพัฒนา C#  
-- **ข้ามแพลตฟอร์ม** – ทำงานบน Windows, Linux, และ macOS .NET runtimes
+- **No external dependencies** – API จัดการการแปลง Geometry ภายใน.  
+- **Read‑only safety** – Geometry ต้นฉบับยังคงเป็นแบบไม่เปลี่ยนแปลง, ป้องกันการแก้ไขโดยบังเอิญ.  
+- **Straightforward syntax** – เมธอดเช่น `ToEditable()` และ `AddPoint()` เข้าใจง่ายสำหรับนักพัฒนา C#.  
+- **Cross‑platform** – ทำงานบน Windows, Linux, และ macOS .NET runtimes.
+
+## เมื่อใดที่คุณต้องการเพิ่มจุดลงใน LineString?
+- **Updating road networks** หลังจากมีการสร้างแยกใหม่.  
+- **Correcting GPS traces** เมื่อจุด waypoint ที่หายทำให้เส้นทางเบี่ยงเบน.  
+- **Building custom paths** ในแอปพลิเคชัน GIS ที่ให้ผู้ใช้วาดบนแผนที่แบบโต้ตอบ.  
+- **Preparing data for spatial analysis** ที่ต้องการจำนวนเวอร์เท็กซ์ขั้นต่ำ.
 
 ## ข้อกำหนดเบื้องต้น
-ก่อนเริ่มทำตามขั้นตอนต่อไปนี้ให้แน่ใจว่าคุณมี:
+ก่อนเริ่ม, โปรดตรวจสอบว่าคุณมีสิ่งต่อไปนี้:
 
-- **สภาพแวดล้อม .NET** – ติดตั้ง .NET framework จาก [website](https://dotnet.microsoft.com/download)  
-- **ไลบรารี Aspose.GIS** – ดาวน์โหลดแพ็กเกจล่าสุดจาก [releases page](https://releases.aspose.com/gis/net/)  
-- **พื้นฐาน C#** – ความคุ้นเคยกับไวยากรณ์ C# และแอปพลิเคชันคอนโซล
+- **.NET Environment** – ติดตั้ง .NET framework จาก [website](https://dotnet.microsoft.com/download).  
+- **Aspose.GIS Library** – ดาวน์โหลดแพคเกจล่าสุดจาก [releases page](https://releases.aspose.com/gis/net/).  
+- **C# Basics** – มีความคุ้นเคยกับไวยากรณ์ C# และแอปพลิเคชันคอนโซล.
 
 ### นำเข้า Namespaces
-เพื่อเริ่มต้นกระบวนการ ให้แน่ใจว่าได้นำเข้า namespaces ที่จำเป็นในโค้ด C# ของคุณ ซึ่งจะทำให้คุณเข้าถึงฟังก์ชันของ Aspose.GIS สำหรับ .NET
+เพื่อเริ่มต้นกระบวนการ, ตรวจสอบให้แน่ใจว่าได้นำเข้า namespace ที่จำเป็นเข้าสู่โค้ด C# ของคุณ. สิ่งนี้ทำให้คุณเข้าถึงฟังก์ชันที่ Aspose.GIS สำหรับ .NET ให้มา.
 
 ```csharp
 using Aspose.Gis.Geometries;
@@ -54,68 +73,83 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-ตอนนี้เราจะเดินผ่านขั้นตอนที่เป็นรูปธรรมสำหรับการแปลง geometry ให้เป็นรูปแบบที่แก้ไขได้และเพิ่มจุดลงใน `LineString`
+ต่อไป, เราจะเดินผ่านขั้นตอนที่ชัดเจนสำหรับการแปลง Geometry ให้เป็นรูปแบบที่แก้ไขได้และการเพิ่มจุดลงใน `LineString`.
 
-## ขั้นตอนที่ 1: กำหนด Geometry แบบอ่าน‑อย่างเดียว
-แรกสุด สร้างอ็อบเจกต์ geometry แบบอ่าน‑อย่างเดียวที่แทนเส้นง่าย ๆ อ็อบเจกต์นี้ไม่สามารถแก้ไขได้โดยตรง
+## วิธีเพิ่มจุดลงใน LineString ด้วย Aspose.GIS
+ต่อไปนี้เป็นคู่มือแบบขั้นตอนต่อขั้นตอนที่พาคุณผ่านทุกการกระทำที่ต้องทำ.
+
+### ขั้นตอนที่ 1: กำหนด Geometry แบบอ่านอย่างเดียว
+แรกสุด, สร้างอ็อบเจ็กต์ Geometry แบบอ่านอย่างเดียวที่แสดงเส้นง่าย ๆ. อ็อบเจ็กต์นี้ไม่สามารถแก้ไขโดยตรง.
 
 ```csharp
 ILineString readOnlyLine = (ILineString)Geometry.FromText("LINESTRING (1 1, 2 2)");
 ```
 
-## ขั้นตอนที่ 2: รับสำเนาที่แก้ไขได้
-เพื่อแก้ไข geometry ให้ใช้เมธอด `ToEditable()` เพื่อสร้างสำเนาที่สามารถแก้ไขได้ ในขณะที่ geometry ดั้งเดิมยังคงไม่ถูกเปลี่ยนแปลง
+### ขั้นตอนที่ 2: รับสำเนาที่แก้ไขได้
+เพื่อแก้ไข Geometry, รับสำเนาที่แก้ไขได้โดยใช้เมธอด `ToEditable()`. วิธีนี้สร้างสำเนาที่เปลี่ยนแปลงได้โดยที่ Geometry ต้นฉบับยังคงไม่ถูกแตะต้อง.
 
 ```csharp
 LineString editableLine = readOnlyLine.ToEditable();
 ```
 
-## ขั้นตอนที่ 3: เพิ่มจุดลงใน LineString
-เมื่อคุณมีสำเนาที่แก้ไขได้แล้ว คุณสามารถ **เพิ่มจุดลงใน linestring** ได้ เมธอด `AddPoint` จะเพิ่มเวอร์เท็กซ์ใหม่ที่พิกัดที่ระบุ
+### ขั้นตอนที่ 3: เพิ่มจุดลงใน LineString
+เมื่อคุณมีสำเนาที่แก้ไขได้แล้ว, คุณสามารถ **add point to linestring**. เมธอด `AddPoint` จะเพิ่มเวอร์เท็กซ์ใหม่ที่พิกัดที่ระบุ.
 
 ```csharp
 editableLine.AddPoint(3, 3);
 ```
 
-## ขั้นตอนที่ 4: แสดง Geometry ที่แก้ไขแล้ว
-พิมพ์ geometry ที่แก้ไขแล้วเพื่อยืนยันว่าจุดใหม่ถูกเพิ่มสำเร็จ
+### ขั้นตอนที่ 4: แสดง Geometry ที่แก้ไขแล้ว
+พิมพ์ Geometry ที่แก้ไขแล้วเพื่อยืนยันว่าจุดใหม่ถูกเพิ่มสำเร็จ.
 
 ```csharp
 Console.WriteLine(editableLine.AsText()); // LINESTRING (1 1, 2 2, 3 3)
 ```
 
-## ขั้นตอนที่ 5: ตรวจสอบว่า Geometry ดั้งเดิมไม่เปลี่ยนแปลง
-เป็นแนวปฏิบัติที่ดีในการยืนยันว่า geometry แบบอ่าน‑อย่างเดียวเดิมไม่ได้รับการแก้ไข
+### ขั้นตอนที่ 5: ยืนยันว่า Geometry ต้นฉบับยังคงไม่เปลี่ยนแปลง
+เป็นการปฏิบัติที่ดีที่จะยืนยันว่า Geometry แบบอ่านอย่างเดิมไม่ได้ถูกเปลี่ยนแปลง.
 
 ```csharp
 Console.WriteLine(readOnlyLine.AsText()); // LINESTRING (1 1, 2 2)
 ```
 
 ## ข้อผิดพลาดทั่วไป & เคล็ดลับ
-- **ห้ามแก้ไขอ็อบเจกต์แบบอ่าน‑อย่างเดียว** – ต้องเรียก `ToEditable()` ก่อนเสมอ  
-- **ลำดับพิกัดสำคัญ** – ตรวจสอบให้แน่ใจว่าคุณส่ง (X, Y) ในลำดับที่ถูกต้อง  
-- **Geometry ขนาดใหญ่** – สำหรับ `LineString` ยาวมาก ควรทำการแก้ไขเป็นชุดเพื่อเพิ่มประสิทธิภาพ
+- **Do not modify the read‑only object** – ต้องเรียก `ToEditable()` ก่อนเสมอ.  
+- **Coordinate order matters** – ตรวจสอบว่าคุณส่ง (X, Y) ในลำดับที่ถูกต้อง.  
+- **Large geometries** – สำหรับ `LineString` ที่ยาวมาก, พิจารณาแก้ไขเป็นชุดเพื่อเพิ่มประสิทธิภาพ.  
+- **Thread safety** – Geometry ที่แก้ไขได้ไม่ปลอดภัยต่อหลายเธรด; แก้ไขบนเธรดเดียวหรือใช้การซิงโครไนซ์ที่เหมาะสม.
 
 ## คำถามที่พบบ่อย
 
-**Q: Aspose.GIS รองรับไลบรารี .NET อื่น ๆ หรือไม่?**  
-A: ใช่, Aspose.GIS สามารถทำงานร่วมกับไลบรารี GIS .NET ยอดนิยมเช่น NetTopologySuite และ SharpMap ได้อย่างราบรื่น
+**Q: Is Aspose.GIS compatible with other .NET libraries?**  
+A: ใช่, Aspose.GIS ผสานรวมอย่างราบรื่นกับไลบรารี .NET GIS ยอดนิยมเช่น NetTopologySuite และ SharpMap.
 
-**Q: ฉันสามารถลองใช้ Aspose.GIS ก่อนซื้อได้หรือไม่?**  
-A: แน่นอน! คุณสามารถรับรุ่นทดลองฟรีจาก [releases page](https://releases.aspose.com/) เพื่อสำรวจคุณสมบัติต่าง ๆ
+**Q: Can I try Aspose.GIS before purchasing?**  
+A: แน่นอน! คุณสามารถรับรุ่นทดลองฟรีจาก [releases page](https://releases.aspose.com/) เพื่อสำรวจคุณสมบัติของมัน.
 
-**Q: จะขอรับการสนับสนุนสำหรับ Aspose.GIS ได้อย่างไร?**  
-A: เยี่ยมชม [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) เพื่อรับความช่วยเหลือจากชุมชนและการสนับสนุนอย่างเป็นทางการ
+**Q: How can I get support for Aspose.GIS?**  
+A: เยี่ยมชม [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) เพื่อรับความช่วยเหลือจากชุมชนและการสนับสนุนอย่างเป็นทางการ.
 
-**Q: มีลิขสิทธิ์ชั่วคราวสำหรับการประเมินหรือไม่?**  
-A: มี, สามารถขอรับลิขสิทธิ์ชั่วคราวได้ผ่าน [Aspose.GIS purchase page](https://purchase.aspose.com/temporary-license/)
+**Q: Is a temporary license available for evaluation?**  
+A: ใช่, สามารถขอใบอนุญาตชั่วคราวได้ผ่าน [Aspose.GIS purchase page](https://purchase.aspose.com/temporary-license/).
 
-**Q: สามารถซื้อ Aspose.GIS โดยตรงได้หรือไม่?**  
-A: ได้เลย! ใช้ [purchase page](https://purchase.aspose.com/buy) เพื่อเลือกซื้อไลเซนส์ที่เหมาะกับความต้องการของคุณ
+**Q: Can I purchase Aspose.GIS directly?**  
+A: แน่นอน! ใช้ [purchase page](https://purchase.aspose.com/buy) เพื่อซื้อใบอนุญาตที่เหมาะกับความต้องการของคุณ.
 
----
+### คำถามเพิ่มเติมที่พบบ่อย
+**Q: What happens if I try to add a point to a read‑only geometry without calling `ToEditable()`?**  
+A: จะเกิด `InvalidOperationException` เนื่องจาก Geometry เป็นแบบไม่เปลี่ยนแปลง.
 
-**อัปเดตล่าสุด:** 2025-12-11  
+**Q: Can I insert a point at a specific position instead of at the end?**  
+A: ใช่, ใช้ overload `AddPoint(int index, double x, double y)` เพื่อแทรกที่ตำแหน่งที่กำหนด.
+
+**Q: Does `ToEditable()` create a deep copy of the geometry?**  
+A: มันสร้างสำเนาที่เปลี่ยนแปลงได้ซึ่งใช้ข้อมูลพิกัดเดียวกัน; การเปลี่ยนแปลงในสำเนาที่แก้ไขไม่ได้ส่งผลต่อต้นฉบับ.
+
+## สรุป
+ตอนนี้คุณรู้วิธี **add point to linestring** และแปลง Geometry แบบอ่านอย่างเดียวให้เป็นรูปแบบที่แก้ไขได้ด้วย Aspose.GIS สำหรับ .NET แล้ว วิธีนี้ทำให้ข้อมูลต้นฉบับของคุณปลอดภัยในขณะที่ให้คุณควบคุมการจัดการ Geometry อย่างเต็มที่—เหมาะสำหรับการแก้ไขเส้นทาง, การแก้ไขแผนที่, หรือสถานการณ์ใด ๆ ที่ต้องการอัปเดต Geometry แบบไดนามิก สำรวจต่อไปโดยการเรียก `AddPoint` หลายครั้ง, แทรกจุดที่ตำแหน่งเฉพาะ, หรือผสานเทคนิคนี้กับการดำเนินการเชิงพื้นที่อื่น ๆ ของ Aspose.GIS.
+
+**อัปเดตล่าสุด:** 2026-02-13  
 **ทดสอบด้วย:** Aspose.GIS 24.11 for .NET  
 **ผู้เขียน:** Aspose  
 
