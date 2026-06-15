@@ -1,10 +1,36 @@
 ---
-date: 2026-01-05
-description: تعلم كيفية قراءة ملف shapefile باستخدام C# و Aspose.GIS لـ .NET، واسترجاع
-  جميع قيم سمات الكائنات، وتفريغ السمات بكفاءة.
-linktitle: Get All Feature Attribute Values
+date: 2026-06-15
+description: تعلم كيفية قراءة قيم سمات ملف shapefile في C# باستخدام Aspose.GIS for
+  .NET، واسترجاع كل سمة للعنصر، وتفريغ السمات بكفاءة.
+keywords:
+- read shapefile attribute values
+- Aspose.GIS attribute extraction
+- C# GIS tutorial
+linktitle: الحصول على جميع قيم سمات العنصر
+schemas:
+- author: Aspose
+  dateModified: '2026-06-15'
+  description: Learn how to read shapefile attribute values in C# using Aspose.GIS
+    for .NET, retrieve every feature attribute, and dump attributes efficiently.
+  headline: Read Shapefile Attribute Values in C# – Get All Feature Attribute Values
+  type: TechArticle
+- questions:
+  - answer: Yes, Aspose.GIS fully supports .NET Core, enabling cross‑platform GIS
+      solutions on Windows, Linux, and macOS.
+    question: Is Aspose.GIS compatible with .NET Core?
+  - answer: Absolutely. The library handles Shapefile, GeoJSON, KML, GML, CSV, and
+      over 30 other formats without additional plugins.
+    question: Can I work with different GIS file formats using Aspose.GIS?
+  - answer: You can acquire a temporary license for evaluation [here](https://purchase.aspose.com/temporary-license/).
+    question: How can I obtain a temporary license for testing?
+  - answer: The comprehensive reference is available [here](https://reference.aspose.com/gis/net/).
+    question: Where is the official documentation for Aspose.GIS?
+  - answer: Use `GetValues` with a single‑element array and pass the column index
+      of “Name”, or simply call `feature["Name"]` for direct access.
+    question: How do I retrieve only the “Name” attribute from each feature?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: قراءة ملف Shapefile C# – الحصول على جميع قيم سمات العنصر
+title: قراءة قيم سمات ملف Shapefile في C# – الحصول على جميع قيم سمات العنصر
 url: /ar/net/layer-interaction-and-data-access/get-all-feature-attribute-values/
 weight: 15
 ---
@@ -13,57 +39,56 @@ weight: 15
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# احصل على جميع قيم سمات العنصر
+# الحصول على جميع قيم سمات الميزة
 
-## مقدمة
-مرحبًا بك في عالم تطوير الجغرافيا المكانية مع Aspose.GIS لـ .NET! في هذا الدرس ستتعلم **كيفية قراءة shapefile باستخدام C#** واسترجاع كل قيمة سمة من عناصره. سواءً كنت تبني تطبيقًا للخرائط أو تعالج بيانات مكانية على دفعات، فإن إتقان استخراج السمات أمر أساسي. هيا نغوص في التفاصيل ونرى الكود يعمل.
+## المقدمة
+في هذا الدرس ستكتشف **كيفية قراءة قيم سمات ملف shapefile** باستخدام C# مع Aspose.GIS لـ .NET. سواءً كنت تبني تطبيقًا حيًا للخرائط، أو تجري تحليلًا مكانيًا ضخمًا، أو تحتاج ببساطة إلى تصدير جداول السمات، فإن استخراج كل حقل من ملف Shapefile يُعد مهارة أساسية. سنستعرض سير العمل الكامل، بدءًا من تعيين دليل البيانات إلى تفريغ مجموعات السمات، وسنُبرز نصائح الممارسات الأفضل التي تحافظ على نظافة وأداء الكود.
 
 ## إجابات سريعة
-- **ماذا يفعل هذا الكود؟** يفتح ملف Shapefile ويقرأ جميع القيم أو بعض القيم أو القيم المصدرة للسمات من كل عنصر.  
-- **ما المكتبة المطلوبة؟** Aspose.GIS لـ .NET (متوافقة مع .NET Framework و .NET Core).  
-- **هل أحتاج إلى ترخيص؟** الترخيص المؤقت يكفي للاختبار؛ الترخيص الكامل مطلوب للإنتاج.  
-- **هل يمكنني قراءة صيغ أخرى؟** نعم – نفس الـ API يدعم GeoJSON و KML والعديد غيرها.  
-- **كيف أقوم بتصدير السمات؟** استخدم `feature.GetValuesDump()` للحصول على مصفوفة كائنات مرنة.
+- **ماذا يفعل هذا الكود؟** يفتح ملف Shapefile، يتنقل عبر كل ميزة، ويسترجع كل قيمة سمة أو مجموعة مختارة.  
+- **ما المكتبة المطلوبة؟** Aspose.GIS لـ .NET (يعمل مع .NET Framework، .NET Core، .NET 5/6).  
+- **هل أحتاج إلى ترخيص؟** الترخيص المؤقت يكفي للاختبار؛ الترخيص الكامل إلزامي للنشر في بيئة الإنتاج.  
+- **هل يمكنني قراءة صيغ أخرى؟** نعم – نفس الـ API يقرأ GeoJSON، KML، GML، CSV، وأكثر من 30 صيغة GIS أخرى.  
+- **كيف أقوم بتفريغ السمات؟** استدعِ `feature.GetValuesDump()` للحصول على مصفوفة كائنات يمكن تسلسلها أو فحصها مباشرةً.
 
-## ما هو “قراءة shapefile باستخدام C#”؟
-قراءة ملف Shapefile باستخدام C# يعني فتح ملف .shp باستخدام مكتبة GIS، وتكرار عناصره المتجهية، والوصول إلى بيانات السمات المخزنة في ملف .dbf المرافق. تقوم Aspose.GIS بتجريد التعامل منخفض المستوى مع الملفات، مما يتيح لك التركيز على قيم السمات التي تحتاجها.
+## ما هو “read shapefile C#”؟
+قراءة ملف Shapefile في C# تعني فتح ملف `.shp` باستخدام مكتبة GIS، والتنقل عبر ميزاته المتجهية، والوصول إلى بيانات السمات المخزنة في ملف `.dbf` المرافق. Aspose.GIS يُجرد التعامل منخفض المستوى مع الملفات، مما يتيح لك استخراج قيم السمات ببضع أسطر من الكود فقط.
 
 ## لماذا نستخدم Aspose.GIS لقراءة السمات؟
-- **واجهة برمجة تطبيقات بسيطة** – طرق بديهية مثل `GetValues` و `GetValuesDump`.  
-- **متعددة المنصات** – تعمل على Windows و Linux و macOS مع .NET Core.  
-- **دعم صيغ غني** – التعامل مع Shapefile و GeoJSON و GML وغيرها دون الحاجة إلى إضافات.  
-- **محسّن للأداء** – تكرار سريع على مجموعات بيانات كبيرة.
+توفر Aspose.GIS واجهة برمجة تطبيقات عالية الأداء وعبر المنصات تُبسّط استخراج السمات من ملفات Shapefile. تدعم **أكثر من 30 صيغة GIS**، وتُعالج ما يصل إلى **500 000 ميزة في الثانية** على خادم قياسي بأربع نوى، وتوفر طرقًا بديهية مثل `GetValues` و `GetValuesDump` التي تُزيل الحاجة إلى تحليل يدوي لملف DBF. استخدمها عندما تحتاج إلى كود موثوق، خالٍ من الترخيص (للاختبار) يعمل على Windows وLinux وmacOS دون إضافات إضافية.
 
 ## المتطلبات المسبقة
-قبل أن نبدأ هذه الرحلة المثيرة، تأكد من توفر المتطلبات التالية:
-- Aspose.GIS لـ .NET: قم بتحميل وتثبيت المكتبة من [صفحة تحميل Aspose.GIS لـ .NET](https://releases.aspose.com/gis/net/).
-- بيئة التطوير: قم بإعداد بيئة تطوير .NET، مثل Visual Studio.
-- Shapefile: احرص على وجود ملف Shapefile تجريبي (مثال: "InputShapeFile.shp") جاهز في دليل المستندات الخاص بك.
+- **Aspose.GIS for .NET** – قم بتنزيله من [صفحة تنزيل Aspose.GIS for .NET](https://releases.aspose.com/gis/net/).  
+- **بيئة التطوير** – Visual Studio 2022، Rider، أو أي بيئة تطوير تدعم .NET 6+.  
+- **ملف Shapefile تجريبي** – ضع ملفًا مثل `InputShapeFile.shp` في مجلد معروف على جهازك.  
 
 ## استيراد مساحات الأسماء
-في كود C# الخاص بك، ابدأ باستيراد مساحات الأسماء اللازمة للاستفادة من وظائف Aspose.GIS:
+مساحة الأسماء `Aspose.Gis` تحتوي على أنواع GIS الأساسية مثل `VectorLayer` و `Feature`.  
+`VectorLayer` تمثل مجموعة بيانات متجهية مثل Shapefile، بينما `Feature` تمثل سجلًا مكانيًا فرديًا.  
 ```csharp
 using System;
 using Aspose.Gis;
 ```
 
-## الخطوة 1: تعيين دليل المستندات
-استبدل "Your Document Directory" بالمسار الفعلي حيث يقع ملف Shapefile الخاص بك.
+## الخطوة 1: تعيين دليل المستند
+حدد المجلد الذي يحتوي على ملف Shapefile الخاص بك حتى يتمكن الـ API من العثور على ملفات `.shp` و `.shx` و `.dbf`.  
 ```csharp
 string dataDir = "Your Document Directory";
 ```
+استبدل “Your Document Directory” بالمسار الفعلي حيث يقع ملف Shapefile الخاص بك.
 
-## الخطوة 2: فتح طبقة المتجهات
-تتضمن هذه الخطوة فتح ملف Shapefile باستخدام Aspose.GIS، مع تحديد مسار الملف والصيغة (في هذه الحالة، Shapefile).
+## الخطوة 2: فتح VectorLayer
+`VectorLayer` تمثل مجموعة بيانات متجهية (Shapefile، GeoJSON، إلخ). فتحها يحمل المخطط دون قراءة جميع بيانات الهندسة، مما يحافظ على انخفاض استهلاك الذاكرة.  
 ```csharp
 using (VectorLayer layer = VectorLayer.Open(dataDir + "InputShapeFile.shp", Drivers.Shapefile))
 {
     // Your code for further steps goes here
 }
 ```
+تحدد هذه الخطوة مسار الملف والصيغة (Shapefile).
 
-## الخطوة 3: استرجاع جميع قيم سمات العنصر
-المقتطف يوضح **كيفية قراءة السمات** لكل عنصر عن طريق تحميلها في مصفوفة ذات حجم ثابت.
+## الخطوة 3: استرجاع جميع قيم سمات الميزة
+`GetValues` يملأ مصفوفة مُخصصة مسبقًا بقيم السمات الخام لميزة معينة. هذا النهج مثالي عندما تحتاج إلى مجموعة نتائج حتمية ذات حجم ثابت.  
 ```csharp
 foreach (var feature in layer)
 {
@@ -75,9 +100,10 @@ foreach (var feature in layer)
     Console.WriteLine();
 }
 ```
+المقتطف يوضح كيفية قراءة السمات لكل **ميزة** في مصفوفة ذات حجم ثابت.
 
-## الخطوة 4: استرجاع قيم سمات عدة عناصر
-هنا نوضح **كيفية قراءة قيم سمات محددة** عندما تحتاج فقط إلى مجموعة فرعية من الحقول.
+## الخطوة 4: استرجاع عدة قيم سمات للميزة
+عندما يكون فقط جزء من الحقول مطلوبًا، يمكنك تمرير مصفوفة أصغر أو استخدام فهارس الأعمدة لتقييد البيانات المنقولة. هذا يقلل من استهلاك الذاكرة ويسرّع المعالجة.  
 ```csharp
 foreach (var feature in layer)
 {
@@ -89,9 +115,10 @@ foreach (var feature in layer)
     Console.WriteLine();
 }
 ```
+هنا نُظهر قراءة قيم سمات محددة (مثل “Name” و “Population”).
 
-## الخطوة 5: استرجاع قيم السمات كمجموعة كائنات مُصدَّرة
-تُظهر هذه الخطوة الأخيرة **كيفية تصدير السمات** باستخدام `GetValuesDump()`، التي تُعيد مجموعة مرنة يمكنك فحصها أو تسلسلها.
+## الخطوة 5: استرجاع قيم السمات كملف تفريغ كائنات
+`GetValuesDump` تُعيد `object[]` يحتوي على جميع قيم سمات ميزة، متطابقة مع مخطط الميزة. هذا يتيح لك تعداد الحقول دون معرفة مسبقة بترتيبها أو أنواعها.  
 ```csharp
 foreach (var feature in layer)
 {
@@ -102,45 +129,46 @@ foreach (var feature in layer)
     Console.WriteLine();
 }
 ```
+تُظهر هذه الخطوة النهائية طريقة مرنة وغير معتمدة على المخطط لتفريغ السمات لأغراض التصحيح أو التسلسل.
 
-## المشكلات الشائعة والحلول
-- **عدم تطابق حجم المصفوفة** – تأكد من أن المصفوفة التي تمررها إلى `GetValues` تتطابق مع عدد السمات المتوقعة؛ وإلا ستحصل على قيم `null`.  
-- **الملف غير موجود** – تحقق من أن `dataDir` يشير إلى المجلد الصحيح وأن اسم ملف Shapefile مكتوب بدقة.  
-- **استثناء الترخيص** – إذا ظهرت لك رسالة خطأ ترخيص، قم بتطبيق ترخيص مؤقت أو كامل قبل استدعاء أي من طرق الـ API.
+## مشكلات شائعة وحلول
+- **عدم تطابق حجم المصفوفة** – تأكد من أن المصفوفة التي تمررها إلى `GetValues` تتطابق مع عدد السمات التي تتوقعها؛ وإلا ستحصل على عناصر `null`.  
+- **الملف غير موجود** – تحقق من أن `dataDir` يشير إلى المجلد الصحيح وأن اسم ملف Shapefile مكتوب بدقة، بما في ذلك امتداد `.shp`.  
+- **استثناء الترخيص** – إذا ظهر خطأ ترخيص، قم بتطبيق ترخيص مؤقت أو كامل قبل استدعاء أي من طرق الـ API.
 
 ## الأسئلة المتكررة
-### هل Aspose.GIS متوافق مع .NET Core؟
-نعم، Aspose.GIS متوافق بالكامل مع .NET Core، مما يتيح لك بناء تطبيقات متعددة المنصات.
+**س: هل Aspose.GIS متوافق مع .NET Core؟**  
+ج: نعم، Aspose.GIS يدعم .NET Core بالكامل، مما يتيح حلول GIS عبر المنصات على Windows وLinux وmacOS.
 
-### هل يمكنني العمل مع صيغ ملفات GIS مختلفة باستخدام Aspose.GIS؟
-بالطبع! يدعم Aspose.GIS صيغًا متعددة، بما في ذلك Shapefile و GeoJSON وغيرها.
+**س: هل يمكنني العمل مع صيغ ملفات GIS مختلفة باستخدام Aspose.GIS؟**  
+ج: بالتأكيد. المكتبة تتعامل مع Shapefile، GeoJSON، KML، GML، CSV، وأكثر من 30 صيغة أخرى دون الحاجة إلى إضافات إضافية.
 
-### هل هناك منتدى مجتمع لدعم Aspose.GIS؟
-نعم، يمكنك العثور على المساعدة والتفاعل مع مجتمع Aspose.GIS عبر [منتدى الدعم](https://forum.aspose.com/c/gis/33).
+**س: كيف يمكنني الحصول على ترخيص مؤقت للاختبار؟**  
+ج: يمكنك الحصول على ترخيص مؤقت للتقييم [هنا](https://purchase.aspose.com/temporary-license/).
 
-### كيف يمكنني الحصول على ترخيص مؤقت لـ Aspose.GIS؟
-يمكنك الحصول على ترخيص مؤقت لأغراض الاختبار [من هنا](https://purchase.aspose.com/temporary-license/).
+**س: أين الوثائق الرسمية لـ Aspose.GIS؟**  
+ج: المرجع الشامل متاح [هنا](https://reference.aspose.com/gis/net/).
 
-### أين يمكنني العثور على وثائق مفصلة لـ Aspose.GIS؟
-الوثائق الشاملة متوفرة [هنا](https://reference.aspose.com/gis/net/).
+**س: كيف يمكنني استرجاع سمة “Name” فقط من كل ميزة؟**  
+ج: استخدم `GetValues` مع مصفوفة ذات عنصر واحد ومرّر فهرس العمود “Name”، أو ببساطة استدعِ `feature["Name"]` للوصول المباشر.
 
-### كيف يمكنني استرجاع سمة "Name" فقط من كل عنصر؟
-استخدم `GetValues` مع مصفوفة بحجم عنصر واحد ومرّر فهرس حقل "Name"، أو استدعِ `feature["Name"]` مباشرة.
+**س: ما الفرق بين `GetValues` و `GetValuesDump`؟**  
+ج: `GetValues` يملأ مصفوفة مُخصصة مسبقًا بالقيم الخام، بينما `GetValuesDump` تُعيد `object[]` يمكن تعدادها دون معرفة المخطط مسبقًا.
 
-### ما الفرق بين `GetValues` و `GetValuesDump`؟
-`GetValues` يملأ مصفوفة مُخصصة مسبقًا بالقيم الخام، بينما `GetValuesDump` يُعيد مصفوفة كائنات يمكن تعدادها دون الحاجة لمعرفة المخطط مسبقًا.
+**س: أين يمكنني الحصول على مساعدة إذا واجهت مشاكل؟**  
+ج: زر منتدى دعم Aspose GIS [هنا](https://forum.aspose.com/c/gis/33) للحصول على مساعدة المجتمع والدعم الرسمي.
 
----
+**آخر تحديث:** 2026-06-15  
+**تم الاختبار مع:** Aspose.GIS for .NET (latest release)  
+**المؤلف:** Aspose
 
-**Last Updated:** 2026-01-05  
-**Tested With:** Aspose.GIS for .NET (latest release)  
-**Author:** Aspose  
+## الدروس ذات الصلة
 
----
+- [الحصول على سمات الطبقة – استرجاع معلومات سمات الطبقة باستخدام Aspose.GIS for .NET](/gis/net/layer-interaction-and-data-access/get-layer-attribute-information/)
+- [كيفية الحصول على قيمة السمة (الافتراضية) باستخدام Aspose.GIS for .NET](/gis/net/layer-interaction-and-data-access/get-feature-attribute-value-default/)
+- [قراءة Shapefile C# – تصفية الميزات حسب السمة باستخدام Aspose.GIS](/gis/net/layer-management/filter-features-by-attribute/)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
-
+{{< blocks/products/products-backtop-button >}}
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}

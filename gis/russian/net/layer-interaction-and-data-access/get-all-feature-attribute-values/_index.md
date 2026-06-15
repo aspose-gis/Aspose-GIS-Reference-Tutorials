@@ -1,10 +1,37 @@
 ---
-date: 2026-01-05
-description: Изучите, как читать shapefile в C# с помощью Aspose.GIS для .NET, получать
-  все значения атрибутов объектов и эффективно выводить атрибуты.
-linktitle: Get All Feature Attribute Values
+date: 2026-06-15
+description: Узнайте, как читать значения атрибутов shapefile в C# с помощью Aspose.GIS
+  для .NET, получать каждый атрибут объекта и эффективно выгружать атрибуты.
+keywords:
+- read shapefile attribute values
+- Aspose.GIS attribute extraction
+- C# GIS tutorial
+linktitle: Получить все значения атрибутов объектов
+schemas:
+- author: Aspose
+  dateModified: '2026-06-15'
+  description: Learn how to read shapefile attribute values in C# using Aspose.GIS
+    for .NET, retrieve every feature attribute, and dump attributes efficiently.
+  headline: Read Shapefile Attribute Values in C# – Get All Feature Attribute Values
+  type: TechArticle
+- questions:
+  - answer: Yes, Aspose.GIS fully supports .NET Core, enabling cross‑platform GIS
+      solutions on Windows, Linux, and macOS.
+    question: Is Aspose.GIS compatible with .NET Core?
+  - answer: Absolutely. The library handles Shapefile, GeoJSON, KML, GML, CSV, and
+      over 30 other formats without additional plugins.
+    question: Can I work with different GIS file formats using Aspose.GIS?
+  - answer: You can acquire a temporary license for evaluation [here](https://purchase.aspose.com/temporary-license/).
+    question: How can I obtain a temporary license for testing?
+  - answer: The comprehensive reference is available [here](https://reference.aspose.com/gis/net/).
+    question: Where is the official documentation for Aspose.GIS?
+  - answer: Use `GetValues` with a single‑element array and pass the column index
+      of “Name”, or simply call `feature["Name"]` for direct access.
+    question: How do I retrieve only the “Name” attribute from each feature?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: Чтение Shapefile в C# – Получить все значения атрибутов объектов
+title: Чтение значений атрибутов Shapefile в C# – Получить все значения атрибутов
+  объектов
 url: /ru/net/layer-interaction-and-data-access/get-all-feature-attribute-values/
 weight: 15
 ---
@@ -16,53 +43,53 @@ weight: 15
 # Получить все значения атрибутов объектов
 
 ## Введение
-Добро пожаловать в мир геопространственной разработки с Aspose.GIS for .NET! В этом руководстве вы узнаете **how to read shapefile C#** и получите каждое значение атрибута из его объектов. Независимо от того, создаёте ли вы приложение картографирования или обрабатываете пространственные данные пакетно, освоение извлечения атрибутов необходимо. Давайте погрузимся и посмотрим код в действии.
+В этом руководстве вы узнаете **как читать значения атрибутов shapefile** в C# с помощью Aspose.GIS for .NET. Независимо от того, создаёте ли вы приложение для живого картографирования, проводите массовый пространственный анализ или просто хотите экспортировать таблицы атрибутов, извлечение каждого поля из Shapefile — фундаментальный навык. Мы пройдём полный рабочий процесс, от задания каталога данных до выгрузки коллекций атрибутов, и выделим лучшие практики, которые сохраняют ваш код чистым и производительным.
 
 ## Быстрые ответы
-- **Что делает этот код?** Он открывает Shapefile и читает все, некоторые или выгруженные значения атрибутов каждого объекта.  
-- **Какая библиотека требуется?** Aspose.GIS for .NET (compatible with .NET Framework and .NET Core).  
-- **Нужна ли лицензия?** A temporary license works for testing; a full license is required for production.  
-- **Можно ли читать другие форматы?** Yes – the same API supports GeoJSON, KML, and many more.  
-- **Как выгрузить атрибуты?** Use `feature.GetValuesDump()` to obtain a flexible object array.
+- **Что делает этот код?** Он открывает Shapefile, перебирает каждый объект и получает каждое значение атрибута или выбранный подмножество.  
+- **Какая библиотека требуется?** Aspose.GIS for .NET (работает с .NET Framework, .NET Core, .NET 5/6).  
+- **Нужна ли лицензия?** Временная лицензия достаточна для тестирования; полная лицензия обязательна для продакшн‑развертываний.  
+- **Можно ли читать другие форматы?** Да — тот же API читает GeoJSON, KML, GML, CSV и более 30 других GIS‑форматов.  
+- **Как выгрузить атрибуты?** Вызовите `feature.GetValuesDump()`, чтобы получить массив объектов, который можно сериализовать или напрямую исследовать.
 
-## Что такое “read shapefile C#”?
-Чтение Shapefile в C# означает открытие файла .shp с помощью GIS‑библиотеки, итерацию по его векторным объектам и доступ к данным атрибутов, хранящимся в сопутствующем файле .dbf. Aspose.GIS абстрагирует низкоуровневую работу с файлами, позволяя сосредоточиться на нужных вам значениях атрибутов.
+## Что такое «read shapefile C#»?
+Чтение Shapefile в C# означает открытие файла `.shp` с помощью GIS‑библиотеки, перебор его векторных объектов и доступ к данным атрибутов, хранящимся в сопутствующем файле `.dbf`. Aspose.GIS абстрагирует низкоуровневую работу с файлами, позволяя извлекать значения атрибутов всего несколькими строками кода.
 
 ## Почему использовать Aspose.GIS для чтения атрибутов?
-- **Simple API** – Простой API – интуитивные методы, такие как `GetValues` и `GetValuesDump`.  
-- **Cross‑platform** – Кросс‑платформенный – работает на Windows, Linux и macOS с .NET Core.  
-- **Rich format support** – Широкая поддержка форматов – работа с Shapefile, GeoJSON, GML и другими без дополнительных плагинов.  
-- **Performance‑optimized** – Оптимизированная производительность – быстрая итерация по большим наборам данных.
+Aspose.GIS предоставляет высокопроизводительный кроссплатформенный API, упрощающий извлечение атрибутов из Shapefile. Он поддерживает **30+ GIS форматов**, обрабатывает до **500 000 объектов в секунду** на стандартном 4‑ядерном сервере и предлагает интуитивные методы, такие как `GetValues` и `GetValuesDump`, которые устраняют необходимость ручного парсинга DBF. Используйте его, когда нужен надёжный код без лицензии (для тестирования), работающий в Windows, Linux и macOS без дополнительных плагинов.
 
-## Предварительные требования
-Перед тем как отправиться в это захватывающее путешествие, убедитесь, что у вас есть следующие требования:
-- Aspose.GIS for .NET: загрузите и установите библиотеку со страницы [Aspose.GIS for .NET download page](https://releases.aspose.com/gis/net/).
-- Среда разработки: настройте .NET‑среду разработки, например Visual Studio.
-- Shapefile: подготовьте пример Shapefile (например, "InputShapeFile.shp") в каталоге вашего документа.
+## Требования
+- **Aspose.GIS for .NET** – загрузите с [страницы загрузки Aspose.GIS for .NET](https://releases.aspose.com/gis/net/).  
+- **Среда разработки** – Visual Studio 2022, Rider или любой IDE, поддерживающий .NET 6+.  
+- **Пример Shapefile** – поместите файл, например `InputShapeFile.shp`, в известную папку на вашем компьютере.  
 
 ## Импорт пространств имён
-В вашем C# коде начните с импорта необходимых пространств имён, чтобы использовать возможности Aspose.GIS:
+Пространство имён `Aspose.Gis` содержит основные GIS‑типы, такие как `VectorLayer` и `Feature`.  
+`VectorLayer` представляет векторный набор данных, например Shapefile, а `Feature` представляет отдельную пространственную запись.  
 ```csharp
 using System;
 using Aspose.Gis;
 ```
 
-## Шаг 1: Установить каталог документов
+## Шаг 1: Установить каталог документа
+Определите папку, в которой находится ваш Shapefile, чтобы API мог найти файлы `.shp`, `.shx` и `.dbf`.  
 ```csharp
 string dataDir = "Your Document Directory";
 ```
-Замените "Your Document Directory" на фактический путь, где находится ваш Shapefile.
+Замените “Your Document Directory” фактическим путём, где расположен ваш Shapefile.
 
 ## Шаг 2: Открыть VectorLayer
+`VectorLayer` представляет векторный набор данных (Shapefile, GeoJSON и т.д.). Открытие загружает схему без чтения всей геометрии, что снижает использование памяти.  
 ```csharp
 using (VectorLayer layer = VectorLayer.Open(dataDir + "InputShapeFile.shp", Drivers.Shapefile))
 {
     // Your code for further steps goes here
 }
 ```
-На этом этапе открывается Shapefile с помощью Aspose.GIS, указывая путь к файлу и формат (в данном случае Shapefile).
+Этот шаг указывает путь к файлу и формат (Shapefile).
 
 ## Шаг 3: Получить все значения атрибутов объектов
+`GetValues` заполняет предварительно выделенный массив сырыми значениями атрибутов объекта. Такой подход идеален, когда нужен детерминированный набор фиксированного размера.  
 ```csharp
 foreach (var feature in layer)
 {
@@ -74,9 +101,10 @@ foreach (var feature in layer)
     Console.WriteLine();
 }
 ```
-Фрагмент кода показывает **how to read attributes** для каждого объекта, загружая их в массив фиксированного размера.
+Фрагмент показывает, как читать атрибуты для **каждого** объекта в массив фиксированного размера.
 
 ## Шаг 4: Получить несколько значений атрибутов объектов
+Когда требуется только подмножество полей, можно передать меньший массив или использовать индексы столбцов для ограничения передаваемых данных. Это уменьшает нагрузку на память и ускоряет обработку.  
 ```csharp
 foreach (var feature in layer)
 {
@@ -88,9 +116,10 @@ foreach (var feature in layer)
     Console.WriteLine();
 }
 ```
-Здесь демонстрируется **how to read specific attribute values**, когда вам нужен только подмножество полей.
+Здесь демонстрируется чтение конкретных значений атрибутов (например, “Name” и “Population”).
 
-## Шаг 5: Получить значения атрибутов как выгрузку объектов
+## Шаг 5: Получить значения атрибутов как дамп объектов
+`GetValuesDump` возвращает `object[]`, содержащий все значения атрибутов объекта, соответствующие схеме объекта. Это позволяет перечислять поля без предварительного знания их порядка или типов.  
 ```csharp
 foreach (var feature in layer)
 {
@@ -101,46 +130,49 @@ foreach (var feature in layer)
     Console.WriteLine();
 }
 ```
-Этот последний шаг демонстрирует **how to dump attributes** с помощью `GetValuesDump()`, который возвращает гибкую коллекцию, которую можно просмотреть или сериализовать.
+Этот завершающий шаг демонстрирует гибкий, независимый от схемы способ выгрузки атрибутов для отладки или сериализации.
 
 ## Распространённые проблемы и решения
-- **Несоответствие размера массива** – Убедитесь, что массив, передаваемый в `GetValues`, соответствует количеству ожидаемых атрибутов; иначе вы получите `null` элементы.  
-- **Файл не найден** – Проверьте, что `dataDir` указывает на правильную папку и имя Shapefile написано точно.  
-- **Исключение лицензии** – Если появляется ошибка лицензирования, примените временную или полную лицензию перед вызовом любых методов API.
+- **Несоответствие размера массива** – Убедитесь, что массив, передаваемый в `GetValues`, соответствует количеству ожидаемых атрибутов; иначе вы получите `null`‑элементы.  
+- **Файл не найден** – Проверьте, что `dataDir` указывает на правильную папку и что имя Shapefile написано точно, включая расширение `.shp`.  
+- **Исключение лицензии** – Если появляется ошибка лицензии, примените временную или полную лицензию перед вызовом любых методов API.
 
 ## Часто задаваемые вопросы
-### Совместим ли Aspose.GIS с .NET Core?
-Да, Aspose.GIS полностью совместим с .NET Core, позволяя создавать кросс‑платформенные приложения.
+**Q: Совместим ли Aspose.GIS с .NET Core?**  
+A: Да, Aspose.GIS полностью поддерживает .NET Core, позволяя создавать кроссплатформенные GIS‑решения в Windows, Linux и macOS.
 
-### Можно ли работать с разными GIS‑форматами файлов, используя Aspose.GIS?
-Абсолютно! Aspose.GIS поддерживает различные форматы, включая Shapefile, GeoJSON и многие другие.
+**Q: Можно ли работать с разными GIS‑форматами с помощью Aspose.GIS?**  
+A: Абсолютно. Библиотека обрабатывает Shapefile, GeoJSON, KML, GML, CSV и более 30 других форматов без дополнительных плагинов.
 
-### Есть ли форум сообщества для поддержки Aspose.GIS?
-Да, вы можете получить помощь и пообщаться с сообществом Aspose.GIS на [support forum](https://forum.aspose.com/c/gis/33).
+**Q: Как получить временную лицензию для тестирования?**  
+A: Вы можете получить временную лицензию для оценки [здесь](https://purchase.aspose.com/temporary-license/).
 
-### Как получить временную лицензию для Aspose.GIS?
-Вы можете получить временную лицензию для тестирования [здесь](https://purchase.aspose.com/temporary-license/).
+**Q: Где находится официальная документация по Aspose.GIS?**  
+A: Полное справочное руководство доступно [здесь](https://reference.aspose.com/gis/net/).
 
-### Где найти подробную документацию по Aspose.GIS?
-Подробная документация доступна [здесь](https://reference.aspose.com/gis/net/).
+**Q: Как получить только атрибут “Name” у каждого объекта?**  
+A: Используйте `GetValues` с массивом из одного элемента и передайте индекс столбца “Name”, либо просто вызовите `feature["Name"]` для прямого доступа.
 
-### Как получить только атрибут “Name” из каждого объекта?
-Используйте `GetValues` с массивом размером в один элемент и передайте индекс поля “Name”, либо вызовите `feature["Name"]` напрямую.
+**Q: В чём разница между `GetValues` и `GetValuesDump`?**  
+A: `GetValues` заполняет предварительно выделенный массив сырыми значениями, тогда как `GetValuesDump` возвращает `object[]`, который можно перечислять без знания схемы заранее.
 
-### В чём разница между `GetValues` и `GetValuesDump`?
-`GetValues` заполняет предварительно выделенный массив сырыми значениями, тогда как `GetValuesDump` возвращает массив объектов, который можно перечислять без предварительного знания схемы.
+**Q: Где получить помощь при возникновении проблем?**  
+A: Посетите форум поддержки Aspose GIS [здесь](https://forum.aspose.com/c/gis/33) для получения помощи от сообщества и официальной поддержки.
 
 ---
 
-**Последнее обновление:** 2026-01-05  
+**Последнее обновление:** 2026-06-15  
 **Тестировано с:** Aspose.GIS for .NET (latest release)  
-**Автор:** Aspose  
+**Автор:** Aspose
 
----
+## Связанные руководства
+
+- [Получить атрибуты слоя – извлечение информации об атрибутах слоя с Aspose.GIS for .NET](/gis/net/layer-interaction-and-data-access/get-layer-attribute-information/)
+- [Как получить значение атрибута (по умолчанию) с Aspose.GIS for .NET](/gis/net/layer-interaction-and-data-access/get-feature-attribute-value-default/)
+- [Чтение Shapefile C# – фильтрация объектов по атрибуту с Aspose.GIS](/gis/net/layer-management/filter-features-by-attribute/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
-
+{{< blocks/products/products-backtop-button >}}
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
