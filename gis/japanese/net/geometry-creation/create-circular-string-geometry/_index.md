@@ -1,44 +1,44 @@
 ---
-date: 2025-12-12
-description: Aspose.GIS for .NET を使用してベクトルレイヤーを作成し、円形ストリングジオメトリを追加する方法を学びましょう — GIS
+date: 2026-02-15
+description: Aspose.GIS for .NET を使用してベクターレイヤーを作成し、円形ストリングジオメトリを追加する方法を学びましょう – GIS
   アプリケーションを迅速に構築する手段です。
 linktitle: Create Circular String Geometry
 second_title: Aspose.GIS .NET API
-title: Aspose.GIS for .NETでベクターレイヤーと円形ストリングを作成する
+title: Aspose.GIS for .NETでベクターレイヤーと円形文字列を作成する
 url: /ja/net/geometry-creation/create-circular-string-geometry/
 weight: 20
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
+ final answer with only translated content.{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.GIS for .NET を使用したベクトルレイヤーと円形文字列ジオメトリの作成
+# Aspose.GIS for .NET を使用したベクターレイヤーと円形文字列ジオメトリの作成
 
 ## はじめに
-.NET プラットフォーム上で GIS アプリケーションを構築する場合、最初のステップは **ベクトルレイヤーを作成** して空間フィーチャを格納することが多いです。Aspose.GIS for .NET はこのプロセスをシンプルにし、円形文字列などの高度なジオメトリでレイヤーを拡張できます。本チュートリアルでは、ベクトルレイヤーの作成方法、円形文字列ジオメトリの追加方法、そして結果を Shapefile として保存する手順を、クリーンで本番向けの C# コードとともに学びます。
+.NET プラットフォーム上で GIS アプリケーションを構築する場合、最初のステップは通常、空間フィーチャーを格納する **ベクターレイヤー** オブジェクトを作成することです。Aspose.GIS for .NET はこのプロセスをシンプルにし、円形文字列などの高度なジオメトリでレイヤーを拡張できるようにします。このチュートリアルでは、**ベクターレイヤーの作成**、**円形文字列ジオメトリの追加**、そして結果を Shapefile として保存する方法を、クリーンで本番環境向けの C# コードを使って学びます。
 
 ## クイック回答
-- **“create vector layer” は何を意味しますか？** 新しいコンテナ（レイヤー）を作成し、ポイント、ライン、ポリゴンなどの空間フィーチャを保持できるようにします。  
+- **“ベクターレイヤーの作成” とは何ですか？** 空間フィーチャー（ポイント、ライン、ポリゴンなど）を保持できる新しいコンテナ（レイヤー）を作成します。  
 - **円形文字列を表すクラスはどれですか？** `Aspose.Gis.Geometries` の `CircularString`。  
 - **レイヤーを Shapefile として保存できますか？** はい – レイヤー作成時に `Drivers.Shapefile` を使用します。  
-- **開発にライセンスは必要ですか？** 評価用に一時ライセンスが使用可能ですが、本番環境ではフルライセンスが必要です。  
-- **サポートされている .NET バージョンは何ですか？** .NET Framework 4.5 以上、.NET Core 3.1 以上、.NET 5/6/7。  
+- **開発にライセンスは必要ですか？** 評価用の一時ライセンスで動作しますが、本番環境ではフルライセンスが必要です。  
+- **サポートされている .NET バージョンは？** .NET Framework 4.5 以上、.NET Core 3.1 以上、.NET 5/6/7。
 
-## “create vector layer” とは何ですか？
-ベクトルレイヤーは、単一のデータソースに格納されたベクトルフィーチャ（ポイント、ライン、ポリゴン）を論理的にグループ化したものです。Aspose.GIS では `VectorLayer.Create` を呼び出し、対象ファイルパスと目的のドライバー（例: Shapefile）を指定してレイヤーをインスタンス化します。レイヤーが作成されれば、フィーチャの追加、ジオメトリの割り当て、空間操作が可能になります。
+## “ベクターレイヤーの作成” とは？
+ベクターレイヤーは、単一のデータソースに格納されたベクターフィーチャー（ポイント、ライン、ポリゴン）を論理的にグループ化したものです。Aspose.GIS では `VectorLayer.Create` を呼び出し、対象のファイルパスと使用するドライバー（例: Shapefile）を指定してレイヤーをインスタンス化します。レイヤーが作成されれば、フィーチャーの追加、ジオメトリの割り当て、空間操作を実行できます。
 
 ## なぜ円形文字列を追加するのか？
-円形文字列は **線形ジオメトリ** の一種で、点のシーケンスを使って円弧を近似します。曲線道路や河川の曲がり角など、滑らかな曲線が必要なフィーチャを多数の小さなラインセグメントに分割せずに表現できるため便利です。
+円形文字列は **線形ジオメトリ** の一種で、点のシーケンスを用いて弧を近似します。多数の小さなラインセグメントを使用せずに、曲線道路や川の曲がりなど、滑らかな曲線が必要なフィーチャーを表現するのに便利です。
 
 ## 前提条件
 - **.NET Framework または .NET Core** がマシンにインストールされていること。  
 - **Aspose.GIS for .NET** ライブラリ – 公式サイト **[here](https://releases.aspose.com/gis/net/)** からダウンロードしてください。  
 - **Visual Studio** や **JetBrains Rider** などの IDE。  
-- **C#** プログラミングの基本的な知識。  
+- **C#** プログラミングの基本的な知識。
 
 ## 名前空間のインポート
-C# ファイルに必要な名前空間を追加します:
+Add the required namespaces to your C# file:
 
 ```csharp
 using Aspose.Gis;
@@ -53,7 +53,7 @@ using System.Threading.Tasks;
 ## 手順ガイド
 
 ### 手順 1: 出力ファイルパスの定義
-Shapefile が書き込まれる場所を設定します。
+Set the location where the Shapefile will be written.
 
 ```csharp
 string path = "Your Document Directory" + "CreateCircularString_out.shp";
@@ -61,23 +61,23 @@ string path = "Your Document Directory" + "CreateCircularString_out.shp";
 
 `"Your Document Directory"` をシステム上の実際のフォルダー パスに置き換えてください。
 
-### 手順 2: **Create vector layer**
-`Create` メソッドを使用して `VectorLayer` を開きます。これが **create vector layer** 操作の核心です。
+### 手順 2: **ベクターレイヤーの作成**
+Open a `VectorLayer` using the `Create` method. This is the core of the **create vector layer** operation.
 
 ```csharp
 using (VectorLayer layer = VectorLayer.Create(path, Drivers.Shapefile))
 {
 ```
 
-### 手順 3: 新しいフィーチャの作成
-フィーチャはレイヤー内の単一の空間レコードを表します。
+### 手順 3: 新しいフィーチャーの構築
+A feature represents a single spatial record inside the layer.
 
 ```csharp
     var feature = layer.ConstructFeature();
 ```
 
 ### 手順 4: 円形文字列ジオメトリの構築
-曲線形状を定義する点を追加します。点のシーケンスは、開始点と終了点が同じ位置になるようにして閉じた円形文字列を形成します。
+Add the points that define the curved shape. The sequence of points creates an arc that starts and ends at the same location, forming a closed circular string.
 
 ```csharp
     var circularString = new CircularString();
@@ -88,8 +88,8 @@ using (VectorLayer layer = VectorLayer.Create(path, Drivers.Shapefile))
     circularString.AddPoint(0, 0);
 ```
 
-### 手順 5: ジオメトリを割り当て、フィーチャをレイヤーに追加
-ジオメトリをフィーチャにリンクし、レイヤーに保存します。
+### 手順 5: ジオメトリを割り当て、フィーチャーをレイヤーに追加
+Link the geometry to the feature and store it in the layer.
 
 ```csharp
     feature.Geometry = circularString;
@@ -100,11 +100,12 @@ using (VectorLayer layer = VectorLayer.Create(path, Drivers.Shapefile))
 `using` ブロックが終了すると、レイヤーは自動的にディスク上の Shapefile にフラッシュされます。
 
 ## よくある問題と解決策
+
 | 問題 | 解決策 |
-|------|--------|
+|-------|----------|
 | **ファイルパスが無効** | ディレクトリが存在し、書き込み権限があることを確認してください。 |
 | **CircularString が直線として表示される** | ポイントが正しい順序で追加されているか確認してください。閉じた形状の場合、最初と最後のポイントは同一である必要があります。 |
-| **ライセンス例外** | 開発中は一時ライセンスを適用し、本番使用時はフルライセンスを購入してください。 |
+| **ライセンス例外** | 開発時に一時ライセンスを適用するか、本番使用のためにフルライセンスを購入してください。 |
 
 ## よくある質問
 
@@ -112,28 +113,45 @@ using (VectorLayer layer = VectorLayer.Create(path, Drivers.Shapefile))
 はい、Aspose.GIS for .NET は .NET Framework 4.5 から最新の .NET 8 リリースまで、幅広い .NET バージョンで動作するよう設計されています。
 
 ### Aspose.GIS for .NET を他の GIS ライブラリと統合できますか？
-もちろんです！他のライブラリでデータを読み取り、Aspose.GIS で操作し、再び書き出すことが可能です。柔軟な API がそれを支えます。
+もちろんです！他のライブラリでデータを読み取り、Aspose.GIS で操作し、再度書き戻すことが、柔軟な API により可能です。
 
 ### Aspose.GIS for .NET は空間データの可視化をサポートしていますか？
-はい、ライブラリにはレンダリングユーティリティが含まれており、マップやジオメトリの視覚的表現を生成できます。
+はい、ライブラリにはレンダリングユーティリティが含まれており、ジオメトリのマップやビジュアル表現を生成できます。
 
 ### Aspose.GIS for .NET に関するサポートを求められるコミュニティフォーラムはありますか？
-はい、Aspose.GIS フォーラム **[here](https://forum.aspose.com/c/gis/33)** で質問や経験の共有ができます。
+はい、質問や経験を共有できる Aspose.GIS フォーラムは **[here](https://forum.aspose.com/c/gis/33)** にあります。
 
 ### Aspose.GIS for .NET の評価用に一時ライセンスを取得できますか？
-もちろんです！評価用の一時ライセンスは **[here](https://purchase.aspose.com/temporary-license/)** から入手可能です。
+もちろんです！評価用の一時ライセンスは **[here](https://purchase.aspose.com/temporary-license/)** から取得できます。
 
 ### 同じレイヤーにより複雑なジオメトリ（例: MultiLineString）を追加するには？
-適切なジオメトリオブジェクト（例: `MultiLineString`）を作成し、個々の `LineString` オブジェクトで構成します。`feature.Geometry` に割り当て、円形文字列と同様にフィーチャをレイヤーに追加してください。
+適切なジオメトリオブジェクト（例: `MultiLineString`）を作成し、個々の `LineString` オブジェクトで構成し、`feature.Geometry` に割り当てて、円形文字列と同様にフィーチャーを追加します。
+
+## FAQ（クイックリファレンス）
+
+**Q:** プログラムで **ベクターレイヤーの作成** を行うにはどうすればよいですか？  
+**A:** `using` ブロック内で `VectorLayer.Create(path, Drivers.Shapefile)`（または別のドライバー）を呼び出します。
+
+**Q:** 円形文字列にポイントを追加するメソッドは何ですか？  
+**A:** 各座標に対して `circularString.AddPoint(x, y)` を使用します。
+
+**Q:** 同じレイヤーに複数のジオメトリを保存できますか？  
+**A:** はい、各ジオメトリごとに新しいフィーチャーを作成し、`layer.Add(feature)` で追加します。
+
+**Q:** Shapefile が作成されない場合はどうすればよいですか？  
+**A:** 出力ディレクトリが存在し、書き込み権限があり、ドライバー（`Drivers.Shapefile`）が正しく参照されていることを確認してください。
+
+**Q:** 評価ビルドにライセンスは必要ですか？  
+**A:** 開発・テストには一時ライセンスで十分ですが、本番環境ではフルライセンスが必要です。
 
 ## 結論
-本手順に従うことで、**ベクトルレイヤーを作成**し、円形文字オメトリで拡張する方法が習得できました。この基盤を活用すれば、交通ネットワークのマッピング、環境データの可視化、カスタム空間分析ツールの開発など、よりリッチな GIS ソリューションを構築できます。
+これらの手順に従うことで、Aspose.GIS for .NET を使用して **ベクターレイヤー** オブジェクトを作成し、**円形文字列** ジオメトリで拡張する方法が分かります。この基盤により、交通ネットワークのマッピング、環境データの可視化、カスタム空間分析ツールの開発など、よりリッチな GIS ソリューションを構築できます。
 
 ---
 
-**Last Updated:** 2025-12-12  
-**Tested With:** Aspose.GIS 24.11 for .NET  
-**Author:** Aspose  
+**最終更新日:** 2026-02-15  
+**テスト環境:** Aspose.GIS 24.11 for .NET  
+**作者:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
