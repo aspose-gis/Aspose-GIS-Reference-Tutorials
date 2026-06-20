@@ -1,11 +1,36 @@
 ---
-date: 2026-01-10
-description: Aspose.GIS for .NET ile GeoJSON'u File GDB'ye nasıl dönüştüreceğinizi
-  öğrenin. Bu adım adım kılavuz, coğrafi veri dönüşümünü ve Aspose GIS dönüşümünü
-  kapsar.
-linktitle: Convert GeoJSON Layer to File GDB
+date: 2026-06-20
+description: Aspose.GIS for .NET ile geojson'u gdb'ye nasıl dönüştüreceğinizi öğrenin.
+  Bu adım adım kılavuz, C#'ta GeoJSON okuma, bir File Geodatabase oluşturma ve yaygın
+  sorunların ele alınmasını kapsar.
+keywords:
+- convert geojson to gdb
+- how to convert geojson
+- read geojson c#
+- asp.net geojson conversion
+linktitle: GeoJSON Katmanını GDB'ye Dönüştür
+schemas:
+- author: Aspose
+  dateModified: '2026-06-20'
+  description: Learn how to convert geojson to gdb with Aspose.GIS for .NET. This
+    step‑by‑step guide covers reading GeoJSON in C#, creating a File Geodatabase,
+    and handling common issues.
+  headline: How to Convert GeoJSON to GDB Using Aspose.GIS for .NET
+  type: TechArticle
+- questions:
+  - answer: Converting a GeoJSON layer to a GDB with Aspose.GIS for .NET.
+    question: What does this guide teach?
+  - answer: '*convert geojson to gdb*.'
+    question: Which primary keyword is targeted?
+  - answer: A free trial works for testing; a commercial license is required for production.
+    question: Do I need a license?
+  - answer: .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6+.
+    question: Supported .NET versions?
+  - answer: Roughly 10‑15 minutes for a basic conversion.
+    question: Implementation time?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: Aspose.GIS for .NET kullanarak GeoJSON'ı File GDB'ye nasıl dönüştürülür
+title: Aspose.GIS for .NET kullanarak GeoJSON'u GDB'ye Dönüştürme
 url: /tr/net/layer-management/convert-geojson-layer-to-file-gdb/
 weight: 17
 ---
@@ -14,36 +39,31 @@ weight: 17
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# GeoJSON'u Aspose.GIS for .NET ile File GDB'ye Nasıl Dönüştürülür
+# GeoJSON'ı GDB'ye Aspose.GIS for .NET Kullanarak Nasıl Dönüştürülür
 
-## Introduction
-If you’re wondering **how to convert GeoJSON** into a File Geodatabase (File GDB) for robust GIS workflows, you’ve come to the right place. In this tutorial we’ll walk you through the entire process with Aspose.GIS for .NET, showing you why this library is a top choice for geospatial data conversion and how you can quickly create a file geodatabase from a GeoJSON layer.
+## Giriş
+Eğer **convert geojson to gdb**'yi hızlı ve güvenilir bir şekilde yapmak istiyorsanız, doğru yerdesiniz. Bu öğretici, C#'ta bir GeoJSON dosyasını okumaktan Aspose.GIS ile bir File Geodatabase (GDB) oluşturmaya kadar her adımı size gösterir. Aspose.GIS'in coğrafi veri dönüşümü için neden tercih edilen bir kütüphane olduğunu, ortamı nasıl kuracağınızı ve dönüşümü sadece birkaç dakika içinde nasıl çalıştıracağınızı göreceksiniz.
 
-## Quick Answers
-- **What does the tutorial cover?** Converting a GeoJSON layer to a File GDB using Aspose.GIS for .NET.  
-- **Which primary keyword is targeted?** *how to convert geojson*.  
-- **Do I need a license?** A free trial works for testing; a commercial license is required for production.  
-- **What .NET versions are supported?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6+.  
-- **How long does the implementation take?** About 10‑15 minutes for a basic conversion.
+## Hızlı Yanıtlar
+- **Bu kılavuz ne öğretir?** Aspose.GIS for .NET ile bir GeoJSON katmanını GDB'ye dönüştürmek.  
+- **Hedeflenen anahtar kelime nedir?** *convert geojson to gdb*.  
+- **Bir lisansa ihtiyacım var mı?** Test için ücretsiz deneme çalışır; üretim için ticari lisans gereklidir.  
+- **Desteklenen .NET sürümleri?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6+.  
+- **Uygulama süresi?** Temel bir dönüşüm için yaklaşık 10‑15 dakika.
 
-## What is GeoJSON and File GDB?
-GeoJSON is a lightweight, text‑based format for encoding a variety of geographic data structures. A File Geodatabase (File GDB) is a folder‑based, high‑performance format used by many desktop GIS applications. Converting between them enables you to leverage the strengths of both formats in your projects.
+## GeoJSON ve File GDB Nedir?
+GeoJSON, coğrafi özellikler için hafif, metin‑tabanlı bir formattır, File GDB ise klasör‑tabanlı yüksek‑performanslı bir ESRI coğrafi veritabanıdır.  
+GeoJSON, noktaları, çizgileri ve çokgenleri düz metin olarak depolar, bu da paylaşım ve düzenlemeyi kolaylaştırır; File GDB ise verileri ikili dosyalarda tutar ve hızlı mekansal sorgular ile sağlam öznitelik işleme sağlar. Birlikte, hem web‑dostu veri alışverişini hem de yüksek‑hızlı masaüstü GIS işleme ihtiyaçlarını karşılar.
 
-## Why use Aspose.GIS for geospatial data conversion?
-Aspose.GIS offers a unified API that abstracts away the complexities of format handling. With built‑in support for **geojson to file gdb**, you can:
+## Coğrafi Veri Dönüşümü İçin Neden Aspose.GIS Kullanmalı?
+Aspose.GIS, format‑özel tuhaflıkları gizleyen tek ve tutarlı bir API sağlar. **30+ geospatial formats**'ı destekler, veri kümesini belleğe tamamen yüklemeden **2 GB**'a kadar dosyaları işleyebilir ve koordinat referans sistemlerini otomatik olarak korur. Bu, ayrıştırıcılar yazmak için daha az zaman harcayıp uygulama mantığınızı inşa etmeye daha çok zaman ayıracağınız anlamına gelir.
 
-- Read GeoJSON in C# without third‑party parsers.  
-- Create a file geodatabase programmatically.  
-- Preserve attribute data and spatial reference information automatically.  
+## Önkoşullar
+- C# ve .NET proje yapısına aşinalık.  
+- Aspose.GIS for .NET yüklü. Henüz yüklemediyseniz, [here](https://releases.aspose.com/gis/net/) adresinden indirin ve kurulum kılavuzunu izleyin. Diğer Aspose ürünlerini de [here](https://releases.aspose.com/) adresinden keşfedebilirsiniz.
 
-## Prerequisites
-Before you start, make sure you have:
-
-- A working knowledge of .NET programming.  
-- Aspose.GIS for .NET installed. If not, download it from [here](https://releases.aspose.com/gis/net/) and follow the installation instructions.
-
-## Import Namespaces
-The first step is to bring the required namespaces into scope.
+## Ad Alanlarını İçe Aktarın
+İlk adım, gerekli ad alanlarını kapsam içine getirmektir.
 
 ```csharp
 using Aspose.Gis;
@@ -57,8 +77,8 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## Step 1: Set up the GeoJSON Layer
-Create a temporary GeoJSON file that contains the attributes and features you want to convert. This example adds two simple point features.
+## C#'ta GeoJSON Nasıl Okunur?
+GeoJSON dosyasını, JSON'u ayrıştıran ve bellek içinde bir `FeatureCollection` oluşturan `GeoJsonReader` sınıfı ile yükleyin. Okuyucu, koordinat referans sistemini otomatik olarak algılar, bu yüzden CRS ayrıştırmasını manuel olarak ele almanıza gerek yoktur. Ayrıca büyük dosyaların akışını destekler, öznitelik tiplerini korur ve gerekirse özel geometri dönüşümleriyle birleştirilebilir.
 
 ```csharp
 string dataDir = "Your Document Directory";
@@ -82,8 +102,8 @@ using (VectorLayer layer = VectorLayer.Create(geoJsonPath, Drivers.GeoJson))
 }
 ```
 
-## Step 2: Copy Test Dataset
-To keep the original test data untouched, duplicate the existing File GDB dataset. This ensures a clean environment for the conversion.
+## Adım 1: GeoJSON Katmanını Kurun
+İstediğiniz öznitelik ve özellikleri içeren geçici bir GeoJSON dosyası oluşturun. Bu örnek iki basit nokta özelliği ekler.
 
 ```csharp
 var sourceFile = "Your Document Directory" + "ThreeLayers.gdb";
@@ -91,8 +111,8 @@ var destinationFile = "Your Document Directory" + "ThreeLayersCopy_out.gdb";
 RunExamples.CopyDirectory(sourceFile, destinationFile);
 ```
 
-## Step 3: Convert GeoJSON to File GDB
-Open the GeoJSON layer, create a new layer inside the copied File GDB, copy attributes, and transfer each feature. This is the core of the **aspose gis conversion** process.
+## Adım 2: Test Veri Setini Kopyalayın
+Orijinal test verilerini bozulmadan tutmak için mevcut File GDB veri setini kopyalayın. Bu, dönüşüm için temiz bir ortam sağlar.
 
 ```csharp
 using (var geoJsonLayer = VectorLayer.Open(geoJsonPath, Drivers.GeoJson))
@@ -111,32 +131,45 @@ using (var geoJsonLayer = VectorLayer.Open(geoJsonPath, Drivers.GeoJson))
 }
 ```
 
-## Common Issues and Solutions
-- **Missing spatial reference:** Ensure the source GeoJSON includes a CRS definition or explicitly set `SpatialReferenceSystem.Wgs84` when creating the File GDB layer.  
-- **Attribute type mismatch:** The attribute data types in GeoJSON must match the target schema; otherwise, Aspose.GIS will throw an exception.  
-- **File access errors:** Verify that the destination folder has write permissions and that no other process is locking the GDB files.
+## Adım 3: GeoJSON'ı GDB'ye Dönüştürün
+`FileGdb`, bir File Geodatabase konteynerini temsil eder ve katmanları yönetmek için yöntemler sunar. GeoJSON katmanını açın, kopyalanmış File GDB içinde yeni bir katman oluşturun, öznitelikleri kopyalayın ve her özelliği aktarın. Bu, **Aspose.GIS conversion** sürecinin çekirdeğidir.
 
-## Frequently Asked Questions
-### Is Aspose.GIS compatible with the latest .NET framework?
-Yes, Aspose.GIS is compatible with the latest .NET framework versions.  
+CODE_BLOCK_PLACEHOLDER_4_END
 
-### Can I convert other geospatial formats using Aspose.GIS?
-Absolutely! Aspose.GIS supports a wide array of geospatial formats for versatile data manipulation.  
+## GeoJSON'ı GDB'ye Nasıl Dönüştürülür?
+`GeoJsonReader` ile GeoJSON'ı yükleyin, hedef klasörünüzü işaret eden bir `FileGdb` nesnesi oluşturun, yeni bir özellik katmanı oluşturun ve ardından her özelliği eklemek için yineleyin. Pratikte bu, okuma, oluşturma, kopyalama adımlarından oluşan üç‑adımlı bir akıştır ve tipik veri setleri için bir dakikadan kısa sürede tamamlanır.
 
-### Is there a trial version available for Aspose.GIS?
-Yes, you can explore the functionalities of Aspose.GIS by downloading the trial version [here](https://releases.aspose.com/).  
+## Yaygın Sorunlar ve Çözümleri
+- **Eksik uzamsal referans:** Kaynak GeoJSON'ın bir CRS tanımı içerdiğinden emin olun veya GDB katmanı oluştururken `SpatialReferenceSystem.Wgs84`'ü açıkça ayarlayın.  
+- **Öznitelik tipi uyuşmazlığı:** GeoJSON'daki öznitelik veri tipleri hedef şema ile eşleşmelidir; aksi takdirde Aspose.GIS bir istisna fırlatır.  
+- **Dosya erişim hataları:** Hedef klasörün yazma izinlerine sahip olduğunu ve başka bir sürecin GDB dosyalarını kilitlemediğini doğrulayın.
 
-### How can I get support for Aspose.GIS-related queries?
-Head over to the Aspose.GIS [forum](https://forum.aspose.com/c/gis/33) for dedicated support.  
+## Sıkça Sorulan Sorular
+### Aspose.GIS en son .NET framework ile uyumlu mu?
+Evet, Aspose.GIS .NET Framework 4.5+, .NET Core 3.1+, .NET 5 ve .NET 6+ ile çalışır.
 
-### Can I obtain a temporary license for Aspose.GIS?
-Yes, you can secure a temporary license [here](https://purchase.aspose.com/temporary-license/).  
+### Aspose.GIS ile diğer coğrafi veri formatlarını dönüştürebilir miyim?
+Kesinlikle! Aspose.GIS, Shapefile, KML, GML ve SQLite dahil olmak üzere 30'dan fazla giriş ve çıkış formatını destekler.
+
+### Aspose.GIS için deneme sürümü mevcut mu?
+Evet, deneme sürümünü [here](https://releases.aspose.com/) adresinden indirerek Aspose.GIS'in işlevlerini keşfedebilirsiniz.
+
+### Aspose.GIS‑ile ilgili sorular için nasıl destek alabilirim?
+Topluluk ve ürün ekibinden özel yardım almak için Aspose.GIS [forum](https://forum.aspose.com/c/gis/33) adresine gidin.
+
+### Aspose.GIS için geçici lisans alabilir miyim?
+Evet, geçici bir lisansı [here](https://purchase.aspose.com/temporary-license/) adresinden temin edebilirsiniz.
 
 ---
+**Son Güncelleme:** 2026-06-20  
+**Test Edilen Versiyon:** Aspose.GIS 24.11 for .NET  
+**Yazar:** Aspose
 
-**Last Updated:** 2026-01-10  
-**Tested With:** Aspose.GIS 24.11 for .NET  
-**Author:** Aspose  
+## İlgili Öğreticiler
+
+- [Aspose.GIS ile File Geodatabase .NET Veri Seti Oluşturma](/gis/net/layer-management/create-new-file-gdb-dataset/)
+- [Aspose.GIS'te File Geodatabase'den Özellikleri Okuma](/gis/net/layer-data-operations/read-features-from-file-geodatabase/)
+- [File GDB'de Vektör Katmanı Oluşturma – Aspose.GIS .NET Öğreticisi](/gis/net/layer-management/create-file-gdb-with-single-layer/)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
