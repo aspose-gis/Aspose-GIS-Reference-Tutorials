@@ -1,10 +1,57 @@
 ---
-description: Tanulja meg, hogyan használja a dinamikus típuskonverziót az Aspose.GIS
-  for .NET-ben a shapefile attribútumértékeinek lekéréséhez. Tartalmazza a kifejezett
-  típuskonverzió példáit.
-linktitle: Get Feature Attribute Value using Dynamic Type Casting
+date: 2026-06-20
+description: Ismerje meg, hogyan lehet a funkció attribútum értékeket dinamikus típuskonverzióval
+  lekérni az Aspose.GIS for .NET használatával. Tartalmazza a kifejezett típuskonverzió
+  példákat és a teljesítmény részleteit.
+keywords:
+- get feature attribute
+- convert attribute to string
+- dynamic type casting c#
+linktitle: Funkció attribútum értékének lekérése dinamikus típuskonverzióval
+schemas:
+- author: Aspose
+  dateModified: '2026-06-20'
+  description: Learn how to get feature attribute values with dynamic type casting
+    using Aspose.GIS for .NET. Includes explicit type casting examples and performance
+    details.
+  headline: Get Feature Attribute Value using Dynamic Type Casting
+  type: TechArticle
+- description: Learn how to get feature attribute values with dynamic type casting
+    using Aspose.GIS for .NET. Includes explicit type casting examples and performance
+    details.
+  name: Get Feature Attribute Value using Dynamic Type Casting
+  steps:
+  - name: Set up Your Project
+    text: Create a new .NET project in Visual Studio and reference the Aspose.GIS
+      library. This gives you access to all GIS‑related classes, including the `Feature`
+      class used later.
+  - name: Define Your Document Directory
+    text: Set the path to your documents directory. This is where your shapefile (`InputShapeFile.shp`)
+      is located.
+  - name: Open the Vector Layer
+    text: Open the vector layer using Aspose.GIS. Make sure to specify the driver,
+      in this case, the Shapefile driver.
+  - name: Retrieve Feature Attribute Values
+    text: Now, loop through each feature in the layer and retrieve attribute values.
+      Aspose.GIS provides different ways to fetch attribute values.
+  type: HowTo
+- questions:
+  - answer: It lets you retrieve attribute values at runtime without hard‑coding the
+      target type.
+    question: What is dynamic type casting?
+  - answer: It offers a unified API for reading shapefile .NET data and supports both
+      casting methods.
+    question: Why use Aspose.GIS?
+  - answer: A free trial is available; a commercial license is required for production
+      use.
+    question: Do I need a license?
+  - answer: .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6 and later.
+    question: Which .NET versions are supported?
+  - answer: Yes—iterate over features efficiently as shown in the examples.
+    question: Can I fetch attribute values from large files?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: Jellemző attribútumérték lekérése dinamikus típuskonverzióval
+title: Funkció attribútum értékének lekérése dinamikus típuskonverzióval
 url: /hu/net/layer-interaction-and-data-access/get-feature-attribute-value/
 weight: 12
 ---
@@ -13,27 +60,35 @@ weight: 12
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Dinamikus típuskonverzióval történő attribútumérték lekérése
+# Funkcióattribútum érték lekérése dinamikus típuskonverzióval
 
 ## Bevezetés
-Üdvözöljük az Aspose.GIS for .NET világában, egy erőteljes könyvtárban, amely lehetővé teszi a .NET fejlesztők számára a földrajzi információs rendszer (GIS) adatok zökkenőmentes kezelését. Ebben a bemutatóban megismeri, hogyan egyszerűsíti a **dinamikus típuskonverzió** a shapefile attribútumértékeinek lekérését, miközben áttekintjük a klasszikus **explicit típuskonverzió** módszert is. Akár shapefile‑t olvas egy .NET alkalmazásban, akár **attribútumértékeket** szeretne lekérni elemzésekhez, ezek a technikák tisztábbá és rugalmasabbá teszik a kódot.
+Üdvözöljük az Aspose.GIS for .NET világában, egy erőteljes könyvtárban, amely lehetővé teszi a .NET fejlesztők számára, hogy zökkenőmentesen dolgozzanak a földrajzi információs rendszer (GIS) adatokkal. Ebben az útmutatóban megtudhatja, hogyan egyszerűsíti a **dinamikus típuskonverzió** a **funkcióattribútum** értékek lekérésének folyamatát egy shapefile-ból, miközben bemutatjuk a klasszikus **explicit típuskonverzió** megközelítést. Akár shapefile‑t olvas egy .NET alkalmazásban, akár elemzési célokra kell attribútumértékeket lekérnie, ezek a technikák tisztábbá, rugalmasabbá teszik a kódot, és készen állnak a termelési méretű feladatokra.
 
 ## Gyors válaszok
-- **Mi az a dinamikus típuskonverzió?** Egy futásidejű módja az attribútumértékek lekérésének, anélkül, hogy előre megadná a cél típust.  
-- **Miért használjam az Aspose.GIS‑t?** Egységes API‑t biztosít a shapefile‑t .NET‑ben olvasáshoz, és támogatja mindkét konverziós módszert.  
-- **Szükségem van licencre?** Elérhető egy ingyenes próba; a termeléshez kereskedelmi licenc szükséges.  
-- **Mely .NET verziók támogatottak?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6 és későbbi verziók.  
-- **Lekérhetem az attribútumértékeket nagy fájlokból?** Igen – a példákban látható módon hatékonyan iterálhat a feature-ökön.
+- **Mi az a dinamikus típuskonverzió?** Lehetővé teszi, hogy futásidőben lekérje az attribútumértékeket a cél típus kódolása nélkül.  
+- **Miért használjuk az Aspose.GIS-t?** Egységes API-t biztosít a shapefile‑.NET adatok olvasásához, és támogatja mindkét konverziós módszert.  
+- **Szükségem van licencre?** Elérhető egy ingyenes próba, a termelési használathoz kereskedelmi licenc szükséges.  
+- **Mely .NET verziók támogatottak?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6 és későbbi verziók.  
+- **Lekérhetek attribútumértékeket nagy fájlokból?** Igen – a példákban látható módon hatékonyan iterálhat a funkciókon.
+
+## Mi az a „funkcióattribútum lekérése”?
+**„Funkcióattribútum lekérése”** arra utal, hogy egy GIS funkció rekordjának egy adott oszlopában tárolt értéket nyerünk ki. Az Aspose.GIS-ben ezt általában a `Feature.GetValue` metódussal végzik, amely a nyers objektumot adja vissza további feldolgozáshoz.
+
+## Miért használjunk dinamikus típuskonverziót C#-ban?
+A dinamikus típuskonverzió csökkenti a felesleges kódot, amikor az attribútum adat típusa shapefile‑ok között változik. Az Aspose.GIS visszaadhatja az értéket `object`‑ként, lehetővé téve, hogy csak akkor konvertálja, amikor a konkrét típussal kell dolgozni. Ez a rugalmasság felgyorsítja a fejlesztést és karcsúbb kógalapot biztosít.
 
 ## Előfeltételek
-Mielőtt elkezdenénk, győződjön meg róla, hogy a következő előfeltételek teljesülnek:
-- Alapvető .NET fejlesztői ismeretek.  
-- Visual Studio telepítve van a gépén.  
-- Aspose.GIS for .NET könyvtár, amely letölthető a [letöltési linkről](https://releases.aspose.com/gis/net/).  
-- GIS koncepciók és terminológia ismerete.
+Mielőtt belemerülnénk az útmutatóba, győződjön meg róla, hogy a következő előfeltételek adottak:
+- Alapvető .NET fejlesztési ismeretek.  
+- Telepített Visual Studio a gépén.  
+- Aspose.GIS for .NET könyvtár, amely letölthető a [download link](https://releases.aspose.com/gis/net/).  
+- A kiadások oldalát is megtekintheti [here](https://releases.aspose.com/).  
+- GIS fogalmak és terminológia ismerete.
 
-## Névtér importálása
-A projekt elindításához importálja a szükséges névtereket. Ez a lépés elengedhetetlen az Aspose.GIS for .NET által nyújtott funkcionalitás eléréséhez. Adja hozzá a következő névtereket a kódjához:
+## Névterek importálása
+A projekt elindításához győződjön meg róla, hogy importálja a szükséges névtereket. Ez a lépés kulcsfontosságú az Aspose.GIS for .NET által nyújtott funkcionalitás eléréséhez. A következő névtereket kell a kódban szerepeltetni:
+
 ```csharp
 using Aspose.Gis;
 using System;
@@ -43,20 +98,22 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## Dinamikus típuskonverzió használata attribútumértékek lekéréséhez
-Az alábbi lépésről‑lépésre útmutató bemutatja, hogyan állítsa be a projektet, nyissa meg a shapefile‑t, és hogyan kérje le az attribútumértékeket **explicit típuskonverzióval** és **dinamikus típuskonverzióval** egyaránt.
+## Hogyan lehet funkcióattribútum értékeket lekérni dinamikus típuskonverzióval?
+`VectorLayer.Open` megnyit egy vektor adatforrást, például egy shapefile‑t, és egy `VectorLayer` objektumot ad vissza a funkciók olvasásához. Töltse be a shapefile‑t a `VectorLayer.Open` (vagy `FeatureCollection`) segítségével, és hívja meg a `feature.GetValue("AttributeName")` metódust – ez `object`‑et ad vissza, amelyet biztonságosan konvertálhat futásidőben. Ez az egy soros megközelítés megszünteti a több overload szükségességét, és bármely shapefile‑n működik, függetlenül az attribútum adat típusától. Nagy adathalmazok esetén iteráljon `foreach`‑el a memóriahasználat alacsonyan tartásához.
 
 ### 1. lépés: Projekt beállítása
-Hozzon létre egy új .NET projektet a Visual Studio‑ban, és hivatkozzon az Aspose.GIS könyvtárra.
+Hozzon létre egy új .NET projektet a Visual Studio-ban, és hivatkozzon az Aspose.GIS könyvtárra. Ez hozzáférést biztosít minden GIS‑hez kapcsolódó osztályhoz, beleértve a később használt `Feature` osztályt.
 
 ### 2. lépés: Dokumentumkönyvtár meghatározása
-Állítsa be a dokumentumok könyvtárának elérési útját. Itt található a shapefile (`InputShapeFile.shp`).
+Állítsa be a dokumentumkönyvtár elérési útját. Itt található a shapefile (`InputShapeFile.shp`).
+
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
 ### 3. lépés: Vektor réteg megnyitása
-Nyissa meg a vektor réteget az Aspose.GIS‑szel. Ne felejtse el megadni a drivert, ebben az esetben a Shapefile drivert.
+Nyissa meg a vektor réteget az Aspose.GIS segítségével. Győződjön meg róla, hogy megadja a meghajtót, ebben az esetben a Shapefile meghajtót.
+
 ```csharp
 using (VectorLayer layer = VectorLayer.Open(dataDir + "InputShapeFile.shp", Drivers.Shapefile))
 {
@@ -64,10 +121,12 @@ using (VectorLayer layer = VectorLayer.Open(dataDir + "InputShapeFile.shp", Driv
 }
 ```
 
-### 4. lépés: Feature attribútumértékek lekérése
-Most iteráljon végig a réteg minden feature‑én, és kérje le az attribútumértékeket. Az Aspose.GIS többféle módot kínál az attribútumok lekérésére.
+### 4. lépés: Funkcióattribútum értékek lekérése
+Most iteráljon végig a réteg minden funkcióján, és kérje le az attribútum értékeket. Az Aspose.GIS különböző módokat kínál az attribútumok lekérésére.
 
 #### 1. eset: Explicit típuskonverzió
+Az explicit konverzió megköveteli, hogy a fordítási időben ismerje az attribútum pontos típusát. Ez fordítási időbeli biztonságot nyújt, de minden lehetséges típushoz extra kódot igényel.
+
 ```csharp
 for (int i = 0; i < layer.Count; i++)
 {
@@ -81,6 +140,8 @@ for (int i = 0; i < layer.Count; i++)
 ```
 
 #### 2. eset: Dinamikus típuskonverzió
+A dinamikus konverzió lehetővé teszi, hogy az attribútumot `object`‑ként kérje le, és futásidőben döntse el, hogyan kezelje, ami ideális heterogén adathalmazok esetén.
+
 ```csharp
 for (int i = 0; i < layer.Count; i++)
 {
@@ -93,47 +154,53 @@ for (int i = 0; i < layer.Count; i++)
 }
 ```
 
-> **Pro tipp:** Használja a dinamikus típuskonverziót, ha nem biztos az attribútum pontos adattípusában, vagy ha általános kódot szeretne írni, amely több shapefile‑ra is működik. Váltson explicit típuskonverzióra, ha fordítási időben szeretne típusbiztonságot.
+> **Pro tipp:** Használjon dinamikus típuskonverziót, ha nem biztos az attribútum pontos adat típusában, vagy ha általános kódot szeretne írni, amely több shapefile‑on is működik. Váltson explicit típuskonverzióra, ha fordítási időbeli típusbiztonságra van szüksége.
+
+## Funkció osztály definíciója
+`Feature` egyetlen térbeli entitást képvisel egy rétegen belül, amely a geometriáját és attribútumgyűjteményét teszi elérhetővé. Minden `Feature` példány olyan metódusokat biztosít, mint a `GetValue`, az attribútum adatok eléréséhez. A `Feature.GetValue` a nyers attribútum értéket objektumként adja vissza.
 
 ## Gyakori problémák és megoldások
-- **Attribútumnév eltérés:** A GIS attribútumnevek kis‑ és nagybetű érzékenyek. Ellenőrizze a shapefile séma pontos írásmódját.  
+- **Attribútum név eltérés:** A GIS attribútum nevek kis- és nagybetű érzékenyek. Ellenőrizze a pontos helyesírást a shapefile sémában.  
 - **Null értékek:** A `GetValue` `null`‑t ad vissza hiányzó attribútumok esetén; kezelje ezt megfelelően a `NullReferenceException` elkerülése érdekében.  
-- **Nagy adathalmazok:** Használjon `foreach`‑t vagy lapozást a memóriafogyasztás csökkentéséhez.
+- **Nagy adathalmazok:** Iteráljon `foreach`‑el vagy lapozással a memóriafogyasztás csökkentése érdekében. Az Aspose.GIS képes akár 2 GB‑os fájlok feldolgozására anélkül, hogy az egész dokumentumot memóriába töltené, köszönhetően a streaming architektúrának.
 
 ## Gyakran feltett kérdések
-### K: Az Aspose.GIS alkalmas kezdőknek és tapasztalt fejlesztőknek egyaránt?
-V: Teljes mértékben! Az Aspose.GIS minden szintű fejlesztő számára kínál intuitív API‑t a GIS adatok manipulálásához.
+### Q: Az Aspose.GIS alkalmas kezdők és tapasztalt fejlesztők számára is?
+A: Teljes mértékben! Az Aspose.GIS intuitív API-t kínál, amely az egyszerű attribútumolvasástól a komplex térbeli elemzésekig skálázható.
 
-### K: Használhatom az Aspose.GIS‑t kereskedelmi projektjeimben?
-V: Igen, az Aspose.GIS kereskedelmi termék. A licencelési részleteket megtalálja a [vásárlási oldalon](https://purchase.aspose.com/buy).
+### Q: Használhatom az Aspose.GIS-t kereskedelmi projektjeimben?
+A: Igen, a termelési használathoz kereskedelmi licenc szükséges. A licencelési részletek a [purchase page](https://purchase.aspose.com/buy) linken érhetők el.
 
-### K: Elérhetők ideiglenes licencek teszteléshez?
-V: Igen, ideiglenes licencet kérhet teszteléshez [innen](https://purchase.aspose.com/temporary-license/).
+### Q: Elérhetők ideiglenes licencek teszteléshez?
+A: Igen, ideiglenes licencet kérhet teszteléshez [itt](https://purchase.aspose.com/temporary-license/).
 
-### K: Hol találok közösségi támogatást az Aspose.GIS‑hez?
-V: Csatlakozzon a [Aspose.GIS fórumhoz](https://forum.aspose.com/c/gis/33), ahol segítséget kérhet és más felhasználókkal léphet kapcsolatba.
+### Q: Hol találok közösségi támogatást az Aspose.GIS-hez?
+A: Csatlakozzon a megbeszéléshez a [Aspose.GIS fórumon](https://forum.aspose.com/c/gis/33) a segítségkérés és más felhasználókkal való kapcsolattartás érdekében.
 
-### K: Van ingyenes próba verziója az Aspose.GIS‑nek?
-V: Természetesen! A funkciókat ingyenes próba letöltésével is kipróbálhatja [innen](https://releases.aspose.com/).
+### Q: Hogyan kaphatok shapefile attribútum értékeket anélkül, hogy ismerném a típusaikat?
+A: Használja a dinamikus típuskonverzió megközelítést (`feature.GetValue("attributeName")`), amely az értéket `object`‑ként adja vissza, amelyet futásidőben konvertálhat.
 
-### K: Hogyan kérhetem le a shapefile attribútumértékeit anélkül, hogy ismerném a típusukat?
-V: Használja a dinamikus típuskonverziót (`feature.GetValue("attributeName")`), amely `object`‑ként adja vissza az értéket, és futásidőben konvertálható.
-
-### K: Olvashatok shapefile‑t .NET Core alkalmazásban?
-V: Igen, az Aspose.GIS for .NET teljes mértékben támogatja a .NET Core‑t, a .NET 5‑öt és a későbbi verziókat.
+### Q: Olvashatok shapefile .NET adatokat .NET Core alkalmazásban?
+A: Igen, az Aspose.GIS for .NET teljes mértékben támogatja a .NET Core‑t, a .NET 5‑öt és a későbbi verziókat.
 
 ## Összegzés
-Gratulálunk! Sikeresen megtanulta, hogyan használja az Aspose.GIS for .NET‑et a feature attribútumértékek lekérésére **explicit típuskonverzióval** és **dinamikus típuskonverzióval** egyaránt. Ezek a technikák lehetővé teszik a shapefile attribútumadatok hatékony megszerzését, legyen szó asztali GIS eszköz fejlesztéséről vagy térbeli elemzések webszolgáltatásba való integrálásáról.
+Gratulálunk! Sikeresen megtanulta, hogyan **kérje le a funkcióattribútum** értékeket az **explicit típuskonverzió** és a **dinamikus típuskonverzió** segítségével az Aspose.GIS for .NET‑el. Ezek a technikák lehetővé teszik a shapefile attribútum adatainak hatékony lekérését, legyen szó asztali GIS eszköz fejlesztéséről vagy térbeli elemzések webszolgáltatásba való integrálásáról. Alkalmazza az itt bemutatott mintákat nagy adathalmazok, vegyes típusú attribútumok és teljesítménykritikus helyzetek kezelésére magabiztosan.
 
 ---
 
-**Utoljára frissítve:** 2026-01-05  
-**Tesztelve:** Aspose.GIS for .NET (legújabb)  
+**Utolsó frissítés:** 2026-06-20  
+**Tesztelve a következővel:** Aspose.GIS for .NET (legújabb)  
 **Szerző:** Aspose
 
-{{< /blocks/products/pf/tutorial-page-section >}}
+{{< blocks/products/products-backtop-button >}}
 
+## Kapcsolódó útmutatók
+
+- [Hogyan kérjünk le attribútum értéket (alapértelmezett) az Aspose.GIS for .NET segítségével](/gis/net/layer-interaction-and-data-access/get-feature-attribute-value-default/)
+- [Réteg attribútumok lekérése – Réteg attribútum információk lekérése az Aspose.GIS for .NET segítségével](/gis/net/layer-interaction-and-data-access/get-layer-attribute-information/)
+- [Shapefile olvasása C# – Minden funkcióattribútum érték lekérése](/gis/net/layer-interaction-and-data-access/get-all-feature-attribute-values/)
+
+
+{{< /blocks/products/pf/tutorial-page-section >}}
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
