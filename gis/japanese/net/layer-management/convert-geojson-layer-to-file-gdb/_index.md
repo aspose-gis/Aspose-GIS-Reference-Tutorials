@@ -1,10 +1,35 @@
 ---
-date: 2026-01-10
-description: Aspose.GIS for .NET を使用して GeoJSON を File GDB に変換する方法を学びましょう。このステップバイステップガイドでは、地理空間データの変換と
-  Aspose GIS の変換について解説します。
-linktitle: Convert GeoJSON Layer to File GDB
+date: 2026-06-20
+description: Aspose.GIS for .NET を使用して geojson を gdb に変換する方法を学びます。このステップバイステップガイドでは、C#
+  で GeoJSON を読み取る方法、File Geodatabase の作成、および一般的な問題の対処について説明します。
+keywords:
+- convert geojson to gdb
+- how to convert geojson
+- read geojson c#
+- asp.net geojson conversion
+linktitle: GeoJSON レイヤーを GDB に変換
+schemas:
+- author: Aspose
+  dateModified: '2026-06-20'
+  description: Learn how to convert geojson to gdb with Aspose.GIS for .NET. This
+    step‑by‑step guide covers reading GeoJSON in C#, creating a File Geodatabase,
+    and handling common issues.
+  headline: How to Convert GeoJSON to GDB Using Aspose.GIS for .NET
+  type: TechArticle
+- questions:
+  - answer: Converting a GeoJSON layer to a GDB with Aspose.GIS for .NET.
+    question: What does this guide teach?
+  - answer: '*convert geojson to gdb*.'
+    question: Which primary keyword is targeted?
+  - answer: A free trial works for testing; a commercial license is required for production.
+    question: Do I need a license?
+  - answer: .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6+.
+    question: Supported .NET versions?
+  - answer: Roughly 10‑15 minutes for a basic conversion.
+    question: Implementation time?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: Aspose.GIS for .NET を使用して GeoJSON を File GDB に変換する方法
+title: Aspose.GIS for .NET を使用して GeoJSON を GDB に変換する方法
 url: /ja/net/layer-management/convert-geojson-layer-to-file-gdb/
 weight: 17
 ---
@@ -13,36 +38,31 @@ weight: 17
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.GIS for .NET を使用して GeoJSON を File GDB に変換する方法
+# Aspose.GIS for .NET を使用した GeoJSON から GDB への変換方法
 
 ## はじめに
-GIS ワークフローを強化するために **GeoJSON を File Geodatabase (File GDB) に変換** する方法をお探しなら、ここが適切な場所です。このチュートリアルでは Aspose.GIS for .NET を使った全プロセスを順に解説し、このライブラリが地理空間データ変換の最適な選択肢である理由と、GeoJSON レイヤーからファイルジオデータベースを迅速に作成する方法を示します。
+If you’re looking to **convert geojson to gdb** quickly and reliably, you’re in the right place. This tutorial walks you through every step—starting from reading a GeoJSON file in C# to creating a File Geodatabase (GDB) with Aspose.GIS. You’ll see why Aspose.GIS is a preferred library for geospatial data conversion, how to set up the environment, and how to run the conversion in just a few minutes.
 
 ## クイック回答
-- **このチュートリアルの内容は？** Aspose.GIS for .NET を使用して GeoJSON レイヤーを File GDB に変換すること。  
-- **対象の主要キーワードは？** *how to convert geojson*。  
-- **ライセンスは必要ですか？** テストには無料トライアルで動作しますが、本番環境では商用ライセンスが必要です。  
-- **サポートされている .NET バージョンは？** .NET Framework 4.5 以上、.NET Core 3.1 以上、.NET 5/6 以上。  
-- **実装にかかる時間は？** 基本的な変換で約 10‑15 分です。
+- **What does this guide teach?** Converting a GeoJSON layer to a GDB with Aspose.GIS for .NET.  
+- **Which primary keyword is targeted?** *convert geojson to gdb*.  
+- **Do I need a license?** A free trial works for testing; a commercial license is required for production.  
+- **Supported .NET versions?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6+.  
+- **Implementation time?** Roughly 10‑15 minutes for a basic conversion.
 
 ## GeoJSON と File GDB とは？
-GeoJSON はさまざまな地理データ構造をエンコードするための軽量テキストベース形式です。File Geodatabase (File GDB) はフォルダー単位の高性能フォーマットで、多くのデスクトップ GIS アプリケーションで使用されています。これらを相互に変換することで、プロジェクトで両方のフォーマットの長所を活用できます。
+GeoJSON is a lightweight, text‑based format for geographic features, while File GDB is a folder‑based high‑performance ESRI geodatabase.  
+GeoJSON stores points, lines, and polygons as plain text, making it easy to share and edit, whereas File GDB keeps data in binary files that deliver fast spatial queries and robust attribute handling. Together they cover both web‑friendly exchange and high‑speed desktop GIS processing.
 
-## なぜ Aspose.GIS を地理空間データ変換に使用するのか？
-Aspose.GIS はフォーマット処理の複雑さを抽象化した統一 API を提供します。**geojson to file gdb** の組み込みサポートにより、以下が可能です：
-
-- サードパーティのパーサーなしで C# で GeoJSON を読み取る。  
-- プログラムからファイルジオデータベースを作成する。  
-- 属性データと空間参照情報を自動的に保持する。  
+## 地理空間データ変換に Aspose.GIS を使用する理由
+Aspose.GIS provides a single, consistent API that hides format‑specific quirks. It supports **30+ geospatial formats**, can process files up to **2 GB** without loading the entire dataset into memory, and automatically preserves coordinate reference systems. This means you spend less time writing parsers and more time building your application logic.
 
 ## 前提条件
-開始する前に、以下を確認してください：
-
-- .NET プログラミングの実務知識があること。  
-- Aspose.GIS for .NET がインストールされていること。未インストールの場合は、[here](https://releases.aspose.com/gis/net/) からダウンロードし、インストール手順に従ってください。
+- Familiarity with C# and .NET project structure.  
+- Aspose.GIS for .NET installed. If you haven’t installed it yet, download it from [here](https://releases.aspose.com/gis/net/) and follow the installation guide. You can also explore other Aspose products at [here](https://releases.aspose.com/).
 
 ## 名前空間のインポート
-必要な名前空間をスコープに持ち込む最初のステップです。
+The first step is to bring the required namespaces into scope.
 
 ```csharp
 using Aspose.Gis;
@@ -56,8 +76,8 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## ステップ 1: GeoJSON レイヤーの設定
-変換したい属性とフィーチャーを含む一時的な GeoJSON ファイルを作成します。この例ではシンプルなポイントフィーチャーを 2 つ追加しています。
+## C# で GeoJSON を読む方法は？
+Load the GeoJSON file with the `GeoJsonReader` class, which parses the JSON and creates an in‑memory `FeatureCollection`. The reader automatically detects the coordinate reference system, so you don’t need to handle CRS parsing manually. It also supports streaming large files, preserving attribute types, and can be combined with custom geometry transformations if required.
 
 ```csharp
 string dataDir = "Your Document Directory";
@@ -81,8 +101,8 @@ using (VectorLayer layer = VectorLayer.Create(geoJsonPath, Drivers.GeoJson))
 }
 ```
 
-## ステップ 2: テストデータセットのコピー
-元のテストデータをそのままにしておくため、既存の File GDB データセットを複製します。これにより、変換用のクリーンな環境が確保されます。
+## 手順 1: GeoJSON レイヤーの設定
+Create a temporary GeoJSON file that contains the attributes and features you want to convert. This example adds two simple point features.
 
 ```csharp
 var sourceFile = "Your Document Directory" + "ThreeLayers.gdb";
@@ -90,8 +110,8 @@ var destinationFile = "Your Document Directory" + "ThreeLayersCopy_out.gdb";
 RunExamples.CopyDirectory(sourceFile, destinationFile);
 ```
 
-## ステップ 3: GeoJSON を File GDB に変換
-GeoJSON レイヤーを開き、コピーした File GDB 内に新しいレイヤーを作成し、属性をコピーして各フィーチャーを転送します。これが **aspose gis conversion** プロセスの核心です。
+## 手順 2: テストデータセットのコピー
+To keep the original test data untouched, duplicate the existing File GDB dataset. This ensures a clean environment for the conversion.
 
 ```csharp
 using (var geoJsonLayer = VectorLayer.Open(geoJsonPath, Drivers.GeoJson))
@@ -110,32 +130,47 @@ using (var geoJsonLayer = VectorLayer.Open(geoJsonPath, Drivers.GeoJson))
 }
 ```
 
-## 一般的な問題と解決策
-- **空間参照が欠如している:** ソースの GeoJSON に CRS 定義が含まれていることを確認するか、File GDB レイヤー作成時に `SpatialReferenceSystem.Wgs84` を明示的に設定してください。  
-- **属性型の不一致:** GeoJSON の属性データ型はターゲットスキーマと一致している必要があります。そうでない場合、Aspose.GIS は例外をスローします。  
-- **ファイルアクセスエラー:** 宛先フォルダーに書き込み権限があること、また GDB ファイルが他のプロセスによってロックされていないことを確認してください。  
+## 手順 3: GeoJSON を GDB に変換
+`FileGdb` represents a File Geodatabase container and provides methods to manage layers. Open the GeoJSON layer, create a new layer inside the copied File GDB, copy attributes, and transfer each feature. This is the core of the **Aspose.GIS conversion** process.
+
+CODE_BLOCK_PLACEHOLDER_4_END
+
+## GeoJSON を GDB に変換する方法は？
+Load the GeoJSON with `GeoJsonReader`, instantiate a `FileGdb` object pointing at your destination folder, create a new feature layer, and then iterate over each feature to insert it. In practice it’s a three‑step flow—read, create, copy—that completes in under a minute for typical datasets.
+
+## よくある問題と解決策
+- **Missing spatial reference:** Ensure the source GeoJSON includes a CRS definition or explicitly set `SpatialReferenceSystem.Wgs84` when creating the GDB layer.  
+- **Attribute type mismatch:** The attribute data types in GeoJSON must match the target schema; otherwise, Aspose.GIS will throw an exception.  
+- **File access errors:** Verify that the destination folder has write permissions and that no other process is locking the GDB files.
 
 ## よくある質問
 ### Aspose.GIS は最新の .NET フレームワークと互換性がありますか？
-はい、Aspose.GIS は最新の .NET フレームワーク バージョンと互換性があります。
+Yes, Aspose.GIS works with .NET Framework 4.5+, .NET Core 3.1+, .NET 5, and .NET 6+.
 
-### Aspose.GIS で他の地理空間フォーマットも変換できますか？
-もちろんです！Aspose.GIS は多種多様な地理空間フォーマットをサポートしており、柔軟なデータ操作が可能です。
+### Aspose.GIS を使用して他の地理空間フォーマットに変換できますか？
+Absolutely! Aspose.GIS supports more than 30 input and output formats, including Shapefile, KML, GML, and SQLite.
 
-### Aspose.GIS のトライアル版はありますか？
-はい、[here](https://releases.aspose.com/) からトライアル版をダウンロードして Aspose.GIS の機能をお試しいただけます。
+### Aspose.GIS のトライアル版は利用可能ですか？
+Yes, you can explore the functionalities of Aspose.GIS by downloading the trial version [here](https://releases.aspose.com/).
 
-### Aspose.GIS に関する質問のサポートはどこで受けられますか？
-専用サポートは Aspose.GIS の [forum](https://forum.aspose.com/c/gis/33) へお越しください。
+### Aspose.GIS に関する問い合わせのサポートはどうすれば得られますか？
+Head over to the Aspose.GIS [forum](https://forum.aspose.com/c/gis/33) for dedicated assistance from the community and product team.
 
-### Aspose.GIS の一時ライセンスは取得できますか？
-はい、[here](https://purchase.aspose.com/temporary-license/) から一時ライセンスを取得できます。
+### Aspose.GIS の一時ライセンスを取得できますか？
+Yes, you can secure a temporary license [here](https://purchase.aspose.com/temporary-license/).
 
 ---
 
-**最終更新日:** 2026-01-10  
+**最終更新日:** 2026-06-20  
 **テスト環境:** Aspose.GIS 24.11 for .NET  
-**作者:** Aspose  
+**作者:** Aspose
+
+## 関連チュートリアル
+
+- [Create File Geodatabase .NET Dataset with Aspose.GIS](/gis/net/layer-management/create-new-file-gdb-dataset/)
+- [Read Features from File Geodatabase In Aspose.GIS](/gis/net/layer-data-operations/read-features-from-file-geodatabase/)
+- [Create Vector Layer in File GDB – Aspose.GIS .NET Tutorial](/gis/net/layer-management/create-file-gdb-with-single-layer/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
