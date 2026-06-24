@@ -1,10 +1,62 @@
 ---
-date: 2025-12-20
-description: Ismerje meg, hogyan hozhat létre sokszöget az Aspose.GIS for .NET használatával.
-  Lépésről‑lépésre útmutató .NET fejlesztőknek a sokszöggeometria létrehozásához.
-linktitle: Create Polygon Geometry
+date: 2026-05-31
+description: Ismerje meg, hogyan hozhat létre polygon-t az Aspose.GIS for .NET segítségével.
+  Lépésről‑lépésre útmutató .NET fejlesztőknek a polygon geometry felépítéséhez és
+  a polygon shapefile exportálásához.
+keywords:
+- how to create polygon
+- export polygon shapefile
+- add vertices polygon
+- build polygon coordinates
+linktitle: Polygon Geometry létrehozása
+schemas:
+- author: Aspose
+  dateModified: '2026-05-31'
+  description: Learn how to create polygon using Aspose.GIS for .NET. Step‑by‑step
+    guide for .NET developers to build polygon geometry and export polygon shapefile.
+  headline: How to Create Polygon Geometry with Aspose.GIS for .NET
+  type: TechArticle
+- description: Learn how to create polygon using Aspose.GIS for .NET. Step‑by‑step
+    guide for .NET developers to build polygon geometry and export polygon shapefile.
+  name: How to Create Polygon Geometry with Aspose.GIS for .NET
+  steps:
+  - name: Create a Polygon Object
+    text: The `Polygon` class is the top‑level container that represents a single
+      polygon geometry. **The `Polygon` class represents a closed geometric shape
+      consisting of an exterior ring and optional interior rings.**
+  - name: Define Exterior Ring
+    text: A `LinearRing` holds the sequence of points that form the outer boundary.
+      **The `LinearRing` class stores an ordered list of coordinate pairs that must
+      form a closed loop.**
+  - name: Add Points to the Exterior Ring
+    text: Now we **add vertices polygon** by feeding latitude‑longitude pairs (or
+      any coordinate system you prefer) into the ring. The points must form a closed
+      loop, so the first and last coordinates are identical. **`LinearRing.AddPoint(x,
+      y)` adds a single vertex to the ring; repeat for each coordinate.**
+  - name: Set Exterior Ring on the Polygon
+    text: Finally, assign the prepared ring to the polygon’s `ExteriorRing` property.
+      The polygon is now a complete, valid geometry object. **The `ExteriorRing` property
+      links the constructed `LinearRing` to the `Polygon` instance, finalizing the
+      shape.** Congratulations! You have just **created polygon geome
+  type: HowTo
+- questions:
+  - answer: Yes – simply iterate through your coordinate collection and call `ring.AddPoint(x,
+      y)` for each item.
+    question: Can I create a polygon from an existing list of coordinates?
+  - answer: Create another `LinearRing`, add points, and assign it to `polygon.InteriorRings.Add(yourRing);`.
+    question: How do I add an interior ring (hole) to the polygon?
+  - answer: Use `polygon.IsValid` property; it returns `true` if the geometry complies
+      with OGC standards.
+    question: Is there a way to validate the polygon after creation?
+  - answer: Absolutely. Use `FeatureWriter` with `GeoJson` format to write the polygon
+      to a file, or choose `Shapefile` to **export polygon shapefile**.
+    question: Can I export the polygon directly to GeoJSON?
+  - answer: The library currently focuses on 2‑D geometries; for 3‑D you’ll need to
+      manage Z‑values manually or use another specialized library.
+    question: Does Aspose.GIS support 3‑D polygons?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: Hogyan hozhatunk létre sokszög geometriát az Aspose.GIS for .NET segítségével
+title: Hogyan hozzunk létre polygon geometry-t az Aspose.GIS for .NET segítségével
 url: /hu/net/geometry-creation/create-polygon-geometry/
 weight: 12
 ---
@@ -16,33 +68,32 @@ weight: 12
 # Hogyan hozhatunk létre sokszög geometriát az Aspose.GIS for .NET segítségével
 
 ## Bevezetés  
-Ha egy világos, gyakorlati útmutatót keres a **sokszög létrehozásáról** .NET környezetben, jó helyen jár. Ebben a bemutatóban végigvezetjük a teljes folyamatot az Aspose.GIS for .NET használatával – a projekt beállításától a pontok hozzáadásáig és a sokszög befejezéséig. A végére megérti, miért egy szilárd választás ez a könyvtár a térbeli adatok sokszög struktúráinak kezeléséhez, és egy újrahasználható **sokszög geometria példát** kap a saját GIS alkalmazásaihoz.
+Ha egyértelmű, gyakorlati útmutatót keres a **hogyan hozhatunk létre sokszöget** geometriáról .NET környezetben, jó helyen jár. Ebben az oktatóanyagban végigvezetjük a teljes folyamatot az Aspose.GIS for .NET használatával – a projekt beállításától a pontok hozzáadásáig és a sokszög befejezéséig. A végére megérti, miért egy megbízható választás ez a könyvtár a térbeli adatok sokszög struktúráinak kezeléséhez, és egy újrahasználható **sokszög geometria példa** áll majd rendelkezésére saját GIS alkalmazásaihoz. Emellett megmutatjuk, hogyan **sokszög shapefile exportálása** és más gyakori formátumok.
 
 ## Gyors válaszok
-- **Mi a fő osztály a sokszögekhez?** `Polygon` a `Aspose.Gis.Geometries` névtérből.  
-- **Melyik metódus ad hozzá csúcsokat?** `LinearRing.AddPoint(x, y)`.  
-- **Szükségem van licencre a fejlesztéshez?** Egy ingyenes próba verzió teszteléshez elegendő; licenc szükséges a termeléshez.  
+`Polygon` az az osztály, amely a polygon geometriákat képviseli az Aspose.GIS-ben. `LinearRing.AddPoint` egy csúcsot ad hozzá egy lineáris gyűrűhöz.  
+
+- **Mi a fő osztály a sokszögekhez?** `Polygon` from `Aspose.Gis.Geometries`.  
+- **Melyik metódus ad hozzá csúcsokat?** `LinearRing.AddPoint(x, y)` – egyesével adja hozzá a sokszög csúcsait.  
+- **Szükségem van licencre a fejlesztéshez?** Egy ingyenes próba a teszteléshez elegendő; a termeléshez licenc szükséges.  
 - **Támogatott .NET verziók?** .NET Framework 4.6+, .NET Core 3.1+, .NET 5/6+.  
-- **Exportálhatom a sokszöget fájlba?** Igen – használja a `FeatureWriter`-t Shapefile, GeoJSON, stb. írásához.
+- **Exportálhatom a sokszöget fájlba?** Igen – használja a `FeatureWriter`‑t a Shapefile, GeoJSON stb. írásához, és könnyen **sokszög shapefile exportálása**.
 
 ## Mi a sokszög geometria?  
-A sokszög egy zárt alak, amely egy külső gyűrűből (a külső határ) és opcionálisan egy vagy több belső gyűrűből (lyukak) áll. A GIS-ben a sokszögek valós világban létező területeket modelleznek, például tavakat, telkeket vagy közigazgatási határokat. Az Aspose.GIS tiszta objektummodellt biztosít, amely lehetővé teszi a **sokszög koordinátákból történő létrehozását** néhány C# sorral.
+A polygon egy zárt alakzat, amely egy külső gyűrűből (a külső határ) és opcionálisan egy vagy több belső gyűrűből (lyukak) áll. A GIS-ben a sokszögek a valós világ területeit modellezik, például tavakat, telkeket vagy közigazgatási határokat. Az Aspose.GIS tiszta objektummodellt biztosít, amely lehetővé teszi, hogy **sokszög koordinátákat építsen** csak néhány C# sorral.
 
 ## Miért használjuk az Aspose.GIS-t a sokszög geometria létrehozásához?  
-- **Teljes .NET támogatás** – működik .NET Framework, .NET Core és .NET 5/6 környezetben.  
-- **Nincs külső függőség** – a könyvtár belsőleg kezeli a geometriai számításokat.  
-- **Gazdag fájlformátum támogatás** – a sokszöget írja Shapefile, GeoJSON, KML stb. formátumokba, extra konverterek nélkül.  
-- **Teljesítmény‑optimalizált** – ideális nagy térbeli adathalmazokhoz.
+Az Aspose.GIS lehetővé teszi, hogy gyorsan hozzunk létre sokszög geometriát, miközben vállalati szintű teljesítményt nyújt. Támogat **50+ bemeneti és kimeneti formátumot**, képes több száz oldalas adatállományokat feldolgozni anélkül, hogy az egész fájlt memóriába töltené, és fut .NET Framework 4.6+, .NET Core 3.1+, .NET 5/6+ környezetben. Ez azt jelenti, hogy **sokszög shapefile exportálása**, GeoJSON, KML és számos más formátum közvetlenül a kódból exportálható, kiküszöbölve a harmadik fél konverterek szükségességét.
 
 ## Előfeltételek  
 Mielőtt belevágna, győződjön meg róla, hogy rendelkezik:
 
-1. **C# programozási ismeretek** – alapvető ismeretek az osztályok és metódusok használatáról.  
-2. **Az Aspose.GIS for .NET telepítése** – letöltheti [innen](https://releases.aspose.com/gis/net/).  
-3. **Fejlesztői környezet beállítása** – Visual Studio, Rider vagy bármely .NET‑t támogató IDE.
+1. **C# programozási ismeretek** – alapvető ismeretek az osztályok és metódusok terén.  
+2. **Aspose.GIS for .NET telepítése** – letöltheti [itt](https://releases.aspose.com/gis/net/).  
+3. **Fejlesztői környezet beállítása** – Visual Studio, Rider vagy bármely .NET-et támogató IDE.  
 
 ## Névterek importálása  
-A GIS osztályokat a láthatóságba kell hozni. Az alábbi `using` direktívák mindent tartalmaznak, amire ebben a példában szükség van.
+A GIS osztályokat be kell hoznunk a láthatóságba. Az alábbi `using` direktívák mindent tartalmaznak, amire ebben a példában szükség van.
 
 ```csharp
 using Aspose.Gis.Geometries;
@@ -55,25 +106,25 @@ using System.Threading.Tasks;
 
 ## Hogyan hozhatunk létre sokszög geometriát az Aspose.GIS-ben  
 
-Az alábbiakban lépésről‑lépésre mutatjuk be a folyamatot. Minden lépés rövid magyarázatot tartalmaz, majd a pontos kódot, amelyet a projektbe másolhat.
+Töltse be a projektet, adja hozzá a szükséges névtereket, példányosítson egy `Polygon` objektumot, építse fel a külső gyűrűjét, adjon hozzá csúcsokat a sokszöghöz, és végül rendelje hozzá a gyűrűt – mindezt néhány egyszerű lépésben. Ez a megközelítés minden támogatott .NET futtatókörnyezetben működik, és egy érvényes OGC‑kompatibilis sokszöget hoz létre, amely exportálható.
 
 ### 1. lépés: Polygon objektum létrehozása  
-Először példányosítsa a `Polygon` osztályt. Ez az objektum fogja tárolni a külső gyűrűt és a később hozzáadott belső gyűrűket.
-
+A `Polygon` osztály a legfelső szintű tároló, amely egyetlen sokszög geometriát képvisel.  
+**A `Polygon` osztály egy zárt geometriai alakzatot képvisel, amely egy külső gyűrűből és opcionális belső gyűrűkből áll.**  
 ```csharp
 Polygon polygon = new Polygon();
 ```
 
-### 2. lépés: Külső gyűrű definiálása  
-A külső gyűrű határozza meg a sokszög külső határát. Létrehozunk egy `LinearRing` példányt, amely később a koordinátapontokat fogja tartalmazni.
-
+### 2. lépés: Külső gyűrű meghatározása  
+A `LinearRing` tartalmazza a pontok sorozatát, amelyek a külső határt alkotják.  
+**A `LinearRing` osztály egy rendezett koordinátapár-listát tárol, amelynek zárt hurkot kell alkotnia.**  
 ```csharp
 LinearRing ring = new LinearRing();
 ```
 
 ### 3. lépés: Pontok hozzáadása a külső gyűrűhöz  
-Most **pontokat adunk a sokszöghöz** úgy, hogy a szélesség‑hosszúság párokat (vagy bármely más koordináta‑rendszert) a gyűrűbe helyezzük. A pontoknak zárt hurkot kell alkotniuk, ezért az első és az utolsó koordináta azonos kell legyen.
-
+Most **csúcsok hozzáadása a sokszöghöz** a latitudó‑longitudó párok (vagy bármely kívánt koordináta-rendszer) betáplálásával a gyűrűbe. A pontoknak zárt hurkot kell alkotniuk, ezért az első és az utolsó koordináta azonos.  
+**`LinearRing.AddPoint(x, y)` egyetlen csúcsot ad a gyűrűhöz; ismételje meg minden koordinátához.**  
 ```csharp
 ring.AddPoint(50.02, 36.22);
 ring.AddPoint(49.99, 36.26);
@@ -82,52 +133,54 @@ ring.AddPoint(49.98, 36.17);
 ring.AddPoint(50.02, 36.22);
 ```
 
-### 4. lépés: Külső gyűrű beállítása a polygonon  
-Végül rendeljük hozzá a felkészített gyűrűt a polygon `ExteriorRing` tulajdonságához. A polygon most már egy teljes, érvényes geometriai objektum.
-
+### 4. lépés: Külső gyűrű beállítása a sokszögön  
+Végül rendelje hozzá a előkészített gyűrűt a sokszög `ExteriorRing` tulajdonságához. A sokszög most már egy teljes, érvényes geometriai objektum.  
+**Az `ExteriorRing` tulajdonság összekapcsolja a felépített `LinearRing`‑t a `Polygon` példánnyal, befejezve a formát.**  
 ```csharp
 polygon.ExteriorRing = ring;
 ```
 
-Gratulálunk! Most **létrehoztunk egy sokszög geometriát** az Aspose.GIS for .NET segítségével. Innen a polygont csatolhatja egy feature‑hez, fájlba írhatja, vagy térbeli elemzéseket végezhet vele.
+Gratulálunk! Ön most **létrehozott egy sokszög geometriát** az Aspose.GIS for .NET használatával. Innen a sokszöget csatolhatja egy feature‑hez, fájlba írhatja, vagy térbeli elemzést végezhet.
 
 ## Gyakori problémák és tippek  
 
 | Probléma | Miért fordul elő | Megoldás |
 |----------|------------------|----------|
-| **Gyűrű nincs lezárva** | Az első és az utolsó pont különbözik, ami érvénytelen geometriát eredményez. | Ismételje meg az első koordinátát utolsóként (ahogy fent látható). |
-| **Helytelen koordináta sorrend** | A GIS könyvtárak X (hosszúság) majd Y (szélesség) sorrendet várnak. | Győződjön meg róla, hogy `(longitude, latitude)` értékeket ad át a `AddPoint`‑nak. |
-| **Hiányzó licenc** | A próba mód bizonyos műveleteket korlátozhat. | Alkalmazzon ingyenes próba licencet teszteléshez; használjon fizetett licencet a termeléshez. |
+| **A gyűrű nincs lezárva** | Az első és az utolsó pont különbözik, ami érvénytelen geometriát eredményez. | Ismételje meg az első koordinátát az utolsó pontként (ahogy fent látható). |
+| **Helytelen koordináta sorrend** | A GIS könyvtárak X‑et (hosszúság) majd Y‑t (szélesség) várják. | Győződjön meg róla, hogy `(longitude, latitude)` értéket ad át az `AddPoint`‑nak. |
+| **Hiányzó licenc** | A próba mód bizonyos műveleteket korlátozhat. | Alkalmazzon egy ingyenes próba licencet a teszteléshez; használjon fizetett licencet a termeléshez. |
 
-## Gyakran ismételt kérdések  
+## Gyakran feltett kérdések  
 
-**Q: Létrehozhatok sokszöget egy meglévő koordinátalistából?**  
-A: Igen – egyszerűen iterálja végig a koordinátagyűjteményt, és minden elemhez hívja meg a `ring.AddPoint(x, y)` metódust.
+**Q: Létrehozhatok egy sokszöget egy meglévő koordináta‑lista alapján?**  
+A: Igen – egyszerűen iterálja végig a koordináta‑gyűjteményt, és hívja meg a `ring.AddPoint(x, y)`‑t minden elemhez.
 
-**Q: Hogyan adhatok hozzá egy belső gyűrűt (lyukat) a polygonhoz?**  
-A: Hozzon létre egy új `LinearRing`‑t, adja hozzá a pontokat, majd rendelje hozzá a `polygon.InteriorRings.Add(yourRing);` segítségével.
+**Q: Hogyan adhatok hozzá egy belső gyűrűt (lyukat) a sokszöghöz?**  
+A: Hozzon létre egy új `LinearRing`‑t, adjon hozzá pontokat, majd rendelje hozzá a `polygon.InteriorRings.Add(yourRing);`‑vel.
 
-**Q: Van mód a polygon validálására a létrehozás után?**  
-A: Használja a `polygon.IsValid` tulajdonságot; `true` értéket ad vissza, ha a geometria megfelel az OGC szabványoknak.
+**Q: Van mód a sokszög validálására a létrehozás után?**  
+A: Használja a `polygon.IsValid` tulajdonságot; `true`‑t ad vissza, ha a geometria megfelel az OGC szabványoknak.
 
-**Q: Exportálhatom a polygont közvetlenül GeoJSON‑ba?**  
-A: Természetesen. Használja a `FeatureWriter`‑t `GeoJson` formátummal a polygon fájlba írásához.
+**Q: Exportálhatom a sokszöget közvetlenül GeoJSON‑ba?**  
+A: Teljesen. Használja a `FeatureWriter`‑t `GeoJson` formátummal a sokszög fájlba írásához, vagy válassza a `Shapefile`‑t a **sokszög shapefile exportálása** érdekében.
 
-**Q: Az Aspose.GIS támogatja a 3‑D sokszögeket?**  
-A: A könyvtár jelenleg 2‑D geometriákra fókuszál; 3‑D esetén a Z‑értékeket manuálisan kell kezelni, vagy egy másik, erre specializált könyvtárat kell használni.
-
-## Következtetés  
-Ebben az útmutatóban lépésről‑lépésre bemutattuk, **hogyan hozhatunk létre sokszög geometriát**, bemutattuk egy teljes **sokszög geometria példát**, és kiemeltük a legjobb gyakorlatokat az Aspose.GIS‑ben a térbeli adatok sokszögeinek kezeléséhez. Nyugodtan kísérletezzen belső gyűrűkkel, különböző koordináta‑rendszerekkel és fájlformátum‑exportálókkal, hogy bővítse ezt az alapot.
+**Q: Támogatja az Aspose.GIS a 3‑D sokszögeket?**  
+A: A könyvtár jelenleg 2‑D geometriákra fókuszál; 3‑D esetén manuálisan kell kezelni a Z‑értékeket, vagy egy másik specializált könyvtárat kell használni.
 
 ---
 
-**Last Updated:** 2025-12-20  
-**Tested With:** Aspose.GIS 24.11 for .NET  
-**Author:** Aspose  
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
+**Legutóbb frissítve:** 2026-05-31  
+**Tesztelve:** Aspose.GIS 24.11 for .NET  
+**Szerző:** Aspose  
 
 {{< blocks/products/products-backtop-button >}}
+
+## Kapcsolódó oktatóanyagok
+
+- [Polygon létrehozása lyukkal az Aspose.GIS használatával](/gis/net/geometry-creation/create-polygon-with-hole-geometry/)
+- [Polygon geometria létrehozása C#-ban és metszet ellenőrzése az Aspose.GIS for .NET segítségével](/gis/net/geometry-analysis/check-geometries-intersection/)
+- [Hogyan hozzunk létre puffert az Aspose.GIS for .NET használatával](/gis/net/geometry-analysis/create-geometry-buffer/)
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
