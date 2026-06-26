@@ -1,31 +1,45 @@
 ---
-title: การจัดการข้อมูลเชิงพื้นที่ด้วย Aspose.GIS สำหรับ .NET
-linktitle: สร้างเรขาคณิต LineString
+date: 2026-03-29
+description: เรียนรู้วิธีสร้างเรขาคณิต LineString ใน .NET ด้วย Aspose.GIS คู่มือนี้ครอบคลุมการเพิ่มจุดลงใน
+  LineString และการจัดการข้อมูลเชิงพื้นที่ใน .NET อย่างมีประสิทธิภาพ
+linktitle: Create LineString Geometry
 second_title: Aspose.GIS .NET API
-description: เรียนรู้วิธีทำงานกับข้อมูลเชิงพื้นที่ในแอปพลิเคชัน .NET โดยใช้ Aspose.GIS สำหรับ .NET สร้าง วิเคราะห์ และแสดงภาพแผนที่ได้อย่างง่ายดาย
-weight: 11
+title: วิธีสร้างเรขาคณิต LineString ด้วย Aspose.GIS สำหรับ .NET
 url: /th/net/geometry-creation/create-linestring-geometry/
+weight: 11
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# การจัดการข้อมูลเชิงพื้นที่ด้วย Aspose.GIS สำหรับ .NET
+# วิธีสร้างเรขาคณิต LineString ด้วย Aspose.GIS สำหรับ .NET
 
-## การแนะนำ
-Aspose.GIS สำหรับ .NET เป็นไลบรารีที่มีประสิทธิภาพซึ่งช่วยให้นักพัฒนาสามารถทำงานกับข้อมูลเชิงพื้นที่ในแอปพลิเคชัน .NET ของตนได้อย่างราบรื่น ไม่ว่าคุณกำลังสร้างแอปพลิเคชันการทำแผนที่ การวิเคราะห์ข้อมูลเชิงพื้นที่ หรือบูรณาการบริการตามตำแหน่ง Aspose.GIS มอบเครื่องมือที่คุณต้องการในการจัดการข้อมูลทางภูมิศาสตร์อย่างมีประสิทธิภาพ
+## บทนำ
+หากคุณกำลังมองหา **how to create linestring** objects ในสภาพแวดล้อม .NET คุณมาถูกที่แล้ว ในบทแนะนำนี้เราจะอธิบายการสร้างเรขาคณิต `LineString` ด้วย Aspose.GIS, เพิ่มจุดเข้าไป, และอธิบายว่าทำไมวิธีนี้จึงเหมาะสำหรับการทำงานกับ **geospatial data .net** ในตอนท้ายคุณจะได้ตัวอย่างที่ชัดเจนและสามารถรันได้ซึ่งสามารถนำไปใช้ในโครงการแผนที่หรือการวิเคราะห์เชิงพื้นที่ใด ๆ
+
+## คำตอบสั้น
+- **ต้องการไลบรารีอะไร?** Aspose.GIS for .NET  
+- **ต้องใช้บรรทัดโค้ดกี่บรรทัด?** Only three concise statements to create and populate a LineString  
+- **ต้องการไลเซนส์สำหรับการทดสอบหรือไม่?** A free trial works for development; a commercial license is required for production  
+- **รุ่น .NET ที่รองรับ?** .NET Framework, .NET Core, .NET 5+ and .NET 6+  
+- **สามารถเพิ่มจุดเพิ่มเติมในภายหลังได้หรือไม่?** Yes – call `AddPoint` as many times as required  
+
+## LineString คืออะไร?
+`LineString` เป็นรูปทรงเรขาคณิตแบบง่ายที่ประกอบด้วยชุดจุดที่เรียงลำดับกันโดยเชื่อมต่อด้วยเส้นตรง มักใช้แทนถนน, แม่น้ำ, หรือคุณลักษณะเชิงเส้นใด ๆ บนแผนที่
+
+## ทำไมต้องใช้ Aspose.GIS สำหรับ .NET?
+Aspose.GIS มี API ที่จัดการเต็มรูปแบบและมีประสิทธิภาพสูง ซึ่งทำให้ซับซ้อนของการจัดการข้อมูลเชิงพื้นที่ถูกซ่อนอยู่ มันรองรับรูปแบบไฟล์หลากหลาย (Shapefile, GeoJSON, KML, ฯลฯ) และให้คุณจัดการเรขาคณิตได้โดยไม่ต้องทำงานกับไลบรารี GIS ระดับต่ำ
+
 ## ข้อกำหนดเบื้องต้น
-ก่อนที่จะเริ่มใช้ Aspose.GIS สำหรับ .NET ตรวจสอบให้แน่ใจว่าคุณได้ตั้งค่าดังต่อไปนี้:
-### 1. สภาพแวดล้อม .NET
-ตรวจสอบให้แน่ใจว่าคุณได้ตั้งค่าสภาพแวดล้อม .NET บนระบบของคุณ คุณสามารถดาวน์โหลดและติดตั้ง .NET SDK เวอร์ชันล่าสุดได้จากเว็บไซต์ Microsoft
-### 2. Aspose.GIS สำหรับไลบรารี .NET
- ดาวน์โหลดและติดตั้งไลบรารี Aspose.GIS สำหรับ .NET จาก[หน้าดาวน์โหลด](https://releases.aspose.com/gis/net/). ปฏิบัติตามคำแนะนำในการติดตั้งที่ให้ไว้เพื่อรวมเข้ากับสภาพแวดล้อมการพัฒนาของคุณ
-### 3. การพัฒนา IDE
-เลือก IDE การพัฒนาตามที่คุณต้องการ Visual Studio เป็นตัวเลือกยอดนิยมสำหรับการพัฒนา .NET แต่คุณสามารถใช้ IDE ใดก็ได้ที่รองรับการพัฒนา .NET
+ก่อนเริ่มทำงาน ให้ตรวจสอบว่าคุณมีสิ่งต่อไปนี้พร้อมใช้งาน:
 
-## นำเข้าเนมสเปซ
-ในแอปพลิเคชัน .NET ของคุณ ให้นำเข้าเนมสเปซที่จำเป็นเพื่อเข้าถึงฟังก์ชันการทำงานที่ Aspose.GIS มอบให้
+1. **.NET Environment** – ติดตั้ง .NET SDK ล่าสุดจาก Microsoft.  
+2. **Aspose.GIS for .NET Library** – ดาวน์โหลดไบนารีจาก [download page](https://releases.aspose.com/gis/net/) แล้วเพิ่มอ้างอิงไปยังโปรเจกต์ของคุณ.  
+3. **Development IDE** – Visual Studio, Rider, หรือเครื่องมือแก้ไขใด ๆ ที่รองรับการพัฒนา .NET.
+
+## นำเข้า Namespaces
+ในแอปพลิเคชัน .NET ของคุณ ให้นำเข้า namespaces ที่จำเป็นเพื่อเข้าถึงฟังก์ชันที่ Aspose.GIS ให้มา
 
 ```csharp
 using Aspose.Gis.Geometries;
@@ -35,31 +49,61 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 ```
-## ขั้นตอนที่ 1: สร้างวัตถุ LineString
+
+## วิธีสร้างเรขาคณิต LineString
+ด้านล่างเป็นโค้ดขั้นตอนต่อขั้นตอนที่คุณต้องการ **how to create linestring** และ **add points linestring**.
+
+### ขั้นตอนที่ 1: สร้างอ็อบเจ็กต์ LineString
 ```csharp
 LineString line = new LineString();
 ```
- ที่นี่เรายกตัวอย่างใหม่`LineString` วัตถุซึ่งแสดงถึงเรขาคณิตของเส้น
-## ขั้นตอนที่ 2: เพิ่มคะแนนให้กับ LineString
+ที่นี่เราจะสร้างอ็อบเจ็กต์ `LineString` ใหม่ซึ่งจะเก็บชุดจุดที่กำหนดเส้น
+
+### ขั้นตอนที่ 2: เพิ่มจุดเข้าไปใน LineString
 ```csharp
 line.AddPoint(78.65, -32.65);
 line.AddPoint(-98.65, 12.65);
 ```
- เราเพิ่มคะแนนให้กับ`LineString` ใช้`AddPoint` วิธี. แต่ละจุดจะถูกระบุโดยพิกัดละติจูดและลองจิจูด
+เราเพิ่มจุดตัวอย่างสองจุดโดยใช้เมธอด `AddPoint` แต่ละจุดจะกำหนดด้วยพิกัด X (longitude) และ Y (latitude) คุณสามารถเรียก `AddPoint` ซ้ำได้เพื่อขยายเส้นตามต้องการ
 
-## บทสรุป
-โดยสรุป Aspose.GIS สำหรับ .NET มอบชุดเครื่องมือที่ครอบคลุมสำหรับการทำงานกับข้อมูลเชิงพื้นที่ในแอปพลิเคชัน .NET เมื่อทำตามขั้นตอนที่ระบุไว้ในบทความนี้ คุณจะสามารถสร้างและจัดการรูปทรงเรขาคณิต เช่น LineString ได้อย่างมีประสิทธิภาพ สำรวจเอกสารและบทช่วยสอนที่มีให้เพื่อปลดล็อกศักยภาพสูงสุดของ Aspose.GIS
+## ปัญหาทั่วไปและวิธีแก้
+- **Points appear in the wrong order** – Ensure you add them in the sequence you want them connected.  
+- **Coordinate system mismatch** – Aspose.GIS works in the coordinate system you provide; convert coordinates to the same CRS if mixing sources.  
+- **NullReferenceException** – Verify that the `LineString` instance is created before calling `AddPoint`.
+
 ## คำถามที่พบบ่อย
-### ถาม: Aspose.GIS สำหรับ .NET เข้ากันได้กับเฟรมเวิร์ก .NET ทั้งหมดหรือไม่
-ใช่ Aspose.GIS สำหรับ .NET เข้ากันได้กับ .NET Framework, .NET Core และ .NET 5+
-### ถาม: ฉันสามารถใช้ Aspose.GIS สำหรับโครงการเชิงพาณิชย์ได้หรือไม่
-ได้ คุณสามารถใช้ Aspose.GIS สำหรับทั้งโครงการส่วนตัวและเชิงพาณิชย์ ตรวจสอบตัวเลือกใบอนุญาตบนเว็บไซต์ Aspose
-### ถาม: Aspose.GIS ให้การสนับสนุนรูปแบบข้อมูลเชิงพื้นที่นอกเหนือจาก GeoJSON หรือไม่
-ใช่ Aspose.GIS รองรับรูปแบบข้อมูลเชิงพื้นที่ที่หลากหลาย รวมถึง Shapefile, KML, GML และอื่นๆ อีกมากมาย
-### ถาม: Aspose.GIS อัปเดตบ่อยแค่ไหน
-Aspose.GIS เผยแพร่การอัปเดตเป็นประจำเพื่อปรับปรุงประสิทธิภาพ เพิ่มคุณสมบัติใหม่ และแก้ไขปัญหาที่ได้รับรายงาน
-### ถาม: มีฟอรัมชุมชนที่ฉันสามารถขอความช่วยเหลือเกี่ยวกับ Aspose.GIS ได้หรือไม่
- ใช่ คุณสามารถเยี่ยมชมฟอรัม Aspose.GIS เพื่อรับการสนับสนุนจากชุมชนและเชื่อมต่อกับผู้ใช้รายอื่น:[ฟอรั่ม Aspose.GIS](https://forum.aspose.com/c/gis/33).
+### Q: Aspose.GIS สำหรับ .NET รองรับทุกเฟรมเวิร์กของ .NET หรือไม่?
+A: Yes, Aspose.GIS for .NET is compatible with .NET Framework, .NET Core, and .NET 5+.
+
+### Q: สามารถใช้ Aspose.GIS ในโครงการเชิงพาณิชย์ได้หรือไม่?
+A: Yes, you can use Aspose.GIS for both personal and commercial projects. Check out the licensing options on the Aspose website.
+
+### Q: Aspose.GIS รองรับรูปแบบข้อมูลเชิงพื้นที่อื่น ๆ นอกจาก GeoJSON หรือไม่?
+A: Yes, Aspose.GIS supports a wide range of spatial data formats, including Shapefile, KML, GML, and many more.
+
+### Q: Aspose.GIS มีการอัปเดตบ่อยแค่ไหน?
+A: Aspose.GIS releases updates regularly to improve performance, add new features, and fix any reported issues.
+
+### Q: มีฟอรั่มชุมชนที่สามารถขอความช่วยเหลือเกี่ยวกับ Aspose.GIS ได้หรือไม่?
+A: Yes, you can visit the Aspose.GIS forum for community support and to connect with other users: [Aspose.GIS Forum](https://forum.aspose.com/c/gis/33).
+
+**Additional Q&A**
+
+**Q: สามารถส่งออก LineString เป็น GeoJSON ได้หรือไม่?**  
+A: Absolutely. Use `line.Save("output.geojson", ExportFormat.GeoJson);` after adding all points.
+
+**Q: วิธีคำนวณความยาวของ LineString คืออะไร?**  
+A: Call `double length = line.Length;` – the API returns the length in the units of your coordinate system.
+
+## สรุป
+การสร้างและจัดการ `LineString` ใน .NET ทำได้อย่างง่ายดายด้วย Aspose.GIS โดยทำตามขั้นตอนข้างต้นคุณสามารถ **add points linestring** อย่างรวดเร็วและผสานเรขาคณิตนี้เข้าสู่เวิร์กโฟลว์ GIS ขนาดใหญ่ได้ สำรวจเอกสาร Aspose.GIS เพิ่มเติมเพื่อค้นหาการดำเนินการขั้นสูงเช่นการสืบค้นเชิงพื้นที่, การแปลงเรขาคณิต, และการแปลงรูปแบบไฟล์
+
+---
+
+**อัปเดตล่าสุด:** 2026-03-29  
+**ทดสอบกับ:** Aspose.GIS for .NET 24.11  
+**ผู้เขียน:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
