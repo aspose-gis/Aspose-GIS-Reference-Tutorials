@@ -1,33 +1,50 @@
 ---
-title: Aspose.GIS のファイル GDB レイヤーからオブジェクト ID を読み取る
-linktitle: ファイル GDB レイヤーからオブジェクト ID を読み取る
+date: 2026-04-30
+description: Aspose.GIS for .NET を使用して、File Geodatabase レイヤーから ObjectID を読み取る方法を学びましょう。ステップバイステップのガイド、前提条件、トラブルシューティングのヒント。
+keywords:
+- how to read objectid
+- Aspose.GIS File GDB
+- read object id .NET
+linktitle: ファイルGDBレイヤーからオブジェクトIDを読み取る
 second_title: Aspose.GIS .NET API
-description: Aspose.GIS for .NET を利用して地理空間データ処理を効率的に処理する方法を学びます。包括的なチュートリアルと専門家のガイダンスが利用可能です。
-weight: 16
+title: Aspose.GIS を使用して File GDB レイヤーから ObjectID を読み取る方法
 url: /ja/net/layer-data-operations/read-object-id-from-file-gdb-layer/
+weight: 16
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.GIS のファイル GDB レイヤーからオブジェクト ID を読み取る
+# Aspose.GIS を使用して File GDB レイヤーから ObjectID を読み取る方法
 
-## 導入
-Aspose.GIS for .NET をマスターするための包括的なガイドへようこそ! Aspose.GIS は、.NET Framework 内で地理空間データの処理と視覚化タスクを効率的に処理するように設計された強力なライブラリです。あなたが経験豊富な開発者であっても、地理空間プログラミングを始めたばかりであっても、このチュートリアルでは、Aspose.GIS の可能性を最大限に活用するために知っておくべきことをすべて説明します。
+## はじめに
+File Geodatabase (GDB) レイヤーから **ObjectID** 値を抽出する必要がある場合、このチュートリアルでは Aspose.GIS for .NET を使用して **ObjectID を迅速に読み取る方法** を示します。必要なセットアップ、正確なコード、一般的な落とし穴を回避する実用的なヒントを順に説明します。最後まで読めば、任意の .NET 地理空間ワークフローに ObjectID の取得を組み込むことができます。
+
+## クイック回答
+- **ObjectID は何を表しますか？** GIS レイヤー内の各フィーチャを一意に識別する識別子です。  
+- **必要なドライバーはどれですか？** File Geodatabase ファイル用の `Drivers.FileGdb` です。  
+- **このコードにライセンスは必要ですか？** 開発にはトライアル版で動作しますが、本番環境では商用ライセンスが必要です。  
+- **.NET Core でも使用できますか？** はい、Aspose.GIS は .NET Framework と .NET Core の両方をサポートしています。  
+- **大規模データセットに特別な処理は必要ですか？** `using` ステートメントでイテレートし、リソースが速やかに解放されるようにしてください。
+
+## ObjectID とは何か、なぜ読み取るのか
+ObjectID（しばしば `OBJECTID` または `FID` と呼ばれる）は、GIS レイヤー内の各フィーチャを一意に識別する主キーです。以下のようなケースでアクセスが必須になります。
+
+- 特定のフィーチャを更新または削除する場合  
+- 複数レイヤー間でフィーチャを関連付ける場合  
+- 属性テーブルを走査せずに高速検索を行う場合  
+
 ## 前提条件
-チュートリアルに入る前に、次の前提条件が満たされていることを確認してください。
-1. Visual Studio: .NET コードの作成と実行に Visual Studio を使用するため、システムに Visual Studio がインストールされていることを確認してください。
-   
-2.  Aspose.GIS for .NET: Aspose.GIS for .NET をダウンロードしてインストールする必要があります。ライブラリは次から入手できます。[ダウンロードページ](https://releases.aspose.com/gis/net/).
-3. C# の基本知識: このチュートリアルで提供される例を理解して実装するには、C# プログラミング言語に精通していることが不可欠です。
+開始する前に、以下を用意してください。
+
+1. **Visual Studio**（最新バージョン） – C# コードの作成と実行に使用します。  
+2. **Aspose.GIS for .NET** – [ダウンロードページ](https://releases.aspose.com/gis/net/) からダウンロードしてください。  
+3. **基本的な C# の知識** – ループやコンソール出力に慣れていること。  
 
 ## 名前空間のインポート
-Aspose.GIS for .NET の使用を開始するには、必要な名前空間を C# コードにインポートする必要があります。次の手順を実行します：
-## ステップ 1: Aspose.GIS への参照を追加する
-まず、Visual Studio プロジェクトに Aspose.GIS ライブラリへの参照を追加します。これを行うには、DLL ファイルを直接参照するか、NuGet 経由でパッケージをインストールします。
-## ステップ 2: 名前空間をインポートする
-次に、C# ファイルの先頭に必要な名前空間をインポートします。これにより、Aspose.GIS が提供するクラスとメソッドにアクセスできるようになります。
+まず、Aspose.GIS ライブラリへの参照を追加（NuGet または直接 DLL）し、必要な名前空間をインポートします。
+
 ```csharp
 using Aspose.Gis;
 using System;
@@ -37,49 +54,99 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-ここで、提供されたコード スニペットを複数のステップに分割してみましょう。
-## ステップ 1: データ ディレクトリを定義する
+## ステップバイステップ ガイド
+
+### ステップ 1: データディレクトリの定義
+`.gdb` ファイルが格納されているフォルダーを指定します。
+
 ```csharp
 string dataDir = "Your Document Directory";
 ```
-交換する`"Your Document Directory"`ファイル ジオデータベース (GDB) ファイルを含むディレクトリへのパスを置き換えます。
-## ステップ 2: データセットとレイヤーを開く
+
+`"Your Document Directory"` を `test.gdb` が含まれるフォルダーへの絶対パスに置き換えてください。
+
+### ステップ 2: データセットと対象レイヤーを開く
+File GDB ドライバーを使用して `Dataset` インスタンスを作成し、目的のレイヤーを開きます（`"layer"` を実際のレイヤー名に置き換えてください）。
+
 ```csharp
 string path = dataDir + "test.gdb";
 using (var dataset = Dataset.Open(path, Drivers.FileGdb))
 using (var layer = dataset.OpenLayer("layer"))
 {
-    //オブジェクト ID を読み取るコードはここにあります
+    // Code to read object IDs goes here
 }
 ```
-このステップでは、指定された GDB ファイル (`test.gdb`）。正しいドライバー (`FileGdb`) はデータセットを開くために使用されます。
-## ステップ 3: 機能を反復処理する
+
+`using` ステートメントにより、ファイルハンドルが自動的に解放されます。
+
+### ステップ 3: すべてのフィーチャをイテレート
+レイヤー内の各フィーチャをループします。ここで ObjectID を抽出します。
+
 ```csharp
 foreach (var feature in layer)
 {
-    //各機能を処理するコードはここにあります
+    // Code to process each feature goes here
 }
 ```
-ここでは、データセットから取得したレイヤー内の各フィーチャを繰り返し処理します。
-## ステップ 4: オブジェクト ID を取得する
+
+### ステップ 4: ObjectID を取得して表示
+ループ内部で `GetValue<int>("OBJECTID")` を呼び出し、整数の識別子を取得して出力します。
+
 ```csharp
 Console.WriteLine(feature.GetValue<int>("OBJECTID"));
 ```
-ループ内で、各フィーチャの「OBJECTID」属性の値を取得して出力します。
 
-## 結論
-このチュートリアルでは、Aspose.GIS for .NET を使用してファイル ジオデータベース レイヤーからオブジェクト ID を読み取る基本について説明しました。ステップバイステップのガイドに従い、提供されるコード例を理解することで、Aspose.GIS を使用したより高度な地理空間データ処理タスクを探索できるようになります。
+プログラムを実行すると、ObjectID の一覧がコンソールに 1 行ずつ出力されます。
+
+## 一般的な問題とトラブルシューティング
+
+| 症状 | 考えられる原因 | 対処法 |
+|------|----------------|--------|
+| **`ArgumentException: No such layer`** | レイヤー名が間違っている | GDB 内の正確な名前（大文字小文字を区別）を確認してください。 |
+| **`FileNotFoundException`** | `.gdb` へのパスが間違っている | `Path.Combine(dataDir, "test.gdb")` を使用し、フォルダーを再確認してください。 |
+| **`InvalidOperationException` when reading OBJECTID** | 属性名が異なる（例: `FID`） | `layer.GetFields()` でスキーマを確認し、フィールド名を調整してください。 |
+| **Performance slowdown on large layers** | すべてのフィーチャを一度に読み込むのではなく、バッチ処理するか、サポートされていればカーソルベースのアプローチを使用してください。 | 大量のレイヤーでパフォーマンスが低下 | バッチ処理またはカーソルベースのアプローチを使用してください。 |
+
+## FAQ
+
+### Aspose.GIS for .NET を他のプログラミング言語で使用できますか？
+Aspose.GIS for .NET は .NET アプリケーション向けに特化して設計されています。ただし、Aspose は Java やその他のプラットフォーム向けにもライブラリを提供しています。
+
+### Aspose.GIS の無料トライアルはありますか？
+はい、[ウェブサイト](https://releases.aspose.com/gis/net/) から Aspose.GIS for .NET の無料トライアル版をダウンロードできます。
+
+### Aspose.GIS のテクニカルサポートはどうやって受けられますか？
+問題や質問がある場合は、[Aspose.GIS フォーラム](https://forum.aspose.com/c/gis/33) にアクセスして支援を受けてください。
+
+### Aspose.GIS の一時ライセンスを購入できますか？
+はい、テストや評価目的で Aspose のウェブサイトから一時ライセンスを取得できます。
+
+### Aspose.GIS for .NET の包括的なドキュメントはどこにありますか？
+詳細な API や機能情報は、[ドキュメント](https://reference.aspose.com/gis/net/) を参照してください。
+
 ## よくある質問
-### Aspose.GIS for .NET を他のプログラミング言語で使用できますか?
-Aspose.GIS for .NET は、.NET アプリケーション用に特別に設計されています。ただし、Aspose は Java およびその他のプラットフォーム用のライブラリも提供しています。
-### Aspose.GIS に利用できる無料トライアルはありますか?
-はい、Aspose.GIS for .NET の無料試用版を次のサイトからダウンロードできます。[Webサイト](https://releases.aspose.com/gis/net/).
-### Aspose.GIS のテクニカル サポートを受けるにはどうすればよいですか?
-Aspose.GIS に関して問題が発生したり質問がある場合は、次のサイトにアクセスしてください。[Aspose.GIS フォーラム](https://forum.aspose.com/c/gis/33)援助のために。
-### Aspose.GIS の一時ライセンスを購入できますか?
-はい、テストと評価の目的で、Aspose Web サイトから一時ライセンスを取得できます。
-### Aspose.GIS for .NET の包括的なドキュメントはどこで見つけられますか?
-を参照できます。[ドキュメンテーション](https://reference.aspose.com/gis/net/) Aspose.GIS API と機能の使用に関する詳細情報を参照してください。
+
+**Q: レイヤーが一意の識別子として別のフィールド名を使用している場合はどうすればよいですか？**  
+A: `GetValue<int>("OBJECTID")` の `"OBJECTID"` を実際のフィールド名（例: `"FID"` や `"ID"`）に置き換えてください。
+
+**Q: ObjectID の値を別のファイルに書き出すことは可能ですか？**  
+A: はい、ID を取得した後、標準の .NET I/O を使用して新しい `Feature` コレクションを作成したり、CSV にエクスポートしたりできます。
+
+**Q: Aspose.GIS は shapefile からも ObjectID を読み取れますか？**  
+A: もちろんです。`Drivers.FileGdb` の代わりに `Drivers.Shapefile` を使用し、同じ `GetValue<int>("OBJECTID")` パターンで動作します。
+
+**Q: パスワード保護された File GDB を扱うにはどうすればよいですか？**  
+A: データセットを開く際にパスワードを指定します: `Dataset.Open(path, Drivers.FileGdb, new OpenOptions { Password = "yourPwd" })`。
+
+**Q: このコードを Linux で実行できますか？**  
+A: はい、Aspose.GIS for .NET はクロスプラットフォームで、.NET Core/5+ 上の Linux でも動作します。
+
+---
+
+**最終更新日:** 2026-04-30  
+**テスト環境:** Aspose.GIS for .NET 24.11（執筆時点での最新）  
+**作者:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}

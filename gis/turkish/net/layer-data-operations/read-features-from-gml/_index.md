@@ -1,37 +1,42 @@
 ---
-title: Aspose.GIS'te GML'nin Özelliklerini Okuyun
+date: 2026-04-30
+description: Aspose.GIS for .NET kullanarak GML özelliklerini nasıl okuyacağınızı
+  öğrenin. Bu öğreticide GML dosyalarını verimli bir şekilde nasıl okuyacağınız gösterilmektedir.
+keywords:
+- how to read gml
+- aspose gis gml
+- read gml features
 linktitle: GML'den Özellikleri Oku
-second_title: Aspose.GIS .NET API'si
-description: Aspose.GIS for .NET kullanarak GML dosyalarından özellikleri nasıl okuyacağınızı öğrenin. CBS geliştiricileri için kapsamlı bir eğitim.
-weight: 10
+second_title: Aspose.GIS .NET API
+title: Aspose.GIS ile GML Özelliklerini Okuma
 url: /tr/net/layer-data-operations/read-features-from-gml/
+weight: 10
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.GIS'te GML'nin Özelliklerini Okuyun
+# GML Özelliklerini Aspose.GIS ile Okuma
 
-## giriiş
+## Giriş
 
-Güçlü Aspose.GIS for .NET kütüphanesini kullanarak Coğrafi Bilgi Sistemleri (GIS) dünyasına dalmaya hazır mısınız? İster deneyimli bir geliştirici olun ister GIS programlama yolculuğunuza yeni başlıyor olun, bu eğitim size GML (Coğrafya İşaretleme Dili) dosyalarındaki özellikleri adım adım okuma sürecinde rehberlik edecektir. Aspose.GIS for .NET, coğrafi verileri zahmetsizce işlemek için kapsamlı bir araç ve API seti sağlayarak GIS uygulamalarınızın tüm potansiyelini ortaya çıkarmanıza olanak tanır.
+Eğer bir .NET ortamında **gml dosyalarını nasıl okuyacağınızı** merak ediyorsanız, doğru yerdesiniz. Bu öğreticide Aspose.GIS for .NET API'sini adım adım inceleyecek, bir GML dosyasını nasıl açacağınızı, özelliklerini nasıl çıkaracağınızı ve isteğe bağlı olarak eksik öznitelik şemalarını nasıl geri yükleyeceğinizi göstereceğiz. İster bir masaüstü GIS aracı ister web tabanlı bir haritalama servisi geliştirin, bu iş akışını ustalaşmak, zengin coğrafi verileri hızlı ve güvenilir bir şekilde entegre etmenizi sağlayacak.
 
-## Önkoşullar
+## Hızlı Yanıtlar
+- **Hangi kütüphane gerekiyor?** Aspose.GIS for .NET  
+- **Şemaları İnternetten yükleyebilir miyim?** Evet, `LoadSchemasFromInternet = true` olarak ayarlayın.  
+- **Geliştirme için lisansa ihtiyacım var mı?** Test için ücretsiz deneme sürümü çalışır; üretim için lisans gereklidir.  
+- **Büyük dosya desteği mevcut mu?** Aspose.GIS verileri akış olarak işler, bu yüzden büyük GML dosyalarını verimli bir şekilde yönetir.  
+- **Hangi .NET sürümleri destekleniyor?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
 
-Bu heyecan verici yolculuğa çıkmadan önce aşağıdaki ön koşulların yerine getirildiğinden emin olun:
+## GML Özelliklerini Nasıl Okuyabilirsiniz
 
-1. C# ve .NET Ortamına İlişkin Temel Bilgi: .NET ortamında çalışacağımız için C# programlama dili ve .NET çerçevesine aşinalık faydalı olacaktır.
+Aşağıdaki pratik, uygulamalı kılavuzu projenize kopyalayıp yapıştırabilirsiniz. Her adım, ilgili kod bloğundan önce sade bir dille açıklanmıştır, böylece *neden* bir şey yaptığınızı her zaman bilirsiniz.
 
-2. Aspose.GIS for .NET Kütüphanesinin Kurulumu: Aspose.GIS for .NET kütüphanesini indirip yüklediğinizden emin olun. Kütüphaneyi adresinden temin edebilirsiniz.[İndirme: {link](https://releases.aspose.com/gis/net/).
+### Adım 1: Gerekli Ad Alanlarını İçe Aktarın
 
-3. Örnek GML Dosyalarına Erişim: Okuma özelliklerini uygulamak için kullanacağınız bazı örnek GML dosyalarını hazırlayın. Bu dosyalar GML formatında kodlanmış coğrafi verileri içermelidir.
-
-4. İnternet Bağlantısı (İsteğe bağlı): GML dosyalarınız internette bulunan şemalara referans veriyorsa, Aspose.GIS'in şemaları web'den yüklemesi gerekebileceğinden internet bağlantınızın olduğundan emin olun.
-
-## Ad Alanlarını İçe Aktar
-
-Başlamak için Aspose.GIS for .NET tarafından sağlanan işlevsellikten yararlanmak için gerekli ad alanlarını C# kodumuza aktaralım.
+İlk olarak, Aspose.GIS ad alanlarını kapsam içine alın. Bu, `VectorLayer`, `GmlOptions` ve diğer temel sınıflara erişmenizi sağlar.
 
 ```csharp
 using Aspose.Gis;
@@ -46,11 +51,9 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-Artık ortamı hazırladığımıza göre, GML dosyalarından özellikleri okuma sürecini birden fazla adıma ayıralım.
+### Adım 2: GmlOptions Tanımlayın
 
-## Adım 1: GmlOptions'ı tanımlayın
-
- Öncelikle GML dosyalarını okuma seçeneklerini tanımlamamız gerekiyor. Bir örneğini oluşturuyoruz`GmlOptions` class ve özellikleri buna göre ayarlayın.
+`GmlOptions`, GML ayrıştırıcısının davranışını kontrol etmenizi sağlar. `SchemaLocation`'ı `null` olarak ayarlamak, Aspose.GIS'in şemayı doğrudan dosyadan okumasını sağlar; `LoadSchemasFromInternet` ise gerektiğinde çevrimiçi şema çözümlemesini etkinleştirir.
 
 ```csharp
 GmlOptions options = new GmlOptions
@@ -60,11 +63,11 @@ GmlOptions options = new GmlOptions
 };
 ```
 
- Bu adımda yapılandırıyoruz`SchemaLocation`null'a döner, bu da Aspose.GIS'in şema konumunu GML dosyasının kendisinden okumaya çalışacağını belirtir. Ek olarak, etkinleştiriyoruz`LoadSchemasFromInternet` şema referanslarının çevrimiçi olması durumunda true olur.
+> **Pro ipucu:** Tam şema konumunu biliyorsanız, ek ağ çağrılarını önlemek için `SchemaLocation`'a atayın.
 
-## Adım 2: GML Dosyasından Özellikleri Okuyun
+### Adım 3: GML Dosyasını Açın ve Özellikleri Enumerate Edin
 
- Daha sonra şunu kullanırız:`VectorLayer.Open` GML dosyasını açma ve özelliklerini okuma yöntemini kullanın. Dosya yolunu sağlıyoruz, GML sürücüsünü belirliyoruz ve önceden tanımlananları aktarıyoruz`GmlOptions`.
+GML sürücüsü ve az önce oluşturduğunuz seçeneklerle `VectorLayer.Open` kullanın. `using` bloğu, katmanın işlendikten sonra düzgün bir şekilde serbest bırakılmasını sağlar.
 
 ```csharp
 using (VectorLayer layer = VectorLayer.Open(dataDir + "file.gml", Drivers.Gml, options))
@@ -76,11 +79,11 @@ using (VectorLayer layer = VectorLayer.Open(dataDir + "file.gml", Drivers.Gml, o
 }
 ```
 
- Burada katmandaki her özelliği yineliyoruz ve belirli bir özelliğin değerini alıyoruz. Yer değiştirmek`"attribute"` almak istediğiniz özelliğin adı ile.
+`"attribute"` ifadesini okumak istediğiniz gerçek alan adıyla değiştirin (ör. `"Name"` veya `"Population"`). `GetValue<T>` yöntemi, özniteliği istenen .NET tipine otomatik olarak dönüştürür.
 
-## 3. Adım: Nitelikler Şemasını Geri Yükle (İsteğe bağlı)
+### Adım 4 (İsteğe Bağlı): Eksik Olduğunda Öznitelik Şemasını Geri Yükle
 
-GML dosyası şema konumunu açıkça belirtmiyorsa, dosya verilerine dayalı olarak nitelik şemasını geri yüklemeyi seçebilirsiniz.
+Bazı GML dosyaları şema tanımını atlar. `RestoreSchema`'yı etkinleştirerek, Aspose.GIS veri üzerinden öznitelik yapısını kendiliğinden çıkarır.
 
 ```csharp
 using (VectorLayer layer = VectorLayer.Open(dataDir + "file.gml", Drivers.Gml, new GmlOptions(){RestoreSchema = true}))
@@ -92,33 +95,63 @@ using (VectorLayer layer = VectorLayer.Open(dataDir + "file.gml", Drivers.Gml, n
 }
 ```
 
- Bu adımda yeni bir örneğini geçiyoruz.`GmlOptions` ile`RestoreSchema` doğru olarak ayarlayın. Aspose.GIS, dosya verilerini kullanarak nitelik şemasını geri yüklemeye çalışacaktır.
+Bu geri dönüş, eski veri kümeleri veya üçüncü‑taraf araçlar tarafından oluşturulan dosyalar için kullanışlıdır.
 
-## Çözüm
+## Neden GML için Aspose.GIS Kullanmalı?
 
-Tebrikler! Aspose.GIS for .NET'i kullanarak GML dosyalarından özellikleri nasıl okuyacağınızı başarıyla öğrendiniz. Adım adım kılavuzu takip ederek, coğrafi verileri .NET uygulamalarınıza sorunsuz bir şekilde entegre edebilir, GIS geliştirmede sonsuz olasılıklara kapı açabilirsiniz.
+- **Tam .NET entegrasyonu:** Yerel kütüphane veya COM etkileşimi gerekmez.  
+- **Güçlü şema yönetimi:** Web'den veya yerel dosyalardan otomatik yükleme.  
+- **Performans odaklı:** Akış tabanlı okuma bellek kullanımını en aza indirir.  
+- **Çapraz platform:** .NET Core/.NET 5+ ile Windows, Linux ve macOS'ta çalışır.
 
-## SSS'ler
+## Önkoşullar
 
-### S: Aspose.GIS büyük GML dosyalarını verimli bir şekilde işleyebilir mi?
+1. **C# / .NET bilgisi** – sınıflar, `using` ifadeleri ve konsol çıktısı hakkında temel bilgi.  
+2. **Aspose.GIS for .NET** – [download link](https://releases.aspose.com/gis/net/) adresinden indirin.  
+3. **Örnek GML dosyaları** – deneme için en az bir GML dosyanızın olduğundan emin olun.  
+4. **İnternet erişimi (isteğe bağlı)** – yalnızca GML dosyanız uzaktan şemalar referans veriyorsa gerekir.
 
-C: Evet, Aspose.GIS büyük GML dosyalarını verimli bir şekilde işleyecek şekilde optimize edilmiştir ve kapsamlı coğrafi verilerle bile sorunsuz işlem yapılmasını sağlar.
+## Yaygın Sorunlar ve İpuçları
 
-### S: Aspose.GIS, GML'nin yanı sıra diğer coğrafi formatları da destekliyor mu?
+| Sorun | Neden Oluşur | Çözüm |
+|-------|----------------|----------|
+| **Şema bulunamadı** | `SchemaLocation` eksik bir URL'ye işaret ediyor. | `LoadSchemasFromInternet = true` olarak ayarlayın veya yerel bir şema dosyası sağlayın. |
+| **Null öznitelik değerleri** | Öznitelik adı eşleşmiyor (büyük/küçük harf duyarlı). | Bir GIS görüntüleyicisi veya `feature.GetFieldNames()` kullanarak tam alan adını doğrulayın. |
+| **Büyük dosya yavaşlıyor** | Tüm dosyanın belleğe okunması. | `RestoreSchema`'ı false tutun ve gösterildiği gibi akış döngüsü içinde özellikleri işleyin. |
 
-C: Kesinlikle! Aspose.GIS, Shapefile, KML, GeoJSON ve daha fazlası gibi çeşitli coğrafi formatları destekleyerek veri entegrasyonunda esneklik sunar.
+## Sıkça Sorulan Sorular
 
-### S: Aspose.GIS hem masaüstü hem de web uygulamalarıyla uyumlu mudur?
+### Q: Aspose.GIS büyük GML dosyalarını verimli bir şekilde işleyebilir mi?
+A: Evet, Aspose.GIS verileri akış olarak işler ve tembel yükleme kullanır, bu sayede çok‑gigabaytlık GML dosyaları bile belleği tüketmeden işlenebilir.
 
-C: Evet, Aspose.GIS çok yönlüdür ve .NET çerçevesi kullanılarak geliştirilen hem masaüstü hem de web uygulamalarına sorunsuz bir şekilde entegre edilebilir.
+### Q: Aspose.GIS GML dışındaki diğer coğrafi veri formatlarını destekliyor mu?
+A: Kesinlikle! Shapefile, KML, GeoJSON, CSV ve daha birçok formatı destekler, böylece çeşitli veri kaynaklarıyla çalışırken esneklik sağlar.
 
-### S: Aspose.GIS'i kullanarak uzamsal sorgular gerçekleştirebilir miyim?
+### Q: Aspose.GIS hem masaüstü hem de web uygulamalarıyla uyumlu mu?
+A: Evet, kütüphane ASP.NET, ASP.NET Core, WPF, WinForms ve konsol uygulamalarında sorunsuz çalışır.
 
-C: Kesinlikle! Aspose.GIS, karmaşık mekansal işlemleri kolaylıkla gerçekleştirmenize olanak tanıyan güçlü mekansal sorgulama yetenekleri sunar.
+### Q: Aspose.GIS ile mekansal sorgular yapabilir miyim?
+A: Elbette. `Intersects`, `Contains` ve `Within` gibi mekansal önermeleri doğrudan `Feature` koleksiyonları üzerinde çalıştırabilirsiniz.
 
-### S: Aspose.GIS kullanıcıları için teknik destek mevcut mu?
+### Q: Aspose.GIS kullanıcıları için teknik destek mevcut mu?
+A: Evet, Aspose, kullanıcıların yardım alabileceği, sorun bildirebileceği ve toplulukla etkileşime girebileceği forumları [link]( https://forum.aspose.com/c/gis/33) aracılığıyla özel teknik destek sunar.
 
- C: Evet, Aspose forumları aracılığıyla özel teknik destek sağlıyor[bağlantı]( https://forum.aspose.com/c/gis/33)Kullanıcıların yardım isteyebileceği, sorunları bildirebileceği ve toplulukla etkileşim kurabileceği yer.
+### Q: Özel bir ad alanı kullanan bir GML dosyasını nasıl okuyabilirim?
+A: `GmlOptions` üzerindeki `Namespace` özelliğini özel ad alanına eşitleyin, ardından katmanı normal şekilde açın.
+
+### Q: GML dosyalarını okuduktan sonra yazabilir veya düzenleyebilir miyim?
+A: Evet, özellik özniteliklerini değiştirebilir ve değişiklikleri kalıcı hale getirmek için `layer.Save("output.gml", Drivers.Gml)` çağırabilirsiniz.
+
+## Sonuç
+
+Artık Aspose.GIS for .NET ile **gml dosyalarını nasıl okuyacağınızı** gösteren eksiksiz, üretim‑hazır bir tarifiniz var. Yukarıdaki adımları izleyerek GML verilerini herhangi bir .NET uygulamasına entegre edebilir, öznitelik çıkarımı yapabilir ve eksik şemaları sorunsuz bir şekilde ele alabilirsiniz. Aspose.GIS'teki diğer format sürücülerini keşfederek gerçekten çok yönlü GIS çözümleri oluşturun.
+
+---
+
+**Son Güncelleme:** 2026-04-30  
+**Test Edilen Versiyon:** Aspose.GIS for .NET 24.11 (yazım zamanındaki en son sürüm)  
+**Yazar:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
