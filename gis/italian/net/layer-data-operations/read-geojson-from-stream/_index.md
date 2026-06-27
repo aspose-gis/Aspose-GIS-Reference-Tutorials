@@ -1,9 +1,13 @@
 ---
-date: 2025-12-28
-description: Scopri come leggere GeoJSON da uno stream utilizzando Aspose.GIS per
-  .NET. Questa guida C# per leggere GeoJSON fornisce un esempio passo‑passo per l'integrazione
-  di dati geospaziali.
-linktitle: Read GeoJSON from Stream
+date: 2026-04-24
+description: Impara **come leggere geojson** da uno stream usando Aspose.GIS per .NET.
+  Questa guida passo‑passo ti mostra come **caricare lo stream geojson**, analizzarlo
+  ed estrarre le proprietà in C#.
+keywords:
+- how to read geojson
+- load geojson stream
+- Aspose GIS GeoJSON
+linktitle: Leggi GeoJSON dallo stream
 second_title: Aspose.GIS .NET API
 title: Come leggere GeoJSON dallo stream con Aspose.GIS per .NET
 url: /it/net/layer-data-operations/read-geojson-from-stream/
@@ -17,27 +21,34 @@ weight: 14
 # Come leggere GeoJSON dallo stream con Aspose.GIS per .NET
 
 ## Introduzione
-Se ti stai chiedendo **come leggere geojson** in un'applicazione .NET, sei nel posto giusto. In questo tutorial percorreremo un **esempio c# geojson** completo che mostra come convertire una stringa GeoJSON, aprire un layer GeoJSON da uno stream di memoria e estrarre le proprietà GeoJSON usando Aspose.GIS. Alla fine avrai un modello riutilizzabile da inserire in qualsiasi progetto che necessita di lavorare con dati geospaziali.
+Se ti stai chiedendo **come leggere geojson** in un'applicazione .NET, sei nel posto giusto. In questo tutorial percorreremo un **esempio C# GeoJSON** completo che mostra come convertire una stringa GeoJSON, **caricare lo stream geojson** in un memory stream, aprire un layer GeoJSON e estrarre le proprietà GeoJSON usando Aspose.GIS. Alla fine avrai un modello riutilizzabile da inserire in qualsiasi progetto che necessita di lavorare con dati geospaziali.
 
 ## Risposte rapide
-- **Quale libreria dovrei usare?** Aspose.GIS for .NET  
+- **Quale libreria dovrei usare?** Aspose.GIS per .NET – gestisce molti formati GIS subito pronto all'uso.  
 - **Posso leggere GeoJSON direttamente da uno stream?** Sì – usa `VectorLayer.Open` con `AbstractPath.FromStream`.  
-- **Ho bisogno di una licenza per lo sviluppo?** Una prova gratuita funziona per i test; è necessaria una licenza per la produzione.  
-- **Quali versioni .NET sono supportate?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6+.  
-- **L'estrazione delle proprietà è semplice?** Sì – chiama `GetValue<T>(columnName)` su una feature.
+- **Ho bisogno di una licenza per lo sviluppo?** Una versione di prova gratuita funziona per i test; è necessaria una licenza completa per la produzione.  
+- **Quali versioni di .NET sono supportate?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6+.  
+- **L'estrazione delle proprietà è semplice?** Assolutamente – chiama `GetValue<T>(columnName)` su una feature.
 
 ## Cos'è “come leggere geojson”?
-Leggere GeoJSON significa analizzare il formato basato su JSON che descrive le caratteristiche geografiche (punti, linee, poligoni) e rendere tali caratteristiche disponibili come oggetti che puoi interrogare, modificare o visualizzare nella tua applicazione.
+Leggere GeoJSON significa analizzare il formato basato su JSON che descrive le caratteristiche geografiche (punti, linee, poligoni) e trasformare tali caratteristiche in oggetti che puoi interrogare, modificare o visualizzare nella tua applicazione.
 
 ## Perché usare Aspose.GIS per **aprire un layer geojson**?
-Aspose.GIS astrae i dettagli di parsing a basso livello e ti fornisce un'API coerente per molti formati GIS. Ti consente di **aprire un layer geojson** direttamente da uno stream, gestire file di grandi dimensioni in modo efficiente e accedere agli attributi delle feature senza scrivere parser.
+Aspose.GIS astrae i dettagli di parsing a basso livello e ti fornisce un'API coerente per molti formati GIS. Ti consente di **aprire un layer geojson** direttamente da uno stream, gestire file di grandi dimensioni in modo efficiente e accedere agli attributi delle feature senza scrivere parser JSON personalizzati.
+
+## Quando dovresti **caricare lo stream geojson**?
+- Importare dati da un servizio web che restituisce GeoJSON nel corpo della risposta.  
+- Elaborare file GeoJSON caricati dagli utenti senza scriverli prima su disco.  
+- Lavorare con dati in memoria generati al volo (ad esempio, da un database o da un'altra API).  
 
 ## Prerequisiti
-1. **Conoscenza di base di C#** – dovresti sentirti a tuo agio con la sintassi .NET e l'IDE Visual Studio.  
-2. **Aspose.GIS installato** – scarica la libreria da [here](https://releases.aspose.com/gis/net/).  
-3. **Un ambiente di sviluppo** – Visual Studio, Visual Studio Code o JetBrains Rider funzioneranno bene.  
+Prima di iniziare, assicurati di avere:
 
-## Importare gli spazi dei nomi
+1. **Conoscenza di base di C#** – dovresti sentirti a tuo agio con la sintassi .NET e l'IDE Visual Studio.  
+2. **Aspose.GIS installato** – scarica la libreria da [qui](https://releases.aspose.com/gis/net/).  
+3. **Un ambiente di sviluppo** – Visual Studio, Visual Studio Code o JetBrains Rider andranno bene.  
+
+## Importa gli spazi dei nomi
 ```csharp
 using System;
 using System.IO;
@@ -45,8 +56,8 @@ using System.Text;
 using Aspose.Gis;
 ```
 
-## Passo 1: **Convertire la stringa GeoJSON** – un **esempio c# geojson**
-Per prima cosa creiamo una stringa JSON che rappresenta una semplice `FeatureCollection`. Questa è la parte **convertire la stringa geojson** del flusso di lavoro.
+## Passo 1: **Converti stringa GeoJSON** – un **esempio C# GeoJSON**
+Per prima cosa creiamo una stringa JSON che rappresenta una semplice `FeatureCollection`. Questa è la parte **converti stringa geojson** del flusso di lavoro.
 
 ```csharp
 const string geoJson = @"{""type"":""FeatureCollection"",""features"":[
@@ -55,8 +66,8 @@ const string geoJson = @"{""type"":""FeatureCollection"",""features"":[
 ]}";
 ```
 
-## Passo 2: **Aprire il layer GeoJSON** dallo stream e **estrarre le proprietà geojson**
-Ora inseriamo la stringa in un `MemoryStream`, la apriamo come layer GIS e dimostriamo come leggere i valori degli attributi (il passo **estrarre le proprietà geojson**).
+## Passo 2: **Carica lo stream GeoJSON** e **estrai le proprietà geojson**
+Ora inseriamo la stringa in un `MemoryStream`, la apriamo come layer GIS e dimostriamo come leggere i valori degli attributi (la fase **estrai le proprietà geojson**).
 
 ```csharp
 using (var memoryStream = new MemoryStream(Encoding.UTF8.GetBytes(geoJson)))
@@ -67,7 +78,7 @@ using (var layer = VectorLayer.Open(AbstractPath.FromStream(memoryStream), Drive
 }
 ```
 
-> **Consiglio professionale:** `VectorLayer.Open` rileva automaticamente il formato GeoJSON quando passi `Drivers.GeoJson`. Puoi anche aprire i file direttamente fornendo un percorso file invece di uno stream.
+> **Suggerimento professionale:** `VectorLayer.Open` rileva automaticamente il formato GeoJSON quando passi `Drivers.GeoJson`. Puoi anche aprire file direttamente fornendo un percorso file invece di uno stream.
 
 ## Problemi comuni e soluzioni
 | Problema | Soluzione |
@@ -82,23 +93,23 @@ using (var layer = VectorLayer.Open(AbstractPath.FromStream(memoryStream), Drive
 Sì, Aspose.GIS supporta GeoJSON, Shapefile, KML, GML e molti altri formati.
 
 ### Posso provare Aspose.GIS prima di acquistarlo?
-Sì, puoi scaricare una prova gratuita di Aspose.GIS da [here](https://releases.aspose.com/).
+Sì, puoi scaricare una versione di prova gratuita di Aspose.GIS da [qui](https://releases.aspose.com/).
 
 ### Dove posso trovare la documentazione per Aspose.GIS?
-Puoi trovare la documentazione per Aspose.GIS [here](https://reference.aspose.com/gis/net/).
+Puoi trovare la documentazione per Aspose.GIS [qui](https://reference.aspose.com/gis/net/).
 
 ### Come posso ottenere supporto per Aspose.GIS?
-Puoi ottenere supporto per Aspose.GIS sui forum Aspose [here](https://forum.aspose.com/c/gis/33).
+Puoi ottenere supporto per Aspose.GIS nei forum Aspose [qui](https://forum.aspose.com/c/gis/33).
 
 ### Ho bisogno di una licenza temporanea per usare Aspose.GIS?
-Puoi ottenere una licenza temporanea per Aspose.GIS da [here](https://purchase.aspose.com/temporary-license/).
+Puoi ottenere una licenza temporanea per Aspose.GIS da [qui](https://purchase.aspose.com/temporary-license/).
 
 ## Conclusione
-In questa guida abbiamo coperto **come leggere geojson** da uno stream di memoria usando Aspose.GIS per .NET, mostrato un flusso di lavoro **c# read geojson**, e illustrato come **estrarre le proprietà geojson** dal layer aperto. Con questi passaggi puoi integrare senza problemi la gestione dei dati geospaziali in qualsiasi applicazione .NET.
+In questa guida abbiamo coperto **come leggere geojson** da un memory stream usando Aspose.GIS per .NET, dimostrato un flusso di lavoro **C# per leggere geojson** e mostrato come **estrarre le proprietà geojson** dal layer aperto. Con questi passaggi puoi integrare senza problemi la gestione dei dati geospaziali in qualsiasi applicazione .NET.
 
 ---
 
-**Ultimo aggiornamento:** 2025-12-28  
+**Ultimo aggiornamento:** 2026-04-24  
 **Testato con:** Aspose.GIS 24.11 for .NET  
 **Autore:** Aspose  
 

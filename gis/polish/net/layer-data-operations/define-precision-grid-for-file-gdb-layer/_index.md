@@ -1,10 +1,17 @@
 ---
-date: 2025-12-28
-description: Dowiedz się, jak ustawić siatkę dla warstwy File GDB przy użyciu Aspose.GIS
-  dla .NET, w tym jak dodać obiekty do warstwy i zweryfikować zakres współrzędnych.
-linktitle: Define Precision Grid for File GDB Layer
+date: 2026-04-24
+description: Dowiedz się, jak utworzyć bazę danych plików geograficznych i ustawić
+  siatkę precyzji dla warstwy File GDB przy użyciu Aspose.GIS dla .NET, w tym dodawanie
+  obiektów do warstwy oraz weryfikację zakresu współrzędnych.
+keywords:
+- create file geodatabase
+- handle out of range
+- add features layer
+- configure coordinate grid
+- validate coordinate range
+linktitle: Zdefiniuj siatkę precyzji dla warstwy File GDB
 second_title: Aspose.GIS .NET API
-title: Jak ustawić siatkę dla warstwy File GDB w Aspose.GIS
+title: Utwórz plikową bazę danych geograficznych i ustaw siatkę dla warstwy GDB (Aspose.GIS)
 url: /pl/net/layer-data-operations/define-precision-grid-for-file-gdb-layer/
 weight: 21
 ---
@@ -16,22 +23,36 @@ weight: 21
 # Jak ustawić siatkę dla warstwy File GDB w Aspose.GIS
 
 ## Wprowadzenie
-W tym samouczku dowiesz się **jak ustawić siatkę** dla warstwy File Geodatabase (GDB) przy użyciu Aspose.GIS dla .NET. Ustawienie siatki precyzji pomaga **zweryfikować zakres współrzędnych**, zapobiega błędom poza zakresem i zapewnia, że dane, które **dodajesz elementy do warstwy**, pozostają dokładne i wiarygodne. Przejdziemy krok po kroku, wyjaśnimy, dlaczego ustawienia są ważne, i pokażemy, jak radzić sobie z typowymi pułapkami.
+W tym samouczku **utworzysz obiekty bazy plikowej geodatabase** i dowiesz się, jak **ustawić siatkę** dla warstwy File Geodatabase (GDB) przy użyciu Aspose.GIS dla .NET. Definiowanie siatki precyzji pozwala **zweryfikować zakres współrzędnych**, zapobiega błędom poza zakresem i gwarantuje, że każda operacja **dodawania obiektów do warstwy** zapisuje dane dokładnie. Przejdziemy przez każdy krok, wyjaśnimy, dlaczego każde ustawienie ma znaczenie, i pokażemy, jak **radzić sobie z sytuacjami poza zakresem** w elegancki sposób.
 
 ## Szybkie odpowiedzi
-- **Co oznacza „ustawienie siatki”?** Definiuje precyzję współrzędnych i prawidłowy zakres dla warstwy GIS.  
+- **Co oznacza „ustaw siatkę”?** Definiuje precyzję współrzędnych i prawidłowy zakres dla warstwy GIS.  
 - **Dlaczego używać siatki precyzji?** Chroni dane przed nieprawidłowymi współrzędnymi i zwiększa efektywność przechowywania.  
 - **Która biblioteka udostępnia tę funkcję?** Aspose.GIS dla .NET.  
-- **Czy potrzebna jest licencja?** Dostępna jest wersja próbna; licencja komercyjna jest wymagana w produkcji.  
+- **Czy potrzebna jest licencja?** Dostępna jest wersja próbna; licencja komercyjna jest wymagana w środowisku produkcyjnym.  
 - **Czy mogę używać tego z .NET Core?** Tak, Aspose.GIS obsługuje .NET Framework i .NET Core.
 
-## Czym jest siatka precyzji i dlaczego ją ustawiać?
-Siatka precyzji to zestaw parametrów (pochodzenie, skala itp.), które informują silnik GIS, jak zaokrąglać i przechowywać wartości współrzędnych. Definiując siatkę, automatycznie **weryfikujesz zakres współrzędnych**, a każda próba wstawienia punktu poza siatką spowoduje wyrzucenie wyjątku — co pomaga **radzić sobie z sytuacjami poza zakresem** już na wczesnym etapie tworzenia.
+## Co to jest siatka precyzji i dlaczego ją ustawiać?
+Siatka precyzji to zestaw parametrów (pochodna, skala itp.), które informują silnik GIS, jak zaokrąglać i przechowywać wartości współrzędnych. Konfigurując siatkę, **automatycznie weryfikujesz zakres współrzędnych**, a każda próba wstawienia punktu poza siatką spowoduje wyrzucenie wyjątku — co pomaga **radzić sobie z sytuacjami poza zakresem** już na etapie rozwoju.
+
+## Dlaczego tworzyć bazę plikową geodatabase z siatką precyzji?
+Utworzenie bazy plikowej geodatabase zapewnia przenośny, wysokowydajny kontener dla danych wektorowych. Dodanie siatki precyzji w momencie tworzenia zapewnia:
+
+- **Spójną jakość danych** – każdy obiekt zachowuje tę samą precyzję liczbową.  
+- **Szybsze indeksowanie** – silnik może przechowywać współrzędne bardziej efektywnie.  
+- **Wczesne wykrywanie błędów** – współrzędne poza zakresem są wykrywane, zanim uszkodzą zestaw danych.
 
 ## Wymagania wstępne
+Zanim zaczniemy, upewnij się, że masz zainstalowane:
+
 1. **Visual Studio** – dowolna aktualna wersja (Community, Professional lub Enterprise).  
-2. **Aspose.GIS dla .NET** – pobierz go ze [strony internetowej](https://releases.aspose.com/gis/net/).  
-3. **Podstawowa znajomość C#** – powinieneś być zaznajomiony z tworzeniem projektów konsolowych .NET.
+2. **Aspose.GIS dla .NET** – pobierz ją ze [strony internetowej](https://releases.aspose.com/gis/net/).  
+3. **Podstawowa znajomość C#** – powinieneś być pewny w tworzeniu projektów konsolowych .NET.
+
+## Typowe przypadki użycia
+- **Zbieranie danych w terenie**, gdzie urządzenia GPS mogą generować współrzędne nieco poza zamierzonym zakresem.  
+- **Migracja danych** z systemów legacy, które używały innych precyzji współrzędnych.  
+- **Zautomatyzowane potoki ETL**, które muszą wymusić integralność przestrzenną przed załadowaniem danych do bazy GIS.
 
 ## Importowanie przestrzeni nazw
 Najpierw zaimportuj przestrzenie nazw wymagane do pracy z Aspose.GIS:
@@ -45,10 +66,10 @@ using System;
 using System.Text;
 ```
 
-## Jak ustawić siatkę w warstwie File GDB
-Poniżej znajduje się przewodnik krok po kroku, który dokładnie pokazuje, jak skonfigurować siatkę, utworzyć warstwę i bezpiecznie **dodawać elementy do warstwy**.
+## Jak skonfigurować siatkę współrzędnych w warstwie File GDB
+Poniżej znajdziesz przewodnik krok po kroku, który pokazuje dokładnie, jak skonfigurować siatkę, utworzyć warstwę i bezpiecznie **dodawać obiekty do warstwy**.
 
-### Krok 1: Utwórz zestaw danych
+### Krok 1: Utwórz zestaw danych
 Zaczynamy od utworzenia nowego zestawu danych File Geodatabase. To miejsce, w którym będzie znajdować się warstwa.
 
 ```csharp
@@ -57,8 +78,8 @@ using (var dataset = Dataset.Create(path, Drivers.FileGdb))
 {
 ```
 
-### Krok 2: Zdefiniuj opcje siatki precyzji
-Tutaj określamy parametry siatki. Dostosuj pochodzenie i skale, aby pasowały do układu współrzędnych Twojego projektu.
+### Krok 2: Zdefiniuj opcje siatki precyzji
+Tutaj określamy parametry siatki. Dostosuj pochodne i skale, aby pasowały do układu współrzędnych Twojego projektu.
 
 ```csharp
 var options = new FileGdbOptions
@@ -75,18 +96,18 @@ var options = new FileGdbOptions
 };
 ```
 
-*Flaga `EnsureValidCoordinatesRange = true` informuje Aspose.GIS, aby **weryfikował zakres współrzędnych** dla każdego elementu, który dodajesz.*
+*Flaga `EnsureValidCoordinatesRange = true` instruuje Aspose.GIS, aby **weryfikował zakres współrzędnych** dla każdego dodawanego obiektu.*
 
-### Krok 3: Utwórz warstwę z siatką
-Teraz tworzymy nową warstwę w zestawie danych, stosując właśnie zdefiniowane opcje siatki. Użyjemy układu odniesienia przestrzennego WGS84.
+### Krok 3: Utwórz warstwę z siatką
+Teraz tworzymy nową warstwę wewnątrz zestawu danych, stosując właśnie zdefiniowane opcje siatki. Użyjemy układu odniesienia przestrzennego WGS84.
 
 ```csharp
 using (var layer = dataset.CreateLayer("layer_name", options, SpatialReferenceSystem.Wgs84))
 {
 ```
 
-### Krok 4: Dodaj elementy do warstwy
-Tworzymy dwa elementy punktowe. Pierwszy punkt znajduje się wewnątrz siatki, natomiast drugi celowo leży poza nią, aby zademonstrować **jak radzić sobie z błędami poza zakresem**.
+### Krok 4: Dodaj obiekty do warstwy
+Tworzymy dwa obiekty punktowe. Pierwszy punkt znajduje się wewnątrz siatki, natomiast drugi celowo leży poza nią, aby zademonstrować **jak radzić sobie z błędami poza zakresem**.
 
 ```csharp
 var feature = layer.ConstructFeature();
@@ -96,8 +117,8 @@ feature = layer.ConstructFeature();
 feature.Geometry = new Point(-410, 0) { M = 20.2343 };
 ```
 
-### Krok 5: Obsłuż wyjątki przy dodawaniu elementów poza zakresem
-Próba dodania drugiego elementu spowoduje wyrzucenie wyjątku, ponieważ jego współrzędna X (`-410`) znajduje się poza zdefiniowaną siatką. Przechwytujemy wyjątek i wyświetlamy czytelną wiadomość.
+### Krok 5: Obsłuż wyjątki przy dodawaniu obiektów poza zakresem
+Próba dodania drugiego obiektu spowoduje wyrzucenie wyjątku, ponieważ jego współrzędna X (`-410`) znajduje się poza zdefiniowaną siatką. Przechwytujemy wyjątek i wyświetlamy czytelną wiadomość.
 
 ```csharp
 try
@@ -110,36 +131,43 @@ catch (GisException e)
 }
 ```
 
-### Krok 6: Sprzątanie
-Instrukcje `using` automatycznie zamykają i zwalniają zestaw danych oraz warstwę, zapewniając zwolnienie wszystkich zasobów.
+### Krok 6: Sprzątanie
+Instrukcje `using` automatycznie zamykają i zwalniają zasoby zestawu danych oraz warstwy, zapewniając zwolnienie wszystkich zasobów.
 
 ## Typowe problemy i rozwiązania
 | Problem | Dlaczego się pojawia | Rozwiązanie |
-|---------|----------------------|-------------|
-| **Exception: “X value … is out of valid range.”** | Współrzędne leżą poza siatką precyzji. | Dostosuj `XOrigin`, `YOrigin` lub `XYScale`, aby objąć Twoje dane, lub upewnij się, że dane wejściowe mieszczą się w zdefiniowanym zakresie. |
-| **Features not appearing in GIS viewer** | Warstwa nie została zapisana lub użyto niewłaściwego układu odniesienia. | Sprawdź, czy `SpatialReferenceSystem.Wgs84` odpowiada CRS przeglądarki i czy `Dataset.Create` zakończyło się sukcesem. |
-| **M values ignored** | `MScale` ustawiony na 0 lub zbyt niski. | Ustaw rozsądną wartość `MScale` (np. `1e4`), aby przechowywać wartości miary. |
+|-------|----------------|-----|
+| **Exception: “X value … is out of valid range.”** | Współrzędne znajdują się poza siatką precyzji. | Dostosuj `XOrigin`, `YOrigin` lub `XYScale`, aby objąć Twoje dane, lub upewnij się, że dane wejściowe mieszczą się w określonym zakresie. |
+| **Features not appearing in GIS viewer** | Warstwa nie została zapisana lub użyto niewłaściwego układu odniesienia. | Sprawdź, czy `SpatialReferenceSystem.Wgs84` odpowiada układowi odniesienia przeglądarki oraz czy `Dataset.Create` zakończyło się sukcesem. |
+| **M values ignored** | `MScale` ustawiony na 0 lub zbyt niski. | Ustaw rozsądny `MScale` (np. `1e4`), aby przechowywać wartości miar. |
+
+## Wskazówki dotyczące rozwiązywania problemów
+- **Sprawdź dokładnie rozmiary siatki** przed wczytywaniem dużych partii danych; mała literówka w `XOrigin` może spowodować odrzucenie wielu wierszy.  
+- **Zaloguj komunikat wyjątku** (jak pokazano w bloku try‑catch) do pliku podczas przetwarzania automatycznych importów; ułatwia to wykrywanie wzorców w danych poza zakresem.  
+- **Używaj `EnsureValidCoordinatesRange = false` tylko dla zaufanych źródeł danych** – wyłączenie tej opcji pomija walidację i może prowadzić do uszkodzonych geometrii.
 
 ## Najczęściej zadawane pytania
 
-**P:** Czy mogę używać Aspose.GIS dla .NET z innymi formatami plików GIS?  
-**O:** Tak, Aspose.GIS obsługuje Shapefile, GeoJSON, KML i wiele innych formatów.
+**P: Czy mogę używać Aspose.GIS dla .NET z innymi formatami plików GIS?**  
+O: Tak, Aspose.GIS obsługuje Shapefile, GeoJSON, KML i wiele innych formatów.
 
-**P:** Czy Aspose.GIS dla .NET jest kompatybilny z .NET Core?  
-**O:** Zdecydowanie. Biblioteka działa z .NET Framework, .NET Core oraz .NET 5/6+.
+**P: Czy Aspose.GIS dla .NET jest kompatybilny z .NET Core?**  
+O: Absolutnie. Biblioteka działa z .NET Framework, .NET Core oraz .NET 5/6+.
 
-**P:** Czy mogę wykonywać operacje przestrzenne, takie jak buforowanie lub przecięcie?  
-**O:** Tak, API zawiera metody do buforowania, przecięcia i obliczania odległości.
+**P: Czy mogę wykonywać operacje przestrzenne, takie jak buforowanie lub przecięcie?**  
+O: Tak, API zawiera metody do buforowania, przecięcia i obliczania odległości.
 
-**P:** Czy Aspose.GIS zapewnia możliwości transformacji współrzędnych?  
-**O:** Tak, możesz przekształcać geometrie pomiędzy różnymi układami odniesienia przestrzennego przy użyciu wbudowanych narzędzi reprojekcji.
+**P: Czy Aspose.GIS zapewnia możliwości transformacji współrzędnych?**  
+O: Tak, możesz przekształcać geometrie między różnymi układami odniesienia przy użyciu wbudowanych narzędzi reprojekcji.
 
-**P:** Czy dostępna jest wersja próbna?  
-**O:** Tak, możesz pobrać darmową wersję próbną ze [strony internetowej](https://releases.aspose.com/gis/net/).
+**P: Czy dostępna jest wersja próbna?**  
+O: Tak, możesz pobrać darmową wersję próbną ze [strony internetowej](https://releases.aspose.com/gis/net/).
 
-**Ostatnia aktualizacja:** 2025-12-28  
-**Testowano z:** Aspose.GIS 24.11 dla .NET  
-**Autor:** Aspose  
+---
+
+**Last Updated:** 2026-04-24  
+**Tested With:** Aspose.GIS 24.11 for .NET  
+**Author:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
