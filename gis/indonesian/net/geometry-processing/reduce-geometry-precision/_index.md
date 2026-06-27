@@ -1,10 +1,14 @@
 ---
-date: 2025-12-21
-description: Pelajari cara membulatkan nilai Z dan mengurangi presisi geometri dengan
-  Aspose.GIS untuk .NET, meningkatkan kinerja GIS dan penggunaan memori.
-linktitle: Reduce Geometry Precision
+date: 2026-04-09
+description: Pelajari cara mengurangi presisi geometri dan membulatkan nilai Z menggunakan
+  Aspose.GIS untuk .NET, meningkatkan kinerja GIS dan menghemat memori.
+keywords:
+- how to reduce geometry
+- how to round z
+- geometry precision .NET
+linktitle: Kurangi Presisi Geometri
 second_title: Aspose.GIS .NET API
-title: Cara Membulatkan Z dan Mengurangi Presisi Geometri di .NET
+title: Cara Mengurangi Presisi Geometri dan Membulatkan Z di .NET
 url: /id/net/geometry-processing/reduce-geometry-precision/
 weight: 15
 ---
@@ -13,20 +17,26 @@ weight: 15
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Cara Membulatkan Z dan Mengurangi Presisi Geometri di .NET
+# Cara Mengurangi Presisi Geometri dan Membulatkan Z di .NET
 
 ## Pendahuluan
-Dalam tutorial ini Anda akan menemukan **cara membulatkan Z** nilai dan mengurangi presisi geometri menggunakan Aspose.GIS untuk .NET. Mengurangi presisi geometri adalah teknik terbukti untuk **meningkatkan kinerja GIS** dan mengurangi konsumsi memori saat bekerja dengan dataset spasial yang besar. Kami akan membimbing Anda melalui setiap langkah dengan penjelasan yang jelas, sehingga Anda dapat langsung menerapkan teknik ini dalam proyek Anda.
+Jika Anda bekerja dengan dataset spasial yang besar, Anda mungkin telah memperhatikan bahwa setiap tempat desimal tambahan dalam data geometri Anda menumpuk – baik dalam ukuran file maupun waktu pemrosesan. Dalam tutorial ini Anda akan mempelajari **cara mengurangi presisi geometri** dan **cara membulatkan nilai Z** dengan Aspose.GIS untuk .NET. Pada akhir panduan Anda akan dapat memperkecil file geometri, mempercepat operasi spasial, dan menjaga jejak memori tetap rendah, semua dengan beberapa pemanggilan metode yang sederhana.
 
 ## Jawaban Cepat
-- **Apa arti “cara membulatkan Z”?** Ini merujuk pada pemangkasan jumlah tempat desimal dari koordinat Z dalam sebuah objek geometri.  
-- **Mengapa mengurangi presisi geometri?** Ini mengurangi jumlah data yang disimpan per vertex, yang mempercepat operasi spasial dan mengurangi penggunaan memori.  
+- **Apa arti “cara membulatkan Z”?** Itu memangkas jumlah tempat desimal dari koordinat Z dalam objek geometri.  
+- **Mengapa mengurangi presisi geometri?** Itu mengurangi jumlah data yang disimpan per vertex, yang mempercepat kueri spasial dan mengurangi penggunaan memori.  
 - **Perpustakaan mana yang menangani ini?** Aspose.GIS untuk .NET menyediakan metode bawaan `RoundZ` dan `RoundXY`.  
 - **Apakah saya memerlukan lisensi?** Versi percobaan gratis dapat digunakan untuk pengujian; lisensi komersial diperlukan untuk produksi.  
 - **Bisakah saya mengontrol jumlah tempat desimal?** Ya, Anda menentukan jumlah digit yang diinginkan dalam metode `Round*`.
 
+## Cara Mengurangi Presisi Geometri di .NET
+Mengurangi presisi geometri semudah memanggil `RoundXY` pada objek geometri apa pun. Metode ini menerima jumlah tempat desimal yang ingin Anda pertahankan untuk koordinat X dan Y. Operasi ini sangat berguna ketika akurasi sub‑meter yang tepat tidak diperlukan untuk analisis Anda.
+
+## Cara Membulatkan Nilai Z di .NET
+Ketika data Anda menyertakan komponen Z (elevasi), Anda dapat memanggil `RoundZ` untuk membatasi presisinya. Ini adalah langkah **cara membulatkan Z** yang sering menghasilkan pengurangan ukuran file terbesar untuk dataset 3‑D, karena nilai elevasi cenderung memiliki banyak tempat desimal.
+
 ## Apa itu “cara membulatkan Z” dalam GIS?
-Membulatkan koordinat Z memangkas presisi desimal yang berlebih, mengubah nilai seperti 3.345 menjadi 3.3 (atau presisi apa pun yang Anda tentukan). Operasi sederhana ini dapat secara dramatis mengurangi ukuran file dan mempercepat perhitungan, terutama ketika dimensi ketiga tidak kritis untuk analisis Anda.
+Membulatkan koordinat Z memangkas kelebihan presisi desimal, mengubah nilai seperti 3.345 menjadi 3.3 (atau presisi apa pun yang Anda tentukan). Operasi sederhana ini dapat secara dramatis memperkecil ukuran file dan mempercepat perhitungan, terutama ketika dimensi ketiga tidak kritis untuk analisis Anda.
 
 ## Mengapa mengurangi presisi geometri dengan Aspose.GIS?
 - **Peningkatan kinerja:** Lebih sedikit data yang diproses berarti kueri spasial dan transformasi yang lebih cepat.  
@@ -50,43 +60,43 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## Langkah 1: Membuat Titik
-Mari kita mulai dengan membuat sebuah titik dengan koordinat tertentu.
+## Langkah 1: Buat Titik
+Mari kita mulai dengan membuat titik dengan koordinat tertentu.
 
 ```csharp
 Point point = new Point(1.344, 2.345, 3.345, 4.345);
 ```
 
-## Langkah 2: Mengurangi Presisi XY
-Sekarang, kita akan mengurangi presisi koordinat X dan Y dari titik tersebut menjadi dua tempat desimal.
+## Langkah 2: Kurangi Presisi XY
+Sekarang, kita akan mengurangi presisi koordinat X dan Y dari titik menjadi dua tempat desimal.
 
 ```csharp
 point.RoundXY(digits: 2);
 ```
 
-## Langkah 3: Menampilkan Koordinat
-Tampilkan koordinat yang diperbarui dari titik tersebut.
+## Langkah 3: Tampilkan Koordinat
+Tampilkan koordinat yang diperbarui dari titik.
 
 ```csharp
 Console.WriteLine("{0}, {1}, {2}, {3}", point.X, point.Y, point.Z, point.M);
 ```
 
-## Langkah 4: Mengurangi Presisi Z – **cara membulatkan z**
-Selanjutnya, mari kita kurangi presisi koordinat Z dari titik tersebut menjadi satu tempat desimal. Ini adalah inti dari **cara membulatkan z**.
+## Langkah 4: Kurangi Presisi Z – **cara membulatkan z**
+Selanjutnya, mari kita kurangi presisi koordinat Z dari titik menjadi satu tempat desimal. Ini adalah inti dari **cara membulatkan z**.
 
 ```csharp
 point.RoundZ(digits: 1);
 ```
 
-## Langkah 5: Menampilkan Koordinat yang Diperbarui
+## Langkah 5: Tampilkan Koordinat yang Diperbarui
 Tampilkan koordinat yang diperbarui dari titik setelah mengurangi presisi Z.
 
 ```csharp
 Console.WriteLine("{0}, {1}, {2}, {3}", point.X, point.Y, point.Z, point.M);
 ```
 
-## Langkah 6: Membuat LineString
-Sekarang, mari kita buat sebuah `LineString` dan tambahkan titik-titik ke dalamnya.
+## Langkah 6: Buat LineString
+Sekarang, mari kita buat sebuah `LineString` dan menambahkan titik-titik ke dalamnya.
 
 ```csharp
 LineString line = new LineString();
@@ -94,14 +104,14 @@ line.AddPoint(1.2, 2.3);
 line.AddPoint(2.4, 3.1);
 ```
 
-## Langkah 7: Mengurangi Presisi XY dari LineString
+## Langkah 7: Kurangi Presisi XY dari LineString
 Kurangi presisi koordinat X dan Y dari `LineString` menjadi nol tempat desimal.
 
 ```csharp
 line.RoundXY(digits: 0);
 ```
 
-## Langkah 8: Menampilkan Koordinat yang Diperbarui dari LineString
+## Langkah 8: Tampilkan Koordinat yang Diperbarui dari LineString
 Tampilkan koordinat yang diperbarui dari `LineString` setelah mengurangi presisi XY.
 
 ```csharp
@@ -120,7 +130,7 @@ Console.WriteLine("{0}, {1}", line[1].X, line[1].Y);
 A: Mengurangi presisi geometri membantu mengoptimalkan penggunaan memori dan meningkatkan kinerja, terutama saat menangani dataset besar dalam aplikasi GIS.
 
 **Q: Apakah mengurangi presisi geometri memengaruhi akurasi?**  
-A: Meskipun sedikit akurasi hilang, kompromi tersebut sering menghasilkan keseimbangan yang baik antara presisi dan kinerja untuk sebagian besar analisis spasial.
+A: Meskipun sedikit akurasi hilang, kompromi ini sering menghasilkan keseimbangan yang baik antara presisi dan kinerja untuk kebanyakan analisis spasial.
 
 **Q: Bisakah saya menyesuaikan tingkat pengurangan presisi di Aspose.GIS untuk .NET?**  
 A: Ya, Anda dapat menentukan jumlah tempat desimal yang diinginkan untuk koordinat XY dan Z menggunakan metode `RoundXY` dan `RoundZ`.
@@ -133,8 +143,8 @@ A: Anda dapat mendapatkan dukungan dengan mengunjungi [forum Aspose.GIS](https:/
 
 ---
 
-**Terakhir Diperbarui:** 2025-12-21  
-**Diuji Dengan:** Aspose.GIS 24.11 for .NET  
+**Terakhir Diperbarui:** 2026-04-09  
+**Diuji Dengan:** Aspose.GIS 24.11 untuk .NET  
 **Penulis:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
