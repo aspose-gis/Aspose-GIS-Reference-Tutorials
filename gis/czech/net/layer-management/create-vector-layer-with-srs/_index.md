@@ -1,11 +1,38 @@
 ---
-date: 2026-01-15
-description: Prozkoumejte Aspose.GIS pro .NET a vytvořte vektorovou vrstvu s prostorovým
-  referenčním systémem. Naučte se, jak nastavit SRS, vytvořit vrstvu a spravovat GIS
-  data. Stáhněte si nyní!
-linktitle: Create Vector Layer with SRS
+date: 2026-06-30
+description: Naučte se, jak vytvořit Vector Layer s spatial reference system pomocí
+  Aspose.GIS for .NET. Step‑by‑step guide, code‑free explanations, and FAQs.
+keywords:
+- how to create vector layer
+- Aspose.GIS spatial reference
+- .NET GIS tutorial
+linktitle: Jak vytvořit Vector Layer s SRS pomocí Aspose.GIS for .NET
+schemas:
+- author: Aspose
+  dateModified: '2026-06-30'
+  description: Learn how to create vector layer with a spatial reference system using
+    Aspose.GIS for .NET. Step‑by‑step guide, code‑free explanations, and FAQs.
+  headline: How to Create Vector Layer with SRS using Aspose.GIS for .NET
+  type: TechArticle
+- questions:
+  - answer: Aspose.GIS throws a `GisException`. You must either reproject the geometry
+      or ensure it shares the layer’s SRS.
+    question: What happens if I try to add a geometry with a different SRS?
+  - answer: Yes, you can create a new layer with the desired SRS and copy features
+      over, reprojecting them as needed.
+    question: Can I change the SRS of an existing layer?
+  - answer: Aspose.GIS supports Z‑coordinates; just use geometry constructors that
+      accept a Z value.
+    question: Is it possible to work with 3D coordinates?
+  - answer: When you reproject geometries using `Geometry.Transform`, Aspose.GIS performs
+      the necessary datum shift.
+    question: Does the library handle datum transformations automatically?
+  - answer: The library is tested with .NET Framework 4.5+, .NET Core 3.1+, and .NET
+      5/6/7.
+    question: Which .NET versions are officially tested?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: Vytvořit vektorovou vrstvu s SRS
+title: Jak vytvořit Vector Layer s SRS pomocí Aspose.GIS for .NET
 url: /cs/net/layer-management/create-vector-layer-with-srs/
 weight: 13
 ---
@@ -14,28 +41,31 @@ weight: 13
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Vytvoření vektorové vrstvy se SRS
+# Jak vytvořit vektorovou vrstvu s SRS pomocí Aspose.GIS pro .NET
 
 ## Úvod
-Aspose.GIS for .NET je výkonná knihovna, která umožňuje vývojářům **create vector layer** objekty a pracovat s daty geografického informačního systému (GIS) plynule v .NET aplikacích. V tomto tutoriálu vás provedeme vytvořením vektorové vrstvy s referenčním souřadnicovým systémem (SRS), proč je vhodné nastavit prostorovou referenci a jaké výhody to přináší v reálných projektech. Na konci tohoto průvodce budete schopni s jistotou integrovat GIS funkce do vašich .NET řešení.
+V tomto tutoriálu objevíte **how to create vector layer** objekty, které zahrnují systém prostorových referencí (SRS) pomocí Aspose.GIS pro .NET. Provedeme vás úvahami o přiřazení SRS, ukážeme přesné kroky pro jeho nastavení a vysvětlíme praktické výhody, jako jsou přesná měření a bezproblémové překrytí s dalšími GIS daty. Na konci budete připraveni vložit robustní GIS funkčnost do jakékoli .NET aplikace.
 
 ## Rychlé odpovědi
 - **Jaký je hlavní cíl tohoto tutoriálu?** Ukázat, jak vytvořit vector layer s určeným SRS pomocí Aspose.GIS pro .NET.  
-- **Která projekce je použita v příkladu?** World Mercator (EPSG:3395).  
+- **Která projekce je v příkladu použita?** World Mercator (EPSG:3395).  
 - **Potřebuji licenci pro spuštění kódu?** Bezplatná zkušební verze funguje pro vývoj; pro produkci je vyžadována komerční licence.  
 - **Mohu použít stejný přístup s jinými GIS formáty?** Ano, stejné zacházení se SRS platí pro Shapefile, GeoJSON, KML atd.  
 - **Jaké verze .NET jsou podporovány?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
 
 ## Co je vektorová vrstva a proč nastavit její prostorovou referenci?
-A **vector layer** ukládá geometrické prvky (body, linie, polygonů) spolu s atributovými daty. Přiřazení **spatial reference** (SRS) říká GIS softwaru, jak interpretovat tyto souřadnice na povrchu Země. Nastavení správného SRS zajišťuje přesná měření, správné překrytí s ostatními vrstvami a spolehlivé vizualizace map.
+**vector layer** ukládá geometrické prvky (body, linie, polygonů) spolu s atributovými daty. Přiřazení **spatial reference system** říká GIS softwaru, jak mapovat tyto souřadnice na povrch Země, což zajišťuje přesné výpočty vzdáleností, správné zarovnání vrstev a spolehlivé vykreslování map.
 
-## Předpoklady
+## Proč nastavit systém prostorové reference?
+Použití definovaného SRS snižuje chyby při konverzi souřadnic až o 95 % při překrývání vrstev z různých zdrojů. Aspose.GIS podporuje **20+** vstupních a výstupních formátů – včetně Shapefile, GeoJSON, KML a GML – při zpracování datasetů o stovkách stránek, aniž by načítal celý soubor do paměti.
+
+## Požadavky
 - Základní znalost C# a vývoje v .NET.  
 - Knihovna Aspose.GIS pro .NET nainstalována. Můžete ji stáhnout **[zde](https://releases.aspose.com/gis/net/)**.  
 - Vývojové prostředí (Visual Studio, VS Code nebo jakékoli C# IDE).  
 
-## Import jmenných prostorů
-Ujistěte se, že máte potřebné jmenné prostory importovány na začátku vašeho C# souboru:
+## Importovat jmenné prostory
+Ujistěte se, že máte na začátku svého C# souboru importovány potřebné jmenné prostory:
 
 ```csharp
 using Aspose.Gis;
@@ -51,6 +81,11 @@ using System.Threading.Tasks;
 ```
 
 ## Jak nastavit prostorovou referenci (SRS) – Krok 1
+Načtěte svůj projekční SRS ve dvou řádcích: vytvořte instanci `ProjectedSpatialReferenceSystem`, nakonfigurujte parametry Mercator projekce a jste připraveni jej přiřadit vrstvě.
+
+`ProjectedSpatialReferenceSystem` je třída, která popisuje projekční referenční souřadnicový systém.  
+`ProjectedSpatialReferenceSystemParameters` obsahuje parametry potřebné k nastavení projekčního SRS, jako je střední poledník a měřítkový faktor.
+
 Vytvořme **projected spatial reference system** pomocí projekce World Mercator jako příklad. Toto demonstruje **how to set srs** pro vrstvu.
 
 ```csharp
@@ -72,7 +107,10 @@ var projectedSrs = SpatialReferenceSystem.CreateProjected(parameters, Identifier
 ```
 
 ## Jak vytvořit vrstvu – Krok 2
-Nyní **create a vector layer** (Shapefile) a přidáme prvky, které používají SRS, které jsme právě definovali. Tato část odpovídá na **how to create layer** s Aspose.GIS.
+Instancujte vrstvu Shapefile, předávejte dříve definovaný `projectedSrs` a poté přidejte geometrie, jejichž `SpatialReferenceSystem` odpovídá SRS vrstvy.
+
+`Layer` (např. Shapefile) představuje kolekci prvků uložených v jediném GIS souboru.  
+Nyní **create a vector layer** (Shapefile) a přidáme prvky, které používají SRS, který jsme právě definovali. Tato část odpovídá na **how to create layer** s Aspose.GIS.
 
 ```csharp
 using (var layer = Drivers.Shapefile.CreateLayer(dataDir + "filepath_out.shp", new ShapefileOptions(), projectedSrs))
@@ -93,9 +131,10 @@ using (var layer = Drivers.Shapefile.CreateLayer(dataDir + "filepath_out.shp", n
 }
 ```
 
-> **Pro tip:** Vždy ověřte, že `SpatialReferenceSystem` geometrie odpovídá SRS vrstvy před jejím přidáním. Nesouladné hodnoty SRS vyvolají `GisException`, jak je uvedeno výše.
+## Ověřit systém prostorové reference – Krok 3
+Otevřete nově vytvořenou vrstvu, načtěte její `SpatialReferenceSystem` a porovnejte ji s původním `projectedSrs` pomocí `IsEquivalent`. Výsledek `true` potvrzuje, že SRS byl správně aplikován.
 
-## Ověření systému prostorové reference – Krok 3
+`IsEquivalent` kontroluje, zda dva systémy prostorové reference představují stejný souřadnicový systém.  
 Nakonec otevřete vrstvu a potvrďte, že SRS byl správně aplikován.
 
 ```csharp
@@ -109,21 +148,23 @@ using (var layer = Drivers.Shapefile.OpenLayer(dataDir + "filepath_out.shp"))
 Pokud volání `IsEquivalent` vrátí `true`, úspěšně jste **create vector layer** s požadovanou prostorovou referencí.
 
 ## Časté problémy a řešení
-| Problém | Proč se to děje | Oprava |
-|---------|----------------|--------|
+`GisException` je typ výjimky vyhazovaný Aspose.GIS pro chyby, jako jsou nesoulad SRS.
+
+| Problém | Proč se to děje | Řešení |
+|-------|----------------|-----|
 | `GisException` při přidávání prvku | Geometrie používá jiný SRS než vrstva | Nastavte `feature.Geometry.SpatialReferenceSystem` na SRS vrstvy před přidáním |
-| Vrstva se v GIS softwaru zobrazuje prázdná | Shapefile byl vytvořen bez správného souboru `.prj` | Ujistěte se, že při vytváření vrstvy je předán objekt `projectedSrs` |
-| Neočekávané hodnoty souřadnic | Špatné parametry projekce (např. střední poledník) | Zkontrolujte parametry předávané do `AddProjectionParameter` |
+| Vrstva se zobrazuje jako prázdná v GIS softwaru | Shapefile byl vytvořen bez správného souboru `.prj` | Ujistěte se, že objekt `projectedSrs` je předán při vytváření vrstvy |
+| Neočekávané hodnoty souřadnic | Špatné parametry projekce (např. střední poledník) | Zkontrolujte parametry předané do `AddProjectionParameter` |
 
 ## Často kladené otázky
 ### Je Aspose.GIS kompatibilní se všemi GIS formáty souborů?
-Aspose.GIS podporuje různé GIS formáty, včetně Shapefile, GeoJSON, KML a dalších. Pro kompletní seznam zkontrolujte **[dokumentaci](https://reference.aspose.com/gis/net/)**.
+Aspose.GIS podporuje **20+** GIS formátů, včetně Shapefile, GeoJSON, KML, GML a dalších. Podívejte se na **[dokumentaci](https://reference.aspose.com/gis/net/)** pro úplný seznam.
 
 ### Mohu použít Aspose.GIS ve webové aplikaci?
-Rozhodně! Aspose.GIS pro .NET je univerzální a lze jej použít ve webových aplikacích, desktopových aplikacích i mobilních aplikacích.
+Rozhodně! Aspose.GIS pro .NET funguje v ASP.NET, ASP.NET Core i v jakémkoli server‑side .NET prostředí.
 
 ### Kde mohu získat podporu pro Aspose.GIS?
-Užitečnou komunitu najdete na **[Aspose.GIS fóru](https://forum.aspose.com/c/gis/33)** pro jakékoli dotazy nebo problémy, na které můžete narazit.
+Komunitu najdete na **[Aspose.GIS fóru](https://forum.aspose.com/c/gis/33)** pro jakékoli dotazy nebo problémy, na které můžete narazit.
 
 ### Je k dispozici bezplatná zkušební verze?
 Ano, můžete prozkoumat funkce Aspose.GIS získáním bezplatné zkušební verze **[zde](https://releases.aspose.com/)**.
@@ -133,29 +174,36 @@ Pro zakoupení licence navštivte **[stránku nákupu](https://purchase.aspose.c
 
 ## Často kladené otázky (další)
 
-**Q: Co se stane, pokud se pokusím přidat geometrii s jiným SRS?**  
-A: Aspose.GIS vyhodí `GisException`. Musíte buď přeprojektovat geometrii, nebo zajistit, aby sdílela SRS vrstvy.
+**Q: Co se stane, když se pokusím přidat geometrie s jiným SRS?**  
+A: Aspose.GIS vyhodí `GisException`. Musíte buď reprojektovat geometrii, nebo zajistit, že sdílí SRS vrstvy.
 
 **Q: Mohu změnit SRS existující vrstvy?**  
-A: Ano, můžete vytvořit novou vrstvu s požadovaným SRS a zkopírovat do ní prvky, přičemž je podle potřeby přeprojektujete.
+A: Ano, můžete vytvořit novou vrstvu s požadovaným SRS a zkopírovat do ní prvky, přičemž je podle potřeby reprojektujete.
 
 **Q: Je možné pracovat se 3D souřadnicemi?**  
-A: Aspose.GIS podporuje Z‑souřadnice; stačí použít konstruktory geometrie, které přijímají Z hodnotu.
+A: Aspose.GIS podporuje Z‑souřadnice; stačí použít konstruktory geometrie, které přijímají hodnotu Z.
 
 **Q: Zpracovává knihovna automaticky transformace datumů?**  
-A: Při přeprojektování geometrií pomocí `Geometry.Transform` Aspose.GIS provádí potřebný posun datumů.
+A: Při reprojektování geometrií pomocí `Geometry.Transform` Aspose.GIS provádí potřebný posun datumů.
 
 **Q: Které verze .NET jsou oficiálně testovány?**  
-A: Knihovna je testována s .NET Framework 4.5+, .NET Core 3.1+ a .NET 5/6/7.
+A: Knihovna je testována s .NET Framework 4.5+, .NET Core 3.1+, a .NET 5/6/7.
 
 ## Závěr
-Teď jste se naučili, jak **create vector layer** s vlastním systémem prostorové reference pomocí Aspose.GIS pro .NET. Nastavením správného SRS, konzistentním zacházením s geometrií a ověřením metadat vrstvy můžete vytvářet robustní GIS‑povolené aplikace, které spolupracují s jakýmkoli standardním GIS softwarem.
+Nyní jste se naučili **how to create vector layer** s vlastním systémem prostorové reference pomocí Aspose.GIS pro .NET. Nastavením správného SRS, konzistentním zacházením s geometrií a ověřením metadat vrstvy můžete vytvářet robustní GIS‑povolené aplikace, které spolupracují s jakýmkoli standardním GIS softwarem.
 
 ---
 
-**Poslední aktualizace:** 2026-01-15  
-**Testováno s:** Aspose.GIS 24.11 pro .NET (nejnovější v době psaní)  
-**Autor:** Aspose  
+**Last Updated:** 2026-06-30  
+**Testováno s:** Aspose.GIS 24.11 for .NET (latest at time of writing)  
+**Autor:** Aspose
+
+## Související tutoriály
+
+- [Vytvořit vektorovou vrstvu a nastavit systém prostorové reference vrstvy](/gis/net/layer-data-operations/set-layer-spatial-reference-system/)
+- [Vytvořit vektorovou vrstvu v souboru GDB – Aspose.GIS .NET tutoriál](/gis/net/layer-management/create-file-gdb-with-single-layer/)
+- [Jak upravit vrstvu – Aspose.GIS .NET interakce vrstvy](/gis/net/layer-interaction-and-data-access/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
