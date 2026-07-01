@@ -1,9 +1,13 @@
 ---
-date: 2025-12-20
+date: 2026-04-03
 description: Leer hoe u een polygoon met gatgeometrie maakt met Aspose.GIS voor .NET.
-  Deze gids laat u zien hoe u een gat in een polygoon maakt en werkt met georuimtelijke
+  Deze gids laat u zien hoe u een gat in een polygoon maakt en werkt met geospatiale
   gegevens.
-linktitle: Create Polygon with Hole Geometry
+keywords:
+- create polygon with hole
+- add hole to polygon
+- Aspose.GIS polygon geometry
+linktitle: Polygon met gatgeometrie maken
 second_title: Aspose.GIS .NET API
 title: Polygon met gatgeometrie maken met Aspose.GIS
 url: /nl/net/geometry-creation/create-polygon-with-hole-geometry/
@@ -16,31 +20,39 @@ weight: 13
 
 # Polygon met gat geometrie maken met Aspose.GIS
 
-## Introductie
-In deze tutorial **maak je een polygon met gat** geometrie met Aspose.GIS voor .NET. Of je nu een kaartapplicatie bouwt, ruimtelijke analyses uitvoert of data voorbereidt voor GIS‑services, weten hoe je een gat in een polygon kunt plaatsen is essentieel. We lopen het volledige proces stap‑voor‑stap door, van het opzetten van de omgeving tot het genereren van het uiteindelijke polygon‑object.
+## Inleiding
+In deze tutorial **maak je een polygon met gat** geometrie met Aspose.GIS voor .NET. Of je nu een kaartapplicatie bouwt, ruimtelijke analyse uitvoert, of gegevens voorbereidt voor GIS‑services, weten hoe je een gat in een polygon moet insluiten is essentieel. We lopen het volledige proces stap‑voor‑stap door, van het opzetten van de omgeving tot het genereren van het uiteindelijke polygon‑object.
 
 ## Snelle antwoorden
-- **Wat betekent “polygon met gat maken”?** Het betekent het bouwen van een polygon die één of meer binnenste ringen (gaten) bevat die van het gebied zijn uitgesloten.  
-- **Welke bibliotheek regelt dit?** Aspose.GIS voor .NET biedt volledige ondersteuning voor buitenste en binnenste ringen.  
+- **Wat betekent “polygon met gat maken”?** Het betekent het bouwen van een polygon die één of meer interne ringen (gaten) bevat die van het gebied worden uitgesloten.  
+- **Welke bibliotheek behandelt dit?** Aspose.GIS voor .NET biedt volledige ondersteuning voor externe en interne ringen.  
 - **Heb ik een licentie nodig?** Een gratis proefversie werkt voor ontwikkeling; een commerciële licentie is vereist voor productie.  
 - **Welke .NET‑versies worden ondersteund?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.  
 - **Hoe lang duurt het?** Meestal minder dan 10 minuten om te implementeren en te testen.
 
+## Hoe een gat toe te voegen aan een polygon met Aspose.GIS
+Een gat toevoegen is simpelweg een kwestie van een **interne ring** definiëren en deze aan de polygon koppelen. De bibliotheek zorgt voor de oriëntatie en geldigheid, zodat je je kunt concentreren op de coördinaten die de lege ruimte vertegenwoordigen.
+
 ## Wat is “polygon met gat maken”?
-Een polygon met een gat maken houdt in dat je een **externe ring** definieert die de buitenste grens vormt en één of meer **interne ringen** die lege ruimtes uitsnijden. De interne ringen worden vaak *gaten* genoemd omdat ze gebieden vertegenwoordigen die niet tot het oppervlak van de polygon behoren.
+Het maken van een polygon met een gat houdt in dat je een **externe ring** definieert die de buitenste grens schetst en één of meer **interne ringen** die lege ruimtes uitsnijden. De interne ringen worden vaak *gaten* genoemd omdat ze gebieden vertegenwoordigen die niet tot het oppervlak van de polygon behoren.
 
 ## Waarom een gat in een polygon maken met Aspose.GIS?
-- **Nauwkeurige ruimtelijke modellering:** Werkelijke kenmerken zoals meren binnen percelen of binnenplaatsen binnen gebouwen vereisen gaten.  
-- **Interoperabiliteit:** Formaten zoals Shapefile, GeoJSON en GML ondersteunen van nature interne ringen; Aspose.GIS behoudt ze.  
+- **Nauwkeurige ruimtelijke modellering:** Werkelijke kenmerken zoals meren binnen percelen of binnenplaatsen in gebouwen vereisen gaten.  
+- **Interoperabiliteit:** Formaten zoals Shapefile, GeoJSON en GML ondersteunen interne ringen natively; Aspose.GIS behoudt ze.  
 - **Prestaties:** De bibliotheek beheert de geldigheid van geometrieën, zodat je geen eigen validatiecode hoeft te schrijven.
 
-## Vereisten
+## Praktijkvoorbeelden voor polygonen met gaten
+1. **Perceel met een intern meer** – het meer wordt gemodelleerd als een gat zodat het niet wordt meegeteld in de oppervlakte van het perceel.  
+2. **Gebouwcontouren met binnenplaatsen** – de binnenplaats wordt uitgesloten van de gebouwcontour.  
+3. **Beschermde zones binnen een groter natuurgebied** – je kunt beperkte secties uitsluiten zonder aparte lagen te maken.
+
+## Voorvereisten
 Voordat we beginnen, zorg dat je de volgende zaken hebt:
-1. Aspose.GIS for .NET Library: Je kunt deze downloaden van [here](https://releases.aspose.com/gis/net/).  
-2. Ontwikkelomgeving: Zorg dat je een ontwikkelomgeving hebt opgezet met Visual Studio of een andere .NET‑IDE geïnstalleerd.
+1. Aspose.GIS for .NET Library: Je kunt het downloaden van [here](https://releases.aspose.com/gis/net/).  
+2. Development Environment: Zorg dat je een ontwikkelomgeving hebt opgezet met Visual Studio of een andere .NET‑IDE geïnstalleerd.
 
 ## Namespaces importeren
-Allereerst moet je de benodigde namespaces importeren om met de functionaliteiten van Aspose.GIS te werken. Zo doe je dat:
+Eerst moet je de benodigde namespaces importeren om met de functionaliteiten van Aspose.GIS te werken. Zo doe je dat:
 
 ```csharp
 using Aspose.Gis.Geometries;
@@ -53,7 +65,7 @@ using System.Threading.Tasks;
 
 Laten we nu verder gaan met het maken van een polygon met een gat geometrie met Aspose.GIS voor .NET.
 
-## Stap 1: Polygon‑object maken
+## Stap 1: Polygon-object maken
 We beginnen met het instantieren van een leeg `Polygon`‑object dat later zowel de externe als de interne ringen zal bevatten.
 
 ```csharp
@@ -72,8 +84,8 @@ ring.AddPoint(49.98, 36.17);
 ring.AddPoint(50.02, 36.22);
 ```
 
-## Stap 3: Interne ring definiëren (gat)
-Vervolgens maken we een interne ring—dit is het **gat** dat van het oppervlak van de polygon wordt uitgesloten. Punten worden doorgaans in tegen‑klokrichting toegevoegd, maar Aspose.GIS handelt de oriëntatie automatisch af.
+## Stap 3: Interne ring (gat) definiëren
+Vervolgens maken we een interne ring—dit is het **gat** dat wordt uitgesloten van de oppervlakte van de polygon. Punten worden doorgaans toegevoegd in een tegen‑klokrichting, maar Aspose.GIS handelt de oriëntatie automatisch af.
 
 ```csharp
 LinearRing hole = new LinearRing();
@@ -92,22 +104,24 @@ polygon.ExteriorRing = ring;
 polygon.AddInteriorRing(hole);
 ```
 
+## Tips en beste praktijken
+- **Oriëntatie is belangrijk voor leesbaarheid** – hoewel Aspose.GIS de oriëntatie automatisch corrigeert, maakt het behouden van externe ringen met de klokrichting en interne ringen tegen de klokrichting de geometrie makkelijker te inspecteren in GIS‑viewers.  
+- **Sluit elke ring** – herhaal altijd het eerste coördinaat als het laatste punt; dit garandeert een geldige gesloten vorm.  
+- **Valideer na creatie** – je kunt `polygon.IsValid` aanroepen om te zorgen dat de geometrie voldoet aan OGC‑normen voordat je deze opslaat.
+
 ## Veelvoorkomende problemen en oplossingen
 | Probleem | Reden | Oplossing |
 |----------|-------|-----------|
-| Gat wordt niet weergegeven in GIS‑viewer | Oriëntatie van de interne ring omgekeerd | Zorg dat punten in de tegenovergestelde richting van de externe ring worden toegevoegd (tegen‑klok). |
-| Polygon‑ongeldigheidsfout | Ringen zijn niet gesloten (eerste ≠ laatste punt) | Herhaal het eerste punt als laatste punt in elke ring (zoals hierboven getoond). |
-| Onverwacht lege geometrie | Vergeet `ExteriorRing` toe te wijzen vóór het toevoegen van interne ringen | Stel eerst `polygon.ExteriorRing` in, daarna `AddInteriorRing` aanroepen. |
-
-## Conclusie
-Gefeliciteerd! Je hebt met succes geleerd hoe je **polygon met gat** geometrie maakt met Aspose.GIS voor .NET. Deze techniek is fundamenteel voor veel geospatiale scenario's waarin je complexe vormen met interne leegtes moet weergeven.
+| Gat wordt niet weergegeven in GIS‑viewer | Interne ring‑oriëntatie omgekeerd | Zorg dat punten in de tegenovergestelde richting van de externe ring worden toegevoegd (tegen‑klokrichting). |
+| Polygon‑ongeldige fout | Ringen niet gesloten (eerste ≠ laatste punt) | Herhaal het eerste punt als laatste punt in elke ring (zoals hierboven getoond). |
+| Onverwachte lege geometrie | Vergeten `ExteriorRing` toe te wijzen vóór het toevoegen van interne ringen | Stel eerst `polygon.ExteriorRing` in, roep daarna `AddInteriorRing` aan. |
 
 ## Veelgestelde vragen
 ### 1. Wat is Aspose.GIS?
-Aspose.GIS is een .NET‑bibliotheek die ontwikkelaars in staat stelt om met geospatiale data te werken, waardoor ze verschillende geospatiale bestandsformaten kunnen maken, lezen en manipuleren.
+Aspose.GIS is een .NET‑bibliotheek die ontwikkelaars in staat stelt om met geografische gegevens te werken, zodat ze verschillende geospatiale bestandsformaten kunnen creëren, lezen en manipuleren.
 
 ### 2. Kan ik Aspose.GIS gebruiken voor commerciële projecten?
-Ja, je kunt Aspose.GIS zowel voor persoonlijke als commerciële projecten gebruiken door een licentie aan te schaffen. Bezoek [here](https://purchase.aspose.com/buy) voor meer details.
+Ja, je kunt Aspose.GIS gebruiken voor zowel persoonlijke als commerciële projecten door een licentie aan te schaffen. Bezoek [here](https://purchase.aspose.com/buy) voor meer details.
 
 ### 3. Is er een gratis proefversie beschikbaar voor Aspose.GIS?
 Ja, je kunt een gratis proefversie van Aspose.GIS verkrijgen via [here](https://releases.aspose.com/).
@@ -120,7 +134,7 @@ Je kunt een tijdelijke licentie voor Aspose.GIS verkrijgen via [here](https://pu
 
 ---
 
-**Last Updated:** 2025-12-20  
+**Last Updated:** 2026-04-03  
 **Tested With:** Aspose.GIS 24.11 for .NET  
 **Author:** Aspose  
 
