@@ -1,10 +1,62 @@
 ---
-date: 2026-01-13
-description: تعلم كيفية تحويل ملف shapefile إلى geojson باستخدام Aspose.GIS لـ .NET.
-  يغطي الدليل أيضًا نسخ السمات بين الطبقات وتوليد ملف geojson باستخدام C#.
-linktitle: Extract Features to GeoJSON
+date: 2026-07-05
+description: تعلم كيفية تحويل shapefile إلى geojson باستخدام Aspose.GIS لـ .NET. يغطي
+  الدليل أيضًا نسخ السمات بين الطبقات وتوليد ملف geojson باستخدام c#.
+keywords:
+- convert shapefile to geojson
+- export shapefile as geojson
+- aspose gis conversion
+- read shapefile c#
+- write geojson c#
+linktitle: استخراج الميزات إلى GeoJSON
+schemas:
+- author: Aspose
+  dateModified: '2026-07-05'
+  description: Learn how to convert shapefile to geojson using Aspose.GIS for .NET.
+    The guide also covers copy attributes between layers and c# generate geojson file.
+  headline: Convert Shapefile to GeoJSON with Aspose.GIS for .NET
+  type: TechArticle
+- description: Learn how to convert shapefile to geojson using Aspose.GIS for .NET.
+    The guide also covers copy attributes between layers and c# generate geojson file.
+  name: Convert Shapefile to GeoJSON with Aspose.GIS for .NET
+  steps:
+  - name: Open Input Shapefile
+    text: The `VectorLayer.Open` method reads a Shapefile and returns an enumerable
+      collection of `Feature` objects that you can iterate over.
+  - name: Create Output GeoJSON
+    text: '`VectorLayer.Create` with the `Drivers.GeoJson` driver creates an empty
+      GeoJSON file ready to receive features.'
+  - name: Copy Attributes Between Layers
+    text: '`CopyAttributes` copies the attribute schema (field names and data types)
+      from the source Shapefile to the new GeoJSON layer in a single call.'
+  - name: Process Features
+    text: Iterate through each feature in the Shapefile so you can apply any custom
+      logic before writing it out.
+  - name: Filter Features by Date
+    text: In this example we skip records whose `dob` (date of birth) field is missing
+      or earlier than 1 Jan 1982. Adjust the filter to match your own data requirements.
+  - name: Construct a New Feature (C# Generate GeoJSON File)
+    text: A `Feature` represents a single spatial element containing geometry and
+      attribute data. Here we build a new `Feature` for the GeoJSON layer, copy the
+      geometry and attribute values, and add it to the output. This is the core of
+      *c# generate geojson file*. Congratulations! You’ve successfully **conver
+  type: HowTo
+- questions:
+  - answer: Visit the [Aspose.GIS documentation](https://reference.aspose.com/gis/net/)
+      for in‑depth information.
+    question: Where can I find more documentation?
+  - answer: You can obtain a temporary license [here](https://purchase.aspose.com/temporary-license/).
+    question: How can I get a temporary license?
+  - answer: Join the [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) for community
+      support and discussions.
+    question: Where can I seek support?
+  - answer: Yes, you can find the free trial [here](https://releases.aspose.com/).
+    question: Is there a free trial available?
+  - answer: You can buy the product [here](https://purchase.aspose.com/buy).
+    question: Where can I purchase Aspose.GIS for .NET?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: كيفية تحويل ملف Shapefile إلى GeoJSON باستخدام Aspose.GIS لـ .NET
+title: تحويل Shapefile إلى GeoJSON باستخدام Aspose.GIS لـ .NET
 url: /ar/net/layer-management/extract-features-to-geojson/
 weight: 23
 ---
@@ -13,85 +65,77 @@ weight: 23
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# تحويل Shapefile إلى GeoJSON باستخدام Aspose.GIS لـ .NET
+# تحويل ملف Shapefile إلى GeoJSON باستخدام Aspose.GIS لـ .NET
 
-## المقدمة
-في هذا الدرس الشامل خطوة بخطوة ستتعلم **كيفية تحويل shapefile إلى geojson** باستخدام مكتبة Aspose.GIS القوية لـ .NET. سواءً كنت تبني خدمة ويب للخرائط، أو تُعد بيانات لتطبيق GIS على الهاتف المحمول، أو تحتاج ببساطة إلى تبادل البيانات بين الصيغ، يوضح لك هذا الدليل ما يجب فعله، ولماذا كل خطوة مهمة، وكيفية تجنب الأخطاء الشائعة.
+## مقدمة
+في هذا الدرس الشامل خطوة بخطوة ستتعلم **كيفية تحويل shapefile إلى geojson** باستخدام مكتبة Aspose.GIS القوية لـ .NET. سواءً كنت تبني خدمة ويب للخرائط، أو تُعد بيانات لتطبيق GIS على الجوال، أو تحتاج ببساطة إلى تبادل البيانات بين الصيغ، يوضح لك هذا الدليل ما يجب فعله، ولماذا كل خطوة مهمة، وكيفية تجنب الأخطاء الشائعة.
 
 ## إجابات سريعة
-- **ما الذي يغطيه هذا الدرس؟** تحويل Shapefile إلى ملف GeoJSON، نسخ السمات بين الطبقات، وإنشاء الناتج باستخدام C#.
+- **ما الذي يغطيه هذا الدرس؟** تحويل Shapefile إلى ملف GeoJSON، نسخ السمات بين الطبقات، وإنشاء المخرجات باستخدام C#.
 - **ما المكتبة المطلوبة؟** Aspose.GIS لـ .NET.
-- **هل أحتاج إلى ترخيص؟** يلزم ترخيص مؤقت أو كامل للإنتاج؛ نسخة تجريبية مجانية تكفي للتقييم.
-- **كم يستغرق التنفيذ؟** حوالي 10‑15 دقيقة للتحويل الأساسي.
-- **هل يمكن تشغيله على .NET Core/.NET 6؟** نعم – الكود يعمل على جميع إصدارات .NET المدعومة.
+- **هل أحتاج إلى ترخيص؟** يتطلب ترخيص مؤقت أو كامل للإنتاج؛ النسخة التجريبية المجانية تكفي للتقييم.
+- **كم من الوقت تستغرق العملية؟** حوالي 10‑15 دقيقة للتحويل الأساسي.
+- **هل يمكن تشغيله على .NET Core/.NET 6؟** نعم – الكود يعمل على جميع إصدارات .NET المدعومة.
+
+## ما هو تحويل Shapefile إلى GeoJSON؟
+تحويل Shapefile إلى GeoJSON يعني قراءة الكائنات المتجهة من صيغة ESRI Shapefile الكلاسيكية وكتابتها كوثيقة GeoJSON حديثة صديقة للويب. يتيح لك هذا التحويل إدخال بيانات GIS مباشرةً في مكتبات رسم الخرائط JavaScript مثل Leaflet أو Mapbox GL، ويُبسّط تبادل البيانات بين أدوات GIS المكتبية وواجهات برمجة التطبيقات الويب.
+
+## لماذا نستخدم Aspose.GIS لهذا التحويل؟
+تُجرد Aspose.GIS عملية التحليل الثنائي منخفض المستوى، وتدعم أكثر من 50 صيغة إدخال وإخراج، ويمكنها معالجة مجموعات بيانات مئات الصفحات دون تحميل الملف بالكامل في الذاكرة. كما توفر المكتبة واجهة برمجة تطبيقات كائنية نظيفة تعمل عبر .NET Framework و .NET Core و .NET 5/6، مما يتيح لك التركيز على منطق الأعمال بدلاً من تفاصيل الصيغ.
 
 ## المتطلبات المسبقة
 قبل أن نبدأ، تأكد من وجود ما يلي:
 
-- Aspose.GIS لـ .NET: تأكد من تثبيت المكتبة. إذا لم تكن مثبتة، يمكنك تنزيلها من صفحة [Aspose.GIS for .NET](https://releases.aspose.com/gis/net/).
-- بيانات Shapefile: احرص على وجود Shapefile جاهز كمدخل. إذا كنت تحتاج إلى بيانات نموذجية، يمكنك العثور عليها في [توثيق Aspose.GIS](https://reference.aspose.com/gis/net/).
-- بيئة .NET: قم بإعداد بيئة .NET لتشغيل الكود المرفق.
-- دليل المستندات: عرّف المسار إلى دليل المستندات في مقطع الكود.
+- Aspose.GIS لـ .NET: تأكد من تثبيت المكتبة. إذا لم تكن مثبتة، يمكنك تنزيلها من [صفحة Aspose.GIS لـ .NET](https://releases.aspose.com/gis/net/).
+- بيانات Shapefile: احرص على وجود ملف Shapefile جاهز للإدخال. إذا كنت تحتاج إلى بيانات نموذجية، يمكنك العثور عليها في [توثيق Aspose.GIS](https://reference.aspose.com/gis/net/).
+- بيئة .NET: قم بإعداد بيئة .NET لتشغيل الكود المقدم.
+- دليل المستندات: عرّف المسار إلى دليل المستندات الخاص بك في مقتطف الكود.
 
-الآن بعد أن أصبح كل شيء جاهزًا، لنبدأ بتحويل shapefile إلى geojson!
-
-## ما هو “convert shapefile to geojson”؟
-تحويل Shapefile إلى GeoJSON يعني قراءة المعالم المتجهة من صيغة ESRI Shapefile الكلاسيكية وكتابتها كوثيقة GeoJSON حديثة صديقة للويب. يُستخدم GeoJSON على نطاق واسع في مكتبات رسم الخرائط بجافاسكريبت (Leaflet, Mapbox GL) وواجهات برمجة التطبيقات، مما يجعل هذا التحويل مهمة متكررة في تطوير GIS.
-
-## لماذا نستخدم Aspose.GIS لهذا التحويل؟
-تُجرد Aspose.GIS التفاصيل منخفضة المستوى لصيغ الملفات، وتتيح لك نسخ جداول السمات بسهولة، وتوفر واجهة برمجة تطبيقات كائنية نظيفة تعمل عبر .NET Framework, .NET Core, و .NET 5/6. هذا يعني أنك تستطيع التركيز على منطق الأعمال بدلاً من تحليل الملفات الثنائية.
-
-## استيراد المساحات الاسمية
-أولاً، أضف المساحات الاسمية الضرورية في الكود الخاص بك:
-
-```csharp
-using Aspose.Gis;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-```
-
-هذه المساحات الاسمية أساسية للعمل مع وظائف Aspose.GIS.
+الآن بعد أن أصبحت كل الأمور جاهزة، لنبدأ بتحويل Shapefile إلى GeoJSON!
 
 ## كيفية تحويل Shapefile إلى GeoJSON
-فيما يلي سير العمل الكامل مقسّم إلى خطوات واضحة. كل خطوة تتضمن شرحًا مختصرًا يليه مقطع الكود الذي تحتاج إلى نسخه إلى مشروعك.
+حمّل Shapefile المصدر، أنشئ طبقة GeoJSON هدف، انسخ مخطط السمات، صَفِّ السجلات، واكتب النتائج—كل ذلك في بضع خطوات مختصرة. يتناسب سير العمل الكامل بسهولة داخل كتلة `using` واحدة، مما يضمن تحرير الموارد تلقائيًا.
 
-### الخطوة 1: فتح Shapefile الإدخالي
+### الخطوة 1: فتح ملف Shapefile الإدخالي
+طريقة `VectorLayer.Open` تقرأ Shapefile وتعيد مجموعة قابلة للتعداد من كائنات `Feature` التي يمكنك التكرار عليها.
+
 ```csharp
 using (VectorLayer inputLayer = VectorLayer.Open(dataDir + "InputShapeFile.shp", Drivers.Shapefile))
 {
     // Your code for processing the input shapefile goes here
 }
 ```
-افتح Shapefile الإدخالي باستخدام طريقة `VectorLayer.Open`. سيعطيك ذلك مجموعة قابلة للتعداد من كائنات `Feature`.
 
-### الخطوة 2: إنشاء GeoJSON الناتج
+### الخطوة 2: إنشاء ملف GeoJSON الناتج
+`VectorLayer.Create` مع السائق `Drivers.GeoJson` ينشئ ملف GeoJSON فارغ جاهز لاستقبال الكائنات.
+
 ```csharp
 using (VectorLayer outputLayer = VectorLayer.Create(dataDir + "ExtractFeaturesFromShapeFileToGeoJSON_out.json", Drivers.GeoJson))
 {
     // Your code for creating the output GeoJSON goes here
 }
 ```
-أنشئ الملف الناتج باستخدام طريقة `VectorLayer.Create`، مع تحديد السائق `Drivers.GeoJson`.
 
 ### الخطوة 3: نسخ السمات بين الطبقات
+`CopyAttributes` ينسخ مخطط السمات (أسماء الحقول وأنواع البيانات) من Shapefile المصدر إلى طبقة GeoJSON الجديدة في مكالمة واحدة.
+
 ```csharp
 outputLayer.CopyAttributes(inputLayer);
 ```
-هذه السطر الواحد ينسخ مخطط السمات (أسماء الحقول، الأنواع) من Shapefile المصدر إلى طبقة GeoJSON الجديدة — تمامًا ما تصفه العبارة الثانوية *copy attributes between layers*.
 
-### الخطوة 4: معالجة المعالم
+### الخطوة 4: معالجة الكائنات
+تكرّر عبر كل كائن في Shapefile حتى تتمكن من تطبيق أي منطق مخصص قبل كتابته.
+
 ```csharp
 foreach (Feature inputFeature in inputLayer)
 {
     // Your code for processing each input feature goes here
 }
 ```
-تكرّر عبر كل معلم في Shapefile حتى تتمكن من تطبيق أي منطق مخصص قبل كتابته.
 
-### الخطوة 5: تصفية المعالم حسب التاريخ
+### الخطوة 5: تصفية الكائنات حسب التاريخ
+في هذا المثال نتخطى السجلات التي يكون حقل `dob` (تاريخ الميلاد) فيها مفقودًا أو أقدم من 1 يناير 1982. عدّل الفلتر ليتناسب مع متطلبات بياناتك الخاصة.
+
 ```csharp
 DateTime? date = inputFeature.GetValue<DateTime?>("dob");
 if (date == null || date < new DateTime(1982, 1, 1))
@@ -99,29 +143,30 @@ if (date == null || date < new DateTime(1982, 1, 1))
     continue;
 }
 ```
-في هذا المثال نتخطى السجلات التي يكون حقل `dob` (تاريخ الميلاد) فيها مفقودًا أو أقدم من 1 يناير 1982. يمكنك تعديل الفلتر ليتناسب مع متطلبات بياناتك.
 
-### الخطوة 6: إنشاء معلم جديد (C# Generate GeoJSON File)
+### الخطوة 6: إنشاء كائن Feature جديد (C# إنشاء ملف GeoJSON)
+`Feature` يمثل عنصرًا مكانيًا واحدًا يحتوي على الهندسة وبيانات السمات.  
+هنا نبني `Feature` جديد لطبقة GeoJSON، ننسخ الهندسة وقيم السمات، ونضيفه إلى المخرج. هذا هو جوهر *c# generate geojson file*.
+
 ```csharp
 Feature outputFeature = outputLayer.ConstructFeature();
 outputFeature.Geometry = inputFeature.Geometry;
 outputFeature.CopyValues(inputFeature);
 outputLayer.Add(outputFeature);
 ```
-هنا نبني `Feature` جديد لطبقة GeoJSON، ننسخ الهندسة وقيم السمات، ونضيفه إلى الناتج. هذا هو جوهر *c# generate geojson file*.
 
-تهانينا! لقد نجحت في **تحويل shapefile إلى geojson** وتعلمت كيفية نسخ السمات بين الطبقات على طول الطريق.
+تهانينا! لقد نجحت في **تحويل Shapefile إلى GeoJSON** وتعلمت كيفية **نسخ السمات بين الطبقات** على طول الطريق.
 
 ## المشكلات الشائعة والحلول
-| المشكلة | لماذا يحدث | الحل |
-|---------|------------|------|
-| ملف الإخراج فارغ | تم استدعاء `CopyAttributes` بعد إغلاق طبقة الإخراج | تأكد من بقاء كتلة `using` الخاصة بـ `outputLayer` مفتوحة حتى بعد إضافة جميع المعالم. |
-| فلتر التاريخ يزيل جميع السجلات | اسم الحقل غير صحيح أو تنسيق التاريخ غير متوقع | تحقق من اسم السمة (`dob`) واستخدم `GetValue<string>` إذا كانت التواريخ مخزنة كسلاسل. |
-| استثناء الترخيص | تشغيل بدون ترخيص Aspose.GIS صالح في الإنتاج | طبق ترخيصًا مؤقتًا أو كاملًا كما هو موضح في توثيق Aspose. |
+| المشكلة | سبب حدوثها | الحل |
+|-------|----------------|-----|
+| ملف الإخراج فارغ | تم استدعاء `CopyAttributes` بعد إغلاق طبقة الإخراج | تأكد من بقاء كتلة `using` الخاصة بـ `outputLayer` مفتوحة حتى بعد إضافة جميع الكائنات. |
+| تصفية التاريخ تزيل جميع السجلات | اسم الحقل غير صحيح أو تنسيق تاريخ غير متوقع | تحقق من اسم السمة (`dob`) واستخدم `GetValue<string>` إذا كانت التواريخ مخزنة كسلاسل نصية. |
+| استثناء الترخيص | تشغيل بدون ترخيص Aspose.GIS صالح في بيئة الإنتاج | طبق ترخيصًا مؤقتًا أو كاملًا كما هو موضح في وثائق Aspose. |
 
 ## الأسئلة المتكررة
-**س: أين يمكنني العثور على مزيد من التوثيق؟**  
-ج: زر [توثيق Aspose.GIS](https://reference.aspose.com/gis/net/) للحصول على معلومات تفصيلية.
+**س: أين يمكنني العثور على مزيد من الوثائق؟**  
+ج: زر [توثيق Aspose.GIS](https://reference.aspose.com/gis/net/) للحصول على معلومات متعمقة.
 
 **س: كيف يمكنني الحصول على ترخيص مؤقت؟**  
 ج: يمكنك الحصول على ترخيص مؤقت [من هنا](https://purchase.aspose.com/temporary-license/).
@@ -136,13 +181,29 @@ outputLayer.Add(outputFeature);
 ج: يمكنك شراء المنتج [من هنا](https://purchase.aspose.com/buy).
 
 ## الخاتمة
-في هذا الدرس استعرضنا العملية الكاملة لـ **convert shapefile to geojson** باستخدام Aspose.GIS لـ .NET، وأظهرنا كيفية نسخ السمات بين الطبقات، وقدمنا طريقة نظيفة لـ *c# generate geojson file*. جرّب فلاتر مختلفة، مجموعات بيانات أكبر، أو تحويلات هندسية إضافية لتستفيد بالكامل من إمكانيات المكتبة.
+في هذا الدرس استعرضنا العملية الكاملة لـ **تحويل Shapefile إلى GeoJSON** باستخدام Aspose.GIS لـ .NET، وأظهرنا كيفية **نسخ السمات بين الطبقات**، وبيّنّا طريقة نظيفة لـ *c# generate geojson file*. جرّب فلاتر مختلفة، مجموعات بيانات أكبر، أو تحويلات هندسية إضافية لاستغلال إمكانات المكتبة بالكامل.
 
 ---
 
-**آخر تحديث:** 2026-01-13  
+**آخر تحديث:** 2026-07-05  
 **تم الاختبار مع:** Aspose.GIS لـ .NET (أحدث إصدار ثابت)  
-**المؤلف:** Aspose  
+**المؤلف:** Aspose
+
+```csharp
+using Aspose.Gis;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+```
+
+## دروس ذات صلة
+
+- [كيفية تحويل GeoJSON إلى File GDB باستخدام Aspose.GIS لـ .NET](/gis/net/layer-management/convert-geojson-layer-to-file-gdb/)
+- [كيفية قراءة GeoJSON من Stream باستخدام Aspose.GIS لـ .NET](/gis/net/layer-data-operations/read-geojson-from-stream/)
+- [كيفية تحويل GeoJSON إلى TopoJSON باستخدام Aspose.GIS](/gis/net/geo-data-conversion/convert-geojson-to-topojson/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
