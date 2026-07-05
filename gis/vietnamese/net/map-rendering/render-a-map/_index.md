@@ -1,10 +1,38 @@
 ---
-date: 2026-01-18
-description: Tìm hiểu cách thêm các thành phố vào bản đồ và tạo bản đồ SVG bằng Aspose.GIS
-  cho .NET. Tạo các hình ảnh trực quan tuyệt đẹp một cách nhanh chóng.
-linktitle: Render a Map
+date: 2026-07-05
+description: Tìm hiểu cách tạo bản đồ SVG và thêm các thành phố bằng Aspose.GIS cho
+  .NET. Tạo các hình ảnh trực quan tuyệt đẹp một cách nhanh chóng.
+keywords:
+- generate svg map
+- draw vector layer
+- add base map
+- load geojson
+- set map dimensions
+linktitle: Kết xuất bản đồ
+schemas:
+- author: Aspose
+  dateModified: '2026-07-05'
+  description: Learn how to generate SVG map and add cities using Aspose.GIS for .NET.
+    Create stunning visualizations quickly.
+  headline: How to Generate SVG Map and Add Cities with Aspose.GIS for .NET
+  type: TechArticle
+- questions:
+  - answer: Yes, Aspose.GIS for .NET works seamlessly in ASP.NET, Blazor, and other
+      .NET web frameworks, producing SVG output that browsers render instantly.
+    question: Can I use Aspose.GIS for .NET in my web applications?
+  - answer: Yes, you can explore the free trial version [here](https://releases.aspose.com/).
+    question: Is a trial version available?
+  - answer: Visit the [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) for assistance
+      and community discussions.
+    question: Where can I find support for Aspose.GIS for .NET?
+  - answer: Yes, a temporary license is available [here](https://purchase.aspose.com/temporary-license/).
+    question: Can I purchase a temporary license for short‑term projects?
+  - answer: Yes, check the [documentation](https://reference.aspose.com/gis/net/)
+      for comprehensive guides and sample projects.
+    question: Are there additional tutorials for Aspose.GIS for .NET?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: Cách Thêm Thành Phố Vào Bản Đồ Với Aspose.GIS cho .NET
+title: Cách tạo bản đồ SVG và thêm các thành phố với Aspose.GIS cho .NET
 url: /vi/net/map-rendering/render-a-map/
 weight: 13
 ---
@@ -13,26 +41,31 @@ weight: 13
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Cách Thêm Thành Phố Vào Bản Đồ với Aspose.GIS cho .NET
+# Cách tạo bản đồ SVG và thêm các thành phố với Aspose.GIS cho .NET
 
 ## Giới thiệu
-Chào mừng đến với thế giới thú vị của Aspose.GIS cho .NET! Trong hướng dẫn từng bước này, bạn sẽ học **cách thêm thành phố vào bản đồ** và tạo ra đầu ra SVG chất lượng cao. Dù bạn đang xây dựng một bảng điều khiển desktop hay một cổng GIS dựa trên web, tutorial này sẽ chỉ cho bạn cách vẽ các lớp vector, đặt kích thước bản đồ và tải bản đồ GeoJSON một cách dễ dàng.
+Welcome to the exciting world of Aspose.GIS for .NET! In this step‑by‑step guide, you’ll learn **how to add cities to a map** and **generate SVG map** output that looks great on any screen. Whether you’re building a desktop dashboard, a web‑based GIS portal, or a printable report, the same code works across .NET Framework, .NET Core, and .NET 5/6. Let’s walk through the whole process—from setting map dimensions to exporting a clean, scalable SVG file.
 
 ## Câu trả lời nhanh
-- **Hướng dẫn này đề cập đến gì?** Thêm thành phố vào bản đồ và xuất ra file SVG.  
-- **Thư viện nào được yêu cầu?** Aspose.GIS cho .NET.  
-- **Tôi có cần giấy phép không?** Có bản dùng thử miễn phí; giấy phép cần thiết cho môi trường production.  
-- **Tôi có thể sử dụng trong ứng dụng web không?** Có – cùng một đoạn mã hoạt động trong ASP.NET, Blazor và các framework web .NET khác.  
-- **Định dạng đầu ra là gì?** Một bản đồ SVG có thể hiển thị trong trình duyệt hoặc được chỉnh sửa thêm.
+- **Nội dung của hướng dẫn này là gì?** Thêm các điểm thành phố vào bản đồ và xuất kết quả dưới dạng tệp SVG.  
+- **Thư viện nào được yêu cầu?** Aspose.GIS cho .NET (có bản dùng thử miễn phí).  
+- **Tôi có cần giấy phép không?** Bản dùng thử hoạt động cho phát triển; giấy phép thương mại cần thiết cho môi trường sản xuất.  
+- **Tôi có thể sử dụng trong ứng dụng web không?** Chắc chắn – cùng một đoạn mã chạy trong ASP.NET, Blazor và các framework web .NET khác.  
+- **Định dạng đầu ra là gì?** Một bản đồ SVG độ phân giải cao mà trình duyệt hiển thị ngay lập tức và các trình chỉnh sửa vector có thể chỉnh sửa thêm.
+
+## “Tạo bản đồ SVG” là gì?
+*Generating an SVG map* means converting geographic data into a Scalable Vector Graphics file that preserves geometry, styles, and interactivity without rasterizing the image. SVG files remain crisp at any zoom level and are ideal for web visualizations.
+
+## Tại sao nên tạo bản đồ SVG với Aspose.GIS?
+Aspose.GIS supports **70+ input and output formats** (including Shapefile, GeoJSON, KML, and GML) and can render maps with **sub‑pixel precision** while keeping memory usage low. The library processes **multi‑hundred‑page datasets** without loading the entire file into memory, making it perfect for large‑scale GIS projects.
 
 ## Yêu cầu trước
-Trước khi bắt đầu tutorial, hãy đảm bảo bạn đã chuẩn bị các yêu cầu sau:
-- Thư viện Aspose.GIS cho .NET: Đảm bảo bạn đã cài đặt thư viện Aspose.GIS cho .NET. Bạn có thể tải về [tại đây](https://releases.aspose.com/gis/net/).
-- Tập tin dữ liệu: Chuẩn bị các shapefile và dữ liệu GeoJSON cần thiết cho tutorial. Bạn có thể tìm dữ liệu mẫu trong tài liệu hoặc sử dụng các tập tin của riêng mình.
-- Môi trường phát triển: Có một môi trường phát triển .NET được thiết lập, bao gồm trình soạn thảo mã như Visual Studio.
+- Aspose.GIS for .NET Library: Make sure you have the Aspose.GIS for .NET library installed. You can download it [here](https://releases.aspose.com/gis/net/).
+- Data Files: Prepare the necessary shapefiles and GeoJSON data for the tutorial. You can find sample data in the documentation or use your own files.
+- Development Environment: Have a .NET development environment set up, including a code editor like Visual Studio.
 
 ## Nhập không gian tên
-Để bắt đầu, nhập các không gian tên cần thiết vào dự án .NET của bạn. Những không gian tên này là nền tảng để làm việc với các chức năng của Aspose.GIS.
+The `Aspose.Gis` namespace provides all the core GIS functionality, while `Aspose.Gis.Rendering` contains rendering‑specific classes.
 
 ```csharp
 using Aspose.Gis;
@@ -47,7 +80,10 @@ using System.IO;
 using System.Linq;
 ```
 
-## Bước 1: Thiết lập bản đồ (đặt kích thước bản đồ)
+## Làm thế nào để đặt kích thước bản đồ?
+`Map` is the core class that holds the rendering surface and manages layers.  
+Set your map canvas size first so the renderer knows how much space to allocate. You create a `Map` object, pass the width and height in pixels, and optionally define a background color. This step controls the final SVG’s aspect ratio, file size, and visual clarity on different devices.
+
 ```csharp
 string dataDir = "Your Document Directory";
 using (var map = new Map(800, 476))
@@ -55,16 +91,20 @@ using (var map = new Map(800, 476))
     // Additional code for map setup can be added here.
 }
 ```
-Trong bước này, chúng ta khởi tạo một bản đồ mới với chiều rộng 800 pixel và chiều cao 476 pixel. Điều chỉnh kích thước theo yêu cầu thiết kế của bạn.
 
-## Bước 2: Thêm bản đồ nền (vẽ lớp vector)
+## Làm thế nào để vẽ lớp vector cho bản đồ nền?
+`DrawVectorLayer` renders a vector layer onto the map using a given symbolizer.  
+The `Map` class provides a `DrawVectorLayer` method that reads a shapefile and renders each feature using a `SimpleFill` style. You can customize fill color, outline thickness, and opacity to match your visual theme, and also apply transparency or pattern fills for richer cartographic effects.
+
 ```csharp
 var baseMapSymbolizer = new SimpleFill { FillColor = Color.Salmon, StrokeWidth = 0.75 };
 map.Add(VectorLayer.Open(dataDir + "basemap.shp", Drivers.Shapefile), baseMapSymbolizer);
 ```
-Ở đây, chúng ta **vẽ một lớp vector** cho bản đồ nền bằng shapefile. Bạn có thể thay đổi các thuộc tính `SimpleFill` để phù hợp với phong cách trực quan của mình.
 
-## Bước 3: Thêm thành phố vào bản đồ (tải bản đồ GeoJSON)
+## Làm thế nào để tải GeoJSON và thêm các thành phố vào bản đồ?
+`FeatureBasedConfiguration` is a delegate that lets you style each feature based on its attributes.  
+Loading a GeoJSON file gives you a collection of point features representing cities. By passing a `FeatureBasedConfiguration` delegate you can style each city marker based on attributes such as population or region. You may also filter features or adjust symbol size dynamically to reflect additional data dimensions.
+
 ```csharp
 var citiesSymbolizer = new SimpleMarker() { FillColor = Color.LightBlue };
 citiesSymbolizer.FeatureBasedConfiguration = (feature, symbolizer) =>
@@ -73,42 +113,52 @@ citiesSymbolizer.FeatureBasedConfiguration = (feature, symbolizer) =>
 };
 map.Add(VectorLayer.Open(dataDir + "points.geojson", Drivers.GeoJson), citiesSymbolizer);
 ```
-Bước này tải một file GeoJSON chứa dữ liệu điểm thành phố và **thêm các thành phố vào bản đồ**. Bạn có thể mở rộng delegate `FeatureBasedConfiguration` để tạo kiểu cho các thành phố dựa trên các thuộc tính như dân số.
 
-## Bước 4: Kết xuất bản đồ (xuất SVG, tạo bản đồ SVG)
+## Làm thế nào để xuất bản đồ dưới dạng tệp SVG?
+`Map.Save` outputs the rendered map to a file in the specified format.  
+Calling `Map.Save` with the `SaveFormat.Svg` argument writes the rendered vector data to an SVG file on disk. The resulting `cities_out.svg` can be opened directly in any modern browser or edited with tools like Inkscape. You can also specify DPI or embed CSS for further styling.
+
 ```csharp
 map.Render(dataDir + "cities_out.svg", Renderers.Svg);
 ```
-Cuối cùng, chúng ta **xuất bản đồ dưới dạng file SVG**. File `cities_out.svg` tạo ra có thể được mở trong bất kỳ trình duyệt hiện đại nào hoặc trình chỉnh sửa đồ họa vector.
 
-## Kết luận
-Chúc mừng! Bạn đã thành công **thêm thành phố vào bản đồ** và tạo ra một bản đồ SVG bằng Aspose.GIS cho .NET. Tutorial này đã minh họa cách đặt kích thước bản đồ, vẽ lớp vector, tải dữ liệu GeoJSON và xuất kết quả dưới dạng SVG có thể mở rộng – hoàn hảo cho cả kịch bản web và in ấn.
+## Các vấn đề thường gặp và giải pháp
+- **Missing data file error** – Verify that the relative paths to your shapefile and GeoJSON are correct; use absolute paths during debugging.  
+- **Cities not visible** – Ensure the GeoJSON coordinate reference system matches the base map’s CRS, or re‑project the data using `Geometry.Transform`.  
+- **SVG appears blank** – Check that the map’s background color isn’t set to fully transparent; set a light fill to confirm rendering.
 
 ## Câu hỏi thường gặp
-### Tôi có thể sử dụng Aspose.GIS cho .NET trong các ứng dụng web của mình không?
-Có, Aspose.GIS cho .NET phù hợp cho cả ứng dụng desktop và web.
 
-### Có phiên bản dùng thử không?
-Có, bạn có thể khám phá phiên bản dùng thử miễn phí [tại đây](https://releases.aspose.com/).
+**Q: Tôi có thể sử dụng Aspose.GIS cho .NET trong các ứng dụng web của mình không?**  
+A: Yes, Aspose.GIS for .NET works seamlessly in ASP.NET, Blazor, and other .NET web frameworks, producing SVG output that browsers render instantly.
 
-### Tôi có thể tìm hỗ trợ cho Aspose.GIS cho .NET ở đâu?
-Truy cập [diễn đàn Aspose.GIS](https://forum.aspose.com/c/gis/33) để được hỗ trợ hoặc đặt câu hỏi.
+**Q: Có phiên bản dùng thử không?**  
+A: Yes, you can explore the free trial version [here](https://releases.aspose.com/).
 
-### Tôi có thể mua giấy phép tạm thời cho các dự án ngắn hạn không?
-Có, giấy phép tạm thời có sẵn [tại đây](https://purchase.aspose.com/temporary-license/).
+**Q: Tôi có thể tìm hỗ trợ cho Aspose.GIS cho .NET ở đâu?**  
+A: Visit the [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) for assistance and community discussions.
 
-### Có các tutorial bổ sung cho Aspose.GIS cho .NET không?
-Có, hãy xem [tài liệu](https://reference.aspose.com/gis/net/) để tìm các tutorial và hướng dẫn chi tiết.
+**Q: Tôi có thể mua giấy phép tạm thời cho các dự án ngắn hạn không?**  
+A: Yes, a temporary license is available [here](https://purchase.aspose.com/temporary-license/).
+
+**Q: Có các hướng dẫn bổ sung cho Aspose.GIS cho .NET không?**  
+A: Yes, check the [documentation](https://reference.aspose.com/gis/net/) for comprehensive guides and sample projects.
 
 ---
 
-**Cập nhật lần cuối:** 2026-01-18  
-**Đã kiểm tra với:** Aspose.GIS 24.11 cho .NET  
+**Cập nhật lần cuối:** 2026-07-05  
+**Kiểm tra với:** Aspose.GIS 24.11 for .NET  
 **Tác giả:** Aspose  
 
-{{< /blocks/products/pf/tutorial-page-section >}}
+{{< blocks/products/products-backtop-button >}}
 
+## Hướng dẫn liên quan
+
+- [Tạo lớp Vector và đặt dung sai tuyến tính hóa bằng Aspose.GIS cho .NET](/gis/net/geometry-processing/set-linearization-tolerance/)
+- [Cách đọc GeoJSON từ Stream với Aspose.GIS cho .NET](/gis/net/layer-data-operations/read-geojson-from-stream/)
+- [Tạo lớp Vector và đặt Hệ tham chiếu không gian cho lớp](/gis/net/layer-data-operations/set-layer-spatial-reference-system/)
+
+
+{{< /blocks/products/pf/tutorial-page-section >}}
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}

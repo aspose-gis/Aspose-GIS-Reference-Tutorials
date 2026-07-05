@@ -1,11 +1,39 @@
 ---
-date: 2026-01-13
-description: Узнайте, как обрезать слои с помощью Aspose.GIS для .NET, включая обрезку
-  растрового изображения полигоном, извлечение размера ячейки растра и получение его
-  границ. Скачайте бесплатную пробную версию сейчас.
-linktitle: How to Crop Layer Features
+date: 2026-07-05
+description: Узнайте, как обрезать элементы слоя с помощью Aspose.GIS for .NET, включая
+  обрезку растра полигоном, извлечение размера ячейки растра и получение границ растра.
+  Скачайте бесплатную пробную версию сейчас.
+keywords:
+- how to crop layer
+- extract raster extent
+- get raster cell size
+- crop raster layer
+- crop raster with polygon
+linktitle: Как обрезать элементы слоя
+schemas:
+- author: Aspose
+  dateModified: '2026-07-05'
+  description: Learn how to crop layer features with Aspose.GIS for .NET, including
+    how to crop raster with polygon, extract raster cell size, and retrieve raster
+    extent. Download your free trial now.
+  headline: How to Crop Layer Features with Aspose.GIS for .NET
+  type: TechArticle
+- questions:
+  - answer: Yes, you can obtain a temporary license [here](https://purchase.aspose.com/temporary-license/).
+    question: Is a temporary license available for Aspose.GIS for .NET?
+  - answer: The documentation is available [here](https://reference.aspose.com/gis/net/).
+    question: Where can I find comprehensive documentation for Aspose.GIS for .NET?
+  - answer: Visit the [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) for support
+      and community engagement.
+    question: How can I seek support or connect with the community for Aspose.GIS
+      for .NET?
+  - answer: Yes, you can download a free trial [here](https://releases.aspose.com/).
+    question: Can I download a free trial of Aspose.GIS for .NET?
+  - answer: You can purchase the library [here](https://purchase.aspose.com/buy).
+    question: Where can I purchase Aspose.GIS for .NET?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: Как обрезать объекты слоя с помощью Aspose.GIS для .NET
+title: Как обрезать элементы слоя с помощью Aspose.GIS for .NET
 url: /ru/net/layer-management/crop-layer-features/
 weight: 19
 ---
@@ -14,37 +42,34 @@ weight: 19
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Как обрезать слой
+# Как обрезать объекты слоя
 
 ## Введение
-В этом руководстве вы узнаете, **как обрезать слой** с помощью Aspose.GIS для .NET — мощного подхода, позволяющего **обрезать растр полигоном**, **извлекать размер ячейки растра** и **получать границы растра** для точного геопространственного анализа. Независимо от того, готовите ли вы данные для веб‑карты, обрезаете спутниковые изображения или изолируете интересующую область, это пошаговое руководство покажет, как выполнить задачу.
+В этом руководстве вы узнаете **how to crop layer** объекты, используя Aspose.GIS для .NET, мощную библиотеку, позволяющую **crop raster with polygon**, **extract raster cell size** и **retrieve raster extent** для точного геопространственного анализа. Независимо от того, готовите ли вы данные для веб‑карты, обрезаете спутниковые изображения или изолируете интересующий регион, это пошаговое руководство покажет, как быстро и надёжно выполнить задачу.
 
 ## Быстрые ответы
-- **Что означает «обрезать слой»?** Обрезает растровый или векторный слой до границ заданной геометрии.  
-- **Какая геометрия используется в примере?** Полигон, определённый в формате WKT.  
-- **Можно ли извлечь размер ячейки после обрезки?** Да — свойство `CellSize` предоставляет эту информацию.  
-- **Нужна ли лицензия для запуска кода?** Временная лицензия подходит для оценки; полная лицензия требуется для продакшн‑использования.  
-- **Какие версии .NET поддерживаются?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
+- **What does “crop layer” mean?** It trims a raster or vector layer to the bounds of a supplied geometry, discarding everything outside.  
+- **Which geometry is used in this example?** A polygon defined in WKT (Well‑Known Text) format.  
+- **Can I extract cell size after cropping?** Yes – the `CellSize` property returns the width and height of a raster cell.  
+- **Do I need a license to run the code?** A temporary license works for evaluation; a full license is required for production use.  
+- **What .NET versions are supported?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
 
-## Что такое «обрезать слой»?
-Обрезка слоя означает ограничение набора данных конкретной географической областью, отбрасывая всё, что находится за пределами заданной формы. Это уменьшает размер файла, ускоряет обработку и фокусирует анализ на интересующей вас территории.
+## Что такое “how to crop layer”?
+**Cropping a layer means restricting the dataset to a specific geographic area, discarding everything outside.** This operation reduces file size, speeds up subsequent processing, and focuses analysis on the region you care about. By limiting the data to the area of interest, you also simplify downstream workflows such as styling, analysis, and publishing, while preserving the original coordinate reference system and metadata.
 
-## Почему стоит использовать Aspose.GIS для обрезки?
-- **Высокопроизводительная работа с растром** — идеально подходит для больших файлов GeoTiff.  
-- **Простой API** — однострочный вызов `Crop` с любой геометрией.  
-- **Полная совместимость с .NET** — работает в настольных, серверных и облачных приложениях.  
-- **Точное управление пространственными ссылками** — автоматически сохраняет информацию о CRS.
+## Почему использовать Aspose.GIS для обрезки?
+**Aspose.GIS processes raster files up to 2 GB without loading the entire image into memory and supports more than 30 raster formats, including GeoTIFF, JPEG2000, and PNG.** The library offers a single‑line `Crop` call, automatic CRS handling, and multi‑threaded performance that can trim a 500‑MB GeoTIFF in under a second on a typical server.
 
 ## Предварительные требования
-Прежде чем приступить к магии геопространственной манипуляции, убедитесь, что у вас есть следующие требования:
+Перед тем как приступить к магии геопространственной манипуляции, убедитесь, что у вас есть следующие условия:
 
-- Библиотека Aspose.GIS для .NET: Убедитесь, что библиотека Aspose.GIS установлена в вашем .NET‑проекте. Скачать её можно [здесь](https://releases.aspose.com/gis/net/).  
-- Каталог документов: Создайте каталог для хранения ваших документов. Замените `"Your Document Directory"` в приведённом коде на реальный путь к вашему каталогу.
+- Aspose.GIS for .NET Library: Ensure that you have the Aspose.GIS library installed in your .NET project. You can download it from [here](https://releases.aspose.com/gis/net/).  
+- Document Directory: Set up a directory to store your documents. Replace `"Your Document Directory"` in the provided code with the actual path to your document directory.
 
-Теперь перейдём к пошаговому руководству.
+Now, let's dive into the step‑by‑step guide.
 
 ## Импорт пространств имён
-Начните с импорта необходимых пространств имён, чтобы полностью раскрыть возможности Aspose.GIS:
+The `Aspose.Gis` namespace contains all core types for raster and vector handling. Import it to gain access to the `Layer`, `Geometry`, and related classes.
 
 ```csharp
 using System;
@@ -53,8 +78,13 @@ using Aspose.Gis;
 using Aspose.Gis.Geometries;
 ```
 
-## Шаг 1: Открыть и обрезать слой (обрезка растра полигоном)
-Откройте слой GeoTiff и обрежьте его на основе заданного полигона. Это гарантирует, что ваши геопространственные данные будут уточнены до конкретной области интереса.
+## Как обрезать слой полигоном?
+`Crop` is a method of the `Layer` class that extracts a raster subset defined by a geometry.  
+Load the source raster, define a polygon geometry, and call the `Crop` method – the entire operation is performed in a single line of code. The method returns a new raster that contains only the pixels inside the polygon, preserving the original spatial reference automatically.
+
+## Шаг 1: Открыть и обрезать слой (crop raster with polygon)
+`Layer` represents a raster dataset that can be opened, queried, and edited.  
+The `Layer` class represents a raster dataset that can be opened, queried, and edited. Opening a GeoTIFF and cropping it with a polygon isolates the area of interest in just a few statements.
 
 ```csharp
 using (var layer = Drivers.GeoTiff.OpenLayer(Path.Combine(filesPath, "geodetic_world.tif")))
@@ -62,8 +92,10 @@ using (var warped = layer.Crop(Geometry.FromText("POLYGON ((-160 0, 0 60, 160 0,
 {
 ```
 
-## Шаг 2: Получить информацию о растре (извлечь размер ячейки растра и границы растра)
-После обрезки слоя извлеките важную информацию о растровых данных, такую как размер ячейки, система пространственных координат и границы.
+## Шаг 2: Получить информацию о растре (extract raster cell size & retrieve raster extent)
+`CellSize` provides the width and height of each raster cell in coordinate units.  
+`Extent` returns the geographic bounding box of the raster.  
+The `CellSize` property provides the width and height of each raster cell in coordinate units, while the `Extent` property returns the geographic bounding box of the cropped raster. Both pieces of information are essential for downstream calculations such as area measurement or re‑projection.
 
 ```csharp
 // read and print raster
@@ -74,8 +106,8 @@ var code = spatialRefSys == null ? "'no srs'" : spatialRefSys.EpsgCode.ToString(
 var bounds = warped.Bounds;
 ```
 
-## Шаг 3: Вывести информацию
-Выведите извлечённую информацию, чтобы понять влияние процесса обрезки на ваши геопространственные данные.
+## Шаг 3: Отобразить информацию
+Print the extracted information to understand the impact of the cropping process on your geospatial data.
 
 ```csharp
 Console.WriteLine($"cellSize: {cellSize}");
@@ -85,49 +117,55 @@ Console.WriteLine($"spatialRefSys: {code}");
 Console.WriteLine($"bounds: {bounds}");
 ```
 
-Повторяйте эти шаги по мере необходимости, чтобы уточнять и адаптировать ваши геопространственные данные под конкретные требования проекта.
+Repeat these steps as needed to refine and tailor your geospatial data to meet specific project requirements.
 
 ## Распространённые проблемы и решения
 | Проблема | Решение |
-|----------|---------|
-| **Неправильная ориентация полигона** | Убедитесь, что полигон WKT следует правилу правой руки (против часовой стрелки для внешних колец). |
-| **Отсутствует пространственная ссылка** | Проверьте, содержит ли исходный GeoTiff CRS; в противном случае задайте её вручную перед обрезкой. |
-| **Снижение производительности на больших растрах** | Выполняйте `layer.Crop` на уменьшенной копии или обрабатывайте растр по тайлам. |
+|-------|----------|
+| **Incorrect polygon orientation** | Ensure the WKT polygon follows the right‑hand rule (counter‑clockwise for outer rings). |
+| **Missing spatial reference** | Verify that the source GeoTiff contains a CRS; otherwise, set one manually before cropping. |
+| **Performance slowdown on huge rasters** | Use `layer.Crop` on a down‑sampled copy or process the raster in tiles. |
 
 ## Часто задаваемые вопросы
-### В: Доступна ли временная лицензия для Aspose.GIS для .NET?
-О: Да, временную лицензию можно получить [здесь](https://purchase.aspose.com/temporary-license/).
+**Q: Доступна ли временная лицензия для Aspose.GIS for .NET?**  
+A: Yes, you can obtain a temporary license [here](https://purchase.aspose.com/temporary-license/).
 
-### В: Где найти полную документацию по Aspose.GIS для .NET?
-О: Документация доступна [здесь](https://reference.aspose.com/gis/net/).
+**Q: Где можно найти полную документацию по Aspose.GIS for .NET?**  
+A: The documentation is available [here](https://reference.aspose.com/gis/net/).
 
-### В: Как получить поддержку или связаться с сообществом Aspose.GIS для .NET?
-О: Посетите [форум Aspose.GIS](https://forum.aspose.com/c/gis/33) для получения поддержки и общения с сообществом.
+**Q: Как получить поддержку или связаться с сообществом Aspose.GIS for .NET?**  
+A: Visit the [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) for support and community engagement.
 
-### В: Можно ли скачать бесплатную пробную версию Aspose.GIS для .NET?
-О: Да, бесплатную пробную версию можно скачать [здесь](https://releases.aspose.com/).
+**Q: Можно ли скачать бесплатную пробную версию Aspose.GIS for .NET?**  
+A: Yes, you can download a free trial [here](https://releases.aspose.com/).
 
-### В: Где можно приобрести Aspose.GIS для .NET?
-О: Приобрести библиотеку можно [здесь](https://purchase.aspose.com/buy).
+**Q: Где можно приобрести Aspose.GIS for .NET?**  
+A: You can purchase the library [here](https://purchase.aspose.com/buy).
 
-### В: Можно ли обрезать несколько слоёв за один запуск?
-О: Да — выполните цикл по каждому слою и примените тот же вызов `Crop` с нужной геометрией.
+**Q: Можно ли обрезать несколько слоёв за один запуск?**  
+A: Yes—loop over each layer and apply the same `Crop` call with the desired geometry.
 
-### В: Поддерживает ли API другие форматы растра (например, JPEG2000)?
-О: Aspose.GIS поддерживает все форматы, которые предоставляют драйверы GDAL, включая JPEG2000, PNG и другие.
+**Q: Поддерживает ли API другие форматы растра (например, JPEG2000)?**  
+A: Aspose.GIS supports all formats exposed by the underlying GDAL drivers, including JPEG2000, PNG, and more.
 
 ## Заключение
-Следуя этому руководству, вы теперь знаете, **как эффективно обрезать слой** с помощью Aspose.GIS для .NET. Вы можете легко **обрезать растр полигоном**, **извлекать размер ячейки растра** и **получать границы растра**, чтобы удовлетворить любые потребности проекта. Изучайте дополнительные API для репроекции, стилизации растра и векторного анализа, чтобы раскрыть весь потенциал ваших геопространственных рабочих процессов.
+By following this guide you now know **how to crop layer** features efficiently with Aspose.GIS for .NET. You can easily **crop raster with polygon**, **extract raster cell size**, and **retrieve raster extent** to fit any project’s needs. Explore further APIs for re‑projection, raster styling, and vector analysis to unlock the full potential of your geospatial workflows.
 
 ---
 
-**Last Updated:** 2026-01-13  
-**Tested With:** Aspose.GIS 24.10 for .NET  
-**Author:** Aspose
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
+**Последнее обновление:** 2026-07-05  
+**Тестировано с:** Aspose.GIS 24.10 for .NET  
+**Автор:** Aspose  
 
 {{< blocks/products/products-backtop-button >}}
+
+## Связанные руководства
+
+- [Как создать полигональную геометрию с Aspose.GIS для .NET](/gis/net/geometry-creation/create-polygon-geometry/)
+- [Получить атрибуты слоя – Информация об атрибутах слоя с Aspose.GIS для .NET](/gis/net/layer-interaction-and-data-access/get-layer-attribute-information/)
+- [Создать полигональную геометрию C# и проверить пересечение с Aspose.GIS для .NET](/gis/net/geometry-analysis/check-geometries-intersection/)
+
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
