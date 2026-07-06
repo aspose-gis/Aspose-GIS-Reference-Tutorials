@@ -1,33 +1,63 @@
 ---
-title: Ulangi Geometri dalam Koleksi
-linktitle: Ulangi Geometri dalam Koleksi
+date: 2026-04-09
+description: Pelajari cara membuat koleksi geometri dan menangani data geospasial
+  menggunakan Aspose.GIS untuk .NET.
+keywords:
+- create geometry collection
+- geospatial data handling
+- create point geometry
+- process geospatial data
+- add point to collection
+linktitle: Iterasi Geometri dalam Koleksi
 second_title: Aspose.GIS .NET API
-description: Pelajari cara memanfaatkan Aspose.GIS untuk .NET untuk memanipulasi data geospasial dengan lancar dalam aplikasi .NET Anda.
-weight: 10
+title: Buat Koleksi Geometri dan Iterasi pada Geometri
 url: /id/net/geometry-processing/iterate-over-geometries-in-collection/
+weight: 10
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Ulangi Geometri dalam Koleksi
+# Buat Koleksi Geometri dan Iterasi Pada Geometri
 
-## Perkenalan
-Dalam bidang penanganan dan analisis data geospasial, Aspose.GIS untuk .NET muncul sebagai perangkat canggih yang memberdayakan pengembang untuk memanipulasi, memvisualisasikan, dan memproses informasi geografis dengan lancar dalam aplikasi .NET. Artikel ini berfungsi sebagai panduan komprehensif untuk memanfaatkan Aspose.GIS untuk .NET secara efektif, melayani pengembang pemula dan berpengalaman.
+## Pendahuluan
+Dalam panduan praktis ini Anda akan belajar cara **create geometry collection** objek dan mengiterasi anggotanya menggunakan Aspose.GIS untuk .NET. Baik Anda sedang membangun layanan pemetaan, melakukan analisis spasial, atau sekadar perlu **process geospatial data**, tutorial ini memandu Anda melalui setiap langkah—dari menyiapkan lingkungan hingga menangani setiap tipe geometri di dalam koleksi.
+
+## Jawaban Cepat
+- **What does “create geometry collection” mean?** Artinya membangun sebuah kontainer yang dapat menampung banyak objek geometri (titik, garis, poligon, dll.) dalam satu variabel.  
+- **Which library helps with geospatial data handling?** Aspose.GIS untuk .NET menyediakan API kaya untuk membuat, membaca, dan memanipulasi data geometrik.  
+- **Do I need a license to try this?** Lisensi sementara gratis tersedia untuk evaluasi (lihat FAQ).  
+- **Can I add point geometry to the collection?** Ya – Anda dapat **add point to collection** menggunakan metode `Add`.  
+- **Which .NET versions are supported?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
+
+## Apa Itu Geometry Collection?
+A **GeometryCollection** adalah geometri komposit yang mengelompokkan objek geometri heterogen (titik, line strings, poligon, dll.) menjadi satu entitas. Struktur ini ideal ketika Anda perlu memperlakukan beberapa bentuk terkait sebagai satu unit logis sekaligus tetap dapat mengakses setiap geometri secara individual.
+
+## Mengapa Menggunakan Aspose.GIS untuk Penanganan Data Geospasial?
+Aspose.GIS untuk .NET menawarkan:
+- Penanganan **geospatial data handling** lengkap tanpa ketergantungan eksternal.  
+- Keamanan tipe yang kuat untuk **create point geometry**, line strings, dan lainnya.  
+- Dukungan lintas platform (Windows, Linux, macOS).  
+- Pola iterasi sederhana yang memungkinkan Anda **process geospatial data** secara efisien.
+
 ## Prasyarat
-Sebelum mempelajari seluk-beluk Aspose.GIS untuk .NET, pastikan Anda memiliki prasyarat berikut:
+Sebelum memulai, pastikan Anda memiliki hal berikut:
+
 ### 1. Instal Aspose.GIS untuk .NET
- Pertama, unduh dan instal Aspose.GIS untuk .NET dari[halaman rilis](https://releases.aspose.com/gis/net/). Ikuti petunjuk penginstalan yang disediakan dalam dokumentasi untuk mengintegrasikannya ke lingkungan .NET Anda dengan lancar.
-### 2. Keakraban dengan Pengembangan .NET
-Pemahaman mendasar tentang kerangka .NET dan bahasa pemrograman C# sangat penting untuk memahami konsep yang dibahas sepanjang tutorial ini.
+Unduh dan instal pustaka dari [release page](https://releases.aspose.com/gis/net/). Ikuti instruksi yang diberikan untuk menambahkan paket NuGet ke proyek Anda.
+
+### 2. Pemahaman tentang Pengembangan .NET
+Pemahaman dasar tentang C# dan runtime .NET diperlukan.
+
 ### 3. Pengaturan IDE
-Siapkan Lingkungan Pengembangan Terpadu (IDE) Anda dengan konfigurasi yang diperlukan untuk mengembangkan aplikasi .NET. Pastikan Anda memiliki lingkungan kerja yang kondusif untuk pengembangan .NET.
-### 4. Konsep Dasar Geospasial
-Meskipun tidak wajib, pemahaman terhadap konsep dasar geospasial seperti titik, garis, dan kumpulan geometri dapat mempercepat proses pembelajaran Anda.
+Gunakan Visual Studio, Visual Studio Code, atau IDE kompatibel .NET apa pun yang Anda sukai.
+
+### 4. Konsep Geospasial Dasar (Opsional)
+Mengetahui perbedaan antara titik, garis, dan koleksi akan membantu Anda mengikuti contoh lebih cepat.
 
 ## Impor Namespace
-Mulailah dengan mengimpor namespace yang diperlukan untuk mengakses fungsionalitas yang disediakan oleh Aspose.GIS untuk .NET secara efisien.
+Mulailah dengan mengimpor namespace yang menyediakan kelas geometri Aspose.GIS.
 
 ```csharp
 using Aspose.Gis.Geometries;
@@ -38,25 +68,30 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
+## Panduan Langkah‑per‑Langkah
 
-Sekarang, mari kita uraikan contoh yang diberikan menjadi beberapa langkah untuk memahami proses iterasi geometri dalam koleksi menggunakan Aspose.GIS untuk .NET.
-## Langkah 1: Buat Objek Geometris
-Buat instance geometri titik dan garis menggunakan koordinat yang disediakan.
+### Langkah 1: Buat Objek Geometrik
+Pertama, kita **create point geometry** dan sebuah line string yang nantinya akan **add point to collection**.
+
 ```csharp
 Point pointGeometry = new Point(40.7128, -74.006);
 LineString lineGeometry = new LineString();
 lineGeometry.AddPoint(78.65, -32.65);
 lineGeometry.AddPoint(-98.65, 12.65);
 ```
-## Langkah 2: Isi Koleksi Geometri
-Bangun koleksi geometri dan tambahkan geometri yang dibuat ke dalamnya.
+
+### Langkah 2: Isi Geometry Collection
+Sekarang kita **create geometry collection** dan mengisinya dengan objek-objek yang dibuat di atas.
+
 ```csharp
 GeometryCollection geometryCollection = new GeometryCollection();
 geometryCollection.Add(pointGeometry);
 geometryCollection.Add(lineGeometry);
 ```
-## Langkah 3: Ulangi Geometri
-Ulangi koleksi geometri dan tangani setiap geometri berdasarkan tipenya.
+
+### Langkah 3: Iterasi Pada Geometri
+Akhirnya, lakukan perulangan melalui koleksi. Pernyataan `switch` memungkinkan Anda menangani setiap geometri berdasarkan tipenya—sempurna untuk **process geospatial data** dalam koleksi heterogen.
+
 ```csharp
 foreach (Geometry geometry in geometryCollection)
 {
@@ -64,29 +99,52 @@ foreach (Geometry geometry in geometryCollection)
     {
         case GeometryType.Point:
             Point point = (Point)geometry;
-            // Menangani geometri titik
+            // Handle point geometry
             break;
         case GeometryType.LineString:
             LineString line = (LineString)geometry;
-            // Tangani geometri garis
+            // Handle line geometry
             break;
     }
 }
 ```
 
+## Masalah Umum dan Solusinya
+- **Problem:** Koleksi tampak kosong setelah menambahkan geometri.  
+  **Solution:** Pastikan Anda menambahkan objek **before** memulai iterasi. Metode `Add` harus dipanggil pada instance `GeometryCollection` yang sama yang nantinya Anda enumerasi.
+
+- **Problem:** Casting gagal dengan pengecualian invalid cast.  
+  **Solution:** Selalu periksa `geometry.GeometryType` sebelum melakukan casting, seperti yang ditunjukkan pada blok `switch`.
+
+- **Problem:** Koordinat tampak terbalik (latitude/longitude).  
+  **Solution:** Aspose.GIS mengharapkan urutan `(latitude, longitude)`. Periksa kembali urutan parameter Anda.
+
+## Pertanyaan yang Sering Diajukan
+
+**Q: Is Aspose.GIS for .NET compatible with all .NET environments?**  
+A: Ya, ia bekerja dengan .NET Framework, .NET Core, dan .NET 5/6/7.
+
+**Q: Can I obtain a temporary license for evaluation purposes?**  
+A: Tentu, Anda dapat memperoleh lisensi sementara untuk evaluasi dari [Aspose website](https://purchase.aspose.com/temporary-license/).
+
+**Q: Is technical support available for Aspose.GIS for .NET?**  
+A: Ya, dukungan teknis tersedia melalui [Aspose.GIS forum](https://forum.aspose.com/c/gis/33), tempat Anda dapat meminta bantuan dan berinteraksi dengan pengembang lain.
+
+**Q: Are there any sample projects available to kickstart development?**  
+A: Memang, dokumentasi Aspose.GIS menyediakan proyek contoh komprehensif untuk mempermudah proses belajar dan pengembangan Anda.
+
+**Q: Can I extend the functionalities of Aspose.GIS for .NET?**  
+A: Tentu saja, Anda dapat memperluas fungsionalitas dengan mengintegrasikan modul kustom dan memanfaatkan fitur ekstensi yang disediakan.
+
 ## Kesimpulan
-Menguasai Aspose.GIS untuk .NET memberdayakan pengembang untuk memanfaatkan potensi penuh data geospasial dalam aplikasi .NET mereka. Dengan mengikuti tutorial ini dan menjelajahi dokumentasi ekstensif yang disediakan, Anda dapat dengan mudah mengintegrasikan fungsi geospasial ke dalam proyek Anda.
-## FAQ
-### T: Apakah Aspose.GIS untuk .NET kompatibel dengan semua lingkungan .NET?
-J: Ya, Aspose.GIS untuk .NET kompatibel dengan berbagai lingkungan .NET, termasuk .NET Core dan .NET Framework.
-### T: Dapatkah saya memperoleh izin sementara untuk tujuan evaluasi?
- J: Tentu saja, Anda bisa mendapatkan lisensi sementara untuk evaluasi dari[Asumsikan situs web](https://purchase.aspose.com/temporary-license/).
-### T: Apakah dukungan teknis tersedia untuk Aspose.GIS untuk .NET?
- J: Ya, dukungan teknis tersedia melalui[Forum Aspose.GIS](https://forum.aspose.com/c/gis/33), tempat Anda dapat mencari bantuan dan berinteraksi dengan sesama pengembang.
-### T: Apakah ada contoh proyek yang tersedia untuk memulai pengembangan?
-J: Memang benar, dokumentasi Aspose.GIS menyediakan contoh proyek yang komprehensif untuk memfasilitasi proses pembelajaran dan pengembangan Anda.
-### T: Bisakah saya memperluas fungsionalitas Aspose.GIS untuk .NET?
-J: Tentu saja, Anda dapat memperluas fungsionalitas Aspose.GIS untuk .NET dengan mengintegrasikan modul khusus dan memanfaatkan fitur ekstensibilitas yang disediakan.
+Dengan menguasai kemampuan untuk **create geometry collection** dan mengiterasi anggotanya, Anda membuka kemampuan **geospatial data handling** yang kuat dalam aplikasi .NET Anda. Gunakan pola yang ditunjukkan di sini untuk membangun analisis spasial yang lebih kompleks, merender peta, atau menyuplai data GIS ke layanan hilir.
+
+---
+
+**Terakhir Diperbarui:** 2026-04-09  
+**Diuji Dengan:** Aspose.GIS untuk .NET (rilis terbaru)  
+**Penulis:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
