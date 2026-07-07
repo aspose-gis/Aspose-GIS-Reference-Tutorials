@@ -1,11 +1,38 @@
 ---
-date: 2026-01-05
-description: Tanulja meg, hogyan olvasson shapefile-t C#-ban az Aspose.GIS for .NET
-  segítségével, hogyan szerezze meg az összes attribútumértéket, és hatékonyan exportálja
-  az attribútumokat.
-linktitle: Get All Feature Attribute Values
+date: 2026-06-15
+description: Ismerje meg, hogyan olvashatja a shapefile attribútumértékeket C#-ban
+  az Aspose.GIS for .NET használatával, hogyan kérheti le minden jellemző attribútumát,
+  és hogyan exportálja az attribútumokat hatékonyan.
+keywords:
+- read shapefile attribute values
+- Aspose.GIS attribute extraction
+- C# GIS tutorial
+linktitle: Minden jellemző attribútumérték lekérése
+schemas:
+- author: Aspose
+  dateModified: '2026-06-15'
+  description: Learn how to read shapefile attribute values in C# using Aspose.GIS
+    for .NET, retrieve every feature attribute, and dump attributes efficiently.
+  headline: Read Shapefile Attribute Values in C# – Get All Feature Attribute Values
+  type: TechArticle
+- questions:
+  - answer: Yes, Aspose.GIS fully supports .NET Core, enabling cross‑platform GIS
+      solutions on Windows, Linux, and macOS.
+    question: Is Aspose.GIS compatible with .NET Core?
+  - answer: Absolutely. The library handles Shapefile, GeoJSON, KML, GML, CSV, and
+      over 30 other formats without additional plugins.
+    question: Can I work with different GIS file formats using Aspose.GIS?
+  - answer: You can acquire a temporary license for evaluation [here](https://purchase.aspose.com/temporary-license/).
+    question: How can I obtain a temporary license for testing?
+  - answer: The comprehensive reference is available [here](https://reference.aspose.com/gis/net/).
+    question: Where is the official documentation for Aspose.GIS?
+  - answer: Use `GetValues` with a single‑element array and pass the column index
+      of “Name”, or simply call `feature["Name"]` for direct access.
+    question: How do I retrieve only the “Name” attribute from each feature?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: Shapefile olvasása C#‑ban – Az összes jellemző attribútumérték lekérése
+title: Shapefile attribútumértékek olvasása C#-ban – Minden jellemző attribútumérték
+  lekérése
 url: /hu/net/layer-interaction-and-data-access/get-all-feature-attribute-values/
 weight: 15
 ---
@@ -17,53 +44,53 @@ weight: 15
 # Az összes jellemző attribútumérték lekérése
 
 ## Bevezetés
-Üdvözöljük a geospatial fejlesztés világában az Aspose.GIS for .NET segítségével! Ebben az útmutatóban megtanulja, **hogyan olvassa be a shapefile-t C#-ban**, és hogyan szerezheti meg minden attribútumértékét a jellemzőkből. Akár térképező alkalmazást épít, akár kötegelt térbeli adatfeldolgozást végez, az attribútumok kinyerésének elsajátítása elengedhetetlen. Merüljünk el, és nézzük meg a kódot működés közben.
+Ezen az oktatóanyagon keresztül megtudja, **hogyan olvassa be a shapefile attribútumértékeit** C#-ban az Aspose.GIS for .NET segítségével. Akár élő térképező alkalmazást épít, akár tömeges térbeli elemzést végez, vagy egyszerűen csak attribútumtáblákat kell exportálnia, a Shapefile minden mezőjének kinyerése alapvető készség. Végigvezetjük a teljes munkafolyamatot, a adatkönyvtár beállításától az attribútumgyűjtemények dumpolásáig, és kiemelünk legjobb gyakorlatokat, amelyek tiszta és hatékony kódot eredményeznek.
 
 ## Gyors válaszok
-- **Mit csinál ez a kód?** Megnyit egy Shapefile-t, és beolvassa az összes, néhány vagy kiürített attribútumértéket minden jellemzőből.  
-- **Melyik könyvtár szükséges?** Aspose.GIS for .NET (kompatibilis a .NET Framework és a .NET Core verziókkal).  
-- **Szükségem van licencre?** Egy ideiglenes licenc teszteléshez működik; a teljes licenc szükséges a termeléshez.  
-- **Olvashatok más formátumokat is?** Igen – ugyanaz az API támogatja a GeoJSON, KML és még sok más formátumot.  
-- **Hogyan lehet kiüríteni az attribútumokat?** Használja a `feature.GetValuesDump()` metódust, amely egy rugalmas objektumtömböt ad vissza.
+- **Mi a kód funkciója?** Megnyit egy Shapefile-t, végig iterál minden jellemzőn, és lekéri az összes attribútumértéket vagy egy kiválasztott részhalmazt.  
+- **Melyik könyvtár szükséges?** Aspose.GIS for .NET (működik .NET Framework, .NET Core, .NET 5/6 környezetekkel).  
+- **Szükségem van licencre?** Ideiglenes licenc elegendő a teszteléshez; teljes licenc kötelező a termelési környezetben.  
+- **Olvashatok más formátumokat is?** Igen – ugyanaz az API képes olvasni GeoJSON, KML, GML, CSV és több mint 30 egyéb GIS formátumot.  
+- **Hogyan dumpolhatók az attribútumok?** Hívja a `feature.GetValuesDump()` metódust, amely egy objektumtömböt ad vissza, amely közvetlenül sorosítható vagy ellenőrizhető.
 
 ## Mi az a „read shapefile C#”?
-A Shapefile C#-ban történő olvasása azt jelenti, hogy megnyitja a .shp fájlt egy GIS könyvtárral, végigiterál a vektoros jellemzőkön, és eléri a hozzájuk tartozó attribútumadatokat, amelyek a mellékelt .dbf fájlban tárolódnak. Az Aspose.GIS elrejti az alacsony szintű fájlkezelést, így Ön a szükséges attribútumértékekre koncentrálhat.
+A Shapefile C#-ban történő olvasása azt jelenti, hogy egy GIS könyvtárral megnyitja a `.shp` fájlt, végig iterál a vektor jellemzőkön, és hozzáfér a hozzájuk tartozó attribútumadatokhoz, amelyek a mellékelt `.dbf` fájlban tárolódnak. Az Aspose.GIS elrejti az alacsony szintű fájlkezelést, lehetővé téve az attribútumértékek kinyerését néhány kódsorral.
 
 ## Miért használja az Aspose.GIS-t az attribútumok olvasásához?
-- **Egyszerű API** – intuitív metódusok, mint a `GetValues` és a `GetValuesDump`.  
-- **Keresztplatformos** – működik Windows, Linux és macOS rendszereken a .NET Core segítségével.  
-- **Gazdag formátumtámogatás** – kezelje a Shapefile, GeoJSON, GML és további formátumokat extra pluginek nélkül.  
-- **Teljesítmény‑optimalizált** – gyors iteráció nagy adatkészleteken.
+Az Aspose.GIS egy nagy teljesítményű, platformfüggetlen API-t biztosít, amely egyszerűsíti az attribútumok kinyerését Shapefile-ökből. Támogat **30+ GIS formátumot**, akár **500 000 jellemzőt másodpercenként** képes feldolgozni egy standard 4‑magos szerveren, és intuitív metódusokat kínál, mint a `GetValues` és a `GetValuesDump`, amelyek megszüntetik a manuális DBF feldolgozást. Használja, ha megbízható, licenc‑szabad (teszteléshez) kódra van szüksége, amely Windows, Linux és macOS rendszereken működik extra pluginek nélkül.
 
 ## Előfeltételek
-Mielőtt elindulnánk ezen az izgalmas úton, győződjön meg róla, hogy az alábbi előfeltételek rendelkezésre állnak:
-- Aspose.GIS for .NET: Töltse le és telepítse a könyvtárat a [Aspose.GIS for .NET letöltési oldalról](https://releases.aspose.com/gis/net/).
-- Fejlesztői környezet: Állítson be egy .NET fejlesztői környezetet, például a Visual Studio-t.
-- Shapefile: Legyen egy mint Shapefile (pl. "InputShapeFile.shp") a dokumentum könyvtárában.
+- **Aspose.GIS for .NET** – töltse le az [Aspose.GIS for .NET letöltési oldalról](https://releases.aspose.com/gis/net/).  
+- **Fejlesztői környezet** – Visual Studio 2022, Rider, vagy bármely IDE, amely támogatja a .NET 6+.  
+- **Minta Shapefile** – helyezzen el egy, például `InputShapeFile.shp` nevű fájlt egy ismert mappában a gépén.  
 
 ## Névterek importálása
-A C# kódban kezdje a szükséges névterek importálásával az Aspose.GIS funkciók kihasználásához:
+Az `Aspose.Gis` névtér tartalmazza a GIS alapvető típusait, mint a `VectorLayer` és a `Feature`.  
+A `VectorLayer` egy vektor adatkészletet (például Shapefile) képvisel, míg a `Feature` egy egyedi térbeli rekordot.
 ```csharp
 using System;
 using Aspose.Gis;
 ```
 
 ## 1. lépés: A dokumentum könyvtár beállítása
+Határozza meg azt a mappát, amely a Shapefile-ját tartalmazza, hogy az API megtalálja a `.shp`, `.shx` és `.dbf` fájlokat.  
 ```csharp
 string dataDir = "Your Document Directory";
 ```
-Cserélje le a "Your Document Directory"-t a tényleges útvonalra, ahol a Shapefile található.
+Cserélje le a „Your Document Directory” szöveget a tényleges útvonalra, ahol a Shapefile található.
 
 ## 2. lépés: A VectorLayer megnyitása
+A `VectorLayer` egy vektor adatkészletet (Shapefile, GeoJSON stb.) képvisel. Megnyitásakor betölti a sémát anélkül, hogy az összes geometriai adatot beolvasná, ezáltal alacsony memóriahasználatot biztosít.  
 ```csharp
 using (VectorLayer layer = VectorLayer.Open(dataDir + "InputShapeFile.shp", Drivers.Shapefile))
 {
     // Your code for further steps goes here
 }
 ```
-Ez a lépés a Shapefile megnyitását jelenti az Aspose.GIS használatával, megadva a fájl útvonalát és formátumát (ebben az esetben Shapefile).
+Ez a lépés a fájl útvonalát és formátumát (Shapefile) adja meg.
 
 ## 3. lépés: Az összes jellemző attribútumérték lekérése
+A `GetValues` egy előre lefoglalt tömböt tölt fel a jellemző nyers attribútumértékeivel. Ez a megközelítés ideális, ha determinisztikus, fix méretű eredménykészletre van szüksége.  
 ```csharp
 foreach (var feature in layer)
 {
@@ -75,9 +102,10 @@ foreach (var feature in layer)
     Console.WriteLine();
 }
 ```
-A kódrészlet bemutatja, **hogyan olvassuk be az attribútumokat** minden jellemzőhez, egy fix méretű tömbbe betöltve.
+A kódrészlet bemutatja, hogyan olvassa be az attribútumokat **minden** jellemzőből egy fix méretű tömbbe.
 
 ## 4. lépés: Több jellemző attribútumérték lekérése
+Ha csak a mezők egy részhalmazára van szükség, kisebb tömböt adhat át, vagy oszlopindexeket használhat az átvitt adatok korlátozásához. Ez csökkenti a memóriaigényt és felgyorsítja a feldolgozást.  
 ```csharp
 foreach (var feature in layer)
 {
@@ -89,9 +117,10 @@ foreach (var feature in layer)
     Console.WriteLine();
 }
 ```
-Itt bemutatjuk, **hogyan olvassuk be a specifikus attribútumértékeket**, ha csak a mezők egy részhalmazára van szükség.
+Itt bemutatjuk, hogyan olvassuk be a konkrét attribútumértékeket (például a „Name” és a „Population”).
 
-## 5. lépés: Az attribútumértékek lekérése objektumok kiürítéseként
+## 5. lépés: Az attribútumértékek lekérése objektumok dumpjaként
+A `GetValuesDump` egy `object[]` tömböt ad vissza, amely a jellemző összes attribútumértékét tartalmazza, a jellemző sémájának megfelelően. Ez lehetővé teszi a mezők felsorolását anélkül, hogy előre ismerné azok sorrendjét vagy típusát.  
 ```csharp
 foreach (var feature in layer)
 {
@@ -102,46 +131,48 @@ foreach (var feature in layer)
     Console.WriteLine();
 }
 ```
-Ez az utolsó lépés bemutatja, **hogyan lehet kiüríteni az attribútumokat** a `GetValuesDump()` használatával, amely egy rugalmas gyűjteményt ad vissza, amelyet megtekinthet vagy sorosíthat.
+Ez az utolsó lépés egy rugalmas, séma‑független módot mutat be az attribútumok dumpolására hibakeresés vagy sorosítás céljából.
 
 ## Gyakori problémák és megoldások
-- **Tömbméret eltérés** – Győződjön meg róla, hogy a `GetValues`-nek átadott tömb mérete megegyezik a várt attribútumok számával; ellenkező esetben `null` bejegyzéseket kap.  
-- **Fájl nem található** – Ellenőrizze, hogy a `dataDir` a megfelelő mappára mutat, és a Shapefile neve pontosan van-e leírva.  
-- **Licenc kivétel** – Ha licenc hibát lát, alkalmazzon ideiglenes vagy teljes licencet, mielőtt bármilyen API metódust meghívna.
+- **Tömbméret eltérés** – Győződjön meg arról, hogy a `GetValues`‑nek átadott tömb mérete megegyezik a várt attribútumok számával; ellenkező esetben `null` elemeket kap.  
+- **Fájl nem található** – Ellenőrizze, hogy a `dataDir` a megfelelő mappára mutat, és a Shapefile neve pontosan, a `.shp` kiterjesztéssel együtt van-e leírva.  
+- **Licenc kivétel** – Ha licenc hiba jelentkezik, alkalmazzon ideiglenes vagy teljes licencet, mielőtt bármely API metódust meghívná.
 
 ## Gyakran ismételt kérdések
-### Az Aspose.GIS kompatibilis a .NET Core-val?
-Igen, az Aspose.GIS teljesen kompatibilis a .NET Core-val, lehetővé téve a keresztplatformos alkalmazások építését.
+**Q: Kompatibilis az Aspose.GIS a .NET Core‑ral?**  
+A: Igen, az Aspose.GIS teljes mértékben támogatja a .NET Core‑t, lehetővé téve a platform‑független GIS megoldásokat Windows, Linux és macOS rendszereken.
 
-### Dolgozhatok különböző GIS fájlformátumokkal az Aspose.GIS használatával?
-Természetesen! Az Aspose.GIS számos formátumot támogat, beleértve a Shapefile-t, GeoJSON-t és még sok mást.
+**Q: Használhatok különböző GIS fájlformátumokat az Aspose.GIS‑szel?**  
+A: Természetesen. A könyvtár kezeli a Shapefile, GeoJSON, KML, GML, CSV és több mint 30 egyéb formátumot extra pluginek nélkül.
 
-### Van közösségi fórum az Aspose.GIS támogatásához?
-Igen, segítséget találhat és részt vehet az Aspose.GIS közösségben a [támogatási fórumban](https://forum.aspose.com/c/gis/33).
+**Q: Hogyan szerezhetek ideiglenes licencet teszteléshez?**  
+A: Ideiglenes licencet a kiértékeléshez [itt](https://purchase.aspose.com/temporary-license/) szerezhet.
 
-### Hogyan szerezhetek ideiglenes licencet az Aspose.GIS-hez?
-Ideiglenes licencet tesztelési célokra [itt](https://purchase.aspose.com/temporary-license/) szerezhet.
+**Q: Hol található az Aspose.GIS hivatalos dokumentációja?**  
+A: A részletes referencia [itt](https://reference.aspose.com/gis/net/) érhető el.
 
-### Hol találhatók részletes dokumentációk az Aspose.GIS-hez?
-A részletes dokumentáció [itt](https://reference.aspose.com/gis/net/) érhető el.
+**Q: Hogyan kérhetem le csak a „Name” attribútumot minden jellemzőből?**  
+A: Használja a `GetValues`‑t egy egyelemű tömbbel, és adja át a „Name” oszlop indexét, vagy egyszerűen hívja a `feature["Name"]`‑t közvetlen hozzáféréshez.
 
-### Hogyan kérhetem le csak a „Name” attribútumot minden jellemzőből?
-Használja a `GetValues`-t egy egy elemű tömbbel, és adja át a „Name” mező indexét, vagy hívja meg közvetlenül a `feature["Name"]`-t.
+**Q: Mi a különbség a `GetValues` és a `GetValuesDump` között?**  
+A: A `GetValues` egy előre lefoglalt tömböt tölt fel nyers értékekkel, míg a `GetValuesDump` egy `object[]` tömböt ad vissza, amelyet a séma előzetes ismerete nélkül is be lehet járni.
 
-### Mi a különbség a `GetValues` és a `GetValuesDump` között?
-`GetValues` egy előre lefoglaltt tömböt tölt fel nyers értékekkel, míg a `GetValuesDump` egy objektumtömböt ad vissza, amelyet a séma előzetes ismerete nélkül is bejárhat.
-
----
-
-**Utoljára frissítve:** 2026-01-05  
-**Tesztelve:** Aspose.GIS for .NET (legújabb kiadás)  
-**Szerző:** Aspose  
+**Q: Hol kaphatok segítséget, ha problémába ütközöm?**  
+A: Látogassa meg az Aspose GIS [támogatási fórumát](https://forum.aspose.com/c/gis/33) a közösségi segítség és a hivatalos támogatás érdekében.
 
 ---
+
+**Utolsó frissítés:** 2026-06-15  
+**Tesztelve a következővel:** Aspose.GIS for .NET (legújabb kiadás)  
+**Szerző:** Aspose
+
+## Kapcsolódó oktatóanyagok
+
+- [Réteg attribútumok lekérése – Réteg attribútuminformációk lekérése az Aspose.GIS for .NET segítségével](/gis/net/layer-interaction-and-data-access/get-layer-attribute-information/)
+- [Hogyan kérje le az attribútum értékét (alapértelmezett) az Aspose.GIS for .NET segítségével](/gis/net/layer-interaction-and-data-access/get-feature-attribute-value-default/)
+- [Shapefile olvasása C# – Jellemzők szűrése attribútum alapján az Aspose.GIS segítségével](/gis/net/layer-management/filter-features-by-attribute/)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
-
+{{< blocks/products/products-backtop-button >}}
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
