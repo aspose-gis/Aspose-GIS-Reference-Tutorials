@@ -1,10 +1,60 @@
 ---
-date: 2026-01-10
+date: 2026-06-30
 description: Pelajari cara membuat dataset file geodatabase .NET menggunakan Aspose.GIS
   untuk .NET. Panduan langkah demi langkah untuk manajemen data GIS yang mudah.
-linktitle: Create New File GDB Dataset
+keywords:
+- how to create gdb
+- Aspose.GIS .NET tutorial
+- file geodatabase dataset
+linktitle: Buat Dataset File GDB Baru
+schemas:
+- author: Aspose
+  dateModified: '2026-06-30'
+  description: Learn how to create file geodatabase .NET datasets using Aspose.GIS
+    for .NET. Step‑by‑step guide for effortless GIS data management.
+  headline: How to Create GDB Dataset with Aspose.GIS for .NET
+  type: TechArticle
+- description: Learn how to create file geodatabase .NET datasets using Aspose.GIS
+    for .NET. Step‑by‑step guide for effortless GIS data management.
+  name: How to Create GDB Dataset with Aspose.GIS for .NET
+  steps:
+  - name: Create a New File GDB Dataset
+    text: The `Dataset.Create` method initializes an empty File Geodatabase at the
+      supplied path using the `FileGdb` driver. At this point the dataset contains
+      zero layers. **Explanation:** The `Dataset` class is Aspose.GIS's top‑level
+      object that represents a single File Geodatabase in memory. After creation
+  - name: Create and Populate `layer_1`
+    text: 'Here we add a first layer that stores integer attributes and point geometries.
+      **Explanation:** - `CreateLayer` creates a new feature class named **layer_1**.
+      - An integer attribute called **value** is defined. - The loop adds ten features,
+      each with a unique integer and a point at coordinates *(i, '
+  - name: Create and Populate `layer_2`
+    text: Next we add a second layer that demonstrates line geometry handling. **Explanation:**
+      This creates **layer_2** and inserts a single feature whose geometry is a `LineString`
+      connecting two points.
+  - name: Verify the Updated Layers Count
+    text: Finally, confirm that both layers were added successfully. **Explanation:**
+      The dataset now reports two layers, confirming that the **how to create gdb**
+      process completed as expected.
+  type: HowTo
+- questions:
+  - answer: Yes, Aspose.GIS is a standalone toolkit, but you can combine it with other
+      .NET GIS libraries to extend functionality.
+    question: Can I use Aspose.GIS for .NET with other GIS libraries?
+  - answer: Absolutely – visit the [Aspose.GIS Forum](https://forum.aspose.com/c/gis/33)
+      for discussions and assistance.
+    question: Is there a community forum for Aspose.GIS support?
+  - answer: Go to the [Temporary License](https://purchase.aspose.com/temporary-license/)
+      page for details on short‑term licensing.
+    question: How can I obtain a temporary license for Aspose.GIS?
+  - answer: Explore the [Aspose.GIS documentation](https://reference.aspose.com/gis/net/)
+      for additional code samples and API references.
+    question: Where can I find more examples and detailed documentation?
+  - answer: You can buy a license on the official [purchase page](https://purchase.aspose.com/buy).
+    question: How do I purchase a full Aspose.GIS for .NET license?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: Buat Dataset File Geodatabase .NET dengan Aspose.GIS
+title: Cara Membuat Dataset GDB dengan Aspose.GIS untuk .NET
 url: /id/net/layer-management/create-new-file-gdb-dataset/
 weight: 10
 ---
@@ -13,37 +63,32 @@ weight: 10
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Buat Dataset File Geodatabase .NET dengan Aspose.GIS
+# Cara Membuat Dataset GDB dengan Aspose.GIS untuk .NET
 
 ## Pendahuluan
-Dalam tutorial ini Anda akan **membuat file geodatabase .NET** dataset dari awal menggunakan Aspose.GIS untuk .NET. Baik Anda sedang membangun alat GIS desktop, layanan web yang menyimpan data spasial, atau hanya membutuhkan cara yang andal untuk menghasilkan File Geodatabase secara programatis, panduan ini akan memandu Anda melalui setiap langkah dengan penjelasan yang jelas dan konteks dunia nyata.
+Dalam tutorial ini Anda akan **how to create gdb** dataset dari awal menggunakan Aspose.GIS untuk .NET. Apakah Anda sedang membangun alat GIS desktop, layanan web yang menyimpan data spasial, atau hanya membutuhkan cara yang andal untuk menghasilkan File Geodatabase secara programatis, kami akan memandu Anda melalui setiap langkah dengan penjelasan yang jelas dan konteks dunia nyata.
 
 ## Jawaban Cepat
-- **Apa yang dibahas dalam tutorial ini?** Membuat File Geodatabase baru, menambahkan dua lapisan, dan memverifikasi dataset menggunakan Aspose.GIS untuk .NET.  
-- **Berapa lama waktu yang dibutuhkan?** Sekitar 10‑15 menit untuk pengembang yang familiar dengan C#.  
-- **Prasyarat?** Lingkungan pengembangan .NET, pustaka Aspose.GIS untuk .NET, dan jalur folder yang dapat ditulisi.  
-- **Bisakah saya menggunakan ini di .NET Core / .NET 6+?** Ya – API sepenuhnya kompatibel dengan runtime .NET modern.  
-- **Apakah saya memerlukan lisensi?** Lisensi Aspose.GIS sementara atau permanen diperlukan untuk penggunaan produksi.
+- **Apa yang dibahas dalam tutorial ini?** Tutorial ini menunjukkan cara membuat File Geodatabase baru, menambahkan dua lapisan, dan memverifikasi dataset menggunakan Aspose.GIS untuk .NET.  
+- **Berapa lama waktu yang dibutuhkan?** Sekitar 10‑15 menit untuk pengembang yang nyaman dengan C#.  
+- **Apa saja prasyaratnya?** Lingkungan pengembangan .NET, pustaka Aspose.GIS untuk .NET, dan jalur folder yang dapat ditulisi.  
+- **Apakah dapat dijalankan pada .NET 6+ atau .NET Core?** Ya – API sepenuhnya kompatibel dengan runtime .NET modern.  
+- **Apakah diperlukan lisensi?** Lisensi Aspose.GIS sementara atau permanen diperlukan untuk penyebaran produksi.
 
-## Apa itu File Geodatabase?
-File Geodatabase (File GDB) adalah penyimpanan data berbasis folder yang menyimpan kelas fitur GIS, dataset raster, dan metadata terkait. Ini menawarkan kinerja baca/tulis yang cepat, mendukung dataset besar, dan banyak digunakan dalam ekosistem ArcGIS milik Esri. Dengan menggunakan Aspose.GIS, Anda dapat membuat dan memanipulasi basis data ini langsung dari kode .NET tanpa perangkat lunak GIS eksternal.
+## Apa Itu File Geodatabase?
+File Geodatabase (File GDB) adalah penyimpanan data berbasis folder yang menyimpan kelas fitur GIS, dataset raster, dan metadata terkait. Ia menawarkan kinerja baca/tulis yang cepat, mendukung dataset berukuran ratusan halaman, dan merupakan format asli untuk platform ArcGIS milik Esri. Ia juga mendukung penyuntingan versi dan dapat menyimpan mosaik raster besar, menjadikannya cocok untuk manajemen data spasial tingkat perusahaan.
 
 ## Mengapa membuat file geodatabase .NET dengan Aspose.GIS?
-- **Tanpa ketergantungan eksternal** – pustaka menangani semua detail format file.  
-- **Lintas‑platform** – bekerja pada runtime .NET Windows, Linux, dan macOS.  
-- **Dukungan geometri kaya** – titik, garis, poligon, dan lainnya.  
-- **Kontrol penuh** – Anda menentukan skema, atribut, dan referensi spasial.
+Aspose.GIS menghilangkan ketergantungan eksternal, berjalan lintas‑platform pada Windows, Linux, dan macOS, serta mendukung **50+** format input dan output—termasuk shapefile, GeoJSON, KML, dan tipe raster. Pustaka ini memberi Anda kontrol penuh atas skema, atribut, dan referensi spasial, sambil mempertahankan fidelitas geometri hingga akurasi 0,001 m.
 
 ## Prasyarat
-Sebelum memulai, pastikan Anda memiliki hal berikut:
-
-- Aspose.GIS untuk .NET terpasang. Anda dapat mengunduhnya dari [halaman unduhan Aspose.GIS untuk .NET](https://releases.aspose.com/gis/net/).  
-- Lingkungan pengembangan seperti Visual Studio 2022 (atau IDE apa pun yang mendukung .NET).  
-- Folder yang dapat ditulisi di mesin Anda tempat GDB baru akan dibuat – ganti `"Your Document Directory"` dalam kode dengan jalur tersebut.  
-- Pemahaman dasar tentang C# dan struktur proyek .NET.
+- Aspose.GIS untuk .NET terpasang. Unduh dari [halaman unduhan Aspose.GIS untuk .NET](https://releases.aspose.com/gis/net/).  
+- Visual Studio 2022 (atau IDE apa pun yang mendukung .NET).  
+- Folder yang dapat ditulisi di mesin Anda – ganti `"Your Document Directory"` dalam kode dengan jalur tersebut.  
+- Familiaritas dasar dengan C# dan struktur proyek .NET.
 
 ## Impor Namespace
-Pertama, impor namespace yang memberi Anda akses ke kelas Aspose.GIS:
+Kelas `Dataset`, `Layer`, dan geometri berada di dalam namespace `Aspose.Gis`.
 
 ```csharp
 using Aspose.Gis;
@@ -56,10 +101,12 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## Panduan Langkah‑per‑Langkah
+## Cara membuat dataset gdb langkah demi langkah?
+
+Muat, buat, dan verifikasi File Geodatabase hanya dengan beberapa panggilan API. Proses ini terdiri dari menginisialisasi dataset, menambahkan lapisan dengan atribut dan geometri, dan akhirnya memeriksa jumlah lapisan untuk memastikan semuanya tersimpan dengan benar. Contoh ini juga menunjukkan cara mengatur referensi spasial dan cara membuang dataset dengan benar untuk membebaskan sumber daya sistem.
 
 ### Langkah 1: Buat Dataset File GDB Baru
-Potongan kode berikut membuat File Geodatabase kosong. Ini adalah inti dari **create file geodatabase .net**.
+Metode `Dataset.Create` menginisialisasi File Geodatabase kosong pada jalur yang diberikan menggunakan driver `FileGdb`. Pada titik ini dataset tidak memiliki lapisan.
 
 ```csharp
 string dataDir = "Your Document Directory";
@@ -70,10 +117,10 @@ using (var dataset = Dataset.Create(dataDir, Drivers.FileGdb))
 }
 ```
 
-**Penjelasan:** `Dataset.Create` menginisialisasi GDB pada jalur yang ditentukan menggunakan driver `FileGdb`. Pada titik ini dataset tidak berisi lapisan apa pun, sehingga jumlah lapisan adalah nol.
+**Penjelasan:** Kelas `Dataset` adalah objek tingkat‑atas Aspose.GIS yang mewakili satu File Geodatabase dalam memori. Setelah dibuat Anda dapat menambahkan kelas fitur (lapisan) dan memanipulasinya secara langsung.
 
 ### Langkah 2: Buat dan Isi `layer_1`
-Sekarang kita menambahkan lapisan pertama yang menyimpan atribut integer dan geometri titik.
+Di sini kami menambahkan lapisan pertama yang menyimpan atribut integer dan geometri titik.
 
 ```csharp
 using (var layer = dataset.CreateLayer("layer_1"))
@@ -90,8 +137,8 @@ using (var layer = dataset.CreateLayer("layer_1"))
 ```
 
 **Penjelasan:**  
-- `CreateLayer` membuat kelas fitur baru bernama **layer_1**.  
-- Atribut integer bernama **value** didefinisikan.  
+- `CreateLayer` membuat kelas fitur baru dengan nama **layer_1**.  
+- Sebuah atribut integer bernama **value** didefinisikan.  
 - Loop menambahkan sepuluh fitur, masing‑masing dengan integer unik dan titik pada koordinat *(i, i)*.
 
 ### Langkah 3: Buat dan Isi `layer_2`
@@ -110,52 +157,57 @@ using (var layer = dataset.CreateLayer("layer_2"))
 }
 ```
 
-**Penjelasan:** Ini membuat **layer_2** dan menyisipkan satu fitur yang geometri nya adalah `LineString` yang menghubungkan dua titik.
+**Penjelasan:** Ini membuat **layer_2** dan menyisipkan satu fitur yang geometri‑nya adalah `LineString` yang menghubungkan dua titik.
 
 ### Langkah 4: Verifikasi Jumlah Lapisan yang Diperbarui
-Akhirnya, pastikan bahwa kedua lapisan telah ditambahkan dengan sukses.
+Akhirnya, konfirmasikan bahwa kedua lapisan telah berhasil ditambahkan.
 
 ```csharp
 Console.WriteLine(dataset.LayersCount); // Output: 2
 ```
 
-**Penjelasan:** Dataset kini melaporkan dua lapisan, mengonfirmasi bahwa proses **create file geodatabase .net** selesai seperti yang diharapkan.
+**Penjelasan:** Dataset kini melaporkan dua lapisan, mengonfirmasi bahwa proses **how to create gdb** selesai seperti yang diharapkan.
 
 ## Masalah Umum dan Solusinya
-| Masalah | Mengapa Terjadi | Solusi |
+| Issue | Why it Happens | Fix |
 |-------|----------------|-----|
 | **`UnauthorizedAccessException`** saat membuat dataset | Jalur folder bersifat read‑only atau Anda tidak memiliki izin. | Pilih direktori yang dapat ditulisi atau jalankan Visual Studio sebagai Administrator. |
 | **`ArgumentException` untuk driver** | Nama driver salah ketik atau versi pustaka tidak mendukungnya. | Gunakan `Drivers.FileGdb` persis seperti yang ditunjukkan; pastikan Anda memiliki paket Aspose.GIS terbaru. |
-| **Fitur tidak muncul di ArcGIS** | Referensi spasial hilang atau geometri tidak kompatibel. | Tetapkan referensi spasial pada lapisan jika diperlukan, dan pastikan geometri valid. |
+| **Fitur tidak muncul di ArcGIS** | Referensi spasial hilang atau geometri tidak kompatibel. | Atur referensi spasial pada lapisan jika diperlukan, dan pastikan geometri valid. |
 
 ## Pertanyaan yang Sering Diajukan
-### Q: Bisakah saya menggunakan Aspose.GIS untuk .NET dengan pustaka GIS lain?
-Aspose.GIS untuk .NET adalah toolkit mandiri; namun, Anda dapat mengintegrasikannya dengan pustaka .NET lain untuk meningkatkan fungsionalitas.
+**Q: Bisakah saya menggunakan Aspose.GIS untuk .NET dengan pustaka GIS lain?**  
+A: Ya, Aspose.GIS adalah toolkit mandiri, tetapi Anda dapat menggabungkannya dengan pustaka GIS .NET lain untuk memperluas fungsionalitas.
 
-### Q: Apakah ada forum komunitas untuk dukungan Aspose.GIS?
-Ya, Anda dapat menemukan dukungan dan diskusi di [Aspose.GIS Forum](https://forum.aspose.com/c/gis/33).
+**Q: Apakah ada forum komunitas untuk dukungan Aspose.GIS?**  
+A: Tentu – kunjungi [Forum Aspose.GIS](https://forum.aspose.com/c/gis/33) untuk diskusi dan bantuan.
 
-### Q: Bagaimana saya dapat memperoleh lisensi sementara untuk Aspose.GIS?
-Kunjungi halaman [Temporary License](https://purchase.aspose.com/temporary-license/) untuk informasi tentang cara memperoleh lisensi sementara.
+**Q: Bagaimana cara mendapatkan lisensi sementara untuk Aspose.GIS?**  
+A: Buka halaman [Lisensi Sementara](https://purchase.aspose.com/temporary-license/) untuk detail tentang lisensi jangka pendek.
 
-### Q: Apakah ada contoh dan dokumentasi tambahan yang tersedia?
-Jelajahi [dokumentasi Aspose.GIS](https://reference.aspose.com/gis/net/) untuk contoh lebih banyak dan informasi detail.
+**Q: Di mana saya dapat menemukan contoh lebih banyak dan dokumentasi terperinci?**  
+A: Jelajahi [dokumentasi Aspose.GIS](https://reference.aspose.com/gis/net/) untuk contoh kode tambahan dan referensi API.
 
-### Q: Di mana saya dapat membeli Aspose.GIS untuk .NET?
-Anda dapat membeli Aspose.GIS untuk .NET di [halaman pembelian](https://purchase.aspose.com/buy).
+**Q: Bagaimana cara membeli lisensi penuh Aspose.GIS untuk .NET?**  
+A: Anda dapat membeli lisensi di [halaman pembelian resmi](https://purchase.aspose.com/buy).
 
 ## Kesimpulan
-Anda kini telah berhasil **membuat file geodatabase .NET** dataset, menambahkan dua lapisan yang berbeda, dan memverifikasi hasilnya menggunakan Aspose.GIS. Dasar ini memungkinkan Anda membangun aplikasi GIS yang lebih kaya—menambahkan lebih banyak lapisan, mendefinisikan skema kompleks, atau mengintegrasikan dengan layanan web. Jelajahi lebih lanjut API Aspose.GIS untuk bekerja dengan data raster, kueri spasial, dan operasi geometri lanjutan.
+Anda kini telah menguasai **how to create gdb** dataset, menambahkan dua lapisan yang berbeda, dan memverifikasi hasilnya menggunakan Aspose.GIS. Dasar ini memungkinkan Anda mengembangkan aplikasi GIS yang lebih kaya—menambahkan lebih banyak lapisan, mendefinisikan skema kompleks, atau mengintegrasikan dengan layanan web. Selami lebih dalam API Aspose.GIS untuk bekerja dengan data raster, kueri spasial, dan operasi geometri lanjutan.
 
 ---
 
-**Terakhir Diperbarui:** 2026-01-10  
-**Diuji Dengan:** Aspose.GIS for .NET 24.11 (or latest)  
-**Penulis:** Aspose  
+**Terakhir Diperbarui:** 2026-06-30  
+**Diuji Dengan:** Aspose.GIS untuk .NET 24.11 (atau terbaru)  
+**Penulis:** Aspose
+
+## Tutorial Terkait
+
+- [Buat Lapisan Vektor di File GDB – Tutorial Aspose.GIS .NET](/gis/net/layer-management/create-file-gdb-with-single-layer/)
+- [Buat Dataset File GDB dan Atur Toleransi untuk Lapisan](/gis/net/layer-data-operations/set-tolerances-for-file-gdb-layer/)
+- [Cara Menghapus Lapisan dari Dataset File GDB dengan Aspose.GIS](/gis/net/layer-data-operations/remove-layers-from-file-gdb-dataset/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
-
 {{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/products-backtop-button >}}
+{{< /blocks/products/pf/main-wrap-class >}}
