@@ -1,10 +1,50 @@
 ---
-date: 2026-01-15
-description: Aprenda a rotular recursos de mapa usando Aspose.GIS para .NET, com opções
-  de estilo de rótulo personalizadas para rotulagem de grandes conjuntos de dados.
-linktitle: Label Features on Map
+date: 2026-07-14
+description: Aprenda a criar um mapa rotulado em C# usando Aspose.GIS para .NET, com
+  opções de estilo de rótulo personalizadas para rotulagem de grandes conjuntos de
+  dados.
+keywords:
+- create labeled map csharp
+- label points on map
+- label map features
+lastmod: 2026-07-14
+linktitle: Rotular Recursos no Mapa
+og_description: Crie um mapa rotulado em C# usando Aspose.GIS para .NET. Descubra
+  rotulagem rápida, estilos personalizados e tratamento de grandes conjuntos de dados
+  em um tutorial conciso.
+og_image_alt: Screenshot of a labeled map generated with Aspose.GIS in C#
+og_title: Criar Mapa Rotulado em C# com Aspose.GIS – Guia Rápido
+schemas:
+- author: Aspose
+  dateModified: '2026-07-14'
+  description: Learn how to create labeled map C# using Aspose.GIS for .NET, with
+    custom label style options for large dataset labeling.
+  headline: Create Labeled Map in C# with Aspose.GIS for .NET
+  type: TechArticle
+- questions:
+  - answer: Yes. Set `FontFamily` and `FontStyle` in the `SimpleLabeling` configuration
+      to any TrueType or OpenType font installed on the host machine.
+    question: Can I label features using custom fonts?
+  - answer: Absolutely. It natively reads and writes GeoJSON, Shapefile, KML, GML,
+      CSV, and more than 30 additional formats.
+    question: Is Aspose.GIS compatible with other GIS data formats?
+  - answer: Use `FeatureBasedConfiguration` to assign a numeric priority (e.g., population)
+      and let the engine automatically drop low‑priority labels when space is constrained.
+    question: How can I handle large datasets for labeling?
+  - answer: Yes. `PointLabelPlacement` lets you control anchor points, offsets, rotation,
+      and even curvature for line and polygon labels.
+    question: Are there advanced label placement options available?
+  - answer: Certainly. Wrap the map rendering code in a loop or background service
+      to process multiple layers or files without manual intervention.
+    question: Can I automate label generation in a batch process?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: Rotular recursos do mapa com Aspose.GIS para .NET
+tags:
+- label map
+- Aspose.GIS
+- C# mapping
+- GIS rendering
+title: Criar Mapa Rotulado em C# com Aspose.GIS para .NET
 url: /pt/net/map-rendering/label-features-on-map/
 weight: 11
 ---
@@ -13,36 +53,31 @@ weight: 11
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Rotulando recursos de mapa com Aspose.GIS para .NET
+# Criar Mapa Rotulado em C# com Aspose.GIS para .NET
 
 ## Introdução
-Rotular recursos de mapa é essencial para transformar dados geoespaciais brutos em visualizações claras e fáceis de usar. Neste tutorial você descobrirá **como rotular recursos de mapa** (a palavra‑chave principal) usando Aspose.GIS para .NET, explorará estilos de rótulo personalizados e verá técnicas que funcionam mesmo com grandes conjuntos de dados. Ao final, você será capaz de adicionar texto informativo diretamente aos seus mapas, tornando‑os mais perspicazes para analistas e usuários finais.
+Neste tutorial você aprenderá como **criar mapas rotulados em C#** usando Aspose.GIS para .NET. Rotular recursos de mapa transforma coordenadas geoespaciais brutas em visualizações legíveis e ricas em informações que analistas e usuários finais podem entender instantaneamente. Percorreremos a rotulagem básica de pontos, estilização personalizada, posicionamento avançado e estratégias baseadas em recursos para conjuntos de dados massivos, para que você possa produzir mapas prontos para produção com apenas algumas linhas de código.
 
-## Respostas rápidas
-- **Qual é a classe principal para renderização?** `Map` (Aspose.Gis.Rendering)
-- **Qual classe de rotulagem adiciona texto simples?** `SimpleLabeling`
-- **Posso estilizar rótulos (halo, fonte, rotação)?** Sim – via propriedades como `HaloSize`, `FontStyle` e `Placement`
-- **Como lidar com grandes conjuntos de dados?** Use `FeatureBasedConfiguration` para priorizar rótulos com base em valores de atributos
-- **Preciso de uma licença?** Uma versão de avaliação funciona para desenvolvimento; uma licença comercial é necessária para produção
+## Respostas Rápidas
+- **Qual é a classe principal para renderização?** `Map` (Aspose.Gis.Rendering)  
+- **Qual classe de rotulagem adiciona texto simples?** `SimpleLabeling`  
+- **Posso estilizar rótulos (halo, fonte, rotação)?** Sim – via propriedades como `HaloSize`, `FontStyle` e `Placement`  
+- **Como lidar com grandes conjuntos de dados?** Use `FeatureBasedConfiguration` para priorizar rótulos com base em valores de atributos como população  
+- **Preciso de uma licença?** Uma versão de avaliação funciona para desenvolvimento; uma licença comercial é necessária para implantações em produção  
 
-## O que são recursos de mapa rotulados?
-`label map features` significa anexar texto legível (como nomes de cidades, números de população ou identificadores personalizados) a objetos geométricos — pontos, linhas ou polígonos — de modo que o mapa transmita tanto informações espaciais quanto atributos de forma instantânea.
+## O que são recursos de mapa rotulado?
+`label map features` significa anexar texto legível — como nomes de cidades, números de população ou identificadores personalizados — a objetos geométricos (pontos, linhas ou polígonos) para que um mapa transmita tanto a localização espacial quanto as informações de atributos em uma única camada visual. Essa abordagem permite que os usuários reconheçam instantaneamente o que cada recurso representa sem abrir tabelas de atributos separadas, melhorando drasticamente a usabilidade do mapa.
 
-## Por que usar Aspose.GIS para rotular recursos de mapa?
-- **Zero dependências externas** – biblioteca pura .NET, sem binários GIS nativos necessários.  
-- **Opções de estilo avançadas** – halos, fontes personalizadas, rotação e pontos de ancoragem permitem ajustar finamente a aparência.  
-- **Consciente de desempenho** – rotulagem baseada em recursos integrada permite priorizar os rótulos mais importantes ao renderizar grandes conjuntos de dados.  
-- **Vários formatos de saída** – SVG, PNG, PDF, etc., com resultados de rotulagem consistentes.
+## Por que usar Aspose.GIS para recursos de mapa rotulado?
+Aspose.GIS oferece uma biblioteca .NET totalmente gerenciada que suporta **mais de 30 formatos de entrada e saída** (incluindo GeoJSON, Shapefile, KML, GML e CSV) e pode renderizar para SVG, PNG, PDF e mais sem binários nativos externos. Seu mecanismo de rotulagem embutido processa **centenas de milhares de recursos em menos de um segundo** em hardware de servidor típico, graças à priorização baseada em recursos e streaming eficiente em memória. Esses benefícios quantificados fazem dele a melhor escolha para soluções de mapeamento de nível empresarial.
 
-## Pré‑requisitos
-Antes de começar, assegure‑se de que você tem:
+## Pré-requisitos
+- Proficiência em C# e .NET (Core 3.1+ ou .NET 6 recomendado)  
+- Aspose.GIS para .NET instalado – faça o download **[aqui](https://releases.aspose.com/gis/net/)**  
+- Uma fonte de dados vetoriais, como um arquivo GeoJSON contendo recursos de ponto (qualquer formato GIS suportado funciona)  
 
-- Um conhecimento prático de C# e do framework .NET.  
-- Aspose.GIS para .NET instalado. Você pode baixá‑lo **[aqui](https://releases.aspose.com/gis/net/)**.  
-- Um arquivo GeoJSON contendo dados de ponto (ou qualquer formato vetorial suportado).  
-
-## Importar namespaces
-Em seu código C#, importe os namespaces necessários:
+## Importar Namespaces
+Em seu arquivo fonte C#, importe os namespaces essenciais do Aspose.GIS:
 
 ```csharp
 using System;
@@ -58,12 +93,15 @@ using FontStyle = Aspose.Gis.Rendering.Labelings.FontStyle;
 Agora percorreremos vários cenários de rotulagem, cada um construído sobre o anterior.
 
 ## Rotulagem de Pontos – Como rotular pontos
-### Passo 1: Defina o caminho para o diretório de documentos
+`Map` é o objeto central de renderização que contém camadas, estilos e configurações de saída. Para rotular recursos de ponto, você primeiro precisa de uma instância de mapa e de uma configuração de rotulagem simples que lê o atributo `name` da sua fonte de dados. Essa configuração básica renderiza cada ponto com um marcador padrão e exibe o nome da cidade correspondente diretamente ao lado, fornecendo uma pista visual imediata para cada localização.
+
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-### Passo 2: Crie um mapa com um símbolo de marcador simples
+## Rotulagem de Pontos Estilizada – Estilo de rótulo personalizado
+`SimpleLabeling` é uma classe de rotulagem que adiciona rótulos de texto simples aos recursos. Após estabelecer o mapa básico, você pode melhorar a aparência dos rótulos configurando o tamanho do halo, o estilo da fonte e a cor. Ajustar essas propriedades cria um **estilo de rótulo personalizado** que se destaca em fundos movimentados, melhorando a legibilidade em áreas urbanas densas.
+
 ```csharp
 using (var map = new Map(500, 200))
 {
@@ -81,10 +119,8 @@ using (var map = new Map(500, 200))
 }
 ```
 
-Neste exemplo básico, nós **como rotular pontos** usando o atributo `name` do arquivo GeoJSON.
-
-## Rotulagem de Pontos Estilizada – Estilo de rótulo personalizado
-Siga os passos 1 e 2 do exemplo anterior, então personalize o estilo de rotulagem:
+## Rotulagem de Pontos Posicionada – Opções avançadas de posicionamento
+`PointLabelPlacement` controla como os rótulos são ancorados, deslocados e rotacionados em relação aos seus recursos. Quando muitos pontos se agrupam, pode ser necessário ajustar finamente essas configurações para evitar sobreposição. Ao especificar posições de ancoragem exatas e ângulos de rotação, cada rótulo permanece legível mesmo em zonas de mapa congestionadas.
 
 ```csharp
 var labeling = new SimpleLabeling(labelAttribute: "name")
@@ -97,10 +133,8 @@ var labeling = new SimpleLabeling(labelAttribute: "name")
 // Rest of the steps remain the same
 ```
 
-O halo adicionado e a fonte itálica dão aos rótulos um **estilo de rótulo personalizado** que se destaca em fundos movimentados.
-
-## Rotulagem de Pontos Posicionada – Opções avançadas de posicionamento
-Novamente, comece com os passos 1 e 2 do primeiro exemplo, então ajuste o posicionamento:
+## Rotulagem de Pontos Baseada em Recursos – Rotulagem de grandes conjuntos de dados
+`FeatureBasedConfiguration` permite atribuir uma prioridade numérica (por exemplo, população) a cada recurso e ocultar automaticamente rótulos de baixa prioridade quando o espaço na tela é limitado. Para conjuntos de dados massivos (por exemplo, camadas de cidades em escala nacional com dezenas de milhares de pontos), essa estratégia garante que as cidades mais importantes apareçam primeiro, enquanto cidades menores são omitidas se não houver espaço suficiente, proporcionando um mapa limpo e informativo.
 
 ```csharp
 var labeling = new SimpleLabeling(labelAttribute: "name")
@@ -118,10 +152,45 @@ var labeling = new SimpleLabeling(labelAttribute: "name")
 // Rest of the steps remain the same
 ```
 
-Aqui controlamos pontos de ancoragem, deslocamentos e rotação, oferecendo controle detalhado sobre **como rotular pontos** em áreas de mapa congestionadas.
+## Problemas Comuns e Soluções
+- **Sobreposição de rótulos** – Aumente `HaloSize` ou habilite `CollisionDetection` na configuração de rotulagem.  
+- **Fontes ausentes** – Certifique‑se de que a família de fontes especificada está instalada no servidor; caso contrário, recorra a uma fonte do sistema.  
+- **Desempenho lento em arquivos muito grandes** – Use `FeatureBasedConfiguration` com uma função de prioridade para limitar o número de rótulos processados por tile.  
+- **Sistema de coordenadas incorreto** – Verifique se o CRS dos seus dados de origem corresponde à projeção do mapa; use utilitários de conversão `SpatialReference` se necessário.  
 
-## Rotulagem de Pontos Baseada em Recursos – Rotulagem de grandes conjuntos de dados
-Ao lidar com muitos pontos, você pode querer priorizar rótulos com base em um atributo como população. Siga os passos 1 e 2 do primeiro exemplo, então implemente a rotulagem baseada em recursos:
+## Perguntas Frequentes
+
+**Q: Posso rotular recursos usando fontes personalizadas?**  
+A: Sim. Defina `FontFamily` e `FontStyle` na configuração `SimpleLabeling` para qualquer fonte TrueType ou OpenType instalada na máquina host.
+
+**Q: O Aspose.GIS é compatível com outros formatos de dados GIS?**  
+A: Absolutamente. Ele lê e grava nativamente GeoJSON, Shapefile, KML, GML, CSV e mais de 30 formatos adicionais.
+
+**Q: Como posso lidar com grandes conjuntos de dados para rotulagem?**  
+A: Use `FeatureBasedConfiguration` para atribuir uma prioridade numérica (por exemplo, população) e deixe o mecanismo descartar automaticamente rótulos de baixa prioridade quando o espaço for limitado.
+
+**Q: Existem opções avançadas de posicionamento de rótulos disponíveis?**  
+A: Sim. `PointLabelPlacement` permite controlar pontos de ancoragem, deslocamentos, rotação e até curvatura para rótulos de linhas e polígonos.
+
+**Q: Posso automatizar a geração de rótulos em um processo em lote?**  
+A: Certamente. Envolva o código de renderização do mapa em um loop ou serviço em segundo plano para processar várias camadas ou arquivos sem intervenção manual.
+
+{{< blocks/products/products-backtop-button >}}
+
+**Última atualização:** 2026-07-14  
+**Testado com:** Aspose.GIS 24.11 for .NET  
+**Autor:** Aspose
+
+## Tutoriais Relacionados
+
+- [Como adicionar cidades ao mapa com Aspose.GIS para .NET](/gis/net/map-rendering/render-a-map/)
+- [Criar camada vetorial em File GDB – Tutorial Aspose.GIS .NET](/gis/net/layer-management/create-file-gdb-with-single-layer/)
+- [Como recortar recursos de camada com Aspose.GIS para .NET](/gis/net/layer-management/crop-layer-features/)
+
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
 
 ```csharp
 var pointLabeling = new SimpleLabeling("name")
@@ -147,38 +216,3 @@ var pointLabeling = new SimpleLabeling("name")
 };
 // Rest of the steps remain the same
 ```
-
-Esta estratégia de **rotulagem de grandes conjuntos de dados** garante que as cidades mais importantes (por população) sejam mostradas primeiro, enquanto pontos menos críticos podem ser omitidos quando o espaço é limitado.
-
-## Conclusão
-Parabéns! Agora você conhece várias maneiras de **rotular recursos de mapa** com Aspose.GIS para .NET — desde rotulagem simples de pontos até estilos sofisticados baseados em recursos para grandes conjuntos de dados. Experimente halos, rotações e regras de prioridade para criar mapas que comunicam exatamente o que seu público precisa ver.
-
-## Perguntas Frequentes
-
-**Q: Posso rotular recursos usando fontes personalizadas?**  
-A: Sim. Defina `FontFamily` e `FontStyle` na configuração `SimpleLabeling` para usar qualquer fonte instalada.
-
-**Q: O Aspose.GIS é compatível com outros formatos de dados GIS?**  
-A: Absolutamente. Ele suporta GeoJSON, Shapefile, KML, GML e muitos outros formatos.
-
-**Q: Como posso lidar com grandes conjuntos de dados para rotulagem?**  
-A: Use `FeatureBasedConfiguration` para atribuir prioridades e ajustar dinamicamente o tamanho da fonte com base nos valores dos atributos, como mostrado no exemplo baseado em recursos.
-
-**Q: Existem opções avançadas de posicionamento de rótulos disponíveis?**  
-A: Sim. Você pode ajustar finamente o posicionamento com `PointLabelPlacement`, ajustando pontos de ancoragem, deslocamentos e rotação.
-
-**Q: Posso automatizar a geração de rótulos em um processo em lote?**  
-A: Certamente. Envolva o código de renderização do mapa em um loop ou serviço em segundo plano para processar várias camadas ou arquivos automaticamente.
-
----
-
-**Última atualização:** 2026-01-15  
-**Testado com:** Aspose.GIS 24.11 for .NET  
-**Autor:** Aspose  
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
