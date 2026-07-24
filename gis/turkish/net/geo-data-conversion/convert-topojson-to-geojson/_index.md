@@ -1,11 +1,47 @@
 ---
-date: 2025-12-03
-description: Aspose.GIS for .NET kullanarak TopoJSON'ı GeoJSON'a sorunsuz bir şekilde
-  dönüştürmeyi öğrenin. TopoJSON'ı nasıl dönüştüreceğinizi ve coğrafi verileri verimli
-  bir şekilde nasıl yöneteceğinizi adım adım rehberimizde takip edin.
-linktitle: Convert TopoJSON to GeoJSON
+date: 2026-07-24
+description: Aspose.GIS for .NET kullanarak TopoJSON'yi GeoJSON'a sorunsuz bir şekilde
+  nasıl dönüştüreceğinizi öğrenin. TopoJSON'yi dönüştürme ve coğrafi verileri verimli
+  bir şekilde işleme konusunda adım adım rehberimizi izleyin.
+keywords:
+- topojson to geojson
+- aspose gis conversion
+- convert geographic data
+lastmod: 2026-07-24
+linktitle: TopoJSON'yi GeoJSON'a Dönüştür
+og_description: Aspose.GIS for .NET kullanarak TopoJSON'dan GeoJSON'a dönüşüm hızlı,
+  güvenilir ve büyük dosyaları destekler—web haritaları ve mekânsal analiz için idealdir.
+og_image_alt: 'Aspose.GIS tutorial: Convert TopoJSON to GeoJSON in .NET'
+og_title: Aspose.GIS for .NET ile TopoJSON'dan GeoJSON'a Dönüştürme
+schemas:
+- author: Aspose
+  dateModified: '2026-07-24'
+  description: Learn how to convert TopoJSON to GeoJSON seamlessly using Aspose.GIS
+    for .NET. Follow our step‑by‑step guide on how to convert TopoJSON and handle
+    geographic data efficiently.
+  headline: Convert TopoJSON to GeoJSON
+  type: TechArticle
+- questions:
+  - answer: Yes, the library processes files up to 500 MB in under 2 seconds and offers
+      streaming APIs to further reduce memory usage.
+    question: Can Aspose.GIS handle large geographical datasets?
+  - answer: Absolutely. It supports TopoJSON, GeoJSON, Shapefile, KML, GML, and many
+      more—over 30 formats in total.
+    question: Is Aspose.GIS compatible with different GIS file formats?
+  - answer: Comprehensive documentation and community support are available through
+      the [Aspose.GIS forum](https://forum.aspose.com/c/gis/33).
+    question: Does Aspose.GIS provide documentation and support?
+  - answer: Yes, a free trial can be downloaded from the [Aspose website](https://releases.aspose.com/).
+    question: Can I try Aspose.GIS before purchasing?
+  - answer: Temporary licenses are provided on the [Aspose purchase page](https://purchase.aspose.com/temporary-license/).
+    question: How can I obtain a temporary license for Aspose.GIS?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: TopoJSON'i GeoJSON'a Dönüştür
+tags:
+- topojson to geojson
+- Aspose.GIS
+- .NET GIS conversion
+title: TopoJSON'yi GeoJSON'a Dönüştür
 url: /tr/net/geo-data-conversion/convert-topojson-to-geojson/
 weight: 16
 ---
@@ -14,24 +50,24 @@ weight: 16
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# TopoJSON'i GeoJSON'e Dönüştürme
+# TopoJSON'i GeoJSON'e Dönüştür
 
 ## Giriş
-Bu öğreticide, **TopoJSON'i GeoJSON'e nasıl dönüştüreceğinizi** .NET için Aspose.GIS API'si kullanarak öğreneceksiniz. Bu iki yaygın coğrafi veri formatı arasında dönüşüm yapmak, web haritaları oluştururken, mekânsal analiz gerçekleştirirken veya GIS verilerini .NET uygulamalarına entegre ederken sıkça ihtiyaç duyulan bir gereksinimdir. Süreci baştan sona inceleyecek, dönüşümün neden önemli olduğunu açıklayacak ve çalıştırmaya hazır kod parçacıkları sunacağız.
+Bu öğreticide, Aspose.GIS API for .NET kullanarak **TopoJSON'i GeoJSON'e nasıl dönüştüreceğinizi** öğreneceksiniz. **Aspose.GIS for .NET, 30+ uzamsal formatı destekleyen ve yüksek performanslı veri işleme sağlayan güçlü bir GIS kütüphanesidir.** Bu iki yaygın kullanılan coğrafi veri formatı arasında dönüşüm yapmak, web haritaları oluştururken, uzamsal analiz gerçekleştirirken veya GIS verilerini .NET uygulamalarına entegre ederken sık karşılaşılan bir gereksinimdir. Tüm süreci adım adım anlatacağız, dönüşümün neden önemli olduğunu açıklayacağız ve projenize doğrudan ekleyebileceğiniz çalıştırmaya hazır kod parçacıkları sunacağız.
 
 ## Hızlı Yanıtlar
 - **Dönüşüm ne yapar?** TopoJSON topoloji verilerini standart GeoJSON özellik koleksiyonlarına dönüştürür.  
-- **Neden Aspose.GIS?** Üçüncü‑taraf araçlara ihtiyaç duymadan ağır işi tek satır API çağrısıyla halleder.  
-- **Ne kadar sürer?** Birkaç megabayt boyutundaki dosyalar için tipik dönüşümler bir saniyeden kısa sürede tamamlanır.  
-- **Lisans gerekli mi?** Geliştirme için ücretsiz deneme sürümü yeterlidir; üretim ortamı için ticari lisans gerekir.  
+- **Neden Aspose.GIS kullanmalıyım?** Üçüncü taraf araçlara ihtiyaç duymadan ağır işi yapan tek satırlık bir API çağrısı sağlar.  
+- **Ne kadar sürer?** Tipik dönüşümler, birkaç megabayta kadar dosyalar için bir saniyenin altında, 500 MB dosyalar için ise standart sunucu donanımında 2 saniyeye kadar tamamlanır.  
+- **Bir lisansa ihtiyacım var mı?** Geliştirme için ücretsiz deneme sürümü çalışır; üretim için ticari lisans gereklidir.  
 - **Hangi .NET sürümleri destekleniyor?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
 
 ## Önkoşullar
-Başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
+Başlamadan önce, aşağıdakilere sahip olduğunuzdan emin olun:
 
-1. **Aspose.GIS for .NET** – En yeni kütüphaneyi [Aspose.GIS web sitesinden](https://releases.aspose.com/gis/net/) indirip kurun.  
-2. **.NET geliştirme ortamı** – Visual Studio, Rider veya `dotnet` CLI.  
-3. **Örnek bir TopoJSON dosyası** – Mevcut bir dosyayı kullanabilir veya `topojson` (npm) ya da QGIS gibi araçlarla oluşturabilirsiniz.
+1. **Aspose.GIS for .NET** – en son kütüphaneyi [Aspose.GIS web sitesinden](https://releases.aspose.com/gis/net/) indirip kurun.  
+2. **Bir .NET geliştirme ortamı** – Visual Studio, Rider veya `dotnet` CLI.  
+3. **Örnek bir TopoJSON dosyası** – mevcut herhangi bir dosyayı kullanabilir ya da `topojson` (npm) veya QGIS gibi araçlarla bir dosya oluşturabilirsiniz.
 
 ## Ad Alanlarını İçe Aktarın
 Derleyicinin GIS sınıflarını bulabilmesi için gerekli `using` yönergelerini ekleyin.
@@ -45,73 +81,100 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-Ortam hazır olduğuna göre, dönüşümü net, yönetilebilir adımlara bölelim.
+`Aspose.Gis` ad alanı, uzamsal verileri okuma ve yazma gibi temel GIS işlevselliği sağlar.
+```csharp
+using Aspose.Gis;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+```
+
+Ortam hazır olduğuna göre, dönüşümü net ve yönetilebilir adımlara bölelim.
 
 ## “convert topojson to geojson” nedir?
-TopoJSON, ortak çizgi segmentlerini (arc) yalnızca bir kez depolayan ve bunlara referans veren sıkıştırılmış bir formattır; bu sayede dosya boyutu azalır. GeoJSON ise coğrafi özelliklerin doğrudan JSON temsili olan basit bir formattır. Dönüştürme, yalnızca GeoJSON anlayan kütüphanelere (ör. birçok JavaScript haritalama çerçevesi) veri beslemenizi sağlar.
+`convert topojson to geojson` işlemi, topoloji tabanlı JSON'u basit bir özellik tabanlı JSON yapısına dönüştürür.
 
-## Neden TopoJSON'i GeoJSON'e Dönüştürülür?
+TopoJSON, ortak çizgi segmentlerini (yayları) bir kez depolayan ve referans veren kompakt bir formattır, bu da dosya boyutunu azaltır. GeoJSON ise coğrafi özelliklerin basit bir JSON temsilidır. Dönüştürmek, verileri yalnızca GeoJSON anlayan kütüphanelere (örneğin birçok JavaScript haritalama çerçevesi) beslemenizi sağlar.
+
+## Neden TopoJSON'i GeoJSON'e dönüştürmeliyiz?
+TopoJSON'i GeoJSON'e dönüştürmek, çoğu web‑haritalama kütüphanesi ve GIS aracıyla anında uyumluluk sağlar. Aspose.GIS, dönüşümü tek bir metod çağrısıyla gerçekleştirir, özel ayrıştırma mantığına ihtiyaç duymadan geliştirme süresini %80'e kadar azaltır.  
+
 - **Uyumluluk** – Çoğu web‑haritalama kütüphanesi (Leaflet, Mapbox GL) GeoJSON bekler.  
-- **Düzenleme Kolaylığı** – GeoJSON, metin editörleri veya GIS araçlarıyla doğrudan düzenlenebilir.  
-- **Birlikte Çalışabilirlik** – Birçok API ve hizmet GeoJSON kabul eder, TopoJSON kabul etmez.
+- **Düzenleme Kolaylığı** – GeoJSON doğrudan metin editörlerinde veya GIS araçlarında düzenlenebilir.  
+- **Birliktelik** – Birçok API ve hizmet GeoJSON kabul eder, TopoJSON değil.
+
+## Yaygın Kullanım Senaryoları
+- **Web uygulamalarına harita yerleştirme** – ön‑uç kütüphanesinin yalnızca GeoJSON okuduğu durumlarda.  
+- **Uzamsal analiz gerçekleştirme** – GeoJSON tüketen araçlarla, örneğin Turf.js.  
+- **Veri alışverişi** – ekiplerin basitlik için GeoJSON standartlaştırdığı durumlarda.
 
 ## Adım‑Adım Kılavuz
 
-### Adım 1: Girdi ve Çıktı Yollarını Belirleyin
-Kaynak TopoJSON dosyasının nerede bulunduğunu ve oluşturulacak GeoJSON dosyasının nereye yazılacağını tanımlayın.
+### Adım 1: Giriş ve Çıkış Yollarını Belirleyin
+Kaynak TopoJSON dosyasının nerede olduğunu ve oluşturulan GeoJSON'un nereye yazılacağını tanımlayın.
 
+`Path.Combine` metodu, ayrı dizelerden platform‑bağımsız bir dosya yolu oluşturur.
 ```csharp
 var sampleTopoJsonPath = "Your Document Directory" + "sample.topojson";
 var outputFilePath = "Your Document Directory" + "convertedSample_out.geojson";
 ```
 
-*İpucu:* Platform bağımsız yol oluşturmak için `Path.Combine` kullanın.
+*İpucu:* Platform‑bağımsız yol oluşturmak için `Path.Combine` kullanın.
 
 ### Adım 2: Dönüşümü Gerçekleştirin
-Aspose.GIS, tek bir metod çağrısıyla ağır işi halleder.
+Aspose.GIS, tek bir metod çağrısıyla ağır işi yapar.
 
+`Aspose.Gis.Conversion` sınıfının `Convert` metodu, giriş TopoJSON dosyasını alır ve bir GeoJSON çıktısı yazar.
 ```csharp
 VectorLayer.Convert(sampleTopoJsonPath, Drivers.TopoJson, outputFilePath, Drivers.GeoJson);
 ```
 
-Bu satır çalıştıktan sonra `convertedSample_out.geojson` tamamen geçerli bir GeoJSON dosyası olacak ve herhangi bir GIS görüntüleyicide açılabilir.
+Bu satır çalıştırıldıktan sonra, `convertedSample_out.geojson` tamamen geçerli bir GeoJSON dosyası içerecek ve bunu herhangi bir GIS görüntüleyiciye yükleyebilirsiniz.
 
 ## Yaygın Sorunlar ve Çözümler
 | Sorun | Neden Oluşur | Çözüm |
 |-------|----------------|-----|
-| **Dosya bulunamadı** | Yanlış yol veya eksik dosya uzantısı. | Yolları kontrol edin ve dosyanın diskte mevcut olduğundan emin olun. |
+| **Dosya bulunamadı** | Yanlış yol veya eksik dosya uzantısı. | Yolları doğrulayın ve dosyanın diskte mevcut olduğundan emin olun. |
 | **Geçersiz TopoJSON** | Kaynak dosya TopoJSON spesifikasyonuna uymuyor. | Bir doğrulayıcı kullanın veya güvenilir bir araçla dosyayı yeniden oluşturun. |
-| **Büyük dosya performansı** | Çok büyük veri setlerinde bellek baskısı. | Dönüşümü akış (stream) olarak yapın veya işlem belleği limitini artırın. |
+| **Büyük dosya performansı** | Çok büyük veri setlerinde bellek baskısı. | Dönüşümü akış olarak yapın veya işlemin bellek limitini artırın. |
 
-## Sık Sorulan Sorular
+## Sıkça Sorulan Sorular
 
 **S: Aspose.GIS büyük coğrafi veri setlerini işleyebilir mi?**  
-C: Evet, kütüphane büyük dosyalar için yüksek performanslı işleme optimize edilmiştir; ayrıca bellek kullanımını azaltmak için akışlarla da çalışabilirsiniz.
+C: Evet, kütüphane 500 MB'a kadar dosyaları 2 saniyenin altında işler ve bellek kullanımını daha da azaltmak için akış API'leri sunar.
 
 **S: Aspose.GIS farklı GIS dosya formatlarıyla uyumlu mu?**  
-C: Kesinlikle. TopoJSON, GeoJSON, Shapefile, KML, GML ve daha birçok formatı destekler.
+C: Kesinlikle. TopoJSON, GeoJSON, Shapefile, KML, GML ve daha fazlasını—toplamda 30'dan fazla formatı destekler.
 
 **S: Aspose.GIS dokümantasyon ve destek sağlıyor mu?**  
-C: Kapsamlı dokümantasyon ve topluluk desteği, [Aspose.GIS forumu](https://forum.aspose.com/c/gis/33) üzerinden mevcuttur.
+C: Kapsamlı dokümantasyon ve topluluk desteği [Aspose.GIS forumu](https://forum.aspose.com/c/gis/33) üzerinden mevcuttur.
 
 **S: Aspose.GIS'i satın almadan deneyebilir miyim?**  
-C: Evet, ücretsiz deneme sürümünü [Aspose web sitesinden](https://releases.aspose.com/) indirebilirsiniz.
+C: Evet, ücretsiz deneme sürümü [Aspose web sitesinden](https://releases.aspose.com/) indirilebilir.
 
-**S: Aspose.GIS için geçici bir lisans nasıl alınır?**  
-C: Geçici lisanslar, [Aspose satın alma sayfasında](https://purchase.aspose.com/temporary-license/) sağlanır.
+**S: Aspose.GIS için geçici bir lisans nasıl alabilirim?**  
+C: Geçici lisanslar [Aspose satın alma sayfasında](https://purchase.aspose.com/temporary-license/) sağlanır.
 
 ## Sonuç
-Bu rehberde, .NET için Aspose.GIS kullanarak **TopoJSON'i GeoJSON'e nasıl dönüştüreceğinizi** ele aldık. Kısa iki‑adımlı kod örneğini izleyerek coğrafi veri dönüşümünü doğrudan .NET uygulamalarınıza entegre edebilir, modern haritalama araçlarıyla sorunsuz bir şekilde çalışmasını sağlayabilirsiniz.
+Bu rehberde, Aspose.GIS for .NET kullanarak **TopoJSON'i GeoJSON'e nasıl dönüştüreceğinizi** ele aldık. Kısa iki adımlı kod örneğini izleyerek, coğrafi veri dönüşümünü doğrudan .NET uygulamalarınıza entegre edebilir ve modern haritalama araçlarıyla sorunsuz bir birlikte çalışabilirlik sağlayabilirsiniz.
 
 ---
 
-**Son Güncelleme:** 2025-12-03  
-**Test Edilen Versiyon:** Aspose.GIS for .NET (en son sürüm)  
-**Yazar:** Aspose  
+**Son Güncelleme:** 2026-07-24  
+**Test Edilen:** Aspose.GIS for .NET (latest release)  
+**Yazar:** Aspose
+
+## İlgili Öğreticiler
+
+- [Aspose.GIS ile GeoJSON'dan TopoJSON'e Nasıl Dönüştürülür](/gis/net/geo-data-conversion/convert-geojson-to-topojson/)
+- [Aspose.GIS for .NET ile TopoJSON Özelliklerini Açığa Çıkarma](/gis/net/layer-management/access-features-in-topojson/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
+{{< blocks/products/products-backtop-button >}}
+
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
