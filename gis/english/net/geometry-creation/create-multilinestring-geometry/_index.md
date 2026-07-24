@@ -2,7 +2,7 @@
 title: Create MultiLineString Geometry using Aspose.GIS for .NET
 linktitle: Create MultiLineString Geometry
 second_title: Aspose.GIS .NET API
-description: Learn how to create multilinestring geometry with Aspose.GIS for .NET. This multilinestring tutorial C# shows step‑by‑step creation of complex line geometries.
+description: "Learn how to quickly create multilinestring geometry with Aspose.GIS for .NET. This multilinestring tutorial C# shows step‑by‑step creation of complex line geometries."
 weight: 15
 url: /net/geometry-creation/create-multilinestring-geometry/
 date: 2026-03-29

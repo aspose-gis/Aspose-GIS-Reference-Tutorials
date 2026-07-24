@@ -1,5 +1,5 @@
 ---
-title: Convert WKT to Geometry: MultiCurve with Aspose.GIS .NET
+title: "Convert WKT to Geometry: MultiCurve with Aspose.GIS .NET"
 linktitle: Create MultiCurve Geometry
 second_title: Aspose.GIS .NET API
 description: Learn how to convert WKT to geometry and add line string by creating MultiCurve geometry in .NET with Aspose.GIS.

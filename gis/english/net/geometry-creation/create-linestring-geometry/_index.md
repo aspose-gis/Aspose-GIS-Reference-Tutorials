@@ -1,8 +1,8 @@
 ---
-title: How to Create LineString Geometry with Aspose.GIS for .NET
+title: Learn How to Create LineString Geometry with Aspose.GIS for .NET
 linktitle: Create LineString Geometry
 second_title: Aspose.GIS .NET API
-description: Learn how to create LineString geometry in .NET using Aspose.GIS. This guide covers adding points to a LineString and handling geospatial data .NET efficiently.
+description: "Learn how to quickly create LineString geometry in .NET using Aspose.GIS. This guide covers adding points to a LineString and handling geospatial data .NET efficiently."
 weight: 11
 url: /net/geometry-creation/create-linestring-geometry/
 date: 2026-03-29

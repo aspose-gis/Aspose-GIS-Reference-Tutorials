@@ -1,8 +1,8 @@
 ---
-title: How to Create MultiPolygon Geometry with Aspose.GIS
+title: Learn How to Create MultiPolygon Geometry with Aspose.GIS
 linktitle: Create MultiPolygon Geometry
 second_title: Aspose.GIS .NET API
-description: Learn how to create multipolygon geometry and add polygons to multipolygon using Aspose.GIS for .NET. Step‑by‑step guide with a free trial.
+description: "Learn how to create MultiPolygon geometry and add polygons to a MultiPolygon using Aspose.GIS for .NET. Follow this step‑by‑step guide with a free trial."
 weight: 16
 url: /net/geometry-creation/create-multipolygon-geometry/
 date: 2026-03-29
