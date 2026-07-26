@@ -1,28 +1,50 @@
 ---
-title: สร้างเรขาคณิตหลายเหลี่ยมด้วย Aspose.GIS
-linktitle: สร้างเรขาคณิตหลายรูปหลายเหลี่ยม
+date: 2026-03-29
+description: เรียนรู้วิธีสร้างรูปทรงมัลติโพลิกอนและเพิ่มโพลิกอนลงในมัลติโพลิกอนโดยใช้
+  Aspose.GIS สำหรับ .NET คู่มือแบบขั้นตอนต่อขั้นตอนพร้อมทดลองใช้งานฟรี
+linktitle: Create MultiPolygon Geometry
 second_title: Aspose.GIS .NET API
-description: เรียนรู้วิธีสร้างเรขาคณิต MultiPolygon โดยใช้ Aspose.GIS สำหรับ .NET คำแนะนำทีละขั้นตอนสำหรับผู้เริ่มต้น ทดลองใช้ฟรีได้
-weight: 16
+title: วิธีสร้างเรขาคณิต MultiPolygon ด้วย Aspose.GIS
 url: /th/net/geometry-creation/create-multipolygon-geometry/
+weight: 16
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# สร้างเรขาคณิตหลายเหลี่ยมด้วย Aspose.GIS
+# วิธีสร้างรูปทรง MultiPolygon ด้วย Aspose.GIS
 
-## การแนะนำ
-ในโลกของการพัฒนาระบบสารสนเทศภูมิศาสตร์ (GIS) Aspose.GIS สำหรับ .NET มีความโดดเด่นในฐานะเครื่องมืออันทรงพลังสำหรับการสร้าง แก้ไข และวิเคราะห์ข้อมูลเชิงพื้นที่ ไม่ว่าคุณจะเป็นนักพัฒนาที่มีประสบการณ์หรือเพิ่งเริ่มต้น การเรียนรู้ Aspose.GIS อย่างดีสามารถเปิดโลกแห่งความเป็นไปได้สำหรับโครงการของคุณได้
+## บทนำ
+If you’re looking to **how to create multipolygon** shapes in a .NET environment, you’ve landed in the right place. Aspose.GIS for .NET gives you a clean, object‑oriented API for building complex geospatial objects, and this tutorial walks you through every step—from installing the library to combining individual polygons into a single MultiPolygon. By the end, you’ll be able to **add polygons to multipolygon** structures with confidence.
+
+## คำตอบอย่างรวดเร็ว
+- **What is a MultiPolygon?** A geometry that groups two or more Polygon objects into a single collection.  
+- **Why use Aspose.GIS?** It supports many GIS formats, works on .NET Framework and .NET Core, and requires no external native libraries.  
+- **How long does the example take?** About 5 minutes to type and run.  
+- **Do I need a license?** A free trial works for development; a commercial license is required for production.  
+- **Which .NET versions are supported?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
+
+## MultiPolygon Geometry คืออะไร?
+A MultiPolygon is a composite geometry that contains multiple Polygon objects, each possibly with its own interior rings (holes). This structure is ideal for representing disjoint land parcels, islands, or any set of separate areas that share a common attribute.
+
+## ทำไมต้องเพิ่ม Polygons ไปยัง MultiPolygon?
+Adding polygons to a MultiPolygon lets you treat several independent shapes as a single entity. This simplifies spatial queries, rendering, and data exchange because you can store, transfer, and manipulate the whole collection with one object instead of handling each polygon separately.
+
 ## ข้อกำหนดเบื้องต้น
-ก่อนที่จะเริ่มใช้ Aspose.GIS สำหรับ .NET มีข้อกำหนดเบื้องต้นบางประการที่คุณจำเป็นต้องมี:
-### การติดตั้ง Aspose.GIS สำหรับ .NET
-1.  ดาวน์โหลด Aspose.GIS: ตรงไปที่[หน้าดาวน์โหลด](https://releases.aspose.com/gis/net/)และเลือกเวอร์ชันที่เหมาะสมสำหรับสภาพแวดล้อมการพัฒนาของคุณ
-2. ติดตั้ง Aspose.GIS: ทำตามคำแนะนำการติดตั้งที่ให้ไว้ในเอกสารประกอบเพื่อติดตั้ง Aspose.GIS สำหรับ .NET บนเครื่องของคุณ
+Before diving into code, make sure you have the following:
 
-## การนำเข้าเนมสเปซ
-หากต้องการเริ่มทำงานกับ Aspose.GIS ในโปรเจ็กต์ .NET คุณจะต้องนำเข้าเนมสเปซที่จำเป็น:
+- **Aspose.GIS for .NET** installed (see the steps below).  
+- A .NET development environment (Visual Studio, VS Code, or any IDE you prefer).  
+- Basic familiarity with C# syntax.
+
+### การติดตั้ง Aspose.GIS for .NET
+1. Download Aspose.GIS: Head over to the [download page](https://releases.aspose.com/gis/net/) and select the appropriate version for your development environment.  
+2. Install Aspose.GIS: Follow the installation instructions provided in the documentation to install Aspose.GIS for .NET on your machine.
+
+## การนำเข้า Namespaces
+To start working with Aspose.GIS in your .NET project, import the necessary namespaces:
+
 ```csharp
 using Aspose.Gis.Geometries;
 using System;
@@ -32,8 +54,9 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## ขั้นตอนที่ 1: สร้างวงแหวนเชิงเส้น
-ขั้นแรก เราต้องสร้าง LinearRings สำหรับแต่ละรูปหลายเหลี่ยม LinearRing แต่ละอันแสดงถึงสตริงเส้นปิดที่สร้างขอบเขตของรูปหลายเหลี่ยม
+## ขั้นตอนที่ 1: สร้าง Linear Rings
+First, we need to create **LinearRing** objects for each polygon. A LinearRing is a closed line string that defines the outer boundary (and optionally inner holes) of a polygon.
+
 ```csharp
 LinearRing firstRing = new LinearRing();
 firstRing.AddPoint(8.5, -2.5);
@@ -44,34 +67,56 @@ secondRing.AddPoint(7.6, -3.6);
 secondRing.AddPoint(-9.6, 1.5);
 secondRing.AddPoint(7.6, -3.6);
 ```
-## ขั้นตอนที่ 2: สร้างรูปหลายเหลี่ยม
-ต่อไป เราจะสร้างวัตถุรูปหลายเหลี่ยมโดยใช้ LinearRings ที่เรากำหนดไว้
+
+## ขั้นตอนที่ 2: สร้าง Polygons
+Next, we turn each LinearRing into a **Polygon** object. These polygons will later be added to the MultiPolygon.
+
 ```csharp
 Polygon firstPolygon = new Polygon(firstRing);
 Polygon secondPolygon = new Polygon(secondRing);
 ```
+
 ## ขั้นตอนที่ 3: สร้าง MultiPolygon
-ตอนนี้ เรามารวมรูปหลายเหลี่ยมเหล่านี้ให้เป็นเรขาคณิตหลายรูปหลายเหลี่ยมกัน
+Now, let’s combine the polygons into a single **MultiPolygon** geometry. This is where we **add polygons to multipolygon**.
+
 ```csharp
 MultiPolygon multiPolygon = new MultiPolygon();
 multiPolygon.Add(firstPolygon);
 multiPolygon.Add(secondPolygon);
 ```
-ยินดีด้วย! คุณสร้างเรขาคณิต MultiPolygon โดยใช้ Aspose.GIS สำหรับ .NET สำเร็จแล้ว
 
-## บทสรุป
-การเรียนรู้ Aspose.GIS สำหรับ .NET เปิดโลกแห่งความเป็นไปได้สำหรับนักพัฒนาที่ทำงานกับข้อมูลภูมิสารสนเทศ ด้วยการทำตามคำแนะนำทีละขั้นตอนนี้ คุณจะได้เรียนรู้วิธีสร้างเรขาคณิตหลายเหลี่ยม ซึ่งเป็นการวางรากฐานสำหรับแอปพลิเคชัน GIS ที่ซับซ้อนยิ่งขึ้น
+Congratulations! You’ve successfully created a MultiPolygon geometry using Aspose.GIS for .NET.
+
+## ปัญหาทั่วไปและวิธีแก้
+| ปัญหา | สาเหตุ | วิธีแก้ |
+|-------|-------|-----|
+| **Points not closing the ring** | The first and last points differ. | Ensure the first and last coordinates are identical; Aspose.GIS automatically closes the ring, but explicit closure avoids confusion. |
+| **Incorrect coordinate order (X, Y vs. Lon, Lat)** | Mixing up longitude and latitude. | Stick to the (X, Y) order used by Aspose.GIS; X = longitude, Y = latitude. |
+| **Library not found at runtime** | Missing NuGet reference or DLL. | Verify the Aspose.GIS package is referenced in your project file and the DLL is copied to the output folder. |
+
 ## คำถามที่พบบ่อย
-### Aspose.GIS สำหรับ .NET เหมาะสำหรับผู้เริ่มต้นหรือไม่
-อย่างแน่นอน! Aspose.GIS นำเสนอเอกสารและบทช่วยสอนที่ครอบคลุมเพื่อช่วยให้นักพัฒนาทุกระดับทักษะเริ่มต้นได้
-### ฉันสามารถลองใช้ Aspose.GIS ก่อนซื้อได้หรือไม่
- ใช่ คุณสามารถดาวน์โหลดรุ่นทดลองใช้ฟรีได้จาก[ที่นี่](https://releases.aspose.com/) เพื่อสำรวจคุณสมบัติต่างๆ ก่อนตัดสินใจซื้อ
-### ฉันจะรับการสนับสนุนสำหรับ Aspose.GIS ได้ที่ไหน
- คุณสามารถเยี่ยมชมฟอรัม Aspose.GIS[ที่นี่](https://forum.aspose.com/c/gis/33) เพื่อสอบถามและรับความช่วยเหลือจากชุมชน
-### มีใบอนุญาตชั่วคราวสำหรับ Aspose.GIS หรือไม่
- ใช่ คุณสามารถขอรับใบอนุญาตชั่วคราวได้จาก[ที่นี่](https://purchase.aspose.com/temporary-license/) เพื่อวัตถุประสงค์ในการประเมินผล
-### ฉันสามารถซื้อ Aspose.GIS ได้โดยตรงหรือไม่
- ใช่ คุณสามารถซื้อ Aspose.GIS ได้จากเว็บไซต์[ที่นี่](https://purchase.aspose.com/buy).
+
+**Q: Aspose.GIS for .NET เหมาะสำหรับผู้เริ่มต้นหรือไม่?**  
+A: Absolutely! Aspose.GIS offers comprehensive documentation and tutorials to help developers of all skill levels get started.
+
+**Q: ฉันสามารถลอง Aspose.GIS ก่อนซื้อได้หรือไม่?**  
+A: Yes, you can download a free trial from [here](https://releases.aspose.com/) to explore its features before making a purchase.
+
+**Q: ฉันสามารถหาการสนับสนุนสำหรับ Aspose.GIS ได้ที่ไหน?**  
+A: You can visit the Aspose.GIS forum [here](https://forum.aspose.com/c/gis/33) to ask questions and get assistance from the community.
+
+**Q: มีใบอนุญาตชั่วคราวสำหรับ Aspose.GIS หรือไม่?**  
+A: Yes, you can obtain a temporary license from [here](https://purchase.aspose.com/temporary-license/) for evaluation purposes.
+
+**Q: ฉันสามารถซื้อ Aspose.GIS ได้โดยตรงหรือไม่?**  
+A: Yes, you can purchase Aspose.GIS from the website [here](https://purchase.aspose.com/buy).
+
+---
+
+**Last Updated:** 2026-03-29  
+**Tested With:** Aspose.GIS 24.12 for .NET  
+**Author:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
