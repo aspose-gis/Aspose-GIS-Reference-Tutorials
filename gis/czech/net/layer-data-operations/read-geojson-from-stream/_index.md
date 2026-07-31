@@ -1,10 +1,15 @@
 ---
-date: 2025-12-28
-description: Naučte se číst GeoJSON ze streamu pomocí Aspose.GIS pro .NET. Tento průvodce
-  čtením GeoJSON v C# poskytuje krok za krokem příklad integrace geoprostorových dat.
-linktitle: Read GeoJSON from Stream
+date: 2026-04-24
+description: Naučte se **číst geojson** ze streamu pomocí Aspose.GIS pro .NET. Tento
+  průvodce krok za krokem vám ukáže, jak **načíst geojson stream**, analyzovat jej
+  a extrahovat vlastnosti v C#.
+keywords:
+- how to read geojson
+- load geojson stream
+- Aspose GIS GeoJSON
+linktitle: Načíst GeoJSON ze streamu
 second_title: Aspose.GIS .NET API
-title: Jak číst GeoJSON ze streamu pomocí Aspose.GIS pro .NET
+title: Jak načíst GeoJSON ze streamu pomocí Aspose.GIS pro .NET
 url: /cs/net/layer-data-operations/read-geojson-from-stream/
 weight: 14
 ---
@@ -16,27 +21,32 @@ weight: 14
 # Jak číst GeoJSON ze streamu pomocí Aspose.GIS pro .NET
 
 ## Úvod
-Pokud se zajímáte **jak číst geojson** v .NET aplikaci, jste na správném místě. V tomto tutoriálu projdeme kompletní **c# geojson example**, který ukazuje, jak převést řetězec GeoJSON, otevřít vrstvu GeoJSON z paměťového streamu a extrahovat vlastnosti GeoJSON pomocí Aspose.GIS. Na konci budete mít znovupoužitelný vzor, který můžete vložit do jakéhokoli projektu, který potřebuje pracovat s geoprostorovými daty.
+Pokud se ptáte, **jak číst geojson** v .NET aplikaci, jste na správném místě. V tomto tutoriálu projdeme kompletní **C# GeoJSON příklad**, který ukazuje, jak převést GeoJSON řetězec, **načíst geojson stream** do paměťového streamu, otevřít GeoJSON vrstvu a extrahovat GeoJSON vlastnosti pomocí Aspose.GIS. Na konci budete mít znovupoužitelný vzor, který můžete vložit do libovolného projektu, který potřebuje pracovat s geoprostorovými daty.
 
 ## Rychlé odpovědi
-- **What library should I use?** Aspose.GIS for .NET  
-- **Can I read GeoJSON directly from a stream?** Yes – use `VectorLayer.Open` with `AbstractPath.FromStream`.  
-- **Do I need a license for development?** A free trial works for testing; a license is required for production.  
-- **Which .NET versions are supported?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6+.  
-- **Is extracting properties simple?** Yes – call `GetValue<T>(columnName)` on a feature.
+- **Jakou knihovnu bych měl použít?** Aspose.GIS pro .NET – zpracovává mnoho GIS formátů ihned po instalaci.  
+- **Mohu číst GeoJSON přímo ze streamu?** Ano – použijte `VectorLayer.Open` s `AbstractPath.FromStream`.  
+- **Potřebuji licenci pro vývoj?** Bezplatná zkušební verze stačí pro testování; plná licence je vyžadována pro produkci.  
+- **Jaké verze .NET jsou podporovány?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6+.  
+- **Je extrahování vlastností jednoduché?** Naprosto – zavolejte `GetValue<T>(columnName)` na objektu feature.
 
-## Co je “how to read geojson”?
-Čtení GeoJSON znamená parsování formátu založeného na JSON, který popisuje geografické prvky (body, linie, polygony) a zpřístupňuje tyto prvky jako objekty, které můžete dotazovat, upravovat nebo vykreslovat ve své aplikaci.
+## Co znamená “jak číst geojson”?
+Čtení GeoJSON znamená parsování formátu založeného na JSON, který popisuje geografické prvky (body, linie, polygonů) a převod těchto prvků na objekty, které můžete ve své aplikaci dotazovat, upravovat nebo vykreslovat.
 
-## Proč použít Aspose.GIS k **open geojson layer**?
-Aspose.GIS abstrahuje nízkoúrovňové detaily parsování a poskytuje jednotné API pro mnoho GIS formátů. Umožňuje vám **open geojson layer** přímo ze streamu, efektivně pracovat s velkými soubory a přistupovat k atributům prvků bez psaní vlastních JSON parserů.
+## Proč použít Aspose.GIS k **otevření geojson vrstvy**?
+Aspose.GIS abstrahuje nízkoúrovňové detaily parsování a poskytuje jednotné API pro mnoho GIS formátů. Umožňuje vám **otevřít geojson vrstvu** přímo ze streamu, efektivně pracovat s velkými soubory a přistupovat k atributům prvků bez psaní vlastních JSON parserů.
 
-## Požadavky
-1. **Basic knowledge of C#** – Základní znalost C# – měli byste být pohodlní s .NET syntaxí a prostředím Visual Studio IDE.  
-2. **Aspose.GIS installed** – Aspose.GIS nainstalován – stáhněte knihovnu z [here](https://releases.aspose.com/gis/net/).  
-3. **A development environment** – Vývojové prostředí – Visual Studio, Visual Studio Code nebo JetBrains Rider budou fungovat bez problémů.  
+## Kdy byste **načetli geojson stream**?
+- Importování dat z webové služby, která vrací GeoJSON v těle odpovědi.  
+- Zpracování uživatelem nahraných GeoJSON souborů bez jejich předchozího zápisu na disk.  
+- Práce s daty v paměti generovanými za běhu (např. z databáze nebo jiné API).  
 
-## Importovat jmenné prostory
+## Předpoklady
+1. **Základní znalost C#** – měli byste být obeznámeni se syntaxí .NET a prostředím Visual Studio IDE.  
+2. **Aspose.GIS nainstalováno** – stáhněte knihovnu z [zde](https://releases.aspose.com/gis/net/).  
+3. **Vývojové prostředí** – Visual Studio, Visual Studio Code nebo JetBrains Rider budou fungovat bez problémů.  
+
+## Importujte jmenné prostory
 ```csharp
 using System;
 using System.IO;
@@ -44,8 +54,8 @@ using System.Text;
 using Aspose.Gis;
 ```
 
-## Krok 1: **Convert GeoJSON string** – a **c# geojson example**
-Nejprve vytvoříme JSON řetězec, který představuje jednoduchý `FeatureCollection`. Toto je část **convert geojson string** pracovního postupu.
+## Krok 1: **Převod GeoJSON řetězce** – **C# GeoJSON příklad**
+Nejprve vytvoříme JSON řetězec, který představuje jednoduchý `FeatureCollection`. Toto je část workflow **převod geojson řetězce**.
 
 ```csharp
 const string geoJson = @"{""type"":""FeatureCollection"",""features"":[
@@ -54,8 +64,8 @@ const string geoJson = @"{""type"":""FeatureCollection"",""features"":[
 ]}";
 ```
 
-## Krok 2: **Open GeoJSON layer** from stream and **extract geojson properties**
-Nyní vložíme řetězec do `MemoryStream`, otevřeme jej jako GIS vrstvu a ukážeme, jak číst hodnoty atributů (krok **extract geojson properties**).
+## Krok 2: **Načíst GeoJSON stream** a **extrahovat geojson vlastnosti**
+Nyní vložíme řetězec do `MemoryStream`, otevřeme jej jako GIS vrstvu a ukážeme, jak číst hodnoty atributů (krok **extrahovat geojson vlastnosti**).
 
 ```csharp
 using (var memoryStream = new MemoryStream(Encoding.UTF8.GetBytes(geoJson)))
@@ -66,40 +76,40 @@ using (var layer = VectorLayer.Open(AbstractPath.FromStream(memoryStream), Drive
 }
 ```
 
-> **Pro tip:** `VectorLayer.Open` automaticky detekuje formát GeoJSON, když předáte `Drivers.GeoJson`. Můžete také otevřít soubory přímo zadáním cesty k souboru místo streamu.
+> **Tip:** `VectorLayer.Open` automaticky detekuje formát GeoJSON, když předáte `Drivers.GeoJson`. Můžete také otevírat soubory přímo zadáním cesty k souboru místo streamu.
 
 ## Časté problémy a řešení
 | Problém | Řešení |
 |-------|----------|
-| **Invalid JSON format** | Ověřte, že řetězec GeoJSON je dobře vytvořený; použijte JSON validátor. |
-| **Encoding problems** | Ujistěte se, že stream používá UTF‑8 (`Encoding.UTF8.GetBytes`). |
-| **Missing properties** | Zkontrolujte, že název vlastnosti je správně napsán (`"name"` v příkladu). |
-| **License exception** | Použijte zkušební licenci pro testování; aplikujte trvalou licenci pro produkci. |
+| **Neplatný formát JSON** | Ověřte, že GeoJSON řetězec je dobře formátovaný; použijte JSON validátor. |
+| **Problémy s kódováním** | Ujistěte se, že stream používá UTF‑8 (`Encoding.UTF8.GetBytes`). |
+| **Chybějící vlastnosti** | Zkontrolujte, že název vlastnosti je správně napsán (`"name"` v příkladu). |
+| **Výjimka licence** | Použijte zkušební licenci pro testování; aplikujte trvalou licenci pro produkci. |
 
 ## Často kladené otázky
 ### Je Aspose.GIS kompatibilní s jinými GIS formáty?
 Ano, Aspose.GIS podporuje GeoJSON, Shapefile, KML, GML a mnoho dalších formátů.
 
-### Mohu vyzkoušet Aspose.GIS před zakoupením?
-Ano, můžete si stáhnout bezplatnou zkušební verzi Aspose.GIS z [here](https://releases.aspose.com/).
+### Můžu vyzkoušet Aspose.GIS před zakoupením?
+Ano, můžete si stáhnout bezplatnou zkušební verzi Aspose.GIS z [zde](https://releases.aspose.com/).
 
 ### Kde najdu dokumentaci pro Aspose.GIS?
-Dokumentaci pro Aspose.GIS najdete [here](https://reference.aspose.com/gis/net/).
+Dokumentaci pro Aspose.GIS najdete [zde](https://reference.aspose.com/gis/net/).
 
 ### Jak mohu získat podporu pro Aspose.GIS?
-Podporu pro Aspose.GIS můžete získat na fórech Aspose [here](https://forum.aspose.com/c/gis/33).
+Podporu pro Aspose.GIS můžete získat na fóru Aspose [zde](https://forum.aspose.com/c/gis/33).
 
-### Potřebuji dočasnou licenci pro použití Aspose.GIS?
-Dočasnou licenci pro Aspose.GIS můžete získat z [here](https://purchase.aspose.com/temporary-license/).
+### Potřebuji dočasnou licenci pro používání Aspose.GIS?
+Dočasnou licenci pro Aspose.GIS můžete získat z [zde](https://purchase.aspose.com/temporary-license/).
 
 ## Závěr
-V tomto průvodci jsme pokryli **how to read geojson** z paměťového streamu pomocí Aspose.GIS pro .NET, předvedli **c# read geojson** workflow a ukázali, jak **extract geojson properties** z otevřené vrstvy. S těmito kroky můžete bez problémů integrovat zpracování geoprostorových dat do jakékoli .NET aplikace.
+V tomto průvodci jsme pokryli **jak číst geojson** z paměťového streamu pomocí Aspose.GIS pro .NET, ukázali **C# čtení geojson** workflow a ukázali, jak **extrahovat geojson vlastnosti** z otevřené vrstvy. S těmito kroky můžete bez problémů integrovat zpracování geoprostorových dat do jakékoli .NET aplikace.
 
 ---
 
-**Last Updated:** 2025-12-28  
-**Tested With:** Aspose.GIS 24.11 for .NET  
-**Author:** Aspose  
+**Poslední aktualizace:** 2026-04-24  
+**Testováno s:** Aspose.GIS 24.11 pro .NET  
+**Autor:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
