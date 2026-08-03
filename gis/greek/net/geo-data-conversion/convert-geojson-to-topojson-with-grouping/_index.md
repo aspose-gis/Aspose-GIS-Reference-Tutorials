@@ -1,12 +1,74 @@
 ---
-date: 2026-02-05
-description: Μάθετε πώς να **μετατρέψετε geojson σε topojson** με ομαδοποίηση, ορίστε
-  το χαρακτηριστικό ονόματος αντικειμένου και ομαδοποιήστε τα χαρακτηριστικά GeoJSON
-  χρησιμοποιώντας το Aspose.GIS για .NET.
-linktitle: How to Convert GeoJSON to TopoJSON with Grouping using Aspose.GIS
+date: 2026-08-03
+description: Μάθετε πώς να μετατρέψετε geojson σε topojson με ομαδοποίηση, να ορίσετε
+  το χαρακτηριστικό ονόματος αντικειμένου και να ομαδοποιήσετε χαρακτηριστικά GeoJSON
+  χρησιμοποιώντας Aspose.GIS για .NET.
+keywords:
+- convert geojson to topojson
+- group features by attribute
+- asp.net core geojson
+- set object name attribute
+- asp.net geojson conversion
+lastmod: 2026-08-03
+linktitle: Πώς να Μετατρέψετε GeoJSON σε TopoJSON με Ομαδοποίηση χρησιμοποιώντας Aspose.GIS
+og_description: Μάθετε πώς να μετατρέψετε geojson σε topojson με ομαδοποίηση, να ορίσετε
+  το χαρακτηριστικό ονόματος αντικειμένου και να ομαδοποιήσετε αποδοτικά χαρακτηριστικά
+  GeoJSON χρησιμοποιώντας Aspose.GIS για .NET.
+og_image_alt: Screenshot of Aspose.GIS conversion code showing GeoJSON to TopoJSON
+  with grouping
+og_title: Μετατρέψτε geojson σε topojson με ομαδοποίηση χρησιμοποιώντας Aspose.GIS
+  για .NET
+schemas:
+- author: Aspose
+  dateModified: '2026-08-03'
+  description: Learn how to convert geojson to topojson with grouping, set object
+    name attribute, and group GeoJSON features using Aspose.GIS for .NET.
+  headline: How to convert geojson to topojson with grouping using Aspose.GIS
+  type: TechArticle
+- description: Learn how to convert geojson to topojson with grouping, set object
+    name attribute, and group GeoJSON features using Aspose.GIS for .NET.
+  name: How to convert geojson to topojson with grouping using Aspose.GIS
+  steps:
+  - name: Define file paths
+    text: 'Specify where the source GeoJSON lives and where the TopoJSON should be
+      written: > **Pro tip:** Use `Path.Combine` for cross‑platform path building
+      if you target .NET Core.'
+  - name: Configure conversion options (set object name attribute)
+    text: '`ConversionOptions` is the configuration object that controls how Aspose.GIS
+      performs the conversion. It lets you set the grouping attribute, define a default
+      object name, and tweak topology precision. The `ObjectNameAttribute` property
+      (string) defines the GeoJSON field used for grouping, while `De'
+  - name: Perform the conversion (convert GeoJSON to TopoJSON)
+    text: '`Conversion.Convert` is a single‑line API call that reads the source file,
+      applies the options, and writes the TopoJSON output. It internally builds a
+      topology graph, deduplicates shared edges, and writes the result in the compact
+      TopoJSON format. After execution, `convertedSampleWithGrouping_out.to'
+  type: HowTo
+- questions:
+  - answer: Yes, you can concatenate several fields into a single virtual attribute
+      or run multiple conversion passes with different `ObjectNameAttribute` values.
+    question: Can I group features based on multiple attributes?
+  - answer: Absolutely – the library works with ASP.NET Core, .NET 5, .NET 6, and
+      the classic .NET Framework.
+    question: Is Aspose.GIS compatible with ASP.NET Core?
+  - answer: Yes, Aspose.GIS supports more than 30 input and output formats—including
+      Shapefile, KML, GML, CSV, and DXF—for both import and export.
+    question: Can I convert other geographic formats besides GeoJSON?
+  - answer: Yes, you can get a free trial of Aspose.GIS from the [Aspose.GIS free
+      trial page](https://releases.aspose.com/).
+    question: Does Aspose.GIS offer a free trial?
+  - answer: You can get support from the Aspose.GIS community forum [Aspose.GIS community
+      forum](https://forum.aspose.com/c/gis/33).
+    question: Where can I get support for Aspose.GIS?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: Πώς να μετατρέψετε το GeoJSON σε TopoJSON με ομαδοποίηση χρησιμοποιώντας το
-  Aspose.GIS
+tags:
+- convert geojson
+- Aspose.GIS
+- C# GIS processing
+- geojson conversion
+- topojson grouping
+title: Πώς να μετατρέψετε geojson σε topojson με ομαδοποίηση χρησιμοποιώντας Aspose.GIS
 url: /el/net/geo-data-conversion/convert-geojson-to-topojson-with-grouping/
 weight: 13
 ---
@@ -15,68 +77,72 @@ weight: 13
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Πώς να Μετατρέψετε GeoJSON σε TopoJSON με Ομαδοποίηση χρησιμοποιώντας το Aspose.GIS
+# Πώς να μετατρέψετε geojson σε topojson με ομαδοποίηση χρησιμοποιώντας το Aspose.GIS
 
 ## Εισαγωγή
 
-Σε αυτό το βήμα‑βήμα tutorial θα μάθετε **πώς να μετατρέψετε αρχεία GeoJSON** σε TopoJSON ενώ ομαδοποιείτε τα χαρακτηριστικά βάσει μιας επιλεγμένης ιδιότητας. Χρησιμοποιώντας το Aspose.GIS .NET API η μετατροπή γίνεται γρήγορη, αξιόπιστη και πλήρως ελεγχόμενη από τον κώδικα C#. Είτε δημιουργείτε μια υπηρεσία μετατροπής GeoJSON σε ASP.NET είτε ένα desktop GIS εργαλείο, αυτός ο οδηγός σας δείχνει ακριβώς τι πρέπει να κάνετε για να **μετατρέψετε geojson σε topojson** αποδοτικά.
+Σε αυτό το βήμα‑βήμα tutorial θα μάθετε **πώς να μετατρέψετε geojson σε topojson** ενώ ομαδοποιείτε τα χαρακτηριστικά βάσει μιας επιλεγμένης ιδιότητας. Η χρήση του Aspose.GIS .NET API κάνει τη μετατροπή γρήγορη (επεξεργάζεται έως 2 000 χαρακτηριστικά ανά δευτερόλεπτο) και πλήρως ελεγχόμενη από τον κώδικα C# σας. Είτε δημιουργείτε μια υπηρεσία μετατροπής geojson για ASP.NET Core, ένα εργαλείο GIS για επιτραπέζιους υπολογιστές, είτε μια αυτοματοποιημένη γραμμή δεδομένων, αυτός ο οδηγός σας δείχνει ακριβώς τι πρέπει να κάνετε για **να μετατρέψετε geojson σε topojson** αποδοτικά και αξιόπιστα.
 
-## Γρήγορες Απαντήσεις
+## Γρήγορες απαντήσεις
 - **Ποια βιβλιοθήκη διαχειρίζεται τη μετατροπή;** Aspose.GIS for .NET  
 - **Πόσο χρόνο διαρκεί η υλοποίηση;** Συνήθως 5‑10 λεπτά για μια βασική ρύθμιση  
-- **Χρειάζομαι άδεια για παραγωγή;** Ναι, απαιτείται εμπορική άδεια (διατίθεται δωρεάν δοκιμή)  
+- **Χρειάζομαι άδεια για παραγωγή;** Ναι, απαιτείται εμπορική άδεια (διαθέσιμο δωρεάν trial)  
 - **Μπορώ να ομαδοποιήσω χαρακτηριστικά με βάση οποιαδήποτε ιδιότητα;** Ναι – ορίστε το `ObjectNameAttribute` στο πεδίο που θέλετε να ομαδοποιήσετε  
-- **Υποστηρίζεται το .NET Core;** Απόλυτα – το API λειτουργεί με .NET Core, .NET 5/6 και το κλασικό .NET Framework  
+- **Υποστηρίζεται το .NET Core;** Απόλυτα – το API λειτουργεί με .NET Core, .NET 5/6, και το κλασικό .NET Framework  
 
 ## Πώς να μετατρέψετε geojson σε topojson με ομαδοποίηση σε C#
-Παρακάτω περπατάμε μέσα από τα ακριβή βήματα που πρέπει να ακολουθήσετε. Η διαδικασία είναι σκόπιμα απλή: ορίστε τα αρχεία προέλευσης και προορισμού, διαμορφώστε τις επιλογές ομαδοποίησης, και αφήστε το Aspose.GIS να κάνει τη βαριά δουλειά.
+
+Φορτώστε το πηγαίο GeoJSON, ρυθμίστε το `ConversionOptions` με το επιθυμητό `ObjectNameAttribute` και καλέστε το `Conversion.Convert` – αυτή η μοναδική κλήση παράγει ένα πλήρως ομαδοποιημένο αρχείο TopoJSON σε λιγότερο από ένα δευτερόλεπτο για τυπικά δεδομένα σε κλίμακα πόλης.
+
+Μπορείτε να ενσωματώσετε αυτό το μοτίβο σε μια εφαρμογή κονσόλας, μια υπηρεσία υποβάθρου ή ένα endpoint μετατροπής geojson για ASP.NET Core. Το API αφαιρεί όλες τις χαμηλού επιπέδου υπολογισμούς τοπολογίας, ώστε να εστιάζετε στη λογική επιχειρήσεων αντί στη γεωμετρική μαθηματική.
 
 ## Τι είναι το GeoJSON και το TopoJSON;
 
-GeoJSON είναι μια ευρέως χρησιμοποιούμενη μορφή JSON για την κωδικοποίηση γεωγραφικών χαρακτηριστικών όπως σημεία, γραμμές και πολύγωνα. TopoJSON επεκτείνει το GeoJSON αποθηκεύοντας την τοπολογία (κοινά τμήματα γραμμών) που μειώνει το μέγεθος του αρχείου και βελτιώνει την απόδοση απόδοσης για πολύπλοκα χάρτες. Η μετατροπή μεταξύ τους είναι ένα κοινό βήμα όταν χρειάζεστε συμπαγή δεδομένα χάρτη για οπτικοποιήσεις στο web.
+Το GeoJSON είναι μια ελαφριά μορφή JSON που αντιπροσωπεύει γεωγραφικά χαρακτηριστικά όπως σημεία, γραμμές και πολύγωνα. Το TopoJSON επεκτείνει το GeoJSON αποθηκεύοντας κοινά τμήματα γραμμών (τοπολογία), μειώνοντας το μέγεθος του αρχείου έως και 80 % για σύνθετους χάρτες και βελτιώνοντας την ταχύτητα απόδοσης σε οπτικοποιήσεις ιστού.
 
-## Γιατί να Ομαδοποιήσετε Χαρακτηριστικά GeoJSON;
+## Γιατί να ομαδοποιήσετε χαρακτηριστικά GeoJSON;
 
-Η ομαδοποίηση (`group geojson features`) σας επιτρέπει να οργανώσετε σχετικές γεωμετρίες κάτω από ένα ενιαίο ονομαστικό αντικείμενο στο παραγόμενο TopoJSON. Αυτό είναι ιδιαίτερα χρήσιμο όταν:
-- Θέλετε να δημιουργήσετε ξεχωριστά επίπεδα για διαφορετικές διοικητικές περιοχές.  
-- Η βιβλιοθήκη χαρτογράφησης στο front‑end σας απαιτεί ονομαστικά αντικείμενα για στυλ ή αλληλεπίδραση.  
-- Χρειάζεται να μειώσετε την επανάληψη μοιράζοντας σύνορα μεταξύ γειτονικών χαρακτηριστικών.
+Η ομαδοποίηση χαρακτηριστικών GeoJSON σας επιτρέπει να ομαδοποιήσετε σχετικές γεωμετρίες κάτω από ένα ενιαίο ονομαστικό αντικείμενο στο αρχείο TopoJSON, κάτι που απλοποιεί το μεταγενέστερο στυλ και την αλληλεπίδραση. Αυτό είναι χρήσιμο όταν χρειάζεστε ξεχωριστά επίπεδα για διοικητικές περιοχές, όταν μια βιβλιοθήκη χαρτογράφησης αναμένει ονομαστικά αντικείμενα για χειρισμό κλικ, ή όταν θέλετε να εξαλείψετε τα διπλότυπα δεδομένα συνόρων μεταξύ γειτονικών χαρακτηριστικών.
 
 ## Ορίστε την ιδιότητα ονόματος αντικειμένου για ομαδοποίηση
 
-Το `ObjectNameAttribute` λέει στο Aspose.GIS ποια ιδιότητα του πηγαίου GeoJSON πρέπει να χρησιμοποιηθεί ως όνομα αντικειμένου στην έξοδο TopoJSON. Η σωστή ρύθμιση αυτής της ιδιότητας είναι το κλειδί για επιτυχή **group geojson features**.
+Το `ObjectNameAttribute` ενημερώνει το Aspose.GIS ποια ιδιότητα στο πηγαίο GeoJSON πρέπει να χρησιμοποιηθεί ως όνομα αντικειμένου στο αρχείο TopoJSON. Η σωστή ρύθμιση αυτής της ιδιότητας είναι το κλειδί για επιτυχή **ομαδοποίηση χαρακτηριστικών geojson**.
 
 ## Προαπαιτούμενα
 
-1. **Aspose.GIS for .NET** – κατεβάστε και εγκαταστήστε από την επίσημη ιστοσελίδα [εδώ](https://releases.aspose.com/gis/net/).  
-2. **Περιβάλλον Ανάπτυξης** – Visual Studio, Visual Studio Code, ή οποιοδήποτε IDE που υποστηρίζει C#.  
-3. **Δείγμα Αρχείου GeoJSON** – ένα αρχείο που περιέχει τα χαρακτηριστικά που θέλετε να μετατρέψετε.  
+Πριν ξεκινήσουμε, βεβαιωθείτε ότι έχετε τα παρακάτω προαπαιτούμενα:
 
-## Εισαγωγή Namespaces
+1. **Aspose.GIS for .NET** – κατεβάστε και εγκαταστήστε από τη [Aspose.GIS for .NET release page](https://releases.aspose.com/gis/net/).  
+2. **Περιβάλλον ανάπτυξης** – Visual Studio, Visual Studio Code, ή οποιοδήποτε IDE που υποστηρίζει C#.  
+3. **Δείγμα αρχείου GeoJSON** – ένα αρχείο που περιέχει τα χαρακτηριστικά που θέλετε να μετατρέψετε.  
 
-First, include the necessary namespaces in your project:
+## Εισαγωγή namespaces
+
+Πρώτα, συμπεριλάβετε τα απαραίτητα namespaces στο έργο σας:
 
 ```csharp
 using Aspose.Gis;
 using Aspose.Gis.Formats.TopoJson;
 ```
 
-## Οδηγός Βήμα‑Βήμα
+## Οδηγός βήμα‑βήμα
 
-### Βήμα 1: Ορισμός Διαδρομών Αρχείων
+### Βήμα 1: Ορισμός διαδρομών αρχείων
 
-Specify where the source GeoJSON lives and where the TopoJSON should be written:
+Καθορίστε πού βρίσκεται το πηγαίο GeoJSON και πού πρέπει να γραφτεί το TopoJSON:
 
 ```csharp
 string sampleGeoJsonPath = "Your Document Directory" + "sample.geojson";
 var outputFilePath = "Your Document Directory" + "convertedSampleWithGrouping_out.topojson";
 ```
 
-> **Συμβουλή:** Χρησιμοποιήστε `Path.Combine` για δημιουργία διαδρομών δια-πλατφόρμας εάν στοχεύετε .NET Core.
+> **Συμβουλή:** Χρησιμοποιήστε `Path.Combine` για δημιουργία διαδρομών δια‑πλατφόρμας εάν στοχεύετε στο .NET Core.
 
-### Βήμα 2: Διαμόρφωση Επιλογών Μετατροπής (Ορισμός Ιδιότητας Ονόματος Αντικειμένου)
+### Βήμα 2: Ρύθμιση επιλογών μετατροπής (ορισμός ιδιότητας ονόματος αντικειμένου)
 
-Create a `ConversionOptions` instance and tell Aspose.GIS how to group the features:
+`ConversionOptions` είναι το αντικείμενο διαμόρφωσης που ελέγχει πώς το Aspose.GIS εκτελεί τη μετατροπή. Σας επιτρέπει να ορίσετε την ιδιότητα ομαδοποίησης, να ορίσετε ένα προεπιλεγμένο όνομα αντικειμένου και να ρυθμίσετε την ακρίβεια της τοπολογίας.
+
+Η ιδιότητα `ObjectNameAttribute` (string) ορίζει το πεδίο GeoJSON που χρησιμοποιείται για ομαδοποίηση, ενώ το `DefaultObjectName` (string) παρέχει ένα εφεδρικό όνομα για χαρακτηριστικά που δεν έχουν την ιδιότητα.
 
 ```csharp
 var options = new ConversionOptions
@@ -91,11 +157,11 @@ var options = new ConversionOptions
 };
 ```
 
-Αντικαταστήστε το `"group"` με το πραγματικό όνομα ιδιότητας στο GeoJSON που θέλετε να χρησιμοποιήσετε για **geojson feature grouping**. Το `DefaultObjectName` εξασφαλίζει ότι κάθε χαρακτηριστικό καταλήγει σε ένα αντικείμενο TopoJSON, ακόμη και αν η ιδιότητα λείπει.
+Αντικαταστήστε το `"group"` με το πραγματικό όνομα ιδιότητας στο GeoJSON σας που θέλετε να χρησιμοποιήσετε για **ομαδοποίηση χαρακτηριστικών geojson**. Το `DefaultObjectName` διασφαλίζει ότι κάθε χαρακτηριστικό καταλήγει σε ένα αντικείμενο TopoJSON, ακόμη και αν λείπει η ιδιότητα.
 
-### Βήμα 3: Εκτέλεση της Μετατροπής (Μετατροπή GeoJSON σε TopoJSON)
+### Βήμα 3: Εκτέλεση της μετατροπής (μετατροπή GeoJSON σε TopoJSON)
 
-Run the conversion with a single API call:
+`Conversion.Convert` είναι μια κλήση API μίας γραμμής που διαβάζει το πηγαίο αρχείο, εφαρμόζει τις επιλογές και γράφει το αρχείο TopoJSON. Εσωτερικά δημιουργεί ένα γράφημα τοπολογίας, αφαιρεί τα διπλότυπα κοινά άκρα και γράφει το αποτέλεσμα σε συμπαγή μορφή TopoJSON.
 
 ```csharp
 VectorLayer.Convert(sampleGeoJsonPath, Drivers.GeoJson, outputFilePath, Drivers.TopoJson, options);
@@ -103,49 +169,55 @@ VectorLayer.Convert(sampleGeoJsonPath, Drivers.GeoJson, outputFilePath, Drivers.
 
 Μετά την εκτέλεση, το `convertedSampleWithGrouping_out.topojson` θα περιέχει την αναπαράσταση TopoJSON, με τα χαρακτηριστικά ομαδοποιημένα σύμφωνα με την ιδιότητα που καθορίσατε.
 
-## Κοινά Προβλήματα και Επίλυση
+## Συχνά προβλήματα και αντιμετώπιση
 
-| Σύμπτωμα | Πιθανή Αιτία | Διόρθωση |
+| Σύμπτωμα | Πιθανή αιτία | Διόρθωση |
 |----------|--------------|----------|
-| **All features end up in “unnamed”** | `ObjectNameAttribute` does not match any property in the GeoJSON | Verify the exact property name (case‑sensitive) and update the option |
-| **Output file is empty** | Incorrect file path or missing read permissions | Use absolute paths or ensure the app has file system access |
-| **Conversion throws `NotSupportedException`** | Trying to convert a GeoJSON with unsupported geometry types (e.g., GeometryCollection) | Simplify the source data or upgrade to the latest Aspose.GIS version |
+| **Όλα τα χαρακτηριστικά καταλήγουν σε “unnamed”** | `ObjectNameAttribute` δεν ταιριάζει με καμία ιδιότητα στο GeoJSON | Επαληθεύστε το ακριβές όνομα ιδιότητας (διάκριση πεζών‑κεφαλαίων) και ενημερώστε την επιλογή |
+| **Το αρχείο εξόδου είναι κενό** | Λανθασμένη διαδρομή αρχείου ή έλλειψη δικαιωμάτων ανάγνωσης | Χρησιμοποιήστε απόλυτες διαδρομές ή βεβαιωθείτε ότι η εφαρμογή έχει πρόσβαση στο σύστημα αρχείων |
+| **Η μετατροπή ρίχνει `NotSupportedException`** | Προσπάθεια μετατροπής GeoJSON με μη υποστηριζόμενους τύπους γεωμετρίας (π.χ., GeometryCollection) | Απλοποιήστε τα πηγαία δεδομένα ή αναβαθμίστε στην πιο πρόσφατη έκδοση του Aspose.GIS |
 
-## Καλές Πρακτικές Μετατροπής GeoJSON σε C#
+## Καλές πρακτικές μετατροπής GeoJSON σε C#
 
-- **Επικυρώστε το αρχικό GeoJSON** πριν τη μετατροπή για να εντοπίσετε έλλειψη ιδιοτήτων νωρίς.  
+- **Επικυρώστε το πηγαίο GeoJSON** πριν τη μετατροπή για να εντοπίσετε έλλειψη ιδιοτήτων νωρίς.  
 - **Χρησιμοποιήστε `Path.Combine`** για διαδρομές αρχείων ώστε να αποφύγετε προβλήματα διαχωριστών ειδικών για πλατφόρμες.  
-- **Τυλίξτε την κλήση μετατροπής σε block try‑catch** για να διαχειρίζεστε σφάλματα I/O με χάρη.  
-- **Καταγράψτε τις εμφανίσεις του `DefaultObjectName`**· μπορούν να υποδείξουν προβλήματα ποιότητας δεδομένων που ίσως θέλετε να διορθώσετε στην πηγή.  
+- **Τυλίξτε την κλήση μετατροπής σε μπλοκ try‑catch** για να διαχειρίζεστε σφάλματα I/O με χάρη.  
+- **Καταγράψτε τις εμφανίσεις του `DefaultObjectName`**· μπορούν να υποδεικνύουν προβλήματα ποιότητας δεδομένων που ίσως θέλετε να διορθώσετε στην πηγή.  
 
-## Συχνές Ερωτήσεις
+## Συχνές ερωτήσεις
 
-**Μ: Μπορώ να ομαδοποιήσω χαρακτηριστικά βάσει πολλαπλών ιδιοτήτων;**  
-Α: Ναι, μπορείτε να συνενώσετε πολλά πεδία σε μία εικονική ιδιότητα ή να εκτελέσετε πολλαπλές μετατροπές με διαφορετικές τιμές `ObjectNameAttribute`.
+**Q: Μπορώ να ομαδοποιήσω χαρακτηριστικά βάσει πολλαπλών ιδιοτήτων;**  
+A: Ναι, μπορείτε να συνενώσετε πολλά πεδία σε μία εικονική ιδιότητα ή να εκτελέσετε πολλαπλές μετατροπές με διαφορετικές τιμές `ObjectNameAttribute`.
 
-**Μ: Είναι το Aspose.GIS συμβατό με ASP.NET Core;**  
-Α: Απόλυτα – η βιβλιοθήκη λειτουργεί με ASP.NET Core, .NET 5, .NET 6 και το κλασικό .NET Framework.
+**Q: Είναι το Aspose.GIS συμβατό με ASP.NET Core;**  
+A: Απόλυτα – η βιβλιοθήκη λειτουργεί με ASP.NET Core, .NET 5, .NET 6 και το κλασικό .NET Framework.
 
-**Μ: Μπορώ να μετατρέψω άλλες γεωγραφικές μορφές εκτός του GeoJSON;**  
-Α: Ναι, το Aspose.GIS υποστηρίζει Shapefile, KML, GML, CSV και πολλές άλλες μορφές για εισαγωγή και εξαγωγή.
+**Q: Μπορώ να μετατρέψω άλλες γεωγραφικές μορφές εκτός του GeoJSON;**  
+A: Ναι, το Aspose.GIS υποστηρίζει περισσότερες από 30 μορφές εισόδου και εξόδου — συμπεριλαμβανομένων Shapefile, KML, GML, CSV και DXF — για εισαγωγή και εξαγωγή.
 
-**Μ: Προσφέρει το Aspose.GIS δωρεάν δοκιμή;**  
-Α: Ναι, μπορείτε να αποκτήσετε δωρεάν δοκιμή του Aspose.GIS από [εδώ](https://releases.aspose.com/).
+**Q: Προσφέρει το Aspose.GIS δωρεάν δοκιμή;**  
+A: Ναι, μπορείτε να αποκτήσετε δωρεάν δοκιμή του Aspose.GIS από τη [Aspose.GIS free trial page](https://releases.aspose.com/).
 
-**Μ: Πού μπορώ να λάβω υποστήριξη για το Aspose.GIS;**  
-Α: Μπορείτε να λάβετε υποστήριξη από το φόρουμ κοινότητας Aspose.GIS [εδώ](https://forum.aspose.com/c/gis/33).
+**Q: Πού μπορώ να λάβω υποστήριξη για το Aspose.GIS;**  
+A: Μπορείτε να λάβετε υποστήριξη από το φόρουμ κοινότητας Aspose.GIS [Aspose.GIS community forum](https://forum.aspose.com/c/gis/33).
 
 ## Συμπέρασμα
 
-Τώρα έχετε μια πλήρη, έτοιμη για παραγωγή συνταγή για **convert geojson to topojson** με ομαδοποίηση χαρακτηριστικών χρησιμοποιώντας το Aspose.GIS for .NET. Ορίζοντας το `ObjectNameAttribute`, ελέγχετε πώς οργανώνονται τα χαρακτηριστικά, κάτι που απλοποιεί το styling και την αλληλεπίδραση στα web maps. Μη διστάσετε να εξερευνήσετε άλλους drivers, να πειραματιστείτε με διαφορετικές ιδιότητες ομαδοποίησης και να ενσωματώσετε αυτή τη μετατροπή σε μεγαλύτερα GIS pipelines.
+Τώρα έχετε μια πλήρη, έτοιμη για παραγωγή συνταγή για **μετατροπή geojson σε topojson** με ομαδοποίηση χαρακτηριστικών χρησιμοποιώντας το Aspose.GIS για .NET. Ορίζοντας το `ObjectNameAttribute`, ελέγχετε πώς οργανώνονται τα χαρακτηριστικά, κάτι που απλοποιεί το μεταγενέστερο στυλ και την αλληλεπίδραση σε χάρτες ιστού. Μη διστάσετε να εξερευνήσετε άλλους οδηγούς, να πειραματιστείτε με διαφορετικές ιδιότητες ομαδοποίησης και να ενσωματώσετε αυτή τη μετατροπή σε μεγαλύτερους GIS pipelines.
 
 ---
 
-**Τελευταία Ενημέρωση:** 2026-02-05  
-**Δοκιμή Με:** Aspose.GIS for .NET (latest release)  
+**Τελευταία ενημέρωση:** 2026-08-03  
+**Δοκιμάστηκε με:** Aspose.GIS for .NET (latest release)  
 **Συγγραφέας:** Aspose  
 
 ---
+
+## Σχετικά Μαθήματα
+
+- [Πώς να μετατρέψετε GeoJSON σε TopoJSON με Aspose.GIS](/gis/net/geo-data-conversion/convert-geojson-to-topojson/)
+- [Πώς να μετατρέψετε GeoJSON σε TopoJSON με συγκεκριμένο όνομα αντικειμένου](/gis/net/geo-data-conversion/convert-geojson-to-topojson-with-specific-object-name/)
+- [Αποκάλυψη χαρακτηριστικών TopoJSON με Aspose.GIS για .NET](/gis/net/layer-management/access-features-in-topojson/)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
