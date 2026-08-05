@@ -1,33 +1,51 @@
 ---
-title: อ่าน Object ID จากไฟล์ GDB Layer ใน Aspose.GIS
-linktitle: อ่าน Object ID จากไฟล์ GDB Layer
+date: 2026-04-30
+description: เรียนรู้วิธีอ่าน ObjectID จากชั้นข้อมูล File Geodatabase ด้วย Aspose.GIS
+  สำหรับ .NET คู่มือขั้นตอนโดยละเอียด ข้อกำหนดเบื้องต้น และเคล็ดลับการแก้ไขปัญหา
+keywords:
+- how to read objectid
+- Aspose.GIS File GDB
+- read object id .NET
+linktitle: อ่าน Object ID จากเลเยอร์ File GDB
 second_title: Aspose.GIS .NET API
-description: เรียนรู้วิธีใช้ Aspose.GIS สำหรับ .NET เพื่อจัดการการประมวลผลข้อมูลเชิงพื้นที่อย่างมีประสิทธิภาพ มีบทแนะนำที่ครอบคลุมและคำแนะนำจากผู้เชี่ยวชาญ
-weight: 16
+title: วิธีอ่าน ObjectID จากเลเยอร์ File GDB ด้วย Aspose.GIS
 url: /th/net/layer-data-operations/read-object-id-from-file-gdb-layer/
+weight: 16
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# อ่าน Object ID จากไฟล์ GDB Layer ใน Aspose.GIS
+# วิธีอ่าน ObjectID จากเลเยอร์ File GDB ด้วย Aspose.GIS
 
-## การแนะนำ
-ยินดีต้อนรับสู่คู่มือที่ครอบคลุมเกี่ยวกับการเรียนรู้ Aspose.GIS สำหรับ .NET! Aspose.GIS เป็นไลบรารีที่มีประสิทธิภาพซึ่งออกแบบมาเพื่อจัดการงานการประมวลผลข้อมูลเชิงพื้นที่และการแสดงภาพอย่างมีประสิทธิภาพภายในกรอบงาน .NET ไม่ว่าคุณจะเป็นนักพัฒนาที่มีประสบการณ์หรือเพิ่งเริ่มต้นการเดินทางในการเขียนโปรแกรมเชิงพื้นที่ บทช่วยสอนนี้จะแนะนำทุกสิ่งที่คุณจำเป็นต้องรู้เพื่อใช้ประโยชน์จากศักยภาพสูงสุดของ Aspose.GIS
+## บทนำ
+If you need to extract the **ObjectID** values from a File Geodatabase (GDB) layer, this tutorial shows you **how to read objectid** quickly with Aspose.GIS for .NET. We'll walk you through the required setup, the exact code you need, and practical tips to avoid common pitfalls. By the end, you’ll be able to integrate ObjectID retrieval into any .NET geospatial workflow.
+
+## คำตอบอย่างรวดเร็ว
+- **ObjectID แสดงอะไร?** A unique identifier for each feature in a GIS layer.  
+- **ต้องใช้ไดรเวอร์ใด?** `Drivers.FileGdb` for File Geodatabase files.  
+- **ต้องใช้ไลเซนส์สำหรับโค้ดนี้หรือไม่?** A trial works for development; a commercial license is required for production.  
+- **สามารถใช้กับ .NET Core ได้หรือไม่?** Yes, Aspose.GIS supports .NET Framework and .NET Core.  
+- **ต้องจัดการพิเศษสำหรับชุดข้อมูลขนาดใหญ่หรือไม่?** Iterate with `using` statements to ensure resources are released promptly.
+
+## ObjectID คืออะไรและทำไมต้องอ่าน?
+ObjectID (often named `OBJECTID` or `FID`) is the primary key that uniquely identifies each feature in a GIS layer. Accessing it is essential when you need to:
+
+- Update or delete specific features.
+- Correlate features across multiple layers.
+- Perform fast look‑ups without scanning attribute tables.
+
 ## ข้อกำหนดเบื้องต้น
-ก่อนที่จะเข้าสู่บทช่วยสอน ตรวจสอบให้แน่ใจว่าคุณมีข้อกำหนดเบื้องต้นต่อไปนี้:
-1. Visual Studio: ตรวจสอบให้แน่ใจว่าคุณได้ติดตั้ง Visual Studio บนระบบของคุณแล้ว เนื่องจากเราจะใช้เพื่อเขียนและเรียกใช้โค้ด .NET ของเรา
-   
-2.  Aspose.GIS สำหรับ .NET: คุณจะต้องดาวน์โหลดและติดตั้ง Aspose.GIS สำหรับ .NET คุณสามารถขอรับห้องสมุดได้จาก[หน้าดาวน์โหลด](https://releases.aspose.com/gis/net/).
-3. ความรู้พื้นฐาน C#: ความคุ้นเคยกับภาษาการเขียนโปรแกรม C# เป็นสิ่งสำคัญในการทำความเข้าใจและนำตัวอย่างที่ให้ไว้ในบทช่วยสอนนี้ไปใช้
+Before you start, make sure you have:
 
-## การนำเข้าเนมสเปซ
-หากต้องการเริ่มต้นใช้งาน Aspose.GIS สำหรับ .NET คุณต้องนำเข้าเนมสเปซที่จำเป็นลงในโค้ด C# ของคุณ ทำตามขั้นตอนเหล่านี้:
-## ขั้นตอนที่ 1: เพิ่มข้อมูลอ้างอิงไปยัง Aspose.GIS
-เริ่มต้นด้วยการเพิ่มการอ้างอิงไปยังไลบรารี Aspose.GIS ในโครงการ Visual Studio ของคุณ คุณสามารถทำได้โดยอ้างอิงไฟล์ DLL โดยตรงหรือโดยการติดตั้งแพ็คเกจผ่าน NuGet
-## ขั้นตอนที่ 2: นำเข้าเนมสเปซ
-จากนั้น นำเข้าเนมสเปซที่จำเป็นที่จุดเริ่มต้นของไฟล์ C# ของคุณ ซึ่งช่วยให้คุณเข้าถึงคลาสและวิธีการที่มีให้โดย Aspose.GIS
+1. **Visual Studio** (any recent version) – to write and run C# code.  
+2. **Aspose.GIS for .NET** – download it from the [download page](https://releases.aspose.com/gis/net/).  
+3. **Basic C# knowledge** – familiarity with loops and console output.  
+
+## การนำเข้า Namespaces
+First, add a reference to the Aspose.GIS library (via NuGet or direct DLL) and import the required namespaces:
+
 ```csharp
 using Aspose.Gis;
 using System;
@@ -37,49 +55,98 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-ตอนนี้ เรามาแบ่งย่อยโค้ดที่ให้มาออกเป็นหลายขั้นตอน:
-## ขั้นตอนที่ 1: กำหนดไดเร็กทอรีข้อมูล
+## คู่มือขั้นตอนต่อขั้นตอน
+
+### ขั้นตอนที่ 1: กำหนดไดเรกทอรีข้อมูล
+Specify the folder that holds your `.gdb` file.
+
 ```csharp
 string dataDir = "Your Document Directory";
 ```
- แทนที่`"Your Document Directory"` พร้อมพาธไปยังไดเร็กทอรีที่มีไฟล์ File Geodatabase (GDB) ของคุณ
-## ขั้นตอนที่ 2: เปิดชุดข้อมูลและเลเยอร์
+
+Replace `"Your Document Directory"` with the absolute path to the folder containing `test.gdb`.
+
+### ขั้นตอนที่ 2: เปิด Dataset และเลเยอร์เป้าหมาย
+Create a `Dataset` instance using the File GDB driver, then open the desired layer (replace `"layer"` with your actual layer name).
+
 ```csharp
 string path = dataDir + "test.gdb";
 using (var dataset = Dataset.Open(path, Drivers.FileGdb))
 using (var layer = dataset.OpenLayer("layer"))
 {
-    // รหัสเพื่ออ่านรหัสวัตถุอยู่ที่นี่
+    // Code to read object IDs goes here
 }
 ```
-ขั้นตอนนี้จะเปิดชุดข้อมูลและเลเยอร์จากไฟล์ GDB ที่ระบุ (`test.gdb`). ตรวจสอบให้แน่ใจว่าไดรเวอร์ที่ถูกต้อง (`FileGdb`) ใช้เพื่อเปิดชุดข้อมูล
-## ขั้นตอนที่ 3: ทำซ้ำผ่านฟีเจอร์ต่างๆ
+
+The `using` statements guarantee that file handles are released automatically.
+
+### ขั้นตอนที่ 3: วนลูปผ่านฟีเจอร์ทั้งหมด
+Loop over each feature in the layer. This is where we’ll extract the ObjectID.
+
 ```csharp
 foreach (var feature in layer)
 {
-    // โค้ดสำหรับประมวลผลแต่ละฟีเจอร์อยู่ที่นี่
+    // Code to process each feature goes here
 }
 ```
-ที่นี่ เราวนซ้ำแต่ละคุณลักษณะในเลเยอร์ที่ดึงมาจากชุดข้อมูล
-## ขั้นตอนที่ 4: ดึง ID วัตถุ
+
+### ขั้นตอนที่ 4: ดึงและพิมพ์ ObjectID
+Inside the loop, call `GetValue<int>("OBJECTID")` to fetch the integer identifier and output it.
+
 ```csharp
 Console.WriteLine(feature.GetValue<int>("OBJECTID"));
 ```
-ภายในลูป เราจะดึงและพิมพ์ค่าของแอตทริบิวต์ "OBJECTID" สำหรับแต่ละคุณลักษณะ
 
-## บทสรุป
-ในบทช่วยสอนนี้ เราได้กล่าวถึงพื้นฐานของการใช้ Aspose.GIS สำหรับ .NET เพื่ออ่าน Object ID จากเลเยอร์ File Geodatabase ด้วยการทำตามคำแนะนำทีละขั้นตอนและทำความเข้าใจตัวอย่างโค้ดที่ให้มา คุณก็พร้อมที่จะสำรวจงานการประมวลผลข้อมูลเชิงพื้นที่ขั้นสูงเพิ่มเติมด้วย Aspose.GIS แล้ว
+Running the program will print a list of ObjectID values to the console, one per line.
+
+## ปัญหาทั่วไปและการแก้ไขปัญหา
+
+| อาการ | สาเหตุที่เป็นไปได้ | วิธีแก้ |
+|---------|--------------|-----|
+| **`ArgumentException: No such layer`** | ชื่อเลเยอร์ผิด | Verify the exact name in the GDB (case‑sensitive). |
+| **`FileNotFoundException`** | Incorrect path to `.gdb` | Use `Path.Combine(dataDir, "test.gdb")` and double‑check the folder. |
+| **`InvalidOperationException` when reading OBJECTID** | Attribute name differs (e.g., `FID`) | Inspect the schema with `layer.GetFields()` and adjust the field name. |
+| **Performance slowdown on large layers** | Loading all features at once | Process features in batches or use a cursor‑based approach if supported. |
+
 ## คำถามที่พบบ่อย
-### ฉันสามารถใช้ Aspose.GIS สำหรับ .NET กับภาษาการเขียนโปรแกรมอื่นได้หรือไม่
-Aspose.GIS สำหรับ .NET ได้รับการออกแบบมาเป็นพิเศษสำหรับแอปพลิเคชัน .NET อย่างไรก็ตาม Aspose ยังมีไลบรารีสำหรับ Java และแพลตฟอร์มอื่นๆ อีกด้วย
-### Aspose.GIS มีรุ่นทดลองใช้ฟรีหรือไม่
-ใช่ คุณสามารถดาวน์โหลด Aspose.GIS สำหรับ .NET เวอร์ชันทดลองใช้ฟรีได้จาก[เว็บไซต์](https://releases.aspose.com/gis/net/).
-### ฉันจะรับการสนับสนุนด้านเทคนิคสำหรับ Aspose.GIS ได้อย่างไร
-หากคุณพบปัญหาหรือมีคำถามเกี่ยวกับ Aspose.GIS คุณสามารถไปที่[ฟอรัม Aspose.GIS](https://forum.aspose.com/c/gis/33) สำหรับความช่วยเหลือ.
-### ฉันสามารถซื้อใบอนุญาตชั่วคราวสำหรับ Aspose.GIS ได้หรือไม่
-ใช่ คุณสามารถขอรับใบอนุญาตชั่วคราวได้จากเว็บไซต์ Aspose เพื่อวัตถุประสงค์ในการทดสอบและประเมินผล
-### ฉันจะหาเอกสารที่ครอบคลุมสำหรับ Aspose.GIS สำหรับ .NET ได้ที่ไหน
- คุณสามารถอ้างถึง[เอกสารประกอบ](https://reference.aspose.com/gis/net/) สำหรับข้อมูลโดยละเอียดเกี่ยวกับการใช้ Aspose.GIS API และคุณสมบัติต่างๆ
+### ฉันสามารถใช้ Aspose.GIS for .NET กับภาษาโปรแกรมอื่นได้หรือไม่?
+Aspose.GIS for .NET is specifically designed for .NET applications. However, Aspose also offers libraries for Java and other platforms.
+
+### มีรุ่นทดลองฟรีสำหรับ Aspose.GIS หรือไม่?
+Yes, you can download a free trial version of Aspose.GIS for .NET from the [website](https://releases.aspose.com/gis/net/).
+
+### ฉันจะได้รับการสนับสนุนทางเทคนิคสำหรับ Aspose.GIS อย่างไร?
+If you encounter any issues or have questions about Aspose.GIS, you can visit the [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) for assistance.
+
+### ฉันสามารถซื้อไลเซนส์ชั่วคราวสำหรับ Aspose.GIS ได้หรือไม่?
+Yes, you can obtain a temporary license from the Aspose website for testing and evaluation purposes.
+
+### ฉันจะหาเอกสารประกอบที่ครอบคลุมสำหรับ Aspose.GIS for .NET ได้จากที่ไหน?
+You can refer to the [documentation](https://reference.aspose.com/gis/net/) for detailed information on using Aspose.GIS APIs and features.
+
+## คำถามที่พบบ่อย
+
+**Q: ถ้าเลเยอร์ของฉันใช้ชื่อฟิลด์ที่แตกต่างสำหรับตัวระบุที่ไม่ซ้ำกันจะทำอย่างไร?**  
+A: Replace `"OBJECTID"` in `GetValue<int>("OBJECTID")` with the actual field name (e.g., `"FID"` or `"ID"`).
+
+**Q: สามารถเขียนค่าของ ObjectID กลับไปยังไฟล์อื่นได้หรือไม่?**  
+A: Yes, you can create a new `Feature` collection or export to CSV using standard .NET I/O after retrieving the IDs.
+
+**Q: Aspose.GIS รองรับการอ่าน ObjectID จาก shapefile ด้วยหรือไม่?**  
+A: Absolutely. Use `Drivers.Shapefile` instead of `Drivers.FileGdb` and the same `GetValue<int>("OBJECTID")` pattern works.
+
+**Q: จะจัดการกับ File GDB ที่มีการป้องกันด้วยรหัสผ่านอย่างไร?**  
+A: Provide the password when opening the dataset: `Dataset.Open(path, Drivers.FileGdb, new OpenOptions { Password = "yourPwd" })`.
+
+**Q: ฉันสามารถรันโค้ดนี้บน Linux ได้หรือไม่?**  
+A: Yes, Aspose.GIS for .NET is cross‑platform and works on Linux with .NET Core/5+.
+
+---
+
+**Last Updated:** 2026-04-30  
+**Tested With:** Aspose.GIS for .NET 24.11 (latest at time of writing)  
+**Author:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}

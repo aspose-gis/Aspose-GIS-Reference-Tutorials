@@ -1,11 +1,18 @@
 ---
-date: 2025-12-31
-description: Fedezze fel az Aspose.GIS for .NET-et, és tanulja meg, hogyan hozhat
-  létre file GDB adatkészletet, valamint hogyan állíthat be toleranciákat könnyedén,
-  lépésről‑lépésre útmutatóval. Fejlessze .NET alkalmazásait.
-linktitle: Set Tolerances for File GDB Layer
+date: 2026-04-30
+description: Tanulja meg, hogyan hozhat létre GDB-fájlokat az Aspose.GIS for .NET
+  segítségével, hogyan állíthatja be a réteg pontosságát, és hogyan használhatja a
+  GDB-fájl beállításait a toleranciák szabályozásához.
+keywords:
+- how to create gdb
+- create gis layer
+- how to set tolerances
+- set layer precision
+- file gdb options
+linktitle: Toleranciák beállítása a File GDB réteghez
 second_title: Aspose.GIS .NET API
-title: Fájl GDB adatkészlet létrehozása és toleranciák beállítása egy réteghez
+title: Hogyan hozhatunk létre GDB adatkészletet, és állíthatunk be toleranciákat egy
+  réteghez
 url: /hu/net/layer-data-operations/set-tolerances-for-file-gdb-layer/
 weight: 22
 ---
@@ -14,35 +21,35 @@ weight: 22
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Fájl GDB adatkészlet létrehozása és toleranciák beállítása egy réteghez
+# Hogyan hozzunk létre GDB adathalmazt és állítsunk be toleranciákat egy réteghez
 
 ## Bevezetés
-Ha **create file GDB dataset**-t kell létrehozni és a pontosságát szabályozni, jó helyen jár. Ebben az útmutatóban végigvezetjük a teljes folyamaton – a .NET projekt beállításától, a File Geodatabase (GDB) adatkészlet létrehozásáig, majd XY, Z és M toleranciák alkalmazásáig egy új rétegen. A végére egy használatra kész adatkészletet kap, amely zökkenőmentesen működik az ArcGIS eszközökkel és más GIS alkalmazásokkal.
+Ha **create file GDB dataset**-et kell létrehoznod és a pontosságát szabályozni, jó helyen vagy. Ebben az útmutatóban végigvezetünk a teljes folyamaton – a .NET projekt beállításától kezdve a File Geodatabase (GDB) adathalmaz létrehozásáig, majd az XY, Z és M toleranciák alkalmazásáig egy új rétegen. A végére egy használatra kész adathalmazod lesz, amely zökkenőmentesen működik az ArcGIS eszközökkel és más GIS alkalmazásokkal. Ez az útmutató megmutatja, **how to create gdb** fájlokat hozhatsz létre programozottan, így automatizálhatod az adatcsővezetékeket manuális beavatkozás nélkül.
 
 ## Gyors válaszok
-- **Mi jelentése a “create file GDB dataset” kifejezésnek?** Új File Geodatabase tárolót hoz létre a lemezen, amely több GIS réteget is tartalmazhat.
-- **Miért kell toleranciákat beállítani?** A toleranciák meghatározzák a geometriai műveletek pontosságát, nem engedélyezve a kerekítési hibákat a térbeli elemzésekben.
-- **Melyik Aspose.GIS osztályt használ?** `Dataset.Create` együtt a `FileGdbOptions`-szal.
-- **Szükségem van licencre a fejlesztéshez?** Ideiglenes licenc a teszteléshez; a termeléshez teljes licenc szükséges.
-- **Mely .NET verziók támogatottak?** .NET Framework4.5+, .NETCore3.1+, .NET5/6/7.
+- **Mi jelent a “create file GDB dataset”?** Új File Geodatabase tárolót hoz létre a lemezen, amely több GIS réteget is tartalmazhat.  
+- **Miért állítunk be toleranciákat?** A toleranciák meghatározzák a geometriai műveletek pontosságát, megakadályozzák a kerekítési hibákat a térbeli elemzésben.  
+- **Melyik Aspose.GIS osztályt használjuk?** `Dataset.Create` together with `FileGdbOptions`.  
+- **Szükségem van licencre a fejlesztéshez?** Ideiglenes licenc elegendő a teszteléshez; a teljes licenc a termeléshez szükséges.  
+- **Mely .NET verziók támogatottak?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
 
-## Mi az a fájl GDB adatkészlet?
-A File Geodatabase (GDB) egy mappán alapuló adatáruház, amely GIS rétegeket, táblákat és kapcsolatokat tárol. Az Aspose.GIS file programozott módon **create GDB dataset** hozható létre anélkül, hogy az ArcGIS telepítve lenne, így ideális automatizált folyamatokhoz vagy egyedi alkalmazásokhoz.
+## Mi az a File GDB adathalmaz?
+A File Geodatabase (GDB) egy mappán alapuló adatáruház, amely GIS rétegeket, táblákat és kapcsolatok tárol. Az Aspose.GIS használatával programozottan **create file GDB dataset** hozhatsz létre anélkül, hogy az ArcGIS telepítve lenne, így ideális automatizált csővezetékekhez vagy egyedi alkalmazásokhoz.
 
-## Miért állítson be tűréseket egy réteghez?
-A toleranciák beállításának biztosítása, hogy a geometriai számítások egyszerűen metszetek, buffer vagy illesztés) a szükséges pontosságot tartsák. Ez különösen fontos részletesú adatokkal dolgozva vagy más GIS platformokra való exportáláskor, ahol meghatározott toleranciaértékekre van szükség.
+## Miért állítunk be toleranciákat egy réteghez?
+A toleranciák beállítása biztosítja, hogy a geometriai számítások (például metszetek, bufferelés vagy illesztés) a szükséges pontosságot tartsák be. Ez különösen fontos magas felbontású adatokkal dolgozva vagy más GIS platformokra való exportáláskor, ahol meghatározott toleranciaértékek várhatók. Más szóval, **setting layer precision**-t végzel, hogy elkerüld a váratlan geometriai hibákat.
 
 ## Előfeltételek
-Mielőtt a kódba merülnénk, g meg, hogy a következőkkel rendelkezik:
+Mielőtt a kódba merülnénk, győződj meg, hogy a következőkkel rendelkezel:
 
-- **Aspose.GIS for .NET Library** – Töltse le és telepítse az Aspose.GIS könyvtárat a [letöltési hivatkozás](https://releases.aspose.com/gis/net/) címről. Ha még nem szerezte be, a [documentation](https://reference.aspose.com/gis/net/) további oldalon talál.
-- **Fejlesztői környezet** – Visual Studio, Rider vagy bármely .NET fejlesztést támogató IDE.
-- **Érvényes licenc** – Használjon ideiglenes licencet a teszteléshez vagy teljes licencet a termeléshez (lásd a GYIK szakaszban található hivatkozásokat).
+- **Aspose.GIS for .NET Library** – Töltsd le és telepítsd az Aspose.GIS könyvtárat a [download link](https://releases.aspose.com/gis/net/) címről. Ha még nem szerezted be, a könyvtárat tovább tanulmányozhatod a [documentation](https://reference.aspose.com/gis/net/) oldalon.
+- **Development Environment** – Visual Studio, Rider vagy bármely .NET fejlesztést támogató IDE.
+- **A valid license** – Használj ideiglenes licencet a teszteléshez vagy teljes licencet a termeléshez (lásd a FAQ szakaszban található hivatkozásokat).
 
 Miután minden készen áll, importáljuk a szükséges névtereket.
 
 ## Névterek importálása
-A .NET alkalmazásában adja hozzá a következő névtereket az Aspose.GIS funkcióinak felhasználásához:
+A .NET alkalmazásodban add hozzá a következő névtereket az Aspose.GIS funkcióinak kihasználásához:
 
 ```csharp
 using Aspose.Gis;
@@ -53,21 +60,22 @@ using System;
 using System.Text;
 ```
 
-A névterek megadása után elkezdhetjük az adatkészlet felépítését.
+A névterek megadása után elkezdhetjük felépíteni az adathalmazt.
 
-## Lépésről lépésre
+## Hogyan hozzunk létre GDB adathalmazt?
+Az alábbi lépésről‑lépésre útmutató végigvezet a adathalmaz létrehozásán és a toleranciák beállításán.
 
-### 1. lépés: Határozza meg a dokumentumkönyvtárat
-Először is, irányítsa a kódot arra a mappára, ahol a File GDB-t létre szeretné hozni:
+### 1. lépés: A dokumentumkönyvtár meghatározása
+Először irányítsd a kódot arra a mappára, ahol a File GDB-t létre szeretnéd hozni:
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-> **Pro tipp:** Használja a `Path.Combine`-t, ha platform‑független módon kell felépíteni az elérési utat.
+> **Pro tip:** Használd a `Path.Combine`-t, ha platform‑független módon kell felépíteni az elérési utat.
 
-### 2. lépés: File GDB adatkészlet létrehozása
-Most már ténylegesen **create file GDB dataset**-t hozunk létre a lemezen. A `Dataset.Create` metódus a teljes elérési utat és a meghajtó típusát (`Drivers.FileGdb`) veszi át.
+### 2. lépés: File GDB adathalmaz létrehozása
+Most ténylegesen **create file GDB dataset** hozunk létre a lemezen. A `Dataset.Create` metódus a teljes elérési utat és a meghajtó típusát (`Drivers.FileGdb`) veszi át.
 
 ```csharp
 var path = dataDir + "TolerancesForFileGdbLayer_out.gdb";
@@ -75,10 +83,10 @@ using (var dataset = Dataset.Create(path, Drivers.FileGdb))
 {
 ```
 
-> A `using` blokk biztosítja, hogy az adatkészlet megfelelően le legyen zárva és a lemezre legyen kiürítve, amikor befejezi.
+> A `using` blokk biztosítja, hogy az adathalmaz megfelelően le legyen zárva és a lemezre íródjon, amikor befejezted.
 
-### 3. lépés: Tűrések beállítása a `FileGdbOptions` használatával
-Mielőtt réteget hozna létre, definiálja a szükséges toleranciákat. A `FileGdbOptions` lehetővé teszi XY, Z és M toleranciák megadását.
+### 3. lépés: Toleranciák beállítása a `FileGdbOptions` használatával
+Mielőtt réteget hoznál létre, határozd meg a szükséges toleranciákat. A `FileGdbOptions` lehetővé teszi XY, Z és M toleranciák megadását – ez a **file gdb options** objektum, amely a pontosságot szabályozza.
 
 ```csharp
 var options = new FileGdbOptions
@@ -89,10 +97,10 @@ var options = new FileGdbOptions
 };
 ```
 
-Ezek az értékek tipikusak a nagy pontosságú mérnöki adatokhoz, de a projekt igényei szerint módosíthatók.
+Ezek az értékek tipikusak a nagy pontosságú mérnöki adatokhoz, de a projektedhez igazíthatod őket.
 
-### 4. lépés: Réteg létrehozása a megadott tűréshatárokkal
-Végül hozzon létre egy új réteget az adatkészleten belül, átadva a most konfigurált opciók objektumát.
+### 4. lépés: GIS réteg létrehozása a megadott toleranciákkal
+Végül hozz létre egy új réteget az adathalmazban, átadva a most konfigurált opciók objektumát. Ez a lépés bemutatja, hogyan **how to set tolerances** miközben **creating a GIS layer**.
 
 ```csharp
 using (var layer = dataset.CreateLayer("layer_name", options))
@@ -101,38 +109,38 @@ using (var layer = dataset.CreateLayer("layer_name", options))
 }
 ```
 
-Amikor a `using` blokk befejeződik, a réteg a megadott toleranciákkal lesz mentve.
+Amikor a `using` blokk véget ér, a réteg a megadott toleranciákkal lesz mentve.
 
 ## Gyakori problémák és megoldások
-| Kiadás | Miért történik | Fix |
-|-------|----------------|-----|
-| **Az adatkészlet útvonala nem található** | A `dataDir` változó egy nem létező mappára mutat. | G mind` meg róla, hogy a könyvtár létezik, vagy hozza létre aDirectoryCreateDirector(dataDir)` segítségével. |
-| **Érvénytelen toleranciaértékek** | A toleranciáknak nem negatív számoknak kell lenniük. | Használjon pozitív értékeket; kerülje a nullát, hacsak nem szándékosan szeretne tolerancia nélküli beállítást. |
-| **Licenc hiba** | A próbaverzió vagy ideiglenes licenc lejárt. | Alkalmazzon friss ideiglenes licencet vagy frissíten teljes licencre. |
+| Probléma | Miért fordul elő | Megoldás |
+|----------|------------------|----------|
+| **Az adathalmaz útvonala nem található** | A `dataDir` változó egy nem létező mappára mutat. | Győződj meg róla, hogy a könyvtár létezik, vagy hozd létre a `Directory.CreateDirectory(dataDir)` segítségével. |
+| **Érvénytelen toleranciaértékek** | A toleranciáknak nem negatív számoknak kell lenniük. | Használj pozitív értékeket; kerüld a nullát, hacsak nem akarod, hogy ne legyen tolerancia. |
+| **Licenc hiba** | A próbaverzió vagy ideiglenes licenc lejárt. | Alkalmazz friss ideiglenes licencet vagy frissíts teljes licencre. |
 
-## Gyakran Ismételt Kérdések
+## Gyakran ismételt kérdések
 
-**K: Használhatom az Aspose.GIS for .NET-et más GIS könyvtárakkal?**
-V: Igen, az Aspose.GIS támogatja az interoperabilitást, lehetővé teszi a könyvtár téve integrációját olyanokkal, mint a NetTopologySuite vagy a GDAL.
+**Q: Használhatom az Aspose.GIS for .NET-et más GIS könyvtárakkal?**  
+A: Igen, az Aspose.GIS támogatja az interoperabilitást, lehetővé téve integrálását olyan könyvtárakkal, mint a NetTopologySuite vagy a GDAL.
 
-**K: Elérhető próba verzió az Aspose.GIS for .NET-hez?**
-V: Természetesen! A funkciókat a [ingyenes próbaverzió](https://releases.aspose.com/) segítségével tekintheti meg.
+**Q: Elérhető próba verzió az Aspose.GIS for .NET-hez?**  
+A: Természetesen! A funkciókat a [free trial version](https://releases.aspose.com/) segítségével fedezheted fel.
 
-**K: Hogyan kaphatok támogatást az Aspose.GIS for .NET-hez?**
-V: Látogassa meg az [Aspose.GIS fórumot](https://forum.aspose.com/c/gis/33), hogy kapcsolatba léphessen a közösséggel és segítséget kérhessen.
+**Q: Hogyan kaphatok támogatást az Aspose.GIS for .NET-hez?**  
+A: Látogasd meg az [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) oldalt, hogy a közösséggel kapcsolatba léphess és segítséget kérj.
 
-**K: Szükségem van ideiglenes licencre a teszteléshez?**
-V: Igen, a [temporary licenc](https://purchase.aspose.com/temporary-license/) segítségével szerezhet ideiglenes licencet a teszteléshez és értékeléshez.
+**Q: Szükségem van ideiglenes licencre tesztelési célokra?**  
+A: Igen, a [temporary license](https://purchase.aspose.com/temporary-license/) segítségével szerezhetsz ideiglenes licencet a teszteléshez és értékeléshez.
 
-**K: Hol vásárolhatom meg az Aspose.GIS for .NET licencet?**
-V: A licencet a [vásárlási oldal](https://purchase.aspose.com/buy) oldalon vásárolhatja meg.
+**Q: Hol vásárolhatom meg az Aspose.GIS for .NET licencet?**  
+A: A licencet a [buy page](https://purchase.aspose.com/buy) oldalról vásárolhatod meg.
 
 ## Következtetés
-Ebben az útmutatóban bemutatjuk, hogyan **create file GDB dataset**, hogyan konfiguráljuk a geometriai toleranciát, és hogyan mentünk egy használatra kész réteget az Aspose.GIS for .NET segítségével. Ezek a lépések pontos irányítást biztosítanak a térbeli adatok felett, így GIS alkalmazásai megbízhatóbbak és interoperábilisabbak lesznek.
+Ebben az útmutatóban bemutattuk, hogyan **how to create gdb** fájlokat hozhatsz létre, konfigurálhatod a geometriai toleranciákat, és menthetsz egy használatra kész réteget az Aspose.GIS for .NET segítségével. Ezek a lépések pontos irányítást biztosítanak a térbeli adatok felett, így GIS alkalmazásaid megbízhatóbbak és interoperábilisabbak lesznek.
 
----
-**Utoljára frissítve:** 2025-12-31
-**Tesztelve a következővel:** Aspose.GIS for .NET 24.11 (a legújabb írás időpontjában)
+---  
+**Utolsó frissítés:** 2026-04-30  
+**Tesztelve ezzel:** Aspose.GIS for .NET 24.11 (latest at time of writing)  
 **Szerző:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}

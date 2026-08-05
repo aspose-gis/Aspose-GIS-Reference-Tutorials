@@ -1,11 +1,16 @@
 ---
-date: 2025-12-31
-description: Explore o Aspose.GIS para .NET e aprenda como criar um conjunto de dados
-  file GDB e definir tolerâncias sem esforço com orientação passo a passo. Aprimore
-  suas aplicações .NET.
-linktitle: Set Tolerances for File GDB Layer
+date: 2026-04-30
+description: Aprenda a criar arquivos GDB com Aspose.GIS para .NET, definir a precisão
+  da camada e usar as opções de arquivo GDB para controlar as tolerâncias.
+keywords:
+- how to create gdb
+- create gis layer
+- how to set tolerances
+- set layer precision
+- file gdb options
+linktitle: Definir tolerâncias para camada File GDB
 second_title: Aspose.GIS .NET API
-title: Criar Conjunto de Dados File GDB e Definir Tolerâncias para uma Camada
+title: Como criar um conjunto de dados GDB e definir tolerâncias para uma camada
 url: /pt/net/layer-data-operations/set-tolerances-for-file-gdb-layer/
 weight: 22
 ---
@@ -14,27 +19,25 @@ weight: 22
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Criar Conjunto de Dados File GDB e Definir Tolerâncias para uma Camada
+# Como Criar Conjunto de Dados GDB e Definir Tolerâncias para uma Camada
 
 ## Introdução
-Se você precisa **create file GDB dataset** e controlar sua precisão, está no lugar certo. Neste tutorial percorreremos todo o processo — começando pela configuração do seu projeto .NET, criando um conjunto de dados File Geodatabase (GDB) e, em seguida, aplicando tolerâncias XY, Z e M a uma nova camada. Ao final, você terá um conjunto de dados pronto‑para‑uso que funciona perfeitamente com as ferramentas ArcGIS e outras aplicações GIS.
+Se você precisa **create file GDB dataset** e controlar sua precisão, está no lugar certo. Neste tutorial percorreremos todo o processo — começando pela configuração do seu projeto .NET, criando um File Geodatabase (GDB) dataset e, em seguida, aplicando tolerâncias XY, Z e M a uma nova camada. Ao final, você terá um dataset pronto‑para‑usar que funciona suavemente com as ferramentas ArcGIS e outras aplicações GIS. Este guia mostra **how to create gdb** programaticamente, para que você possa automatizar pipelines de dados sem intervenção manual.
 
 ## Respostas Rápidas
-- **What does “create file GDB dataset” mean?** Ele cria um novo contêiner File Geodatabase no disco que pode armazenar múltiplas camadas GIS.  
-- **Why set tolerances?** As tolerâncias definem a precisão para operações de geometria, evitando erros de arredondamento na análise espacial.  
-- **Which Aspose.GIS class is used?** `Dataset.Create` junto com `FileGdbOptions`.  
-- **Do I need a license for development?** Uma licença temporária é suficiente para testes; uma licença completa é necessária para produção.  
-- **What .NET versions are supported?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
+- **O que significa “create file GDB dataset”?** Ele cria um novo contêiner File Geodatabase no disco que pode armazenar múltiplas camadas GIS.  
+- **Por que definir tolerâncias?** As tolerâncias definem a precisão para operações de geometria, evitando erros de arredondamento na análise espacial.  
+- **Qual classe Aspose.GIS é usada?** `Dataset.Create` together with `FileGdbOptions`.  
+- **Preciso de uma licença para desenvolvimento?** Uma licença temporária é suficiente para testes; uma licença completa é necessária para produção.  
+- **Quais versões do .NET são suportadas?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
 
 ## O que é um Conjunto de Dados File GDB?
-Um File Geodatabase (GDB) é um repositório de dados baseado em pastas que contém camadas GIS, tabelas e relacionamentos. Usando Aspose.GIS, você pode programaticamente **create file GDB dataset** sem precisar do ArcGIS instalado, tornando‑o ideal para pipelines automatizados ou aplicações personalizadas.
+Um File Geodatabase (GDB) é um repositório de dados baseado em pastas que contém camadas GIS, tabelas e relacionamentos. Usando Aspose.GIS, você pode programaticamente **create file GDB dataset** sem precisar do ArcGIS instalado, tornando-o ideal para pipelines automatizados ou aplicações personalizadas.
 
 ## Por que definir tolerâncias para uma camada?
-Definir tolerâncias garante que os cálculos de geometria (como interseções, buffers ou snapping) respeitem a precisão necessária. Isso é especialmente importante ao trabalhar com dados de alta resolução ou ao exportar para outras plataformas GIS que esperam valores de tolerância específicos.
+Definir tolerâncias garante que os cálculos de geometria (como interseções, buffers ou snapping) respeitem a precisão necessária. Isso é especialmente importante ao trabalhar com dados de alta resolução ou ao exportar para outras plataformas GIS que esperam valores de tolerância específicos. Em outras palavras, você está **setting layer precision** para evitar erros inesperados de geometria.
 
-## Pré‑requisitos
-Antes de mergulharmos no código, certifique‑se de que você tem o seguinte:
-
+## Pré-requisitos
 - **Aspose.GIS for .NET Library** – Baixe e instale a biblioteca Aspose.GIS a partir do [download link](https://releases.aspose.com/gis/net/). Se ainda não a adquiriu, pode explorar a biblioteca mais detalhadamente na [documentation](https://reference.aspose.com/gis/net/).
 - **Development Environment** – Visual Studio, Rider ou qualquer IDE que suporte desenvolvimento .NET.
 - **A valid license** – Use uma licença temporária para testes ou uma licença completa para produção (veja os links na seção FAQ).
@@ -53,9 +56,10 @@ using System;
 using System.Text;
 ```
 
-Com os namespaces definidos, podemos começar a construir o conjunto de dados.
+Com os namespaces configurados, podemos começar a construir o dataset.
 
-## Guia Passo a Passo
+## Como criar dataset GDB?
+Abaixo está o guia passo a passo que o conduz na criação do dataset e na configuração das tolerâncias.
 
 ### Etapa 1: Defina Seu Diretório de Documentos
 Primeiro, aponte o código para a pasta onde você deseja que o File GDB seja criado:
@@ -64,9 +68,9 @@ Primeiro, aponte o código para a pasta onde você deseja que o File GDB seja cr
 string dataDir = "Your Document Directory";
 ```
 
-> **Dica profissional:** Use `Path.Combine` se precisar montar o caminho de forma independente da plataforma.
+> **Dica profissional:** Use `Path.Combine` se precisar montar o caminho de forma independente de plataforma.
 
-### Etapa 2: Criar um Conjunto de Dados File GDB
+### Etapa 2: Criar um Dataset File GDB
 Agora realmente **create file GDB dataset** no disco. O método `Dataset.Create` recebe o caminho completo e o tipo de driver (`Drivers.FileGdb`).
 
 ```csharp
@@ -75,10 +79,10 @@ using (var dataset = Dataset.Create(path, Drivers.FileGdb))
 {
 ```
 
-> O bloco `using` garante que o conjunto de dados seja fechado corretamente e gravado no disco quando terminar.
+> O bloco `using` garante que o dataset seja fechado corretamente e gravado no disco quando terminar.
 
 ### Etapa 3: Definir Tolerâncias usando `FileGdbOptions`
-Antes de criar uma camada, defina as tolerâncias necessárias. `FileGdbOptions` permite especificar tolerâncias XY, Z e M.
+Antes de criar uma camada, defina as tolerâncias necessárias. `FileGdbOptions` permite especificar tolerâncias XY, Z e M — este é o objeto **file gdb options** que controla a precisão.
 
 ```csharp
 var options = new FileGdbOptions
@@ -89,10 +93,10 @@ var options = new FileGdbOptions
 };
 ```
 
-Esses valores são típicos para dados de engenharia de alta precisão, mas você pode ajustá‑los conforme seu projeto.
+Esses valores são típicos para dados de engenharia de alta precisão, mas você pode ajustá-los conforme seu projeto.
 
-### Etapa 4: Criar uma Camada com as Tolerâncias Especificadas
-Finalmente, crie uma nova camada dentro do conjunto de dados, passando o objeto de opções que acabamos de configurar.
+### Etapa 4: Criar uma camada GIS com as tolerâncias especificadas
+Finalmente, crie uma nova camada dentro do dataset, passando o objeto de opções que acabamos de configurar. Esta etapa demonstra **how to set tolerances** enquanto também **creating a GIS layer**.
 
 ```csharp
 using (var layer = dataset.CreateLayer("layer_name", options))
@@ -106,34 +110,34 @@ Quando o bloco `using` termina, a camada é salva com as tolerâncias que você 
 ## Problemas Comuns & Soluções
 | Problema | Por que acontece | Solução |
 |----------|------------------|---------|
-| **Dataset path not found** | A variável `dataDir` aponta para uma pasta inexistente. | Certifique‑se de que o diretório exista ou crie‑o com `Directory.CreateDirectory(dataDir)`. |
-| **Invalid tolerance values** | As tolerâncias devem ser números não‑negativos. | Use valores positivos; evite zero a menos que você queira intencionalmente nenhuma tolerância. |
-| **License error** | Uma licença de avaliação ou temporária expirou. | Aplique uma nova licença temporária ou faça upgrade para uma licença completa. |
+| **Caminho do dataset não encontrado** | A variável `dataDir` aponta para uma pasta inexistente. | Certifique-se de que o diretório exista ou crie-o com `Directory.CreateDirectory(dataDir)`. |
+| **Valores de tolerância inválidos** | As tolerâncias devem ser números não‑negativos. | Use valores positivos; evite zero a menos que você queira intencionalmente nenhuma tolerância. |
+| **Erro de licença** | Uma licença de avaliação ou temporária expirou. | Aplique uma nova licença temporária ou faça upgrade para uma licença completa. |
 
 ## Perguntas Frequentes
 
-**Q:** Posso usar Aspose.GIS para .NET com outras bibliotecas GIS?  
-**A:** Sim, o Aspose.GIS suporta interoperabilidade, permitindo integrá‑lo com bibliotecas como NetTopologySuite ou GDAL.
+**Q: Posso usar Aspose.GIS para .NET com outras bibliotecas GIS?**  
+A: Sim, o Aspose.GIS suporta interoperabilidade, permitindo integrá-lo com bibliotecas como NetTopologySuite ou GDAL.
 
-**Q:** Existe uma versão de avaliação disponível para Aspose.GIS para .NET?  
-**A:** Absolutamente! Você pode explorar os recursos com a [free trial version](https://releases.aspose.com/).
+**Q: Existe uma versão de avaliação disponível para Aspose.GIS para .NET?**  
+A: Absolutamente! Você pode explorar os recursos com a [free trial version](https://releases.aspose.com/).
 
-**Q:** Como posso obter suporte para Aspose.GIS para .NET?  
-**A:** Visite o [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) para conectar‑se com a comunidade e buscar assistência.
+**Q: Como posso obter suporte para Aspose.GIS para .NET?**  
+A: Visite o [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) para conectar-se com a comunidade e buscar assistência.
 
-**Q:** Preciso de uma licença temporária para fins de teste?  
-**A:** Sim, você pode obter uma [temporary license](https://purchase.aspose.com/temporary-license/) para testes e avaliação.
+**Q: Preciso de uma licença temporária para fins de teste?**  
+A: Sim, você pode obter uma [temporary license](https://purchase.aspose.com/temporary-license/) para teste e avaliação.
 
-**Q:** Onde posso comprar a licença Aspose.GIS para .NET?  
-**A:** Você pode comprar a licença na [buy page](https://purchase.aspose.com/buy).
+**Q: Onde posso comprar a licença do Aspose.GIS para .NET?**  
+A: Você pode comprar a licença na [buy page](https://purchase.aspose.com/buy).
 
 ## Conclusão
-Neste guia, abordamos como **create file GDB dataset**, configurar tolerâncias de geometria e salvar uma camada pronta‑para‑uso com Aspose.GIS para .NET. Essas etapas fornecem controle preciso sobre dados espaciais, tornando suas aplicações GIS mais confiáveis e interoperáveis.
+Neste guia, abordamos **how to create gdb** arquivos, configuramos tolerâncias de geometria e salvamos uma camada pronta‑para‑usar com Aspose.GIS para .NET. Essas etapas fornecem controle preciso sobre dados espaciais, tornando suas aplicações GIS mais confiáveis e interoperáveis.
 
 ---  
-**Last Updated:** 2025-12-31  
-**Tested With:** Aspose.GIS for .NET 24.11 (latest at time of writing)  
-**Author:** Aspose  
+**Última atualização:** 2026-04-30  
+**Testado com:** Aspose.GIS for .NET 24.11 (latest at time of writing)  
+**Autor:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
