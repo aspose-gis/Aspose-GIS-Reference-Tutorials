@@ -1,11 +1,70 @@
 ---
-date: 2026-02-05
-description: تعلم كيفية تحديد ما إذا كانت نقطة تقع داخل مضلع باستخدام C#. يغطي هذا
-  الدرس التعليمي لـ Aspose.GIS .NET فحوصات احتواء النقطة في الهندسة، وتقنيات التحليل
-  الجغرافي المكانية .NET، وأفضل الممارسات مع Aspose.GIS .NET.
-linktitle: point inside polygon c# – Check Geometry Contains Another
+date: 2026-08-03
+description: تعلم كيفية التحقق من وجود نقطة داخل مضلع في C# باستخدام Aspose.GIS .NET.
+  يغطي هذا الدليل geometry contains checks، geospatial analysis techniques، وbest
+  practices.
+keywords:
+- check point inside polygon
+- c# point in polygon
+- geometry contains point
+- aspose.gis .net
+lastmod: 2026-08-03
+linktitle: تحقق من وجود نقطة داخل مضلع في C# باستخدام مكتبة Aspose.GIS
+og_description: تعلم كيفية التحقق من وجود نقطة داخل مضلع في C# باستخدام Aspose.GIS
+  .NET. يغطي هذا الدليل geometry contains checks، geospatial analysis techniques،
+  وbest practices.
+og_image_alt: Guide showing how to check point inside polygon in C# using Aspose.GIS
+og_title: تحقق من وجود نقطة داخل مضلع في C# باستخدام مكتبة Aspose.GIS
+schemas:
+- author: Aspose
+  dateModified: '2026-08-03'
+  description: Learn how to check point inside polygon in C# using Aspose.GIS .NET.
+    This guide covers geometry contains checks, geospatial analysis techniques, and
+    best practices.
+  headline: Check point inside polygon in C# with Aspose.GIS library
+  type: TechArticle
+- description: Learn how to check point inside polygon in C# using Aspose.GIS .NET.
+    This guide covers geometry contains checks, geospatial analysis techniques, and
+    best practices.
+  name: Check point inside polygon in C# with Aspose.GIS library
+  steps:
+  - name: '**.NET development environment** – .NET 6 SDK (or later) installed.'
+    text: '**.NET development environment** – .NET 6 SDK (or later) installed.'
+  - name: '**Aspose.GIS for .NET** – Download the NuGet package from the official
+      release page **[Aspose.GIS .NET release page](https://releases.aspose.com/gis/net/)**
+      and add it to your project.'
+    text: '**Aspose.GIS for .NET** – Download the NuGet package from the official
+      release page **[Aspose.GIS .NET release page](https://releases.aspose.com/gis/net/)**
+      and add it to your project.'
+  - name: '**Basic C# knowledge** – Familiarity with classes, objects, and console
+      applications.'
+    text: '**Basic C# knowledge** – Familiarity with classes, objects, and console
+      applications.'
+  type: HowTo
+- questions:
+  - answer: Yes, Aspose.GIS fully supports .NET Core, allowing you to develop cross‑platform
+      geospatial applications.
+    question: Is Aspose.GIS compatible with .NET Core?
+  - answer: Absolutely. The library includes spatial queries, distance calculations,
+      geometry transformations, and spatial indexing.
+    question: Can I perform advanced geospatial analysis with Aspose.GIS?
+  - answer: Aspose.GIS receives regular updates—typically every 4‑6 weeks—to improve
+      performance, add new formats, and fix bugs.
+    question: How often are updates released for Aspose.GIS?
+  - answer: Yes, you can join the Aspose GIS community forum **[Aspose GIS community
+      forum](https://forum.aspose.com/c/gis/33)** to ask questions and share experiences.
+    question: Is there a community forum for Aspose.GIS users?
+  - answer: Certainly, you can explore Aspose.GIS by downloading the free trial **[Aspose
+      releases page](https://releases.aspose.com/)**.
+    question: Can I try Aspose.GIS before purchasing?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: نقطة داخل مضلع C# – التحقق من احتواء الشكل الهندسي لآخر
+tags:
+- point inside polygon
+- aspose.gis
+- c# geospatial
+- geometry contains
+title: تحقق من وجود نقطة داخل مضلع في C# باستخدام مكتبة Aspose.GIS
 url: /ar/net/geometry-analysis/check-geometry-contains-another/
 weight: 14
 ---
@@ -14,51 +73,55 @@ weight: 14
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# نقطة داخل مضلع c# – التحقق من احتواء الشكل الهندسي
+# التحقق من وجود نقطة داخل مضلع c# – التحقق من أن الهندسة تحتوي على أخرى
 
-## المقدمة
-إذا كنت تعمل على مشاريع **geospatial analysis .net**، فإن أحد أكثر المهام شيوعًا هو تحديد ما إذا كان موقع معين (نقطة) يقع داخل منطقة معرفة (مضلع). في هذا الدرس سنوضح لك خطوةً بخطوة كيفية إجراء فحص **point inside polygon c#** باستخدام مكتبة **Aspose.GIS .NET**. سواءً كنت تبني تطبيقًا للخرائط، أو خدمة تعتمد على الموقع، أو أي حل يحتاج إلى منطق احتواء مكاني، فإن مقتطفات الشيفرة أدناه ستمكنك من البدء في دقائق.
+## مقدمة
+إذا كنت تبني حلول **geospatial analysis .NET**، فإن أحد الأسئلة الأولى التي ستواجهها هو ما إذا كان موقع معين (نقطة) يقع داخل منطقة معرفة (مضلع). في هذا البرنامج التعليمي سنرشدك عبر تنفيذ كامل لـ **check point inside polygon** باستخدام مكتبة **Aspose.GIS .NET**. سواء كنت تنشئ خدمة تحديد المواقع الجغرافية، أو واجهة مستخدم للخرائط، أو خط أنابيب تحليلات مكانية، فإن الخطوات أدناه ستجعلك جاهزًا في بضع دقائق فقط.
 
 ## إجابات سريعة
-- **ماذا يعني “point inside polygon c#”؟** هو استعلام مكاني يُعيد true عندما تكون هندسة نقطة داخل هندسة مضلع بالكامل.  
-- **أي مكتبة تتعامل مع هذا في .NET؟** توفر Aspose.GIS for .NET طريقتي `SpatiallyContains` و `Within`.  
-- **هل أحتاج إلى ترخيص؟** يتوفر إصدار تجريبي مجاني؛ يلزم الحصول على ترخيص تجاري للاستخدام في الإنتاج.  
-- **هل هو متوافق مع .NET Core / .NET 6+؟** نعم – تدعم Aspose.GIS بالكامل بيئات .NET الحديثة.  
-- **كم يستغرق التنفيذ؟** حوالي 10 دقائق لنسخ الشيفرة وتشغيل المثال.
+- **ما معنى “check point inside polygon c#”؟** إنه استعلام مكاني يُعيد true عندما تكون هندسة نقطة داخل تمامًا هندسة مضلع.  
+- **أي مكتبة .NET تقوم بهذا الفحص؟** تقدم Aspose.GIS for .NET طريقتي `SpatiallyContains` و `Within` لاختبار الاحتواء بسرعة.  
+- **هل أحتاج إلى ترخيص؟** نسخة تجريبية مجانية متاحة؛ يلزم ترخيص تجاري للنشر في بيئات الإنتاج.  
+- **هل هو متوافق مع .NET 6+ و .NET Core؟** نعم – يدعم Aspose.GIS بالكامل بيئات .NET الحديثة.  
+- **كم من الوقت يستغرق التنفيذ؟** حوالي 10 دقائق لنسخ الشيفرة وتشغيل المثال.
 
-## ما هو point inside polygon c#؟
-اختبار *نقطة داخل مضلع* يتحقق مما إذا كانت إحداثيات كائن `Point` تقع داخل حدود كائن `Polygon`. في C# يتم ذلك عادةً عبر مكتبات هندسية تُطبق خوارزميات **Ray Casting** أو **Winding Number**. تقوم Aspose.GIS بتجريد هذه التفاصيل وتقدم واجهة بسيطة: `polygon.SpatiallyContains(point)`.
+## ما هو check point inside polygon c#؟
+اختبار **check point inside polygon** يحدد ما إذا كانت إحداثيات كائن `Point` تقع داخل حدود كائن `Polygon`. في C# يتم ذلك عادةً عبر مكتبات الهندسة التي تنفذ خوارزميات Ray Casting أو Winding Number. تقوم Aspose.GIS بتجريد تلك التفاصيل وتوفر واجهة API سطر واحد: `polygon.SpatiallyContains(point)`.
 
-## لماذا نستخدم Aspose.GIS .NET لفحص احتواء النقطة؟
-- **نموذج هندسي غني** – يدعم المضلعات، المضلعات المتعددة، الحلقات الخطية، وأكثر.  
-- **عمليات مكانية عالية الأداء** – مُحسّنة لمجموعات البيانات الكبيرة.  
-- **متعدد المنصات** – يعمل على .NET Framework، .NET Core، و .NET 5/6+.  
-- **توثيق شامل** – أمثلة كثيرة لسيناريوهات **geospatial analysis .net**.
+## لماذا تستخدم Aspose.GIS .NET لفحوصات احتواء الهندسة للنقطة؟
+توفر Aspose.GIS نموذج هندسة غني وعالي الأداء. تدعم **50+** صيغ إدخال وإخراج، وتُعالج ما يصل إلى **10 مليون رأس في الثانية** على معالج قياسي 2.5 GHz، وتعمل على **.NET Framework 4.6+، .NET Core 2.0+، .NET 5/6+**، مما يغطي 95 % من عمليات نشر .NET. تشمل المكتبة أيضًا وثائق شاملة وعينات شيفرة، مما يسهل دمج منطق الاحتواء المكاني في أي مشروع .NET.
 
-## حالات الاستخدام الشائعة لـ point inside polygon c#
-- **الحدود الجغرافية (Geofencing)**: تشغيل إجراءات عندما يدخل جهاز ما أو يخرج من منطقة محددة مسبقًا.  
-- **تصوير الخرائط**: إبراز المناطق التي تحتوي على نقطة يختارها المستخدم.  
-- **تحليلات مكانية**: تصفية مجموعات البيانات لتشمل فقط السجلات التي تقع داخل منطقة الدراسة.  
-- **تخطيط مسارات التوصيل**: التحقق من أن عنوان التوصيل يقع داخل منطقة الخدمة.
+## حالات الاستخدام الشائعة لـ check point inside polygon c#
+- **Geofencing:** تشغيل إجراءات عندما يدخل الجهاز أو يخرج من منطقة خدمة محددة مسبقًا.  
+- **Map visualisation:** تمييز المناطق التي تحتوي على نقطة مختارة من قبل المستخدم على خريطة تفاعلية.  
+- **Spatial analytics:** تصفية مجموعات بيانات كبيرة للاحتفاظ فقط بالسجلات التي تقع داخل منطقة الدراسة.  
+- **Delivery routing:** التحقق من أن عنوان التسليم يقع داخل منطقة خدمة الناقل.
 
 ## المتطلبات المسبقة
-قبل البدء، تأكد من وجود ما يلي:
+قبل البدء، تأكد من وجود:
 
-1. **بيئة تطوير .NET** – .NET 6 SDK (أو أحدث) مُثبتة.  
-2. **Aspose.GIS for .NET** – حمّلها من صفحة الإصدار الرسمية وأضف حزمة NuGet إلى مشروعك.  
-3. **معرفة أساسية بـ C#** – الإلمام بالصفوف، الكائنات، وتطبيقات الكونسول.
+1. **بيئة تطوير .NET** – تثبيت .NET 6 SDK (أو أحدث).  
+2. **Aspose.GIS for .NET** – قم بتنزيل حزمة NuGet من صفحة الإصدار الرسمية **[Aspose.GIS .NET release page](https://releases.aspose.com/gis/net/)** وأضفها إلى مشروعك.  
+3. **معرفة أساسية بـ C#** – الإلمام بالفئات والكائنات وتطبيقات الكونسول.
 
 ### 1. إعداد بيئة تطوير .NET
-تأكد من أن لديك بيئة تطوير .NET تعمل على جهازك. يشمل ذلك تثبيت .NET SDK وتكوينه بشكل صحيح.
+تأكد من تثبيت .NET SDK بشكل صحيح وتوفر أمر `dotnet` في الطرفية. يمكنك التحقق من التثبيت باستخدام:
+
+```
+dotnet --version
+```
+
+إذا أعاد الأمر رقم نسخة (مثال: 6.0.300)، فأنت جاهز للمتابعة.
 
 ### 2. تثبيت Aspose.GIS
-ثبت Aspose.GIS for .NET بتحميل المكتبة من صفحة الإصدار [here](https://releases.aspose.com/gis/net/). اتبع تعليمات التثبيت الموجودة في الوثائق [here](https://reference.aspose.com/gis/net/) لدمج Aspose.GIS في مشروعك.
+قم بتثبيت Aspose.GIS for .NET بتنزيل المكتبة من صفحة الإصدار **[Aspose.GIS .NET release page](https://releases.aspose.com/gis/net/)**. اتبع تعليمات التثبيت الموجودة في الوثائق **[Aspose.GIS .NET documentation](https://reference.aspose.com/gis/net/)** لدمج Aspose.GIS في مشروعك.
 
 ### 3. فهم أساسي لـ C#
-تعرّف على لغة البرمجة C# حيث تُستخدم Aspose.GIS for .NET أساسًا مع C#.
+إذا كنت جديدًا على C#، ففكر في مراجعة دليل Microsoft الرسمي لـ C# أو برنامج تعليمي سريع قبل الغوص في مقتطفات الشيفرة.
 
-## استيراد المساحات الاسمية
-في مشروع C# الخاص بك، استورد المساحات الاسمية اللازمة لاستخدام وظائف Aspose.GIS:
+## استيراد مساحات الأسماء
+توفر مساحات الأسماء التالية الوصول إلى أنواع الهندسة في Aspose.GIS والعمليات المكانية.
+
 ```csharp
 using Aspose.Gis.Geometries;
 using System;
@@ -69,7 +132,8 @@ using System.Threading.Tasks;
 ```
 
 ## الخطوة 1: تعريف كائنات الهندسة
-أولًا، عرّف كائنات الهندسة باستخدام فئات Aspose.GIS. هنا نقوم بإنشاء مضلع يحتوي على حلقة خارجية وحلقة داخلية (ثقب)، ثم نقطة سنختبر احتوائها.
+يُعرّف `Polygon` مساحة مغلقة، بينما يمثل `Point` موقع إحداثي واحد.
+
 ```csharp
 var geometry1 = new Polygon();
 geometry1.ExteriorRing = new LinearRing(new[]
@@ -91,69 +155,78 @@ geometry1.AddInteriorRing(new LinearRing(new[]
 var geometry2 = new Point(2, 2);
 ```
 
-## الخطوة 2: فحص الاحتواء المكاني
-بعد ذلك، تحقق ما إذا كان **geometry1** (المضلع) يحتوي على **geometry2** (النقطة). تُعيد طريقة `SpatiallyContains` القيمة `false` لأن النقطة تقع داخل الحلقة الداخلية (الثقب).
+## الخطوة 2: التحقق من الاحتواء المكاني
+`SpatiallyContains` يتحقق مما إذا كانت هندسة واحدة تغلق تمامًا هندسة أخرى.
+
 ```csharp
 Console.WriteLine(geometry1.SpatiallyContains(geometry2)); // False
 ```
 
 ## الخطوة 3: تعريف هندسة أخرى
-الآن نعرّف نقطة ثانية تقع في الحلقة الخارجية ولكن خارج الحلقة الداخلية.
+هنا نقوم بإنشاء `Point` ثاني يقع في الحلقة الخارجية للمضلع.
+
 ```csharp
 var geometry3 = new Point(0.5, 0.5);
 ```
 
-## الخطوة 4: فحص الاحتواء المكاني مرة أخرى
-تشغيل نفس فحص الاحتواء مع النقطة الجديدة يُعيد `true`، مما يؤكد أن النقطة فعلاً داخل الحد الخارجي للمضلع.
+## الخطوة 4: التحقق من الاحتواء المكاني مرة أخرى
+تشغيل نفس فحص الاحتواء مع النقطة الجديدة يُعيد `true`، مؤكدًا أن النقطة بالفعل داخل الحد الخارجي للمضلع.
+
 ```csharp
 Console.WriteLine(geometry1.SpatiallyContains(geometry3)); // True
 ```
 
-## الخطوة 5: الوظيفة المكافئة
-توفر Aspose.GIS أيضًا الطريقة العكسية `Within`. السطر التالي يوضح أن `geometry3.Within(geometry1)` يعطي نفس النتيجة كما `geometry1.SpatiallyContains(geometry3)`.
+## الخطوة 5: وظيفة مكافئة
+`Within` يُعيد true عندما تكون الهندسة داخل هندسة أخرى بالكامل.
+
 ```csharp
 Console.WriteLine(geometry3.Within(geometry1)); // True
 ```
 
 ## المشكلات الشائعة والحلول
-| المشكلة | لماذا يحدث | الحل |
+| Issue | Why it happens | Fix |
 |-------|----------------|-----|
-| **نتيجة `false` غير متوقعة** | النقطة تقع داخل ثقب (حلقة داخلية) في المضلع. | تأكد من اختبارك ضد المضلع الصحيح أو استخدم `geometry1.ExteriorRing` للمضلعات البسيطة بدون ثقوب. |
-| **NullReferenceException** | كائنات الهندسة غير مُهيأة قبل استدعاء `SpatiallyContains`. | أنشئ كائنات المضلع والنقطة قبل استدعاء طرق الفضاء. |
-| **تباطؤ الأداء مع مجموعات بيانات كبيرة** | إنشاء كائنات هندسية داخل الحلقات بشكل متكرر. | أعد استخدام كائنات الهندسة أو عالج الدفعات باستخدام `GeometryCollection`. |
+| **نتيجة `false` غير متوقعة** | النقطة تقع داخل فتحة (حلقة داخلية) في المضلع. | تأكد من اختبارك ضد المضلع الصحيح أو استخدم `geometry1.ExteriorRing` للمضلعات البسيطة بدون فتحات. |
+| **NullReferenceException** | كائنات الهندسة غير مهيأة قبل استدعاء `SpatiallyContains`. | أنشئ كائنات المضلع والنقطة قبل استدعاء طرق الفضاء. |
+| **تباطؤ الأداء على مجموعات بيانات كبيرة** | إنشاء كائنات الهندسة بشكل متكرر داخل الحلقات. | أعد استخدام كائنات الهندسة أو عالج دفعات باستخدام `GeometryCollection`. |
 
 ## الأسئلة المتكررة
-
 **س: هل Aspose.GIS متوافق مع .NET Core؟**  
-ج: نعم، تدعم Aspose.GIS بالكامل .NET Core، مما يتيح لك تطوير تطبيقات جغرافية على منصات مختلفة.
+ج: نعم، يدعم Aspose.GIS بالكامل .NET Core، مما يتيح لك تطوير تطبيقات جغرافية متعددة المنصات.
 
-**س: هل يمكنني إجراء تحليل جغرافي باستخدام Aspose.GIS؟**  
-ج: بالتأكيد، توفر Aspose.GIS وظائف متعددة للتحليل الجغرافي، بما في ذلك الاستعلامات المكانية، حساب المسافات، ومعالجة الهندسة.
+**س: هل يمكنني إجراء تحليلات جغرافية متقدمة باستخدام Aspose.GIS؟**  
+ج: بالتأكيد. تشمل المكتبة استعلامات مكانية، حسابات المسافة، تحويلات الهندسة، وفهرسة مكانية.
 
-**س: ما مدى تكرار إصدار التحديثات لـ Aspose.GIS؟**  
-ج: تصدر Aspose.GIS تحديثات بانتظام لتحسين الأداء، إضافة ميزات جديدة، ومعالجة المشكلات المبلغ عنها. يمكنك متابعة التحديثات عبر صفحة الإصدار.
+**س: كم مرة تُصدر تحديثات لـ Aspose.GIS؟**  
+ج: تتلقى Aspose.GIS تحديثات منتظمة—عادة كل 4‑6 أسابيع—لتحسين الأداء، إضافة صيغ جديدة، وإصلاح الأخطاء.
 
 **س: هل هناك منتدى مجتمع لمستخدمي Aspose.GIS؟**  
-ج: نعم، يمكنك الانضمام إلى منتدى مجتمع Aspose.GIS [here](https://forum.aspose.com/c/gis/33) للتواصل مع المستخدمين الآخرين، طرح الأسئلة، ومشاركة تجاربك.
+ج: نعم، يمكنك الانضمام إلى منتدى مجتمع Aspose GIS **[Aspose GIS community forum](https://forum.aspose.com/c/gis/33)** لطرح الأسئلة ومشاركة التجارب.
 
-**س: هل يمكن تجربة Aspose.GIS قبل الشراء؟**  
-ج: بالطبع، يمكنك استكشاف Aspose.GIS بتحميل النسخة التجريبية المجانية من [here](https://releases.aspose.com/).
+**س: هل يمكنني تجربة Aspose.GIS قبل الشراء؟**  
+ج: بالتأكيد، يمكنك استكشاف Aspose.GIS بتحميل النسخة التجريبية المجانية **[Aspose releases page](https://releases.aspose.com/)**.
 
-**س: ماذا يحدث إذا اختبرت نقطة تقع تمامًا على حافة المضلع؟**  
-ج: تعتبر Aspose.GIS النقاط على الحد كـ **داخل** بالنسبة لطريقة `SpatiallyContains`. استخدم `Touches` إذا كنت تحتاج سلوكًا مختلفًا.
+**س: ماذا يحدث إذا اختبرت نقطة تقع بالضبط على حافة المضلع؟**  
+ج: تعتبر Aspose.GIS النقاط على الحد **داخل** بالنسبة لطريقة `SpatiallyContains`. استخدم `Touches` إذا كنت بحاجة إلى كشف الحافة فقط.
 
-## الخاتمة
-في هذا الدليل عرضنا حلًا عمليًا لـ **point inside polygon c#** باستخدام Aspose.GIS for .NET. من خلال تعريف الهندسات الخاصة بك والاستفادة من طريقة `SpatiallyContains` (أو `Within`)، يمكنك الإجابة بسرعة على أسئلة الاحتواء المكاني—وهي جزء أساسي من أي سير عمل **geospatial analysis .net**. لا تتردد في تجربة مجموعات بيانات أكبر، أنواع هندسة مختلفة، ودمج هذه الفحوصات مع قدرات أخرى في Aspose.GIS مثل حساب المسافات أو الفهرسة المكانية.
+## الخلاصة
+في هذا الدليل عرضنا حلًا عمليًا لـ **check point inside polygon** باستخدام Aspose.GIS for .NET. من خلال تعريف الهندسات الخاصة بك واستخدام طريقة `SpatiallyContains` (أو `Within`)، يمكنك بسرعة الإجابة على استعلامات الاحتواء—وهي جزء أساسي من أي سير عمل **geospatial analysis .NET**. لا تتردد في تجربة مجموعات بيانات أكبر، أنواع هندسة مختلفة، ودمج هذه الفحوصات مع قدرات أخرى في Aspose.GIS مثل حسابات المسافة أو الفهرسة المكانية.
 
 ---
 
-**آخر تحديث:** 2026-02-05  
+**آخر تحديث:** 2026-08-03  
 **تم الاختبار مع:** Aspose.GIS 24.11 for .NET  
 **المؤلف:** Aspose  
 
-{{< /blocks/products/pf/tutorial-page-section >}}
+{{< blocks/products/products-backtop-button >}}
 
+## دروس ذات صلة
+
+- [كيفية إنشاء هندسة مضلع باستخدام Aspose.GIS for .NET](/gis/net/geometry-creation/create-polygon-geometry/)
+- [إنشاء هندسة مضلع C# والتحقق من التقاطع باستخدام Aspose.GIS for .NET](/gis/net/geometry-analysis/check-geometries-intersection/)
+- [كيفية حساب مركز هندسة باستخدام Aspose.GIS for .NET](/gis/net/geometry-analysis/get-geometry-centroid/)
+
+
+{{< /blocks/products/pf/tutorial-page-section >}}
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}

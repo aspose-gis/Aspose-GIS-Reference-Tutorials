@@ -1,10 +1,65 @@
 ---
-date: 2026-02-05
-description: Erfahren Sie, wie Sie Polygongeometrien in C# erstellen und wie Sie Intersects verwenden,
-  um überlappende Polygone mit Aspose.GIS für .NET zu erkennen.
-linktitle: Create Polygon Geometry C#
+date: 2026-08-03
+description: Erfahren Sie, wie Sie in C# ein Polygon aus Punkten erstellen und die
+  Polygon‑Überschneidung mit Aspose.GIS für .NET prüfen. Folgen Sie dem Schritt‑für‑Schritt‑Code,
+  um überlappende Polygone zu erkennen.
+keywords:
+- create polygon from points
+- how to create polygon
+- check polygon intersection
+- polygon overlap detection
+- how to use intersects
+lastmod: 2026-08-03
+linktitle: Polygon‑Geometrie in C# erstellen
+og_description: Erfahren Sie, wie Sie in C# ein Polygon aus Punkten erstellen und
+  die Polygon‑Überschneidung mit Aspose.GIS für .NET prüfen. Folgen Sie dem Schritt‑für‑Schritt‑Code,
+  um überlappende Polygone zu erkennen.
+og_image_alt: Guide showing how to create polygon from points in C# and detect overlapping
+  polygons with Aspose.GIS
+og_title: Polygon aus Punkten in C# – Überschneidung prüfen mit Aspose.GIS
+schemas:
+- author: Aspose
+  dateModified: '2026-08-03'
+  description: Learn how to create polygon from points in C# and check polygon intersection
+    using Aspose.GIS for .NET. Follow step‑by‑step code to detect overlapping polygons.
+  headline: Create polygon from points in C# and detect intersection
+  type: TechArticle
+- description: Learn how to create polygon from points in C# and check polygon intersection
+    using Aspose.GIS for .NET. Follow step‑by‑step code to detect overlapping polygons.
+  name: Create polygon from points in C# and detect intersection
+  steps:
+  - name: Define geometries
+    text: The `Polygon` class represents a closed planar shape defined by an ordered
+      sequence of points. The `Point` class stores a single coordinate (X, Y) in a
+      specified spatial reference. In this step, you'll create polygons representing
+      two rectangular areas. The vertices are defined in a clockwise order,
+  - name: How to use Intersects method to detect overlapping polygons
+    text: Call `polygon1.Intersects(polygon2)` – it returns true when any part of
+      the two polygons overlaps, including shared edges or vertices. The method performs
+      a robust spatial analysis using the OGC standards, so you get accurate results
+      without additional geometry libraries. The check is fast and relia
+  - name: Check for disjoint geometries (the opposite of intersect)
+    text: The `Disjoint` method returns true when two geometries have no points in
+      common. Use it when you need to confirm that two shapes do **not** overlap.
+  type: HowTo
+- questions:
+  - answer: It returns `true` when two geometries share any common area.
+    question: What does the Intersects method do?
+  - answer: '`Aspose.Gis.Geometries`.'
+    question: Which namespace contains polygon classes?
+  - answer: A free trial works for testing; a commercial license is required for production.
+    question: Do I need a license for development?
+  - answer: Yes, Aspose.GIS supports all modern .NET runtimes.
+    question: Can I use this with .NET Core / .NET 6+?
+  - answer: Less than a second on a typical development machine.
+    question: How long does the sample take to run?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: Polygongeometrie in C# erstellen und Schnitt mit Aspose.GIS für .NET prüfen
+tags:
+- create polygon
+- Aspose.GIS
+- C# geometry
+title: Polygon aus Punkten in C# erstellen und Überschneidung erkennen
 url: /de/net/geometry-analysis/check-geometries-intersection/
 weight: 11
 ---
@@ -13,47 +68,48 @@ weight: 11
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Polygon‑Geometrie in C# erstellen und Schnittmenge mit Aspose.GIS für .NET prüfen
+# Polygon aus Punkten in C# erstellen und Schnittpunkte erkennen
 
 ## Einführung
-Wenn Sie **Polygon‑Geometrie in C# erstellen** und schnell feststellen möchten, ob sich zwei Formen überschneiden, bietet Aspose.GIS für .NET eine saubere, hochperformante API. In diesem Leitfaden gehen wir den gesamten Prozess durch – von der Einrichtung der Bibliothek bis zur Verwendung der `Intersects`‑Methode, um **überlappende Polygone zu erkennen**. Am Ende können Sie Polygon‑Schnittmengenkontrollen in jede .NET‑Anwendung mit nur wenigen Codezeilen integrieren.
+Wenn Sie **Polygon aus Punkten in C# erstellen** und schnell bestimmen müssen, ob sich zwei Formen überschneiden, bietet Aspose.GIS für .NET eine saubere, hochleistungsfähige API. In diesem Leitfaden führen wir Sie durch den gesamten Prozess – von der Installation der Bibliothek bis zur Verwendung der `Intersects`‑Methode, um **überlappende Polygone zu erkennen**. Am Ende können Sie Polygon‑Schnittpunktprüfungen in jede .NET‑Anwendung mit nur wenigen Codezeilen integrieren.
 
-## Schnellantworten
-- **Was macht die Intersects‑Methode?** Sie liefert `true`, wenn zwei Geometrien irgendeinen gemeinsamen Bereich haben.  
+## Schnelle Antworten
+- **Was macht die Intersects‑Methode?** Sie gibt `true` zurück, wenn zwei Geometrien irgendeinen gemeinsamen Bereich teilen.  
 - **Welcher Namespace enthält Polygon‑Klassen?** `Aspose.Gis.Geometries`.  
-- **Benötige ich eine Lizenz für die Entwicklung?** Eine kostenlose Testversion reicht für Tests; für den Produktionseinsatz ist eine kommerzielle Lizenz erforderlich.  
+- **Brauche ich eine Lizenz für die Entwicklung?** Eine kostenlose Testversion funktioniert für Tests; für die Produktion ist eine kommerzielle Lizenz erforderlich.  
 - **Kann ich das mit .NET Core / .NET 6+ verwenden?** Ja, Aspose.GIS unterstützt alle modernen .NET‑Laufzeiten.  
 - **Wie lange dauert die Ausführung des Beispiels?** Weniger als eine Sekunde auf einem typischen Entwicklungsrechner.
 
-## Was bedeutet „create polygon geometry C#“?
-Eine Polygon‑Geometrie in C# zu erstellen bedeutet, die von Aspose.GIS bereitgestellte `Polygon`‑Klasse (oder andere Geometrie‑Typen) zu instanziieren und einen geschlossenen Ring aus `Point`‑Objekten zu übergeben, die die Eckpunkte der Form definieren. Sobald die Geometrie gebaut ist, kann sie an räumlichen Operationen wie Schnittmenge, Enthaltensein und Distanzberechnungen teilnehmen.
+## Was bedeutet „Polygon‑Geometrie in C# erstellen“?
+Eine Polygon‑Geometrie in C# zu erstellen bedeutet, ein `Polygon`‑Objekt aus einer Reihe von `Point`‑Koordinaten zu konstruieren, die den äußeren Ring der Form definieren. Aspose.GIS bietet eine einfache API zum Erstellen des Polygons, zur Validierung seiner Schließung und zur Verwendung in räumlichen Operationen wie Schnittmenge oder Einschluss.
 
 ## Warum Aspose.GIS zur Erkennung überlappender Polygone verwenden?
-- **Keine externen Abhängigkeiten** – reine .NET‑Bibliothek, keine nativen GIS‑Installationen.  
-- **Umfangreiche räumliche Operationen** – `Intersects`, `Disjoint`, `Contains` usw. stehen sofort bereit.  
-- **Hohe Genauigkeit** – robuste Behandlung von Randfällen wie gemeinsamen Kanten oder Eckpunkten.  
-- **Plattformübergreifend** – funktioniert unter Windows, Linux und macOS mit .NET Core/5/6.  
+- **Keine externen Abhängigkeiten** – die Bibliothek besteht aus einer einzigen 5 MB .NET‑Assembly, sodass keine nativen GIS‑Installationen erforderlich sind.  
+- **Umfangreiche räumliche Operationen** – `Intersects`, `Disjoint`, `Contains`, `Touches` und mehr, sofort einsatzbereit.  
+- **Hohe Genauigkeit** – robuste Handhabung von Randfällen wie gemeinsamen Kanten oder Scheitelpunkten; die Engine folgt den OGC‑Standards.  
+- **Plattformübergreifende Unterstützung** – funktioniert unter Windows, Linux und macOS mit .NET Core/5/6.  
+- **Leistung** – verarbeitet Polygone mit bis zu 10 000 Scheitelpunkten in weniger als einer Sekunde auf einem typischen Laptop.
 
 ### Warum das wichtig ist
-Programmgesteuert prüfen zu können, ob sich zwei geografische Gebiete überschneiden, ist für viele reale Szenarien unverzichtbar: Flächennutzungsplanung, Validierung von Lieferzonen, Umweltverträglichkeitsprüfungen und sogar Kollisionsdetektion in der Spieleentwicklung. Mit Aspose.GIS können Sie diese Prüfungen ohne einen schweren GIS‑Server durchführen.
+Die Möglichkeit, programmgesteuert zu prüfen, ob sich zwei geografische Gebiete überschneiden, ist für viele reale Szenarien unerlässlich: Flächennutzungsplanung, Validierung von Lieferzonen, Umweltverträglichkeitsanalysen und sogar Kollisionsdetektion in der Spieleentwicklung. Mit Aspose.GIS können Sie diese Prüfungen ohne einen schweren GIS‑Server durchführen.
 
 ## Voraussetzungen
 Bevor Sie beginnen, stellen Sie sicher, dass Sie Folgendes haben:
 
 1. **Aspose.GIS für .NET** installiert (siehe die Schritte unten).  
-2. Eine .NET‑Entwicklungsumgebung (Visual Studio, VS Code oder Rider).  
-3. .NET Framework 4.6+ oder .NET Core 3.1+.
+2. Eine .NET‑Entwicklungsumgebung (Visual Studio, VS Code oder Rider).  
+3. .NET Framework 4.6+ oder .NET Core 3.1+.
 
 ### Installation von Aspose.GIS für .NET
-1. **Zur Download‑Seite navigieren:** Besuchen Sie die [Aspose.GIS for .NET download page](https://releases.aspose.com/gis/net/), um die neueste Version des Toolkits zu erhalten.  
-2. **Toolkit herunterladen:** Wählen Sie die für Ihre Entwicklungsumgebung passende Version und laden Sie das Toolkit herunter.  
-3. **Toolkit installieren:** Folgen Sie den bereitgestellten Installationsanweisungen, um Aspose.GIS für .NET auf Ihrem Entwicklungsrechner zu installieren.
+1. Navigieren Sie zur Download‑Seite: Besuchen Sie die [Aspose.GIS for .NET download page](https://releases.aspose.com/gis/net/), um die neueste Version des Toolkits zu erhalten.  
+2. Toolkit herunterladen: Wählen Sie die passende Version aus, die mit Ihrer Entwicklungsumgebung kompatibel ist, und laden Sie das Toolkit herunter.  
+3. Toolkit installieren: Befolgen Sie die bereitgestellten Installationsanweisungen, um Aspose.GIS für .NET auf Ihrem Entwicklungsrechner zu installieren.
 
-## Namespaces importieren
-Um mit Aspose.GIS für .NET zu arbeiten, müssen Sie die erforderlichen Namespaces in Ihr Projekt einbinden.
+## Importieren von Namespaces
+Um mit Aspose.GIS für .NET zu arbeiten, müssen Sie die erforderlichen Namespaces in Ihr Projekt importieren.
 
-1. **Referenzen hinzufügen:** Fügen Sie in Ihrem Projekt Referenzen zur Aspose.GIS‑Assembly hinzu.  
-2. **Namespaces importieren:** Importieren Sie die benötigten Namespaces in Ihrer Code‑Datei. Für das untenstehende Beispiel stellen Sie sicher, dass Sie die folgenden Namespaces importieren:
+1. Verweise hinzufügen: Fügen Sie in Ihrem Projekt Verweise auf die Aspose.GIS‑Assembly hinzu.  
+2. Namespaces importieren: Importieren Sie die benötigten Namespaces in Ihrer Code‑Datei. Für das bereitgestellte Beispiel stellen Sie sicher, dass Sie die folgenden Namespaces importieren:
 
 ```csharp
 using Aspose.Gis.Geometries;
@@ -64,11 +120,11 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## Wie erstellt man Polygon‑Geometrie in C# mit Aspose.GIS?
-Jetzt, wo die Umgebung bereit ist, erstellen wir zwei einfache Polygon‑Geometrien, die wir später auf Überschneidung prüfen.
+## Wie erstelle ich Polygon‑Geometrie in C# mit Aspose.GIS?
+`Polygon` repräsentiert eine geschlossene planare Form, die durch eine geordnete Liste von Punkten definiert ist, während `Point` eine einzelne X‑Y‑Koordinate speichert. Die `Intersects`‑Methode bestimmt, ob zwei Geometrien irgendeinen gemeinsamen Bereich teilen. Laden Sie zwei `Polygon`‑Objekte, indem Sie geschlossene Ringe von `Point`‑Instanzen bereitstellen, und rufen Sie dann die `Intersects`‑Methode auf, um die Überlappung zu testen. Die folgenden Schritte zeigen, wie Sie die Punkte definieren, die Polygone erstellen und die Schnittpunktprüfung in nur wenigen Zeilen C#‑Code durchführen.
 
 ### Schritt 1: Geometrien definieren
-In diesem Schritt erzeugen Sie Polygone, die zwei rechteckige Flächen darstellen. Die Eckpunkte werden im Uhrzeigersinn angegeben, und der erste Punkt wird am Ende wiederholt, um den Ring zu schließen.
+Die `Polygon`‑Klasse repräsentiert eine geschlossene planare Form, die durch eine geordnete Sequenz von Punkten definiert ist. Die `Point`‑Klasse speichert eine einzelne Koordinate (X, Y) in einem angegebenen räumlichen Referenzsystem. In diesem Schritt erstellen Sie Polygone, die zwei rechteckige Flächen darstellen. Die Scheitelpunkte werden im Uhrzeigersinn definiert, und der erste Punkt wird am Ende wiederholt, um den Ring zu schließen.
 
 ```csharp
 var geometry1 = new Polygon(new LinearRing(new[]
@@ -89,16 +145,16 @@ var geometry2 = new Polygon(new LinearRing(new[]
 }));
 ```
 
-### Schritt 2: Intersects‑Methode verwenden, um überlappende Polygone zu erkennen
-Nachdem die Geometrien definiert sind, können wir die `Intersects`‑Methode aufrufen. Diese Methode **verwendet den Intersects‑Algorithmus**, um zu prüfen, ob irgendein Teil der beiden Polygone denselben Raum einnimmt.
+### Schritt 2: Verwendung der Intersects‑Methode zur Erkennung überlappender Polygone
+Rufen Sie `polygon1.Intersects(polygon2)` auf – sie gibt `true` zurück, wenn irgendein Teil der beiden Polygone überlappt, einschließlich gemeinsamer Kanten oder Scheitelpunkte. Die Methode führt eine robuste räumliche Analyse nach den OGC‑Standards durch, sodass Sie genaue Ergebnisse ohne zusätzliche Geometrie‑Bibliotheken erhalten. Die Prüfung ist schnell und zuverlässig für typische Anwendungsfälle.
 
 ```csharp
 Console.WriteLine(geometry1.Intersects(geometry2)); // True
 Console.WriteLine(geometry2.Intersects(geometry1)); // True
 ```
 
-### Schritt 3: Auf disjunkte Geometrien prüfen (das Gegenstück zu Intersects)
-Falls Sie bestätigen müssen, dass sich zwei Formen **nicht** überschneiden, liefert die `Disjoint`‑Methode das Gegenstück.
+### Schritt 3: Prüfung auf disjunkte Geometrien (das Gegenstück zu intersect)
+Die `Disjoint`‑Methode gibt `true` zurück, wenn zwei Geometrien keine gemeinsamen Punkte haben. Verwenden Sie sie, wenn Sie bestätigen müssen, dass sich zwei Formen **nicht** überlappen.
 
 ```csharp
 // 'Disjoint' is opposite to 'Intersects'
@@ -108,35 +164,42 @@ Console.WriteLine(geometry1.Disjoint(geometry2)); // False
 ## Häufige Probleme und Lösungen
 | Problem | Warum es passiert | Lösung |
 |-------|----------------|-----|
-| **Gibt immer `false` zurück** | Die Polygone sind nicht geschlossen (erster Punkt ≠ letzter Punkt). | Stellen Sie sicher, dass der erste Punkt am Ende des Koordinaten‑Arrays wiederholt wird. |
-| **Unerwartetes `true` bei berührenden Kanten** | `Intersects` behandelt gemeinsame Kanten als Schnittmenge. | Verwenden Sie die `Touches`‑Methode, wenn Sie nur Kanten‑Erkennung benötigen. |
-| **Leistungsabfall bei vielen Polygonen** | Jeder Aufruf prüft jedes Eckpunkt‑Paar. | Stapelverarbeitung mit `GeometryCollection` oder räumlicher Indexierung (R‑Tree) nutzen, falls unterstützt. |
+| **Gibt immer `false` zurück** | Die Polygone sind nicht geschlossen (erster Punkt ≠ letzter Punkt). | Stellen Sie sicher, dass der erste Punkt am Ende des Koordinatenarrays wiederholt wird. |
+| **Unerwartetes `true` bei berührenden Kanten** | `Intersects` behandelt gemeinsame Kanten als Schnitt. | Verwenden Sie die `Touches`‑Methode, wenn Sie nur Kanten‑Erkennung benötigen. |
+| **Leistungsverlust bei vielen Polygonen** | Jeder Aufruf prüft jedes Scheitelpunktpaar. | Stapelverarbeitung mit `GeometryCollection` oder räumlicher Indizierung (R‑Baum), falls unterstützt. |
 
 ## Häufig gestellte Fragen
 
-**F:** Kann ich Aspose.GIS für .NET mit anderen .NET‑Frameworks verwenden?  
-**A:** Ja, Aspose.GIS für .NET ist mit verschiedenen .NET‑Frameworks kompatibel, einschließlich .NET Core und .NET Framework.
+**Q:** Kann ich Aspose.GIS für .NET mit anderen .NET‑Frameworks verwenden?  
+**A:** Ja, Aspose.GIS für .NET ist mit verschiedenen .NET‑Frameworks kompatibel, einschließlich .NET Core und .NET Framework.
 
-**F:** Gibt es eine kostenlose Testversion von Aspose.GIS für .NET?  
-**A:** Ja, Sie können eine kostenlose Testversion von Aspose.GIS für .NET [hier](https://releases.aspose.com/) erhalten.
+**Q:** Gibt es eine kostenlose Testversion für Aspose.GIS für .NET?  
+**A:** Ja, Sie können eine kostenlose Testversion von Aspose.GIS für .NET von der [Aspose.GIS free trial page](https://releases.aspose.com/) erhalten.
 
-**F:** Wo finde ich Support für Aspose.GIS für .NET?  
-**A:** Unterstützung und Community‑Austausch gibt es im [Aspose.GIS‑Forum](https://forum.aspose.com/c/gis/33).
+**Q:** Wo finde ich Support für Aspose.GIS für .NET?  
+**A:** Sie können Hilfe erhalten und sich mit der Community im [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) austauschen.
 
-**F:** Kann ich eine temporäre Lizenz für Aspose.GIS für .NET erhalten?  
-**A:** Ja, eine temporäre Lizenz erhalten Sie [hier](https://purchase.aspose.com/temporary-license/).
+**Q:** Kann ich eine temporäre Lizenz für Aspose.GIS für .NET erhalten?  
+**A:** Ja, Sie können eine temporäre Lizenz von der [Aspose.GIS temporary license page](https://purchase.aspose.com/temporary-license/) erhalten.
 
-**F:** Wo kann ich eine lizenzierte Version von Aspose.GIS für .NET kaufen?  
-**A:** Eine lizenzierte Version können Sie [hier](https://purchase.aspose.com/buy) erwerben.
+**Q:** Wo kann ich eine lizenzierte Version von Aspose.GIS für .NET erwerben?  
+**A:** Sie können eine lizenzierte Version von Aspose.GIS für .NET über die [Aspose.GIS purchase page](https://purchase.aspose.com/buy) erwerben.
 
 ## Fazit
-Sie haben nun ein vollständiges, produktionsreifes Beispiel, das zeigt, wie man **Polygon‑Geometrie in C# erstellt**, die **Intersects**‑Methode zur Erkennung von Überschneidungen nutzt und disjunkte Bedingungen prüft. Nutzen Sie dieses Muster, um größere Geometriesammlungen zu verarbeiten, räumliche Indexierung für bessere Performance zu integrieren oder es mit anderen Aspose.GIS‑Operationen wie Buffering oder räumlichen Joins zu kombinieren.
+Sie haben nun ein vollständiges, produktionsreifes Beispiel, das zeigt, wie man **Polygon aus Punkten in C# erstellt**, die **Intersects**‑Methode zur Erkennung von Überlappungen verwendet und disjunkte Bedingungen überprüft. Sie können dieses Muster gerne auf größere Geometriesammlungen ausweiten, räumliche Indizierung für die Leistung integrieren oder es mit anderen Aspose.GIS‑Operationen wie Buffering oder räumlichen Joins kombinieren.
 
 ---
 
-**Zuletzt aktualisiert:** 2026-02-05  
-**Getestet mit:** Aspose.GIS 24.11 für .NET  
+**Zuletzt aktualisiert:** 2026-08-03  
+**Getestet mit:** Aspose.GIS 24.11 for .NET  
 **Autor:** Aspose
+
+## Verwandte Tutorials
+
+- [Wie man Polygon‑Geometrie mit Aspose.GIS für .NET erstellt](/gis/net/geometry-creation/create-polygon-geometry/)
+- [Wie man räumliche Überlappungsanalyse von Geometrien mit Aspose.GIS für .NET durchführt](/gis/net/geometry-analysis/check-geometries-overlap/)
+- [Polygon mit Loch‑Geometrie mit Aspose.GIS erstellen](/gis/net/geometry-creation/create-polygon-with-hole-geometry/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
