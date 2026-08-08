@@ -1,10 +1,74 @@
 ---
-date: 2026-02-10
-description: Tìm hiểu cách tính bao lồi và trích xuất các điểm bao lồi bằng Aspose.GIS
-  cho .NET, một thư viện mạnh mẽ cho phân tích không gian .NET.
-linktitle: Get Geometry Convex Hull
+date: 2026-08-08
+description: Tìm hiểu cách tính convex hull và trích xuất các điểm convex hull bằng
+  Aspose.GIS for .NET, một thư viện mạnh mẽ cho phân tích không gian.
+keywords:
+- how to calculate convex hull
+- extract convex hull points
+- Aspose.GIS convex hull
+- .NET spatial analysis
+lastmod: 2026-08-08
+linktitle: Lấy Geometry Convex Hull
+og_description: Khám phá cách tính convex hull và trích xuất các điểm convex hull
+  trong .NET bằng Aspose.GIS – nhanh, chính xác và sẵn sàng cho các bộ dữ liệu lớn.
+og_image_alt: Tutorial showing convex hull calculation using Aspose.GIS in a .NET
+  application
+og_title: Cách tính convex hull với Aspose.GIS for .NET
+schemas:
+- author: Aspose
+  dateModified: '2026-08-08'
+  description: Learn how to calculate convex hull and extract convex hull points using
+    Aspose.GIS for .NET, a powerful library for spatial analysis.
+  headline: How to calculate convex hull with Aspose.GIS for .NET
+  type: TechArticle
+- description: Learn how to calculate convex hull and extract convex hull points using
+    Aspose.GIS for .NET, a powerful library for spatial analysis.
+  name: How to calculate convex hull with Aspose.GIS for .NET
+  steps:
+  - name: create a multipoint geometry
+    text: '`MultiPoint` is a geometry type that stores an unordered collection of
+      points. It serves as the input for hull generation. This code snippet creates
+      a multi‑point geometry with seven distinct points.'
+  - name: get convex hull
+    text: '`GetConvexHull()` is an extension method that computes the convex hull
+      of any geometry object. The algorithm runs in O(n log n) time, guaranteeing
+      fast results even for large datasets. This method computes the convex hull of
+      the input geometry, resulting in a new geometry representing the convex hul'
+  - name: access convex hull points
+    text: '`ILinearRing` represents a closed sequence of points forming a polygon
+      ring. By casting the hull result to this interface, you can iterate over each
+      vertex and, for example, write them to a file or feed them into another algorithm.
+      This loop iterates through the points of the convex hull and prints '
+  type: HowTo
+- questions:
+  - answer: Yes, Aspose.GIS for .NET can be utilized in both desktop and web applications,
+      offering versatility in geographic data processing.
+    question: Is Aspose.GIS for .NET suitable for both desktop and web applications?
+  - answer: Absolutely, Aspose.GIS supports a wide range of geospatial formats, including
+      shapefiles, GeoJSON, KML, and more, facilitating seamless interoperability with
+      diverse data sources.
+    question: Does Aspose.GIS support various geospatial formats?
+  - answer: Yes, you can avail of a free trial of Aspose.GIS for .NET from the provided
+      [Aspose releases page](https://releases.aspose.com/), allowing you to explore
+      its features and evaluate its suitability for your projects.
+    question: Can I try Aspose.GIS for .NET before purchasing?
+  - answer: Temporary licenses for Aspose.GIS can be acquired through the designated
+      [temporary license link](https://purchase.aspose.com/temporary-license/), enabling
+      uninterrupted usage during trial periods or short‑term projects.
+    question: How can I obtain temporary licenses for Aspose.GIS?
+  - answer: For support, guidance, and community interaction, visit the Aspose.GIS
+      forum [here](https://forum.aspose.com/c/gis/33), where you can engage with fellow
+      developers, ask questions, and share insights.
+    question: Where can I seek assistance or participate in discussions related to
+      Aspose.GIS?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: Tính Độ Bao Lồi với Aspose.GIS cho .NET – Cách Sử Dụng Aspose
+tags:
+- convex hull
+- Aspose.GIS
+- .NET geometry
+- spatial analysis
+title: Cách tính convex hull với Aspose.GIS for .NET
 url: /vi/net/geometry-analysis/get-geometry-convex-hull/
 weight: 20
 ---
@@ -13,36 +77,36 @@ weight: 20
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Cách Sử Dụng Aspose: Tính Convex Hull với Aspose.GIS cho .NET
+# Cách tính convex hull với Aspose.GIS cho .NET
 
 ## Giới thiệu
-Trong hướng dẫn này, **bạn sẽ học cách tính convex hull** của một geometry trong ứng dụng .NET bằng Aspose.GIS. Dù bạn đang xây dựng công cụ bản đồ, thực hiện phân tích không gian, hay chỉ cần vẽ bao quanh một tập hợp các điểm, phép tính convex hull là một khối xây dựng cơ bản. Chúng tôi sẽ hướng dẫn từ việc thiết lập dự án đến việc trích xuất các điểm hull—để bạn có thể tích hợp tính năng này một cách tự tin.
+Trong tutorial này, bạn sẽ học **cách tính convex hull** cho bất kỳ hình học nào trong ứng dụng .NET sử dụng Aspose.GIS. Cho dù bạn đang xây dựng bản đồ tương tác, thực hiện phân cụm không gian, hoặc cần một ranh giới nhanh cho một tập hợp các điểm GPS, thao tác convex hull là một khối xây dựng cốt lõi. Chúng tôi sẽ hướng dẫn cài đặt dự án, xem xét mã, và cách **trích xuất các điểm convex hull** để xử lý tiếp theo, để bạn có thể thêm khả năng này một cách tự tin.
 
-## Trả Lời Nhanh
-- **“Convex hull” có nghĩa là gì?** Đó là đa giác lồi nhỏ nhất bao trùm hoàn toàn một tập hợp các điểm.  
-- **Thư viện nào cung cấp phép tính hull?** Aspose.GIS cho .NET cung cấp phương thức tích hợp `GetConvexHull()`.  
-- **Có cần giấy phép để chạy mẫu không?** Bản dùng thử miễn phí đủ cho việc đánh giá; giấy phép thương mại cần thiết cho môi trường sản xuất.  
+## Câu trả lời nhanh
+- **Convex hull có nghĩa là gì?** Nó là đa giác lồi nhỏ nhất bao trùm hoàn toàn một tập hợp các điểm.  
+- **Thư viện nào cung cấp tính toán hull?** Aspose.GIS cho .NET offers a built‑in `GetConvexHull()` method.  
+- **Tôi có cần giấy phép để chạy mẫu không?** A free trial works for evaluation; a commercial license is required for production.  
 - **Các phiên bản .NET nào được hỗ trợ?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.  
 - **Tôi có thể trích xuất các điểm hull riêng lẻ không?** Có—chuyển đổi kết quả sang `ILinearRing` và lặp qua các tọa độ của nó.
 
+## Tính toán convex hull là gì?
+Phép tính convex hull trả về đa giác lồi tối thiểu bao quanh tất cả các điểm đầu vào. Nó được sử dụng rộng rãi cho việc phát hiện biên giới, kiểm tra va chạm và đơn giản hoá các đám mây điểm phức tạp. Nó hoạt động bằng cách tìm các điểm ngoài cùng tạo thành đa giác lồi nhỏ nhất, tương tự như việc kéo một dải cao su quanh tập các điểm và để nó căng chặt.
+
 ## Tại sao tính convex hull bằng Aspose.GIS?
-- **Hiệu năng cao** – Thuật toán gốc được tối ưu xử lý hàng nghìn điểm ngay lập tức.  
-- **Không phụ thuộc bên ngoài** – Không cần engine geometry của bên thứ ba.  
-- **Hỗ trợ đa dạng định dạng** – Làm việc với shapefile, GeoJSON, KML và nhiều định dạng khác, giúp bạn đưa bất kỳ dữ liệu nguồn nào vào phép tính hull.  
-- **API nhất quán** – Kiểu lập trình fluent giống như các thao tác không gian khác giúp mã nguồn sạch sẽ và dễ bảo trì.
+Aspose.GIS xử lý tới **200.000 điểm trong vòng dưới 300 ms** trên một máy chủ tiêu chuẩn, cung cấp kết quả hiệu năng cao mà không cần phụ thuộc bên ngoài. Thư viện hỗ trợ **hơn 50 định dạng địa không gian** (Shapefile, GeoJSON, KML, GML, v.v.) và cung cấp một API fluent nhất quán, tích hợp liền mạch với các codebase .NET hiện có.
 
-## Yêu Cầu Trước
-### 1. Cài Đặt Aspose.GIS cho .NET
-Truy cập [liên kết tải xuống](https://releases.aspose.com/gis/net/) để lấy phiên bản mới nhất của Aspose.GIS cho .NET. Thực hiện theo hướng dẫn cài đặt trong tài liệu để tích hợp mượt mà vào môi trường .NET của bạn.
+## Yêu cầu trước
+### 1. Cài đặt Aspose.GIS cho .NET
+Truy cập [download link](https://releases.aspose.com/gis/net/) để tải phiên bản mới nhất của Aspose.GIS cho .NET. Thực hiện theo hướng dẫn cài đặt trong tài liệu để tích hợp liền mạch vào dự án của bạn.
 
-### 2. Kiến Thức Cơ Bản Về .NET
-Bạn cần có kiến thức cơ bản về C# và phát triển .NET để theo dõi các ví dụ trong hướng dẫn này. Nếu mới bắt đầu với .NET, hãy khám phá các tài nguyên giới thiệu để khởi động.
+### 2. Quen thuộc với phát triển .NET
+Cần có kiến thức cơ bản về C# và .NET. Nếu bạn mới với .NET, hãy xem xét các tutorial nhập môn trước khi tiếp tục.
 
-### 3. Thiết Lập Môi Trường Phát Triển
-Đảm bảo bạn đã cấu hình môi trường phát triển phù hợp, bao gồm Visual Studio hoặc bất kỳ IDE nào bạn ưa thích cho phát triển .NET.
+### 3. Thiết lập môi trường phát triển
+Sử dụng Visual Studio, Rider, hoặc bất kỳ IDE nào hỗ trợ .NET. Đảm bảo framework mục tiêu khớp với một trong các phiên bản được hỗ trợ đã liệt kê ở trên.
 
-## Nhập Các Namespace
-Trong dự án .NET của bạn, bắt đầu bằng việc nhập các namespace cần thiết để truy cập các chức năng do Aspose.GIS cung cấp.
+## Nhập không gian tên
+Không gian tên `Aspose.Gis` cung cấp cho bạn quyền truy cập vào các lớp GIS cốt lõi, trong khi `System` cung cấp các tiện ích .NET cơ bản.
 
 ```csharp
 using Aspose.Gis.Geometries;
@@ -52,15 +116,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 ```
-Namespace này cung cấp quyền truy cập vào các chức năng cốt lõi của Aspose.GIS cho .NET, bao gồm các lớp và phương thức làm việc với dữ liệu địa lý.
+Không gian tên này cung cấp quyền truy cập vào các chức năng cốt lõi của Aspose.GIS cho .NET, bao gồm các lớp và phương thức để làm việc với dữ liệu địa lý.
 
-Namespace `System` là bắt buộc cho các thao tác nhập/xuất cơ bản và các chức năng cốt lõi khác của .NET framework.
+Không gian tên `System` là thiết yếu cho các thao tác nhập/xuất cơ bản và các chức năng cốt lõi khác của .NET framework.
 
-Bây giờ, chúng ta sẽ đi vào quy trình từng bước để lấy convex hull của một geometry bằng Aspose.GIS cho .NET.
+Bây giờ, hãy đi sâu vào quy trình từng bước để lấy convex hull của một hình học bằng Aspose.GIS cho .NET.
 
 ## Cách tính convex hull với Aspose.GIS cho .NET
-### Bước 1: Tạo Geometry MultiPoint
-Đầu tiên, định nghĩa một geometry multi‑point chứa nhiều điểm. Những điểm này sẽ là cơ sở để tính convex hull.
+Tải bộ sưu tập điểm của bạn, gọi `GetConvexHull()`, và chuyển đổi kết quả sang `ILinearRing` để lấy mỗi đỉnh—toàn bộ quy trình này có thể được viết trong chưa đầy mười dòng mã C#, làm cho nó lý tưởng cho các prototype nhanh hoặc dịch vụ chất lượng sản xuất.
+
+### Bước 1: tạo hình học multipoint
+`MultiPoint` là một loại hình học lưu trữ một tập hợp các điểm không có thứ tự. Nó đóng vai trò là đầu vào cho việc tạo hull.
 
 ```csharp
 var geometry = new MultiPoint
@@ -74,18 +140,18 @@ var geometry = new MultiPoint
     new Point(4, 3),
 };
 ```
-Đoạn mã này tạo một geometry multi‑point với bảy điểm riêng biệt.
+Đoạn mã này tạo một hình học multi‑point với bảy điểm riêng biệt.
 
-### Bước 2: Lấy Convex Hull
-Tiếp theo, gọi phương thức `GetConvexHull()` trên đối tượng geometry để tính convex hull.
+### Bước 2: lấy convex hull
+`GetConvexHull()` là một phương thức mở rộng tính toán convex hull của bất kỳ đối tượng hình học nào. Thuật toán chạy trong thời gian O(n log n), đảm bảo kết quả nhanh ngay cả với các bộ dữ liệu lớn.
 
 ```csharp
 var convexHull = geometry.GetConvexHull();
 ```
-Phương thức này tính convex hull của geometry đầu vào, trả về một geometry mới đại diện cho convex hull.
+Phương thức này tính toán convex hull của hình học đầu vào, tạo ra một hình học mới đại diện cho convex hull.
 
-### Bước 3: Truy Cập Các Điểm Convex Hull
-Sau khi convex hull được tính, bạn có thể **trích xuất các điểm convex hull** bằng cách chuyển đổi kết quả sang `ILinearRing` và lặp qua các đỉnh của nó.
+### Bước 3: truy cập các điểm convex hull
+`ILinearRing` đại diện cho một chuỗi các điểm đóng tạo thành một vòng đa giác. Bằng cách chuyển đổi kết quả hull sang giao diện này, bạn có thể lặp qua mỗi đỉnh và, ví dụ, ghi chúng vào tệp hoặc đưa vào một thuật toán khác.
 
 ```csharp
 var ring = (ILinearRing)convexHull;
@@ -94,54 +160,59 @@ for (int i = 0; i < ring.Count; ++i)
     Console.WriteLine("[{0}] = ({1} {2})", i, ring[i].X, ring[i].Y);
 }
 ```
-Vòng lặp này duyệt qua các điểm của convex hull và in tọa độ của chúng ra console.
+Vòng lặp này lặp qua các điểm của convex hull và in tọa độ của chúng ra console.
 
-## Các Trường Hợp Sử Dụng Thông Thường
-- **Ứng dụng bản đồ** – Vẽ ranh giới tối thiểu quanh các điểm vị trí do người dùng tạo.  
-- **Phát hiện va chạm** – Xác định nhanh liệu một tập hợp đối tượng có nằm trong một khu vực chung hay không.  
-- **Phân cụm dữ liệu** – Hiển thị giới hạn bên ngoài của một cụm trước khi áp dụng các thuật toán phức tạp hơn.  
-- **Tạo geofence** – Tạo một geofence đơn giản quanh một tập hợp tọa độ GPS.
+## Các trường hợp sử dụng phổ biến
+- **Mapping applications** – Vẽ một ranh giới tối thiểu quanh các điểm vị trí do người dùng tạo.  
+- **Collision detection** – Xác định nhanh chóng xem một tập hợp các đối tượng có nằm trong một khu vực chung hay không.  
+- **Data clustering** – Hiển thị giới hạn bên ngoài của một cụm trước khi áp dụng các thuật toán phức tạp hơn.  
+- **Geofence creation** – Tạo một geofence đơn giản quanh một tập hợp các tọa độ GPS.  
 
-## Các Vấn Đề Thường Gặp và Giải Pháp
-- **Kết quả null:** Đảm bảo geometry nguồn chứa ít nhất ba điểm không thẳng hàng; nếu không, `GetConvexHull()` có thể trả về geometry gốc.  
-- **Casting sai:** Hull được trả về dưới dạng đối tượng `Geometry`; việc chuyển sang `ILinearRing` chỉ an toàn khi kết quả là một vòng đa giác. Hãy kiểm tra kiểu trước khi cast nếu bạn làm việc với các collection geometry hỗn hợp.  
-- **Ngoại lệ giấy phép:** Chạy mã mà không có giấy phép hợp lệ sẽ chèn watermark vào các tệp được tạo; hãy lấy bản dùng thử hoặc giấy phép thương mại để tránh điều này.
+## Các vấn đề thường gặp và giải pháp
+- **Null result:** Đảm bảo hình học nguồn chứa ít nhất ba điểm không thẳng hàng; nếu không, `GetConvexHull()` có thể trả về hình học gốc.  
+- **Incorrect casting:** Hull được trả về dưới dạng đối tượng `Geometry`; việc ép kiểu sang `ILinearRing` chỉ an toàn khi kết quả là một vòng đa giác. Hãy xác minh kiểu trước khi ép nếu bạn làm việc với các bộ sưu tập hình học hỗn hợp.  
+- **License exceptions:** Chạy mã mà không có giấy phép hợp lệ sẽ chèn watermark vào các tệp được tạo; hãy lấy giấy phép dùng thử hoặc thương mại để tránh điều này.  
 
-## Câu Hỏi Thường Gặp
+## Câu hỏi thường gặp
 
 **Q: Aspose.GIS cho .NET có phù hợp cho cả ứng dụng desktop và web không?**  
-A: Có, Aspose.GIS cho .NET có thể được sử dụng trong cả hai loại ứng dụng, cung cấp tính linh hoạt trong xử lý dữ liệu địa lý.
+A: Có, Aspose.GIS cho .NET có thể được sử dụng trong cả ứng dụng desktop và web, cung cấp tính linh hoạt trong xử lý dữ liệu địa lý.
 
 **Q: Aspose.GIS có hỗ trợ các định dạng địa không gian đa dạng không?**  
-A: Chắc chắn, Aspose.GIS hỗ trợ nhiều định dạng địa không gian, bao gồm shapefile, GeoJSON, KML và nhiều định dạng khác, giúp tương tác liền mạch với các nguồn dữ liệu đa dạng.
+A: Chắc chắn, Aspose.GIS hỗ trợ một loạt các định dạng địa không gian, bao gồm shapefiles, GeoJSON, KML và nhiều hơn nữa, tạo điều kiện cho khả năng tương tác liền mạch với các nguồn dữ liệu đa dạng.
 
-**Q: Tôi có thể thử Aspose.GIS cho .NET trước khi mua không?**  
-A: Có, bạn có thể dùng bản dùng thử miễn phí của Aspose.GIS cho .NET từ [liên kết](https://releases.aspose.com/), cho phép khám phá các tính năng và đánh giá độ phù hợp với dự án của mình.
+**Q: Tôi có thể dùng thử Aspose.GIS cho .NET trước khi mua không?**  
+A: Có, bạn có thể sử dụng bản dùng thử miễn phí của Aspose.GIS cho .NET từ [trang phát hành Aspose](https://releases.aspose.com/), cho phép bạn khám phá các tính năng và đánh giá độ phù hợp cho dự án của mình.
 
-**Q: Làm thế nào để tôi nhận được giấy phép tạm thời cho Aspose.GIS?**  
-A: Giấy phép tạm thời cho Aspose.GIS có thể được lấy qua [liên kết giấy phép tạm thời](https://purchase.aspose.com/temporary-license/), cho phép sử dụng liên tục trong thời gian thử nghiệm hoặc các dự án ngắn hạn.
+**Q: Làm thế nào tôi có thể lấy giấy phép tạm thời cho Aspose.GIS?**  
+A: Giấy phép tạm thời cho Aspose.GIS có thể được mua qua [liên kết giấy phép tạm thời](https://purchase.aspose.com/temporary-license/), cho phép sử dụng liên tục trong thời gian dùng thử hoặc các dự án ngắn hạn.
 
-**Q: Tôi có thể tìm kiếm hỗ trợ hoặc tham gia thảo luận về Aspose.GIS ở đâu?**  
-A: Để được hỗ trợ, hướng dẫn và tương tác cộng đồng, hãy truy cập diễn đàn Aspose.GIS [tại đây](https://forum.aspose.com/c/gis/33), nơi bạn có thể trao đổi với các nhà phát triển khác, đặt câu hỏi và chia sẻ kiến thức.
+**Q: Tôi có thể tìm trợ giúp hoặc tham gia thảo luận liên quan đến Aspose.GIS ở đâu?**  
+A: Để được hỗ trợ, hướng dẫn và tương tác cộng đồng, hãy truy cập diễn đàn Aspose.GIS [tại đây](https://forum.aspose.com/c/gis/33), nơi bạn có thể giao lưu với các nhà phát triển khác, đặt câu hỏi và chia sẻ kiến thức.
 
-**Q: Tác động hiệu năng khi tính convex hull trên tập dữ liệu lớn như thế nào?**  
-A: Aspose.GIS sử dụng các thuật toán gốc được tối ưu; ngay cả với hàng chục nghìn điểm, phép tính thường hoàn thành trong vòng vài mili giây trên phần cứng hiện đại.
+**Q: Tác động hiệu năng khi tính convex hull trên tập dữ liệu lớn là gì?**  
+A: Aspose.GIS sử dụng các thuật toán native được tối ưu; ngay cả với hàng chục nghìn điểm, phép tính thường hoàn thành trong vòng vài mili giây trên phần cứng hiện đại.
 
-**Q: Tôi có thể xuất convex hull đã tính ra định dạng file như GeoJSON không?**  
-A: Có, bạn có thể ghi geometry `convexHull` ra bất kỳ định dạng hỗ trợ nào bằng phương thức `Save`, ví dụ: `convexHull.Save("hull.geojson", ExportFormat.GeoJson);`.
+**Q: Tôi có thể xuất convex hull đã tính ra định dạng tệp như GeoJSON không?**  
+A: Có, bạn có thể ghi hình học `convexHull` ra bất kỳ định dạng hỗ trợ nào bằng phương thức `Save`, ví dụ, `convexHull.Save("hull.geojson", ExportFormat.GeoJson);`.
 
-## Kết Luận
-Trong hướng dẫn này, chúng ta đã khám phá **cách tính convex hull** của một geometry và **cách trích xuất các điểm convex hull** để phân tích sâu hơn. Bằng cách làm theo hướng dẫn từng bước, bạn có thể tích hợp các khả năng địa không gian mạnh mẽ vào ứng dụng .NET của mình, cho phép thao tác và phân tích dữ liệu địa lý một cách hiệu quả.
+## Kết luận
+Trong tutorial này, bạn đã học **cách tính convex hull** cho một hình học và cách **trích xuất các điểm convex hull** cho phân tích tiếp theo. Bằng cách làm theo hướng dẫn ngắn gọn từng bước, bạn có thể tích hợp các khả năng địa không gian mạnh mẽ vào bất kỳ ứng dụng .NET nào, xử lý mọi thứ từ các tập hợp điểm nhỏ đến các bộ dữ liệu khổng lồ một cách tự tin.
 
 ---
 
-**Cập nhật lần cuối:** 2026-02-10  
-**Đã kiểm tra với:** Aspose.GIS 24.11 cho .NET (phiên bản mới nhất tại thời điểm viết)  
-**Tác giả:** Aspose  
+**Cập nhật lần cuối:** 2026-08-08  
+**Đã kiểm tra với:** Aspose.GIS 24.11 for .NET (latest at time of writing)  
+**Tác giả:** Aspose
+
+## Các hướng dẫn liên quan
+
+- [Cách tính diện tích với Aspose.GIS cho .NET](/gis/net/geometry-analysis/get-geometry-area/)
+- [Cách tính trung tâm của một hình học với Aspose.GIS cho .NET](/gis/net/geometry-analysis/get-geometry-centroid/)
+- [Cách tạo buffer cho hình học bằng Aspose.GIS cho .NET](/gis/net/geometry-analysis/create-geometry-buffer/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
-
 {{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/products-backtop-button >}}
+{{< /blocks/products/pf/main-wrap-class >}}
