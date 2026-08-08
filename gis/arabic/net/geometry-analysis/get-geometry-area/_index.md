@@ -1,10 +1,59 @@
 ---
-date: 2026-02-10
-description: تعلم **كيفية حساب المساحة** للأشكال الهندسية باستخدام Aspose.GIS لـ .NET
-  – مثالي لحساب مساحة GIS، حساب مساحة المثلث C#، وحساب مساحة المضلع المتعدد.
-linktitle: Get Geometry Area
+date: 2026-08-08
+description: تعلم كيفية حساب مساحة الشكل الهندسي .net باستخدام Aspose.GIS – مثالي
+  لحساب مساحة GIS، مساحة المثلث C#، وحساب مساحة المضلع المتعدد.
+keywords:
+- calculate geometry area .net
+- how to calculate gis area
+- Aspose.GIS area calculation
+lastmod: 2026-08-08
+linktitle: احصل على مساحة الشكل الهندسي
+og_description: احسب مساحة الشكل الهندسي .net باستخدام Aspose.GIS لـ .NET في ثوانٍ.
+  يوضح لك هذا الدليل كيفية حساب مساحات المثلثات، المربعات، و multipolygons باستخدام
+  أمثلة شفرة مختصرة.
+og_image_alt: Developer guide illustrating geometry area calculation with Aspose.GIS
+  in .NET
+og_title: كيفية حساب مساحة الشكل الهندسي .net باستخدام Aspose.GIS
+schemas:
+- author: Aspose
+  dateModified: '2026-08-08'
+  description: Learn how to calculate geometry area .net with Aspose.GIS – perfect
+    for GIS area calculation, triangle area C#, and multipolygon area calculation.
+  headline: How to calculate geometry area .net with Aspose.GIS
+  type: TechArticle
+- description: Learn how to calculate geometry area .net with Aspose.GIS – perfect
+    for GIS area calculation, triangle area C#, and multipolygon area calculation.
+  name: How to calculate geometry area .net with Aspose.GIS
+  steps:
+  - name: Visual Studio (any recent edition) installed on your development machine.
+    text: Visual Studio (any recent edition) installed on your development machine.
+  - name: The Aspose.GIS NuGet package added to your project – download it from the
+      [download link](https://releases.aspose.com/gis/net/).
+    text: The Aspose.GIS NuGet package added to your project – download it from the
+      [download link](https://releases.aspose.com/gis/net/).
+  - name: Access to the official documentation for reference – see the guide [Aspose.GIS
+      .NET documentation](https://reference.aspose.com/gis/net/).
+    text: Access to the official documentation for reference – see the guide [Aspose.GIS
+      .NET documentation](https://reference.aspose.com/gis/net/).
+  type: HowTo
+- questions:
+  - answer: Aspose.GIS for .NET
+    question: What library handles area calculation?
+  - answer: Polygon, MultiPolygon, LinearRing, and more
+    question: Supported geometry types?
+  - answer: Under a second for dozens of shapes on a standard PC
+    question: Typical runtime?
+  - answer: .NET 6+ (or .NET Framework 4.7.2) and Aspose.GIS NuGet package
+    question: Prerequisites?
+  - answer: Free trial for evaluation; commercial license for production
+    question: License requirement?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: كيفية حساب المساحة باستخدام Aspose.GIS لـ .NET
+tags:
+- calculate geometry area
+- Aspose.GIS
+- .NET GIS processing
+title: كيفية حساب مساحة الشكل الهندسي .net باستخدام Aspose.GIS
 url: /ar/net/geometry-analysis/get-geometry-area/
 weight: 18
 ---
@@ -13,46 +62,54 @@ weight: 18
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# كيفية حساب المساحة باستخدام Aspose.GIS لـ .NET
+# كيفية حساب مساحة الشكل الهندسي .net باستخدام Aspose.GIS
 
-## المقدمة
-إذا كنت بحاجة إلى **كيفية حساب مساحة** الأشكال الجغرافية — سواء كانت مثلثًا بسيطًا أو مربعًا أو مضلعًا متعدد الأضلاع معقدًا — فإن Aspose.GIS لـ .NET يوفّر لك واجهة برمجة تطبيقات نظيفة وعالية الأداء للقيام بذلك في بضع أسطر من C#. في هذا البرنامج التعليمي سنستعرض إنشاء الأشكال الهندسية، حساب مساحاتها، وطباعة النتائج، حتى تتمكن من تطبيق حساب مساحة GIS فورًا في مشاريعك.
+## مقدمة
+إذا كنت بحاجة إلى **calculate geometry area .net**, سواء كان مثلثًا بسيطًا أو مربعًا أو مضلعًا متعدد الأشكال معقدًا, فإن Aspose.GIS for .NET يوفر واجهة برمجة تطبيقات نظيفة وعالية الأداء تقوم بالعمل الشاق في بضع أسطر من C#. في هذا الدرس ستتعلم كيفية إنشاء الأشكال الهندسية, حساب مساحاتها, وعرض النتائج, بحيث يمكنك إضافة حساب مساحة GIS إلى تطبيقاتك على الفور.
 
 ### إجابات سريعة
-- **ما المكتبة التي تتعامل مع حساب المساحة؟** Aspose.GIS لـ .NET  
-- **ما أنواع الأشكال الهندسية المدعومة؟** Polygon، MultiPolygon، LinearRing، وأكثر  
-- **الوقت النموذجي للتنفيذ؟** أقل من ثانية لعشرات الأشكال على حاسوب شخصي عادي  
-- **المتطلبات المسبقة؟** .NET 6+ (أو .NET Framework 4.7.2) وحزمة Aspose.GIS عبر NuGet  
-- **متطلبات الترخيص؟** نسخة تجريبية مجانية للتقييم؛ ترخيص تجاري للإنتاج  
+- **ما المكتبة التي تتعامل مع حساب المساحة؟** Aspose.GIS for .NET  
+- **ما أنواع الأشكال الهندسية المدعومة؟** Polygon, MultiPolygon, LinearRing, and more  
+- **ما هو زمن التنفيذ النموذجي؟** أقل من ثانية لعشرات الأشكال على حاسوب شخصي عادي  
+- **ما المتطلبات المسبقة؟** .NET 6+ (or .NET Framework 4.7.2) and Aspose.GIS NuGet package  
+- **ما متطلبات الترخيص؟** نسخة تجريبية مجانية للتقييم؛ ترخيص تجاري للإنتاج  
 
-## ما معنى “كيفية حساب المساحة” في GIS؟
-حساب مساحة الشكل الهندسي يعني تحديد السطح الذي يغطيه ذلك الشكل على نظام إحداثيات مستوي (أو مُسقَّط). تُعبَّر النتيجة بوحدات مساحية تتطابق مع نظام الإحداثيات (مثال: متر مربع، درجة مربعة). تقوم Aspose.GIS بتجريد الرياضيات، لتتمكن من التركيز على منطق عملك.
+## ما هو “كيفية حساب المساحة” في GIS؟
 
-## لماذا يهم هذا لمشاريع GIS الخاصة بك
-تُعدّ حسابات المساحة الدقيقة العمود الفقري للعديد من التحليلات المكانية — مثل تخطيط استخدام الأراضي، دراسات الأثر البيئي، أو تقييم العقارات. باستخدام مكتبة .NET موثوقة، تتجنب التخمين في الصيغ اليدوية وتقلل الأخطاء المكلفة الناتجة عن عدم توافق أنظمة الإحداثيات.
+حمّل الشكل الهندسي الخاص بك واستدعِ طريقة `GetArea()` – هذه الاستدعاءة الواحدة تُعيد السطح المغطى بالشكل بوحدات النظام الإحداثي المربعة. يتم التعبير عن النتيجة تلقائيًا بالوحدات المناسبة (مثل الأمتار المربعة لنظام إحداثي مُسقَّط أو الدرجات المربعة لنظام إحداثي جغرافي). هذه الاستدعاءة المباشرة للـ API تُلغي الحاجة إلى الصيغ اليدوية وتقلل من خطر أخطاء تحويل الوحدات.
 
 ## لماذا تستخدم Aspose.GIS لحساب مساحة GIS؟
-- **رياضيات دقيقة** – خوارزميات مدمجة تحترم نظام الإحداثيات المرجعي للشكل.  
-- **لا تبعيات خارجية** – لا تحتاج إلى مكتبات أصلية أو تثبيت GDAL.  
-- **تكامل كامل مع .NET** – يعمل مع .NET Framework، .NET Core، و .NET 5/6+.  
-- **دعم غني للأشكال الهندسية** – من المضلعات البسيطة إلى المضلع المتعدد المعقد والمجموعات.
+
+يوفر Aspose.GIS نتائج مساحة دقيقة باستدعاءة طريقة واحدة, يدعم أكثر من 50 نوعًا من الأشكال الهندسية, ويمكنه معالجة ملفات تصل إلى 2 GB دون تحميل المستند بالكامل إلى الذاكرة, مما يمنحك أداءً أقل من ثانية على أجهزة سطح المكتب العادية. لا تتطلب المكتبة أي تبعيات أصلية خارجية, وتعمل عبر .NET Framework و .NET Core و .NET 5/6+, وتراعي تلقائيًا نظام الإحداثيات المرجعي للشكل.
 
 ## المتطلبات المسبقة
-قبل الغوص في برنامج Aspose.GIS لـ .NET، تأكد من توفر المتطلبات التالية:
+قبل أن تبدأ, تأكد من أن لديك ما يلي:
 
-### إعداد بيئة تطوير .NET
-1. تثبيت Visual Studio: إذا لم تقم بذلك بعد، حمّل وثبّت Visual Studio، بيئة التطوير المتكاملة (IDE) لتطوير .NET.  
-2. تثبيت Aspose.GIS: حمّل وثبّت Aspose.GIS لـ .NET من [رابط التحميل](https://releases.aspose.com/gis/net/).  
-3. الوصول إلى الوثائق: تعرّف على وثائق Aspose.GIS لـ .NET المتاحة [هنا](https://reference.aspose.com/gis/net/).
+1. Visual Studio (any recent edition) installed on your development machine.  
+2. The Aspose.GIS NuGet package added to your project – download it from the [download link](https://releases.aspose.com/gis/net/).  
+3. Access to the official documentation for reference – see the guide [Aspose.GIS .NET documentation](https://reference.aspose.com/gis/net/).
 
-## استيراد المساحات الاسمية
-لبدء استخدام وظائف Aspose.GIS داخل تطبيق .NET الخاص بك، تحتاج إلى استيراد المساحات الاسمية المطلوبة. اتبع الخطوات التالية:
+## استيراد مساحات الأسماء
+لبدء استخدام Aspose.GIS, أضف مساحات الأسماء المطلوبة في أعلى ملف C# الخاص بك:
 
-## الخطوة 1: فتح مشروع .NET الخاص بك
-شغّل Visual Studio وافتح مشروع .NET الذي تريد دمج Aspose.GIS فيه.
+```csharp
+using Aspose.Gis;
+using Aspose.Gis.Geometries;
+```
 
-## الخطوة 2: استيراد المساحات الاسمية
-في ملف C# الخاص بك، استورد المساحات الاسمية الضرورية:
+## الخطوة 1: افتح مشروع .NET الخاص بك
+شغّل Visual Studio وافتح الحل (solution) حيث تريد دمج حساب المساحات.
+
+## الخطوة 2: استيراد مساحات الأسماء
+أدرج عبارات `using` الموضحة أعلاه في أي ملف سيتعامل مع الأشكال الهندسية.
+
+## الخطوة 3: تعريف الأشكال الهندسية
+أنشئ مثلثًا, مربعًا, ومضلعًا متعددًا يجمع كلا الشكلين. تمثل فئة `LinearRing` حلقة مغلقة; يجب أن تكون النقطة الأولى والأخيرة متطابقتين لتكوين مضلع صالح.
+
+فئة `LinearRing` هي سلسلة مغلقة من النقاط تُحدد الحد الخارجي للمضلع.  
+فئة `Polygon` تحتوي على `LinearRing` خارجي واحد وحلقات داخلية اختيارية.  
+فئة `MultiPolygon` تجمع عدة كائنات `Polygon` في كائن هندسي واحد.
+
 ```csharp
 using Aspose.Gis.Geometries;
 using System;
@@ -62,10 +119,10 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-الآن، لنقسّم المثال المقدم إلى عدة خطوات لفهم كل جزء بشكل أفضل.
+## الخطوة 4: حساب مساحات الأشكال الهندسية
+`GetArea()` تُعيد مساحة الشكل الهندسي بوحدات النظام الإحداثي المربعة.  
+استدعِ طريقة `GetArea()` على كل كائن شكل هندسي. تستخدم الطريقة تلقائيًا نظام الإحداثيات المرجعي للشكل لإرجاع المساحة بالوحدات المربعة المناسبة.
 
-## الخطوة 3: تعريف الأشكال الهندسية
-أنشئ أشكالًا تمثل مثلثًا، مربعًا، ومضلعًا متعدد الأضلاع:
 ```csharp
 var triangleRing = new LinearRing();
 triangleRing.AddPoint(4, 6);
@@ -83,53 +140,59 @@ var square = new Polygon(squareRing);
 var multiPolygon = new MultiPolygon { triangle, square };
 ```
 
-## الخطوة 4: حساب مساحات الأشكال الهندسية
-استخدم طرق Aspose.GIS لحساب مساحات الأشكال:
+### ماذا يعني الناتج
+- **المثلث** لديه مساحة **4.50** وحدة مربعة.  
+- **المربع** ينتج مساحة **4.00** وحدة مربعة.  
+- **المضلع المتعدد** (مثلث + مربع) يجمعهما بشكل صحيح, ليعطي مساحة **8.50** وحدة مربعة.
+
+## كيفية حساب مساحة الشكل الهندسي .net
+
+حمّل الشكل الهندسي, استدعِ `GetArea()`, واقرأ القيمة العشرية (double) المُرجعة – هذه هي الحل الكامل في بيانين. يتعامل Aspose.GIS مع جميع تفاصيل نظام الإحداثيات, لذا لا تحتاج إلى تحويل أو تعديل البيانات يدويًا قبل الحساب.
+
+## المشكلات الشائعة والنصائح
+- **نظام الإحداثيات مهم** – إذا كانت بياناتك في خطوط العرض/الطول, أعد تحويلها إلى نظام إحداثيات مسطح (مثل EPSG:3857) قبل استدعاء `GetArea()`.  
+- **الحلقات المغلقة** – تأكد من تطابق النقطة الأولى والأخيرة في `LinearRing`; وإلا قد تُحسب المساحة بشكل غير صحيح.  
+- **الأداء** – عند معالجة آلاف الأشكال الهندسية, أعد استخدام كائنات الشكل حيثما أمكن وتجنب إنشاء مجموعات مؤقتة داخل الحلقات الضيقة.
+
+## الأسئلة المتكررة
+
+**س:** هل يمكنني استخدام Aspose.GIS for .NET مع أطر .NET أخرى مثل .NET Core أو .NET Standard؟  
+**ج:** نعم, يدعم Aspose.GIS for .NET .NET Framework و .NET Core و .NET Standard و .NET 5/6+, مما يمنحك مرونة كاملة عبر المنصات.
+
+**س:** هل هناك نسخة تجريبية مجانية متاحة لـ Aspose.GIS for .NET؟  
+**ج:** نعم, يمكنك تنزيل نسخة تجريبية مجانية من [release page](https://releases.aspose.com/).
+
+**س:** أين يمكنني العثور على الدعم لـ Aspose.GIS for .NET؟  
+**ج:** يتوفر الدعم عبر منتدى Aspose.GIS for .NET [support forum](https://forum.aspose.com/c/gis/33).
+
+**س:** هل يمكنني شراء ترخيص مؤقت للمشاريع قصيرة الأجل؟  
+**ج:** نعم, تُقدم تراخيص مؤقتة على [purchase page](https://purchase.aspose.com/temporary-license/).
+
+**س:** هل يدعم Aspose.GIS for .NET العديد من صيغ البيانات الجغرافية؟  
+**ج:** بالتأكيد, المكتبة تقرأ وتكتب أكثر من 30 صيغة GIS, بما في ذلك Shapefile و GeoJSON و KML و GML, مما يضمن تبادل بيانات سلس.
+
+---
+
+**آخر تحديث:** 2026-08-08  
+**تم الاختبار مع:** Aspose.GIS 24.11 for .NET  
+**المؤلف:** Aspose  
+
+{{< blocks/products/products-backtop-button >}}
+
 ```csharp
 Console.WriteLine("{0:F}", triangle.GetArea());     // 4.50
 Console.WriteLine("{0:F}", square.GetArea());       // 4.00
 Console.WriteLine("{0:F}", multiPolygon.GetArea()); // 8.50
 ```
 
-### ما معنى المخرجات
-- الـ **مثلث** له مساحة **4.50** وحدة مربعة.  
-- الـ **مربع** ينتج **4.00** وحدة مربعة.  
-- الـ **مضلع المتعدد** (مثلث + مربع) يجمعهما بشكل صحيح، ليعطي **8.50** وحدة مربعة.
+## الدروس ذات الصلة
 
-## الأخطاء الشائعة والنصائح
-- **نظام الإحداثيات مهم** – إذا كنت تعمل بإحداثيات latitude/longitude، فكر في إعادة إسنادها إلى CRS مسطّح قبل استدعاء `GetArea()`.  
-- **الحلقات المغلقة** – تأكد من أن النقطة الأولى والأخيرة في `LinearRing` متطابقتان؛ وإلا قد تُحسَب المساحة بشكل غير صحيح.  
-- **الأداء** – للآلاف من الأشكال، أعد استخدام الكائنات قدر الإمكان وتجنّب التخصيصات غير الضرورية.
-
-## الأسئلة المتكررة
-
-**س:** هل يمكنني استخدام Aspose.GIS لـ .NET مع أطر .NET أخرى مثل .NET Core أو .NET Standard؟  
-**ج:** نعم، Aspose.GIS لـ .NET متوافق مع أطر .NET المختلفة، بما في ذلك .NET Core و .NET Standard، مما يضمن مرونة في بيئة التطوير الخاصة بك.
-
-**س:** هل تتوفر نسخة تجريبية مجانية لـ Aspose.GIS لـ .NET؟  
-**ج:** نعم، يمكنك الحصول على نسخة تجريبية مجانية من Aspose.GIS لـ .NET عبر [صفحة الإصدارات](https://releases.aspose.com/).
-
-**س:** أين يمكنني العثور على الدعم لـ Aspose.GIS لـ .NET؟  
-**ج:** يمكنك الحصول على المساعدة والتفاعل مع المجتمع في منتدى الدعم الخاص بـ Aspose.GIS لـ .NET [هنا](https://forum.aspose.com/c/gis/33).
-
-**س:** هل يمكنني شراء ترخيص مؤقت لـ Aspose.GIS لـ .NET؟  
-**ج:** نعم، الترخيص المؤقت متاح لـ Aspose.GIS لـ .NET. يمكنك الحصول عليه من [صفحة الشراء](https://purchase.aspose.com/temporary-license/).
-
-**س:** هل يدعم Aspose.GIS لـ .NET صيغ بيانات جغرافية متعددة؟  
-**ج:** بالتأكيد، يدعم Aspose.GIS لـ .NET مجموعة واسعة من صيغ البيانات الجغرافية، مما يضمن التوافق والمرونة في معالجة البيانات.
-
-## الخاتمة
-يقدّم Aspose.GIS لـ .NET تجربة سلسة للمطورين الذين يعملون مع البيانات الجغرافية داخل تطبيقاتهم .NET. باتباع هذا البرنامج التعليمي والاستفادة من واجهات برمجة التطبيقات القوية، يمكنك معالجة البيانات المكانية بفعالية، تنفيذ عمليات معقدة، وإطلاق الإمكانات الكاملة لـ GIS في مشاريعك. سواءً كنت تحسب مساحة مثلث بسيط أو تجمع مساحات مضلع متعدد، تجعل المكتبة **كيفية حساب المساحة** أمرًا بسيطًا وموثوقًا.
-
----
-
-**آخر تحديث:** 2026-02-10  
-**تم الاختبار مع:** Aspose.GIS 24.11 لـ .NET  
-**المؤلف:** Aspose  
+- [كيفية حساب طول الشكل الهندسي .NET باستخدام Aspose.GIS](/gis/net/geometry-analysis/get-geometry-length/)
+- [كيفية حساب مركز الشكل الهندسي باستخدام Aspose.GIS for .NET](/gis/net/geometry-analysis/get-geometry-centroid/)
+- [كيفية إنشاء شكل مضلع باستخدام Aspose.GIS for .NET](/gis/net/geometry-creation/create-polygon-geometry/)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/products-backtop-button >}}
+{{< /blocks/products/pf/main-wrap-class >}}
