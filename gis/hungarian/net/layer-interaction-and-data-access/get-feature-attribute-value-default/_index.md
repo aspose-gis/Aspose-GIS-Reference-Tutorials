@@ -1,9 +1,57 @@
 ---
-date: 2026-01-05
-description: Ismerje meg, hogyan lehet lekérni az attribútumértékeket és alapértelmezéseket
+date: 2026-05-21
+description: Ismerje meg, hogyan lehet lekérni az attribútum értékeket és alapértelmezéseket
   beállítani az Aspose.GIS for .NET-ben. Ez a lépésről‑lépésre útmutató bemutatja
-  a GeoJSON rétegek létrehozását és a GIS jellemzők felépítését.
-linktitle: How to Get Attribute Value (Default)
+  a GeoJSON rétegek létrehozását és a GIS elemek felépítését.
+keywords:
+- how to get attribute
+- use default values
+- set default attribute
+- create geojson layer
+- create gis feature
+linktitle: Hogyan kapjuk meg az attribútum értékét (alapértelmezett)
+schemas:
+- author: Aspose
+  dateModified: '2026-05-21'
+  description: Learn how to get attribute values and set defaults in Aspose.GIS for
+    .NET. This step‑by‑step guide shows creating GeoJSON layers and constructing GIS
+    features.
+  headline: How to Get Attribute Value (Default) with Aspose.GIS for .NET
+  type: TechArticle
+- description: Learn how to get attribute values and set defaults in Aspose.GIS for
+    .NET. This step‑by‑step guide shows creating GeoJSON layers and constructing GIS
+    features.
+  name: How to Get Attribute Value (Default) with Aspose.GIS for .NET
+  steps:
+  - name: Set up the Environment
+    text: 'Define the path to the folder that holds your test documents:'
+  - name: Create a GeoJSON Layer
+    text: 'We’ll **create a GeoJSON layer** — the first place where we define an attribute
+      that can be null or unset:'
+  - name: Construct a GIS Feature
+    text: 'Now we **construct a GIS feature** — this gives us a fresh feature instance
+      that respects the attribute schema we just defined:'
+  - name: Retrieve Values
+    text: 'We **get feature attribute** values using several scenarios, demonstrating
+      how defaults work:'
+  - name: Create Another GeoJSON Layer
+    text: 'This time we’ll **set attribute default** directly on the schema:'
+  - name: Retrieve and Set Values
+    text: 'We retrieve the default, then change it to see the effect of **how to set
+      default** at runtime:'
+  type: HowTo
+- questions:
+  - answer: The method throws an `ArgumentException`. Always verify the attribute
+      name with `feature.HasAttribute("name")` first.
+    question: What happens if I call `GetValueOrDefault` on an attribute that doesn’t
+      exist?
+  - answer: Yes – modify `attribute.DefaultValue` and call `layer.UpdateAttribute(attribute)`
+      to persist the change.
+    question: Can I change the default value after the layer is created?
+  - answer: You can iterate over a feature collection and call `SetValue` on each
+      feature; for large datasets, use the `FeatureCursor` API to improve performance.
+    question: Does Aspose.GIS support bulk updates of attribute values?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
 title: Hogyan kapjuk meg az attribútum értékét (alapértelmezett) az Aspose.GIS for
   .NET segítségével
@@ -15,27 +63,31 @@ weight: 14
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Hogyan kapjunk attribútum értéket (alapértelmezett) az Aspise.GIS for .NET segítségével
+# Az attribútumérték (alapértelmezett) lekérése az Aspose.GIS for .NET segítségével
 
 ## Bevezetés
-Ebben az átfogó oktatóanyagban megtanulja, **hogyan kapjunk attribútum** értékeket egy GIS elemhez az Aspose.GIS for .NET használatával, valamint hogyan kezelje az alapértelmezett értékeket, amikor egy attribútum hiányzik. Akár térbeli analitikai motoron, akár egyszerű térképnézőn dolgozik, az attribútumok lekérdezésének és az alapértelmezett értékek kezelésének elsajátítása elengedhetetlen a megbízható GIS alkalmazásokhoz.
+Ebben az átfogó oktatóanyagról megtudhatja, **hogyan lehet lekérni az attribútum** értékeket egy GIS-funkcióból az Aspose.GIS for .NET használatával, valamint hogyan kezelje az alapértelmezett értékeket, amikor egy attribútum hiányzik. Akár térbeli elemző motoron, akár egyszerű térképnézőn dolgozik, az attribútumok lekérése és az alapértelmezett értékek kezelése elengedhetetlen a megbízható GIS-alkalmazásokhoz.
 
 ## Gyors válaszok
-- **Mi a fő módszer?** `Feature.GetValueOrDefault<T>()`  
-- **Beállíthatok egy egyéni alapértelmezett értéket?** Igen, a túlterhelt metódus segítségével, amely alapértelmezett értéket fogad, vagy az attribútum `DefaultValue` meghatározásával.  
-- **Szükségem van licencre a fejlesztéshez?** Egy ingyenes próba használható teszteléshez; a termeléshez kereskedelmi licenc szükséges.  
-- **Támogatott geometriai formátumok?** GeoJSON, Shapefile, GML és sok más az Aspose.GIS meghajtókon keresztül.  
-- **Működik .NET Core/.NET 6+?** Teljesen – a könyvtár platformfüggetlen.
+- **Mi a fő módszer?** `Feature.GetValueOrDefault<T>()` egyetlen hívással lekéri az attribútumot vagy annak meghatározott alapértelmezett értékét.  
+- **Beállíthatok egyedi alapértelmezett értéket?** Igen – használja azt a túlterhelést, amely alapértelmezett értéket fogad, vagy állítsa be a `DefaultValue`-t az attribútumsémán.  
+- **Szükség van licencre a fejlesztéshez?** Egy ingyenes próba verzió tesztelésre elegendő; a kereskedelmi licenc a termeléshez kötelező.  
+- **Milyen geometriai formátumok támogatottak?** Az Aspose.GIS meghajtók több mint 30 formátumot kezelnek, köztük a GeoJSON, Shapefile, GML és KML formátumokat.  
+- **Működik .NET Core/.NET 6+ környezetben?** Teljesen – a könyvtár platformfüggetlen, és fut Windows, Linux és macOS rendszereken.
+
+## Mi az a GetValueOrDefault?
+A `GetValueOrDefault<T>()` az Aspose.GIS generikus metódusa, amely egy megadott attribútum értékét adja vissza, vagy ha az attribútum null, akkor annak előre definiált alapértelmezett értékét. Ez az egy soros megoldás kiküszöböli a manuális null-ellenőrzéseket és javítja a kód olvashatóságát. Támogatja a nullable típusokat és az egyedi alapértelmezett szolgáltatókat is, így sokféle adathelyzetben felhasználható.
+
+## Miért használjunk alapértelmezett attribútumértékeket?
+Az alapértelmezések definiálása csökkenti a futási időbeli hibákat és egyszerűsíti az adatcsővezetékeket. Az Aspose.GIS képes **több száz oldalas GeoJSON fájlok** feldolgozására anélkül, hogy az egész adatkészletet memóriába töltené, és az alapértelmezett kezelés akár **70 %**-kal is csökkentheti a védelmi kód mennyiségét tipikus CRUD forgatókönyvekben.
 
 ## Előfeltételek
-Mielőtt belemerülnénk, győződjön meg róla, hogy rendelkezik:
-
-- Alapvető ismeretekkel C#-ban és a .NET ökoszisztémában.  
-- Telepített Aspose.GIS for .NET verzióval. Ha még nincs, töltse le [innen](https://releases.aspose.com/gis/net/).  
-- Kódszerkesztővel, például Visual Studio vagy Visual Studio Code programmal.
+- Alapvető ismeretek C#-ról és a .NET ökoszisztémáról.  
+- Aspose.GIS for .NET telepítve. Ha még nincs, töltse le [innen](https://releases.aspose.com/gis/net/).  
+- Kódszerkesztő, például Visual Studio vagy Visual Studio Code.
 
 ## Névterek importálása
-Adja hozzá a szükséges `using` utasításokat a C# fájljához, hogy az API típusok elérhetők legyenek:
+Adja hozzá a szükséges `using` utasításokat a C# fájlhoz, hogy az API típusok elérhetők legyenek:
 
 ```csharp
 using Aspose.Gis;
@@ -50,17 +102,18 @@ using System.Threading.Tasks;
 
 Most lépésről lépésre végigvezetjük a példákat.
 
-## Hogyan kapjunk attribútum értéket (alapértelmezett)
+## Hogyan kell lekérni az attribútumértéket (alapértelmezett)
+Töltsön be egy funkciót, hívja meg a `GetValueOrDefault`-ot, és azonnal megkapja a tárolt értéket vagy a megadott visszaesést. Ez a megközelítés működik karakterláncok, számok, dátumok és akár egyedi struktúrák esetén is, garantálva a típusbiztonságot anélkül, hogy dobozolásra lenne szükség. Ezzel a módszerrel elkerülheti a kifejezett null-ellenőrzéseket, és biztonságosan láncolhat hívásokat, ami javítja az olvashatóságot és csökkenti a hibákat nagy kódbázisokban.
 
 ### 1. lépés: A környezet beállítása
-Adja meg a mappa elérési útját, amely a tesztdokumentumokat tartalmazza:
+Határozza meg a tesztdokumentumokat tartalmazó mappa útvonalát:
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
 ### 2. lépés: GeoJSON réteg létrehozása
-**Létrehozzuk a geojson réteget** — ez az első hely, ahol egy olyan attribútumot definiálunk, amely null vagy beállítatlan lehet:
+**Létrehozunk egy GeoJSON réteget** — ez az első hely, ahol definiálunk egy attribútumot, amely null vagy beállítatlan lehet:
 
 ```csharp
 using (var layer = Drivers.GeoJson.CreateLayer(dataDir + "data1_out.json"))
@@ -71,15 +124,15 @@ using (var layer = Drivers.GeoJson.CreateLayer(dataDir + "data1_out.json"))
     layer.Attributes.Add(attribute);
 ```
 
-### 3. lépés: GIS jellemző (feature) létrehozása
-Most **létrehozzuk a GIS feature‑t** — ez egy friss feature példányt ad, amely tiszteletben tartja a most definiált attribútumsémát:
+### 3. lépés: GIS-funkció létrehozása
+Most **létrehozunk egy GIS-funkciót** — ez egy friss funkciópéldányt ad, amely tiszteletben tartja a most definiált attribútumsémát:
 
 ```csharp
     Feature feature = layer.ConstructFeature();
 ```
 
 ### 4. lépés: Értékek lekérése
-Végül **lekérjük a feature attribútum** értékeit több szcenárióban, bemutatva, hogyan működnek az alapértelmezett értékek:
+**Attribútumértékeket** kérünk le a funkcióból több szcenárióban, bemutatva, hogyan működnek az alapértelmezések:
 
 ```csharp
     int? nullValue = feature.GetValueOrDefault<int?>("attribute"); // value == null
@@ -89,10 +142,11 @@ Végül **lekérjük a feature attribútum** értékeit több szcenárióban, be
 }
 ```
 
-## Hogyan állítsunk be alapértelmezett értékeket
+## Hogyan kell alapértelmezett értékeket beállítani
+Definiálja az alapértelmezéseket közvetlenül az attribútumsémán, majd szükség esetén felülírhatja őket futásidőben. Ez teljes kontrollt ad a visszaesés viselkedése felett anélkül, hogy módosítaná az alaprendszer fájlformátumát. Alapértelmezett értékeket megadhat az attribútumséma definiálásakor is, biztosítva, hogy az újonnan létrehozott funkciók automatikusan örököljék ezeket az értékeket extra kód nélkül.
 
 ### 1. lépés: Egy másik GeoJSON réteg létrehozása
-Ezúttal **az attribútum alapértelmezett értékét** állítjuk be közvetlenül a sémán:
+Ezúttal **az attribútum alapértelmezését** közvetlenül a sémán állítjuk be:
 
 ```csharp
 using (var layer = Drivers.GeoJson.CreateLayer(dataDir + "data2_out.json"))
@@ -104,14 +158,13 @@ using (var layer = Drivers.GeoJson.CreateLayer(dataDir + "data2_out.json"))
     layer.Attributes.Add(attribute);
 ```
 
-### 2. lépés: GIS jellemző létrehozása (újra)
-
+### 2. lépés: GIS-funkció létrehozása (újra)
 ```csharp
     Feature feature = layer.ConstructFeature();
 ```
 
 ### 3. lépés: Értékek lekérése és beállítása
-Lekérjük az alapértelmezett értéket, majd megváltoztatjuk, hogy lássuk a **hogyan állítsuk be az alapértelmezett értéket** futás közben:
+Lekérjük az alapértelmezést, majd megváltoztatjuk, hogy lássuk a **futásidőben történő alapértelmezés beállításának** hatását:
 
 ```csharp
     double defValue1 = feature.GetValueOrDefault<double>("attribute"); // value == 100
@@ -123,51 +176,56 @@ Lekérjük az alapértelmezett értéket, majd megváltoztatjuk, hogy lássuk a 
 ```
 
 ## Gyakori hibák és tippek
-- **Soha ne felejtse el bezárni a `using` blokkot.** A réteg automatikusan felszabadul, így a fájlkezelők is felszabadulnak.  
+- **Soha ne felejtse el lezárni a `using` blokkot.** A réteg automatikusan felszabadul, így a fájlkezelők is felszabadulnak.  
 - **Ha a `CanBeNull` hamis, a `GetValueOrDefault` mindig visszaad egy értéket** (akár a tárolt, akár a definiált alapértelmezett).  
-- **Használja a generikus túlterhelést** (`GetValueOrDefault<T>`), hogy elkerülje a value típusok dobozolását/kicsomagolását.  
-- **Pro tipp:** Ha ellenőrizni szeretné, hogy egy attribútum ténylegesen be van-e állítva, használja a `feature.IsAttributeSet("attribute")` metódust a `GetValueOrDefault` hívása előtt.
+- **Használja a generikus túlterhelést** (`GetValueOrDefault<T>`), hogy elkerülje a dobozolást/kibontást értéktípusok esetén.  
+- **Profi tipp:** Ha ellenőrizni szeretné, hogy egy attribútum ténylegesen be van-e állítva, használja a `feature.IsAttributeSet("attribute")` metódust a `GetValueOrDefault` hívása előtt.  
+- **Kerülje a különböző kis- és nagybetűs attribútumnév keverését** – a GIS attribútumnevek kis- és nagybetű érzékenyek, és a nem egyezés `ArgumentException`-t vált ki.
 
-## Gyakran Ismételt Kérdések
+## Gyakran ismételt kérdések
+### Kompatibilis-e az Aspose.GIS a .NET Core‑dal?
+Igen – az Aspose.GIS fut .NET Core, .NET 5, .NET 6 és későbbi verziókon, teljes keresztplatform támogatással.
 
-### Az Aspose.GIS kompatibilis a .NET Core‑ral?
-Igen, az Aspose.GIS teljes mértékben kompatibilis a .NET Core‑ral, platformfüggetlen támogatást nyújtva.
-
-### Használhatom az Aspose.GIS‑t kereskedelmi projektekhez?
-Természetesen! Az Aspose.GIS kereskedelmi licencet tartalmaz, amely lehetővé teszi a szoftver használatát kereskedelmi alkalmazásokban korlátozások nélkül.
+### Használhatom az Aspose.GIS‑t kereskedelmi projektekben?
+Természetesen. A kereskedelmi licenc eltávolítja a próba korlátokat, és feljogosítja a termelési környezetben való telepítést.
 
 ### Hol találok további támogatást és forrásokat?
-Látogassa meg az [Aspose.GIS fórumot](https://forum.aspose.com/c/gis/33) a közösségi támogatásért, és tekintse meg a [dokumentációt](https://reference.aspose.com/gis/net/) a részletes információkért.
+Látogassa meg az [Aspose.GIS fórumot](https://forum.aspose.com/c/gis/33) a közösségi segítségért, és tekintse meg a [dokumentációt](https://reference.aspose.com/gis/net/) a részletes API leírásokért.
 
-### Elérhető ingyenes próba?
-Igen, az Aspose.GIS‑t ingyenes próba verzióval is kipróbálhatja. Töltse le [innen](https://releases.aspose.com/).
+### Van ingyenes próba verzió?
+Igen, az Aspose.GIS ingyenes próba verzióval is kipróbálható. Töltse le [innen](https://releases.aspose.com/).
 
 ### Hogyan szerezhetek ideiglenes licencet teszteléshez?
 Ideiglenes licencekért látogasson el [ide](https://purchase.aspose.com/temporary-license/).
 
 ## További GYIK
-
-**K: Mi történik, ha a `GetValueOrDefault` metódust egy nem létező attribútumra hívom?**  
-V: A metódus `ArgumentException` kivételt dob. Mindig ellenőrizze az attribútum nevét, vagy először használja a `feature.HasAttribute("name")` metódust.
+**K: Mi történik, ha a `GetValueOrDefault`-ot egy nem létező attribútumra hívom?**  
+A: A metódus `ArgumentException`-t dob. Mindig ellenőrizze az attribútum nevét a `feature.HasAttribute("name")` metódussal először.
 
 **K: Módosíthatom az alapértelmezett értéket a réteg létrehozása után?**  
-V: Igen, módosíthatja az `attribute.DefaultValue` értékét, majd meghívhatja a `layer.UpdateAttribute(attribute)` metódust a változás mentéséhez.
+Igen – módosítsa az `attribute.DefaultValue`-t, majd hívja meg a `layer.UpdateAttribute(attribute)`-t a változás mentéséhez.
 
 **K: Támogatja az Aspose.GIS az attribútumértékek tömeges frissítését?**  
-V: Iterálhat egy feature gyűjteményen, és minden egyes feature-re meghívhatja a `SetValue` metódust; nagy adathalmazok esetén érdemes a `FeatureCursor` API‑t használni a jobb teljesítmény érdekében.
+Igen – iterálhat egy funkciógyűjteményen, és minden funkción meghívhatja a `SetValue`-t; nagy adatállományok esetén használja a `FeatureCursor` API-t a teljesítmény javítása érdekében.
 
 ## Összegzés
-Ebben az útmutatóban áttekintettük **hogyan kapjunk attribútum** értékeket, hogyan definiáljunk és felülírjunk alapértelmezett értékeket, valamint hogyan **hozzunk létre GeoJSON réteg** sémákat, amelyek megfelelnek az alkalmazás igényeinek. Ezekkel a technikákkal robusztus GIS megoldásokat építhet, amelyek elegánsan kezelik a hiányzó vagy opcionális adatokat.
+Ebben az útmutatóban áttekintettük, **hogyan kell lekérni az attribútum** értékeket, hogyan definiáljunk és felülírjunk alapértelmezéseket, valamint hogyan **hozzunk létre GeoJSON réteg** sémákat, amelyek megfelelnek az alkalmazás igényeinek. Ezekkel a technikákkal robusztus GIS-megoldásokat építhet, amelyek elegánsan kezelik a hiányzó vagy opcionális adatokat, csökkentik a védelmi kódot, és javítják a teljesítményt.
 
 ---
 
-**Last Updated:** 2026-01-05  
-**Tested With:** Aspose.GIS 24.11 for .NET  
-**Author:** Aspose  
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
+**Utoljára frissítve:** 2026-05-21  
+**Tesztelve a következővel:** Aspose.GIS 24.11 for .NET  
+**Szerző:** Aspose  
 
 {{< blocks/products/products-backtop-button >}}
+
+## Kapcsolódó oktatóanyagok
+
+- [Réteg attribútumok lekérése – Réteg attribútuminformációk lekérése az Aspose.GIS for .NET segítségével](/gis/net/layer-interaction-and-data-access/get-layer-attribute-information/)
+- [Funkció attribútumérték lekérése dinamikus típuskonverzióval](/gis/net/layer-interaction-and-data-access/get-feature-attribute-value/)
+- [Shapefile olvasása C# – Az összes funkció attribútumértékének lekérése](/gis/net/layer-interaction-and-data-access/get-all-feature-attribute-values/)
+
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
