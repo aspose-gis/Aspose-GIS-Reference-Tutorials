@@ -1,11 +1,41 @@
 ---
-date: 2025-12-31
-description: Tanulja meg, hogyan állíthatja be a mező szélességét az Aspose.GIS for
-  .NET-ben, és hogyan adhat hozzá hosszal rendelkező attribútumot a shapefile‑okhoz
-  hatékonyan.
-linktitle: How to Set Field Width
+date: 2026-05-16
+description: Vektor réteg példa, amely bemutatja, hogyan állítsuk be a mező szélességét,
+  definiáljuk az attribútum szélességét, és adjuk hozzá az attribútum hosszát az Aspose.GIS
+  for .NET-ben – egy teljes lépésről‑lépésre útmutató.
+keywords:
+- vector layer example
+- how to set width
+- set field width
+- define attribute width
+- add attribute length
+linktitle: Hogyan állítsuk be a mező szélességét
+schemas:
+- author: Aspose
+  dateModified: '2026-05-16'
+  description: Vector layer example showing how to set field width, define attribute
+    width, and add attribute length in Aspose.GIS for .NET – a complete step‑by‑step
+    guide.
+  headline: Vector Layer Example – How to Set Field Width in Aspose.GIS for .NET
+  type: TechArticle
+- questions:
+  - answer: You can acquire a temporary license [here](https://purchase.aspose.com/temporary-license/).
+    question: How can I obtain a temporary license for Aspose.GIS for .NET?
+  - answer: Visit the [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) for peer‑to‑peer
+      help and official responses.
+    question: Where can I find community support for Aspose.GIS for .NET?
+  - answer: Yes, explore the [free trial](https://releases.aspose.com/) to experience
+      the full feature set without cost.
+    question: Is there a free trial available for Aspose.GIS for .NET?
+  - answer: Purchase your license [here](https://purchase.aspose.com/buy).
+    question: How do I purchase a license for Aspose.GIS for .NET?
+  - answer: Refer to the [documentation](https://reference.aspose.com/gis/net/) for
+      comprehensive API details.
+    question: Where can I access the documentation for Aspose.GIS for .NET?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: Hogyan állítsuk be a mező szélességét az Aspose.GIS for .NET-ben
+title: Vektor réteg példa – Hogyan állítsuk be a mező szélességét az Aspose.GIS for
+  .NET-ben
 url: /hu/net/layer-data-operations/specify-attribute-value-length/
 weight: 18
 ---
@@ -14,32 +44,37 @@ weight: 18
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Hogyan állítsuk be a mező szélességét az Aspose.GIS for .NET-ben
+# Vektorréteg példa – Hogyan állítsuk be a mező szélességét az Aspose.GIS for .NET-ben
 
-## Bevezetés
-Üdvözöljük az Aspose.GIS for .NET világában – a hatékony térinformatikai fejlesztés kapujában! Ez az átfogó bemutató végigvezeti Önt az Aspose.GIS alapvető lépésein, hogy könnyedén kezelhesse a térinformatikai adatokat .NET alkalmazásaiban. Akár tapasztalt fejlesztő, akár újonc a térinformatikai programozásban, ez az útmutató szilárd alapot és gyakorlati betekintést nyújt. **Ebben a bemutatóban megtanulja, hogyan állítsa be a mező szélességét az attribútum értékekhez**, biztosítva, hogy a shapefile mezők pontosan a várt adatot tárolják.
+Ebben a **vektorréteg példában** megtanulja, hogyan állítsa be egy attribútum mező szélességét Shapefile létrehozásakor az Aspose.GIS for .NET használatával. Lépésről lépésre végigvezetjük a folyamatot, a névterek importálásától a jellemző hozzáadásáig, és elmagyarázzuk, miért fontos az attribútum hosszának szabályozása az adat integritás és más GIS eszközökkel való interoperabilitás szempontjából.
 
 ## Gyors válaszok
-- **Mi a fő célja ennek az útmutatónak?** Bemutatni, hogyan állítható be egy attribútum mező szélessége shapefile-ban az Aspose.GIS for .NET használatával.  
+- **Mi a fő célja ennek az útmutatónak?** Az, hogy megmutassa, hogyan állítsa be a mező szélességét egy attribútumhoz egy shapefile-ban az Aspose.GIS for .NET használatával.  
 - **Melyik osztály határozza meg a mező szélességét?** `FeatureAttribute.Width`.  
-- **Szükség van licencre a kód futtatásához?** Ideiglenes licenc elegendő értékeléshez; teljes licenc szükséges a termeléshez.  
+- **Szükségem van licencre a kód futtatásához?** Egy ideiglenes licenc elegendő értékeléshez; a teljes licenc szükséges a termeléshez.  
 - **Milyen fájlformátumot használ a példa?** ESRI Shapefile (`.shp`).  
-- **Módosítható a szélesség a réteg létrehozása után?** Nem – a szélességet a jellemzők hozzáadása előtt kell definiálni.
+- **Módosíthatom a szélességet a réteg létrehozása után?** Nem – a szélességet a jellemzők hozzáadása előtt kell definiálni.
+
+## Mi a mező szélessége és miért fontos?
+A mező szélessége (más néven attribútumhossz) a maximális karakterek száma, amelyet egy karakterlánc mező tárolhat egy Shapefile DBF komponensében. A megfelelő szélesség beállítása megakadályozza a csendes levágást, garantálja, hogy más GIS alkalmazások pontosan úgy olvassák az adatot, ahogy azt beírták, és előre láthatóvá teszi a fájlméretet – minden egyes extra karakter egy bájtot ad hozzá rekordonként.
 
 ## Előfeltételek
-A bemutató megkezdése előtt győződjön meg róla, hogy az alábbiak rendelkezésre állnak:
-- Aspose.GIS for .NET könyvtár: Töltse le és telepítse az Aspose.GIS for .NET könyvtárat a [letöltési hivatkozásról](https://releases.aspose.com/gis/net/).
-- Fejlesztői környezet: Állítsa be a kedvenc .NET fejlesztői környezetét, például a Visual Studio-t.
-- Dokumentumkönyvtár: Adja meg azt a könyvtárat, ahol a térinformatikai dokumentumok tárolódnak.
+- **Aspose.GIS for .NET Library** – letöltés a [download link](https://releases.aspose.com/gis/net/) címről.  
+- **Development Environment** – Visual Studio 2022, Visual Studio Code vagy bármely IDE, amely támogatja a .NET 6+.  
+- **Write Access** – egy mappa a lemezen, ahová a generált shapefile mentésre kerül.
 
-## Mi az a mező szélesség és miért fontos?
-A mező szélesség (vagy attribútum hossza) meghatározza, hogy egy karakterlánc attribútum legfeljebb hány karaktert tartalmazhat. A megfelelő szélesség beállítása megakadályozza az adatlevágást, és biztosítja a kompatibilitást más GIS eszközökkel, amelyek rögzített hosszúságú mezőkre támaszkodhatnak.
+## Miért használjunk vektorréteg példát meghatározott szélességgel?
+Az Aspose.GIS **több mint 30 GIS fájlformátumot** támogat, többek között a Shapefile, GeoJSON, KML és GML formátumokat. Ha kifejezetten beállítja a mező szélességét, elkerüli az alapértelmezett 255 karakteres korlátot, amely feleslegesen megnövelheti a `.dbf` fájlt akár 255 × rekordszám bájttal. Nagy adathalmazok esetén ez jelentős tárhelymegtakarítást eredményez.
 
-## Hogyan állítsuk be a mező szélességét egy attribútumhoz
-Az alábbiakban lépésről‑lépésre bemutatjuk a folyamatot. Minden kódrészlet változatlanul marad az eredeti forrásból; a környező magyarázatok a tisztánlátás érdekében bővültek.
+## Hogyan állítsuk be egy attribútum mező szélességét?
+Ebben a szakaszban betöltünk vagy létrehozunk egy `VectorLayer`-t, amely a cél `.shp` fájlra mutat, definiálunk egy karakterlánc attribútumot pontos szélességgel, majd hozzáadunk jellemzőket – mindezt néhány tömör utasítással. A `VectorLayer` egy vektor adatkészletet, például egy Shapefile-t képvisel, és hozzáférést biztosít a geometriához és az attribútumtáblához. Az alábbiakban közvetlen, lépésről‑lépésre követhető receptet talál.
+
+Betöltünk vagy létrehozunk egy `VectorLayer`-t, amely a cél `.shp` fájlra mutat, deklarálunk egy **wide** nevű karakterlánc attribútumot `Width = 120` értékkel, majd hozzáadunk egy jellemzőt, amelynek értéke betartja a 120 karakteres korlátot. Az Aspose.GIS automatikusan levágja a hosszabb karakterláncokat a meghatározott szélességre, megőrizve az adatkonzisztenciát anélkül, hogy kivételeket dobna.
 
 ### Névterek importálása
-Importálja a szükséges névtereket az Aspose.GIS for .NET funkcióinak használatához:
+`FeatureAttribute`, `VectorLayer` és a kapcsolódó típusok az `Aspose.Gis` névtérben találhatók. Importálja őket a fájl tetején:
+
+Az `Aspose.Gis` névtér biztosítja a fő GIS objektumokat, például a `VectorLayer`, `Feature` és `FeatureAttribute` osztályokat. Az importálás lehetővé teszi, hogy a osztályok teljesen kvalifikált név nélkül legyenek elérhetők.
 
 ```csharp
 using Aspose.Gis;
@@ -51,7 +86,9 @@ using System.Threading.Tasks;
 ```
 
 ### VectorLayer létrehozása
-Hozzon létre egy `VectorLayer`‑t, amely a kimeneti shapefile‑ra mutat. Ez a réteg fogja tartalmazni azt az attribútumot, amelynek a szélességét szabályozni szeretnénk.
+`VectorLayer` osztály egy vektor adatforrást (pl. Shapefile) képvisel. Ez a tároló, amely a jellemzőket és azok attribútumait tartalmazza.
+
+A `VectorLayer` osztály az Aspose.GIS vektor adatkészletének reprezentációja, amely memóriában kezeli a geometriát és az attribútumtáblákat. Hozzon létre egy példányt, amely egy új vagy meglévő `.shp` fájlra mutat.
 
 ```csharp
 string dataDir = "Your Document Directory";
@@ -62,7 +99,9 @@ using (VectorLayer layer = VectorLayer.Create(dataDir + "SpecifyAttributeValueLe
 ```
 
 ### Attribútum hozzáadása meghatározott hosszúsággal
-Definiáljon egy **wide** nevű attribútumot, és állítsa be explicit módon a szélességét 120 karakterre. Ez a **mező szélesség beállításának** központi része az Aspose.GIS‑ben.
+Definiáljon egy **wide** nevű karakterlánc attribútumot, és állítsa be a `Width` tulajdonságát 120 karakterre. Ez a **vektorréteg példa** központi lépése.
+
+A `FeatureAttribute` objektum egy oszlopot ír le az attribútumtáblában; a `Width = 120` beállítása azt mondja a Shapefile írójának, hogy pontosan 120 bájtot foglaljon le ennek a mezőnek minden rekordjához.
 
 ```csharp
 FeatureAttribute attribute = new FeatureAttribute("wide", AttributeDataType.String);
@@ -70,10 +109,12 @@ attribute.Width = 120;
 layer.Attributes.Add(attribute);
 ```
 
-> **Pro tipp:** A `Width` tulajdonság csak karakterlánc attribútumokra vonatkozik. Numerikus típusok esetén a méretet a adattípus határozza meg.
+> **Pro tipp:** A `Width` tulajdonság csak karakterlánc attribútumokra vonatkozik. Numerikus, dátum vagy Boolean mezők figyelmen kívül hagyják a `Width`-et, mivel méretük a adattípus által rögzített.
 
-### Jellemző (Feature) létrehozása és hozzáadása
-Most hozzon létre egy jellemzőt, adjon neki olyan értéket, amely megfelel a 120 karakteres korlátnak, majd adja hozzá a réteghez.
+### Jellemző létrehozása és hozzáadása
+Hozzon létre egy `Feature`-t, rendelje hozzá azt az értéket, amely belefér a 120 karakteres korlátba, és adja hozzá a réteghez. Ha a karakterlánc meghaladja a korlátot, az Aspose.GIS csendben levágja a meghatározott szélességre, megőrizve az adat integritását.
+
+A `Feature` osztály magába foglalja a geometriát és az attribútum értékeket; az attribútum beállítása után a `layer.Add(feature)` hívás írja a rekordot a Shapefile-ba.
 
 ```csharp
 Feature feature = layer.ConstructFeature();
@@ -81,47 +122,55 @@ feature.SetValue("wide", "this string can be up to 120 characters long now.");
 layer.Add(feature);
 ```
 
-Ha hosszabb karakterláncot próbál megadni, az Aspose.GIS levágja azt a definiált szélességre, ezáltal megőrizve az adat integritását.
+Ha megpróbál egy hosszabb karakterláncot hozzárendelni, az Aspose.GIS levágja azt a meghatározott szélességre, megőrizve az adat integritását.
 
-## Gyakori hibák és hibaelhárítás
-- **Elfelejtette beállítani a `Width`‑et az attribútum hozzáadása előtt?** Az alapértelmezett szélesség 255 karakter; későbbi módosítás nem hat a már létező mezőkre. Mindig először definiálja a szélességet.
-- **Nem‑karakterlánc adattípust használ?** A `Width` tulajdonság numerikus vagy dátum mezőknél figyelmen kívül marad; győződjön meg róla, hogy az attribútum `AttributeDataType` értéke `String`.
-- **„field not found” hiba?** Ellenőrizze, hogy a `SetValue`‑ban használt attribútumnév pontosan (kis‑nagybetű érzékenyen) egyezik-e a definiált névvel.
-
-## Összegzés
-Ez a bemutató **megtanította, hogyan állítsa be a mező szélességét** egy attribútumhoz shapefile-ban az Aspose.GIS for .NET használatával, és bemutatta, hogyan **adjunk hozzá attribútumot meghatározott hosszúsággal** hatékonyan. Kísérletezzen különböző szélességekkel, fedezze fel a [dokumentációt](https://reference.aspose.com/gis/net/), és szabadítsa fel a térinformatikai fejlesztés teljes potenciálját az Aspose.GIS‑szel.
+## Gyakori buktatók és hibaelhárítás
+- **Elfelejtette beállítani a `Width`-et az attribútum hozzáadása előtt?** Az alapértelmezett szélesség 255 karakter; későbbi módosítás nem érinti a már létrehozott mezőket. Mindig először definiálja a szélességet.  
+- **Nem karakterlánc adattípust használ?** `Width` figyelmen kívül marad numerikus vagy dátum mezőknél; győződjön meg arról, hogy az attribútum `AttributeDataType` értéke `String`.  
+- **„Field not found” hiba?** Az attribútum nevek kis‑ és nagybetű érzékenyek. Ellenőrizze, hogy a `SetValue`‑ben használt név pontosan megegyezik a sémában definiált névvel.  
+- **Váratlan fájlméret-növekedés?** A nagyobb szélességek lineárisan növelik a `.dbf` méretét. 10 000 rekord esetén a szélesség 50‑ről 120‑ra történő növelése körülbelül 700 KB-ot ad hozzá.
 
 ## Gyakran Ismételt Kérdések
-### Q: Hogyan szerezhetek ideiglenes licencet az Aspose.GIS for .NET‑hez?
-A: Ideiglenes licencet [itt](https://purchase.aspose.com/temporary-license/) szerezhet.
+**Q: Hogyan szerezhetek ideiglenes licencet az Aspose.GIS for .NET-hez?**  
+A: Ideiglenes licencet szerezhet [itt](https://purchase.aspose.com/temporary-license/).
 
-### Q: Hol találok közösségi támogatást az Aspose.GIS for .NET‑hez?
-A: Látogasson el az [Aspose.GIS fórumra](https://forum.aspose.com/c/gis/33) a közösségi támogatásért.
+**Q: Hol találhat közösségi támogatást az Aspose.GIS for .NET-hez?**  
+A: Látogassa meg a [Aspose.GIS fórumot](https://forum.aspose.com/c/gis/33) a felhasználók közötti segítségért és hivatalos válaszokért.
 
-### Q: Van ingyenes próba verzió az Aspose.GIS for .NET‑hez?
-A: Igen, fedezze fel az [ingyenes próbát](https://releases.aspose.com/) a képességek első kézből történő megtapasztalásához.
+**Q: Elérhető ingyenes próba az Aspose.GIS for .NET-hez?**  
+A: Igen, tekintse meg az [ingyenes próbát](https://releases.aspose.com/), hogy költség nélkül megtapasztalja a teljes funkciókészletet.
 
-### Q: Hogyan vásárolhatok licencet az Aspose.GIS for .NET‑hez?
-A: Licencet [itt](https://purchase.aspose.com/buy) vásárolhat.
+**Q: Hogyan vásárolhatok licencet az Aspose.GIS for .NET-hez?**  
+A: Vásárolja meg licencét [itt](https://purchase.aspose.com/buy).
 
-### Q: Hol érhetem el az Aspose.GIS for .NET dokumentációját?
-A: Tekintse meg a [dokumentációt](https://reference.aspose.com/gis/net/) a részletes útmutatóért.
+**Q: Hol érhető el az Aspose.GIS for .NET dokumentációja?**  
+A: Tekintse meg a [dokumentációt](https://reference.aspose.com/gis/net/), amely átfogó API részleteket tartalmaz.
 
-### Q: Módosítható a mező szélesség a réteg létrehozása után?
-A: Nem. A mező szélességet a réteghez való attribútum hozzáadása előtt kell definiálni; módosításhoz a réteget újra kell létrehozni.
+**Q: Megváltoztathatom a mező szélességét a réteg létrehozása után?**  
+A: Nem. A mező szélességét a attribútum hozzáadása előtt kell definiálni; módosításhoz újra kell létrehozni a réteget az új sémával.
 
-### Q: Befolyásolja a nagyobb szélesség a fájlméretet?
-A: A shapefile-ok a karakterlánc mezőket rögzített hosszúsággal tárolják, így a nagyobb szélesség arányosan növeli a .dbf fájl méretét.
+**Q: Befolyásolja a nagyobb szélesség beállítása a fájlméretet?**  
+A: A Shapefile-ok a karakterlánc mezőket rögzített hosszúsággal tárolják, így a szélesség növelése közvetlenül megnöveli a `.dbf` fájl méretét a rekordok számával arányosan.
+
+## Következtetés
+Ez a **vektorréteg példa** bemutatta, hogyan állítsuk be egy attribútum mező szélességét egy Shapefile-ban az Aspose.GIS for .NET használatával, és hatékonyan hogyan adjunk hozzá egy meghatározott hosszúságú attribútumot. Az attribútum szélesség szabályozásával elkerülheti az adatlevágást, optimális fájlméretet tart, és biztosíthatja a zökkenőmentes interoperabilitást más GIS platformokkal. Kísérletezzen különböző szélességekkel, fedezze fel a [dokumentációt](https://reference.aspose.com/gis/net/), és nyissa ki a térinformatikai fejlesztés teljes potenciálját az Aspose.GIS-szel.
 
 ---
 
-**Utoljára frissítve:** 2025-12-31  
-**Tesztelve:** Aspose.GIS 24.11 for .NET  
+**Utoljára frissítve:** 2026-05-16  
+**Tesztelve a következővel:** Aspose.GIS 24.11 for .NET  
 **Szerző:** Aspose  
+
+{{< blocks/products/products-backtop-button >}}
+
+## Kapcsolódó oktatóanyagok
+
+- [Réteg attribútumok lekérése – Réteg attribútum információk megszerzése az Aspose.GIS for .NET használatával](/gis/net/layer-interaction-and-data-access/get-layer-attribute-information/)
+- [Hogyan szerezzük meg az attribútum értékét (alapértelmezett) az Aspose.GIS for .NET használatával](/gis/net/layer-interaction-and-data-access/get-feature-attribute-value-default/)
+- [Vektorréteg létrehozása File GDB-ben – Aspose.GIS .NET oktatóanyag](/gis/net/layer-management/create-file-gdb-with-single-layer/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
