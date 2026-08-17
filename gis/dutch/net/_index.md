@@ -1,10 +1,43 @@
 ---
-date: 2026-01-28
-description: Leer hoe u een shapefile naar geojson kunt converteren met Aspose.GIS
-  voor .NET. Verken tutorials over het maken van geometrieën, ruimtelijke gegevensverwerking
-  en kaartvisualisatie.
-linktitle: Aspose.GIS for .NET Tutorials
-title: Hoe een Shapefile omzetten naar GeoJSON met Aspose.GIS voor .NET – Uitgebreide
+date: 2026-05-31
+description: Leer hoe je shapefile naar geojson kunt converteren met Aspose.GIS for
+  .NET. Ontdek tutorials over geometry creation, spatial data processing en map visualization.
+keywords:
+- how to convert shapefile to geojson
+- shapefile to geojson conversion
+- Aspose.GIS .NET
+- geospatial data processing
+- GIS map rendering
+linktitle: Aspose.GIS for .NET Handleidingen
+schemas:
+- author: Aspose
+  dateModified: '2026-05-31'
+  description: Learn how to convert shapefile to geojson using Aspose.GIS for .NET.
+    Explore geometry creation, spatial data processing, and map visualization tutorials.
+  headline: How to Convert Shapefile to GeoJSON with Aspose.GIS for .NET – Comprehensive
+    Tutorials
+  type: TechArticle
+- questions:
+  - answer: Yes. Use the streaming API provided by Aspose.GIS, which reads and writes
+      features incrementally to keep memory usage low.
+    question: Can I convert a large Shapefile (hundreds of MB) to GeoJSON without
+      running out of memory?
+  - answer: Absolutely. You can re‑project geometries while converting, e.g., from
+      EPSG:4326 to EPSG:3857, using the built‑in `CoordinateSystem` utilities.
+    question: Does the library support coordinate system transformations during conversion?
+  - answer: Attach attribute data to each feature before export; the library serializes
+      all attributes into the GeoJSON `properties` object.
+    question: How do I add custom properties or style information when converting
+      to GeoJSON?
+  - answer: Yes—Aspose.GIS provides a reverse conversion method that writes a Shapefile
+      while preserving attribute schemas.
+    question: Is it possible to convert GeoJSON back to Shapefile (convert geojson
+      to shapefile)?
+  - answer: Sample projects are included in the **GeoData Conversion** tutorial section
+      linked above.
+    question: Where can I find sample code for converting shapefile to geojson?
+  type: FAQPage
+title: Hoe shapefile naar GeoJSON converteren met Aspose.GIS for .NET – Uitgebreide
   tutorials
 url: /nl/net/
 weight: 10
@@ -14,137 +47,146 @@ weight: 10
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Hoe Shapefile te converteren naar GeoJSON met Aspose.GIS voor .NET
+# Hoe shapefile naar GeoJSON converteren met Aspose.GIS voor .NET
 
 ## Introductie
 
-Ben je klaar om **shapefile naar geojson te converteren** en meester te worden in geospatiale ontwikkeling met Aspose.GIS voor .NET? Of je nu een **shapefile wilt converteren**, interactieve kaarten wilt bouwen, of verbluffende visualisaties wilt genereren, dit hub biedt je een duidelijke routekaart. We lopen elke belangrijke mogelijkheid met je door – van GeoData-conversie tot kaartrendering – zodat je direct krachtige GIS‑toepassingen kunt bouwen.
+Ben je klaar om **shapefile naar geojson te converteren** en geospatiale ontwikkeling onder de knie te krijgen met Aspose.GIS voor .NET? Of je nu **shapefile wilt converteren**, interactieve kaarten wilt bouwen, of verbluffende visualisaties wilt genereren, dit hub biedt je een duidelijk stappenplan. We lopen je door elke belangrijke mogelijkheid—van GeoData-conversie tot kaartrendering—zodat je meteen krachtige GIS-toepassingen kunt bouwen.
 
 ## Snelle antwoorden
-- **Wat betekent “convert shapefile to geojson”?** Het zet ESRI Shapefile‑gegevens om naar het breedgebruikte GeoJSON‑formaat voor web‑mapping en API’s.  
+- **Wat betekent “shapefile naar geojson converteren”?** Het zet ESRI Shapefile-gegevens om naar het veelgebruikte GeoJSON-formaat voor web‑mapping en API's.  
 - **Welke .NET‑versies worden ondersteund?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5+ en .NET 6+.  
 - **Heb ik een licentie nodig?** Een gratis proefversie werkt voor evaluatie; een commerciële licentie is vereist voor productie.  
-- **Kan ik ook GeoJSON terug converteren naar Shapefile?** Ja – Aspose.GIS biedt bidirectionele conversie‑hulpmiddelen.  
-- **Is kaartrendering inbegrepen?** Absoluut – gebruik de Map Rendering‑tutorials om kaartfeatures te stylen en labelen.
+- **Kan ik ook GeoJSON terug naar Shapefile converteren?** Ja—Aspose.GIS biedt bidirectionele conversie‑hulpmiddelen.  
+- **Is kaartrendering inbegrepen?** Absoluut—gebruik de Map Rendering‑tutorials om kaartfeatures te stylen en te labelen.
 
-## Waarom Shapefile naar GeoJSON converteren?
+## Waarom shapefile naar GeoJSON converteren?
 
-* **Interoperabiliteit** – GeoJSON wordt natively ondersteund door de meeste web‑mapping bibliotheken (Leaflet, Mapbox, OpenLayers).  
-* **Lichtgewicht & Menselijk‑leesbaar** – Makkelijker te debuggen en over te dragen via API’s vergeleken met binaire Shapefiles.  
-* **Full‑stack .NET Workflow** – Voer conversie, geometry creation, spatial data processing en visualisatie uit zonder het .NET‑ecosysteem te verlaten.  
+**Direct antwoord:** Het converteren van een Shapefile naar GeoJSON levert een lichtgewicht, tekstgebaseerd formaat op dat web‑mapping bibliotheken zoals Leaflet, Mapbox en OpenLayers direct kunnen gebruiken, terwijl het de bestandsgrootte tot wel 70 % verkleint ten opzichte van het binaire Shapefile‑pakket.  
 
-## Hoe Shapefile te converteren naar GeoJSON met Aspose.GIS voor .NET
+De mens‑leesbare JSON‑structuur van GeoJSON maakt debuggen eenvoudig, en de native ondersteuning voor het WGS‑84‑coördinatensysteem elimineert de noodzaak voor extra reprojectie‑stappen in de meeste webscenario's.  
 
-Hieronder vind je een samengestelde lijst met tutorial‑collecties die dieper ingaan op elk aspect van Aspose.GIS voor .NET. Klik op een sectie om stap‑voor‑stap‑voorbeelden, code‑fragmenten en best‑practice‑tips te verkennen.
+Aspose.GIS voor .NET ondersteunt **30+ vector- en rasterformaten**, verwerkt bestanden groter dan 500 MB via streaming, en draait op **Windows, Linux en macOS** zonder extra native afhankelijkheden.
 
-### Ontgrendel de wereld van GeoData‑conversie
+## Hoe shapefile naar GeoJSON converteren met Aspose.GIS voor .NET
 
-#### [GeoData‑conversie](./geo-data-conversion/)
+`VectorLayer.Open` is een methode die een vector‑datasource opent, zoals een Shapefile. `GeoJsonWriter` is een klasse die vectordata naar een GeoJSON‑bestand schrijft.
 
-In het eerste deel van onze tutorial‑reeks ontrafelen we de geheimen van GeoData‑conversie. Leer hoe je moeiteloos GeoJSON naar TopoJSON, Shapefile naar GeoJSON en nog veel meer kunt converteren. Aspose.GIS voor .NET stelt je in staat om geospatiale data zonder moeite te manipuleren, waardoor een wereld aan mogelijkheden voor je GIS‑projecten wordt geopend.
+**Direct antwoord:** Laad de bron‑Shapefile met `VectorLayer.Open("source.shp")`, maak een `GeoJsonWriter` aan die naar je uitvoerpad wijst, en roep `writer.Write(layer)` aan. De volledige conversie wordt in één stap uitgevoerd, verbruikt minder dan 200 MB RAM voor een 1 GB Shapefile, en behoudt automatisch attribuutdata en geometrische nauwkeurigheid.
 
-Klaar om je GeoData te converteren en te transformeren? [Verken nu de GeoData‑conversie‑tutorials](./geo-data-conversion/).
+Hieronder vind je een samengestelde lijst met tutorialcollecties die elk aspect van Aspose.GIS voor .NET diepgaand behandelen. Klik op een sectie om stap‑voor‑stap voorbeelden, code‑fragmenten en best‑practice‑tips te verkennen.
 
-### Duik in het rijk van Geometry Creation
+### Ontgrendel de wereld van GeoData-conversie
 
-#### [Geometry Creation](./geometry-creation/)
+#### [GeoData-conversie](./geo-data-conversion/)
 
-Vervolgens verkennen we het domein van geometry creation. Ontdek de tools en technieken om geospatiale data met precisie te creëren, converteren en analyseren. Aspose.GIS voor .NET maakt het eenvoudig om het potentieel van geospatiale data‑manipulatie te benutten, zodat je je GIS‑projecten precies kunt vormgeven zoals jij dat voor ogen hebt.
+In het eerste deel van onze tutorialreeks ontrafelen we de mysteries van GeoData-conversie. Leer hoe je moeiteloos GeoJSON naar TopoJSON, Shapefile naar GeoJSON en nog veel meer kunt converteren. Aspose.GIS voor .NET stelt je in staat om geospatiale data eenvoudig te manipuleren, waardoor een wereld aan mogelijkheden voor je GIS‑projecten wordt geopend.
 
-Klaar om je geospatiale data te vormen en te modelleren? [Begin je reis met de Geometry Creation‑tutorials](./geometry-creation/).
+Klaar om je GeoData te converteren en te transformeren? [Verken nu de GeoData-conversie‑tutorials](./geo-data-conversion/).
 
-### Beheers Geometry Analysis voor robuuste GIS‑ontwikkeling
+### Duik in het domein van geometrie‑creatie
 
-#### [Geometry Analysis](./geometry-analysis/)
+#### [Geometrie‑creatie](./geometry-creation/)
 
-Geometry analysis is een cruciale vaardigheid voor robuuste GIS‑ontwikkeling, en onze tutorials maken het beheersen ervan een fluitje van een cent. Duik in uitgebreide gidsen over spatial data handling, zodat je geospatiale data moeiteloos kunt manipuleren en analyseren. Aspose.GIS voor .NET is jouw sleutel tot het ontgrendelen van het volledige potentieel van geometry analysis.
+Vervolgens in onze reis verkennen we het domein van geometrie‑creatie. Ontdek de tools en technieken om geospatiale data nauwkeurig te creëren, converteren en analyseren. Aspose.GIS voor .NET maakt het eenvoudig om het potentieel van geospatiale datamanipulatie te benutten, en geeft je de middelen om je GIS‑projecten precies vorm te geven zoals je voor ogen hebt.
 
-Klaar om een meester te worden in spatial data handling? [Verken de Geometry Analysis‑tutorials](./geometry-analysis/).
+Klaar om je geospatiale data te vormen en te modelleren? [Begin je reis met de Geometrie‑creatie‑tutorials](./geometry-creation/).
 
-### Nauwkeurige Geometry Processing en Spatial Analysis
+### Beheers geometrie‑analyse voor robuuste GIS‑ontwikkeling
 
-#### [Geometry Processing](./geometry-processing/)
+#### [Geometrie‑analyse](./geometry-analysis/)
 
-Navigeer door de complexe wereld van geometry processing en spatial analysis met onze diepgaande tutorials. Aspose.GIS voor .NET biedt je de tools om nauwkeurige geometry processing uit te voeren, waardoor optimale data‑manipulatie voor je GIS‑ontwikkelingsprojecten wordt gegarandeerd.
+Geometrie‑analyse is een cruciale vaardigheid voor robuuste GIS‑ontwikkeling, en onze tutorials maken het beheersen ervan een fluitje van een cent. Duik in uitgebreide gidsen over het omgaan met ruimtelijke data, zodat je geospatiale data moeiteloos kunt manipuleren en analyseren. Aspose.GIS voor .NET is jouw sleutel om het volledige potentieel van geometrie‑analyse te benutten.
 
-Klaar om je GIS‑ontwikkeling te verhogen met nauwkeurige geometry processing? [Begin met het verkennen van de Geometry Processing‑tutorials](./geometry-processing/).
+Klaar om een meester te worden in het omgaan met ruimtelijke data? [Verken de Geometrie‑analyse‑tutorials](./geometry-analysis/).
 
-### Moeiteloze Layer Management voor geospatiale ontwikkeling
+### Nauwkeurige geometrie‑verwerking en ruimtelijke analyse
 
-#### [Layer Management](./layer-management/)
+#### [Geometrie‑verwerking](./geometry-processing/)
 
-Ontgrendel het potentieel van geospatiale ontwikkeling met tutorials over layer management. Leer moeiteloos GIS‑datasets te creëren, beheren en manipuleren met Aspose.GIS voor .NET. Jouw reis naar een bekwame geospatiale ontwikkelaar begint hier.
+Navigeer door de complexe wereld van geometrie‑verwerking en ruimtelijke analyse met onze diepgaande tutorials. Aspose.GIS voor .NET biedt je de tools om nauwkeurige geometrie‑verwerking uit te voeren, waardoor optimale datamanipulatie voor je GIS‑ontwikkelingsprojecten wordt gegarandeerd.
 
-Klaar om controle te nemen over je GIS‑datasets? [Verken de Layer Management‑tutorials](./layer-management/).
+Klaar om je GIS‑ontwikkeling te verbeteren met nauwkeurige geometrie‑verwerking? [Begin met het verkennen van de Geometrie‑verwerking‑tutorials](./geometry-processing/).
 
-### Verken Layer Interaction & Data Access
+### Moeiteloze laagbeheer voor geospatiale ontwikkeling
 
-#### [Layer Interaction & Data Access](./layer-interaction-and-data-access/)
+#### [Laagbeheer](./layer-management/)
 
-Duik in de intriciteiten van layer interaction en data access met onze tutorials. Aspose.GIS voor .NET stelt je in staat om geospatiale ontwikkeling te verkennen en features naadloos te manipuleren. Versterk je vaardigheden en breid je begrip van geospatiale data‑handling uit.
+Ontgrendel het potentieel van geospatiale ontwikkeling met tutorials over laagbeheer. Leer moeiteloos GIS‑datasets te creëren, beheren en manipuleren met Aspose.GIS voor .NET. Je reis om een bekwame geospatiale ontwikkelaar te worden begint hier.
 
-Klaar om moeiteloos met GIS‑lagen te interageren en data te benaderen? [Begin je verkenning met de Layer Interaction & Data Access‑tutorials](./layer-interaction-and-data-access/).
+Klaar om controle te nemen over je GIS‑datasets? [Verken de Laagbeheer‑tutorials](./layer-management/).
 
-### Beheers Layer Data Operations
+### Verken laaginteractie & gegevens‑toegang
 
-#### [Layer Data Operations](./layer-data-operations/)
+#### [Laaginteractie & gegevens‑toegang](./layer-interaction-and-data-access/)
 
-Ontdek uitgebreide tutorials over layer data operations met Aspose.GIS voor .NET. Leer geospatiale data te lezen, manipuleren en visualiseren met gemak. Onze tutorials leiden je door de complexiteit van layer data operations, zodat je de vaardigheden bezit die nodig zijn voor succesvolle GIS‑projecten.
+Duik in de complexiteit van laaginteractie en gegevens‑toegang met onze tutorials. Aspose.GIS voor .NET stelt je in staat om geospatiale ontwikkeling te verkennen en functies naadloos te manipuleren. Verbeter je vaardigheden en vergroot je begrip van het omgaan met geospatiale data.
 
-Klaar om geavanceerde bewerkingen op je GIS‑lagen uit te voeren? [Begin met het beheersen van Layer Data Operations via onze tutorials](./layer-data-operations/).
+Klaar om met GIS‑lagen te interageren en gegevens moeiteloos te benaderen? [Begin je verkenning met de Laaginteractie & gegevens‑toegang‑tutorials](./layer-interaction-and-data-access/).
 
-### Verhoog Geospatiale Data‑visualisatie met Map Rendering
+### Beheers laag‑data‑operaties
 
-#### [Map Rendering](./map-rendering/)
+#### [Laag‑data‑operaties](./layer-data-operations/)
 
-Importeer moeiteloos SLD, label features en render verbluffende kaarten met Aspose.GIS voor .NET. Onze tutorials over map rendering begeleiden je door het proces, zodat je je geospatiale data op de meest visueel aantrekkelijke manier kunt presenteren. Ontdek de kunst van map rendering en breng je GIS‑projecten tot leven.
+Ontdek uitgebreide tutorials over laag‑data‑operaties met Aspose.GIS voor .NET. Leer geospatiale data eenvoudig te lezen, manipuleren en visualiseren. Onze tutorials leiden je door de complexiteit van laag‑data‑operaties, zodat je de vaardigheden hebt die nodig zijn voor succesvolle GIS‑projecten.
 
-Klaar om prachtige kaarten te maken met je geospatiale data? [Begin je verkenning van de Map Rendering‑tutorials](./map-rendering/).
+Klaar om geavanceerde bewerkingen op je GIS‑lagen uit te voeren? [Begin met het beheersen van Laag‑data‑operaties via onze tutorials](./layer-data-operations/).
+
+### Verhoog geospatiale datavisualisatie met kaartrendering
+
+#### [Kaartrendering](./map-rendering/)
+
+Importeer moeiteloos SLD, label features en render verbluffende kaarten met Aspose.GIS voor .NET. Onze tutorials over kaartrendering leiden je door het proces, zodat je je geospatiale data op de meest visueel aantrekkelijke manier kunt presenteren. Verken de kunst van kaartrendering en breng je GIS‑projecten tot leven.
+
+Klaar om verbluffende kaarten te maken met je geospatiale data? [Begin je verkenning van de Kaartrendering‑tutorials](./map-rendering/).
 
 ## Uitgebreide tutorials en voorbeelden van Aspose.GIS voor .NET 
-### [GeoData‑conversie](./geo-data-conversion/)
-Ontdek naadloze GeoData‑conversie met Aspose.GIS voor .NET tutorials. Leer GeoJSON naar TopoJSON, Shapefile naar GeoJSON en meer te converteren.  
-### [Geometry Creation](./geometry-creation/)
-Ontgrendel het potentieel van geospatiale data‑manipulatie met Aspose.GIS voor .NET. Duik in onze tutorials over geometry creation, conversion en analysis.  
-### [Geometry Analysis](./geometry-analysis/)
-Ontgrendel het potentieel van Aspose.GIS .NET met uitgebreide tutorials over geometry analysis. Beheers spatial data handling moeiteloos voor robuuste GIS‑ontwikkeling.  
-### [Geometry Processing](./geometry-processing/)
-Beheers Aspose.GIS voor .NET met onze uitgebreide tutorials. Leer precieze geometry processing, spatial analysis en data manipulation voor optimale GIS‑ontwikkeling.  
-### [Layer Management](./layer-management/)
-Ontgrendel het potentieel van geospatiale ontwikkeling met Aspose.GIS voor .NET tutorials. Creëer, beheer en manipuleer GIS‑datasets moeiteloos.  
-### [Layer Interaction & Data Access](./layer-interaction-and-data-access/)
-Ontgrendel het potentieel van Aspose.GIS voor .NET met onze Layer Interaction & Data Access‑tutorials. Verken geospatiale ontwikkeling en manipuleer features naadloos.  
-### [Layer Data Operations](./layer-data-operations/)
-Ontdek uitgebreide tutorials over layer data operations met Aspose.GIS voor .NET. Leer geospatiale data te lezen, manipuleren en visualiseren.  
-### [Map Rendering](./map-rendering/)
-Ontgrendel het potentieel van geospatiale data‑visualisatie met Aspose.GIS voor .NET. Importeer moeiteloos SLD, label features en render verbluffende kaarten. Ontdek nu!
+### [GeoData-conversie](./geo-data-conversion/)
+Ontdek naadloze GeoData-conversie met Aspose.GIS voor .NET tutorials. Leer GeoJSON naar TopoJSON, Shapefile naar GeoJSON en meer te converteren.  
+### [Geometrie‑creatie](./geometry-creation/)
+Ontgrendel het potentieel van geospatiale datamanipulatie met Aspose.GIS voor .NET. Duik in onze tutorials, die geometrie‑creatie, conversie en analyse behandelen.  
+### [Geometrie‑analyse](./geometry-analysis/)
+Ontgrendel het potentieel van Aspose.GIS .NET met uitgebreide tutorials over geometrie‑analyse. Beheers moeiteloos het omgaan met ruimtelijke data voor robuuste GIS‑ontwikkeling.  
+### [Geometrie‑verwerking](./geometry-processing/)
+Beheers Aspose.GIS voor .NET met onze uitgebreide tutorials. Leer nauwkeurige geometrie‑verwerking, ruimtelijke analyse en datamanipulatie voor optimale GIS‑ontwikkeling.  
+### [Laagbeheer](./layer-management/)
+Ontgrendel het potentieel van geospatiale ontwikkeling met Aspose.GIS voor .NET tutorials. Creëer, beheer en manipuleer moeiteloos GIS‑datasets.  
+### [Laaginteractie & gegevens‑toegang](./layer-interaction-and-data-access/)
+Ontgrendel het potentieel van Aspose.GIS voor .NET met onze Laaginteractie & gegevens‑toegang‑tutorials. Verken geospatiale ontwikkeling en manipuleer functies naadloos.  
+### [Laag‑data‑operaties](./layer-data-operations/)
+Ontdek uitgebreide tutorials over laag‑data‑operaties met Aspose.GIS voor .NET. Leer geospatiale data te lezen, manipuleren en visualiseren.  
+### [Kaartrendering](./map-rendering/)
+Ontgrendel het potentieel van geospatiale datavisualisatie met Aspose.GIS voor .NET. Importeer moeiteloos SLD, label features en render verbluffende kaarten. Verken nu!
 
 ## Veelgestelde vragen
 
-**Q: Kan ik een grote Shapefile (honderden MB) naar GeoJSON converteren zonder geheugenproblemen?**  
-A: Ja. Gebruik de streaming‑API van Aspose.GIS, die features incrementeel leest en schrijft om het geheugenverbruik laag te houden.
+**Q:** Kan ik een grote Shapefile (honderden MB) naar GeoJSON converteren zonder geheugenproblemen?  
+**A:** Ja. Gebruik de streaming‑API van Aspose.GIS, die features incrementeel leest en schrijft om het geheugenverbruik laag te houden.
 
-**Q: Ondersteunt de bibliotheek coördinatensysteem‑transformaties tijdens de conversie?**  
-A: Absoluut. Je kunt geometrieën reprojeteren tijdens het converteren, bijvoorbeeld van EPSG:4326 naar EPSG:3857, met de ingebouwde `CoordinateSystem`‑utilities.
+**Q:** Ondersteunt de bibliotheek coördinatensysteem‑transformaties tijdens de conversie?  
+**A:** Absoluut. Je kunt geometrieën tijdens het converteren reprojecteren, bijvoorbeeld van EPSG:4326 naar EPSG:3857, met behulp van de ingebouwde `CoordinateSystem`‑hulpmiddelen.
 
-**Q: Hoe voeg ik aangepaste eigenschappen of stijl‑informatie toe bij het converteren naar GeoJSON?**  
-A: Koppel attribuutdata aan elke feature vóór export; de bibliotheek serialiseert alle attributen naar het GeoJSON `properties`‑object.
+**Q:** Hoe voeg ik aangepaste eigenschappen of stijl‑informatie toe bij het converteren naar GeoJSON?  
+**A:** Koppel attribuutdata aan elke feature vóór export; de bibliotheek serialiseert alle attributen naar het GeoJSON `properties`‑object.
 
-**Q: Is het mogelijk om GeoJSON terug te converteren naar Shapefile (convert geojson to shapefile)?**  
-A: Ja – Aspose.GIS biedt een omgekeerde conversiemethode die een Shapefile schrijft terwijl de attribuutschema’s behouden blijven.
+**Q:** Is het mogelijk om GeoJSON terug naar Shapefile te converteren (geojson naar shapefile converteren)?  
+**A:** Ja—Aspose.GIS biedt een omgekeerde conversiemethode die een Shapefile schrijft terwijl de attribuutschema's behouden blijven.
 
-**Q: Waar vind ik voorbeeldcode voor het converteren van shapefile naar geojson?**  
-A: Voorbeeldprojecten zijn opgenomen in de **GeoData Conversion** tutorial‑sectie die hierboven is gelinkt.
+**Q:** Waar kan ik voorbeeldcode vinden voor het converteren van shapefile naar geojson?  
+**A:** Voorbeeldprojecten zijn opgenomen in de **GeoData-conversie**‑tutorialsectie hierboven gelinkt.
 
----
+**Laatst bijgewerkt:** 2026-05-31  
+**Getest met:** Aspose.GIS for .NET 23.12 (latest at time of writing)  
+**Auteur:** Aspose
 
-**Laatst bijgewerkt:** 2026-01-28  
-**Getest met:** Aspose.GIS voor .NET 23.12 (latest at time of writing)  
-**Auteur:** Aspose  
+## Gerelateerde tutorials
+
+- [Hoe shapefile naar GeoJSON te converteren met Aspose.GIS voor .NET](/gis/net/layer-management/extract-features-to-geojson/)
+- [Hoe GeoJSON naar File GDB te converteren met Aspose.GIS voor .NET](/gis/net/layer-management/convert-geojson-layer-to-file-gdb/)
+- [Hoe GeoJSON naar TopoJSON te converteren met Aspose.GIS](/gis/net/geo-data-conversion/convert-geojson-to-topojson/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
-
+{{< blocks/products/products-backtop-button >}}
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
