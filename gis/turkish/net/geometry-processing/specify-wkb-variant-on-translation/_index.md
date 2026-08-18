@@ -1,10 +1,56 @@
 ---
-date: 2025-12-21
-description: Aspose.GIS for .NET'in ExtendedPostGis varyantını kullanarak linestring
-  geometrisi oluşturmayı ve geometriyi WKB'ye dönüştürmeyi öğrenin.
-linktitle: Specify WKB Variant on Translation
+date: 2026-06-10
+description: Aspose.GIS for .NET'i ExtendedPostGis varyantı ile kullanarak linestring
+  geometrisini .NET'te oluşturmayı ve geometrileri WKB'ye dönüştürmeyi öğrenin.
+keywords:
+- create linestring geometry .net
+- WKB variant Aspose GIS
+- EWKB conversion .NET
+linktitle: Çeviride WKB Varyantını Belirtin
+schemas:
+- author: Aspose
+  dateModified: '2026-06-10'
+  description: Learn how to create linestring geometry .NET and convert geometry to
+    WKB using Aspose.GIS for .NET with the ExtendedPostGis variant.
+  headline: Create Linestring Geometry & WKB Variant in Aspose.GIS for .NET
+  type: TechArticle
+- description: Learn how to create linestring geometry .NET and convert geometry to
+    WKB using Aspose.GIS for .NET with the ExtendedPostGis variant.
+  name: Create Linestring Geometry & WKB Variant in Aspose.GIS for .NET
+  steps:
+  - name: Creating a Geometry Object
+    text: The `Geometry` class is Aspose.GIS's base type that represents any spatial
+      object in memory. Linestring represents a series of connected points forming
+      a linear geometry. In this step we instantiate a `Linestring` with a collection
+      of coordinate pairs that model a simple road segment.
+  - name: Generating WKB Representation
+    text: '`WkbVariant.ExtendedPostGis` is the enum value that tells Aspose.GIS to
+      include SRID in the output binary. Here we call the `AsBinary` method, passing
+      the EWKB variant, which returns a `byte[]` containing the full binary representation.'
+  - name: Writing to File
+    text: '`File.WriteAllBytes` writes the binary array to disk. The resulting file
+      (`EWkbFile.ewkb`) can be imported directly into a PostGIS table using the `ST_GeomFromEWKB`
+      function.'
+  type: HowTo
+- questions:
+  - answer: Yes, the `ExtendedPostGis` variant produces EWKB that includes SRID, which
+      PostGIS reads directly via `ST_GeomFromEWKB`.
+    question: Can I use the EWKB file with PostGIS?
+  - answer: Absolutely. Use `Geometry.FromBinary(byteArray)` to reconstruct the geometry
+      from its binary form.
+    question: Is it possible to read a WKB file back into a geometry object?
+  - answer: Yes, Aspose.GIS handles points, linestrings, polygons, multipolygons,
+      and many more spatial types.
+    question: Does the library support other geometry types like polygons?
+  - answer: Set the `SRID` property on the geometry object before calling `AsBinary`,
+      e.g., `linestring.SRID = 4326;`.
+    question: How do I specify a different SRID when creating the geometry?
+  - answer: Yes, the same API works across .NET Framework, .NET Core, and .NET 5/6
+      without modification.
+    question: Will this code work on .NET Core?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: Aspose.GIS .NET'te Linestring Geometrisi ve WKB Varyantı Oluşturma
+title: Aspose.GIS for .NET'te Linestring Geometrisi ve WKB Varyantı Oluşturma
 url: /tr/net/geometry-processing/specify-wkb-variant-on-translation/
 weight: 18
 ---
@@ -13,36 +59,37 @@ weight: 18
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.GIS for .NET'te Çevirme Sırasında WKB Varyantını Belirtme
+# Aspose.GIS for .NET ile Satır Geometrisi ve WKB Varyantı Oluşturma
 
 ## Giriş
-Coğrafi Bilgi Sistemleri (GIS) geliştirme alanında, Aspose.GIS for .NET güçlü bir araç seti olarak öne çıkmaktadır. **linestring geometrisi oluşturmanız** ve ardından **geometriyi WKB'ye dönüştürmeniz** gerekiyorsa, doğru yerdesiniz. Çok yönlülüğü ve verimliliği, .NET uygulamalarınıza GIS işlevselliğini sorunsuz bir şekilde entegre etmeyi hedefleyen geliştiriciler için tercih edilen bir seçenek haline getirir. Bu makale, Aspose.GIS for .NET'i kullanarak çevirme süreçlerinde WKB (Well‑Known Binary) varyantlarını belirtmeye odaklanan kapsamlı bir rehber sunar.
+Eğer **linestring geometry .NET** oluşturmanız ve ardından bu geometrinin ikili bir forma dönüştürülmesi gerekiyorsa, Aspose.GIS for .NET .NET Framework, .NET Core ve .NET 5/6+ üzerinde çalışan temiz, yüksek‑performanslı bir API sunar. Bu öğreticide, ad alanlarını içe aktarmaktan EWKB dosyası yazmaya kadar her adımı adım adım göstereceğiz; böylece SRID bilgisini koruyabilir ve GIS verilerini PostgreSQL/PostGIS ya da herhangi bir ikili‑temelli iş akışına sorunsuz bir şekilde entegre edebilirsiniz.
 
 ## Hızlı Yanıtlar
 - **WKB ne anlama gelir?** Well‑Known Binary, geometrik nesnelerin kompakt ikili temsili.  
-- **Hangi WKB varyantı SRID bilgisini saklamamı sağlar?** `ExtendedPostGis` (EWKB) varyantı.  
-- **Kodu çalıştırmak için lisansa ihtiyacım var mı?** Üretim kullanımı için geçici veya tam bir lisans gereklidir.  
-- **Hangi .NET sürümleri destekleniyor?** .NET Framework 4.5+, .NET Core 3.1+, ve .NET 5/6+.  
-- **Uygulama ne kadar sürer?** Temel bir örnek için genellikle 10 dakikadan az sürer.
+- **Hangi WKB varyantı SRID'yi depolar?** `ExtendedPostGis` (EWKB) varyantı SRID'yi doğrudan ikili içinde gömer.  
+- **Lisans gerekli mi?** Üretim dağıtımları için geçici veya tam bir Aspose.GIS lisansı gereklidir.  
+- **Hangi .NET sürümleri destekleniyor?** .NET Framework 4.5+, .NET Core 3.1+ ve .NET 5/6+.  
+- **Uygulama ne kadar sürer?** Temel bir örnek için genellikle 10 dakikadan az.
 
 ## Linestring Geometrisi Nedir?
-Linestring, düz çizgi segmentleriyle birbirine bağlanmış bir dizi noktadan oluşan basit bir geometrik şekildir. GIS verilerinde yollar, nehirler veya herhangi bir doğrusal özelliği temsil etmek için yaygın olarak kullanılır.
+Linestring geometrisi, sıralı bir nokta listesiyle oluşturulan ve düz çizgi segmentleriyle birbirine bağlanan basit bir şekildir. Uzay veritabanlarında yollar, boru hatları veya nehir yolları gibi doğrusal özelliklerin temsilinde tercih edilen bir formattır.
 
-## Neden WKB Varyantı Belirtilmeli?
-Doğru WKB varyantını seçmek, Geometry verisini saklarken veya değiş tokuş ederken Spatial Reference System Identifier (SRID) gibi önemli meta verilerin korunmasını sağlar. `ExtendedPostGis` varyantı (EWKB), PostgreSQL/PostGIS veya SRID bilgisinin ikili içinde gömülmesini bekleyen diğer sistemlerle çalışırken özellikle faydalıdır.
+## Neden WKB Varyantı Belirtilir?
+Doğru WKB varyantını kullanmak, kritik meta verilerin—özellikle Uzamsal Referans Sistemi Tanımlayıcısı (SRID)—geometriyle birlikte taşınmasını garanti eder. `ExtendedPostGis` (EWKB) varyantı SRID'yi ikili yük içinde saklar ve PostGIS, Oracle Spatial veya SRID‑bilgili ikili bekleyen herhangi bir sistemle sorunsuz bir geri‑dönüş sağlar.
 
-## Önkoşullar
-Aspose.GIS for .NET'te WKB varyantlarını belirtmeye başlamadan önce aşağıdaki önkoşulların karşılandığından emin olun:
+## Ön Koşullar
+Başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
 
 ### Aspose.GIS for .NET Kurulumu
-1. Aspose.GIS'i indirin: [download link](https://releases.aspose.com/gis/net/) adresini ziyaret ederek Aspose.GIS for .NET paketini edinin.  
-2. Paketi Kurun: Dokümantasyonda verilen kurulum talimatlarını izleyerek Aspose.GIS'i .NET ortamınıza sorunsuz bir şekilde entegre edin.
+1. Aspose.GIS'i indirin: En son paketi edinmek için [indirme bağlantısını](https://releases.aspose.com/gis/net/) ziyaret edin.  
+2. NuGet paketini projenize ekleyin (ör. `Install-Package Aspose.GIS`).  
 
 ### C# Programlamaya Hakimiyet
-1. Temel C# Bilgisi: C# programlama dili sözdizimi ve kavramları hakkında temel bir anlayışa sahip olduğunuzdan emin olun.
+- C# sözdizimi ve proje yapısına temel bir anlayış.  
+- .NET konsol veya sınıf‑kütüphane projesi çalıştırabilme yeteneği.
 
-## Ad Alanlarını İçe Aktarma
-Aspose.GIS for .NET ile yolculuğunuza başlamak ve işlevlerini etkili bir şekilde kullanmak için gerekli ad alanlarını projenize dahil etmeniz gerekir. İşte adım adım bir rehber:
+## Ad Alanlarını (Namespaces) İçe Aktarma
+`Aspose.GIS` ad alanı, tüm geometry‑ile ilgili sınıflara erişim sağlar.  
 
 ```csharp
 using Aspose.Gis.Geometries;
@@ -54,61 +101,74 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-Bu ad alanları, coğrafi verilerle sorunsuz bir şekilde çalışmanızı sağlayarak Aspose.GIS işlevlerine erişim sunar.
+Bu ad alanları, geometry oluşturma, dönüşüm ve ikili serileştirme dahil olmak üzere temel GIS işlevselliğini sağlar.
 
 ## Linestring Geometrisi Nasıl Oluşturulur?
-Sağlanan örneği, çevirme sırasında WKB varyantlarını belirtme sürecini ayrıntılı bir şekilde anlamak için birden fazla adıma ayıralım.
+Bir linestring oluşturmak için, koordinat çiftlerinden oluşan sıralı bir listeyle bir `Linestring` nesnesi örnekleyin, gerekirse SRID'sini ayarlayın ve ardından istediğiniz WKB varyantına serileştirin. İşlem üç adımdan oluşur: geometry oluşturma, SRID'yi korumak için `ExtendedPostGis` varyantını seçme ve ortaya çıkan bayt dizisini bir dosyaya yazma.
 
 ### Adım 1: Geometry Nesnesi Oluşturma
+`Geometry` sınıfı, Aspose.GIS'in bellek içindeki herhangi bir uzamsal nesneyi temsil eden temel tipidir.  
+Linestring, doğrusal bir geometry oluşturan bağlanmış noktalar serisini temsil eder.  
+
 ```csharp
 IGeometry geometry = Geometry.FromText("LINESTRING (1.2 3.4, 5.6 7.8)");
 ```
-Bu adımda, belirtilen koordinatlarla doğrusal bir özelliği temsil eden **linestring geometrisi** oluşturuyoruz.
+Bu adımda, basit bir yol segmentini modelleyen koordinat çiftlerinden oluşan bir koleksiyonla bir `Linestring` örnekliyoruz.
 
 ### Adım 2: WKB Temsili Oluşturma
+`WkbVariant.ExtendedPostGis` enum değeri, Aspose.GIS'e çıktıda SRID'yi dahil etmesini söyler.  
+
 ```csharp
 byte[] wkb = geometry.AsBinary(WkbVariant.ExtendedPostGis);
 ```
-Burada, SRID bilgisini gömen `ExtendedPostGis` varyantını kullanarak **geometriyi WKB'ye** dönüştürüyoruz.
+Burada `AsBinary` metodunu çağırarak EWKB varyantını geçiriyoruz; bu, tam ikili temsili içeren bir `byte[]` döndürür.
 
 ### Adım 3: Dosyaya Yazma
+`File.WriteAllBytes` ikili diziyi diske yazar.  
+
 ```csharp
 File.WriteAllBytes(Path.Combine("Your Document Directory", "EWkbFile.ewkb"), wkb);
 ```
-Son olarak, oluşturulan WKB ikili verisini seçtiğiniz dizinde `EWkbFile.ewkb` adlı bir dosyaya yazıyoruz.
+Ortaya çıkan dosya (`EWkbFile.ewkb`), `ST_GeomFromEWKB` fonksiyonu kullanılarak doğrudan bir PostGIS tablosuna içe aktarılabilir.
 
 ## Yaygın Sorunlar ve Çözümler
-| Sorun | Sebep | Çözüm |
+| Sorun | Neden | Çözüm |
 |-------|--------|----------|
 | **Boş dosya** | `Path.Combine` var olmayan bir dizine işaret ediyor. | Hedef dizinin var olduğundan emin olun veya `Directory.CreateDirectory` ile oluşturun. |
-| **Yanlış SRID** | Varsayılan `WkbVariant.Standard` kullanılması SRID kaybına neden olur. | SRID korunması gerektiğinde her zaman `WkbVariant.ExtendedPostGis` kullanın. |
-| **Lisans istisnası** | Üretim ortamında geçerli bir lisans olmadan çalıştırmak. | Üretim ortamında kodu çalıştırmadan önce geçici veya tam bir lisans uygulayın. |
+| **Yanlış SRID** | Varsayılan `WkbVariant.Standard` kullanılması SRID'yi atar. | SRID korunması gerektiğinde her zaman `WkbVariant.ExtendedPostGis` kullanın. |
+| **Lisans istisnası** | Üretimde geçerli bir lisans olmadan çalıştırmak. | Üretim ortamında kodu çalıştırmadan önce geçici veya tam bir lisans uygulayın. |
 
 ## Sık Sorulan Sorular
 **S: EWKB dosyasını PostGIS ile kullanabilir miyim?**  
-C: Evet, `ExtendedPostGis` varyantı SRID'yi içeren EWKB üretir; PostGIS bunu doğrudan okuyabilir.
+C: Evet, `ExtendedPostGis` varyantı SRID'yi içeren bir EWKB üretir; PostGIS bunu `ST_GeomFromEWKB` aracılığıyla doğrudan okur.  
 
 **S: WKB dosyasını tekrar bir geometry nesnesine okuyabilir miyim?**  
-C: Kesinlikle. `Geometry.FromBinary(byteArray)` kullanarak geometry'yi yeniden oluşturabilirsiniz.
+C: Kesinlikle. Geometry'yi ikili formundan yeniden oluşturmak için `Geometry.FromBinary(byteArray)` kullanın.  
 
-**S: Kütüphane, poligonlar gibi diğer geometry tiplerini destekliyor mu?**  
-C: Evet, Aspose.GIS noktalar, linestring'ler, poligonlar, multipoligonlar ve daha fazlasını işler.
+**S: Kütüphane poligon gibi diğer geometry tiplerini destekliyor mu?**  
+C: Evet, Aspose.GIS nokta, linestring, poligon, multipolygon ve daha birçok uzamsal tipi işler.  
 
 **S: Geometry oluştururken farklı bir SRID nasıl belirlenir?**  
-C: `AsBinary`'i çağırmadan önce geometry nesnesinin SRID'sini ayarlayın, örneğin `geometry.SRID = 4326;`.
+C: `AsBinary` çağırmadan önce geometry nesnesinin `SRID` özelliğini ayarlayın, ör. `linestring.SRID = 4326;`.  
 
-**S: Bu kod .NET Core'da çalışır mı?**  
-C: Evet, aynı API .NET Framework, .NET Core ve .NET 5/6 üzerinde sorunsuz çalışır.
+**S: Bu kod .NET Core üzerinde çalışır mı?**  
+C: Evet, aynı API .NET Framework, .NET Core ve .NET 5/6 üzerinde değişiklik yapmadan çalışır.
 
 ---
 
-**Son Güncelleme:** 2025-12-21  
-**Test Edilen Versiyon:** Aspose.GIS for .NET 23.9 (yazım anındaki en son sürüm)  
+**Son Güncelleme:** 2026-06-10  
+**Test Edilen Sürüm:** Aspose.GIS for .NET 23.9 (yazım anındaki en son sürüm)  
 **Yazar:** Aspose  
 
-{{< /blocks/products/pf/tutorial-page-section >}}
+{{< blocks/products/products-backtop-button >}}
 
+## İlgili Eğitimler
+
+- [Aspose.GIS for .NET ile Geometriyi WKB Formatına Dönüştürme](/gis/net/geometry-processing/translate-geometry-to-wkb/)
+- [Aspose.GIS kullanarak Çeviride WKT Varyantı Belirtme](/gis/net/geometry-processing/specify-wkt-variant-on-translation/)
+- [Aspose.GIS for .NET ile MultiLineString Geometrisi Oluşturma](/gis/net/geometry-creation/create-multilinestring-geometry/)
+
+
+{{< /blocks/products/pf/tutorial-page-section >}}
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
