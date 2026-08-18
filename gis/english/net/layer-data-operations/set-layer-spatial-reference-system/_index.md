@@ -1,5 +1,5 @@
 ---
-title: Create Vector Layer and Set Layer Spatial Reference System
+title: Create a Vector Layer and Set Its Spatial Reference System with Aspose.GIS for .NET
 linktitle: Set Layer Spatial Reference System
 second_title: Aspose.GIS .NET API
 description: Learn how to create vector layer and set layer spatial reference system with Aspose.GIS for .NET. Master defining spatial reference, adding point feature, and retrieving EPSG code.
@@ -88,7 +88,7 @@ Setting the correct coordinate reference system (CRS) ensures that every geometr
 ## Prerequisites
 - .NET development experience (C# or VB.NET).  
 - Visual Studio 2022 or later.  
-- Aspose.GIS for .NET library – download it **[here](https://releases.aspose.com/gis/net/)**.  
+- Aspose.GIS for .NET library – download the **[download the Aspose.GIS for .NET library](https://releases.aspose.com/gis/net/)**.  
 - Basic familiarity with spatial reference systems (CRS/EPSG).
 
 ## Import Namespaces
@@ -107,14 +107,14 @@ SpatialReferenceSystem defines the coordinate reference system using an EPSG cod
 
 Load the target folder, define an EPSG‑coded `SpatialReferenceSystem`, and call `VectorLayer.Create` with the Shapefile driver. This single call allocates a new `.shp` file, writes the accompanying `.shx` and `.dbf` files, and embeds the CRS metadata, ready for feature insertion efficiently.
 
-### Step 1: Specify the Document Directory
+### Step 1: specify the document directory
 Begin by specifying the path to your document directory. This will be the location where your spatial data files are stored.
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-### Step 2: Define Spatial Reference and Set Shapefile Coordinate System
+### Step 2: define spatial reference and set shapefile coordinate system
 SpatialReferenceSystem represents the CRS of a layer, identified by an EPSG code.  
 
 Define the path for the Shapefile, and **define spatial reference** using the EPSG code (26918 in this example). This step **sets the shapefile coordinate system** for the layer.
@@ -129,7 +129,7 @@ var srs = SpatialReferenceSystem.CreateFromEpsg(26918);
 
 Construct a new feature, assign a `Point` geometry with the desired X/Y coordinates, and add the feature to the open `VectorLayer`. The operation writes the geometry into the `.shp` file and the attribute record into the `.dbf` file in a single transaction.
 
-### Step 3: Create Vector Layer
+### Step 3: create vector layer
 `ConstructFeature` creates a new feature object that can hold geometry and attribute data.  
 
 Now **create vector layer** with the specified Shapefile path, driver type (Shapefile), and the spatial reference system you just defined.
@@ -150,7 +150,7 @@ feature.Geometry = new Point(60, 24);
 layer.Add(feature);
 ```
 
-### Step 5: Retrieve Spatial Reference System Information (Retrieve EPSG Code)
+### Step 5: retrieve spatial reference system information (Retrieve EPSG code)
 Open the Vector Layer and retrieve information about the spatial reference system, such as the EPSG code and the human‑readable name. This demonstrates how to **retrieve EPSG code** and **set layer CRS**.
 
 ```csharp
@@ -161,14 +161,14 @@ using (VectorLayer layer = VectorLayer.Open(path, Drivers.Shapefile))
 }
 ```
 
-## Common Issues and Solutions
+## Common issues and solutions
 | Issue | Why it Happens | Fix |
 |-------|----------------|-----|
 | **Layer fails to open** | Wrong driver or corrupted file path | Verify `Drivers.Shapefile` and ensure `path` points to an existing `.shp` file. |
 | **Incorrect CRS displayed** | Using the wrong EPSG code | Double‑check the EPSG code with an authoritative source (e.g., EPSG.io). |
 | **Feature not saved** | Not calling `layer.Add(feature)` inside the `using` block | Ensure the `Add` method is executed before the layer is disposed. |
 
-## Frequently Asked Questions
+## Frequently asked questions
 **Q: How do I change the CRS of an existing Shapefile?**  
 A: Open the layer, create a new `SpatialReferenceSystem` with the desired EPSG code, assign it to `layer.SpatialReferenceSystem`, then save the layer.
 
@@ -190,15 +190,15 @@ A: Aspose.GIS works with .NET Framework 4.6+, .NET Core 3.1+, .NET 5/6/7.
 **Tested With:** Aspose.GIS 24.11 for .NET  
 **Author:** Aspose  
 
-{{< blocks/products/products-backtop-button >}}
-
 ## Related Tutorials
 
-- [Create Vector Layer and Set Linearization Tolerance using Aspose.GIS for .NET](/gis/net/geometry-processing/set-linearization-tolerance/)
-- [Create Vector Layer in File GDB – Aspose.GIS .NET Tutorial](/gis/net/layer-management/create-file-gdb-with-single-layer/)
-- [spatial reference wgs84 – Add Layer to GDB using Aspose.GIS](/gis/net/layer-management/add-layer-to-file-gdb-dataset/)
-
+- {{< relref "gis/net/geometry-processing/set-linearization-tolerance/_index.md" >}}Create Vector Layer and Set Linearization Tolerance using Aspose.GIS for .NET{{< /relref >}}
+- {{< relref "gis/net/layer-management/create-file-gdb-with-single-layer/_index.md" >}}Create Vector Layer in File GDB – Aspose.GIS .NET Tutorial{{< /relref >}}
+- {{< relref "gis/net/layer-management/add-layer-to-file-gdb-dataset/_index.md" >}}spatial reference wgs84 – Add Layer to GDB using Aspose.GIS{{< /relref >}}
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

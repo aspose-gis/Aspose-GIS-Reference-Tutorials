@@ -1,5 +1,5 @@
 ---
-title: Read Shapefile Attribute Values in C# – Get All Feature Attribute Values
+title: Read Shapefile Attribute Values in C# with Aspose.GIS – Get All Feature Attribute Values
 linktitle: Get All Feature Attribute Values
 second_title: Aspose.GIS .NET API
 description: Learn how to read shapefile attribute values in C# using Aspose.GIS for .NET, retrieve every feature attribute, and dump attributes efficiently.
@@ -26,9 +26,9 @@ schemas:
     answer: Absolutely. The library handles Shapefile, GeoJSON, KML, GML, CSV, and
       over 30 other formats without additional plugins.
   - question: How can I obtain a temporary license for testing?
-    answer: You can acquire a temporary license for evaluation [here](https://purchase.aspose.com/temporary-license/).
+    answer: You can acquire a temporary license for evaluation [temporary license page](https://purchase.aspose.com/temporary-license/).
   - question: Where is the official documentation for Aspose.GIS?
-    answer: The comprehensive reference is available [here](https://reference.aspose.com/gis/net/).
+    answer: The comprehensive reference is available [Aspose.GIS .NET documentation](https://reference.aspose.com/gis/net/).
   - question: How do I retrieve only the “Name” attribute from each feature?
     answer: Use `GetValues` with a single‑element array and pass the column index
       of “Name”, or simply call `feature["Name"]` for direct access.
@@ -69,14 +69,14 @@ using System;
 using Aspose.Gis;
 ```
 
-## Step 1: Set the Document Directory
+## Step 1: set the document directory
 Define the folder that holds your Shapefile so the API can locate the `.shp`, `.shx`, and `.dbf` files.  
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 Replace “Your Document Directory” with the actual path where your Shapefile resides.
 
-## Step 2: Open the VectorLayer
+## Step 2: open the vectorLayer
 `VectorLayer` represents a vector dataset (Shapefile, GeoJSON, etc.). Opening it loads the schema without reading all geometry data, which keeps memory usage low.  
 ```csharp
 using (VectorLayer layer = VectorLayer.Open(dataDir + "InputShapeFile.shp", Drivers.Shapefile))
@@ -86,7 +86,7 @@ using (VectorLayer layer = VectorLayer.Open(dataDir + "InputShapeFile.shp", Driv
 ```
 This step specifies the file path and format (Shapefile).
 
-## Step 3: Retrieve All Feature Attribute Values
+## Step 3: retrieve all feature attribute values
 `GetValues` fills a pre‑allocated array with the raw attribute values of a feature. This approach is ideal when you need a deterministic, fixed‑size result set.  
 ```csharp
 foreach (var feature in layer)
@@ -101,7 +101,7 @@ foreach (var feature in layer)
 ```
 The snippet shows how to read attributes for **every** feature into a fixed‑size array.
 
-## Step 4: Retrieve Several Feature Attribute Values
+## Step 4: retrieve several feature attribute values
 When only a subset of fields is required, you can pass a smaller array or use column indexes to limit the data transferred. This reduces memory overhead and speeds up processing.  
 ```csharp
 foreach (var feature in layer)
@@ -116,7 +116,7 @@ foreach (var feature in layer)
 ```
 Here we demonstrate reading specific attribute values (e.g., “Name” and “Population”).
 
-## Step 5: Retrieve Attribute Values as Objects Dump
+## Step 5: retrieve attribute values as objects dump
 `GetValuesDump` returns an `object[]` containing all attribute values of a feature, matching the feature’s schema. This allows you to enumerate fields without prior knowledge of their order or types.  
 ```csharp
 foreach (var feature in layer)
@@ -130,12 +130,12 @@ foreach (var feature in layer)
 ```
 This final step showcases a flexible, schema‑agnostic way to dump attributes for debugging or serialization.
 
-## Common Issues and Solutions
+## Common issues and solutions
 - **Array size mismatch** – Ensure the array you pass to `GetValues` matches the number of attributes you expect; otherwise you’ll receive `null` entries.  
 - **File not found** – Verify `dataDir` points to the correct folder and that the Shapefile name is spelled exactly, including the `.shp` extension.  
 - **License exception** – If a licensing error appears, apply a temporary or full license before invoking any API methods.
 
-## Frequently Asked Questions
+## Frequently asked questions
 **Q: Is Aspose.GIS compatible with .NET Core?**  
 A: Yes, Aspose.GIS fully supports .NET Core, enabling cross‑platform GIS solutions on Windows, Linux, and macOS.
 
@@ -143,10 +143,10 @@ A: Yes, Aspose.GIS fully supports .NET Core, enabling cross‑platform GIS solut
 A: Absolutely. The library handles Shapefile, GeoJSON, KML, GML, CSV, and over 30 other formats without additional plugins.
 
 **Q: How can I obtain a temporary license for testing?**  
-A: You can acquire a temporary license for evaluation [here](https://purchase.aspose.com/temporary-license/).
+A: You can acquire a temporary license for evaluation [temporary license page](https://purchase.aspose.com/temporary-license/).
 
 **Q: Where is the official documentation for Aspose.GIS?**  
-A: The comprehensive reference is available [here](https://reference.aspose.com/gis/net/).
+A: The comprehensive reference is available [Aspose.GIS .NET documentation](https://reference.aspose.com/gis/net/).
 
 **Q: How do I retrieve only the “Name” attribute from each feature?**  
 A: Use `GetValues` with a single‑element array and pass the column index of “Name”, or simply call `feature["Name"]` for direct access.
@@ -165,12 +165,13 @@ A: Visit the Aspose GIS [support forum](https://forum.aspose.com/c/gis/33) for c
 
 ## Related Tutorials
 
-- [Get Layer Attributes – Retrieve Layer Attribute Information with Aspose.GIS for .NET](/gis/net/layer-interaction-and-data-access/get-layer-attribute-information/)
-- [How to Get Attribute Value (Default) with Aspose.GIS for .NET](/gis/net/layer-interaction-and-data-access/get-feature-attribute-value-default/)
-- [Read Shapefile C# – Filter Features by Attribute with Aspose.GIS](/gis/net/layer-management/filter-features-by-attribute/)
-
+- [Get Layer Attributes – Retrieve Layer Attribute Information with Aspose.GIS for .NET]({{< relref "gis/net/layer-interaction-and-data-access/get-layer-attribute-information/_index.md" >}})
+- [How to Get Attribute Value (Default) with Aspose.GIS for .NET]({{< relref "gis/net/layer-interaction-and-data-access/get-feature-attribute-value-default/_index.md" >}})
+- [Read Shapefile C# – Filter Features by Attribute with Aspose.GIS]({{< relref "gis/net/layer-management/filter-features-by-attribute/_index.md" >}})
 
 {{< /blocks/products/pf/tutorial-page-section >}}
-{{< blocks/products/products-backtop-button >}}
+
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}
