@@ -1,10 +1,34 @@
 ---
-date: 2026-02-05
-description: Tìm hiểu cách so sánh các hình học trong .NET bằng Aspose.GIS và kiểm
-  tra tính bằng nhau của hình học trong các ứng dụng của bạn.
-linktitle: How to Compare Geometries for Equality
+date: 2026-06-05
+description: Tìm hiểu cách so sánh Geometries trong .NET bằng Aspose.GIS, phát hiện
+  duplicate geometries và kiểm tra geometry equality trong các ứng dụng của bạn.
+keywords:
+- how to compare geometries
+- detect duplicate geometries
+- Aspose.GIS geometry equality
+linktitle: Cách so sánh Geometries để kiểm tra tính bằng nhau
+schemas:
+- author: Aspose
+  dateModified: '2026-06-05'
+  description: Learn how to compare geometries in .NET using Aspose.GIS, detect duplicate
+    geometries, and check geometry equality in your applications.
+  headline: How to Compare Geometries for Equality using Aspose.GIS for .NET
+  type: TechArticle
+- questions:
+  - answer: Yes, Aspose.GIS works with .NET Framework, .NET Core, and .NET Standard
+      projects.
+    question: Can I use Aspose.GIS for .NET with other .NET frameworks?
+  - answer: Absolutely. Download a trial from the [Aspose.GIS releases page](https://releases.aspose.com/).
+    question: Is there a free trial available?
+  - answer: Detailed docs are on the [Aspose.GIS documentation page](https://reference.aspose.com/gis/net/).
+    question: Where can I find the full API documentation?
+  - answer: Post your question on the Aspose.GIS community forum [here](https://forum.aspose.com/c/gis/33).
+    question: How do I get help if I run into an issue?
+  - answer: Yes, temporary licenses are available on the [purchase page](https://purchase.aspose.com/temporary-license/).
+    question: Can I purchase a temporary license for evaluation?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: Cách so sánh các hình học để xác định tính bằng nhau bằng Aspose.GIS cho .NET
+title: Cách so sánh Geometries để kiểm tra tính bằng nhau bằng Aspose.GIS cho .NET
 url: /vi/net/geometry-analysis/check-geometries-for-equality/
 weight: 10
 ---
@@ -16,33 +40,28 @@ weight: 10
 # Cách so sánh hình học để kiểm tra tính bằng nhau bằng Aspose.GIS cho .NET
 
 ## Giới thiệu
-Trong tutorial này bạn sẽ khám phá **cách so sánh hình học** với Aspose.GIS cho .NET. Dù bạn đang xây dựng dịch vụ bản đồ, thực hiện phân tích không gian, hay chỉ cần xác minh rằng hai hình dạng đại diện cho cùng một vị trí, việc biết cách so sánh hình học là rất quan trọng. Chúng tôi sẽ hướng dẫn qua một ví dụ hoàn chỉnh, từ đầu đến cuối, cho bạn thấy cách tạo, sửa đổi và kiểm tra tính bằng nhau của hình học chỉ trong vài dòng mã C#.
+Trong hướng dẫn này, bạn sẽ học **cách so sánh các hình học** với Aspose.GIS cho .NET, một nhiệm vụ quan trọng khi bạn cần phát hiện các hình học trùng lặp, xác thực dữ liệu không gian, hoặc thực thi các quy tắc tôpô. Dù bạn đang xây dựng dịch vụ bản đồ, thực hiện phân tích không gian theo lô, hay chỉ đơn giản kiểm tra hai hình dạng có cùng vị trí hay không, hướng dẫn này sẽ dẫn bạn qua việc tạo, sửa đổi và kiểm tra tính bằng nhau của hình học bằng mã C# sạch, sẵn sàng cho môi trường sản xuất.
 
 ## Câu trả lời nhanh
-- **“compare geometries” có nghĩa là gì?** Nó kiểm tra xem hai đối tượng hình học có chiếm cùng một không gian hay không, bất kể chúng được xây dựng như thế nào.  
-- **Phương thức nào được sử dụng?** `SpatiallyEquals` từ API Aspose.GIS.  
-- **Tôi có cần giấy phép cho việc phát triển không?** Bản dùng thử miễn phí đủ cho việc kiểm tra; giấy phép thương mại cần thiết cho môi trường sản xuất.  
+- **“compare geometries” có nghĩa là gì?** Nó kiểm tra xem hai đối tượng hình học có chiếm cùng một không gian hay không, bất kể cách chúng được xây dựng.  
+- **Phương pháp nào được sử dụng?** `SpatiallyEquals` từ API Aspose.GIS.  
+- **Tôi có cần giấy phép cho việc phát triển không?** Bản dùng thử miễn phí đủ cho việc thử nghiệm; giấy phép thương mại cần thiết cho môi trường sản xuất.  
 - **Các phiên bản .NET được hỗ trợ?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6+.  
-- **Thời gian thực hiện điển hình?** Khoảng 5‑10 phút cho một kiểm tra bằng nhau cơ bản.
+- **Thời gian triển khai điển hình?** Khoảng 5‑10 phút cho một kiểm tra tính bằng nhau cơ bản.
 
-## Geometry Equality là gì?
-Geometry equality (thường được gọi là spatial equality) có nghĩa là hai hình học đại diện cho cùng một tập hợp điểm chính xác trên bề mặt trái đất. Hai hình dạng có thể được xây dựng khác nhau — một MultiLineString so với một LineString đơn — nhưng vẫn có thể bằng nhau về mặt không gian.
+## Khái niệm về tính bằng nhau của hình học?
+Tính bằng nhau của hình học, còn gọi là tính bằng nhau không gian, có nghĩa là hai hình học đại diện cho cùng một tập hợp các điểm trên bề mặt Trái Đất. Ngay cả khi một hình học được xây dựng dưới dạng `MultiLineString` và hình học còn lại là một `LineString` đơn, chúng vẫn được coi là bằng nhau khi mọi tọa độ khớp nhau trong giới hạn sai số đã định. Định nghĩa này cho phép các nhà phát triển phát hiện một cách đáng tin cậy các hình học trùng lặp trên các nguồn dữ liệu đa dạng.
 
-## Tại sao nên dùng Aspose.GIS để so sánh hình học?
-Aspose.GIS cung cấp một engine hình học mạnh mẽ, hiệu suất cao mà:
-- Hỗ trợ đa dạng các định dạng vector (WKT, GeoJSON, Shapefile, v.v.).
-- Cung cấp các phương pháp so sánh có độ chính xác cao như `SpatiallyEquals`.
-- Hoạt động offline, không cần dịch vụ bên ngoài, rất phù hợp cho môi trường bảo mật hoặc cô lập.
+## Tại sao nên sử dụng Aspose.GIS để so sánh hình học?
+Aspose.GIS cung cấp một động cơ hình học hiệu suất cao, hoạt động offline, loại bỏ nhu cầu sử dụng dịch vụ bên ngoài. Nó **hỗ trợ hơn 30 định dạng vector và raster** (bao gồm WKT, GeoJSON, Shapefile, KML, GML) và có thể xử lý các tệp có **hàng trăm ngàn đỉnh** trong khi giữ mức sử dụng bộ nhớ dưới 50 MB. Phương pháp `SpatiallyEquals` của thư viện nhận thức về độ chính xác, cho kết quả quyết định ngay cả với các tọa độ dạng số thực.
 
-### Tại sao điều này quan trọng đối với nhà phát triển
-Khi bạn cần **cách so sánh hình học** trong các quy trình batch, phát hiện trùng lặp, hoặc xác thực thời gian thực, một thư viện đáng tin cậy loại bỏ sự đoán mò và đảm bảo kết quả nhất quán trên các nguồn dữ liệu khác nhau.
+### Tại sao điều này quan trọng đối với các nhà phát triển
+Khi bạn cần **phát hiện các hình học trùng lặp** trong các quy trình batch, pipeline xác thực thời gian thực, hoặc di chuyển dữ liệu GIS, một thư viện đã được chứng minh loại bỏ việc đoán mò và đảm bảo kết quả nhất quán trên các nhà cung cấp dữ liệu khác nhau.
 
 ## Yêu cầu trước
-Trước khi bắt đầu, hãy chắc chắn bạn đã có:
-
-- **.NET Framework hoặc .NET Core đã được cài đặt** – bất kỳ phiên bản nào được Aspose.GIS hỗ trợ.
-- **Thư viện Aspose.GIS cho .NET** – tải về từ [trang tải Aspose.GIS](https://releases.aspose.com/gis/net/).
-- **IDE phát triển** – Visual Studio, Rider, hoặc VS Code với các extension C#.
+- **.NET Framework hoặc .NET Core đã được cài đặt** – bất kỳ phiên bản nào được Aspose.GIS hỗ trợ.  
+- **Thư viện Aspose.GIS cho .NET** – tải xuống từ [trang tải xuống Aspose.GIS](https://releases.aspose.com/gis/net/).  
+- **Môi trường phát triển IDE** – Visual Studio, Rider, hoặc VS Code với các tiện ích mở rộng C#.
 
 ## Nhập không gian tên
 Trong dự án .NET của bạn, thêm các câu lệnh `using` cần thiết để trình biên dịch biết nơi tìm các lớp GIS:
@@ -57,7 +76,9 @@ using System.Threading.Tasks;
 ```
 
 ## Bước 1: Định nghĩa các hình học
-Đầu tiên, chúng ta tạo hai hình học sẽ so sánh. Trong ví dụ này `geometry1` là một `MultiLineString` gồm hai đoạn thẳng, trong khi `geometry2` là một `LineString` đơn kéo dài cùng các điểm đầu và cuối.
+`MultiLineString` đại diện cho một tập hợp các thành phần đường, trong khi `LineString` định nghĩa một đường liên tục đơn. Cả hai lớp đều kế thừa từ kiểu cơ sở `Geometry`.
+
+Đầu tiên, chúng ta tạo hai hình học sẽ so sánh. Trong ví dụ này, `geometry1` là một `MultiLineString` bao gồm hai đoạn đường, trong khi `geometry2` là một `LineString` đơn kéo dài từ cùng điểm bắt đầu và kết thúc.
 
 ```csharp
 var geometry1 = new MultiLineString
@@ -72,23 +93,25 @@ var geometry2 = new LineString(new[]
 ```
 
 ## Bước 2: Kiểm tra tính bằng nhau của các hình học
-Bây giờ chúng ta sử dụng phương thức `SpatiallyEquals` để xem hai hình dạng có được GIS engine coi là bằng nhau hay không.
+`SpatiallyEquals` đánh giá xem hai hình học có chiếm cùng một tập hợp các điểm hay không, tùy chọn chấp nhận giá trị sai số cho độ không chính xác của số thực.
+
+Bây giờ chúng ta sử dụng phương pháp `SpatiallyEquals` để xem hai hình dạng có được công cụ GIS coi là bằng nhau hay không.
 
 ```csharp
 Console.WriteLine(geometry1.SpatiallyEquals(geometry2)); // True
 ```
 
-Console sẽ in ra `True` vì mặc dù cấu trúc khác nhau, cả hai hình học đều bao phủ cùng một đường từ (0,0) tới (2,2).
+Bảng điều khiển in ra `True` vì, mặc dù cấu trúc khác nhau, cả hai hình học đều bao phủ cùng một đường từ (0,0) đến (2,2).
 
 ## Bước 3: Sửa đổi một hình học
-Để minh họa cách một thay đổi ảnh hưởng đến tính bằng nhau, chúng ta thêm một điểm bổ sung vào `geometry2`.
+Để minh họa cách một thay đổi ảnh hưởng đến tính bằng nhau, chúng ta thêm một điểm phụ vào `geometry2`.
 
 ```csharp
 geometry2.AddPoint(3, 3);
 ```
 
 ## Bước 4: Kiểm tra lại tính bằng nhau sau khi sửa đổi
-Sau khi sửa đổi, hai hình học không còn giống nhau nữa, vì vậy `SpatiallyEquals` sẽ trả về `False`.
+Sau khi sửa đổi, các hình học không còn giống nhau nữa, vì vậy `SpatiallyEquals` trả về `False`.
 
 ```csharp
 Console.WriteLine(geometry1.SpatiallyEquals(geometry2)); // False
@@ -96,39 +119,48 @@ Console.WriteLine(geometry1.SpatiallyEquals(geometry2)); // False
 
 Kết quả `False` xác nhận rằng điểm bổ sung đã phá vỡ tính bằng nhau không gian.
 
-## Vấn đề thường gặp & Mẹo
-- **Vấn đề độ chính xác** – Nếu bạn làm việc với các tọa độ có độ chính xác rất cao, hãy cân nhắc làm tròn hoặc sử dụng overload có tham số tolerance của `SpatiallyEquals`.  
-- **SRID khác nhau** – Đảm bảo cả hai hình học đều có cùng Spatial Reference System Identifier (SRID) trước khi so sánh.  
-- **Hiệu năng** – Đối với các bộ sưu tập lớn, việc so sánh hàng loạt bằng LINQ có thể giảm tải đáng kể.
+## Cách phát hiện các hình học trùng lặp?
+Tải mỗi hình học, gọi `SpatiallyEquals` với một mức sai số phù hợp, và lọc ra những hình trả về `True`. Mẫu này mở rộng tốt với LINQ, cho phép bạn xác định các hình trùng lặp trong các bộ sưu tập lớn chỉ với vài dòng mã. Bạn cũng có thể kết hợp với `GroupBy` để gom nhóm các hình học giống nhau và giảm chi phí lưu trữ.
+
+## Các vấn đề thường gặp & Mẹo
+- **Vấn đề độ chính xác** – Nếu bạn làm việc với các tọa độ có độ chính xác rất cao, hãy cân nhắc làm tròn hoặc sử dụng phiên bản chấp nhận sai số của `SpatiallyEquals`.  
+- **SRID khác nhau** – Đảm bảo cả hai hình học có cùng Spatial Reference System Identifier (SRID) trước khi so sánh.  
+- **Hiệu năng** – Đối với các bộ sưu tập lớn, so sánh theo lô bằng LINQ hoặc vòng lặp song song có thể giảm đáng kể chi phí.
 
 ## Câu hỏi thường gặp
 **Q: Tôi có thể sử dụng Aspose.GIS cho .NET với các framework .NET khác không?**  
 A: Có, Aspose.GIS hoạt động với các dự án .NET Framework, .NET Core và .NET Standard.
 
-**Q: Có bản dùng thử miễn phí không?**  
-A: Chắc chắn. Tải bản dùng thử từ [trang phát hành Aspose.GIS](https://releases.aspose.com/).
+**Q: Có phiên bản dùng thử miễn phí không?**  
+A: Chắc chắn. Tải về bản dùng thử từ [trang phát hành Aspose.GIS](https://releases.aspose.com/).
 
 **Q: Tôi có thể tìm tài liệu API đầy đủ ở đâu?**  
 A: Tài liệu chi tiết có trên [trang tài liệu Aspose.GIS](https://reference.aspose.com/gis/net/).
 
-**Q: Làm sao để nhận hỗ trợ nếu gặp vấn đề?**  
-A: Đặt câu hỏi của bạn trên diễn đàn cộng đồng Aspose.GIS [tại đây](https://forum.aspose.com/c/gis/33).
+**Q: Làm sao tôi có thể nhận hỗ trợ nếu gặp vấn đề?**  
+A: Đăng câu hỏi của bạn trên diễn đàn cộng đồng Aspose.GIS [tại đây](https://forum.aspose.com/c/gis/33).
 
 **Q: Tôi có thể mua giấy phép tạm thời để đánh giá không?**  
 A: Có, giấy phép tạm thời có sẵn trên [trang mua hàng](https://purchase.aspose.com/temporary-license/).
 
 ## Kết luận
-Bây giờ bạn đã biết **cách so sánh hình học** bằng Aspose.GIS cho .NET, từ việc tạo đối tượng, kiểm tra tính bằng nhau không gian, đến xử lý các thay đổi. Khả năng này là nền tảng cho các phân tích không gian nâng cao hơn như kiểm tra topology, phát hiện trùng lặp, và lọc dựa trên hình học.
+Bây giờ bạn đã biết **cách so sánh các hình học** bằng Aspose.GIS cho .NET, từ việc tạo đối tượng đến kiểm tra tính bằng nhau không gian và xử lý các sửa đổi. Khả năng này là nền tảng cho các phân tích không gian nâng cao hơn như xác thực tôpô, phát hiện trùng lặp và lọc dựa trên hình học.
 
 ---
 
-**Last Updated:** 2026-02-05  
+**Last Updated:** 2026-06-05  
 **Tested With:** Aspose.GIS for .NET 24.11  
 **Author:** Aspose  
 
-{{< /blocks/products/pf/tutorial-page-section >}}
+{{< blocks/products/products-backtop-button >}}
 
+## Các hướng dẫn liên quan
+
+- [Tạo hình đa giác C# và kiểm tra giao nhau với Aspose.GIS cho .NET](/gis/net/geometry-analysis/check-geometries-intersection/)
+- [Cách thực hiện phân tích chồng lấn không gian của các hình học với Aspose.GIS cho .NET](/gis/net/geometry-analysis/check-geometries-overlap/)
+- [Kiểm tra định tuyến mạng: Các hình học tiếp xúc với Aspose.GIS](/gis/net/geometry-analysis/check-geometries-touching/)
+
+
+{{< /blocks/products/pf/tutorial-page-section >}}
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}

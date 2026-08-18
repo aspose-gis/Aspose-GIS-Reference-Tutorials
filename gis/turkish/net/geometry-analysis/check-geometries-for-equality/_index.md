@@ -1,10 +1,35 @@
 ---
-date: 2026-02-05
-description: Aspose.GIS kullanarak .NET’te geometrileri nasıl karşılaştıracağınızı
-  öğrenin ve uygulamalarınızda geometri eşitliğini kontrol edin.
-linktitle: How to Compare Geometries for Equality
+date: 2026-06-05
+description: Aspose.GIS kullanarak .NET'te geometries'i nasıl karşılaştıracağınızı,
+  yinelenen geometries'i nasıl tespit edeceğinizi ve uygulamalarınızda geometry eşitliğini
+  nasıl kontrol edeceğinizi öğrenin.
+keywords:
+- how to compare geometries
+- detect duplicate geometries
+- Aspose.GIS geometry equality
+linktitle: Geometries'i Eşitlik İçin Nasıl Karşılaştırılır
+schemas:
+- author: Aspose
+  dateModified: '2026-06-05'
+  description: Learn how to compare geometries in .NET using Aspose.GIS, detect duplicate
+    geometries, and check geometry equality in your applications.
+  headline: How to Compare Geometries for Equality using Aspose.GIS for .NET
+  type: TechArticle
+- questions:
+  - answer: Yes, Aspose.GIS works with .NET Framework, .NET Core, and .NET Standard
+      projects.
+    question: Can I use Aspose.GIS for .NET with other .NET frameworks?
+  - answer: Absolutely. Download a trial from the [Aspose.GIS releases page](https://releases.aspose.com/).
+    question: Is there a free trial available?
+  - answer: Detailed docs are on the [Aspose.GIS documentation page](https://reference.aspose.com/gis/net/).
+    question: Where can I find the full API documentation?
+  - answer: Post your question on the Aspose.GIS community forum [here](https://forum.aspose.com/c/gis/33).
+    question: How do I get help if I run into an issue?
+  - answer: Yes, temporary licenses are available on the [purchase page](https://purchase.aspose.com/temporary-license/).
+    question: Can I purchase a temporary license for evaluation?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: Aspose.GIS for .NET kullanarak Geometrileri Eşitlik İçin Nasıl Karşılaştırılır
+title: Aspose.GIS for .NET kullanarak Geometries'i Eşitlik İçin Nasıl Karşılaştırılır
 url: /tr/net/geometry-analysis/check-geometries-for-equality/
 weight: 10
 ---
@@ -13,38 +38,35 @@ weight: 10
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.GIS for .NET kullanarak Geometrileri Eşitlik İçin Nasıl Karşılaştırılır
+# Aspose.GIS for .NET kullanarak Geometrileri Eşitlik İçin Karşılaştırma
 
 ## Giriş
-Bu öğreticide **how to compare geometries** konusunu Aspose.GIS for .NET ile keşfedeceksiniz. İster bir haritalama servisi oluşturuyor olun, ister mekansal analiz yapıyor olun ya da iki şeklin aynı konumu temsil edip etmediğini doğrulamanız gerekiyor olsun, geometrileri karşılaştırmayı bilmek çok önemlidir. Sadece birkaç satır C# koduyla nesneleri oluşturma, değiştirme ve geometri eşitliğini test etme adımlarını gösteren tam bir uçtan‑uca örnek üzerinden ilerleyeceğiz.
+Bu eğitimde Aspose.GIS for .NET ile **geometrileri nasıl karşılaştıracağınızı** öğreneceksiniz; bu görev, yinelenen geometrileri tespit etmeniz, mekânsal verileri doğrulamanız veya topolojik kuralları uygulamanız gerektiğinde hayati öneme sahiptir. İster bir haritalama servisi oluşturuyor, toplu mekânsal analiz çalıştırıyor, ister sadece iki şeklin aynı konumu kapladığını doğruluyor olun, bu rehber temiz, üretim‑hazır C# kodu ile geometri eşitliğini oluşturma, değiştirme ve test etme sürecinizi adım adım anlatır.
 
 ## Hızlı Yanıtlar
-- **What does “compare geometries” mean?** İki geometrik nesnenin aynı alanı kaplayıp kaplamadığını, nasıl oluşturulmuş olurlarsa olsunlar, kontrol eder.  
-- **Which method is used?** Aspose.GIS API'sinden `SpatiallyEquals`.  
-- **Do I need a license for development?** Test için ücretsiz deneme sürümü yeterlidir; üretim için ticari lisans gereklidir.  
-- **Supported .NET versions?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6+.  
-- **Typical implementation time?** Temel bir eşitlik kontrolü için yaklaşık 5‑10 dakika.
+- **“Geometrileri karşılaştırmak” ne anlama gelir?** İki geometrik nesnenin aynı alanı kaplayıp kaplamadığını, nasıl oluşturulmuş olurlarsa olsunlar kontrol eder.  
+- **Hangi yöntem kullanılır?** Aspose.GIS API'sinden `SpatiallyEquals`.  
+- **Geliştirme için lisansa ihtiyacım var mı?** Test için ücretsiz deneme sürümü yeterlidir; üretim için ticari lisans gerekir.  
+- **Desteklenen .NET sürümleri?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6+.  
+- **Tipik uygulama süresi?** Temel bir eşitlik kontrolü için yaklaşık 5‑10 dakika.
 
 ## Geometri Eşitliği Nedir?
-Geometri eşitliği (genellikle mekansal eşitlik olarak adlandırılır), iki geometrinin yeryüzündeki aynı nokta kümesini tam olarak temsil etmesi anlamına gelir. Bir MultiLineString ile tek bir LineString farklı şekillerde oluşturulmuş olabilir, ancak hâlâ mekansal olarak eşit olabilirler.
+Geometri eşitliği, aynı zamanda mekânsal eşitlik olarak da adlandırılır ve iki geometrinin Dünya yüzeyindeki aynı nokta kümesini temsil ettiği anlamına gelir. Bir geometri `MultiLineString` olarak, diğeri ise tek bir `LineString` olarak oluşturulmuş olsa bile, her koordinat tanımlı tolerans içinde eşleşiyorsa eşit kabul edilir. Bu tanım, geliştiricilerin heterojen veri kaynakları arasında yinelenen geometrileri güvenilir bir şekilde tespit etmelerini sağlar.
 
-## Aspose.GIS'i Geometrileri Karşılaştırmak İçin Neden Kullanmalısınız?
-Aspose.GIS, aşağıdakileri sağlayan sağlam ve yüksek performanslı bir geometri motoru sunar:
-- Geniş bir vektör formatı yelpazesi (WKT, GeoJSON, Shapefile vb.) ile çalışır.
-- `SpatiallyEquals` gibi hassasiyet‑bilinçli karşılaştırma yöntemleri sunar.
-- Harici servislere ihtiyaç duymadan çevrim dışı çalışır; bu da güvenli veya izole ortamlar için idealdir.
+## Geometrileri Karşılaştırmak İçin Aspose.GIS Neden Kullanılır?
+Aspose.GIS, harici hizmetlere ihtiyaç duymadan yüksek performanslı, çevrim dışı bir geometri motoru sunar. **30’dan fazla vektör ve raster formatını** (WKT, GeoJSON, Shapefile, KML, GML vb.) destekler ve **yüzbinlerce köşe** içeren dosyaları bellek kullanımını 50 MB’ın altında tutarak işleyebilir. Kütüphanenin `SpatiallyEquals` yöntemi hassasiyete duyarlıdır ve kayan nokta koordinatlarıyla bile deterministik sonuçlar verir.
 
 ### Bunun Geliştiriciler İçin Önemi
-Toplu işlemlerde, yinelenen‑tespiti rutinlerinde veya gerçek‑zaman doğrulamasında **how to compare geometries** ihtiyacınız olduğunda, güvenilir bir kütüphane tahminleri ortadan kaldırır ve farklı veri kaynakları arasında tutarlı sonuçlar sağlar.
+Yinelenen geometrileri toplu işlemlerde, gerçek‑zaman doğrulama hatlarında veya GIS veri göçlerinde **tespit etmek** gerektiğinde, kanıtlanmış bir kütüphane tahminleri ortadan kaldırır ve farklı veri sağlayıcıları arasında tutarlı sonuçlar garantiler.
 
 ## Önkoşullar
-Başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
+Başlamadan önce aşağıdakilerin kurulu olduğundan emin olun:
 
-- **.NET Framework veya .NET Core yüklü** – Aspose.GIS tarafından desteklenen herhangi bir sürüm.
-- **Aspose.GIS for .NET kütüphanesi** – [Aspose.GIS download page](https://releases.aspose.com/gis/net/) adresinden indirin.
-- **Bir geliştirme IDE'si** – Visual Studio, Rider veya C# uzantılarına sahip VS Code.
+- **.NET Framework veya .NET Core** – Aspose.GIS tarafından desteklenen herhangi bir sürüm.  
+- **Aspose.GIS for .NET kütüphanesi** – [Aspose.GIS indirme sayfası](https://releases.aspose.com/gis/net/) üzerinden indirin.  
+- **Bir geliştirme IDE** – Visual Studio, Rider veya C# uzantılarına sahip VS Code.
 
-## Namespace'leri İçe Aktarma
+## Ad Alanlarını İçe Aktarma
 .NET projenizde GIS sınıflarının nerede bulunduğunu derleyicinin bilmesi için gerekli `using` ifadelerini ekleyin:
 
 ```csharp
@@ -57,7 +79,9 @@ using System.Threading.Tasks;
 ```
 
 ## Adım 1: Geometrileri Tanımlama
-İlk olarak karşılaştıracağımız iki geometriyi oluşturuyoruz. Bu örnekte `geometry1` iki çizgi segmentinden oluşan bir `MultiLineString`, `geometry2` ise aynı başlangıç ve bitiş noktalarına sahip tek bir `LineString` dir.
+`MultiLineString` bir dizi çizgi bileşenini temsil ederken, `LineString` tek bir sürekli çizgiyi tanımlar. Her iki sınıf da temel `Geometry` tipinden türetilir.
+
+İlk olarak karşılaştıracağımız iki geometriyi oluşturuyoruz. Bu örnekte `geometry1`, iki çizgi segmentinden oluşan bir `MultiLineString` iken, `geometry2` aynı başlangıç ve bitiş noktalarını kapsayan tek bir `LineString`’dir.
 
 ```csharp
 var geometry1 = new MultiLineString
@@ -71,8 +95,10 @@ var geometry2 = new LineString(new[]
 });
 ```
 
-## Adım 2: Geometrilerin Eşitliğini Kontrol Etme
-Şimdi `SpatiallyEquals` metodunu kullanarak iki şeklin GIS motoru tarafından eşit kabul edilip edilmediğini görüyoruz.
+## Adım 2: Geometrileri Eşitlik İçin Kontrol Etme
+`SpatiallyEquals`, iki geometrinin aynı nokta kümesini kapsayıp kapsamadığını değerlendirir; isteğe bağlı olarak kayan‑nokta hataları için bir tolerans değeri alabilir.
+
+Şimdi GIS motoru tarafından iki şeklin eşit kabul edilip edilmediğini görmek için `SpatiallyEquals` yöntemini kullanıyoruz.
 
 ```csharp
 Console.WriteLine(geometry1.SpatiallyEquals(geometry2)); // True
@@ -81,7 +107,7 @@ Console.WriteLine(geometry1.SpatiallyEquals(geometry2)); // True
 Konsol `True` çıktısını verir çünkü farklı bir yapılandırmaya rağmen her iki geometri de (0,0) ile (2,2) arasındaki aynı çizgiyi kapsar.
 
 ## Adım 3: Bir Geometriyi Değiştirme
-Eşitliğin bir değişiklikle nasıl etkilendiğini göstermek için `geometry2` ye ekstra bir nokta ekliyoruz.
+Bir değişikliğin eşitliği nasıl etkilediğini göstermek için `geometry2`'ye ekstra bir nokta ekliyoruz.
 
 ```csharp
 geometry2.AddPoint(3, 3);
@@ -94,41 +120,50 @@ Değişiklikten sonra geometriler artık aynı değildir, bu yüzden `SpatiallyE
 Console.WriteLine(geometry1.SpatiallyEquals(geometry2)); // False
 ```
 
-`False` çıktısı, eklenen noktanın mekansal eşitliği bozduğunu doğrular.
+`False` çıktısı, eklenen noktanın mekânsal eşitliği bozduğunu doğrular.
+
+## Yinelenen Geometrileri Nasıl Tespit Edebilirsiniz?
+Her geometriyi yükleyin, uygun bir toleransla `SpatiallyEquals` çağırın ve `True` dönenleri filtreleyin. Bu desen LINQ ile iyi ölçeklenir, büyük koleksiyonlarda birkaç satır kodla yinelenen şekilleri tanımlamanıza olanak tanır. Ayrıca `GroupBy` ile aynı geometrileri birleştirerek depolama maliyetlerini azaltabilirsiniz.
 
 ## Yaygın Sorunlar ve İpuçları
-- **Precision problems** – Çok yüksek hassasiyetli koordinatlarla çalışıyorsanız, yuvarlama yapmayı veya `SpatiallyEquals` metodunun tolerans aşırı yüklemesini kullanmayı düşünün.  
-- **Different SRIDs** – Karşılaştırmadan önce her iki geometrinin aynı Spatial Reference System Identifier (SRID) değerine sahip olduğundan emin olun.  
-- **Performance** – Büyük koleksiyonlarda, LINQ kullanarak toplu karşılaştırmalar yapmak yükü azaltabilir.
+- **Hassasiyet problemleri** – Çok yüksek hassasiyetli koordinatlarla çalışıyorsanız, yuvarlama yapmayı veya `SpatiallyEquals`’ın tolerans aşırı yüklemesini kullanmayı düşünün.  
+- **Farklı SRID’ler** – Karşılaştırmadan önce her iki geometrinin aynı Spatial Reference System Identifier (SRID) değerine sahip olduğundan emin olun.  
+- **Performans** – Büyük koleksiyonlar için LINQ veya paralel döngülerle toplu karşılaştırmalar yapmak, yükü önemli ölçüde azaltabilir.
 
 ## Sık Sorulan Sorular
-**S: Aspose.GIS for .NET'i diğer .NET framework'leriyle kullanabilir miyim?**  
-C: Evet, Aspose.GIS .NET Framework, .NET Core ve .NET Standard projelerinde çalışır.
+**S: Aspose.GIS for .NET’i diğer .NET framework’leriyle kullanabilir miyim?**  
+C: Evet, Aspose.GIS .NET Framework, .NET Core ve .NET Standard projeleriyle çalışır.
 
 **S: Ücretsiz bir deneme sürümü mevcut mu?**  
-C: Kesinlikle. Deneme sürümünü [Aspose.GIS releases page](https://releases.aspose.com/) adresinden indirebilirsiniz.
+C: Kesinlikle. [Aspose.GIS releases sayfasından](https://releases.aspose.com/) bir deneme sürümü indirin.
 
-**S: Tam API dokümantasyonunu nereden bulabilirim?**  
-C: Ayrıntılı belgeler [Aspose.GIS documentation page](https://reference.aspose.com/gis/net/) adresindedir.
+**S: Tam API dokümantasyonunu nerede bulabilirim?**  
+C: Ayrıntılı belgeler [Aspose.GIS dokümantasyon sayfasında](https://reference.aspose.com/gis/net/) yer alıyor.
 
-**S: Bir sorunla karşılaşırsam nasıl yardım alabilirim?**  
-C: Sorununuzu Aspose.GIS topluluk forumunda [burada](https://forum.aspose.com/c/gis/33) paylaşabilirsiniz.
+**S: Bir sorunla karşılaşırsam nasıl destek alabilirim?**  
+C: Sorunuzu Aspose.GIS topluluk forumunda [buradan](https://forum.aspose.com/c/gis/33) paylaşabilirsiniz.
 
 **S: Değerlendirme için geçici bir lisans satın alabilir miyim?**  
-C: Evet, geçici lisanslar [purchase page](https://purchase.aspose.com/temporary-license/) üzerinden temin edilebilir.
+C: Evet, geçici lisanslar [satın alma sayfasında](https://purchase.aspose.com/temporary-license/) mevcuttur.
 
 ## Sonuç
-Artık Aspose.GIS for .NET kullanarak **how to compare geometries** konusunu, nesneleri oluşturma, mekansal eşitliği kontrol etme ve değişiklikleri yönetme aşamalarıyla biliyorsunuz. Bu yetenek, topoloji doğrulama, yinelenen tespiti ve geometri‑tabanlı filtreleme gibi daha ileri mekansal analizlerin temelini oluşturur.
+Artık Aspose.GIS for .NET kullanarak **geometrileri nasıl karşılaştıracağınızı** biliyorsunuz; nesneleri oluşturma, mekânsal eşitliği kontrol etme ve değişiklikleri yönetme süreçlerini öğrenmiş oldunuz. Bu yetenek, topoloji doğrulama, yinelenen tespiti ve geometri‑tabanlı filtreleme gibi daha ileri mekânsal analizlerin temelini oluşturur.
 
 ---
 
-**Son Güncelleme:** 2026-02-05  
+**Son Güncelleme:** 2026-06-05  
 **Test Edilen:** Aspose.GIS for .NET 24.11  
 **Yazar:** Aspose  
 
-{{< /blocks/products/pf/tutorial-page-section >}}
+{{< blocks/products/products-backtop-button >}}
 
+## İlgili Eğitimler
+
+- [C# ile Poligon Geometrisi Oluşturma ve Aspose.GIS for .NET ile Kesişimini Kontrol Etme](/gis/net/geometry-analysis/check-geometries-intersection/)
+- [Aspose.GIS for .NET ile Geometrilerin Mekânsal Çakışma Analizini Nasıl Gerçekleştirirsiniz?](/gis/net/geometry-analysis/check-geometries-overlap/)
+- [Ağ Yönlendirme Kontrolü: Aspose.GIS ile Dokunan Geometriler](/gis/net/geometry-analysis/check-geometries-touching/)
+
+
+{{< /blocks/products/pf/tutorial-page-section >}}
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}

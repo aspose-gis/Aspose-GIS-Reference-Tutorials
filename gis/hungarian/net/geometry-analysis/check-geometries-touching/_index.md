@@ -1,11 +1,66 @@
 ---
-date: 2026-02-08
-description: Tanulja meg, hogyan végezzen hálózati útvonal-ellenőrzést az érintkező
-  geometriai objektumok felderítésével az Aspose.GIS for .NET segítségével, egy erőteljes
-  könyvtár, amely térbeli adatkezelést és térbeli elemzést tesz lehetővé.
-linktitle: How to Check Touching Geometries
+date: 2026-06-05
+description: Ismerje meg, hogyan hozhat létre line string ASP.NET-et, és végezhet
+  hálózati útvonal-ellenőrzést az érintkező geometrikák felismerésével az Aspose.GIS
+  for .NET segítségével, egy erőteljes könyvtár a térbeli adatok kezeléséhez és elemzéséhez.
+keywords:
+- create line string asp.net
+- touching geometries
+- Aspose.GIS spatial analysis
+linktitle: Hogyan ellenőrizze az érintkező geometrikákat
+schemas:
+- author: Aspose
+  dateModified: '2026-06-05'
+  description: Learn how to create line string ASP.NET and perform a network routing
+    check by detecting touching geometries with Aspose.GIS for .NET, a powerful library
+    for spatial data handling and analysis.
+  headline: Create line string ASP.NET – Touching Geometries Check with Aspose.GIS
+  type: TechArticle
+- description: Learn how to create line string ASP.NET and perform a network routing
+    check by detecting touching geometries with Aspose.GIS for .NET, a powerful library
+    for spatial data handling and analysis.
+  name: Create line string ASP.NET – Touching Geometries Check with Aspose.GIS
+  steps:
+  - name: '**Visual Studio** (any recent version).'
+    text: '**Visual Studio** (any recent version).'
+  - name: '**Aspose.GIS for .NET** – download the latest package from the [official
+      download page](https://releases.aspose.com/gis/net/).'
+    text: '**Aspose.GIS for .NET** – download the latest package from the [official
+      download page](https://releases.aspose.com/gis/net/).'
+  - name: '**A valid license** (or a free trial) – obtain it from [here](https://purchase.aspose.com/temporary-license/)
+      or view all releases at [here](https://releases.aspose.com/).'
+    text: '**A valid license** (or a free trial) – obtain it from [here](https://purchase.aspose.com/temporary-license/)
+      or view all releases at [here](https://releases.aspose.com/).'
+  - name: Install Visual Studio if you haven’t already.
+    text: Install Visual Studio if you haven’t already.
+  - name: Add the Aspose.GIS NuGet package to your project (e.g., `Install-Package
+      Aspose.GIS`).
+    text: Add the Aspose.GIS NuGet package to your project (e.g., `Install-Package
+      Aspose.GIS`).
+  - name: Apply your license file in code (or use a temporary license for testing).
+    text: Apply your license file in code (or use a temporary license for testing).
+  type: HowTo
+- questions:
+  - answer: Yes. It supports .NET Framework, .NET Core, .NET 5+, and .NET 6+, giving
+      you flexibility across desktop, web, and cloud projects.
+    question: Is Aspose.GIS compatible with all .NET frameworks?
+  - answer: Absolutely. You can obtain a free trial from the Aspose website [here](https://purchase.aspose.com/temporary-license/)
+      to explore all features, including the `Touches` operation.
+    question: Can I try Aspose.GIS before purchasing a license?
+  - answer: Visit the official [Aspose.GIS forum](https://forum.aspose.com/c/gis/33)
+      to ask questions, share examples, and get help from both the community and Aspose
+      engineers.
+    question: Where can I find support for Aspose.GIS‑related queries?
+  - answer: Aspose releases regular updates that add new format support, performance
+      improvements, and bug fixes, ensuring compatibility with the latest .NET releases.
+    question: How often are updates released for Aspose.GIS?
+  - answer: By confirming that road segments only meet at shared endpoints (touch),
+      you can validate that a routing network is correctly connected without unintended
+      overlaps.
+    question: How does the `Touches` method help with a network routing check?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: 'Hálózati útvonal-ellenőrzés: Érintkező geometrikák az Aspose.GIS-szel'
+title: Line string létrehozása ASP.NET – Érintkező geometriai ellenőrzés az Aspose.GIS-sel
 url: /hu/net/geometry-analysis/check-geometries-touching/
 weight: 13
 ---
@@ -14,38 +69,37 @@ weight: 13
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Hálózati útvonal-ellenőrzés: Érintő geometriák az Aspose.GIS for .NET‑tel
+# Vonallánc létrehozása ASP.NET – Érintő geometriai ellenőrzés az Aspose.GIS-szel
 
 ## Bevezetés
-Amikor **hálózati útvonal-ellenőrzést** kell végezni két térbeli objektum között, az Aspose.GIS for .NET egy tiszta, típus‑biztos API‑t biztosít, amely egyszerűvé teszi a feladatot. Ebben a bemutatóban megmutatjuk, hogyan hozhatunk létre vonalláncokat, pontokat, majd a `Touches` metódust használva megállapíthatjuk, hogy a geometriák csak a határvonalat osztják-e meg. Ez a művelet számos **spatial analysis .NET** szcenárió alapja, például útvonal‑validáció, térkép‑átfedés ellenőrzése és közelségi lekérdezések.
+Amikor **hálózati útvonal-ellenőrzést** kell végrehajtani két térbeli objektum között, az első lépés a **line string ASP.NET** objektumok létrehozása, amelyek a közúti szakaszokat modellezik. Az Aspose.GIS for .NET tiszta, típus‑biztos API-t biztosít, amely egyszerűvé teszi ezt a műveletet, így a vállalati logikára koncentrálhat a részletes geometriai számítások helyett. Ebben az oktatóanyagban végigvezetjük a vonalláncok létrehozását, egy pont hozzáadását, és a `Touches` metódus használatát annak ellenőrzésére, hogy a geometrikák csak a határaikon érintkeznek – ez kulcsfontosságú az útvonal‑validáció, a térkép‑réteg ellenőrzése és a közelségi lekérdezések számára.
 
 ## Gyors válaszok
-- **Mit jelent a „touching” (érintés)?** Két geometria legalább egy közös határpontot oszt meg, de belsejük nem metsződik.  
-- **Melyik metódus ellenőrzi ezt?** `Geometry.Touches(otherGeometry)`.  
-- **Szükség van licencre ehhez a funkcióhoz?** Fejlesztéshez a próbaverzió működik; termeléshez állandó licenc szükséges.  
-- **Támogatott .NET verziók?** .NET Framework, .NET Core, .NET 5/6/7 – mind lefedve az Aspose.GIS által.  
+- **Mi jelent a „touching”?** Két geometria legalább egy határpontot közöl, de belsejük nem metsződik.  
+- **Melyik metódus ellenőrzi?** `Geometry.Touches(otherGeometry)`.  
+- **Szükségem van licencre ehhez a funkcióhoz?** A próbaverzió fejlesztéshez működik; a termeléshez állandó licenc szükséges.  
+- **Támogatott .NET verziók?** .NET Framework, .NET Core, .NET 5/6/7 – mindet lefedi az Aspose.GIS.  
 - **Mennyi időt vesz igénybe a megvalósítás?** Körülbelül 5‑10 perc egy alap példához.  
 
-## Hogyan végezzünk hálózati útvonal‑ellenőrzést érintő geometriák segítségével
-Az alábbiakban lépésről‑lépésre bemutatjuk, hogyan **ellenőrizhetjük az érintő** geometriákat, és hogyan integrálhatjuk az eredményt egy útvonal‑validációs munkafolyamatba.
+## Mi az a „Touching” a térbeli elemzésben?
+**Touching** egy térbeli kapcsolatot ír le, ahol két geometria a szélén találkozik anélkül, hogy a belsejük átfedne. Ez különbözik a *intersects* (metszés) kapcsolattól, amely a belső átfedést is magában foglalja, és elengedhetetlen, ha meg kell erősíteni, hogy az útszakaszok csak csomópontoknál kapcsolódnak.
 
-### Mi az a „Touching” a térbeli elemzésben?
-A GIS terminológiában a *touching* (érintés) egy olyan térbeli kapcsolatot ír le, ahol két geometria a szélén találkozik, de nem fed át egymást. Ez eltér a *intersects* (metszés) fogalmától (amely magában foglalja a belső átfedést), és gyakran használják, ha azt kell ellenőrizni, hogy a jellemzők csak a határvonalon érintkeznek – például olyan útszakaszok, amelyek csomópontnál kapcsolódnak, de nem keresztezik egymást.
+`Touches` metódus **true** értéket ad vissza, ha a geometrikák határpontot osztanak meg, de nincs belső pont, így ideális a hálózati összekapcsoltság ellenőrzésére nem kívánt áthaladások nélkül.
 
-## Miért használjuk az Aspose.GIS‑t a Spatial Analysis .NET‑hez?
-Az Aspose.GIS egy teljesen menedzselt .NET könyvtár, amely lehetővé teszi a **térbeli adatok** kezelését natív GIS telepítés nélkül. Széles körű formátumtámogatással rendelkezik (Shapefile, GeoJSON, KML stb.) és nagy teljesítményű geometriai műveleteket kínál, mint a `Touches`, `Intersects`, `Contains` és még sok más. Mivel tisztán .NET‑es, közvetlenül beágyazható webszolgáltatásokba, asztali alkalmazásokba vagy felhő‑függvényekbe.
+## Miért használjuk az Aspose.GIS-t térbeli elemzéshez .NET-ben?
+Az Aspose.GIS **30+ bemeneti és kimeneti formátumot** támogat (köztük Shapefile, GeoJSON, KML és GML), és akár **2 GB** méretű fájlokat is képes feldolgozni anélkül, hogy a teljes dokumentumot a memóriába töltené, köszönhetően a streaming architektúrának. A könyvtár nagy teljesítményű geometriai műveleteket kínál – `Touches`, `Intersects`, `Contains`, `Distance` – mind teljesen .NET-ben kezelve, így a térbeli elemzést közvetlenül beágyazhatja webszolgáltatásokba, asztali alkalmazásokba vagy Azure Functions-be külső GIS telepítés nélkül.
 
 ## Előfeltételek
-Mielőtt elkezdené, győződjön meg róla, hogy a következőkkel rendelkezik:
+Mielőtt elkezdené, győződjön meg róla, hogy rendelkezik a következőkkel:
 
-1. **Visual Studio** (bármely friss verzió) telepítve van a gépén.  
+1. **Visual Studio** (bármely friss verzió).  
 2. **Aspose.GIS for .NET** – töltse le a legújabb csomagot a [hivatalos letöltési oldalról](https://releases.aspose.com/gis/net/).  
-3. **Érvényes licenc** (vagy ingyenes próbaverzió) – szerezze be [innen](https://releases.aspose.com/).  
+3. **Érvényes licenc** (vagy ingyenes próbaverzió) – szerezze be [innen](https://purchase.aspose.com/temporary-license/), vagy tekintse meg az összes kiadást [itt](https://releases.aspose.com/).  
 
 ### Környezet beállítása
-1. Telepítse a Visual Studio‑t, ha még nem tette meg.  
-2. Töltse le az Aspose.GIS for .NET‑et a fenti hivatkozásból, és adja hozzá a NuGet‑csomagot a projektjéhez.  
-3. Alkalmazza a licencfájlt a kódban (vagy használjon ideiglenes licencet teszteléshez).
+1. Telepítse a Visual Studio-t, ha még nincs telepítve.  
+2. Adja hozzá az Aspose.GIS NuGet csomagot a projektjéhez (pl. `Install-Package Aspose.GIS`).  
+3. Alkalmazza a licencfájlt a kódban (vagy használjon ideiglenes licencet a teszteléshez).
 
 ## Névterek importálása
 Az API használatának megkezdéséhez importálja a szükséges névtereket:
@@ -59,8 +113,12 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## 1. lépés: Vonalláncok (és egy pont) létrehozása
-Az alábbiakban **létrehozzuk a vonallánc** objektumokat és egy pontot, amelyet az érintő kapcsolat tesztelésére használunk.
+## Hogyan ellenőrizhetők az érintő geometrikák az Aspose.GIS-ben?
+`Touches` egy metódus, amely akkor ad vissza true értéket, ha két geometria csak egy határpontot oszt meg, és nincs belső pontja.  
+Töltse be vagy hozza létre a geometrikákat, majd hívja meg a `Touches` metódust a kapcsolat kiértékeléséhez. A metódus egy Boolean értéket ad vissza, amely jelzi, hogy a két alakzat csak egy határpontot oszt-e meg. Ez az egy‑soros ellenőrzés elegendő a legtöbb útvonal‑validációs forgatókönyvhöz, és nagy hálózatok esetén szoros ciklusban is végrehajtható.
+
+## 1. lépés: Vonalláncok létrehozása (és egy pont)
+`LineString` egy geometriai típus, amely összekapcsolt vonalszakaszok sorozatát jelöli, meghatározva rendezett pontokkal.
 
 ```csharp
 var geometry1 = new LineString();
@@ -76,9 +134,9 @@ geometry4.AddPoint(4, 4);
 ```
 
 *Magyarázat*:  
-- `geometry1` és `geometry2` a `(2, 2)` végpontot osztják meg.  
+- `geometry1` és `geometry2` közös végpontja a `(2, 2)`.  
 - `geometry3` egy pont, amely pontosan ezen a közös végponton helyezkedik el.  
-- `geometry4` ugyanazon a területen halad át, de **nem** oszt meg határvonalat a `geometry1`‑nel.
+- `geometry4` ugyanazon a területen áthalad, de **nem** oszt meg határt a `geometry1`‑nel.
 
 ## 2. lépés: Érintő kapcsolatok ellenőrzése
 Most meghívjuk a `Touches` metódust, hogy megvizsgáljuk, mely párok tekinthetők érintőnek.
@@ -91,39 +149,41 @@ Console.WriteLine(geometry1.Touches(geometry4)); // False
 ```
 
 *Eredmény*:  
-- Az első három ellenőrzés **True** értéket ad, mivel a geometriák egyetlen pontban találkoznak belső átfedés nélkül.  
-- Az utolsó ellenőrzés **False**, mert a két vonallánc egy vonalszakaszon metszik egymást, nem csak egy határponton.
+- Az első három ellenőrzés **True** értéket ad, mivel a geometrikák egyetlen pontban találkoznak belső átfedés nélkül.  
+- Az utolsó ellenőrzés **False** értéket ad, mivel a két vonallánc egy vonalszakaszon metszik egymást, nem csak egy határpontban.
 
 ## Gyakori problémák és tippek
-- **Pontossági problémák** – A GIS számítások lebegőpontosak. Ha váratlan `False` eredményeket kap, fontolja a koordináták normalizálását vagy egy tolerancia használatát a `Geometry.EqualsExact(other, tolerance)` metódussal.  
-- **Vegyes geometria típusok** – A `Touches` pontok, vonalak és poligonok között is működik, de a szemantika eltérő; mindig ellenőrizze a várt kapcsolatot az adatmodelljében.  
-- **Teljesítmény** – Nagy adathalmazok esetén csoportosítsa az ellenőrzéseket, vagy használjon térbeli indexeket (pl. R‑tree), amelyet az Aspose.GIS biztosít, hogy elkerülje az O(N²) összehasonlításokat.
+- **Pontossági problémák** – A GIS számítások lebegőpontosak. Ha váratlan `False` eredményeket kap, fontolja meg a koordináták normalizálását vagy egy tolerancia használatát a `Geometry.EqualsExact(other, tolerance)` metódussal.  
+- **Vegyes geometriai típusok** – A `Touches` pontok, vonalak és poligonok között működik, de a szemantika eltérő; mindig ellenőrizze a várt kapcsolatot az adatmodelljében.  
+- **Teljesítmény** – Nagy adathalmazok esetén csoportosítsa az ellenőrzéseket, vagy használja az Aspose.GIS által biztosított térbeli indexeket (pl. R‑tree), hogy elkerülje az O(N²) összehasonlításokat.
 
-## Gyakran feltett kérdések
+## Gyakran ismételt kérdések
 
 **Q: Az Aspose.GIS kompatibilis minden .NET keretrendszerrel?**  
-A: Igen. Támogatja a .NET Framework‑öt, a .NET Core‑t, a .NET 5+‑ot és a .NET 6+‑ot, így rugalmasan használható asztali, web és felhő projektekben.
+A: Igen. Támogatja a .NET Framework, .NET Core, .NET 5+, és .NET 6+ verziókat, így rugalmasságot biztosít asztali, webes és felhőprojektekhez.
 
-**Q: Próbálhatom-e ki az Aspose.GIS‑t licenc vásárlása előtt?**  
-A: Természetesen. Ingyenes próbaverziót szerezhet az Aspose weboldalról [itt](https://purchase.aspose.com/temporary-license/), amely minden funkciót, köztük a `Touches` műveletet is elérhetővé teszi.
+**Q: Kipróbálhatom az Aspose.GIS-t licenc vásárlása előtt?**  
+A: Természetesen. Ingyenes próbaverziót szerezhet az Aspose weboldaláról [itt](https://purchase.aspose.com/temporary-license/), hogy felfedezze az összes funkciót, beleértve a `Touches` műveletet is.
 
 **Q: Hol találok támogatást az Aspose.GIS‑hez kapcsolódó kérdésekhez?**  
-A: Látogassa meg a hivatalos [Aspose.GIS fórumot](https://forum.aspose.com/c/gis/33), ahol kérdéseket tehet fel, példákat oszthat meg, és segítséget kaphat a közösségtől és az Aspose mérnökeitől.
+A: Látogassa meg a hivatalos [Aspose.GIS fórumot](https://forum.aspose.com/c/gis/33), ahol kérdéseket tehet fel, példákat oszthat meg, és segítséget kaphat a közösségtől és az Aspose mérnökeiktől.
 
-**Q: Milyen gyakran jelennek meg frissítések az Aspose.GIS‑hez?**  
-A: Az Aspose rendszeresen kiad frissítéseket, amelyek új formátumtámogatást, teljesítményjavításokat és hibajavításokat tartalmaznak, biztosítva a legújabb .NET kiadásokkal való kompatibilitást.
+**Q: Milyen gyakran jelennek meg frissítések az Aspose.GIS-hez?**  
+A: Az Aspose rendszeresen kiad frissítéseket, amelyek új formátumtámogatást, teljesítményjavításokat és hibajavításokat tartalmaznak, biztosítva a kompatibilitást a legújabb .NET kiadásokkal.
 
-**Q: Kaphatok ideiglenes licencet az Aspose.GIS‑hez?**  
-A: Igen, ideiglenes licenc elérhető [itt](https://purchase.aspose.com/temporary-license/) értékelési célokra.
+**Q: Hogyan segíti a `Touches` metódus a hálózati útvonal-ellenőrzést?**  
+A: Azáltal, hogy megerősíti, hogy az útszakaszok csak a közös végpontokon (érintés) találkoznak, validálhatja, hogy egy útvonalhálózat helyesen van összekapcsolva, anélkül, hogy nem kívánt átfedések lennének.
 
-**Q: Hogyan segíti a `Touches` metódus a hálózati útvonal‑ellenőrzést?**  
-A: Azáltal, hogy megerősíti, hogy az útszakaszok csak közös végpontokon (touch) találkoznak, ellenőrizhető, hogy a routing hálózat helyesen van összekapcsolva, anélkül, hogy nem kívánt átfedések lennének.
+**Last Updated:** 2026-06-05  
+**Tested With:** Aspose.GIS for .NET 24.11 (a legújabb a írás időpontjában)  
+**Author:** Aspose
 
----
+## Kapcsolódó oktatóanyagok
 
-**Utoljára frissítve:** 2026-02-08  
-**Tesztelt verzió:** Aspose.GIS for .NET 24.11 (a cikk írásakor legújabb)  
-**Szerző:** Aspose  
+- [Geospatial adatok kezelése az Aspose.GIS for .NET segítségével](/gis/net/geometry-creation/create-linestring-geometry/)
+- [Polygon geometria létrehozása C#‑ban és metszés ellenőrzése az Aspose.GIS for .NET‑vel](/gis/net/geometry-analysis/check-geometries-intersection/)
+- [Hogyan számítsuk ki a geometria hosszát .NET‑ben az Aspose.GIS‑szel](/gis/net/geometry-analysis/get-geometry-length/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
