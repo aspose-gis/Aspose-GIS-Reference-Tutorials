@@ -1,5 +1,5 @@
 ---
-title: How to Compare Geometries for Equality using Aspose.GIS for .NET
+title: Compare Geometries for Equality with Aspose.GIS for .NET using SpatiallyEquals
 linktitle: How to Compare Geometries for Equality
 second_title: Aspose.GIS .NET API
 description: Learn how to compare geometries in .NET using Aspose.GIS, detect duplicate geometries, and check geometry equality in your applications.
@@ -27,7 +27,7 @@ schemas:
   - question: Where can I find the full API documentation?
     answer: Detailed docs are on the [Aspose.GIS documentation page](https://reference.aspose.com/gis/net/).
   - question: How do I get help if I run into an issue?
-    answer: Post your question on the Aspose.GIS community forum [here](https://forum.aspose.com/c/gis/33).
+    answer: Post your question on the Aspose.GIS community forum [Aspose.GIS community forum](https://forum.aspose.com/c/gis/33).
   - question: Can I purchase a temporary license for evaluation?
     answer: Yes, temporary licenses are available on the [purchase page](https://purchase.aspose.com/temporary-license/).
 ---
@@ -51,7 +51,7 @@ In this tutorial you’ll learn **how to compare geometries** with Aspose.GIS fo
 ## What is Geometry Equality?
 Geometry equality, also called spatial equality, means that two geometries represent the exact same set of points on the earth’s surface. Even if one geometry is built as a `MultiLineString` and the other as a single `LineString`, they are considered equal when every coordinate matches within the defined tolerance. This definition lets developers reliably detect duplicate geometries across heterogeneous data sources.
 
-## Why Use Aspose.GIS to Compare Geometries?
+## Why use Aspose.GIS to compare geometries?
 Aspose.GIS offers a high‑performance, offline geometry engine that eliminates the need for external services. It **supports 30+ vector and raster formats** (including WKT, GeoJSON, Shapefile, KML, GML) and can process files with **hundreds of thousands of vertices** while keeping memory usage under 50 MB. The library’s `SpatiallyEquals` method is precision‑aware, giving deterministic results even with floating‑point coordinates.
 
 ### Why this matters for developers
@@ -76,7 +76,7 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## Step 1: Define the Geometries
+## Step 1: define the geometries
 `MultiLineString` represents a collection of line components, while `LineString` defines a single continuous line. Both classes inherit from the base `Geometry` type.
 
 First, we create two geometries that we will compare. In this example `geometry1` is a `MultiLineString` composed of two line segments, while `geometry2` is a single `LineString` that spans the same start and end points.
@@ -93,7 +93,7 @@ var geometry2 = new LineString(new[]
 });
 ```
 
-## Step 2: Check Geometries for Equality
+## Step 2: check geometries for equality
 `SpatiallyEquals` evaluates whether two geometries occupy the same set of points, optionally accepting a tolerance value for floating‑point imprecision.
 
 Now we use the `SpatiallyEquals` method to see if the two shapes are considered equal by the GIS engine.
@@ -104,14 +104,14 @@ Console.WriteLine(geometry1.SpatiallyEquals(geometry2)); // True
 
 The console prints `True` because, despite the different construction, both geometries cover the same line from (0,0) to (2,2).
 
-## Step 3: Modify One Geometry
+## Step 3: modify one geometry
 To illustrate how a change affects equality, we add an extra point to `geometry2`.
 
 ```csharp
 geometry2.AddPoint(3, 3);
 ```
 
-## Step 4: Re‑check Equality After Modification
+## Step 4: re‑check equality after modification
 After the modification, the geometries are no longer the same, so `SpatiallyEquals` returns `False`.
 
 ```csharp
@@ -123,12 +123,12 @@ The output `False` confirms that the additional point broke the spatial equality
 ## How to Detect Duplicate Geometries?
 Load each geometry, call `SpatiallyEquals` with a suitable tolerance, and filter out the ones that return `True`. This pattern scales well with LINQ, allowing you to identify duplicate shapes in large collections with just a few lines of code. You can also combine it with `GroupBy` to aggregate identical geometries and reduce storage costs.
 
-## Common Issues & Tips
+## Common issues & tips
 - **Precision problems** – If you work with very high‑precision coordinates, consider rounding or using the tolerance overload of `SpatiallyEquals`.  
 - **Different SRIDs** – Ensure both geometries share the same Spatial Reference System Identifier (SRID) before comparing.  
 - **Performance** – For large collections, batch comparisons using LINQ or parallel loops can reduce overhead dramatically.
 
-## Frequently Asked Questions
+## Frequently asked questions
 **Q: Can I use Aspose.GIS for .NET with other .NET frameworks?**  
 A: Yes, Aspose.GIS works with .NET Framework, .NET Core, and .NET Standard projects.
 
@@ -139,7 +139,7 @@ A: Absolutely. Download a trial from the [Aspose.GIS releases page](https://rele
 A: Detailed docs are on the [Aspose.GIS documentation page](https://reference.aspose.com/gis/net/).
 
 **Q: How do I get help if I run into an issue?**  
-A: Post your question on the Aspose.GIS community forum [here](https://forum.aspose.com/c/gis/33).
+A: Post your question on the Aspose.GIS community forum [Aspose.GIS community forum](https://forum.aspose.com/c/gis/33).
 
 **Q: Can I purchase a temporary license for evaluation?**  
 A: Yes, temporary licenses are available on the [purchase page](https://purchase.aspose.com/temporary-license/).
@@ -153,7 +153,7 @@ You now know **how to compare geometries** using Aspose.GIS for .NET, from creat
 **Tested With:** Aspose.GIS for .NET 24.11  
 **Author:** Aspose  
 
-{{< blocks/products/products-backtop-button >}}
+
 
 ## Related Tutorials
 
@@ -161,7 +161,9 @@ You now know **how to compare geometries** using Aspose.GIS for .NET, from creat
 - [How to Perform Spatial Overlap Analysis of Geometries with Aspose.GIS for .NET](/gis/net/geometry-analysis/check-geometries-overlap/)
 - [Network Routing Check: Touching Geometries with Aspose.GIS](/gis/net/geometry-analysis/check-geometries-touching/)
 
-
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

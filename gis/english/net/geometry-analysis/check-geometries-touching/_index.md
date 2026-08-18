@@ -1,5 +1,5 @@
 ---
-title: "Create line string ASP.NET – Touching Geometries Check with Aspose.GIS"
+title: "How to Create a LineString in ASP.NET and Check Touching Geometries with Aspose.GIS"
 linktitle: How to Check Touching Geometries
 second_title: Aspose.GIS .NET API
 description: "Learn how to create line string ASP.NET and perform a network routing check by detecting touching geometries with Aspose.GIS for .NET, a powerful library for spatial data handling and analysis."
@@ -30,10 +30,8 @@ schemas:
       download page](https://releases.aspose.com/gis/net/).'
     text: '**Aspose.GIS for .NET** – download the latest package from the [official
       download page](https://releases.aspose.com/gis/net/).'
-  - name: '**A valid license** (or a free trial) – obtain it from [here](https://purchase.aspose.com/temporary-license/)
-      or view all releases at [here](https://releases.aspose.com/).'
-    text: '**A valid license** (or a free trial) – obtain it from [here](https://purchase.aspose.com/temporary-license/)
-      or view all releases at [here](https://releases.aspose.com/).'
+  - name: '**A valid license** (or a free trial) – obtain it from [temporary license page](https://purchase.aspose.com/temporary-license/) or view all releases at [Aspose.GIS releases page](https://releases.aspose.com/).'
+    text: '**A valid license** (or a free trial) – obtain it from [temporary license page](https://purchase.aspose.com/temporary-license/) or view all releases at [Aspose.GIS releases page](https://releases.aspose.com/).'
   - name: Install Visual Studio if you haven’t already.
     text: Install Visual Studio if you haven’t already.
   - name: Add the Aspose.GIS NuGet package to your project (e.g., `Install-Package
@@ -48,7 +46,7 @@ schemas:
     answer: Yes. It supports .NET Framework, .NET Core, .NET 5+, and .NET 6+, giving
       you flexibility across desktop, web, and cloud projects.
   - question: Can I try Aspose.GIS before purchasing a license?
-    answer: Absolutely. You can obtain a free trial from the Aspose website [here](https://purchase.aspose.com/temporary-license/)
+    answer: Absolutely. You can obtain a free trial from the Aspose website [temporary license page](https://purchase.aspose.com/temporary-license/)
       to explore all features, including the `Touches` operation.
   - question: Where can I find support for Aspose.GIS‑related queries?
     answer: Visit the official [Aspose.GIS forum](https://forum.aspose.com/c/gis/33)
@@ -84,7 +82,7 @@ When you need to **perform a network routing check** between two spatial objects
 
 The `Touches` method returns **true** when the geometries share a boundary point but no interior points, making it ideal for validating network connectivity without unintended crossings.
 
-## Why Use Aspose.GIS for Spatial Analysis .NET?
+## Why use Aspose.GIS for spatial analysis .NET?
 Aspose.GIS supports **30+ input and output formats** (including Shapefile, GeoJSON, KML, and GML) and can process files up to **2 GB** without loading the entire document into memory, thanks to its streaming architecture. The library offers high‑performance geometry operations—`Touches`, `Intersects`, `Contains`, `Distance`—all fully managed in .NET, so you can embed spatial analysis directly into web services, desktop apps, or Azure Functions without external GIS installations.
 
 ## Prerequisites
@@ -92,9 +90,9 @@ Before you start, ensure you have:
 
 1. **Visual Studio** (any recent version).  
 2. **Aspose.GIS for .NET** – download the latest package from the [official download page](https://releases.aspose.com/gis/net/).  
-3. **A valid license** (or a free trial) – obtain it from [here](https://purchase.aspose.com/temporary-license/) or view all releases at [here](https://releases.aspose.com/).  
+3. **A valid license** (or a free trial) – obtain it from [temporary license page](https://purchase.aspose.com/temporary-license/) or view all releases at [Aspose.GIS releases page](https://releases.aspose.com/).  
 
-### Setting Up Your Environment
+### Setting up your environment
 1. Install Visual Studio if you haven’t already.  
 2. Add the Aspose.GIS NuGet package to your project (e.g., `Install-Package Aspose.GIS`).  
 3. Apply your license file in code (or use a temporary license for testing).
@@ -136,7 +134,7 @@ geometry4.AddPoint(4, 4);
 - `geometry3` is a point located exactly at that shared endpoint.  
 - `geometry4` crosses the same area but does **not** share a boundary with `geometry1`.
 
-## Step 2: Check Touching Relationships
+## Step 2: check touching relationships
 Now we call the `Touches` method to see which pairs are considered touching.
 
 ```csharp
@@ -150,18 +148,18 @@ Console.WriteLine(geometry1.Touches(geometry4)); // False
 - The first three checks return **True** because the geometries meet at a single point without interior overlap.  
 - The last check returns **False** because the two line strings intersect over a line segment, not just at a boundary point.
 
-## Common Issues & Tips
+## Common issues & tips
 - **Precision problems** – GIS calculations are floating‑point based. If you encounter unexpected `False` results, consider normalizing coordinates or using a tolerance with `Geometry.EqualsExact(other, tolerance)`.  
 - **Mixed geometry types** – `Touches` works across points, lines, and polygons, but the semantics differ; always verify the expected relationship for your data model.  
 - **Performance** – For large datasets, batch the checks or use spatial indexes (e.g., R‑tree) provided by Aspose.GIS to avoid O(N²) comparisons.
 
-## Frequently Asked Questions
+## Frequently asked questions
 
 **Q: Is Aspose.GIS compatible with all .NET frameworks?**  
 A: Yes. It supports .NET Framework, .NET Core, .NET 5+, and .NET 6+, giving you flexibility across desktop, web, and cloud projects.
 
 **Q: Can I try Aspose.GIS before purchasing a license?**  
-A: Absolutely. You can obtain a free trial from the Aspose website [here](https://purchase.aspose.com/temporary-license/) to explore all features, including the `Touches` operation.
+A: Absolutely. You can obtain a free trial from the Aspose website [temporary license page](https://purchase.aspose.com/temporary-license/) to explore all features, including the `Touches` operation.
 
 **Q: Where can I find support for Aspose.GIS‑related queries?**  
 A: Visit the official [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) to ask questions, share examples, and get help from both the community and Aspose engineers.

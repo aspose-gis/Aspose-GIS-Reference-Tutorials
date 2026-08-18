@@ -1,5 +1,5 @@
 ---
-title: How to Perform Spatial Overlap Analysis of Geometries with Aspose.GIS for .NET
+title: Use Aspose.GIS for .NET to Perform Spatial Overlap Analysis of Geometries
 linktitle: Check Geometries Overlap
 second_title: Aspose.GIS .NET API
 description: Learn how to perform spatial overlap analysis, find intersecting polygons and detect overlapping polygons with Aspose.GIS for .NET. Step‑by‑step guide for developers.
@@ -55,12 +55,12 @@ If you need to **check overlap** between two spatial features, Aspose.GIS for .N
 ## What is Spatial Overlap Analysis?
 The `Overlaps` predicate follows the OGC (Open Geospatial Consortium) definition and returns **true** only when two geometries share interior points without one completely containing the other. In other words, the shapes intersect *inside* but do not fully enclose one another.
 
-## Why Choose Aspose.GIS for Overlap Detection?
+## Why choose Aspose.GIS for overlap detection?
 Aspose.GIS supports **30+ geometry types** and can process **multi‑gigabyte files** without loading the entire document into memory, delivering sub‑millisecond responses for typical polygon pairs. Its zero‑dependency design, cross‑platform .NET Core support, and built‑in OGC‑compliant predicates make it a reliable choice for real‑time overlap detection in production systems.
 
 ## Prerequisites
 - **C# fundamentals** – familiarity with classes, methods, and console output.  
-- **Aspose.GIS for .NET** – download and install it from the official site [here](https://releases.aspose.com/gis/net/) or from the general releases page [here](https://releases.aspose.com/).  
+- **Aspose.GIS for .NET** – download and install it from the official site [Aspose.GIS .NET release page](https://releases.aspose.com/gis/net/) or from the general releases page [Aspose general releases page](https://releases.aspose.com/).  
 - **IDE** – Visual Studio, Rider, or VS Code with the C# extension.
 
 ## Import Namespaces
@@ -114,7 +114,7 @@ Console.WriteLine(geometry1.Overlaps(geometry3)); // Output: True
 ## How to detect overlap in more complex cases?
 Load your polygon or multi‑geometry objects and call the same `Overlaps` predicate; the API automatically selects the appropriate algorithm for each geometry type. `SpatialReference` is a structure that lets you specify a custom tolerance for geometry operations. This approach works for large datasets, enabling real‑time overlap detection across thousands of features.
 
-## Common Issues and Solutions
+## Common issues and solutions
 
 | Issue | Why it Happens | Fix |
 |-------|----------------|-----|
@@ -122,24 +122,22 @@ Load your polygon or multi‑geometry objects and call the same `Overlaps` predi
 | **Exception on large datasets** | Memory pressure when loading many geometries at once. | Process geometries in batches or use `GeometryCollection` with streaming. |
 | **Unexpected `true` for polygons** | Polygon interiors intersect but share an edge. | Verify that you truly need the OGC *overlaps* definition; otherwise, use `Crosses` or `Touches`. |
 
-## Frequently Asked Questions
+## Frequently asked questions
 
 **Q1: Can I use Aspose.GIS for .NET with other .NET libraries?**  
 A1: Yes, Aspose.GIS for .NET seamlessly integrates with other .NET libraries, enhancing its capabilities without friction.
 
 **Q2: Is there a free trial available for Aspose.GIS for .NET?**  
-A2: Yes, you can access a free trial of Aspose.GIS for .NET from [here](https://releases.aspose.com/).
+A2: Yes, you can access a free trial of Aspose.GIS for .NET from [Aspose.GIS .NET release page](https://releases.aspose.com/gis/net/).
 
 **Q3: Where can I find documentation for Aspose.GIS for .NET?**  
-A3: Comprehensive documentation for Aspose.GIS for .NET is available [here](https://reference.aspose.com/gis/net/).
+A3: Comprehensive documentation for Aspose.GIS for .NET is available [Aspose.GIS .NET documentation](https://reference.aspose.com/gis/net/).
 
 **Q4: How can I get temporary licenses for Aspose.GIS for .NET?**  
-A4: You can obtain temporary licenses for Aspose.GIS for .NET from [here](https://purchase.aspose.com/temporary-license/).
+A4: You can obtain temporary licenses for Aspose.GIS for .NET from [temporary license page](https://purchase.aspose.com/temporary-license/).
 
 **Q5: Where can I seek support for Aspose.GIS for .NET?**  
-A5: For any assistance or queries, visit the Aspose.GIS forum [here](https://forum.aspose.com/c/gis/33).
-
-{{< blocks/products/products-backtop-button >}}
+A5: For any assistance or queries, visit the Aspose.GIS forum [Aspose.GIS forum](https://forum.aspose.com/c/gis/33).
 
 ## Related Tutorials
 
@@ -147,13 +145,15 @@ A5: For any assistance or queries, visit the Aspose.GIS forum [here](https://for
 - [Create Polygon Geometry C# and Check Intersection with Aspose.GIS for .NET](/gis/net/geometry-analysis/check-geometries-intersection/)
 - [Network Routing Check: Touching Geometries with Aspose.GIS](/gis/net/geometry-analysis/check-geometries-touching/)
 
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
 ---
 
 **Last Updated:** 2026-06-05  
 **Tested With:** Aspose.GIS 24.11 for .NET  
 **Author:** Aspose
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

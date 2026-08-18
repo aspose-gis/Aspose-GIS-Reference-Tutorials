@@ -1,5 +1,5 @@
 ---
-title: "How to Buffer Geometry Using Aspose.GIS for .NET"
+title: "Use Aspose.GIS for .NET to Buffer Geometry"
 linktitle: "How to Create Buffer Using Aspose.GIS for .NET"
 second_title: "Aspose.GIS .NET API"
 description: "Learn how to buffer geometry with Aspose.GIS for .NET and perform spatial analysis buffers, including installation, namespace imports, and containment checks."
@@ -93,7 +93,7 @@ A geometry buffer creates a zone around a feature (point, line, or polygon) at a
 ## How to Buffer Geometry with Aspose.GIS
 Load your source geometry, call `GetBuffer` with the desired distance, and you instantly receive a polygon representing the buffer zone. This two‑step pattern works for points, lines, and polygons, and the API automatically handles coordinate system nuances, so you don’t need to write custom math.
 
-### Why Use Aspose.GIS for Spatial Analysis Buffers?
+### Why use Aspose.GIS for spatial analysis buffers?
 - **Cross‑platform support:** Works on Windows, Linux, and macOS.  
 - **Zero external dependencies:** No need for native GIS libraries.  
 - **Rich API:** Includes buffering, spatial predicates, and coordinate system transformations.  
@@ -129,7 +129,7 @@ Now let’s break down the buffer creation process step‑by‑step.
 
 ## Step‑by‑Step Guide
 
-### Step 1: Create a Geometry Buffer
+### Step 1: create a geometry buffer
 A `LineString` is an ordered collection of points forming a continuous line.  
 First, we define a simple `LineString` geometry that will serve as the source for our buffer.
 
@@ -142,7 +142,7 @@ line.AddPoint(3, 3);
 
 In this snippet we create a `LineString` and add two points, forming a diagonal line from (0,0) to (3,3).
 
-### Step 2: Generate Buffer for LineString
+### Step 2: generate buffer for lineString
 The `GetBuffer` method creates a polygon representing all points within the specified distance from the source geometry.  
 Next, we generate a buffer around the line with a **positive distance** of 1 unit.
 
@@ -153,7 +153,7 @@ var lineBuffer = line.GetBuffer(distance: 1);
 
 The `GetBuffer` method returns a polygon that includes every point located within 1 unit of the original line.
 
-### Step 3: Check Spatial Containment
+### Step 3: check spatial containment
 The `SpatiallyContains` predicate returns true if the target geometry lies completely inside the source geometry.  
 Now we demonstrate **how to check containment** by testing whether specific points fall inside the buffer.
 
@@ -165,7 +165,7 @@ Console.WriteLine(lineBuffer.SpatiallyContains(new Point(3.1, 3.1))); // True
 
 The `SpatiallyContains` predicate returns `true` if the point lies inside the buffer polygon.
 
-### Step 4: Define a Polygon Geometry
+### Step 4: define a polygon geometry
 A `Polygon` represents a closed planar surface defined by a sequence of linear rings.  
 We’ll also create a `Polygon` geometry to illustrate buffering with a **negative distance**, which shrinks the shape.
 
@@ -184,7 +184,7 @@ polygon.ExteriorRing = new LinearRing(new[]
 
 The polygon represents a square with vertices at (0,0), (0,3), (3,3), and (3,0).
 
-### Step 5: Generate Buffer for Polygon
+### Step 5: generate buffer for polygon
 Applying a negative distance of –1 unit contracts the polygon inward.
 
 ```csharp
@@ -194,7 +194,7 @@ var polygonBuffer = (IPolygon)polygon.GetBuffer(distance: -1);
 
 The resulting `polygonBuffer` is a smaller square, useful for creating interior zones.
 
-### Step 6: Access Buffer Exterior Ring Points
+### Step 6: access buffer exterior ring points
 Finally, we retrieve and display the coordinates of the buffer’s exterior ring.
 
 ```csharp
@@ -208,14 +208,14 @@ for (int i = 0; i < ring.Count; ++i)
 
 This loop prints each vertex of the contracted polygon, confirming the buffer geometry.
 
-## Common Issues and Solutions
+## Common issues and solutions
 | Issue | Solution |
 |-------|----------|
 | **Buffer returns `null`** | Ensure the distance value is appropriate for the geometry’s coordinate system. |
 | **`SpatiallyContains` always returns `false`** | Verify that both geometries share the same spatial reference (CRS). |
 | **Performance slowdown with large datasets** | Process geometries in batches and reuse the same `GeometryFactory` instance. |
 
-## Frequently Asked Questions
+## Frequently asked questions
 
 **Q: Is Aspose.GIS for .NET compatible with other .NET frameworks?**  
 A: Yes, it works with .NET Framework, .NET Core, .NET 5, and .NET 6.
@@ -238,7 +238,7 @@ A: Visit the Aspose.GIS community forum at [https://forum.aspose.com/c/gis/33](h
 **Tested With:** Aspose.GIS for .NET (latest release)  
 **Author:** Aspose  
 
-{{< blocks/products/products-backtop-button >}}
+
 
 ## Related Tutorials
 
@@ -246,7 +246,9 @@ A: Visit the Aspose.GIS community forum at [https://forum.aspose.com/c/gis/33](h
 - [How to Perform Spatial Overlap Analysis of Geometries with Aspose.GIS for .NET](/gis/net/geometry-analysis/check-geometries-overlap/)
 - [How to Get Centroid of a Geometry with Aspose.GIS for .NET](/gis/net/geometry-analysis/get-geometry-centroid/)
 
-
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}
