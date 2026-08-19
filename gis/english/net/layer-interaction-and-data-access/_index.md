@@ -1,6 +1,6 @@
 ---
-title: Retrieve and Update Layer Attributes Using Aspose.GIS for .NET
-linktitle: Retrieve and Update Layer Attributes Using Aspose.GIS for .NET
+title: Learn to Retrieve and Update Layer Attributes with Aspose.GIS for .NET
+linktitle: Learn to Retrieve and Update Layer Attributes with Aspose.GIS for .NET
 second_title: Aspose.GIS .NET API
 description: Learn how to get layer attribute information and modify layers using Aspose.GIS for .NET. Explore 7 detailed tutorials covering GIS data access, GPX/KML handling, and shapefile editing.
 weight: 25
@@ -68,6 +68,7 @@ var fields = layer.GetFields();
 foreach (var field in fields)
 {
     Console.WriteLine($"{field.Name} ({field.Type}) Length: {field.Length}");
+}
 }
 ```
 

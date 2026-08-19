@@ -1,5 +1,5 @@
 ---
-title: MapInfo MIF Files in .NET
+title: Read MapInfo MIF Files with Aspose.GIS for .NET
 linktitle: Read Features from MapInfo Interchange
 second_title: Aspose.GIS .NET API
 description: Learn how to read MapInfo MIF files in .NET using Aspose.GIS – step‑by‑step guide to read features from MapInfo Interchange files.
@@ -163,9 +163,9 @@ A: Visit the [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) for community
 
 ## Related Tutorials
 
-- [How to Count Features in MapInfo Tab Files with Aspose.GIS](./read-features-from-mapinfo-tab/)
-- [Read Features from GML In Aspose.GIS](./read-features-from-gml/)
-- [How to Read GeoJSON from Stream with Aspose.GIS for .NET](./read-geojson-from-stream/)
+- [How to Count Features in MapInfo Tab Files with Aspose.GIS]({{< relref "read-features-from-mapinfo-tab/_index.md" >}})
+- [Read Features from GML In Aspose.GIS]({{< relref "read-features-from-gml/_index.md" >}})
+- [How to Read GeoJSON from Stream with Aspose.GIS for .NET]({{< relref "read-geojson-from-stream/_index.md" >}})
 
 ```csharp
 using Aspose.Gis;

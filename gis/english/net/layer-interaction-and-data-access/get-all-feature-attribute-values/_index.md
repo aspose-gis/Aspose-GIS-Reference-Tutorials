@@ -1,5 +1,5 @@
 ---
-title: Read Shapefile Attribute Values in C# with Aspose.GIS – Get All Feature Attribute Values
+title: Get All Feature Attribute Values from a Shapefile in C# using Aspose.GIS for .NET
 linktitle: Get All Feature Attribute Values
 second_title: Aspose.GIS .NET API
 description: Learn how to read shapefile attribute values in C# using Aspose.GIS for .NET, retrieve every feature attribute, and dump attributes efficiently.
