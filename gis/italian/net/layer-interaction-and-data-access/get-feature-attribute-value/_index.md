@@ -1,10 +1,57 @@
 ---
-description: Impara a utilizzare il casting dinamico dei tipi con Aspose.GIS per .NET
-  per recuperare i valori degli attributi da un shapefile. Include esempi di casting
-  esplicito dei tipi.
-linktitle: Get Feature Attribute Value using Dynamic Type Casting
+date: 2026-06-20
+description: Scopri come ottenere i valori degli attributi delle feature con Dynamic
+  Type Casting usando Aspose.GIS for .NET. Include esempi di Explicit Type Casting
+  e dettagli sulle performance.
+keywords:
+- get feature attribute
+- convert attribute to string
+- dynamic type casting c#
+linktitle: Ottieni il valore dell'attributo della feature usando Dynamic Type Casting
+schemas:
+- author: Aspose
+  dateModified: '2026-06-20'
+  description: Learn how to get feature attribute values with dynamic type casting
+    using Aspose.GIS for .NET. Includes explicit type casting examples and performance
+    details.
+  headline: Get Feature Attribute Value using Dynamic Type Casting
+  type: TechArticle
+- description: Learn how to get feature attribute values with dynamic type casting
+    using Aspose.GIS for .NET. Includes explicit type casting examples and performance
+    details.
+  name: Get Feature Attribute Value using Dynamic Type Casting
+  steps:
+  - name: Set up Your Project
+    text: Create a new .NET project in Visual Studio and reference the Aspose.GIS
+      library. This gives you access to all GIS‑related classes, including the `Feature`
+      class used later.
+  - name: Define Your Document Directory
+    text: Set the path to your documents directory. This is where your shapefile (`InputShapeFile.shp`)
+      is located.
+  - name: Open the Vector Layer
+    text: Open the vector layer using Aspose.GIS. Make sure to specify the driver,
+      in this case, the Shapefile driver.
+  - name: Retrieve Feature Attribute Values
+    text: Now, loop through each feature in the layer and retrieve attribute values.
+      Aspose.GIS provides different ways to fetch attribute values.
+  type: HowTo
+- questions:
+  - answer: It lets you retrieve attribute values at runtime without hard‑coding the
+      target type.
+    question: What is dynamic type casting?
+  - answer: It offers a unified API for reading shapefile .NET data and supports both
+      casting methods.
+    question: Why use Aspose.GIS?
+  - answer: A free trial is available; a commercial license is required for production
+      use.
+    question: Do I need a license?
+  - answer: .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6 and later.
+    question: Which .NET versions are supported?
+  - answer: Yes—iterate over features efficiently as shown in the examples.
+    question: Can I fetch attribute values from large files?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: Recupera il valore dell'attributo della feature mediante casting dinamico.
+title: Ottieni il valore dell'attributo della feature usando Dynamic Type Casting
 url: /it/net/layer-interaction-and-data-access/get-feature-attribute-value/
 weight: 12
 ---
@@ -13,27 +60,35 @@ weight: 12
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Recuperare il valore dell'attributo della feature usando il casting dinamico di tipo
+# Recuperare il valore dell'attributo della feature usando il casting dinamico
 
 ## Introduzione
-Benvenuti nel mondo di Aspose.GIS per .NET, una libreria potente che consente agli sviluppatori .NET di lavorare senza sforzo con i dati dei sistemi informativi geografici (GIS). In questo tutorial scoprirete come il **casting dinamico di tipo** semplifica il processo di recupero dei valori degli attributi delle feature da un shapefile, coprendo anche l'approccio classico del **casting esplicito di tipo**. Che stiate leggendo un shapefile in un'applicazione .NET o abbiate bisogno di **recuperare i valori degli attributi** per analisi, queste tecniche renderanno il vostro codice più pulito e flessibile.
+Benvenuti nel mondo di Aspose.GIS per .NET, una potente libreria che consente agli sviluppatori .NET di lavorare senza sforzo con i dati dei sistemi informativi geografici (GIS). In questo tutorial scoprirete come il **dynamic type casting** semplifica il processo di **getting feature attribute** da un shapefile, coprendo anche l'approccio classico del **explicit type casting**. Che stiate leggendo un shapefile in un'applicazione .NET o abbiate bisogno di recuperare valori di attributi per analisi, queste tecniche renderanno il vostro codice più pulito, più flessibile e pronto per carichi di lavoro su scala di produzione.
 
 ## Risposte rapide
-- **Che cos'è il casting dinamico di tipo?** Un modo a runtime per recuperare i valori degli attributi senza specificare in anticipo il tipo di destinazione.  
-- **Perché usare Aspose.GIS?** Fornisce un'API unificata per leggere dati shapefile .NET e supporta entrambi i metodi di casting.  
-- **È necessaria una licenza?** È disponibile una versione di prova gratuita; per la produzione è richiesta una licenza commerciale.  
-- **Quali versioni di .NET sono supportate?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6 e successive.  
-- **Posso recuperare i valori degli attributi da file di grandi dimensioni?** Sì—iterate le feature in modo efficiente come mostrato negli esempi.
+- **Cos'è il dynamic type casting?** Consente di recuperare i valori degli attributi a runtime senza codificare in modo statico il tipo di destinazione.  
+- **Perché usare Aspose.GIS?** Offre un'API unificata per leggere i dati shapefile .NET e supporta entrambi i metodi di casting.  
+- **Ho bisogno di una licenza?** È disponibile una versione di prova gratuita; è necessaria una licenza commerciale per l'uso in produzione.  
+- **Quali versioni di .NET sono supportate?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6 e successive.  
+- **Posso recuperare i valori degli attributi da file di grandi dimensioni?** Sì—itera sulle feature in modo efficiente come mostrato negli esempi.
+
+## Cos'è “get feature attribute”?
+**“Get feature attribute”** si riferisce all'estrazione del valore memorizzato in una colonna specifica di un record di feature GIS. In Aspose.GIS questo avviene tipicamente tramite il metodo `Feature.GetValue`, che restituisce l'oggetto grezzo per ulteriori elaborazioni.
+
+## Perché usare il dynamic type casting in C#?
+Il dynamic type casting riduce il codice boilerplate quando il tipo di dati dell'attributo varia tra shapefile. Aspose.GIS può restituire il valore come `object`, consentendo di effettuare il cast solo quando è necessario lavorare con il tipo concreto. Questa flessibilità accelera lo sviluppo e mantiene il codice snello.
 
 ## Prerequisiti
 Prima di immergerci nel tutorial, assicuratevi di avere i seguenti prerequisiti:
-- Una conoscenza di base dello sviluppo .NET.  
-- Visual Studio installato sulla vostra macchina.  
-- La libreria Aspose.GIS per .NET, che potete scaricare dal [link di download](https://releases.aspose.com/gis/net/).  
+- Una comprensione di base dello sviluppo .NET.  
+- Visual Studio installato sulla macchina.  
+- La libreria Aspose.GIS per .NET, che potete scaricare dal [download link](https://releases.aspose.com/gis/net/).  
+- Potete anche visitare la pagina dei rilasci [qui](https://releases.aspose.com/).  
 - Familiarità con i concetti e la terminologia GIS.
 
-## Importare gli spazi dei nomi
-Per avviare il progetto, assicuratevi di importare gli spazi dei nomi necessari. Questo passaggio è fondamentale per accedere alle funzionalità offerte da Aspose.GIS per .NET. Includete i seguenti spazi dei nomi nel vostro codice:
+## Importare i namespace
+Per avviare il progetto, assicuratevi di importare i namespace necessari. Questo passaggio è fondamentale per accedere alle funzionalità fornite da Aspose.GIS per .NET. Includete i seguenti namespace nel vostro codice:
+
 ```csharp
 using Aspose.Gis;
 using System;
@@ -43,20 +98,22 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## Come utilizzare il casting dinamico di tipo per recuperare i valori degli attributi
-Di seguito una guida passo‑passo che vi accompagna nella configurazione del progetto, nell'apertura di uno shapefile e nel recupero dei valori degli attributi usando sia il **casting esplicito di tipo** sia il **casting dinamico di tipo**.
+## Come ottenere i valori degli attributi della feature usando il dynamic type casting?
+`VectorLayer.Open` apre una sorgente di dati vettoriali come uno shapefile e restituisce un oggetto `VectorLayer` per la lettura delle feature. Caricate il vostro shapefile con `VectorLayer.Open` (o `FeatureCollection`) e chiamate `feature.GetValue("AttributeName")` – il metodo restituisce un `object` che potete castare in modo sicuro a runtime. Questo approccio a una riga elimina la necessità di più overload e funziona con qualsiasi shapefile indipendentemente dai tipi di dati degli attributi sottostanti. Per grandi set di dati, iterate con `foreach` per mantenere basso l'uso della memoria.
 
 ### Passo 1: Configurare il progetto
-Create un nuovo progetto .NET in Visual Studio e aggiungete il riferimento alla libreria Aspose.GIS.
+Crea un nuovo progetto .NET in Visual Studio e aggiungi un riferimento alla libreria Aspose.GIS. Questo ti dà accesso a tutte le classi correlate al GIS, inclusa la classe `Feature` utilizzata più avanti.
 
 ### Passo 2: Definire la directory dei documenti
-Impostate il percorso della vostra directory dei documenti. Qui è dove si trova il vostro shapefile (`InputShapeFile.shp`).
+Imposta il percorso della tua directory dei documenti. È qui che si trova il tuo shapefile (`InputShapeFile.shp`).
+
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
 ### Passo 3: Aprire il layer vettoriale
-Aprite il layer vettoriale usando Aspose.GIS. Assicuratevi di specificare il driver, in questo caso il driver Shapefile.
+Apri il layer vettoriale usando Aspose.GIS. Assicurati di specificare il driver, in questo caso il driver Shapefile.
+
 ```csharp
 using (VectorLayer layer = VectorLayer.Open(dataDir + "InputShapeFile.shp", Drivers.Shapefile))
 {
@@ -65,9 +122,9 @@ using (VectorLayer layer = VectorLayer.Open(dataDir + "InputShapeFile.shp", Driv
 ```
 
 ### Passo 4: Recuperare i valori degli attributi della feature
-Ora, iterate su ogni feature nel layer e recuperate i valori degli attributi. Aspose.GIS offre diversi modi per ottenere i valori degli attributi.
+Ora, itera su ogni feature nel layer e recupera i valori degli attributi. Aspose.GIS fornisce diversi modi per ottenere i valori degli attributi.
 
-#### Caso 1: Casting esplicito di tipo
+#### Caso 1: Explicit Type Casting
 ```csharp
 for (int i = 0; i < layer.Count; i++)
 {
@@ -80,7 +137,7 @@ for (int i = 0; i < layer.Count; i++)
 }
 ```
 
-#### Caso 2: Casting dinamico di tipo
+#### Caso 2: Dynamic Type Casting
 ```csharp
 for (int i = 0; i < layer.Count; i++)
 {
@@ -93,47 +150,53 @@ for (int i = 0; i < layer.Count; i++)
 }
 ```
 
-> **Suggerimento professionale:** Utilizzate il casting dinamico di tipo quando non siete sicuri del tipo di dato esatto di un attributo o quando volete scrivere codice generico che funzioni su più shapefile. Passate al casting esplicito di tipo quando avete bisogno di sicurezza del tipo a tempo di compilazione.
+> **Pro tip:** Usa il dynamic type casting quando non sei sicuro del tipo di dato esatto di un attributo o quando vuoi scrivere codice generico che funzioni su più shapefile. Passa all'explicit type casting quando hai bisogno della sicurezza del tipo a tempo di compilazione.
+
+## Definizione della classe Feature
+`Feature` rappresenta una singola entità spaziale all'interno di un layer, esponendo la sua geometria e la collezione di attributi. Ogni istanza `Feature` fornisce metodi come `GetValue` per accedere ai dati degli attributi. `Feature.GetValue` restituisce il valore grezzo dell'attributo come oggetto.
 
 ## Problemi comuni e soluzioni
-- **Mancata corrispondenza del nome dell'attributo:** I nomi degli attributi GIS sono sensibili al maiuscolo/minuscolo. Verificate attentamente l'ortografia esatta nello schema dello shapefile.  
-- **Valori null:** `GetValue` restituisce `null` per attributi mancanti; gestitelo in modo appropriato per evitare `NullReferenceException`.  
-- **Dataset di grandi dimensioni:** Iterate usando `foreach` o paginazione per ridurre il consumo di memoria.
+- **Mancata corrispondenza del nome dell'attributo:** I nomi degli attributi GIS sono sensibili al maiuscolo/minuscolo. Verifica attentamente l'ortografia esatta nello schema dello shapefile.  
+- **Valori null:** `GetValue` restituisce `null` per gli attributi mancanti; gestiscili in modo appropriato per evitare `NullReferenceException`.  
+- **Set di dati di grandi dimensioni:** Itera usando `foreach` o paginazione per ridurre il consumo di memoria. Aspose.GIS può elaborare file fino a 2 GB senza caricare l'intero documento in memoria, grazie alla sua architettura di streaming.
 
 ## Domande frequenti
-### Q: Aspose.GIS è adatto sia ai principianti sia agli sviluppatori esperti?
-A: Assolutamente! Aspose.GIS si rivolge a sviluppatori di tutti i livelli, offrendo un'API intuitiva per la manipolazione dei dati GIS.
+### Q: Aspose.GIS è adatto sia ai principianti che agli sviluppatori esperti?
+A: Assolutamente! Aspose.GIS offre un'API intuitiva che scala da semplici letture di attributi ad analisi spaziali complesse.
 
 ### Q: Posso usare Aspose.GIS nei miei progetti commerciali?
-A: Sì, Aspose.GIS è un prodotto commerciale. Potete trovare i dettagli della licenza nella [pagina di acquisto](https://purchase.aspose.com/buy).
+A: Sì, è necessaria una licenza commerciale per l'uso in produzione. I dettagli sulla licenza sono disponibili sulla [purchase page](https://purchase.aspose.com/buy).
 
-### Q: Sono disponibili licenze temporanee per scopi di test?
-A: Sì, potete ottenere una licenza temporanea per i test da [qui](https://purchase.aspose.com/temporary-license/).
+### Q: Sono disponibili licenze temporanee per i test?
+A: Sì, è possibile ottenere una licenza temporanea per i test da [qui](https://purchase.aspose.com/temporary-license/).
 
 ### Q: Dove posso trovare supporto della community per Aspose.GIS?
 A: Partecipate alla discussione sul [forum Aspose.GIS](https://forum.aspose.com/c/gis/33) per chiedere aiuto e connettervi con altri utenti.
 
-### Q: Esiste una versione di prova gratuita di Aspose.GIS?
-A: Certamente! Potete esplorare le funzionalità di Aspose.GIS scaricando la prova gratuita da [qui](https://releases.aspose.com/).
+### Q: Come posso ottenere i valori degli attributi dello shapefile senza conoscerne i tipi?
+A: Utilizzate l'approccio di dynamic type casting (`feature.GetValue("attributeName")`) che restituisce il valore come `object` che potete castare a runtime.
 
-### Q: Come posso ottenere i valori degli attributi di uno shapefile senza conoscere i loro tipi?
-A: Utilizzate l'approccio di casting dinamico (`feature.GetValue("attributeName")`) che restituisce il valore come `object` che potete castare a runtime.
-
-### Q: Posso leggere dati shapefile .NET in un'applicazione .NET Core?
+### Q: Posso leggere i dati shapefile .NET in un'applicazione .NET Core?
 A: Sì, Aspose.GIS per .NET supporta pienamente .NET Core, .NET 5 e versioni successive.
 
 ## Conclusione
-Congratulazioni! Avete appreso con successo come utilizzare Aspose.GIS per .NET per recuperare i valori degli attributi delle feature usando sia il **casting esplicito di tipo** sia il **casting dinamico di tipo**. Queste tecniche vi consentono di **ottenere i dati degli attributi dello shapefile** in modo efficiente, sia che stiate costruendo uno strumento GIS desktop sia che stiate integrando analisi spaziali in un servizio web.
+Congratulazioni! Hai imparato con successo come **get feature attribute** valori usando sia **explicit type casting** sia **dynamic type casting** con Aspose.GIS per .NET. Queste tecniche ti consentono di recuperare i dati degli attributi dello shapefile in modo efficiente, sia che tu stia costruendo uno strumento GIS desktop sia integrando analisi spaziali in un servizio web. Applica i pattern mostrati qui per gestire grandi set di dati, attributi di tipo misto e scenari critici per le prestazioni con fiducia.
 
 ---
 
-**Last Updated:** 2026-01-05  
-**Tested With:** Aspose.GIS for .NET (latest)  
-**Author:** Aspose
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
+**Ultimo aggiornamento:** 2026-06-20  
+**Testato con:** Aspose.GIS for .NET (latest)  
+**Autore:** Aspose
 
 {{< blocks/products/products-backtop-button >}}
+
+## Tutorial correlati
+
+- [Come ottenere il valore dell'attributo (predefinito) con Aspose.GIS per .NET](/gis/net/layer-interaction-and-data-access/get-feature-attribute-value-default/)
+- [Recuperare gli attributi del layer – Ottenere informazioni sugli attributi del layer con Aspose.GIS per .NET](/gis/net/layer-interaction-and-data-access/get-layer-attribute-information/)
+- [Leggere Shapefile C# – Ottenere tutti i valori degli attributi della feature](/gis/net/layer-interaction-and-data-access/get-all-feature-attribute-values/)
+
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
