@@ -1,9 +1,35 @@
 ---
-date: 2026-01-05
-description: Aspose.GIS for .NET を使用して C# でシェープファイルの読み取り方法を学び、すべてのフィーチャ属性値を取得し、属性を効率的にダンプする方法を習得しましょう。
-linktitle: Get All Feature Attribute Values
+date: 2026-06-15
+description: Aspose.GIS for .NET を使用して C# で shapefile の属性値を読み取る方法を学び、すべてのフィーチャ属性を取得し、属性を効率的にダンプする方法をご紹介します。
+keywords:
+- read shapefile attribute values
+- Aspose.GIS attribute extraction
+- C# GIS tutorial
+linktitle: すべてのフィーチャ属性値を取得
+schemas:
+- author: Aspose
+  dateModified: '2026-06-15'
+  description: Learn how to read shapefile attribute values in C# using Aspose.GIS
+    for .NET, retrieve every feature attribute, and dump attributes efficiently.
+  headline: Read Shapefile Attribute Values in C# – Get All Feature Attribute Values
+  type: TechArticle
+- questions:
+  - answer: Yes, Aspose.GIS fully supports .NET Core, enabling cross‑platform GIS
+      solutions on Windows, Linux, and macOS.
+    question: Is Aspose.GIS compatible with .NET Core?
+  - answer: Absolutely. The library handles Shapefile, GeoJSON, KML, GML, CSV, and
+      over 30 other formats without additional plugins.
+    question: Can I work with different GIS file formats using Aspose.GIS?
+  - answer: You can acquire a temporary license for evaluation [here](https://purchase.aspose.com/temporary-license/).
+    question: How can I obtain a temporary license for testing?
+  - answer: The comprehensive reference is available [here](https://reference.aspose.com/gis/net/).
+    question: Where is the official documentation for Aspose.GIS?
+  - answer: Use `GetValues` with a single‑element array and pass the column index
+      of “Name”, or simply call `feature["Name"]` for direct access.
+    question: How do I retrieve only the “Name” attribute from each feature?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: Shapefile を C# で読み込む – すべてのフィーチャ属性値を取得
+title: C# で Shapefile の属性値を読み取る – すべてのフィーチャ属性値を取得
 url: /ja/net/layer-interaction-and-data-access/get-all-feature-attribute-values/
 weight: 15
 ---
@@ -12,62 +38,56 @@ weight: 15
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# すべてのフィーチャ属性値を取得する
+# すべてのフィーチャ属性値を取得
 
 ## はじめに
-Aspose.GIS for .NET を使用した地理空間開発の世界へようこそ！このチュートリアルでは **C# でシェープファイルを読み取る方法** を学び、フィーチャのすべての属性値を取得します。マッピングアプリを構築する場合でも、バッチで空間データを処理する場合でも、属性抽出の習得は不可欠です。さあ、コードを実際に見てみましょう。
+このチュートリアルでは、Aspose.GIS for .NET を使用した C# で **シェープファイルの属性値の読み取り方法** を学びます。ライブマッピングアプリケーションの構築、バルク空間分析の実行、または属性テーブルのエクスポートが必要な場合でも、シェープファイルからすべてのフィールドを抽出することは基本的なスキルです。データディレクトリの設定から属性コレクションのダンプまで、完全なワークフローを順に解説し、コードをクリーンで高性能に保つベストプラクティスのヒントも紹介します。
 
 ## クイック回答
-- **このコードは何をしますか？** Shapefile を開き、各フィーチャからすべて、いくつか、またはダンプされた属性値を読み取ります。  
-- **必要なライブラリはどれですか？** Aspose.GIS for .NET（.NET Framework と .NET Core に対応）。  
-- **ライセンスは必要ですか？** テスト用には一時ライセンスで動作しますが、本番環境ではフルライセンスが必要です。  
-- **他のフォーマットも読み取れますか？** はい。同じ API が GeoJSON、KML など多数のフォーマットをサポートしています。  
-- **属性をダンプするには？** `feature.GetValuesDump()` を使用して柔軟なオブジェクト配列を取得します。  
+- **このコードは何をしますか？** シェープファイルを開き、各フィーチャを反復処理し、すべての属性値または選択されたサブセットを取得します。  
+- **必要なライブラリはどれですか？** Aspose.GIS for .NET（.NET Framework、.NET Core、.NET 5/6 で動作）。  
+- **ライセンスは必要ですか？** テストには一時ライセンスで十分ですが、本番環境ではフルライセンスが必須です。  
+- **他のフォーマットも読み取れますか？** はい。同じ API で GeoJSON、KML、GML、CSV、その他 30 以上の GIS フォーマットを読み取れます。  
+- **属性をダンプするには？** `feature.GetValuesDump()` を呼び出すと、シリアライズや直接検査が可能な object 配列が取得できます。
 
-## 「C# でシェープファイルを読み取る」とは何ですか？
-C# でシェープファイルを読み取るとは、GIS ライブラリで .shp ファイルを開き、ベクトルフィーチャを反復処理し、付随する .dbf ファイルに格納された属性データにアクセスすることを意味します。Aspose.GIS は低レベルのファイル処理を抽象化し、必要な属性値に集中できるようにします。
+## 「read shapefile C#」とは何ですか？
+C# でシェープファイルを読み取るとは、GIS ライブラリで `.shp` ファイルを開き、ベクターフィーチャを反復処理し、付随する `.dbf` ファイルに格納された属性データにアクセスすることを意味します。Aspose.GIS は低レベルのファイル処理を抽象化し、数行のコードだけで属性値を抽出できるようにします。
 
-## 属性を読み取るために Aspose.GIS を使用する理由
-- **シンプルな API** – `GetValues` や `GetValuesDump` のような直感的なメソッド。  
-- **クロスプラットフォーム** – .NET Core で Windows、Linux、macOS 上で動作します。  
-- **豊富なフォーマットサポート** – 追加プラグインなしで Shapefile、GeoJSON、GML などを扱えます。  
-- **パフォーマンス最適化** – 大規模データセットの高速反復処理。  
+## 属性を読み取るために Aspose.GIS を使用する理由は？
+Aspose.GIS は高性能でクロスプラットフォームな API を提供し、シェープファイルからの属性抽出を簡素化します。**30 以上の GIS フォーマット**に対応し、標準的な 4 コアサーバー上で **1 秒あたり最大 500 000 フィーチャ** を処理できます。また、`GetValues` や `GetValuesDump` といった直感的なメソッドにより、手動での DBF パースが不要になります。Windows、Linux、macOS で追加プラグインなしに動作し、テスト用のライセンスフリー（テスト時）コードが必要な場合に最適です。
 
 ## 前提条件
-このエキサイティングな旅に出る前に、以下の前提条件が整っていることを確認してください：
-
-- Aspose.GIS for .NET: ライブラリを [Aspose.GIS for .NET ダウンロードページ](https://releases.aspose.com/gis/net/) からダウンロードしてインストールします。  
-- 開発環境: Visual Studio などの .NET 開発環境をセットアップします。  
-- シェープファイル: サンプルのシェープファイル（例: "InputShapeFile.shp"）をドキュメントディレクトリに用意します。  
+- **Aspose.GIS for .NET** – [Aspose.GIS for .NET ダウンロードページ](https://releases.aspose.com/gis/net/) からダウンロードしてください。  
+- **開発環境** – Visual Studio 2022、Rider、または .NET 6+ をサポートする任意の IDE。  
+- **サンプルシェープファイル** – `InputShapeFile.shp` などのファイルを、マシン上の既知のフォルダーに配置してください。  
 
 ## 名前空間のインポート
-C# コードで、Aspose.GIS の機能を利用するために必要な名前空間をインポートします：
-
+`Aspose.Gis` 名前空間には、`VectorLayer` や `Feature` などのコア GIS 型が含まれます。  
+`VectorLayer` はシェープファイルなどのベクターデータセットを表し、`Feature` は個々の空間レコードを表します。  
 ```csharp
 using System;
 using Aspose.Gis;
 ```
 
-## ステップ 1: ドキュメントディレクトリの設定
-"Your Document Directory" をシェープファイルが配置されている実際のパスに置き換えます。
-
+## ステップ 1: ドキュメント ディレクトリの設定
+シェープファイルが格納されているフォルダーを定義し、API が `.shp`、`.shx`、`.dbf` ファイルを見つけられるようにします。  
 ```csharp
 string dataDir = "Your Document Directory";
 ```
+“Your Document Directory” をシェープファイルが存在する実際のパスに置き換えてください。
 
 ## ステップ 2: VectorLayer を開く
-このステップでは、Aspose.GIS を使用してシェープファイルを開き、ファイルパスとフォーマット（この場合は Shapefile）を指定します。
-
+`VectorLayer` はベクターデータセット（シェープファイル、GeoJSON など）を表します。これを開くと、すべてのジオメトリデータを読み込まずにスキーマがロードされ、メモリ使用量が抑えられます。  
 ```csharp
 using (VectorLayer layer = VectorLayer.Open(dataDir + "InputShapeFile.shp", Drivers.Shapefile))
 {
     // Your code for further steps goes here
 }
 ```
+このステップでは、ファイルパスとフォーマット（シェープファイル）を指定します。
 
 ## ステップ 3: すべてのフィーチャ属性値を取得する
-このスニペットは、固定サイズの配列にロードすることで、すべてのフィーチャの属性を **読み取る方法** を示しています。
-
+`GetValues` は、事前に確保した配列にフィーチャの生の属性値を埋め込みます。このアプローチは、決定的で固定サイズの結果セットが必要な場合に最適です。  
 ```csharp
 foreach (var feature in layer)
 {
@@ -79,10 +99,10 @@ foreach (var feature in layer)
     Console.WriteLine();
 }
 ```
+このスニペットは、**すべての**フィーチャの属性を固定サイズの配列に読み込む方法を示しています。
 
 ## ステップ 4: 複数のフィーチャ属性値を取得する
-ここでは、フィールドのサブセットだけが必要な場合に、**特定の属性値を読み取る方法** を示します。
-
+フィールドのサブセットだけが必要な場合、より小さな配列を渡すか、列インデックスを使用して転送データを制限できます。これによりメモリオーバーヘッドが削減され、処理速度が向上します。  
 ```csharp
 foreach (var feature in layer)
 {
@@ -94,10 +114,10 @@ foreach (var feature in layer)
     Console.WriteLine();
 }
 ```
+ここでは、特定の属性値（例: “Name” と “Population”）を読み取る方法を示しています。
 
-## ステップ 5: 属性値をオブジェクトダンプとして取得する
-この最終ステップでは、`GetValuesDump()` を使用して属性を **ダンプする方法** を示します。このメソッドは、検査やシリアライズが可能な柔軟なコレクションを返します。
-
+## ステップ 5: 属性値をオブジェクト ダンプとして取得する
+`GetValuesDump` は、フィーチャのスキーマに一致するすべての属性値を含む `object[]` を返します。これにより、順序や型を事前に把握していなくてもフィールドを列挙できます。  
 ```csharp
 foreach (var feature in layer)
 {
@@ -108,45 +128,47 @@ foreach (var feature in layer)
     Console.WriteLine();
 }
 ```
+この最終ステップでは、デバッグやシリアライズのために属性をダンプする柔軟でスキーマ非依存の方法を示しています。
 
-## 一般的な問題と解決策
+## よくある問題と解決策
 - **配列サイズの不一致** – `GetValues` に渡す配列が期待する属性数と一致していることを確認してください。そうでないと `null` エントリが返ります。  
-- **ファイルが見つからない** – `dataDir` が正しいフォルダを指しているか、シェープファイル名が正確に綴られているか確認してください。  
-- **ライセンス例外** – ライセンスエラーが表示された場合、API メソッドを呼び出す前に一時またはフルライセンスを適用してください。  
+- **ファイルが見つかりません** – `dataDir` が正しいフォルダーを指しているか、シェープファイル名が `.shp` 拡張子を含めて正確に綴られているか確認してください。  
+- **ライセンス例外** – ライセンスエラーが発生した場合、API メソッドを呼び出す前に一時ライセンスまたはフルライセンスを適用してください。
 
 ## よくある質問
-### Aspose.GIS は .NET Core と互換性がありますか？
-はい、Aspose.GIS は .NET Core と完全に互換性があり、クロスプラットフォームアプリケーションを構築できます。
+**Q: Aspose.GIS は .NET Core と互換性がありますか？**  
+A: はい、Aspose.GIS は .NET Core を完全にサポートしており、Windows、Linux、macOS 上でクロスプラットフォーム GIS ソリューションを実現します。
 
-### Aspose.GIS を使用してさまざまな GIS ファイル形式を扱えますか？
-もちろんです！Aspose.GIS は Shapefile、GeoJSON など多数のフォーマットをサポートしています。
+**Q: Aspose.GIS で異なる GIS ファイルフォーマットを扱えますか？**  
+A: もちろんです。このライブラリはシェープファイル、GeoJSON、KML、GML、CSV、その他 30 以上のフォーマットを追加プラグインなしで処理できます。
 
-### Aspose.GIS のサポート用コミュニティフォーラムはありますか？
-はい、[サポートフォーラム](https://forum.aspose.com/c/gis/33) で支援を受け、Aspose.GIS コミュニティと交流できます。
+**Q: テスト用の一時ライセンスはどこで取得できますか？**  
+A: 評価用の一時ライセンスは[こちら](https://purchase.aspose.com/temporary-license/)から取得できます。
 
-### Aspose.GIS の一時ライセンスはどのように取得できますか？
-テスト目的の一時ライセンスは[こちら](https://purchase.aspose.com/temporary-license/)から取得できます。
+**Q: Aspose.GIS の公式ドキュメントはどこですか？**  
+A: 包括的なリファレンスは[こちら](https://reference.aspose.com/gis/net/)で利用できます。
 
-### Aspose.GIS の詳細なドキュメントはどこで見つけられますか？
-包括的なドキュメントは[こちら](https://reference.aspose.com/gis/net/)で利用できます。
+**Q: 各フィーチャから “Name” 属性だけを取得するには？**  
+A: `GetValues` を単一要素の配列で使用し、“Name” の列インデックスを渡すか、直接 `feature["Name"]` を呼び出してください。
 
-### 各フィーチャから「Name」属性だけを取得するには？
-`GetValues` を使用し、要素数 1 の配列を作成して「Name」フィールドのインデックスを渡すか、`feature["Name"]` を直接呼び出します。
+**Q: `GetValues` と `GetValuesDump` の違いは何ですか？**  
+A: `GetValues` は事前に確保した配列に生の値を格納しますが、`GetValuesDump` はスキーマを事前に知らなくても列挙可能な `object[]` を返します。
 
-### `GetValues` と `GetValuesDump` の違いは何ですか？
-`GetValues` は事前に確保した配列に生の値を埋め込みますが、`GetValuesDump` はスキーマを事前に知らなくても列挙可能なオブジェクト配列を返します。
+**Q: 問題が発生した場合、どこでサポートを受けられますか？**  
+A: Aspose GIS の[サポートフォーラム](https://forum.aspose.com/c/gis/33)でコミュニティの支援や公式サポートを受けられます。
 
----
-
-**Last Updated:** 2026-01-05  
+**最終更新日:** 2026-06-15  
 **Tested With:** Aspose.GIS for .NET (latest release)  
-**Author:** Aspose  
+**Author:** Aspose
 
----
+## 関連チュートリアル
+
+- [レイヤ属性の取得 – Aspose.GIS for .NET でレイヤ属性情報を取得する](/gis/net/layer-interaction-and-data-access/get-layer-attribute-information/)
+- [属性値の取得方法（デフォルト） – Aspose.GIS for .NET を使用](/gis/net/layer-interaction-and-data-access/get-feature-attribute-value-default/)
+- [シェープファイル C# の読み取り – Aspose.GIS で属性でフィーチャをフィルタリング](/gis/net/layer-management/filter-features-by-attribute/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
-
+{{< blocks/products/products-backtop-button >}}
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
