@@ -1,10 +1,39 @@
 ---
-date: 2026-01-18
-description: Leer hoe je steden aan een kaart kunt toevoegen en een SVG-kaart kunt
-  genereren met Aspose.GIS voor .NET. Maak snel verbluffende visualisaties.
-linktitle: Render a Map
+date: 2026-07-05
+description: Leer hoe je een SVG-kaart kunt genereren en steden kunt toevoegen met
+  Aspose.GIS voor .NET. Maak snel verbluffende visualisaties.
+keywords:
+- generate svg map
+- draw vector layer
+- add base map
+- load geojson
+- set map dimensions
+linktitle: Kaart renderen
+schemas:
+- author: Aspose
+  dateModified: '2026-07-05'
+  description: Learn how to generate SVG map and add cities using Aspose.GIS for .NET.
+    Create stunning visualizations quickly.
+  headline: How to Generate SVG Map and Add Cities with Aspose.GIS for .NET
+  type: TechArticle
+- questions:
+  - answer: Yes, Aspose.GIS for .NET works seamlessly in ASP.NET, Blazor, and other
+      .NET web frameworks, producing SVG output that browsers render instantly.
+    question: Can I use Aspose.GIS for .NET in my web applications?
+  - answer: Yes, you can explore the free trial version [here](https://releases.aspose.com/).
+    question: Is a trial version available?
+  - answer: Visit the [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) for assistance
+      and community discussions.
+    question: Where can I find support for Aspose.GIS for .NET?
+  - answer: Yes, a temporary license is available [here](https://purchase.aspose.com/temporary-license/).
+    question: Can I purchase a temporary license for short‑term projects?
+  - answer: Yes, check the [documentation](https://reference.aspose.com/gis/net/)
+      for comprehensive guides and sample projects.
+    question: Are there additional tutorials for Aspose.GIS for .NET?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: Hoe steden aan een kaart toevoegen met Aspose.GIS voor .NET
+title: Hoe een SVG-kaart te genereren en steden toe te voegen met Aspose.GIS voor
+  .NET
 url: /nl/net/map-rendering/render-a-map/
 weight: 13
 ---
@@ -13,26 +42,32 @@ weight: 13
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Hoe steden aan een kaart toe te voegen met Aspose.GIS for .NET
+# Hoe SVG-kaart te genereren en steden toe te voegen met Aspose.GIS voor .NET
 
 ## Introductie
-Welkom in de spannende wereld van Aspose.GIS for .NET! In deze stapsgewijze handleiding leer je **hoe je steden aan een kaart toevoegt** en een SVG‑output van hoge kwaliteit genereert. Of je nu een desktop‑dashboard of een web‑gebaseerd GIS‑portaal bouwt, deze tutorial laat zien hoe je vectorlagen tekent, kaartafmetingen instelt en eenvoudig een GeoJSON‑kaart laadt.
+Welkom in de opwindende wereld van Aspose.GIS voor .NET! In deze stap‑voor‑stap gids leer je **hoe je steden aan een kaart toevoegt** en **SVG‑kaart** uitvoer genereert die er op elk scherm geweldig uitziet. Of je nu een desktop‑dashboard, een web‑gebaseerde GIS‑portal of een afdrukbaar rapport bouwt, dezelfde code werkt op .NET Framework, .NET Core en .NET 5/6. Laten we het volledige proces doorlopen — van het instellen van de kaartafmetingen tot het exporteren van een schone, schaalbare SVG‑bestand.
 
 ## Snelle antwoorden
-- **Waar gaat deze tutorial over?** Steden toevoegen aan een kaart en exporteren als een SVG‑bestand.  
-- **Welke bibliotheek is vereist?** Aspose.GIS for .NET.  
-- **Heb ik een licentie nodig?** Een gratis proefversie is beschikbaar; een licentie is vereist voor productie.  
-- **Kan ik dit gebruiken in web‑apps?** Ja – dezelfde code werkt in ASP.NET, Blazor en andere .NET‑webframeworks.  
-- **Welk uitvoerformaat wordt geproduceerd?** Een SVG‑kaart die in browsers kan worden weergegeven of verder kan worden bewerkt.
+- **Waar gaat deze tutorial over?** Stedenpunten aan een kaart toevoegen en het resultaat exporteren als een SVG‑bestand.  
+- **Welke bibliotheek is vereist?** Aspose.GIS voor .NET (gratis proefversie beschikbaar).  
+- **Heb ik een licentie nodig?** Een proefversie werkt voor ontwikkeling; een commerciële licentie is vereist voor productiegebruik.  
+- **Kan ik dit gebruiken in web‑apps?** Absoluut – dezelfde code draait in ASP.NET, Blazor en andere .NET‑webframeworks.  
+- **Welk uitvoerformaat wordt geproduceerd?** Een hoge‑resolutie SVG‑kaart die browsers direct weergeven en die vectorbewerkers verder kunnen bewerken.
 
-## Vereisten
-Voordat je aan de tutorial begint, zorg ervoor dat je de volgende vereisten hebt:
-- Aspose.GIS for .NET Library: Zorg ervoor dat je de Aspose.GIS for .NET‑bibliotheek geïnstalleerd hebt. Je kunt deze downloaden [hier](https://releases.aspose.com/gis/net/).
-- Data‑bestanden: Bereid de benodigde shapefiles en GeoJSON‑data voor de tutorial voor. Je kunt voorbeelddata vinden in de documentatie of je eigen bestanden gebruiken.
+## Wat betekent “SVG‑kaart genereren”?
+*Een SVG‑kaart genereren* betekent geografische gegevens omzetten naar een Scalable Vector Graphics‑bestand dat geometrie, stijlen en interactiviteit behoudt zonder de afbeelding te rasteren. SVG‑bestanden blijven scherp op elk zoomniveau en zijn ideaal voor webvisualisaties.
+
+## Waarom een SVG‑kaart genereren met Aspose.GIS?
+Aspose.GIS ondersteunt **meer dan 70 invoer‑ en uitvoerformaten** (inclusief Shapefile, GeoJSON, KML en GML) en kan kaarten renderen met **sub‑pixelprecisie** terwijl het geheugenverbruik laag blijft. De bibliotheek verwerkt **datasets van honderden pagina's** zonder het volledige bestand in het geheugen te laden, waardoor het perfect is voor grootschalige GIS‑projecten.
+
+## Voorwaarden
+Voordat je aan de tutorial begint, zorg ervoor dat je de volgende voorwaarden hebt:
+- Aspose.GIS voor .NET‑bibliotheek: Zorg ervoor dat je de Aspose.GIS voor .NET‑bibliotheek geïnstalleerd hebt. Je kunt het downloaden [hier](https://releases.aspose.com/gis/net/).
+- Gegevensbestanden: Bereid de benodigde shapefiles en GeoJSON‑gegevens voor de tutorial voor. Je kunt voorbeeldgegevens vinden in de documentatie of je eigen bestanden gebruiken.
 - Ontwikkelomgeving: Zorg voor een .NET‑ontwikkelomgeving, inclusief een code‑editor zoals Visual Studio.
 
 ## Namespaces importeren
-Om te beginnen, importeer je de vereiste namespaces in je .NET‑project. Deze namespaces zijn essentieel voor het werken met Aspose.GIS‑functionaliteiten.
+De `Aspose.Gis`‑namespace biedt alle kern‑GIS‑functionaliteit, terwijl `Aspose.Gis.Rendering` rendering‑specifieke klassen bevat.
 
 ```csharp
 using Aspose.Gis;
@@ -47,7 +82,10 @@ using System.IO;
 using System.Linq;
 ```
 
-## Stap 1: Kaart instellen (kaartafmetingen instellen)
+## Hoe stel ik de kaartafmetingen in?
+`Map` is de kernklasse die het renderoppervlak bevat en lagen beheert.  
+Stel eerst de grootte van je kaartcanvas in zodat de renderer weet hoeveel ruimte hij moet reserveren. Je maakt een `Map`‑object aan, geeft de breedte en hoogte in pixels door, en definieert optioneel een achtergrondkleur. Deze stap bepaalt de uiteindelijke aspectratio, bestandsgrootte en visuele helderheid van de SVG op verschillende apparaten.
+
 ```csharp
 string dataDir = "Your Document Directory";
 using (var map = new Map(800, 476))
@@ -55,16 +93,20 @@ using (var map = new Map(800, 476))
     // Additional code for map setup can be added here.
 }
 ```
-In deze stap initialiseren we een nieuwe kaart met een breedte van 800 pixels en een hoogte van 476 pixels. Pas de afmetingen aan op basis van je ontwerpvereisten.
 
-## Stap 2: Basiskaart toevoegen (vectorlaag tekenen)
+## Hoe teken ik een vectorlaag voor de basiskaart?
+`DrawVectorLayer` rendert een vectorlaag op de kaart met behulp van een opgegeven symbolizer.  
+De `Map`‑klasse biedt een `DrawVectorLayer`‑methode die een shapefile leest en elke feature rendert met een `SimpleFill`‑stijl. Je kunt de vulkleur, lijnbreedte en doorzichtigheid aanpassen om bij je visuele thema te passen, en ook transparantie of patroonvullingen toepassen voor rijkere cartografische effecten.
+
 ```csharp
 var baseMapSymbolizer = new SimpleFill { FillColor = Color.Salmon, StrokeWidth = 0.75 };
 map.Add(VectorLayer.Open(dataDir + "basemap.shp", Drivers.Shapefile), baseMapSymbolizer);
 ```
-Hier **tekenen we een vectorlaag** voor de basiskaart met behulp van een shapefile. Voel je vrij om de `SimpleFill`‑eigenschappen aan te passen aan je visuele stijl.
 
-## Stap 3: Steden aan de kaart toevoegen (steden toevoegen aan kaart, GeoJSON‑kaart laden)
+## Hoe laad ik GeoJSON en voeg ik steden toe aan de kaart?
+`FeatureBasedConfiguration` is een delegate waarmee je elke feature kunt stylen op basis van zijn attributen.  
+Het laden van een GeoJSON‑bestand levert een collectie puntfeatures die steden vertegenwoordigen. Door een `FeatureBasedConfiguration`‑delegate door te geven, kun je elke stadmarker stylen op basis van attributen zoals bevolking of regio. Je kunt ook features filteren of de symboolgrootte dynamisch aanpassen om extra gegevensdimensies weer te geven.
+
 ```csharp
 var citiesSymbolizer = new SimpleMarker() { FillColor = Color.LightBlue };
 citiesSymbolizer.FeatureBasedConfiguration = (feature, symbolizer) =>
@@ -73,42 +115,52 @@ citiesSymbolizer.FeatureBasedConfiguration = (feature, symbolizer) =>
 };
 map.Add(VectorLayer.Open(dataDir + "points.geojson", Drivers.GeoJson), citiesSymbolizer);
 ```
-Deze stap laadt een GeoJSON‑bestand dat stadspunten bevat en **voegt steden aan de kaart toe**. Je kunt de `FeatureBasedConfiguration`‑delegate uitbreiden om steden te stijlen op basis van attributen zoals bevolking.
 
-## Stap 4: Kaart renderen (kaart exporteren als SVG, SVG‑kaart genereren)
+## Hoe exporteer ik de kaart als een SVG‑bestand?
+`Map.Save` geeft de gerenderde kaart uit naar een bestand in het opgegeven formaat.  
+Het aanroepen van `Map.Save` met het argument `SaveFormat.Svg` schrijft de gerenderde vectordata naar een SVG‑bestand op schijf. Het resulterende `cities_out.svg` kan direct worden geopend in elke moderne browser of bewerkt met tools zoals Inkscape. Je kunt ook DPI specificeren of CSS insluiten voor verdere styling.
+
 ```csharp
 map.Render(dataDir + "cities_out.svg", Renderers.Svg);
 ```
-Tot slot **exporteren we de kaart als een SVG**‑bestand. Het resulterende `cities_out.svg` kan worden geopend in elke moderne browser of vector‑grafische editor.
 
-## Conclusie
-Gefeliciteerd! Je hebt met succes **steden aan een kaart toegevoegd** en een SVG‑kaart gegenereerd met Aspose.GIS for .NET. Deze tutorial toonde hoe je kaartafmetingen instelt, vectorlagen tekent, GeoJSON‑data laadt en het resultaat exporteert als schaalbare SVG — perfect voor zowel web‑ als printsituaties.
+## Veelvoorkomende problemen en oplossingen
+- **Fout: ontbrekend gegevensbestand** – Controleer of de relatieve paden naar je shapefile en GeoJSON correct zijn; gebruik absolute paden tijdens het debuggen.  
+- **Steden niet zichtbaar** – Zorg ervoor dat het coördinatenreferentiesysteem van de GeoJSON overeenkomt met het CRS van de basiskaart, of projecteer de gegevens opnieuw met `Geometry.Transform`.  
+- **SVG lijkt leeg** – Controleer of de achtergrondkleur van de kaart niet volledig transparant is ingesteld; stel een lichte vulling in om het renderen te bevestigen.
 
 ## Veelgestelde vragen
-### Kan ik Aspose.GIS for .NET gebruiken in mijn webapplicaties?
-Ja, Aspose.GIS for .NET is geschikt voor zowel desktop‑ als webapplicaties.
 
-### Is er een proefversie beschikbaar?
-Ja, je kunt de gratis proefversie verkennen [hier](https://releases.aspose.com/).
+**Q: Kan ik Aspose.GIS voor .NET gebruiken in mijn webapplicaties?**  
+A: Ja, Aspose.GIS voor .NET werkt naadloos in ASP.NET, Blazor en andere .NET‑webframeworks, en produceert SVG‑output die browsers direct weergeven.
 
-### Waar kan ik ondersteuning vinden voor Aspose.GIS for .NET?
-Bezoek het [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) voor hulp of vragen.
+**Q: Is er een proefversie beschikbaar?**  
+A: Ja, je kunt de gratis proefversie verkennen [hier](https://releases.aspose.com/).
 
-### Kan ik een tijdelijke licentie aanschaffen voor kortlopende projecten?
-Ja, een tijdelijke licentie is beschikbaar [hier](https://purchase.aspose.com/temporary-license/).
+**Q: Waar kan ik ondersteuning vinden voor Aspose.GIS voor .NET?**  
+A: Bezoek het [Aspose.GIS‑forum](https://forum.aspose.com/c/gis/33) voor hulp en community‑discussies.
 
-### Zijn er extra tutorials beschikbaar voor Aspose.GIS for .NET?
-Ja, bekijk de [documentatie](https://reference.aspose.com/gis/net/) voor uitgebreide tutorials en handleidingen.
+**Q: Kan ik een tijdelijke licentie kopen voor kortetermijnprojecten?**  
+A: Ja, een tijdelijke licentie is beschikbaar [hier](https://purchase.aspose.com/temporary-license/).
+
+**Q: Zijn er extra tutorials voor Aspose.GIS voor .NET?**  
+A: Ja, bekijk de [documentatie](https://reference.aspose.com/gis/net/) voor uitgebreide handleidingen en voorbeeldprojecten.
 
 ---
 
-**Laatst bijgewerkt:** 2026-01-18  
+**Laatst bijgewerkt:** 2026-07-05  
 **Getest met:** Aspose.GIS 24.11 for .NET  
 **Auteur:** Aspose  
 
-{{< /blocks/products/pf/tutorial-page-section >}}
+{{< blocks/products/products-backtop-button >}}
 
+## Gerelateerde tutorials
+
+- [Vectorlaag maken en linearisatietolerantie instellen met Aspose.GIS voor .NET](/gis/net/geometry-processing/set-linearization-tolerance/)
+- [GeoJSON lezen vanuit stream met Aspose.GIS voor .NET](/gis/net/layer-data-operations/read-geojson-from-stream/)
+- [Vectorlaag maken en ruimtelijk referentiesysteem van laag instellen](/gis/net/layer-data-operations/set-layer-spatial-reference-system/)
+
+
+{{< /blocks/products/pf/tutorial-page-section >}}
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}

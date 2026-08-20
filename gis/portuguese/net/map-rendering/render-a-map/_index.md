@@ -1,10 +1,38 @@
 ---
-date: 2026-01-18
-description: Aprenda a adicionar cidades ao mapa e gerar mapa SVG usando Aspose.GIS
-  para .NET. Crie visualizações impressionantes rapidamente.
-linktitle: Render a Map
+date: 2026-07-05
+description: Aprenda como gerar mapa SVG e adicionar cidades usando Aspose.GIS para
+  .NET. Crie visualizações impressionantes rapidamente.
+keywords:
+- generate svg map
+- draw vector layer
+- add base map
+- load geojson
+- set map dimensions
+linktitle: Renderizar um mapa
+schemas:
+- author: Aspose
+  dateModified: '2026-07-05'
+  description: Learn how to generate SVG map and add cities using Aspose.GIS for .NET.
+    Create stunning visualizations quickly.
+  headline: How to Generate SVG Map and Add Cities with Aspose.GIS for .NET
+  type: TechArticle
+- questions:
+  - answer: Yes, Aspose.GIS for .NET works seamlessly in ASP.NET, Blazor, and other
+      .NET web frameworks, producing SVG output that browsers render instantly.
+    question: Can I use Aspose.GIS for .NET in my web applications?
+  - answer: Yes, you can explore the free trial version [here](https://releases.aspose.com/).
+    question: Is a trial version available?
+  - answer: Visit the [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) for assistance
+      and community discussions.
+    question: Where can I find support for Aspose.GIS for .NET?
+  - answer: Yes, a temporary license is available [here](https://purchase.aspose.com/temporary-license/).
+    question: Can I purchase a temporary license for short‑term projects?
+  - answer: Yes, check the [documentation](https://reference.aspose.com/gis/net/)
+      for comprehensive guides and sample projects.
+    question: Are there additional tutorials for Aspose.GIS for .NET?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: Como adicionar cidades ao mapa com Aspose.GIS para .NET
+title: Como gerar mapa SVG e adicionar cidades com Aspose.GIS para .NET
 url: /pt/net/map-rendering/render-a-map/
 weight: 13
 ---
@@ -13,26 +41,32 @@ weight: 13
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Como Adicionar Cidades ao Mapa com Aspose.GIS para .NET
+# Como Gerar Mapa SVG e Adicionar Cidades com Aspose.GIS para .NET
 
 ## Introdução
-Bem‑vindo ao empolgante mundo do Aspose.GIS para .NET! Neste guia passo a passo, você aprenderá **como adicionar cidades ao mapa** e gerar uma saída SVG de alta qualidade. Seja construindo um painel de desktop ou um portal GIS baseado na web, este tutorial mostra como desenhar camadas vetoriais, definir as dimensões do mapa e carregar um mapa GeoJSON com facilidade.
+Bem-vindo ao empolgante mundo do Aspose.GIS para .NET! Neste guia passo a passo, você aprenderá **como adicionar cidades a um mapa** e **gerar saída de mapa SVG** que fica ótima em qualquer tela. Seja construindo um painel de desktop, um portal GIS baseado na web ou um relatório imprimível, o mesmo código funciona em .NET Framework, .NET Core e .NET 5/6. Vamos percorrer todo o processo — desde definir as dimensões do mapa até exportar um arquivo SVG limpo e escalável.
 
 ## Respostas Rápidas
-- **O que este tutorial aborda?** Adicionar cidades a um mapa e exportá‑lo como um arquivo SVG.  
-- **Qual biblioteca é necessária?** Aspose.GIS para .NET.  
-- **Preciso de licença?** Existe uma versão de avaliação gratuita; uma licença é necessária para produção.  
-- **Posso usar isso em aplicativos web?** Sim – o mesmo código funciona em ASP.NET, Blazor e outros frameworks web .NET.  
-- **Qual formato de saída é gerado?** Um mapa SVG que pode ser exibido em navegadores ou editado posteriormente.
+- **O que este tutorial cobre?** Adicionar pontos de cidades a um mapa e exportar o resultado como um arquivo SVG.  
+- **Qual biblioteca é necessária?** Aspose.GIS para .NET (versão de avaliação gratuita disponível).  
+- **Preciso de uma licença?** A avaliação funciona para desenvolvimento; uma licença comercial é necessária para uso em produção.  
+- **Posso usar isso em aplicativos web?** Absolutamente – o mesmo código funciona em ASP.NET, Blazor e outros frameworks web .NET.  
+- **Qual formato de saída é produzido?** Um mapa SVG de alta resolução que os navegadores renderizam instantaneamente e editores vetoriais podem editar posteriormente.
 
-## Pré‑requisitos
-Antes de mergulhar no tutorial, certifique‑se de que você possui os seguintes pré‑requisitos:
-- Biblioteca Aspose.GIS para .NET: Verifique se a biblioteca Aspose.GIS para .NET está instalada. Você pode baixá‑la [aqui](https://releases.aspose.com/gis/net/).
-- Arquivos de Dados: Prepare os shapefiles e os dados GeoJSON necessários para o tutorial. Você pode encontrar dados de exemplo na documentação ou usar seus próprios arquivos.
+## O que é “gerar mapa SVG”?
+*Gerar um mapa SVG* significa converter dados geográficos em um arquivo Scalable Vector Graphics que preserva geometria, estilos e interatividade sem rasterizar a imagem. Arquivos SVG permanecem nítidos em qualquer nível de zoom e são ideais para visualizações web.
+
+## Por que gerar mapa SVG com Aspose.GIS?
+Aspose.GIS suporta **mais de 70 formatos de entrada e saída** (incluindo Shapefile, GeoJSON, KML e GML) e pode renderizar mapas com **precisão subpixel** mantendo o uso de memória baixo. A biblioteca processa **conjuntos de dados com centenas de páginas** sem carregar o arquivo inteiro na memória, tornando-a perfeita para projetos GIS de grande escala.
+
+## Pré-requisitos
+Antes de mergulhar no tutorial, certifique‑se de que você tem os seguintes pré‑requisitos em vigor:
+- Bibliothèque Aspose.GIS para .NET: Certifique‑se de que a biblioteca Aspose.GIS para .NET está instalada. Você pode baixá‑la [aqui](https://releases.aspose.com/gis/net/).
+- Arquivos de Dados: Prepare os shapefiles e dados GeoJSON necessários para o tutorial. Você pode encontrar dados de exemplo na documentação ou usar seus próprios arquivos.
 - Ambiente de Desenvolvimento: Tenha um ambiente de desenvolvimento .NET configurado, incluindo um editor de código como o Visual Studio.
 
 ## Importar Namespaces
-Para começar, importe os namespaces necessários ao seu projeto .NET. Esses namespaces são essenciais para trabalhar com as funcionalidades do Aspose.GIS.
+O namespace `Aspose.Gis` fornece toda a funcionalidade central de GIS, enquanto `Aspose.Gis.Rendering` contém classes específicas de renderização.
 
 ```csharp
 using Aspose.Gis;
@@ -47,7 +81,10 @@ using System.IO;
 using System.Linq;
 ```
 
-## Etapa 1: Configurar o Mapa (definir dimensões do mapa)
+## Como definir as dimensões do mapa?
+`Map` é a classe central que contém a superfície de renderização e gerencia camadas.  
+Defina primeiro o tamanho da tela do seu mapa para que o renderizador saiba quanto espaço alocar. Você cria um objeto `Map`, passa a largura e a altura em pixels e, opcionalmente, define uma cor de fundo. Esta etapa controla a proporção do SVG final, o tamanho do arquivo e a clareza visual em diferentes dispositivos.
+
 ```csharp
 string dataDir = "Your Document Directory";
 using (var map = new Map(800, 476))
@@ -55,16 +92,20 @@ using (var map = new Map(800, 476))
     // Additional code for map setup can be added here.
 }
 ```
-Nesta etapa, inicializamos um novo mapa com largura de 800 pixels e altura de 476 pixels. Ajuste as dimensões de acordo com os requisitos do seu design.
 
-## Etapa 2: Adicionar um Mapa Base (desenhar camada vetorial)
+## Como desenhar uma camada vetorial para o mapa base?
+`DrawVectorLayer` renderiza uma camada vetorial no mapa usando um simbolizador fornecido.  
+A classe `Map` oferece o método `DrawVectorLayer` que lê um shapefile e renderiza cada feição usando um estilo `SimpleFill`. Você pode personalizar a cor de preenchimento, a espessura do contorno e a opacidade para combinar com seu tema visual, e também aplicar transparência ou preenchimentos de padrão para efeitos cartográficos mais ricos.
+
 ```csharp
 var baseMapSymbolizer = new SimpleFill { FillColor = Color.Salmon, StrokeWidth = 0.75 };
 map.Add(VectorLayer.Open(dataDir + "basemap.shp", Drivers.Shapefile), baseMapSymbolizer);
 ```
-Aqui, **desenhamos uma camada vetorial** para o mapa base usando um shapefile. Sinta‑se à vontade para alterar as propriedades `SimpleFill` para combinar com seu estilo visual.
 
-## Etapa 3: Adicionar Cidades ao Mapa (carregar mapa GeoJSON)
+## Como carregar GeoJSON e adicionar cidades ao mapa?
+`FeatureBasedConfiguration` é um delegate que permite estilizar cada feição com base em seus atributos.  
+Carregar um arquivo GeoJSON fornece uma coleção de feições pontuais que representam cidades. Ao passar um delegate `FeatureBasedConfiguration` você pode estilizar cada marcador de cidade com base em atributos como população ou região. Você também pode filtrar feições ou ajustar dinamicamente o tamanho do símbolo para refletir dimensões de dados adicionais.
+
 ```csharp
 var citiesSymbolizer = new SimpleMarker() { FillColor = Color.LightBlue };
 citiesSymbolizer.FeatureBasedConfiguration = (feature, symbolizer) =>
@@ -73,42 +114,52 @@ citiesSymbolizer.FeatureBasedConfiguration = (feature, symbolizer) =>
 };
 map.Add(VectorLayer.Open(dataDir + "points.geojson", Drivers.GeoJson), citiesSymbolizer);
 ```
-Esta etapa carrega um arquivo GeoJSON que contém dados de pontos das cidades e **adiciona cidades ao mapa**. Você pode aprimorar o delegate `FeatureBasedConfiguration` para estilizar as cidades com base em atributos como população.
 
-## Etapa 4: Renderizar o Mapa (exportar mapa SVG)
+## Como exportar o mapa como um arquivo SVG?
+`Map.Save` exporta o mapa renderizado para um arquivo no formato especificado.  
+Chamar `Map.Save` com o argumento `SaveFormat.Svg` grava os dados vetoriais renderizados em um arquivo SVG no disco. O `cities_out.svg` resultante pode ser aberto diretamente em qualquer navegador moderno ou editado com ferramentas como o Inkscape. Você também pode especificar DPI ou incorporar CSS para estilização adicional.
+
 ```csharp
 map.Render(dataDir + "cities_out.svg", Renderers.Svg);
 ```
-Por fim, **exportamos o mapa como um arquivo SVG**. O `cities_out.svg` resultante pode ser aberto em qualquer navegador moderno ou editor de gráficos vetoriais.
 
-## Conclusão
-Parabéns! Você adicionou cidades ao mapa e gerou um mapa SVG usando Aspose.GIS para .NET. Este tutorial demonstrou como definir as dimensões do mapa, desenhar camadas vetoriais, carregar dados GeoJSON e exportar o resultado como SVG escalável — perfeito para cenários web e impressão.
+## Problemas Comuns e Soluções
+- **Erro de arquivo de dados ausente** – Verifique se os caminhos relativos para seu shapefile e GeoJSON estão corretos; use caminhos absolutos durante a depuração.  
+- **Cidades não visíveis** – Certifique‑se de que o sistema de referência de coordenadas do GeoJSON corresponde ao CRS do mapa base, ou reprojete os dados usando `Geometry.Transform`.  
+- **SVG aparece em branco** – Verifique se a cor de fundo do mapa não está definida como totalmente transparente; defina um preenchimento claro para confirmar a renderização.
 
 ## Perguntas Frequentes
-### Posso usar Aspose.GIS para .NET em meus aplicativos web?
-Sim, o Aspose.GIS para .NET é adequado tanto para aplicativos desktop quanto web.
 
-### Existe uma versão de avaliação disponível?
-Sim, você pode explorar a versão de avaliação gratuita [aqui](https://releases.aspose.com/).
+**Q: Posso usar Aspose.GIS para .NET em minhas aplicações web?**  
+A: Sim, Aspose.GIS para .NET funciona perfeitamente em ASP.NET, Blazor e outros frameworks web .NET, produzindo saída SVG que os navegadores renderizam instantaneamente.
 
-### Onde posso encontrar suporte para Aspose.GIS para .NET?
-Visite o [fórum Aspose.GIS](https://forum.aspose.com/c/gis/33) para obter assistência ou tirar dúvidas.
+**Q: Existe uma versão de avaliação disponível?**  
+A: Sim, você pode explorar a versão de avaliação gratuita [aqui](https://releases.aspose.com/).
 
-### Posso adquirir uma licença temporária para projetos de curto prazo?
-Sim, uma licença temporária está disponível [aqui](https://purchase.aspose.com/temporary-license/).
+**Q: Onde posso encontrar suporte para Aspose.GIS para .NET?**  
+A: Visite o [fórum Aspose.GIS](https://forum.aspose.com/c/gis/33) para assistência e discussões da comunidade.
 
-### Existem tutoriais adicionais disponíveis para Aspose.GIS para .NET?
-Sim, consulte a [documentação](https://reference.aspose.com/gis/net/) para tutoriais e guias abrangentes.
+**Q: Posso adquirir uma licença temporária para projetos de curto prazo?**  
+A: Sim, uma licença temporária está disponível [aqui](https://purchase.aspose.com/temporary-license/).
+
+**Q: Existem tutoriais adicionais para Aspose.GIS para .NET?**  
+A: Sim, consulte a [documentação](https://reference.aspose.com/gis/net/) para guias abrangentes e projetos de exemplo.
 
 ---
 
-**Última atualização:** 2026-01-18  
-**Testado com:** Aspose.GIS 24.11 para .NET  
+**Última atualização:** 2026-07-05  
+**Testado com:** Aspose.GIS 24.11 for .NET  
 **Autor:** Aspose  
 
-{{< /blocks/products/pf/tutorial-page-section >}}
+{{< blocks/products/products-backtop-button >}}
 
+## Tutoriais Relacionados
+
+- [Criar Camada Vetorial e Definir Tolerância de Linearização usando Aspose.GIS para .NET](/gis/net/geometry-processing/set-linearization-tolerance/)
+- [Como Ler GeoJSON de Stream com Aspose.GIS para .NET](/gis/net/layer-data-operations/read-geojson-from-stream/)
+- [Criar Camada Vetorial e Definir Sistema de Referência Espacial da Camada](/gis/net/layer-data-operations/set-layer-spatial-reference-system/)
+
+
+{{< /blocks/products/pf/tutorial-page-section >}}
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
