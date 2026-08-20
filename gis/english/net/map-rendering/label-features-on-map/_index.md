@@ -73,7 +73,7 @@ Aspose.GIS offers a pure‑managed .NET library that supports **over 30 input an
 
 ## Prerequisites
 - Proficiency with C# and .NET (Core 3.1+ or .NET 6 recommended)  
-- Aspose.GIS for .NET installed – download it **[here](https://releases.aspose.com/gis/net/)**  
+- Aspose.GIS for .NET installed – download it **[download Aspose.GIS for .NET](https://releases.aspose.com/gis/net/)**  
 - A vector data source such as a GeoJSON file containing point features (any supported GIS format works)  
 
 ## Import Namespaces
@@ -152,13 +152,13 @@ var labeling = new SimpleLabeling(labelAttribute: "name")
 // Rest of the steps remain the same
 ```
 
-## Common Issues and Solutions
+## Common issues and solutions
 - **Labels overlapping** – Increase `HaloSize` or enable `CollisionDetection` in the labeling configuration.  
 - **Missing fonts** – Ensure the font family you specify is installed on the server; otherwise fallback to a system font.  
 - **Performance slowdown on very large files** – Use `FeatureBasedConfiguration` with a priority function to limit the number of labels processed per tile.  
 - **Incorrect coordinate system** – Verify that your source data’s CRS matches the map’s projection; use `SpatialReference` conversion utilities if needed.
 
-## Frequently Asked Questions
+## Frequently asked questions
 
 **Q: Can I label features using custom fonts?**  
 A: Yes. Set `FontFamily` and `FontStyle` in the `SimpleLabeling` configuration to any TrueType or OpenType font installed on the host machine.
@@ -175,7 +175,7 @@ A: Yes. `PointLabelPlacement` lets you control anchor points, offsets, rotation,
 **Q: Can I automate label generation in a batch process?**  
 A: Certainly. Wrap the map rendering code in a loop or background service to process multiple layers or files without manual intervention.
 
-{{< blocks/products/products-backtop-button >}}
+
 
 **Last Updated:** 2026-07-14  
 **Tested With:** Aspose.GIS 24.11 for .NET  
@@ -188,9 +188,9 @@ A: Certainly. Wrap the map rendering code in a loop or background service to pro
 - [How to Crop Layer Features with Aspose.GIS for .NET](/gis/net/layer-management/crop-layer-features/)
 
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
+
+
+
 
 ```csharp
 var pointLabeling = new SimpleLabeling("name")
@@ -216,3 +216,10 @@ var pointLabeling = new SimpleLabeling("name")
 };
 // Rest of the steps remain the same
 ```
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}
