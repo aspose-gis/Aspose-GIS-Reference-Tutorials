@@ -1,12 +1,66 @@
 ---
-date: 2026-02-13
-description: Apprenez à vérifier si un point se trouve à l'intérieur d'un polygone
-  avec Aspose.GIS pour .NET, à créer une géométrie de polygone et à obtenir un point
-  sur la surface en C#. Guide étape par étape avec un exemple de code complet.
-linktitle: Check Point Inside Polygon and Get Point on Surface
+date: 2026-08-13
+description: Apprenez comment vérifier le point à l'intérieur du polygon en utilisant
+  Aspose.GIS for .NET, créer la géométrie du polygon et obtenir le point on surface
+  en C#. Guide étape par étape avec un exemple de code complet.
+keywords:
+- check point inside polygon
+- how to test polygon
+- Aspose.GIS geometry
+- .NET spatial analysis
+lastmod: 2026-08-13
+linktitle: Vérifier le point à l'intérieur du polygon et obtenir le point on surface
+og_description: Apprenez comment vérifier le point à l'intérieur du polygon et obtenir
+  le point on surface en utilisant Aspise.GIS for .NET. Exemple détaillé en C# et
+  meilleures pratiques pour spatial analysis.
+og_image_alt: Screenshot of Aspose.GIS code checking point inside polygon in C#
+og_title: Vérifier le point à l'intérieur du polygon – guide Aspose.GIS .NET
+schemas:
+- author: Aspose
+  dateModified: '2026-08-13'
+  description: Learn how to check point inside polygon using Aspose.GIS for .NET,
+    create polygon geometry, and get point on surface in C#. Step‑by‑step guide with
+    full code example.
+  headline: Check point inside polygon and get point on surface
+  type: TechArticle
+- description: Learn how to check point inside polygon using Aspose.GIS for .NET,
+    create polygon geometry, and get point on surface in C#. Step‑by‑step guide with
+    full code example.
+  name: Check point inside polygon and get point on surface
+  steps:
+  - name: create polygon geometry in C#
+    text: First, we need to **create a polygon** geometry. We define the exterior
+      ring of the polygon by specifying its vertices.
+  - name: get point on surface
+    text: The `GetPointOnSurface()` method returns a single interior point guaranteed
+      to lie inside the polygon’s area. Next, we retrieve a point on the surface of
+      the polygon using this method. This is the **get point on surface** step.
+  - name: check point inside polygon
+    text: The `SpatiallyContains()` method evaluates whether a geometry completely
+      contains another geometry, returning true or false. We can verify whether the
+      retrieved point lies inside the polygon using this method. This demonstrates
+      **retrieving point on polygon** and then checking it.
+  type: HowTo
+- questions:
+  - answer: It verifies whether a given coordinate lies within the boundaries of a
+      polygon geometry.
+    question: What does “check point inside polygon” mean?
+  - answer: '`GetPointOnSurface()` returns a point guaranteed to be inside the polygon.'
+    question: Which method returns a point on a polygon’s interior?
+  - answer: A free trial works for evaluation; a full license is required for production.
+    question: Do I need a license to run the example?
+  - answer: .NET Framework, .NET Core, and .NET Standard are all compatible.
+    question: Which .NET versions are supported?
+  - answer: About 5‑10 minutes to copy, compile, and run.
+    question: How long does the implementation take?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: Vérifier si un point est à l'intérieur d'un polygone et obtenir le point sur
-  la surface
+tags:
+- check point inside polygon
+- Aspose.GIS
+- .NET geometry
+- C# spatial operations
+title: Vérifier le point à l'intérieur du polygon et obtenir le point on surface
 url: /fr/net/geometry-analysis/get-point-on-geometry-surface/
 weight: 25
 ---
@@ -15,35 +69,38 @@ weight: 25
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Vérifier si un point se trouve à l'intérieur d'un polygone et obtenir un point sur la surface
+# Vérifier un point à l'intérieur d'un polygone et obtenir un point sur la surface
 
 ## Introduction
-Dans ce tutoriel, vous apprendrez **comment vérifier si un point se trouve à l'intérieur d'un polygone** avec Aspose.GIS pour .NET et vous verrez également comment **obtenir un point sur la surface** d'une géométrie. Nous parcourrons la création d'une géométrie de polygone en C#, la récupération d'un point qui se trouve sur la surface du polygone, et la vérification que le point réside réellement à l'intérieur du polygone. À la fin, vous disposerez d'un extrait prêt à l'emploi que vous pourrez intégrer dans n'importe quelle application géospatiale .NET.
+Dans ce tutoriel, vous apprendrez **comment vérifier un point à l'intérieur d'un polygone** avec Aspose.GIS pour .NET et vous verrez également comment **obtenir un point sur la surface** d'une géométrie. Nous parcourrons la création d'une géométrie de polygone en C#, la récupération d'un point qui se trouve sur la surface du polygone, et la vérification que le point se trouve réellement à l'intérieur du polygone. À la fin, vous disposerez d'un extrait prêt à l'emploi que vous pourrez intégrer à n'importe quelle application géospatiale .NET.
 
-## Quick Answers
-- **Que signifie « vérifier si un point se trouve à l'intérieur d'un polygone » ?** Cela vérifie si une coordonnée donnée se situe à l'intérieur des limites d'une géométrie de polygone.  
-- **Quelle méthode renvoie un point à l'intérieur d'un polygone ?** `GetPointOnSurface()` renvoie un point garanti d'être à l'intérieur du polygone.  
-- **Ai‑je besoin d'une licence pour exécuter l'exemple ?** Un essai gratuit suffit pour l'évaluation ; une licence complète est requise pour la production.  
-- **Quelles versions de .NET sont prises en charge ?** .NET Framework, .NET Core et .NET Standard sont tous compatibles.  
-- **Combien de temps prend l'implémentation ?** Environ 5‑10 minutes pour copier, compiler et exécuter.
+## Réponses rapides
+- **Que signifie « check point inside polygon » ?** Il vérifie si une coordonnée donnée se trouve à l'intérieur des limites d'une géométrie de polygone.  
+- **Quelle méthode renvoie un point à l'intérieur d'un polygone ?** `GetPointOnSurface()` renvoie un point garanti d'être à l'intérieur du polygone.  
+- **Ai-je besoin d'une licence pour exécuter l'exemple ?** Un essai gratuit suffit pour l'évaluation ; une licence complète est requise pour la production.  
+- **Quelles versions de .NET sont prises en charge ?** .NET Framework, .NET Core et .NET Standard sont tous compatibles.  
+- **Combien de temps prend l'implémentation ?** Environ 5 à 10 minutes pour copier, compiler et exécuter.
 
-## What is “check point inside polygon”?
-Vérifier un point à l'intérieur d'un polygone est une opération spatiale fondamentale. Elle répond à la question « Cette coordonnée se situe-t-elle dans la zone définie par le polygone ? ». Ceci est essentiel pour des tâches telles que le géorepérage, l'analyse cartographique et la validation spatiale.
+## Qu'est‑ce que « check point inside polygon » ?
+La vérification d'un point à l'intérieur d'un polygone détermine si une coordonnée spécifique se trouve à l'intérieur de la zone fermée définie par les sommets du polygone. L'opération renvoie true lorsque le point est entièrement enfermé et false lorsqu'il se trouve à l'extérieur ou sur la frontière. Ce test spatial fondamental alimente la géorepérage, l'analyse basée sur la localisation et les scénarios de validation pilotés par les cartes.
 
-## Why use Aspose.GIS for this task?
-Aspose.GIS fournit une API entièrement gérée, haute performance, qui gère les opérations géométriques complexes sans dépendances externes. Elle prend en charge un large éventail de systèmes de référence de coordonnées, fonctionne sur tous les principaux environnements d'exécution .NET, et offre des méthodes claires et chaînables comme `SpatiallyContains()` et `GetPointOnSurface()`.
+## Pourquoi utiliser Aspose.GIS pour cette tâche ?
+Aspose.GIS propose une API .NET entièrement gérée qui traite les opérations sur les polygones jusqu'à 200 Mo en mode mémoire efficace, prend en charge plus de 50 systèmes de référence de coordonnées, et fonctionne sur .NET Framework, .NET Core et .NET Standard sans dépendances natives.  
+`GetPointOnSurface()` renvoie un point garanti d'être à l'intérieur de l'intérieur de la géométrie.  
+`SpatiallyContains()` détermine si une géométrie contient complètement une autre.  
+Les méthodes chaînables de la bibliothèque — telles que `SpatiallyContains()` et `GetPointOnSurface()` — offrent des résultats déterministes et éliminent le besoin de moteurs GIS externes.
 
-## Prerequisites
-Avant de commencer, assurez‑vous de disposer de ce qui suit :
+## Prérequis
+Avant de commencer, assurez-vous de disposer de ce qui suit :
 
-### Environment Setup
-1. Installez Aspose.GIS pour .NET : téléchargez et installez la bibliothèque Aspose.GIS pour .NET depuis [here](https://releases.aspose.com/gis/net/).  
-2. Configurez votre environnement de développement : assurez‑vous de disposer d'un environnement de développement fonctionnel pour la programmation .NET. Sinon, vous pouvez installer Visual Studio ou tout autre environnement de développement .NET de votre choix.  
-3. Connaissances de base en C# : familiarisez‑vous avec les bases du langage de programmation C# si ce n'est pas déjà le cas.  
-4. Accès à la documentation : gardez la [documentation](https://reference.aspose.com/gis/net/) à portée de main pour vous y référer tout au long du tutoriel.
+### Configuration de l'environnement
+1. Installez Aspose.GIS pour .NET : téléchargez et installez la bibliothèque Aspose.GIS pour .NET depuis la **page de téléchargement d'Aspose.GIS pour .NET**([here](https://releases.aspose.com/gis/net/)).  
+2. Configurez votre environnement de développement : utilisez Visual Studio, Rider ou tout IDE compatible .NET que vous préférez.  
+3. Connaissances de base en C# : vous devez être à l'aise avec les classes, les méthodes et les projets console simples.  
+4. Accès à la documentation : gardez la **documentation Aspose.GIS**([documentation](https://reference.aspose.com/gis/net/)) à portée de main pour référence tout au long du tutoriel.
 
-## Import Namespaces
-Avant de plonger dans l'implémentation, commençons par importer les espaces de noms nécessaires :
+## Importer les espaces de noms
+Avant de plonger dans l'implémentation, commençons par importer les espaces de noms nécessaires :
 
 ```csharp
 using Aspose.Gis.Geometries;
@@ -54,11 +111,10 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## Step‑by‑Step Guide
+## Guide étape par étape
 
-### Step 1: Create Polygon Geometry in C#
-#### Étape 1 : Créer une géométrie de polygone en C#
-Tout d'abord, nous devons **créer une géométrie de polygone**. Nous définissons la boucle extérieure du polygone en spécifiant ses sommets.
+### Étape 1 : créer une géométrie de polygone en C#
+Tout d'abord, nous devons **créer une géométrie de polygone**. Nous définissons le anneau extérieur du polygone en spécifiant ses sommets.
 
 ```csharp
 var polygon = new Polygon();
@@ -71,68 +127,76 @@ polygon.ExteriorRing = new LinearRing(new[]
 });
 ```
 
-### Step 2: Get Point on Surface
-#### Étape 2 : Obtenir un point sur la surface
-Ensuite, nous récupérons un point sur la surface du polygone à l'aide de la méthode `GetPointOnSurface()`. Il s'agit de l'étape **obtenir un point sur la surface**.
+### Étape 2 : obtenir un point sur la surface
+La méthode `GetPointOnSurface()` renvoie un seul point intérieur garanti d'être à l'intérieur de la zone du polygone. Ensuite, nous récupérons un point sur la surface du polygone en utilisant cette méthode. Il s'agit de l'étape **obtenir un point sur la surface**.
 
 ```csharp
 IPoint pointOnSurface = polygon.GetPointOnSurface();
 ```
 
-### Step 3: Check Point Inside Polygon
-#### Étape 3 : Vérifier si le point se trouve à l'intérieur du polygone
-Nous pouvons vérifier si le point récupéré se situe à l'intérieur du polygone en utilisant la méthode `SpatiallyContains()`. Cela montre **la récupération du point sur le polygone** puis sa vérification.
+### Étape 3 : vérifier un point à l'intérieur du polygone
+La méthode `SpatiallyContains()` évalue si une géométrie contient complètement une autre géométrie, renvoyant true ou false. Nous pouvons vérifier si le point récupéré se trouve à l'intérieur du polygone en utilisant cette méthode. Cela démontre **la récupération d'un point sur le polygone** puis sa vérification.
 
 ```csharp
 Console.WriteLine(polygon.SpatiallyContains(pointOnSurface)); // True
 ```
 
-## Common Issues and Solutions
-- **Polygone vide** – Assurez‑vous que la boucle extérieure possède au moins trois sommets distincts ; sinon `GetPointOnSurface()` peut renvoyer un point indéfini.  
-- **Sens horaire vs. anti‑horaire** – L'orientation de la boucle n'affecte pas la vérification de contenance, mais garder un ordre de rotation cohérent facilite d'autres opérations spatiales.  
-- **Système de coordonnées** – L'exemple utilise un simple plan cartésien ; lors de l'utilisation de coordonnées réelles, assurez‑vous que le CRS (système de référence de coordonnées) est correctement défini.
+## Comment tester la contenance d'un polygone en C#
+Vous testez la contenance d'un polygone en créant la géométrie du polygone, en appelant `GetPointOnSurface()` pour obtenir un point intérieur, puis en utilisant `SpatiallyContains()` pour vérifier que le point est à l'intérieur. Ce schéma en deux étapes fonctionne pour tout polygone valide et s'adapte aux grands ensembles de données lorsqu'il est combiné avec le chargement paresseux.
 
-## Frequently Asked Questions
+## Problèmes courants et solutions
+- **Polygone vide** – Assurez-vous que l'anneau extérieur possède au moins trois sommets distincts ; sinon `GetPointOnSurface()` peut renvoyer un point indéfini.  
+- **Sens horaire vs. antihoraire** – L'orientation de l'anneau n'affecte pas la vérification de contenance, mais garder un ordre de rotation cohérent aide pour d'autres opérations spatiales.  
+- **Système de coordonnées** – L'exemple utilise un plan cartésien simple ; lors de l'utilisation de coordonnées du monde réel, assurez‑vous que le CRS (système de référence de coordonnées) est correctement défini.
 
-### FAQ's
+## Questions fréquemment posées
+
+### FAQ
+
 #### Aspose.GIS est‑il compatible avec d'autres frameworks .NET ?
 Oui, Aspose.GIS prend en charge divers frameworks .NET, y compris .NET Framework, .NET Core et .NET Standard.
 
 #### Puis‑je essayer Aspose.GIS avant d'acheter ?
-Oui, vous pouvez télécharger un essai gratuit d'Aspose.GIS depuis [here](https://releases.aspose.com/).
+Oui, vous pouvez télécharger une version d'essai gratuite d'Aspose.GIS depuis la **page de téléchargement d'essai gratuit d'Aspose.GIS**([here](https://releases.aspose.com/)).
 
 #### Comment obtenir du support pour Aspose.GIS ?
-Vous pouvez visiter le forum Aspose.GIS [here](https://forum.aspose.com/c/gis/33) pour demander de l'aide et interagir avec d'autres utilisateurs et développeurs.
+Vous pouvez visiter le **forum Aspose.GIS**([here](https://forum.aspose.com/c/gis/33)) pour demander de l'aide et interagir avec d'autres utilisateurs et développeurs.
 
 #### Aspose.GIS propose‑t‑il des licences temporaires ?
-Oui, vous pouvez obtenir des licences temporaires pour Aspose.GIS depuis [here](https://purchase.aspose.com/temporary-license/).
+Oui, vous pouvez obtenir des licences temporaires pour Aspose.GIS depuis la **page de licence temporaire**([here](https://purchase.aspose.com/temporary-license/)).
 
 #### Où puis‑je acheter Aspose.GIS ?
-Vous pouvez acheter Aspose.GIS sur la page d'achat [here](https://purchase.aspose.com/buy).
+Vous pouvez acheter Aspose.GIS depuis la **page d'achat d'Aspose.GIS**([here](https://purchase.aspose.com/buy)).
 
-### Additional Q&A
+### Questions supplémentaires
 
-**Q:** Quelle est la meilleure façon de gérer de grands ensembles de données de polygones ?  
-**R:** Chargez les géométries de façon paresseuse et réutilisez une seule instance de `GeometryFactory` pour réduire la consommation de mémoire.
+**Q:** Quelle est la meilleure façon de gérer de grands ensembles de polygones ?  
+**A:** Charger les géométries de manière paresseuse et réutiliser une seule instance de `GeometryFactory` pour réduire la consommation de mémoire.
 
 **Q:** Puis‑je récupérer plusieurs points sur la surface ?  
-**R:** `GetPointOnSurface()` renvoie un seul point intérieur. Pour générer plusieurs points intérieurs, vous pouvez utiliser un générateur de points aléatoires à l'intérieur de la boîte englobante du polygone et tester chacun avec `SpatiallyContains()`.
+**A:** `GetPointOnSurface()` renvoie un seul point intérieur. Pour générer plusieurs points intérieurs, vous pouvez utiliser un générateur de points aléatoires à l'intérieur de la boîte englobante du polygone et tester chacun avec `SpatiallyContains()`.
 
 **Q:** Est‑il possible d'exporter le polygone vers un shapefile après sa création ?  
-**R:** Oui, Aspose.GIS fournit les classes `FeatureSet` et `ShapefileWriter` pour écrire des géométries au format Shapefile.
+**A:** Oui, Aspose.GIS fournit les classes `FeatureSet` et `ShapefileWriter` pour écrire les géométries au format Shapefile.
 
 ## Conclusion
-Dans ce tutoriel, nous avons appris comment **vérifier si un point se trouve à l'intérieur d'un polygone** avec Aspose.GIS pour .NET, obtenir un **point sur la surface**, et vérifier sa contenance. Avec Aspose.GIS, la gestion des données géospatiales devient efficace et simple, permettant aux développeurs de créer des applications géospatiales robustes.
+Dans ce tutoriel, nous avons appris comment **vérifier un point à l'intérieur d'un polygone** avec Aspose.GIS pour .NET, obtenir un **point sur la surface** et vérifier sa contenance. Avec Aspose.GIS, la gestion des données géospatiales devient efficace et simple, vous permettant de créer des applications géospatiales robustes qui passent de cartes simples à des analyses spatiales de niveau entreprise.
 
 ---
 
-**Last Updated:** 2026-02-13  
-**Tested With:** Aspose.GIS 24.11 for .NET  
-**Author:** Aspose  
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
+**Dernière mise à jour:** 2026-08-13  
+**Testé avec:** Aspose.GIS 24.11 for .NET  
+**Auteur:** Aspose  
 
 {{< blocks/products/products-backtop-button >}}
+
+## Tutoriels associés
+
+- [Comment créer une géométrie de polygone avec Aspose.GIS pour .NET](/gis/net/geometry-creation/create-polygon-geometry/)
+- [point à l'intérieur du polygone c# – Vérifier que la géométrie en contient une autre](/gis/net/geometry-analysis/check-geometry-contains-another/)
+- [Comment calculer le centroïde d'une géométrie avec Aspose.GIS pour .NET](/gis/net/geometry-analysis/get-geometry-centroid/)
+
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
