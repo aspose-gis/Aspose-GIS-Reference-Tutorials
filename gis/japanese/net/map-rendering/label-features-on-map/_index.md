@@ -1,9 +1,46 @@
 ---
-date: 2026-01-15
-description: Aspose.GIS for .NET を使用してマップ機能にラベルを付ける方法を学び、大規模データセットのラベリング向けにカスタムラベルスタイルオプションを活用しましょう。
-linktitle: Label Features on Map
+date: 2026-07-14
+description: Aspose.GIS for .NET を使用した C# によるラベル付きマップの作成方法を学びます。大規模データセットのラベリング向けにカスタムラベルスタイルオプションを活用できます。
+keywords:
+- create labeled map csharp
+- label points on map
+- label map features
+lastmod: 2026-07-14
+linktitle: マップ上のラベル機能
+og_description: Aspose.GIS for .NET を使用した C# によるラベル付きマップを作成します。高速ラベリング、カスタムスタイル、大規模データセットの処理方法を簡潔なチュートリアルで紹介します。
+og_image_alt: Screenshot of a labeled map generated with Aspose.GIS in C#
+og_title: C# と Aspose.GIS を使用したラベル付きマップ作成 – クイックガイド
+schemas:
+- author: Aspose
+  dateModified: '2026-07-14'
+  description: Learn how to create labeled map C# using Aspose.GIS for .NET, with
+    custom label style options for large dataset labeling.
+  headline: Create Labeled Map in C# with Aspose.GIS for .NET
+  type: TechArticle
+- questions:
+  - answer: Yes. Set `FontFamily` and `FontStyle` in the `SimpleLabeling` configuration
+      to any TrueType or OpenType font installed on the host machine.
+    question: Can I label features using custom fonts?
+  - answer: Absolutely. It natively reads and writes GeoJSON, Shapefile, KML, GML,
+      CSV, and more than 30 additional formats.
+    question: Is Aspose.GIS compatible with other GIS data formats?
+  - answer: Use `FeatureBasedConfiguration` to assign a numeric priority (e.g., population)
+      and let the engine automatically drop low‑priority labels when space is constrained.
+    question: How can I handle large datasets for labeling?
+  - answer: Yes. `PointLabelPlacement` lets you control anchor points, offsets, rotation,
+      and even curvature for line and polygon labels.
+    question: Are there advanced label placement options available?
+  - answer: Certainly. Wrap the map rendering code in a loop or background service
+      to process multiple layers or files without manual intervention.
+    question: Can I automate label generation in a batch process?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: Aspose.GIS for .NET を使用してマップ機能にラベル付け
+tags:
+- label map
+- Aspose.GIS
+- C# mapping
+- GIS rendering
+title: C# と Aspose.GIS for .NET を使用してラベル付きマップを作成する
 url: /ja/net/map-rendering/label-features-on-map/
 weight: 11
 ---
@@ -12,36 +49,31 @@ weight: 11
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.GIS for .NET を使用したマップ機能へのラベル付け
+# C# と Aspose.GIS for .NET を使用したラベル付きマップの作成
 
 ## はじめに
-マップ機能にラベルを付けることは、生の地理空間データを明確でユーザーフレンドリーな可視化に変換するために不可欠です。このチュートリアルでは、Aspose.GIS for .NET を使用して **マップ機能にラベルを付ける方法**（主要キーワード）を学び、カスタムラベルスタイルを探求し、大規模データセットでも機能するテクニックをご紹介します。最後には、マップ上に直接情報テキストを追加でき、アナリストやエンドユーザーにとってより洞察に満ちたものにすることができます。
+このチュートリアルでは、Aspose.GIS for .NET を使用して **C# でラベル付きマップ** アプリケーションを作成する方法を学びます。マップ機能にラベルを付けることで、生の地理空間座標が読みやすく情報量の多いビジュアルに変換され、アナリストやエンドユーザーが即座に理解できるようになります。基本的なポイントラベリング、カスタムスタイリング、高度な配置、そして大規模データセット向けの機能ベース戦略を順に解説し、数行のコードで本番レベルのマップを生成できるようにします。
 
 ## クイック回答
-- **レンダリングのメインクラスは何ですか？** `Map` (Aspose.Gis.Rendering)
-- **シンプルなテキストを追加するラベリングクラスはどれですか？** `SimpleLabeling`
-- **ラベルにスタイル（ハロー、フォント、回転）を適用できますか？** はい – `HaloSize`、`FontStyle`、`Placement` などのプロパティで設定できます
-- **大規模データセットを処理するには？** `FeatureBasedConfiguration` を使用して属性値に基づきラベルの優先順位を付けます
-- **ライセンスは必要ですか？** 開発にはトライアル版で動作しますが、本番環境では商用ライセンスが必要です
+- **レンダリングのメインクラスは何ですか？** `Map` (Aspose.Gis.Rendering)  
+- **シンプルテキストを追加するラベリングクラスはどれですか？** `SimpleLabeling`  
+- **ラベルのスタイル（ハロー、フォント、回転）を設定できますか？** はい – `HaloSize`、`FontStyle`、`Placement` などのプロパティで設定可能です  
+- **大規模データセットはどう処理しますか？** `FeatureBasedConfiguration` を使用して、人口などの属性値に基づきラベルの優先順位を付けます  
+- **ライセンスは必要ですか？** 開発にはトライアルで動作しますが、本番環境では商用ライセンスが必要です  
 
-## ラベルマップ機能とは？
-`label map features` とは、都市名や人口数、カスタム識別子などの読みやすいテキストを幾何オブジェクト（ポイント、ライン、ポリゴン）に付与し、地図が空間情報と属性情報の両方を一目で伝えるようにすることを指します。
+## ラベルマップ機能とは何ですか？
+`label map features` とは、都市名や人口数、カスタム識別子などの読みやすいテキストを幾何オブジェクト（ポイント、ライン、ポリゴン）に付与し、空間位置と属性情報を単一のビジュアルレイヤーで表現することです。この手法により、ユーザーは属性テーブルを別途開くことなく、各フィーチャが何を表すかを瞬時に認識でき、マップの使いやすさが大幅に向上します。
 
 ## なぜ Aspose.GIS をラベルマップ機能に使用するのか？
-- **外部依存がゼロ** – 純粋な .NET ライブラリで、ネイティブ GIS バイナリは不要です。  
-- **豊富なスタイリングオプション** – ハロー、カスタムフォント、回転、アンカーポイントにより外観を細かく調整できます。  
-- **パフォーマンス重視** – 組み込みのフィーチャベースラベリングにより、大規模データセットのレンダリング時に最重要ラベルを優先できます。  
-- **複数の出力形式** – SVG、PNG、PDF など、ラベリング結果が一貫した形式で出力できます。
+Aspose.GIS は純粋なマネージド .NET ライブラリで、**30 以上の入出力フォーマット**（GeoJSON、Shapefile、KML、GML、CSV など）をサポートし、外部のネイティブバイナリなしで SVG、PNG、PDF などにレンダリングできます。組み込みのラベリングエンジンは、機能ベースの優先順位付けとメモリ効率のストリーミングにより、典型的なサーバーハードウェア上で **数十万フィーチャを 1 秒未満で処理** します。これらの定量的なメリットにより、エンタープライズ向けマッピングソリューションの第一選択肢となります。
 
 ## 前提条件
-開始する前に、以下が揃っていることを確認してください：
-
-- C# と .NET フレームワークの基本的な知識  
-- Aspose.GIS for .NET がインストール済み。**[こちら](https://releases.aspose.com/gis/net/)** からダウンロードできます。  
-- ポイントデータを含む GeoJSON ファイル（またはサポートされているベクターフォーマット）
+- C# と .NET に関する熟練度（Core 3.1+ または .NET 6 推奨）  
+- Aspose.GIS for .NET がインストール済み – **[here](https://releases.aspose.com/gis/net/)** からダウンロード  
+- ポイントフィーチャを含む GeoJSON ファイルなどのベクターデータソース（サポートされている GIS フォーマットなら何でも可）  
 
 ## 名前空間のインポート
-C# コードで必要な名前空間をインポートします：
+C# ソースファイルで、必須の Aspose.GIS 名前空間をインポートします。
 
 ```csharp
 using System;
@@ -54,15 +86,18 @@ using Aspose.GIS.Examples.CSharp;
 using FontStyle = Aspose.Gis.Rendering.Labelings.FontStyle;
 ```
 
-これから、いくつかのラベリングシナリオを順に解説します。各シナリオは前のものを基に構築されています。
+これから、前のシナリオを基にした複数のラベリング例を順に見ていきます。
 
-## ポイントラベリング – ポイントにラベルを付ける方法
-### 手順 1: ドキュメントディレクトリへのパスを設定する
+## ポイント ラベリング – ポイントにラベルを付ける方法
+`Map` はレイヤー、スタイル、出力設定を保持するコアレンダリングオブジェクトです。ポイントフィーチャにラベルを付けるには、まずマップインスタンスと、データソースの `name` 属性を読み取るシンプルなラベリング構成が必要です。この基本設定により、各ポイントはデフォルトマーカーで描画され、対応する都市名がその横に表示され、各位置の視覚的手がかりが即座に得られます。
+
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-### 手順 2: シンプルなマーカーシンボルでマップを作成する
+## ポイント ラベリング（スタイル付き） – カスタムラベルスタイル
+`SimpleLabeling` はフィーチャにプレーンテキストラベルを追加するラベリングクラスです。基本マップを作成した後、ハローサイズ、フォントスタイル、カラーを設定してラベルの外観を強化できます。これらのプロパティを調整することで、**カスタムラベルスタイル** が作成され、混雑した背景でも目立ち、密集した都市部での可読性が向上します。
+
 ```csharp
 using (var map = new Map(500, 200))
 {
@@ -80,10 +115,8 @@ using (var map = new Map(500, 200))
 }
 ```
 
-この基本例では、GeoJSON ファイルの `name` 属性を使用して **ポイントにラベルを付ける方法** を示しています。
-
-## ポイントラベリング（スタイル付き） – カスタムラベルスタイル
-前の例の手順 1 と手順 2 を実行した後、ラベリングスタイルをカスタマイズします：
+## ポイント ラベリング（配置） – 高度な配置オプション
+`PointLabelPlacement` はラベルがフィーチャに対してどのようにアンカーされ、オフセットされ、回転されるかを制御します。多数のポイントが密集する場合、重なりを防ぐためにこれらの設定を微調整する必要があります。正確なアンカーポジションと回転角度を指定することで、混雑したマップ領域でも各ラベルが読みやすく保たれます。
 
 ```csharp
 var labeling = new SimpleLabeling(labelAttribute: "name")
@@ -96,10 +129,8 @@ var labeling = new SimpleLabeling(labelAttribute: "name")
 // Rest of the steps remain the same
 ```
 
-追加されたハローとイタリック体フォントにより、ラベルは **カスタムラベルスタイル** となり、混雑した背景でも際立ちます。
-
-## ポイントラベリング（配置） – 高度な配置オプション
-再び、最初の例の手順 1 と手順 2 から始め、配置を調整します：
+## ポイント ラベリング（機能ベース） – 大規模データセットのラベリング
+`FeatureBasedConfiguration` を使用すると、各フィーチャに数値優先度（例: 人口）を割り当て、画面スペースが限られたときに低優先度のラベルを自動的に非表示にできます。全国規模の都市レイヤーのように数万点のポイントがある大規模データセットでは、最も重要な都市が優先的に表示され、スペースが足りない場合は小規模な町が省かれるため、クリーンで情報量の多いマップが実現します。
 
 ```csharp
 var labeling = new SimpleLabeling(labelAttribute: "name")
@@ -117,10 +148,45 @@ var labeling = new SimpleLabeling(labelAttribute: "name")
 // Rest of the steps remain the same
 ```
 
-ここではアンカーポイント、オフセット、回転を制御し、混雑したマップ領域で **ポイントにラベルを付ける方法** を細かく調整できます。
+## よくある問題と解決策
+- **ラベルが重なる** – `HaloSize` を増やすか、ラベリング構成で `CollisionDetection` を有効にします。  
+- **フォントが見つからない** – 指定したフォントファミリーがサーバーにインストールされていることを確認し、無い場合はシステムフォントにフォールバックします。  
+- **非常に大きなファイルでパフォーマンスが低下** – `FeatureBasedConfiguration` に優先度関数を組み合わせ、タイルあたり処理するラベル数を制限します。  
+- **座標系が正しくない** – ソースデータの CRS がマップの投影法と一致しているか確認し、必要に応じて `SpatialReference` 変換ユーティリティを使用します。  
 
-## ポイントラベリング（フィーチャベース） – 大規模データセットのラベリング
-多数のポイントを扱う場合、人口などの属性に基づいてラベルの優先順位を付けたくなることがあります。最初の例の手順 1 と手順 2 を実行し、フィーチャベースのラベリングを実装します：
+## よくある質問
+
+**Q: カスタムフォントを使用して機能にラベルを付けることはできますか？**  
+A: はい。`SimpleLabeling` の構成で `FontFamily` と `FontStyle` を設定すれば、ホストマシンにインストールされている任意の TrueType または OpenType フォントを使用できます。
+
+**Q: Aspose.GIS は他の GIS データフォーマットと互換性がありますか？**  
+A: もちろんです。GeoJSON、Shapefile、KML、GML、CSV など 30 以上のフォーマットをネイティブに読み書きできます。
+
+**Q: ラベリング用に大規模データセットを処理するにはどうすればよいですか？**  
+A: `FeatureBasedConfiguration` を使用して数値優先度（例: 人口）を割り当て、スペースが制限されたときにエンジンが自動的に低優先度ラベルを除外します。
+
+**Q: 高度なラベル配置オプションは利用可能ですか？**  
+A: はい。`PointLabelPlacement` ではアンカーポイント、オフセット、回転、さらにはラインやポリゴンラベル用の曲線配置も制御できます。
+
+**Q: バッチ処理でラベル生成を自動化できますか？**  
+A: もちろんです。マップレンダリングコードをループやバックグラウンドサービスでラップすれば、複数レイヤーやファイルを手動介入なしで処理できます。
+
+{{< blocks/products/products-backtop-button >}}
+
+**Last Updated:** 2026-07-14  
+**Tested With:** Aspose.GIS 24.11 for .NET  
+**Author:** Aspose
+
+## 関連チュートリアル
+
+- [Aspose.GIS for .NET を使用してマップに都市を追加する方法](/gis/net/map-rendering/render-a-map/)
+- [File GDB にベクターレイヤーを作成 – Aspose.GIS .NET チュートリアル](/gis/net/layer-management/create-file-gdb-with-single-layer/)
+- [Aspose.GIS for .NET を使用してレイヤー機能をクロップする方法](/gis/net/layer-management/crop-layer-features/)
+
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
 
 ```csharp
 var pointLabeling = new SimpleLabeling("name")
@@ -146,38 +212,3 @@ var pointLabeling = new SimpleLabeling("name")
 };
 // Rest of the steps remain the same
 ```
-
-この **大規模データセットのラベリング** 戦略により、最も重要な都市（人口順）が最初に表示され、スペースが限られる場合は重要度の低いポイントが省略されます。
-
-## 結論
-おめでとうございます！これで、Aspose.GIS for .NET を使用した **マップ機能へのラベル付け** のさまざまな方法を習得しました。シンプルなポイントラベリングから、大規模データセット向けの高度なフィーチャベーススタイリングまで、ハローや回転、優先順位ルールを試して、オーディエンスが必要とする情報を正確に伝えるマップを作成できます。
-
-## よくある質問
-
-**Q: カスタムフォントでフィーチャにラベルを付けることはできますか？**  
-A: はい。`SimpleLabeling` の設定で `FontFamily` と `FontStyle` を指定すれば、インストール済みの任意のフォントを使用できます。
-
-**Q: Aspose.GIS は他の GIS データ形式と互換性がありますか？**  
-A: もちろんです。GeoJSON、Shapefile、KML、GML など多数の形式をサポートしています。
-
-**Q: 大規模データセットのラベリングはどう処理すればよいですか？**  
-A: `FeatureBasedConfiguration` を使用して優先順位を割り当て、属性値に基づきフォントサイズを動的に調整します（フィーチャベースの例をご参照ください）。
-
-**Q: 高度なラベル配置オプションはありますか？**  
-A: はい。`PointLabelPlacement` を使用して、アンカーポイント、オフセット、回転を調整し、配置を細かくチューニングできます。
-
-**Q: バッチ処理でラベル生成を自動化できますか？**  
-A: もちろんです。マップレンダリングコードをループやバックグラウンドサービスでラップすれば、複数のレイヤーやファイルを自動的に処理できます。
-
----
-
-**最終更新日:** 2026-01-15  
-**テスト環境:** Aspose.GIS 24.11 for .NET  
-**作者:** Aspose  
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}

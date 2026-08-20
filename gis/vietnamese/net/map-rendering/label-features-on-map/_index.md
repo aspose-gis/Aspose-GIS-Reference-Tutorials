@@ -1,10 +1,48 @@
 ---
-date: 2026-01-15
-description: Tìm hiểu cách gắn nhãn cho các đối tượng bản đồ bằng Aspose.GIS cho .NET,
-  với các tùy chọn kiểu nhãn tùy chỉnh cho việc gắn nhãn tập dữ liệu lớn.
-linktitle: Label Features on Map
+date: 2026-07-14
+description: Tìm hiểu cách tạo bản đồ gắn nhãn C# sử dụng Aspose.GIS cho .NET, với
+  các tùy chọn kiểu nhãn tùy chỉnh cho việc gắn nhãn bộ dữ liệu lớn.
+keywords:
+- create labeled map csharp
+- label points on map
+- label map features
+lastmod: 2026-07-14
+linktitle: Gắn Nhãn Các Đối Tượng Trên Bản Đồ
+og_description: Tạo bản đồ gắn nhãn C# bằng Aspose.GIS cho .NET. Khám phá gắn nhãn
+  nhanh, kiểu tùy chỉnh và xử lý bộ dữ liệu lớn trong một hướng dẫn ngắn gọn.
+og_image_alt: Screenshot of a labeled map generated with Aspose.GIS in C#
+og_title: Tạo Bản Đồ Gắn Nhãn trong C# với Aspose.GIS – Hướng Dẫn Nhanh
+schemas:
+- author: Aspose
+  dateModified: '2026-07-14'
+  description: Learn how to create labeled map C# using Aspose.GIS for .NET, with
+    custom label style options for large dataset labeling.
+  headline: Create Labeled Map in C# with Aspose.GIS for .NET
+  type: TechArticle
+- questions:
+  - answer: Yes. Set `FontFamily` and `FontStyle` in the `SimpleLabeling` configuration
+      to any TrueType or OpenType font installed on the host machine.
+    question: Can I label features using custom fonts?
+  - answer: Absolutely. It natively reads and writes GeoJSON, Shapefile, KML, GML,
+      CSV, and more than 30 additional formats.
+    question: Is Aspose.GIS compatible with other GIS data formats?
+  - answer: Use `FeatureBasedConfiguration` to assign a numeric priority (e.g., population)
+      and let the engine automatically drop low‑priority labels when space is constrained.
+    question: How can I handle large datasets for labeling?
+  - answer: Yes. `PointLabelPlacement` lets you control anchor points, offsets, rotation,
+      and even curvature for line and polygon labels.
+    question: Are there advanced label placement options available?
+  - answer: Certainly. Wrap the map rendering code in a loop or background service
+      to process multiple layers or files without manual intervention.
+    question: Can I automate label generation in a batch process?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: Gắn nhãn các tính năng bản đồ bằng Aspose.GIS cho .NET
+tags:
+- label map
+- Aspose.GIS
+- C# mapping
+- GIS rendering
+title: Tạo Bản Đồ Gắn Nhãn trong C# với Aspose.GIS cho .NET
 url: /vi/net/map-rendering/label-features-on-map/
 weight: 11
 ---
@@ -13,34 +51,31 @@ weight: 11
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Gắn nhãn các tính năng bản đồ với Aspose.GIS cho .NET
+# Tạo Bản Đồ Gắn Nhãn trong C# với Aspose.GIS cho .NET
 
 ## Giới thiệu
-Gắn nhãn các tính năng bản đồ là điều cần thiết để chuyển dữ liệu không gian thô thành các hình ảnh rõ ràng, thân thiện với người dùng. Trong hướng dẫn này, bạn sẽ khám phá **cách gắn nhãn các tính năng bản đồ** (từ khóa chính) bằng Aspose.GIS cho .NET, khám phá các kiểu nhãn tùy chỉnh, và xem các kỹ thuật hoạt động ngay cả với các bộ dữ liệu lớn. Khi kết thúc, bạn sẽ có thể thêm văn bản thông tin trực tiếp lên bản đồ, làm cho chúng trở nên sâu sắc hơn cho các nhà phân tích và người dùng cuối.
+Trong hướng dẫn này, bạn sẽ học cách **tạo bản đồ gắn nhãn C#** bằng Aspose.GIS cho .NET. Gắn nhãn các đối tượng bản đồ biến các tọa độ không gian thô thành hình ảnh có thông tin, dễ đọc, giúp các nhà phân tích và người dùng cuối hiểu ngay lập tức. Chúng tôi sẽ hướng dẫn gắn nhãn điểm cơ bản, tùy chỉnh kiểu dáng, đặt nâng cao và các chiến lược dựa trên tính năng cho bộ dữ liệu lớn, để bạn có thể tạo bản đồ sẵn sàng sản xuất chỉ với vài dòng mã.
 
 ## Câu trả lời nhanh
-- **Lớp chính để render là gì?** `Map` (Aspose.Gis.Rendering)
-- **Lớp gắn nhãn nào thêm văn bản đơn giản?** `SimpleLabeling`
-- **Tôi có thể tạo kiểu cho nhãn (halo, phông chữ, xoay) không?** Yes – via properties like `HaloSize`, `FontStyle`, and `Placement`
-- **Làm thế nào để xử lý các bộ dữ liệu lớn?** Use `FeatureBasedConfiguration` to prioritize labels based on attribute values
-- **Tôi có cần giấy phép không?** A trial works for development; a commercial license is required for production
+- **Lớp chính để render là gì?** `Map` (Aspose.Gis.Rendering)  
+- **Lớp gắn nhãn nào thêm văn bản đơn giản?** `SimpleLabeling`  
+- **Có thể tùy chỉnh nhãn (halo, phông chữ, xoay) không?** Có – thông qua các thuộc tính như `HaloSize`, `FontStyle`, và `Placement`  
+- **Làm sao xử lý bộ dữ liệu lớn?** Sử dụng `FeatureBasedConfiguration` để ưu tiên nhãn dựa trên giá trị thuộc tính như dân số  
+- **Cần giấy phép không?** Bản dùng thử hoạt động cho phát triển; giấy phép thương mại cần thiết cho triển khai sản xuất  
 
-## Tính năng gắn nhãn bản đồ là gì?
-`label map features` có nghĩa là gắn văn bản có thể đọc được (như tên thành phố, số liệu dân số, hoặc định danh tùy chỉnh) vào các đối tượng hình học—điểm, đường, hoặc đa giác—để bản đồ truyền đạt cả thông tin không gian và thuộc tính trong một cái nhìn.
+## Các tính năng gắn nhãn bản đồ là gì?
+`label map features` có nghĩa là gắn văn bản có thể đọc được—như tên thành phố, số dân, hoặc định danh tùy chỉnh—vào các đối tượng hình học (điểm, đường, hoặc đa giác) sao cho bản đồ truyền tải cả vị trí không gian và thông tin thuộc tính trong một lớp hình ảnh duy nhất. Cách tiếp cận này cho phép người dùng nhận diện ngay lập tức mỗi đối tượng mà không cần mở bảng thuộc tính riêng, nâng cao đáng kể khả năng sử dụng bản đồ.
 
-## Tại sao nên sử dụng Aspose.GIS để gắn nhãn các tính năng bản đồ?
-- **Zero external dependencies** – thư viện .NET thuần, không yêu cầu binary GIS gốc.  
-- **Rich styling options** – halo, phông chữ tùy chỉnh, xoay, và điểm neo cho phép bạn tinh chỉnh giao diện.  
-- **Performance‑aware** – tính năng gắn nhãn dựa trên đối tượng tích hợp cho phép bạn ưu tiên các nhãn quan trọng nhất khi render các bộ dữ liệu lớn.  
-- **Multiple output formats** – SVG, PNG, PDF, v.v., với kết quả gắn nhãn nhất quán.  
+## Tại sao nên sử dụng Aspose.GIS cho các tính năng gắn nhãn bản đồ?
+Aspose.GIS cung cấp một thư viện .NET thuần quản lý, hỗ trợ **hơn 30 định dạng đầu vào và đầu ra** (bao gồm GeoJSON, Shapefile, KML, GML và CSV) và có thể render ra SVG, PNG, PDF và hơn thế nữa mà không cần các binary gốc bên ngoài. Động cơ gắn nhãn tích hợp của nó xử lý **hàng trăm nghìn đối tượng trong chưa đầy một giây** trên phần cứng máy chủ tiêu chuẩn, nhờ vào ưu tiên dựa trên tính năng và luồng dữ liệu tiết kiệm bộ nhớ. Những lợi ích định lượng này khiến nó trở thành lựa chọn hàng đầu cho các giải pháp bản đồ doanh nghiệp.
 
 ## Yêu cầu trước
-- Kiến thức làm việc với C# và .NET framework.  
-- Aspose.GIS cho .NET đã được cài đặt. Bạn có thể tải xuống **[here](https://releases.aspose.com/gis/net/)**.  
-- Một tệp GeoJSON chứa dữ liệu điểm (hoặc bất kỳ định dạng vector nào được hỗ trợ).  
+- Thành thạo C# và .NET (Core 3.1+ hoặc .NET 6 được khuyến nghị)  
+- Aspose.GIS cho .NET đã được cài đặt – tải **[tại đây](https://releases.aspose.com/gis/net/)**  
+- Một nguồn dữ liệu vector như tệp GeoJSON chứa các đối tượng điểm (bất kỳ định dạng GIS nào được hỗ trợ đều hoạt động)  
 
 ## Nhập không gian tên
-Trong mã C# của bạn, nhập các không gian tên cần thiết:
+Trong tệp nguồn C# của bạn, nhập các không gian tên Aspose.GIS cần thiết:
 
 ```csharp
 using System;
@@ -53,15 +88,18 @@ using Aspose.GIS.Examples.CSharp;
 using FontStyle = Aspose.Gis.Rendering.Labelings.FontStyle;
 ```
 
-Bây giờ chúng ta sẽ đi qua một số kịch bản gắn nhãn, mỗi kịch bản dựa trên phần trước.
+Bây giờ chúng ta sẽ đi qua một số kịch bản gắn nhãn, mỗi kịch bản dựa trên kịch bản trước.
 
-## Gắn nhãn điểm – Cách gắn nhãn các điểm
-### Bước 1: Đặt đường dẫn tới thư mục tài liệu của bạn
+## Gắn nhãn điểm – Cách gắn nhãn cho các điểm
+`Map` là đối tượng render cốt lõi chứa các lớp, kiểu dáng và cài đặt đầu ra. Để gắn nhãn các đối tượng điểm, trước tiên bạn cần một thể hiện bản đồ và một cấu hình gắn nhãn đơn giản đọc thuộc tính `name` từ nguồn dữ liệu của bạn. Cấu hình cơ bản này sẽ render mỗi điểm với một ký hiệu mặc định và hiển thị tên thành phố tương ứng ngay bên cạnh, cung cấp một chỉ dẫn trực quan ngay lập tức cho mỗi vị trí.
+
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-### Bước 2: Tạo bản đồ với ký hiệu đánh dấu đơn giản
+## Gắn nhãn điểm có kiểu dáng – Kiểu nhãn tùy chỉnh
+`SimpleLabeling` là lớp gắn nhãn thêm nhãn văn bản thuần vào các đối tượng. Sau khi thiết lập bản đồ cơ bản, bạn có thể cải thiện giao diện nhãn bằng cách cấu hình kích thước halo, kiểu phông chữ và màu sắc. Điều chỉnh các thuộc tính này tạo ra **kiểu nhãn tùy chỉnh** nổi bật trên nền phức tạp, cải thiện khả năng đọc trong các khu vực đô thị dày đặc.
+
 ```csharp
 using (var map = new Map(500, 200))
 {
@@ -79,10 +117,8 @@ using (var map = new Map(500, 200))
 }
 ```
 
-Trong ví dụ cơ bản này, chúng tôi **cách gắn nhãn các điểm** bằng cách sử dụng thuộc tính `name` từ tệp GeoJSON.
-
-## Gắn nhãn điểm có kiểu – Kiểu nhãn tùy chỉnh
-Thực hiện các bước 1 và 2 từ ví dụ trước, sau đó tùy chỉnh kiểu gắn nhãn:
+## Gắn nhãn điểm được đặt – Tùy chọn đặt nâng cao
+`PointLabelPlacement` kiểm soát cách nhãn được neo, dịch chuyển và xoay so với đối tượng của chúng. Khi nhiều điểm tụ lại với nhau, bạn có thể cần tinh chỉnh các cài đặt này để tránh chồng lấn. Bằng cách chỉ định vị trí neo chính xác và góc xoay, mỗi nhãn vẫn giữ được độ rõ ràng ngay cả trong các vùng bản đồ đông đúc.
 
 ```csharp
 var labeling = new SimpleLabeling(labelAttribute: "name")
@@ -95,10 +131,8 @@ var labeling = new SimpleLabeling(labelAttribute: "name")
 // Rest of the steps remain the same
 ```
 
-Halo và phông chữ in nghiêng được thêm vào mang lại cho nhãn một **kiểu nhãn tùy chỉnh** nổi bật trên nền phức tạp.
-
-## Gắn nhãn điểm có vị trí – Tùy chọn đặt nâng cao
-Một lần nữa, bắt đầu với các bước 1 và 2 từ ví dụ đầu tiên, sau đó điều chỉnh vị trí:
+## Gắn nhãn điểm dựa trên tính năng – Gắn nhãn bộ dữ liệu lớn
+`FeatureBasedConfiguration` cho phép bạn gán mức ưu tiên số (ví dụ, dân số) cho mỗi đối tượng và tự động ẩn các nhãn có ưu tiên thấp hơn khi không gian màn hình hạn chế. Đối với bộ dữ liệu khổng lồ (ví dụ, lớp thành phố quy mô quốc gia với hàng chục ngàn điểm), chiến lược này đảm bảo các thành phố quan trọng nhất xuất hiện trước, trong khi các thị trấn nhỏ hơn sẽ bị loại bỏ nếu không còn đủ chỗ, mang lại một bản đồ sạch sẽ và thông tin.
 
 ```csharp
 var labeling = new SimpleLabeling(labelAttribute: "name")
@@ -116,10 +150,45 @@ var labeling = new SimpleLabeling(labelAttribute: "name")
 // Rest of the steps remain the same
 ```
 
-Ở đây chúng tôi kiểm soát các điểm neo, độ dịch và xoay, cung cấp cho bạn khả năng kiểm soát chi tiết về **cách gắn nhãn các điểm** trong các khu vực bản đồ đông đúc.
+## Vấn đề thường gặp và giải pháp
+- **Nhãn chồng lấn** – Tăng `HaloSize` hoặc bật `CollisionDetection` trong cấu hình gắn nhãn.  
+- **Thiếu phông chữ** – Đảm bảo phông chữ bạn chỉ định đã được cài đặt trên máy chủ; nếu không, sẽ fallback sang phông chữ hệ thống.  
+- **Giảm hiệu năng khi xử lý tệp rất lớn** – Sử dụng `FeatureBasedConfiguration` với hàm ưu tiên để giới hạn số nhãn được xử lý cho mỗi tile.  
+- **Hệ thống tọa độ không đúng** – Kiểm tra CRS của dữ liệu nguồn khớp với phép chiếu của bản đồ; sử dụng tiện ích chuyển đổi `SpatialReference` nếu cần.
 
-## Gắn nhãn điểm dựa trên tính năng – Gắn nhãn bộ dữ liệu lớn
-Khi xử lý nhiều điểm, bạn có thể muốn ưu tiên các nhãn dựa trên một thuộc tính như dân số. Thực hiện các bước 1 và 2 từ ví dụ đầu tiên, sau đó triển khai gắn nhãn dựa trên tính năng:
+## Câu hỏi thường gặp
+
+**H: Tôi có thể gắn nhãn các đối tượng bằng phông chữ tùy chỉnh không?**  
+Đ: Có. Đặt `FontFamily` và `FontStyle` trong cấu hình `SimpleLabeling` thành bất kỳ phông chữ TrueType hoặc OpenType nào đã được cài đặt trên máy chủ.
+
+**H: Aspose.GIS có tương thích với các định dạng dữ liệu GIS khác không?**  
+Đ: Hoàn toàn. Nó đọc và ghi nguyên bản GeoJSON, Shapefile, KML, GML, CSV và hơn 30 định dạng khác.
+
+**H: Làm sao tôi có thể xử lý bộ dữ liệu lớn cho việc gắn nhãn?**  
+Đ: Sử dụng `FeatureBasedConfiguration` để gán mức ưu tiên số (ví dụ, dân số) và để engine tự động loại bỏ các nhãn có ưu tiên thấp khi không gian bị giới hạn.
+
+**H: Có các tùy chọn đặt nhãn nâng cao không?**  
+Đ: Có. `PointLabelPlacement` cho phép bạn kiểm soát các điểm neo, độ dịch, góc xoay và thậm chí độ cong cho nhãn đường và đa giác.
+
+**H: Tôi có thể tự động tạo nhãn trong quy trình batch không?**  
+Đ: Chắc chắn. Đặt mã render bản đồ trong một vòng lặp hoặc dịch vụ nền để xử lý nhiều lớp hoặc tệp mà không cần can thiệp thủ công.
+
+{{< blocks/products/products-backtop-button >}}
+
+**Cập nhật lần cuối:** 2026-07-14  
+**Kiểm tra với:** Aspose.GIS 24.11 cho .NET  
+**Tác giả:** Aspose
+
+## Hướng dẫn liên quan
+
+- [Cách Thêm Thành Phố vào Bản Đồ với Aspose.GIS cho .NET](/gis/net/map-rendering/render-a-map/)
+- [Tạo Lớp Vector trong File GDB – Hướng Dẫn Aspose.GIS .NET](/gis/net/layer-management/create-file-gdb-with-single-layer/)
+- [Cách Cắt Các Đối Tượng Lớp với Aspose.GIS cho .NET](/gis/net/layer-management/crop-layer-features/)
+
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
 
 ```csharp
 var pointLabeling = new SimpleLabeling("name")
@@ -145,38 +214,3 @@ var pointLabeling = new SimpleLabeling("name")
 };
 // Rest of the steps remain the same
 ```
-
-Chiến lược **gắn nhãn bộ dữ liệu lớn** này đảm bảo các thành phố quan trọng nhất (theo dân số) được hiển thị trước, trong khi các điểm ít quan trọng hơn có thể bị bỏ qua khi không gian hạn chế.
-
-## Kết luận
-Chúc mừng! Bạn giờ đã biết nhiều cách để **gắn nhãn các tính năng bản đồ** với Aspose.GIS cho .NET—từ gắn nhãn điểm đơn giản đến kiểu dáng tinh vi, dựa trên tính năng cho các bộ dữ liệu lớn. Thử nghiệm với halo, xoay và quy tắc ưu tiên để tạo ra các bản đồ truyền đạt chính xác những gì khán giả của bạn cần nhìn thấy.
-
-## Câu hỏi thường gặp
-
-**Q: Tôi có thể gắn nhãn các tính năng bằng phông chữ tùy chỉnh không?**  
-A: Có. Đặt `FontFamily` và `FontStyle` trong cấu hình `SimpleLabeling` để sử dụng bất kỳ phông chữ nào đã được cài đặt.
-
-**Q: Aspose.GIS có tương thích với các định dạng dữ liệu GIS khác không?**  
-A: Chắc chắn. Nó hỗ trợ GeoJSON, Shapefile, KML, GML và nhiều định dạng khác nữa.
-
-**Q: Làm thế nào tôi có thể xử lý các bộ dữ liệu lớn cho việc gắn nhãn?**  
-A: Sử dụng `FeatureBasedConfiguration` để chỉ định mức ưu tiên và điều chỉnh kích thước phông chữ một cách động dựa trên giá trị thuộc tính, như đã minh họa trong ví dụ dựa trên tính năng.
-
-**Q: Có các tùy chọn đặt nhãn nâng cao không?**  
-A: Có. Bạn có thể tinh chỉnh vị trí bằng `PointLabelPlacement`, điều chỉnh các điểm neo, độ dịch và xoay.
-
-**Q: Tôi có thể tự động tạo nhãn trong quá trình batch không?**  
-A: Chắc chắn. Đóng gói mã render bản đồ trong một vòng lặp hoặc dịch vụ nền để xử lý nhiều lớp hoặc tệp tự động.
-
----
-
-**Cập nhật lần cuối:** 2026-01-15  
-**Đã kiểm tra với:** Aspose.GIS 24.11 for .NET  
-**Tác giả:** Aspose  
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}

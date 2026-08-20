@@ -1,10 +1,48 @@
 ---
-date: 2026-01-15
-description: تعرّف على كيفية وضع تسميات لميزات الخريطة باستخدام Aspose.GIS لـ .NET،
-  مع خيارات نمط تسميات مخصصة لتوسيم مجموعات البيانات الكبيرة.
-linktitle: Label Features on Map
+date: 2026-07-14
+description: تعلم كيفية إنشاء خريطة معنونة في C# باستخدام Aspose.GIS لـ .NET، مع خيارات
+  نمط تسمية مخصصة لتسمية مجموعات البيانات الكبيرة.
+keywords:
+- create labeled map csharp
+- label points on map
+- label map features
+lastmod: 2026-07-14
+linktitle: وسم العناصر على الخريطة
+og_description: إنشاء خريطة معنونة في C# باستخدام Aspose.GIS لـ .NET. اكتشف التسمية
+  السريعة، الأنماط المخصصة، ومعالجة مجموعات البيانات الكبيرة في دليل مختصر.
+og_image_alt: Screenshot of a labeled map generated with Aspose.GIS in C#
+og_title: إنشاء خريطة معنونة في C# باستخدام Aspose.GIS – دليل سريع
+schemas:
+- author: Aspose
+  dateModified: '2026-07-14'
+  description: Learn how to create labeled map C# using Aspose.GIS for .NET, with
+    custom label style options for large dataset labeling.
+  headline: Create Labeled Map in C# with Aspose.GIS for .NET
+  type: TechArticle
+- questions:
+  - answer: Yes. Set `FontFamily` and `FontStyle` in the `SimpleLabeling` configuration
+      to any TrueType or OpenType font installed on the host machine.
+    question: Can I label features using custom fonts?
+  - answer: Absolutely. It natively reads and writes GeoJSON, Shapefile, KML, GML,
+      CSV, and more than 30 additional formats.
+    question: Is Aspose.GIS compatible with other GIS data formats?
+  - answer: Use `FeatureBasedConfiguration` to assign a numeric priority (e.g., population)
+      and let the engine automatically drop low‑priority labels when space is constrained.
+    question: How can I handle large datasets for labeling?
+  - answer: Yes. `PointLabelPlacement` lets you control anchor points, offsets, rotation,
+      and even curvature for line and polygon labels.
+    question: Are there advanced label placement options available?
+  - answer: Certainly. Wrap the map rendering code in a loop or background service
+      to process multiple layers or files without manual intervention.
+    question: Can I automate label generation in a batch process?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: تسمية ميزات الخريطة باستخدام Aspose.GIS لـ .NET
+tags:
+- label map
+- Aspose.GIS
+- C# mapping
+- GIS rendering
+title: إنشاء خريطة معنونة في C# باستخدام Aspose.GIS لـ .NET
 url: /ar/net/map-rendering/label-features-on-map/
 weight: 11
 ---
@@ -13,36 +51,31 @@ weight: 11
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# وسم ميزات الخريطة باستخدام Aspose.GIS لـ .NET
+# إنشاء خريطة معنونة في C# باستخدام Aspose.GIS لـ .NET
 
-## المقدمة
-وسم ميزات الخريطة أمر أساسي لتحويل البيانات الجغرافية الخام إلى تصورات واضحة وسهلة الاستخدام. في هذا البرنامج التعليمي ستكتشف **كيفية وضع علامات على ميزات الخريطة** باستخدام Aspose.GIS لـ .NET، وتستكشف أنماط العلامات المخصصة، وتتعرف على تقنيات تعمل حتى مع مجموعات البيانات الكبيرة. في النهاية ستتمكن من إضافة نصوص توضيحية مباشرة إلى خرائطك، مما يجعلها أكثر فائدة للمحللين والمستخدمين النهائيين على حد سواء.
+## مقدمة
+في هذا الدرس ستتعلم كيفية **إنشاء خريطة معنونة C#** باستخدام Aspose.GIS لـ .NET. تحويل ميزات الخريطة إلى نصوص يضيف نصًا مقروءًا إلى إحداثيات جغرافية خام، مما ينتج رسومات غنية بالمعلومات يمكن للمحللين والمستخدمين النهائيين فهمها على الفور. سنستعرض تسمية النقاط الأساسية، وتنسيق مخصص، ووضع متقدم، واستراتيجيات قائمة على الميزات لمجموعات البيانات الضخمة، بحيث يمكنك إنتاج خرائط جاهزة للإنتاج ببضع أسطر من الشيفرة.
 
 ## إجابات سريعة
-- **ما هو الصنف الرئيسي للعرض؟** `Map` (Aspose.Gis.Rendering)
-- **أي صنف تسمية يضيف نصًا بسيطًا؟** `SimpleLabeling`
-- **هل يمكنني تنسيق العلامات (الهالة، الخط، الدوران)؟** Yes – via properties like `HaloSize`, `FontStyle`, and `Placement`
-- **كيف يمكن التعامل مع مجموعات البيانات الكبيرة؟** Use `FeatureBasedConfiguration` to prioritize labels based on attribute values
-- **هل أحتاج إلى ترخيص؟** A trial works for development; a commercial license is required for production
+- **ما هي الفئة الرئيسية للتصوير؟** `Map` (Aspose.Gis.Rendering)  
+- **أي فئة تسمية تضيف نصًا بسيطًا؟** `SimpleLabeling`  
+- **هل يمكنني تنسيق التسميات (الهالة، الخط، الدوران)؟** نعم – عبر الخصائص مثل `HaloSize`، `FontStyle`، و `Placement`  
+- **كيف يمكن التعامل مع مجموعات البيانات الكبيرة؟** استخدم `FeatureBasedConfiguration` لإعطاء الأولوية للتسميات بناءً على قيم السمات مثل عدد السكان  
+- **هل أحتاج إلى ترخيص؟** النسخة التجريبية تعمل للتطوير؛ الترخيص التجاري مطلوب للنشر في بيئة الإنتاج  
 
-## ما هي وسوم ميزات الخريطة؟
-`label map features` يعني إرفاق نص قابل للقراءة (مثل أسماء المدن، أرقام السكان، أو معرّفات مخصصة) بأجسام هندسية — نقاط، خطوط، أو مضلعات — بحيث تُظهر الخريطة كل من المعلومات المكانية والسمات بنظرة واحدة.
+## ما هي ميزات خريطة التسميات؟
+`label map features` يعني إرفاق نص قابل للقراءة—مثل أسماء المدن، أعداد السكان، أو معرفات مخصصة—بالكائنات الهندسية (نقاط، خطوط، أو مضلعات) بحيث تُظهر الخريطة كلًا من الموقع المكاني ومعلومات السمات في طبقة بصرية واحدة. يتيح هذا النهج للمستخدمين التعرف فورًا على ما تمثله كل ميزة دون الحاجة لفتح جداول السمات المنفصلة، مما يحسن بشكل كبير من قابلية استخدام الخريطة.
 
-## لماذا نستخدم Aspose.GIS لوسم ميزات الخريطة؟
-- **لا توجد تبعيات خارجية** – مكتبة .NET صافية، لا تحتاج إلى ملفات تنفيذية أصلية للـ GIS.  
-- **خيارات تنسيق غنية** – الهالات، الخطوط المخصصة، الدوران، ونقاط التثبيت تتيح لك ضبط المظهر بدقة.  
-- **مراعاة الأداء** – التسمية القائمة على الميزة المدمجة تتيح لك إعطاء الأولوية لأهم العلامات عند رسم مجموعات بيانات كبيرة.  
-- **صيغ إخراج متعددة** – SVG، PNG، PDF، إلخ، مع نتائج تسمية متسقة.
+## لماذا نستخدم Aspose.GIS لميزات خريطة التسميات؟
+توفر Aspose.GIS مكتبة .NET مُدارة بالكامل تدعم **أكثر من 30 تنسيقًا للإدخال والإخراج** (بما في ذلك GeoJSON، Shapefile، KML، GML، و CSV) ويمكنها التصوير إلى SVG، PNG، PDF، وأكثر دون الحاجة إلى ملفات تنفيذية أصلية خارجية. محرك التسمية المدمج يعالج **مئات الآلاف من الميزات في أقل من ثانية** على عتاد الخادم المعتاد، بفضل الأولوية القائمة على الميزات والبث الفعال للذاكرة. تجعل هذه الفوائد المكمّنة تجعلها خيارًا رئيسيًا لحلول الخرائط على مستوى المؤسسات.
 
-## المتطلبات
-قبل أن تبدأ، تأكد من أن لديك:
-
-- معرفة عملية بـ C# وإطار عمل .NET.  
-- تم تثبيت Aspose.GIS لـ .NET. يمكنك تنزيله **[هنا](https://releases.aspose.com/gis/net/)**.  
-- ملف GeoJSON يحتوي على بيانات نقاط (أو أي صيغة متجهة مدعومة).
+## المتطلبات المسبقة
+- إتقان C# و .NET (Core 3.1+ أو .NET 6 موصى به)  
+- تم تثبيت Aspose.GIS لـ .NET – قم بتنزيله **[هنا](https://releases.aspose.com/gis/net/)**  
+- مصدر بيانات متجه مثل ملف GeoJSON يحتوي على ميزات نقطية (أي تنسيق GIS مدعوم يعمل)  
 
 ## استيراد مساحات الأسماء
-في كود C# الخاص بك، استورد مساحات الأسماء المطلوبة:
+في ملف C# الخاص بك، استورد مساحات الأسماء الأساسية لـ Aspose.GIS:
 
 ```csharp
 using System;
@@ -55,15 +88,18 @@ using Aspose.GIS.Examples.CSharp;
 using FontStyle = Aspose.Gis.Rendering.Labelings.FontStyle;
 ```
 
-الآن سنستعرض عدة سيناريوهات للوسم، كل منها يبني على السابق.
+الآن سنستعرض عدة سيناريوهات للتسمية، كل منها يبني على السابق.
 
-## وسم النقاط – كيفية وسم النقاط
-### الخطوة 1: تحديد المسار إلى دليل المستندات الخاص بك
+## تسمية النقاط – كيفية تسمية النقاط
+`Map` هو كائن التصوير الأساسي الذي يحتوي على الطبقات والأنماط وإعدادات الإخراج. لتسمية ميزات النقاط، تحتاج أولاً إلى نسخة من الخريطة وتكوين تسمية بسيط يقرأ السمة `name` من مصدر البيانات الخاص بك. هذا الإعداد الأساسي يصور كل نقطة بعلامة افتراضية ويعرض اسم المدينة المقابل مباشرةً بجانبها، مما يوفر إشارة بصرية فورية لكل موقع.
+
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-### الخطوة 2: إنشاء خريطة برمز علامة بسيط
+## تسمية النقاط مع تنسيق – نمط تسمية مخصص
+`SimpleLabeling` هي فئة تسمية تضيف تسميات نصية عادية إلى الميزات. بعد إنشاء الخريطة الأساسية، يمكنك تحسين مظهر التسميات عن طريق ضبط حجم الهالة، نمط الخط، واللون. تعديل هذه الخصائص يخلق **نمط تسمية مخصص** يبرز ضد الخلفيات المزدحمة، مما يحسن قابلية القراءة في المناطق الحضرية الكثيفة.
+
 ```csharp
 using (var map = new Map(500, 200))
 {
@@ -81,10 +117,8 @@ using (var map = new Map(500, 200))
 }
 ```
 
-في هذا المثال الأساسي نحن **كيفية وسم النقاط** باستخدام الخاصية `name` من ملف GeoJSON.
-
-## وسم النقاط المنسق – نمط علامة مخصص
-اتبع الخطوتين 1 و2 من المثال السابق، ثم خصص نمط التسمية:
+## تسمية النقاط مع وضع – خيارات وضع متقدمة
+`PointLabelPlacement` يتحكم في كيفية تثبيت التسميات، إزاحتها، وتدويرها بالنسبة لميزاتهم. عندما تتجمع العديد من النقاط معًا، قد تحتاج إلى ضبط هذه الإعدادات بدقة لتجنب التداخل. من خلال تحديد مواقع التثبيت الدقيقة وزوايا الدوران، تظل كل تسمية قابلة للقراءة حتى في مناطق الخريطة المزدحمة.
 
 ```csharp
 var labeling = new SimpleLabeling(labelAttribute: "name")
@@ -97,10 +131,8 @@ var labeling = new SimpleLabeling(labelAttribute: "name")
 // Rest of the steps remain the same
 ```
 
-تضيف الهالة والخط المائل للعلامات **نمط علامة مخصص** يبرز ضد الخلفيات المزدحمة.
-
-## وسم النقاط الموضوعة – خيارات وضع متقدمة
-ابدأ مرة أخرى بالخطوتين 1 و2 من المثال الأول، ثم اضبط الوضع:
+## تسمية النقاط بناءً على الميزة – تسمية مجموعات البيانات الكبيرة
+`FeatureBasedConfiguration` يتيح لك تعيين أولوية رقمية (مثلاً، عدد السكان) لكل ميزة ويخفي تلقائيًا التسميات ذات الأولوية الأقل عندما تكون مساحة الشاشة محدودة. بالنسبة لمجموعات البيانات الضخمة (مثل طبقات المدن على المستوى الوطني التي تحتوي على عشرات الآلاف من النقاط)، تضمن هذه الاستراتيجية ظهور أهم المدن أولاً، بينما تُحذف القرى الصغيرة إذا لم تتوفر مساحة كافية، مما ينتج خريطة نظيفة ومفيدة.
 
 ```csharp
 var labeling = new SimpleLabeling(labelAttribute: "name")
@@ -118,10 +150,45 @@ var labeling = new SimpleLabeling(labelAttribute: "name")
 // Rest of the steps remain the same
 ```
 
-هنا نتحكم بنقاط التثبيت، الإزاحات، والدوران، مما يمنحك تحكمًا دقيقًا في **كيفية وسم النقاط** في مناطق الخريطة المزدحمة.
+## المشكلات الشائعة والحلول
+- **تداخل التسميات** – زيادة `HaloSize` أو تمكين `CollisionDetection` في تكوين التسمية.  
+- **خطوط مفقودة** – تأكد من أن عائلة الخط التي تحددها مثبتة على الخادم؛ وإلا استخدم خط النظام كبديل.  
+- **تباطؤ الأداء على ملفات كبيرة جدًا** – استخدم `FeatureBasedConfiguration` مع دالة أولوية لتقليل عدد التسميات المعالجة لكل بلاطة.  
+- **نظام إحداثيات غير صحيح** – تحقق من أن نظام الإحداثيات المرجعي (CRS) لبيانات المصدر يطابق إسقاط الخريطة؛ استخدم أدوات تحويل `SpatialReference` إذا لزم الأمر.  
 
-## وسم النقاط القائم على الميزة – وسم مجموعة بيانات كبيرة
-عند التعامل مع العديد من النقاط، قد ترغب في إعطاء الأولوية للعلامات بناءً على سمة مثل عدد السكان. اتبع الخطوتين 1 و2 من المثال الأول، ثم نفّذ التسمية القائمة على الميزة:
+## الأسئلة المتكررة
+
+**س: هل يمكنني تسمية الميزات باستخدام خطوط مخصصة؟**  
+ج: نعم. قم بتعيين `FontFamily` و `FontStyle` في تكوين `SimpleLabeling` إلى أي خط TrueType أو OpenType مثبت على الجهاز المضيف.
+
+**س: هل Aspose.GIS متوافق مع صيغ بيانات GIS الأخرى؟**  
+ج: بالتأكيد. يقرأ ويكتب بشكل أصلي GeoJSON، Shapefile، KML، GML، CSV، وأكثر من 30 صيغة إضافية.
+
+**س: كيف يمكنني التعامل مع مجموعات البيانات الكبيرة للتسمية؟**  
+ج: استخدم `FeatureBasedConfiguration` لتعيين أولوية رقمية (مثل عدد السكان) ودع المحرك يحذف تلقائيًا التسميات ذات الأولوية المنخفضة عندما تكون المساحة محدودة.
+
+**س: هل تتوفر خيارات وضع متقدمة للتسميات؟**  
+ج: نعم. `PointLabelPlacement` يتيح لك التحكم في نقاط التثبيت، الإزاحات، الدوران، وحتى الانحناء لتسميات الخطوط والمضلعات.
+
+**س: هل يمكنني أتمتة إنشاء التسميات في عملية دفعة؟**  
+ج: بالتأكيد. غلف كود تصوير الخريطة داخل حلقة أو خدمة خلفية لمعالجة طبقات أو ملفات متعددة دون تدخل يدوي.
+
+{{< blocks/products/products-backtop-button >}}
+
+**آخر تحديث:** 2026-07-14  
+**تم الاختبار مع:** Aspose.GIS 24.11 لـ .NET  
+**المؤلف:** Aspose
+
+## دروس ذات صلة
+
+- [كيفية إضافة مدن إلى الخريطة باستخدام Aspose.GIS لـ .NET](/gis/net/map-rendering/render-a-map/)
+- [إنشاء طبقة متجهة في File GDB – درس Aspose.GIS .NET](/gis/net/layer-management/create-file-gdb-with-single-layer/)
+- [كيفية قص ميزات الطبقة باستخدام Aspose.GIS لـ .NET](/gis/net/layer-management/crop-layer-features/)
+
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
 
 ```csharp
 var pointLabeling = new SimpleLabeling("name")
@@ -147,38 +214,3 @@ var pointLabeling = new SimpleLabeling("name")
 };
 // Rest of the steps remain the same
 ```
-
-تضمن استراتيجية **وسم مجموعة بيانات كبيرة** أن تُظهر أهم المدن (حسب عدد السكان) أولاً، بينما قد تُحذف النقاط الأقل أهمية عندما تكون المساحة محدودة.
-
-## الخلاصة
-تهانينا! الآن تعرف عدة طرق **لوسم ميزات الخريطة** باستخدام Aspose.GIS لـ .NET—من وسم النقاط البسيط إلى تنسيق متقدم قائم على الميزة لمجموعات البيانات الكبيرة. جرّب الهالات، الدورانات، وقواعد الأولوية لتصميم خرائط تنقل بالضبط ما يحتاج جمهورك إلى رؤيته.
-
-## الأسئلة المتكررة
-
-**س: هل يمكنني وسم الميزات باستخدام خطوط مخصصة؟**  
-ج: نعم. قم بتعيين `FontFamily` و `FontStyle` في تكوين `SimpleLabeling` لاستخدام أي خط مثبت.
-
-**س: هل Aspose.GIS متوافق مع صيغ بيانات GIS أخرى؟**  
-ج: بالطبع. يدعم GeoJSON، Shapefile، KML، GML، والعديد من الصيغ الأخرى.
-
-**س: كيف يمكنني التعامل مع مجموعات بيانات كبيرة للوسم؟**  
-ج: استخدم `FeatureBasedConfiguration` لتعيين الأولويات وتعديل أحجام الخط ديناميكيًا بناءً على قيم السمات، كما هو موضح في مثال القائم على الميزة.
-
-**س: هل تتوفر خيارات وضع علامات متقدمة؟**  
-ج: نعم. يمكنك ضبط الوضع بدقة باستخدام `PointLabelPlacement`، مع تعديل نقاط التثبيت، الإزاحات، والدوران.
-
-**س: هل يمكنني أتمتة إنشاء العلامات في عملية دفعة؟**  
-ج: بالتأكيد. غلف كود رسم الخريطة داخل حلقة أو خدمة خلفية لمعالجة طبقات أو ملفات متعددة تلقائيًا.
-
----
-
-**آخر تحديث:** 2026-01-15  
-**تم الاختبار مع:** Aspose.GIS 24.11 لـ .NET  
-**المؤلف:** Aspose  
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}

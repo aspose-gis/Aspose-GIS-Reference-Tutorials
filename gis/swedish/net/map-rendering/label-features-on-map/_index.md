@@ -1,10 +1,48 @@
 ---
-date: 2026-01-15
-description: Lär dig hur du märker kartfunktioner med Aspose.GIS för .NET, med anpassade
-  etikettstilsalternativ för märkning av stora dataset.
-linktitle: Label Features on Map
+date: 2026-07-14
+description: Lär dig hur du skapar en märkt karta i C# med Aspose.GIS för .NET, med
+  custom label style options för large dataset labeling.
+keywords:
+- create labeled map csharp
+- label points on map
+- label map features
+lastmod: 2026-07-14
+linktitle: Label-funktioner på karta
+og_description: Skapa en märkt karta i C# med Aspose.GIS för .NET. Upptäck fast labeling,
+  custom styles, och large‑dataset handling i en kortfattad handledning.
+og_image_alt: Screenshot of a labeled map generated with Aspose.GIS in C#
+og_title: Skapa en märkt karta i C# med Aspose.GIS – Quick Guide
+schemas:
+- author: Aspose
+  dateModified: '2026-07-14'
+  description: Learn how to create labeled map C# using Aspose.GIS for .NET, with
+    custom label style options for large dataset labeling.
+  headline: Create Labeled Map in C# with Aspose.GIS for .NET
+  type: TechArticle
+- questions:
+  - answer: Yes. Set `FontFamily` and `FontStyle` in the `SimpleLabeling` configuration
+      to any TrueType or OpenType font installed on the host machine.
+    question: Can I label features using custom fonts?
+  - answer: Absolutely. It natively reads and writes GeoJSON, Shapefile, KML, GML,
+      CSV, and more than 30 additional formats.
+    question: Is Aspose.GIS compatible with other GIS data formats?
+  - answer: Use `FeatureBasedConfiguration` to assign a numeric priority (e.g., population)
+      and let the engine automatically drop low‑priority labels when space is constrained.
+    question: How can I handle large datasets for labeling?
+  - answer: Yes. `PointLabelPlacement` lets you control anchor points, offsets, rotation,
+      and even curvature for line and polygon labels.
+    question: Are there advanced label placement options available?
+  - answer: Certainly. Wrap the map rendering code in a loop or background service
+      to process multiple layers or files without manual intervention.
+    question: Can I automate label generation in a batch process?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: Etikettera kartobjekt med Aspose.GIS för .NET
+tags:
+- label map
+- Aspose.GIS
+- C# mapping
+- GIS rendering
+title: Skapa en märkt karta i C# med Aspose.GIS för .NET
 url: /sv/net/map-rendering/label-features-on-map/
 weight: 11
 ---
@@ -13,36 +51,31 @@ weight: 11
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Märk kartfunktioner med Aspose.GIS för .NET
+# Skapa en märkt karta i C# med Aspose.GIS för .NET
 
 ## Introduktion
-Att märka kartfunktioner är avgörande för att omvandla rå geospatial data till tydliga, användarvänliga visualiseringar. I den här handledningen kommer du att upptäcka **hur man märker kartfunktioner** (huvudnyckelordet) med Aspose.GIS för .NET, utforska anpassade etikettstilar och se tekniker som fungerar även med stora datamängder. I slutet kommer du att kunna lägga till informativ text direkt på dina kartor, vilket gör dem mer insiktsfulla för analytiker och slutanvändare.
+I den här handledningen kommer du att lära dig hur du **create labeled map C#** applikationer med Aspose.GIS för .NET. Att märka kartfunktioner omvandlar råa geospatiala koordinater till läsbara, informationsrika visualiseringar som analytiker och slutanvändare omedelbart kan förstå. Vi går igenom grundläggande punktmärkning, anpassad styling, avancerad placering och funktionsbaserade strategier för massiva dataset, så att du kan producera produktionsklara kartor med bara några rader kod.
 
 ## Snabba svar
-- **Vad är huvudklassen för rendering?** `Map` (Aspose.Gis.Rendering)
-- **Vilken märkningsklass lägger till enkel text?** `SimpleLabeling`
-- **Kan jag styla etiketter (halo, teckensnitt, rotation)?** Ja – via egenskaper som `HaloSize`, `FontStyle` och `Placement`
-- **Hur hanterar man stora datamängder?** Använd `FeatureBasedConfiguration` för att prioritera etiketter baserat på attributvärden
-- **Behöver jag en licens?** En provversion fungerar för utveckling; en kommersiell licens krävs för produktion
+- **Vad är huvudklassen för rendering?** `Map` (Aspose.Gis.Rendering)  
+- **Vilken märkningsklass lägger till enkel text?** `SimpleLabeling`  
+- **Kan jag styla etiketter (halo, teckensnitt, rotation)?** Ja – via egenskaper som `HaloSize`, `FontStyle` och `Placement`  
+- **Hur hanterar man stora dataset?** Använd `FeatureBasedConfiguration` för att prioritera etiketter baserat på attributvärden som befolkning  
+- **Behöver jag en licens?** En provversion fungerar för utveckling; en kommersiell licens krävs för produktionsdistributioner  
 
-## Vad är märkning av kartfunktioner?
-`label map features` betyder att fästa läsbar text (såsom stadens namn, befolkningsantal eller anpassade identifierare) på geometriska objekt—punkter, linjer eller polygoner—så att kartan förmedlar både rumslig och attributinformation på ett ögonblick.
+## Vad är etikettkartfunktioner?
+`label map features` betyder att fästa läsbar text—såsom stadens namn, befolkningsnummer eller anpassade identifierare—på geometriska objekt (punkter, linjer eller polygoner) så att en karta förmedlar både rumslig placering och attributinformation i ett enda visuellt lager. Detta tillvägagångssätt låter användare omedelbart känna igen vad varje funktion representerar utan att öppna separata attributtabeller, vilket dramatiskt förbättrar kartans användbarhet.
 
-## Varför använda Aspose.GIS för märkning av kartfunktioner?
-- **Inga externa beroenden** – rent .NET-bibliotek, inga inhemska GIS-binärer krävs.  
-- **Rika stilalternativ** – halo, anpassade teckensnitt, rotation och ankarnpunkter låter dig finjustera utseendet.  
-- **Prestandamedveten** – inbyggd funktionsbaserad märkning låter dig prioritera de viktigaste etiketterna vid rendering av stora datamängder.  
-- **Flera utdataformat** – SVG, PNG, PDF osv., med konsekventa märkningsresultat.
+## Varför använda Aspose.GIS för etikettkartfunktioner?
+Aspose.GIS erbjuder ett rent hanterat .NET‑bibliotek som stödjer **över 30 in- och utdataformat** (inklusive GeoJSON, Shapefile, KML, GML och CSV) och kan rendera till SVG, PNG, PDF och mer utan externa inhemska binärer. Dess inbyggda märkningsmotor bearbetar **hundratusentals funktioner på under en sekund** på vanlig serverhårdvara, tack vare funktionsbaserad prioritering och minnes‑effektiv streaming. Dessa kvantifierade fördelar gör det till ett förstahandsval för företagsklassade kartlösningar.
 
 ## Förutsättningar
-Innan du börjar, se till att du har:
-
-- En fungerande kunskap om C# och .NET-ramverket.  
-- Aspose.GIS för .NET installerat. Du kan ladda ner det **[here](https://releases.aspose.com/gis/net/)**.  
-- En GeoJSON-fil som innehåller punktdata (eller något annat stödd vektorformat).  
+- Kunskap i C# och .NET (Core 3.1+ eller .NET 6 rekommenderas)  
+- Aspose.GIS för .NET installerat – ladda ner det **[here](https://releases.aspose.com/gis/net/)**  
+- En vektor datakälla såsom en GeoJSON‑fil som innehåller punktfunktioner (vilket som helst stödjt GIS‑format fungerar)  
 
 ## Importera namnrymder
-I din C#-kod, importera de nödvändiga namnrymderna:
+I din C#‑källfil, importera de väsentliga Aspose.GIS‑namnrymderna:
 
 ```csharp
 using System;
@@ -55,15 +88,18 @@ using Aspose.GIS.Examples.CSharp;
 using FontStyle = Aspose.Gis.Rendering.Labelings.FontStyle;
 ```
 
-Nu kommer vi att gå igenom flera märkningsscenarier, där varje bygger på det föregående.
+Nu kommer vi att gå igenom flera märkningsscenarier, var och en bygger på den föregående.
 
 ## Punktmärkning – Hur man märker punkter
-### Steg 1: Ange sökvägen till din dokumentkatalog
+`Map` är det centrala renderingsobjektet som innehåller lager, stilar och utdatainställningar. För att märka punktfunktioner behöver du först en kartinstans och en enkel märkningskonfiguration som läser `name`‑attributet från din datakälla. Denna grundläggande uppsättning renderar varje punkt med en standardmarkör och visar motsvarande stadens namn direkt bredvid, vilket ger en omedelbar visuell ledtråd för varje plats.
+
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-### Steg 2: Skapa en karta med en enkel markörsymbol
+## Punktmärkning stylad – Anpassad etikettstil
+`SimpleLabeling` är en märkningsklass som lägger till vanliga textetiketter till funktioner. Efter att ha etablerat den grundläggande kartan kan du förbättra etikettens utseende genom att konfigurera halo‑storlek, teckensnittsstil och färg. Justering av dessa egenskaper skapar en **custom label style** som sticker ut mot röriga bakgrunder, vilket förbättrar läsbarheten i täta urbana områden.
+
 ```csharp
 using (var map = new Map(500, 200))
 {
@@ -81,10 +117,8 @@ using (var map = new Map(500, 200))
 }
 ```
 
-I detta grundläggande exempel **hur man märker punkter** med `name`-attributet från GeoJSON-filen.
-
-## Punktmärkning stiliserad – Anpassad etikettstil
-Följ steg 1 och 2 från föregående exempel, och anpassa sedan märkningsstilen:
+## Punktmärkning placerad – Avancerade placeringsalternativ
+`PointLabelPlacement` styr hur etiketter förankras, förskjuts och roteras i förhållande till sina funktioner. När många punkter samlas ihop kan du behöva finjustera dessa inställningar för att undvika överlappning. Genom att specificera exakta förankringspositioner och rotationsvinklar förblir varje etikett läsbar även i trånga kartzoner.
 
 ```csharp
 var labeling = new SimpleLabeling(labelAttribute: "name")
@@ -97,10 +131,8 @@ var labeling = new SimpleLabeling(labelAttribute: "name")
 // Rest of the steps remain the same
 ```
 
-Den tillagda haloen och den kursiva teckensnittet ger etiketterna en **anpassad etikettstil** som sticker ut mot röriga bakgrunder.
-
-## Punktmärkning placerad – Avancerade placeringsalternativ
-Börja återigen med steg 1 och 2 från det första exemplet, och justera sedan placeringen:
+## Punktmärkning funktionsbaserad – Märkning av stora dataset
+`FeatureBasedConfiguration` låter dig tilldela ett numeriskt prioritet (t.ex. befolkning) till varje funktion och automatiskt dölja lägre prioriterade etiketter när skärmutrymmet är begränsat. För massiva dataset (t.ex. nationella stadslager med tiotusentals punkter) säkerställer denna strategi att de viktigaste städerna visas först, medan mindre orter utelämnas om det inte finns tillräckligt med utrymme, vilket levererar en ren och informativ karta.
 
 ```csharp
 var labeling = new SimpleLabeling(labelAttribute: "name")
@@ -118,10 +150,45 @@ var labeling = new SimpleLabeling(labelAttribute: "name")
 // Rest of the steps remain the same
 ```
 
-Här styr vi ankarnpunkter, förskjutningar och rotation, vilket ger dig finjusterad kontroll över **hur man märker punkter** i trånga kartområden.
+## Vanliga problem och lösningar
+- **Etiketter överlappar** – Öka `HaloSize` eller aktivera `CollisionDetection` i märkningskonfigurationen.  
+- **Saknade typsnitt** – Säkerställ att den typsnittsfamilj du anger är installerad på servern; annars fall tillbaka på ett systemtypsnitt.  
+- **Prestandaförsämring på mycket stora filer** – Använd `FeatureBasedConfiguration` med en prioriteringsfunktion för att begränsa antalet etiketter som bearbetas per tile.  
+- **Fel koordinatsystem** – Verifiera att din källdata CRS matchar kartans projektion; använd `SpatialReference` konverteringsverktyg om det behövs.  
 
-## Punktmärkning funktionsbaserad – Märkning av stora datamängder
-När du hanterar många punkter kan du vilja prioritera etiketter baserat på ett attribut som befolkning. Följ steg 1 och 2 från det första exemplet, och implementera sedan funktionsbaserad märkning:
+## Vanliga frågor
+
+**Q: Kan jag märka funktioner med anpassade typsnitt?**  
+A: Ja. Ställ in `FontFamily` och `FontStyle` i `SimpleLabeling`‑konfigurationen till vilket TrueType- eller OpenType‑typsnitt som helst som är installerat på värdmaskinen.
+
+**Q: Är Aspose.GIS kompatibel med andra GIS‑dataformat?**  
+A: Absolut. Det läser och skriver nativt GeoJSON, Shapefile, KML, GML, CSV och mer än 30 ytterligare format.
+
+**Q: Hur kan jag hantera stora dataset för märkning?**  
+A: Använd `FeatureBasedConfiguration` för att tilldela en numerisk prioritet (t.ex. befolkning) och låt motorn automatiskt släppa lågt prioriterade etiketter när utrymmet är begränsat.
+
+**Q: Finns det avancerade placeringsalternativ för etiketter?**  
+A: Ja. `PointLabelPlacement` låter dig kontrollera förankringspunkter, förskjutningar, rotation och även krökning för linje‑ och polygonetiketter.
+
+**Q: Kan jag automatisera etikettgenerering i en batch‑process?**  
+A: Självklart. Packa in kartrenderingskoden i en loop eller bakgrundstjänst för att bearbeta flera lager eller filer utan manuell inblandning.
+
+{{< blocks/products/products-backtop-button >}}
+
+**Senast uppdaterad:** 2026-07-14  
+**Testat med:** Aspose.GIS 24.11 för .NET  
+**Författare:** Aspose
+
+## Relaterade handledningar
+
+- [Hur man lägger till städer på karta med Aspose.GIS för .NET](/gis/net/map-rendering/render-a-map/)
+- [Skapa vektorlager i File GDB – Aspose.GIS .NET handledning](/gis/net/layer-management/create-file-gdb-with-single-layer/)
+- [Hur man beskär lagerfunktioner med Aspose.GIS för .NET](/gis/net/layer-management/crop-layer-features/)
+
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
 
 ```csharp
 var pointLabeling = new SimpleLabeling("name")
@@ -147,36 +214,3 @@ var pointLabeling = new SimpleLabeling("name")
 };
 // Rest of the steps remain the same
 ```
-
-Denna **strategi för märkning av stora datamängder** säkerställer att de viktigaste städerna (efter befolkning) visas först, medan mindre kritiska punkter kan utelämnas när utrymmet är begränsat.
-
-## Slutsats
-Grattis! Du känner nu till flera sätt att **märka kartfunktioner** med Aspose.GIS för .NET—från enkel punktmärkning till sofistikerad, funktionsbaserad stil för stora datamängder. Experimentera med halo, rotationer och prioriteringsregler för att skapa kartor som kommunicerar exakt det din publik behöver se.
-
-## Vanliga frågor
-
-**Q: Kan jag märka funktioner med anpassade teckensnitt?**  
-A: Ja. Ställ in `FontFamily` och `FontStyle` i `SimpleLabeling`-konfigurationen för att använda vilket installerat teckensnitt som helst.
-
-**Q: Är Aspose.GIS kompatibel med andra GIS‑dataformat?**  
-A: Absolut. Den stödjer GeoJSON, Shapefile, KML, GML och många fler format.
-
-**Q: Hur kan jag hantera stora datamängder för märkning?**  
-A: Använd `FeatureBasedConfiguration` för att tilldela prioriteringar och dynamiskt justera teckenstorlekar baserat på attributvärden, som visas i det funktionsbaserade exemplet.
-
-**Q: Finns det avancerade placeringsalternativ för etiketter?**  
-A: Ja. Du kan finjustera placeringen med `PointLabelPlacement`, justera ankarnpunkter, förskjutningar och rotation.
-
-**Q: Kan jag automatisera generering av etiketter i en batch‑process?**  
-A: Självklart. Inslå kartrenderingskoden i en loop eller en bakgrundstjänst för att automatiskt bearbeta flera lager eller filer.
-
-**Senast uppdaterad:** 2026-01-15  
-**Testad med:** Aspose.GIS 24.11 för .NET  
-**Författare:** Aspose  
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}

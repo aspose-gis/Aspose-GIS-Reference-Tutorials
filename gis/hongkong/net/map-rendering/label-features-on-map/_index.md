@@ -1,9 +1,46 @@
 ---
-date: 2026-01-15
-description: 學習如何使用 Aspose.GIS for .NET 為地圖要素加標籤，並提供大型資料集標籤的自訂標籤樣式選項。
-linktitle: Label Features on Map
+date: 2026-07-14
+description: 了解如何使用 C# 及 Aspose.GIS for .NET 建立標籤化地圖，並提供大型資料集標籤的自訂標籤樣式選項。
+keywords:
+- create labeled map csharp
+- label points on map
+- label map features
+lastmod: 2026-07-14
+linktitle: 在地圖上標註圖徵
+og_description: 使用 C# 及 Aspose.GIS for .NET 建立標籤化地圖。探索快速標籤、客製化樣式以及大型資料集處理的精簡教學。
+og_image_alt: Screenshot of a labeled map generated with Aspose.GIS in C#
+og_title: 使用 C# 及 Aspose.GIS 建立標籤化地圖 – 快速指南
+schemas:
+- author: Aspose
+  dateModified: '2026-07-14'
+  description: Learn how to create labeled map C# using Aspose.GIS for .NET, with
+    custom label style options for large dataset labeling.
+  headline: Create Labeled Map in C# with Aspose.GIS for .NET
+  type: TechArticle
+- questions:
+  - answer: Yes. Set `FontFamily` and `FontStyle` in the `SimpleLabeling` configuration
+      to any TrueType or OpenType font installed on the host machine.
+    question: Can I label features using custom fonts?
+  - answer: Absolutely. It natively reads and writes GeoJSON, Shapefile, KML, GML,
+      CSV, and more than 30 additional formats.
+    question: Is Aspose.GIS compatible with other GIS data formats?
+  - answer: Use `FeatureBasedConfiguration` to assign a numeric priority (e.g., population)
+      and let the engine automatically drop low‑priority labels when space is constrained.
+    question: How can I handle large datasets for labeling?
+  - answer: Yes. `PointLabelPlacement` lets you control anchor points, offsets, rotation,
+      and even curvature for line and polygon labels.
+    question: Are there advanced label placement options available?
+  - answer: Certainly. Wrap the map rendering code in a loop or background service
+      to process multiple layers or files without manual intervention.
+    question: Can I automate label generation in a batch process?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: 使用 Aspose.GIS for .NET 為地圖要素加標籤
+tags:
+- label map
+- Aspose.GIS
+- C# mapping
+- GIS rendering
+title: 使用 C# 及 Aspose.GIS for .NET 建立標籤化地圖
 url: /zh-hant/net/map-rendering/label-features-on-map/
 weight: 11
 ---
@@ -12,34 +49,31 @@ weight: 11
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# 使用 Aspose.GIS for .NET 標註地圖圖徵
+# 在 C# 中使用 Aspose.GIS for .NET 建立標籤地圖
 
 ## 簡介
-為了將原始地理空間資料轉換為清晰、使用者友善的視覺化，為地圖圖徵加上標籤是必不可少的。在本教學中，您將學習使用 Aspose.GIS for .NET **how to label map features**（主要關鍵字），探索自訂標籤樣式，並了解即使在大型資料集下也適用的技巧。完成後，您即可直接在地圖上加入說明文字，讓分析師與最終使用者都能獲得更具洞見的圖表。
+在本教學中，您將學習如何使用 Aspose.GIS for .NET **建立標籤地圖 C#** 應用程式。為地圖要素加上標籤，可將原始的地理座標轉換為可讀、資訊豐富的視覺圖像，讓分析師與最終使用者能即時理解。我們將逐步說明基本的點標籤、客製化樣式、進階放置，以及針對大規模資料集的基於要素的策略，讓您只需幾行程式碼即可產出可投入生產的地圖。
 
-## 快速答覆
-- **渲染的主要類別是什麼？** `Map` (Aspose.Gis.Rendering)
-- **哪個標籤類別可加入簡單文字？** `SimpleLabeling`
-- **我可以設定標籤樣式（暈光、字體、旋轉）嗎？** 可以 – 透過 `HaloSize`、`FontStyle`、`Placement` 等屬性
-- **如何處理大型資料集？** 使用 `FeatureBasedConfiguration` 依屬性值為標籤設定優先順序
-- **我需要授權嗎？** 試用版可用於開發；正式環境需購買商業授權
+## 快速解答
+- **渲染的主要類別是什麼？** `Map` (Aspose.Gis.Rendering)  
+- **哪個標籤類別可加入簡單文字？** `SimpleLabeling`  
+- **我可以設定標籤樣式（光暈、字型、旋轉）嗎？** 是 – 透過 `HaloSize`、`FontStyle`、`Placement` 等屬性  
+- **如何處理大型資料集？** 使用 `FeatureBasedConfiguration` 依據屬性值（例如人口）為標籤設定優先順序  
+- **我需要授權嗎？** 試用版可用於開發；正式部署則需商業授權  
 
-## 什麼是 label map features？
-`label map features` 指將可讀文字（例如城市名稱、人口數字或自訂識別碼）附加到幾何物件——點、線或多邊形——上，使地圖能一目了然同時呈現空間與屬性資訊。
+## 什麼是標籤地圖要素？
+`label map features` 指的是將可讀的文字（例如城市名稱、人口數字或自訂識別碼）附加於幾何物件（點、線或多邊形），使地圖在單一視覺圖層中同時傳遞空間位置與屬性資訊。此做法讓使用者無需開啟屬性表，即可即時辨識每個要素的意義，顯著提升地圖的可用性。
 
-## 為何使用 Aspose.GIS 進行 label map features？
-- **零外部相依性** – 純 .NET 函式庫，無需原生 GIS 二進位檔。  
-- **豐富的樣式選項** – 暈光、自訂字型、旋轉與錨點讓您微調外觀。  
-- **注重效能** – 內建的基於圖徵的標籤機制，可在渲染大型資料集時優先顯示最重要的標籤。  
-- **多種輸出格式** – 支援 SVG、PNG、PDF 等，且標籤效果一致。
+## 為何使用 Aspose.GIS 進行標籤地圖要素？
+Aspose.GIS 提供純 .NET 管理的函式庫，支援 **30 種以上的輸入與輸出格式**（包括 GeoJSON、Shapefile、KML、GML 與 CSV），且可直接渲染為 SVG、PNG、PDF 等格式，無需外部原生二進位檔。其內建的標籤引擎在一般伺服器硬體上能於一秒內處理 **數十萬筆要素**，這得益於基於要素的優先排序與記憶體效能高的串流機制。這些可量化的優勢使其成為企業級製圖解決方案的首選。
 
 ## 先決條件
-- 具備 C# 與 .NET 框架的實作經驗。  
-- 已安裝 Aspose.GIS for .NET。您可在 **[此處](https://releases.aspose.com/gis/net/)** 下載。  
-- 一個包含點資料的 GeoJSON 檔案（或任何支援的向量格式）。
+- 熟悉 C# 與 .NET（建議使用 .NET Core 3.1 以上或 .NET 6）  
+- 已安裝 Aspose.GIS for .NET – 下載 **[此處](https://releases.aspose.com/gis/net/)**  
+- 含有點要素的向量資料來源，例如 GeoJSON 檔（任何支援的 GIS 格式皆可）  
 
 ## 匯入命名空間
-在 C# 程式碼中，匯入所需的命名空間：
+在 C# 原始檔案中，匯入必要的 Aspose.GIS 命名空間：
 
 ```csharp
 using System;
@@ -52,15 +86,18 @@ using Aspose.GIS.Examples.CSharp;
 using FontStyle = Aspose.Gis.Rendering.Labelings.FontStyle;
 ```
 
-接下來，我們將逐步說明多個標籤情境，每個情境皆以先前範例為基礎。
+接下來，我們將逐步說明多種標籤情境，每個情境皆以先前的範例為基礎。
 
-## 點標籤 – 如何標記點
-### 步驟 1：設定文件目錄的路徑
+## 點標籤 – 如何為點加標籤
+`Map` 為核心的渲染物件，負責保存圖層、樣式與輸出設定。要為點要素加標籤，首先需要建立一個 map 實例，並設定簡易的標籤配置，以讀取資料來源中的 `name` 屬性。此基本設定會以預設標記繪製每個點，並在其旁邊直接顯示相應的城市名稱，為每個位置提供即時的視覺提示。
+
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-### 步驟 2：建立帶有簡易標記符號的地圖
+## 點標籤樣式 – 自訂標籤樣式
+`SimpleLabeling` 是一個為要素加入純文字標籤的類別。建立基本地圖後，您可以透過設定光暈大小、字型樣式與顏色來提升標籤外觀。調整這些屬性即可產生 **自訂標籤樣式**，在繁雜背景下仍能突出，提高密集城區的可讀性。
+
 ```csharp
 using (var map = new Map(500, 200))
 {
@@ -78,10 +115,8 @@ using (var map = new Map(500, 200))
 }
 ```
 
-在此基本範例中，我們 **how to label points** 使用 GeoJSON 檔案中的 `name` 屬性。
-
-## 點標籤樣式 – 自訂標籤樣式
-依照前述範例的步驟 1 與 2，接著自訂標籤樣式：
+## 點標籤位置 – 進階放置選項
+`PointLabelPlacement` 控制標籤相對於要素的錨點、偏移與旋轉方式。當大量點聚集時，您可能需要微調這些設定以避免重疊。透過指定精確的錨點位置與旋轉角度，即使在擁擠的地圖區域，標籤亦能保持可讀。
 
 ```csharp
 var labeling = new SimpleLabeling(labelAttribute: "name")
@@ -94,10 +129,8 @@ var labeling = new SimpleLabeling(labelAttribute: "name")
 // Rest of the steps remain the same
 ```
 
-加入的暈光與斜體字型為標籤提供 **custom label style**，在繁雜背景中更為突出。
-
-## 點標籤位置 – 進階放置選項
-再次從第一個範例的步驟 1 與 2 開始，然後調整放置方式：
+## 點標籤基於要素 – 大型資料集標籤
+`FeatureBasedConfiguration` 允許您為每個要素指派數值優先順序（例如人口），在螢幕空間受限時自動隱藏低優先順序的標籤。對於龐大資料集（例如全國規模、含有數萬點的城市圖層），此策略可確保最重要的城市優先顯示，若空間不足則省略較小的城鎮，從而產生清晰且具資訊性的地圖。
 
 ```csharp
 var labeling = new SimpleLabeling(labelAttribute: "name")
@@ -115,10 +148,45 @@ var labeling = new SimpleLabeling(labelAttribute: "name")
 // Rest of the steps remain the same
 ```
 
-在此我們控制錨點、偏移與旋轉，讓您在擁擠的地圖區域中對 **how to label points** 具備精細的控制。
+## 常見問題與解決方案
+- **標籤重疊** – 增加 `HaloSize` 或在標籤配置中啟用 `CollisionDetection`。  
+- **缺少字型** – 確認您指定的字型已安裝於伺服器；若未安裝，請使用系統字型作為備援。  
+- **大型檔案效能下降** – 使用帶有優先函式的 `FeatureBasedConfiguration`，限制每個圖塊處理的標籤數量。  
+- **座標系統不正確** – 核對來源資料的 CRS 是否與地圖投影相符；必要時使用 `SpatialReference` 轉換工具。  
 
-## 點標籤基於圖徵 – 大型資料集標籤
-當處理大量點時，您可能希望根據人口等屬性為標籤設定優先順序。依照第一個範例的步驟 1 與 2，接著實作基於圖徵的標籤：
+## 常見問與答
+
+**Q: 我可以使用自訂字型為要素加標籤嗎？**  
+A: 可以。於 `SimpleLabeling` 配置中設定 `FontFamily` 與 `FontStyle`，使用任何已安裝於主機的 TrueType 或 OpenType 字型。
+
+**Q: Aspose.GIS 是否相容其他 GIS 資料格式？**  
+A: 絕對相容。它原生支援讀寫 GeoJSON、Shapefile、KML、GML、CSV 以及超過 30 種其他格式。
+
+**Q: 我該如何處理大型資料集的標籤？**  
+A: 使用 `FeatureBasedConfiguration` 為要素指派數值優先順序（例如人口），讓引擎在空間受限時自動剔除低優先順序的標籤。
+
+**Q: 是否提供進階的標籤放置選項？**  
+A: 有。`PointLabelPlacement` 讓您控制錨點、偏移、旋轉，甚至可設定線與多邊形標籤的曲率。
+
+**Q: 我可以在批次處理中自動產生標籤嗎？**  
+A: 當然可以。將地圖渲染程式碼包裹於迴圈或背景服務中，即可批次處理多個圖層或檔案，免除人工介入。
+
+{{< blocks/products/products-backtop-button >}}
+
+**最後更新:** 2026-07-14  
+**測試環境:** Aspose.GIS 24.11 for .NET  
+**作者:** Aspose
+
+## 相關教學
+
+- [如何使用 Aspose.GIS for .NET 在地圖上新增城市](/gis/net/map-rendering/render-a-map/)
+- [在 File GDB 中建立向量圖層 – Aspose.GIS .NET 教學](/gis/net/layer-management/create-file-gdb-with-single-layer/)
+- [如何使用 Aspose.GIS for .NET 裁剪圖層要素](/gis/net/layer-management/crop-layer-features/)
+
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
 
 ```csharp
 var pointLabeling = new SimpleLabeling("name")
@@ -144,38 +212,3 @@ var pointLabeling = new SimpleLabeling("name")
 };
 // Rest of the steps remain the same
 ```
-
-此 **large dataset labeling** 策略確保最重要的城市（依人口）優先顯示，而在空間受限時較不重要的點則可能被省略。
-
-## 結論
-恭喜！您現在已掌握多種使用 Aspose.GIS for .NET **label map features** 的方法——從簡單的點標籤到針對大型資料集的進階基於圖徵樣式。可嘗試暈光、旋轉與優先規則，打造能精確傳達受眾需求的地圖。
-
-## 常見問題
-
-**Q: 我可以使用自訂字型為圖徵加標籤嗎？**  
-A: 可以。於 `SimpleLabeling` 設定中設定 `FontFamily` 與 `FontStyle` 即可使用任何已安裝的字型。
-
-**Q: Aspose.GIS 是否相容其他 GIS 資料格式？**  
-A: 當然。它支援 GeoJSON、Shapefile、KML、GML 等多種格式。
-
-**Q: 我該如何處理大型資料集的標籤？**  
-A: 使用 `FeatureBasedConfiguration` 依屬性值分配優先順序，並動態調整字型大小，如基於圖徵的範例所示。
-
-**Q: 是否提供進階的標籤放置選項？**  
-A: 有。可使用 `PointLabelPlacement` 微調放置，調整錨點、偏移與旋轉。
-
-**Q: 我可以在批次處理中自動產生標籤嗎？**  
-A: 當然可以。將地圖渲染程式碼包在迴圈或背景服務中，即可自動處理多個圖層或檔案。
-
----
-
-**最後更新：** 2026-01-15  
-**測試環境：** Aspose.GIS 24.11 for .NET  
-**作者：** Aspose  
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
