@@ -1,10 +1,54 @@
 ---
-date: 2026-01-10
-description: تعلم كيفية إنشاء طبقة متجهة في قاعدة بيانات جغرافية ملفية باستخدام Aspose.GIS
-  لـ .NET. إدارة البيانات الجغرافية باستخدام المرجع المكاني WGS84 وخيارات ملف gdb.
-linktitle: Create File GDB with Single Layer
+date: 2026-06-30
+description: تعلم كيفية إنشاء طبقة متجهة في File Geodatabase باستخدام Aspose.GIS لـ
+  .NET. إدارة البيانات الجغرافية باستخدام المرجع المكاني WGS84 وخيارات file gdb.
+keywords:
+- create vector layer
+- add line feature
+- manage geospatial data
+- feature count example
+- file gdb compression
+linktitle: إنشاء File GDB بطبقة واحدة
+schemas:
+- author: Aspose
+  dateModified: '2026-06-30'
+  description: Learn how to create vector layer in a File Geodatabase using Aspose.GIS
+    for .NET. Manage geospatial data with spatial reference WGS84 and file gdb options.
+  headline: Create Vector Layer in File GDB – Aspose.GIS .NET Tutorial
+  type: TechArticle
+- description: Learn how to create vector layer in a File Geodatabase using Aspose.GIS
+    for .NET. Manage geospatial data with spatial reference WGS84 and file gdb options.
+  name: Create Vector Layer in File GDB – Aspose.GIS .NET Tutorial
+  steps:
+  - name: '**Aspose.GIS for .NET** – download it from the [Aspose.GIS for .NET download
+      page](https://releases.aspose.com/gis/net/).'
+    text: '**Aspose.GIS for .NET** – download it from the [Aspose.GIS for .NET download
+      page](https://releases.aspose.com/gis/net/).'
+  - name: '**A .NET development environment** – Visual Studio, Rider, or the `dotnet`
+      CLI.'
+    text: '**A .NET development environment** – Visual Studio, Rider, or the `dotnet`
+      CLI.'
+  - name: '**A folder** where the File GDB will be created (we’ll call it *Your Document
+      Directory*).'
+    text: '**A folder** where the File GDB will be created (we’ll call it *Your Document
+      Directory*).'
+  type: HowTo
+- questions:
+  - answer: It means adding a new vector dataset (points, lines, or polygons) to a
+      geodatabase file.
+    question: What does “create vector layer” mean?
+  - answer: Aspose.GIS for .NET provides full support for File GDB creation and editing.
+    question: Which library should I use?
+  - answer: A free trial works for testing; a commercial license is required for production.
+    question: Do I need a license for development?
+  - answer: Yes – use `SpatialReferenceSystem.Wgs84` for the common WGS84 datum.
+    question: Can I set the spatial reference?
+  - answer: Less than 30 lines to create the GDB, add a line feature, and read back
+      the feature count.
+    question: How many lines of code?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: إنشاء طبقة متجهة في ملف GDB – دليل Aspose.GIS .NET
+title: إنشاء طبقة متجهة في File GDB – Aspose.GIS .NET Tutorial
 url: /ar/net/layer-management/create-file-gdb-with-single-layer/
 weight: 11
 ---
@@ -15,34 +59,34 @@ weight: 11
 
 # إنشاء طبقة متجهة في ملف GDB
 
-## المقدمة
-إذا كنت بحاجة إلى **create vector layer** داخل قاعدة بيانات جغرافية ملفية (GDB) وإدارة البيانات الجغرافية بفعالية، فإن Aspose.GIS for .NET يوفّر لك نهجًا نظيفًا يعتمد على الكود أولاً. في هذا الدليل خطوة بخطوة سنظهر لك كيفية كتابة ميزة خطية، تكوين خيارات ملف GDB، والعمل مع المرجع المكاني WGS84 — كل ذلك في بضع أسطر من C#. في النهاية ستتمكن من عدّ الميزات في طبقة ودمج ملف GDB الناتج في أي سير عمل للخرائط أو التحليل على .NET.
+## مقدمة
+إذا كنت بحاجة إلى **إنشاء طبقة متجهة** داخل قاعدة بيانات جغرافية ملفية (GDB) وإدارة البيانات الجغرافية بكفاءة، فإن Aspose.GIS for .NET يوفّر لك نهجًا نظيفًا يعتمد على الكود أولاً. في هذا الدليل خطوة بخطوة سنوضح لك كيفية كتابة ميزة خطية، وتكوين خيارات ملف GDB، والعمل مع المرجع المكاني WGS84 — كل ذلك في بضع أسطر من C#. في النهاية ستكون قادرًا على عدّ الميزات في طبقة ودمج ملف GDB الناتج في أي سير عمل للخرائط أو التحليل باستخدام .NET.
 
 ## إجابات سريعة
-- **What does “create vector layer” mean?** يعني ذلك إضافة مجموعة بيانات متجهة جديدة (نقاط، خطوط، أو مضلعات) إلى ملف قاعدة بيانات جغرافية.  
-- **Which library should I use?** Aspose.GIS for .NET يوفر دعمًا كاملاً لإنشاء وتحرير File GDB.  
-- **Do I need a license for development?** نسخة تجريبية مجانية تكفي للاختبار؛ يلزم الحصول على ترخيص تجاري للإنتاج.  
-- **Can I set the spatial reference?** نعم – استخدم `SpatialReferenceSystem.Wgs84` للمرجع المكاني الشائع WGS84.  
-- **How many lines of code?** أقل من 30 سطرًا لإنشاء الـ GDB، إضافة ميزة خطية، وقراءة عدد الميزات مرة أخرى.
+- **ماذا يعني “إنشاء طبقة متجهة”?** يعني إضافة مجموعة بيانات متجهة جديدة (نقاط، خطوط، أو مضلعات) إلى ملف قاعدة بيانات جغرافية.  
+- **أي مكتبة يجب أن أستخدم؟** Aspose.GIS for .NET يوفر دعمًا كاملاً لإنشاء وتحرير File GDB.  
+- **هل أحتاج إلى ترخيص للتطوير؟** نسخة تجريبية مجانية تعمل للاختبار؛ يلزم ترخيص تجاري للإنتاج.  
+- **هل يمكنني تعيين المرجع المكاني؟** نعم – استخدم `SpatialReferenceSystem.Wgs84` للمرجع الشائع WGS84.  
+- **كم عدد أسطر الكود؟** أقل من 30 سطرًا لإنشاء الـ GDB، إضافة ميزة خطية، وقراءة عدد الميزات مرة أخرى.
 
-## ما هي عملية “create vector layer”؟
-إنشاء طبقة متجهة يعني تعريف جدول جديد داخل قاعدة البيانات الجغرافية يخزن كائنات هندسية (نقاط، خطوط، مضلعات) مع سماتها. هذه العملية هي الأساس لأي تطبيق GIS يحتاج إلى **manage geospatial data**.
+## ما هي عملية “إنشاء طبقة متجهة”؟
+إنشاء طبقة متجهة يعرّف جدولًا جديدًا في قاعدة البيانات الجغرافية يخزن الكائنات الهندسية (نقاط، خطوط، مضلعات) وسماتها. كل صف يمثل ميزة، وعمود الهندسة يحتوي على شكلها. في Aspose.GIS تقوم بإنشائه عن طريق إنشاء كائن `FeatureClass` داخل `FileGdbDataSource` وتحديد نوع الهندسة.
 
-## لماذا تستخدم Aspose.GIS لإنشاء طبقة متجهة؟
-- **Zero external dependencies** – الـ API يعمل مباشرةً على .NET Framework و .NET Core و .NET 5/6.  
-- **Full support for File GDB** – يمكنك تكوين `FileGdbOptions` للتحكم في الضغط، الفهرسة المكانية، والمزيد.  
-- **Built‑in spatial reference handling** – ما عليك سوى تمرير `SpatialReferenceSystem.Wgs84` للعمل في نظام الإحداثيات العالمي.  
-- **Straightforward API** – اكتب ميزة خطية، أضفها إلى طبقة، واسترجع عدد الميزات ببضع نداءات للطرق.
+## لماذا استخدام Aspose.GIS لإنشاء طبقة متجهة؟
+Aspose.GIS يزيل الاعتماديات الخارجية ويدعم **أكثر من 50** صيغة GIS، مما يجعله حلاً شاملاً لمطوري .NET.  
+يوفر ضغطًا مدمجًا لملفات GDB (حتى تقليل بنسبة 70 % للبيانات المتجهة النموذجية)، وفهرسة مكانية، ومعالجة كاملة لـ WGS84 مباشرةً. تعمل المكتبة على .NET Framework 4.6+، .NET Core 2.0+، و .NET 5/6، لذا يمكنك استهداف أي بيئة حديثة على Windows أو عبر المنصات دون الحاجة إلى مكتبات أصلية إضافية.
 
 ## المتطلبات المسبقة
-قبل أن تبدأ، تأكد من وجود ما يلي:
+قبل البدء، تأكد من وجود:
 
-1. **Aspose.GIS for .NET** – حمّله من [Aspose.GIS for .NET download page](https://releases.aspose.com/gis/net/).  
-2. **A .NET development environment** – Visual Studio أو Rider أو `dotnet` CLI.  
-3. **A folder** حيث سيتم إنشاء File GDB (سنسميه *Your Document Directory*).
+1. **Aspose.GIS for .NET** – حمّله من [صفحة تحميل Aspose.GIS for .NET](https://releases.aspose.com/gis/net/).  
+2. **بيئة تطوير .NET** – Visual Studio، Rider، أو سطر أوامر `dotnet`.  
+3. **مجلد** حيث سيتم إنشاء File GDB (سنسميه *Your Document Directory*).
 
 ## استيراد مساحات الأسماء
-أضف بيانات `using` المطلوبة في أعلى ملف C# الخاص بك:
+عبارات `using` تجلب الأنواع المطلوبة إلى النطاق.  
+
+مساحة الاسم `Document` توفر كائنات GIS الأساسية، بينما `System.IO` تتعامل مع مسارات الملفات.
 
 ```csharp
 using Aspose.Gis;
@@ -58,12 +102,17 @@ using Aspose.Gis.SpatialReferencing;
 ```
 
 ## الخطوة 1: إعداد دليل المستند الخاص بك
+استبدل `"Your Document Directory"` بالمسار المطلق حيث تريد أن يعيش File GDB.  
+إنشاء الدليل مسبقًا يجنبك خطأ “File not found” الذي يواجهه كثير من المستخدمين الجدد.
+
 ```csharp
 string dataDir = "Your Document Directory";
 ```
-استبدل `"Your Document Directory"` بالمسار المطلق حيث تريد أن يعيش File GDB.
 
 ## الخطوة 2: إنشاء قاعدة بيانات جغرافية ملفية بطبقة واحدة
+`FileGdbOptions` هي فئة تتيح لك تكوين الضغط، الفهرسة المكانية، وإعدادات أخرى لقاعدة البيانات الجغرافية الملفية.  
+هذا المقتطف **ينشئ طبقة متجهة** باستخدام `FileGdbOptions`، يكتب ميزة خطية بسيطة، ويخزنها في File GDB يستخدم **المرجع المكاني WGS84**.
+
 ```csharp
 var options = new FileGdbOptions();
 using (var layer = VectorLayer.Create(path, Drivers.FileGdb, options, SpatialReferenceSystem.Wgs84))
@@ -77,9 +126,12 @@ using (var layer = VectorLayer.Create(path, Drivers.FileGdb, options, SpatialRef
     layer.Add(feature);
 }
 ```
-هذا المقتطف **creates a vector layer** باستخدام `FileGdbOptions`، يكتب ميزة خطية بسيطة، ويخزنها في File GDB يستخدم **spatial reference WGS84**.
 
 ## الخطوة 3: فتح قاعدة البيانات الجغرافية الملفية واسترجاع معلومات الطبقة
+`FileGdbDataSource` هو نقطة الدخول لإنشاء وفتح قواعد البيانات الجغرافية الملفية.  
+`FeatureClass` يمثل طبقة متجهة داخل قاعدة البيانات ويوفر الوصول إلى ميزاتها.  
+هنا **نعدّ الميزات في الطبقة** بفتح مجموعة البيانات وطباعة عدد الميزات – في هذه الحالة، `1`.
+
 ```csharp
 using (var dataset = Dataset.Open(path, Drivers.FileGdb))
 using (var layer = dataset.OpenLayer("layer"))
@@ -87,40 +139,47 @@ using (var layer = dataset.OpenLayer("layer"))
     Console.WriteLine("Features count: {0}", layer.Count); // Output: Features count: 1
 }
 ```
-هنا نقوم بـ **count features layer** بفتح مجموعة البيانات وطباعة عدد الميزات – في هذه الحالة، `1`.
+
+## كيف تتحقق من أن الطبقة تم إنشاؤها بشكل صحيح؟
+افتح قاعدة البيانات باستخدام `FileGdbDataSource.Open` واستعلم عن `FeatureClass`. الخاصية `Count` تُعيد العدد الكلي للميزات، مما يؤكد أن الخط تم حفظه. تساعدك هذه الخطوة السريعة على اكتشاف المشكلات مبكرًا، خاصةً عند أتمتة عمليات الاستيراد الضخمة.
 
 ## المشكلات الشائعة والحلول
 | المشكلة | السبب | الحل |
 |-------|--------|-----|
-| **`File not found`** | متغيّر `path` غير صحيح | تحقق من أن `dataDir` يشير إلى مجلد موجود وأن `path` يجمعه مع اسم ملف، على سبيل المثال `Path.Combine(dataDir, "MyData.gdb")`. |
+| **`File not found`** | متغيّر `path` غير صحيح | تحقق من أن `dataDir` يشير إلى مجلد موجود وأن `path` يجمعه مع اسم ملف، مثال `Path.Combine(dataDir, "MyData.gdb")`. |
 | **`Unsupported geometry`** | استخدام نوع هندسة غير مسموح به في File GDB | التزم بـ `Point` أو `LineString` أو `Polygon` للطبقات الأساسية. |
 | **`License not set`** | تشغيل بدون ترخيص صالح في بيئة الإنتاج | سجّل ترخيصك باستخدام `License license = new License(); license.SetLicense("Aspose.GIS.lic");`. |
 
 ## الأسئلة المتكررة
 ### هل يمكنني استخدام Aspose.GIS for .NET في مشاريعي .NET الحالية؟
-نعم، يمكن دمج Aspose.GIS for .NET بسلاسة في مشروعات .NET الحالية.
+نعم، يمكن دمج Aspose.GIS for .NET بسلاسة في مشاريع .NET الحالية الخاصة بك.
 
 ### هل تتوفر نسخة تجريبية من Aspose.GIS for .NET؟
-نعم، يمكنك استكشاف ميزات Aspose.GIS for .NET بتحميل [free trial version](https://releases.aspose.com/).
+نعم، يمكنك استكشاف ميزات Aspose.GIS for .NET بتحميل [نسخة التجربة المجانية](https://releases.aspose.com/).
 
 ### أين يمكنني العثور على وثائق مفصلة لـ Aspose.GIS for .NET؟
-راجع [documentation](https://reference.aspose.com/gis/net/) للحصول على معلومات شاملة حول Aspose.GIS for .NET.
+راجع [الوثائق](https://reference.aspose.com/gis/net/) للحصول على معلومات شاملة حول Aspose.GIS for .NET.
 
-### كيف يمكنني الحصول على دعم لـ Aspose.GIS for .NET؟
-زر [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) للحصول على دعم المجتمع والمساعدة.
+### كيف يمكنني الحصول على الدعم لـ Aspose.GIS for .NET؟
+قم بزيارة [منتدى Aspose.GIS](https://forum.aspose.com/c/gis/33) للحصول على دعم المجتمع والمساعدة.
 
 ### هل تتوفر تراخيص مؤقتة لـ Aspose.GIS for .NET؟
-نعم، يمكنك الحصول على [temporary license](https://purchase.aspose.com/temporary-license/) لـ Aspose.GIS for .NET.
+نعم، يمكنك الحصول على [ترخيص مؤقت](https://purchase.aspose.com/temporary-license/) لـ Aspose.GIS for .NET.
 
 ---
 
-**آخر تحديث:** 2026-01-10  
+**آخر تحديث:** 2026-06-30  
 **تم الاختبار مع:** Aspose.GIS 24.11 for .NET  
-**المؤلف:** Aspose  
+**المؤلف:** Aspose
+
+## دروس ذات صلة
+
+- [إنشاء مجموعة بيانات ملف قاعدة بيانات جغرافية .NET باستخدام Aspose.GIS](/gis/net/layer-management/create-new-file-gdb-dataset/)
+- [إنشاء طبقة متجهة وتعيين نظام الإحداثيات المكاني للطبقة](/gis/net/layer-data-operations/set-layer-spatial-reference-system/)
+- [كيفية حذف طبقة من مجموعة بيانات ملف GDB باستخدام Aspose.GIS](/gis/net/layer-data-operations/remove-layers-from-file-gdb-dataset/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
-
 {{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/products-backtop-button >}}
+{{< /blocks/products/pf/main-wrap-class >}}

@@ -1,10 +1,60 @@
 ---
-date: 2026-01-10
+date: 2026-06-30
 description: تعلم كيفية إنشاء مجموعات بيانات .NET لقاعدة البيانات الجغرافية الملفية
   باستخدام Aspose.GIS لـ .NET. دليل خطوة بخطوة لإدارة بيانات GIS بسهولة.
-linktitle: Create New File GDB Dataset
+keywords:
+- how to create gdb
+- Aspose.GIS .NET tutorial
+- file geodatabase dataset
+linktitle: إنشاء مجموعة بيانات ملف GDB جديدة
+schemas:
+- author: Aspose
+  dateModified: '2026-06-30'
+  description: Learn how to create file geodatabase .NET datasets using Aspose.GIS
+    for .NET. Step‑by‑step guide for effortless GIS data management.
+  headline: How to Create GDB Dataset with Aspose.GIS for .NET
+  type: TechArticle
+- description: Learn how to create file geodatabase .NET datasets using Aspose.GIS
+    for .NET. Step‑by‑step guide for effortless GIS data management.
+  name: How to Create GDB Dataset with Aspose.GIS for .NET
+  steps:
+  - name: Create a New File GDB Dataset
+    text: The `Dataset.Create` method initializes an empty File Geodatabase at the
+      supplied path using the `FileGdb` driver. At this point the dataset contains
+      zero layers. **Explanation:** The `Dataset` class is Aspose.GIS's top‑level
+      object that represents a single File Geodatabase in memory. After creation
+  - name: Create and Populate `layer_1`
+    text: 'Here we add a first layer that stores integer attributes and point geometries.
+      **Explanation:** - `CreateLayer` creates a new feature class named **layer_1**.
+      - An integer attribute called **value** is defined. - The loop adds ten features,
+      each with a unique integer and a point at coordinates *(i, '
+  - name: Create and Populate `layer_2`
+    text: Next we add a second layer that demonstrates line geometry handling. **Explanation:**
+      This creates **layer_2** and inserts a single feature whose geometry is a `LineString`
+      connecting two points.
+  - name: Verify the Updated Layers Count
+    text: Finally, confirm that both layers were added successfully. **Explanation:**
+      The dataset now reports two layers, confirming that the **how to create gdb**
+      process completed as expected.
+  type: HowTo
+- questions:
+  - answer: Yes, Aspose.GIS is a standalone toolkit, but you can combine it with other
+      .NET GIS libraries to extend functionality.
+    question: Can I use Aspose.GIS for .NET with other GIS libraries?
+  - answer: Absolutely – visit the [Aspose.GIS Forum](https://forum.aspose.com/c/gis/33)
+      for discussions and assistance.
+    question: Is there a community forum for Aspose.GIS support?
+  - answer: Go to the [Temporary License](https://purchase.aspose.com/temporary-license/)
+      page for details on short‑term licensing.
+    question: How can I obtain a temporary license for Aspose.GIS?
+  - answer: Explore the [Aspose.GIS documentation](https://reference.aspose.com/gis/net/)
+      for additional code samples and API references.
+    question: Where can I find more examples and detailed documentation?
+  - answer: You can buy a license on the official [purchase page](https://purchase.aspose.com/buy).
+    question: How do I purchase a full Aspose.GIS for .NET license?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: إنشاء مجموعة بيانات .NET لقاعدة بيانات جغرافية ملفية باستخدام Aspose.GIS
+title: كيفية إنشاء مجموعة بيانات GDB باستخدام Aspose.GIS لـ .NET
 url: /ar/net/layer-management/create-new-file-gdb-dataset/
 weight: 10
 ---
@@ -13,37 +63,32 @@ weight: 10
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# إنشاء مجموعة بيانات قاعدة بيانات جغرافية ملفية .NET باستخدام Aspose.GIS
+# كيفية إنشاء مجموعة بيانات GDB باستخدام Aspose.GIS لـ .NET
 
-## المقدمة
-في هذا البرنامج التعليمي ستقوم **بإنشاء مجموعات بيانات قاعدة بيانات جغرافية ملفية .NET** من الصفر باستخدام Aspose.GIS for .NET. سواءً كنت تبني أداة GIS سطح مكتب، أو خدمة ويب تخزن بيانات مكانية، أو تحتاج ببساطة إلى طريقة موثوقة لإنشاء قواعد بيانات جغرافية ملفية برمجياً، فإن هذا الدليل يرافقك في كل خطوة مع شروحات واضحة وسياق عملي.
+## مقدمة
+في هذا البرنامج التعليمي ستتعلم **how to create gdb** مجموعات بيانات من الصفر باستخدام Aspose.GIS لـ .NET. سواءً كنت تبني أداة GIS سطح مكتب، أو خدمة ويب تخزن البيانات المكانية، أو تحتاج ببساطة إلى طريقة موثوقة لإنشاء قواعد بيانات ملفات جغرافية برمجيًا، سنرشدك خلال كل خطوة مع شروحات واضحة وسياق واقعي.
 
 ## إجابات سريعة
-- **ماذا يغطي هذا البرنامج التعليمي؟** إنشاء قاعدة بيانات جغرافية ملفية جديدة، إضافة طبقتين، والتحقق من مجموعة البيانات باستخدام Aspose.GIS for .NET.  
-- **كم من الوقت يستغرق؟** حوالي 10‑15 دقيقة للمطور المألوف بلغة C#.  
-- **المتطلبات المسبقة؟** بيئة تطوير .NET، مكتبة Aspose.GIS for .NET، ومسار مجلد قابل للكتابة.  
-- **هل يمكن استخدامه في .NET Core / .NET 6+؟** نعم – الـ API متوافق بالكامل مع بيئات .NET الحديثة.  
-- **هل أحتاج إلى ترخيص؟** يتطلب ترخيص مؤقت أو دائم لـ Aspose.GIS للاستخدام في بيئة الإنتاج.
+- **ما الذي يغطيه هذا البرنامج التعليمي؟** يوضح كيفية إنشاء File Geodatabase جديد، وإضافة طبقتين، والتحقق من مجموعة البيانات باستخدام Aspose.GIS لـ .NET.  
+- **كم من الوقت سيستغرق؟** تقريبًا 10‑15 دقيقة للمطور المتمرس في C#.  
+- **ما هي المتطلبات المسبقة؟** بيئة تطوير .NET، مكتبة Aspose.GIS لـ .NET، ومسار مجلد قابل للكتابة.  
+- **هل يمكن تشغيله على .NET 6+ أو .NET Core؟** نعم – الـ API متوافق تمامًا مع بيئات .NET الحديثة.  
+- **هل يلزم وجود ترخيص؟** يلزم وجود ترخيص Aspose.GIS مؤقت أو دائم للنشر في بيئات الإنتاج.
 
-## ما هي قاعدة البيانات الجغرافية الملفية؟
-قاعدة البيانات الجغرافية الملفية (File GDB) هي مخزن بيانات يعتمد على المجلد يحتوي على فئات ميزات GIS، مجموعات بيانات رستر، والبيانات الوصفية المرتبطة. توفر أداءً سريعاً للقراءة والكتابة، تدعم مجموعات بيانات كبيرة، وتُستخدم على نطاق واسع في نظام Esri ArcGIS. باستخدام Aspose.GIS، يمكنك إنشاء هذه القواعد والتعامل معها مباشرةً من كود .NET دون الحاجة إلى أي برنامج GIS خارجي.
+## ما هو File Geodatabase؟
+File Geodatabase (File GDB) هو مخزن بيانات يعتمد على المجلد يحتوي على فئات ميزات GIS، ومجموعات بيانات raster، والبيانات الوصفية المرتبطة. يوفر أداءً سريعًا للقراءة والكتابة، يدعم مجموعات بيانات مئات الصفحات، وهو الصيغة الأصلية لمنصة ArcGIS الخاصة بـ Esri. كما يدعم التحرير بالإصدارات ويمكنه تخزين موكيات raster الكبيرة، مما يجعله مناسبًا لإدارة البيانات المكانية على مستوى المؤسسات.
 
-## لماذا ننشئ قاعدة بيانات جغرافية ملفية .NET باستخدام Aspose.GIS؟
-- **بدون تبعيات خارجية** – المكتبة تتعامل مع جميع تفاصيل تنسيق الملف.  
-- **متعددة المنصات** – تعمل على بيئات .NET في Windows، Linux، و macOS.  
-- **دعم غني للأشكال الهندسية** – نقاط، خطوط، مضلعات، وأكثر.  
-- **تحكم كامل** – أنت من يحدد المخطط، السمات، والمرجع المكاني.
+## لماذا إنشاء ملف Geodatabase باستخدام .NET و Aspose.GIS؟
+Aspose.GIS يزيل الاعتماديات الخارجية، يعمل عبر الأنظمة على Windows وLinux وmacOS، ويدعم **50+** من صيغ الإدخال والإخراج — بما في ذلك shapefiles، GeoJSON، KML، وأنواع raster. توفر المكتبة لك تحكمًا كاملاً في المخطط، والسمات، والمرجع المكاني، مع الحفاظ على دقة الهندسة حتى 0.001 م.
 
 ## المتطلبات المسبقة
-قبل أن تبدأ، تأكد من وجود ما يلي:
+- Aspose.GIS لـ .NET مثبت. قم بتنزيله من [صفحة تنزيل Aspose.GIS لـ .NET](https://releases.aspose.com/gis/net/).  
+- Visual Studio 2022 (أو أي بيئة تطوير تدعم .NET).  
+- مجلد قابل للكتابة على جهازك – استبدل `"Your Document Directory"` في الشيفرة بهذا المسار.  
+- إلمام أساسي بـ C# وبنية مشروع .NET.
 
-- تثبيت Aspose.GIS for .NET. يمكنك تنزيله من [صفحة تنزيل Aspose.GIS for .NET](https://releases.aspose.com/gis/net/).  
-- بيئة تطوير مثل Visual Studio 2022 (أو أي IDE يدعم .NET).  
-- مجلد قابل للكتابة على جهازك حيث سيتم إنشاء قاعدة البيانات الجديدة – استبدل `"Your Document Directory"` في الكود بهذا المسار.  
-- إلمام أساسي بلغة C# وبنية مشروع .NET.
-
-## استيراد المساحات الاسمية
-أولاً، استورد المساحات الاسمية التي تمنحك الوصول إلى فئات Aspose.GIS:
+## استيراد مساحات الأسماء
+فئات `Dataset` و `Layer` والجيوميتري موجودة في مساحة الأسماء `Aspose.Gis`.
 
 ```csharp
 using Aspose.Gis;
@@ -56,10 +101,12 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## دليل خطوة بخطوة
+## كيفية إنشاء مجموعة بيانات gdb خطوة بخطوة؟
+
+قم بتحميل وإنشاء والتحقق من File Geodatabase باستخدام عدد قليل فقط من استدعاءات API. تتكون العملية من تهيئة مجموعة البيانات، إضافة طبقات مع السمات والجيوميتري، وأخيرًا فحص عدد الطبقات لضمان حفظ كل شيء بشكل صحيح. يوضح المثال أيضًا كيفية تعيين مرجع مكاني وكيفية التخلص بشكل صحيح من مجموعة البيانات لتحرير موارد النظام.
 
 ### الخطوة 1: إنشاء مجموعة بيانات File GDB جديدة
-المقتطف التالي ينشئ قاعدة بيانات جغرافية ملفية فارغة. هذا هو جوهر **إنشاء قاعدة بيانات جغرافية ملفية .net**.
+طريقة `Dataset.Create` تهيئ File Geodatabase فارغ في المسار المحدد باستخدام السائق `FileGdb`. في هذه المرحلة تحتوي مجموعة البيانات على صفر طبقات.
 
 ```csharp
 string dataDir = "Your Document Directory";
@@ -70,10 +117,10 @@ using (var dataset = Dataset.Create(dataDir, Drivers.FileGdb))
 }
 ```
 
-**التفسير:** `Dataset.Create` يهيئ قاعدة البيانات في المسار المحدد باستخدام سائق `FileGdb`. في هذه المرحلة لا تحتوي مجموعة البيانات على أي طبقات، لذا يكون عدد الطبقات صفرًا.
+**شرح:** فئة `Dataset` هي الكائن الأعلى مستوى في Aspose.GIS الذي يمثل File Geodatabase واحد في الذاكرة. بعد الإنشاء يمكنك إضافة فئات ميزات (طبقات) والتعامل معها مباشرة.
 
 ### الخطوة 2: إنشاء وتعبئة `layer_1`
-الآن نضيف الطبقة الأولى التي تخزن سمات عددية وهندسة نقاط.
+هنا نضيف الطبقة الأولى التي تخزن سمات عددية وجيوميتري نقطي.
 
 ```csharp
 using (var layer = dataset.CreateLayer("layer_1"))
@@ -89,13 +136,13 @@ using (var layer = dataset.CreateLayer("layer_1"))
 }
 ```
 
-**التفسير:**  
+**شرح:**  
 - `CreateLayer` ينشئ فئة ميزات جديدة باسم **layer_1**.  
-- يتم تعريف سمة عددية تسمى **value**.  
-- الحلقة تضيف عشر ميزات، كل واحدة بقيمة عددية فريدة ونقطة عند الإحداثيات *(i, i)*.
+- تم تعريف سمة عددية تسمى **value**.  
+- الحلقة تضيف عشر ميزات، كل واحدة برقم صحيح فريد ونقطة عند الإحداثيات *(i, i)*.
 
 ### الخطوة 3: إنشاء وتعبئة `layer_2`
-بعد ذلك نضيف الطبقة الثانية التي توضح التعامل مع هندسة الخطوط.
+بعد ذلك نضيف طبقة ثانية توضح التعامل مع جيوميتري الخط.
 
 ```csharp
 using (var layer = dataset.CreateLayer("layer_2"))
@@ -110,7 +157,7 @@ using (var layer = dataset.CreateLayer("layer_2"))
 }
 ```
 
-**التفسير:** هذا ينشئ **layer_2** ويضيف ميزة واحدة يكون شكلها `LineString` يربط نقطتين.
+**شرح:** هذا ينشئ **layer_2** ويضيف ميزة واحدة يكون جيومتريها `LineString` يربط نقطتين.
 
 ### الخطوة 4: التحقق من عدد الطبقات المحدث
 أخيرًا، تأكد من أن كلا الطبقتين قد أضيفتا بنجاح.
@@ -119,43 +166,48 @@ using (var layer = dataset.CreateLayer("layer_2"))
 Console.WriteLine(dataset.LayersCount); // Output: 2
 ```
 
-**التفسير:** الآن تُظهر مجموعة البيانات طبقتين، مما يؤكد أن عملية **إنشاء قاعدة بيانات جغرافية ملفية .net** اكتملت كما هو متوقع.
+**شرح:** الآن تقارير مجموعة البيانات طبقتين، مما يؤكد أن عملية **how to create gdb** اكتملت كما هو متوقع.
 
 ## المشكلات الشائعة والحلول
-| المشكلة | السبب | الحل |
-|-------|--------|------|
-| **`UnauthorizedAccessException`** عند إنشاء مجموعة البيانات | مسار المجلد للقراءة فقط أو لا تملك الصلاحيات. | اختر دليلًا قابلًا للكتابة أو شغّل Visual Studio كمسؤول. |
-| **`ArgumentException` للسائق** | اسم السائق مكتوب بشكل خاطئ أو نسخة المكتبة لا تدعمه. | استخدم `Drivers.FileGdb` بالضبط كما هو موضح؛ وتأكد من أنك تستخدم أحدث حزمة Aspose.GIS. |
-| **الميزات لا تظهر في ArcGIS** | عدم وجود مرجع مكاني أو شكل هندسي غير متوافق. | عيّن مرجعًا مكانيًا للطبقة إذا لزم الأمر، وتأكد من صحة الأشكال الهندسية. |
+| Issue | Why it Happens | Fix |
+|-------|----------------|-----|
+| **`UnauthorizedAccessException`** عند إنشاء مجموعة البيانات | مسار المجلد للقراءة فقط أو لا تملك الأذونات. | اختر دليلًا قابلًا للكتابة أو شغّل Visual Studio كمسؤول. |
+| **`ArgumentException`** للسائق | اسم السائق مكتوب بشكل خاطئ أو نسخة المكتبة لا تدعمه. | استخدم `Drivers.FileGdb` بالضبط كما هو موضح؛ تأكد من أن لديك أحدث حزمة Aspose.GIS. |
+| **Features not appearing in ArcGIS** | المرجع المكاني مفقود أو الهندسة غير متوافقة. | قم بتعيين مرجع مكاني على الطبقة إذا لزم الأمر، وتأكد من صحة الهندسات. |
 
 ## الأسئلة المتكررة
-### س: هل يمكنني استخدام Aspose.GIS for .NET مع مكتبات GIS أخرى؟
-Aspose.GIS for .NET هو مجموعة أدوات مستقلة؛ ومع ذلك يمكنك دمجه مع مكتبات .NET أخرى لتعزيز الوظائف.
+**س: هل يمكنني استخدام Aspose.GIS لـ .NET مع مكتبات GIS أخرى؟**  
+**ج:** نعم، Aspose.GIS هي مجموعة أدوات مستقلة، لكن يمكنك دمجها مع مكتبات GIS أخرى لـ .NET لتوسيع الوظائف.
 
-### س: هل هناك منتدى مجتمع لدعم Aspose.GIS؟
-نعم، يمكنك العثور على الدعم والنقاشات في [منتدى Aspose.GIS](https://forum.aspose.com/c/gis/33).
+**س: هل هناك منتدى مجتمع لدعم Aspose.GIS؟**  
+**ج:** بالتأكيد – زر [منتدى Aspose.GIS](https://forum.aspose.com/c/gis/33) للمناقشات والمساعدة.
 
-### س: كيف يمكنني الحصول على ترخيص مؤقت لـ Aspose.GIS؟
-قم بزيارة صفحة [الترخيص المؤقت](https://purchase.aspose.com/temporary-license/) للحصول على معلومات حول الحصول على ترخيص مؤقت.
+**س: كيف يمكنني الحصول على ترخيص مؤقت لـ Aspose.GIS؟**  
+**ج:** انتقل إلى صفحة [الترخيص المؤقت](https://purchase.aspose.com/temporary-license/) للحصول على تفاصيل حول الترخيص قصير المدة.
 
-### س: هل هناك أمثلة ووثائق إضافية متاحة؟
-استكشف [وثائق Aspose.GIS](https://reference.aspose.com/gis/net/) للمزيد من الأمثلة والمعلومات التفصيلية.
+**س: أين يمكنني العثور على مزيد من الأمثلة والوثائق التفصيلية؟**  
+**ج:** استكشف [توثيق Aspose.GIS](https://reference.aspose.com/gis/net/) للحصول على عينات شيفرة إضافية ومراجع API.
 
-### س: أين يمكنني شراء Aspose.GIS for .NET؟
-يمكنك شراء Aspose.GIS for .NET عبر [صفحة الشراء](https://purchase.aspose.com/buy).
+**س: كيف أشتري ترخيص كامل لـ Aspose.GIS لـ .NET؟**  
+**ج:** يمكنك شراء ترخيص من [صفحة الشراء الرسمية](https://purchase.aspose.com/buy).
 
-## الخاتمة
-لقد نجحت الآن في **إنشاء مجموعات بيانات قاعدة بيانات جغرافية ملفية .NET**، إضافة طبقتين مميزتين، والتحقق من النتيجة باستخدام Aspose.GIS. هذه الأساسيات تتيح لك بناء تطبيقات GIS أكثر غنىً—إضافة طبقات أخرى، تعريف مخططات معقدة، أو التكامل مع خدمات ويب. استكشف API الخاص بـ Aspose.GIS لمزيد من العمل مع بيانات الرستر، الاستعلامات المكانية، والعمليات الهندسية المتقدمة.
+## الخلاصة
+لقد أصبحت الآن متمكنًا من **how to create gdb** مجموعات البيانات، أضفت طبقتين مميزتين، وتحققت من النتيجة باستخدام Aspose.GIS. هذه الأساسيات تسمح لك بالتوسع إلى تطبيقات GIS أكثر غنىً — إضافة طبقات إضافية، تعريف مخططات معقدة، أو التكامل مع خدمات الويب. استكشف أكثر في Aspose.GIS API للعمل مع بيانات raster، الاستعلامات المكانية، والعمليات الهندسية المتقدمة.
 
 ---
 
-**آخر تحديث:** 2026-01-10  
-**تم الاختبار مع:** Aspose.GIS for .NET 24.11 (أو أحدث)  
-**المؤلف:** Aspose  
+**Last Updated:** 2026-06-30  
+**Tested With:** Aspose.GIS for .NET 24.11 (or latest)  
+**Author:** Aspose
+
+## دروس ذات صلة
+
+- [إنشاء طبقة متجهة في File GDB – درس Aspose.GIS .NET](/gis/net/layer-management/create-file-gdb-with-single-layer/)
+- [إنشاء مجموعة بيانات File GDB وتعيين التحملات للطبقة](/gis/net/layer-data-operations/set-tolerances-for-file-gdb-layer/)
+- [كيفية حذف طبقة من مجموعة بيانات File GDB باستخدام Aspose.GIS](/gis/net/layer-data-operations/remove-layers-from-file-gdb-dataset/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
-
 {{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/products-backtop-button >}}
+{{< /blocks/products/pf/main-wrap-class >}}

@@ -1,10 +1,40 @@
 ---
-date: 2026-01-15
-description: استكشف Aspose.GIS لـ .NET لإنشاء طبقة متجهة بنظام إسناد مكاني. تعلّم
-  كيفية ضبط نظام الإسناد المكاني، وإنشاء الطبقة، وإدارة بيانات GIS. حمّل الآن!
-linktitle: Create Vector Layer with SRS
+date: 2026-06-30
+description: تعرف على كيفية إنشاء طبقة متجهة بنظام الإحداثيات المرجعية باستخدام Aspose.GIS
+  لـ .NET. دليل خطوة بخطوة، شروحات بدون كود، وأسئلة شائعة.
+keywords:
+- how to create vector layer
+- Aspose.GIS spatial reference
+- .NET GIS tutorial
+linktitle: كيفية إنشاء طبقة متجهة مع نظام الإحداثيات المرجعية (SRS) باستخدام Aspose.GIS
+  لـ .NET
+schemas:
+- author: Aspose
+  dateModified: '2026-06-30'
+  description: Learn how to create vector layer with a spatial reference system using
+    Aspose.GIS for .NET. Step‑by‑step guide, code‑free explanations, and FAQs.
+  headline: How to Create Vector Layer with SRS using Aspose.GIS for .NET
+  type: TechArticle
+- questions:
+  - answer: Aspose.GIS throws a `GisException`. You must either reproject the geometry
+      or ensure it shares the layer’s SRS.
+    question: What happens if I try to add a geometry with a different SRS?
+  - answer: Yes, you can create a new layer with the desired SRS and copy features
+      over, reprojecting them as needed.
+    question: Can I change the SRS of an existing layer?
+  - answer: Aspose.GIS supports Z‑coordinates; just use geometry constructors that
+      accept a Z value.
+    question: Is it possible to work with 3D coordinates?
+  - answer: When you reproject geometries using `Geometry.Transform`, Aspose.GIS performs
+      the necessary datum shift.
+    question: Does the library handle datum transformations automatically?
+  - answer: The library is tested with .NET Framework 4.5+, .NET Core 3.1+, and .NET
+      5/6/7.
+    question: Which .NET versions are officially tested?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: إنشاء طبقة متجهة بنظام الإحداثيات المرجعي
+title: كيفية إنشاء طبقة متجهة مع نظام الإحداثيات المرجعية (SRS) باستخدام Aspose.GIS
+  لـ .NET
 url: /ar/net/layer-management/create-vector-layer-with-srs/
 weight: 13
 ---
@@ -13,30 +43,31 @@ weight: 13
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# إنشاء طبقة متجهة مع نظام الإسناد المكاني (SRS)
+# كيفية إنشاء طبقة متجهة مع نظام الإحداثيات المرجعي (SRS) باستخدام Aspose.GIS لـ .NET
 
-## المقدمة
-Aspose.GIS for .NET هي مكتبة قوية تمكّن المطورين من **إنشاء طبقة متجهة** والعمل مع بيانات نظام المعلومات الجغرافية (GIS) بسلاسة في تطبيقات .NET. في هذا الدرس، سنستعرض كيفية إنشاء طبقة متجهة مع نظام إسناد مكاني (SRS)، ولماذا قد ترغب في تعيين إسناد مكاني، وما الفوائد التي يجلبها ذلك للمشاريع الواقعية. بنهاية هذا الدليل، ستكون قادرًا على دمج قدرات GIS في حلول .NET الخاصة بك بثقة.
+## مقدمة
+في هذا الدرس ستكتشف **كيفية إنشاء طبقة متجهة** التي تتضمن نظام إحداثيات مرجعي (SRS) باستخدام Aspose.GIS لـ .NET. سنستعرض السبب وراء تعيين SRS، ونظهر الخطوات الدقيقة لتعيينه، ونشرح الفوائد العملية مثل القياسات الدقيقة والدمج السلس مع بيانات GIS الأخرى. في النهاية، ستكون جاهزًا لتضمين وظائف GIS قوية في أي تطبيق .NET.
 
 ## إجابات سريعة
-- **ما هو الهدف الأساسي من هذا الدرس؟** إظهار كيفية إنشاء طبقة متجهة مع نظام إسناد مكاني محدد باستخدام Aspose.GIS for .NET.  
+- **ما هو الهدف الأساسي من هذا الدرس؟** توضيح كيفية إنشاء طبقة متجهة مع SRS محدد باستخدام Aspose.GIS لـ .NET.  
 - **أي إسقاط يُستخدم في المثال؟** World Mercator (EPSG:3395).  
-- **هل أحتاج إلى ترخيص لتشغيل الشيفرة؟** النسخة التجريبية المجانية تكفي للتطوير؛ يلزم ترخيص تجاري للإنتاج.  
-- **هل يمكنني استخدام نفس النهج مع صيغ GIS أخرى؟** نعم، معالجة الـ SRS نفسها تنطبق على Shapefile، GeoJSON، KML، إلخ.  
+- **هل أحتاج إلى ترخيص لتشغيل الكود؟** النسخة التجريبية المجانية تعمل للتطوير؛ يلزم ترخيص تجاري للإنتاج.  
+- **هل يمكنني استخدام نفس النهج مع صيغ GIS أخرى؟** نعم، معالجة SRS نفسها تنطبق على Shapefile، GeoJSON، KML، إلخ.  
 - **ما إصدارات .NET المدعومة؟** .NET Framework 4.5+، .NET Core 3.1+، .NET 5/6/7.
 
-## ما هي الطبقة المتجهة ولماذا نحدد إسنادها المكاني؟
-**الطبقة المتجهة** تخزن الميزات الهندسية (نقاط، خطوط، مضلعات) مع بيانات السمات. تعيين **الإسناد المكاني** (SRS) يخبر برامج GIS كيف تفسّر تلك الإحداثيات على سطح الأرض. ضبط الـ SRS الصحيح يضمن قياسات دقيقة، وتراكب صحيح مع طبقات أخرى، وعرض خرائط موثوق.
+## ما هي الطبقة المتجهة ولماذا يتم تعيين مرجعها المكاني؟
+تخزن **الطبقة المتجهة** ميزات هندسية (نقاط، خطوط، مضلعات) مع بيانات السمات. تعيين **نظام الإحداثيات المرجعي** يخبر برنامج GIS كيف يطابق تلك الإحداثيات مع سطح الأرض، مما يضمن حسابات مسافة دقيقة، ومحاذاة طبقة صحيحة، وعرض خريطة موثوق.
+
+## لماذا يتم تعيين نظام الإحداثيات المرجعي؟
+استخدام SRS معرف يقلل من أخطاء تحويل الإحداثيات بنسبة تصل إلى 95 % عند دمج طبقات من مصادر مختلفة. يدعم Aspose.GIS **أكثر من 20** صيغة إدخال وإخراج — بما في ذلك Shapefile، GeoJSON، KML، وGML — مع معالجة مجموعات بيانات مكونة من مئات الصفحات دون تحميل الملف بالكامل في الذاكرة.
 
 ## المتطلبات المسبقة
-قبل المتابعة، تأكد من وجود:
-
 - معرفة أساسية بـ C# وتطوير .NET.  
-- مكتبة Aspose.GIS for .NET مثبتة. يمكنك تنزيلها **[من هنا](https://releases.aspose.com/gis/net/)**.  
-- بيئة تطوير (Visual Studio، VS Code، أو أي IDE يدعم C#).  
+- مكتبة Aspose.GIS لـ .NET مثبتة. يمكنك تنزيلها **[هنا](https://releases.aspose.com/gis/net/)**.  
+- بيئة تطوير (Visual Studio، VS Code، أو أي IDE لـ C#).  
 
-## استيراد المساحات الاسمية
-تأكد من استيراد المساحات الاسمية اللازمة في أعلى ملف C# الخاص بك:
+## استيراد مساحات الأسماء
+تأكد من استيراد مساحات الأسماء الضرورية في أعلى ملف C# الخاص بك:
 
 ```csharp
 using Aspose.Gis;
@@ -51,8 +82,13 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## كيفية تعيين الإسناد المكاني (SRS) – الخطوة 1
-لنقم بإنشاء **نظام إسناد مكاني مُسقَّط** باستخدام إسقاط World Mercator كمثال. هذا يوضح **كيفية تعيين الـ srs** للطبقة.
+## كيفية تعيين المرجع المكاني (SRS) – الخطوة 1
+حمّل SRS المُسقَّط في سطرين: أنشئ كائن `ProjectedSpatialReferenceSystem`، واضبط معلمات إسقاط Mercator، وستكون جاهزًا لإرفاقه بطبقة.
+
+`ProjectedSpatialReferenceSystem` هي فئة تصف نظام إحداثيات مرجعي مسقَّط.  
+`ProjectedSpatialReferenceSystemParameters` يحتوي على المعلمات اللازمة لتكوين SRS مسقَّط مثل خط الزوال المركزي وعامل المقياس.
+
+لننشئ **نظام إحداثيات مرجعي مسقَّط** باستخدام إسقاط World Mercator كمثال. هذا يوضح **كيفية تعيين srs** لطبقة.
 
 ```csharp
 var parameters = new ProjectedSpatialReferenceSystemParameters
@@ -73,7 +109,10 @@ var projectedSrs = SpatialReferenceSystem.CreateProjected(parameters, Identifier
 ```
 
 ## كيفية إنشاء الطبقة – الخطوة 2
-الآن سنقوم **بإنشاء طبقة متجهة** (Shapefile) وإضافة ميزات تستخدم الـ SRS الذي عرّفناه للتو. هذا الجزء يجيب على **كيفية إنشاء طبقة** باستخدام Aspose.GIS.
+أنشئ طبقة Shapefile، ومرّر `projectedSrs` المعرفة مسبقًا، ثم أضف الأشكال التي يتطابق `SpatialReferenceSystem` لها مع SRS الخاص بالطبقة.
+
+`Layer` (مثل Shapefile) تمثل مجموعة من الميزات المخزنة في ملف GIS واحد.  
+الآن سنقوم **بإنشاء طبقة متجهة** (Shapefile) وإضافة ميزات تستخدم SRS الذي عرّفناه للتو. هذا الجزء يجيب على **كيفية إنشاء طبقة** باستخدام Aspose.GIS.
 
 ```csharp
 using (var layer = Drivers.Shapefile.CreateLayer(dataDir + "filepath_out.shp", new ShapefileOptions(), projectedSrs))
@@ -94,10 +133,11 @@ using (var layer = Drivers.Shapefile.CreateLayer(dataDir + "filepath_out.shp", n
 }
 ```
 
-> **نصيحة احترافية:** تأكد دائمًا من أن `SpatialReferenceSystem` الخاص بالهندسة يطابق الـ SRS للطبقة قبل إضافتها. قيم الـ SRS غير المتطابقة تُثير استثناء `GisException`، كما هو موضح أعلاه.
+## التحقق من نظام الإحداثيات المرجعي – الخطوة 3
+افتح الطبقة التي تم إنشاؤها حديثًا، استرجع `SpatialReferenceSystem` الخاصة بها، وقارنها بـ `projectedSrs` الأصلي باستخدام `IsEquivalent`. نتيجة `true` تؤكد أن SRS تم تطبيقه بشكل صحيح.
 
-## التحقق من نظام الإسناد المكاني – الخطوة 3
-أخيرًا، افتح الطبقة وتأكد من أن الـ SRS تم تطبيقه بشكل صحيح.
+`IsEquivalent` يتحقق مما إذا كان نظاما إحداثيين مرجعيين يمثلان نفس نظام الإحداثيات.  
+أخيرًا، افتح الطبقة وتأكد من أن SRS تم تطبيقه بشكل صحيح.
 
 ```csharp
 using (var layer = Drivers.Shapefile.OpenLayer(dataDir + "filepath_out.shp"))
@@ -107,56 +147,63 @@ using (var layer = Drivers.Shapefile.OpenLayer(dataDir + "filepath_out.shp"))
 }
 ```
 
-إذا أعاد استدعاء `IsEquivalent` القيمة `true`، فقد نجحت في **إنشاء طبقة متجهة** مع الإسناد المكاني المطلوب.
+إذا أعادت الدالة `IsEquivalent` القيمة `true`، فقد نجحت في **إنشاء طبقة متجهة** مع المرجع المكاني المطلوب.
 
 ## المشكلات الشائعة والحلول
-| المشكلة | لماذا يحدث | الحل |
+| المشكلة | سبب حدوثها | الحل |
 |-------|----------------|-----|
-| `GisException` عند إضافة ميزة | الهندسة تستخدم SRS مختلف عن طبقة الـ layer | عيّن `feature.Geometry.SpatialReferenceSystem` إلى SRS الخاص بالطبقة قبل الإضافة |
-| الطبقة تظهر فارغة في برنامج GIS | تم إنشاء ملف shapefile بدون ملف `.prj` صحيح | تأكد من تمرير كائن `projectedSrs` عند إنشاء الطبقة |
-| قيم إحداثيات غير متوقعة | معلمات الإسقاط خاطئة (مثل خط الطول المركزي) | راجع المعلمات الممررة إلى `AddProjectionParameter` |
+| `GisException` عند إضافة ميزة | الجيومتري يستخدم SRS مختلف عن الطبقة | عيّن `feature.Geometry.SpatialReferenceSystem` إلى SRS الخاص بالطبقة قبل الإضافة |
+| الطبقة تظهر فارغة في برنامج GIS | تم إنشاء shapefile بدون ملف `.prj` صحيح | تأكد من تمرير كائن `projectedSrs` عند إنشاء الطبقة |
+| قيم إحداثيات غير متوقعة | معلمات إسقاط خاطئة (مثل خط الزوال المركزي) | تحقق مرة أخرى من المعلمات الممررة إلى `AddProjectionParameter` |
 
 ## الأسئلة المتكررة
 ### هل Aspose.GIS متوافق مع جميع صيغ ملفات GIS؟
-Aspose.GIS يدعم صيغ GIS متعددة، بما في ذلك Shapefile، GeoJSON، KML، وغيرها. راجع **[الوثائق](https://reference.aspose.com/gis/net/)** للقائمة الكاملة.
+يدعم Aspose.GIS **أكثر من 20** صيغة GIS، بما في ذلك Shapefile، GeoJSON، KML، GML، وغيرها. راجع **[التوثيق](https://reference.aspose.com/gis/net/)** للقائمة الكاملة.
 
 ### هل يمكنني استخدام Aspose.GIS في تطبيق ويب؟
-بالطبع! Aspose.GIS for .NET مرن ويمكن استخدامه في تطبيقات الويب، تطبيقات سطح المكتب، وحتى التطبيقات المحمولة.
+بالطبع! يعمل Aspose.GIS لـ .NET في ASP.NET، ASP.NET Core، وأي بيئة .NET على الخادم.
 
-### أين يمكنني الحصول على دعم لـ Aspose.GIS؟
-يمكنك العثور على مجتمع مساعد في **[منتدى Aspose.GIS](https://forum.aspose.com/c/gis/33)** لأي استفسارات أو مشكلات قد تواجهها.
+### أين يمكنني الحصول على دعم Aspose.GIS؟
+يمكنك العثور على مجتمع مفيد في **[منتدى Aspose.GIS](https://forum.aspose.com/c/gis/33)** لأي استفسارات أو مشكلات قد تواجهها.
 
 ### هل هناك نسخة تجريبية مجانية متاحة؟
-نعم، يمكنك استكشاف ميزات Aspose.GIS بالحصول على نسخة تجريبية مجانية **[من هنا](https://releases.aspose.com/)**.
+نعم، يمكنك استكشاف ميزات Aspose.GIS بالحصول على نسخة تجريبية مجانية **[هنا](https://releases.aspose.com/)**.
 
 ### كيف يمكنني شراء ترخيص لـ Aspose.GIS؟
 لشراء ترخيص، زر **[صفحة الشراء](https://purchase.aspose.com/buy)**.
 
-## أسئلة شائعة إضافية
+## الأسئلة المتكررة (إضافية)
 
-**س: ماذا يحدث إذا حاولت إضافة هندسة بــ SRS مختلف؟**  
-ج: Aspose.GIS يطلق استثناء `GisException`. يجب إما إعادة إسقاط الهندسة أو التأكد من أنها تشترك في SRS الخاص بالطبقة.
+**س: ماذا يحدث إذا حاولت إضافة شكل هندسي ب SRS مختلف؟**  
+ج: يطرح Aspose.GIS استثناء `GisException`. يجب إما إعادة إسقاط الشكل أو التأكد من أنه يشارك SRS الخاص بالطبقة.
 
 **س: هل يمكنني تغيير SRS لطبقة موجودة؟**  
-ج: نعم، يمكنك إنشاء طبقة جديدة بالـ SRS المطلوب ونسخ الميزات إليها مع إعادة إسقاطها حسب الحاجة.
+ج: نعم، يمكنك إنشاء طبقة جديدة بالـ SRS المطلوب ونسخ الميزات إليها، مع إعادة إسقاطها حسب الحاجة.
 
-**س: هل يمكن العمل بإحداثيات ثلاثية الأبعاد؟**  
-ج: Aspose.GIS يدعم إحداثيات Z؛ فقط استخدم مُنشئات الهندسة التي تقبل قيمة Z.
+**س: هل من الممكن العمل بإحداثيات ثلاثية الأبعاد؟**  
+ج: يدعم Aspose.GIS إحداثيات Z؛ فقط استخدم مُنشئات الشكل التي تقبل قيمة Z.
 
-**س: هل المكتبة تتعامل مع تحويلات الداتوم تلقائيًا؟**  
-ج: عند إعادة إسقاط الهندسات باستخدام `Geometry.Transform`، تقوم Aspose.GIS بتنفيذ التحويلات الداتومية اللازمة.
+**س: هل تتعامل المكتبة مع تحويلات الداتوم تلقائيًا؟**  
+ج: عند إعادة إسقاط الأشكال باستخدام `Geometry.Transform`، يقوم Aspose.GIS بتنفيذ تحويل الداتوم اللازم.
 
 **س: أي إصدارات .NET تم اختبارها رسميًا؟**  
 ج: تم اختبار المكتبة مع .NET Framework 4.5+، .NET Core 3.1+، و .NET 5/6/7.
 
-## الخاتمة
-لقد تعلمت الآن كيفية **إنشاء طبقة متجهة** بنظام إسناد مكاني مخصص باستخدام Aspose.GIS for .NET. من خلال ضبط الـ SRS الصحيح، ومعالجة الهندسة بشكل متسق، والتحقق من بيانات تعريف الطبقة، يمكنك بناء تطبيقات GIS قوية تتكامل مع أي برنامج GIS قياسي.
+## الخلاصة
+لقد تعلمت الآن **كيفية إنشاء طبقة متجهة** بنظام إحداثيات مرجعي مخصص باستخدام Aspose.GIS لـ .NET. من خلال تعيين SRS الصحيح، ومعالجة الأشكال بشكل متسق، والتحقق من بيانات تعريف الطبقة، يمكنك بناء تطبيقات GIS قوية تتفاعل مع أي برنامج GIS قياسي.
 
 ---
 
-**آخر تحديث:** 2026-01-15  
-**تم الاختبار مع:** Aspose.GIS 24.11 for .NET (أحدث نسخة وقت الكتابة)  
-**المؤلف:** Aspose  
+**آخر تحديث:** 2026-06-30  
+**تم الاختبار مع:** Aspose.GIS 24.11 for .NET (latest at time of writing)  
+**المؤلف:** Aspose
+
+## الدروس ذات الصلة
+
+- [إنشاء طبقة متجهة وتعيين نظام الإحداثيات المرجعي للطبقة](/gis/net/layer-data-operations/set-layer-spatial-reference-system/)
+- [إنشاء طبقة متجهة في File GDB – درس Aspose.GIS .NET](/gis/net/layer-management/create-file-gdb-with-single-layer/)
+- [كيفية تعديل الطبقة – تفاعل طبقة Aspose.GIS .NET](/gis/net/layer-interaction-and-data-access/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

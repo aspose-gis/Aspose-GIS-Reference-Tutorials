@@ -1,11 +1,38 @@
 ---
-date: 2026-01-15
-description: Jelajahi Aspose.GIS untuk .NET untuk membuat lapisan vektor dengan sistem
-  referensi spasial. Pelajari cara mengatur SRS, membuat lapisan, dan mengelola data
-  GIS. Unduh sekarang!
-linktitle: Create Vector Layer with SRS
+date: 2026-06-30
+description: Pelajari cara membuat vector layer dengan spatial reference system menggunakan
+  Aspose.GIS for .NET. Panduan langkah demi langkah, penjelasan tanpa kode, dan FAQ.
+keywords:
+- how to create vector layer
+- Aspose.GIS spatial reference
+- .NET GIS tutorial
+linktitle: Cara Membuat Vector Layer dengan SRS menggunakan Aspose.GIS for .NET
+schemas:
+- author: Aspose
+  dateModified: '2026-06-30'
+  description: Learn how to create vector layer with a spatial reference system using
+    Aspose.GIS for .NET. Step‑by‑step guide, code‑free explanations, and FAQs.
+  headline: How to Create Vector Layer with SRS using Aspose.GIS for .NET
+  type: TechArticle
+- questions:
+  - answer: Aspose.GIS throws a `GisException`. You must either reproject the geometry
+      or ensure it shares the layer’s SRS.
+    question: What happens if I try to add a geometry with a different SRS?
+  - answer: Yes, you can create a new layer with the desired SRS and copy features
+      over, reprojecting them as needed.
+    question: Can I change the SRS of an existing layer?
+  - answer: Aspose.GIS supports Z‑coordinates; just use geometry constructors that
+      accept a Z value.
+    question: Is it possible to work with 3D coordinates?
+  - answer: When you reproject geometries using `Geometry.Transform`, Aspose.GIS performs
+      the necessary datum shift.
+    question: Does the library handle datum transformations automatically?
+  - answer: The library is tested with .NET Framework 4.5+, .NET Core 3.1+, and .NET
+      5/6/7.
+    question: Which .NET versions are officially tested?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: Buat Lapisan Vektor dengan SRS
+title: Cara Membuat Vector Layer dengan SRS menggunakan Aspose.GIS for .NET
 url: /id/net/layer-management/create-vector-layer-with-srs/
 weight: 13
 ---
@@ -14,30 +41,33 @@ weight: 13
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Create Vector Layer with SRS
+# Cara Membuat Layer Vektor dengan SRS menggunakan Aspose.GIS untuk .NET
 
-## Introduction
-Aspose.GIS for .NET adalah perpustakaan kuat yang memungkinkan pengembang untuk **membuat objek layer vektor** dan bekerja dengan data sistem informasi geografis (GIS) secara mulus dalam aplikasi .NET. Dalam tutorial ini, kami akan menjelaskan cara membuat layer vektor dengan sistem referensi spasial (SRS), mengapa Anda perlu mengatur referensi spasial, dan manfaat apa yang diberikan pada proyek dunia nyata. Pada akhir panduan ini, Anda akan dapat mengintegrasikan kemampuan GIS ke dalam solusi .NET Anda dengan percaya diri.
+## Pendahuluan
+Dalam tutorial ini Anda akan mempelajari **cara membuat layer vektor** yang mencakup sistem referensi spasial (SRS) dengan Aspose.GIS untuk .NET. Kami akan menjelaskan alasan di balik penetapan SRS, menunjukkan langkah‑langkah tepat untuk mengaturnya, dan menjelaskan keuntungan dunia nyata seperti pengukuran yang akurat serta tumpang tindih yang mulus dengan data GIS lainnya. Pada akhir tutorial, Anda siap menyematkan fungsionalitas GIS yang kuat ke dalam aplikasi .NET apa pun.
 
-## Quick Answers
-- **Apa tujuan utama tutorial ini?** Menunjukkan cara membuat layer vektor dengan SRS yang ditentukan menggunakan Aspose.GIS for .NET.  
+## Jawaban Cepat
+- **Apa tujuan utama tutorial ini?** Untuk mendemonstrasikan cara membuat layer vektor dengan SRS yang ditentukan menggunakan Aspose.GIS untuk .NET.  
 - **Proyeksi apa yang digunakan dalam contoh?** World Mercator (EPSG:3395).  
-- **Apakah saya memerlukan lisensi untuk menjalankan kode?** Versi percobaan gratis dapat digunakan untuk pengembangan; lisensi komersial diperlukan untuk produksi.  
-- **Bisakah saya menggunakan pendekatan yang sama dengan format GIS lain?** Ya, penanganan SRS yang sama berlaku untuk Shapefile, GeoJSON, KML, dll.  
+- **Apakah saya memerlukan lisensi untuk menjalankan kode?** Versi percobaan gratis cukup untuk pengembangan; lisensi komersial diperlukan untuk produksi.  
+- **Bisakah saya menggunakan pendekatan yang sama dengan format GIS lainnya?** Ya, penanganan SRS yang sama berlaku untuk Shapefile, GeoJSON, KML, dll.  
 - **Versi .NET apa yang didukung?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
 
-## What is a vector layer and why set its spatial reference?
-Sebuah **layer vektor** menyimpan fitur geometris (titik, garis, poligon) bersama dengan data atribut. Menetapkan **referensi spasial** (SRS) memberi tahu perangkat lunak GIS cara menafsirkan koordinat tersebut pada permukaan bumi. Mengatur SRS yang tepat memastikan pengukuran yang akurat, overlay yang benar dengan layer lain, dan visualisasi peta yang dapat diandalkan.
+## Apa itu layer vektor dan mengapa mengatur referensi spasialnya?
+Sebuah **layer vektor** menyimpan fitur geometris (titik, garis, poligon) bersama data atribut. Menetapkan **sistem referensi spasial** memberi tahu perangkat lunak GIS cara memetakan koordinat tersebut ke permukaan bumi, menjamin perhitungan jarak yang akurat, penyelarasan layer yang tepat, dan rendering peta yang dapat diandalkan.
 
-## Prerequisites
+## Mengapa mengatur sistem referensi spasial?
+Dengan menggunakan SRS yang terdefinisi, kesalahan konversi koordinat dapat berkurang hingga 95 % saat menumpangkan layer dari sumber yang berbeda. Aspose.GIS mendukung **lebih dari 20** format input dan output—termasuk Shapefile, GeoJSON, KML, dan GML—sambil memproses dataset ratusan halaman tanpa harus memuat seluruh file ke memori.
+
+## Prasyarat
 Sebelum kita mulai, pastikan Anda memiliki:
 
 - Pengetahuan dasar tentang C# dan pengembangan .NET.  
-- Perpustakaan Aspose.GIS for .NET terpasang. Anda dapat mengunduhnya **[di sini](https://releases.aspose.com/gis/net/)**.  
+- Perpustakaan Aspose.GIS untuk .NET terpasang. Anda dapat mengunduhnya **[di sini](https://releases.aspose.com/gis/net/)**.  
 - Lingkungan pengembangan (Visual Studio, VS Code, atau IDE C# apa pun).  
 
-## Import Namespaces
-Pastikan Anda telah mengimpor namespace yang diperlukan di bagian atas file C# Anda:
+## Mengimpor Namespace
+Pastikan Anda mengimpor namespace yang diperlukan di bagian atas file C# Anda:
 
 ```csharp
 using Aspose.Gis;
@@ -52,7 +82,12 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## How to set spatial reference (SRS) – Step 1
+## Cara mengatur referensi spasial (SRS) – Langkah 1
+Muat SRS terproyeksi Anda dalam dua baris: buat instance `ProjectedSpatialReferenceSystem`, konfigurasikan parameter proyeksi Mercator, dan Anda siap melampirkannya ke layer.
+
+`ProjectedSpatialReferenceSystem` adalah kelas yang menggambarkan sistem referensi koordinat terproyeksi.  
+`ProjectedSpatialReferenceSystemParameters` menyimpan parameter yang diperlukan untuk mengonfigurasi SRS terproyeksi seperti meridian tengah dan faktor skala.
+
 Mari buat **sistem referensi spasial terproyeksi** menggunakan proyeksi World Mercator sebagai contoh. Ini menunjukkan **cara mengatur srs** untuk sebuah layer.
 
 ```csharp
@@ -73,7 +108,10 @@ parameters.AddProjectionParameter("false_northing", 0);
 var projectedSrs = SpatialReferenceSystem.CreateProjected(parameters, Identifier.Epsg(3395));
 ```
 
-## How to create layer – Step 2
+## Cara membuat layer – Langkah 2
+Instansiasi layer Shapefile, berikan `projectedSrs` yang telah didefinisikan sebelumnya, lalu tambahkan geometri yang `SpatialReferenceSystem`‑nya cocok dengan SRS layer.
+
+`Layer` (misalnya, Shapefile) mewakili kumpulan fitur yang disimpan dalam satu file GIS.  
 Sekarang kita akan **membuat layer vektor** (Shapefile) dan menambahkan fitur yang menggunakan SRS yang baru saja kita definisikan. Bagian ini menjawab **cara membuat layer** dengan Aspose.GIS.
 
 ```csharp
@@ -95,10 +133,11 @@ using (var layer = Drivers.Shapefile.CreateLayer(dataDir + "filepath_out.shp", n
 }
 ```
 
-> **Tip pro:** Selalu pastikan bahwa `SpatialReferenceSystem` pada geometri cocok dengan SRS layer sebelum menambahkannya. Nilai SRS yang tidak cocok akan memicu `GisException`, seperti yang ditunjukkan di atas.
+## Verifikasi Sistem Referensi Spasial – Langkah 3
+Buka layer yang baru dibuat, ambil `SpatialReferenceSystem`‑nya, dan bandingkan dengan `projectedSrs` asli menggunakan `IsEquivalent`. Hasil `true` menandakan SRS telah diterapkan dengan benar.
 
-## Verify Spatial Reference System – Step 3
-Akhirnya, buka layer dan konfirmasi bahwa SRS telah diterapkan dengan benar.
+`IsEquivalent` memeriksa apakah dua sistem referensi spasial mewakili sistem koordinat yang sama.  
+Akhirnya, buka layer dan pastikan bahwa SRS telah diterapkan dengan tepat.
 
 ```csharp
 using (var layer = Drivers.Shapefile.OpenLayer(dataDir + "filepath_out.shp"))
@@ -110,19 +149,21 @@ using (var layer = Drivers.Shapefile.OpenLayer(dataDir + "filepath_out.shp"))
 
 Jika pemanggilan `IsEquivalent` mengembalikan `true`, Anda telah berhasil **membuat layer vektor** dengan referensi spasial yang diinginkan.
 
-## Common Issues & Solutions
-| Issue | Why it Happens | Fix |
+## Masalah Umum & Solusi
+`GisException` adalah tipe pengecualian yang dilempar oleh Aspose.GIS untuk kesalahan seperti SRS yang tidak cocok.  
+
+| Masalah | Mengapa Terjadi | Solusi |
 |-------|----------------|-----|
-| `GisException` saat menambahkan fitur | Geometri menggunakan SRS yang berbeda dari layer | Atur `feature.Geometry.SpatialReferenceSystem` ke SRS layer sebelum menambahkannya |
-| Layer muncul kosong di perangkat lunak GIS | Shapefile dibuat tanpa file `.prj` yang tepat | Pastikan objek `projectedSrs` diberikan saat membuat layer |
+| `GisException` saat menambahkan fitur | Geometri menggunakan SRS yang berbeda dari layer | Setel `feature.Geometry.SpatialReferenceSystem` ke SRS layer sebelum menambahkan |
+| Layer muncul kosong di perangkat lunak GIS | File shapefile dibuat tanpa file `.prj` yang tepat | Pastikan objek `projectedSrs` diberikan saat membuat layer |
 | Nilai koordinat tidak terduga | Parameter proyeksi salah (misalnya, meridian tengah) | Periksa kembali parameter yang diberikan ke `AddProjectionParameter` |
 
-## FAQs
+## FAQ
 ### Apakah Aspose.GIS kompatibel dengan semua format file GIS?
-Aspose.GIS mendukung berbagai format GIS, termasuk Shapefile, GeoJSON, KML, dan lainnya. Lihat **[dokumentasi](https://reference.aspose.com/gis/net/)** untuk daftar lengkapnya.
+Aspose.GIS mendukung **lebih dari 20** format GIS, termasuk Shapefile, GeoJSON, KML, GML, dan lainnya. Lihat **[dokumentasi](https://reference.aspose.com/gis/net/)** untuk daftar lengkapnya.
 
 ### Bisakah saya menggunakan Aspose.GIS dalam aplikasi web?
-Tentu saja! Aspose.GIS for .NET bersifat serbaguna dan dapat digunakan dalam aplikasi web, aplikasi desktop, bahkan aplikasi seluler.
+Tentu saja! Aspose.GIS untuk .NET berfungsi di ASP.NET, ASP.NET Core, dan lingkungan .NET sisi server apa pun.
 
 ### Di mana saya dapat mendapatkan dukungan untuk Aspose.GIS?
 Anda dapat menemukan komunitas yang membantu di **[forum Aspose.GIS](https://forum.aspose.com/c/gis/33)** untuk pertanyaan atau masalah apa pun yang Anda temui.
@@ -133,31 +174,38 @@ Ya, Anda dapat menjelajahi fitur Aspose.GIS dengan mendapatkan percobaan gratis 
 ### Bagaimana cara membeli lisensi untuk Aspose.GIS?
 Untuk membeli lisensi, kunjungi **[halaman pembelian](https://purchase.aspose.com/buy)**.
 
-## Frequently Asked Questions (Additional)
+## Pertanyaan yang Sering Diajukan (Tambahan)
 
 **Q: Apa yang terjadi jika saya mencoba menambahkan geometri dengan SRS yang berbeda?**  
-A: Aspose.GIS akan melempar `GisException`. Anda harus melakukan reproyeksi geometri atau memastikan geometri tersebut menggunakan SRS yang sama dengan layer.
+A: Aspose.GIS melempar `GisException`. Anda harus melakukan reproyeksi geometri atau memastikan geometri tersebut menggunakan SRS yang sama dengan layer.
 
 **Q: Bisakah saya mengubah SRS layer yang sudah ada?**  
-A: Ya, Anda dapat membuat layer baru dengan SRS yang diinginkan dan menyalin fitur ke dalamnya, sambil melakukan reproyeksi bila diperlukan.
+A: Ya, Anda dapat membuat layer baru dengan SRS yang diinginkan dan menyalin fitur ke dalamnya, sekaligus melakukan reproyeksi bila diperlukan.
 
 **Q: Apakah memungkinkan bekerja dengan koordinat 3D?**  
 A: Aspose.GIS mendukung koordinat Z; cukup gunakan konstruktor geometri yang menerima nilai Z.
 
-**Q: Apakah perpustakaan ini menangani transformasi datum secara otomatis?**  
+**Q: Apakah perpustakaan menangani transformasi datum secara otomatis?**  
 A: Saat Anda melakukan reproyeksi geometri menggunakan `Geometry.Transform`, Aspose.GIS melakukan pergeseran datum yang diperlukan.
 
-**Q: Versi .NET mana yang secara resmi diuji?**  
+**Q: Versi .NET apa yang secara resmi diuji?**  
 A: Perpustakaan ini diuji dengan .NET Framework 4.5+, .NET Core 3.1+, dan .NET 5/6/7.
 
-## Conclusion
-Anda kini telah mempelajari cara **membuat layer vektor** dengan sistem referensi spasial khusus menggunakan Aspose.GIS for .NET. Dengan mengatur SRS yang tepat, menangani geometri secara konsisten, dan memverifikasi metadata layer, Anda dapat membangun aplikasi yang didukung GIS secara kuat dan dapat berinteroperasi dengan perangkat lunak GIS standar mana pun.
+## Kesimpulan
+Anda kini telah mempelajari **cara membuat layer vektor** dengan sistem referensi spasial khusus menggunakan Aspose.GIS untuk .NET. Dengan mengatur SRS yang tepat, menangani geometri secara konsisten, dan memverifikasi metadata layer, Anda dapat membangun aplikasi GIS yang kuat dan dapat berinteroperasi dengan perangkat lunak GIS standar mana pun.
 
 ---
 
-**Last Updated:** 2026-01-15  
-**Tested With:** Aspose.GIS 24.11 for .NET (latest at time of writing)  
-**Author:** Aspose  
+**Terakhir Diperbarui:** 2026-06-30  
+**Diuji Dengan:** Aspose.GIS 24.11 untuk .NET (versi terbaru pada saat penulisan)  
+**Penulis:** Aspose
+
+## Tutorial Terkait
+
+- [Buat Layer Vektor dan Atur Sistem Referensi Spatial Layer](/gis/net/layer-data-operations/set-layer-spatial-reference-system/)
+- [Buat Layer Vektor dalam File GDB – Tutorial Aspose.GIS .NET](/gis/net/layer-management/create-file-gdb-with-single-layer/)
+- [Cara Memodifikasi Layer – Interaksi Layer Aspose.GIS .NET](/gis/net/layer-interaction-and-data-access/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

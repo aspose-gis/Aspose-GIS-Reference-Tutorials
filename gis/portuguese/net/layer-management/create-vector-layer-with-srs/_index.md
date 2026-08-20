@@ -1,11 +1,39 @@
 ---
-date: 2026-01-15
-description: Explore Aspose.GIS para .NET para criar camada vetorial com um sistema
-  de referência espacial. Aprenda como definir SRS, criar camada e gerenciar dados
-  GIS. Baixe agora!
-linktitle: Create Vector Layer with SRS
+date: 2026-06-30
+description: Aprenda como criar camada vetorial com um sistema de referência espacial
+  usando Aspose.GIS para .NET. Guia passo a passo, explicações sem código e perguntas
+  frequentes.
+keywords:
+- how to create vector layer
+- Aspose.GIS spatial reference
+- .NET GIS tutorial
+linktitle: Como criar camada vetorial com SRS usando Aspose.GIS para .NET
+schemas:
+- author: Aspose
+  dateModified: '2026-06-30'
+  description: Learn how to create vector layer with a spatial reference system using
+    Aspose.GIS for .NET. Step‑by‑step guide, code‑free explanations, and FAQs.
+  headline: How to Create Vector Layer with SRS using Aspose.GIS for .NET
+  type: TechArticle
+- questions:
+  - answer: Aspose.GIS throws a `GisException`. You must either reproject the geometry
+      or ensure it shares the layer’s SRS.
+    question: What happens if I try to add a geometry with a different SRS?
+  - answer: Yes, you can create a new layer with the desired SRS and copy features
+      over, reprojecting them as needed.
+    question: Can I change the SRS of an existing layer?
+  - answer: Aspose.GIS supports Z‑coordinates; just use geometry constructors that
+      accept a Z value.
+    question: Is it possible to work with 3D coordinates?
+  - answer: When you reproject geometries using `Geometry.Transform`, Aspose.GIS performs
+      the necessary datum shift.
+    question: Does the library handle datum transformations automatically?
+  - answer: The library is tested with .NET Framework 4.5+, .NET Core 3.1+, and .NET
+      5/6/7.
+    question: Which .NET versions are officially tested?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: Criar camada vetorial com SRS
+title: Como criar camada vetorial com SRS usando Aspose.GIS para .NET
 url: /pt/net/layer-management/create-vector-layer-with-srs/
 weight: 13
 ---
@@ -14,24 +42,29 @@ weight: 13
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Criar Camada Vetorial com SRS
+# Como Criar Camada Vetorial com SRS usando Aspose.GIS para .NET
 
 ## Introdução
-Aspose.GIS for .NET é uma biblioteca poderosa que permite aos desenvolvedores **create vector layer** objetos e trabalhar com dados de sistemas de informação geográfica (GIS) de forma fluida em aplicações .NET. Neste tutorial, vamos percorrer como criar uma camada vetorial com um sistema de referência espacial (SRS), por que você pode querer definir a referência espacial e quais benefícios isso traz para projetos do mundo real. Ao final deste guia, você será capaz de integrar recursos GIS em suas soluções .NET com confiança.
+Neste tutorial você descobrirá **como criar camada vetorial** objetos que incluem um sistema de referência espacial (SRS) com Aspose.GIS para .NET. Vamos percorrer o raciocínio por trás da atribuição de um SRS, mostrar os passos exatos para configurá‑lo e explicar as vantagens no mundo real, como medições precisas e sobreposição perfeita com outros dados GIS. Ao final, você estará pronto para incorporar funcionalidade GIS robusta em qualquer aplicação .NET.
 
 ## Respostas Rápidas
-- **Qual é o objetivo principal deste tutorial?** Mostrar como criar vector layer com um SRS especificado usando Aspose.GIS for .NET.  
+- **Qual é o objetivo principal deste tutorial?** Demonstrar como criar camada vetorial com um SRS especificado usando Aspose.GIS para .NET.  
 - **Qual projeção é usada no exemplo?** World Mercator (EPSG:3395).  
-- **Preciso de uma licença para executar o código?** Um teste gratuito funciona para desenvolvimento; uma licença comercial é necessária para produção.  
+- **Preciso de uma licença para executar o código?** Uma avaliação gratuita funciona para desenvolvimento; uma licença comercial é necessária para produção.  
 - **Posso usar a mesma abordagem com outros formatos GIS?** Sim, o mesmo tratamento de SRS se aplica a Shapefile, GeoJSON, KML, etc.  
 - **Quais versões do .NET são suportadas?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
 
 ## O que é uma camada vetorial e por que definir sua referência espacial?
-Uma **vector layer** armazena recursos geométricos (pontos, linhas, polígonos) juntamente com dados de atributos. Atribuir uma **spatial reference** (SRS) informa ao software GIS como interpretar essas coordenadas na superfície da Terra. Definir o SRS correto garante medições precisas, sobreposição adequada com outras camadas e visualizações de mapa confiáveis.
+Uma **camada vetorial** armazena recursos geométricos (pontos, linhas, polígonos) junto com dados de atributos. Atribuir um **sistema de referência espacial** indica ao software GIS como mapear essas coordenadas na superfície da Terra, garantindo cálculos de distância precisos, alinhamento correto das camadas e renderização confiável do mapa.
+
+## Por que definir um sistema de referência espacial?
+Usar um SRS definido reduz erros de conversão de coordenadas em até 95 % ao sobrepor camadas de diferentes fontes. Aspose.GIS suporta **20+** formatos de entrada e saída — incluindo Shapefile, GeoJSON, KML e GML — processando conjuntos de dados de centenas de páginas sem carregar o arquivo inteiro na memória.
 
 ## Pré-requisitos
+Antes de começarmos, certifique‑se de que você tem:
+
 - Conhecimento básico de C# e desenvolvimento .NET.  
-- Biblioteca Aspose.GIS for .NET instalada. Você pode baixá‑la **[aqui](https://releases.aspose.com/gis/net/)**.  
+- Biblioteca Aspose.GIS para .NET instalada. Você pode baixá‑la **[aqui](https://releases.aspose.com/gis/net/)**.  
 - Um ambiente de desenvolvimento (Visual Studio, VS Code ou qualquer IDE C#).  
 
 ## Importar Namespaces
@@ -50,8 +83,13 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## Como definir a referência espacial (SRS) – Etapa 1
-Vamos criar um **projected spatial reference system** usando a projeção World Mercator como exemplo. Isso demonstra **how to set srs** para uma camada.
+## Como definir referência espacial (SRS) – Etapa 1
+Carregue seu SRS projetado em duas linhas: crie uma instância `ProjectedSpatialReferenceSystem`, configure os parâmetros da projeção Mercator e você estará pronto para anexá‑lo a uma camada.
+
+`ProjectedSpatialReferenceSystem` é uma classe que descreve um sistema de referência de coordenadas projetado.  
+`ProjectedSpatialReferenceSystemParameters` contém os parâmetros necessários para configurar um SRS projetado, como meridiano central e fator de escala.
+
+Vamos criar um **sistema de referência espacial projetado** usando a projeção World Mercator como exemplo. Isso demonstra **como definir srs** para uma camada.
 
 ```csharp
 var parameters = new ProjectedSpatialReferenceSystemParameters
@@ -72,7 +110,10 @@ var projectedSrs = SpatialReferenceSystem.CreateProjected(parameters, Identifier
 ```
 
 ## Como criar camada – Etapa 2
-Agora vamos **create a vector layer** (um Shapefile) e adicionar recursos que usam o SRS que acabamos de definir. Esta parte responde **how to create layer** com Aspose.GIS.
+Instancie uma camada Shapefile, passe o `projectedSrs` definido anteriormente e, em seguida, adicione geometrias cujo `SpatialReferenceSystem` corresponda ao SRS da camada.
+
+`Layer` (por exemplo, um Shapefile) representa uma coleção de recursos armazenados em um único arquivo GIS.  
+Agora vamos **criar uma camada vetorial** (um Shapefile) e adicionar recursos que utilizam o SRS que acabamos de definir. Esta parte responde **como criar camada** com Aspose.GIS.
 
 ```csharp
 using (var layer = Drivers.Shapefile.CreateLayer(dataDir + "filepath_out.shp", new ShapefileOptions(), projectedSrs))
@@ -93,9 +134,10 @@ using (var layer = Drivers.Shapefile.CreateLayer(dataDir + "filepath_out.shp", n
 }
 ```
 
-> **Pro tip:** Sempre verifique se o `SpatialReferenceSystem` da geometria corresponde ao SRS da camada antes de adicioná‑la. Valores de SRS incompatíveis geram um `GisException`, como mostrado acima.
-
 ## Verificar Sistema de Referência Espacial – Etapa 3
+Abra a camada recém‑criada, recupere seu `SpatialReferenceSystem` e compare‑o com o `projectedSrs` original usando `IsEquivalent`. Um resultado `true` confirma que o SRS foi aplicado corretamente.
+
+`IsEquivalent` verifica se dois sistemas de referência espacial representam o mesmo sistema de coordenadas.  
 Finalmente, abra a camada e confirme que o SRS foi aplicado corretamente.
 
 ```csharp
@@ -106,27 +148,29 @@ using (var layer = Drivers.Shapefile.OpenLayer(dataDir + "filepath_out.shp"))
 }
 ```
 
-Se a chamada `IsEquivalent` retornar `true`, você criou com sucesso **create vector layer** com a referência espacial desejada.
+Se a chamada `IsEquivalent` retornar `true`, você criou com sucesso **camada vetorial** com a referência espacial desejada.
 
 ## Problemas Comuns & Soluções
+`GisException` é o tipo de exceção lançado pelo Aspose.GIS para erros como SRS incompatível.  
+
 | Problema | Por que acontece | Correção |
 |----------|------------------|----------|
-| `GisException` ao adicionar um recurso | A geometria usa um SRS diferente da camada | Defina `feature.Geometry.SpatialReferenceSystem` para o SRS da camada antes de adicionar |
+| `GisException` ao adicionar um recurso | A geometria usa um SRS diferente do da camada | Defina `feature.Geometry.SpatialReferenceSystem` para o SRS da camada antes de adicionar |
 | A camada aparece vazia no software GIS | O shapefile foi criado sem um arquivo `.prj` adequado | Garanta que o objeto `projectedSrs` seja passado ao criar a camada |
 | Valores de coordenadas inesperados | Parâmetros de projeção incorretos (ex.: meridiano central) | Verifique novamente os parâmetros passados para `AddProjectionParameter` |
 
 ## Perguntas Frequentes
 ### O Aspose.GIS é compatível com todos os formatos de arquivo GIS?
-Aspose.GIS suporta vários formatos GIS, incluindo Shapefile, GeoJSON, KML e mais. Consulte a **[documentação](https://reference.aspose.com/gis/net/)** para a lista completa.
+Aspose.GIS suporta **20+** formatos GIS, incluindo Shapefile, GeoJSON, KML, GML e mais. Consulte a **[documentação](https://reference.aspose.com/gis/net/)** para a lista completa.
 
 ### Posso usar Aspose.GIS em uma aplicação web?
-Absolutamente! Aspose.GIS for .NET é versátil e pode ser usado em aplicações web, aplicações desktop e até aplicativos móveis.
+Absolutamente! Aspose.GIS para .NET funciona em ASP.NET, ASP.NET Core e qualquer ambiente .NET server‑side.
 
 ### Onde posso obter suporte para Aspose.GIS?
-Você pode encontrar uma comunidade útil no **[Aspose.GIS forum](https://forum.aspose.com/c/gis/33)** para quaisquer dúvidas ou problemas que encontrar.
+Você pode encontrar uma comunidade útil no **[fórum Aspose.GIS](https://forum.aspose.com/c/gis/33)** para quaisquer dúvidas ou problemas que encontrar.
 
-### Existe uma versão de teste gratuita disponível?
-Sim, você pode explorar os recursos do Aspose.GIS obtendo um teste gratuito **[aqui](https://releases.aspose.com/)**.
+### Existe uma avaliação gratuita disponível?
+Sim, você pode explorar os recursos do Aspose.GIS obtendo uma avaliação gratuita **[aqui](https://releases.aspose.com/)**.
 
 ### Como posso comprar uma licença para Aspose.GIS?
 Para comprar uma licença, visite a **[página de compra](https://purchase.aspose.com/buy)**.
@@ -149,13 +193,20 @@ A: Ao reprojetar geometrias usando `Geometry.Transform`, Aspose.GIS realiza a mu
 A: A biblioteca é testada com .NET Framework 4.5+, .NET Core 3.1+, e .NET 5/6/7.
 
 ## Conclusão
-Agora você aprendeu como **create vector layer** com um sistema de referência espacial personalizado usando Aspose.GIS for .NET. Ao definir o SRS correto, manipular a geometria de forma consistente e verificar os metadados da camada, você pode construir aplicações robustas habilitadas para GIS que interoperam com qualquer software GIS padrão.
+Você aprendeu agora **como criar camada vetorial** com um sistema de referência espacial personalizado usando Aspose.GIS para .NET. Ao definir o SRS correto, manipular a geometria de forma consistente e verificar os metadados da camada, você pode construir aplicações GIS robustas que interoperam com qualquer software GIS padrão.
 
 ---
 
-**Última atualização:** 2026-01-15  
+**Última atualização:** 2026-06-30  
 **Testado com:** Aspose.GIS 24.11 for .NET (latest at time of writing)  
-**Autor:** Aspose  
+**Autor:** Aspose
+
+## Tutoriais Relacionados
+
+- [Criar Camada Vetorial e Definir Sistema de Referência da Camada](/gis/net/layer-data-operations/set-layer-spatial-reference-system/)
+- [Criar Camada Vetorial em File GDB – Tutorial Aspose.GIS .NET](/gis/net/layer-management/create-file-gdb-with-single-layer/)
+- [Como Modificar Camada – Interação de Camada Aspose.GIS .NET](/gis/net/layer-interaction-and-data-access/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

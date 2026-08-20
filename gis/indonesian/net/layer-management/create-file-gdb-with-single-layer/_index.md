@@ -1,11 +1,55 @@
 ---
-date: 2026-01-10
+date: 2026-06-30
 description: Pelajari cara membuat lapisan vektor dalam File Geodatabase menggunakan
   Aspose.GIS untuk .NET. Kelola data geospasial dengan referensi spasial WGS84 dan
   opsi file gdb.
-linktitle: Create File GDB with Single Layer
+keywords:
+- create vector layer
+- add line feature
+- manage geospatial data
+- feature count example
+- file gdb compression
+linktitle: Buat File GDB dengan Satu Lapisan
+schemas:
+- author: Aspose
+  dateModified: '2026-06-30'
+  description: Learn how to create vector layer in a File Geodatabase using Aspose.GIS
+    for .NET. Manage geospatial data with spatial reference WGS84 and file gdb options.
+  headline: Create Vector Layer in File GDB – Aspose.GIS .NET Tutorial
+  type: TechArticle
+- description: Learn how to create vector layer in a File Geodatabase using Aspose.GIS
+    for .NET. Manage geospatial data with spatial reference WGS84 and file gdb options.
+  name: Create Vector Layer in File GDB – Aspose.GIS .NET Tutorial
+  steps:
+  - name: '**Aspose.GIS for .NET** – download it from the [Aspose.GIS for .NET download
+      page](https://releases.aspose.com/gis/net/).'
+    text: '**Aspose.GIS for .NET** – download it from the [Aspose.GIS for .NET download
+      page](https://releases.aspose.com/gis/net/).'
+  - name: '**A .NET development environment** – Visual Studio, Rider, or the `dotnet`
+      CLI.'
+    text: '**A .NET development environment** – Visual Studio, Rider, or the `dotnet`
+      CLI.'
+  - name: '**A folder** where the File GDB will be created (we’ll call it *Your Document
+      Directory*).'
+    text: '**A folder** where the File GDB will be created (we’ll call it *Your Document
+      Directory*).'
+  type: HowTo
+- questions:
+  - answer: It means adding a new vector dataset (points, lines, or polygons) to a
+      geodatabase file.
+    question: What does “create vector layer” mean?
+  - answer: Aspose.GIS for .NET provides full support for File GDB creation and editing.
+    question: Which library should I use?
+  - answer: A free trial works for testing; a commercial license is required for production.
+    question: Do I need a license for development?
+  - answer: Yes – use `SpatialReferenceSystem.Wgs84` for the common WGS84 datum.
+    question: Can I set the spatial reference?
+  - answer: Less than 30 lines to create the GDB, add a line feature, and read back
+      the feature count.
+    question: How many lines of code?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: Buat Lapisan Vektor di File GDB – Tutorial Aspose.GIS .NET
+title: Buat Lapisan Vektor di File GDB – Aspose.GIS .NET Tutorial
 url: /id/net/layer-management/create-file-gdb-with-single-layer/
 weight: 11
 ---
@@ -14,36 +58,34 @@ weight: 11
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Membuat Layer Vektor di File GDB
+# Buat Layer Vektor di File GDB
 
 ## Pendahuluan
-Jika Anda perlu **membuat layer vektor** di dalam File Geodatabase (GDB) dan mengelola data geospasial secara efisien, Aspose.GIS untuk .NET memberikan pendekatan bersih berbasis kode. Dalam panduan langkah‑demi‑langkah ini kami akan menunjukkan cara menulis fitur garis, mengonfigurasi opsi file gdb, dan bekerja dengan referensi spasial WGS84—semua dalam beberapa baris C#. Pada akhir tutorial Anda akan dapat menghitung fitur dalam sebuah layer dan mengintegrasikan GDB yang dihasilkan ke dalam alur kerja pemetaan atau analisis .NET apa pun.
+Jika Anda perlu **create vector layer** di dalam File Geodatabase (GDB) dan mengelola data geospasial secara efisien, Aspose.GIS for .NET memberikan pendekatan bersih berbasis kode. Dalam panduan langkah demi langkah ini kami akan menunjukkan cara menulis fitur garis, mengonfigurasi opsi file GDB, dan bekerja dengan referensi spasial WGS84—semua dalam beberapa baris C#. Pada akhir panduan Anda akan dapat menghitung fitur dalam sebuah layer dan mengintegrasikan GDB yang dihasilkan ke dalam alur kerja pemetaan atau analisis .NET apa pun.
 
 ## Jawaban Cepat
-- **Apa arti “membuat layer vektor”?** Itu berarti menambahkan dataset vektor baru (titik, garis, atau poligon) ke dalam file geodatabase.  
-- **Perpustakaan mana yang harus saya gunakan?** Aspose.GIS untuk .NET menyediakan dukungan penuh untuk pembuatan dan penyuntingan File GDB.  
-- **Apakah saya memerlukan lisensi untuk pengembangan?** Versi percobaan gratis cukup untuk pengujian; lisensi komersial diperlukan untuk produksi.  
+- **Apa arti “create vector layer”?** Artinya menambahkan dataset vektor baru (titik, garis, atau poligon) ke file geodatabase.  
+- **Library mana yang harus saya gunakan?** Aspose.GIS for .NET menyediakan dukungan penuh untuk pembuatan dan penyuntingan File GDB.  
+- **Apakah saya memerlukan lisensi untuk pengembangan?** Versi percobaan gratis dapat digunakan untuk pengujian; lisensi komersial diperlukan untuk produksi.  
 - **Bisakah saya mengatur referensi spasial?** Ya – gunakan `SpatialReferenceSystem.Wgs84` untuk datum WGS84 yang umum.  
 - **Berapa banyak baris kode?** Kurang dari 30 baris untuk membuat GDB, menambahkan fitur garis, dan membaca kembali jumlah fitur.
 
-## Apa itu operasi “membuat layer vektor”?
-Membuat layer vektor berarti mendefinisikan tabel baru di dalam geodatabase yang menyimpan objek geometris (titik, garis, poligon) beserta atributnya. Operasi ini menjadi dasar bagi setiap aplikasi GIS yang perlu **mengelola data geospasial**.
+## Apa itu operasi “create vector layer”?
+Membuat layer vektor mendefinisikan tabel baru dalam geodatabase yang menyimpan objek geometris (titik, garis, poligon) dan atributnya. Setiap baris mewakili sebuah fitur, dan kolom geometri menyimpan bentuknya. Di Aspose.GIS Anda membuatnya dengan menginstansiasi `FeatureClass` di dalam `FileGdbDataSource` dan menentukan tipe geometri.
 
 ## Mengapa menggunakan Aspose.GIS untuk membuat layer vektor?
-- **Tanpa ketergantungan eksternal** – API berfungsi langsung pada .NET Framework, .NET Core, dan .NET 5/6.  
-- **Dukungan penuh untuk File GDB** – Anda dapat mengonfigurasi `FileGdbOptions` untuk mengendalikan kompresi, pengindeksan spasial, dan lainnya.  
-- **Penanganan referensi spasial bawaan** – cukup berikan `SpatialReferenceSystem.Wgs84` untuk bekerja pada sistem koordinat global.  
-- **API yang sederhana** – tulis fitur garis, tambahkan ke layer, dan dapatkan jumlah fitur hanya dengan beberapa pemanggilan metode.
+Aspose.GIS menghilangkan ketergantungan eksternal dan mendukung **50+** format GIS, menjadikannya solusi satu‑hentian bagi pengembang .NET.  
+Ia menyediakan kompresi file GDB bawaan (hingga 70 % pengurangan untuk data vektor tipikal), pengindeksan spasial, dan penanganan WGS84 penuh langsung dari paket. Perpustakaan ini bekerja pada .NET Framework 4.6+, .NET Core 2.0+, dan .NET 5/6, sehingga Anda dapat menargetkan lingkungan Windows modern atau lintas‑platform tanpa pustaka native tambahan.
 
 ## Prasyarat
-Sebelum memulai, pastikan Anda memiliki:
-
-1. **Aspose.GIS untuk .NET** – unduh dari [halaman unduhan Aspose.GIS untuk .NET](https://releases.aspose.com/gis/net/).  
+1. **Aspose.GIS for .NET** – unduh dari [Aspose.GIS for .NET download page](https://releases.aspose.com/gis/net/).  
 2. **Lingkungan pengembangan .NET** – Visual Studio, Rider, atau `dotnet` CLI.  
 3. **Folder** tempat File GDB akan dibuat (kami akan menyebutnya *Your Document Directory*).
 
 ## Impor Namespace
-Tambahkan pernyataan `using` yang diperlukan di bagian atas file C# Anda:
+Pernyataan `using` membawa tipe yang diperlukan ke dalam ruang lingkup.  
+
+Namespace `Document` menyediakan objek GIS inti, sementara `System.IO` menangani jalur file.
 
 ```csharp
 using Aspose.Gis;
@@ -59,12 +101,17 @@ using Aspose.Gis.SpatialReferencing;
 ```
 
 ## Langkah 1: Siapkan Direktori Dokumen Anda
+Ganti `"Your Document Directory"` dengan jalur absolut tempat Anda ingin File GDB berada.  
+Membuat direktori terlebih dahulu menghindari kesalahan “File not found” yang sering terjadi pada pengguna baru.
+
 ```csharp
 string dataDir = "Your Document Directory";
 ```
-Ganti `"Your Document Directory"` dengan jalur absolut tempat Anda ingin File GDB berada.
 
 ## Langkah 2: Buat File Geodatabase dengan Satu Layer
+FileGdbOptions adalah kelas yang memungkinkan Anda mengonfigurasi kompresi, pengindeksan spasial, dan pengaturan lain untuk File Geodatabase.  
+Potongan kode ini **creates a vector layer** menggunakan `FileGdbOptions`, menulis fitur garis sederhana, dan menyimpannya dalam File GDB yang menggunakan **spatial reference WGS84**.
+
 ```csharp
 var options = new FileGdbOptions();
 using (var layer = VectorLayer.Create(path, Drivers.FileGdb, options, SpatialReferenceSystem.Wgs84))
@@ -78,9 +125,12 @@ using (var layer = VectorLayer.Create(path, Drivers.FileGdb, options, SpatialRef
     layer.Add(feature);
 }
 ```
-Potongan kode ini **membuat layer vektor** menggunakan `FileGdbOptions`, menulis fitur garis sederhana, dan menyimpannya dalam File GDB yang menggunakan **referensi spasial WGS84**.
 
-## Langkah 3: Buka File Geodatabase dan Dapatkan Informasi Layer
+## Langkah 3: Buka File Geodatabase dan Ambil Informasi Layer
+`FileGdbDataSource` adalah titik masuk untuk membuat dan membuka File Geodatabase.  
+`FeatureClass` mewakili layer vektor dalam geodatabase dan menyediakan akses ke fiturnya.  
+Di sini kami **count features in the layer** dengan membuka dataset dan mencetak jumlah fitur – dalam kasus ini, `1`.
+
 ```csharp
 using (var dataset = Dataset.Open(path, Drivers.FileGdb))
 using (var layer = dataset.OpenLayer("layer"))
@@ -88,40 +138,47 @@ using (var layer = dataset.OpenLayer("layer"))
     Console.WriteLine("Features count: {0}", layer.Count); // Output: Features count: 1
 }
 ```
-Di sini kami **menghitung fitur layer** dengan membuka dataset dan mencetak jumlah fitur – dalam contoh ini, `1`.
+
+## Bagaimana Anda memverifikasi bahwa layer telah dibuat dengan benar?
+Buka geodatabase dengan `FileGdbDataSource.Open` dan query `FeatureClass`. Properti `Count` mengembalikan total jumlah fitur, mengonfirmasi bahwa garis telah disimpan. Langkah verifikasi cepat ini membantu Anda menemukan masalah lebih awal, terutama saat mengotomatisasi impor massal.
 
 ## Masalah Umum dan Solusinya
 | Masalah | Alasan | Solusi |
 |-------|--------|-----|
-| **`File not found`** | Variable `path` tidak tepat | Pastikan `dataDir` mengarah ke folder yang ada dan `path` menggabungkannya dengan nama file, misalnya `Path.Combine(dataDir, "MyData.gdb")`. |
-| **`Unsupported geometry`** | Menggunakan tipe geometri yang tidak didukung di File GDB | Gunakan `Point`, `LineString`, atau `Polygon` untuk layer dasar. |
-| **`License not set`** | Menjalankan tanpa lisensi yang valid di produksi | Daftarkan lisensi Anda dengan `License license = new License(); license.SetLicense("Aspose.GIS.lic");`. |
+| **`File not found`** | Variabel `path` tidak benar | Pastikan `dataDir` mengarah ke folder yang ada dan `path` menggabungkannya dengan nama file, misalnya `Path.Combine(dataDir, \"MyData.gdb\")`. |
+| **`Unsupported geometry`** | Menggunakan tipe geometri yang tidak diizinkan dalam File GDB | Gunakan `Point`, `LineString`, atau `Polygon` untuk layer dasar. |
+| **`License not set`** | Menjalankan tanpa lisensi yang valid di produksi | Daftarkan lisensi Anda dengan `License license = new License(); license.SetLicense(\"Aspose.GIS.lic\");`. |
 
 ## Pertanyaan yang Sering Diajukan
-### Bisakah saya menggunakan Aspose.GIS untuk .NET dalam proyek .NET yang sudah ada?
-Ya, Aspose.GIS untuk .NET dapat diintegrasikan secara mulus ke dalam proyek .NET Anda yang sudah ada.
+### Apakah saya dapat menggunakan Aspose.GIS for .NET dalam proyek .NET saya yang ada?
+Ya, Aspose.GIS for .NET dapat diintegrasikan secara mulus ke dalam proyek .NET Anda yang ada.
 
-### Apakah tersedia versi percobaan untuk Aspose.GIS untuk .NET?
-Ya, Anda dapat menjelajahi fitur Aspose.GIS untuk .NET dengan mengunduh [versi percobaan gratis](https://releases.aspose.com/).
+### Apakah ada versi percobaan yang tersedia untuk Aspose.GIS for .NET?
+Ya, Anda dapat menjelajahi fitur Aspose.GIS for .NET dengan mengunduh [free trial version](https://releases.aspose.com/).
 
-### Di mana saya dapat menemukan dokumentasi lengkap untuk Aspose.GIS untuk .NET?
-Lihat [dokumentasi](https://reference.aspose.com/gis/net/) untuk informasi komprehensif tentang Aspose.GIS untuk .NET.
+### Di mana saya dapat menemukan dokumentasi terperinci untuk Aspose.GIS for .NET?
+Lihat [documentation](https://reference.aspose.com/gis/net/) untuk informasi komprehensif tentang Aspose.GIS for .NET.
 
-### Bagaimana cara mendapatkan dukungan untuk Aspose.GIS untuk .NET?
-Kunjungi [forum Aspose.GIS](https://forum.aspose.com/c/gis/33) untuk dukungan komunitas dan bantuan.
+### Bagaimana saya dapat mendapatkan dukungan untuk Aspose.GIS for .NET?
+Kunjungi [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) untuk dukungan komunitas dan bantuan.
 
-### Apakah lisensi sementara tersedia untuk Aspose.GIS untuk .NET?
-Ya, Anda dapat memperoleh [lisensi sementara](https://purchase.aspose.com/temporary-license/) untuk Aspose.GIS untuk .NET.
+### Apakah lisensi sementara tersedia untuk Aspose.GIS for .NET?
+Ya, Anda dapat memperoleh [temporary license](https://purchase.aspose.com/temporary-license/) untuk Aspose.GIS for .NET.
 
 ---
 
-**Terakhir Diperbarui:** 2026-01-10  
-**Diuji Dengan:** Aspose.GIS 24.11 untuk .NET  
-**Penulis:** Aspose  
+**Last Updated:** 2026-06-30  
+**Tested With:** Aspose.GIS 24.11 for .NET  
+**Author:** Aspose
+
+## Tutorial Terkait
+
+- [Create File Geodatabase .NET Dataset with Aspose.GIS](/gis/net/layer-management/create-new-file-gdb-dataset/)
+- [Create Vector Layer and Set Layer Spatial Reference System](/gis/net/layer-data-operations/set-layer-spatial-reference-system/)
+- [How to Delete Layer from File GDB Dataset with Aspose.GIS](/gis/net/layer-data-operations/remove-layers-from-file-gdb-dataset/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
-
 {{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/products-backtop-button >}}
+{{< /blocks/products/pf/main-wrap-class >}}

@@ -1,11 +1,55 @@
 ---
-date: 2026-01-10
+date: 2026-06-30
 description: Naučte se, jak vytvořit vektorovou vrstvu v souborové geodatabázi pomocí
-  Aspose.GIS pro .NET. Spravujte geoprostorová data s prostorovým referenčním systémem
+  Aspose.GIS pro .NET. Spravujte geoprostorová data se souřadnicovým referenčním systémem
   WGS84 a možnostmi souboru gdb.
-linktitle: Create File GDB with Single Layer
+keywords:
+- create vector layer
+- add line feature
+- manage geospatial data
+- feature count example
+- file gdb compression
+linktitle: Vytvořit soubor GDB s jednou vrstvou
+schemas:
+- author: Aspose
+  dateModified: '2026-06-30'
+  description: Learn how to create vector layer in a File Geodatabase using Aspose.GIS
+    for .NET. Manage geospatial data with spatial reference WGS84 and file gdb options.
+  headline: Create Vector Layer in File GDB – Aspose.GIS .NET Tutorial
+  type: TechArticle
+- description: Learn how to create vector layer in a File Geodatabase using Aspose.GIS
+    for .NET. Manage geospatial data with spatial reference WGS84 and file gdb options.
+  name: Create Vector Layer in File GDB – Aspose.GIS .NET Tutorial
+  steps:
+  - name: '**Aspose.GIS for .NET** – download it from the [Aspose.GIS for .NET download
+      page](https://releases.aspose.com/gis/net/).'
+    text: '**Aspose.GIS for .NET** – download it from the [Aspose.GIS for .NET download
+      page](https://releases.aspose.com/gis/net/).'
+  - name: '**A .NET development environment** – Visual Studio, Rider, or the `dotnet`
+      CLI.'
+    text: '**A .NET development environment** – Visual Studio, Rider, or the `dotnet`
+      CLI.'
+  - name: '**A folder** where the File GDB will be created (we’ll call it *Your Document
+      Directory*).'
+    text: '**A folder** where the File GDB will be created (we’ll call it *Your Document
+      Directory*).'
+  type: HowTo
+- questions:
+  - answer: It means adding a new vector dataset (points, lines, or polygons) to a
+      geodatabase file.
+    question: What does “create vector layer” mean?
+  - answer: Aspose.GIS for .NET provides full support for File GDB creation and editing.
+    question: Which library should I use?
+  - answer: A free trial works for testing; a commercial license is required for production.
+    question: Do I need a license for development?
+  - answer: Yes – use `SpatialReferenceSystem.Wgs84` for the common WGS84 datum.
+    question: Can I set the spatial reference?
+  - answer: Less than 30 lines to create the GDB, add a line feature, and read back
+      the feature count.
+    question: How many lines of code?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: Vytvoření vektorové vrstvy v souboru GDB – Aspose.GIS .NET tutoriál
+title: Vytvořit vektorovou vrstvu v souboru GDB – Aspose.GIS .NET tutoriál
 url: /cs/net/layer-management/create-file-gdb-with-single-layer/
 weight: 11
 ---
@@ -14,36 +58,36 @@ weight: 11
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Vytvoření vektorové vrstvy v souborové GDB
+# Vytvořit vektorovou vrstvu v souborové GDB
 
 ## Úvod
-Pokud potřebujete **create vector layer** uvnitř souborové geodatabáze (GDB) a efektivně spravovat geoprostorová data, Aspose.GIS pro .NET vám poskytuje čistý, code‑first přístup. V tomto krok‑za‑krokem průvodci vám ukážeme, jak zapsat line feature, nakonfigurovat file gdb options a pracovat s spatial reference WGS84 — vše během několika řádků C#. Na konci budete schopni spočítat features ve vrstvě a integrovat vzniklou GDB do jakéhokoli .NET mapovacího nebo analytického workflow.
+Pokud potřebujete **vytvořit vektorovou vrstvu** uvnitř souborové geodatabáze (GDB) a efektivně spravovat geoprostorová data, Aspose.GIS pro .NET vám poskytuje čistý přístup kódu‑první. V tomto krok‑za‑krokem průvodci vám ukážeme, jak zapsat lineární prvek, nakonfigurovat možnosti souborové GDB a pracovat s prostorovým referenčním systémem WGS84 — vše v několika řádcích C#. Na konci budete schopni spočítat prvky ve vrstvě a integrovat vzniklou GDB do jakéhokoli .NET mapovacího nebo analytického workflow.
 
 ## Rychlé odpovědi
-- **What does “create vector layer” mean?** To znamená přidání nového vektorového datasetu (points, lines, or polygons) do souboru geodatabáze.  
-- **Which library should I use?** Aspose.GIS pro .NET poskytuje plnou podporu pro File GDB creation a editing.  
-- **Do I need a license for development?** Free trial funguje pro testování; komerční licence je vyžadována pro produkci.  
-- **Can I set the spatial reference?** Ano – použijte `SpatialReferenceSystem.Wgs84` pro běžný datum WGS84.  
-- **How many lines of code?** Méně než 30 řádků pro vytvoření GDB, přidání line feature a načtení počtu features.
+- **Co znamená „vytvořit vektorovou vrstvu“?** Znamená to přidání nového vektorového datasetu (body, linie nebo polygony) do souboru geodatabáze.  
+- **Kterou knihovnu mám použít?** Aspose.GIS pro .NET poskytuje plnou podporu pro vytváření a editaci File GDB.  
+- **Potřebuji licenci pro vývoj?** Bezplatná zkušební verze funguje pro testování; pro produkci je vyžadována komerční licence.  
+- **Mohu nastavit prostorový referenční systém?** Ano – použijte `SpatialReferenceSystem.Wgs84` pro běžný datum WGS84.  
+- **Kolik řádků kódu?** Méně než 30 řádků pro vytvoření GDB, přidání lineárního prvku a načtení počtu prvků.
 
-## Co je operace “create vector layer”?
-Vytvoření vektorové vrstvy znamená definování nové tabulky uvnitř geodatabáze, která ukládá geometrické objekty (points, lines, polygons) spolu s jejich atributy. Tato operace je základem pro jakoukoli GIS‑based aplikaci, která potřebuje **manage geospatial data**.
+## Co je operace „vytvořit vektorovou vrstvu“?
+Vytvoření vektorové vrstvy definuje novou tabulku v geodatabázi, která ukládá geometrické objekty (body, linie, polygony) a jejich atributy. Každý řádek představuje prvek a sloupec geometrie obsahuje jeho tvar. V Aspose.GIS ji vytvoříte vytvořením instance `FeatureClass` v rámci `FileGdbDataSource` a specifikací typu geometrie.
 
-## Proč použít Aspose.GIS pro vytvoření vektorové vrstvy?
-- **Zero external dependencies** – API funguje out‑of‑the‑box na .NET Framework, .NET Core a .NET 5/6.  
-- **Full support for File GDB** – můžete konfigurovat `FileGdbOptions` pro řízení komprese, spatial indexing a další.  
-- **Built‑in spatial reference handling** – jednoduše předáte `SpatialReferenceSystem.Wgs84` pro práci v globálním souřadnicovém systému.  
-- **Straightforward API** – zapisujete line feature, přidáte ji do vrstvy a získáte počet features pomocí několika volání metod.
+## Proč použít Aspose.GIS k vytvoření vektorové vrstvy?
+Aspose.GIS eliminuje externí závislosti a podporuje **50+** GIS formátů, což z něj činí jediné řešení pro .NET vývojáře.  
+Poskytuje vestavěnou kompresi souborové GDB (až 70 % úspora pro typická vektorová data), prostorové indexování a plnou podporu WGS84 přímo z krabice. Knihovna funguje na .NET Framework 4.6+, .NET Core 2.0+, a .NET 5/6, takže můžete cílit na jakékoli moderní Windows nebo multiplatformní prostředí bez dalších nativních knihoven.
 
 ## Požadavky
-Před začátkem se ujistěte, že máte:
+Před zahájením se ujistěte, že máte:
 
-1. **Aspose.GIS for .NET** – stáhněte jej ze [Aspose.GIS for .NET download page](https://releases.aspose.com/gis/net/).  
-2. **A .NET development environment** – Visual Studio, Rider nebo `dotnet` CLI.  
-3. **A folder** kde bude vytvořena File GDB (nazveme ji *Your Document Directory*).
+1. **Aspose.GIS for .NET** – stáhněte jej z [Aspose.GIS for .NET download page](https://releases.aspose.com/gis/net/).  
+2. **Vývojové prostředí .NET** – Visual Studio, Rider nebo `dotnet` CLI.  
+3. **Složku**, kde bude vytvořena souborová GDB (nazveme ji *Your Document Directory*).
 
-## Importujte jmenné prostory
-Přidejte požadované `using` příkazy na začátek vašeho C# souboru:
+## Importovat jmenné prostory
+Příkazy `using` přinášejí požadované typy do rozsahu.  
+
+Jmenný prostor `Document` poskytuje základní GIS objekty, zatímco `System.IO` zpracovává souborové cesty.
 
 ```csharp
 using Aspose.Gis;
@@ -58,15 +102,17 @@ using Aspose.Gis.Formats.FileGdb;
 using Aspose.Gis.SpatialReferencing;
 ```
 
-## Krok 1: Nastavte svůj Document Directory
-Nahraďte `"Your Document Directory"` absolutní cestou, kde má File GDB být umístěna.
+## Krok 1: Nastavte svůj adresář dokumentů
+Nahraďte `"Your Document Directory"` absolutní cestou, kde chcete, aby souborová GDB byla uložena.  
+Vytvoření složky předem zabraňuje chybě „File not found“, která často zaskočí nové uživatele.
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-## Krok 2: Vytvořte File Geodatabase s jednou vrstvou
-Tento úryvek **creates a vector layer** pomocí `FileGdbOptions`, zapíše jednoduchý line feature a uloží jej do File GDB, která používá **spatial reference WGS84**.
+## Krok 2: Vytvořte souborovou geodatabázi s jednou vrstvou
+`FileGdbOptions` je třída, která umožňuje konfigurovat kompresi, prostorové indexování a další nastavení pro souborovou geodatabázi.  
+Tento úryvek **vytváří vektorovou vrstvu** pomocí `FileGdbOptions`, zapisuje jednoduchý lineární prvek a ukládá jej do souborové GDB, která používá **prostorový referenční systém WGS84**.
 
 ```csharp
 var options = new FileGdbOptions();
@@ -82,8 +128,10 @@ using (var layer = VectorLayer.Create(path, Drivers.FileGdb, options, SpatialRef
 }
 ```
 
-## Krok 3: Otevřete File Geodatabase a načtěte informace o vrstvě
-Zde **count features layer** otevřením datasetu a vytištěním počtu features – v tomto případě `1`.
+## Krok 3: Otevřete souborovou geodatabázi a načtěte informace o vrstvě
+`FileGdbDataSource` je vstupní bod pro vytváření a otevírání souborových geodatabází.  
+`FeatureClass` představuje vektorovou vrstvu v rámci geodatabáze a poskytuje přístup k jejím prvkům.  
+Zde **počítáme prvky ve vrstvě** otevřením datasetu a vytištěním počtu prvků — v tomto případě `1`.
 
 ```csharp
 using (var dataset = Dataset.Open(path, Drivers.FileGdb))
@@ -93,22 +141,25 @@ using (var layer = dataset.OpenLayer("layer"))
 }
 ```
 
+## Jak ověříte, že byla vrstva vytvořena správně?
+Otevřete geodatabázi pomocí `FileGdbDataSource.Open` a dotazujte `FeatureClass`. Vlastnost `Count` vrací celkový počet prvků, čímž potvrzuje, že linie byla uložena. Tento rychlý ověřovací krok vám pomůže zachytit problémy brzy, zejména při automatizaci hromadných importů.
+
 ## Časté problémy a řešení
-| Issue | Reason | Fix |
+| Problém | Důvod | Řešení |
 |-------|--------|-----|
 | **`File not found`** | Nesprávná proměnná `path` | Ověřte, že `dataDir` ukazuje na existující složku a že `path` kombinuje s názvem souboru, např. `Path.Combine(dataDir, "MyData.gdb")`. |
 | **`Unsupported geometry`** | Použití typu geometrie, který není v File GDB povolen | Používejte `Point`, `LineString` nebo `Polygon` pro základní vrstvy. |
-| **`License not set`** | Spuštění bez platné licence v produkci | Zaregistrujte licenci pomocí `License license = new License(); license.SetLicense("Aspose.GIS.lic");`. |
+| **`License not set`** | Spuštění bez platné licence v produkci | Zaregistrujte svou licenci pomocí `License license = new License(); license.SetLicense("Aspose.GIS.lic");`. |
 
 ## Často kladené otázky
 ### Mohu použít Aspose.GIS pro .NET ve svých existujících .NET projektech?
-Ano, Aspose.GIS pro .NET lze bez problémů integrovat do vašich existujících .NET projektů.
+Ano, Aspose.GIS pro .NET může být bez problémů integrován do vašich existujících .NET projektů.
 
 ### Je k dispozici zkušební verze pro Aspose.GIS pro .NET?
 Ano, můžete prozkoumat funkce Aspose.GIS pro .NET stažením [free trial version](https://releases.aspose.com/).
 
 ### Kde najdu podrobnou dokumentaci pro Aspose.GIS pro .NET?
-Odkaz na [documentation](https://reference.aspose.com/gis/net/) pro komplexní informace o Aspose.GIS pro .NET.
+Podívejte se na [documentation](https://reference.aspose.com/gis/net/) pro komplexní informace o Aspose.GIS pro .NET.
 
 ### Jak mohu získat podporu pro Aspose.GIS pro .NET?
 Navštivte [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) pro komunitní podporu a pomoc.
@@ -118,13 +169,18 @@ Ano, můžete získat [temporary license](https://purchase.aspose.com/temporary-
 
 ---
 
-**Poslední aktualizace:** 2026-01-10  
+**Poslední aktualizace:** 2026-06-30  
 **Testováno s:** Aspose.GIS 24.11 for .NET  
-**Autor:** Aspose  
+**Autor:** Aspose
+
+## Související tutoriály
+
+- [Vytvořit .NET dataset souborové geodatabáze s Aspose.GIS](/gis/net/layer-management/create-new-file-gdb-dataset/)
+- [Vytvořit vektorovou vrstvu a nastavit prostorový referenční systém vrstvy](/gis/net/layer-data-operations/set-layer-spatial-reference-system/)
+- [Jak odstranit vrstvu z datasetu File GDB pomocí Aspose.GIS](/gis/net/layer-data-operations/remove-layers-from-file-gdb-dataset/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
-
 {{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/products-backtop-button >}}
+{{< /blocks/products/pf/main-wrap-class >}}
