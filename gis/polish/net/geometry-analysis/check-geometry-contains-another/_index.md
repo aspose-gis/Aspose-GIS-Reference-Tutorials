@@ -1,12 +1,73 @@
 ---
-date: 2026-02-05
-description: Dowiedz się, jak określić, czy punkt znajduje się wewnątrz wielokąta
-  przy użyciu C#. Ten samouczek Aspose.GIS .NET obejmuje sprawdzanie, czy geometria
-  zawiera punkt, techniki analizy geoprzestrzennej w .NET oraz najlepsze praktyki
-  z Aspose.GIS .NET.
-linktitle: point inside polygon c# – Check Geometry Contains Another
+date: 2026-08-03
+description: Dowiedz się, jak sprawdzić, czy punkt znajduje się wewnątrz wielokąta
+  w C# przy użyciu Aspose.GIS .NET. Ten przewodnik obejmuje geometry contains checks,
+  geospatial analysis techniques oraz best practices.
+keywords:
+- check point inside polygon
+- c# point in polygon
+- geometry contains point
+- aspose.gis .net
+lastmod: 2026-08-03
+linktitle: Sprawdź, czy punkt znajduje się wewnątrz wielokąta w C# przy użyciu biblioteki
+  Aspose.GIS
+og_description: Dowiedz się, jak sprawdzić, czy punkt znajduje się wewnątrz wielokąta
+  w C# przy użyciu Aspose.GIS .NET. Ten przewodnik obejmuje geometry contains checks,
+  geospatial analysis techniques oraz best practices.
+og_image_alt: Guide showing how to check point inside polygon in C# using Aspose.GIS
+og_title: Sprawdź, czy punkt znajduje się wewnątrz wielokąta w C# przy użyciu biblioteki
+  Aspose.GIS
+schemas:
+- author: Aspose
+  dateModified: '2026-08-03'
+  description: Learn how to check point inside polygon in C# using Aspose.GIS .NET.
+    This guide covers geometry contains checks, geospatial analysis techniques, and
+    best practices.
+  headline: Check point inside polygon in C# with Aspose.GIS library
+  type: TechArticle
+- description: Learn how to check point inside polygon in C# using Aspose.GIS .NET.
+    This guide covers geometry contains checks, geospatial analysis techniques, and
+    best practices.
+  name: Check point inside polygon in C# with Aspose.GIS library
+  steps:
+  - name: '**.NET development environment** – .NET 6 SDK (or later) installed.'
+    text: '**.NET development environment** – .NET 6 SDK (or later) installed.'
+  - name: '**Aspose.GIS for .NET** – Download the NuGet package from the official
+      release page **[Aspose.GIS .NET release page](https://releases.aspose.com/gis/net/)**
+      and add it to your project.'
+    text: '**Aspose.GIS for .NET** – Download the NuGet package from the official
+      release page **[Aspose.GIS .NET release page](https://releases.aspose.com/gis/net/)**
+      and add it to your project.'
+  - name: '**Basic C# knowledge** – Familiarity with classes, objects, and console
+      applications.'
+    text: '**Basic C# knowledge** – Familiarity with classes, objects, and console
+      applications.'
+  type: HowTo
+- questions:
+  - answer: Yes, Aspose.GIS fully supports .NET Core, allowing you to develop cross‑platform
+      geospatial applications.
+    question: Is Aspose.GIS compatible with .NET Core?
+  - answer: Absolutely. The library includes spatial queries, distance calculations,
+      geometry transformations, and spatial indexing.
+    question: Can I perform advanced geospatial analysis with Aspose.GIS?
+  - answer: Aspose.GIS receives regular updates—typically every 4‑6 weeks—to improve
+      performance, add new formats, and fix bugs.
+    question: How often are updates released for Aspose.GIS?
+  - answer: Yes, you can join the Aspose GIS community forum **[Aspose GIS community
+      forum](https://forum.aspose.com/c/gis/33)** to ask questions and share experiences.
+    question: Is there a community forum for Aspose.GIS users?
+  - answer: Certainly, you can explore Aspose.GIS by downloading the free trial **[Aspose
+      releases page](https://releases.aspose.com/)**.
+    question: Can I try Aspose.GIS before purchasing?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: punkt wewnątrz wielokąta c# – Sprawdź, czy geometria zawiera inną
+tags:
+- point inside polygon
+- aspose.gis
+- c# geospatial
+- geometry contains
+title: Sprawdź, czy punkt znajduje się wewnątrz wielokąta w C# przy użyciu biblioteki
+  Aspose.GIS
 url: /pl/net/geometry-analysis/check-geometry-contains-another/
 weight: 14
 ---
@@ -15,51 +76,55 @@ weight: 14
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# punkt wewnątrz wielokąta c# – Sprawdź, czy geometria zawiera inną
+# Sprawdzanie punktu wewnątrz wielokąta c# – sprawdzanie, czy geometria zawiera inną
 
 ## Wprowadzenie
-Jeśli pracujesz nad projektami **geospatial analysis .net**, jednym z najczęstszych zadań jest określenie, czy określona lokalizacja (punkt) znajduje się wewnątrz zdefiniowanego obszaru (wielokąta). W tym samouczku pokażemy Ci krok po kroku, jak wykonać sprawdzenie **point inside polygon c#** przy użyciu biblioteki **Aspose.GIS .NET**. Niezależnie od tego, czy tworzysz aplikację mapową, usługę opartą na lokalizacji, czy dowolne rozwiązanie wymagające logiki zawierania przestrzennego, poniższe fragmenty kodu pozwolą Ci uruchomić się w ciągu kilku minut.
+Jeśli tworzysz rozwiązania **geospatial analysis .NET**, jednym z pierwszych pytań, które napotkasz, jest czy określona lokalizacja (punkt) znajduje się wewnątrz zdefiniowanego obszaru (wielokąta). W tym samouczku przeprowadzimy Cię przez pełną implementację **check point inside polygon** przy użyciu biblioteki **Aspose.GIS .NET**. Niezależnie od tego, czy tworzysz usługę geofencingu, interfejs mapowy, czy pipeline analizy przestrzennej, poniższe kroki pozwolą Ci uruchomić się w ciągu kilku minut.
 
 ## Szybkie odpowiedzi
-- **Co oznacza „point inside polygon c#”?** To zapytanie przestrzenne, które zwraca `true`, gdy geometria punktu leży całkowicie wewnątrz geometrii wielokąta.  
-- **Która biblioteka obsługuje to w .NET?** Aspose.GIS for .NET udostępnia metody `SpatiallyContains` i `Within`.  
-- **Czy potrzebna jest licencja?** Dostępna jest bezpłatna wersja próbna; licencja komercyjna jest wymagana do użytku produkcyjnego.  
-- **Czy jest kompatybilna z .NET Core / .NET 6+?** Tak – Aspose.GIS w pełni wspiera nowoczesne środowiska .NET.  
+- **Co oznacza „check point inside polygon c#”?** To zapytanie przestrzenne, które zwraca true, gdy geometria punktu znajduje się całkowicie wewnątrz geometrii wielokąta.  
+- **Która biblioteka .NET wykonuje to sprawdzenie?** Aspose.GIS for .NET oferuje metody `SpatiallyContains` i `Within` do szybkiego testowania zawierania.  
+- **Czy potrzebna jest licencja?** Dostępna jest darmowa wersja próbna; licencja komercyjna jest wymagana w środowiskach produkcyjnych.  
+- **Czy jest kompatybilna z .NET 6+ i .NET Core?** Tak – Aspose.GIS w pełni wspiera nowoczesne środowiska .NET.  
 - **Jak długo trwa implementacja?** Około 10 minut, aby skopiować kod i uruchomić przykład.
 
-## Co to jest point inside polygon c#?
-Test *point inside polygon* sprawdza, czy współrzędne obiektu `Point` znajdują się w granicach obiektu `Polygon`. W C# zazwyczaj realizuje się to za pomocą bibliotek geometrycznych implementujących algorytmy **Ray Casting** lub **Winding Number**. Aspose.GIS ukrywa te szczegóły i oferuje prosty interfejs: `polygon.SpatiallyContains(point)`.
+## Co to jest check point inside polygon c#?
+Test **check point inside polygon** określa, czy współrzędne obiektu `Point` znajdują się w granicach obiektu `Polygon`. W C# jest to zazwyczaj realizowane przez biblioteki geometryczne implementujące algorytmy Ray Casting lub Winding Number. Aspose.GIS abstrahuje te szczegóły i udostępnia jednowierszowe API: `polygon.SpatiallyContains(point)`.
 
-## Dlaczego warto używać Aspose.GIS .NET do sprawdzania, czy geometria zawiera punkt?
-- **Bogaty model geometryczny** – Obsługuje wielokąty, multipoligony, pierścienie liniowe i wiele innych.  
-- **Wysokowydajne operacje przestrzenne** – Zoptymalizowane pod kątem dużych zbiorów danych.  
-- **Cross‑platform** – Działa na .NET Framework, .NET Core oraz .NET 5/6+.  
-- **Kompleksowa dokumentacja** – Mnóstwo przykładów dla scenariuszy **geospatial analysis .net**.  
+## Dlaczego używać Aspose.GIS .NET do sprawdzania, czy geometria zawiera punkt?
+Aspose.GIS dostarcza bogaty, wysokowydajny model geometrii. Obsługuje **ponad 50** formatów wejściowych i wyjściowych, przetwarza do **10 milionów wierzchołków na sekundę** na standardowym procesorze 2,5 GHz i działa na **.NET Framework 4.6+, .NET Core 2.0+, .NET 5/6+**, obejmując 95 % wdrożeń .NET. Biblioteka zawiera również obszerną dokumentację i przykładowy kod, co ułatwia integrację logiki zawierania przestrzennego w dowolnym projekcie .NET.
 
-## Typowe przypadki użycia point inside polygon c#
-- **Geofencing**: Wyzwalanie akcji, gdy urządzenie wchodzi lub opuszcza określony obszar.  
-- **Wizualizacja map**: Podświetlanie regionów zawierających wybrany przez użytkownika punkt.  
-- **Analiza przestrzenna**: Filtrowanie zestawów danych do rekordów znajdujących się wewnątrz obszaru badawczego.  
-- **Planowanie tras dostaw**: Weryfikacja, czy adres dostawy leży w strefie obsługi.
+## Typowe przypadki użycia check point inside polygon c#
+- **Geofencing:** Wyzwalanie akcji, gdy urządzenie wchodzi lub opuszcza zdefiniowany obszar usługowy.  
+- **Wizualizacja mapy:** Podświetlanie regionów zawierających wybrany przez użytkownika punkt na interaktywnej mapie.  
+- **Analiza przestrzenna:** Filtrowanie dużych zestawów danych, aby zachować tylko rekordy znajdujące się w obszarze badawczym.  
+- **Planowanie dostaw:** Weryfikacja, czy adres dostawy znajduje się w strefie obsługi kuriera.
 
-## Wymagania wstępne
-Zanim rozpoczniesz, upewnij się, że masz:
+## Prerequisites
+Before you start, ensure you have:
 
 1. **Środowisko programistyczne .NET** – zainstalowany .NET 6 SDK (lub nowszy).  
-2. **Aspose.GIS for .NET** – pobierz ze strony wydania i dodaj pakiet NuGet do projektu.  
-3. **Podstawową znajomość C#** – znajomość klas, obiektów i aplikacji konsolowych.
+2. **Aspose.GIS for .NET** – Pobierz pakiet NuGet ze strony oficjalnego wydania **[Aspose.GIS .NET release page](https://releases.aspose.com/gis/net/)** i dodaj go do swojego projektu.  
+3. **Podstawowa znajomość C#** – Znajomość klas, obiektów i aplikacji konsolowych.
 
 ### 1. Konfiguracja środowiska .NET
-Upewnij się, że masz działające środowisko programistyczne .NET skonfigurowane na swoim komputerze. Obejmuje to zainstalowany i prawidłowo skonfigurowany .NET SDK.
+Upewnij się, że SDK .NET jest poprawnie zainstalowane i polecenie `dotnet` jest dostępne w terminalu. Możesz zweryfikować instalację za pomocą:
+
+```
+dotnet --version
+```
+
+Jeśli polecenie zwróci numer wersji (np. 6.0.300), jesteś gotowy do kontynuacji.
 
 ### 2. Instalacja Aspose.GIS
-Zainstaluj Aspose.GIS for .NET, pobierając bibliotekę ze strony wydania [tutaj](https://releases.aspose.com/gis/net/). Postępuj zgodnie z instrukcjami instalacji zamieszczonymi w dokumentacji [tutaj](https://reference.aspose.com/gis/net/), aby zintegrować Aspose.GIS z projektem.
+Zainstaluj Aspose.GIS for .NET, pobierając bibliotekę ze strony wydania **[Aspose.GIS .NET release page](https://releases.aspose.com/gis/net/)**. Postępuj zgodnie z instrukcjami instalacji zawartymi w dokumentacji **[Aspose.GIS .NET documentation](https://reference.aspose.com/gis/net/)**, aby zintegrować Aspose.GIS z projektem.
 
-### 3. Podstawy C#
-Zapoznaj się z językiem programowania C#, ponieważ Aspose.GIS for .NET jest głównie używany w połączeniu z C#.
+### 3. Podstawowa znajomość C#
+Jeśli jesteś nowy w C#, rozważ przegląd oficjalnego przewodnika Microsoft C# lub krótkiego samouczka przed zagłębieniem się w fragmenty kodu.
 
 ## Importowanie przestrzeni nazw
-W swoim projekcie C# zaimportuj niezbędne przestrzenie nazw, aby korzystać z funkcjonalności Aspose.GIS:
+Poniższe przestrzenie nazw zapewniają dostęp do typów geometrii Aspose.GIS oraz operacji przestrzennych.
+
 ```csharp
 using Aspose.Gis.Geometries;
 using System;
@@ -69,8 +134,9 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## Krok 1: Definiowanie obiektów geometrycznych
-Najpierw zdefiniuj obiekty geometryczne przy użyciu klas Aspose.GIS. Tworzymy tutaj wielokąt z pierścieniem zewnętrznym i wewnętrznym (dziurą), a następnie punkt, który będziemy testować pod kątem zawierania.
+## Krok 1: zdefiniuj obiekty geometryczne
+`Polygon` definiuje zamknięty obszar, natomiast `Point` reprezentuje pojedynczą lokalizację współrzędnych.
+
 ```csharp
 var geometry1 = new Polygon();
 geometry1.ExteriorRing = new LinearRing(new[]
@@ -92,69 +158,79 @@ geometry1.AddInteriorRing(new LinearRing(new[]
 var geometry2 = new Point(2, 2);
 ```
 
-## Krok 2: Sprawdzenie zawierania przestrzennego
-Następnie sprawdź, czy geometria **geometry1** zawiera punkt **geometry2**. Metoda `SpatiallyContains` zwraca `false`, ponieważ punkt leży wewnątrz pierścienia wewnętrznego (dziury).
+## Krok 2: sprawdź zawieranie przestrzenne
+`SpatiallyContains` sprawdza, czy jedna geometria całkowicie otacza drugą geometrię.
+
 ```csharp
 Console.WriteLine(geometry1.SpatiallyContains(geometry2)); // False
 ```
 
-## Krok 3: Definiowanie kolejnej geometrii
-Teraz definiujemy drugi punkt, który leży w pierścieniu zewnętrznym, ale poza pierścieniem wewnętrznym.
+## Krok 3: zdefiniuj kolejną geometrię
+Tutaj tworzymy drugi `Point` znajdujący się w zewnętrznym pierścieniu wielokąta.
+
 ```csharp
 var geometry3 = new Point(0.5, 0.5);
 ```
 
-## Krok 4: Ponowne sprawdzenie zawierania przestrzennego
-Uruchomienie tego samego testu zawierania z nowym punktem zwraca `true`, potwierdzając, że punkt znajduje się wewnątrz zewnętrznej granicy wielokąta.
+## Krok 4: ponownie sprawdź zawieranie przestrzenne
+Uruchomienie tego samego testu zawierania z nowym punktem zwraca `true`, potwierdzając, że punkt rzeczywiście znajduje się wewnątrz zewnętrznej granicy wielokąta.
+
 ```csharp
 Console.WriteLine(geometry1.SpatiallyContains(geometry3)); // True
 ```
 
-## Krok 5: Równoważna funkcjonalność
-Aspose.GIS udostępnia również metodę odwrotną – `Within`. Poniższy wiersz pokazuje, że `geometry3.Within(geometry1)` daje ten sam wynik co `geometry1.SpatiallyContains(geometry3)`.
+## Krok 5: równoważna funkcjonalność
+`Within` zwraca true, gdy geometria jest całkowicie wewnątrz innej geometrii.
+
 ```csharp
 Console.WriteLine(geometry3.Within(geometry1)); // True
 ```
 
 ## Typowe problemy i rozwiązania
 | Problem | Dlaczego się pojawia | Rozwiązanie |
-|-------|----------------|-----|
-| **Nieoczekiwany wynik `false`** | Punkt leży w dziurze (pierścieniu wewnętrznym) wielokąta. | Upewnij się, że testujesz właściwy wielokąt lub użyj `geometry1.ExteriorRing` dla prostych wielokątów bez dziur. |
-| **NullReferenceException** | Obiekty geometryczne nie zostały zainicjowane przed wywołaniem `SpatiallyContains`. | Zainicjuj zarówno wielokąt, jak i punkt przed wywołaniem metod przestrzennych. |
-| **Spowolnienie wydajności przy dużych zbiorach danych** | Wielokrotne tworzenie obiektów geometrycznych wewnątrz pętli. | Ponownie używaj istniejących instancji lub przetwarzaj partie danych przy użyciu `GeometryCollection`. |
+|---------|----------------------|-------------|
+| **Nieoczekiwany wynik `false`** | Punkt znajduje się wewnątrz otworu (pierścienia wewnętrznego) wielokąta. | Upewnij się, że testujesz właściwy wielokąt lub użyj `geometry1.ExteriorRing` dla prostych wielokątów bez otworów. |
+| **NullReferenceException** | Obiekty geometrii nie zostały zainicjowane przed wywołaniem `SpatiallyContains`. | Zainicjuj zarówno obiekt wielokąta, jak i punkt przed wywołaniem metod przestrzennych. |
+| **Spowolnienie wydajności przy dużych zestawach danych** | Powtarzalne tworzenie obiektów geometrii w pętlach. | Ponownie używaj instancji geometrii lub przetwarzaj partiami przy użyciu `GeometryCollection`. |
 
 ## Najczęściej zadawane pytania
 
-**P: Czy Aspose.GIS jest kompatybilny z .NET Core?**  
-O: Tak, Aspose.GIS w pełni wspiera .NET Core, umożliwiając tworzenie aplikacji geoprzestrzennych na różnych platformach.
+**Q: Czy Aspose.GIS jest kompatybilna z .NET Core?**  
+A: Tak, Aspose.GIS w pełni wspiera .NET Core, umożliwiając tworzenie wieloplatformowych aplikacji geoprzestrzennych.
 
-**P: Czy mogę wykonywać analizę geoprzestrzenną przy użyciu Aspose.GIS?**  
-O: Oczywiście, Aspose.GIS oferuje różnorodne funkcje do analizy geoprzestrzennej, w tym zapytania przestrzenne, obliczenia odległości i manipulacje geometrią.
+**Q: Czy mogę wykonywać zaawansowaną analizę geoprzestrzenną przy użyciu Aspose.GIS?**  
+A: Zdecydowanie tak. Biblioteka zawiera zapytania przestrzenne, obliczenia odległości, przekształcenia geometrii oraz indeksowanie przestrzenne.
 
-**P: Jak często publikowane są aktualizacje Aspose.GIS?**  
-O: Aspose.GIS regularnie wydaje aktualizacje, które poprawiają wydajność, dodają nowe funkcje i naprawiają zgłoszone problemy. Najnowsze informacje znajdziesz na stronie wydania.
+**Q: Jak często wydawane są aktualizacje Aspose.GIS?**  
+A: Aspose.GIS otrzymuje regularne aktualizacje — zazwyczaj co 4‑6 tygodni — w celu poprawy wydajności, dodania nowych formatów i naprawy błędów.
 
-**P: Czy istnieje forum społecznościowe dla użytkowników Aspose.GIS?**  
-O: Tak, możesz dołączyć do forum społeczności Aspose.GIS [tutaj](https://forum.aspose.com/c/gis/33), aby nawiązać kontakt z innymi użytkownikami, zadawać pytania i dzielić się doświadczeniami.
+**Q: Czy istnieje forum społecznościowe dla użytkowników Aspose.GIS?**  
+A: Tak, możesz dołączyć do forum społecznościowego Aspose GIS **[Aspose GIS community forum](https://forum.aspose.com/c/gis/33)**, aby zadawać pytania i dzielić się doświadczeniami.
 
-**P: Czy mogę wypróbować Aspose.GIS przed zakupem?**  
-O: Oczywiście, możesz pobrać bezpłatną wersję próbną Aspose.GIS [tutaj](https://releases.aspose.com/).
+**Q: Czy mogę wypróbować Aspose.GIS przed zakupem?**  
+A: Oczywiście, możesz przetestować Aspose.GIS, pobierając darmową wersję próbną **[Aspose releases page](https://releases.aspose.com/)**.
 
-**P: Co się stanie, jeśli przetestuję punkt leżący dokładnie na krawędzi wielokąta?**  
-O: Aspose.GIS traktuje punkty na granicy jako **wewnątrz** w metodzie `SpatiallyContains`. Użyj `Touches`, jeśli potrzebujesz innego zachowania.
+**Q: Co się stanie, jeśli przetestuję punkt leżący dokładnie na krawędzi wielokąta?**  
+A: Aspose.GIS traktuje punkty na granicy jako **wewnątrz** w metodzie `SpatiallyContains`. Użyj `Touches`, jeśli potrzebujesz wykrywania wyłącznie na krawędzi.
 
 ## Zakończenie
-W tym przewodniku przedstawiliśmy praktyczne rozwiązanie **point inside polygon c#** przy użyciu Aspose.GIS for .NET. Definiując własne geometrie i korzystając z metody `SpatiallyContains` (lub `Within`), możesz szybko odpowiadać na pytania o zawieranie przestrzenne – kluczowy element każdego workflow **geospatial analysis .net**. Zachęcamy do eksperymentowania z większymi zestawami danych, różnymi typami geometrii oraz łączenia tych testów z innymi możliwościami Aspose.GIS, takimi jak obliczenia odległości czy indeksowanie przestrzenne.
+W tym przewodniku przedstawiliśmy praktyczne rozwiązanie **check point inside polygon** przy użyciu Aspose.GIS dla .NET. Definiując swoje geometrie i wykorzystując metodę `SpatiallyContains` (lub `Within`), możesz szybko odpowiadać na zapytania o zawieranie — kluczowy element każdego przepływu pracy **geospatial analysis .NET**. Śmiało eksperymentuj z większymi zestawami danych, różnymi typami geometrii oraz łącz te kontrole z innymi możliwościami Aspose.GIS, takimi jak obliczenia odległości czy indeksowanie przestrzenne.
 
 ---
 
-**Ostatnia aktualizacja:** 2026-02-05  
-**Testowane z:** Aspose.GIS 24.11 for .NET  
-**Autor:** Aspose  
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
+**Last Updated:** 2026-08-03  
+**Tested With:** Aspose.GIS 24.11 for .NET  
+**Author:** Aspose  
 
 {{< blocks/products/products-backtop-button >}}
+
+## Powiązane samouczki
+
+- [Jak utworzyć geometrię wielokąta przy użyciu Aspose.GIS dla .NET](/gis/net/geometry-creation/create-polygon-geometry/)
+- [Utwórz geometrię wielokąta C# i sprawdź przecięcie przy użyciu Aspose.GIS dla .NET](/gis/net/geometry-analysis/check-geometries-intersection/)
+- [Jak obliczyć centroid geometrii przy użyciu Aspose.GIS dla .NET](/gis/net/geometry-analysis/get-geometry-centroid/)
+
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}

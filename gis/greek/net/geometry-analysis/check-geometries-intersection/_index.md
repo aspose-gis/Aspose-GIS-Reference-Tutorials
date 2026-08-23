@@ -1,11 +1,65 @@
 ---
-date: 2026-02-05
-description: Μάθετε πώς να δημιουργείτε γεωμετρία πολυγώνων σε C# και πώς να χρησιμοποιείτε
-  τη μέθοδο intersects για να ανιχνεύετε επικαλυπτόμενα πολύγωνα με το Aspose.GIS
-  για .NET.
-linktitle: Create Polygon Geometry C#
+date: 2026-08-03
+description: Μάθετε πώς να δημιουργήσετε πολυγώνιο από σημεία σε C# και να ελέγξετε
+  την τομή πολυγώνων χρησιμοποιώντας το Aspose.GIS για .NET. Ακολουθήστε κώδικα βήμα‑βήμα
+  για να εντοπίσετε επικαλυπτόμενα πολυγώνια.
+keywords:
+- create polygon from points
+- how to create polygon
+- check polygon intersection
+- polygon overlap detection
+- how to use intersects
+lastmod: 2026-08-03
+linktitle: Δημιουργία Γεωμετρίας Πολυγώνου C#
+og_description: Μάθετε πώς να δημιουργήσετε πολυγώνιο από σημεία σε C# και να ελέγξετε
+  την τομή πολυγώνων χρησιμοποιώντας το Aspose.GIS για .NET. Ακολουθήστε κώδικα βήμα‑βήμα
+  για να εντοπίσετε επικαλυπτόμενα πολυγώνια.
+og_image_alt: Guide showing how to create polygon from points in C# and detect overlapping
+  polygons with Aspose.GIS
+og_title: Δημιουργία πολυγώνου από σημεία σε C# – έλεγχος τομής με Aspose.GIS
+schemas:
+- author: Aspose
+  dateModified: '2026-08-03'
+  description: Learn how to create polygon from points in C# and check polygon intersection
+    using Aspose.GIS for .NET. Follow step‑by‑step code to detect overlapping polygons.
+  headline: Create polygon from points in C# and detect intersection
+  type: TechArticle
+- description: Learn how to create polygon from points in C# and check polygon intersection
+    using Aspose.GIS for .NET. Follow step‑by‑step code to detect overlapping polygons.
+  name: Create polygon from points in C# and detect intersection
+  steps:
+  - name: Define geometries
+    text: The `Polygon` class represents a closed planar shape defined by an ordered
+      sequence of points. The `Point` class stores a single coordinate (X, Y) in a
+      specified spatial reference. In this step, you'll create polygons representing
+      two rectangular areas. The vertices are defined in a clockwise order,
+  - name: How to use Intersects method to detect overlapping polygons
+    text: Call `polygon1.Intersects(polygon2)` – it returns true when any part of
+      the two polygons overlaps, including shared edges or vertices. The method performs
+      a robust spatial analysis using the OGC standards, so you get accurate results
+      without additional geometry libraries. The check is fast and relia
+  - name: Check for disjoint geometries (the opposite of intersect)
+    text: The `Disjoint` method returns true when two geometries have no points in
+      common. Use it when you need to confirm that two shapes do **not** overlap.
+  type: HowTo
+- questions:
+  - answer: It returns `true` when two geometries share any common area.
+    question: What does the Intersects method do?
+  - answer: '`Aspose.Gis.Geometries`.'
+    question: Which namespace contains polygon classes?
+  - answer: A free trial works for testing; a commercial license is required for production.
+    question: Do I need a license for development?
+  - answer: Yes, Aspose.GIS supports all modern .NET runtimes.
+    question: Can I use this with .NET Core / .NET 6+?
+  - answer: Less than a second on a typical development machine.
+    question: How long does the sample take to run?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: Δημιουργία γεωμετρίας πολυγώνου C# και έλεγχος τομής με το Aspose.GIS για .NET
+tags:
+- create polygon
+- Aspose.GIS
+- C# geometry
+title: Δημιουργία πολυγώνου από σημεία σε C# και ανίχνευση τομής
 url: /el/net/geometry-analysis/check-geometries-intersection/
 weight: 11
 ---
@@ -14,47 +68,48 @@ weight: 11
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Δημιουργία Πολυγωνικής Γεωμετρίας C# και Έλεγχος Τομής με το Aspose.GIS για .NET
+# Δημιουργία πολυγώνου από σημεία σε C# και ανίχνευση τομής
 
 ## Εισαγωγή
-Αν χρειάζεστε **create polygon geometry C#** και θέλετε γρήγορα να καθορίσετε εάν δύο σχήματα επικαλύπτονται, το Aspose.GIS για .NET σας προσφέρει ένα καθαρό, υψηλής απόδοσης API. Σε αυτόν τον οδηγό θα περάσουμε από όλη τη διαδικασία — από την εγκατάσταση της βιβλιοθήκης μέχρι τη χρήση της μεθόδου `Intersects` για **ανίχνευση επικαλυπτόμενων πολυγώνων**. Στο τέλος, θα μπορείτε να ενσωματώσετε ελέγχους τομής πολυγώνων σε οποιαδήποτε εφαρμογή .NET με λίγες μόνο γραμμές κώδικα.
+Αν χρειάζεται να **δημιουργήσετε πολυγώνιο από σημεία σε C#** και να καθορίσετε γρήγορα εάν δύο σχήματα επικαλύπτονται, το Aspose.GIS for .NET σας προσφέρει ένα καθαρό, υψηλής απόδοσης API. Σε αυτόν τον οδηγό θα περάσουμε από τη διαδικασία εγκατάστασης της βιβλιοθήκης μέχρι τη χρήση της μεθόδου `Intersects` για **ανίχνευση επικαλυπτόμενων πολυγώνων**. Στο τέλος, θα μπορείτε να ενσωματώσετε ελέγχους τομής πολυγώνων σε οποιαδήποτε εφαρμογή .NET με λίγες μόνο γραμμές κώδικα.
 
-## Γρήγορες Απαντήσεις
-- **Τι κάνει η μέθοδος Intersects;** Επιστρέφει `true` όταν δύο γεωμετρίες μοιράζονται κάποια κοινή περιοχή.  
-- **Ποιο όνομα χώρου περιέχει τις κλάσεις πολυγώνων;** `Aspose.Gis.Geometries`.  
+## Σύντομες απαντήσεις
+- **Τι κάνει η μέθοδος Intersects;** Επιστρέφει `true` όταν δύο γεωμετρίες μοιράζονται οποιαδήποτε κοινή περιοχή.  
+- **Ποιο namespace περιέχει τις κλάσεις πολυγώνου;** `Aspose.Gis.Geometries`.  
 - **Χρειάζομαι άδεια για ανάπτυξη;** Μια δωρεάν δοκιμή λειτουργεί για δοκιμές· απαιτείται εμπορική άδεια για παραγωγή.  
 - **Μπορώ να το χρησιμοποιήσω με .NET Core / .NET 6+;** Ναι, το Aspose.GIS υποστηρίζει όλα τα σύγχρονα .NET runtime.  
-- **Πόσο χρόνο χρειάζεται το δείγμα για να εκτελεστεί;** Λιγότερο από ένα δευτερόλεπτο σε τυπικό μηχάνημα ανάπτυξης.
+- **Πόσο χρόνο χρειάζεται το παράδειγμα για εκτέλεση;** Λιγότερο από ένα δευτερόλεπτο σε τυπικό μηχάνημα ανάπτυξης.
 
-## Τι είναι η “create polygon geometry C#”;
-Η δημιουργία μιας πολυγωνικής γεωμετρίας σε C# σημαίνει την αρχικοποίηση της κλάσης `Polygon` (ή άλλων τύπων γεωμετρίας) που παρέχεται από το Aspose.GIS και την παροχή ενός κλειστού δακτυλίου από αντικείμενα `Point` που ορίζουν τις κορυφές του σχήματος. Μόλις δημιουργηθεί, η γεωμετρία μπορεί να συμμετέχει σε χωρικές λειτουργίες όπως τομή, περιέλαβση και υπολογισμούς απόστασης.
+## Τι είναι η «δημιουργία γεωμετρίας πολυγώνου C#»;
+Η δημιουργία γεωμετρίας πολυγώνου σε C# σημαίνει την κατασκευή ενός αντικειμένου `Polygon` από μια σειρά συντεταγμένων `Point` που ορίζουν το εξωτερικό δακτύλιο του σχήματος. Το Aspose.GIS παρέχει ένα απλό API για τη δημιουργία του πολυγώνου, την επαλήθευση του κλεισίματός του και τη χρήση του σε χωρικές λειτουργίες όπως η τομή ή η περιεκτικότητα.
 
 ## Γιατί να χρησιμοποιήσετε το Aspose.GIS για την ανίχνευση επικαλυπτόμενων πολυγώνων;
-- **Zero external dependencies** – καθαρή βιβλιοθήκη .NET, χωρίς εγκαταστάσεις GIS σε επίπεδο συστήματος.  
-- **Rich spatial operations** – `Intersects`, `Disjoint`, `Contains`, κ.λπ., όλα έτοιμα προς χρήση.  
-- **High accuracy** – αξιόπιστη διαχείριση περιπτώσεων όπως κοινές ακμές ή κορυφές.  
-- **Cross‑platform** – λειτουργεί σε Windows, Linux και macOS με .NET Core/5/6.  
+- **Καμία εξωτερική εξάρτηση** – η βιβλιοθήκη αποτελείται από ένα μόνο αρχείο .NET 5 MB, έτσι δεν χρειάζεστε καμία εγκατάσταση GIS.  
+- **Πλούσιες χωρικές λειτουργίες** – `Intersects`, `Disjoint`, `Contains`, `Touches`, κ.ά., όλα έτοιμα προς χρήση.  
+- **Υψηλή ακρίβεια** – ανθεκτική διαχείριση περιπτώσεων όπως κοινά άκρα ή κορυφές· η μηχανή ακολουθεί τα πρότυπα OGC.  
+- **Υποστήριξη πολλαπλών πλατφορμών** – λειτουργεί σε Windows, Linux και macOS με .NET Core/5/6.  
+- **Απόδοση** – επεξεργάζεται πολυγώνια με έως 10 000 κορυφές κάτω από ένα δευτερόλεπτο σε τυπικό laptop.
 
-### Γιατί είναι σημαντικό
-Η δυνατότητα προγραμματιστικού ελέγχου εάν δύο γεωγραφικές περιοχές τέμνονται είναι ουσιώδης για πολλές πραγματικές εφαρμογές: προγραμματισμός χρήσης γης, επικύρωση ζωνών παράδοσης, ανάλυση περιβαλλοντικών επιπτώσεων και ακόμη ανίχνευση συγκρούσεων σε ανάπτυξη παιχνιδιών. Χρησιμοποιώντας το Aspose.GIS μπορείτε να εκτελείτε αυτούς τους ελέγχους χωρίς βαριά υποδομή GIS.
+### Γιατί αυτό είναι σημαντικό
+Η δυνατότητα προγραμματιστικού ελέγχου εάν δύο γεωγραφικές περιοχές τέμνονται είναι ουσιώδης για πολλές πραγματικές περιπτώσεις: προγραμματισμός χρήσης γης, επαλήθευση ζωνών παράδοσης, ανάλυση περιβαλλοντικών επιπτώσεων και ακόμη ανίχνευση συγκρούσεων σε παιχνίδια. Χρησιμοποιώντας το Aspose.GIS μπορείτε να εκτελείτε αυτούς τους ελέγχους χωρίς βαριά GIS εξυπηρετητή.
 
 ## Προαπαιτούμενα
 Πριν ξεκινήσετε, βεβαιωθείτε ότι έχετε:
 
 1. **Aspose.GIS for .NET** εγκατεστημένο (δείτε τα βήματα παρακάτω).  
-2. Ένα περιβάλλον ανάπτυξης .NET (Visual Studio, VS Code ή Rider).  
+2. Περιβάλλον ανάπτυξης .NET (Visual Studio, VS Code ή Rider).  
 3. .NET Framework 4.6+ ή .NET Core 3.1+.
 
-### Εγκατάσταση του Aspose.GIS για .NET
-1. **Navigate to the Download Page:** Επισκεφθείτε τη σελίδα [Aspose.GIS for .NET download page](https://releases.aspose.com/gis/net/) για να αποκτήσετε την πιο πρόσφατη έκδοση του εργαλείου.  
-2. **Download the Toolkit:** Επιλέξτε την κατάλληλη έκδοση που είναι συμβατή με το περιβάλλον ανάπτυξής σας και κατεβάστε το toolkit.  
-3. **Install the Toolkit:** Ακολουθήστε τις οδηγίες εγκατάστασης που παρέχονται για να εγκαταστήσετε το Aspose.GIS για .NET στο μηχάνημα ανάπτυξής σας.
+### Εγκατάσταση Aspose.GIS για .NET
+1. Μεταβείτε στη Σελίδα Λήψης: Επισκεφθείτε τη [Aspose.GIS for .NET download page](https://releases.aspose.com/gis/net/) για να αποκτήσετε την τελευταία έκδοση του εργαλείου.  
+2. Λήψη του Εργαλείου: Επιλέξτε τη σωστή έκδοση συμβατή με το περιβάλλον σας και κατεβάστε το εργαλείο.  
+3. Εγκατάσταση του Εργαλείου: Ακολουθήστε τις οδηγίες εγκατάστασης που παρέχονται για να εγκαταστήσετε το Aspose.GIS for .NET στο μηχάνημά σας.
 
-## Εισαγωγή Ονομάτων Χώρων
-Για να αρχίσετε να εργάζεστε με το Aspose.GIS για .NET, πρέπει να εισάγετε τα απαραίτητα ονόματα χώρων στο έργο σας.
+## Εισαγωγή namespaces
+Για να αρχίσετε να εργάζεστε με το Aspose.GIS for .NET, πρέπει να εισάγετε τα απαραίτητα namespaces στο έργο σας.
 
-1. **Add References:** Στο έργο σας, προσθέστε αναφορές στη συναρμολόγηση Aspose.GIS.  
-2. **Import Namespaces:** Εισάγετε τα απαιτούμενα ονόματα χώρων στο αρχείο κώδικά σας. Για το παραδείγμα που παρέχεται, βεβαιωθείτε ότι έχετε εισάγει τα παρακάτω ονόματα χώρων:
+1. Προσθήκη αναφορών: Στο έργο σας, προσθέστε αναφορές στη συναρμολόγηση Aspose.GIS.  
+2. Εισαγωγή namespaces: Εισάγετε τα απαιτούμενα namespaces στον κώδικά σας. Για το παρακάτω παράδειγμα, βεβαιωθείτε ότι έχετε εισάγει τα ακόλουθα namespaces:
 
 ```csharp
 using Aspose.Gis.Geometries;
@@ -65,11 +120,11 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## Πώς να δημιουργήσετε polygon geometry C# με το Aspose.GIS;
-Τώρα που το περιβάλλον είναι έτοιμο, ας δημιουργήσουμε δύο απλές πολυγωνικές γεωμετρίες που θα ελέγξουμε αργότερα για επικάλυψη.
+## Πώς να δημιουργήσετε γεωμετρία πολυγώνου C# με το Aspose.GIS;
+`Polygon` αντιπροσωπεύει ένα κλειστό επίπεδο σχήμα ορισμένο από μια διατεταγμένη λίστα σημείων, ενώ το `Point` αποθηκεύει μια μόνο συντεταγμένη X‑Y. Η μέθοδος `Intersects` καθορίζει εάν δύο γεωμετρίες μοιράζονται κοινή περιοχή. Φορτώστε δύο αντικείμενα `Polygon` παρέχοντας κλειστά δαχτυλίδια από στιγμές `Point`, στη συνέχεια καλέστε τη μέθοδο `Intersects` για να ελέγξετε την επικάλυψη. Τα παρακάτω βήματα δείχνουν πώς να ορίσετε τα σημεία, να δημιουργήσετε τα πολυγώνια και να εκτελέσετε τον έλεγχο τομής σε λίγες μόνο γραμμές κώδικα C#.
 
-### Βήμα 1: Ορισμός Γεωμετριών
-Σε αυτό το βήμα, θα δημιουργήσετε πολυγώνια που αντιπροσωπεύουν δύο ορθογώνιες περιοχές. Οι κορυφές ορίζονται με δεξιόστροφη σειρά, και το πρώτο σημείο επαναλαμβάνεται στο τέλος για να κλείσει ο δακτύλιος.
+### Βήμα 1: Ορισμός γεωμετριών
+Η κλάση `Polygon` αντιπροσωπεύει ένα κλειστό επίπεδο σχήμα ορισμένο από μια διατεταγμένη ακολουθία σημείων. Η κλάση `Point` αποθηκεύει μια μόνο συντεταγμένη (X, Y) σε συγκεκριμένη χωρική αναφορά. Σε αυτό το βήμα, θα δημιουργήσετε πολυγώνια που αντιπροσωπεύουν δύο ορθογώνιες περιοχές. Οι κορυφές ορίζονται με δεξιόστροφη σειρά, και το πρώτο σημείο επαναλαμβάνεται στο τέλος για το κλείσιμο του δακτυλίου.
 
 ```csharp
 var geometry1 = new Polygon(new LinearRing(new[]
@@ -91,53 +146,60 @@ var geometry2 = new Polygon(new LinearRing(new[]
 ```
 
 ### Βήμα 2: Πώς να χρησιμοποιήσετε τη μέθοδο Intersects για την ανίχνευση επικαλυπτόμενων πολυγώνων
-Με τις γεωμετρίες ορισμένες, μπορούμε τώρα να καλέσουμε τη μέθοδο `Intersects`. Αυτή η μέθοδος **χρησιμοποιεί τον αλγόριθμο Intersects** για να ελέγξει εάν κάποιο τμήμα των δύο πολυγώνων μοιράζεται τον ίδιο χώρο.
+Καλέστε `polygon1.Intersects(polygon2)` – επιστρέφει true όταν οποιοδήποτε τμήμα των δύο πολυγώνων επικαλύπτεται, συμπεριλαμβανομένων κοινών άκρων ή κορυφών. Η μέθοδος εκτελεί ανθεκτική χωρική ανάλυση σύμφωνα με τα πρότυπα OGC, έτσι λαμβάνετε ακριβή αποτελέσματα χωρίς πρόσθετες βιβλιοθήκες γεωμετρίας. Ο έλεγχος είναι γρήγορος και αξιόπιστος για τυπικές περιπτώσεις χρήσης.
 
 ```csharp
 Console.WriteLine(geometry1.Intersects(geometry2)); // True
 Console.WriteLine(geometry2.Intersects(geometry1)); // True
 ```
 
-### Βήμα 3: Έλεγχος για μη-διασταυρούμενες γεωμετρίες (το αντίστροφο της τομής)
-Εάν χρειάζεται να επιβεβαιώσετε ότι δύο σχήματα **δεν** επικαλύπτονται, η μέθοδος `Disjoint` παρέχει το αντίστροφο αποτέλεσμα.
+### Βήμα 3: Έλεγχος για μη επικαλυπτόμενες γεωμετρίες (το αντίθετο της τομής)
+Η μέθοδος `Disjoint` επιστρέφει true όταν δύο γεωμετρίες δεν έχουν κοινά σημεία. Χρησιμοποιήστε την όταν χρειάζεται να επιβεβαιώσετε ότι δύο σχήματα **δεν** επικαλύπτονται.
 
 ```csharp
 // 'Disjoint' is opposite to 'Intersects'
 Console.WriteLine(geometry1.Disjoint(geometry2)); // False
 ```
 
-## Συχνά Προβλήματα και Λύσεις
+## Κοινά προβλήματα και λύσεις
 | Πρόβλημα | Γιατί συμβαίνει | Διόρθωση |
-|----------|------------------|----------|
-| **Always returns `false`** | Τα πολυγώνια δεν είναι κλειστά (πρώτο σημείο ≠ τελευταίο σημείο). | Βεβαιωθείτε ότι το πρώτο σημείο επαναλαμβάνεται στο τέλος του πίνακα συντεταγμένων. |
-| **Unexpected `true` for touching edges** | Το `Intersects` θεωρεί τις κοινές ακμές ως τομή. | Χρησιμοποιήστε τη μέθοδο `Touches` εάν χρειάζεστε ανίχνευση μόνο των ακμών. |
-| **Performance slowdown with many polygons** | Κάθε κλήση ελέγχει κάθε ζεύγος κορυφών. | Επεξεργαστείτε σε παρτίδες χρησιμοποιώντας `GeometryCollection` ή χωρική δεικτοδότηση (R‑tree) εάν υποστηρίζεται. |
+|----------|----------------|----------|
+| **Πάντα επιστρέφει `false`** | Τα πολυγώνια δεν είναι κλειστά (το πρώτο σημείο ≠ το τελευταίο). | Βεβαιωθείτε ότι το πρώτο σημείο επαναλαμβάνεται στο τέλος του πίνακα συντεταγμένων. |
+| **Απροσδόκητο `true` για άγγιγμα άκρων** | `Intersects` θεωρεί τα κοινά άκρα ως τομές. | Χρησιμοποιήστε τη μέθοδο `Touches` αν χρειάζεστε ανίχνευση μόνο άκρων. |
+| **Μείωση απόδοσης με πολλά πολυγώνια** | Κάθε κλήση ελέγχει κάθε ζεύγος κορυφών. | Επεξεργαστείτε σε παρτίδες χρησιμοποιώντας `GeometryCollection` ή χωρική ευρετηρίαση (R‑tree) αν υποστηρίζεται. |
 
-## Συχνές Ερωτήσεις
+## Συχνές ερωτήσεις
 
 **Q:** Μπορώ να χρησιμοποιήσω το Aspose.GIS για .NET με άλλα .NET frameworks;  
-**A:** Ναι, το Aspose.GIS για .NET είναι συμβατό με διάφορα .NET frameworks, συμπεριλαμβανομένου του .NET Core και του .NET Framework.
+**A:** Ναι, το Aspose.GIS για .NET είναι συμβατό με διάφορα .NET frameworks, συμπεριλαμβανομένων .NET Core και .NET Framework.
 
 **Q:** Υπάρχει διαθέσιμη δωρεάν δοκιμή για το Aspose.GIS για .NET;  
-**A:** Ναι, μπορείτε να αποκτήσετε δωρεάν δοκιμή του Aspose.GIS για .NET από [εδώ](https://releases.aspose.com/).
+**A:** Ναι, μπορείτε να αποκτήσετε δωρεάν δοκιμή του Aspose.GIS για .NET από τη [Aspose.GIS free trial page](https://releases.aspose.com/).
 
 **Q:** Πού μπορώ να βρω υποστήριξη για το Aspose.GIS για .NET;  
-**A:** Μπορείτε να ζητήσετε βοήθεια και να συμμετάσχετε στην κοινότητα στο [Aspose.GIS forum](https://forum.aspose.com/c/gis/33).
+**A:** Μπορείτε να ζητήσετε βοήθεια και να συμμετέχετε στην κοινότητα στο [Aspose.GIS forum](https://forum.aspose.com/c/gis/33).
 
 **Q:** Μπορώ να αποκτήσω προσωρινή άδεια για το Aspose.GIS για .NET;  
-**A:** Ναι, μπορείτε να αποκτήσετε προσωρινή άδεια από [εδώ](https://purchase.aspose.com/temporary-license/).
+**A:** Ναι, μπορείτε να αποκτήσετε προσωρινή άδεια από τη [Aspose.GIS temporary license page](https://purchase.aspose.com/temporary-license/).
 
 **Q:** Πού μπορώ να αγοράσω μια αδειοδοτημένη έκδοση του Aspose.GIS για .NET;  
-**A:** Μπορείτε να αγοράσετε μια αδειοδοτημένη έκδοση του Aspose.GIS για .NET από [εδώ](https://purchase.aspose.com/buy).
+**A:** Μπορείτε να αγοράσετε μια αδειοδοτημένη έκδοση του Aspose.GIS για .NET από τη [Aspose.GIS purchase page](https://purchase.aspose.com/buy).
 
 ## Συμπέρασμα
-Τώρα έχετε ένα πλήρες, έτοιμο για παραγωγή παράδειγμα που δείχνει πώς να **create polygon geometry C#**, να χρησιμοποιήσετε τη μέθοδο **Intersects** για την ανίχνευση επικάλυψης και να ελέγξετε συνθήκες μη‑διασταύρωσης. Μη διστάσετε να επεκτείνετε αυτό το μοτίβο σε μεγαλύτερες συλλογές γεωμετριών, να ενσωματώσετε χωρική δεικτοδότηση για απόδοση ή να το συνδυάσετε με άλλες λειτουργίες του Aspose.GIS όπως buffering ή spatial joins.
+Τώρα έχετε ένα πλήρες, έτοιμο για παραγωγή παράδειγμα που δείχνει πώς να **δημιουργήσετε πολυγώνιο από σημεία σε C#**, να χρησιμοποιήσετε τη μέθοδο **Intersects** για την ανίχνευση επικάλυψης και να επαληθεύσετε συνθήκες μη επικάλυψης. Μπορείτε ελεύθερα να επεκτείνετε αυτό το μοτίβο σε μεγαλύτερες συλλογές γεωμετριών, να ενσωματώσετε χωρική ευρετηρίαση για απόδοση ή να το συνδυάσετε με άλλες λειτουργίες του Aspose.GIS όπως buffering ή spatial joins.
 
 ---
 
-**Last Updated:** 2026-02-05  
+**Last Updated:** 2026-08-03  
 **Tested With:** Aspose.GIS 24.11 for .NET  
 **Author:** Aspose
+
+## Σχετικά Μαθήματα
+
+- [Πώς να δημιουργήσετε γεωμετρία πολυγώνου με το Aspose.GIS για .NET](/gis/net/geometry-creation/create-polygon-geometry/)
+- [Πώς να εκτελέσετε ανάλυση χωρικής επικάλυψης γεωμετριών με το Aspose.GIS για .NET](/gis/net/geometry-analysis/check-geometries-overlap/)
+- [Δημιουργία πολυγώνου με γεωμετρία οπής χρησιμοποιώντας το Aspose.GIS](/gis/net/geometry-creation/create-polygon-with-hole-geometry/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

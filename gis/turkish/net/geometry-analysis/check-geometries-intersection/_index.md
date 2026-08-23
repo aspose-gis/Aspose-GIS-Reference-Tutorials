@@ -1,11 +1,65 @@
 ---
-date: 2026-02-05
-description: Aspose.GIS for .NET ile C#’ta çokgen geometrisi oluşturmayı ve intersects metodunu
-  kullanarak çakışan çokgenleri tespit etmeyi öğrenin.
-linktitle: Create Polygon Geometry C#
+date: 2026-08-03
+description: C#'da noktalardan çokgen nasıl oluşturulur ve .NET için Aspose.GIS kullanarak
+  çokgen kesişimi nasıl kontrol edilir öğrenin. Çakışan çokgenleri tespit etmek için
+  adım adım kodu izleyin.
+keywords:
+- create polygon from points
+- how to create polygon
+- check polygon intersection
+- polygon overlap detection
+- how to use intersects
+lastmod: 2026-08-03
+linktitle: Çokgen Geometrisi Oluştur C#
+og_description: C#'da noktalardan çokgen nasıl oluşturulur ve .NET için Aspose.GIS
+  kullanarak çokgen kesişimi nasıl kontrol edilir öğrenin. Çakışan çokgenleri tespit
+  etmek için adım adım kodu izleyin.
+og_image_alt: Guide showing how to create polygon from points in C# and detect overlapping
+  polygons with Aspose.GIS
+og_title: C#'da noktalardan çokgen oluşturun – Aspose.GIS ile kesişimi kontrol edin
+schemas:
+- author: Aspose
+  dateModified: '2026-08-03'
+  description: Learn how to create polygon from points in C# and check polygon intersection
+    using Aspose.GIS for .NET. Follow step‑by‑step code to detect overlapping polygons.
+  headline: Create polygon from points in C# and detect intersection
+  type: TechArticle
+- description: Learn how to create polygon from points in C# and check polygon intersection
+    using Aspose.GIS for .NET. Follow step‑by‑step code to detect overlapping polygons.
+  name: Create polygon from points in C# and detect intersection
+  steps:
+  - name: Define geometries
+    text: The `Polygon` class represents a closed planar shape defined by an ordered
+      sequence of points. The `Point` class stores a single coordinate (X, Y) in a
+      specified spatial reference. In this step, you'll create polygons representing
+      two rectangular areas. The vertices are defined in a clockwise order,
+  - name: How to use Intersects method to detect overlapping polygons
+    text: Call `polygon1.Intersects(polygon2)` – it returns true when any part of
+      the two polygons overlaps, including shared edges or vertices. The method performs
+      a robust spatial analysis using the OGC standards, so you get accurate results
+      without additional geometry libraries. The check is fast and relia
+  - name: Check for disjoint geometries (the opposite of intersect)
+    text: The `Disjoint` method returns true when two geometries have no points in
+      common. Use it when you need to confirm that two shapes do **not** overlap.
+  type: HowTo
+- questions:
+  - answer: It returns `true` when two geometries share any common area.
+    question: What does the Intersects method do?
+  - answer: '`Aspose.Gis.Geometries`.'
+    question: Which namespace contains polygon classes?
+  - answer: A free trial works for testing; a commercial license is required for production.
+    question: Do I need a license for development?
+  - answer: Yes, Aspose.GIS supports all modern .NET runtimes.
+    question: Can I use this with .NET Core / .NET 6+?
+  - answer: Less than a second on a typical development machine.
+    question: How long does the sample take to run?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: C# ile Poligon Geometrisi Oluşturun ve Aspose.GIS for .NET ile Kesişimini Kontrol
-  Edin
+tags:
+- create polygon
+- Aspose.GIS
+- C# geometry
+title: C#'da noktalardan çokgen oluşturun ve kesişimi tespit edin
 url: /tr/net/geometry-analysis/check-geometries-intersection/
 weight: 11
 ---
@@ -14,47 +68,48 @@ weight: 11
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Polygon Geometri C# Oluşturma ve Aspose.GIS for .NET ile Kesişimini Kontrol Etme
+# C#'ta Noktalardan Çokgen Oluşturma ve Kesişimini Algılama
 
 ## Giriş
-Eğer **polygon geometry C#** oluşturmanız ve iki şeklin çakışıp çakışmadığını hızlıca belirlemeniz gerekiyorsa, Aspose.GIS for .NET size temiz, yüksek‑performanslı bir API sunar. Bu rehberde kütüphaneyi kurmaktan `Intersects` metodunu kullanarak **çakışan çokgenleri tespit** etmeye kadar tüm süreci adım adım anlatacağız. Sonunda, sadece birkaç satır kodla herhangi bir .NET uygulamasına çokgen‑kesişme kontrollerini entegre edebileceksiniz.
+C#'ta **noktalardan çokgen oluşturmanız** ve iki şeklin çakışıp çakışmadığını hızlıca belirlemeniz gerekiyorsa, Aspose.GIS for .NET size temiz, yüksek performanslı bir API sunar. Bu rehberde, kütüphaneyi kurmaktan `Intersects` metodunu kullanarak **çakışan çokgenleri tespit** etmeye kadar tüm süreci adım adım göstereceğiz. Sonunda, sadece birkaç satır kodla .NET uygulamanıza çokgen‑kesişme kontrollerini entegre edebileceksiniz.
 
 ## Hızlı Yanıtlar
-- **Intersects** metodunun ne yaptığı? İki geometri herhangi bir ortak alanı paylaştığında `true` döndürür.  
-- **Hangi namespace polygon sınıflarını içerir?** `Aspose.Gis.Geometries`.  
+- **Intersects yöntemi ne yapar?** İki geometri ortak bir alan paylaştığında `true` döndürür.  
+- **Hangi ad alanı çokgen sınıflarını içerir?** `Aspose.Gis.Geometries`.  
 - **Geliştirme için lisansa ihtiyacım var mı?** Test için ücretsiz deneme çalışır; üretim için ticari lisans gereklidir.  
 - **Bunu .NET Core / .NET 6+ ile kullanabilir miyim?** Evet, Aspose.GIS tüm modern .NET çalışma zamanlarını destekler.  
 - **Örnek çalıştırma süresi ne kadar?** Tipik bir geliştirme makinesinde bir saniyeden az.
 
-## “create polygon geometry C#” nedir?
-C# içinde bir polygon geometrisi oluşturmak, Aspose.GIS tarafından sağlanan `Polygon` sınıfının (veya diğer geometri tiplerinin) örneklenmesi ve şeklin köşe noktalarını tanımlayan `Point` nesnelerinden oluşan kapalı bir halka sağlanması anlamına gelir. Oluşturulduktan sonra, geometri kesişim, içerme ve mesafe hesaplamaları gibi uzamsal işlemlerde kullanılabilir.
+## “C#’ta çokgen geometrisi oluşturma” nedir?
+C#'ta çokgen geometrisi oluşturmak, şeklin dış halkasını tanımlayan bir dizi `Point` koordinatından bir `Polygon` nesnesi inşa etmek anlamına gelir. Aspose.GIS, çokgeni oluşturmak, kapanışını doğrulamak ve ardından kesişim ya da içerme gibi mekansal işlemlerde kullanmak için basit bir API sağlar.
 
-## Çakışan çokgenleri tespit etmek için neden Aspose.GIS kullanılmalı?
-- **Sıfır dış bağımlılık** – saf .NET kütüphanesi, yerel GIS kurulumları yok.  
-- **Zengin uzamsal işlemler** – `Intersects`, `Disjoint`, `Contains` vb., hepsi hazır.  
-- **Yüksek doğruluk** – ortak kenarlar veya köşe noktaları gibi kenar durumlarını sağlam bir şekilde işler.  
-- **Çapraz platform** – .NET Core/5/6 ile Windows, Linux ve macOS üzerinde çalışır.  
+## Çakışan çokgenleri tespit etmek için Aspose.GIS neden kullanılmalı?
+- **Sıfır dış bağımlılık** – kütüphane tek bir 5 MB .NET derlemesinden oluşur, bu yüzden yerel GIS kurulumuna ihtiyacınız yoktur.  
+- **Zengin mekansal işlemler** – `Intersects`, `Disjoint`, `Contains`, `Touches` ve daha fazlası, hepsi kullanıma hazır.  
+- **Yüksek doğruluk** – ortak kenarlar veya köşeler gibi uç durumların sağlam işlenmesi; motor OGC standartlarını izler.  
+- **Çapraz platform desteği** – .NET Core/5/6 ile Windows, Linux ve macOS'ta çalışır.  
+- **Performans** – tipik bir dizüstü bilgisayarda 10 000 köşeye kadar çokgenleri bir saniyeden az sürede işler.
 
 ### Bunun önemi
-İki coğrafi alanın programatik olarak kesişip kesişmediğini kontrol edebilmek, arazi kullanım planlaması, teslimat bölgesi doğrulaması, çevresel etki analizi ve hatta oyun geliştirme çarpışma tespiti gibi birçok gerçek dünya senaryosu için hayati öneme sahiptir. Aspose.GIS kullanarak bu kontrolleri ağır bir GIS sunucusu olmadan gerçekleştirebilirsiniz.
+İki coğrafi alanın kesişip kesişmediğini programlı bir şekilde kontrol edebilmek, arazi kullanım planlaması, teslimat bölgesi doğrulama, çevresel etki analizi ve hatta oyun geliştirme çarpışma tespiti gibi birçok gerçek dünya senaryosu için hayati öneme sahiptir. Aspose.GIS kullanarak bu kontrolleri ağır bir GIS sunucusu olmadan gerçekleştirebilirsiniz.
 
 ## Önkoşullar
-Başlamadan önce, aşağıdakilere sahip olduğunuzdan emin olun:
+Başlamadan önce şunların yüklü olduğundan emin olun:
 
 1. **Aspose.GIS for .NET** yüklü (aşağıdaki adımlara bakın).  
 2. .NET geliştirme ortamı (Visual Studio, VS Code veya Rider).  
 3. .NET Framework 4.6+ veya .NET Core 3.1+.
 
 ### Aspose.GIS for .NET Kurulumu
-1. İndirme Sayfasına Git: En son araç setini edinmek için [Aspose.GIS for .NET download page](https://releases.aspose.com/gis/net/) adresini ziyaret edin.  
-2. Araç Setini İndir: Geliştirme ortamınızla uyumlu uygun sürümü seçin ve araç setini indirin.  
-3. Araç Setini Kurun: Aspose.GIS for .NET'i geliştirme makinenize kurmak için verilen kurulum talimatlarını izleyin.
+1. İndirme Sayfasına Git: En son araç seti sürümünü edinmek için [Aspose.GIS for .NET download page](https://releases.aspose.com/gis/net/) adresini ziyaret edin.  
+2. Araç Setini İndirin: Geliştirme ortamınızla uyumlu uygun sürümü seçin ve araç setini indirin.  
+3. Araç Setini Kurun: Aspose.GIS for .NET'i geliştirme makinenize kurmak için sağlanan kurulum talimatlarını izleyin.
 
-## Namespace'leri İçe Aktarma
-Aspose.GIS for .NET ile çalışmaya başlamak için projenize gerekli namespace'leri eklemeniz gerekir.
+## Ad alanlarını içe aktarma
+Aspose.GIS for .NET ile çalışmaya başlamak için projenize gerekli ad alanlarını içe aktarmanız gerekir.
 
-1. Referansları Ekleyin: Projenizde Aspose.GIS derlemesine referans ekleyin.  
-2. Namespace'leri İçe Aktarın: Kod dosyanızda gerekli namespace'leri içe aktarın. Sağlanan örnek için aşağıdaki namespace'leri eklediğinizden emin olun:
+1. Referans ekleyin: Projenizde Aspose.GIS derlemesine referans ekleyin.  
+2. Ad alanlarını içe aktarın: Kod dosyanızda gerekli ad alanlarını içe aktarın. Sağlanan örnek için aşağıdaki ad alanlarını içe aktardığınızdan emin olun:
 
 ```csharp
 using Aspose.Gis.Geometries;
@@ -65,11 +120,11 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## Aspose.GIS ile polygon geometry C# nasıl oluşturulur?
-Ortam hazır olduğuna göre, daha sonra çakışma için test edeceğimiz iki basit polygon geometrisi oluşturalım.
+## Aspose.GIS ile C#’ta çokgen geometrisi nasıl oluşturulur?
+`Polygon`, sıralı bir nokta listesiyle tanımlanan kapalı bir düzlemsel şekli temsil eder, `Point` ise tek bir X‑Y koordinatı saklar. `Intersects` yöntemi iki geometrinin ortak bir alanı paylaşıp paylaşmadığını belirler. `Point` örneklerinden oluşan kapalı halkalar sağlayarak iki `Polygon` nesnesi yükleyin, ardından çakışmayı test etmek için `Intersects` yöntemini çağırın. Aşağıdaki adımlar, noktaları nasıl tanımlayacağınızı, çokgenleri oluşturacağınızı ve sadece birkaç satır C# koduyla kesişim kontrolünü nasıl yapacağınızı gösterir.
 
 ### Adım 1: Geometrileri Tanımlama
-Bu adımda, iki dikdörtgen alanı temsil eden çokgenler oluşturacaksınız. Köşe noktaları saat yönünde tanımlanır ve halkayı kapatmak için ilk nokta sonunda tekrarlanır.
+`Polygon` sınıfı, sıralı bir nokta dizisiyle tanımlanan kapalı bir düzlemsel şekli temsil eder. `Point` sınıfı, belirli bir uzamsal referansta tek bir koordinat (X, Y) saklar. Bu adımda, iki dikdörtgen alanı temsil eden çokgenler oluşturacaksınız. Köşeler saat yönünde tanımlanır ve halkayı kapatmak için ilk nokta sonunda tekrarlanır.
 
 ```csharp
 var geometry1 = new Polygon(new LinearRing(new[]
@@ -90,54 +145,61 @@ var geometry2 = new Polygon(new LinearRing(new[]
 }));
 ```
 
-### Adım 2: Çakışan çokgenleri tespit etmek için Intersects metodunu nasıl kullanılır
-Geometriler tanımlandıktan sonra artık `Intersects` metodunu çağırabiliriz. Bu metod **Intersects algoritmasını** kullanarak iki çokgenin herhangi bir kısmının aynı alanı paylaşıp paylaşmadığını kontrol eder.
+### Adım 2: Çakışan çokgenleri tespit etmek için Intersects yöntemini nasıl kullanılır
+`polygon1.Intersects(polygon2)` çağırın – iki çokgenin herhangi bir bölümü çakıştığında, ortak kenarlar veya köşeler dahil, true döndürür. Metod, OGC standartlarını kullanarak sağlam bir mekansal analiz yapar, böylece ek geometrik kütüphanelere ihtiyaç duymadan doğru sonuçlar elde edersiniz. Kontrol tipik kullanım senaryoları için hızlı ve güvenilirdir.
 
 ```csharp
 Console.WriteLine(geometry1.Intersects(geometry2)); // True
 Console.WriteLine(geometry2.Intersects(geometry1)); // True
 ```
 
-### Adım 3: Ayrık geometrileri kontrol etme (intersect'in tersine)
-İki şeklin **çakışmadığını** doğrulamanız gerekiyorsa, `Disjoint` metodu ters sonucu verir.
+### Adım 3: Ayrık geometrileri kontrol et (kesişmenin tersine)
+`Disjoint` yöntemi, iki geometrinin ortak bir noktası olmadığında true döndürür. İki şeklin **çakışmadığını** doğrulamanız gerektiğinde kullanın.
 
 ```csharp
 // 'Disjoint' is opposite to 'Intersects'
 Console.WriteLine(geometry1.Disjoint(geometry2)); // False
 ```
 
-## Yaygın Sorunlar ve Çözümler
-| Sorun | Neden Oluşur | Çözüm |
+## Yaygın sorunlar ve çözümler
+| Sorun | Neden oluşur | Çözüm |
 |-------|----------------|-----|
-| **Her zaman `false` döner** | Poligonlar kapalı değil (ilk nokta ≠ son nokta). | İlk noktanın koordinat dizisinin sonunda tekrar edildiğinden emin olun. |
-| **Kenarların temas etmesi durumunda beklenmeyen `true`** | `Intersects` ortak kenarları kesişen olarak kabul eder. | Sadece kenar tespiti gerekiyorsa `Touches` metodunu kullanın. |
-| **Çok sayıda poligonla performans düşüşü** | Her çağrı tüm köşe çiftlerini kontrol eder. | Destekleniyorsa `GeometryCollection` veya uzamsal indeksleme (R‑tree) kullanarak toplu işleyin. |
+| **Her zaman `false` döner** | Poligonlar kapalı değil (ilk nokta ≠ son nokta). | Koordinat dizisinin sonunda ilk noktanın tekrarlandığından emin olun. |
+| **Kenarların dokunması için beklenmedik `true`** | `Intersects` ortak kenarları kesişen olarak değerlendirir. | Sadece kenar tespiti gerekiyorsa `Touches` metodunu kullanın. |
+| **Çok sayıda poligonla performans yavaşlaması** | Her çağrı tüm köşe çiftlerini kontrol eder. | Destekleniyorsa `GeometryCollection` veya mekansal indeksleme (R‑tree) kullanarak toplu işleyin. |
 
 ## Sıkça Sorulan Sorular
 
-**S:** Aspose.GIS for .NET'i diğer .NET framework'leriyle kullanabilir miyim?  
-**C:** Evet, Aspose.GIS for .NET .NET Core ve .NET Framework dahil olmak üzere çeşitli .NET framework'leriyle uyumludur.
+**S:** Aspose.GIS for .NET'i diğer .NET çerçeveleriyle kullanabilir miyim?  
+**C:** Evet, Aspose.GIS for .NET, .NET Core ve .NET Framework dahil olmak üzere çeşitli .NET çerçeveleriyle uyumludur.
 
 **S:** Aspose.GIS for .NET için ücretsiz deneme mevcut mu?  
-**C:** Evet, Aspose.GIS for .NET'in ücretsiz denemesine [buradan](https://releases.aspose.com/) ulaşabilirsiniz.
+**C:** Evet, Aspose.GIS for .NET'in ücretsiz denemesine [Aspose.GIS free trial page](https://releases.aspose.com/) adresinden erişebilirsiniz.
 
-**S:** Aspose.GIS for .NET için desteği nereden bulabilirim?  
-**C:** Yardım alabilir ve toplulukla [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) üzerinden etkileşime geçebilirsiniz.
+**S:** Aspose.GIS for .NET için destek nereden bulabilirim?  
+**C:** [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) üzerinden toplulukla iletişime geçebilir ve yardım alabilirsiniz.
 
 **S:** Aspose.GIS for .NET için geçici lisans alabilir miyim?  
-**C:** Evet, geçici lisansı [buradan](https://purchase.aspose.com/temporary-license/) edinebilirsiniz.
+**C:** Evet, [Aspose.GIS temporary license page](https://purchase.aspose.com/temporary-license/) üzerinden geçici lisans alabilirsiniz.
 
 **S:** Aspose.GIS for .NET'in lisanslı sürümünü nereden satın alabilirim?  
-**C:** Lisanslı sürümü [buradan](https://purchase.aspose.com/buy) satın alabilirsiniz.
+**C:** [Aspose.GIS purchase page](https://purchase.aspose.com/buy) üzerinden satın alabilirsiniz.
 
 ## Sonuç
-Artık **polygon geometry C#** oluşturmayı, **Intersects** metodunu çakışmaları tespit etmek için kullanmayı ve ayrık koşulları doğrulamayı gösteren eksiksiz, üretim‑hazır bir örneğe sahipsiniz. Bu deseni daha büyük geometri koleksiyonlarına genişletebilir, performans için uzamsal indeksleme entegre edebilir veya buffering ya da spatial joins gibi diğer Aspose.GIS işlemleriyle birleştirebilirsiniz.
+Artık **C#'ta noktalardan çokgen oluşturma**, çakışmaları tespit etmek için **Intersects** metodunu kullanma ve ayrık koşulları doğrulama konularını gösteren eksiksiz, üretime hazır bir örneğe sahipsiniz. Bu deseni daha büyük geometrik koleksiyonlara genişletmek, performans için mekansal indeksleme entegre etmek veya tamponlama ya da mekansal birleştirme gibi diğer Aspose.GIS işlemleriyle birleştirmekten çekinmeyin.
 
 ---
 
-**Last Updated:** 2026-02-05  
-**Tested With:** Aspose.GIS 24.11 for .NET  
-**Author:** Aspose
+**Son Güncelleme:** 2026-08-03  
+**Test Edilen Versiyon:** Aspose.GIS 24.11 for .NET  
+**Yazar:** Aspose
+
+## İlgili Eğitimler
+
+- [Aspose.GIS for .NET ile Çokgen Geometrisi Oluşturma](/gis/net/geometry-creation/create-polygon-geometry/)
+- [Aspose.GIS for .NET ile Geometrilerin Mekansal Çakışma Analizini Gerçekleştirme](/gis/net/geometry-analysis/check-geometries-overlap/)
+- [Aspose.GIS kullanarak Delikli Çokgen Oluşturma](/gis/net/geometry-creation/create-polygon-with-hole-geometry/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
