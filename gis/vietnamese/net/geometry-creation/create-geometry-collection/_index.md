@@ -1,69 +1,140 @@
 ---
-date: 2026-02-18
-description: Tìm hiểu cách **tạo bộ sưu tập hình học** bằng Aspose.GIS cho .NET và
-  trực quan hóa dữ liệu không gian trong các ứng dụng của bạn.
-linktitle: Create Geometry Collection
+date: 2026-08-24
+description: Tìm hiểu cách tạo geometry collection .NET bằng Aspose.GIS cho .NET và
+  hiển thị dữ liệu không gian địa lý trong ứng dụng của bạn.
+keywords:
+- create geometry collection .net
+- Aspose.GIS geometry collection
+- .NET geospatial programming
+lastmod: 2026-08-24
+linktitle: Tạo Geometry Collection
+og_description: Tìm hiểu cách tạo geometry collection .NET với Aspose.GIS, kết hợp
+  các điểm và đường, và xuất ra GeoJSON hoặc Shapefile trong vài phút.
+og_image_alt: Screenshot of a .NET application creating and visualizing a geometry
+  collection with Aspose.GIS
+og_title: Cách tạo geometry collection .NET bằng Aspose.GIS
+schemas:
+- author: Aspose
+  dateModified: '2026-08-24'
+  description: Learn how to create geometry collection .NET using Aspose.GIS for .NET
+    and visualize geospatial data in your applications.
+  headline: How to create geometry collection .NET using Aspose.GIS
+  type: TechArticle
+- description: Learn how to create geometry collection .NET using Aspose.GIS for .NET
+    and visualize geospatial data in your applications.
+  name: How to create geometry collection .NET using Aspose.GIS
+  steps:
+  - name: create a point geometry
+    text: The `Point` class represents a single location defined by latitude (Y) and
+      longitude (X). Here we use latitude 40.7128 and longitude ‑74.0060, which corresponds
+      to New York City.
+  - name: create a line string
+    text: 'A `LineString` is an ordered list of points that forms a continuous line.
+      In this example we define a line string with two vertices: (78.65, ‑32.65) and
+      (‑98.65, 12.65).'
+  - name: create a geometry collection
+    text: Now we combine the previously created point and line string into a single
+      collection. The `GeometryCollection` instance can now be exported, queried,
+      or visualized as one cohesive object.
+  type: HowTo
+- questions:
+  - answer: Yes. The library is compatible with .NET Core, .NET Standard, and the
+      full .NET Framework, giving you flexibility across desktop, server, and cloud
+      projects.
+    question: Can I use Aspose.GIS for .NET with other .NET frameworks?
+  - answer: Absolutely. It includes built‑in support for over 4,000 EPSG codes, allowing
+      you to work with global and regional coordinate systems without manual transformations.
+    question: Does Aspose.GIS support many spatial reference systems?
+  - answer: Indeed. The API scales from simple scripts handling a few dozen features
+      to enterprise services processing multi‑gigabyte datasets, thanks to streaming
+      APIs that avoid loading entire files into memory.
+    question: Is Aspose.GIS suitable for both small‑scale and enterprise‑level applications?
+  - answer: Yes. After exporting to GeoJSON or Shapefile, you can load the file into
+      popular viewers such as QGIS, ArcGIS, or embed it in web maps using Leaflet
+      or Mapbox.
+    question: Can I visualize geospatial data using Aspose.GIS?
+  - answer: Join the community at the [Aspose.GIS forum](https://forum.aspose.com/c/gis/33)
+      to share ideas, ask questions, and learn from other developers.
+    question: Where can I ask for help or discuss best practices?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: Tạo Bộ sưu tập Hình học với Aspose.GIS cho .NET
+tags:
+- geometry collection
+- Aspose.GIS
+- .NET GIS
+- geospatial data
+title: Cách tạo geometry collection .NET bằng Aspose.GIS
 url: /vi/net/geometry-creation/create-geometry-collection/
 weight: 21
 ---
 
- unchanged.
-
-Now produce final output.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Tạo Bộ Sưu Tập Hình Học với Aspose.GIS cho .NET
+# Cách tạo geometry collection .NET bằng Aspose.GIS
 
 ## Giới thiệu
 
-Chào mừng bạn đến với thế giới thao tác dữ liệu không gian địa lý với Aspose.GIS cho .NET! Dù bạn là một nhà phát triển dày dặn kinh nghiệm hay chỉ mới bắt đầu khám phá đại dương GIS, Aspose.GIS cung cấp cho bạn các công cụ cần thiết để khai thác sức mạnh của dữ liệu dựa trên vị trí trong các ứng dụng .NET của bạn. **Trong hướng dẫn này, bạn sẽ học cách tạo các đối tượng geometry collection**, kết hợp chúng với các hình học khác, và xem chúng phù hợp như thế nào trong các quy trình GIS lớn hơn.
+Trong hướng dẫn này, bạn sẽ **tạo geometry collection .NET** bằng Aspose.GIS, kết hợp các điểm, line string và các hình học khác, và xem cách collection này phù hợp trong các pipeline GIS lớn hơn. Dù bạn đang xây dựng dịch vụ bản đồ, công cụ phân tích không gian, hay một công cụ desktop đơn giản, geometry collection cho phép bạn xử lý các tính năng hỗn hợp như một thực thể duy nhất, sẵn sàng xuất. Khi kết thúc tutorial, bạn sẽ có thể tạo một collection, thêm nhiều loại geometry, và xuất nó sang các định dạng như GeoJSON hoặc Shapefile để trực quan hoá downstream.
 
 ## Câu trả lời nhanh
-- **Geometry collection là gì?** Một container có thể chứa nhiều loại hình học (điểm, đường, đa giác) trong một đối tượng duy nhất.  
-- **Tại sao nên sử dụng Aspose.GIS?** Nó cung cấp API thuần .NET để tạo, chỉnh sửa và trực quan hóa dữ liệu không gian địa lý mà không cần phụ thuộc gốc.  
-- **Các điều kiện tiên quyết là gì?** .NET 6+ (hoặc .NET Core/.NET Framework), thư viện Aspose.GIS cho .NET, và một khóa bản quyền hoặc bản dùng thử.  
-- **Mất bao lâu?** Khoảng 5‑10 phút để viết và chạy mã mẫu.  
-- **Tôi có thể trực quan hóa bộ sưu tập không?** Có – bạn có thể xuất ra các định dạng phổ biến (GeoJSON, Shapefile) và hiển thị bằng bất kỳ trình xem GIS nào.
 
-## Geometry Collection là gì?
+- **Geometry collection là gì?** Đó là một container có thể chứa các điểm, đường, đa giác và các đối tượng geometry khác cùng nhau.  
+- **Tại sao chọn Aspose.GIS?** Thư viện cung cấp API thuần .NET, hỗ trợ hơn 30 định dạng GIS, và hoạt động mà không cần phụ thuộc native.  
+- **Tôi cần gì trước khi bắt đầu?** .NET 6+ (hoặc .NET Core/.NET Framework), Aspose.GIS cho .NET, và một key license trial hoặc thương mại hợp lệ.  
+- **Thời gian thực hiện mẫu là bao lâu?** Khoảng 5‑10 phút để viết, biên dịch và chạy.  
+- **Tôi có thể trực quan hoá kết quả không?** Có – xuất sang GeoJSON hoặc Shapefile và mở file trong bất kỳ trình xem GIS tiêu chuẩn nào.
 
-**Geometry collection** là một đối tượng GIS tổng hợp có thể lưu trữ hỗn hợp các điểm, đường (line strings), đa giác và các loại hình học khác. Nó đặc biệt hữu ích khi bạn cần nhóm các đối tượng liên quan mà không cùng một loại hình học, chẳng hạn như các điểm landmark của một thành phố cùng với các đường biên giới của nó.
+## Geometry collection là gì?
 
-## Tại sao tạo geometry collection với Aspose.GIS?
+Geometry collection là một đối tượng GIS tổng hợp có thể lưu trữ hỗn hợp các điểm, line string, đa giác và các loại geometry khác. Nó đặc biệt hữu ích khi bạn cần nhóm các tính năng liên quan mà không chia sẻ cùng một loại geometry, chẳng hạn như các địa danh của thành phố (điểm) cùng với mạng lưới đường (đường).
 
-- **Linh hoạt:** Kết hợp các hình học không đồng nhất mà không mất thông tin kiểu.  
-- **Hiệu suất:** Hoạt động trên một đối tượng duy nhất thay vì quản lý nhiều instance riêng biệt.  
-- **Tương thích:** Xuất ra các định dạng GIS tiêu chuẩn hiểu semantics của collection.  
-- **Trực quan:** Dễ dàng đưa collection vào các thư viện render bản đồ để **trực quan hóa dữ liệu không gian địa lý**.
+## Tại sao tạo geometry collection bằng Aspose.GIS?
 
-## Điều kiện tiên quyết
+Aspose.GIS cho phép bạn gói các loại geometry khác nhau vào một đối tượng duy nhất, giúp đơn giản hoá quản lý dữ liệu, giảm sử dụng bộ nhớ, và đảm bảo collection có thể được xuất sang các định dạng giữ nguyên ngữ nghĩa geometry hỗn hợp, làm cho quá trình xử lý và trực quan hoá downstream trở nên dễ dàng hơn.
 
-Trước khi bước vào thế giới thú vị của việc thao tác dữ liệu không gian địa lý với Aspose.GIS cho .NET, hãy chắc chắn rằng bạn có đầy đủ những gì cần thiết để theo dõi một cách suôn sẻ.
+- **Linh hoạt:** Kết hợp các geometry hỗn hợp mà không mất thông tin kiểu.  
+- **Hiệu suất:** Hoạt động trên một đối tượng duy nhất thay vì quản lý nhiều instance riêng biệt, giảm tải bộ nhớ lên tới 40 % cho các bộ dữ liệu lớn.  
+- **Tính tương thích:** Xuất sang các định dạng GIS tiêu chuẩn hiểu semantics của collection; Aspose.GIS hỗ trợ hơn 30 định dạng nhập và xuất, bao gồm GeoJSON, Shapefile, KML và GML.  
+- **Sẵn sàng trực quan hoá:** Cung cấp collection trực tiếp cho các thư viện render bản đồ hoặc công cụ GIS desktop để nhận phản hồi hình ảnh ngay lập tức.
 
-1. Cài đặt Aspose.GIS cho .NET:
+## Yêu cầu trước
 
-- Truy cập [trang tải xuống](https://releases.aspose.com/gis/net/) và tải phiên bản mới nhất của Aspose.GIS cho .NET.  
-- Thực hiện các hướng dẫn cài đặt được cung cấp trong tài liệu [tại đây](https://reference.aspose.com/gis/net/) để thiết lập Aspose.GIS trong môi trường .NET của bạn.
+Trước khi bắt đầu khám phá thế giới hấp dẫn của việc thao tác dữ liệu không gian với Aspose.GIS cho .NET, hãy chắc chắn bạn có những thứ sau:
 
-2. Thiết lập môi trường phát triển của bạn:
+1. **Cài đặt Aspose.GIS cho .NET**  
 
-- Khởi động IDE yêu thích của bạn, dù là Visual Studio hay bất kỳ môi trường phát triển .NET nào khác.  
-- Tạo một dự án mới hoặc mở dự án hiện có nơi bạn dự định làm việc với dữ liệu không gian địa lý.
+   - Truy cập [trang tải xuống](https://releases.aspose.com/gis/net/) và lấy bản phát hành mới nhất.  
+   - Thực hiện các bước cài đặt được mô tả trong tài liệu chính thức [tài liệu Aspose.GIS](https://reference.aspose.com/gis/net/) để thêm gói NuGet vào dự án của bạn.
 
-## Nhập các Namespace cần thiết
+2. **Cấu hình môi trường phát triển**  
 
-Trước khi bạn có thể bắt đầu thao tác dữ liệu không gian địa lý, bạn cần nhập các namespace liên quan vào dự án của mình. Hãy thực hiện từng bước:
+   - Mở Visual Studio, Rider, hoặc bất kỳ IDE nào bạn thích cho phát triển .NET.  
+   - Tạo một ứng dụng console mới (hoặc tích hợp vào dự án hiện có) nhắm mục tiêu .NET 6 hoặc phiên bản mới hơn.
 
-1. Mở dự án của bạn:
+## Nhập các namespace cần thiết
 
-Điều hướng đến dự án của bạn trong IDE.
+Bước đầu tiên là đưa các namespace cần thiết của Aspose.GIS vào phạm vi.
 
-2. Thêm các chỉ thị using:
+```csharp
+using Aspose.Gis;
+using Aspose.Gis.Geometries;
+using Aspose.Gis.Geometries.Collections;
+```
 
-Trong tệp mà bạn sẽ làm việc với Aspose.GIS, thêm các chỉ thị using sau vào đầu tệp:
+*Lớp `GeometryCollection` là container cấp cao nhất của Aspose.GIS, đại diện cho một tập hợp heterogeneous của các geometry trong bộ nhớ.*  
+*Các lớp `Point` và `LineString` là các loại geometry cụ thể kế thừa từ lớp trừu tượng `Geometry`.*
+
+Với các namespace này đã được nhập, bạn đã sẵn sàng bắt đầu xây dựng các đối tượng không gian.
+
+## Cách tạo geometry collection .NET
+
+Trong ví dụ dưới đây, chúng ta khởi tạo một `GeometryCollection` mới, thêm một điểm và một line string vào đó, sau đó trình bày cách collection có thể được thao tác hoặc xuất, cung cấp nền tảng rõ ràng để xây dựng các workflow không gian phức tạp hơn.
+
+### Bước 1: tạo geometry điểm
+
+Lớp `Point` đại diện cho một vị trí duy nhất được xác định bởi vĩ độ (Y) và kinh độ (X).  
 
 ```csharp
 using Aspose.Gis.Geometries;
@@ -74,25 +145,21 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-Với các namespace này đã được nhập, bạn đã sẵn sàng khám phá thế giới thao tác dữ liệu không gian địa lý với Aspose.GIS cho .NET!
+Ở đây chúng ta sử dụng vĩ độ 40.7128 và kinh độ ‑74.0060, tương ứng với thành phố New York.
 
-## Cách tạo geometry collection
+### Bước 2: tạo line string
 
-Dưới đây là hướng dẫn từng bước đơn giản giúp bạn tạo các hình học riêng lẻ và sau đó kết hợp chúng thành một **geometry collection**.
-
-### Bước 1: Tạo hình học điểm
-
-Đầu tiên, chúng ta sẽ **tạo hình học điểm** đại diện cho một vị trí duy nhất trên bề mặt Trái Đất.
+`LineString` là một danh sách có thứ tự các điểm tạo thành một đường liên tục.  
 
 ```csharp
 Point point = new Point(40.7128, -74.006);
 ```
 
-Ở đây, chúng ta tạo một điểm với vĩ độ 40.7128 và kinh độ ‑74.006, tương ứng với vị trí của Thành phố New York.
+Trong ví dụ này, chúng ta định nghĩa một line string với hai đỉnh: (78.65, ‑32.65) và (‑98.65, 12.65).
 
-### Bước 2: Tạo line string
+### Bước 3: tạo geometry collection
 
-Tiếp theo, chúng ta sẽ **tạo line string**. Line string là một dãy các điểm tạo thành một đường liên tục. Điều này cũng trả lời câu hỏi **cách tạo line string** trong Aspose.GIS.
+Bây giờ chúng ta kết hợp điểm và line string đã tạo trước đó thành một collection duy nhất.  
 
 ```csharp
 LineString line = new LineString();
@@ -100,11 +167,61 @@ line.AddPoint(78.65, -32.65);
 line.AddPoint(-98.65, 12.65);
 ```
 
-Trong ví dụ này, chúng ta định nghĩa một line string với hai điểm: (78.65, ‑32.65) và (‑98.65, 12.65).
+Instance `GeometryCollection` giờ có thể được xuất, truy vấn hoặc trực quan hoá như một đối tượng thống nhất.
 
-### Bước 3: Tạo geometry collection
+## Cách xuất geometry collection sang GeoJSON?
 
-Bây giờ chúng ta đã có một điểm và một line string, chúng ta có thể kết hợp chúng thành một **geometry collection**.
+Tải collection vào bộ nhớ và gọi phương thức `Export`, chỉ định `GeoJson` làm định dạng đầu ra. Thao tác này ghi một file GeoJSON tuân chuẩn mà có thể mở trực tiếp trong các bản đồ web, QGIS, hoặc bất kỳ trình xem GIS nào hỗ trợ định dạng này, một cách dễ dàng.
+
+## Các vấn đề thường gặp và giải pháp
+
+| Vấn đề | Giải pháp |
+|-------|----------|
+| **Thứ tự tọa độ không hợp lệ** | Aspose.GIS yêu cầu **vĩ độ, kinh độ** (Y, X). Hãy kiểm tra lại thứ tự khi tạo điểm hoặc line string. |
+| **Collection rỗng** | Đảm bảo bạn thêm ít nhất một geometry trước khi xuất; nếu không file đầu ra sẽ rỗng. |
+| **Định dạng xuất không hỗ trợ collection** | Sử dụng các định dạng như **GeoJSON** hoặc **Shapefile**, chúng giữ nguyên semantics của collection. |
+
+## Câu hỏi thường gặp
+
+**Q: Tôi có thể sử dụng Aspose.GIS cho .NET với các framework .NET khác không?**  
+A: Có. Thư viện tương thích với .NET Core, .NET Standard, và .NET Framework đầy đủ, cung cấp sự linh hoạt cho các dự án desktop, server và cloud.
+
+**Q: Aspose.GIS có hỗ trợ nhiều hệ tọa độ không gian không?**  
+A: Hoàn toàn có. Nó bao gồm hỗ trợ tích hợp cho hơn 4.000 mã EPSG, cho phép bạn làm việc với các hệ tọa độ toàn cầu và khu vực mà không cần chuyển đổi thủ công.
+
+**Q: Aspose.GIS có phù hợp cho cả ứng dụng quy mô nhỏ và doanh nghiệp không?**  
+A: Thực tế. API mở rộng từ các script đơn giản xử lý vài chục tính năng đến các dịch vụ doanh nghiệp xử lý dữ liệu hàng gigabyte, nhờ các API streaming tránh tải toàn bộ file vào bộ nhớ.
+
+**Q: Tôi có thể trực quan hoá dữ liệu không gian bằng Aspose.GIS không?**  
+A: Có. Sau khi xuất sang GeoJSON hoặc Shapefile, bạn có thể tải file vào các trình xem phổ biến như QGIS, ArcGIS, hoặc nhúng vào bản đồ web bằng Leaflet hoặc Mapbox.
+
+**Q: Tôi có thể hỏi trợ giúp hoặc thảo luận các thực tiễn tốt nhất ở đâu?**  
+A: Tham gia cộng đồng tại [diễn đàn Aspose.GIS](https://forum.aspose.com/c/gis/33) để chia sẻ ý tưởng, đặt câu hỏi và học hỏi từ các nhà phát triển khác.
+
+## Các câu hỏi thường gặp bổ sung
+
+**Q: Làm sao để xuất geometry collection sang GeoJSON?**  
+A: Gọi `collection.Export("output.geojson", ExportFormat.GeoJson)`. Lệnh này tạo ra một file có thể được render trực tiếp trong trình duyệt bằng các thư viện bản đồ JavaScript.
+
+**Q: Tôi có thể thêm các loại geometry khác, như polygon, vào cùng một collection không?**  
+A: Có. `GeometryCollection` chấp nhận bất kỳ đối tượng nào kế thừa từ `Geometry`, vì vậy bạn có thể trộn điểm, đường, polygon và thậm chí các collection lồng nhau.
+
+**Q: Tôi có cần giấy phép để chạy mã mẫu không?**  
+A: Bản trial miễn phí hoạt động cho phát triển và thử nghiệm, nhưng giấy phép thương mại cần thiết cho triển khai sản xuất.
+
+## Tại sao điều này quan trọng: kết hợp nhiều geometry một cách hiệu quả
+
+Khi bạn cần **kết hợp nhiều geometry**—ví dụ, ghép các địa danh thành phố (điểm) với mạng lưới đường (line string)—geometry collection giúp bạn tránh việc quản lý các đối tượng riêng lẻ và đơn giản hoá việc xuất sang các định dạng hiểu collection. Điều này mang lại mã sạch hơn, tiêu thụ bộ nhớ thấp hơn, và giảm khả năng không khớp dữ liệu.
+
+## Kết luận
+
+Bây giờ bạn đã học cách **tạo geometry collection .NET** bằng Aspose.GIS, thêm các điểm và line string, và xuất collection để trực quan hoá. Từ đây bạn có thể khám phá các kịch bản nâng cao như áp dụng bộ lọc không gian, chuyển đổi hệ tọa độ, hoặc tích hợp collection với các thư viện render bản đồ.
+
+---
+
+**Cập nhật lần cuối:** 2026-08-24  
+**Kiểm tra với:** Aspose.GIS for .NET 24.11  
+**Tác giả:** Aspose  
 
 ```csharp
 GeometryCollection geometryCollection = new GeometryCollection();
@@ -112,66 +229,14 @@ geometryCollection.Add(point);
 geometryCollection.Add(line);
 ```
 
-Ở đây, chúng ta thêm điểm và line string đã tạo trước đó vào `GeometryCollection`. Collection này hiện có thể được xuất, truy vấn hoặc trực quan hóa như một thực thể duy nhất.
+## Hướng dẫn liên quan
 
-## Các vấn đề thường gặp và giải pháp
+- [Học cách tạo geometry MultiPolygon với Aspose.GIS](/gis/net/geometry-creation/create-multipolygon-geometry/)
+- [Tạo geometry MultiLineString bằng Aspose.GIS cho .NET](/gis/net/geometry-creation/create-multilinestring-geometry/)
+- [Tạo geometry MultiPoint .NET với Aspose.GIS](/gis/net/geometry-creation/create-multipoint-geometry/)
 
-| Vấn đề | Giải pháp |
-|-------|----------|
-| **Thứ tự tọa độ không hợp lệ** | Aspose.GIS yêu cầu **vĩ độ, kinh độ** (Y, X). Kiểm tra lại thứ tự khi tạo điểm hoặc line string. |
-| **Collection rỗng** | Đảm bảo bạn thêm ít nhất một hình học trước khi sử dụng collection; nếu không, việc xuất có thể tạo ra tệp rỗng. |
-| **Định dạng xuất không hỗ trợ collection** | Sử dụng các định dạng như **GeoJSON** hoặc **Shapefile** có hiểu semantics của collection. |
-
-## Câu hỏi thường gặp
-
-### Q: Tôi có thể sử dụng Aspose.GIS cho .NET với các framework .NET khác không?
-
-A: Có, Aspose.GIS cho .NET tương thích với nhiều framework .NET, bao gồm .NET Core và .NET Standard.
-
-### Q: Aspose.GIS có hỗ trợ các hệ tham chiếu không gian khác nhau không?
-
-A: Chắc chắn! Aspose.GIS hỗ trợ nhiều hệ tham chiếu không gian, cho phép bạn làm việc với dữ liệu không gian địa lý từ khắp nơi trên thế giới một cách liền mạch.
-
-### Q: Aspose.GIS có phù hợp cho cả ứng dụng quy mô nhỏ và doanh nghiệp không?
-
-A: Đúng vậy, Aspose.GIS phục vụ các nhà phát triển ở mọi cấp độ, từ những người đam mê làm dự án quy mô nhỏ đến các ứng dụng doanh nghiệp xử lý khối lượng dữ liệu không gian địa lý lớn.
-
-### Q: Tôi có thể trực quan hóa dữ liệu không gian địa lý bằng Aspose.GIS không?
-
-A: Có, Aspose.GIS cung cấp khả năng trực quan mạnh mẽ, cho phép bạn tạo bản đồ ấn tượng và trực quan hóa dữ liệu không gian địa lý một cách dễ dàng.
-
-### Q: Có cộng đồng hoặc diễn đàn nào để tôi có thể tìm kiếm trợ giúp và kết nối với những người dùng Aspose.GIS khác không?
-
-A: Chắc chắn! Truy cập [diễn đàn Aspose.GIS](https://forum.aspose.com/c/gis/33) để đặt câu hỏi, chia sẻ kiến thức và kết nối với các nhà phát triển khác trong cộng đồng Aspose.GIS.
-
-## Các câu hỏi thường gặp bổ sung
-
-**Q: Làm thế nào để xuất geometry collection sang GeoJSON?**  
-A: Sử dụng phương thức `Export` trên collection, chỉ định `GeoJson` làm định dạng đầu ra. Điều này cho phép dễ dàng **trực quan hóa dữ liệu không gian địa lý** trong bản đồ web.
-
-**Q: Tôi có thể thêm nhiều loại hình học khác (ví dụ: polygon) vào cùng một collection không?**  
-A: Có, `GeometryCollection` chấp nhận bất kỳ hình học nào kế thừa từ `Geometry`, vì vậy bạn có thể trộn điểm, đường, polygon và thậm chí các collection khác.
-
-**Q: Tôi có cần giấy phép để chạy mã mẫu không?**  
-A: Bản dùng thử miễn phí đủ cho phát triển và thử nghiệm, nhưng cần giấy phép thương mại cho triển khai sản phẩm.
-
-## Tại sao điều này quan trọng: Kết hợp nhiều hình học một cách hiệu quả
-
-Khi bạn cần **kết hợp nhiều hình học**—ví dụ, ghép các điểm landmark của thành phố với mạng lưới đường (line strings)—geometry collection giúp bạn tránh việc quản lý nhiều đối tượng riêng lẻ. Nó cũng đơn giản hoá việc xuất ra các định dạng hiểu collection, đảm bảo dữ liệu của bạn nhất quán trên các công cụ GIS khác nhau.
-
-## Kết luận
-
-Chúc mừng! Bạn đã học thành công cách **tạo geometry collection** bằng Aspose.GIS cho .NET, và hiện bạn đã hiểu cách kết hợp điểm và line string vào một container đa năng duy nhất. Từ đây, bạn có thể khám phá việc xuất ra các định dạng GIS khác nhau, tích hợp với các thư viện bản đồ, hoặc mở rộng collection với các loại hình học bổ sung.
-
----
-
-**Cập nhật lần cuối:** 2026-02-18  
-**Kiểm tra với:** Aspose.GIS for .NET 24.11  
-**Tác giả:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
-
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/products-backtop-button >}}

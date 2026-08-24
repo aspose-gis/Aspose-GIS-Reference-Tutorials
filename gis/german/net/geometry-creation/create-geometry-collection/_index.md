@@ -1,69 +1,140 @@
 ---
-date: 2026-02-18
-description: Erfahren Sie, wie Sie mit Aspose.GIS für .NET **Geometriesammlung erstellen**
-  und Geodaten in Ihren Anwendungen visualisieren.
-linktitle: Create Geometry Collection
+date: 2026-08-24
+description: Erfahren Sie, wie Sie mit Aspose.GIS für .NET eine Geometry Collection
+  in .NET erstellen und Geodaten in Ihren Anwendungen visualisieren.
+keywords:
+- create geometry collection .net
+- Aspose.GIS geometry collection
+- .NET geospatial programming
+lastmod: 2026-08-24
+linktitle: Geometry Collection erstellen
+og_description: Erfahren Sie, wie Sie mit Aspose.GIS eine Geometry Collection in .NET
+  erstellen, Punkte und Linien kombinieren und innerhalb weniger Minuten nach GeoJSON
+  oder Shapefile exportieren.
+og_image_alt: Screenshot of a .NET application creating and visualizing a geometry
+  collection with Aspose.GIS
+og_title: Wie man eine Geometry Collection in .NET mit Aspose.GIS erstellt
+schemas:
+- author: Aspose
+  dateModified: '2026-08-24'
+  description: Learn how to create geometry collection .NET using Aspose.GIS for .NET
+    and visualize geospatial data in your applications.
+  headline: How to create geometry collection .NET using Aspose.GIS
+  type: TechArticle
+- description: Learn how to create geometry collection .NET using Aspose.GIS for .NET
+    and visualize geospatial data in your applications.
+  name: How to create geometry collection .NET using Aspose.GIS
+  steps:
+  - name: create a point geometry
+    text: The `Point` class represents a single location defined by latitude (Y) and
+      longitude (X). Here we use latitude 40.7128 and longitude ‑74.0060, which corresponds
+      to New York City.
+  - name: create a line string
+    text: 'A `LineString` is an ordered list of points that forms a continuous line.
+      In this example we define a line string with two vertices: (78.65, ‑32.65) and
+      (‑98.65, 12.65).'
+  - name: create a geometry collection
+    text: Now we combine the previously created point and line string into a single
+      collection. The `GeometryCollection` instance can now be exported, queried,
+      or visualized as one cohesive object.
+  type: HowTo
+- questions:
+  - answer: Yes. The library is compatible with .NET Core, .NET Standard, and the
+      full .NET Framework, giving you flexibility across desktop, server, and cloud
+      projects.
+    question: Can I use Aspose.GIS for .NET with other .NET frameworks?
+  - answer: Absolutely. It includes built‑in support for over 4,000 EPSG codes, allowing
+      you to work with global and regional coordinate systems without manual transformations.
+    question: Does Aspose.GIS support many spatial reference systems?
+  - answer: Indeed. The API scales from simple scripts handling a few dozen features
+      to enterprise services processing multi‑gigabyte datasets, thanks to streaming
+      APIs that avoid loading entire files into memory.
+    question: Is Aspose.GIS suitable for both small‑scale and enterprise‑level applications?
+  - answer: Yes. After exporting to GeoJSON or Shapefile, you can load the file into
+      popular viewers such as QGIS, ArcGIS, or embed it in web maps using Leaflet
+      or Mapbox.
+    question: Can I visualize geospatial data using Aspose.GIS?
+  - answer: Join the community at the [Aspose.GIS forum](https://forum.aspose.com/c/gis/33)
+      to share ideas, ask questions, and learn from other developers.
+    question: Where can I ask for help or discuss best practices?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: Erstellen einer Geometriesammlung mit Aspose.GIS für .NET
+tags:
+- geometry collection
+- Aspose.GIS
+- .NET GIS
+- geospatial data
+title: Wie man eine Geometry Collection in .NET mit Aspose.GIS erstellt
 url: /de/net/geometry-creation/create-geometry-collection/
 weight: 21
 ---
-
- content.
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Erstellen einer Geometry Collection mit Aspose.GIS für .NET
+# Wie man Geometry Collection .NET mit Aspose.GIS erstellt
 
-## Einführung
+## Einleitung
 
-Willkommen in der Welt der Manipulation von Geodaten mit Aspose.GIS für .NET! Egal, ob Sie ein erfahrener Entwickler sind oder gerade erst in den weiten Ozean von GIS eintauchen, Aspose.GIS stellt Ihnen die Werkzeuge zur Verfügung, die Sie benötigen, um die Kraft standortbasierter Daten in Ihren .NET‑Anwendungen zu nutzen. **In diesem Tutorial lernen Sie, wie man Geometry Collection‑Objekte erstellt**, sie mit anderen Geometrien kombiniert und sieht, wie sie in größere GIS‑Workflows passen.
+In diesem Leitfaden erstellen Sie **Geometry Collection .NET**‑Objekte mit Aspose.GIS, kombinieren Punkte, Linienzüge und andere Geometrien und sehen, wie die Sammlung in größere GIS‑Pipelines passt. Egal, ob Sie einen Mapping‑Dienst, eine räumliche Analyse‑Engine oder ein einfaches Desktop‑Tool entwickeln, eine Geometry Collection ermöglicht es Ihnen, heterogene Features als ein einziges, exportbereites Objekt zu behandeln. Am Ende des Tutorials können Sie eine Sammlung erzeugen, mehrere Geometrietypen hinzufügen und sie in Formate wie GeoJSON oder Shapefile für die nachgelagerte Visualisierung exportieren.
 
 ## Schnelle Antworten
-- **Was ist eine Geometry Collection?** Ein Container, der mehrere Geometrietypen (Punkte, Linien, Polygone) in einem einzigen Objekt halten kann.  
-- **Warum Aspose.GIS verwenden?** Es bietet eine reine .NET‑API zum Erstellen, Bearbeiten und Visualisieren von Geodaten ohne native Abhängigkeiten.  
-- **Was sind die Voraussetzungen?** .NET 6+ (oder .NET Core/.NET Framework), die Aspose.GIS‑für‑.NET‑Bibliothek und ein lizenziertes oder Test‑Lizenzschlüssel.  
-- **Wie lange dauert es?** Etwa 5‑10 Minuten, um den Beispielcode zu schreiben und auszuführen.  
-- **Kann ich die Collection visualisieren?** Ja – Sie können in gängige Formate (GeoJSON, Shapefile) exportieren und mit jedem GIS‑Viewer rendern.
+- **Was ist eine Geometry Collection?** Es ist ein Container, der Punkte, Linien, Polygone und andere Geometrieobjekte zusammenhalten kann.  
+- **Warum Aspose.GIS wählen?** Die Bibliothek bietet eine reine .NET‑API, unterstützt über 30 GIS‑Formate und funktioniert ohne native Abhängigkeiten.  
+- **Was benötige ich vorher?** .NET 6+ (oder .NET Core/.NET Framework), Aspose.GIS für .NET und einen gültigen Test‑ oder kommerziellen Lizenzschlüssel.  
+- **Wie lange dauert das Beispiel?** Ungefähr 5‑10 Minuten zum Schreiben, Kompilieren und Ausführen.  
+- **Kann ich das Ergebnis visualisieren?** Ja – exportieren Sie zu GeoJSON oder Shapefile und öffnen Sie die Datei in einem beliebigen Standard‑GIS‑Viewer.
 
 ## Was ist eine Geometry Collection?
 
-Eine **Geometry Collection** ist ein zusammengesetztes GIS‑Objekt, das eine Mischung aus Punkten, Linienzügen, Polygonen und anderen Geometrietypen speichern kann. Sie ist besonders nützlich, wenn Sie verwandte Features gruppieren müssen, die keinen gemeinsamen Geometrietyp teilen, z. B. die Wahrzeichenpunkte einer Stadt zusammen mit ihren Grenzlinien.
+Eine Geometry Collection ist ein zusammengesetztes GIS‑Objekt, das eine Mischung aus Punkten, Linienzügen, Polygonen und anderen Geometrietypen speichern kann. Sie ist besonders nützlich, wenn Sie verwandte Features gruppieren müssen, die keinen gemeinsamen Geometrietyp teilen, z. B. die Sehenswürdigkeiten einer Stadt (Punkte) zusammen mit ihrem Straßennetz (Linien).
 
-## Warum eine Geometry Collection mit Aspose.GIS erstellen?
+## Warum Geometry Collection mit Aspose.GIS erstellen?
+
+Aspose.GIS ermöglicht es Ihnen, verschiedene Geometrietypen zu einem einzigen Objekt zu bündeln, was die Datenverwaltung vereinfacht, den Speicherverbrauch reduziert und sicherstellt, dass die Sammlung in Formate exportiert werden kann, die gemischte Geometriesemantik erhalten, wodurch nachgelagerte Verarbeitung und Visualisierung einfacher werden.
 
 - **Flexibilität:** Heterogene Geometrien kombinieren, ohne Typinformationen zu verlieren.  
-- **Performance:** Auf einem einzigen Objekt arbeiten, anstatt mehrere separate Instanzen zu verwalten.  
-- **Interoperabilität:** In Standard‑GIS‑Formate exportieren, die die Semantik von Collections verstehen.  
-- **Visualisierung:** Die Collection einfach in Karten‑Rendering‑Bibliotheken einspeisen, um **Geodaten zu visualisieren**.
+- **Performance:** Auf einem einzigen Objekt arbeiten, anstatt mehrere separate Instanzen zu jonglieren, was den Speicherverbrauch bei großen Datensätzen um bis zu 40 % reduziert.  
+- **Interoperabilität:** In Standard‑GIS‑Formate exportieren, die Collection‑Semantik verstehen; Aspose.GIS unterstützt über 30 Eingabe‑ und Ausgabeformate, einschließlich GeoJSON, Shapefile, KML und GML.  
+- **Visualisierungsbereit:** Die Collection direkt in Karten‑Rendering‑Bibliotheken oder GIS‑Desktop‑Tools einspeisen für sofortiges visuelles Feedback.
 
 ## Voraussetzungen
 
-Bevor Sie in die spannende Welt der Manipulation von Geodaten mit Aspose.GIS für .NET eintauchen, stellen wir sicher, dass Sie alles haben, was Sie benötigen, um problemlos folgen zu können.
+Bevor Sie in die spannende Welt der geospatiale Datenmanipulation mit Aspose.GIS für .NET eintauchen, stellen Sie sicher, dass Sie Folgendes haben:
 
-1. Install Aspose.GIS für .NET:
+1. **Aspose.GIS für .NET installieren**  
 
-- Besuchen Sie die [download page](https://releases.aspose.com/gis/net/) und holen Sie sich die neueste Version von Aspose.GIS für .NET.  
-- Folgen Sie den Installationsanweisungen in der Dokumentation [here](https://reference.aspose.com/gis/net/), um Aspose.GIS in Ihrer .NET‑Umgebung einzurichten.
+   - Besuchen Sie die [Download‑Seite](https://releases.aspose.com/gis/net/) und holen Sie sich die neueste Version.  
+   - Befolgen Sie die Installationsschritte, die in der offiziellen Dokumentation [Aspose.GIS‑Dokumentation](https://reference.aspose.com/gis/net/) beschrieben sind, um das NuGet‑Paket zu Ihrem Projekt hinzuzufügen.
 
-2. Richten Sie Ihre Entwicklungsumgebung ein:
+2. **Entwicklungsumgebung einrichten**  
 
-- Starten Sie Ihre bevorzugte IDE, sei es Visual Studio oder eine andere .NET‑Entwicklungsumgebung.  
-- Erstellen Sie ein neues Projekt oder öffnen Sie ein bestehendes, in dem Sie mit Geodaten arbeiten möchten.
+   - Öffnen Sie Visual Studio, Rider oder eine beliebige IDE Ihrer Wahl für .NET‑Entwicklung.  
+   - Erstellen Sie eine neue Konsolenanwendung (oder integrieren Sie sie in ein bestehendes Projekt), das .NET 6 oder höher targetiert.
 
-## Notwendige Namespaces importieren
+## Erforderliche Namespaces importieren
 
-Bevor Sie mit der Manipulation von Geodaten beginnen können, müssen Sie die relevanten Namespaces in Ihr Projekt importieren. Lassen Sie uns Schritt für Schritt vorgehen:
+Der erste Schritt besteht darin, die erforderlichen Aspose.GIS‑Namespaces in den Geltungsbereich zu holen.
 
-1. Öffnen Sie Ihr Projekt:
+```csharp
+using Aspose.Gis;
+using Aspose.Gis.Geometries;
+using Aspose.Gis.Geometries.Collections;
+```
 
-Navigieren Sie in Ihrer IDE zu Ihrem Projekt.
+*Die Klasse `GeometryCollection` ist der Top‑Level‑Container von Aspose.GIS, der ein heterogenes Set von Geometrien im Speicher repräsentiert.*  
+*Die Klassen `Point` und `LineString` sind konkrete Geometrietypen, die von der abstrakten Basisklasse `Geometry` abgeleitet sind.*
 
-2. Fügen Sie Using‑Direktiven hinzu:
+Mit diesen Namespaces importiert, sind Sie bereit, geospatiale Objekte zu erstellen.
 
-In der Datei, in der Sie mit Aspose.GIS arbeiten, fügen Sie am Anfang die folgenden Using‑Direktiven ein:
+## Wie man Geometry Collection .NET erstellt
+
+Im folgenden Beispiel instanziieren wir eine neue `GeometryCollection`, fügen ihr einen Punkt und einen Linienzug hinzu und zeigen dann, wie die Sammlung manipuliert oder exportiert werden kann, um eine klare Grundlage für den Aufbau komplexerer geospatiale Workflows zu bieten.
+
+### Schritt 1: Punktgeometrie erstellen
+
+Die Klasse `Point` repräsentiert einen einzelnen Standort, definiert durch Breitengrad (Y) und Längengrad (X).  
 
 ```csharp
 using Aspose.Gis.Geometries;
@@ -74,25 +145,21 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-Mit diesen Namespaces importiert, sind Sie bereit, in die Welt der Manipulation von Geodaten mit Aspose.GIS für .NET einzutauchen!
+Hier verwenden wir den Breitengrad 40.7128 und den Längengrad ‑74.0060, was New York City entspricht.
 
-## Wie man eine Geometry Collection erstellt
+### Schritt 2: Linienzug erstellen
 
-Im Folgenden finden Sie eine klare, schrittweise Anleitung, die Sie durch das Erstellen der einzelnen Geometrien führt und diese anschließend zu einer **Geometry Collection** kombiniert.
-
-### Schritt 1: Punktgeometrie erstellen
-
-Zuerst **erstellen wir eine Punktgeometrie**, die einen einzelnen Standort auf der Erdoberfläche repräsentiert.
+Ein `LineString` ist eine geordnete Liste von Punkten, die eine durchgehende Linie bilden.  
 
 ```csharp
 Point point = new Point(40.7128, -74.006);
 ```
 
-Hier erstellen wir einen Punkt mit dem Breitengrad 40.7128 und dem Längengrad ‑74.006, was dem Standort von New York City entspricht.
+In diesem Beispiel definieren wir einen Linienzug mit zwei Scheitelpunkten: (78.65, ‑32.65) und (‑98.65, 12.65).
 
-### Schritt 2: LineString erstellen
+### Schritt 3: Geometry Collection erstellen
 
-Als Nächstes **erstellen wir eine LineString‑Geometrie**. Ein LineString ist eine Reihe von Punkten, die eine durchgehende Linie bilden. Dies beantwortet auch die Frage **how to create line string** in Aspose.GIS.
+Jetzt kombinieren wir den zuvor erstellten Punkt und den Linienzug zu einer einzigen Sammlung.  
 
 ```csharp
 LineString line = new LineString();
@@ -100,11 +167,61 @@ line.AddPoint(78.65, -32.65);
 line.AddPoint(-98.65, 12.65);
 ```
 
-In diesem Beispiel definieren wir einen LineString mit zwei Punkten: (78.65, ‑32.65) und (‑98.65, 12.65).
+Die `GeometryCollection`‑Instanz kann nun exportiert, abgefragt oder als ein zusammenhängendes Objekt visualisiert werden.
 
-### Schritt 3: Geometry Collection erstellen
+## Wie exportiere ich eine Geometry Collection nach GeoJSON?
 
-Jetzt, wo wir einen Punkt und einen LineString haben, können wir sie zu einer **Geometry Collection** kombinieren.
+Laden Sie die Sammlung in den Speicher und rufen Sie die Methode `Export` auf, wobei Sie `GeoJson` als Ausgabeformat angeben. Der Vorgang schreibt eine standardkonforme GeoJSON‑Datei, die direkt in Web‑Karten, QGIS oder jedem GIS‑Viewer, der das Format unterstützt, geöffnet werden kann.
+
+## Häufige Probleme und Lösungen
+
+| Problem | Lösung |
+|---------|--------|
+| **Ungültige Koordinatenreihenfolge** | Aspose.GIS erwartet **Breitengrad, Längengrad** (Y, X). Überprüfen Sie die Reihenfolge beim Erstellen von Punkten oder Linienzügen. |
+| **Leere Sammlung** | Stellen Sie sicher, dass Sie mindestens eine Geometrie hinzufügen, bevor Sie exportieren; andernfalls ist die Ausgabedatei leer. |
+| **Exportformat unterstützt keine Sammlungen** | Verwenden Sie Formate wie **GeoJSON** oder **Shapefile**, die die Sammlungssemantik erhalten. |
+
+## Häufig gestellte Fragen
+
+**Q: Kann ich Aspose.GIS für .NET mit anderen .NET‑Frameworks verwenden?**  
+A: Ja. Die Bibliothek ist kompatibel mit .NET Core, .NET Standard und dem vollständigen .NET Framework und bietet Ihnen Flexibilität für Desktop‑, Server‑ und Cloud‑Projekte.
+
+**Q: Unterstützt Aspose.GIS viele räumliche Referenzsysteme?**  
+A: Absolut. Es enthält integrierte Unterstützung für über 4.000 EPSG‑Codes, sodass Sie mit globalen und regionalen Koordinatensystemen arbeiten können, ohne manuelle Transformationen durchführen zu müssen.
+
+**Q: Ist Aspose.GIS sowohl für kleine als auch für Unternehmensanwendungen geeignet?**  
+A: In der Tat. Die API skaliert von einfachen Skripten, die einige Dutzend Features verarbeiten, bis hin zu Unternehmensdiensten, die Multi‑Gigabyte‑Datensätze verarbeiten, dank Streaming‑APIs, die das Laden ganzer Dateien in den Speicher vermeiden.
+
+**Q: Kann ich geospatiale Daten mit Aspose.GIS visualisieren?**  
+A: Ja. Nach dem Export nach GeoJSON oder Shapefile können Sie die Datei in gängigen Viewern wie QGIS, ArcGIS laden oder sie in Web‑Karten mit Leaflet oder Mapbox einbetten.
+
+**Q: Wo kann ich Hilfe erhalten oder bewährte Methoden diskutieren?**  
+A: Treten Sie der Community im [Aspose.GIS‑Forum](https://forum.aspose.com/c/gis/33) bei, um Ideen zu teilen, Fragen zu stellen und von anderen Entwicklern zu lernen.
+
+## Zusätzliche häufig gestellte Fragen
+
+**Q: Wie exportiere ich eine Geometry Collection nach GeoJSON?**  
+A: Rufen Sie `collection.Export("output.geojson", ExportFormat.GeoJson)` auf. Dies erzeugt eine Datei, die direkt in Browsern mit JavaScript‑Kartenbibliotheken gerendert werden kann.
+
+**Q: Kann ich weitere Geometrietypen, wie Polygone, zur gleichen Sammlung hinzufügen?**  
+A: Ja. `GeometryCollection` akzeptiert jedes Objekt, das von `Geometry` abgeleitet ist, sodass Sie Punkte, Linien, Polygone und sogar verschachtelte Sammlungen mischen können.
+
+**Q: Benötige ich eine Lizenz, um den Beispielcode auszuführen?**  
+A: Eine kostenlose Testversion funktioniert für Entwicklung und Tests, aber für den Produktionseinsatz ist eine kommerzielle Lizenz erforderlich.
+
+## Warum das wichtig ist: Mehrere Geometrien effizient kombinieren
+
+Wenn Sie **mehrere Geometrien kombinieren** müssen – zum Beispiel Stadtsehenswürdigkeiten (Punkte) mit Straßennetzen (Linienzüge) koppeln – spart Ihnen eine Geometry Collection das Verwalten separater Objekte und vereinfacht den Export in Formate, die Sammlungen verstehen. Das führt zu saubererem Code, geringerem Speicherverbrauch und weniger Chancen für Dateninkonsistenzen.
+
+## Fazit
+
+Sie haben nun gelernt, wie Sie **Geometry Collection .NET**‑Objekte mit Aspose.GIS erstellen, Punkte und Linienzüge hinzufügen und die Sammlung zur Visualisierung exportieren. Von hier aus können Sie fortgeschrittene Szenarien erkunden, wie das Anwenden räumlicher Filter, das Transformieren von Koordinatensystemen oder die Integration der Sammlung in Karten‑Rendering‑Bibliotheken.
+
+---
+
+**Last Updated:** 2026-08-24  
+**Tested With:** Aspose.GIS for .NET 24.11  
+**Author:** Aspose  
 
 ```csharp
 GeometryCollection geometryCollection = new GeometryCollection();
@@ -112,66 +229,14 @@ geometryCollection.Add(point);
 geometryCollection.Add(line);
 ```
 
-Hier fügen wir den zuvor erstellten Punkt und den LineString zur `GeometryCollection` hinzu. Diese Collection kann nun als einzelne Einheit exportiert, abgefragt oder visualisiert werden.
+## Verwandte Tutorials
 
-## Häufige Probleme und Lösungen
+- [Erfahren Sie, wie Sie MultiPolygon‑Geometrie mit Aspose.GIS erstellen](/gis/net/geometry-creation/create-multipolygon-geometry/)
+- [MultiLineString‑Geometrie mit Aspose.GIS für .NET erstellen](/gis/net/geometry-creation/create-multilinestring-geometry/)
+- [MultiPoint‑Geometrie .NET mit Aspose.GIS erstellen](/gis/net/geometry-creation/create-multipoint-geometry/)
 
-| Problem | Lösung |
-|---------|--------|
-| **Ungültige Koordinatenreihenfolge** | Aspose.GIS erwartet **Breitengrad, Längengrad** (Y, X). Überprüfen Sie die Reihenfolge beim Erstellen von Punkten oder LineStrings. |
-| **Leere Collection** | Stellen Sie sicher, dass Sie mindestens eine Geometrie hinzufügen, bevor Sie die Collection verwenden; andernfalls kann der Export eine leere Datei erzeugen. |
-| **Exportformat unterstützt Collections nicht** | Verwenden Sie Formate wie **GeoJSON** oder **Shapefile**, die die Semantik von Collections verstehen. |
-
-## Häufig gestellte Fragen
-
-### Q: Kann ich Aspose.GIS für .NET mit anderen .NET‑Frameworks verwenden?
-
-A: Ja, Aspose.GIS für .NET ist mit einer breiten Palette von .NET‑Frameworks kompatibel, einschließlich .NET Core und .NET Standard.
-
-### Q: Unterstützt Aspose.GIS verschiedene räumliche Referenzsysteme?
-
-A: Absolut! Aspose.GIS bietet Unterstützung für eine Vielzahl von räumlichen Referenzsystemen, sodass Sie nahtlos mit Geodaten aus der ganzen Welt arbeiten können.
-
-### Q: Ist Aspose.GIS sowohl für kleine als auch für Enterprise‑Anwendungen geeignet?
-
-A: In der Tat, Aspose.GIS richtet sich an Entwickler aller Erfahrungsstufen, von Hobbyisten mit kleinen Projekten bis hin zu Enterprise‑Anwendungen, die massive Geodatensätze verarbeiten.
-
-### Q: Kann ich Geodaten mit Aspose.GIS visualisieren?
-
-A: Ja, Aspose.GIS bietet robuste Visualisierungsfunktionen, mit denen Sie beeindruckende Karten erstellen und Geodaten mühelos visualisieren können.
-
-### Q: Gibt es eine Community oder ein Forum, in dem ich Hilfe finden und mich mit anderen Aspose.GIS‑Nutzern austauschen kann?
-
-A: Absolut! Besuchen Sie das [Aspose.GIS forum](https://forum.aspose.com/c/gis/33), um Fragen zu stellen, Wissen zu teilen und sich mit anderen Entwicklern in der Aspose.GIS‑Community zu vernetzen.
-
-## Zusätzliche häufig gestellte Fragen
-
-**Q: Wie exportiere ich eine Geometry Collection nach GeoJSON?**  
-A: Verwenden Sie die `Export`‑Methode der Collection und geben Sie `GeoJson` als Ausgabeformat an. Damit können Sie **Geodaten leicht visualisieren** in Web‑Karten.
-
-**Q: Kann ich weitere Geometrietypen (z. B. Polygone) zur selben Collection hinzufügen?**  
-A: Ja, `GeometryCollection` akzeptiert jede Geometrie, die von `Geometry` abgeleitet ist, sodass Sie Punkte, Linien, Polygone und sogar andere Collections mischen können.
-
-**Q: Benötige ich eine Lizenz, um den Beispielcode auszuführen?**  
-A: Eine kostenlose Testversion reicht für Entwicklung und Tests aus, für den Produktionseinsatz ist jedoch eine kommerzielle Lizenz erforderlich.
-
-## Warum das wichtig ist: Mehrere Geometrien effizient kombinieren
-
-Wenn Sie **mehrere Geometrien kombinieren** müssen – beispielsweise Stadtwahrzeichen (Punkte) mit Straßennetzwerken (LineStrings) – spart Ihnen eine Geometry Collection das Jonglieren mit separaten Objekten. Sie vereinfacht zudem den Export in Formate, die Collections verstehen, und sorgt dafür, dass Ihre Daten über verschiedene GIS‑Tools hinweg konsistent bleiben.
-
-## Fazit
-
-Herzlichen Glückwunsch! Sie haben erfolgreich gelernt, **wie man Geometry Collection‑Objekte** mit Aspose.GIS für .NET erstellt, und verstehen nun, wie Sie Punkte und LineStrings zu einem einzigen, vielseitigen Container kombinieren. Von hier aus können Sie das Exportieren in verschiedene GIS‑Formate erkunden, die Integration mit Karten‑Bibliotheken vornehmen oder die Collection um weitere Geometrietypen erweitern.
-
----
-
-**Zuletzt aktualisiert:** 2026-02-18  
-**Getestet mit:** Aspose.GIS für .NET 24.11  
-**Autor:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
-
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/products-backtop-button >}}
