@@ -1,10 +1,83 @@
 ---
-date: 2026-02-15
-description: Aspose.GIS kullanarak .NET’te eğrileri eklemeyi ve bileşik eğri geometrileri
-  oluşturmayı öğrenin; sorunsuz coğrafi veri işleme için.
-linktitle: How to Add Curves – Compound Curve Geometry
+date: 2026-08-24
+description: Aspose.GIS for .NET kullanarak eğimli hat geometrisi oluşturmayı ve eğriler
+  eklemeyi öğrenin; bu, hassas coğrafi veri işleme imkanı sağlar.
+keywords:
+- create curved line
+- how to add curves
+- create compound curve
+- circular arc geometry
+lastmod: 2026-08-24
+linktitle: Eğrileri Eklemek – Bileşik Eğri Geometrisi
+og_description: Aspose.GIS for .NET kullanarak eğimli hat geometrisi oluşturmayı öğrenin.
+  Bu öğretici, adım adım eğrileri eklemeyi ve birkaç dakika içinde bileşik eğriler
+  oluşturmayı gösterir.
+og_image_alt: Screenshot of Aspose.GIS creating a compound curved line geometry in
+  a .NET project
+og_title: Aspose.GIS ile eğimli hat geometrisi oluşturma
+schemas:
+- author: Aspose
+  dateModified: '2026-08-24'
+  description: Learn how to create curved line geometry and add curves using Aspose.GIS
+    for .NET, enabling precise geospatial data processing.
+  headline: How to create curved line geometry with Aspose.GIS
+  type: TechArticle
+- description: Learn how to create curved line geometry and add curves using Aspose.GIS
+    for .NET, enabling precise geospatial data processing.
+  name: How to create curved line geometry with Aspose.GIS
+  steps:
+  - name: define the output path
+    text: First, specify where the resulting Shapefile will be saved. Replace the
+      placeholder with a valid folder on your machine.
+  - name: create a vector layer
+    text: '`VectorLayer` represents a spatial layer that holds features and their
+      geometries within a GIS dataset. The `using` block ensures the file is closed
+      properly after writing.'
+  - name: construct the compound curve feature
+    text: The `CompoundCurve` class is Aspose.GIS's top‑level object for a geometry
+      that consists of multiple connected curve parts. Here we instantiate an empty
+      compound curve that will later receive individual components.
+  - name: define component curves
+    text: 'We prepare five pieces—two straight `LineString`s, two `CircularString`
+      arcs, and a final `LineString`. `LineString` represents a simple straight line
+      defined by an ordered list of points. `CircularString` is Aspose.GIS’s representation
+      of a circular arc defined by three points (start, middle, end) '
+  - name: add component curves to the compound curve
+    text: Each component is appended in order, preserving continuity and orientation.
+      The `Add` method automatically validates that the end point of one segment matches
+      the start point of the next.
+  - name: assign geometry to the feature
+    text: Now the assembled `CompoundCurve` becomes the geometry of the feature we
+      will store in the layer.
+  - name: add the feature to the layer
+    text: Finally, we write the feature into the Shapefile. When the `using` block
+      ends, the file is closed and ready for use in any GIS application.
+  type: HowTo
+- questions:
+  - answer: Yes, Aspose.GIS works with .NET Framework, .NET Core, and .NET Standard,
+      covering versions from 4.6 up to .NET 7.
+    question: Can I use Aspose.GIS for .NET with other .NET frameworks?
+  - answer: Absolutely. It reads and writes Shapefile, GeoJSON, KML, GML, and more
+      than 30 additional formats.
+    question: Does Aspose.GIS support reading and writing different geospatial file
+      formats?
+  - answer: Yes, the library can be used in desktop, web, and cloud services without
+      any platform‑specific dependencies.
+    question: Is Aspose.GIS suitable for both desktop and web applications?
+  - answer: Yes, you can calculate distances, execute geometric operations, and run
+      spatial queries directly on the geometries.
+    question: Can I perform spatial analysis with Aspose.GIS for .NET?
+  - answer: Visit the [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) to ask
+      questions and share ideas with other developers.
+    question: Where can I get community help for Aspose.GIS?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: Eğrileri Nasıl Eklenir - Aspose.GIS ile Bileşik Eğri Geometrisi
+tags:
+- GIS geometry
+- Aspose.GIS
+- .NET geospatial
+- compound curve
+title: Aspose.GIS ile eğimli hat geometrisi oluşturma
 url: /tr/net/geometry-creation/create-compound-curve-geometry/
 weight: 19
 ---
@@ -13,43 +86,40 @@ weight: 19
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Eğrileri Ekleme: Aspose.GIS ile Bileşik Eğri Geometrisi
+# Aspose.GIS ile eğimli çizgi geometrisi nasıl oluşturulur
 
 ## Giriş
-.NET geliştirme dünyasında, Aspose.GIS ile **eğrileri nasıl ekleyeceğinizi** öğrenmek, gelişmiş coğrafi bilgi sistemleri uygulamaları oluşturmak için çok önemlidir. İster etkileşimli haritalar oluşturuyor, ister mekânsal analizler yapıyor ya da karmaşık GIS veri setleri üretiyor olun, Aspose.GIS gelişmiş geometrilerle hızlı ve güvenilir bir şekilde çalışmanız için gereken araçları sunar. Bu kılavuz, **eğrileri nasıl ekleyeceğinizi** ve bunları tek bir yeniden kullanılabilir bileşik eğri geometrisi içinde birleştirmenizi adım adım gösterir.
+Bu kılavuzda Aspose.GIS for .NET kullanarak **eğimli çizgi geometrisi nasıl oluşturulacağını** keşfedeceksiniz. Etkileşimli haritalar oluşturuyor, mekansal analizler yürütüyor veya GIS veri setleri üretiyor olsanız, eğrileri ekleme yeteneğini ustalaşmak, gerçek dünya özelliklerini—örneğin kıvrımlı yollar veya dolambaçlı nehirler—yüksek hassasiyetle modellemenizi sağlar. Eğitim, projeyi kurmaktan yeniden kullanılabilir bir bileşik eğri geometrisi dışa aktarmaya kadar her adımı size gösterir.
 
-## Hızlı Yanıtlar
-- **Ana hedef nedir?** Shapefile içinde eğrileri eklemek ve bir bileşik eğri geometrisi oluşturmak.  
+## Hızlı cevaplar
+- **Birincil hedef nedir?** Düz çizgileri ve dairesel yayları birleştiren bir bileşik eğri geometrisi oluşturun.  
 - **Hangi kütüphane kullanılıyor?** Aspose.GIS for .NET.  
-- **Önkoşullar?** Visual Studio, Aspose.GIS yüklü ve temel bir C# projesi.  
+- **Önkoşullar?** Visual Studio, Aspose.GIS yüklü ve .NET 6 veya daha yeni bir sürümü hedefleyen bir C# projesi.  
 - **Tipik uygulama süresi?** Çalışan bir örnek için yaklaşık 10‑15 dakika.  
-- **Desteklenen çıktı formatı?** Shapefile (ancak aynı yaklaşım GeoJSON, KML vb. için de çalışır).
+- **Desteklenen çıktı formatı?** Shapefile (aynı kod ayrıca GeoJSON, KML ve diğer formatları da yazar).
 
-## Bileşik Eğri Nedir?
-Bir **bileşik eğri**, birden fazla bağlı eğri bileşeninden (düz hat dizileri ve dairesel yaylar) oluşan tek bir geometridir ve daha karmaşık bir şekil oluşturmak üzere bir araya getirilir. Tek bir basit hat, yolların kıvrımları ya da nehir kıvrımları gibi istenen yolu doğru şekilde temsil edemediğinde bu yapı faydalıdır.
+## Bileşik eğri nedir?
+Bileşik eğri, birden fazla bağlı eğri bileşeninden—düz `LineString`'ler ve dairesel yaylar—oluşan tek bir geometridir ve daha karmaşık bir şekil oluşturmak için birleştirilir. Tek bir basit çizgi bir yolu doğru şekilde temsil edemediğinde, örneğin yumuşak dönüşlere sahip bir otoyol veya doğal bir yay izleyen bir nehir gibi durumlarda idealdir.
 
-## Neden Aspose.GIS ile Eğri Eklemeliyiz?
-- **Zengin geometri API’si:** Çizgi dizileri, dairesel diziler ve bileşik eğrileri kutudan çıkar çıkmaz destekler.  
-- **Çapraz platform:** .NET Framework, .NET Core ve .NET 5/6+ ile çalışır.  
-- **Harici bağımlılık yok:** Yerel GIS kütüphanelerine ya da COM interop’a ihtiyaç duymaz.  
-- **Kolay dışa aktarma:** Direkt olarak Shapefile, GeoJSON, KML ve birçok başka formata yazılabilir.
+## Eğri eklemek için neden Aspose.GIS kullanılmalı?
+Aspose.GIS, satır dizilerini, dairesel dizileri ve bileşik eğrileri yerel olarak destekleyen **zengin bir geometri API'si** sunar, böylece harici GIS kütüphanelerine ihtiyaç kalmaz. Kütüphane **çapraz platform** olup .NET Framework 4.6+, .NET Core 2.0+, ve .NET 5/6/7+ ile çalışır. **Tüm dosyayı belleğe yüklemeden 500 sayfaya kadar vektör veri setini işleyebilir**, hızlı ve bellek‑verimli işlemler sunar. Dışa aktarma basittir: doğrudan Shapefile, GeoJSON, KML, GML ve 30'dan fazla diğer formata yazabilirsiniz.
 
-## Bunun Önemi Nedir?
-Eğrileri eklemek, gerçek dünya özelliklerini daha doğru modellemenizi sağlar; bu da harita render’larında görsel kaliteyi artırır ve yakınlık aramaları ya da ağ rotalama gibi mekânsal analizlerde hassasiyeti yükseltir. **Eğrileri nasıl ekleyeceğinizi** öğrenerek, herhangi bir GIS‑odaklı .NET çözümünün doğruluğunu artırabilirsiniz.
+## Bunun önemi nedir
+Eğriler eklemek, gerçek dünya özelliklerini daha doğru modellemenizi sağlar, bu da harita render'larında görsel kaliteyi artırır ve yakınlık aramaları veya ağ yönlendirmesi gibi mekansal analizlerde hassasiyeti yükseltir. **Eğimli çizgi geometrisi nasıl oluşturulur** konusuna hakim olmak, böylece herhangi bir GIS‑tabanlı .NET çözümünün doğruluğunu artırır.
 
-## Yaygın Kullanım Senaryoları
-- **Ulaşım ağları:** Yumuşak kıvrımlara sahip otoyollar, demiryolları veya bisiklet yolları modelleyin.  
+## Ortak kullanım senaryoları
+- **Ulaşım ağları:** Yumuşak dönüşlere sahip otoyollar, demiryolları veya bisiklet yollarını modelleyin.  
 - **Hidrolik:** Doğal yayları izleyen nehir hatlarını temsil edin.  
-- **Şehir planlaması:** Eğri bölümler içeren arazi sınırlarını çizin.  
+- **Kentsel planlama:** Eğri bölümler içeren mülk sınırlarını çizin.  
 - **Özel semboller:** Harita lejandları için dekoratif veya şematik şekiller oluşturun.
 
 ## Önkoşullar
-- **Visual Studio** çalışma ortamınıza kurulu olmalı.  
-- **Aspose.GIS for .NET**, [indirme sayfasından](https://releases.aspose.com/gis/net/) temin edilmelidir.  
-- .NET 6 (veya desteklenen başka bir sürüm) hedefleyen bir C# projesi.
+- Visual Studio (herhangi bir yeni sürüm).  
+- Aspose.GIS for .NET, [download page](https://releases.aspose.com/gis/net/) adresinden indirilir.  
+- .NET 6 (veya desteklenen herhangi bir sürüm) hedefleyen bir C# projesi.
 
-## Ad Alanlarını İçe Aktarma
-Aspose.GIS ile çalışmaya başlamak için C# dosyanızın en üst kısmına gerekli ad alanlarını ekleyin:
+## Ad alanlarını içe aktar
+`using` yönergeleri, gerekli Aspose.GIS tiplerini kapsam içine getirir.
 
 ```csharp
 using Aspose.Gis;
@@ -61,17 +131,17 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## Bileşik Eğri Geometrisi Oluşturma Adım Adım Kılavuzu
+## Bileşik eğri geometrisi oluşturmak için adım adım kılavuz
 
-### Adım 1: Çıktı Yolunu Tanımlama
-İlk olarak, kütüphaneye sonucu nereye yazacağını söyleyin. Yer tutucuyu makinenizdeki gerçek bir klasörle değiştirin.
+### Adım 1: çıktı yolunu tanımlayın
+İlk olarak, oluşturulan Shapefile'ın nereye kaydedileceğini belirtin. Yer tutucuyu makinenizde geçerli bir klasörle değiştirin.
 
 ```csharp
 string path = "Your Document Directory" + "CreateCompoundCurve_out.shp";
 ```
 
-### Adım 2: Bir Vektör Katmanı Oluşturma
-`VectorLayer`, mekânsal özellikler için bir konteyner görevi görür. Tüm geometri çalışmaları bu `using` bloğu içinde gerçekleşir ve kaynakların doğru şekilde serbest bırakılmasını da sağlar.
+### Adım 2: bir vektör katmanı oluşturun
+`VectorLayer`, bir GIS veri seti içinde özellikleri ve geometrilerini tutan bir uzamsal katmanı temsil eder. `using` bloğu, dosyanın yazma işleminden sonra düzgün bir şekilde kapanmasını sağlar.
 
 ```csharp
 using (VectorLayer layer = VectorLayer.Create(path, Drivers.Shapefile))
@@ -80,16 +150,16 @@ using (VectorLayer layer = VectorLayer.Create(path, Drivers.Shapefile))
 }
 ```
 
-### Adım 3: Bileşik Eğri Özelliğini Oluşturma
-Katman içinde yeni bir özellik ve bireysel eğri parçalarını tutacak boş bir `CompoundCurve` nesnesi oluştururuz.
+### Adım 3: bileşik eğri özelliğini oluşturun
+`CompoundCurve` sınıfı, birden fazla bağlı eğri parçasından oluşan bir geometri için Aspose.GIS'in üst‑seviye nesnesidir. Burada, daha sonra bireysel bileşenleri alacak boş bir bileşik eğri örneği oluşturuyoruz.
 
 ```csharp
 var feature = layer.ConstructFeature();
 var compoundCurve = new CompoundCurve();
 ```
 
-### Adım 4: Bileşen Eğrileri Tanımlama
-Burada beş ayrı parça hazırlıyoruz—iki düz `LineString`, iki `CircularString` yay ve son bir `LineString`. Bu parçalar, tam bileşik eğriyi oluşturmak için birleştirilecek.
+### Adım 4: bileşen eğrileri tanımlayın
+Beş parça hazırlıyoruz—iki düz `LineString`, iki `CircularString` yay ve son bir `LineString`. `LineString`, sıralı bir nokta listesiyle tanımlanan basit bir düz çizgiyi temsil eder. `CircularString`, aynı daire üzerinde bulunan üç nokta (başlangıç, orta, bitiş) ile tanımlanan dairesel bir yay için Aspose.GIS'in temsilidir.
 
 ```csharp
 var bottom = (ILineString)Geometry.FromText("LineString (0 0, 3 0)");
@@ -99,8 +169,8 @@ var secondArc = (ICircularString)Geometry.FromText("CircularString (1 2, 0 3, 1 
 var top = (ILineString)Geometry.FromText("LineString (1 4, 4 4)");
 ```
 
-### Adım 5: Bileşen Eğrileri Bileşik Eğriye Ekleme
-Her bileşen sırasıyla eklenir, böylece geometri sürekli ve doğru yönlendirilmiş olur.
+### Adım 5: bileşen eğrileri bileşik eğriye ekleyin
+Her bileşen sırayla eklenir, süreklilik ve yön korunur. `Add` yöntemi, bir segmentin bitiş noktasının bir sonraki segmentin başlangıç noktasıyla eşleştiğini otomatik olarak doğrular.
 
 ```csharp
 compoundCurve.AddCurve(bottom);
@@ -110,49 +180,56 @@ compoundCurve.AddCurve(secondArc);
 compoundCurve.AddCurve(top);
 ```
 
-### Adım 6: Geometrinin Özelliğe Atanması
-Şimdi birleştirilen `CompoundCurve`, saklayacağımız özelliğin geometrisi haline gelir.
+### Adım 6: geometriyi özelliğe atayın
+Şimdi, oluşturulan `CompoundCurve`, katmanda saklayacağımız özelliğin geometrisi haline gelir.
 
 ```csharp
 feature.Geometry = compoundCurve;
 ```
 
-### Adım 7: Özelliği Katmana Ekleme
-Son olarak, özelliği Shapefile’a yazarız. `using` bloğu sona erdiğinde dosya kapanır ve herhangi bir GIS uygulamasında kullanılmaya hazır hâle gelir.
+### Adım 7: özelliği katmana ekleyin
+Son olarak, özelliği Shapefile'a yazarız. `using` bloğu sona erdiğinde dosya kapanır ve herhangi bir GIS uygulamasında kullanılmaya hazır olur.
 
 ```csharp
 layer.Add(feature);
 ```
 
-## Yaygın Sorunlar ve İpuçları
-- **Koordinat sırası:** Aspose.GIS koordinatları `X Y` (boylam, enlem) sırasıyla bekler. Sıra karışırsa geometriler ters dönebilir.  
-- **CircularString sözdizimi:** `CircularString`’in orta noktasının istenen yay üzerinde olduğundan emin olun; aksi takdirde eğri düzleşir.  
-- **Dosya üzerine yazma:** Hedef Shapefile zaten varsa, `VectorLayer.Create` uyarı vermeden üzerine yazar—geliştirme sırasında benzersiz bir dosya adı kullanın.  
+## Yaygın sorunlar ve ipuçları
+- **Koordinat sırası:** Aspose.GIS, koordinatları `X Y` sırasına (boylam, enlem) göre bekler. Sıralamayı değiştirmek geometrinin tersine dönmesine neden olur.  
+- **CircularString sözdizimi:** Orta nokta, hedeflenen yay üzerinde bulunmalıdır; aksi takdirde eğri düz bir çizgiye dönüşür.  
+- **Dosya üzerine yazma:** `VectorLayer.Create`, mevcut bir Shapefile'ı uyarı vermeden üzerine yazar—geliştirme sırasında benzersiz bir dosya adı kullanın.  
 - **Performans:** Büyük veri setleri için, `using` bloğu içinde tek tek eklemek yerine toplu olarak özellik ekleyin.  
-- **Pro ipucu:** Benzer birden çok özellik oluştururken aynı `CompoundCurve` nesnesini yeniden kullanın; yeniden doldurmadan önce `compoundCurve.Clear()` ile eğrileri temizleyin.
+- **İpucu:** Benzer birçok özellik oluştururken aynı `CompoundCurve` örneğini yeniden kullanın; yeniden doldurmadan önce `compoundCurve.Clear()` çağırarak tahsisleri azaltın.
 
-## Sıkça Sorulan Sorular
+## Sıkça sorulan sorular
 
-**S: Aspose.GIS for .NET’i diğer .NET framework’leriyle kullanabilir miyim?**  
-C: Evet, Aspose.GIS for .NET .NET Framework, .NET Core ve .NET Standard ile çalışır.
+**S: Aspose.GIS for .NET'i diğer .NET framework'leriyle kullanabilir miyim?**  
+C: Evet, Aspose.GIS .NET Framework, .NET Core ve .NET Standard ile çalışır; 4.6 sürümünden .NET 7'ye kadar olan sürümleri kapsar.
 
-**S: Aspose.GIS farklı coğrafi dosya formatlarını okuma ve yazma desteği sunuyor mu?**  
-C: Kesinlikle! Shapefile, GeoJSON, KML, GML ve daha birçok formatı destekler.
+**S: Aspose.GIS farklı coğrafi veri dosya formatlarını okuma ve yazma desteği sunuyor mu?**  
+C: Kesinlikle. Shapefile, GeoJSON, KML, GML ve 30'dan fazla ek formatı okur ve yazar.
 
 **S: Aspose.GIS hem masaüstü hem de web uygulamaları için uygun mu?**  
-C: Evet, kütüphane masaüstü, web ve bulut servislerinde kullanılabilir.
+C: Evet, kütüphane masaüstü, web ve bulut hizmetlerinde platform‑spesifik bağımlılık olmadan kullanılabilir.
 
-**S: Aspose.GIS for .NET ile mekânsal analiz yapabilir miyim?**  
-C: Evet, mesafe hesaplamaları, geometrik işlemler ve mekânsal sorgular gerçekleştirebilirsiniz.
+**S: Aspose.GIS for .NET ile mekansal analiz yapabilir miyim?**  
+C: Evet, mesafeleri hesaplayabilir, geometrik işlemler gerçekleştirebilir ve doğrudan geometriler üzerinde mekansal sorgular çalıştırabilirsiniz.
 
-**S: Aspose.GIS topluluğundan nereden destek alabilirim?**  
-C: Sorularınızı sormak ve fikirlerinizi paylaşmak için [Aspose.GIS forumunu](https://forum.aspose.com/c/gis/33) ziyaret edin.
+**S: Aspose.GIS için topluluk desteğini nereden alabilirim?**  
+C: Diğer geliştiricilere sorular sorup fikir paylaşmak için [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) adresini ziyaret edin.
 
 ---
 
-**Son Güncelleme:** 2026-02-15  
-**Test Edilen Versiyon:** Aspose.GIS for .NET (en son kararlı sürüm)  
-**Yazar:** Aspose  
+**Son Güncelleme:** 2026-08-24  
+**Test Edilen:** Aspose.GIS for .NET (latest stable release)  
+**Yazar:** Aspose
+
+## İlgili Eğitimler
+
+- [Aspose.GIS for .NET'te Vektör Katmanı ve Dairesel Dizi Oluşturma](/gis/net/geometry-creation/create-circular-string-geometry/)
+- [Aspose.GIS ile vektör katmanı ve eğri çokgen oluşturma](/gis/net/geometry-creation/create-curve-polygon-geometry/)
+- [WKT'yi Geometriye Dönüştür: Aspose.GIS .NET ile MultiCurve](/gis/net/geometry-creation/create-multicurve-geometry/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
