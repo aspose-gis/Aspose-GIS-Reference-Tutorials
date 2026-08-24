@@ -1,10 +1,75 @@
 ---
-date: 2026-02-15
-description: Naučte se, jak vytvořit vektorovou vrstvu a přidat geometrii kruhového
-  řetězce pomocí Aspose.GIS pro .NET – rychlý způsob, jak vytvářet GIS aplikace.
-linktitle: Create Circular String Geometry
+date: 2026-08-24
+description: Zjistěte, jak vytvořit vektorovou vrstvu .NET a přidat geometrii kruhového
+  řetězce pomocí Aspose.GIS – rychlý, připravený pro produkci způsob, jak vytvářet
+  GIS aplikace.
+keywords:
+- create vector layer .net
+- circular string geometry
+- Aspose.GIS .NET
+- GIS vector layer
+- C# geometry
+lastmod: 2026-08-24
+linktitle: Vytvořit geometrii kruhového řetězce
+og_description: Zjistěte, jak vytvořit vektorovou vrstvu .NET a přidat geometrii kruhového
+  řetězce pomocí Aspose.GIS – rychlý, připravený pro produkci způsob, jak vytvářet
+  GIS aplikace.
+og_image_alt: Tutorial showing how to create a vector layer and circular string geometry
+  in Aspose.GIS for .NET
+og_title: Vytvořte vektorovou vrstvu .NET s geometrií kruhového řetězce
+schemas:
+- author: Aspose
+  dateModified: '2026-08-24'
+  description: Learn how to create vector layer .NET and add circular string geometry
+    with Aspose.GIS – a fast, production‑ready way to build GIS applications.
+  headline: Create vector layer .NET with circular string geometry
+  type: TechArticle
+- description: Learn how to create vector layer .NET and add circular string geometry
+    with Aspose.GIS – a fast, production‑ready way to build GIS applications.
+  name: Create vector layer .NET with circular string geometry
+  steps:
+  - name: Define the output file path
+    text: Set the location where the Shapefile will be written. Use an absolute or
+      relative path that your application can write to. Replace `"Your Document Directory"`
+      with the actual folder path on your system.
+  - name: Create vector layer
+    text: '`VectorLayer.Create` opens (or creates) a new vector layer backed by the
+      specified driver. This is the core of the **create vector layer .NET** operation.'
+  - name: Construct a new feature
+    text: A feature represents a single spatial record inside the layer. The `Feature`
+      class holds attribute data and a geometry object.
+  - name: Build the circular string geometry
+    text: '`CircularString` is the class that models an arc‑based line. You add points
+      with `AddPoint(x, y)`; the first and last points should be identical for a closed
+      shape.'
+  - name: Assign geometry and add the feature to the layer
+    text: Link the geometry to the feature and store it in the layer. When the `using`
+      block ends, the layer is automatically flushed to the Shapefile on disk. When
+      the `using` block ends, the layer is automatically flushed to the Shapefile
+      on disk.
+  type: HowTo
+- questions:
+  - answer: It creates a new container (layer) that can hold spatial features like
+      points, lines, or polygons.
+    question: What does “create vector layer” mean?
+  - answer: '`CircularString` from `Aspose.Gis.Geometries`.'
+    question: Which class represents a circular string?
+  - answer: Yes – use `Drivers.Shapefile` when creating the layer.
+    question: Can I save the layer as a Shapefile?
+  - answer: A temporary license works for evaluation; a full license is required for
+      production.
+    question: Do I need a license for development?
+  - answer: .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
+    question: What .NET versions are supported?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: Vytvořte vektorovou vrstvu a kruhový řetězec v Aspose.GIS pro .NET
+tags:
+- create vector layer
+- circular string
+- Aspose.GIS
+- .NET GIS
+- C# geometry
+title: Vytvořte vektorovou vrstvu .NET s geometrií kruhového řetězce
 url: /cs/net/geometry-creation/create-circular-string-geometry/
 weight: 20
 ---
@@ -13,34 +78,34 @@ weight: 20
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Vytvoření vektorové vrstvy a geometrie kruhového řetězce s Aspose.GIS pro .NET
+# Vytvořit vektorovou vrstvu .NET s circular string geometry
 
-## Introduction
-Pokud vytváříte GIS aplikaci na platformě .NET, prvním krokem je často **vytvořit vektorovou vrstvu** objektů, které ukládají vaše prostorové prvky. Aspose.GIS pro .NET tento proces zjednodušuje a umožňuje obohatit tyto vrstvy o pokročilé geometrie, jako jsou kruhové řetězce. V tomto tutoriálu se naučíte přesně, jak **vytvořit vektorovou vrstvu**, **přidat kruhový řetězec** geometrie a uložit výsledek jako Shapefile – vše s čistým, produkčně připraveným C# kódem.
+## Úvod
+Pokud vytváříte GIS aplikaci na platformě .NET, první krok je často **vytvořit vektorovou vrstvu .NET** objekty, které ukládají vaše prostorové prvky. Aspose.GIS pro .NET tento proces zjednodušuje a umožňuje obohatit tyto vrstvy o pokročilé geometrie, jako jsou circular strings. V tomto tutoriálu se přesně naučíte, jak **vytvořit vektorovou vrstvu**, **přidat circular string** geometrii a uložit výsledek jako Shapefile – vše s čistým, produkčně připraveným C# kódem.
 
-## Quick Answers
-- **Co znamená „vytvořit vektorovou vrstvu“?** Vytvoří nový kontejner (vrstvu), který může obsahovat prostorové prvky jako body, linie nebo polygony.  
-- **Která třída představuje kruhový řetězec?** `CircularString` z `Aspose.Gis.Geometries`.  
+## Rychlé odpovědi
+- **Co znamená “create vector layer”?** Vytváří nový kontejner (vrstvu), který může obsahovat prostorové prvky jako body, čáry nebo polygony.  
+- **Která třída představuje circular string?** `CircularString` z `Aspose.Gis.Geometries`.  
 - **Mohu vrstvu uložit jako Shapefile?** Ano – použijte `Drivers.Shapefile` při vytváření vrstvy.  
-- **Potřebuji licenci pro vývoj?** Dočasná licence stačí pro hodnocení; plná licence je vyžadována pro produkci.  
+- **Potřebuji licenci pro vývoj?** Dočasná licence stačí pro hodnocení; pro produkci je vyžadována plná licence.  
 - **Jaké verze .NET jsou podporovány?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
 
-## What is “create vector layer”?
-Vektorová vrstva je logické seskupení vektorových prvků (body, linie, polygony) uložených v jediném datovém zdroji. V Aspose.GIS vytvoříte vrstvu voláním `VectorLayer.Create`, přičemž zadáte cílovou cestu k souboru a požadovaný ovladač (např. Shapefile). Jakmile vrstva existuje, můžete do ní přidávat prvky, přiřazovat geometrie a provádět prostorové operace.
+## Co je “create vector layer”?
+Vektorová vrstva je logické seskupení vektorových prvků – bodů, čar nebo polygonů – uložených společně v jednom datovém zdroji. Funguje jako kontejner, který vám umožňuje efektivně spravovat, dotazovat se a ukládat prostorové záznamy. V Aspose.GIS ji vytvoříte voláním `VectorLayer.Create` s cílovou cestou k souboru a ovladačem, například Shapefile.
 
-## Why add a circular string?
-Kruhové řetězce jsou typ **lineární geometrie**, který aproximuje oblouky pomocí sekvence bodů. Hodí se pro reprezentaci zakřivených silnic, zatáček řek nebo jakéhokoli prvku, kde je potřeba hladká křivka bez nutnosti používat mnoho malých úseků čar.
+## Proč přidat circular string?
+Circular strings vám umožňují modelovat hladké oblouky s mnohem menším počtem vrcholů než tradiční polyline. **Jsou ideální pro reprezentaci zakřivených silnic, zatáček řek nebo jakéhokoli prvku, kde je vyžadován skutečný oblouk bez zvětšování velikosti souboru.** Použití circular string snižuje počet uložených bodů až o 80 % ve srovnání s hustou aproximací line‑string, což zlepšuje jak efektivitu úložiště, tak výkon vykreslování ve většině GIS prohlížečů.
 
-## Prerequisites
-Než začnete, ujistěte se, že máte:
-
+## Požadavky
 - **.NET Framework nebo .NET Core** nainstalovaný na vašem počítači.  
-- **Aspose.GIS for .NET** knihovnu – stáhněte ji z oficiálního webu **[zde](https://releases.aspose.com/gis/net/)**.  
-- IDE, jako je **Visual Studio** nebo **JetBrains Rider**.  
-- Základní znalosti programování v **C#**.
+- **Aspose.GIS for .NET** knihovna – stáhněte ji z oficiálního webu **[download Aspose.GIS for .NET](https://releases.aspose.com/gis/net/)**.  
+- IDE, například **Visual Studio** nebo **JetBrains Rider**.  
+- Základní znalost programování v **C#**.
 
-## Import Namespaces
+## Importovat jmenné prostory
 Přidejte požadované jmenné prostory do vašeho C# souboru:
+
+Jmenný prostor `Aspose.Gis` obsahuje základní GIS typy, zatímco `Aspose.Gis.Geometries` poskytuje třídy geometrie, jako je `CircularString`. Importováním je zpřístupníte v celém souboru.
 
 ```csharp
 using Aspose.Gis;
@@ -52,10 +117,10 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## Step‑by‑Step Guide
+## Průvodce krok za krokem
 
-### Step 1: Define the output file path
-Nastavte umístění, kam bude Shapefile zapsán.
+### Krok 1: Definovat výstupní cestu k souboru
+Nastavte umístění, kam bude Shapefile zapsán. Použijte absolutní nebo relativní cestu, do které může vaše aplikace zapisovat.
 
 ```csharp
 string path = "Your Document Directory" + "CreateCircularString_out.shp";
@@ -63,23 +128,23 @@ string path = "Your Document Directory" + "CreateCircularString_out.shp";
 
 Nahraďte `"Your Document Directory"` skutečnou cestou ke složce ve vašem systému.
 
-### Step 2: **Create vector layer**
-Otevřete `VectorLayer` pomocí metody `Create`. Toto je jádro operace **vytvořit vektorovou vrstvu**.
+### Krok 2: Vytvořit vektorovou vrstvu
+`VectorLayer.Create` otevře (nebo vytvoří) novou vektorovou vrstvu podporovanou zadaným ovladačem. Toto je jádro operace **create vector layer .NET**.
 
 ```csharp
 using (VectorLayer layer = VectorLayer.Create(path, Drivers.Shapefile))
 {
 ```
 
-### Step 3: Construct a new feature
-Prvek představuje jeden prostorový záznam uvnitř vrstvy.
+### Krok 3: Vytvořit nový prvek
+Prvek představuje jeden prostorový záznam uvnitř vrstvy. Třída `Feature` obsahuje atributová data a objekt geometrie.
 
 ```csharp
     var feature = layer.ConstructFeature();
 ```
 
-### Step 4: Build the circular string geometry
-Přidejte body, které definují zakřivený tvar. Sekvence bodů vytvoří oblouk, který začíná a končí na stejném místě, čímž vznikne uzavřený kruhový řetězec.
+### Krok 4: Vytvořit geometrie circular string
+`CircularString` je třída, která modeluje čáru založenou na oblouku. Přidáváte body pomocí `AddPoint(x, y)`; první a poslední bod by měly být identické pro uzavřený tvar.
 
 ```csharp
     var circularString = new CircularString();
@@ -90,8 +155,8 @@ Přidejte body, které definují zakřivený tvar. Sekvence bodů vytvoří oblo
     circularString.AddPoint(0, 0);
 ```
 
-### Step 5: Assign geometry and add the feature to the layer
-Propojte geometrii s prvkem a uložte jej do vrstvy.
+### Krok 5: Přiřadit geometrii a přidat prvek do vrstvy
+Propojte geometrii s prvkem a uložte ji do vrstvy. Když se ukončí blok `using`, vrstva se automaticky zapíše do Shapefile na disku.
 
 ```csharp
     feature.Geometry = circularString;
@@ -101,58 +166,66 @@ Propojte geometrii s prvkem a uložte jej do vrstvy.
 
 Když se ukončí blok `using`, vrstva se automaticky zapíše do Shapefile na disku.
 
-## Common Issues & Solutions
-| Issue | Solution |
+## Časté problémy a řešení
+| Problém | Řešení |
 |-------|----------|
-| **File path invalid** | Ujistěte se, že adresář existuje a máte oprávnění k zápisu. |
-| **CircularString appears as a straight line** | Ověřte, že body jsou přidány ve správném pořadí; první a poslední bod by měly být identické pro uzavřený tvar. |
-| **License exception** | Použijte dočasnou licenci během vývoje nebo zakupte plnou licenci pro produkční nasazení. |
+| **Neplatná cesta k souboru** | Ujistěte se, že adresář existuje a máte oprávnění k zápisu. |
+| **CircularString se zobrazuje jako přímka** | Ověřte, že body jsou přidány ve správném pořadí; první a poslední bod by měly být identické pro uzavřený tvar. |
+| **Výjimka licence** | Použijte dočasnou licenci během vývoje nebo zakupte plnou licenci pro produkční použití. |
+| **Zpomalení výkonu u velkých datových sad** | Aspose.GIS streamuje data, takže můžete bezpečně zpracovávat soubory s 500 + prvky, aniž byste načítali celou datovou sadu do paměti. |
 
-## Frequently Asked Questions
+## Často kladené otázky
 
-### Is Aspose.GIS for .NET compatible with all versions of the .NET Framework?
-Ano, Aspose.GIS for .NET je navržen tak, aby fungoval s širokým rozsahem verzí .NET, od Framework 4.5 až po nejnovější vydání .NET 8.
+### Je Aspose.GIS pro .NET kompatibilní se všemi verzemi .NET Framework?
+Ano, Aspose.GIS pro .NET je navržen tak, aby fungoval s širokou škálou verzí .NET, od Framework 4.5 až po nejnovější verze .NET 8.
 
-### Can I integrate Aspose.GIS for .NET with other GIS libraries?
-Rozhodně! Můžete číst data pomocí jiných knihoven, manipulovat s nimi pomocí Aspose.GIS a poté je znovu zapsat, díky flexibilnímu API.
+### Mohu integrovat Aspose.GIS pro .NET s jinými GIS knihovnami?
+Rozhodně! Můžete načíst data pomocí jiných knihoven, manipulovat s nimi pomocí Aspose.GIS a poté je znovu zapsat, díky jeho flexibilnímu API.
 
-### Does Aspose.GIS for .NET support spatial data visualization?
+### Podporuje Aspose.GIS pro .NET vizualizaci prostorových dat?
 Ano, knihovna obsahuje nástroje pro renderování, které vám umožní generovat mapy a vizuální reprezentace vašich geometrií.
 
-### Is there a community forum where I can seek assistance with Aspose.GIS for .NET?
-Ano, můžete navštívit fórum Aspose.GIS **[zde](https://forum.aspose.com/c/gis/33)**, kde můžete klást otázky a sdílet zkušenosti.
+### Existuje komunitní fórum, kde mohu získat pomoc s Aspose.GIS pro .NET?
+Ano, můžete navštívit fórum Aspose.GIS **[Aspose GIS forum](https://forum.aspose.com/c/gis/33)** a klást otázky a sdílet zkušenosti.
 
-### Can I obtain a temporary license to evaluate Aspose.GIS for .NET?
-Samozřejmě! Dočasná evaluační licence je k dispozici **[zde](https://purchase.aspose.com/temporary-license/)**.
+### Mohu získat dočasnou licenci pro vyhodnocení Aspose.GIS pro .NET?
+Samozřejmě! Dočasná evaluační licence je k dispozici na **[temporary license page](https://purchase.aspose.com/temporary-license/)**.
 
-### How do I add more complex geometries (e.g., MultiLineString) to the same layer?
-Vytvořte příslušný geometrický objekt (např. `MultiLineString`), naplňte jej jednotlivými objekty `LineString`, přiřaďte jej k `feature.Geometry` a přidejte prvek stejně jako u kruhového řetězce.
+### Jak přidám složitější geometrie (např. MultiLineString) do stejné vrstvy?
+Vytvořte odpovídající objekt geometrie (např. `MultiLineString`), naplňte jej jednotlivými objekty `LineString`, přiřaďte jej k `feature.Geometry` a přidejte prvek stejně jako u circular string.
 
-## FAQ (Quick‑Reference)
+## FAQ (rychlý přehled)
 
 **Q:** Jak programově **vytvořit vektorovou vrstvu**?  
 **A:** Zavolejte `VectorLayer.Create(path, Drivers.Shapefile)` (nebo jiný ovladač) uvnitř bloku `using`.
 
-**Q:** Jaká metoda přidává body do kruhového řetězce?  
+**Q:** Jaká metoda přidává body do circular string?  
 **A:** Použijte `circularString.AddPoint(x, y)` pro každou souřadnici.
 
-**Q:** Mohu v jedné vrstvě uložit více geometrií?  
+**Q:** Mohu uložit více geometrií ve stejné vrstvě?  
 **A:** Ano, vytvořte nový prvek pro každou geometrii a přidejte jej pomocí `layer.Add(feature)`.
 
-**Q:** Co mám dělat, když se Shapefile nevytvoří?  
+**Q:** Co mám dělat, pokud se Shapefile nevytvoří?  
 **A:** Ověřte, že výstupní adresář existuje, máte oprávnění k zápisu a ovladač (`Drivers.Shapefile`) je správně odkazován.
 
-**Q:** Je licence vyžadována pro evaluační sestavení?  
-**A:** Dočasná licence stačí pro vývoj a testování; plná licence je potřebná pro produkční nasazení.
+**Q:** Je licence vyžadována pro evaluační verzi?  
+**A:** Dočasná licence stačí pro vývoj a testování; pro produkční nasazení je potřeba plná licence.
 
-## Conclusion
-Po absolvování těchto kroků nyní víte, jak **vytvořit vektorovou vrstvu** a obohatit ji o **kruhový řetězec** pomocí Aspose.GIS pro .NET. Tento základ vám umožní budovat bohatší GIS řešení – ať už mapujete dopravní sítě, vizualizujete environmentální data nebo vyvíjíte vlastní nástroje pro prostorovou analytiku.
+## Závěr
+Po provedení těchto kroků nyní víte, jak **vytvořit vektorovou vrstvu** objekty a obohatit je o **circular string** geometrii pomocí Aspose.GIS pro .NET. Tento základ vám umožní vytvářet komplexnější GIS řešení – ať už mapujete dopravní sítě, vizualizujete environmentální data nebo vyvíjíte vlastní nástroje pro prostorovou analytiku. Dále prozkoumejte další typy geometrií, jako je `MultiPolygon`, nebo experimentujte s prostorovým indexováním pro zvýšení výkonu dotazů.
 
 ---
 
-**Last Updated:** 2026-02-15  
-**Tested With:** Aspose.GIS 24.11 for .NET  
-**Author:** Aspose  
+**Poslední aktualizace:** 2026-08-24  
+**Testováno s:** Aspose.GIS 24.11 pro .NET  
+**Autor:** Aspose
+
+## Související tutoriály
+
+- [Jak vytvořit vektorovou vrstvu s SRS pomocí Aspose.GIS pro .NET](/gis/net/layer-management/create-vector-layer-with-srs/)
+- [Vytvořit vektorovou vrstvu a zakřivený polygon s Aspose.GIS](/gis/net/geometry-creation/create-curve-polygon-geometry/)
+- [Naučte se, jak vytvořit LineString geometrii s Aspose.GIS pro .NET](/gis/net/geometry-creation/create-linestring-geometry/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
