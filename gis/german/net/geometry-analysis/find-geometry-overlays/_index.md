@@ -1,11 +1,74 @@
 ---
-date: 2025-12-07
-description: Erfahren Sie, wie Sie Overlay-Operationen in diesem Spatial‑Overlay‑Tutorial
-  mit Aspose.GIS für .NET durchführen. Beherrschen Sie Schnittmenge, Vereinigung,
-  Differenz und symmetrische Differenz.
-linktitle: Find Geometry Overlays
+date: 2026-08-08
+description: Erfahren Sie, wie Sie symmetrische Differenz GIS-Overlay-Analysen mit
+  Aspose.GIS für .NET durchführen. Dieses Tutorial zeigt, wie man Overlay, Polygon‑Schnitt,
+  Vereinigung, Differenz und symmetrische Differenz in C# ausführt.
+keywords:
+- symmetric difference gis
+- calculate polygon intersection
+- how to perform overlay
+lastmod: 2026-08-08
+linktitle: Geometrie‑Overlays finden
+og_description: Entdecken Sie, wie Sie symmetrische Differenz GIS-Overlay-Analysen
+  mit Aspose.GIS für .NET durchführen. Schritt‑für‑Schritt‑Anleitung umfasst Schnitt,
+  Vereinigung, Differenz und mehr.
+og_image_alt: Screenshot of Aspose.GIS overlay operations in a .NET console app
+og_title: Symmetrische Differenz GIS-Overlay mit Aspose.GIS für .NET
+schemas:
+- author: Aspose
+  dateModified: '2026-08-08'
+  description: Learn symmetric difference GIS overlay analysis using Aspose.GIS for
+    .NET. This tutorial shows how to perform overlay, polygon intersection, union,
+    difference, and symmetric difference in C#.
+  headline: Symmetric difference GIS overlay with Aspose.GIS for .NET
+  type: TechArticle
+- description: Learn symmetric difference GIS overlay analysis using Aspose.GIS for
+    .NET. This tutorial shows how to perform overlay, polygon intersection, union,
+    difference, and symmetric difference in C#.
+  name: Symmetric difference GIS overlay with Aspose.GIS for .NET
+  steps:
+  - name: create polygon objects
+    text: A `Polygon` represents a closed shape defined by a series of coordinate
+      points.
+  - name: perform intersection operation
+    text: '`Intersection` computes the common area shared by two polygons.'
+  - name: print intersection points
+    text: '`PrintRing` is a helper that prints each coordinate of a polygon’s exterior
+      ring.'
+  - name: perform union operation
+    text: '`Union` merges two polygons into a single geometry covering all areas.'
+  - name: print union points
+    text: Output the coordinates of the united geometry.
+  - name: perform difference operation
+    text: '`Difference` subtracts the second polygon from the first, leaving the non‑overlapping
+      portion.'
+  - name: print difference points
+    text: Show the remaining vertices after the subtraction.
+  - name: perform symmetric difference operation
+    text: '`SymmetricDifference` returns the parts belonging to either polygon but
+      not both, producing a `MultiPolygon`.'
+  - name: print symmetric difference polygons
+    text: Iterate through each polygon in the `MultiPolygon` and print its points.
+  type: HowTo
+- questions:
+  - answer: Yes, a valid commercial license permits unrestricted use in production
+      applications.
+    question: Can I use Aspose.GIS for .NET in my commercial projects?
+  - answer: Yes, you can download a free trial from the [Aspose releases page](https://releases.aspose.com/).
+    question: Is there a trial version available for Aspose.GIS for .NET?
+  - answer: Support is available through the Aspose GIS forum [Aspose GIS forum](https://forum.aspose.com/c/gis/33).
+    question: How can I get support for Aspose.GIS for .NET?
+  - answer: Yes, temporary licenses can be obtained from the [temporary license page](https://purchase.aspose.com/temporary-license/).
+    question: Are temporary licenses offered for testing?
+  - answer: You can buy a license directly from the website [Aspose purchase page](https://purchase.aspose.com/buy).
+    question: Where can I purchase a full license for Aspose.GIS for .NET?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: So führen Sie Overlay‑Operationen mit Aspose.GIS für .NET durch.
+tags:
+- gis overlay
+- Aspose.GIS
+- .NET geometry analysis
+title: Symmetrische Differenz GIS-Overlay mit Aspose.GIS für .NET
 url: /de/net/geometry-analysis/find-geometry-overlays/
 weight: 16
 ---
@@ -14,31 +77,34 @@ weight: 16
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Wie man Overlay‑Operationen mit Aspose.GIS für .NET durchführt
+# Symmetrische Differenz GIS: Overlay-Operationen mit Aspose.GIS für .NET durchführen
 
-## Einführung
-Overlay‑Analyse ist eine Kerntechnik in jedem **spatial overlay tutorial** — sie ermöglicht das Kombinieren, Vergleichen und Extrahieren von Erkenntnissen aus mehreren geografischen Ebenen. In diesem Leitfaden lernen Sie **wie man Overlay**‑Operationen wie Intersection, Union, Difference und Symmetric Difference mit der leistungsstarken Aspose.GIS‑Bibliothek für .NET ausführt. Am Ende des Tutorials können Sie diese Methoden auf reale GIS‑Probleme wie Flächennutzungsplanung, Umweltverträglichkeitsstudien und Routenoptimierung anwenden.
+Overlay-Analyse ist eine Kerntechnik in jedem **spatial overlay tutorial**—sie ermöglicht es Ihnen, mehrere geografische Ebenen zu kombinieren, zu vergleichen und Erkenntnisse daraus zu gewinnen. In diesem Leitfaden lernen Sie **wie man Overlay**-Operationen wie Intersection, Union, Difference und Symmetric Difference mit der leistungsstarken Aspose.GIS für .NET-Bibliothek durchzuführen. Am Ende des Tutorials können Sie diese Methoden auf reale GIS‑Probleme wie Flächennutzungsplanung, Umweltverträglichkeitsstudien und Routenoptimierung anwenden.
 
-## Schnellantworten
-- **Was ist eine Overlay‑Operation?** Eine räumliche Methode, die zwei Geometrien kombiniert, um eine neue Geometrie zu erzeugen (Intersection, Union usw.).  
-- **Welche Bibliothek verarbeitet Overlays in .NET?** Aspose.GIS für .NET.  
-- **Wie lange dauert die Implementierung?** Ungefähr 10‑15 Minuten für das Basisbeispiel.  
-- **Benötige ich eine Lizenz?** Eine Testversion ist kostenlos; für den Produktionseinsatz ist eine kommerzielle Lizenz erforderlich.  
-- **Läuft das auf .NET Core / .NET 6+?** Ja — Aspose.GIS unterstützt alle modernen .NET‑Laufzeiten.
+## Schnelle Antworten
+- **Was ist eine Overlay‑Operation?** Ein Overlay kombiniert zwei Geometrien, um eine neue Form zu erzeugen—Intersection, Union, Difference oder Symmetric Difference.  
+- **Welche .NET‑Bibliothek verarbeitet Overlays?** Aspose.GIS für .NET bietet eine vollständig verwaltete API für alle mengentheoretischen Geometrie‑Operationen.  
+- **Wie lange dauert eine grundlegende Implementierung?** Etwa 10‑15 Minuten, um den Beispielcode zu schreiben, zu kompilieren und auszuführen.  
+- **Benötige ich eine Lizenz für die Produktion?** Ja—eine kommerzielle Lizenz ist für den Produktionseinsatz erforderlich; eine kostenlose Testversion ist zur Evaluierung verfügbar.  
+- **Kann ich das auf .NET 6+ ausführen?** Absolut—Aspose.GIS unterstützt .NET Core, .NET 5, .NET 6 und neuere Versionen.
 
 ## Was ist eine Overlay‑Operation?
-Eine Overlay‑Operation nimmt zwei geometrische Formen und berechnet eine neue Form basierend auf ihrer räumlichen Beziehung.  
-- **Intersection** liefert die Fläche, die beiden Formen gemeinsam ist.  
-- **Union** fügt die Formen zu einer einzigen Geometrie zusammen.  
-- **Difference** subtrahiert eine Form von der anderen.  
-- **Symmetric Difference** liefert die Teile, die zu einer der beiden Formen gehören, aber nicht zu beiden.
+
+Overlay‑Operationen berechnen eine neue Geometrie basierend auf der räumlichen Beziehung zweier Eingabeformen. **Intersection** liefert die gemeinsame Fläche, **Union** verbindet die Flächen, **Difference** subtrahiert eine Form von der anderen, und **Symmetric Difference** gibt die Teile zurück, die zu einer der Formen gehören, aber nicht zu beiden. Diese mengentheoretischen Funktionen bilden die mathematische Grundlage der GIS‑Analyse und ermöglichen es Ihnen, Fragen wie „Wo überschneiden sich zwei Grundstücke?“ oder „Welche Fläche bleibt nach dem Entfernen einer Schutzzone übrig?“ zu beantworten.
 
 ## Warum Aspose.GIS für Overlays verwenden?
-Aspose.GIS bietet eine saubere, vollständig verwaltete API, die die Low‑Level‑Mathematik abstrahiert und Ihnen ermöglicht, sich auf die Geschäftslogik zu konzentrieren. Sie funktioniert plattformübergreifend, verarbeitet große Datensätze effizient und lässt sich nahtlos in andere .NET‑Komponenten integrieren.
+
+Aspose.GIS unterstützt **mehr als 50 Vektor‑ und Rasterformate**, kann **Datensätze mit mehreren hundert Seiten verarbeiten, ohne die gesamte Datei in den Speicher zu laden**, und läuft auf Windows, Linux und macOS. Seine verwaltete API eliminiert die Notwendigkeit nativer GIS‑Bibliotheken, reduziert die Komplexität der Bereitstellung und ermöglicht es Ihnen, die gesamte Logik in einer einzigen .NET‑Lösung zu behalten.
+
+## Häufige Anwendungsfälle
+- **Landnutzungsplanung:** Identifizieren Sie überlappende Zonen zwischen geplanten Entwicklungen und Schutzgebieten.  
+- **Umweltanalyse:** Berechnen Sie die Schnittmenge von Lebensräumen mit Schadstoffquellen.  
+- **Infrastruktur‑Routing:** Bestimmen Sie, wo neue Straßen bestehende Versorgungskorridore kreuzen.  
+- **Städtische Analytik:** Fassen Sie mehrere kommunale Grenzen zusammen, um eine regionale Ansicht zu erstellen.
 
 ## Voraussetzungen
 - Eine funktionierende .NET‑Entwicklungsumgebung (Visual Studio, VS Code oder die .NET‑CLI).  
-- Aspose.GIS für .NET‑Bibliothek — laden Sie die neueste Version von der [offiziellen Seite](https://releases.aspose.com/gis/net/) herunter.  
+- Aspose.GIS für .NET‑Bibliothek – laden Sie die neueste Version von der [official site](https://releases.aspose.com/gis/net/) herunter.
 
 ### Namespaces importieren
 Bevor Sie Aspose.GIS für .NET verwenden können, müssen Sie die erforderlichen Namespaces in Ihr Projekt importieren.
@@ -52,11 +118,16 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## Wie man Overlay‑Operationen in .NET durchführt
-Im Folgenden finden Sie eine Schritt‑für‑Schritt‑Durchführung zum Erstellen zweier Polygone und zur Anwendung jeder Overlay‑Methode.
+## So führen Sie Overlay‑Operationen in .NET durch
 
-### Schritt 1: Polygon‑Objekte erstellen
-Zunächst definieren wir zwei einfache Quadrat‑Polygone, die sich teilweise überschneiden. Diese dienen als Testdaten.
+Ein `Polygon` stellt eine geschlossene planare Form dar, definiert durch einen äußeren Ring und optionale innere Ringe. Jede Overlay‑Methode (`Intersection`, `Union`, `Difference`, `SymmetricDifference`) berechnet eine spezifische mengentheoretische Operation auf zwei Geometrien.
+
+Laden Sie zwei Polygon‑Objekte und rufen Sie dann die passende Overlay‑Methode—Intersection, Union, Difference oder SymmetricDifference—auf. Der gesamte Arbeitsablauf lässt sich in wenigen prägnanten Codezeilen abbilden, und jede Methode gibt eine Geometrie zurück, die Sie weiter abfragen oder exportieren können.
+
+**Direct answer:** Um ein Overlay in Aspose.GIS durchzuführen, instanziieren Sie zwei `Polygon`‑Objekte und rufen die gewünschte Methode (`Intersection`, `Union`, `Difference` oder `SymmetricDifference`) auf. Jeder Aufruf liefert eine neue Geometrie, die das Ergebnis darstellt und die Sie in WKT, GeoJSON oder ein beliebiges unterstütztes Format serialisieren können.
+
+### Schritt 1: Polygon‑Objekte erstellen
+Ein `Polygon` stellt eine geschlossene Form dar, definiert durch eine Reihe von Koordinatenpunkten.
 
 ```csharp
 var polygon1 = new Polygon();
@@ -79,60 +150,60 @@ polygon2.ExteriorRing = new LinearRing(new[]
 });
 ```
 
-### Schritt 2: Intersection‑Operation ausführen
-Die **Intersection** liefert uns die überlappende Fläche der beiden Polygone.
+### Schritt 2: Intersection‑Operation ausführen
+`Intersection` berechnet die gemeinsame Fläche, die von zwei Polygonen geteilt wird.
 
 ```csharp
 var intersection = polygon1.Intersection(polygon2);
 Console.WriteLine("Intersection type is {0}", intersection.GeometryType); // Polygon
 ```
 
-### Schritt 3: Intersection‑Punkte ausgeben
-Wir verwenden eine Hilfsmethode (`PrintRing`), um die Koordinaten des resultierenden Polygons anzuzeigen.
+### Schritt 3: Schnittpunkt‑Koordinaten ausgeben
+`PrintRing` ist eine Hilfsfunktion, die jede Koordinate des äußeren Rings eines Polygons ausgibt.
 
 ```csharp
 PrintRing(((IPolygon)intersection).ExteriorRing);
 ```
 
-### Schritt 4: Union‑Operation ausführen
-Die **Union** fügt beide Polygone zu einer einzigen Form zusammen, die die gesamte von beiden Polygonen bedeckte Fläche umfasst.
+### Schritt 4: Union‑Operation ausführen
+`Union` fügt zwei Polygone zu einer einzigen Geometrie zusammen, die alle Flächen abdeckt.
 
 ```csharp
 var union = polygon1.Union(polygon2);
 Console.WriteLine("Union type is {0}", union.GeometryType); // Polygon
 ```
 
-### Schritt 5: Union‑Punkte ausgeben
+### Schritt 5: Union‑Koordinaten ausgeben
 Geben Sie die Koordinaten der vereinheitlichten Geometrie aus.
 
 ```csharp
 PrintRing(((IPolygon)union).ExteriorRing);
 ```
 
-### Schritt 6: Difference‑Operation ausführen
-**Difference** subtrahiert `polygon2` von `polygon1` und lässt nur den Teil von `polygon1` übrig, der nicht mit `polygon2` überlappt.
+### Schritt 6: Difference‑Operation ausführen
+`Difference` subtrahiert das zweite Polygon vom ersten und lässt den nicht überlappenden Teil übrig.
 
 ```csharp
 var difference = polygon1.Difference(polygon2);
 Console.WriteLine("Difference type is {0}", difference.GeometryType); // Polygon
 ```
 
-### Schritt 7: Difference‑Punkte ausgeben
-Zeigen Sie die verbleibenden Eckpunkte nach der Subtraktion an.
+### Schritt 7: Difference‑Koordinaten ausgeben
+Zeigt die verbleibenden Eckpunkte nach der Subtraktion.
 
 ```csharp
 PrintRing(((IPolygon)difference).ExteriorRing);
 ```
 
-### Schritt 8: Symmetric Difference‑Operation ausführen
-Die **Symmetric Difference** liefert die Flächen, die zu einem der beiden Polygone gehören, aber nicht zu beiden. Das Ergebnis ist ein `MultiPolygon`.
+### Schritt 8: Symmetric Difference‑Operation ausführen
+`SymmetricDifference` gibt die Teile zurück, die zu einem der beiden Polygone gehören, aber nicht zu beiden, und erzeugt ein `MultiPolygon`.
 
 ```csharp
 var symDifference = polygon1.SymDifference(polygon2);
 Console.WriteLine("Symmetric Difference type is {0}", symDifference.GeometryType); // MultiPolygon
 ```
 
-### Schritt 9: Symmetric Difference‑Polygone ausgeben
+### Schritt 9: Symmetric Difference‑Polygone ausgeben
 Iterieren Sie über jedes Polygon im `MultiPolygon` und geben Sie dessen Punkte aus.
 
 ```csharp
@@ -145,36 +216,44 @@ PrintRing(((IPolygon)multiPolygon[1]).ExteriorRing);
 ## Häufige Probleme und Lösungen
 | Problem | Warum es passiert | Lösung |
 |-------|----------------|-----|
-| `null`‑Ergebnis von `Intersection` | Polygone überschneiden sich tatsächlich nicht. | Koordinaten überprüfen oder vor dem Aufruf von `Intersection` `Intersects` prüfen. |
-| Unerwartetes `MultiPolygon` von `SymDifference` | Die symmetrische Differenz kann disjunkte Komponenten erzeugen. | Zu `IMultiPolygon` casten und wie gezeigt iterieren. |
+| `null`-Ergebnis von `Intersection` | Polygone überlappen tatsächlich nicht. | Überprüfen Sie die Koordinaten oder führen Sie vor dem Aufruf von `Intersection` eine `Intersects`‑Prüfung durch. |
+| Unerwartetes `MultiPolygon` von `SymDifference` | Die symmetrische Differenz kann getrennte Komponenten erzeugen. | In `IMultiPolygon` casten und wie gezeigt iterieren. |
 | Leistungsabfall bei großen Datensätzen | Jede Operation berechnet die Geometrie von Grund auf neu. | Zwischenergebnisse wiederverwenden oder Geometrien vor dem Overlay mit `Simplify()` vereinfachen. |
 
 ## Häufig gestellte Fragen
 
-**F: Kann ich Aspose.GIS für .NET in kommerziellen Projekten verwenden?**  
-A: Ja, Aspose.GIS für .NET kann sowohl in kommerziellen als auch in nicht‑kommerziellen Projekten mit einer gültigen Lizenz verwendet werden.
+**Q: Kann ich Aspose.GIS für .NET in meinen kommerziellen Projekten verwenden?**  
+A: Ja, eine gültige kommerzielle Lizenz erlaubt uneingeschränkte Nutzung in Produktionsanwendungen.
 
-**F: Gibt es eine Testversion von Aspose.GIS für .NET?**  
-A: Ja, Sie können eine kostenlose Testversion [hier](https://releases.aspose.com/) herunterladen.
+**Q: Gibt es eine Testversion für Aspose.GIS für .NET?**  
+A: Ja, Sie können eine kostenlose Testversion von der [Aspose releases page](https://releases.aspose.com/) herunterladen.
 
-**F: Wie erhalte ich Support für Aspose.GIS für .NET?**  
-A: Support erhalten Sie im Aspose.GIS‑Community‑Forum [hier](https://forum.aspose.com/c/gis/33).
+**Q: Wie kann ich Support für Aspose.GIS für .NET erhalten?**  
+A: Support ist über das Aspose GIS‑Forum [Aspose GIS forum](https://forum.aspose.com/c/gis/33) verfügbar.
 
-**F: Gibt es temporäre Lizenzen für Aspose.GIS für .NET?**  
-A: Ja, temporäre Lizenzen stehen für Test‑ und Evaluierungszwecke zur Verfügung. Sie können sie [hier](https://purchase.aspose.com/temporary-license/) erhalten.
+**Q: Werden temporäre Lizenzen zum Testen angeboten?**  
+A: Ja, temporäre Lizenzen können von der [temporary license page](https://purchase.aspose.com/temporary-license/) erhalten werden.
 
-**F: Kann ich Aspose.GIS für .NET direkt kaufen?**  
-A: Ja, Sie können Aspose.GIS für .NET über die Website [hier](https://purchase.aspose.com/buy) erwerben.
+**Q: Wo kann ich eine Voll‑Lizenz für Aspose.GIS für .NET erwerben?**  
+A: Sie können eine Lizenz direkt von der Website [Aspose purchase page](https://purchase.aspose.com/buy) kaufen.
 
 ---
 
-**Zuletzt aktualisiert:** 2025-12-07  
+**Zuletzt aktualisiert:** 2026-08-08  
 **Getestet mit:** Aspose.GIS 24.11 für .NET  
-**Autor:** Aspose  
+**Autor:** Aspose
+
+## Verwandte Tutorials
+
+- [Polygongeometrie in C# erstellen und Intersection prüfen mit Aspose.GIS für .NET](/gis/net/geometry-analysis/check-geometries-intersection/)
+- [Wie man räumliche Überlappungsanalyse von Geometrien mit Aspose.GIS für .NET durchführt](/gis/net/geometry-analysis/check-geometries-overlap/)
+- [Geometriepuffer mit Aspose.GIS für .NET erstellen](/gis/net/geometry-analysis/create-geometry-buffer/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+{{< /blocks/products/pf/main-wrap-class >}}

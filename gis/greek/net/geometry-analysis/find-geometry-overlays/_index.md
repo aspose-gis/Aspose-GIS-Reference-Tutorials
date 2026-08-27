@@ -1,11 +1,74 @@
 ---
-date: 2025-12-07
-description: Μάθετε πώς να εκτελείτε λειτουργίες επικάλυψης σε αυτό το σεμινάριο χωρικής
-  επικάλυψης χρησιμοποιώντας το Aspose.GIS για .NET. Κατακτήστε την τομή, την ένωση,
-  τη διαφορά και τη συμμετρική διαφορά.
-linktitle: Find Geometry Overlays
+date: 2026-08-08
+description: Μάθετε την ανάλυση επικάλυψης GIS με συμμετρική διαφορά χρησιμοποιώντας
+  Aspose.GIS for .NET. Αυτό το σεμινάριο δείχνει πώς να εκτελέσετε overlay, polygon
+  intersection, union, difference και symmetric difference σε C#.
+keywords:
+- symmetric difference gis
+- calculate polygon intersection
+- how to perform overlay
+lastmod: 2026-08-08
+linktitle: Βρείτε Geometry Overlays
+og_description: Ανακαλύψτε πώς να εκτελέσετε ανάλυση επικάλυψης GIS με συμμετρική
+  διαφορά χρησιμοποιώντας Aspose.GIS for .NET. Ο οδηγός βήμα‑βήμα καλύπτει intersection,
+  union, difference και άλλα.
+og_image_alt: Screenshot of Aspose.GIS overlay operations in a .NET console app
+og_title: Επικάλυψη GIS με συμμετρική διαφορά χρησιμοποιώντας Aspose.GIS for .NET
+schemas:
+- author: Aspose
+  dateModified: '2026-08-08'
+  description: Learn symmetric difference GIS overlay analysis using Aspose.GIS for
+    .NET. This tutorial shows how to perform overlay, polygon intersection, union,
+    difference, and symmetric difference in C#.
+  headline: Symmetric difference GIS overlay with Aspose.GIS for .NET
+  type: TechArticle
+- description: Learn symmetric difference GIS overlay analysis using Aspose.GIS for
+    .NET. This tutorial shows how to perform overlay, polygon intersection, union,
+    difference, and symmetric difference in C#.
+  name: Symmetric difference GIS overlay with Aspose.GIS for .NET
+  steps:
+  - name: create polygon objects
+    text: A `Polygon` represents a closed shape defined by a series of coordinate
+      points.
+  - name: perform intersection operation
+    text: '`Intersection` computes the common area shared by two polygons.'
+  - name: print intersection points
+    text: '`PrintRing` is a helper that prints each coordinate of a polygon’s exterior
+      ring.'
+  - name: perform union operation
+    text: '`Union` merges two polygons into a single geometry covering all areas.'
+  - name: print union points
+    text: Output the coordinates of the united geometry.
+  - name: perform difference operation
+    text: '`Difference` subtracts the second polygon from the first, leaving the non‑overlapping
+      portion.'
+  - name: print difference points
+    text: Show the remaining vertices after the subtraction.
+  - name: perform symmetric difference operation
+    text: '`SymmetricDifference` returns the parts belonging to either polygon but
+      not both, producing a `MultiPolygon`.'
+  - name: print symmetric difference polygons
+    text: Iterate through each polygon in the `MultiPolygon` and print its points.
+  type: HowTo
+- questions:
+  - answer: Yes, a valid commercial license permits unrestricted use in production
+      applications.
+    question: Can I use Aspose.GIS for .NET in my commercial projects?
+  - answer: Yes, you can download a free trial from the [Aspose releases page](https://releases.aspose.com/).
+    question: Is there a trial version available for Aspose.GIS for .NET?
+  - answer: Support is available through the Aspose GIS forum [Aspose GIS forum](https://forum.aspose.com/c/gis/33).
+    question: How can I get support for Aspose.GIS for .NET?
+  - answer: Yes, temporary licenses can be obtained from the [temporary license page](https://purchase.aspose.com/temporary-license/).
+    question: Are temporary licenses offered for testing?
+  - answer: You can buy a license directly from the website [Aspose purchase page](https://purchase.aspose.com/buy).
+    question: Where can I purchase a full license for Aspose.GIS for .NET?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: Πώς να εκτελέσετε λειτουργίες επικάλυψης με το Aspose.GIS για .NET
+tags:
+- gis overlay
+- Aspose.GIS
+- .NET geometry analysis
+title: Επικάλυψη GIS με συμμετρική διαφορά χρησιμοποιώντας Aspose.GIS for .NET
 url: /el/net/geometry-analysis/find-geometry-overlays/
 weight: 16
 ---
@@ -14,34 +77,37 @@ weight: 16
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Πώς να Εκτελέσετε Λειτουργίες Επικάλυψης με Aspose.GIS για .NET
+# Συμμετρική διαφορά GIS: εκτέλεση λειτουργιών επικάλυψης με το Aspose.GIS για .NET
 
-## Εισαγωγή
-Η ανάλυση επικάλυψης είναι μια βασική τεχνική σε οποιοδήποτε **spatial overlay tutorial**—σας επιτρέπει να συνδυάζετε, να συγκρίνετε και να εξάγετε πληροφορίες από πολλαπλά γεωγραφικά επίπεδα. Σε αυτόν τον οδηγό θα μάθετε **πώς να εκτελείτε επικάλυψη** λειτουργίες όπως Intersection, Union, Difference και Symmetric Difference χρησιμοποιώντας τη δυναμική βιβλιοθήκη Aspose.GIS για .NET. Στο τέλος του οδηγού θα μπορείτε να εφαρμόσετε αυτές τις μεθόδους σε πραγματικά προβλήματα GIS όπως ο σχεδιασμός χρήσης γης, μελέτες περιβαλλοντικών επιπτώσεων και βελτιστοποίηση διαδρομών.
+Η ανάλυση επικάλυψης είναι μια βασική τεχνική σε οποιοδήποτε **spatial overlay tutorial**—σας επιτρέπει να συνδυάζετε, να συγκρίνετε και να εξάγετε πληροφορίες από πολλαπλά γεωγραφικά επίπεδα. Σε αυτόν τον οδηγό θα μάθετε **πώς να εκτελείτε επικάλυψη** λειτουργίες όπως Intersection, Union, Difference και Symmetric Difference χρησιμοποιώντας τη δυνατή βιβλιοθήκη Aspose.GIS για .NET. Στο τέλος του οδηγού θα μπορείτε να εφαρμόζετε αυτές τις μεθόδους σε πραγματικά προβλήματα GIS όπως προγραμματισμός χρήσης γης, μελέτες περιβαλλοντικών επιπτώσεων και βελτιστοποίηση διαδρομών.
 
-## Γρήγορες Απαντήσεις
-- **Τι είναι μια λειτουργία επικάλυψης;** Μια χωρική μέθοδος που συνδυάζει δύο γεωμετρίες για να παραγάγει μια νέα γεωμετρία (τομή, ένωση κ.λπ.).  
-- **Ποια βιβλιοθήκη διαχειρίζεται τις επαυξήσεις σε .NET;** Aspose.GIS για .NET.  
-- **Πόσο χρόνο διαρκεί η υλοποίηση;** Περίπου 10‑15 λεπτά για το βασικό παράδειγμα.  
-- **Χρειάζομαι άδεια;** Η δοκιμαστική έκδοση είναι δωρεάν· απαιτείται εμπορική άδεια για παραγωγική χρήση.  
-- **Μπορώ να το τρέξω σε .NET Core / .NET 6+;** Ναι—το Aspose.GIS υποστηρίζει όλα τα σύγχρονα .NET runtime.
+## Γρήγορες απαντήσεις
+- **Τι είναι μια λειτουργία επικάλυψης;** Μια επικάλυψη συνδυάζει δύο γεωμετρίες για να παράγει ένα νέο σχήμα—intersection, union, difference ή symmetric difference.  
+- **Ποια βιβλιοθήκη .NET διαχειρίζεται τις επα覆πτικές λειτουργίες;** Η Aspose.GIS για .NET παρέχει ένα πλήρως διαχειριζόμενο API για όλες τις λειτουργίες γεωμετρίας θεωρίας συνόλων.  
+- **Πόσο διαρκεί μια βασική υλοποίηση;** Περίπου 10‑15 λεπτά για να γράψετε, να μεταγλωττίσετε και να εκτελέσετε το δείγμα κώδικα.  
+- **Χρειάζομαι άδεια για παραγωγή;** Ναι—απαιτείται εμπορική άδεια για παραγωγικές εγκαταστάσεις· διατίθεται δωρεάν δοκιμή για αξιολόγηση.  
+- **Μπορώ να το τρέξω σε .NET 6+;** Απόλυτα—η Aspose.GIS υποστηρίζει .NET Core, .NET 5, .NET 6 και μεταγενέστερες εκδόσεις.
 
-## Τι είναι μια Λειτουργία Επικάλυψης;
-Μια λειτουργία επικάλυψης λαμβάνει δύο γεωμετρικά σχήματα και υπολογίζει ένα νέο σχήμα βάσει της χωρικής τους σχέσης.  
-- **Intersection** επιστρέφει την περιοχή κοινή και στα δύο σχήματα.  
-- **Union** συγχωνεύει τα σχήματα σε μία ενιαία γεωμετρία.  
-- **Difference** αφαιρεί ένα σχήμα από το άλλο.  
-- **Symmetric Difference** επιστρέφει τα τμήματα που ανήκουν σε ένα από τα σχήματα αλλά όχι και στα δύο.
+## Τι είναι μια λειτουργία επικάλυψης;
 
-## Γιατί να Χρησιμοποιήσετε το Aspose.GIS για Επικάλυψη;
-Το Aspose.GIS παρέχει ένα καθαρό, πλήρως διαχειριζόμενο API που αφαιρεί τα χαμηλού επιπέδου μαθηματικά, επιτρέποντάς σας να εστιάσετε στη λογική της επιχείρησης. Λειτουργεί δια-πλατφόρμα, διαχειρίζεται μεγάλα σύνολα δεδομένων αποδοτικά και ενσωματώνεται άψογα με άλλα .NET στοιχεία.
+Οι λειτουργίες επικάλυψης υπολογίζουν μια νέα γεωμετρία βάσει της χωρικής σχέσης δύο εισαγόμενων σχημάτων. **Intersection** επιστρέφει την κοινή περιοχή, **Union** συγχωνεύει τις περιοχές, **Difference** αφαιρεί ένα σχήμα από το άλλο, και **Symmetric Difference** αποδίδει τα τμήματα που ανήκουν σε οποιοδήποτε σχήμα αλλά όχι και στα δύο. Αυτές οι συναρτήσεις θεωρίας συνόλων αποτελούν το μαθηματικό θεμέλιο της ανάλυσης GIS, επιτρέποντάς σας να απαντήσετε σε ερωτήσεις όπως «πού επικαλύπτονται δύο οικόπεδα;» ή «ποια περιοχή παραμένει μετά την αφαίρεση μιας προστατευμένης ζώνης».
+
+## Γιατί να χρησιμοποιήσετε το Aspose.GIS για επικάλυψη;
+
+Η Aspose.GIS υποστηρίζει **πάνω από 50 μορφές διανυσματικών και ραστερικών δεδομένων**, μπορεί να επεξεργαστεί **σύνολα δεδομένων πολλαπλών εκατοντάδων σελίδων χωρίς να φορτώνει ολόκληρο το αρχείο στη μνήμη**, και λειτουργεί σε Windows, Linux και macOS. Το διαχειριζόμενο API της εξαλείφει την ανάγκη για εγγενείς βιβλιοθήκες GIS, μειώνοντας την πολυπλοκότητα της ανάπτυξης και επιτρέποντάς σας να διατηρείτε όλη τη λογική μέσα σε μια ενιαία λύση .NET.
+
+## Συνηθισμένες περιπτώσεις χρήσης
+- **Προγραμματισμός χρήσης γης:** Εντοπισμός επικαλυπτόμενων ζωνών μεταξύ προτεινόμενων αναπτύξεων και προστατευμένων περιοχών.  
+- **Περιβαλλοντική ανάλυση:** Υπολογισμός της τομής των οικοτόπων με πηγές ρύπανσης.  
+- **Δρομολόγηση υποδομών:** Προσδιορισμός των σημείων όπου νέοι δρόμοι τέμνουν υπάρχοντες διαδρόμους υποδομών.  
+- **Αστική ανάλυση:** Συγχώνευση πολλαπλών δημοτικών συνόρων για δημιουργία περιφερειακής εικόνας.
 
 ## Προαπαιτούμενα
-- Ένα λειτουργικό περιβάλλον ανάπτυξης .NET (Visual Studio, VS Code ή το .NET CLI).  
-- Βιβλιοθήκη Aspose.GIS για .NET – κατεβάστε την πιο πρόσφατη έκδοση από την [official site](https://releases.aspose.com/gis/net/).  
+- Ένα λειτουργικό περιβάλλον ανάπτυξης .NET (Visual Studio, VS Code ή το .NET CLI).  
+- Βιβλιοθήκη Aspose.GIS για .NET – κατεβάστε την τελευταία έκδοση από το [official site](https://releases.aspose.com/gis/net/).  
 
-### Εισαγωγή Χώρων Ονομάτων
-Πριν ξεκινήσετε να χρησιμοποιείτε το Aspose.GIS για .NET, πρέπει να εισάγετε τους απαραίτητους χώρους ονομάτων στο έργο σας.
+### Εισαγωγή ονομάτων χώρων
+Πριν ξεκινήσετε τη χρήση του Aspose.GIS για .NET, πρέπει να εισάγετε τα απαραίτητα ονόματα χώρων στο έργο σας.
 
 ```csharp
 using Aspose.Gis.Geometries;
@@ -52,11 +118,16 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## Πώς να Εκτελέσετε Λειτουργίες Επικάλυψης σε .NET
-Παρακάτω παρουσιάζεται ένας βήμα‑βήμα οδηγός για τη δημιουργία δύο πολυγώνων και την εφαρμογή κάθε μεθόδου επικάλυψης.
+## Πώς να εκτελέσετε λειτουργίες επικάλυψης σε .NET
 
-### Βήμα 1: Δημιουργία Αντικειμένων Πολυγώνου
-Αρχικά, ορίζουμε δύο απλά τετράγωνα πολυγώνια που επικαλύπτονται εν μέρει. Αυτά θα χρησιμεύσουν ως δεδομένα δοκιμής μας.
+Ένα `Polygon` αντιπροσωπεύει ένα κλειστό επίπεδο σχήμα που ορίζεται από έναν εξωτερικό δακτύλιο και προαιρετικούς εσωτερικούς δακτυλίους. Κάθε μέθοδος επικάλυψης (`Intersection`, `Union`, `Difference`, `SymmetricDifference`) υπολογίζει μια συγκεκριμένη λειτουργία θεωρίας συνόλων σε δύο γεωμετρίες.
+
+Φορτώστε δύο αντικείμενα πολυγώνου, στη συνέχεια καλέστε τη σχετική μέθοδο επικάλυψης—Intersection, Union, Difference ή SymmetricDifference. Η πλήρης ροή εργασίας χωράει σε λίγες σύντομες γραμμές κώδικα, και κάθε μέθοδος επιστρέφει μια γεωμετρία που μπορείτε να ερωτήσετε ή να εξάγετε περαιτέρω.
+
+**Direct answer:** Για να εκτελέσετε μια επικάλυψη στο Aspose.GIS, δημιουργήστε δύο αντικείμενα `Polygon`, στη συνέχεια καλέστε τη ζητούμενη μέθοδο (`Intersection`, `Union`, `Difference` ή `SymmetricDifference`). Κάθε κλήση επιστρέφει μια νέα γεωμετρία που αντιπροσωπεύει το αποτέλεσμα, το οποίο μπορείτε να σειριοποιήσετε σε WKT, GeoJSON ή οποιαδήποτε υποστηριζόμενη μορφή.
+
+### Βήμα 1: δημιουργία αντικειμένων πολυγώνου
+Ένα `Polygon` αντιπροσωπεύει ένα κλειστό σχήμα που ορίζεται από μια σειρά σημείων συντεταγμένων.
 
 ```csharp
 var polygon1 = new Polygon();
@@ -79,61 +150,61 @@ polygon2.ExteriorRing = new LinearRing(new[]
 });
 ```
 
-### Βήμα 2: Εκτέλεση Λειτουργίας Τομής
-Η **Intersection** μας δίνει την περιοχή που επικαλύπτεται μεταξύ των δύο πολυγώνων.
+### Βήμα 2: εκτέλεση λειτουργίας intersection
+`Intersection` υπολογίζει την κοινή περιοχή που μοιράζονται δύο πολύγωνα.
 
 ```csharp
 var intersection = polygon1.Intersection(polygon2);
 Console.WriteLine("Intersection type is {0}", intersection.GeometryType); // Polygon
 ```
 
-### Βήμα 3: Εκτύπωση Σημείων Τομής
-Χρησιμοποιούμε μια βοηθητική μέθοδο (`PrintRing`) για να εμφανίσουμε τις συντεταγμένες του αποτελέσματος.
+### Βήμα 3: εκτύπωση σημείων intersection
+`PrintRing` είναι μια βοηθητική συνάρτηση που εκτυπώνει κάθε συντεταγμένη του εξωτερικού δακτυλίου ενός πολυγώνου.
 
 ```csharp
 PrintRing(((IPolygon)intersection).ExteriorRing);
 ```
 
-### Βήμα 4: Εκτέλεση Λειτουργίας Ένωσης
-Η **Union** συγχωνεύει και τα δύο πολυγώνια σε ένα ενιαίο σχήμα που καλύπτει όλη την περιοχή που καλύπτεται από οποιοδήποτε από τα δύο.
+### Βήμα 4: εκτέλεση λειτουργίας union
+`Union` συγχωνεύει δύο πολύγωνα σε μία ενιαία γεωμετρία που καλύπτει όλες τις περιοχές.
 
 ```csharp
 var union = polygon1.Union(polygon2);
 Console.WriteLine("Union type is {0}", union.GeometryType); // Polygon
 ```
 
-### Βήμα 5: Εκτύπωση Σημείων Ένωσης
+### Βήμα 5: εκτύπωση σημείων union
 Εξάγετε τις συντεταγμένες της ενοποιημένης γεωμετρίας.
 
 ```csharp
 PrintRing(((IPolygon)union).ExteriorRing);
 ```
 
-### Βήμα 6: Εκτέλεση Λειτουργίας Διαφοράς
-Η **Difference** αφαιρεί το `polygon2` από το `polygon1`, αφήνοντας μόνο το τμήμα του `polygon1` που δεν τέμνει το `polygon2`.
+### Βήμα 6: εκτέλεση λειτουργίας difference
+`Difference` αφαιρεί το δεύτερο πολύγωνο από το πρώτο, αφήνοντας το μη επικαλυπτόμενο τμήμα.
 
 ```csharp
 var difference = polygon1.Difference(polygon2);
 Console.WriteLine("Difference type is {0}", difference.GeometryType); // Polygon
 ```
 
-### Βήμα 7: Εκτύπωση Σημείων Διαφοράς
-Δείξτε τις υπόλοιπες κορυφές μετά την αφαίρεση.
+### Βήμα 7: εκτύπωση σημείων difference
+Εμφανίστε τις υπόλοιπες κορυφές μετά την αφαίρεση.
 
 ```csharp
 PrintRing(((IPolygon)difference).ExteriorRing);
 ```
 
-### Βήμα 8: Εκτέλεση Λειτουργίας Συμμετρικής Διαφοράς
-Η **Symmetric Difference** επιστρέφει τις περιοχές που ανήκουν σε ένα από τα πολυγώνια αλλά όχι και στα δύο. Το αποτέλεσμα είναι ένα `MultiPolygon`.
+### Βήμα 8: εκτέλεση λειτουργίας symmetric difference
+`SymmetricDifference` επιστρέφει τα τμήματα που ανήκουν σε οποιοδήποτε πολύγωνο αλλά όχι και στα δύο, παράγοντας ένα `MultiPolygon`.
 
 ```csharp
 var symDifference = polygon1.SymDifference(polygon2);
 Console.WriteLine("Symmetric Difference type is {0}", symDifference.GeometryType); // MultiPolygon
 ```
 
-### Βήμα 9: Εκτύπωση Πολυγώνων Συμμετρικής Διαφοράς
-Διατρέξτε κάθε πολυγωνικό τμήμα στο `MultiPolygon` και εκτυπώστε τα σημεία του.
+### Βήμα 9: εκτύπωση πολυγώνων symmetric difference
+Διέλθετε κάθε πολύγωνο στο `MultiPolygon` και εκτυπώστε τα σημεία του.
 
 ```csharp
 var multiPolygon = (IMultiPolygon)symDifference;
@@ -142,39 +213,47 @@ PrintRing(((IPolygon)multiPolygon[0]).ExteriorRing);
 PrintRing(((IPolygon)multiPolygon[1]).ExteriorRing);
 ```
 
-## Συχνά Προβλήματα και Λύσεις
-| Πρόβλημα | Γιατί Συμβαίνει | Διόρθωση |
-|----------|----------------|----------|
-| `null` result from `Intersection` | Τα πολυγώνια δεν επικαλύπτονται στην πραγματικότητα. | Επαληθεύστε τις συντεταγμένες ή χρησιμοποιήστε έλεγχο `Intersects` πριν καλέσετε `Intersection`. |
-| Unexpected `MultiPolygon` from `SymDifference` | Η συμμετρική διαφορά μπορεί να δημιουργήσει διασπαστά τμήματα. | Κάντε cast σε `IMultiPolygon` και επαναλάβετε όπως φαίνεται. |
-| Performance slowdown on large datasets | Κάθε λειτουργία επαναϋπολογίζει τη γεωμετρία από το μηδέν. | Επαναχρησιμοποιήστε ενδιάμεσα αποτελέσματα ή απλοποιήστε τις γεωμετρίες με `Simplify()` πριν την επικάλυψη. |
+## Συνηθισμένα προβλήματα και λύσεις
+| Issue | Why it happens | Fix |
+|-------|----------------|-----|
+| `null` result from `Intersection` | Τα πολύγωνα δεν επικαλύπτονται στην πραγματικότητα. | Επαληθεύστε τις συντεταγμένες ή χρησιμοποιήστε έλεγχο `Intersects` πριν καλέσετε `Intersection`. |
+| Unexpected `MultiPolygon` from `SymDifference` | Η συμμετρική διαφορά μπορεί να παράγει διασπαστά στοιχεία. | Κάντε cast σε `IMultiPolygon` και επαναλάβετε όπως φαίνεται. |
+| Performance slowdown on large datasets | Κάθε λειτουργία επαναϋπολογίζει τη γεωμετρία από την αρχή. | Επαναχρησιμοποιήστε ενδιάμεσα αποτελέσματα ή απλοποιήστε τις γεωμετρίες με `Simplify()` πριν την επικάλυψη. |
 
-## Συχνές Ερωτήσεις
+## Συχνές ερωτήσεις
 
 **Q: Μπορώ να χρησιμοποιήσω το Aspose.GIS για .NET στα εμπορικά μου έργα;**  
-A: Ναι, το Aspose.GIS για .NET μπορεί να χρησιμοποιηθεί τόσο σε εμπορικά όσο και σε μη‑εμπορικά έργα με έγκυρη άδεια.
+A: Ναι, μια έγκυρη εμπορική άδεια επιτρέπει απεριόριστη χρήση σε παραγωγικές εφαρμογές.
 
 **Q: Υπάρχει διαθέσιμη δοκιμαστική έκδοση για το Aspose.GIS για .NET;**  
-A: Ναι, μπορείτε να κατεβάσετε μια δωρεάν δοκιμαστική έκδοση από [here](https://releases.aspose.com/).
+A: Ναι, μπορείτε να κατεβάσετε δωρεάν δοκιμή από τη [Aspose releases page](https://releases.aspose.com/).
 
 **Q: Πώς μπορώ να λάβω υποστήριξη για το Aspose.GIS για .NET;**  
-A: Μπορείτε να λάβετε υποστήριξη από το φόρουμ της κοινότητας Aspose.GIS [here](https://forum.aspose.com/c/gis/33).
+A: Η υποστήριξη είναι διαθέσιμη μέσω του φόρουμ Aspose GIS [Aspose GIS forum](https://forum.aspose.com/c/gis/33).
 
-**Q: Υπάρχουν προσωρινές άδειες διαθέσιμες για το Aspose.GIS για .NET;**  
-A: Ναι, προσωρινές άδειες είναι διαθέσιμες για δοκιμή και αξιολόγηση. Μπορείτε να τις αποκτήσετε από [here](https://purchase.aspose.com/temporary-license/).
+**Q: Προσφέρονται προσωρινές άδειες για δοκιμή;**  
+A: Ναι, οι προσωρινές άδειες μπορούν να ληφθούν από τη [temporary license page](https://purchase.aspose.com/temporary-license/).
 
-**Q: Μπορώ να αγοράσω το Aspose.GIS για .NET απευθείας;**  
-A: Ναι, μπορείτε να αγοράσετε το Aspose.GIS για .NET από την ιστοσελίδα [here](https://purchase.aspose.com/buy).
+**Q: Πού μπορώ να αγοράσω πλήρη άδεια για το Aspose.GIS για .NET;**  
+A: Μπορείτε να αγοράσετε άδεια απευθείας από τον ιστότοπο [Aspose purchase page](https://purchase.aspose.com/buy).
 
 ---
 
-**Τελευταία Ενημέρωση:** 2025-12-07  
-**Δοκιμή Με:** Aspose.GIS 24.11 for .NET  
-**Συγγραφέας:** Aspose  
+**Τελευταία ενημέρωση:** 2026-08-08  
+**Δοκιμή με:** Aspose.GIS 24.11 for .NET  
+**Συγγραφέας:** Aspose
+
+## Σχετικά Μαθήματα
+
+- [Δημιουργία Πολυγώνου Geometry C# και Έλεγχος Intersection με Aspose.GIS για .NET](/gis/net/geometry-analysis/check-geometries-intersection/)
+- [Πώς να εκτελέσετε Ανάλυση Χωρικής Επικάλυψης Γεωμετριών με Aspose.GIS για .NET](/gis/net/geometry-analysis/check-geometries-overlap/)
+- [Δημιουργία Buffer Γεωμετρίας χρησιμοποιώντας Aspose.GIS για .NET](/gis/net/geometry-analysis/create-geometry-buffer/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+{{< /blocks/products/pf/main-wrap-class >}}

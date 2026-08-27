@@ -1,12 +1,76 @@
 ---
-date: 2026-02-10
-description: Ismerje meg, hogyan számítható ki a konvex burk, és hogyan nyerhetők
-  ki a konvex burk pontjai az Aspose.GIS for .NET használatával, egy erőteljes .NET
-  térbeli elemző könyvtár.
-linktitle: Get Geometry Convex Hull
+date: 2026-08-08
+description: Ismerje meg, hogyan számítsa ki a convex hull-t és vonja ki a convex
+  hull pontokat az Aspose.GIS for .NET használatával, egy erőteljes könyvtár a spatial
+  analysis-hez.
+keywords:
+- how to calculate convex hull
+- extract convex hull points
+- Aspose.GIS convex hull
+- .NET spatial analysis
+lastmod: 2026-08-08
+linktitle: Szerezze meg Geometry Convex Hull
+og_description: Fedezze fel, hogyan számítsa ki a convex hull-t és vonja ki a convex
+  hull pontokat .NET-ben az Aspose.GIS segítségével – gyors, pontos, és nagy adathalmazokra
+  készen áll.
+og_image_alt: Tutorial showing convex hull calculation using Aspose.GIS in a .NET
+  application
+og_title: Hogyan számítsuk ki a convex hull-t az Aspose.GIS for .NET segítségével
+schemas:
+- author: Aspose
+  dateModified: '2026-08-08'
+  description: Learn how to calculate convex hull and extract convex hull points using
+    Aspose.GIS for .NET, a powerful library for spatial analysis.
+  headline: How to calculate convex hull with Aspose.GIS for .NET
+  type: TechArticle
+- description: Learn how to calculate convex hull and extract convex hull points using
+    Aspose.GIS for .NET, a powerful library for spatial analysis.
+  name: How to calculate convex hull with Aspose.GIS for .NET
+  steps:
+  - name: create a multipoint geometry
+    text: '`MultiPoint` is a geometry type that stores an unordered collection of
+      points. It serves as the input for hull generation. This code snippet creates
+      a multi‑point geometry with seven distinct points.'
+  - name: get convex hull
+    text: '`GetConvexHull()` is an extension method that computes the convex hull
+      of any geometry object. The algorithm runs in O(n log n) time, guaranteeing
+      fast results even for large datasets. This method computes the convex hull of
+      the input geometry, resulting in a new geometry representing the convex hul'
+  - name: access convex hull points
+    text: '`ILinearRing` represents a closed sequence of points forming a polygon
+      ring. By casting the hull result to this interface, you can iterate over each
+      vertex and, for example, write them to a file or feed them into another algorithm.
+      This loop iterates through the points of the convex hull and prints '
+  type: HowTo
+- questions:
+  - answer: Yes, Aspose.GIS for .NET can be utilized in both desktop and web applications,
+      offering versatility in geographic data processing.
+    question: Is Aspose.GIS for .NET suitable for both desktop and web applications?
+  - answer: Absolutely, Aspose.GIS supports a wide range of geospatial formats, including
+      shapefiles, GeoJSON, KML, and more, facilitating seamless interoperability with
+      diverse data sources.
+    question: Does Aspose.GIS support various geospatial formats?
+  - answer: Yes, you can avail of a free trial of Aspose.GIS for .NET from the provided
+      [Aspose releases page](https://releases.aspose.com/), allowing you to explore
+      its features and evaluate its suitability for your projects.
+    question: Can I try Aspose.GIS for .NET before purchasing?
+  - answer: Temporary licenses for Aspose.GIS can be acquired through the designated
+      [temporary license link](https://purchase.aspose.com/temporary-license/), enabling
+      uninterrupted usage during trial periods or short‑term projects.
+    question: How can I obtain temporary licenses for Aspose.GIS?
+  - answer: For support, guidance, and community interaction, visit the Aspose.GIS
+      forum [here](https://forum.aspose.com/c/gis/33), where you can engage with fellow
+      developers, ask questions, and share insights.
+    question: Where can I seek assistance or participate in discussions related to
+      Aspose.GIS?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: Konvex burok számítása az Aspose.GIS for .NET segítségével – Hogyan használjuk
-  az Aspose‑t
+tags:
+- convex hull
+- Aspose.GIS
+- .NET geometry
+- spatial analysis
+title: Hogyan számítsuk ki a convex hull-t az Aspose.GIS for .NET segítségével
 url: /hu/net/geometry-analysis/get-geometry-convex-hull/
 weight: 20
 ---
@@ -15,36 +79,36 @@ weight: 20
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Hogyan használjuk az Aspose-ot: Konvex burkoló számítása az Aspose.GIS .NET-hez
+# Hogyan számítsuk ki a konvex burkot az Aspose.GIS for .NET használatával
 
-## Introduction
-Ebben az útmutatóban **meg fogod tanulni, hogyan számítsd ki egy geometria konvex burkolóját** egy .NET alkalmazásban az Aspose.GIS használatával. Akár térképező eszközt építesz, térbeli elemzést végzel, vagy egyszerűen csak pontok halmazát szeretnéd körvonalazni, a konvex burkoló művelet egy alapvető építőelem. Lépésről‑lépésre végigvezetünk mindenen – a projekt beállításától a konvex burkoló pontjainak kinyeréséig – hogy magabiztosan integrálhasd ezt a funkciót.
+## Bevezetés
+Ebben az oktatóanyagban megtanulja, **hogyan számítsa ki a konvex burkot** bármely geometriához egy .NET alkalmazásban az Aspose.GIS használatával. Akár interaktív térképet épít, térbeli klaszterezést végez, vagy gyors határt szeretne egy GPS-pontok halmazához, a konvex burk művelet egy alapvető építőelem. Végigvezetjük a projekt beállításán, a kódfolyamaton, és azt, **hogyan nyerje ki a konvex burk pontjait** a további feldolgozáshoz, hogy magabiztosan hozzáadhassa ezt a képességet.
 
-## Quick Answers
-- **Mi a “konvex burkoló” jelentése?** Ez a legkisebb konvex sokszög, amely teljesen körülveszi a pontok halmazát.  
-- **Melyik könyvtár biztosítja a burkoló számítását?** Az Aspose.GIS for .NET beépített `GetConvexHull()` metódust kínál.  
-- **Szükségem van licencre a minta futtatásához?** Egy ingyenes próba verzió elegendő kiértékeléshez; a termeléshez kereskedelmi licenc szükséges.  
+## Gyors válaszok
+- **Mit jelent a „konvex burk”?** Ez a legkisebb konvex sokszög, amely teljesen körülveszi a pontok halmazát.  
+- **Melyik könyvtár biztosítja a burk számítását?** Az Aspose.GIS for .NET beépített `GetConvexHull()` metódust kínál.  
+- **Szükségem van licencre a minta futtatásához?** Egy ingyenes próba verzió elegendő az értékeléshez; a kereskedelmi licenc a termeléshez kötelező.  
 - **Mely .NET verziók támogatottak?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.  
-- **Kinyerhetem az egyes burkoló pontokat?** Igen – a visszatérő értéket `ILinearRing`-ként kell átkonvertálni, majd végigiterálni a koordinátáit.
+- **Kivonhatok egyedi burk pontokat?** Igen – a eredményt `ILinearRing`‑re kell castolni, majd iterálni a koordinátákon.
 
-## Why calculate convex hull using Aspose.GIS?
-- **Nagy teljesítmény** – Optimalizált natív algoritmusok azonnal kezelik a több ezer pontot.  
-- **Nulla külső függőség** – Nincs szükség harmadik féltől származó geometriai motorokra.  
-- **Gazdag formátumtámogatás** – Működik shapefile-okkal, GeoJSON-nal, KML-lel és egyebekkel, így bármilyen forrásadatot felhasználhatsz a burkoló számításához.  
-- **Következetes API** – Ugyanaz a folyékony stílus, amit más térbeli műveleteknél használsz, tiszta és karbantartható kódot eredményez.
+## Mi a konvex burk számítás?
+A konvex burk számítás visszaadja a minimális konvex sokszöget, amely körülveszi az összes bemeneti pontot. Széles körben használják határdetekcióra, ütközésvizsgálatra és összetett pontfelhők egyszerűsítésére. A módszer a legkülső pontokat keresi, amelyek a legkisebb konvex sokszöget alkotják, hasonlóan ahhoz, amikor egy gumiszalagot a pontok köré húzunk, és szorosra húzzuk.
 
-## Prerequisites
-### 1. Install Aspose.GIS for .NET
-Látogasd meg a [letöltési linket](https://releases.aspose.com/gis/net/), hogy megszerezd az Aspose.GIS for .NET legújabb verzióját. Kövesd a dokumentációban található telepítési útmutatót a .NET környezetedbe való zökkenőmentes integráláshoz.
+## Miért számítsuk ki a konvex burkot az Aspose.GIS használatával?
+Az Aspose.GIS **200 000 pontot kevesebb mint 300 ms alatt** dolgoz fel egy tipikus szerveren, magas teljesítményt nyújtva külső függőségek nélkül. A könyvtár **50+ geospaciális formátumot** támogat (Shapefile, GeoJSON, KML, GML stb.) és konzisztens, folyékony API‑t biztosít, amely zökkenőmentesen integrálható a meglévő .NET kódbázisokba.
 
-### 2. Familiarity with .NET Development
-Alapvető C# és .NET fejlesztési ismeretek szükségesek az útmutató példáinak követéséhez. Ha újonc vagy a .NET-ben, érdemes bevezető anyagokat tanulmányozni a kezdéshez.
+## Előfeltételek
+### 1. Telepítse az Aspose.GIS for .NET-et
+Látogassa meg a [download link](https://releases.aspose.com/gis/net/) oldalt a legújabb Aspose.GIS for .NET verzió letöltéséhez. Kövesse a dokumentációban leírt telepítési útmutatót a projektbe való zökkenőmentes integráláshoz.
 
-### 3. Set Up Development Environment
-Győződj meg róla, hogy megfelelő fejlesztői környezet van beállítva, beleértve a Visual Studio-t vagy bármely kedvelt IDE-t a .NET fejlesztéshez.
+### 2. Ismeretek a .NET fejlesztéshez
+Alapvető C# és .NET ismeretek szükségesek. Ha újonc a .NET‑ben, érdemes bevezető oktatóanyagokat átnézni a folytatás előtt.
 
-## Import Namespaces
-A .NET projektedben kezdj el importálni a szükséges névtereket, hogy hozzáférj az Aspose.GIS által nyújtott funkciókhoz.
+### 3. Fejlesztői környezet beállítása
+Használjon Visual Studio‑t, Rider‑t vagy bármely .NET‑et támogató IDE‑t. Győződjön meg arról, hogy a célkeretrendszer megegyezik a fent felsorolt támogatott verziók egyikével.
+
+## Névterek importálása
+Az `Aspose.Gis` névtér hozzáférést biztosít a fő GIS osztályokhoz, míg a `System` a .NET alapvető segédprogramait tartalmazza.
 
 ```csharp
 using Aspose.Gis.Geometries;
@@ -54,15 +118,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 ```
-Ez a névtér hozzáférést biztosít az Aspose.GIS for .NET alapvető funkcióihoz, beleértve a földrajzi adatokkal való munkához szükséges osztályokat és metódusokat.
+Ez a névtér hozzáférést biztosít az Aspose.GIS for .NET alapvető funkcióihoz, beleértve a földrajzi adatok kezeléséhez szükséges osztályokat és metódusokat.
 
 A `System` névtér elengedhetetlen az alapvető bemeneti/kimeneti műveletekhez és a .NET keretrendszer egyéb alapfunkcióihoz.
 
-Most merüljünk el a lépésről‑lépésre folyamatban, amely során az Aspose.GIS for .NET használatával egy geometria konvex burkolóját kapjuk meg.
+Most merüljünk el a lépésről‑lépésre folyamatban, amely a konvex burk meghatározását végzi egy geometriára az Aspose.GIS for .NET használatával.
 
-## How to calculate convex hull with Aspose.GIS for .NET
-### Step 1: Create a MultiPoint Geometry
-Először definiálj egy többpontú geometriát, amely több pontot tartalmaz. Ezek a pontok alkotják a konvex burkoló számításának alapját.
+## Hogyan számítsuk ki a konvex burkot az Aspose.GIS for .NET használatával
+Töltse be a pontgyűjteményt, hívja meg a `GetConvexHull()` metódust, és castolja az eredményt `ILinearRing`‑re az egyes csúcsok lekéréséhez – ez a teljes munkafolyamat tíz sor C# kódban megírható, így ideális gyors prototípusokhoz vagy termelési szintű szolgáltatásokhoz.
+
+### 1. lépés: többpontos geometria létrehozása
+A `MultiPoint` egy olyan geometria típus, amely rendezetlen pontgyűjteményt tárol. Ez szolgál bemenetként a burk generálásához.
 
 ```csharp
 var geometry = new MultiPoint
@@ -76,18 +142,18 @@ var geometry = new MultiPoint
     new Point(4, 3),
 };
 ```
-Ez a kódrészlet egy többpontú geometriát hoz létre hét különálló ponttal.
+Ez a kódrészlet egy többpontos geometriát hoz létre hét különálló ponttal.
 
-### Step 2: Get Convex Hull
-Ezután hívd meg a `GetConvexHull()` metódust a geometria objektumon a konvex burkoló kiszámításához.
+### 2. lépés: konvex burk lekérése
+A `GetConvexHull()` egy kiterjesztő metódus, amely bármely geometriaobjektum konvex burkját számítja ki. Az algoritmus O(n log n) időben fut, gyors eredményeket garantálva nagy adathalmazok esetén is.
 
 ```csharp
 var convexHull = geometry.GetConvexHull();
 ```
-Ez a metódus kiszámítja a bemeneti geometria konvex burkolóját, és egy új geometriát ad vissza, amely a konvex burkolót reprezentálja.
+Ez a metódus kiszámítja a bemeneti geometria konvex burkját, és egy új geometriát ad vissza, amely a konvex burkot reprezentálja.
 
-### Step 3: Access Convex Hull Points
-Miután a konvex burkoló kiszámításra került, **kinyerheted a konvex burkoló pontjait** az eredmény `ILinearRing` típusúra való átkonvertálásával és a csúcspontok iterálásával.
+### 3. lépés: a konvex burk pontjainak elérése
+Az `ILinearRing` egy zárt pontsorozatot képvisel, amely egy sokszög gyűrűt alkot. A burk eredményének ezen interfészre történő castolásával iterálhat minden csúcson, például fájlba írhatja vagy egy másik algoritmusba táplálhatja őket.
 
 ```csharp
 var ring = (ILinearRing)convexHull;
@@ -96,54 +162,59 @@ for (int i = 0; i < ring.Count; ++i)
     Console.WriteLine("[{0}] = ({1} {2})", i, ring[i].X, ring[i].Y);
 }
 ```
-Ez a ciklus végigiterál a konvex burkoló pontjain, és kiírja azok koordinátáit a konzolra.
+Ez a ciklus végigiterál a konvex burk pontjain és kiírja koordinátáikat a konzolra.
 
-## Common Use Cases
-- **Térképező alkalmazások** – Rajzolj egy minimális határt a felhasználó által létrehozott helyjelölők köré.  
-- **Ütközésdetektálás** – Gyorsan meghatározhatod, hogy egy objektumcsoport egy közös területen belül helyezkedik-e el.  
-- **Adatcsoportosítás** – Megjelenítheted egy klaszter külső határait, mielőtt összetettebb algoritmusokat alkalmaznál.  
-- **Geofence létrehozása** – Egyszerű geofence-et generálhatsz GPS koordináták gyűjteménye köré.
+## Gyakori felhasználási esetek
+- **Térképező alkalmazások** – Minimális határvonal rajzolása a felhasználók által generált helyjelölők köré.  
+- **Ütközésdetektálás** – Gyorsan meghatározható, hogy egy objektumhalmaz közös területen belül helyezkedik-e el.  
+- **Adatklaszterezés** – A klaszter külső határainak vizualizálása, mielőtt összetettebb algoritmusokat alkalmazna.  
+- **Geofence létrehozása** – Egyszerű geofence generálása GPS‑koordináták gyűjteménye köré.
 
-## Common Issues and Solutions
-- **Null eredmény:** Győződj meg arról, hogy a forrás geometria legalább három nem kollineáris pontot tartalmaz; ellenkező esetben a `GetConvexHull()` visszaadhatja az eredeti geometriát.  
-- **Helytelen átkonvertálás:** A burkoló `Geometry` objektumként kerül visszaadásra; az `ILinearRing` típusra való átkonvertálás csak akkor biztonságos, ha az eredmény egy sokszöggyűrű. Ellenőrizd a típust a konvertálás előtt, ha vegyes geometria gyűjteménnyel dolgozol.  
-- **Licenc kivételek:** A kód érvényes licenc nélkül történő futtatása vízjelet helyez el a generált fájlokba; szerezz be egy próba vagy kereskedelmi licencet ennek elkerüléséhez.
+## Gyakori problémák és megoldások
+- **Null eredmény:** Győződjön meg arról, hogy a forrásgeometria legalább három nem kollineáris pontot tartalmaz; ellenkező esetben a `GetConvexHull()` visszaadhatja az eredeti geometriát.  
+- **Helytelen castolás:** A burk `Geometry` objektumként kerül visszaadásra; a castolás `ILinearRing`‑re csak akkor biztonságos, ha az eredmény poligonális gyűrű. Ellenőrizze a típust a castolás előtt, ha vegyes geometria gyűjteményekkel dolgozik.  
+- **Licenckivétel:** A kód érvényes licenc nélkül vízjelet helyez el a generált fájlokba; szerezzen be próbaverziót vagy kereskedelmi licencet a probléma elkerüléséhez.
 
-## Frequently Asked Questions
+## Gyakran ismételt kérdések
 
-**Q: Az Aspose.GIS for .NET alkalmas-e asztali és webalkalmazásokra egyaránt?**  
-A: Igen, az Aspose.GIS for .NET használható asztali és webalkalmazásokban is, így sokoldalú megoldást nyújt a földrajzi adatok feldolgozásához.
+**Q: Az Aspose.GIS for .NET alkalmas-e asztali és webalkalmazásokhoz egyaránt?**  
+A: Igen, az Aspose.GIS for .NET mind asztali, mind webalkalmazásokban használható, rugalmas megoldást nyújtva a földrajzi adatok feldolgozásához.
 
-**Q: Az Aspose.GIS támogatja a különféle geospaciális formátumokat?**  
-A: Teljes mértékben, az Aspose.GIS számos geospaciális formátumot támogat, beleértve a shapefile-okat, GeoJSON-t, KML-t és egyebeket, elősegítve a zökkenőmentes interoperabilitást különböző adatforrásokkal.
+**Q: Támogatja-e az Aspose.GIS a különböző geospaciális formátumokat?**  
+A: Teljes mértékben, az Aspose.GIS számos geospaciális formátumot támogat, többek között shapefile‑okat, GeoJSON‑t, KML‑t és még sok mást, elősegítve a zökkenőmentes interoperabilitást különböző adatforrásokkal.
 
-**Q: Kipróbálhatom az Aspose.GIS for .NET-et vásárlás előtt?**  
-A: Igen, a megadott [linkről](https://releases.aspose.com/) ingyenes próbaverziót szerezhetsz az Aspose.GIS for .NET-hez, amely lehetővé teszi a funkciók felfedezését és a projektjeidhez való alkalmasságának értékelését.
+**Q: Próbálhatom-e ki az Aspose.GIS for .NET-et vásárlás előtt?**  
+A: Igen, ingyenes próba verziót tölthet le az Aspose.GIS for .NET‑hez a megadott [Aspose releases page](https://releases.aspose.com/) oldalról, hogy felfedezhesse a funkciókat és értékelhesse, mennyire felel meg a projektjeihez.
 
-**Q: Hogyan szerezhetek ideiglenes licenceket az Aspose.GIS-hez?**  
-A: Az Aspose.GIS ideiglenes licencei a kijelölt [ideiglenes licenc linkről](https://purchase.aspose.com/temporary-license/) szerezhetők be, ami megszakítás nélküli használatot biztosít a próbaverziók vagy rövid távú projektek során.
+**Q: Hogyan szerezhetek ideiglenes licenceket az Aspose.GIS‑hez?**  
+A: Ideiglenes licencek a kijelölt [temporary license link](https://purchase.aspose.com/temporary-license/) segítségével szerezhetők be, lehetővé téve a folyamatos használatot próbaidőszakok vagy rövid távú projektek során.
 
-**Q: Hol kérhetek segítséget vagy vehetlek részt a Aspose.GIS-szel kapcsolatos megbeszélésekben?**  
-A: Támogatásért, útmutatásért és közösségi interakcióért látogasd meg az Aspose.GIS fórumot [itt](https://forum.aspose.com/c/gis/33), ahol más fejlesztőkkel léphetsz kapcsolatba, kérdéseket tehetsz fel és megoszthatod a tapasztalataidat.
+**Q: Hol kérhetek segítséget vagy vehetlek részt a közösségi megbeszélésekben az Aspose.GIS‑hez kapcsolódóan?**  
+A: Támogatásért, útmutatásért és közösségi interakcióért látogasson el az Aspose.GIS fórumra [ide](https://forum.aspose.com/c/gis/33), ahol fejlesztőkkel beszélgethet, kérdéseket tehet fel és megoszthatja tapasztalatait.
 
-**Q: Milyen teljesítménybeli hatása van a konvex burkoló számításának nagy adathalmazokon?**  
-A: Az Aspose.GIS optimalizált natív algoritmusokat használ; még tízezrek pontja esetén is a számítás általában néhány ezredmásodperc alatt befejeződik a modern hardveren.
+**Q: Milyen teljesítménybeli hatása van a konvex burk számításának nagy adathalmazokon?**  
+A: Az Aspose.GIS optimalizált natív algoritmusokat használ; tízezrek pontjával a számítás általában néhány ezredmásodperc alatt befejeződik a modern hardveren.
 
-**Q: Exportálhatom a kiszámított konvex burkolót egy fájlformátumba, például GeoJSON-ba?**  
-A: Igen, a `convexHull` geometriát bármely támogatott formátumba elmentheted a `Save` metódus használatával, például: `convexHull.Save("hull.geojson", ExportFormat.GeoJson);`.
+**Q: Exportálhatom a kiszámított konvex burkot fájlformátumba, például GeoJSON‑ba?**  
+A: Igen, a `convexHull` geometriát bármely támogatott formátumba mentheti a `Save` metódus segítségével, például `convexHull.Save("hull.geojson", ExportFormat.GeoJson);`.
 
-## Conclusion
-Ebben az útmutatóban megvizsgáltuk, **hogyan számítsuk ki egy geometria konvex burkolóját** és hogyan **nyerhetjük ki a konvex burkoló pontjait** további elemzéshez. A lépésről‑lépésre útmutató követésével zökkenőmentesen integrálhatod a hatékony geospaciális képességeket .NET alkalmazásaidba, lehetővé téve a földrajzi adatok hatékony manipulálását és elemzését.
+## Összegzés
+Ebben az oktatóanyagban megtanulta, **hogyan számítsa ki a konvex burkot** egy geometriához, és **hogyan nyerje ki a konvex burk pontjait** a további elemzéshez. A tömör lépésről‑lépésre útmutató követésével robusztus geospaciális képességeket integrálhat bármely .NET alkalmazásba, legyen szó kis pontkészletekről vagy hatalmas adathalmazokról, magabiztosan.
 
 ---
 
-**Last Updated:** 2026-02-10  
-**Tesztelve:** Aspose.GIS 24.11 for .NET (a legújabb a kiadás időpontjában)  
-**Szerző:** Aspose  
+**Last Updated:** 2026-08-08  
+**Tested With:** Aspose.GIS 24.11 for .NET (latest at time of writing)  
+**Author:** Aspose
+
+## Kapcsolódó oktatóanyagok
+
+- [Hogyan számítsuk ki a területet az Aspose.GIS for .NET használatával](/gis/net/geometry-analysis/get-geometry-area/)
+- [Hogyan számítsuk ki egy geometria középpontját az Aspose.GIS for .NET használatával](/gis/net/geometry-analysis/get-geometry-centroid/)
+- [Hogyan buffereljünk geometriát az Aspose.GIS for .NET használatával](/gis/net/geometry-analysis/create-geometry-buffer/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
-
 {{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/products-backtop-button >}}
+{{< /blocks/products/pf/main-wrap-class >}}

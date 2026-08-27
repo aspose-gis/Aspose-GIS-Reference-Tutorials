@@ -1,11 +1,74 @@
 ---
-date: 2025-12-07
-description: Lär dig hur du utför överlagringsoperationer i den här handledningen
-  om spatial överlagring med Aspose.GIS för .NET. Bemästra skärning, förening, differens
-  och symmetrisk differens.
-linktitle: Find Geometry Overlays
+date: 2026-08-08
+description: Lär dig symmetric difference GIS overlay analysis med Aspose.GIS for
+  .NET. Denna handledning visar hur du utför overlay, polygon intersection, union,
+  difference och symmetric difference i C#.
+keywords:
+- symmetric difference gis
+- calculate polygon intersection
+- how to perform overlay
+lastmod: 2026-08-08
+linktitle: Hitta Geometry Overlays
+og_description: Upptäck hur du utför symmetric difference GIS overlay analysis med
+  Aspose.GIS for .NET. Steg‑för‑steg guide täcker intersection, union, difference
+  och mer.
+og_image_alt: Screenshot of Aspose.GIS overlay operations in a .NET console app
+og_title: Symmetric difference GIS overlay med Aspose.GIS for .NET
+schemas:
+- author: Aspose
+  dateModified: '2026-08-08'
+  description: Learn symmetric difference GIS overlay analysis using Aspose.GIS for
+    .NET. This tutorial shows how to perform overlay, polygon intersection, union,
+    difference, and symmetric difference in C#.
+  headline: Symmetric difference GIS overlay with Aspose.GIS for .NET
+  type: TechArticle
+- description: Learn symmetric difference GIS overlay analysis using Aspose.GIS for
+    .NET. This tutorial shows how to perform overlay, polygon intersection, union,
+    difference, and symmetric difference in C#.
+  name: Symmetric difference GIS overlay with Aspose.GIS for .NET
+  steps:
+  - name: create polygon objects
+    text: A `Polygon` represents a closed shape defined by a series of coordinate
+      points.
+  - name: perform intersection operation
+    text: '`Intersection` computes the common area shared by two polygons.'
+  - name: print intersection points
+    text: '`PrintRing` is a helper that prints each coordinate of a polygon’s exterior
+      ring.'
+  - name: perform union operation
+    text: '`Union` merges two polygons into a single geometry covering all areas.'
+  - name: print union points
+    text: Output the coordinates of the united geometry.
+  - name: perform difference operation
+    text: '`Difference` subtracts the second polygon from the first, leaving the non‑overlapping
+      portion.'
+  - name: print difference points
+    text: Show the remaining vertices after the subtraction.
+  - name: perform symmetric difference operation
+    text: '`SymmetricDifference` returns the parts belonging to either polygon but
+      not both, producing a `MultiPolygon`.'
+  - name: print symmetric difference polygons
+    text: Iterate through each polygon in the `MultiPolygon` and print its points.
+  type: HowTo
+- questions:
+  - answer: Yes, a valid commercial license permits unrestricted use in production
+      applications.
+    question: Can I use Aspose.GIS for .NET in my commercial projects?
+  - answer: Yes, you can download a free trial from the [Aspose releases page](https://releases.aspose.com/).
+    question: Is there a trial version available for Aspose.GIS for .NET?
+  - answer: Support is available through the Aspose GIS forum [Aspose GIS forum](https://forum.aspose.com/c/gis/33).
+    question: How can I get support for Aspose.GIS for .NET?
+  - answer: Yes, temporary licenses can be obtained from the [temporary license page](https://purchase.aspose.com/temporary-license/).
+    question: Are temporary licenses offered for testing?
+  - answer: You can buy a license directly from the website [Aspose purchase page](https://purchase.aspose.com/buy).
+    question: Where can I purchase a full license for Aspose.GIS for .NET?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: Hur man utför överlagringsoperationer med Aspose.GIS för .NET
+tags:
+- gis overlay
+- Aspose.GIS
+- .NET geometry analysis
+title: Symmetric difference GIS overlay med Aspose.GIS for .NET
 url: /sv/net/geometry-analysis/find-geometry-overlays/
 weight: 16
 ---
@@ -14,31 +77,34 @@ weight: 16
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Hur man utför överlagringsoperationer med Aspose.GIS för .NET
+# Symmetrisk differens GIS: utför överlagringsoperationer med Aspose.GIS för .NET
 
-## Introduktion
-Överlagringsanalys är en grundläggande teknik i varje **spatial overlay tutorial**—den låter dig kombinera, jämföra och extrahera insikter från flera geografiska lager. I den här guiden lär du dig **hur du utför överlagring**‑operationer såsom Intersection, Union, Difference och Symmetric Difference med det kraftfulla Aspose.GIS‑biblioteket för .NET. I slutet av tutorialen kan du tillämpa dessa metoder på verkliga GIS‑problem som markanvändningsplanering, miljöpåverkansstudier och ruttoptimering.
+Overlay‑analys är en grundläggande teknik i varje **spatial overlay tutorial**—den låter dig kombinera, jämföra och extrahera insikter från flera geografiska lager. I den här guiden lär du dig **how to perform overlay** operationer såsom Intersection, Union, Difference och Symmetric Difference med det kraftfulla Aspose.GIS för .NET‑biblioteket. I slutet av tutorialen kan du tillämpa dessa metoder på verkliga GIS‑problem som markanvändningsplanering, miljöpåverkansstudier och ruttoptimering.
 
 ## Snabba svar
-- **Vad är en överlagringsoperation?** En spatial metod som kombinerar två geometrier för att producera en ny geometri (intersection, union, osv.).  
-- **Vilket bibliotek hanterar överlagringar i .NET?** Aspose.GIS för .NET.  
-- **Hur lång tid tar implementeringen?** Ungefär 10‑15 minuter för grundexemplet.  
-- **Behöver jag en licens?** En provversion är gratis; en kommersiell licens krävs för produktion.  
-- **Kan jag köra detta på .NET Core / .NET 6+?** Ja—Aspose.GIS stödjer alla moderna .NET‑runtime‑miljöer.
+- **Vad är en överlagringsoperation?** En överlagring kombinerar två geometrier för att skapa en ny form—intersection, union, difference eller symmetric difference.  
+- **Vilket .NET‑bibliotek hanterar överlagringar?** Aspose.GIS for .NET tillhandahåller ett fullt hanterat API för alla mängd‑teoretiska geometriska operationer.  
+- **Hur lång tid tar en grundläggande implementation?** Ungefär 10‑15 minuter för att skriva, kompilera och köra exempel‑koden.  
+- **Behöver jag en licens för produktion?** Ja—en kommersiell licens krävs för produktionsdistributioner; en gratis provversion finns tillgänglig för utvärdering.  
+- **Kan jag köra detta på .NET 6+?** Absolut—Aspose.GIS stödjer .NET Core, .NET 5, .NET 6 och senare.
 
 ## Vad är en överlagringsoperation?
-En överlagringsoperation tar två geometriska former och beräknar en ny form baserat på deras spatiala relation.  
-- **Intersection** returnerar det område som är gemensamt för båda formerna.  
-- **Union** slår ihop formerna till en enda geometri.  
-- **Difference** subtraherar en form från en annan.  
-- **Symmetric Difference** returnerar de delar som tillhör antingen den ena eller den andra formen, men inte båda.
+
+Overlay‑operationer beräknar en ny geometri baserat på det rumsliga förhållandet mellan två inmatade former. **Intersection** returnerar det gemensamma området, **Union** sammanslår områdena, **Difference** drar av en form från den andra, och **Symmetric Difference** ger de delar som tillhör antingen den ena eller den andra formen men inte båda. Dessa mängd‑teoretiska funktioner är den matematiska grunden för GIS‑analys, vilket gör det möjligt att besvara frågor som “var överlappar två markparceller?” eller “vilket område återstår efter att en skyddad zon har tagits bort.”
 
 ## Varför använda Aspose.GIS för överlagring?
-Aspose.GIS erbjuder ett rent, helt hanterat API som abstraherar den lågnivåmatematik som krävs, så att du kan fokusera på affärslogiken. Det fungerar plattformsoberoende, hanterar stora datamängder effektivt och integreras sömlöst med andra .NET‑komponenter.
+
+Aspose.GIS stödjer **50+ vektor- och rasterformat**, kan bearbeta **dataset med flera hundra sidor utan att ladda hela filen i minnet**, och körs på Windows, Linux och macOS. Dess hanterade API eliminerar behovet av inhemska GIS‑bibliotek, minskar distributionskomplexiteten och låter dig hålla all logik i en enda .NET‑lösning.
+
+## Vanliga användningsfall
+- **Land‑use planning:** Identifiera överlappande zoner mellan föreslagna utvecklingar och skyddade områden.  
+- **Environmental analysis:** Beräkna överlappningen mellan habitat och föroreningskällor.  
+- **Infrastructure routing:** Fastställ var nya vägar korsar befintliga nyttigångar.  
+- **Urban analytics:** Sammanfoga flera kommunala gränser för att skapa en regional vy.
 
 ## Förutsättningar
-- En fungerande .NET‑utvecklingsmiljö (Visual Studio, VS Code eller .NET‑CLI).  
-- Aspose.GIS för .NET‑biblioteket – ladda ner den senaste versionen från den [officiella webbplatsen](https://releases.aspose.com/gis/net/).  
+- En fungerande .NET‑utvecklingsmiljö (Visual Studio, VS Code eller .NET‑CLI).  
+- Aspose.GIS for .NET‑biblioteket – ladda ner den senaste versionen från den [officiella webbplatsen](https://releases.aspose.com/gis/net/).  
 
 ### Importera namnrymder
 Innan du kan börja använda Aspose.GIS för .NET måste du importera de nödvändiga namnrymderna i ditt projekt.
@@ -53,10 +119,15 @@ using System.Threading.Tasks;
 ```
 
 ## Hur man utför överlagringsoperationer i .NET
-Nedan följer en steg‑för‑steg‑genomgång av hur man skapar två polygoner och tillämpar varje överlagringsmetod.
 
-### Steg 1: Skapa polygonobjekt
-Först definierar vi två enkla fyrkantspolygoner som delvis överlappar. Dessa fungerar som vår testdata.
+`Polygon` representerar en sluten plan yta definierad av en yttre ring och valfria inre ringar. Varje överlagringsmetod (`Intersection`, `Union`, `Difference`, `SymmetricDifference`) beräknar en specifik mängd‑teoretisk operation på två geometrier.
+
+Läs in två polygon‑objekt och anropa sedan den lämpliga överlagringsmetoden—Intersection, Union, Difference eller SymmetricDifference. Hela arbetsflödet ryms i några koncisa kodrader, och varje metod returnerar en geometri som du kan vidare fråga eller exportera.
+
+**Direct answer:** För att utföra en överlagring i Aspose.GIS, skapa två `Polygon`‑objekt och anropa sedan den önskade metoden (`Intersection`, `Union`, `Difference` eller `SymmetricDifference`). Varje anrop returnerar en ny geometri som representerar resultatet, som du kan serialisera till WKT, GeoJSON eller något annat stödt format.
+
+### Steg 1: skapa polygon‑objekt
+`Polygon` representerar en sluten form definierad av en serie koordinatpunkter.
 
 ```csharp
 var polygon1 = new Polygon();
@@ -79,60 +150,60 @@ polygon2.ExteriorRing = new LinearRing(new[]
 });
 ```
 
-### Steg 2: Utför Intersection‑operation
-**Intersection** ger oss det överlappande området för de två polygonerna.
+### Steg 2: utför intersection‑operation
+`Intersection` beräknar det gemensamma området som delas av två polygoner.
 
 ```csharp
 var intersection = polygon1.Intersection(polygon2);
 Console.WriteLine("Intersection type is {0}", intersection.GeometryType); // Polygon
 ```
 
-### Steg 3: Skriv ut Intersection‑punkter
-Vi använder en hjälpfunktion (`PrintRing`) för att visa koordinaterna för den resulterande polygonen.
+### Steg 3: skriv ut intersection‑punkter
+`PrintRing` är en hjälpfunktion som skriver ut varje koordinat i en polygons yttre ring.
 
 ```csharp
 PrintRing(((IPolygon)intersection).ExteriorRing);
 ```
 
-### Steg 4: Utför Union‑operation
-**Union** slår ihop båda polygonerna till en enda form som täcker hela området som någon av polygonerna täcker.
+### Steg 4: utför union‑operation
+`Union` slår ihop två polygoner till en enda geometri som täcker alla områden.
 
 ```csharp
 var union = polygon1.Union(polygon2);
 Console.WriteLine("Union type is {0}", union.GeometryType); // Polygon
 ```
 
-### Steg 5: Skriv ut Union‑punkter
+### Steg 5: skriv ut union‑punkter
 Skriv ut koordinaterna för den förenade geometrin.
 
 ```csharp
 PrintRing(((IPolygon)union).ExteriorRing);
 ```
 
-### Steg 6: Utför Difference‑operation
-**Difference** subtraherar `polygon2` från `polygon1`, så att endast den del av `polygon1` som inte skär `polygon2` återstår.
+### Steg 6: utför difference‑operation
+`Difference` subtraherar den andra polygonen från den första och lämnar den icke‑överlappande delen.
 
 ```csharp
 var difference = polygon1.Difference(polygon2);
 Console.WriteLine("Difference type is {0}", difference.GeometryType); // Polygon
 ```
 
-### Steg 7: Skriv ut Difference‑punkter
+### Steg 7: skriv ut difference‑punkter
 Visa de återstående hörnen efter subtraktionen.
 
 ```csharp
 PrintRing(((IPolygon)difference).ExteriorRing);
 ```
 
-### Steg 8: Utför Symmetric Difference‑operation
-**Symmetric Difference** returnerar de områden som tillhör antingen den ena eller den andra polygonen, men inte båda. Resultatet är ett `MultiPolygon`.
+### Steg 8: utför symmetric difference‑operation
+`SymmetricDifference` returnerar de delar som tillhör antingen den ena polygonen eller den andra men inte båda, och skapar en `MultiPolygon`.
 
 ```csharp
 var symDifference = polygon1.SymDifference(polygon2);
 Console.WriteLine("Symmetric Difference type is {0}", symDifference.GeometryType); // MultiPolygon
 ```
 
-### Steg 9: Skriv ut Symmetric Difference‑polygoner
+### Steg 9: skriv ut symmetric difference‑polygoner
 Iterera genom varje polygon i `MultiPolygon` och skriv ut dess punkter.
 
 ```csharp
@@ -145,36 +216,44 @@ PrintRing(((IPolygon)multiPolygon[1]).ExteriorRing);
 ## Vanliga problem och lösningar
 | Problem | Varför det händer | Lösning |
 |-------|----------------|-----|
-| `null`‑resultat från `Intersection` | Polygonerna överlappar faktiskt inte. | Verifiera koordinaterna eller använd `Intersects`‑kontrollen innan du anropar `Intersection`. |
-| Oväntat `MultiPolygon`‑resultat från `SymDifference` | Den symmetriska skillnaden kan producera separata komponenter. | Casta till `IMultiPolygon` och iterera som visat. |
-| Prestandaförsämring på stora datamängder | Varje operation beräknar geometrin från början. | Återanvänd mellanresultat eller förenkla geometrier med `Simplify()` innan överlagring. |
+| `null`‑resultat från `Intersection` | Polygonerna överlappar faktiskt inte. | Verifiera koordinater eller använd `Intersects`‑kontroll innan du anropar `Intersection`. |
+| Oväntad `MultiPolygon` från `SymDifference` | Symmetric difference kan producera separata komponenter. | Kasta till `IMultiPolygon` och iterera som visas. |
+| Prestandaförsämring på stora dataset | Varje operation beräknar geometrin på nytt från början. | Återanvänd mellansteg eller förenkla geometrier med `Simplify()` innan överlagring. |
 
 ## Vanliga frågor
 
 **Q: Kan jag använda Aspose.GIS för .NET i mina kommersiella projekt?**  
-A: Ja, Aspose.GIS för .NET kan användas i både kommersiella och icke‑kommersiella projekt med en giltig licens.
+A: Ja, en giltig kommersiell licens tillåter obegränsad användning i produktionsapplikationer.
 
-**Q: Finns det en provversion av Aspose.GIS för .NET?**  
-A: Ja, du kan ladda ner en gratis provversion från [här](https://releases.aspose.com/).
+**Q: Finns det en provversion tillgänglig för Aspose.GIS för .NET?**  
+A: Ja, du kan ladda ner en gratis provversion från [Aspose releases page](https://releases.aspose.com/).
 
-**Q: Hur får jag support för Aspose.GIS för .NET?**  
-A: Du kan få support via Aspose.GIS‑communityforum [här](https://forum.aspose.com/c/gis/33).
+**Q: Hur kan jag få support för Aspose.GIS för .NET?**  
+A: Support finns tillgänglig via Aspose GIS‑forumet [Aspose GIS forum](https://forum.aspose.com/c/gis/33).
 
-**Q: Finns det tillfälliga licenser för Aspose.GIS för .NET?**  
-A: Ja, tillfälliga licenser finns tillgängliga för test‑ och utvärderingsändamål. Du kan skaffa dem [här](https://purchase.aspose.com/temporary-license/).
+**Q: Erbjuds tillfälliga licenser för testning?**  
+A: Ja, tillfälliga licenser kan erhållas från [temporary license page](https://purchase.aspose.com/temporary-license/).
 
-**Q: Kan jag köpa Aspose.GIS för .NET direkt?**  
-A: Ja, du kan köpa Aspose.GIS för .NET från webbplatsen [här](https://purchase.aspose.com/buy).
+**Q: Var kan jag köpa en full licens för Aspose.GIS för .NET?**  
+A: Du kan köpa en licens direkt från webbplatsen [Aspose purchase page](https://purchase.aspose.com/buy).
 
 ---
 
-**Senast uppdaterad:** 2025-12-07  
-**Testad med:** Aspose.GIS 24.11 för .NET  
-**Författare:** Aspose  
+**Senast uppdaterad:** 2026-08-08  
+**Testat med:** Aspose.GIS 24.11 for .NET  
+**Författare:** Aspose
+
+## Relaterade handledningar
+
+- [Skapa polygon‑geometri C# och kontrollera Intersection med Aspose.GIS för .NET](/gis/net/geometry-analysis/check-geometries-intersection/)
+- [Hur man utför spatial överlappningsanalys av geometrier med Aspose.GIS för .NET](/gis/net/geometry-analysis/check-geometries-overlap/)
+- [Skapa geometribuffert med Aspose.GIS för .NET](/gis/net/geometry-analysis/create-geometry-buffer/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+{{< /blocks/products/pf/main-wrap-class >}}

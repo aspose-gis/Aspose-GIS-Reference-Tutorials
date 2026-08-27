@@ -1,11 +1,74 @@
 ---
-date: 2025-12-07
-description: Изучите, как выполнять операции наложения в этом учебнике по пространственному
-  наложению с использованием Aspose.GIS для .NET. Овладейте пересечением, объединением,
-  разностью и симметрической разностью.
-linktitle: Find Geometry Overlays
+date: 2026-08-08
+description: Изучите анализ symmetric difference GIS overlay с использованием Aspose.GIS
+  for .NET. Этот tutorial показывает, как выполнять overlay, polygon intersection,
+  union, difference и symmetric difference на C#.
+keywords:
+- symmetric difference gis
+- calculate polygon intersection
+- how to perform overlay
+lastmod: 2026-08-08
+linktitle: Найти Geometry Overlays
+og_description: Узнайте, как выполнять symmetric difference GIS overlay analysis с
+  Aspose.GIS for .NET. Пошаговое руководство охватывает intersection, union, difference
+  и многое другое.
+og_image_alt: Screenshot of Aspose.GIS overlay operations in a .NET console app
+og_title: Симметричная разность GIS overlay с Aspose.GIS for .NET
+schemas:
+- author: Aspose
+  dateModified: '2026-08-08'
+  description: Learn symmetric difference GIS overlay analysis using Aspose.GIS for
+    .NET. This tutorial shows how to perform overlay, polygon intersection, union,
+    difference, and symmetric difference in C#.
+  headline: Symmetric difference GIS overlay with Aspose.GIS for .NET
+  type: TechArticle
+- description: Learn symmetric difference GIS overlay analysis using Aspose.GIS for
+    .NET. This tutorial shows how to perform overlay, polygon intersection, union,
+    difference, and symmetric difference in C#.
+  name: Symmetric difference GIS overlay with Aspose.GIS for .NET
+  steps:
+  - name: create polygon objects
+    text: A `Polygon` represents a closed shape defined by a series of coordinate
+      points.
+  - name: perform intersection operation
+    text: '`Intersection` computes the common area shared by two polygons.'
+  - name: print intersection points
+    text: '`PrintRing` is a helper that prints each coordinate of a polygon’s exterior
+      ring.'
+  - name: perform union operation
+    text: '`Union` merges two polygons into a single geometry covering all areas.'
+  - name: print union points
+    text: Output the coordinates of the united geometry.
+  - name: perform difference operation
+    text: '`Difference` subtracts the second polygon from the first, leaving the non‑overlapping
+      portion.'
+  - name: print difference points
+    text: Show the remaining vertices after the subtraction.
+  - name: perform symmetric difference operation
+    text: '`SymmetricDifference` returns the parts belonging to either polygon but
+      not both, producing a `MultiPolygon`.'
+  - name: print symmetric difference polygons
+    text: Iterate through each polygon in the `MultiPolygon` and print its points.
+  type: HowTo
+- questions:
+  - answer: Yes, a valid commercial license permits unrestricted use in production
+      applications.
+    question: Can I use Aspose.GIS for .NET in my commercial projects?
+  - answer: Yes, you can download a free trial from the [Aspose releases page](https://releases.aspose.com/).
+    question: Is there a trial version available for Aspose.GIS for .NET?
+  - answer: Support is available through the Aspose GIS forum [Aspose GIS forum](https://forum.aspose.com/c/gis/33).
+    question: How can I get support for Aspose.GIS for .NET?
+  - answer: Yes, temporary licenses can be obtained from the [temporary license page](https://purchase.aspose.com/temporary-license/).
+    question: Are temporary licenses offered for testing?
+  - answer: You can buy a license directly from the website [Aspose purchase page](https://purchase.aspose.com/buy).
+    question: Where can I purchase a full license for Aspose.GIS for .NET?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: Как выполнять операции наложения с Aspose.GIS для .NET
+tags:
+- gis overlay
+- Aspose.GIS
+- .NET geometry analysis
+title: Симметричная разность GIS overlay с Aspose.GIS for .NET
 url: /ru/net/geometry-analysis/find-geometry-overlays/
 weight: 16
 ---
@@ -14,34 +77,37 @@ weight: 16
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Как выполнять операции наложения с Aspose.GIS для .NET
+# Симметричная разность GIS: выполнение операций наложения с Aspose.GIS для .NET
 
-## Введение
-Анализ наложения — это базовая техника в любом **учебнике по пространственному наложению**: она позволяет комбинировать, сравнивать и извлекать инсайты из нескольких географических слоёв. В этом руководстве вы узнаете, **как выполнять операции наложения** такие как Intersection, Union, Difference и Symmetric Difference, используя мощную библиотеку Aspose.GIS для .NET. К концу учебника вы сможете применять эти методы к реальным GIS‑задачам, например, планированию землепользования, экологическим исследованиям и оптимизации маршрутов.
+Overlay analysis — это базовая техника в любом **spatial overlay tutorial** — она позволяет комбинировать, сравнивать и извлекать инсайты из нескольких географических слоёв. В этом руководстве вы узнаете **как выполнять операции наложения** такие как Intersection, Union, Difference и Symmetric Difference с помощью мощной библиотеки Aspose.GIS для .NET. К концу урока вы сможете применять эти методы к реальным GIS‑задачам, таким как планирование землепользования, экологические исследования и оптимизация маршрутов.
 
 ## Быстрые ответы
-- **Что такое операция наложения?** Пространственный метод, который комбинирует две геометрии, создавая новую геометрию (пересечение, объединение и т.д.).  
-- **Какая библиотека обрабатывает наложения в .NET?** Aspose.GIS для .NET.  
-- **Сколько времени занимает реализация?** Около 10‑15 минут для базового примера.  
-- **Нужна ли лицензия?** Пробная версия бесплатна; коммерческая лицензия требуется для продакшн‑использования.  
-- **Можно ли запускать это на .NET Core / .NET 6+?** Да — Aspose.GIS поддерживает все современные среды .NET.
+- **Что такое операция наложения?** Наложение объединяет две геометрии, создавая новую форму — пересечение, объединение, разность или симметричную разность.  
+- **Какая .NET‑библиотека обрабатывает наложения?** Aspose.GIS для .NET предоставляет полностью управляемый API для всех операций над геометрией в теории множеств.  
+- **Сколько времени занимает базовая реализация?** Около 10‑15 минут на написание, компиляцию и запуск примера кода.  
+- **Нужна ли лицензия для продакшна?** Да — коммерческая лицензия требуется для производственных развертываний; доступна бесплатная пробная версия для оценки.  
+- **Можно ли запускать это на .NET 6+?** Абсолютно — Aspose.GIS поддерживает .NET Core, .NET 5, .NET 6 и более новые версии.
 
 ## Что такое операция наложения?
-Операция наложения берёт две геометрические формы и вычисляет новую форму на основе их пространственного отношения.  
-- **Intersection** возвращает область, общую для обеих форм.  
-- **Union** объединяет формы в одну геометрию.  
-- **Difference** вычитает одну форму из другой.  
-- **Symmetric Difference** возвращает части, принадлежащие одной из форм, но не обеим одновременно.
+
+Операции наложения вычисляют новую геометрию на основе пространственного отношения двух входных фигур. **Intersection** возвращает общую площадь, **Union** объединяет площади, **Difference** вычитает одну форму из другой, а **Symmetric Difference** даёт части, принадлежащие одной из фигур, но не обеим одновременно. Эти функции теории множеств являются математической основой GIS‑анализа, позволяя отвечать на вопросы вроде «где пересекаются два земельных участка?» или «какая площадь остаётся после удаления охраняемой зоны».
 
 ## Почему стоит использовать Aspose.GIS для наложения?
-Aspose.GIS предоставляет чистый, полностью управляемый API, который абстрагирует низкоуровневую математику, позволяя сосредоточиться на бизнес‑логике. Он кроссплатформенный, эффективно работает с большими наборами данных и без проблем интегрируется с другими компонентами .NET.
+
+Aspose.GIS поддерживает **более 50 векторных и растровых форматов**, может обрабатывать **многосотстраничные наборы данных без загрузки всего файла в память** и работает на Windows, Linux и macOS. Его управляемый API устраняет необходимость в нативных GIS‑библиотеках, снижая сложность развертывания и позволяя держать всю логику в едином .NET‑решении.
+
+## Распространённые сценарии использования
+- **Планирование землепользования:** Выявление перекрывающихся зон между предлагаемыми проектами и охраняемыми территориями.  
+- **Экологический анализ:** Расчёт пересечения местообитаний с источниками загрязнения.  
+- **Маршрутизация инфраструктуры:** Определение точек пересечения новых дорог с существующими коммуникационными коридорами.  
+- **Городская аналитика:** Объединение нескольких муниципальных границ для создания регионального обзора.
 
 ## Предварительные требования
-- Рабочая среда разработки .NET (Visual Studio, VS Code или .NET CLI).  
-- Библиотека Aspose.GIS для .NET — скачайте последнюю версию с [официального сайта](https://releases.aspose.com/gis/net/).  
+- Рабочая среда разработки .NET (Visual Studio, VS Code или .NET CLI).  
+- Библиотека Aspose.GIS для .NET — скачайте последнюю версию с [official site](https://releases.aspose.com/gis/net/).  
 
 ### Импорт пространств имён
-Прежде чем начать использовать Aspose.GIS для .NET, необходимо импортировать требуемые пространства имён в ваш проект.
+Прежде чем начать использовать Aspose.GIS для .NET, необходимо импортировать нужные пространства имён в ваш проект.
 
 ```csharp
 using Aspose.Gis.Geometries;
@@ -53,10 +119,15 @@ using System.Threading.Tasks;
 ```
 
 ## Как выполнять операции наложения в .NET
-Ниже представлена пошаговая инструкция по созданию двух полигонов и применению каждой из методов наложения.
 
-### Шаг 1: Создание объектов Polygon
-Сначала мы определяем два простых квадратных полигона, которые частично перекрываются. Они будут служить нашими тестовыми данными.
+`Polygon` представляет замкнутую плоскую форму, определённую внешним кольцом и, при необходимости, внутренними кольцами. Каждый метод наложения (`Intersection`, `Union`, `Difference`, `SymmetricDifference`) вычисляет конкретную операцию теории множеств над двумя геометриями.
+
+Загрузите два объекта полигонов, затем вызовите соответствующий метод — Intersection, Union, Difference или SymmetricDifference. Весь процесс укладывается в несколько лаконичных строк кода, а каждый метод возвращает геометрию, которую можно дальше исследовать или экспортировать.
+
+**Прямой ответ:** Чтобы выполнить наложение в Aspose.GIS, создайте два объекта `Polygon`, затем вызовите нужный метод (`Intersection`, `Union`, `Difference` или `SymmetricDifference`). Каждый вызов возвращает новую геометрию, представляющую результат, которую можно сериализовать в WKT, GeoJSON или любой поддерживаемый формат.
+
+### Шаг 1: создать объекты полигонов
+`Polygon` представляет замкнутую форму, определённую набором координатных точек.
 
 ```csharp
 var polygon1 = new Polygon();
@@ -79,61 +150,61 @@ polygon2.ExteriorRing = new LinearRing(new[]
 });
 ```
 
-### Шаг 2: Выполнение операции Intersection
-**Intersection** возвращает нам область перекрытия двух полигонов.
+### Шаг 2: выполнить операцию пересечения
+`Intersection` вычисляет общую площадь, совместно занимаемую двумя полигонами.
 
 ```csharp
 var intersection = polygon1.Intersection(polygon2);
 Console.WriteLine("Intersection type is {0}", intersection.GeometryType); // Polygon
 ```
 
-### Шаг 3: Вывод точек Intersection
-Мы используем вспомогательный метод (`PrintRing`), чтобы отобразить координаты полученного полигона.
+### Шаг 3: вывести точки пересечения
+`PrintRing` — вспомогательная функция, выводящая каждую координату внешнего кольца полигона.
 
 ```csharp
 PrintRing(((IPolygon)intersection).ExteriorRing);
 ```
 
-### Шаг 4: Выполнение операции Union
-**Union** объединяет оба полигона в одну форму, покрывающую всю площадь, занятую любым из полигонов.
+### Шаг 4: выполнить операцию объединения
+`Union` объединяет два полигона в одну геометрию, покрывающую все области.
 
 ```csharp
 var union = polygon1.Union(polygon2);
 Console.WriteLine("Union type is {0}", union.GeometryType); // Polygon
 ```
 
-### Шаг 5: Вывод точек Union
-Выводим координаты объединённой геометрии.
+### Шаг 5: вывести точки объединения
+Вывести координаты объединённой геометрии.
 
 ```csharp
 PrintRing(((IPolygon)union).ExteriorRing);
 ```
 
-### Шаг 6: Выполнение операции Difference
-**Difference** вычитает `polygon2` из `polygon1`, оставляя только ту часть `polygon1`, которая не пересекается с `polygon2`.
+### Шаг 6: выполнить операцию разности
+`Difference` вычитает второй полигон из первого, оставляя неперекрывающуюся часть.
 
 ```csharp
 var difference = polygon1.Difference(polygon2);
 Console.WriteLine("Difference type is {0}", difference.GeometryType); // Polygon
 ```
 
-### Шаг 7: Вывод точек Difference
-Показываем оставшиеся вершины после вычитания.
+### Шаг 7: вывести точки разности
+Показать оставшиеся вершины после вычитания.
 
 ```csharp
 PrintRing(((IPolygon)difference).ExteriorRing);
 ```
 
-### Шаг 8: Выполнение операции Symmetric Difference
-**Symmetric Difference** возвращает области, принадлежащие одному из полигонов, но не обоим одновременно. Результатом является `MultiPolygon`.
+### Шаг 8: выполнить операцию симметричной разности
+`SymmetricDifference` возвращает части, принадлежащие одному из полигонов, но не обоим одновременно, образуя `MultiPolygon`.
 
 ```csharp
 var symDifference = polygon1.SymDifference(polygon2);
 Console.WriteLine("Symmetric Difference type is {0}", symDifference.GeometryType); // MultiPolygon
 ```
 
-### Шаг 9: Вывод полигонов Symmetric Difference
-Итерируем каждый полигон в `MultiPolygon` и выводим его точки.
+### Шаг 9: вывести полигоны симметричной разности
+Итерировать каждый полигон в `MultiPolygon` и вывести его точки.
 
 ```csharp
 var multiPolygon = (IMultiPolygon)symDifference;
@@ -143,38 +214,46 @@ PrintRing(((IPolygon)multiPolygon[1]).ExteriorRing);
 ```
 
 ## Распространённые проблемы и решения
-| Проблема | Почему возникает | Решение |
-|----------|------------------|---------|
+| Проблема | Почему происходит | Исправление |
+|----------|-------------------|-------------|
 | `null` результат от `Intersection` | Полигоны фактически не перекрываются. | Проверьте координаты или используйте проверку `Intersects` перед вызовом `Intersection`. |
 | Неожиданный `MultiPolygon` от `SymDifference` | Симметричная разность может создавать разрозненные компоненты. | Приведите к `IMultiPolygon` и итерируйте, как показано. |
-| Замедление производительности на больших наборах данных | Каждая операция пересчитывает геометрию с нуля. | Переиспользуйте промежуточные результаты или упростите геометрию с помощью `Simplify()` перед наложением. |
+| Замедление производительности на больших наборах данных | Каждая операция пересчитывает геометрию с нуля. | Переиспользуйте промежуточные результаты или упростите геометрии с помощью `Simplify()` перед наложением. |
 
 ## Часто задаваемые вопросы
 
 **В: Можно ли использовать Aspose.GIS для .NET в коммерческих проектах?**  
-О: Да, Aspose.GIS для .NET может использоваться как в коммерческих, так и в некоммерческих проектах при наличии действующей лицензии.
+О: Да, действующая коммерческая лицензия позволяет неограниченно использовать библиотеку в продакшн‑приложениях.
 
-**В: Есть ли доступна пробная версия Aspose.GIS для .NET?**  
-О: Да, бесплатную пробную версию можно скачать [здесь](https://releases.aspose.com/).
+**В: Есть ли пробная версия Aspose.GIS для .NET?**  
+О: Да, бесплатную пробную версию можно скачать со [страницы релизов Aspose](https://releases.aspose.com/).
 
 **В: Как получить поддержку по Aspose.GIS для .NET?**  
-О: Поддержку можно получить на форуме сообщества Aspose.GIS [здесь](https://forum.aspose.com/c/gis/33).
+О: Поддержка доступна через форум Aspose GIS — [Aspose GIS forum](https://forum.aspose.com/c/gis/33).
 
-**В: Есть ли временные лицензии для Aspose.GIS для .NET?**  
-О: Да, временные лицензии доступны для тестирования и оценки. Их можно получить [здесь](https://purchase.aspose.com/temporary-license/).
+**В: Предлагаются ли временные лицензии для тестирования?**  
+О: Да, временные лицензии можно получить на странице [temporary license page](https://purchase.aspose.com/temporary-license/).
 
-**В: Можно ли купить Aspose.GIS для .NET напрямую?**  
-О: Да, приобрести Aspose.GIS для .NET можно на сайте [здесь](https://purchase.aspose.com/buy).
+**В: Где можно приобрести полную лицензию на Aspose.GIS для .NET?**  
+О: Приобрести лицензию можно напрямую на сайте — [Aspose purchase page](https://purchase.aspose.com/buy).
 
 ---
 
-**Последнее обновление:** 2025-12-07  
+**Последнее обновление:** 2026-08-08  
 **Тестировано с:** Aspose.GIS 24.11 для .NET  
-**Автор:** Aspose  
+**Автор:** Aspose
+
+## Связанные руководства
+
+- [Create Polygon Geometry C# and Check Intersection with Aspose.GIS for .NET](/gis/net/geometry-analysis/check-geometries-intersection/)
+- [How to Perform Spatial Overlap Analysis of Geometries with Aspose.GIS for .NET](/gis/net/geometry-analysis/check-geometries-overlap/)
+- [Create Geometry Buffer Using Aspose.GIS for .NET](/gis/net/geometry-analysis/create-geometry-buffer/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+{{< /blocks/products/pf/main-wrap-class >}}

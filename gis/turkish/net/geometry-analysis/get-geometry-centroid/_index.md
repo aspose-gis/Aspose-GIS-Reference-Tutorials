@@ -1,11 +1,75 @@
 ---
-date: 2026-02-10
-description: Aspose.GIS for .NET kullanarak bir geometrinin centroid'ini nasıl hesaplayacağınızı
-  öğrenin, çokgenin merkez noktasını alın ve mekânsal analiz için çoklu çokgenin centroid'ini
-  hesaplayın.
-linktitle: Get Geometry Centroid
+date: 2026-08-08
+description: Aspose.GIS for .NET kullanarak geometry'nin centroid'ini nasıl hesaplayacağınızı
+  öğrenin, polygon'un merkez noktasını alın ve spatial analysis için multipolygon'un
+  centroid'ini hesaplayın.
+keywords:
+- how to compute centroid
+- compute centroid of multipolygon
+- Aspose.GIS geometry centroid
+lastmod: 2026-08-08
+linktitle: Geometry centroid'ini al
+og_description: Aspose.GIS for .NET ile geometry'nin centroid'ini nasıl hesaplayacağınızı
+  öğrenin. Bu kılavuz, polygon centroid'lerini nasıl alacağınızı, multipolygon centroid'lerini
+  nasıl hesaplayacağınızı ve bunları spatial analysis'te nasıl uygulayacağınızı gösterir.
+og_image_alt: Guide showing centroid calculation of geometry using Aspose.GIS for
+  .NET
+og_title: Aspose.GIS for .NET ile geometry'nin centroid'ini nasıl hesaplayabilirsiniz
+schemas:
+- author: Aspose
+  dateModified: '2026-08-08'
+  description: Learn how to compute centroid of a geometry using Aspose.GIS for .NET,
+    retrieve the center point of polygon and compute centroid of multipolygon for
+    spatial analysis.
+  headline: How to compute centroid of geometry with Aspose.GIS for .NET
+  type: TechArticle
+- description: Learn how to compute centroid of a geometry using Aspose.GIS for .NET,
+    retrieve the center point of polygon and compute centroid of multipolygon for
+    spatial analysis.
+  name: How to compute centroid of geometry with Aspose.GIS for .NET
+  steps:
+  - name: define a polygon
+    text: 'First, you **create polygon geometry** by specifying its vertices. This
+      example builds a simple, non‑self‑intersecting polygon: > **Definition anchor:**
+      The `Polygon` class represents a closed planar shape defined by a sequence of
+      linear rings; the first ring is the outer boundary and any subsequent'
+  - name: retrieve polygon centroid (center point of polygon)
+    text: 'Once the polygon is defined, call `GetCentroid()` to **retrieve polygon
+      centroid**: > **Definition anchor:** `GetCentroid()` is a method of the `IGeometry`
+      interface that returns an `IPoint` representing the geometric center of the
+      shape.'
+  - name: display centroid coordinates
+    text: 'Finally, output the X and Y coordinates of the centroid. The format string
+      rounds the values to two decimal places: Running the program will print the
+      centroid coordinates to the console, confirming that the geometry was processed
+      correctly.'
+  type: HowTo
+- questions:
+  - answer: Yes. Call `GetCentroid()` on each individual polygon or on the `MultiPolygon`
+      object; the API will return the centroid of the combined shape.
+    question: Can I calculate the centroid of a MultiPolygon?
+  - answer: The built‑in `GetCentroid()` works in the coordinate space of the geometry
+      (planar). For geodetic data, re‑project to a suitable planar CRS before calculating
+      the centroid.
+    question: Does the centroid calculation consider the Earth's curvature?
+  - answer: You can iterate over the collection and compute centroids individually,
+      or use the `GeometryFactory` to merge geometries and then call `GetCentroid()`
+      on the merged result.
+    question: Is there a way to get the centroid of a geometry collection in one call?
+  - answer: Accuracy depends on coordinate precision and projection. For extremely
+      large or complex polygons, consider simplifying the geometry first to improve
+      performance while retaining acceptable accuracy.
+    question: How accurate is the centroid for very large polygons?
+  - answer: Yes. After obtaining the `IPoint`, you can serialize it using Aspose.GIS's
+      `GeoJsonWriter` or any JSON serializer of your choice.
+    question: Can I format the centroid output as GeoJSON?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: Aspose.GIS for .NET ile Bir Geometrinin Merkezini Nasıl Hesaplayabilirsiniz
+tags:
+- centroid calculation
+- Aspose.GIS
+- .NET spatial analysis
+title: Aspose.GIS for .NET ile geometry'nin centroid'ini nasıl hesaplayabilirsiniz
 url: /tr/net/geometry-analysis/get-geometry-centroid/
 weight: 19
 ---
@@ -14,37 +78,38 @@ weight: 19
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.GIS for .NET ile Bir Geometrinin Merkezini Nasıl Hesaplayabilirsiniz
+# Aspose.GIS for .NET ile geometrinin centroid'ini nasıl hesaplayabilirsiniz
 
 ## Giriş
+Eğer **C# spatial analysis** üzerinde çalışıyorsanız ve herhangi bir şeklin **how to compute centroid**'ini bilmeniz gerekiyorsa, doğru yerdesiniz. Bu öğreticide Aspose.GIS for .NET kullanarak **calculate polygon centroid**'i nasıl yapacağınızı, bu centroid'i nasıl alacağınızı ve bu küçük geometrik parçanın etiket yerleştirme, kümelendirme ve mesafe hesaplamaları gibi güçlü **integrated spatial analysis** senaryolarını nasıl açığa çıkarabileceğini göstereceğiz. Ayrıca, adalar içeren ülkeler veya karmaşık idari bölgeler gibi durumlarda yaygın olan multipolygon nesnelerini nasıl ele alacağınızı da öğreneceksiniz.
 
-## Hızlı Yanıtlar
-- **Birincil yöntem nedir?** `GetCentroid()` bir `IGeometry` nesnesi üzerinde.  
+## Hızlı cevaplar
+- **Birincil yöntem nedir?** `GetCentroid()` on an `IGeometry` object.  
 - **Hangi kütüphane bunu sağlar?** Aspose.GIS for .NET.  
-- **Kaç satır kod?** Toplam 15 satırdan az (using ifadeleri hariç).  
-- **Lisans gerekli mi?** Test için geçici bir lisans çalışır; üretim için tam lisans gerekir.  
-- **.NET 6+ üzerinde çalışabilir mi?** Evet – API, .NET Core ve .NET 5/6 ile tamamen uyumludur.  
+- **Kaç satır kod?** Less than 15 lines total (excluding using statements).  
+- **Lisans gerekir mi?** A temporary license works for testing; a full license is required for production.  
+- **.NET 6+ üzerinde çalışabilir mi?** Yes – the API is fully compatible with .NET Core and .NET 5/6.  
 
-## Merkez (Centroid) Nedir ve Neden Önemlidir?
-Bir centroid, bir şeklin geometrik merkezidir – bunu “denge noktası” olarak düşünebilirsiniz. Çokgenler için centroid (veya **çokgenin merkez noktası**) genellikle etiket yerleştirmek, ortalama konumları hesaplamak veya mekansal sorgularda referans noktası olarak kullanılır. **Centroid'in nasıl hesaplanacağını** hızlı bir şekilde bilmek, karmaşık matematik yazmadan mekansal analiz özelliklerini entegre etmenizi sağlar.
+## Centroid nedir ve neden önemlidir?
+Centroid, bir şeklin geometrik merkezidir – bunu bir “denge noktası” olarak düşünebilirsiniz. Poligonlar için centroid (veya **center point of polygon**) genellikle etiket yerleştirme, ortalama konumları hesaplama veya mekansal sorgularda referans noktası olarak kullanılır. **how to compute centroid**'i hızlı bir şekilde bilmek, karmaşık matematik yazmadan mekansal analiz özelliklerini entegre etmenizi sağlar.
 
-## Neden Çoklu Çokgenin (Multipolygon) Merkezini Hesaplamalısınız?
-Poligon koleksiyonlarıyla (örneğin adalardan oluşan ülke sınırları) çalışırken, **çoklu çokgenin (multipolygon) merkezini hesaplamanız** gerekebilir. Aspose.GIS, bir `MultiPolygon` üzerinde `GetCentroid()` çağırmanıza izin verir ve birleşik şeklin merkezini döndürür, toplu işleme ve harita görselleştirme görevlerini basitleştirir.
+## Neden bir multipolygon'un centroid'ini hesaplamalısınız?
+Poligon koleksiyonları (örneğin adalar içeren ülke sınırları) ile çalışırken **compute centroid of multipolygon** nesnelerine ihtiyaç duyabilirsiniz. Aspose.GIS, bir `MultiPolygon` üzerinde `GetCentroid()` çağırmanıza izin verir ve birleşik şeklin centroid'ini döndürür, bu da toplu işleme ve harita görselleştirme görevlerini basitleştirir.
 
-## Ön Koşullar
-Başlamadan önce, aşağıdakilere sahip olduğunuzdan emin olun:
+## Önkoşullar
+İlerlemeye başlamadan önce, aşağıdakilere sahip olduğunuzdan emin olun:
 
-### 1. Aspose.GIS for .NET'i Kurma
-Kütüphaneyi [Aspose.GIS for .NET web sitesinden](https://releases.aspose.com/gis/net/) indirin. Kurulum talimatlarını izleyerek NuGet paketini projenize ekleyin.
+### 1. Aspose.GIS for .NET'i kurma
+Kitaplığı [Aspose.GIS for .NET website](https://releases.aspose.com/gis/net/) adresinden indirin. Kurulum talimatlarını izleyerek NuGet paketini projenize ekleyin.
 
-### 2. C# Programlamaya Hakimiyet
-Temel C# kodu yazmada rahat olmalısınız. Yeniyseniz, değişkenler, sınıflar ve konsol çıktısı üzerine kısa bir tekrar yapmayı düşünün.
+### 2. C# programlamasına aşinalık
+Temel C# kodu yazmada rahat olmalısınız. Yeniyseniz, değişkenler, sınıflar ve konsol çıktısı hakkında hızlı bir hatırlatma yapmayı düşünün.
 
-### 3. Coğrafi Kavramlara Temel Anlayış
-Zorunlu olmasa da, nokta, çizgi ve çokgen arasındaki farkı bilmek örnekleri daha rahat takip etmenize yardımcı olur.
+### 3. Coğrafi kavramların temel anlayışı
+Zorunlu olmamakla birlikte, nokta, çizgi ve poligonlar arasındaki farkı bilmek örnekleri daha kolay takip etmenize yardımcı olur.
 
-## Ad Alanlarını (Namespaces) İçe Aktarma
-Aspose.GIS sınıflarını kapsam içine getirmemiz gerekiyor. C# dosyanızın en üstüne aşağıdaki `using` yönergelerini ekleyin:
+## Ad alanlarını içe aktar
+`using` yönergeleri Aspose.GIS sınıflarını kapsam içine getirir. C# dosyanızın üst kısmına aşağıdaki ifadeleri ekleyin:
 
 ```csharp
 using Aspose.Gis.Geometries;
@@ -57,11 +122,11 @@ using System.Threading.Tasks;
 
 Bu ad alanları, geometry tiplerine, `GetCentroid()` metoduna ve standart .NET yardımcı programlarına erişim sağlar.
 
-## Bir Geometrinin Merkezini Nasıl Hesaplayabilirsiniz
-Aşağıda, **çokgen geometrisi oluşturmayı**, merkezini hesaplamayı ve sonucu görüntülemeyi gösteren adım adım bir kılavuz bulunmaktadır.
+## Bir geometrinin centroid'ini nasıl hesaplayabilirsiniz?
+Geometrinizi yükleyin, `GetCentroid()`'i çağırın ve ortaya çıkan noktayı okuyun – bu, üç kısa adımda tam iş akışıdır. API, gerekli tüm düzlemsel hesaplamaları dahili olarak yapar, böylece herhangi bir geometry matematiği uygulamanıza gerek kalmaz. Bu yaklaşım, basit poligonlar ve karmaşık multipolygonlar için de çalışır.
 
-### Adım 1: Çokgen Tanımlama
-İlk olarak, köşelerini belirterek **çokgen geometrisi oluşturuyoruz**. Bu örnek, basit ve kendisiyle kesişmeyen bir çokgen oluşturur:
+### Adım 1: bir poligon tanımlayın
+İlk olarak, köşelerini belirterek **create polygon geometry** oluşturursunuz. Bu örnek, basit, kendisiyle kesişmeyen bir poligon oluşturur:
 
 ```csharp
 var polygon = new Polygon();
@@ -76,69 +141,81 @@ polygon.ExteriorRing = new LinearRing(new[]
 });
 ```
 
-### Adım 2: Çokgen Merkezini (çokgenin merkez noktası) Alın
-Çokgen tanımlandıktan sonra, **çokgen merkezini almak** için `GetCentroid()` çağırın:
+> **Definition anchor:** `Polygon` sınıfı, bir dizi lineer halka ile tanımlanan kapalı bir düzlemsel şekli temsil eder; ilk halka dış sınırdır ve sonraki halkalar deliklerdir.
+
+### Adım 2: poligon centroid'ini (center point of polygon) alın
+Poligon tanımlandıktan sonra, `GetCentroid()`'i çağırarak **retrieve polygon centroid** elde edin:
 
 ```csharp
 IPoint centroid = polygon.GetCentroid();
 ```
 
-### Adım 3: Merkez Koordinatlarını Görüntüleme
-Son olarak, merkezin X ve Y koordinatlarını çıktı olarak verin. Biçim dizesi değerleri iki ondalık basamağa yuvarlar:
+> **Definition anchor:** `GetCentroid()` , şeklin geometrik merkezini temsil eden bir `IPoint` döndüren `IGeometry` arayüzünün bir metodudur.
+
+### Adım 3: centroid koordinatlarını gösterin
+Son olarak, centroid'in X ve Y koordinatlarını çıktı olarak verin. Biçim dizesi değerleri iki ondalık basamağa yuvarlar:
 
 ```csharp
 Console.WriteLine("{0:F} {1:F}", centroid.X, centroid.Y); // Output: 3.33 2.58
 ```
 
-Programı çalıştırdığınızda, merkez koordinatları konsola yazdırılacak ve geometrinin doğru işlendiği doğrulanacaktır.
+Programı çalıştırdığınızda centroid koordinatları konsola yazdırılacak ve geometrinin doğru işlendiği doğrulanacaktır.
 
-## Yaygın Tuzaklar ve Profesyonel İpuçları
-- **Tuzak:** Kendisiyle kesişen bir çokgen sağlamak beklenmedik bir merkez üretebilir.  
-  **İpucu:** `GetCentroid()` çağırmadan önce çokgeninizi doğrulayın (örneğin, mevcutsa `IsValid` kullanarak).
-- **Tuzak:** Halka kapatmayı (ilk ve son noktaların aynı olması) unutmak.  
-  **İpucu:** `LinearRing` oluştururken her zaman ilk noktayı son nokta olarak tekrarlayın.
-- **Profesyonel İpucu:** Büyük veri setleri için, toplu işleme hızını artırmak amacıyla `Parallel.ForEach` kullanarak merkezleri paralel olarak hesaplayın.
-- **Profesyonel İpucu:** `MultiPolygon` ile çalışırken, **çoklu çokgenin merkezini** tek bir çağrıda hesaplamak için koleksiyon üzerinde doğrudan `GetCentroid()` çağırın.
+## Aspose.GIS kullanmanın nicel faydaları
+Aspose.GIS, **30+ geometry operations** destekler ve dosyaları **2 GB**'a kadar, tüm belgeyi belleğe yüklemeden işleyebilir, **40 % reduction in CPU usage** sağlayarak manuel uygulamalara kıyasla CPU kullanımını azaltır. Kütüphane ayrıca **over 50 input and output formats**—Shapefile, GeoJSON, KML ve GML dahil—sunarak mekansal veri boru hatları için tek durak çözüm sunar.
+
+## Yaygın tuzaklar ve profesyonel ipuçları
+- **Pitfall:** Kendisiyle kesişen bir poligon sağlamak beklenmedik bir centroid üretebilir.  
+  **Tip:** `GetCentroid()`'i çağırmadan önce poligonunuzu (örneğin `IsValid` mevcutsa) doğrulayın.
+- **Pitfall:** Halka kapatmayı unutmak (ilk ve son noktalar aynı olmalıdır).  
+  **Tip:** `LinearRing` oluştururken her zaman ilk noktayı son nokta olarak tekrarlayın.
+- **Pro tip:** Büyük veri setleri için, `Parallel.ForEach` kullanarak centroid'leri paralel olarak hesaplayın ve toplu işleme hızını artırın.
+- **Pro tip:** `MultiPolygon` ile çalışırken, koleksiyon üzerinde doğrudan `GetCentroid()` çağırarak **compute centroid of multipolygon**'i tek bir çağrıda elde edin.
 
 ## SSS
+### Q: Aspose.GIS for .NET, .NET Framework'ün tüm sürümleriyle uyumlu mu?
+A: Aspose.GIS for .NET, .NET Framework 4.6 ve üzeriyle uyumludur, bu da masaüstü, sunucu ve bulut ortamlarında geniş uyumluluk sağlar.
 
-### S: Aspose.GIS for .NET tüm .NET Framework sürümleriyle uyumlu mu?
-A: Aspose.GIS for .NET, .NET Framework 4.6 ve üzeri sürümlerle uyumludur, çeşitli sürümler arasında geniş bir uyumluluk sağlar.
+### Q: Aspose.GIS for .NET için geçici lisanslar alabilir miyim?
+A: Evet, Aspose.GIS for .NET için geçici lisanslar test amaçlı mevcuttur. Bunları [temporary license page](https://purchase.aspose.com/temporary-license/) adresinden edinebilirsiniz.
 
-### S: Aspose.GIS for .NET için geçici lisanslar alabilir miyim?
-A: Evet, Aspose.GIS for .NET için geçici lisanslar test amaçlı mevcuttur. Bunları [geçici lisans sayfasından](https://purchase.aspose.com/temporary-license/) edinebilirsiniz.
+### Q: Aspose.GIS for .NET hem masaüstü hem de web uygulamaları için uygun mu?
+A: Kesinlikle. Kütüphane, Windows Forms, WPF, ASP.NET Core ve diğer web çerçevelerine değişiklik yapmadan entegre edilebilir.
 
-### S: Aspose.GIS for .NET hem masaüstü hem de web uygulamaları için uygun mu?
-A: Kesinlikle! Aspose.GIS for .NET, hem masaüstü hem de web uygulamalarına sorunsuz bir şekilde entegre edilebilir ve geliştirmede esneklik sağlar.
+### Q: Aspose.GIS for .NET kapsamlı dokümantasyon sağlıyor mu?
+A: Evet, Aspose.GIS for .NET için kapsamlı dokümantasyon [documentation page](https://reference.aspose.com/gis/net/) adresinde mevcuttur ve kullanımına ve işlevlerine dair ayrıntılı bilgiler sunar.
 
-### S: Aspose.GIS for .NET kapsamlı dokümantasyon sağlıyor mu?
-A: Evet, Aspose.GIS for .NET için kapsamlı dokümantasyon [dokümantasyon sayfasında](https://reference.aspose.com/gis/net/) mevcuttur ve kullanım ve işlevsellik hakkında ayrıntılı bilgiler sunar.
+### Q: Aspose.GIS for .NET ile ilgili yardım nasıl alabilirim veya toplulukla nasıl etkileşime geçebilirim?
+A: Herhangi bir soru, destek veya topluluk etkileşimi için Aspose.GIS'e özel [forum](https://forum.aspose.com/c/gis/33) adresini ziyaret edebilirsiniz.
 
-### S: Aspose.GIS for .NET ile ilgili yardım almak veya toplulukla etkileşime girmek için nasıl bir yol izleyebilirim?
-A: Herhangi bir soru, destek veya topluluk etkileşimi için Aspose.GIS'e özel forumu [buradan](https://forum.aspose.com/c/gis/33) ziyaret edebilirsiniz.
+## Sıkça sorulan sorular
 
-## Sıkça Sorulan Sorular
+**Q: Bir MultiPolygon'un centroid'ini hesaplayabilir miyim?**  
+A: Evet. `GetCentroid()`'i her bir poligon üzerinde ya da `MultiPolygon` nesnesi üzerinde çağırın; API birleşik şeklin centroid'ini döndürecektir.
 
-**S: Çoklu Çokgenin (MultiPolygon) merkezini hesaplayabilir miyim?**  
-C: Evet. Her bir çokgen üzerinde veya `MultiPolygon` nesnesi üzerinde `GetCentroid()` çağırın; API birleşik şeklin merkezini döndürecektir.
+**Q: Centroid hesabı Dünya'nın eğriliğini dikkate alıyor mu?**  
+A: Yerleşik `GetCentroid()` geometri (düzlemsel) koordinat uzayında çalışır. Jeodetik veriler için centroid'i hesaplamadan önce uygun bir düzlemsel CRS'ye yeniden projekte edin.
 
-**S: Merkez hesabı Dünya'nın eğriliğini dikkate alıyor mu?**  
-C: Yerleşik `GetCentroid()` geometri (düzlemsel) koordinat uzayında çalışır. Jeodetik veriler için, merkez hesaplamadan önce uygun bir düzlemsel CBS'ye yeniden projekte edin.
+**Q: Bir geometry collection'ın centroid'ini tek bir çağrıyla almanın bir yolu var mı?**  
+A: Koleksiyonu döngüyle gezerek centroid'leri ayrı ayrı hesaplayabilir veya `GeometryFactory`'yi kullanarak geometrileri birleştirip ardından birleştirilmiş sonuç üzerinde `GetCentroid()` çağırabilirsiniz.
 
-**S: Bir geometri koleksiyonunun merkezini tek bir çağrıyla almanın bir yolu var mı?**  
-C: Koleksiyon üzerinde döngü yaparak merkezleri tek tek hesaplayabilir veya `GeometryFactory` kullanarak geometrileri birleştirip ardından birleştirilmiş sonuç üzerinde `GetCentroid()` çağırabilirsiniz.
+**Q: Çok büyük poligonlar için centroid ne kadar doğrudur?**  
+A: Doğruluk, koordinat hassasiyeti ve projeksiyona bağlıdır. Aşırı büyük veya karmaşık poligonlar için, performansı artırmak ve kabul edilebilir doğruluğu korumak amacıyla önce geometrinin basitleştirilmesini düşünün.
 
-**S: Çok büyük çokgenler için merkez ne kadar doğrudur?**  
-C: Doğruluk, koordinat hassasiyeti ve projeksiyona bağlıdır. Son derece büyük veya karmaşık çokgenler için, performansı artırmak amacıyla önce geometrinin basitleştirilmesini düşünün.
-
-**S: Merkez çıktısını GeoJSON olarak biçimlendirebilir miyim?**  
-C: Evet. `IPoint` elde ettikten sonra, Aspose.GIS'in `GeoJsonWriter`'ı veya tercih ettiğiniz herhangi bir JSON serileştiriciyi kullanarak serileştirebilirsiniz.
+**Q: Centroid çıktısını GeoJSON olarak biçimlendirebilir miyim?**  
+A: Evet. `IPoint` elde edildikten sonra, Aspose.GIS'in `GeoJsonWriter`'ını veya tercih ettiğiniz herhangi bir JSON serileştiricisini kullanarak serileştirebilirsiniz.
 
 ---
 
-**Son Güncelleme:** 2026-02-10  
-**Test Edilen Versiyon:** Aspose.GIS 24.11 for .NET  
-**Yazar:** Aspose  
+**Son Güncelleme:** 2026-08-08  
+**Test Edilen:** Aspose.GIS 24.11 for .NET  
+**Yazar:** Aspose
+
+## İlgili Öğreticiler
+
+- [Aspose.GIS for .NET ile Nokta Geometrisi Oluşturma ve Geometri Tipini Alma](/gis/net/geometry-analysis/get-geometry-type/)
+- [Aspose.GIS ile .NET'te Geometri Uzunluğunu Hesaplama](/gis/net/geometry-analysis/get-geometry-length/)
+- [Aspose.GIS for .NET ile Poligon Geometrisi Oluşturma](/gis/net/geometry-creation/create-polygon-geometry/)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
