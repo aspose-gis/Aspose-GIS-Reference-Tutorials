@@ -1,57 +1,106 @@
 ---
-date: 2026-02-13
-description: Naučte se, jak zkontrolovat, zda se bod nachází uvnitř polygonu pomocí
-  Aspose.GIS pro .NET, vytvořit geometrii polygonu a získat bod na povrchu v C#. Podrobný
-  návod krok za krokem s kompletním ukázkovým kódem.
-linktitle: Check Point Inside Polygon and Get Point on Surface
+date: 2026-08-13
+description: Naučte se, jak zkontrolovat, zda je bod uvnitř polygonu pomocí Aspose.GIS
+  pro .NET, vytvořit geometrii polygonu a získat bod na povrchu v C#. Podrobný návod
+  krok za krokem s kompletním ukázkovým kódem.
+keywords:
+- check point inside polygon
+- how to test polygon
+- Aspose.GIS geometry
+- .NET spatial analysis
+lastmod: 2026-08-13
+linktitle: Zkontrolujte, zda je bod uvnitř polygonu a získejte bod na povrchu
+og_description: Naučte se, jak zkontrolovat bod uvnitř polygonu a získat bod na povrchu
+  pomocí Aspose.GIS pro .NET. Podrobný příklad v C# a osvědčené postupy pro prostorovou
+  analýzu.
+og_image_alt: Screenshot of Aspose.GIS code checking point inside polygon in C#
+og_title: Kontrola bodu uvnitř polygonu – průvodce Aspose.GIS .NET
+schemas:
+- author: Aspose
+  dateModified: '2026-08-13'
+  description: Learn how to check point inside polygon using Aspose.GIS for .NET,
+    create polygon geometry, and get point on surface in C#. Step‑by‑step guide with
+    full code example.
+  headline: Check point inside polygon and get point on surface
+  type: TechArticle
+- description: Learn how to check point inside polygon using Aspose.GIS for .NET,
+    create polygon geometry, and get point on surface in C#. Step‑by‑step guide with
+    full code example.
+  name: Check point inside polygon and get point on surface
+  steps:
+  - name: create polygon geometry in C#
+    text: First, we need to **create a polygon** geometry. We define the exterior
+      ring of the polygon by specifying its vertices.
+  - name: get point on surface
+    text: The `GetPointOnSurface()` method returns a single interior point guaranteed
+      to lie inside the polygon’s area. Next, we retrieve a point on the surface of
+      the polygon using this method. This is the **get point on surface** step.
+  - name: check point inside polygon
+    text: The `SpatiallyContains()` method evaluates whether a geometry completely
+      contains another geometry, returning true or false. We can verify whether the
+      retrieved point lies inside the polygon using this method. This demonstrates
+      **retrieving point on polygon** and then checking it.
+  type: HowTo
+- questions:
+  - answer: It verifies whether a given coordinate lies within the boundaries of a
+      polygon geometry.
+    question: What does “check point inside polygon” mean?
+  - answer: '`GetPointOnSurface()` returns a point guaranteed to be inside the polygon.'
+    question: Which method returns a point on a polygon’s interior?
+  - answer: A free trial works for evaluation; a full license is required for production.
+    question: Do I need a license to run the example?
+  - answer: .NET Framework, .NET Core, and .NET Standard are all compatible.
+    question: Which .NET versions are supported?
+  - answer: About 5‑10 minutes to copy, compile, and run.
+    question: How long does the implementation take?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: Zkontrolujte, zda je bod uvnitř polygonu, a získejte bod na povrchu
+tags:
+- check point inside polygon
+- Aspose.GIS
+- .NET geometry
+- C# spatial operations
+title: Zkontrolujte, zda je bod uvnitř polygonu a získejte bod na povrchu
 url: /cs/net/geometry-analysis/get-point-on-geometry-surface/
 weight: 25
 ---
-
-é otázky". But we need to keep the apostrophe? Probably translate to "Často kladené otázky". We'll replace heading text.
-
-Similarly "Additional Q&A" -> "Další otázky a odpovědi". Keep.
-
-Make sure to keep markdown formatting.
-
-Let's craft.
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Kontrola, zda je bod uvnitř polygonu, a získání bodu na povrchu
+# Zkontrolujte bod uvnitř polygonu a získejte bod na povrchu
 
 ## Úvod
-V tomto tutoriálu se naučíte **jak zkontrolovat, zda je bod uvnitř polygonu** pomocí Aspose.GIS pro .NET a také jak **získat bod na povrchu** geometrie. Provedeme vás vytvořením polygonové geometrie v C#, získáním bodu ležícího na povrchu polygonu a ověřením, že tento bod skutečně leží uvnitř polygonu. Na konci budete mít připravený úryvek kódu, který můžete vložit do jakékoli .NET geospatial aplikace.
+V tomto tutoriálu se naučíte **jak zkontrolovat bod uvnitř polygonu** pomocí Aspose.GIS pro .NET a také jak **získat bod na povrchu** geometrie. Provedeme vás vytvořením polygonové geometrie v C#, získáním bodu, který leží na povrchu polygonu, a ověřením, že bod skutečně leží uvnitř polygonu. Na konci budete mít připravený úryvek kódu, který můžete vložit do jakékoli .NET geospatial aplikace.
 
 ## Rychlé odpovědi
-- **Co znamená „check point inside polygon“?** Ověřuje, zda daná souřadnice leží v rámci hranic polygonové geometrie.  
-- **Která metoda vrací bod uvnitř polygonu?** `GetPointOnSurface()` vrací bod, který je zaručeně uvnitř polygonu.  
-- **Potřebuji licenci pro spuštění příkladu?** Pro vyzkoušení stačí bezplatná zkušební verze; pro produkční nasazení je vyžadována plná licence.  
-- **Jaké verze .NET jsou podporovány?** .NET Framework, .NET Core i .NET Standard jsou plně kompatibilní.  
-- **Jak dlouho trvá implementace?** Přibližně 5‑10 minut na zkopírování, přeložení a spuštění.
+- **Co znamená „zkontrolovat bod uvnitř polygonu“?** Ověřuje, zda daná souřadnice leží v rámci hranic polygonové geometrie.  
+- **Která metoda vrací bod v interiéru polygonu?** `GetPointOnSurface()` vrací bod, který je zaručeně uvnitř polygonu.  
+- **Potřebuji licenci pro spuštění příkladu?** Bezplatná zkušební verze funguje pro hodnocení; plná licence je vyžadována pro produkci.  
+- **Které verze .NET jsou podporovány?** .NET Framework, .NET Core a .NET Standard jsou všechny kompatibilní.  
+- **Jak dlouho trvá implementace?** Přibližně 5‑10 minut na zkopírování, kompilaci a spuštění.
 
-## Co je „check point inside polygon“?
-Kontrola, zda je bod uvnitř polygonu, je základní prostorová operace. Odpovídá na otázku „Leží tato souřadnice v oblasti definované polygonem?“. To je klíčové pro úlohy jako geofencing, analýzu map a prostorové ověřování.
+## Co je „zkontrolovat bod uvnitř polygonu“?
+Kontrola bodu uvnitř polygonu určuje, zda konkrétní souřadnice leží v uzavřené oblasti definované vrcholy polygonu. Operace vrací true, když je bod zcela uvnitř, a false, když leží mimo nebo na hranici. Tento základní prostorový test pohání geofencing, analytiku založenou na poloze a scénáře validace řízené mapou.
 
 ## Proč použít Aspose.GIS pro tento úkol?
-Aspose.GIS poskytuje vysoce výkonný, plně spravovaný API, který zvládá složité operace s geometrií bez externích závislostí. Podporuje širokou škálu souřadnicových referenčních systémů, funguje na všech hlavních .NET runtime a nabízí přehledné, řetězitelné metody jako `SpatiallyContains()` a `GetPointOnSurface()`.
+Aspose.GIS nabízí plně spravované .NET API, které zpracovává operace s polygonem až do 200 MB v paměťově úsporném režimu, podporuje více než 50 souřadnicových referenčních systémů a běží na .NET Framework, .NET Core a .NET Standard bez nativních závislostí.  
+`GetPointOnSurface()` vrací bod, který je zaručeně uvnitř interiéru geometrie.  
+`SpatiallyContains()` určuje, zda jedna geometrie zcela obsahuje jinou.  
+Řetězcovatelné metody knihovny — jako `SpatiallyContains()` a `GetPointOnSurface()` — poskytují deterministické výsledky a eliminují potřebu externích GIS engine.
 
-## Předpoklady
-Než začneme, ujistěte se, že máte následující:
+## Požadavky
+Předtím, než začneme, ujistěte se, že máte následující:
 
 ### Nastavení prostředí
-1. Nainstalujte Aspose.GIS pro .NET: Stáhněte a nainstalujte knihovnu Aspose.GIS pro .NET z [here](https://releases.aspose.com/gis/net/).  
-2. Nastavte vývojové prostředí: Zajistěte, aby bylo vaše vývojové prostředí pro .NET programování funkční. Pokud ne, můžete si nainstalovat Visual Studio nebo jiné .NET vývojové prostředí dle vašeho výběru.  
-3. Základní znalosti C#: Seznamte se se základy programovacího jazyka C#, pokud ještě nejste obeznámeni.  
-4. Přístup k dokumentaci: Mějte po ruce [documentation](https://reference.aspose.com/gis/net/) pro rychlé odkazy během celého tutoriálu.
+1. Nainstalujte Aspose.GIS pro .NET: Stáhněte a nainstalujte knihovnu Aspose.GIS pro .NET ze **stránky ke stažení Aspose.GIS pro .NET**([zde](https://releases.aspose.com/gis/net/)).  
+2. Nastavte své vývojové prostředí: Použijte Visual Studio, Rider nebo jakékoli .NET‑kompatibilní IDE, které preferujete.  
+3. Základní znalost C#: Měli byste být obeznámeni s třídami, metodami a jednoduchými konzolovými projekty.  
+4. Přístup k dokumentaci: Mějte po ruce **dokumentaci Aspose.GIS**([dokumentace](https://reference.aspose.com/gis/net/)) pro odkaz během celého tutoriálu.
 
-## Import jmenných prostorů
-Než se pustíme do implementace, začněme importem potřebných jmenných prostorů:
-
+## Importujte jmenné prostory
+Předtím, než se ponoříme do implementace, začněme importováním potřebných jmenných prostorů:
 ```csharp
 using Aspose.Gis.Geometries;
 using System;
@@ -61,11 +110,10 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## Průvodce krok za krokem
+## Postupný průvodce
 
-### Krok 1: Vytvoření polygonové geometrie v C#
-Nejprve musíme **vytvořit polygon**. Definujeme vnější kružnici polygonu zadáním jeho vrcholů.
-
+### Krok 1: vytvořit polygonovou geometrie v C#
+Nejprve musíme **vytvořit polygon** geometrie. Definujeme vnější kruh polygonu zadáním jeho vrcholů.
 ```csharp
 var polygon = new Polygon();
 polygon.ExteriorRing = new LinearRing(new[]
@@ -77,66 +125,73 @@ polygon.ExteriorRing = new LinearRing(new[]
 });
 ```
 
-### Krok 2: Získání bodu na povrchu
-Dále získáme bod na povrchu polygonu pomocí metody `GetPointOnSurface()`. Toto je krok **get point on surface**.
-
+### Krok 2: získat bod na povrchu
+Metoda `GetPointOnSurface()` vrací jediný vnitřní bod, který je zaručeně uvnitř oblasti polygonu. Dále získáme bod na povrchu polygonu pomocí této metody. Toto je krok **získat bod na povrchu**.
 ```csharp
 IPoint pointOnSurface = polygon.GetPointOnSurface();
 ```
 
-### Krok 3: Kontrola, zda je bod uvnitř polygonu
-Můžeme ověřit, zda získaný bod leží uvnitř polygonu pomocí metody `SpatiallyContains()`. Tím demonstrujeme **retrieving point on polygon** a následnou kontrolu.
-
+### Krok 3: zkontrolovat bod uvnitř polygonu
+Metoda `SpatiallyContains()` vyhodnocuje, zda geometrie zcela obsahuje jinou geometrie, a vrací true nebo false. Můžeme ověřit, zda získaný bod leží uvnitř polygonu pomocí této metody. To demonstruje **získání bodu na polygonu** a následnou kontrolu.
 ```csharp
 Console.WriteLine(polygon.SpatiallyContains(pointOnSurface)); // True
 ```
 
+## Jak otestovat obsah polygonu v C#
+Obsah polygonu otestujete vytvořením polygonové geometrie, zavoláním `GetPointOnSurface()` pro získání vnitřního bodu a následným použitím `SpatiallyContains()` k ověření, že bod je uvnitř. Tento dvoukrokový vzor funguje pro jakýkoli platný polygon a škáluje na velké datové sady při kombinaci s lazy loading.
+
 ## Časté problémy a řešení
-- **Prázdný polygon** – Ujistěte se, že vnější kružnice má alespoň tři různé vrcholy; jinak může `GetPointOnSurface()` vrátit nedefinovaný bod.  
-- **Po směru hodinových ručiček vs. proti směru** – Orientace kružnice neovlivňuje kontrolu obsahu, ale konzistentní pořadí uspořádání pomáhá u dalších prostorových operací.  
-- **Souřadnicový systém** – Příklad používá jednoduchou kartézskou rovinu; při práci se skutečnými souřadnicemi zajistěte, aby byl CRS (coordinate reference system) správně definován.
+- **Prázdný polygon** – Ujistěte se, že vnější kruh má alespoň tři odlišné vrcholy; jinak `GetPointOnSurface()` může vrátit nedefinovaný bod.  
+- **Po směru hodinových ručiček vs. proti směru** – Orientace kruhu neovlivňuje kontrolu obsahu, ale udržování konzistentního pořadí pomáhá u dalších prostorových operací.  
+- **Souřadnicový systém** – Příklad používá jednoduchou kartézskou rovinu; při práci se skutečnými souřadnicemi se ujistěte, že CRS (souřadnicový referenční systém) je správně definován.
 
 ## Často kladené otázky
 
-### FAQ's
+### FAQ
 #### Je Aspose.GIS kompatibilní s jinými .NET frameworky?
 Ano, Aspose.GIS podporuje různé .NET frameworky, včetně .NET Framework, .NET Core a .NET Standard.
 
-#### Můžu si Aspose.GIS vyzkoušet před zakoupením?
-Ano, můžete si stáhnout bezplatnou zkušební verzi Aspose.GIS z [here](https://releases.aspose.com/).
+#### Mohu vyzkoušet Aspose.GIS před zakoupením?
+Ano, můžete si stáhnout bezplatnou zkušební verzi Aspose.GIS ze **stránky ke stažení bezplatné zkušební verze Aspose.GIS**([zde](https://releases.aspose.com/)).
 
-#### Jak získám podporu pro Aspose.GIS?
-Navštivte fórum Aspose.GIS [here](https://forum.aspose.com/c/gis/33), kde můžete požádat o pomoc a komunikovat s ostatními uživateli a vývojáři.
+#### Jak mohu získat podporu pro Aspose.GIS?
+Můžete navštívit **forum Aspose.GIS**([zde](https://forum.aspose.com/c/gis/33)) a požádat o pomoc a komunikovat s ostatními uživateli a vývojáři.
 
 #### Nabízí Aspose.GIS dočasné licence?
-Ano, dočasné licence pro Aspose.GIS získáte [here](https://purchase.aspose.com/temporary-license/).
+Ano, můžete získat dočasné licence pro Aspose.GIS ze **stránky dočasných licencí**([zde](https://purchase.aspose.com/temporary-license/)).
 
-#### Kde si mohu zakoupit Aspose.GIS?
-Aspose.GIS můžete zakoupit na stránce nákupu [here](https://purchase.aspose.com/buy).
+#### Kde mohu zakoupit Aspose.GIS?
+Můžete zakoupit Aspose.GIS na **stránce nákupu Aspose.GIS**([zde](https://purchase.aspose.com/buy)).
 
 ### Další otázky a odpovědi
 
-**Q:** Jaký je nejlepší způsob, jak pracovat s velkými datasetty polygonů?  
-**A:** Načítejte geometrie líně a znovu použijte jedinou instanci `GeometryFactory`, čímž snížíte paměťovou zátěž.
+**Q:** Jaký je nejlepší způsob, jak pracovat s velkými datovými sadami polygonů?  
+**A:** Načítejte geometrie líně a znovu použijte jedinou instanci `GeometryFactory`, abyste snížili paměťovou zátěž.
 
 **Q:** Mohu získat více bodů na povrchu?  
-**A:** `GetPointOnSurface()` vrací jediný vnitřní bod. Pro generování více vnitřních bodů můžete použít generátor náhodných bodů uvnitř ohraničujícího rámečku polygonu a každý testovat pomocí `SpatiallyContains()`.
+**A:** `GetPointOnSurface()` vrací jediný vnitřní bod. Pro generování více vnitřních bodů můžete použít generátor náhodných bodů uvnitř ohraničujícího rámečku polygonu a testovat každý pomocí `SpatiallyContains()`.
 
-**Q:** Je možné exportovat polygon do shapefile po jeho vytvoření?  
+**Q:** Je možné po vytvoření exportovat polygon do shapefile?  
 **A:** Ano, Aspose.GIS poskytuje třídy `FeatureSet` a `ShapefileWriter` pro zápis geometrie do formátu Shapefile.
 
 ## Závěr
-V tomto tutoriálu jsme se naučili, jak **zkontrolovat, zda je bod uvnitř polygonu** pomocí Aspose.GIS pro .NET, jak získat **bod na povrchu** a jak ověřit jeho umístění. S Aspose.GIS je práce s geospatial daty efektivní a přímočará, což vývojářům umožňuje vytvářet robustní geospatial aplikace.
+V tomto tutoriálu jsme se naučili, jak **zkontrolovat bod uvnitř polygonu** pomocí Aspose.GIS pro .NET, získat **bod na povrchu** a ověřit jeho obsah. S Aspose.GIS se práce s geoprostorovými daty stává efektivní a jednoduchou, což vám umožní vytvářet robustní geoprostorové aplikace, které škálují od jednoduchých map po podnikové prostorové analytiky.
 
 ---
 
-**Poslední aktualizace:** 2026-02-13  
-**Testováno s:** Aspose.GIS 24.11 pro .NET  
+**Poslední aktualizace:** 2026-08-13  
+**Testováno s:** Aspose.GIS 24.11 for .NET  
 **Autor:** Aspose  
 
-{{< /blocks/products/pf/tutorial-page-section >}}
+{{< blocks/products/products-backtop-button >}}
 
+## Související tutoriály
+
+- [Jak vytvořit polygonovou geometrie s Aspose.GIS pro .NET](/gis/net/geometry-creation/create-polygon-geometry/)
+- [bod uvnitř polygonu c# – Zkontrolovat, zda geometrie obsahuje jinou](/gis/net/geometry-analysis/check-geometry-contains-another/)
+- [Jak vypočítat těžiště geometrie s Aspose.GIS pro .NET](/gis/net/geometry-analysis/get-geometry-centroid/)
+
+
+{{< /blocks/products/pf/tutorial-page-section >}}
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}

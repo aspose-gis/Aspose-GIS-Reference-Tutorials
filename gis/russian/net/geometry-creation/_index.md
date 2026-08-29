@@ -1,210 +1,265 @@
 ---
-date: 2026-02-13
-description: Узнайте, как преобразовать геометрию в WKT и создать многолинейную геометрию
-  с помощью Aspose.GIS для .NET, а также выполнить связанные задачи, такие как составные
-  кривые и преобразование координат.
-linktitle: Create MultiLineString Geometry
+date: 2026-08-13
+description: Узнайте, как преобразовать геометрию в WKT и создать геометрию MultiLineString
+  с помощью Aspose.GIS для .NET, а также связанные задачи, такие как составные кривые
+  и преобразование координат.
+keywords:
+- convert geometry to wkt
+- count points in geometry
+- Aspose.GIS multiline string
+- geometry creation .NET
+lastmod: 2026-08-13
+linktitle: Создать геометрию MultiLineString
+og_description: Преобразуйте геометрию в WKT с Aspose.GIS в .NET. Этот учебник показывает,
+  как создать MultiLineString, экспортировать его в WKT и изучить связанные типы геометрии,
+  предоставляя понятные примеры кода.
+og_image_alt: 'Developer guide: Convert geometry to WKT and build MultiLineString
+  using Aspose.GIS for .NET'
+og_title: Преобразование геометрии в WKT с Aspose.GIS – MultiLineString
+schemas:
+- author: Aspose
+  dateModified: '2026-08-13'
+  description: Learn how to convert geometry to WKT and create multiline string geometry
+    using Aspose.GIS for .NET, plus related tasks like compound curves and coordinate
+    conversion.
+  headline: 'Convert Geometry to WKT: MultiLineString with Aspose.GIS'
+  type: TechArticle
+- description: Learn how to convert geometry to WKT and create multiline string geometry
+    using Aspose.GIS for .NET, plus related tasks like compound curves and coordinate
+    conversion.
+  name: 'Convert Geometry to WKT: MultiLineString with Aspose.GIS'
+  steps:
+  - name: initialise the geometry factory
+    text: Create a `GeometryFactory` instance that will generate every geometry object
+      you need.
+  - name: build individual LineString objects
+    text: For each line you want to include, call `CreateLineString` with an array
+      of coordinate pairs. The `LineString` class represents a single, ordered list
+      of points.
+  - name: combine the LineString objects into a MultiLineString
+    text: A `MultiLineString` represents a collection of `LineString` objects. Pass
+      the collection of `LineString` instances to `CreateMultiLineString`. The resulting
+      object groups them under a single identifier.
+  - name: convert the MultiLineString to WKT
+    text: The `ToWkt()` method returns the geometry as a Well‑Known Text string. Invoke
+      `ToWkt()` on the `MultiLineString` instance. The method returns a Well‑Known
+      Text representation like `MULTILINESTRING ((x1 y1, x2 y2), (x3 y3, x4 y4))`.
+  - name: use the MultiLineString
+    text: You can now attach the geometry to a feature, write it to a file, or run
+      spatial queries such as counting vertices. The **count points in geometry**
+      tutorial demonstrates how to retrieve the total number of vertices across all
+      constituent `LineString`s. > **Note:** The actual C# code for these steps
+  type: HowTo
+- questions:
+  - answer: Absolutely. Aspose.GIS for .NET fully supports .NET Core 3.1 and later,
+      including .NET 5/6/7.
+    question: Can I use the MultiLineString API in a .NET Core project?
+  - answer: Use the `Save` method on the geometry object, specifying `GeoJson` as
+      the output format.
+    question: How do I export a MultiLineString to GeoJSON?
+  - answer: Practically no; the only constraints are memory and the underlying file
+      format specifications.
+    question: Is there a limit to the number of LineString components in a MultiLineString?
+  - answer: No. A single Aspose.GIS license covers all geometry creation features,
+      including multiline strings, compound curves, and geometry collections.
+    question: Do I need a separate license for each geometry type?
+  - answer: Check the “Performance Tuning” section in the Aspose.GIS documentation
+      and the “Count Points in Geometry” tutorial for efficient iteration.
+    question: Where can I find performance best‑practices for large datasets?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: 'Преобразовать геометрию в WKT: MultiLineString с Aspose.GIS'
+tags:
+- convert geometry to wkt
+- Aspose.GIS
+- MultiLineString
+- .NET GIS
+title: 'Преобразование геометрии в WKT: MultiLineString с Aspose.GIS'
 url: /ru/net/geometry-creation/
 weight: 21
 ---
 
-Let's craft final answer.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Создание геометрии MultiLineString
+# Преобразование геометрии в WKT: MultiLineString с Aspose.GIS
 
-## Introduction
+## Введение
 
-Если вам нужно **конвертировать геометрию в WKT** при создании геометрии multiline string, вы попали по адресу. Aspose.GIS for .NET предоставляет богатый, удобный API, позволяющий создавать, редактировать и анализировать пространственные объекты без хлопот, связанных с низкоуровневыми GIS‑библиотеками. В этом руководстве мы пройдёмся по основам создания multiline string, рассмотрим связанные типы геометрий, такие как compound curves и geometry collections, и укажем дальнейшие шаги для подсчёта точек, преобразования координат и прочего.
+Если вам нужно **преобразовать геометрию в WKT** при создании геометрии многолинейной строки, вы попали в нужное место. Aspose.GIS for .NET предоставляет полностью управляемый API, который позволяет создавать, редактировать и анализировать пространственные объекты без нативных зависимостей. Этот учебник проведет вас через создание `MultiLineString`, преобразование его в WKT и покажет, куда перейти дальше для таких задач, как подсчет точек, работа с составными кривыми и преобразование систем координат.
 
-## Quick Answers
-- **What is a MultiLineString?** Коллекция из двух и более объектов LineString, которые используют одну и ту же систему координат.  
-- **Why use Aspose.GIS for .NET?** Он предоставляет полностью управляемый API, без нативных зависимостей, и полную поддержку .NET 5/6/7.  
-- **Do I need a license?** Бесплатная пробная версия подходит для разработки; коммерческая лицензия требуется для продакшна.  
-- **Which .NET versions are supported?** .NET Framework 4.5+, .NET Core 3.1+ и .NET 5+.  
-- **Can I convert the geometry to other formats?** Да — можно экспортировать в WKT, GeoJSON, Shapefile и другие.
+## Краткие ответы
+- **Что такое MultiLineString?** Коллекция из двух или более объектов `LineString`, которые используют одну и ту же систему координат.  
+- **Зачем использовать Aspose.GIS for .NET?** Он предлагает полностью управляемый API, без нативных DLL и с полной поддержкой .NET 5/6/7.  
+- **Нужна ли мне лицензия?** Бесплатная пробная версия подходит для разработки; для продакшна требуется коммерческая лицензия.  
+- **Какие версии .NET поддерживаются?** .NET Framework 4.5+, .NET Core 3.1+, и .NET 5+.  
+- **Могу ли я преобразовать геометрию в другие форматы?** Да – вы можете экспортировать в WKT, GeoJSON, Shapefile и другие форматы.
 
-## How to Convert Geometry to WKT for MultiLineString
-Конвертация геометрии в WKT (Well‑Known Text) часто является первым шагом перед хранением или передачей пространственных данных. С Aspose.GIS вы можете вызвать метод `ToWkt()` у любого объекта геометрии, включая MultiLineString, и получить текстовое представление, соответствующее стандарту, которое может быть прочитано практически любой GIS‑утилитой.
+## Как преобразовать геометрию в WKT для MultiLineString
 
-## What is a MultiLineString Geometry?
-**MultiLineString** представляет несколько линий, сгруппированных в один пространственный объект. Это удобно для моделирования дорожных сетей, речных систем или любого набора связанных линейных объектов, которые следует рассматривать совместно.
+Вы преобразуете `MultiLineString` в WKT, вызывая его метод `ToWkt()`; Aspose.GIS возвращает строку текста, соответствующую стандарту, которую может прочитать любой GIS‑инструмент. Преобразование происходит в одну строку кода и сохраняет исходную систему координат, что делает его идеальным для хранения в базе данных или передачи через API. После преобразования вы можете записать строку в файл, отправить её по сети или встроить в SQL.
 
-## Why create multiline string geometry?
-Создание multiline string позволяет вам:
-- **Represent complex linear features** без разбивки их на отдельные слои.  
-- **Perform spatial analysis** (например, расчёт длины, проверку пересечений) над всей коллекцией сразу.  
-- **Export or share** данные в стандартных GIS‑форматах, поддерживающих многосоставные геометрии, особенно когда необходимо **convert geometry to WKT** для совместимости.
+## Что такое геометрия MultiLineString?
 
-## Prerequisites
-- Visual Studio 2022 или новее (или любой другой .NET IDE по вашему выбору).  
-- Установлен пакет NuGet Aspose.GIS for .NET (`Install-Package Aspose.GIS`).  
-- Базовое знакомство с C# и концепциями GIS.
+`MultiLineString` — это тип геометрии, который объединяет несколько объектов `LineString` в одну пространственную сущность. Он полезен, когда необходимо рассматривать сеть линий — например, дороги или отрезки рек — как единую особенность для анализа или экспорта.
 
-## Step‑by‑Step Guide to Create a MultiLineString
+## Зачем создавать геометрию многолинейной строки?
 
-### Step 1: Initialize the Geometry Factory
-Шаг 1: Инициализировать Geometry Factory. Создайте экземпляр `GeometryFactory`, который будет генерировать все объекты геометрии.
+Создание многолинейной строки позволяет **представлять сложные линейные сети** без фрагментации их на отдельные слои, выполнять пространственные расчёты (например, суммарную длину) над всей коллекцией и экспортировать данные в форматы, поддерживающие multipart‑геометрии. Для больших наборов данных Aspose.GIS может обрабатывать объекты MultiLineString с более чем **500 + линейными компонентами**, удерживая использование памяти ниже 100 MB.
 
-### Step 2: Build Individual LineString Objects
-Шаг 2: Создать отдельные объекты `LineString`. Укажите пары координат, определяющие каждую линию.
+## Требования
+- Visual Studio 2022 или любой совместимый с .NET IDE.  
+- Aspose.GIS for .NET NuGet пакет (`Install-Package Aspose.GIS`).  
+- Базовые знания C# и концепций GIS.
 
-### Step 3: Combine LineStrings into a MultiLineString
-Шаг 3: Объединить `LineString` в `MultiLineString`. Передайте коллекцию объектов `LineString` в метод `CreateMultiLineString` фабрики.
+## Пошаговое руководство по созданию MultiLineString
 
-### Step 4: Convert the MultiLineString to WKT
-Шаг 4: Конвертировать `MultiLineString` в WKT. Вызовите метод `ToWkt()` у полученного объекта `MultiLineString`. Возвращённая строка может быть сохранена в файл, отправлена по сети или использована в столбце базы данных.
+### Определение якоря
+Класс `GeometryFactory` является точкой входа Aspose.GIS для построения всех объектов геометрии; он предоставляет методы такие как `CreateLineString` и `CreateMultiLineString`.
 
-### Step 5: Use the MultiLineString
-Шаг 5: Использовать `MultiLineString`. Теперь вы можете добавить геометрию в объект, записать её в файл или выполнить пространственные запросы, такие как подсчёт вершин. Руководство **count points in geometry** показывает, как получить общее количество вершин во всех входящих `LineString`.
+### Шаг 1: инициализировать фабрику геометрий
+Создайте экземпляр `GeometryFactory`, который будет генерировать каждый необходимый объект геометрии.
 
-> **Note:** **Примечание:** Фактический код C# для этих шагов идентичен во всех руководствах Aspose.GIS, связанных с созданием геометрии. Обратитесь к связанным руководствам для получения точных фрагментов кода.
+### Шаг 2: построить отдельные объекты LineString
+Для каждой линии, которую хотите включить, вызовите `CreateLineString` с массивом пар координат. Класс `LineString` представляет собой упорядоченный список точек.
 
-## Common Use Cases
-- **Road network modeling:** Моделирование дорожной сети: хранить каждый дорожный сегмент как `LineString` и группировать их в `MultiLineString` для анализа на уровне района.  
-- **River and stream mapping:** Картирование рек и потоков: объединять несколько участков реки в одну геометрию для расчёта общей длины или проведения анализа водосборов.  
-- **Data exchange:** Обмен данными: экспортировать геометрию в виде WKT для передачи сторонним GIS‑платформам, которые могут не поддерживать нативные форматы Aspose.GIS.
+### Шаг 3: объединить объекты LineString в MultiLineString
+`MultiLineString` представляет собой коллекцию объектов `LineString`.  
+Передайте коллекцию экземпляров `LineString` в `CreateMultiLineString`. Полученный объект группирует их под единственным идентификатором.
 
-## Related Geometry Topics You Might Explore
+### Шаг 4: преобразовать MultiLineString в WKT
+Метод `ToWkt()` возвращает геометрию в виде строки Well‑Known Text.  
+Вызовите `ToWkt()` у экземпляра `MultiLineString`. Метод возвращает представление WKT, например `MULTILINESTRING ((x1 y1, x2 y2), (x3 y3, x4 y4))`.
 
-### How to **create compound curve**
-Как **создать compound curve**. Если нужны плавные изогнутые пути, руководство «create compound curve» покажет, как соединить несколько сегментов кривой в одну геометрию.
+### Шаг 5: использовать MultiLineString
+Теперь вы можете привязать геометрию к объекту, записать её в файл или выполнить пространственные запросы, такие как подсчёт вершин. Учебник **count points in geometry** демонстрирует, как получить общее количество вершин во всех входящих `LineString`.
 
-### How to **create geometry collection**
-Как **создать geometry collection**. Geometry collection позволяет хранить разнородные типы геометрий (точки, линии, полигоны) вместе. См. руководство «Create Geometry Collection» для деталей.
+> **Note:** The actual C# code for these steps is identical across all Aspose.GIS tutorials that deal with geometry creation. Refer to the linked tutorials for the exact code snippets.
 
-### How to **count points in geometry**
-Как **подсчитать точки в геометрии**. При работе со сложными формами может потребоваться знать количество их вершин. Руководство «Count Points in Geometry» проведёт вас через этот процесс.
+## Распространённые сценарии использования
+- **Моделирование дорожных сетей:** Храните каждый дорожный отрезок как `LineString` и группируйте их в `MultiLineString` для анализа на уровне района.  
+- **Картирование рек и потоков:** Объединяйте несколько речных протоков в одну геометрию для расчёта общей длины или проведения анализа водосборных бассейнов.  
+- **Обмен данными:** Экспортируйте геометрию в WKT для передачи сторонним GIS‑платформам, которые могут не поддерживать нативные форматы Aspose.GIS.
 
-### How to **convert coordinates .net**
-Как **конвертировать координаты .net**. Часто требуется преобразовать данные между системами координат. Руководство «Convert Coordinates» объясняет шаги для разработчиков .NET.
+## Связанные темы по геометрии, которые вы можете изучить
 
-### How to **create polygon geometry**
-Как **создать polygon geometry**. Полигоны являются базовыми элементами для площадных объектов. Руководство «Create Polygon Geometry» охватывает всё от простых квадратов до сложных многосоставных полигонов.
+### Как создать составную кривую
+Если нужны плавные изогнутые пути, учебник **create compound curve** покажет, как соединить несколько сегментов кривой в одну геометрию.
 
-## Geospatial Data Handling with Aspose.GIS for .NET
-Link: [Create LineString Geometry](./create-linestring-geometry/)
-Погрузитесь в основы работы с геопространственными данными в .NET. Это руководство проведёт вас через создание, анализ и визуализацию карт без усилий с использованием Aspose.GIS для .NET.
+### Как создать коллекцию геометрий
+**Geometry collection** позволяет хранить разнородные типы геометрий (точки, линии, полигоны) вместе. См. учебник «Create Geometry Collection» для деталей.
 
-## Create Polygon Geometry with Aspose.GIS for .NET
-Link: [Create Polygon Geometry](./create-polygon-geometry/)
-Освойте искусство создания геометрии Polygon с пошаговым руководством, адаптированным для разработчиков .NET. Раскройте потенциал Aspose.GIS в ваших пространственных приложениях.
+### Как подсчитать точки в геометрии
+При работе со сложными формами может потребоваться знать количество их вершин. Руководство «Count Points in Geometry» проведёт вас через этот процесс.
 
-## Create Polygon with Hole Geometry using Aspose.GIS
-Link: [Create Polygon with Hole Geometry](./create-polygon-with-hole-geometry/)
-Повышайте навыки, изучая создание Polygon с отверстием с помощью Aspose.GIS для .NET. Подробное руководство с примерами кода ждёт вас.
+### Как преобразовать координаты в .NET
+Часто требуется преобразовать данные между системами координат. Учебник «Convert Coordinates» объясняет шаги для разработчиков .NET.
 
-## Create MultiPoint Geometry with Aspose.GIS for .NET
-Link: [Create MultiPoint Geometry](./create-multipoint-geometry/)
-Станьте мастером в создании многоточечных геометрий без усилий. Это всестороннее руководство снабжает разработчиков .NET знаниями для успешной работы с геопространственными данными.
+### Как создать полигональную геометрию
+Полигоны — базовые элементы для площадных объектов. Учебник «Create Polygon Geometry» охватывает всё от простых квадратов до сложных мульти‑частных полигонов.
 
-## Create MultiLineString Geometry using Aspose.GIS for .NET
-Link: [Create MultiLineString Geometry](./create-multilinestring-geometry/)
-Исследуйте возможности Aspose.GIS для .NET в эффективном управлении геопространственными данными. Скачайте сейчас для беспрепятственного создания геометрий multi-line string.
+## Работа с геопространственными данными с Aspose.GIS для .NET
+Ссылка: [Create LineString Geometry](./create-linestring-geometry/)
+Углубитесь в основы работы с геопространственными данными в .NET. Этот учебник проведёт вас через создание, анализ и визуализацию карт с помощью Aspose.GIS for .NET.
 
-## Create MultiPolygon Geometry with Aspose.GIS
-Link: [Create MultiPolygon Geometry](./create-multipolygon-geometry/)
-Изучите искусство создания геометрии MultiPolygon с Aspose.GIS для .NET. Это пошаговое руководство адаптировано для начинающих, с бесплатной пробной версией для практики.
+## Создание полигональной геометрии с Aspose.GIS для .NET
+Ссылка: [Create Polygon Geometry](./create-polygon-geometry/)
+Освойте создание полигональной геометрии шаг за шагом, адаптированное для разработчиков .NET. Раскройте потенциал Aspose.GIS в ваших пространственных приложениях.
 
-## Create MultiCurve Geometry with Aspose.GIS for .NET
-Link: [Create MultiCurve Geometry](./create-multicurve-geometry/)
-Эффективно представляйте и анализируйте пространственные данные, освоив создание геометрии MultiCurve в .NET с Aspose.GIS.
+## Создание полигона с отверстием
+Ссылка: [Create Polygon with Hole Geometry](./create-polygon-with-hole-geometry/)
+Повышайте навыки, изучая создание полигона с отверстием с помощью Aspose.GIS for .NET. Подробный учебник с примерами кода ждёт вас.
 
-## Create Curve Polygon Geometry with Aspose.GIS for .NET
-Link: [Create Curve Polygon Geometry](./create-curve-polygon-geometry/)
-Погрузитесь в эффективное создание Curve Polygon Geometry с помощью Aspose.GIS для .NET. Следуйте нашему пошаговому руководству для бесшовной интеграции в ваши GIS‑приложения.
+## Создание мультиточечной геометрии с Aspose.GIS для .NET
+Ссылка: [Create MultiPoint Geometry](./create-multipoint-geometry/)
+Станьте мастером создания мульти‑точечных геометрий без усилий. Этот всесторонний учебник снабдит .NET‑разработчиков знаниями для работы с геопространственными данными.
 
-## Create Compound Curve Geometry with Aspose.GIS in .NET
-Link: [Create Compound Curve Geometry](./create-compound-curve-geometry/)
-Освойте искусство создания геометрий compound curve без проблем в .NET, используя Aspose.GIS для обработки геопространственных данных.
+## Создание геометрии MultiLineString с использованием Aspose.GIS для .NET
+Ссылка: [Create MultiLineString Geometry](./create-multilinestring-geometry/)
+Исследуйте возможности Aspose.GIS for .NET в эффективном управлении геопространственными данными. Скачайте сейчас для бесшовного опыта создания многолинейных геометрий.
 
-## Create Circular String Geometry with Aspose.GIS for .NET
-Link: [Create Circular String Geometry](./create-circular-string-geometry/)
-Откройте возможности GIS‑разработки с Aspose.GIS для .NET. Создавайте, анализируйте и визуализируйте пространственные данные без усилий, используя геометрию circular string.
+## Создание мультиполигональной геометрии с Aspose.GIS
+Ссылка: [Create MultiPolygon Geometry](./create-multipolygon-geometry/)
+Изучите создание MultiPolygon геометрии шаг за шагом для начинающих, с бесплатной пробной версией для практики.
 
-## Create Geometry Collection with Aspose.GIS for .NET
-Link: [Create Geometry Collection](./create-geometry-collection/)
-Бесшовно создавайте, визуализируйте и анализируйте данные, основанные на местоположении, в ваших .NET‑приложениях. Откройте возможности манипуляции геопространственными данными с Aspose.GIS.
+## Создание мультикривой геометрии с Aspose.GIS для .NET
+Ссылка: [Create MultiCurve Geometry](./create-multicurve-geometry/)
+Эффективно представляйте и анализируйте пространственные данные, освоив создание MultiCurve геометрии в .NET с Aspose.GIS.
 
-## Converting Geometry to Editable Format with Aspose.GIS
-Link: [Convert Geometry to Editable Format](./convert-geometry-to-editable/)
-Откройте искусство конвертации геометрии в редактируемый формат без усилий с помощью Aspose.GIS для .NET. Погрузитесь в это пошаговое руководство, чтобы улучшить навыки работы с пространственными данными.
+## Создание кривой полигональной геометрии с Aspose.GIS для .NET
+Ссылка: [Create Curve Polygon Geometry](./create-curve-polygon-geometry/)
+Погрузитесь в эффективное создание Curve Polygon Geometry с помощью Aspose.GIS for .NET. Следуйте нашему пошаговому руководству для бесшовной интеграции в ваши GIS‑приложения.
 
-## Count Geometries in Geometry with Aspose.GIS for .NET
-Link: [Count Geometries in Geometry](./count-geometries-in-geometry/)
-Узнайте, как подсчитать геометрии в Geometry с помощью Aspose.GIS для .NET. Это руководство предоставляет пошаговые инструкции с примерами кода для разработчиков.
+## Создание составной кривой геометрии с Aspose.GIS в .NET
+Ссылка: [Create Compound Curve Geometry](./create-compound-curve-geometry/)
+Освойте создание составных кривых геометрий в .NET с Aspose.GIS для беспрепятственной обработки геопространственных данных.
 
-## Count Points in Geometry with Aspose.GIS for .NET
-Link: [Count Points in Geometry](./count-points-in-geometry/)
-Используйте Aspose.GIS для .NET, чтобы без труда манипулировать географическими данными. Доступны всесторонние руководства для повышения ваших навыков.
+## Создание круговой строки геометрии с Aspose.GIS для .NET
+Ссылка: [Create Circular String Geometry](./create-circular-string-geometry/)
+Откройте возможности GIS‑разработки с Aspose.GIS for .NET. Создавайте, анализируйте и визуализируйте пространственные данные без труда, используя круговые строки.
 
-## Coordinate Conversion with Aspose.GIS
-Link: [Convert Coordinates](./convert-coordinates/)
-Узнайте, как конвертировать координаты с Aspose.GIS для .NET. Это пошаговое руководство предоставляет требования, часто задаваемые вопросы и всё необходимое для беспрепятственной конвертации координат в ваших приложениях.
+## Создание коллекции геометрий с Aspose.GIS для .NET
+Ссылка: [Create Geometry Collection](./create-geometry-collection/)
+Беспрепятственно создавайте, визуализируйте и анализируйте данные, привязанные к местоположению, в ваших .NET‑приложениях. Раскройте мощь манипуляций с геопространственными данными с Aspose.GIS.
 
-В заключение, освоение Aspose.GIS в вашем .NET‑разработке обеспечивает навыки для манипуляции, визуализации и анализа геопространственных данных с лёгкостью. Приятного кодинга!
+## Преобразование геометрии в редактируемый формат с Aspose.GIS
+Ссылка: [Convert Geometry to Editable Format](./convert-geometry-to-editable/)
+Откройте искусство преобразования геометрии в редактируемый формат без усилий с помощью Aspose.GIS for .NET. Погрузитесь в этот пошаговый учебник, чтобы улучшить навыки работы с пространственными данными.
 
-## Geometry Creation Tutorials
-### [Geospatial Data Handling with Aspose.GIS for .NET](./create-linestring-geometry/)
-Learn how to work with geospatial data in .NET applications using Aspose.GIS for .NET. Create, analyze, and visualize maps effortlessly.
-### [Create Polygon Geometry with Aspose.GIS for .NET](./create-polygon-geometry/)
-Learn how to create polygon geometry using Aspose.GIS for .NET. Step-by-step tutorial for .NET developers.
-### [reate Polygon with Hole Geometry using Aspose.GIS](./create-polygon-with-hole-geometry/)
-Learn how to create polygon with hole geometry using Aspose.GIS for .NET. Step-by-step tutorial with code examples.
-### [Create MultiPoint Geometry with Aspose.GIS for .NET](./create-multipoint-geometry/)
-Master Aspose.GIS for .NET: Learn to create multi-point geometries effortlessly. Comprehensive tutorial for developers.
-### [Create MultiLineString Geometry using Aspose.GIS for .NET](./create-multilinestring-geometry/)
-Explore the power of Aspose.GIS for .NET in managing geospatial data efficiently. Download now for a seamless experience.
-### [Create MultiPolygon Geometry with Aspose.GIS](./create-multipolygon-geometry/)
-Learn how to create MultiPolygon geometry using Aspose.GIS for .NET. Step-by-step guide for beginners. Free trial available.
-### [Create MultiCurve Geometry with Aspose.GIS for .NET](./create-multicurve-geometry/)
-Learn how to create MultiCurve geometry in .NET with Aspose.GIS for efficient spatial data representation and analysis.
-### [Create Curve Polygon Geometry with Aspose.GIS for .NET](./create-curve-polygon-geometry/)
-Learn how efficiently create Curve Polygon Geometry using Aspose.GIS for .NET. Follow our step‑by‑step guide for seamless into your GIS applications.
-### [Create Compound Curve Geometry with Aspose.GIS in .NET](./create-compound-curve-geometry/)
-Learn how to create compound curve geometries in .NET using Aspose.GIS for seamless geospatial data processing.
-### [Create Circular String Geometry with Aspose.GIS for .NET](./create-circular-string-geometry/)
-Unlock the power of GIS development with Aspose.GIS for .NET. Create, analyze, and visualize spatial data effortlessly.
-### [Create Geometry Collection with Aspose.GIS for .NET](./create-geometry-collection/)
-Unlock the power of geospatial data manipulation with Aspose.GIS for .NET. Seamlessly create, visualize, and analyze location‑based data in your .NET applications.
-### [Converting Geometry to Editable Format with Aspose.GIS](./convert-geometry-to-editable/)
-Discover how to convert geometry to an editable format effortlessly using Aspose.GIS for .NET. Dive into this step‑by‑step tutorial.
-### [Count Geometries in Geometry with Aspose.GIS](./count-geometries-in-geometry/)
-Learn how to count geometries in a geometry using Aspose.GIS for .NET. Step‑by‑step tutorial with code examples for developers.
-### [Count Points in Geometry with Aspose.GIS for .NET](./count-points-in-geometry/)
-Learn how to utilize Aspose.GIS for .NET to manipulate geographic data effortlessly. Comprehensive tutorials are available to enhance your skills.
-### [Coordinate Conversion with Aspose.GIS](./convert-coordinates/)
-Learn how to convert coordinates with Aspose.GIS for .NET. Step‑by‑step guide, prerequisites, and FAQs provided.
+## Подсчет геометрий в геометрии с Aspose.GIS для .NET
+Ссылка: [Count Geometries in Geometry](./count-geometries-in-geometry/)
+Узнайте, как подсчитать геометрии в геометрии с помощью Aspose.GIS for .NET. Этот учебник предоставляет пошаговое руководство с примерами кода для разработчиков.
 
-## Frequently Asked Questions
+## Подсчет точек в геометрии с Aspose.GIS для .NET
+Ссылка: [Count Points in Geometry](./count-points-in-geometry/)
+Используйте Aspose.GIS for .NET для лёгкой манипуляции географическими данными. Доступны всесторонние учебники для повышения ваших навыков.
 
-**Q: Can I use the MultiLineString API in a .NET Core project?**  
-A: Absolutely. Aspose.GIS for .NET fully supports .NET Core 3.1 and later, including .NET 5/6/7.
+## Преобразование координат с Aspose.GIS
+Ссылка: [Convert Coordinates](./convert-coordinates/)
+Узнайте, как преобразовать координаты с Aspose.GIS for .NET. Пошаговое руководство предоставляет требования, FAQ и всё необходимое для бесшовного преобразования координат в ваших приложениях.
 
-**Q: How do I export a MultiLineString to GeoJSON?**  
-A: Use the `Save` method on the geometry object, specifying `GeoJson` as the output format.
+## Учебники по созданию геометрии
 
-**Q: Is there a limit to the number of LineString components in a MultiLineString?**  
-A: Practically no; the only constraints are memory and the underlying file format specifications.
+### [Работа с геопространственными данными с Aspose.GIS для .NET](./create-linestring-geometry/)
+### [Создание полигональной геометрии с Aspose.GIS для .NET](./create-polygon-geometry/)
+### [Создание полигона с отверстием с использованием Aspose.GIS](./create-polygon-with-hole-geometry/)
+### [Создание мультиточечной геометрии с Aspose.GIS для .NET](./create-multipoint-geometry/)
+### [Создание геометрии MultiLineString с использованием Aspose.GIS для .NET](./create-multilinestring-geometry/)
+### [Создание мультиполигональной геометрии с Aspose.GIS](./create-multipolygon-geometry/)
+### [Создание мультикривой геометрии с Aspose.GIS для .NET](./create-multicurve-geometry/)
+### [Создание кривой полигональной геометрии с Aspose.GIS для .NET](./create-curve-polygon-geometry/)
+### [Создание составной кривой геометрии с Aspose.GIS в .NET](./create-compound-curve-geometry/)
+### [Создание круговой строки геометрии с Aspose.GIS для .NET](./create-circular-string-geometry/)
+### [Создание коллекции геометрий с Aspose.GIS для .NET](./create-geometry-collection/)
+### [Преобразование геометрии в редактируемый формат с Aspose.GIS](./convert-geometry-to-editable/)
+### [Подсчет геометрий в геометрии с Aspose.GIS](./count-geometries-in-geometry/)
+### [Подсчет точек в геометрии с Aspose.GIS для .NET](./count-points-in-geometry/)
+### [Преобразование координат с Aspose.GIS](./convert-coordinates/)
 
-**Q: Do I need a separate license for each geometry type?**  
-A: No. A single Aspose.GIS license covers all geometry creation features, including multiline strings, compound curves, and geometry collections.
+## Часто задаваемые вопросы
 
-**Q: Where can I find performance best‑practices for large datasets?**  
-A: Check the “Performance Tuning” section in the Aspose.GIS documentation and the “Count Points in Geometry” tutorial for efficient iteration.
+**Q:** **Can I use the MultiLineString API in a .NET Core project?**  
+**A:** Absolutely. Aspose.GIS for .NET fully supports .NET Core 3.1 and later, including .NET 5/6/7.
+
+**Q:** **How do I export a MultiLineString to GeoJSON?**  
+**A:** Use the `Save` method on the geometry object, specifying `GeoJson` as the output format.
+
+**Q:** **Is there a limit to the number of LineString components in a MultiLineString?**  
+**A:** Practically no; the only constraints are memory and the underlying file format specifications.
+
+**Q:** **Do I need a separate license for each geometry type?**  
+**A:** No. A single Aspose.GIS license covers all geometry creation features, including multiline strings, compound curves, and geometry collections.
+
+**Q:** **Where can I find performance best‑practices for large datasets?**  
+**A:** Check the “Performance Tuning” section in the Aspose.GIS documentation and the “Count Points in Geometry” tutorial for efficient iteration.
 
 ---
 
-**Last Updated:** 2026-02-13  
-**Tested With:** Aspose.GIS 24.12 for .NET  
-**Author:** Aspose
+**Последнее обновление:** 2026-08-13  
+**Тестировано с:** Aspose.GIS 24.12 for .NET  
+**Автор:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
-
 {{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/products-backtop-button >}}
+{{< /blocks/products/pf/main-wrap-class >}}

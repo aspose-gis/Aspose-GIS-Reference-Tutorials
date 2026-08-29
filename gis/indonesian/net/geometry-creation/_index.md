@@ -1,10 +1,78 @@
 ---
-date: 2026-02-13
+date: 2026-08-13
 description: Pelajari cara mengonversi geometri ke WKT dan membuat geometri multiline
-  string menggunakan Aspose.GIS untuk .NET, serta tugas terkait seperti kurva gabungan
+  string menggunakan Aspose.GIS untuk .NET, serta tugas terkait seperti kurva majemuk
   dan konversi koordinat.
-linktitle: Create MultiLineString Geometry
+keywords:
+- convert geometry to wkt
+- count points in geometry
+- Aspose.GIS multiline string
+- geometry creation .NET
+lastmod: 2026-08-13
+linktitle: Buat Geometri MultiLineString
+og_description: Konversi geometri ke WKT dengan Aspose.GIS di .NET. Tutorial ini menunjukkan
+  cara membuat MultiLineString, mengekspornya ke WKT, dan menjelajahi tipe geometri
+  terkait, semuanya dengan contoh kode yang jelas.
+og_image_alt: 'Developer guide: Convert geometry to WKT and build MultiLineString
+  using Aspose.GIS for .NET'
+og_title: Konversi geometri ke WKT dengan Aspose.GIS – MultiLineString
+schemas:
+- author: Aspose
+  dateModified: '2026-08-13'
+  description: Learn how to convert geometry to WKT and create multiline string geometry
+    using Aspose.GIS for .NET, plus related tasks like compound curves and coordinate
+    conversion.
+  headline: 'Convert Geometry to WKT: MultiLineString with Aspose.GIS'
+  type: TechArticle
+- description: Learn how to convert geometry to WKT and create multiline string geometry
+    using Aspose.GIS for .NET, plus related tasks like compound curves and coordinate
+    conversion.
+  name: 'Convert Geometry to WKT: MultiLineString with Aspose.GIS'
+  steps:
+  - name: initialise the geometry factory
+    text: Create a `GeometryFactory` instance that will generate every geometry object
+      you need.
+  - name: build individual LineString objects
+    text: For each line you want to include, call `CreateLineString` with an array
+      of coordinate pairs. The `LineString` class represents a single, ordered list
+      of points.
+  - name: combine the LineString objects into a MultiLineString
+    text: A `MultiLineString` represents a collection of `LineString` objects. Pass
+      the collection of `LineString` instances to `CreateMultiLineString`. The resulting
+      object groups them under a single identifier.
+  - name: convert the MultiLineString to WKT
+    text: The `ToWkt()` method returns the geometry as a Well‑Known Text string. Invoke
+      `ToWkt()` on the `MultiLineString` instance. The method returns a Well‑Known
+      Text representation like `MULTILINESTRING ((x1 y1, x2 y2), (x3 y3, x4 y4))`.
+  - name: use the MultiLineString
+    text: You can now attach the geometry to a feature, write it to a file, or run
+      spatial queries such as counting vertices. The **count points in geometry**
+      tutorial demonstrates how to retrieve the total number of vertices across all
+      constituent `LineString`s. > **Note:** The actual C# code for these steps
+  type: HowTo
+- questions:
+  - answer: Absolutely. Aspose.GIS for .NET fully supports .NET Core 3.1 and later,
+      including .NET 5/6/7.
+    question: Can I use the MultiLineString API in a .NET Core project?
+  - answer: Use the `Save` method on the geometry object, specifying `GeoJson` as
+      the output format.
+    question: How do I export a MultiLineString to GeoJSON?
+  - answer: Practically no; the only constraints are memory and the underlying file
+      format specifications.
+    question: Is there a limit to the number of LineString components in a MultiLineString?
+  - answer: No. A single Aspose.GIS license covers all geometry creation features,
+      including multiline strings, compound curves, and geometry collections.
+    question: Do I need a separate license for each geometry type?
+  - answer: Check the “Performance Tuning” section in the Aspose.GIS documentation
+      and the “Count Points in Geometry” tutorial for efficient iteration.
+    question: Where can I find performance best‑practices for large datasets?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
+tags:
+- convert geometry to wkt
+- Aspose.GIS
+- MultiLineString
+- .NET GIS
 title: 'Konversi Geometri ke WKT: MultiLineString dengan Aspose.GIS'
 url: /id/net/geometry-creation/
 weight: 21
@@ -14,194 +82,198 @@ weight: 21
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Buat Geometri MultiLineString
+# Mengonversi geometri ke WKT: MultiLineString dengan Aspose.GIS
 
 ## Pendahuluan
 
-Jika Anda perlu **mengonversi geometri ke WKT** saat membuat geometri multiline string, Anda berada di tempat yang tepat. Aspose.GIS untuk .NET menyediakan API yang kaya dan mudah‑digunakan yang memungkinkan Anda membangun, mengedit, dan menganalisis objek spasial tanpa kerepotan perpustakaan GIS tingkat rendah. Dalam panduan ini kami akan membahas dasar‑dasar pembuatan multiline string, menjelajahi tipe geometri terkait seperti compound curves dan geometry collections, serta mengarahkan Anda ke langkah selanjutnya untuk menghitung titik, mengonversi koordinat, dan lainnya.
+Jika Anda perlu **mengonversi geometri ke WKT** saat membuat geometri multiline string, Anda berada di tempat yang tepat. Aspose.GIS untuk .NET menyediakan API pure‑managed yang memungkinkan Anda membangun, mengedit, dan menganalisis objek spasial tanpa ketergantungan native. Tutorial ini memandu Anda membuat `MultiLineString`, mengonversinya ke WKT, dan menunjukkan langkah selanjutnya untuk tugas seperti menghitung titik, menangani kurva majemuk, dan mengonversi sistem koordinat.
 
 ## Jawaban Cepat
-- **Apa itu MultiLineString?** Sekumpulan dua atau lebih objek LineString yang berbagi sistem referensi koordinat yang sama.  
-- **Mengapa menggunakan Aspose.GIS untuk .NET?** Menawarkan API pure‑managed, tanpa dependensi native, dan dukungan penuh untuk .NET 5/6/7.  
-- **Apakah saya memerlukan lisensi?** Versi percobaan gratis dapat digunakan untuk pengembangan; lisensi komersial diperlukan untuk produksi.  
-- **Versi .NET apa yang didukung?** .NET Framework 4.5+, .NET Core 3.1+, dan .NET 5+.  
-- **Bisakah saya mengonversi geometri ke format lain?** Ya – Anda dapat mengekspor ke WKT, GeoJSON, Shapefile, dan lainnya.
+- **What is a MultiLineString?** A collection of two or more `LineString` objects that share the same coordinate reference system.  
+- **Why use Aspose.GIS for .NET?** It offers a pure‑managed API, no native DLLs, and full support for .NET 5/6/7.  
+- **Do I need a license?** A free trial works for development; a commercial license is required for production.  
+- **Which .NET versions are supported?** .NET Framework 4.5+, .NET Core 3.1+, and .NET 5+.  
+- **Can I convert the geometry to other formats?** Yes – you can export to WKT, GeoJSON, Shapefile, and more.
 
-## Cara Mengonversi Geometri ke WKT untuk MultiLineString
-Mengonversi geometri ke WKT (Well‑Known Text) sering menjadi langkah pertama sebelum menyimpan atau mentransmisikan data spasial. Dengan Aspose.GIS Anda dapat memanggil metode `ToWkt()` pada objek geometri apa pun, termasuk MultiLineString, dan memperoleh representasi teks yang sesuai standar yang dapat dibaca oleh hampir semua alat GIS.
+## Cara mengonversi geometri ke WKT untuk MultiLineString
 
-## Apa itu Geometri MultiLineString?
-**MultiLineString** mewakili beberapa line string yang dikelompokkan menjadi satu objek spasial. Ini berguna untuk memodelkan jaringan jalan, sistem sungai, atau kumpulan fitur garis yang terhubung yang harus diperlakukan bersama.
+Anda mengonversi `MultiLineString` ke WKT dengan memanggil metode `ToWkt()`; Aspose.GIS mengembalikan string teks yang mematuhi standar yang dapat dibaca oleh alat GIS apa pun. Konversi terjadi dalam satu baris kode dan mempertahankan sistem referensi koordinat asli, menjadikannya ideal untuk penyimpanan basis data atau payload API. Setelah konversi Anda dapat menulis string ke file, mengirimnya melalui jaringan, atau menyematkannya dalam SQL.
+
+## Apa itu geometri MultiLineString?
+
+`MultiLineString` adalah tipe geometri yang menggabungkan beberapa objek `LineString` menjadi satu entitas spasial. Ini berguna ketika Anda perlu memperlakukan jaringan garis—seperti jalan atau segmen sungai—sebagai satu fitur tunggal untuk analisis atau ekspor.
 
 ## Mengapa membuat geometri multiline string?
-- **Merepresentasikan fitur linear yang kompleks** tanpa memecahnya menjadi lapisan terpisah.  
-- **Melakukan analisis spasial** (mis., perhitungan panjang, uji interseksi) pada seluruh koleksi sekaligus.  
-- **Mengekspor atau berbagi** data dalam format GIS standar yang mendukung geometri multi‑part, terutama ketika Anda perlu **mengonversi geometri ke WKT** untuk interoperabilitas.
+
+Membuat multiline string memungkinkan Anda **mewakili jaringan linear yang kompleks** tanpa memecahnya menjadi lapisan terpisah, menjalankan perhitungan spasial (seperti panjang total) pada seluruh koleksi, dan mengekspor data dalam format yang mendukung geometri multipart. Untuk dataset besar Aspose.GIS dapat memproses objek MultiLineString dengan hingga **500 + komponen garis** sambil menjaga penggunaan memori di bawah 100 MB.
 
 ## Prasyarat
-- Visual Studio 2022 atau lebih baru (atau IDE .NET apa pun yang Anda sukai).  
-- Aspose.GIS for .NET NuGet package installed (`Install-Package Aspose.GIS`).  
-- Pemahaman dasar tentang C# dan konsep GIS.
+- Visual Studio 2022 atau IDE .NET‑compatible lainnya.  
+- Paket NuGet Aspose.GIS untuk .NET (`Install-Package Aspose.GIS`).  
+- Familiaritas dasar dengan C# dan konsep GIS.
 
-## Panduan Langkah‑demi‑Langkah untuk Membuat MultiLineString
+## Panduan langkah‑demi‑langkah untuk membuat MultiLineString
 
-### Langkah 1: Inisialisasi Geometry Factory
-Mulailah dengan membuat instance `GeometryFactory` yang akan menghasilkan semua objek geometri.
+### Anchor definisi
+Kelas `GeometryFactory` adalah titik masuk Aspose.GIS untuk membangun semua objek geometri; ia menyediakan metode seperti `CreateLineString` dan `CreateMultiLineString`.
 
-### Langkah 2: Bangun Objek LineString Individu
-Buat setiap `LineString` yang ingin Anda sertakan dalam geometri multi‑part. Berikan pasangan koordinat yang mendefinisikan setiap garis.
+### Langkah 1: inisialisasi geometry factory
+Buat instance `GeometryFactory` yang akan menghasilkan setiap objek geometri yang Anda perlukan.
 
-### Langkah 3: Gabungkan LineString menjadi MultiLineString
-Berikan koleksi objek `LineString` ke metode `CreateMultiLineString` pada factory.
+### Langkah 2: membangun objek LineString individual
+Untuk setiap garis yang ingin Anda sertakan, panggil `CreateLineString` dengan array pasangan koordinat. Kelas `LineString` mewakili daftar titik yang terurut.
 
-### Langkah 4: Konversi MultiLineString ke WKT
-Panggil metode `ToWkt()` pada objek MultiLineString yang dihasilkan. String yang dikembalikan dapat disimpan ke file, dikirim melalui jaringan, atau digunakan dalam kolom basis data.
+### Langkah 3: menggabungkan objek LineString menjadi MultiLineString
+`MultiLineString` mewakili koleksi objek `LineString`.  
+Berikan koleksi instance `LineString` ke `CreateMultiLineString`. Objek yang dihasilkan mengelompokkannya di bawah satu pengidentifikasi.
 
-### Langkah 5: Gunakan MultiLineString
-Anda kini dapat menambahkan geometri ke sebuah fitur, menuliskannya ke file, atau melakukan kueri spasial seperti menghitung vertex. Tutorial **count points in geometry** menunjukkan cara mengambil total jumlah vertex di seluruh LineString yang menjadi komponennya.
+### Langkah 4: mengonversi MultiLineString ke WKT
+Metode `ToWkt()` mengembalikan geometri sebagai string Well‑Known Text.  
+Panggil `ToWkt()` pada instance `MultiLineString`. Metode ini mengembalikan representasi Well‑Known Text seperti `MULTILINESTRING ((x1 y1, x2 y2), (x3 y3, x4 y4))`.
 
-> **Catatan:** Kode C# sebenarnya untuk langkah‑langkah ini identik di semua tutorial Aspose.GIS yang membahas pembuatan geometri. Lihat tutorial yang ditautkan untuk potongan kode yang tepat.
+### Langkah 5: menggunakan MultiLineString
+Anda kini dapat melampirkan geometri ke sebuah fitur, menuliskannya ke file, atau menjalankan kueri spasial seperti menghitung vertex. Tutorial **count points in geometry** menunjukkan cara mengambil total jumlah vertex di semua `LineString` yang menyusunnya.
 
-## Kasus Penggunaan Umum
-- **Pemodelan jaringan jalan:** Simpan setiap segmen jalan sebagai `LineString` dan kelompokkan menjadi `MultiLineString` untuk analisis tingkat distrik.  
-- **Pemetaan sungai dan aliran:** Gabungkan beberapa jangkauan sungai menjadi satu geometri untuk menghitung panjang total atau melakukan analisis daerah aliran sungai.  
-- **Pertukaran data:** Ekspor geometri sebagai WKT untuk dibagikan dengan platform GIS pihak ketiga yang mungkin tidak mendukung format asli Aspose.GIS.
+> **Note:** The actual C# code for these steps is identical across all Aspose.GIS tutorials that deal with geometry creation. Refer to the linked tutorials for the exact code snippets.
 
-## Topik Geometri Terkait yang Mungkin Anda Jelajahi
+## Kasus penggunaan umum
+- **Road network modelling:** Store each road segment as a `LineString` and group them into a `MultiLineString` for district‑level analysis.  
+- **River and stream mapping:** Combine multiple river reaches into a single geometry to calculate total length or perform watershed analysis.  
+- **Data exchange:** Export the geometry as WKT to share with third‑party GIS platforms that may not support native Aspose.GIS formats.
 
-### Cara **membuat compound curve**
+## Topik geometri terkait yang mungkin Anda jelajahi
+
+### Cara membuat compound curve
 Jika Anda memerlukan jalur melengkung yang halus, tutorial **create compound curve** menunjukkan cara menggabungkan beberapa segmen kurva menjadi satu geometri.
 
-### Cara **membuat geometry collection**
-Sebuah **geometry collection** memungkinkan Anda menyimpan tipe geometri heterogen (point, line, polygon) bersama-sama. Lihat tutorial “Create Geometry Collection” untuk detailnya.
+### Cara membuat geometry collection
+**Geometry collection** memungkinkan Anda menyimpan tipe geometri heterogen (titik, garis, poligon) bersama-sama. Lihat tutorial “Create Geometry Collection” untuk detailnya.
 
-### Cara **menghitung titik dalam geometri**
-Saat bekerja dengan bentuk kompleks, Anda mungkin ingin mengetahui berapa banyak vertex yang mereka miliki. Panduan “Count Points in Geometry” memandu Anda melalui proses tersebut.
+### Cara menghitung titik dalam geometri
+Saat bekerja dengan bentuk kompleks, Anda mungkin ingin mengetahui berapa banyak vertex yang terkandung. Panduan “Count Points in Geometry” memandu Anda melalui proses tersebut.
 
-### Cara **mengonversi koordinat .net**
+### Cara mengonversi koordinat .NET
 Seringkali Anda perlu mentransformasi data antar sistem koordinat. Tutorial “Convert Coordinates” menjelaskan langkah‑langkahnya untuk pengembang .NET.
 
-### Cara **membuat geometri polygon**
-Polygon adalah blok bangunan untuk fitur area. Tutorial “Create Polygon Geometry” mencakup segala hal mulai dari persegi sederhana hingga polygon multi‑part yang kompleks.
+### Cara membuat geometri polygon
+Poligon adalah blok bangunan untuk fitur area. Tutorial “Create Polygon Geometry” mencakup segala hal mulai dari persegi sederhana hingga poligon multipart yang kompleks.
 
-## Penanganan Data Geospasial dengan Aspose.GIS untuk .NET
-Link: [Buat Geometri LineString](./create-linestring-geometry/)
-Menyelami dasar‑dasar kerja dengan data geospasial di .NET. Tutorial ini memandu Anda melalui pembuatan, analisis, dan visualisasi peta dengan mudah menggunakan Aspose.GIS untuk .NET.
+## Penanganan data geospasial dengan Aspose.GIS untuk .NET
+Link: [Create LineString Geometry](./create-linestring-geometry/)
+Delve into the fundamentals of working with geospatial data in .NET. This tutorial guides you through creating, analyzing, and visualizing maps effortlessly using Aspose.GIS for .NET.
 
-## Buat Geometri Polygon dengan Aspose.GIS untuk .NET
-Link: [Buat Geometri Polygon](./create-polygon-geometry/)
-Kuasi seni membuat geometri polygon dengan panduan langkah‑demi‑langkah yang disesuaikan untuk pengembang .NET. Manfaatkan potensi Aspose.GIS dalam aplikasi spasial Anda.
+## Membuat geometri polygon dengan Aspose.GIS untuk .NET
+Link: [Create Polygon Geometry](./create-polygon-geometry/)
+Master the art of creating polygon geometry with step‑by‑step guidance tailored for .NET developers. Unleash the potential of Aspose.GIS in your spatial applications.
 
-## Buat Geometri Polygon dengan Lubang menggunakan Aspose.GIS
-Link: [Buat Polygon dengan Lubang](./create-polygon-with-hole-geometry/)
-Tingkatkan keahlian Anda dengan mempelajari cara membuat polygon dengan lubang menggunakan Aspose.GIS untuk .NET. Tutorial detail dengan contoh kode menanti Anda.
+## Membuat geometri polygon dengan lubang
+Link: [Create Polygon with Hole Geometry](./create-polygon-with-hole-geometry/)
+Elevate your skills by learning how to create polygon with hole geometry using Aspose.GIS for .NET. A detailed tutorial with code examples awaits you.
 
-## Buat Geometri MultiPoint dengan Aspose.GIS untuk .NET
-Link: [Buat Geometri MultiPoint](./create-multipoint-geometry/)
-Jadilah ahli dalam membuat geometri multi‑point dengan mudah. Tutorial komprehensif ini membekali pengembang .NET dengan pengetahuan untuk unggul dalam manipulasi data geospasial.
+## Membuat geometri multipoint dengan Aspose.GIS untuk .NET
+Link: [Create MultiPoint Geometry](./create-multipoint-geometry/)
+Become a master in creating multi‑point geometries effortlessly. This comprehensive tutorial equips .NET developers with the knowledge to excel in geospatial data manipulation.
 
-## Buat Geometri MultiLineString menggunakan Aspose.GIS untuk .NET
-Link: [Buat Geometri MultiLineString](./create-multilinestring-geometry/)
-Jelajahi kekuatan Aspose.GIS untuk .NET dalam mengelola data geospasial secara efisien. Unduh sekarang untuk pengalaman mulus dalam membuat geometri multiline string.
+## Membuat geometri multilinestring menggunakan Aspose.GIS untuk .NET
+Link: [Create MultiLineString Geometry](./create-multilinestring-geometry/)
+Explore the power of Aspose.GIS for .NET in efficiently managing geospatial data. Download now for a seamless experience in creating multi‑line string geometries.
 
-## Buat Geometri MultiPolygon dengan Aspose.GIS
-Link: [Buat Geometri MultiPolygon](./create-multipolygon-geometry/)
-Pelajari seni membuat geometri MultiPolygon dengan Aspose.GIS untuk .NET. Panduan langkah‑demi‑langkah ini ditujukan untuk pemula, dengan versi percobaan gratis tersedia untuk pengalaman langsung.
+## Membuat geometri multipolygon dengan Aspose.GIS
+Link: [Create MultiPolygon Geometry](./create-multipolygon-geometry/)
+Learn the art of creating MultiPolygon geometry with step‑by‑step guidance for beginners, with a free trial available for hands‑on experience.
 
-## Buat Geometri MultiCurve dengan Aspose.GIS untuk .NET
-Link: [Buat Geometri MultiCurve](./create-multicurve-geometry/)
-Representasikan dan analisis data spasial secara efisien dengan menguasai pembuatan geometri MultiCurve di .NET menggunakan Aspose.GIS.
+## Membuat geometri multicurve dengan Aspose.GIS untuk .NET
+Link: [Create MultiCurve Geometry](./create-multicurve-geometry/)
+Efficiently represent and analyze spatial data by mastering the creation of MultiCurve geometry in .NET with Aspose.GIS.
 
-## Buat Geometri Curve Polygon dengan Aspose.GIS untuk .NET
-Link: [Buat Geometri Curve Polygon](./create-curve-polygon-geometry/)
-Selami pembuatan efisien Geometri Curve Polygon menggunakan Aspose.GIS untuk .NET. Ikuti panduan langkah‑demi‑langkah kami yang terintegrasi mulus ke aplikasi GIS Anda.
+## Membuat geometri curve polygon dengan Aspose.GIS untuk .NET
+Link: [Create Curve Polygon Geometry](./create-curve-polygon-geometry/)
+Dive into the efficient creation of Curve Polygon Geometry using Aspose.GIS for .NET. Follow our step‑by‑step guide seamlessly integrating into your GIS applications.
 
-## Buat Geometri Compound Curve dengan Aspose.GIS di .NET
-Link: [Buat Geometri Compound Curve](./create-compound-curve-geometry/)
-Pelajari seni membuat geometri compound curve secara mulus di .NET menggunakan Aspose.GIS untuk pemrosesan data geospasial.
+## Membuat geometri compound curve dengan Aspose.GIS di .NET
+Link: [Create Compound Curve Geometry](./create-compound-curve-geometry/)
+Learn the art of creating compound curve geometries seamlessly in .NET using Aspose.GIS for geospatial data processing.
 
-## Buat Geometri Circular String dengan Aspose.GIS untuk .NET
-Link: [Buat Geometri Circular String](./create-circular-string-geometry/)
-Buka potensi pengembangan GIS dengan Aspose.GIS untuk .NET. Buat, analisis, dan visualisasikan data spasial dengan mudah menggunakan geometri circular string.
+## Membuat geometri circular string dengan Aspose.GIS untuk .NET
+Link: [Create Circular String Geometry](./create-circular-string-geometry/)
+Unlock the power of GIS development with Aspose.GIS for .NET. Create, analyze, and visualize spatial data effortlessly using circular string geometries.
 
-## Buat Geometry Collection dengan Aspose.GIS untuk .NET
-Link: [Buat Geometry Collection](./create-geometry-collection/)
-Buat, visualisasikan, dan analisis data berbasis lokasi secara mulus di aplikasi .NET Anda. Manfaatkan kekuatan manipulasi data geospasial dengan Aspose.GIS.
+## Membuat geometry collection dengan Aspose.GIS untuk .NET
+Link: [Create Geometry Collection](./create-geometry-collection/)
+Seamlessly create, visualize, and analyze location‑based data in your .NET applications. Unlock the power of geospatial data manipulation with Aspose.GIS.
 
-## Mengonversi Geometri ke Format yang Dapat Diedit dengan Aspose.GIS
-Link: [Konversi Geometri ke Format yang Dapat Diedit](./convert-geometry-to-editable/)
-Temukan cara mengonversi geometri ke format yang dapat diedit dengan mudah menggunakan Aspose.GIS untuk .NET. Selami tutorial langkah‑demi‑langkah ini untuk meningkatkan kemampuan manipulasi data spasial Anda.
+## Mengonversi geometri ke format yang dapat diedit dengan Aspose.GIS
+Link: [Convert Geometry to Editable Format](./convert-geometry-to-editable/)
+Discover the art of converting geometry to an editable format effortlessly using Aspose.GIS for .NET. Dive into this step‑by‑step tutorial to enhance your spatial data manipulation skills.
 
-## Hitung Geometri dalam Geometri dengan Aspose.GIS untuk .NET
-Link: [Hitung Geometri dalam Geometri](./count-geometries-in-geometry/)
-Pelajari cara menghitung geometri dalam sebuah geometri menggunakan Aspose.GIS untuk .NET. Tutorial ini memberikan panduan langkah‑demi‑langkah dengan contoh kode untuk pengembang.
+## Menghitung geometri dalam geometri dengan Aspose.GIS untuk .NET
+Link: [Count Geometries in Geometry](./count-geometries-in-geometry/)
+Learn how to count geometries in a geometry using Aspose.GIS for .NET. This tutorial provides step‑by‑step guidance with code examples for developers.
 
-## Hitung Titik dalam Geometri dengan Aspose.GIS untuk .NET
-Link: [Hitung Titik dalam Geometri](./count-points-in-geometry/)
-Manfaatkan Aspose.GIS untuk .NET dalam memanipulasi data geografis dengan mudah. Tutorial komprehensif tersedia untuk meningkatkan keahlian Anda.
+## Menghitung titik dalam geometri dengan Aspose.GIS untuk .NET
+Link: [Count Points in Geometry](./count-points-in-geometry/)
+Utilize Aspose.GIS for .NET to manipulate geographic data effortlessly. Comprehensive tutorials are available to enhance your skills.
 
-## Konversi Koordinat dengan Aspose.GIS
-Link: [Konversi Koordinat](./convert-coordinates/)
-Pelajari cara mengonversi koordinat dengan Aspose.GIS untuk .NET. Panduan langkah‑demi‑langkah ini menyediakan prasyarat, FAQ, dan semua yang Anda perlukan untuk mengonversi koordinat dalam aplikasi Anda.
+## Konversi koordinat dengan Aspose.GIS
+Link: [Convert Coordinates](./convert-coordinates/)
+Learn how to convert coordinates with Aspose.GIS for .NET. This step‑by‑step guide provides prerequisites, FAQs, and everything you need to seamlessly convert coordinates in your applications.
 
-Sebagai kesimpulan, memperkuat perjalanan pengembangan .NET Anda dengan tutorial Aspose.GIS memastikan Anda memiliki keterampilan untuk memanipulasi, memvisualisasikan, dan menganalisis data geospasial dengan mudah. Selamat coding!
-
-## Tutorial Pembuatan Geometri
+## Tutorial pembuatan geometri
 ### [Penanganan Data Geospasial dengan Aspose.GIS untuk .NET](./create-linestring-geometry/)
-Pelajari cara bekerja dengan data geospasial dalam aplikasi .NET menggunakan Aspose.GIS untuk .NET. Buat, analisis, dan visualisasikan peta dengan mudah.
-### [Buat Geometri Polygon dengan Aspose.GIS untuk .NET](./create-polygon-geometry/)
-Pelajari cara membuat geometri polygon menggunakan Aspose.GIS untuk .NET. Tutorial langkah‑demi‑langkah untuk pengembang .NET.
-### [Buat Polygon dengan Lubang menggunakan Aspose.GIS](./create-polygon-with-hole-geometry/)
-Pelajari cara membuat polygon dengan lubang menggunakan Aspose.GIS untuk .NET. Tutorial langkah‑demi‑langkah dengan contoh kode.
-### [Buat Geometri MultiPoint dengan Aspose.GIS untuk .NET](./create-multipoint-geometry/)
-Kuasi Aspose.GIS untuk .NET: Pelajari cara membuat geometri multi‑point dengan mudah. Tutorial komprehensif untuk pengembang.
-### [Buat Geometri MultiLineString menggunakan Aspose.GIS untuk .NET](./create-multilinestring-geometry/)
-Jelajahi kekuatan Aspose.GIS untuk .NET dalam mengelola data geospasial secara efisien. Unduh sekarang untuk pengalaman mulus.
-### [Buat Geometri MultiPolygon dengan Aspose.GIS](./create-multipolygon-geometry/)
-Pelajari cara membuat geometri MultiPolygon menggunakan Aspose.GIS untuk .NET. Panduan langkah‑demi‑langkah untuk pemula. Versi percobaan gratis tersedia.
-### [Buat Geometri MultiCurve dengan Aspose.GIS untuk .NET](./create-multicurve-geometry/)
-Pelajari cara membuat geometri MultiCurve di .NET dengan Aspose.GIS untuk representasi dan analisis data spasial yang efisien.
-### [Buat Geometri Curve Polygon dengan Aspose.GIS untuk .NET](./create-curve-polygon-geometry/)
-Pelajari cara efisien membuat Geometri Curve Polygon menggunakan Aspose.GIS untuk .NET. Ikuti panduan langkah‑demi‑langkah kami untuk integrasi mulus ke aplikasi GIS Anda.
-### [Buat Geometri Compound Curve dengan Aspose.GIS di .NET](./create-compound-curve-geometry/)
-Pelajari cara membuat geometri compound curve di .NET menggunakan Aspose.GIS untuk pemrosesan data geospasial yang mulus.
-### [Buat Geometri Circular String dengan Aspose.GIS untuk .NET](./create-circular-string-geometry/)
-Buka potensi pengembangan GIS dengan Aspose.GIS untuk .NET. Buat, analisis, dan visualisasikan data spasial dengan mudah.
-### [Buat Geometry Collection dengan Aspose.GIS untuk .NET](./create-geometry-collection/)
-Manfaatkan kekuatan manipulasi data geospasial dengan Aspose.GIS untuk .NET. Buat, visualisasikan, dan analisis data berbasis lokasi secara mulus dalam aplikasi .NET Anda.
+Learn how to work with geospatial data in .NET applications using Aspose.GIS for .NET. Create, analyze, and visualize maps effortlessly.
+### [Membuat Geometri Polygon dengan Aspose.GIS untuk .NET](./create-polygon-geometry/)
+Learn how to create polygon geometry using Aspose.GIS for .NET. Step‑by‑step tutorial for .NET developers.
+### [Membuat Polygon dengan Hole Geometry menggunakan Aspose.GIS](./create-polygon-with-hole-geometry/)
+Learn how to create polygon with hole geometry using Aspose.GIS for .NET. Step‑by‑step tutorial with code examples.
+### [Membuat Geometri MultiPoint dengan Aspose.GIS untuk .NET](./create-multipoint-geometry/)
+Master Aspose.GIS for .NET: Learn to create multi‑point geometries effortlessly. Comprehensive tutorial for developers.
+### [Membuat Geometri MultiLineString menggunakan Aspose.GIS untuk .NET](./create-multilinestring-geometry/)
+Explore the power of Aspose.GIS for .NET in managing geospatial data efficiently. Download now for a seamless experience.
+### [Membuat Geometri MultiPolygon dengan Aspose.GIS](./create-multipolygon-geometry/)
+Learn how to create MultiPolygon geometry using Aspose.GIS for .NET. Step‑by‑step guide for beginners. Free trial available.
+### [Membuat Geometri MultiCurve dengan Aspose.GIS untuk .NET](./create-multicurve-geometry/)
+Learn how to create MultiCurve geometry in .NET with Aspose.GIS for efficient spatial data representation and analysis.
+### [Membuat Geometri Curve Polygon dengan Aspose.GIS untuk .NET](./create-curve-polygon-geometry/)
+Learn how efficiently create Curve Polygon Geometry using Aspose.GIS for .NET. Follow our step‑by‑step guide for seamless integration into your GIS applications.
+### [Membuat Geometri Compound Curve dengan Aspose.GIS di .NET](./create-compound-curve-geometry/)
+Learn how to create compound curve geometries in .NET using Aspose.GIS for seamless geospatial data processing.
+### [Membuat Geometri Circular String dengan Aspose.GIS untuk .NET](./create-circular-string-geometry/)
+Unlock the power of GIS development with Aspose.GIS for .NET. Create, analyze, and visualize spatial data effortlessly.
+### [Membuat Geometry Collection dengan Aspose.GIS untuk .NET](./create-geometry-collection/)
+Unlock the power of geospatial data manipulation with Aspose.GIS for .NET. Seamlessly create, visualize, and analyze location‑based data in your .NET applications.
 ### [Mengonversi Geometri ke Format yang Dapat Diedit dengan Aspose.GIS](./convert-geometry-to-editable/)
-Temukan cara mengonversi geometri ke format yang dapat diedit dengan mudah menggunakan Aspose.GIS untuk .NET. Selami tutorial langkah‑demi‑langkah ini.
-### [Hitung Geometri dalam Geometri dengan Aspose.GIS](./count-geometries-in-geometry/)
-Pelajari cara menghitung geometri dalam sebuah geometri menggunakan Aspose.GIS untuk .NET. Tutorial langkah‑demi‑langkah dengan contoh kode untuk pengembang.
-### [Hitung Titik dalam Geometri dengan Aspose.GIS untuk .NET](./count-points-in-geometry/)
-Pelajari cara memanfaatkan Aspose.GIS untuk .NET dalam memanipulasi data geografis dengan mudah. Tutorial komprehensif tersedia.
+Discover how to convert geometry to an editable format effortlessly using Aspose.GIS for .NET. Dive into this step‑by‑step tutorial.
+### [Menghitung Geometri dalam Geometri dengan Aspose.GIS](./count-geometries-in-geometry/)
+Learn how to count geometries in a geometry using Aspose.GIS for .NET. Step‑by‑step tutorial with code examples.
+### [Menghitung Titik dalam Geometri dengan Aspose.GIS untuk .NET](./count-points-in-geometry/)
+Learn how to utilize Aspose.GIS for .NET to manipulate geographic data effortlessly. Comprehensive tutorials available.
 ### [Konversi Koordinat dengan Aspose.GIS](./convert-coordinates/)
-Pelajari cara mengonversi koordinat dengan Aspose.GIS untuk .NET. Panduan langkah‑demi‑langkah, prasyarat, dan FAQ disediakan.
+Learn how to convert coordinates with Aspose.GIS for .NET. Step‑by‑step guide, prerequisites, and FAQs provided.
 
-## Pertanyaan yang Sering Diajukan
+## Pertanyaan yang sering diajukan
 
-**T: Bisakah saya menggunakan API MultiLineString dalam proyek .NET Core?**  
-J: Tentu saja. Aspose.GIS untuk .NET sepenuhnya mendukung .NET Core 3.1 dan yang lebih baru, termasuk .NET 5/6/7.
+**Q: Can I use the MultiLineString API in a .NET Core project?**  
+A: Absolutely. Aspose.GIS for .NET fully supports .NET Core 3.1 and later, including .NET 5/6/7.
 
-**T: Bagaimana cara mengekspor MultiLineString ke GeoJSON?**  
-J: Gunakan metode `Save` pada objek geometri, dengan menentukan `GeoJson` sebagai format output.
+**Q: Bagaimana cara mengekspor MultiLineString ke GeoJSON?**  
+A: Use the `Save` method on the geometry object, specifying `GeoJson` as the output format.
 
-**T: Apakah ada batasan jumlah komponen LineString dalam sebuah MultiLineString?**  
-J: Secara praktis tidak; satu‑satunya kendala adalah memori dan spesifikasi format file yang mendasarinya.
+**Q: Apakah ada batas jumlah komponen LineString dalam MultiLineString?**  
+A: Practically no; the only constraints are memory and the underlying file format specifications.
 
-**T: Apakah saya memerlukan lisensi terpisah untuk setiap tipe geometri?**  
-J: Tidak. Satu lisensi Aspose.GIS mencakup semua fitur pembuatan geometri, termasuk multiline strings, compound curves, dan geometry collections.
+**Q: Apakah saya memerlukan lisensi terpisah untuk setiap tipe geometri?**  
+A: No. A single Aspose.GIS license covers all geometry creation features, including multiline strings, compound curves, and geometry collections.
 
-**T: Di mana saya dapat menemukan praktik terbaik kinerja untuk dataset besar?**  
-J: Periksa bagian “Performance Tuning” dalam dokumentasi Aspose.GIS dan tutorial “Count Points in Geometry” untuk iterasi yang efisien.
+**Q: Di mana saya dapat menemukan praktik terbaik kinerja untuk dataset besar?**  
+A: Check the “Performance Tuning” section in the Aspose.GIS documentation and the “Count Points in Geometry” tutorial for efficient iteration.
 
-**Last Updated:** 2026-02-13  
+---
+
+**Last Updated:** 2026-08-13  
 **Tested With:** Aspose.GIS 24.12 for .NET  
-**Author:** Aspose
+**Author:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
-
 {{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/products-backtop-button >}}
+{{< /blocks/products/pf/main-wrap-class >}}

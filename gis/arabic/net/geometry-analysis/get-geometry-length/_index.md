@@ -1,10 +1,69 @@
 ---
-date: 2026-02-10
-description: تعلم كيفية حساب طول الهندسة في .NET باستخدام Aspose.GIS لمعالجة البيانات
-  المكانية بفعالية. يتضمن أمثلة على الحصول على طول الخط بـ C# وحساب طول الخط بـ C#.
-linktitle: Get Geometry Length
+date: 2026-08-13
+description: تعلم كيفية حساب طول الهندسة .NET باستخدام Aspose.GIS لمعالجة البيانات
+  المكانية بكفاءة. يتضمن أمثلة على الحصول على طول الخط C# وحساب طول الخط C#.
+keywords:
+- calculate geometry length .net
+- Aspose.GIS length calculation
+- C# geometry length
+lastmod: 2026-08-13
+linktitle: احصل على طول الهندسة
+og_description: احسب طول الهندسة .NET باستخدام Aspose.GIS. احصل على أمثلة لطول الخط
+  C# ومحيط المضلع في دليل مختصر وعالي الأداء لمطوري .NET.
+og_image_alt: Developer guide showing how to calculate geometry length in .NET with
+  Aspose.GIS
+og_title: احسب طول الهندسة .NET باستخدام Aspose.GIS – قياسات مكانية سريعة
+schemas:
+- author: Aspose
+  dateModified: '2026-08-13'
+  description: Learn how to calculate geometry length .NET using Aspose.GIS for efficient
+    spatial data handling. Includes get line length C# and calculate line length C#
+    examples.
+  headline: How to Calculate Geometry Length .NET with Aspose.GIS
+  type: TechArticle
+- description: Learn how to calculate geometry length .NET using Aspose.GIS for efficient
+    spatial data handling. Includes get line length C# and calculate line length C#
+    examples.
+  name: How to Calculate Geometry Length .NET with Aspose.GIS
+  steps:
+  - name: Create geometry objects
+    text: To begin with, create the geometry objects representing the shapes for which
+      you want to calculate the length. This can include lines, polygons, or any other
+      geometrical shapes.
+  - name: Calculate line length in C#
+    text: Once you have created the line geometry, you can calculate its length using
+      the `GetLength()` method. This demonstrates **calculate line length c#** in
+      a single line of code.
+  - name: Create polygon geometry
+    text: Similarly, you can create polygon geometry objects using the `Polygon` and
+      `LinearRing` classes.
+  - name: Get length of a polygon
+    text: For polygons, the `GetLength()` method returns the perimeter, which is effectively
+      the **how to get length** of the shape.
+  type: HowTo
+- questions:
+  - answer: Aspose.GIS for .NET is compatible with .NET Framework 4.6.1 or later versions,
+      as well as .NET 5/6/7.
+    question: Is Aspose.GIS for .NET compatible with all .NET frameworks?
+  - answer: Yes, you can avail of a free trial of Aspose.GIS for .NET from [here](https://releases.aspose.com/).
+    question: Can I try Aspose.GIS for .NET before purchasing?
+  - answer: You can find support and assistance from the Aspose.GIS community forum
+      [here](https://forum.aspose.com/c/gis/33).
+    question: Where can I find support for Aspose.GIS for .NET?
+  - answer: You can acquire a temporary license from [here](https://purchase.aspose.com/temporary-license/).
+    question: How can I obtain a temporary license for Aspose.GIS for .NET?
+  - answer: Yes, Aspose.GIS for .NET provides various formatting options to customize
+      the output format as per your requirements.
+    question: Can I customize the output format for geometry length calculations?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: كيفية حساب طول الهندسة في .NET باستخدام Aspose.GIS
+tags:
+- geometry length
+- Aspose.GIS
+- C# GIS
+- spatial calculations
+- line length
+title: كيفية حساب طول الهندسة .NET باستخدام Aspose.GIS
 url: /ar/net/geometry-analysis/get-geometry-length/
 weight: 24
 ---
@@ -15,40 +74,38 @@ weight: 24
 
 # كيفية حساب طول الهندسة .NET باستخدام Aspose.GIS
 
-## المقدمة
-إذا كنت تبحث عن طريقة واضحة وعملية **لحساب طول الهندسة .NET**، فقد وصلت إلى المكان المناسب. توفر لك Aspose.GIS for .NET مجموعة غنية من واجهات برمجة التطبيقات الموجهة لنظم المعلومات الجغرافية (GIS) التي تجعل الحسابات المكانية—مثل قياس طول الخط أو محيط المضلع—سهلة وسريعة. في هذا البرنامج التعليمي سنستعرض العملية بالكامل، من إعداد البيئة إلى كتابة كود C# الذي يُعيد قيم الطول بدقة.
+## مقدمة
+إذا كنت تبحث عن طريقة واضحة وعملية لـ **calculate geometry length .NET**، فقد وصلت إلى المكان الصحيح. توفر Aspose.GIS لـ .NET مجموعة غنية من APIs الموجهة لنظم المعلومات الجغرافية التي تجعل الحسابات المكانية—مثل قياس طول الخط أو محيط المضلع—سهلة وسريعة. في هذا الدرس سنستعرض العملية بالكامل، بدءًا من إعداد البيئة وحتى كتابة كود C# الذي يُعيد قيم الطول الدقيقة.
 
 ## إجابات سريعة
-- **ماذا تُعيد الدالة “GetLength()”؟** بالنسبة للخطوط تُعيد طول الخط؛ بالنسبة للمضلعات تُعيد المحيط.  
-- **ما هو الـ namespace المطلوب؟** `Aspose.Gis.Geometries`.  
-- **هل يمكنني استخدامها مع .NET 6؟** نعم، تدعم Aspose.GIS .NET 5، .NET 6، والإصدارات الأحدث.  
-- **هل أحتاج إلى ترخيص للتطوير؟** النسخة التجريبية المجانية تكفي للتقييم؛ الترخيص مطلوب للإنتاج.  
-- **هل الحساب واعٍ بوحدات القياس؟** يتم إرجاع الطول بوحدات نظام الإحداثيات (مثلاً، أمتار لنظام الإحداثيات المسقطة).
+- **What does “GetLength()” return?** بالنسبة للخطوط تُعيد طول الخط؛ بالنسبة للمضلعات تُعيد المحيط.  
+- **Which namespace is required?** `Aspose.Gis.Geometries`.  
+- **Can I use this with .NET 6?** نعم، يدعم Aspose.GIS .NET 5 و .NET 6 والإصدارات الأحدث.  
+- **Do I need a license for development?** النسخة التجريبية المجانية تكفي للتقييم؛ يلزم الحصول على ترخيص للإنتاج.  
+- **Is the calculation unit‑aware?** يتم إرجاع الطول بوحدات نظام الإحداثيات (مثلاً أمتار لنظام الإحداثيات المُسقطة).
 
 ## ما هو طول الهندسة؟
-`Geometry.GetLength()` هي طريقة تُعيد القياس الخطي لكائن الهندسة. بالنسبة لـ `LineString` تُعطي إجمالي طول الخط، بينما بالنسبة لـ `Polygon` تُعيد المحيط (مجموع جميع حوافه). تُجرد هذه الطريقة الرياضيات الأساسية، مما يتيح لك التركيز على منطق GIS عالي المستوى.
+تحسب Geometry.GetLength() المسافة الخطية الإجمالية لكائن الهندسة بناءً على قيم إحداثياته. بالنسبة لـ LineString تقوم بجمع المسافات بين الرؤوس المتتالية، وتعيد طول الخط. عند تطبيقها على Polygon تضيف أطوال جميع الحواف، مما يوفر محيط الشكل.
 
-## لماذا نستخدم Aspose.GIS لحساب الطول؟
-- **بدون تبعيات خارجية** – مكتبة .NET صافية، لا تحتاج إلى DLLs أصلية.  
-- **دقة عالية** – تستخدم حسابات ذات دقة مزدوجة للحصول على نتائج دقيقة.  
-- **متعددة المنصات** – تعمل على Windows وLinux وmacOS مع .NET Core/5/6+.  
+## لماذا نستخدم Aspose.GIS لحساب الأطوال؟
+توفر Aspose.GIS مكتبة .NET مُدارة بالكامل تقوم بالعمليات المكانية دون الحاجة إلى ثنائيات أصلية، مما يجعل النشر بسيطًا عبر Windows و Linux و macOS. تدعم أكثر من خمسين نظام إحداثيات مرجعية، وتُنتج نتائج ذات دقة مزدوجة حتى لسلاسل خطوط بطول مئات الكيلومترات، وتندمج بسلاسة مع مشاريع .NET 5/6/7، مما يضمن أداءً ثابتًا ودقةً عالية.
 
 ## المتطلبات المسبقة
-قبل أن نبدأ، تأكد من توفر ما يلي:
+قبل أن نبدأ، تأكد من وجود ما يلي:
 
-### 1. مكتبة Aspose.GIS for .NET
-أولاً، تحتاج إلى تثبيت مكتبة Aspose.GIS for .NET في بيئة التطوير الخاصة بك. إذا لم تقم بذلك بعد، يمكنك تحميلها من صفحة [Aspose.GIS for .NET Documentation](https://reference.aspose.com/gis/net/).
+### 1. مكتبة Aspose.GIS لـ .NET
+أولاً، تحتاج إلى تثبيت مكتبة Aspose.GIS لـ .NET في بيئة التطوير الخاصة بك. إذا لم تقم بذلك بعد، يمكنك تحميلها من صفحة [Aspose.GIS for .NET Documentation](https://reference.aspose.com/gis/net/).
 
 ### 2. بيئة تطوير .NET
-تأكد من إعداد بيئة تطوير .NET على جهازك. يشمل ذلك وجود Visual Studio أو أي بيئة تطوير متوافقة أخرى.
+تأكد من إعداد بيئة تطوير .NET على جهازك. يشمل ذلك وجود Visual Studio أو أي بيئة تطوير متكاملة (IDE) متوافقة أخرى مثبتة.
 
 ### 3. فهم أساسي للغة C#
-فهم أساسي للغة البرمجة C# ضروري لمتابعة هذا البرنامج التعليمي.
+فهم أساسي للغة البرمجة C# ضروري لمتابعة هذا الدرس.
 
-## استيراد الـ Namespaces
-لاستفادة من الوظائف التي توفرها Aspose.GIS for .NET، تحتاج إلى استيراد الـ namespaces الضرورية إلى مشروع C# الخاص بك.
+## استيراد مساحات الأسماء
+للاستفادة من الوظائف التي توفرها Aspose.GIS لـ .NET، تحتاج إلى استيراد مساحات الأسماء الضرورية إلى مشروع C# الخاص بك.
 
-### استيراد Namespace Aspose.GIS
+### استيراد مساحة الاسم Aspose.GIS
 ```csharp
 using Aspose.Gis.Geometries;
 using System;
@@ -58,9 +115,11 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## كيفية الحصول على طول الخط في C#
+## كيفية الحصول على طول الخط C#
+يمثل `LineString` في Aspose.GIS سلسلة من نقطتين أو أكثر متصلة بقطاعات خطية مستقيمة، تُنمذج الميزات الخطية مثل الطرق والأنهار أو خطوط المرافق ضمن نظام إحداثيات مرجعي معين. بعد إنشاء `LineString` بالنقاط المطلوبة، تُعيد طريقة `GetLength()` المسافة الإجمالية المقاسة بوحدات CRS الخاصة بالهندسة، مما يتيح لك الحصول بسرعة على قياسات دقيقة للخط لأغراض التوجيه أو التحليل القائم على المسافة أو التقارير، ويمكن معالجتها أو تخزينها حسب الحاجة.
+
 ### الخطوة 1: إنشاء كائنات الهندسة
-لبدء العمل، أنشئ كائنات الهندسة التي تمثل الأشكال التي تريد حساب طولها. يمكن أن تشمل هذه الخطوط، المضلعات، أو أي أشكال هندسية أخرى.
+للبدء، أنشئ كائنات الهندسة التي تمثل الأشكال التي تريد حساب طولها. يمكن أن تشمل ذلك الخطوط، المضلعات، أو أي أشكال هندسية أخرى.
 
 ```csharp
 var line = new LineString();
@@ -70,15 +129,17 @@ line.AddPoint(2, 0);
 ```
 
 ### الخطوة 2: حساب طول الخط في C#
-بعد إنشاء كائن الخط، يمكنك حساب طوله باستخدام طريقة `GetLength()`. هذا يوضح **calculate line length c#** في سطر واحد من الكود.
+بعد إنشاء هندسة الخط، يمكنك حساب طولها باستخدام طريقة `GetLength()`. هذا يُظهر **calculate line length c#** في سطر واحد من الكود.
 
 ```csharp
 Console.WriteLine("{0:F}", line.GetLength()); // Output: 4.83
 ```
 
-## كيفية حساب طول الخط في C# للمضلعات
-### الخطوة 3: إنشاء كائن مضلع
-وبالمثل، يمكنك إنشاء كائنات مضلع باستخدام الفئات `Polygon` و `LinearRing`.
+## كيفية حساب طول الخط C# للمضلعات
+يتكون `Polygon` في Aspose.GIS من `LinearRing` خارجي يحدد حدوده وحلقات داخلية اختيارية للثقوب، يُنمذج ميزات المساحة مثل القطع، البحيرات، أو المناطق الإدارية ضمن مرجع مكاني محدد. أنشئ `LinearRing` الخارجي بتزويد نقاط زوايا المضلع، ثم أنشئ `Polygon` باستخدام تلك الحلقة؛ عند استدعاء `GetLength()` على المضلع يتم حساب المحيط الكلي، وهو مفيد لمهام مثل تقدير طول السياج، تقارير الحدود، أو تحويل قيم المحيط إلى وحدات أخرى.
+
+### الخطوة 3: إنشاء هندسة المضلع
+وبالمثل، يمكنك إنشاء كائنات هندسة المضلع باستخدام الفئات `Polygon` و `LinearRing`.
 
 ```csharp
 var rectangle = new Polygon(new LinearRing(new[]
@@ -92,7 +153,7 @@ var rectangle = new Polygon(new LinearRing(new[]
 ```
 
 ### الخطوة 4: الحصول على طول المضلع
-بالنسبة للمضلعات، تُعيد طريقة `GetLength()` المحيط، وهو ما يمثل **how to get length** للشكل.
+بالنسبة للمضلعات، تُعيد طريقة `GetLength()` المحيط، وهو في الواقع **how to get length** للشكل.
 
 ```csharp
 Console.WriteLine("{0:F}", rectangle.GetLength()); // Output: 4.00
@@ -101,35 +162,42 @@ Console.WriteLine("{0:F}", rectangle.GetLength()); // Output: 4.00
 ## المشكلات الشائعة والحلول
 | المشكلة | الحل |
 |-------|----------|
-| **طول غير متوقع صفر** | تحقق من أن نظام إحداثيات الهندسة يطابق البيانات التي قدمتها؛ قد تتسبب النقاط المكررة في إنشاء مقاطع بطول صفر. |
-| **وحدات غير صحيحة** | تذكر أن `GetLength()` تُعيد القيم بوحدات نظام الإحداثيات المرجعي (CRS). قم بالتحويل إلى أمتار/أقدام إذا لزم الأمر. |
-| **الأداء مع مجموعات بيانات كبيرة** | أعد استخدام كائنات الهندسة قدر الإمكان وتجنب إنشاء آلاف النقاط المؤقتة داخل الحلقات الضيقة. |
+| **طول صفر غير متوقع** | تحقق من أن نظام إحداثيات الهندسة يتطابق مع البيانات التي قدمتها؛ قد تتسبب النقاط المكررة في قطاعات بطول صفر. |
+| **وحدات غير صحيحة** | تذكر أن `GetLength()` تُعيد القيم بوحدات نظام الإحداثيات. قم بالتحويل إلى أمتار/أقدام إذا لزم الأمر. |
+| **الأداء مع مجموعات البيانات الكبيرة** | أعد استخدام كائنات الهندسة عندما يكون ذلك ممكنًا وتجنب إنشاء آلاف النقاط المؤقتة داخل الحلقات الضيقة. |
 
 ## الأسئلة المتكررة
 
-**س: هل Aspose.GIS for .NET متوافق مع جميع إطارات .NET؟**  
-ج: Aspose.GIS for .NET متوافق مع .NET Framework 4.6.1 أو الإصدارات الأحدث، وكذلك .NET 5/6/7.
+**س:** هل Aspose.GIS لـ .NET متوافق مع جميع أطر .NET؟  
+**ج:** Aspose.GIS لـ .NET متوافق مع .NET Framework 4.6.1 أو الإصدارات الأحدث، وكذلك .NET 5/6/7.
 
-**س: هل يمكن تجربة Aspose.GIS for .NET قبل الشراء؟**  
-ج: نعم، يمكنك الحصول على نسخة تجريبية مجانية من Aspose.GIS for .NET من [هنا](https://releases.aspose.com/).
+**س:** هل يمكنني تجربة Aspose.GIS لـ .NET قبل الشراء؟  
+**ج:** نعم، يمكنك الحصول على نسخة تجريبية مجانية من Aspose.GIS لـ .NET من [here](https://releases.aspose.com/).
 
-**س: أين يمكنني العثور على الدعم لـ Aspose.GIS for .NET؟**  
-ج: يمكنك العثور على الدعم والمساعدة من منتدى مجتمع Aspose.GIS [هنا](https://forum.aspose.com/c/gis/33).
+**س:** أين يمكنني العثور على الدعم لـ Aspose.GIS لـ .NET؟  
+**ج:** يمكنك العثور على الدعم والمساعدة من منتدى مجتمع Aspose.GIS [here](https://forum.aspose.com/c/gis/33).
 
-**س: كيف يمكنني الحصول على ترخيص مؤقت لـ Aspose.GIS for .NET؟**  
-ج: يمكنك الحصول على ترخيص مؤقت من [هنا](https://purchase.aspose.com/temporary-license/).
+**س:** كيف يمكنني الحصول على ترخيص مؤقت لـ Aspose.GIS لـ .NET؟  
+**ج:** يمكنك الحصول على ترخيص مؤقت من [here](https://purchase.aspose.com/temporary-license/).
 
-**س: هل يمكنني تخصيص تنسيق الإخراج لحسابات طول الهندسة؟**  
-ج: نعم، توفر Aspose.GIS for .NET خيارات تنسيق متعددة لتخصيص تنسيق الإخراج وفقاً لمتطلباتك.
+**س:** هل يمكنني تخصيص تنسيق الإخراج لحسابات طول الهندسة؟  
+**ج:** نعم، توفر Aspose.GIS لـ .NET خيارات تنسيق متعددة لتخصيص تنسيق الإخراج وفقًا لمتطلباتك.
 
-## الخاتمة
-في هذا البرنامج التعليمي غطينا **كيفية حساب طول الهندسة .NET** لكل من الخطوط والمضلعات باستخدام Aspose.GIS for .NET. باتباع الأمثلة خطوة بخطوة، يمكنك الآن دمج قياسات مكانية دقيقة في أي تطبيق .NET، سواء كان أداة GIS سطح مكتب، خدمة ويب، أو خط أنابيب معالجة بيانات خلفية.
+## الخلاصة
+في هذا الدرس غطينا **how to calculate geometry length .NET** لكل من هندسات الخط والمضلع باستخدام Aspose.GIS لـ .NET. باتباع الأمثلة خطوة بخطوة، يمكنك الآن دمج قياسات مكانية دقيقة في أي تطبيق .NET، سواء كان أداة GIS سطح مكتب، خدمة ويب، أو خط أنابيب معالجة بيانات خلفية.
 
 ---
 
-**آخر تحديث:** 2026-02-10  
+**آخر تحديث:** 2026-08-13  
 **تم الاختبار مع:** Aspose.GIS 24.11 for .NET  
-**المؤلف:** Aspose  
+**المؤلف:** Aspose
+
+## دروس ذات صلة
+
+- [تعلم كيفية إنشاء هندسة LineString باستخدام Aspose.GIS لـ .NET](/gis/net/geometry-creation/create-linestring-geometry/)
+- [كيفية حساب المساحة باستخدام Aspose.GIS لـ .NET](/gis/net/geometry-analysis/get-geometry-area/)
+- [كيفية إنشاء هندسة نقطة والحصول على نوع الهندسة باستخدام Aspose.GIS لـ .NET](/gis/net/geometry-analysis/get-geometry-type/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
