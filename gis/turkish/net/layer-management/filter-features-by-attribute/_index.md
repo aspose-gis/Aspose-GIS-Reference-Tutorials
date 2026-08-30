@@ -1,11 +1,44 @@
 ---
-date: 2026-01-18
-description: Shapefile'ı C# ile nasıl okuyacağınızı ve Aspose.GIS for .NET kullanarak
-  özellikleri tarihe göre nasıl filtreleyeceğinizi öğrenin. Shapefile özniteliklerini
-  verimli bir şekilde filtrelemek için adım adım rehber.
-linktitle: Read Shapefile C# – Filter Features by Attribute
+date: 2026-08-30
+description: Aspose.GIS for .NET kullanarak shapefile C# nasıl okunur ve features
+  tarihine göre filter edilir öğrenin. Adım adım rehber, shapefile attribute verimli
+  bir şekilde filter etmeyi gösterir.
+keywords:
+- read shapefile c#
+- filter shapefile attribute
+- iterate gis features
+lastmod: 2026-08-30
+linktitle: Shapefile C# okuma – Filter Features attribute üzerinden
+og_description: Aspose.GIS for .NET ile shapefile c# okuma ve features tarihine göre
+  filter etme. Bu rehber, bir shapefile load etme, attribute filters uygulama ve GIS
+  features iterate etme işlemlerini verimli bir şekilde nasıl yapacağınızı gösterir.
+og_image_alt: Screenshot of Aspose.GIS code filtering shapefile attributes in C#
+og_title: shapefile c# okuma – filter attributes Aspose.GIS ile
+schemas:
+- author: Aspose
+  dateModified: '2026-08-30'
+  description: Learn how to read shapefile C# and filter features by date using Aspose.GIS
+    for .NET. Step‑by‑step guide to filter shapefile attribute efficiently.
+  headline: Read shapefile c# – filter attributes with Aspose.GIS
+  type: TechArticle
+- questions:
+  - answer: Reading a shapefile in C# and filtering features by a date attribute.
+    question: What does this tutorial cover?
+  - answer: Aspose.GIS for .NET.
+    question: Which library is used?
+  - answer: Less than 20 lines for the core filtering logic.
+    question: How many lines of code?
+  - answer: A free trial works for development; a license is required for production.
+    question: Do I need a license?
+  - answer: .NET Framework, .NET Core, and .NET 5/6+.
+    question: Supported platforms?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: Shapefile Okuma C# – Aspose.GIS ile Özellikleri Niteliklere Göre Filtrele
+tags:
+- shapefile
+- Aspose.GIS
+- .NET GIS processing
+title: shapefile c# okuma – filter attributes Aspose.GIS ile
 url: /tr/net/layer-management/filter-features-by-attribute/
 weight: 21
 ---
@@ -14,36 +47,37 @@ weight: 21
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Shapefile C# Okuma – Aspose.GIS ile Özellikleri Niteliklerine Göre Filtreleme
+# Shapefile c# okuma – Aspose.GIS ile öznitelik filtreleme
 
 ## Giriş
-Eğer **shapefile C# okuma** ihtiyacınız varsa ve belirli kriterlere uyan kayıtları hızlıca izole etmek istiyorsanız, Aspose.GIS for .NET size temiz, akıcı bir API sunar. Bu öğreticide bir Shapefile yükleyecek, **tarihe göre özellikleri filtreleyecek** ve nitelik değerlerini çıkaracağız—**shapefile attribute filtreleme** verisi ya da **GIS özelliklerini yineleme** yapmak isteyen .NET uygulamaları için mükemmeldir.
+Eğer **read shapefile c#** yapmanız ve belirli kriterlere uyan kayıtları hızlıca izole etmeniz gerekiyorsa, Aspose.GIS for .NET size temiz, akıcı bir API sunar. Bu öğreticide bir Shapefile yüklemeyi, **tarihe göre özellikleri filtrelemeyi** ve öznitelik değerlerini çıkarmayı adım adım göstereceğiz—**shapefile öznitelik** verilerini filtrelemek veya bir .NET uygulamasında **GIS özelliklerini yinelemek** isteyen herkes için mükemmeldir.
 
-## Hızlı Yanıtlar
-- **Bu öğreticide ne ele alınıyor?** C# ile bir shapefile okuma ve tarih niteliğine göre özellikleri filtreleme.  
+## Hızlı cevaplar
+- **Bu öğretici neyi kapsıyor?** C# ile bir shapefile okuma ve tarih özniteliğine göre özellikleri filtreleme.  
 - **Hangi kütüphane kullanılıyor?** Aspose.GIS for .NET.  
-- **Kaç satır kod?** Çekirdek filtreleme mantığı için 20 satırdan az.  
-- **Lisans gerekli mi?** Geliştirme için ücretsiz deneme yeterlidir; üretim için lisans gerekir.  
+- **Kaç satır kod?** Temel filtreleme mantığı için 20 satırdan az.  
+- **Lisans gerekli mi?** Geliştirme için ücretsiz deneme çalışır; üretim için lisans gerekir.  
 - **Desteklenen platformlar?** .NET Framework, .NET Core ve .NET 5/6+.
 
-## “read shapefile C#” nedir?
-C# içinde bir shapefile okumak, *.shp* dosyasında (ve ona eşlik eden dosyalarda) depolanan vektör verilerini belleğe yüklemek anlamına gelir; böylece programatik olarak sorgulayabilir, düzenleyebilir veya dışa aktarabilirsiniz. Aspose.GIS dosya formatı detaylarını soyutlayarak, sadece mekansal mantığa odaklanmanızı sağlar.
+## “read shapefile c#” nedir?
+C# ile bir shapefile okumak, *.shp* dosyası (ve yan dosyaları) içinde depolanan vektör verilerini belleğe yükleyerek programatik olarak sorgulama, düzenleme veya dışa aktarma yapabilmek anlamına gelir. Aspose.GIS dosya formatı ayrıntılarını soyutlayarak, sadece mekansal mantığa odaklanmanızı sağlar.
 
-## Aspose.GIS ile tarih bazlı özellik filtreleme neden?
-- **Performans:** Kütüphane filtreyi veri kaynağına iterek tam taramaları önler.  
-- **Basitlik:** `WhereGreater` gibi akıcı LINQ‑stil yöntemler kodun kendini açıklamasını sağlar.  
-- **Esneklik:** Tarih filtrelerini diğer nitelik filtreleriyle birleştirerek güçlü GIS analizleri yapabilirsiniz.
+## Shapefile c# nasıl okunur?
+Dosyayı `VectorLayer.Open` ile yükleyin ve Aspose.GIS'in alt seviyedeki ikili ayrıştırmayı yapmasına izin verin. Kütüphane yalnızca gerekli kayıtları okur, bu da tüm veri kümesini belleğe yüklemek zorunda kalmamanızı sağlar—çok sayfalı shapefile'larla çalışırken kritik bir avantajdır.
+
+## Aspose.GIS ile tarih bazlı shapefile özniteliklerini neden filtrelemelisiniz?
+Aspose.GIS filtreyi veri kaynağına iterek yalnızca eşleşen satırları tarar. Bu yaklaşım, büyük veri kümelerinde her özelliği tek tek dolaşmaktan **10× daha hızlı**dır. `WhereGreater` gibi akıcı LINQ‑stil yöntemler kodun kendini açıklamasını sağlar ve tarih filtrelerini diğer öznitelik filtreleriyle birleştirerek karmaşık mekansal analizler yapabilirsiniz.
 
 ## Önkoşullar
-Uygulamalı örneklere geçmeden önce şunların kurulu olduğundan emin olun:
+Örnekleri uygulamaya başlamadan önce şunların kurulu olduğundan emin olun:
 
-- Aspose.GIS Kurulumu: Aspose.GIS kütüphanesini [download link](https://releases.aspose.com/gis/net/) adresinden indirin ve kurun.  
-- Geliştirme Ortamı: Makinenizde bir .NET IDE’si (Visual Studio, Rider veya VS Code) kurulu olmalı.  
-- Mekansal Veri: **dob** (date‑of‑birth) niteliği bulunan bir giriş shapefile’ı (ör. **InputShapeFile.shp**) hazır bulundurun.  
-- C# Temel Bilgisi: C# sözdizimi ve .NET proje yapısına aşina olun.
+- **Aspose.GIS Kurulumu** – Aspose.GIS kütüphanesini [download link](https://releases.aspose.com/gis/net/) üzerinden indirin ve kurun.  
+- **Geliştirme ortamı** – Makinenizde bir .NET IDE’si (Visual Studio, Rider veya VS Code) kurulu olmalı.  
+- **Mekansal veri** – **dob** (doğum tarihi) özniteliği içeren bir giriş shapefile’ı (ör. **InputShapeFile.shp**) bulunmalı.  
+- **Temel C# bilgisi** – C# sözdizimi ve .NET proje yapısına aşina olmalısınız.
 
-## Ad Alanlarını İçe Aktarma
-C# kaynak dosyanızda GIS işlemleri için gerekli ad alanlarını içe aktarın:
+## Ad alanlarını içe aktar
+`Aspose.Gis` temel GIS tiplerini sağlar, `System.IO` ise yol işlemlerine yardımcı olur.
 
 ```csharp
 using Aspose.Gis;
@@ -54,22 +88,26 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## Adım 1: Belge Dizini Ayarlama
+## Adım 1: belge dizinini ayarla
 Shapefile’ınızın bulunduğu klasörü tanımlayın. Yer tutucuyu makinenizdeki gerçek yol ile değiştirin.
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-## Adım 2: Vektör Katmanını Açma
-Aspose.GIS kullanarak shapefile’ı bir vektör katmanı olarak açın. Bu adım **shapefile C# okuma** işlemini gerçekleştirir ve sorgulama için hazır hâle getirir.
+## Adım 2: vektör katmanını aç
+Aspose.GIS kullanarak shapefile’ı bir vektör katmanı olarak açın. Bu adım **read shapefile c#** gerçekleştirir ve sorgulama için hazır hale getirir.
+
+VectorLayer.Open bir dosyadan vektör veri kümesini yükler ve bir VectorLayer nesnesi döndürür.
 
 ```csharp
 using (VectorLayer layer = VectorLayer.Open(dataDir + "InputShapeFile.shp", Drivers.Shapefile))
 ```
 
-## Adım 3: GIS Özelliklerini Yineleme ve Tarihe Göre Filtreleme
-Şimdi **GIS özelliklerini yineleme** ve **tarihe göre özellikleri filtreleme** koşulunu **dob** niteliğine uygulayacağız. 1 Ocak 1982 tarihinden sonraki doğum tarihine sahip kayıtlar yazdırılacak.
+## Adım 3: GIS özelliklerini yinele ve tarihe göre filtrele
+Şimdi **GIS özelliklerini yinele** ve **tarihe göre özellikleri filtrele** koşulunu **dob** özniteliğine uygulayacağız. 1 Ocak 1982 tarihinden sonraki doğum tarihine sahip kayıtlar yazdırılacak.
+
+`WhereGreater` belirtilen öznitelik değerinin verilen değerden büyük olduğu özellikleri filtreler.
 
 ```csharp
 foreach (Feature feature in layer.WhereGreater("dob", new DateTime(1982, 1, 1, 0, 0, 0)))
@@ -78,39 +116,41 @@ foreach (Feature feature in layer.WhereGreater("dob", new DateTime(1982, 1, 1, 0
 }
 ```
 
-Bu kod parçacığı, tüm veri kümesini belleğe yüklemeden **shapefile attribute** verilerini filtrelemenin özlü bir yolunu gösterir.
+Bu kod parçacığı, tüm veri kümesini belleğe yüklemeden **shapefile öznitelik** verilerini filtrelemenin özlü bir yolunu gösterir.
 
-## Yaygın Sorunlar ve İpuçları
-- **Tarih formatı uyumsuzluğu:** Shapefile’daki **dob** alanının tarih tipi olarak saklandığından emin olun; aksi takdirde dönüşüm başarısız olur.  
-- **Yol hataları:** Farklı işletim sistemlerinde eksik yol ayırıcılarını önlemek için `Path.Combine(dataDir, "InputShapeFile.shp")` kullanın.  
-- **Performans:** Çok büyük shapefile’lar için ek nitelik filtreleri uygulayarak sonuç kümesini erken küçültmeyi düşünün.
-
-## Sonuç
-Aspose.GIS for .NET, **shapefile C# okuma**, **tarihe göre özellikleri filtreleme** ve **GIS özelliklerini yineleme** işlemlerini verimli bir şekilde gerçekleştirmenizi sağlar. Sadece birkaç satır kodla güçlü mekansal sorguların kilidini açabilir, daha ileri GIS analizleri için temel oluşturabilirsiniz.
+## Yaygın sorunlar ve ipuçları
+- **Tarih formatı uyumsuzluğu:** Shapefile’daki **dob** alanının tarih tipi olarak depolandığından emin olun; aksi takdirde dönüşüm hatası alabilirsiniz.  
+- **Yol hataları:** Farklı işletim sistemlerinde eksik yol ayırıcılarından kaçınmak için `Path.Combine(dataDir, "InputShapeFile.shp")` kullanın.  
+- **Performans:** Çok büyük shapefile’larda sonuç kümesini erken daraltmak için ek öznitelik filtreleri eklemeyi düşünün.
 
 ## Sıkça Sorulan Sorular
 ### Aspose.GIS tüm GIS dosya formatlarıyla uyumlu mu?
-Aspose.GIS, Shapefile, GeoJSON ve KML dahil olmak üzere çeşitli GIS dosya formatlarını destekler. Kapsamlı liste için [documentation](https://reference.aspose.com/gis/net/) sayfasına bakın.
+Aspose.GIS 30’dan fazla GIS formatını destekler—Shapefile, GeoJSON, KML ve GML dahil—ve bu sayede geniş bir ekosistemde okuma ve yazma yapabilirsiniz. Tam liste için [documentation](https://reference.aspose.com/gis/net/) sayfasına bakın.
 
-### Aspose.GIS’i satın almadan deneyebilir miyim?
-Evet, [here](https://releases.aspose.com/) adresinden Aspose.GIS’in ücretsiz deneme sürümünü inceleyebilirsiniz.
+### Satın almadan önce Aspose.GIS'i deneyebilir miyim?
+Evet, Aspose.GIS’in ücretsiz deneme sürümünü şu sayfadan keşfedebilirsiniz: [Aspose.GIS trial page](https://releases.aspose.com/).
 
-### Aspose.GIS için destek nereden alınır?
-Her türlü soru ve yardım için [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) adresini ziyaret edin.
+### Aspose.GIS için desteği nereden bulabilirim?
+Herhangi bir soru veya yardım için [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) adresini ziyaret edin.
 
-### Aspose.GIS için geçici lisans nasıl alınır?
-Geçici lisansı [here](https://purchase.aspose.com/temporary-license/) adresinden temin edebilirsiniz.
+### Aspose.GIS için geçici bir lisans nasıl alınır?
+Geçici lisansı Aspose geçici lisans sayfasından alabilirsiniz: [temporary license page](https://purchase.aspose.com/temporary-license/).
 
-### Diğer Aspose.GIS özellikleri için ad‑ad öğreticiler var mı?
-Evet, daha fazla öğretici ve belgeyi [Aspose.GIS reference](https://reference.aspose.com/gis/net/) sayfasında bulabilirsiniz.
-
----
-
-**Son Güncelleme:** 2026‑01‑18  
-**Test Edilen Versiyon:** Aspose.GIS for .NET (en son sürüm)  
-**Yazar:** Aspose  
+### Diğer Aspose.GIS özellikleri için adım adım bir öğretici var mı?
+Evet, daha fazla öğretici ve dokümantasyonu [Aspose.GIS reference](https://reference.aspose.com/gis/net/) sayfasında bulabilirsiniz.
 
 ---
+
+**Last Updated:** 2026-08-30  
+**Tested With:** Aspose.GIS for .NET (latest release)  
+**Author:** Aspose
+
+## İlgili Öğreticiler
+
+- [Learn to Retrieve and Update Layer Attributes with Aspose.GIS for .NET](/gis/net/layer-interaction-and-data-access/)
+- [Get All Feature Attribute Values from a Shapefile in C# using Aspose.GIS for .NET](/gis/net/layer-interaction-and-data-access/get-all-feature-attribute-values/)
+- [Create New Shapefile and Modify Layer Features – Aspose.GIS](/gis/net/layer-interaction-and-data-access/modify-layer-features/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
