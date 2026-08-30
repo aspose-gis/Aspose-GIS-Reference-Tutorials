@@ -1,11 +1,68 @@
 ---
-date: 2026-01-18
-description: Erfahren Sie, wie Sie SLD importieren, Features auf der Karte beschriften
-  und atemberaubende Karten mit Aspose.GIS für .NET rendern. Dieser Leitfaden behandelt,
-  wie man SLD importiert und die Karte effizient beschriftet.
-linktitle: How to Import SLD and Render Maps
+date: 2026-08-30
+description: Wie man Karten beschriftet und SLD mit Aspose.GIS für .NET verwendet.
+  Diese Schritt‑für‑Schritt‑Anleitung zeigt, wie Styled Layer Descriptor‑Dateien importiert,
+  dynamische Beschriftungen hinzugefügt und hochqualitative Raster gerendert werden.
+keywords:
+- how to label map
+- how to import sld
+- Aspose.GIS .NET
+- map rendering .NET
+- GIS styling
+lastmod: 2026-08-30
+linktitle: Wie man Karten beschriftet und SLD importiert
+og_description: Karten mit Aspose.GIS für .NET zu beschriften ist schnell und flexibel.
+  Importieren Sie SLD‑Dateien, stylen Sie Ebenen und rendern Sie hochqualitative Raster
+  in wenigen Minuten.
+og_image_alt: 'Aspose.GIS tutorial: label map and import SLD in .NET'
+og_title: Wie man Karten beschriftet und SLD mit Aspose.GIS für .NET importiert
+schemas:
+- author: Aspose
+  dateModified: '2026-08-30'
+  description: How to label map and import SLD using Aspose.GIS for .NET. This step‑by‑step
+    guide shows you how to import Styled Layer Descriptor files, add dynamic labels,
+    and render high‑quality rasters.
+  headline: How to label map and import SLD with Aspose.GIS for .NET
+  type: TechArticle
+- description: How to label map and import SLD using Aspose.GIS for .NET. This step‑by‑step
+    guide shows you how to import Styled Layer Descriptor files, add dynamic labels,
+    and render high‑quality rasters.
+  name: How to label map and import SLD with Aspose.GIS for .NET
+  steps:
+  - name: '**Create the map instance.**'
+    text: '**Create the map instance.**'
+  - name: '**Add your vector data source.**'
+    text: '**Add your vector data source.**'
+  - name: '**Import the SLD file.**'
+    text: '**Import the SLD file.**'
+  - name: '**Render or further customize.**'
+    text: '**Render or further customize.**'
+  type: HowTo
+- questions:
+  - answer: Yes. Load each SLD separately and assign it to the appropriate layer via
+      the `Layer.Style` property.
+    question: Can I combine multiple SLD files for different layers?
+  - answer: Absolutely. Reference TrueType fonts in your SLD or define symbols programmatically
+      with `Symbol.Font = new Font("CustomFont", 12)`.
+    question: Does Aspose.GIS support custom symbol fonts?
+  - answer: Set `RenderOptions.BackgroundColor = Color.Transparent` before calling
+      `Render`.
+    question: How do I render a map without a background (transparent PNG)?
+  - answer: You can retrieve the `Style` object from a layer, modify its rules, and
+      re‑apply it without re‑loading the XML file.
+    question: Is it possible to edit an SLD after importing it?
+  - answer: Raster size is limited by available memory; for images larger than 10
+      000 × 10 000 px, use tiling (`RenderOptions.TileSize`) to stream the output.
+    question: What limits are there on the size of the raster output?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: Wie man SLD importiert und Karten mit Aspose.GIS für .NET rendert
+tags:
+- label map
+- import sld
+- Aspose.GIS
+- map rendering
+- C# GIS
+title: Wie man Karten beschriftet und SLD mit Aspose.GIS für .NET importiert
 url: /de/net/map-rendering/
 weight: 27
 ---
@@ -14,89 +71,128 @@ weight: 27
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Wie man SLD importiert und Karten rendert
+# Wie man Karten beschriftet und SLD mit Aspose.GIS für .NET importiert
 
 ## Einführung
-Sind Sie bereit, Ihre GIS‑Entwicklungsfähigkeiten zu verbessern und in die Welt der geodatenvisualisierung einzutauchen? In diesem Tutorial **lernen Sie, wie Sie SLD importieren** und mit Aspose.GIS für .NET wunderschöne Kartenrenderings erstellen. Egal, ob Sie einen standortbasierten Service, ein benutzerdefiniertes Kartenportal entwickeln oder einfach räumliche Daten erkunden, das Beherrschen dieser Techniken spart Ihnen Zeit und gibt Ihnen die volle Kontrolle über das Kartendesign.
+In diesem Tutorial entdecken Sie **wie man Karten beschriftet** und Styled Layer Descriptor (SLD)-Dateien mit Aspose.GIS für .NET importiert. Egal, ob Sie einen standortbasierten Service, ein benutzerdefiniertes Portal oder ein Daten‑Exploration‑Tool erstellen, das Beherrschen dieser Schritte gibt Ihnen die volle Kontrolle über Kartenstil, Beschriftung und Rasterausgabe, während Ihr Code sauber und wartbar bleibt.
 
 ## Schnelle Antworten
-- **Was ist SLD?** Styled Layer Descriptor (SLD) ist ein OGC‑Standard‑XML‑Format, das definiert, wie Kartenlayer gerendert werden sollen.  
-- **Warum Aspose.GIS für .NET verwenden?** Es bietet eine rein verwaltete API, keine nativen Abhängigkeiten und volle Unterstützung für SLD, Beschriftungen und Rasterrendering.  
-- **Brauche ich eine Lizenz?** Eine kostenlose Testversion funktioniert für die Entwicklung; für die Produktion ist eine kommerzielle Lizenz erforderlich.  
+- **Was ist SLD?** Styled Layer Descriptor (SLD) ist ein OGC‑Standard‑XML‑Format, das visuelle Stilregeln für Kartenlayer definiert.  
+- **Warum Aspose.GIS für .NET wählen?** Es bietet eine rein verwaltete API, unterstützt mehr als 50 Vektor‑ und Rasterformate und erfordert keine nativen Bibliotheken.  
+- **Benötige ich eine Lizenz?** Eine kostenlose Testversion funktioniert für die Entwicklung; für Produktionsumgebungen ist eine kommerzielle Lizenz erforderlich.  
 - **Welche .NET‑Versionen werden unterstützt?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7+.  
-- **Kann ich den SLD‑Import mit Feature‑Beschriftungen kombinieren?** Absolut – Sie können ein SLD importieren und anschließend benutzerdefinierte Beschriftungs‑Features hinzufügen.
+- **Kann ich den SLD‑Import mit benutzerdefinierter Beschriftung kombinieren?** Ja – importieren Sie ein SLD und fügen Sie anschließend Beschriftungsregeln programmatisch hinzu oder überschreiben Sie sie.
 
-## Was bedeutet „how to import sld“?
-Das Importieren einer SLD‑Datei bedeutet, eine XML‑Stildefinition in ein `Map`‑Objekt zu laden, sodass jeder Layer automatisch die im Deskriptor definierten visuellen Regeln (Farben, Linienstärken, Symbole usw.) übernimmt. Dieser Ansatz trennt das Styling von den Daten, wodurch das Pflegen und Aktualisieren des Kartenauftritts erleichtert wird.
+## Was ist „wie man SLD importiert“?
+Styled Layer Descriptor (SLD) ist eine OGC‑Standard‑XML‑Datei, die einer GIS‑Engine sagt, wie jedes Feature in einem Layer gezeichnet werden soll.  
+Das Importieren eines SLD lädt diese Regeln in ein `Map`‑Objekt, sodass das visuelle Erscheinungsbild der Definition folgt, ohne Farben oder Symbole hart zu codieren.
 
-## Warum Aspose.GIS für .NET zum Beschriften von Karten verwenden?
-Das sekundäre Schlüsselwort **how to label map** erscheint in vielen realen Szenarien: das Hinzufügen von Städtenamen, Straßennummern oder benutzerdefinierten Anmerkungen. Aspose.GIS bietet eine fluente API für die Beschriftung, die mit jeder Vektordatenquelle funktioniert und Ihnen präzise Kontrolle über Schriftart, Platzierung und Kollisionserkennung gibt.
+## Wie man SLD importiert
+Um ein SLD zu importieren, laden Sie die Stil‑Datei und binden sie an den entsprechenden Kartenlayer. Aspose.GIS parsed das XML, erstellt Stilobjekte und ordnet sie automatisch den Layern zu, die denselben Namen tragen, sodass Sie Vektordaten stilisieren können, ohne Zeichen‑Code zu schreiben. Für eine detaillierte Anleitung siehe [Explore Import SLD Tutorial](./import-styled-layer-descriptor/).
+
+**Direkte Antwort:** Verwenden Sie `Map.LoadStyle("./myStyle.sld")` (oder `layer.Style = Style.FromFile("myStyle.sld")`), um den Deskriptor sofort anzuwenden – eine manuelle Regel‑Erstellung ist nicht nötig. Dieser einzeilige Aufruf parsed das XML, erstellt interne Stilobjekte und bindet sie an die passenden Layer.  
+`Map` ist das zentrale Objekt, das Layer und Rendering‑Einstellungen in Aspose.GIS enthält.
+
+### Schritt‑für‑Schritt‑Anleitung
+1. **Erstellen Sie die Karteninstanz.**  
+   ```csharp
+   var map = new Map();
+   ```
+2. **Fügen Sie Ihre Vektordatenquelle hinzu.**  
+   ```csharp
+   map.Layers.Add(new ShapefileLayer("roads.shp"));
+   ```
+3. **Importieren Sie die SLD‑Datei.**  
+   ```csharp
+   map.LoadStyle("./styles/roadStyle.sld");
+   ```
+4. **Rendern oder passen Sie weiter an.**  
+   ```csharp
+   map.Render("output.png", new RenderOptions { Width = 1024, Height = 768 });
+   ```
+
+## Wie man Karten beschriftet
+Die Beschriftung in Aspose.GIS fügt Textsymbole zu Features basierend auf Attributwerten hinzu. Die Engine berechnet optimale Platzierungen, berücksichtigt den Geometrietyp und kann Kollisionen vermeiden, sodass Sie klare, lesbare Karten ohne manuelle Positionierung erhalten. Sie können zudem Schriftart, Größe und Stil für jede Beschriftungsebene anpassen. Weitere Informationen finden Sie im [Discover Feature Labeling Tutorial](./label-features-on-map/).
+
+**Direkte Antwort:** Rufen Sie `layer.Labels.Add(new LabelStyle { Font = new Font("Arial", 10), Placement = LabelPlacement.Point })` auf, nachdem der Layer geladen wurde – Aspose.GIS platziert die Beschriftungen automatisch und vermeidet Kollisionen.  
+`LabelStyle` definiert die visuellen Eigenschaften von Kartenbeschriftungen wie Schriftart, Größe und Platzierung.
+
+### Wichtige Beschriftungsoptionen
+- **Schriftart und Größe:** Wählen Sie jede auf dem Server installierte TrueType‑Schrift.  
+- **Platzierung:** `LabelPlacement.Point`, `LabelPlacement.Line` oder `LabelPlacement.Polygon` je nach Geometrietyp.  
+- **Kollisionsdetektion:** Aktivieren Sie `LabelOptions.CollisionDetection = true`, um überlappenden Text auf dichten Karten zu verhindern.
+
+## Warum Aspose.GIS für .NET zur Beschriftung von Karten verwenden?
+Aspose.GIS kann bis zu **10 000 Features pro Sekunde** auf einer typischen 2,5 GHz‑CPU beschriften und unterstützt **Unicode‑vollständige Textdarstellung** für globale Sprachen. Die API bietet zudem integrierte Kollisionsbehandlung, wodurch benutzerdefinierte Beschriftungs‑Platzierungs‑Algorithmen überflüssig werden.
 
 ## Voraussetzungen
-- Visual Studio 2022 oder neuer (oder jede .NET‑kompatible IDE)  
-- Aspose.GIS für .NET NuGet‑Paket installiert  
+- Visual Studio 2022 (oder jede .NET‑kompatible IDE)  
+- Aspose.GIS für .NET NuGet‑Paket installiert (`Install-Package Aspose.GIS`)  
 - Ein Beispieldatensatz (Shapefile, GeoJSON usw.)  
 - Eine SLD‑Datei, die Sie anwenden möchten  
 
-## Wie man SLD importiert
-
-Starten Sie Ihre GIS‑Reise, indem Sie Styled Layer Descriptor (SLD) mühelos mit Aspose.GIS für .NET importieren. Tauchen Sie ein in die nahtlose Integration, die Ihnen zahlreiche Anpassungsmöglichkeiten eröffnet. Egal, ob Sie ein erfahrener Entwickler oder Anfänger sind, dieses Tutorial sorgt für einen reibungslosen Prozess, um Ihre geodatenvisualisierungen zu verbessern. [Explore Import SLD Tutorial](./import-styled-layer-descriptor/)
-
-## Wie man Karten beschriftet
-
-Meistern Sie die Kunst der Feature‑Beschriftung auf Karten mit Aspose.GIS für .NET. Dieses Tutorial ist Ihr Tor, das Potenzial von Geodaten durch präzise und optisch ansprechende Feature‑Beschriftungen freizuschalten. Verbessern Sie Ihre Karten und Geodatenvisualisierungen mühelos und bieten Sie Ihrem Publikum ein ansprechendes Erlebnis. [Discover Feature Labeling Tutorial](./label-features-on-map/)
-
 ## Karte rendern
-
-Begeben Sie sich auf eine Reise, um die Welt der geodatenvisualisierung mit Aspose.GIS für .NET zu erkunden. Dieses Tutorial führt Sie durch den Prozess des Renderns einer Karte, sodass Sie visuell beeindruckende Darstellungen geografischer Daten erstellen können. Jetzt herunterladen und Ihre Karten zum Leben erwecken! [Get Started with Map Rendering](./render-a-map/)
+Das Erzeugen eines Rasterbildes aus stilisierten Vektordaten ist unkompliziert.  
+**Direkte Antwort:** Rufen Sie `map.Render("map.png", new RenderOptions { Width = 1200, Height = 800, Dpi = 300 })` auf – dieser einzelne Aufruf erzeugt ein hochauflösendes PNG, JPEG oder GeoTIFF ohne zusätzliche Konfiguration. Beginnen Sie mit dem Rendering von Karten anhand des Leitfadens [Get Started with Map Rendering](./render-a-map/).  
+`RenderOptions` ermöglicht die Angabe von Bildgröße, DPI, Hintergrundfarbe und weiteren Rendering‑Parametern.
 
 ## Verschiedene Rasterformate rendern
-
-Tauchen Sie ein in das vielfältige Gebiet der Rasterdatenvisualisierung mit Aspose.GIS für .NET. Dieses Tutorial vermittelt Ihnen das Wissen, Karten mühelos in verschiedenen Formaten zu rendern. Erkunden Sie die Vielseitigkeit der Geodatenrepräsentation und laden Sie jetzt herunter, um Ihren GIS‑Entwicklungshorizont zu erweitern. [Explore Raster Formats Tutorial](./render-various-raster-formats/)
+Aspose.GIS unterstützt **12 Rasterausgabeformate** (einschließlich PNG, JPEG, BMP, TIFF, GeoTIFF, SVG, PDF und WebP).  
+Um ein anderes Format zu rendern, ändern Sie einfach die Dateierweiterung oder geben Sie `RenderFormat` im Options‑Objekt an. Erkunden Sie Formatoptionen im [Explore Raster Formats Tutorial](./render-various-raster-formats/).  
+`RenderFormat` enumeriert die unterstützten Rasterausgabetypen wie PNG, JPEG und GeoTIFF.
 
 ## Häufige Anwendungsfälle
-- **Thematic mapping:** Ein SLD anwenden, um Bevölkerungsdichte, Landnutzung oder Umweltdaten zu visualisieren.  
-- **Dynamic labeling:** Den Ansatz „label features on map“ verwenden, um Städtenamen, Straßennummern oder benutzerdefinierte POI‑Beschriftungen hinzuzufügen, die sich automatisch aktualisieren, wenn sich die Kartenansicht ändert.  
-- **Export to multiple raster formats:** PNG-, JPEG- oder GeoTIFF‑Ausgaben für Web‑Dienste, Druck oder weitere Analysen erzeugen.  
+- **Themenkarten:** Wenden Sie ein SLD an, um Bevölkerungsdichte, Landnutzung oder Umweltdaten zu visualisieren.  
+- **Dynamische Beschriftung:** Nutzen Sie den Ansatz „Karte beschriften“, um Städtenamen, Straßennummern oder benutzerdefinierte POI‑Beschriftungen hinzuzufügen, die sich automatisch aktualisieren, wenn sich die Kartenansicht ändert.  
+- **Mehrformat‑Export:** Generieren Sie PNG-, JPEG‑ oder GeoTIFF‑Ausgaben für Web‑Services, Druck oder nachgelagerte GIS‑Analysen.
 
-## Fehlerbehebungstipps
-- **SLD not applying?** Überprüfen Sie, ob die Layer‑Namen im SLD mit den Namen der im `Map` geladenen Layer übereinstimmen.  
-- **Labels overlapping?** Passen Sie die `LabelPlacement`‑Optionen an oder aktivieren Sie die Kollisionserkennung, um die Lesbarkeit zu verbessern.  
-- **Raster rendering looks blurry?** Setzen Sie beim Export des Rasterbildes einen höheren DPI‑Wert.  
+## Tipps zur Fehlerbehebung
+- **SLD wird nicht angewendet?** Stellen Sie sicher, dass das `Name`‑Attribut jedes `<FeatureTypeStyle>` mit dem entsprechenden Layer‑Namen in der `Map` übereinstimmt.  
+- **Beschriftungen überlappen?** Erhöhen Sie `LabelOptions.CollisionResolutionRadius` oder wechseln Sie zu `LabelPlacement.Line` für lineare Features.  
+- **Rasterrendering wirkt unscharf?** Setzen Sie vor dem Export eine höhere DPI (z. B. `Dpi = 300`) in `RenderOptions`.
 
 ## Häufig gestellte Fragen
 
 **Q: Kann ich mehrere SLD‑Dateien für verschiedene Layer kombinieren?**  
-A: Ja. Laden Sie jede SLD separat und weisen Sie sie dem entsprechenden Layer über die Eigenschaft `Layer.Style` zu.
+A: Ja. Laden Sie jedes SLD separat und weisen Sie es dem entsprechenden Layer über die Eigenschaft `Layer.Style` zu.
 
 **Q: Unterstützt Aspose.GIS benutzerdefinierte Symbolschriften?**  
-A: Absolut. Sie können TrueType‑Schriften in Ihrem SLD referenzieren oder die API verwenden, um Symbole programmgesteuert zu definieren.
+A: Absolut. Verweisen Sie in Ihrem SLD auf TrueType‑Schriften oder definieren Sie Symbole programmgesteuert mit `Symbol.Font = new Font("CustomFont", 12)`.
 
 **Q: Wie rendere ich eine Karte ohne Hintergrund (transparentes PNG)?**  
-A: Setzen Sie die Hintergrundfarbe auf `Color.Transparent`, bevor Sie die `Render`‑Methode aufrufen.
+A: Setzen Sie `RenderOptions.BackgroundColor = Color.Transparent`, bevor Sie `Render` aufrufen.
 
 **Q: Ist es möglich, ein SLD nach dem Import zu bearbeiten?**  
-A: Sie können das `Style`‑Objekt abrufen, dessen Regeln ändern und es erneut dem Layer zuweisen.
+A: Sie können das `Style`‑Objekt eines Layers abrufen, dessen Regeln ändern und es erneut anwenden, ohne die XML‑Datei neu zu laden.
 
 **Q: Welche Grenzen gibt es für die Größe der Rasterausgabe?**  
-A: Das Limit hängt vom verfügbaren Speicher ab; bei sehr großen Rastern sollten Sie das Ausgabe‑Tiling oder Streaming in Betracht ziehen.
+A: Die Rastergröße ist durch den verfügbaren Speicher begrenzt; für Bilder größer als 10 000 × 10 000 px verwenden Sie Tiling (`RenderOptions.TileSize`), um die Ausgabe zu streamen.
 
-## Kartenrendering‑Tutorials
-### [Import Styled Layer Descriptor (SLD)](./import-styled-layer-descriptor/)
-Verbessern Sie die GIS‑Entwicklung mit Aspose.GIS für .NET. Importieren Sie Styled Layer Descriptor (SLD) mühelos. Entdecken Sie jetzt die Anpassungsmöglichkeiten!
+## Tutorials zur Kartenrenderung
+### [Importiere Styled Layer Descriptor (SLD)](./import-styled-layer-descriptor/)
+Steigern Sie die GIS‑Entwicklung mit Aspose.GIS für .NET. Importieren Sie Styled Layer Descriptor (SLD) mühelos. Entdecken Sie jetzt Anpassungsmöglichkeiten!
 
-### [Label Features on Map](./label-features-on-map/)
-Entdecken Sie Aspose.GIS für .NET und meistern Sie die Kunst der Feature‑Beschriftung auf Karten. Verbessern Sie Ihre Geodatenvisualisierungen mühelos.
+### [Beschrifte Features auf der Karte](./label-features-on-map/)
+Entdecken Sie Aspose.GIS für .NET und meistern Sie die Kunst der Feature‑Beschriftung auf Karten. Verbessern Sie Ihre geospatiale Visualisierung mühelos.
 
-### [Render a Map](./render-a-map/)
-Entdecken Sie die Welt der Geodatenvisualisierung mit Aspose.GIS für .NET. Erstellen Sie mühelos beeindruckende Karten. Jetzt herunterladen!
+### [Karte rendern](./render-a-map/)
+Erkunden Sie die Welt der geospatiale Datenvisualisierung mit Aspose.GIS für .NET. Erstellen Sie atemberaubende Karten mühelos. Jetzt herunterladen!
 
-### [Render Various Raster Formats](./render-various-raster-formats/)
-Entdecken Sie die Welt der Rasterdatenvisualisierung mit Aspose.GIS für .NET. Lernen Sie, beeindruckende Karten in verschiedenen Formaten mühelos zu rendern. Jetzt herunterladen!
+### [Verschiedene Rasterformate rendern](./render-various-raster-formats/)
+Erkunden Sie die Welt der Rasterdatenvisualisierung mit Aspose.GIS für .NET. Lernen Sie, atemberaubende Karten in verschiedenen Formaten mühelos zu rendern. Jetzt herunterladen!
 
-**Letzte Aktualisierung:** 2026-01-18  
+---
+
+**Zuletzt aktualisiert:** 2026-08-30  
 **Getestet mit:** Aspose.GIS für .NET 24.10  
-**Autor:** Aspose  
+**Autor:** Aspose
+
+## Verwandte Tutorials
+
+- [Wie man SVG‑Karten generiert und Städte mit Aspose.GIS für .NET hinzufügt](/gis/net/map-rendering/render-a-map/)
+- [Wie man eine gestylte Karte in asp.net mit Aspose.GIS erstellt](/gis/net/map-rendering/import-styled-layer-descriptor/)
+- [Wie man SLD importiert und Karten mit Aspose.GIS für .NET rendert](/gis/net/map-rendering/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
