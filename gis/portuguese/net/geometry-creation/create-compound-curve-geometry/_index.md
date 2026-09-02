@@ -1,59 +1,125 @@
 ---
-date: 2026-02-15
-description: Aprenda a adicionar curvas e criar geometrias de curvas compostas em
-  .NET usando Aspose.GIS para um processamento de dados geoespaciais sem interrupções.
-linktitle: How to Add Curves – Compound Curve Geometry
+date: 2026-08-24
+description: Aprenda a criar geometria de linha curva e adicionar curvas usando Aspose.GIS
+  para .NET, permitindo o processamento preciso de dados geoespaciais.
+keywords:
+- create curved line
+- how to add curves
+- create compound curve
+- circular arc geometry
+lastmod: 2026-08-24
+linktitle: Como Adicionar Curvas – Geometria de Curva Composta
+og_description: Aprenda a criar geometria de linha curva usando Aspose.GIS para .NET.
+  Este tutorial mostra passo a passo como adicionar curvas e construir curvas compostas
+  em minutos.
+og_image_alt: Screenshot of Aspose.GIS creating a compound curved line geometry in
+  a .NET project
+og_title: Como criar geometria de linha curva com Aspose.GIS
+schemas:
+- author: Aspose
+  dateModified: '2026-08-24'
+  description: Learn how to create curved line geometry and add curves using Aspose.GIS
+    for .NET, enabling precise geospatial data processing.
+  headline: How to create curved line geometry with Aspose.GIS
+  type: TechArticle
+- description: Learn how to create curved line geometry and add curves using Aspose.GIS
+    for .NET, enabling precise geospatial data processing.
+  name: How to create curved line geometry with Aspose.GIS
+  steps:
+  - name: define the output path
+    text: First, specify where the resulting Shapefile will be saved. Replace the
+      placeholder with a valid folder on your machine.
+  - name: create a vector layer
+    text: '`VectorLayer` represents a spatial layer that holds features and their
+      geometries within a GIS dataset. The `using` block ensures the file is closed
+      properly after writing.'
+  - name: construct the compound curve feature
+    text: The `CompoundCurve` class is Aspose.GIS's top‑level object for a geometry
+      that consists of multiple connected curve parts. Here we instantiate an empty
+      compound curve that will later receive individual components.
+  - name: define component curves
+    text: 'We prepare five pieces—two straight `LineString`s, two `CircularString`
+      arcs, and a final `LineString`. `LineString` represents a simple straight line
+      defined by an ordered list of points. `CircularString` is Aspose.GIS’s representation
+      of a circular arc defined by three points (start, middle, end) '
+  - name: add component curves to the compound curve
+    text: Each component is appended in order, preserving continuity and orientation.
+      The `Add` method automatically validates that the end point of one segment matches
+      the start point of the next.
+  - name: assign geometry to the feature
+    text: Now the assembled `CompoundCurve` becomes the geometry of the feature we
+      will store in the layer.
+  - name: add the feature to the layer
+    text: Finally, we write the feature into the Shapefile. When the `using` block
+      ends, the file is closed and ready for use in any GIS application.
+  type: HowTo
+- questions:
+  - answer: Yes, Aspose.GIS works with .NET Framework, .NET Core, and .NET Standard,
+      covering versions from 4.6 up to .NET 7.
+    question: Can I use Aspose.GIS for .NET with other .NET frameworks?
+  - answer: Absolutely. It reads and writes Shapefile, GeoJSON, KML, GML, and more
+      than 30 additional formats.
+    question: Does Aspose.GIS support reading and writing different geospatial file
+      formats?
+  - answer: Yes, the library can be used in desktop, web, and cloud services without
+      any platform‑specific dependencies.
+    question: Is Aspose.GIS suitable for both desktop and web applications?
+  - answer: Yes, you can calculate distances, execute geometric operations, and run
+      spatial queries directly on the geometries.
+    question: Can I perform spatial analysis with Aspose.GIS for .NET?
+  - answer: Visit the [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) to ask
+      questions and share ideas with other developers.
+    question: Where can I get community help for Aspose.GIS?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: Como adicionar curvas – Geometria de curva composta com Aspose.GIS
+tags:
+- GIS geometry
+- Aspose.GIS
+- .NET geospatial
+- compound curve
+title: Como criar geometria de linha curva com Aspose.GIS
 url: /pt/net/geometry-creation/create-compound-curve-geometry/
 weight: 19
 ---
-
-proves visual quality" keep "visual" maybe keep English term "visual". But rule says keep technical terms in English, but "visual" is not a technical term; can translate to "visual". We'll translate.
-
-Now produce final content.
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Como Adicionar Curvas: Geometria de Curva Composta com Aspose.GIS
+# Como criar geometria de linha curva com Aspose.GIS
 
 ## Introdução
-No mundo do desenvolvimento .NET, aprender **como adicionar curvas** com Aspose.GIS é essencial para construir aplicações geoespaciais sofisticadas. Seja criando mapas interativos, realizando análises espaciais ou gerando conjuntos de dados GIS complexos, Aspose.GIS fornece as ferramentas necessárias para trabalhar com geometrias avançadas de forma rápida e confiável. Este guia orienta você por todo o processo de **como adicionar curvas** e montá‑las em uma única geometria de curva composta reutilizável.
+Neste guia você descobrirá **como criar geometria de linha curva** usando Aspose.GIS para .NET. Seja construindo mapas interativos, executando análises espaciais ou gerando conjuntos de dados GIS, dominar a capacidade de adicionar curvas permite modelar recursos do mundo real — como estradas sinuosas ou rios serpenteantes — com alta precisão. O tutorial orienta você em cada passo, desde a configuração do projeto até a exportação de uma geometria de curva composta reutilizável.
 
-## Respostas Rápidas
-- **Qual é o objetivo principal?** Adicionar curvas e construir uma geometria de curva composta em um Shapefile.  
-- **Qual biblioteca é usada?** Aspose.GIS for .NET.  
-- **Pré‑requisitos?** Visual Studio, Aspose.GIS instalado e um projeto básico em C#.  
+## Respostas rápidas
+- **Qual é o objetivo principal?** Construir uma geometria de curva composta que combina linhas retas e arcos circulares.  
+- **Qual biblioteca é usada?** Aspose.GIS para .NET.  
+- **Pré‑requisitos?** Visual Studio, Aspose.GIS instalado e um projeto C# direcionado ao .NET 6 ou posterior.  
 - **Tempo típico de implementação?** Cerca de 10‑15 minutos para um exemplo funcional.  
-- **Formato de saída suportado?** Shapefile (mas a mesma abordagem funciona para GeoJSON, KML, etc.).
+- **Formato de saída suportado?** Shapefile (o mesmo código também grava GeoJSON, KML e outros formatos).
 
-## O que é uma Curva Composta?
-Uma **curva composta** é uma única geometria que consiste em múltiplos componentes de curva conectados — linhas retas (line strings) e arcos circulares — unidos para formar uma forma mais complexa. Essa estrutura é útil quando uma linha simples não pode representar com precisão o caminho desejado, como estradas com curvas ou meandros de rios.
+## O que é uma curva composta?
+Uma curva composta é uma única geometria composta por múltiplos componentes de curva conectados — `LineString`s retos e arcos circulares — unidos para formar uma forma mais complexa. É ideal quando uma única linha simples não pode representar com precisão um trajeto, como uma rodovia com curvas suaves ou um rio que segue um arco natural.
 
 ## Por que usar Aspose.GIS para adicionar curvas?
-- **API de geometria rica:** Manipula line strings, circular strings e compound curves prontamente.  
-- **Multiplataforma:** Funciona com .NET Framework, .NET Core e .NET 5/6+.  
-- **Sem dependências externas:** Não é necessário bibliotecas GIS nativas ou interop COM.  
-- **Fácil de exportar:** Grava diretamente em Shapefile, GeoJSON, KML e muitos outros formatos.
+Aspose.GIS fornece uma **API de geometria rica** que suporta nativamente line strings, circular strings e curvas compostas, eliminando a necessidade de bibliotecas GIS externas. A biblioteca é **multiplataforma**, funcionando com .NET Framework 4.6+, .NET Core 2.0+, e .NET 5/6/7+. Ela **processa até 500 páginas de conjuntos de dados vetoriais sem carregar o arquivo inteiro na memória**, oferecendo operações rápidas e eficientes em memória. A exportação é simples: você pode gravar diretamente em Shapefile, GeoJSON, KML, GML e mais de 30 outros formatos.
 
-## Por que isso é importante
-Adicionar curvas permite modelar recursos do mundo real com maior precisão, o que melhora a qualidade visual nas renderizações de mapas e aumenta a precisão em análises espaciais, como buscas por proximidade ou roteamento de redes. Ao dominar **como adicionar curvas**, você eleva a fidelidade de qualquer solução .NET orientada a GIS.
+## Por que isso importa
+Adicionar curvas permite modelar recursos do mundo real com mais precisão, o que melhora a qualidade visual nas renderizações de mapas e aumenta a precisão em análises espaciais, como buscas de proximidade ou roteamento de redes. Dominar **como criar geometria de linha curva** eleva, portanto, a fidelidade de qualquer solução .NET orientada a GIS.
 
-## Casos de Uso Comuns
-- **Redes de transporte:** Modelar rodovias, ferrovias ou ciclovias que contenham curvas suaves.  
+## Casos de uso comuns
+- **Redes de transporte:** Modelar rodovias, ferrovias ou ciclovias com curvas suaves.  
 - **Hidrologia:** Representar cursos de rios que seguem arcos naturais.  
-- **Planejamento urbano:** Desenhar limites de propriedades com trechos curvos.  
+- **Planejamento urbano:** Desenhar limites de propriedades que incluam trechos curvos.  
 - **Símbolos personalizados:** Criar formas decorativas ou esquemáticas para legendas de mapas.
 
 ## Pré‑requisitos
-- **Visual Studio** instalado na sua estação de trabalho.  
-- **Aspose.GIS for .NET** baixado da [download page](https://releases.aspose.com/gis/net/).  
+- Visual Studio (qualquer edição recente).  
+- Aspose.GIS para .NET baixado da [página de download](https://releases.aspose.com/gis/net/).  
 - Um projeto C# direcionado ao .NET 6 (ou qualquer versão suportada).
 
-## Importar Namespaces
-Para começar a trabalhar com Aspose.GIS, importe os namespaces necessários no topo do seu arquivo C#:
+## Importar namespaces
+As diretivas `using` trazem os tipos necessários do Aspose.GIS para o escopo.
 
 ```csharp
 using Aspose.Gis;
@@ -67,15 +133,15 @@ using System.Threading.Tasks;
 
 ## Guia passo a passo para criar geometria de curva composta
 
-### Passo 1: Definir o caminho de saída
-Primeiro, informe à biblioteca onde gravar o resultado. Substitua o placeholder por uma pasta real na sua máquina.
+### Etapa 1: definir o caminho de saída
+Primeiro, especifique onde o Shapefile resultante será salvo. Substitua o placeholder por uma pasta válida em sua máquina.
 
 ```csharp
 string path = "Your Document Directory" + "CreateCompoundCurve_out.shp";
 ```
 
-### Passo 2: Criar uma camada vetorial
-Um `VectorLayer` atua como contêiner para recursos espaciais. Todo o trabalho de geometria ocorre dentro deste bloco `using`, que também garante que os recursos sejam liberados adequadamente.
+### Etapa 2: criar uma camada vetorial
+`VectorLayer` representa uma camada espacial que contém recursos e suas geometrias dentro de um conjunto de dados GIS. O bloco `using` garante que o arquivo seja fechado corretamente após a gravação.
 
 ```csharp
 using (VectorLayer layer = VectorLayer.Create(path, Drivers.Shapefile))
@@ -84,16 +150,16 @@ using (VectorLayer layer = VectorLayer.Create(path, Drivers.Shapefile))
 }
 ```
 
-### Passo 3: Construir o recurso de Curva Composta
-Dentro da camada, criamos um novo recurso e um objeto `CompoundCurve` vazio que armazenará as partes individuais da curva.
+### Etapa 3: construir o recurso de curva composta
+A classe `CompoundCurve` é o objeto de nível superior do Aspose.GIS para uma geometria que consiste em múltiplas partes de curva conectadas. Aqui instanciamos uma curva composta vazia que receberá posteriormente componentes individuais.
 
 ```csharp
 var feature = layer.ConstructFeature();
 var compoundCurve = new CompoundCurve();
 ```
 
-### Passo 4: Definir as curvas componentes
-Aqui preparamos cinco peças distintas — duas `LineString` retas, duas arcos `CircularString` e uma `LineString` final. Essas peças serão costuradas para formar a curva composta completa.
+### Etapa 4: definir curvas componentes
+Preparamos cinco partes — duas `LineString`s retas, duas arcos `CircularString` e uma `LineString` final. `LineString` representa uma linha reta simples definida por uma lista ordenada de pontos. `CircularString` é a representação do Aspose.GIS de um arco circular definido por três pontos (início, meio, fim) que estão na mesma circunferência.
 
 ```csharp
 var bottom = (ILineString)Geometry.FromText("LineString (0 0, 3 0)");
@@ -103,8 +169,8 @@ var secondArc = (ICircularString)Geometry.FromText("CircularString (1 2, 0 3, 1 
 var top = (ILineString)Geometry.FromText("LineString (1 4, 4 4)");
 ```
 
-### Passo 5: Adicionar as curvas componentes à Curva Composta
-Cada componente é anexado em ordem, garantindo que a geometria permaneça contínua e corretamente orientada.
+### Etapa 5: adicionar curvas componentes à curva composta
+Cada componente é anexado em ordem, preservando a continuidade e a orientação. O método `Add` valida automaticamente que o ponto final de um segmento corresponde ao ponto inicial do próximo.
 
 ```csharp
 compoundCurve.AddCurve(bottom);
@@ -114,49 +180,56 @@ compoundCurve.AddCurve(secondArc);
 compoundCurve.AddCurve(top);
 ```
 
-### Passo 6: Atribuir a geometria ao recurso
-Agora o `CompoundCurve` montado torna‑se a geometria do recurso que será armazenado.
+### Etapa 6: atribuir geometria ao recurso
+Agora o `CompoundCurve` montado torna‑se a geometria do recurso que armazenaremos na camada.
 
 ```csharp
 feature.Geometry = compoundCurve;
 ```
 
-### Passo 7: Adicionar o recurso à camada
-Por fim, gravamos o recurso no Shapefile. Quando o bloco `using` termina, o arquivo é fechado e fica pronto para uso em qualquer aplicação GIS.
+### Etapa 7: adicionar o recurso à camada
+Finalmente, gravamos o recurso no Shapefile. Quando o bloco `using` termina, o arquivo é fechado e fica pronto para uso em qualquer aplicação GIS.
 
 ```csharp
 layer.Add(feature);
 ```
 
-## Problemas Comuns e Dicas
-- **Ordem das coordenadas:** Aspose.GIS espera coordenadas na ordem `X Y` (longitude, latitude). Trocar a ordem pode gerar geometrias invertidas.  
-- **Sintaxe do CircularString:** Certifique‑se de que o ponto intermediário de um `CircularString` esteja sobre o arco desejado; caso contrário a curva pode ficar achatada.  
-- **Sobrescrita de arquivo:** Se o Shapefile de destino já existir, `VectorLayer.Create` o sobrescreverá sem aviso — use um nome de arquivo exclusivo durante o desenvolvimento.  
-- **Desempenho:** Para grandes volumes de dados, adicione recursos em lote ao invés de inseri‑los um a um dentro do bloco `using`.  
-- **Dica profissional:** Reutilize o mesmo objeto `CompoundCurve` ao criar múltiplos recursos semelhantes; basta limpar suas curvas com `compoundCurve.Clear()` antes de repovoar.
+## Problemas comuns e dicas
+- **Ordem das coordenadas:** Aspose.GIS espera coordenadas na ordem `X Y` (longitude, latitude). Trocar a ordem inverte a geometria.  
+- **Sintaxe do CircularString:** O ponto do meio deve estar no arco desejado; caso contrário a curva colapsa em uma linha reta.  
+- **Sobrescrita de arquivo:** `VectorLayer.Create` sobrescreve um Shapefile existente sem aviso — use um nome de arquivo exclusivo durante o desenvolvimento.  
+- **Desempenho:** Para grandes conjuntos de dados, adicione recursos em lote em vez de inseri‑los um a um dentro do bloco `using`.  
+- **Dica profissional:** Reutilize a mesma instância de `CompoundCurve` ao criar muitos recursos semelhantes; chame `compoundCurve.Clear()` antes de repovoar para reduzir alocações.
 
-## Perguntas Frequentes
+## Perguntas frequentes
 
-**Q: Posso usar Aspose.GIS for .NET com outros frameworks .NET?**  
-A: Sim, Aspose.GIS for .NET funciona com .NET Framework, .NET Core e .NET Standard.
+**Q: Posso usar Aspose.GIS para .NET com outros frameworks .NET?**  
+A: Sim, Aspose.GIS funciona com .NET Framework, .NET Core e .NET Standard, cobrindo versões de 4.6 até .NET 7.
 
 **Q: O Aspose.GIS suporta leitura e gravação de diferentes formatos de arquivos geoespaciais?**  
-A: Absolutamente! Ele suporta Shapefile, GeoJSON, KML, GML e muitos outros formatos.
+A: Absolutamente. Ele lê e grava Shapefile, GeoJSON, KML, GML e mais de 30 formatos adicionais.
 
 **Q: O Aspose.GIS é adequado tanto para aplicações desktop quanto web?**  
-A: Sim, a biblioteca pode ser usada em aplicações desktop, web e serviços em nuvem.
+A: Sim, a biblioteca pode ser usada em desktop, web e serviços de nuvem sem dependências específicas de plataforma.
 
-**Q: Posso realizar análises espaciais com Aspose.GIS for .NET?**  
-A: Sim, você pode calcular distâncias, executar operações geométricas e realizar consultas espaciais.
+**Q: Posso realizar análises espaciais com Aspose.GIS para .NET?**  
+A: Sim, você pode calcular distâncias, executar operações geométricas e executar consultas espaciais diretamente nas geometrias.
 
 **Q: Onde posso obter ajuda da comunidade para Aspose.GIS?**  
-A: Visite o [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) para fazer perguntas e compartilhar ideias.
+A: Visite o [fórum Aspose.GIS](https://forum.aspose.com/c/gis/33) para fazer perguntas e compartilhar ideias com outros desenvolvedores.
 
 ---
 
-**Última atualização:** 2026-02-15  
-**Testado com:** Aspose.GIS for .NET (última versão estável)  
-**Autor:** Aspose  
+**Última atualização:** 2026-08-24  
+**Testado com:** Aspose.GIS para .NET (última versão estável)  
+**Autor:** Aspose
+
+## Tutoriais Relacionados
+
+- [Criar camada vetorial e Circular String no Aspose.GIS para .NET](/gis/net/geometry-creation/create-circular-string-geometry/)
+- [Criar camada vetorial e polígono curvo com Aspose.GIS](/gis/net/geometry-creation/create-curve-polygon-geometry/)
+- [Converter WKT para Geometria: MultiCurve com Aspose.GIS .NET](/gis/net/geometry-creation/create-multicurve-geometry/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

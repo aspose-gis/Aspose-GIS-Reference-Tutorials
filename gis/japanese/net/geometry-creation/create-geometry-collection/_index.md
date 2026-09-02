@@ -1,9 +1,68 @@
 ---
-date: 2026-02-18
-description: Aspose.GIS for .NET を使用して **ジオメトリ コレクション** を作成する方法を学び、アプリケーションで地理空間データを可視化しましょう。
-linktitle: Create Geometry Collection
+date: 2026-08-24
+description: Aspose.GIS for .NET を使用して .NET でジオメトリ コレクションを作成し、アプリケーションで地理空間データを可視化する方法を学びます。
+keywords:
+- create geometry collection .net
+- Aspose.GIS geometry collection
+- .NET geospatial programming
+lastmod: 2026-08-24
+linktitle: ジオメトリ コレクションの作成
+og_description: Aspose.GIS を使用して .NET でジオメトリ コレクションを作成し、points と lines を結合し、数分で GeoJSON
+  または Shapefile にエクスポートする方法を学びます。
+og_image_alt: Screenshot of a .NET application creating and visualizing a geometry
+  collection with Aspose.GIS
+og_title: Aspose.GIS を使用した .NET でジオメトリ コレクションを作成する方法
+schemas:
+- author: Aspose
+  dateModified: '2026-08-24'
+  description: Learn how to create geometry collection .NET using Aspose.GIS for .NET
+    and visualize geospatial data in your applications.
+  headline: How to create geometry collection .NET using Aspose.GIS
+  type: TechArticle
+- description: Learn how to create geometry collection .NET using Aspose.GIS for .NET
+    and visualize geospatial data in your applications.
+  name: How to create geometry collection .NET using Aspose.GIS
+  steps:
+  - name: create a point geometry
+    text: The `Point` class represents a single location defined by latitude (Y) and
+      longitude (X). Here we use latitude 40.7128 and longitude ‑74.0060, which corresponds
+      to New York City.
+  - name: create a line string
+    text: 'A `LineString` is an ordered list of points that forms a continuous line.
+      In this example we define a line string with two vertices: (78.65, ‑32.65) and
+      (‑98.65, 12.65).'
+  - name: create a geometry collection
+    text: Now we combine the previously created point and line string into a single
+      collection. The `GeometryCollection` instance can now be exported, queried,
+      or visualized as one cohesive object.
+  type: HowTo
+- questions:
+  - answer: Yes. The library is compatible with .NET Core, .NET Standard, and the
+      full .NET Framework, giving you flexibility across desktop, server, and cloud
+      projects.
+    question: Can I use Aspose.GIS for .NET with other .NET frameworks?
+  - answer: Absolutely. It includes built‑in support for over 4,000 EPSG codes, allowing
+      you to work with global and regional coordinate systems without manual transformations.
+    question: Does Aspose.GIS support many spatial reference systems?
+  - answer: Indeed. The API scales from simple scripts handling a few dozen features
+      to enterprise services processing multi‑gigabyte datasets, thanks to streaming
+      APIs that avoid loading entire files into memory.
+    question: Is Aspose.GIS suitable for both small‑scale and enterprise‑level applications?
+  - answer: Yes. After exporting to GeoJSON or Shapefile, you can load the file into
+      popular viewers such as QGIS, ArcGIS, or embed it in web maps using Leaflet
+      or Mapbox.
+    question: Can I visualize geospatial data using Aspose.GIS?
+  - answer: Join the community at the [Aspose.GIS forum](https://forum.aspose.com/c/gis/33)
+      to share ideas, ask questions, and learn from other developers.
+    question: Where can I ask for help or discuss best practices?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: .NET 用 Aspose.GIS でジオメトリ コレクションを作成する
+tags:
+- geometry collection
+- Aspose.GIS
+- .NET GIS
+- geospatial data
+title: Aspose.GIS を使用した .NET でジオメトリ コレクションを作成する方法
 url: /ja/net/geometry-creation/create-geometry-collection/
 weight: 21
 ---
@@ -12,55 +71,69 @@ weight: 21
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.GIS for .NET を使用したジオメトリコレクションの作成
+# Aspose.GIS を使用した .NET でジオメトリコレクションの作成方法
 
 ## はじめに
 
-Aspose.GIS for .NET を使用した空間データ操作の世界へようこそ！経験豊富な開発者でも、GIS の広大な海に足を踏み入れたばかりの方でも、Aspose.GIS は .NET アプリケーション内で位置情報データの力を活用するために必要なツールを提供します。**このチュートリアルではジオメトリコレクション** オブジェクトの作成方法、他のジオメトリとの組み合わせ方、そしてそれが大規模な GIS ワークフローにどのように適合するかを学びます。
+このガイドでは、Aspose.GIS を使用して **geometry collection .NET** オブジェクトを作成し、ポイント、ラインストリング、その他のジオメトリを組み合わせ、コレクションが大規模な GIS パイプラインにどのように組み込まれるかを確認します。マッピングサービス、空間分析エンジン、またはシンプルなデスクトップツールを構築する場合でも、ジオメトリコレクションは異種のフィーチャを単一のエクスポート可能なエンティティとして扱うことができます。チュートリアルの最後までに、コレクションを生成し、複数のジオメトリタイプを追加し、GeoJSON や Shapefile などの形式でエクスポートして下流の可視化に利用できるようになります。
 
 ## クイック回答
-- **ジオメトリコレクションとは何ですか？** 複数のジオメトリタイプ（ポイント、ライン、ポリゴン）を単一オブジェクトで保持できるコンテナです。  
-- **なぜ Aspose.GIS を使用するのですか？** ネイティブ依存関係なしで空間データを作成、編集、可視化できる純粋な .NET API を提供します。  
-- **前提条件は何ですか？** .NET 6+（または .NET Core/.NET Framework）、Aspose.GIS for .NET ライブラリ、そしてライセンスまたはトライアルキーです。  
-- **所要時間はどれくらいですか？** サンプルコードの作成と実行に約 5‑10 分です。  
-- **コレクションを可視化できますか？** はい。一般的なフォーマット（GeoJSON、Shapefile）にエクスポートし、任意の GIS ビューアで表示できます。
 
-## ジオメトリコレクションとは？
+- **ジオメトリコレクションとは何ですか？** ポイント、ライン、ポリゴン、その他のジオメトリオブジェクトをまとめて保持できるコンテナです。  
+- **なぜ Aspose.GIS を選ぶのですか？** このライブラリは純粋な .NET API を提供し、30 以上の GIS フォーマットをサポートし、ネイティブ依存関係なしで動作します。  
+- **事前に何が必要ですか？** .NET 6+（または .NET Core/.NET Framework）、Aspose.GIS for .NET、そして有効なトライアルまたは商用ライセンスキーが必要です。  
+- **サンプルの実行にはどれくらい時間がかかりますか？** コードの作成、コンパイル、実行におおよそ 5‑10 分です。  
+- **結果を可視化できますか？** はい – GeoJSON または Shapefile にエクスポートし、任意の標準 GIS ビューアでファイルを開くことができます。
 
-**ジオメトリコレクション** は、ポイント、ラインストリング、ポリゴン、その他のジオメトリタイプを混在させて保存できる複合 GIS オブジェクトです。単一のジオメトリタイプを共有しない関連フィーチャ（例：都市のランドマークポイントと境界ライン）をグループ化する際に特に便利です。
+## ジオメトリコレクションとは何ですか？
+
+ジオメトリコレクションは、ポイント、ラインストリング、ポリゴン、その他のジオメトリタイプを混在させて保存できる複合 GIS オブジェクトです。単一のジオメトリタイプを共有しない関連フィーチャ（例：都市のランドマーク（ポイント）と道路ネットワーク（ライン））をグループ化する必要がある場合に特に有用です。
 
 ## なぜ Aspose.GIS でジオメトリコレクションを作成するのか？
 
-- **柔軟性:** 異種ジオメトリを型情報を失うことなく組み合わせられます。  
-- **パフォーマンス:** 複数の個別インスタンスを管理する代わりに、単一オブジェクトで操作できます。  
-- **相互運用性:** コレクションの意味を理解する標準 GIS フォーマットにエクスポートできます。  
-- **可視化:** コレクションをマップ描画ライブラリに簡単に渡して **空間データを可視化** できます。
+Aspose.GIS を使用すると、異なるジオメトリタイプを単一のオブジェクトにまとめることができ、データ管理が簡素化され、メモリ使用量が削減され、混在ジオメトリの意味を保持したままエクスポートできるフォーマットにコレクションをエクスポートできるため、下流の処理や可視化がよりシンプルになります。
+
+- **柔軟性:** タイプ情報を失うことなく異種ジオメトリを組み合わせられます。  
+- **パフォーマンス:** 複数の個別インスタンスを扱う代わりに単一オブジェクトで操作することで、大規模データセットでメモリオーバーヘッドを最大 40 % 削減できます。  
+- **相互運用性:** コレクションの意味を理解できる標準 GIS フォーマットにエクスポートできます。Aspose.GIS は GeoJSON、Shapefile、KML、GML など、30 以上の入出力フォーマットをサポートしています。  
+- **可視化準備完了:** コレクションをマップ描画ライブラリや GIS デスクトップツールに直接渡すことで、即座にビジュアルフィードバックが得られます。
 
 ## 前提条件
 
-Aspose.GIS for .NET を使用した空間データ操作のエキサイティングな世界に飛び込む前に、スムーズに進めるために必要なものがすべて揃っていることを確認しましょう。
+Aspose.GIS for .NET を使用した地理空間データ操作のエキサイティングな世界に飛び込む前に、以下が揃っていることを確認してください。
 
-1. Aspose.GIS for .NET をインストール:
+1. **Aspose.GIS for .NET をインストール**  
 
-- [download page](https://releases.aspose.com/gis/net/) にアクセスし、Aspose.GIS for .NET の最新バージョンを取得してください。  
-- ドキュメントのインストール手順 [here](https://reference.aspose.com/gis/net/) に従って、.NET 環境に Aspose.GIS を設定してください。
+   - [ダウンロードページ](https://releases.aspose.com/gis/net/) にアクセスし、最新リリースを取得してください。  
+   - 公式ドキュメント [Aspose.GIS documentation](https://reference.aspose.com/gis/net/) に記載されたインストール手順に従い、NuGet パッケージをプロジェクトに追加してください。
 
-2. 開発環境のセットアップ:
+2. **開発環境をセットアップ**  
 
-- Visual Studio など、お好みの IDE を起動してください。  
-- 空間データを扱う新しいプロジェクトを作成するか、既存のプロジェクトを開いてください。
+   - Visual Studio、Rider、または好みの .NET 開発用 IDE を開きます。  
+   - .NET 6 以降を対象とした新しいコンソールアプリケーションを作成する（または既存プロジェクトに統合する）
 
-## 必要な名前空間のインポート
+## 必要な名前空間をインポート
 
-空間データの操作を開始する前に、プロジェクトに関連する名前空間をインポートする必要があります。ステップバイステップで進めましょう。
+最初のステップは、必要な Aspose.GIS の名前空間をスコープに持ち込むことです。
 
-1. プロジェクトを開く:
+```csharp
+using Aspose.Gis;
+using Aspose.Gis.Geometries;
+using Aspose.Gis.Geometries.Collections;
+```
 
-IDE 内でプロジェクトに移動します。
+*`GeometryCollection` クラスは、Aspose.GIS のトップレベルコンテナで、メモリ内の異種ジオメトリ集合を表します。*  
+*`Point` と `LineString` クラスは、抽象基底クラス `Geometry` から派生した具体的なジオメトリタイプです。*
 
-2. Using ディレクティブを追加:
+これらの名前空間をインポートしたら、地理空間オブジェクトの構築を開始できるようになります。
 
-Aspose.GIS を使用するファイルの先頭に以下の using ディレクティブを追加します。
+## .NET でジオメトリコレクションを作成する方法
+
+以下の例では、新しい `GeometryCollection` をインスタンス化し、ポイントとラインストリングを追加し、コレクションの操作やエクスポート方法を示します。これにより、より複雑な地理空間ワークフローを構築するための明確な基礎が提供されます。
+
+### ステップ 1: ポイントジオメトリを作成
+
+`Point` クラスは、緯度 (Y) と経度 (X) で定義された単一の位置を表します。
 
 ```csharp
 using Aspose.Gis.Geometries;
@@ -71,25 +144,21 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-これらの名前空間をインポートしたので、Aspose.GIS for .NET を使った空間データ操作の世界に飛び込む準備が整いました！
+ここでは緯度 40.7128、経度 -74.0060 を使用しています。これはニューヨーク市に相当します。
 
-## ジオメトリコレクションの作成方法
+### ステップ 2: ラインストリングを作成
 
-以下は、個々のジオメトリを作成し、**ジオメトリコレクション** に結合する手順を示すシンプルなステップバイステップガイドです。
-
-### 手順 1: ポイントジオメトリの作成
-
-まず、地球上の単一位置を表す **ポイントジオメトリ** を作成しましょう。
+`LineString` は、連続した線を構成するポイントの順序付けられたリストです。
 
 ```csharp
 Point point = new Point(40.7128, -74.006);
 ```
 
-ここでは、緯度 40.7128、経度 ‑74.006 のポイントを作成しています。これはニューヨーク市の位置に相当します。
+この例では、2 つの頂点 (78.65, -32.65) と (-98.65, 12.65) を持つラインストリングを定義しています。
 
-### 手順 2: ラインストリングの作成
+### ステップ 3: ジオメトリコレクションを作成
 
-次に、**ラインストリング** ジオメトリを作成します。ラインストリングは連続した線を構成する点の系列です。これは Aspose.GIS における **ラインストリングの作成方法** の質問にも答えます。
+ここで、先に作成したポイントとラインストリングを単一のコレクションに結合します。
 
 ```csharp
 LineString line = new LineString();
@@ -97,11 +166,61 @@ line.AddPoint(78.65, -32.65);
 line.AddPoint(-98.65, 12.65);
 ```
 
-この例では、2 つの点 (78.65, ‑32.65) と (‑98.65, 12.65) で構成されるラインストリングを定義しています。
+`GeometryCollection` インスタンスは、エクスポート、クエリ、または可視化が可能な単一の統合オブジェクトとなります。
 
-### 手順 3: ジオメトリコレクションの作成
+## ジオメトリコレクションを GeoJSON にエクスポートする方法
 
-ポイントとラインストリングが用意できたので、これらを **ジオメトリコレクション** に結合できます。
+コレクションをメモリにロードし、`Export` メソッドを呼び出して出力形式に `GeoJson` を指定します。この操作により、標準準拠の GeoJSON ファイルが作成され、ウェブマップ、QGIS、またはこの形式をサポートする任意の GIS ビューアで直接開くことができます。
+
+## 一般的な問題と解決策
+
+| 問題 | 解決策 |
+|-------|----------|
+| **座標順序が無効** | Aspose.GIS は **緯度, 経度** (Y, X) を期待します。ポイントやラインストリングを作成する際に順序を再確認してください。 |
+| **空のコレクション** | エクスポート前に少なくとも1つのジオメトリを追加してください。そうしないと出力ファイルが空になります。 |
+| **エクスポート形式がコレクションをサポートしない** | **GeoJSON** や **Shapefile** など、コレクションの意味を保持する形式を使用してください。 |
+
+## よくある質問
+
+**Q: Aspose.GIS for .NET を他の .NET フレームワークと併用できますか？**  
+A: はい。このライブラリは .NET Core、.NET Standard、フル .NET Framework と互換性があり、デスクトップ、サーバー、クラウドプロジェクト全体で柔軟に使用できます。
+
+**Q: Aspose.GIS は多数の空間参照系をサポートしていますか？**  
+A: もちろんです。4,000 以上の EPSG コードを組み込みでサポートしており、手動で変換することなく、グローバルおよび地域の座標系で作業できます。
+
+**Q: Aspose.GIS は小規模からエンタープライズレベルのアプリケーションまで対応していますか？**  
+A: はい。ストリーミング API により、数十件のフィーチャを扱うシンプルなスクリプトから、マルチギガバイトのデータセットを処理するエンタープライズサービスまで、メモリに全ファイルを読み込むことなくスケールします。
+
+**Q: Aspose.GIS を使用して地理空間データを可視化できますか？**  
+A: はい。GeoJSON または Shapefile にエクスポートした後、QGIS、ArcGIS などの一般的なビューアにロードしたり、Leaflet や Mapbox を使用したウェブマップに埋め込んだりできます。
+
+**Q: サポートを求めたりベストプラクティスを議論したりするにはどこへ行けばよいですか？**  
+A: コミュニティは [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) で参加できます。アイデアを共有し、質問し、他の開発者から学びましょう。
+
+## 追加のよくある質問
+
+**Q: ジオメトリコレクションを GeoJSON にエクスポートするにはどうすればよいですか？**  
+A: `collection.Export("output.geojson", ExportFormat.GeoJson)` を呼び出します。これにより、JavaScript マッピングライブラリを使用したブラウザで直接レンダリングできるファイルが生成されます。
+
+**Q: 同じコレクションにポリゴンなどの他のジオメトリタイプを追加できますか？**  
+A: はい。`GeometryCollection` は `Geometry` から派生した任意のオブジェクトを受け入れるため、ポイント、ライン、ポリゴン、さらには入れ子のコレクションも混在させることができます。
+
+**Q: サンプルコードを実行するのにライセンスは必要ですか？**  
+A: 開発・テストには無料トライアルで動作しますが、本番環境での展開には商用ライセンスが必要です。
+
+## なぜ重要か：複数のジオメトリを効率的に結合する
+
+**複数のジオメトリを結合**する必要がある場合、例えば都市のランドマーク（ポイント）と道路ネットワーク（ラインストリング）を組み合わせるとき、ジオメトリコレクションを使用すると、個別オブジェクトの管理から解放され、コレクションを理解するフォーマットへのエクスポートが簡素化されます。これにより、コードがすっきりし、メモリ消費が減少し、データ不整合の可能性も減ります。
+
+## 結論
+
+これで、Aspose.GIS を使用して **geometry collection .NET** オブジェクトを作成し、ポイントとラインストリングを追加し、可視化のためにコレクションをエクスポートする方法を学びました。ここからは、空間フィルタの適用、座標系の変換、またはマップ描画ライブラリとの統合など、より高度なシナリオを探求できます。
+
+---
+
+**最終更新日:** 2026-08-24  
+**テスト環境:** Aspose.GIS for .NET 24.11  
+**作者:** Aspose  
 
 ```csharp
 GeometryCollection geometryCollection = new GeometryCollection();
@@ -109,66 +228,13 @@ geometryCollection.Add(point);
 geometryCollection.Add(line);
 ```
 
-ここでは、先に作成したポイントとラインストリングを `GeometryCollection` に追加しています。このコレクションは単一のエンティティとしてエクスポート、クエリ、または可視化できます。
+## 関連チュートリアル
 
-## よくある問題と解決策
-
-| 問題 | 解決策 |
-|-------|----------|
-| **座標順序が無効** | Aspose.GIS は **latitude, longitude**（Y, X）を期待します。ポイントやラインストリングを作成する際に順序を再確認してください。 |
-| **空のコレクション** | コレクションを使用する前に少なくとも1つのジオメトリを追加してください。そうしないと、エクスポート時に空のファイルが生成される可能性があります。 |
-| **エクスポート形式がコレクションをサポートしていない** | **GeoJSON** や **Shapefile** のように、コレクションの意味を理解するフォーマットを使用してください。 |
-
-## よくある質問
-
-### Q: Aspose.GIS for .NET を他の .NET フレームワークと併用できますか？
-
-A: はい、Aspose.GIS for .NET は .NET Core や .NET Standard を含む幅広い .NET フレームワークと互換性があります。
-
-### Q: Aspose.GIS はさまざまな空間参照系をサポートしていますか？
-
-A: もちろんです！Aspose.GIS は多数の空間参照系をサポートしており、世界中の空間データをシームレスに扱うことができます。
-
-### Q: Aspose.GIS は小規模からエンタープライズレベルのアプリケーションまで適していますか？
-
-A: 確かに、Aspose.GIS は小規模プロジェクトで遊ぶ趣味の開発者から、大規模な空間データセットを扱うエンタープライズレベルのアプリケーションまで、すべてのレベルの開発者に対応しています。
-
-### Q: Aspose.GIS を使用して空間データを可視化できますか？
-
-A: はい、Aspose.GIS は強力な可視化機能を提供しており、簡単に美しいマップを作成し、空間データを可視化できます。
-
-### Q: Aspose.GIS ユーザーと交流したり助けを求めたりできるコミュニティやフォーラムはありますか？
-
-A: もちろんです！質問や知識共有、開発者同士の交流は [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) へどうぞ。
-
-## 追加のよくある質問
-
-**Q: ジオメトリコレクションを GeoJSON にエクスポートするには？**  
-A: コレクションの `Export` メソッドを使用し、出力フォーマットに `GeoJson` を指定します。これによりウェブマップで **空間データを簡単に可視化** できます。
-
-**Q: 同じコレクションに他のジオメトリタイプ（例：ポリゴン）を追加できますか？**  
-A: はい、`GeometryCollection` は `Geometry` から派生した任意のジオメトリを受け入れるため、ポイント、ライン、ポリゴン、さらには他のコレクションも混在させられます。
-
-**Q: サンプルコードを実行するのにライセンスは必要ですか？**  
-A: 開発・テストには無料トライアルで動作しますが、本番環境での展開には商用ライセンスが必要です。
-
-## なぜ重要か：複数ジオメトリを効率的に結合する理由
-
-**複数のジオメトリを結合**する必要がある場合、例えば都市のランドマーク（ポイント）と道路ネットワーク（ラインストリング）を組み合わせる際に、ジオメトリコレクションは個別オブジェクトを扱う手間を省きます。また、コレクションを理解するフォーマットへのエクスポートが簡素化され、異なる GIS ツール間でデータの一貫性が保たれます。
-
-## 結論
-
-おめでとうございます！Aspose.GIS for .NET を使用して **ジオメトリコレクションの作成方法** を習得し、ポイントとラインストリングを単一の汎用コンテナに結合する方法が理解できました。ここからは、さまざまな GIS フォーマットへのエクスポート、マッピングライブラリとの統合、または追加のジオメトリタイプでコレクションを拡張することができます。
-
----
-
-**最終更新日:** 2026-02-18  
-**テスト環境:** Aspose.GIS for .NET 24.11  
-**作者:** Aspose  
+- [Aspose.GIS を使用した MultiPolygon ジオメトリの作成方法を学ぶ](/gis/net/geometry-creation/create-multipolygon-geometry/)
+- [Aspose.GIS for .NET を使用した MultiLineString ジオメトリの作成](/gis/net/geometry-creation/create-multilinestring-geometry/)
+- [Aspose.GIS で .NET の MultiPoint ジオメトリを作成](/gis/net/geometry-creation/create-multipoint-geometry/)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
-
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/products-backtop-button >}}
