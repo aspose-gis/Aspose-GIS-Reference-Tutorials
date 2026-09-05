@@ -1,16 +1,68 @@
 ---
-date: 2026-04-09
-description: Μάθετε πώς να δημιουργείτε συλλογή γεωμετρίας και να διαχειρίζεστε γεωχωρικά
-  δεδομένα χρησιμοποιώντας το Aspose.GIS για .NET.
+date: 2026-09-05
+description: Μάθετε πώς να δημιουργήσετε geometry collection και να διαχειριστείτε
+  geospatial data χρησιμοποιώντας Aspose.GIS για .NET.
 keywords:
 - create geometry collection
 - geospatial data handling
 - create point geometry
 - process geospatial data
 - add point to collection
-linktitle: Επανάληψη πάνω σε γεωμετρίες στη συλλογή
+lastmod: 2026-09-05
+linktitle: Επανάληψη πάνω σε geometries στο collection
+og_description: Δημιουργήστε geometry collection με Aspose.GIS για .NET και μάθετε
+  πώς να επαναλαμβάνετε, να επεξεργάζεστε geospatial data και να προσθέτετε point
+  geometry αποδοτικά. Ακολουθήστε step‑by‑step code και best practices.
+og_image_alt: Screenshot of Aspose.GIS geometry collection tutorial in .NET
+og_title: Δημιουργία geometry collection και επανάληψη πάνω σε geometries στο .NET
+schemas:
+- author: Aspose
+  dateModified: '2026-09-05'
+  description: Learn how to create geometry collection and handle geospatial data
+    using Aspose.GIS for .NET.
+  headline: Create geometry collection and iterate over geometries
+  type: TechArticle
+- description: Learn how to create geometry collection and handle geospatial data
+    using Aspose.GIS for .NET.
+  name: Create geometry collection and iterate over geometries
+  steps:
+  - name: create geometric objects
+    text: First, you’ll **create point geometry** and a line string that we will later
+      **add point to collection**. The `Point` class represents a single location
+      defined by latitude and longitude. The `LineString` class stores an ordered
+      list of points that form a polyline.
+  - name: populate geometry collection
+    text: Now we **create geometry collection** and populate it with the objects created
+      above. The `GeometryCollection` class is the container that holds any number
+      of `IGeometry` implementations. After instantiating it, you can call `Add` repeatedly
+      to insert points, line strings, or polygons.
+  - name: iterate over geometries
+    text: Finally, loop through the collection. The `switch` statement lets you handle
+      each geometry based on its type—perfect for **processing geospatial data** in
+      a heterogeneous collection.
+  type: HowTo
+- questions:
+  - answer: Yes, it works with .NET Framework 4.5+, .NET Core 3.1+, and .NET 5/6/7.
+    question: Is Aspose.GIS for .NET compatible with all .NET environments?
+  - answer: Certainly, you can acquire a temporary license for evaluation from the
+      [Aspose website](https://purchase.aspose.com/temporary-license/).
+    question: Can I obtain a temporary license for evaluation purposes?
+  - answer: Yes, technical support is available through the [Aspose.GIS forum](https://forum.aspose.com/c/gis/33),
+      where you can seek assistance and engage with fellow developers.
+    question: Is technical support available for Aspose.GIS for .NET?
+  - answer: Indeed, the Aspose.GIS documentation provides comprehensive sample projects
+      to facilitate your learning and development process.
+    question: Are there any sample projects available to kick‑start development?
+  - answer: Absolutely, you can extend the functionalities by integrating custom modules
+      and leveraging the extensibility features provided.
+    question: Can I extend the functionalities of Aspose.GIS for .NET?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: Δημιουργία Συλλογής Γεωμετριών και Επανάληψη στις Γεωμετρίες
+tags:
+- geometry collection
+- Aspose.GIS
+- .NET spatial analysis
+title: Δημιουργία geometry collection και επανάληψη πάνω σε geometries
 url: /el/net/geometry-processing/iterate-over-geometries-in-collection/
 weight: 10
 ---
@@ -19,45 +71,44 @@ weight: 10
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Δημιουργία Συλλογής Γεωμετρίας και Επανάληψη Στις Γεωμετρίες
+# Δημιουργία συλλογής γεωμετριών και επανάληψη πάνω στις γεωμετρίες
 
-## Εισαγωγή
-Σε αυτόν τον πρακτικό οδηγό θα μάθετε πώς να **create geometry collection** αντικείμενα και να επαναλάβετε τα μέλη τους χρησιμοποιώντας το Aspose.GIS for .NET. Είτε δημιουργείτε μια υπηρεσία χαρτογράφησης, εκτελείτε χωρική ανάλυση, είτε απλώς χρειάζεστε να **process geospatial data**, αυτό το tutorial σας καθοδηγεί βήμα‑βήμα—from τη ρύθμιση του περιβάλλοντος μέχρι τη διαχείριση κάθε τύπου γεωμετρίας μέσα στη συλλογή.
+In this hands‑on guide you’ll learn how to **create geometry collection** objects and iterate through their members using Aspose.GIS for .NET. Whether you’re building a mapping service, performing spatial analysis, or need to **process geospatial data** for a location‑aware application, the patterns shown here let you handle heterogeneous shapes cleanly and efficiently.
 
-## Γρήγορες Απαντήσεις
-- **Τι σημαίνει “create geometry collection”;** Σημαίνει την κατασκευή ενός δοχείου που μπορεί να περιέχει πολλαπλά αντικείμενα γεωμετρίας (σημεία, γραμμές, πολύγωνα κ.λπ.) σε μία μεταβλητή.  
-- **Ποια βιβλιοθήκη βοηθά στη διαχείριση γεωχωρικών δεδομένων;** Το Aspose.GIS for .NET παρέχει ένα πλούσιο API για τη δημιουργία, ανάγνωση και επεξεργασία γεωμετρικών δεδομένων.  
-- **Χρειάζομαι άδεια για να δοκιμάσω αυτό;** Μια δωρεάν προσωρινή άδεια είναι διαθέσιμη για αξιολόγηση (δείτε τις Συχνές Ερωτήσεις).  
-- **Μπορώ να προσθέσω γεωμετρία σημείου στη συλλογή;** Ναι – μπορείτε να **add point to collection** χρησιμοποιώντας τη μέθοδο `Add`.  
-- **Ποιες εκδόσεις .NET υποστηρίζονται;** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
+## Γρήγορες απαντήσεις
+- **What does “create geometry collection” mean?** It means constructing a container that can hold multiple geometry objects (points, lines, polygons, etc.) in a single variable.  
+- **Which library helps with geospatial data handling?** Aspose.GIS for .NET provides a rich API for creating, reading, and manipulating geometric data.  
+- **Do I need a license to try this?** A free temporary license is available for evaluation (see the FAQ).  
+- **Can I add point geometry to the collection?** Yes – you can **add point to collection** using the `Add` method.  
+- **Which .NET versions are supported?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
 
-## Τι είναι η Geometry Collection;
-Ένα **GeometryCollection** είναι μια σύνθετη γεωμετρία που ομαδοποιεί ετερογενή αντικείμενα γεωμετρίας (σημεία, γραμμές, πολύγωνα κ.λπ.) σε μία ενιαία οντότητα. Αυτή η δομή είναι ιδανική όταν χρειάζεται να αντιμετωπίσετε πολλά σχετιζόμενα σχήματα ως μία λογική μονάδα, ενώ εξακολουθείτε να έχετε πρόσβαση σε κάθε μεμονωμένη γεωμετρία.
+## Τι είναι μια συλλογή γεωμετρίας;
+A GeometryCollection is a composite geometry that groups multiple geometry objects—such as points, line strings, and polygons—into one container. This lets you treat several related shapes as a single logical unit while still being able to access each individual geometry for analysis or rendering.  
+
+The `GeometryCollection` class is Aspose.GIS's top‑level container that represents this composite structure in memory. After you create an instance, you can add any geometry type that implements the `IGeometry` interface.
 
 ## Γιατί να χρησιμοποιήσετε το Aspose.GIS για τη διαχείριση γεωχωρικών δεδομένων;
-Aspose.GIS for .NET προσφέρει:
-- Πλήρης λειτουργικότητα **geospatial data handling** χωρίς εξωτερικές εξαρτήσεις.  
-- Ισχυρή ασφάλεια τύπων για **create point geometry**, γραμμές και άλλα.  
-- Υποστήριξη πολλαπλών πλατφορμών (Windows, Linux, macOS).  
-- Απλά πρότυπα επανάληψης που σας επιτρέπουν να **process geospatial data** αποδοτικά.
+Aspose.GIS supports **50+ vector and raster formats**, including Shapefile, GeoJSON, KML, and GML, and can process multi‑hundred‑page datasets without loading the entire file into memory. Its type‑safe API lets you **create point geometry**, line strings, and polygons with clear C# syntax, while cross‑platform support (Windows, Linux, macOS) ensures your code runs everywhere the .NET runtime does.  
 
-## Προαπαιτήσεις
-Πριν ξεκινήσετε, βεβαιωθείτε ότι έχετε τα εξής:
+Using Aspose.GIS eliminates the need for external GIS engines, reduces third‑party licensing costs, and speeds up development by providing a single, well‑documented NuGet package.
 
-### 1. Εγκατάσταση Aspose.GIS for .NET
-Κατεβάστε και εγκαταστήστε τη βιβλιοθήκη από τη [release page](https://releases.aspose.com/gis/net/). Ακολουθήστε τις παρεχόμενες οδηγίες για να προσθέσετε το πακέτο NuGet στο έργο σας.
+## Προαπαιτούμενα
+Before diving in, make sure you have the following:
 
-### 2. Εξοικείωση με την Ανάπτυξη .NET
-Απαιτείται βασική κατανόηση της C# και του .NET runtime.
+### 1. Εγκατάσταση του Aspose.GIS για .NET
+Download and install the library from the [release page](https://releases.aspose.com/gis/net/). Follow the provided instructions to add the NuGet package to your project.
+
+### 2. Εξοικείωση με την ανάπτυξη .NET
+A basic understanding of C# and the .NET runtime is required.
 
 ### 3. Ρύθμιση IDE
-Χρησιμοποιήστε το Visual Studio, Visual Studio Code ή οποιοδήποτε IDE συμβατό με .NET προτιμάτε.
+Use Visual Studio, Visual Studio Code, or any .NET‑compatible IDE you prefer.
 
-### 4. Βασικές Γεωχωρικές Έννοιες (Προαιρετικό)
-Η γνώση της διαφοράς μεταξύ σημείων, γραμμών και συλλογών θα σας βοηθήσει να ακολουθήσετε τα παραδείγματα πιο γρήγορα.
+### 4. Βασικές γεωχωρικές έννοιες (προαιρετικό)
+Knowing the difference between points, lines, and collections will help you follow the examples more quickly.
 
-## Εισαγωγή Namespaces
-Ξεκινήστε εισάγοντας τα namespaces που εκθέτουν τις κλάσεις γεωμετρίας του Aspose.GIS.
+## Εισαγωγή ονομάτων χώρου
+Begin by importing the namespaces that expose Aspose.GIS geometry classes.
 
 ```csharp
 using Aspose.Gis.Geometries;
@@ -68,10 +119,12 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## Οδηγός Βήμα‑βήμα
+## Οδηγός βήμα-βήμα
 
-### Βήμα 1: Δημιουργία Γεωμετρικών Αντικειμένων
-Αρχικά, **create point geometry** και μια γραμμή (line string) που θα **add point to collection** αργότερα.
+### Βήμα 1: δημιουργία γεωμετρικών αντικειμένων
+First, you’ll **create point geometry** and a line string that we will later **add point to collection**.  
+
+The `Point` class represents a single location defined by latitude and longitude. The `LineString` class stores an ordered list of points that form a polyline.
 
 ```csharp
 Point pointGeometry = new Point(40.7128, -74.006);
@@ -80,8 +133,10 @@ lineGeometry.AddPoint(78.65, -32.65);
 lineGeometry.AddPoint(-98.65, 12.65);
 ```
 
-### Βήμα 2: Συμπλήρωση Geometry Collection
-Τώρα **create geometry collection** και τη γεμίζουμε με τα αντικείμενα που δημιουργήθηκαν παραπάνω.
+### Βήμα 2: πλήρωση συλλογής γεωμετρίας
+Now we **create geometry collection** and populate it with the objects created above.  
+
+The `GeometryCollection` class is the container that holds any number of `IGeometry` implementations. After instantiating it, you can call `Add` repeatedly to insert points, line strings, or polygons.
 
 ```csharp
 GeometryCollection geometryCollection = new GeometryCollection();
@@ -89,8 +144,8 @@ geometryCollection.Add(pointGeometry);
 geometryCollection.Add(lineGeometry);
 ```
 
-### Βήμα 3: Επανάληψη Στις Γεωμετρίες
-Τέλος, επαναλάβετε τη συλλογή. Η δήλωση `switch` σας επιτρέπει να χειριστείτε κάθε γεωμετρία βάσει του τύπου της—ιδανική για **process geospatial data** σε ετερογενή συλλογή.
+### Βήμα 3: επανάληψη πάνω στις γεωμετρίες
+Finally, loop through the collection. The `switch` statement lets you handle each geometry based on its type—perfect for **processing geospatial data** in a heterogeneous collection.
 
 ```csharp
 foreach (Geometry geometry in geometryCollection)
@@ -109,41 +164,48 @@ foreach (Geometry geometry in geometryCollection)
 }
 ```
 
-## Συχνά Προβλήματα και Λύσεις
-- **Πρόβλημα:** Η συλλογή φαίνεται κενή μετά την προσθήκη γεωμετριών.  
-  **Λύση:** Βεβαιωθείτε ότι προσθέτετε τα αντικείμενα **πριν** ξεκινήσετε την επανάληψη. Η μέθοδος `Add` πρέπει να κληθεί στο ίδιο αντικείμενο `GeometryCollection` που θα διατρέξετε αργότερα.
+## Κοινά προβλήματα και λύσεις
+- **Problem:** The collection appears empty after adding geometries.  
+  **Solution:** Ensure you are adding the objects **before** you start iterating. The `Add` method must be called on the same `GeometryCollection` instance you later enumerate.
 
-- **Πρόβλημα:** Η μετατροπή αποτυγχάνει με εξαίρεση μη έγκυρης μετατροπής.  
-  **Λύση:** Πάντα ελέγχετε το `geometry.GeometryType` πριν τη μετατροπή, όπως φαίνεται στο μπλοκ `switch`.
+- **Problem:** Casting fails with an invalid cast exception.  
+  **Solution:** Always check `geometry.GeometryType` before casting, as shown in the `switch` block.
 
-- **Πρόβλημα:** Οι συντεταγμένες φαίνονται αντιστραμμένες (latitude/longitude).  
-  **Λύση:** Το Aspose.GIS αναμένει τη σειρά `(latitude, longitude)`. Ελέγξτε ξανά τη σειρά των παραμέτρων.
+- **Problem:** Coordinates seem reversed (latitude/longitude).  
+  **Solution:** Aspose.GIS expects `(latitude, longitude)` order. Double‑check the order of your parameters.
 
-## Συχνές Ερωτήσεις
+## Συχνές ερωτήσεις
 
-**Ε:** Είναι το Aspose.GIS for .NET συμβατό με όλα τα περιβάλλοντα .NET;  
-**Α:** Ναι, λειτουργεί με .NET Framework, .NET Core, και .NET 5/6/7.
+**Q: Is Aspose.GIS for .NET compatible with all .NET environments?**  
+A: Yes, it works with .NET Framework 4.5+, .NET Core 3.1+, and .NET 5/6/7.
 
-**Ε:** Μπορώ να αποκτήσω προσωρινή άδεια για σκοπούς αξιολόγησης;  
-**Α:** Φυσικά, μπορείτε να αποκτήσετε προσωρινή άδεια για αξιολόγηση από την [Aspose website](https://purchase.aspose.com/temporary-license/).
+**Q: Can I obtain a temporary license for evaluation purposes?**  
+A: Certainly, you can acquire a temporary license for evaluation from the [Aspose website](https://purchase.aspose.com/temporary-license/).
 
-**Ε:** Διατίθεται τεχνική υποστήριξη για το Aspose.GIS for .NET;  
-**Α:** Ναι, η τεχνική υποστήριξη είναι διαθέσιμη μέσω του [Aspose.GIS forum](https://forum.aspose.com/c/gis/33), όπου μπορείτε να ζητήσετε βοήθεια και να αλληλεπιδράσετε με άλλους προγραμματιστές.
+**Q: Is technical support available for Aspose.GIS for .NET?**  
+A: Yes, technical support is available through the [Aspose.GIS forum](https://forum.aspose.com/c/gis/33), where you can seek assistance and engage with fellow developers.
 
-**Ε:** Υπάρχουν δείγματα έργων διαθέσιμα για να ξεκινήσετε την ανάπτυξη;  
-**Α:** Σίγουρα, η τεκμηρίωση του Aspose.GIS παρέχει ολοκληρωμένα δείγματα έργων για να διευκολύνουν τη μάθηση και την ανάπτυξή σας.
+**Q: Are there any sample projects available to kick‑start development?**  
+A: Indeed, the Aspose.GIS documentation provides comprehensive sample projects to facilitate your learning and development process.
 
-**Ε:** Μπορώ να επεκτείνω τις λειτουργίες του Aspose.GIS for .NET;  
-**Α:** Απόλυτα, μπορείτε να επεκτείνετε τις λειτουργίες ενσωματώνοντας προσαρμοσμένα modules και αξιοποιώντας τα χαρακτηριστικά επεκτασιμότητας που παρέχονται.
+**Q: Can I extend the functionalities of Aspose.GIS for .NET?**  
+A: Absolutely, you can extend the functionalities by integrating custom modules and leveraging the extensibility features provided.
 
 ## Συμπέρασμα
-Με την κατάκτηση της δυνατότητας **create geometry collection** και της επανάληψης στα μέλη της, ανοίγετε ισχυρές δυνατότητες **geospatial data handling** στις .NET εφαρμογές σας. Χρησιμοποιήστε τα μοτίβα που παρουσιάζονται εδώ για να δημιουργήσετε πιο σύνθετες χωρικές αναλύσεις, να αποδώσετε χάρτες ή να τροφοδοτήσετε δεδομένα GIS σε downstream υπηρεσίες.
+By mastering how to **create geometry collection** and iterate over its members, you unlock powerful **geospatial data handling** capabilities in your .NET applications. Use the patterns shown here to build more complex spatial analyses, render interactive maps, or feed GIS data into downstream services.
 
 ---
 
-**Last Updated:** 2026-04-09  
+**Last Updated:** 2026-09-05  
 **Tested With:** Aspose.GIS for .NET (latest release)  
-**Author:** Aspose  
+**Author:** Aspose
+
+## Σχετικά Μαθήματα
+
+- [Create MultiLineString Geometry using Aspose.GIS for .NET](/gis/net/geometry-creation/create-multilinestring-geometry/)
+- [Learn How to Create MultiPolygon Geometry with Aspose.GIS](/gis/net/geometry-creation/create-multipolygon-geometry/)
+- [How to Add Points and Iterate Over Geometry in .NET](/gis/net/geometry-processing/iterate-over-points-in-geometry/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
