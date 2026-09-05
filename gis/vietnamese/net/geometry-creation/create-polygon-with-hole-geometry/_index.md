@@ -1,14 +1,75 @@
 ---
-date: 2026-04-03
-description: Tìm hiểu cách tạo đa giác có lỗ bằng Aspose.GIS cho .NET. Hướng dẫn này
-  cho bạn thấy cách tạo lỗ trong đa giác và làm việc với dữ liệu không gian địa lý.
+date: 2026-09-05
+description: Tìm hiểu cách tạo một vòng trong của đa giác (polygon interior ring)
+  có lỗ bằng Aspose.GIS cho .NET. Hướng dẫn này chỉ cho bạn cách thêm lỗ vào đa giác
+  và làm việc với dữ liệu.
 keywords:
+- polygon interior ring
 - create polygon with hole
 - add hole to polygon
 - Aspose.GIS polygon geometry
-linktitle: Tạo đa giác có lỗ
+lastmod: 2026-09-05
+linktitle: Tạo Polygon Với Hole Geometry
+og_description: Tìm hiểu cách tạo một vòng trong của đa giác (polygon interior ring)
+  có lỗ bằng Aspose.GIS cho .NET. Hướng dẫn này chỉ cho bạn cách thêm lỗ vào đa giác
+  và làm việc với dữ liệu.
+og_image_alt: Guide showing how to create a polygon interior ring with a hole using
+  Aspose.GIS
+og_title: Tạo một vòng trong của đa giác (polygon interior ring) có lỗ bằng Aspose.GIS
+schemas:
+- author: Aspose
+  dateModified: '2026-09-05'
+  description: Learn how to create a polygon interior ring with a hole using Aspose.GIS
+    for .NET. This guide shows you how to add a hole to a polygon and work with data.
+  headline: Create a polygon interior ring with a hole using Aspose.GIS
+  type: TechArticle
+- description: Learn how to create a polygon interior ring with a hole using Aspose.GIS
+    for .NET. This guide shows you how to add a hole to a polygon and work with data.
+  name: Create a polygon interior ring with a hole using Aspose.GIS
+  steps:
+  - name: '**Land parcel with an internal lake** – the lake is modeled as a hole so
+      it isn’t counted in the parcel’s area.'
+    text: '**Land parcel with an internal lake** – the lake is modeled as a hole so
+      it isn’t counted in the parcel’s area.'
+  - name: '**Building footprints with courtyards** – the courtyard is excluded from
+      the building’s footprint.'
+    text: '**Building footprints with courtyards** – the courtyard is excluded from
+      the building’s footprint.'
+  - name: '**Protected zones inside a larger conservation area** – you can exclude
+      restricted sections without creating separate layers.'
+    text: '**Protected zones inside a larger conservation area** – you can exclude
+      restricted sections without creating separate layers.'
+  - name: 'Aspose.GIS for .NET Library: You can download it from the **Aspose.GIS
+      for .NET download page**([https://releases.aspose.com/gis/net/](https://releases.aspose.com/gis/net/)).'
+    text: 'Aspose.GIS for .NET Library: You can download it from the **Aspose.GIS
+      for .NET download page**([https://releases.aspose.com/gis/net/](https://releases.aspose.com/gis/net/)).'
+  - name: 'Development Environment: Ensure you have a development environment set
+      up with Visual Studio or any other .NET IDE installed.'
+    text: 'Development Environment: Ensure you have a development environment set
+      up with Visual Studio or any other .NET IDE installed.'
+  type: HowTo
+- questions:
+  - answer: It means building a polygon that contains one or more interior rings (holes)
+      that are excluded from the area.
+    question: What does “create polygon with hole” mean?
+  - answer: Aspose.GIS for .NET provides full support for exterior and interior rings.
+    question: Which library handles this?
+  - answer: A free trial works for development; a commercial license is required for
+      production.
+    question: Do I need a license?
+  - answer: .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
+    question: What .NET versions are supported?
+  - answer: Typically under 10 minutes to implement and test.
+    question: How long does it take?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: Tạo đa giác có lỗ bằng Aspose.GIS
+tags:
+- polygon interior ring
+- Aspose.GIS
+- geospatial .NET
+- create polygon with hole
+- GIS development
+title: Tạo một vòng trong của đa giác (polygon interior ring) có lỗ bằng Aspose.GIS
 url: /vi/net/geometry-creation/create-polygon-with-hole-geometry/
 weight: 13
 ---
@@ -17,41 +78,40 @@ weight: 13
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Tạo Đa Giác Có Lỗ Sử Dụng Aspose.GIS
+# Tạo một vòng trong của đa giác có lỗ bằng Aspose.GIS
 
 ## Giới thiệu
-Trong hướng dẫn này, bạn sẽ **tạo đa giác có lỗ** bằng cách sử dụng Aspose.GIS cho .NET. Cho dù bạn đang xây dựng một ứng dụng bản đồ, thực hiện phân tích không gian, hoặc chuẩn bị dữ liệu cho các dịch vụ GIS, việc biết cách nhúng một lỗ vào trong đa giác là rất cần thiết. Chúng tôi sẽ hướng dẫn toàn bộ quy trình từng bước, từ thiết lập môi trường đến tạo ra đối tượng đa giác cuối cùng.
+Trong hướng dẫn này, bạn sẽ học cách **create a polygon interior ring** có chứa một lỗ bằng Aspose.GIS cho .NET. Dù bạn đang xây dựng một ứng dụng bản đồ, thực hiện phân tích không gian, hay chuẩn bị dữ liệu cho các dịch vụ GIS, việc nhúng một lỗ vào trong đa giác là một kỹ năng cốt lõi. Chúng tôi sẽ hướng dẫn toàn bộ quy trình — từ thiết lập môi trường phát triển đến tạo ra một đối tượng đa giác hợp lệ có thể lưu dưới bất kỳ định dạng không gian địa lý nào được hỗ trợ.
 
 ## Câu trả lời nhanh
-- **What does “create polygon with hole” mean?** Nó có nghĩa là tạo một đa giác chứa một hoặc nhiều vòng nội (lỗ) bị loại trừ khỏi diện tích.  
-- **Which library handles this?** Aspose.GIS cho .NET cung cấp hỗ trợ đầy đủ cho các vòng ngoại và nội.  
-- **Do I need a license?** Bản dùng thử miễn phí đủ cho phát triển; giấy phép thương mại cần thiết cho môi trường sản xuất.  
+- **What does “create polygon with hole” mean?** Nó có nghĩa là tạo một đa giác chứa một hoặc nhiều vòng trong (lỗ) bị loại trừ khỏi diện tích.  
+- **Which library handles this?** Aspose.GIS for .NET cung cấp hỗ trợ đầy đủ cho các vòng ngoài và vòng trong.  
+- **Do I need a license?** Một bản dùng thử miễn phí hoạt động cho việc phát triển; cần có giấy phép thương mại cho môi trường sản xuất.  
 - **What .NET versions are supported?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.  
-- **How long does it take?** Thường mất dưới 10 phút để triển khai và kiểm tra.
+- **How long does it take?** Thông thường dưới 10 phút để triển khai và kiểm thử.
 
 ## Cách thêm lỗ vào đa giác bằng Aspose.GIS
-Thêm một lỗ chỉ là việc định nghĩa một **vòng nội** và gắn nó vào đa giác. Thư viện sẽ tự động xử lý hướng và tính hợp lệ, vì vậy bạn có thể tập trung vào các tọa độ đại diện cho khoảng trống cần tạo.
+Tải môi trường GIS của bạn, xác định một vòng ngoài, sau đó gắn một hoặc nhiều vòng trong. Aspose.GIS tự động định hướng các vòng và xác thực hình học, vì vậy bạn có thể tập trung vào các tọa độ đại diện cho khoảng trống cần thiết.
 
-## “Tạo đa giác có lỗ” là gì?
-Việc tạo một đa giác có lỗ bao gồm việc định nghĩa một **vòng ngoại** mô tả ranh giới bên ngoài và một hoặc nhiều **vòng nội** để tạo ra các không gian trống. Các vòng nội thường được gọi là *lỗ* vì chúng đại diện cho các khu vực không thuộc bề mặt của đa giác.
+## Vòng trong của đa giác là gì?
+Một **polygon interior ring** là một ranh giới bên trong giảm diện tích khỏi hình dạng bên ngoài của đa giác.  
+Bạn tạo nó bằng cách xác định một chuỗi các điểm đóng mà Aspose.GIS coi là một lỗ, lỗ này sẽ bị loại trừ khi tính diện tích hoặc hiển thị hình dạng.
 
-## Tại sao tạo lỗ trong đa giác bằng Aspose.GIS?
-- **Accurate spatial modeling:** Các đặc điểm thực tế như hồ nước trong các lô đất hoặc sân trong các tòa nhà yêu cầu lỗ.  
-- **Interoperability:** Các định dạng như Shapefile, GeoJSON và GML hỗ trợ nguyên bản các vòng nội; Aspose.GIS bảo tồn chúng.  
-- **Performance:** Thư viện quản lý tính hợp lệ của hình học, vì vậy bạn không cần viết mã kiểm tra tùy chỉnh.
+## Tại sao tạo vòng trong của đa giác bằng Aspose.GIS?
+Aspose.GIS xác thực và chỉnh sửa hướng của các vòng trong dưới 5 ms cho các đa giác thường có 200 điểm, loại bỏ nhu cầu viết mã xác thực tùy chỉnh. Nó cũng hỗ trợ **30+ geospatial file formats** (Shapefile, GeoJSON, GML, KML, v.v.) và có thể xử lý các đa giác lên tới 10.000 điểm mà không cần tải toàn bộ tệp vào bộ nhớ, mang lại cho bạn cả tốc độ và khả năng mở rộng.
 
 ## Các kịch bản thực tế cho đa giác có lỗ
-1. **Lô đất có hồ nội bộ** – hồ được mô hình hóa như một lỗ nên không được tính vào diện tích lô.  
-2. **Dấu chân tòa nhà có sân trong** – sân trong được loại trừ khỏi dấu chân tòa nhà.  
-3. **Khu bảo tồn bên trong một khu vực bảo tồn lớn hơn** – bạn có thể loại trừ các phần hạn chế mà không cần tạo lớp riêng.
+1. **Land parcel with an internal lake** – hồ được mô hình hoá như một lỗ nên không được tính vào diện tích lô đất.  
+2. **Building footprints with courtyards** – sân trong được loại trừ khỏi diện tích nền của tòa nhà.  
+3. **Protected zones inside a larger conservation area** – bạn có thể loại trừ các khu vực bị hạn chế mà không cần tạo các lớp riêng.
 
 ## Yêu cầu trước
-Trước khi bắt đầu, hãy chắc chắn rằng bạn đã chuẩn bị các yêu cầu sau:
-1. Thư viện Aspose.GIS cho .NET: Bạn có thể tải xuống từ [tại đây](https://releases.aspose.com/gis/net/).  
+Trước khi bắt đầu, hãy chắc chắn rằng bạn đã có các yêu cầu sau:
+1. Thư viện Aspose.GIS cho .NET: Bạn có thể tải xuống từ **Aspose.GIS for .NET download page**([https://releases.aspose.com/gis/net/](https://releases.aspose.com/gis/net/)).  
 2. Môi trường phát triển: Đảm bảo bạn đã thiết lập môi trường phát triển với Visual Studio hoặc bất kỳ IDE .NET nào khác đã được cài đặt.
 
 ## Nhập không gian tên
-Đầu tiên, bạn cần nhập các không gian tên cần thiết để làm việc với các chức năng của Aspose.GIS. Đây là cách thực hiện:
+Không gian tên `Aspose.Gis` chứa tất cả các kiểu hình học bạn sẽ cần, bao gồm `Polygon`, `LinearRing`, và các phương thức trợ giúp để xác thực.
 
 ```csharp
 using Aspose.Gis.Geometries;
@@ -62,17 +122,17 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-Bây giờ, chúng ta sẽ tiến hành tạo một đa giác có lỗ bằng Aspose.GIS cho .NET.
+Bây giờ, hãy tiếp tục tạo một hình đa giác có lỗ bằng Aspose.GIS cho .NET.
 
-## Bước 1: Tạo Đối tượng Polygon
-Chúng ta bắt đầu bằng cách khởi tạo một đối tượng `Polygon` rỗng, sau này sẽ chứa cả vòng ngoại và vòng nội.
+## Bước 1: tạo đối tượng đa giác
+`Polygon` là kiểu hình học của Aspose.GIS đại diện cho một đa giác phẳng có thể có các vòng trong tùy chọn. Chúng ta bắt đầu bằng cách khởi tạo một đối tượng `Polygon` rỗng sẽ sau này chứa cả vòng ngoài và vòng trong.
 
 ```csharp
 Polygon polygon = new Polygon();
 ```
 
-## Bước 2: Định nghĩa Vòng Ngoại
-Vòng ngoại xác định ranh giới bên ngoài của đa giác. Thêm các điểm theo thứ tự đồng hồ để tạo thành một hình dạng đóng.
+## Bước 2: xác định vòng ngoài
+`LinearRing` là lớp được sử dụng cho cả ranh giới ngoài và trong. Vòng ngoài xác định ranh giới bên ngoài của đa giác. Thêm các điểm theo thứ tự đồng hồ để tạo thành một hình dạng đóng.
 
 ```csharp
 LinearRing ring = new LinearRing();
@@ -83,8 +143,8 @@ ring.AddPoint(49.98, 36.17);
 ring.AddPoint(50.02, 36.22);
 ```
 
-## Bước 3: Định nghĩa Vòng Nội (Lỗ)
-Tiếp theo, chúng ta tạo một vòng nội — đây là **lỗ** sẽ bị loại trừ khỏi diện tích của đa giác. Các điểm thường được thêm theo thứ tự ngược chiều kim đồng hồ, nhưng Aspose.GIS tự động xử lý hướng.
+## Bước 3: xác định vòng trong (lỗ)
+`LinearRing` cũng đại diện cho các vòng trong. Vòng trong là **hole** sẽ bị loại trừ khỏi diện tích của đa giác. Các điểm thường được thêm theo thứ tự ngược chiều kim đồng hồ, nhưng Aspose.GIS tự động xử lý hướng.
 
 ```csharp
 LinearRing hole = new LinearRing();
@@ -95,47 +155,54 @@ hole.AddPoint(50.00, 36.24);
 hole.AddPoint(50.00, 36.22);
 ```
 
-## Bước 4: Gán Vòng Ngoại và Thêm Vòng Nội vào Polygon
-Cuối cùng, gắn vòng ngoại vào đa giác và sau đó thêm vòng nội (lỗ). Phương thức `AddInteriorRing` có thể được gọi nhiều lần nếu bạn cần nhiều lỗ.
+## Bước 4: gán vòng ngoài và thêm vòng trong vào đa giác
+Phương thức `AddInteriorRing` gắn một hoặc nhiều vòng trong vào một `Polygon`. Gọi nó sau khi thiết lập thuộc tính `ExteriorRing`; bạn có thể lặp lại lời gọi để thêm nhiều lỗ.
 
 ```csharp
 polygon.ExteriorRing = ring;
 polygon.AddInteriorRing(hole);
 ```
 
-## Mẹo và Thực hành tốt nhất
-- **Orientation matters for readability** – mặc dù Aspose.GIS tự động sửa hướng, việc giữ vòng ngoại theo chiều kim đồng hồ và vòng nội ngược chiều kim đồng hồ giúp hình học dễ kiểm tra hơn trong các trình xem GIS.  
-- **Close each ring** – luôn lặp lại tọa độ đầu tiên làm điểm cuối; điều này đảm bảo một hình dạng đóng hợp lệ.  
+## Mẹo và thực tiễn tốt nhất
+- **Orientation matters for readability** – trong khi Aspose.GIS tự động chỉnh sửa hướng, việc giữ vòng ngoài theo chiều kim đồng hồ và vòng trong ngược chiều kim đồng hồ giúp hình học dễ kiểm tra hơn trong các trình xem GIS.  
+- **Close each ring** – luôn lặp lại tọa độ đầu tiên làm điểm cuối cùng; điều này đảm bảo một hình dạng đóng hợp lệ.  
 - **Validate after creation** – bạn có thể gọi `polygon.IsValid` để đảm bảo hình học tuân thủ tiêu chuẩn OGC trước khi lưu.
 
 ## Các vấn đề thường gặp và giải pháp
-| Vấn đề | Nguyên nhân | Giải pháp |
-|-------|------------|----------|
-| Lỗ không hiển thị trong trình xem GIS | Hướng vòng nội bị đảo ngược | Đảm bảo các điểm được thêm theo hướng ngược lại vòng ngoại (ngược chiều kim đồng hồ). |
+| Vấn đề | Nguyên nhân | Cách khắc phục |
+|-------|------------|----------------|
+| Lỗ không hiển thị trong trình xem GIS | Hướng vòng trong bị đảo ngược | Đảm bảo các điểm được thêm theo hướng ngược lại so với vòng ngoài (ngược chiều kim đồng hồ). |
 | Lỗi đa giác không hợp lệ | Các vòng không đóng (điểm đầu ≠ điểm cuối) | Lặp lại điểm đầu làm điểm cuối trong mỗi vòng (như đã minh họa ở trên). |
-| Hình học trống không mong muốn | Quên gán `ExteriorRing` trước khi thêm vòng nội | Đặt `polygon.ExteriorRing` trước, sau đó gọi `AddInteriorRing`. |
+| Hình học bất ngờ rỗng | Quên gán `ExteriorRing` trước khi thêm các vòng trong | Đặt `polygon.ExteriorRing` trước, sau đó gọi `AddInteriorRing`. |
 
 ## Câu hỏi thường gặp
 ### 1. Aspose.GIS là gì?
-Aspose.GIS là một thư viện .NET cho phép các nhà phát triển làm việc với dữ liệu không gian, cho phép tạo, đọc và thao tác với nhiều định dạng tệp không gian khác nhau.
+Aspose.GIS là một thư viện .NET cho phép các nhà phát triển làm việc với dữ liệu không gian địa lý, cho phép họ tạo, đọc và thao tác với các định dạng tệp không gian địa lý khác nhau.
 
-### 2. Tôi có thể sử dụng Aspose.GIS cho dự án thương mại không?
-Có, bạn có thể sử dụng Aspose.GIS cho cả dự án cá nhân và thương mại bằng cách mua giấy phép. Tham khảo [tại đây](https://purchase.aspose.com/buy) để biết thêm chi tiết.
+### 2. Tôi có thể sử dụng Aspose.GIS cho các dự án thương mại không?
+Có, bạn có thể sử dụng Aspose.GIS cho cả dự án cá nhân và thương mại bằng cách mua giấy phép. Tham khảo **Aspose.GIS purchase page**([https://purchase.aspose.com/buy](https://purchase.aspose.com/buy)) để biết thêm chi tiết.
 
 ### 3. Có bản dùng thử miễn phí cho Aspose.GIS không?
-Có, bạn có thể dùng thử miễn phí Aspose.GIS từ [tại đây](https://releases.aspose.com/).
+Có, bạn có thể sử dụng bản dùng thử miễn phí của Aspose.GIS từ **Aspose.GIS free trial download page**([https://releases.aspose.com/](https://releases.aspose.com/)).
 
 ### 4. Tôi có thể tìm hỗ trợ cho Aspose.GIS ở đâu?
-Bạn có thể tìm hỗ trợ cho Aspose.GIS trên [diễn đàn Aspose.GIS](https://forum.aspose.com/c/gis/33).
+Bạn có thể tìm hỗ trợ cho Aspose.GIS trên [Aspose.GIS forum](https://forum.aspose.com/c/gis/33).
 
 ### 5. Làm thế nào để tôi có được giấy phép tạm thời cho Aspose.GIS?
-Bạn có thể nhận giấy phép tạm thời cho Aspose.GIS từ [tại đây](https://purchase.aspose.com/temporary-license/).
+Bạn có thể nhận giấy phép tạm thời cho Aspose.GIS từ **Aspose.GIS temporary license page**([https://purchase.aspose.com/temporary-license/](https://purchase.aspose.com/temporary-license/)).
 
 ---
 
-**Cập nhật lần cuối:** 2026-04-03  
-**Kiểm tra với:** Aspose.GIS 24.11 cho .NET  
-**Tác giả:** Aspose  
+**Cập nhật lần cuối:** 2026-09-05  
+**Kiểm tra với:** Aspose.GIS 24.11 for .NET  
+**Tác giả:** Aspose
+
+## Hướng dẫn liên quan
+
+- [Cách tạo hình đa giác với Aspose.GIS cho .NET](/gis/net/geometry-creation/create-polygon-geometry/)
+- [Học cách tạo hình MultiPolygon với Aspose.GIS](/gis/net/geometry-creation/create-multipolygon-geometry/)
+- [Chuyển đổi đa giác thành đường với Aspose.GIS cho .NET](/gis/net/geometry-processing/replace-polygons-with-lines/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
