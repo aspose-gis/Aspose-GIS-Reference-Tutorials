@@ -1,13 +1,72 @@
 ---
-date: 2026-04-03
+date: 2026-09-05
 description: Pelajari cara membuat geometri multipoint .NET menggunakan Aspose.GIS
   untuk .NET. Panduan langkah demi langkah untuk pengembang.
 keywords:
 - create multipoint geometry .net
 - Aspose.GIS .NET
-- multi-point geometry tutorial
+- multi‑point geometry tutorial
+- GIS development .NET
+- spatial data processing
+lastmod: 2026-09-05
 linktitle: Buat Geometri MultiPoint
+og_description: Pelajari cara membuat multipoint geometry .NET dengan Aspose.GIS.
+  Tutorial singkat ini menunjukkan langkah‑langkah tepat, prasyarat, dan praktik terbaik
+  untuk pengembang .NET.
+og_image_alt: Screenshot of Aspose.GIS code editor creating a MultiPoint geometry
+  in a .NET project
+og_title: Buat multipoint geometry .NET dengan Aspose.GIS – panduan cepat
+schemas:
+- author: Aspose
+  dateModified: '2026-09-05'
+  description: Learn how to create multipoint geometry .net using Aspose.GIS for .NET.
+    Step‑by‑step guide for developers.
+  headline: Create MultiPoint Geometry .NET with Aspose.GIS
+  type: TechArticle
+- description: Learn how to create multipoint geometry .net using Aspose.GIS for .NET.
+    Step‑by‑step guide for developers.
+  name: Create MultiPoint Geometry .NET with Aspose.GIS
+  steps:
+  - name: instantiate a MultiPoint object
+    text: The `MultiPoint` class is Aspose.GIS's container for a set of points. Creating
+      an empty instance prepares a holder for the coordinates you will add. Here we
+      create an empty `MultiPoint` container that will hold our individual points.
+  - name: add individual points
+    text: Each call to `Add` inserts a new `Point` into the collection. The constructor
+      arguments are the X (longitude) and Y (latitude) coordinates. > **Pro tip:**
+      You can add as many points as you need—just keep calling `multipoint.Add(new
+      Point(x, y));`.
+  - name: (optional) use the geometry
+    text: 'The `Contains` method checks if a geometry fully encloses another, while
+      `Intersects` determines if geometries share any points. Once you have populated
+      the `MultiPoint`, you can: - Export it to a file format (Shapefile, GeoJSON,
+      etc.). - Perform spatial queries such as `Contains`, `Intersects`, or '
+  type: HowTo
+- questions:
+  - answer: Yes, it works with .NET Framework 4.0 and later, as well as .NET Core
+      and .NET 5/6/7.
+    question: Is Aspose.GIS for .NET compatible with all versions of .NET Framework?
+  - answer: Yes, you can obtain a free trial from the Aspose [website](https://purchase.aspose.com/temporary-license/).
+    question: Can I try Aspose.GIS for .NET before purchasing a license?
+  - answer: Absolutely! It supports polygons, lines, multipolygons, multilinestrings,
+      and many more geometry types.
+    question: Does Aspose.GIS for .NET support other spatial data formats besides
+      points?
+  - answer: You can visit the [Aspose.GIS forum](https://forum.aspose.com/c/gis/33)
+      for community help and access the full documentation [Aspose.GIS .NET documentation](https://reference.aspose.com/gis/net/).
+    question: Where can I find additional resources and support for Aspose.GIS for
+      .NET?
+  - answer: Yes, a temporary license is available for evaluation or short‑term use
+      cases.
+    question: Can I purchase a temporary license for short‑term projects?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
+tags:
+- create multipoint geometry
+- Aspose.GIS
+- .NET GIS
+- spatial programming
+- geometry handling
 title: Buat Geometri MultiPoint .NET dengan Aspose.GIS
 url: /id/net/geometry-creation/create-multipoint-geometry/
 weight: 14
@@ -21,36 +80,31 @@ weight: 14
 
 ## Pendahuluan
 
-Di dunia Sistem Informasi Geografis (GIS), **Aspose.GIS for .NET** menonjol sebagai perpustakaan yang kuat bagi pengembang yang perlu **membuat multipoint geometry .net**‑berbasis solusi. Baik Anda sedang membangun aplikasi pemetaan, memproses data spasial, atau sekadar perlu memanipulasi koleksi titik, tutorial ini akan memandu Anda melalui seluruh proses dengan gaya yang jelas dan percakapan. Pada akhir tutorial, Anda akan dapat menambahkan geometri multi‑point ke proyek Anda dengan percaya diri.
-
 ## Jawaban Cepat
 - **Apa arti “multi‑point geometry”?** Sekumpulan titik individu yang disimpan sebagai satu objek geometris.  
-- **Mengapa menggunakan Aspose.GIS untuk .NET?** Ia menawarkan API yang kaya dan tipe‑aman tanpa ketergantungan eksternal.  
+- **Mengapa menggunakan Aspose.GIS untuk .NET?** Menyediakan API yang kaya dan type‑safe tanpa ketergantungan eksternal.  
 - **Berapa lama implementasinya?** Sekitar 5‑10 menit untuk contoh dasar.  
 - **Apakah saya memerlukan lisensi?** Lisensi yang valid atau percobaan gratis diperlukan untuk penggunaan produksi.  
 - **Versi .NET mana yang didukung?** .NET Framework 4.0+, .NET Core 3.1+, .NET 5/6/7.
 
-## Apa itu Geometri MultiPoint di Aspose.GIS?
+## Apa itu geometri MultiPoint di Aspose.GIS?
 
-Geometri **MultiPoint** mewakili sekumpulan titik yang berbagi referensi spasial yang sama. Ini berguna ketika Anda perlu menyimpan beberapa lokasi bersama—seperti lokasi toko, pembacaan sensor, atau waypoint—tanpa membuat objek terpisah untuk setiap titik.
+Geometri **MultiPoint** adalah satu objek yang menggabungkan banyak titik individu yang berbagi referensi spasial yang sama. Ini memungkinkan Anda memperlakukan seluruh kumpulan lokasi—outlet toko, pembacaan sensor, atau waypoint—sebagai satu entitas, menyederhanakan penyimpanan dan kueri spasial.
 
-## Mengapa membuat multipoint geometry .net dengan Aspose.GIS?
+## Mengapa membuat geometri multipoint .NET dengan Aspose.GIS?
 
-- **Manajemen objek tunggal** – menangani banyak titik sebagai satu entitas.  
-- **Kinerja** – mengurangi beban saat membaca/menulis file spasial.  
-- **Interoperabilitas** – mudah mengekspor ke Shapefile, GeoJSON, KML, dll.  
-- **Pengetikan kuat** – keamanan pada waktu kompilasi dengan sistem tipe kaya C#.
+Membuat geometri MultiPoint memungkinkan Anda mengelola puluhan atau ribuan lokasi sebagai satu objek, yang mengurangi beban memori dan mempercepat I/O file. Aspose.GIS dapat mengekspor objek ini ke lebih dari **50+** format GIS (Shapefile, GeoJSON, KML, GML, dll.) tanpa konverter tambahan, dan memproses file hingga **500 MB** dalam aliran memori‑efisien.
 
 ## Prasyarat
 
 1. **Pengetahuan dasar C#** – Anda akan menulis beberapa baris kode C#.  
 2. **Visual Studio** (edisi terbaru apa pun) terpasang di mesin Anda.  
-3. **Aspose.GIS for .NET** terpasang – unduh dari [di sini](https://releases.aspose.com/gis/net/).  
-4. **Lisensi yang valid atau percobaan gratis** – dapatkan satu dari [di sini](https://releases.aspose.com/).
+3. **Aspose.GIS untuk .NET** terpasang – unduh dari [Aspose.GIS .NET download](https://releases.aspose.com/gis/net/).  
+4. **Lisensi yang valid atau percobaan gratis** – dapatkan dari [Aspose license page](https://releases.aspose.com/).
 
-Setelah fondasi siap, mari kita selami kode.
+Sekarang dasar sudah siap, mari kita selami kode.
 
-## Impor Namespace
+## Impor namespace
 
 Pertama, bawa namespace yang diperlukan ke dalam ruang lingkup sehingga kita dapat mengakses kelas geometri.
 
@@ -65,9 +119,11 @@ using System.Threading.Tasks;
 
 > *Kami menyertakan `Aspose.Gis.Geometries` karena berisi kelas `MultiPoint` dan `Point` yang akan kami gunakan.*
 
-## Panduan Langkah‑per‑Langkah untuk Membuat Geometri MultiPoint
+## Panduan langkah‑demi‑langkah untuk membuat geometri MultiPoint
 
-### Langkah 1: Membuat objek MultiPoint
+### Langkah 1: buat instance objek MultiPoint
+
+Kelas `MultiPoint` adalah kontainer Aspose.GIS untuk sekumpulan titik. Membuat instance kosong menyiapkan tempat untuk koordinat yang akan Anda tambahkan.
 
 ```csharp
 MultiPoint multipoint = new MultiPoint();
@@ -75,58 +131,67 @@ MultiPoint multipoint = new MultiPoint();
 
 Di sini kami membuat kontainer `MultiPoint` kosong yang akan menampung titik‑titik individu kami.
 
-### Langkah 2: Menambahkan titik individu
+### Langkah 2: tambahkan titik individu
+
+Setiap pemanggilan `Add` menyisipkan `Point` baru ke dalam koleksi. Argumen konstruktor adalah koordinat X (longitude) dan Y (latitude).
 
 ```csharp
 multipoint.Add(new Point(1, 2));
 multipoint.Add(new Point(3, 4));
 ```
 
-Setiap pemanggilan `Add` menyisipkan `Point` baru ke dalam koleksi. Argumen konstruktor adalah koordinat X (longitude) dan Y (latitude).
+**Tips Pro:** Anda dapat menambahkan sebanyak mungkin titik yang Anda butuhkan—cukup terus panggil `multipoint.Add(new Point(x, y));`.
 
-> **Tips profesional:** Anda dapat menambahkan sebanyak mungkin titik yang Anda perlukan—cukup terus panggil `multipoint.Add(new Point(x, y));`.
+### Langkah 3: (opsional) gunakan geometri
 
-### Langkah 3: (Opsional) Menggunakan geometri
+Metode `Contains` memeriksa apakah sebuah geometri sepenuhnya melingkupi yang lain, sementara `Intersects` menentukan apakah geometri berbagi titik apa pun. Setelah Anda mengisi `MultiPoint`, Anda dapat:
+- Mengekspornya ke format file (Shapefile, GeoJSON, dll.).  
+- Melakukan kueri spasial seperti `Contains`, `Intersects`, atau perhitungan jarak.  
+- Mengirimkannya ke API Aspose.GIS lainnya untuk pemrosesan lebih lanjut.
 
-Setelah Anda mengisi `MultiPoint`, Anda dapat:
-- Mengekspornya ke format file (Shapefile, GeoJSON, dll.).
-- Melakukan kueri spasial seperti `Contains`, `Intersects`, atau perhitungan jarak.
-- Mengirimnya ke API Aspose.GIS lainnya untuk pemrosesan lebih lanjut.
+## Kesalahan umum & pemecahan masalah
 
-## Kesalahan Umum & Pemecahan Masalah
+`SpatialReference` mendefinisikan sistem koordinat yang digunakan oleh sebuah geometri. Tetapkan sebelum mengekspor untuk memastikan koordinat diinterpretasikan dengan benar.
 
 | Masalah | Penyebab | Solusi |
 |-------|-------|-----|
-| **Titik tidak muncul dalam file yang diekspor** | Lupa mengatur referensi spasial (SRID) | Tetapkan `multipoint.SpatialReference = SpatialReference.Wgs84;` sebelum mengekspor. |
-| **Exception: “Object reference not set”** | Menggunakan `MultiPoint` yang belum diinisialisasi | Pastikan `new MultiPoint()` dipanggil sebelum menambahkan titik. |
-| **Urutan koordinat tidak tepat** | Membingungkan X/Y dengan latitude/longitude | Ingat: `new Point(x, y)` → X = longitude, Y = latitude. |
+| **Titik tidak muncul dalam file yang diekspor** | Lupa menetapkan referensi spasial (SRID) | Tetapkan `multipoint.SpatialReference = SpatialReference.Wgs84;` sebelum mengekspor. |
+| **Pengecualian: “Object reference not set”** | Menggunakan `MultiPoint` yang belum diinisialisasi | Pastikan `new MultiPoint()` dipanggil sebelum menambahkan titik. |
+| **Urutan koordinat tidak tepat** | Mencampur X/Y dengan latitude/longitude | Ingat: `new Point(x, y)` → X = longitude, Y = latitude. |
 
 ## Pertanyaan yang Sering Diajukan
 
-**T: Apakah Aspose.GIS untuk .NET kompatibel dengan semua versi .NET Framework?**  
-J: Ya, ia bekerja dengan .NET Framework 4.0 ke atas, serta .NET Core dan .NET 5/6/7.
+**Q: Apakah Aspose.GIS untuk .NET kompatibel dengan semua versi .NET Framework?**  
+A: Ya, ia bekerja dengan .NET Framework 4.0 dan yang lebih baru, serta .NET Core dan .NET 5/6/7.
 
-**T: Bisakah saya mencoba Aspose.GIS untuk .NET sebelum membeli lisensi?**  
-J: Ya, Anda dapat memperoleh percobaan gratis dari [situs web Aspose](https://purchase.aspose.com/temporary-license/).
+**Q: Bisakah saya mencoba Aspose.GIS untuk .NET sebelum membeli lisensi?**  
+A: Ya, Anda dapat memperoleh percobaan gratis dari [situs Aspose](https://purchase.aspose.com/temporary-license/).
 
-**T: Apakah Aspose.GIS untuk .NET mendukung format data spasial lain selain titik?**  
-J: Tentu! Ia mendukung poligon, garis, multipoligon, multiline string, dan banyak tipe geometri lainnya.
+**Q: Apakah Aspose.GIS untuk .NET mendukung format data spasial lain selain titik?**  
+A: Tentu saja! Ia mendukung poligon, garis, multipoligon, multilinestring, dan banyak tipe geometri lainnya.
 
-**T: Di mana saya dapat menemukan sumber daya tambahan dan dukungan untuk Aspose.GIS untuk .NET?**  
-J: Anda dapat mengunjungi [forum Aspose.GIS](https://forum.aspose.com/c/gis/33) untuk bantuan komunitas dan mengakses dokumentasi lengkap [di sini](https://reference.aspose.com/gis/net/).
+**Q: Di mana saya dapat menemukan sumber daya tambahan dan dukungan untuk Aspose.GIS untuk .NET?**  
+A: Anda dapat mengunjungi [forum Aspose.GIS](https://forum.aspose.com/c/gis/33) untuk bantuan komunitas dan mengakses dokumentasi lengkap [Aspose.GIS .NET documentation](https://reference.aspose.com/gis/net/).
 
-**T: Bisakah saya membeli lisensi sementara untuk proyek jangka pendek?**  
-J: Ya, lisensi sementara tersedia untuk evaluasi atau penggunaan jangka pendek.
+**Q: Bisakah saya membeli lisensi sementara untuk proyek jangka pendek?**  
+A: Ya, lisensi sementara tersedia untuk evaluasi atau penggunaan jangka pendek.
 
 ## Kesimpulan
 
-Anda kini telah mempelajari cara **membuat multipoint geometry .net** menggunakan Aspose.GIS. Dengan mengikuti langkah‑langkah sederhana ini—membuat `MultiPoint`, menambahkan objek `Point`, dan secara opsional mengekspor atau memproses geometri—Anda dapat mengintegrasikan koleksi titik spasial ke dalam aplikasi .NET apa pun dengan mulus.
+Anda kini telah belajar cara **membuat geometri multipoint .NET** menggunakan Aspose.GIS. Dengan mengikuti langkah‑langkah sederhana ini—membuat instance `MultiPoint`, menambahkan objek `Point`, dan opsional mengekspor atau memproses geometri—Anda dapat mengintegrasikan koleksi titik spasial ke dalam aplikasi .NET apa pun dengan mulus.
 
 ---
 
-**Terakhir Diperbarui:** 2026-04-03  
-**Diuji Dengan:** Aspose.GIS for .NET (rilis terbaru)  
-**Penulis:** Aspose  
+**Terakhir Diperbarui:** 2026-09-05  
+**Diuji Dengan:** Aspose.GIS untuk .NET (rilis terbaru)  
+**Author:** Aspose
+
+## Tutorial Terkait
+
+- [Pelajari Cara Membuat Geometri LineString dengan Aspose.GIS untuk .NET](/gis/net/geometry-creation/create-linestring-geometry/)
+- [Buat Geometri MultiLineString menggunakan Aspose.GIS untuk .NET](/gis/net/geometry-creation/create-multilinestring-geometry/)
+- [Pelajari Cara Membuat Geometri MultiPolygon dengan Aspose.GIS](/gis/net/geometry-creation/create-multipolygon-geometry/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
