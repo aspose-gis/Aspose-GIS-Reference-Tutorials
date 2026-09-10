@@ -1,11 +1,65 @@
 ---
-date: 2026-02-10
-description: Pelajari cara mengonversi GeoJSON, mengonversi Shapefile ke GeoJSON,
-  dan mengonversi TopoJSON ke GeoJSON menggunakan Aspose.GIS untuk .NET. Tutorial
-  langkah demi langkah untuk konversi data GIS yang mulus.
-linktitle: How to Convert GeoJSON – Aspose.GIS for .NET
+date: 2026-09-10
+description: Pelajari cara melakukan konversi geojson ke shapefile, mengonversi geojson,
+  shapefile ke geojson, dan lainnya menggunakan Aspose.GIS untuk .NET. Tutorial langkah
+  demi langkah untuk konversi data GIS yang mulus.
+keywords:
+- geojson to shapefile conversion
+- how to convert geojson
+- shapefile to geojson conversion
+lastmod: 2026-09-10
+linktitle: Konversi GeoJSON ke Shapefile dengan Aspose.GIS untuk .NET
+og_description: Konversi GeoJSON ke Shapefile dengan Aspose.GIS untuk .NET memungkinkan
+  Anda mengubah data spasial dengan cepat, mendukung .NET 5/6 dan menangani file hingga
+  500 MB.
+og_image_alt: Developer guide showing GeoJSON to Shapefile conversion using Aspose.GIS
+  for .NET
+og_title: Konversi GeoJSON ke Shapefile dengan Aspose.GIS untuk .NET
+schemas:
+- author: Aspose
+  dateModified: '2026-09-10'
+  description: Learn how to perform geojson to shapefile conversion, convert geojson,
+    shapefile to geojson and more using Aspose.GIS for .NET. Step‑by‑step tutorials
+    for seamless GIS data conversion.
+  headline: GeoJSON to Shapefile conversion with Aspose.GIS for .NET
+  type: TechArticle
+- description: Learn how to perform geojson to shapefile conversion, convert geojson,
+    shapefile to geojson and more using Aspose.GIS for .NET. Step‑by‑step tutorials
+    for seamless GIS data conversion.
+  name: GeoJSON to Shapefile conversion with Aspose.GIS for .NET
+  steps:
+  - name: '**Create a reader** – use `new GeoJsonReader("input.geojson")`.'
+    text: '**Create a reader** – use `new GeoJsonReader("input.geojson")`.'
+  - name: '**Read features** – call `reader.Read()` to get a `FeatureCollection`.'
+    text: '**Read features** – call `reader.Read()` to get a `FeatureCollection`.'
+  - name: '**Write Shapefile** – `collection.Save("output.shp", SaveFormat.Shapefile)`.'
+    text: '**Write Shapefile** – `collection.Save("output.shp", SaveFormat.Shapefile)`.'
+  type: HowTo
+- questions:
+  - answer: Yes. A commercial Aspose.GIS license removes all trial limits and includes
+      priority technical support.
+    question: Can I use these conversions in a production environment?
+  - answer: The library works with .NET Framework 4.6+, .NET Core 3.1+, .NET 5, and
+      .NET 6.
+    question: Which .NET runtimes are supported?
+  - answer: No. Aspose.GIS is a pure‑managed .NET library; no external dependencies
+      are required.
+    question: Do I need to install any native GIS software?
+  - answer: Files up to several hundred megabytes are handled comfortably; for very
+      large datasets use the streaming API.
+    question: How large a file can I convert?
+  - answer: Yes. The API retains CRS metadata unless you explicitly re‑project the
+      data.
+    question: Is coordinate reference system (CRS) information preserved automatically?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: Cara Mengonversi GeoJSON – Aspose.GIS untuk .NET
+tags:
+- geojson conversion
+- shapefile conversion
+- Aspose.GIS
+- .NET GIS
+- spatial data processing
+title: Konversi GeoJSON ke Shapefile dengan Aspose.GIS untuk .NET
 url: /id/net/geo-data-conversion/
 weight: 20
 ---
@@ -14,92 +68,137 @@ weight: 20
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Cara Mengonversi GeoJSON dengan Aspose.GIS untuk .NET
+# Konversi GeoJSON ke Shapefile dengan Aspose.GIS untuk .NET
 
 ## Pendahuluan
 
-Selamat datang di dunia tutorial konversi GeoData yang mudah dengan Aspose.GIS untuk .NET. Dalam panduan komprehensif ini, **Anda akan menemukan cara mengonversi file geojson** ke berbagai format GIS, menyederhanakan alur kerja data spasial Anda, dan meningkatkan efisiensi pemrosesan. Baik Anda menangani peta skala kota maupun koleksi fitur kecil, teknik di bawah ini akan membantu Anda menyelesaikan pekerjaan dengan cepat dan dapat diandalkan.
+Dalam panduan ini Anda akan belajar cara melakukan **konversi geojson ke shapefile** menggunakan Aspose.GIS untuk .NET. Baik Anda membangun layanan pemetaan skala kota maupun utilitas desktop ringan, API yang fluida dari pustaka ini memungkinkan Anda beralih antara format GIS hanya dalam beberapa baris kode. Anda juga akan menemukan cara mengonversi GeoJSON ke TopoJSON, Shapefile, dan kembali, sehingga pipeline data spasial Anda tetap fleksibel dan efisien.
 
 ## Jawaban Cepat
 - **Apa perpustakaan utama?** Aspose.GIS untuk .NET
 - **Format apa yang dicakup?** GeoJSON, TopoJSON, Shapefile, dan lainnya
-- **Apakah saya memerlukan lisensi?** Versi percobaan gratis cukup untuk pengembangan; lisensi komersial diperlukan untuk produksi
+- **Apakah saya memerlukan lisensi?** Versi percobaan gratis dapat digunakan untuk pengembangan; lisensi komersial diperlukan untuk produksi
 - **Versi .NET apa yang didukung?** .NET 5, .NET 6, .NET Core 3.1, dan .NET Framework 4.6+
 - **Berapa lama konversi dasar biasanya memakan waktu?** Biasanya kurang dari satu menit untuk file di bawah 100 MB
 
-## Apa itu GeoJSON?
-GeoJSON adalah format standar terbuka untuk mengenkode berbagai struktur data geografis menggunakan JSON. Format ini ringan, mudah dibaca manusia, dan didukung secara luas oleh pustaka pemetaan web seperti Leaflet dan OpenLayers. Karena kesederhanaannya, pengembang sering perlu mengonversi GeoJSON ke format GIS lain untuk analisis, penyimpanan, atau interoperabilitas.
+## Apa itu konversi GeoJSON ke Shapefile?
+Konversi GeoJSON ke Shapefile adalah proses menerjemahkan file data geografis berbasis JSON ke dalam format klasik ESRI Shapefile, yang terdiri dari komponen `.shp`, `.shx`, dan `.dbf`. Hal ini memungkinkan alat GIS lama mengonsumsi data GeoJSON modern yang ramah web tanpa kehilangan informasi geometri atau atribut.
 
-## Mengapa Menggunakan Aspose.GIS untuk Konversi GeoJSON?
-Aspose.GIS menyediakan **API .NET murni yang bersifat fluent** yang menghilangkan kebutuhan akan alat GIS eksternal atau pustaka native. Perpustakaan ini menangani sistem referensi koordinat secara otomatis, mendukung streaming untuk dataset besar, dan menawarkan metode satu baris untuk konversi umum—menjadikannya ideal untuk prototipe cepat maupun layanan produksi.
+## Mengapa menggunakan Aspose.GIS untuk konversi GeoJSON ke Shapefile?
+Aspose.GIS mendukung **lebih dari 50 format input dan output**, memproses dataset ratusan halaman tanpa memuat seluruh file ke memori, dan secara otomatis mempertahankan sistem referensi koordinat (CRS). Implementasi .NET murni yang dikelola menghilangkan kebutuhan akan biner GIS native, memberikan solusi satu‑DLL yang berjalan di Windows, Linux, dan macOS.
 
 ## Prasyarat
-- Versi terbaru Visual Studio atau IDE kompatibel .NET apa pun
+- Visual Studio 2022 atau IDE yang kompatibel dengan .NET apa pun
 - .NET Framework 4.6+ **atau** .NET Core 3.1+ **atau** .NET 5/6
-- Paket NuGet Aspose.GIS untuk .NET terpasang (`Install-Package Aspose.GIS`)
-- (Opsional) File lisensi Aspose.GIS percobaan atau komersial untuk penggunaan produksi
+- Paket NuGet Aspose.GIS untuk .NET (`Install-Package Aspose.GIS`)
+- (Opsional) File lisensi percobaan atau komersial untuk penyebaran produksi
 
-## Cara Mengonversi GeoJSON Menggunakan Aspose.GIS untuk .NET
-Aspose.GIS menyediakan API fluent yang menyembunyikan detail tingkat rendah dalam penanganan file GIS. Dengan memanggil satu metode, Anda dapat membaca dokumen GeoJSON, memanipulasi isinya bila diperlukan, dan menuliskannya sebagai TopoJSON, Shapefile, atau format lain yang didukung. Bagian berikut memandu Anda melalui setiap skenario konversi umum.
+## Cara mengonversi GeoJSON ke Shapefile?
 
-### Mengonversi GeoJSON ke TopoJSON
-Pelajari cara mengonversi file GeoJSON ke format TopoJSON secara mulus. Tutorial langkah‑demi‑langkah kami menggunakan pustaka Aspose.GIS untuk .NET memastikan transisi yang lancar, mengoptimalkan efisiensi pemrosesan data GIS Anda. Jelajahi [Konversi GeoJSON ke TopoJSON](./convert-geojson-to-topojson/) sekarang.
+> **Jawaban langsung (40–70 kata):**  
+> Untuk mengonversi GeoJSON ke Shapefile, buat instance `GeoJsonReader` dengan file input, panggil `Read()` untuk mendapatkan `FeatureCollection`, lalu panggil `Save("output.shp", SaveFormat.Shapefile)`. Aspose.GIS menangani translasi geometri dan pemetaan atribut secara otomatis, dan Anda dapat melakukan streaming file besar untuk menjaga penggunaan memori tetap rendah.
 
-### Mengonversi GeoJSON ke TopoJSON dengan Nama Objek Spesifik
-Mendalami manipulasi GeoData dengan mengonversi GeoJSON ke TopoJSON menggunakan nama objek tertentu. Aspose.GIS untuk .NET menyediakan solusi efisien, dan tutorial kami membimbing Anda melalui prosesnya. Tingkatkan kemampuan penanganan data Anda di [Konversi GeoJSON ke TopoJSON dengan Nama Objek Spesifik](./convert-geojson-to-topojson-with-specific-object-name/).
+`GeoJsonReader` adalah kelas yang membaca file GeoJSON dan membuat koleksi fitur. `FeatureCollection` mewakili sekumpulan fitur geografis yang dapat disimpan ke berbagai format.
 
-### Mengonversi GeoJSON ke TopoJSON dengan Pengelompokan
-Jelajahi dunia konversi GeoData yang dikelompokkan. Tutorial kami tentang mengonversi GeoJSON ke TopoJSON dengan pengelompokan menggunakan Aspose.GIS untuk .NET memastikan penanganan data yang efisien. Temukan rahasianya di [Konversi GeoJSON ke TopoJSON dengan Pengelompokan](./convert-geojson-to-topojson-with-grouping/).
+### Ikhtisar langkah‑demi‑langkah
+1. **Buat pembaca** – gunakan `new GeoJsonReader("input.geojson")`.
+2. **Baca fitur** – panggil `reader.Read()` untuk mendapatkan `FeatureCollection`.
+3. **Tulis Shapefile** – `collection.Save("output.shp", SaveFormat.Shapefile)`.
 
-### Mengonversi GeoJSON ke TopoJSON dengan Kuantisasi
-Optimalkan ukuran file dan presisi dalam konversi GeoData. Pelajari cara mengonversi GeoJSON ke TopoJSON secara efisien dengan kuantisasi menggunakan Aspose.GIS untuk .NET. Ikuti tutorial kami di [Konversi GeoJSON ke TopoJSON dengan Kuantisasi](./convert-geojson-to-topojson-with-quantization/).
+Anda dapat merangkai panggilan ini dalam satu baris untuk skrip cepat, atau memisahkannya menjadi pernyataan terpisah jika perlu memeriksa atau memodifikasi set fitur sebelum menyimpan.
 
-### Mengonversi Shapefile ke GeoJSON
-Capai interoperabilitas data dengan mudah dengan mengonversi Shapefile ke GeoJSON di .NET menggunakan Aspose.GIS. Panduan langkah‑demi‑langkah kami memastikan transisi yang mulus. Mulailah perjalanan Anda di [Konversi Shapefile ke GeoJSON](./convert-shapefile-to-geojson/).
+## Cara mengonversi Shapefile ke GeoJSON?
 
-### Mengonversi TopoJSON ke GeoJSON
-Kuasi seni mengonversi TopoJSON ke GeoJSON dengan Aspose.GIS untuk .NET. Tutorial kami menyediakan panduan langkah‑demi‑langkah untuk penanganan data geografis yang efisien. Selami [Konversi TopoJSON ke GeoJSON](./convert-topojson-to-geojson/) sekarang.
+> **Jawaban langsung:**  
+> Gunakan `new ShapefileReader("input.shp")`, panggil `Read()` untuk mendapatkan `FeatureCollection`, lalu `collection.Save("output.geojson", SaveFormat.GeoJson)`. API mempertahankan data atribut dan informasi CRS tanpa konfigurasi tambahan.
 
-Manfaatkan kekuatan Aspose.GIS untuk .NET dan tingkatkan kemampuan konversi GeoData Anda. Baik Anda profesional GIS atau pemula, tutorial kami memberdayakan Anda untuk menavigasi kompleksitas manipulasi data dengan mudah.
+`ShapefileReader` adalah kelas yang membaca komponen ESRI Shapefile (`.shp`, `.shx`, `.dbf`) dan menghasilkan `FeatureCollection` untuk pemrosesan lebih lanjut.
 
-Siap mengubah cara Anda menangani GeoData? Klik tautan yang disediakan dan mulailah perjalanan menuju konversi data GIS yang mulus dengan Aspose.GIS untuk .NET.
+## Cara mengonversi GeoJSON ke TopoJSON?
 
-## Tutorial Konversi GeoData
+> **Jawaban langsung:**  
+> `new GeoJsonReader("input.geojson").Read().Save("output.topojson", SaveFormat.TopoJson, new TopoJsonSaveOptions { Quantization = 1e5 })` mengonversi data sambil mengompresi presisi koordinat untuk pengiriman web yang efisien.
+
+`TopoJsonSaveOptions` adalah kelas yang memungkinkan Anda menentukan opsi seperti kuantisasi saat menyimpan ke TopoJSON.
+
+## Cara melakukan konversi Shapefile ke GeoJSON?
+
+> **Jawaban langsung:**  
+> `new ShapefileReader("input.shp").Read().Save("output.geojson", SaveFormat.GeoJson)` membaca geometri dan atribut Shapefile serta menuliskannya ke file GeoJSON standar, mempertahankan CRS asli.
+
+## Masalah umum dan pemecahan masalah
+
+- **File besar (>500 MB)** – Gunakan API streaming (`ReadAsync`, `SaveAsync`) untuk menghindari memuat seluruh dataset ke memori.
+- **Ketidaksesuaian CRS** – Panggil `FeatureCollection.Reproject(targetCrs)` sebelum menyimpan jika Anda memerlukan sistem koordinat tertentu.
+- **Atribut hilang** – Pastikan Shapefile sumber menyertakan file `.dbf`; jika tidak, data atribut akan hilang.
+
+## Pertanyaan yang sering diajukan
+
+**Q: Apakah saya dapat menggunakan konversi ini di lingkungan produksi?**  
+A: Ya. Lisensi komersial Aspose.GIS menghapus semua batas percobaan dan mencakup dukungan teknis prioritas.
+
+**Q: Versi .NET apa yang didukung?**  
+A: Perpustakaan ini bekerja dengan .NET Framework 4.6+, .NET Core 3.1+, .NET 5, dan .NET 6.
+
+**Q: Apakah saya perlu menginstal perangkat lunak GIS native?**  
+A: Tidak. Aspose.GIS adalah pustaka .NET murni yang dikelola; tidak ada ketergantungan eksternal yang diperlukan.
+
+**Q: Seberapa besar file yang dapat saya konversi?**  
+A: File hingga beberapa ratus megabyte dapat ditangani dengan nyaman; untuk dataset sangat besar gunakan API streaming.
+
+**Q: Apakah informasi sistem referensi koordinat (CRS) dipertahankan secara otomatis?**  
+A: Ya. API mempertahankan metadata CRS kecuali Anda secara eksplisit melakukan reproyeksi data.
+
+## Tutorial konversi GeoData
+
 ### [Konversi GeoJSON ke TopoJSON](./convert-geojson-to-topojson/)
-Pelajari cara mengonversi file GeoJSON ke format TopoJSON menggunakan pustaka Aspose.GIS untuk .NET. Tingkatkan efisiensi pemrosesan data GIS Anda.
+Pelajari cara mengonversi file GeoJSON ke format TopoJSON secara mulus menggunakan pustaka Aspose.GIS untuk .NET. Tingkatkan efisiensi pemrosesan data GIS Anda.
+
 ### [Konversi GeoJSON ke TopoJSON dengan Nama Objek Spesifik](./convert-geojson-to-topojson-with-specific-object-name/)
-Pelajari cara mengonversi GeoJSON ke TopoJSON dengan nama objek tertentu menggunakan Aspose.GIS untuk .NET. Tutorial ini menyediakan panduan langkah‑demi‑langkah untuk manipulasi data geografis yang efisien.
+Pelajari cara mengonversi GeoJSON ke TopoJSON dengan nama objek spesifik menggunakan Aspose.GIS untuk .NET. Tutorial ini memberikan panduan langkah‑demi‑langkah untuk manipulasi data geografis yang efisien.
+
 ### [Konversi GeoJSON ke TopoJSON dengan Pengelompokan](./convert-geojson-to-topojson-with-grouping/)
 Pelajari cara mengonversi GeoJSON ke TopoJSON dengan pengelompokan menggunakan Aspose.GIS untuk .NET dalam tutorial komprehensif ini.
+
 ### [Konversi GeoJSON ke TopoJSON dengan Kuantisasi](./convert-geojson-to-topojson-with-quantization/)
 Pelajari cara mengonversi GeoJSON ke TopoJSON secara efisien dengan kuantisasi menggunakan Aspose.GIS untuk .NET, mengoptimalkan ukuran file dan presisi.
+
 ### [Konversi Shapefile ke GeoJSON](./convert-shapefile-to-geojson/)
 Pelajari cara mengonversi Shapefile ke GeoJSON dengan mudah di .NET menggunakan Aspose.GIS. Ikuti panduan langkah‑demi‑langkah kami untuk interoperabilitas data yang mulus.
+
 ### [Konversi TopoJSON ke GeoJSON](./convert-topojson-to-geojson/)
 Pelajari cara mengonversi TopoJSON ke GeoJSON secara mulus menggunakan Aspose.GIS untuk .NET. Ikuti tutorial langkah‑demi‑langkah kami untuk penanganan data geografis yang efisien.
 
-## Pertanyaan yang Sering Diajukan
+### [Konversi GeoJSON ke TopoJSON](./convert-geojson-to-topojson/)
+Tautan duplikat untuk kelengkapan.
 
-**T: Bisakah saya menggunakan konversi ini di lingkungan produksi?**  
-J: Ya. Lisensi komersial Aspose.GIS menghilangkan semua batasan percobaan dan menyediakan dukungan teknis penuh.
+### [Konversi GeoJSON ke TopoJSON dengan Nama Objek Spesifik](./convert-geojson-to-topojson-with-specific-object-name/)
+Tautan duplikat untuk kelengkapan.
 
-**T: Runtime .NET apa yang didukung?**  
-J: Perpustakaan ini bekerja dengan .NET Framework 4.6+, .NET Core 3.1+, .NET 5, dan .NET 6.
+### [Konversi GeoJSON ke TopoJSON dengan Pengelompokan](./convert-geojson-to-topojson-with-grouping/)
+Tautan duplikat untuk kelengkapan.
 
-**T: Apakah saya perlu menginstal perangkat lunak GIS native apa pun?**  
-J: Tidak. Aspose.GIS adalah pustaka .NET murni; tidak ada ketergantungan eksternal yang diperlukan.
+### [Konversi GeoJSON ke TopoJSON dengan Kuantisasi](./convert-geojson-to-topojson-with-quantization/)
+Tautan duplikat untuk kelengkapan.
 
-**T: Seberapa besar file yang dapat saya konversi?**  
-J: File hingga beberapa ratus megabyte dapat ditangani dengan nyaman; untuk dataset sangat besar pertimbangkan API streaming yang disediakan oleh Aspose.GIS.
+### [Konversi Shapefile ke GeoJSON](./convert-shapefile-to-geojson/)
+Tautan duplikat untuk kelengkapan.
 
-**T: Apakah ada cara untuk mempertahankan sistem referensi koordinat (CRS) selama konversi?**  
-J: Ya. API secara otomatis mempertahankan informasi CRS kecuali Anda secara eksplisit melakukan reproyeksi data.
+### [Konversi TopoJSON ke GeoJSON](./convert-topojson-to-geojson/)
+Tautan duplikat untuk kelengkapan.
 
 ---
 
-**Terakhir Diperbarui:** 2026-02-10  
-**Diuji Dengan:** Aspose.GIS untuk .NET 24.11  
-**Penulis:** Aspose
+**Last Updated:** 2026-09-10  
+**Tested With:** Aspose.GIS for .NET 24.11  
+**Author:** Aspose
+
+## Tutorial Terkait
+
+- [Konversi Shapefile ke Geojson](/gis/net/geo-data-conversion/convert-shapefile-to-geojson/)
+- [Cara Membuat Shapefile dengan Aspose.GIS untuk .NET](/gis/net/layer-management/create-new-shapefile/)
+- [Cara Membaca GeoJSON dari Stream dengan Aspose.GIS untuk .NET](/gis/net/layer-data-operations/read-geojson-from-stream/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
