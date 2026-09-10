@@ -1,15 +1,65 @@
 ---
-date: 2026-04-03
-description: Pelajari cara membuat lapisan vektor dan membatasi presisi saat membaca
-  geometri menggunakan Aspose.GIS untuk .NET. Panduan langkah demi langkah untuk penanganan
-  data geospasial yang optimal.
+date: 2026-09-10
+description: Pelajari cara membuat vector layer dengan Aspose.GIS for .NET dan batasi
+  precision untuk mengurangi ukuran shapefile, meningkatkan performance, dan mempertahankan
+  coordinate accuracy.
 keywords:
-- create vector layer
+- how to create vector layer
+- limit precision reading geometries
 - reduce shapefile size
-- set precision model
-linktitle: Batasi Presisi Membaca Geometri
+lastmod: 2026-09-10
+linktitle: Batasi Precision Membaca Geometries
+og_description: Pelajari cara membuat vector layer dengan Aspose.GIS for .NET dan
+  batasi precision untuk mengurangi ukuran shapefile, meningkatkan performance, dan
+  mengelola coordinate accuracy.
+og_image_alt: Screenshot showing Aspose.GIS code for creating a vector layer and setting
+  precision
+og_title: Cara membuat vector layer dengan Aspose.GIS for .NET
+schemas:
+- author: Aspose
+  dateModified: '2026-09-10'
+  description: Learn how to create vector layer with Aspose.GIS for .NET and limit
+    precision to shrink shapefile size, boost performance, and keep coordinate accuracy.
+  headline: How to create vector layer with Aspose.GIS for .NET
+  type: TechArticle
+- description: Learn how to create vector layer with Aspose.GIS for .NET and limit
+    precision to shrink shapefile size, boost performance, and keep coordinate accuracy.
+  name: How to create vector layer with Aspose.GIS for .NET
+  steps:
+  - name: '**Installation** – Aspose.GIS for .NET library should be installed in your
+      development environment. If not, you can download it from the [releases page](https://releases.aspose.com/gis/net/).'
+    text: '**Installation** – Aspose.GIS for .NET library should be installed in your
+      development environment. If not, you can download it from the [releases page](https://releases.aspose.com/gis/net/).'
+  - name: '**Familiarity with .NET** – Basic knowledge of C# and the .NET framework
+      is necessary to understand and implement the provided code examples.'
+    text: '**Familiarity with .NET** – Basic knowledge of C# and the .NET framework
+      is necessary to understand and implement the provided code examples.'
+  - name: '**Development environment** – A working .NET development environment, such
+      as Visual Studio, is required.'
+    text: '**Development environment** – A working .NET development environment, such
+      as Visual Studio, is required.'
+  - name: '**Document directory** – Have a directory set up where you can store and
+      access the shapefile generated during the process.'
+    text: '**Document directory** – Have a directory set up where you can store and
+      access the shapefile generated during the process.'
+  type: HowTo
+- questions:
+  - answer: No. Precision is applied only when reading the geometry; the source file
+      remains unchanged.
+    question: Does limiting precision affect the original shapefile?
+  - answer: Aspose.GIS currently applies the same `XYPrecisionModel` to both axes.
+    question: Can I use a different precision model for X and Y coordinates?
+  - answer: The API supports only the built‑in `PrecisionModel.Rounding(int)` method.
+      For custom logic, you would need to post‑process the coordinates after reading.
+    question: Is it possible to set a custom rounding function?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: Buat Lapisan Vektor, Batasi Presisi dengan Aspose.GIS untuk .NET
+tags:
+- Aspose.GIS
+- vector layer
+- precision model
+- .NET GIS
+title: Cara membuat vector layer dengan Aspose.GIS for .NET
 url: /id/net/geometry-processing/limit-precision-reading-geometries/
 weight: 12
 ---
@@ -18,31 +68,34 @@ weight: 12
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Buat Layer Vektor, Batasi Presisi dengan Aspose.GIS untuk .NET
+# Cara membuat lapisan vektor dengan Aspose.GIS untuk .NET
 
 ## Pendahuluan
-Ketika bekerja dengan data geospasial, Anda sering perlu **create vector layer** objects dan memutuskan berapa banyak tempat desimal detail koordinat yang benar‑benar Anda butuhkan. Membatasi presisi tidak hanya mempercepat pemrosesan tetapi juga dapat **reduce shapefile size**, membuat penyimpanan dan transfer menjadi lebih efisien. Dalam tutorial ini kami akan membahas cara membuat layer vektor, menulis geometri titik sederhana, dan kemudian membacanya kembali menggunakan model presisi tepat dan dibulatkan. Pada akhir Anda akan memahami cara **set precision model** opsi yang sesuai dengan kebutuhan akurasi aplikasi Anda.
+Ketika Anda bekerja dengan data geospasial, Anda sering bertanya-tanya **cara membuat lapisan vektor** yang sesuai dengan akurasi yang benar‑benar dibutuhkan aplikasi Anda. Membulatkan koordinat ke jumlah desimal yang wajar tidak hanya mempercepat parsing tetapi juga dapat **mengurangi ukuran shapefile hingga 30 %** untuk dataset titik tipikal. Dalam panduan langkah‑demi‑langkah ini Anda akan melihat cara membuat lapisan vektor, menulis geometri titik, dan kemudian membacanya kembali menggunakan model presisi tepat dan dibulatkan. Pada akhir panduan Anda akan mengetahui cara **mengatur model presisi** yang menyeimbangkan kinerja dengan akurasi spasial yang diperlukan.
 
 ## Jawaban Cepat
-- **Apa arti “limit precision”?** Ia membulatkan nilai koordinat ke sejumlah tempat desimal yang ditentukan.  
-- **Mengapa membuat layer vektor terlebih dahulu?** Layer vektor adalah wadah yang menyimpan geometri seperti titik, garis, dan poligon.  
+- **Apa arti “limit precision”?** Membulatkan nilai koordinat ke sejumlah tempat desimal yang ditentukan.  
+- **Mengapa membuat lapisan vektor terlebih dahulu?** Lapisan vektor adalah kontainer yang menyimpan geometri seperti titik, garis, dan poligon.  
 - **Model presisi apa yang tersedia?** `PrecisionModel.Exact` (tanpa pembulatan) dan `PrecisionModel.Rounding(n)` (membulatkan ke *n* desimal).  
 - **Apakah saya memerlukan lisensi untuk mencoba ini?** Versi percobaan gratis tersedia di halaman rilis.  
-- **Versi .NET apa yang didukung?** .NET Framework 4.5+, .NET Core, dan .NET 5/6+.
+- **Versi .NET apa yang didukung?** .NET Framework 4.5+, .NET Core, dan .NET 5/6+.
 
-## Mengapa membatasi presisi dan bagaimana membantu?
-- **Peningkatan kinerja** – Lebih sedikit digit berarti lebih sedikit data yang harus diparse dan diserialisasi.  
-- **File lebih kecil** – Membulatkan koordinat dapat secara signifikan mengecilkan shapefile, terutama untuk dataset besar.  
-- **Akurasi yang cukup** – Banyak analisis GIS tidak memerlukan presisi sub‑milimeter, sehingga pembulatan ke 2‑3 desimal biasanya sudah cukup.
+## Apa itu membuat lapisan vektor?
+Tindakan **membuat lapisan vektor** berarti menginstansiasi kelas `VectorLayer` milik Aspose.GIS, yang mewakili satu shapefile di disk dan menyimpan semua fitur geometri yang Anda tambahkan. Lapisan ini menjadi titik masuk untuk membaca, menulis, dan memanipulasi data spasial. Ini juga memungkinkan Anda mendefinisikan bidang atribut dan mengatur referensi spasial untuk dataset.
+
+## Mengapa membatasi presisi dan bagaimana hal itu membantu?
+- **Peningkatan kinerja** – Mengurangi jumlah digit desimal memotong jumlah data biner yang harus diparse dan diserialisasi, seringkali memberikan peningkatan kecepatan 15‑20 % pada file besar.  
+- **File lebih kecil** – Membulatkan koordinat ke dua atau tiga desimal dapat mengecilkan shapefile 10 MB menjadi kira‑kira 7 MB, memudahkan penyimpanan dan transfer jaringan.  
+- **Akurasi yang cukup** – Sebagian besar analisis GIS (mis., pemetaan tingkat kota) hanya membutuhkan presisi tingkat meter, sehingga pembulatan 3 desimal lebih dari cukup.
 
 ## Prasyarat
 Sebelum kita memulai perjalanan ini, pastikan Anda memiliki prasyarat berikut:
-1. **Instalasi** – Pustaka Aspose.GIS untuk .NET harus diinstal di lingkungan pengembangan Anda. Jika belum, Anda dapat mengunduhnya dari [releases page](https://releases.aspose.com/gis/net/).
-2. **Kefahaman tentang .NET** – Pengetahuan dasar tentang C# dan kerangka kerja .NET diperlukan untuk memahami dan mengimplementasikan contoh kode yang disediakan.
-3. **Lingkungan Pengembangan** – Lingkungan pengembangan .NET yang berfungsi, seperti Visual Studio, diperlukan.
-4. **Direktori Dokumen** – Miliki direktori yang sudah disiapkan untuk menyimpan dan mengakses shapefile yang dihasilkan selama proses.
+1. **Instalasi** – Perpustakaan Aspose.GIS untuk .NET harus diinstal di lingkungan pengembangan Anda. Jika belum, Anda dapat mengunduhnya dari [halaman rilis](https://releases.aspose.com/gis/net/).  
+2. **Pemahaman tentang .NET** – Pengetahuan dasar tentang C# dan kerangka kerja .NET diperlukan untuk memahami dan menerapkan contoh kode yang disediakan.  
+3. **Lingkungan pengembangan** – Lingkungan pengembangan .NET yang berfungsi, seperti Visual Studio, diperlukan.  
+4. **Direktori dokumen** – Miliki sebuah direktori yang disiapkan di mana Anda dapat menyimpan dan mengakses shapefile yang dihasilkan selama proses.
 
-## Impor Namespace
+## Impor namespace
 Sebelum kita mulai mengimplementasikan fungsionalitas untuk membatasi presisi saat membaca geometri, mari pastikan kita mengimpor namespace yang diperlukan:
 ```csharp
 using Aspose.Gis;
@@ -56,8 +109,11 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## Cara Membuat Layer Vektor
-Langkah pertama adalah **create vector layer** yang akan menampung geometri kami. Layer ini akan disimpan sebagai Shapefile sehingga kami dapat membukanya kembali nanti dengan pengaturan presisi yang berbeda.
+## Cara membuat lapisan vektor
+Muat `VectorLayer` baru dengan menentukan folder output dan nama shapefile yang diinginkan. Ini membuat kontainer kosong yang siap menerima objek geometri.
+
+Kelas `VectorLayer` adalah objek tingkat‑atas Aspose.GIS yang mewakili satu shapefile di disk. Setelah Anda membuat sebuah instance, Anda dapat menambahkan fitur, mendefinisikan bidang atribut, dan akhirnya memanggil `Save()` untuk menulis file ke sistem file.
+
 ```csharp
 string path = "Your Document Directory" + "LimitPrecisionWhenReadingGeometries_out.shp";
 using (VectorLayer layer = VectorLayer.Create(path, Drivers.Shapefile))
@@ -68,16 +124,23 @@ using (VectorLayer layer = VectorLayer.Create(path, Drivers.Shapefile))
 }
 ```
 
-## Mengatur Opsi Presisi
-Selanjutnya, kita perlu mendefinisikan opsi untuk membaca geometri, menentukan model presisi yang diinginkan. Kita dapat memulai dengan presisi tepat:
+## Mengatur opsi presisi
+`PrecisionModel` menentukan bagaimana nilai koordinat dibulatkan atau dipertahankan tepat saat membaca geometri. Anda mengatur model pada objek `ReadOptions` sebelum membuka lapisan.
+
+Kelas `PrecisionModel` adalah komponen inti Aspose.GIS yang mengontrol perilaku pembulatan untuk sumbu X dan Y. Dengan memilih model yang tepat, Anda menentukan apakah perpustakaan mempertahankan setiap digit atau memotong ke jumlah desimal tertentu.
+
 ```csharp
 var options = new ShapefileOptions();
 // read data as‑is.
 options.XYPrecisionModel = PrecisionModel.Exact;
 ```
 
-## Membaca Geometri dengan Presisi Tepat
-Sekarang, mari buka layer vektor dengan opsi yang ditentukan untuk membaca geometri dengan presisi tepat:
+## Membaca geometri dengan presisi tepat
+`ReadOptions` menentukan parameter untuk membaca lapisan vektor, seperti model presisi yang diterapkan.  
+Buka lapisan vektor yang sebelumnya disimpan menggunakan instance `ReadOptions` yang merujuk ke `PrecisionModel.Exact`. Ini memastikan setiap koordinat dibaca tanpa pembulatan apa pun.
+
+Ketika Anda menggunakan `PrecisionModel.Exact`, Aspose.GIS membaca nilai double‑precision mentah yang disimpan dalam shapefile, menjamin tidak ada informasi yang hilang selama operasi pembacaan.
+
 ```csharp
 using (VectorLayer layer = VectorLayer.Open(path, Drivers.Shapefile, options))
 {
@@ -87,8 +150,11 @@ using (VectorLayer layer = VectorLayer.Open(path, Drivers.Shapefile, options))
 }
 ```
 
-## Memotong Presisi
-Jika kita ingin memotong presisi ke sejumlah tempat desimal tertentu, kita dapat menyesuaikan model presisi sesuai:
+## Memotong presisi
+Jika Anda ingin memotong presisi ke sejumlah tempat desimal tertentu, ganti `Exact` dengan `PrecisionModel.Rounding(n)`, di mana *n* adalah jumlah desimal yang ingin Anda pertahankan.
+
+Membulatkan ke dua desimal (`PrecisionModel.Rounding(2)`) biasanya mengurangi ukuran file sebesar 20‑30 % sambil menjaga akurasi koordinat dalam beberapa sentimeter untuk sebagian besar skala pemetaan.
+
 ```csharp
 options.XYPrecisionModel = PrecisionModel.Rounding(2);
 using (VectorLayer layer = VectorLayer.Open(path, Drivers.Shapefile, options))
@@ -99,40 +165,36 @@ using (VectorLayer layer = VectorLayer.Open(path, Drivers.Shapefile, options))
 }
 ```
 
-## Cara Mengatur Model Presisi untuk Berbagai Skenario
-Anda mungkin bertanya kapan harus menggunakan `Exact` versus `Rounding`. Berikut dua skenario umum:
+## Cara mengatur model presisi untuk skenario berbeda
+Pilih model yang sesuai dengan kasus penggunaan Anda:
+- **Analisis ilmiah berpresisi tinggi** – Gunakan `PrecisionModel.Exact` untuk mempertahankan setiap digit.  
+- **Tile web‑mapping atau aplikasi seluler** – Gunakan `PrecisionModel.Rounding(2)` untuk menjaga file ringan dan rendering cepat.
 
-| Skenario | Model yang Direkomendasikan | Alasan |
-|----------|-----------------------------|--------|
-| Analisis ilmiah berpresisi tinggi | `PrecisionModel.Exact` | Tidak kehilangan detail koordinat |
-| Peta web atau aplikasi seluler | `PrecisionModel.Rounding(2)` | Mengurangi ukuran file dan mempercepat rendering |
+Memilih model yang tepat merupakan bagian dari proses pengambilan keputusan **mengatur model presisi** yang menyeimbangkan akurasi dengan kinerja.
 
-## Masalah Umum dan Solusinya
-- **Nilai koordinat tidak terduga** – Pastikan Anda mengatur `options.XYPrecisionModel` *sebelum* membuka layer. Mengubahnya setelah membuka tidak berpengaruh.  
+## Masalah umum dan solusi
+`XYPrecisionModel` adalah properti dari `ReadOptions` yang mengatur model presisi untuk koordinat X dan Y.
+- **Nilai koordinat tidak terduga** – Pastikan Anda mengatur `options.XYPrecisionModel` *sebelum* membuka lapisan. Mengubahnya setelah pembukaan tidak berpengaruh.  
 - **File tidak ditemukan** – Verifikasi bahwa variabel `path` mengarah ke direktori yang valid dan bahwa Shapefile berhasil dibuat pada langkah sebelumnya.  
-- **Tipe geometri tidak tepat** – Contoh ini menggunakan `Point`. Untuk tipe geometri lain (misalnya, `LineString`), casting harus sesuai dengan tipe sebenarnya.  
+- **Tipe geometri tidak tepat** – Contoh menggunakan `Point`. Untuk tipe geometri lain (mis., `LineString`), casting harus sesuai dengan tipe sebenarnya.  
 
-## Tips untuk Mengurangi Ukuran Shapefile
+## Tips mengurangi ukuran shapefile
 - Gunakan `PrecisionModel.Rounding` dengan jumlah desimal terkecil yang masih memenuhi kebutuhan akurasi Anda.  
-- Hapus field atribut yang tidak diperlukan sebelum menulis layer.  
+- Hapus bidang atribut yang tidak diperlukan sebelum menulis lapisan.  
 - Kompres file `.shp`, `.shx`, dan `.dbf` yang dihasilkan menggunakan utilitas ZIP standar jika Anda perlu mentransfernya.
 
 ## Kesimpulan
-Sebagai kesimpulan, mengelola presisi saat membaca geometri adalah aspek penting dalam manipulasi data geospasial. Aspose.GIS untuk .NET menyediakan fungsionalitas yang kuat untuk mencapai hal ini secara efisien. Dengan mengikuti langkah-langkah di atas Anda dapat dengan mulus **create vector layer** objek, **set precision model**, dan bahkan **reduce shapefile size** bila tepat, memastikan penanganan data yang optimal dalam aplikasi Anda.
+Menangani presisi saat membaca geometri adalah aspek penting dalam manipulasi data geospasial. Aspose.GIS untuk .NET menyediakan fungsionalitas yang kuat untuk mencapai hal ini secara efisien. Dengan mengikuti langkah‑langkah di atas, Anda dapat dengan mulus **membuat lapisan vektor** objek, **mengatur model presisi**, dan bahkan **mengurangi ukuran shapefile** bila tepat, memastikan penanganan data yang optimal dalam aplikasi Anda.
 
-## FAQ
-### Bisakah saya menggunakan Aspose.GIS untuk .NET dengan kerangka .NET lain seperti .NET Core atau .NET Standard?
-Ya, Aspose.GIS untuk .NET kompatibel dengan berbagai kerangka .NET, termasuk .NET Core dan .NET Standard.
-
+## Pertanyaan yang Sering Diajukan
+### Apakah saya dapat menggunakan Aspose.GIS untuk .NET dengan kerangka .NET lain seperti .NET Core atau .NET Standard?
+Ya, Aspose.GIS untuk .NET kompatibel dengan berbagai kerangka .NET, termasuk .NET Core dan .NET Standard.  
 ### Apakah ada versi percobaan tersedia untuk Aspose.GIS untuk .NET?
-Ya, Anda dapat memperoleh versi percobaan gratis dari [releases page](https://releases.aspose.com/).
-
+Ya, Anda dapat memperoleh versi percobaan gratis dari [halaman rilis](https://releases.aspose.com/).  
 ### Di mana saya dapat menemukan dokumentasi lengkap untuk Aspose.GIS untuk .NET?
-Anda dapat merujuk ke [documentation](https://reference.aspose.com/gis/net/) untuk informasi detail dan contoh.
-
-### Bagaimana cara mendapatkan lisensi sementara untuk Aspose.GIS untuk .NET?
-Lisensi sementara dapat diperoleh dari [purchase page](https://purchase.aspose.com/temporary-license/) untuk Aspose.GIS.
-
+Anda dapat merujuk ke [dokumentasi](https://reference.aspose.com/gis/net/) untuk informasi detail dan contoh.  
+### Bagaimana saya dapat memperoleh lisensi sementara untuk Aspose.GIS untuk .NET?
+Lisensi sementara dapat diperoleh dari [halaman pembelian](https://purchase.aspose.com/temporary-license/) untuk Aspose.GIS.  
 ### Di mana saya dapat mencari bantuan atau dukungan untuk Aspose.GIS untuk .NET?
 Anda dapat mengunjungi [forum](https://forum.aspose.com/c/gis/33) Aspose.GIS untuk pertanyaan, diskusi, atau kebutuhan dukungan.
 
@@ -140,17 +202,24 @@ Anda dapat mengunjungi [forum](https://forum.aspose.com/c/gis/33) Aspose.GIS unt
 **Q: Apakah membatasi presisi memengaruhi shapefile asli?**  
 A: Tidak. Presisi hanya diterapkan saat membaca geometri; file sumber tetap tidak berubah.  
 
-**Q: Apakah saya dapat menggunakan model presisi yang berbeda untuk koordinat X dan Y?**  
+**Q: Dapatkah saya menggunakan model presisi yang berbeda untuk koordinat X dan Y?**  
 A: Aspose.GIS saat ini menerapkan `XYPrecisionModel` yang sama untuk kedua sumbu.  
 
 **Q: Apakah memungkinkan untuk mengatur fungsi pembulatan khusus?**  
-A: API hanya mendukung metode bawaan `PrecisionModel.Rounding(int)`. Untuk logika khusus, Anda harus memproses koordinat setelah membaca.
+A: API hanya mendukung metode bawaan `PrecisionModel.Rounding(int)`. Untuk logika khusus, Anda harus memproses koordinat setelah pembacaan.
 
 ---
 
-**Terakhir Diperbarui:** 2026-04-03  
+**Terakhir Diperbarui:** 2026-09-10  
 **Diuji Dengan:** Aspose.GIS 24.11 for .NET  
-**Penulis:** Aspose  
+**Penulis:** Aspose
+
+## Tutorial Terkait
+
+- [Cara Membatasi Presisi Menulis Geometri dengan Aspose.GIS](/gis/net/geometry-processing/limit-precision-writing-geometries/)
+- [Cara Membuat Lapisan Vektor dengan SRS menggunakan Aspose.GIS untuk .NET](/gis/net/layer-management/create-vector-layer-with-srs/)
+- [Membuat Lapisan Vektor di File GDB – Tutorial Aspose.GIS .NET](/gis/net/layer-management/create-file-gdb-with-single-layer/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

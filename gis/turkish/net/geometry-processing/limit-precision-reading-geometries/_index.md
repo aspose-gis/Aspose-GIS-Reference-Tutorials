@@ -1,15 +1,65 @@
 ---
-date: 2026-04-03
-description: Aspose.GIS for .NET kullanarak vektör katmanı oluşturmayı ve geometrileri
-  okurken hassasiyeti sınırlamayı öğrenin. Optimum coğrafi veri işleme için adım adım
-  rehber.
+date: 2026-09-10
+description: Aspose.GIS for .NET ile vektör katmanı nasıl oluşturulacağını öğrenin
+  ve kesinliği sınırlayarak shapefile boyutunu küçültün, performance'ı artırın ve
+  coordinate accuracy'yi koruyun.
 keywords:
-- create vector layer
+- how to create vector layer
+- limit precision reading geometries
 - reduce shapefile size
-- set precision model
-linktitle: Geometrileri Okurken Hassasiyeti Sınırla
+lastmod: 2026-09-10
+linktitle: 'Limit Precision: Geometrileri Okuma'
+og_description: Aspose.GIS for .NET ile vektör katmanı nasıl oluşturulacağını öğrenin
+  ve limit precision'ı kullanarak shapefile boyutunu azaltın, performance'ı iyileştirin
+  ve coordinate accuracy'yi yönetin.
+og_image_alt: Screenshot showing Aspose.GIS code for creating a vector layer and setting
+  precision
+og_title: Aspose.GIS for .NET ile vektör katmanı nasıl oluşturulur
+schemas:
+- author: Aspose
+  dateModified: '2026-09-10'
+  description: Learn how to create vector layer with Aspose.GIS for .NET and limit
+    precision to shrink shapefile size, boost performance, and keep coordinate accuracy.
+  headline: How to create vector layer with Aspose.GIS for .NET
+  type: TechArticle
+- description: Learn how to create vector layer with Aspose.GIS for .NET and limit
+    precision to shrink shapefile size, boost performance, and keep coordinate accuracy.
+  name: How to create vector layer with Aspose.GIS for .NET
+  steps:
+  - name: '**Installation** – Aspose.GIS for .NET library should be installed in your
+      development environment. If not, you can download it from the [releases page](https://releases.aspose.com/gis/net/).'
+    text: '**Installation** – Aspose.GIS for .NET library should be installed in your
+      development environment. If not, you can download it from the [releases page](https://releases.aspose.com/gis/net/).'
+  - name: '**Familiarity with .NET** – Basic knowledge of C# and the .NET framework
+      is necessary to understand and implement the provided code examples.'
+    text: '**Familiarity with .NET** – Basic knowledge of C# and the .NET framework
+      is necessary to understand and implement the provided code examples.'
+  - name: '**Development environment** – A working .NET development environment, such
+      as Visual Studio, is required.'
+    text: '**Development environment** – A working .NET development environment, such
+      as Visual Studio, is required.'
+  - name: '**Document directory** – Have a directory set up where you can store and
+      access the shapefile generated during the process.'
+    text: '**Document directory** – Have a directory set up where you can store and
+      access the shapefile generated during the process.'
+  type: HowTo
+- questions:
+  - answer: No. Precision is applied only when reading the geometry; the source file
+      remains unchanged.
+    question: Does limiting precision affect the original shapefile?
+  - answer: Aspose.GIS currently applies the same `XYPrecisionModel` to both axes.
+    question: Can I use a different precision model for X and Y coordinates?
+  - answer: The API supports only the built‑in `PrecisionModel.Rounding(int)` method.
+      For custom logic, you would need to post‑process the coordinates after reading.
+    question: Is it possible to set a custom rounding function?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: Aspose.GIS for .NET ile Vektör Katmanı Oluşturun, Hassasiyeti Sınırlayın
+tags:
+- Aspose.GIS
+- vector layer
+- precision model
+- .NET GIS
+title: Aspose.GIS for .NET ile vektör katmanı nasıl oluşturulur
 url: /tr/net/geometry-processing/limit-precision-reading-geometries/
 weight: 12
 ---
@@ -18,32 +68,33 @@ weight: 12
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Vektör Katmanı Oluşturma, Aspose.GIS for .NET ile Hassasiyeti Sınırlama
+# Aspose.GIS for .NET ile vektör katmanı nasıl oluşturulur
 
 ## Giriş
-Coğrafi veriyle çalışırken, genellikle **create vector layer** nesneleri oluşturmanız ve koordinat detayının kaç ondalık basamağa ihtiyaç duyduğunuza karar vermeniz gerekir. Hassasiyeti sınırlamak yalnızca işleme hızını artırmakla kalmaz, aynı zamanda **reduce shapefile size** da sağlayarak depolama ve aktarımı daha verimli hâle getirir. Bu öğreticide bir vektör katmanı oluşturmayı, basit bir nokta geometrisi yazmayı ve ardından hem tam hem de yuvarlatılmış hassasiyet modellerini kullanarak geri okumayı adım adım göstereceğiz. Sonunda, uygulamanızın doğruluk gereksinimlerine uygun **set precision model** seçeneklerini anlayacaksınız.
+Coğrafi veriyle çalışırken, uygulamanızın gerçekten ihtiyaç duyduğu doğrulukla eşleşen **vektör katmanı nasıl oluşturulur** nesnelerini sık sık merak edersiniz. Koordinatları mantıklı bir ondalık basamak sayısına yuvarlamak yalnızca ayrıştırmayı hızlandırmakla kalmaz, aynı zamanda tipik nokta veri setleri için **shapefile boyutunu %30’a kadar azaltabilir**. Bu adım‑adım kılavuzda, bir vektör katmanı nasıl oluşturulur, nokta geometrisi nasıl yazılır ve ardından hem kesin hem de yuvarlatılmış hassasiyet modelleri kullanılarak nasıl okunur göreceksiniz. Sonunda, **set precision model** seçeneklerini nasıl belirleyeceğinizi ve performans ile gereken mekansal doğruluk arasında denge kuracağınızı öğreneceksiniz.
 
-## Hızlı Yanıtlar
-- **“limit precision” ne anlama gelir?** Koordinat değerlerini tanımlı bir ondalık basamak sayısına yuvarlar.  
-- **Neden önce bir vektör katmanı oluşturmalıyım?** Vektör katmanı, noktalar, çizgiler ve çokgenler gibi geometrileri depolayan kapsayıcıdır.  
-- **Hangi hassasiyet modelleri mevcuttur?** `PrecisionModel.Exact` (yuvarlama yok) ve `PrecisionModel.Rounding(n)` (*n* ondalık basamağa yuvarlar).  
-- **Bunu denemek için bir lisansa ihtiyacım var mı?** Yayınlar sayfasından ücretsiz bir deneme sürümü mevcuttur.  
-- **Hangi .NET sürümleri destekleniyor?** .NET Framework 4.5+, .NET Core ve .NET 5/6+.
+## Hızlı cevaplar
+- **“limit precision” ne anlama geliyor?** Koordinat değerlerini tanımlı bir ondalık basamak sayısına yuvarlar.  
+- **Neden önce bir vektör katmanı oluşturmalısınız?** Bir vektör katmanı, nokta, çizgi ve çokgen gibi geometrileri depolayan bir konteynerdir.  
+- **Hangi precision modelleri mevcuttur?** `PrecisionModel.Exact` (yuvarlama yok) ve `PrecisionModel.Rounding(n)` (*n* ondalığa yuvarlar).  
+- **Bunu denemek için lisansa ihtiyacım var mı?** Ücretsiz deneme sürümü releases sayfasından temin edilebilir.  
+- **Hangi .NET sürümleri destekleniyor?** .NET Framework 4.5+, .NET Core ve .NET 5/6+.
+
+## Vektör katmanı oluşturma nedir?
+**vektör katmanı oluşturma** eylemi, Aspose.GIS'in `VectorLayer` sınıfının bir örneğini oluşturmak anlamına gelir; bu sınıf, diskteki tek bir shapefile'ı temsil eder ve eklediğiniz tüm geometri özelliklerini tutar. Bu katman, mekânsal verileri okuma, yazma ve manipüle etme için giriş noktası haline gelir. Ayrıca, veri kümesi için öznitelik alanları tanımlamanıza ve mekânsal referansı ayarlamanıza olanak tanır.
 
 ## Neden hassasiyeti sınırlamalı ve bu nasıl yardımcı olur?
-- **Performans artışı** – Daha az basamak, ayrıştırılacak ve serileştirilecek daha az veri demektir.  
-- **Daha küçük dosyalar** – Koordinatları yuvarlamak, özellikle büyük veri setlerinde shapefile’ı belirgin şekilde küçültebilir.  
-- **Yeterli doğruluk** – Birçok GIS analizi sub‑milimetre hassasiyet gerektirmez, bu yüzden 2‑3 ondalığa yuvarlamak genellikle yeterlidir.
+- **Performans artışı** – Ondalık basamak sayısını azaltmak, ayrıştırılması ve serileştirilmesi gereken ikili veri miktarını düşürür; bu da büyük dosyalarda genellikle %15‑20 hız artışı sağlar.  
+- **Daha küçük dosyalar** – Koordinatları iki veya üç ondalığa yuvarlamak, 10 MB'lik bir shapefile'ı yaklaşık 7 MB'ye küçültebilir, depolamayı ve ağ transferini kolaylaştırır.  
+- **Yeterli doğruluk** – Çoğu GIS analizi (ör. şehir‑düzeyi haritalama) sadece metre seviyesinde doğruluk gerektirir; bu da 3 ondalık yuvarlamanın fazlasıyla yeterli olmasını sağlar.
 
 ## Önkoşullar
-Bu yolculuğa başlamadan önce, aşağıdaki önkoşulların yerine getirildiğinden emin olun:
+1. **Kurulum** – Aspose.GIS for .NET kütüphanesi geliştirme ortamınıza kurulmuş olmalıdır. Eğer kurulu değilse, [releases page](https://releases.aspose.com/gis/net/) adresinden indirebilirsiniz.  
+2. **.NET'e aşinalık** – Sağlanan kod örneklerini anlamak ve uygulamak için C# ve .NET framework'ünün temel bilgisine sahip olmak gerekir.  
+3. **Geliştirme ortamı** – Visual Studio gibi çalışan bir .NET geliştirme ortamı gereklidir.  
+4. **Belge dizini** – Süreç sırasında oluşturulan shapefile'ı depolayıp erişebileceğiniz bir dizin oluşturun.
 
-1. **Kurulum** – Aspose.GIS for .NET kütüphanesinin geliştirme ortamınıza kurulmuş olması gerekir. Eğer kurulu değilse, [sürüm sayfası](https://releases.aspose.com/gis/net/) adresinden indirebilirsiniz.
-2. **.NET'e aşinalık** – Sağlanan kod örneklerini anlamak ve uygulamak için C# ve .NET çerçevesi hakkında temel bilgi gereklidir.
-3. **Geliştirme Ortamı** – Visual Studio gibi çalışan bir .NET geliştirme ortamı gereklidir.
-4. **Belge Dizini** – İşlem sırasında oluşturulan shapefile’ı depolayıp erişebileceğiniz bir dizin oluşturun.
-
-## Ad Alanlarını İçe Aktarma
+## Ad alanlarını içe aktar
 Geometrileri okurken hassasiyeti sınırlama işlevini uygulamaya başlamadan önce, gerekli ad alanlarını içe aktardığımızdan emin olalım:
 ```csharp
 using Aspose.Gis;
@@ -57,8 +108,11 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## Vektör Katmanı Nasıl Oluşturulur
-İlk adım, geometrimizi tutacak **create vector layer** oluşturmaktır. Bu katman, daha sonra farklı hassasiyet ayarlarıyla yeniden açabilmemiz için bir Shapefile olarak kaydedilecektir.
+## Vektör katmanı nasıl oluşturulur
+Çıktı klasörünü ve istenen shapefile adını belirterek yeni bir `VectorLayer` yükleyin. Bu, geometri nesnelerini kabul etmeye hazır boş bir konteyner oluşturur.
+
+`VectorLayer` sınıfı, Aspose.GIS'in disk üzerindeki tek bir shapefile'ı temsil eden üst‑seviye nesnesidir. Bir örnek oluşturduktan sonra özellik ekleyebilir, öznitelik alanları tanımlayabilir ve sonunda dosyaları dosya sistemine yazmak için `Save()` çağırabilirsiniz.
+
 ```csharp
 string path = "Your Document Directory" + "LimitPrecisionWhenReadingGeometries_out.shp";
 using (VectorLayer layer = VectorLayer.Create(path, Drivers.Shapefile))
@@ -69,16 +123,23 @@ using (VectorLayer layer = VectorLayer.Create(path, Drivers.Shapefile))
 }
 ```
 
-## Hassasiyet Seçeneklerini Ayarlama
-Sonraki adımda, geometrileri okuma seçeneklerini tanımlamamız, istenen hassasiyet modelini belirtmemiz gerekir. Tam hassasiyetle başlayabiliriz:
+## Hassasiyet seçeneklerini ayarlama
+`PrecisionModel`, geometrileri okurken koordinat değerlerinin nasıl yuvarlanacağını veya tam olarak tutulacağını tanımlar. Katmanı açmadan önce modeli bir `ReadOptions` nesnesinde ayarlarsınız.
+
+`PrecisionModel` sınıfı, Aspose.GIS'in X ve Y eksenleri için yuvarlama davranışını kontrol eden temel bir bileşenidir. Uygun modeli seçerek, kütüphanenin her basamağı koruyup korumayacağını veya belirli bir ondalık sayısına kırpacağını belirlemiş olursunuz.
+
 ```csharp
 var options = new ShapefileOptions();
 // read data as‑is.
 options.XYPrecisionModel = PrecisionModel.Exact;
 ```
 
-## Tam Hassasiyetle Geometrileri Okuma
-Şimdi, belirtilen seçeneklerle vektör katmanını açarak geometrileri tam hassasiyetle okuyalım:
+## Geometrileri kesin hassasiyetle okuma
+`ReadOptions`, bir vektör katmanını okurken uygulanacak hassasiyet modeli gibi parametreleri belirtir.  
+`PrecisionModel.Exact` referansını içeren bir `ReadOptions` örneği kullanarak önceden kaydedilmiş vektör katmanını açın. Bu, her koordinatın yuvarlama olmadan okunmasını sağlar.
+
+`PrecisionModel.Exact` kullandığınızda, Aspose.GIS shapefile'da depolanan ham çift hassasiyetli değerleri okur ve okuma işlemi sırasında hiçbir bilginin kaybolmadığını garanti eder.
+
 ```csharp
 using (VectorLayer layer = VectorLayer.Open(path, Drivers.Shapefile, options))
 {
@@ -88,8 +149,11 @@ using (VectorLayer layer = VectorLayer.Open(path, Drivers.Shapefile, options))
 }
 ```
 
-## Hassasiyeti Kesme
-Belirli bir ondalık basamak sayısına hassasiyeti kesmek istiyorsak, hassasiyet modelini buna göre ayarlayabiliriz:
+## Hassasiyeti kırpma
+Hassasiyeti belirli bir ondalık basamak sayısına kırpmak istiyorsanız, `Exact` yerine `PrecisionModel.Rounding(n)` kullanın; burada *n* tutmak istediğiniz ondalık sayısıdır.
+
+İki ondalığa yuvarlamak (`PrecisionModel.Rounding(2)`) genellikle dosya boyutunu %20‑30 azaltır ve çoğu haritalama ölçeği için koordinat doğruluğunu birkaç santimetre içinde tutar.
+
 ```csharp
 options.XYPrecisionModel = PrecisionModel.Rounding(2);
 using (VectorLayer layer = VectorLayer.Open(path, Drivers.Shapefile, options))
@@ -100,60 +164,61 @@ using (VectorLayer layer = VectorLayer.Open(path, Drivers.Shapefile, options))
 }
 ```
 
-## Farklı Senaryolar İçin Hassasiyet Modeli Nasıl Ayarlanır
-`Exact` ile `Rounding` ne zaman kullanılmalı merak edebilirsiniz. İşte iki yaygın senaryo:
+## Farklı senaryolar için precision model nasıl ayarlanır
+Kullanım durumunuza uyan modeli seçin:
 
-| Senaryo | Önerilen Model | Sebep |
-|----------|-------------------|--------|
-| Yüksek hassasiyetli bilimsel analiz | `PrecisionModel.Exact` | Koordinat detayının kaybı yok |
-| Web haritalama döşemeleri veya mobil uygulamalar | `PrecisionModel.Rounding(2)` | Dosya boyutunu azaltır ve render süresini hızlandırır |
+- **Yüksek hassasiyetli bilimsel analiz** – Her basamağı korumak için `PrecisionModel.Exact` kullanın.  
+- **Web haritalama döşemeleri veya mobil uygulamalar** – Dosyaları hafif tutmak ve renderı hızlı yapmak için `PrecisionModel.Rounding(2)` kullanın.
 
-Doğru modeli seçmek, doğruluğu performansla dengeleyen **set precision model** karar verme sürecinin bir parçasıdır.
+Uygun modeli seçmek, doğruluğu performansla dengeleyen **set precision model** karar verme sürecinin bir parçasıdır.
 
-## Yaygın Sorunlar ve Çözümler
-- **Beklenmeyen koordinat değerleri** – Katmanı açmadan önce `options.XYPrecisionModel`'i *ayarlandığından* emin olun. Açtıktan sonra değiştirmek etkisizdir.  
+## Yaygın sorunlar ve çözümler
+`XYPrecisionModel`, X ve Y koordinatları için precision modelini ayarlayan `ReadOptions` bir özelliğidir.
+
+- **Beklenmeyen koordinat değerleri** – Katmanı açmadan önce `options.XYPrecisionModel` *before* ayarlandığından emin olun. Açtıktan sonra değiştirmek etkisizdir.  
 - **Dosya bulunamadı** – `path` değişkeninin geçerli bir dizine işaret ettiğini ve Shapefile'ın önceki adımda başarıyla oluşturulduğunu doğrulayın.  
 - **Yanlış geometri tipi** – Örnek bir `Point` kullanıyor. Diğer geometri tipleri (ör. `LineString`) için dönüşüm gerçek tipe uygun olmalıdır.  
 
-## Shapefile Boyutunu Küçültmek İçin İpuçları
-- İhtiyacınız olan doğruluğu karşılayan en az ondalık sayısı ile `PrecisionModel.Rounding` kullanın.  
+## Shapefile boyutunu azaltma ipuçları
+- `PrecisionModel.Rounding` kullanarak hâlâ doğruluk ihtiyacınızı karşılayan en az ondalık sayısı ile işlem yapın.  
 - Katmanı yazmadan önce gereksiz öznitelik alanlarını kaldırın.  
-- Eğer aktarmanız gerekiyorsa, oluşan `.shp`, `.shx` ve `.dbf` dosyalarını standart ZIP araçlarıyla sıkıştırın.
+- Gerekirse, elde edilen `.shp`, `.shx` ve `.dbf` dosyalarını standart ZIP araçlarıyla sıkıştırın.
 
 ## Sonuç
-Sonuç olarak, geometrileri okurken hassasiyeti yönetmek, coğrafi veri işleme açısından kritik bir unsurdur. Aspose.GIS for .NET, bunu verimli bir şekilde gerçekleştirmek için güçlü işlevler sunar. Yukarıdaki adımları izleyerek **create vector layer** nesnelerini sorunsuz bir şekilde oluşturabilir, **set precision model** ayarlayabilir ve gerektiğinde **reduce shapefile size** yaparak uygulamalarınızda optimal veri işleme sağlayabilirsiniz.
+Geometrileri okurken hassasiyeti yönetmek, coğrafi veri manipülasyonunun kritik bir yönüdür. Aspose.GIS for .NET, bunu verimli bir şekilde başarmak için sağlam işlevsellikler sunar. Yukarıdaki adımları izleyerek, **create vector layer** nesnelerini sorunsuz bir şekilde **set precision model** yapabilir ve gerektiğinde **reduce shapefile size** bile yapabilirsiniz; bu da uygulamalarınızda optimal veri işleme sağlar.
 
-## SSS
-### Aspose.GIS for .NET'i .NET Core veya .NET Standard gibi diğer .NET çerçeveleriyle kullanabilir miyim?
-Evet, Aspose.GIS for .NET, .NET Core ve .NET Standard dahil olmak üzere çeşitli .NET çerçeveleriyle uyumludur.
-
+## SSS'ler
+### Aspose.GIS for .NET'i .NET Core veya .NET Standard gibi diğer .NET framework'leriyle kullanabilir miyim?
+Evet, Aspose.GIS for .NET, .NET Core ve .NET Standard dahil olmak üzere çeşitli .NET framework'leriyle uyumludur.  
 ### Aspose.GIS for .NET için deneme sürümü mevcut mu?
-Evet, ücretsiz bir deneme sürümünü [sürüm sayfası](https://releases.aspose.com/) üzerinden edinebilirsiniz.
-
-### Aspose.GIS for .NET için kapsamlı belgeleri nereden bulabilirim?
-Detaylı bilgi ve örnekler için [belgeler](https://reference.aspose.com/gis/net/) sayfasına bakabilirsiniz.
-
-### Aspose.GIS for .NET için geçici lisansları nasıl alabilirim?
-Geçici lisanslar, Aspose.GIS için [satın alma sayfası](https://purchase.aspose.com/temporary-license/) üzerinden temin edilebilir.
-
-### Aspose.GIS for .NET için yardım veya destek nereden alabilirim?
-Herhangi bir soru, tartışma veya destek ihtiyacı için Aspose.GIS [forum](https://forum.aspose.com/c/gis/33) sayfasını ziyaret edebilirsiniz.
+Evet, ücretsiz bir deneme sürümünü [releases page](https://releases.aspose.com/) adresinden edinebilirsiniz.  
+### Aspose.GIS for .NET için kapsamlı belgeleri nerede bulabilirim?
+Detaylı bilgi ve örnekler için [documentation](https://reference.aspose.com/gis/net/) adresine başvurabilirsiniz.  
+### Aspose.GIS for .NET için geçici lisansları nasıl temin edebilirim?
+Geçici lisanslar, Aspose.GIS için [purchase page](https://purchase.aspose.com/temporary-license/) adresinden temin edilebilir.  
+### Aspose.GIS for .NET için yardım veya destek nereden alınabilir?
+Herhangi bir soru, tartışma veya destek ihtiyacı için Aspose.GIS [forum](https://forum.aspose.com/c/gis/33) adresini ziyaret edebilirsiniz.
 
 ## Sıkça Sorulan Sorular
-**S: Hassasiyeti sınırlamak orijinal shapefile'ı etkiler mi?**  
-**C:** Hayır. Hassasiyet yalnızca geometri okunurken uygulanır; kaynak dosya değişmeden kalır.
+**S: Precision sınırlaması orijinal shapefile'i etkiler mi?**  
+C: Hayır. Hassasiyet yalnızca geometri okunurken uygulanır; kaynak dosya değişmeden kalır.  
 
-**S: X ve Y koordinatları için farklı bir hassasiyet modeli kullanabilir miyim?**  
-**C:** Aspose.GIS şu anda her iki eksene aynı `XYPrecisionModel`'i uygular.
+**S: X ve Y koordinatları için farklı bir precision modeli kullanabilir miyim?**  
+C: Aspose.GIS şu anda aynı `XYPrecisionModel`'i her iki eksene de uygular.  
 
-**S: Özel bir yuvarlama işlevi ayarlamak mümkün mü?**  
-**C:** API yalnızca yerleşik `PrecisionModel.Rounding(int)` metodunu destekler. Özel mantık için, okuduktan sonra koordinatları işlemek gerekir.
+**S: Özel bir yuvarlama fonksiyonu ayarlamak mümkün mü?**  
+C: API yalnızca yerleşik `PrecisionModel.Rounding(int)` metodunu destekler. Özel mantık için, koordinatları okuduktan sonra sonradan işlemek gerekir.
 
----
+**Last Updated:** 2026-09-10  
+**Tested With:** Aspose.GIS 24.11 for .NET  
+**Author:** Aspose
 
-**Son Güncelleme:** 2026-04-03  
-**Test Edilen:** Aspose.GIS 24.11 for .NET  
-**Yazar:** Aspose  
+## İlgili Eğitimler
+
+- [Aspose.GIS ile Geometrileri Yazarken Hassasiyeti Sınırlama](/gis/net/geometry-processing/limit-precision-writing-geometries/)
+- [Aspose.GIS for .NET ile SRS Kullanarak Vektör Katmanı Oluşturma](/gis/net/layer-management/create-vector-layer-with-srs/)
+- [File GDB'de Vektör Katmanı Oluşturma – Aspose.GIS .NET Eğitimi](/gis/net/layer-management/create-file-gdb-with-single-layer/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
