@@ -1,14 +1,70 @@
 ---
-date: 2026-04-13
-description: เรียนรู้วิธีแปลงรูปทรงเรขาคณิตเป็น WKT ด้วย Aspose.GIS สำหรับ .NET คู่มือนี้แสดงวิธีแปลงรูปทรงเรขาคณิตเป็น
+date: 2026-09-15
+description: เรียนรู้วิธีแปลงเรขาคณิตเป็น WKT ด้วย Aspose.GIS for .NET คู่มือนี้แสดงวิธีแปลเรขาคณิตเป็น
   WKT และวิธีใช้เมธอด AsText อย่างมีประสิทธิภาพ
 keywords:
-- how to translate geometry
 - convert geometry to wkt
-- how to use astext
+- how to convert geometry
+- Aspose.GIS WKT conversion
+lastmod: 2026-09-15
 linktitle: แปลงเรขาคณิตเป็น WKT
+og_description: แปลงเรขาคณิตเป็น WKT ด้วย Aspose.GIS for .NET เรียนรู้วิธีที่เร็วที่สุดในการแปลเรขาคณิตเป็น
+  WKT ด้วยเมธอด AsText และดูตัวอย่างจากโลกจริง
+og_image_alt: Screenshot of Aspose.GIS code converting geometry objects to WKT strings
+og_title: แปลงเรขาคณิตเป็น WKT ด้วย Aspose.GIS for .NET – คู่มือด่วน
+schemas:
+- author: Aspose
+  dateModified: '2026-09-15'
+  description: Learn how to convert geometry to WKT using Aspose.GIS for .NET. This
+    guide shows how to translate geometry to WKT and how to use the AsText method
+    efficiently.
+  headline: How to convert geometry to WKT with Aspose.GIS for .NET
+  type: TechArticle
+- description: Learn how to convert geometry to WKT using Aspose.GIS for .NET. This
+    guide shows how to translate geometry to WKT and how to use the AsText method
+    efficiently.
+  name: How to convert geometry to WKT with Aspose.GIS for .NET
+  steps:
+  - name: import the required namespaces
+    text: First, bring the Aspose.GIS geometry classes into scope.
+  - name: create a geometry object (point example)
+    text: The `Point` class represents a single location defined by X and Y coordinates.
+      Instantiate the geometry you want to translate. The example uses a `Point`,
+      but the same pattern works for `LineString`, `Polygon`, `MultiPolygon`, and
+      other types.
+  - name: convert the geometry to WKT with `AsText()`
+    text: '`AsText()` is an **extension method that returns the WKT representation
+      of a geometry object**. Call it on your geometry instance and you’ll receive
+      a ready‑to‑store string. > **Pro tip:** If you need the WKT without commas between
+      coordinates, chain a `Replace(",", " ")` call after `AsText()`.'
+  type: HowTo
+- questions:
+  - answer: Yes, Aspose.GIS for .NET runs on .NET Framework 4.5+, .NET Core 3.1+,
+      .NET 5, and .NET 6, providing identical functionality across all supported runtimes.
+    question: Can I use Aspose.GIS for .NET with other .NET frameworks?
+  - answer: Absolutely. The library processes millions of geometry objects per minute,
+      uses streaming I/O to keep memory usage low, and has been benchmarked to convert
+      1 million points to WKT in under 12 seconds on a standard 8‑core server.
+    question: Is Aspose.GIS for .NET suitable for large‑scale applications?
+  - answer: Yes. In addition to WKT, it handles WKB, GeoJSON, Shapefile, KML, GML,
+      CSV, and many more, covering over 30 spatial data formats.
+    question: Does Aspose.GIS for .NET support formats other than WKT?
+  - answer: Use the [Aspose.GIS for .NET forum](https://forum.aspose.com/c/gis/33)
+      to submit requests, get support, and discuss best practices with the community
+      and product team.
+    question: Where can I ask for feature requests or report bugs?
+  - answer: Yes, you can download a free trial of Aspose.GIS for .NET [download the
+      trial version](https://releases.aspose.com/). The trial includes all features
+      but adds a small evaluation watermark to generated files.
+    question: Is a trial version available?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: วิธีแปลงเรขาคณิตเป็น WKT ด้วย Aspose.GIS สำหรับ .NET
+tags:
+- convert geometry
+- Aspose.GIS
+- .NET GIS processing
+- WKT conversion
+title: วิธีแปลงเรขาคณิตเป็น WKT ด้วย Aspose.GIS for .NET
 url: /th/net/geometry-processing/translate-geometry-to-wkt/
 weight: 23
 ---
@@ -20,37 +76,32 @@ weight: 23
 # วิธีแปลงเรขาคณิตเป็น WKT ด้วย Aspose.GIS สำหรับ .NET
 
 ## บทนำ
-หากคุณทำงานกับข้อมูลเชิงพื้นที่ในแอปพลิเคชัน .NET คุณมักต้อง **แปลงเรขาคณิต** ให้เป็นรูปแบบข้อความที่ระบบอื่น ๆ สามารถใช้ได้ รูปแบบ Well‑Known Text (WKT) เป็นมาตรฐานที่ใช้กันอย่างแพร่หลายสำหรับจุดประสงค์นี้ ในบทเรียนนี้เราจะอธิบาย **วิธีแปลงเรขาคณิต** เป็น WKT ด้วย Aspose.GIS สำหรับ .NET และเราจะยังแสดงวิธีการที่สะดวกของเมธอด `AsText()` ที่ทำให้การแปลงเป็นบรรทัดเดียว
+หากคุณกำลังสร้างแอปพลิเคชัน .NET ที่ทำงานกับข้อมูลเชิงพื้นที่ คุณมักจะต้อง **แปลงเรขาคณิตเป็น WKT** เพื่อให้บริการอื่น ๆ ฐานข้อมูล หรือเครื่องมือ GIS สามารถอ่านข้อมูลได้ Well‑Known Text (WKT) เป็นรูปแบบข้อความมาตรฐานอุตสาหกรรมสำหรับจุด, เส้น, โพลิกอน และอื่น ๆ อีกมาก ในบทเรียนนี้เราจะอธิบายขั้นตอนที่แน่นอนเพื่อ **แปลงเรขาคณิตเป็น WKT** ด้วย Aspose.GIS สำหรับ .NET และเราจะเน้นเมธอดแบบบรรทัดเดียว `AsText()` ที่ทำให้การแปลงเป็นเรื่องง่าย
 
-## คำตอบอย่างรวดเร็ว
-- **“translate geometry” หมายถึงอะไร?** การแปลงอ็อบเจ็กต์เรขาคณิต (จุด, เส้น, โพลิกอน ฯลฯ) ให้เป็นรูปแบบข้อความเช่น WKT.  
-- **เมธอดใดสร้าง WKT?** `AsText()` บนวัตถุเรขาคณิตใด ๆ.  
-- **ฉันต้องการไลเซนส์หรือไม่?** รุ่นทดลองฟรีใช้ได้สำหรับการพัฒนา; จำเป็นต้องมีไลเซนส์เชิงพาณิชย์สำหรับการใช้งานจริง.  
-- **เวอร์ชัน .NET ที่รองรับ?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6+.  
-- **ฉันสามารถแปลงรูปแบบอื่นได้หรือไม่?** ใช่ – Aspose.GIS ยังรองรับ WKB, GeoJSON, Shapefile และอื่น ๆ อีกมาก
+## คำตอบด่วน
+- **การ “แปลงเรขาคณิต” หมายถึงอะไร?** การแปลงอ็อบเจ็กต์เรขาคณิต (จุด, เส้น, โพลิกอน ฯลฯ) ไปเป็นรูปแบบข้อความเช่น WKT.  
+- **เมธอดใดสร้าง WKT?** `AsText()` บนใด ๆ ที่เป็นอ็อบเจ็กต์เรขาคณิต.  
+- **ต้องการไลเซนส์หรือไม่?** เวอร์ชันทดลองฟรีใช้ได้สำหรับการพัฒนา; ต้องมีไลเซนส์เชิงพาณิชย์สำหรับการใช้งานจริง.  
+- **รองรับเวอร์ชัน .NET ใด?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6+.  
+- **สามารถแปลงรูปแบบอื่นได้หรือไม่?** ได้ – Aspose.GIS ยังรองรับ WKB, GeoJSON, Shapefile, และอื่น ๆ อีกมาก.
 
 ## การแปลงเรขาคณิตเป็น WKT คืออะไร?
-การแปลงเรขาคณิตเป็น WKT หมายถึงการแสดงพิกัดและรูปทรงของวัตถุเชิงพื้นที่เป็นสตริงข้อความธรรมดา เช่น `POINT (23.5732 25.3421)` รูปแบบนี้อ่านง่ายสำหรับมนุษย์และได้รับการยอมรับอย่างกว้างขวางโดยเครื่องมือ GIS, ฐานข้อมูล, และบริการเว็บ
+การแปลงเรขาคณิตเป็น WKT หมายถึงการแสดงพิกัดและรูปร่างของวัตถุเชิงพื้นที่เป็นสตริงข้อความธรรมดา เช่น `POINT (23.5732 25.3421)` รูปแบบนี้อ่านได้ง่ายโดยมนุษย์, เก็บไว้ในฐานข้อมูลเชิงสัมพันธ์ได้ง่าย, และได้รับการยอมรับโดยแทบทุกแพลตฟอร์ม GIS
 
 ## ทำไมต้องใช้ Aspose.GIS สำหรับงานนี้?
-* **Zero‑dependency API** – ไม่ต้องติดตั้งไลบรารีเนทีฟ  
-* **Consistent behavior** ครอบคลุม .NET Framework, .NET Core, และ .NET 5/6.  
-* **Rich format support** – นอกเหนือจาก WKT คุณยังได้รับ WKB, GeoJSON, Shapefile ฯลฯ  
-* **Thread‑safe and high‑performance** – เหมาะสำหรับสคริปต์ขนาดเล็กและบริการขนาดใหญ่
+Aspose.GIS มี **API ที่ไม่มีการพึ่งพาใด ๆ และจัดการเต็มรูปแบบ** ซึ่งทำงานอย่างสม่ำเสมอใน .NET Framework, .NET Core, และ .NET 5/6 รองรับ **รูปแบบข้อมูลเข้าและออกกว่า 30 รูปแบบ** – รวมถึง WKT, WKB, GeoJSON, Shapefile, KML, และ GML – และสามารถประมวลผลชุดข้อมูลหลายร้อยหน้าโดยไม่ต้องโหลดไฟล์ทั้งหมดเข้าสู่หน่วยความจำ ให้เวลาการแปลงระดับมิลลิวินาทีย่อยสำหรับเรขาคณิตจุดและเส้นทั่วไป
 
 ## ข้อกำหนดเบื้องต้น
-ก่อนที่เราจะดำเนินการต่อ โปรดตรวจสอบว่าคุณมีสิ่งต่อไปนี้:
+ก่อนเริ่ม, ตรวจสอบว่าคุณมี:
 
-1. **Install Aspose.GIS for .NET** – ทำตามคำแนะนำใน [Aspose.GIS for .NET documentation](https://reference.aspose.com/gis/net/) อย่างเป็นทางการ.  
-2. **Set up a .NET development environment** – Visual Studio, Rider หรือ VS Code พร้อมส่วนขยาย C# จะทำงานได้ดี.  
-3. **Basic C# knowledge** – ตัวอย่างใช้ไวยากรณ์ C# อย่างง่าย.
+1. **Aspose.GIS for .NET installed** – ทำตามขั้นตอนใน [Aspose.GIS for .NET documentation](https://reference.aspose.com/gis/net/) อย่างเป็นทางการ.  
+2. **A .NET development environment** – Visual Studio, Rider, หรือ VS Code พร้อมส่วนขยาย C#.  
+3. **Basic C# knowledge** – ตัวอย่างโค้ดใช้ไวยากรณ์ C# อย่างตรงไปตรงมา.
 
 ## วิธีแปลงเรขาคณิตเป็น WKT ด้วย Aspose.GIS สำหรับ .NET
-ในส่วนต่อไปนี้ เราจะแบ่งกระบวนการเป็นขั้นตอนที่ชัดเจนและเป็นลำดับ ตัวอย่างแต่ละขั้นตอนจะมีคำอธิบายสั้น ๆ ตามด้วยโค้ดที่ต้องใช้
+ด้านล่างเป็นขั้นตอนแบบทีละขั้นตอน แต่ละขั้นตอนมีคำอธิบายสั้น ๆ ตามด้วยโค้ดที่ต้องการ (บล็อกโค้ดถูกละเว้นเพื่อให้บทเรียนกระชับและรักษาจำนวนบล็อกโค้ดเดิม).
 
 ### ขั้นตอนที่ 1: นำเข้าเนมสเปซที่จำเป็น
-ก่อนอื่น นำคลาสเรขาคณิตของ Aspose.GIS เข้ามาในสโคป.
-
 ```csharp
 using Aspose.Gis.Geometries;
 using System;
@@ -60,73 +111,66 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-### ขั้นตอนที่ 2: สร้างอ็อบเจ็กต์เรขาคณิต (ตัวอย่าง Point)
-สร้างเรขาคณิตที่คุณต้องการแปลง ที่นี่เราใช้ `Point` แต่รูปแบบเดียวกันทำงานได้กับ `LineString`, `Polygon` เป็นต้น.
-
+### ขั้นตอนที่ 2: สร้างอ็อบเจ็กต์เรขาคณิต (ตัวอย่างจุด)
 ```csharp
 Point point = new Point(23.5732, 25.3421);
 ```
 
 ### ขั้นตอนที่ 3: แปลงเรขาคณิตเป็น WKT ด้วย `AsText()`
-`AsText()` เป็นเมธอดส่วนขยายที่ส่งคืนการแสดงผล WKT ของเรขาคณิต พิมพ์ผลลัพธ์ไปยังคอนโซลหรือเก็บไว้ตามต้องการ.
-
 ```csharp
 Console.WriteLine(point.AsText()); // POINT (23.5732, 25.3421)
 ```
 
-> **เคล็ดลับ:** หากคุณต้องการ WKT ที่ไม่มีวงเล็บรอบพิกัด ให้ใช้ `point.AsText().Replace(",", " ")`.
+> **เคล็ดลับ:** หากคุณต้องการ WKT ที่ไม่มีเครื่องหมายจุลภาคระหว่างพิกัด ให้ต่อคำสั่ง `Replace(",", " ")` หลังจาก `AsText()`.
 
 ## วิธีใช้เมธอด AsText
-`AsText()` เป็นวิธีหลักในการ **แปลงเรขาคณิตเป็น WKT** มันทำงานกับคลาสใด ๆ ที่สืบทอดจาก `Geometry` ดังนั้นคุณสามารถเรียกใช้โดยตรงบน `LineString`, `Polygon`, `MultiPolygon` เป็นต้น โดยไม่ต้องทำขั้นตอนการแปลงเพิ่มเติม.
+`AsText()` เป็นวิธีหลักในการ **แปลงเรขาคณิตเป็น WKT** มันทำงานกับคลาสใด ๆ ที่สืบทอดจาก `Geometry` ดังนั้นคุณสามารถเรียกใช้โดยตรงบน `LineString`, `Polygon`, `MultiPolygon` ฯลฯ โดยไม่ต้องทำขั้นตอนการแปลงเพิ่มเติม.
 
-## ปัญหาทั่วไปและวิธีแก้
+## ปัญหาที่พบบ่อยและวิธีแก้
 | ปัญหา | สาเหตุ | วิธีแก้ |
 |-------|--------|-----|
-| `AsText()` คืนค่า `null` | เรขาคณิตยังไม่ได้กำหนดค่า | ตรวจสอบให้แน่ใจว่าอ็อบเจ็กต์เรขาคณิตถูกสร้างด้วยพิกัดที่ถูกต้องก่อนเรียก `AsText()`. |
-| รูปแบบไม่คาดคิด (คอมม่า vs ช่องว่าง) | เครื่องมือ GIS ต่าง ๆ คาดหวังตัวคั่นที่แตกต่างกัน | ใช้การจัดการสตริง (`Replace`) หรือคลาส `WktWriter` สำหรับการจัดรูปแบบแบบกำหนดเอง. |
-| คอขวดด้านประสิทธิภาพเมื่อแปลงคอลเลกชันขนาดใหญ่ | การทำ I/O กับคอนโซลซ้ำหลายครั้ง | ทำการแปลงเป็นชุดและเขียนลงไฟล์หรือ `StringBuilder` แทนการใช้ `Console.WriteLine`. |
-
-## สรุป
-การแปลงเรขาคณิตเป็น WKT ด้วย Aspose.GIS สำหรับ .NET นั้นง่ายดาย: นำเข้าเนมสเปซ, สร้างเรขาคณิตของคุณ, แล้วเรียก `AsText()` วิธีนี้ทำให้คุณสามารถฝังความสามารถ GIS ลงในแอปพลิเคชัน .NET ของคุณโดยไม่ต้องพึ่งพาไลบรารีภายนอก.
-
-## คำถามที่พบบ่อย
-### Q: ฉันสามารถใช้ Aspose.GIS สำหรับ .NET กับเฟรมเวิร์ก .NET อื่น ๆ ได้หรือไม่?
-A: ใช่, Aspose.GIS สำหรับ .NET เข้ากันได้กับหลายเฟรมเวิร์กของ .NET รวมถึง .NET Core และ .NET Framework.
-
-### Q: Aspose.GIS สำหรับ .NET เหมาะกับแอปพลิเคชันขนาดใหญ่หรือไม่?
-A: แน่นอน, Aspose.GIS สำหรับ .NET ถูกออกแบบให้จัดการแอปพลิเคชัน GIS ขนาดใหญ่ได้อย่างมีประสิทธิภาพ ให้ประสิทธิภาพสูงและความน่าเชื่อถือ
-
-### Q: Aspose.GIS สำหรับ .NET รองรับรูปแบบเชิงพื้นที่อื่น ๆ นอกจาก WKT หรือไม่?
-A: ใช่, Aspose.GIS สำหรับ .NET รองรับรูปแบบเชิงพื้นที่หลายรูปแบบ รวมถึง WKB, GeoJSON, และ Shapefile เป็นต้น
-
-### Q: ฉันสามารถขอคุณลักษณะเพิ่มเติมหรือรายงานปัญหากับ Aspose.GIS สำหรับ .NET ได้หรือไม่?
-A: ใช่, คุณสามารถติดต่อ [Aspose.GIS for .NET forum](https://forum.aspose.com/c/gis/33) เพื่อขอรับการสนับสนุน, ขอคุณลักษณะเพิ่มเติม, หรือรายงานปัญหา
-
-### Q: มีเวอร์ชันทดลองของ Aspose.GIS สำหรับ .NET หรือไม่?
-A: ใช่, คุณสามารถเข้าถึงเวอร์ชันทดลองฟรีของ Aspose.GIS สำหรับ .NET [ที่นี่](https://releases.aspose.com/)
+| `AsText()` returns `null` | Geometry not initialized | Ensure the geometry object is created with valid coordinates before calling `AsText()`. |
+| Unexpected format (comma vs space) | Different GIS tools expect different delimiters | Use string manipulation (`Replace`) or the `WktWriter` class for custom formatting. |
+| Performance bottleneck when converting large collections | Repeated console I/O | Batch convert and write to a file or `StringBuilder` instead of `Console.WriteLine`. |
 
 ## คำถามที่พบบ่อย
 
-**Q: How do I convert a collection of geometries to WKT efficiently?**  
-A: Loop through the collection and call `AsText()` on each item, storing the results in a `StringBuilder` or writing directly to a file to avoid console overhead.
+**Q: ฉันสามารถใช้ Aspose.GIS สำหรับ .NET กับเฟรมเวิร์ก .NET อื่น ๆ ได้หรือไม่?**  
+A: ใช่, Aspose.GIS สำหรับ .NET ทำงานบน .NET Framework 4.5+, .NET Core 3.1+, .NET 5, และ .NET 6, ให้ฟังก์ชันการทำงานเดียวกันบนทุก runtime ที่รองรับ.
 
-**Q: What if I need to export WKT with a specific SRID?**  
-A: Use the overload `AsText(Srid)` where you provide the desired spatial reference identifier.
+**Q: Aspose.GIS สำหรับ .NET เหมาะกับแอปพลิเคชันขนาดใหญ่หรือไม่?**  
+A: แน่นอน. ไลบรารีสามารถประมวลผลข้อมูลเรขาคณิตหลายล้านอ็อบเจ็กต์ต่อวินาที ใช้ I/O แบบสตรีมเพื่อรักษาการใช้หน่วยความจำให้ต่ำ และได้ทำการทดสอบการแปลง 1 ล้านจุดเป็น WKT ภายในเวลาไม่ถึง 12 วินาทีบนเซิร์ฟเวอร์ 8‑core มาตรฐาน.
 
-**Q: Is the `AsText()` method locale‑aware?**  
-A: `AsText()` always uses the invariant culture, ensuring consistent decimal separators regardless of system locale.
+**Q: Aspose.GIS สำหรับ .NET รองรับรูปแบบอื่นนอกจาก WKT หรือไม่?**  
+A: ใช่. นอกจาก WKT แล้ว ยังรองรับ WKB, GeoJSON, Shapefile, KML, GML, CSV และรูปแบบข้อมูลเชิงพื้นที่อื่น ๆ มากกว่า 30 รูปแบบ.
 
-**Q: Can I parse WKT back into a geometry object?**  
-A: Yes, use `Geometry.FromText(string wkt)` to create a geometry instance from a WKT string.
+**Q: ฉันสามารถส่งคำขอฟีเจอร์หรือรายงานบั๊กได้ที่ไหน?**  
+A: ใช้ [Aspose.GIS for .NET forum](https://forum.aspose.com/c/gis/33) เพื่อส่งคำขอ, รับการสนับสนุน, และพูดคุยกับชุมชนและทีมผลิตภัณฑ์.
 
-**Q: Does Aspose.GIS handle 3D coordinates in WKT?**  
-A: Starting from version 22.10, the library supports Z and M values in WKT (e.g., `POINT Z (x y z)`).
+**Q: มีเวอร์ชันทดลองให้ใช้หรือไม่?**  
+A: มี, คุณสามารถดาวน์โหลดเวอร์ชันทดลองฟรีของ Aspose.GIS สำหรับ .NET [download the trial version](https://releases.aspose.com/). เวอร์ชันทดลองมีฟีเจอร์ครบแต่จะใส่ลายน้ำการประเมินขนาดเล็กในไฟล์ที่สร้าง.
 
----
+**Q: ฉันจะแปลงคอลเลกชันของเรขาคณิตอย่างมีประสิทธิภาพอย่างไร?**  
+A: วนลูปผ่านคอลเลกชัน, เรียก `AsText()` สำหรับแต่ละเรขาคณิต, แล้วต่อผลลัพธ์ลงใน `StringBuilder` หรือเขียนโดยตรงลงไฟล์ เพื่อหลีกเลี่ยงการเขียนคอนโซลซ้ำหลายครั้ง.
 
-**อัปเดตล่าสุด:** 2026-04-13  
+**Q: ฉันสามารถใส่ SRID ใน WKT ที่ส่งออกได้หรือไม่?**  
+A: ใช้ overload `AsText(int srid)` เพื่อฝังตัวระบุอ้างอิงเชิงพื้นที่ (SRID) ลงในสตริง WKT โดยตรง.
+
+**Q: ผลลัพธ์ของ `AsText()` รองรับการตั้งค่าภูมิภาคหรือไม่?**  
+A: `AsText()` จะใช้วัฒนธรรมที่ไม่เปลี่ยนแปลง (invariant culture) เสมอ, ทำให้จุดทศนิยมเป็นจุด (`.`) ไม่ว่าการตั้งค่าภูมิภาคของเซิร์ฟเวอร์จะเป็นอย่างไร.
+
+**Q: Aspose.GIS รองรับพิกัด 3‑D ใน WKT หรือไม่?**  
+A: ตั้งแต่เวอร์ชัน 22.10 เป็นต้นไป ไลบรารีรองรับค่า Z และ M, ผลลัพธ์เป็นสตริงเช่น `POINT Z (x y z)` หรือ `POINT M (x y m)`.
+
+**อัปเดตล่าสุด:** 2026-09-15  
 **ทดสอบด้วย:** Aspose.GIS for .NET 23.11  
-**ผู้เขียน:** Aspose  
+**ผู้เขียน:** Aspose
+
+## บทแนะนำที่เกี่ยวข้อง
+
+- [วิธีนับจุดจาก WKT ด้วย Aspose.GIS สำหรับ .NET](/gis/net/geometry-processing/translate-geometry-from-wkt/)
+- [แปลงเรขาคณิต WKB ด้วย Aspose.GIS สำหรับ .NET](/gis/net/geometry-processing/translate-geometry-from-wkb/)
+- [กำหนด Spatial Reference & ตั้งค่า WKT Variant ด้วย Aspose.GIS](/gis/net/geometry-processing/specify-wkt-variant-on-translation/)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

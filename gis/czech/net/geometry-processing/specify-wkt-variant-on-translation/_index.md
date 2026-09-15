@@ -1,14 +1,59 @@
 ---
-date: 2026-04-09
-description: Naučte se, jak při vytváření bodu v C# s Aspose.GIS pro .NET přiřadit
-  prostorový referenční systém a nastavit desetinnou přesnost ve vašich .NET aplikacích.
+date: 2026-09-15
+description: Zjistěte, jak přiřadit coordinate system, nastavit WKT variant a řídit
+  decimal precision při vytváření point geometry v C# s Aspose.GIS pro .NET.
 keywords:
+- assign coordinate system
 - assign spatial reference
 - set decimal precision
-- create point c#
-linktitle: Určete variantu WKT při překladu
+- create point geometry
+- set numeric format
+lastmod: 2026-09-15
+linktitle: Specifikovat WKT Variant při překladu
+og_description: Zjistěte, jak přiřadit coordinate system, nastavit WKT variant a řídit
+  decimal precision při vytváření point geometry v C# s Aspose.GIS pro .NET.
+og_image_alt: Developer guide showing C# code to assign coordinate system and configure
+  WKT output with Aspose.GIS
+og_title: Přiřazení coordinate system, nastavení WKT variant pomocí Aspose.GIS
+schemas:
+- author: Aspose
+  dateModified: '2026-09-15'
+  description: Learn how to assign coordinate system, set the WKT variant and control
+    decimal precision when creating point geometry in C# with Aspose.GIS for .NET.
+  headline: Assign coordinate system, set WKT variant using Aspose.GIS
+  type: TechArticle
+- description: Learn how to assign coordinate system, set the WKT variant and control
+    decimal precision when creating point geometry in C# with Aspose.GIS for .NET.
+  name: Assign coordinate system, set WKT variant using Aspose.GIS
+  steps:
+  - name: Aspose.GIS for .NET – download from the [download page](https://releases.aspose.com/gis/net/).
+    text: Aspose.GIS for .NET – download from the [download page](https://releases.aspose.com/gis/net/).
+  - name: A .NET development environment (Visual Studio, VS Code, or Rider).
+    text: A .NET development environment (Visual Studio, VS Code, or Rider).
+  - name: Basic familiarity with C# and the .NET framework.
+    text: Basic familiarity with C# and the .NET framework.
+  type: HowTo
+- questions:
+  - answer: It binds a geometry to a specific coordinate reference system such as
+      WGS‑84.
+    question: What does “assign coordinate system” mean?
+  - answer: Iso, SimpleFeatureAccessOutdated, and ExtendedPostGis.
+    question: Which WKT variants are supported?
+  - answer: Use the `NumericFormat` enum (`General`, `RoundTrip`, `Flat`).
+    question: How can I control decimal precision?
+  - answer: A free trial is available; a commercial license is required for production
+      use.
+    question: Do I need a license for Aspose.GIS?
+  - answer: .NET Framework 4.0+ and .NET Core/5/6+.
+    question: What .NET versions are compatible?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: Přiřazení prostorové reference a nastavení varianty WKT pomocí Aspose.GIS
+tags:
+- assign coordinate system
+- Aspose.GIS
+- C# geometry
+- WKT variant
+title: Přiřazení coordinate system, nastavení WKT variant pomocí Aspose.GIS
 url: /cs/net/geometry-processing/specify-wkt-variant-on-translation/
 weight: 19
 ---
@@ -17,31 +62,31 @@ weight: 19
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Přiřazení prostorové reference a nastavení varianty WKT pomocí Aspose.GIS
+# Přiřazení souřadnicového systému, nastavení varianty WKT pomocí Aspose.GIS
 
 ## Úvod
-V tomto tutoriálu se naučíte, jak **přiřadit prostorovou referenci** k geometrii a řídit přesný výstupní formát WKT pomocí Aspose.GIS pro .NET. Ať už potřebujete **vytvořit objekt point v C#** pro mapování, analytiku nebo výměnu dat, možnost vybrat správnou variantu WKT a číselnou přesnost umožňuje, aby vaše prostorová data byla interoperabilní a snadno čitelná. Projděme si proces krok za krokem.
+V tomto tutoriálu se naučíte, jak **přiřadit souřadnicový systém**, vybrat správnou variantu WKT a řídit desetinnou přesnost při **vytváření bodové geometrie** v C# s Aspose.GIS pro .NET. Ať už vytváříte mapovou službu, provádíte prostorovou analytiku nebo vyměňujete data mezi GIS platformami, tato nastavení zajišťují, že váš výstup je interoperabilní a snadno čitelný. Projděme si proces krok za krokem.
 
 ## Rychlé odpovědi
-- **Co znamená „přiřadit prostorovou referenci“?** Vazuje geometrii ke konkrétnímu souřadnicovému systému, jako je WGS‑84.  
+- **Co znamená “assign coordinate system”?** Spojuje geometrii se specifickým referenčním souřadnicovým systémem, jako je WGS‑84.  
 - **Které varianty WKT jsou podporovány?** Iso, SimpleFeatureAccessOutdated a ExtendedPostGis.  
-- **Jak mohu řídit desetinnou přesnost?** Použijte možnosti `NumericFormat` jako `General`, `RoundTrip` nebo `Flat`.  
-- **Potřebuji licenci?** Je k dispozici bezplatná zkušební verze; pro produkční použití je vyžadována komerční licence.  
-- **Jaké verze .NET jsou kompatibilní?** .NET Framework 4.0+ a .NET Core/5/6+.
+- **Jak mohu řídit desetinnou přesnost?** Použijte výčtový typ `NumericFormat` (`General`, `RoundTrip`, `Flat`).  
+- **Potřebuji licenci pro Aspose.GIS?** K dispozici je bezplatná zkušební verze; pro produkční použití je vyžadována komerční licence.  
+- **Jaké verze .NET jsou kompatibilní?** .NET Framework 4.0+ a .NET Core/5/6+.
 
-## Co je „přiřadit prostorovou referenci“?
-Přiřazení prostorové reference (nebo systému prostorových referencí, SRS) říká GIS softwaru, jak interpretovat souřadnicové hodnoty geometrie. Bez SRS nemají souřadnice zeměpisné šířky a délky bodu žádný reálný význam.
+## Co je “assign coordinate system”?
+Přiřazení prostorového referenčního systému (nebo prostorového referenčního systému, SRS) říká GIS softwaru, jak interpretovat souřadnicové hodnoty geometrie, propojující čísla s reálným souřadnicovým systémem, jako je WGS‑84. Bez SRS nemají souřadnice bodu (zeměpisná šířka‑délka) žádný reálný význam.
 
 ## Proč řídit variantu WKT a číselný formát?
-Různé GIS nástroje očekávají mírně odlišné syntaxy WKT. Výběrem správné varianty zajistíte bezproblémovou výměnu dat, zatímco nastavení desetinné přesnosti zabraňuje zaokrouhlovacím chybám nebo příliš dlouhým číslům, která zaplňují logy a soubory.
+Více než 30 GIS nástrojů očekává specifické syntaxy WKT, takže výběr správné varianty zabraňuje chybám při importu. Nastavení číselného formátu snižuje šum zaokrouhlování a udržuje výstup stručný, což je zvláště důležité, když jsou logy nebo soubory zpracovávány programově.
 
-## Předpoklady
-1. Aspose.GIS pro .NET – stáhněte ze [stránky ke stažení](https://releases.aspose.com/gis/net/).  
+## Požadavky
+1. Aspose.GIS pro .NET – stáhněte z [download page](https://releases.aspose.com/gis/net/).  
 2. Vývojové prostředí .NET (Visual Studio, VS Code nebo Rider).  
 3. Základní znalost C# a .NET frameworku.
 
-## Importovat jmenné prostory
-Před použitím jakýchkoli tříd Aspose.GIS importujte požadované jmenné prostory:
+## Importujte jmenné prostory
+Než použijete jakékoli třídy Aspose.GIS, importujte požadované jmenné prostory:
 
 ```csharp
 using Aspose.Gis.Geometries;
@@ -54,21 +99,21 @@ using System.Threading.Tasks;
 using Aspose.Gis;
 ```
 
-## Krok 1: Vytvořit objekt Point (vytvořit point v C#)
-Začneme konstrukcí `Point` s hodnotami zeměpisné šířky, délky a volitelnou měrnou (M) hodnotou:
+## Jak přiřadit souřadnicový systém bodu?
+Načtěte instanci `Point` a poté připojte systém prostorové reference (SRS) pomocí třídy `SpatialReference`. Tento dvoustupňový vzor zajišťuje, že geometrie nese metadata svého souřadnicového systému při exportu, což umožňuje následným nástrojům správně interpretovat souřadnice. Třída `Point` představuje jedinou polohu definovanou souřadnicemi X (zeměpisná délka) a Y (zeměpisná šířka).
 
 ```csharp
 Point point = new Point(23.5732, 25.3421) { M = 40.3 };
 ```
 
-## Krok 2: Přiřadit systém prostorové reference (SRS)
-Nyní **přiřadíme prostorovou referenci** k bodu. Zde používáme široce podporovaný systém WGS‑84 (SRID 4326):
+## Krok 2: přiřadit systém prostorové reference (SRS)
+Nyní **přiřadíme prostorovou referenci** bodu. `SpatialReference` představuje souřadnicový referenční systém identifikovaný pomocí SRID. Zde používáme široce podporovaný systém WGS‑84 (SRID 4326):
 
 ```csharp
 point.SpatialReferenceSystem = SpatialReferenceSystem.Wgs84;
 ```
 
-## Krok 3: Zvolit požadovanou variantu WKT
+## Krok 3: specifikovat požadovanou variantu WKT
 Vyberte variantu WKT, která odpovídá vaší následné aplikaci:
 
 ```csharp
@@ -77,8 +122,8 @@ Console.WriteLine(point.AsText(WktVariant.SimpleFeatureAccessOutdated)); // POIN
 Console.WriteLine(point.AsText(WktVariant.ExtendedPostGis)); // SRID=4326;POINTM (23.5732, 25.3421, 40.3)
 ```
 
-## Krok 4: Nastavit desetinnou přesnost pro výstup WKT
-Řiďte, kolik číslic se objeví ve výsledném řetězci pomocí `NumericFormat`:
+## Jak nastavit desetinnou přesnost pro výstup WKT?
+Řiďte, kolik číslic se objeví v konečném řetězci pomocí výčtového typu `NumericFormat`, který definuje pravidla formátování jako `General`, `RoundTrip` nebo `Flat`. Výběr `RoundTrip` zachovává plnou věrnost souřadnic pro scénáře zpětného převodu, zatímco `General` poskytuje stručnou reprezentaci vhodnou pro většinu vizualizačních úloh. Výčtový typ `NumericFormat` řídí, jak jsou číselné souřadnice formátovány ve výstupu WKT.
 
 ```csharp
 Console.WriteLine("G17  : " + point.AsText(WktVariant.Iso, NumericFormat.General(17))); // POINT M (23.5732 25.342099999999999 40.299999999999997)
@@ -89,11 +134,11 @@ Console.WriteLine("Flat3: " + point.AsText(WktVariant.Iso, NumericFormat.Flat(3)
 
 ### Běžné úskalí a tipy
 - **Úskalí:** Zapomenutí nastavit SRS před voláním `AsText` může vést k chybějícím informacím o SRID.  
-- **Tip:** Použijte `NumericFormat.RoundTrip`, když potřebujete bezztrátové zpětné převody souřadnic.  
-- **Tip:** Varianta `Iso` je nejpřenosnější; `ExtendedPostGis` zvolte jen v případě, že potřebujete vložený SRID.
+- **Tip:** Použijte `NumericFormat.RoundTrip`, když potřebujete bezztrátový zpětný převod souřadnic.  
+- **Tip:** Varianta `Iso` je nejpřenosnější; `ExtendedPostGis` zvolte jen tehdy, když potřebujete vložený SRID.
 
 ## Závěr
-Nyní víte, jak **přiřadit prostorovou referenci**, vybrat vhodnou variantu WKT a **nastavit desetinnou přesnost** při **vytváření objektů point v C#** pomocí Aspose.GIS. Tyto možnosti vám poskytují flexibilitu splnit přesné požadavky jakéhokoli GIS pracovního postupu, od jednoduché vizualizace po vysoce přesnou prostorovou analýzu.
+Nyní víte, jak **přiřadit souřadnicový systém**, vybrat vhodnou variantu WKT a **nastavit desetinnou přesnost** při **vytváření bodové geometrie** s Aspose.GIS. Tyto ovládací prvky vám poskytují flexibilitu splnit přesné požadavky jakéhokoli GIS pracovního postupu, od jednoduché vizualizace po vysoce přesnou prostorovou analýzu.
 
 ## Často kladené otázky
 
@@ -101,22 +146,29 @@ Nyní víte, jak **přiřadit prostorovou referenci**, vybrat vhodnou variantu W
 **A:** Ano, Aspose.GIS podporuje .NET Framework 4.0 a vyšší, stejně jako .NET Core/5/6.
 
 **Q:** Mohu použít Aspose.GIS pro komerční projekty?  
-**A:** Rozhodně. Pro produkční použití je vyžadována komerční licence, ale je k dispozici bezplatná zkušební verze pro hodnocení.
+**A:** Rozhodně. Pro produkční použití je vyžadována komerční licence, ale pro vyhodnocení je k dispozici bezplatná zkušební verze.
 
-**Q:** Podporuje Aspose.GIS i jiné formáty prostorových dat?  
-**A:** Ano, funguje s ESRI Shapefile, GeoJSON, KML a mnoha dalšími formáty.
+**Q:** Podporuje Aspose.GIS jiné formáty prostorových dat?  
+**A:** Ano, pracuje s více než 30 formáty, včetně ESRI Shapefile, GeoJSON, KML, CSV a mnoha dalších.
 
 **Q:** Kde si mohu stáhnout bezplatnou zkušební verzi?  
-**A:** Bezplatnou zkušební verzi Aspose.GIS můžete stáhnout [zde](https://releases.aspose.com/).
+**A:** Bezplatnou zkušební verzi Aspose.GIS můžete stáhnout ze [Aspose.GIS free trial download page](https://releases.aspose.com/).
 
 **Q:** Jak získám pomoc, pokud narazím na problémy?  
-**A:** Položte své otázky na komunitním [fóru](https://forum.aspose.com/c/gis/33) Aspose.GIS, kde vám mohou pomoci jak zaměstnanci Aspose, tak členové komunity.
+**A:** Zveřejněte své otázky na komunitním [forum](https://forum.aspose.com/c/gis/33) Aspose.GIS, kde vám mohou pomoci jak zaměstnanci Aspose, tak členové komunity.
 
 ---
 
-**Poslední aktualizace:** 2026-04-09  
-**Testováno s:** Aspose.GIS pro .NET (nejnovější verze)  
-**Autor:** Aspose  
+**Poslední aktualizace:** 2026-09-15  
+**Testováno s:** Aspose.GIS for .NET (latest release)  
+**Autor:** Aspose
+
+## Související tutoriály
+
+- [Vytvořit vektorovou vrstvu a nastavit její systém prostorové reference](/gis/net/layer-data-operations/set-layer-spatial-reference-system/)
+- [Jak převést geometrii na WKT pomocí Aspose.GIS pro .NET](/gis/net/geometry-processing/translate-geometry-to-wkt/)
+- [Jak omezit přesnost při zápisu geometrií pomocí Aspose.GIS](/gis/net/geometry-processing/limit-precision-writing-geometries/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

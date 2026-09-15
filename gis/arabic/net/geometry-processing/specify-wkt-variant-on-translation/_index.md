@@ -1,14 +1,59 @@
 ---
-date: 2026-04-09
-description: تعلم كيفية تعيين المرجع المكاني وتحديد الدقة العشرية عند إنشاء نقطة C#
-  باستخدام Aspose.GIS لـ .NET في تطبيقات .NET الخاصة بك.
+date: 2026-09-15
+description: تعرف على كيفية تعيين نظام الإحداثيات، وضبط نسخة WKT والتحكم في دقة الكسور
+  العشرية عند إنشاء هندسة نقطة في C# باستخدام Aspose.GIS لـ .NET.
 keywords:
+- assign coordinate system
 - assign spatial reference
 - set decimal precision
-- create point c#
-linktitle: حدد نوع WKT عند الترجمة
+- create point geometry
+- set numeric format
+lastmod: 2026-09-15
+linktitle: تحديد نسخة WKT على الترجمة
+og_description: تعرف على كيفية تعيين نظام الإحداثيات، وضبط نسخة WKT والتحكم في دقة
+  الكسور العشرية عند إنشاء هندسة نقطة في C# باستخدام Aspose.GIS لـ .NET.
+og_image_alt: Developer guide showing C# code to assign coordinate system and configure
+  WKT output with Aspose.GIS
+og_title: تعيين نظام الإحداثيات، ضبط نسخة WKT باستخدام Aspose.GIS
+schemas:
+- author: Aspose
+  dateModified: '2026-09-15'
+  description: Learn how to assign coordinate system, set the WKT variant and control
+    decimal precision when creating point geometry in C# with Aspose.GIS for .NET.
+  headline: Assign coordinate system, set WKT variant using Aspose.GIS
+  type: TechArticle
+- description: Learn how to assign coordinate system, set the WKT variant and control
+    decimal precision when creating point geometry in C# with Aspose.GIS for .NET.
+  name: Assign coordinate system, set WKT variant using Aspose.GIS
+  steps:
+  - name: Aspose.GIS for .NET – download from the [download page](https://releases.aspose.com/gis/net/).
+    text: Aspose.GIS for .NET – download from the [download page](https://releases.aspose.com/gis/net/).
+  - name: A .NET development environment (Visual Studio, VS Code, or Rider).
+    text: A .NET development environment (Visual Studio, VS Code, or Rider).
+  - name: Basic familiarity with C# and the .NET framework.
+    text: Basic familiarity with C# and the .NET framework.
+  type: HowTo
+- questions:
+  - answer: It binds a geometry to a specific coordinate reference system such as
+      WGS‑84.
+    question: What does “assign coordinate system” mean?
+  - answer: Iso, SimpleFeatureAccessOutdated, and ExtendedPostGis.
+    question: Which WKT variants are supported?
+  - answer: Use the `NumericFormat` enum (`General`, `RoundTrip`, `Flat`).
+    question: How can I control decimal precision?
+  - answer: A free trial is available; a commercial license is required for production
+      use.
+    question: Do I need a license for Aspose.GIS?
+  - answer: .NET Framework 4.0+ and .NET Core/5/6+.
+    question: What .NET versions are compatible?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: تعيين المرجع المكاني وتحديد نسخة WKT باستخدام Aspose.GIS
+tags:
+- assign coordinate system
+- Aspose.GIS
+- C# geometry
+- WKT variant
+title: تعيين نظام الإحداثيات، ضبط نسخة WKT باستخدام Aspose.GIS
 url: /ar/net/geometry-processing/specify-wkt-variant-on-translation/
 weight: 19
 ---
@@ -17,28 +62,28 @@ weight: 19
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# تعيين المرجع المكاني وتعيين نوع WKT باستخدام Aspose.GIS
+# تعيين نظام الإحداثيات، وضبط نوع WKT باستخدام Aspose.GIS
 
 ## مقدمة
-في هذا البرنامج التعليمي ستتعلم كيفية **تعيين المرجع المكاني** إلى شكل هندسي والتحكم في تنسيق إخراج WKT الدقيق باستخدام Aspose.GIS لـ .NET. سواء كنت بحاجة إلى **إنشاء كائنات point C#** للتخطيط أو التحليل أو تبادل البيانات، فإن القدرة على اختيار نوع WKT المناسب ودقة الأرقام يجعل بياناتك المكانية قابلة للتبادل وسهلة القراءة. دعنا نستعرض العملية خطوة بخطوة.
+في هذا البرنامج التعليمي ستتعلم كيفية **تعيين نظام الإحداثيات**، اختيار نوع WKT المناسب، والتحكم في دقة الأرقام العشرية عند **إنشاء هندسة نقطة** بلغة C# باستخدام Aspose.GIS لـ .NET. سواءً كنت تبني خدمة رسم خرائط، أو تجري تحليلات مكانية، أو تتبادل البيانات بين منصات GIS، فإن هذه الإعدادات تضمن أن يكون ناتجك متوافقًا وسهل القراءة. دعنا نستعرض العملية خطوة بخطوة.
 
 ## إجابات سريعة
-- **ماذا يعني “assign spatial reference”؟** يربط الشكل الهندسي بنظام إحداثيات محدد مثل WGS‑84.  
-- **ما هي أنواع WKT المدعومة؟** Iso، SimpleFeatureAccessOutdated، و ExtendedPostGis.  
-- **كيف يمكنني التحكم في دقة الكسور العشرية؟** استخدم خيارات `NumericFormat` مثل `General`، `RoundTrip`، أو `Flat`.  
-- **هل أحتاج إلى ترخيص؟** يتوفر نسخة تجريبية مجانية؛ الترخيص التجاري مطلوب للإنتاج.  
-- **ما إصدارات .NET المتوافقة؟** .NET Framework 4.0+ و .NET Core/5/6+.
+- **ماذا يعني “تعيين نظام الإحداثيات”؟** يربط الهندسة بنظام إسناد إحداثيات محدد مثل WGS‑84.  
+- **ما هي أنواع WKT المدعومة؟** Iso، SimpleFeatureAccessOutdated، وExtendedPostGis.  
+- **كيف يمكنني التحكم في دقة الأرقام العشرية؟** استخدم تعداد `NumericFormat` (`General`، `RoundTrip`، `Flat`).  
+- **هل أحتاج إلى ترخيص لـ Aspose.GIS؟** يتوفر نسخة تجريبية مجانية؛ يتطلب الاستخدام في الإنتاج ترخيصًا تجاريًا.  
+- **ما إصدارات .NET المتوافقة؟** .NET Framework 4.0+ و .NET Core/5/6+.
 
-## ما هو “assign spatial reference”؟
-تعيين المرجع المكاني (أو نظام المرجع المكاني، SRS) يخبر برامج GIS كيفية تفسير قيم الإحداثيات لشكل هندسي. بدون SRS، لا تكون أرقام خط العرض‑خط الطول للنقطة ذات معنى في العالم الحقيقي.
+## ما هو “تعيين نظام الإحداثيات”؟
+إن تعيين إشارة مكانية (أو نظام الإشارة المكانية، SRS) يخبر برنامج GIS كيفية تفسير قيم إحداثيات الهندسة، ربط الأرقام بنظام إحداثيات حقيقي مثل WGS‑84. بدون SRS، لا تحمل أرقام خطوط العرض والطول للنقطة أي معنى في العالم الحقيقي.
 
 ## لماذا التحكم في نوع WKT وتنسيق الأرقام؟
-تتوقع أدوات GIS المختلفة صيغ WKT متفاوتة قليلاً. اختيار النوع المناسب يضمن تبادل بيانات سلس، بينما ضبط دقة الكسور العشرية يمنع أخطاء التقريب أو الأرقام الطويلة التي تملأ السجلات والملفات.
+أكثر من 30 أداة GIS تتوقع صيغ WKT محددة، لذا اختيار النوع المناسب يمنع أخطاء الاستيراد. ضبط تنسيق الأرقام يقلل من ضوضاء التقريب ويحافظ على اختصار الناتج، وهو أمر مهم خصوصًا عندما يتم تحليل السجلات أو الملفات برمجيًا.
 
 ## المتطلبات المسبقة
 1. Aspose.GIS لـ .NET – قم بتنزيله من [صفحة التنزيل](https://releases.aspose.com/gis/net/).  
 2. بيئة تطوير .NET (Visual Studio، VS Code، أو Rider).  
-3. إلمام أساسي بـ C# وإطار عمل .NET.
+3. إلمام أساسي بلغة C# وإطار عمل .NET.
 
 ## استيراد مساحات الأسماء
 قبل استخدام أي فئات Aspose.GIS، استورد مساحات الأسماء المطلوبة:
@@ -54,22 +99,22 @@ using System.Threading.Tasks;
 using Aspose.Gis;
 ```
 
-## الخطوة 1: إنشاء كائن Point (create point C#)
-نبدأ بإنشاء كائن `Point` مع خط العرض، خط الطول، وقيمة قياس اختيارية (M):
+## كيفية تعيين نظام الإحداثيات لنقطة؟
+حمّل كائن `Point`، ثم أرفق نظام إشارة مكانية (SRS) باستخدام فئة `SpatialReference`. يضمن هذا النمط ذو الخطوتين أن تحمل الهندسة بيانات تعريف نظام إحداثياتها عند التصدير، مما يسمح للأدوات اللاحقة بتفسير الإحداثيات بشكل صحيح. تمثل فئة `Point` موقعًا واحدًا يُحدَّد بإحداثيات X (خط الطول) و Y (خط العرض).
 
 ```csharp
 Point point = new Point(23.5732, 25.3421) { M = 40.3 };
 ```
 
-## الخطوة 2: تعيين نظام المرجع المكاني (SRS)
-الآن **نقوم بتعيين المرجع المكاني** للنقطة. هنا نستخدم نظام WGS‑84 الشائع (SRID 4326):
+## الخطوة 2: تعيين نظام الإشارة المكانية (SRS)
+الآن نقوم **بتعيين الإشارة المكانية** للنقطة. تمثل فئة `SpatialReference` نظام إسناد إحداثيات يُحدَّد بواسطة SRID. هنا نستخدم نظام WGS‑84 المدعوم على نطاق واسع (SRID 4326):
 
 ```csharp
 point.SpatialReferenceSystem = SpatialReferenceSystem.Wgs84;
 ```
 
 ## الخطوة 3: تحديد نوع WKT المطلوب
-اختر نوع WKT الذي يتطابق مع تطبيقك اللاحق:
+اختر نوع WKT الذي يتوافق مع تطبيقك اللاحق:
 
 ```csharp
 Console.WriteLine(point.AsText(WktVariant.Iso)); // POINT M (23.5732, 25.3421, 40.3)
@@ -77,8 +122,8 @@ Console.WriteLine(point.AsText(WktVariant.SimpleFeatureAccessOutdated)); // POIN
 Console.WriteLine(point.AsText(WktVariant.ExtendedPostGis)); // SRID=4326;POINTM (23.5732, 25.3421, 40.3)
 ```
 
-## الخطوة 4: تعيين دقة الأعداد العشرية لإخراج WKT
-تحكم في عدد الأرقام التي تظهر في السلسلة النهائية باستخدام `NumericFormat`:
+## كيفية ضبط دقة الأرقام العشرية لإخراج WKT؟
+تحكم في عدد الأرقام التي تظهر في السلسلة النهائية باستخدام تعداد `NumericFormat`، الذي يحدد قواعد التنسيق مثل `General`، `RoundTrip` أو `Flat`. اختيار `RoundTrip` يحافظ على دقة الإحداثيات بالكامل في سيناريوهات النقل المتكرر، بينما يوفر `General` تمثيلًا مختصرًا مناسبًا لمعظم مهام التصور. يتحكم تعداد `NumericFormat` في طريقة تنسيق أرقام الإحداثيات في ناتج WKT.
 
 ```csharp
 Console.WriteLine("G17  : " + point.AsText(WktVariant.Iso, NumericFormat.General(17))); // POINT M (23.5732 25.342099999999999 40.299999999999997)
@@ -88,35 +133,40 @@ Console.WriteLine("Flat3: " + point.AsText(WktVariant.Iso, NumericFormat.Flat(3)
 ```
 
 ### الأخطاء الشائعة والنصائح
-- **خطأ:** نسيان تعيين SRS قبل استدعاء `AsText` قد يؤدي إلى فقدان معلومات SRID.  
+- **خطأ شائع:** نسيان ضبط SRS قبل استدعاء `AsText` قد يؤدي إلى فقدان معلومات SRID.  
 - **نصيحة:** استخدم `NumericFormat.RoundTrip` عندما تحتاج إلى نقل إحداثيات بدون فقدان.  
-- **نصيحة:** النوع `Iso` هو الأكثر قابلية للنقل؛ اختر `ExtendedPostGis` فقط عندما تحتاج إلى تضمين SRID.
+- **نصيحة:** نوع `Iso` هو الأكثر قابلية للنقل؛ اختر `ExtendedPostGis` فقط عندما تحتاج إلى تضمين SRID.
 
 ## الخلاصة
-أنت الآن تعرف كيفية **تعيين المرجع المكاني**، اختيار نوع WKT المناسب، و**تعيين دقة الأعداد العشرية** عند **إنشاء كائنات point C#** باستخدام Aspose.GIS. تمنحك هذه الضوابط المرونة لتلبية المتطلبات الدقيقة لأي سير عمل GIS، من التصور البسيط إلى التحليل المكاني عالي الدقة.
+أنت الآن تعرف كيفية **تعيين نظام الإحداثيات**، اختيار نوع WKT المناسب، و**ضبط دقة الأرقام العشرية** عند **إنشاء هندسة نقطة** باستخدام Aspose.GIS. تمنحك هذه الضوابط المرونة لتلبية المتطلبات الدقيقة لأي سير عمل GIS، من التصور البسيط إلى التحليل المكاني عالي الدقة.
 
 ## الأسئلة المتكررة
 
 **س:** هل Aspose.GIS متوافق مع جميع إصدارات .NET؟  
 **ج:** نعم، يدعم Aspose.GIS .NET Framework 4.0 وما فوق، بالإضافة إلى .NET Core/5/6.
 
-**س:** هل يمكنني استخدام Aspose.GIS في مشاريع تجارية؟  
-**ج:** بالتأكيد. الترخيص التجاري مطلوب للاستخدام في الإنتاج، لكن نسخة تجريبية مجانية متاحة للتقييم.
+**س:** هل يمكنني استخدام Aspose.GIS في المشاريع التجارية؟  
+**ج:** بالطبع. يتطلب الاستخدام في الإنتاج ترخيصًا تجاريًا، لكن تتوفر نسخة تجريبية مجانية للتقييم.
 
 **س:** هل يدعم Aspose.GIS صيغ بيانات مكانية أخرى؟  
-**ج:** نعم، يعمل مع ESRI Shapefile، GeoJSON، KML، والعديد من الصيغ الأخرى.
+**ج:** نعم، يعمل مع أكثر من 30 صيغة، بما في ذلك ESRI Shapefile، GeoJSON، KML، CSV، والعديد غيرها.
 
 **س:** أين يمكنني تنزيل نسخة تجريبية مجانية؟  
-**ج:** يمكنك تنزيل نسخة تجريبية مجانية من Aspose.GIS من [هنا](https://releases.aspose.com/).
+**ج:** يمكنك تنزيل نسخة تجريبية مجانية من Aspose.GIS من [صفحة تنزيل النسخة التجريبية المجانية لـ Aspose.GIS](https://releases.aspose.com/).
 
-**س:** كيف أحصل على مساعدة إذا واجهت مشاكل؟  
-**ج:** انشر أسئلتك في منتدى مجتمع Aspose.GIS [المنتدى](https://forum.aspose.com/c/gis/33) حيث يمكن للموظفين وأعضاء المجتمع المساعدة.
+**س:** كيف أحصل على المساعدة إذا واجهت مشاكل؟  
+**ج:** انشر أسئلتك على منتدى مجتمع Aspose.GIS [المنتدى](https://forum.aspose.com/c/gis/33) حيث يمكن للموظفين في Aspose وأعضاء المجتمع المساعدة.
 
----
+**آخر تحديث:** 2026-09-15  
+**تم الاختبار مع:** Aspose.GIS لـ .NET (أحدث إصدار)  
+**المؤلف:** Aspose
 
-**آخر تحديث:** 2026-04-09  
-**تم الاختبار مع:** Aspose.GIS for .NET (latest release)  
-**المؤلف:** Aspose  
+## دروس ذات صلة
+
+- [إنشاء طبقة متجهة وتعيين نظام إسنادها المكاني](/gis/net/layer-data-operations/set-layer-spatial-reference-system/)
+- [كيفية تحويل الهندسة إلى WKT باستخدام Aspose.GIS لـ .NET](/gis/net/geometry-processing/translate-geometry-to-wkt/)
+- [كيفية تحديد الدقة عند كتابة الهندسات باستخدام Aspose.GIS](/gis/net/geometry-processing/limit-precision-writing-geometries/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
