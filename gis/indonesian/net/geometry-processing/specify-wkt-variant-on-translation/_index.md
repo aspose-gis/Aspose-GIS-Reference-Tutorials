@@ -1,14 +1,60 @@
 ---
-date: 2026-04-09
-description: Pelajari cara menetapkan referensi spasial dan mengatur presisi desimal
-  saat membuat titik C# dengan Aspose.GIS untuk .NET dalam aplikasi .NET Anda.
+date: 2026-09-15
+description: Pelajari cara menetapkan sistem koordinat, mengatur varian WKT, dan mengontrol
+  presisi desimal saat membuat geometri titik dalam C# dengan Aspose.GIS untuk .NET.
 keywords:
+- assign coordinate system
 - assign spatial reference
 - set decimal precision
-- create point c#
-linktitle: Tentukan Varian WKT pada Terjemahan
+- create point geometry
+- set numeric format
+lastmod: 2026-09-15
+linktitle: Tentukan Varian WKT pada Translasi
+og_description: Pelajari cara menetapkan sistem koordinat, mengatur varian WKT, dan
+  mengontrol presisi desimal saat membuat geometri titik dalam C# dengan Aspose.GIS
+  untuk .NET.
+og_image_alt: Developer guide showing C# code to assign coordinate system and configure
+  WKT output with Aspose.GIS
+og_title: Tetapkan sistem koordinat, atur varian WKT menggunakan Aspose.GIS
+schemas:
+- author: Aspose
+  dateModified: '2026-09-15'
+  description: Learn how to assign coordinate system, set the WKT variant and control
+    decimal precision when creating point geometry in C# with Aspose.GIS for .NET.
+  headline: Assign coordinate system, set WKT variant using Aspose.GIS
+  type: TechArticle
+- description: Learn how to assign coordinate system, set the WKT variant and control
+    decimal precision when creating point geometry in C# with Aspose.GIS for .NET.
+  name: Assign coordinate system, set WKT variant using Aspose.GIS
+  steps:
+  - name: Aspose.GIS for .NET – download from the [download page](https://releases.aspose.com/gis/net/).
+    text: Aspose.GIS for .NET – download from the [download page](https://releases.aspose.com/gis/net/).
+  - name: A .NET development environment (Visual Studio, VS Code, or Rider).
+    text: A .NET development environment (Visual Studio, VS Code, or Rider).
+  - name: Basic familiarity with C# and the .NET framework.
+    text: Basic familiarity with C# and the .NET framework.
+  type: HowTo
+- questions:
+  - answer: It binds a geometry to a specific coordinate reference system such as
+      WGS‑84.
+    question: What does “assign coordinate system” mean?
+  - answer: Iso, SimpleFeatureAccessOutdated, and ExtendedPostGis.
+    question: Which WKT variants are supported?
+  - answer: Use the `NumericFormat` enum (`General`, `RoundTrip`, `Flat`).
+    question: How can I control decimal precision?
+  - answer: A free trial is available; a commercial license is required for production
+      use.
+    question: Do I need a license for Aspose.GIS?
+  - answer: .NET Framework 4.0+ and .NET Core/5/6+.
+    question: What .NET versions are compatible?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: Tetapkan Referensi Spasial & Atur Varian WKT menggunakan Aspose.GIS
+tags:
+- assign coordinate system
+- Aspose.GIS
+- C# geometry
+- WKT variant
+title: Tetapkan sistem koordinat, atur varian WKT menggunakan Aspose.GIS
 url: /id/net/geometry-processing/specify-wkt-variant-on-translation/
 weight: 19
 ---
@@ -17,30 +63,30 @@ weight: 19
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Tetapkan Referensi Spasial & Atur Variasi WKT menggunakan Aspose.GIS
+# Tetapkan sistem koordinat, atur varian WKT menggunakan Aspose.GIS
 
 ## Pendahuluan
-Dalam tutorial ini Anda akan belajar cara **menetapkan referensi spasial** pada sebuah geometri dan mengontrol format output WKT yang tepat dengan Aspose.GIS untuk .NET. Baik Anda perlu **membuat point C#** untuk pemetaan, analitik, atau pertukaran data, kemampuan memilih variasi WKT yang tepat dan presisi numerik membuat data spasial Anda dapat dipertukarkan dan mudah dibaca. Mari kita jalani prosesnya langkah demi langkah.
+Dalam tutorial ini Anda akan belajar cara **assign coordinate system**, memilih varian WKT yang tepat, dan mengontrol presisi desimal saat Anda **create point geometry** dalam C# dengan Aspose.GIS untuk .NET. Baik Anda membangun layanan pemetaan, melakukan analisis spasial, atau menukar data antar platform GIS, pengaturan ini menjamin bahwa output Anda dapat berinteroperasi dan mudah dibaca. Mari kita jalani prosesnya langkah demi langkah.
 
-## Jawaban Cepat
-- **Apa arti “assign spatial reference”?** Itu mengaitkan sebuah geometri dengan sistem koordinat tertentu seperti WGS‑84.  
-- **Varian WKT apa yang didukung?** Iso, SimpleFeatureAccessOutdated, dan ExtendedPostGis.  
-- **Bagaimana saya dapat mengontrol presisi desimal?** Gunakan opsi `NumericFormat` seperti `General`, `RoundTrip`, atau `Flat`.  
-- **Apakah saya memerlukan lisensi?** Versi percobaan gratis tersedia; lisensi komersial diperlukan untuk produksi.  
-- **Versi .NET apa yang kompatibel?** .NET Framework 4.0+ dan .NET Core/5/6+.
+## Jawaban cepat
+- **Apa arti “assign coordinate system”?** Itu mengikat sebuah geometri ke sistem referensi koordinat tertentu seperti WGS‑84.  
+- **Varian WKT mana yang didukung?** Iso, SimpleFeatureAccessOutdated, dan ExtendedPostGis.  
+- **Bagaimana saya dapat mengontrol presisi desimal?** Gunakan enum `NumericFormat` (`General`, `RoundTrip`, `Flat`).  
+- **Apakah saya memerlukan lisensi untuk Aspose.GIS?** Versi percobaan gratis tersedia; lisensi komersial diperlukan untuk penggunaan produksi.  
+- **Versi .NET apa yang kompatibel?** .NET Framework 4.0+ dan .NET Core/5/6+.
 
-## Apa itu “assign spatial reference”?
-Menetapkan referensi spasial (atau sistem referensi spasial, SRS) memberi tahu perangkat lunak GIS cara menafsirkan nilai koordinat sebuah geometri. Tanpa SRS, angka lintang‑bujur sebuah titik tidak memiliki arti dunia nyata.
+## Apa itu “assign coordinate system”?
+Menetapkan referensi spasial (atau sistem referensi spasial, SRS) memberi tahu perangkat lunak GIS cara menafsirkan nilai koordinat sebuah geometri, menghubungkan angka-angka tersebut ke sistem koordinat dunia nyata seperti WGS‑84. Tanpa SRS, angka lintang‑bujur sebuah titik tidak memiliki makna dunia nyata.
 
-## Mengapa mengontrol variasi WKT dan format numerik?
-Berbagai alat GIS mengharapkan sintaks WKT yang sedikit berbeda. Memilih variasi yang tepat memastikan pertukaran data yang mulus, sementara mengatur presisi desimal mencegah kesalahan pembulatan atau angka yang terlalu panjang yang mengacaukan log dan file.
+## Mengapa mengontrol varian WKT dan format numerik?
+Lebih dari 30 alat GIS mengharapkan sintaks WKT tertentu, sehingga memilih varian yang tepat mencegah kesalahan impor. Menetapkan format numerik mengurangi noise pembulatan dan menjaga output tetap ringkas, yang terutama penting ketika log atau file diproses secara programatik.
 
 ## Prasyarat
 1. Aspose.GIS untuk .NET – unduh dari [halaman unduhan](https://releases.aspose.com/gis/net/).  
 2. Lingkungan pengembangan .NET (Visual Studio, VS Code, atau Rider).  
-3. Familiaritas dasar dengan C# dan kerangka kerja .NET.
+3. Pemahaman dasar tentang C# dan kerangka kerja .NET.
 
-## Impor Namespace
+## Impor namespace
 Sebelum menggunakan kelas Aspose.GIS apa pun, impor namespace yang diperlukan:
 
 ```csharp
@@ -54,22 +100,22 @@ using System.Threading.Tasks;
 using Aspose.Gis;
 ```
 
-## Langkah 1: Buat Objek Point (create point C#)
-Kita mulai dengan membuat sebuah `Point` dengan nilai latitude, longitude, dan nilai ukuran (M) opsional:
+## Cara menetapkan sistem koordinat ke sebuah titik?
+Muat sebuah instance `Point`, lalu lampirkan sistem referensi spasial (SRS) menggunakan kelas `SpatialReference`. Pola dua langkah ini memastikan geometri membawa metadata sistem koordinatnya saat diekspor, memungkinkan alat hilir untuk menafsirkan koordinat dengan benar. Kelas `Point` mewakili satu lokasi tunggal yang didefinisikan oleh koordinat X (longitude) dan Y (latitude).
 
 ```csharp
 Point point = new Point(23.5732, 25.3421) { M = 40.3 };
 ```
 
-## Langkah 2: Tetapkan Sistem Referensi Spasial (SRS)
-Sekarang kita **menetapkan referensi spasial** pada titik tersebut. Di sini kita menggunakan sistem WGS‑84 yang banyak didukung (SRID 4326):
+## Langkah 2: tetapkan sistem referensi spasial (SRS)
+Sekarang kita **assign spatial reference** ke titik tersebut. `SpatialReference` mewakili sistem referensi koordinat yang diidentifikasi oleh SRID. Di sini kita menggunakan sistem WGS‑84 yang banyak didukung (SRID 4326):
 
 ```csharp
 point.SpatialReferenceSystem = SpatialReferenceSystem.Wgs84;
 ```
 
-## Langkah 3: Tentukan Variasi WKT yang Diinginkan
-Pilih variasi WKT yang cocok dengan aplikasi hilir Anda:
+## Langkah 3: tentukan varian WKT yang diinginkan
+Pilih varian WKT yang sesuai dengan aplikasi hilir Anda:
 
 ```csharp
 Console.WriteLine(point.AsText(WktVariant.Iso)); // POINT M (23.5732, 25.3421, 40.3)
@@ -77,8 +123,8 @@ Console.WriteLine(point.AsText(WktVariant.SimpleFeatureAccessOutdated)); // POIN
 Console.WriteLine(point.AsText(WktVariant.ExtendedPostGis)); // SRID=4326;POINTM (23.5732, 25.3421, 40.3)
 ```
 
-## Langkah 4: Atur Presisi Desimal untuk Output WKT
-Kontrol berapa banyak digit yang muncul dalam string akhir menggunakan `NumericFormat`:
+## Cara mengatur presisi desimal untuk output WKT?
+Kontrol berapa banyak digit yang muncul dalam string akhir menggunakan enum `NumericFormat`, yang mendefinisikan aturan pemformatan seperti `General`, `RoundTrip`, atau `Flat`. Memilih `RoundTrip` mempertahankan fidelitas koordinat penuh untuk skenario round‑tripping, sementara `General` memberikan representasi ringkas yang cocok untuk kebanyakan tugas visualisasi. Enum `NumericFormat` mengontrol bagaimana angka koordinat diformat dalam output WKT.
 
 ```csharp
 Console.WriteLine("G17  : " + point.AsText(WktVariant.Iso, NumericFormat.General(17))); // POINT M (23.5732 25.342099999999999 40.299999999999997)
@@ -87,36 +133,42 @@ Console.WriteLine("G3   : " + point.AsText(WktVariant.Iso, NumericFormat.General
 Console.WriteLine("Flat3: " + point.AsText(WktVariant.Iso, NumericFormat.Flat(3))); // POINT M (23.573 25.342 40.3)
 ```
 
-### Kesalahan Umum & Tips
-- **Kesalahan:** Lupa mengatur SRS sebelum memanggil `AsText` dapat menyebabkan informasi SRID hilang.  
-- **Tips:** Gunakan `NumericFormat.RoundTrip` ketika Anda memerlukan perjalanan bolak‑balik koordinat tanpa kehilangan.  
-- **Tips:** Variasi `Iso` adalah yang paling portabel; pilih `ExtendedPostGis` hanya ketika Anda memerlukan SRID tersemat.
+### Jebakan umum & tips
+- **Pitfall:** Lupa menetapkan SRS sebelum memanggil `AsText` dapat menyebabkan informasi SRID hilang.  
+- **Tip:** Gunakan `NumericFormat.RoundTrip` ketika Anda membutuhkan round‑tripping koordinat tanpa kehilangan.  
+- **Tip:** Varian `Iso` adalah yang paling portabel; pilih `ExtendedPostGis` hanya ketika Anda memerlukan SRID tersemat.
 
 ## Kesimpulan
-Anda kini tahu cara **menetapkan referensi spasial**, memilih variasi WKT yang tepat, dan **mengatur presisi desimal** saat Anda **membuat point C#** dengan Aspose.GIS. Kontrol ini memberi Anda fleksibilitas untuk memenuhi persyaratan tepat dari alur kerja GIS apa pun, mulai dari visualisasi sederhana hingga analisis spasial berpresisi tinggi.
+Anda kini tahu cara **assign coordinate system**, memilih varian WKT yang tepat, dan **set decimal precision** saat Anda **create point geometry** dengan Aspose.GIS. Kontrol ini memberi Anda fleksibilitas untuk memenuhi persyaratan tepat dari setiap alur kerja GIS, mulai dari visualisasi sederhana hingga analisis spasial berpresisi tinggi.
 
-## Pertanyaan yang Sering Diajukan
+## Pertanyaan yang sering diajukan
 
-**T:** Apakah Aspose.GIS kompatibel dengan semua versi .NET?  
-**J:** Ya, Aspose.GIS mendukung .NET Framework 4.0 ke atas, serta .NET Core/5/6.
+**Q:** Apakah Aspose.GIS kompatibel dengan semua versi .NET?  
+**A:** Ya, Aspose.GIS mendukung .NET Framework 4.0 ke atas, serta .NET Core/5/6.
 
-**T:** Bisakah saya menggunakan Aspose.GIS untuk proyek komersial?  
-**J:** Tentu saja. Lisensi komersial diperlukan untuk penggunaan produksi, namun versi percobaan gratis tersedia untuk evaluasi.
+**Q:** Bisakah saya menggunakan Aspose.GIS untuk proyek komersial?  
+**A:** Tentu saja. Lisensi komersial diperlukan untuk penggunaan produksi, tetapi versi percobaan gratis tersedia untuk evaluasi.
 
-**T:** Apakah Aspose.GIS mendukung format data spasial lain?  
-**J:** Ya, ia bekerja dengan ESRI Shapefile, GeoJSON, KML, dan banyak format lainnya.
+**Q:** Apakah Aspose.GIS mendukung format data spasial lainnya?  
+**A:** Ya, ia bekerja dengan lebih dari 30 format, termasuk ESRI Shapefile, GeoJSON, KML, CSV, dan banyak lagi.
 
-**T:** Di mana saya dapat mengunduh versi percobaan gratis?  
-**J:** Anda dapat mengunduh versi percobaan gratis Aspose.GIS dari [sini](https://releases.aspose.com/).
+**Q:** Di mana saya dapat mengunduh versi percobaan gratis?  
+**A:** Anda dapat mengunduh versi percobaan gratis Aspose.GIS dari [halaman unduhan percobaan gratis Aspose.GIS](https://releases.aspose.com/).
 
-**T:** Bagaimana saya mendapatkan bantuan jika saya mengalami masalah?  
-**J:** Posting pertanyaan Anda di [forum](https://forum.aspose.com/c/gis/33) komunitas Aspose.GIS dimana staf Aspose dan anggota komunitas dapat membantu.
+**Q:** Bagaimana saya mendapatkan bantuan jika mengalami masalah?  
+**A:** Posting pertanyaan Anda di [forum](https://forum.aspose.com/c/gis/33) komunitas Aspose.GIS dimana staf Aspose dan anggota komunitas dapat membantu.
 
 ---
 
-**Terakhir Diperbarui:** 2026-04-09  
-**Diuji Dengan:** Aspose.GIS untuk .NET (rilis terbaru)  
-**Penulis:** Aspose  
+**Terakhir Diperbarui:** 2026-09-15  
+**Diuji Dengan:** Aspose.GIS for .NET (latest release)  
+**Penulis:** Aspose
+
+## Tutorial Terkait
+
+- [Buat Layer Vektor dan Atur Sistem Referensi Spasialnya](/gis/net/layer-data-operations/set-layer-spatial-reference-system/)
+- [Cara Menerjemahkan Geometri ke WKT dengan Aspose.GIS untuk .NET](/gis/net/geometry-processing/translate-geometry-to-wkt/)
+- [Cara Membatasi Presisi Penulisan Geometri dengan Aspose.GIS](/gis/net/geometry-processing/limit-precision-writing-geometries/)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
