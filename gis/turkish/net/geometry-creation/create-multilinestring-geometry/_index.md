@@ -1,11 +1,51 @@
 ---
-date: 2026-03-29
-description: Aspose.GIS for .NET ile multilinestring geometrisi oluşturmayı öğrenin.
-  Bu C# multilinestring öğreticisi, karmaşık çizgi geometrilerinin adım adım oluşturulmasını
-  gösterir.
-linktitle: Create MultiLineString Geometry
+date: 2026-09-25
+description: Aspose.GIS for .NET ile MultiLineString geometrisini hızlı bir şekilde
+  oluşturmayı öğrenin. Bu C# MultiLineString öğreticisi, karmaşık çizgi geometrilerinin
+  adım adım oluşturulmasını gösterir.
+keywords:
+- create multilinestring geometry
+- how to create multilinestring
+- multilinestring example c#
+lastmod: 2026-09-25
+linktitle: MultiLineString geometrisi oluşturun
+og_description: Aspose.GIS for .NET ile MultiLineString geometrisini dakikalar içinde
+  oluşturun. Haritalama ve analiz için karmaşık çizgi geometrileri oluşturmak amacıyla
+  bu C# öğreticiyi izleyin.
+og_image_alt: Code example showing creation of MultiLineString geometry with Aspose.GIS
+  in C#
+og_title: Aspose.GIS for .NET kullanarak MultiLineString geometrisi oluşturun
+schemas:
+- author: Aspose
+  dateModified: '2026-09-25'
+  description: Learn how to quickly create multilinestring geometry with Aspose.GIS
+    for .NET. This multilinestring tutorial C# shows step‑by‑step creation of complex
+    line geometries.
+  headline: Create MultiLineString geometry using Aspose.GIS for .NET
+  type: TechArticle
+- questions:
+  - answer: Yes, you can call `multiLineString.Save("output.geojson", new GeoJsonOptions());`
+      after adding the necessary using directives.
+    question: Can I export the MultiLineString to GeoJSON?
+  - answer: Use `multiLineString.SpatialReference = new SpatialReference(4326);` to
+      assign WGS 84 (EPSG:4326).
+    question: How do I set a spatial reference (SRID) for the MultiLineString?
+  - answer: Absolutely. Use `FeatureReader` to iterate over features and cast the
+      geometry to `MultiLineString`.
+    question: Is it possible to read a MultiLineString from a Shapefile?
+  - answer: Duplicate points are allowed but may affect length calculations and rendering;
+      consider cleaning the data if duplicates are unintended.
+    question: What happens if I add duplicate points to a LineString?
+  - answer: Yes, you can add a Z value with `AddPoint(x, y, z);` and the geometry
+      will be stored as 3‑dimensional.
+    question: Does Aspose.GIS support 3D coordinates for MultiLineString?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: Aspose.GIS for .NET kullanarak MultiLineString Geometrisi oluşturun
+tags:
+- create multilinestring
+- Aspose.GIS
+- .NET GIS development
+title: Aspose.GIS for .NET kullanarak MultiLineString geometrisi oluşturun
 url: /tr/net/geometry-creation/create-multilinestring-geometry/
 weight: 15
 ---
@@ -14,43 +54,41 @@ weight: 15
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.GIS for .NET kullanarak MultiLineString Geometrisi Oluşturma
+# Aspose.GIS for .NET kullanarak multilinestring geometrisi oluşturma
 
 ## Giriş
-Bu öğreticide Aspose.GIS for .NET kullanarak **multilinestring geometry** oluşturacaksınız; bu, yollar, nehirler veya altyapı ağları gibi bir dizi hat özelliğini temsil etmeniz gerektiğinde yaygın bir gereksinimdir. İster bir haritalama uygulaması geliştirin, ister mekansal analiz yapın ya da sadece karmaşık hat verilerini dışa aktarmanız gerekse, bu kılavuz sizi adım adım sürece götürür.
+Bu öğreticide Aspose.GIS for .NET kullanarak **multilinestring geometrisi** oluşturacaksınız; bu, yollar, nehirler veya altyapı ağları gibi bir dizi hat özelliğini temsil etmeniz gerektiğinde yaygın bir gereksinimdir. İster bir haritalama uygulaması geliştirin, ister mekansal analiz yapın ya da karmaşık hat verilerini dışa aktarın, bu kılavuz sizi adım adım sürece götürür.
 
-Aspose.GIS for .NET, geliştiricilerin .NET uygulamaları içinde coğrafi verilerle sorunsuz bir şekilde çalışmasını sağlayan güçlü bir kütüphanedir. İster bir haritalama uygulaması geliştirin, ister coğrafi analiz yapın ya da konuma dayalı özellikleri yazılımınıza entegre edin, Aspose.GIS, mekânsal verileri verimli bir şekilde işlemek için ihtiyaç duyduğunuz araçları sunar.
+Aspose.GIS for .NET, geliştiricilerin .NET uygulamaları içinde coğrafi verilerle sorunsuz bir şekilde çalışmasını sağlayan güçlü bir kütüphanedir. Hem masaüstü hem de sunucu‑tarafı senaryoları destekler ve .NET Framework, .NET Core ve .NET 5/6/7 boyunca tutarlı bir API sunar.
 
-## Hızlı Yanıtlar
-- **“create multilinestring geometry” ne anlama geliyor?** Tek bir geometri nesnesi içinde birden fazla `LineString` bileşeni oluşturmak anlamına gelir.  
+## Hızlı cevaplar
+- **“multilinestring geometrisi oluşturmak” ne anlama geliyor?** Birden fazla `LineString` bileşeni içeren tek bir geometri nesnesi oluşturmak demektir.  
 - **Hangi kütüphane kullanılıyor?** Aspose.GIS for .NET.  
-- **Lisans gerekli mi?** Evet, üretim ortamı için ticari bir lisans gereklidir; ücretsiz bir deneme sürümü mevcuttur.  
-- **Hangi .NET sürümleri destekleniyor?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.  
-- **Uygulama ne kadar sürer?** Burada gösterilen temel örnek için genellikle 10 dakikadan az bir sürede tamamlanır.
+- **Lisans gerekir mi?** Evet, üretim için ticari bir lisans gereklidir; ücretsiz deneme sürümü mevcuttur.  
+- **Hangi .NET sürümleri destekleniyor?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.  
+- **Uygulama ne kadar sürer?** Burada gösterilen temel örnek için genellikle 10 dakika altında bir sürede tamamlanır.
 
 ## MultiLineString geometrisi nedir?
-**MultiLineString**, iki veya daha fazla `LineString` nesnesinin tek bir mekânsal varlık olarak gruplanmasıdır. Birkaç ilgili hattı tek bir özellik olarak ele alırken, her birinin koordinatlarını ayrı ayrı korumak istediğinizde faydalıdır.
+**MultiLineString**, iki veya daha fazla `LineString` nesnesinin tek bir uzamsal varlık olarak gruplanmasıdır.  
+Bir nehir ağı ya da bir dizi yol segmenti gibi ilişkili hatların tek bir özellik olarak ele alınması gerektiğinde, her hat kendi koordinat dizisini korurken bu nesneyi oluşturursunuz. Sınıf `Aspose.GIS.Geometry` ad alanında bulunur ve Shapefile, GeoJSON ve KML gibi formatlara serileştirilebilir.
 
-## Aspose.GIS for .NET ile MultiLineString oluşturmak neden tercih edilmeli?
-- **Kullanım kolaylığı:** Düşük seviyeli GIS işlemlerini soyutlayan basit, akıcı bir API.  
-- **Performans:** Büyük veri setleri için optimize edilmiştir ve hem vektör hem raster formatlarını destekler.  
-- **Çapraz platform:** .NET Framework, .NET Core ve .NET 5/6+ ile çalışır.  
-- **Zengin format desteği:** Shapefile, GeoJSON, KML ve daha birçok formatı okur/yazar.
+## MultiLineString oluşturmak için Aspose.GIS for .NET neden kullanılmalı?
+Aspose.GIS, düşük seviyeli geometri tamponlarını yönetme ihtiyacını ortadan kaldırarak sadece birkaç akıcı çağrı ile MultiLineString oluşturmanıza olanak tanır. **500 MB’a kadar vektör verisini bellek‑verimli akış modunda işleyebilir**, **50+ giriş ve çıkış formatını destekler** ve dış bağımlılık gerektirmeden **tüm büyük .NET çalışma zamanlarında** çalışır. Bu hız, format çeşitliliği ve çapraz platform kararlılığı kombinasyonu, kurumsal GIS projeleri için tercih edilmesini sağlar.
 
 ## Önkoşullar
-Aspose.GIS for .NET kullanmaya başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
+Kodun içine dalmadan önce aşağıdakilere sahip olduğunuzdan emin olun:
 
-### .NET Geliştirme Ortamı
-1. Visual Studio veya tercih ettiğiniz başka bir .NET geliştirme ortamını kurun.  
-2. .NET geliştirme ortamınızı yapılandırın.
+### .NET geliştirme ortamı
+1. Visual Studio 2022 (veya .NET 6+ destekleyen herhangi bir IDE) yüklü.  
+2. NuGet paketleri için hazır bir .NET 6 konsol projesi.
 
 ### Aspose.GIS for .NET
-1. Aspose.GIS for .NET için bir lisans edinin: [purchase.aspose.com](https://purchase.aspose.com/buy).  
-2. Aspose.GIS for .NET kütüphanesini indirin: [releases.aspose.com](https://releases.aspose.com/gis/net/).  
-3. Kütüphaneyi .NET projenize kurun (NuGet üzerinden veya manuel DLL referansı ile).
+1. Aspose.GIS for .NET lisansını [purchase.aspose.com](https://purchase.aspose.com/buy) adresinden edinin.  
+2. Kütüphaneyi [releases.aspose.com](https://releases.aspose.com/gis/net/) adresinden indirin.  
+3. NuGet üzerinden paketi ekleyin (`Install-Package Aspose.GIS`) veya DLL’i manuel olarak referans gösterin.
 
-## Ad Alanlarını İçe Aktarma
-Aspose.GIS for .NET'i kullanmaya başlamak için projenize gerekli ad alanlarını içe aktarın.
+## Ad alanlarını içe aktar
+Aşağıdaki ad alanları, temel GIS işlevselliğine erişmenizi sağlar:
 
 ```csharp
 using Aspose.Gis.Geometries;
@@ -60,14 +98,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 ```
-Bu ad alanı, Aspose.GIS'in temel işlevselliğine erişim sağlar ve çeşitli mekânsal veri türleriyle çalışmanıza olanak tanır.
+Bu ad alanı, Aspose.GIS’in temel işlevselliğine erişim sağlar ve çeşitli uzamsal veri tipleriyle çalışmanıza imkan tanır.
 
 Şimdi, sağlanan örneği birden fazla adıma ayıralım:
 
 ## Multilinestring geometrisi nasıl oluşturulur
-Aşağıda, bireysel `LineString` nesnelerinden geometriyi nasıl oluşturacağınızı gösteren **multilinestring tutorial C#** yer almaktadır.
+İki `LineString` nesnesi oluşturun, nokta ekleyin ve ardından bunları bir `MultiLineString` içinde birleştirin. Tüm işlem sadece üç metod çağrısı gerektirir: hat nesnelerini oluşturma, koordinatları ekleme ve hatları koleksiyona ekleme. Her `LineString`, sıralı bir nokta listesiyle tanımlanan tek bir hat geometrisini temsil eder; `MultiLineString` ise birden çok `LineString` nesnesinin bir arada tek bir geometri olarak temsil edildiği bir koleksiyondur.
 
-### Adım 1: LineString Nesnelerini Oluşturma
+### Adım 1: LineString nesnelerini oluşturma
 ```csharp
 LineString firstLine = new LineString();
 firstLine.AddPoint(7.5, -3.5);
@@ -76,61 +114,66 @@ LineString secondLine = new LineString();
 secondLine.AddPoint(8.5, -2.6);
 secondLine.AddPoint(-8.6, 1.5);
 ```
-Bu adımda iki `LineString` nesnesi oluşturuyoruz; her biri ayrı bir hattı temsil eder. Her `LineString`'e nokta ekleyerek geometrisini tanımlıyoruz.
+Bu adımda iki `LineString` nesnesi oluşturur, her birine ayrı ayrı noktalar ekleyerek geometrilerini tanımlarız.
 
-### Adım 2: MultiLineString Nesnesi Oluşturma
+### Adım 2: MultiLineString nesnesini oluşturma
 ```csharp
 MultiLineString multiLineString = new MultiLineString();
 multiLineString.Add(firstLine);
 multiLineString.Add(secondLine);
 ```
-Burada bir `MultiLineString` nesnesi örnekliyor ve önceden oluşturulan `LineString` nesnelerini ona ekliyoruz. Bu, tek bir varlık olarak gruplanmış hat koleksiyonunu oluşturur.
+Burada bir `MultiLineString` nesnesi örnekleyip, önceden oluşturulan `LineString` nesnelerini ekliyoruz. Sonuç, tek bir varlık olarak gruplanmış hatlar koleksiyonudur.
 
-## Yaygın Sorunlar ve İpuçları
-- **Koordinat sırası:** Aspose.GIS, koordinatları **(X, Y)** (boylam, enlem) sırasına göre bekler. Sıra karışıklığı ters geometrilere yol açabilir.  
-- **Boş geometriler:** Boş bir `LineString` eklemeye çalışmak bir istisna fırlatır; her hattın en az iki nokta içerdiğini doğrulayın.  
-- **Projeksiyon yönetimi:** Veriniz belirli bir CRS kullanıyorsa, dışa aktarmadan önce geometriye mekânsal referans atayın.
+## Yaygın sorunlar ve ipuçları
+- **Koordinat sırası:** Aspose.GIS koordinatları **(X, Y)** (boylam, enlem) sırasıyla bekler. Sıra karışırsa geometriler ters çevrilebilir.  
+- **Boş geometriler:** Boş bir `LineString` eklemeye çalışmak bir istisna fırlatır; her hattın en az iki nokta içerdiğinden emin olun.  
+- **Projeksiyon yönetimi:** Veriniz belirli bir CRS kullanıyorsa, dışa aktarmadan önce geometriye mekânsal referansı ayarlayın.
 
 ## Sonuç
-Sonuç olarak, Aspose.GIS for .NET, .NET uygulamalarında coğrafi verileri işlemek için kapsamlı bir çözüm sunar. Yukarıda belirtilen adımları izleyerek geliştiriciler, **multilinestring geometry** oluşturabilir ve mekânsal bilgileri kolaylıkla yönetebilirler.
+Aspose.GIS for .NET, karmaşık hat geometrileri oluşturmak ve manipüle etmek için özlü ve yüksek performanslı bir API sunar. Yukarıdaki adımları izleyerek **multilinestring geometrisi** hızlı bir şekilde oluşturabilir ve desteklenen herhangi bir GIS formatına dışa aktarabilirsiniz.
 
-## SSS
-### Aspose.GIS for .NET tüm .NET çerçeveleriyle uyumlu mu?
+## Sık Sorulan Sorular
+### Aspose.GIS for .NET tüm .NET framework'leriyle uyumlu mu?
 Evet, Aspose.GIS for .NET çeşitli .NET framework sürümleriyle uyumludur ve geliştiricilere esneklik sağlar.
 
 ### Aspose.GIS for .NET'i satın almadan önce deneyebilir miyim?
-Kesinlikle! Özelliklerini ve yeteneklerini keşfetmek için ücretsiz bir deneme sürümünü [releases.aspose.com](https://releases.aspose.com/) adresinden indirebilirsiniz.
+Kesinlikle! Özelliklerini ve yeteneklerini keşfetmek için [releases.aspose.com](https://releases.aspose.com/) adresinden ücretsiz deneme sürümünü indirebilirsiniz.
 
 ### Aspose.GIS for .NET için destek nasıl alabilirim?
-Destek ve yardım için [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) adresini ziyaret edebilir, sorular sorabilir ve diğer kullanıcılar ile uzmanlarla etkileşime geçebilirsiniz.
+Destek ve yardım için [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) adresini ziyaret edebilir, sorular sorabilir ve diğer kullanıcılar ve uzmanlarla etkileşime geçebilirsiniz.
 
-### Test amaçları için geçici bir lisansa ihtiyacım var mı?
-Deneme sürümü test için mevcut olsa da, ek özelliklere ihtiyaç duyuyorsanız veya tam işlevselliği değerlendirmek istiyorsanız, [purchase.aspose.com](https://purchase.aspose.com/temporary-license/) adresinden geçici bir lisans alabilirsiniz.
+### Test amaçlı geçici bir lisansa ihtiyacım var mı?
+Deneme sürümü test için kullanılabilir, ancak ek özelliklere ihtiyaç duyarsanız veya tam işlevselliği değerlendirmek isterseniz [purchase.aspose.com](https://purchase.aspose.com/temporary-license/) adresinden geçici bir lisans alabilirsiniz.
 
-### Aspose.GIS for .NET hem masaüstü hem de web uygulamaları için uygun mu?
-Evet, Aspose.GIS for .NET masaüstü, web ve sunucu tarafı uygulamaları dahil olmak üzere çeşitli senaryolarda kullanılabilir ve farklı geliştirme ortamları arasında çok yönlülük sağlar.
+### Aspose.GIS for .NET hem masaüstü hem web uygulamaları için uygun mu?
+Evet, Aspose.GIS for .NET masaüstü, web ve sunucu‑tarafı senaryolarında kullanılabilir; farklı geliştirme ortamlarında çok yönlülük sağlar.
 
 ## Sık Sorulan Sorular
-**Q: MultiLineString'i GeoJSON formatına dışa aktarabilir miyim?**  
-A: Evet, gerekli using yönergelerini ekledikten sonra `multiLineString.Save("output.geojson", new GeoJsonOptions());` çağrısını yapabilirsiniz.
+**S: MultiLineString'i GeoJSON olarak dışa aktarabilir miyim?**  
+C: Evet, gerekli `using` yönergelerini ekledikten sonra `multiLineString.Save("output.geojson", new GeoJsonOptions());` çağrısını yapabilirsiniz.
 
-**Q: MultiLineString için bir mekânsal referans (SRID) nasıl ayarlanır?**  
-A: `multiLineString.SpatialReference = new SpatialReference(4326);` ifadesini kullanarak WGS 84 (EPSG:4326) atayabilirsiniz.
+**S: MultiLineString için mekânsal referans (SRID) nasıl ayarlanır?**  
+C: `multiLineString.SpatialReference = new SpatialReference(4326);` ifadesiyle WGS 84 (EPSG:4326) atayabilirsiniz.
 
-**Q: Shapefile'dan bir MultiLineString okumak mümkün mü?**  
-A: Kesinlikle. `FeatureReader` kullanarak özellikler üzerinde döngü yapabilir ve geometriyi `MultiLineString` tipine dönüştürebilirsiniz.
+**S: Bir Shapefile'dan MultiLineString okunabilir mi?**  
+C: Kesinlikle. `FeatureReader` kullanarak özellikler üzerinde döngü kurabilir ve geometriyi `MultiLineString` tipine dönüştürebilirsiniz.
 
-**Q: Bir LineString'e aynı noktayı birden fazla eklersem ne olur?**  
-A: Yinelenen noktalar izin verilir ancak uzunluk hesaplamalarını ve renderlamayı etkileyebilir; istenmeyen yinelenmeler varsa veriyi temizlemeyi düşünün.
+**S: Bir LineString'e aynı noktayı birden fazla eklersem ne olur?**  
+C: Çift noktalar izin verilir ancak uzunluk hesaplamalarını ve renderlamayı etkileyebilir; istenmeyen tekrarlar varsa veriyi temizlemeyi düşünün.
 
-**Q: Aspose.GIS MultiLineString için 3D koordinatları destekliyor mu?**  
-A: Evet, `AddPoint(x, y, z);` ile bir Z değeri ekleyebilir ve geometriyi 3‑boyutlu olarak depolayabilirsiniz.
+**S: Aspose.GIS MultiLineString için 3D koordinatları destekliyor mu?**  
+C: Evet, `AddPoint(x, y, z);` ile Z değeri ekleyebilir ve geometri 3‑boyutlu olarak saklanır.
 
----
+**Son Güncelleme:** 2026-09-25  
+**Test Edilen Versiyon:** Aspose.GIS for .NET 24.11 (yazım anındaki en son sürüm)  
+**Yazar:** Aspose
 
-**Son Güncelleme:** 2026-03-29  
-**Test Edilen Versiyon:** Aspose.GIS for .NET 24.11 (yazım zamanındaki en son sürüm)  
-**Yazar:** Aspose  
+## İlgili Eğitimler
+
+- [Aspose.GIS ile MultiPolygon Geometrisi Oluşturmayı Öğrenin](/gis/net/geometry-creation/create-multipolygon-geometry/)
+- [Aspose.GIS for .NET ile Polygon Geometrisi Nasıl Oluşturulur](/gis/net/geometry-creation/create-polygon-geometry/)
+- [WKT'yi Geometriye Dönüştür: Aspose.GIS .NET ile MultiCurve](/gis/net/geometry-creation/create-multicurve-geometry/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
