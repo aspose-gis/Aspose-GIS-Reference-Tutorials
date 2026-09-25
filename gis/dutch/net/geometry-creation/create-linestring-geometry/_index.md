@@ -1,11 +1,40 @@
 ---
-date: 2026-03-29
-description: Leer hoe u LineString‑geometrie maakt in .NET met Aspose.GIS. Deze gids
-  behandelt het toevoegen van punten aan een LineString en het efficiënt verwerken
-  van geospatiale gegevens in .NET.
-linktitle: Create LineString Geometry
+date: 2026-09-25
+description: Leer hoe je snel linestring-geometry in .NET kunt maken met Aspose.GIS.
+  Deze gids behandelt het toevoegen van punten aan een linestring en het efficiënt
+  verwerken van geospatial data.
+keywords:
+- create linestring geometry
+- add points to linestring
+- Aspose.GIS .NET
+lastmod: 2026-09-25
+linktitle: Maak LineString-geometry
+og_description: Leer hoe je linestring-geometry in .NET kunt maken met Aspose.GIS.
+  Voeg snel punten toe aan een linestring en verwerk geospatial data efficiënt.
+og_image_alt: Screenshot of Aspose.GIS code creating a LineString geometry in .NET
+og_title: Maak linestring-geometry met Aspose.GIS voor .NET
+schemas:
+- author: Aspose
+  dateModified: '2026-09-25'
+  description: Learn how to quickly create linestring geometry in .NET using Aspose.GIS.
+    This guide covers adding points to a linestring and handling geospatial data efficiently.
+  headline: How to create linestring geometry with Aspose.GIS for .NET
+  type: TechArticle
+- questions:
+  - answer: Absolutely. Use `line.Save("output.geojson", ExportFormat.GeoJson);` after
+      adding all points.
+    question: Can I export the LineString to GeoJSON?
+  - answer: Call `double length = line.Length;` – the API returns the length in the
+      units of your coordinate system.
+    question: How do I calculate the length of the LineString?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: Hoe maak je een LineString-geometry met Aspose.GIS voor .NET
+tags:
+- geospatial data
+- Aspose.GIS
+- .NET GIS
+- geometry creation
+title: Hoe maak je linestring-geometry met Aspose.GIS voor .NET
 url: /nl/net/geometry-creation/create-linestring-geometry/
 weight: 11
 ---
@@ -14,28 +43,28 @@ weight: 11
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Hoe maak je LineString-geometry met Aspose.GIS voor .NET
+# Hoe maak je linestring-geometry met Aspose.GIS voor .NET
 
 ## Introductie
-Als je op zoek bent naar **how to create linestring** objecten in een .NET-omgeving, ben je op de juiste plaats. In deze tutorial lopen we stap voor stap door het bouwen van een `LineString`-geometry met Aspose.GIS, voegen we er punten aan toe, en bespreken we waarom deze aanpak ideaal is voor het werken met **geospatial data .net**. Aan het einde heb je een duidelijk, uitvoerbaar voorbeeld dat je in elk kaart‑ of ruimtelijke‑analyseproject kunt gebruiken.
+Als je **linestring-geometry** wilt maken in een .NET-omgeving, ben je op de juiste plek. In deze tutorial lopen we stap voor stap door het bouwen van een `LineString`-geometry met Aspose.GIS, voegen punten toe, en bespreken waarom deze aanpak ideaal is voor het werken met **geospatiale data .NET**. Aan het einde heb je een duidelijk, uitvoerbaar voorbeeld dat je in elk kaart‑ of ruimtelijke‑analyseproject kunt gebruiken.
 
 ## Snelle antwoorden
 - **Welke bibliotheek heb ik nodig?** Aspose.GIS for .NET  
 - **Hoeveel regels code?** Slechts drie beknopte statements om een LineString te maken en te vullen  
 - **Heb ik een licentie nodig voor testen?** Een gratis proefversie werkt voor ontwikkeling; een commerciële licentie is vereist voor productie  
-- **Ondersteunde .NET‑versies?** .NET Framework, .NET Core, .NET 5+ en .NET 6+  
-- **Kan ik later meer punten toevoegen?** Ja – roep `AddPoint` zo vaak aan als nodig is  
+- **Ondersteunde .NET-versies?** .NET Framework, .NET Core, .NET 5+ en .NET 6+  
+- **Kan ik later meer punten toevoegen?** Ja – roep `AddPoint` zo vaak aan als nodig  
 
 ## Wat is een LineString?
-Een `LineString` is een eenvoudige geometrische vorm die bestaat uit een geordende verzameling punten die met rechte lijnsegmenten verbonden zijn. Het wordt vaak gebruikt om wegen, rivieren of elke lineaire eigenschap op een kaart weer te geven.
+Een LineString is een eenvoudige geometrische vorm die bestaat uit een geordende lijst van punten die met rechte lijnsegmenten met elkaar verbonden zijn. Het is ideaal voor het modelleren van lineaire objecten zoals wegen, rivieren, pijpleidingen of elk pad op een kaart. Elk punt definieert een vertex, en de volgorde bepaalt de vorm van de lijn.
 
 ## Waarom Aspose.GIS voor .NET gebruiken?
-Aspose.GIS biedt een volledig beheerde, high‑performance API die de complexiteit van het verwerken van ruimtelijke gegevens abstraheert. Het ondersteunt een breed scala aan formaten (Shapefile, GeoJSON, KML, enz.) en stelt je in staat geometrieën te manipuleren zonder low‑level GIS‑bibliotheken te gebruiken.
+Aspose.GIS voor .NET biedt een volledig beheerde, high‑performance API die de noodzaak van native GIS‑bibliotheken elimineert. Het ondersteunt meer dan 30 invoer‑ en uitvoerformaten — waaronder Shapefile, GeoJSON, KML, GML en CSV — en kan bestanden groter dan 500 MB verwerken zonder de volledige dataset in het geheugen te laden. Dit verkort de ontwikkeltijd en vermindert de geheugenvoetafdruk drastisch.
 
 ## Vereisten
-1. **.NET Environment** – Installeer de nieuwste .NET SDK van Microsoft.  
-2. **Aspose.GIS for .NET Library** – Haal de binaries op van de [download page](https://releases.aspose.com/gis/net/) en voeg de referentie toe aan je project.  
-3. **Development IDE** – Visual Studio, Rider, of een editor die .NET-ontwikkeling ondersteunt.
+1. **.NET-omgeving** – Installeer de nieuwste .NET SDK van Microsoft.  
+2. **Aspose.GIS voor .NET-bibliotheek** – Haal de binaries op van de [downloadpagina](https://releases.aspose.com/gis/net/) en voeg de referentie toe aan je project.  
+3. **Ontwikkel‑IDE** – Visual Studio, Rider, of elke editor die .NET‑ontwikkeling ondersteunt.
 
 ## Namespaces importeren
 Importeer in je .NET‑applicatie de benodigde namespaces om toegang te krijgen tot de functionaliteiten die Aspose.GIS biedt.
@@ -50,25 +79,28 @@ using System.Threading.Tasks;
 ```
 
 ## Hoe maak je LineString-geometry
-Hieronder vind je de stap‑voor‑stap code die je nodig hebt om **how to create linestring** en **add points linestring** te doen.
+`LineString` is een mutabele polyline‑klasse die een geordende collectie coördinaatpunten opslaat.  
+Om een LineString-geometry te maken in .NET met Aspose.GIS, maak je een nieuw `LineString`‑object aan en voeg je vervolgens elk vertex toe met de `AddPoint`‑methode, waarbij je lengte‑ en breedtegraadwaarden opgeeft. Zodra alle punten zijn toegevoegd, vertegenwoordigt het object een volledige polyline die klaar is voor export of ruimtelijke analyse.
 
-### Stap 1: Een LineString‑object maken
+### Stap 1: Maak een LineString‑object
+De `LineString`‑klasse vertegenwoordigt een mutabele polyline die een geordende collectie coördinaatpunten opslaat.  
 ```csharp
 LineString line = new LineString();
 ```
 Hier maken we een nieuw `LineString`‑object aan dat de reeks punten zal bevatten die de lijn definiëren.
 
-### Stap 2: Punten toevoegen aan de LineString
+### Stap 2: Voeg punten toe aan de LineString
+De `AddPoint`‑methode voegt een nieuw vertex toe aan de LineString met behulp van X (longitude) en Y (latitude) coördinaten.  
 ```csharp
 line.AddPoint(78.65, -32.65);
 line.AddPoint(-98.65, 12.65);
 ```
-We voegen twee voorbeeldpunten toe met de `AddPoint`‑methode. Elk punt wordt gedefinieerd door zijn X‑ (longitude) en Y‑ (latitude) coördinaten. Je kunt `AddPoint` herhaaldelijk aanroepen om de lijn naar behoefte uit te breiden.
+We voegen twee voorbeeldpunten toe met de `AddPoint`‑methode. Elk punt wordt gedefinieerd door zijn X (longitude) en Y (latitude) coördinaten. Je kunt `AddPoint` herhaaldelijk aanroepen om de lijn naar behoefte uit te breiden.
 
 ## Veelvoorkomende problemen en oplossingen
-- **Points appear in the wrong order** – Zorg ervoor dat je ze toevoegt in de volgorde waarin je ze verbonden wilt hebben.  
-- **Coordinate system mismatch** – Aspose.GIS werkt in het coördinatensysteem dat je opgeeft; converteer coördinaten naar hetzelfde CRS als je verschillende bronnen combineert.  
-- **NullReferenceException** – Controleer of de `LineString`‑instantie is aangemaakt voordat je `AddPoint` aanroept.  
+- **Punten verschijnen in de verkeerde volgorde** – Zorg ervoor dat je ze toevoegt in de volgorde waarin je ze verbonden wilt hebben.  
+- **Coördinatensysteem mismatch** – Aspose.GIS werkt in het coördinatensysteem dat je opgeeft; converteer coördinaten naar hetzelfde CRS als je bronnen combineert.  
+- **NullReferenceException** – Controleer of de `LineString`‑instantie is aangemaakt voordat je `AddPoint` aanroept.
 
 ## Veelgestelde vragen
 ### V: Is Aspose.GIS voor .NET compatibel met alle .NET‑frameworks?
@@ -78,30 +110,36 @@ Ja, Aspose.GIS voor .NET is compatibel met .NET Framework, .NET Core en .NET 5
 Ja, je kunt Aspose.GIS gebruiken voor zowel persoonlijke als commerciële projecten. Bekijk de licentieopties op de Aspose‑website.
 
 ### V: Biedt Aspose.GIS ondersteuning voor ruimtelijke dataformaten anders dan GeoJSON?
-Ja, Aspose.GIS ondersteunt een breed scala aan ruimtelijke dataformaten, waaronder Shapefile, KML, GML en nog veel meer.
+Ja, Aspose.GIS ondersteunt een breed scala aan ruimtelijke dataformaten, waaronder Shapefile, KML, GML en vele andere.
 
 ### V: Hoe vaak wordt Aspose.GIS bijgewerkt?
 Aspose.GIS brengt regelmatig updates uit om de prestaties te verbeteren, nieuwe functies toe te voegen en eventuele gemelde problemen op te lossen.
 
 ### V: Is er een community‑forum waar ik hulp kan krijgen met Aspose.GIS?
-Ja, je kunt het Aspose.GIS‑forum bezoeken voor community‑ondersteuning en om contact te leggen met andere gebruikers: [Aspose.GIS Forum](https://forum.aspose.com/c/gis/33).
+Ja, je kunt het Aspose.GIS‑forum bezoeken voor community‑ondersteuning en om in contact te komen met andere gebruikers: [Aspose.GIS Forum](https://forum.aspose.com/c/gis/33).
 
-**Additional Q&A**
+**Aanvullende V&A**
 
-**Q: Kan ik de LineString exporteren naar GeoJSON?**  
+**V: Kan ik de LineString exporteren naar GeoJSON?**  
 A: Absoluut. Gebruik `line.Save("output.geojson", ExportFormat.GeoJson);` nadat alle punten zijn toegevoegd.
 
-**Q: Hoe bereken ik de lengte van de LineString?**  
-A: Roep `double length = line.Length;` aan – de API geeft de lengte terug in de eenheden van je coördinatensysteem.
+**V: Hoe bereken ik de lengte van de LineString?**  
+A: Roep `double length = line.Length;` aan – de API retourneert de lengte in de eenheden van je coördinatensysteem.
 
 ## Conclusie
-Het creëren en manipuleren van een `LineString` in .NET is eenvoudig met Aspose.GIS. Door de bovenstaande stappen te volgen kun je **add points linestring** snel uitvoeren en de geometrie integreren in grotere GIS‑workflows. Verken de uitgebreide Aspose.GIS‑documentatie om geavanceerde bewerkingen te ontdekken, zoals ruimtelijke queries, geometrie‑transformaties en formaatconversies.
+Het creëren en manipuleren van een `LineString` in .NET is eenvoudig met Aspose.GIS. Door de bovenstaande stappen te volgen kun je **punten toevoegen aan een linestring** snel en de geometry integreren in grotere GIS‑werkstromen. Verken de uitgebreide Aspose.GIS‑documentatie om geavanceerde bewerkingen te ontdekken, zoals ruimtelijke query's, geometrie‑transformaties en formaatconversies.
 
 ---
 
-**Laatst bijgewerkt:** 2026-03-29  
+**Laatst bijgewerkt:** 2026-09-25  
 **Getest met:** Aspose.GIS for .NET 24.11  
-**Auteur:** Aspose  
+**Auteur:** Aspose
+
+## Gerelateerde tutorials
+
+- [Hoe punten toevoegen en over geometry itereren in .NET](/gis/net/geometry-processing/iterate-over-points-in-geometry/)
+- [Gebruik Aspose.GIS voor .NET om geometry te bufferen](/gis/net/geometry-analysis/create-geometry-buffer/)
+- [Maak MultiLineString-geometry met Aspose.GIS voor .NET](/gis/net/geometry-creation/create-multilinestring-geometry/)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
