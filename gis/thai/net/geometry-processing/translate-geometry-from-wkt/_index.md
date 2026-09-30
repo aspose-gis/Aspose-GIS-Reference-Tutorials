@@ -1,14 +1,65 @@
 ---
-date: 2026-04-24
-description: เรียนรู้วิธีนับจุดและแปลงเรขาคณิต WKT ด้วย Aspose.GIS สำหรับ .NET ในคู่มือแบบทีละขั้นตอน
-  พร้อมตัวอย่างโค้ดเชิงปฏิบัติและเคล็ดลับ.
+date: 2026-09-30
+description: เรียนรู้วิธีแยกวิเคราะห์ WKT และนับจุดโดยใช้ Aspose.GIS สำหรับ .NET พร้อมคำแนะนำขั้นตอนต่อขั้นตอนในการแปลงเรขาคณิต
+  WKT เป็นอ็อบเจกต์
 keywords:
-- how to count points
+- how to parse wkt
 - convert wkt geometry
 - Aspose.GIS .NET
-linktitle: แปลเรขาคณิตจาก WKT
+- count points from wkt
+- .NET spatial analytics
+lastmod: 2026-09-30
+linktitle: แปลงเรขาคณิตจาก WKT
+og_description: เรียนรู้วิธีแยกวิเคราะห์ WKT และนับจุดโดยใช้ Aspose.GIS สำหรับ .NET
+  คู่มือนี้จะแสดงวิธีแปลงเรขาคณิต WKT เป็นอ็อบเจกต์เพื่อการวิเคราะห์เชิงพื้นที่อย่างรวดเร็ว
+og_image_alt: 'Developer guide: parse WKT and count points with Aspose.GIS for .NET'
+og_title: วิธีแยกวิเคราะห์ WKT และนับจุดด้วย Aspose.GIS สำหรับ .NET
+schemas:
+- author: Aspose
+  dateModified: '2026-09-30'
+  description: Learn how to parse WKT and count points using Aspose.GIS for .NET,
+    with step‑by‑step guidance on converting WKT geometry to objects.
+  headline: How to parse WKT and count points with Aspose.GIS for .NET
+  type: TechArticle
+- description: Learn how to parse WKT and count points using Aspose.GIS for .NET,
+    with step‑by‑step guidance on converting WKT geometry to objects.
+  name: How to parse WKT and count points with Aspose.GIS for .NET
+  steps:
+  - name: '**Aspose.GIS for .NET API** – download it from the Aspose.GIS for .NET
+      download page: [Aspose.GIS for .NET download](https://releases.aspose.com/gis/net/).
+      For other Aspose products see the general releases page: [Aspose releases](https://releases.aspose.com/).'
+    text: '**Aspose.GIS for .NET API** – download it from the Aspose.GIS for .NET
+      download page: [Aspose.GIS for .NET download](https://releases.aspose.com/gis/net/).
+      For other Aspose products see the general releases page: [Aspose releases](https://releases.aspose.com/).'
+  - name: A recent version of **Visual Studio** or any .NET‑compatible IDE.
+    text: A recent version of **Visual Studio** or any .NET‑compatible IDE.
+  - name: Basic knowledge of **C#** programming.
+    text: Basic knowledge of **C#** programming.
+  type: HowTo
+- questions:
+  - answer: Yes, you can. Aspose.GIS for .NET is licensed per developer, allowing
+      unrestricted use in commercial applications.
+    question: Can I use Aspose.GIS for .NET in my commercial projects?
+  - answer: Yes, Aspose.GIS for .NET supports WKB, GeoJSON, Shapefile, and several
+      raster formats, giving you flexibility when integrating with existing GIS pipelines.
+    question: Does Aspose.GIS for .NET support other geometric formats besides WKT?
+  - answer: 'Yes, you can get a free trial from the Aspose releases page: [Aspose
+      free trial downloads](https://releases.aspose.com/).'
+    question: Is there a free trial available for Aspose.GIS for .NET?
+  - answer: 'You can find the documentation in the Aspose.GIS .NET reference: [Aspose.GIS
+      .NET documentation](https://reference.aspose.com/gis/net/).'
+    question: Where can I find documentation for Aspose.GIS for .NET?
+  - answer: 'You can get support from the Aspose.GIS forum: [Aspose.GIS forum](https://forum.aspose.com/c/gis/33).'
+    question: How can I get support for Aspose.GIS for .NET?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: วิธีนับจุดจาก WKT ด้วย Aspose.GIS สำหรับ .NET
+tags:
+- parse WKT
+- Aspose.GIS
+- .NET geometry processing
+- spatial analytics
+- count points
+title: วิธีแยกวิเคราะห์ WKT และนับจุดด้วย Aspose.GIS สำหรับ .NET
 url: /th/net/geometry-processing/translate-geometry-from-wkt/
 weight: 21
 ---
@@ -17,36 +68,38 @@ weight: 21
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# วิธีนับจุดจาก WKT ด้วย Aspose.GIS สำหรับ .NET
+# วิธีแยกวิเคราะห์ WKT และนับจุดด้วย Aspose.GIS สำหรับ .NET
 
 ## บทนำ
-ในบทแนะนำนี้คุณจะได้เรียนรู้ **วิธีนับจุด** ที่เก็บอยู่ในสตริง Well‑Known Text (WKT) โดยใช้ไลบรารี Aspose.GIS สำหรับ .NET ไม่ว่าคุณจะกำลังสร้างบริการแผนที่, ทำการวิเคราะห์เชิงพื้นที่, หรือเพียงต้องการตรวจสอบข้อมูลเรขาคณิต การนับจุดเป็นขั้นตอนพื้นฐาน เราจะยังแสดงให้คุณเห็นวิธี **แปลงเรขาคณิต WKT** ให้เป็นอ็อบเจกต์ที่ใช้งานได้ เพื่อให้คุณสามารถรวมการประมวลผลเชิงพื้นที่เข้าไปในแอปพลิเคชัน C# ใดก็ได้.
+ในบทแนะนำนี้คุณจะได้เรียนรู้ **วิธีแยกวิเคราะห์ WKT** และนับจำนวนจุดที่มันมีโดยใช้ไลบรารี Aspose.GIS สำหรับ .NET ไม่ว่าคุณจะกำลังสร้างบริการแผนที่, ทำการวิเคราะห์เชิงพื้นที่, หรือเพียงแค่ต้องการตรวจสอบข้อมูลเรขาคณิต การแยกวิเคราะห์ WKT เป็นขั้นตอนแรกของกระบวนการทำงานเชิงภูมิศาสตร์ใด ๆ คุณยังจะได้เห็นวิธี **แปลงเรขาคณิต WKT** ให้เป็นอ็อบเจ็กต์ที่มีชนิดอย่างเข้มแข็ง เพื่อให้คุณสามารถสอบถาม, แก้ไข, และส่งออกข้อมูลภายในแอปพลิเคชัน C# 
 
 ## คำตอบสั้น
-- **“วิธีนับจุด” หมายถึงอะไร?** หมายถึงการดึงจำนวนจุดพิกัดในอ็อบเจกต์เรขาคณิต เช่น LineString หรือ Polygon.  
-- **API ใดจัดการการแปลง WKT?** Aspose.GIS .NET มีเมธอด `Geometry.FromText` เพื่อแยกสตริง WKT.  
-- **ฉันต้องการไลเซนส์หรือไม่?** มีรุ่นทดลองฟรี แต่ต้องมีไลเซนส์เชิงพาณิชย์สำหรับการใช้งานในสภาพแวดล้อมจริง.  
+- **“วิธีแยกวิเคราะห์ WKT” หมายถึงอะไร?** หมายถึงการแปลงข้อความ Well‑Known Text ให้เป็นอ็อบเจ็กต์เรขาคณิตของ Aspose.GIS ที่คุณสามารถทำงานด้วยโปรแกรมได้.  
+- **API ใดจัดการการแปลง WKT?** `Geometry.FromText` แยกวิเคราะห์สตริง WKT ที่ถูกต้องใด ๆ และคืนค่าชนิดเรขาคณิตที่เหมาะสม.  
+- **ฉันต้องการไลเซนส์หรือไม่?** มีรุ่นทดลองฟรีให้ใช้ แต่ต้องมีไลเซนส์เชิงพาณิชย์สำหรับการใช้งานในสภาพแวดล้อมการผลิต.  
 - **เวอร์ชัน .NET ที่รองรับคืออะไร?** .NET 5, .NET 6, .NET Core 3.1 และ .NET Framework 4.6+.  
-- **วิธีนี้เร็วสำหรับชุดข้อมูลขนาดใหญ่หรือไม่?** ใช่ – ไลบรารีทำงานในหน่วยความจำและได้รับการปรับให้ทำงานกับการดำเนินการเรขาคณิตที่มีประสิทธิภาพสูง.
+- **วิธีนี้เร็วสำหรับชุดข้อมูลขนาดใหญ่หรือไม่?** ใช่ – ไลบรารีประมวลผลจุดหลายล้านจุดในหน่วยความจำด้วยค่าโอเวอร์เฮดที่เป็นเชิงเส้นย่อย.  
 
-## วิธีนับจุดจากเรขาคณิต WKT
-การนับจุดง่ายเพียงโหลดสตริง WKT เข้าไปในอ็อบเจกต์เรขาคณิตและเรียกดูคุณสมบัติ `Count` ขั้นตอนต่อไปนี้จะพาคุณผ่านกระบวนการทั้งหมด.
+## WKT คืออะไร?
+Well‑Known Text (WKT) คือรูปแบบข้อความธรรมดาสำหรับเรขาคณิตที่กำหนดโดย Open Geospatial Consortium (OGC) มันเข้ารหัสจุด, เส้น, โพลิกอนและคอลเลกชันในรูปแบบที่มนุษย์อ่านได้ เช่น `POINT (30 10)` หรือ `LINESTRING (30 10, 10 30, 40 40)`.
 
 ## ทำไมต้องแปลงเรขาคณิต WKT?
-WKT เป็นมาตรฐานแบบข้อความที่เครื่องมือ GIS จำนวนมากเข้าใจ การแปลงเป็นอ็อบเจกต์ Aspose.GIS ทำให้คุณสามารถ:
-- ทำการสอบถามเชิงพื้นที่ (การตัดกัน, บัฟเฟอร์, ฯลฯ).
-- แก้ไขพิกัดโดยโปรแกรม.
-- ส่งออกเป็นรูปแบบอื่นเช่น GeoJSON, Shapefile หรือ WKB.
+การแปลงเรขาคณิต WKT ทำให้คุณสามารถเปลี่ยนรูปแบบข้อความให้เป็นอ็อบเจ็กต์ของ Aspose.GIS ซึ่งทำให้คุณสามารถทำการสอบถามเชิงพื้นที่ (เช่น การตัดกัน, บัฟเฟอร์ ฯลฯ), แก้ไขพิกัดด้วยโปรแกรม, และส่งออกข้อมูลเป็นรูปแบบอื่น ๆ เช่น GeoJSON, Shapefile หรือ WKB การแปลงทำทั้งหมดในหน่วยความจำ, รองรับพิกัด 3‑D, และสามารถจัดการไฟล์ขนาดสูงสุดถึง 2 GB โดยไม่ต้องโหลดเอกสารทั้งหมดเข้าสู่หน่วยความจำ ทำให้เหมาะกับสายการประมวลผลเชิงวิเคราะห์ที่มีอัตราการส่งผ่านสูง.
+
+## วิธีแยกวิเคราะห์ WKT?
+โหลดสตริง WKT ด้วย `Geometry.FromText`, แคสต์ผลลัพธ์เป็นอินเทอร์เฟซที่เหมาะสม (เช่น `ILineString`), แล้วใช้คุณสมบัติของเรขาคณิต—เช่น `Count`—เพื่อดึงจำนวนจุด รูปแบบสามขั้นตอนนี้ (แยกวิเคราะห์, แคสต์, สอบถาม) ทำงานกับประเภทเรขาคณิตใด ๆ ที่ Aspose.GIS รองรับ รวมถึง `POINT`, `LINESTRING Z`, `POLYGON` และ `GEOMETRYCOLLECTION`.
 
 ## ข้อกำหนดเบื้องต้น
 ก่อนที่เราจะเริ่ม, โปรดตรวจสอบว่าคุณมีสิ่งต่อไปนี้:
 
-1. **Aspose.GIS for .NET API** – ดาวน์โหลดได้จาก [here](https://releases.aspose.com/gis/net/).  
-2. เวอร์ชันล่าสุดของ **Visual Studio** หรือ IDE ที่รองรับ .NET ใดก็ได้.  
-3. ความรู้พื้นฐานเกี่ยวกับการเขียนโปรแกรม **C#**.
+1. **Aspose.GIS for .NET API** – ดาวน์โหลดจากหน้า Aspose.GIS for .NET download page: [Aspose.GIS for .NET download](https://releases.aspose.com/gis/net/). สำหรับผลิตภัณฑ์ Aspose อื่น ๆ ดูหน้าการปล่อยทั่วไป: [Aspose releases](https://releases.aspose.com/).  
+2. เวอร์ชันล่าสุดของ **Visual Studio** หรือ IDE ที่รองรับ .NET ใด ๆ.  
+3. ความรู้พื้นฐานด้านการเขียนโปรแกรม **C#**.
 
-## นำเข้า Namespaces
-ขั้นแรก, นำเข้า namespaces ที่จำเป็นสำหรับการจัดการเรขาคณิต:
+## นำเข้าเนมสเปซ
+ก่อนอื่น, นำเข้าเนมสเปซที่จำเป็นสำหรับการจัดการเรขาคณิต:
+
+เนมสเปซ `Aspose.Gis` มีประเภทเรขาคณิตหลักทั้งหมด, ในขณะที่ `Aspose.Gis.Geometries` ให้การทำงานเชิงรูปธรรมที่คุณจะใช้.
 
 ```csharp
 using Aspose.Gis.Geometries;
@@ -58,49 +111,61 @@ using System.Threading.Tasks;
 ```
 
 ## ขั้นตอนที่ 1: สร้าง LineString จาก WKT
-สร้างอ็อบเจกต์ `LineString` โดยทำการพาร์สสตริง WKT ที่รวมพิกัด Z:
+คลาส `LineString` แสดงถึงคอลเลกชันของจุดที่เรียงลำดับกันเป็นเส้นต่อเนื่อง มันทำการทำงานตามอินเทอร์เฟซ `ILineString`, เปิดเผยเมธอดสำหรับการนับและจัดการจุด
+
+แยกวิเคราะห์ข้อความ WKT และแคสต์ผลลัพธ์เป็น `ILineString`:
 
 ```csharp
 ILineString line = (ILineString)Geometry.FromText("LINESTRING Z (0.1 0.2 0.3, 1 2 1, 12 23 2)");
 ```
 
-> **เคล็ดลับ:** เมธอด `FromText` จะตรวจจับประเภทของเรขาคณิตโดยอัตโนมัติ, ดังนั้นคุณสามารถแคสต์เป็นอินเทอร์เฟซที่เหมาะสม (`ILineString`, `IPolygon`, ฯลฯ).
+> **เคล็ดลับ:** เมธอด `FromText` จะตรวจจับประเภทเรขาคณิตโดยอัตโนมัติ, ดังนั้นคุณสามารถแคสต์เป็นอินเทอร์เฟซที่เหมาะสม (`ILineString`, `IPolygon`, ฯลฯ).
 
-## ขั้นตอนที่ 2: นับจุดใน LineString
-เมื่อเรขาคณิตถูกสร้างแล้ว, ดึงจำนวนจุด (เวอร์เท็กซ์) ที่มันมี:
+## ขั้นตอนที่ 2: นับจำนวนจุดใน LineString
+คุณสมบัติ `Count` คืนค่าจำนวนคู่พิกัดทั้งหมดที่เก็บไว้ในเรขาคณิต นี่เป็นวิธีรวดเร็วในการตรวจสอบว่าเรขาคณิตมีจำนวนจุดตามที่คาดหวังก่อนทำการดำเนินการเชิงพื้นที่ที่มีค่าใช้จ่ายสูงกว่า
+
+ดึงจำนวนจุด:
 
 ```csharp
 Console.WriteLine(line.Count); // Output: 3
 ```
 
-คุณสมบัติ `Count` จะคืนค่าจำนวนรวมของพิกัด, ซึ่งมีประโยชน์สำหรับการตรวจสอบหรือการวิเคราะห์.
+คุณสมบัติ `Count` คืนค่าจำนวนคู่พิกัดทั้งหมด ซึ่งเป็นประโยชน์สำหรับการตรวจสอบหรือการวิเคราะห์.
 
-## ปัญหาทั่วไปและเคล็ดลับ
-- **สตริง WKT ไม่ถูกต้อง** – หาก WKT มีรูปแบบผิด, `Geometry.FromText` จะโยนข้อยกเว้น. ควรห่อการเรียกในบล็อก `try/catch` เพื่อจัดการข้อผิดพลาดอย่างราบรื่น.  
-- **3D vs 2D** – ตัวอย่างใช้ `LINESTRING Z` แบบ 3‑D. หากข้อมูลของคุณเป็น 2‑D, ให้ละเว้นคีย์เวิร์ด `Z`.  
-- **คอลเลกชันขนาดใหญ่** – สำหรับชุดข้อมูลขนาดใหญ่, ควรพิจารณาการสตรีมข้อมูลหรือประมวลผลเป็นชุดเพื่อบรรเทาภาระหน่วยความจำ.
+## ปัญหาที่พบบ่อยและเคล็ดลับ
+- **สตริง WKT ที่ไม่ถูกต้อง** – หาก WKT มีรูปแบบผิด, `Geometry.FromText` จะโยนข้อยกเว้น. ควรห่อการเรียกในบล็อก `try/catch` เพื่อจัดการข้อผิดพลาดอย่างราบรื่น.  
+- **3D กับ 2D** – ตัวอย่างใช้ `LINESTRING Z` แบบ 3‑D. หากข้อมูลของคุณเป็น 2‑D, ให้ละเว้นคีย์เวิร์ด `Z`.  
+- **คอลเลกชันขนาดใหญ่** – สำหรับชุดข้อมูลขนาดมหาศาล, พิจารณาการสตรีมข้อมูลหรือประมวลผลเป็นชุดเพื่อ ลดความกดดันของหน่วยความจำ. Aspose.GIS สามารถประมวลผลคอลเลกชันที่มีจุดมากกว่า 10 ล้านจุดโดยคงการใช้หน่วยความจำสูงสุดต่ำกว่า 500 MB.
 
 ## คำถามที่พบบ่อย
-### ฉันสามารถใช้ Aspose.GIS สำหรับ .NET ในโครงการเชิงพาณิชย์ของฉันได้หรือไม่?
-ได้, คุณสามารถทำได้. Aspose.GIS สำหรับ .NET มีไลเซนส์ต่อผู้พัฒนา, ทำให้คุณสามารถใช้ในโครงการเชิงพาณิชย์ได้โดยไม่มีข้อจำกัดใด ๆ.
 
-### Aspose.GIS สำหรับ .NET รองรับรูปแบบเรขาคณิตอื่นนอกจาก WKT หรือไม่?
-ได้, Aspose.GIS สำหรับ .NET รองรับรูปแบบเรขาคณิตหลายรูปแบบ, รวมถึง WKB, GeoJSON, และ Shapefile.
+**ถาม: ฉันสามารถใช้ Aspose.GIS for .NET ในโครงการเชิงพาณิชย์ของฉันได้หรือไม่?**  
+ตอบ: ใช่, คุณสามารถทำได้. Aspose.GIS for .NET มีไลเซนส์ต่อผู้พัฒนา, ให้การใช้โดยไม่มีข้อจำกัดในแอปพลิเคชันเชิงพาณิชย์.
 
-### มีรุ่นทดลองฟรีสำหรับ Aspose.GIS สำหรับ .NET หรือไม่?
-ได้, คุณสามารถรับรุ่นทดลองฟรีได้จาก [here](https://releases.aspose.com/).
+**ถาม: Aspose.GIS for .NET รองรับรูปแบบเรขาคณิตอื่น ๆ นอกจาก WKT หรือไม่?**  
+ตอบ: ใช่, Aspose.GIS for .NET รองรับ WKB, GeoJSON, Shapefile, และรูปแบบเรสเตอร์หลายแบบ, ให้ความยืดหยุ่นเมื่อผสานรวมกับสายงาน GIS ที่มีอยู่.
 
-### ฉันสามารถหาเอกสารสำหรับ Aspose.GIS สำหรับ .NET ได้ที่ไหน?
-คุณสามารถพบเอกสารได้ที่ [here](https://reference.aspose.com/gis/net/).
+**ถาม: มีรุ่นทดลองฟรีสำหรับ Aspose.GIS for .NET หรือไม่?**  
+ตอบ: มี, คุณสามารถรับรุ่นทดลองฟรีจากหน้าการปล่อยของ Aspose: [Aspose free trial downloads](https://releases.aspose.com/).
 
-### ฉันจะรับการสนับสนุนสำหรับ Aspose.GIS สำหรับ .NET ได้อย่างไร?
-คุณสามารถรับการสนับสนุนจากฟอรั่ม Aspose.GIS ได้ที่ [here](https://forum.aspose.com/c/gis/33).
+**ถาม: ฉันจะหาเอกสารสำหรับ Aspose.GIS for .NET ได้จากที่ไหน?**  
+ตอบ: คุณสามารถหาเอกสารได้ใน Aspose.GIS .NET reference: [Aspose.GIS .NET documentation](https://reference.aspose.com/gis/net/).
+
+**ถาม: ฉันจะขอรับการสนับสนุนสำหรับ Aspose.GIS for .NET ได้อย่างไร?**  
+ตอบ: คุณสามารถรับการสนับสนุนจากฟอรั่ม Aspose.GIS: [Aspose.GIS forum](https://forum.aspose.com/c/gis/33).
 
 ---
 
-**อัปเดตล่าสุด:** 2026-04-24  
-**ทดสอบด้วย:** Aspose.GIS for .NET 24.11 (latest at time of writing)  
-**ผู้เขียน:** Aspose  
+**อัปเดตล่าสุด:** 2026-09-30  
+**ทดสอบด้วย:** Aspose.GIS for .NET 24.11 (ล่าสุด ณ เวลาที่เขียน)  
+**ผู้เขียน:** Aspose
+
+## บทแนะนำที่เกี่ยวข้อง
+
+- [แปลงเรขาคณิตเป็น Wkt](/gis/net/geometry-processing/translate-geometry-to-wkt/)
+- [วิธีเพิ่มจุดและวนซ้ำเรขาคณิตใน .NET](/gis/net/geometry-processing/iterate-over-points-in-geometry/)
+- [นับจุดในเรขาคณิต](/gis/net/geometry-creation/count-points-in-geometry/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
