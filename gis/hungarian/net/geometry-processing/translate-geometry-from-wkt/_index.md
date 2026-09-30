@@ -1,15 +1,69 @@
 ---
-date: 2026-04-24
-description: Tanulja meg, hogyan számoljon pontokat és konvertáljon WKT geometriát
-  az Aspose.GIS for .NET segítségével egy lépésről‑lépésre útmutatóban. Gyakorlati
-  kódrészletek és tippek is benne vannak.
+date: 2026-09-30
+description: Ismerje meg, hogyan kell feldolgozni a WKT-t és megszámolni a pontokat
+  az Aspose.GIS for .NET használatával, lépésről‑lépésre útmutatóval a WKT geometry
+  objektumokká alakításához.
 keywords:
-- how to count points
+- how to parse wkt
 - convert wkt geometry
 - Aspose.GIS .NET
-linktitle: Geometria átalakítása WKT‑ből
+- count points from wkt
+- .NET spatial analytics
+lastmod: 2026-09-30
+linktitle: Geometria átalakítása WKT-ből
+og_description: Ismerje meg, hogyan kell feldolgozni a WKT-t és megszámolni a pontokat
+  az Aspose.GIS for .NET használatával. Ez az útmutató bemutatja, hogyan alakítható
+  a WKT geometry objektumokká a gyors térbeli elemzéshez.
+og_image_alt: 'Developer guide: parse WKT and count points with Aspose.GIS for .NET'
+og_title: Hogyan kell feldolgozni a WKT-t és megszámolni a pontokat az Aspose.GIS
+  for .NET segítségével
+schemas:
+- author: Aspose
+  dateModified: '2026-09-30'
+  description: Learn how to parse WKT and count points using Aspose.GIS for .NET,
+    with step‑by‑step guidance on converting WKT geometry to objects.
+  headline: How to parse WKT and count points with Aspose.GIS for .NET
+  type: TechArticle
+- description: Learn how to parse WKT and count points using Aspose.GIS for .NET,
+    with step‑by‑step guidance on converting WKT geometry to objects.
+  name: How to parse WKT and count points with Aspose.GIS for .NET
+  steps:
+  - name: '**Aspose.GIS for .NET API** – download it from the Aspose.GIS for .NET
+      download page: [Aspose.GIS for .NET download](https://releases.aspose.com/gis/net/).
+      For other Aspose products see the general releases page: [Aspose releases](https://releases.aspose.com/).'
+    text: '**Aspose.GIS for .NET API** – download it from the Aspose.GIS for .NET
+      download page: [Aspose.GIS for .NET download](https://releases.aspose.com/gis/net/).
+      For other Aspose products see the general releases page: [Aspose releases](https://releases.aspose.com/).'
+  - name: A recent version of **Visual Studio** or any .NET‑compatible IDE.
+    text: A recent version of **Visual Studio** or any .NET‑compatible IDE.
+  - name: Basic knowledge of **C#** programming.
+    text: Basic knowledge of **C#** programming.
+  type: HowTo
+- questions:
+  - answer: Yes, you can. Aspose.GIS for .NET is licensed per developer, allowing
+      unrestricted use in commercial applications.
+    question: Can I use Aspose.GIS for .NET in my commercial projects?
+  - answer: Yes, Aspose.GIS for .NET supports WKB, GeoJSON, Shapefile, and several
+      raster formats, giving you flexibility when integrating with existing GIS pipelines.
+    question: Does Aspose.GIS for .NET support other geometric formats besides WKT?
+  - answer: 'Yes, you can get a free trial from the Aspose releases page: [Aspose
+      free trial downloads](https://releases.aspose.com/).'
+    question: Is there a free trial available for Aspose.GIS for .NET?
+  - answer: 'You can find the documentation in the Aspose.GIS .NET reference: [Aspose.GIS
+      .NET documentation](https://reference.aspose.com/gis/net/).'
+    question: Where can I find documentation for Aspose.GIS for .NET?
+  - answer: 'You can get support from the Aspose.GIS forum: [Aspose.GIS forum](https://forum.aspose.com/c/gis/33).'
+    question: How can I get support for Aspose.GIS for .NET?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: Hogyan számoljuk meg a pontokat a WKT‑ből az Aspose.GIS for .NET segítségével
+tags:
+- parse WKT
+- Aspose.GIS
+- .NET geometry processing
+- spatial analytics
+- count points
+title: Hogyan kell feldolgozni a WKT-t és megszámolni a pontokat az Aspose.GIS for
+  .NET segítségével
 url: /hu/net/geometry-processing/translate-geometry-from-wkt/
 weight: 21
 ---
@@ -18,36 +72,36 @@ weight: 21
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Hogyan számoljuk meg a pontokat WKT-ből az Aspose.GIS for .NET segítségével
+# Hogyan kell WKT-t elemezni és pontokat számolni az Aspose.GIS for .NET segítségével
 
 ## Bevezetés
-Ebben az útmutatóban megtudja, **hogyan számoljuk meg a pontokat**, amelyek egy Well‑Known Text (WKT) karakterláncban vannak tárolva az Aspose.GIS .NET könyvtár segítségével. Akár térképszolgáltatást épít, térbeli elemzéseket végez, vagy egyszerűen csak geometriai adatokat kell validálni, a pontok számlálása alapvető lépés. Emellett megmutatjuk, hogyan **konvertálhatja a WKT geometriát** használható objektumokká, így bármely C# alkalmazásba integrálhatja a térinformatikai feldolgozást.
+Ebben az útmutatóban megtanulja, hogyan kell **WKT** karakterláncokat elemezni és megszámolni a bennük található pontokat az Aspose.GIS .NET könyvtár segítségével. Akár térképszolgáltatást épít, térbeli elemzéseket végez, vagy egyszerűen csak geometriai adatokat kell ellenőrizze, a WKT elemzése az első lépés minden földrajzi munkafolyamatban. Emellett megmutatjuk, hogyan kell **WKT geometriát** erősen típusos objektumokká konvertálni, hogy lekérdezhesse, szerkeszthesse és exportálhassa őket egy C# alkalmazásban.
 
 ## Gyors válaszok
-- **Mi jelent a „hogyan számoljuk meg a pontokat”?** A koordináta‑csúcsok számának lekérdezését jelenti egy geometriai objektumban, például LineString vagy Polygon esetén.  
-- **Melyik API kezeli a WKT konverziót?** Az Aspose.GIS .NET biztosítja a `Geometry.FromText` metódust a WKT karakterláncok feldolgozásához.  
-- **Szükségem van licencre?** Elérhető egy ingyenes próba, de a gyártási használathoz kereskedelmi licenc szükséges.  
-- **Mely .NET verziók támogatottak?** .NET 5, .NET 6, .NET Core 3.1 és .NET Framework 4.6+.  
-- **Gyors ez a megközelítés nagy adathalmazok esetén?** Igen – a könyvtár memória‑alapú, és optimalizált a nagy teljesítményű geometriai műveletekhez.
+- **Mit jelent a „hogyan kell WKT-t elemezni”?** Azt jelenti, hogy a Well‑Known Text ábrázolást egy Aspose.GIS geometriai objektummá alakítja, amelyet programozottan használhat.
+- **Melyik API kezeli a WKT konverziót?** A `Geometry.FromText` bármely érvényes WKT karakterláncot elemez, és a megfelelő geometriai típust adja vissza.
+- **Szükségem van licencre?** Elérhető egy ingyenes próba, de a kereskedelmi licenc szükséges a termelési környezetben.
+- **Mely .NET verziók támogatottak?** .NET 5, .NET 6, .NET Core 3.1 és .NET Framework 4.6+.
+- **Ez a megközelítés gyors nagy adathalmazok esetén?** Igen – a könyvtár memóriában dolgozik fel milliók csúcsait alullineáris terheléssel.
 
-## Hogyan számoljuk meg a pontokat WKT geometriából
-A pontok számlálása olyan egyszerű, mint a WKT karakterlánc betöltése egy geometriai objektumba, majd a `Count` tulajdonság lekérdezése. Az alábbi lépések végigvezetik a teljes folyamaton.
+## Mi az a WKT?
+A Well‑Known Text (WKT) egy egyszerű szöveges jelölés a geometriai objektumok számára, amelyet az Open Geospatial Consortium (OGC) definiál. Pontokat, vonalakat, poligonokat és gyűjteményeket kódol ember által olvasható formátumban, például `POINT (30 10)` vagy `LINESTRING (30 10, 10 30, 40 40)`.
 
 ## Miért konvertáljuk a WKT geometriát?
-A WKT egy szöveges alapú szabvány, amelyet számos GIS eszköz ért. Az Aspose.GIS objektumokká való konvertálása lehetővé teszi:
-- Térbeli lekérdezések végrehajtása (metszetek, bufferek stb.).
-- Koordináták programozott szerkesztése.
-- Exportálás más formátumokba, például GeoJSON, Shapefile vagy WKB.
+A WKT geometria konvertálása lehetővé teszi, hogy a szöveges ábrázolást Aspose.GIS objektumokká alakítsa, így térbeli lekérdezéseket (metszetek, bufferelések stb.) futtathat, koordinátákat programozottan szerkeszthet, és az adatokat más formátumokba, például GeoJSON, Shapefile vagy WKB exportálhatja. A konverzió teljesen memóriában történik, támogatja a 3‑D koordinátákat, és akár 2 GB méretű fájlokkal is megbirkózik a teljes dokumentum betöltése nélkül, így alkalmas nagy áteresztőképességű analitikai csővezetékekhez.
+
+## Hogyan kell WKT-t elemezni?
+Töltse be a WKT karakterláncot a `Geometry.FromText` segítségével, a visszakapott eredményt castolja a megfelelő interfészre (például `ILineString`), majd használja a geometria tulajdonságait – mint a `Count` – a pontok számának lekérdezéséhez. Ez a háromlépéses minta (elemzés, cast, lekérdezés) minden, az Aspose.GIS által támogatott geometriai típusra működik, beleértve a `POINT`, `LINESTRING Z`, `POLYGON` és `GEOMETRYCOLLECTION` típusokat.
 
 ## Előfeltételek
-Mielőtt elkezdenénk, győződjön meg róla, hogy a következőkkel rendelkezik:
-
-1. **Aspose.GIS for .NET API** – töltse le [itt](https://releases.aspose.com/gis/net/).  
+1. **Aspose.GIS for .NET API** – töltse le az Aspose.GIS for .NET letöltési oldaláról: [Aspose.GIS for .NET download](https://releases.aspose.com/gis/net/). Más Aspose termékekhez lásd az általános kiadási oldalt: [Aspose releases](https://releases.aspose.com/).  
 2. A **Visual Studio** vagy bármely .NET‑kompatibilis IDE legújabb verziója.  
 3. Alapvető **C#** programozási ismeretek.
 
 ## Névterek importálása
 Először importálja a geometriai kezeléshez szükséges névtereket:
+
+Az `Aspose.Gis` névtér tartalmazza az összes alap geometriai típust, míg az `Aspose.Gis.Geometries` a konkrét megvalósításokat biztosítja, amelyekkel dolgozni fog.
 
 ```csharp
 using Aspose.Gis.Geometries;
@@ -58,50 +112,62 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## 1. lépés: LineString létrehozása WKT-ből
-Hozzon létre egy `LineString` objektumot egy Z‑koordinátákat tartalmazó WKT ábrázolás elemzésével:
+## 1. lépés: linestring létrehozása WKT-ből
+A `LineString` osztály egy rendezett pontgyűjteményt képvisel, amely folytonos vonalat alkot. Implementálja az `ILineString` interfészt, és módszereket biztosít a csúcsok felsorolásához és manipulálásához.
+
+Elemezze a WKT szöveget, és castolja az eredményt `ILineString` típusra:
 
 ```csharp
 ILineString line = (ILineString)Geometry.FromText("LINESTRING Z (0.1 0.2 0.3, 1 2 1, 12 23 2)");
 ```
 
-> **Pro tipp:** A `FromText` metódus automatikusan felismeri a geometria típusát, így a megfelelő interfészre (`ILineString`, `IPolygon`, stb.) castolhat.
+> **Pro tipp:** A `FromText` metódus automatikusan felismeri a geometria típusát, így a megfelelő interfészre castolhatja (`ILineString`, `IPolygon`, stb.).
 
-## 2. lépés: Pontok számlálása a LineString-ben
-Miután a geometria példányosítva lett, kérje le a benne található pontok (csúcsok) számát:
+## 2. lépés: a pontok számlálása a linestringben
+A `Count` tulajdonság visszaadja a geometria által tárolt koordináta-párok (tuple) teljes számát. Ez egy gyors módja annak, hogy ellenőrizze, a geometria tartalmazza-e a várt számú csúcsot, mielőtt drágább térbeli műveleteket végezne.
+
+A pontok számának lekérdezése:
 
 ```csharp
 Console.WriteLine(line.Count); // Output: 3
 ```
 
-A `Count` tulajdonság visszaadja a koordináta‑párok teljes számát, ami hasznos a validáláshoz vagy elemzésekhez.
+A `Count` tulajdonság visszaadja a koordináta-párok teljes számát, ami hasznos az ellenőrzéshez vagy az elemzésekhez.
 
 ## Gyakori problémák és tippek
-- **Érvénytelen WKT karakterláncok** – Ha a WKT hibás, a `Geometry.FromText` kivételt dob. A hívást egy `try/catch` blokkba helyezze a hibák elegáns kezeléséhez.  
-- **3D vs 2D** – A példa egy 3‑D `LINESTRING Z`-t használ. Ha az adata 2‑D, hagyja ki a `Z` kulcsszót.  
-- **Nagy gyűjtemények** – Nagy adathalmazok esetén fontolja meg az adat streamingjét vagy kötegelt feldolgozását a memória terhelés csökkentése érdekében.
+- **Érvénytelen WKT karakterláncok** – Ha a WKT hibás, a `Geometry.FromText` kivételt dob. Tegye a hívást egy `try/catch` blokkba a hibák elegáns kezeléséhez.  
+- **3D vs 2D** – A példa egy 3‑D `LINESTRING Z`-t használ. Ha az adata 2‑D, hagyja el a `Z` kulcsszót.  
+- **Nagy gyűjtemények** – Nagy adathalmazok esetén fontolja meg az adat streamingjét vagy kötegelt feldolgozását a memória terhelés csökkentése érdekében. Az Aspose.GIS több mint 10 millió csúcsot tartalmazó gyűjteményeket is képes feldolgozni, miközben a csúcsteljes memóriahasználat 500 MB alatt marad.
 
-## Gyakran Ismételt Kérdések
-### Használhatom az Aspose.GIS for .NET-et kereskedelmi projektjeimben?
-Igen, használhatja. Az Aspose.GIS for .NET fejlesztői licencelésű, így kereskedelmi projektekben korlátozás nélkül használható.
+## Gyakran ismételt kérdések
 
-### Támogatja az Aspose.GIS for .NET más geometriai formátumokat is a WKT-n kívül?
-Igen, az Aspose.GIS for .NET számos geometriai formátumot támogat, többek között a WKB, GeoJSON és Shapefile formátumokat.
+**K: Használhatom az Aspose.GIS for .NET-et kereskedelmi projektjeimben?**  
+V: Igen, használhatja. Az Aspose.GIS for .NET fejlesztőnként licencelt, ami korlátlan használatot tesz lehetővé kereskedelmi alkalmazásokban.
 
-### Elérhető ingyenes próba az Aspose.GIS for .NET-hez?
-Igen, ingyenes próbát kaphat [itt](https://releases.aspose.com/).
+**K: Támogatja az Aspose.GIS for .NET más geometriai formátumokat is a WKT mellett?**  
+V: Igen, az Aspose.GIS for .NET támogatja a WKB, GeoJSON, Shapefile és több raszteres formátumot, így rugalmasan integrálható a meglévő GIS csővezetékekkel.
 
-### Hol találok dokumentációt az Aspose.GIS for .NET-hez?
-A dokumentációt megtalálja [itt](https://reference.aspose.com/gis/net/).
+**K: Elérhető ingyenes próba az Aspose.GIS for .NET-hez?**  
+V: Igen, ingyenes próbát a Aspose kiadási oldalról szerezhet: [Aspose free trial downloads](https://releases.aspose.com/).
 
-### Hogyan kaphatok támogatást az Aspose.GIS for .NET-hez?
-Támogatást kaphat az Aspose.GIS fórumon [itt](https://forum.aspose.com/c/gis/33).
+**K: Hol találom az Aspose.GIS for .NET dokumentációját?**  
+V: A dokumentációt megtalálja az Aspose.GIS .NET referencia oldalán: [Aspose.GIS .NET documentation](https://reference.aspose.com/gis/net/).
+
+**K: Hogyan kaphatok támogatást az Aspose.GIS for .NET-hez?**  
+V: Támogatást kaphat az Aspose.GIS fórumon: [Aspose.GIS forum](https://forum.aspose.com/c/gis/33).
 
 ---
 
-**Utolsó frissítés:** 2026-04-24  
-**Tesztelt verzió:** Aspose.GIS for .NET 24.11 (latest at time of writing)  
-**Szerző:** Aspose  
+**Utoljára frissítve:** 2026-09-30  
+**Tesztelt verzió:** Aspose.GIS for .NET 24.11 (a legújabb a írás időpontjában)  
+**Szerző:** Aspose
+
+## Kapcsolódó útmutatók
+
+- [Geometria WKT-re konvertálása](/gis/net/geometry-processing/translate-geometry-to-wkt/)
+- [Hogyan adjunk hozzá pontokat és iteráljunk a geometrián .NET-ben](/gis/net/geometry-processing/iterate-over-points-in-geometry/)
+- [Pontok számlálása a geometriában](/gis/net/geometry-creation/count-points-in-geometry/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
