@@ -162,9 +162,9 @@ A: No – a single Aspose.GIS license covers all supported formats.
 
 ## Related Tutorials
 
-- [How to Get Attribute Value (Default) with Aspose.GIS for .NET]({{< relref "/gis/net/layer-interaction-and-data-access/get-feature-attribute-value-default/_index.md" >}})
-- [Read Shapefile C# – Filter Features by Attribute with Aspose.GIS]({{< relref "/gis/net/layer-management/filter-features-by-attribute/_index.md" >}})
-- [How to Modify Layer – Aspose.GIS .NET Layer Interaction]({{< relref "/gis/net/layer-interaction-and-data-access/_index.md" >}})
+- [How to Get Attribute Value (Default) with Aspose.GIS for .NET]({{< relref "/net/layer-interaction-and-data-access/get-feature-attribute-value-default/_index.md" >}})
+- [Read Shapefile C# – Filter Features by Attribute with Aspose.GIS]({{< relref "/net/layer-management/filter-features-by-attribute/_index.md" >}})
+- [How to Modify Layer – Aspose.GIS .NET Layer Interaction]({{< relref "/net/layer-interaction-and-data-access/_index.md" >}})
 
 
 {{< /blocks/products/pf/tutorial-page-section >}}

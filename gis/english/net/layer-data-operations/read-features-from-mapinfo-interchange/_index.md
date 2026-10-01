@@ -163,9 +163,9 @@ A: Visit the [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) for community
 
 ## Related Tutorials
 
-- [How to Count Features in MapInfo Tab Files with Aspose.GIS]({{< relref "read-features-from-mapinfo-tab/_index.md" >}})
-- [Read Features from GML In Aspose.GIS]({{< relref "read-features-from-gml/_index.md" >}})
-- [How to Read GeoJSON from Stream with Aspose.GIS for .NET]({{< relref "read-geojson-from-stream/_index.md" >}})
+- [How to Count Features in MapInfo Tab Files with Aspose.GIS]({{< relref "/net/layer-data-operations/read-features-from-mapinfo-tab/_index.md" >}})
+- [Read Features from GML In Aspose.GIS]({{< relref "/net/layer-data-operations/read-features-from-gml/_index.md" >}})
+- [How to Read GeoJSON from Stream with Aspose.GIS for .NET]({{< relref "/net/layer-data-operations/read-geojson-from-stream/_index.md" >}})
 
 ```csharp
 using Aspose.Gis;

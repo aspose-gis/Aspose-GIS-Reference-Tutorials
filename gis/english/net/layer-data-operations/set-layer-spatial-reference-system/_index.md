@@ -192,9 +192,9 @@ A: Aspose.GIS works with .NET Framework 4.6+, .NET Core 3.1+, .NET 5/6/7.
 
 ## Related Tutorials
 
-- [Create Vector Layer and Set Linearization Tolerance using Aspose.GIS for .NET]({{< relref "gis/net/geometry-processing/set-linearization-tolerance/_index.md" >}})
-- [Create Vector Layer in File GDB – Aspose.GIS .NET Tutorial]({{< relref "gis/net/layer-management/create-file-gdb-with-single-layer/_index.md" >}})
-- [spatial reference wgs84 – Add Layer to GDB using Aspose.GIS]({{< relref "gis/net/layer-management/add-layer-to-file-gdb-dataset/_index.md" >}})
+- [Create Vector Layer and Set Linearization Tolerance using Aspose.GIS for .NET]({{< relref "/net/geometry-processing/set-linearization-tolerance/_index.md" >}})
+- [Create Vector Layer in File GDB – Aspose.GIS .NET Tutorial]({{< relref "/net/layer-management/create-file-gdb-with-single-layer/_index.md" >}})
+- [spatial reference wgs84 – Add Layer to GDB using Aspose.GIS]({{< relref "/net/layer-management/add-layer-to-file-gdb-dataset/_index.md" >}})
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

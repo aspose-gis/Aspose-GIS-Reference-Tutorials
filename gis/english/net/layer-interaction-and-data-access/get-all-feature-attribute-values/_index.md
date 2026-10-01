@@ -165,9 +165,9 @@ A: Visit the Aspose GIS [support forum](https://forum.aspose.com/c/gis/33) for c
 
 ## Related Tutorials
 
-- [Get Layer Attributes – Retrieve Layer Attribute Information with Aspose.GIS for .NET]({{< relref "gis/net/layer-interaction-and-data-access/get-layer-attribute-information/_index.md" >}})
-- [How to Get Attribute Value (Default) with Aspose.GIS for .NET]({{< relref "gis/net/layer-interaction-and-data-access/get-feature-attribute-value-default/_index.md" >}})
-- [Read Shapefile C# – Filter Features by Attribute with Aspose.GIS]({{< relref "gis/net/layer-management/filter-features-by-attribute/_index.md" >}})
+- [Get Layer Attributes – Retrieve Layer Attribute Information with Aspose.GIS for .NET]({{< relref "/net/layer-interaction-and-data-access/get-layer-attribute-information/_index.md" >}})
+- [How to Get Attribute Value (Default) with Aspose.GIS for .NET]({{< relref "/net/layer-interaction-and-data-access/get-feature-attribute-value-default/_index.md" >}})
+- [Read Shapefile C# – Filter Features by Attribute with Aspose.GIS]({{< relref "/net/layer-management/filter-features-by-attribute/_index.md" >}})
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
