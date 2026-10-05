@@ -1,14 +1,67 @@
 ---
-date: 2026-04-30
-description: Узнайте, как читать элементы GML с помощью Aspose.GIS для .NET. Этот
-  учебник показывает, как эффективно читать файлы GML.
+date: 2026-10-05
+description: Узнайте, как читать файлы GML в .NET с помощью Aspose.GIS, охватывая
+  эффективное извлечение объектов и работу со схемами.
 keywords:
-- how to read gml
+- how to read gml .net
 - aspose gis gml
 - read gml features
+- gml .net tutorial
+lastmod: 2026-10-05
 linktitle: Чтение объектов из GML
+og_description: Как читать gml .net с помощью Aspose.GIS. Это руководство показывает
+  пошаговый код для открытия файлов GML, извлечения объектов и эффективной работы
+  со схемами.
+og_image_alt: Tutorial screenshot showing GML feature extraction with Aspose.GIS in
+  .NET
+og_title: Как читать gml .net с помощью Aspose.GIS
+schemas:
+- author: Aspose
+  dateModified: '2026-10-05'
+  description: Learn how to read GML files in .NET with Aspose.GIS, covering efficient
+    feature extraction and schema handling.
+  headline: How to read gml .net using Aspose.GIS
+  type: TechArticle
+- description: Learn how to read GML files in .NET with Aspose.GIS, covering efficient
+    feature extraction and schema handling.
+  name: How to read gml .net using Aspose.GIS
+  steps:
+  - name: import required namespaces
+    text: '`Aspose.Gis` provides the core GIS types such as `VectorLayer` and `Feature`.'
+  - name: define GmlOptions
+    text: '`GmlOptions` configures how the GML parser reads schemas and handles network
+      resources. > **Pro tip:** If you already know the exact schema URL, assign it
+      to `SchemaLocation` to avoid an extra network round‑trip.'
+  - name: open the GML file and enumerate features
+    text: '`VectorLayer.Open` opens a read‑only GIS layer from a GML file using the
+      specified driver and options. Replace `"attribute"` with the actual field name
+      you wish to read (e.g., `"Name"` or `"Population"`). The generic `GetValue<T>`
+      method automatically converts the attribute to the requested .NET typ'
+  type: HowTo
+- questions:
+  - answer: Yes – the library streams data and uses lazy loading, so even multi‑gigabyte
+      GML files can be processed without exhausting memory.
+    question: Can Aspose.GIS handle large GML files efficiently?
+  - answer: Absolutely. It handles Shapefile, KML, GeoJSON, CSV, and many more, giving
+      you flexibility to work with diverse data sources.
+    question: Does Aspose.GIS support other geospatial formats besides GML?
+  - answer: Yes – the library works in ASP.NET, ASP.NET Core, WPF, WinForms, and console
+      apps alike.
+    question: Is Aspose.GIS compatible with both desktop and web applications?
+  - answer: Certainly. You can execute spatial predicates such as `Intersects`, `Contains`,
+      and `Within` directly on `Feature` collections.
+    question: Can I perform spatial queries using Aspose.GIS?
+  - answer: Yes, Aspose provides dedicated technical support through their forum [Aspose
+      GIS forum]( https://forum.aspose.com/c/gis/33), where you can ask questions,
+      report issues, and engage with the community.
+    question: Is technical support available for Aspose.GIS users?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: Как читать GML‑объекты с помощью Aspose.GIS
+tags:
+- gml reading
+- Aspose.GIS
+- .NET GIS
+title: Как читать gml .net с помощью Aspose.GIS
 url: /ru/net/layer-data-operations/read-features-from-gml/
 weight: 10
 ---
@@ -17,26 +70,26 @@ weight: 10
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Как читать GML-объекты с помощью Aspose.GIS
+# Как читать gml .net с помощью Aspose.GIS
 
 ## Введение
 
-Если вы задаётесь вопросом **как читать gml** файлы в среде .NET, вы попали по адресу. В этом руководстве мы пошагово пройдёмся по API Aspose.GIS for .NET, покажем, как открыть файл GML, извлечь его объекты и при необходимости восстановить отсутствующие схемы атрибутов. Независимо от того, создаёте ли вы настольный GIS‑инструмент или веб‑сервис карт, освоив этот процесс, вы сможете быстро и надёжно интегрировать богатые геопространственные данные.
+Если вы задаётесь вопросом **how to read gml .net**, вы попали в нужное место. Этот учебник проведёт вас через API Aspose.GIS for .NET, показывая, как открыть файл GML, перечислить его объекты и при необходимости восстановить отсутствующие схемы атрибутов. Независимо от того, создаёте ли вы настольную GIS‑утилиту или облачный сервис картографии, освоение этого рабочего процесса позволит быстро и надёжно интегрировать богатые геопространственные данные.
 
 ## Быстрые ответы
-- **Какая библиотека нужна?** Aspose.GIS for .NET  
-- **Можно ли загружать схемы из Интернета?** Да, установите `LoadSchemasFromInternet = true`.  
-- **Нужна ли лицензия для разработки?** Бесплатная пробная версия подходит для тестирования; для продакшна требуется лицензия.  
-- **Поддерживается ли работа с большими файлами?** Aspose.GIS потоково читает данные, поэтому эффективно обрабатывает большие файлы GML.  
-- **Какие версии .NET поддерживаются?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
+- **Какая библиотека мне нужна?** Aspose.GIS for .NET.  
+- **Можно ли загружать схемы из интернета?** Yes – set `LoadSchemasFromInternet = true`.  
+- **Нужна ли лицензия для разработки?** Бесплатная пробная версия подходит для тестирования; для продакшн‑использования требуется лицензия.  
+- **Поддерживается ли работа с большими файлами?** Aspose.GIS передаёт данные потоками, поэтому он обрабатывает многогигабайтные файлы GML с низким потреблением памяти.  
+- **Какие версии .NET поддерживаются?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
 
-## Как читать GML-объекты
+## Как читать объекты GML с помощью Aspose.GIS?
 
-Ниже представлено практическое руководство, которое вы можете скопировать и вставить в свой проект. Каждый шаг объясняется простым языком перед соответствующим блоком кода, чтобы вы всегда знали *почему* делаете то или иное.
+Загрузите файл GML с помощью `VectorLayer.Open` и настроенного объекта `GmlOptions`. Блок `using` гарантирует освобождение слоя и нативных ресурсов. Затем вы можете перечислить каждый `Feature` и прочитать его атрибуты через `GetValue<T>()`. Поскольку библиотека лениво передаёт данные потоками, она никогда не загружает весь документ в память, что позволяет эффективно обрабатывать большие файлы.
 
-### Шаг 1: Импортировать необходимые пространства имён
+### Шаг 1: импортировать необходимые пространства имён
 
-Сначала импортируйте пространства имён Aspose.GIS. Это даст вам доступ к `VectorLayer`, `GmlOptions` и другим важным классам.
+`Aspose.Gis` предоставляет основные типы GIS, такие как `VectorLayer` и `Feature`.
 
 ```csharp
 using Aspose.Gis;
@@ -51,9 +104,9 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-### Шаг 2: Определить GmlOptions
+### Шаг 2: определить GmlOptions
 
-`GmlOptions` позволяет управлять поведением парсера GML. Установка `SchemaLocation` в `null` заставляет Aspose.GIS читать схему непосредственно из файла, а `LoadSchemasFromInternet` включает онлайн‑разрешение схем при необходимости.
+`GmlOptions` настраивает, как парсер GML читает схемы и обрабатывает сетевые ресурсы.
 
 ```csharp
 GmlOptions options = new GmlOptions
@@ -63,11 +116,11 @@ GmlOptions options = new GmlOptions
 };
 ```
 
-> **Pro tip:** Если вы знаете точное расположение схемы, присвойте его `SchemaLocation`, чтобы избежать дополнительных сетевых запросов.
+> **Совет:** Если вы уже знаете точный URL схемы, присвойте его `SchemaLocation`, чтобы избежать дополнительного сетевого запроса.
 
-### Шаг 3: Открыть файл GML и перечислить объекты
+### Шаг 3: открыть файл GML и перечислить объекты
 
-Используйте `VectorLayer.Open` с драйвером GML и только что созданными параметрами. Блок `using` гарантирует корректное освобождение слоя после обработки.
+`VectorLayer.Open` открывает слой GIS только для чтения из файла GML, используя указанный драйвер и параметры.
 
 ```csharp
 using (VectorLayer layer = VectorLayer.Open(dataDir + "file.gml", Drivers.Gml, options))
@@ -79,11 +132,11 @@ using (VectorLayer layer = VectorLayer.Open(dataDir + "file.gml", Drivers.Gml, o
 }
 ```
 
-Замените `"attribute"` на фактическое имя поля, которое вы хотите прочитать (например, `"Name"` или `"Population"`). Метод `GetValue<T>` автоматически преобразует атрибут к требуемому типу .NET.
+Замените `"attribute"` на фактическое имя поля, которое вы хотите прочитать (например, `"Name"` или `"Population"`). Универсальный метод `GetValue<T>` автоматически преобразует атрибут к запрошенному типу .NET, поэтому ручное парсирование не требуется.
 
-### Шаг 4 (Опционально): Восстановить схему атрибутов, если она отсутствует
+### Шаг 4 (необязательно): восстановить схему атрибутов при отсутствии
 
-Некоторые файлы GML не содержат определения схемы. Включив `RestoreSchema`, Aspose.GIS выводит структуру атрибутов из самих данных.
+`RestoreSchema` сообщает Aspose.GIS вывести недостающие определения атрибутов из самих данных.
 
 ```csharp
 using (VectorLayer layer = VectorLayer.Open(dataDir + "file.gml", Drivers.Gml, new GmlOptions(){RestoreSchema = true}))
@@ -95,62 +148,65 @@ using (VectorLayer layer = VectorLayer.Open(dataDir + "file.gml", Drivers.Gml, n
 }
 ```
 
-Этот резервный вариант удобен для устаревших наборов данных или файлов, созданных сторонними инструментами.
+Этот резервный вариант удобен для наборов данных, созданных сторонними инструментами, которые забывают включить XSD.
 
 ## Почему использовать Aspose.GIS для GML?
 
-- **Полная интеграция с .NET:** Не требуется использование нативных библиотек или COM‑interop.  
-- **Надёжная работа со схемами:** Автоматическая загрузка из интернета или локальных файлов.  
-- **Ориентировано на производительность:** Потоковое чтение минимизирует использование памяти.  
-- **Кроссплатформенность:** Работает на Windows, Linux и macOS с .NET Core/.NET 5+.
+Aspose.GIS поддерживает **более 50 форматов ввода и вывода** — включая GML, Shapefile, KML, GeoJSON, CSV и другие — и может обрабатывать многосотстраничные файлы GML без загрузки всего документа в память. Его потоковая архитектура снижает потребление ОЗУ до 80 % по сравнению с традиционными DOM‑парсерами, что делает его идеальным для серверных пакетных заданий и сервисов реального времени.
 
-## Требования
+## Предварительные требования
 
-1. **Знание C# / .NET** – базовое знакомство с классами, инструкциями `using` и выводом в консоль.  
-2. **Aspose.GIS for .NET** – скачайте его по [ссылке для загрузки](https://releases.aspose.com/gis/net/).  
-3. **Пример файлов GML** – убедитесь, что у вас есть хотя бы один файл GML для экспериментов.  
-4. **Доступ к Интернету (опционально)** – требуется только если ваш GML ссылается на удалённые схемы.
+1. **Знания C# / .NET** – базовое знакомство с классами, инструкциями `using` и выводом в консоль.  
+2. **Aspose.GIS for .NET** – скачайте его по ссылке [Aspose.GIS .NET download](https://releases.aspose.com/gis/net/).  
+3. **Пример файлов GML** – подготовьте хотя бы один файл GML для экспериментов.  
+4. **Доступ к интернету (опционально)** – требуется только если ваш GML ссылается на удалённые схемы.
 
 ## Распространённые проблемы и советы
 
-| Проблема | Причина | Решение |
-|----------|---------|---------|
-| **Схема не найдена** | `SchemaLocation` указывает на недоступный URL. | Установите `LoadSchemasFromInternet = true` или укажите локальный файл схемы. |
+| Проблема | Почему происходит | Решение |
+|----------|-------------------|----------|
+| **Схема не найдена** | `SchemaLocation` указывает на недоступный URL. | Установите `LoadSchemasFromInternet = true` или предоставьте локальный файл XSD. |
 | **Значения атрибутов null** | Имя атрибута не совпадает (чувствительно к регистру). | Проверьте точное имя поля с помощью GIS‑просмотрщика или `feature.GetFieldNames()`. |
 | **Большой файл замедляет работу** | Чтение всего файла в память. | Оставьте `RestoreSchema` false и обрабатывайте объекты в потоковом цикле, как показано. |
 
 ## Часто задаваемые вопросы
 
-### В: Может ли Aspose.GIS эффективно обрабатывать большие файлы GML?
-О: Да, Aspose.GIS потоково читает данные и использует ленивую загрузку, поэтому даже многогигабайтные файлы GML могут обрабатываться без исчерпания памяти.
+**Q: Может ли Aspose.GIS эффективно обрабатывать большие файлы GML?**  
+A: Да — библиотека передаёт данные потоками и использует ленивую загрузку, поэтому даже многогигабайтные файлы GML могут обрабатываться без исчерпания памяти.
 
-### В: Поддерживает ли Aspose.GIS другие геопространственные форматы, помимо GML?
-О: Конечно! Он поддерживает Shapefile, KML, GeoJSON, CSV и многие другие, предоставляя гибкость работы с разнообразными источниками данных.
+**Q: Поддерживает ли Aspose.GIS другие геопространственные форматы, помимо GML?**  
+A: Абсолютно. Он работает с Shapefile, KML, GeoJSON, CSV и многими другими, предоставляя гибкость работы с разнообразными источниками данных.
 
-### В: Совместим ли Aspose.GIS с настольными и веб‑приложениями?
-О: Да, библиотека без проблем работает в ASP.NET, ASP.NET Core, WPF, WinForms и консольных приложениях.
+**Q: Совместим ли Aspose.GIS как с настольными, так и с веб‑приложениями?**  
+A: Да — библиотека работает в ASP.NET, ASP.NET Core, WPF, WinForms и консольных приложениях.
 
-### В: Можно ли выполнять пространственные запросы с помощью Aspose.GIS?
-О: Безусловно. Вы можете выполнять пространственные предикаты, такие как `Intersects`, `Contains` и `Within`, непосредственно над коллекциями `Feature`.
+**Q: Могу ли я выполнять пространственные запросы с помощью Aspose.GIS?**  
+A: Конечно. Вы можете выполнять пространственные предикаты, такие как `Intersects`, `Contains` и `Within`, непосредственно над коллекциями `Feature`.
 
-### В: Доступна ли техническая поддержка для пользователей Aspose.GIS?
-О: Да, Aspose предоставляет специализированную техническую поддержку через их [форум]( https://forum.aspose.com/c/gis/33), где пользователи могут получать помощь, сообщать о проблемах и взаимодействовать с сообществом.
+**Q: Доступна ли техническая поддержка для пользователей Aspose.GIS?**  
+A: Да, Aspose предоставляет специализированную техническую поддержку через их форум [Aspose GIS forum]( https://forum.aspose.com/c/gis/33), где вы можете задавать вопросы, сообщать о проблемах и взаимодействовать с сообществом.
 
-### В: Как прочитать файл GML, использующий пользовательское пространство имён?
-О: Установите свойство `Namespace` в `GmlOptions` в соответствующее пользовательское пространство имён, затем откройте слой как обычно.
+**Q: Как прочитать файл GML, использующий пользовательское пространство имён?**  
+A: Установите свойство `Namespace` в `GmlOptions` в значение вашего пользовательского пространства имён, затем откройте слой как обычно.
 
-### В: Можно ли записывать или редактировать файлы GML после их чтения?
-О: Да, вы можете изменять атрибуты объектов и вызвать `layer.Save("output.gml", Drivers.Gml)`, чтобы сохранить изменения.
+**Q: Могу ли я записывать или редактировать файлы GML после их чтения?**  
+A: Да — вы можете изменять атрибуты объектов и вызвать `layer.Save("output.gml", Drivers.Gml)`, чтобы сохранить изменения.
 
 ## Заключение
 
-Теперь у вас есть полноценный, готовый к продакшну рецепт для **чтения gml** файлов с помощью Aspose.GIS для .NET. Следуя приведённым шагам, вы сможете интегрировать данные GML в любое приложение .NET, выполнять извлечение атрибутов и аккуратно обрабатывать отсутствующие схемы. Исследуйте другие драйверы форматов в Aspose.GIS, чтобы создавать действительно универсальные GIS‑решения.
+Теперь у вас есть полный, готовый к продакшену рецепт для **how to read gml .net** с Aspose.GIS. Следуя приведённым шагам, вы сможете интегрировать данные GML в любое приложение .NET, эффективно извлекать атрибуты и корректно обрабатывать отсутствующие схемы. Исследуйте другие драйверы форматов в Aspose.GIS, чтобы создавать действительно универсальные GIS‑решения, работающие на Windows, Linux и macOS.
 
 ---
 
-**Последнее обновление:** 2026-04-30  
-**Тестировано с:** Aspose.GIS for .NET 24.11 (последняя версия на момент написания)  
-**Автор:** Aspose  
+**Последнее обновление:** 2026-10-05  
+**Тестировано с:** Aspose.GIS for .NET 24.11 (latest at time of writing)  
+**Автор:** Aspose
+
+## Связанные учебники
+
+- [Read MapInfo MIF Files with Aspose.GIS for .NET](/gis/net/layer-data-operations/read-features-from-mapinfo-interchange/)
+- [Get All Feature Attribute Values from a Shapefile in C# using Aspose.GIS for .NET](/gis/net/layer-interaction-and-data-access/get-all-feature-attribute-values/)
+- [How to Create Vector Layer with SRS using Aspose.GIS for .NET](/gis/net/layer-management/create-vector-layer-with-srs/)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

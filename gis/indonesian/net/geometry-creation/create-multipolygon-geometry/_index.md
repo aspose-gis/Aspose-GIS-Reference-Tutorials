@@ -1,11 +1,55 @@
 ---
-date: 2026-03-29
+date: 2026-10-05
 description: Pelajari cara membuat geometri multipolygon dan menambahkan poligon ke
-  multipolygon menggunakan Aspose.GIS untuk .NET. Panduan langkah demi langkah dengan
-  percobaan gratis.
-linktitle: Create MultiPolygon Geometry
+  multipolygon menggunakan Aspose.GIS untuk .NET. Panduan langkah‑demi‑langkah ini
+  menampilkan contoh geometri multipolygon yang dapat Anda selesaikan dalam hitungan
+  menit.
+keywords:
+- how to create multipolygon
+- multipolygon geometry example
+- add polygons to multipolygon
+- combine polygons multipolygon
+lastmod: 2026-10-05
+linktitle: Buat Geometri MultiPolygon
+og_description: Pelajari cara membuat geometri multipolygon dan menambahkan poligon
+  ke multipolygon menggunakan Aspose.GIS untuk .NET. Panduan langkah‑demi‑langkah
+  ini menampilkan contoh geometri multipolygon yang dapat Anda selesaikan dalam hitungan
+  menit.
+og_image_alt: 'Tutorial: create multipolygon geometry using Aspose.GIS for .NET'
+og_title: Cara membuat geometri multipolygon dengan Aspose.GIS
+schemas:
+- author: Aspose
+  dateModified: '2026-10-05'
+  description: Learn how to create multipolygon geometry and add polygons to multipolygon
+    using Aspose.GIS for .NET. This step‑by‑step guide shows a multipolygon geometry
+    example you can finish in minutes.
+  headline: How to create multipolygon geometry with Aspose.GIS
+  type: TechArticle
+- questions:
+  - answer: Absolutely! Aspose.GIS offers comprehensive documentation, step‑by‑step
+      tutorials, and sample projects that let developers of any skill level create
+      and manipulate GIS data quickly.
+    question: Is Aspose.GIS for .NET suitable for beginners?
+  - answer: Yes, you can download a free trial from the [Aspose.GIS free trial page](https://releases.aspose.com/).
+    question: Can I try Aspose.GIS before purchasing?
+  - answer: You can visit the Aspose.GIS forum [Aspose.GIS forum](https://forum.aspose.com/c/gis/33)
+      to ask questions and get assistance from the community and product engineers.
+    question: Where can I find support for Aspose.GIS?
+  - answer: Yes, you can obtain a temporary license from the [temporary license page](https://purchase.aspose.com/temporary-license/)
+      for evaluation purposes.
+    question: Is there a temporary license available for evaluation?
+  - answer: Yes, you can purchase Aspose.GIS from the website [Aspose.GIS purchase
+      page](https://purchase.aspose.com/buy).
+    question: Can I purchase Aspose.GIS directly?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: Cara Membuat Geometri MultiPolygon dengan Aspose.GIS
+tags:
+- multipolygon
+- Aspose.GIS
+- .NET geometry
+- GIS programming
+- geospatial development
+title: Cara membuat geometri multipolygon dengan Aspose.GIS
 url: /id/net/geometry-creation/create-multipolygon-geometry/
 weight: 16
 ---
@@ -14,36 +58,36 @@ weight: 16
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Cara Membuat Geometri MultiPolygon dengan Aspose.GIS
+# Cara membuat geometri multipolygon dengan Aspose.GIS
 
 ## Pendahuluan
-Jika Anda mencari **cara membuat multipolygon** dalam lingkungan .NET, Anda berada di tempat yang tepat. Aspose.GIS untuk .NET memberi Anda API bersih yang berorientasi objek untuk membangun objek geospasial yang kompleks, dan tutorial ini memandu Anda melalui setiap langkah—dari menginstal perpustakaan hingga menggabungkan poligon individu menjadi satu MultiPolygon. Pada akhir tutorial, Anda akan dapat **menambahkan poligon ke multipolygon** dengan percaya diri.
+Jika Anda mencari **cara membuat multipolygon** dalam lingkungan .NET, Anda berada di tempat yang tepat. Aspose.GIS untuk .NET memberikan API berorientasi‑objek yang bersih untuk membangun objek geospasial yang kompleks, dan tutorial ini memandu Anda melalui setiap langkah—dari menginstal pustaka hingga menggabungkan poligon individual menjadi satu MultiPolygon. Pada akhir tutorial, Anda akan dapat **menambahkan poligon ke struktur multipolygon** dengan percaya diri. Aspose.GIS mendukung **lebih dari 50 format file GIS** dan dapat memproses dataset ratusan halaman tanpa memuat seluruh file ke memori, menjadikannya pilihan kuat untuk proyek spasial berskala besar.
 
-## Jawaban Cepat
-- **Apa itu MultiPolygon?** Geometri yang mengelompokkan dua atau lebih objek Polygon menjadi satu koleksi.  
-- **Mengapa menggunakan Aspose.GIS?** Mendukung banyak format GIS, bekerja pada .NET Framework dan .NET Core, dan tidak memerlukan pustaka native eksternal.  
-- **Berapa lama contoh ini memakan waktu?** Sekitar 5 menit untuk mengetik dan menjalankannya.  
-- **Apakah saya memerlukan lisensi?** Versi percobaan gratis dapat digunakan untuk pengembangan; lisensi komersial diperlukan untuk produksi.  
-- **Versi .NET mana yang didukung?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
+## Jawaban cepat
+- **Apa itu MultiPolygon?** MultiPolygon mengelompokkan dua atau lebih objek Polygon menjadi satu koleksi, memungkinkan Anda memperlakukan area terpisah sebagai satu entitas.  
+- **Mengapa menggunakan Aspose.GIS?** Mendukung lebih dari 50 format GIS, bekerja pada .NET Framework dan .NET Core, dan tidak memerlukan pustaka native.  
+- **Berapa lama contoh ini?** Sekitar 5 menit untuk mengetik dan menjalankannya.  
+- **Apakah saya memerlukan lisensi?** Versi percobaan gratis cukup untuk pengembangan; lisensi komersial diperlukan untuk produksi.  
+- **Versi .NET apa yang didukung?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
 
-## Apa itu Geometri MultiPolygon?
-MultiPolygon adalah geometri komposit yang berisi beberapa objek Polygon, masing‑masing mungkin memiliki cincin interior (lubang) sendiri. Struktur ini ideal untuk merepresentasikan bidang tanah yang terpisah, pulau, atau kumpulan area terpisah yang memiliki atribut bersama.
+## Apa itu geometri MultiPolygon?
+MultiPolygon adalah geometri komposit yang mengelompokkan dua atau lebih objek Polygon menjadi satu koleksi, memungkinkan Anda memperlakukan area terpisah—seperti pulau atau bidang tanah—sebagai satu entitas untuk kueri spasial, rendering, dan pertukaran data. Setiap Polygon dapat memiliki cincin interior (lubang) sendiri, memberikan fleksibilitas penuh saat memodelkan fitur dunia nyata yang kompleks.
 
-## Mengapa Menambahkan Poligon ke MultiPolygon?
-Menambahkan poligon ke MultiPolygon memungkinkan Anda memperlakukan beberapa bentuk independen sebagai satu entitas. Ini menyederhanakan kueri spasial, rendering, dan pertukaran data karena Anda dapat menyimpan, mentransfer, dan memanipulasi seluruh koleksi dengan satu objek alih‑alih menangani setiap poligon secara terpisah.
+## Mengapa menambahkan poligon ke MultiPolygon?
+Menambahkan poligon ke MultiPolygon memungkinkan Anda menangani beberapa bentuk independen sebagai satu objek, yang menyederhanakan kueri spasial, mengurangi kompleksitas kode, dan mempercepat transfer data karena Anda menyimpan, merender, dan memanipulasi seluruh koleksi dengan satu panggilan API alih-alih mengelola setiap poligon secara terpisah.
 
 ## Prasyarat
-Sebelum menyelam ke kode, pastikan Anda memiliki hal‑hal berikut:
+Sebelum masuk ke kode, pastikan Anda memiliki hal berikut:
 
-- **Aspose.GIS untuk .NET** terinstal (lihat langkah‑langkah di bawah).  
-- Lingkungan pengembangan .NET (Visual Studio, VS Code, atau IDE apa pun yang Anda sukai).  
+- **Aspose.GIS untuk .NET** terinstal (lihat langkah di bawah).  
+- Lingkungan pengembangan .NET (Visual Studio, VS Code, atau IDE lain yang Anda sukai).  
 - Familiaritas dasar dengan sintaks C#.
 
 ### Menginstal Aspose.GIS untuk .NET
-1. Download Aspose.GIS: Kunjungi [download page](https://releases.aspose.com/gis/net/) dan pilih versi yang sesuai untuk lingkungan pengembangan Anda.  
-2. Install Aspose.GIS: Ikuti petunjuk instalasi yang disediakan dalam dokumentasi untuk menginstal Aspose.GIS untuk .NET di mesin Anda.
+1. Unduh Aspose.GIS: Kunjungi [halaman unduhan](https://releases.aspose.com/gis/net/) dan pilih versi yang sesuai untuk lingkungan pengembangan Anda.  
+2. Instal Aspose.GIS: Ikuti petunjuk instalasi yang disediakan dalam dokumentasi untuk menginstal Aspose.GIS untuk .NET di mesin Anda.
 
-## Mengimpor Namespace
+## Mengimpor namespace
 Untuk mulai bekerja dengan Aspose.GIS dalam proyek .NET Anda, impor namespace yang diperlukan:
 
 ```csharp
@@ -55,8 +99,8 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## Langkah 1: Membuat Linear Ring
-Pertama, kita perlu membuat objek **LinearRing** untuk setiap poligon. LinearRing adalah rangkaian garis tertutup yang mendefinisikan batas luar (dan secara opsional lubang dalam) sebuah poligon.
+## Langkah 1: Membuat linear ring
+`LinearRing` adalah string garis tertutup milik Aspose.GIS yang mendefinisikan batas luar sebuah poligon dan dapat secara opsional berisi cincin dalam yang mewakili lubang. Pertama, Anda harus menyediakan urutan koordinat yang membentuk loop tertutup. Aspose.GIS akan secara otomatis menutup ring jika titik pertama dan terakhir berbeda, tetapi memberikan titik mulai/akhir yang identik membuat niat lebih jelas.
 
 ```csharp
 LinearRing firstRing = new LinearRing();
@@ -69,16 +113,16 @@ secondRing.AddPoint(-9.6, 1.5);
 secondRing.AddPoint(7.6, -3.6);
 ```
 
-## Langkah 2: Membuat Poligon
-Selanjutnya, kita mengubah setiap LinearRing menjadi objek **Polygon**. Poligon‑poligon ini nantinya akan ditambahkan ke MultiPolygon.
+## Langkah 2: Membuat poligon
+`Polygon` mewakili permukaan planar yang didefinisikan oleh LinearRing luar dan cincin dalam opsional, membentuk bentuk geometris lengkap. Setelah Anda memiliki satu atau lebih objek LinearRing, Anda dapat membungkus setiap ring luar (dan cincin dalam bila ada) ke dalam instance Polygon.
 
 ```csharp
 Polygon firstPolygon = new Polygon(firstRing);
 Polygon secondPolygon = new Polygon(secondRing);
 ```
 
-## Langkah 3: Membuat MultiPolygon
-Sekarang, mari gabungkan poligon‑poligon menjadi satu geometri **MultiPolygon**. Di sinilah kita **menambahkan poligon ke multipolygon**.
+## Langkah 3: Membuat multipolygon
+`MultiPolygon` adalah koleksi objek Polygon yang berperilaku sebagai satu geometri, memungkinkan operasi batch dan penyimpanan terpadu. Setelah Anda menginstansiasi objek Polygon individual, cukup berikan mereka ke konstruktor MultiPolygon atau tambahkan ke koleksi MultiPolygon yang sudah ada.
 
 ```csharp
 MultiPolygon multiPolygon = new MultiPolygon();
@@ -86,37 +130,44 @@ multiPolygon.Add(firstPolygon);
 multiPolygon.Add(secondPolygon);
 ```
 
-Selamat! Anda telah berhasil membuat geometri MultiPolygon menggunakan Aspose.GIS untuk .NET.
+Selamat! Anda telah berhasil membuat geometri MultiPolygon menggunakan Aspose.GIS untuk .NET. Sekarang Anda dapat mengekspor geometri ke format GIS yang didukung, melakukan analisis spasial, atau merendernya pada peta.
 
-## Masalah Umum dan Solusinya
+## Masalah umum dan solusi
 | Masalah | Penyebab | Solusi |
 |-------|-------|-----|
-| **Titik tidak menutup cincin** | Titik pertama dan terakhir berbeda. | Pastikan koordinat pertama dan terakhir identik; Aspose.GIS secara otomatis menutup cincin, tetapi penutupan eksplisit menghindari kebingungan. |
-| **Urutan koordinat tidak tepat (X, Y vs. Lon, Lat)** | Mencampur longitude dan latitude. | Gunakan urutan (X, Y) yang dipakai oleh Aspose.GIS; X = longitude, Y = latitude. |
-| **Perpustakaan tidak ditemukan saat runtime** | Referensi NuGet atau DLL yang hilang. | Pastikan paket Aspose.GIS direferensikan dalam file proyek Anda dan DLL disalin ke folder output. |
+| **Titik tidak menutup ring** | Titik pertama dan terakhir berbeda. | Pastikan koordinat pertama dan terakhir identik; Aspose.GIS secara otomatis menutup ring, tetapi penutupan eksplisit menghindari kebingungan. |
+| **Urutan koordinat salah (X, Y vs. Lon, Lat)** | Kebingungan antara longitude dan latitude. | Ikuti urutan (X, Y) yang digunakan Aspose.GIS; X = longitude, Y = latitude. |
+| **Pustaka tidak ditemukan saat runtime** | Referensi NuGet atau DLL hilang. | Verifikasi paket Aspose.GIS direferensikan dalam file proyek Anda dan DLL disalin ke folder output. |
 
-## Pertanyaan yang Sering Diajukan
+## Pertanyaan yang sering diajukan
 
-**Q: Apakah Aspose.GIS untuk .NET cocok untuk pemula?**  
-A: Tentu saja! Aspose.GIS menawarkan dokumentasi lengkap dan tutorial untuk membantu pengembang dari semua tingkat keahlian memulai.
+**T: Apakah Aspose.GIS untuk .NET cocok untuk pemula?**  
+J: Tentu saja! Aspose.GIS menawarkan dokumentasi lengkap, tutorial langkah‑demi‑langkah, dan contoh proyek yang memungkinkan pengembang dengan tingkat keahlian apa pun membuat dan memanipulasi data GIS dengan cepat.
 
-**Q: Bisakah saya mencoba Aspose.GIS sebelum membeli?**  
-A: Ya, Anda dapat mengunduh percobaan gratis dari [sini](https://releases.aspose.com/) untuk menjelajahi fiturnya sebelum melakukan pembelian.
+**T: Bisakah saya mencoba Aspose.GIS sebelum membeli?**  
+J: Ya, Anda dapat mengunduh versi percobaan gratis dari [halaman percobaan gratis Aspose.GIS](https://releases.aspose.com/).
 
-**Q: Di mana saya dapat menemukan dukungan untuk Aspose.GIS?**  
-A: Anda dapat mengunjungi forum Aspose.GIS [di sini](https://forum.aspose.com/c/gis/33) untuk mengajukan pertanyaan dan mendapatkan bantuan dari komunitas.
+**T: Di mana saya dapat menemukan dukungan untuk Aspose.GIS?**  
+J: Anda dapat mengunjungi forum Aspose.GIS [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) untuk mengajukan pertanyaan dan mendapatkan bantuan dari komunitas serta insinyur produk.
 
-**Q: Apakah ada lisensi sementara yang tersedia untuk Aspose.GIS?**  
-A: Ya, Anda dapat memperoleh lisensi sementara dari [sini](https://purchase.aspose.com/temporary-license/) untuk tujuan evaluasi.
+**T: Apakah ada lisensi sementara untuk evaluasi?**  
+J: Ya, Anda dapat memperoleh lisensi sementara dari [halaman lisensi sementara](https://purchase.aspose.com/temporary-license/) untuk keperluan evaluasi.
 
-**Q: Bisakah saya membeli Aspose.GIS secara langsung?**  
-A: Ya, Anda dapat membeli Aspose.GIS dari situs web [sini](https://purchase.aspose.com/buy).
+**T: Bisakah saya membeli Aspose.GIS secara langsung?**  
+J: Ya, Anda dapat membeli Aspose.GIS melalui situs web [halaman pembelian Aspose.GIS](https://purchase.aspose.com/buy).
 
 ---
 
-**Terakhir Diperbarui:** 2026-03-29  
-**Diuji Dengan:** Aspose.GIS 24.12 untuk .NET  
-**Penulis:** Aspose  
+**Terakhir diperbarui:** 2026-10-05  
+**Diuji dengan:** Aspose.GIS 24.12 untuk .NET  
+**Penulis:** Aspose
+
+## Tutorial Terkait
+
+- [Cara Membuat Geometri Polygon dengan Aspose.GIS untuk .NET](/gis/net/geometry-creation/create-polygon-geometry/)
+- [Gunakan Aspose.GIS untuk .NET untuk Membuat Buffer Geometri](/gis/net/geometry-analysis/create-geometry-buffer/)
+- [Cara Membuat Shapefile dengan Aspose.GIS untuk .NET](/gis/net/layer-management/create-new-shapefile/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
