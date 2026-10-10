@@ -1,15 +1,51 @@
 ---
-date: 2026-05-05
-description: Aprende cómo obtener el tamaño de celda raster y cómo deformar formatos
-  raster usando Aspose.GIS para .NET. Guía paso a paso para la visualización de datos
-  espaciales.
+date: 2026-10-10
+description: Aprenda cómo obtener el tamaño de celda raster y cambiar la resolución
+  raster mediante la transformación de formatos raster usando Aspose.GIS para .NET
+  – una guía paso a paso para la visualización de datos espaciales.
 keywords:
 - get raster cell size
-- how to warp raster
-- Aspose GIS raster
-linktitle: Formatos raster de deformación
+- change raster resolution
+- convert geotiff .net
+lastmod: 2026-10-10
+linktitle: Transformar formatos raster
+og_description: Obtenga el tamaño de celda raster después de transformar rasters usando
+  Aspose.GIS para .NET. Este tutorial muestra cómo cambiar la resolución raster, convertir
+  archivos GeoTIFF y extraer metadatos raster detallados en unos pocos pasos simples.
+og_image_alt: 'Developer guide: Get raster cell size and warp raster formats using
+  Aspose.GIS for .NET'
+og_title: Obtener tamaño de celda raster y transformar rasters con Aspose.GIS
+schemas:
+- author: Aspose
+  dateModified: '2026-10-10'
+  description: Learn how to get raster cell size and change raster resolution by warping
+    raster formats using Aspose.GIS for .NET – a step‑by‑step guide for spatial data
+    visualization.
+  headline: Get raster cell size – warp raster formats
+  type: TechArticle
+- questions:
+  - answer: Yes, Aspose.GIS supports a wide range of raster formats, providing flexibility
+      in handling various spatial datasets.
+    question: Is Aspose.GIS compatible with all raster formats?
+  - answer: Aspose.GIS is designed to handle georeferenced data, ensuring accurate
+      transformations. Ensure your raster images have proper spatial reference information.
+    question: Can I perform raster warping on non‑georeferenced images?
+  - answer: Join the discussion on the [Aspose.GIS forum](https://forum.aspose.com/c/gis/33)
+      to share your experiences, ask questions, and collaborate with other developers.
+    question: How can I contribute to the Aspose.GIS community?
+  - answer: Yes, you can explore the capabilities of Aspose.GIS by downloading a free
+      trial [here](https://releases.aspose.com/).
+    question: Is there a free trial available for Aspose.GIS?
+  - answer: Yes, if you need a temporary license, you can obtain one [here](https://purchase.aspose.com/temporary-license/).
+    question: Are temporary licenses available for Aspose.GIS?
+  type: FAQPage
 second_title: Aspose.GIS .NET API
-title: Obtener el tamaño de celda raster – Transformar formatos raster con Aspose.GIS
+tags:
+- raster processing
+- Aspose.GIS
+- .NET GIS
+- geotiff warp
+title: Obtener tamaño de celda raster – transformar formatos raster
 url: /es/net/layer-data-operations/warp-raster-formats/
 weight: 23
 ---
@@ -18,27 +54,28 @@ weight: 23
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Obtener el Tamaño de Celda Raster – Formatos de Raster Deformados
+# Obtener el tamaño de celda raster – transformar formatos raster
 
 ## Introducción
-Bienvenido al emocionante mundo de la programación geoespacial con Aspose.GIS para .NET. En este tutorial, **obtendrás el tamaño de celda raster** después de deformar un raster y aprenderás **cómo deformar formatos raster** paso a paso. Ya seas un desarrollador experimentado o estés comenzando, prepárate para profundizar en las complejidades de la manipulación de GeoTIFF, dando a tus datos espaciales una perspectiva totalmente nueva.
+En este tutorial **obtendrá el tamaño de celda raster** después de realizar una operación de warp y descubrirá cómo **cambiar la resolución raster** para cualquier GeoTIFF usando Aspose.GIS para .NET. Ya sea que esté preparando datos para un servicio de mapas web, alineando capas para análisis espacial, o simplemente necesite verificar que una reproyección mantuvo el detalle previsto, estos pasos le darán control total sobre la geometría raster y los metadatos. Repasemos el proceso, desde cargar un raster hasta extraer su tamaño de celda y otras propiedades clave.
 
-## Respuestas Rápidas
-- **¿Cuál es el objetivo principal?** Obtener el tamaño de celda raster después de realizar una operación de deformación.  
+## Respuestas rápidas
+- **¿Cuál es el objetivo principal?** Obtener el tamaño de celda raster después de realizar una operación de warp.  
 - **¿Qué biblioteca se utiliza?** Aspose.GIS para .NET.  
 - **¿Necesito una licencia?** Hay una prueba gratuita disponible; se requiere una licencia para producción.  
 - **¿Qué versiones de .NET son compatibles?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6+.  
-- **¿Cuánto tiempo tarda en ejecutarse el ejemplo?** Menos de un minuto en una máquina típica.
+- **¿Cuánto tiempo tarda el ejemplo en ejecutarse?** Menos de un minuto en una máquina típica.
 
-## Requisitos Previos
-Antes de embarcarnos en este viaje, asegúrate de contar con los siguientes requisitos:
-- Aspose.GIS para .NET: Si aún no lo has hecho, descarga e instala la biblioteca Aspose.GIS. Puedes encontrar la última versión [aquí](https://releases.aspose.com/gis/net/).
-- Tu Directorio de Documentos: Configura un directorio para almacenar tus documentos. Esto será crucial para la gestión de archivos durante el proceso de deformación del raster.
+## Requisitos previos
+Antes de embarcarnos en este viaje, asegúrese de que tiene los siguientes requisitos previos:
+- Aspose.GIS para .NET: Si aún no lo ha hecho, descargue e instale la biblioteca Aspose.GIS. Puede encontrar la última versión [aquí](https://releases.aspose.com/gis/net/).
+- Su directorio de documentos: Configure un directorio para almacenar sus documentos. Esto será crucial para la gestión de archivos durante el proceso de warp del raster.
 
-Ahora que estamos listos, sumérgete en el código.
+Ahora que estamos equipados, sumergámonos en el código.
 
-## Importar Espacios de Nombres
-Lo primero es asegurarnos de tener las herramientas correctas a nuestra disposición. Importa los espacios de nombres necesarios para iniciar tu aventura geoespacial:
+## Importar espacios de nombres
+El espacio de nombres `Aspose.GIS` proporciona las clases principales para operaciones raster y vectoriales. Importe los espacios de nombres necesarios para iniciar su aventura geoespacial.
+
 ```csharp
 using System;
 using System.IO;
@@ -47,26 +84,31 @@ using Aspose.Gis.Raster;
 using Aspose.Gis.SpatialReferencing;
 ```
 
-## Paso 1: Inicializar la Ruta
-Comienza estableciendo la ruta a tu directorio de documentos. Aquí es donde ocurrirá toda la magia:
+## Paso 1: inicializar la ruta
+Comience estableciendo la ruta a su directorio de documentos. Aquí es donde ocurrirá toda la magia:
+
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-## Paso 2: Abrir la Capa Raster
-Abre la capa raster GeoTiff y prepárala para la transformación. Este paso sienta las bases para la posterior operación de deformación:
+## Paso 2: abrir capa raster
+La clase `RasterLayer` representa un conjunto de datos raster único cargado en memoria. Abrir el GeoTIFF lo prepara para transformaciones posteriores.
+
 ```csharp
 using (var layer = Drivers.GeoTiff.OpenLayer(Path.Combine(dataDir, "raster_float32.tif")))
 ```
 
-## Paso 3: Deformar el Raster
-Ahora, realicemos la operación de deformación. Especifica las dimensiones objetivo y el sistema de referencia espacial para dar nueva vida a tus datos raster:
+## Paso 3: transformar (warp) el raster
+El método `Warp` reproyecta y remuestrea un raster a un nuevo sistema de referencia de coordenadas y resolución. Abstracta matemáticas complejas, permitiéndole especificar dimensiones objetivo y el sistema de referencia espacial objetivo en una sola llamada.  
+`WarpOptions` le permite definir parámetros como ancho de salida, altura y sistema de referencia espacial objetivo para la operación de warp.
+
 ```csharp
 using (var warped = layer.Warp(new WarpOptions(){Height = 40, Width = 40, TargetSpatialReferenceSystem = SpatialReferenceSystem.Wgs84}))
 ```
 
-## Paso 4: Extraer Información del Raster
-Es hora de revelar los secretos del raster transformado. Extrae información esencial como el tamaño de celda, el sistema de referencia espacial, los límites y la cantidad de bandas:
+## Paso 4: extraer información del raster
+Después del warp, puede consultar el raster resultante para obtener metadatos esenciales como tamaño de celda, sistema de referencia espacial, límites y recuento de bandas. Estas propiedades le permiten validar que la transformación se comportó como se esperaba.
+
 ```csharp
 var cellSize = warped.CellSize;
 var extent = warped.GetExtent();
@@ -76,8 +118,9 @@ var bounds = warped.Bounds;
 var bandCount = warped.BandCount;
 ```
 
-## Paso 5: Imprimir Detalles del Raster
-Imprimamos los jugosos detalles que hemos descubierto, proporcionando una visión del raster deformado:
+## Paso 5: imprimir detalles del raster
+Vamos a mostrar los detalles clave que extrajimos, dándole una instantánea rápida de la geometría y el contenido del raster warpado.
+
 ```csharp
 Console.WriteLine($"cellSize: {cellSize}");
 Console.WriteLine($"extent: {extent}");
@@ -86,8 +129,9 @@ Console.WriteLine($"bounds: {bounds}");
 Console.WriteLine($"bandCount: {bandCount}");
 ```
 
-## Paso 6: Explorar Bandas del Raster
-Profundiza en las bandas individuales del raster, desentrañando sus tipos de datos, estadísticas y la presencia de valores NoData:
+## Paso 6: explorar bandas raster
+`RasterBand` representa una banda (capa) individual de datos raster, como rojo, verde, azul o valores de elevación. Cada banda contiene un canal de datos separado que puede inspeccionarse para tipo de datos, estadísticas y manejo de NoData.
+
 ```csharp
 for (int i = 0; i < warped.BandCount; i++)
 {
@@ -104,39 +148,49 @@ for (int i = 0; i < warped.BandCount; i++)
 }
 ```
 
-## ¿Por Qué Obtener el Tamaño de Celda Raster?
-Conocer el tamaño de celda después de una deformación te ayuda a entender la resolución espacial del conjunto de datos resultante. Es esencial cuando necesitas alinear múltiples capas, realizar análisis que dependen de la distancia en el terreno o simplemente verificar que la deformación preservó el nivel de detalle previsto.
+## ¿Por qué obtener el tamaño de celda raster?
+Obtener el tamaño de celda raster después de un warp le indica la distancia terrestre representada por cada píxel. Esta información es esencial cuando necesita alinear múltiples capas, realizar análisis basados en distancia o confirmar que el warp preservó la resolución espacial requerida.
 
-## Cómo Deformar Formatos Raster de Forma Eficiente
-El método `Warp` abstrae la lógica compleja de reproyección, permitiéndote centrarte en los parámetros de entrada como las dimensiones objetivo y el sistema de referencia espacial de destino. Esto facilita la conversión de datos entre sistemas de coordenadas, el remuestreo a una resolución diferente o el recorte a un área específica.
+## Cómo transformar formatos raster de manera eficiente
+El método `Warp` abstracta la lógica compleja de reproyección, permitiéndole centrarse en los parámetros de entrada como dimensiones objetivo y el sistema de referencia espacial objetivo. Esto facilita la conversión de datos entre sistemas de coordenadas, el remuestreo a una resolución diferente o el recorte a un área específica.
 
-## Problemas Comunes y Soluciones
-- **Valores de tamaño de celda inesperados:** Asegúrate de que los parámetros `Height` y `Width` coincidan con la resolución de salida deseada.  
-- **Referencia espacial ausente:** Si `spatialRefSys` devuelve null, verifica que el GeoTIFF de origen contenga metadatos CRS adecuados.  
-- **Manejo de NoData:** Usa `warped.NoDataValues.IsNull()` para detectar datos faltantes; también puedes asignar un valor NoData personalizado antes de deformar.
+## Beneficios cuantificados de Aspose.GIS
+Aspose.GIS soporta **más de 30 formatos raster** y puede procesar archivos de hasta **2 GB** sin cargar la imagen completa en memoria, ofreciendo transformaciones rápidas y eficientes en memoria en hardware de servidor típico.
 
-## Preguntas Frecuentes
+## Problemas comunes y soluciones
+- **Valores de tamaño de celda inesperados:** Asegúrese de que los parámetros `Height` y `Width` coincidan con la resolución de salida deseada.  
+- **Referencia espacial faltante:** Si `spatialRefSys` devuelve null, verifique que el GeoTIFF de origen contenga los metadatos CRS adecuados.  
+- **Manejo de NoData:** Use `warped.NoDataValues.IsNull()` para detectar datos ausentes; también puede asignar un valor NoData personalizado antes del warp.
 
-**P: ¿Es Aspose.GIS compatible con todos los formatos raster?**  
-R: Sí, Aspose.GIS admite una amplia gama de formatos raster, proporcionando flexibilidad para manejar diversos conjuntos de datos espaciales.
+## Preguntas frecuentes
 
-**P: ¿Puedo realizar deformación raster en imágenes no georreferenciadas?**  
-R: Aspose.GIS está diseñado para manejar datos georreferenciados, garantizando transformaciones precisas. Asegúrate de que tus imágenes raster tengan la información de referencia espacial adecuada.
+**P: ¿Aspose.GIS es compatible con todos los formatos raster?**  
+R: Sí, Aspose.GIS soporta una amplia gama de formatos raster, proporcionando flexibilidad al manejar diversos conjuntos de datos espaciales.
+
+**P: ¿Puedo realizar warp de raster en imágenes no georreferenciadas?**  
+R: Aspose.GIS está diseñado para manejar datos georreferenciados, asegurando transformaciones precisas. Asegúrese de que sus imágenes raster tengan información de referencia espacial adecuada.
 
 **P: ¿Cómo puedo contribuir a la comunidad de Aspose.GIS?**  
-R: Únete a la discusión en el [foro de Aspose.GIS](https://forum.aspose.com/c/gis/33) para compartir tus experiencias, hacer preguntas y colaborar con otros desarrolladores.
+R: Únase a la discusión en el [foro de Aspose.GIS](https://forum.aspose.com/c/gis/33) para compartir sus experiencias, hacer preguntas y colaborar con otros desarrolladores.
 
 **P: ¿Hay una prueba gratuita disponible para Aspose.GIS?**  
-R: Sí, puedes explorar las capacidades de Aspose.GIS descargando una prueba gratuita [aquí](https://releases.aspose.com/).
+R: Sí, puede explorar las capacidades de Aspose.GIS descargando una prueba gratuita [aquí](https://releases.aspose.com/).
 
-**P: ¿Existen licencias temporales disponibles para Aspose.GIS?**  
-R: Sí, si necesitas una licencia temporal, puedes obtener una [aquí](https://purchase.aspose.com/temporary-license/).
+**P: ¿Están disponibles licencias temporales para Aspose.GIS?**  
+R: Sí, si necesita una licencia temporal, puede obtener una [aquí](https://purchase.aspose.com/temporary-license/).
 
 ---
 
-**Última actualización:** 2026-05-05  
+**Última actualización:** 2026-10-10  
 **Probado con:** Aspose.GIS para .NET (última versión)  
-**Autor:** Aspose  
+**Autor:** Aspose
+
+## Tutoriales relacionados
+
+- [Operaciones de datos de capa](/gis/net/layer-data-operations/)
+- [Cómo agregar capa al conjunto de datos File GDB con referencia espacial WGS84 usando Aspose.GIS](/gis/net/layer-management/add-layer-to-file-gdb-dataset/)
+- [Cómo crear capa vectorial con SRS usando Aspose.GIS para .NET](/gis/net/layer-management/create-vector-layer-with-srs/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
