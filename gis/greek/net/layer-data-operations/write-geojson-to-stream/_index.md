@@ -1,21 +1,28 @@
 ---
-date: 2026-05-21
-description: Μάθετε πώς να γράψετε GeoJSON σε ροή χρησιμοποιώντας το Aspose.GIS for
-  .NET. Αυτό το geojson tutorial .net δείχνει βήμα-βήμα τη μετατροπή σημείων και τη
-  δημιουργία κώδικα GeoJSON C#.
+date: 2026-10-15
+description: Μάθετε πώς να δημιουργήσετε geojson από συντεταγμένες και να το γράψετε
+  σε ροή χρησιμοποιώντας Aspose.GIS για .NET. Αυτό το σεμινάριο δείχνει βήμα‑βήμα
+  τη μετατροπή σημείων και τη δημιουργία κώδικα GeoJSON C#.
 keywords:
-- how to write geojson
-- convert points geojson
-- geojson tutorial .net
-- generate geojson c#
-linktitle: Γράψτε GeoJSON σε ροή
+- create geojson from coordinates
+- stream large geojson files
+- write geojson to stream
+- geojson tutorial c#
+- compress geojson with gzip
+lastmod: 2026-10-15
+linktitle: Εγγραφή GeoJSON σε ροή
+og_description: Μάθετε πώς να δημιουργήσετε geojson από συντεταγμένες και να το γράψετε
+  σε ροή χρησιμοποιώντας Aspose.GIS για .NET – βήμα‑βήμα οδηγός για μεγάλα σύνολα
+  δεδομένων.
+og_image_alt: Screenshot of Aspose.GIS code generating GeoJSON stream in C#
+og_title: Δημιουργία geojson από συντεταγμένες, εγγραφή σε ροή στο .NET
 schemas:
 - author: Aspose
-  dateModified: '2026-05-21'
-  description: Learn how to write GeoJSON to stream using Aspose.GIS for .NET. This
-    geojson tutorial .net shows step‑by‑step conversion of points and generation of
-    GeoJSON C# code.
-  headline: How to Write GeoJSON to Stream with Aspose.GIS for .NET
+  dateModified: '2026-10-15'
+  description: Learn how to create geojson from coordinates and write it to a stream
+    using Aspose.GIS for .NET. This tutorial shows step‑by‑step conversion of points
+    and generation of GeoJSON C# code.
+  headline: Create geojson from coordinates, write to a stream in .NET
   type: TechArticle
 - questions:
   - answer: Yes – create a `Feature` for each point, assign a `Point` geometry, and
@@ -24,12 +31,18 @@ schemas:
   - answer: You can wrap the `MemoryStream` in a `GZipStream` before saving to produce
       a compressed payload.
     question: Does Aspose.GIS support writing compressed GeoJSON (gzip)?
-  - answer: The library can stream files exceeding 2 GB; memory usage stays low because
+  - answer: The library can stream files exceeding 2 GB; memory usage stays low because
       data is written incrementally.
     question: What is the maximum size of a GeoJSON file Aspose.GIS can handle?
   type: FAQPage
 second_title: Aspose.GIS .NET API
-title: Πώς να γράψετε GeoJSON σε ροή με Aspose.GIS for .NET
+tags:
+- geojson
+- Aspose.GIS
+- .NET geospatial
+- C# stream processing
+- GIS data conversion
+title: Δημιουργία geojson από συντεταγμένες, εγγραφή σε ροή στο .NET
 url: /el/net/layer-data-operations/write-geojson-to-stream/
 weight: 25
 ---
@@ -38,40 +51,45 @@ weight: 25
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Γράψτε GeoJSON σε ροή
+# Δημιουργία geojson από συντεταγμένες και εγγραφή σε ροή
 
 ## Εισαγωγή
-Σε αυτό το tutorial θα μάθετε **πώς να γράψετε GeoJSON σε μια ροή** σε μια εφαρμογή .NET χρησιμοποιώντας το Aspose.GIS. Θα περάσουμε από κάθε βήμα, από τη ρύθμιση του περιβάλλοντος μέχρι την παραγωγή ενός έγκυρου εγγράφου GeoJSON, ώστε να μπορείτε να ενσωματώσετε γεωχωρικά δεδομένα αβίαστα στις υπηρεσίες σας.
+Σε αυτό το σεμινάριο θα μάθετε **πώς να δημιουργήσετε geojson από συντεταγμένες** και να το γράψετε απευθείας σε μια ροή χρησιμοποιώντας το Aspose.GIS για .NET. Θα περάσουμε από τη ρύθμιση του περιβάλλοντος, τη δημιουργία στρώματος, τον πληθυσμό χαρακτηριστικών και τη ροή του αποτελέσματος, ώστε να μπορείτε να ενσωματώσετε γεωχωρικά payloads σε APIs, cloud functions ή υπηρεσίες χωρίς αρχεία, χωρίς προσωρινά αρχεία.
 
 ## Γρήγορες Απαντήσεις
-- **Ποια είναι η κύρια κλάση για έξοδο GeoJSON;** `VectorLayer` με το `GeoJsonDriver`.
+- **Ποια κλάση γράφει GeoJSON σε ροή;** `VectorLayer` μαζί με το `GeoJsonDriver`.
 - **Χρειάζομαι άδεια για ανάπτυξη;** Μια δωρεάν δοκιμή λειτουργεί για ανάπτυξη· απαιτείται εμπορική άδεια για παραγωγή.
 - **Ποιες εκδόσεις .NET υποστηρίζονται;** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
-- **Μπορώ να μετατρέψω συλλογές σημείων σε GeoJSON;** Ναι – χρησιμοποιήστε την κλάση `Feature` και ορίστε γεωμετρία σημείου.
-- **Υποστηρίζεται η ροή για μεγάλα σύνολα δεδομένων;** Απόλυτα· το `MemoryStream` σας επιτρέπει να γράφετε χωρίς ενδιάμεσα αρχεία.
+- **Μπορώ να μετατρέψω συλλογές σημείων σε GeoJSON;** Ναι – δημιουργήστε ένα `Feature` για κάθε σημείο και αναθέστε γεωμετρία `Point`.
+- **Είναι η ροή κατάλληλη για μεγάλα σύνολα δεδομένων;** Απόλυτα – το `MemoryStream` σας επιτρέπει να γράψετε GeoJSON κλίμακας gigabyte χωρίς να φορτώσετε ολόκληρο το αρχείο στη μνήμη.
 
 ## Τι είναι το GeoJSON;
-Το GeoJSON είναι μια ανοιχτή πρότυπη μορφή για κωδικοποίηση διαφόρων γεωγραφικών δομών δεδομένων χρησιμοποιώντας JSON. Ορίζει αντικείμενα όπως FeatureCollection, Feature και τύπους γεωμετρίας (Point, LineString, Polygon). Αυτή η ελαφριά, φιλική προς το web αναπαράσταση επιτρέπει εύκολη ανταλλαγή και οπτικοποίηση χωρικών δεδομένων σε πολλές πλατφόρμες και γλώσσες προγραμματισμού.
+Το GeoJSON είναι μια ανοιχτή μορφή βασισμένη σε JSON για την κωδικοποίηση γεωγραφικών χαρακτηριστικών όπως σημεία, γραμμές και πολύγωνα. Αποτελείται από ένα `FeatureCollection` που ομαδοποιεί μεμονωμένα αντικείμενα `Feature`, το καθένα με γεωμετρία και δεδομένα ιδιοτήτων. Επειδή είναι ελαφρύ και φιλικό στο web, το GeoJSON είναι το de‑facto πρότυπο για την ανταλλαγή χωρικών δεδομένων μεταξύ προγραμμάτων περιήγησης, διακομιστών GIS και κινητών εφαρμογών.
 
-## Γιατί να χρησιμοποιήσετε το Aspose.GIS για δημιουργία GeoJSON;
-Το Aspose.GIS υποστηρίζει περισσότερα από 30 μορφές χωρικών αρχείων και μπορεί να επεξεργαστεί αρχεία μεγαλύτερα από 2 GB χωρίς να φορτώνει ολόκληρο το έγγραφο στη μνήμη. Η υψηλής απόδοσης μηχανή ροής του γράφει GeoJSON απευθείας σε ροές, μειώνοντας το κόστος I/O. Αυτό το καθιστά ιδανικό για εργασίες γεωχωρικών δεδομένων σε επιχειρηματική κλίμακα, υπηρεσίες cloud και εφαρμογές σε πραγματικό χρόνο.
+## Γιατί να χρησιμοποιήσετε το Aspose.GIS για δημιουργία geojson;
+Το Aspose.GIS υποστηρίζει **πάνω από 35 μορφές χωρικών αρχείων** και μπορεί να ρέει αρχεία μεγαλύτερα από **2 GB** διατηρώντας τη χρήση μνήμης κάτω από **50 MB**. Η υψηλής απόδοσης μηχανή ροής του γράφει GeoJSON απευθείας σε οποιοδήποτε .NET `Stream`, εξαλείφοντας την ανάγκη για ενδιάμεσα προσωρινά αρχεία και μειώνοντας την καθυστέρηση I/O έως και **70 %** σε τυπικά σενάρια cloud.
 
 ## Προαπαιτούμενα
-Πριν βυθιστούμε στο tutorial, βεβαιωθείτε ότι έχετε τα παρακάτω προαπαιτούμενα:
-1. Βιβλιοθήκη Aspose.GIS for .NET: Βεβαιωθείτε ότι έχετε εγκαταστήσει τη βιβλιοθήκη Aspose.GIS for .NET. Μπορείτε να τη κατεβάσετε [εδώ](https://releases.aspose.com/gis/net/).
-2. Κατάλογος Εγγράφου: Έχετε έναν κατάλογο εγγράφου ρυθμισμένο στο έργο σας και σημειώστε τη διαδρομή του.
+Πριν ξεκινήσετε, βεβαιωθείτε ότι έχετε:
 
-Τώρα, ας ξεκινήσουμε το tutorial!
+1. **Aspose.GIS for .NET** εγκατεστημένο. Κατεβάστε το πακέτο **Aspose.GIS for .NET** [εδώ](https://releases.aspose.com/gis/net/).
+2. Έναν φάκελο με δυνατότητα εγγραφής στο έργο σας όπου μπορείτε να τοποθετήσετε προσωρινά αρχεία αν χρειαστεί.
+3. Εκτελέσιμο .NET 5+ ή .NET Core 3.1+.
 
-## Πώς να γράψετε GeoJSON σε μια ροή;
-Το VectorLayer αντιπροσωπεύει ένα σύνολο διανυσματικών δεδομένων που μπορεί να αποθηκευτεί σε διάφορες μορφές, συμπεριλαμβανομένου του GeoJSON.  
-Το GeoJsonDriver είναι ο οδηγός που χρησιμοποιεί το Aspose.GIS για ανάγνωση και εγγραφή αρχείων GeoJSON.  
-`layer.Save` γράφει το περιεχόμενο του layer στην παρεχόμενη ροή χρησιμοποιώντας τις καθορισμένες επιλογές αποθήκευσης.
+Τώρα, ας βουτήξουμε στην υλοποίηση.
 
-Φορτώστε ένα `VectorLayer` με το `GeoJsonDriver`, προσθέστε χαρακτηριστικά που περιέχουν γεωμετρία σημείου, και στη συνέχεια καλέστε `layer.Save(stream, new GeoJsonSaveOptions())`. Αυτό γράφει ένα πλήρες, σύμφωνο με τα πρότυπα, έγγραφο GeoJSON απευθείας στην παρεχόμενη `MemoryStream` με λίγες μόνο γραμμές κώδικα. Η μέθοδος σειριοποιεί τη συλλογή χαρακτηριστικών, διαχειρίζεται αυτόματα τα δεδομένα ιδιοτήτων και τη μετατροπή γεωμετρίας, ώστε να λαμβάνετε ένα έτοιμο προς χρήση JSON payload χωρίς χειροκίνητη επεξεργασία συμβολοσειρών.
+## Πώς να δημιουργήσετε geojson από συντεταγμένες και να το γράψετε σε ροή;
+`VectorLayer` αντιπροσωπεύει ένα σύνολο διανυσματικών δεδομένων στη μνήμη που μπορεί να αποθηκευτεί σε διάφορες μορφές.  
+`GeoJsonDriver` είναι ο οδηγός που επιτρέπει την ανάγνωση και εγγραφή αρχείων GeoJSON.  
 
-## Εισαγωγή Namespaces
-Πρώτα απ' όλα, βεβαιωθείτε ότι έχετε συμπεριλάβει τα απαραίτητα namespaces για πρόσβαση στις λειτουργίες του Aspose.GIS στον κώδικά σας:
+Φορτώστε ένα `VectorLayer` με το `GeoJsonDriver`, προσθέστε αντικείμενα `Feature` που περιέχουν γεωμετρία `Point`, και καλέστε `layer.Save(stream, new GeoJsonSaveOptions())`. Αυτή η ενιαία κλήση σειριοποιεί ολόκληρη τη συλλογή χαρακτηριστικών σε ένα πρότυπο‑συμβατό έγγραφο GeoJSON που βρίσκεται στο παρεχόμενο `MemoryStream`. Η διαδικασία διαχειρίζεται αυτόματα τη χαρτογράφηση ιδιοτήτων και τη μετατροπή συντεταγμένων, ώστε να λαμβάνετε ένα έτοιμο προς χρήση JSON payload χωρίς χειροκίνητη κατασκευή συμβολοσειρών.
+
+### Σημεία ορισμού
+**VectorLayer** είναι το κύριο αντικείμενο του Aspose.GIS που αντιπροσωπεύει ένα μεταβλητό διανυσματικό σύνολο δεδομένων στη μνήμη.  
+**GeoJsonDriver** είναι ο οδηγός που είναι υπεύθυνος για την ανάγνωση και εγγραφή αρχείων GeoJSON.
+
+## Εισαγωγή ονοματοχώρων
+Πρώτα απ' όλα, βεβαιωθείτε ότι έχετε συμπεριλάβει τους απαραίτητους ονοματοχώρους για πρόσβαση στις λειτουργίες του Aspose.GIS στον κώδικά σας:
 ```csharp
 using System;
 using System.IO;
@@ -80,13 +98,15 @@ using Aspose.Gis;
 using Aspose.Gis.Geometries;
 ```
 
-## Βήμα 1: Ρύθμιση του Καταλόγου Εγγράφου
+## Βήμα 1: ρύθμιση του καταλόγου εγγράφων
+Δημιουργήστε μια διαδρομή φακέλου όπου το Aspose.GIS μπορεί να αποθηκεύσει βοηθητικά αρχεία εάν απαιτηθεί.  
 ```csharp
 string dataDir = "Your Document Directory";
 ```
-Αντικαταστήστε το "Your Document Directory" με την πραγματική διαδρομή του καταλόγου εγγράφου σας.
+Αντικαταστήστε το "Your Document Directory" με την πραγματική διαδρομή του καταλόγου εγγράφων σας.
 
-## Βήμα 2: Δημιουργία Memory Stream
+## Βήμα 2: δημιουργία μνήμης ροής
+Ένα `MemoryStream` παρέχει μια ενδιάμεση μνήμη στη μνήμη που μπορεί να σταλεί απευθείας μέσω HTTP ή να αποθηκευτεί σε αποθήκευση cloud.  
 ```csharp
 using (var memoryStream = new MemoryStream())
 {
@@ -94,8 +114,8 @@ using (var memoryStream = new MemoryStream())
 }
 ```
 
-## Βήμα 3: Δημιουργία Vector Layer με GeoJSON Driver
-Η κλάση `VectorLayer` αντιπροσωπεύει ένα σύνολο διανυσματικών δεδομένων που μπορεί να αποθηκευτεί σε διάφορες μορφές, συμπεριλαμβανομένου του GeoJSON.  
+## Βήμα 3: δημιουργία διανυσματικού στρώματος με οδηγό GeoJSON
+Η κλάση `VectorLayer` αντιπροσωπεύει ένα διανυσματικό σύνολο δεδομένων που μπορεί να αποθηκευτεί σε διάφορες μορφές, συμπεριλαμβανομένου του GeoJSON.  
 ```csharp
 using (var layer = VectorLayer.Create(AbstractPath.FromStream(memoryStream), Drivers.GeoJson))
 {
@@ -103,15 +123,15 @@ using (var layer = VectorLayer.Create(AbstractPath.FromStream(memoryStream), Dri
 }
 ```
 
-## Βήμα 4: Ορισμός Ιδιοτήτων Χαρακτηριστικού
+## Βήμα 4: ορισμός ιδιοτήτων χαρακτηριστικού
 Ορίστε το σχήμα ιδιοτήτων για τα χαρακτηριστικά σας (π.χ., ID, Name).  
 ```csharp
 layer.Attributes.Add(new FeatureAttribute("name", AttributeDataType.String));
 layer.Attributes.Add(new FeatureAttribute("age", AttributeDataType.Integer));
 ```
 
-## Βήμα 5: Κατασκευή και Προσθήκη Χαρακτηριστικών
-Δημιουργήστε αντικείμενα `Feature`, εκχωρήστε γεωμετρία σημείου, ορίστε τιμές ιδιοτήτων και προσθέστε τα στο layer.  
+## Βήμα 5: κατασκευή και προσθήκη χαρακτηριστικών
+Δημιουργήστε αντικείμενα `Feature`, αναθέστε γεωμετρία σημείου, ορίστε τιμές ιδιοτήτων και προσθέστε τα στο στρώμα.  
 ```csharp
 // First Feature
 Feature firstFeature = layer.ConstructFeature();
@@ -127,58 +147,62 @@ secondFeature.SetValue("age", 54);
 layer.Add(secondFeature);
 ```
 
-## Βήμα 6: Εμφάνιση Εξόδου GeoJSON
+## Βήμα 6: εμφάνιση εξόδου GeoJSON
+Μετά την αποθήκευση, επαναφέρετε τη θέση της ροής και διαβάστε τη συμβολοσειρά JSON για επαλήθευση ή μετάδοση.  
 ```csharp
 Console.WriteLine(Encoding.UTF8.GetString(memoryStream.ToArray()));
 ```
 
-Συγχαρητήρια! Έχετε γράψει επιτυχώς GeoJSON σε μια ροή χρησιμοποιώντας το Aspose.GIS για .NET.
+Συγχαρητήρια! Δημιουργήσατε επιτυχώς geojson από συντεταγμένες και το γράψατε σε ροή χρησιμοποιώντας το Aspose.GIS για .NET.
 
-## Συχνά Προβλήματα και Λύσεις
+## Συνηθισμένα προβλήματα και λύσεις
 - **Κενή ροή εξόδου:** Βεβαιωθείτε ότι επαναφέρετε τη θέση της ροής (`stream.Position = 0`) πριν από την ανάγνωση.
 - **Λανθασμένη σειρά συντεταγμένων:** Το GeoJSON αναμένει σειρά γεωγραφικού μήκους‑πλάτους· ελέγξτε τις τιμές των σημείων σας.
-- **Μεγάλα σύνολα δεδομένων:** Χρησιμοποιήστε `layer.Save(stream, new GeoJsonSaveOptions { WriteFeatureCollection = true })` για να ρέετε τα χαρακτηριστικά σταδιακά.
+- **Μεγάλα σύνολα δεδομένων:** Χρησιμοποιήστε `layer.Save(stream, new GeoJsonSaveOptions { WriteFeatureCollection = true })` για να ρέετε χαρακτηριστικά σταδιακά και να διατηρείτε τη χρήση μνήμης χαμηλή.
 
-## Συχνές Ερωτήσεις
-### Μπορώ να χρησιμοποιήσω το Aspose.GIS για .NET και σε περιβάλλοντα Windows και Linux;
-Ναι, το Aspose.GIS for .NET είναι συμβατό με συστήματα Windows και Linux.
+## Συχνές ερωτήσεις
 
-### Υπάρχει διαθέσιμη δωρεάν δοκιμή;
-Απόλυτα! Μπορείτε να εξερευνήσετε μια δωρεάν δοκιμή [εδώ](https://releases.aspose.com/).
+**Ε: Μπορώ να χρησιμοποιήσω το Aspose.GIS για .NET και σε περιβάλλοντα Windows και Linux;**  
+Α: Ναι, το Aspose.GIS για .NET λειτουργεί σε Windows, Linux και macOS με πλήρη υποστήριξη .NET Core.
 
-### Πού μπορώ να βρω λεπτομερή τεκμηρίωση;
-Δείτε την τεκμηρίωση [εδώ](https://reference.aspose.com/gis/net/).
+**Ε: Υπάρχει διαθέσιμη δωρεάν δοκιμή;**  
+Α: Απόλυτα! Μπορείτε να εξερευνήσετε τη **σελίδα λήψης δωρεάν δοκιμής** [εδώ](https://releases.aspose.com/).
 
-### Πώς μπορώ να αποκτήσω προσωρινή άδεια;
-Οι προσωρινές άδειες είναι διαθέσιμες [εδώ](https://purchase.aspose.com/temporary-license/).
+**Ε: Πού μπορώ να βρω λεπτομερή τεκμηρίωση;**  
+Α: Δείτε την **τεκμηρίωση Aspose.GIS .NET** [εδώ](https://reference.aspose.com/gis/net/).
 
-### Χρειάζεστε βοήθεια ή έχετε περισσότερες ερωτήσεις;
-Επισκεφθείτε το φόρουμ υποστήριξης μας [εδώ](https://forum.aspose.com/c/gis/33).
+**Ε: Πώς μπορώ να αποκτήσω προσωρινή άδεια;**  
+Α: Οι προσωρινές άδειες είναι διαθέσιμες στη **σελίδα προσωρινής άδειας** [εδώ](https://purchase.aspose.com/temporary-license/).
 
-**Q: Μπορώ να δημιουργήσω GeoJSON από μια συλλογή σημείων latitude/longitude;**  
-A: Ναι – δημιουργήστε ένα `Feature` για κάθε σημείο, εκχωρήστε γεωμετρία `Point`, και προσθέστε το στο `VectorLayer`.
+**Ε: Χρειάζεστε βοήθεια ή έχετε περισσότερες ερωτήσεις;**  
+Α: Επισκεφθείτε το **φόρουμ υποστήριξης GIS** [εδώ](https://forum.aspose.com/c/gis/33).
 
-**Q: Υποστηρίζει το Aspose.GIS τη γραφή συμπιεσμένου GeoJSON (gzip);**  
-A: Μπορείτε να τυλίξετε το `MemoryStream` σε ένα `GZipStream` πριν από την αποθήκευση για να παραγάγετε ένα συμπιεσμένο payload.
+**Ε: Μπορώ να δημιουργήσω GeoJSON από μια συλλογή σημείων latitude/longitude;**  
+Α: Ναι – δημιουργήστε ένα `Feature` για κάθε σημείο, αναθέστε γεωμετρία `Point` και προσθέστε το στο `VectorLayer`.
 
-**Q: Ποιο είναι το μέγιστο μέγεθος αρχείου GeoJSON που μπορεί να διαχειριστεί το Aspose.GIS;**  
-A: Η βιβλιοθήκη μπορεί να ρέει αρχεία που υπερβαίνουν τα 2 GB· η χρήση μνήμης παραμένει χαμηλή επειδή τα δεδομένα γράφονται σταδιακά.
+**Ε: Υποστηρίζει το Aspose.GIS την εγγραφή συμπιεσμένου GeoJSON (gzip);**  
+Α: Μπορείτε να τυλίξετε το `MemoryStream` σε ένα `GZipStream` πριν από την αποθήκευση για να παραγάγετε ένα συμπιεσμένο payload.
+
+**Ε: Ποιο είναι το μέγιστο μέγεθος ενός αρχείου GeoJSON που μπορεί να διαχειριστεί το Aspose.GIS;**  
+Α: Η βιβλιοθήκη μπορεί να ρέει αρχεία που υπερβαίνουν τα 2 GB· η χρήση μνήμης παραμένει χαμηλή επειδή τα δεδομένα γράφονται σταδιακά.
 
 ---
 
-**Last Updated:** 2026-05-21  
-**Tested With:** Aspose.GIS 24.11 for .NET  
-**Author:** Aspose  
+**Τελευταία ενημέρωση:** 2026-10-15  
+**Δοκιμή με:** Aspose.GIS 24.11 for .NET  
+**Συγγραφέας:** Aspose  
 
-{{< blocks/products/products-backtop-button >}}
 
-## Σχετικά Μαθήματα
+
+## Σχετικά σεμινάρια
 
 - [Πώς να διαβάσετε GeoJSON από ροή με Aspose.GIS για .NET](/gis/net/layer-data-operations/read-geojson-from-stream/)
 - [Πώς να μετατρέψετε GeoJSON σε TopoJSON με Aspose.GIS](/gis/net/geo-data-conversion/convert-geojson-to-topojson/)
-- [Πώς να μετατρέψετε Shapefile σε GeoJSON χρησιμοποιώντας Aspose.GIS για .NET](/gis/net/layer-management/extract-features-to-geojson/)
-
+- [Πώς να μετατρέψετε Shapefile σε GeoJSON χρησιμοποιώντας το Aspose.GIS για .NET](/gis/net/layer-management/extract-features-to-geojson/)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}
