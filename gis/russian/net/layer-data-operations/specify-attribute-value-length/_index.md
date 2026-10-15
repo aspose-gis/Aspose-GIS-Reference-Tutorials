@@ -1,25 +1,32 @@
 ---
-date: 2026-05-16
-description: Пример векторного слоя, показывающий, как установить ширину поля, задать
-  ширину атрибута и добавить длину атрибута в Aspose.GIS для .NET – полное пошаговое
-  руководство.
+date: 2026-10-15
+description: Создание ширины атрибутов shapefile с помощью Aspose.GIS for .NET – пошаговое
+  руководство, показывающее, как задать ширину поля, определить длину атрибута и эффективно
+  добавлять атрибуты.
 keywords:
+- create shapefile attribute width
+- set field width shapefile
+- Aspose.GIS attribute width
 - vector layer example
-- how to set width
-- set field width
-- define attribute width
-- add attribute length
-linktitle: Как установить ширину поля
+- define attribute length
+lastmod: 2026-10-15
+linktitle: Как задать Field Width
+og_description: Создание ширины атрибутов shapefile с помощью Aspose.GIS for .NET.
+  Узнайте, как задать field width, определить attribute length и поддерживать согласованность
+  ваших GIS‑данных.
+og_image_alt: Guide showing how to create shapefile attribute width using Aspose.GIS
+  for .NET
+og_title: Создание ширины атрибутов shapefile с использованием Aspose.GIS for .NET
 schemas:
 - author: Aspose
-  dateModified: '2026-05-16'
-  description: Vector layer example showing how to set field width, define attribute
-    width, and add attribute length in Aspose.GIS for .NET – a complete step‑by‑step
-    guide.
-  headline: Vector Layer Example – How to Set Field Width in Aspose.GIS for .NET
+  dateModified: '2026-10-15'
+  description: Create shapefile attribute width with Aspose.GIS for .NET – step‑by‑step
+    guide showing how to set field width, define attribute length, and add attributes
+    efficiently.
+  headline: Create shapefile attribute width using Aspose.GIS for .NET
   type: TechArticle
 - questions:
-  - answer: You can acquire a temporary license [here](https://purchase.aspose.com/temporary-license/).
+  - answer: You can acquire a temporary license [temporary license](https://purchase.aspose.com/temporary-license/).
     question: How can I obtain a temporary license for Aspose.GIS for .NET?
   - answer: Visit the [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) for peer‑to‑peer
       help and official responses.
@@ -27,14 +34,42 @@ schemas:
   - answer: Yes, explore the [free trial](https://releases.aspose.com/) to experience
       the full feature set without cost.
     question: Is there a free trial available for Aspose.GIS for .NET?
-  - answer: Purchase your license [here](https://purchase.aspose.com/buy).
+  - answer: Purchase your license [purchase a license](https://purchase.aspose.com/buy).
     question: How do I purchase a license for Aspose.GIS for .NET?
   - answer: Refer to the [documentation](https://reference.aspose.com/gis/net/) for
       comprehensive API details.
     question: Where can I access the documentation for Aspose.GIS for .NET?
   type: FAQPage
 second_title: Aspose.GIS .NET API
-title: Пример векторного слоя – Как установить ширину поля в Aspose.GIS для .NET
+tags:
+- shapefile
+- Aspose.GIS
+- .NET GIS
+- attribute width
+- vector layer
+- author: Aspose
+  dateModified: '2026-10-15'
+  description: Create shapefile attribute width with Aspose.GIS for .NET – step‑by‑step
+    guide showing how to set field width, define attribute length, and add attributes
+    efficiently.
+  headline: Create shapefile attribute width using Aspose.GIS for .NET
+  type: TechArticle
+- questions:
+  - answer: You can acquire a temporary license [temporary license](https://purchase.aspose.com/temporary-license/).
+    question: How can I obtain a temporary license for Aspose.GIS for .NET?
+  - answer: Visit the [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) for peer‑to‑peer
+      help and official responses.
+    question: Where can I find community support for Aspose.GIS for .NET?
+  - answer: Yes, explore the [free trial](https://releases.aspose.com/) to experience
+      the full feature set without cost.
+    question: Is there a free trial available for Aspose.GIS for .NET?
+  - answer: Purchase your license [purchase a license](https://purchase.aspose.com/buy).
+    question: How do I purchase a license for Aspose.GIS for .NET?
+  - answer: Refer to the [documentation](https://reference.aspose.com/gis/net/) for
+      comprehensive API details.
+    question: Where can I access the documentation for Aspose.GIS for .NET?
+  type: FAQPage
+title: Создание ширины атрибутов shapefile с использованием Aspose.GIS for .NET
 url: /ru/net/layer-data-operations/specify-attribute-value-length/
 weight: 18
 ---
@@ -43,9 +78,9 @@ weight: 18
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Пример векторного слоя – Как задать ширину поля в Aspose.GIS для .NET
+# Создание ширины атрибута shapefile с использованием Aspose.GIS для .NET
 
-В этом **примерe векторного слоя** вы узнаете, как задать ширину поля для атрибута при создании Shapefile с помощью Aspose.GIS для .NET. Мы пройдем каждый шаг, от импорта пространств имён до добавления объекта, и объясним, почему контроль длины атрибутов важен для целостности данных и совместимости с другими GIS‑инструментами.
+В этом примере с векторным слоем вы узнаете, как **создать ширину атрибута shapefile** при генерации Shapefile с помощью Aspose.GIS для .NET. Управление длиной атрибута важно для целостности данных, особенно при обмене файлами с другими GIS‑инструментами, которые ожидают столбец DBF фиксированного размера.
 
 ## Быстрые ответы
 - **Какова основная цель данного руководства?** Показать, как задать ширину поля для атрибута в shapefile с использованием Aspose.GIS для .NET.  
@@ -55,25 +90,20 @@ weight: 18
 - **Можно ли изменить ширину после создания слоя?** Нет — ширина должна быть определена до добавления объектов.
 
 ## Что такое ширина поля и почему это важно?
+Ширина поля — это максимальное количество символов, которое строковый столбец может хранить в компоненте DBF Shapefile. Правильная настройка предотвращает бесшумное усечение, гарантирует, что другие GIS‑приложения читают данные точно так, как вы их ввели, и делает размер файла предсказуемым — каждый дополнительный символ добавляет один байт на запись.
+
 Ширина поля (также называемая длиной атрибута) — это максимальное количество символов, которое строковое поле может хранить в компоненте DBF Shapefile. Установка правильной ширины предотвращает бесшумное усечение, гарантирует, что другие GIS‑приложения читают данные точно так, как вы их ввели, и делает размер файла предсказуемым — каждый дополнительный символ добавляет один байт на запись.
 
-## Предварительные требования
-- **Библиотека Aspose.GIS для .NET** — загрузить по [ссылке для скачивания](https://releases.aspose.com/gis/net/).  
-- **Среда разработки** — Visual Studio 2022, Visual Studio Code или любой IDE, поддерживающий .NET 6+.  
-- **Права записи** — папка на диске, куда будет сохранён сгенерированный shapefile.
+## Зачем использовать пример векторного слоя с заданной шириной?
+Задание ширины заранее устраняет выделение по умолчанию в 255 символов, что может добавить до 255 × количествоЗаписей байт. Для набора данных из 10 000 записей это дополнительное пространство составит примерно **2,5 МБ** — заметный накладной расход для крупных проектов. Точная ширина также обеспечивает совместимость со старыми GIS‑инструментами, требующими строгих схем DBF.
 
-## Почему использовать пример векторного слоя с заданной шириной?
-Aspose.GIS поддерживает **более 30 форматов GIS‑файлов**, включая Shapefile, GeoJSON, KML и GML. Когда вы явно задаёте ширину поля, вы избегаете ограничения по умолчанию в 255 символов, которое может ненужно раздувать файл `.dbf` до 255 × количествоЗаписей байт. В больших наборах данных это приводит к заметной экономии места.
+Точная ширина также обеспечивает совместимость со старыми GIS‑инструментами, требующими строгих схем DBF. Для набора данных из 10 000 записей выделение по умолчанию в 255 символов добавит примерно 2,5 МБ лишних данных, тогда как поле в 50 символов экономит около 2 МБ.
 
 ## Как задать ширину поля для атрибута?
-В этом разделе мы загружаем или создаём `VectorLayer`, указывающий на целевой файл `.shp`, определяем строковый атрибут с точной шириной, а затем добавляем объекты — всё в нескольких лаконичных инструкциях. `VectorLayer` представляет векторный набор данных, такой как Shapefile, и предоставляет доступ к его геометрии и таблице атрибутов. Ниже приведён прямой, практический рецепт, которому можно следовать шаг за шагом:
-
-Загрузите или создайте `VectorLayer`, указывающий на целевой файл `.shp`, объявите строковый атрибут с именем **wide** и `Width = 120`, затем добавьте объект, значение которого укладывается в ограничение в 120 символов. Aspose.GIS автоматически усечёт любую более длинную строку до заданной ширины, сохраняя согласованность данных без выброса исключений.
+Загрузите или создайте `VectorLayer`, указывающий на целевой файл `.shp`, объявите строковый атрибут с именем **wide** и `Width = 120`, затем добавьте объект, значение которого соблюдает ограничение в 120 символов. Aspose.GIS автоматически усечёт любую более длинную строку до заданной ширины, сохраняя согласованность данных без выброса исключений.
 
 ### Импорт пространств имён
-`FeatureAttribute`, `VectorLayer` и связанные типы находятся в пространстве имён `Aspose.Gis`. Импортируйте их в начале вашего файла:
-
-Пространство имён `Aspose.Gis` предоставляет основные GIS‑объекты, с которыми вы будете работать, такие как `VectorLayer`, `Feature` и `FeatureAttribute`. Импортируя его, вы делаете классы доступными без необходимости указывать полные имена.
+`FeatureAttribute`, `VectorLayer` и связанные типы принадлежат библиотеке Aspose.GIS. Импортируйте их в начале вашего файла:
 
 ```csharp
 using Aspose.Gis;
@@ -87,8 +117,6 @@ using System.Threading.Tasks;
 ### Создание VectorLayer
 Класс `VectorLayer` представляет векторный источник данных (например, Shapefile). Это контейнер, который хранит объекты и их атрибуты.
 
-Класс `VectorLayer` — это представление Aspose.GIS векторного набора данных, управляющего геометрией и таблицами атрибутов в памяти. Создайте экземпляр, указывающий на новый или существующий файл `.shp`.
-
 ```csharp
 string dataDir = "Your Document Directory";
 using (VectorLayer layer = VectorLayer.Create(dataDir + "SpecifyAttributeValueLength_out.shp", Drivers.Shapefile))
@@ -97,10 +125,8 @@ using (VectorLayer layer = VectorLayer.Create(dataDir + "SpecifyAttributeValueLe
 }
 ```
 
-### Добавление атрибута с конкретной длиной
-Определите строковый атрибут с именем **wide** и задайте его свойство `Width` равным 120 символам. Это основной шаг **примера векторного слоя**.
-
-Объект `FeatureAttribute` описывает колонку в таблице атрибутов; установка `Width = 120` указывает записывающему Shapefile выделить ровно 120 байт для каждой записи этого поля.
+### Добавление атрибута с определённой длиной
+Объект `FeatureAttribute` описывает столбец в таблице атрибутов; установка `Width = 120` указывает записывающему Shapefile выделять ровно 120 байт для каждой записи этого поля.
 
 ```csharp
 FeatureAttribute attribute = new FeatureAttribute("wide", AttributeDataType.String);
@@ -108,11 +134,9 @@ attribute.Width = 120;
 layer.Attributes.Add(attribute);
 ```
 
-> **Совет:** Свойство `Width` применяется только к строковым атрибутам. Для числовых, датовых или логических полей `Width` игнорируется, так как их размер фиксирован типом данных.
+> **Полезный совет:** Свойство `Width` применяется только к строковым атрибутам. Для числовых, датовых или логических полей `Width` игнорируется, поскольку их размер фиксирован типом данных.
 
 ### Создание и добавление объекта
-Создайте `Feature`, присвойте значение, которое укладывается в ограничение в 120 символов, и добавьте его в слой. Если строка превышает лимит, Aspose.GIS бесшумно усечёт её до заданной ширины, сохраняя целостность данных.
-
 Класс `Feature` инкапсулирует геометрию и значения атрибутов; после установки атрибута вызов `layer.Add(feature)` записывает запись в Shapefile.
 
 ```csharp
@@ -123,53 +147,53 @@ layer.Add(feature);
 
 Если попытаться присвоить более длинную строку, Aspose.GIS усечёт её до заданной ширины, сохраняя целостность данных.
 
-## Распространённые ошибки и устранение неполадок
+## Распространённые подводные камни и устранение неполадок
 - **Забыли установить `Width` перед добавлением атрибута?** Ширина по умолчанию — 255 символов; изменение позже не влияет на уже созданные поля. Всегда задавайте ширину сначала.  
 - **Используете тип данных, отличный от строки?** `Width` игнорируется для числовых или датовых полей; убедитесь, что `AttributeDataType` атрибута установлен в `String`.  
-- **Ошибка «Поле не найдено»?** Имена атрибутов чувствительны к регистру. Убедитесь, что имя, используемое в `SetValue`, точно соответствует имени, определённому в схеме.  
-- **Неожиданное увеличение размера файла?** Большие ширины линейно увеличивают размер `.dbf`. Для 10 000 записей увеличение ширины с 50 до 120 добавит примерно 700 KB.
+- **Ошибка «Поле не найдено»?** Имена атрибутов чувствительны к регистру. Убедитесь, что имя, использованное в `SetValue`, точно совпадает с именем, определённым в схеме.  
+- **Неожиданный рост размера файла?** Большие ширины увеличивают размер `.dbf` линейно. Для 10 000 записей увеличение ширины с 50 до 120 добавит примерно 700 KB.
 
 ## Часто задаваемые вопросы
-**В: Как получить временную лицензию для Aspose.GIS для .NET?**  
-О: Вы можете получить временную лицензию [здесь](https://purchase.aspose.com/temporary-license/).
+**Q: Как я могу получить временную лицензию для Aspose.GIS для .NET?**  
+A: Вы можете получить временную лицензию [temporary license](https://purchase.aspose.com/temporary-license/).
 
-**В: Где можно найти поддержку сообщества для Aspose.GIS для .NET?**  
-О: Посетите [форум Aspose.GIS](https://forum.aspose.com/c/gis/33) для помощи от коллег и официальных ответов.
+**Q: Где я могу найти поддержку сообщества для Aspose.GIS для .NET?**  
+A: Посетите [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) для помощи от коллег и официальных ответов.
 
-**В: Доступна ли бесплатная пробная версия Aspose.GIS для .NET?**  
-О: Да, ознакомьтесь с [бесплатной пробной версией](https://releases.aspose.com/), чтобы испытать полный набор функций без оплаты.
+**Q: Доступна ли бесплатная пробная версия Aspose.GIS для .NET?**  
+A: Да, изучите [free trial](https://releases.aspose.com/) чтобы испытать полный набор функций без оплаты.
 
-**В: Как приобрести лицензию для Aspose.GIS для .NET?**  
-О: Приобретите лицензию [здесь](https://purchase.aspose.com/buy).
+**Q: Как приобрести лицензию для Aspose.GIS для .NET?**  
+A: Приобретите лицензию по ссылке [purchase a license](https://purchase.aspose.com/buy).
 
-**В: Где можно найти документацию по Aspose.GIS для .NET?**  
-О: Обратитесь к [документации](https://reference.aspose.com/gis/net/) для подробных сведений об API.
+**Q: Где я могу получить доступ к документации Aspose.GIS для .NET?**  
+A: Обратитесь к [documentation](https://reference.aspose.com/gis/net/) для подробных сведений об API.
 
-**В: Можно ли изменить ширину поля после создания слоя?**  
-О: Нет. Ширина поля должна быть определена до добавления атрибута; чтобы изменить её, необходимо пересоздать слой с новой схемой.
+**Q: Можно ли изменить ширину поля после создания слоя?**  
+A: Нет. Ширина поля должна быть определена до добавления атрибута; для её изменения необходимо пересоздать слой с новой схемой.
 
-**В: Влияет ли установка большей ширины на размер файла?**  
-О: Shapefile хранит строковые поля фиксированной длины, поэтому увеличение ширины напрямую увеличивает размер файла `.dbf` пропорционально количеству записей.
+**Q: Влияет ли установка большей ширины на размер файла?**  
+A: Shapefile хранит строковые поля фиксированной длины, поэтому увеличение ширины напрямую увеличивает размер файла `.dbf` пропорционально количеству записей.
 
 ## Заключение
-Этот **пример векторного слоя** продемонстрировал, как задать ширину поля для атрибута в Shapefile с помощью Aspose.GIS для .NET, и показал, как эффективно добавить атрибут с конкретной длиной. Контролируя ширину атрибутов, вы избегаете усечения данных, поддерживаете оптимальный размер файлов и обеспечиваете беспрепятственную совместимость с другими GIS‑платформами. Экспериментируйте с разными ширинами, изучайте [документацию](https://reference.aspose.com/gis/net/), и раскрывайте весь потенциал геопространственной разработки с Aspose.GIS.
+Этот пример векторного слоя продемонстрировал, как **создать ширину атрибута shapefile** для атрибута в Shapefile с использованием Aspose.GIS для .NET, и показал, как эффективно добавить атрибут с конкретной длиной. Управляя шириной атрибутов, вы избегаете усечения данных, поддерживаете оптимальный размер файлов и обеспечиваете беспрепятственную совместимость с другими GIS‑платформами. Экспериментируйте с различными ширинами, изучайте [documentation](https://reference.aspose.com/gis/net/), и раскрывайте весь потенциал геопространственной разработки с Aspose.GIS.
 
 ---
 
-**Последнее обновление:** 2026-05-16  
-**Проверено с:** Aspose.GIS 24.11 for .NET  
+**Последнее обновление:** 2026-10-15  
+**Тестировано с:** Aspose.GIS 24.11 for .NET  
 **Автор:** Aspose  
-
-{{< blocks/products/products-backtop-button >}}
+Скачайте последнюю версию Aspose.GIS для .NET по [download link](https://releases.aspose.com/gis/net/).
 
 ## Связанные руководства
 
-- [Получить атрибуты слоя – Получить информацию об атрибутах слоя с Aspose.GIS для .NET](/gis/net/layer-interaction-and-data-access/get-layer-attribute-information/)
+- [Получить атрибуты слоя – Получить информацию об атрибутах слоя с помощью Aspose.GIS для .NET](/gis/net/layer-interaction-and-data-access/get-layer-attribute-information/)
 - [Как получить значение атрибута (по умолчанию) с Aspose.GIS для .NET](/gis/net/layer-interaction-and-data-access/get-feature-attribute-value-default/)
 - [Создание векторного слоя в File GDB – Руководство Aspose.GIS .NET](/gis/net/layer-management/create-file-gdb-with-single-layer/)
-
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

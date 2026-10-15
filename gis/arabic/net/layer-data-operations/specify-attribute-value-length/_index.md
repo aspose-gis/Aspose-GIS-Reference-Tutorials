@@ -1,24 +1,30 @@
 ---
-date: 2026-05-16
-description: مثال على طبقة المتجهات يوضح كيفية ضبط عرض الحقل، تعريف عرض السمة، وإضافة
-  طول السمة في Aspose.GIS لـ .NET – دليل شامل خطوة بخطوة.
+date: 2026-10-15
+description: إنشاء عرض سمة ملف shapefile باستخدام Aspose.GIS for .NET – دليل خطوة
+  بخطوة يوضح كيفية تعيين عرض الحقل، تعريف طول السمة، وإضافة السمات بكفاءة.
 keywords:
+- create shapefile attribute width
+- set field width shapefile
+- Aspose.GIS attribute width
 - vector layer example
-- how to set width
-- set field width
-- define attribute width
-- add attribute length
-linktitle: كيفية ضبط عرض الحقل
+- define attribute length
+lastmod: 2026-10-15
+linktitle: كيفية تعيين عرض الحقل
+og_description: إنشاء عرض سمة ملف shapefile باستخدام Aspose.GIS for .NET. تعلّم كيفية
+  تعيين عرض الحقل، تعريف طول السمة، والحفاظ على تناسق بيانات GIS الخاصة بك.
+og_image_alt: Guide showing how to create shapefile attribute width using Aspose.GIS
+  for .NET
+og_title: إنشاء عرض سمة ملف shapefile باستخدام Aspose.GIS for .NET
 schemas:
 - author: Aspose
-  dateModified: '2026-05-16'
-  description: Vector layer example showing how to set field width, define attribute
-    width, and add attribute length in Aspose.GIS for .NET – a complete step‑by‑step
-    guide.
-  headline: Vector Layer Example – How to Set Field Width in Aspose.GIS for .NET
+  dateModified: '2026-10-15'
+  description: Create shapefile attribute width with Aspose.GIS for .NET – step‑by‑step
+    guide showing how to set field width, define attribute length, and add attributes
+    efficiently.
+  headline: Create shapefile attribute width using Aspose.GIS for .NET
   type: TechArticle
 - questions:
-  - answer: You can acquire a temporary license [here](https://purchase.aspose.com/temporary-license/).
+  - answer: You can acquire a temporary license [temporary license](https://purchase.aspose.com/temporary-license/).
     question: How can I obtain a temporary license for Aspose.GIS for .NET?
   - answer: Visit the [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) for peer‑to‑peer
       help and official responses.
@@ -26,14 +32,42 @@ schemas:
   - answer: Yes, explore the [free trial](https://releases.aspose.com/) to experience
       the full feature set without cost.
     question: Is there a free trial available for Aspose.GIS for .NET?
-  - answer: Purchase your license [here](https://purchase.aspose.com/buy).
+  - answer: Purchase your license [purchase a license](https://purchase.aspose.com/buy).
     question: How do I purchase a license for Aspose.GIS for .NET?
   - answer: Refer to the [documentation](https://reference.aspose.com/gis/net/) for
       comprehensive API details.
     question: Where can I access the documentation for Aspose.GIS for .NET?
   type: FAQPage
 second_title: Aspose.GIS .NET API
-title: مثال على طبقة المتجهات – كيفية ضبط عرض الحقل في Aspose.GIS لـ .NET
+tags:
+- shapefile
+- Aspose.GIS
+- .NET GIS
+- attribute width
+- vector layer
+- author: Aspose
+  dateModified: '2026-10-15'
+  description: Create shapefile attribute width with Aspose.GIS for .NET – step‑by‑step
+    guide showing how to set field width, define attribute length, and add attributes
+    efficiently.
+  headline: Create shapefile attribute width using Aspose.GIS for .NET
+  type: TechArticle
+- questions:
+  - answer: You can acquire a temporary license [temporary license](https://purchase.aspose.com/temporary-license/).
+    question: How can I obtain a temporary license for Aspose.GIS for .NET?
+  - answer: Visit the [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) for peer‑to‑peer
+      help and official responses.
+    question: Where can I find community support for Aspose.GIS for .NET?
+  - answer: Yes, explore the [free trial](https://releases.aspose.com/) to experience
+      the full feature set without cost.
+    question: Is there a free trial available for Aspose.GIS for .NET?
+  - answer: Purchase your license [purchase a license](https://purchase.aspose.com/buy).
+    question: How do I purchase a license for Aspose.GIS for .NET?
+  - answer: Refer to the [documentation](https://reference.aspose.com/gis/net/) for
+      comprehensive API details.
+    question: Where can I access the documentation for Aspose.GIS for .NET?
+  type: FAQPage
+title: إنشاء عرض سمة ملف shapefile باستخدام Aspose.GIS for .NET
 url: /ar/net/layer-data-operations/specify-attribute-value-length/
 weight: 18
 ---
@@ -42,35 +76,32 @@ weight: 18
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# مثال طبقة المتجهات – كيفية تعيين عرض الحقل في Aspose.GIS لـ .NET
+# إنشاء عرض سمة ملف shapefile باستخدام Aspose.GIS لـ .NET
 
-في هذا **مثال طبقة المتجهات** ستتعلم كيفية تعيين عرض الحقل لخاصية عند إنشاء ملف Shapefile باستخدام Aspose.GIS لـ .NET. سنستعرض كل خطوة، من استيراد المساحات الاسمية إلى إضافة ميزة، ونشرح لماذا التحكم في طول الخاصية مهم لسلامة البيانات والت interoperabilty مع أدوات GIS الأخرى.
+في هذا المثال لطبقة المتجهات ستتعلم كيفية **إنشاء عرض سمة ملف shapefile** عند إنشاء Shapefile باستخدام Aspose.GIS لـ .NET. التحكم في طول السمة أمر أساسي لسلامة البيانات، خاصةً عند مشاركة الملفات مع أدوات GIS أخرى تتوقع عمود DBF بحجم ثابت.
 
 ## إجابات سريعة
-- **ما هو الهدف الأساسي من هذا الدليل؟** لإظهار كيفية تعيين عرض الحقل لخاصية في ملف shapefile باستخدام Aspose.GIS لـ .NET.  
+- **ما هو الهدف الأساسي من هذا الدليل؟** إظهار كيفية ضبط عرض الحقل لسمة في ملف shapefile باستخدام Aspose.GIS لـ .NET.  
 - **أي فئة تحدد عرض الحقل؟** `FeatureAttribute.Width`.  
-- **هل أحتاج إلى ترخيص لتشغيل الكود؟** ترخيص مؤقت يعمل للتقييم؛ الترخيص الكامل مطلوب للإنتاج.  
+- **هل أحتاج إلى ترخيص لتشغيل الكود؟** الترخيص المؤقت يعمل للتقييم؛ الترخيص الكامل مطلوب للإنتاج.  
 - **ما هو تنسيق الملف المستخدم في المثال؟** ESRI Shapefile (`.shp`).  
-- **هل يمكنني تغيير العرض بعد إنشاء الطبقة؟** لا – يجب تعريف العرض قبل إضافة الميزات.
+- **هل يمكنني تغيير العرض بعد إنشاء الطبقة؟** لا – يجب تعريف العرض قبل إضافة العناصر.
 
 ## ما هو عرض الحقل ولماذا هو مهم؟
-عرض الحقل (المعروف أيضًا بطول الخاصية) هو الحد الأقصى لعدد الأحرف التي يمكن لحقل سلسلة تخزينها في مكوّن DBF لملف Shapefile. ضبط العرض الصحيح يمنع القطع الصامت، ويضمن أن تطبيقات GIS الأخرى تقرأ البيانات بالضبط كما أدخلتها، ويحافظ على حجم الملف متوقعًا—كل حرف إضافي يضيف بايت واحد لكل سجل.
+عرض الحقل هو الحد الأقصى لعدد الأحرف التي يمكن لعمود النص تخزينها في مكوّن DBF لملف Shapefile. ضبطه بشكل صحيح يمنع القطع الصامت، ويضمن أن تطبيقات GIS الأخرى تقرأ البيانات بالضبط كما أدخلتها، ويحافظ على حجم الملف بشكل متوقع — كل حرف إضافي يضيف بايت واحد لكل سجل.
 
-## المتطلبات المسبقة
-- **مكتبة Aspose.GIS لـ .NET** – التحميل من [download link](https://releases.aspose.com/gis/net/).  
-- **بيئة التطوير** – Visual Studio 2022، Visual Studio Code، أو أي بيئة تطوير تدعم .NET 6+.  
-- **صلاحية الكتابة** – مجلد على القرص حيث سيتم حفظ ملف shapefile المُنشأ.
+عرض الحقل (المعروف أيضًا بطول السمة) هو الحد الأقصى لعدد الأحرف التي يمكن لحقول النص تخزينها في مكوّن DBF لملف Shapefile. ضبط العرض الصحيح يمنع القطع الصامت، ويضمن أن تطبيقات GIS الأخرى تقرأ البيانات بالضبط كما أدخلتها، ويحافظ على حجم الملف بشكل متوقع — كل حرف إضافي يضيف بايت واحد لكل سجل.
 
-## لماذا تستخدم مثال طبقة المتجهات مع عرض محدد؟
-Aspose.GIS يدعم **أكثر من 30 تنسيق ملف GIS**، بما في ذلك Shapefile، GeoJSON، KML، و GML. عندما تقوم بتعيين عرض الحقل صراحةً، تتجنب الحد الافتراضي 255 حرفًا، والذي يمكن أن يضيف حجمًا غير ضروري لملف `.dbf` حتى 255 × عدد_السجلات بايت. في مجموعات البيانات الكبيرة، يترجم ذلك إلى توفير ملحوظ في التخزين.
+## لماذا نستخدم مثال طبقة متجهة مع عرض محدد؟
+تحديد العرض مسبقًا يلغي تخصيص 255 حرفًا افتراضيًا، والذي يمكن أن يضيف حتى 255 × عدد_السجلات بايت. بالنسبة لمجموعة بيانات تحتوي على 10 000 سجل، فإن تلك المساحة الإضافية ستكون تقريبًا **2.5 ميغابايت** — عبء ملحوظ للمشاريع الكبيرة. استخدام عرض دقيق يضمن أيضًا التوافق مع أدوات GIS القديمة التي تفرض مخططات DBF صارمة.
 
-## كيفية تعيين عرض الحقل لخاصية؟
-في هذا القسم نقوم بتحميل أو إنشاء `VectorLayer` يشير إلى ملف `.shp` المستهدف، نحدد خاصية سلسلة بعرض دقيق، ثم نضيف ميزات—كل ذلك في بضع جمل مختصرة. `VectorLayer` يمثل مجموعة بيانات متجهة مثل Shapefile ويوفر الوصول إلى هندستها وجدول الخصائص. أدناه الوصفة المباشرة والقابلة للتنفيذ التي يمكنك اتباعها خطوة بخطوة:
+استخدام عرض دقيق يضمن أيضًا التوافق مع أدوات GIS القديمة التي تفرض مخططات DBF صارمة. بالنسبة لمجموعة بيانات من 10 000 سجل، فإن تخصيص 255 حرفًا افتراضيًا سيضيف تقريبًا 2.5 ميغابايت من البيانات غير الضرورية، بينما حقل بطول 50 حرفًا يوفر حوالي 2 ميغابايت.
 
-قم بتحميل أو إنشاء `VectorLayer` يشير إلى ملف `.shp` المستهدف، أعلن عن خاصية سلسلة باسم **wide** مع `Width = 120`، ثم أضف ميزة تكون قيمتها ضمن حد 120 حرفًا. سيقوم Aspose.GIS تلقائيًا بقطع أي سلسلة أطول إلى العرض المحدد، محافظًا على اتساق البيانات دون إلقاء استثناءات.
+## كيف يتم ضبط عرض الحقل لسمة؟
+حمّل أو أنشئ `VectorLayer` يشير إلى ملف `.shp` المستهدف، أعلن سمة نصية باسم **wide** مع `Width = 120`، ثم أضف عنصرًا تكون قيمته ضمن حد الـ 120 حرفًا. سيقوم Aspose.GIS تلقائيًا بقطع أي سلسلة أطول إلى العرض المحدد، مع الحفاظ على اتساق البيانات دون إلقاء استثناءات.
 
-### استيراد المساحات الاسمية
-`FeatureAttribute`، `VectorLayer`، والأنواع ذات الصلة موجودة في مساحة الاسم `Aspose.Gis`. استوردها في أعلى ملفك:
+### استيراد مساحات الأسماء
+`FeatureAttribute`, `VectorLayer`, and related types belong to the Aspose.GIS library. Import them at the top of your file:
 
 ```csharp
 using Aspose.Gis;
@@ -82,9 +113,7 @@ using System.Threading.Tasks;
 ```
 
 ### إنشاء VectorLayer
-فئة `VectorLayer` تمثل مصدر بيانات متجه (مثل Shapefile). إنها الحاوية التي تحتفظ بالميزات وخصائصها.
-
-فئة `VectorLayer` هي تمثيل Aspose.GIS لمجموعة بيانات متجهة، تدير الهندسة وجداول الخصائص في الذاكرة. أنشئ مثيلًا يشير إلى ملف `.shp` جديد أو موجود.
+فئة `VectorLayer` تمثل مصدر بيانات متجهة (مثل Shapefile). وهي الحاوية التي تحتفظ بالعناصر وسماتها.
 
 ```csharp
 string dataDir = "Your Document Directory";
@@ -94,10 +123,8 @@ using (VectorLayer layer = VectorLayer.Create(dataDir + "SpecifyAttributeValueLe
 }
 ```
 
-### إضافة خاصية بطول محدد
-عرّف خاصية سلسلة تسمى **wide** واضبط خاصية `Width` لها إلى 120 حرفًا. هذه هي الخطوة الأساسية في **مثال طبقة المتجهات**.
-
-كائن `FeatureAttribute` يصف عمودًا في جدول الخصائص؛ ضبط `Width = 120` يخبر كاتب Shapefile بحجز 120 بايت بالضبط لكل سجل من هذا الحقل.
+### إضافة سمة بطول محدد
+كائن `FeatureAttribute` يصف عمودًا في جدول السمات؛ ضبط `Width = 120` يخبر كاتب Shapefile بحجز 120 بايت بالضبط لكل سجل من هذا الحقل.
 
 ```csharp
 FeatureAttribute attribute = new FeatureAttribute("wide", AttributeDataType.String);
@@ -105,12 +132,10 @@ attribute.Width = 120;
 layer.Attributes.Add(attribute);
 ```
 
-> **نصيحة احترافية:** خاصية `Width` تنطبق فقط على خصائص السلسلة. الحقول الرقمية أو التاريخية أو البوليانية تتجاهل `Width` لأن حجمها ثابت حسب نوع البيانات.
+> **نصيحة احترافية:** خاصية `Width` تنطبق فقط على السمات النصية. الحقول الرقمية أو التاريخية أو البوليانية تتجاهل `Width` لأن حجمها ثابت حسب نوع البيانات.
 
-### إنشاء وإضافة ميزة
-أنشئ كائن `Feature`، عيّن قيمة تتناسب مع حد 120 حرفًا، وأضفه إلى الطبقة. إذا تجاوزت السلسلة الحد، سيقوم Aspose.GIS بقطعها صامتًا إلى العرض المحدد، محافظًا على سلامة البيانات.
-
-فئة `Feature` تغلف الهندسة وقيم الخصائص؛ بعد ضبط الخاصية، استدعاء `layer.Add(feature)` يكتب السجل إلى Shapefile.
+### إنشاء وإضافة العنصر
+فئة `Feature` تحوي الهندسة وقيم السمات؛ بعد ضبط السمة، استدعاء `layer.Add(feature)` يكتب السجل إلى Shapefile.
 
 ```csharp
 Feature feature = layer.ConstructFeature();
@@ -118,54 +143,55 @@ feature.SetValue("wide", "this string can be up to 120 characters long now.");
 layer.Add(feature);
 ```
 
-إذا حاولت تعيين سلسلة أطول، سيقوم Aspose.GIS بقطعها إلى العرض المحدد، محافظًا على سلامة البيانات.
+إذا حاولت تعيين سلسلة أطول، سيقوم Aspose.GIS بقطعها إلى العرض المحدد، مع الحفاظ على سلامة البيانات.
 
-## الأخطاء الشائعة & استكشاف الأخطاء وإصلاحها
-- **نسيت ضبط `Width` قبل إضافة الخاصية؟** العرض الافتراضي هو 255 حرفًا؛ تغييره لاحقًا لا يؤثر على الحقول التي تم إنشاؤها بالفعل. دائمًا عرّف العرض أولًا.  
-- **استخدام نوع بيانات غير سلسلة؟** يتم تجاهل `Width` للحقول الرقمية أو التاريخية؛ تأكد من أن `AttributeDataType` للخاصية هو `String`.  
-- **خطأ “Field not found”؟** أسماء الخصائص حساسة لحالة الأحرف. تحقق من أن الاسم المستخدم في `SetValue` يطابق تمامًا الاسم المحدد في المخطط.  
+## الأخطاء الشائعة & استكشاف الأخطاء
+- **نسيت ضبط `Width` قبل إضافة السمة؟** العرض الافتراضي هو 255 حرفًا؛ تغييره لاحقًا لا يؤثر على الحقول التي تم إنشاؤها بالفعل. دائمًا عرّف العرض أولاً.  
+- **استخدام نوع بيانات غير نصي؟** يتم تجاهل `Width` للحقول الرقمية أو التاريخية؛ تأكد من أن `AttributeDataType` للسمة هو `String`.  
+- **خطأ “Field not found”؟** أسماء السمات حساسة لحالة الأحرف. تحقق من أن الاسم المستخدم في `SetValue` يطابق تمامًا الاسم المحدد في المخطط.  
 - **زيادة غير متوقعة في حجم الملف؟** العروض الأكبر تزيد حجم `.dbf` بصورة خطية. بالنسبة لـ 10 000 سجل، زيادة العرض من 50 إلى 120 تضيف تقريبًا 700 KB.
 
 ## الأسئلة المتكررة
 **س: كيف يمكنني الحصول على ترخيص مؤقت لـ Aspose.GIS لـ .NET؟**  
-ج: يمكنك الحصول على ترخيص مؤقت [هنا](https://purchase.aspose.com/temporary-license/).
+ج: يمكنك الحصول على ترخيص مؤقت [temporary license](https://purchase.aspose.com/temporary-license/).
 
 **س: أين يمكنني العثور على دعم المجتمع لـ Aspose.GIS لـ .NET؟**  
-ج: زر [منتدى Aspose.GIS](https://forum.aspose.com/c/gis/33) للحصول على مساعدة من الأقران والردود الرسمية.
+ج: زر [Aspose.GIS forum](https://forum.aspose.com/c/gis/33) للحصول على مساعدة من الأقران والردود الرسمية.
 
 **س: هل هناك نسخة تجريبية مجانية متاحة لـ Aspose.GIS لـ .NET؟**  
-ج: نعم، استكشف [النسخة التجريبية المجانية](https://releases.aspose.com/) لتجربة مجموعة الميزات الكاملة دون تكلفة.
+ج: نعم، استكشف [free trial](https://releases.aspose.com/) لتجربة مجموعة الميزات الكاملة دون تكلفة.
 
 **س: كيف أشتري ترخيصًا لـ Aspose.GIS لـ .NET؟**  
-ج: اشترِ ترخيصك [هنا](https://purchase.aspose.com/buy).
+ج: اشترِ ترخيصك عبر [purchase a license](https://purchase.aspose.com/buy).
 
 **س: أين يمكنني الوصول إلى الوثائق الخاصة بـ Aspose.GIS لـ .NET؟**  
-ج: راجع [الوثائق](https://reference.aspose.com/gis/net/) للحصول على تفاصيل شاملة عن API.
+ج: راجع [documentation](https://reference.aspose.com/gis/net/) للحصول على تفاصيل شاملة عن الـ API.
 
 **س: هل يمكنني تغيير عرض الحقل بعد إنشاء الطبقة؟**  
-ج: لا. يجب تعريف عرض الحقل قبل إضافة الخاصية؛ لتعديله تحتاج إلى إعادة إنشاء الطبقة بالمخطط الجديد.
+ج: لا. يجب تعريف عرض الحقل قبل إضافة السمة؛ لتعديله تحتاج إلى إعادة إنشاء الطبقة بالمخطط الجديد.
 
-**س: هل يؤثر تعيين عرض أكبر على حجم الملف؟**  
-ج: ملفات Shapefile تخزن حقول السلسلة بطول ثابت، لذا زيادة العرض تزيد حجم ملف `.dbf` مباشرةً بما يتناسب مع عدد السجلات.
+**س: هل يؤثر ضبط عرض أكبر على حجم الملف؟**  
+ج: تخزن ملفات Shapefile الحقول النصية بطول ثابت، لذا زيادة العرض تزيد حجم ملف `.dbf` مباشرةً بنسبة عدد السجلات.
 
 ## الخلاصة
-هذا **مثال طبقة المتجهات** أظهر كيفية تعيين عرض الحقل لخاصية في Shapefile باستخدام Aspose.GIS لـ .NET، وأظهر لك كيفية إضافة خاصية بطول محدد بفعالية. من خلال التحكم في عرض الخاصية تتجنب قطع البيانات، وتحافظ على أحجام الملفات مثالية، وتضمن توافقًا سلسًا مع منصات GIS الأخرى. جرّب عروضًا مختلفة، استكشف [الوثائق](https://reference.aspose.com/gis/net/)، واكتشف الإمكانات الكاملة لتطوير الجغرافيا المكانية مع Aspose.GIS.
+أظهر هذا المثال لطبقة المتجهات كيفية **إنشاء عرض سمة ملف shapefile** لسمة في ملف Shapefile باستخدام Aspose.GIS لـ .NET، وأظهر لك كيفية إضافة سمة بطول محدد بفعالية. من خلال التحكم في عرض السمة تتجنب قطع البيانات، وتحافظ على حجم الملفات مثاليًا، وتضمن توافقًا سلسًا مع منصات GIS الأخرى. جرّب عروضًا مختلفة، استكشف [documentation](https://reference.aspose.com/gis/net/)، واكتشف الإمكانات الكاملة لتطوير الجغرافيا المكانية مع Aspose.GIS.
 
 ---
 
-**آخر تحديث:** 2026-05-16  
-**تم الاختبار مع:** Aspose.GIS 24.11 لـ .NET  
+**آخر تحديث:** 2026-10-15  
+**تم الاختبار مع:** Aspose.GIS 24.11 for .NET  
 **المؤلف:** Aspose  
-
-{{< blocks/products/products-backtop-button >}}
+قم بتنزيل أحدث إصدار من Aspose.GIS لـ .NET من [download link](https://releases.aspose.com/gis/net/).
 
 ## دروس ذات صلة
 
-- [الحصول على خصائص الطبقة – استرجاع معلومات خصائص الطبقة باستخدام Aspose.GIS لـ .NET](/gis/net/layer-interaction-and-data-access/get-layer-attribute-information/)
-- [كيفية الحصول على قيمة الخاصية (الافتراضية) باستخدام Aspose.GIS لـ .NET](/gis/net/layer-interaction-and-data-access/get-feature-attribute-value-default/)
-- [إنشاء طبقة متجهة في File GDB – درس Aspose.GIS .NET](/gis/net/layer-management/create-file-gdb-with-single-layer/)
+- [الحصول على سمات الطبقة – استرجاع معلومات سمة الطبقة باستخدام Aspose.GIS لـ .NET](/gis/net/layer-interaction-and-data-access/get-layer-attribute-information/)
+- [كيفية الحصول على قيمة السمة (الافتراضية) باستخدام Aspose.GIS لـ .NET](/gis/net/layer-interaction-and-data-access/get-feature-attribute-value-default/)
+- [إنشاء طبقة متجهة في ملف GDB – درس Aspose.GIS .NET](/gis/net/layer-management/create-file-gdb-with-single-layer/)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}
