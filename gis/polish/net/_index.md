@@ -1,18 +1,24 @@
 ---
-date: 2026-05-31
-description: Dowiedz się, jak przekonwertować shapefile na geojson przy użyciu Aspose.GIS
-  for .NET. Poznaj tworzenie geometrii, przetwarzanie danych przestrzennych oraz samouczki
-  wizualizacji map.
+date: 2026-10-26
+description: Dowiedz się, jak przekonwertować shapefile na GeoJSON przy użyciu Aspose.GIS
+  for .NET. Odkryj samouczki dotyczące geometry creation, spatial data processing
+  i map visualization.
 keywords:
-- how to convert shapefile to geojson
-- shapefile to geojson conversion
+- convert shapefile to geojson
+- how to convert shapefile
+- geojson to shapefile conversion
 - Aspose.GIS .NET
 - geospatial data processing
-- GIS map rendering
+lastmod: 2026-10-26
 linktitle: Samouczki Aspose.GIS for .NET
+og_description: Konwertuj shapefile na GeoJSON przy użyciu Aspose.GIS for .NET. Ten
+  przewodnik pokazuje krok po kroku konwersję, streaming dla dużych plików oraz coordinate
+  reprojection.
+og_image_alt: 'Developer guide: Convert Shapefile to GeoJSON with Aspose.GIS for .NET'
+og_title: Konwertuj shapefile na GeoJSON przy użyciu Aspose.GIS for .NET
 schemas:
 - author: Aspose
-  dateModified: '2026-05-31'
+  dateModified: '2026-10-26'
   description: Learn how to convert shapefile to geojson using Aspose.GIS for .NET.
     Explore geometry creation, spatial data processing, and map visualization tutorials.
   headline: How to Convert Shapefile to GeoJSON with Aspose.GIS for .NET – Comprehensive
@@ -38,8 +44,12 @@ schemas:
       linked above.
     question: Where can I find sample code for converting shapefile to geojson?
   type: FAQPage
-title: Jak przekonwertować shapefile na geojson przy użyciu Aspose.GIS for .NET –
-  Kompleksowe samouczki
+tags:
+- convert shapefile
+- Aspose.GIS
+- .NET GIS development
+- GeoJSON conversion
+title: Jak przekonwertować shapefile na GeoJSON przy użyciu Aspose.GIS for .NET
 url: /pl/net/
 weight: 10
 ---
@@ -52,151 +62,148 @@ weight: 10
 
 ## Wprowadzenie
 
-Czy jesteś gotowy, aby **convert shapefile to geojson** i opanować rozwój geoprzestrzenny z Aspose.GIS dla .NET? Niezależnie od tego, czy potrzebujesz **convert shapefile**, tworzyć interaktywne mapy, czy generować imponujące wizualizacje, to centrum zapewnia jasną mapę drogową. Przeprowadzimy Cię przez wszystkie główne możliwości — od konwersji GeoData po renderowanie map — abyś od razu mógł rozpocząć budowanie potężnych aplikacji GIS.
+Czy jesteś gotowy, aby **convert shapefile to geojson** i opanować rozwój geoprzestrzenny z Aspose.GIS dla .NET? Niezależnie od tego, czy potrzebujesz **convert shapefile**, tworzyć interaktywne mapy lub generować zachwycające wizualizacje, to centrum zapewnia jasną mapę drogową. Przeprowadzimy Cię przez wszystkie główne możliwości — od konwersji GeoData po renderowanie map — abyś od razu mógł zacząć budować potężne aplikacje GIS.
 
 ## Szybkie odpowiedzi
-- **Co oznacza „convert shapefile to geojson”?** Konwertuje dane ESRI Shapefile do szeroko używanego formatu GeoJSON przeznaczonego do map internetowych i interfejsów API.  
-- **Jakie wersje .NET są obsługiwane?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5+ i .NET 6+.  
-- **Czy potrzebuję licencji?** Darmowa wersja próbna działa w celach oceny; licencja komercyjna jest wymagana w środowisku produkcyjnym.  
-- **Czy mogę również przekonwertować GeoJSON z powrotem na Shapefile?** Tak — Aspose.GIS udostępnia dwukierunkowe narzędzia konwersji.  
-- **Czy renderowanie map jest wliczone?** Zdecydowanie — użyj samouczków Map Rendering, aby stylizować i etykietować elementy mapy.
+- **What does “convert shapefile to geojson” mean?** Przekształca dane ESRI Shapefile do szeroko używanego formatu GeoJSON przeznaczonego dla map internetowych i API.  
+- **Which .NET versions are supported?** Obsługiwane wersje .NET: .NET Framework 4.5+, .NET Core 3.1+, .NET 5+ i .NET 6+.  
+- **Do I need a license?** Darmowa wersja próbna działa w celach oceny; licencja komercyjna jest wymagana w środowisku produkcyjnym.  
+- **Can I also convert GeoJSON back to Shapefile?** Tak — Aspose.GIS udostępnia dwukierunkowe narzędzia konwersji.  
+- **Is map rendering included?** Zdecydowanie — użyj samouczków Map Rendering, aby stylizować i etykietować elementy mapy.
 
-## Dlaczego konwertować Shapefile na GeoJSON?
+## Jak przekonwertować shapefile na GeoJSON przy użyciu Aspose.GIS dla .NET?
 
-**Direct answer:** Konwersja Shapefile na GeoJSON zapewnia lekki, tekstowy format, który biblioteki map internetowych takie jak Leaflet, Mapbox i OpenLayers mogą natychmiast wykorzystać, jednocześnie zmniejszając rozmiar pliku nawet o 70 % w porównaniu z binarnym pakietem Shapefile.  
+**VectorLayer.Open** otwiera plik Shapefile i zwraca obiekt `VectorLayer`, który reprezentuje jego cechy. **GeoJsonWriter** zapisuje dane wektorowe do pliku GeoJSON. Załaduj źródłowy Shapefile przy użyciu `VectorLayer.Open("source.shp")`, utwórz `GeoJsonWriter` skierowany na wyjście i wywołaj `writer.Write(layer)`. Ta jednoprzebiegowa operacja strumieniuje dane, utrzymując zużycie pamięci RAM poniżej 200 MB dla 1 GB Shapefile, jednocześnie zachowując wszystkie atrybuty i geometrie dokładnie tak, jak występują w źródle.
 
-Struktura JSON GeoJSON, czytelna dla człowieka, ułatwia debugowanie, a natywne wsparcie dla układu współrzędnych WGS‑84 eliminuje potrzebę dodatkowych kroków reprojekcji w większości scenariuszy internetowych.  
+### Definicja kluczowych klas
+`VectorLayer.Open` otwiera źródło danych wektorowych, takie jak Shapefile. `GeoJsonWriter` zapisuje dane wektorowe do pliku GeoJSON.
 
-Aspose.GIS dla .NET obsługuje **ponad 30 formatów wektorowych i rastrowych**, przetwarza pliki większe niż 500 MB przy użyciu strumieniowania i działa na **Windows, Linux i macOS** bez dodatkowych natywnych zależności.
+## Dlaczego konwertować shapefile na GeoJSON?
 
-## Jak przekonwertować Shapefile na GeoJSON przy użyciu Aspose.GIS dla .NET
+Konwersja Shapefile na GeoJSON tworzy lekki, tekstowy format, który biblioteki do map internetowych (np. Leaflet, Mapbox, OpenLayers) mogą natychmiast wykorzystać, jednocześnie zmniejszając rozmiar pliku nawet o 70 % w porównaniu z binarnym pakietem Shapefile. Struktura JSON jest czytelna dla człowieka, co upraszcza debugowanie, a natywne wsparcie WGS‑84 eliminuje większość kroków reprojekcji w scenariuszach internetowych.
 
-`VectorLayer.Open` jest metodą otwierającą źródło danych wektorowych, takie jak Shapefile. `GeoJsonWriter` jest klasą zapisującą dane wektorowe do pliku GeoJSON.
+## Odkryj świat konwersji GeoData
 
-**Direct answer:** Załaduj źródłowy Shapefile przy użyciu `VectorLayer.Open("source.shp")`, utwórz `GeoJsonWriter` wskazujący ścieżkę wyjściową i wywołaj `writer.Write(layer)`. Cała konwersja odbywa się w jednym przebiegu, zużywa mniej niż 200 MB RAM dla 1 GB Shapefile i automatycznie zachowuje dane atrybutowe oraz wierność geometrii.  
+#### [Konwersja GeoData](./geo-data-conversion/)
 
-Poniżej znajduje się starannie dobrana lista kolekcji samouczków, które zagłębiają się w każdy aspekt Aspose.GIS dla .NET. Kliknij dowolną sekcję, aby poznać przykłady krok po kroku, fragmenty kodu i wskazówki najlepszych praktyk.
+W pierwszej części naszej serii samouczków rozwiewamy tajemnice konwersji GeoData. Dowiedz się, jak płynnie konwertować GeoJSON na TopoJSON, Shapefile na GeoJSON i wiele więcej. Aspose.GIS dla .NET umożliwia łatwe manipulowanie danymi geoprzestrzennymi, otwierając świat możliwości dla Twoich projektów GIS.
 
-### Odkryj świat konwersji GeoData
+Gotowy, aby konwertować i przekształcać swoje GeoData? [Odkryj samouczki Konwersji GeoData już teraz](./geo-data-conversion/).
 
-#### [GeoData Conversion](./geo-data-conversion/)
+## Zanurz się w dziedzinie tworzenia geometrii
 
-W pierwszej części naszej serii samouczków rozwikłujemy tajemnice konwersji GeoData. Dowiedz się, jak płynnie konwertować GeoJSON na TopoJSON, Shapefile na GeoJSON i wiele więcej. Aspose.GIS dla .NET umożliwia łatwe manipulowanie danymi geoprzestrzennymi, otwierając świat możliwości dla Twoich projektów GIS.  
+#### [Tworzenie Geometrii](./geometry-creation/)
 
-Gotowy, aby konwertować i przekształcać swoje GeoData? [Odkryj samouczki konwersji GeoData już teraz](./geo-data-conversion/).
+Następnie w naszej podróży badamy dziedzinę tworzenia geometrii. Odkryj narzędzia i techniki do tworzenia, konwertowania i analizowania danych geoprzestrzennych z precyzją. Aspose.GIS dla .NET ułatwia odblokowanie potencjału manipulacji danymi geoprzestrzennymi, dając Ci narzędzia do kształtowania projektów GIS dokładnie tak, jak sobie wyobrażasz.
 
-### Zanurz się w świecie tworzenia geometrii
+Gotowy, aby kształtować i formować swoje dane geoprzestrzenne? [Rozpocznij swoją podróż z samouczkami Tworzenia Geometrii](./geometry-creation/).
 
-#### [Geometry Creation](./geometry-creation/)
+## Opanuj analizę geometrii dla solidnego rozwoju GIS
 
-Następnie w naszej podróży badamy obszar tworzenia geometrii. Odkryj narzędzia i techniki umożliwiające precyzyjne tworzenie, konwersję i analizę danych geoprzestrzennych. Aspose.GIS dla .NET ułatwia odblokowanie potencjału manipulacji danymi geoprzestrzennymi, dając Ci narzędzia do kształtowania projektów GIS dokładnie tak, jak sobie wyobrażasz.  
+#### [Analiza Geometrii](./geometry-analysis/)
 
-Gotowy, aby kształtować i formować swoje dane geoprzestrzenne? [Rozpocznij swoją podróż z samouczkami tworzenia geometrii](./geometry-creation/).
+Analiza geometrii jest kluczową umiejętnością dla solidnego rozwoju GIS, a nasze samouczki ułatwiają jej opanowanie. Zanurz się w kompleksowych przewodnikach po obsłudze danych przestrzennych, zapewniając możliwość łatwej manipulacji i analizy danych geoprzestrzennych. Aspose.GIS dla .NET to Twój klucz do odblokowania pełnego potencjału analizy geometrii.
 
-### Opanuj analizę geometrii dla solidnego rozwoju GIS
+Gotowy, aby stać się mistrzem obsługi danych przestrzennych? [Odkryj samouczki Analizy Geometrii](./geometry-analysis/).
 
-#### [Geometry Analysis](./geometry-analysis/)
+## Precyzyjne przetwarzanie geometrii i analiza przestrzenna
 
-Analiza geometrii jest kluczową umiejętnością dla solidnego rozwoju GIS, a nasze samouczki ułatwiają jej opanowanie. Zanurz się w kompleksowych przewodnikach dotyczących obsługi danych przestrzennych, zapewniając możliwość łatwej manipulacji i analizy danych geoprzestrzennych. Aspose.GIS dla .NET jest kluczem do odblokowania pełnego potencjału analizy geometrii.  
+#### [Przetwarzanie Geometrii](./geometry-processing/)
 
-Gotowy, aby stać się mistrzem obsługi danych przestrzennych? [Odkryj samouczki analizy geometrii](./geometry-analysis/).
+Poruszaj się w złożonym świecie przetwarzania geometrii i analizy przestrzennej dzięki naszym szczegółowym samouczkom. Aspose.GIS dla .NET dostarcza narzędzia do precyzyjnego przetwarzania geometrii, zapewniając optymalną manipulację danymi w Twoich projektach rozwoju GIS.
 
-### Precyzyjne przetwarzanie geometrii i analiza przestrzenna
+Gotowy, aby podnieść rozwój GIS dzięki precyzyjnemu przetwarzaniu geometrii? [Rozpocznij eksplorację samouczków Przetwarzania Geometrii](./geometry-processing/).
 
-#### [Geometry Processing](./geometry-processing/)
+## Bezproblemowe zarządzanie warstwami dla rozwoju geoprzestrzennego
 
-Poruszaj się w złożonym świecie przetwarzania geometrii i analizy przestrzennej dzięki naszym szczegółowym samouczkom. Aspose.GIS dla .NET dostarcza narzędzia do precyzyjnego przetwarzania geometrii, zapewniając optymalną manipulację danymi w Twoich projektach rozwoju GIS.  
+#### [Zarządzanie Warstwami](./layer-management/)
 
-Gotowy, aby podnieść rozwój GIS dzięki precyzyjnemu przetwarzaniu geometrii? [Rozpocznij eksplorację samouczków przetwarzania geometrii](./geometry-processing/).
+Odkryj potencjał rozwoju geoprzestrzennego dzięki samouczkom o zarządzaniu warstwami. Naucz się bezproblemowo tworzyć, zarządzać i manipulować zestawami danych GIS przy użyciu Aspose.GIS dla .NET. Twoja droga do zostania biegłym programistą geoprzestrzennym zaczyna się tutaj.
 
-### Bezproblemowe zarządzanie warstwami w rozwoju geoprzestrzennym
+Gotowy, aby przejąć kontrolę nad swoimi zestawami danych GIS? [Odkryj samouczki Zarządzania Warstwami](./layer-management/).
 
-#### [Layer Management](./layer-management/)
+## Poznaj interakcję warstw i dostęp do danych
 
-Odblokuj potencjał rozwoju geoprzestrzennego dzięki samouczkom zarządzania warstwami. Naucz się bez wysiłku tworzyć, zarządzać i manipulować zestawami danych GIS przy użyciu Aspose.GIS dla .NET. Twoja droga do zostania biegłym programistą geoprzestrzennym zaczyna się tutaj.  
+#### [Interakcja Warstw i Dostęp do Danych](./layer-interaction-and-data-access/)
 
-Gotowy, aby przejąć kontrolę nad swoimi zestawami danych GIS? [Odkryj samouczki zarządzania warstwami](./layer-management/).
+Zanurz się w zawiłości interakcji warstw i dostępu do danych dzięki naszym samouczkom. Aspose.GIS dla .NET umożliwia eksplorację rozwoju geoprzestrzennego i płynną manipulację elementami. Rozwijaj swoje umiejętności i poszerzaj zrozumienie obsługi danych geoprzestrzennych.
 
-### Zbadaj interakcję warstw i dostęp do danych
+Gotowy, aby interaktywnie pracować z warstwami GIS i łatwo uzyskiwać dostęp do danych? [Rozpocznij eksplorację samouczków Interakcji Warstw i Dostępu do Danych](./layer-interaction-and-data-access/).
 
-#### [Layer Interaction & Data Access](./layer-interaction-and-data-access/)
+## Opanuj operacje na danych warstw
 
-Zanurz się w zawiłości interakcji warstw i dostępu do danych dzięki naszym samouczkom. Aspose.GIS dla .NET umożliwia eksplorację rozwoju geoprzestrzennego i płynną manipulację elementami. Rozwijaj swoje umiejętności i poszerzaj zrozumienie obsługi danych geoprzestrzennych.  
+#### [Operacje Danych Warstw](./layer-data-operations/)
 
-Gotowy, aby interaktywnie pracować z warstwami GIS i łatwo uzyskiwać dostęp do danych? [Rozpocznij eksplorację samouczków interakcji warstw i dostępu do danych](./layer-interaction-and-data-access/).
+Odkryj kompleksowe samouczki dotyczące operacji na danych warstw przy użyciu Aspose.GIS dla .NET. Naucz się czytać, manipulować i wizualizować dane geoprzestrzenne z łatwością. Nasze samouczki prowadzą Cię przez zawiłości operacji na danych warstw, zapewniając umiejętności niezbędne do udanych projektów GIS.
 
-### Opanuj operacje danych warstw
+Gotowy, aby wykonać zaawansowane operacje na swoich warstwach GIS? [Rozpocznij opanowywanie Operacji Danych Warstw z naszymi samouczkami](./layer-data-operations/).
 
-#### [Layer Data Operations](./layer-data-operations/)
+## Podnieś wizualizację danych geoprzestrzennych dzięki renderowaniu map
 
-Odkryj kompleksowe samouczki dotyczące operacji danych warstw przy użyciu Aspose.GIS dla .NET. Naucz się odczytywać, manipulować i wizualizować dane geoprzestrzenne z łatwością. Nasze samouczki prowadzą Cię przez zawiłości operacji danych warstw, zapewniając niezbędne umiejętności do udanych projektów GIS.  
+#### [Renderowanie Map](./map-rendering/)
 
-Gotowy, aby wykonywać zaawansowane operacje na swoich warstwach GIS? [Rozpocznij opanowywanie operacji danych warstw dzięki naszym samouczkom](./layer-data-operations/).
+Bezproblemowo importuj SLD, etykietuj elementy i renderuj zachwycające mapy przy użyciu Aspose.GIS dla .NET. Nasze samouczki dotyczące renderowania map przeprowadzają Cię przez cały proces, zapewniając możliwość prezentacji danych geoprzestrzennych w najbardziej atrakcyjny wizualnie sposób. Odkryj sztukę renderowania map i ożyw swoje projekty GIS.
 
-### Podnieś wizualizację danych geoprzestrzennych dzięki renderowaniu map
-
-#### [Map Rendering](./map-rendering/)
-
-Bezproblemowo importuj SLD, etykietuj elementy i renderuj zachwycające mapy przy użyciu Aspose.GIS dla .NET. Nasze samouczki dotyczące renderowania map przeprowadzają Cię przez proces, zapewniając możliwość prezentacji danych geoprzestrzennych w najbardziej atrakcyjny wizualnie sposób. Odkryj sztukę renderowania map i ożyw swoje projekty GIS.  
-
-Gotowy, aby tworzyć zachwycające mapy z danymi geoprzestrzennymi? [Rozpocznij eksplorację samouczków renderowania map](./map-rendering/).
+Gotowy, aby tworzyć zachwycające mapy ze swoimi danymi geoprzestrzennymi? [Rozpocznij eksplorację samouczków Renderowania Map](./map-rendering/).
 
 ## Kompleksowe samouczki i przykłady Aspose.GIS dla .NET 
-### [GeoData Conversion](./geo-data-conversion/)
-Odkryj płynną konwersję GeoData dzięki samouczkom Aspose.GIS dla .NET. Naucz się konwertować GeoJSON na TopoJSON, Shapefile na GeoJSON i więcej.  
 
-### [Geometry Creation](./geometry-creation/)
+### [Konwersja GeoData](./geo-data-conversion/)
+Odkryj płynną konwersję GeoData dzięki samouczkom Aspose.GIS dla .NET. Naucz się konwertować GeoJSON na TopoJSON, Shapefile na GeoJSON i wiele więcej.  
+
+### [Tworzenie Geometrii](./geometry-creation/)
 Odblokuj potencjał manipulacji danymi geoprzestrzennymi dzięki Aspose.GIS dla .NET. Zanurz się w naszych samouczkach, obejmujących tworzenie, konwersję i analizę geometrii.  
 
-### [Geometry Analysis](./geometry-analysis/)
-Odblokuj potencjał Aspose.GIS .NET dzięki kompleksowym samouczkom analizy geometrii. Opanuj obsługę danych przestrzennych bez wysiłku dla solidnego rozwoju GIS.  
+### [Analiza Geometrii](./geometry-analysis/)
+Odblokuj potencjał Aspose.GIS .NET dzięki kompleksowym samouczkom o analizie geometrii. Opanuj obsługę danych przestrzennych bez wysiłku dla solidnego rozwoju GIS.  
 
-### [Geometry Processing](./geometry-processing/)
+### [Przetwarzanie Geometrii](./geometry-processing/)
 Opanuj Aspose.GIS dla .NET dzięki naszym kompleksowym samouczkom. Naucz się precyzyjnego przetwarzania geometrii, analizy przestrzennej i manipulacji danymi dla optymalnego rozwoju GIS.  
 
-### [Layer Management](./layer-management/)
-Odblokuj potencjał rozwoju geoprzestrzennego dzięki samouczkom Aspose.GIS dla .NET. Bezproblemowo twórz, zarządzaj i manipuluj zestawami danych GIS.  
+### [Zarządzanie Warstwami](./layer-management/)
+Odkryj potencjał rozwoju geoprzestrzennego dzięki samouczkom Aspose.GIS dla .NET. Bezproblemowo twórz, zarządzaj i manipuluj zestawami danych GIS.  
 
-### [Layer Interaction & Data Access](./layer-interaction-and-data-access/)
-Odblokuj potencjał Aspose.GIS dla .NET dzięki naszym samouczkom interakcji warstw i dostępu do danych. Eksploruj rozwój geoprzestrzenny i płynnie manipuluj elementami.  
+### [Interakcja Warstw i Dostęp do Danych](./layer-interaction-and-data-access/)
+Odkryj potencjał Aspose.GIS dla .NET dzięki naszym samouczkom Interakcja Warstw i Dostęp do Danych. Eksploruj rozwój geoprzestrzenny i płynnie manipuluj elementami.  
 
-### [Layer Data Operations](./layer-data-operations/)
-Odkryj kompleksowe samouczki dotyczące operacji danych warstw przy użyciu Aspose.GIS dla .NET. Naucz się odczytywać, manipulować i wizualizować dane geoprzestrzenne.  
+### [Operacje Danych Warstw](./layer-data-operations/)
+Odkryj kompleksowe samouczki dotyczące operacji na danych warstw przy użyciu Aspose.GIS dla .NET. Naucz się czytać, manipulować i wizualizować dane geoprzestrzenne.  
 
-### [Map Rendering](./map-rendering/)
-Odblokuj potencjał wizualizacji danych geoprzestrzennych dzięki Aspose.GIS dla .NET. Bezproblemowo importuj SLD, etykietuj elementy i renderuj zachwycające mapy. Odkryj teraz!  
+### [Renderowanie Map](./map-rendering/)
+Odkryj potencjał wizualizacji danych geoprzestrzennych dzięki Aspose.GIS dla .NET. Bezproblemowo importuj SLD, etykietuj elementy i renderuj zachwycające mapy. Odkryj teraz!
 
-## Frequently Asked Questions
+## Najczęściej zadawane pytania
 
 **Q: Czy mogę przekonwertować duży Shapefile (setki MB) na GeoJSON bez wyczerpania pamięci?**  
-A: Tak. Użyj API strumieniowego udostępnionego przez Aspose.GIS, które odczytuje i zapisuje elementy stopniowo, utrzymując niskie zużycie pamięci.
+A: Tak. Użyj API strumieniowego udostępnionego przez Aspose.GIS, które odczytuje i zapisuje cechy stopniowo, aby utrzymać niskie zużycie pamięci.
 
 **Q: Czy biblioteka obsługuje transformacje układów współrzędnych podczas konwersji?**  
 A: Absolutnie. Możesz reprojektować geometrie podczas konwersji, np. z EPSG:4326 na EPSG:3857, korzystając z wbudowanych narzędzi `CoordinateSystem`.
 
 **Q: Jak dodać własne właściwości lub informacje o stylu przy konwersji do GeoJSON?**  
-A: Dołącz dane atrybutowe do każdego elementu przed eksportem; biblioteka serializuje wszystkie atrybuty do obiektu `properties` w GeoJSON.
+A: Dołącz dane atrybutowe do każdej cechy przed eksportem; biblioteka serializuje wszystkie atrybuty do obiektu `properties` w GeoJSON.
 
-**Q: Czy istnieje możliwość konwersji GeoJSON z powrotem na Shapefile (convert geojson to shapefile)?**  
-A: Tak — Aspose.GIS zapewnia metodę konwersji zwrotną, która zapisuje Shapefile zachowując schematy atrybutów.
+**Q: Czy możliwe jest konwertowanie GeoJSON z powrotem na Shapefile (convert geojson to shapefile)?**  
+A: Tak — Aspose.GIS udostępnia metodę konwersji zwrotnej, która zapisuje Shapefile zachowując schematy atrybutów.
 
 **Q: Gdzie mogę znaleźć przykładowy kod do konwersji shapefile na geojson?**  
-A: Przykładowe projekty znajdują się w sekcji samouczków **GeoData Conversion** podlinkowanej powyżej.
+A: Przykładowe projekty są zawarte w sekcji samouczków **GeoData Conversion** podlinkowanej powyżej.
 
 ---
 
-**Last Updated:** 2026-05-31  
-**Tested With:** Aspose.GIS for .NET 23.12 (latest at time of writing)  
-**Author:** Aspose
+**Ostatnia aktualizacja:** 2026-10-26  
+**Testowano z:** Aspose.GIS for .NET 23.12 (najnowsza w momencie pisania)  
+**Autor:** Aspose
 
-## Related Tutorials
+## Powiązane samouczki
 
-- [How to Convert Shapefile to GeoJSON using Aspose.GIS for .NET](/gis/net/layer-management/extract-features-to-geojson/)
-- [How to Convert GeoJSON to File GDB Using Aspose.GIS for .NET](/gis/net/layer-management/convert-geojson-layer-to-file-gdb/)
-- [How to Convert GeoJSON to TopoJSON with Aspose.GIS](/gis/net/geo-data-conversion/convert-geojson-to-topojson/)
-
+- [Jak przekonwertować Shapefile na GeoJSON przy użyciu Aspose.GIS dla .NET](/gis/net/layer-management/extract-features-to-geojson/)
+- [Jak przekonwertować GeoJSON na File GDB przy użyciu Aspose.GIS dla .NET](/gis/net/layer-management/convert-geojson-layer-to-file-gdb/)
+- [Jak przekonwertować GeoJSON na TopoJSON przy użyciu Aspose.GIS](/gis/net/geo-data-conversion/convert-geojson-to-topojson/)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
-{{< blocks/products/products-backtop-button >}}
+
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

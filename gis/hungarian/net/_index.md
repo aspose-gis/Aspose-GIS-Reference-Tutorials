@@ -1,18 +1,24 @@
 ---
-date: 2026-05-31
-description: Ismerje meg, hogyan konvertálhat shapefile-t geojson-ra az Aspose.GIS
-  for .NET használatával. Fedezze fel a geometria létrehozását, a térbeli adatfeldolgozást
-  és a térképi megjelenítés útmutatóit.
+date: 2026-10-26
+description: Ismerje meg, hogyan konvertálhat Shapefile-t GeoJSON-ra az Aspose.GIS
+  for .NET használatával. Fedezze fel a geometria létrehozását, a térbeli adatok feldolgozását
+  és a térképmegjelenítési oktatóanyagokat.
 keywords:
-- how to convert shapefile to geojson
-- shapefile to geojson conversion
+- convert shapefile to geojson
+- how to convert shapefile
+- geojson to shapefile conversion
 - Aspose.GIS .NET
 - geospatial data processing
-- GIS map rendering
-linktitle: Aspose.GIS for .NET útmutatók
+lastmod: 2026-10-26
+linktitle: Aspose.GIS for .NET oktatóanyagok
+og_description: Shapefile konvertálása GeoJSON-re az Aspose.GIS for .NET használatával.
+  Ez az útmutató lépésről‑lépésre bemutatja a konverziót, a nagy fájlok streamingjét
+  és a coordinate reprojection-t.
+og_image_alt: 'Developer guide: Convert Shapefile to GeoJSON with Aspose.GIS for .NET'
+og_title: Shapefile konvertálása GeoJSON-re az Aspose.GIS for .NET segítségével
 schemas:
 - author: Aspose
-  dateModified: '2026-05-31'
+  dateModified: '2026-10-26'
   description: Learn how to convert shapefile to geojson using Aspose.GIS for .NET.
     Explore geometry creation, spatial data processing, and map visualization tutorials.
   headline: How to Convert Shapefile to GeoJSON with Aspose.GIS for .NET – Comprehensive
@@ -38,8 +44,12 @@ schemas:
       linked above.
     question: Where can I find sample code for converting shapefile to geojson?
   type: FAQPage
+tags:
+- convert shapefile
+- Aspose.GIS
+- .NET GIS development
+- GeoJSON conversion
 title: Hogyan konvertáljunk Shapefile-t GeoJSON-re az Aspose.GIS for .NET segítségével
-  – Átfogó útmutatók
 url: /hu/net/
 weight: 10
 ---
@@ -52,143 +62,140 @@ weight: 10
 
 ## Bevezetés
 
-Készen állsz a **shapefile konvertálására geojson-ra**, és arra, hogy mesterré válj a térinformatikai fejlesztésben az Aspose.GIS for .NET segítségével? Akár **shapefile-t kell konvertálnod**, interaktív térképeket építesz, vagy lenyűgöző vizualizációkat generálsz, ez a központ világos útmutatót nyújt. Végigvezetünk minden fő képességen — a GeoData konverziótól a térkép renderelésig — hogy azonnal elkezdhess erőteljes GIS alkalmazásokat építeni.
+Készen állsz arra, hogy **shapefile-t geojson-ra konvertálj**, és elsajátítsd a térinformatikai fejlesztést az Aspose.GIS for .NET segítségével? Akár **shapefile konvertálásra**, interaktív térképek építésére vagy lenyűgöző vizualizációk generálására van szükséged, ez a központ világos útmutatót nyújt. Végigvezetünk minden fő képességen – a GeoData konverziótól a térkép renderelésig –, hogy azonnal elkezdhesd a hatékony GIS alkalmazások építését.
 
 ## Gyors válaszok
-- **Mit jelent a „shapefile konvertálása geojson-ra”?** Átalakítja az ESRI Shapefile adatokat a széles körben használt GeoJSON formátumba web‑térképezéshez és API‑khoz.  
+- **Mit jelent a „convert shapefile to geojson”?** Átalakítja az ESRI Shapefile adatokat a széles körben használt GeoJSON formátumba webtérképezéshez és API-khoz.  
 - **Mely .NET verziók támogatottak?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5+ és .NET 6+.  
 - **Szükségem van licencre?** Egy ingyenes próba a kiértékeléshez elegendő; a termeléshez kereskedelmi licenc szükséges.  
-- **Konvertálhatom vissza a GeoJSON-t Shapefile-re is?** Igen — az Aspose.GIS kétirányú konverziós segédeszközöket biztosít.  
-- **Térkép renderelés is benne van?** Teljesen — használja a Térkép renderelés tutorialokat a térképi elemek stílusozásához és címkézéséhez.
+- **Konvertálhatok-e GeoJSON-t vissza Shapefile-ra is?** Igen – az Aspose.GIS kétirányú konverziós segédprogramokat biztosít.  
+- **Térkép renderelés is része?** Teljesen – a Map Rendering oktatóanyagokkal stílusozhatod és címkézheted a térképfunkciókat.
 
-## Miért konvertáljunk Shapefile-t GeoJSON-re?
+## Hogyan konvertálja a shapefile-t GeoJSON-re az Aspose.GIS for .NET segítségével?
 
-**Közvetlen válasz:** A Shapefile GeoJSON-re konvertálása egy könnyű, szöveges formátumot biztosít, amelyet a web‑térképező könyvtárak, mint a Leaflet, a Mapbox és az OpenLayers azonnal felhasználhatnak, miközben a bináris Shapefile csomaghoz képest akár 70 %-kal is csökkentheti a fájlméretet.  
+**VectorLayer.Open** megnyit egy Shapefile-t, és egy `VectorLayer` objektumot ad vissza, amely a réteg elemeit képviseli. **GeoJsonWriter** vektor adatokat ír egy GeoJSON fájlba. Töltsd be a forrás Shapefile-t a `VectorLayer.Open("source.shp")` paranccsal, hozz létre egy `GeoJsonWriter`‑t a kimeneti fájlhoz, majd hívd meg a `writer.Write(layer)` metódust. Ez az egylépéses művelet adatfolyamot használ, így a RAM használat 200 MB alatti marad egy 1 GB-os Shapefile esetén, miközben minden attribútumot és geometriát pontosan úgy őriz meg, ahogy a forrásban szerepel.
 
-A GeoJSON ember által olvasható JSON struktúrája megkönnyíti a hibakeresést, és natív támogatása a WGS‑84 koordináta‑rendszerhez megszünteti a további átalakítási lépések szükségességét a legtöbb webes szituációban.  
+### A kulcsfontosságú osztályok meghatározása
+`VectorLayer.Open` vektor adatforrást nyit meg, például egy Shapefile-t. `GeoJsonWriter` vektor adatokat ír egy GeoJSON fájlba.
 
-Az Aspose.GIS for .NET **30+ vektor- és raszterformátumot** támogat, 500 MB-nál nagyobb fájlokat streaming segítségével dolgoz fel, és **Windows, Linux és macOS** rendszereken fut további natív függőségek nélkül.
+## Miért konvertáljunk shapefile-t GeoJSON-re?
 
-## Hogyan konvertáljunk Shapefile-t GeoJSON-re az Aspose.GIS for .NET segítségével
+A Shapefile GeoJSON-re konvertálása könnyű, szöveges formátumot hoz létre, amelyet a webtérképező könyvtárak (például Leaflet, Mapbox, OpenLayers) azonnal felhasználhatnak, miközben a fájlméret akár 70 %-kal is csökken a bináris Shapefile csomaghoz képest. A JSON struktúra ember által olvasható, ami egyszerűsíti a hibakeresést, és natív WGS‑84 támogatása a legtöbb webes forgatási lépést eltávolítja.
 
-`VectorLayer.Open` egy metódus, amely vektor adatforrást nyit meg, például egy Shapefile-t. A `GeoJsonWriter` egy osztály, amely vektor adatokat ír egy GeoJSON fájlba.
-
-**Közvetlen válasz:** Töltsd be a forrás Shapefile-t a `VectorLayer.Open("source.shp")` segítségével, hozz létre egy `GeoJsonWriter`-t, amely a kívánt kimeneti útvonalra ír, majd hívd meg a `writer.Write(layer)`-t. A teljes konverzió egyetlen lépésben fut, kevesebb mint 200 MB RAM-ot használ 1 GB-os Shapefile esetén, és automatikusan megőrzi az attribútum adatokat és a geometriai pontosságot.
-
-Az alábbiakban egy gondosan összeállított tutorial-gyűjtemény található, amely mélyen belemerül az Aspose.GIS for .NET minden aspektusába. Kattints bármely szekcióra, hogy lépésről‑lépésre példákat, kódrészleteket és legjobb gyakorlatokat fedezhess fel.
-
-### Fedezd fel a GeoData konverzió világát
+## Fedezze fel a GeoData konverzió világát
 
 #### [GeoData konverzió](./geo-data-conversion/)
 
-Az oktatási sorozatunk első részében feltárjuk a GeoData konverzió rejtelmeit. Tanulj meg zökkenőmentesen konvertálni a GeoJSON-t TopoJSON-re, a Shapefile-t GeoJSON-re, és még sok mást. Az Aspose.GIS for .NET lehetővé teszi a térinformatikai adatok könnyed manipulálását, ezzel egy világnyi lehetőséget nyitva a GIS projektjeid számára.
+Az oktatóanyag-sorozat első részében feltárjuk a GeoData konverzió titkait. Tanulj meg zökkenőmentesen konvertálni GeoJSON-t TopoJSON-ra, Shapefile-t GeoJSON-re és még sok másra. Az Aspose.GIS for .NET lehetővé teszi a térinformatikai adatok könnyed manipulálását, új lehetőségeket nyitva meg GIS projektjeid számára.
 
-Készen állsz a GeoData konvertálására és átalakítására? [Fedezd fel most a GeoData konverzió tutorialokat](./geo-data-conversion/).
+Készen állsz a GeoData konvertálására és átalakítására? [Fedezd fel most a GeoData konverzió oktatóanyagokat](./geo-data-conversion/).
 
-### Merülj el a Geometria létrehozásának birodalmában
+## Merüljön el a geometria létrehozásának területén
 
-#### [Geometria létrehozás](./geometry-creation/)
+#### [Geometria létrehozása](./geometry-creation/)
 
-A következő állomáson a geometria létrehozásának birodalmát vizsgáljuk. Fedezd fel az eszközöket és technikákat, amelyekkel pontosan hozhatsz létre, konvertálhatsz és elemezhetsz térinformatikai adatokat. Az Aspose.GIS for .NET megkönnyíti a térinformatikai adatok manipulálásának lehetőségeinek kiaknázását, és olyan eszközöket ad a kezedbe, amelyekkel pontosan úgy alakíthatod GIS projektjeidet, ahogy elképzeled.
+A következő állomáson a geometria létrehozásának világát járjuk be. Ismerd meg az eszközöket és technikákat, amelyekkel pontosan létrehozhatsz, konvertálhatsz és elemezhetsz térinformatikai adatokat. Az Aspose.GIS for .NET egyszerűvé teszi a térinformatikai adatok manipulálásának lehetőségét, így a GIS projektjeidet pontosan úgy alakíthatod, ahogy elképzeled.
 
-Készen állsz a térinformatikai adataid formálására? [Kezdd el az utazást a Geometria létrehozás tutorialokkal](./geometry-creation/).
+Készen állsz a térinformatikai adataid formálására és alakítására? [Kezdd el a Geometria létrehozása oktatóanyagokkal](./geometry-creation/).
 
-### Mesteri geometriai elemzés a robusztus GIS fejlesztéshez
+## Mesteri geometriai elemzés a robusztus GIS fejlesztéshez
 
-#### [Geometria elemzés](./geometry-analysis/)
+#### [Geometriai elemzés](./geometry-analysis/)
 
-A geometriai elemzés kulcsfontosságú készség a robusztus GIS fejlesztéshez, és tutorialjaink könnyedé teszik a megtanulását. Merülj el átfogó útmutatókban a térbeli adatok kezeléséről, biztosítva, hogy könnyedén manipulálhass és elemezhesd a térinformatikai adatokat. Az Aspose.GIS for .NET a kulcs a geometriai elemzés teljes potenciáljának kiaknázásához.
+A geometriai elemzés kulcsfontosságú készség a robusztus GIS fejlesztéshez, és oktatóanyagaink segítségével könnyedén elsajátítható. Merülj el a térbeli adatok kezeléséről szóló átfogó útmutatókban, hogy gond nélkül manipulálhass és elemezhess térinformatikai adatokat. Az Aspose.GIS for .NET a kulcsod a geometriai elemzés teljes potenciáljának kiaknázásához.
 
-Készen állsz, hogy a térbeli adatok kezelésének mestere legyél? [Fedezd fel a Geometria elemzés tutorialokat](./geometry-analysis/).
+Készen állsz a térbeli adatok kezelésének mesterségére? [Fedezd fel a Geometriai elemzés oktatóanyagokat](./geometry-analysis/).
 
-### Precíz geometriai feldolgozás és térbeli elemzés
+## Pontos geometriai feldolgozás és térbeli elemzés
 
-#### [Geometria feldolgozás](./geometry-processing/)
+#### [Geometriai feldolgozás](./geometry-processing/)
 
-Navigálj a geometriai feldolgozás és térbeli elemzés bonyolult világában részletes tutorialjainkkal. Az Aspose.GIS for .NET eszközöket biztosít a precíz geometriai feldolgozáshoz, garantálva az optimális adatmanipulációt GIS fejlesztési projektjeidhez.
+Navigálj a geometriai feldolgozás és térbeli elemzés összetett világában részletes oktatóanyagainkkal. Az Aspose.GIS for .NET olyan eszközöket biztosít, amelyekkel pontos geometriai feldolgozást végezhetsz, biztosítva az optimális adatmanipulációt GIS fejlesztési projektjeidhez.
 
-Készen állsz, hogy a GIS fejlesztésedet precíz geometriai feldolgozással emeld új szintre? [Kezdj el felfedezni a Geometria feldolgozás tutorialokat](./geometry-processing/).
+Készen állsz a GIS fejlesztésedet pontos geometriai feldolgozással emelni? [Kezdd el a Geometriai feldolgozás oktatóanyagok felfedezését](./geometry-processing/).
 
-### Problémamentes rétegkezelés a térinformatikai fejlesztéshez
+## Könnyed rétegkezelés a térinformatikai fejlesztéshez
 
 #### [Rétegkezelés](./layer-management/)
 
-Fedezd fel a térinformatikai fejlesztés lehetőségeit a rétegkezelés tutorialjaival. Tanulj meg könnyedén létrehozni, kezelni és manipulálni GIS adatkészleteket az Aspose.GIS for .NET segítségével. Az út a kompetens térinformatikai fejlesztővé váláshoz itt kezdődik.
+Nyisd ki a térinformatikai fejlesztés lehetőségeit rétegkezelési oktatóanyagokkal. Tanuld meg könnyedén létrehozni, kezelni és manipulálni a GIS adatkészleteket az Aspose.GIS for .NET segítségével. A GIS fejlesztői útja itt kezdődik.
 
-Készen állsz, hogy irányítsd GIS adatkészleteidet? [Fedezd fel a Rétegkezelés tutorialokat](./layer-management/).
+Készen állsz a GIS adatkészleteid irányítására? [Fedezd fel a Rétegkezelés oktatóanyagokat](./layer-management/).
 
-### Fedezd fel a réteginterakciót és az adathozzáférést
+## Fedezze fel a rétegek interakcióját és az adatelérést
 
-#### [Réteginterakció és adathozzáférés](./layer-interaction-and-data-access/)
+#### [Réteginterakció és adatelérés](./layer-interaction-and-data-access/)
 
-Merülj el a réteginterakció és adathozzáférés részleteiben tutorialjainkkal. Az Aspose.GIS for .NET felhatalmaz arra, hogy felfedezd a térinformatikai fejlesztést és zökkenőmentesen manipuláld a funkciókat. Fejleszd képességeidet és bővítsd a térinformatikai adatkezelés megértését.
+Merülj el a réteginterakció és adatelérés részleteiben oktatóanyagainkkal. Az Aspose.GIS for .NET lehetővé teszi a térinformatikai fejlesztés felfedezését és a funkciók zökkenőmentes manipulálását. Fejleszd készségeidet és bővítsd a térinformatikai adatkezelés megértését.
 
-Készen állsz, hogy problémamentesen interakcióba lépj a GIS rétegekkel és hozzáférj az adatokhoz? [Kezdd el a felfedezést a Réteginterakció és adathozzáférés tutorialokkal](./layer-interaction-and-data-access/).
+Készen állsz a GIS rétegekkel való interakcióra és az adatok könnyed elérésére? [Kezdd el a Réteginterakció és adatelérés oktatóanyagok felfedezését](./layer-interaction-and-data-access/).
 
-### Mesteri rétegadat-műveletek
+## Mesteri rétegadat-műveletek
 
-#### [Rétegadat műveletek](./layer-data-operations/)
+#### [Rétegadat-műveletek](./layer-data-operations/)
 
-Fedezd fel a részletes tutorialokat a rétegadat-műveletekkel kapcsolatban az Aspose.GIS for .NET használatával. Tanulj meg könnyedén olvasni, manipulálni és megjeleníteni térinformatikai adatokat. Tutorialjaink végigvezetik a rétegadat-műveletek részletein, biztosítva, hogy meglegyenek a sikeres GIS projektekhez szükséges készségek.
+Fedezz fel átfogó oktatóanyagokat a rétegadat-műveletekről az Aspose.GIS for .NET segítségével. Tanuld meg olvasni, manipulálni és megjeleníteni a térinformatikai adatokat könnyedén. Oktatóanyagaink végigvezetik a rétegadat-műveletek részletein, biztosítva a sikeres GIS projektekhez szükséges készségeket.
 
-Készen állsz, hogy fejlett műveleteket hajts végre GIS rétegeiden? [Kezdd el a Rétegadat műveletek elsajátítását tutorialjainkkal](./layer-data-operations/).
+Készen állsz fejlett műveletek végrehajtására GIS rétegeiden? [Kezdd el a Rétegadat-műveletek mesterségét oktatóanyagainkkal](./layer-data-operations/).
 
-### Emeld a térinformatikai adatok vizualizációját a térkép rendereléssel
+## Emelje a térinformatikai adatvizualizációt a térkép rendereléssel
 
 #### [Térkép renderelés](./map-rendering/)
 
-Problémamentesen importálj SLD-t, címkézd a funkciókat, és renderelj lenyűgöző térképeket az Aspose.GIS for .NET segítségével. Térkép renderelés tutorialjaink végigvezetnek a folyamaton, biztosítva, hogy a térinformatikai adataidat a lehető legvonzóbb módon mutathasd be. Fedezd fel a térkép renderelés művészetét, és hozd életre GIS projektjeidet.
+Könnyedén importálj SLD fájlokat, címkézd a funkciókat, és renderelj lenyűgöző térképeket az Aspose.GIS for .NET segítségével. Térkép renderelés oktatóanyagaink végigvezetnek a folyamaton, biztosítva, hogy a térinformatikai adataidat a lehető legvonzóbb módon mutathasd be. Fedezd fel a térkép renderelés művészetét és hozd életre GIS projektjeidet.
 
-Készen állsz, hogy lenyűgöző térképeket készíts térinformatikai adataiddal? [Kezdd el a Térkép renderelés tutorialok felfedezését](./map-rendering/).
+Készen állsz lenyűgöző térképek létrehozására a térinformatikai adataiddal? [Kezdd el a Térkép renderelés oktatóanyagok felfedezését](./map-rendering/).
 
-## Átfogó tutorialok és példák az Aspose.GIS for .NET-hez
+## Átfogó oktatóanyagok és példák az Aspose.GIS for .NET-hez
 ### [GeoData konverzió](./geo-data-conversion/)
-Fedezd fel a zökkenőmentes GeoData konverziót az Aspose.GIS for .NET tutorialokkal. Tanulj meg konvertálni a GeoJSON-t TopoJSON-re, a Shapefile-t GeoJSON-re, és még sok mást.  
-### [Geometria létrehozás](./geometry-creation/)
-Nyisd ki a térinformatikai adatok manipulálásának lehetőségeit az Aspose.GIS for .NET segítségével. Merülj el tutorialjainkban, amelyek a geometria létrehozást, konverziót és elemzést fedik le.  
-### [Geometria elemzés](./geometry-analysis/)
-Fedezd fel az Aspose.GIS .NET lehetőségeit átfogó tutorialokkal a geometriai elemzésről. Mesteri szinten kezeld könnyedén a térbeli adatokat a robusztus GIS fejlesztéshez.  
-### [Geometria feldolgozás](./geometry-processing/)
-Mesterezz az Aspose.GIS for .NET-nek átfogó tutorialjainkkal. Tanulj meg precíz geometriai feldolgozást, térbeli elemzést és adatmanipulációt az optimális GIS fejlesztéshez.  
+Fedezd fel a zökkenőmentes GeoData konverziót az Aspose.GIS for .NET oktatóanyagokkal. Tanulj meg GeoJSON-t TopoJSON-ra, Shapefile-t GeoJSON-re és még sok másra konvertálni.  
+### [Geometria létrehozása](./geometry-creation/)
+Nyisd ki a térinformatikai adatmanipuláció lehetőségeit az Aspose.GIS for .NET segítségével. Merülj el oktatóanyagainkban, amelyek a geometria létrehozását, konvertálását és elemzését fedik le.  
+### [Geometriai elemzés](./geometry-analysis/)
+Használd ki az Aspose.GIS .NET potenciálját átfogó geometriai elemzés oktatóanyagokkal. Mesteri szinten kezeld a térbeli adatokat könnyedén a robusztus GIS fejlesztéshez.  
+### [Geometriai feldolgozás](./geometry-processing/)
+Mesterezz az Aspose.GIS for .NET segítségével átfogó oktatóanyagainkban. Tanulj meg pontos geometriai feldolgozást, térbeli elemzést és adatmanipulációt a optimális GIS fejlesztéshez.  
 ### [Rétegkezelés](./layer-management/)
-Fedezd fel a térinformatikai fejlesztés lehetőségeit az Aspose.GIS for .NET tutorialjaival. Problémamentesen hozd létre, kezeld és manipuláld a GIS adatkészleteket.  
-### [Réteginterakció és adathozzáférés](./layer-interaction-and-data-access/)
-Fedezd fel az Aspose.GIS for .NET lehetőségeit a Réteginterakció és adathozzáférés tutorialjainkkal. Fedezd fel a térinformatikai fejlesztést és manipuláld zökkenőmentesen a funkciókat.  
-### [Rétegadat műveletek](./layer-data-operations/)
-Fedezd fel a részletes tutorialokat a rétegadat-műveletekkel kapcsolatban az Aspose.GIS for .NET használatával. Tanulj meg olvasni, manipulálni és megjeleníteni térinformatikai adatokat.  
+Nyisd ki a térinformatikai fejlesztés lehetőségeit az Aspose.GIS for .NET oktatóanyagokkal. Készíts, kezeld és manipuláld a GIS adatkészleteket könnyedén.  
+### [Réteginterakció és adatelérés](./layer-interaction-and-data-access/)
+Használd ki az Aspose.GIS for .NET lehetőségeit Réteginterakció és adatelérés oktatóanyagainkkal. Fedezd fel a térinformatikai fejlesztést és manipuláld a funkciókat zökkenőmentesen.  
+### [Rétegadat-műveletek](./layer-data-operations/)
+Fedezz fel átfogó oktatóanyagokat a rétegadat-műveletekről az Aspose.GIS for .NET segítségével. Tanulj meg olvasni, manipulálni és megjeleníteni a térinformatikai adatokat.  
 ### [Térkép renderelés](./map-rendering/)
-Fedezd fel a térinformatikai adatok vizualizációjának lehetőségeit az Aspose.GIS for .NET segítségével. Problémamentesen importálj SLD-t, címkézd a funkciókat, és renderelj lenyűgöző térképeket. Fedezd fel most!
+Nyisd ki a térinformatikai adatvizualizáció lehetőségeit az Aspose.GIS for .NET segítségével. Importálj SLD fájlokat, címkézd a funkciókat, és renderelj lenyűgöző térképeket. Fedezd fel most!
 
-## Gyakran Ismételt Kérdések
+## Gyakran ismételt kérdések
 
-**Q: Átalakíthatok egy nagy Shapefile-t (százak MB) GeoJSON-re anélkül, hogy memóriahiányba ütköznék?**  
-A: Igen. Használd az Aspose.GIS által biztosított streaming API-t, amely fokozatosan olvassa és írja a feature-öket, így alacsony memóriahasználatot biztosít.
+**Q: Konvertálhatok-e nagy Shapefile-t (több száz MB) GeoJSON-re anélkül, hogy memóriahiányba ütköznék?**  
+A: Igen. Használd az Aspose.GIS által biztosított streaming API-t, amely fokozatosan olvassa és írja a funkciókat, így alacsony memóriahasználatot biztosít.
 
-**Q: Támogatja a könyvtár a koordináta-rendszer átalakítását a konverzió során?**  
-A: Teljesen. Átalakíthatod a geometriai adatokat a konverzió közben, például EPSG:4326-ról EPSG:3857-re, a beépített `CoordinateSystem` segédeszközök használatával.
+**Q: A könyvtár támogatja-e a koordináta-rendszer átalakítását a konverzió során?**  
+A: Teljes mértékben. Átkonvertálhatod a geometriákat a konverzió közben, például EPSG:4326‑ról EPSG:3857‑re, a beépített `CoordinateSystem` segédeszközök használatával.
 
 **Q: Hogyan adhatok egyedi tulajdonságokat vagy stílusinformációkat a GeoJSON konverzió során?**  
-A: Csatold az attribútum adatokat minden egyes feature-hez exportálás előtt; a könyvtár minden attribútumot sorosít a GeoJSON `properties` objektumba.
+A: Csatold az attribútumadatokat minden egyes funkcióhoz az exportálás előtt; a könyvtár minden attribútumot sorosít a GeoJSON `properties` objektumba.
 
-**Q: Lehetséges a GeoJSON visszaalakítása Shapefile-re (geojson konvertálása shapefile-re)?**  
-A: Igen — az Aspose.GIS biztosít egy visszafelé konverziós metódust, amely Shapefile-t ír, miközben megőrzi az attribútum sémákat.
+**Q: Lehetséges-e a GeoJSON visszakonvertálása Shapefile-ra (convert geojson to shapefile)?**  
+A: Igen – az Aspose.GIS biztosít egy visszafelé konvertáló metódust, amely Shapefile-t ír, miközben megőrzi az attribútumsémákat.
 
 **Q: Hol találok mintakódot a shapefile GeoJSON-re konvertálásához?**  
-A: Mintaprojektek a fenti **GeoData konverzió** tutorial szekcióban találhatók.
+A: Minta projektek megtalálhatók a **GeoData konverzió** oktatóanyag szekcióban fentebb.
 
 ---
 
-**Legutóbb frissítve:** 2026-05-31  
-**Tesztelve a következővel:** Aspose.GIS for .NET 23.12 (latest at time of writing)  
-**Szerző:** Aspose
+**Last Updated:** 2026-10-26  
+**Tested With:** Aspose.GIS for .NET 23.12 (latest at time of writing)  
+**Author:** Aspose
 
-## Kapcsolódó tutorialok
+## Kapcsolódó oktatóanyagok
 
 - [Hogyan konvertáljunk Shapefile-t GeoJSON-re az Aspose.GIS for .NET használatával](/gis/net/layer-management/extract-features-to-geojson/)
-- [Hogyan konvertáljunk GeoJSON-t File GDB-re az Aspose.GIS for .NET használatával](/gis/net/layer-management/convert-geojson-layer-to-file-gdb/)
-- [Hogyan konvertáljunk GeoJSON-t TopoJSON-re az Aspose.GIS használatával](/gis/net/geo-data-conversion/convert-geojson-to-topojson/)
+- [Hogyan konvertáljunk GeoJSON-t File GDB-re az Aspose.GIS for .NET segítségével](/gis/net/layer-management/convert-geojson-layer-to-file-gdb/)
+- [Hogyan konvertáljunk GeoJSON-t TopoJSON-ra az Aspose.GIS segítségével](/gis/net/geo-data-conversion/convert-geojson-to-topojson/)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
-{{< blocks/products/products-backtop-button >}}
+
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}
