@@ -1,24 +1,26 @@
 ---
-date: 2026-08-03
+date: 2026-11-12
 description: Naučte se, jak převést geojson na topojson se seskupováním, nastavit
-  object name attribute a seskupit GeoJSON funkce pomocí Aspose.GIS pro .NET.
+  atribut názvu objektu a seskupit funkce GeoJSON pomocí Aspose.GIS pro .NET.
+images:
+- /net/geo-data-conversion/convert-geojson-to-topojson-with-grouping/og-image.png
 keywords:
 - convert geojson to topojson
+- how to group features
 - group features by attribute
+- group geojson features
 - asp.net core geojson
-- set object name attribute
-- asp.net geojson conversion
-lastmod: 2026-08-03
+lastmod: 2026-11-12
 linktitle: Jak převést GeoJSON na TopoJSON se seskupováním pomocí Aspose.GIS
 og_description: Naučte se, jak převést geojson na topojson se seskupováním, nastavit
-  object name attribute a efektivně seskupit GeoJSON funkce pomocí Aspose.GIS pro
+  atribut názvu objektu a efektivně seskupit funkce GeoJSON pomocí Aspose.GIS pro
   .NET.
 og_image_alt: Screenshot of Aspose.GIS conversion code showing GeoJSON to TopoJSON
   with grouping
-og_title: Převod geojson na topojson se seskupováním pomocí Aspose.GIS pro .NET
+og_title: Převod geojson na topojson se seskupováním pomocí Aspose.GIS
 schemas:
 - author: Aspose
-  dateModified: '2026-08-03'
+  dateModified: '2026-11-12'
   description: Learn how to convert geojson to topojson with grouping, set object
     name attribute, and group GeoJSON features using Aspose.GIS for .NET.
   headline: How to convert geojson to topojson with grouping using Aspose.GIS
@@ -32,21 +34,22 @@ schemas:
       written: > **Pro tip:** Use `Path.Combine` for cross‑platform path building
       if you target .NET Core.'
   - name: Configure conversion options (set object name attribute)
-    text: '`ConversionOptions` is the configuration object that controls how Aspose.GIS
-      performs the conversion. It lets you set the grouping attribute, define a default
-      object name, and tweak topology precision. The `ObjectNameAttribute` property
-      (string) defines the GeoJSON field used for grouping, while `De'
+    text: '`ConversionOptions` is the Aspose.GIS class that defines how a conversion
+      should be performed, including grouping and precision settings. It lets you
+      set the grouping attribute, define a default object name, and tweak topology
+      precision. The `ObjectNameAttribute` property (string) defines the GeoJSON field
+      used for grouping, while `De'
   - name: Perform the conversion (convert GeoJSON to TopoJSON)
-    text: '`Conversion.Convert` is a single‑line API call that reads the source file,
-      applies the options, and writes the TopoJSON output. It internally builds a
-      topology graph, deduplicates shared edges, and writes the result in the compact
-      TopoJSON format. After execution, `convertedSampleWithGrouping_out.to'
+    text: '`Conversion.Convert` is a static method that reads the source file, applies
+      the provided options, and writes the converted TopoJSON output. It internally
+      builds a topology graph, deduplicates shared edges, and writes the result in
+      the compact TopoJSON format.'
   type: HowTo
 - questions:
   - answer: Yes, you can concatenate several fields into a single virtual attribute
       or run multiple conversion passes with different `ObjectNameAttribute` values.
     question: Can I group features based on multiple attributes?
-  - answer: Absolutely – the library works with ASP.NET Core, .NET 5, .NET 6, and
+  - answer: Absolutely – the library works with ASP.NET Core, .NET 5, .NET 6, and
       the classic .NET Framework.
     question: Is Aspose.GIS compatible with ASP.NET Core?
   - answer: Yes, Aspose.GIS supports more than 30 input and output formats—including
@@ -79,37 +82,36 @@ weight: 13
 
 ## Úvod
 
-V tomto krok‑za‑krokem tutoriálu se naučíte **jak převést geojson na topojson** při seskupování prvků na základě vybraného atributu. Použití Aspose.GIS .NET API zajišťuje rychlou konverzi (zpracovává až 2 000 prvků za sekundu) a je plně ovladatelné z vašeho C# kódu. Ať už vytváříte službu pro konverzi geojson v ASP.NET Core, desktopový GIS nástroj nebo automatizovaný datový kanál, tento průvodce vám přesně ukáže, co je potřeba udělat, aby **převod geojson na topojson** byl efektivní a spolehlivý.
+V tomto podrobném tutoriálu se naučíte **jak převést geojson na topojson** při seskupování prvků na základě vybraného atributu. Použití Aspose.GIS .NET API umožňuje rychlou konverzi (zpracuje až 2 000 prvků za sekundu) a plnou kontrolu z vašeho C# kódu. Ať už vytváříte ASP.NET Core službu pro konverzi geojson, desktopový GIS nástroj nebo automatizovanou datovou pipeline, tento průvodce vám ukáže přesně, co je potřeba udělat, aby **převod geojson na topojson** proběhl efektivně a spolehlivě.
 
 ## Rychlé odpovědi
-- **Jaká knihovna provádí konverzi?** Aspose.GIS for .NET  
+- **Která knihovna provádí konverzi?** Aspose.GIS pro .NET  
 - **Jak dlouho trvá implementace?** Obvykle 5‑10 minut pro základní nastavení  
 - **Potřebuji licenci pro produkci?** Ano, je vyžadována komerční licence (k dispozici bezplatná zkušební verze)  
 - **Mohu seskupovat prvky podle libovolného atributu?** Ano – nastavte `ObjectNameAttribute` na pole, podle kterého chcete seskupovat  
-- **Je .NET Core podporován?** Naprostě – API funguje s .NET Core, .NET 5/6 a klasickým .NET Framework  
+- **Je .NET Core podporován?** Rozhodně – API funguje s .NET Core, .NET 5/6 i klasickým .NET Framework  
 
 ## Jak převést geojson na topojson se seskupováním v C#
 
-Načtěte svůj zdrojový GeoJSON, nakonfigurujte `ConversionOptions` s požadovaným `ObjectNameAttribute` a zavolejte `Conversion.Convert` – tento jediný volání vytvoří plně seskupený TopoJSON soubor během méně než jedné sekundy pro typické městské datové sady.  
-Tento vzor můžete vložit do konzolové aplikace, background služby nebo ASP.NET Core geojson konverzního endpointu. API abstrahuje všechny nízkoúrovňové výpočty topologie, takže se můžete soustředit na obchodní logiku místo geometrických výpočtů.
+Načtěte svůj zdrojový GeoJSON, nakonfigurujte `ConversionOptions` s požadovaným `ObjectNameAttribute` a zavolejte `Conversion.Convert` – tento jediný volání vytvoří plně seskupený TopoJSON soubor během méně než jedné sekundy pro typické městské datové sady. Tento vzor můžete vložit do konzolové aplikace, background služby nebo ASP.NET Core koncové bodu pro konverzi geojson. API abstrahuje všechny nízkoúrovňové výpočty topologie, takže se můžete soustředit na obchodní logiku místo geometrických výpočtů.
 
 ## Co je GeoJSON a TopoJSON?
 
-GeoJSON je lehký JSON formát, který představuje geografické prvky jako body, linie a polygony. TopoJSON rozšiřuje GeoJSON ukládáním sdílených úseků linií (topologie), což snižuje velikost souboru až o 80 % pro složité mapy a zlepšuje rychlost vykreslování ve webových vizualizacích.
+GeoJSON je formát založený na JSON, který kóduje geografické prvky jako body, linie a polygonu. TopoJSON staví na GeoJSON tím, že ukládá sdílené úseky čar (topologii) místo opakování souřadnic pro každý prvek. To snižuje velikost souboru, eliminuje redundanci a zlepšuje výkon vykreslování ve webových mapách.
 
 ## Proč seskupovat GeoJSON prvky?
 
-Seskupování GeoJSON prvků vám umožní seskupit související geometrie pod jedním pojmenovaným objektem v TopoJSON výstupu, což zjednodušuje následné stylování a interakci. To je užitečné, když potřebujete samostatné vrstvy pro administrativní regiony, když mapová knihovna očekává pojmenované objekty pro zpracování kliknutí, nebo když chcete odstranit duplicitní data o hranicích mezi sousedními prvky.
+Seskupení GeoJSON prvků během konverze vytvoří pojmenované objekty v TopoJSON výstupu, což umožní downstream mapovacím nástrojům zacházet s příbuznými geometriemi jako s jednou vrstvou. To zjednodušuje stylování, snižuje počet draw callů a eliminuje duplicitní hraniční data mezi sousedními prvky, což vede k rychlejšímu vykreslování a menším souborům.
 
-## Nastavte atribut názvu objektu pro seskupování
+## Nastavení atributu názvu objektu pro seskupování
 
-`ObjectNameAttribute` říká Aspose.GIS, která vlastnost ve zdrojovém GeoJSON má být použita jako název objektu v TopoJSON výstupu. Správné nastavení tohoto atributu je klíčem k úspěšnému **seskupení geojson prvků**.
+`ObjectNameAttribute` říká Aspose.GIS, který vlastnost ve zdrojovém GeoJSON má být použita jako název objektu v TopoJSON výstupu. Správné nastavení tohoto atributu je klíčem k úspěšnému **seskupení geojson prvků**.
 
 ## Předpoklady
 
 Než začneme, ujistěte se, že máte následující předpoklady:
 
-1. **Aspose.GIS for .NET** – stáhněte a nainstalujte z [Aspose.GIS for .NET release page](https://releases.aspose.com/gis/net/).  
+1. **Aspose.GIS pro .NET** – stáhněte a nainstalujte z [Aspose.GIS pro .NET release page](https://releases.aspose.com/gis/net/).  
 2. **Vývojové prostředí** – Visual Studio, Visual Studio Code nebo jakékoli IDE podporující C#.  
 3. **Ukázkový GeoJSON soubor** – soubor obsahující prvky, které chcete převést.  
 
@@ -137,8 +139,9 @@ var outputFilePath = "Your Document Directory" + "convertedSampleWithGrouping_ou
 
 ### Krok 2: Nakonfigurujte možnosti konverze (nastavte atribut názvu objektu)
 
-`ConversionOptions` je konfigurační objekt, který řídí, jak Aspose.GIS provádí konverzi. Umožňuje nastavit atribut pro seskupování, definovat výchozí název objektu a upravit přesnost topologie.  
-Vlastnost `ObjectNameAttribute` (string) určuje pole v GeoJSON použité pro seskupování, zatímco `DefaultObjectName` (string) poskytuje náhradní název pro prvky, kterým atribut chybí.
+`ConversionOptions` je třída Aspose.GIS, která určuje, jak má být konverze provedena, včetně nastavení seskupování a přesnosti. Umožňuje nastavit atribut pro seskupování, definovat výchozí název objektu a ladit přesnost topologie.
+
+Vlastnost `ObjectNameAttribute` (string) určuje pole v GeoJSON použité pro seskupování, zatímco `DefaultObjectName` (string) poskytuje náhradní název pro prvky, kterým atribut chybí. Toto je způsob, jak seskupit prvky podle atributu pomocí vlastnosti ObjectNameAttribute. Nahraďte `"group"` skutečným názvem vlastnosti ve vašem GeoJSON, kterou chcete použít pro **seskupení geojson prvků**. `DefaultObjectName` zajistí, že každý prvek skončí v TopoJSON objektu, i když atribut chybí.
 
 ```csharp
 var options = new ConversionOptions
@@ -153,42 +156,40 @@ var options = new ConversionOptions
 };
 ```
 
-Nahraďte `"group"` skutečným názvem vlastnosti ve vašem GeoJSON, kterou chcete použít pro **seskupování geojson prvků**. `DefaultObjectName` zajišťuje, že každý prvek skončí v TopoJSON objektu, i když atribut chybí.
-
 ### Krok 3: Proveďte konverzi (převod GeoJSON na TopoJSON)
 
-`Conversion.Convert` je jednorázové volání API, které načte zdrojový soubor, použije nastavené možnosti a zapíše výstup TopoJSON. Interně vytvoří topologický graf, deduplikuje sdílené hrany a zapíše výsledek v kompaktním formátu TopoJSON.
+`Conversion.Convert` je statická metoda, která načte zdrojový soubor, použije poskytnuté možnosti a zapíše převedený TopoJSON výstup. Interně vytvoří topologický graf, deduplikuje sdílené hrany a zapíše výsledek v kompaktním TopoJSON formátu.
 
 ```csharp
 VectorLayer.Convert(sampleGeoJsonPath, Drivers.GeoJson, outputFilePath, Drivers.TopoJson, options);
 ```
 
-Po provedení bude `convertedSampleWithGrouping_out.topojson` obsahovat reprezentaci TopoJSON, přičemž prvky budou seskupeny podle vámi zadaného atributu.
+Po spuštění bude soubor `convertedSampleWithGrouping_out.topojson` obsahovat TopoJSON reprezentaci s prvky seskupenými podle atributu, který jste zadali.
 
 ## Časté problémy a řešení
 
-| Příznak | Pravděpodobná příčina | Oprava |
+| Příznak | Pravděpodobná příčina | Řešení |
 |---------|-----------------------|--------|
-| **Všechny prvky končí v „nepojmenované“** | `ObjectNameAttribute` neodpovídá žádné vlastnosti v GeoJSON | Ověřte přesný název vlastnosti (rozlišuje velká a malá písmena) a aktualizujte možnost |
+| **Všechny prvky končí v “unnamed”** | `ObjectNameAttribute` neodpovídá žádné vlastnosti v GeoJSON | Ověřte přesný název vlastnosti (rozlišuje velká a malá písmena) a aktualizujte možnost |
 | **Výstupní soubor je prázdný** | Nesprávná cesta k souboru nebo chybějící oprávnění ke čtení | Použijte absolutní cesty nebo zajistěte, aby aplikace měla přístup k souborovému systému |
-| **Konverze vyvolá `NotSupportedException`** | Pokus o konverzi GeoJSON s nepodporovanými typy geometrie (např. GeometryCollection) | Zjednodušte zdrojová data nebo aktualizujte na nejnovější verzi Aspose.GIS |
+| **Konverze vyhazuje `NotSupportedException`** | Pokus o konverzi GeoJSON s nepodporovanými typy geometrie (např. GeometryCollection) | Zjednodušte zdrojová data nebo aktualizujte na nejnovější verzi Aspose.GIS |
 
-## Nejlepší postupy pro konverzi GeoJSON v C#
+## Nejlepší praktiky pro konverzi GeoJSON v C#
 
 - **Ověřte zdrojový GeoJSON** před konverzí, abyste včas zachytili chybějící atributy.  
-- **Použijte `Path.Combine`** pro cesty k souborům, aby se předešlo problémům se separátory specifickými pro platformu.  
-- **Zabalte volání konverze do try‑catch** bloku, aby se elegantně ošetřily I/O chyby.  
-- **Logujte výskyty `DefaultObjectName`**; mohou naznačovat problémy s kvalitou dat, které můžete chtít opravit v předchozím kroku.  
+- **Používejte `Path.Combine`** pro cesty k souborům, aby nedocházelo k problémům se separátory na různých platformách.  
+- **Zabalte volání konverze do try‑catch** bloku, abyste elegantně ošetřili I/O chyby.  
+- **Logujte výskyty `DefaultObjectName`**; mohou naznačovat problémy s kvalitou dat, které byste měli opravit v předchozím kroku.  
 
 ## Často kladené otázky
 
-**Q: Mohu seskupovat prvky na základě více atributů?**  
+**Q: Mohu seskupovat prvky podle více atributů?**  
 A: Ano, můžete spojit několik polí do jednoho virtuálního atributu nebo provést více konverzních průchodů s různými hodnotami `ObjectNameAttribute`.
 
 **Q: Je Aspose.GIS kompatibilní s ASP.NET Core?**  
-A: Naprosto – knihovna funguje s ASP.NET Core, .NET 5, .NET 6 a klasickým .NET Framework.
+A: Rozhodně – knihovna funguje s ASP.NET Core, .NET 5, .NET 6 i klasickým .NET Framework.
 
-**Q: Mohu převést i jiné geografické formáty kromě GeoJSON?**  
+**Q: Můžu převádět i jiné geografické formáty než GeoJSON?**  
 A: Ano, Aspose.GIS podporuje více než 30 vstupních a výstupních formátů – včetně Shapefile, KML, GML, CSV a DXF – pro import i export.
 
 **Q: Nabízí Aspose.GIS bezplatnou zkušební verzi?**  
@@ -199,19 +200,21 @@ A: Podporu můžete získat na fóru komunity Aspose.GIS [Aspose.GIS community f
 
 ## Závěr
 
-Nyní máte kompletní, připravený recept pro **převod geojson na topojson** se seskupováním prvků pomocí Aspose.GIS pro .NET. Nastavením `ObjectNameAttribute` řídíte, jak jsou prvky organizovány, což zjednodušuje následné stylování a interakci ve webových mapách. Neváhejte prozkoumat další ovladače, experimentovat s různými atributy pro seskupování a integrovat tuto konverzi do větších GIS pipeline.
+Nyní máte kompletní, připravený recept pro **převod geojson na topojson** se seskupováním prvků pomocí Aspose.GIS pro .NET. Nastavením `ObjectNameAttribute` řídíte, jak jsou prvky organizovány, což zjednodušuje downstream stylování a interakci ve webových mapách. Neváhejte prozkoumat další ovladače, experimentovat s různými atributy seskupování a integrovat tuto konverzi do větších GIS pipeline.
 
 ---
 
-**Poslední aktualizace:** 2026-08-03  
-**Testováno s:** Aspose.GIS for .NET (latest release)  
+**Poslední aktualizace:** 2026-11-12  
+**Testováno s:** Aspose.GIS pro .NET (nejnovější verze)  
 **Autor:** Aspose  
+
+---
 
 ## Související tutoriály
 
-- [Jak převést GeoJSON na TopoJSON pomocí Aspose.GIS](/gis/net/geo-data-conversion/convert-geojson-to-topojson/)
-- [Jak převést GeoJSON na TopoJSON s konkrétním názvem objektu](/gis/net/geo-data-conversion/convert-geojson-to-topojson-with-specific-object-name/)
-- [Odemykání TopoJSON funkcí pomocí Aspose.GIS pro .NET](/gis/net/layer-management/access-features-in-topojson/)
+- [How to Convert GeoJSON to TopoJSON with Aspose.GIS](/gis/net/geo-data-conversion/convert-geojson-to-topojson/)
+- [How to Convert GeoJSON to TopoJSON with Specific Object Name](/gis/net/geo-data-conversion/convert-geojson-to-topojson-with-specific-object-name/)
+- [Unlocking TopoJSON Features with Aspose.GIS for .NET](/gis/net/layer-management/access-features-in-topojson/)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
